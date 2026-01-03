@@ -1,0 +1,1002 @@
+
+
+
+＄94-08-80-76-1-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 11016000 1 クロエ]
+[charaSet C 1098275300 1 鈴鹿]
+[charaSet D 1098274400 1 アルトリア・キャスター]
+
+[charaSet E 3034001 1 茨木童子]
+
+[charaSet F 7022002 1 茨木童子]
+
+[charaSet G 1047000 1 渡辺綱]
+[charaSet H 6021001 1 酒呑童子]
+
+[charaSet J 6043000 1 オルトリンデ]
+[charaSet K 6043300 1 イルス]
+[charaSet L 6043000 1 オルトリンデ2]
+[charaSet M 6043300 1 イルス2]
+
+[charaSet R 5009000 1 エフェクト用ダミー1]
+[charaSet S 5009000 1 エフェクト用ダミー1]
+
+
+[sceneSet T 142500 1 1]
+[sceneSet U 142500 1 1]
+[sceneSet V 142500 1 1]
+[charaSet W 5009000 1 エフェクト用ダミー1]
+[charaSet X 5009000 1 エフェクト用ダミー2]
+[sceneSet Y 10000 1]
+[sceneSet Z 10001 1]
+
+[charaDepth Y 9]
+[charaDepth Z 9]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 142500]
+
+[bgm BGM_BATTLE_48 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 0.35]
+
+[se ad73]
+[charaMoveScale F 1.1 0.25]
+[charaMove F 0,15 0.25]
+[charaFadeout F 0.25]
+[wt 0.40]
+
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.2]
+
+[se ad1051]
+[fowardEffect bit_talk_claw_red02 0,0]
+[wt 0.35]
+
+[se ad7]
+[charaMove G 120,0 0.25]
+[wt 0.4]
+
+[cameraMove 0.5 60,-10 1.1]
+[charaFadeout G 0.25]
+[wt 0.25]
+
+[charaScale H 0.95]
+[charaFace H 0]
+[charaFadein H 0.25 -80,-5]
+[charaMove H -50,0 0.25]
+[charaMoveScale H 1.0 0.25]
+[wt 0.35]
+
+[se ad1051]
+[fowardEffect bit_talk_claw_red02 0,0 H]
+[wt 0.35]
+
+[se ad73]
+[charaMove H -150,0 0.3]
+[wt 0.65]
+
+[charaFaceFade H 1 0.2]
+[wt 0.8]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[bgm BGM_BATTLE_48 0.6 0.5]
+[wait wipe]
+
+[cameraMove 0 0,0 1.01]
+
+[charaFadeout H 0.1]
+[wt 0.4]
+
+[bgm BGM_BATTLE_48 0.6 1.0]
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.2]
+
+[subCameraOn 2]
+[subCameraFilter #A maskEdge cut359_mask06 4 0,0,0,255 0]
+[charaLayer L sub #A]
+[charaLayer T sub #A]
+[charaDepth L 4]
+[charaDepth T 2]
+[charaFace L 8]
+[charaFadein L 0.1 20,210]
+[charaFace T 0]
+[charaFadein T 0.1 -150,-100]
+
+[subCameraFilter #B maskEdge cut359_mask06 4 0,0,0,255 0]
+[charaLayer M sub #B]
+[charaLayer U sub #B]
+[charaDepth M 4]
+[charaDepth U 2]
+[charaFace M 0]
+[charaFadein M 0.1 -20,210]
+[charaFace U 0]
+[charaFadein U 0.1 150,-100]
+
+[se ad346]
+[subRenderFadein #A 0.35 120,-250]
+[subRenderMove #A 0,-250 0.35]
+
+[subRenderFadein #B 0.35 -120,-500]
+[subRenderMove #B 0,-500 0.35]
+[wt 0.4]
+[seStop ad346 0.2]
+[wt 0.6]
+
+[subRenderFadeout #A 0.35]
+[subRenderFadeout #B 0.35]
+[subRenderMove #A -80,-250 0.35]
+[subRenderMove #B 80,-500 0.35]
+[wt 0.35]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout T 0.1]
+[charaFadeout U 0.1]
+[wt 0.15]
+
+[subCameraOff]
+[charaLayer L main]
+[charaLayer T main]
+[charaLayer M main]
+[charaLayer U main]
+
+
+[charaFace J 8]
+[charaFadein J 0.1 1]
+[wt 0.2]
+
+[charaFace J 5]
+[charaShake J 0.01 1 1 1.0]
+[se ad96]
+[flashin once 0.1 0.1 FFFFFFCF FFFFFF50]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFCF FFFFFF50]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFCF FFFFFF50]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFCF FFFFFF50]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFCF FFFFFF50]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFCF FFFFFF50]
+[wt 0.2]
+[seStop ad96 0.2]
+[wt 0.5]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.15]
+
+[se ad96]
+[effect bit_shot_01 90,-60]
+[wt 0.15]
+
+[se ad73]
+[charaFace H 1]
+[charaMove H 0,-10 0.1]
+[fowardEffect bit_talk_quickmove]
+[effect bit_shot_01 -200,50]
+[wt 0.1]
+[charaSpecialEffect H erasureReverse 1 0.3]
+[wt 0.05]
+[effect bit_shot_01 150,-140]
+[wt 0.05]
+[charaMove H 0,10 0.15]
+[wt 0.05]
+[effect bit_shot_01 -30,150]
+[wt 0.15]
+[effect bit_shot_01 90,-60]
+[wt 0.3]
+[seStop ad96 0.1]
+[wt 0.1]
+
+[sceneSet T 106800 1]
+[wt 0.1]
+
+[subCameraOn 2]
+[charaLayer H sub #A]
+[charaLayer T sub #A]
+[charaLayer V sub #A]
+[charaLayer R sub #A]
+[charaLayer F sub #A]
+
+[charaLayer S sub #B]
+[charaLayer J sub #B]
+[charaLayer K sub #B]
+[charaLayer U sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask08 4 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask20 4 0,0,0,0]
+
+[charaTalk depthOff]
+[charaDepth T 1]
+[charaDepth U 1]
+[charaDepth V 1]
+
+[charaDepth H 2]
+[charaDepth K 2]
+[charaDepth J 3]
+[charaDepth F 2]
+[charaDepth R 4]
+[charaDepth S 4]
+
+[charaScale T 1.4]
+[charaScale U 1.4]
+[charaScale V 1.4]
+[charaScale H 1.2]
+[charaScale F 1.2]
+[charaScale K 1.2]
+[charaScale J 1.2]
+[charaScale R 1.0]
+[charaScale S 1.0]
+
+[charaFace H 1]
+[charaFadein H 0.1 0,280]
+[charaFadein T 0.1 -100,125]
+
+[charaFace K 5]
+[charaFace J 5]
+[charaFadein K 0.1 -100,280]
+[charaFadein J 0.1 100,200]
+[charaFadein U 0.1 0,125]
+
+[subRenderFadein #A 0.35 0,-350]
+[subRenderMove #A 0,-300 0.35]
+[wt 0.4]
+
+[effectDestroy bit_shot_01]
+
+[seStop ad207 0.3]
+[se ad39]
+[charaPut R 0,250]
+[charaEffect R bit_talk_36]
+[wt 2.0]
+
+[seStop ad39 0.3]
+[subRenderFadeout #A 0.15]
+[wt 0.15]
+
+[charaFadeout H 0.1]
+[charaFadeout T 0.1]
+[charaFace F 5]
+[charaFadein F 0.1 0,280]
+[charaFadein V 0.1 0,125]
+[charaPut R 2000,2500]
+[charaEffectStop R bit_talk_36]
+
+[se ad1050]
+[charaPut W 1]
+[charaEffect W bit_talk_liquor_wave]
+[wt 0.8]
+[subCameraFilter #A maskEdge cut359_mask20 4 0,0,0,0]
+[wt 0.2]
+[cueSe SE_21 21_ade576]
+[seStop ad1050 2.5]
+[wt 0.8]
+
+[subRenderFadeinFSSideR #A 0.35 300,-350]
+[subRenderFadeinFSSideL #B 0.35 -300,-350]
+[subRenderMoveFSSideR #A 300,-250 0.35]
+[subRenderMoveFSSideL #B -300,-250 0.35]
+
+[wt 0.45]
+[charaPut R 0,280]
+[charaPut S 0,280]
+[charaEffect R bit_talk_liquor_wave]
+[charaEffect S bit_talk_liquor_wave]
+[wt 0.15]
+
+
+[se ad7]
+[charaMove F 250,280 0.3]
+[charaMove K -350,280 0.3]
+[charaMove J -150,200 0.3]
+[charaFadeout F 0.3]
+[charaFadeout K 0.3]
+[charaFadeout J 0.3]
+[wt 1.1]
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[bgm BGM_BATTLE_48 0.6 0.5]
+[cueSeStop 21_ade576 0.6]
+[wait wipe]
+
+[charaPut W 5000,5000]
+[charaPut R 5000,5000]
+[charaPut S 5000,5000]
+[charaEffectDestroy W bit_talk_liquor_wave]
+[charaEffectDestroy R bit_talk_liquor_wave]
+[charaEffectDestroy S bit_talk_liquor_wave]
+
+[charaFadeout T 0.1]
+[charaFadeout U 0.1]
+[charaFadeout V 0.1]
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+[wt 0.2]
+
+[subCameraOff]
+[charaLayer T normal]
+[charaLayer U normal]
+[charaLayer V normal]
+[charaLayer H normal]
+[charaLayer F normal]
+[charaLayer K normal]
+[charaLayer J normal]
+[charaLayer R normal]
+[charaLayer S normal]
+[charaScale T 1.0]
+[charaScale U 1.0]
+[charaScale V 1.0]
+[charaScale H 1.0]
+[charaScale F 1.0]
+[charaScale K 1.0]
+[charaScale J 1.0]
+[charaScale R 1.0]
+[charaScale S 1.0]
+
+[scene 106800]
+[wt 0.1]
+
+[se ad556]
+[seVolume ad556 0 0]
+
+
+[charaDepth J 2]
+[charaDepth K 3]
+[charaFace J 8]
+[charaFace K 0]
+[charaFadeinFSR J 0.1 256,-40]
+[charaFadeinFSL K 0.1 -256,-40]
+[wt 0.05]
+
+[charaMoveFSR J 256,0 0.5]
+[charaMoveFSL K -256,0 0.5]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[seVolume ad556 0.4 0.8]
+[bgm BGM_BATTLE_48 0.6 1.0]
+[wait wipe]
+[wt 0.35]
+
+[se ad346]
+[seStop ad556 1.5]
+[charaMoveReturnFSR J 256,-8 0.4]
+[charaMoveReturnFSL K -256,-8 0.4]
+[wt 0.5]
+[seStop ad346 0.1]
+[wt 0.5]
+
+[charaFace J 5]
+[charaFace K 5]
+[se ad96]
+[charaShake K 0.01 1 1 1.0]
+[charaShake J 0.01 1 1 1.0]
+[flashin once 0.1 0.1 FFFFFFCF FFFFFF50]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFCF FFFFFF50]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFCF FFFFFF50]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFCF FFFFFF50]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFCF FFFFFF50]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFCF FFFFFF50]
+[wt 0.1]
+[seStop ad96 0.6]
+[wt 0.5]
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[scene 142500]
+
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.3]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[effect bit_talk_14 150,-80]
+[wt 0.05]
+[se ad96]
+[se ad602]
+[charaShake G 0.02 2 2 1.0]
+[effect bit_shot_01 150,-80]
+[wt 0.3]
+[se ad602]
+[effect bit_shot_01 -100,60]
+[wt 0.3]
+[se ad602]
+[effect bit_shot_01 60,10]
+[effect bit_talk_14 -150,10]
+[wt 0.3]
+[se ad602]
+[effect bit_shot_01 -90,-130]
+[wt 0.6]
+
+[se ad678]
+[se ad1006]
+[blur motion 0.1 4 10 0.5 0.6 0.05 100]
+[charaFace G 5]
+[charaMoveScale G 1.1 0.25]
+[charaMove G 0,15 0.25]
+[charaFadeout G 0.25]
+[wt 0.25]
+[effectDestroy bit_shot_01]
+[blurOff motion 0.1]
+[wt 0.15]
+
+[se ad85]
+[se ad171]
+[effect bit_talk_gram_slash_04_fs 0,0 H]
+[wt 0.55]
+
+[se ad32]
+[se ad170]
+[se ad686]
+[cueSe Battle bac151]
+[fadeout white 0.1]
+[wait fade]
+
+[effectDestroy bit_talk_gram_slash_04_fs]
+
+[charaScale F 1.1]
+[charaFace F 8]
+[charaFadein F 0 0,15]
+
+[se ad671]
+[fowardEffect bit_talk_blow02]
+[charaShake F 0.03 4 4 0.9]
+[charaMoveScale F 1.0 0.3]
+[charaMove F 0,0 0.3]
+[fadein white 0.1]
+[wait fade]
+
+[seStop ad671 0.7]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaFace F 7]
+＠F：茨木童子
+……ふーっ、ふーっ！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_BATTLE_48 1.5]
+[wt 0.05]
+
+[cueSe Battle bas13]
+[effect bit_talk_debuff]
+[wt 1.4]
+
+[se adm20]
+[fadeout white 0.7]
+[cueSeStop bas13 0.9]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+[wt 1.0]
+[seStop adm20 1.0]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.6]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+茨木童子さん、敵性反応が低下しました。[r]酒呑童子さんの干渉と思われます！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠酒呑童子
+ふふ、もう仕舞いなん？
+[k]
+
+＠酒呑童子
+久しぶりに楽しゅうさせてもらったわぁ。[r]ああいう茨木も、たまにはええなあ。なあ？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaScale G 1.0]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠渡辺綱
+……。[se ad954][r]……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+＠イルス
+残存魔力が低下しているね。[r]茨木童子、これ以上は……
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠茨木童子
+…………うむ。
+[k]
+
+＠茨木童子
+やめだやめだ。[r]酒呑を相手に、本気でやる訳にもいかぬ。
+[k]
+
+[charaFace E 2]
+＠茨木童子
+それに、よく見ればマスターもいるではないか！
+[k]
+
+＠茨木童子
+ええいもう！　これでは話にならぬ！[r]甘味のひとつも持たねば[#吾:われ]の機嫌は戻らぬからな！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠マシュ
+茨木童子さん、不機嫌を主張されています！[r]先輩！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠アルトリア・キャスター
+あ、あれ？[r]さっきみたいにバトったら解決に[line 3]ならない？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠クロエ
+あー。物理で“好き”を思い出させるどころか、[r]急にキレさせちゃっただけだしねえ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+＠鈴鹿御前
+あーね？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.5]
+
+？1：酒呑童子！
+？2：どうにかならないかな！
+？！
+
+[messageOff]
+[wt 0.05]
+
+[charaFace H 6]
+[se ad217]
+[charaMoveReturn H 0,-5 0.8]
+[wt 0.8]
+[seStop ad217 0.1]
+[wt 0.5]
+
+[charaFace H 1]
+
+＠酒呑童子
+……ぷは。旦那はん、なんか言うた？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+？1：……綱さん！
+
+？2：どうにかならないかな！
+？！
+
+
+[bgmStop BGM_EVENT_77 1.5]
+
+＠渡辺綱
+…………茨木。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠茨木童子
+ぜえ、[charaMoveReturn E 0,-8 0.6]はあ……[wt 0.9][charaFace E 5][r]ぜえ……[#嗤:わら]いたくば[#嗤:わら]え、無様を晒したわ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_MIZUGI_2020_1 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠渡辺綱
+一部だが、事情は聞いている。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠茨木童子
+……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠渡辺綱
+書を作るのだと聞いた。[r]おまえも、巴殿や戦乙女たちと何かを記すと。
+[k]
+
+[charaFace G 1]
+＠渡辺綱
+大したものだ。[r]俺には出来ん。
+[k]
+
+＠渡辺綱
+太刀を振るう以外さして能がないからな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠茨木童子
+ふ、ふん。[r]おだてても何も出ぬぞ[line 3]
+[k]
+
+[charaFace E 5]
+
+＠茨木童子
+だいいち、[#吾:われ]もオルトリンデたちも、[r]何のゲームを題とすべきか迷うばかりで……
+[k]
+
+[charaFace E 4]
+＠茨木童子
+…………次は、書けぬかもしれぬ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠渡辺綱
+ふむ。
+[k]
+
+[charaFace G 0]
+＠渡辺綱
+俺は……[r]おまえが思うようにやればよいと思う。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠茨木童子
+[#容易:た や す]く言ってくれる。[r]ふん、それがなかなか分からぬが故にだなっ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠渡辺綱
+そうか。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠茨木童子
+そうだっ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠渡辺綱
+では……[r]近頃、おまえが楽しいと感じたゲームは何だ？
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 1.2]
+
+
+＠茨木童子
+そ、れは[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_MIZUGI_2020_1 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+
+[charaSet A 1098276910 1 マシュ]
+[charaSet B 1098276000 1 クロエ]
+[charaSet F 1098272000 1 ランスロット]
+[charaSet G 1045000 1 巴御前]
+
+[scene 147900]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_25 0.1]
+
+＠ランスロット
+……アルトリアクラフト、ですか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠アルトリア・キャスター
+う、うん。[r]茨木童子、最近遊んだ中で一番楽しかったんだって。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠クロエ
+確かに、よく出来てたもんねー。[r]さすがオジマンディアス、王の中の王。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠鈴鹿御前
+へーそうなんだ。[r]遊んでみたいかも。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠クロエ
+後で部屋行ってみる？[r]幼年系英霊たちでてんやわんやだけど。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠鈴鹿御前
+行く行く！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠巴御前
+茨木童子のことは案じておりましたが、[r]無事に決まって何よりです。ほっ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+オルトリンデさんたちも同じ題材を扱うそうです。[r]なので、三名の予定原稿は[line 3]
+[k]
+
+[charaFace A 2]
+
+＠マシュ
+茨木童子さんは、[r]『アルトリアクラフト絵日記』の続編を！
+[k]
+
+[charaFace A 4]
+
+＠マシュ
+オルトリンデさんとイルスさんは、[r]やはりアルトリアクラフトのコラムと挿絵を！
+[k]
+
+＠マシュ
+以上となります！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠クロエ
+そう来たか、って感じよね。[r]でもいいんじゃない？
+[k]
+
+＠クロエ
+たとえアルトリア縛りがなくなっても、[r]アルトリアを題材にしちゃだめ、じゃないものね。
+[k]
+
+？1：そうだね
+？2：アルトリアクラフト、人気だなあ……
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠アルトリア・キャスター
+うんうん。[r]正直ちょっと気恥ずかしいけども。
+[k]
+
+[charaFace D 10]
+＠アルトリア・キャスター
+進んだならよし！[wt 0.7][charaFace D 1][r]それじゃあ次いってみよう！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStopEnd BGM_EVENT_25 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

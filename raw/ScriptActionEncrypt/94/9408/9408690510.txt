@@ -1,0 +1,529 @@
+
+
+
+
+＄94-08-69-05-1-0
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 2050000 1 プトレマイオス]
+[charaSet B 1098257810 1 マシュ]
+[charaSet C 2051001 1 杉谷善住坊]
+[charaSet D 1098214000 1 四不相]
+[charaSet E 2050000 1 プトレマイオス（演出用）]
+[charaSet F 2050002 1 プトレマイオス（第三）]
+[charaSet G 1098257310 1 ダ・ヴィンチ]
+
+
+[sceneSet O 192800 1]
+[charaScale O 1.4]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用2]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 192800]
+[wt 0.2]
+
+[wipein openEye 1.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[se ad60]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 1]
+[wt 0.4]
+[seStop ad60 0.2]
+[wt 0.6]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠プトレマイオス
+起きたか、マスター。
+[k]
+
+[charaFace A 0]
+＠プトレマイオス
+[#吾:あ]の年齢については、もう大丈夫だナ。
+[k]
+
+？1：もう分かった
+
+＠プトレマイオス
+なら良かった。[r]自分でもいささか面倒とは思うんだが。
+[k]
+
+？2：行ったり来たりするんだね……
+
+＠プトレマイオス
+そういうこった。昼は若く、夜は年老いる。[r]自分でもいささか面倒とは思うんだが。
+[k]
+
+？！
+
+
+[bgmStop BGM_EVENT_2 1.5]
+
+＠プトレマイオス
+あと、サーヴァントになった今は、[r]こういうこともできるようでナ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth A 1]
+[charaDepth O 2]
+[charaDepth E 3]
+[charaDepth F 4]
+[charaDepth S 9]
+
+[charaFadein O 0.8 0,-260]
+
+[charaScale E 1.2]
+[charaFace E 0]
+[charaFadein E 0.8 0,25]
+[wt 0.8]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[cueSe SE_23 23_ade913]
+[cueSeVolume 23_ade913 0 0.6]
+[charaPut S 0,-65]
+[charaEffect S bit_talk_radiallight02]
+[charaEffect S bit_talk_radiallight02_big]
+[wt 0.6]
+
+[charaSpecialEffect E wipeTime 0,0 1.6]
+[wt 2.4]
+
+
+？1：プトレマイオス！
+
+[messageOff]
+[charaScale F 1.2]
+[charaPut F 0,25]
+[charaFace F 0]
+[charaSpecialEffect F wipeTimeRe 0,0 1.4]
+[wt 0.1]
+[se ad598]
+[wt 0.7]
+[charaEffectStop S bit_talk_radiallight02]
+[charaEffectStop S bit_talk_radiallight02_big]
+[wt 1.2]
+[charaFadein F 0 0,25]
+
+＠F：プトレマイオス
+呼んだか。
+[k]
+
+[messageOff]
+[charaFadeout F 0.8]
+[charaFadeout O 0.8]
+[wt 0.9]
+
+？！
+
+[charaPut T 1]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠マシュ
+おじいさんの方！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+
+[charaTalk off]
+[charaScale F 1.0]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+
+[cueSe SE_23 23_ade913]
+[cueSeVolume 23_ade913 0 0.6]
+[charaPut S 25,-75]
+[charaEffect S bit_talk_radiallight02]
+[charaEffect S bit_talk_radiallight02_big]
+[wt 0.6]
+
+[charaSpecialEffect F wipeTime 0,0 1.5]
+[wt 1.0]
+[charaFace A 0]
+[charaSpecialEffect A wipeTimeRe 0,0 1.4]
+[wt 0.7]
+[charaEffectStop S bit_talk_radiallight02]
+[charaEffectStop S bit_talk_radiallight02_big]
+[wt 1.1]
+
+[charaSet F 2050002 1 プトレマイオス（第三）]
+
+[charaTalk on]
+[charaFadein A 0 1]
+＠プトレマイオス
+戦の最中に見たかもだがナ。[#吾:あ]の霊基情報も[r]アレクサンドリア大図書館に記録されている。
+[k]
+
+[charaFace A 2]
+＠プトレマイオス
+だから大図書館に[#接続:アクセス]することで、[r]ごく短時間だが霊基を入れ替えることができるのサ。
+[k]
+
+[charaFace A 0]
+＠プトレマイオス
+もっとも、入れ替えてるのはあくまで外側。[r]つまりは霊殻だけで、精神なんかは元のままだ。
+[k]
+
+[charaFace A 8]
+＠プトレマイオス
+いささか器に引っ張られることはあるにせよ、[r]今の場合、ジジイの体を若い[#吾:あ]が使ってただけだナ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaPut T 1]
+[charaTalk G]
+[charaFace G 23]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+…………。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+
+
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+まあスフィンクスの謎かけみたいなもんだ。[r]慣れてもらうしかない。
+[k]
+
+？1：朝は四本足で、昼は二本足？
+
+[charaFace A 2]
+＠プトレマイオス
+ほう、知ってるのか。大したもんだ。[r]うむ、ギリシャ神話でオイディプス王が直面した謎サ。
+[k]
+
+？2：スフィンクスの謎かけ？
+
+[charaFace A 8]
+＠プトレマイオス
+まあ知らなくても無理はない。[r]これはギリシャ神話の一節だ。
+[k]
+
+[charaFace A 0]
+＠プトレマイオス
+ピキオン山と呼ばれる要所に、[r]スフィンクスという怪物が[#棲:す]みついた。
+[k]
+
+＠プトレマイオス
+この怪物は旅人に謎かけで挑み、[r]答えられなかった者を喰らうという。
+[k]
+
+[charaFace A 8]
+＠プトレマイオス
+そして、[#智慧者:ち え し ゃ]で知られたオイディプスは、[r]このスフィンクスに挑むことにしたんだ。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠マシュ
+多分、世界で一番有名な問いかけですよね。[r]朝は四本足、昼は二本足、夜は三本足で歩くものは何か？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+うん、その通りだ。よく学んでる。[r]スフィンクスの謎かけに、オイディプスは即座に答えた。
+[k]
+
+[charaFace A 0]
+＠プトレマイオス
+生まれた朝は赤ん坊ゆえに這い、[r]成人した昼はその足で歩く。
+[k]
+
+＠プトレマイオス
+そして、年老いた夜には[#杖:つえ]をつく。[r]ゆえに、答えは人間であると。
+[k]
+
+＠プトレマイオス
+問いかけに答えられてしまったスフィンクスは、[r]崖から身を投げて、自殺した。
+[k]
+
+[charaFace A 11]
+＠プトレマイオス
+かくしてオイディプスは名をあげ、[r]女王に見初められるんだが……それが悲劇の始まりだ。
+[k]
+
+？1：そういえば
+？2：スフィンクスなのにギリシャ神話？
+？！
+
+[charaFace A 8]
+＠プトレマイオス
+ああ、案外ギリシャとエジプトというのは近いんだ。[r]これは歴史的にも文化的にも、だ。
+[k]
+
+[charaFace A 0]
+＠プトレマイオス
+ギリシャ神話の神々が、[r]一時的にエジプトに逃げ込んだって話もあるぐらいでナ。
+[k]
+
+＠プトレマイオス
+まあ、そういう話を溜め込んだのが、[r][#吾:あ]の図書館だったんだが。
+[k]
+
+＠プトレマイオス
+こっちは老人の[#吾:あ]のことだから、[r]今の[#吾:あ]には実感がないナ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad452]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+[seStop ad452 0.2]
+[wt 0.4]
+
+＠杉谷善住坊
+おお、マスターも起きたかよ。
+[k]
+
+？1：おはよう、杉谷さん
+？！
+
+[bgm BGM_EVENT_77 0.1]
+
+＠杉谷善住坊
+ああ、おはよう。[r]ちょうど四不相と周囲を探っててな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaMoveReturn D 0,7 0.25]
+＠四不相
+モモモ！（嬉しそう）[wt 0.25][charaMoveReturn D 0,7 0.25]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠杉谷善住坊
+朝になったら、プトレマイオスが[r]若返ってるもんだから、腰抜かすかと思ったぞ。
+[k]
+
+？1：そういえば言ってなかった！
+？2：ごめん、杉谷さん！
+
+？！
+
+[charaFace C 16]
+＠杉谷善住坊
+あーいや、気にすんな。[r]で、ほれ。
+[k]
+
+[messageOff]
+[charaMoveReturn C 0,-7 0.6]
+[wt 0.15]
+[se adm57]
+[wt 1.1]
+
+？1：串焼き？
+？！
+
+[charaFace C 0]
+＠杉谷善住坊
+そこで狩りをしててな。[r]妙な特異点だが、一応生き物はいるらしい。
+[k]
+
+＠杉谷善住坊
+おまえさまは生きてる人間なんだから、[r]腹にものを入れないと、力が湧かないだろうが。
+[k]
+
+？1：ありがたくいただきます
+？！
+
+＠杉谷善住坊
+こんなのはただの習慣だ。周囲を見回るついでに[r]獲物を狩っておくのが癖になってんだよ。
+[k]
+
+＠杉谷善住坊
+坊主どもが口うるさく言ってた業ってやつか。[r]自分は腹が減らなくなっても、つい狩っちまうんだから。
+[k]
+
+[messageOff]
+[charaFace C 3]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_77 1.5]
+
+[charaFace C 0]
+＠杉谷善住坊
+で、ここからどうする気だよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+決まってる。英霊使いのマスターにサーヴァントが[r]二騎も揃ったんだから、城攻めだってできるだろ。
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+
+？1：城攻め……！
+？！
+
+[charaFace A 0]
+＠プトレマイオス
+怖気づくなよ、マスター。[r]聖杯を手に入れるには一番の近道なんだからナ。
+[k]
+
+[charaFace A 17]
+＠プトレマイオス
+唯一の問題は、どっちの[#吾:あ]と行くかサ。
+[k]
+
+？1：どっち？
+？2：昼と夜ってこと？
+
+？！
+
+[charaFace A 0]
+＠プトレマイオス
+ああ、そうだ。知っての通り、[r][#吾:あ]は昼と夜じゃ幾分戦い方も違うからナ。
+[k]
+
+＠プトレマイオス
+それに、この城の方も変わる。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠杉谷善住坊
+あー、確かに雰囲気だけだが、[r]ガラッと変わる感じだわな。
+[k]
+
+[charaFace C 14]
+＠杉谷善住坊
+俺が忍び込めと言われても、[r]ほとんど別物の城の気構えになるな、コレ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.8]
+
+[charaFace A 2]
+[wt 1.0]
+
+[charaFace A 0]
+＠プトレマイオス
+そういうことだ。観察している限りだと、[r]昼の方が敵が少なく、夜の方が多い。
+[k]
+
+＠プトレマイオス
+しかし、こちらが利用できる陣地についても[r]昼の方が少なく、夜の方が多い。
+[k]
+
+＠プトレマイオス
+杉谷はどちらでもいけるだろうから、[r]おまえが相性や気分の良い方で決めるといい。
+[k]
+
+[charaFace A 11]
+＠プトレマイオス
+正直、城攻めだと、[#吾:あ]よりも戦友の方が[r]上手ではあったんだがナ。
+[k]
+
+？1：戦友？
+？2：やっぱりイスカンダルの部下？
+？！
+
+[charaFace A 0]
+＠プトレマイオス
+ともに[#最果ての海:オ　ケ　ア　ノ　ス]を目指したヤツだ。[r]まあ、いま話すことでもないサ。
+[k]
+
+[charaFace A 2]
+＠プトレマイオス
+上手がいるだけで、[#吾:あ]も城攻めは得意なんだ。[r]大いに期待していてくれ。
+[k]
+
+
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStopEnd BGM_EVENT_4 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

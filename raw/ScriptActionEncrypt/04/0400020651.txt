@@ -1,0 +1,717 @@
+
+
+＄04-00-02-06-5-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 7046001 1 ドゥリーヨダナ]
+[charaSet B 1098267130 1 メドゥーサ]
+[charaSet C 1098268910 1 サクラ]
+[charaSet D 1098270000 1 シオン]
+[charaSet F 6037001 1 カーマ]
+[charaSet G 1098270300 1 アーユス]
+[charaSet H 1098269700 1 青髭]
+
+[charaSet I 1098267130 1 メドゥーサ（演出用）]
+[charaSet J 1098267130 1 メドゥーサ（演出用）]
+
+[sceneSet L 191500 1]
+[charaScale L 1.2]
+
+[sceneSet M 189501 1]
+[charaScale M 1.2]
+
+[sceneSet N 110100 1]
+[charaScale N 1.2]
+
+[sceneSet O 191500 1]
+[charaScale O 1.0]
+[charaFilter O silhouette 2B2E2E80]
+
+
+[imageSet R back10000 1 1]
+[charaScale R 1.3]
+
+[charaSet S 98115000 1 エフェクト用ダミー]
+[charaSet T 98115000 1 エフェクト用ダミー]
+[charaSet U 98115000 1 エフェクト用ダミー]
+
+[imageSet V back10000 1 1]
+[charaScale V 1.3]
+
+
+[scene 10000]
+
+[charaTalk L]
+[charaFadein L 0.1 0,-225]
+
+[bgm BGM_BATTLE_184 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[subCameraOn 2]
+[charaLayer S sub #A]
+[charaLayer A sub #A]
+[charaLayer M sub #A]
+[charaLayer T sub #B]
+[charaLayer F sub #B]
+[charaLayer N sub #B]
+[subCameraFilter #A maskEdge cut359_mask04 3 231,41,45,255]
+[subCameraFilter #B maskEdge cut359_mask04 3 243,58,128,255]
+[charaTalk off]
+[charaDepth M 1]
+[charaDepth N 1]
+[charaDepth S 2]
+[charaDepth T 2]
+[charaDepth F 3]
+[charaDepth A 3]
+[subRenderScale #A 1.1]
+[subCameraRoll #A 5 0,0]
+[charaRoll S 1]
+[charaRoll A -5]
+[charaRoll M -5]
+
+[charaScale A 1.2]
+[charaScale M 1.2]
+
+[charaPut S 0,200]
+[charaEffect S bit_talk_42]
+
+[charaFace A 5]
+[charaFadein A 0.1 -180,230]
+[charaFadein M 0.1 120,0]
+
+[subRenderScale #B 1.1]
+[subCameraRoll #B 5 0,0]
+[charaRoll T 1]
+[charaRoll F -5]
+[charaRoll N -5]
+
+[charaScale F 1.2]
+[charaScale N 1.2]
+
+[charaPut T 0,200]
+[charaEffect T bit_talk_42 0,0 H]
+
+[charaFace F 2]
+[charaFadein F 0.1 180,275]
+[charaFadein N 0.1 -120,0]
+
+[se ade338]
+[subRenderFadein #A 0.25 100,-520]
+[subRenderMove #A 0,-520 0.25]
+
+[subRenderFadein #B 0.25 -100,-320]
+[subRenderMove #B 0,-320 0.25]
+[seStop ade338 1.0]
+[wt 1.1]
+
+[se ad1006]
+[wt 0.05]
+[se ad7]
+[subRenderFadeout #A 0.2]
+[subRenderFadeout #B 0.2]
+[subRenderMove #A -100,-520 0.2]
+[subRenderMove #B 100,-320 0.2]
+[wt 0.4]
+
+
+[cueSe Servants_105100 m45824]
+[fowardEffect bit_talk_strike_02]
+[wt 0.45]
+
+[cueSe Servants_105100 m45810]
+[fowardEffect bit_talk_gram_slash_04_fs]
+[wt 0.6]
+
+
+[cueSe Battle bac385]
+[cueSe Battle bac403]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_gram_slash_04_fs]
+[shake 0.02 2 3 0.8]
+[wt 1.1]
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[bgm BGM_BATTLE_184 0.6 0.5]
+[wait wipe]
+
+[charaFadeout L 0.1]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaPut S 2000,2500]
+[charaEffectStop S bit_talk_42]
+[charaPut T 2000,2500]
+[charaEffectStop T bit_talk_42]
+[subCameraOff]
+[charaLayer S normal]
+[charaLayer T normal]
+[charaLayer A normal]
+[charaLayer F normal]
+[charaLayer M normal]
+[charaLayer N normal]
+[charaScale S 1.0]
+[charaScale T 1.0]
+[charaScale A 1.0]
+[charaScale F 1.0]
+[charaScale M 1.0]
+[charaScale N 1.0]
+[charaRoll S 0]
+[charaRoll T 0]
+[charaRoll A 0]
+[charaRoll F 0]
+[charaRoll M 0]
+[charaRoll N 0]
+
+
+[scene 189501]
+[wt 0.5]
+
+[bgm BGM_BATTLE_184 0.6 1.0]
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[se ad671]
+[charaScale A 1.1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.2 0,10]
+[charaMove A 0,0 0.3]
+[charaMoveScale A 1.0 0.3]
+[charaShake A 0.02 2 3 0.6]
+[seStop ad671 0.7]
+[wt 1.2]
+
+＠ドゥリーヨダナ
+ハァハァ。この、わし様を、こんなに、[r]働かせおって……。
+[k]
+
+＠ドゥリーヨダナ
+いい加減に決めんか！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth S 9]
+[charaDepth B 5]
+
+[se ad223]
+[charaPut S 1]
+[charaEffect S bit_talk_quickmove]
+
+[charaFace B 3]
+[charaPut B 1]
+[charaSpecialEffect B appearance 0,0 0.3]
+[wait charaSpecialEffect B]
+[wt 0.4]
+
+[charaTalk on]
+＠メドゥーサ
+簡単に言ってくれますね。
+[k]
+
+[bgm BGM_BATTLE_184 0.5 0.5]
+
+[charaTalk depthOff]
+[charaDepth R 4]
+[charaDepth B 5]
+
+[charaPut R 1]
+[charaFadeTime R 0.2 0.5]
+
+＠メドゥーサ
+（好機ではある。けれど、[r]　こっちのリソースも無限ではない）
+[k]
+
+＠メドゥーサ
+（息を整えなければ。[r]　早く、早く[line 3]）
+[k]
+
+[charaFadeout R 0.2]
+[bgm BGM_BATTLE_184 0.5 1.0]
+
+[charaFace B 1]
+＠メドゥーサ
+！[messageShake 0.05 4 3 0.3]
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[bgm BGM_BATTLE_184 0.6 0.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[charaDepth M 1]
+[charaDepth C 2]
+[charaDepth S 9]
+
+[charaScale M 1.2]
+[charaFadein M 0.1 100,-225]
+
+[pictureFrame cut063_cinema]
+
+[charaTalk C]
+[charaFace C 20]
+[charaFadein C 0.1 0,-50]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[cueSe SE_23 23_ad1304 0 0.8]
+[charaPut S 0,-50]
+[charaEffect S bit_talk_raniment01]
+[wt 2.5]
+
+[charaMove S 100,-50 0.6]
+[wt 0.2]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[cueSeVolume 23_ad1304 0.5 0.4]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout M 0.1]
+
+[pictureFrame]
+
+[charaPut S -100,0]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[charaMove S 1 0.6]
+[bgm BGM_BATTLE_184 0.6 1.0]
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[cueSeVolume 23_ad1304 0.5 0.8]
+[wait wipe]
+[wt 0.2]
+
+[wt 0.2]
+[charaEffectEdgeBlur B FFF9A5 FFF9A5 4 1.5]
+[wt 0.3]
+[cueSeStop 23_ad1304 0.2]
+[cueSe SE_23 23_ad1305 0 0.8]
+[charaEffectStop S bit_talk_raniment01]
+[wt 0.5]
+[se adm20]
+[wt 2.0]
+[charaEffectEdgeBlurStop B]
+
+[bgm BGM_BATTLE_184 0.5 0.5]
+
+[charaDepth R 4]
+[charaDepth B 5]
+
+[charaPut R 1]
+[charaFadeTime R 0.2 0.5]
+
+[charaFace B 16]
+＠メドゥーサ
+（サクラのラニメント！[r]　あの子、どこにこんなリソースを？）
+[k]
+
+＠メドゥーサ
+（[line 3]いや、それより今は、この好機を！）
+[k]
+
+
+[messageOff]
+[bgm BGM_BATTLE_184 0.5 1.0]
+
+[subCameraOn 1]
+[charaLayer I sub #A]
+[charaLayer J sub #A]
+[charaLayer T sub #A]
+[charaLayer V sub #A]
+[charaLayer M sub #A]
+[charaLayer U sub #A]
+[subCameraFilter #A maskEdge cut359_mask08 3 217,93,151,255]
+
+[subRenderDepth #A 1]
+
+[charaTalk off]
+[charaDepth M 1]
+[charaDepth V 2]
+[charaDepth I 3]
+[charaDepth T 4]
+[charaDepth J 5]
+[charaDepth U 6]
+[charaRoll M 0]
+[charaScale I 1.4]
+[charaScale J 1.7]
+[charaScale T 1.4]
+[charaScale U 1.7]
+[charaScale M 1.2]
+[charaFace I 24]
+[charaFace J 23]
+[charaFadein I 0.1 0,220]
+[charaFadein M 0.1 0,-50]
+
+
+[cueSe Servants_2800200 m40512]
+[cueSeVolume m40512 0 0.5]
+[cueSe Servants_2800200 m45707]
+[cueSeVolume m45707 0 0.5]
+[subRenderFadein #A 0.4 500,-282]
+[subRenderMove #A 0,-282 0.4]
+[cueSeStop m40512 1.0]
+[cueSeStop m45707 1.0]
+[charaFadeout R 0.4]
+
+[wt 1.0]
+
+＠メドゥーサ
+賭けにはなります。ですがこの状況で、[r]今までより広範囲に魔眼の影響力を向ければ、
+[k]
+
+[bgmStop BGM_BATTLE_184 1.5]
+
+＠メドゥーサ
+キャスターの想定位置全体を石化させられる[line 3]！
+[k]
+
+
+
+[messageOff]
+[charaDepth R 9]
+[charaPut R 1]
+[charaPut V 1]
+[charaFadeTime R 0.5 0.7]
+[charaFadeTime V 0.3 0.2]
+
+[wt 0.2]
+
+[charaRoll T 0]
+[charaPut T 0,210]
+[charaEffect T bit_talk_mysticeyes_mds]
+[charaRoll U 0]
+[charaPut U 0,245]
+[charaEffect U bit_talk_mysticeyes_mds]
+[wt 0.45]
+
+[cueSe SE_23 23_ad1296]
+[wt 0.1]
+[charaFace I 23]
+[charaFadein J 0 0,258]
+[charaFadeout J 1.2]
+
+[charaFadeTime V 1.0 0.5]
+
+[wt 0.6]
+[cueSeStop 23_ad1296 0.9]
+
+[wt 1.0]
+
+[cueSe Battle bac1774]
+[cueSeVolume bac1774 0 0.5]
+[fadeout white 0.5]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+
+[charaFadeout B 0.1]
+[charaPut B 2000,2500]
+[charaFadeout R 0.1]
+[charaFadeout V 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout M 0.1]
+[charaPut T 2000,2500]
+[charaEffectStop T bit_talk_mysticeyes_mds]
+[charaPut U 2000,2500]
+[charaEffectStop U bit_talk_mysticeyes_mds]
+[wt 0.1]
+[subCameraOff]
+[charaLayer I normal]
+[charaLayer J normal]
+[charaLayer M normal]
+[charaLayer T normal]
+[charaLayer U normal]
+[charaScale I 1.0]
+[charaScale J 1.0]
+[charaScale M 1.0]
+[charaScale T 1.0]
+[charaScale U 1.0]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaDepth L 2]
+[charaDepth O 4]
+[charaDepth T 9]
+[charaDepth U 9]
+[charaScale L 1.01]
+[charaFadein L 0.1 0,-200]
+
+[charaPut T 2000,2500]
+[charaPut U 2000,2500]
+[charaEffect T bit_talk_crack01]
+[charaEffect T bit_talk_crack02]
+[charaEffect U bit_talk_crack03]
+
+[cameraFilter gray]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 1.0]
+
+
+[se ad210]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[shake 0.01 1 1 0]
+[se ade393]
+[seVolume ade393 0 0.1]
+[se ad14]
+[seVolume ad14 0 0.3]
+[se ad227]
+[wt 0.1]
+[charaPut T 1]
+[wt 1.2]
+
+[se ad210]
+[se ad113]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[shake 0.01 2 2 0]
+[se ad915]
+[seVolume ad915 0 0.5]
+[seVolume ade393 0.1 0.3]
+[seVolume ad14 0.1 0.5]
+[wt 0.1]
+[charaPut U 1]
+[wt 1.4]
+
+[se ad114]
+[se ad243]
+[se ad299]
+[seVolume ad299 0 0.2]
+[se ad228]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout O 0.1]
+[charaPut T 2000,2500]
+[charaPut U 2000,2500]
+[charaEffectStop T bit_talk_crack01]
+[charaEffectStop T bit_talk_crack02]
+[charaEffectStop U bit_talk_crack03]
+
+[seStop ad228 2.0]
+[seStop ad299 2.0]
+[seStop ade393 2.0]
+[seStop ad14 2.0]
+[seStop ad915 2.0]
+
+[cameraFilter normal]
+[wt 2.5]
+
+[fadein white 1.5]
+[wait fade]
+[shakeStop]
+[wt 0.5]
+
+[sceneSet N 189501 1]
+[charaScale N 1.2]
+[sceneSet O 10000 1]
+[charaScale O 1.2]
+
+[subCameraOn 3]
+[charaLayer B sub #A]
+[charaLayer D sub #A]
+[charaLayer F sub #A]
+[charaLayer M sub #A]
+[charaLayer A sub #B]
+[charaLayer G sub #B]
+[charaLayer N sub #B]
+[charaLayer H sub #C]
+[charaLayer O sub #C]
+[subCameraFilter #A maskEdge cut359_mask12 3 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask11 3 0,0,0,255]
+[subCameraFilter #C maskEdge cut359_mask05 3 176,32,156,255]
+
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth N 1]
+[charaDepth O 1]
+[charaDepth B 2]
+[charaDepth A 2]
+[charaDepth H 2]
+[charaDepth D 2]
+[charaDepth F 2]
+[charaDepth G 2]
+
+[charaScale B 1.0]
+[charaFace B 3]
+[charaFadein B 0.1 -550,94]
+[charaFadein M 0.1 0,100]
+
+[charaScale A 1.0]
+[charaFace A 6]
+[charaFadein A 0.1 590,70]
+[charaFadein N 0.1 0,100]
+
+[charaScale H 1.2]
+[charaFace H 10]
+[charaFadein H 0.1 0,125]
+[charaFadein O 0.1 0,-125]
+
+
+[subRenderFadeinFSSideL #A 0.4 160,200]
+[subRenderMoveFSSideL #A 160,-70 0.4]
+[wt 0.5]
+
+[bgm BGM_BATTLE_135 0.1]
+
+[charaTalk on]
+＠メドゥーサ
+……っ。
+[k]
+
+＠メドゥーサ
+わかりました。石化はしている。[r]間違いなく、効いている。
+[k]
+
+＠メドゥーサ
+キャスターがいる部分にも届いてはいる。
+[k]
+
+[messageOff]
+[charaTalk A]
+
+[subRenderFadeinFSSideR #B 0.4 -160,200]
+[subRenderMoveFSSideR #B -160,-70 0.4]
+[wt 0.5]
+
+＠ドゥリーヨダナ
+ウソをつくな！[r]だったらなんで倒れんのだ！？
+[k]
+
+[charaFace B 3]
+＠メドゥーサ
+あまりに巨大であるため、私の魔眼でも、[r]石化が対象に[#伝播:でんぱ]するには僅かな時間がかかる。
+[k]
+
+＠メドゥーサ
+今、キャスターは肉に潜む寄生虫に等しい。
+[k]
+
+＠メドゥーサ
+外側が石化している間に[line 3]奴は新たな肉を[r]生み出してその中に隠れているのです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 -580,130]
+＠シオン
+ロシアのマトリョーシカ人形のように、
+[k]
+
+＠シオン
+石化する蠢魔の中に蠢魔の肉を出して、それを[r]身代わりにして回避しているというわけですか[line 3]
+[k]
+
+[charaFace A 9]
+＠ドゥリーヨダナ
+おい。じゃあ……どうするのだ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 -555,120]
+＠カーマ
+キャスターの位置を捉えても、[r]石化が届かないなら。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 570,100]
+＠アーユス
+いったい、どうやって[r]キャスターを倒せばいいっていうの……！？
+[k]
+
+[messageOff]
+[subRenderMoveFSL #A 60,-70 0.4]
+[subRenderMoveFSR #B -60,-70 0.4]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.5]
+[subRenderMoveFSL #A 10000,0 0.1]
+[subRenderMoveFSR #B 10000,0 0.1]
+
+[subCameraFilter #A maskEdge cut359_mask05 3 156,114,168,255]
+
+[charaScale D 1.2]
+[charaScale M 1.2]
+[charaFace D 8]
+[charaFadein D 0.1 0,150]
+[charaFadein M 0.1 0,-75]
+[wt 0.2]
+
+
+[charaTalk H]
+[subRenderFadeinFSL #C 0.4 -270,-140]
+[subRenderMoveFSL #C -270,-190 0.4]
+[wt 0.5]
+
+＠青髭
+ああ。部屋には秘密が満ちている。[r]俺を嘲笑う妻たちの死体。
+[k]
+
+＠青髭
+それを見る妻がまた死体となる。[r]そして次の妻。また次の妻。
+[k]
+
+[charaFace H 6]
+＠青髭
+無限、無限、無限なのだ！
+[k]
+
+＠青髭
+いくらでも血の妻はその部屋にいる。[r]いくらでも禁忌の解放は繰り返される！
+[k]
+
+
+[messageOff]
+[charaTalk D]
+[subRenderFadeinFSR #A 0.4 270,-140]
+[subRenderMoveFSR #A 270,-190 0.4]
+[wt 0.5]
+
+＠シオン
+……っ。最初から『繰り返される』という概念、[r]無限性を内包した宝具でしたか……！
+[k]
+
+[charaTalk H]
+[charaFace H 7]
+＠青髭
+ハハハ、ハハハハハ[line 3]！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStopEnd BGM_BATTLE_135 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

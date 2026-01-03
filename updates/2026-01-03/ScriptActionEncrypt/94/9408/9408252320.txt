@@ -1,0 +1,614 @@
+
+＄94-08-25-23-2-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1057000 1 セタンタ]
+[charaSet B 33001000 1 ドラコー]
+[charaSet C 6048001 1 ロクスタ]
+[charaSet D 10016000 1 ティアマト]
+[charaSet E 28003000 1 レディ・アヴァロン]
+[charaSet F 1098266100 1 魔獣ルクスリア]
+[charaSet G 1098266300 1 イラ]
+[charaSet H 1098266200 1 インヴィディア]
+[charaSet I 1098266300 1 アワリティア]
+[charaSet J 1098266200 1 グラ]
+[charaSet K 1098266300 1 アケディア]
+[charaSet L 1098266200 1 スペルビア]
+[charaSet M 1098266500 1 厄災の泥]
+[charaSet N 1098266100 1 魔獣ルクスリア_演出用]
+
+[imageSet O back10000 1 1]
+[charaScale O 1.05]
+[imageSet P back10000 1 1]
+[charaScale P 1.05]
+
+[sceneSet S 181900 1]
+[sceneSet T 181900 1]
+[sceneSet U 186000 1]
+[sceneSet V 186000 1]
+[charaSet Q 33001001 1 エフェクト用]
+[charaScale Q 1.2]
+
+[scene 181900]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_174 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[charaMoveScale A 1.3 0.2]
+[charaMove A 0,35 0.2]
+[charaFadeout A 0.2]
+[se ad678 0.7]
+[wt 0.1]
+[se ad386]
+[fowardEffect bit_talk_v_slash01]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+[wt 0.4]
+
+[wt 0.15]
+[se bac137]
+[se bac221]
+[wt 0.1]
+[charaShake M 0.04 4 4 0.7]
+[wt 0.3]
+[cueSe SE_21 21_ad1145 0.4]
+[wt 1.4]
+[seStop 21_ad1145 2.0]
+[se ad238 0.6]
+[seStop ad238 2.0]
+[se ad416 0.6]
+[seVolume ad416 0 0.5]
+[seStop ad416 2.0]
+[charaMove M 0,-20 0.3]
+[charaFadeout M 0.4]
+[wt 0.2]
+[shake 0.03 2 2 0.3]
+[wt 2.0]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.2 1]
+
+＠セタンタ
+[line 3]突破したぞ！
+[k]
+
+？1：もう……少し！
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale B 1.0]
+[charaScale S 1.2]
+[charaDepth B 2]
+[charaDepth S 1]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.4 -256,0]
+[charaFadein S 0.4 50,-250]
+[wt 1.0]
+
+[subCameraOn 1]
+[charaDepth C 5]
+[charaDepth T 2]
+[charaScale C 1.3]
+[charaScale T 1.2]
+[charaLayer C sub #A]
+[charaLayer T sub #A]
+[subCameraFilter #A maskEdge cut359_mask09 3 0,0,0,0]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 -45,340]
+[charaFadein T 0.1 0,50]
+[wt 0.1]
+[subRenderFadeinFSSideR #A 0.3 450,-340]
+[subRenderMoveFSSideR #A 350,-340 0.3]
+[wt 0.3]
+
+＠ロクスタ
+ネロさまぁぁぁぁぁぁぁ！
+[k]
+
+[messageOff]
+[se ad7 0.4]
+[charaMove C -65,340 0.3]
+[bgmStop BGM_BATTLE_174 1.5]
+[wt 1.0]
+
+＠F：？？？
+[line 3]卑しい毒婦が、不敬であるぞ。
+[k]
+
+[charaFace C 5]
+
+＠ロクスタ
+……っ！？
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[charaFadeout B 0.4]
+[charaFadeout S 0.4]
+[wt 0.4]
+[charaFadeout C 0.1]
+[charaFadeout T 0.1]
+[wt 0.1]
+[charaScale C 1.0]
+[charaScale T 1.0]
+[charaLayer C normal]
+[charaLayer T normal]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+キノコ女！
+[k]
+
+[messageOff]
+[subCameraOff]
+[se ad73]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,10 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+
+[effect bit_talk_14 -30,20]
+[effect bit_talk_kengekiall02_fs -30,20]
+[wt 0.1]
+[shake 0.03 3 3 0.7]
+[se ad1014]
+[wt 0.2]
+[se ad809]
+[wt 0.1]
+[effect bit_talk_14 200,-40]
+[se ad1032]
+[wt 0.2]
+[se ad1031]
+[wt 0.8]
+
+[se ad467]
+[flashin once 0.1 0.4 FFFFFFAF FFFFFF00]
+[shake 0.03 4 4 0.4]
+[wt 1.0]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.2 1]
+[wt 0.2]
+
+＠セタンタ
+何者だ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth N 7]
+[charaDepth S 1]
+[charaDepth T 3]
+[charaScale N 1.5]
+[charaScale S 1.2]
+[charaScale T 1.5]
+[charaTalk off]
+[charaFadein S 0.4 50,-200]
+[charaMove S -50,-200 4.0]
+[cueSe SE_22 22_ade807 0]
+[seVolume 22_ade807 1.0 0.2]
+[wt 3.0]
+
+[seStop 22_ade807 1.0]
+[se ad745]
+[flashin once 0.2 1.0 8E0019CF 8E001900]
+[charaFace N 0]
+[charaFadein T 0.7 0,-300]
+[charaFadein N 0.7 0,50]
+[shake 0.03 2 2 0.7]
+[wt 1.5]
+[charaFadeout S 0.1]
+[charaMove T 0,-350 5.0]
+[charaMove N 0,0 5.0]
+[wt 1.0]
+[bgm BGM_BATTLE_68 0.1]
+[wt 4.0]
+
+
+＠？？？
+[line 3]我、魔獣赫ルクスリアは色欲に染め上げん。
+[k]
+
+[messageOff]
+[charaFadeout N 0.7]
+[charaFadeout T 0.7]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ティアマト
+……ッ！？[r]この匂い、この気配！
+[k]
+
+[messageOff]
+[charaFadeout D 0.2]
+[wt 0.3]
+
+[charaDepth G 1]
+[charaDepth H 2]
+
+[charaTalk off]
+[charaPutFSL G -300,0]
+[charaFace G 0]
+[charaSpecialEffect G appearance 1 0.7]
+[charaPutFSR H 300,0]
+[charaFace H 0]
+[charaSpecialEffect H appearance 1 0.7]
+[cueSe SE_21 21_ade614 0]
+[seVolume 21_ade614 1.0 0.7]
+[se ad745 0]
+[seVolume ad745 1.0 1.0]
+[effect bit_talk_blood_rain 0,0 V]
+[shake 0.03 2 2 1.5]
+[wt 1.0]
+[seStop 21_ade614 1.0]
+[cueSe SE_23 23_ade867 0.6]
+[wt 1.0]
+
+[charaMoveScale G 1.1 0.2]
+[charaMoveFSL G -290,10 0.2]
+[charaFadeout G 0.2]
+[wt 0.1]
+[charaMoveScale H 1.1 0.2]
+[charaMoveFSR H 290,10 0.2]
+[charaFadeout H 0.2]
+[wt 0.2]
+[seStop 23_ade867 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.2 0,0]
+[wt 0.2]
+[effect bit_talk_14 -150,120]
+[se ad634]
+[se ad633]
+[se ad32 0.2]
+[charaShake D 0.04 3 3 0.4]
+[wt 0.3]
+[seStop ad634 0.7]
+[fowardEffect bit_talk_14 160,-120]
+[se ad32 0.9]
+[charaShake D 0.04 3 3 0.4]
+[wt 1.2]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠レディ・アヴァロン
+ああ、間違いない。[r]この子たちは……魔獣赫だ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaDepth U 1]
+[charaDepth V 2]
+[charaScale U 1.6]
+[charaScale V 1.6]
+[charaFadein U 1.0 400,-430]
+[charaMove U 350,-430 4.5]
+[wt 3.0]
+[scene 186000]
+[charaFadein V 1.0 -400,-430]
+[charaMove V -350,-430 4.5]
+[wt 2.0]
+[charaFadeout U 0.1]
+[wt 1.0]
+[charaFadeout V 1.0]
+[wt 2.0]
+
+？1：……ヒト型の魔獣赫！
+
+？！
+
+＠魔獣ルクスリア
+我らはもはや、獣の角に[#非:あら]ず。竜の首に[#非:あら]ず。[r]我らこそがソドムズビーストそのものなのだから。
+[k]
+
+＠魔獣ルクスリア
+そして[line 3]よくぞ参った。[r]我が契約者[%1]。
+[k]
+
+？1：魔獣赫！
+？2：ドラコーを[line 3]！
+
+？！
+
+[messageOff]
+[scene 181900 0.7]
+[wt 0.8]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠ロクスタ
+ネロさまを返しやがれです！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠魔獣ルクスリア
+手遅れだ、毒婦よ。[r]おまえの毒は、確かに[#本体:ネ　ロ]へ届いた。
+[k]
+
+＠魔獣ルクスリア
+もう眠りから醒めることは、無い。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ロクスタ
+…………っ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠魔獣ルクスリア
+おまえが一番、それを理解しているはず[line 3]
+[k]
+
+？1：…………いいや！
+？2：まだだ！
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+それで『はい、そうですか』って諦められるほど、[r]このマスターは物分かりがよくなくってね。
+[k]
+
+＠セタンタ
+そんな程度の器なら、[r]人理なんざ救っちゃいねえんだよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠魔獣ルクスリア
+ああ[line 3][r]理解しているとも。
+[k]
+
+＠魔獣ルクスリア
+だからこそ、ドラコーは[line 3]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[effect bit_talk_blood_mud]
+[se ade50]
+[se adm11 0.6]
+[se ad176 0]
+[seVolume ad176 0.7 0.7]
+[shake 0.03 2 2 1.5]
+[wt 1.5]
+[effectStop bit_talk_blood_mud]
+[seStop ade50 2.5]
+[seStop adm11 2.5]
+[seStop ad176 2.5]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠ドラコー
+[line 9]。
+[k]
+
+[messageOff]
+[se ade280]
+[cueSe SE_22 22_ade807 0.5]
+[cueSe SE_22 22_ad1213]
+[charaPut Q -50,0]
+[charaEffect Q bit_talk_blood_aura_fs]
+[charaEffect Q bit_talk_blood_aura_back_fs]
+[wt 2.5]
+[seStop ade280 1.0]
+[seStop 22_ade807 1.0]
+[seStop 22_ad1213 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut B 1200,1200]
+[charaPut Q 2000,2000]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠魔獣ルクスリア
+もうすぐだ。[r]間もなく、毒杯に泥が満ちる。
+[k]
+
+＠魔獣ルクスリア
+ドラコーという[#蛹:さなぎ]を食い破り、[r]我らはビースト真体として羽化するのだ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ティアマト
+……させない！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠魔獣ルクスリア
+アワリティア。[r]インヴィディア。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaDepth H 2]
+[charaDepth I 1]
+
+[charaTalk off]
+[charaFace H 0]
+[charaFadeinFSL H 0.1 0]
+[charaFace I 0]
+[charaFadeinFSR I 0.1 2]
+[wt 0.2]
+[effect bit_talk_blackfire_all_fs]
+[wt 0.3]
+[se ade393 0]
+[seVolume ade393 0.3 1.0]
+[se ad690 0.3]
+[seVolume ade393 0.7 0.7]
+[wt 0.7]
+
+[seStop ade393 1.0]
+[fadeout 1E0822 0.7]
+[wt 0.4]
+
+[charaChange H 98013300 0 fade 0.4]
+[charaChange I 98013300 0 fade 0.4]
+[shake 0.03 3 3 1.0]
+[wt 0.7]
+[charaDepth H 1]
+[charaDepth I 2]
+
+[effectDestroy bit_talk_blackfire_all_fs]
+[fadein 1E0822 1.0]
+[wt 1.2]
+
+[subCameraOn 1]
+[charaDepth F 5]
+[charaDepth T 2]
+[charaScale F 1.2]
+[charaScale T 1.2]
+[charaLayer F sub #A]
+[charaLayer T sub #A]
+[subCameraFilter #A maskEdge cut359_mask07 3 0,0,0,0]
+[charaFace F 0]
+[charaFadein F 0.1 0,350]
+[charaFadein T 0.1 0,50]
+[wt 1.0]
+[subRenderFadein #A 0.3 0,-340]
+[charaTalk on]
+[charaTalk F]
+
+＠魔獣ルクスリア
+[#言祝:ことほ]ぐが良い。[r]我らソドムズビーストの新生を。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+
+[se ad17]
+[se ad564 0.4]
+[fowardEffect bit_talk_voice02]
+[wt 0.2]
+[shake 0.03 3 3 1.3]
+[wt 1.3]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[fowardEffectDestroy bit_talk_voice02]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ティアマト
+がおー！
+[k]
+
+[messageOff]
+[charaFace D 4]
+[cueSe SE_23 23_ade868]
+[se ad805 0.4]
+[se ad875 0.3]
+[charaEffect D bit_talk_voice01]
+[shake 0.03 2 2 1.5]
+[wt 1.0]
+[seStop ad805 0.5]
+[wt 0.5]
+
+
+
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_68 0.4]
+[wait fade]
+[fowardEffectDestroy bit_talk_voice01]
+[soundStopAll]
+[end]
+

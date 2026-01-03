@@ -1,0 +1,377 @@
+
+＄03-00-12-13-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098234740 1 クラス・アサシン]
+[charaSet B 9005001 1 ホームズ]
+[charaSet C 1098231810 1 徐福]
+[charaSet D 1098242600 1 張角]
+
+[charaSet E 1098235500 1 傀儡1]
+[charaSet F 1098235500 1 傀儡2]
+[charaSet G 1098235500 1 傀儡3]
+[charaSet H 1098235500 1 傀儡4]
+
+[imageSet O back10000 1 1]
+[charaScale O 1.01]
+[imageSet P back10000 1 1]
+[charaScale P 1.01]
+
+[scene 153500]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠クラス・アサシン
+（仕留めました。[r]　気付かれた気配なし。このまま進みます）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠徐福
+（ここから地下に降ります。[r]　ホームズの推理が正しければ……）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ホームズ
+（ああ、張角はそこにいる）
+[k]
+
+＠ホームズ
+（道術の詳細は把握できていないが、[r]　キミのお陰でその過程はそれなりに理解できた）
+[k]
+
+＠ホームズ
+（過程があるのなら、終点があり、[r]　それは即ち結論だ）
+[k]
+
+＠ホームズ
+（この砦で最も安全な場所[line 3][r]　その[#傍ら]）
+[k]
+
+[charaFace B 5]
+＠ホームズ
+（そこに彼はいる）
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+[overlayFadein O 0.1 0,-740]
+[overlayFadein P 0.1 0,740]
+[charaFadeout B 0.1]
+
+[scene 153600]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,-50]
+＠張角
+……。[r]……む。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.4]
+
+
+[se ad546]
+[seVolume ad546 0 0.5]
+[wt 1.2]
+
+[charaMove O 0,-850 1.2]
+[charaMove P 0,850 1.2]
+[se ad95]
+[se ade421]
+[wt 1.6]
+
+[seStop ad95 0.2]
+[seStop ade421 0.2]
+[wt 0.8]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ホームズ
+初めまして、張角殿。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_52 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠張角
+ほっほぅ。[r]シャーロック・ホームズか。
+[k]
+
+＠張角
+まさか我が道術の檻を[#潜:くぐ]り抜けるとはのう……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠ホームズ
+いやいや、私一人ではとても辿り着けまい。[r]異国の秘奥までは推理できない。
+[k]
+
+[charaFace B 7]
+＠ホームズ
+だが、詳しい人間がいるなら話は別でね。[r]過程さえ理解できれば、結論は引き出せる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠張角
+なるほどのう。[r]そして、お主は……逃げたマスターか。
+[k]
+
+[charaFaceFade D 1 0.2]
+＠張角
+まさか戻ってくるとはな。[r]殊勝なことよ。
+[k]
+
+[charaFaceFade D 7 0.2]
+＠張角
+[#サロメの敵討ちかね]？
+[k]
+
+？1：……
+
+＠張角
+ほ、ほ。[r]睨むな睨むな。
+[k]
+
+？2：挑発には乗らない
+
+[charaFaceFade D 1 0.2]
+＠張角
+そのように感情を律しようとしている時点で、[r]挑発に乗ったも同然。
+[k]
+
+[charaFaceFade D 6 0.2]
+＠張角
+こういう時は、平静を保つことが重要じゃよ。
+[k]
+
+？！
+
+
+[charaFaceFade D 7 0.2]
+＠張角
+さて、ノコノコとワシの[#内側:な　か]に[r]入り込んでおいて、ただで済むと思うかね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠ホームズ
+思っているとも。
+[k]
+
+＠ホームズ
+何故なら、[r]貴方は味方を呼ぶことはできないからだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠張角
+……何？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ホームズ
+むしろ、味方に駆けつけてもらっては困る。[r][#それほどの何か]が、この砦にはある。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠張角
+[line 6]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ホームズ
+もちろん、我々は協力者を呼んであるとも。[r]彼女がこの砦の音の一切を除去するだろう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠張角
+カカカ、カカ。[r]恐るべしと呼ぶべきか、慈悲と賞賛すべきか。
+[k]
+
+[charaFaceFade D 5 0.2]
+＠張角
+確かに、ワシは迂闊に味方を呼べん。[r]故に、今から味方を全員金縛りにせねばならん。
+[k]
+
+[bgmStop BGM_MAP_52 1.5]
+
+[charaFaceFade D 6 0.2]
+＠張角
+だが[line 3]貴様の推理に、[r]コレは存在したかな？
+[k]
+
+[charaFaceFade D 2 0.2]
+＠張角
+出でよ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[charaTalk off]
+[charaDepth E 6]
+[charaDepth F 5]
+[charaDepth G 4]
+[charaDepth H 3]
+
+[se ad66]
+[wt 0.1]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadeinFSL E 0.4 -125,0]
+[charaFadeinFSR F 0.4 125,0]
+[charaFadeinFSL G 0.4 -400,0]
+[charaFadeinFSR H 0.4 400,0]
+[wt 1.1]
+[seStop ad66 0.6]
+[wt 0.8]
+
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_105 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠ホームズ
+……ふむ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠張角
+黄巾[#傀儡:くぐつ]兵。なかなかオシャレじゃろ？[r]これは貴様の推理にあったか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ホームズ
+ははは、さすがにないな。
+[k]
+
+[charaFace B 0]
+＠ホームズ
+だが、共犯者か忠実な手下の[r]どちらかが居るだろうとは推理していたとも。
+[k]
+
+[charaFace B 5]
+＠ホームズ
+これも計算の内。[r]では、お覚悟を。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠張角
+[line 3]ハッ。
+[k]
+
+[charaFaceFade D 1 0.2]
+＠張角
+ワシの天運、未だ健在。[r]おまえたち程度に殺されるほど、鈍ってはおらぬ。
+[k]
+
+[charaFaceFade D 2 0.2]
+＠張角
+[#大賢良師:たいけんりょうし]、張角。[r]参る！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_105 0.4]
+[wait fade]
+[soundStopAll]
+[end]

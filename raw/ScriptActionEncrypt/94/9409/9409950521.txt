@@ -1,0 +1,160 @@
+
+＄94-09-95-05-2-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098276910 1 マシュ]
+[sceneSet B 220301 1]
+[charaScale B 1.2]
+[sceneSet C 220301 1]
+[charaScale C 1.5]
+
+[charaScale A 1.2]
+
+[charaTalk depthOff]
+[charaDepth A 4]
+[charaDepth C 3]
+[charaDepth B 2]
+
+
+
+
+[scene 220301]
+
+
+[charaFadein B 0.1 -15,-300]
+[charaMove B 15,-300 7.0]
+
+[se ade422]
+[seVolume ade422 0 0]
+[seVolume ade422 1.0 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.5]
+[seStop ade422 1.8]
+[charaFadeout B 0.7]
+[wt 1.4]
+
+？1：……あれ？
+？2：考え事しながら歩いてたら[line 3]
+？！
+
+[se ade423]
+[seVolume ade423 0 0]
+[seVolume ade423 1.0 1.0]
+[wt 1.0]
+
+[charaFace A 23]
+[charaFadein A 0.4 120,0]
+[charaFadein C 0.4 -280,-350]
+
+[charaMoveEase A 100,0 0.5 easeOutSine]
+[charaMoveEase C -300,-350 0.5 easeOutSine]
+[seStop ade423 0.6]
+[wt 0.6]
+
+[bgm BGM_EVENT_146 0.1]
+
+＠マシュ
+大変です、マスター！[r]気をつけてはいたのですが……
+[k]
+
+＠マシュ
+リップさんとエレシュキガルさんと[r]はぐれてしまいました！
+[k]
+
+？1：困った[&な:ね]……けど集合場所は決めてるし
+？2：合流はすぐできるはず
+？！
+
+[charaFace A 9]
+
+＠マシュ
+そう……ですね。迷ったりはぐれたりした場合は、[r]恐竜の化石のところで集合するようにしていたのでした。
+[k]
+
+[charaFace A 14]
+
+＠マシュ
+大きな場所でのお買い物にトラブルはつきもの。
+[k]
+
+[charaFace A 4]
+
+＠マシュ
+慌てず騒がず、予定通りにお二人との[r]合流を目指しましょう。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_146 1.5 0.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+[charaScale A 1.0]
+
+[se ade422]
+[seVolume ade422 0 0]
+[wt 0.2]
+[seVolume ade422 1.0 0.7]
+[cueSe SE_23 23_ade895]
+[cueSeVolume 23_ade895 0 0]
+[cueSeVolume 23_ade895 1.0 0.7]
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+[bgm BGM_EVENT_146 1.0 1.0]
+[seStop ade422 1.5]
+[cueSeStop 23_ade895 1.5]
+[wt 1.0]
+
+？1：恐竜の化石……どこだっけ？
+？！
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠マシュ
+あれだけの目立つランドマークがあれば、[r]迷いようがないと思っていたのですが。
+[k]
+
+＠マシュ
+モール自体の造りが似たような場所ばかりで、[r]つまりは似たような視界ばかりとなっており[line 3]
+[k]
+
+[charaFace A 23]
+
+＠マシュ
+そもそも現在位置がわからず、そこに[r]辿り着けないという状況が発生しています！
+[k]
+
+[charaFace A 8]
+
+＠マシュ
+ど、どうすべきでしょうか……？
+[k]
+
+[messageOff]
+[wt 1.2]
+
+？1：……どこかのお店に入って
+？2：道を聞いてみようか？
+？！
+
+[charaFace A 2]
+[charaMoveReturn A 0,-4 0.6]
+[wt 1.5]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_146 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

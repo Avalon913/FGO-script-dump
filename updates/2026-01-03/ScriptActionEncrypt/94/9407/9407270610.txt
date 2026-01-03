@@ -1,0 +1,541 @@
+
+
+＄94-07-27-06-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098124510 1 ダ・ヴィンチ]
+[charaSet B 2005001 1 アタランテ]
+[charaSet C 2030001 1 ケイローン]
+[charaSet D 2021000 1 巴御前]
+
+[sceneSet F 157300 1]
+[charaScale F 1.2]
+
+[imageSet G cut361_radar02 1]
+
+[charaSet M 98115000 1 通信用ノイズ]
+[charaSet N 98115000 1 通信用ノイズ]
+
+[charaSet E 98115000 1 エフェクト用１]
+[charaSet H 98115000 1 エフェクト用２]
+
+[charaEffect N bit_talk_10]
+[charaPut N 2000,2000]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth D 2]
+[charaDepth C 3]
+
+[scene 157300]
+
+[fadein black 2.0]
+[wait fade]
+
+[se ad550]
+[seVolume ad550 0 0]
+[seVolume ad550 0.5 0.8]
+[wt 0.5]
+
+[fowardEffect bit_talk_warp_out]
+[wt 0.1]
+
+[wt 0.8]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[seStop ad550 0.3]
+[se ad473]
+[seVolume ad473 0 0.5]
+[se ade132]
+[seVolume ade132 0 0.5]
+[wt 1.0]
+
+[charaTalk off]
+
+[charaFace B 5]
+[charaFadein B 0.2 1]
+
+[wt 1.8]
+
+[bgm BGM_EVENT_49 0.1]
+
+[charaTalk on]
+＠アタランテ
+[line 3]アタランテ、他二名、迎撃座標に[#顕現:けんげん]した。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[se ad1]
+[charaFadein G 0.2 0,-200]
+[wt 2.0]
+
+＠アタランテ
+情報は受け取った。[r]まもなく[#敵勢力]と交差する。
+[k]
+
+[messageOff]
+[charaFadeout G 0.2]
+[wt 0.4]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠アタランテ
+特に異常は見当たらない。[r]状況そのものは……大いに異常だが。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad13]
+[charaPut M 0,0]
+[charaEffect M bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.2 1]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+オリオンが崩壊させた光束は、[r]さらに分裂し、今度は無数の矢となって迫っている。
+[k]
+
+＠ダ・ヴィンチ
+そちらの三騎で全力で対応しても、[r]かなり困難が予想される。
+[k]
+
+[charaFadeout A 0.1]
+[charaPut M 2000,2000]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠アタランテ
+オリオンが傷口を広げて[r]事態を悪化させたということか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+[charaPut M 0,0]
+
+＠ダ・ヴィンチ
+いやいやいや、想定外の事態だけれど、[r]そうとは言い切れない。
+[k]
+
+[charaFace A 25]
+
+＠ダ・ヴィンチ
+物理的な熱量は大幅に減衰させているんだ。[r]けれど、その代わりに増加したのは……。
+[k]
+
+[messageOff]
+
+
+[se ad31]
+[charaPut M 2000,2000]
+[charaPut N 0,0]
+[wt 0.5]
+[charaPut N 2000,2000]
+[charaPut M 0,0]
+[wt 0.3]
+[charaPut M 2000,2000]
+[charaPut N 0,0]
+[wt 1.0]
+
+[seStop ad31]
+[se ad1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut N 2000,2000]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠アタランテ
+魔力か……！
+[k]
+
+＠アタランテ
+……ダ・ヴィンチ？
+[k]
+
+[messageOff]
+[se ad539]
+[wt 1.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ケイローン
+また通信のトラブルですか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠アタランテ
+そのようだ。
+[k]
+
+[charaFace B 0]
+
+＠アタランテ
+まあ、特に問題はない。いつものことだ。[r]すでに目標も捉えているのだからな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ケイローン
+ええ。ところで……
+[k]
+
+＠ケイローン
+この恐るべき矢を射た[#源為朝:みなもとのためとも]とは[r]縁の深い相手であると、耳に挟みましたが[line 3]
+[k]
+
+＠ケイローン
+[line 3][#巴御前:ともえごぜん]殿？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠巴御前
+はい。[r]源氏ゆかりの身である私にとっては、そうなりますね。
+[k]
+
+＠巴御前
+[#為朝:ためとも]殿は、[#義仲:よしなか]様の……[r]我が主君、[#木曾義仲:きそよしなか]様の叔父にあたる御方です。
+[k]
+
+＠巴御前
+[#義仲:よしなか]様の父君である[#義賢:よしかた]様が一家の次男、[r][#為朝:ためとも]殿が八男でございました。
+[k]
+
+[charaFace D 5]
+
+＠巴御前
+そして……兄弟の長兄でありながら[r]尊父・[#源為義:みなもとのためよし]殿を裏切った[#源義朝:みなもとのよしとも]……。
+[k]
+
+＠巴御前
+その[#義朝:よしとも]を、同じく[#敵:かたき]としていた、[r]……そのような間柄とも言えましょう。
+[k]
+
+＠巴御前
+[#為朝:ためとも]殿とは世代が異なり[r]肩を並べて[#戦:いくさ]に挑んだことはありませぬが、
+[k]
+
+＠巴御前
+その勇名は木曽の山野にまで[r]雄々しく[#轟:とどろ]いておりました。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アタランテ
+そうか。汝も源氏の[#縁者:えんじゃ]だったか。
+[k]
+
+[charaFace B 4]
+＠アタランテ
+では同じ氏族同士での戦いになるな。[r]やりづらくはないか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠巴御前
+いえ、それもまた源氏の宿命なれば。
+[k]
+
+[charaFace D 1]
+＠巴御前
+[#鎮西八郎:ちんぜいはちろう]の[#強弓:ごうきゅう]を相手取ることがかなうとは[r]武を尊ぶ者として、[#希:まれ]なる[#誉:ほま]れにございます……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠アタランテ
+うん。ならばよい。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_49 0.7]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadein F 0.1 -60,-260]
+[charaMove F 60,-300 4.0]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[se ad944]
+[cueSe SE_22 22_ade741]
+[seVolume 22_ade741 1.5 0.2]
+[effect bit_talk_arrow_enemy_l]
+[wt 2.0]
+
+[seStop ad944 0.5]
+[seStop 22_ade741 0.5]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[effectDestroy bit_talk_arrow_enemy_l]
+[wt 0.5]
+
+[bgm BGM_BATTLE_78 0.1]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+[wt 0.4]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ケイローン
+さあ、もう間近に迫りました。[r]いざ、弓を！　ここよりは[#射手:い　て]の戦場です。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠アタランテ
+天を埋め尽くす無数の矢か……[wt 0.3][charaFace B 2][r]では、[#露払:つゆはら]いは私にまかせるがいい！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ケイローン
+ええ、[#委:ゆだ]ねます。[r]巴御前、我々はしぶとく生き延びた矢を叩きましょう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠巴御前
+承知[#仕:つかまつ]りました！
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[effectDestroy bit_talk_lens_flare_fs]
+
+[imageSet A cut373_cut_back03_line_left 1]
+[imageSet E cut373_cut_back03_line_right 1]
+[imageSet F cut373_cut_back03_ant 1]
+[imageSet G cut373_cut_back03_center 1]
+[imageSet H cut373_cut_back03_right 1]
+[imageSet I cut373_cut_back03_crn 1]
+[imageSet L cut373_cut_back03_tme 1]
+
+[charaSet B 1098245000 1 アタランテ]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth F 1]
+[charaDepth B 2]
+[charaDepth H 3]
+
+
+[charaDepth I 5]
+[charaDepth C 6]
+[charaDepth G 7]
+[charaDepth A 8]
+[charaDepth E 9]
+
+[wt 0.5]
+
+[se ade462]
+
+[charaFadein A 0.1 0,-200]
+[charaFadein F 0.1 -160,-200]
+[charaFadein G 0.1 0,-200]
+[charaFadein H 0.1 160,-200]
+
+[charaFace B 5]
+[charaFadein B 0.1 -290,0]
+[charaMove B -310,0 5.0]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+
+＠アタランテ
+遠矢の神、狩りの女神、[r]アポロンよ……アルテミスよ……！
+[k]
+
+＠アタランテ
+命脈果つる地にて[r]双神の加護をぞ願い[#奉:たてまつ]らん……。[seStop ade462 0.5]
+[k]
+
+[charaFace B 2]
+＠アタランテ
+[f large]『[#訴状の矢文:ポ イ ボ ス ・ カ タ ス ト ロ フ ェ]』！
+[k]
+
+[messageOff]
+
+[charaScale C 1.4]
+
+
+[se ad476]
+[charaFadein E 0.1 0,-200]
+[charaFadein I 0.1 160,-200]
+
+[charaFace C 5]
+[charaFadein C 0.4 410,0]
+[charaMove C 430,0 5.0]
+＠ケイローン
+これこそは、星の[#蠍:さそり]を[#穿:うが]つ一撃なり。[r]我が矢はすでに放たれた！
+[k]
+
+＠ケイローン
+今宵は月光と共に散るがいい！
+[k]
+
+[charaFace C 2]
+[seStop ad476 0.5]
+＠ケイローン
+[align right][f large]『[#天蠍一射:ア ン タ レ ス ・ ス ナ イ プ]』！！[align]
+[k]
+
+[messageOff]
+
+[charaScale D 1.45]
+
+[charaDepth G 2]
+[charaDepth L 3]
+[charaDepth D 4]
+[charaDepth F 6]
+[charaDepth B 7]
+
+
+[charaFadein L 0.1 0,-200]
+
+[se ad474]
+
+[charaFace D 0]
+[charaFadein D 0.4 20,20]
+[charaMove D 20,0 5.0]
+
+＠巴御前
+迫るは月の光を[#湛:たた]えし[#込矢:こみや]……。
+[k]
+
+＠巴御前
+この技の、[#旭:あさひ]なる猛将の威光を前に、[r]夜の[#霞:かすみ]と消え失せよ！
+[k]
+
+[charaFace D 5]
+＠巴御前
+[#聖観世音菩薩:しょうかんぜおんぼさつ][line 3]私に、力を！[r][#旭:あさひ]の輝きを！
+[k]
+
+[seStop ad474 0.5]
+
+[charaFace D 2]
+＠巴御前
+[align center][f large]『[#真言・聖観世音菩薩:オ    ン    ・    ア    ロ    リ    キ    ャ    ・    ソ    ワ    カ]』！！[align]
+[k]
+
+[messageOff]
+
+[bgmStop BGM_BATTLE_78 1.0]
+[se ade58]
+[se ade58]
+[se ad854]
+[se ad856]
+[se ad837]
+[seStop ad837 1.0]
+[fadeout white 1.5]
+[wait fade]
+
+[scene 10000]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout L 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+
+
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

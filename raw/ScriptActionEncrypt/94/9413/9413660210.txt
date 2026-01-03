@@ -1,0 +1,462 @@
+
+
+＄94-13-66-02-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257310 1 ダ・ヴィンチ]
+[charaSet B 1098257310 1 ダ・ヴィンチ（演出用）]
+[charaSet C 2053000 1 ツタンカーメン]
+[charaSet D 2053000 1 ツタンカーメン（演出用）]
+[charaSet E 3056000 1 ゴッホ]
+[charaSet F 3056000 1 ゴッホ（演出用）]
+[charaSet G 3056000 1 ゴッホ（演出用）]
+[charaSet H 3056000 1 ゴッホ（演出用）]
+
+[sceneSet J 233400 1]
+[sceneSet K 233401 1]
+[sceneSet L 233402 1]
+[sceneSet M 231400 1]
+[sceneSet N 231400 1]
+[sceneSet O 231400 1]
+[sceneSet P 231400 1]
+[sceneSet Q 231400 1]
+[sceneSet R 231403 1]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用]
+[charaSet X 98115000 1 エフェクト用]
+
+[cameraMove 0 0,0 1.01]
+
+[charaPut T 2000,2500]
+[charaPut V 2000,2500]
+[charaEffect T bit_sepia01_depth_fs]
+[charaEffect V bit_sepia01_depth_fs]
+
+[subCameraOn 4]
+[charaLayer J sub #A]
+[charaLayer K sub #A]
+[charaLayer L sub #A]
+
+[charaLayer W sub #B]
+[charaLayer U sub #B]
+[charaLayer D sub #B]
+[charaLayer F sub #B]
+[charaLayer N sub #B]
+
+[charaLayer X sub #C]
+[charaLayer G sub #C]
+[charaLayer O sub #C]
+
+[charaLayer H sub #D]
+[charaLayer P sub #D]
+
+[subCameraFilter #A normal]
+[subCameraFilter #B normal]
+[subCameraFilter #C normal]
+[subCameraFilter #D maskEdge cut359_mask11 5 255,255,255,255]
+
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+[subRenderScale #C 1.01]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+[subRenderDepth #D 4]
+
+[charaTalk depthOff]
+[charaDepth J 2]
+[charaDepth K 3]
+[charaDepth L 4]
+[charaScale J 1.0]
+[charaFadein J 0 0,-200]
+
+[charaDepth N 2]
+[charaDepth F 3]
+[charaDepth D 4]
+[charaDepth U 7]
+[charaDepth W 8]
+
+[charaPut W 1]
+[charaEffect W bit_sepia01_depth_fs]
+
+[charaPut U 0,-50]
+[charaEffect U bit_talk_glowing_sphere]
+
+[charaScale N 1.0]
+[charaFadein N 0 0,-200]
+
+[charaFace D 8]
+[charaFadein D 0 -175,0]
+[charaFace F 15]
+[charaFadein F 0 125,-50]
+
+[charaDepth O 2]
+[charaDepth G 3]
+[charaDepth X 4]
+
+[charaPut X 1]
+[charaEffect X bit_sepia01_depth_fs]
+
+[charaScale O 1.0]
+[charaFace G 24]
+[charaFadein G 0 0,0]
+[charaFadein O 0 0,-200]
+
+[charaDepth P 2]
+[charaDepth H 3]
+[charaScale P 1.2]
+[charaFace H 30]
+[charaFadein H 0 440,315]
+[charaFadein P 0 -200,0]
+
+[scene 231400]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut S 1]
+[charaEffect S bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+ふーっ、待たせたね。ツタンカーメン王改め、ツタンが[r]集めてくれた膨大なデータ、ようやく分析が完了した。
+[k]
+
+[charaFace A 0]
+＠ダ・ヴィンチ
+現在分かったことと、これからの方針を、[r]ざっくり説明しよう。
+[k]
+
+[messageOff]
+[subRenderFadein #A 0.8 0,0]
+[wt 1.1]
+
+[bgm BGM_GOGH_1 0.1]
+
+＠ダ・ヴィンチ
+まず、この特異点は、ツタンが調べた限り、[r]容量の限界を持たない。一見すると底なしだ。
+[k]
+
+＠ダ・ヴィンチ
+もちろんこれはありえない。[r]神秘によるズルがされている。それを解析すると……
+[k]
+
+[messageOff]
+[charaFadein K 0.8 0,-200]
+[wt 1.1]
+
+＠ダ・ヴィンチ
+どうやらここは、７つの領域で構成されてる。[r]この絶妙な重なり合わせで、容積が偽装されてるんだ。
+[k]
+
+＠ダ・ヴィンチ
+そして……
+[k]
+
+[messageOff]
+[charaFadein L 0.8 0,-200]
+[wt 1.1]
+
+＠ダ・ヴィンチ
+７つの各領域それぞれの中心に、[r]サーヴァントらしき気配がある。
+[k]
+
+＠ダ・ヴィンチ
+聖杯戦争かその類の、サーヴァントを使った儀式が[r]行われている可能性が高い。だから……
+[k]
+
+[charaFace A 23]
+＠ダ・ヴィンチ
+当面の目的はシンプルだ。サーヴァントたちと接触し、[r]事情を聞き出し、必要なら儀式を止めること。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.8]
+[wt 1.0]
+
+＠ダ・ヴィンチ
+ただし、普通に歩いてたどり着くのは無理だ。[r]偽物とはいえ広すぎる。一生かけても到着しないだろう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaDepth E 2]
+[charaDepth C 3]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace E 29]
+[charaFadeinFSL C 0.1 0]
+[charaFadeinFSR E 0.1 2]
+＠ツタンカーメン
+ふふ、そこで[#己:うぬ]と、
+[k]
+
+＠ゴッホ
+ゴッホががんばります……！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+そう、ツタンが現場監督を、ヴァン・ゴッホが肉体労働を[r]担当し、特異点突破の大工事を[#敢行:かんこう]する！
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[wt 0.1]
+
+[fadeout white 0.7]
+[wait fade]
+
+[charaTalk off]
+
+[charaPut S 2000,2500]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+
+[charaPut T 1]
+
+[scene 231403]
+
+[charaLayer V sub #A]
+[charaLayer R sub #A]
+[subCameraFilter #A maskEdge cut359_mask10 5 191,167,107,255]
+
+[charaDepth M 2]
+[charaDepth E 3]
+
+[charaScale M 1.2]
+[charaScale E 1.2]
+
+[charaPut V 0,225]
+
+[charaFace E 8]
+[charaFadein E 0 250,0]
+[charaFadein M 0 -100,-260]
+
+[charaFadeinFSSideL R 0 380,0]
+
+[subRenderFadein #A 0 -225,-225]
+[blur motion 5.0 4 10000 0.7 0.5 0.05 100]
+
+[wt 0.6]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.4]
+
+
+＠ダ・ヴィンチ
+『[#夜のカフェテラス:カ ッ フ ェ ー テ ラ ス ・ ベ イ ・ ナ フ ト]』は、地形破壊に限れば超強力。[r]しかし分厚い概念のカベを貫くのはさすがに厳しい。
+[k]
+
+[messageOff]
+[subRenderFadein #B 0.8 0,0]
+[wt 0.8]
+
+[subRenderFadeout #A 0]
+[charaFadeout R 0.1]
+[charaPut T -440,275]
+[charaPut V 2000,2500]
+[charaEffect T bit_talk_10_LowLevel]
+[charaEffectDestroy T bit_sepia01_depth_fs]
+[charaEffectDestroy V bit_sepia01_depth_fs]
+[charaLayer T sub #A]
+[charaLayer B sub #A]
+[charaLayer Q sub #A]
+[subCameraFilter #A maskEdge cut359_mask12 5 255,255,255,255]
+[charaScale Q 1.2]
+
+[charaDepth Q 1]
+[charaDepth B 2]
+[charaDepth T 3]
+
+[charaFace B 18]
+[charaFadein B 0 -430,305]
+[charaFadein Q 0 200,0]
+[subRenderDepth #A 4]
+[wt 0.2]
+
+＠ダ・ヴィンチ
+そこでツタンの出番。魔術によりヴァン・ゴッホの宝具に[r]対界攻撃概念を与え、[#特異点を部分破壊しながら進む]！
+[k]
+
+＠ダ・ヴィンチ
+迷路の壁をぶち抜いて目的地に向かうんだ。[r]英霊２騎の連携による超ゴリ押しプレイってわけ！
+[k]
+
+
+[messageOff]
+[subRenderFadein #C 0.8 0,0]
+[wt 1.0]
+
+
+＠ダ・ヴィンチ
+なおヴァン・ゴッホは相変わらず、オーバーワークが利く[r]かわりに餓死のリスクが付きまとう状態だ。
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaTalk H,G]
+[subRenderFadeinFSSideR #D 0.3 -75,-200]
+[subRenderMoveEaseFSSideR #D -25,-250 0.3 easeOutSine]
+[wt 0.3]
+
+＠H：ゴッホ=spot[H,G]
+あのこれ本当に大丈夫なんですよね！？[r]特異点から出れば治りますよね！？
+[k]
+
+
+[messageOff]
+[charaTalk B,G]
+[subRenderFadeinFSSideL #A 0.3 75,-200]
+[subRenderMoveEaseFSSideL #A 25,-250 0.3 easeOutSine]
+[wt 0.3]
+
+＠B：ダ・ヴィンチ=spot[B,G]
+そこは100%保証するよ！　だからそっちにいる間は、[r]空腹対策をしたうえでしっかり肉体労働に励んでもらう！
+[k]
+
+＠B：ダ・ヴィンチ=spot[B,G]
+特異点や死霊の[#残渣:ざんさ]を食糧に変換する『畑』を[r]ときどき[#創造:クラフト]し、食糧を確保しながら進んでくれ！
+[k]
+
+[messageOff]
+[fadeout white 0.7]
+[wait fade]
+
+[blurOff motion 0]
+
+[subRenderFadeout #B 0]
+[subRenderFadeout #C 0]
+[subRenderFadeout #D 0]
+[charaFadeout M 0.1]
+[charaFadeout R 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[charaPut T 2000,2500]
+[charaPut U 2000,2500]
+[charaPut V 2000,2500]
+[charaPut W 2000,2500]
+[charaPut X 2000,2500]
+[charaEffectDestroy T bit_talk_10_LowLevel]
+[charaEffectDestroy U bit_talk_glowing_sphere]
+[charaEffectDestroy V bit_sepia01_depth_fs]
+[charaEffectDestroy W bit_sepia01_depth_fs]
+[charaEffectDestroy X bit_sepia01_depth_fs]
+[subCameraOff]
+[charaLayer J normal]
+[charaLayer K normal]
+[charaLayer L normal]
+[charaLayer M normal]
+[charaLayer R normal]
+[charaLayer N normal]
+[charaLayer O normal]
+[charaLayer P normal]
+[charaLayer Q normal]
+[charaLayer D normal]
+[charaLayer F normal]
+[charaLayer G normal]
+[charaLayer H normal]
+[charaLayer B normal]
+[charaLayer T normal]
+[charaLayer U normal]
+[charaLayer V normal]
+[charaLayer W normal]
+[charaLayer X normal]
+[charaScale J 1.0]
+[charaScale K 1.0]
+[charaScale L 1.0]
+[charaScale M 1.0]
+[charaScale R 1.0]
+[charaScale N 1.0]
+[charaScale O 1.0]
+[charaScale D 1.0]
+[charaScale F 1.0]
+[charaScale G 1.0]
+[charaScale T 1.0]
+[charaScale U 1.0]
+[charaScale V 1.0]
+[charaScale W 1.0]
+[charaScale X 1.0]
+
+
+[scene 231400]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+[wt 0.6]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.2]
+
+＠ダ・ヴィンチ
+要するに、[#アルクラ:ゲ  　ー  　ム]と同じ要領さ。[r]穴を掘り、畑を耕し、食べ物を食べて、特異点を冒険だ！
+[k]
+
+[charaFace A 4]
+＠ダ・ヴィンチ
+キミの徹夜の[#訓練]の成果、存分に発揮してくれたまえ！
+[k]
+
+？1：まかせて！
+
+[charaFace A 28]
+＠ダ・ヴィンチ
+頼もしいな～！[r]根詰めすぎて寝落ちしないようにね！
+[k]
+
+？2：いじわる！
+
+[charaFace A 36]
+＠ダ・ヴィンチ
+あはは、ごめ～ん。でも実際、幸運だったよ。[r]使える経験はゲームだって何だって使っていこう！
+[k]
+
+？！
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_GOGH_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

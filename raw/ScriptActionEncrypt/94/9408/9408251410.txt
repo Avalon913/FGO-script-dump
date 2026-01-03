@@ -1,0 +1,1205 @@
+
+＄94-08-25-14-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1057000 1 セタンタ]
+[charaSet B 6048001 1 ロクスタ]
+[charaSet C 1098261000 1 ドラコー]
+[charaSet D 3013001 1 スカサハ]
+[charaSet E 1098261400 1 クー・フーリン・オルタ]
+[charaSet F 1057000 1 セタンタ_演出用]
+[charaSet G 1057000 1 セタンタ_演出用]
+
+[sceneSet S 184400 1]
+[sceneSet T 184400 1]
+[sceneSet V 182900 1]
+[charaScale V 1.2]
+
+[imageSet H back10000 1 1]
+[charaScale H 1.05]
+[imageSet I back10000 1 1]
+[charaScale I 1.05]
+
+[charaFadein V 0.1 -50,-250]
+[wt 0.1]
+[scene 182900]
+[cueSe SE_21 21_ad1066 0]
+[seVolume 21_ad1066 2.0 1.0]
+[charaMove V 50,-250 5.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[seVolume 21_ad1066 0.7 0.3]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[charaFadeout V 0.1]
+[scene 183100]
+[wt 0.4]
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+[seStop 21_ad1066 1.4]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 1]
+[wt 0.4]
+[bgm BGM_EVENT_70 0.1]
+
+＠セタンタ
+ワシントンに入ったが……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠ロクスタ
+思ってたよりすんなり来れましたねぇ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ドラコー
+予想よりも敵の抵抗が少ない。[r]……罠か？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+それか、向こうにとっても予想外の[r]事態が起こっているか、だな。
+[k]
+
+[charaFace A 10]
+
+＠セタンタ
+思いどおりにいかないなんて、[#戦:いくさ]の常だろ？[r]……だけど、気をつけろよ。
+[k]
+
+[charaFace A 13]
+
+＠セタンタ
+あそこにはきっと、百万の敵よりも[r]おっかねえのが残ってるぜ。
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_EVENT_70 1.5]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 184400]
+[wt 1.5]
+[fadein black 1.0]
+[wait fade]
+
+[se ad60]
+[wt 1.0]
+[seStop ad60 0.6]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠ドラコー
+これは……
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[bgm BGM_EVENT_81 0.1]
+[scene 10000]
+[effect bit_talk_blood_stay 30,-20]
+[backEffect bit_talk_blood_stay -10,20 H]
+[charaEffect F bit_talk_blood_stay -40,-10 V]
+[charaEffect G bit_talk_blood_stay 50,30 F]
+[cameraMove 0.1 -30,0 1.1]
+[wt 0.4]
+[cameraMove 3.7 30,0 1.1]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+[wt 3.5]
+
+？1：大地一面に血の痕が……
+
+？！
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+[effectDestroy bit_talk_blood_stay]
+[backEffectDestroy bit_talk_blood_stay]
+[charaEffectDestroy F bit_talk_blood_stay]
+[charaEffectDestroy G bit_talk_blood_stay]
+[cameraHome 0.1]
+[scene 184400]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠ロクスタ
+おーう……ジェノサイド……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+……やっぱりいたな。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 3]
+[charaDepth A 1]
+[charaDepth S 2]
+[charaScale D 1.2]
+[charaScale S 1.2]
+[charaFace D 0]
+[charaFadein D 0.4 0,180]
+[charaFadein S 0.4 0,-150]
+[charaMove D 0,30 3.4]
+[charaMove S 0,-300 3.4]
+[charaFace A 13]
+
+[wt 4.4]
+
+[charaFadeout D 0.4]
+[charaFadeout S 0.4]
+[wt 0.5]
+[charaScale D 1.0]
+[charaScale S 1.0]
+
+[charaTalk on]
+
+＠セタンタ
+[line 3]スカサハだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+うむ？[r]ああ、来たか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+……おう。[r]じゃなくて、うっす、師匠。
+[k]
+
+[charaFace A 8]
+
+＠セタンタ
+セタンタっす。[r]お久しぶりっす……でいいのか、この場合？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+はは、奇妙なことを言う。儂の下に来た時は、[r]お主、既にクー・フーリンであったろうに。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+あんたがしつこくセタンタ、セタンタ、[r]呼び続けたせいだろうが……。
+[k]
+
+[charaFace A 0]
+
+＠セタンタ
+……実際、オレはセタンタだよ。今はまだ、[r]クー・フーリンを名乗れるような器じゃねえ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+殊勝なことだ。どれ、久々に稽古をつけてやる[r]……と言いたいところだが。
+[k]
+
+[messageOff]
+[charaMove D 0,-7 0.4]
+[wt 0.2]
+[se ad442]
+[wt 0.8]
+[charaFace D 0]
+
+＠スカサハ
+おまえはビーストの側だったな。[r]ならば、うん、殺そう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+
+＠ロクスタ
+コイツも中身バーサーカーですよぉっ！？
+[k]
+
+？1：……スカサハだからね
+？2：強いケルトの人はね……
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+だから、ビーストの仲間に[r]なったつもりはねえっつーの。
+[k]
+
+[charaFace A 1]
+
+＠セタンタ
+オレはただマスターを守るだけだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+同じことだ、馬鹿者。
+[k]
+
+＠スカサハ
+ビースト幼体も、獣の契約者も見過ごすわけにはいかぬ。[r]……[#鏖殺:おうさつ]あるのみよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+……………………。
+[k]
+
+[charaFace A 4]
+
+＠セタンタ
+……なあ、師匠。こいつは今『人理消滅』よりも[r]ヤバいもん背負い込んでいる。
+[k]
+
+＠セタンタ
+オレもまだイマイチわかっちゃいねえが……[r]汎人類史が懸かってるんだろう？
+[k]
+
+＠セタンタ
+こいつのカルデアがしくじれば、[r]まるごと消し飛ぶ[line 3]
+[k]
+
+＠セタンタ
+他の英霊ならともかく、[r]あんたがそれを理解してないはずが……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.0]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+何だ、そんなことか。
+[k]
+
+[charaFaceFade D 5 0.2]
+[wt 0.2]
+
+＠スカサハ
+[line 3]関係ないな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ドラコー
+……ッ！　貴様……[bgm BGM_EVENT_72 0.1]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+おいおい、師匠。[r]なに言ってやが……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+おまえこそ何を言っている？
+[k]
+
+＠スカサハ
+汎人類史の敗北。地球の白紙化。[r]なるほど、確かに大事だ。
+[k]
+
+？1：（……やっぱり）
+？2：（全部知ってるんだ）
+
+？！
+
+[charaFace D 5]
+
+＠スカサハ
+だがな、セタンタ。[r][#それがどうしたというのだ]？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+……何だと？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+それは獣の契約者[line 3]そやつと、[r]その世界を生きる者が向き合うべき試練。
+[k]
+
+＠スカサハ
+英霊が[line 3]死者の夢如きが、[r]背負って良いものではない。
+[k]
+
+＠スカサハ
+この螺旋証明世界に喚ばれた私は、[r]ただビーストⅥを殺すためだけの装置。
+[k]
+
+＠スカサハ
+その末路など、私の知るところではない。[r]サーヴァントとはそういうものだろう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+[line 6]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+それに、な。[r]セタンタよ。
+[k]
+
+＠スカサハ
+[#たかが世界の終わり]。[r]大して珍しいものでもあるまいに。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+……なるほどな。こういうことか。[r]スカサハ、あんた確かにサーヴァントだ。
+[k]
+
+＠セタンタ
+サーヴァントのあんたなんて、[r]本来はあり得ないはずだからな。
+[k]
+
+[charaFace A 13]
+
+＠セタンタ
+確かに、スカサハだ。[r]でも、スカサハじゃない。
+[k]
+
+＠セタンタ
+最下層に湧いたのと同じ……ただの影だ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+それはおまえもだ、馬鹿弟子よ。
+[k]
+
+
+＠スカサハ
+おまえが今抱いている、その熱、[#滾:たぎ]り、殺意。[r]すべて過去の[#歪:ゆが]んだ投影であることを知れ。
+[k]
+
+[charaFace D 5]
+
+＠スカサハ
+でなくば、おまえは道を[#違:たが]えるぞ。[r]死者の[#過去:ゆ　め]で、生者の[#理想:ゆ　め]を[#穢:けが]す。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠ドラコー
+………………。
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+[line 9]。
+[k]
+
+[bgmStop BGM_EVENT_72 2.5]
+[charaMove A 0,-15 1.0]
+＠セタンタ
+……はぁぁぁぁぁ～～～～～っ
+[k]
+
+？1：……セタンタ？
+
+？！
+
+[messageOff]
+[charaTalk off]
+[charaDepth S 2]
+[charaDepth F 3]
+[charaScale S 1.4]
+[charaScale F 1.4]
+[charaFadein S 0.4 0,-350]
+[charaFace F 2]
+[charaFadein F 0.4 0,20]
+[wt 0.4]
+[bgm BGM_MAP_89 0.1]
+[charaFadeout A 0.1]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠セタンタ
+全然わっかんねえですねえ！[r]ババアと違って、オレ、まだガキなんで！
+[k]
+
+＠セタンタ
+サーヴァントとはそういうもの！？[r]先なんて知ったこっちゃねえ、だと！？
+[k]
+
+＠セタンタ
+だったら、どうして[#英霊:オ　レ]たちは！[r]理を超えて！　奇跡さえ起こして！
+[k]
+
+＠セタンタ
+どうして！　[#マスター:あ　い　つ]の下に集ったんだよ！
+[k]
+
+[messageOff]
+[charaFadeout S 0.3]
+[charaFadeout F 0.3]
+[wt 0.3]
+[charaTalk C]
+
+＠ドラコー
+セタンタ、おまえ……
+[k]
+
+[messageOff]
+[charaFace F 2]
+[charaFadein S 0.3 0,-350]
+[charaFadein F 0.3 0,20]
+[wt 0.3]
+[charaFadeout C 0.1]
+[charaDepth D 0]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠セタンタ
+[#英霊:サーヴァント]の理屈に収まる程度の器なら！[r]オレは英雄になんぞなれやしねえ！
+[k]
+
+[messageOff]
+[charaFadeout S 0.3]
+[charaFadeout F 0.3]
+[wt 0.3]
+[charaTalk D]
+
+＠スカサハ
+……呆れた。[r]流石の儂も呆れ果てたぞ。
+[k]
+
+＠スカサハ
+あまりにも未熟。あまりにも幼稚。[r][#斯様:かよう]な拙さで、世界を相手に吠えるのか。
+[k]
+
+[charaFace D 5]
+
+＠スカサハ
+セタンタよ。[r]お主、まだまだケルトが練れておらぬな。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth T 1]
+[charaDepth B 2]
+[charaScale T 1.2]
+[charaScale B 1.1]
+[charaScale C 1.1]
+[charaFadein T 0.7 -80,-250]
+[charaMove T -110,-250 0.7]
+[wt 0.7]
+[charaTalk B]
+[charaFace B 27]
+[charaFadein B 0.4 200,0]
+[wt 0.4]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ロクスタ
+ケルトを……練る？
+[k]
+
+？1：……スカサハだからね
+
+[charaFace B 12]
+
+＠ロクスタ
+そっかー。[r]ケルティック・スカサハかぁー。
+[k]
+
+[messageOff]
+[charaFadeout T 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+
+？2：『ローマ！』みたいなものかと
+
+[charaTalk off]
+[charaDepth B 3]
+[charaDepth C 2]
+[charaFace B 5]
+[charaDepth T 1]
+[charaFace C 18]
+[charaFadein C 0.2 -250,0]
+[wt 0.2]
+
+＠ドラコー＆ロクスタ
+『一緒にするな』[r]『いっしょにすんじゃねえですよ』
+[k]
+
+[messageOff]
+[charaFadeout T 0.4]
+[charaFadeout C 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+
+？！
+
+[charaScale B 1.0]
+[charaScale C 1.0]
+[charaTalk on]
+[charaTalk D]
+
+＠スカサハ
+だが、うむ。そうか。
+[k]
+
+[charaFace D 1]
+
+＠スカサハ
+[line 3]それでこそ、セタンタというもの。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ドラコー
+まったくだ。[r]よくぞ吠えたものよ。
+[k]
+
+[charaFace C 2]
+
+＠ドラコー
+[line 3]影の国の女王よ。[r]貴様の言うとおりではある。
+[k]
+
+＠ドラコー
+世界の終わりなど、幾度となく口にした。[r]美味ではあるが、ありふれた味よ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+……やっぱ敵だよ、テメエは。
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ドラコー
+だがな。それでも我が食卓に並んだ皿を[r]軽んじられては、[#甚:はなは]だ不愉快だ。
+[k]
+
+＠ドラコー
+そもそも貴様の食レポなど求めておらぬ。[r]勝手に星をつけるな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+虚勢は止めておけ、ソドムズビースト。[r]おまえは、[#とうに飽いている]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ドラコー
+……何が言いたい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+我らは似た者同士だ。[r]そう、おまえは私と同じ……
+[k]
+
+[bgmStop BGM_MAP_89 1.3]
+＠スカサハ
+[line 3]■■■■■、だ。
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ドラコー
+……ッ！
+[k]
+
+？1：今、なんて？
+？2：……よく聞こえなかった
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠ロクスタ
+…………。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+せっかくだ。[r]代わりに我が槍、馳走してやろう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ドラコー
+……ほざけ。
+[k]
+
+＠ドラコー
+おまえの槍だけではあるまい。[r]フロア・ガーディアンは何処だ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+……そうだ。いるんだろ？[r][#狂った海:ク　リ　ー　ド]の如きオレ、[#もう一人:オ　ル　タ]のオレが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+ああ……それならば、ほれ。[r][line 3][#ずっとそこにいるぞ]？
+[k]
+
+[bgmStop BGM_EVENT_71 1.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+[line 3]ッ！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se bas2]
+[effect bit_talk_20]
+[wt 1.0]
+[se ade280]
+[cueSe SE_22 22_ade807]
+[seVolume 22_ade807 0 0.5]
+[cueSe SE_22 22_ad1213]
+[charaEffect E bit_talk_blood_aura_fs]
+[charaBackEffect E bit_talk_blood_aura_back_fs]
+[wt 1.5]
+[effectStop bit_talk_20]
+[charaEffectStop E bit_talk_blood_aura_fs]
+[charaBackEffectStop E bit_talk_blood_aura_back_fs]
+[wt 0.5]
+[seStop ade280 2.0]
+[seStop 22_ade807 2.0]
+[seStop 22_ad1213 2.0]
+[wt 2.0]
+
+[bgm BGM_EVENT_114 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ロクスタ
+ネロさま！　これって！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠ドラコー
+魔獣赫の気配！？[r]いつの間に！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+そろそろ、また[#甦:よみがえ]る頃だ。
+[k]
+
+？1：地面の血が集まって……
+？2：ヒトの形に[line 3]！
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaSpecialEffect E appearance 1 2.0]
+[se ad53]
+[wt 1.0]
+[seStop ad53 2.0]
+[wt 2.0]
+
+＠E：クー・フーリン・オルタ
+[line 9]。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ドラコー
+……クー・フーリン。[r]だが、何故だ？
+[k]
+
+＠ドラコー
+何故、貴様から魔獣赫の気配を感じる？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+[line 3]魔獣赫が封印を破ったのだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠ドラコー
+…………………………。
+[k]
+
+[charaFace C 5]
+
+＠ドラコー
+……何だと？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+我らは総力をあげて戦った。[r]だがビーストⅥが滅びぬ限り、魔獣赫もまた不滅。
+[k]
+
+
+＠スカサハ
+狂王クー・フーリンは魔獣赫に呑み込まれた[line 3]
+[k]
+
+＠スカサハ
+だがこやつはフロア・ガーディアンの力を用いて、[r]自らの内に魔獣赫を封じたのだ。
+[k]
+
+＠スカサハ
+私は、魔獣赫が再び力を取り戻さぬよう、[r]こうして奴を殺し続けている。
+[k]
+
+[charaFace D 1]
+
+＠スカサハ
+だが、それもこれまでよ。[r][line 3]聞こえているか、狂える王よ？
+[k]
+
+＠スカサハ
+今、[#此処:こ　こ]で終わらせるぞ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠クー・フーリン・オルタ
+[line 3]ああ。[r]わかっているさ、師匠。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_114 1.0]
+[se ad690]
+[fowardEffect bit_talk_charge_ppl02]
+[wt 1.2]
+[flashin once 0.2 1.2 8E0019CF 8E001900]
+[charaChange E 7020002 0 fade 0.4]
+[wt 0.2]
+[fowardEffectStop bit_talk_charge_ppl02]
+[seStop ad690 2.0]
+[wt 1.5]
+[charaFace E 5]
+
+＠クー・フーリン・オルタ
+オレが殺すか、おまえらが殺すか[line 3][r]どちらにせよ[#此処:こ　こ]で終わりだ。
+[k]
+
+＠クー・フーリン・オルタ
+[#戮:ころ]し合おう。[r][#塵:ちり]ひとつ残さずにな。
+[k]
+
+[messageOff]
+[se ade280]
+[cueSe SE_22 22_ade807]
+[seVolume 22_ade807 0 0.5]
+[cueSe SE_22 22_ad1213]
+[bgm BGM_BATTLE_135 0.1]
+[charaEffect E bit_talk_blood_aura_fs]
+[charaBackEffect E bit_talk_blood_aura_back_fs]
+[wt 1.5]
+[charaEffectStop E bit_talk_blood_aura_fs]
+[charaBackEffectStop E bit_talk_blood_aura_back_fs]
+[seStop ade280 2.0]
+[seStop 22_ade807 2.0]
+[seStop 22_ad1213 2.0]
+[wt 1.8]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠ロクスタ
+確かにあのヤローから、[r]ネロさまの匂いがします……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+あいつはもう一人のオレであって[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ドラコー
+同時に魔獣赫インヴィディアでもある、か。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+さあ、セタンタよ。[r]試練の時だ。
+[k]
+
+[charaFace D 2]
+
+＠スカサハ
+その未熟な技と未完の魂で、己の影を超えてみせよ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+……応ともよ！
+[k]
+
+[messageOff]
+[se ad51]
+[wt 0.1]
+[charaMoveReturn A 0,-4 0.4]
+[wt 1.0]
+
+[charaScale G 1.5]
+[charaScale S 1.5]
+
+[charaTalk depthOff]
+
+
+[charaDepth A 1]
+[charaDepth S 2]
+[charaDepth G 3]
+
+[charaTalk G]
+[overlayFadein H 0.5 0,700]
+[overlayFadein I 0.5 0,-700]
+[charaFace G 13]
+[charaFadein G 0.7 -100,-40]
+[charaFadein S 0.7 -100,-200]
+[charaMove G 0,-40 10.0]
+[charaMove S 0,-200 10.0]
+
+＠G：セタンタ
+我はクランの猛犬に[#非:あら]ず！[r]故に我は[#朱槍:や　り]では殺さぬ！
+[k]
+
+＠G：セタンタ
+我は未だ定まらぬ我が[#全霊:ことごとく]を以て、[r]我が敵の[#一切:ことごとく]を殺す者！
+[k]
+
+[charaFace G 2]
+
+＠G：セタンタ
+その心臓[line 3]貰い受ける！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_135 0.4]
+[wait fade]
+[soundStopAll]
+[end]

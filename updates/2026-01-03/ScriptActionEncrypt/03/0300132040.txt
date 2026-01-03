@@ -1,0 +1,612 @@
+
+
+
+＄03-00-13-20-4-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257900 1 マシュ]
+[charaSet B 1098256300 1 骸骨兵]
+[charaSet C 1098256300 1 骸骨兵]
+[charaSet D 1098256300 1 骸骨兵]
+[charaSet E 1098256300 1 骸骨兵]
+[charaSet F 1098256300 1 骸骨兵]
+[charaSet G 1098253000 1 カマソッソ]
+[charaSet H 1098252900 1 テペウ]
+[charaSet I 1098253800 1 ワクチャン]
+[charaSet J 1098257300 1 ダ・ヴィンチ]
+[charaSet K 1098255200 1 ハベトロット]
+[charaSet L 1098255300 1 ニトクリス]
+
+[charaSet M 1098253020 1 カマソッソ（演出用）]
+[charaSet N 1098253020 1 カマソッソ（演出用）]
+
+[imageSet O black_fade_re 1]
+[charaScale O 2.0]
+[imageSet P black_fade_re 1]
+[charaScale P 2.0]
+
+[sceneSet Q 174100 1]
+[charaScale Q 1.2]
+
+[imageSet R back10000 1 1]
+[charaScale R 1.3]
+[charaSet S 98115000 1 エフェクト用ダミー]
+[charaSet T 98115000 1 エフェクト用ダミー]
+
+[sceneSet U 174100 1]
+[charaScale U 1.2]
+
+
+[scene 174100]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.35]
+
+[se ad7]
+[seVolume ad7 0 0.6]
+[se ad1006]
+[seVolume ad1006 0 0.6]
+[charaFace A 2]
+[charaMoveScale A 1.15 0.3]
+[charaMove A 0,36 0.3]
+[blur motion 0.3 4 100 0.5 0.6 0.03 100]
+[charaFadeout A 0.3]
+[se ad85]
+[wt 0.05]
+[wt 0.3]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[cueSe Servants_800101 bac690]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+
+
+
+[charaTalk off]
+[charaDepth B 7]
+[charaDepth C 6]
+[charaDepth D 5]
+[charaDepth E 4]
+[charaDepth F 3]
+
+[charaFace B 0]
+[charaFace C 0]
+[charaFace D 0]
+[charaFace E 0]
+[charaFace F 0]
+[charaFadein B 0 1]
+[charaFadeinFSR C 0 150,0]
+[charaFadeinFSL D 0 -150,0]
+[charaFadeinFSSideR E 0 350,0]
+[charaFadeinFSSideL F 0 -350,0]
+[charaShake B 0.02 3 4 0.6]
+[charaShake C 0.03 2 4 0.5]
+[charaShake D 0.03 3 2 0.6]
+[charaShake E 0.02 4 2 0.6]
+[charaShake F 0.02 3 3 0.5]
+[wt 1.0]
+
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 0.1]
+[charaMoveFSSideR E 350,-50 0.4]
+[charaFadeout E 0.4]
+[wt 0.2]
+[charaMoveFSL D -150,-50 0.4]
+[charaMoveFSSideL F -350,-50 0.4]
+[charaFadeout D 0.4]
+[charaFadeout F 0.4]
+[wt 0.1]
+[charaMoveFSR C 150,-50 0.4]
+[charaFadeout C 0.4]
+[wt 0.2]
+[se ad804]
+[seVolume ad804 0 0.8]
+[se ad144]
+[wt 0.2]
+[se ad144]
+[wt 1.3]
+
+[se ade216]
+[wt 0.2]
+[cueSe SE_21 21_ad1078]
+[charaDepth S 8]
+[charaDepth G 6]
+[charaPut S 1]
+[charaEffect S bit_talk_quickmove]
+[wt 0.1]
+[charaPut G 1]
+[charaFace G 3]
+[charaSpecialEffect G appearanceReverse 0,0 0.2]
+[wait charaSpecialEffect G]
+[charaMove G 0,-10 0.2]
+[se ad222]
+[wt 0.3]
+[seStop 21_ad1078 0.7]
+[wt 0.25]
+[charaMove G 0,0 0.4]
+[wt 0.8]
+
+[charaTalk on]
+＠カマソッソ
+カーンの戦士を正面から撃破したか。[r]中々だ。やはり血を吸いたくて仕方がないが……
+[k]
+
+[charaFace G 0]
+＠カマソッソ
+今回は特例だ。近道を教えてやる。[r]クリプターに追いつかれたくはないのだろう？
+[k]
+
+＠カマソッソ
+オレは制約によりデイビットを襲う事はない。[r]オレと戦えば戦うほどオマエたちの負けは濃くなる。
+[k]
+
+＠カマソッソ
+どうだ？　近道を使いたくなってきたか？
+[k]
+
+？1：……戦わないにこした事はないけど……
+？2：その条件は？
+？！
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaFace G 4]
+＠カマソッソ
+その女だ。[r]その女を差し出せ。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk L]
+[charaFace L 11]
+[charaFadein L 0.1 1]
+[wt 0.4]
+
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[wt 1.2]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaSet A 1098257910 1 マシュ]
+
+[charaTalk off]
+[charaDepth A 4]
+[charaDepth H 2]
+[charaDepth I 1]
+[charaDepth J 3]
+[charaDepth K 5]
+
+[charaScale A 0.8]
+[charaScale H 1.1]
+[charaScale I 1.2]
+[charaScale J 0.8]
+[charaScale K 0.8]
+
+[charaFace A 5]
+[charaFace H 1]
+[charaFace I 4]
+[charaFace J 25]
+[charaFace K 14]
+[charaFadeinFSSideR A 0.1 350,-100]
+[charaFadeinFSL H 0.1 200,40]
+[charaFadeinFSSideL I 0.1 -180,70]
+[charaFadein J 0.1 0,-100]
+[charaFadeinFSSideL K 0.1 -300,-100]
+[wt 1.6]
+
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+[charaScale A 1.0]
+[charaScale H 1.0]
+[charaScale I 1.0]
+[charaScale J 1.0]
+[charaScale K 1.0]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠カマソッソ
+釣り合いの取れた取引だろう？
+[k]
+
+＠カマソッソ
+オマエたちはカマソッソに殺される事なく先に進む。[r]オレは人類最後のマスターになる夢を諦める。
+[k]
+
+＠カマソッソ
+夢を諦めるのは悲しい事だ。[r]夢を切り替えるのは空しい事だ。
+[k]
+
+[charaFace G 12]
+＠カマソッソ
+人類であればこの断腸の思いが伝わるというもの。[r]それを察しろ。そして信じてよい。
+[k]
+
+[charaFace G 4]
+＠カマソッソ
+王は虚言を[#弄:ろう]さん。
+[k]
+
+＠カマソッソ
+降伏した敵が血を流せぬというのなら、[r]カマソッソも血は欲さない。
+[k]
+
+[charaFace G 0]
+＠カマソッソ
+さあ、返事を聞こう。[r]渡して血を避けるか。渡さずに血を流すか。
+[k]
+
+？1：断る
+？2：ここで戦う
+
+？！
+
+[charaFace G 1]
+＠カマソッソ
+確かに聞き届けた。[r]では奪い、血を流し、女をもらっていく。
+[k]
+
+＠カマソッソ
+オレはどうかしていた。それが最も早く確実だった。[r]カマソッソらしい振る舞いだった。
+[k]
+
+＠カマソッソ
+ＯＲＴの棺に向かう事はない。[r]我が山脈の谷底に落ち、死の源泉に[#浸:ひた]るがいい。
+[k]
+
+？1：その前に聞きたい事がある
+
+？！
+
+[charaFace G 10]
+＠カマソッソ
+なんだ。オレの好きな色か？[r]闇のような紫。そして闇のような赤、即ち褐色だが？
+[k]
+
+？1：ＯＲＴを倒したというのは、本当[&か:]？
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_71 0.4]
+
+[charaFaceFade G 7 0.3]
+[wt 1.4]
+
+＠カマソッソ
+[line 3]誰に聞いた？
+[k]
+
+＠カマソッソ
+マィヤか？　ククルカンか？[r]それとも役立たずのイシュキックか？
+[k]
+
+＠カマソッソ
+まあいい。[r]誰であろうと結果は変わらん。
+[k]
+
+＠カマソッソ
+その問いはオレへの挑戦だ。[r]その問いはカーンを[#辱:はずかし]める暴言だ。
+[k]
+
+＠カマソッソ
+然るに。
+[k]
+
+[messageOff]
+[se ad46]
+[seVolume ad46 0 0.6]
+[wt 0.1]
+[charaFaceFade G 14 0.8]
+[wt 1.3]
+
+[bgm BGM_BATTLE_200 0.1]
+
+＠カマソッソ
+暴言には、暴力で返答する。[r]その覚悟があっての発言に相違ない。
+[k]
+
+＠カマソッソ
+カマソッソは、ＯＲＴを倒したのか？[r]星を喰う怪物を打ち倒せたのか？
+[k]
+
+[charaFace G 21]
+＠カマソッソ
+は。ははは。ははははははは！[r]無論だ！　皆殺しにして倒したとも！
+[k]
+
+＠カマソッソ
+[#宇宙樹:セ　イ　バ]を捕食し、ミクトランを侵さんとした災害を、[r]オレはすべてを用いて[#鏖殺:おうさつ]した！
+[k]
+
+[charaFace G 22]
+
+＠カマソッソ
+溶岩に落とし、我が爪でその胸を暴き、[r][#奇:き]っ[#怪:かい]な[#臓腑:ぞうふ]を掻きだし、物言わぬ[#骸:むくろ]にした！
+[k]
+
+＠カマソッソ
+それを信じられぬというのなら、[r][#その身を以て]教えてやろう！
+[k]
+
+[messageOff]
+[cueSe SE_23 23_ad1237]
+[se ad970]
+[cueSe Servants_603100 bac553]
+[cueSe Servants_9944030 m89917]
+[cueSe SE_21 21_ad1082]
+[cueSeVolume 21_ad1082 0 0.3]
+[se ade393]
+[seVolume ade393 0 0.0]
+[seVolume ade393 0.5 0.5]
+
+[charaDepth S 9]
+[charaDepth T 8]
+[charaDepth G 7]
+
+[charaPut S 1]
+[charaEffect S bit_talk_bat_aura01]
+[wt 2.05]
+
+[se ade409]
+[se ade103]
+[cueSe Servants_305300 m52323]
+[wt 0.05]
+[flashin once 0.1 0.1 000000FF 000000FF]
+[charaPut T 1]
+[charaEffect T bit_talk_bat_silhouette]
+[charaChange G 1098253020 0 fade 0.1]
+[wait charaChange G]
+[wt 0.3]
+[cueSeStop m52323 1.0]
+[seStop ade103 0.1]
+[wt 1.6]
+
+[seVolume 23_ad1237 0.5 0.5]
+[seVolume ade393 0.5 0.3]
+[cueSeVolume 21_ad1082 0.3 0]
+[cueSeVolume bac553 0.3 0]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+
+
+[charaTalk depthOff]
+[charaDepth J 6]
+[charaDepth R 4]
+
+[charaPut R 1]
+[charaFadeTime R 0.2 0.5]
+
+[charaTalk J]
+[charaFace J 26]
+[charaFadein J 0.1 1]
+＠ダ・ヴィンチ
+（霊基出力……いや、霊基反応が急速に増大していく……！[r]　１0万……100万……1000万……１億……！？）
+[k]
+
+＠ダ・ヴィンチ
+（複数の霊基を持つ、どころの話じゃない……！[r]　カマソッソの中には、１億以上の霊基が混濁している！）
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout R 0.2]
+[wt 0.1]
+
+
+[seVolume 23_ad1237 0.5 1.0]
+[seVolume ade393 0.5 0.5]
+[cueSeVolume bac553 0.3 0.3]
+[cueSeVolume 21_ad1082 0.3 0.3]
+[charaPut S 1]
+[charaPut T 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠カマソッソ
+カルデアの神官。名前はどうでもいい。[r]オマエに、オレは親近感を持っていた。
+[k]
+
+＠カマソッソ
+オマエは人類最後のマスターらしいな。[r][#その気持ちは]、[#オレにも分かる]。
+[k]
+
+＠カマソッソ
+……いや、分からない。それは忘れた。[r]戦いには不要なものだ。王者には不要なものだ。
+[k]
+
+＠カマソッソ
+人類最後の戦士には、不要なものだ。
+[k]
+
+＠カマソッソ
+[line 3]オレの名を語るがいい。[r]カーンの勇者。蜘蛛殺しの[#蝙蝠:こうもり]。王冠を捨てし王。
+[k]
+
+＠カマソッソ
+臣民すべてを生贄にしなければ、[r]世界も救えなかった弱きもの。
+[k]
+
+[seVolume 23_ad1237 0.5 0.5]
+[seVolume ade393 0.5 0.3]
+[cueSeVolume bac553 0.3 0]
+[cueSeVolume 21_ad1082 0.3 0]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+
+[bgm BGM_BATTLE_200 1.5 0.7]
+
+[se ad15]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠マシュ
+[line 3]霊基パターン、ビースト[line 3][r]まさか……そんな……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[seVolume 23_ad1237 0.5 1.0]
+[seVolume ade393 0.5 0.5]
+[cueSeVolume bac553 0.3 0.3]
+[cueSeVolume 21_ad1082 0.3 0.3]
+[charaPut S 1]
+[charaPut T 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.3]
+
+[se ad690]
+[wt 1.1]
+
+[cueSe Servants_9944030 m89916]
+[cueSe Servants_9944030 m89924]
+[fadeout white 0.3]
+[cueSeStop bac553 0.6]
+[cueSeStop 21_ad1082 0.6]
+[cueSeStop 23_ad1237 0.6]
+[seStop ade393 0.6]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+[charaEffectStop S bit_talk_bat_aura01]
+[charaEffectStop T bit_talk_bat_silhouette]
+[charaEffectDestroy S bit_talk_bat_aura01]
+
+[charaTalk off]
+[charaDepth O 9]
+[charaDepth P 9]
+[charaDepth N 7]
+[charaDepth U 6]
+[charaDepth M 5]
+[charaDepth Q 4]
+
+[charaFadein O 0.1 0,-1000]
+[charaFadein P 0.1 0,250]
+
+[scene 10000]
+[wt 1.8]
+
+[fadein white 2.0]
+[wait fade]
+[wt 0.8]
+
+
+[se ade73]
+[seVolume ade73 0 0]
+[seVolume ade73 1.2 1.0]
+[charaScale M 1.3]
+[charaFace M 0]
+[charaFadein M 1.2 -50,-250]
+[charaFadein Q 1.2 -120,-400]
+
+[charaMove M 50,-250 5.5]
+[charaMove Q -20,-400 5.5]
+[wt 3.5]
+
+[se ad787]
+[charaScale N 1.2]
+[charaFace N 0]
+[charaFadein N 1.2 50,300]
+[charaFadein U 1.2 120,-400]
+[charaMove N -50,300 5.5]
+[charaMove U 20,-400 5.5]
+[wt 1.2]
+[charaFadeout M 0.1]
+[wt 1.9]
+
+[bgm BGM_BATTLE_200 1.5 1.0]
+[fadeout white 1.0]
+[wait fade]
+
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout U 0.1]
+[charaFadeout N 0.1]
+
+[scene 174100]
+
+[cameraMove 0 0,0 1.05]
+
+[cueSe SE_22 22_ad1169]
+[cueSeVolume 22_ad1169 0 0]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[cueSeVolume 22_ad1169 1.5 0.4]
+[cameraMove 2.5 0,0 1.0]
+[fadein white 1.5]
+[wait fade]
+[wt 1.5]
+
+＠カマソッソ
+試すがいい、カマソッソの鮮血を！
+[k]
+
+＠カマソッソ
+カーンの民が身を投げた[#地獄の底:シ  バ  ル  バ  ー]、[r]その恐怖の神髄をな！
+[k]
+
+[messageOff]
+[cueSe SE_23 23_ad1235]
+[se ad625]
+[se ad711]
+[charaDepth S 10]
+[charaPut S 1]
+[charaEffect S bit_talk_voice02]
+[wt 0.1]
+[shake 0.01 2 2 0]
+
+[wt 2.0]
+
+
+
+
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_200 0.4]
+[seStop 23_ad1235 0.5]
+[seStop ad625 0.5]
+[cueSeStop 22_ad1169 0.5]
+[wait fade]
+[soundStopAll]
+[end]

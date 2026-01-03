@@ -1,0 +1,115 @@
+
+
+
+＄04-00-04-23-4-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 23006001 1 ＢＢコスモ]
+[charaSet B 1098298610 1 ＸＸ・オルタ]
+[charaSet C 3047300 1 パーシヴァル]
+[charaSet D 4034300 1 バーソロミュー]
+[charaSet E 1098299710 1 ＢＢドバイ]
+
+[charaPut B 2000,2000]
+[charaPut C 2000,2000]
+[charaPut D 2000,2000]
+
+[charaEffect B bit_talk_06]
+[charaEffect C bit_talk_06]
+[charaEffect D bit_talk_06]
+
+[scene 221600]
+
+[bgm BGM_BATTLE_206 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠ＢＢドバイ
+この……！[r]おとなしく退去できないのですかっ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ＸＸ・オルタ
+しぶとくないヴィランに何の価値があるでしょう。[r]ふふ。これで勝ったと思うなよ。ぶい。
+[k]
+
+[messageOff]
+[charaSpecialEffect B flashErasure 1 1.5]
+[se ad52]
+[wait charaSpecialEffect B]
+[charaEffectStop B bit_talk_06]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠パーシヴァル
+前回は届かなかったが、今回は確かに届いた！[r]勝機は充分！　貴方に武運を、マスター！
+[k]
+
+[messageOff]
+[charaSpecialEffect C flashErasure 1 1.5]
+[se ad52]
+[wait charaSpecialEffect C]
+[charaEffectStop C bit_talk_06]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠バーソロミュー
+『気持ちは分かるがやりすぎです』[r]ガイド君からの言づてだ。よい最期を、ＢＢドバイ。
+[k]
+
+[messageOff]
+[charaSpecialEffect D flashErasure 1 1.5]
+[se ad52]
+[wait charaSpecialEffect D]
+[charaEffectStop D bit_talk_06]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+
+＠ＢＢコスモ
+いよいよ大詰めです！[r]第三陣、[%1]さん！
+[k]
+
+＠ＢＢコスモ
+ＢＢドバイにはヤケになって[r]ムーン・ドバイごと自爆する可能性があります！
+[k]
+
+＠ＢＢコスモ
+思うところはあるでしょうが、[r]情けは捨てて、一気に決めてください！
+[k]
+
+？1：……わかってる、い[&くぞ:こう]みんな！
+？2：今そんな報告する！？
+
+？！
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_206 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+
+

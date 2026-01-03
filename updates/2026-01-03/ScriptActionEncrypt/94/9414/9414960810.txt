@@ -1,0 +1,655 @@
+
+＄94-14-96-08-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 6051001 1 メイドイン彦斎]
+[charaSet B 3061000 1 原田左之助]
+
+[charaSet C 3050900 1 坂本龍馬]
+[charaSet D 3050910 1 お竜さん]
+
+[charaSet E 6033002 1 綺麗なオカダ]
+[charaSet F 6033001 1 ダーティオカダ]
+[charaSet G 6033300 1 リキュールオカダ]
+[charaSet H 6033400 1 オカダステークス]
+[charaSet I 6033000 1 リボルビングオカダ]
+
+[charaSet J 6033000 1 量産型ダーオカ_1]
+[charaSet K 6033000 1 量産型ダーオカ_2]
+[charaSet L 6033000 1 量産型ダーオカ_3]
+[charaSet M 6033000 1 量産型ダーオカ_4]
+[charaSet N 6033000 1 量産型ダーオカ_5]
+[charaSet O 6033000 1 量産型ダーオカ_6]
+
+[charaSet P 6051001 1 メイドイン彦斎_演出用1]
+[charaScale P 1.2]
+[charaSet Q 6033002 1 綺麗なダーオカ_演出用1]
+[charaSet R 6051001 1 メイドイン彦斎_演出用2]
+[charaSet S 3061000 1 原田左之助_演出用1]
+[charaScale S 1.2]
+
+[charaSet T 6033000 1 量産型ダーオカ_7]
+
+[sceneSet U 130400 1]
+[charaScale U 1.4]
+
+[sceneSet V 130400 1]
+[sceneSet X 130400 1]
+[sceneSet Y 130400 1]
+
+[subCameraOn 4]
+
+[subCameraFilter #A maskEdge cut359_mask13 5 64,64,64,255]
+[subCameraFilter #B maskEdge cut359_mask11 5 255,255,255,255]
+[subCameraFilter #C normal]
+
+[subRenderDepth #C 1]
+[subRenderDepth #B 2]
+
+[charaLayer Q sub #A]
+[charaLayer V sub #A]
+
+[charaScale Q 1.45]
+[charaScale V 1.4]
+
+[charaTalk depthOff]
+[charaDepth Q 2]
+[charaDepth V 1]
+[charaFace Q 0]
+[charaFadein Q 0.1 -350,260]
+[charaFadein V 0.1 -40,20]
+
+[charaLayer R sub #B]
+[charaLayer Y sub #B]
+
+[charaScale R 1.1]
+[charaScale Y 1.1]
+[charaDepth R 2]
+[charaDepth Y 1]
+[charaFace R 0]
+[charaFadein R 0.1 420,290]
+[charaFadein Y 0.1 -150,300]
+
+[charaLayer J sub #C]
+[charaLayer K sub #C]
+[charaLayer L sub #C]
+[charaLayer M sub #C]
+[charaLayer N sub #C]
+[charaLayer O sub #C]
+[charaLayer X sub #C]
+[subRenderScale #C 1.05]
+
+[charaDepth J 4]
+[charaDepth K 5]
+[charaDepth L 6]
+[charaDepth M 3]
+[charaDepth N 7]
+[charaDepth O 2]
+[charaDepth X 1]
+
+[charaScale X 1.4]
+[charaFadein X 0.1 200,-320]
+
+[scene 130400]
+
+[charaDepth S 1]
+[charaDepth U 2]
+[charaDepth T 3]
+[charaDepth P 5]
+[charaDepth F 6]
+[charaDepth G 7]
+[charaDepth H 8]
+[charaDepth I 9]
+
+[charaScale S 1.0]
+[charaTalk S]
+[charaFace S 0]
+[charaFadein S 0.1 1]
+
+[charaFadein U 0.1 -50,-250]
+[wt 0.1]
+
+[charaMove U -100,-250 4.5]
+[se ad1002 1.0 0.8]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_5]
+[wt 2.5]
+
+[seStop ad1002 1.0]
+[charaFace S 1]
+[charaFadeout U 0.4]
+[wt 0.4]
+
+＠S：原田左之助
+へえ……、京の町にこんな地下空洞があるなんて[r]知りませんでしたよ。
+[k]
+
+
+
+[messageOff]
+[charaFadeout S 0.1]
+[wt 0.1]
+[bgmStop BGM_EVENT_5 0.5]
+[charaTalk T]
+[charaFace T 5]
+[charaFadein T 0.4 0,0]
+[se ad452]
+[wt 0.5]
+[seStop ad452]
+[se adm37]
+
+＠T：？？？
+シヌンジャー！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace S 12]
+[bgm BGM_BATTLE_62 0.1]
+[se ad818]
+[se ad1006]
+[blur motion 0.4 4 10000 0.5 0.5 0.05 100]
+[charaMoveScaleEase T 1.3 0.3 easeOutQuint]
+[charaMoveEase T 0,30 0.3 easeOutQuint]
+
+[fadeout white 0.3]
+[wait fade]
+[seStop ad818 0.5]
+
+[blurOff]
+[charaFadeout S 0.1]
+[charaFadeout T 0.1]
+[charaPut T 2500,2500]
+[charaFadeout U 0.1]
+[cameraMoveEase 0,0 0.1 easeOutCubic 1.0]
+[charaScale T 1.0]
+[wt 0.3]
+
+[se ad471]
+[se ad671 0.5]
+[effect bit_talk_blow03]
+[fadein white 0.3]
+[wait fade]
+
+[charaTalk on]
+[charaTalk P]
+[charaFace P 6]
+[charaShake P 0.05 2 3 0.4]
+[charaFadein P 0.1 0,30]
+[charaMoveEase P 0,0 0.4 easeOutSine]
+[charaMoveScaleEase P 1.0 0.4 easeOutSine]
+[wt 0.8]
+
+[charaFace P 9]
+
+＠P：メイドイン彦斎
+なっ！？　貴様は……！
+[k]
+
+[messageOff]
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaScale T 1.0]
+[charaTalk T]
+[charaFace T 13]
+[charaFadein T 0.1 1]
+[wt 0.4]
+
+[charaTalk Q]
+[charaFace Q 5]
+[subRenderFadein #A 0.3 0,-280]
+[charaMoveEase Q -200,260 0.5 easeOutCubic]
+[charaMoveEase V 110,20 0.5 easeOutCubic]
+[wt 0.2]
+
+＠Q：？？？
+ちぇりゃああああ！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[charaMove Q -50,260 0.2]
+[charaMove V 260,20 0.2]
+[wt 0.4]
+[charaTalk T]
+[charaFace T 11]
+[effect bit_talk_x_slash03]
+[se ad868]
+[wt 0.1]
+
+[charaShake T 0.05 6 5 0.7]
+[wt 1.0]
+
+[bgmStop BGM_BATTLE_62 2.0]
+
+＠T：？？？
+ナ、ナンジャナンジャー！？
+[k]
+
+[messageOff]
+[charaFadeout T 0.4]
+[charaMoveEase T 0,-50 0.5 easeOutSine]
+[wt 0.4]
+[se ad144]
+[charaPut T 2500,2500]
+[wt 1.5]
+
+[charaPut E 1]
+[charaTalk E]
+[charaFace E 9]
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect E appearance 1 0.25]
+[wt 1.4]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠原田左之助
+あ、あんたは……、土佐の岡田以蔵……！？
+[k]
+
+＠原田左之助
+だがさっきのも同じ奴だったような……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_131 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠？？？
+危ないところでしたね。
+[k]
+
+[charaFace E 9]
+
+＠？？？
+ええ、僕は土佐の岡田以蔵。[r]そして今斬ったのも岡田以蔵です。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠メイドイン彦斎
+真顔でわけがわからない話をしないで。
+[k]
+
+＠メイドイン彦斎
+なにがどうなっているの？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠綺麗なオカダ
+実はこの地下に落ちて気絶していたところ、[r]ここに現れたマガツヒノカミと同化してしまい、
+[k]
+
+＠綺麗なオカダ
+僕はマガツイゾウノカミとなってしまったのです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠坂本龍馬
+以蔵さんがそんなことになっていたなんて……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠メイドイン彦斎
+わっ、いたのか、坂本。急に出て来るな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠お竜さん
+お竜さんたちも流れで忘れていたイゾーを捜してたんだ。
+[k]
+
+[charaFace D 0]
+
+＠お竜さん
+で、おまえはなんなんだ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠綺麗なオカダ
+僕はわずかに残っていた岡田以蔵の良心。
+[k]
+
+＠綺麗なオカダ
+本体から抜け出して、ただ一人、[r]この地下で奴らと戦っていたのです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠原田左之助
+奴ら……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+
+[bgmStop BGM_EVENT_131 2.0]
+
+＠綺麗なオカダ
+ええ、さっき倒した量産型ダーオカ、そして……。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[bgm BGM_EVENT_49 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadeinFSLNotNotch F 0.4 -370,0]
+[se ad452]
+[wt 0.5]
+[seStop ad452]
+
+＠ダーティオカダ
+くっくっく……、そいつはわしらぁの中でも[r]最弱の量産型以蔵。
+[k]
+
+[messageOff]
+[charaTalk G]
+[charaFace G 21]
+[charaFadeinFSRNotNotch G 0.4 390,0]
+[se ad452]
+[wt 0.5]
+[seStop ad452]
+
+＠リキュールオカダ
+ひっく……、酒ぇ、酒持ってきいや！　酒じゃあああ！
+[k]
+
+[messageOff]
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.4 -140,0]
+[se ad452]
+[wt 0.5]
+[seStop ad452]
+
+＠オカダステークス
+次のレースは５－８やき、わしの第六感がそう言いゆう！
+[k]
+
+[messageOff]
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.4 120,0]
+[se ad452]
+[wt 0.5]
+[seStop ad452]
+
+＠リボルビングオカダ
+にゃあ、金貸しとうせ。す、すぐ返すき、にゃ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[bgm BGM_EVENT_49 0.4 0.5]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1]
+[bgm BGM_EVENT_49 0.4 1.0]
+[wait wipe]
+
+＠綺麗なオカダ
+そう……、彼らマガツオカダ四天王と！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠メイドイン彦斎
+ゴミみたいな属性しかいない。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠原田左之助
+でもあいつらやったら、[r]あんたもタダじゃすまないんじゃないすか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠綺麗なオカダ
+いえ、いくらろくでもない属性持ちたちとはいえ、[r]やはり彼らは僕なのです。
+[k]
+
+[charaFace E 13]
+
+＠綺麗なオカダ
+彼らを倒して、僕は元の岡田以蔵に戻らなくては。
+[k]
+
+[charaFace E 0]
+
+＠綺麗なオカダ
+その為に死ぬのなら、それも本望なのです。
+[k]
+
+？1：この綺麗なオカダとその他ダーオカたちを倒すの？
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠メイドイン彦斎
+これって元に戻る必要あるの？
+[k]
+
+？2：この綺麗なダーオカでよくない？
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠お竜さん
+言えてるぞ、こっちを貰って帰ろう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠坂本龍馬
+いや、そういうわけにも……、ね。
+[k]
+
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[bgm BGM_EVENT_49 0.4 0.5]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk off]
+[charaFace F 5]
+[charaFace G 5]
+[charaFace H 5]
+[charaFace I 5]
+[charaFadeinFSLNotNotch F 0.1 -370,0]
+[charaFadeinFSRNotNotch G 0.1 390,0]
+[charaFadein H 0.1 -140,0]
+[charaFadein I 0.1 120,0]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1]
+[bgm BGM_EVENT_49 0.4 1.0]
+[wait wipe]
+
+＠マガツオカダ四天王
+そうはさせんき！　わしらはここで酒と博打と[r]女三昧で人生を謳歌するがやき！！！
+[k]
+
+[bgmStop BGM_EVENT_49 2.0]
+
+＠マガツオカダ四天王
+出ろ！　量産型ダーオカ！
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[cueSe SE_25 25_ade1271]
+[subRenderFadein #C 0.5 -40,0]
+[wt 0.3]
+[bgm BGM_BATTLE_240 0.1]
+[subRenderMove #C 0,0 2.6]
+
+[charaScale J 0.90]
+[charaFace J 0]
+[charaFadein J 0.4 -110,-40]
+[wt 0.4]
+
+[charaScale K 0.95]
+[charaFace K 1]
+[charaFadeinFSLNotNotch K 0.4 -310,-15]
+[wt 0.4]
+
+[charaScale L 0.95]
+[charaFace L 6]
+[charaFadein L 0.4 80,-15]
+[wt 0.4]
+
+[charaScale M 0.90]
+[charaFace M 8]
+[charaFadeinFSSideL M 0.4 -430,-40]
+[wt 0.4]
+
+[charaScale O 0.90]
+[charaFace O 12]
+[charaFadeinFSSideR O 0.4 420,-40]
+[wt 0.4]
+
+[cueSeStop 25_ade1271 0.4]
+
+[charaScale N 0.95]
+[charaFace N 5]
+[charaFadeinFSRNotNotch N 0.4 220,-5]
+[wt 1.5]
+
+＠量産型ダーオカ
+ソウジャナンジャー！
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaTalk R]
+[charaFace R 4]
+[subRenderFadeinFSSideR #B 0.4 0,-270]
+[subRenderMoveFSSideR #B -20,-250 0.4]
+[wt 0.4]
+
+＠R：メイドイン彦斎
+画面がうるさい！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_240 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+

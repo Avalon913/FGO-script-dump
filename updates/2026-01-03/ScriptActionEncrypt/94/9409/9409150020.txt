@@ -1,0 +1,537 @@
+
+＄94-09-15-00-2-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098257310 1 ダ・ヴィンチ]
+[charaSet B 1098257810 1 マシュ]
+[charaSet C 1098257420 1 シオン]
+[charaSet D 1098255110 1 ゴルドルフ]
+
+[charaSet E 98075000 1 鬼1]
+[charaSet F 98075000 1 鬼2]
+[charaSet G 98075000 1 鬼3]
+
+[sceneSet I 204501 1]
+
+[charaSet T 1098255110 1 通信エフェクト用]
+
+[scene 10000]
+
+[fadein black 0.5]
+[wait fade]
+
+[effect bit_talk_07_fs]
+[se ad12]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+
+[scene 204501]
+[wt 2.0]
+
+[fadein white 2.0]
+[wait fade]
+[wt 1.0]
+
+
+[se ad13]
+[wt 0.5]
+[charaPut T 1]
+[charaEffect T bit_talk_10]
+[wt 0.2]
+[se ad31]
+[seVolume ad31 0 0.4]
+[wt 1.0]
+
+＠？？？
+……[line 6]…………[line 3]ッ！
+[k]
+
+[messageOff]
+[seStop ad31 1.5]
+[wt 1.0]
+[charaEffectDestroy T bit_talk_10]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_SAMURAICP_1 0.1]
+
+＠ダ・ヴィンチ
+……よし、繋がった！
+[k]
+
+[charaFace A 0]
+
+＠ダ・ヴィンチ
+聞こえてるかな、[%1][&君:ちゃん]？[r]そっちの様子はどう？
+[k]
+
+？1：大丈夫、聞こえてます
+？2：レイシフト、無事完了しました
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+マスターのバイタル良好。[r]こちらも問題ありません。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+良かった。[r]ひとまずはレイシフト成功だね。
+[k]
+
+[charaFace A 22]
+
+＠ダ・ヴィンチ
+それじゃ、[%1][&君:ちゃん]。[r]さっそくだけど、まずは状況の把握からだ。
+[k]
+
+＠ダ・ヴィンチ
+何か手がかりになりそうなものは見えるかい？
+[k]
+
+[messageOff]
+[charaScale I 1.2]
+[overlayFadein I 0.5 50,-220]
+[charaMove I -50,-220 10.0]
+[wt 3.5]
+
+[charaFadeout I 0.5]
+[wt 1.0]
+
+？1：昔の日本だと思う
+？2：下総の時の、城下町みたいな
+
+？！
+
+[charaFace A 23]
+
+＠ダ・ヴィンチ
+キミが英霊剣豪と戦った、亜種特異点[line 3][r]じゃなくて亜種並行世界、下総国。
+[k]
+
+＠ダ・ヴィンチ
+……亜種異聞帯、と呼ぶべきなのかな？
+[k]
+
+＠ダ・ヴィンチ
+我々の歴史とは違う日本とはいえ、[r]あの下総国の時代は寛永十六年。
+[k]
+
+＠ダ・ヴィンチ
+その時の町並みと似ているなら、[r]今回の特異点はやっぱり……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠シオン
+座標の再測定、完了しました。[r]やはり最初の測定と同じ結果です。
+[k]
+
+＠シオン
+位置は日本の東京とほぼ一致。[r]正確には横浜、横須賀も範囲に含んでいます。
+[k]
+
+＠シオン
+年代は慶安四年。[r]西暦換算で１６５１年。
+[k]
+
+＠シオン
+下総国での出来事は１６３９年ですから、[r]かなり近い時代ですね。
+[k]
+
+＠シオン
+徳川幕府による統治、[r]いわゆる江戸時代の前期にあたります。
+[k]
+
+＠シオン
+つまり今回発生した特異点は、[r]この時代の東京である“江戸”と特定されました。
+[k]
+
+[charaFace C 10]
+
+＠シオン
+そのはずなのですが……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+ここまで正確な場所と年代を特定しておきながら、[r]トリスメギストスⅡは観測結果に疑義を[#呈:てい]している。
+[k]
+
+＠ダ・ヴィンチ
+人理定礎値も安定しない。[r]正確なのに不確定……としか説明しようがないね。
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+うむ、なるほど。[r]今回も容易ならざる事態と見た。
+[k]
+
+＠ゴルドルフ
+微小特異点とはワケが違うのだ。[r]しっかり気を引き締めなさいね。
+[k]
+
+＠ゴルドルフ
+しかも今回は、同行サーヴァントもいない。[r]細心の注意を払って任務に当たるように！
+[k]
+
+[charaFace D 3]
+
+＠ゴルドルフ
+…………………………。
+[k]
+
+[charaFaceFade D 15 0.2]
+
+＠ゴルドルフ
+これ、本当に大丈夫なの？[r]いくらなんでもマズくない？
+[k]
+
+？1：大丈夫、信頼してます
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+簡易召喚は問題なく使えるはずだ。[r]慎重に、丁寧に行動するように。
+[k]
+
+[charaFace A 18]
+
+＠ダ・ヴィンチ
+こちらも全力でサポートする。[r]大船に乗ったつもりでいたまえ。
+[k]
+
+？2：何とかします。いけるいける
+
+[charaFaceFade D 9 0.2]
+
+＠ゴルドルフ
+ほんとぉ～？　[wt 0.7][charaFace D 14]とりあえず[#猪突猛進:バ ー サ ー カ ー]で、[r]みたいな考え方改めなさいよホントに！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 31]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+まあまあ……。
+[k]
+
+＠ダ・ヴィンチ
+もちろん、こちらも全力でサポートするから、[r]そこは安心してほしい。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+すみません、マスター。[r]本来ならわたしも同行すべきなのですが……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+……悪いけど、マシュには管制室での[r]情報処理に専念してもらう。
+[k]
+
+＠ダ・ヴィンチ
+おさらいになるけど、白紙化地球で発生するのは[r]本来、微小特異点に限られている。
+[k]
+
+[charaFace A 9]
+
+＠ダ・ヴィンチ
+例外はいつだって、より大きな危機の先触れだ。[r]異星の神の関与も否定できない。
+[k]
+
+＠ダ・ヴィンチ
+些細な異常も見落とすわけにはいかない。[r]管制室に人手は必要なんだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠シオン
+そもそも根本的な問題があります。[r]先ほどゴルドルフ氏も述べてましたが……
+[k]
+
+＠シオン
+今回の特異点に同行可能な、[r]適性サーヴァントが存在しないんです。
+[k]
+
+＠シオン
+これはマシュさんも例外ではありません。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……はい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+特異点自体の性質に原因があるのか。[r]それとも何者かが罠を仕掛けているのか。
+[k]
+
+＠ダ・ヴィンチ
+理由はわからないけど、[r]危険であることは変わらない[line 3]
+[k]
+
+
+[charaFace A 0]
+
+＠ダ・ヴィンチ
+……とはいえ、だ。[r]悪いニュースばかりでもないよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠シオン
+そちら、江戸特異点の時間を基準に数時間前、[r]複数のサーヴァントが召喚された形跡があります。
+[k]
+
+＠シオン
+その内の一騎。[r]それも極めて強大な力を持つサーヴァント[line 3]
+[k]
+
+＠シオン
+彼ないし彼女は、カルデアの味方につくと。[r]トリスメギストスⅡは、そのように予測しています。
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+特異点修正のために召喚された、[r]人理側のサーヴァントでしょうか？
+[k]
+
+＠マシュ
+だとしたら、とても心強いのですが……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+当面の目的は決まったな。[r]……[%1]！
+[k]
+
+[charaFace D 1]
+
+＠ゴルドルフ
+貴様は速やかにそのサーヴァントと合流。[r]協力を得ながら、特異点の解決に努めたまえ！
+[k]
+
+？1：了解！
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+[wt 0.5]
+
+[bgmStop BGM_SAMURAICP_1 1.0]
+
+[cueSe SE_24 24_ade963]
+[messageOff]
+[blur motion 0.4 4 200 0.5 0.6 0.02 200]
+[fadeMove 8b008b 0.4 0.5]
+[wait fade]
+
+[wt 0.3]
+
+[blurOff motion 0.4]
+[fadeMove 8b008b 0.4 0.0]
+[wait fade]
+[wt 0.5]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……！[r]敵性反応を多数感知！
+[k]
+
+[bgm BGM_BATTLE_246 0.1]
+
+＠マシュ
+先輩、気をつけてください！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+
+
+[charaDepth E 2]
+[charaDepth F 3]
+[charaDepth G 1]
+
+[se ad586]
+[seVolume ad586 0 0.1]
+[seVolume ad586 1.0 1.0]
+[wt 0.5]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.2]
+
+[charaFace F 0]
+[charaFadeinFSL F 0.4 -320,0]
+[wt 0.2]
+
+[charaFace G 0]
+[charaFadeinFSR G 0.4 320,0]
+[wt 0.2]
+[seStop ad586 0.2]
+[se ad25]
+[wt 1.2]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+さっそくのお出ましだ！[r]やるよ、[%1][&君:ちゃん]！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+[wt 0.1]
+
+？1：戦闘開始します！
+？2：来て、みんな！
+
+？！
+
+[messageOff]
+[effect bit_talk_summon_fs]
+[se ad39]
+[wt 1.5]
+[seStop ad39 1.8]
+[wt 0.3]
+[effectStop bit_talk_summon_fs]
+[se ad574]
+[wt 1.5]
+
+[fadeout white 0.5]
+[wait fade]
+
+[effectDestroy bit_talk_summon_fs]
+[scene 10001]
+[wt 0.6]
+[fadein white 0.1]
+[wait fade]
+
+
+
+
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_246 0.5]
+[wait fade]
+[soundStopAllEnd]
+[end]

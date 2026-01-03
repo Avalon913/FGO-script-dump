@@ -1,0 +1,517 @@
+
+
+
+＄94-14-15-01-4-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 7046000 1 謎の不動産業者]
+[charaSet B 2023001 1 謎のアラフィフ]
+[charaSet C 1038000 1 謎の富豪]
+[charaSet D 28010001 1 ダンテ]
+
+[charaSet E 1098303000 1 謎の富豪の部下]
+[charaSet F 1098303000 1 謎の富豪の部下2]
+[charaSet G 1098303000 1 謎の富豪の部下3]
+[charaSet H 1098178300 1 謎の不動産業者の部下]
+[charaSet I 1098178300 1 謎の不動産業者の部下2]
+[charaSet J 1098178300 1 謎の不動産業者の部下3]
+[charaSet K 98115900 1 謎のアラフィフの部下]
+[charaSet L 98115900 1 謎のアラフィフの部下2]
+[charaSet M 98115900 1 謎のアラフィフの部下3]
+
+[charaSet N 7046000 1 謎の不動産業者2]
+[charaSet O 7046000 1 謎の不動産業者3]
+[charaSet P 2023001 1 謎のアラフィフ2]
+[charaSet Q 2023001 1 謎のアラフィフ3]
+[charaSet R 1038000 1 謎の富豪2]
+
+[sceneSet S 243100 1]
+[sceneSet T 243100 1]
+[sceneSet U 243100 1]
+
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用2]
+[charaSet X 98115000 1 エフェクト用3]
+
+[charaTalk depthOff]
+[charaDepth S 3]
+[charaDepth A 4]
+[charaScale S 1.2]
+[charaScale A 1.2]
+
+[charaDepth T 5]
+[charaDepth B 6]
+[charaScale T 1.2]
+[charaScale B 1.2]
+
+[charaDepth N 2]
+[charaDepth P 1]
+
+[cameraMove 0.1 0,0 1.01]
+
+[scene 243100]
+
+[se ad93]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[shake 0.03 3 2 0.4]
+[se ade413]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.2 120,-20]
+[charaMove A 100,0 0.2]
+[charaFadein S 0.2 -100,-300]
+[charaMove S -120,-300 0.2]
+[wt 0.4]
+
+[bgm BGM_MAP_14 0.1]
+
+＠謎の不動産業者
+こーーのーーやーーろーー！
+[k]
+
+[shake 0.03 3 2 0.4]
+[se ade413]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.2 -150,-20]
+[charaMove B -100,0 0.2]
+[charaFadein T 0.2 100,-300]
+[charaMove T 120,-300 0.2]
+[charaFadeout A 0.2]
+[charaFadeout S 0.2]
+[wt 0.3]
+
+[charaDepth N 1]
+[charaDepth P 2]
+[charaFace N 5]
+[charaFadeinFSR N 0.1 2]
+[charaFace P 2]
+[charaFadeinFSL P 0.1 0]
+[wt 0.1]
+
+＠謎のアラフィフ
+なーーンーーだーーとーー！
+[k]
+
+[messageOff]
+[charaTalk N,B]
+[charaFadeout B 0.4]
+[charaFadeout T 0.4]
+[wt 0.5]
+
+＠N：謎の不動産業者
+わし様の！[wt 0.3]　金を！[wt 0.3]　返して！[wt 0.3]　もらおうか！[wt 0.6][r]このサギ師め！
+[k]
+
+[charaTalk P]
+[charaFace P 2]
+
+＠P：謎のアラフィフ
+ハハハハハ！　どのツラ下げて言い出すのかな、[r]このペテン師！
+[k]
+
+[cueSe SE_23 23_ade895]
+[charaTalk N]
+[charaFace N 6]
+[charaMoveFSR N 236,0 0.2]
+
+＠N：謎の不動産業者
+サギ！[wt 0.4][cueSeStop 23_ade895 0.1]
+[k]
+
+[se ade491]
+[charaTalk P]
+[charaFace P 2]
+[charaMoveFSL P -236,0 0.2]
+
+＠P：謎のアラフィフ
+ペテン！[wt 0.4][seStop ade491 0.1]
+[k]
+
+[messageOff]
+[subCameraOn 2]
+[charaLayer Q sub #A]
+[charaLayer O sub #A]
+
+[subCameraFilter #A through]
+
+[subRenderScale #A 1.01]
+
+[charaDepth O 3]
+[charaDepth Q 4]
+
+[charaFace O 6]
+[charaFadeinFSR O 0 236,0]
+
+[charaFace Q 5]
+[charaFadeinFSL Q 0 -236,0]
+
+[subRenderFadein #A 0 0,0]
+
+[charaTalk off]
+[charaDepth V 3]
+[charaFace N 6]
+[charaFace P 5]
+[cueSe SE_23 23_ade842]
+[charaPut V 0,160]
+[charaEffect V bit_talk_lightning_04t]
+
+＠二人
+……。[r]……。
+[k]
+
+[messageOff]
+[charaEffectStop V bit_talk_lightning_04t]
+[subRenderFadeout #A 0.2]
+[charaDepth A 7]
+[charaDepth B 8]
+[charaDepth V 9]
+[charaFace A 5]
+[charaFadeinFSR A 0.2 2]
+[charaFace B 2]
+[charaFadeinFSL B 0.2 0]
+[charaFadein S 0.2 0,-260]
+[charaPut V 1]
+[charaEffect V bit_talk_41_fs]
+
+＠二人
+[f large]許さん！！
+[k]
+
+[messageOff]
+[charaEffectStop V bit_talk_41_fs]
+[charaMoveFSR A 100,0 0.3]
+[charaMoveFSL B -100,0 0.3]
+[charaEffect V bit_talk_magical_pon]
+[cueSe SE_21 21_ade627]
+[wt 0.3]
+[charaMoveFSR A 150,0 0.3]
+[charaMoveFSL B -150,0 0.3]
+[wt 0.3]
+[charaMoveFSR A 100,0 0.3]
+[charaMoveFSL B -100,0 0.3]
+[charaEffect V bit_talk_magical_pon]
+[wt 0.3]
+[charaShake A 0.05 5 1 0]
+[charaShake B 0.04 4 2 0]
+[wt 0.3]
+[charaEffect V bit_talk_magical_pon]
+[wt 0.7]
+
+[charaFadeout O 0]
+[charaFadeout Q 0]
+[wt 0.2]
+[subCameraOff]
+[charaLayer O normal]
+[charaLayer Q normal]
+[charaScale O 1.0]
+[charaScale Q 1.0]
+
+[cueSeVolume 21_ade627 0.3 0.2]
+
+[subCameraOn 1]
+[charaLayer W sub #A]
+[charaLayer R sub #A]
+[charaLayer U sub #A]
+
+[subCameraFilter #A normal]
+
+[subRenderScale #A 1.01]
+
+[charaDepth U 2]
+[charaDepth R 3]
+[charaDepth W 4]
+
+[charaScale U 1.4]
+[charaScale R 1.2]
+[charaScale W 1.2]
+[charaPut W 100,100]
+[charaEffect W bit_talk_41_fs]
+
+[charaFace R 2]
+[charaFadein R 0 250,0]
+[charaFadein U 0 -100,-320]
+[subRenderFadein #A 0.3 0,0]
+[charaMoveEase U -200,-320 0.5 easeOutSine]
+[charaMoveEase R 150,0 0.5 easeOutSine]
+[wt 0.3]
+
+[charaScale A 1.0]
+[charaScale B 1.0]
+[charaScale C 1.0]
+[charaScale N 1.0]
+[charaScale P 1.0]
+
+[charaDepth N 5]
+[charaDepth P 4]
+[charaDepth C 5]
+[charaDepth B 4]
+[charaDepth A 3]
+
+[charaFace B 2]
+[charaFadein B 0.1 -290,0]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaFace C 2]
+[charaFadein C 0.1 275,0]
+[charaShake A 0.05 5 1 0]
+[charaShake B 0.04 4 2 0]
+[charaShake C 0.05 4 2 0]
+[charaFadeout N 0]
+[charaFadeout P 0]
+[charaFadeout S 0]
+[charaShakeStop N]
+[charaShakeStop P]
+[wt 0.4]
+
+
+＠謎の富豪
+ど[messageShake 0.03 4 4 0.5]っちも俺の金を返せよおおお！
+[k]
+
+[messageOff]
+[se ad7]
+[charaEffectStop W bit_talk_41_fs]
+[charaMoveEase R -100,0 0.4 easeOutSine]
+[charaFadeout R 0.3]
+[wt 0.9]
+
+
+[subRenderFadeout #A 0.5]
+[cueSeVolume 21_ade627 0.5 1.0]
+[wt 0.2]
+
+[se ad617]
+[charaEffect V bit_talk_magical_pon]
+[wt 0.5]
+
+[charaEffect V bit_talk_magical_pon]
+
+[charaPut W 2000,2500]
+[charaFadeout R 0]
+[charaFadeout U 0]
+[wt 0.2]
+[subCameraOff]
+[charaLayer W normal]
+[charaLayer R normal]
+[charaLayer U normal]
+[charaScale W 1.0]
+[charaScale R 1.0]
+[charaScale U 1.0]
+[wt 0.3]
+
+[charaEffect V bit_talk_magical_pon]
+[wt 0.8]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[seStop ad617 0.5]
+[cueSeStop 21_ade627 0.5]
+[wait wipe]
+
+[charaPut V 2000,2500]
+[charaEffectDestroy V bit_talk_magical_pon]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaShakeStop A]
+[charaShakeStop B]
+[charaShakeStop C]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+[wt 0.6]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+
+＠ダンテ
+フフ……実に見苦しい争い……。[r]とりあえず止めないと……。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgmStop BGM_MAP_14 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[charaScale B 1.0]
+[charaScale A 1.0]
+[charaScale C 1.0]
+
+[subCameraOn 2]
+[charaLayer B sub #A]
+[charaLayer K sub #A]
+[charaLayer L sub #A]
+[charaLayer M sub #A]
+[charaLayer S sub #A]
+
+[charaLayer C sub #B]
+[charaLayer E sub #B]
+[charaLayer F sub #B]
+[charaLayer G sub #B]
+[charaLayer T sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask10 4 255,255,255,255 0]
+[subCameraFilter #B maskEdge cut359_mask16 4 255,255,255,255 0]
+
+[charaDepth B 4]
+[charaDepth K 6]
+[charaDepth L 5]
+[charaDepth M 4]
+[charaDepth S 2]
+
+[charaScale S 1.2]
+[charaFace B 0]
+[charaFadein B 0.1 0,230]
+[charaFace S 0]
+[charaFadein S 0.1 120,-7]
+
+[charaDepth C 4]
+[charaDepth E 6]
+[charaDepth F 5]
+[charaDepth G 4]
+[charaDepth T 2]
+
+[charaScale T 1.2]
+[charaFace C 0]
+[charaFadein C 0.1 0,230]
+[charaFace T 0]
+[charaFadein T 0.1 -120,-7]
+
+[charaDepth U 2]
+[charaDepth A 3]
+
+[charaScale U 1.2]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[charaFadein U 0.1 0,-260]
+[wt 0.6]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+[bgm BGM_BATTLE_49 0.1]
+
+＠謎の不動産業者
+こうなったら実力行使だ！
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 1]
+[subRenderFadeinFSSideL #A 0.3 -400,-150]
+[subRenderMoveEaseFSSideL #A -350,-250 0.4 easeOutSine]
+[wt 0.45]
+
+＠謎のアラフィフ
+ンむ。まったくだネ！
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 2]
+[subRenderFadeinFSSideR #B 0.3 400,-150]
+[subRenderMoveEaseFSSideR #B 350,-250 0.4 easeOutSine]
+[wt 0.45]
+
+＠謎の富豪
+やってやらぁ！
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[charaDepth H 6]
+[charaDepth I 5]
+[charaDepth J 4]
+[charaFace E 0]
+[charaFace H 0]
+[charaFace K 0]
+
+[charaFadeout A 0.4]
+[charaMoveScale A 0.98 0.4]
+[charaMove A 0,-5 0.4]
+[wt 0.15]
+[charaFadein H 0.25 1]
+
+[charaFadeout C 0.4]
+[charaMoveScale C 0.98 0.4]
+[charaMove C 0,225 0.4]
+[wt 0.1]
+[charaFadeout B 0.4]
+[charaMoveScale B 0.98 0.4]
+[charaMove B 0,225 0.4]
+
+[se ade210]
+[charaFadein E 0.25 0,250]
+
+[wt 0.1]
+[charaFadein K 0.25 0,250]
+[wt 0.2]
+
+[charaFace F 0]
+[charaFace I 0]
+[charaFace L 0]
+[charaFadein F 0.25 -175,245]
+[charaFadein I 0.25 -175,-5]
+[charaFadein L 0.25 -175,245]
+[wt 0.2]
+[se ad346]
+[seStop ade210]
+[charaFace G 0]
+[charaFace J 0]
+[charaFace M 0]
+[charaFadein G 0.25 175,245]
+[charaFadein J 0.25 175,-5]
+[charaFadein M 0.25 175,245]
+[wt 1.5]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout U 0.1]
+
+[charaTalk D]
+[charaFace D 19]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠ダンテ
+ちょ、こんなところで……！？
+[k]
+
+？1：ぶ、武器の取り扱いはちょっとお待ちをーーー！
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_49 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

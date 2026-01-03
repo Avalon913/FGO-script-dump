@@ -1,0 +1,807 @@
+
+＄94-08-25-12-3-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098261000 1 ドラコー]
+[charaSet B 1057000 1 セタンタ]
+[charaSet C 6048001 1 ロクスタ]
+[charaSet D 3004001 1 カルナ]
+[charaSet E 2015001 1 アルジュナ]
+[charaSet F 99360000 1 ケルト兵1]
+[charaSet G 99360000 1 ケルト兵2]
+[charaSet H 99360000 1 ケルト兵3]
+[charaSet I 1057000 1 セタンタ1]
+[sceneSet J 156400 1]
+[charaSet K 3004001 1 カルナ2]
+
+[charaSet L 1098261000 1 ドラコー1]
+[charaScale L 1.3]
+[sceneSet M 156400 1]
+[charaScale M 1.3]
+
+[charaSet N 2015001 1 アルジュナ1]
+[charaScale N 1.5]
+[sceneSet O 10000 1]
+[charaScale O 1.5]
+[charaSet P 98115000 1 エフェクト用]
+[charaPut P 2000,2000]
+[charaEffect P bit_talk_36]
+[sceneSet Q 156400 1]
+[charaScale Q 1.3]
+
+[charaSet R 98115000 1 エフェクト用1]
+
+[sceneSet S 156400 1]
+[charaScale S 1.4]
+
+[charaScale I 1.2]
+[charaScale K 0.9]
+[charaScale J 1.4]
+
+
+[charaTalk depthOff]
+[charaDepth F 3]
+[charaDepth G 2]
+[charaDepth H 1]
+
+[charaDepth C 1]
+[charaDepth A 1]
+[charaDepth B 1]
+[charaDepth D 1]
+[charaDepth E 2]
+[charaDepth J 3]
+[charaDepth K 4]
+[charaDepth I 5]
+
+[scene 156400]
+
+[fadein black 1.5]
+[bgm BGM_BATTLE_105 0.1]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[se ad678]
+[wt 0.1]
+[charaMoveScale B 1.1 0.2]
+[charaMove B 0,12 0.2]
+[charaFadeout B 0.2]
+[blur motion 0.2 4 10 0.5 0.6 0.05 100]
+[wt 0.2]
+[charaScale B 1.0]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaFace G 0]
+[charaFadeinFSL G 0.1 -300,0]
+[charaFace H 0]
+[charaFadeinFSR H 0.1 300,0]
+[wt 0.1]
+
+[effect bit_talk_h_slash01_fs]
+[wt 0.15]
+[se bac137]
+[wt 0.1]
+[charaShake F 0.05 2 2 0.3]
+[charaShake G 0.05 2 2 0.3]
+[charaShake H 0.05 2 2 0.3]
+[wt 0.4]
+
+[charaSpecialEffect F enemyErasure 1 1.5]
+[charaSpecialEffect G enemyErasure 1 1.5]
+[charaSpecialEffect H enemyErasure 1 1.5]
+[cueSe Battle ba6]
+[wt 2.0]
+
+[se ad166]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[charaFace G 0]
+[charaFadeinFSL G 0.4 -300,0]
+[charaFace H 0]
+[charaFadeinFSR H 0.4 300,0]
+[wt 0.5]
+[seStop ad166 0.3]
+[wt 0.3]
+
+[subCameraOn 2]
+
+[charaLayer M sub]
+[charaLayer L sub]
+
+[subCameraFilter maskEdge cut359_mask03 4 255,0,0,0]
+
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth L 2]
+
+[charaTalk on]
+[charaTalk L]
+[charaFace L 4]
+[charaFadein L 0.1 70,100]
+[charaFadein M 0.1 70,-200]
+[charaMove L -20,100 0.3]
+[charaMove M -20,-200 0.3]
+
+[subRenderFadein 0.2 0,-50]
+[wt 0.5]
+
+[charaMove L -120,100 0.3]
+[charaMove M -120,-200 0.3]
+[subRenderFadeout 0.2]
+[wt 0.3]
+
+[charaTalk off]
+[se ad1051]
+[se bac389]
+[effect bit_talk_claw_red02]
+[wt 0.5]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+
+[charaShake F 0.05 2 2 0.3]
+[charaShake G 0.05 2 2 0.3]
+[charaShake H 0.05 2 2 0.3]
+[wt 0.4]
+
+[charaLayer L normal]
+[charaLayer M normal]
+
+[charaSpecialEffect F enemyErasure 1 1.5]
+[charaSpecialEffect G enemyErasure 1 1.5]
+[charaSpecialEffect H enemyErasure 1 1.5]
+[cueSe Battle ba6]
+[wt 2.0]
+
+[charaLayer M sub]
+[charaLayer N sub]
+
+[subCameraFilter mask cut359_mask07 3 255,255,255,255]
+
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth N 2]
+
+[charaTalk on]
+[charaTalk N]
+[charaFace N 5]
+[charaFadein N 0.1 -10,100]
+[charaFadein M 0.1 -50,-150]
+[charaMove N -10,200 10.0]
+[charaMove M -50,-50 10.0]
+
+[cueSe SE_22 22_ad1179]
+[subRenderFadein 0.7 0,-200]
+[charaFadein O 0.7 0,-100]
+[charaEffect N bit_talk_36]
+[wt 0.5]
+
+＠N：アルジュナ
+神性領域拡大。空間固定。神罰執行……
+[k]
+
+[messageOff]
+
+[seStop 22_ad1179 0.5]
+[fadeout black 0.5]
+[wait fade]
+
+[subRenderFadeout 0.1]
+[charaEffectDestroy N bit_talk_36]
+[charaFadeout N 0.1]
+[charaFadeout M 0.1]
+[charaFadeout O 0.1]
+
+[charaLayer N normal]
+[charaLayer M normal]
+[wt 0.3]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+させるかよ！
+[k]
+
+[messageOff]
+
+[se ad678]
+[wt 0.1]
+[charaMoveScale B 1.1 0.2]
+[charaMove B 0,12 0.2]
+[charaFadeout B 0.2]
+[blur motion 0.2 4 10 0.5 0.6 0.05 100]
+[wt 0.2]
+[charaMoveScale B 1.0 0.1]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[charaScale E 1.2]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,20]
+[charaPut P 0,0]
+[wt 0.1]
+
+[effect bit_talk_14]
+[wt 0.15]
+[se ad419]
+[se ad170]
+[charaPut P 2000,2000]
+[charaEffectDestroy P bit_talk_36]
+[charaShake E 0.05 2 2 0.5]
+
+[se ad671]
+[charaMove E 0,0 0.3]
+[charaMoveScale E 1.0 0.3]
+[wt 0.5]
+[seStop ad671]
+
+＠アルジュナ
+むっ……！
+[k]
+
+[messageOff]
+
+[charaFadein J 0.4 100,-300]
+[charaScale B 1.2]
+
+[wt 0.5]
+
+
+
+[charaTalk I]
+[charaFace I 13]
+[charaFadein I 0.4 150,0]
+[charaMove I 250,0 0.3]
+
+[se ad671]
+[wt 0.4]
+[seStop ad671 0.3]
+[wt 0.3]
+
+[charaTalk off]
+[charaFace K 5]
+[charaPut K -200,-40]
+[se ad73]
+[effect bit_talk_quickmove -215,0]
+[charaSpecialEffect K appearanceReverse 1 0.25]
+[charaMoveReturn K -200,-45 0.4]
+
+
+[charaLayer I sub #A]
+
+[subCameraFilter #A through]
+
+[subRenderFadein #A 0 0,0]
+
+[subBlur #A lens 0.1 2 10 1.0 subBlur]
+
+
+[charaTalk on]
+＠K：カルナ
+こっちだ。
+[k]
+
+[messageOff]
+
+[charaLayer I normal]
+
+[wt 0.1]
+
+[charaFace I 12]
+[se ad678]
+[cameraMove 0.4 100,-50 1.3]
+
+[se bac81]
+[fadeout white 0.4]
+[wait fade]
+
+[cueSe Servants_300400 bac1117 0.9]
+
+[charaFadeout E 0.1]
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[cameraHome 0.1]
+[subRenderFadeout #A 0.1]
+
+[charaFadein S 0.1 0,-250]
+[charaFadein I 0.1 0,0]
+[charaMoveScale I 1.3 0.1]
+
+[wt 0.1]
+
+[charaMove I 0,0 0.3]
+[charaMoveScale I 1.2 0.3]
+[se ad671]
+
+[charaShake I 0.05 2 3 0.8]
+
+[fadein white 0.4]
+[wait fade]
+
+
+
+＠I：セタンタ
+ぐわああっ！[r]チクショウ……！
+[k]
+
+[messageOff]
+
+[charaMove I 250,0 0.5]
+[charaMove S 250,-250 0.5]
+
+[wt 0.7]
+
+[charaLayer M sub]
+[charaLayer E sub]
+
+[subCameraFilter maskEdge cut359_mask10 4 255,255,255,255]
+
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth E 2]
+
+[charaScale E 1.3]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 -70,150]
+[charaFadein M 0.1 -70,-120]
+
+[subRenderFadein 0.2 -200,-150]
+[wt 0.3]
+
+＠アルジュナ
+アルスターの幼き勇者よ。[r]なぜ獣に[#与:くみ]するのです？
+[k]
+
+[charaFace I 13]
+
+＠I：セタンタ
+ビーストはどうでもいいんだけどよ……[r]マスターを[#殺:や]らせるわけにはいかねえのさ！
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[se ad678]
+[charaMove I 450,0 0.3]
+[charaMove E -270,150 0.3]
+
+[fadeout black 0.2]
+[wait fade]
+
+[subRenderFadeout 0.1]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[charaFadeout E 0.1]
+[charaFadeout M 0.1]
+[charaFadeout S 0.1]
+
+[charaLayer E normal]
+[charaLayer M normal]
+[charaScale E 1.0]
+
+[scene 10000]
+
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_kengekiall02_fs]
+[wt 0.1]
+[se bac136]
+[wt 0.2]
+[se bac137]
+[wt 0.3]
+[se bac139]
+[effectStop bit_talk_kengekiall02_fs]
+
+[se ad386]
+[effect bit_talk_v_slash01]
+[wt 0.4]
+
+[se bac151]
+[se ad170]
+[fadeout white 0.3]
+[wait fade]
+
+[scene 156400]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 -150,0]
+
+[fadein white 0.5]
+[wait fade]
+[wt 0.3]
+
+＠アルジュナ
+……愚かな。[r]獣を従えた時点で[&彼:彼女]は既に人類の敵。
+[k]
+
+＠アルジュナ
+そもそも[&彼:彼女]は、貴方が知る[r]マスターではないのでしょう。
+[k]
+
+[messageOff]
+
+[charaLayer M sub]
+[charaLayer B sub]
+
+[subCameraFilter maskEdge cut359_mask02 4 255,255,255,255]
+
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth B 2]
+
+[charaScale B 1.4]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 220,270]
+[charaFadein M 0.1 70,0]
+[charaMove B 170,270 0.3]
+[charaMove M 20,0 0.3]
+
+[subRenderFadein 0.2 0,-250]
+[wt 0.5]
+
+＠セタンタ
+関係あるか！[r]そういうことじゃねえんだよ！
+[k]
+
+[messageOff]
+
+[charaMove B -30,320 0.3]
+[charaMove M -30,0 0.3]
+[subRenderFadeout 0.2]
+
+[charaScale P 1.3]
+
+
+[charaDepth E 1]
+[charaDepth D 2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.2 400,0]
+[charaMove D 250,0 0.2]
+[wt 0.1]
+
+[charaPut P 0,0]
+[charaEffect P bit_talk_x_slash02]
+[wt 0.1]
+
+[se ad82]
+[se ad170]
+[effect bit_talk_blow02]
+[wt 0.15]
+
+[charaFadeout M 0.1]
+[charaFadeout B 0.1]
+
+[se bac209]
+[se bac257]
+[charaShake D 0.05 2 2 0.5]
+[wt 0.8]
+
+[charaLayer M normal]
+[charaLayer B normal]
+[charaScale B 1.0]
+
+＠カルナ
+くだらない宿業だ。[r]命を懸けるほどのものなのか？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+はっ？　腑抜けてんのか？[r]たかが命、ケチるほどのもんかよ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_BATTLE_105 1.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠カルナ
+なるほど。そうか。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+
+[charaScale D 1.3]
+[charaScale E 1.3]
+
+[charaLayer E sub #A]
+[charaLayer M sub #A]
+
+[charaLayer Q sub #B]
+[charaLayer D sub #B]
+
+[charaDepth M 1]
+[charaDepth E 2]
+
+[charaDepth Q 1]
+[charaDepth D 2]
+
+[charaFace E 2]
+[charaFadein E 0.1 -400,270]
+[charaFadein M 0.1 100,-30]
+
+[charaFace D 2]
+[charaFadein D 0.1 330,260]
+[charaFadein Q 0.1 -300,-30]
+
+[subCameraFilter #A maskEdge cut359_mask04 4 0,0,255,0]
+[subCameraFilter #B maskEdge cut359_mask04 4 255,0,0,0]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[subRenderFadein #A 0.3 0,-250]
+[subRenderFadein #B 0.3 0,-500]
+
+[charaMove E -300,270 0.3]
+[charaMove M 200,-30 0.3]
+
+[charaMove D 230,260 0.3]
+[charaMove Q -200,-30 0.3]
+
+[wt 0.9]
+[bgm BGM_BATTLE_106 0.1]
+[fadeout black 0.2]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+
+[charaFadeout M 0.1]
+[charaFadeout D 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout E 0.1]
+
+[scene 10000]
+[wt 0.2]
+
+[charaLayer M normal]
+[charaLayer D normal]
+[charaLayer Q normal]
+[charaLayer E normal]
+
+[charaScale E 1.0]
+[charaScale M 1.0]
+[charaScale D 1.0]
+[charaScale Q 1.0]
+
+[fadein black 0.2]
+[wait fade]
+
+
+[se bac265]
+[effect bit_talk_flame_slash_01]
+[wt 0.5]
+
+[se ad782]
+[effect bit_talk_rarrow01br]
+[wt 2.0]
+
+
+[fadeout black 0.1]
+[wait fade]
+
+[effectStop bit_talk_rarrow01br]
+
+[charaScale B 1.2]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,20]
+[charaEffect R bit_talk_sand_dust_front_fs]
+[charaEffect R bit_talk_sand_dust_back_fs]
+
+[scene 156400]
+[wt 0.1]
+
+[fadein black 0.2]
+[wait fade]
+
+[se ad671]
+[se ad284]
+[charaMove B 0,0 0.3]
+[charaMoveScale B 1.0 0.3]
+
+[charaEffectStop R bit_talk_sand_dust_front_fs]
+[charaEffectStop R bit_talk_sand_dust_back_fs]
+
+[wt 1.0]
+
+＠セタンタ
+クッ……！　マズい！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠アルジュナ
+ならば、滅びるがいい。
+[k]
+
+[messageOff]
+
+
+[charaLayer N sub #A]
+[charaLayer M sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask10 4 255,255,255,255]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth N 2]
+[charaDepth Q 3]
+[charaDepth P 4]
+[charaDepth D 5]
+
+[subRenderDepth #A 1]
+
+[charaScale N 1.3]
+[charaScale D 1.3]
+[charaScale M 1.3]
+[charaScale Q 1.3]
+
+[charaFace D 2]
+[charaFadein D 0.3 210,220]
+[charaFadein Q 0.3 3,-80]
+
+[charaFace N 2]
+[charaFadein N 0.1 -70,120]
+[charaFadein M 0.1 170,-150]
+[subRenderFadein #A 0.2 -200,-250]
+
+[charaMove N -70,220 0.3]
+[charaMove M 170,-50 0.3]
+
+[charaMove D 210,-30 0.3]
+[charaMove Q 30,-330 0.3]
+[wt 0.5]
+
+[se adm31]
+[seVolume adm31 0 0.6]
+[cueSe SE_21 21_ad1117]
+[charaEffect N bit_talk_charge_blu]
+[charaEffect D bit_talk_kien02 0,50]
+[se ad963]
+[charaPut P 10,220]
+[charaBackEffect P bit_talk_charge_aura_set]
+
+[wt 2.5]
+
+[seStop adm31 0.5]
+[seStop 21_ad1117 0.5]
+[seStop ad963 0.5]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+
+[charaFadeout M 0.1]
+[charaFadeout D 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout N 0.1]
+[charaFadeout E 0.1]
+[charaPut P 2000,2000]
+
+[subCameraOff]
+
+[charaLayer M normal]
+[charaLayer D normal]
+
+[charaScale N 1.0]
+[charaScale M 1.0]
+[charaScale D 1.0]
+[charaScale Q 1.0]
+
+[charaEffectDestroy N bit_talk_charge_blu]
+[charaEffectDestroy D bit_talk_kien02]
+[charaBackEffectDestroy P]
+
+[wt 1.0]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+＠ロクスタ
+ヤッベーのが来ますぅぅぅー！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ドラコー
+[%1]！[r]アレを防げるか！？
+[k]
+
+？1：やってみる！
+？2：……来い！
+
+？！
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[effect bit_talk_summon_fs]
+[se su3]
+[wt 2.5]
+
+[fadeout white 1.0]
+[wait fade]
+
+[scene 10001]
+[wt 0.1]
+
+[fadein white 0.1]
+[wait fade]
+
+
+[messageOff]
+[seStop su3 0.5]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_106 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

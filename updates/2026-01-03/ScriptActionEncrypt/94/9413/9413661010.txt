@@ -1,0 +1,257 @@
+
+
+＄94-13-66-10-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 2020000 1 イシュタル]
+[charaSet B 2020000 1 イシュタル（演出用）]
+[charaSet C 1098257310 1 ダ・ヴィンチ]
+[charaSet D 2053000 1 ツタンカーメン]
+[charaSet E 3056000 1 ゴッホ]
+
+[sceneSet O 232300 1]
+
+[charaSet S 98115000 1 エフェクト用]
+
+[scene 232300]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+[bgm BGM_EVENT_39 0.1]
+
+＠？？？
+ちょっと、どの英霊が来たっていうの……？[r]アイツったら、ここには最後まで誰も来ないって[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth O 3]
+[charaDepth B 4]
+
+[charaScale O 1.4]
+[charaFadein O 0.6 0,-200]
+[wt 0.9]
+
+[charaScale B 1.4]
+[charaFace B 8]
+[charaFadein B 0.4 -100,270]
+[charaMoveEase B 0,270 0.6 easeOutSine]
+[wt 1.2]
+
+[charaMoveEase B 0,70 1.1 easeInOutSine]
+[charaMoveEase O 0,-360 1.1 easeInOutSine]
+[wt 1.1]
+
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[wt 0.8]
+
+[charaFadeout B 0.7]
+[charaFadeout O 0.7]
+[wt 1.2]
+
+
+[charaTalk on]
+[charaFace A 16]
+＠イシュタル
+[line 3][messageShake 0.04 4 3 0.5]はああ！？　誰よ！？[r]部外者はこの領域には近づけないはずでしょう！？
+[k]
+
+[charaFace A 15]
+＠イシュタル
+え？　カルデア？[r]……もしかして、ついに人理側が動いた？
+[k]
+
+[charaFace A 14]
+＠イシュタル
+つまり……[bgmStop BGM_EVENT_39 1.5][wt 0.8][charaFace A 2]ここが潮時ってわけ！
+[k]
+
+[messageOff]
+[charaPut S 1]
+[charaEffect S bit_talk_06]
+[bgm BGM_EVENT_112 1.0]
+[wt 2.0]
+
+？1：いきなり！？　冗談でしょ！？
+
+[charaFace A 5]
+＠イシュタル
+それこそ冗談じゃないわ！　[#弱っても]戦の女神、[r][#転身:てったい]の時を誤る愚は犯しません！
+[k]
+
+？2：まだ行かないで女神さま！
+
+[charaFace A 11]
+＠イシュタル
+う……そう言われると気が引け……[wt 1.0][charaFace A 5][r]いやいや、やっぱり今回は無理！
+[k]
+
+？！
+
+[charaFace A 0]
+＠イシュタル
+しょうもない現界だったけど、[#蒔:ま]くべき種は[#蒔:ま]いたし！
+[k]
+
+[charaFace A 1]
+＠イシュタル
+じゃあね、あんまり羽振り良くなさそうな[&男:娘]！
+[k]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect A flashErasure 1 2.0]
+[wait charaSpecialEffect A]
+[charaEffectStop S bit_talk_06]
+[wt 1.0]
+[charaPut S 2000,2500]
+[bgmStop BGM_EVENT_112 2.0]
+[wt 1.0]
+
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaEffectDestroy S bit_talk_06]
+
+[scene 231400]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaPut S 1]
+[charaEffect S bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk C]
+[charaFace C 33]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠ダ・ヴィンチ
+神霊イシュタルが関与してて、しかも逃げたか～。[r]ん～一気に不穏になってきたなあ……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠ツタンカーメン
+メソポタミアの女神その人にござりまするか。[r]そんなに危険なお方なので？
+[k]
+
+？1：いい[#神:ひと]ではあるんだけど
+？2：悪だくみと怒った時の怖さがね
+？！
+
+[charaFace D 10]
+＠ツタンカーメン
+むう……女神がすでに何かを成し遂げていて、[r]破滅的な結末がすでに決定している、などは？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk C]
+[charaFace C 35]
+[charaFadein C 0.1 1]
+＠ダ・ヴィンチ
+……可能性はゼロじゃない、けど多分違う、かな。
+[k]
+
+[charaFace C 23]
+＠ダ・ヴィンチ
+イシュタルが人類を害するために、こそこそ陰謀を企む[r]なんて考えにくい。怒った彼女はもっと剛速球だ。
+[k]
+
+＠ダ・ヴィンチ
+イシュタルが暗躍するのは、欲のため。[r]宝石が欲しいとか、力が欲しいとか、そんな感じ。
+[k]
+
+[charaFace C 22]
+＠ダ・ヴィンチ
+あと、まだ何もこっちが掴んでないのに逃げたのも意外。[r]通常だと彼女は、アドリブで陰謀に巻き込んでくるかな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠ツタンカーメン
+となると……そも、彼女も陰謀の主体ではないのやも。[r]ただの共犯。不本意。ゆえ、これを機に逃げたと。
+[k]
+
+＠ツタンカーメン
+むしろ、危機はいっそう近づいたやもしれませぬね。[r]急ぐがよいかと存じまする。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ダ・ヴィンチ
+……賛成だ。引き続き、鋭い分析を頼むよ、ツタン。
+[k]
+
+[messageOff]
+[se ad562]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+[charaEffectStop S bit_talk_10_LowLevel]
+[wt 1.2]
+
+
+[charaTalk E]
+[charaFace E 27]
+[charaFadein E 0.1 1]
+＠ゴッホ
+さすがです、ツタンちゃん！[r]天才ダ・ヴィンチに分析で一目置かせるなんて！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠ツタンカーメン
+いいええ、[#己:うぬ]はただ整理したまでにて。
+[k]
+
+[charaFace D 2]
+＠ツタンカーメン
+……まだまだ分からぬことばかり。心して、臨みまする。
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

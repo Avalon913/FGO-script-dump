@@ -1,0 +1,509 @@
+
+
+
+
+＄94-14-32-03-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 33002002 1 スペース・エレシュキガル]
+[charaSet B 1098307900 1 岸波白野]
+[charaSet C 23006001 1 ＢＢコスモ]
+[charaSet D 1098299710 1 ＢＢドバイ]
+[charaSet E 1098307100 1 白い礼服の少女]
+[charaSet F 1098257910 1 マシュ]
+[charaSet G 23009001 1 シエル]
+[charaSet H 33002002 1 スペース・エレシュキガル_演出用]
+[charaSet I 1098299710 1 ＢＢドバイ_演出用]
+
+[sceneSet P 10001 1]
+[sceneSet Q 221610 1]
+[sceneSet R 221610 1]
+[charaSet S 5009000 1 エフェクト用1]
+
+[scene 10001]
+
+[subCameraOn 1]
+[subCameraFilter #A through]
+[charaLayer I sub #A]
+[charaScale I 1.2]
+[charaFace I 12]
+[charaFadein I 0.1 -150,10]
+
+[cueSe SE_21 21_ad1117]
+[cueSeVolume 21_ad1117 0 0]
+[fadein black 1.0]
+[cueSeVolume 21_ad1117 3.0 0.4]
+[wait fade]
+[wt 0.5]
+
+
+[bgm BGM_BATTLE_174 0.1]
+
+＠ＢＢドバイ
+きゃあぁあああーーーー！
+[k]
+
+[messageOff]
+[cueSeStop 21_ad1117 0.7]
+
+[cueSe SE_22 22_ade740]
+[cueSeVolume 22_ade740 0 0]
+[cueSeVolume 22_ade740 0.7 1.0]
+[wt 0.7]
+[se ad828]
+[wt 4.0]
+[cueSeStop 22_ade740 3.0]
+[seStop ad828 3.0]
+
+[fadeout white 0.1]
+[wait fade]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth P 9]
+[charaDepth S 8]
+[charaDepth D 5]
+[charaDepth H 4]
+[charaDepth Q 3]
+[charaDepth A 2]
+[charaDepth R 1]
+
+[charaScale P 1.01]
+[charaScale D 1.2]
+[charaScale H 1.2]
+[charaScale Q 1.2]
+[charaScale R 1.01]
+[charaScale S 1.2]
+
+[cameraMove 0.1 0,-10 1.15]
+[wait camera]
+
+[scene 221610]
+[wt 1.0]
+
+[fadein white 1.5]
+[cameraMoveEase 0,0 2.0 easeOutSine 1.01]
+[wait fade]
+[wt 1.0]
+
+[cueSe SE_21 21_ade546]
+[charaFadein Q 0.5 80,-220]
+[charaMoveEase Q 30,-220 0.5 easeOutQuart]
+[wt 0.3]
+[se ad696]
+[seVolume ad696 0 0.6]
+[se ade393]
+[seVolume ade393 0 0.3]
+[wt 0.2]
+
+[charaPut S 1]
+[charaEffect S bit_talk_mgn_light]
+[wt 0.6]
+[charaFadein P 0.2 0,-200]
+[wt 0.2]
+
+[charaEffectDestroy S bit_talk_mgn_light]
+[charaFace H 2]
+[charaFadein H 0.1 0,10]
+[wt 0.5]
+
+[seStop ad696 1.0]
+[seStop ade393 1.0]
+[charaFadeout P 1.0]
+[wt 1.0]
+
+
+＠スペース・エレシュキガル
+どう、思い知ったＢＢドバイ？[r]ご自慢の月は私のエピタフで破壊したわ。
+[k]
+
+＠スペース・エレシュキガル
+次元ゲートのエネルギー、全部を使ったけどね。[r]みんなの命が最優先よ。
+[k]
+
+[charaFace H 4]
+
+＠スペース・エレシュキガル
+そうでしょう、マスター？[r]的確かつ瞬息。まさに値千金の判断[line 3]
+[k]
+
+[charaFace A 9]
+[charaFadein A 0.1 0,30]
+[charaFadein R 0.1 0,-200]
+
+[charaFace H 9]
+
+＠スペース・エレシュキガル
+っ[messageShake 0.01 5 5 0.5]て、瓦礫に埋もれてるー！？
+[k]
+
+[messageOff]
+[charaFadeout H 0.4]
+[charaFadeout Q 0.4]
+[wt 0.4]
+
+[se ad299]
+[wt 0.5]
+[seStop ad299 1.0]
+[wt 0.5]
+
+[se ad60]
+[seStop ad60 0.5]
+[shake 0.01 2 2 0.8]
+[charaMove A 0,0 0.8]
+[charaMove R 0,-230 0.8]
+[wt 1.0]
+
+？1：スペース・エレシュキガル！
+？2：でもスペースってなんで？
+
+？！
+
+[charaFaceFade A 6 0.2]
+[wt 1.2]
+[charaFace A 0]
+
+＠スペース・エレシュキガル
+[line 3]コホン。無事で何よりでした。[r]他の人たちも無事のようね。ほんと良かった。
+[k]
+
+[charaTalk on]
+[charaFace A 3]
+
+＠スペース・エレシュキガル
+なぜ私がスペース・エレシュキガルなのかは[r]また後で打ち明けます。
+[k]
+
+[charaFace A 1]
+
+＠スペース・エレシュキガル
+それより今は目の前の彼女。[r]ここで決着をつけていいのよね？
+[k]
+
+[messageOff]
+[se ad228]
+[charaFadein Q 0.6 -80,-240]
+[charaMoveEase Q -30,-240 0.6 easeOutSine]
+[wt 1.2]
+[charaFace A 0]
+[charaFadeout R 0.1]
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.6 -150,-30]
+[charaMove D -150,10 0.8]
+[charaMove S -150,-50 0.8]
+[charaShake D 0.02 2 2 0.8]
+[seStop ad228 1.0]
+[wt 0.5]
+[cueSe SE_21 21_ade645]
+[charaScale S 1.0]
+[charaPut S -150,0]
+[charaEffect S bit_talk_lightning_01g_fs]
+[wt 0.3]
+[cueSe SE_23 23_ade842]
+[fowardEffect bit_talk_sparkle -240,-200]
+[wt 0.5]
+[fowardEffect bit_talk_sparkle 0,190]
+
+＠ＢＢドバイ
+……ふぅー……ふぅー……。
+[k]
+
+＠ＢＢドバイ
+……驚きました。ゲートが開いたとして、せいぜい[r]深宇宙の[#脅威:フォーリナー]だろうと予測しましたが……
+[k]
+
+＠ＢＢドバイ
+[%1]。[r]ビーストを、倒していなかったのですね。
+[k]
+
+？1：仲間だからね
+
+[messageOff]
+[charaTalk D,A]
+[charaFadeout D 0.6]
+[charaFadeout Q 0.6]
+[charaEffectStop S bit_talk_lightning_01g_fs]
+[wt 0.8]
+[charaPut S 2000,2000]
+[charaEffectDestroy S bit_talk_lightning_01g_fs]
+[fowardEffectDestroy bit_talk_sparkle]
+
+[charaFaceFade A 6 0.3]
+[wt 1.6]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：カルデアにはみんなで帰るからね
+
+[messageOff]
+[charaTalk D,A]
+[charaFadeout D 0.6]
+[charaFadeout Q 0.6]
+[charaEffectStop S bit_talk_lightning_01g_fs]
+[wt 0.8]
+[charaPut S 2000,2000]
+[charaEffectDestroy S bit_talk_lightning_01g_fs]
+[fowardEffectDestroy bit_talk_sparkle]
+
+[charaFaceFade A 7 0.3]
+[wt 1.6]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[charaDepth S 8]
+[charaDepth D 7]
+[charaDepth E 6]
+[charaDepth Q 5]
+[charaDepth B 4]
+[charaDepth G 3]
+[charaDepth F 2]
+[charaDepth C 1]
+
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+
+＠ＢＢコスモ
+ＢＢドバイ。[r]形勢は逆転しました。戦いを続けますか？
+[k]
+
+[messageOff]
+[charaTalk C,I]
+[subRenderFadein #A 0.4 0,0]
+[charaFadein Q 0.4 80,-240]
+[fowardEffect bit_talk_lightning_01g_fs -100,0]
+[wt 0.4]
+[charaFadeout C 0.1]
+
+＠I：ＢＢドバイ
+逆転などしていません。[r]ＬＬには自動復元機能があります。すぐに元通りです。
+[k]
+
+[charaFace I 13]
+
+＠I：ＢＢドバイ
+私はそれまで防戦すればいいだけ。[r]頼みのビーストも[#星剣:エピタフ]は二度は作れない。
+[k]
+
+[bgmStop BGM_BATTLE_174 1.0]
+
+＠I：ＢＢドバイ
+ここを[#凌:しの]げば私の勝ちです。[r]思い上がらない事ですね。
+[k]
+
+[messageOff]
+[charaScale E 0.9]
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.4 230,-40]
+[subBlur #A lens 0.4 1 10 1.0 subBlur]
+[wt 0.4]
+
+＠白い礼服の少女
+……ＢＢ……。
+[k]
+
+[messageOff]
+[charaCrossFade E 1098308300 0 0.5]
+[wt 0.1]
+[charaMove E 230,-38 0.6]
+[wait charaCrossFade E]
+[wait fastPlayDraw 1.0]
+[wt 0.7]
+[charaMove E 230,-42 0.7]
+[wt 0.1]
+[charaCrossFade E 1098307100 3 0.5]
+[wait charaCrossFade E]
+[wait fastPlayDraw 1.0]
+[wt 0.8]
+[charaMove E 230,-40 0.3]
+[charaFaceFade E 0 0.3]
+[wt 0.5]
+
+＠白い礼服の少女
+手伝おっか、ＢＢ？[r]一度ぐらいはマスターごっこ、していいでしょ？
+[k]
+
+[charaTalk I]
+[charaFace I 11]
+
+[blur lens 0.2 1 5]
+[subBlurOff #A lens 0.2 normal]
+
+＠I：ＢＢドバイ
+結構です。貴方は何もしないでください。[r]私に命令できるのは、私だけです。
+[k]
+
+＠I：ＢＢドバイ
+いまさら人類の助けは要りません。[r]邪魔をするなら貴方も一緒に処理します。
+[k]
+
+[messageOff]
+[charaTalk I,E]
+[blurOff lens 0.2]
+[charaFace E 5]
+[wt 1.4]
+
+[cueSe SE_24 24_ade1037]
+[cueSeStop 24_ade1037 1.0]
+[charaFadeout E 0.6]
+[charaMove E 250,-42 1.0]
+[wt 1.0]
+
+？1：……そんな体でまだ戦うの[&か:]？
+？2：……降参するんだ、ＢＢドバイ
+
+？！
+
+[charaFace I 12]
+[bgm BGM_BATTLE_216 0.1]
+
+＠I：ＢＢドバイ
+立場を[#弁:わきま]えなさい。[r]今の発言は私がするべきものです。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadeout #A 0.4]
+[charaFadeout Q 0.4]
+[fowardEffectStop bit_talk_lightning_01g_fs]
+[wt 0.4]
+[fowardEffectDestroy bit_talk_lightning_01g_fs]
+
+[charaFace B 2]
+[charaFadein B 0.4 0,-20]
+[charaMove B 0,0 0.4]
+[se ad984]
+[wt 0.2]
+
+[charaFace F 6]
+[charaFadeinFSR F 0.4 270,-10]
+[charaMoveFSR F 270,0 0.4]
+[se ad667]
+[seStop ad667 0.4]
+[wt 0.2]
+
+[charaFace G 9]
+[charaFadeinFSL G 0.4 -290,-10]
+[charaMoveFSL G -290,0 0.4]
+[cueSe SE_24 24_ade1034]
+[cueSeStop 24_ade1034 0.5]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+
+＠B：岸波白野
+戦力は[#五分五分:ご　ぶ　ご　ぶ]だ。[r]まだどちらが勝つかは分からない。
+[k]
+
+＠B：岸波白野
+けど、ＡＩであれば勝率が50パーセントの時点で[r]戦闘を止めている。
+[k]
+
+＠B：岸波白野
+自己保存を優先するなら選挙を止めるしかない。[r]……それでも、降参はできないのか。
+[k]
+
+[messageOff]
+[charaTalk B,D]
+[charaFace D 13]
+[charaFadein D 0.4 -150,10]
+[charaFadein Q 0.4 80,-240]
+[charaPut S -150,0]
+[charaEffect S bit_talk_lightning_01g_fs]
+[wt 0.4]
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ＢＢドバイ
+貴方の計算が間違っているだけですよ。[r]私の勝率は80パーセントを維持しています。
+[k]
+
+＠ＢＢドバイ
+こうして、貴方たちとお喋りをしている間に、[r]刻一刻と上がっていきますけどね？
+[k]
+
+[messageOff]
+[charaTalk D,F]
+[charaFadeout D 0.4]
+[charaFadeout Q 0.4]
+[charaEffectStop S bit_talk_lightning_01g_fs]
+[wt 0.4]
+[charaPut S 2000,2000]
+[charaEffectDestroy S bit_talk_lightning_01g_fs]
+[wt 1.2]
+
+[charaFace F 6]
+
+＠マシュ
+マスター。
+[k]
+
+？1：……わかってる
+
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：ＢＢドバイを倒そう
+
+？！
+
+[charaTalk F,D]
+[charaFace D 14]
+[charaFadein D 0.4 -150,10]
+[charaFadein Q 0.4 80,-240]
+[charaPut S -150,0]
+[charaEffect S bit_talk_lightning_01g_fs]
+[wt 0.4]
+[charaFadeout F 0.1]
+
+＠ＢＢドバイ
+そうそう。そういうところです☆
+[k]
+
+＠ＢＢドバイ
+できない事を口にするのは[r]人類共通のチャームポイントですよね。
+[k]
+
+＠ＢＢドバイ
+健気で、微笑ましくて、危なっかしくて、愚かしくて。
+[k]
+
+[charaFaceFade D 11 0.2]
+
+＠ＢＢドバイ
+ほんっと、どこまでいっても成長しない。[r]管理する側の身にもなってください。
+[k]
+
+[charaFace D 13]
+
+＠ＢＢドバイ
+いいですよ、かかってきなさい。[r]私も余力は残しません。全力で人類を葬り去ります。
+[k]
+
+＠ＢＢドバイ
+形式は火葬でしたよね？　不確定のビーストごと、[r]月の荒野にバラ撒いてあげましょう！
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_216 0.4]
+[wait fade]
+[subCameraOff]
+[wt 0.1]
+[soundStopAllEnd]
+[end]

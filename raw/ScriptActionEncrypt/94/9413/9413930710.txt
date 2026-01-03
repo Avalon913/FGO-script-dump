@@ -1,0 +1,1110 @@
+
+＄94-13-93-07-1-0
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1010000 1 エリザベート]
+[charaSet B 4001000 1 メドゥーサ]
+[charaSet C 5043000 1 アスクレピオス]
+[charaSet D 3057000 1 ビショーネ]
+
+[charaSet E 1098257810 1 マシュ]
+[charaSet F 1098257310 1 ダ・ヴィンチ]
+
+[charaSet G 1098314000 1 毛の生えた蛇竜人]
+[charaSet H 1098312700 1 蛇竜人_基本Ａ]
+[charaSet I 1098313800 1 蛇竜人_基本B]
+[charaSet J 1098313700 1 蛇竜人_軽]
+[charaSet K 1098314100 1 蛇竜人_重]
+
+[ifClear 60139301]
+[charaSet L 1098316400 1 チビーネ]
+[flag color_r true]
+
+[ifClear 60139302]
+[charaSet L 1098316500 1 チビーネ]
+[flag color_b true]
+
+[ifClear 60139303]
+[charaSet L 1098316900 1 チビーネ]
+[flag color_g true]
+
+[else]
+[charaSet L 1098316400 1 チビーネ]
+[flag color_r true]
+
+[endIf]
+
+[sceneSet N 238900 1]
+[sceneSet O 238900 1]
+
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+
+[sceneSet Q 238900 1]
+[subCameraOn 1]
+[charaLayer Q sub #A]
+[subCameraFilter #A maskEdge cut359_mask16 3 255,255,255,255 0]
+[charaScale Q 1.3]
+[charaFadein Q 0.1 -600,-100]
+
+[charaSet Z 98115000 1 通信エフェクト用]
+[charaPut Z 2000,2000]
+[charaEffect Z bit_talk_10_LowLevel]
+
+[charaTalk depthOff]
+[charaDepth N 1]
+[charaDepth P 1]
+[charaDepth Z 3]
+[charaDepth E 2]
+[charaDepth F 2]
+
+[charaDepth A 2]
+[charaDepth B 2]
+[charaDepth C 2]
+[charaDepth L 2]
+
+[charaScale N 1.2]
+[charaFadein N 0.1 -60,-280]
+[scene 238900]
+[wt 0.1]
+
+[charaMove N 60,-280 10.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_104 0.1]
+
+[charaTalk off]
+[charaDepth O 0]
+[charaDepth D 1]
+[charaDepth N 2]
+[charaDepth H 3]
+[charaDepth I 4]
+[charaDepth J 5]
+[charaDepth K 6]
+[charaDepth G 7]
+
+[charaScale H 0.85]
+[charaScale I 0.85]
+[charaScale J 0.95]
+[charaScale K 0.95]
+[charaScale G 1.0]
+[cueSe SE_21 21_ad1079 0]
+[seVolume 21_ad1079 1.0 0.7]
+[wt 0.6]
+[charaFace H 0]
+[charaFadein H 0.4 150,-53]
+[charaMove H -200,-53 3.0]
+[wt 0.6]
+[charaFace I 0]
+[charaFadein I 0.4 -350,-45]
+[charaMove I 50,-45 3.5]
+[wt 1.0]
+[charaFace J 0]
+[charaFadein J 0.4 250,-20]
+[charaMove J -150,-20 3.0]
+[wt 0.5]
+[charaFadeout H 0.4]
+[charaFace K 0]
+[charaFadein K 0.4 -450,-20]
+[charaMove K -250,-20 3.0]
+[wt 0.5]
+[charaFace G 0]
+[charaFadein G 0.4 450,0]
+[charaMove G -50,0 3.0]
+[charaFadeout I 0.4]
+[wt 0.5]
+[charaFadeout J 0.4]
+[wt 0.5]
+[charaFadeout K 0.4]
+[charaFace D 2]
+[charaFadein D 0.4 1]
+[charaFadein O 0.4 0,-200]
+[wt 1.0]
+[cueSeStop 21_ad1079 2.0]
+[charaFadeout N 0.8]
+[charaFadeout G 0.4]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk D]
+
+＠ビショーネ
+うわあ。[r]なんだか賑わっていますね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+＠チビーネ
+きゅぴぴっ！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+以前の町より、人種……蛇種……？　も[r]多様に見えます。体型の基礎が違うというか。
+[k]
+
+＠メドゥーサ
+確かに、ここならばチビーネをさらに[r]育てるためのヒントも得られるかもしれません。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+蛇種が違えば[#罹患:りかん]する病気も違うだろう。[r]クク、興味深いな……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+うーん、酒場とか宿屋はなさそうね。[r]勇者を出迎えるには問題がある町だわ。
+[k]
+
+[charaFace A 7]
+
+＠エリザベート
+そうなると、[r]余計に今までの疲労感が肩に……ん？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaLayer G sub #A]
+[charaDepth Q 1]
+[charaDepth G 2]
+[subRenderFadeinFSSideR #A 0.4 350,-150]
+[subRenderMoveEaseFSSideR #A 300,-150 0.4 easeOutSine]
+[wt 1.2]
+
+[charaScale G 0.8]
+[charaTalk G]
+[charaFace G 5]
+[se ad60]
+[charaFadein G 0.4 100,60]
+[charaMove G -30,60 0.8]
+[wt 0.8]
+[seStop ad60 0.4]
+
+＠毛の生えた蛇竜人
+ふう、やれやれ。[r]疲れた……。
+[k]
+
+＠毛の生えた蛇竜人
+疲れたときにはやっぱコレだよなー。[r]よいしょっと。
+[k]
+
+[messageOff]
+[cueSe SE_25 25_ade1163]
+[charaMove G -10,80 0.4]
+[wt 0.5]
+[charaMove G -10,60 0.4]
+[wt 0.5]
+[cueSeStop 25_ade1163 0.5]
+[wt 0.5]
+[charaFace G 2]
+
+＠毛の生えた蛇竜人
+あ～～～～、効くぅぅ……！[r]棒絡まり、サイコー！
+[k]
+
+＠毛の生えた蛇竜人
+っぱ狩り帰りの楽しみといったらコレだよな。[r]これを知らないヤツは人生損してるぜ！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaLayer G normal]
+[charaScale G 1.0]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+ゴクリ。
+[k]
+
+？1：まさかエリちゃん……
+？2：やってみたいの？
+？！
+
+[charaFace A 3]
+
+＠エリザベート
+そ、それこそまさかだわ！[r][#私:アタシ]はアイドルよ？
+[k]
+
+＠エリザベート
+あんなだらしない姿をみんなの前で晒すなんて、[r]週刊誌のいい[#餌食:えじき][line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠毛の生えた蛇竜人
+お、姉ちゃんたちも一絡みどうだい。[r]公共のものだから気兼ねしなくてもいいぜ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+そうなんですか？[r]それじゃあ……
+[k]
+
+[messageOff]
+[charaFadeout D 0.2]
+[se ad458]
+[wt 1.0]
+[seStop ad458 0.5]
+[wt 0.5]
+
+＠ビショーネ
+……（からみからみ）……
+[k]
+
+[charaTalk D]
+[charaFace D 19]
+[charaFadein D 0.2 1]
+
+＠ビショーネ
+ほわぁ。確かにこれは、[r]なんとも言えない安心感……。
+[k]
+
+＠ビショーネ
+社会のストレスに効く感じがしますぅ。（予想）
+[k]
+
+＠ビショーネ
+チビーネはちょっと手足の長さが[r]足らないかもですけど。
+[k]
+
+＠ビショーネ
+わたしのフィードバックを受け取ってねぇ……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+＠チビーネ
+きゅっ！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[bgmStop BGM_EVENT_104 1.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+ちょっとビショーネ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad7 0.3]
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+[charaShake D 0.03 3 3 0.4]
+
+＠ビショーネ
+す、すみません、誘われてしまったのでつい！[r]ダメでしたか！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+ダメかどうかと言われれば、その、ねえ？[r]別にダメじゃないかもだわ。
+[k]
+
+＠エリザベート
+後輩がチャレンジしてるのに[r]先輩が逃げるわけにはいかないし。
+[k]
+
+[charaFace A 0]
+
+＠エリザベート
+これは……そう、文化体験。[r]専門用語で言えばご当地ロケってやつよ。
+[k]
+
+[charaFace A 1]
+[charaMove A 50,0 0.4]
+[se ad984 0.5]
+
+＠エリザベート
+一流のアイドルはご当地ロケも[r]完璧にこなすものよ！
+[k]
+
+[charaFace A 3]
+[se ad458 0.8]
+[seStop ad458 1.5]
+[charaMoveReturn A 50,-10 1.0]
+
+＠エリザベート
+ええと、ここに顎を乗せて、[r]肩を上げてここに手を絡めて……
+[k]
+
+＠エリザベート
+微調整もできるのね。[r]それで全身をこの棒に預けるようにして……
+[k]
+
+[charaFace A 1]
+
+＠エリザベート
+だらー。[r]（弛緩）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠毛の生えた蛇竜人
+お隣さんたち、その感じからすると、[r]ひょっとして棒絡まりは初めてかい？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+そうだけど、[r]やってみると意外にいいわねコレ。
+[k]
+
+＠エリザベート
+独特の安心感があるっていうか。[r]クセになりそう……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠毛の生えた蛇竜人
+そうだろそうだろ？[r]わかってくれて嬉しいぜ！
+[k]
+
+＠毛の生えた蛇竜人
+俗世のことを全て忘れて、心と体の[#赴:おもむ]くままに[r]全てをこの棒に預けるのがコツだぜ。
+[k]
+
+[charaFace G 4]
+
+＠毛の生えた蛇竜人
+眠くなる？　気にすんな、寝ちまえ！[r][#涎:ヨダレ]？　気にすんな、出しちまえ！
+[k]
+
+[charaFace G 2]
+
+＠毛の生えた蛇竜人
+つまりこうだ！[r]……だらー。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+[#涎:ヨダレ]まではさすがにアイドルとして出さないけど、[r]こうね？　……だらー。
+[k]
+
+？1：とんでもないだらしなさに見えるけど
+？2：休めてるんならいいのかな……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+これに身体を絡ませることにどんな効果があるのかは[r]さらなる研究が必要だが、
+[k]
+
+＠アスクレピオス
+座りっぱなしが腰に悪いことは証明されている。[r]新しい健康的な作業スタイルとしても使えるかもしれんな。
+[k]
+
+＠アスクレピオス
+確かめてみよう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠毛の生えた蛇竜人
+お姉さんも来なよ。[r]手足が長いほうがぴったりフィットするぜ？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+こんなもの、ただ木の棒を[r]組み合わせただけではないですか。
+[k]
+
+[charaMove B 50,0 0.4]
+[se ad984 0.5]
+
+＠メドゥーサ
+身体を絡ませることが休息になるなど……
+[k]
+
+[messageOff]
+[se ad458 0.8]
+[seStop ad458 1.0]
+[charaMoveReturn B 50,-10 1.0]
+[wt 1.0]
+
+[charaFace B 3]
+
+＠メドゥーサ
+……。[r]……。
+[k]
+
+＠メドゥーサ
+多少の恥ずかしさはありますが、[r]確かにこれは、なかなか……。
+[k]
+
+＠メドゥーサ
+誰に見られているというわけでも[r]記録に残るというわけでもないですし、
+[k]
+
+＠メドゥーサ
+もうちょっとだけ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+[charaFadeTime P 0.2 0.4]
+
+＠マシュ
+（そう言えばレイシフト前、[r]　ステンノさんたちから[line 3]）
+[k]
+
+＠マシュ
+（『妹が安心して働けているか確かめたいから、）
+[k]
+
+＠マシュ
+（普段にないリラックス姿とか見せたら記録して[r]　後で見せてほしい』、）
+[k]
+
+＠マシュ
+（と頼まれていたのでした。今がそのときかと！）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 34]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+（なんだか善意で事件が起こっている気がするな……）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout P 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+[&子イヌ:子ジカ]、アナタも来なさいよ。[r]……え、蛇向けじゃないのかって？
+[k]
+
+[charaFace A 0]
+
+＠エリザベート
+うーん、アナタは蛇要素なし蛇人間なんだって考えたら[r]気持ち良くなれる下地くらいあるんじゃない？
+[k]
+
+？1：その理屈は謎だけど
+？2：ちょっと体験してみるくらいはいいかな
+？！
+
+[messageOff]
+[charaDepth A 2]
+[charaDepth O 1]
+[charaDepth G 0]
+[charaFadeout A 0.2]
+[charaMoveScaleEase O 1.2 1.0 easeOutSine]
+[charaMoveEase O -120,-240 1.0 easeOutSine]
+[se ad60 0.4]
+[seStop ad60 1.2]
+[wt 1.4]
+[se ad458 0.8]
+[seStop ad458 1.5]
+[shake 0.2 0 3 0.6]
+[wt 1.5]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+？1：むっ。これは、意外に……だらー……
+？！
+
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 -250,0]
+
+＠エリザベート
+でしょう？
+[k]
+
+＠エリザベート
+もうちょっとファーとかつけてフカフカにすれば[r]カルデアでも流行るかもしれないわ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.0]
+[charaTalk A,G]
+[charaFadeout A 0.4]
+[charaFadeout O 0.4]
+[wt 0.4]
+[charaScale A 1.0]
+
+＠毛の生えた蛇竜人
+あんたら旅人さんなのかい。[r]この町は初めて？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[bgm BGM_EVENT_147 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+そうですね。
+[k]
+
+[charaFace B 0]
+
+＠メドゥーサ
+この町には[#多種多様:た し ゅ た よ う]な方がいるようですが、[r]何か特別な理由などありますか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠毛の生えた蛇竜人
+え、そうかな？
+[k]
+
+[charaFace G 0]
+
+＠毛の生えた蛇竜人
+[#多種多様:た し ゅ た よ う]って言っても[r]体型で分けて三つくらいだろ。
+[k]
+
+＠毛の生えた蛇竜人
+体型でなんとなく固まる傾向にあるから、[r]この町はだいたい三つのエリアに分かれてる感じだよ。
+[k]
+
+＠毛の生えた蛇竜人
+ちなみに今いるここは中型タイプのエリア。
+[k]
+
+＠毛の生えた蛇竜人
+毛が生えてるやつも生えてないやつもいるけど、[r]俺らみたいな体型の蛇たちが主に暮らしてる場所さ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+他は……先程ちらりと見えた、重そうなタイプと[r]翼の発達した細いタイプか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠毛の生えた蛇竜人
+そうだよー。地竜系、軽竜系、ってみんな呼んでるな。[r]そして俺たちは中型竜系。
+[k]
+
+[charaFace G 0]
+
+＠毛の生えた蛇竜人
+タイプが分かれてても別に仲が悪いってわけじゃないし、[r]あっちのエリアに俺たちが遊びに行くこともある。
+[k]
+
+＠毛の生えた蛇竜人
+向こうは向こうでいいリラックス場所を[r]作ってるんだぜ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+なら宿屋と酒場の期待がまだできるわね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+忘れないように。休息がこの町に来た[r]メインの目的ではありません。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk F]
+[charaFace F 34]
+[charaFadein F 0.1 1]
+[charaFadeTime P 0.2 0.7]
+
+＠ダ・ヴィンチ
+（その通りなんだけど、棒に絡みついた状態で[r]　言ってもいまいち説得力がないな……）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout P 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+同じ門が同じようにあり、[r]それを越える方法も同じパターンのようだ。
+[k]
+
+＠アスクレピオス
+ならば竜を成長させる方法も[r]似たものが存在しているのかもしれない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+た、たしかに！
+[k]
+
+？1：というわけで、成長に繋がるような
+？2：パワースポット的な場所、知りませんか？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠毛の生えた蛇竜人
+パワースポット？　うーん……
+[k]
+
+[charaFace G 4]
+
+＠毛の生えた蛇竜人
+あ。あるわ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+あるの！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠毛の生えた蛇竜人
+あんたらが探してる場所かは知らないけど、
+[k]
+
+＠毛の生えた蛇竜人
+俺たち中型の蛇が怪我したりなんか体調悪いなーって[r]思ったときに行く場所はあるよ。
+[k]
+
+[charaFace G 2]
+
+＠毛の生えた蛇竜人
+居心地いいんだよねえ。何かに[r]見守られてる感じがするっていうかさ。
+[k]
+
+＠毛の生えた蛇竜人
+そんな神聖視されてるわけでもないけど、[r]聖地？　みたいな意味合いなのかも。
+[k]
+
+[charaFace G 0]
+
+＠毛の生えた蛇竜人
+不思議と他のタイプの奴らは[r]全然そういうの感じないって言って、
+[k]
+
+＠毛の生えた蛇竜人
+あいつらはあいつらで[r]別のそういう場所があるらしい。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+ふむ。その地が、『竜としての体型』に関わる[r]独自の魔力パターンを放っている可能性は否定できない。
+[k]
+
+[charaFace C 0]
+
+＠アスクレピオス
+足を向けてみるのがいいだろう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+そうですね。[r]しかし……体色を決めたときと同じく、
+[k]
+
+＠メドゥーサ
+成長するとしてもチビーネには[r]その方向性を決める権利があるでしょう。
+[k]
+
+[charaFace B 14]
+
+＠メドゥーサ
+先程見たような、がっしりとした[r]タイプがいいのか。
+[k]
+
+＠メドゥーサ
+空を飛びやすいような体型がいいのか。[r]はたまたその中間か。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+……そうですね。[r]しっかり考えないと。
+[k]
+
+＠ビショーネ
+わたしが、どんなドラゴンになるべきか……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 9]
+[charaFadein L 0.1 1]
+
+＠チビーネ
+きゅぴ……。
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 0,5]
+[charaMoveEase A 0,-5 0.6 easeOutBack]
+[wt 0.1]
+[se ad223]
+[wt 0.8]
+
+＠エリザベート
+このままだと身体が絡んだまま[r]固まっちゃいそうだから離脱ー！
+[k]
+
+[charaFace A 0]
+
+＠エリザベート
+ふう、気持ちよかったけど危なかったわ。
+[k]
+
+＠エリザベート
+話の流れ的に、いきなりその[r]パワースポットに行くんじゃなくて、
+[k]
+
+＠エリザベート
+別のエリアも見て回ったほうがよくない？
+[k]
+
+[charaFace A 1]
+
+＠エリザベート
+どんな体型になりたいのか[r]決めるヒントがあるかもしれないし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+まだ休息し足りないという本音も[r]うっすら見え隠れするけど、一理ある。
+[k]
+
+＠ダ・ヴィンチ
+いいんじゃない？
+[k]
+
+？1：それじゃ、別のエリアに行ってみよう
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+いろいろ教えていただいて、[r]ありがとうございました！
+[k]
+
+＠ビショーネ
+ふかふかの蛇さんも、お気をつけて！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠毛の生えた蛇竜人
+気をつける？　何を？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+……えっと。生贄を食べるために、[r]大きな蛇が現れる、のでは……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠毛の生えた蛇竜人
+ああ、蛇王様のあれね！　そりゃそうだ。[r]当たり前すぎて、今更気をつけるも何も。
+[k]
+
+[charaFace G 6]
+
+＠毛の生えた蛇竜人
+たまに思い出したように来るくらいだし、[r]俺たちは毎日ピリピリしてたりはしないのさー。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk F]
+[charaFace F 24]
+[charaFadein F 0.1 1]
+[charaFadeTime P 0.2 0.7]
+[bgm BGM_EVENT_147 0.5 0.5]
+
+＠ダ・ヴィンチ
+（うーん？　前の町とは少し雰囲気が違うな……[r]　[#こちらの町の方が頻度が低い]……？）
+[k]
+
+＠ダ・ヴィンチ
+（町が若干ながら発展している様子なのもそのせいかな？[r]　襲撃頻度が低いなら、町を壊される回数も少なくなる）
+[k]
+
+＠ダ・ヴィンチ
+（でも、なんで……[r]　何か理由が[line 3]？）
+[k]
+
+[bgm BGM_EVENT_147 0.5 1.0]
+[charaFadeout F 0.1]
+[charaFadeout P 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠毛の生えた蛇竜人
+でも来たら怖いのは事実だな。[r]あんたらこそ気をつけなよ。
+[k]
+
+[charaFace G 2]
+
+＠毛の生えた蛇竜人
+あんたらは……なんだか、[r]鱗が少なくて食べやすそうだからな！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth G 0]
+[charaDepth C 6]
+[charaDepth A 2]
+[charaDepth B 5]
+[charaDepth D 3]
+[charaDepth L 4]
+[charaDepth N 1]
+[charaFace C 7]
+[charaFace A 4]
+[charaFace B 4]
+[charaFace D 21]
+[charaFace L 7]
+[charaFadein C 0.3 -450,0]
+[charaFadein A 0.3 150,0]
+[charaFadein B 0.3 -150,0]
+[charaFadein D 0.3 400,0]
+[charaFadein L 0.3 500,-100]
+[charaFadein N 0.3 0,-250]
+[wt 1.7]
+[charaFadeout G 0.1]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_147 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

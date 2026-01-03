@@ -1,0 +1,668 @@
+
+
+
+＄04-00-04-17-4-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098307900 1 岸波白野]
+[charaSet B 1098307900 1 岸波白野（演出用）]
+[charaSet C 23009001 1 シエル]
+[charaSet D 23009001 1 シエル（演出用）]
+[charaSet E 23009002 1 蒼く輝くシエル]
+[charaSet F 23009002 1 蒼く輝くシエル（演出用）]
+[charaSet G 23005000 1 アーキタイプ：アース]
+
+[sceneSet H 10000 1]
+[charaScale H 1.1]
+
+[sceneSet P 234901 1]
+[sceneSet Q 225215 1]
+[sceneSet R 225216 1]
+[sceneSet S 225210 1]
+[sceneSet T 225210 1]
+[sceneSet U 225210 1]
+
+[charaSet V 5009000 1 エフェクト用1]
+[charaSet W 98115000 1 エフェクト用2]
+[cameraMove 0 0,0 1.01]
+
+[scene 225210]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth P 2]
+
+[charaScale P 1.2]
+[charaFadein P 0 -10,-260]
+[charaMove P 10,-260 5.0]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.0 0.1]
+
+[se ade393]
+[seVolume ade393 0 0]
+[seVolume ade393 1.0 0.4]
+
+[fadein black 1.0]
+[wait fade]
+[wt 3.0]
+
+[charaFadeout P 1.0]
+[wt 1.6]
+
+[seStop ad556 3.0]
+[seStop ade393 3.0]
+
+[subCameraOn 2]
+[charaLayer A sub #A]
+
+[charaLayer Q sub #B]
+[charaLayer R sub #B]
+
+[subCameraFilter #A through]
+[subCameraFilter #B normal]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaDepth C 2]
+[charaDepth S 3]
+[charaDepth D 4]
+[charaDepth A 5]
+[charaDepth Q 6]
+[charaDepth R 7]
+
+[charaScale S 1.2]
+[charaScale D 0.85]
+[charaScale A 1.2]
+[charaScale Q 1.1]
+[charaScale R 1.1]
+
+[charaFace A 0]
+[charaFadein A 0 0,0]
+
+[charaFadein Q 0 0,-260]
+
+[subRenderFadein #B 0.8 0,0]
+[wt 0.8]
+
+[charaFace C 17]
+[charaFadein C 0.1 1]
+[charaFadein S 0.1 50,-260]
+
+[subRenderFadein #A 0 0,0]
+[wt 0.4]
+
+
+[cueSe SE_23 23_ade956]
+[wt 0.1]
+[charaScale R 1.1]
+[charaFadein R 0.4 0,-260]
+[wt 0.4]
+
+[charaFadeout Q 0.1]
+[wt 1.6]
+
+[subRenderFadeout #B 0.8]
+[wt 0.8]
+[charaFadeout R 0.1]
+[wt 0.6]
+
+
+[bgm BGM_BATTLE_216 0.1]
+
+？1：クリア！　次で最後[&ですね:だよね]！
+
+＠岸波白野
+ああ。もう充分に回復してるね。[r]これならもっと前に合図を送るべきだった。
+[k]
+
+[messageOff]
+[charaFadeout A 0.6]
+[charaFadeout S 0.6]
+[wt 0.6]
+
+？2：やった！　白野さん、ハイタッチ！
+
+
+[charaFace A 4]
+＠岸波白野
+いい[&ぞ:とも]、イエーイ！[r]マスター組サイコー！
+[k]
+
+[messageOff]
+[charaMoveScale A 1.3 0.15]
+[charaMove A 0,20 0.15]
+[cameraMove 0.15 0,-20 1.05]
+
+[wt 0.1]
+[se ade124]
+[wt 0.05]
+[charaMoveScaleEase A 1.2 0.8 easeOutQuint]
+[charaMoveEase A 0,0 0.8 easeOutQuint]
+[cameraMoveEase 0,0 0.8 easeOutQuint 1.01]
+[wt 1.2]
+
+[subBlur #A lens 0.9 4 5 1.0 subBlur]
+[charaMoveEase A -250,0 0.9 easeOutSine]
+[charaMoveEase S -150,-260 0.9 easeOutSine]
+
+[charaPut D 625,-65]
+[charaFace D 16]
+[charaFadeTime D 0 0]
+[charaMoveEase D 375,-65 0.9 easeOutSine]
+[wt 0.4]
+[charaFadeTime D 0.4 1.0]
+[wt 1.9]
+
+[messageOff]
+[charaFadeout A 0.6]
+[charaFadeout D 0.6]
+[charaFadeout S 0.6]
+[wt 0.6]
+
+？！
+
+[subRenderFadeout #A 0]
+[wt 0.1]
+[charaFadeout Q 0]
+[charaFadeout R 0]
+[charaFadeout A 0]
+[wt 0.1]
+[subCameraOff]
+[charaLayer Q normal]
+[charaLayer R normal]
+[charaLayer A normal]
+[charaScale Q 1.0]
+[charaScale R 1.0]
+[charaScale A 1.0]
+
+[charaTalk on]
+＠シエル
+しかし、なかなか凝った世界でしたが[r]コンセプトが彼女らしくなかったですね。
+[k]
+
+＠シエル
+もっと一面の氷地獄とか溶岩地獄、[r]あるいは原始の地球環境などを再現すると思ったのに。
+[k]
+
+？1：それなんですけど……
+？2：白野さん、ステージ３から５まではどんな？
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠岸波白野
+首輪をつけた動物たちの世界と、[r]魚人が[#泳:およ]ぐ一面の海の世界と、
+[k]
+
+＠岸波白野
+機械化した動物たちの世界と……だったかな。[r][line 3]あ。
+[k]
+
+[charaFace A 7]
+＠岸波白野
+そうか、じゃあ最後の『世界７もしも』は[line 3]
+[k]
+
+[bgmStop BGM_BATTLE_216 1.5]
+
+＠G：？？？
+そうだ。[r]いま貴様たちが直面している滅亡。
+[k]
+
+＠G：？？？
+『月との衝突で崩壊する世界』。[r]それが最後のアトラクションになる。
+[k]
+
+[messageOff]
+[wt 0.4]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+
+[charaDepth H 2]
+[charaDepth A 3]
+[charaDepth P 4]
+[charaDepth G 5]
+
+[charaScale P 1.2]
+[charaFadein P 0 50,-210]
+[wt 0.7]
+
+[charaMoveEase P 50,-260 0.8 easeOutSine]
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+[wt 0.6]
+
+[charaTalk G]
+[charaFace G 20]
+[charaFadein G 0.4 1]
+[wt 1.5]
+[bgm BGM_MAP_19 0.1]
+
+[subCameraOn 1]
+[charaLayer B sub #A]
+[charaLayer C sub #A]
+[charaLayer S sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 0,0,0,255]
+
+[charaDepth S 2]
+[charaDepth B 3]
+[charaDepth C 4]
+
+[charaScale S 1.2]
+
+[charaFace B 6]
+[charaFace C 2]
+[charaFadein B 0 -25,225]
+[charaFadeinFSR C 0 175,225]
+[charaFadein S 0 -75,0]
+
+[charaTalk B,C]
+[subRenderFadein #A 0.3 475,-225]
+[subRenderMoveEase #A 225,-225 0.5 easeOutSine]
+
+[charaMoveEaseFSL G -250,0 0.5 easeOutSine]
+[charaMoveEaseFSL P -125,-260 0.5 easeOutSine]
+[wt 0.5]
+
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 0.25]
+
+＠シエル＆岸波白野=spot[B,C]
+アーキタイプ：アース……！
+[k]
+
+
+[charaFace G 20]
+＠アーキタイプ：アース
+何もかもが終わる前の、よい余興だったな。[r]私ともあろう者が見入ってしまった。
+[k]
+
+＠アーキタイプ：アース
+褒美だ、マスターＡとＢ。[r]苦しめずに潰してやろう。
+[k]
+
+＠アーキタイプ：アース
+滅びに[#抗:あらが]う者。滅びる他ない者。[r]異なる世界の召喚術だが実に見応えがあった。
+[k]
+
+[charaFace G 16]
+＠アーキタイプ：アース
+ひとり余計な異物が交ざっていたがな。[r]貴様は楽に死ねるとは思わぬ事だ、代行者。
+[k]
+
+[charaFace G 19]
+＠アーキタイプ：アース
+いや、簡単に死ねる体ではなかったか。[r]よい。ではまとめて一撃で消すとしよう。
+[k]
+
+＠アーキタイプ：アース
+[#人形遊びはその後だ]。
+[k]
+
+＠アーキタイプ：アース
+原形が残った者は光栄に思うがいい。[r][#丁寧:ていねい]に、[#親愛:しんあい]を[#以:もっ]て踏みにじってやるのだからな？
+[k]
+
+？1：ここで、もう！？
+？2：ステージ７クリアで城内じゃない[&のか:の]！？
+？！
+
+[messageOff]
+[charaTalk G,A]
+[subRenderFadeout #A 0.5]
+[charaFadeout G 0.5]
+[charaFadeout P 0.5]
+[wt 0.5]
+[charaFadeout B 0]
+[charaFadeout C 0]
+[charaFadeout S 0]
+[wt 0.2]
+[subCameraOff]
+[charaLayer B normal]
+[charaLayer C normal]
+[charaLayer S normal]
+[charaScale B 1.0]
+[charaScale C 1.0]
+[charaScale S 1.0]
+
+[charaPut H 0,0]
+[charaFadeTime H 0.2 0.5]
+
+＠岸波白野
+（俺も同じだ、まだ猶予はあると思っていた……！[r]　王族なら玉座で待ってるものじゃないか！？）
+[k]
+
+＠岸波白野
+（仮に倒せたとしても、真祖は倒した後が怖い。[r]　どうする、どうする[line 3]！）
+[k]
+
+＠岸波白野
+（[%1]さんだけでも逃がすか？[r]　いや意味がない。地球が落ちればみんな終わりだ）
+[k]
+
+＠岸波白野
+（誰かがここで真祖を引きつけて、[r]　どこかにある召喚の起点を見つける他ない[line 3]）
+[k]
+
+[charaFadeout H 0.2]
+[charaFace A 2]
+＠岸波白野
+[%1]。[r]手順は分かっているな？
+[k]
+
+＠岸波白野
+ステージ７に参加するのは俺だけだ。[r]その間にシエルさんと、[line 3]を見つけてくれ。
+[k]
+
+？1：できません。一緒に戦います
+？2：[line 3]分かりました。必ず
+？！
+
+[messageOff]
+[charaTalk off]
+
+[charaDepth C 2]
+[charaDepth V 3]
+
+[charaDepth A 4]
+[charaDepth S 5]
+[charaDepth D 6]
+
+[charaScale D 1.2]
+[charaScale S 1.2]
+[charaFace D 16]
+[charaFadeinFSR D 0.6 250,0]
+[charaFadeinFSR S 0.6 -100,-260]
+[wt 0.6]
+
+[charaFace C 9]
+[charaFadein C 0.1 1]
+[charaFadeout A 0.1]
+[wt 0.2]
+[bgm BGM_MAP_19 2.0 0.6]
+
+[charaTalk on]
+＠D：シエル
+いえ。三人で戦いましょう。[r]倒せますよ、アレ。
+[k]
+
+＠D：シエル
+というか倒していい状態ですね、彼女。[r]反撃はありません。かなり無理をしているようですから。
+[k]
+
+[messageOff]
+[subCameraOn 1]
+[charaLayer G sub #A]
+[charaLayer P sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask15 5 0,0,0,255]
+
+[charaDepth P 2]
+[charaDepth G 3]
+
+[charaScale G 1.2]
+[charaScale P 1.2]
+[charaFace G 14]
+[charaFadeinFSL G 0 -50,225]
+[charaFadein P 0 100,0]
+
+[charaTalk G]
+[subRenderFadein #A 0.3 -475,-225]
+[subRenderMoveEase #A -225,-225 0.5 easeOutSine]
+[wt 0.7]
+[bgmStop BGM_MAP_19 1.5]
+
+＠アーキタイプ：アース
+[line 3][#寝所:しんじょ]を飛び回る[#雀蜂:すずめばち]のような女だ。[r]いや、止まらなくなった[#風見鶏:かざみどり]か？
+[k]
+
+[charaFace G 15]
+＠アーキタイプ：アース
+[#耳障:みみざわ]り、[#目障:めざわ]りな事この上ない。[r]いま、私を倒せる、と言ったのか？
+[k]
+
+[bgm BGM_MAP_98 1.0]
+
+[charaFace D 9]
+＠D：シエル
+ええ。今の貴方なら私ひとりで。[r]その後は彼らに[#託:たく]しましょう。
+[k]
+
+＠D：シエル
+貴方が地球に[#喚:よ]ばれたのなら、[r]私は貴方の行為を止めるために呼ばれたもの。
+[k]
+
+＠D：シエル
+ここからはムーン・ドバイを守る戦いではなく、[r]私と貴方、違う世界の善悪を決める戦いです。
+[k]
+
+[messageOff]
+[charaTalk D,C]
+[subRenderFadeout #A 0.6]
+[charaFadeout D 0.6]
+[charaFadeout S 0.6]
+[wt 0.6]
+[charaFadeout G 0]
+[charaFadeout P 0]
+[wt 0.2]
+[subCameraOff]
+[charaLayer G normal]
+[charaLayer P normal]
+[charaScale G 1.0]
+[charaScale P 1.0]
+
+[se ad933]
+[seVolume ad933 0 0]
+[cueSe SE_24 24_ade1060]
+[cueSeVolume 24_ade1060 0 0]
+[charaPut V 1]
+[charaEffect V bit_talk_cil_change]
+[wt 0.1]
+[cueSeVolume 24_ade1060 1.5 0.1]
+[seVolume ad933 1.5 0.1]
+[wt 2.9]
+
+
+[charaFace C 2]
+＠シエル
+そもそも私がムーンキャンサーなどという[r]クラスになったのは貴方のせい！
+[k]
+
+＠シエル
+貴方の罪は私が片付け！[r]私の罰は貴方が受け持つ！
+[k]
+
+＠シエル
+私だって好きで並行世界やらユニヴァースやらで[r][#曖昧:あいまい]な霊基になったのではありません！
+[k]
+
+＠シエル
+この姿になったのは貴方という存在がいたからです。[r]その責任を[line 3]
+[k]
+
+[messageOff]
+[charaEffectEdgeBlur C 5679f0 5679f0]
+[wt 0.1]
+[cueSeVolume 24_ade1060 1.0 0.3]
+[seVolume ad933 1.0 0.7]
+[wt 0.9]
+[cueSe SE_23 23_ade925]
+[cueSeVolume 23_ade925 0 0.6]
+[wt 0.7]
+
+[cueSe SE_24 24_ad1415]
+[cueSeStop 23_ade925 0.3]
+[cueSeStop 24_ade1060 0.3]
+[seStop ad933 0.3]
+[charaEffectStop V bit_talk_cil_change]
+[se ad29]
+[seVolume ad29 0 0.6]
+[wt 0.4]
+
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+[charaFadeout C 0.1]
+[charaPut C 2000,25]
+[charaEffectEdgeBlurDestroy C]
+[wt 1.0]
+[cueSeStop 24_ad1415 1.5]
+[wt 1.9]
+
+
+[charaFace E 6]
+＠蒼く輝くシエル
+ここで、貴方にとってもらいます！
+[k]
+
+[messageOff]
+[charaTalk off]
+[subCameraOn 3]
+
+[charaLayer F sub #A]
+[charaLayer S sub #A]
+
+[charaLayer A sub #B]
+[charaLayer T sub #B]
+
+[charaLayer G sub #C]
+[charaLayer P sub #C]
+
+[subCameraFilter #A normal]
+[subCameraFilter #B maskEdge cut359_mask05 5 0,0,0,255]
+[subCameraFilter #C maskEdge cut359_mask05 5 0,0,0,255]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 2]
+
+[charaDepth P 2]
+[charaDepth S 2]
+[charaDepth T 2]
+[charaDepth F 3]
+[charaDepth G 3]
+[charaDepth A 3]
+
+[charaScale S 1.4]
+[charaScale F 1.4]
+[charaFace F 9]
+[charaFadein F 0 0,270]
+[charaFadein S 0 0,-170]
+
+[charaScale T 1.3]
+[charaScale A 1.2]
+[charaFace A 9]
+[charaFadein A 0 0,210]
+[charaFadein T 0 -125,5]
+
+[charaScale P 1.3]
+[charaScale G 1.2]
+[charaFace G 10]
+[charaFadein G 0 0,250]
+[charaFadein P 0 125,35]
+
+[subRenderFadein #A 0.8 0,0]
+[charaMove F 0,0 8.0]
+[charaMove S 0,-410 8.0]
+[wt 1.3]
+
+[subRenderFadeinFSR #B 0.3 350,-380]
+[subRenderMoveEaseFSR #B 350,-260 0.3 easeOutSine]
+[wt 0.3]
+
+[charaMove A 0,240 1.8]
+[charaMove T -125,35 1.8]
+[wt 1.8]
+
+[subRenderFadeout #B 0.3]
+[subRenderMoveEaseFSR #B 350,-140 0.3 easeOutSine]
+[wt 0.7]
+
+[subRenderFadeinFSL #C 0.3 -350,-140]
+[subRenderMoveEaseFSL #C -350,-260 0.3 easeOutSine]
+[wt 0.3]
+
+[charaMove G 0,220 1.8]
+[charaMove P 125,5 1.8]
+[wt 1.8]
+
+[subRenderFadeout #C 0.3]
+[subRenderMoveEaseFSL #C -350,-380 0.3 easeOutSine]
+[wt 0.3]
+
+[charaDepth U 2]
+[charaDepth E 3]
+[charaScale E 1.2]
+[charaScale U 1.2]
+[charaFace E 9]
+[charaFadein U 0.1 0,-260]
+[wt 0.9]
+
+[subRenderFadeout #A 0.8]
+[wt 0.8]
+[charaFadeout F 0]
+[charaFadeout P 0]
+[charaFadeout A 0]
+[charaFadeout T 0]
+[charaFadeout G 0]
+[charaFadeout S 0]
+[wt 0.2]
+[subCameraOff]
+[charaLayer F normal]
+[charaLayer P normal]
+[charaLayer A normal]
+[charaLayer T normal]
+[charaLayer G normal]
+[charaLayer S normal]
+[charaScale F 1.0]
+[charaScale P 1.0]
+[charaScale A 1.0]
+[charaScale T 1.0]
+[charaScale G 1.0]
+[charaScale S 1.0]
+[wt 0.2]
+
+[charaFace E 2]
+＠蒼く輝くシエル
+全力で行きますので、[r]ふたりとも下がってください！
+[k]
+
+＠蒼く輝くシエル
+地球を落とすなんて[#阿呆:あほう]なアイディアは即・却下！[r]このアーキタイプは、私が落とす！
+[k]
+
+
+[messageOff]
+[se ad678]
+[blur motion 0.35 4 10000 0.5 0.6 0.05 100]
+[charaMoveScaleEase E 1.5 0.35 easeOutQuint]
+[charaMoveEase E 0,30 0.35 easeOutQuint]
+[wt 0.35]
+
+[fadeout black 0.4]
+[bgmStopEnd BGM_MAP_98 0.4]
+[seStop ad678 0.4]
+[wait fade]
+[blurOff motion 0]
+[wt 0.1]
+[soundStopAllEnd]
+[end]
+
+

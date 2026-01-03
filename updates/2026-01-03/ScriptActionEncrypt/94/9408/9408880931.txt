@@ -1,0 +1,935 @@
+
+
+
+＄94-08-88-09-3-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 25013001 1 ワンジナ]
+[charaSet B 1098257910 1 マシュ]
+[charaSet C 10012000 1 太歳星君]
+[charaSet D 25005000 1 ボイジャー]
+[charaSet E 1098278500 1 ドゥムジ]
+[charaSet F 2022000 1 アルテラサンタ]
+[charaSet G 1098243000 1 エリセ]
+[charaSet H 7042000 1 クリームヒルト]
+[charaSet I 98110000 1 柳生但馬守]
+[charaSet J 25013000 1 ワンジナ_第一]
+[charaSet K 1098257310 1 ダ・ヴィンチ]
+[charaSet L 1098255100 1 ゴルドルフ]
+[charaSet Q 98115000 1 エフェクト用]
+
+[sceneSet M 135200 1]
+[charaScale M 1.3]
+[charaSet N 1098122300 1 ドゥムジ_通常]
+
+[sceneSet O 135200 1]
+[charaScale O 1.3]
+
+[sceneSet P 135200 1]
+[sceneSet R 135200 1]
+
+[charaTalk depthOff]
+
+[charaDepth M 1]
+[charaDepth O 1]
+[charaDepth R 1]
+[charaDepth P 1]
+
+[charaDepth E 2]
+[charaDepth C 4]
+[charaDepth A 5]
+[charaDepth F 3]
+[charaDepth N 4]
+
+[charaDepth H 2]
+[charaDepth D 3]
+[charaDepth G 4]
+
+[charaDepth B 2]
+[charaDepth J 3]
+[charaDepth I 3]
+
+[charaDepth K 2]
+[charaDepth Q 3]
+
+[charaFadein M 0.1 100,-300]
+
+[charaPut Q 2000,2000]
+[charaEffect Q bit_talk_10_LowLevel]
+
+[scene 135200]
+
+
+[subCameraOn 3]
+
+
+[charaLayer I sub #B]
+[charaLayer P sub #B]
+
+[charaLayer C sub #C]
+[charaLayer R sub #C]
+
+[charaScale P 1.3]
+[charaScale I 1.3]
+[charaScale R 1.3]
+[charaScale C 1.3]
+
+
+[subCameraFilter #A maskEdge cut359_mask04 3 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask02 5 0,0,0,255]
+[subCameraFilter #C maskEdge cut359_mask03 5 0,0,0,255]
+
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_137 0.1]
+
+[charaTalk off]
+
+[charaFace I 5]
+[charaFadein I 0.1 350,200]
+[charaFadein P 0.1 -200,-100]
+
+[charaFace C 5]
+[charaFadein C 0.1 -350,100]
+[charaFadein R 0.1 0,-180]
+
+[subRenderFadein #B 0.2 50,-220]
+[subRenderFadein #C 0.2 -50,-300]
+
+[subRenderMove #B 0,-220 0.2]
+[subRenderMove #C 0,-300 0.2]
+[wait subRenderMove]
+
+[wt 0.5]
+
+[subRenderMove #B -50,-220 0.2]
+[subRenderMove #C 50,-300 0.2]
+
+[subRenderFadeout #B 0.2]
+[subRenderFadeout #C 0.2]
+[wt 0.2]
+
+[effect bit_talk_kengekiall01_fs]
+[wt 0.2]
+[se bac141]
+[wt 0.2]
+[se bac142]
+[wt 0.1]
+[se bac150]
+[wt 0.3]
+
+[charaFadeout I 0.1]
+[charaFadeout C 0.1]
+[charaScale I 1.0]
+[charaScale C 1.0]
+
+[effect bit_talk_gram_slash_green_02]
+[wt 0.1]
+[cueSe Servants_102800 bac658]
+[wt 0.7]
+
+[charaLayer I normal]
+[charaLayer C normal]
+
+[se ad496]
+[seVolume ad496 0 0]
+[seVolume ad496 0.3 0.8]
+[charaFace I 5]
+[charaFadein I 0.5 200,0]
+[charaFace C 5]
+[charaFadein C 0.5 -200,0]
+
+[charaMove I 350,0 0.2]
+[charaMove C -350,0 0.2]
+[wt 0.7]
+[seStop ad496 0.2]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout I 0.1]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+[se ad239]
+[seStop ad239 0.8]
+[charaMoveReturn A -10,0 0.2]
+[effect bit_talk_h_slash01_fs]
+[charaFadeout A 0.1]
+[wt 0.7]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+[wt 0.3]
+
+[se ad170]
+[se bac509]
+[charaFace G 10]
+[effect bit_talk_14]
+[charaShake G 0.05 2 2 0.5]
+
+[wt 0.7]
+
+[charaLayer A sub #A]
+[charaLayer O sub #A]
+
+[charaScale O 1.3]
+[charaScale A 1.3]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 -100,280]
+[charaFadein O 0.1 -100,-50]
+
+[subRenderFadein #A 0.2 0,-350]
+
+[charaMove A 0,280 0.2]
+[charaMove O 0,-50 0.2]
+
+[wt 0.5]
+
+[subRenderFadeout #A 0.2]
+[charaMove A 100,280 0.2]
+[charaMove O 100,-50 0.2]
+[wt 0.3]
+
+[charaTalk G]
+[effect bit_talk_water_splash]
+[se ad979]
+[wt 0.2]
+
+[charaShake G 0.05 2 2 0.3]
+[wt 0.1]
+
+[charaFadeout A 0.1]
+[charaFadeout O 0.1]
+
+[effect bit_talk_windstorm]
+[se ad1052]
+[se ad176]
+[seVolume ad176 0 0.5]
+[charaShake G 0.05 2 2 2.0]
+[wt 0.3]
+[effectStop bit_talk_windstorm]
+[seStop ad176 2.0]
+[seStop ad1052 2.0]
+[wt 2.0]
+
+[charaLayer A normal]
+[charaLayer O normal]
+[charaScale O 1.0]
+[charaScale A 1.0]
+
+[charaTalk on]
+[charaFace G 17]
+＠エリセ
+ちょ、ちょっとタンマ！[r]こう、無理！　現戦力だと勝てない気がする！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_BATTLE_137 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ワンジナ
+じゃ、ワタシの勝ちだね。[r]やった！
+[k]
+
+[charaFace A 9]
+＠ワンジナ
+……。[r]…………やったのかな？
+[k]
+
+[clear]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk J]
+[charaFace J 10]
+[charaFadein J 0.1 1]
+＠J：ワンジナ
+やってないよ！[r]そっちのワタシが勝ったらダメじゃん！
+[k]
+
+＠J：ワンジナ
+ワタシ、強すぎ！
+[k]
+
+[clear]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠ワンジナ
+そ、そんなこと言われても……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠柳生但馬守
+ふむ。[r]主殿、ここはひとつ[#搦:から]め手が必要かと。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+[#搦:から]め手……ですか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠柳生但馬守
+左様。[r]如何だろうか、かるであの方々。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 22]
+[charaFadein K 0.1 1]
+[charaPut Q 1]
+
+＠ダ・ヴィンチ
+そうだよねぇ。
+[k]
+
+
+[charaFace K 34]
+＠ダ・ヴィンチ
+うーん、解析した感じではこちらの戦力で[r]真っ向からというのは難しいな……。
+[k]
+
+＠ダ・ヴィンチ
+しかも、本気でやるとなると間違いなく殺し合いだ。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+[charaPut Q 2000,2000]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠柳生但馬守
+ふむ。だそうだが？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ワンジナ
+それは………………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠太歳星君
+嫌だぞ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ボイジャー
+うーん、ぼくもいやだなあ。[r]こちらにもあちらにも、わんじながいるし……
+[k]
+
+＠ボイジャー
+もうみんな、ともだちだよね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 -150,-20]
+
+＠ドゥムジ
+フレンズ。いい響きです。裏切りすら美しい。[r]美しいものは壊れた時にはじめて美しさを証明できる。
+[k]
+
+＠ドゥムジ
+そう、どこかのクリプターも言っていました。
+[k]
+
+[messageOff]
+
+[charaMove M -100,-300 1.0]
+[charaMove E -350,-20 1.0]
+
+[wt 1.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.4 150,0]
+[wt 0.5]
+
+＠アルテラサンタ
+こらドゥムジ。黙っていろ。
+[k]
+
+[messageOff]
+[charaMove F 0,0 0.3]
+[wt 0.4]
+
+[se ad77]
+[charaShake E 0.05 3 3 0.4]
+
+[wt 1.0]
+
+[charaMove F 150,0 0.4]
+[wt 0.5]
+
+＠ドゥムジ
+失礼、失言でした。つい要望が。[r]ですがアルテラに絞められる私も美しいのでは？
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠クリームヒルト
+後味が悪いのはちょっとね。[r]でも、どうすればいいのかしら。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠マシュ
+…………。
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_70 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout M 0.1]
+
+[charaSet K 1098257300 1 ダ・ヴィンチ]
+[charaSet O 1098123000 1 ムニエル]
+[charaSet P 1098257400 1 シオン]
+
+[wt 0.5]
+
+[scene 132900]
+
+[pictureFrame cut063_cinema]
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_REQUIEM 0.1]
+
+[charaTalk L]
+[charaFace L 9]
+[charaFadein L 0.1 0,-50]
+
+＠ゴルドルフ
+……なんか、向こうのワンジナも一緒になって[r]考え始めているんだけど……。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 0,-50]
+
+＠ダ・ヴィンチ
+平和で何よりじゃないか。
+[k]
+
+[charaFace K 1]
+＠ダ・ヴィンチ
+交渉で聖杯が手に入るなら、[r]それが一番じゃない？
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 8]
+[charaFadein L 0.1 0,-50]
+
+＠ゴルドルフ
+まあ、それはそうだ。[r]しかし、いい知恵が浮かばないようではな……。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 0,-50]
+
+＠ダ・ヴィンチ
+こちらでも考えてあげないとね。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 16]
+[charaFadein L 0.1 0,-50]
+
+＠ゴルドルフ
+うーむ。
+[k]
+
+＠ゴルドルフ
+……そもそもだ。[r]ワンジナが求めているものは、何なのかね？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 22]
+[charaFadein K 0.1 0,-50]
+
+＠ダ・ヴィンチ
+彼女の話を聞く限りでは、[r]遊びたいというか楽しみたいというか……。
+[k]
+
+[charaFace K 23]
+＠ダ・ヴィンチ
+ああ、でも。[r]一人はもう飽きてしまったのかな。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 18]
+[charaFadein L 0.1 0,-50]
+
+＠ゴルドルフ
+出来る限り、大人数と交流したい……と。[r]しかし、そのために特異点に居続けられてしまっては……。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 34]
+[charaFadein K 0.1 0,-50]
+
+＠ダ・ヴィンチ
+とても困るねぇ。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 8]
+[charaFadein L 0.1 0,-50]
+
+＠ゴルドルフ
+……。[r]……。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 0]
+[charaFadein P 0.1 0,-50]
+
+＠シオン
+ゴルドルフ氏？　どうしました？
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 23]
+[charaFadein K 0.1 0,-50]
+
+＠ダ・ヴィンチ
+ゴルドルフくん？
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 3]
+[charaFadein O 0.1 0,-50]
+＠ムニエル
+おっさん、どうしたー？[r]拾い食いでもしてお腹壊したか。
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 9]
+[charaFadein L 0.1 0,-50]
+
+＠ゴルドルフ
+違うぞチャルメラ君。[r]あまりに不本意、あまりに不本意ではあるのだが。
+[k]
+
+[charaFace L 16]
+＠ゴルドルフ
+[%1]に、[r]通信を繋げてくれ。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_REQUIEM 1.5]
+
+[fadeout black 1.5]
+[wait fade]
+
+[pictureFrame]
+[charaFadeout L 0.1]
+
+[charaSet L 1098255110 1 ゴルドルフ]
+[sceneSet O 135200 1]
+
+[sceneSet P 135200 1]
+[charaScale P 1.3]
+[sceneSet R 135200 1]
+[charaScale R 1.3]
+[sceneSet K 135200 1]
+[charaScale K 1.3]
+
+[charaDepth P 1]
+[charaDepth K 1]
+
+[charaDepth F 2]
+[charaDepth N 3]
+[charaDepth C 3]
+[charaDepth A 4]
+
+[charaDepth B 2]
+[charaDepth J 3]
+[charaDepth I 4]
+
+[charaDepth R 5]
+[charaDepth H 6]
+[charaDepth D 7]
+[charaDepth G 8]
+
+[wt 0.5]
+
+[scene 135200]
+
+[wt 1.5]
+
+[charaTalk off]
+
+[charaScale A 1.1]
+
+[charaFadein P 0.1 100,-200]
+[charaMove P 50,-200 3.5]
+
+[charaFace A 3]
+[charaFadein A 0.4 -330,0]
+
+[charaFace C 4]
+[charaFadein C 0.4 -100,0]
+
+[charaFace F 4]
+[charaFadein F 0.4 150,0]
+
+[charaFace N 0]
+[charaFadein N 0.4 480,0]
+[charaMove N 430,0 3.5]
+
+[charaMove A -380,0 3.5]
+[charaMove C -150,0 3.5]
+[charaMove F 100,0 3.5]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[wt 1.4]
+
+[charaFadein R 0.5 80,-200]
+[charaMove R 130,-200 3.5]
+
+[charaFace H 12]
+[charaFadein H 0.4 250,0]
+[charaMove H 300,0 3.5]
+
+[charaFace D 4]
+[charaFadein D 0.4 -50,0]
+[charaMove D 0,0 3.5]
+
+[charaFace G 10]
+[charaFadein G 0.4 -400,0]
+[charaMove G -350,0 3.5]
+
+[wt 2.0]
+
+[charaFadeout N 0.1]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+[charaFadeout P 0.1]
+
+[charaFadein K 0.1 100,-200]
+
+[charaScale J 1.1]
+[charaFace J 3]
+[charaFadein J 0.1 -300,0]
+
+[charaFace B 4]
+[charaFadein B 0.1 350,0]
+
+[charaFace I 4]
+[charaFadein I 0.1 0,0]
+
+[wt 1.0]
+
+[charaFadeout R 0.5]
+[charaFadeout G 0.5]
+[charaFadeout D 0.5]
+[charaFadeout H 0.5]
+
+[charaMove J -350,0 3.5]
+[charaMove B 300,0 3.5]
+[charaMove I -50,0 3.5]
+[charaMove K 50,-200 3.5]
+
+[wt 2.4]
+
+[charaFadeout I 0.5]
+[charaFadeout B 0.5]
+[charaFadeout J 0.5]
+[charaFadeout K 0.5]
+[wt 1.0]
+
+[se ad13]
+[wt 0.3]
+
+[charaPut Q 1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk L]
+[charaFace L 16]
+[charaFadein L 0.1 1]
+＠ゴルドルフ
+あー、[%1]。[r]ちょっといいかね？
+[k]
+
+？1：はい？
+？！
+
+[bgm BGM_MAP_41 0.1]
+
+＠ゴルドルフ
+今、この世界で一番楽しめる場所と、[r]楽しめるであろう人間たち（例外あり）がいるとしたら。
+[k]
+
+＠ゴルドルフ
+そこに行きたいかね、ワンジナは。
+[k]
+
+[messageOff]
+
+[charaLayer A sub #A]
+[charaLayer M sub #A]
+
+[charaLayer J sub #B]
+[charaLayer O sub #B]
+
+[charaDepth M 1]
+[charaDepth A 2]
+
+[charaDepth O 1]
+[charaDepth J 2]
+
+[charaScale O 1.1]
+[charaScale A 1.2]
+[charaScale M 1.1]
+[charaScale J 1.2]
+
+[subCameraFilter #A maskEdge cut359_mask10 5 255,255,255,0]
+[subCameraFilter #B maskEdge cut359_mask16 5 255,255,255,0]
+
+[charaTalk A,J]
+[charaFace A 4]
+[charaFadeinFSL A 0.1 90,180]
+[charaFadein M 0.1 300,-30]
+
+[charaFace J 4]
+[charaFadeinFSR J 0.1 -60,180]
+[charaFadein O 0.1 -300,-30]
+
+[subRenderFadein #A 0.4 -500,-200]
+[subRenderFadein #B 0.4 500,-200]
+
+[subRenderMove #A -450,-200 0.4]
+[subRenderMove #B 450,-200 0.4]
+[wait subRenderMove]
+[wt 0.2]
+
+＠ワンジナ=spot[A,J]
+[f large]行きたい！！
+[k]
+
+[messageOff]
+
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+
+[subRenderMove #A -500,-200 0.4]
+[subRenderMove #B 500,-200 0.4]
+[wait subRenderMove]
+[wt 0.5]
+
+[charaFace L 18]
+＠ゴルドルフ
+だよね。[r]……苦渋の決断だが……。
+[k]
+
+[charaFace L 16]
+＠ゴルドルフ
+[%1]、[r]案内してあげなさい。[#ウチ]に。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout M 0.1]
+
+[charaFadeout J 0.1]
+[charaFadeout O 0.1]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut Q 2000,2000]
+
+[charaLayer J normal]
+[charaLayer O normal]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……ウチに……[wt 0.5][charaFace B 2]ウチ！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaScale O 1.4]
+[charaScale A 1.4]
+[charaScale M 1.4]
+[charaScale J 1.4]
+
+[charaDepth M 1]
+[charaDepth A 2]
+[charaDepth O 1]
+[charaDepth J 2]
+
+[charaLayer A sub #A]
+[charaLayer M sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask15 5 255,255,255,0]
+
+[charaTalk off]
+[messageOff]
+
+[charaFace A 11]
+[charaFadein A 0.1 -60,150]
+[charaFadein M 0.1 350,-160]
+
+[charaFace J 11]
+[charaFadein J 0.2 250,50]
+[charaFadein O 0.2 -110,-270]
+
+[charaMove A -60,200 0.3]
+[charaMove M 350,-122 0.3]
+
+[charaMove J 250,0 0.3]
+[charaMove O -110,-320 0.3]
+
+[subRenderFadein #A 0.2 -250,-200]
+[wt 0.6]
+
+＠ワンジナ
+[FFFFFF]？　？　？[-]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStopEnd BGM_MAP_41 2.0]
+[wait fade]
+[soundStopAllEnd]
+[end]

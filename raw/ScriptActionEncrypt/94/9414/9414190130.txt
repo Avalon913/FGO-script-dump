@@ -1,0 +1,796 @@
+
+
+＄94-14-19-01-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257800 1 マシュ]
+[charaSet B 1098257310 1 ダ・ヴィンチ]
+[charaSet C 1098255110 1 ゴルドルフ]
+[charaSet D 1098158340 1 ネモ]
+[charaSet E 1098124800 1 ？？？]
+[charaSet F 1098124800 1 ？？？]
+[charaScale F 1.7]
+[charaFilter F silhouette 00000080]
+[charaRollAxis F y 180 0.1]
+
+[sceneSet G 244310 1]
+[charaScale G 1.4]
+[sceneSet H 244310 1]
+[charaScale H 1.4]
+[sceneSet I 244360 1]
+[charaScale I 1.3]
+[sceneSet J 244370 1]
+[charaScale J 1.3]
+[sceneSet K 244000 1]
+[charaScale K 1.35]
+[sceneSet L 244100 1]
+[charaScale L 1.01]
+[sceneSet M 244100 1]
+[charaScale M 1.01]
+
+[charaSet S 98115000 1 エフェクト用1]
+[charaSet T 98115000 1 エフェクト用2]
+[charaSet U 98115000 1 エフェクト用3]
+[charaPut S 2500,2500]
+[charaEffect S bit_talk_10_LowLevel]
+
+[scene 244100]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+[wt 0.3]
+
+[se ad789]
+[se ade393]
+[seVolume ade393 0 0.5]
+[se ad295]
+[seVolume ad295 0 0.5]
+[shake 0.04 5 4 1.0]
+[wt 0.7]
+[shake 0.03 3 2 1.0]
+[wt 0.8]
+[seStop ade393 2.0]
+[seStop ad295 2.0]
+[shake 0.02 2 1 1.5]
+[wt 2.7]
+
+？1：やった、倒せたーーー！
+？2：まさか、倒せたの[&か:]！？
+
+？！
+
+[bgm BGM_MAP_55 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠マシュ
+敵[#遺分體:エレメンツ]、再起動ありません！
+[k]
+
+[charaFace A 17]
+
+＠マシュ
+ラシュ[line 3]いえ、あの山から現れた時は[r]思考が真っ白になったというか、
+[k]
+
+＠マシュ
+なぜあんな登場をしたのか気になって仕方が[r]ありませんでしたが、理性を[#保:たも]った我々の勝利です！
+[k]
+
+＠マシュ
+見ていてくれましたか、ゴルドルフ新所長！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+ん？　なにかなキリエライト。[r]さっきまでティータイムを[#愉:たの]しんでいてね。
+[k]
+
+＠ゴルドルフ
+すまないがここ30分、現実から目を離していた。[r]なので私は何も見ていない。いいね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+私もゴルドルフくんに[#倣:なら]いたいところだが[r]解析班としてそうはいかない。
+[k]
+
+＠ダ・ヴィンチ
+油断は禁物だ[%1][&君:ちゃん]！[r]なぜなら、
+[k]
+
+？1：大統領は倒されても３分間、活動できる！
+
+？！
+
+[charaFace B 14]
+
+＠ダ・ヴィンチ
+その通り！
+[k]
+
+＠ダ・ヴィンチ
+キャプテン、ボーダーの高度を上げて！[r]グランマリーの状態を確認するんだ！
+[k]
+
+＠ダ・ヴィンチ
+万が一にも立ち上がられたら、[r]今度はボーダーを直接攻撃してくるかもしれない！
+[k]
+
+[charaTalk E]
+[bgmStop BGM_MAP_55 2.0]
+
+＠？？？
+しないわよそんなコト！[r]あのね、大統領をなんだと思っているの！
+[k]
+
+？1：！　今の声は！
+？2：下からだ！
+
+？！
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.7 1.0]
+[wait wipe]
+
+[subCameraOn 4]
+[charaLayer G sub #A]
+[charaLayer H sub #A]
+[charaLayer L sub #B]
+[charaLayer B sub #B]
+[charaLayer S sub #B]
+[charaLayer M sub #C]
+[charaLayer A sub #C]
+[charaLayer I sub #D]
+[charaLayer J sub #D]
+
+[subRenderDepth #C 1]
+[subRenderDepth #D 2]
+
+[subCameraFilter #A normal]
+[subCameraFilter #B maskEdge cut359_mask12 5 255,255,255,255 0]
+[subCameraFilter #C maskEdge cut359_mask11 5 255,255,255,255 0]
+[subCameraFilter #D normal]
+[subRenderScale #A 1.01]
+[subRenderScale #D 1.01]
+
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth H 2]
+[charaFadein G 0.1 -150,-350]
+[charaFadein H 0.1 260,-130]
+
+[charaDepth L 1]
+[charaDepth B 2]
+[charaDepth S 3]
+[charaFace B 33]
+[charaFadein L 0.1 -300,100]
+[charaPut B -480,250]
+[charaPut S -480,250]
+
+[charaDepth M 1]
+[charaDepth A 2]
+[charaFadein M 0.1 300,100]
+[charaFace A 11]
+[charaFadein A 0.1 490,230]
+
+[charaDepth I 2]
+[charaDepth J 1]
+[charaFadein I 0.1 -90,-350]
+[charaFadein J 0.1 -90,-350]
+
+[scene 244300]
+
+[subRenderFadein #A 0.1 0,0]
+[cameraMove 0.1 -20,-15 1.05]
+[wt 1.0]
+
+[charaMove H 0,-300 20.0]
+[se ade393]
+[seVolume ade393 0 0]
+[seVolume ade393 0.7 0.2]
+[wipein rectangleStripUpToDown 0.7 1.0]
+[wait wipe]
+
+[wt 2.5]
+
+
+[charaFadeout H 1.0]
+[charaMoveScale G 1.2 10.0]
+[charaMove G -120,-300 10.0]
+[wt 3.0]
+[seStop ade393 2.0]
+[cameraMoveEase 0,0 1.7 easeOutSine 1.01]
+[subRenderFadeout #A 1.0]
+[wt 1.2]
+[charaFadeout G 0.1]
+[wt 1.0]
+[sceneSet G 244310 1]
+[charaScale G 1.4]
+[sceneSet H 244310 1]
+[charaScale H 1.4]
+
+[bgm BGM_EVENT_131 0.1]
+
+[scene 244330 0.3]
+
+＠グランマリー
+そりゃあ死ぬほど[#頑張:がんば]れば立ち上がれるけど、[r][#頑張:がんば]れないから負けたんじゃない！
+[k]
+
+＠グランマリー
+勝負はそっちの勝ち！　私の負け！[r][#正々堂々:せいせいどうどう]と戦っての結果なら受け入れます！
+[k]
+
+[scene 244340 0.3]
+
+＠グランマリー
+心の底から悔しいけど、それでヤケになって[r]自爆して道連れにしたりするものですか！
+[k]
+
+＠グランマリー
+だって私は『喜』の[#遺分體:エレメンツ]！[r]しんどい努力とかぜっっったいにしないからね！
+[k]
+
+？1：大統領[line 3]！
+？2：なんて立派な決意表明なんだ……！
+
+？！
+
+[scene 244350 0.3]
+
+＠グランマリー
+フッ。ようやく尊敬の視線を向けたな[r][%1]。
+[k]
+
+＠グランマリー
+恥ずかしがらなくてもよい。[r]人間は偉大なものに憧れるものだ。
+[k]
+
+＠グランマリー
+それでこそ大地を[r]ドコドコ揺らした甲斐があるというもの。
+[k]
+
+＠グランマリー
+私の偉大さ、骨身にまで沁みたようね。[r]今なら私の執務室に招待してやってもいいぞ？
+[k]
+
+
+？1：それはいいです
+？2：それよりスコアをください
+
+？！
+
+
+[scene 244340 0.3]
+
+＠グランマリー
+なによ、かつてないインパクトだったでしょう！？[r]バトル内容についてもっと熱く語りなさいよ！？
+[k]
+
+＠グランマリー
+強かったとか凄かったとか見惚れちゃったとか[r]感動したとか癖になったとかあと強かったとか、
+[k]
+
+＠グランマリー
+ほら、色々あるでしょう？[r]ないの？　私、最大最強の[#遺分體:エレメンツ]なのに？
+[k]
+
+＠グランマリー
+くっ、私の財産だけが目当てだったというワケ！？[r]これだから地球人は油断ならない！
+[k]
+
+[scene 244320 0.3]
+
+＠グランマリー
+もういい、大統領[#辞:や]める！[r]ここで消えるから貴様たちは先に行け！
+[k]
+
+＠グランマリー
+クラススコアなら私の[#残骸:メダル]のオマケに[r]付けてあげるわ！　それでいいでしょ！
+[k]
+
+[charaTalk B]
+[subRenderFadeinFSSideL #B 0.3 120,-180]
+[subRenderMoveFSSideL #B 100,-200 0.3]
+[wt 0.3]
+
+＠ダ・ヴィンチ
+うーん、とてもやられた側に見えない……[r]元気がありあまってる……。
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.2]
+[wt 0.2]
+
+[charaTalk A]
+[subRenderFadeinFSSideR #C 0.3 -120,-180]
+[subRenderMoveFSSideR #C -100,-200 0.3]
+[wt 0.3]
+
+＠マシュ
+待ってください、グランマリーさん。
+[k]
+
+＠マシュ
+あなたは戦いでは手加減こそされませんでしたが、[r]まだ余力が残っているように見えます。
+[k]
+
+
+＠マシュ
+なのになぜ、こうして大人しく[r]負けを認めてくださるのですか？
+[k]
+
+[charaTalk E]
+[scene 244360 0.3]
+
+＠E：グランマリー
+フン。そりゃあ楽しかったからよ。[r]満足したから消えてあげるの。
+[k]
+
+[messageOff]
+[charaMove I -190,-300 35.0]
+[charaMove J -190,-300 35.0]
+[subRenderFadein #D 0.6 0,0]
+[wt 1.0]
+[subRenderFadeout #C 0.1]
+[scene 244370]
+[charaFadeout I 0.3]
+
+＠グランマリー
+一つ教えてやろう、[r]マシュ、[%1]。
+[k]
+
+＠グランマリー
+私たち[#遺分體:エレメンツ]は別個体だが、[r]得た情報は共有しているのだ。
+[k]
+
+＠グランマリー
+確かに私は[#頑張:がんば]れば[r]もうちょっとは戦えるが、
+[k]
+
+＠グランマリー
+貴様たちはそんな私より、[r]しぶとく長く戦える事を知っている！
+[k]
+
+＠グランマリー
+長期戦にしたところで勝率は[#五分五分:ご　ぶ　ご　ぶ]だろう！[r]やる価値はあるがしんどい事に変わりは無い！
+[k]
+
+＠グランマリー
+私は『喜』の[#遺分體:エレメンツ]！[r]そういう不愉快な事はしないのだ！
+[k]
+
+[messageOff]
+[subRenderFadeout #D 0.8]
+[wt 1.3]
+
+？1：今までの[#遺分體:エレメンツ]と共有……
+？2：それって同一人物ってコトじゃん！
+
+？！
+
+[scene 244380 0.3]
+
+＠グランマリー
+！
+[k]
+
+＠グランマリー
+いや、そう単純な話ではない、んじゃない？[r]それぞれ優先する感情が違うんだし。
+[k]
+
+＠グランマリー
+貴様たちのパーソナリティになんて[r]まったく興味も関心もなかったし。
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+[subRenderFadeinFSSideL #B 0.2 120,-200]
+
+＠ダ・ヴィンチ
+そのわりには[%1][&君:ちゃん]と[r]マシュの名前を口にしていたね？
+[k]
+
+[charaTalk E]
+[scene 244340 0.3]
+
+＠E：グランマリー
+その方が効率的だからだ！[r]対決を楽しみにしていたから覚えていたのではない！
+[k]
+
+[subRenderFadeout #B 0.2]
+
+＠グランマリー
+その証拠に、ほら、登場シーン！[r]あれは岩風呂の最中だったの！　わかる？
+[k]
+
+＠グランマリー
+ひとりでリラックスしていたところに[r]やって来たのが貴様たち！
+[k]
+
+＠グランマリー
+あと７日でキラッキラに[#整:ととの]う予定だったのに、[r]よくも邪魔をしてくれたわね！
+[k]
+
+？1：天然のサウナだった[&のか:んだ]……
+？2：なんてこと……７日待てば良かった……
+
+？！
+
+[scene 244380 0.3]
+
+＠グランマリー
+そ、そうよ。[r]その後だったら負けなかったんだから。
+[k]
+
+＠グランマリー
+攻撃手段もあと数パターン増えていたわ。[r]もちろん残虐性もね。
+[k]
+
+[bgmStop BGM_EVENT_131 2.0]
+
+？1：でも、その状態でも、
+
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：ストーム・ボーダーには攻撃しなかった、でしょ？
+
+？！
+
+
+[bgm BGM_EVENT_161 0.1]
+
+[scene 244390 0.3]
+
+＠グランマリー
+……そうかもね。[r]それ、大切なものの気がしたから。
+[k]
+
+＠グランマリー
+あと武器として欲しい。[r]なんか大地の力を感じるのよね、その戦艦。
+[k]
+
+[charaTalk A]
+[charaFace A 17]
+[subRenderFadeinFSSideR #C 0.2 -120,-200]
+
+＠マシュ
+！　聖剣グランマリー、というコトですね、[r]分かります！
+[k]
+
+[charaTalk E]
+[scene 244400 0.3]
+
+＠E：グランマリー
+[FFFFFF]？[-]　それランチャーでしょ？[r]振り回さないわよ？　前もそうだったで[line 3]
+[k]
+
+[scene 244360 0.3]
+
+＠E：グランマリー
+いえ、なんでも。[r]なんでもありません。
+[k]
+
+[subRenderFadeout #C 0.2]
+
+[scene 244300 0.3]
+
+＠グランマリー
+ともかくだ！[r]『喜』の[#遺分體:エレメンツ]は敗れた！
+[k]
+
+＠グランマリー
+まだ戦いたいというなら相手になってあげない[r]事もないけど、疲れたから今回は終わり！
+[k]
+
+[scene 244360 0.3]
+
+＠グランマリー
+ここまできたら最後までやり遂げたら？[r]すべての[#遺分體:エレメンツ]を撃破しなさいよ。
+[k]
+
+＠グランマリー
+最強である私を倒したんだから、[r]『怒』の[#遺分體:エレメンツ]も倒せるでしょ。
+[k]
+
+＠グランマリー
+アレは今までの[#遺分體:エレメンツ]と違って、[r]本当に貴方たちとのメモリーを持たない個体。
+[k]
+
+＠グランマリー
+哀しみも喜びも、ましてや楽さえない侵略者。[r]倒される事が唯一の救いよ。
+[k]
+
+＠グランマリー
+……まあ、そんな事を貴方たちに教えても[r]仕方がないか。寝よ寝よ！
+[k]
+
+[scene 244320 0.3]
+
+＠グランマリー
+じゃあね、地球人類！[r]本音言うと楽しかった！
+[k]
+
+[scene 244300 0.3]
+
+＠グランマリー
+逃げずに立ち向かってくれてありがとう、[r]とだけ言っておくわ！
+[k]
+
+[bgmStop BGM_EVENT_161 2.0]
+
+
+[messageOff]
+[se ade393]
+[seVolume ade393 0 0]
+[seVolume ade393 0.5 0.5]
+[shake 0.02 2 1 1.0]
+[wt 0.5]
+[shake 0.05 3 2 0]
+[wt 1.5]
+
+[se ad297]
+[seVolume ad297 0 0]
+[seVolume ad297 0.3 0.7]
+[cueSe SE_24 24_ade975 0.5 0.3]
+[charaDepth G 1]
+[charaDepth H 2]
+[charaFadein H 0.6 260,-150]
+[charaMove H 0,-300 10.0]
+[wt 0.5]
+[charaDepth T 3]
+[charaDepth U 4]
+[charaPut T 1]
+[charaEffect T bit_talk_rubble02]
+[wt 0.5]
+[charaFadein G 0.1 -140,-350]
+[wt 3.5]
+[charaMove G -240,-400 3.0]
+[charaFadeout H 1.0]
+[wt 4.0]
+
+[seStop ade393 0.5]
+[seStop ad297 0.5]
+[cueSeStop 24_ade975 0.5]
+
+[shake 0.05 15 15 2.0]
+[se ad296]
+[se ad295]
+[se ad640]
+[se ad789]
+[charaPut U 1]
+[charaEffect U bit_talk_dust_cloud]
+[wt 1.5]
+[shake 0.03 3 2 1.0]
+[wt 2.0]
+[seStop ad296 0.2]
+[wt 1.0]
+[seStop ad295 2.5]
+[seStop ad640 2.5]
+[wt 1.0]
+
+[wipeout rectangleStripUpToDown 0.7 1.0]
+[wait wipe]
+
+[charaEffectDestroy T bit_talk_rubble02]
+[charaEffectDestroy U bit_talk_dust_cloud]
+
+[charaFadeout G 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaPut S 2500,2500]
+[charaLayer L normal]
+[charaLayer B normal]
+[charaLayer S normal]
+[charaLayer M normal]
+[charaLayer A normal]
+[charaLayer I normal]
+[subCameraOff]
+
+[scene 244100]
+[wt 1.5]
+
+[wipein rectangleStripDownToUp 0.7 1.0]
+[wait wipe]
+[wt 0.5]
+
+？1：終わった……
+？2：さらば、地のグランマリー……
+
+？！
+
+[bgm BGM_MAP_64 0.1]
+
+[charaPut S 1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ネモ
+[#遺分體:エレメンツ]の熱源停止を確認した。[r]グランマリーが起き上がる事はないだろう。
+[k]
+
+[charaFace D 2]
+
+＠ネモ
+おつかれ、[%1]、マシュ。[r]管制室に戻ってきてくれ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+いや特異点はまだ消えていなくない？[r]倒せたの、アレ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 31]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+まあ本人は満足したっぽいしいいんじゃない？[r]元から害のない[#遺分體:エレメンツ]だったし。
+[k]
+
+＠ダ・ヴィンチ
+時間経過で自然消滅する事もシバで判明している。
+[k]
+
+[charaFace B 0]
+
+＠ダ・ヴィンチ
+余分な戦いではあったけど、[r]おかげで大量の魔力資源を入手できた。
+[k]
+
+＠ダ・ヴィンチ
+これで新しいシステムの完成も、[r]決戦までにギリギリ間に合いそうだ。
+[k]
+
+[charaFace B 17]
+
+＠ダ・ヴィンチ
+残る[#遺分體:エレメンツ]はあと一体。[r]はりきって攻略しよう！
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_64 2.0]
+[wait fade]
+
+[cameraHome 0.1]
+[charaFadeout B 0.1]
+[charaPut S 2000,2000]
+[charaEffectDestroy S bit_talk_10_LowLevel]
+
+
+[scene 244000]
+
+[pictureFrameTop cut063_cinema]
+
+[charaDepth E 1]
+[charaDepth K 2]
+[charaDepth F 3]
+[wt 3.0]
+
+[se ad309]
+[seVolume ad309 0 0]
+[seVolume ad309 2.0 0.3]
+[fadein black 2.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.4 0,-50]
+[wt 0.4]
+
+＠？？？
+………………。[seStop ad309 1.5]
+[k]
+
+[bgm BGM_EVENT_38 0.1]
+
+[messageOff]
+[charaFace F 0]
+[charaFadein K 1.0 90,-400]
+[charaFadein F 1.0 50,-50]
+[charaMove K 190,-400 60.0]
+[charaMove F 200,-50 60.0]
+[wt 1.5]
+
+＠
+大渓谷の崖の上。去っていくストーム・ボーダーを[r]見送るように、異星の巫女は[#佇:たたず]んでいた。
+[k]
+
+＠
+火と水の大統領特異点は[#遺分體:エレメンツ]の[r]消滅と共に消えたが、
+[k]
+
+＠
+この大渓谷はいまだ残っている。[r]『喜』の[#遺分體:エレメンツ]が健在である証明だ。
+[k]
+
+＠
+しかし『喜』の[#遺分體:エレメンツ]はこのまま眠り続け、[r]やがて訪れる天幕の消滅と共に消えるだろう。
+[k]
+
+＠
+それらの事象は巫女には関係のない事だ。[r]カルデアス地球を観測するだけの巫女にとって、
+[k]
+
+＠
+カルデアの勝利であろうと[#遺分體:エレメンツ]の勝利であろうと[r]マイナスの要素はない。
+[k]
+
+＠
+しかし。
+[k]
+
+[messageOff]
+[charaFadeout K 0.6]
+[charaFadeout F 0.6]
+[wt 1.1]
+
+[charaFaceFade E 9 0.3]
+[charaMoveEase E 0,-54 0.6 easeOutSine]
+[wt 0.6]
+
+＠？？？
+………………はあ。
+[k]
+
+[cameraMove 30.0 0,-25 1.15]
+
+＠
+装置にすぎない巫女の顔には、[r]明らかに落胆の色があった。
+[k]
+
+＠
+『ここだけは見られたくなかった』[r]『だから進むなと警告したのに』
+[k]
+
+＠
+そう、自分の至らなさを反省するように。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.5]
+[bgmStop BGM_EVENT_38 2.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,845 @@
+
+＄91-40-47-01-3-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4047001 1 コンスタンティノス]
+[charaSet B 1047000 1 渡辺綱]
+[charaSet C 1098257310 1 ダ・ヴィンチ]
+[charaSet D 98025000 1 ？？？]
+[charaSet E 98021000 1 市民]
+[charaSet F 98021100 1 市民]
+[charaSet G 1098120600 1 市民]
+[charaSet H 1098234320 1 モブサーヴァント]
+[charaSet I 1098234420 1 モブサーヴァント]
+[charaSet J 1098234620 1 モブサーヴァント]
+[charaSet K 4047001 1 コンスタンティノス]
+[charaScale K 1.2]
+[charaSet L 1098260500 1 コンスタンティノープル]
+[sceneSet O 152200 1]
+[charaScale O 1.2]
+[sceneSet P 152200 1]
+[charaScale P 1.2]
+
+[sceneSet Q 115200 1]
+[charaScale Q 1.2]
+[sceneSet R 154501 1]
+[charaScale R 1.2]
+
+[charaSet S 3019001 1 エフェクト用1]
+[charaSet T 3019001 1 エフェクト用2]
+[charaSet U 3019001 1 エフェクト用2]
+
+[imageSet V back10000 1 1]
+[charaScale V 1.01]
+[imageSet W back10000 1 1]
+[charaScale W 1.01]
+[charaSet X 3019001 1 エフェクト用3]
+[charaSet Y 3019001 1 エフェクト用4]
+
+[charaTalk depthOff]
+[charaDepth O 2]
+[charaDepth P 1]
+[charaDepth E 4]
+[charaDepth F 4]
+[charaDepth G 3]
+[charaDepth H 3]
+[charaDepth I 3]
+[charaDepth J 3]
+[charaDepth K 4]
+[charaDepth S 9]
+[charaDepth T 7]
+[charaDepth X 8]
+[charaDepth Y 4]
+[charaDepth Q 3]
+[charaDepth R 2]
+
+[scene 107900]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaEffect U bit_talk_10_LowLevel]
+[charaPut U 1200,1200]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_5 0.1]
+[charaEffect D bit_talk_atomization]
+[wt 0.5]
+[charaFadeout D 1.0]
+[cueSe Battle ba6]
+[wt 3.0]
+[charaEffectDestroy D bit_talk_atomization]
+
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+
+＠コンスタンティノス
+倒すには倒したが……こいつ……。[r]これは……私……か……？
+[k]
+
+？1：戦っている姿は確かに……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut U 1]
+[charaTalk C]
+[charaFace C 34]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+確かにコンスタンティノス、[r]キミの霊基パターンと酷似していた。
+[k]
+
+＠ダ・ヴィンチ
+数値的には圧倒的に下回っているけどね。
+[k]
+
+[charaFadeout C 0.1]
+[charaPut U 1200,1200]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠コンスタンティノス
+しかしよりによって私か。[r]だとするならば、これは[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.0]
+[charaEffect X bit_talk_blackfire_all_fs]
+[cueSe SE_23 23_ade909]
+[cueSeVolume 23_ade909 0 0.7]
+[wt 2.0]
+[charaFace A 8]
+
+[bgm BGM_EVENT_122 0.1]
+
+＠コンスタンティノス
+くっ。[r]しまった、罠か……！
+[k]
+
+＠コンスタンティノス
+マスター、離れろ！　綱、後を頼む！
+[k]
+
+[messageOff]
+[wt 0.2]
+
+？1：コンスタンティノス！
+？！
+
+
+[se ad199]
+
+[wt 2.5]
+
+[fadeout black 0.5]
+[wait fade]
+[bgmStop BGM_EVENT_122 1.0]
+[seStop ad199 2.0]
+[cueSeStop 23_ade909 2.0]
+
+[scene 10000]
+[charaFadeout A 0.1]
+[charaEffectDestroy X bit_talk_blackfire_all_fs]
+
+[wt 2.5]
+
+＠？？？
+ああ、良かった。[r]やっと見つけることができました。
+[k]
+
+＠コンスタンティノス
+……！
+[k]
+
+[messageOff]
+
+[overlayFadein V 1.0 0,-738]
+[overlayFadein W 1.0 0,738]
+
+
+[charaPut Y 1]
+[charaEffect Y bit_talk_diremond_dust02 0,0 H]
+
+[bgm BGM_EVENT_129 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[wt 1.5]
+
+
+[charaFadein Q 1.0 50,-200]
+[charaMove Q -50,-200 20.0]
+
+[wt 1.0]
+
+
+[charaFadein R 0.1 50,-200]
+[charaMove R -50,-200 20.0]
+
+＠
+華のように鮮やかに。[r]咲き誇れ君よ。
+[k]
+
+＠
+貴方はそう言って、私と共にあり続けました。[r]どんな時も、いついかなる時も。
+[k]
+
+＠
+病める時も健やかなる時も、あらゆる時を、[r]私と貴方は共に過ごしたのです。
+[k]
+
+[messageOff]
+
+[se ad138]
+[wt 0.5]
+
+
+[fadeout white 1.5]
+[bgm BGM_EVENT_129 1.5 0.5]
+[wait fade]
+
+[charaEffectDestroy Y bit_talk_diremond_dust02]
+[charaFadeout Q 0.1]
+
+[charaPut S 0,0]
+[charaEffect S bit_talk_sparks_fs]
+
+[wt 1.0]
+
+[fadein white 1.5]
+[bgm BGM_EVENT_129 1.5 1.0]
+[cueSe SE_21 21_ad1114]
+[seVolume 21_ad1114 0 0]
+[seVolume 21_ad1114 1.5 0.3]
+[wait fade]
+
+[wt 0.7]
+
+
+＠
+[line 3]そう。[r]死が二人を[#別:わか]つまで、ずっと共にいました。
+[k]
+
+＠
+絆は断ち切られず、ずっと続いている。[r]貴方の宝具がそれを証明してくれている。
+[k]
+
+＠
+でも、もうそれは[#旧:ふる]いのです。[r]私は新しい体を得たのです。
+[k]
+
+[bgmStop BGM_EVENT_129 2.0]
+
+＠
+さあ、今度こそ。今度こそは。
+[k]
+
+＠
+どんな災害にも、どんな国にも、どんな暴虐にも[r]負けない。正しい[#私]を作りましょう―――
+[k]
+
+[messageOff]
+[cueSe SE_24 24_adm98]
+[fadeout black 2.0]
+[seStop 21_ad1114 2.0]
+[wait fade]
+
+[charaFadeout R 0.1]
+
+
+[charaEffectDestroy S bit_talk_sparks_fs]
+[wt 1.0]
+
+
+[fadein black 0.2]
+[wait fade]
+
+[wipeout openEye 0.2 1.0]
+[wait wipe]
+
+[scene 152200]
+[blur lens 0 2 10]
+[wt 0.15]
+
+[wipein openEye 0.3 1.0]
+[wait wipe]
+
+[wipeout openEye 0.3 1.0]
+[wait wipe]
+
+[blurOff lens 0.1]
+[wt 0.45]
+
+[wipein openEye 1.5 1.0]
+[wait wipe]
+[wt 1.0]
+
+[charaFadein O 0.6 30,-200]
+[charaFadein H 0.6 300,-50]
+[charaFadein I 0.6 0,-50]
+[charaFace H 0]
+[charaFace I 0]
+[wt 1.0]
+
+[se ad133]
+[charaFace G 1]
+[charaFadein G 0.4 -650,-50]
+[charaMoveEase G -350,-50 1.8 easeOutQuart]
+[wt 2.0]
+[seStop ad133 0.5]
+
+[charaFace G 1]
+[charaMoveReturn G -350,-43 0.3]
+[wt 0.4]
+[charaMoveReturn G -350,-43 0.3]
+[wt 1.4]
+
+
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+[charaFace E 0]
+[charaFadein E 0.4 350,-50]
+[charaFace F 0]
+[charaFadein F 0.4 -350,-50]
+
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+[charaMoveReturn E 350,-43 0.3]
+[wt 0.4]
+[charaMoveReturn F -350,-43 0.3]
+[wt 2.5]
+
+[charaFadeout J 0.4]
+[charaFadeout O 0.4]
+[charaFadeout F 0.4]
+[charaFadeout E 0.4]
+[wt 1.0]
+
+＠コンスタンティノス
+ここは……。
+[k]
+
+[bgm BGM_EVENT_95 0.1]
+
+＠？？？
+ここが[#貴方]の[#都市:もの]です。[r]我が皇帝。
+[k]
+
+[charaFace A 2]
+
+＠コンスタンティノス
+何者だ、姿を見せよ！
+[k]
+
+＠？？？
+ここは貴方の夢。貴方の終着点。[r]永遠の統治、永遠の繁栄。
+[k]
+
+＠？？？
+それが、聖杯に託した願いだったでしょう？
+[k]
+
+[charaFace A 8]
+
+＠コンスタンティノス
+……！
+[k]
+
+＠？？？
+名は貴方の都、コンスタンティノープル。[r]貴方の住まう都市、貴方が愛すべき都市なのです。
+[k]
+
+[charaFace A 4]
+
+＠コンスタンティノス
+私の[line 3]都。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth E 2]
+[charaDepth F 2]
+
+[charaTalk E]
+[charaFadein G 0.1 0,-70]
+[charaFadeinFSR E 0.1 256,-50]
+[charaFadeinFSL F 0.1 -256,-50]
+
+＠E：市民
+ああ、今日も幸福であることに感謝します！[r]我が皇帝！
+[k]
+
+[clear]
+[charaTalk F]
+
+＠F：市民
+感謝の祈りを。[r]神と、そして神に等しい貴方に！
+[k]
+
+[clear]
+
+[charaTalk G]
+
+
+＠G：子供
+ねえ、遊ぼうよ！　みんなで！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth O 4]
+[charaDepth K 5]
+[charaScale O 1.4]
+[charaFace K 4]
+[charaFadein O 0.6 0,-220]
+[charaFadein K 0.6 0,30]
+[charaMove O 0,-300 10.0]
+[charaMove K 0,-50 10.0]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+
+＠K：コンスタンティノス
+……。[r]……[wt 1.0][charaFace K 7]ああ、なるほど。
+[k]
+
+＠
+[line 3]幸福な都市、幸福な国、幸福な人々。[r]私の[#願い:ユメ]はかくも大仰で、ありきたりだった。
+[k]
+
+＠
+己を削る価値があり、己を駆り立てる価値があった。
+[k]
+
+[charaFace K 4]
+
+＠
+取り戻すのか。[r]取り戻していいのか。この、幸せを。
+[k]
+
+[charaTalk on]
+
+＠？？？
+もちろんです。
+[k]
+
+[charaFace K 1]
+
+＠K：コンスタンティノス
+[line 3]そうだな、そうなのだろう。
+[k]
+
+＠
+[#新しい]この都で皇帝として善政を敷き、[r]今度こそどの国にも負けぬ都市として栄華を誇る。
+[k]
+
+＠
+素晴らしい願いだ。失敗した執政者ならば、[r]誰もが一度は夢見るだろう。
+[k]
+
+＠
+永遠に繁栄し続ける、平和な国。
+[k]
+
+[charaFace K 7]
+
+＠K：コンスタンティノス
+……。[r]……。
+[k]
+
+＠K：コンスタンティノス
+……。[r]……。
+[k]
+
+＠
+当たり前の答えを口に出すのに、[r]少しばかりの時間を必要とした。
+[k]
+
+[charaFace K 4]
+
+＠K：コンスタンティノス
+……でも、それはいけないことだ。
+[k]
+
+＠
+名残惜しさが露わになってないか、[r]それを不安に思いつつ、私はそう告げた。
+[k]
+
+＠
+彼女の想い、彼女の期待を裏切るのは胸が痛む。[r]だが[line 3]
+[k]
+
+＠
+君の夢は、もうとっくに崩れ去っている。[r]私の夢は、もうそれではないのだから。
+[k]
+
+[bgmStop BGM_EVENT_95 2.0]
+
+＠？？？
+……！
+[k]
+
+[charaFace K 2]
+
+＠K：コンスタンティノス
+マスター、聞こえるな！
+[k]
+
+[messageOff]
+
+[pictureFrame]
+[charaMove O 0,-270 1.0]
+[charaMove K 0,-20 1.0]
+[charaMove V 0,-850 1.0]
+[charaMove W 0,850 1.0]
+[wt 1.0]
+
+[charaFadeout V 0.1]
+[charaFadeout W 0.1]
+
+？1：……もちろん！
+？！
+
+[bgm BGM_BATTLE_116 0.1]
+[charaFadeout K 0.4]
+[charaFadeout O 0.4]
+[wt 0.6]
+
+[se ad1053]
+[effect bit_talk_quick_slash]
+[wt 0.5]
+[cueSe SE_21 21_ade633]
+[effect bit_talk_white_string02]
+
+[wt 0.5]
+[cueSe SE_21 21_ad1122]
+[wt 1.0]
+
+[fadeout white 0.4]
+[se ad645]
+[wait fade]
+[cueSeStop 21_ad1122 0.5]
+[effectDestroy bit_talk_white_string02]
+
+
+[sceneSet O 131200 1]
+[charaScale O 1.4]
+[charaDepth O 2]
+[charaDepth K 3]
+[scene 131200]
+[wt 0.5]
+[charaTalk off]
+
+[fadein white 0.4]
+[wait fade]
+
+[charaFace B 0]
+[charaPut B 1]
+[se ad73]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect B appearanceReverse 1 0.25]
+[charaMoveReturn B 0,-5 0.4]
+[wt 0.5]
+
+＠渡辺綱
+主共々、飛び込み失礼。
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad595]
+[charaFace L 0]
+[charaPut L 1]
+[charaSpecialEffect L appearanceReverse 1 0.6]
+[wait charaSpecialEffect L]
+[charaFadein L 0.1 1]
+
+＠？？？
+おのれ……邪魔者が……！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠コンスタンティノス
+確かにこれは私の儚き[#幻想:ユメ]。[r]愛すべき人、愛すべき国、愛すべき[line 3]
+[k]
+
+[charaFace A 0]
+
+＠コンスタンティノス
+[#君]。[r]その再構築、再興が願いにある。
+[k]
+
+＠コンスタンティノス
+滅び方を平和に終わらせるのではなく、[r]もっともっと単純な願望が……ないとは、言い難い。
+[k]
+
+[charaFace A 4]
+
+＠コンスタンティノス
+だが、同時にそれが儚きものであることも[r]よく理解できているのだよ。
+[k]
+
+[charaFace A 1]
+
+＠コンスタンティノス
+私は皇帝、人を導かねばならない存在だからね。[r]儚き[#幻想:ユメ]に惑わされるようでは、やっていけないのさ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠？？？
+……！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠渡辺綱
+コンスタンティノス殿。
+[k]
+
+＠渡辺綱
+敵であることは間違いないようだが、[r]貴殿と因縁が深い様子。
+[k]
+
+＠渡辺綱
+彼女（？）は一体[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠コンスタンティノス
+彼女はコンスタンティノープル。[r][#この都市そのものだ]。
+[k]
+
+？1：都市、そのもの……
+？！
+
+[charaFadeout A 0.1]
+[charaPut U 1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+都市そのものの英霊化[line 3][r]いや、彼女は英霊に至ってはいないか。
+[k]
+
+[branchQuestNotClear lblNotClear01 3001327]
+
+＠ダ・ヴィンチ
+テノチティトランのような例がないではないけど、[r]いずれにせよ稀な現象だ……！
+[k]
+
+[label lblNotClear01]
+
+[charaFadeout C 0.1]
+[charaPut U 1200,1200]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠渡辺綱
+……なるほど、だがそれで理屈が分かる。[r]あの石壁の傷が直っていたのは……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+
+＠コンスタンティノス
+ああ、この都市は一種の生命体。[r]そして我々はその[#内側:はらのなか]なのさ。
+[k]
+
+[charaFace A 0]
+
+＠コンスタンティノス
+隠れ潜んでいた我々を探知できなかったのに[line 3]
+[k]
+
+＠コンスタンティノス
+石壁を破壊した途端すぐに探知したのは、[r]それが[#苦痛だったから]だ。
+[k]
+
+＠コンスタンティノス
+痛みが生じれば、誰だって不法侵入者に気付くだろう。[r]そこに応急処置を施すのも道理。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+
+＠コンスタンティノープル
+[line 3]どうして？
+[k]
+
+[messageOff]
+[charaFace K 7]
+[charaFadein O 0.6 200,-200]
+[charaFadein K 0.6 300,-10]
+[charaMove O 100,-200 10.0]
+[charaMove K 200,-10 10.0]
+[wt 1.0]
+
+＠コンスタンティノス
+……この都市は間違っている。[r]君も、最初から間違っている。
+[k]
+
+[charaFace K 5]
+
+＠コンスタンティノス
+都市とは、[#人が集うことで成立するもの]。[r]君は、人を集めたのではない。[#拐:かどわ]かしたのだから。
+[k]
+
+＠コンスタンティノス
+彼らは違う場所に住み、人生を営んでいたはずだ。[r]なのに、君が勝手に人生を切り替えてはどうなる？
+[k]
+
+＠コンスタンティノス
+それは永遠の都ではない。[r]ただの、広大な監獄に過ぎない。
+[k]
+
+＠コンスタンティノス
+都市は人の意志によって生まれるもの。
+[k]
+
+＠コンスタンティノス
+だからコンスタンティノープル、[r]君は[line 3]間違っているのだよ。
+[k]
+
+[messageOff]
+[charaFadeout K 0.4]
+[charaFadeout O 0.4]
+[wt 1.0]
+
+＠コンスタンティノープル
+……………………認めない。
+[k]
+
+
+＠コンスタンティノープル
+認めない、認めない、認めない……！[r]今度こそ、今度こそ……正しい[#都市:わたし]を造る！
+[k]
+
+＠コンスタンティノープル
+素晴らしい[#都市:わたし]を、華やかな[#都市:わたし]を、[r]どこよりも[#堅:つよ]い[#都市:わたし]を！
+[k]
+
+
+＠コンスタンティノープル
+受け入れてください、我が皇帝。[r][#都市:わたし]のために！
+[k]
+
+[messageOff]
+[se ad1027]
+[shake 0.05 3 2 2.3]
+[charaPut S 1]
+[charaEffect S bit_talk_voice01]
+[se ad960]
+[wt 2.3]
+
+[charaPut S 1200,1200]
+
+[charaFace K 7]
+[charaFadein O 0.6 200,-200]
+[charaFadein K 0.6 150,-10]
+[charaMoveEase O 100,-200 2.0 easeOutQuad]
+[charaMoveEase K 50,-10 2.0 easeOutQuad]
+[se ad1004]
+[wt 3.0]
+
+[charaFace K 5]
+
+＠コンスタンティノス
+[line 3]そういう訳にはいかないのだよ。[r]我が都市よ。
+[k]
+
+[charaFace K 4]
+
+
+＠コンスタンティノス
+悲しい、ことではあるのだが。
+[k]
+
+[charaFace K 7]
+
+＠コンスタンティノス
+……[wt 1.0][charaFace K 2]行こう！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_116 0.4]
+[seStop ad647 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

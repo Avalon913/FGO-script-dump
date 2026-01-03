@@ -1,0 +1,412 @@
+
+
+＄94-08-79-15-4-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11016000 1 クロエ]
+[charaSet B 1098199300 1 マシュ]
+[charaSet C 25012000 1 ヤラアーンドゥ]
+[charaSet D 1098274400 1 アルトリア・キャスター]
+[charaSet E 11016000 1 クロエ]
+[charaScale E 1.2]
+
+[sceneSet P 147903 1]
+[charaScale P 1.4]
+
+[charaDepth B 3]
+[charaDepth C 2]
+[charaDepth D 1]
+[charaDepth P 4]
+[charaDepth E 5]
+
+
+
+
+
+[scene 110102]
+
+[fadein black 1.5]
+[wait fade]
+[se ad663]
+[wt 2.0]
+[seStop ad663 2.0]
+
+[scene 110101 2.0]
+
+[wt 4.0]
+
+[fadeout black 1.5]
+[wait fade]
+
+[scene 147903]
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+
+＠マシュ
+今日もお疲れさまでした、先輩。
+[k]
+
+＠マシュ
+クロエさんも無事救出され、[r]脱稿していないサークルも残り少なくなりました。
+[k]
+
+＠マシュ
+明日のＤＡＹ６はゆっくり休んで、[r]フィナーレであるＤＡＹ７に備えましょう！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠アルトリア・キャスター
+ランスロット、トリスタンのふたりも回復して、[r]明日から復帰だって。
+[k]
+
+＠アルトリア・キャスター
+もう大した問題は起きなそうだし、[r]明日は久しぶりに調査に専念する？
+[k]
+
+[charaFace D 26]
+
+＠アルトリア・キャスター
+っていうかオベロン！[r]あのひと、絶っっっ対この件に関わってる！
+[k]
+
+＠アルトリア・キャスター
+今度こそ捕まえて知ってること全部吐かせよう！[r]白い方じゃなくて黒い方のね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ヤラアーンドゥ
+噂の『闇の精霊王』ね！[r]私もあいつには問いただしたい事があるわ！
+[k]
+
+＠ヤラアーンドゥ
+『夜の森』には行きたくないけど、[r]この際、信条のことは忘れましょう！
+[k]
+
+[charaFace C 7]
+
+＠ヤラアーンドゥ
+[line 3]というワケで、明日は『夜の森』ね？[r]特別にシャトルバスを手配しましょう！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+
+＠マシュ
+ヤ、ヤラアーンドゥさんもご機嫌で何よりです。[r]というより、もしかしてこちらにご宿泊ですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+
+＠ヤラアーンドゥ
+いいじゃない、ここまで来たらもう[r][#仕事仲間:ビジネスパートナー]でしょ、私たち？
+[k]
+
+[charaFace C 0]
+
+＠ヤラアーンドゥ
+安心して、フロントに言って[r]ベッドは増やしてもらってるから♡
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠アルトリア・キャスター
+こうなったら何言っても無駄だよマシュ。[r]ノクナレア、こういうところほんと図太いから。
+[k]
+
+[masterBranch lblBoy lblGirl]
+
+[label lblBoy]
+
+[charaFace D 0]
+
+＠アルトリア・キャスター
+そういうワケでゴメンね、[%1]。
+[k]
+
+＠アルトリア・キャスター
+あっちの寝室、わたし、マシュ、ノクナレアの[r]３人で使わせてもらいます。
+[k]
+
+[branch lblend]
+
+[label lblGirl]
+
+[charaFace D 23]
+
+＠アルトリア・キャスター
+寝室、わたしたち４人のベッドで狭くなっちゃうけど、[r]諦めて[%1]。
+[k]
+
+＠アルトリア・キャスター
+たぶん夜更けまでお喋りして、[r]明日は寝不足になっちゃうかもだけど。
+[k]
+
+[label lblend]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 2.0]
+
+[se ad570]
+[wt 1.5]
+
+？1：おや？
+？2：誰か来た？
+
+？！
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaFace E 2]
+[charaFadein P 0.6 -220,-350]
+[charaMove P -180,-350 1.0]
+[se ad93]
+
+[wt 0.5]
+[bgm BGM_EVENT_147 0.1]
+[charaFadeinFSL E 0.6 -250,-10]
+[charaMoveFSL E -200,-10 0.8]
+
+＠クロエ
+すみません、お邪魔しまーす……
+[k]
+
+[charaFadeout D 0.1]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[charaFace E 14]
+
+＠クロエ
+『編集の災害』、クロエです……。[r]このたびはたいへんご迷惑をおかけして……。
+[k]
+
+[messageOff]
+[charaFadeout P 0.6]
+[charaFadeout E 0.6]
+[wt 2.0]
+
+
+[charaFace B 13]
+
+＠マシュ
+どうぞ、中に入ってくださいクロエさん。[r]責任を感じて謝りに来てくださったのですね。
+[k]
+
+＠マシュ
+ですが、あれはクロエさんのせいではありません。[r]ひとりの[#茸の修羅:マ ッ シ ュ ラ ー]の野望によるもの。
+[k]
+
+＠マシュ
+どうか、できるだけお気に病まず。
+[k]
+
+
+？1：そう、マシュの言う通り。むしろごめん、無理をさせて
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+
+＠クロエ
+マシュ、[&お兄ちゃん:お姉ちゃん]……。[r]ありがとうございます。気が楽になりました。
+[k]
+
+？2：ビーストクロエ、可愛かった
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠クロエ
+そ、そうなの？　何をしたのか記憶にないけど、[r][&お兄ちゃん:お姉ちゃん]がそう言うなら……。
+[k]
+
+？！
+
+[bgmStop BGM_EVENT_147 2.0]
+
+[charaFace A 5]
+
+＠クロエ
+って、わたしの事はいいんです。[r]それより話しておきたい事があって。
+[k]
+
+＠クロエ
+『編集の災害』になっている時、[r]わたし、ずっと眠ってたんですよね？
+[k]
+
+＠クロエ
+その時に見ていた夢について[r]話しておきたくて。精霊の話です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+
+＠アルトリア・キャスター
+オベロンが洞窟から解き放ったっていう[r]『オーストラリアに伝わる精霊』だね。
+[k]
+
+＠アルトリア・キャスター
+いったいどんな夢を見たの？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠クロエ
+それが……うまく言葉にできない……ううん、[r][#人間:わたしたち]の[#言葉を知らない]感じだったんだけど……
+[k]
+
+[charaFace A 5]
+
+＠クロエ
+[#一生懸命:いっしょうけんめい]、何かを訴えていたんです。[r]泣きながら、[#諦:あきら]めるように。
+[k]
+
+[charaFace A 2]
+
+＠クロエ
+……街を壊したわたしが言える事じゃないんだけど、[r]あの精霊は『悪い』感情は持ってなくて、
+[k]
+
+＠クロエ
+ただ『探し物があって手を伸ばしている』……[r]そんなイメージでした。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+＠マシュ
+探し物、ですか……。[r]精霊は自然現象に近いものです。
+[k]
+
+＠マシュ
+その精霊が『手を伸ばす』のなら、[r]確かに自然災害に似た現象になりますが……。
+[k]
+
+？1：『編集の災害』で、ちょっと気になっていたんだけど
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠クロエ
+な、なんですか？　わたしがまだ聞いていない[r]トンデモ事があった、とか…？
+[k]
+
+？1：クロエって別に、炎系の魔術、使えないよね？
+
+？！
+
+[charaFace A 1]
+
+＠クロエ
+うん、使えないけど。[r]それがどうしたの？
+[k]
+
+
+
+？1：いや、憶測なんだけど仮に『災害』がなくても
+
+？！
+
+[messageOff]
+[wt 0.2]
+
+？1：最終的に街の火災は起きるんじゃないかなって
+
+？！
+
+
+
+[charaFace A 10]
+
+[wt 2.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace D 14]
+[charaFace C 17]
+[charaFace B 6]
+
+[charaFadein B 0.1 1]
+[charaFadein D 0.1 300,0]
+[charaFadein C 0.1 -300,0]
+
+[wt 2.0]
+[fadeout black 1.5]
+[bgmStopEnd BGM_EVENT_11 1.5]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]
+

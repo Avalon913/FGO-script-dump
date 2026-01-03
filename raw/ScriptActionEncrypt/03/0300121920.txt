@@ -1,0 +1,197 @@
+
+＄03-00-12-19-2-0
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 3036001 1 ブラダマンテ]
+[charaSet B 1052000 1 シャルルマーニュ]
+[charaSet C 1098235000 1 カドック]
+
+[charaSet D 1098234420 1 クラス・ランサー]
+
+[charaSet E 1098234630 1 クラス・ライダー]
+
+[charaSet F 1098234730 1 クラス・アサシン]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[charaSet G 1098235000 1 カドック_アップ用]
+[sceneSet H 151600 1]
+
+[charaScale G 1.4]
+[charaScale H 1.4]
+
+[scene 151600]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_174 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ブラダマンテ
+仕留めた！[r]速度、変わらず！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠シャルルマーニュ
+走れ走れ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadeinFSL D 0.1 0]
+[charaFace E 0]
+[charaFadeinFSR E 0.1 2]
+
+＠クラス・ランサー
+私はここまでです、ご武運を！
+[k]
+
+＠クラス・ライダー
+同じくここまで！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaSpecialEffect D flashErasure 1 1.2]
+[charaSpecialEffect E flashErasure 1 1.2]
+[se ad52]
+[wait charaSpecialEffect E]
+[wt 1.0]
+
+？1：……行こう！
+？！
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠シャルルマーニュ
+ああ！[r]走り抜け、走り抜け！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠カドック
+[%1]！[r]活性アンプル、打つぞ！
+[k]
+
+[messageOff]
+[wt 0.2]
+[cueSe SE_21 21_ad1104]
+[wt 1.2]
+
+？1：ありがとう！
+？！
+
+[charaFace C 5]
+
+＠カドック
+礼を言われるような事じゃない。[r]こんなモン使うのは、人生の前借りだからな。
+[k]
+
+＠カドック
+魔術礼装で強化しているとはいえ、[r]サーヴァントと並んで走りっぱなしだ。
+[k]
+
+[charaFace C 0]
+
+＠カドック
+……悪いが、抗議は受け付けないぞ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth H 2]
+[charaDepth G 3]
+[se ad7]
+[se ad183]
+[cameraMove 0.4 0,-10 1.01]
+[shake 0.04 1 1 0.24]
+[charaFadein H 1.0 0,-150]
+[charaFace G 0]
+[charaFadein G 1.0 0,50]
+[wt 1.0]
+
+？1：小脇に抱えられた！？
+？！
+
+[charaFadeout C 0.1]
+[charaFace G 2]
+
+＠カドック
+しょうがないだろ、[r]サーヴァントは全員忙しいんだ！
+[k]
+
+＠カドック
+さあ、走るぞ！
+[k]
+
+[messageOff]
+[charaFadeout H 1.0]
+[charaFadeout G 1.0]
+[wt 1.2]
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠クラス・アサシン
+伝令！　伝令！[r]復讐界域、魔獣を投入しました！
+[k]
+
+＠クラス・アサシン
+それから、[#殿:しんがり]が追いつかれて[r]戦闘に突入。
+[k]
+
+＠クラス・アサシン
+ディルムッド殿が、[r]現在奮闘中です！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠シャルルマーニュ
+そうか。[r][#殿:しんがり]を背負って立つは騎士の誉れ。
+[k]
+
+[charaFace B 5]
+
+＠シャルルマーニュ
+さあ、進むぞ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_174 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

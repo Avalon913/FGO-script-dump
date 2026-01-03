@@ -1,0 +1,602 @@
+
+
+＄94-09-56-08-4-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 25014000 1 蒼崎青子]
+[charaSet B 1098257800 1 マシュ]
+[charaSet C 5055000 1 久遠寺有珠]
+[charaSet D 1098294400 1 木乃美芳助]
+[charaSet E 1098293400 1 槻司鳶丸]
+[charaSet F 7049000 1 静希草十郎]
+
+[sceneSet G 216300 1]
+[charaScale G 1.3]
+[sceneSet H 216300 1]
+[charaScale H 1.2]
+[sceneSet I 216300 1]
+[charaScale I 1.2]
+[charaSet J 5055000 1 久遠寺有珠_演出用]
+[charaSet K 1098294400 1 木乃美芳助_演出用]
+[sceneSet L 216300 1]
+[charaScale L 1.2]
+[charaSet M 25014000 1 蒼崎青子_演出用]
+
+[charaSet N 1098294400 1 木乃美芳助_演出用]
+[charaSet O 5055000 1 久遠寺有珠_演出用]
+[charaSet P 1098294410 1 木乃美芳助_シルエット]
+[charaSet Q 1098295200 1 久遠寺有珠_シルエット]
+[charaFilter P silhouette 00000080]
+[charaFilter Q silhouette 00000080]
+[sceneSet R 216300 1]
+[charaScale R 1.2]
+[sceneSet S 216300 1]
+[charaScale S 1.2]
+
+[imageSet T cut559_shinystar1 1]
+[sceneSet U 146100 1]
+[charaScale U 1.1]
+
+[charaTalk depthOff]
+
+[scene 216300]
+
+[cueSe SE_21 21_ad1066 0]
+[seVolume 21_ad1066 2.0 0.8]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+[seStop 21_ad1066 0.8]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.7]
+
+＠蒼崎青子
+はい、止まって。ここで[#2001年:こ　　　こ]の特異点に[bgm BGM_EVENT_204 0.1][r]かかっている[#固定:ロック]を外します。
+[k]
+
+＠蒼崎青子
+伸ばしていたゴムが元に戻るように、[r]周囲がまるっと1999年になるはず。
+[k]
+
+＠蒼崎青子
+けっこう意識にくるから、[r]酔いやすい人は目を[#瞑:つむ]っていて。
+[k]
+
+？1：（レイシフトはほんと酔うから[&な:ね]……）
+
+？2：場所はここでいいんですか？
+
+[charaFace A 1]
+
+＠蒼崎青子
+ええ。誰も寄りつかないから人目につかないでしょ。[r]私が跳んできたのもここよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠マシュ
+では、今までの……二人目からの青子さんもここを[r]スタート地点にしていたのですね。
+[k]
+
+？！
+
+[messageOff]
+[bgm BGM_EVENT_204 0.7 0.3]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[subCameraOn 4]
+[charaLayer D sub #A]
+[subCameraFilter #A through]
+[subRenderFadein #A 0.1 0,0]
+[charaLayer C sub #B]
+[subCameraFilter #B through]
+[subRenderFadein #B 0.1 0,0]
+[subCameraFilter #C normal]
+[charaLayer K sub #C]
+[charaLayer I sub #C]
+[subCameraFilter #D normal]
+[charaLayer J sub #D]
+[charaLayer H sub #D]
+[subRenderDepth #A 2]
+[subRenderDepth #B 1]
+[subRenderDepth #C 3]
+[subRenderDepth #D 4]
+
+[charaTalk off]
+[charaDepth A 2]
+[charaDepth B 4]
+[charaDepth F 3]
+[charaDepth C 5]
+[charaDepth D 6]
+[charaScale A 0.9]
+[charaScale B 0.9]
+[charaScale F 0.9]
+[charaFace F 0]
+[charaFadein F 0.1 -400,-50]
+[charaFace A 1]
+[charaFadein A 0.1 -206,-50]
+[charaFace B 5]
+[charaFadein B 0.1 -0,-50]
+[charaFadein G 0.1 80,-250]
+
+[charaScale J 1.4]
+[charaDepth J 2]
+[charaDepth H 1]
+[charaFace J 4]
+[charaFadein J 0.1 130,-20]
+[charaFadein H 0.1 -70,-280]
+[charaScale K 1.4]
+[charaDepth K 2]
+[charaDepth I 1]
+[charaFace K 22]
+[charaFadein K 0.1 -140,-50]
+[charaFadein I 0.1 80,-260]
+
+[pictureFrame cut063_cinema]
+[wt 0.4]
+
+[bgm BGM_EVENT_204 0.7 0.7]
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+[wt 1.5]
+[charaMove F -430,-100 1.0]
+[charaMove A -276,-100 1.0]
+[charaMove B -120,-100 1.0]
+[charaMove G 0,-210 1.0]
+[charaMoveScale F 0.7 1.0]
+[charaMoveScale A 0.7 1.0]
+[charaMoveScale B 0.7 1.0]
+[charaMoveScale G 1.1 1.0]
+[blur lens 1.0 2 1]
+[wt 1.0]
+
+[charaScale D 1.2]
+[charaTalk on]
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 1.0 256,-50]
+[wt 1.0]
+
+＠木乃美芳助
+……やばい、さっきは勢いでノッてたけど、[r]どんどん冷静になってきたぞ……
+[k]
+
+＠木乃美芳助
+1999年に行くってタイムスリップみたいなものだよな？[r]そんな事して大丈夫なの？　なんかぽろっと死なない？
+[k]
+
+＠木乃美芳助
+会長が平気な顔してるのはいつもの事として、[r][%1][&:ちゃん]もマシュちゃんも、
+[k]
+
+＠木乃美芳助
+あんなにイヤがっていた副会長すら[r]“じゃ、ちょっと行ってみるか”みたいな顔してさぁ……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaFadeout B 0.4]
+[charaFadeout F 0.4]
+[charaMoveEase F -550,-90 1.0 easeOutQuad]
+[charaMoveEase A -423,-90 1.0 easeOutQuad]
+[charaMoveEase B -284,-90 1.0 easeOutQuad]
+[charaMoveEase D -0,-50 1.4 easeOutQuad]
+[charaMoveEase G -80,-210 1.4 easeOutQuad]
+[wt 1.2]
+
+[charaScale C 1.1]
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.7 320,-50]
+[wt 0.7]
+
+＠久遠寺有珠
+……君。……君。[r][line 3]木乃美君。
+[k]
+
+[charaTalk off]
+[charaDepth R 7]
+[charaDepth N 8]
+[charaDepth Q 9]
+[charaDepth S 7]
+[charaDepth O 8]
+[charaDepth P 9]
+[charaScale R 1.4]
+[charaScale S 1.4]
+[charaScale N 1.2]
+[charaScale P 2.0]
+[charaScale O 1.2]
+[charaScale Q 2.0]
+
+[charaLayer N sub #C]
+[charaLayer Q sub #C]
+[charaLayer R sub #C]
+[charaFace N 12]
+[charaFace Q 0]
+[charaFadein N 0.1 -220,-50]
+[charaFadein Q 0.1 260,75]
+[charaFadein R 0.1 -180,-300]
+
+[charaLayer O sub #D]
+[charaLayer P sub #D]
+[charaLayer S sub #D]
+[charaLayer T sub #D]
+[charaLayer U sub #D]
+[charaFace O 17]
+[charaFace P 0]
+[charaFadein O 0.1 220,-55]
+[charaFadein P 0.1 -260,45]
+[charaFadein S 0.1 -240,-300]
+
+[charaFace D 7]
+[charaShake D 0.03 4 4 0.3]
+[charaMoveEase D -32,-50 0.3 easeOutQuart]
+
+＠木乃美芳助
+とぅわ！？　誰だよ後ろから！[wt 1.0][subRenderFadein #C 0.4 0,0][wt 0.8][r]って、有珠ちゃんか。べべ、別に怖がってないよ？
+[k]
+
+＠木乃美芳助
+ちょっと緊張してただけ。ほんとほんと。[r]本番前の武者震いってヤツ。
+[k]
+
+＠木乃美芳助
+[#脇役:サイド]は[#脇役:サイド]なりに足元[#滑:すべ]らないよう[r]気をつけなくちゃいけないっつーか……。
+[k]
+
+[messageOff]
+[charaFace O 17]
+[subRenderFadein #D 0.4 0,0]
+[wt 0.4]
+[charaFadeout D 0.1]
+
+＠久遠寺有珠
+……そう。わたしはそう思ってはいないけど。[r]貴方が脇役なんて、贅沢な舞台ね。
+[k]
+
+[charaFace O 18]
+
+＠久遠寺有珠
+それより……移動する前に一つ、いいかしら。[r]ずっと考えていたけど、想像できなくて。
+[k]
+
+[charaFace O 5]
+
+＠久遠寺有珠
+[#願い星箱:シャイニースター]が起動するのは、本来あり得ない事よ。
+[k]
+
+＠久遠寺有珠
+あれは失敗作だった。起動するための条件……[r]童話になるためのプロットにミスがあったから。
+[k]
+
+[messageOff]
+[charaFace N 0]
+[subRenderFadeout #D 0.4]
+[wt 0.4]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout S 0.1]
+
+＠木乃美芳助
+…………。ミスって、どんな？
+[k]
+
+[messageOff]
+[charaDepth U 9]
+[charaDepth T 10]
+
+[charaScale T 0.75]
+[charaFadein T 0 0,-140]
+[charaFadein U 0 -20,-200]
+[charaMove U 20,-200 20.0]
+
+[subRenderFadein #D 0.4 0,0]
+[charaFace J 17]
+[wt 0.4]
+[charaFadeout N 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+
+＠久遠寺有珠
+オンリーワンでナンバーワン。[r]唯一で一番の願いなら叶えてくれるキャンディマシン。
+[k]
+
+[charaMove J 140,-20 10.0]
+[charaMove H -80,-280 10.0]
+[charaFadeout T 0.3]
+[charaFadeout U 0.3]
+
+＠久遠寺有珠
+聞こえはいいわよね。[r]誰もが自分の願いは[#一番:そ　う]であってほしいと願うのだから。
+[k]
+
+[charaFace J 4]
+
+＠久遠寺有珠
+でもそれが間違っていた。
+[k]
+
+＠久遠寺有珠
+『この世で一番の願い』は誰もが持っているもので、[r]だからこそ『この世でただ一つの願い』は存在しない。
+[k]
+
+＠久遠寺有珠
+成功したい。出世したい。[r]恋人がほしい。死人を生き返らせたい。
+[k]
+
+＠久遠寺有珠
+そういった願いはこの世界に[#溢:あふ]れている。[r]ソラに輝く無数の星のようにありきたり。
+[k]
+
+[charaFace J 17]
+
+＠久遠寺有珠
+シャイニースターは輝かない。[r]この世でただ一つの、一番の願いは存在しない。
+[k]
+
+[messageOff]
+[subRenderFadeout #D 0.4]
+[wt 0.4]
+[charaFace O 18]
+[charaFace P 0]
+[charaFadein O 0.1 200,-15]
+[charaFadein P 0.1 -260,25]
+[charaFadein S 0.1 -180,-300]
+
+＠木乃美芳助
+…………。
+[k]
+
+[messageOff]
+[subRenderFadein #D 0.4 0,0]
+[wt 0.4]
+[charaFace N 18]
+[charaFace Q 0]
+[charaFadein N 0.1 -200,-30]
+[charaFadein Q 0.1 260,25]
+[charaFadein R 0.1 -180,-300]
+
+＠久遠寺有珠
+もう一度[#訊:き]くけど。[r]木乃美君は、いったい何を願ったの？
+[k]
+
+[messageOff]
+[subRenderFadeout #D 0.4]
+[wt 0.4]
+
+＠木乃美芳助
+言わない。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+[blurOff lens 0.1]
+[subRenderFadeout #C 0.1]
+[charaFadeout N 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout S 0.1]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.2]
+[charaLayer N normal]
+[charaLayer Q normal]
+[charaLayer R normal]
+[charaLayer O normal]
+[charaLayer P normal]
+[charaLayer S normal]
+
+[charaLayer D normal]
+[charaLayer C normal]
+[charaLayer K normal]
+[charaLayer J normal]
+[charaLayer H normal]
+[charaLayer I normal]
+[subCameraOff]
+[charaScale F 1.0]
+[charaScale A 1.0]
+[charaScale B 1.0]
+[charaScale D 1.0]
+[charaScale C 1.0]
+
+[charaFadeout G 0.1]
+
+[imageSet J cut579_msh_06 1]
+[imageSet P cut579_tob_13 1]
+[imageSet Q cut579_sjr_21 1]
+[imageSet T cut579_qonz_18 1]
+[imageSet U cut579_knm_03 1]
+[charaFilter P normal]
+[charaFilter Q normal]
+[charaDepth J 7]
+[charaDepth U 6]
+[charaDepth P 5]
+[charaDepth T 4]
+[charaDepth Q 3]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 25]
+[charaFadein A 0.1 1]
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+＠蒼崎青子
+有珠と木乃美君、離れて何か話してるわね……[r]たぶん願いの事だろうけど……
+[k]
+
+
+？1：『木乃美さんは何を願ったか』ですね……？
+
+？！
+
+[charaFace A 11]
+
+＠蒼崎青子
+ええ。有珠相手でも話さないとはね。[r]あんな強情な木乃美君、はじめて見たかも。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠槻司鳶丸
+ありゃ[#拗:す]ねてるだけだろ。そもそも本気の願い事なんて[r]他人に言えるもんでもねえ。恥と[#外聞:がいぶん]ってヤツだ。
+[k]
+
+[charaFace E 0]
+
+＠槻司鳶丸
+それより準備は終わったのか。[r]急ぐ必要はないのかもしれんが、時間をかけてもな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_204 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠蒼崎青子
+分かってる。座標の設定も終わったから、[r]あとは手を離すだけよ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+
+[charaTalk A,M]
+[subCameraOn 1]
+[charaLayer M sub #A]
+[charaLayer G sub #A]
+[subCameraFilter #A maskEdge cut359_mask06 4 63,58,202,255 0]
+[subRenderScale #A 1.1]
+[charaDepth M 2]
+[charaDepth G 1]
+[charaScale M 1.3]
+[charaScale G 1.2]
+[charaFace M 4]
+[charaFadein M 0 0,255]
+[charaFadein G 0 1]
+[subRenderFadein #A 0.3 -100,-300]
+[subRenderMove #A 0,-300 0.3]
+[wt 0.3]
+
+[bgm BGM_EVENT_217 0.1]
+
+＠M：蒼崎青子
+みんな、集まって！[r]目を[#瞑:つむ]って３秒後にはもうあっちだからね！
+[k]
+
+＠M：蒼崎青子
+意味はないけど不安なら手を繋いで！[r]準備はいい？
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+[charaFadeout M 0.1]
+
+
+[charaTalk off]
+[charaFadein T 0.3 -213,-250]
+[charaMove T -213,-200 0.3]
+[wt 0.2]
+[charaFadein P 0.3 205,-150]
+[charaMove P 205,-200 0.3]
+[wt 0.2]
+[charaFadein J 0.3 410,-250]
+[charaMove J 410,-200 0.3]
+[wt 0.2]
+[charaFadein U 0.3 -420,-150]
+[charaMove U -420,-200 0.3]
+[wt 0.2]
+[charaFadein Q 0.3 0,-250]
+[charaMove Q 0,-200 0.3]
+[wt 1.5]
+
+？1：もちろん！
+？2：お願いします！
+
+？！
+
+[charaFadeout J 0.4]
+[charaFadeout U 0.4]
+[charaFadeout P 0.4]
+[charaFadeout T 0.4]
+[charaFadeout Q 0.4]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠蒼崎青子
+オッケー！　逆行運河・特異点、始めるわ！[r]いざ、1999年の[#隈乃:くまの]温泉へ！
+[k]
+
+[messageOff]
+[se ad942]
+[wt 0.1]
+[se ad626 0]
+[seVolume ad626 1.0 0.2]
+[wt 0.4]
+[bgmStop BGM_EVENT_217 2.0]
+[fadeout white 1.5]
+[wait fade]
+
+[seStop ad942 1.2]
+[seStop ad626 1.2]
+
+[scene 10001]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[effect bit_talk_07_fs 0,0]
+[se ad12]
+[wt 4.0]
+
+[fadeout white 1.0]
+[wait fade]
+[wt 1.0]
+[scene 10001]
+[fadein white 0.1]
+[wait fade]
+[fadeout black 1.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

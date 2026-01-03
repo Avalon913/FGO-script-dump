@@ -1,0 +1,506 @@
+
+
+
+
+
+
+
+
+
+＄04-00-05-24-2-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 9019002 1 裁判長]
+[charaSet B 9019001 1 【怠惰】]
+[sceneSet C 166100 1]
+[charaScale C 1.5]
+[sceneSet D 166100 1]
+[charaScale D 1.5]
+
+[charaSet E 98115000 1 エフェクト用]
+
+[masterBranch lbl_male lbl_female]
+[label lbl_male]
+[sceneSet F 249300 1]
+[branch lbl_conf]
+[label lbl_female]
+[sceneSet F 249301 1]
+[label lbl_conf]
+[charaScale F 1.05]
+[charaSet G 98115000 1 エフェクト用]
+
+[sceneSet H 166100 1]
+[charaScale H 1.5]
+[charaSet I 9019001 1 【怠惰】_演出用]
+[charaScale I 1.5]
+
+[scene 10000]
+
+[subCameraOn 3]
+[charaLayer C sub #A]
+[charaLayer B sub #A]
+
+[charaLayer F sub #B]
+[charaLayer G sub #B]
+[charaLayer H sub #C]
+[charaLayer I sub #C]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth B 2]
+
+[charaDepth D 1]
+[charaDepth A 2]
+
+[charaDepth F 1]
+[charaDepth G 2]
+[charaDepth H 1]
+[charaDepth I 2]
+
+[charaDepth E 3]
+[charaFadein C 0.1 0,0]
+[subCameraFilter #A maskEdge cut359_mask09 5 0,0,0,255 0]
+[subCameraFilter #B normal]
+[subCameraFilter #C maskEdge cut359_mask17 5 255,255,255,255 0]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+
+[charaFadein F 0 -30,-200]
+[charaPut G 1]
+[charaEffect G bit_sepia01_depth_fs]
+
+[charaFace I 15]
+[charaFadein I 0 50,400]
+[charaFadein H 0 0,0]
+
+
+[fadein black 0.1]
+[wait fade]
+
+[criMovie talk_mov313 bgmPlay false]
+[cueSe SE_25 25_ad1516]
+[wt 1.0]
+[scene 10001 1.0]
+[wt 3.0]
+
+[fadeout white 0.1]
+[wait fade]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein white 1.0]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+
+[pictureFrameTop cut063_cinema]
+[scene 166100]
+
+[charaFadein D 0.1 -150,-200]
+[subRenderFadein #A 0.1 200,-200]
+[wt 1.0]
+
+[fadein black 0.7]
+[wait fade]
+
+[charaTalk off]
+[se ad671]
+[charaFace A 2]
+[charaFadein A 0.2 100,-50]
+[charaMoveEase A -300,-50 1.2 easeOutQuart]
+
+[charaFace B 2]
+[charaFadein B 0.2 -300,150]
+[charaMoveEase B 100,150 1.2 easeOutQuart]
+[wt 2.0]
+
+[bgm BGM_EVENT_156 0.1]
+
+[charaTalk on]
+[charaFace A 7]
+[charaFace B 0]
+
+＠裁判長
+……罪人は醜悪だった。[#咎人:とがびと]は最悪だった。[r]悔いなき選択ではなく、悔いを露わに赦しを乞うた。
+[k]
+
+[charaFace A 2]
+
+＠裁判長
+それが許せない。それが認められない。[r]後悔するのを知っていながら、何故罪を犯すのか。
+[k]
+
+＠裁判長
+畜生のように浅ましいくせに、[r]悪賢く罪から逃れようとする！
+[k]
+
+＠裁判長
+人間に価値はなく、存在を許してはならなかった。[r]それが私の結論です。
+[k]
+
+[charaFace B 9]
+
+
+＠【怠惰】
+その結論は違うよ、[#裁判長:わ　た　し]。
+[k]
+
+[charaFace A 12]
+
+＠裁判長
+何が……ですか。
+[k]
+
+[charaFace B 3]
+
+＠【怠惰】
+確かに、貴女の言う通りかもしれない。[r]いつまで経っても人から悪の根が絶たれることはない。
+[k]
+
+＠【怠惰】
+進みは遅い。それどころか戻っちゃったりする。[r]荒廃する魂を省みず、ただただ傷つくだけの日々。
+[k]
+
+＠【怠惰】
+人間的に優れた者の足を、誰かが引っ張ることもある。[r]愚か者にトドメを刺すような、酷い踏みにじり方もある。
+[k]
+
+＠【怠惰】
+言い訳しようもない邪悪さ、[r]確かにそれは、人間の内側にあるものだよ。
+[k]
+
+＠裁判長
+[line 3]そこまで、そこまで理解できているなら。[r]どうして。
+[k]
+
+[charaFace B 7]
+
+＠【怠惰】
+……。[r]……。
+[k]
+
+[charaFace B 9]
+
+＠【怠惰】
+[line 3]それでも、命には価値があるんだよ。
+[k]
+
+
+＠【怠惰】
+悪を成す生き物でも。人間に価値がなくても、[r]積み上げてきた歴史が間違いだらけでも[line 3]
+[k]
+
+[charaFace B 15]
+
+＠【怠惰】
+生きているかぎり。……その手で何かが出来る以上、[r]必ず、救えるものがあるでしょう。
+[k]
+
+[charaFace A 25]
+
+＠裁判長
+[line 6][r][line 6]。
+[k]
+
+[charaFace B 20]
+
+＠【怠惰】
+ま、今のはただの受け売りなんだけど。
+[k]
+
+[charaFace B 3]
+
+＠【怠惰】
+あの真っ黒君、生命の核心をあっさり突くとか、[r]聖人の生まれか何かだったのかな？　違うか。
+[k]
+
+[charaFace B 0]
+
+＠【怠惰】
+どっちみち、裁判長なんて大層なものじゃないでしょ。[r]貴女は裁く側ではなく[line 3]
+[k]
+
+[charaFace A 21]
+
+＠裁判長
+……裁かれる側だと言いたいのですか。
+[k]
+
+[charaFace B 15]
+
+＠【怠惰】
+自分でも、その自覚はあるでしょう？
+[k]
+
+[charaFace A 7]
+
+＠裁判長
+……ええ、その通りです。[r]裁く度、体中に[#澱:おり]が積もっていくようでした。
+[k]
+
+[charaFace A 3]
+
+＠裁判長
+私は[line 3]人を裁く権利などないじゃないか、と。
+[k]
+
+[charaFace A 21]
+
+＠裁判長
+管理者たちのことを笑えませんね。
+[k]
+
+[charaFace A 3]
+
+＠裁判長
+彼女らが裁定者として[r]汎人類史を[#庇:かば]っていたように。
+[k]
+
+＠裁判長
+私もまた、私怨で汎人類史を攻撃していた。[r]そういう……ことですね。
+[k]
+
+[charaFace B 1]
+
+＠【怠惰】
+そ。でもさ、結局のところ人が人を裁くのは、[r]法だけど、そこにあるのは感情かもしれないよ？
+[k]
+
+[charaFace A 2]
+
+＠裁判長
+……感情で裁判が動くことは有り得ませんが。
+[k]
+
+＠【怠惰】
+それはもちろん。
+[k]
+
+[charaFace B 15]
+
+＠【怠惰】
+でも、法律の下に横たわっているものは[r]罰という名の感情だと私は思っているんだよ。
+[k]
+
+＠【怠惰】
+この悪にこれだけの罪を支払って欲しい、という。[r]だから、その憎しみは忘れなくていい。
+[k]
+
+＠【怠惰】
+その憎しみに耐えて、生きていく。[r]人間らしいって、そういうものじゃない？
+[k]
+
+[charaFace A 3]
+
+＠裁判長
+……個人的な感情を切り離さず、耐える。[r]それが裁定者としての在り方だと？
+[k]
+
+
+＠【怠惰】
+辛くて面倒でしょう？[r]だから、時々怠けるといいよ。
+[k]
+
+[charaFace B 14]
+
+＠【怠惰】
+でも、そのためには[line 3]不完全にならなきゃね。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_156 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+
+[subRenderFadeout #A 0.1]
+[charaLayer C normal]
+[charaLayer B normal]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-50]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.5]
+[charaPut E 40,-80]
+[charaEffect E bit_talk_miko1]
+[se ade406]
+[seVolume ade406 0 0]
+[seVolume ade406 0.5 0.3]
+[cueSe SE_24 24_ade1060 0.5 0.2]
+[charaFadeTime B 2.0 0.6]
+[wt 4.0]
+
+[bgm BGM_EVENT_161 0.1]
+
+＠
+[charaTalk E]
+そうして、私は私という存在を溶かしてゆく。
+[k]
+
+＠
+[charaTalk E]
+私は怠惰だった。
+[k]
+
+[charaFadeTime B 20.0 0.1]
+
+＠
+[charaTalk E]
+[#裁判長:か の じ ょ]の状況を把握していても、[r]動くことは面倒だったし、
+[k]
+
+＠
+[charaTalk E]
+カルデアの皆が来てもなお、[r]楽しい日々が続いて欲しかった。
+[k]
+
+＠
+[charaTalk E]
+憤怒も、嫉妬も、強欲も、他人を傷つける罪だ。[r]でも、私だけは他人を傷つけずともいられる存在だった。
+[k]
+
+＠
+[charaTalk E]
+だからこそ、私だけは切り離された。
+[k]
+
+＠
+[charaTalk E]
+私という【怠惰】の根底にある穏やかな感情が、[r]裁判長の憎悪と相反するものだったから。
+[k]
+
+＠
+[charaTalk E]
+でも、これでそれもおしまい。
+[k]
+
+＠
+[charaTalk E]
+もう少しだけ、カルデアを、カルデアのマスターを[r]見ていたかったけれど。
+[k]
+
+＠
+[charaTalk E]
+一緒に下らない、どうでもいい、だらだらと、[r]最低の日々を過ごしたかったけれど……。
+[k]
+
+[messageOff]
+[wt 0.7]
+[charaTalk I]
+[subRenderFadein #B 1.0 0,0]
+[seVolume 24_ade1060 1.0 0.1]
+[wt 2.5]
+[subCameraRoll #C 10 0,0]
+[charaRoll I -10]
+[charaRoll H -10]
+[subRenderFadeinFSR #C 0.7 280,-470]
+[subRenderMoveEaseFSR #C 250,-480 0.7 easeOutSine]
+[charaTalk off]
+[wt 1.0]
+
+＠
+ああ、未練がある。沢山の、とても沢山の未練がある。
+[k]
+
+＠
+それはもしかしたら、私が少し頑張れば経験することが[r]できたかもしれない風景だ。
+[k]
+
+＠
+でも、頑張れない。気力がなくて起き上がれない。[r]いや、それは後付けの理由だ。
+[k]
+
+＠
+[#ただ何となく]、[#何もしない]。[r]それこそが【怠惰】の本質であり、罪。
+[k]
+
+＠
+だから幾つもの未練は、私への罰に過ぎず。[r][line 3]最初から、そうすべきだったのだ。
+[k]
+
+[messageOff]
+[se ad732]
+[cueSeStop 24_ade1060 2.8]
+[fadeout white 2.0]
+[wait fade]
+
+[subRenderFadeout #B 0]
+[subRenderFadeout #C 0]
+[charaFadeout B 0]
+[charaEffectDestroy E bit_talk_miko1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0 0,-50]
+[fadein white 1.0]
+[wait fade]
+[cueSe SE_23 23_ad1312 0.4]
+[wt 1.0]
+
+[charaPut E 30,-80]
+[charaEffect E bit_talk_miko1]
+
+[wt 3.8]
+
+[charaFaceFade A 0 0.2]
+
+＠裁判長
+[line 3]そんなことはなかったのですよ、【怠惰】の貴女。
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[wt 0.4]
+[charaPut E 4000,4000]
+[wt 0.6]
+
+＠
+貴女がそうしてくれたから、[r]私は法廷へと向かうことができた。
+[k]
+
+＠
+貴女が今、ここに居てくれたから。[r]私は激情の末ではない判断を下すことができる。
+[k]
+
+＠
+……私の下す裁定を、貴女は笑うでしょうか。[r]それとも[#詰:なじ]るでしょうか。
+[k]
+
+＠
+あるいは、カルデアを……。[r]貴女が好きだったあの方たちを、案じるでしょうか。
+[k]
+
+[messageOff]
+[wt 2.5]
+[cueSe SE_21 21_ade665]
+[wt 0.1]
+[seStop 21_ade665 0.7]
+[wt 1.0]
+
+＠
+……行かないと。[r]裁判はまだ続いています。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_161 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

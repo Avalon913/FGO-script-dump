@@ -1,0 +1,586 @@
+
+
+
+
+
+
+
+＄94-15-00-03-3-1
+
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[soundStopAll]
+
+[charaSet A 25010001 1 モレー]
+[charaSet B 3062000 1 エリザベート]
+[charaSet C 1098337800 1 信徒]
+[charaRollAxis C y 180 0 0]
+
+[charaSet D 11022000 1 終わりのエリザベート]
+[charaSet E 1098337710 1 フレッカス]
+
+[charaSet G 1098337800 1 信徒1]
+[charaSet H 1098337800 1 信徒2]
+[charaSet I 1098337800 1 信徒3]
+
+[charaSet J 98115000 1 エフェクト用]
+[charaSet K 1098339700 1 エリザベートの槍]
+[charaRollAxis K z 27 0 0]
+[charaRollAxis K y 180 0 0]
+
+[sceneSet L 265500 1]
+[charaScale L 1.3]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+[sceneSet M 268200 1]
+[branch _branchEnd]
+
+[label _Female]
+[sceneSet M 268210 1]
+[branch _branchEnd]
+
+[label _branchEnd]
+
+[charaSet N 1098340700 1 メカエリチャンⅡ号機]
+
+[sceneSet O 265400 1]
+[charaScale O 1.3]
+
+[subCameraOn 1]
+[subCameraFilter #A maskEdge cut359_mask14 3 192,192,192,255]
+[subRenderScale #A 1.0]
+
+[charaLayer M sub #A]
+[charaLayer N sub #A]
+[charaScale M 0.55]
+[charaScale N 0.93]
+[charaFace N 6]
+[charaFadein N 0.1 460,192]
+[charaFadein M 0 420,110]
+
+[charaTalk depthOff]
+[charaDepth L 2]
+[charaDepth G 5]
+[charaDepth H 4]
+[charaDepth I 3]
+[charaDepth A 6]
+[charaDepth B 7]
+[charaDepth E 8]
+[charaDepth K 16]
+[charaDepth C 9]
+[charaDepth D 10]
+[charaDepth M 18]
+[charaDepth O 19]
+[charaDepth N 20]
+
+[scene 10000]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad1013]
+[effect bit_talk_14 -300,0]
+[wt 0.2]
+[se ad1014]
+[effect bit_talk_14 400,-200]
+[wt 0.2]
+[se ad32]
+[effect bit_talk_14 0,0]
+[wt 0.4]
+
+[se ad85]
+[effect bit_talk_gram_slash_04_fs]
+[wt 0.3]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 265500]
+[charaFadein L 0.1 -100,-250]
+
+[charaTalk off]
+
+[charaScale G 1.2]
+[charaScale H 1.2]
+[charaScale I 1.2]
+
+[charaFace G 0]
+[charaFadein G 0.1 0,50]
+
+[charaFace H 0]
+[charaFadein H 0.1 250,50]
+
+[charaFace I 0]
+[charaFadein I 0.1 -250,50]
+[wt 0.1]
+
+[fadein black 0.4]
+[bgm BGM_EVENT_80 0.4]
+[fowardEffect bit_talk_blow02]
+[cueSe SE_24 24_ad1451]
+[se ad32]
+[wait fade]
+
+[se ad671]
+[charaMoveScaleEase G 1.0 0.4 easeOutQuint]
+[charaMoveScaleEase H 1.0 0.4 easeOutQuint]
+[charaMoveScaleEase I 1.0 0.4 easeOutQuint]
+[charaMoveEase G 0,0 0.4 easeOutQuint]
+[charaMoveEase H 350,0 0.4 easeOutQuint]
+[charaMoveEase I -350,0 0.4 easeOutQuint]
+
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[charaFadeout I 0.4]
+[wt 1.0]
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaPut A 50,0]
+[se ad223]
+[charaSpecialEffect A appearance 1 0.2]
+[effect bit_talk_quickmove]
+[wt 0.4]
+
+＠モレー
+道は切り開いた、逃げよう！
+[k]
+
+？1：よし！
+？！
+
+[messageOff]
+[charaMoveEase L 100,-250 0.8 easeOutSine]
+[charaMoveEase A 250,0 0.8 easeOutSine]
+[wt 0.8]
+
+[se ade533 0.7]
+[charaTalk B,K]
+[charaFace B 5]
+[charaFadein B 0.2 -300,-10]
+[charaShake B 0.03 1 1 1.2]
+[charaMove B -300,0 1.2]
+[wt 0.8]
+[charaFadein K 0.4 -200,-170]
+[charaMove K -200,-150 0.4]
+[wt 0.4]
+
+[wt 0.2]
+
+＠エリザベート=spot[B,K]
+んぎぎぎぎ……ああもう重たーーーい！[r]マイクより重たいもの持ったことがないのにー！
+[k]
+
+[charaFace A 18]
+
+＠モレー=spot[A,K]
+マスターは頭持ってるから……しょうがないか。[r]あたしが手伝うよ！
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 9]
+[cueSe SE_25 25_ad1470]
+[se ade533 0.4]
+[charaMove B -280,0 0.4]
+[wt 0.3]
+[se ad171]
+[charaMove K 50,-120 0.5]
+[wt 0.4]
+[charaMove K 50,-180 0.3]
+[cueSe SE_24 24_ade1032]
+[cueSe SE_21 21_ad1075]
+[charaFace A 27]
+[charaMove A 250,-50 0.2]
+
+＠モレー=spot[A,K]
+……うっわ重！　うぎぎぎぎ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ade533 0.4]
+[charaShake A 0.05 2 2 0.6]
+[charaMove A 250,-30 0.6]
+[charaMove K 50,-160 0.6]
+[wt 1.0]
+[bgmStop BGM_EVENT_80 1.0]
+[se ad788]
+[se ade235]
+[charaMove A 350,-30 0.4]
+[charaMove B -180,0 0.4]
+[charaMove K 150,-160 0.4]
+[charaFadeout A 0.4]
+[charaFadeout B 0.4]
+[charaFadeout K 0.4]
+[wt 0.4]
+[seStop ad788 1.5]
+[seStop ade235 1.5]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaScale L 1.5]
+[charaFadeout K 0.1]
+[pictureFrameTop cut063_cinema]
+[charaFadein L 0.1 -150,-250]
+
+[wt 0.5]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 -50,-50]
+
+＠信徒
+待て！
+[k]
+
+[messageOff]
+[charaMoveEase L 50,-250 1.0 easeOutSine]
+[charaMoveEase C 250,-50 1.0 easeOutSine]
+[wt 1.0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.2 -300,-50]
+[wt 0.2]
+[bgm BGM_EVENT_97 0.1]
+
+＠終わりのエリザベート
+いえ。追跡は中止です。[r]いずれにせよ、[&彼:彼女]らが行く場所は決まっています。
+[k]
+
+＠終わりのエリザベート
+我々はそこで、[#待ち構えればいい]だけです。[r]『死滅の尾』を招集なさい。
+[k]
+
+＠信徒
+はっ。
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ad1352]
+[charaFadeout C 0.4]
+[wt 0.4]
+[seStop 24_ad1352 1.0]
+[wt 1.0]
+
+[charaTalk D]
+[charaMoveEase L 250,-250 1.2 easeOutSine]
+[charaMoveEase D 0,-50 1.2 easeOutSine]
+[wt 1.5]
+
+
+
+＠終わりのエリザベート
+結局のところ、事態は私たちの手の内にある。[r]何をしようと、結末は変わることはないのです。
+[k]
+
+[messageOff]
+
+[wt 0.7]
+
+[charaFaceFade D 4 0.2]
+
+＠終わりのエリザベート
+[line 3]それにしても。
+[k]
+
+＠終わりのエリザベート
+……エリザベート、何をしているのかしら。[r]あの子、偏食だから迷惑かけていないといいけど。
+[k]
+
+＠終わりのエリザベート
+もう少し食育を重視するべきだったかしら……。
+[k]
+
+[charaFaceFade D 5 0.2]
+
+＠終わりのエリザベート
+……。[r]……何を言っているのかしら、私は。
+[k]
+
+＠終わりのエリザベート
+彼女は核とする[#贄:にえ]の巫女。[r]死んでしまうと困るから、丁重に育てただけ。
+[k]
+
+＠終わりのエリザベート
+それだけよ、それだけなのよ。
+[k]
+
+[charaFaceFade D 4 0.2]
+
+＠終わりのエリザベート
+[line 3]ああもう。調子が崩れる。
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_EVENT_97 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout L 0.1]
+[charaFadeout D 0.1]
+[scene 10000]
+
+[charaSet B 3062001 1 エリザベート]
+[charaSet D 1098337350 1 終わりのエリザベート]
+[charaDepth D 10]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠
+エリザベート。通称『[#原初:オリジン]』。
+[k]
+
+＠
+最初のエリザベートであり、エリザ粒子の生みの親であり、[r]記憶を失っていた少女。
+[k]
+
+＠
+マスターとの遭遇により、既に記憶は取り戻したと聞く。[r]で、あれば。自分のことも既に失念しているか[line 3]
+[k]
+
+＠
+あるいは、憎まれているのか。[r]どちらにせよ、三年で培った関係は[#塵:ちり]になった。
+[k]
+
+＠
+当然だ。道理だ。当たり前なのだけど。
+[k]
+
+[messageOff]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+＠終わりのエリザベート
+……寂しいわね。
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[maskout white 0.7]
+[wait mask]
+
+[charaFadeout D 0.1]
+[effect bit_sepia01_depth]
+[scene 266900]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 0,-50]
+[wt 0.5]
+
+[maskin white 1.0]
+[wait mask]
+
+＠エリザベート
+ねえ母様！　[#私:アタシ]の歌、どうだった！？
+[k]
+
+[messageOff]
+[maskout white 1.2]
+[wait mask]
+
+[scene 10000]
+[charaFadeout B 0.1]
+[effectDestroy bit_sepia01_depth]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,-50]
+[wt 0.5]
+
+[maskin white 1.0]
+[wait mask]
+
+＠
+無邪気に笑いかける少女はもういない。
+[k]
+
+＠
+そんな当たり前のことを受け入れるのに、[r]もう少し時間が掛かりそうだった。
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_11 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[pictureFrame]
+
+[charaSet B 3062000 1 エリザベート]
+
+[scene 265400]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 1.5]
+
+[se ad788]
+[seVolume ad788 0 0]
+[seVolume ad788 1.0 1.0]
+
+[bgm BGM_EVENT_238 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaDepth E 2]
+[charaDepth A 3]
+[charaDepth B 4]
+[charaDepth K 5]
+
+[charaFace B 5]
+[charaFace A 4]
+[charaFadein B 0.4 -490,0]
+[charaFadein A 0.4 -200,0]
+[charaFadein K 0.4 -325,-200]
+
+[charaMove B -290,0 1.0]
+[charaMove A 0,0 1.0]
+[charaMove K -125,-200 1.0]
+[wt 0.8]
+[seStop ad788 0.4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 400,0]
+[wt 0.5]
+
+＠フレッカス
+あ、逃げてるのか？[r]……なんか遅いな。
+[k]
+
+[charaFace B 8]
+[charaFace A 25]
+
+＠エリザベート
+ちょうどいいところに来たわねタコ！[r]これ運ぶの手伝いなさいタコ！！
+[k]
+
+[charaFace E 3]
+
+＠フレッカス
+え、あ、はい。
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad171]
+[charaMoveReturn B -280,0 0.4]
+[charaMoveReturn A 10,0 0.4]
+[charaMove K 0,-150 0.3]
+[wt 0.3]
+[charaMove K 50,-180 0.3]
+[cueSe SE_24 24_ade1032]
+[cueSe SE_21 21_ad1075]
+[charaShake E 0.05 2 2 0.7]
+[charaMove E 400,-30 0.3]
+[charaFace E 8]
+[wt 0.3]
+
+[charaTalk on]
+
+＠フレッカス
+……重たーーーい！[r]なんだこれ！
+[k]
+
+[charaFace B 0]
+
+＠エリザベート
+アンタが欲しがってた財宝とやらだけど！
+[k]
+
+＠フレッカス
+売れないじゃんこんなの！[r]うわああん騙されたーーー！
+[k]
+
+[charaFace A 26]
+
+＠モレー
+……誰！？
+[k]
+
+[messageOff]
+[charaTalk N]
+[subRenderFadein #A 0.3 -150,-240]
+[subRenderMove #A -150,-220 0.3]
+[wt 0.4]
+
+＠メカエリチャンⅡ号機
+そいつの名はフレッカス。
+[k]
+
+＠メカエリチャンⅡ号機
+特に仲間でも友人でもない、[r]偶然巡り会った元盗賊よ。
+[k]
+
+[subRenderFadeout #A 0.2]
+[wt 0.1]
+[charaFace A 16]
+
+＠モレー
+ダメじゃん。[r]でも今は猫の手でも借りたい！
+[k]
+
+[charaFace E 11]
+
+＠フレッカス
+蛸の手だけどな！
+[k]
+
+[messageOff]
+[charaFadein O 0.4 0,-200]
+[wt 0.7]
+[charaMoveScale O 1.5 1.2]
+[charaMove O 0,-230 1.2]
+[wt 1.5]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[charaFadeout K 0.1]
+
+[charaTalk N]
+[subRenderFadein #A 0.3 -150,-220]
+[wt 0.3]
+
+＠メカエリチャンⅡ号機
+……追っては来ないようですね。[r]ひとまず、このまま脱出してしまいましょうか。
+[k]
+
+[messageOff]
+[wt 0.1]
+[subRenderMove #A -150,-210 0.4]
+[cameraMove 0.4 0,9 1.01]
+[wt 0.5]
+[subRenderMove #A -150,-220 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 1.2]
+
+
+
+[messageOff]
+[se ad788]
+[wt 0.5]
+[fadeout black 2.0]
+[seStop ad788 2.0]
+[bgmStop BGM_EVENT_238 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

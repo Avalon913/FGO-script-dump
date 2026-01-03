@@ -1,0 +1,1015 @@
+
+
+＄04-00-02-15-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[masterBranch _Male _Female]
+[label _Male]
+
+[charaSet A 1098259400 1 主人公_第二部立ち絵_新表情（男）]
+[branch _branchEnd]
+[label _Female]
+[charaSet A 1098259410 1 主人公_第二部立ち絵_新表情（女）]
+[branch _branchEnd]
+[label _branchEnd]
+
+[charaSet B 1098270210 1 カーマ]
+[charaSet C 1098267010 1 カーリー]
+[charaSet D 23001000 1 ＢＢ]
+[charaSet E 1098270200 1 カーマ_通常]
+
+[sceneSet H 189602 1]
+[charaScale H 1.2]
+[sceneSet I 189602 1]
+[charaScale I 1.2]
+
+[imageSet O back10000 1 1]
+[charaScale O 1.3]
+[imageSet P black_fade_re 1 1]
+[charaScale P 2.0]
+[imageSet Q black_fade_re 1 1]
+[charaScale Q 2.0]
+
+[charaSet S 98115000 1 エフェクト用ダミー]
+[charaSet T 98115000 1 エフェクト用ダミー]
+[charaSet U 98115000 1 エフェクト用ダミー]
+
+
+[scene 189602]
+
+
+[pictureFrame cut063_cinema]
+
+[charaTalk off]
+[charaDepth H 1]
+[charaDepth E 2]
+[charaDepth C 3]
+[charaDepth T 4]
+[charaDepth S 5]
+[charaDepth O 9]
+
+[charaScale H 1.2]
+[charaFadein H 0.1 0,-240]
+
+[fadein black 1.0]
+[bgm BGM_BATTLE_135 0.1]
+[wait fade]
+
+[wt 0.2]
+
+[charaFace C 24]
+[charaFadein C 0.1 0,-50]
+[wt 0.5]
+
+[se ad678]
+[blur motion 0.25 4 200 0.5 0.6 0.02 200]
+[charaMoveScale C 1.1 0.25]
+[charaMove C 0,-35 0.25]
+[charaFadeout C 0.25]
+[wt 0.25]
+[blurOff motion 0.1]
+[wt 0.45]
+
+[se ad85]
+[wt 0.15]
+[charaPut T 1]
+[charaEffect T bit_talk_v_slash02]
+[wt 0.4]
+
+[charaFadein O 0.1 0,-200]
+[wt 0.2]
+[seStop ad85 0.3]
+[cueSe SE_23 23_ad1341]
+[wt 0.1]
+[charaPut T 2000,2500]
+[charaEffectDestroy T bit_talk_v_slash02]
+
+[charaPut S 1]
+[charaEffect S bit_talk_41_r]
+
+[charaFadeout O 0.1]
+
+[charaMoveScale H 1.01 1.2]
+[charaMove H 0,-200 1.2]
+[charaShake H 0.02 2 2 0]
+[wt 1.1]
+
+[se ad608]
+[se ad914]
+[charaPut T 1]
+[charaEffect T bit_talk_35]
+[wt 0.1]
+[se ad240]
+[charaEffectStop S bit_talk_41_r]
+[shake 0.03 4 5 0.8]
+[charaShake H 0.03 4 5 0.8]
+[wt 0.2]
+[se ad228]
+[wt 0.8]
+[seStop ad608 0.8]
+[seStop ad914 0.8]
+[wt 1.2]
+
+[blur lens 1.0 2 2]
+[charaMove H 0,-180 0.6]
+[wt 0.4]
+[se ad775]
+[seStop ad228 1.2]
+[wt 1.4]
+
+[wipeout openEye 1.3 1.0]
+[bgm BGM_BATTLE_135 1.3 0.5]
+[wait wipe]
+
+[blurOff lens 0.1]
+[charaFadeout H 0.1]
+[charaFadeout E 0.1]
+[charaPut S 2000,2500]
+[charaScale E 1.0]
+
+[scene 10000]
+[wt 0.2]
+
+[wipein openEye 0.2 1.0]
+[wait wipe]
+[wt 0.5]
+
+？1：カーマ！
+？！
+
+[messageOff]
+[wt 0.5]
+
+＠
+……っと。いけない、いけない。
+[k]
+
+[messageOff]
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 189602]
+
+
+[charaDepth A 1]
+[charaDepth P 7]
+[charaDepth Q 7]
+
+[charaScale A 1.1]
+[charaFace A 0]
+[charaFadein A 0.1 0,15]
+
+[overlayFadein P 0.1 0,-1010]
+[overlayFadein Q 0.1 0,190]
+
+[blur lens 0 2 10]
+
+[pictureFrame]
+
+[cameraMove 0 0,0 1.01]
+
+[wt 0.5]
+
+[bgm BGM_BATTLE_135 1.5 1.0]
+[wipein openEye 1.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+
+
+
+？1：『…………。…………！』
+？！
+
+[subCameraOn 2]
+[charaLayer B sub #A]
+[charaLayer H sub #A]
+[charaLayer U sub #C]
+[subCameraFilter #A maskEdge cut359_mask20 4 0,0,0,255]
+[subCameraFilter #C through]
+[subRenderFadein #C 0.1 0,0]
+
+[subRenderDepth #A 1]
+[subRenderDepth #C 3]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth B 2]
+[charaDepth C 2]
+[charaDepth T 3]
+[charaDepth U 9]
+
+[charaTalk on]
+[charaTalk B]
+[charaScale H 1.3]
+[charaScale B 1.3]
+[charaFace B 4]
+[charaFadein H 0.1 -350,-50]
+
+[subRenderFadeinFSR #A 0.7 280,-140]
+[subRenderMoveFSR #A 280,-190 0.7]
+[wt 1.4]
+
+[charaFadein B 0.7 30,455]
+[wt 1.5]
+
+[charaMove H -350,-175 2.6]
+[charaMove B 30,225 2.6]
+[wt 2.8]
+
+
+＠
+[charaTalk B]
+大丈夫ですよ、マスターさん。[r]そんなに慌てた顔をしなくても。
+[k]
+
+[charaFace B 0]
+＠
+[charaTalk B]
+私、結構頑丈なんです。
+[k]
+
+＠
+[charaTalk B]
+こう見えても神様で、[r]それどころか魔王でもあるので。
+[k]
+
+＠
+[charaTalk B]
+それに[line 3]ええ、それにね。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFaceFade B 2 0.4]
+＠
+[charaTalk B]
+私、欲しいものがあるんです。
+[k]
+
+＠
+[charaTalk B]
+頑張ったら、きっと、それが貰えるんですから。
+[k]
+
+＠
+[charaTalk B]
+ちょっとだけ頑張っちゃおうかなって、[r]珍しくそんな気分なんですよ。
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[subRenderFadeout #A 0.1]
+
+[charaScale C 1.1]
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 0,10]
+[wt 0.3]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.2]
+
+[se ad694]
+[charaMove C 1 0.2]
+[wt 0.8]
+
+[se ad85]
+[cueSe Servants_105500 m51515]
+[cueSe Servants_9944030 bac727]
+[charaPut T 1]
+[charaEffect T bit_talk_h_slash02_fs 0,0 H]
+[wt 0.4]
+
+[charaPut O 1]
+[charaFadeTime O 0.1 1.0]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[cueSe SE_21 21_ad1118]
+[charaPut U 1]
+[charaEffect U bit_talk_blood_stay]
+[shake 0.01 2 2 0.4]
+[wt 1.8]
+[charaScale C 1.0]
+
+[charaEffectStop U bit_talk_blood_stay]
+＠
+ああ、でも。
+[k]
+
+＠
+わたし、なにが、ほしいんでしたっけ？
+[k]
+
+＠
+……わかってる、わかっています。
+[k]
+
+＠
+それは、私が持っていないもの。
+[k]
+
+＠
+全てを与えられる私だから……[r]誰にも、与えてはもらえないもの。
+[k]
+
+[messageOff]
+[wipeout openEye 0.1]
+[wait wipe]
+
+[charaFadeout O 0.1]
+[charaPut U 2000,2500]
+[charaPut P 0,-1050]
+[charaPut Q 0,250]
+
+[subRenderFadeout #C 0.1]
+[wt 0.1]
+
+[charaFadeout B 0.1]
+[charaFadeout U 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[subCameraOff]
+[charaLayer B normal]
+[charaLayer U normal]
+[charaLayer H normal]
+[charaScale B 1.0]
+[charaScale U 1.0]
+[charaScale H 1.0]
+
+[wt 0.5]
+
+[blurOff lens 2.0]
+[wipein openEye 1.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaDepth P 7]
+[charaDepth Q 7]
+[charaDepth C 2]
+
+[se ad714]
+[charaTalk C]
+[charaFace C 26]
+[charaFadein C 0.4 0,-50]
+[wt 1.0]
+
+＠カーリー
+ハ[messageShake 0.05 4 3 0.4]ハハハハッ！
+[k]
+
+[messageOff]
+[se ad678]
+[blur motion 0.25 4 200 0.5 0.6 0.02 200]
+[charaMoveScale C 1.1 0.25]
+[charaMove C 0,-35 0.25]
+[charaFadeout C 0.25]
+[wt 0.25]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[fadeout black 0.4]
+[wait fade]
+
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[imageSet P black_fade_re 1 1]
+[charaScale P 2.0]
+[imageSet Q black_fade_re 1 1]
+[charaScale Q 2.0]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[bgmStop BGM_BATTLE_135 2.0]
+
+[cueSe SE_23 23_ad1337]
+[charaPut U 1]
+[charaEffect U bit_talk_v_slash02]
+[wt 0.4]
+[cueSeStop 23_ad1337 0.6]
+[wt 0.7]
+
+[se ad789]
+[cueSe SE_23 23_ad1339]
+[wt 0.6]
+
+
+[fadeout black 1.0]
+[wait fade]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 10000]
+
+[pictureFrame]
+
+[se ad228]
+[se ad322]
+[se ad608]
+[se ad299]
+[se ad297]
+[wt 1.0]
+
+[seStop ad297 2.0]
+[fadein black 1.0]
+[wait fade]
+[seStop ad299 1.0]
+[seStop ad228 1.0]
+[wt 2.5]
+
+＠
+[line 3]ああ。
+[k]
+
+＠
+ほしいなあ。
+[k]
+
+＠
+『[#　]』。
+[k]
+
+[messageOff]
+[wt 3.0]
+
+
+[se ad7]
+
+[charaScale D 1.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.2 0,-100]
+[charaMove D 0,0 0.4]
+[wt 1.0]
+
+＠ＢＢ
+とぉーう！
+[k]
+
+[charaFace D 6]
+＠ＢＢ
+あーもう、[r]いいかげん思い出してくれません？
+[k]
+
+＠ＢＢ
+わたしだってこんなシリアスな場面で[r]出てきたくはなかったですよ、まったく。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.15]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.7 1]
+[wt 1.1]
+
+[bgm BGM_EVENT_38 0.1]
+
+＠E：カーマ
+[line 3]ああ。[r]貴女でしたっけ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ＢＢ
+そうですよ。紙の月でも月は月。
+[k]
+
+＠ＢＢ
+ムーンな厄介事に対しての、毒をもって毒を制す[r]案件はＢＢちゃんの[#十八番:お　は　こ]……ですが、
+[k]
+
+＠ＢＢ
+この事件に関してはわたしやメルトたちより、[r]カーマさんのほうが適役な気がしましたのでぇ……
+[k]
+
+[charaFace D 1]
+＠ＢＢ
+今回は特別、サービスデイとして、[r]マスターさんに同行できるように手を回しておきました。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+＠E：カーマ
+それはどうも、ってお礼を言って[r]いいところなんですかねえ？
+[k]
+
+＠E：カーマ
+この意識の外では、[r]私はなんだか死にかけてるような気がしますけど。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠ＢＢ
+そこまで責任は持てません。[r]頑張ってください、としか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠E：カーマ
+ところで、手を回す、[r]って具体的に何をどうしたんです？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ＢＢ
+そんなの決まっているじゃありませんか。
+[k]
+
+＠ＢＢ
+貴女を、その世界にふさわしいモノに。[r]マスターさんと共に入って当然のモノに。
+[k]
+
+＠ＢＢ
+わたしには[#それ]をコネコネすることに関して[r]一日の長がありますから。
+[k]
+
+[charaFace D 6]
+＠ＢＢ
+ああ、でも一応言っておきますが、サクラファイブたちは[r]そちらのルールからは少し外れた特別製です。
+[k]
+
+＠ＢＢ
+あれはわたしがわたし自身の[#癌:がん]を切り分けたというか……[r][#自然発生を作った]、といった例外処理です。
+[k]
+
+[charaFace D 1]
+＠ＢＢ
+ま、それでも共通技術はあり、その部分だけでも[r]ＢＢちゃんは[#天才:ラスボス]的だってワケです。すごーい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 25]
+[charaFadein E 0.1 1]
+[bgmStop BGM_EVENT_38 1.5]
+＠E：カーマ
+何の話です？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ＢＢ
+おっと、話が逸れました。[r]貴女をどうしたかって話でしたね。
+[k]
+
+＠ＢＢ
+一言で言えば、当然[line 3]
+[k]
+
+[bgm BGM_MAP_59 0.1]
+
+[charaFace D 11]
+＠ＢＢ
+貴女を、アルターエゴにしておいたのです。
+[k]
+
+[charaFace D 1]
+＠ＢＢ
+正確には、元々の貴女からアルターエゴとしての[r]貴女を切り離しておいた、というコトですね☆
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠E：カーマ
+……どんな？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ＢＢ
+さて。それをはっきり言ってしまっては[r]面白くありません。
+[k]
+
+[charaFace D 6]
+＠ＢＢ
+でも、貴女には[r]もうわかっているはずです。
+[k]
+
+＠ＢＢ
+それは元々の貴女の中に[r]確かに存在する[#要素:人　格]。
+[k]
+
+＠ＢＢ
+けれど本来なら絶対に成立し得ない、[r]表に出ることのないもの。
+[k]
+
+＠ＢＢ
+その要素は、貴女が他者に与える『　』に比べて[r]小さすぎるから。
+[k]
+
+＠ＢＢ
+比重的には、[#全人類対自分]になるものだから。[r]掻き消されてしまって、隠せてしまって、当然です。
+[k]
+
+[charaFace D 0]
+＠ＢＢ
+でも、それだけが独立してアルターエゴとして[r]外に出ている今であれば……。
+[k]
+
+[charaFace D 11]
+＠ＢＢ
+いえ、今だからこそ。素直に見えてしまっても、[r]いいものなんじゃないですかね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠E：カーマ
+[line 6]。
+[k]
+
+[charaFace E 8]
+＠E：カーマ
+ふぅ。
+[k]
+
+[charaFace E 20]
+
+＠E：カーマ
+いえ、自分でもちょっとは[r]おかしいと思っていましたよ。
+[k]
+
+＠E：カーマ
+いくらなんでも、あんな……。[r]この私が、こう、夏に浮かれてるわけでもないのに、
+[k]
+
+＠E：カーマ
+あからさまなおねだりとか、媚び媚びなムーブとか、[r]するはずが……するはずが……。
+[k]
+
+[messageOff]
+[charaFace E 6]
+[wt 1.0]
+
+＠E：カーマ
+[line 3]まあ、やってしまったことは[r]一旦忘れましょう。
+[k]
+
+[charaFace E 7]
+＠E：カーマ
+とにかく私は……[#それ]を欲しいと思ってしまう人格の、[r]アルターエゴだってことですか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠ＢＢ
+はい。
+[k]
+
+＠ＢＢ
+それじゃ、そういう感じでスッキリしたところで、[r]貴女がそこにいる意味も思い出してくださいね。
+[k]
+
+[charaFace D 9]
+＠ＢＢ
+[line 3]いえ、別にわたしも全てを予測していた[r]わけじゃないですよ。
+[k]
+
+＠ＢＢ
+ただ、ここにはわたしたちではなく貴女がいるべき[r]なんだろうなって、そんな予感がしただけ。
+[k]
+
+[charaFace D 6]
+＠ＢＢ
+答えがわかったのは、たった今です。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠E：カーマ
+ああ。なるほど。
+[k]
+
+[charaFace E 8]
+＠E：カーマ
+私である意味があったというなら、そうなんでしょうね。[r]私にもわかりました。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠ＢＢ
+[#非道:ひ　ど]いとか言わないでくださいね？[r]言ってもいいですけど、ラスボス系後輩には褒め言葉です。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠E：カーマ
+言いませんよ。[r]魔王にとっても褒め言葉ですから。
+[k]
+
+[charaFace E 4]
+＠E：カーマ
+……やるべきことがわかっても、[r]一つだけ問題が残っていますが[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaScale D 1.2]
+[charaFace D 1]
+[charaFadein D 0.7 -150,0]
+[charaMove D -200,0 0.7]
+[charaFadeout E 0.7]
+[wt 0.9]
+
+[charaTalk on]
+＠ＢＢ
+なんとかなりますよ、きっと。
+[k]
+
+[charaFace D 0]
+＠ＢＢ
+それではご武運を、と。[r]過去の記憶からのエールでした。
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaScale E 1.2]
+[charaFace E 8]
+[charaFadein E 0.7 150,0]
+[charaMove E 200,0 0.7]
+[charaFadeout D 0.7]
+[wt 0.9]
+
+[charaTalk on]
+＠E：カーマ
+軽く言いますね。やっぱり私と貴女は、[r]本来なら交わるべきではないのでしょう。
+[k]
+
+[charaFace E 0]
+＠E：カーマ
+さて、それでは。
+[k]
+
+[charaFace E 1]
+＠E：カーマ
+魔王の欠片らしく、[r]あの人を傷つけにいきますか[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 1.5]
+[bgmStop BGM_MAP_59 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 189602]
+[wt 1.2]
+
+[wipein openEye 1.7 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.4 1]
+[wt 1.2]
+
+[bgm BGM_MAP_51 1.0]
+
+？1：カーマ、しっかり！
+？2：これを受け取って……！
+？！
+
+[messageOff]
+[se ad852]
+[effect bit_talk_light_range]
+[wt 1.5]
+[charaEffectEdgeBlur B FFF9A5 FFF9A5 4 5]
+[wt 1.5]
+
+[seStop ad852 1.5]
+[wt 0.4]
+[effectStop bit_talk_light_range]
+[charaEffectEdgeBlurStop B]
+[wt 1.5]
+
+[charaFace B 0]
+＠カーマ
+……ふう。[r]ありがとうございます、楽になりました。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut B 2000,2500]
+[charaEffectEdgeBlurDestroy B]
+
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠カーリー
+ああ、あああ！[r]勝利だ、勝利しているぞ！
+[k]
+
+＠カーリー
+世界を壊す舞は止まらぬ。[r]シヴァが現れるまで、止まらぬ！
+[k]
+
+＠カーリー
+来たれ、我が愛するシヴァよ！　我が夫よ！[r]来たれ、来たれ、来たれ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.15]
+
+[se ade393]
+[seVolume ade393 0 0.3]
+[se ade79]
+[cueSe Servants_1000900 bac1034]
+[se ad294]
+[charaPut S -350,-250]
+[charaPut U 1]
+[charaEffect S bit_talk_impactlanding]
+[charaEffect U bit_talk_rubble]
+[shake 0.04 2 8 1.6]
+[wt 0.6]
+[se ad228]
+[seVolume ad228 0 0.8]
+[wt 1.0]
+[seStop ade79 0.2]
+[wt 0.2]
+
+[se ad241]
+[seVolume ad241 0 0.4]
+[se ad293]
+[cueSe Servants_1000900 bac1038]
+[cueSe Servants_1000900 bac1037]
+[shake 0.05 3 6 1.8]
+[charaPut T 350,-250]
+[charaEffect T bit_talk_impactlanding]
+
+[se ad299]
+[seVolume ad299 0 0.2]
+[se ad297]
+[seVolume ad297 0 0.2]
+[wt 2.0]
+[seStop ad294 0.3]
+[seStop ad293 2.0]
+[seStop ad228 0.6]
+[wt 0.4]
+
+
+
+？1：くっ……！
+？2：世界が、もう……！
+？！
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠カーマ
+大丈夫です、大丈夫ですよ。[r]勝ち筋は見えました。大逆転、任せておいてください。
+[k]
+
+[charaFace B 3]
+＠カーマ
+……マジで？　って目ですね。[r]気持ちはわかります。
+[k]
+
+＠カーマ
+一つだけ、ハードルがあるんですよ。[r]それだけ越えたいところです。
+[k]
+
+[charaFace B 0]
+＠カーマ
+[line 3]リソースが、要ります。
+[k]
+
+[charaFace B 2]
+＠カーマ
+ああ、今の不安定なマスターさんの令呪になんて[r]頼れませんよ。
+[k]
+
+＠カーマ
+それ以外の、私が無責任に最後の一滴まで使っていい[r]エネルギーがたっぷり必要だってコトです。
+[k]
+
+[charaFace B 1]
+＠カーマ
+それさえあれば、いいんですけど。[r]どっかに落ちてないですかね？
+[k]
+
+？1：そんな、ものは……
+？！
+
+[messageOff]
+[bgmStop BGM_MAP_51 1.5]
+[seStop ad299 1.5]
+[seStop ad297 1.5]
+[se ad39]
+[effect bit_talk_noble_light]
+[effect bit_talk_under_light]
+[wt 0.5]
+[charaEffectStop U bit_talk_rubble]
+[wt 2.0]
+
+[charaFace B 5]
+[wt 1.0]
+
+？1：割れた地面の中から、何かが……
+？2：勝手に浮かび上がってくる……？
+？！
+
+＠カーマ
+これは[line 3]
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[seStop ad241 2.0]
+[seStop ade393 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

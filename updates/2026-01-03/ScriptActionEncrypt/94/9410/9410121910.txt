@@ -1,0 +1,313 @@
+
+
+＄94-10-12-19-1-0
+
+
+[enableFullScreen]
+[soundStopAll]
+[charaSet A 1098255100 1 ゴルドルフ]
+[charaSet B 1098239320 1 カドック]
+[charaSet C 1098272300 1 オベロン]
+[charaSet D 10018000 1 カズラドロップ]
+
+[charaSet E 10018000 1 カズラドロップ_演出用]
+
+[sceneSet G 230000 1]
+[charaScale G 1.2]
+
+[sceneSet H 231002 1]
+[charaScale H 1.0]
+[sceneSet I 231003 1]
+[charaScale I 1.0]
+
+[charaSet K 98115000 1 エフェクト用]
+
+[sceneSet L 10000 1]
+[charaScale L 1.2]
+
+[charaTalk depthOff]
+[wt 0.1]
+
+[scene 229703]
+[fadein black 1.5]
+[wait fade]
+
+
+[se ad606]
+[se ad933]
+[seVolume ad933 0 0.3]
+[charaPut K 1]
+[charaEffect K bit_talk_light_door]
+[wt 2.0]
+[seStop ad606 1.5]
+[wt 1.0]
+[se ad311]
+[cameraMove 1.0 0,0 1.2]
+[wt 1.5]
+[seStop ad311]
+[se adm20]
+
+[seStop ad933 1.0]
+[fadeout white 1.0]
+[wait fade]
+[charaPut K 2000,2000]
+[charaEffectDestroy K bit_talk_light_door]
+[cameraHome 0.1]
+[charaDepth D 3]
+[charaDepth L 2]
+[charaDepth G 1]
+[charaDepth B 0]
+[charaFadein G 0.1 0,-200]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[scene 230000]
+[wt 1.5]
+[fadein white 2.0]
+[wait fade]
+
+[wt 0.5]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.2 1]
+[wt 0.2]
+[bgm BGM_VALENTINE_1 0.1]
+
+＠カズラドロップ
+（むすー）
+[k]
+
+＠カズラドロップ
+それで。完璧なパパは、[r]私に何をプレゼントしてくれるんです？
+[k]
+
+？1：そうだね。考えたんだけど
+？！
+
+[messageOff]
+[charaMoveScale G 1.3 1.2]
+[charaMoveScale D 1.3 1.2]
+[charaMove G 0,-320 1.2]
+[charaMove D 0,-10 1.2]
+[cueSe SE_24 24_ad1405]
+[cueSeStop 24_ad1405 1.2]
+[wt 0.9]
+[charaFaceFade D 6 0.3]
+[wt 0.8]
+[charaMove G 0,-280 0.7]
+[charaMove D 0,30 0.7]
+[wt 0.5]
+[cueSe SE_21 21_ade553 0.6]
+[wt 1.2]
+[bgm BGM_VALENTINE_1 1.0 0.7]
+[charaFadeTime L 0.2 0.5]
+[charaFace D 15]
+
+＠カズラドロップ
+（……？　な、なんですか。[r]　すぐ隣に座って、こっちを見つめて[line 3]）
+[k]
+
+[messageOff]
+[charaFadeout L 0.2]
+[bgm BGM_VALENTINE_1 1.2 1.0]
+[wt 1.2]
+？1：キミは今、何が欲しい？
+？！
+
+[charaFace D 16]
+
+＠カズラドロップ
+[line 3]は？
+[k]
+
+？1：自分たちは弱いから答えが出せないかもしれない
+？2：キミの望みに気付いてあげられないかもしれない
+？！
+
+[messageOff]
+[wt 0.7]
+
+？1：だから、直接教えてほしいなって
+？！
+
+[messageOff]
+[charaTalk D,B]
+[charaFadeout D 0.4]
+[charaFadeout G 0.4]
+[wt 0.4]
+[charaScale D 1.0]
+
+＠カドック
+さすがにもうわかっているだろ？
+[k]
+
+＠カドック
+[%1]は本気だ。[r]本気で１００％おまえに寄り添うつもりだ。
+[k]
+
+＠カドック
+だから、この問いかけもプレゼントの一部って[r]考えになるんじゃないのか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠オベロン
+ノーヒントだとは言っていたが、[r]答えを教えないとは言ってなかったろ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+＠カズラドロップ
+そ、そんなの、いくらなんでも[#詭弁:きべん]です！[r]欲しいものを直接聞くなんて！
+[k]
+
+[charaFace D 24]
+
+＠カズラドロップ
+でも、プレゼントの一部って言われたら[r]そうかもで……嬉しいのは本当で、もー！
+[k]
+
+[messageOff]
+[bgmStop BGM_VALENTINE_1 1.5]
+[scene 231002 0.5]
+[charaTalk D]
+[charaFadeout D 0.5]
+[wt 1.2]
+[cueSe SE_24 24_ade1117]
+[fowardEffect bit_talk_point_11 327,-133]
+
+[wt 4.5]
+[fowardEffectStop bit_talk_point_11]
+[wait fowardEffect]
+
+？1：（途中で止まった！？）
+？！
+
+[fowardEffectStop bit_talk_point_11]
+[scene 230000 0.5]
+
+[charaFace D 4]
+[charaFadein D 0.5 1]
+[wt 0.8]
+[bgm BGM_EVENT_11 0.1]
+
+＠カズラドロップ
+[line 3]駄目です。[r]さすがに駄目です！
+[k]
+
+[charaFace D 3]
+
+＠カズラドロップ
+これは私に都合が良すぎます！[r]個人的すぎて、望み通りすぎて、まるで、
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠オベロン
+……夢のような、かい？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+
+＠カズラドロップ
+[line 3]！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠オベロン
+分かっていたさ。[r]僕は夢の[#噺:はなし]をかざすものだからね。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+[wt 0.7]
+[charaMove D -250,0 0.4]
+[charaFadeout D 0.4]
+[se ade235]
+[wt 1.0]
+[seStop ade235 0.7]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ゴルドルフ
+あっ、逃げた！[r]採点はまだだろう！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠カドック
+カードに数字は……[r]出ていない、ままなのか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠オベロン
+あっち側から処理を強制停止した、[r]って感じかな。
+[k]
+
+[charaFace C 7]
+
+＠オベロン
+大丈夫。そんな力技は長く持つはずがない。[r]一時しのぎの時間稼ぎだ。
+[k]
+
+＠オベロン
+カズラドロップを追いかけよう。[r]きっとゴールで大団円が迎えられる。
+[k]
+
+[charaFaceFade C 6 0.2]
+＠オベロン
+……まあ、ハッピーエンドとはいかないかもだが。[r]夢が終わる時は、鈍い痛みが伴うものだ。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

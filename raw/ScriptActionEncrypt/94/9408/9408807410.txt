@@ -1,0 +1,1250 @@
+
+＄94-08-80-74-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098230000 1 Ｘ・オルタ]
+[charaSet B 1098240200 1 お路]
+[charaSet C 25007002 1 アビゲイル]
+[charaSet D 1098240800 1 コブンゴ]
+[charaSet E 1098230000 1 Ｘ・オルタ_演出用]
+
+[imageSet X back10000 1]
+[charaScale X 0.9]
+[charaDepth X 10]
+
+[sceneSet S 10001 1]
+[charaScale S 1.1]
+[sceneSet T 10000 1]
+[charaScale T 1.1]
+[sceneSet U 147903 1]
+[charaScale U 1.01]
+
+[charaTalk depthOff]
+[charaDepth D 2]
+[charaDepth A 2]
+[charaDepth B 2]
+[charaDepth U 1]
+[charaFadein U 0.1 0,-200]
+[wt 0.1]
+[scene 147903]
+[fadein black 1.5]
+[wait fade]
+
+＠
+[align center]～サークル『美少年』セカンドルーム～[align][r][align center]～馬琴、北斎、バニヤンは別室にて相談中～[align]
+[k]
+
+[messageOff]
+[wt 0.4]
+[bgm BGM_MAP_61 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[cueSe SE_22 22_ade756 0.4]
+[charaMoveReturn D 0,-4 0.4]
+[wt 0.4]
+[charaMoveReturn D 0,-4 0.4]
+
+＠コブンゴ
+フゴッ、フゴフゴッ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[charaMoveReturn A 0,-4 0.4]
+
+＠Ｘ・オルタ
+（もぐもぐもぐ）[wt 0.3][charaMoveReturn A 0,-4 0.4]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[subCameraOn 1]
+[charaLayer B sub #A]
+[subCameraFilter #A through]
+[subRenderFadein #A 0 0,0]
+
+[charaLayer U sub #A]
+[charaLayer X sub #A]
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+
+＠お路
+……なるほど“コスプレエ”ですか。[r]趣味の仮装でいらっしゃいますね。
+[k]
+
+[charaFace B 47]
+[subRenderMoveScale #A 1.15 1.5]
+[subRenderMove #A 0,-25 1.5]
+
+＠お路
+………………………………[wt 1.8][charaEffect X bit_talk_41_fs 0,350][wt 0.2][charaFace B 22][r]たいへん興味がございます！
+[k]
+
+[charaEffectDestroy X bit_talk_41_fs]
+[charaFace B 44]
+[charaDepth A 0]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠お路
+あ、あの、と申しましても、仮装するほうではなく、[r]もっぱら人様のお姿を鑑賞する側ですけれど……。
+[k]
+
+[messageOff]
+[charaTalk B,A]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[charaFadeout B 0.1]
+[charaFadeout U 0.1]
+
+＠Ｘ・オルタ
+やったー。[r]ぜひ挑戦してみようかなーと。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[subCameraOff]
+[charaLayer B normal]
+[charaLayer U normal]
+[charaLayer X normal]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠アビゲイル
+以前、北斎さんに江戸時代の変わったブロマイドを[r]見せていただいたわ？　あんな感じかしら？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+
+＠お路
+それはきっと“役者絵”や“芝居絵”でございますね。
+[k]
+
+[charaFace B 21]
+＠お路
+もっぱら有名な役者様のお姿を浮世絵にしたもので、[r]誰でも仮装を楽しめるコスプレ、とは異なります。
+[k]
+
+[charaFace B 23]
+＠お路
+[#市井:しせい]の町民は、仮装もまた贅沢な振る舞いの一つとして[r]禁じられ、ただ夢見るばかりでしたので。
+[k]
+
+[charaFace B 22]
+
+＠お路
+今では誰でも趣味として[#嗜:たしな]むことが出来ます。[r]本当によい時代でございます！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 1]
+
+＠アビゲイル
+だったらアルトリア縛りは時代の逆行だわ。[wt 0.8][charaFace C 1][r]それはともかくとして、じゃあええと、つまり……
+[k]
+
+＠アビゲイル
+えっちゃんさんが着飾ったお写真をまとめて[r]一冊のご本[line 3]コスプレ写真集にすればいいのね？
+[k]
+
+[charaFace C 0]
+＠アビゲイル
+写真集の“テーマ”は決まっていらっしゃるの？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[charaMoveReturn A 0,-4 0.4]
+
+＠Ｘ・オルタ
+（もぐもぐ……ごくん）[wt 0.8][charaFace A 1][r]はい、テーマを熟考しました。
+[k]
+
+[charaFace A 18]
+
+＠Ｘ・オルタ
+せっかくですから、[r]ここはぜひ私の大好きなものを。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth E 4]
+[charaDepth U 3]
+[charaDepth A 2]
+[charaDepth C 1]
+[charaScale E 1.2]
+[charaScale U 1.2]
+[charaFace E 18]
+[charaFadein E 0.4 0,15]
+[charaFadein U 0.4 0,-270]
+[wt 0.4]
+[se ad186]
+[charaDepth C 0]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+[charaFadeout A 0.1]
+
+＠Ｘ・オルタ
+[f large][line 3]“[#和菓子:わ　　　が　　　し]”です。
+[k]
+
+[charaFace E 19]
+
+＠Ｘ・オルタ
+さまざまな和菓子をモチーフとした[r]斬新で大胆でスイートなコスプレを！
+[k]
+
+[messageOff]
+[charaFadeout E 0.4]
+[charaFadeout U 0.4]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk C]
+
+＠アビゲイル
+！？　わがし？[messageShake 0.04 3 3 0.3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 45]
+[charaFadein B 0.1 1]
+
+＠お路
+あれ。音楽でなく、はたまたアイドルでもなく、[r]“和菓子”でいらっしゃいますか。
+[k]
+
+[charaFace B 48]
+
+＠お路
+なるほど……なるほど？[r]和菓子のコスプレ……エ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠Ｘ・オルタ
+各種衣装は私の秘蔵コレクションが。
+[k]
+
+[charaFaceFade A 1 0.2]
+
+＠Ｘ・オルタ
+ただですね、着物系についてはぜひ[r]お[#路:みち]さんにお願いをしたく。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+
+＠お路
+[#左様:さよう]でしたか……。[r]でしたら私も、裁縫仕事を張り切らねばなりませんね！
+[k]
+
+[charaFace B 43]
+＠お路
+ただ、着物の仕立てといえば、あの方、[r]ミス・クレーンさんも大変適役かと存じますが……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+
+＠アビゲイル
+あら、クレーンさんでしたら[line 3]
+[k]
+
+[charaFace C 14]
+＠アビゲイル
+ハベトロットさんやヴラド三世さんたちとご一緒に[r]ご自分のサークルを立ち上げられていたはずよ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠Ｘ・オルタ
+あちゃー。[r]それはとても忙しそうです。
+[k]
+
+＠Ｘ・オルタ
+実はわりと期待していたのですが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アビゲイル
+そうね。一応、ご相談してみるのはいかがかしら？
+[k]
+
+[charaFace C 0]
+＠アビゲイル
+睡眠時間をさらに倍プッシュでけずって[r]手伝ってくださるかも。
+[k]
+
+[charaFace C 14]
+
+＠アビゲイル
+あるいは夢の中でも……とか……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 44]
+[charaFadein B 0.1 1]
+
+＠お路
+……さ、さすがにそれは心苦しいですね。[r]ともあれ、[#大筋:おおすじ]は承知いたしました。
+[k]
+
+＠お路
+お[#父:と]っさんたちへ、そしてクロエさんにもお伝えして[r]早速取りかかることにいたしましょう。
+[k]
+
+[charaFace B 21]
+
+＠お路
+ふふっ、[#意想外:いそうがい]な運びとなりましたが、[r]私には[#物怪:もっけ]の[#幸:さいわ]いにも思えてまいりました。
+[k]
+
+[charaFace B 22]
+＠お路
+どうか、良いご本にいたしましょうね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[cueSe SE_22 22_ade756 0.4]
+
+＠コブンゴ
+ヒャン！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth A 2]
+[charaDepth C 3]
+[charaDepth U 1]
+[charaDepth D 0]
+[charaScale A 1.2]
+[charaScale C 1.2]
+[charaScale U 1.2]
+[charaFace C 1]
+[charaFadein C 0.4 -256,10]
+[charaFace A 1]
+[charaFadein A 0.4 256,10]
+[charaFadein U 0.4 0,-270]
+[wt 1.4]
+[charaFadeout D 0.1]
+[charaMove C -356,10 1.0]
+[charaMove A 156,10 1.0]
+[charaMove U -100,-270 1.0]
+[wt 1.2]
+[charaTalk on]
+[charaFace A 19]
+
+＠Ｘ・オルタ
+あ、お団子のおかわりをください。
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_61 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout U 0.1]
+[charaFadeout D 0.1]
+[charaScale A 1.0]
+[charaScale C 1.0]
+[charaSet A 3049001 1 アニング]
+[charaSet B 10013000 1 スーパーバニヤン]
+[charaSet C 1098240300 1 黒犬]
+[charaSet D 1098240220 1 とおりすがりの麗人]
+[imageSet E cut378_yfs00_full 1]
+
+[sceneSet U 143900 1]
+
+[scene 63300]
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_109 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠アニング
+ふーん、そーかそーか。[r]ま、スーバニも楽しくやってるみたいでよかったよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠スーパーバニヤン
+ええ～っ？　私の話聞いてた、アニングちゃん！？[r]問題山積みなんだけど！
+[k]
+
+＠スーパーバニヤン
+あ……アニングちゃんは、サバフェスは……？[r]よかったら[line 3]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠アニング
+ウチはパスパス！
+[k]
+
+[charaFace A 1]
+
+＠アニング
+ここあったかいし、化石は掘り放題だし、[r]可愛い子いっぱいいるしさ！
+[k]
+
+[charaFace A 9]
+
+＠アニング
+こう見えて毎日忙しいわけ！[r]ま、当日の会場くらいには顔を出すかもな！
+[k]
+
+＠アニング
+じゃーな、スーバニ！[r]適当にがんばれよ！
+[k]
+
+[messageOff]
+[cueSe Servants_304900 m46704 0.2]
+[wt 0.7]
+[charaFadeout A 0.7]
+[se ade491]
+[seStop ade491 1.2]
+[wt 1.7]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠スーパーバニヤン
+…………行っちゃった。エンジョイしてるし。[r]こんな夜中にどこへ遊びに行くのやら。
+[k]
+
+[charaFace B 4]
+
+＠スーパーバニヤン
+しかし、さっきまでのミーティング……[r]耳がおっかしくなるかと思った。
+[k]
+
+＠スーパーバニヤン
+馬琴も北斎も、とにかく声が大きいんだもん。
+[k]
+
+＠スーパーバニヤン
+ちょっと休憩って抜け出してはきたけど……。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_109 0.4 0.6]
+[charaDepth B 2]
+[charaDepth T 1]
+[charaFadeTime T 0.4 0.5]
+[wt 0.4]
+
+＠スーパーバニヤン
+あのままじゃ、二人とも一晩中語り明かす気だ。[r]やれやれだよ。
+[k]
+
+＠スーパーバニヤン
+でも、うん……。
+[k]
+
+＠スーパーバニヤン
+このままじゃイベント当日に間に合うはずないって、[r]彼らも薄々、理解してると分かったのは収穫だったかなあ。
+[k]
+
+＠スーパーバニヤン
+本人たちはなかなか言わないし、私から告げたら、[r]ムキになって否定してきそうだけど。
+[k]
+
+[charaFace B 5]
+
+＠スーパーバニヤン
+[line 3]それに、もうひとつの大問題がある。
+[k]
+
+[charaFace B 4]
+
+＠スーパーバニヤン
+あの時代がかった[#読本:よみほん]を本気で出版するの？
+[k]
+
+＠スーパーバニヤン
+いくら自分が好きなものを作れるのが[r]同人誌の[#醍醐味:だ  い  ご  み]だって言っても……。
+[k]
+
+＠スーパーバニヤン
+馬琴も北斎も、[r]南の島とお祭り騒ぎの空気に酔ってるよね。
+[k]
+
+[charaFace B 5]
+
+＠スーパーバニヤン
+アルトリア縛りとか関係なく[r]Ｘ・オルタたちの写真集の方がぜんぜん見込みある。
+[k]
+
+＠スーパーバニヤン
+撮影だったら、私もある程度は手伝えるし。
+[k]
+
+[charaFace B 4]
+
+＠スーパーバニヤン
+撮影……？
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_109 0.4 1.0]
+[charaFadeout T 0.4]
+[wt 0.4]
+
+＠スーパーバニヤン
+……撮影……撮影……。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_109 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout B 0.1]
+[charaScale U 1.2]
+[charaFadein U 0.1 40,-250]
+[scene 143900]
+[wt 1,5]
+[charaMove U -40,-250 5.0]
+[se ad37 0]
+[seVolume ad37 1.5 0.2]
+[se ad462 0]
+[seVolume ad462 1.5 1.0]
+[se ad510 0]
+[seVolume ad510 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[wt 2.0]
+[charaFadeout U 0.7]
+[wt 1.0]
+
+[se ad556 0]
+[seVolume ad556 1.2 0.4]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 1.2]
+[seStop ad556 2.5]
+[charaFace B 4]
+[charaShake B 0.03 2 1 0.4]
+
+＠スーパーバニヤン
+風つよ……。
+[k]
+
+＠スーパーバニヤン
+…………はぁ。
+[k]
+
+＠スーパーバニヤン
+いっそ、このまま逃げちゃおっかな……。
+[k]
+
+[cueSe Servants_404800 m49614 0.4]
+[seStop m49614 0.8]
+
+＠C：？？？
+オンッ。
+[k]
+
+[charaFace B 0]
+
+＠スーパーバニヤン
+……犬の声？　……トレイ？　アニングなの？[r]あれ、でもこんな低い声だったかな[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.2]
+[wt 0.1]
+
+[seStop ad37 2.5]
+[seStop ad462 2.5]
+[seStop ad510 2.5]
+[se ade255 0.3]
+[wt 0.7]
+
+[charaTalk off]
+[charaDepth E 2]
+[charaDepth U 1]
+[charaDepth B 0]
+[charaScale E 1.15]
+[charaScale U 1.1]
+[charaFace E 0]
+[charaFadein E 0.4 120,0]
+[charaFadein U 0.4 0,-170]
+[charaMove E 120,-100 3.2]
+[charaMove U 0,-270 3.2]
+[wt 0.2]
+[se ad132]
+[seStop ad132 0.4]
+[wt 1.6]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[charaFadeout E 0.4]
+[charaFadeout U 0.4]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk B]
+
+＠スーパーバニヤン
+きゃっ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaScale E 1.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 290,0]
+
+＠黒犬
+ウォウ……？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.2 -256,0]
+[se ad132 0.4]
+[seStop ad132 0.4]
+[cueSe SE_21 21_ad1065 0.4]
+[seStop 21_ad1065 0.4]
+[wt 0.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaFadein B 0.2 256,0]
+[se ad132 0.4]
+[seStop ad132 0.4]
+[cueSe SE_21 21_ad1065 0.4]
+[seStop 21_ad1065 0.4]
+[wt 0.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaFadein B 0.2 1]
+[se ad132 0.4]
+[seStop ad132 0.4]
+[cueSe SE_21 21_ad1065 0.4]
+[seStop 21_ad1065 0.4]
+[wt 0.2]
+
+＠スーパーバニヤン
+や、やんのかー、やんのかおらー！
+[k]
+
+[messageOff]
+[charaFadeout B 0.2]
+[wt 0.1]
+
+[se ad173 0]
+[seVolume ad173 0.7 1.0]
+[wt 0.7]
+[charaTalk off]
+[charaDepth D 2]
+[charaDepth U 1]
+[charaDepth B 0]
+[charaScale D 1.1]
+[charaScale U 1.1]
+[charaFace D 20]
+[charaFadein D 0.7 0,50]
+[charaFadein U 0.7 0,-200]
+[charaMove D 0,0 1.4]
+[charaMove U 0,-250 1.4]
+[seStop ad173 1.6]
+[wt 1.0]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_66 0.1]
+
+＠D：？？？
+勝負であれば、無論受けて立とう[line 3]
+[k]
+
+[charaFace D 6]
+
+＠D：？？？
+……が、ここは[#吾㑪:わなみ]の犬が[r][#其方:そなた]を驚かせてしまったようだな。
+[k]
+
+＠D：？？？
+無礼をいたした。相済まぬ。
+[k]
+
+[messageOff]
+[charaTalk D,B]
+[charaFadeout D 0.4]
+[charaFadeout U 0.4]
+[wt 0.7]
+[charaTalk on]
+[charaTalk B]
+[charaScale D 1.0]
+
+＠スーパーバニヤン
+……！？
+[k]
+
+[charaDepth B 2]
+[charaDepth T 1]
+[charaFadeTime T 0.2 0.5]
+
+＠スーパーバニヤン
+（すごい美人が出てきちゃった……[r]　東洋……日本の……[#お姫さま:プ  リ  ン  セ  ス]？）
+[k]
+
+＠スーパーバニヤン
+（こんな人、カルデアにいたかなあ？）
+[k]
+
+[charaFadeout T 0.2]
+[wt 0.1]
+[charaFace B 11]
+
+＠スーパーバニヤン
+あれ……でも[#路:みち]……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠D：？？？
+[#此:こ]はそも[line 3][wt 0.7][charaFace D 7][r][#吾㑪:わなみ]は[#路:みち]に似ておるか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠スーパーバニヤン
+うんすこし……あれ、どうかな……[r]確かに最初はそんな印象が……。
+[k]
+
+[charaDepth B 2]
+[charaDepth T 1]
+[charaFadeTime T 0.2 0.5]
+
+＠スーパーバニヤン
+（だけど……よく見たら、まるで雰囲気が違う？[r]　東洋人の顔は見分けつきにくい……！）
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout T 0.2]
+[wt 0.1]
+
+[charaDepth D 3]
+[charaDepth C 2]
+[charaTalk D]
+[charaFace D 36]
+[charaFadein D 0.1 0,0]
+[charaFace C 0]
+[charaFadein C 0.1 -150,50]
+
+＠とおりすがりの麗人
+[#路:みち]や、馬琴、あの者たちと[#吾㑪:わなみ]とは、[r]近くて遠き血縁のようなもの。
+[k]
+
+[charaFace D 26]
+＠とおりすがりの麗人
+とまれ[#今宵:こよい]は風[#清々:すがすが]しく、[#星彩:せいさい]もまた[#蒼茫:そうぼう]たり、[r][#時:とき]の[#宜:よろ]しきに[#随:したが]い、犬と散歩をしておった。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+[charaFadeTime T 0.2 0.5]
+
+＠スーパーバニヤン
+（……って、た、ただの犬の散歩だよね？[r]　そんなご大層に散歩アピールする人、いる？）
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout T 0.2]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,0]
+[charaFace C 0]
+[charaFadein C 0.1 -150,50]
+
+＠とおりすがりの麗人
+[line 3]してみると、どこか思い詰めた様子で[r][#汀:みぎわ]を[#矯:た]め[#見:み]る[#其方:そなた]が目に入った。
+[k]
+
+[charaFace D 8]
+＠とおりすがりの麗人
+[#吾㑪:わなみ]よりも先にこの者が動いたが。
+[k]
+
+[charaFace D 9]
+＠とおりすがりの麗人
+[#思:おも]い[#煩:わずら]う気配には、人一倍、[#否:いな]、[r]犬一倍、[#目:め]の[#鞘:さや][#外:はず]れ、察しが良い。
+[k]
+
+＠黒犬
+…………。
+[k]
+
+[charaFace D 12]
+＠とおりすがりの麗人
+悩み事であろ。[#支:つか]えなければ語ってみよ。[r]それともやはり……気晴らしに[#一戦:ひといくさ]交えておくか？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠スーパーバニヤン
+…………うああ、ぐいぐい来るし。
+[k]
+
+[charaFace B 7]
+
+＠スーパーバニヤン
+[#ワナミ]さんさ、[r]あなたもしかして私のファン？　リスナーさん？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 19]
+[charaFadein D 0.1 0,0]
+[charaFace C 0]
+[charaFadein C 0.1 -150,50]
+
+＠とおりすがりの麗人
+難儀を前に挑む者あらば、[r][#あななう]は[#神女:しんにょ]たる[#吾㑪:わなみ]の務めでな。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[charaFadeTime T 0.2 0.5]
+
+＠スーパーバニヤン
+（いよいよ何言ってるのやら意味不明だし。[r]　……なんだけど……）
+[k]
+
+[charaFadeout T 0.2]
+[wt 0.1]
+[charaFace B 8]
+
+＠スーパーバニヤン
+……馬琴たちには……絶対言わないでね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 0,0]
+[charaFace C 0]
+[charaFadein C 0.1 -150,50]
+
+＠とおりすがりの麗人
+しかと約束いたす。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_66 1.5 0.4]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 1.0]
+[se ad37 0]
+[seVolume ad37 1.5 0.4]
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.5]
+[seStop ad37 2.5]
+[bgm BGM_EVENT_66 1.5 1.0]
+
+[charaTalk D]
+[charaFace D 19]
+[charaFadein D 0.4 0,0]
+[charaFace C 0]
+[charaFadein C 0.4 -150,50]
+[wt 0.4]
+
+＠とおりすがりの麗人
+……成る程。[#左様:さよう]であったか。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠スーパーバニヤン
+でも、私はプロデューサーだもん。[r]これでも一応はっ。
+[k]
+
+＠スーパーバニヤン
+ウィリアムズや、マスターの前で[r]自分が引き受けるって言ったから。
+[k]
+
+＠スーパーバニヤン
+作品を完成させて発表することを[r]ちゃんと第一に考えなきゃ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 0,0]
+[charaFace C 0]
+[charaFadein C 0.1 -150,50]
+
+＠とおりすがりの麗人
+馬琴や北斎は、そうではない、と。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠スーパーバニヤン
+うん、違うよ。たぶんね。
+[k]
+
+[charaFace B 0]
+
+＠スーパーバニヤン
+そりゃあ、作品へ向ける情熱は度が外れてて[r]付き合わされるこっちは、気が遠くなる程だけど。
+[k]
+
+＠スーパーバニヤン
+このハワトリアは、イベントを成功させないと[r]初日に戻っちゃう特異点、だからさ……。
+[k]
+
+[messageOff]
+[subCameraOn]
+[charaTalk off]
+[charaLayer E sub #A]
+[charaLayer U sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 3 255,255,255,255 0]
+[subRenderScale #A 1.2]
+[charaDepth E 2]
+[charaDepth U 1]
+[charaScale E 1.0]
+[charaScale U 1.1]
+[charaFace E 0]
+[charaFadein E 0 360,220]
+[charaFadein U 0 200,0]
+[subRenderFadein #A 0.4 -320,-100]
+[subRenderMove #A -320,-200 0.4]
+[wt 1.0]
+
+[charaFadeTime T 0.2 0.5]
+
+[charaFace B 12]
+
+＠スーパーバニヤン
+（よく見れば……かわいいワンコだ……）
+[k]
+
+[messageOff]
+[wt 0.2]
+[subRenderFadeout #A 0.4]
+[subRenderMove #A -320,-300 0.4]
+[wt 1.0]
+[charaFadeout E 0.1]
+[charaFadeout U 0.1]
+[charaTalk on]
+[charaFace B 8]
+
+＠スーパーバニヤン
+（誰かに話してみるのも、気持ちを言葉で整理できて、[r]　ぜんぜん無意味ってわけじゃないんだな……）
+[k]
+
+[charaFadeout T 0.2]
+[wt 0.1]
+[charaLayer E normal]
+[charaLayer U normal]
+[subCameraOff]
+[charaFace B 4]
+
+＠スーパーバニヤン
+……我を忘れて、熱中して作っている瞬間こそが[r]一番楽しいんだったら、ずっと続けていればいい。
+[k]
+
+＠スーパーバニヤン
+終わりが来ないほうがいい、ってことじゃない？
+[k]
+
+[charaFace B 9]
+
+＠スーパーバニヤン
+わざわざ私が入り込む余地なんか[r]最初から無いのかも。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,0]
+[charaFace C 0]
+[charaFadein C 0.1 -150,50]
+
+＠とおりすがりの麗人
+………………終わり、か。
+[k]
+
+＠とおりすがりの麗人
+一度は[#終焉:しゅうえん]を迎えたからこそ、[r]輝き続けるものもあろう。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠スーパーバニヤン
+……だよね。[r]考え方の問題、なのかな。
+[k]
+
+＠スーパーバニヤン
+なら、リセットを利用してもいいんじゃないかって、[r]そう思っちゃうんだ、私は。
+[k]
+
+[charaFace B 9]
+
+＠スーパーバニヤン
+この７日間は捨てよう！[r]次の回の準備期間だ、ってね。アハハ。
+[k]
+
+＠スーパーバニヤン
+完成に向けて[#一生懸命:いっしょうけんめい]な他のサークルとか、[r]編集のクロエには悪いけれど。
+[k]
+
+[charaFace B 8]
+
+＠スーパーバニヤン
+でも、そんなことを私から持ちかけちゃったら……[r]きっと馬琴も北斎も怒るんじゃないかなって。
+[k]
+
+[charaFace B 4]
+
+＠スーパーバニヤン
+クリエイターの誇りを[#愚弄:ぐろう]されたって、[r]そんなふうに思われちゃったらさ、私もキツい……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace D 19]
+[charaFadein D 0.1 0,0]
+[charaFace C 0]
+[charaFadein C 0.1 -150,50]
+
+＠黒犬
+……ウォウ……。
+[k]
+
+[charaFace D 6]
+＠とおりすがりの麗人
+……[#苦衷:くちゅう]察する。[r]されど、[#臆:おく]するな。
+[k]
+
+[charaFace D 19]
+＠とおりすがりの麗人
+怒らせておくがよい。[r][#其方:そなた]にはその怒りも受け止める度量がある。
+[k]
+
+[charaFace D 36]
+＠とおりすがりの麗人
+芸術は長く、人の一生は短し。
+[k]
+
+＠とおりすがりの麗人
+北斎も馬琴も、あと数年、時間があれば、[r]この[#眼:まなこ]に光があればと、大いに悔やんだ。
+[k]
+
+[charaFace D 7]
+＠とおりすがりの麗人
+[#さあばんと]とて同じこと。[r][#其方:そなた]は優しき[#死神:しにがみ]となれ。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠スーパーバニヤン
+……死神って……フフッ……[r]それはちょっと……かっこいいね。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_66 1.5 0.5]
+[charaDepth B 2]
+[charaDepth S 1]
+[charaTalk D]
+[cueSe SE_21 21_ad1110 0]
+[seVolume 21_ad1110 0.7 0.15]
+[se ad952 0]
+[seVolume ad952 0.7 0.3]
+[charaPut S 0,-200]
+[charaFadeTime S 1.0 0.3]
+[wt 1.5]
+[charaFadeout S 1.5]
+[seStop 21_ad1110 2.2]
+[seStop ad952 2.2]
+[wt 2.4]
+
+[charaFace B 11]
+
+＠スーパーバニヤン
+…………あれ？
+[k]
+
+＠スーパーバニヤン
+……あれれ？
+[k]
+
+[messageOff]
+[charaDepth U 9]
+[charaFadein U 1.0 50,-250]
+[charaMove U -50,-250 10.0]
+[wt 1.0]
+
+＠スーパーバニヤン
+ワナミさん？　どこいった？[r]ワンコくうん？
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[bgmStopEnd BGM_EVENT_66 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

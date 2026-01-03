@@ -1,0 +1,708 @@
+
+＄94-07-36-02-4-0
+
+[enableFullScreen]
+[soundStopAll]
+
+
+[charaSet C 99502600 1 マシュ]
+[charaSet F 6026300 1 燕青]
+[charaSet H 1054000 1 ガレス]
+[charaSet I 6043000 1 オルトリンデ]
+[charaSet M 28003000 1 レディ・アヴァロン]
+
+[charaSet A 3001000 1 クー・フーリン]
+[charaSet B 3003001 1 ヴラド三世]
+[charaSet L 3002000 1 ディルムッド]
+[charaSet N 3004000 1 カルナ]
+[charaSet O 10011000 1 バゼット]
+
+[sceneSet P 159900 1]
+[charaScale P 1.3]
+
+[charaSet S 98115000 1 エフェクト用ダミー]
+
+[charaPut S 2000,2000]
+[charaEffect S bit_talk_10_LowLevel]
+
+[scene 159800]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.8]
+
+[fadeout black 1.0]
+[wait fade]
+
+[wt 0.5]
+[charaFadein P 0.1 -100,-300]
+[charaMove P 100,-300 6.0]
+[fadein black 1.0]
+[se ad462]
+[seVolume ad462 0 0]
+[seVolume ad462 1.0 1.0]
+[wait fade]
+
+[wt 3.0]
+[scene 159900]
+[wt 1.0]
+[charaFadeout P 1.0]
+[wt 1.5]
+[seStop ad462 1.0]
+＠
+[line 3]歩く樹木、発生源（予想地点）。
+[k]
+
+[messageOff]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+[bgm BGM_EVENT_28 0.1]
+
+＠クー・フーリン
+ふう、やっと１００株ってとこか？[r]どうだい大将？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠ヴラド三世
+そうだな。[r]あと２株ほどで１００株を超えるところだ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.4 1]
+[wt 0.4]
+
+＠ディルムッド
+何と素晴らしい成果でしょう！[r]球根の自動生成には成功しましたし……
+[k]
+
+＠ディルムッド
+後は、育った球根をここで樹木まで育てて、[r]花が咲くのを見守るばかりですね。
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.4 1]
+[wt 0.4]
+
+＠カルナ
+何処かの幻想種だったか。[r]並の樹木を育てるのとは、訳が違っているが。
+[k]
+
+[charaFace N 1]
+
+＠カルナ
+その分、やり甲斐があるというもの。
+[k]
+
+[messageOff]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 0]
+[charaFadein O 0.4 1]
+[wt 0.4]
+
+＠バゼット
+やり甲斐[line 3]
+[k]
+
+[charaFace O 8]
+
+＠バゼット
+た、確かに。やり甲斐はありますね。[r]目に見えて樹木が増えていく様子は心地よい。
+[k]
+
+[charaFace O 5]
+
+＠バゼット
+この成長度合いは確かに、[r]神秘なき植物ではあり得ないものですし！
+[k]
+
+[charaFace O 4]
+
+＠バゼット
+しかし……[r]花、いつまで経っても咲きませんね？
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠クー・フーリン
+そこなんだよな～。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[bgmStop BGM_EVENT_28 1.0]
+[wt 0.5]
+
+？1：ＹＡＲＩＯのみんな！？
+？！
+
+？1：ど、どういうこと？
+？2：な、なんでＹＡＲＩＯが……
+
+？！
+
+[bgm BGM_EVENT_7 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠クー・フーリン
+あ？　なんだ、マスターかよ。[r]どうした？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ヴラド三世
+よそ見をするな。[r]追加で１株できたぞ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[shake 0.05 0 2 2.0]
+[effect bit_talk_presage]
+[se ad14]
+[seVolume ad14 0 0.6]
+[wt 1.0]
+[se bac255]
+[wt 1.0]
+
+[se ade409]
+[wt 1.0]
+[seStop bac255 1.0]
+[seStop ad14 1.0]
+[wt 1.0]
+[effectStop bit_talk_presage]
+
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠クー・フーリン
+よっしゃ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠燕青
+よっしゃ、じゃなーい！[r]何栽培してんだ、アンタたち！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠ディルムッド
+はあ。植物を栽培していますが、何か？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠燕青
+！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+
+＠ガレス
+ええっと、ランサーの皆様が？[r]歩く樹木や浮かぶ球根を栽培していた、と……？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+
+＠オルトリンデ
+そういう風に、見えますね。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 13]
+[charaFadein H 0.1 1]
+
+＠ガレス
+ですよね！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 4]
+[charaFadein M 0.1 1]
+
+＠レディ・アヴァロン
+……。[r]……。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 1]
+[charaFadein O 0.1 1]
+
+＠バゼット
+あ。あなたはＬＡ、ＬＡじゃないですか。[r]お久しぶり？　でもないですか？
+[k]
+
+[charaFace O 2]
+
+＠バゼット
+見てください！[r]あなたの依頼通り[line 3]
+[k]
+
+＠バゼット
+歩く樹木、１００株達成しそうです！[r]そろそろ自動生成に移行できます。
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 1]
+[charaFadein N 0.1 1]
+
+＠カルナ
+ＬＡは大したものだ。[r]いや、アヴァロンの生物がすごいのか？
+[k]
+
+＠カルナ
+ＬＡの言う通りに栽培するだけで、[r]球根は[#自動生成:ひとりでに増える]状態に至ったからな。
+[k]
+
+＠カルナ
+見ろ。１００株ほど、[r]きちんとこうして樹木にまで育ってる。
+[k]
+
+[charaFace N 4]
+
+＠カルナ
+ただ、肝心の花が咲かない。
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ヴラド三世
+花がなければ花園ではない。[r]なんとか、花を咲かせたいものだが。
+[k]
+
+？1：なるほど
+？2：だいたい分かっちゃったかな……
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 2]
+[charaFadein M 0.1 1]
+[wt 0.5]
+[charaFace M 4]
+[charaMove M -125,0 1.4]
+[wt 1.3]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+
+[charaPut S 0,0]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+…………あの、レディ・アヴァロンさん。
+[k]
+
+＠マシュ
+ＹＡＲＩＯの皆さん、もといランサーの方々の[r]お話を総合するとつまり……？
+[k]
+
+[charaFace C 14]
+
+＠マシュ
+あなたの依頼を受けた彼らが、[r]浮かぶ球根や歩く樹木を栽培していた、と……
+[k]
+
+＠マシュ
+そういうことになるのですが、[r]どうでしょうか？
+[k]
+
+[messageOff]
+[charaPut S 2000,2000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 4]
+[charaFadein M 0.1 -350,0]
+[wt 0.5]
+
+＠レディ・アヴァロン
+うん。
+[k]
+
+[charaTalk depthOff]
+[charaDepth M 2]
+[charaDepth F 1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠燕青
+はいはい、そんな端っこにいない。
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaTalk off]
+
+[charaMove F -100,0 0.5]
+[wt 0.5]
+[se ad215]
+[charaShake M 0.03 4 4 0.3]
+[wt 0.6]
+[se ad1049]
+[se ad344]
+[charaMove M 0,0 1.2]
+[charaMove F 250,0 1.2]
+[wt 1.2]
+[seStop ad344 0.5]
+[seStop ad1049 0.5]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk M]
+
+＠レディ・アヴァロン
+……あのね？
+[k]
+
+＠レディ・アヴァロン
+そういえばね？[r]私、すっかり忘れてしまっていたんだけどね？
+[k]
+
+＠レディ・アヴァロン
+お花の世話係を雇ってた、かも！
+[k]
+
+＠燕青
+お花じゃなくて怪物だよなあ？
+[k]
+
+[charaFace M 2]
+
+＠レディ・アヴァロン
+ん～～～～～おかしいな、何でだろ？
+[k]
+
+[charaFadeout M 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠クー・フーリン
+何でだろ、じゃねえだろ嬢ちゃん。[r]アンタが言ったんだぜ？
+[k]
+
+＠クー・フーリン
+ただ綺麗なだけのお花畑じゃつまらんから、[r]人を襲うような怖いお花も植える[line 3]ってな。
+[k]
+
+[charaFace A 4]
+
+＠クー・フーリン
+まあ、まだ花が咲いちゃくれねえんだが……[wt 0.5][charaFace A 1][r]コイツらを栽培すんのは骨が折れるぜ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ヴラド三世
+まったくだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+＠カルナ
+（静かに頷いている）[charaMoveReturn N 0,-7 0.5]
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠ディルムッド
+しかし、やり甲斐はありましたとも。[r]そうでしょう皆様。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 1]
+[charaFadein O 0.1 1]
+
+＠バゼット
+はい！
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠ディルムッド
+流石は父上[line 3]いえ父上ではないですが。[r]ともかく流石です。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 2.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[shake 0.05 0 2 2.0]
+[effect bit_talk_presage]
+[effect bit_talk_presage 350,0 H]
+[effect bit_talk_presage -350,0 H]
+[se ad14]
+[seVolume ad14 0 0.6]
+[wt 1.0]
+[se bac255]
+[wt 1.0]
+
+[se ade409]
+[wt 1.0]
+[seStop bac255 1.0]
+[seStop ad14 1.0]
+[wt 1.0]
+[effectStop bit_talk_presage]
+
+[wt 1.0]
+
+？1：歩く樹木さんがー！
+？2：リアルタイムでどんどん増えてない！？
+
+？！
+
+[charaPut S 0,0]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[bgm BGM_BATTLE_62 0.1]
+
+＠マシュ
+敵性反応、複数！[r]は、はい……どんどん増えていきます！
+[k]
+
+[charaPut S 2000,2000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠クー・フーリン
+そりゃあ増えるさ！[r]なにせ、丹精込めて栽培したからな！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 2]
+[charaFadein M 0.1 1]
+
+＠レディ・アヴァロン
+も、もうやめて～！[r]せっかくのお客さんが逃げてっちゃう～～～！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠クー・フーリン
+ンなこと言われてもなあ、[r]そういうエリアにしたがったのはアンタだろ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ヴラド三世
+ん。何やら事情はあるようだが……
+[k]
+
+[charaFace B 0]
+
+＠ヴラド三世
+一度引き受けたからには、[r]仕事は最後までやりきらねば寝覚めが悪い。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+＠カルナ
+確かに[line 3]
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace L 2]
+[charaFadeinFSL L 0.1 -256,0]
+[charaFace O 2]
+[charaFadeinFSR O 0.1 256,0]
+
+＠親子？
+確かに！
+[k]
+
+？1：ＹＡＲＩＯのみんな責任感強い[line 3]
+？！
+
+[charaFadeout L 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠燕青
+まあつまりは、だ。[r]いつものように、物理的説得しかねえな！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠クー・フーリン
+へえ、やるかい？[r]いいぜ。止めたけりゃ力尽くでやってみな！
+[k]
+
+[messageOff]
+[shake 0.05 0 2 2.0]
+[backEffect bit_talk_presage]
+[backEffect bit_talk_presage 350,0 H]
+[backEffect bit_talk_presage -350,0 H]
+[se ad14]
+[seVolume ad14 0 0.6]
+[wt 1.0]
+[se bac255]
+[wt 1.0]
+
+[se ade409]
+[wt 1.0]
+[seStop bac255 1.0]
+[seStop ad14 1.0]
+[wt 1.0]
+
+
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_62 0.4]
+[wait fade]
+[soundStopAll]
+[end]

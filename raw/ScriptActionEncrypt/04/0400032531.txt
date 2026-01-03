@@ -1,0 +1,527 @@
+
+
+＄04-00-03-25-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098292500 1 ジャンヌ・オルタ]
+[charaSet B 1098292500 1 ジャンヌ・オルタ2]
+[charaScale B 1.2]
+[charaSet C 11006002 1 サリエリ]
+[charaSet D 11005001 1 ヘシアン・ロボ]
+[charaSet E 11002002 1 巌窟王]
+[charaScale E 1.2]
+[charaSet F 11010001 1 平景清]
+[charaSet G 11015001 1 ニトクリス・オルタ]
+[charaSet H 11004001 1 ゴルゴーン]
+[charaSet I 1098289100 1 巌窟王モンテ・クリスト]
+[charaScale I 1.2]
+
+[sceneSet J 213600 1]
+[charaScale J 1.3]
+[sceneSet K 213600 1]
+[charaScale K 1.3]
+[sceneSet L 214906 1]
+[charaScale L 1.2]
+[sceneSet M 213600 1]
+[charaScale M 1.3]
+[sceneSet N 213600 1]
+[charaScale N 1.2]
+
+[charaSet S 5009000 1 エフェクト用1]
+
+[sceneSet T 10001 1]
+[charaScale T 1.5]
+
+[scene 213600]
+
+[subCameraOn 4]
+[charaLayer J sub #A]
+[charaLayer H sub #A]
+[charaLayer G sub #A]
+[charaLayer I sub #A]
+[charaLayer K sub #B]
+[charaLayer C sub #B]
+[charaLayer F sub #B]
+[charaLayer M sub #C]
+[charaLayer B sub #C]
+[charaLayer N sub #D]
+[charaLayer E sub #D]
+[subCameraFilter #A normal]
+[subCameraFilter #B normal]
+[subCameraFilter #C maskEdge cut359_mask20 4 186,32,113,255 0]
+[subCameraFilter #D maskEdge cut359_mask09 4 0,0,0,255]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth G 2]
+[charaDepth H 3]
+[charaDepth I 4]
+[charaFace H 5]
+[charaFadein J 0.1 140,-300]
+[charaFadein H 0.1 -306,-30]
+
+[charaDepth K 1]
+[charaDepth C 2]
+[charaDepth F 3]
+[charaFace C 5]
+[charaFace F 5]
+[charaFadein K 0.1 -140,-250]
+[charaFadein C 0.1 306,0]
+[charaFadein F 0.1 -206,0]
+
+[charaDepth M 1]
+[charaDepth B 2]
+[charaFace B 8]
+[charaFadein M 0.1 0,80]
+[charaFadein B 0.1 0,300]
+[charaEffect B bit_talk_charge_ppl]
+
+[charaDepth N 1]
+[charaDepth E 2]
+[charaFace E 2]
+[charaFadein N 0.1 -320,90]
+[charaFadeinFSR E 0.1 55,290]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+[bgm BGM_BATTLE_185 0.1]
+
+[masterBranch _Male1 _Female1]
+
+[label _Male1]
+[effect bit_talk_CommandMantra_bluesky_03 0,32]
+[cueSe Battle bas16]
+[wt 2.3]
+
+[branch _branchEnd1]
+
+[label _Female1]
+[effect bit_talk_CommandMantra_bluesky_04 0,32]
+[cueSe Battle bas16]
+[wt 2.3]
+
+[branch _branchEnd1]
+
+[label _branchEnd1]
+
+？1：[line 3]みんな！　[&頼む:お願い]！
+？！
+
+[masterBranch _Male2 _Female2]
+
+[label _Male2]
+[se ad822]
+[effectStop bit_talk_CommandMantra_bluesky_03]
+[wt 3.8]
+
+[branch _branchEnd2]
+
+[label _Female2]
+[se ad822]
+[effectStop bit_talk_CommandMantra_bluesky_04]
+[wt 3.8]
+
+[branch _branchEnd2]
+
+[label _branchEnd2]
+
+[cueSe SE_22 22_ade801]
+[wt 0.3]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 1.0]
+
+[se ad859]
+[seVolume ad859 0 0.8]
+[charaPut S 1]
+[charaEffect S bit_talk_41_fs]
+[charaMoveScale D 1.5 0.3]
+[charaMove D 0,70 0.3]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaFadeout D 0.3]
+[wt 0.4]
+[charaPut S 2500,2500]
+[charaEffectStop S bit_talk_41_fs]
+[charaScale D 1.0]
+[blurOff motion 0.1]
+[wt 0.1]
+[cueSe Servants_9943510 m87205]
+[effect bit_talk_claw_blue02 -200,0]
+[wt 0.2]
+[effect bit_talk_14]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.3]
+
+[cueSe Servants_9943510 m87205]
+[effect bit_talk_claw_blue02 200,0 H]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.5]
+
+[charaEffect H bit_talk_lightning_01r_fs]
+[se ad626]
+[seVolume ad626 0 0.3]
+[subRenderFadein #A 0.5 0,0]
+[charaMoveEase J 190,-300 0.7 easeOutCubic]
+[charaMoveEase H -256,-30 0.7 easeOutCubic]
+[wt 1.0]
+[subCameraMoveEase #A 50,-15 0.5 easeOutQuad 1.1]
+[wt 0.3]
+
+[charaFace H 5]
+[charaEffect H bit_talk_mysticeyes_gor]
+[wt 0.5]
+[cueSe SE_23 23_ad1296]
+[wt 1.0]
+[charaEffectStop H bit_talk_lightning_01r_fs]
+[seStop ad626 1.0]
+[wt 0.2]
+[charaEffectDestroy H bit_talk_mysticeyes_gor]
+[wt 0.1]
+
+[subCameraMoveEase #A -120,-20 0.5 easeOutQuad 1.2]
+[charaFadeout H 0.4]
+[charaScale G 0.9]
+[charaFace G 2]
+[charaFadein G 0.4 300,-40]
+[wt 0.3]
+[se ad912]
+[seVolume ad912 0 0.7]
+[se ade446]
+[seVolume ade446 0 0]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ade446 0.5 0.4]
+[seVolume ad556 0.5 0.3]
+[charaEffect G bit_talk_charge_blu]
+[wt 0.6]
+[effect bit_talk_ereshki03 0,0 H]
+[wt 1.0]
+[charaFace G 5]
+[wt 0.4]
+[seStop ade446 1.0]
+[seStop ad556 1.0]
+[subRenderFadeout #A 0.3]
+[wt 0.5]
+
+[subCameraMoveEase #A 0,0 0.1 easeOutQuad 1.0]
+[charaEffectDestroy G bit_talk_charge_blu]
+[subCameraFilter #A maskEdge cut359_mask10 4 0,0,0,255]
+[charaFadeout G 0.1]
+[charaScale J 1.2]
+[charaPut J 320,90]
+[charaFace I 11]
+[charaFadeinFSL I 0.1 -100,290]
+
+[se ad248]
+[seVolume ad248 0 0.7]
+[wt 0.3]
+[cueSe SE_23 23_ad1233]
+[effect bit_talk_impactlanding -300,0]
+[shake 0.05 5 4 2.0]
+[wt 0.5]
+[effect bit_talk_impactlanding]
+[wt 0.5]
+[se ad828]
+[effect bit_talk_impactlanding 300,0]
+[wt 0.4]
+[cueSeStop 23_ad1233 1.5]
+[seStop ad248 2.0]
+[seStop ad828 2.0]
+[wt 1.3]
+[effectStop bit_talk_ereshki03]
+
+[subRenderFadein #B 0.5 0,0]
+[charaMoveEase K -190,-250 0.7 easeOutCubic]
+[charaMoveEase C 256,0 0.7 easeOutCubic]
+[charaMoveEase F -256,0 0.7 easeOutCubic]
+[wt 1.0]
+
+[effectDestroy bit_talk_impactlanding]
+
+[se ad73]
+[charaMoveScale F 1.5 0.3]
+[charaMove F -50,50 0.3]
+[charaFadeout F 0.3]
+[wt 0.4]
+[charaFace C 1]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaMoveScale C 1.5 0.3]
+[charaMove C 50,50 0.3]
+[charaFadeout C 0.3]
+[wt 0.3]
+[subRenderFadeout #B 0.3]
+[wt 0.3]
+[se ad1053]
+[effect bit_talk_quick_slash_ppl]
+[wt 0.8]
+[cueSe Servants_102800 bac658]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[effect bit_talk_14]
+[wt 0.6]
+[cueSe Servants_104200 bac1650]
+[effect bit_talk_x_slash_bk_01]
+[wt 0.25]
+[cueSe Servants_104200 bac1652]
+[effect bit_talk_x_slash_bk_02]
+[wt 0.2]
+[fowardEffect bit_talk_14]
+[wt 0.8]
+
+[cueSe SE_22 22_ad1181 0.3 0.7]
+[se ade446]
+[seVolume ade446 0 0]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ade446 0.3 0.4]
+[seVolume ad556 0.3 0.3]
+[subRenderFadein #C 0.3 0,-380]
+[subRenderMoveEase #C 0,-330 0.4 easeOutCubic]
+[wt 1.4]
+[charaFace B 4]
+[wt 0.4]
+
+[cueSeStop 22_ad1181 1.0]
+[seStop ade446 1.0]
+[seStop ad556 1.0]
+[subRenderFadeout #C 0.3]
+[subRenderMoveEase #C 0,-280 0.4 easeOutCubic]
+[wt 0.6]
+[charaEffectDestroy B bit_talk_charge_ppl]
+[charaScale B 1.3]
+[charaPut B 0,250]
+
+[se ad961]
+[seVolume ad961 0 0.7]
+[se ad960]
+[effect bit_talk_sparks_fs]
+[effect bit_talk_29]
+[wt 1.0]
+[seStop ad961 2.0]
+[wt 0.7]
+[effectStop bit_talk_sparks_fs]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect A appearance 1 0.25]
+[wt 0.4]
+
+＠ジャンヌ・オルタ
+とどめ！[r]……任せるわよ、ダブルバカ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[charaTalk E]
+[subRenderFadein #D 0.2 212,-270]
+[subRenderMove #D 222,-300 0.2]
+[se ad39]
+[charaEffect E bit_talk_36]
+[wt 1.5]
+
+＠巌窟王
+クク。残酷なことだ！
+[k]
+
+[charaEffectStop E bit_talk_36]
+
+＠巌窟王
+我が征くは恩讐の彼方！[r][line 6]『[#虎よ、煌々と燃え盛れ:ア ン フ ェ ル ・ シ ャ ト ー ・ デ ィ フ]』！
+[k]
+
+[messageOff]
+[charaTalk I]
+[subRenderFadein #A 0.2 -192,-330]
+[subRenderMove #A -202,-300 0.2]
+[se ad39]
+[charaEffect I bit_talk_36]
+[wt 1.5]
+
+＠巌窟王モンテ・クリスト
+恩讐の彼方より見届けよ！[r]これぞ！　浄化の炎なれば！
+[k]
+
+[charaEffectStop I bit_talk_36]
+
+＠巌窟王モンテ・クリスト
+[line 6]『[#星よ、輝きの道を征け:パ ラ デ ィ ・ シ ャ ト ー ・ デ ィ フ]』！
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[subRenderMove #A -212,-270 0.2]
+[subRenderMove #D 232,-320 0.2]
+[subRenderFadeout #A 0.2]
+[subRenderFadeout #D 0.2]
+[wait fade]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout N 0.1]
+[charaFadeout E 0.1]
+[charaFadeout I 0.1]
+
+[subCameraFilter #C maskEdge cut359_mask06 4 186,32,113,255 0]
+[subRenderScale #C 1.01]
+[charaFadein M 0.1 1]
+[charaFadein B 0.1 0,255]
+
+[overlayFadein T 0.1 0,-200]
+[scene 10001]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[criMovie talk_mov242 bgmPlay false]
+[wt 0.2]
+[charaFadeout T 0.4]
+[wt 36.0]
+
+
+[messageOff]
+[bgmStop BGM_BATTLE_185 1.0]
+[fadeout white 1.0]
+[wait fade]
+
+[scene 214906]
+[wt 2.0]
+
+[cueSe SE_21 21_ad1114 1.5 0.6]
+[fadein white 1.5]
+[wait fade]
+
+[wt 1.5]
+
+
+[cueSeVolume 21_ad1114 2.0 0.3]
+＠カリオストロ・ヘッド
+…………………………………………！[bgm BGM_EVENT_79 0.1]
+[k]
+
+＠カリオストロ・ヘッド
+成る程……[r]これが……
+[k]
+
+＠カリオストロ・ヘッド
+魂までをも灼き尽くす猛炎……[r]恩讐の果て、その、[#昏:くら]き可能性……！
+[k]
+
+＠カリオストロ・ヘッド
+確かに……人の手、には……あまりましょう……
+[k]
+
+＠カリオストロ・ヘッド
+我が連続体を崩壊させ得る、熱量……[r]それでいて[#天体:人　体]に傷一つ付けず……
+[k]
+
+＠カリオストロ・ヘッド
+フフ、まさに……[r]怨敵のみを焼く浄化の炎か！
+[k]
+
+[messageOff]
+[charaDepth L 1]
+[cueSeVolume 21_ad1114 0.8 0.6]
+[charaFadein L 0.8 0,-200]
+[charaMove L 0,-220 50.0]
+[charaMoveScale L 1.3 40.0]
+[wt 2.5]
+
+[cueSeVolume 21_ad1114 2.0 0.3]
+
+＠カリオストロ・ヘッド
+そして……[r]カルデアの、マスター……
+[k]
+
+＠カリオストロ・ヘッド
+自らの精神の奥底と知りながら戦場とする、[r]その覚悟、実に……
+[k]
+
+＠カリオストロ・ヘッド
+お見事、です……
+[k]
+
+＠カリオストロ・ヘッド
+ならばその覚悟、フフ……[r][#かの巨大機構]の御前にて示されるとよい！
+[k]
+
+＠カリオストロ・ヘッド
+まァ、もっとも[line 3]
+[k]
+
+＠カリオストロ・ヘッド
+我が[#見出した後に起動せし]『[#遺分體:エ レ メ ン ツ]』、[r]そのすべてを砕ければの話では……[line 4]
+[k]
+
+[messageOff]
+[charaFadeout L 0.6]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 30]
+[subRenderFadein #C 0.3 102,-320]
+[subRenderMove #C 2,-320 0.3]
+[wt 0.3]
+
+＠B：ジャンヌ・オルタ
+…………もういいわよね？　いいと見なすわ。
+[k]
+
+[charaFace B 2]
+
+＠B：ジャンヌ・オルタ
+率直に言って話が長いです。[r]さっさと燃え尽きなさい！
+[k]
+
+[messageOff]
+[subRenderMove #C -98,-320 0.3]
+[subRenderFadeout #C 0.3]
+[wt 0.5]
+[bgmStop BGM_EVENT_79 1.5]
+
+[se ad960]
+[se ad439]
+[seVolume ad439 0 0]
+[seVolume ad439 0.3 1.0]
+[effect bit_talk_fire_wall 0,0 H]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 1.4]
+
+[seStop ad439 1.0]
+[cueSeStop 21_ad1114 1.0]
+[se ad961]
+[seVolume ad961 0 0.7]
+[se ad267]
+[seVolume ad267 0 0.8]
+[se ad429]
+[fowardEffect bit_talk_burn_screen]
+[wt 1.0]
+[cueSe SE_21 21_ad1148]
+[wt 1.0]
+[seStop ad961 3.0]
+[seStop ad267 3.0]
+[seStop ad429 3.0]
+[wt 1.0]
+[scene 10000]
+[wt 1.5]
+
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

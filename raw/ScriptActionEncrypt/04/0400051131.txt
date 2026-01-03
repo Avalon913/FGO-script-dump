@@ -1,0 +1,139 @@
+
+
+
+
+
+
+
+
+
+＄04-00-05-11-3-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098158520 1 プルート]
+[charaSet B 1098257900 1 マシュ]
+[charaSet C 1098323500 1 ハベトロット]
+[charaSet D 1098239320 1 カドック]
+[charaSet E 28010001 1 ダンテ]
+[charaSet F 1098321000 1 メタトロン・ジャンヌ]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 245902]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth B 2]
+
+[fadein black 0.5]
+[wait fade]
+
+＠プルート
+パペ　サタン　アレッ……ペ……。
+[k]
+
+
+[messageOff]
+[se ad42]
+[effect bit_talk_atomization_gra]
+[wt 0.7]
+[seStop ad42 1.5]
+[charaFadeout A 1.5]
+[wt 2.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.3]
+[se ad658]
+[charaCrossFade B 1098257910 1 0.3]
+[wait charaCrossFade B]
+
+[effectDestroy bit_talk_atomization_gra]
+
+＠マシュ
+プルート、迎撃完了しました。[r]マスター、お疲れ様でした。
+[k]
+
+？1：意外に……普通だった……
+？！
+
+[charaFace B 3]
+
+＠マシュ
+た、確かにそうですね。[r]言葉もひたすら『パペ　サタン』、を繰り返すだけでした。
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.4 350,0]
+[wt 0.4]
+
+＠ハベトロット
+うーん、最初のインパクトだけはあったな……。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠カドック
+結局『パペ　サタン～』の意味もわからなかったな。[r]戦闘中何も起きなかったし……。
+[k]
+
+？1：大丈夫、作者が直々に回答してくれる
+？！
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠ダンテ
+フフ……『パペ　サタン～』の意味を説明するには、[r]ちょっと余白が足りない……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 26]
+[charaFadein F 0.1 1]
+＠メタトロン・ジャンヌ
+適当言ってる？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠ダンテ
+ててて適当じゃないですよーぅ……。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

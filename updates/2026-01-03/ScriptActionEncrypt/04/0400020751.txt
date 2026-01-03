@@ -1,0 +1,304 @@
+
+
+＄04-00-02-07-5-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098268900 1 サクラ]
+[charaSet B 1098269000 1 ＤＸ]
+[charaSet C 1098270300 1 アーユス]
+[charaSet D 6037001 1 カーマ]
+[charaSet E 7046001 1 ドゥリーヨダナ]
+[charaSet F 1098267100 1 メドゥーサ]
+
+[charaSet G 98015000 1 汎用サーヴァント1]
+[charaSet H 98015000 1 汎用サーヴァント2]
+[charaSet I 98015000 1 汎用サーヴァント3]
+
+[charaSet S 98115000 1 エフェクト用ダミー]
+[charaSet T 98115000 1 エフェクト用ダミー]
+
+[imageSet R back10000 1 1]
+[charaScale R 1.3]
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad85]
+[charaRoll S -20]
+[charaPut S 100,50]
+[charaEffect S bit_talk_strike_02 0,0 H]
+[wt 0.65]
+
+[cueSe Servants_2800500 bac1275]
+[charaPut T 1]
+[charaEffect T bit_talk_x_slash02]
+[wt 0.6]
+
+[cueSe Battle bac139]
+[cueSe Servants_105700 m54129]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[scene 190300]
+
+[charaTalk off]
+[charaDepth G 6]
+[charaDepth H 5]
+[charaDepth I 4]
+
+[charaFadein G 0 1]
+[charaFadeinFSR H 0 300,0]
+[charaFadeinFSL I 0 -300,0]
+[charaShake G 0.01 2 3 0.5]
+[charaShake H 0.02 2 3 0.5]
+[charaShake I 0.02 3 2 0.5]
+[wt 1.0]
+
+
+[se ad42]
+[charaSpecialEffect G enemyErasure 0,0 1.0]
+[charaSpecialEffect H enemyErasure 0,0 1.0]
+[charaSpecialEffect I enemyErasure 0,0 1.0]
+[wait charaSpecialEffect G]
+[seStop ad42 0.8]
+[wt 1.25]
+
+
+[bgm BGM_EVENT_77 0.1 0.5]
+
+[charaTalk on]
+[charaTalk depthOff]
+[charaDepth R 5]
+[charaDepth A 6]
+
+[charaPut R 1]
+[charaFadeTime R 0.2 0.5]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠サクラ
+（ふぅ。ちゃんとできた……）
+[k]
+
+[charaFace A 5]
+＠サクラ
+（やっぱり、そんなに[r]　気にするほどのことでもない、かな）
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout R 0.2]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.5 1.0]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ＤＸ
+協力に感謝する。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サクラ
+いえいえ。害虫駆除は通常業務の[r]ようなものなんですから、
+[k]
+
+＠サクラ
+人任せにするのもどうかと思います。
+[k]
+
+[charaFace A 8]
+＠サクラ
+お手伝いできるときにはお手伝いして当然です。
+[k]
+
+[charaFace A 16]
+＠サクラ
+まあ普段は、大きなものが出たら逆に連絡して[r][#警防部:ディフェンド]の皆さんに手伝ってもらうことが多いですが……。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace A 12]
+＠サクラ
+とにかく、今回はたまたま近くにいましたので。
+[k]
+
+[charaFace A 17]
+＠サクラ
+[&貴方:貴女]たちも手伝ってくださったんですね。
+[k]
+
+[charaFace A 10]
+＠サクラ
+……すみません、キャスターの怪物がいなくなったあと、[r]お礼もそこそこに立ち去ってしまって。
+[k]
+
+＠サクラ
+どうしても[#生産部:こ　　こ]のことが気になったものですから。
+[k]
+
+？1：全然問題ないよ
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠アーユス
+ここって[#生産部:グ　ロ　ウ]の中でも端っこよね？
+[k]
+
+＠アーユス
+こんなところまで自分の目で管理してるなんて、[r]大変じゃない？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+＠サクラ
+あ、今回は、管理していたというか……[r]たまたま……
+[k]
+
+[charaFace A 0]
+＠サクラ
+そうですね、この近くにお気に入りの[r]休憩ポイントがあるんです。
+[k]
+
+＠サクラ
+もしよかったら、[r]一緒に休憩していかれませんか？
+[k]
+
+[charaFace A 7]
+＠サクラ
+そこなら落ち着いて補給もできるでしょうし、[r]『お弁当』もありますよ。
+[k]
+
+[charaCrossFade A 1098268930 8 0.3]
+＠サクラ
+大丈夫、いっぱい作ってきてますので！[wait charaCrossFade A]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠カーマ
+どうします？[r]私は別にどっちでもいいんですけど。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ドゥリーヨダナ
+そのタイプＤからの感謝のラニメントでも、[r]維持用の[#マテリアル:食　　い　　も　　の]でもよい。
+[k]
+
+[charaFace E 3]
+＠ドゥリーヨダナ
+とにかく働いたら即座に報酬をもらいたい[r]ところではある。でないと忘れてしまうからな！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ＤＸ
+我々にはまだ任務が存在。[r]離脱させてもらう。
+[k]
+
+＠ＤＸ
+ただし、残りはどれも小規模と判断。[r]貴殿たちは休まれたし。
+[k]
+
+＠ＤＸ
+協力料のラニメントも今のうちに渡しておく。[r]これまでの助力に感謝する。
+[k]
+
+？1：それじゃ、こっちはお言葉に甘えようか[&:な]
+？！
+
+[charaSet A 1098268900 1 サクラ]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠サクラ
+えーと、ごめんね、セイバー。
+[k]
+
+＠サクラ
+あっちの人たちにもお礼しなきゃって[r]思ったら、つい……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+＠メドゥーサ
+どうして謝るの？
+[k]
+
+[charaFace F 0]
+＠メドゥーサ
+馴れ合いすぎるのはどうかと思うけど、[r]別にあなたが決めたことなら仕方がない。
+[k]
+
+[charaFace F 13]
+＠メドゥーサ
+私はただ、貴女のサーヴァントという[r]だけなんだから[line 3]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+[wt 1.5]
+
+
+
+
+[fadeout black 2.0]
+[bgmStopEnd BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

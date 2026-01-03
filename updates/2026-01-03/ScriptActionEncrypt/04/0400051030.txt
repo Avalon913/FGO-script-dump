@@ -1,0 +1,538 @@
+
+
+
+
+
+
+
+
+
+＄04-00-05-10-3-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257900 1 マシュ]
+[charaSet B 1098239320 1 カドック]
+[charaSet C 1098322000 1 セリエナ]
+[charaSet D 1098321900 1 スタルジオ]
+[charaSet E 4008002 1 黒髭]
+[charaSet F 4008002 1 黒髭_演出用]
+[sceneSet G 247400 1]
+[sceneSet H 247400 1]
+[sceneSet I 247300 1]
+[sceneSet J 10000 1]
+
+[charaScale J 1.1]
+[charaScale E 1.2]
+
+[charaTalk depthOff]
+[charaDepth J 9]
+[charaDepth E 1]
+
+[charaFadein J 0.1 0,-200]
+
+[scene 247300]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[cueSe SE_23 23_ade930]
+[fowardEffect bit_talk_guard_eighthit]
+[wt 1.6]
+
+[se ad686]
+[se ad687]
+[fowardEffect bit_talk_blow02]
+[charaFadeout J 0.2]
+[wt 0.1]
+
+[cueSe SE_21 21_ade607]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.3 0,20]
+
+[charaMove E 0,0 0.2]
+[charaMoveScale E 1.0 0.2]
+[charaShake E 0.02 3 3 1.0]
+[wt 0.4]
+[cueSeStop 21_ade607 0.4]
+
+＠黒髭
+ぐはあああああ！？[r]ぐ、む……！
+[k]
+
+[messageOff]
+[charaMove E 0,-40 0.4]
+[charaFadeout E 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.3]
+[se ad658]
+[charaCrossFade A 1098257910 2 0.3]
+[wait charaCrossFade A]
+
+＠マシュ
+敵、黒髭カロン。戦闘不能状態です！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+？1：降伏する？
+？！
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[se ad7]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.3 0,-50]
+[charaMove E 0,0 0.3]
+[wt 0.3]
+
+＠黒髭
+するする、超する。[r]あと、渡し賃とかもうゼロでいいです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+＠マシュ
+いえ、きっちり人数分払っておきましょう。[r]後から、このことを盾に取る可能性があります。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 4]
+[charaDepth D 3]
+[charaDepth I 2]
+[charaDepth B 1]
+
+[charaScale E 1.1]
+[charaScale D 1.05]
+[charaScale I 1.2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠カドック
+あるな。[r]対岸で仲間相手に騒ぎ立てる可能性がある。
+[k]
+
+＠カドック
+きっちり支払っておこう。
+[k]
+
+[messageOff]
+[charaTalk B,D]
+[charaFace D 1]
+[charaFadein D 0.4 280,10]
+[charaFace E 0]
+[charaFadein E 0.4 -280,10]
+[charaFadein I 0.4 0,-240]
+[wt 0.4]
+[charaFadeout B 0.1]
+
+[charaMoveReturn D 280,6 0.5]
+
+＠スタルジオ
+わかりました。それでは、こちらです。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMove D 240,10 0.7]
+[cueSe SE_24 24_ade997]
+[cueSeVolume 24_ade997 0 0]
+[wt 1.1]
+
+[cueSeVolume 24_ade997 0.3 1.0]
+[charaMoveReturn D 240,5 0.6]
+[wait charaMove D]
+[cueSeStop 24_ade997 0.3]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 3]
+
+＠黒髭
+え、やだ。なんでアタイの思惑、[r]そこまで見抜くの？　もしかして恋？
+[k]
+
+？1：慣れ
+？！
+
+＠黒髭
+慣れかァ……。
+[k]
+
+[charaFace E 5]
+
+＠黒髭
+チッ、しょうがねえ。[r]こうなったら、渋々だが船に乗せてやらぁ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_HALLOWEEN_2021_1 1.0]
+[wait fade]
+
+[charaTalk depthOn]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaScale E 1.0]
+[charaScale D 1.0]
+
+[charaTalk depthOff]
+[charaDepth G 2]
+[charaDepth B 1]
+
+[charaScale G 1.3]
+[charaFadein G 0.1 70,-240]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[scene 247400]
+[se ad986]
+[seVolume ad986 0 0]
+[wt 1.0]
+
+[charaMove G 70,-300 6.0]
+[fadein black 1.0]
+[seVolume ad986 1.0 1.0]
+[wait fade]
+
+[se ad921]
+[seVolume ad921 0 0.7]
+[se ad796]
+[seVolume ad796 0 0.6]
+[seStop ad796 1.4]
+[wt 2.5]
+
+[seStop ad986 2.0]
+[charaTalk B]
+[charaFadeout G 1.0]
+[wt 1.2]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠カドック
+デカいな！　河を渡るだけなのに！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠黒髭
+あん？　何言ってやがる。[r]アケローン河といえば、世界一の大河。
+[k]
+
+[charaFace E 2]
+
+＠黒髭
+こんな船でもなけりゃ、[r]とても乗り切れるもんじゃねえさ！
+[k]
+
+＠黒髭
+さあ、野郎ども出航だ！
+[k]
+
+[messageOff]
+[se ad1001]
+[charaMove E -200,0 0.6]
+[charaFadeout E 0.4]
+[wt 0.7]
+
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[seStop ad1001 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+[se ad1001]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 -150,0]
+[charaMove E 0,0 0.5]
+[wt 0.5]
+[seStop ad1001 0.2]
+[charaMoveReturn E 0,5 0.3]
+[wait charaMove E]
+
+＠黒髭
+へーい！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠カドック
+……一人で何やってんだ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠黒髭
+部下がいないので一人芝居。
+[k]
+
+？1：かなしい
+？！
+
+＠黒髭
+かなしいね。[r]ま、出航するかー。よーそろー。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠カドック
+もう少しやる気を出してくれ。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_62 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[se ad37]
+[seVolume ad37 0 0]
+[wt 1.0]
+
+[fadein black 1.0]
+[seVolume ad37 1.0 1.0]
+[wait fade]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.2 1]
+
+＠黒髭
+ところでおまえさんたち、[r]どうして地獄に？
+[k]
+
+[seStop ad37 2.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠スタルジオ
+[#煉獄:れんごく]にて、祈りを続けられる自信が[r]なくなってしまったので。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠黒髭
+ふぅん。[r]嘘ついてでも、煉獄にいた方がいいと思うけどな拙者。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠カドック
+そんなに地獄は危険なのか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠黒髭
+ヒーローがいなくてヴィランだけがいるアメコミの都市。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠カドック
+最悪だな！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠黒髭
+ごめん嘘、さすがに盛った！[r]まあでも、煉獄みたいに大人しい場ではないぜ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 4]
+[charaDepth G 3]
+[charaDepth E 2]
+[charaDepth D 1]
+
+[charaScale F 1.2]
+[charaScale G 1.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠スタルジオ
+それは[line 3]覚悟の上です。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.6 -80,10]
+[charaFadein G 0.6 -50,-240]
+[charaMove F -30,10 10.0]
+[charaMove G 0,-240 10.0]
+[wt 0.6]
+[charaFadeout D 0.1]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠黒髭
+ま、煉獄から地獄へ落ちてくるようなヤツは、[r]大体大丈夫さ。
+[k]
+
+[charaFaceFade F 0 0.2]
+
+＠黒髭
+耐え切れなくなって消えることを願うか、[r]耐え切れずに染まるか。
+[k]
+
+[charaFaceFade F 1 0.2]
+
+＠黒髭
+どちらに転んでも、地獄は変わりゃしねえのさ！
+[k]
+
+[bgmStop BGM_EVENT_11 1.0]
+
+[messageOff]
+[charaFadeout F 0.6]
+[charaFadeout G 0.6]
+[wt 0.8]
+
+[charaFace E 0]
+
+＠黒髭
+……と、カッコ良く叫んだところで、[r]敵でございます皆様。
+[k]
+
+[bgm BGM_BATTLE_62 0.1]
+[charaTalk on]
+
+＠黒髭
+地獄名物、アケローン河のお魚です。
+[k]
+
+[charaFace E 3]
+
+＠黒髭
+こう見えて、人の体内に鋭い歯で潜りたがる、[r]お茶目で可愛い一面もあって……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠カドック
+可愛くはないな！！[r]戦闘態勢！
+[k]
+
+？1：ラジャー！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠黒髭
+好きなことは人の腎臓肝臓を[r]生きたまま貪り食うとかで……。
+[k]
+
+？1：はいちょっとお静かに！
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_62 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

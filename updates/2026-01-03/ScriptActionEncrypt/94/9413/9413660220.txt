@@ -1,0 +1,435 @@
+
+
+＄94-13-66-02-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 2053000 1 ツタンカーメン]
+[charaSet B 3056000 1 ゴッホ]
+[charaSet C 1098257310 1 ダ・ヴィンチ]
+[charaSet D 1098158340 1 ネモ]
+
+[sceneSet O 231400 1]
+[sceneSet P 231400 1]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+
+[charaPut S 2000,2500]
+[charaEffect S bit_talk_10_LowLevel]
+
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth A 2]
+[charaDepth D 5]
+[charaDepth S 8]
+[charaDepth T 8]
+
+[scene 231400]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_141 0.1]
+
+？1：ここまで３騎、戦ってきたけど……
+？2：全員ちょっと弱すぎなかった？
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ツタンカーメン
+はいい。カエサルどの、ブリトマートどの、哪吒どの、[r]どなたも名だたる英傑と、座より聞いておりまするが……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠ゴッホ
+ですね……カルデアのご当人たちと比べても弱すぎです。[r]あと、『製階戦争』って何でしょう。『ビルダー』とは？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 1]
+＠ダ・ヴィンチ
+こっちでも聞いてた。どっちも初耳だね。
+[k]
+
+＠ダ・ヴィンチ
+何らかの異種聖杯戦争なのかな……？[r]ビルダーなんてクラス、聞いたことないけど……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ツタンカーメン
+ビルダーどのらは、[#己:うぬ]の術で拘束しておりまする。[r]ここらでひとつ小休止とし、尋問したく存じまするが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ダ・ヴィンチ
+ＯＫ。[%1][&君:ちゃん]の休息と、[r]ヴァン・ゴッホの給油も忘れずに頼むよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠ゴッホ
+給油！　まるでゴッホが[#発電機:ジェネレーター]みたいに！[r]まったくやって[#られねーだー]……[wt 0.7][charaFace B 33]はっ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+
+[se ad1045]
+[charaPut T 1]
+[charaEffect T bit_talk_ttn_spell]
+
+[charaEffectEdgeBlur A ffffcc ffffcc]
+[wt 2.1]
+
+＠ツタンカーメン
+冷静に。冷静に。笑ってはなりませぬ。
+[k]
+
+[charaFace A 18]
+＠ツタンカーメン
+……我慢成功にて！[r]結界、尋問、料理！　進めてまいりまするね！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_141 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaPut A 2000,2500]
+[charaEffectEdgeBlurDestroy A]
+[charaEffectDestroy T bit_talk_ttn_spell]
+
+[scene 231400]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_147 0.1]
+
+[charaDepth P 2]
+[charaDepth A 3]
+[charaDepth C 3]
+[charaDepth O 4]
+[charaDepth B 5]
+
+[charaScale O 1.4]
+[charaScale P 1.2]
+[charaScale B 1.2]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.4 250,15]
+[charaFadein O 0.4 0,-300]
+[charaMoveEase B 150,15 0.6 easeOutSine]
+[charaMoveEase O -100,-300 0.6 easeOutSine]
+[wt 0.4]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaFadein P 0.1 0,-260]
+[wt 0.5]
+
+[se ade161]
+[charaFaceFade B 6 0.15]
+[wt 0.35]
+[charaFaceFade B 7 0.15]
+[wt 0.35]
+[charaFaceFade B 6 0.15]
+[wt 0.35]
+[charaFaceFade B 7 0.15]
+[wt 0.35]
+[charaFaceFade B 6 0.15]
+[wt 0.35]
+[charaFaceFade B 7 0.15]
+[wt 0.65]
+
+[se ad217]
+[seVolume ad217 0 0.7]
+[charaFace B 21]
+[charaMoveReturn B 150,5 0.8]
+[wt 0.6]
+[seStop ad217 0.2]
+[wt 0.8]
+
+[charaFace B 5]
+＠ゴッホ
+いやあ美味でした、ごちそうさまでした！[r]何から何までありがとう、ツタンちゃん！
+[k]
+
+？1：ツタンごはんの空き容器が……
+？2：山のように積みあがっている……
+？！
+
+[messageOff]
+[charaTalk B,A]
+[charaFadeout B 0.6]
+[charaFadeout O 0.6]
+[wt 0.8]
+
+[charaTalk A]
+＠ツタンカーメン
+ふふ。大層なご[#健啖:けんたん]、見ているだけで爽快にて。
+[k]
+
+[bgmStop BGM_EVENT_147 1.3]
+
+[charaFace A 1]
+＠ツタンカーメン
+さて、そろそろ、ビルダーどのらから聞いた情報を[r]お伝えしたく存じまする。
+[k]
+
+[bgm BGM_REQUIEM 0.1]
+
+[charaFace A 11]
+＠ツタンカーメン
+証言によれば、『製階戦争』とは、[r]特異点の増築の量や規模を競うものとのこと。
+[k]
+
+[charaFace A 1]
+＠ツタンカーメン
+より広く、より素晴らしい増築をなしたビルダーが[r]勝利する……とのことにござりまする。
+[k]
+
+＠ツタンカーメン
+いちおう他を襲って妨害するのもアリ、なれど、[r]どなたも弱すぎて、本格的な戦闘は起きずじまい、とか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+＠ダ・ヴィンチ
+結果、概ね平和に製階戦争は進行してたわけだ。[r]勝敗がついたらどうなるんだろう？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠ツタンカーメン
+敗者は勝者の配下となり、増築を手伝うべし、とのこと。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk C]
+[charaFace C 35]
+[charaFadein C 0.1 1]
+＠ダ・ヴィンチ
+ふむ……敗者を排除するのではなく、[r]増築の手伝いをさせる、と。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+＠ツタンカーメン
+そうしたのち、最終的な勝者が決まりましたなら、[r]勝者には[#褒美:ほうび]が与えられる、との[#由:よし]。
+[k]
+
+？1：[#褒美:ほうび]……
+
+＠ツタンカーメン
+はいい。“強力な霊基をとりもどすのに充分な量の[r][#叡智:えいち]の種火”だそうで。
+[k]
+
+
+？2：聖杯、なのかな？
+
+＠ツタンカーメン
+いいええ。“強力な霊基をとりもどすのに充分な量の[r][#叡智:えいち]の種火”が[#褒美:ほうび]だそうで。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 27]
+[charaFadein B 0.1 1]
+＠ゴッホ
+種火？　たしかに美味なものですが、[r]英霊を[#喚:よ]んで戦わせる対価としては少々……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ツタンカーメン
+……ちなみに、大規模かつ高速の増築を実現するために、[r]膨大な死霊が使役されている、との証言もありました。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 33]
+[charaFadein B 0.1 1]
+＠ゴッホ
+えええ、罪深い！[r]全体的に[#霊使:ひとづか]いが荒すぎませんか！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk C]
+[charaFace C 34]
+[charaFadein C 0.1 1]
+＠ダ・ヴィンチ
+……不可解なことも多いけど、ひとまず[#呑:の]み込もう。
+[k]
+
+[charaFace C 23]
+＠ダ・ヴィンチ
+特異点の質量が計測不能なまでに増大したのは、[r]英霊たちが製階戦争に参加し、増築を競ってたせい。
+[k]
+
+[charaFace C 22]
+＠ダ・ヴィンチ
+では誰が、何のためにそんなイベントを企画したのか？[r]次の主題はここだね。ということで[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+[charaEffectDestroy S bit_talk_10_LowLevel]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠ツタンカーメン
+はいい、残るビルダーどのらを早く捕らえ、[r]特異点のなぞを解くべし、にござりまするね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+＠ゴッホ
+ビルダーさまたち全員倒せば、ゴッホたちが製階戦争を[r]制したも同然！　種火もぜんぶいただきですね！
+[k]
+
+？1：（山賊の言い分だ……）
+？2：そんなに種火っておいしいの？
+
+[charaFace B 4]
+＠ゴッホ
+いくら食べても飽きないお味です、ウフフ！
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ツタンカーメン
+ふふ。[r]ゴッホどの、[#己:うぬ]の[#御饌:ごはん]のおかわりはいかが？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ゴッホ
+あっどうも。[wt 0.7][charaFace B 31][charaShake B 0.02 2 2 0.3]……ハウッ、マスターさま！[r]ゴッホ順調に餌付けされています！　こわい！
+[k]
+
+[messageOff]
+[bgmStop BGM_REQUIEM 1.5]
+
+[charaMoveEase B 250,0 0.8 easeOutSine]
+[charaMoveEase P 100,-260 0.8 easeOutSine]
+[wt 0.8]
+
+[charaPut S -250,0]
+[charaEffect S bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 -250,0]
+＠ネモ
+ゴッホ、ご飯をくれるなら誰でもいいのかい……？[r]キミの生前の窮状は知ってるが、尊厳ってものが……
+[k]
+
+[bgm BGM_EVENT_146 0.1]
+
+[charaFace B 33]
+＠ゴッホ
+あ[messageShake 0.05 4 3 0.65]ああ違うのですネモちゃんこれは！[r]ドン引きしないで、軽蔑しないでえええ！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_146 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

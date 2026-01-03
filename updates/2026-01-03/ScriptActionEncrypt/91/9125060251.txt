@@ -1,0 +1,731 @@
+
+
+＄91-25-06-02-5-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 99502600 1 マシュ]
+[charaSet B 25002000 1 葛飾北斎]
+[charaSet C 25006000 1 ゴッホ]
+[charaDepth C 1]
+[charaSet D 4019001 1 マルタ]
+[charaDepth D 0]
+[imageSet E cut397_sunflower 1]
+[charaDepth E 3]
+[imageSet F back10000 1]
+[charaScale F 1.1]
+[charaDepth F 2]
+[charaSet G 1098211410 1 女性]
+[charaDepth G 1]
+[charaSet H 98115000 1 通信用ノイズ1]
+[charaSet I 6005001 1 終末概念]
+[charaDepth I 0]
+[charaShadow I true]
+[charaSet J 1098251600 1 テオ]
+[charaSet K 6005001 1 エフェクト]
+[charaSet L 6005001 1 エフェクト１]
+[charaDepth L 1]
+[sceneSet M 135300 1]
+[charaScale M 1.2]
+[charaDepth M 2]
+[sceneSet N 135300 1]
+[charaScale N 1.2]
+[charaDepth N 5]
+[charaSet O 6005001 1 終末概念_演出用]
+[charaScale O 1.0]
+[charaDepth O 3]
+[charaShadow O true]
+[charaSet P 25006000 1 ゴッホ_演出用]
+[charaScale P 1.0]
+[charaDepth P 6]
+[charaSet Q 6005001 1 エフェクト１]
+[charaDepth Q 4]
+
+[charaPut L 1200,1200]
+[charaEffect L bit_talk_11]
+[charaPut Q 1200,1200]
+[charaEffect Q bit_talk_11]
+[charaShadow I true]
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[scene 135300]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.4]
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マルタ
+……相手が悪いかと思ったら、何とかなったわね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠ゴッホ
+ウフフ……裁定の力とは、[#理:ことわり]の力……[r]この世ならぬもの、[#理外:りがい]の力には及びにくいかと……
+[k]
+
+[charaFace C 3]
+
+＠ゴッホ
+しかも今回はホームグラウンドでホクサイとの合作……！[r]ハウッ、今度は『[#黄色い家:ヘット・ヒェーレ・ハイス]』が暴発しちゃいそう……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠葛飾北斎
+気ィ抜くなよ、ごっほサン！　まだ動いてやがる！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+[charaSpecialEffect I appearance 1 0.1]
+[charaPut L 0,0]
+
+＠終末概念
+…………
+[k]
+
+[bgm BGM_EVENT_129 0.1]
+
+[charaFace I 0]
+
+＠終末概念
+時代はまだ、殺戮による救済を望まない？
+[k]
+
+＠終末概念
+帰れるよ？　[#約束の地:お か あ さ ん]に、還れるよ？
+[k]
+
+[messageOff]
+[wt 0.6]
+[cameraMove 0.3 -10,0 1.01]
+[wt 0.3]
+[cameraMove 0.6 10,0 1.01]
+[wt 0.6]
+[cameraMove 0.3 0,0 1.01]
+[wt 1.0]
+[charaFace I 1]
+
+＠終末概念
+……そっか。ならいいや。[r]でも、ひとつだけ、予言しておくね。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[subCameraOn]
+[subCameraFilter maskEdge cut359_mask09 3 180,180,180,255]
+[charaLayer P sub]
+[charaLayer N sub]
+[charaScale N 1.2]
+[charaScale P 1.15]
+[charaFace P 8]
+[charaFadeinFSR P 0.1 60,170]
+[charaFadein N 0.1 64,-50]
+[subRenderFadein 0.4 200,-150]
+
+[charaScale M 1.2]
+[charaScale O 1.15]
+[charaFace O 5]
+[charaPutFSL Q -256,0]
+[charaFadeinFSL M 0.4 -64,-200]
+[charaFadeinFSL O 0.1 -256,20]
+[charaSpecialEffect O appearance 1 0.1]
+[charaPut L 1200,1200]
+[charaPut I 1200,1200]
+[wt 1.0]
+
+[charaTalk on]
+
+＠O：終末概念
+赤毛のあなた。あなたは救いを手放した。
+[k]
+
+＠O：終末概念
+ゆえに、[#いずれふたたび]、[r][#あなたは剃刀を手に取るでしょう]。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_129 1.7]
+[wt 0.7]
+[charaSpecialEffect O darkEnemyErasure 1 1.7]
+[se ad52]
+[wt 1.4]
+[charaPut Q 1200,1200]
+[wt 0.3]
+[charaMove O -256,-200 1.0]
+[wt 1.8]
+[subRenderFadeout 0.4 200,-150]
+[charaFadeout M 0.4]
+[wt 1.0]
+[charaFadeout P 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[subCameraOff]
+[charaLayer P normal]
+[charaLayer N normal]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠葛飾北斎
+……フウ、[#終:しま]いだね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+なんだか、不穏なことを言い残していきましたが……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マルタ
+あんなものはデタラメです。要は衆生の不安な空気感に、[r][#都合のよい絶望のカタチ]を与えたものでしょう？
+[k]
+
+＠マルタ
+信ずるに足る、本物の『御言葉』は、もっと他にある。[r]さあ、早く帰還を[line 2]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.7]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 21]
+[charaFadein C 0.1 1]
+[wt 0.5]
+[charaScale K 1.0]
+[charaEffect K bit_talk_Slash_white_01 -50,80 V]
+[se ad171]
+[wt 0.2]
+[charaShake C 0.03 3 3 0.3]
+[se ad977]
+[charaTalk depthOff]
+[charaFace D 5]
+[charaFadein D 0.2 -146,0]
+[wt 1.2]
+
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace D 2]
+
+＠マルタ
+[line 2]っとおおお！！　なにこの子なに！？[r]笑顔でシャレにならない自傷かまそうとしたんだけど！？
+[k]
+
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠ゴッホ
+止めないでください聖女さま！　敵に勝利した今、[r]ゴッホはおねえさんに勝利の証を捧げねば！　ねばーー！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+[charaShake G 0.04 3 3 0.4]
+
+＠おねえさん
+ひいいい。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠マシュ
+そういえば、例の耳切り事件、南仏の闘牛の慣習を真似た[r]何らかの『勝利宣言』だった、という説が……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠葛飾北斎
+アッハッハ！　大層な予言が、もう当たっちまったか！
+[k]
+
+[charaFace B 6]
+
+＠葛飾北斎
+ま、そりゃそうサ。ごっほサンを呑むにゃ、[r][#生半:なまなか]なバケモンじゃ不相応ってな！
+[k]
+
+？1：フォーリナーこわい
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+[wt 1.5]
+
+？2：フォーリナーすごい
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 21]
+[charaFadein C 0.1 1]
+[wt 1.5]
+
+？！
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+[charaFadeout C 0.1]
+[wt 1.5]
+
+
+＠マシュ
+そんなわけで、『[#題材]と[#解体]』に関する、ゴッホさんの[r]ちょっぴり深刻で恥ずかしい騒動は、幕を閉じました。
+[k]
+
+＠マシュ
+ですが……
+[k]
+
+[messageOff]
+[branchQuestClear lblClear01 94064915]
+[branchQuestClear lblClear01 3001101]
+
+[label lblNotClear01]
+[scene 110200]
+[branch lblConf01]
+
+[label lblClear01]
+[scene 157900]
+
+[label lblConf01]
+[wt 0.7]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+[bgm BGM_EVENT_146 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠マルタ
+ほら手が止まってる！　早く次、始めなさい！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠ゴッホ
+ウフフ、いえ、あの、あらゆる魔力パスを封じられると、[r]ただの小娘的な体力しかないゴッホは瀕死なのですが！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠マルタ
+だから反省するには良いんでしょ！[r]ほら早く！　次は待ちに待った『ラザロの復活』よ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[se ade461 0.2]
+[seStop ade461 1.4]
+
+＠ゴッホ
+ああ、エヘヘ、これはこれは、偶然ながら、[r][#生前マルタさまを描いた絵]でしたね……（描き描き）
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 0.4]
+[charaMoveReturn D 0,-7 0.4]
+[wt 0.7]
+[charaMoveReturn D 5,0 0.2]
+
+[se ad478]
+[se adm15]
+[wt 0.3]
+[cueSe SE_21 21_ad1137 0.2]
+[seStop 21_ad1137 0.7]
+[se ad243 0.5]
+[seStop ad243 1.0]
+[wt 0.5]
+
+[charaFace D 2]
+
+＠マルタ
+やり直し！！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ゴッホ
+[messageShake 0.04 5 5 0.5]
+ああっ！　力強くも[#厳:いか]めしい真実のマルタさまが！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠マルタ
+あのドスコイのどこが私なのよ！！　そもそも模写なら[r]レンブラントの元絵にもうちょい似せなさいよ！！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ゴッホ
+そんな……マルタさまの本質をこの上なく表現できたと[r]英霊になってからお気に入りになった一幅でしたのに……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠マルタ
+[messageShake 0.04 4 4 0.4]
+本人が直せっつってんだから直しなさい！！
+[k]
+
+＠マルタ
+ホラ！　カルデア内装用のセルフ模写100枚、[r]ノルマまであと83枚！　とっとと手を動かす！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+
+＠ゴッホ
+ウフフ、[charaShake C 0.04 3 3 0.7][wt 1.0]死……！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_146 2.0 0.4]
+[wait fade]
+[charaFadeout C 0.1]
+[charaSet A 98001000 1 マシュ]
+[scene 10000]
+[wt 1.0]
+
+＠マシュ
+……ゴッホさんは、かなり長いこと大変だったのでした。
+[k]
+
+＠マシュ
+その後ゴッホさんは、シミュレーターの無断使用を[r]しないという厳正な誓約を結ばされたのですが、
+[k]
+
+＠マシュ
+同時に、ダ・ヴィンチちゃんのお手伝いをすることで[r]余分のリソース割り当てを貰えることになりまして……
+[k]
+
+＠マシュ
+だから今でも、ゴッホさんはあの微小特異点で、[r]画材を仕入れたり、弟さんに会ったりしてるみたいです。
+[k]
+
+[bgmStop BGM_EVENT_146 1.0]
+
+＠マシュ
+あと……
+[k]
+
+[messageOff]
+[branchQuestClear lblClear02 94064915]
+[branchQuestClear lblClear02 3001101]
+
+[label lblNotClear02]
+[scene 105800]
+[branch lblConf02]
+
+[label lblClear02]
+[scene 157900]
+[label lblConf02]
+
+[wt 2.0]
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[se ad8]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+[bgm BGM_EVENT_77 0.1]
+
+＠ゴッホ
+エヘヘ、お邪魔します……
+[k]
+
+？1：ようやく罪滅ぼしが終わったんだって？
+？2：お疲れさま、ゴッホちゃん
+？！
+
+[charaFace C 7]
+
+＠ゴッホ
+はい……ゴッホはキレイなゴッホ……ご厚情に感謝を、[r]パン工場にランチャーを……ウフフ、ゴッホジョーク……
+[k]
+
+[charaFace C 14]
+
+＠ゴッホ
+あっ、そんなことより、ご報告です。[r][#此度:こたび]の苦行の結果、ゴッホなんと、[#宝具が増えました]。
+[k]
+
+？1：えっ
+？2：本当！？
+？！
+
+[charaFace C 21]
+
+＠ゴッホ
+はい、さっそくご覧に入れますね……！
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ad1110]
+[fadeout white 1.0]
+[wait fade]
+[wt 1.0]
+[seStop 21_ad1110 1.0]
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.5]
+[charaTalk off]
+[charaFadein E 0.4 0,-190]
+[charaFadeTime F 0.4 0.5]
+[wt 2.0]
+
+[charaFadeout E 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+
+[wt 1.0]
+
+[charaFace C 3]
+
+＠ゴッホ
+……第三宝具、『[#ひまわりとしての自画像:ゼルフポルトレット・オプハドラーハ・アン・メン・メースター]』……[r]画家ゴッホの人格を、[#己:おの]が[#内:うち]より抽出したものです……
+[k]
+
+
+[charaFace C 6]
+
+＠ゴッホ
+発想は後世のホルストのイラストを参考に……[r]アレちょっと気に入ってますので……ウフフ……
+[k]
+
+＠ゴッホ
+宝具といってもただの対話装置ですが……結構似てて……[r]エヘヘ……雅号ゴッホを名乗る勇気も湧くというもの……
+[k]
+
+[charaFace C 14]
+
+＠ゴッホ
+呼び名は、本人の希望で『ウィレム』です……[r]ウィレム、何度もお話ししたマスターさまですよ……！
+[k]
+
+[messageOff]
+[charaFadein E 0.4 0,-190]
+[charaFadeTime F 0.4 0.5]
+[wt 1.0]
+
+＠ウィレム
+……ハジメマシテ、カルデアのマスター。[r]僕はまあ、うん、そんな感じでよろしく。
+[k]
+
+？1：ハジメマシテ
+？2：コンゴトモヨロシク
+？！
+
+[messageOff]
+[charaFadeout E 0.4]
+[charaFadeout F 0.4]
+[wt 0.7]
+[charaFace C 21]
+
+＠ゴッホ
+エヘヘ、なんですかお二人とも～！
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgm BGM_EVENT_77 1.5 0.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout C 0.1]
+[wt 0.5]
+
+＠マシュ
+……ゴッホさんの周りが、[r]５割増しでにぎやかになったようです。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.5]
+[wt 1.5]
+
+[scene 166500]
+[wt 2.0]
+[fadein black 2.0]
+[wait fade]
+
+[cueSe SE_22 22_ad1151 0]
+[seVolume 22_ad1151 2.0 0.7]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.4 0,0]
+[wt 0.7]
+[charaMove J -128,0 1.4]
+[charaShake J 0.1 0 1 1.4]
+[wt 1.8]
+[charaMoveReturn J -128,10 0.2]
+[wt 0.7]
+[charaMove J 128,0 2.8]
+[charaShake J 0.1 0 1 2.8]
+[wt 3.2]
+[charaMove J 128,-10 0.7]
+[wt 1.4]
+[charaMove J 128,0 0.4]
+[wt 1.0]
+[charaMove J 0,0 1.4]
+[charaShake J 0.1 0 1 1.4]
+[wt 2.8]
+[charaFaceFade J 12 0.4]
+[wt 0.7]
+
+＠テオ
+………………
+[k]
+
+[charaFace J 3]
+
+＠テオ
+さいきん、こないなぁ、[#にいさん]。
+[k]
+
+[messageOff]
+[seStop 22_ad1151 2.0]
+[charaFace J 8]
+[wt 1.2]
+[charaFace J 0]
+[wt 0.4]
+
+＠テオ
+……じゃ、そろそろ動こうかな？
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

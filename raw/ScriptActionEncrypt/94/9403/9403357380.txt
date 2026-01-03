@@ -1,0 +1,928 @@
+
+＄94-03-35-73-8-0
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 1043000 1 ローラン]
+[charaDepth A 2]
+[charaSet B 1041002 1 アストルフォ]
+[charaDepth B 3]
+[equipSet C 9808480 1 バレンタイン礼装]
+[charaDepth C 9]
+
+[charaSet D 1098255900 1 ローラン_黒]
+[charaDepth D 2]
+
+[sceneSet E 101700 1]
+[sceneSet F 101700 1]
+[charaSet G 1043000 1 ローラン_演出用]
+[charaSet H 1041002 1 アストルフォ_演出用]
+
+[charaSet I 98115000 1 エフェクト用]
+[charaScale I 1.27]
+[charaEffect I bit_talk_mosaic_ro]
+[charaPut I 2000,2000]
+
+[charaSet L 98115000 1 エフェクト用2]
+
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[label lblClear01a]
+[scene 105500]
+[branch lblConf01]
+
+[label lblClear01b]
+[scene 104200]
+[branch lblConf01]
+
+[label lblClear01c]
+[scene 132800]
+
+[label lblConf01]
+
+[cameraMove 0.1 0,0 1.01]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.2]
+
+？1：さて……ローランにチョコを渡すのだけど
+？！
+
+[messageOff]
+[se ade84]
+[wt 0.2]
+[wipeout circleIn 1.5 1]
+[wait wipe]
+
+[cameraFilter gray]
+[wt 1.0]
+
+[seStop ade84 1.0]
+
+[wipein circleIn 1.0 1]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+[wt 0.6]
+
+[bgm BGM_EVENT_7 0.1 0.5]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V010]
+俺にチョコを！？[r]おお、ありがとう！[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠ローラン
+[tVoice ValVoice_104300 0_V020]
+これはもう、脱ぐしかないな！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[cueSe SE_21 21_ade580]
+[wt 0.2]
+
+[wt 0.2]
+[se ad7 0.4]
+[wt 0.3]
+[seStop 21_ade580 0.2]
+[wt 0.7]
+
+[charaTalk off]
+
+[charaPut L 1]
+[charaEffect L bit_talk_41_fs]
+[charaScale D 1.2]
+[charaFace D 2]
+[charaFadein D 0.2 1]
+[charaEffect I bit_talk_mosaic_ro]
+[charaPut I 13,0]
+[wt 0.2]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V030]
+いえーーーい！！[messageShake 0.05 4 3 0.7][charaMoveReturn D 0,15 0.4][charaMoveReturn I 13,15 0.4][twt 1.4][r]チョコ貰ったぞおおおおお！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace D 1]
+[charaEffectDestroy L bit_talk_41_fs]
+[charaMove D -100,20 0.3]
+[charaMove I -113,20 0.3]
+[se adm21]
+[wt 0.3]
+[charaMove D -200,0 0.3]
+[charaMove I -213,0 0.3]
+[seStop adm21 0.3]
+[wt 0.3]
+[se adm21]
+[charaMove D -100,20 0.3]
+[charaMove I -113,20 0.3]
+[wt 0.3]
+[charaMove D 0,0 0.3]
+[charaMove I 13,0 0.3]
+[seStop adm21 0.3]
+[wt 0.3]
+[se adm21]
+[charaMove D 100,20 0.3]
+[charaMove I 113,20 0.3]
+[wt 0.3]
+[seStop adm21 0.3]
+
+[wipeout circleIn 0.6 1]
+[charaMove D 200,0 0.3]
+[charaMove I 213,0 0.3]
+[wait wipe]
+
+[cameraFilter normal]
+[charaFadeout D 0.1]
+[charaPut I 2000,2500]
+[charaPut L 2000,2500]
+[charaEffectDestroy I bit_talk_mosaic_ro]
+[wt 1.0]
+
+[bgm BGM_EVENT_7 1.5 1.0]
+[wipein circleIn 1.5 1]
+[wait wipe]
+[wt 0.2]
+
+[cameraMove 0.2 8,0 1.01]
+[wt 0.2]
+[cameraMove 0.4 -8,0 1.01]
+[wt 0.4]
+[cameraMove 0.2 0,0 1.01]
+[wt 0.8]
+
+
+？1：さすがにそこまではしない[&だろう:でしょ]！
+？2：……たぶん！
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[scene 101700]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[subCameraOn 2]
+[charaLayer E sub #A]
+[charaLayer G sub #A]
+[charaLayer L sub #A]
+[charaLayer F sub #B]
+[charaLayer H sub #B]
+[charaLayer I sub #B]
+[charaDepth E 4]
+[charaDepth F 6]
+[charaDepth G 5]
+[charaDepth H 7]
+[charaDepth L 8]
+[charaDepth I 9]
+[charaScale E 1.2]
+[charaScale F 1.2]
+[charaScale G 1.2]
+[charaScale H 1.2]
+[charaScale L 1.2]
+[charaScale I 1.2]
+
+[charaFace G 0]
+[charaFadeinFSL G 0.1 -75,200]
+[charaFadein E 0.1 250,-50]
+
+[charaFace H 0]
+[charaFadeinFSR H 0.1 55,200]
+[charaFadein F 0.1 -250,-50]
+
+[subCameraFilter #A maskEdge cut359_mask10 5 255,255,255,255 0]
+[subCameraFilter #B maskEdge cut359_mask09 5 255,255,255,255 0]
+[subRenderDepth #A 3]
+[subRenderDepth #B 2]
+
+[bgm BGM_SEIHAI_4 0.1]
+
+[charaFace G 2]
+[subRenderFadein #A 0.3 -400,-200]
+[subRenderMove #A -200,-200 0.3]
+[wt 0.4]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V040]
+ハァァァァァ！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace H 2]
+[subRenderFadein #B 0.3 400,-200]
+[subRenderMove #B 200,-200 0.3]
+[wt 0.4]
+
+＠アストルフォ
+[tVoice ValVoice_104300 0_V050]
+てっりゃああああ！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad1006]
+[se ad73]
+[charaPutFSL L -50,250]
+[charaPutFSR I 20,250]
+[charaEffect L bit_talk_quickmove]
+[charaEffect I bit_talk_quickmove]
+
+[charaSpecialEffect G erasureReverse 0,0 0.4]
+[charaSpecialEffect H erasureReverse 0,0 0.4]
+[wt 0.7]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+
+[charaEffect B bit_talk_kengekiall02]
+[wt 0.2]
+[effect bit_talk_14 250,150]
+[shake 0.04 2 2 0.4]
+[se ad32]
+[wt 0.1]
+[se ad809]
+[se ad810]
+[seStop ad810 0.4]
+[wt 0.2]
+[se ad618]
+[shake 0.04 4 4 0.5]
+[effect bit_talk_14 -250,-150]
+[wt 0.8]
+
+[charaTalk off]
+[charaScale B 1.1]
+[charaFace B 5]
+[wt 0.1]
+[se ad671]
+[seStop ad671 0.8]
+[charaFadeinFSR B 0.3 100,-10]
+[charaMoveFSR B 200,-15 0.3]
+[wt 0.2]
+[charaShake B 0.04 2 2 0.4]
+[wt 0.8]
+
+[charaFace B 2]
+＠アストルフォ
+[tVoice ValVoice_104300 0_V060]
+せ・え・の[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaScale A 1.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadeinFSL A 0.1 -200,0]
+＠ローラン
+[tVoice ValVoice_104300 0_V070]
+！[messageShake 0.05 4 3 0.3][wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[charaMoveFSL A -50,0 0.2]
+[cueSe SE_21 21_ade546]
+[wt 0.8]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadeinFSR B 0.1 200,0]
+
+＠アストルフォ
+[tVoice ValVoice_104300 0_V080]
+遅いっ！[wait tVoice]
+[k]
+
+[charaEffect B bit_talk_36]
+[se ad39]
+[charaFace B 2]
+
+＠アストルフォ
+[tVoice ValVoice_104300 0_V090]
+『[#僥倖の拘引網:ヴルカーノ・カリゴランテ]』！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaEffectStop B bit_talk_36]
+[charaPut B 1200,1200]
+
+[effect bit_talk_throwing]
+[cueSe NoblePhantasm_104100 NP_104100_1]
+[wt 0.5]
+[fowardEffect bit_talk_throwing 0,0 H]
+[seStop NP_104100_1 1.5]
+[wt 1.0]
+
+[charaScale G 1.3]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 0,210]
+[charaPut E 125,0]
+[subCameraFilter #A maskEdge cut359_mask13 5 255,255,255,255 0]
+[subRenderFadein #A 0.3 -200,-280]
+[subRenderMove #A 0,-280 0.3]
+[wt 0.5]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V100]
+遅くは……ない！[wait tVoice]
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[wt 0.1]
+
+[fowardEffect bit_talk_14 0,40]
+[se ad1013]
+[se ad1014]
+[wt 0.1]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[shake 0.03 3 3 0.4]
+[wt 0.4]
+[se ade37 0.3]
+[wt 1.0]
+[fowardEffectDestroy bit_talk_14]
+
+？1：（剣を腕に絡ませた……！？）
+？！
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace A 5]
+[charaFadein A 0.2 -120,0]
+[charaFace B 10]
+[charaFadein B 0.2 120,0]
+[wt 0.2]
+[charaTalk on]
+[charaTalk B]
+
+＠アストルフォ
+[tVoice ValVoice_104300 0_V110]
+へ？　へ、へ、へ？[wait tVoice]
+[k]
+
+[charaShake A 0.03 2 2 0.7]
+[se ad345 0.5]
+[seStop ad345 0.7]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V120]
+……ぬぬぬぬぬ……！[wait tVoice]
+[k]
+
+[charaMove A -140,0 0.7]
+[charaMove B 100,0 0.7]
+[charaShake B 0.03 1 3 0.7]
+[se ad345 0.4]
+[seStop ad345 1.2]
+[charaFace B 12]
+
+＠アストルフォ
+[tVoice ValVoice_104300 0_V130]
+わ、わ、わ。[r]ちょ、待っ[line 3][wait tVoice]
+[k]
+
+[charaMove A -160,0 0.7]
+[charaMove B 80,0 0.7]
+[charaShake B 0.03 1 3 0.7]
+[se ad345 0.4]
+[seStop ad345 1.2]
+[charaFace A 1]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V140]
+ハッハッハ、待つ訳ないだろ！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaFadeout B 0.4]
+[wt 1.0]
+
+[se ad882]
+[se ad609 0.7]
+[seStop ad609 1.5]
+[shake 0.03 3 3 0.7]
+[wt 1.5]
+
+＠アストルフォ
+[tVoice ValVoice_104300 0_V150]
+うにゃー！？[wait tVoice]
+[k]
+
+[messageOff]
+[bgmStop BGM_SEIHAI_4 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[subCameraOff]
+[charaLayer E normal]
+[charaLayer G normal]
+[charaLayer F normal]
+[charaLayer H normal]
+[charaLayer L normal]
+[charaLayer I normal]
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+[charaScale A 1.0]
+[charaScale B 1.0]
+[charaScale L 1.0]
+[charaScale I 1.0]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ローラン
+[tVoice ValVoice_104300 0_V160]
+筋力の差と戦術の差だな。[r]そっちが勝ってたのは間合いだけ。[wait tVoice]
+[k]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V170]
+それを詰める方法が分かれば、[r]後は楽なもんだ。[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠アストルフォ
+[tVoice ValVoice_104300 0_V180]
+うー……。[wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V190]
+恨みがましい目をしても事実だぞー。[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠アストルフォ
+[tVoice ValVoice_104300 0_V200]
+まあそうなんだけどさ！[twt 3.2][charaFace B 1][r]じゃあもう一本！[wait tVoice]
+[k]
+
+＠アストルフォ
+[tVoice ValVoice_104300 0_V210]
+今度はマスターがいるから、[r]負けないぞー！[wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V220]
+おっと、マスターか。[r]悪い悪い。どうしたー？[wait tVoice]
+[k]
+
+
+＠ローラン
+[tVoice ValVoice_104300 0_V230]
+トレーニングなら付き合うが……。[wait tVoice]
+[k]
+
+？1：はい、ローランどうぞ！
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[charaFace A 4]
+＠ローラン
+[tVoice ValVoice_104300 0_V240]
+[FFFFFF]？[-][wait tVoice]
+[k]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V250]
+[FFFFFF]？　？　？[-][wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+＠アストルフォ
+[tVoice ValVoice_104300 0_V260]
+ローランが不思議なものを目の当たりにした[r]猫みたいな表情を浮かべている……。[wait tVoice]
+[k]
+
+[charaFace B 9]
+＠アストルフォ
+[tVoice ValVoice_104300 0_V270]
+チョコだよ、チョコ！[wait tVoice]
+[k]
+
+[charaFace B 26]
+＠アストルフォ
+[tVoice ValVoice_104300 0_V280]
+あ、マスター。[r]ボクにもくださいな！[wait tVoice]
+[k]
+
+？1：もうあげたでしょ
+
+[charaFace B 1]
+＠アストルフォ
+[tVoice ValVoice_104300 0_V290]
+そうだったそうだった！[wait tVoice]
+[k]
+
+[charaFace B 21]
+＠アストルフォ
+[tVoice ValVoice_104300 0_V300]
+……もう一個くれない？[r]だめ？　だめかー。[wait tVoice]
+[k]
+
+？2：ごめんね、次渡すよ
+
+[charaFace B 1]
+＠アストルフォ
+[tVoice ValVoice_104300 0_V310]
+わーい、楽しみー！[wait tVoice]
+[k]
+
+？！
+
+[charaFace B 0]
+＠アストルフォ
+[tVoice ValVoice_104300 0_V320]
+で、ローラン。[r]どしたの？[wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V330]
+うむ……いや。[r]どう対応すればいいのか分からなくてな。[wait tVoice]
+[k]
+
+[charaFace A 5]
+＠ローラン
+[tVoice ValVoice_104300 0_V340]
+あ、違う！[r]とても感謝してるぞ！　それは間違いない！[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠ローラン
+[tVoice ValVoice_104300 0_V350]
+ただ……。[r]バレンタインには返礼が必要だろう？[wait tVoice]
+[k]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V360]
+この恩に何を返せばいいのか、[r]見当も付かなくてな……。[wait tVoice]
+[k]
+
+？1：（思ったより真面目だ……）
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠アストルフォ
+[tVoice ValVoice_104300 0_V370]
+うーん。[r]まあ、脱ぐ以外だったら何だって大丈夫じゃない？[wait tVoice]
+[k]
+
+[charaFace B 26]
+
+＠アストルフォ
+[tVoice ValVoice_104300 0_V380]
+じゃあ、それを考えつくまでボクは別の人と[r]鍛錬してるねー！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[se ad132]
+[seStop ad132 1.0]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ローラン
+[tVoice ValVoice_104300 0_V390]
+あ、こらアストルフォ！[r]一緒に考えてくれー！[wait tVoice]
+[k]
+
+[charaFace A 5]
+＠ローラン
+[tVoice ValVoice_104300 0_V400]
+ったく。[r]行っちまったか……。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠ローラン
+[tVoice ValVoice_104300 0_V410]
+うーん……マスター、[r]何かこれが欲しいって物はあるか？[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠ローラン
+[tVoice ValVoice_104300 0_V420]
+俺が渡せる物なら、[r]そりゃもう何でも渡すつもりだぜ！[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠ローラン
+[tVoice ValVoice_104300 0_V430]
+持ってないものは無理だが……。[wait tVoice]
+[k]
+
+？1：何でもいいよ
+？！
+
+[charaFace A 4]
+＠ローラン
+[tVoice ValVoice_104300 0_V440]
+おいおい、そりゃあ薄情じゃないか。[wait tVoice]
+[k]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V450]
+何でもいいって言われると、[r]逆に困るだろー。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠ローラン
+[tVoice ValVoice_104300 0_V460]
+あ、でもしかし待てよ。[r]んー……仕方ない、とっておきを出すとするか！[wait tVoice]
+[k]
+
+？1：とっておき……？
+
+[charaFace A 1]
+＠ローラン
+[tVoice ValVoice_104300 0_V470]
+おう、とっておきだ！[wait tVoice]
+[k]
+
+？2：とっておき……
+
+[messageOff]
+[se ade84]
+[wipeout circleIn 1.5 1]
+[bgm BGM_EVENT_77 1.5 0.5]
+[wait wipe]
+
+[charaFace A 1]
+
+[cameraFilter gray]
+[wt 1.0]
+
+[seStop ade84 1.0]
+
+[wipein circleIn 1.0 1]
+[wait wipe]
+[wt 0.2]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V480]
+そう、即ち[line 3][r]とっておきの、全裸だ！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[cueSe SE_21 21_ade580]
+[wt 0.2]
+
+[wt 0.2]
+[se ad7 0.3]
+[wt 0.3]
+[seStop 21_ade580 0.4]
+[wt 0.8]
+
+[wipeout circleIn 1.0 1]
+[wait wipe]
+
+[cameraFilter normal]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 1.5 1.0]
+[wipein circleIn 1.5 1]
+[wait wipe]
+[wt 0.2]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V490]
+何を考えてるか分かるけど、[r]そっちの方向じゃないぞー。[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.5]
+[charaFace A 0]
+[wt 0.9]
+
+[se ad7]
+[charaMove A 0,-20 0.2]
+[wt 1.5]
+
+[bgm BGM_MAP_64 0.1 0.7]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V500]
+我がマスター。[r]いえ、今この一時は我が王よ！[wait tVoice]
+[k]
+
+
+＠ローラン
+[tVoice ValVoice_104300 0_V510]
+忠誠と誓い、[r]そして我が騎士道を捧げましょう。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[charaTalk off]
+[se bas2]
+[charaFace C 0]
+[charaFadein C 0.5 0,-70]
+[wt 2.2]
+
+？1：[&はい！？:！？]
+？！
+
+[messageOff]
+[charaFadeout C 0.4]
+[wt 0.8]
+[charaTalk on]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V520]
+不服かい？[wait tVoice]
+[k]
+
+？1：[&いや全然！:不服は……ないけど……]
+？！
+
+[messageOff]
+[bgmStop BGM_MAP_64 1.5]
+[charaMove A 0,0 0.6]
+[wt 0.1]
+[se ad60]
+[wt 0.4]
+[seStop ad60 0.1]
+[wt 0.8]
+
+[charaFace A 1]
+＠ローラン
+[tVoice ValVoice_104300 0_V530]
+なあに、冗談だ冗談！[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V540]
+ちゃんと戻ったら、[r]何か具体的なものを渡すよ！[wait tVoice]
+[k]
+
+
+＠ローラン
+[tVoice ValVoice_104300 0_V550]
+ＱＰとか！　黄金の果実とか！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad500]
+[seStop ad500 0.2]
+[wt 0.1]
+[charaShake A 0.04 3 3 0.2]
+[charaFace A 4]
+[wt 0.9]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V560]
+え、これもダメですか。[wait tVoice]
+[k]
+
+[messageOff]
+[cameraMove 0.3 0,7 1.01]
+[wt 0.3]
+[cameraMove 0.3 0,0 1.01]
+[wt 1.0]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V570]
+参ったな……そうなると、[r]もう残るはいつものアレしかないんだが……。[wait tVoice]
+[k]
+
+[charaFace A 5]
+＠ローラン
+[tVoice ValVoice_104300 0_V580]
+[line 3]脱ぐか？[wait tVoice]
+[k]
+
+？1：これでいいからー！
+？！
+
+[charaFace A 1]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V590]
+オッケー了解！[wait tVoice]
+[k]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V600]
+ああ、でもただチョコの返礼だけじゃなくて[r]忠誠と誓いは本物だからな！[wait tVoice]
+[k]
+
+＠ローラン
+[tVoice ValVoice_104300 0_V610]
+そこら辺は、本気に取ってもらっていいぜ！[r]よろしくぅ！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.7]
+[se ad60]
+[seStop ad60 1.4]
+[wt 2.4]
+
+？1：[&オレ:わたし]の騎士かぁ……
+？！
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

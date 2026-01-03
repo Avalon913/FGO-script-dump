@@ -1,0 +1,322 @@
+
+＄94-99-99-01-5-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098270510 1 ラニ＝Ｄ2]
+[charaSet B 1098270540 1 サイレンロボ2]
+[charaSet C 1098271000 1 蠢魔1]
+[charaSet D 1098270200 1 カーマ]
+[charaSet E 1098270730 1 ラニ＝Ｔ1]
+[charaSet F 1098270700 1 ラニ＝Ｔ2]
+[charaSet G 1098270710 1 ラニ＝Ｔ_花飾り1]
+[charaSet H 1098270750 1 ラニ＝Ｔ_花飾り2]
+[charaSet I 1098271300 1 黄金ケルベロス]
+
+[sceneSet J 190200 1]
+[charaScale J 1.01]
+
+[imageSet K back10000 1 1]
+[charaScale K 1.1]
+[imageSet L back10000 1 1]
+[charaScale L 1.1]
+
+[charaSet M 98115000 1 エフェクト用ダミー1]
+[charaSet N 98115000 1 エフェクト用ダミー2]
+
+[scene 10000]
+[fadein black 1.0]
+[wait fade]
+
+＠アナウンス
+「特定端末でシネスコ用の黒帯が表示されるシーンに進行した際、[r]　黒帯の右端が見切れる現象」調査用テストスクリプトです。
+[k]
+
+＠アナウンス
+実際に問題の報告があった該当のスクリプト箇所をケース毎に[r]一部抜粋してテストスクリプトとして使用しております。
+[k]
+
+＠アナウンス
+検証のほどよろしくお願いいたします。
+[k]
+
+＠アナウンス
+まず、[cameraMove～]を使って画面をズームしている場合に[r]問題が発生した箇所をタップで再生します。
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 132900]
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[cameraMove 50.0 0,10 1.2]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_57 0.1]
+[wt 1.0]
+
+＠カルデア職員Ａ
+……まずいな。
+[k]
+
+＠カルデア職員Ｂ
+ええ、理由はわからないけど。[r]マニュアルにおける『事項Ｑ－２３』に相当するわ。
+[k]
+
+＠カルデア職員Ｂ
+異常事態だと判断しましょう。
+[k]
+
+＠カルデア職員Ｃ
+『不明な要因による虚数羅針盤ペーパームーンの[r]　性能低下・機能不全』……ね。
+[k]
+
+＠カルデア職員Ｃ
+……マニュアルに基づき、事象究明のための情報収集、[r]並びに状況記録を開始します。保存強度はＡＡ。
+[k]
+
+＠カルデア職員Ｃ
+以降、対象の状況のみならず、[r]我々の発言、操作も記録されます。ご了承を。
+[k]
+
+＠カルデア職員Ｂ
+ごめん、こっち手が回らない！[r]艦内アナウンスよろしく！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_MAP_57 1.0]
+[wait fade]
+
+[cameraHome 0.1]
+[pictureFrame]
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+＠アナウンス
+次に、[flashin～]で画面を一瞬フラッシュさせた場合に[r]問題が発生した箇所をタップで再生します。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[pictureFrameTop cut063_cinema]
+[scene 189500]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth A 3]
+[charaDepth B 3]
+
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[wt 0.5]
+
+[bgm BGM_EVENT_142 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[se ad1006]
+[charaMoveScale C 1.1 0.3]
+[charaMove C 0,-35 0.3]
+[charaFadeout C 0.3]
+[wt 0.4]
+
+[se ad191]
+[wt 0.5]
+
+[se ad161]
+[flashin once 0.1 0.1 FF3333FF FF3333FA]
+[wt 0.1]
+
+[fowardEffect bit_talk_35]
+[charaFace A 7]
+[charaFace B 2]
+[charaFadein A 0 0,-50]
+[charaFadein B 0 170,-50]
+[charaShake A 0.02 3 4 0.6]
+[charaShake B 0.02 3 4 0.6]
+[wt 1.2]
+
+[charaMove A 0,-80 0.4]
+[charaMove B 170,-80 0.4]
+[charaFadeout A 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+
+[se ad775]
+[wt 0.5]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_142 1.0]
+[wait fade]
+
+[pictureFrame]
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+＠アナウンス
+次に、[fadeout～]で画面を白くフェードアウトさせた場合に[r]問題が発生した箇所をタップで再生します。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[wipeFilter cinema 0.5 0]
+[pictureFrameTop cut063_cinema]
+[cameraFilter gray]
+[scene 189400]
+
+[charaDepth D 2]
+[charaDepth F 3]
+[charaDepth G 4]
+[charaDepth H 4]
+[charaDepth M 8]
+[charaDepth N 9]
+
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+[wt 0.2]
+
+[bgm BGM_BATTLE_33 1.0 0.5]
+[fadein black 1.0]
+[wait fade]
+[wt 0.15]
+
+[charaPut M 0,-50]
+[charaEffect M bit_talk_20b]
+[wt 0.2]
+[cueSe Battle bac283]
+[wt 1.8]
+
+[charaFadeout D 0]
+[charaPut M 2000,2500]
+[charaEffectStop M bit_talk_20b]
+[wt 0.15]
+
+[charaFace F 0]
+[charaFadein F 0.1 0,-75]
+[wt 0.5]
+
+[se ad236]
+[charaPut N 1]
+[charaEffect N bit_talk_magical_pon]
+[wt 0.2]
+
+[charaFace G 8]
+[charaFadein G 0 0,-75]
+[charaFadeout F 0.1]
+[wt 1.4]
+
+[fadeout white 0.6]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaPut N 2000,2500]
+[charaEffectDestroy N bit_talk_magical_pon]
+[scene 189300]
+
+[charaFace E 10]
+[charaFadein E 0.1 0,25]
+[wt 0.5]
+
+[fadein white 0.6]
+[wait fade]
+[wt 2.0]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_BATTLE_33 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wipeOff]
+[pictureFrame]
+[cameraFilter normal]
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+＠アナウンス
+次に、[fowardEffect～]で画面を覆うエフェクトを表示させた[r]場合に問題が発生した箇所をタップで再生します。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[pictureFrameTop cut063_cinema]
+[overlayFadein K 0.1 0,-782]
+[overlayFadein L 0.1 0,783]
+[charaDepth J 5]
+[charaDepth I 6]
+[charaFadein J 0.1 0,-200]
+[wt 0.5]
+
+[bgm BGM_EVENT_142 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[se ad85]
+[effect bit_talk_gold_slash_02]
+[wt 1.0]
+[cueSe SE_23 23_ad1295]
+[fowardEffect bit_talk_gold_smoke]
+[wt 4.8]
+
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+[cueSeStop 23_ad1295 1.0]
+[cueSe SE_23 23_ad1312]
+[fowardEffectStop bit_talk_gold_smoke]
+[wt 1.4]
+
+[se ad772]
+[charaShake I 0.02 3 3 2.8]
+[charaShake J 0.02 2 2 2.8]
+[wt 3.3]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_142 1.0]
+[wait fade]
+
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[pictureFrame]
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+＠アナウンス
+テストは以上です。[r]タップでスクリプトを終了いたします。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

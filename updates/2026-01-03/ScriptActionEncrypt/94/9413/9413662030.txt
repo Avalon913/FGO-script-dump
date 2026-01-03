@@ -1,0 +1,157 @@
+
+
+＄94-13-66-20-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 2053000 1 ツタンカーメン]
+[charaSet B 3056000 1 ゴッホ]
+
+[charaSet C 1098306700 1 ダイダロスメカ]
+[charaSet D 1098306700 1 ダイダロスメカ]
+[charaSet E 1098306700 1 ダイダロスメカ]
+[charaSet F 1098306700 1 ダイダロスメカ]
+[charaSet G 1098306700 1 ダイダロスメカ]
+
+[sceneSet H 231600 1]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+
+[subCameraOn 1]
+[charaLayer A sub #A]
+[charaLayer H sub #A]
+[subCameraFilter #A maskEdge cut359_mask16 5 140,117,56,255]
+[subRenderScale #A 1.01]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth A 2]
+[charaScale H 1.4]
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 -50,250]
+[charaFadein H 0.1 -300,0]
+
+[charaPut S 2000,2500]
+[charaEffect S bit_talk_glowing_sphere_red]
+
+[scene 10000]
+
+[fadein black 0.5]
+[wait fade]
+
+[se ad95]
+[wt 0.15]
+[se ade422]
+[wt 1.2]
+
+[fadeout black 1.0]
+[wait fade]
+
+[seStop ad95 0.2]
+[seStop ade422 0.2]
+
+[scene 231600]
+
+[charaDepth S 2]
+[charaDepth C 8]
+[charaDepth D 7]
+[charaDepth E 6]
+[charaDepth F 5]
+[charaDepth G 4]
+
+[charaPut S 0,50]
+[wt 0.6]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.3]
+
+[cameraMove 1.0 0,-20 1.2]
+[wt 1.0]
+
+[charaTalk A]
+[subRenderFadeinFSSideR #A 0.3 600,-250]
+[subRenderMoveEaseFSSideR #A 400,-250 0.5 easeOutSine]
+[wt 0.7]
+
+＠ツタンカーメン
+あれなるが、２つ目の、記憶の断片にて！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[se ad710]
+[shake 0.02 2 3 0.6]
+[wt 0.6]
+[cameraMoveEase 0,0 0.6 easeOutSine 1.01]
+[wt 0.6]
+
+[shake 0.02 2 3 0.6]
+[wt 0.8]
+[seStop ad710 0.2]
+[wt 0.4]
+
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[wt 0.15]
+
+[se ad270]
+[charaTalk off]
+[charaFace C 0]
+[charaFace D 0]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein C 0.4 30,15]
+[charaMove C 0,15 0.4]
+[wt 0.15]
+[charaFadein D 0.4 -280,0]
+[charaMove D -250,0 0.4]
+[wt 0.15]
+[charaFadein E 0.4 280,0]
+[charaMove E 250,0 0.4]
+[wt 0.15]
+[charaFadein F 0.4 -530,-15]
+[charaMove F -500,-15 0.4]
+[wt 0.15]
+[charaFadein G 0.4 530,-15]
+[charaMove G 500,-15 0.4]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaPut S 2000,2500]
+[wt 0.1]
+
+[bgm BGM_BATTLE_184 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠ゴッホ
+ハゥアアアア！　くらえ、ゴッホ発破ァーー！！
+[k]
+
+
+[messageOff]
+[se ad678]
+[blur motion 0.25 4 10000 0.5 0.6 0.05 100]
+[charaMoveScaleEase B 1.2 0.25 easeOutCubic]
+[charaMoveEase B 0,25 0.25 easeOutCubic]
+[wt 0.3]
+
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_184 0.4]
+[seStop ad678 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

@@ -1,0 +1,854 @@
+
+＄94-03-35-70-9-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 5045000 1 アルトリア・キャスター]
+[charaSet B 28001000 1 オベロン]
+[charaSet C 1013001 1 カエサル]
+[equipSet D 9808130 1 バレンタイン礼装]
+[imageSet E cut317_dust 1]
+[charaScale E 0.7]
+[charaSet F 28001000 1 エフェクト]
+
+
+
+
+
+[branchQuestNotClear lblNotClear01 3000303]
+[scene 105800]
+[branch lblConf01]
+[label lblNotClear01]
+[scene 106000]
+[label lblConf01]
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.4 1]
+[wt 0.4]
+[bgm BGM_EVENT_147 0.1]
+＠アルトリア・キャスター
+[tVoice ValVoice_2800100 0_V010]
+ふわっ！？[r]オベロンにチョコを贈りたいと！？
+[k]
+
+[charaFace A 11]
+＠アルトリア・キャスター
+[tVoice ValVoice_2800100 0_V020]
+うーん……どうなんだろ……
+[k]
+
+＠アルトリア・キャスター
+[tVoice ValVoice_2800100 0_V030]
+オベロンの事だから、どうあれ、必ず[r]“嬉しいよ”で返してくるだろうけど……
+[k]
+
+[charaFace A 30]
+＠アルトリア・キャスター
+[tVoice ValVoice_2800100 0_V040]
+[%1]、難しいところでも[r]ズカズカ行くよね。あ、ズンズンか。
+[k]
+
+[charaFace A 7]
+＠アルトリア・キャスター
+[tVoice ValVoice_2800100 0_V050]
+うん、それならお互いダメージもあって[r][#均等:フィフティー]だし、いいんじゃない？
+[k]
+
+[charaFace A 6]
+＠アルトリア・キャスター
+[tVoice ValVoice_2800100 0_V060]
+でも場所は選んだ方がいいと思う。[r]みんながいるところか、誰もいないところか、ね。
+[k]
+
+[charaFace A 1]
+＠アルトリア・キャスター
+[tVoice ValVoice_2800100 0_V070]
+うまくいくようわたしは応援しよーーっと！[r]うわー、オベロンの反応楽しみー！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_147 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 10000]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+
+[input selectBranch]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_147 0.7]
+[soundStopAllFade 0.7]
+
+[charaSet A 5045000 1 アルトリア・キャスター]
+[charaSet B 28001000 1 オベロン]
+[charaSet C 1013001 1 カエサル]
+[equipSet D 9808130 1 バレンタイン礼装]
+[imageSet E cut317_dust 1]
+[charaScale E 0.7]
+[charaSet F 28001000 1 エフェクト]
+
+[scene 10000]
+[fadein black 0.1]
+[wt 0.8]
+
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+[branchQuestNotClear lblNotClear02 3001009]
+
+？1：みんながいるところで！
+
+[flag _SEL 0]
+
+？2：誰もいないところで
+
+[flag _SEL 1]
+
+？！
+
+[branch lblConf02]
+[label lblNotClear02]
+
+？1：みんながいるところで！
+
+[flag _SEL 0]
+
+？！
+
+[label lblConf02]
+
+[branch lblRootB _SEL 1]
+
+[label lblRootA]
+
+[fadeout black 0.5]
+[wait fade]
+[charaSet B 28001000 1 オベロン]
+[branchQuestNotClear lblNotClear03 3000303]
+[scene 105900]
+[branch lblConf03]
+[label lblNotClear03]
+[scene 105600]
+[label lblConf03]
+[wt 0.9]
+
+[se ad5]
+[seVolume ad5 0 0]
+[wt 0.1]
+
+[seVolume ad5 1.5 0.3]
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+[seStop ad5 1.0]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+[bgm BGM_EVENT_77 0.1]
+＠オベロン
+[tVoice ValVoice_2800100 0_V080]
+おや。こんにちは、[%1]。[r]今日はいつもより元気があ……
+[k]
+
+[charaFace B 3]
+＠オベロン
+[tVoice ValVoice_2800100 0_V090]
+……まあ、元気にも種類はあるよね。[r]春の輝きみたいなのと、冬の嵐みたいなヤツ。
+[k]
+
+＠オベロン
+[tVoice ValVoice_2800100 0_V100]
+どっちかというと今日は後者だろ、君。[r]悪戯をする子どもみたいな笑顔じゃない？
+[k]
+
+？1：[&いやあ:えへへ]、ハロウィン[&じゃないけど:ではありませんが]
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+[charaCrossFade B 1098209600 3 0.4]
+[wt 0.4]
+
+[charaFace B 8]
+＠オベロン
+[tVoice ValVoice_2800100 0_V110]
+ああ、やっぱり。[r]顔を見た時、そんな予感はしていたんだ。
+[k]
+
+[charaFaceFade B 11 0.2]
+＠オベロン
+[tVoice ValVoice_2800100 0_V120]
+ありがとう、[r]嬉しいよ[%1]。
+[k]
+
+＠オベロン
+[tVoice ValVoice_2800100 0_V130]
+なにしろバレンタインの贈り物だ、[r]大切に保管するとも！
+[k]
+
+[charaFaceFade B 7 0.2]
+＠オベロン
+[tVoice ValVoice_2800100 0_V140]
+ん？　でも味はちょっと自信がない、[r]手作りだから、だって？
+[k]
+
+[charaFaceFade B 10 0.2]
+＠オベロン
+[tVoice ValVoice_2800100 0_V150]
+なに、どんな出来だろうと気にはしないさ。[r]大切なのは気持ちとタイミング、だよ☆
+[k]
+
+[charaFaceFade B 0 0.2]
+＠オベロン
+[tVoice ValVoice_2800100 0_V160]
+さて。となると、後は僕の番だ。[r]とびきりのお返しをしたいところだけど……
+[k]
+
+[charaFace B 4]
+＠オベロン
+[tVoice ValVoice_2800100 0_V170]
+……知っての通り、僕は裸の王様だからね……[r]あ、知らない？　それならそれでそこは流して。
+[k]
+
+＠オベロン
+[tVoice ValVoice_2800100 0_V180]
+今はちょっと、いや、常にかなり、[r]持ち合わせというものがないんだ……
+[k]
+
+[charaFace B 1]
+＠オベロン
+[tVoice ValVoice_2800100 0_V190]
+ま、甲斐性のない自分にダメ出しをしても[r]始まらない。知恵と機転で好転させよう。
+[k]
+
+＠オベロン
+[tVoice ValVoice_2800100 0_V200]
+[%1]。[r]この後、時間はある？
+[k]
+
+＠オベロン
+[tVoice ValVoice_2800100 0_V210]
+あるんだね？　それなら、チョコの他に[r]そっちも貰ってしまおうかな。
+[k]
+
+[charaFaceFade B 9 0.2]
+＠オベロン
+[tVoice ValVoice_2800100 0_V220]
+先立つものがなくても楽しい思い出は作れるさ。[r]僕の人生がそうだったようにね。
+[k]
+
+＠オベロン
+[tVoice ValVoice_2800100 0_V230]
+まずはカエサルのところに行こう。[r]彼は[#お金:リソース]持ちだ。ケチなのが玉に[#瑕:きず]だけど。
+[k]
+
+＠オベロン
+[tVoice ValVoice_2800100 0_V240]
+知ってる？[r]汎人類史だと、僕の父はカエサルらしい。
+[k]
+
+[charaFaceFade B 2 0.2]
+＠オベロン
+[tVoice ValVoice_2800100 0_V250]
+『お父さん、今月の養育費をくださいね！』
+[k]
+
+[charaFace B 1]
+＠オベロン
+[tVoice ValVoice_2800100 0_V260]
+なんて言えば一発さ。[r]いつの世も、子供にねだられる父は弱いものだ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth C 1]
+[charaDepth B 2]
+
+[charaFace C 4]
+[charaPutFSSideL C -480,0]
+[charaFadeTime C 0.7 0.6]
+[charaMoveFSSideL C -450,0 0.7]
+[wt 1.7]
+[charaFadeout C 0.4]
+[charaMoveFSSideL C -480,0 0.7]
+[wt 1.0]
+
+[charaTalk on]
+[charaFaceFade B 10 0.2]
+＠オベロン
+[tVoice ValVoice_2800100 0_V270]
+軍資金を手に入れたら、次は護衛を雇おう。[r]ロビンフッド君がいいかな？
+[k]
+
+＠オベロン
+[tVoice ValVoice_2800100 0_V280]
+僕とはきっと気が合う。[r]まだ会った事はないけどね？
+[k]
+
+[charaFace B 9]
+＠オベロン
+[tVoice ValVoice_2800100 0_V290]
+ＱＰさえあればシミュレーションの設定は[r]思いのままだ。
+[k]
+
+＠オベロン
+[tVoice ValVoice_2800100 0_V300]
+君はどんな場所に行きたい？[r]遊園地？　それとも博物館？
+[k]
+
+？1：妖精の森とか……？
+
+[charaFace B 11]
+＠オベロン
+[tVoice ValVoice_2800100 0_V310]
+いいね。君らしい、素直な発想だ。[r]バレンタインに森林浴、いいんじゃないかな！
+[k]
+
+？2：女王の城とか……？
+
+[charaFaceFade B 8 0.2]
+＠オベロン
+[tVoice ValVoice_2800100 0_V320]
+舞踏会か。悪くない。[r]けど、今回は止めておこう。
+[k]
+
+＠オベロン
+[tVoice ValVoice_2800100 0_V330]
+バレンタインは明るい祭りなんだろ？[r]お城の舞踏会は、少しだけ縁起が悪いよ。
+[k]
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout B 0.1]
+[charaSet B 28001001 1 オベロン]
+[scene 110100]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+[scene 110102 1.0]
+[wt 1.0]
+[wt 2.0]
+
+[fadeout black 1.0]
+[wait fade]
+[scene 20804]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 1]
+[wt 0.4]
+[bgm BGM_EVENT_116 0.1]
+＠オベロン
+[tVoice ValVoice_2800100 0_V340]
+ああ、もう日没だ。[r]名残惜しいけど、バレンタインはこのあたりで。
+[k]
+
+＠オベロン
+[tVoice ValVoice_2800100 0_V350]
+少しは楽しい時間になった？[r]それは良かった。
+[k]
+
+＠オベロン
+[tVoice ValVoice_2800100 0_V360]
+いずれ薄れる思い出だとしても、[r]少しは胸に残るものになればいいさ。
+[k]
+
+＠オベロン
+[tVoice ValVoice_2800100 0_V370]
+僕に返せるものなんて、[r]それくらいしかないからね。
+[k]
+
+[charaFace B 0]
+＠オベロン
+[tVoice ValVoice_2800100 0_V380]
+さ、自分の部屋に帰るといい、マスター。[r][#童話:いい子]の時間は、ここまでさ。
+[k]
+
+＠オベロン
+[tVoice ValVoice_2800100 0_V390]
+もしこの先、君がどうしようもない終わりを迎えて、[r]まっさかさまに墜ちる[#刻:とき]が来るのなら[line 3]
+[k]
+
+[charaFace B 1]
+＠オベロン
+[tVoice ValVoice_2800100 0_V400]
+その時はもう一度、[r]きみからの贈り物を受け取ろう。
+[k]
+
+＠オベロン
+[tVoice ValVoice_2800100 0_V410]
+とはいえ、お勧めはしないけどね？[r]未完のままの物語も、見ようによっては幸福だよ。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_116 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+
+[label lblRootB]
+
+[rewardSwitch true]
+
+
+[wt 0.7]
+[cueSe SE_21 21_ad1108 0]
+[seVolume 21_ad1108 0.4 0.4]
+[fadeMove white 3.0 0.4]
+[wt 3.0]
+[seStop 21_ad1108 5.0]
+
+[se ad852]
+[seVolume ad852 0 0]
+[seVolume ad852 0 0.4]
+[effect bit_talk_light_through]
+[wt 2.0]
+[cueSe SE_21 21_ade641]
+[seVolume 21_ade641 0 0]
+[seVolume 21_ade641 1.0 0.2]
+[wt 0.4]
+[seStop ad852 1.5]
+
+[fadeout white 1.0]
+[wait fade]
+
+[effectStop bit_talk_light_through]
+[effectDestroy bit_talk_light_through]
+[wt 1.0]
+
+[charaSet B 28001002 1 オベロン]
+[charaScale F 2.0]
+[charaPut F 0,500]
+[charaEffect F bit_talk_marblebg_fs]
+[scene 22170]
+[seStop 21_ade641 1.5]
+[wt 1.0]
+[fadein white 2.5]
+[wait fade]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.4 1]
+[wt 0.4]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V420]
+うわ、キモッ。[r]なんでこの場所が分かったんだ？　勘か？
+[k]
+
+？1：アルトリア・キャスターが教えてくれた
+？2：マーリン魔術で……
+
+？！
+
+[charaFace B 10]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V430]
+アイツの入れ知恵かよ……[r]ここぞとばかりに悪戯心だしやがって。
+[k]
+
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V440]
+なにがマーリン魔術だ、馬鹿らしい。[r]あんなインチキ魔術、誰が仕込んだんだか。
+[k]
+
+？1：そうだね。誰だろうね
+？2：手鏡持ってるけど、使う？
+
+？！
+
+[charaFace B 9]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V450]
+あはははは。[r]悪いけど、少し黙っててくれる？
+[k]
+
+[charaFace B 10]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V460]
+……ったく。[r]この俺が、まさか自業自得とはね。
+[k]
+
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V470]
+キャラは活きるとはいえ始末に手を焼くよな、[r]筋書きにない設定ってヤツは。
+[k]
+
+[charaFace B 4]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V480]
+いいよ、そこは諦めた。
+[k]
+
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V490]
+マスターともなれば、サーヴァントの夢に[r]土足で踏み込むくらい慣れたものだろうしね。
+[k]
+
+[charaFace B 1]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V500]
+とはいえ、これじゃああんまりだ。[r]模様替えをするとしよう。
+[k]
+
+[messageOff]
+[se ade160]
+[wt 0.5]
+[se ad605 0]
+[seVolume ad605 0.5 0.4]
+[wt 0.5]
+[charaMove F 7000,500 1.0]
+[seStop ad605 0.8]
+[wt 1.0]
+[bgm BGM_EVENT_7 0.1]
+[charaEffectDestroy F bit_talk_marblebg_fs]
+[wt 0.5]
+
+？1：汚部屋！
+？2：きたなっ！？
+
+？！
+
+[charaFace B 3]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V510]
+ああ。[r]今の俺の気持ちをよく表しているだろ？
+[k]
+
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V520]
+それで、用件はなに？　だいたい分かるけど、[r]あえて聞いてやるから言ってみろよ。
+[k]
+
+？1：いつもお世話になってる、お返し
+？2：虫除けスプレーの代わりに
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift05]
+[wt 3.5]
+[se ad171]
+[seVolume ad171 0 0.7]
+[wt 0.1]
+[seStop ad79 0.1]
+[wt 1.0]
+[effectDestroy bit_talk_valentinegift05]
+
+[charaFace B 9]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V530]
+うわあ、やっぱりね！[r]ありがとう、嬉しいよクソヤロウ！
+[k]
+
+？1：などと言いつつ、床に捨てないオベロンであった
+
+？！
+
+[bgmStop BGM_EVENT_7 0.7]
+
+[charaFace B 6]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V540]
+いや、あたりまえでしょ。[r]俺の部屋にこんなの落としたくないし。
+[k]
+
+[charaFace B 4]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V550]
+それに……ほら。[r]チョコレートってアレだろ。アレなんだろ？
+[k]
+
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V560]
+動きだしたりボスになったりする怪異なんだろ？[r]幸い、俺は結果しか伝え聞いていないけど。
+[k]
+
+？1：それは特例中の特例
+
+[charaFace B 1]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V570]
+なんだ。つまらない。[r]まあ、重い物でないだけマシかな？
+[k]
+
+？2：そのように作った
+
+[charaFace B 11]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V580]
+マジかよ！　[messageShake 0.04 4 4 0.4]イヤがらせばっかり上手く[r]なってんじゃねえか、おまえ！？
+[k]
+
+[messageOff]
+[charaFace B 6]
+[wt 1.2]
+
+[charaFace B 8]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V590]
+失敬、汚い言葉遣いは厳禁だった。[r]今のはお互い、なかった事に。
+[k]
+
+？！
+
+[charaFace B 0]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V600]
+で、用件はこれで終わりか？[r]なら帰ってくれない？
+[k]
+
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V610]
+いまメチャクチャ忙しくてさ。[r]暇人に関わってる時間とかないんだよね。
+[k]
+
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V620]
+そもそも俺たちは契約上の関係でしょ。
+[k]
+
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V630]
+仕事ならイヤイヤ付き合うけど、[r]プライベートに干渉しないでくれる？
+[k]
+
+？1：（………………）
+
+？！
+
+[messageOff]
+[se ad592]
+[fadeout white 0.7]
+[wait fade]
+[charaFadeout B 0.1]
+[effect bit_sepia01_depth_fs]
+[scene 105800]
+[wt 0.6]
+[bgm BGM_EVENT_154 0.7 0.7]
+[fadein white 0.7]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠アルトリア・キャスター
+[tVoice ValVoice_2800100 0_V640]
+では道はわたしが作りますね。[r]こう、アヴァロンからカッ飛んでくる感じで。
+[k]
+
+＠アルトリア・キャスター
+[tVoice ValVoice_2800100 0_V650]
+え？　でも本気で嫌がられたらどうしよう、[r]ですか？
+[k]
+
+[charaFace A 1]
+＠アルトリア・キャスター
+[tVoice ValVoice_2800100 0_V660]
+だいじょうぶだいじょうぶ！[r]なにやっても嫌がるじゃん、あのひと！
+[k]
+
+[charaFace A 6]
+＠アルトリア・キャスター
+[tVoice ValVoice_2800100 0_V670]
+それに、夢に“入れる”という事は[r]“話くらいは聞く”という事ですから。
+[k]
+
+＠アルトリア・キャスター
+[tVoice ValVoice_2800100 0_V680]
+根はどうしようもなく真面目……というか、[r]マメですからね。公平なんです。
+[k]
+
+[charaFace A 7]
+＠アルトリア・キャスター
+[tVoice ValVoice_2800100 0_V690]
+あ、でもそのあたりは指摘しない方向で。[r]怒りんぼうなので、こっちにも被害が来そうです。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_154 1.5]
+[fadeout white 2.0]
+[wait fade]
+[charaFadeout A 0.1]
+[effectDestroy bit_sepia01_depth_fs]
+[scene 22170]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.6]
+[bgm BGM_EVENT_45 0.7]
+[fadein white 0.7]
+[wait fade]
+
+[wt 0.5]
+
+？1：なるほど
+
+？！
+
+[charaFace B 10]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V700]
+……あのお転婆……[r]……後でぶっ飛ばしてやる……
+[k]
+
+[charaFace B 1]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V710]
+おっと、こっちの話。[r]っていうかまだ居たんだ？　しつこくない？
+[k]
+
+[charaFace B 3]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V720]
+もしかして、お返しがお望みかい？[r]俺から？
+[k]
+
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V730]
+人並みに強欲になったじゃないか。[r]ああいや、強情なのは前からだけど。
+[k]
+
+？1：いや、別にそういうワケじゃ[line 3]
+？2：……欲しいといえば欲しいけど……
+
+？！
+
+[charaFace B 1]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V740]
+いいよ、ほら。[r]持っていって。実はちゃんと用意してあったんだ。
+[k]
+
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V750]
+バレンタインは日頃の……えーと、なんだっけ。[r]そうそう、感謝の気持ちを伝えるんだろ？
+[k]
+
+[charaFace B 12]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V760]
+それなら俺にも積もるほどある。[r]バレンタイン様々だ！
+[k]
+
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V770]
+君と俺には似合いの品だ、[r]押しつけられて嬉しいなぁ！
+[k]
+
+[charaFace B 8]
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V780]
+じゃ、そういう事でグッバイ、マスター！
+[k]
+
+＠オベロン・ヴォーティガーン
+[tVoice ValVoice_2800100 0_V790]
+頼れる仲間がひとりもいなくなったら、[r]ため息交じりに呼んでくれたまえ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_45 2.5]
+[charaFadeout B 0.7]
+[wt 0.1]
+
+[fadeout white 1.0]
+[wait fade]
+[fadein white 0.4]
+[wait fade]
+[fadeout white 1.0]
+[wait fade]
+[fadein white 0.4]
+[wait fade]
+[fadeout white 1.0]
+[wait fade]
+[scene 10001]
+[wt 1.0]
+[fadein white 0.1]
+[wait fade]
+
+[fadeout black 1.5]
+[wait fade]
+[scene 105800]
+[wt 1.5]
+[fadein black 0.3]
+[wt 0.1]
+[se ad7]
+[wait fade]
+
+
+[wt 0.3]
+
+？1：[line 3]ハッ！？
+？2：[line 3]お返し、お返し……！
+
+？！
+
+[se bas2]
+[charaFadein D 0.5 0,-70]
+[wt 2.5]
+
+[charaFadeout D 0.4]
+[wt 0.5]
+[se ade11]
+[wt 1.0]
+[charaFadein E 0.5 0,-150]
+[wt 1.5]
+[bgm BGM_EVENT_7 0.1]
+[wt 1.0]
+
+？1：………………
+
+？！
+
+？1：オーベーローンー！
+
+？！
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

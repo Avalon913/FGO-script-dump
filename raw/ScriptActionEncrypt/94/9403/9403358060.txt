@@ -1,0 +1,984 @@
+
+
+
+
+＄94-03-35-80-6-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5055000 1 久遠寺有珠]
+[charaSet B 5055000 1 久遠寺有珠_演出用1]
+[charaSet C 5055000 1 久遠寺有珠_演出用2]
+[charaScale B 1.2]
+[charaScale C 1.3]
+
+[charaSet D 98006200 1 わるい魔法使い]
+
+[sceneSet E 202800 1]
+[sceneSet F 202800 1]
+[sceneSet G 202800 1]
+[charaScale E 1.2]
+[charaScale F 1.2]
+[charaScale G 1.3]
+
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 98115000 1 エフェクト用]
+
+[sceneSet J 10001 1]
+[charaScale J 1.1]
+
+[equipSet K 9809340 1 バレンタイン礼装]
+[imageSet L cut045_bg 1]
+[sceneSet M 10000 1]
+
+[subCameraOn 2]
+[subCameraFilter #A through]
+[subCameraFilter #B mask cut359_mask05]
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.0]
+[subRenderDepth #A 2]
+[subRenderDepth #B 1]
+[charaLayer B sub #A]
+[charaLayer L sub #B]
+[charaLayer M sub #B]
+[charaScale B 1.2]
+[charaFace B 18]
+[charaFadein B 0.1 140,20]
+[charaScale M 1.1]
+[charaScale L 1.4]
+[charaDepth L 2]
+[charaDepth M 1]
+[charaPut L 280,-120]
+[charaFadeTime L 0.1 0.7]
+[charaFadein M 0.1 1]
+
+
+[scene 10000]
+
+[charaTalk depthOff]
+[charaDepth J 9]
+[charaDepth I 5]
+[charaDepth H 4]
+[charaDepth D 3]
+[charaDepth E 2]
+[charaDepth A 1]
+
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[cueSe Servants_505500 m60368]
+[charaPut H 0,0]
+[charaEffect H bit_talk_noble_light]
+[charaPut I 0,0]
+[charaEffect I bit_talk_summon_o]
+
+[cueSe SE_24 24_ade975]
+[cueSeVolume 24_ade975 0 0]
+
+[fadein black 1.0]
+[wait fade]
+[cueSeVolume 24_ade975 1.0 1.0]
+
+
+
+
+[se ad308]
+[seVolume ad308 0 0.2]
+[seVolume ad308 1.0 1.0]
+[wt 2.0]
+[cueSe Servants_505500 m60369]
+[cueSe SE_23 23_ad1246]
+[shake 0.01 5 5 0]
+[charaEffectStop H bit_talk_noble_light]
+[charaEffectStop I bit_talk_summon_o]
+[wt 0.3]
+
+[se ad911]
+[se ad837]
+[wt 0.2]
+[fadeout white 1.0]
+[wait fade]
+
+[shakeStop]
+[charaPut H 2000,2000]
+[charaPut I 2000,2000]
+[charaEffectDestroy H bit_talk_noble_light]
+[charaEffectDestroy I bit_talk_summon_o]
+
+[scene 202800]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 2.0]
+[cueSeStop 24_ade975 1.5]
+[seStop ad308 1.0]
+[cueSeStop 23_ad1246 1.5]
+
+[fadein white 0.6]
+[wait fade]
+
+[charaPut H 0,0]
+[charaEffect H bit_talk_prt_attackex]
+[wt 0.2]
+[cueSe Servants_505500 m60372]
+[wt 0.2]
+[cueSe Servants_505500 m60373]
+[charaPut I 0,0]
+[charaEffect I bit_talk_impactlanding]
+[shake 0.01 3 3 1.8]
+[charaMove D 0,-350 0.4]
+[charaFadeout D 0.4]
+[se ad1028]
+[wt 1.0]
+[cueSeStop m60372 2.0]
+[cueSeStop m60373 2.0]
+[wt 2.0]
+
+[charaFadein E 0.8 0,-200]
+[charaMoveEase E 0,-170 0.8 easeOutQuad]
+[wt 0.4]
+[charaScale D 1.2]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-200]
+[charaShake D 0.02 2 2 0]
+[wt 0.4]
+
+
+＠わるい魔法使い
+[tVoice ValVoice_505500 0_V010]
+ぐわぁああああつよすぎるーーーー！[r]これが生粋の魔女の力だというのかーーー！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad42]
+[charaPut H 0,-200]
+[charaEffect H bit_talk_atomization]
+[charaSpecialEffect D erasure 1 1.5]
+[wt 3.6]
+
+[charaFadeout E 0.6]
+[wt 1.0]
+
+[bgm BGM_TOU_1 0.1]
+
+？1：圧倒的勝利で終わった
+？2：久遠寺さんの魔術がいつもの四割増しだった
+
+？！
+
+[charaDepth B 5]
+[charaDepth L 4]
+[charaDepth M 3]
+[charaDepth F 2]
+[charaDepth A 1]
+
+[se ad527]
+[wt 0.5]
+
+[seStop ad527 0.4]
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V020]
+たまたま場所が良かっただけよ。[r]要素に森と河があったから。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V030]
+ただの映像かと思っていたけど、[r]カルデアのシミュレーターは大したものね。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V040]
+自然を精巧に再現している。[r]精巧すぎていじれないのが玉に[#瑕:きず]だけど。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadein #A 0.8 0,0]
+[charaFadein F 0.8 100,-240]
+[charaMoveEase B 120,20 0.8 easeOutQuad]
+[charaMoveEase F 80,-240 0.8 easeOutQuad]
+[wt 1.0]
+[charaFadeout A 0.1]
+
+[charaFaceFade B 7 0.2]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V050]
+どういう意味、という顔ね。[wait tVoice]
+[k]
+
+[charaFaceFade B 17 0.2]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V060]
+絵画とか風景をパズルにした玩具があるでしょう。[r]あれを例にしてみましょう。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V070]
+たくさんの空白をピースで埋めていく作業は[r]世界の構築そのもの。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V080]
+もとから『完成図』が決まっているから[r]余分なピースもなければ、[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V090]
+『完成図』にはないピースもはめ込めない。[r]一つ『違うピース』があるだけで絵は完成しない。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V100]
+『完成図』ありきだから途中でアレンジもできないし、[r]オリジナルから逸脱もできない。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V110]
+手本になった『現実の風景』を作るには、[r]一つの[#欠片:ピース]の違いも許されない、という事ね。[wait tVoice]
+[k]
+
+[charaFaceFade B 3 0.2]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V120]
+パズルを作っている時に気が変わって[r]『ここには泉を作ろう』と思っても、[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V130]
+『完成図』にはその[#欠片:ピース]はないから[r]変更する事はできない。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V140]
+なんでも作れるように見えて、実際は[r]『元々あったもの』を再現するだけの機構。[wait tVoice]
+[k]
+
+[charaFaceFade B 1 0.2]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V150]
+でも、そのかわりに完成すれば[r]絵は真に迫る、価値のある作品になる。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V160]
+欠片の数は多ければ多いほど価値はあがるわ。[r]それを組み上げる工程が魔術的にも意味を持つ。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V170]
+この仮想空間が何兆のピースで構成されたものか[r]知らないけれど、[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V180]
+その結果、現実と同じものとしてわたしや貴方に[r]認識されている。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V190]
+仮想ではあるものの、一つの世界といってもいい。[wait tVoice]
+[k]
+
+[charaFaceFade B 7 0.2]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V200]
+……まあ、だからこそカルデアには大量の[r]再現元の情報があるのでしょうけど、[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V210]
+[#極小地球モデル:カ　　ル　　デ　　ア　　ス]の恩恵は大きいわね。[r]魔術世界最大の人工触媒と言っても過言ではないわ。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V220]
+……もちろん、人間の魔術世界での話だけど。[wait tVoice]
+[k]
+
+[messageOff]
+[charaMoveEase B 0,20 1.4 easeOutSine]
+[charaMoveEase F -40,-240 1.4 easeOutSine]
+[wt 1.6]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+？1：じゃあ、[#情報:ファイル]されてる[#風景Ａ:ピラミッド]と
+？2：[#情報:ファイル]されてる[#風景Ｂ:日 本 の 城]をくっつけたら、
+
+？！
+
+[wt 0.3]
+
+[bgmStop BGM_TOU_1 1.5]
+
+？1：それは『どこにもなかった風景』にならない？
+
+？！
+
+[charaFace B 0]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V230]
+狂ってるの？[wait tVoice]
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.7]
+[charaFadeout F 0.7]
+[wt 0.8]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+[charaFace A 2]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V240]
+言葉が足りなかったわ。[r]貴方じゃなくてシミュレーターの設定の話。[wait tVoice]
+[k]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaFace A 3]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V250]
+仮に、そうね……ピラミッドと日本の城が[r]並んでいる風景を作ったとしても……[wait tVoice]
+[k]
+
+[charaFace A 14]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V260]
+『どこにもなかった風景』にはならないでしょう。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V270]
+どちらも実際にあった風景を付けただけなら、[r]それは既知の情報が二つあるだけの話。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V280]
+その上ツギハギね。[r]せっかくの精密な絵が台無しだわ。[wait tVoice]
+[k]
+
+[charaFace A 13]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V290]
+一目で作り物と分かってしまうのなら、[r]それは世界ではなくただの舞台。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V300]
+本当の異界常識は『現実にはないもの』でありながら、[r]現実と地続きのワンダーランド。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V310]
+カルデアのシミュレーターはあくまで仮想世界。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V320]
+世界に認識させる、あるいは世界に見失わせるほどの[r]別世界を作る域には達していないわ。[wait tVoice]
+[k]
+
+[bgmStop BGM_HALLOWEEN_2021_1 1.0]
+
+？1：固有結界とかいうヤツ？
+？！
+
+[bgm BGM_EVENT_194 0.1]
+[charaFace A 18]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V330]
+あれは別の話。[r]パズルの絵の上に、氷で出来た箱を置くようなもの。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V340]
+絵を上書きしているようには見えるけど、[r]氷はすぐに溶けて絵そのものは変化していない。[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V350]
+強力だけど乱暴な、細やかさのない魔術ね。[r]自分の心をさらけ出す事にもなるし。[wait tVoice]
+[k]
+
+？1：久遠寺さんも固有結界を使うんですか
+？！
+
+[charaFace A 1]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V360]
+まさか。[r]あんなデリカシーのない魔術は使わないわ。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V370]
+マインスターの魔女なら世界に感付かれることなく[r]絵を変化させる。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V380]
+絵の上に異物を置くのではなく、[r][#欠片:ピース]そのものを変化させるのよ。[wait tVoice]
+[k]
+
+[charaFace A 18]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V390]
+[line 3]こんなところね。[r]軽快なトークで場は[#和:なご]んだでしょう。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V400]
+移動したい[#仮想空間:ば　　し　　ょ]があるのだけど、[r]少し時間はあるかしら、[%1]さん？[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_194 1.0]
+[wait fade]
+
+[charaLayer B normal]
+[charaLayer L normal]
+[charaLayer M normal]
+[charaFadeout B 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[subCameraOff]
+
+[charaFadeout A 0.1]
+[cameraHome 0.1]
+[wait camera]
+
+[charaSet A 5055001 1 久遠寺有珠]
+[charaScale B 0.9]
+[charaSet B 5055001 1 久遠寺有珠_演出用1]
+[charaScale B 1.3]
+[charaSet C 5055001 1 久遠寺有珠_演出用2]
+[sceneSet E 217000 1]
+[sceneSet F 217000 1]
+[sceneSet G 217000 1]
+[charaScale E 1.2]
+[charaScale F 1.3]
+
+[scene 217000]
+
+[charaTalk depthOff]
+[charaDepth E 5]
+[charaDepth B 4]
+[charaDepth F 3]
+[charaDepth K 2]
+[charaDepth A 1]
+
+[charaFadein E 0.1 80,-250]
+[charaMove E -80,-250 40.0]
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 2.0]
+
+
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V410]
+～～～～、～～～～♪[r]～～～～、～～～～♪[wait tVoice]
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.7]
+[wt 1.0]
+
+[branchQuestClear lblClear01 94095610]
+
+[label lblNotClear01]
+
+？1：……その歌は？
+？！
+
+[branch lblConf01]
+
+[label lblClear01]
+
+？1：……その歌は？
+？2：……あれ……その旋律、どこかで聞いたような……
+
+？！
+
+[label lblConf01]
+
+[bgm BGM_MAP_127 0.1]
+
+[se ade422]
+[seStop ade422 0.5]
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V420]
+マザーグースの歌の一つよ。[r]一番星を見つけたときに唱えるの。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V430]
+一番星や流れ星に願いをかける習慣は世界各地に[r]あるもの。この歌もその一つでしょうね。[wait tVoice]
+[k]
+
+？1：そしていつのまにか着替えてる！？
+
+[charaFace A 8]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V440]
+……おかしくはない、と思うけど。[r]これから、大切な話をするんだから。[wait tVoice]
+[k]
+
+？2：夏の避暑地らしい服装ですね
+
+[charaFace A 1]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V450]
+ありがとう。夏に出かける事はあまりないのだけど、[r]これはその数少ない機会に用立てたものよ。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V460]
+褒めてくれて嬉しいわ。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 18]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V470]
+ここは日本のとある温泉宿の最上階。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V480]
+わたしから情報を提供して、[r]シミュレーターで再現してもらったわ。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V490]
+ここなら邪魔は入らないし、[r]贈りものを渡す場として相応しいと思ったの。[wait tVoice]
+[k]
+
+？1：（久遠寺さんからのチョコレートだ……！）
+
+？！
+
+[charaFace A 16]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V500]
+ところで幾つもらったの？[r]１個？　10個？　100個？　257個？[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V510]
+大したものね。[r]カルデアのマスターなら入れ食いというヤツかしら。[wait tVoice]
+[k]
+
+？1：ぶはっ！？
+？2：い、いいえ、100個だなんて滅相も[line 3]！
+
+？！
+
+[charaFace A 1]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V520]
+冗談よ。[r]チョコレートがたくさんあるのはいい事だわ。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V530]
+チョコレート作りならわたしも自信があるから、[r]カルデアの習慣に合わせてたくさんのチョコレートを[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V540]
+作るべきでしょうけど……[r]わたしはそういうバレンタインには参加できないの。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V550]
+だからこれを貴方に。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V560]
+気難しい魔女の相手をしてくれた、[r]せめてもの気持ちとして。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[charaFadeout A 0.5]
+
+[se bas2]
+[charaFadein K 0.5 0,-70]
+[wt 2.8]
+
+[branchQuestClear lblClear02 94095610]
+
+[label lblNotClear02]
+
+？1：これは[line 3]まさか、プロイキッシャー！？
+？！
+
+[branch lblConf02]
+
+[label lblClear02]
+
+？1：これは[line 3]まさか、プロイキッシャー！？
+？2：（どことなくシャイニースターに似てるような！？）
+
+？！
+
+[label lblConf02]
+
+[charaFadeout K 0.4]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.6]
+
+[charaFace A 7]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V570]
+……そう。あるプロイの失敗を活かして作った、[r]新しいお守りプロイ。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V580]
+気に入らなかったら捨てて……はダメね。[r]引き取るから、置いていってもらえるかしら。[wait tVoice]
+[k]
+
+？1：そんなことはないです
+？2：[&すっごく:とっても]綺麗！　ありがとう！
+
+？！
+
+[charaFace A 8]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V590]
+[line 3]ふうん。ならいいけど。[wait tVoice]
+[k]
+
+[charaFace A 13]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V600]
+喜んでもらえて良かった。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V610]
+それはブライトスター。部屋に置いておくだけで[r]効果はあるから、邪魔にはならないわ。[wait tVoice]
+[k]
+
+[bgmStop BGM_MAP_127 1.5]
+
+？1：どうしてチョコレートを作らない[&んです:の]？
+？！
+
+[messageOff]
+[charaTalk off]
+[charaFace B 13]
+[charaFadein B 1.0 0,20]
+[charaFadein F 1.0 0,-330]
+[wt 1.2]
+
+[bgm BGM_EVENT_116 0.1]
+
+[charaFaceFade B 17 0.2]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V620]
+バレンタインにチョコレートを贈るのは[r]求愛の証、なのでしょう？[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V630]
+ならわたしは参加できない。[r]バレンタインと魔女の相性は最悪だから。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V640]
+魔術的な相性ではなく、生態としての話よ。[wait tVoice]
+[k]
+
+[charaFaceFade B 18 0.2]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V650]
+聞いた事はない？[r]魔女が人間に恋をすると不幸になる、って。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V660]
+あれは本当の話。[r]わたしの母はそうして魔女ではなくなった。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V670]
+そして母が愛した男性は、[r]その報いを受けて人生を[#喪:うしな]った。[wait tVoice]
+[k]
+
+[charaFaceFade B 4 0.2]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V680]
+魔女ではなくなる。相手を不幸にする。[r]だから魔女は愛を言葉にはしないの。ずっと。[wait tVoice]
+[k]
+
+[charaFaceFade B 17 0.2]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V690]
+このプロイもそう。[r]貴方を幸福にするものではないわ。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V700]
+ブライトスターの光が照らすのは貴方以外。[r]貴方には決して恩恵は届かない。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V710]
+けど[line 3]貴方の周囲、[r]貴方が大切だと思う人たちに光を向けるわ。[wait tVoice]
+[k]
+
+[charaFaceFade B 1 0.2]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V720]
+その小さな星は隣人の幸福を願うもの。[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V730]
+自分だけのお守りなら簡単に作れるけれど。[r]貴方はそういうものの方を望む人でしょう？[wait tVoice]
+[k]
+
+？1：うん。ありがとう、森の魔女
+？2：大切にします。今の秘密の話と一緒に
+
+？！
+
+[messageOff]
+[charaFaceFade B 10 0.2]
+[wt 1.4]
+[charaFaceFade B 6 0.2]
+[charaFace A 6]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V740]
+そういってもらえると徹夜した甲斐があったわ。[r]砕け散ったあの子も少しはうかばれるでしょう。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout B 0.7]
+[charaFadeout F 0.7]
+[wt 1.0]
+
+[charaFaceFade A 1 0.2]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V750]
+それじゃあ、わたしはこれで。[r]バレンタインを楽しんで。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_116 2.0]
+
+[messageOff]
+[se ade422]
+[seStop ade422 1.2]
+[charaMove A -20,0 0.6]
+[charaFadeout A 0.4]
+[wt 1.4]
+
+[charaScale B 1.2]
+[charaScale F 1.2]
+
+[charaFace B 1]
+[charaFadein B 0.7 -100,20]
+[charaFadein F 0.7 20,-240]
+[charaMoveEase B -40,20 1.2 easeOutQuad]
+[charaMoveEase F 80,-240 1.2 easeOutQuad]
+[wt 1.4]
+
+？1：あ。その前に、こっちからもお返しを
+
+？！
+
+[wt 0.5]
+
+？1：さっきの、シミュレーターで試してみてね！
+
+？！
+
+[charaFaceFade B 11 0.2]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V760]
+[FFFFFF]？[-]　さっきの……？[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[cueSe SE_22 22_adm96]
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[se ad1]
+[wt 2.0]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V770]
+キ[messageShake 0.05 5 5 0.5]ャアーーーーーーーー！？[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaSet A 5055000 1 久遠寺有珠]
+[charaSet B 5055000 1 久遠寺有珠_演出用1]
+[charaScale B 1.25]
+[charaSet C 5055000 1 久遠寺有珠_演出用2]
+
+[branchQuestClear lblClear03c 94064915]
+[branchQuestClear lblClear03c 3001101]
+[branchQuestClear lblClear03b 3000303]
+
+[label lblClear03a]
+[scene 106000]
+[branch lblConf03]
+
+[label lblClear03b]
+[scene 105800]
+[branch lblConf03]
+
+[label lblClear03c]
+[scene 157900]
+
+[label lblConf03]
+
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[se ad59]
+[seVolume ad59 0 0]
+[wt 1.0]
+
+[fadein black 1.0]
+[seVolume ad59 2.0 0.7]
+[wait fade]
+[wt 1.0]
+
+
+[seStop ad59 0.5]
+[wt 0.7]
+
+[se ade12]
+[wt 1.5]
+[se ad8]
+[wt 1.6]
+[se ad59]
+[wt 1.0]
+
+[seStop ad59]
+[charaScale A 0.9]
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.3 0,-20]
+[charaMove A 0,30 0.3]
+[charaMoveScale A 1.2 0.3]
+[wt 0.3]
+
+[se ad7]
+[shake 0.01 3 3 0.6]
+[wt 0.6]
+
+[bgm BGM_EVENT_146 0.1]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V780]
+なに！？　何なの！？　あれは何！？[r]あんな異世界見た事ない！[wait tVoice]
+[k]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V790]
+どういう事か説明して！[twt 2.5][charaFaceFade A 10 0.2][r]いえ[line 3]まさか[line 3]実際にあったというの！？[wait tVoice]
+[k]
+
+[charaFace A 9]
+
+＠久遠寺有珠
+[tVoice ValVoice_505500 0_V800]
+あの、悪夢のようなチェイテピラミッド姫路城が！[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_146 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,133 @@
+
+
+＄94-09-15-07-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1059000 1 ヤマトタケル]
+[charaSet B 1098284200 1 紅玉の書]
+[charaSet C 1060000 1 宮本伊織]
+[charaSet D 98104300 1 怪異]
+
+[charaSet T 98115000 1 エフェクト用]
+
+[scene 161500]
+
+[bgm BGM_BATTLE_246 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+[charaFace A 3]
+[se ad1006]
+[charaPut T 1]
+[charaEffect T bit_talk_41_fs]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaMoveScale A 1.4 0.3]
+[charaMove A 0,40 0.3]
+[charaFadeout A 0.3]
+[wt 0.4]
+[charaPut T 2500,2500]
+[charaEffectStop T bit_talk_41_fs]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[se ad923]
+[se ad1053]
+[effect bit_talk_quick_slash]
+[wt 0.8]
+
+[se ade71]
+[cueSe Battle bac135]
+[effect bit_talk_x_slash03]
+[wt 0.4]
+
+[bgmStop BGM_BATTLE_246 1.5]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[effectDestroy bit_talk_quick_slash]
+[effectDestroy bit_talk_x_slash03]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0 1]
+[charaShake D 0.03 4 4 0.8]
+[wt 1.4]
+
+[se ad42]
+[charaSpecialEffect D enemyErasure 0,0 1.4]
+[wait charaSpecialEffect D]
+[wt 1.2]
+
+
+[bgm BGM_EVENT_180 0.1]
+[wt 0.3]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ヤマトタケル
+ふたりとも仕掛けてきたな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠紅玉の書
+うむ、思っていた以上に動きが早いのう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠宮本伊織
+[#此処:こ　こ]まで来て引き返すのは下策だ。
+[k]
+
+＠宮本伊織
+霊脈が断たれぬよう留意しながら、[r]横須賀へと向かおう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠紅玉の書
+後は、皆が上手くやってくれるか……[wt 0.8][charaFaceFade B 1 0.2][r]それ次第じゃな。
+[k]
+
+
+
+
+
+
+
+
+
+
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_180 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

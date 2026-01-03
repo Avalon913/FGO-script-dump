@@ -1,0 +1,950 @@
+
+
+＄04-00-03-06-5-1
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11006000 1 サリエリ]
+[charaSet B 1098292500 1 ジャンヌ・オルタ]
+[charaSet C 1098294000 1 ブリトマート・オルタ]
+[charaSet D 11010001 1 平景清]
+
+[sceneSet E 212900 1]
+[charaScale E 1.3]
+[sceneSet F 210601 1]
+[charaScale F 1.3]
+
+[imageSet G back10001 1]
+
+[sceneSet H 210601 1]
+[charaScale H 1.3]
+[sceneSet I 210601 1]
+[charaScale I 1.3]
+[sceneSet J 212401 1]
+[charaScale J 1.3]
+[charaSet K 1098294000 1 ブリトマート・オルタ_拡大用]
+[charaSet L 5009000 1 エフェクト用1]
+[charaSet M 5009000 1 エフェクト用2]
+[charaSet N 5009000 1 エフェクト用3]
+[charaSet O 5009000 1 エフェクト用3]
+[charaSet P 5009000 1 エフェクト用3]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth B 2]
+[charaDepth A 3]
+[charaDepth D 4]
+[charaDepth F 5]
+[charaDepth C 6]
+[charaDepth L 7]
+[charaDepth M 8]
+[charaDepth N 9]
+[charaDepth O 9]
+[charaDepth P 9]
+[charaDepth J 9]
+
+[charaScale C 1.4]
+
+
+[scene 212900]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_195 0.1]
+
+[se ad32]
+[effect bit_talk_14]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,100]
+[se ad671]
+[seStop ad671 1.0]
+[charaMoveEase C 0,0 0.4 easeOutCubic]
+[charaMoveScaleEase C 1.0 0.4 easeOutCubic]
+[charaShake C 0.03 2 2 0.4]
+[wt 0.8]
+
+
+＠ブリトマート・オルタ
+…………………………！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut D 0,-10]
+[charaTalk D]
+[charaFace D 0]
+[se ad223]
+[fowardEffect bit_talk_quickmove 0,0 V]
+[charaSpecialEffect D appearance 1 0.25]
+[wt 0.4]
+[charaMove D 0,0 0.3]
+[wt 0.4]
+
+＠平景清
+堅牢無比[line 3][r]成る程、貴様が景清を頼るだけのことはある！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠ジャンヌ・オルタ
+間違いなくダメージは通ってる！[r]でも、くそ！　やっぱあの鎧が硬すぎるっての！
+[k]
+
+＠ジャンヌ・オルタ
+どういう伝承防御よアレ！[r]知らないわよ鎧の逸話とか！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠サリエリ
+先刻の、屋上での挙動に手がかりがある筈だ。[r]思い出せ、空中で炎を受けたあれは[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 25]
+[charaFadein B 0.1 1]
+
+＠ジャンヌ・オルタ
+あっさり吹っ飛んでたけど。[wt 1.0][charaFace B 16][r]……って、ああ！　そっか！
+[k]
+
+＠ジャンヌ・オルタ
+[#大地の加護]ってそういうこと……[wt 1.0][charaFace B 28][r]マスター！
+[k]
+
+[messageOff]
+[wt 0.05]
+[cameraMove 0.25 0,10 1.01]
+[wt 0.3]
+[cameraMove 0.25 0,0 1.01]
+[wt 0.75]
+
+？1：三人とも！
+？2：あのサーヴァントを、空中へ打ち上げて！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠平景清
+承知。
+[k]
+
+[charaFace D 2]
+
+＠平景清
+来い、楽師！
+[k]
+
+[messageOff]
+[se ad678]
+[charaEffect D bit_talk_quickmove]
+[charaSpecialEffect D erasureReverse 1 0.3]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サリエリ
+オオオオォ！
+[k]
+
+[messageOff]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaEffect A bit_talk_quickmove]
+[charaSpecialEffect A erasureReverse 1 0.3]
+[wt 0.8]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[cueSe SE_23 23_ad1245]
+[seStop 23_ad1245 1.0]
+[charaEffect O bit_talk_barrier02_fs]
+[wt 0.8]
+
+[se ad85]
+[se ad1053]
+[effect bit_talk_quick_slash_ppl 0,0 H]
+[effect bit_talk_quick_slash]
+[wt 0.6]
+[se ad170]
+[shake 0.05 2 2 0.5]
+[effect bit_talk_14]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ブリトマート・オルタ
+…………笑止！[r]……[#慟哭:どうこく]城塞に、刃は効かず。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut O 2000,2000]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠ジャンヌ・オルタ
+そうかしら！[r]まあ、そうなんでしょうけども！
+[k]
+
+[charaFace B 4]
+
+＠ジャンヌ・オルタ
+とりま燃えろッ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut O 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+
+
+[cueSe Battle bac268]
+[se ad960]
+[se ad439]
+[seVolume ad439 0 0]
+[seVolume ad439 0.3 1.0]
+[charaDepth L 9]
+[charaDepth M 9]
+[charaPut L 1]
+[charaPut M 1]
+[charaEffect L bit_talk_fire_wall]
+[charaEffect M bit_talk_fire_wall 0,0 H]
+[wt 2.3]
+[seStop ad439 2.0]
+[seStop ad960 2.0]
+[seStop ad875 2.0]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ブリトマート・オルタ
+…………愚か。[r]……大地の加護、炎を通さず。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut O 2000,2000]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠平景清
+ならばこれはどうかな！[r]ははははははは！
+[k]
+
+
+[messageOff]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaMoveScaleEase D 1.5 0.3 easeOutQuint]
+[charaMoveEase D 0,80 0.3 easeOutQuint]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaFadeout D 0.3]
+[wt 0.1]
+[se ad715]
+[fowardEffect bit_talk_gram_slash_violet_01 0,0 V]
+[wt 0.2]
+[charaScale D 1.0]
+[blurOff motion 0.1]
+[wt 0.1]
+[fowardEffect bit_talk_blow02]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.3]
+[se ad1015]
+[wt 0.1]
+[charaMoveEase C 0,100 0.3 easeOutSine]
+[charaFadeout C 0.2]
+[wt 1.0]
+
+？1：よし、空中へ[line 3]
+？2：あいつの体が！　浮いた！
+？！
+
+[bgmStop BGM_BATTLE_195 1.5]
+
+
+＠ブリトマート・オルタ
+！！
+[k]
+
+？1：景清！
+？！
+
+[messageOff]
+[charaScale D 1.2]
+
+[se ad671]
+[seVolume ad671 0 0.4]
+[seStop ad671 1.0]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 -50,0]
+[charaFadein E 0.4 -150,-250]
+[charaMoveEase E -100,-250 1.0 easeOutCubic]
+[charaMoveEase D -100,0 1.0 easeOutCubic]
+[wt 1.0]
+[se bac304]
+
+＠平景清
+承知！[r][#慟哭:どうこく]城塞[line 3]景清が、斬ってしんぜよう。
+[k]
+
+[messageOff]
+[se ad678]
+[charaEffect D bit_talk_quickmove 0,50]
+[charaSpecialEffect D erasureReverse 1 0.3]
+[wt 0.4]
+
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+[scene 10001]
+
+
+
+
+
+＠
+[line 3]あなた／わたしは目にする。
+[k]
+
+[messageOff]
+
+[se ad555]
+[seVolume ad555 0 0]
+[seVolume ad555 1.0 1.0]
+[wipein circleIn 2.0 1.0]
+[wait wipe]
+[seStop ad555 2.0]
+
+[scene 210601 2.0]
+[cueSe SE_21 21_ade546]
+[cameraMoveEase 100,-100 2.0 easeOutQuart 1.5]
+[bgm BGM_BATTLE_129 0.1]
+[wt 1.5]
+
+＠
+衝撃で空中に高々と打ち上げられた重装騎士へと、[r]一直線に迫っていく、武者の姿を。
+[k]
+
+＠
+武者と二振りの大太刀は、[r]今、ただひとつの鋭き刃と化して[line 3]
+[k]
+
+[messageOff]
+[cueSe SE_23 23_ad1267]
+[seVolume 23_ad1267 0 0.7]
+[seStop 23_ad1267 2.0]
+[wt 1.5]
+
+
+＠平景清
+儚きは常……
+[k]
+
+＠平景清
+この世は[#並:な]べて、[#塵芥:ちりあくた]。[r]我が怨、貴様を捉えたぞ！
+[k]
+
+＠平景清
+[line 3]『[#諸行無常:しょぎょうむじょう]・[#盛者必衰:じょうしゃひっすい]』！
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_129 1.0]
+[fadeout white 1.0]
+[wait fade]
+
+[scene 10000]
+[charaScale G 1.1]
+[overlayFadein G 0.1 0,-200]
+[cameraMove 0.1 0,0 1.0]
+[wt 0.1]
+
+[fadein white 0.5]
+[wait fade]
+
+[criMovie talk_mov235 bgmPlay false]
+[wt 0.3]
+[charaFadeout G 0.2]
+[wt 20.0]
+
+[fadeout white 1.0]
+[wait fade]
+
+[scene 210601]
+[wt 0.5]
+
+[fadein white 2.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[charaShake C 0.05 3 3 1.0]
+
+[cueSe SE_24 24_ade974]
+[seStop 24_ade974 2.0]
+[se ad886]
+[seStop ad886 2.0]
+[wt 0.2]
+[cueSe SE_23 23_ad1300]
+[fadeout white 1.0]
+[wait fade]
+
+[charaChange C 1098290900 0 normal 0.1]
+[wait charaChange C]
+
+
+[charaShake C 0.05 3 3 1.0]
+[fadein white 1.0]
+[wait fade]
+[wt 1.4]
+
+＠ブリトマート・オルタ
+ッ…………………………………！
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[scene 212900]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_BATTLE_48 0.1]
+
+＠サリエリ
+見ろ。[r]鎧の胸甲に僅かな亀裂が[line 3]オルタ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ジャンヌ・オルタ
+どのオルタか！　言え！
+[k]
+
+[charaFace B 15]
+
+＠ジャンヌ・オルタ
+たぶん滅茶苦茶痛いからやりたくないのよね！[r]でもまあ、やればいいんでしょう！
+[k]
+
+＠ジャンヌ・オルタ
+この面子だと、[r][#やれるのは私だけ]だし[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,30]
+[charaFadein F 0.4 0,-250]
+[charaMoveEase C 0,0 0.4 easeOutSine]
+[charaMoveEase F 0,-280 0.4 easeOutSine]
+[wt 0.5]
+
+＠ブリトマート・オルタ
+[f large]笑止！
+[k]
+
+＠ブリトマート・オルタ
+この程度の傷で、我が鎧は……[r]砕け散る筈もなし！　愚かここに極まれり！
+[k]
+
+[messageOff]
+[charaFadeout C 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ジャンヌ・オルタ
+愚かなのはアンタよ！[r][#慟哭:どうこく]城塞！　怨の騎士！
+[k]
+
+[messageOff]
+[se ad678]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[wt 0.4]
+
+
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[subCameraOn 3]
+[charaLayer B sub #A]
+[charaLayer H sub #A]
+[charaLayer C sub #B]
+[charaLayer I sub #B]
+[charaLayer P sub #C]
+
+[charaScale H 1.5]
+[charaScale I 1.5]
+[charaScale C 1.2]
+[charaScale B 1.2]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+
+[charaTalk off]
+
+[charaFadein H 0.1 -200,-250]
+[charaEffect H bit_talk_43h 0,100]
+
+[charaFace C 0]
+[charaFadeinFSL C 0.1 -80,150]
+[charaFadein I 0.1 200,-250]
+[charaEffect I bit_talk_43h 0,0 V]
+
+[charaPut P 1]
+[wt 0.1]
+
+[subCameraFilter #A maskEdge cut359_mask09 5 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask10 5 0,0,0,255]
+[subCameraFilter #C through]
+[subRenderFadein #A 0.4 380,-170]
+[subRenderFadein #B 0.4 -380,-170]
+[subRenderFadein #C 0.1 0,0]
+[subRenderMoveEase #A 213,-170 0.4 easeOutQuint]
+[subRenderMoveEase #B -213,-170 0.4 easeOutQuint]
+[wt 0.8]
+
+[scene 212900]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 0.5 0.6]
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+[wt 0.4]
+
+[se ade338]
+
+[charaFace B 8]
+[charaFadeinFSR B 0.7 100,50]
+[charaMoveEaseFSR B 100,150 0.4 easeOutSine]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk B]
+
+＠ジャンヌ・オルタ
+ふっ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad715]
+[charaEffect P bit_talk_gram_slash_violet_02]
+[charaMoveEaseFSR B 60,150 0.2 easeOutSine]
+[seStop ad556 2.0]
+[wt 0.6]
+
+[se ad32]
+[se ad170]
+[fowardEffect bit_talk_14]
+[charaShake C 0.05 2 2 0.4]
+[charaEffectStop H bit_talk_43h]
+[charaEffectStop I bit_talk_43h]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk C]
+
+＠ブリトマート・オルタ
+ハッ！　汝の剣、我が鎧に届かず！
+[k]
+
+[fowardEffectDestroy bit_talk_14]
+[charaFace B 12]
+＠ジャンヌ・オルタ
+そうでしょうね。[r]でも私[line 3]ほら、片手が空いてるでしょう？
+[k]
+
+＠ブリトマート・オルタ
+！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMoveEaseFSL C -70,150 0.2 easeOutSine]
+[charaMoveEaseFSR B 50,150 0.2 easeOutSine]
+[wt 0.1]
+[cueSe Servants_9944890 m95611]
+[charaShake C 0.05 2 2 0.3]
+[charaShake B 0.05 2 2 0.3]
+[wt 0.4]
+[se ad39]
+[charaFace B 6]
+[charaEffect B bit_talk_36]
+[charaEffect C bit_talk_36 500,0]
+[wt 0.6]
+[charaTalk on]
+[charaTalk B]
+
+＠ジャンヌ・オルタ
+これで零距離。[wt 1.0][r][line 6]『[#吼え立てよ、我が憤怒:ラ ・ グ ロ ン ド メ ン ト ・ デ ュ ・ ヘ イ ン]』！
+[k]
+
+[messageOff]
+[charaTalk off]
+[bgmStop BGM_BATTLE_48 1.5]
+[se ad864]
+[fadeout white 0.5]
+[wait fade]
+[se ad828]
+[wt 3.0]
+
+[charaEffectDestroy B bit_talk_36]
+[charaEffectDestroy C bit_talk_36]
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[subRenderFadeout #C 0.1]
+[wt 0.1]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.2]
+[charaLayer B normal]
+[charaLayer C normal]
+[charaLayer H normal]
+[charaLayer I normal]
+
+[charaSet B 1098289800 1 ジャンヌ・オルタ]
+
+[charaDepth L 1]
+[charaDepth E 1]
+[charaDepth B 2]
+
+[charaScale A 1.0]
+[charaScale B 1.0]
+
+[scene 212900]
+
+[seStop ad828 2.0]
+[seStop ad864 2.0]
+
+[fadein white 2.0]
+[wait fade]
+
+
+[charaPut D 0,-10]
+[charaTalk D]
+[charaFace D 0]
+[se ad223]
+[fowardEffect bit_talk_quickmove 0,0 V]
+[charaSpecialEffect D appearance 1 0.25]
+[wt 0.4]
+[charaMove D 0,0 0.3]
+[wt 0.4]
+
+＠平景清
+…………ふむ、見事也。
+[k]
+
+＠平景清
+鎧の亀裂へとねじ込んだ掌より、[r]炎熱と無数の棘を生じ、黒金剛の騎士を爆裂させる。
+[k]
+
+＠平景清
+実に佳きものを見た。[r]霊基霊核、跡形も残らぬわ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFadein E 0.6 -50,-250]
+[charaMoveEase E -100,-250 0.8 easeOutSine]
+[wt 1.0]
+
+[se ad228]
+[se ad227]
+
+[charaScale B 1.2]
+[cueSe SE_21 21_ad1148]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.7 0,-30]
+[charaShake B 0.05 2 2 1.0]
+[charaMove B 0,0 1.0]
+[wt 1.0]
+[seStop ad227 1.0]
+[seStop ad228 1.0]
+[wt 0.5]
+
+
+＠ジャンヌ・オルタ
+……それはどうも。
+[k]
+
+[charaFace B 2]
+
+＠ジャンヌ・オルタ
+はぁ……[r][#痛:いった]……
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠ジャンヌ・オルタ
+そりゃ考えたことはあったけど、[r]やっぱり滅茶苦茶痛いですこれ、泣きそう。
+[k]
+
+[charaShake B 0.05 2 2 1.0]
+
+＠ジャンヌ・オルタ
+うー。
+[k]
+
+？1：オルタ……！
+？！
+
+[messageOff]
+[charaFaceFade B 1 0.2]
+[wt 1.0]
+
+＠ジャンヌ・オルタ
+アンタにそう呼ばれたの、久しぶり。[r]もう……
+[k]
+
+＠ジャンヌ・オルタ
+オルタ、呼びだと……
+[k]
+
+＠ジャンヌ・オルタ
+誰のことか……[r]すぐ、わかんないでしょうが……
+[k]
+
+＠ジャンヌ・オルタ
+……まあ、今は、私だけ、なんだけどね……
+[k]
+
+？1：じっとして動かないで
+？2：今、回復の術式を起動するから
+？！
+
+[charaFaceFade B 2 0.2]
+
+＠ジャンヌ・オルタ
+……うん、正直助かる。
+[k]
+
+＠ジャンヌ・オルタ
+パーツが欠けてる訳じゃないから、[r]多分、マスターの礼装の術式でイケると思う。
+[k]
+
+＠ジャンヌ・オルタ
+はあ、いっったぁ……
+[k]
+
+＠ジャンヌ・オルタ
+あ、そうだ……[r]キリエ、待たせてる[line 3]
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_77 1.0 0.5]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet A 11006001 1 サリエリ]
+
+
+[wt 0.5]
+
+[cueSe SE_24 24_ad1388]
+[seVolume 24_ad1388 0 0]
+[seVolume 24_ad1388 1.0 1.0]
+[fadein black 2.0]
+[wait fade]
+
+[seStop 24_ad1388 3.0]
+[bgm BGM_EVENT_77 1.0 1.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠サリエリ
+…………人の姿が、戻っているな。[r]景清。頼めるか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠平景清
+既に我が霧で覆っている。[r]余人の目に、我らの姿は捉えられぬとも。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠サリエリ
+助かる。この上、警察なり救急なりを呼ばれて[r]騒ぎになってしまっては面倒が過ぎるからな。
+[k]
+
+[messageOff]
+[charaFace A 8]
+[cueSe SE_24 24_ad1372]
+[charaMoveReturn A 0,-4 1.0]
+[wt 1.5]
+
+＠サリエリ
+時計も正常に動作している。[r]異常事態は、ひとまず解除されたと見ていいな。
+[k]
+
+[bgmStop BGM_EVENT_77 2.0]
+
+＠サリエリ
+……。[r]……。
+[k]
+
+[messageOff]
+[charaPut L 2000,2000]
+[charaEffectStop L bit_talk_40_fs]
+[charaFadein J 1.0 -100,-200]
+[charaMove J 100,-200 40.0]
+[wt 2.5]
+
+[bgm BGM_MAP_10 0.1]
+
+＠サリエリ
+（東京、西暦2015年）
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠サリエリ
+（マスターの故郷……[r]　と認識するのは流石に早計か？）
+[k]
+
+＠サリエリ
+（精神と魂のみでの異常レイシフト。[r]　今もボーダーで眠り続ける、[&彼:彼女]の肉体）
+[k]
+
+＠サリエリ
+（我々の[#通り道]として機能したと[#思:おぼ]しき、[r]　言葉なき影。巌窟王）
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠サリエリ
+（七つの試練。[r]　そう、マスターは言った）
+[k]
+
+＠サリエリ
+（[line 6]ならば、あと六つ）
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠サリエリ
+（既に、令呪一画を消費した状態で……）
+[k]
+
+＠サリエリ
+（我々は、マスターを無事に[#帰還させられる]のか？）
+[k]
+
+
+[messageOff]
+[wt 0.8]
+[bgmStop BGM_MAP_10 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

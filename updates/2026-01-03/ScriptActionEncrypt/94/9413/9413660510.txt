@@ -1,0 +1,363 @@
+
+
+＄94-13-66-05-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3031000 1 哪吒]
+[charaSet B 3031000 1 哪吒（演出用）]
+[charaSet C 3031000 1 哪吒（シルエット）]
+[charaFilter C silhouette 00000080]
+[charaSet D 3056000 1 ゴッホ]
+[charaSet E 1098257810 1 マシュ]
+[charaSet F 2053000 1 ツタンカーメン]
+[charaSet G 1098306200 1 汎用サーヴァント]
+[charaSet H 1098306200 1 汎用サーヴァント]
+[charaSet I 1098306200 1 汎用サーヴァント]
+[charaSet J 1098306200 1 汎用サーヴァント]
+[charaSet K 1098306200 1 汎用サーヴァント]
+
+[sceneSet O 232100 1]
+[sceneSet P 232100 1]
+[sceneSet Q 232100 1]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth F 3]
+[charaDepth E 3]
+[charaDepth S 9]
+[charaDepth T 9]
+
+[scene 232100]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+＠？？？
+増築計画　順調。[r]人造仙境　拡大。
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[charaDepth A 2]
+[charaDepth O 3]
+[charaDepth B 5]
+[charaDepth C 4]
+
+[charaScale O 1.4]
+[charaScale C 1.4]
+[charaScale B 1.4]
+
+[charaFadein O 0.8 0,-300]
+[charaMoveEase O 0,-400 0.8 easeOutSine]
+[wt 0.8]
+
+[charaFace A 5]
+[charaFadein A 0 1]
+[wt 0.15]
+
+[cueSe Servants_303100 bac563]
+[cueSeVolume bac563 0 0.5]
+[wt 0.15]
+[charaFace C 5]
+[charaFadein C 0.3 0,315]
+[charaMoveEase C 0,20 0.6 easeOutCubic]
+[wt 0.65]
+[charaMoveEase C 0,50 0.35 easeOutSine]
+[wt 1.05]
+
+[charaFace B 5]
+[charaFadein B 0.7 0,50]
+[wt 1.75]
+
+[charaFadeout B 0.6]
+[charaFadeout C 0.6]
+[charaFadeout O 0.6]
+[wt 0.8]
+
+[bgm BGM_MAP_96 0.1]
+
+[charaTalk on]
+＠哪吒
+……侵入者は　排除。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 28]
+[charaFadein D 0.1 1]
+＠ゴッホ
+いやその、エヘヘ、まずは話し合いましょう！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠哪吒
+[#誰何:すいか]実行　おまえ[#何奴:なにやつ]　新たな[#びるだー]か？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠ゴッホ
+ゴッホです！　特異点解体に参りました！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠哪吒
+…………ボクの仙境　壊すの？
+[k]
+
+[bgmStop BGM_MAP_96 1.5]
+
+[charaFace A 5]
+＠哪吒
+[#蓮華:れんげ]咲き乱れ　仙女笑い踊り[r]千里馬も草をはむ　ボクの[#崑崙山:こんろんざん]を……！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth G 4]
+[charaDepth H 3]
+[charaDepth I 2]
+[charaDepth J 5]
+[charaDepth A 6]
+
+[se ad1025]
+[cueSe SE_24 24_ad1376]
+[charaFace G 0]
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFadein G 0.4 175,5]
+[wt 0.2]
+[charaFadein H 0.4 -235,5]
+[wt 0.2]
+[charaFadein I 0.4 415,5]
+[wt 0.2]
+[charaFadein J 0.4 -470,5]
+[wt 1.6]
+
+[bgm BGM_BATTLE_97 0.1]
+
+？1：ゴッホちゃん、説得×
+
+
+[messageOff]
+[cueSeStop 24_ad1376 0.3]
+[seStop ad1025 0.3]
+
+[subCameraOn 2]
+
+[charaLayer P sub #A]
+[charaLayer D sub #A]
+[charaLayer Q sub #B]
+[charaLayer E sub #B]
+[charaLayer S sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask05 4 255,255,255,255 0]
+[subCameraFilter #B maskEdge cut359_mask05 4 255,255,255,255 0]
+
+[charaDepth P 1]
+[charaDepth D 2]
+[charaDepth Q 1]
+[charaDepth E 2]
+[charaDepth S 3]
+
+[charaScale P 1.3]
+[charaScale D 1.2]
+[charaFace D 33]
+[charaFadein D 0 0,320]
+[charaFadein P 0 -500,0]
+
+[charaScale Q 1.3]
+[charaFadein Q 0 0,0]
+
+[subRenderFadeinFSL #A 0.3 -300,-380]
+[subRenderMoveFSL #A -300,-330 0.3]
+[wt 0.5]
+
+[charaTalk on]
+＠ゴッホ
+ウフフ、そういえばゴッホ生前から苦手でした！[r]かくなる上は『ロウソク』を[#創造:クラフト]！
+[k]
+
+[messageOff]
+[subRenderFadeinFSR #B 0.3 300,-380]
+[subRenderMoveFSR #B 300,-330 0.3]
+[charaScale S 1.2]
+[charaScale E 1.2]
+[charaPut S 0,320]
+[charaEffect S bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 0,320]
+＠マシュ
+多分それうまくいかないです！　自傷はおやめください！
+[k]
+
+[messageOff]
+[subRenderMoveFSL #A -300,-280 0.3]
+[subRenderMoveFSR #B 300,-280 0.3]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[wt 0.4]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaPut S 2000,2500]
+[charaEffectDestroy S bit_talk_10_LowLevel]
+[wt 0.2]
+[charaLayer P normal]
+[charaLayer Q normal]
+[charaLayer E normal]
+[charaLayer D normal]
+[charaLayer S normal]
+[charaScale D 1.0]
+[charaScale E 1.0]
+[charaScale S 1.0]
+[subCameraOff]
+[charaTalk A]
+
+？2：たぶん[#崑崙山:こんろんざん]にケンタウロスはいないんじゃ……
+
+[cueSeStop 24_ad1376 0.3]
+[seStop ad1025 0.3]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+＠哪吒
+なぜなのか　[#馬:ウマ]霊ばかり　ウマが合う。
+[k]
+
+[messageOff]
+[subCameraOn 1]
+
+[charaLayer F sub #A]
+[charaLayer S sub #A]
+[charaLayer O sub #A]
+
+[subCameraFilter #A normal]
+
+[charaDepth O 2]
+[charaDepth F 3]
+[charaDepth S 4]
+
+[charaScale O 1.2]
+[charaTalk A,F]
+[charaFace F 10]
+[charaFadein F 0 300,0]
+[charaFadein O 0 0,-260]
+[charaMoveEase F 200,0 0.5 easeOutSine]
+[charaMoveEase O -100,-260 0.5 easeOutSine]
+
+[subRenderFadein #A 0.3 0,0]
+[wt 0.5]
+
+[se ad1045]
+[charaPut S 200,0]
+[charaEffect S bit_talk_ttn_spell]
+
+[charaEffectEdgeBlur F ffffcc ffffcc]
+[wt 2.1]
+
+[charaFace A 5]
+
+[charaFace F 15]
+＠ツタンカーメン
+……い、今のは危なくござりました……
+[k]
+
+[messageOff]
+[charaTalk A,F]
+[subRenderFadeout #A 0.6]
+[wt 0.6]
+[charaFadeout O 0.1]
+[charaFadeout F 0.1]
+[charaPut F 2000,2500]
+[charaEffectEdgeBlurDestroy F ffffcc ffffcc]
+[wt 0.2]
+[charaLayer O normal]
+[charaLayer F normal]
+[charaLayer S normal]
+[charaScale O 1.0]
+[charaScale F 1.0]
+[charaScale S 1.0]
+[subCameraOff]
+
+？！
+
+＠哪吒
+無駄口　失態　[#沈黙:チャック]実行。
+[k]
+
+[messageOff]
+[se ad442]
+[charaMove A 0,-8 0.15]
+[wt 0.9]
+
+[charaFace A 2]
+＠哪吒
+この現界　不本意なれど　全力全開。[r][#製階戦争]　制す[#びるだー]は　ボクだ！
+[k]
+
+[branchMaterial lblMaterial]
+
+[branchQuestClear lblClear01 94136603]
+[branchQuestClear lblClear01 94136604]
+
+？1：（ビルダーって……？）
+？2：（製階戦争って何だろう……？）
+？！
+[branch lblConf01]
+
+[label lblClear01]
+
+[label lblConf01]
+
+[branch material_end]
+
+[label lblMaterial]
+？1：（ビルダーって……？）
+？2：（製階戦争って何だろう……？）
+？！
+
+[label material_end]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_97 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

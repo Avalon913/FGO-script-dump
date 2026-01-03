@@ -1,0 +1,1589 @@
+
+
+＄94-14-58-01-3-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098330700 1 アルジュナ]
+[charaSet B 1098328400 1 ヴリトラ]
+[charaSet C 1019001 1 ラーマ]
+[charaSet D 1098328710 1 インドラ]
+[charaSet E 1098328000 1 ヴァジュラ_女]
+[charaSet F 1098328100 1 ヴァジュラ_男]
+[charaSet G 7033002 1 アルジュナ・オルタ]
+[charaSet H 1098328720 1 インドラ]
+[charaSet I 7033002 1 アルジュナ・オルタ_演出用]
+[charaSet J 1098329800 1 ヴリトラ_演出用]
+[charaSet K 1098329600 1 泡状のカプセル]
+[charaSet L 1019001 1 ラーマ_演出用]
+[charaSet M 1098328400 1 幼女ヴリトラ_演出用]
+[charaSet N 1098330700 1 アルジュナ_演出用]
+
+[sceneSet O 253700 1]
+[sceneSet P 253500 1]
+[sceneSet Q 253500 1]
+[sceneSet R 203800 1]
+[sceneSet S 253900 1]
+[sceneSet T 10000 1]
+
+[imageSet U back253500 1]
+
+[charaSet V 98115000 1 エフェクト用ダミー]
+[charaPut V 2500,2500]
+
+[sceneSet W 10001 1]
+[sceneSet X 10001 1]
+[charaScale X 1.1]
+[imageSet Y back10000 1]
+[charaScale Y 1.05]
+[imageSet Z back10000 1]
+[charaScale Z 1.05]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaDepth C 3]
+[charaDepth P 4]
+[charaDepth B 5]
+[charaDepth U 6]
+[charaDepth G 7]
+[charaDepth R 8]
+[charaDepth I 9]
+
+[subCameraOn 3]
+[charaLayer D sub #A]
+[charaLayer E sub #A]
+[charaLayer F sub #A]
+[charaLayer S sub #A]
+[charaLayer W sub #MASK]
+[charaLayer Y sub #MASK]
+[charaLayer Z sub #MASK]
+[subCameraFilter #A maskEdge #MASK 5 77,102,132,255 0]
+
+[subStretch on]
+[charaDepth S 1]
+[charaDepth D 2]
+[charaDepth E 3]
+[charaDepth F 4]
+[charaDepth W 5]
+[charaDepth Y 6]
+[charaDepth Z 7]
+
+[charaScale S 1.01]
+[charaScale E 0.9]
+[charaScale F 0.9]
+[charaFace D 0]
+[charaFadein D 0 0,0]
+[charaFadein S 0 0,-200]
+[charaPut E 250,-8]
+[charaPut F -250,-16]
+[charaFadeTime E 0 0]
+[charaFadeTime F 0 0]
+[charaFadein W 0 0,-200]
+[charaFadein Y 0 960,-200]
+[charaFadein Z 0 -960,-200]
+
+[charaLayer T sub #B]
+[charaLayer J sub #B]
+[charaLayer K sub #B]
+[charaLayer L sub #B]
+
+[subCameraFilter #B maskEdge #MASK 4 255,255,255,255 0]
+
+[charaDepth T 1]
+[charaDepth J 2]
+[charaDepth K 3]
+[charaDepth L 4]
+
+[charaScale K 0.46]
+[charaScale J 0.6]
+
+[charaFace J 16]
+[charaFadein J 0 0,140]
+[charaFace K 0]
+[charaFadein K 0 0,175]
+[charaFadein T 0 200,0]
+
+
+[scene 253500]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_SEIHAI_1 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アルジュナ
+ガチャガチャマシーン……なるマスターの発言は[r]私にはよくわかりませんが、
+[k]
+
+＠アルジュナ
+不思議な形状をしているのは確かですね。[r]外壁も半透明で、中の様子が[#窺:うかが]えなくもありません。
+[k]
+
+[charaFace A 4]
+
+＠アルジュナ
+中に積み重なっているのは、[r]球形の……泡、でしょうか……？
+[k]
+
+？1：（カプセル……かも……！）
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[subRenderFadein #A 0.2 0,0]
+[wt 0.2]
+
+＠インドラ
+[#神:オレ]がヴリトラを[#斃:たお]すために何を使ったか、[r]知らぬわけでもあるまい。
+[k]
+
+＠インドラ
+そして、よく目を凝らせば、奥……最上部あたりに[r]貴様らが求めているものも見えるだろう。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadeout #A 0.5]
+[charaScale U 1.4]
+[charaFadein U 0.5 0,-350]
+[wt 1.0]
+
+[charaFadein Y 0 1250,-200]
+[charaFadein Z 0 -1250,-200]
+
+[charaScale P 1.3]
+[charaFadein P 0.1 -50,-150]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[charaMoveScaleEase U 1.6 3.5 easeOutSine]
+[charaMoveEase U 0,-450 3.5 easeOutSine]
+[wt 1.8]
+[subRenderFadein #B 0.4 0,0]
+[charaMoveEase J 0,0 2.0 easeOutSine]
+[charaMoveEase K 0,35 2.0 easeOutSine]
+[wt 3.5]
+[subRenderFadeout #B 0.5]
+[charaFadeout U 0.5]
+[wt 0.5]
+
+[charaFadein Y 0.1 960,-200]
+[charaFadein Z 0.1 -960,-200]
+
+[se adm21]
+[charaScale B 1.2]
+[charaFace B 7]
+[charaFadein B 0.4 180,-20]
+[charaMoveEase B 180,20 0.4 easeOutBounce]
+[wt 0.4]
+
+＠ヴリトラ
+わ、わえー！
+[k]
+
+[charaFace B 6]
+
+＠ヴリトラ
+あそこじゃ、あそこにおるぞ！[r]早く取り出せ、これをブッ壊してもよい！
+[k]
+
+＠ヴリトラ
+今こそ破壊神の力の使いどきじゃー！
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaTalk B,A]
+[charaFadeout B 0.4]
+[charaFadeout P 0.4]
+[wt 0.4]
+[charaScale B 1.0]
+
+＠アルジュナ
+無茶を言うな、できるわけないだろう！
+[k]
+
+＠アルジュナ
+シヴァの力でインドラ神の宝物庫を壊すなど……[r]ことによれば戦争だ……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[subRenderFadein #A 0.2 0,0]
+[wt 0.2]
+
+＠インドラ
+フン。シヴァ自体がいるでもなし、[r]そもそも[#神:オレ]の宝物庫がそう簡単に壊れるわけがなかろう。
+[k]
+
+[charaFace D 1]
+
+＠インドラ
+だからやるなよ、試そうともするなよ！
+[k]
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠アルジュナ
+いえもちろん撃ちませんが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[subRenderFadein #A 0.2 0,0]
+[wt 0.2]
+
+＠インドラ
+[line 3]勘違いするな。[r]中身が惜しいわけではない。
+[k]
+
+＠インドラ
+[#神:オレ]への[#拝謁:はいえつ]を果たした者たちへの褒美として、[r]中身など全てくれてやってもいいとすら思っているが、
+[k]
+
+＠インドラ
+壊して持っていくのは盗人の所業だ。[r]それは不敬にすぎる。
+[k]
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ラーマ
+正式な手順に[#則:のっと]って、一つずつ宝物を取り出していけ、[r]と言うわけだな。
+[k]
+
+＠ラーマ
+勿論、その程度の誠意は見せるべきだし、[r]目的のためであれば手間暇もかけられるが。
+[k]
+
+＠ラーマ
+インドラ神よ。先程言っていた、[r]宝物庫を開けるための手順とは何だ？
+[k]
+
+[messageOff]
+[charaFadeout C 0.2]
+[wt 0.2]
+
+[cameraMoveEase 0,-25 1.5 easeOutSine 1.4]
+[wt 2.0]
+
+？1：あそこに何かを入れて回すと……
+？2：宝物が一個ずつ落ちてくる……
+？！
+
+？1：そんな仕組みになっていると見ました
+？！
+
+[charaTalk D]
+[charaFace D 0]
+[subRenderFadein #A 0.2 0,0]
+[wt 0.2]
+
+＠インドラ
+ほう？　存外に鋭いではないか。[r]褒めてやろう。
+[k]
+
+＠インドラ
+世界を救おうなどという人間ともなれば、[r]さすがにそれなりの知見はあるようだ。
+[k]
+
+[messageOff]
+[charaTalk E]
+[charaFace E 1]
+[charaFadeTime E 0.4 1.0]
+[charaMoveEase E 125,-8 0.5 easeOutSine]
+[charaMoveEase F -375,-16 0.5 easeOutSine]
+[charaMoveEase D -125,0 0.5 easeOutSine]
+[charaMoveEase S -125,-200 0.5 easeOutSine]
+[wt 0.5]
+
+＠E：ヴァジュラ
+うおー、インドラさまのお褒めの言葉だー！[r][#喜び:はっぴー]を感じろー！　キシシ！
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 7]
+[charaFadeTime E 0.4 0]
+[charaFadeTime F 0.4 1.0]
+[charaMoveEase E 375,-8 0.7 easeOutSine]
+[charaMoveEase F -125,-16 0.7 easeOutSine]
+[charaMoveEase D 125,0 0.7 easeOutSine]
+[charaMoveEase S 125,-200 0.7 easeOutSine]
+[wt 0.7]
+
+＠F：ヴァジュラ
+……[#幸福千万:しあわせすぎること]です。
+[k]
+
+＠F：ヴァジュラ
+それはあなたの今生における[r]至上にして無二の出来事かもしれません。
+[k]
+
+[charaFace F 1]
+
+＠F：ヴァジュラ
+表現方法は歓喜の舞がお薦めです。どうぞ。
+[k]
+
+？1：歓喜の舞はまたの機会にさせてもらうとして
+？2：メダル的なものが必要、なんですよね？
+？！
+
+[messageOff]
+[charaTalk D]
+[charaFadeTime F 0.4 0]
+[charaMoveEase E 250,-8 0.5 easeOutSine]
+[charaMoveEase F -250,-16 0.5 easeOutSine]
+[charaMoveEase D 0,0 0.5 easeOutSine]
+[charaMoveEase S 0,-200 0.5 easeOutSine]
+[wt 0.5]
+[charaFace D 0]
+
+＠インドラ
+うむ。蔵を開けて宝を取り出すには、[#都度:つ　ど]、[r]入り口を開く鍵のようなものが必要だ。
+[k]
+
+＠インドラ
+[#空の砕片]、とでも言おうか。
+[k]
+
+[messageOff]
+[cameraHome 1.0]
+[subRenderFadeout #A 0.2]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠ラーマ
+よし。ここで繋がったな。
+[k]
+
+[bgmStop BGM_SEIHAI_1 1.8]
+
+[charaFace C 0]
+
+＠ラーマ
+それは[line 3][r][#あなた]と[#この特異点]の関わりの話、だな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[subRenderFadein #A 0.2 0,0]
+[wt 0.2]
+
+＠インドラ
+そうだ。
+[k]
+
+[bgm BGM_MAP_123 0.1]
+
+＠インドラ
+[#神:オレ]がこの世界に顕現した瞬間、[r]その衝撃で空が壊れた。
+[k]
+
+[charaFace D 2]
+
+＠インドラ
+物理的に、というわけではないぞ。[r]いやその意味も含みはするだろうが、そう[line 3]
+[k]
+
+＠インドラ
+『空という概念』が壊れたのだ。
+[k]
+
+[charaFace D 3]
+
+＠インドラ
+この[#神:オレ]、インドラという神は[r]紛れもなく空の支配者にして空の解放者である。
+[k]
+
+＠インドラ
+だが、どうやらヴリトラの封印と同じく、意識せず[r]顕現しただけで空を解放しすぎてしまったらしい。
+[k]
+
+＠インドラ
+だから壊れた。
+[k]
+
+[charaFaceFade D 5 0.1]
+
+＠インドラ
+[#神:オレ]という輝かしすぎる存在は、[r]この奇妙な地球にとって刺激が強すぎたようだ。ハハハ！
+[k]
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠アルジュナ
+（[#傍迷惑:はためいわく]な、という感想を心の中に押し込めている顔）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ラーマ
+それを、ただ手をこまねいて[r]見ていたわけではないのだろう？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFace E 0]
+[charaFace F 0]
+[subRenderFadein #A 0.2 0,0]
+[wt 0.2]
+
+＠インドラ
+無論だ。
+[k]
+
+＠インドラ
+手元にあった材料を使い、[r][#神:オレ]は空の『核たる要素』を[#楔:くさび]を用いて固定した。
+[k]
+
+＠インドラ
+具体的にはいくつかの泡の中に閉じ込めて安定させた。[r]中心であるこの場所のようにな。
+[k]
+
+＠インドラ
+ほとんどの空の砕片は[r]その安定領域の中に散っているだろう。
+[k]
+
+？1：ドームみたいな泡の中だから
+？2：ここは天気が穏やかな[&のか:んだ]……
+？！
+
+[messageOff]
+[charaTalk E]
+[charaFace E 10]
+[charaFadeTime E 0.4 1.0]
+[charaMoveEase E 125,-8 0.5 easeOutSine]
+[charaMoveEase F -375,-16 0.5 easeOutSine]
+[charaMoveEase D -125,0 0.5 easeOutSine]
+[charaMoveEase S -125,-200 0.5 easeOutSine]
+[wt 0.5]
+
+＠E：ヴァジュラ
+そーだぞー。[r]感謝しろよー、ニンゲン？
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 0]
+[charaFadeTime F 0.4 1.0]
+[charaFadeTime E 0.4 0]
+[charaMoveEase E 375,-8 0.7 easeOutSine]
+[charaMoveEase F -125,-16 0.7 easeOutSine]
+[charaMoveEase D 125,0 0.7 easeOutSine]
+[charaMoveEase S 125,-200 0.7 easeOutSine]
+[wt 0.7]
+
+＠F：ヴァジュラ
+言うまでもなく、ぼくたちにではなく、[r]インドラさまへの[#尊崇:そんすう]をもって、です。
+[k]
+
+[messageOff]
+[charaTalk D]
+[charaFadeTime F 0.4 0]
+[charaMoveEase E 250,-8 0.5 easeOutSine]
+[charaMoveEase F -250,-16 0.5 easeOutSine]
+[charaMoveEase D 0,0 0.5 easeOutSine]
+[charaMoveEase S 0,-200 0.5 easeOutSine]
+[wt 0.5]
+[charaFace D 7]
+
+＠インドラ
+また同時に、根本である『空が壊れた』という事実を、[r][#神:オレ]はヴリトラと共にこの宝物庫の奥に封印した。
+[k]
+
+＠インドラ
+そこが最も安定した場所だったからな。
+[k]
+
+[charaFace D 0]
+
+＠インドラ
+わかるか？[r][#そうしたからこそ特異点ができている]のだ。
+[k]
+
+＠インドラ
+空の破壊を確定させぬため、とでも言おうか。
+[k]
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アルジュナ
+つまり、何かの意図があって[r]特異点を構築したのではなく……
+[k]
+
+＠アルジュナ
+事故の影響を最小限にするためにやむなく、[r]ということなのですね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[subRenderFadein #A 0.2 0,0]
+[wt 0.2]
+
+＠インドラ
+いかにも。
+[k]
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+
+
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠ヴリトラ
+はっ。偉そうに言っておるが、[r]わえはついでに巻き込まれただけではないか！？
+[k]
+
+＠ヴリトラ
+貴様がここに来さえしなければ[r]何も起こらなかったのじゃろうに！
+[k]
+
+[charaFace B 6]
+
+＠ヴリトラ
+みんな騙されるな、こいつは[r]雷神どころかとんだ疫病神じゃー！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[subRenderFadein #A 0.2 0,0]
+[wt 0.2]
+
+＠インドラ
+貴様に[#神:オレ]の行動をどうこう言われる筋合いはない。[r]黙っていろ。
+[k]
+
+[charaFace D 0]
+
+＠インドラ
+ともあれ、話はわかったな？
+[k]
+
+＠インドラ
+故にこそ、壊れた空の砕片を[r]この宝物庫の中に入れて直す必要があるのだ。
+[k]
+
+＠インドラ
+必要なだけの砕片と、全ての空の核たる要素を戻せれば、[r]『空が壊れた』という事実は霧消するだろう。
+[k]
+
+＠インドラ
+すなわちこの特異点も解消される。
+[k]
+
+？1：なるほど……
+？！
+
+[charaFace D 7]
+
+＠インドラ
+無論、[#神:オレ]は世界に対する責任がある。
+[k]
+
+＠インドラ
+下界の酒と[#物見遊山:も の み ゆ さ ん]に満足した後であれば、[r][#神:オレ]自らが動き直すべし、と思っていたが[line 3]
+[k]
+
+[charaFace D 0]
+
+＠インドラ
+代わりに動いてくれるものが来た、というわけだ。
+[k]
+
+[charaFace D 3]
+
+＠インドラ
+しかもそやつらには、[r]ついでに欲する蛇の力があるという。
+[k]
+
+＠インドラ
+そのような理由があるのであれば、[r]仕事を代行させるにやぶさかではないな。
+[k]
+
+[charaFaceFade D 4 0.2]
+
+＠インドラ
+酒の[#肴:さかな]の見世物として許可しよう。[r]空の砕片を集め、そしてこの空を修復せよ！
+[k]
+
+＠インドラ
+これは神々の王インドラが与える試練である。[r]駄賃として宝物庫の宝は持っていくがいい！
+[k]
+
+？1：やったー！
+？2：ありがとうございます！
+？！
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+[charaPut D 0,0]
+[charaPut S 0,-200]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ヴリトラ
+こら素直に喜ぶな、騙されておるぞ貴様！
+[k]
+
+[charaFace B 3]
+
+＠ヴリトラ
+勝手に厄介事を生み出して？[r]勝手に他人に押しつけて？
+[k]
+
+＠ヴリトラ
+しかもそれを試練とのたまうじゃと？
+[k]
+
+＠ヴリトラ
+なんという[#厚顔無恥:こ う が ん む ち]、[r]なんという自分都合の面の皮じゃ！
+[k]
+
+[charaFace B 6]
+
+＠ヴリトラ
+わえ、むかつく！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ラーマ
+ははは。しかし他に手はなさそうだ。[r]言われた通りに動くしかあるまいよ。
+[k]
+
+[charaFace C 0]
+
+＠ラーマ
+それで、空の核たる要素があるという領域はどこに？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[subRenderFadein #A 0.2 0,0]
+[wt 0.2]
+
+＠インドラ
+無論、外の黒雲のどこかだ。
+[k]
+
+＠インドラ
+楔の数だけある……五個だな。[r]おおよその方向程度は教えてやろう。
+[k]
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠アルジュナ
+またあそこを移動するのですか？
+[k]
+
+＠アルジュナ
+それは少し困りましたね。[r]何か乗り物が必要かもしれません。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+
+
+[charaTalk D]
+[charaFace D 8]
+[subRenderFadein #A 0.2 0,0]
+[wt 0.2]
+
+
+
+＠インドラ
+事実、この特異点のうち、[#神:オレ]が泡で[r]固定していない場所は空の法則が荒れ狂う黒雲領域。
+[k]
+
+
+＠インドラ
+徒歩ではけっして辿り着けまい。[r]何か手を考えることだな。
+[k]
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+[bgmStop BGM_MAP_123 1.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠アルジュナ
+……。[r]……。
+[k]
+
+[charaFace A 9]
+
+＠アルジュナ
+はっ。[r]思い出しました。
+[k]
+
+[charaFace A 0]
+[messageOff]
+[wt 0.2]
+[charaDepth V 9]
+[charaPut V 1]
+[charaEffect V bit_talk_orb_light]
+[cueSe SE_23 23_ade914]
+[wt 2.0]
+
+？1：何それ？
+？！
+
+＠アルジュナ
+そうですね。これは[line 3][#設計図]です。[r]出発前に……。
+[k]
+
+[messageOff]
+[wt 0.3]
+[cueSe SE_22 22_ad1177]
+[fadeout white 0.7]
+[wait fade]
+
+[charaEffectDestroy V bit_talk_orb_light]
+[charaFadeout A 0.1]
+
+[pictureFrame cut063_cinema]
+[effect bit_sepia01_depth_fs]
+
+[scene 203800]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaScale L 1.5]
+[charaFace L 5]
+[charaFadein L 0.1 200,250]
+[subCameraFilter #B maskEdge cut359_mask04 4 0,0,0,255 0]
+
+[charaTalk off]
+[charaScale R 1.4]
+[charaFadein R 0.1 100,-90]
+[charaScale I 1.2]
+[charaPut I -100,210]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+[wt 0.3]
+
+[charaMove R 100,-120 4.0]
+[charaMove I -100,180 4.0]
+[fadein white 0.7]
+[wait fade]
+
+[bgm BGM_EVENT_104 0.1 0.6]
+
+[se ade74]
+[wt 2.0]
+[seStop ade74 1.2]
+[charaFadeTime I 0.7 1.0]
+[wt 2.0]
+[charaFadeout R 0.7]
+[charaFadeout I 0.7]
+[wt 1.4]
+[charaTalk on]
+[charaTalk G]
+
+＠アルジュナ・オルタ
+もう一人の私。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠アルジュナ
+どうした？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠アルジュナ・オルタ
+出陣するのですね。[r]渡しておくものがあります。
+[k]
+
+[messageOff]
+[charaPut V 0,-50]
+[charaEffect V bit_talk_orb_light]
+[cueSe SE_23 23_ade914]
+[wt 1.5]
+[se ad474]
+[charaMove V 30,50 1.0]
+[charaMoveScale V 1.4 1.0]
+[wt 1.0]
+[charaFadeout G 0]
+[charaPut V 2500,2500]
+[wt 0.1]
+
+[seStop ad474 1.8]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[wt 0.5]
+
+[charaPut V 30,50]
+[charaMoveScale V 1.0 1.0]
+[charaMove V 0,-50 1.0]
+[wt 1.0]
+[charaFace A 4]
+
+＠アルジュナ
+……なぜ、このようなものを？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut V 2500,2500]
+[charaMoveScale V 1.0 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 0,-50]
+
+＠アルジュナ・オルタ
+それは私にもわかりません。[r]渡しておいたほうがよい、と思っただけのことです。
+[k]
+
+[charaFace G 0]
+
+＠アルジュナ・オルタ
+これはただの設計図のようなもの。[r]骨組みだけの情報パッケージに過ぎません。
+[k]
+
+＠アルジュナ・オルタ
+肉付けが必要であれば、他の何かで。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[charaPut V 0,-50]
+
+＠アルジュナ
+……よく理解できないが、[r]善意からなのはわかる。借りておこう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut V 2500,2500]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 0,-50]
+
+＠アルジュナ・オルタ
+それでは、気をつけて。[r][line 3]誰かに会ったなら、よろしく。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+[charaPut V 0,-50]
+
+＠アルジュナ
+……？
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout white 0.7]
+[bgmStop BGM_EVENT_104 1.2]
+[wait fade]
+
+[charaPut A 1]
+[charaFace A 0]
+[pictureFrame]
+[effectDestroy bit_sepia01_depth_fs]
+
+[charaPut V 1]
+[scene 253500]
+
+[charaSet I 1098328400 1 幼女ヴリトラ_演出用]
+[charaSet J 2015001 1 アルジュナ_演出用]
+[imageSet U cut701_vimana02 1]
+[charaFilter I silhouette 00000080]
+[charaFilter J silhouette 00000080]
+[charaRollAxis I y 180 0.1]
+[charaRollAxis J y 180 0.1]
+[charaDepth P 10]
+[charaDepth M 11]
+[charaDepth J 12]
+[charaDepth Q 13]
+[charaDepth X 14]
+[charaDepth N 15]
+[charaDepth I 16]
+[charaDepth U 17]
+[wt 0.3]
+
+[fadein white 0.7]
+[wait fade]
+
+＠アルジュナ
+展開してみます。[r]少し離れてください。
+[k]
+
+[messageOff]
+[se ade406]
+[fowardEffect bit_talk_wht_way_back]
+[wt 1.0]
+[fadeout white 1.5]
+[wait fade]
+
+[cueSe SE_21 21_ade590]
+[charaFadeout A 0.1]
+[fowardEffectDestroy bit_talk_wht_way_back]
+[charaEffectDestroy V bit_talk_orb_light]
+
+[charaFadein U 0.1 0,-180]
+[charaPut X 0,-200]
+[charaFadeTime X 0.1 0.5]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 2.0]
+
+？1：なんか見たことあるものが……？
+？！
+
+[bgm BGM_EVENT_167 0.1]
+
+[charaFadeout X 0.2]
+[charaFadeout U 0.2]
+[wt 0.2]
+
+[sceneSet X 10000 1]
+[charaScale X 1.1]
+[charaDepth X 14]
+
+[charaTalk D]
+[charaFace D 0]
+[subRenderFadein #A 0.2 0,0]
+[wt 0.2]
+
+＠インドラ
+ほう。[r]それは[line 3][#ヴィマーナ]だな。
+[k]
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アルジュナ
+はい。ですが、これはハリボテのようなもの。[r]本来は私のものではないのですから当然です。
+[k]
+
+＠アルジュナ
+これに乗って動かせたとて、何かで補強せねば、[r]とてもあの黒雲の海は渡りきれないでしょう。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaMoveEase L 0,250 0.3 easeOutQuart]
+[subRenderFadein #B 0.2 0,-320]
+[wt 0.3]
+
+＠ラーマ
+（ぴーん）
+[k]
+
+[messageOff]
+[charaMoveEase L -200,250 0.4 easeOutQuart]
+[subRenderFadeout #B 0.3]
+[wt 0.5]
+[charaFace C 1]
+[charaFadein C 0.2 1]
+
+＠ラーマ
+なあアルジュナ。[r]余は先程のソリを思い出しているぞ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠アルジュナ
+……！[r]なるほど。
+[k]
+
+[charaFace A 0]
+
+＠アルジュナ
+ヴリトラ。[r]貴様は今でも『隔絶の板』は出せるようだ。
+[k]
+
+＠アルジュナ
+であれば、その板で[#ヴィマーナの補強]はできるか？
+[k]
+
+[messageOff]
+[charaScale P 1.5]
+[charaScale M 1.2]
+[charaScale J 2.0]
+[charaScale Q 1.5]
+[charaScale N 1.2]
+[charaScale I 2.0]
+
+[charaTalk off]
+[charaFadein P 0.4 -300,-200]
+[charaFace M 0]
+[charaFadein M 0.4 100,-50]
+[charaFace J 0]
+[charaFadein J 0.4 -150,50]
+[charaMoveEase P -250,-200 50.0 easeOutSine]
+[charaMoveEase M 150,-50 50.0 easeOutSine]
+[charaMoveEase J -200,50 50.0 easeOutSine]
+[wt 0.8]
+[charaFadeout A 0.1]
+[charaFaceFade M 5 0.2]
+[wt 1.2]
+[charaFace M 2]
+
+＠ヴリトラ
+ほーう？[r]わえの協力が必要というのか？
+[k]
+
+＠ヴリトラ
+こんな子供のようで非力なわえの？
+[k]
+
+[charaFace M 5]
+
+＠ヴリトラ
+……どうしようかのう。
+[k]
+
+＠ヴリトラ
+さっきのソリのときとかも、遊んでばかりいるなと[r]叱られた記憶があるのう。
+[k]
+
+[charaFace M 8]
+
+＠ヴリトラ
+まずは今までの[#侮:あなど]りを詫びてもらってから、
+[k]
+
+＠ヴリトラ
+お願いしますと頭を下げてもらわんと[r]まったくやる気が出んのーう。
+[k]
+
+[messageOff]
+[charaFadein Q 0.4 300,-200]
+[charaFace N 5]
+[charaFadein N 0.4 -150,0]
+[charaFace I 0]
+[charaFadein I 0.4 200,30]
+[wt 0.4]
+
+[charaFadeout P 0.1]
+[charaFadeout M 0.1]
+[charaFadeout J 0.1]
+
+＠アルジュナ
+……くっ。[r]この、魔の、子供め……！
+[k]
+
+[messageOff]
+[charaPut X 0,-200]
+[charaFadeTime X 0.2 0.5]
+
+＠アルジュナ
+（いやしかし、落ち着けアルジュナ）
+[k]
+
+＠アルジュナ
+（今はマスターのサーヴァントとして、[#一意専心:いちいせんしん]、[r]　事態の解決に[#邁進:まいしん]すべきとき）
+[k]
+
+＠アルジュナ
+（それしか手がないのであれば、頭を下げることなど[r]　容易い。今は大局を見ねばならない……！）
+[k]
+
+[charaFace B 8]
+[charaFadein B 0.1 1]
+[charaFadeout X 0.2]
+[wt 0.2]
+
+[charaFace N 7]
+[charaMoveEase N -150,2 0.4 easeOutSine]
+
+＠アルジュナ
+っ……スゥー……。[wt 0.6][charaMoveEase N -150,0 0.5 easeOutSine][r]（気合いの深呼吸）
+[k]
+
+[messageOff]
+[charaFadeout Q 0.5]
+[charaFadeout N 0.5]
+[charaFadeout I 0.5]
+[wt 1.0]
+
+[charaFace E 3]
+[charaFace F 0]
+[charaFace D 0]
+[charaPut Y 1060,-200]
+[charaPut Z -1060,-200]
+[charaPut S 0,-200]
+[charaPut E 250,-8]
+[charaPut F -250,-16]
+[charaPut D 0,0]
+[charaFadeTime E 0 1.0]
+[charaFadeTime F 0 1.0]
+
+[charaTalk on]
+[charaTalk B]
+
+？1：外に出られなかったら
+？2：ヴリトラの力も取り戻せないんだよ
+？！
+
+[charaFace B 0]
+
+＠ヴリトラ
+それもそうじゃな。
+[k]
+
+＠ヴリトラ
+マスターの頼みであれば仕方ない。[r]やってやるかの。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠アルジュナ
+……。[r]……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[subRenderFadein #A 0.2 0,0]
+[wt 0.2]
+
+＠E：ヴァジュラ
+インドラさまー、[r]あれはどーいう感情の顔ー？
+[k]
+
+[charaTalk D]
+[charaFaceFade D 5 0.1]
+
+＠インドラ
+ハハハ。[r]わからんか？
+[k]
+
+[charaFaceFade D 3 0.1]
+
+＠インドラ
+奴は今まさに、自らの持てる最大の一撃を以て[r][#子蛇:ヴリトラ]を消し飛ばそうとしていたところだったのだ。
+[k]
+
+＠インドラ
+うむ惜しい。
+[k]
+
+[charaTalk F]
+[charaFace F 1]
+
+＠F：ヴァジュラ
+勉強になります。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_167 1.0]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout S 0.1]
+[charaFadeout T 0.1]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaFadeout W 0.1]
+[charaFadeout Y 0.1]
+[charaFadeout Z 0.1]
+[charaFadeout L 0.1]
+[charaLayer D normal]
+[charaLayer E normal]
+[charaLayer F normal]
+[charaLayer S normal]
+[charaLayer T normal]
+[charaLayer K normal]
+[charaLayer L normal]
+[charaLayer W normal]
+[charaLayer Y normal]
+[charaLayer Z normal]
+[wt 0.7]
+
+[charaSet D 1098328720 1 インドラ]
+[charaSet M 1098328400 1 幼女ヴリトラ_演出用]
+[sceneSet P 253500 1]
+[sceneSet S 253500 1]
+[sceneSet T 253500 1]
+
+[charaDepth P 1]
+[charaDepth D 2]
+[charaDepth X 3]
+[charaDepth C 4]
+[charaDepth O 5]
+[charaDepth Q 6]
+[charaDepth H 7]
+
+[subCameraOn 2]
+[charaLayer S sub #A]
+[charaLayer M sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 4 255,255,255,255 0]
+
+[charaDepth S 1]
+[charaDepth M 2]
+[charaFace M 2]
+[charaFadein S 0.1 -500,150]
+[charaFadein M 0.1 0,300]
+
+[charaLayer T sub #B]
+[charaLayer L sub #B]
+[charaLayer N sub #B]
+[subCameraFilter #B maskEdge cut359_mask05 4 255,255,255,255 0]
+
+[charaDepth T 1]
+[charaDepth L 2]
+[charaDepth N 3]
+[charaScale L 1.0]
+[charaScale N 1.0]
+[charaFace L 0]
+[charaFadein T 0.1 500,150]
+[charaFadein L 0.1 0,300]
+
+[cueSe SE_24 24_ade1132]
+[charaScale O 1.01]
+[charaScale P 1.3]
+[charaFadein P 0.1 0,-200]
+[charaFadein O 0.1 0,-200]
+[charaScale C 1.3]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 2.5]
+
+[seStop 24_ade1132 1.5]
+[cameraMove 0.1 0,-20 1.15]
+[wt 2.5]
+
+[cameraMoveEase 0,0 1.5 easeOutSine 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+
+[bgm BGM_MAP_28 0.1]
+
+[charaTalk M]
+[subRenderFadeinFSR #A 0.3 300,-330]
+[wt 0.3]
+
+＠M：ヴリトラ
+きひひー。[r]できたぞ！
+[k]
+
+[charaTalk L]
+[subRenderFadeinFSL #B 0.3 -300,-330]
+[wt 0.3]
+
+＠L：ラーマ
+ふむ、本当に器用なものだな。
+[k]
+
+＠L：ラーマ
+若返って工作や発明が得意になる、[r]ということがあるのか？
+[k]
+
+＠L：ラーマ
+いや、元々得意で、[r]我々が知らなかっただけかもしれないが。
+[k]
+
+[charaTalk M]
+[charaFace M 4]
+
+＠M：ヴリトラ
+うーん、どうじゃろ？[r]よくわからん。
+[k]
+
+？1：子供はいろいろ作りたがるものだよ
+？2：手を動かすのって楽しいしね！
+？！
+
+[charaFace M 8]
+
+＠M：ヴリトラ
+うむ、得意かどうかはともかく、楽しいぞ！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 0,300]
+
+＠N：アルジュナ
+少し試してみましたが、[r]これは私でも魔力操船できそうです。
+[k]
+
+＠N：アルジュナ
+『隔絶する』という性質を持つヴリトラの板で[r]コーティングされていますので、
+[k]
+
+＠N：アルジュナ
+あの荒ぶる黒雲領域の雷などに[r]被害を受けることもないでしょう。
+[k]
+
+[messageOff]
+[charaTalk C,N]
+[charaFadeout O 0.5]
+[subRenderFadeout #A 0.5]
+[subRenderFadeout #B 0.5]
+[wt 0.7]
+
+＠ラーマ
+空の砕片、核たる要素があるという領域へ[r]これでようやく移動することができるな。
+[k]
+
+[se ad173]
+[seStop ad173 1.3]
+[charaMove P 150,-200 1.0]
+[charaMove C -150,0 1.0]
+
+＠ラーマ
+それでは早速乗り込んで……と。
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ad1404 0.5 1.0]
+[wt 0.5]
+[charaTalk off]
+[charaScale D 0.95]
+[charaFace D 7]
+[seStop 24_ad1404 1.3]
+[charaFadein D 0.4 200,35]
+[charaMoveEase D 200,-15 1.0 easeOutSine]
+[wt 1.3]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+
+＠ラーマ
+インドラ神よ。見送りか？[r]というかそれは何だ？
+[k]
+
+[charaFace D 7]
+
+＠インドラ
+見送りではなく、並走の準備だ。
+[k]
+
+＠インドラ
+酒はどこでも飲めるが、その[#肴:さかな]である[r]見世物は見えるところで見ねば無意味だろう。
+[k]
+
+＠インドラ
+そしてこれは神象アイラーヴァタ。[r][#神:オレ]の足の代わりとなるものだ、気にするな。
+[k]
+
+
+[charaPut X 0,-200]
+[charaFadeTime X 0.2 0.5]
+[charaFace C 4]
+
+＠ラーマ
+（本当に見世物として楽しむつもりなのだな……）
+[k]
+
+[messageOff]
+[charaScale Q 1.2]
+[charaScale H 1.2]
+[charaTalk C,H]
+[charaFace H 7]
+[charaFadein Q 0.5 0,-300]
+[charaFadein H 0.5 1]
+[wt 0.5]
+[charaFadeout P 0.1]
+[charaFadeout X 0.1]
+[charaFadeout C 0.1]
+[wt 0.4]
+
+＠H：インドラ
+一つ、神の助言をしてやろう。
+[k]
+
+＠H：インドラ
+これから向かう黒雲領域にも[r]空の砕片が全くないというわけではないはずだ。
+[k]
+
+＠H：インドラ
+空が壊れたはずみ、特異点化したはずみで、
+[k]
+
+＠H：インドラ
+それらはこの領域に適合した生物のような姿に[r]なっているやもしれん。
+[k]
+
+＠H：インドラ
+そやつらと戦って道すがら[r]砕片を集めるのも手の一つではあろう。
+[k]
+
+[charaFace H 3]
+
+＠H：インドラ
+[#神:オレ]は[#吝嗇:りんしょく]ではない。
+[k]
+
+＠H：インドラ
+今後の戦いで我が目を楽しませたのであれば、都度[r]褒美をくれてやらんでもない。励め。
+[k]
+
+[charaTalk M]
+[charaFace M 9]
+[subRenderFadeinFSR #A 0.3 300,-330]
+[wt 0.3]
+
+＠M：ヴリトラ
+偉そうに。というか、[r]また初耳の情報をしれっと出しおって……。
+[k]
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+[cameraMove 30.0 0,-40 1.2]
+[charaTalk H]
+[charaFace H 0]
+
+＠H：インドラ
+さあ、試練に向かえ。
+[k]
+
+[charaFaceFade H 4 0.1]
+
+＠H：インドラ
+まずは空の核たる要素の一つ目。第一の楔……[r]『風』の試練が貴様らを待ち受けていよう！
+[k]
+
+
+
+
+
+
+
+[messageOff]
+[wt 0.7]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_28 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

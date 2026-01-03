@@ -1,0 +1,335 @@
+
+
+＄94-07-27-10-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 1050000 1 バーゲスト]
+[charaSet C 6033000 1 岡田以蔵]
+[charaSet D 25002000 1 葛飾北斎]
+[charaSet E 1098240200 1 お路]
+
+[charaSet G 98115000 1 通信用ノイズ]
+
+[charaSet J 1098240500 1 ソウスケ]
+[charaSet K 1098240600 1 シノ]
+[charaSet L 1098240700 1 ドウセツ]
+[charaSet M 1098240800 1 コブンゴ]
+[charaSet N 1098240900 1 ダイカク]
+[charaSet O 1098241000 1 ゲンパチ]
+
+[charaSet R 1098244300 1 化け猫]
+
+[sceneSet F 156800 1]
+[charaScale F 1.2]
+
+[charaEffect G bit_talk_10_LowLevel]
+[charaPut G 2000,2000]
+
+[charaTalk depthOff]
+[charaDepth R 2]
+[charaDepth J 4]
+[charaDepth E 5]
+
+[scene 156800]
+[fadein black 1.0]
+[bgm BGM_BATTLE_95 0.1]
+[wait fade]
+
+[charaTalk off]
+[charaDepth E 6]
+[charaDepth R 4]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.3]
+
+[se ad73]
+[charaEffect R bit_talk_quickmove]
+
+[charaFace R 0]
+[charaFadein R 0.1 260,20]
+[charaMove R 260,0 0.3]
+[wt 0.5]
+
+[se ad480]
+[charaMove R 250,0 0.2]
+[wt 0.2]
+
+[charaTalk on]
+[charaFace E 45]
+＠お路
+きゃあっ！[charaShake E 0.05 3 3 0.5]
+[k]
+
+[charaTalk R]
+[charaFace R 1]
+＠
+シ[charaTalk R][messageShake 0.05 3 3 0.3]ャァァァァァッ！！
+[k]
+
+[messageOff]
+
+[bgm BGM_BATTLE_95 0.4 0.5]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout R 0.1]
+[charaFadeout E 0.1]
+
+[wt 0.4]
+
+[bgm BGM_BATTLE_95 0.4 1.0]
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠バーゲスト
+[line 3]不覚！[r][#路:みち]が敵に捕らわれた！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠葛飾北斎
+お[#路:みっ]ちゃん！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth O 1]
+[charaDepth N 2]
+[charaDepth M 3]
+[charaDepth K 4]
+[charaDepth L 5]
+
+[charaFace N 0]
+[charaFadeinFSL N 0.1 -350,0]
+
+[charaFace M 0]
+[charaFadeinFSL M 0.1 -200,-50]
+
+[charaFace K 0]
+[charaFadein K 0.1 0,-70]
+
+[charaFace L 0]
+[charaFadeinFSR L 0.1 200,-90]
+
+[charaFace O 0]
+[charaFadeinFSR O 0.1 350,0]
+
+
+[cueSe SE_22 22_ade751]
+[charaMoveReturn K 0,-65 0.2]
+[wt 0.1]
+
+[cueSe SE_22 22_ade762]
+[charaMoveReturnFSL N -350,5 0.2]
+
+＠犬士たち
+オンオンッ！！[wt 0.1][cueSe SE_22 22_ade759][charaMoveReturnFSR L 200,-85 0.2]　アンッ！[cueSe SE_22 22_ade751][charaMoveReturn K 0,-65 0.2]　キャウンッ！[cueSe SE_22 22_ade761][charaMoveReturnFSR O 350,5 0.2]
+[k]
+
+[messageOff]
+
+[seStop 22_ade759 0.3]
+[seStop 22_ade751 0.3]
+[seStop 22_ade762 0.3]
+[seStop 22_ade761 0.3]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaDepth R 1]
+[charaDepth J 2]
+[charaDepth E 3]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 41]
+[charaFadein E 0.1 1]
+
+[charaFace R 0]
+[charaFadein R 0.1 250,0]
+
+[charaFace J 5]
+[charaFadein J 0.4 -230,-100]
+[charaMove J -200,-100 0.5]
+
+＠お路
+なりません、犬士たち！[r]こちらへ来てはいけませんっ！
+[k]
+
+[charaFace E 40]
+
+＠お路
+あなたたちまで[#奪われてしまう]！
+[k]
+
+[fowardEffect bit_talk_token_change01 -100,0]
+[charaEffect R bit_talk_token_change01]
+
+[charaFace E 46]
+[charaFace J 4]
+
+＠お路
+あなたがたはカルデアの人々のもとに残って[line 3][r]そして力に[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[bgmStop BGM_BATTLE_95 2.0]
+
+
+[se ad801]
+[seStop ad801 3.5]
+[fowardEffectStop bit_talk_token_change01]
+[charaEffectStop R bit_talk_token_change01]
+[charaSpecialEffect R erasureReverse 1 1.8]
+[charaSpecialEffect E erasureReverse 1 1.8]
+[charaSpecialEffect J erasureReverse 1 1.8]
+[wt 4.0]
+
+？1：消え……転移した！？
+？！
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[charaPut G 0,0]
+
+＠マシュ
+今度は……[r]反応が急速に離れていきます！
+[k]
+
+＠マシュ
+向かった方角は[line 3][r]おそらく“[#相模:さがみ]”の島と思われます。
+[k]
+
+[messageOff]
+
+[charaScale K 1.1]
+[charaScale L 1.1]
+[charaScale M 1.1]
+[charaScale N 1.1]
+[charaScale O 1.1]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 2000,2000]
+[wt 0.3]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth O 1]
+[charaDepth N 2]
+[charaDepth M 3]
+[charaDepth K 4]
+[charaDepth L 5]
+
+[charaFadein F 1.2 50,-200]
+[charaMove F -50,-200 10.0]
+
+[charaFace N 0]
+[charaFadeinFSL N 1.2 -320,0]
+[charaMoveFSL N -420,0 10.0]
+
+[charaFace M 0]
+[charaFadeinFSL M 1.2 -170,-50]
+[charaMoveFSL M -270,-50 10.0]
+
+[charaFace K 0]
+[charaFadein K 1.2 30,-70]
+[charaMove K -70,-70 10.0]
+
+[charaFace L 0]
+[charaFadeinFSR L 1.2 230,-90]
+[charaMoveFSR L 130,-90 10.0]
+
+[charaFace O 0]
+[charaFadeinFSR O 1.2 380,0]
+[charaMoveFSR O 280,0 10.0]
+
+[wt 3.5]
+
+[charaFadeout F 1.0]
+[charaFadeout K 1.0]
+[charaFadeout L 1.0]
+[charaFadeout M 1.0]
+[charaFadeout N 1.0]
+[charaFadeout O 1.0]
+[wt 1.5]
+
+[charaScale K 1.0]
+[charaScale L 1.0]
+[charaScale M 1.0]
+[charaScale N 1.0]
+[charaScale O 1.0]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+＠葛飾北斎
+犬士たちの中に、ソウスケだけがいねえ……。
+[k]
+
+[charaFace D 27]
+＠葛飾北斎
+あいつだけ、お[#路:みっ]ちゃんと一緒に[r]連れて行かれちまったナ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠岡田以蔵
+……あの雑巾犬。忠犬気取りかえ。
+[k]
+
+[charaFace C 4]
+
+＠岡田以蔵
+フゥ……[r]ゴリ押しは無理があったのう。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

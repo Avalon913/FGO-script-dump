@@ -1,0 +1,195 @@
+
+
+＄04-00-02-08-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098268910 1 サクラ]
+[charaSet B 1098267100 1 メドゥーサ]
+[charaSet C 1098270300 1 アーユス]
+[charaSet D 7046001 1 ドゥリーヨダナ]
+[charaSet E 1098270000 1 シオン]
+[charaSet F 6037001 1 カーマ]
+[charaSet G 1098271020 1 強化蠢魔1]
+[charaSet H 1098271020 1 強化蠢魔2]
+[charaSet I 1098271020 1 強化蠢魔3]
+
+[scene 10000]
+[effect bit_talk_marblebg_fs]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_127 0.1]
+
+
+＠
+リブートを実行中。[r]９８％[line 3]９９％[line 3]
+[k]
+
+＠
+パラメータの変更確認プログラムを実施。
+[k]
+
+＠
+基本性質……変更なし。
+[k]
+
+＠
+固有能力……調整。外見……微調整。[r]倫理限界……調整。名称……変更なし。
+[k]
+
+＠
+[line 3]。[r][line 3]。
+[k]
+
+＠
+確認最終工程。[r]仮想表出後、問う。
+[k]
+
+＠
+『[#汝は]』、『[#何者か]』[line 3]？
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_127 1.5]
+[wait fade]
+
+[effectDestroy bit_talk_marblebg_fs]
+
+[scene 190400]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_MAP_63 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth G 3]
+[charaDepth H 2]
+[charaDepth I 1]
+
+[charaFace G 0]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein G 0.1 1]
+[charaFadeinFSR H 0.1 300,0]
+[charaFadeinFSL I 0.1 -300,0]
+[wt 1.0]
+
+？1：こいつらは！？
+？2：今までのと、少し違う……？
+？！
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠シオン
+なぜ！？[r]キャスターは既にいないはず……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠カーマ
+実際いるんだからしょうがないでしょう。[r]下がっててください、マスターさん！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad444]
+[seVolume ad444 0 0]
+[wt 0.1]
+[se ad443]
+[seVolume ad443 0 0]
+[seVolume ad444 1.0 1.0]
+[seVolume ad443 1.0 1.0]
+[wt 1.5]
+
+[seStop ad444 0.5]
+[seStop ad443 0.5]
+[charaTalk off]
+[charaFace B 0]
+[charaFace A 20]
+[charaFadeinFSL A 0.4 0]
+[wt 0.1]
+[charaFadeinFSR B 0.4 2]
+[wt 0.6]
+[charaTalk on]
+[charaTalk A]
+
+＠サクラ
+無事の、ようですね、皆さん。[r]はぁはぁ……。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ドゥリーヨダナ
+ふん。そっちの策かと思っておったわ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+こっちの台詞だけど。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠アーユス
+もう、今はそんなことしてる場合じゃないでしょーう！
+[k]
+
+[charaFace C 8]
+
+＠アーユス
+怪我をしないように、力を合わせて退治！[r]いいわね！？
+[k]
+
+？1：同感！
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_MAP_63 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

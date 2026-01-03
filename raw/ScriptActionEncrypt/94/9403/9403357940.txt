@@ -1,0 +1,959 @@
+
+
+
+
+＄94-03-35-79-4-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098283040 1 ネモサンタ]
+[charaSet B 1098283100 1 ネモ・マリーンＡ]
+[charaSet C 1098283100 1 ネモ・マリーンＢ]
+[charaSet D 1098283100 1 ネモ・マリーンＣ]
+[charaSet E 1098283200 1 ネモ・ナース]
+[charaSet F 1098283310 1 ネモ・プロフェッサー]
+[charaSet G 1098283500 1 ネモ・ベーカリー]
+[charaSet H 1098283400 1 ネモ・エンジン]
+
+[equipSet I 9809180 1 バレンタイン礼装]
+[charaDepth I 8]
+
+[charaSet J 1098283500 1 ネモ・ベーカリー_拡大]
+[charaScale J 1.2]
+[charaSet K 1098283100 1 ネモ・マリーンＡ_拡大]
+[charaScale K 1.2]
+[charaSet M 1098283200 1 ネモ・ナース_拡大]
+[charaScale M 1.2]
+
+[charaSet N 1098283310 1 ネモ・プロフェッサー_拡大]
+[charaScale N 1.2]
+[charaSet O 1098283400 1 ネモ・エンジン_拡大]
+[charaScale O 1.2]
+[sceneSet L 141300 1]
+[charaScale L 1.2]
+[sceneSet P 141300 1]
+[charaScale P 1.2]
+[sceneSet Q 141300 1]
+[charaScale Q 1.2]
+
+[subCameraOn 2]
+
+[charaLayer P sub #A]
+[charaLayer O sub #A]
+[charaLayer N sub #A]
+
+[charaLayer Q sub #B]
+[charaLayer M sub #B]
+[charaLayer K sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask16 3 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask10 3 255,255,255,255]
+
+
+[charaTalk depthOff]
+
+[charaDepth G 1]
+[charaDepth L 2]
+[charaDepth J 3]
+
+[charaDepth P 4]
+[charaDepth Q 4]
+
+[charaDepth K 5]
+[charaDepth M 5]
+[charaDepth O 5]
+[charaDepth N 5]
+
+[charaFace M 1]
+[charaFadeinFSL M 0.1 150,50]
+[charaFadein Q 0.1 550,-200]
+
+[charaFace O 1]
+[charaFadeinFSR O 0.1 -120,50]
+[charaFadein P 0.1 -550,-200]
+
+[branchQuestClear lblClear01b 3000628]
+
+[branch lblClear01a]
+
+[label lblClear01b]
+
+[scene 157900]
+
+[branch lblConf01]
+
+[label lblClear01a]
+
+[scene 108400]
+
+[label lblConf01]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+[wt 1.0]
+
+？1：よーし、みんなの分、できたーー！
+？2：届けに行くぞ～～～！
+
+？！
+
+[wt 0.5]
+
+[bgmStop BGM_EVENT_2 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[pictureFrame cut063_cinema]
+
+[scene 141300]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V010]
+おっほん、では報告を聞こう！[r]各員、発言を許可する！[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_94 0.1]
+
+
+[charaTalk off]
+[charaFace B 0]
+[charaFadein B 0.4 0,-50]
+
+[charaFace C 0]
+[charaFadein C 0.4 350,-50]
+
+[charaFace D 0]
+[charaFadein D 0.4 -350,-50]
+[wt 1.0]
+
+[charaTalk on]
+[charaFace B 2]
+[charaMoveReturn B 0,-45 0.2]
+＠ネモ・マリーンＡ
+[tVoice ValVoice_405300 0_V020]
+おいしー！　たのしー！　うれしー！[wt 0.2][charaMoveReturn B 0,-45 0.2][r]見て見てキャプテン、ボクたちのチョコ！[wait tVoice]
+[k]
+
+＠ネモ・マリーンＡ
+[tVoice ValVoice_405300 0_V030]
+マキガイとウミネコのカタチしてる！[r]きれいな箱に24個入ってるのが、24セットも！[wait tVoice]
+[k]
+
+[charaFace C 1]
+＠ネモ・マリーンＢ
+[tVoice ValVoice_405300 0_V040]
+欲張ってたくさん食べてもすぐには無くならない！[r]１日６つ食べても４日も[#保:も]つんだ！[wait tVoice]
+[k]
+
+[charaFace D 2]
+＠ネモ・マリーンＣ
+[tVoice ValVoice_405300 0_V050]
+それだけでもたいへんなのに、[r]24個、全部色も味も違うんだよねー！[wait tVoice]
+[k]
+
+＠ネモ・マリーンＣ
+[tVoice ValVoice_405300 0_V060]
+宝石箱みたいでばえるーー！[r]てかみんな、食べる前に写真とろ、写真！[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaFace C 2]
+[charaMoveReturn B 0,-45 0.2]
+[wt 0.1]
+[charaMoveReturn C 350,-45 0.2]
+[wt 0.1]
+[charaMoveReturn D -350,-45 0.2]
+[wt 0.1]
+[charaMoveReturn C 350,-45 0.2]
+[wt 0.1]
+[charaMoveReturn B 0,-45 0.2]
+[wt 0.1]
+[charaMoveReturn D -350,-45 0.2]
+
+[wt 0.7]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 0,-50]
+[wt 0.4]
+
+＠ネモ・ナース
+[tVoice ValVoice_405300 0_V070]
+私も頂きました。[r]とても素敵な、青色のランタンを。[wait tVoice]
+[k]
+
+＠ネモ・ナース
+[tVoice ValVoice_405300 0_V080]
+ナースさんにはチョコより[r]こちらの方がいいかな、とのことです。[wait tVoice]
+[k]
+
+
+[charaFace E 6]
+
+＠ネモ・ナース
+[tVoice ValVoice_405300 0_V090]
+アロマキャンドルにも使えるので、[r]今後の医務室はリラックス効果ばつぐんかと。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 0,-50]
+[wt 0.4]
+
+＠ネモ・プロフェッサー
+[tVoice ValVoice_405300 0_V100]
+はいにやける～。[r]クリスマスにがんばった甲斐がありすぎました～。[wait tVoice]
+[k]
+
+[charaFaceFade F 5 0.3]
+
+＠ネモ・プロフェッサー
+[tVoice ValVoice_405300 0_V110]
+見ますか、このポシェット。[r]こまかな器具もごちゃつかず整頓できます～。[wait tVoice]
+[k]
+
+
+＠ネモ・プロフェッサー
+[tVoice ValVoice_405300 0_V120]
+マスターにおかれましては、プレゼントの[r]チョイス力にますます磨きがかかっているかと～。[wait tVoice]
+[k]
+
+
+[messageOff]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.4 0,-50]
+[wt 0.4]
+
+＠ネモ・ベーカリー
+[tVoice ValVoice_405300 0_V130]
+だよね～！　わたしはかわいいオウム貝の[r]アップリケがついたエプロン！[wait tVoice]
+[k]
+
+[charaFace G 10]
+
+＠ネモ・ベーカリー
+[tVoice ValVoice_405300 0_V140]
+女の子らしいお洋服も嬉しいけど、[wait tVoice]
+[k]
+
+
+＠ネモ・ベーカリー
+[tVoice ValVoice_405300 0_V150]
+わたしは料理の時がいちばん楽しいって[r]分かってくれてるの、とっても嬉しい……！[wait tVoice]
+[k]
+
+
+[messageOff]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.4 0,-50]
+[wt 0.4]
+
+＠ネモ・エンジン
+[tVoice ValVoice_405300 0_V160]
+アタシは新しいブーツ！[r]ちょうどスペアが欲しかったところでさー！[wait tVoice]
+[k]
+
+[charaFace H 3]
+
+＠ネモ・エンジン
+[tVoice ValVoice_405300 0_V170]
+『ばっかもん、この緊急時に[r]　クリスマスのサンタなんてやってる場合か！』[wait tVoice]
+[k]
+
+[charaFace H 5]
+
+＠ネモ・エンジン
+[tVoice ValVoice_405300 0_V180]
+なんて思ったけど、考えを改めたぜ！[r]プレゼントをもらうのってこんな気持ちなんだな！[wait tVoice]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 0,-50]
+
+＠ネモ・ベーカリー
+[tVoice ValVoice_405300 0_V190]
+はい！　唐突ですが、ネモ・ベーカリー！[r]この喜びを歌にしたいと思います！[wait tVoice]
+[k]
+
+
+＠ネモ・ベーカリー
+[tVoice ValVoice_405300 0_V200]
+聴いてください。[r]『アドベンチャーなパンケーキの歌』です！[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaFadein J 0.4 -100,-50]
+[charaFadein L 0.4 -100,-300]
+[charaMove J 0,-50 10.0]
+[charaMove L 0,-300 10.0]
+
+[effect bit_talk_sing_notes]
+
+[subRenderFadein #A 0.4 650,-100]
+[subRenderMove #A 550,-100 0.5]
+
+[subRenderFadein #B 0.4 -650,-100]
+[subRenderMove #B -550,-100 0.5]
+[charaFace J 7]
+
+
+＠ネモ・ベーカリー
+[tVoice ValVoice_405300 0_V210]
+マスターとパンケーキつくる♪[twt 3.0][r]パンケーキ、マスター食べる♪[twt 3.0][charaFadeout G 0.1][charaFadeout O 0.2][charaFadeout M 0.2][twt 0.2][charaFace K 1][charaFadeinFSL K 0.3 150,50][charaFace N 1][charaFadeinFSR N 0.3 -130,50][r]幸せのクリスマスケーキ♪[twt 2.3][r]メリー・クリスマスケーキ♪[wait tVoice]
+[k]
+
+
+
+
+
+
+
+[messageOff]
+[effectStop bit_talk_sing_notes]
+
+[charaFadeout L 0.7]
+[charaFadeout J 0.7]
+[subRenderFadeout #A 0.5]
+[subRenderMove #A 650,-100 0.7]
+[subRenderFadeout #B 0.5]
+[subRenderMove #B -650,-100 0.7]
+
+[wt 1.0]
+
+[charaFadeout N 0.1]
+[charaFadeout K 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠ネモ・マリーンＡ
+[tVoice ValVoice_405300 0_V220]
+今日はバレンタインだけど、[r]ボクたちサンタだからこれでいいのさー！[wait tVoice]
+[k]
+
+＠ネモ・マリーンＡ
+[tVoice ValVoice_405300 0_V230]
+そうだよね、キャプテン！[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+[wt 0.3]
+
+[charaCrossFade A 1098283050 0 0.2]
+[cueSe Servants_103700 bac954]
+[seVolume bac954 0 0.6]
+[wait charaCrossFade A]
+[wt 0.6]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V240]
+もちろんだ。プロフェッショナルなサンタは[r]いつであろうとサンタであるコトを忘れない。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaCrossFade A 1098283040 0 0.2]
+[cueSe SE_23 23_ad1321]
+[wait charaCrossFade A]
+[wt 0.6]
+
+
+[charaFace A 2]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V250]
+各員の思いは確認した。[r]これより最重要任務に移る。[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V260]
+毎回全員で押しかけては迷惑だ、という[r]各員の意見を尊重し、[wait tVoice]
+[k]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V270]
+ここはリーダーとしてスマートかつクールに、[r]マスターのハートをつり上げてこよう。[wait tVoice]
+[k]
+
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth B 2]
+[charaDepth H 3]
+[charaDepth E 4]
+[charaDepth F 5]
+
+[charaTalk off]
+[charaFace G 2]
+[charaFadein G 0.1 -420,-50]
+[charaFace H 1]
+[charaFadein H 0.1 -190,-50]
+[charaFace B 2]
+[charaFadein B 0.1 20,-50]
+[charaFace F 1]
+[charaFadein F 0.1 210,-50]
+[charaFace E 1]
+[charaFadein E 0.1 420,-50]
+
+＠ネモたち
+[tVoice ValVoice_405300 0_V280]
+アイアイ、キャプテン！[r]いってらっしゃーーーい！[wait tVoice]
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_94 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout H 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+
+[pictureFrame]
+[wt 0.5]
+
+[branchQuestClear lblClear02b 3000628]
+
+[branch lblClear02a]
+
+
+[label lblClear02b]
+
+
+[scene 157900]
+
+[branch lblConf02]
+
+[label lblClear02a]
+
+[scene 108400]
+
+[label lblConf02]
+
+[charaSet A 1098283050 1 ネモサンタ]
+
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[se ade12]
+[wt 1.5]
+
+？1：どうぞー！
+
+？！
+
+[se ad8]
+[wt 1.2]
+
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.4 1]
+[wt 0.8]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V290]
+やあ。本日は晴天なり。おひがらも快晴なり。[bgm BGM_XMAS_2016 0.1][r]いい子にしていたかい、マスター。[wait tVoice]
+[k]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V300]
+たくさんのプレゼントをもらったお返しに[r]サンタクロースがやって来たよ。[wait tVoice]
+[k]
+
+？1：やった！　あれ、でも他のネモたちは？
+
+？！
+
+[charaFace A 4]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V310]
+今回は自重するって。全員で来ても良かったけど、[r]毎回そうだと芸が無いからね。[wait tVoice]
+[k]
+
+
+[messageOff]
+
+[charaCrossFade A 1098283040 0 0.2]
+[cueSe SE_23 23_ad1321]
+[wait charaCrossFade A]
+[wt 0.6]
+
+[charaFace A 2]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V320]
+みんなにはその言葉だけで充分だ。[r]今ごろ、嬉しくてクリスマスの歌を三番まで歌ってるさ。[wait tVoice]
+[k]
+
+[charaFace A 13]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V330]
+正直なところ、僕も参加できないのが残念だ。[r]せっかくアビーに教えてもらったのにね。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V340]
+船長だから合唱するのは無理だけど、[r]合いの手くらいは入れたかったな。[wait tVoice]
+[k]
+
+？1：船長だと合唱できない[&:の]？
+
+
+[charaFace A 9]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V350]
+うん。それはそう。[r]僕まで浮かれたら英霊ネモの名が[#廃:すた]る。[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V360]
+ネモは厳しく、冷徹で頼れる海の男だからね。[wait tVoice]
+[k]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V370]
+サンタ服だとトリトンの性質が大きくなるけど、[r]そこだけはちゃんと守りたい。[wait tVoice]
+[k]
+
+
+？2：そっか。キャプテンらしい
+
+[charaFace A 2]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V380]
+ご理解痛み入る。[r]でもちゃんと楽しんでいるから安心して。[wait tVoice]
+[k]
+
+
+[branchQuestClear lblClear03b 3000628]
+
+[branch lblClear03a]
+
+[label lblClear03b]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V390]
+この服装だと普段より気が楽になるからね。[r]ボーダーの舵取りはムニエルに任せてある。[wait tVoice]
+[k]
+
+[branch lblConf03]
+
+[label lblClear03a]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V400]
+この服装だと普段より気が楽になるからね。[r]ノーチラスの舵取りはムニエルに任せてある。[wait tVoice]
+[k]
+
+
+[label lblConf03]
+
+？！
+
+[messageOff]
+
+[charaCrossFade A 1098283050 0 0.2]
+[cueSe Servants_103700 bac954]
+[seVolume bac954 0 0.6]
+[wait charaCrossFade A]
+[wt 0.6]
+
+
+[charaFace A 5]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V410]
+……と、いけない。[r]僕個人の話をしに来たワケじゃなかった。[wait tVoice]
+[k]
+
+
+[charaFace A 7]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V420]
+時間はある？　あるなら甲板に出よう。[r]実物じゃなくシミュレーターだけど。[wait tVoice]
+[k]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V430]
+一度きりの任務だ。ロケーションには[#拘:こだわ]らないとね。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_XMAS_2016 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+
+[branchQuestClear lblClear04b 3000628]
+
+[branch lblClear04a]
+
+[label lblClear04b]
+
+[scene 208800]
+[sceneSet L 208800 1]
+[charaScale L 1.5]
+[sceneSet C 208800 1]
+[charaScale C 1.3]
+
+[branch lblConf04]
+
+[label lblClear04a]
+
+[scene 208900]
+[sceneSet L 208900 1]
+[charaScale L 1.5]
+[sceneSet C 208900 1]
+[charaScale C 1.2]
+
+
+[label lblConf04]
+
+[charaSet A 1098283040 1 ネモサンタ]
+[charaSet B 1098283050 1 ネモサンタ_拡大]
+[charaScale B 1.3]
+
+[wt 0.5]
+
+[charaFadein L 0.1 100,-470]
+[charaMove L -100,-470 10.0]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 3.5]
+
+[charaFadeout L 1.0]
+[wt 1.5]
+
+[bgm BGM_CHRISMAS_1 0.1]
+
+？1：星空が[&すごーーい:きれーーい]！
+
+？！
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V440]
+ああ。今だけは聖夜の気分でいよう。[r]バレンタインには申し訳ないけどね。[wait tVoice]
+[k]
+
+[se ade422]
+[charaMove A 0,10 0.3]
+[charaMoveScale A 1.1 0.3]
+
+[seStop ade422 0.7]
+
+[branchQuestClear lblClear05b 3000628]
+
+[branch lblClear05a]
+
+
+[label lblClear05b]
+
+[charaFace A 3]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V450]
+はい、ホットコーヒー。[r]空は寒いからね。体を温めるといい。[wait tVoice]
+[k]
+
+[branch lblConf05]
+
+[label lblClear05a]
+
+[charaFace A 3]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V460]
+はい、ホットコーヒー。[r]海の上は寒いからね。体を温めるといい。[wait tVoice]
+[k]
+
+
+[label lblConf05]
+
+[charaFace A 13]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V470]
+[line 3]さて。[r]それじゃあ、改めて。[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V480]
+今年も１年間、おつかれさま。[r]マスターとしてよく頑張ったね。はなまるだ。[wait tVoice]
+[k]
+
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V490]
+サーヴァントとして最も誇らしい事は[r][#佳:よ]いマスターと共に戦える事だけど[line 3][wait tVoice]
+[k]
+
+
+[charaFace A 3]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V500]
+今日はそれ以上の気持ちをもらえたよ。[r]あんなにたくさんの贈り物を、ありがとう。[wait tVoice]
+[k]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V510]
+そのお返しとして、これを。[r]他のサーヴァントたちに比べたら些細なものだろうけど。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+[se bas2]
+
+[charaFace I 0]
+[charaFadein I 0.5 0,-70]
+[charaFadeout A 0.5]
+
+[wt 2.5]
+
+？1：これは……
+？2：ギフトカード？
+
+？！
+
+[charaFadeout I 0.4]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[charaCrossFade A 1098283050 0 0.2]
+[cueSe Servants_103700 bac954]
+[seVolume bac954 0 0.6]
+[wait charaCrossFade A]
+[wt 0.6]
+
+[charaFace A 1]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V520]
+そう。トリトンサービスのギフトカード。[r]もちろんただのカードじゃない。[wait tVoice]
+[k]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V530]
+それは今回のクリスマスの行程で得た、[r]ちょっと特別なものでね。[wait tVoice]
+[k]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V540]
+[#時間保存:タ イ ム ロ ッ ク]に守られた、[r]『使うまでは決して失われない』特性を持つ。[wait tVoice]
+[k]
+
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V550]
+ようするにスペシャルなカードってコト。[r]それはどんな事があっても君の手元に残り続ける。[wait tVoice]
+[k]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V560]
+この先、必要なものが出来た時、[r]そのカードに場所と品物を書いて。[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V570]
+ネモサンタは安全・確実な輸送に関しては[r]最優のサンタだ。[wait tVoice]
+[k]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V580]
+トラックに入るものなら必ず届けに行くよ。[r]たとえ、世界がどんな状態であってもね。[wait tVoice]
+[k]
+
+？1：[line 3]そっか
+？2：ありがとう、サンタさん
+
+？！
+
+[messageOff]
+
+[wt 0.5]
+
+[cueSe SE_23 23_ad1321]
+[charaCrossFade A 1098283040 0 0.2]
+[wait charaCrossFade A]
+[wt 0.8]
+
+
+[charaFace A 4]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V590]
+こちらこそ、マスター。[r]今年のバレンタインは僕たちにとっても宝物だ。[wait tVoice]
+[k]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V600]
+こうして一緒にコーヒーを飲めたのも。[r]ふふ。キャプテンだけの役得だね。[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V610]
+それじゃあもう少し星空を見ていようか。[r]上着なら用意してある。はい、これ着て。[wait tVoice]
+[k]
+
+[messageOff]
+
+[se ad77]
+[wt 1.5]
+
+？1：赤いジャケット……？
+？2：あ、サンタ服だ！
+
+？！
+
+[messageOff]
+
+[wt 0.5]
+
+[charaCrossFade A 1098283050 0 0.2]
+[cueSe Servants_103700 bac954]
+[seVolume bac954 0 0.6]
+[wait charaCrossFade A]
+[wt 1.0]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth A 1]
+[charaDepth C 2]
+[charaDepth B 3]
+
+[charaFace B 9]
+[charaFadein B 1.0 -40,10]
+[charaFadein C 1.0 -40,-310]
+
+[charaMove B 0,10 4.0]
+[charaMove C 0,-310 4.0]
+
+[wt 1.0]
+
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V620]
+そう。クリスマスでは少ししか[r]配達をさせてあげられなかったけど……[wait tVoice]
+[k]
+
+[charaFace B 11]
+＠ネモサンタ
+[tVoice ValVoice_405300 0_V630]
+今日はそのリベンジだ、観念してマスター。[r]人目がないなら、ペアルックも悪くないでしょ？[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_CHRISMAS_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

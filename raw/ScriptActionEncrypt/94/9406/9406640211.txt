@@ -1,0 +1,704 @@
+
+
+＄94-06-64-02-1-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 98006000 1 謎のエネミー]
+[charaSet B 1098231900 1 ？？？]
+[charaSet C 3027001 1 メドゥーサ]
+[charaSet D 9008000 1 アストライア]
+[charaSet E 98021000 1 商人の男]
+[charaSet F 1098227200 1 酒場の主]
+[charaSet G 1098206500 1 アムール]
+
+[sceneSet H 131201 1]
+[sceneSet I 131201 1]
+
+[charaSet J 1048000 1 サンタカルナ]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+
+[charaPut S 2000,2500]
+[charaEffect S bit_talk_42 0,0 H]
+
+[scene 20731]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[overlayFadein C 0.1 1]
+[wt 0.2]
+
+[charaPut S 1]
+[cueSe Battle bac96]
+[se adm51]
+[fowardEffect bit_talk_throwing 0,0 H]
+[charaMove C 0,-8 0.1]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_throwing]
+[charaPut S 2000,2500]
+[charaEffectDestroy S bit_talk_42]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[cueSe Servants_104800 m42602]
+[fowardEffect bit_talk_gram_slash_04_fs 0,0 V]
+[charaMove B 0,8 0.1]
+[wt 0.3]
+
+[cueSe Servants_104800 m42603]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_gram_slash_04_fs]
+[effect bit_talk_14]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 1]
+[charaFadeout B 0]
+[charaShake A 0.03 4 5 0.6]
+[wt 1.0]
+
+＠怪物
+…………！！　…………！！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.5]
+[wt 0.1]
+
+[se ad52]
+[seVolume ad52 0 0.4]
+[se ade59]
+[seVolume ade59 0 0]
+[charaSpecialEffect A enemyErasure 0,0 1.8]
+[wt 0.2]
+[seVolume ade59 0.3 0.5]
+[wt 0.7]
+[seStop ade59 1.2]
+[wt 0.5]
+[se adm18]
+[seVolume adm18 0 0.6]
+[wt 0.2]
+[seStop adm18 0.4]
+[wait charaSpecialEffect A]
+[wt 1.2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.6]
+
+[se ad984]
+[charaCrossFade B 10011000 0 0.4]
+[wait charaCrossFade B]
+[wt 0.7]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠？？？
+ふぅっ……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠メドゥーサ
+エネミー消滅……いえ、[r]地面に吸い込まれた風にも見えましたが。
+[k]
+
+＠メドゥーサ
+今の生き物は一体……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アストライア
+そこの、あなた……
+[k]
+
+＠アストライア
+礼を言います、助かりました。[r]ですが……なぜ敵対していた[#私:わたくし]たちを？
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠？？？
+なぜ、と聞かれると私も困りますが……
+[k]
+
+[charaFace B 5]
+[bgmStop BGM_EVENT_77 1.5]
+
+＠？？？
+！　失礼、話は後に。
+[k]
+
+
+[messageOff]
+[charaFadeout B 0.1]
+
+[se ad132]
+[wt 1.0]
+
+[wipeout leftToRight 0.6 1.0]
+[seStop ad132 0.6]
+[wait wipe]
+
+[wt 0.4]
+
+[wipein rightToLeft 0.6 1.0]
+[wait wipe]
+[wt 0.2]
+
+[se ade501]
+[wt 0.4]
+
+[se ade248]
+[wt 0.4]
+[seStop ade248 0.1]
+[wt 0.2]
+
+[se ad1049]
+[wt 1.0]
+[seStop ad1049 0.1]
+[wt 0.2]
+
+[se ad775]
+[wt 0.8]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+[charaEffect E bit_talk_curse]
+[wt 0.8]
+＠商人の男
+う……うぅ……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 2000,2500]
+[charaEffectStop E bit_talk_curse]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠？？？
+間に合いませんでしたか……[r]やられましたね、これは。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠メドゥーサ
+もしや……魔力を吸われたのですか？[r]先ほどの、アストライアのように。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠アストライア
+確かに、あの怪物と組み合った際……
+[k]
+
+＠アストライア
+一度に大量の魔力を失うような、[r]そんな感覚がありました。
+[k]
+
+＠アストライア
+あれは……何だったんですの？
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠？？？
+先ほどは魔力と言いましたが、[r]正しくは、そうですね……
+[k]
+
+＠？？？
+労働意欲……いえ、[r]やる気、と言うべきでしょうか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠アストライア
+……[r]……
+[k]
+
+＠アストライア
+[#ガッツ:や る 気]？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠？？？
+はい。あなたはこの人と同様に、[r][#やる気]を奪われた状態です。
+[k]
+
+？1：なんだか漠然としてますね……
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠アストライア
+やる気……生命力、いえ、[r]生存エネルギーと言うべきかしら。
+[k]
+
+[charaFace D 4]
+＠アストライア
+言われてみると、こう、[r]いつもの調子が戻りませんが……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠？？？
+こうなるとしばらくは戻りません。[r]大人しく休んでいるといいでしょう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠メドゥーサ
+アナタはずいぶんと、あの怪物について[r]詳しいようですが……
+[k]
+
+＠メドゥーサ
+私たちの目的とも関係がありそうです。[r]お話を聞かせてもらえるでしょうか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠？？？
+……[r]……
+[k]
+
+＠？？？
+あなた方には……話してもいいでしょう。[r]悪人ではないと判断しました。
+[k]
+
+
+？1：でも、その前に……
+？2：名前を聞いてもいいかな？
+
+？！
+
+＠？？？
+私は……
+[k]
+
+[charaFace B 4]
+＠？？？
+……[r]……
+[k]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+[charaFace B 0]
+＠？？？
+いえ、私はバゼット。[r]バゼット・フラガ・マクレミッツ。
+[k]
+
+＠B：バゼット
+あの町に[#用心棒:アルバイト]として雇われた、[r]はぐれサーヴァント。
+[k]
+
+
+[charaFace B 7]
+＠B：バゼット
+クラスはボクサー。[r][#ボクサーのサーヴァント]です。
+[k]
+
+[messageOff]
+[se ade395]
+[se ade126]
+[charaPut S -40,-4]
+[charaEffect S bit_talk_starshine]
+[wt 1.6]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaEffectDestroy S bit_talk_starshine]
+
+[charaTalk off]
+[charaDepth C 6]
+[charaDepth D 4]
+[charaDepth J 2]
+
+[charaFace C 4]
+[charaFace D 4]
+[charaFadeinFSR C 0.1 2]
+[charaFadeinFSL D 0.1 0]
+[wt 1.2]
+
+＠[%1]＆アストライア＆メドゥーサ
+……[r]……
+[k]
+
+
+[messageOff]
+[charaPut J 1]
+[charaFace J 1]
+[charaFadeTime J 0.8 0.6]
+[wt 1.0]
+
+[se ade395]
+[se ade126]
+[charaPut S 25,155]
+[charaEffect S bit_talk_starshine]
+[wt 1.6]
+
+＠[%1]＆アストライア＆メドゥーサ
+（あのサンタと同類だ、この人……！！）
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout J 0.1]
+
+
+
+[charaSet B 10011000 1 バゼット]
+
+[se ad413]
+[seVolume ad413 0 0]
+
+[scene 131201]
+[wt 1.0]
+
+[charaScale H 1.8]
+[charaScale I 1.8]
+
+[charaDepth H 4]
+[charaDepth I 5]
+
+[charaFadein H 0.1 300,-180]
+[wt 0.5]
+
+[charaMove H 450,-180 4.5]
+
+[seVolume ad413 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_92 2.0]
+[wt 2.0]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 1.0 -520,-250]
+
+[charaMove I -520,-100 4.5]
+[wt 1.0]
+[charaFadeout H 1.0]
+[wt 3.0]
+
+[charaFadeout I 1.0]
+[seStop ad413 1.0]
+[wt 1.4]
+
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アストライア
+ふうん。
+[k]
+
+＠アストライア
+あのような怪物がうろついているなら、[r]さぞかし沈んだ空気かと思いきや……
+[k]
+
+
+＠アストライア
+想像とはまるで違って、[r]ずいぶんと活気がありますのね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠メドゥーサ
+はい。[r]子供たちも元気いっぱいです。
+[k]
+
+＠メドゥーサ
+怪物の脅威にさらされているようには、[r]とても見えませんね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠バゼット
+先程の男性は医者の元へ預けてきました。[r]後の事は任せておくとして……
+[k]
+
+＠バゼット
+この先に、雇われている間の宿として、[r]部屋を提供された酒場があります。
+[k]
+
+＠バゼット
+詳しい事情については[r]そちらに移動してからにしましょう。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_92 1.0 0.5]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 114900]
+[wt 0.5]
+
+[se ad93]
+[wt 1.0]
+
+[bgm BGM_EVENT_92 1.0 1.0]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+[wt 0.4]
+＠酒場の主
+おう、先生ご苦労さん！[r]また一頭やっつけたんだってなあ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠バゼット
+いえ、また犠牲を出してしまいました。[r]これでは意味がありません。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠酒場の主
+ハハッ、気にすんなって。[r]町まで入ってこなきゃ、それで充分さ。
+[k]
+
+＠酒場の主
+ところで……後ろの[&兄さん:嬢ちゃん]方も、[r]アンタの知り合いかい？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠バゼット
+ええ、そんなところです。
+[k]
+
+＠バゼット
+急な話で申し訳ないのですが、[r]この方たちが泊まれる部屋はありますか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠酒場の主
+ああ、そりゃ構わねえが……[r]意外と知り合い多いんだな、アンタ。
+[k]
+
+＠酒場の主
+ほれ、あっちにも一人、[r]アンタらをお待ちかねだぜ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_92 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠バゼット
+もう一人……？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+
+
+＠？？？
+おや、遅かったですね皆さん。
+[k]
+
+[messageOff]
+[se ad95]
+[wt 0.9]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+[seStop ad95 0.1]
+[wt 0.6]
+
+＠アムール
+見知らぬ土地でただ一人きり……[r]心細く思っていたところです。
+[k]
+
+
+[charaFace G 3]
+＠アムール
+あ、店主。[r]食事の会計はこちらの方々に。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_146 0.1]
+
+[charaTalk off]
+[charaDepth D 4]
+[charaDepth C 6]
+
+[charaFace D 2]
+[charaFace C 2]
+[charaFadeinFSL D 0.1 0]
+[charaFadeinFSR C 0.1 2]
+[wt 1.4]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFace D 2]
+[charaFace C 2]
+[charaFadeinFSL D 0.1 0]
+[charaFadeinFSR C 0.1 2]
+＠[%1]＆アストライア＆メドゥーサ
+……[r]……
+[k]
+
+＠[%1]＆アストライア＆メドゥーサ
+[f large]な[messageShake 0.05 4 3 0.6]んでいるんですのー！？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠バゼット
+……[r]……
+[k]
+
+＠バゼット
+変わった趣味の方ですね……？
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_146 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,317 @@
+
+
+＄91-11-03-02-3-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11003001 1 ジャンヌ・オルタ]
+
+[branchQuestClear lblClear00b_dvn 3000303]
+[label lblClear00a_dvn]
+[charaSet B 98111500 1 ダ・ヴィンチ]
+[flag FLG_DVN 0]
+[branch lblConf00_dvn]
+[label lblClear00b_dvn]
+[charaSet B 1098124510 1 ダ・ヴィンチ]
+[flag FLG_DVN 1]
+[label lblConf00_dvn]
+
+[charaSet C 98006300 1 魔術師]
+
+[charaSet D 98115000 1 通信用ノイズ1]
+[charaDepth B 1]
+[sceneSet E 115000 1]
+[charaScale E 1.2]
+[charaDepth E 2]
+[charaSet F 98115000 1 エフェクト]
+
+[charaPut D 1200,1200]
+[charaEffect D bit_talk_10_LowLevel]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+[scene 115000]
+[se ad800 0]
+[seVolume ad800 1.5 0.7]
+[fadein black 1.5]
+[wait fade]
+
+[seStop ad800 1.0]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+[bgm BGM_EVENT_81 0.1]
+
+＠魔術師
+……来たか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+[line 3]最初に一つ、伝えておきます。
+[k]
+
+＠ジャンヌ・オルタ
+アンタの名前にも出自にも動機にも、[r]全く興味はないわ。
+[k]
+
+＠ジャンヌ・オルタ
+とっとと首を差し出しなさい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠魔術師
+手厳しいな。[r]無論、問題ないとも。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+は？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠魔術師
+元より、私の夢は叶っている。
+[k]
+
+＠魔術師
+神話の英雄に拝謁し、[r]伝説の怪物に巡り会えた。
+[k]
+
+＠魔術師
+これが夢でなくて何だという。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+下にいる連中なら、[r]あれはただの[#残滓]に過ぎないわよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠魔術師
+それで充分だ。[r]私にとっては[line 3]
+[k]
+
+＠魔術師
+煌めくような時間だった。[r]そして最後の夢を叶えることにする。
+[k]
+
+？1：最後の夢……？
+？！
+
+＠魔術師
+英雄にも怪物にも遭遇できた。[r]ならば、最後は神に決まっている。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+神霊の召喚？[r]できる訳ないでしょ、そんなの。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠魔術師
+何事もやる前から諦めるのは、[r]現実的な者の悪い癖だ。
+[k]
+
+＠魔術師
+私はいつだって、夢を見ている。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.5]
+[se ad240]
+[fowardEffect bit_talk_35]
+[charaShake C 0.04 3 3 0.4]
+[wt 1.5]
+
+[subCameraOn]
+[charaLayer E sub]
+[charaLayer A sub]
+[charaDepth E 1]
+[charaDepth A 2]
+[charaScale A 1.3]
+[charaScale E 1.3]
+
+[charaFace A 5]
+[charaFadein A 0.1 -110,340]
+[charaFadein E 0.1 -220,-15]
+[effect bit_talk_ppl_fog03]
+[charaEffect F bit_talk_evil_spirits01]
+[se ad1026]
+
+[subCameraFilter mask cut359_mask09]
+[subRenderFadeinFSSideR 0.3 550,-350]
+[subRenderMoveFSSideR 450,-350 0.3]
+[wt 0.5]
+
+＠ジャンヌ・オルタ
+……！
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadeout 0.4]
+[wt 0.4]
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[subCameraOff]
+[charaLayer E normal]
+[charaLayer A normal]
+[charaScale A 1.0]
+
+[shake 0.03 3 3 5.5]
+[se ade393 0.4]
+[wt 1.5]
+[cueSe SE_22 22_ade709]
+[fowardEffect bit_talk_blackfire_all]
+[wt 1.0]
+[charaSpecialEffect C darkEnemyErasure 1 1.2]
+[wt 0.5]
+[fadeout 16071d 1.0]
+[fowardEffectStop bit_talk_blackfire_all]
+
+[se ad130 0.4]
+[se ad732]
+[seStop ade393 2.5]
+[wt 1.5]
+[bgm BGM_BATTLE_32 0.1]
+[effectDestroy bit_talk_ppl_fog03]
+[charaEffectDestroy F bit_talk_evil_spirits01]
+[wt 1.0]
+
+＠魔術師
+そら……見ろ……夢は……叶うものだ……。
+[k]
+
+[messageOff]
+[fowardEffectDestroy bit_talk_blackfire_all]
+[effect bit_talk_charge_ppl02]
+[cueSe SE_22 22_ad1169 0]
+[seVolume 22_ad1169 1.0 0.4]
+[se ade446 0]
+[seVolume ade446 1.0 0.2]
+[fadein 16071d 1.0]
+[wait fade]
+[wt 0.5]
+[wt 1.0]
+[effectDestroy bit_talk_charge_ppl02]
+[seStop 22_ad1169 1.0]
+[seStop ade446 1.0]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk on]
+[charaTalk B]
+[branch lblClear01b_dvn FLG_DVN 1]
+[label lblClear01a_dvn]
+[charaFace B 2]
+[charaFadein B 0.1 0,-90]
+[branch lblConf01_dvn]
+[label lblClear01b_dvn]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+[label lblConf01_dvn]
+
+＠ダ・ヴィンチ
+は……はぁ！？[r]霊基反応、あり！
+[k]
+
+＠ダ・ヴィンチ
+嘘だろ、神霊を召喚したのか……！？[r]いや、これはただの自然現象に近い……。
+[k]
+
+[branch lblClear02b_dvn FLG_DVN 1]
+[label lblClear02a_dvn]
+[charaFace B 5]
+[branch lblConf02_dvn]
+[label lblClear02b_dvn]
+[charaFace B 21]
+[label lblConf02_dvn]
+
+＠ダ・ヴィンチ
+でも、急速に魔力を集めつつある。[r]霊脈を枯らしてしまう勢いだ！
+[k]
+
+＠ダ・ヴィンチ
+放置しても消え去るだろうけど。[r]それまでに、どれだけの被害をもたらすか……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+……放置しておいてもいいけど、[r]消えるまでに被害は免れない、か。
+[k]
+
+＠ジャンヌ・オルタ
+それならとっとと消しましょう。[wt 0.7][charaFace A 2][r]ヤツの夢を、圧し潰す！
+[k]
+
+？1：分かった！
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_32 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,846 @@
+
+＄94-13-93-02-1-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1010000 1 エリザベート]
+[charaSet B 1098312800 1 蛇竜人]
+[charaSet C 1098257310 1 ダ・ヴィンチ]
+[charaSet D 3057000 1 ビショーネ]
+[charaSet E 4001000 1 メドゥーサ]
+[charaSet F 5043000 1 アスクレピオス]
+[charaSet G 1062001 1 黒姫]
+[charaSet H 1098257810 1 マシュ]
+[charaSet I 1098314800 1 ドラゴン]
+[charaSet J 1098313000 1 捕食竜]
+
+[charaSet K 98115000 1 エフェクト用]
+[charaPut K 2000,2000]
+[charaEffect K bit_talk_10_LowLevel_depth]
+
+[imageSet L black_fade_re 1]
+[charaScale L 2.0]
+[imageSet M black_fade_re 1]
+[charaScale M 2.0]
+
+[sceneSet N 238800 1]
+[charaScale N 1.4]
+[sceneSet O 238801 1]
+[charaScale O 1.2]
+
+[imageSet P black_fade_re 1]
+[charaScale P 2.0]
+[imageSet Q black_fade_re 1]
+[charaScale Q 2.0]
+[sceneSet R 238801 1]
+[charaScale R 1.2]
+[charaSet S 98115000 1 エフェクト用]
+
+[cameraMove 0.1 0,0 1.01]
+
+[charaTalk depthOff]
+
+[charaDepth O 1]
+[charaDepth G 4]
+[charaDepth J 2]
+[charaDepth N 3]
+
+[charaDepth H 4]
+[charaDepth C 5]
+[charaDepth K 6]
+
+[charaDepth B 7]
+[charaDepth D 8]
+[charaDepth E 9]
+[charaDepth F 10]
+[charaDepth A 11]
+
+[charaDepth L 12]
+[charaDepth M 13]
+
+[charaScale G 1.4]
+
+
+[pictureFrame cut063_cinema]
+
+[scene 238800]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 0,-25]
+[charaFadein N 0.1 0,-420]
+
+[bgm BGM_EVENT_127 1.0]
+[fadein black 1.0]
+[wait fade]
+
+
+＠G：？？？
+[line 3]我が名は黒姫。[r]蛇王ザッハーク様の名代としてこの地に這い出す者。
+[k]
+
+[charaFace G 5]
+
+＠G：？？？
+見よ、[#此:これ]なるは[#彼:か]の偉大なる蛇王の一口二眼。[r]すなわち貴き王の舌なり、貴き王の牙なり！
+[k]
+
+
+＠G：？？？
+いざや問う、蛇たちよ！[r]王の[#贄:にえ]たらんとする者は[#何処:いずこ]か！
+[k]
+
+
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout N 0.1]
+[pictureFrame]
+
+[charaDepth G 1]
+[charaScale G 1.0]
+[charaScale N 1.2]
+
+[wt 0.2]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+何、あれ……！？[r]地面から出てきたように見えたけど！？
+[k]
+
+？1：とんでもなく大きな蛇と[line 3]
+？2：その上に立ってる、セーラー服の女の子……！？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠蛇竜人
+おいアンタら、何ぼーっとしてんだ、[r]喰われたいのか！？
+[k]
+
+[charaFace B 7]
+
+＠蛇竜人
+ああくそ、もう俺も逃げるの間に合わねぇ……[r]屋台の裏を貸してやるから、さっさと身を縮めろ！
+[k]
+
+[messageOff]
+[se ade408]
+[charaMove B 0,-10 0.3]
+[charaFadeout B 0.3]
+[wt 0.4]
+
+[charaPut K 1]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+向こうはこちらに気付いていないみたいだ。[r]ここはとりあえずお言葉に甘えよう。急いで！
+[k]
+
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut K 2000,2000]
+
+[subCameraOn 1]
+[subCameraFilter #A normal]
+
+[charaLayer A sub #A]
+[charaLayer D sub #A]
+[charaLayer F sub #A]
+[charaLayer E sub #A]
+[charaLayer B sub #A]
+[charaLayer C sub #A]
+[charaLayer H sub #A]
+[charaLayer K sub #A]
+
+[charaLayer N sub #A]
+[charaLayer L sub #A]
+[charaLayer M sub #A]
+
+[subRenderScale #A 1.02]
+
+[charaFadein N 0.1 0,-250]
+[charaFadein L 0.1 0,-1000]
+[charaFadein M 0.1 0,200]
+[wt 0.1]
+[subRenderFadein #A 0.4 0,0]
+[charaMove N 0,-230 0.5]
+[wt 1.0]
+[se ade46]
+[bgm BGM_EVENT_127 1.0 0.5]
+
+[charaScale D 1.1]
+[charaScale A 1.1]
+[charaScale E 1.1]
+[charaScale F 1.1]
+[charaScale H 1.1]
+[charaScale C 1.1]
+[charaScale B 1.1]
+
+[charaTalk off]
+[charaFace D 6]
+[charaFadein D 0.4 -300,-70]
+[charaMove D -300,-90 1.0]
+
+[charaFace A 5]
+[charaFadein A 0.4 300,-70]
+[charaMove A 300,-90 1.0]
+[wt 2.0]
+
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout A 0.1]
+[charaFace D 21]
+[charaFadein D 0.1 0,-50]
+[wt 0.2]
+
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[se ad460]
+
+[charaTalk off]
+[charaFace J 0]
+[charaFadein J 0.4 1]
+[wt 1.8]
+
+[subRenderFadein #A 0.4 0,0]
+[wt 0.4]
+
+[charaFadeout J 0.1]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠ビショーネ
+ひええ、とっても怖そうな蛇です……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace B 5]
+[charaFadein B 0.1 0,-150]
+
+＠蛇竜人
+実際怖いに決まってるだろ。[r]あれはザッハーク王の一部分みたいなもんだぞ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFace E 13]
+[charaFadein E 0.1 0,-120]
+
+＠メドゥーサ
+それがここに来ている。
+[k]
+
+＠メドゥーサ
+そして貴方は蛇王には毎日の食料が[r]必要だと言いましたね。つまり[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaFace B 3]
+[charaFadein B 0.1 0,-150]
+
+＠蛇竜人
+ああ。あれは捕食竜アルナワーズ。[r]姫がそう呼んでるのを聞いただけだが。
+[k]
+
+＠蛇竜人
+日々の食事を摂るために、蛇王が[r]俺たちを喰うために送り込んでくるもの。
+[k]
+
+＠蛇竜人
+独立した口、みたいなモンだ……！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+[wt 1.8]
+
+[subRenderFadein #A 0.4 0,0]
+[wt 0.4]
+
+＠アスクレピオス
+あの女は？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaFace B 3]
+[charaFadein B 0.1 0,-150]
+
+＠蛇竜人
+言ってただろ？[r]あまり城から動かない蛇王の名代……
+[k]
+
+＠蛇竜人
+この捕食行為が滞りなく行われるように見張ってる、[r]現地監督官みたいな姫さ。
+[k]
+
+＠蛇竜人
+命乞いとかは無駄だぜ。[r]あれはあれでおっかねえからよ……！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[wt 0.6]
+
+[bgmStop BGM_EVENT_127 1.5]
+
+[charaTalk G]
+[charaFace G 15]
+[charaFadein G 0.1 1]
+
+＠黒姫
+……名乗り出る者はなし、ですね。
+[k]
+
+＠黒姫
+ならばいつものように、[r]勝手に贄を選ぶまで[line 3]
+[k]
+
+[messageOff]
+[charaFadeout G 0.2]
+[se ad460]
+[wt 1.0]
+[cueSe SE_25 25_ade1156]
+
+
+[se ad728]
+[se ad640]
+[effect bit_talk_impactlanding -300,0]
+[shake 0.05 5 5 2.5]
+[wt 1.4]
+[se ad608]
+[wt 1.0]
+[se ad728]
+[se ad640]
+[effect bit_talk_impactlanding 300,0]
+[shake 0.05 5 5 2.5]
+[wt 2.5]
+
+[bgm BGM_EVENT_122 0.1]
+[charaFace B 1]
+[subRenderFadein #A 0.4 0,0]
+[wt 0.4]
+
+＠蛇竜人
+よ、よかった。[r]こっちには来なかったか……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFace D 21]
+[charaFadein D 0.1 0,-50]
+
+＠ビショーネ
+全然良くないようなー！？　向こうの町とか[r]建物が滅茶苦茶になってますけど！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace B 0]
+[charaFadein B 0.1 0,-150]
+
+＠蛇竜人
+静かにしてろよ……！
+[k]
+
+＠蛇竜人
+喰われなきゃなんでもいいだろ。[r]満腹になったら帰っていくんだしな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFace E 4]
+[charaFadein E 0.1 0,-120]
+
+＠メドゥーサ
+貴方たちにとっては、[r]この光景は日常的なことなのですね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaFace B 6]
+[charaFadein B 0.1 0,-150]
+[charaFadein O 0.1 50,-250]
+
+
+＠蛇竜人
+ああ。別の町に行くこともあるから[r]この目でいっつも見てるってわけじゃないが。
+[k]
+
+[charaFace B 5]
+
+＠蛇竜人
+毎日どこかでは行われてる光景のはずだぜ。
+[k]
+
+＠蛇竜人
+こうして隠れたり逃げたりは、[r]俺たちの日常的な習慣みたいなモンだ。
+[k]
+
+
+[messageOff]
+[fadeout black 0.7]
+[wait fade]
+[charaFadeout O 0.1]
+[subRenderFadeout #A 0.1]
+[scene 10000]
+[wt 0.1]
+[fadein black 0.1]
+[wait fade]
+
+[se ad754]
+[seVolume ad754 0 0]
+[seVolume ad754 0.5 0.4]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+
+[charaDepth R 1]
+[charaDepth S 2]
+[charaDepth P 9]
+[charaDepth Q 9]
+
+[se ad728]
+[se ad640]
+[fowardEffect bit_talk_impactlanding -300,0]
+[shake 0.05 5 5 2.3]
+[wt 1.4]
+[se ad608 0.5]
+[charaFadein P 0 -1100,-400]
+[charaFadein Q 0 600,-400]
+[charaFadein R 0.4 200,-160]
+[charaMove R 200,-180 4.0]
+[wt 2.0]
+[charaFadeout R 0.5]
+[wt 0.5]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[wt 0.5]
+[charaMove R 200,-180 0.1]
+
+[se ad728]
+[se ad640]
+[fowardEffect bit_talk_impactlanding 300,0]
+[shake 0.05 5 5 2.3]
+[wt 1.4]
+[se ad608 0.5]
+[charaFadein P 0 -600,-400]
+[charaFadein Q 0 1100,-400]
+[charaFadein R 0.4 -50,-200]
+[charaMove R -50,-180 4.0]
+[wt 2.0]
+[charaFadeout R 0.5]
+[wt 0.5]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[wt 0.5]
+[charaMove R 200,-180 0.1]
+
+[se ad728]
+[se ad640]
+[fowardEffect bit_talk_impactlanding 0,0]
+[shake 0.05 5 5 2.8]
+[wt 1.4]
+[se ad608]
+[charaFadein R 0.4 0,-200]
+[wt 2.6]
+[charaFadeout R 0.5]
+[wt 1.0]
+[charaMove R 200,-180 0.1]
+
+[seStop ad754 1.5]
+[subRenderFadein #A 0.4 0,0]
+[wt 0.8]
+
+＠アスクレピオス
+ふん。[r]これは[line 3]ふざけた習慣だ。
+[k]
+
+＠アスクレピオス
+毎日[#嘔吐:おうと]するまで飯を食う。[r]毎日意識を失うまで酒を呑む。
+[k]
+
+＠アスクレピオス
+服も髪も縛らぬまま危険な機械を毎日扱う。[r]水をまったく飲まぬまま炎天下で毎日作業を行う。
+[k]
+
+[charaFace F 5]
+
+＠アスクレピオス
+人間を健康たらしめようとする医者として、[r]けっして看過すべきでない悪習というのは、ある。
+[k]
+
+
+＠アスクレピオス
+これはその中でも最悪の[#類:たぐい]のものだ。
+[k]
+
+＠アスクレピオス
+症例は多ければ多いほうがいいが、それは僕の目の前で[r]愚かに患者を作り出せという意味じゃない。
+[k]
+
+[bgmStop BGM_EVENT_122 1.5]
+
+？1：先生の気持ちはよくわかるよ
+？2：見過ごせない、よね
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut K 1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 0,-100]
+[bgm BGM_BATTLE_5 0.1]
+
+＠マシュ
+！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 34]
+[charaFadein C 0.1 0,-100]
+
+＠ダ・ヴィンチ
+まだ不確定要素が多すぎるのは事実なんだけど、[r]そうも言ってられない状況か。
+[k]
+
+[charaFace C 23]
+
+＠ダ・ヴィンチ
+新しい情報を得ることにも繋がるだろうし。[r]やるなら気をつけて！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut K 2000,2000]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-150]
+
+＠蛇竜人
+やるって何を……[r]おい、なんで出ていくんだ？
+[k]
+
+[charaFace B 7]
+
+＠蛇竜人
+まさか[line 3]やめとけって！
+[k]
+
+
+[messageOff]
+[se ad921]
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+[se ad769]
+[wt 1.5]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout N 0.1]
+
+[scene 238801]
+
+[charaLayer A normal]
+[charaLayer D normal]
+[charaLayer F normal]
+[charaLayer E normal]
+
+[charaLayer K normal]
+[charaLayer H normal]
+[charaLayer C normal]
+
+[charaScale A 1.0]
+[charaScale D 1.0]
+[charaScale F 1.0]
+[charaScale E 1.0]
+[charaScale H 1.0]
+
+[wt 0.8]
+
+[seStop ad769 0.6]
+[se ad671]
+[seVolume ad671 0 0.5]
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+[wt 0.2]
+
+？1：そこまで！
+？！
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠黒姫
+[line 3]貴方がたは。
+[k]
+
+＠黒姫
+贄として名乗り出てきた……[r]というわけでは、なさそうですね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+逆よ逆。それを止めに来たのよ、[r]勇者らしくね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+そう、らしいです、会社の方針としては！
+[k]
+
+＠ビショーネ
+いえ、わたし個人としても、そういうのは[r]できるなら止めたほうがいいんじゃないかなって。
+[k]
+
+[charaFace D 11]
+
+＠ビショーネ
+ほら、退治されちゃうかもしれませんし……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠黒姫
+蛇王様に刃向かう不心得者でしたか。
+[k]
+
+[charaFace G 13]
+
+＠黒姫
+……忠告しておきましょう。
+[k]
+
+[charaFace G 4]
+
+＠黒姫
+少しでも[#怯懦:きょうだ]や迷いがあるのならば、[r]今ここで退くことです。
+[k]
+
+＠黒姫
+見たところ、そちらに完全な[#竜蛇:りゅうじゃ]は一匹のみ。[r]それもまだ産まれたばかりと見えます。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+…………！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠チビドラゴン
+きゅ……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+
+＠黒姫
+このアルナワーズは蛇王様の力そのもの。[r]そのような小さき蛇ではけっして勝てませぬ。
+[k]
+
+
+＠黒姫
+この顎に噛み砕かれた結果として、[r][#彼:か]の王の腹に収まることになるは[#必定:ひつじょう]……。
+[k]
+
+？1：退くわけにはいかない
+？2：そっちこそ、止めるわけにはいかない？
+？！
+
+[charaFace G 14]
+
+＠黒姫
+愚問。[r]私は蛇王様の刃。
+[k]
+
+[charaFace G 3]
+
+＠黒姫
+しかし[line 3][r]今は私が[#鞘走:さやばし]ることすら必要ないでしょう。
+[k]
+
+＠黒姫
+あまりに、あまりに小さき蛇たちよ。
+[k]
+
+[charaFace G 4]
+
+＠黒姫
+逃げぬというなら覚悟なさい。
+[k]
+
+＠黒姫
+弱きものは、喰われる。
+[k]
+
+＠黒姫
+それがこの世の、[r]避けられぬ定めなのですから。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad460]
+[wt 1.0]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.4 1]
+[wt 0.5]
+
+[cueSe SE_25 25_ade1155]
+[wt 1.5]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠メドゥーサ
+やる気のようです。[r]下がってください、マスター。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠アスクレピオス
+さて、この巨大蛇は目を見張るような[r]新しい傷を与えてくるものかどうか。
+[k]
+
+＠アスクレピオス
+そうでないなら永遠に[r]口を閉じていてほしいものだ。
+[k]
+
+＠アスクレピオス
+ただの[#咬傷:こうしょう]は見慣れているからな。[r]テンションが上がらん。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut K 1]
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+サーヴァントらしき女性[line 3]黒姫？[r]のほうは抜刀していない。
+[k]
+
+＠ダ・ヴィンチ
+戦闘に参加はしてこない可能性もあるけど、[r]油断は禁物だよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠マシュ
+巨大蛇に関してだけでも情報が不足しています。[r]脅威なのは間違いありません。
+[k]
+
+＠マシュ
+充分に気をつけて応戦をお願いします！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_5 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

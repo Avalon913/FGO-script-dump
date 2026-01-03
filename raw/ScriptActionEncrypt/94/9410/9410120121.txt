@@ -1,0 +1,492 @@
+
+
+＄94-10-12-01-2-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 10018000 1 カズラドロップ]
+[charaSet B 1098255100 1 ゴルドルフ]
+[charaSet C 1098239320 1 カドック]
+[charaSet D 1098272300 1 オベロン]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 230000]
+
+[cueSe SE_22 22_ad1161]
+[seVolume 22_ad1161 0 0]
+[seVolume 22_ad1161 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[seStop 22_ad1161 3.0]
+[wt 0.8]
+[bgm BGM_EVENT_112 0.5]
+
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠カズラドロップ
+まだかなまだかなー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+フフ、少し待っていなさい、マイレディ。[r]下ごしらえは終わったからね、もうすぐだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠カズラドロップ
+はーい。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe SE_23 23_ade829]
+[seVolume 23_ade829 0 0.4]
+[wt 1.2]
+[seStop 23_ade829 0.2]
+
+[cueSe SE_22 22_ad1161]
+[wt 1.2]
+[seStop 22_ad1161]
+[se adm75]
+[seVolume adm75 0 0.4]
+[cueSe SE_21 21_ade597]
+[wt 1.5]
+[seStop adm75 0.5]
+[seStop 21_ade597 0.5]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+よし、完成だ。
+[k]
+
+？1：いい匂ーい！　美味しそう！
+？2：これは期待が持てそう……！
+？！
+
+[charaFace B 0]
+＠ゴルドルフ
+キッチンの森を巡って手に入れた新鮮な肉、[r]そして卵。それらを私の魔術によって加工し、
+[k]
+
+＠ゴルドルフ
+家のホムンクルスたちに叩き込まれた[r]確かな技術をもって調理した、
+[k]
+
+＠ゴルドルフ
+ムジーク家特製のエッグベネディクトである！
+[k]
+
+[charaFace B 3]
+
+＠ゴルドルフ
+見たまえ、この完璧な料理の出来栄えを。[r]そしてこの完璧に整えられたヒゲを。
+[k]
+
+[charaFace B 1]
+
+＠ゴルドルフ
+さあお食べなさい、パパだよ……。
+[k]
+
+[charaFace B 2]
+
+＠ゴルドルフ
+おっと、あまりの完璧さに勝手にロールプレイが[r]出てしまった。
+[k]
+
+＠ゴルドルフ
+どこからどう見ても１００点だな、[r]審査が簡単すぎてすまんね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠カズラドロップ
+それでは、いただきまーす。
+[k]
+
+[se ade162]
+
+＠カズラドロップ
+も[charaMoveReturn A 0,-5 0.2]ぐもぐもぐ……。[wt 0.5][charaMoveReturn A 0,-5 0.2][seStop ade162 1.0]
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_112 0.4]
+[charaFace A 2]
+
+＠カズラドロップ
+７２点でーす。[r]はいお疲れ様でしたー。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad119]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[wt 1.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠ゴルドルフ
+ウソーン！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カズラドロップ
+ウソではありませんよ。[r]得点記録カードにもそう表示されてるはずです。
+[k]
+
+[messageOff]
+[charaFadeout A 0.5]
+[scene 230900 0.5]
+[wt 1.2]
+[cueSe SE_24 24_ade1115]
+[effect bit_talk_point_01 -30,15]
+[wt 2.5]
+
+
+？1：ホントだ……
+？！
+
+[wt 0.5]
+[effectStop bit_talk_point_01]
+[scene 230000 0.5]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.5 1]
+[wt 0.5]
+
+＠カドック
+点数的には、可もなく不可もなく、[r]といったところかな。
+[k]
+
+＠カドック
+パパらしいかどうかはともかく、[r]なかなかの料理には見えたが[line 3]
+[k]
+
+[charaFace C 2]
+
+＠カドック
+いや、その『ともかく』の部分が大事なのか？[r]考えるべきことは多そうだな……。
+[k]
+
+[charaFace C 1]
+
+＠カドック
+……ところで、オベロンの様子が妙だぞ。
+[k]
+
+？1：壁に額を押しつけて悶えてるね
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠オベロン
+っ[messageShake 0.05 2 2 0.5]っ……あれだけ自信満々に、パパだよ、[r]とか言っといて……ウソだろ……[wt 0.5][messageShake 0.05 2 2 0.2]ふふっ……。
+[k]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+ちょっとー！？
+[k]
+
+＠ゴルドルフ
+そんなに堪えるくらいなら、いっそ[r]大爆笑してくれたほうがまだ気が楽だわ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[cueSe SE_24 24_ade981]
+[seVolume 24_ade981 0 0.8]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.3 0,-10]
+[charaMove D 0,0 0.3]
+[wt 0.1]
+[seStop 24_ade981 0.3]
+[wt 0.3]
+
+＠オベロン
+そう？　なら遠慮なく声をあげちゃおう！
+[k]
+
+＠オベロン
+僕はいいと思うよゴルドルフ殿！[r]子供の前で空振るのもいいパパなんじゃないかな！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+むぐぐ。
+[k]
+
+＠ゴルドルフ
+確かに思ったより点数は出んかったが、[r]私はベストを尽くした。
+[k]
+
+＠ゴルドルフ
+何も後悔するところはないぞう！
+[k]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+？1：もちろん、立派でしたよ
+？2：思ったより採点基準が[#辛:から]いのかもです
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_5 0.1]
+＠カズラドロップ
+最初なので改めて言っておきますけど、
+[k]
+
+
+＠カズラドロップ
+ゴールしたときにチェックポイントでの合計点数が[r]合格点に達していなければ、
+[k]
+
+＠カズラドロップ
+ふりだしに戻る！　ですからね。
+[k]
+
+＠カズラドロップ
+[#中途半端:ち ゅ う と は ん ぱ]なパパを認めるわけにはいかないのです。[r]そのあたり念頭において頑張ってください。
+[k]
+
+[charaFace A 0]
+
+＠カズラドロップ
+それじゃあ、私はこのあたりで。[r]また次のチェックポイントでお会いしましょう。
+[k]
+
+[messageOff]
+[se adm20]
+
+
+[fowardEffect bit_talk_radiallight02_big]
+
+[wt 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[fadeout white 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[fowardEffectStop bit_talk_radiallight02_big]
+[scene 229300]
+[wt 1.0]
+
+[fadein white 2.0]
+[wait fade]
+[wt 0.8]
+
+[bgm BGM_EVENT_141 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+やれやれ。[r]意外と[#前途多難:ぜ ん と た な ん]かもしれんな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カドック
+食材確保以外手伝えなくてすまないな。[r]次は何か直接的に力になれることがあるといいが。
+[k]
+
+？1：同感です
+？2：とにかくお疲れさまでした！
+？！
+
+[charaFace C 0]
+＠カドック
+[#前途多難:ぜ ん と た な ん]と言っていたが、[r]今回の試練でも別に損はしていない。
+[k]
+
+＠カドック
+むしろプラスしかなかったと思うぞ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+そうかね？　点数は微妙だったし、[r]なんならわりと精神ダメージも喰らったが。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠カドック
+カズラドロップの言葉を思い出してくれ。
+[k]
+
+＠カドック
+『合格点に達していなければふりだしに戻る』[r]という話だが、それは逆に言えば、
+[k]
+
+＠カドック
+たとえ条件を満たすことに失敗しても、[r][#また最初からやり直せる]、ってことだろ。
+[k]
+
+[charaFace C 0]
+
+＠カドック
+だったら１周目は得点そのものに[#一喜一憂:い っ き い ち ゆ う]しないで、[r]情報収集と割り切ってもいいかもしれない。
+[k]
+
+？1：２周目で合格点を取るための種まき、だね
+？！
+
+[charaFace C 8]
+
+＠カドック
+ああ。もちろん、傾向を測るためにも[r]最初から高得点は狙うべきだけどな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+ふうむ、確かに。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠オベロン
+いい方針だ。カドックの堅実さ、慎重さは[r]外見のイメージとは真逆だね。
+[k]
+
+＠オベロン
+閃きで動く[%1]といいコンビだ。[r]これからも仲良くやってほしい。
+[k]
+
+[charaFaceFade D 12 0.2]
+
+＠オベロン
+ただ、いくらカズラドロップが直接手を出して[r]こないといっても、用心は忘れないように。
+[k]
+
+＠オベロン
+[#食虫植物:ウ ツ ボ カ ズ ラ]は獲物を捕らえてから、[r]ゆっくりと、確実に溶かしていく。
+[k]
+
+＠オベロン
+[#翅:はね]が溶けてしまったあとで、[r]脱出には飛ぶしかなかったと知っても遅いよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+不吉なコトを……しかし、[r]オベロンの言うことももっともだ。
+[k]
+
+[charaFace B 0]
+＠ゴルドルフ
+ここでのルールはあの幼女の考え一つだろう。[r]あまり油断しすぎるのもよくない。
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ade689]
+[charaCrossFade B 1098304000 0 0.2]
+[wait charaCrossFade B]
+[wt 0.4]
+
+＠ゴルドルフ
+気を引き締めて次のチェックポイントに[r]向かおうではないか。
+[k]
+
+＠ゴルドルフ
+さあ、出発だ！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_141 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

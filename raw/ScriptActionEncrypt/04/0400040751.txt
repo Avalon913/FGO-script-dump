@@ -1,0 +1,689 @@
+
+
+
+
+
+＄04-00-04-07-5-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098257910 1 マシュ]
+[charaSet B 1098303500 1 パッションリップ]
+[charaSet C 5005002 1 アンデルセン]
+
+[charaSet E 3047300 1 帝王パーシマ]
+[charaScale E 1.2]
+
+[charaSet F 3047300 1 パーシヴァル_水着B_シルエット]
+[charaFilter F silhouette 00000080]
+
+[charaSet G 3055001 1 ニキチッチ]
+
+[imageSet H cut580_mnkt10 1]
+
+[sceneSet I 223100 1]
+
+[charaSet J 98115000 1 エフェクト用1]
+[charaSet K 98115000 1 エフェクト用2]
+
+[charaSet L 1098257910 1 マシュ1]
+[charaScale L 1.2]
+
+[sceneSet M 224700 1]
+[charaScale M 1.2]
+
+[sceneSet N 224700 1]
+[charaScale N 1.1]
+
+[sceneSet O 10000 1]
+[charaScale O 1.01]
+[sceneSet P 10000 1]
+[charaScale P 1.01]
+[sceneSet Q 10001 1]
+[charaScale Q 1.01]
+
+[sceneSet R 10000 1]
+[charaScale R 1.1]
+
+[subCameraOn 4]
+
+[subCameraFilter #A maskEdge cut359_mask16 3 255,255,255,0]
+[subCameraFilter #B maskEdge cut359_mask16 5 255,255,255,0]
+
+[subCameraFilter #C maskEdge #MASK 30 255,255,255,255 1]
+
+[charaLayer L sub #A]
+[charaLayer M sub #A]
+[charaLayer H sub #A]
+
+[charaLayer G sub #C]
+[charaLayer N sub #C]
+
+[charaLayer O sub #MASK]
+[charaLayer P sub #MASK]
+[charaLayer Q sub #MASK]
+
+[charaFadein Q 0.1 0,0]
+[charaFadein O 0.1 850,0]
+[charaFadein P 0.1 -850,0]
+
+[charaFace L 12]
+[charaFadein L 0.1 -90,260]
+[charaFadein M 0.1 -200,0]
+
+[charaTalk depthOff]
+
+[charaDepth M 1]
+[charaDepth L 2]
+
+[scene 224700]
+[charaTalk E]
+[charaFace E 27]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[fadein black 0.5]
+[bgm BGM_BATTLE_98 0.1]
+[wait fade]
+
+[effect bit_talk_blow02]
+
+[se bac332]
+[se bac389]
+
+[charaPut J 0,0]
+[charaEffect J bit_talk_sand_dust_front_fs]
+[charaEffect J bit_talk_sand_dust_back_fs]
+[wt 0.2]
+
+[se ad322]
+[effect bit_talk_impactlanding]
+[wt 0.1]
+
+[se ad671]
+
+[charaFace E 26]
+[charaMoveEase E 0,-10 0.2 easeOutQuint]
+[charaMoveScaleEase E 1.0 0.2 easeOutQuint]
+[charaFadeout E 0.2]
+
+＠帝王パーシマ
+う[messageShake 0.05 3 3 0.3]ぉぉおおおおおおお！
+[k]
+
+
+[messageOff]
+[wt 0.5]
+
+？1：やったか[line 3]！？
+？2：やられボイスもすごい
+
+？！
+
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.6 0,-20]
+[charaMove F 0,0 0.3]
+
+[wt 1.0]
+
+[charaTalk L]
+[subRenderFadeinFSSideR #A 0.3 370,-150]
+[subRenderMoveEaseFSSideR #A 350,-250 0.4 easeOutSine]
+
+[wt 0.4]
+
+＠L：マシュ
+深刻なダメージ値でした！[r]いかにタフなパーシヴァルさんでも、これは……！
+[k]
+
+[messageOff]
+
+[bgmStop BGM_BATTLE_98 1.5]
+
+[subRenderFadeout #A 0.3]
+[subRenderMoveEaseFSSideR #A 330,-350 1.0 easeOutSine]
+
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠F：？？？
+いや。大丈夫だマシュ。[r]いい気付けになった。心配をかけたね。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth E 3]
+[charaDepth F 4]
+
+[charaEffectStop J bit_talk_sand_dust_front_fs]
+[charaEffectStop J bit_talk_sand_dust_back_fs]
+
+[charaFace E 18]
+[charaFadein E 0.1 1]
+[charaFadeout F 0.7]
+[wt 1.2]
+
+[bgm BGM_EVENT_146 0.1]
+
+＠元帝王パーシマ
+……そしてまことに面目ない。[r]なぜこんな事になったのか、できれば聞かないでほしい。
+[k]
+
+？1：やったー！　パーシヴァルが正気に戻った！
+
+[messageOff]
+[charaFace E 19]
+[wt 1.0]
+
+[charaFace E 2]
+
+＠パーシヴァル
+君たちのおかげでね。[r]両手をあげるほど喜んでもらえるとは光栄だ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アンデルセン
+倒されて役職から解放されたか。
+[k]
+
+＠アンデルセン
+おおかたコヤンスカヤに騙されて、[r]強引に王者にされていたのだろう。
+[k]
+
+＠アンデルセン
+コヤンスカヤからすれば最強の宝の番人だ。[r]それだけニキチッチが重要だという事だな。
+[k]
+
+？2：なぜこんな事になったんです？
+
+[charaFace E 17]
+
+＠元帝王パーシマ
+聞かないでほしいと言ったのに……[r]いや、しかしみんなには聞く権利はあるな、うん。
+[k]
+
+[charaFace E 13]
+
+＠元帝王パーシマ
+あれはここで目が覚めた時の事だ。
+[k]
+
+＠元帝王パーシマ
+魔力酔いというのかな。頭痛がひどく、[#眩暈:めまい]、吐き気に[r]襲われて意識が[#朦朧:もうろう]としている時、
+[k]
+
+＠元帝王パーシマ
+『これ一本でどんな二日酔いもすぐに[#回復:シャッキリ]！』[r]と、コヤンスカヤがドリンクを差し出してきてね……
+[k]
+
+[charaFace E 15]
+
+＠元帝王パーシマ
+紙にサインをすればくれるというからサインを[r]したのだが、それは邪悪な契約書だった……！
+[k]
+
+[charaFace E 14]
+
+＠元帝王パーシマ
+気づいた時には遅かった。不本意ながら[r]この闘技場を守る番人にされてしまったんだ。
+[k]
+
+[charaFace E 18]
+
+＠元帝王パーシマ
+ところでそろそろ呼び名を戻してもらっていいかな。[r]それと他の円卓のみんなには内密にしてほしいな。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[charaFaceFade A 22 0.3]
+[wt 1.3]
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_146 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[blur lens 0.1 2 20]
+
+[charaFadeout C 0.1]
+[charaFadeout L 0.1]
+[charaFadeout A 0.1]
+
+[charaLayer L normal]
+[charaLayer M normal]
+
+[subCameraFilter #A maskEdge cut359_mask20 30 255,255,255,255 1]
+[charaDepth M 1]
+[charaDepth R 2]
+[charaPut M 0,-250]
+[charaPut R 0,-200]
+[charaFadeTime R 0.1 0.5]
+[charaFadein H 0.1 0,140]
+[subRenderFadein #A 0.1 0,-330]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[se ade18]
+[fadeout white 1.0]
+[wait fade]
+
+[cueSe SE_21 21_ade579]
+
+[charaFadeout H 0.1]
+[charaFadeout M 0.1]
+[subRenderFadeout #A 0.1]
+[wt 1.0]
+
+[charaLayer E sub #C]
+[charaDepth N 1]
+[charaDepth G 2]
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 20,210]
+[charaFadein N 0.1 0,-50]
+
+[subRenderFadein #C 0.1 0,-200]
+[effect bit_talk_smoke_pon]
+[wt 0.5]
+
+[fadein white 1.0]
+
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_194 0.1]
+
+＠ニキチッチ
+ん……そうか……冬の湖で魚捕りか……[r]北方の冬の寒さを知っているのか？　そうか……
+[k]
+
+＠ニキチッチ
+いやできる……できるぞ……[r]できれば避けたいが、できるぞ……
+[k]
+
+[charaFace G 34]
+
+＠ニキチッチ
+なに、蜂蜜を奪う！？[r]だめだ、わがままを言うなヤースカヤ！
+[k]
+
+＠ニキチッチ
+シロクマが悲しむぞ！[r]作り置きのラズベリーのジャムにしておきなさい！
+[k]
+
+？1：ニキチッチさん、朝だよ～
+？2：もう少し寝かせておくべきか？
+
+？！
+
+[bgmStop BGM_EVENT_194 1.5]
+
+[charaFace G 28]
+
+＠ニキチッチ
+！　今のはマスターの声！[r]オレにはわかるぞ！　はーーーぁ！
+[k]
+
+[messageOff]
+
+[se ad7]
+[charaMove P -1500,0 0.3]
+[charaMove O 1500,0 0.3]
+
+[charaMove G 20,230 0.3]
+[charaMoveScale G 1.3 0.3]
+
+[wt 0.3]
+
+[charaMove G 20,220 0.3]
+[se ade422]
+[wt 0.3]
+[seStop ade422 0.1]
+[wt 0.4]
+[charaFadeout R 0.1]
+[blurOff]
+
+[bgm BGM_EVENT_167 0.1]
+
+[charaFace G 1]
+
+＠ニキチッチ
+よい目覚めだ、おはようおまえたち！[r]ドブルイニャ・ニキチッチ、呼び声に応えて参上した！
+[k]
+
+＠ニキチッチ
+しかしこれはどういう事だ？
+[k]
+
+＠ニキチッチ
+オレたちはブルジュ・ハリファの展望台に[r]いたはずだが……ふむ。ふむふむふむ。
+[k]
+
+＠ニキチッチ
+だめだ、まるで分からない！[r]帝王パーシマという言葉しか頭に残っていない！
+[k]
+
+[messageOff]
+[charaDepth E 2]
+[charaDepth G 4]
+
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.3 -280,180]
+[wt 1.5]
+
+[charaFadeout E 0.3]
+[wt 0.3]
+
+[charaTalk G]
+＠ニキチッチ
+説明をしてくれマスター。[r]そのためにオレを起こしたのだろう？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_167 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaFadeout N 0.1]
+
+[charaScale G 1.0]
+[charaScale E 1.0]
+
+[subRenderFadeout #C 0.1]
+
+[charaLayer L sub #B]
+[charaLayer M sub #B]
+
+[charaLayer E normal]
+[charaLayer G normal]
+[charaLayer N normal]
+
+[charaSet E 1098298000 1 パーシヴァル]
+
+[charaScale L 1.1]
+
+[charaFace L 1]
+[charaFadein L 0.1 -90,260]
+[charaFadein M 0.1 -400,0]
+
+
+[charaMoveScale G 1.0 0.1]
+
+[charaTalk G]
+[charaFace G 30]
+[charaFadein G 0.1 1]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+＠ニキチッチ
+人類の滅亡方法を決めるラスボス決定戦……[r]ＢＢドバイとＢＢコスモ……
+[k]
+
+＠ニキチッチ
+七騎のムーンキャンサーと、[r]支持率最高のコヤンスカヤ……
+[k]
+
+[bgm BGM_EVENT_62 0.1]
+[charaFace G 29]
+
+＠ニキチッチ
+状況はよく分かった。[r]ＢＢドバイめ、やはり度し難い悪者だ！
+[k]
+
+＠ニキチッチ
+一度は負けたが次はちゃんと準備して勝つ！[r]言うまでもなくオレも共に戦うぞ、マスター！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠パーシヴァル
+私も力を尽くそう。
+[k]
+
+＠パーシヴァル
+世界は違えど『人類を滅ぼす者を決める』選挙なんて[r]ものを見過ごす事はできない。
+[k]
+
+？1：一気にふたりも戻ってきた！
+？2：よろしくお願いします！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ですが少し疑問があります。[r]ニキチッチさんはＢＢドバイに捕まっていましたが、
+[k]
+
+＠マシュ
+パーシヴァルさんは観測光によって[r]消滅したように見えました。
+[k]
+
+＠マシュ
+どうやってムーン・ドバイに残られたのでしょう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠パーシヴァル
+ああ。[r]それは私も気になっていたんだが……
+[k]
+
+[charaFace E 10]
+
+＠パーシヴァル
+もしかするとＢＢドバイとは別の、[r]何者かの助けがあったのかもしれない。
+[k]
+
+＠パーシヴァル
+あの閃光に包まれる直前、私の体は転移させられた。[r]まあ、強引な術式だったので、
+[k]
+
+＠パーシヴァル
+転移後は[#前後不覚:ぜ ん ご ふ か く]になってしまい、このモールで[r]コヤンスカヤの術中に嵌まってしまったんだが。
+[k]
+
+[charaFace E 5]
+
+＠パーシヴァル
+あの時、転移音は二つあった。[r]私のものとカルナのものだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 35]
+[charaFadein A 0.1 1]
+
+＠マシュ
+！　ではカルナさんもムーン・ドバイのどこかに[r]いらっしゃるのですね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠パーシヴァル
+ああ、もちろん。[r]彼ほどの戦士がやすやすと退去はしないからね。
+[k]
+
+[charaFace E 0]
+
+＠パーシヴァル
+私を転移させた『何者か』の正体も思惑も不明だが、[r]カルデアの味方……と考えているよ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 32]
+[charaFadein G 0.1 1]
+
+＠ニキチッチ
+敵側も一枚岩ではない、という話かもだな。[r]しかし今はまずコヤンスカヤだ。
+[k]
+
+＠ニキチッチ
+悪い子はこらしめなくてはならない。[r]このままメッ！　しに行くぞ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠パッションリップ
+ニキチッチはコヤンスカヤに対して[r]有効な[#特技:スキル]を持っているんですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠ニキチッチ
+持っていない！　普通に戦えば負けるぞ！[r]ヤースカヤは強い子だからな！
+[k]
+
+[messageOff]
+[charaTalk L]
+[subRenderFadeinFSSideR #B 0.3 350,-250]
+[wt 0.4]
+
+＠L：マシュ
+では説得できる、という事ですね！
+[k]
+
+＠L：マシュ
+ニキチッチさんの言う事なら[r]コヤンスカヤさんもおとなしく聞いてくれます！
+[k]
+
+[charaFace G 17]
+
+＠ニキチッチ
+そんな事はない！　説得はできないぞ！[r]ヤースカヤは一度決めたらやり通す強い子だからな！
+[k]
+
+＠ニキチッチ
+戦いになればオレたちは全滅するとも！[r]ふふふふふふ！（ドヤァ）
+[k]
+
+[messageOff]
+
+[charaTalk L]
+[charaShake L 0.05 3 3 0.5]
+[charaFace L 21]
+
+[wt 1.5]
+
+[subRenderFadeout #B 0.3]
+[wt 0.3]
+
+[wt 0.3]
+
+？1：じゃあどうすれば！？
+？2：まさか……ニキチッチさんを人質に……
+
+？！
+
+[charaFace G 0]
+＠ニキチッチ
+安心しろマスター。[r]それでもオレたちは勝てる。
+[k]
+
+[charaFace G 35]
+
+＠ニキチッチ
+コヤン・モールで起きた事も話してくれただろう。[r]檻の中のＡＩたちの話だ。
+[k]
+
+＠ニキチッチ
+それでもう答えは出ていたよ。[r]オレが知る以上に、ヤースカヤは良い子だった。
+[k]
+
+[charaFace G 32]
+
+＠ニキチッチ
+戦いに行く前に少しだけ時間をくれ。[r]それでこのエリアの支持率を終わらせられる。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaDepth E 3]
+[charaDepth B 4]
+[charaDepth A 6]
+
+[charaTalk E,B,A]
+[charaFace B 21]
+[charaFace E 6]
+[charaFace A 5]
+[charaFadeinFSL E 0.1 -330,0]
+[charaFadein A 0.1 -50,0]
+[charaFadeinFSR B 0.1 330,0]
+[wt 2.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

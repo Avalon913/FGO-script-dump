@@ -1,0 +1,238 @@
+
+
+＄94-09-15-02-2-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1060000 1 宮本伊織]
+[charaSet B 5054001 1 由井正雪]
+[charaSet C 11018001 1 源頼光]
+[charaSet D 1059000 1 セイバー]
+
+[charaSet H 98006000 1 怪異]
+[charaSet J 1098285100 1 ホムンクルス]
+[charaSet K 1098183600 1 怪異]
+
+[sceneSet L 10000 1]
+[charaScale L 1.05]
+
+[sceneSet Q 102101 1]
+[sceneSet R 102101 1]
+
+[charaDepth H 5]
+[charaDepth J 4]
+[charaDepth K 3]
+
+
+
+[subCameraOn 2]
+
+[charaLayer A sub #A]
+[charaLayer L sub #A]
+[charaLayer Q sub #A]
+
+[charaLayer D sub #B]
+[charaLayer R sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask20 3 255,255,255,255 1]
+[subCameraFilter #B maskEdge cut359_mask20 3 255,255,255,255 1]
+
+[charaTalk depthOff]
+[charaDepth A 3]
+[charaDepth L 2]
+[charaDepth Q 1]
+[charaDepth D 4]
+[charaDepth R 3]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaScale A 1.25]
+[charaScale D 1.25]
+
+[charaFace A 0]
+[charaFadein A 0.1 -10,180]
+[charaFadein Q 0.1 180,125]
+
+[charaFace D 0]
+[charaFadein D 0.1 10,180]
+[charaFadein R 0.1 -180,75]
+
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+
+
+[subRenderFadeinFSSideL #A 0.5 -300,-350]
+[subRenderMoveEaseFSSideL #A -300,-240 16.0 easeOutCubic]
+[subRenderFadeinFSSideR #B 0.5 300,-130]
+[subRenderMoveEaseFSSideR #B 300,-240 16.0 easeOutCubic]
+[wt 3.0]
+
+＠宮本伊織
+……セイバー？
+[k]
+
+[charaPut L 0,150]
+[charaFadeTime L 0.1 0.5]
+[charaFace A 9]
+
+＠宮本伊織
+（何故だろう、俺はこの剣を……）
+[k]
+
+
+
+[charaFace D 4]
+
+＠セイバー
+[line 12]。
+[k]
+
+[charaFadeout L 0.2]
+[wt 0.2]
+[charaFace A 0]
+
+＠宮本伊織
+…………？
+[k]
+
+＠セイバー
+……………………[wt 2.0][charaFace D 14]（ぷいっ）
+[k]
+
+[charaFadeTime L 0.1 0.5]
+[charaFace A 6]
+
+＠宮本伊織
+（……何なのだ、今のは？）
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.6]
+[subRenderFadeout #B 0.6]
+[scene 102101 0.6]
+[bgm BGM_BATTLE_246 0.1]
+[wt 0.6]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[charaFadeout L 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[wt 0.1]
+[charaLayer D normal]
+[charaLayer L normal]
+[charaLayer A normal]
+[charaLayer Q normal]
+[charaLayer R normal]
+[subCameraOff]
+
+
+[charaScale D 1.0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+
+[wt 0.4]
+
+
+
+＠セイバー
+[line 3]察するに。[r]きみが、カルデアとやらのマスターか。
+[k]
+
+
+＠セイバー
+……ふむ。今さっき述べたが、[r]私は今回もセイバーのようだ。
+[k]
+
+？1：よ、よろしく……
+？2：（……[#今回も]？）
+
+？！
+
+[charaFace D 3]
+
+＠セイバー
+[#暇:いとま]がない。[r]敵陣を突っ切るぞ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_BATTLE_246 0.5 0.5]
+[wait wipe]
+
+[subCameraOn 2]
+[charaLayer B sub #A]
+[charaLayer Q sub #A]
+[charaLayer D sub #B]
+[charaLayer R sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask13 4 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask02 4 0,0,0,255 0]
+
+[charaDepth B 3]
+[charaDepth Q 1]
+[charaDepth D 5]
+[charaDepth R 2]
+
+[charaScale B 1.4]
+[charaScale D 1.4]
+[charaScale Q 1.4]
+[charaScale R 1.4]
+
+[charaFadein B 0.1 -300,240]
+[charaFace B 3]
+[charaFadein Q 0.1 -200,0]
+[charaFace D 3]
+[charaFadein D 0.1 300,265]
+[charaFadein R 0.1 200,0]
+
+[charaTalk off]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_BATTLE_246 0.5 1.0]
+[wait wipe]
+
+[subRenderFadein #A 0.3 -100,-143]
+[subRenderMoveEase #A 0,-143 0.3 easeOutQuint]
+[wt 0.3]
+
+＠由井正雪
+逃さぬ！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+
+[cueSe SE_21 21_ad1072]
+[charaScale J 0.85]
+[charaFadein H 0.4 1]
+[charaFadein J 0.4 320,-50]
+[charaFadein K 0.4 -300,0]
+[wt 2.0]
+
+[charaTalk on]
+[charaTalk D]
+[subRenderFadein #B 0.3 100,-300]
+[subRenderMoveEase #B 0,-300 0.3 easeOutQuint]
+[wt 0.4]
+
+＠セイバー
+ならば押し通る！[r]ふたりとも、遅れるなよ！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_246 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

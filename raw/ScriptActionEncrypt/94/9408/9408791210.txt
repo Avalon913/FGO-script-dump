@@ -1,0 +1,602 @@
+
+
+＄94-08-79-12-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098275800 1 バーゲスト]
+[charaSet B 4050001 1 鈴鹿御前]
+[charaSet C 1007400 1 ガウェイン]
+[charaSet D 4050001 1 鈴鹿御前_演出用]
+[charaSet E 1007400 1 ガウェイン_演出用]
+[charaSet F 1098275800 1 バーゲスト_演出用]
+[sceneSet M 109701 1]
+[sceneSet T 10000 1]
+[charaScale T 1.1]
+[sceneSet U 197500 1]
+[sceneSet V 197500 1]
+
+[scene 10001]
+[fadein black 1.5]
+[wait fade]
+
+[fadeout white 0.1]
+[wait fade]
+
+[scene 109700]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_156 0.1]
+
+＠
+大きすぎて見えないものがあるように、[r]小さすぎて見えないものがあるように、
+[k]
+
+＠
+当然すぎて見えないものがあるように、[r]大切すぎて見えないものがあるように、
+[k]
+
+＠
+この星の生き物は、とにかく、[r]見えないものを踏みつける性質があるようです。
+[k]
+
+[messageOff]
+[se ad31]
+[effect bit_talk_noise_gr]
+[charaScale M 1.3]
+[wt 0.2]
+[charaFadein M 0.4 -30,-300]
+[charaMove M 30,-300 10.0]
+[wt 0.4]
+[seStop ad31 0.4]
+[effectStop bit_talk_noise_gr]
+[wt 0.4]
+[effectDestroy bit_talk_noise_gr]
+
+＠
+[align center][60EEFF]……ない[-][align]
+[k]
+
+[messageOff]
+[charaFadeout M 0.7]
+[wt 1.0]
+[charaMove M 0,-200 0.1]
+
+＠
+それはとても純粋で、とても強大で、[r]とてもこの星の生き物ではなかったので、
+[k]
+
+[messageOff]
+[se ad31]
+[effect bit_talk_noise_gr]
+[charaScale M 1.0]
+[wt 0.2]
+[charaFadein M 0.4 0,-200]
+[wt 0.4]
+[seStop ad31 0.4]
+[effectStop bit_talk_noise_gr]
+[wt 0.4]
+[effectDestroy bit_talk_noise_gr]
+
+＠
+[align center][60EEFF]いらない　しましょう[-][align]
+[k]
+
+[messageOff]
+[wt 0.2]
+[charaFadeout M 1.0]
+[wt 1.4]
+
+＠
+交信手段はなく相互理解もなく、[r]控えめに言って、
+[k]
+
+＠
+それは『間違いを正そう』と考えた時、[r]加減というものを知らなかったのです。
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_156 2.0]
+[fadeout black 2.0]
+[wait fade]
+[scene 10000]
+[wt 1.5]
+[fadein black 1.0]
+[wait fade]
+[wipeout openEye 0.1 1]
+[wait wipe]
+
+＠
+[align center]－　サバフェス　ＤＡＹ２　－
+[k]
+
+[messageOff]
+[cameraMove 0.1 0,0 1.05]
+[charaFadeTime T 0.1 0.3]
+[scene 197500]
+[wt 1.2]
+[wipein openEye 0.4 1]
+[wait wipe]
+[wipeout openEye 0.3 1]
+[wait wipe]
+[wipein openEye 0.4 1]
+[wait wipe]
+[wipeout openEye 0.3 1]
+[wait wipe]
+[wt 0.7]
+[wipein openEye 1.0 1]
+[wait wipe]
+[wt 0.4]
+[se ad7 0.6]
+[cameraMove 0.2 0,-15 1.05]
+[wt 0.5]
+
+？1：寝てた！　みんな、無事[&か:]！？
+？2：いや、そもそも
+
+？！
+
+[cameraMove 1.0 85,0 1.2]
+[wt 1.5]
+[cameraMove 2.0 -85,0 1.2]
+[wt 2.5]
+[cameraHome 1.0]
+[wt 2.0]
+
+？1：ここ、何処？
+
+？！
+
+[se ad605]
+[wt 0.8]
+[charaFadeout T 0.8]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.4 1]
+[wt 0.4]
+[bgm BGM_EVENT_157 0.1]
+
+＠バーゲスト
+おはようございます、[%1]様。
+[k]
+
+＠バーゲスト
+まことに勝手ながらカーテンを[r]開けさせていただきました。
+[k]
+
+＠バーゲスト
+着替えはバスルームの方に用意してあります。[r]目覚ましに、何かお飲みになりますか？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth F 2]
+[charaDepth U 1]
+[charaScale F 1.3]
+[charaScale U 1.2]
+[charaFace F 10]
+[charaFadein F 0.4 0,200]
+[charaFadein U 0.4 0,-200]
+[charaMove F 0,0 4.5]
+[charaMove U 0,-270 4.5]
+[wt 5.0]
+
+？1：[line 6]（呆然）
+？2：[line 6]（理解不能）
+
+？！
+
+[messageOff]
+[charaFadeout F 0.7]
+[charaFadeout U 0.7]
+[wt 1.2]
+[charaFace A 9]
+[charaMove A 0,-12 0.6]
+[wt 1.4]
+[charaTalk on]
+[charaFace A 12]
+
+＠バーゲスト
+説明が必要のようですね。[r]では改めまして[line 3]
+[k]
+
+＠バーゲスト
+お初にお目にかかります、[r][%1][&旦那:お嬢]様。
+[k]
+
+＠バーゲスト
+諸事情から当ホテルの給仕長を務める事になった[r]バーゲストと申します。
+[k]
+
+＠バーゲスト
+[&旦那:お嬢]様のお泊まりになる[r]部屋の担当を任されていますので、
+[k]
+
+＠バーゲスト
+何か不明な点があるようでしたら[r]遠慮なくお聞きください。
+[k]
+
+？1：ＵＤＫ団長じゃなかったの！？
+
+[charaFace A 6]
+
+＠バーゲスト
+それは……諸事情がある、と言っただろう。[r]私にも色々あるのだ。
+[k]
+
+？2：メイド服……着るんですね……
+
+[charaFace A 5]
+
+＠バーゲスト
+当然だろう。給仕としての仕事着だ。[r]なぜ、わざわざ疑問に思う。
+[k]
+
+？！
+
+[charaFace A 10]
+
+＠バーゲスト
+……と。[r]いけません、そろそろ時間でした。
+[k]
+
+＠バーゲスト
+『不明な点がありすぎて何から聞いたものか』[r]という顔をしているので、簡潔に説明を。
+[k]
+
+[charaFace A 5]
+
+＠バーゲスト
+[#私:わたくし]はＵＤＫの団長ではありますが、[r]あちらはあくまで騎士としての個人事業。
+[k]
+
+＠バーゲスト
+この特異点に来たそもそもの理由は、[r]ホテルの品質を保つためです。
+[k]
+
+[charaFace A 10]
+
+＠バーゲスト
+これまでは自由が許されていたので[r]ＵＤＫとしての活動をメインにしてきましたが、
+[k]
+
+＠バーゲスト
+[&旦那:お嬢]様が宿泊された以上、[r]今後はこちらの仕事がメインになるでしょう。
+[k]
+
+[charaFace A 0]
+
+＠バーゲスト
+[&旦那:お嬢]様は当ホテルのVIP客。[r]給仕長である[#私:わたくし]が専属になるのは当然です。
+[k]
+
+＠バーゲスト
+それでは失礼します。[r]御用と覚悟がお有りでしたら、遠慮なくお呼びください。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_157 1.0]
+[se adm36]
+[seStop adm36 1.2]
+[charaFadeout A 0.5]
+[wt 0.6]
+[se ad514 0]
+[seVolume ad514 0.4 0.6]
+[wt 1.6]
+
+？1：[line 6]
+
+？！
+
+[se ad59 0]
+[seVolume ad59 2.5 0.3]
+[wt 2.5]
+[seStop ad59 0.4]
+[wt 0.4]
+
+[cueSe SE_22 22_ad1153 0.7]
+[se ad93]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠鈴鹿御前
+おっはー、ご機嫌どうよマスター！[bgm BGM_BATTLE_23 0.1 0.9]
+[k]
+
+＠鈴鹿御前
+なんかワイキキから飛ばされてきたんだって？[r]ＪＫ鈴鹿、話を聞いて一番ノリでやって来たカンジー！
+[k]
+
+[charaFace B 32]
+
+＠鈴鹿御前
+おっと。その顔はアレか～。[r]『キリッとしているけど何も分かっていない』アレ～。
+[k]
+
+[charaFace B 5]
+
+＠鈴鹿御前
+目が覚めたら違うホテルにいるとか驚くよね、[r]そんなサスペンス私も驚くし。
+[k]
+
+[charaFace B 3]
+
+＠鈴鹿御前
+なんかヤバイコトに巻きこまれた？[r]もらったカクテルに薬入ってた？
+[k]
+
+＠鈴鹿御前
+んじゃ面倒だけど、これから人身売買の悪党ども[r][#全員:みんな][#雀刺:すずめざ]しにするかぁ！　みたいな？
+[k]
+
+[charaFace B 0]
+
+＠鈴鹿御前
+でも安心するし、そんな話じゃないから。[r]ここはホテル・ブリスティン。
+[k]
+
+＠鈴鹿御前
+ハワトリアの西部にあるリゾートホテルで、[r]仕事も悩みも無い楽園っつーか！
+[k]
+
+[messageOff]
+[charaFadeout B 0.2]
+[wt 0.1]
+
+[se ad570]
+[wt 1.5]
+
+[bgm BGM_BATTLE_23 2.0 0.6]
+[se ad93]
+[wt 0.7]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 1]
+[wt 0.7]
+
+＠ガウェイン
+失礼。マスターがこちらにチェックインしたと[r]聞いて来たのですが……
+[k]
+
+[charaFace C 0]
+
+＠ガウェイン
+給仕長殿の話は本当でしたね。[r]おはようございます、マスター。
+[k]
+
+？1：鈴鹿にガウェイン！　無事で良かった！
+？2：やっと合流できた！
+
+？！
+
+[charaFace C 20]
+
+＠ガウェイン
+[FFFFFF]？[-]　我々の身を心配していたのですか……？[r]彼女から聞いていた話とは違いますね。
+[k]
+
+＠ガウェイン
+マスターはすぐにこのブリスティンに[r]チェックインをして夏を満喫するので、
+[k]
+
+＠ガウェイン
+私とスズカはここで待っていればいい、[r]という話でしたが……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 32]
+[charaFadein B 0.1 1]
+
+＠鈴鹿御前
+まーいいじゃん、そうなったんだから☆[r]細かいことは言いっこナシでね～。
+[k]
+
+[charaFace B 9]
+
+＠鈴鹿御前
+じゃ、さっそく出かけよっか！[r]ビーチ行こう、ビーチ！
+[k]
+
+＠鈴鹿御前
+午前中ならあいつもいないし、[r]ボードもバレーもやりたい放題っしょ！
+[k]
+
+？1：ちょっと待って、話を[&しよう:させて]
+？2：ふたりは知らないだろうけど、街では……
+
+？！
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaFadeout B 0.2]
+[subCameraOn]
+[charaLayer D sub #A]
+[charaLayer C sub #A]
+[charaLayer U sub #A]
+[subCameraFilter maskEdge cut359_mask06 3 0,0,0,0]
+[subRenderScale #A 1.1]
+[charaDepth D 5]
+[charaDepth C 6]
+[charaDepth B 3]
+[charaDepth U 2]
+[charaScale D 1.3]
+[charaScale C 1.3]
+[charaScale U 1.3]
+[charaFace D 2]
+[charaFadeinFSR D 0.1 250,265]
+[charaFace C 16]
+[charaFadeinFSL C 0.1 -250,250]
+[charaFadein U 0.1 0,-100]
+[subRenderFadein #A 0.6 -200,-350]
+[subRenderMove #A 0,-350 0.6]
+[wt 1.8]
+
+[bgmStop BGM_BATTLE_23 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[charaFadeout U 0.1]
+[charaLayer D normal]
+[charaLayer C normal]
+[charaLayer U normal]
+[charaScale C 1.0]
+[subCameraOff]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth B 4]
+[charaDepth C 5]
+[charaDepth V 6]
+[charaDepth E 7]
+
+[charaScale U 1.1]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+[charaFadein U 0.1 -50,-200]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_147 0.1]
+
+＠ガウェイン
+なんと……我々がこちらで待機している間に、[r]それほどの事件に[#遭遇:そうぐう]していたとは……
+[k]
+
+[charaFace C 7]
+
+＠ガウェイン
+このガウェイン、太陽の不覚……！[r]レースに[#備:そな]えて[#体作:からだづく]りをしている場合ではなかった……！
+[k]
+
+[charaFace C 4]
+
+＠ガウェイン
+ですが、騎士ランスロットが貴方の[#傍:そば]に[r]いてくれた事は不幸中の幸いと言えましょう。
+[k]
+
+＠ガウェイン
+おかげで円卓の騎士の[#矜持:きょうじ]は守られました。
+[k]
+
+[charaFace C 9]
+
+＠ガウェイン
+騎士トリスタンについては……まあ、[r]考えない方向で……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠鈴鹿御前
+ふーん。[r]やっぱりそういうコトになってたんだ。
+[k]
+
+＠鈴鹿御前
+サバフェス会場がメチャクチャになって、[r]リセットを３回もくらったのは同情するけどぉ……
+[k]
+
+[charaFace B 5]
+
+＠鈴鹿御前
+私、ＢＢからの依頼とか[r]特異点の解決とか、まったく興味ないんだよね。
+[k]
+
+＠鈴鹿御前
+[#マスターの任務]とやらには協力しないから、[r]そのあたりシクヨロ～。
+[k]
+
+[charaFace B 14]
+
+＠鈴鹿御前
+っていうか！　特異点の締め方に関しちゃあ、[r]マスターがこっちに来た時点で解決っていうか。
+[k]
+
+[charaFace B 6]
+
+＠鈴鹿御前
+サバフェスが『大成功して終われば』ＢＢの[r]オーダーはクリアなんでしょ？
+[k]
+
+[charaFace B 0]
+
+＠鈴鹿御前
+ならリセットはもう起きない。[r]今日がＤＡＹ２だから、あと５日か。
+[k]
+
+＠鈴鹿御前
+この５日が最後のバカンスになる。[r]なぜなら[line 3]はい、ガウェちに譲るっしょ。
+[k]
+
+[messageOff]
+[charaMove B 200,0 1.2]
+[charaMove U 50,-200 1.2]
+[wt 0.8]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 -360,0]
+[charaMove C -310,0 0.4]
+[wt 0.4]
+
+＠ガウェイン
+とてもおいしいフリ、ありがとうございます。[r]スズカの気遣いは天性の[#才能:も　の]ですね。
+[k]
+
+[charaFace C 1]
+
+[bgmStop BGM_EVENT_147 1.5]
+＠ガウェイン
+[#僭越:せんえつ]ながら私の口から、この夏の結論にして[r]目玉をお教えしましょう。
+[k]
+
+[messageOff]
+[charaTalk C,E]
+[charaScale E 1.2]
+[charaScale V 1.2]
+[charaFace E 10]
+[charaFadein E 0.4 0,0]
+[charaFadein V 0.4 75,-250]
+[wt 0.4]
+[bgm BGM_EVENT_4 0.1]
+
+＠E：ガウェイン
+それはここ、ハワトリア西部で行われる[r]一大イベント、アースマンレース！
+[k]
+
+＠E：ガウェイン
+今年のサバフェスは同人即売会がメインにあらず！
+[k]
+
+＠E：ガウェイン
+世界規模で中継されるこのレースこそ、[r]サバフェスのメインを飾るものなのです！
+[k]
+
+[messageOff]
+[wt 0.7]
+[fadeout black 2.0]
+[bgmStopEnd BGM_EVENT_4 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

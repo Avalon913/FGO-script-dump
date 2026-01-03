@@ -1,0 +1,687 @@
+
+
+＄04-00-03-17-4-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11013002 1 マリー・オルタ]
+[charaSet B 1098293910 1 カリオストロ・オルタ]
+[charaSet C 11006000 1 サリエリ]
+[charaSet D 1098292500 1 ジャンヌ・オルタ]
+[charaSet E 11013002 1 マリー・オルタ_演出用]
+[charaFilter E silhouette 00000080]
+[charaSet F 11006002 1 サリエリ_演出用]
+[charaSet G 1098292500 1 ジャンヌ・オルタ_演出用]
+
+[charaSet I 98115000 1 エフェクト用]
+[charaPut I 3000,3000]
+[charaEffect I bit_talk_restriction03]
+
+[sceneSet S 211803 1]
+[charaScale S 1.2]
+[sceneSet T 211803 1]
+[charaScale T 1.2]
+[sceneSet U 211803 1]
+[charaScale U 1.2]
+[sceneSet V 211803 1]
+[charaScale V 1.2]
+
+[charaSet W 98115000 1 エフェクト用]
+
+[imageSet X back10000 1 1]
+[charaScale X 1.01]
+[imageSet Y back10000 1 1]
+[charaScale Y 1.01]
+[charaDepth X 10]
+[charaDepth Y 10]
+[sceneSet Z 10000 1]
+[charaScale Z 1.2]
+
+[charaDepth W 7]
+[charaDepth E 5]
+[charaDepth A 4]
+[charaDepth S 3]
+[charaDepth B 6]
+[charaDepth T 5]
+[charaDepth C 2]
+[charaDepth Z 1]
+
+[charaPut D 2000,2000]
+[charaEffect D bit_talk_restriction03]
+[charaTalk depthOff]
+[wt 0.1]
+
+[charaPut W 0,0]
+[charaEffect W bit_talk_blk_lilies]
+
+[scene 211803]
+[bgm BGM_BATTLE_216 0.1]
+[fadein black 0.5]
+[wait fade]
+
+
+[charaTalk off]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 0.3]
+[cueSe SE_22 22_ad1212]
+[se ad1006]
+[charaMoveEase C 0,50 0.4 easeOutQuart]
+[charaMoveScaleEase C 1.4 0.4 easeOutQuart]
+[charaFadeout C 0.4]
+[wt 0.2]
+[se ad171 0.4]
+[effect bit_talk_v_slash02]
+[wt 0.2]
+
+[charaScale A 1.1]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+[charaFadein S 0.4 -100,-250]
+[wt 0.2]
+[fowardEffect bit_talk_14]
+[se ad170]
+[wt 1.2]
+[charaFadeout A 0.3]
+[charaMoveEase A 150,0 0.3 easeOutQuad]
+[charaScale B 1.1]
+[charaFace B 8]
+[charaFadein B 0.3 -250,0]
+[charaMoveEase B -100,0 0.3 easeOutQuad]
+[charaFadein T 0.3 0,-250]
+[charaMoveEase T 100,-250 0.3 easeOutQuad]
+[cueSe SE_22 22_ad1181 0]
+[seVolume 22_ad1181 0.7 0.7]
+[wt 1.2]
+[charaFadeout B 0.4]
+[charaFadeout T 0.4]
+[wt 0.2]
+[seStop 22_ad1181 0.7]
+[wt 0.2]
+[fowardEffect bit_talk_29_blue02 0,-150]
+[se ad960]
+[se ad929 0.4]
+[seStop ad929 1.0]
+[wt 1.2]
+[charaScale A 1.0]
+[charaScale B 1.0]
+
+[charaPut W 2000,2000]
+[charaEffectDestroy W bit_talk_blk_lilies]
+[charaFadeout S 0.4]
+
+
+[charaTalk on]
+[charaScale C 1.4]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.2 0,40]
+[charaMoveEase C 0,0 0.4 easeOutExpo]
+[charaMoveScaleEase C 1.0 0.4 easeOutExpo]
+[se ad671]
+[seStop ad671 1.0]
+[wt 0.4]
+
+＠サリエリ
+……ッ！
+[k]
+
+[bgm BGM_BATTLE_216 0.4 0.5]
+[charaFadeTime Z 0.2 0.5]
+
+＠サリエリ
+（残る令呪は一画！）
+[k]
+
+＠サリエリ
+（対して試練の残りは複数。[r]　ならば、令呪を応用した召喚もどきは駄目だ）
+[k]
+
+＠サリエリ
+（魔力リソースとしての令呪を失った状態では、[r]　たとえここを乗り越えたとしても……）
+[k]
+
+＠サリエリ
+（残る三つの試練には耐えられまい。[wt 0.7][charaFaceFade C 1 0.1][r]　[line 3]故に！）
+[k]
+
+[bgm BGM_BATTLE_216 0.4 1.0]
+[charaFadeout Z 0.1]
+
+＠サリエリ
+なんとしても！[r]ここは、我らで砕く！
+[k]
+
+[messageOff]
+[se ad489]
+[effect bit_talk_sparks_black]
+[fowardEffect bit_talk_blk_fire_aura 0,-350]
+
+[se ad1061]
+[cueSe SE_22 22_ad1181 0 0.5]
+[cueSe SE_23 23_ade927 0 0.4]
+[effect bit_talk_charge_ppl02]
+[wt 1.5]
+
+[se ad574]
+[fadeout white 1.0]
+[cueSeStop 22_ad1181 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[effectDestroy bit_talk_charge_ppl02]
+[wt 0.1]
+
+[charaPut I 3000,3000]
+[charaEffect I bit_talk_restriction03]
+
+
+[charaSet C 11006002 1 サリエリ]
+[charaScale C 1.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,0]
+
+[charaTalk depthOff]
+[charaDepth C 3]
+[charaDepth W 2]
+[charaDepth S 1]
+[charaFadein S 0.1 0,-250]
+
+[charaScale W 1.2]
+[charaPut W 0,-70]
+[charaEffect W bit_talk_charge_ppl02]
+[wt 0.1]
+
+[se ad626 0]
+[seVolume ad626 1.5 0.3]
+[fadein white 1.5]
+[wait fade]
+
+＠サリエリ
+[f large]オオオォ！
+[k]
+
+[messageOff]
+[seStop 23_ade927 0.7]
+[seStop ad626 0.7]
+[cueSe SE_22 22_ad1212]
+[se ad1006]
+[charaMoveEase C 0,70 0.4 easeOutQuart]
+[charaMoveScaleEase C 1.6 0.4 easeOutQuart]
+[charaFadeout C 0.4]
+[charaFadeout S 0.4]
+[effectDestroy bit_talk_sparks_black]
+[fowardEffectDestroy bit_talk_blk_fire_aura]
+[charaEffectDestroy W bit_talk_charge_ppl02]
+[wt 0.3]
+
+[effect bit_talk_claw_red02]
+[se ad1051]
+[wt 1.0]
+[charaScale C 1.0]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+[charaShake B 0.03 4 4 0.5]
+[cueSe Battle bac387 0.4]
+
+＠カリオストロ・オルタ
+ぬう！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+[charaEffectStop D bit_talk_restriction03]
+[cueSe SE_24 24_ad1411]
+[wt 1.5]
+[charaFace D 7]
+
+＠ジャンヌ・オルタ
+よっし！　サリエリ偉い！[r]合わせなさい[line 3]
+[k]
+
+[messageOff]
+[charaTalk D,G]
+[subCameraOn 2]
+[charaLayer G sub #A]
+[charaLayer U sub #A]
+[charaLayer F sub #B]
+[charaLayer V sub #B]
+[subCameraFilter #A maskEdge cut359_mask16 4 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask15 4 0,0,0,255]
+[subRenderDepth #A 2]
+[subRenderDepth #B 1]
+[charaDepth G 4]
+[charaDepth F 6]
+[charaScale G 1.2]
+[charaScale F 1.2]
+[charaScale U 1.2]
+[charaScale V 1.2]
+[charaFace G 4]
+[charaFadeinFSR G 0.1 50,150]
+[charaFadein U 0.1 -50,-150]
+[charaFace F 1]
+[charaFadeinFSL F 0.1 -20,150]
+[charaFadein V 0.1 50,-130]
+
+[charaFadeout D 0.2]
+[subRenderFadein #A 0.4 254,-120]
+[subRenderMoveEase #A 234,-170 0.4 easeOutQuart]
+[wt 0.4]
+[cueSe SE_22 22_ad1179]
+[charaEffect G bit_talk_36]
+
+＠G：ジャンヌ・オルタ
+[line 6]『[#吼え立てよ、我が憤怒:ラ ・ グ ロ ン ド メ ン ト ・ デ ュ ・ ヘ イ ン]』！
+[k]
+
+[messageOff]
+[charaTalk G,F]
+[subRenderFadein #B 0.4 -210,-220]
+[subRenderMoveEase #B -190,-170 0.4 easeOutQuart]
+[wt 0.4]
+[charaEffect F bit_talk_36]
+
+＠F：サリエリ
+[line 6]『[#至高の神よ、我を憐れみたまえ:デ ィ オ ・ サ ン テ ィ シ モ ・ ミ ゼ ル コ デ ィ ア ・ デ ィ ・ ミ]』！
+[k]
+
+
+[messageOff]
+[seStop 22_ad1179 1.0]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+[charaEffectDestroy G bit_talk_36]
+[charaEffectDestroy F bit_talk_36]
+
+[effect bit_talk_fire_wall]
+[fowardEffect bit_talk_voice02]
+[cueSe NoblePhantasm_1100300 NP_1100300_1]
+[se ad960]
+[se ad875]
+[se ad267 0.4]
+[wt 1.5]
+[seStop NP_1100300_1 2.0]
+[fadeout white 1.0]
+[wt 0.5]
+[cueSe NoblePhantasm_1100300 NP_1100300_2 0.8]
+[wait fade]
+[effectStop bit_talk_fire_wall]
+[fowardEffectStop bit_talk_voice02]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 1.5]
+[seStop NP_1100300_2 2.0]
+[charaShake A 0.04 3 3 0.7]
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.4]
+
+＠マリー・オルタ
+[line 15]ッ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠サリエリ
+ウウ……オオオオオオオオオォオオ……！
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_216 1.5]
+[cueSe SE_22 22_ad1212]
+[se ad1006]
+[charaMoveEase C 0,50 0.4 easeOutQuart]
+[charaMoveScaleEase C 1.4 0.4 easeOutQuart]
+[charaFadeout C 0.4]
+[blur motion 0.4 4 10000 0.5 0.5 0.05 100]
+[wt 0.2]
+
+[fowardEffect bit_talk_h_slash02_fs]
+[fadeout black 0.4]
+[se ad818]
+[cueSe SE_21 21_ad1091]
+[wait fade]
+
+[fowardEffectDestroy bit_talk_h_slash02_fs]
+[charaScale C 1.0]
+[blurOff motion 0.1]
+[scene 10000]
+[wt 0.1]
+[seVolume ad818 0.1 0.0]
+[fadein black 0.4]
+[wait fade]
+
+[se ad464]
+[se ad863]
+[seVolume ad818 1.0 0.3]
+[effect bit_talk_blood_rain]
+[effect bit_talk_neck_blood02]
+[wt 1.5]
+
+[fadeout black 0.4]
+[wait fade]
+
+[effectDestroy bit_talk_blood_rain]
+[effectDestroy bit_talk_neck_blood02]
+[scene 211803]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+[wt 1.5]
+[fadein black 0.4]
+[wait fade]
+
+＠ジャンヌ・オルタ
+霊核に届いた！[r]まずはこれで、一騎[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E,A]
+[charaFace E 2]
+[charaFadein E 0.7 1]
+[wt 1.4]
+[charaFace A 2]
+[charaFadein A 0 1]
+[charaFadeout E 0.7]
+[wt 1.4]
+
+＠マリー・オルタ
+いいえ？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFadein S 0.4 -60,-250]
+[effect bit_talk_29_black_red]
+[se ad960]
+[se ad439 0]
+[seVolume ad439 0.4 0.4]
+[wt 1.0]
+[seStop ad960 1.5]
+[seStop ad439 1.5]
+[se ad171 0.7]
+[wt 0.2]
+
+[charaDepth D 3]
+[charaDepth S 1]
+[charaDepth B 0]
+[charaScale D 1.4]
+[se ad671]
+[seStop ad671 1.0]
+[charaTalk D]
+[charaFace D 2]
+[charaFadeinFSL D 0.4 150,0]
+[charaMoveEaseFSL D 250,-10 1.0 easeOutExpo]
+[charaMoveScaleEase D 1.0 1.0 easeOutExpo]
+[wt 1.0]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_126 0.1]
+＠ジャンヌ・オルタ
+……臓物による擬態！？[r]ああっ、くそっ、さっきの幻術と同じ奴か！
+[k]
+
+[messageOff]
+[charaTalk D,B]
+[charaFadeout D 0.4]
+[charaFadeout S 0.4]
+[wt 0.4]
+[charaScale D 1.0]
+
+＠カリオストロ・オルタ
+ええ、その通りですとも。[r]お嬢さん。
+[k]
+
+[messageOff]
+[se ade160]
+[wt 0.7]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G,F]
+[charaFace G 8]
+[charaFace F 0]
+[subRenderFadein #A 0.3 234,-170]
+[subRenderFadein #B 0.3 -190,-170]
+
+[cueSe SE_24 24_ad1409]
+[cueSe SE_24 24_ad1410 0.3 0.5]
+[charaEffect G bit_talk_restriction03]
+[charaShake G 0.03 3 3 0.7]
+[wt 0.1]
+[se ad961]
+[seVolume ad961 0 0.6]
+[charaEffect F bit_talk_restriction03]
+[charaShake F 0.03 3 3 0.7]
+[wt 1.0]
+[seStop ad961 0.5]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[charaFace G 15]
+
+＠G：ジャンヌ・オルタ
+くっ、またコレ……ウザったいのよ！[r]消えろ……！
+[k]
+
+＠F：サリエリ
+物理的な炎ではなく……[r]精神を介して霊基、霊核を[#苛:さいな]む幻の炎、か！
+[k]
+
+[messageOff]
+[cueSeVolume 24_ad1410 0.5 0.3]
+[charaTalk F,B]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[wt 0.3]
+[subCameraFilter #A maskEdge cut359_mask20 4 0,0,0,255]
+
+＠カリオストロ・オルタ
+現代科学の[#粋:すい]を凝らした超高熱には及びませんが、[r]しかし、こと霊的な存在にはよく効きます！
+[k]
+
+＠カリオストロ・オルタ
+我らサーヴァントの本質こそは仮初めの客。[r]現実に対して、彼方の座から訪れた魂なれば、
+[k]
+
+[charaFace B 14]
+
+＠カリオストロ・オルタ
+このように！[r]一撃で葬ることはできずとも[line 3]
+[k]
+
+＠カリオストロ・オルタ
+我が幻炎、霊基にどこまでも[#纏:まと]わりつき！[r]その自由を縛りましょう！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[cueSeVolume 24_ad1410 0.5 0.5]
+
+[charaDepth I 5]
+[charaDepth D 4]
+[charaPut I 1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ジャンヌ・オルタ
+ああもう……ッ……！[r]マスター！
+[k]
+
+[messageOff]
+[cueSeStop 24_ad1410 1.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut I 3000,3000]
+
+[charaFadein S 0.4 0,-250]
+[wt 1.0]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[charaFadeout U 0.1]
+[charaFadeout V 0.1]
+
+[cueSe SE_21 21_ade665]
+[wt 1.8]
+[seStop 21_ade665 1.0]
+[wt 0.4]
+[charaLayer G normal]
+[charaLayer F normal]
+[charaLayer U normal]
+[charaLayer V normal]
+[charaEffectDestroy G bit_talk_restriction03]
+[charaEffectDestroy F bit_talk_restriction03]
+[subCameraOff]
+
+＠マリー・オルタ
+……。[r]……。
+[k]
+
+＠マリー・オルタ
+………………頑張ったと思うわ、あなたたち。でも。
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ade665]
+[charaScale E 1.1]
+[charaScale A 1.1]
+[charaTalk E,A]
+[charaFace E 0]
+[charaFadein E 0.7 1]
+[wt 0.7]
+[charaFace A 11]
+[charaFadein A 0.1]
+[wt 0.7]
+[seStop 21_ade665 0.4]
+[charaFadeout E 0.7]
+[wt 0.7]
+
+＠マリー・オルタ
+ここまでね。
+[k]
+
+＠マリー・オルタ
+魂と精神に対しての七つの試練、[r]超えられればよし。
+[k]
+
+＠マリー・オルタ
+超えられなければ、[r]敗北してしまったならば、
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ade665]
+[seStop 21_ade665 0.7]
+[charaMoveScale A 1.3 0.5]
+[charaMove A 0,20 0.5]
+[wt 1.2]
+[charaFace A 2]
+
+＠マリー・オルタ
+代償は[line 6]当然、分かっているわよね。[r][%1]。
+[k]
+
+[messageOff]
+[overlayFadein X 0.1 0,-850]
+[overlayFadein Y 0.1 0,849]
+[charaMove X 0,-736 0.7]
+[charaMove Y 0,735 0.7]
+[wt 1.0]
+
+＠
+彼女の手が、[r]断頭の黒刃を軽々と持ち上げる。
+[k]
+
+＠
+迷っている暇はない。[r]きっと、二秒と経たずに刃はあなたを断ち切る。
+[k]
+
+[messageOff]
+[wt 0.7]
+＠
+だから、あなたは[line 3]
+[k]
+
+[messageOff]
+[charaDepth A 3]
+[charaFadein T 0.7 0,-250]
+[charaMoveEase T 0,-200 1.7 easeOutQuad]
+[charaMoveEase A 0,70 1.7 easeOutQuad]
+[charaFadeout A 0.7]
+[charaMove X 0,-850 0.7]
+[charaMove Y 0,849 0.7]
+[wt 0.7]
+[charaFadeout X 0.1]
+[charaFadeout Y 0.1]
+
+[wt 1.0]
+[charaDepth A 6]
+
+？1：（礼装で、幻炎を消す）
+？2：（黒い影に手を伸ばす）
+？！
+
+[cueSe SE_21 21_ade665 0.6]
+[seStop 21_ade665 0.7]
+[wt 0.4]
+[charaScale A 1.5]
+[charaFace A 0]
+[charaFadein A 0.4 0,90]
+[charaMoveEase T 0,-250 1.0 easeOutQuad]
+[charaMoveEase A 0,0 1.0 easeOutQuad]
+[wt 0.6]
+
+[wt 1.2]
+[charaFace A 2]
+
+＠マリー・オルタ
+駄目よ。
+[k]
+
+[charaFace A 3]
+
+＠マリー・オルタ
+…………残念でした。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_126 0.2]
+[fadeout black 0.2]
+[wait fade]
+[se ad818]
+[wt 1.0]
+[seStop ad818 0.7]
+[se ad464 0.7]
+[se ad863 0.7]
+[wt 3.5]
+
+[soundStopAll]
+[end]
+

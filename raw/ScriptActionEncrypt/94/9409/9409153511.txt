@@ -1,0 +1,605 @@
+
+＄94-09-15-35-1-1
+
+
+
+
+
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1059000 1 ヤマトタケル]
+[charaSet B 1060000 1 宮本伊織]
+[charaSet C 1098181800 1 オデュッセウス]
+
+[charaSet D 1098284200 1 紅玉の書]
+[charaSet E 1098284220 1 紅玉の書]
+[charaPut D 2000,2000]
+[charaEffect D bit_talk_small_brilliant]
+
+[charaSet F 98006100 1 ボスエネミー]
+[charaSet G 98006100 1 ボスエネミー]
+[charaSet H 98006100 1 ボスエネミー]
+[charaScale F 1.2]
+[charaScale G 1.2]
+[charaScale H 1.2]
+
+[sceneSet I 205301 1]
+[sceneSet J 10001 1]
+[charaScale J 1.05]
+
+[sceneSet K 102200 1]
+[sceneSet L 102200 1]
+
+[subCameraOn 2]
+
+[charaLayer A sub #A]
+[charaLayer K sub #A]
+[charaLayer B sub #B]
+[charaLayer L sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask04 3 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask04 3 0,0,0,255]
+
+[subRenderScale #A 1.15]
+[subRenderScale #B 1.15]
+
+[charaScale A 1.1]
+[charaScale B 1.15]
+[charaScale K 1.2]
+[charaScale L 1.2]
+
+[charaDepth A 7]
+[charaDepth B 6]
+[charaDepth K 5]
+[charaDepth L 4]
+
+[charaFace A 0]
+[charaFadein A 0.1 200,270]
+[charaFadein K 0.1 -50,-20]
+
+[charaFace B 0]
+[charaFadein B 0.1 -200,270]
+[charaFadein L 0.1 50,-20]
+[wt 0.1]
+
+[scene 102200]
+
+[bgm BGM_BATTLE_249 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.3]
+
+[effect bit_talk_impactlanding]
+[se ade311]
+[charaMoveScale F 1.4 0.2]
+[charaMove F 0,50 0.2]
+[blur motion 0.3 4 100 0.5 0.5 0.03 100]
+[wt 0.15]
+[charaFadeout F 0.1]
+[blurOff motion 0.1]
+[wt 0.1]
+[charaScale F 1.2]
+[wt 1.0]
+
+[charaTalk off]
+[subRenderFadein #A 0.2 -150,-290]
+[subRenderMoveEase #A -50,-290 0.4 easeOutExpo]
+[subRenderFadein #B 0.2 150,-480]
+[subRenderMoveEase #B 50,-480 0.4 easeOutExpo]
+[se ad671]
+[seStop ad671 1.0]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 3]
+
+＠ヤマトタケル
+まったく……しつこいな！
+[k]
+
+[charaFace B 0]
+
+＠宮本伊織
+しかも大物揃いと来ている。[r]これも江戸城から[#溢:あふ]れる魔力の影響か？
+[k]
+
+[messageOff]
+[subRenderMoveEase #A 50,-290 0.4 easeInOutExpo]
+[subRenderMoveEase #B -50,-480 0.4 easeInOutExpo]
+[wt 0.2]
+[subRenderFadeout #A 0.2]
+[subRenderFadeout #B 0.2]
+[wt 0.2]
+
+[effectDestroy bit_talk_impactlanding]
+
+[charaDepth F 3]
+[charaDepth G 2]
+[charaDepth H 1]
+
+[charaTalk F,G,H]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[se ade311]
+[wt 0.2]
+[charaFace G 0]
+[charaFadeinFSL G 0.4 -320,0]
+[wt 0.2]
+[se ade311]
+[charaFace H 0]
+[charaFadeinFSR H 0.4 320,0]
+[wt 1.5]
+
+？1：また増えた！
+
+[charaPut B -180,270]
+[charaTalk B]
+[charaFace B 0]
+[subRenderFadein #B 0.1 0,-380]
+
+＠宮本伊織
+……これ以上はきついか。[r]一旦退くか、[%1]？
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.2]
+
+？2：しかもまた大物！
+
+[charaPut A 180,270]
+[charaTalk A]
+[charaFace A 4]
+[subRenderFadein #A 0.1 0,-380]
+
+＠ヤマトタケル
+無駄な消耗は避けたいが……[r]仕方あるまい！　宝具を抜くぞ！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+
+？！
+
+[charaFadeout F 0.2]
+[charaFadeout G 0.2]
+[charaFadeout H 0.2]
+[wt 0.2]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[wt 0.4]
+
+[charaScale A 1.0]
+[charaScale B 1.0]
+
+[subCameraOff]
+[charaLayer A normal]
+[charaLayer B normal]
+[charaLayer K normal]
+[charaLayer L normal]
+
+[bgmStop BGM_BATTLE_249 2.5]
+
+＠？？？
+大物[line 3]
+[k]
+
+＠？？？
+大物！　大怪獣！　大型兵器！[r]大いに結構！
+[k]
+
+＠？？？
+大きなことは概ね良いことではある！[r]はは、冒険野郎の心が[#躍:おど]る！
+[k]
+
+[messageOff]
+[effect bit_talk_mgn_light]
+[se ad862]
+[se ad875]
+[se ad696]
+[seVolume ad696 0 0.6]
+[se ade393]
+[seVolume ade393 0 0.3]
+[wt 0.5]
+[se ad914]
+[effect bit_talk_impactlanding]
+[se ad322]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[shake 0.05 3 3 1.0]
+[wt 1.5]
+[seStop ade393 2.0]
+[seStop ad875 1.2]
+[bgm BGM_BATTLE_246 0.1]
+[wt 2.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ヤマトタケル
+何だ……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠オデュッセウス
+こちらも鬼札を切る！[r]木馬で出るぞ！
+[k]
+
+[messageOff]
+[se ad39]
+[effect bit_talk_36]
+[wt 1.5]
+[fadeout white 0.5]
+[bgm BGM_BATTLE_246 0.5 0]
+[wait fade]
+
+[effectDestroy bit_talk_36]
+[charaFadeout C 0.1]
+
+[scene 10000]
+[overlayFadein J 0.1 0,-200]
+[wt 0.1]
+
+[fadein white 0.1]
+[wait fade]
+
+[criMovie talk_mov215 bgmPlay false]
+[wt 0.3]
+[charaFadeout J 0.5]
+[wt 20.0]
+
+[fadeout white 1.0]
+[wait fade]
+
+[scene 102200]
+[wt 1.0]
+
+[fadein white 1.0]
+[bgm BGM_BATTLE_246 1.0 1.0]
+[wait fade]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠宮本伊織
+木馬……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+[charaEffect E bit_talk_small_brilliant]
+[se adm19]
+[seVolume adm19 0 0]
+[seVolume adm19 1.0 0.6]
+
+＠紅玉の書
+おほうっ！[r]何と立派な[#大絡繰:おおからくり]じゃ！
+[k]
+
+[seStop adm19 1.0]
+
+＠紅玉の書
+おおお、あれならば！[r]かつてライダーが召喚せし大怪異とも渡り合えよう！
+[k]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaEffectDestroy E bit_talk_small_brilliant]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ヤマトタケル
+……大興奮だな、お爺さん。
+[k]
+
+
+？1：オデュッセウス！
+
+[charaFace A 13]
+
+＠ヤマトタケル
+おでゅっせうす？[r]何処かで聞いたことがあるような……
+[k]
+
+[charaFace A 0]
+
+＠ヤマトタケル
+そうだ、キルケー。[r][#逸:はぐ]れのキャスターがそのような名を……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠オデュッセウス
+……ほう？[r]彼女がこの地に来ていたのか？
+[k]
+
+＠オデュッセウス
+ならば俺が喚ばれたのも、[r]そういう[#縁:えん]かもしれん。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+？2：いいよね、巨大ロボ
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠オデュッセウス
+ああ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠宮本伊織
+……成る程。[r]確かに悪くないな。むしろ……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+[se adm19]
+[seVolume adm19 0 0]
+[seVolume adm19 1.0 0.6]
+
+＠紅玉の書
+うむうむ！[r]良いのう、良いのう！
+[k]
+
+[messageOff]
+[seStop adm19 0.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut D 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+？！
+
+[se ade355]
+[wt 0.3]
+
+[charaCrossFade C 4038001 8 0.4]
+[se ade367]
+[se ad166]
+[seStop ad166 0.5]
+[wait charaCrossFade C]
+[wt 0.2]
+
+[charaCrossFade C 4038001 0 0.3]
+[wt 0.3]
+
+＠オデュッセウス
+改めて名乗ろう。俺はオデュッセウス。[r]この地に紐づけられた、[#逸:はぐ]れのライダーだ。
+[k]
+
+？1：[%1]です
+
+？！
+
+[charaFace C 1]
+
+＠オデュッセウス
+良い目をしている。[r]長く険しい旅を乗り越えてきたのだろう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠宮本伊織
+オデュッセウス。我らは……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠オデュッセウス
+皆まで語らずともいい。[r][line 3]アレのことだな？
+[k]
+
+[messageOff]
+[charaScale I 1.2]
+[overlayFadein I 1.0 0,-260]
+[charaMove I 0,-300 10.0]
+[wt 2.0]
+
+[charaFadeout C 0.1]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+＠オデュッセウス
+禍々しく……[r]そうとも、悲しい風が吹いている。
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFadeout I 1.0]
+[wt 1.0]
+
+＠ヤマトタケル
+……悲しい？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠オデュッセウス
+この特異点は牢獄だ。
+[k]
+
+＠オデュッセウス
+渦巻く因果の輪から[#脱:ぬ]け出せず、[r]囚われた魂は罪業を繰り返している。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ヤマトタケル
+……チエモンのことか？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 1.5]
+
+[charaFace C 0]
+
+＠オデュッセウス
+[%1]。[r][line 3]おまえが解き放ってやるんだ。
+[k]
+
+
+[messageOff]
+
+[wt 0.4]
+[se ad658]
+[cueSe Servants_403800 bac1574]
+[fadeMove b9ffff 0.2 0.8]
+[wait fade]
+[charaCrossFade C 1098181800 0 0.2]
+[fadeMove b9ffff 0.4 0.0]
+[wait charaCrossFade C]
+[wait fade]
+[wt 0.4]
+
+＠オデュッセウス
+戦力が必要なのだろう？[r]俺ももう一度、木馬で出よう。
+[k]
+
+＠オデュッセウス
+おまえたちの露払いくらいにはなるだろうさ。
+[k]
+
+＠オデュッセウス
+では……いくぞ！
+[k]
+
+[messageOff]
+[effect bit_talk_mgn_light02]
+[se ad862]
+[se ad875]
+[wt 0.3]
+[charaFadeout C 0.1]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠宮本伊織
+……[#疾風:はやて]のような男だな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+[se adm19]
+[seVolume adm19 0 0]
+[seVolume adm19 1.0 0.6]
+
+＠紅玉の書
+格好[#良:え]えのう、格好[#良:え]えのう。
+[k]
+
+[seStop adm19 0.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaEffectDestroy D bit_talk_small_brilliant]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ヤマトタケル
+…………お爺さんがおかしくなった。
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_BATTLE_246 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

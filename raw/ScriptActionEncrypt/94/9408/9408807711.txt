@@ -1,0 +1,398 @@
+
+
+＄94-08-80-77-1-1
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 1098276000 1 クロエ]
+[charaSet C 1098274400 1 アルトリア・キャスター]
+
+[charaSet D 6034000 1 牛若丸]
+[charaSet E 11010001 1 平景清]
+
+[charaSet F 1045000 1 巴御前]
+
+[charaSet G 6041000 1 鬼一法眼]
+[charaSet H 1098156400 1 メイヴ]
+
+[charaSet S 5009000 1 エフェクト用ダミー]
+
+[scene 106300]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+
+[label INPUT_SELECT_BRANCH_1]
+
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+＠鬼一法眼
+ははははは！　やりおる、やりおる！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠メイヴ
+痛たたたたたた……[wt 0.6][charaFace H 0][r]やるじゃない。どう？　そろそろ目は醒めた？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠牛若丸
+………………。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+
+[branch conf01]
+
+[label INPUT_SELECT_BRANCH_2]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[charaShake E 0.02 3 3 0.5]
+＠平景清
+むうっ……強敵、か……！[r]無念……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠牛若丸
+ま、まだです！[r]まだやれます、お師さま！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠鬼一法眼
+いいや、そろそろ頃合いだ。僕は飽きたぞ。[r]後はこちらの浜辺の女王にお任せしよう！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[se ad173]
+[wt 0.4]
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.4 50,0]
+[charaMove H 0,0 0.4]
+[wt 0.4]
+[seStop ad173 0.2]
+[wt 0.6]
+
+[branch conf01]
+
+[label conf01]
+
+＠メイヴ
+まったく手間掛けさせて。[wt 0.7][charaFace H 5][r]何を書くべきか、じゃないわよ。思い出しなさい！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.5]
+[charaFace H 11]
+[wt 0.5]
+[charaMoveReturn H 0,8 1.0]
+[wt 1.8]
+
+[se ad186]
+[charaPut S 1]
+[charaEffect S bit_talk_41_fs]
+[charaFace H 2]
+＠メイヴ
+[f large]ミスコン！　でしょ！
+[k]
+
+＠メイヴ
+夏の霊基の貴女がやるべきは、[r]それよ。[#殺戮:さつりく]も首飛ばしもぜーんぶ後に回して[line 3]
+[k]
+
+＠メイヴ
+新しい[#浜辺の女王:ビ  ー  チ  ク  イ  ー  ン]を目指しなさい！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+[charaEffectDestroy S bit_talk_41_fs]
+
+[bgm BGM_MIZUGI_2017 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠牛若丸
+！[messageShake 0.05 4 3 0.3]！
+[k]
+
+＠牛若丸
+夏の霊基の……[r]私が、やるべきこと……
+[k]
+
+[charaFace D 4]
+＠牛若丸
+確かに、かつての幾巡目かの夏の戦いは[r]我が霊基霊核に深く刻まれている[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+
+＠メイヴ
+そうでしょう、そうでしょう。[r]いつかの貴女は私と共に夏の熱を知った。
+[k]
+
+＠メイヴ
+なら、逃れられる筈がないじゃない。[r]諦めなさいな。
+[k]
+
+[charaFace H 1]
+
+＠メイヴ
+貴女は夏の熱を求めなくちゃ。[r]現実だろうが、デジタルの世界だろうが。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠牛若丸
+……。[r]……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠平景清
+牛若丸……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠牛若丸
+…………しかしだ。メイヴ。[r]ミスコンのゲームというのは、流石にないのでは？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadeinFSL C 0.1 0]
+[charaFace A 12]
+[charaFadeinFSR A 0.1 2]
+
+＠アルトリア・キャスター
+そ、そうなの！？
+[k]
+
+[charaFace A 14]
+＠マシュ
+どうでしょう！[r]わたしは寡聞にしてゲームのことはあまり……。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠メイヴ
+んー。[r]じゃあ、アイドルのゲームはどう？
+[k]
+
+＠メイヴ
+水着にもなったりするじゃない？[r]踊るし、唄うし。限りなく夏の私たちに近くない？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠牛若丸
+確かに！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 29]
+[charaFadeinFSL C 0.1 0]
+[charaFace A 4]
+[charaFadeinFSR A 0.1 2]
+
+＠アルトリア・キャスター
+そ[messageShake 0.05 4 3 0.3]うなの！？
+[k]
+
+[charaFace A 14]
+＠マシュ
+ん～～～～、どうでしょう！
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[bgmStop BGM_MIZUGI_2017 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+
+
+[charaSet A 1098276910 1 マシュ]
+
+[scene 147900]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠巴御前
+……というわけで、[r]あいどる題材のげえむを見繕ってお渡ししたところ。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠牛若丸
+このゲームに出てくるアイドル、[r]どことなく面影が兄上に似ているのです！
+[k]
+
+＠牛若丸
+それだけではありません。[r]他にも、[#静:しずか]にどこか似たアイドルもいて！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠平景清
+不思議だ。性別さえ異なるのに、[r][#維盛:これもり]殿に面影が似ている者がいる、等と[line 3]
+[k]
+
+？1：すっかりハマっている！
+？2：それぞれ推しキャラができたのかな
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠クロエ
+推しアイドル、っていうか[r][#推しのアイドルキャラ]ができたって訳ね！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+おめでとうございます。[r]あとはその気持ちを原稿にぶつけるだけですね！
+[k]
+
+[charaFace A 1]
+
+＠マシュ
+ええと、予定原稿は……[wt 0.6][charaFace A 4][r]『アイドルゲー、推しキャラ掌編小説×２』です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アルトリア・キャスター
+やったね！[r]それじゃ、いよいよ最後の原稿だ！
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStopEnd BGM_EVENT_94 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

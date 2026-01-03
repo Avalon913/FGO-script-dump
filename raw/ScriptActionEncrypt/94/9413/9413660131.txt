@@ -1,0 +1,372 @@
+
+
+＄94-13-66-01-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3056000 1 ゴッホ]
+[charaSet B 3056000 1 ゴッホ（演出用）]
+[charaSet C 1098257310 1 ダ・ヴィンチ]
+[charaSet D 1098305600 1 ツタンカーメン]
+[charaSet E 1098305600 1 ツタンカーメン（演出用）]
+[charaSet F 2053000 1 ツタンカーメン（演出用）]
+[charaSet G 1098305500 1 ツタンマスクハル]
+[charaSet H 1098305500 1 ツタンマスクハル（シルエット）]
+[charaFilter H silhouette 00000080]
+[charaSet I 1098305500 1 ツタンマスクハル（演出用）]
+
+[sceneSet O 231400 1]
+[sceneSet P 231400 1]
+[sceneSet Q 231100 1]
+[sceneSet R 231100 1]
+
+[imageSet T back10000 1 1]
+[charaScale T 1.05]
+[imageSet U back10000 1 1]
+[charaScale U 1.05]
+
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用2]
+
+[charaPut V 2000,2500]
+[charaEffect V bit_talk_10_LowLevel]
+
+[scene 231400]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠ゴッホ
+ハア、ハア……こ、ここまで来れば……
+[k]
+
+？1：いくら走っても行き止まりにならない……
+
+[bgmStop BGM_EVENT_70 1.5]
+
+＠D：？？？
+無理もありませぬ。[r]ここには果てがありませぬゆえ。
+[k]
+
+？2：それより、さっきの声は！？
+
+[bgmStop BGM_EVENT_70 1.5]
+
+＠D：？？？
+[#己:うぬ]はこちらにござりまする。
+[k]
+
+？！
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth O 3]
+[charaDepth G 4]
+[charaDepth H 5]
+[charaDepth B 6]
+
+[charaScale B 1.2]
+[charaScale O 1.2]
+
+[charaTalk H,G]
+[charaFace B 14]
+[charaFadein B 0.6 250,0]
+[charaFadein O 0.6 0,-260]
+[wt 0.6]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[charaScale G 1.5]
+[charaScale H 1.5]
+[charaFace H 0]
+[charaFadein H 0.4 -250,0]
+[wt 0.4]
+
+[charaFace G 0]
+[charaFadein G 0.4 -250,0]
+[wt 0.7]
+
+[charaFadeout H 0.7]
+[wt 1.2]
+
+[bgm BGM_EVENT_122 0.1]
+[charaTalk B]
+[charaFace B 31]
+＠B：ゴッホ
+ハ[messageShake 0.05 4 3 0.7]ゥアアアアア！？　こんどは顔デカおばけえええ！！
+[k]
+
+
+＠D：？？？
+これまた失礼にて……下がりませ、[#顔:ハル]。[bgmStop BGM_EVENT_122 1.5]
+[k]
+
+[messageOff]
+[se ad598]
+[charaMoveEase G -380,0 0.5 easeOutSine]
+[charaFadeout G 0.5]
+[seStop ad598 1.2]
+[wt 1.5]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0]
+[charaFadeout O 0]
+[scene 10000]
+[wt 0.2]
+
+[wipein rectangleStripRightToLeft 0.2 1.0]
+[wait wipe]
+[wt 0.2]
+
+
+[charaTalk off]
+
+[subCameraOn 2]
+
+[charaLayer D sub #A]
+[charaLayer Q sub #A]
+
+[charaLayer E sub #B]
+[charaLayer R sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask20 5 140,117,56,255]
+[subCameraFilter #B maskEdge cut359_mask08 5 140,117,56,255]
+
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+
+[charaDepth Q 2]
+[charaDepth D 3]
+
+[charaScale Q 1.2]
+[charaScale D 1.4]
+
+[charaFace D 6]
+[charaFadein D 0 -250,85]
+[charaFadein Q 0 -200,-40]
+
+[charaDepth R 2]
+[charaDepth E 3]
+
+[charaScale R 1.2]
+[charaScale E 1.2]
+
+[charaFace E 6]
+[charaFadein E 0 -60,950]
+[charaFadein R 0 0,50]
+
+[se ad442]
+[subRenderFadeinFSR #A 0.3 350,-125]
+[subRenderMoveEaseFSR #A 350,-225 0.3 easeOutCubic]
+[wt 0.3]
+[charaMove D -250,75 1.5]
+[charaMove Q -200,-50 1.5]
+[wt 1.6]
+
+[subRenderFadeout #A 0.3]
+[subRenderMoveEaseFSR #A 350,-325 0.5 easeOutCubic]
+
+[cueSe SE_24 24_ade1007]
+[cueSeStop 24_ade1007 1.2]
+[subRenderFadein #B 0.3 -150,-350]
+[subRenderMoveEase #B 0,-350 0.3 easeOutCubic]
+[wt 0.3]
+[charaMove E -50,950 1.5]
+[charaMove R 10,50 1.5]
+[wt 1.5]
+
+[subRenderFadeout #B 0.3]
+[subRenderMoveEase #B 150,-350 0.5 easeOutCubic]
+[wt 0.3]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaFadeout D 0]
+[charaFadeout E 0]
+[charaFadeout Q 0]
+[charaFadeout R 0]
+[subCameraOff]
+[charaLayer D normal]
+[charaLayer E normal]
+[charaLayer Q normal]
+[charaLayer R normal]
+[charaScale D 1.0]
+[charaScale E 1.0]
+[charaScale Q 1.0]
+[charaScale R 1.0]
+[wt 0.1]
+
+[scene 231400]
+
+[charaSet D 2053000 1 ツタンカーメン]
+
+[charaTalk off]
+[charaDepth G 2]
+[charaDepth D 3]
+[charaDepth O 4]
+[charaDepth I 5]
+[charaDepth F 6]
+[charaDepth T 8]
+[charaDepth U 8]
+
+[charaScale F 1.4]
+[charaScale I 1.8]
+[charaScale O 1.4]
+
+[charaFace F 0]
+[charaFadein F 0 0,290]
+[charaFadein O 0 0,-200]
+
+
+[charaScale G 1.2]
+[charaFace D 0]
+[charaFace G 0]
+[charaFadein D 0 1]
+[charaFadein G 0 -200,-15]
+[wt 0.5]
+
+[fadein black 0.6]
+[wait fade]
+[wt 0.25]
+
+[se ad598]
+[wt 0.1]
+[charaFace I 0]
+[charaFadein I 0.4 0,240]
+[charaMoveEase I -250,240 0.6 easeOutSine]
+[seStop ad598 1.1]
+[wt 1.5]
+
+[bgm BGM_EVENT_79 0.1]
+[charaMoveEase F 0,75 1.4 easeInOutSine]
+[charaMoveEase I -250,30 1.4 easeInOutSine]
+[charaMoveEase O 0,-370 1.4 easeInOutSine]
+[wt 2.0]
+
+[charaFadeout F 0.8]
+[charaFadeout I 0.8]
+[charaFadeout O 0.8]
+[wt 1.4]
+
+
+？1：エジプトの英霊……？
+
+[charaTalk on]
+[charaFace D 0]
+＠D：？？？
+はいい。お察しどおり、遠くナイルの恵みの地より、[r]奇なる因果でまかり越した、名も無き霊にござりまする。
+[k]
+
+？2：日本の英霊……？
+
+[charaTalk on]
+[charaFace D 11]
+＠D：？？？
+ほ。なるほど、日[#出:い]ずる国。[r]確かにこの装い、通ずるところがござりまするか。
+[k]
+
+[charaFace D 6]
+＠D：？？？
+しかし、否にて。[#己:うぬ]は遠く[#埃及:エジプト]より、[r]奇なる因果でまかり越した、名も無き霊にござりまする。
+[k]
+
+？！
+
+[charaFace D 8]
+＠D：？？？
+しかし[#己:うぬ]、生者との契約を望むものなれば、[r]真名開示するが道理にござりましょうね。
+[k]
+
+[charaFace D 1]
+＠D：？？？
+[#強き牛、神の形:カアネケット・トゥト・メスウト]。[#上下治むる法の源:ネフェル・ヘプウ・セゲレク・タアウィ]。[#神々満たす宝の兆:ウチェス・カウ・スヘテプ・ネチェルウ]。[r][#日の出を司る主:ネ  ブ  ・  ケ  ペ  ル  ウ  ・  ラ  ー]。[#王神の生ける似姿:ト  ゥ  ト  ・  ア  ン  ク  ・  ア  メ  ン]。
+[k]
+
+[charaFace D 7]
+＠D：？？？
+以上、[#己:うぬ]が名にござりまする。[r]くそ[#長:なご]うござりまするので、くそとでも呼ばれませ。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaPut V 1]
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 1]
+＠ダ・ヴィンチ
+いやいや、立派な[#五重称号:ロイヤル・ティテュラリー]だよ！[r]『名も無き』とはまた謙遜したものだ！
+[k]
+
+＠ダ・ヴィンチ
+そこの英霊、けっこうな有名人だよ！[r][%1][&君:ちゃん]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+[charaFadein G 0.1 -200,-15]
+＠D：？？？
+いいえ、いいええ。[r][#己:うぬ]が名など、後世に残る道理はありませぬ。
+[k]
+
+[charaFace D 10]
+＠D：？？？
+が、なぜか分かりまする……[r]こう名乗れば、通ずるかもと。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_79 1.5]
+
+[charaDepth G 2]
+[charaDepth D 3]
+[charaDepth O 4]
+[charaDepth I 5]
+[charaDepth E 6]
+
+[charaScale O 1.2]
+[charaScale I 1.4]
+[charaScale E 1.2]
+
+[charaTalk D,E]
+[charaFace I 0]
+[charaFace E 10]
+[charaFadein I 1.0 -225,0]
+[charaFadein E 1.0 0,30]
+[charaFadein O 1.0 0,-260]
+[wt 1.0]
+[charaFadeout G 0.1]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[charaFace E 0]
+＠E：？？？
+[#王神の生ける似姿:ト  ゥ  ト  ・  ア  ン  ク  ・  ア  メ  ン]……[#ツタンカーメン]。[r]その名がお耳に馴染むなら、そうお呼び下さりませ。
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

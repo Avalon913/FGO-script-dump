@@ -1,0 +1,891 @@
+
+＄94-08-25-11-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098261000 1 ドラコー]
+[charaSet B 1057000 1 セタンタ]
+[charaSet C 6048001 1 ロクスタ]
+[charaSet D 4006002 1 ゲオルギウス]
+
+[charaSet E 1098217900 1 海魔１]
+[charaSet F 1098217900 1 海魔２]
+[charaSet G 1098217900 1 海魔３]
+[charaSet H 25010002 1 モレー]
+
+[charaSet I 1098221600 1 暗黒の仔山羊]
+
+[charaSet J 1098266500 1 泥の巨人]
+
+[charaSet K 1098173500 1 エフェクト用]
+[charaSet L 1098173500 1 エフェクト用1]
+[charaSet M 1098173500 1 エフェクト用2]
+[charaSet P 1098173500 1 エフェクト用3]
+
+[charaSet N 1098221600 1 演出用立ち絵]
+[sceneSet O 137201 1]
+[charaScale O 1.2]
+
+[charaSet Q 1098173500 1 エフェクト用4]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.5]
+
+[se bac14]
+[se bac138]
+[effect bit_talk_x_slash01]
+
+[wt 0.1]
+[effect bit_talk_x_slash02]
+[wt 0.1]
+[se bac14]
+[se bac138]
+
+[wt 0.2]
+[effect bit_talk_x_slash03]
+[wt 0.1]
+[se bac14]
+[se bac138]
+
+
+[fadeout black 0.5]
+[wait fade]
+
+[scene 137201]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth E 2]
+[charaDepth G 3]
+[charaDepth F 4]
+
+[fadein black 0.1]
+[wait fade]
+
+[charaFace E 0]
+[charaFadeinFSR E 0.1 300,0]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[charaFace G 0]
+[charaFadeinFSL G 0.1 -300,0]
+
+[wt 0.3]
+
+[se ad1051]
+[se bac389]
+[effect bit_talk_claw_red02]
+[wt 0.5]
+
+[charaShake E 0.03 2 2 0.3]
+[wt 0.1]
+[charaShake F 0.05 2 2 0.6]
+[charaShake G 0.05 2 2 0.6]
+[wt 0.7]
+
+[charaSpecialEffect E enemyErasure 1 1.5]
+[charaSpecialEffect F enemyErasure 1 1.5]
+[charaSpecialEffect G enemyErasure 1 1.5]
+[cueSe Battle ba6]
+[wt 2.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠ドラコー
+所詮は三文芝居。我が劇場には似合わぬ演目よ。[r]味も酷い。毒杯の方が幾らかマシというもの。
+[k]
+
+[charaFace A 4]
+＠ドラコー
+よくもここまで無様な皿を[#饗:きょう]してくれたものだ。[r]その罪、万死に値するが別に構うまい？
+[k]
+
+＠ドラコー
+元より生かしておくつもりはないのだからな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaDepth H 2]
+[charaDepth K 3]
+
+[charaDepth A 4]
+[charaDepth I 5]
+[charaDepth L 6]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+＠モレー
+[#こいつはことだぜ:オ     ー     マ     イ     ゴ     ー     ト]！　おっかねー。[r]陛下のお口には合いませんでしたか。そいつは残念。
+[k]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaFace H 14]
+＠モレー
+それじゃあ[#山羊肉:シェーヴル]でジンギスカンなんて如何です？
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ade631]
+[effect bit_talk_easy_spell_r]
+[seStop 21_ade631 1.2]
+[wt 1.0]
+[bgm BGM_EVENT_126 0.1]
+
+[cueSe SE_22 22_ad1213]
+[charaPut K 0,0]
+[charaEffect K bit_talk_06_b3]
+[charaPut Q 0,0]
+[charaEffect Q bit_talk_suspicious_moya]
+[wt 0.7]
+
+[charaFace H 2]
+＠モレー
+[line 3]母と仔と堕落の御名において！
+[k]
+
+＠モレー
+いあ！　暗黒の地母神！[r]千の仔を[#孕:はら]みし、豊穣の担い手よ！
+[k]
+
+[seVolume 22_ad1213 0.2 0.4]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut K 2000,2000]
+[charaPut Q 2000,2000]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠ゲオルギウス
+なんという禍々しいオーラ！[r]これは……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[seVolume 22_ad1213 0.2 1.0]
+[charaPut Q 0,0]
+[charaPut K 0,0]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠モレー
+エロイム・エッサイム　エロイム・エッサイム[r]我は求め訴えたり！
+[k]
+
+[bgmStop BGM_EVENT_126 1.0]
+
+[messageOff]
+[seStop 22_ad1213 1.0]
+[se ade390]
+[fadeout white 1.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[charaSet E 1098173500 1 エフェクト用5]
+[charaScale E 1.5]
+
+[sceneSet F 137201 1]
+[charaScale F 1.3]
+
+[charaSet G 1098221600 1 暗黒の仔山羊1]
+[charaScale G 1.3]
+
+[charaPut K 2000,2000]
+[charaEffectStop K bit_talk_06_b3]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,20]
+[charaPut M 0,0]
+[charaEffect M bit_talk_charge_ppl02]
+[charaFadein F 0.1 0,-220]
+
+[charaDepth F 2]
+[charaDepth G 3]
+[charaDepth M 4]
+[charaDepth Q 5]
+
+[wt 1.0]
+
+[se ad241]
+[se ad308]
+[se ad357]
+
+[charaMove G 0,0 2.0]
+[charaMove F 0,-240 2.0]
+
+
+[fadein white 1.0]
+[wait fade]
+[bgm BGM_BATTLE_33 0.1]
+[wt 2.0]
+
+[seStop ad357 1.0]
+[seStop ad308 1.0]
+[seStop ad241 1.0]
+[charaPut Q 2000,2000]
+[charaPut M 2000,2000]
+[charaFadeout G 0.3]
+[charaFadeout F 0.3]
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ゲオルギウス
+[line 3][#悪魔:バフォメット]ですか！
+[k]
+
+[charaScale I 1.0]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+＠モレー
+うん、今回はそっちの方が近いかなー。
+[k]
+
+＠モレー
+壊れかけの世界とはいえ、まがい物の神様を[r]降ろせるほど、[#此処:こ　こ]は曖昧でも、いい加減でもない[line 3]
+[k]
+
+[charaFace H 14]
+＠モレー
+使ってる素材が素材だしねー。[r]けっこうマジメに悪魔してくれるんじゃない？
+[k]
+
+[messageOff]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[charaPut Q 0,0]
+[wt 0.2]
+
+[se ad1018]
+[shake 0.03 2 2 1.5]
+
+[wt 2.2]
+
+[charaPut Q 2000,2000]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaDepth A 2]
+[charaDepth C 3]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 0]
+
+[charaFace A 3]
+[charaFadein A 0.1 2]
+＠ロクスタ
+ネロさま、ネロさま。この感じ……
+[k]
+
+＠ドラコー
+ああ、あの中にいるな。
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth I 2]
+[charaDepth L 3]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+[charaPut Q 0,0]
+
+[cueSe SE_21 21_ad1108]
+[charaPut L 0,0]
+[charaEffect L bit_talk_20re 0,-50]
+[wt 2.0]
+[seVolume 21_ad1108 0.3 0.5]
+
+＠ドラコー
+[line 3]魔獣赫イラだ。
+[k]
+
+[messageOff]
+
+[seStop 21_ad1108 0.5]
+[charaEffectStop L bit_talk_20re]
+[wt 1.0]
+
+＠暗黒の仔山羊
+[line 9]！
+[k]
+
+[messageOff]
+
+[se ad1018]
+[wt 0.7]
+
+[se ad678]
+[charaMoveScale A 1.1 0.1]
+[charaMove I 0,10 0.2]
+[charaMoveScale I 1.1 0.2]
+[charaFadeout I 0.2]
+[charaPut Q 2000,2000]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,10]
+[wt 0.2]
+
+[charaDepth A 2]
+[charaDepth E 3]
+
+[se ad85]
+[charaPut E -80,-50]
+[charaEffect E bit_talk_claw]
+[wt 0.2]
+[charaMoveScale I 1.0 0.1]
+
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[cueSe SE_21 21_ad1064]
+[se ad496]
+[seStop ad496 1.5]
+[charaFace A 4]
+[effect bit_talk_14]
+[charaMove A 0,0 0.2]
+[charaMoveScale A 1.0 0.2]
+[wt 0.8]
+
+＠ドラコー
+……[#此奴:こやつ]。
+[k]
+
+[messageOff]
+
+[effect bit_talk_14 100,50]
+[se ad170]
+[cueSe SE_21 21_ad1064]
+[charaShake A 0.05 2 2 0.3]
+[wt 0.2]
+
+[effect bit_talk_14 -100,-100]
+[se ad170]
+[cueSe SE_21 21_ad1064]
+[charaShake A 0.05 2 2 0.3]
+[wt 0.2]
+
+[effect bit_talk_blow02 0,0]
+[wt 0.2]
+[se ad170]
+[cueSe SE_21 21_ad1064]
+[charaShake A 0.05 2 2 0.3]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠ロクスタ
+あの山羊野郎、ネロさまばかり狙いやがって！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+＠モレー
+やっぱり本体に惹かれるんじゃない？
+[k]
+
+＠モレー
+より良い器が手に入るなら、[r]あたし的にも[#バッチグー:ト   レ   ビ   ア   ン]だし。
+[k]
+
+＠モレー
+残りの魔獣赫も全部取り込んで、[r]ソドムズビースト真体を器にすれば[line 3]
+[k]
+
+[charaFace H 9]
+＠モレー
+まがりなりとも[#堕ちた女神:ハ    ー    ロ    ッ    ト]だ。[r]本当に我らが[#邪神:は　は]を降ろせるかもしれない！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠ドラコー
+ふざけるなよ。[r]狂人の妄想如きが神などと[line 3]
+[k]
+
+[messageOff]
+
+[charaFace A 4]
+[charaPut L 0,50]
+[wt 0.5]
+
+[se ad193]
+[effect bit_talk_debuff]
+[wt 0.1]
+[charaPut L 2000,2000]
+＠ドラコー
+[line 3]何？
+[k]
+
+[messageOff]
+
+[charaMove A 0,-30 0.3]
+[charaFadeout A 0.4]
+[wt 0.3]
+[se ad775]
+[wt 0.7]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+＠ロクスタ
+ネロさま！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠セタンタ
+どうした、いきなり！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[charaShake A 0.03 1 1 0.3]
+＠ドラコー
+身体が……動かぬ……！
+[k]
+
+
+？1：ドラコー！？
+？2：何をした、モレー！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 27]
+[charaFadein H 0.1 1]
+＠モレー
+え？　なになに？[r]あたし、何もしてないけど……？
+[k]
+
+[messageOff]
+
+[charaScale A 1.2]
+
+[charaDepth H 1]
+[charaDepth O 2]
+[charaDepth I 3]
+[charaDepth Q 4]
+[charaDepth A 6]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.7 0,0]
+[charaFadein O 0.7 0,-250]
+[wt 0.8]
+
+[charaPut L 0,0]
+
+＠ドラコー
+……ルクスリア？
+[k]
+
+[charaFadeout H 0.1]
+
+[se ad193]
+[effect bit_talk_debuff 0,-50]
+
+[charaShake A 0.05 2 2 0.3]
+[wt 0.1]
+[charaPut L 2000,2000]
+
+＠ドラコー
+ぐあ……ッ！？
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaScale I 1.3]
+
+[charaMove I -270,150 1.0]
+[charaMove O 0,-300 1.0]
+[charaMove A 0,-50 1.0]
+[wt 1.2]
+[effect bit_talk_suspicious_moya -200,0]
+[wt 0.3]
+
+[charaFace I 0]
+[charaFadein I 0.4 -270,70]
+
+[charaPut Q -270,0]
+[wt 0.4]
+
+[charaTalk on]
+[se ad20]
+＠I：暗黒の仔山羊
+……………………。
+[k]
+
+[messageOff]
+[charaFadeout I 0.5]
+[charaFadeout A 0.5]
+[charaFadeout O 0.5]
+[wt 0.5]
+
+[charaPut Q 2000,2000]
+[effectDestroy bit_talk_suspicious_moya]
+
+[charaScale I 1.0]
+
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+＠モレー
+なんだかわからないけど、[#好機:シャーンス]！[r]暗黒の仔山羊よ！　獣の幼体を我らが手に……！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgmStop BGM_BATTLE_33 1.0]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[charaPut Q 0,0]
+＠暗黒の仔山羊
+[line 9]。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut Q 2000,2000]
+
+[charaTalk H]
+[charaFace H 25]
+[charaFadein H 0.1 1]
+＠モレー
+……あれ？[r]もしもーし？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[se ad1019]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[charaPut Q 0,0]
+[messageShake 0.05 5 5 0.3]
+＠暗黒の仔山羊
+[line 9]！
+[k]
+
+[messageOff]
+
+[seStop ad1019 1.0]
+
+[se ade280]
+[cueSe SE_22 22_ade807]
+[seVolume 22_ade807 0 0.5]
+[cueSe SE_22 22_ad1213]
+[charaEffect I bit_talk_blood_aura_fs]
+[charaBackEffect I bit_talk_blood_aura_back_fs]
+
+[wt 2.5]
+
+[se ad609]
+[se ad46]
+[effect bit_talk_explosion_blood]
+
+[effect bit_talk_explosion_triple02]
+[charaEffectDestroy I]
+[charaBackEffectDestroy I]
+[wt 1.0]
+
+[seStop ade280 0.2]
+[seStop 22_ade807 0.2]
+[seStop 22_ad1213 0.2]
+
+[charaPut Q 2000,2000]
+[charaFadeout I 0.1]
+[wt 2.5]
+
+[charaTalk H]
+[charaFace H 26]
+[charaFadein H 0.1 1]
+＠モレー
+キ[messageShake 0.05 3 3 0.3]ャーーーーーーー！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠セタンタ
+山羊野郎が破裂した！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 1]
+＠ロクスタ
+おおーう、スプラッター……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_137 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠ゲオルギウス
+悪魔が泥になって崩れていきます！[r]ですが禍々しい気配は増すばかり……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[cueSe SE_23 23_ade871]
+[seVolume 23_ade871 0 0]
+[seVolume 23_ade871 1.0 1.0]
+
+[charaTalk H]
+[charaFace H 20]
+[charaFadein H 0.1 1]
+＠モレー
+た[messageShake 0.05 3 3 0.3]ーすーけーてー！
+[k]
+
+[messageOff]
+
+[effect bit_talk_blood_mud02]
+[wt 0.5]
+
+[seStop 23_ade871]
+[se ad416]
+[effectStop bit_talk_blood_mud02]
+[wt 0.5]
+
+[charaFadeout H 0.4]
+[wt 3.5]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠ゲオルギウス
+モレー殿！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠セタンタ
+泥に呑み込まれたぞ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[cueSe SE_23 23_ade871]
+[seVolume 23_ade871 0 0]
+[seVolume 23_ade871 1.0 1.0]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 1.0 0,-30]
+
+[charaMoveScale J 1.2 3.5]
+[charaMove J 0,20 3.5]
+[shake 0.03 2 2 1.5]
+[wt 1.5]
+[shake 0.03 3 3 1.5]
+[wt 1.5]
+
+[seStop 23_ade871 0.2]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠ゲオルギウス
+泥が意思を持つかの如く……！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 26]
+[charaFadein C 0.1 1]
+＠ロクスタ
+うぎゃああああ！？[r]こっちにも来るですぅぅぅー！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠セタンタ
+退くぞ、マスター！　早く！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[wt 0.4]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaShake A 0.05 2 2 0.3]
+＠ドラコー
+うぅ……ッ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.6]
+
+？1：ドラコーが取り残されてる！
+？2：助けないと！
+
+？！
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+＠ロクスタ
+ネロさまぁぁぁっ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠セタンタ
+……正直見捨てたいんだけどさ。
+[k]
+
+[charaFace B 4]
+＠セタンタ
+あー、もう！　わかってるって！[r]そんな目で見るなよ、マスター！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ゲオルギウス
+……あの泥は山羊の魔より生じたもの。
+[k]
+
+＠ゲオルギウス
+獣が[#あれ]に呑み込まれた場合、[r]いったいどのような厄災が起きることか[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠セタンタ
+……やっぱり無視はできないか。[r]やるなら速攻だ。急げよ、マスター！
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_137 0.4]
+[wait fade]
+[soundStopAll]
+[end]

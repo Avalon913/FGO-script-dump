@@ -1,0 +1,669 @@
+
+
+＄94-08-79-18-1-0
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098278210 1 バーヴァン・シー]
+[charaSet B 1098274400 1 アルトリア・キャスター]
+[charaSet C 5053002 1 水妃モルガン]
+[charaSet D 1098275800 1 バーゲスト]
+[charaSet E 1020300 1 ランスロット]
+[charaSet F 2008300 1 トリスタン]
+[charaSet G 1098275920 1 メリュジーヌ]
+[charaSet H 1098278210 1 バーヴァン・シー_演出用1]
+[charaSet I 1098278210 1 バーヴァン・シー_演出用2]
+[charaSet J 5053000 1 雨の魔女トネリコ_演出用]
+[charaScale H 1.2]
+[charaScale I 1.2]
+[charaScale J 1.2]
+
+[sceneSet K 10000 1]
+[charaScale K 1.05]
+[sceneSet L 197400 1]
+[charaScale L 1.2]
+[sceneSet M 197400 1]
+[charaScale M 1.3]
+[sceneSet N 197400 1]
+[charaScale N 1.3]
+
+[scene 10000]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth H 2]
+[charaDepth N 1]
+[charaDepth I 2]
+
+[subCameraOn 2]
+[charaLayer M sub #A]
+[charaLayer H sub #A]
+[charaLayer N sub #B]
+[charaLayer I sub #B]
+
+[charaFace H 17]
+[charaFace I 11]
+[charaFadein M 0.1 -190,-10]
+[charaFadein N 0.1 190,-10]
+[charaFadeinFSL H 0.1 -190,220]
+[charaFadeinFSR I 0.1 190,220]
+[subCameraFilter #A maskEdge cut359_mask06 4 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask06 4 0,0,0,255 0]
+[cameraMove 0.1 0,-20 1.15]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠
+[align center]－　サバフェス　ＤＡＹ４　－[align]
+[k]
+
+[messageOff]
+[fadeout black 0.1]
+[wait fade]
+
+[scene 197400]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSe SE_22 22_ade781 0.5 0.7]
+[wt 1.0]
+
+[bgm BGM_SABERWARS2 0.1]
+
+[blur lens 1.0 2 20]
+[charaMoveFSL H -10,220 30.0]
+[charaMove M -10,-10 30.0]
+[subRenderFadein #A 1.0 0,-250]
+[wt 1.7]
+[charaFaceFade H 15 0.2]
+[wt 1.5]
+[charaFaceFade H 2 0.2]
+[wt 1.8]
+[charaFaceFade H 9 0.2]
+[wt 1.5]
+[subRenderFadeout #A 0.5]
+[wt 0.7]
+
+[charaMoveFSR I 10,220 30.0]
+[charaMove N 10,-10 30.0]
+[subRenderFadein #B 1.0 0,-415]
+[wt 1.7]
+[charaFaceFade I 14 0.2]
+[wt 1.8]
+[charaFaceFade I 20 0.2]
+[wt 1.5]
+
+[cueSeStop 22_ade781 0.5]
+[blurOff lens 0.5]
+[subRenderFadeout #B 0.5]
+[wt 0.7]
+
+[cameraMove 0.5 0,-40 1.25]
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.4 1]
+[wt 0.5]
+[charaShake A 0.03 2 2 0.5]
+
+＠バーヴァン・シー
+ああもう、これじゃただのアルバムだ、[r]アルバム以下だ！
+[k]
+
+＠バーヴァン・シー
+なんで話が繋がらないんだよ、[r][#起承転結:きしょうてんけつ]、ちゃんと守ってるだろーが！
+[k]
+
+[branchQuestNotClear lblNotClear1 94085019]
+
+＠バーヴァン・シー
+前のカタログ本とは違うんだ、[r]今回はストーリーをメインにしないと！
+[k]
+
+[branch lblConf1]
+
+[label lblNotClear1]
+
+
+[label lblConf1]
+
+
+＠バーヴァン・シー
+舞台をオークニーにした以上、[r]こんな出来で世に出していいワケないでしょう！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_SABERWARS2 0.5 0.5]
+[wait wipe]
+
+[charaFadeout N 0.1]
+[charaFadeout I 0.1]
+[charaFadeout M 0.1]
+[charaFadeout H 0.1]
+[charaLayer M normal]
+[charaLayer H normal]
+[charaLayer N normal]
+[charaLayer I normal]
+
+[charaFadeout A 0.1]
+[cameraMove 0.1 0,10 1.01]
+[wt 1.0]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_SABERWARS2 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+？1：……あっちはヤバそう[&だな:]……
+？2：…………よし
+
+？！
+
+[se ade46]
+[cameraMove 0.5 0,0 1.01]
+[wt 0.5]
+[seStop ade46 0.3]
+[wt 0.8]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アルトリア・キャスター
+[%1]？[r]席を立ってどうしたの？
+[k]
+
+？1：ちょっと出かけてくる
+
+？！
+
+[messageOff]
+[charaFace B 10]
+[wt 1.2]
+[charaFace B 23]
+
+＠アルトリア・キャスター
+わかった、行ってらっしゃい。[r]マシュにはうまく言っておくね。
+[k]
+
+[charaFace B 19]
+
+＠アルトリア・キャスター
+あ、どこに行く気かは知らないけど、[r]行くなら鈴鹿さんのバイクがいいんじゃない？
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_SABERWARS2 1.0]
+[wait fade]
+
+[cameraHome 0.1]
+[charaFadeout B 0.1]
+
+[charaDepth G 1]
+[charaDepth C 2]
+
+[scene 197600]
+[wt 1.5]
+[cueSe SE_23 23_ade886 1.0]
+[wt 3.0]
+[seStop 23_ade886 1.0]
+[wt 0.5]
+[cueSe SE_23 23_ade889]
+[seVolume 23_ade889 0 0.5]
+[wt 4.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+？1：というワケなん[&だけど:ですが]……
+
+？！
+
+[bgm BGM_EVENT_143 0.2 0.8]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠水妃モルガン
+そうですか。[r]バーヴァン・シーはあの家で創作活動を。
+[k]
+
+＠水妃モルガン
+妖精國女王の娘がそのような[#些事:さ　じ]にかまけるとは。[r]自分の立場をまだ分かっていないようですね。
+[k]
+
+[charaFace C 9]
+
+＠水妃モルガン
+わかりました。後ほど向かいます。[r]バーゲスト。おまえも同行するように。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠バーゲスト
+私も、ですか……？[r]あの森であれば案内はできますが……
+[k]
+
+[charaFace D 6]
+
+＠バーゲスト
+……その、本作り、でしたか？[r][#私:わたくし]はあまりそういった事には覚えがなく……
+[k]
+
+＠バーゲスト
+それに……もし都市部に行かざるを得ない事になれば、[r]また[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠水妃モルガン
+だからこそ、だ。[r]貴様は我が騎士の中でも最高峰のひとり。
+[k]
+
+＠水妃モルガン
+自らの指に[#等:ひと]しきものに、[r]いつまでも汚名を着せておく趣味はない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠バーゲスト
+…………。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠水妃モルガン
+話はここまでです、[%1]。[r]寄り道などせず、先に戻るように。
+[k]
+
+＠水妃モルガン
+間違ってもビーチには行かない事です。[r]ろくでもない竜が巣を張っていますので。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace G 25]
+[charaPut G -300,0]
+[charaFadeTime G 0.4 0.7]
+[wt 1.5]
+[charaFadeout G 0.4]
+[wt 0.4]
+[charaTalk on]
+[charaTalk C]
+
+＠水妃モルガン
+いいですね？
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_143 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaSet C 5053000 1 雨の魔女トネリコ]
+[charaSet D 1098275800 1 ニワトコ]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout rightToLeft 0.1 1.0]
+[wait wipe]
+
+[scene 197400]
+[wt 1.5]
+
+[se ad93]
+[wt 1.7]
+
+[wipein leftToRight 1.0 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+？1：ただいまー……
+
+？！
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠バーヴァン・シー
+なに足音忍ばせてんだよ、マヌケ。[r]気分転換に外で休憩してたんだろ？
+[k]
+
+＠バーヴァン・シー
+オマエに逃げ出して遊びに行く度胸なんざ[r]ナイって分かってんだから、堂々と入って[line 3]
+[k]
+
+[charaFace A 19]
+
+＠バーヴァン・シー
+どうどう、と[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth L 1]
+[charaDepth J 2]
+[se ade422]
+[seVolume ade422 0 0]
+[seVolume ade422 1.0 1.0]
+[wt 1.0]
+
+[charaFadein L 1.0 70,-300]
+[charaMove L 120,-300 1.0]
+[wt 0.5]
+[seStop ade422 1.0]
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.4 -30,0]
+[charaMove J 1 0.4]
+[wt 0.7]
+
+[bgm BGM_EVENT_112 0.1]
+
+＠J：？？？
+はじめまして、見知らぬ皆さん。[r]突然ですがお邪魔しますね。
+[k]
+
+＠J：？？？
+雨の魔女トネリコと申します。[r]ここで本を作っている、と聞いてやって来ました。
+[k]
+
+[messageOff]
+[charaFadeout L 0.5]
+[charaFadeout J 0.5]
+[wt 0.7]
+
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ランスロット
+待ちたまえ。丁寧な名乗りには感心するが、[r]今やここは島の未来を左右する特別な場所だ。
+[k]
+
+＠ランスロット
+素性の分からぬ者を入れる事はできない。[r]とくに魔女を名乗るような者には、
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 30]
+[charaFadein A 0.1 1]
+
+＠バーヴァン・シー
+ち、違う、その人違う！[r]この家の持ち主！　持ち主だから！
+[k]
+
+＠バーヴァン・シー
+だってお母様の書庫にあった、[r]雨の国の司書の絵にそっくり！　マジもんのホンモノ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠雨の魔女トネリコ
+私の事をご存じでしたか。[r]ありがとうございます。
+[k]
+
+[charaFace C 2]
+
+＠雨の魔女トネリコ
+どうか気になさらないよう、ランスロット卿。[r][#卿:けい]の対応は騎士として当然のこと。
+[k]
+
+＠雨の魔女トネリコ
+主を守るのが騎士として第一の行いですからね。[r]そういう訳で、私にも実は、このように。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad95]
+[wt 0.8]
+
+[seStop ad95 0.4]
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.4 1]
+[wt 0.6]
+[charaMoveReturn D 0,-4 0.6]
+
+＠？？？
+給仕のニワトコと申します。[r]トネリコ様の護衛とお世話のため参りました。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠ランスロット
+ニワトコ殿……なんと凜々しく勇ましいご婦人だ。[r]失礼だが、以前どこかで会った事は？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠ニワトコ
+いえ、特に。[r]騎士様の勘違いかと。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ランスロット
+む、そうでしたか。
+[k]
+
+[charaTalk depthOff]
+[charaDepth K 1]
+[charaDepth E 2]
+[charaPut K 0,-200]
+[charaFadeTime K 0.2 0.5]
+
+＠ランスロット
+（むう。こと麗しい女性に関して、この私が[r]　記憶違いをするとは……なまっているのかな？）
+[k]
+
+[charaFadeout K 0.2]
+[charaFadeout E 0.2]
+[wt 0.2]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 32]
+[charaFadein A 0.1 1]
+
+＠バーヴァン・シー
+そそ、それより、なんのご用でしょう、魔女様。
+[k]
+
+＠バーヴァン・シー
+無人の家と思い使わせていただいていましたが、[r]お帰りになったのでしたらすぐに……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠雨の魔女トネリコ
+いえ、どうかこのまま使ってあげてください。
+[k]
+
+＠雨の魔女トネリコ
+結界として用意したものですが、この家も[r]貴女のような方に住まわれて嬉しいでしょう。
+[k]
+
+＠雨の魔女トネリコ
+それより[line 3]
+[k]
+
+[charaFace C 12]
+
+＠雨の魔女トネリコ
+なんでも、皆さんで妖精にまつわる物語を[r][#編:あ]んでいる最中だとか。
+[k]
+
+＠雨の魔女トネリコ
+私も仲間に入れてくださいますか？[r]知識面でなら少しはお役に立てるかと。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 30]
+[charaFadein A 0.1 1]
+
+＠バーヴァン・シー
+！　は、はい、よろこんで！[r]ぜひお知恵をお貸しください！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠トリスタン
+[line 3]フッ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠バーヴァン・シー
+ああ！？　なに笑ってんだテメェ、[r]さっさと席あけろ！　魔女様が休めねえだろ！？
+[k]
+
+[charaFace A 5]
+
+＠バーヴァン・シー
+そこの給仕……ニワトコ、だっけ？[r]ガラにもない格好しやがって……
+[k]
+
+＠バーヴァン・シー
+ま、そういうコトなら付き合ってやる。[r]すぐに二階の寝室の掃除、お願い。
+[k]
+
+＠バーヴァン・シー
+魔女様が使うんだからな。[r]ホコリ一つないようにしろよ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠ニワトコ
+貴方に言われるまでもありません。[r][#早速:さっそく]取りかからせていただきます。
+[k]
+
+[bgmStop BGM_EVENT_112 1.5]
+
+[messageOff]
+[se ad95]
+[charaMove D -50,0 0.5]
+[charaFadeout D 0.4]
+[wt 0.5]
+[seStop ad95 1.5]
+[wt 2.0]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠バーヴァン・シー
+よーし、やる気出てきたー！[r][%1]、マシュ、あと田舎妖精！
+[k]
+
+＠バーヴァン・シー
+まずは全体の見直しだよな！[r][#インパクト:バ　イ　オ　レ　ン　ス]よりエモさ押しに変更しよ！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStopEnd BGM_EVENT_94 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

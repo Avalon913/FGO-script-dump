@@ -1,0 +1,493 @@
+
+
+
+＄94-08-88-09-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 25013001 1 ワンジナ]
+[charaSet B 10012000 1 太歳星君]
+[charaSet C 25005000 1 ボイジャー]
+[charaSet D 6031001 1 刑部姫]
+[charaSet E 7042000 1 クリームヒルト]
+[charaSet F 98110000 1 柳生但馬守]
+[charaSet G 1098243000 1 エリセ]
+[charaSet H 1098255110 1 ゴルドルフ]
+[charaSet I 98115000 1 エフェクト用]
+[charaSet J 25013000 1 ワンジナ_第一]
+[charaSet K 1098164100 1 大奥の人形]
+[charaSet L 1098164100 1 大奥の人形1]
+
+[scene 10000]
+
+[charaTalk depthOff]
+
+[charaScale A 1.1]
+
+[charaDepth B 1]
+[charaDepth A 2]
+
+[charaDepth K 1]
+[charaDepth L 2]
+
+[cueSe SE_21 21_ade581]
+[seVolume 21_ade581 0 0.3]
+[backEffect bit_talk_spotlight02 256,0]
+[backEffect bit_talk_spotlight02 -256,0]
+
+[charaTalk off]
+[charaFace A 4]
+
+[charaFace B 10]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+[wt 0.3]
+
+[fadein black 0.1]
+[wait fade]
+[wt 1.0]
+
+[bgm BGM_EVENT_109 0.1]
+
+[charaTalk on]
+
+
+＠ワンジナ
+ワンジナとー！
+[k]
+
+＠太歳星君
+太歳星君だぞー！
+[k]
+
+＠ワンジナ
+とゆー訳でワタシたちのお城に、[r]カルデアのみんなで挑戦してもらうことにしたよ！
+[k]
+
+＠ワンジナ
+いっぱい遊んでもらうんだ！
+[k]
+
+[charaFace B 0]
+＠太歳星君
+でも、ただ待っているのはつまんないから。[r]ワガハイ、閃いたぞ！
+[k]
+
+[charaFace A 0]
+＠ワンジナ
+え、何何……
+[k]
+
+[charaFace B 0]
+＠太歳星君
+一緒に遊べばいいのだ！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_109 1.0]
+[wait fade]
+
+[backEffectDestroy bit_talk_spotlight02]
+[wt 0.5]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+
+[scene 157400]
+
+[cameraMove 0.1 0,10 1.2]
+
+[wt 1.5]
+
+[cameraHome 3.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+
+[wt 3.0]
+
+
+？1：こんなだったっけ！？
+？！
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠刑部姫
+うう、内装までリフォームされでるぅぅぅ……。[r]でもこの豪華さはちょっと惹かれるなぁぁ……。
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+[se ad458]
+[se ad70]
+[se ad69]
+
+[wt 0.4]
+
+[charaTalk off]
+[charaFace K 0]
+[charaFadeinFSL K 0.4 0]
+[wt 0.1]
+
+[charaFace L 0]
+[charaFadeinFSR L 0.4 2]
+[wt 0.4]
+[seStop ad70 0.4]
+[seStop ad69 0.4]
+[seStop ad458 0.4]
+
+[wt 1.0]
+
+[charaFadeout L 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠刑部姫
+って何か趣味の悪い人形がーーー！
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠クリームヒルト
+魔獣の代わりって訳ね。[r]じゃ、とりあえず私と[#柳生:おじいちゃん]が前線で……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠柳生但馬守
+む。[r]待て、くりいむひると殿[line 3]
+[k]
+
+[messageOff]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaPut B 256,0]
+[charaFace B 10]
+
+[charaPut A -256,0]
+[charaFace A 4]
+
+[se ad598]
+[charaSpecialEffect B wipeTimeRe 1 1.5]
+[charaSpecialEffect A wipeTimeRe 1 1.5]
+
+[wait charaSpecialEffect B]
+[wait charaSpecialEffect A]
+
+[charaFadein B 0 256,0]
+[charaFadein A 0 -256,0]
+
+[wt 0.5]
+
+[charaTalk on]
+＠太歳星君
+わっはー！
+[k]
+
+＠ワンジナ
+こ、こんにちは。
+[k]
+
+？1：二人ともどうしたの！？
+？！
+
+[wt 0.5]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 24]
+[charaFadein G 0.1 1]
+
+＠エリセ
+え、いきなりラスボス戦から開始？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 1.5]
+
+[charaScale A 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠太歳星君
+折角だから、競走しにきたぞー！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ワンジナ
+ずっと見ているだけじゃ、[r]つまんないから……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+＠エリセ
+そんなマッチポンプな……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_147 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ワンジナ
+ところで競走ってどうやろうか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠太歳星君
+そりゃあ、かけっこだぞ。[r]競走といえば、まずかけっこじゃない？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ボイジャー
+かけっこかい。いいね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠エリセ
+かけっこねぇ。[r]うーん、この中なら……所長さーん。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad13]
+[wt 0.1]
+
+[charaPut I 0,0]
+[charaEffect I bit_talk_10_LowLevel]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠ゴルドルフ
+え、何かね？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaFace G 0]
+＠エリセ
+かけっこのルールを決めてください。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+[charaPut I 0,0]
+＠ゴルドルフ
+何で私！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut I 2000,0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠エリセ
+いや、一番公平にルールを決めてくれそうだなって。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+[charaPut I 0,0]
+＠ゴルドルフ
+うーん……かけっこねぇ……。
+[k]
+
+[messageOff]
+
+[wipeout rollRight 1.0 1]
+[bgm BGM_EVENT_147 1.0 0.5]
+[wait wipe]
+
+
+[charaFace H 16]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_147 1.0 1.0]
+[wipein rollLeft 1.0 1]
+[wait wipe]
+[wt 0.4]
+
+＠ゴルドルフ
+これをこうして、こう、で[line 3]
+[k]
+
+＠ゴルドルフ
+以上。こんな感じでどうか？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaFace G 1]
+＠エリセ
+ありがとうございます！
+[k]
+
+[charaFace G 0]
+＠エリセ
+という訳でルールを決めてもらったけど、[r]問題ないかな？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠太歳星君
+ないぞ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ワンジナ
+……わくわく。面白そうだから、いいよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[clear]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+＠J：ワンジナ
+同じく、いいよ！　わくわく！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_147 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠エリセ
+じゃあ、[&きみ:あなた]。[r]これでやってみるけど、いいかな？
+[k]
+
+？1：もちろん！
+？！
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaFace G 11]
+＠エリセ
+それじゃあ、始めよっか！　準備はいい？[r][#位置について:イ     ン ・ マ ー ル チ ェ][line 3][#賽は投げられた:ア ー レ ア ・ ヤ ク タ ・ エ ス ト]！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

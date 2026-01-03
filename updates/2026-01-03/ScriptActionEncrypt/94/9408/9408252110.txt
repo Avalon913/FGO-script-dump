@@ -1,0 +1,686 @@
+
+＄94-08-25-21-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1005001 1 ネロ]
+[charaScale A 1.2]
+
+[charaSet C 6048002 1 ロクスタ]
+[charaScale C 1.2]
+
+[charaSet D 28003000 1 レディ・アヴァロン]
+
+[charaSet E 1098261200 1 ドラコー]
+[charaScale E 1.2]
+
+[charaSet F 1005001 1 ネロシルエット]
+[charaFilter F silhouette 00000080]
+[charaScale F 1.2]
+
+[charaSet G 1098261200 1 ドラコーシルエット]
+[charaFilter G silhouette 00000080]
+[charaScale G 1.2]
+
+[charaSet B 33001001 1 ドラコー1]
+
+[sceneSet J 107900 1]
+
+[charaSet I 6048002 1 ロクスタ1]
+[sceneSet K 107900 1]
+
+[charaPut B 2000,2000]
+[charaEffect B bit_talk_blood_aura_fs]
+[charaBackEffect B bit_talk_blood_aura_back_fs]
+
+[sceneSet Q 10000 1]
+[charaFilter Q silhouette 77000000]
+
+
+[imageSet M back10000 1 1]
+[charaScale M 1.05]
+[imageSet L back10000 1 1]
+[charaScale L 1.05]
+
+[charaSet N 1098257310 1 エフェクト用]
+
+[charaSet H 1098261300 1 ネロ（顔隠し）]
+[charaScale H 1.2]
+
+[scene 10000]
+
+[overlayFadein M 0.1 0,850]
+[overlayFadein L 0.1 0,-850]
+
+
+[se ad75]
+[effect bit_talk_43h_fs]
+[wt 0.2]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+[seStop ad75 0.3]
+
+[se ad598]
+[fadeout white 1.5]
+[wait fade]
+
+[effectDestroy bit_talk_43h_fs]
+
+[scene 107900]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth C 2]
+[charaDepth A 3]
+
+[charaDepth F 4]
+[charaDepth A 5]
+
+[charaDepth E 6]
+[charaDepth G 7]
+[charaDepth N 8]
+
+[charaScale J 1.3]
+
+[cameraMove 0.1 0,-20 1.0]
+
+[wt 1.5]
+
+[cameraMove 1.0 0,20 1.0]
+[fadein white 1.5]
+[wt 1.0]
+[se ad223]
+[wait fade]
+
+
+[wt 1.6]
+[cameraMove 1.2 0,0 1.0]
+[wt 1.4]
+
+[charaFadein J 1.0 0,-250]
+[charaMove M 0,755 1.0]
+[charaMove L 0,-755 1.0]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.9 0,-50]
+[wt 1.8]
+
+[pictureFrame cut063_cinema]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠A：？？？
+[line 6]ロクスタか。
+[k]
+
+[charaFace C 11]
+＠ロクスタ
+………………。
+[k]
+
+[messageOff]
+
+[charaFace C 18]
+[wt 0.5]
+
+[se ad480]
+[charaMove C 0,-55 0.3]
+[wt 0.5]
+
+＠ロクスタ
+はい、ネロさま。[r]御身の前に。
+[k]
+
+[messageOff]
+[charaFadeout C 0.2]
+[wt 0.2]
+
+
+[charaTalk off]
+[charaDepth H 6]
+[charaFace A 4]
+[charaFace H 4]
+
+[charaFadein H 0.4 0,-50]
+[charaShake H 0.05 2 2 0.7]
+[wt 0.4]
+[charaFadein A 0 0,-50]
+[wt 1.4]
+[charaFadeout H 0.4]
+[wt 0.7]
+
+＠ネロ
+……あ……うぅ……[r]頭が……割れそうだ……
+[k]
+
+＠ネロ
+ロクスタ……薬を……[r]薬を……早く……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 0,-50]
+＠ロクスタ
+………………。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+＠ネロ
+……貴様なら……作れるであろう……？
+[k]
+
+＠ネロ
+母上が……余に盛っていた毒……[r]この頭痛を止める……解毒剤を……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 0,-50]
+＠ロクスタ
+……も、申し訳ございません、ネロさま。
+[k]
+
+＠ロクスタ
+もう手遅れなのです……ネロさまは[r]幼き頃より、あの毒を飲まされていました。
+[k]
+
+＠ロクスタ
+アグリッピナさまの解毒剤をもってしても、[r]その頭痛はもう……
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[se ad350]
+[se ad343]
+
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+[charaPut N 0,0]
+[charaEffect N bit_talk_06b2]
+[wt 0.3]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+[wt 0.8]
+
+[charaFadeout A 0.4]
+[wt 1.0]
+
+[charaFace G 0]
+[charaFadein G 0.7 0,-50]
+[charaFadeout F 0.7]
+[wt 0.9]
+
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+[wt 0.1]
+[charaFadeout G 0.4]
+[charaEffectStop N bit_talk_06b2]
+
+[seStop ad350 1.0]
+[seStop ad343 1.0]
+
+[wt 1.5]
+
+＠E：ネロ
+……ロクスタ……どうして……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 26]
+[charaFadein C 0.1 0,-50]
+＠ロクスタ
+……ご、ごめんなさい。ごめんなさい。[r]ごめんなさいィィ……ッ！
+[k]
+
+＠ロクスタ
+……さ、逆らえなかったんです。
+[k]
+
+＠ロクスタ
+アタシは……[r]アグリッピナさまが……おそろしかった……！
+[k]
+
+＠ロクスタ
+全てを呑み込むような……[r]あの泥のような瞳が……！
+[k]
+
+[bgmStop BGM_EVENT_11 1.5]
+
+[charaFace C 28]
+＠ロクスタ
+だから、アタシは……言われるままに……
+[k]
+
+[messageOff]
+
+[se ad311]
+[seVolume ad311 3.0 1.0]
+[charaFadeout C 0.9]
+[charaFadeout J 2.0]
+[charaMove M 0,850 0.9]
+[charaMove L 0,-850 0.9]
+[pictureFrame]
+[wt 2.0]
+
+[charaScale E 1.0]
+[charaScale A 1.0]
+[charaScale C 1.0]
+[charaScale F 1.0]
+[charaScale J 1.0]
+
+＠？？？
+皇帝ネロは生涯、頭痛に悩まされていた。
+[k]
+
+＠？？？
+鉛の杯を愛用していたのが原因であるとか。[r]慢性的なヒステリーであったとか。
+[k]
+
+＠？？？
+でも真相は[line 3]
+[k]
+
+[messageOff]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+[seStop ad311]
+[wt 0.5]
+
+＠レディ・アヴァロン
+ロクスタ[line 3][r]キミが毒を盛っていたんだね。
+[k]
+
+＠レディ・アヴァロン
+皇帝ネロの母、アグリッピナの命令で。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+＠ロクスタ
+[line 9]。
+[k]
+
+[bgm BGM_MAP_36 0.1]
+
+＠ロクスタ
+ネロさま。貴女の苦痛を止めるにはもう、[r]この手段しか残されていないのです。
+[k]
+
+[messageOff]
+
+[charaShake C 0.03 1 1 0.2]
+
+[se ad77]
+[seStop ad77 0.6]
+[wt 1.0]
+
+[se ad511]
+[seVolume ad511 0 0.4]
+[seStop ad511 0.3]
+[wt 1.0]
+
+？1：黄金の小箱？
+？2：中身は……
+
+？！
+
+[charaFace C 5]
+＠ロクスタ
+今、この[#心の奥:ば　し　ょ]で。[r]これだけの条件が揃って、ようやく届くのです。
+[k]
+
+＠ロクスタ
+我が最弱の宝具にして最高傑作[line 3]
+[k]
+
+
+＠ロクスタ
+『[#さよなら、愛しき皇帝陛下:フ   ィ   ニ   ス   ・   ウ   ェ   ネ   ー   ヌ   ム   ・   ネ   ロ]』
+[k]
+
+[messageOff]
+
+[se ad743]
+[seStop ad743 2.6]
+
+[effect bit_talk_light_range]
+
+[wt 2.5]
+
+[effectDestroy bit_talk_light_range]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠レディ・アヴァロン
+……毒薬だね。
+[k]
+
+
+？1：この毒がロクスタの切り札？
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠ロクスタ
+そんな大それたものじゃないです。
+[k]
+
+[charaFace C 18]
+＠ロクスタ
+この毒は、苦痛なく生命を終えるための毒。[r]本当に、ただそれだけの、無力な宝具。
+[k]
+
+？1：……安楽死のための宝具？
+？2：どうしてそんなものを？
+
+？！
+
+[charaFace C 11]
+＠ロクスタ
+……………………。
+[k]
+
+[charaFace C 5]
+＠ロクスタ
+さあ、ネロさま。[r]これを[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠E：ネロ
+[line 6]。
+[k]
+
+
+？1：ダメ[&だ:]、ロクスタ！
+？2：正気に戻って、ドラコー！
+
+？！
+
+[bgmStop BGM_MAP_36 1.0]
+
+[messageOff]
+
+[se ad478]
+[cameraMove 0.3 0,0 1.05]
+[wt 0.7]
+
+＠レディ・アヴァロン
+マスター！　いけない！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+
+[se ade280]
+[cueSe SE_22 22_ade807]
+[seVolume 22_ade807 0 0.5]
+[cueSe SE_22 22_ad1213]
+[charaEffect E bit_talk_blood_aura_fs]
+[charaBackEffect E bit_talk_blood_aura_back_fs]
+[wt 1.5]
+[bgm BGM_BATTLE_107 0.1]
+
+[fowardEffect bit_talk_summon_o]
+[wt 1.0]
+
+[se ad357]
+[se ade19]
+[cueSe SE_21 21_ad1082]
+
+[seStop ade280 1.0]
+[seStop 22_ade807 1.0]
+[seStop 22_ad1213 1.0]
+
+[fowardEffectStop bit_talk_summon_o]
+[wt 2.5]
+[seStop ad357 1.0]
+[seStop ade19 1.0]
+[seStop 21_ad1082 1.0]
+
+[cameraHome 0.1]
+[charaCrossFade E 33001001 4 0.5]
+[wait charaCrossFade]
+
+[wt 2.5]
+
+＠ドラコー
+[line 6]ッ！
+[k]
+
+[messageOff]
+
+[charaTalk depthOff]
+
+[charaDepth E 1]
+[charaDepth Q 2]
+
+[effect bit_talk_blood_mud_attack]
+[se ad85]
+[se ad161]
+[wt 0.6]
+[se ad171]
+[seVolume ad171 0 0.8]
+[charaMoveReturn E 30,0 0.3]
+[wt 0.5]
+
+[charaEffectDestroy E]
+[charaBackEffectDestroy E]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[se ad7]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.4 100,0]
+[charaMove D 0,0 0.2]
+[wt 0.3]
+[se ad32]
+[se ad789]
+[seVolume ad789 0 0.5]
+[se ade185]
+[seVolume ade185 0 0.5]
+[charaShake D 0.05 2 2 0.6]
+[effect bit_talk_14]
+[wt 0.5]
+
+＠レディ・アヴァロン
+……ッ！[r]ドラコー、キミは……
+[k]
+
+
+？1：！？
+？2：ドラコー、どうして？
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠ロクスタ
+うわー……[r]それってセクハラですよ、マスターさま。
+[k]
+
+＠ロクスタ
+鍵までかけて隠していた、乙女の秘密。[r]触れられたくないに決まってるじゃないですか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠ドラコー
+………………。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠レディ・アヴァロン
+[#怯:ひる]んではいけないよ。[r]カルデアのマスター。
+[k]
+
+＠レディ・アヴァロン
+心の壁を作るということは、[r]心の奥で救いを求めているということ。
+[k]
+
+[charaFace D 6]
+＠レディ・アヴァロン
+優しいだけでは駄目なんだ。[r]たまには強引にいかないとね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠ロクスタ
+ギャー！　またしてもセクハラー！[r]意識をアップデートしろー！
+[k]
+
+[charaFace C 18]
+＠ロクスタ
+……邪魔をしないでください。[r]マスターさま。
+[k]
+
+＠ロクスタ
+これはようやく掴んだ奇跡。[r]アタシたちの[#大団円:デウス・エクス・マキナ]なのですから……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠ドラコー
+………………。
+[k]
+
+[messageOff]
+
+[se ade280]
+[cueSe SE_22 22_ade807]
+[seVolume 22_ade807 0 0.5]
+[cueSe SE_22 22_ad1213]
+
+[charaEffect E bit_talk_blood_aura_fs]
+[charaBackEffect E bit_talk_blood_aura_back_fs]
+[wt 2.5]
+
+[seStop ade280 0.5]
+[seStop 22_ade807 0.5]
+[seStop 22_ad1213 0.5]
+
+[charaEffectDestroy E]
+[charaBackEffectDestroy E]
+
+[charaTalk B,I]
+[subCameraOn]
+
+[charaLayer I sub]
+[charaLayer J sub]
+
+[subCameraFilter maskEdge cut359_mask09 6 0,0,0,255]
+[charaDepth E 1]
+[charaDepth J 2]
+[charaDepth K 3]
+[charaDepth B 4]
+[charaDepth I 5]
+
+[charaScale J 1.4]
+[charaScale I 1.4]
+[charaScale K 1.4]
+[charaScale B 1.4]
+
+[charaFace B 4]
+[charaFadeinFSL B 0.4 -250,-100]
+[charaFadeinFSL K 0.2 100,-450]
+[charaMoveFSL B -250,0 0.2]
+[charaMoveFSL K 100,-350 0.2]
+
+[se ad383]
+[seVolume ad383 0 0.6]
+[seStop ad383 0.7]
+
+[charaFace I 6]
+[charaFadeinFSR I 0.4 0,450]
+[charaFadeinFSR J 0.2 -350,100]
+[charaMoveFSR I 0,350 0.2]
+[charaMoveFSR J -350,0 0.2]
+[subRenderFadein 0.3 200,-350]
+
+[wt 1.5]
+[charaFadeout E 0.1]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_107 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

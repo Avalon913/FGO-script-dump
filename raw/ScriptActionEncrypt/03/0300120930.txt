@@ -1,0 +1,404 @@
+
+＄03-00-12-09-3-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1035001 1 ディルムッド]
+[charaSet B 9005001 1 ホームズ]
+[charaSet C 1098235000 1 カドック]
+[charaSet D 1098231810 1 徐福]
+[charaSet E 1098123210 1 ゴルドルフ]
+[charaSet F 1098234710 1 クラス・アサシン]
+[charaSet G 1098234510 1 クラス・キャスター]
+[charaSet H 1098124510 1 通信用ダミー]
+[charaSet I 1098124510 1 通信用ダミー]
+
+[sceneSet J 153800 1]
+[imageSet K back10000 1]
+[charaFilter K silhouette FF000080]
+
+[scene 153700]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+[se ad678]
+[wt 0.1]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,14 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+[charaScale A 1.0]
+[wt 0.2]
+
+[se ad171]
+[se ad85]
+[effect bit_bolg_02]
+[fowardEffect bit_bolg_02y 0,0 H]
+[wt 0.6]
+
+[seStop ad171 0.1]
+[seStop ad85 0.1]
+[cueSe NoblePhantasm_103500 NP_103500_5]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[effect bit_talk_14]
+[wt 0.1]
+[effectDestroy bit_bolg_02]
+[fowardEffectDestroy bit_bolg_02y]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0 1]
+[charaShake F 0.03 4 5 0.8]
+[wt 0.8]
+
+[charaPut I 1]
+[charaEffect I bit_talk_06]
+[wt 1.0]
+
+＠クラス・アサシン
+無念……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[wt 0.6]
+
+[charaSpecialEffect F flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect F]
+[charaEffectStop I bit_talk_06]
+[wt 1.8]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ディルムッド
+……増援が来ない。バレてはいないようです。[r]扉の向こうには……。
+[k]
+
+＠ディルムッド
+人の気配、闘気のようなものは感じられません。[r]では、塔に入りますか。
+[k]
+
+[messageOff]
+[se ade436]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[scene 153800]
+[charaScale J 1.3]
+[charaFadein J 0.1 120,-300]
+[wt 1.0]
+
+[fadein black 1.0]
+[charaMove J -120,-300 6.0]
+[wait fade]
+[bgm BGM_EVENT_70 0.1]
+
+[wt 4.0]
+[charaFadeout J 1.0]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ホームズ
+ふむ。[r]中に目立つものは、それほどないようだが。
+[k]
+
+＠ホームズ
+幾つか紙の資料があるな。[r]さて、どれどれ……。
+[k]
+
+？1：何か書いてある？
+？！
+
+[charaFace B 5]
+＠ホームズ
+これは……塔の設計図か。[r]ふむ、ふむ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠カドック
+何かあるのか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ホームズ
+ミス・徐福。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 25]
+[charaFadein D 0.1 1]
+＠徐福
+ほえ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ホームズ
+もしかして、だが。[r]塔はこの地の霊脈に直結しているのかもしれない。
+[k]
+
+＠ホームズ
+それを調べることは可能だろうか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠徐福
+んー。[r]地下に降りてみれば何とか分かるかもです。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠ホームズ
+ではよろしく頼みたい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+＠徐福
+え、一人でですか。[r]嫌ですけど普通に。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ホームズ
+ははは。[r]それは確かに。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠カドック
+[%1]、[r]お前ついてってやれ。
+[k]
+
+？1：りょ、了解！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠ディルムッド
+私もついていきましょう。[r]キャスターお二人では厳しいでしょうし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠カドック
+それでホームズ、アンタはどこに行くんだ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠ホームズ
+もちろん。[r]塔の頂上だとも。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ディルムッド
+では、我々三人は下へ。[wt 0.6][charaFace A 2][r]いざ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 28]
+[charaFadein D 0.1 1]
+＠徐福
+面倒ですけど分かりました。[r]面倒ですけど。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_70 1.0 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[scene 141400]
+[wt 1.0]
+
+[cueSe SE_21 21_ad1066]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSeStop 21_ad1066 0.4]
+[wt 0.9]
+
+[bgm BGM_EVENT_70 0.6 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠徐福
+む、むむ。[r]むぅ……。
+[k]
+
+？1：何か分かった？
+？！
+
+[charaFace D 13]
+＠徐福
+これが……こうなって……ああなって……。[r]うーん、何の意味があるんだろ。
+[k]
+
+[charaFace D 6]
+＠徐福
+……よし、聞いてみましょうか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ディルムッド
+聞くとは誰に？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠徐福
+あそこで作業中のキャスターさんに。[r]じゃ、任せますね。
+[k]
+
+[charaFace D 6]
+＠徐福
+とりゃー。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+
+[cueSe SE_21 21_ade669]
+[effect bit_talk_taoism 0,-50]
+[wt 1.6]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth K 5]
+[charaDepth G 5]
+
+[cueSeStop 21_ade669 0.1]
+[se ad567]
+[seVolume ad567 0 0.6]
+[charaScale K 1.5]
+[charaPut K 0,-200]
+[charaFadeTime K 0.4 0.8]
+[wt 0.2]
+[charaPut G 1]
+[charaTalk G]
+[charaFace G 0]
+[se ad598]
+[charaSpecialEffect G wipeTimeRe 0 1.0 0 0.2]
+[charaFadeout K 0.4]
+
+[wt 1.0]
+[charaFadein G 0.0 1]
+
+[charaShake G 0.01 2 2 0.5]
+＠クラス・キャスター
+な……体が！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠徐福
+キャスターなので術はすぐに破られると思います。[r]急いでくださいねー！
+[k]
+
+
+？1：次はもうちょっと心の準備をさせてね！
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

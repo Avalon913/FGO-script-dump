@@ -1,0 +1,2126 @@
+
+
+
+＄94-03-35-80-8-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 10017910 1 桂木千鍵]
+[charaSet B 10017900 1 日比乃ひびき]
+[charaSet C 1098131010 1 謎の怪物]
+[charaSet D 10017002 1 シリウス]
+[charaSet E 1098296720 1 日比乃ひびき_白]
+
+[charaSet F 10017910 1 桂木千鍵_演出用]
+[charaSet G 10017900 1 日比乃ひびき_演出用]
+[charaSet H 10017900 1 日比乃ひびき_演出用_裏]
+[charaSet I 1098297400 1 阿曇磯良]
+[charaSet Q 98115000 1 エフェクト用]
+[charaSet R 10017002 1 シリウス]
+[equipSet S 9809360 1 バレンタイン礼装]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+＠
+[align center]数日前[line 3][align]
+[k]
+
+[messageOff]
+[fadeout black 0.1]
+[wait fade]
+
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[label lblClear01a]
+[scene 106000]
+[sceneSet J 106000 1]
+[sceneSet K 106000 1]
+[sceneSet L 106000 1]
+[branch lblConf01]
+
+[label lblClear01b]
+[scene 105800]
+[sceneSet J 105800 1]
+[sceneSet K 105800 1]
+[sceneSet L 105800 1]
+[branch lblConf01]
+
+[label lblClear01c]
+[scene 157900]
+[sceneSet J 157900 1]
+[sceneSet K 157900 1]
+[sceneSet L 157900 1]
+[label lblConf01]
+
+[charaScale J 1.3]
+[charaScale K 1.3]
+[charaScale L 1.1]
+[charaScale F 1.3]
+[charaScale G 1.3]
+[charaScale R 1.3]
+
+[charaTalk depthOff]
+[charaDepth L 1]
+[charaDepth A 2]
+[charaDepth B 3]
+[charaDepth C 4]
+[charaDepth D 5]
+[charaDepth J 6]
+[charaDepth R 7]
+[charaDepth I 8]
+[charaDepth E 9]
+[charaDepth H 10]
+[charaDepth F 11]
+[charaDepth K 12]
+[charaDepth G 13]
+
+[fadein black 1.0]
+[wait fade]
+[se ad8]
+[wt 1.0]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein J 0.7 -50,-250]
+[charaMove J -100,-250 1.0]
+[wt 1.0]
+[se ad95]
+[charaFadein F 0.7 150,0]
+[charaMove F 100,0 1.0]
+[wt 1.0]
+[seStop ad95 0.5]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V010]
+ちわーっす。[wait tVoice]
+[k]
+
+
+[messageOff]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[se ad95]
+[charaTalk off]
+[charaPut G 350,0]
+[charaFace G 6]
+
+[charaMove F -150,0 1.0]
+[charaMove J -200,-250 1.0]
+[wt 0.5]
+
+[charaMove G 150,0 1.0]
+[charaFadein G 0.4]
+[wt 1.0]
+[seStop ad95 0.5]
+[wt 0.4]
+[charaTalk on]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V020]
+おじゃましまーす！[r]店長さん、遊びにきましたよー！[wait tVoice]
+[k]
+
+？1：おや、桂木さんに日比乃さん
+？2：食堂は休憩時間？
+？！
+
+[messageOff]
+[charaTalk G,A]
+[charaFadeout G 0.4]
+[charaFadeout F 0.4]
+[charaFadeout J 0.4]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 9]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V030]
+いや、今日はもう上がり。[r]厨房が人多すぎで大変な事になっててさ。[wait tVoice]
+[k]
+
+[charaFace A 16]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V040]
+『今日は仕事にならんから帰りたまえ』[r]とか言われて、急に暇になった。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+
+[charaFace A 0]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V050]
+ふっふっふー……。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk G]
+
+[charaScale F 1.2]
+[charaScale G 1.2]
+[charaFace F 0]
+[charaFadein F 0.5 0,0]
+[charaFadein J 0.5 0,-250]
+[wt 0.7]
+[charaMoveEase F -100,0 0.7 easeInOutSine]
+[charaMoveEase J -100,-250 0.7 easeInOutSine]
+[wt 0.7]
+[se ad7]
+[charaFadein G 0.4 150,-50]
+[charaMove G 150,0 0.2]
+[wt 0.3]
+[charaTalk on]
+[charaTalk G]
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0.1 -120,0]
+[charaFadein B 0.1 120,0]
+
+[bgm BGM_MAP_122 0.1]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V060]
+チョコレートですよチョコレート！[r]厨房は今や、職人たちの戦場と化しました！[wait tVoice]
+[k]
+
+[charaFace G 0]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V070]
+だって、もうすぐバレンタインだもんね！[r]みんなも今から張り切っちゃうわけですよ！[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout G 0.4]
+[charaFadeout F 0.4]
+[charaFadeout J 0.4]
+[wt 0.7]
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 9]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V080]
+ああいうの見てると、英雄とか神様とか言っても、[r]現代人と大して変わんないよなー。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V090]
+それくらいここでの生活を楽しんでる……[r]って事なのかね？[wait tVoice]
+[k]
+
+[charaFace B 16]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V100]
+うんうん、カルデア中が文化祭の前日みたいで、[r]なんだか楽しくなってきちゃうね！[wait tVoice]
+[k]
+
+？1：文化祭かあ……
+？2：言われてみれば、そんな感じなのかも？
+？！
+
+[messageOff]
+
+
+[charaTalk B,F]
+[charaFace F 6]
+[charaFadein F 0.4 -80,0]
+[charaFadein J 0.4 70,-250]
+[charaMove F -50,0 0.5]
+[charaMove J 100,-250 0.5]
+[wt 1.0]
+[charaFaceFade F 26 0.2]
+[wt 0.2]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V110]
+ま、その手の浮かれたイベントなんて、[r]個人的には興味もないわけだが……。[wait tVoice]
+[k]
+
+[bgmStop BGM_MAP_122 1.0]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V120]
+……。[wait tVoice][r]……。
+[k]
+
+[bgm BGM_EVENT_111 0.1]
+
+[charaFace F 22]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V130]
+ところで最近、妙に甘いものが食べたくってなー。[r]頭使いすぎて糖分足りてないのかなー。[wait tVoice]
+[k]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V140]
+例えば、[#超高級]なやつじゃなくても、[r][#ちょこ]っとつまめるような菓子というか……。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace F 16]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V150]
+（チラッ）[wait tVoice]
+[k]
+
+？1：（桂木さん……！？）
+？2：（急に男子中学生みたいなアピールを……！？）
+？！
+
+[messageOff]
+[charaTalk G,F]
+[charaFace G 8]
+[charaFadein G 0.4 80,0]
+[charaFadein K 0.4 -70,-250]
+[charaMove G 50,0 0.5]
+[charaMove K -100,-250 0.5]
+[wt 0.6]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V160]
+……もう、しょうがないなあチカちゃんは。[wait tVoice]
+[k]
+
+[charaFace G 16]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V170]
+それじゃあ、わたしも張り切って準備しちゃおうかな。[r]バレンタインのチョコ、楽しみにしててね！[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk G,F]
+[charaFadeout G 0.4]
+[charaFadeout K 0.4]
+[wt 0.5]
+
+
+[charaFace F 10]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V180]
+お、おう……そうか？[r]なんか、気を遣わせちゃったみたいで悪いな。[wait tVoice]
+[k]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V190]
+いや本当、甘みを求めてただけなんだって。[r]私バレンタインとか全然興味ないからさー。[wait tVoice]
+[k]
+
+？1：桂木さんは……
+？！
+[messageOff]
+
+[bgmStop BGM_EVENT_111 1.0]
+[wt 0.5]
+
+？1：バレンタインのチョコ、作らないの？
+？！
+
+[charaFace F 24]
+[charaShake F 0.05 2 2 0.3]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V200]
+うっく。[wait tVoice]
+[k]
+
+
+[bgm BGM_EVENT_7 0.1]
+[charaFace F 22]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V210]
+べ、別に一方的にもらおうってんじゃないぞ。[r]お返しのチョコなら、とっくに買って……[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk H]
+[charaScale H 0.9]
+[charaFace H 1]
+[charaMove F -150,0 0.6]
+[charaMove J 50,-250 0.6]
+
+[charaFadein H 0.4 350,-90]
+[charaMove H 250,-90 0.6]
+[wt 0.8]
+
+[cueSe SE_22 22_ade695]
+[charaMoveReturn H 250,-80 0.3]
+[wt 0.3]
+[cueSe SE_22 22_ade695]
+[charaMoveReturn H 250,-80 0.3]
+[wt 1.0]
+[charaFace H 6]
+[charaMoveReturn H 240,-90 0.6]
+[wt 0.6]
+[charaMoveReturn H 260,-90 0.6]
+[wt 0.7]
+[charaFadein L 0.1 0,-200]
+
+[charaFace F 23]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V220]
+じ[messageShake 0.04 3 3 0.7]ゃなくて！！[r]興味ないって言ってるだろ！？[wait tVoice]
+[k]
+
+[messageShakeStop]
+
+[charaFace F 16]
+[charaFace H 5]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V230]
+そ、そもそもだな、前にも言わなかったか？[r]私は、作る方面はさっぱりダメなんだって。[wait tVoice]
+[k]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V240]
+……パンケーキ焼いてたはずが、[r]うっかり謎の物体が出来上がったりしてな。[wait tVoice]
+[k]
+
+
+[charaFace H 11]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠H：日比乃ひびき
+[tVoice ValVoice_1001700 0_V250]
+この世にはまだまだ、[r]不思議な事があるんだねえ……。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk H,A]
+[charaFadeout J 0.5]
+[charaFadeout F 0.5]
+[charaFadeout H 0.5]
+[wt 0.7]
+
+
+[charaFace A 14]
+[wt 0.2]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V260]
+んー、[twt 1.5][charaMoveReturn A 0,-3 0.3]んふん！[wait tVoice]
+[k]
+
+[charaFace A 16]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V270]
+渡す相手にそんな物食わせらんないだろ？[r]無理して余計な事せんでもいいんだって。[wait tVoice]
+[k]
+
+[charaFace A 21]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V280]
+ま、張り切ってるみんなにゃ悪いけど、[r]当日までのんびり過ごさせてもらおうかな。[wait tVoice]
+[k]
+
+？1：ふぅん……
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：それ、ちょっと食べてみたいかも
+？！
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaFace A 23]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V290]
+………………なに？[wait tVoice]
+[k]
+
+？1：ほら自分、毒とか平気だし
+？！
+
+[bgm BGM_EVENT_146 0.1]
+
+[charaFace A 11]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V300]
+い[messageShake 0.04 3 3 0.7]ま毒っつったかオイ！？[wait tVoice]
+[k]
+
+[messageOff]
+[messageShakeStop]
+[se ad95]
+[charaMove A -50,0 0.4]
+[charaMove L -50,-200 0.4]
+
+
+[charaScale E 1.2]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.4 250,30]
+[charaMove E 150,30 0.4]
+[seStop ad95 0.5]
+[wt 0.4]
+
+＠E：日比乃ひびき
+[tVoice ValVoice_1001700 0_V310]
+店長さん。[wait tVoice]
+[k]
+
+[charaFace E 2]
+
+＠E：日比乃ひびき
+[tVoice ValVoice_1001700 0_V320]
+[#興味本位:きょうみほんい]で言ってるなら、やめておくべきだ。[r]以前に僕もつまみ食いをした事があるけれど。[wait tVoice]
+[k]
+
+[charaFace E 3]
+
+＠E：日比乃ひびき
+[tVoice ValVoice_1001700 0_V330]
+僕に与えられた力の全てを使っても、[r]機能の完全修復に８０時間を要したからね。[wait tVoice]
+[k]
+
+
+
+[charaTalk A]
+[charaFace A 23]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V340]
+お前そんな事してたの！？[wait tVoice]
+[k]
+
+
+[charaTalk E]
+[charaFace E 5]
+
+＠E：日比乃ひびき
+[tVoice ValVoice_1001700 0_V350]
+ごめんよ、僕がふがいないばっかりに。[r]チカちゃんに悲しい思いをさせてしまった……。[wait tVoice]
+[k]
+
+
+[charaTalk A]
+[charaFace A 11]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V360]
+そこまでではねえよ！？[r]謝られる方が悲しくなるからやめろ！！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout L 0.5]
+[charaFadeout A 0.5]
+[charaFadeout E 0.5]
+[wt 0.8]
+[charaScale E 1.0]
+
+
+？1：そんなにすごいんだ……
+？2：そんなにすごいなら……
+？！
+
+？1：あえて、自分の限界に挑戦してみたい
+？！
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V370]
+な[messageShake 0.04 3 3 0.7]んでだよッ！？[wait tVoice]
+[k]
+
+？1：これからの戦いに向けて……
+？2：知っておきたいんだ、自分の身体の事を
+？！
+[messageShakeStop]
+
+[charaFace A 11]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V380]
+そのろくろ回すみたいなポーズをやめろ！[r]笑いこらえてるのもバレバレだからな！[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V390]
+くっそ……さすがに頭にきたぞ。[r]人の手料理で耐久性試験やろうとしやがって。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_146 1.0]
+[charaFace A 18]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V400]
+そんなに食いたけりゃなあ……[r]食わせてやろうじゃねえか！！[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠E：日比乃ひびき
+[tVoice ValVoice_1001700 0_V410]
+えっ……チカちゃん？[wait tVoice]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+[bgm BGM_BATTLE_271 0.1]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V420]
+勝負はバレンタインデー当日！[r]まともなチョコを作れたら私の勝ちだ！[wait tVoice]
+[k]
+
+[charaFace A 21]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V430]
+あと謎の物体が出来上がった場合も、[r]お前の胃袋を破壊したら私の勝ちにする。[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠E：日比乃ひびき
+[tVoice ValVoice_1001700 0_V440]
+それって勝負になってるかなぁ……？[wait tVoice]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V450]
+いーや、ここは譲らんぞ。[r]向こうから挑戦してきたんだからな。[wait tVoice]
+[k]
+
+[charaFace A 18]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V460]
+いまさら逃げるとは言うまい……[r]そうだよなぁ、店長ッ！[wait tVoice]
+[k]
+
+？1：フフフ……
+？2：望むところだよ、桂木くん
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠E：日比乃ひびき
+[tVoice ValVoice_1001700 0_V470]
+うわぁ。[r]なんだかすごいことになっちゃったぞ。[wait tVoice]
+[k]
+
+[charaFace E 0]
+
+＠E：日比乃ひびき
+[tVoice ValVoice_1001700 0_V480]
+チカちゃんが自分で作る気になるなんて。[r]さすがだね、店長さん。[wait tVoice]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V490]
+こ[messageShake 0.05 3 3 0.8]の流れで向こうの株が上がるのおかしいだろ！？[wait tVoice]
+[k]
+
+[messageOff]
+[messageShakeStop]
+[charaScale E 1.3]
+[charaTalk A,E]
+[charaFace E 5]
+[charaFadein J 0.4 -50,-250]
+[charaFadein E 0.4 100,0]
+[wt 1.0]
+[charaFadeout A 0.1]
+
+
+[se ad596]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[charaTalk G]
+[charaFace G 14]
+[charaFadein G 0.1 100,0]
+
+[wt 0.6]
+[fadein white 0.7]
+[wait fade]
+[wt 0.8]
+
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V500]
+でもでも、そういう事なら……！[wait tVoice]
+[k]
+
+[charaFace G 1]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V510]
+わたしがチカちゃんを全力で応援するよ！[r]バレンタインまで一緒に特訓を……。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaPut F -300,0]
+[charaFace F 25]
+
+[charaMoveEase F -200,0 0.6 easeOutSine]
+[charaMoveEase G 200,0 0.6 easeOutSine]
+[charaMoveEase J 100,-250 0.6 easeOutSine]
+[wt 0.3]
+[charaFadein F 0.3]
+[wt 0.4]
+[charaTalk on]
+[charaTalk F]
+
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V520]
+いや、ダメだ。[wait tVoice]
+[k]
+
+
+[charaFace G 18]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V530]
+あれぇー？[wait tVoice]
+[k]
+
+[charaFace F 20]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V540]
+これは私のプライドをかけた[#真剣勝負:しんけんしょうぶ]……。[r]誰かの力を借りたら意味がない。そうだろ？[wait tVoice]
+[k]
+
+
+[charaFace G 13]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V550]
+う、うぅーん？[r]そう、なのかなぁ……？[wait tVoice]
+[k]
+
+
+[charaFace F 27]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V560]
+それに、成り行きで任されたとはいえ、[r]今の私は疑似サーヴァントだからな。[wait tVoice]
+[k]
+
+[charaFace F 19]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V570]
+案外、神様パワーのおかげで、[r]すごいチョコが作れるかもしれんだろ！[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaFadein A 0.1 1]
+
+[charaScale I 1.1]
+[charaTalk I]
+[charaFace I 0]
+[charaPut I -420,0]
+[charaMove I -400,0 0.4]
+[charaFadeTime I 0.4 0.5]
+[wt 0.6]
+[charaFace I 3]
+[charaMoveReturn I -407,0 0.6]
+[wt 0.6]
+[charaMoveReturn I -393,0 0.6]
+[wt 1.8]
+
+
+[charaTalk G]
+[charaFace G 12]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V580]
+姿はまったく見えてないけど、[r]本人が『それ無理』って言ってる気がするよ！？[wait tVoice]
+[k]
+
+
+[messageOff]
+[charaTalk A,G]
+[charaFace A 19]
+[charaFadeout F 0.4]
+[charaFadeout G 0.4]
+[charaFadeout I 0.4]
+[charaFadeout J 0.4]
+[wt 0.9]
+[charaFace A 27]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V590]
+フッ……それじゃあな、店長！！[r]バレンタインまで首洗って待ってやがれ！！[wait tVoice]
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_271 1.5]
+[charaMove A -70,0 1.0]
+[charaFadeout A 0.7]
+[wt 0.8]
+[se ad8]
+
+[wt 3.0]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V600]
+あのう、店長さん……。[wait tVoice]
+[k]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V610]
+チカちゃんのこと、[r]わざと怒らせたよね？[wait tVoice]
+[k]
+
+
+？1：まぁ、その……
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：[line 3]興味がないなんて言わずに
+？2：挑戦してみるのもいいんじゃない？
+？！
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace B 5]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V620]
+ふむん……。[wait tVoice]
+[k]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V630]
+カルデアのみんなみたいに、[r]チョコレート作りを、ですか。[wait tVoice]
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.9]
+
+
+？1：上手くいっても、失敗しても……
+？2：それだけできっと楽しいよ
+？！
+
+？1：バレンタインは『文化祭』みたいな
+
+？2：年に一度のお祭りなんだから
+？！
+
+[charaFace B 1]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V640]
+うん……そうですね！[wait tVoice]
+[k]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V650]
+きっと、そう！[r]お祭りはみんなで楽しまなくっちゃ！[wait tVoice]
+[k]
+
+
+？1：なんて言ってみたけど、本当は
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：桂木さんのチョコが欲しかっただけ……
+？！
+
+[charaFace B 6]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V660]
+あははっ！[wait tVoice]
+[k]
+
+
+＠日比乃ひびき
+……。[r]……。
+[k]
+
+[charaFace B 8]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V670]
+なんだか嬉しいな、店長さんが、[r]こんなにチカちゃんのことを考えてくれて。[wait tVoice]
+[k]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V680]
+わたしたち、サーヴァントの事なんて、[r]まだまだ全然わかんないけど……[wait tVoice]
+[k]
+
+[charaFace B 14]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V690]
+わたしたちを[#喚:よ]んでくれたのが、店長さんで、[r]本当によかったなって。[wait tVoice]
+[k]
+
+？1：こっちこそ、ありがとう
+？！
+
+[messageOff]
+[charaFaceFade B 5 0.2]
+[wt 1.5]
+
+？1：桂木さんと、日比乃さんが……
+？2：二人が来てくれて、すごく嬉しいよ
+？！
+
+[messageOff]
+[wt 1.0]
+[charaFaceFade B 16 0.2]
+[wt 2.0]
+
+[bgmStop BGM_EVENT_77 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[scene 10000]
+[wt 1.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+＠
+[align center]バレンタイン当日[line 3][align]
+[k]
+
+[messageOff]
+[fadeout black 0.1]
+[wait fade]
+
+[branchQuestClear lblClear02c 94064915]
+[branchQuestClear lblClear02c 3001101]
+[branchQuestClear lblClear02b 3000303]
+
+[label lblClear02a]
+[scene 105500]
+[sceneSet J 105500 1]
+[sceneSet K 105500 1]
+[sceneSet O 105500 1]
+[charaScale J 1.3]
+[charaScale K 1.3]
+[charaScale O 1.3]
+[branch lblConf02]
+
+[label lblClear02b]
+[scene 104200]
+[sceneSet J 104200 1]
+[sceneSet K 104200 1]
+[sceneSet O 104200 1]
+[charaScale J 1.3]
+[charaScale K 1.3]
+[charaScale O 1.3]
+[branch lblConf02]
+
+[label lblClear02c]
+[scene 203800]
+[sceneSet J 203800 1]
+[sceneSet K 203800 1]
+[sceneSet O 203800 1]
+[charaScale J 1.3]
+[charaScale K 1.3]
+[charaScale O 1.3]
+
+[label lblConf02]
+
+[charaDepth J 5]
+[charaDepth K 9]
+[charaDepth O 12]
+[charaDepth R 13]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+[flashin loop 0.6 0.8 FF000060 FF000000]
+[se ad9]
+[wt 0.6]
+[se ad608]
+[se ad882]
+[shake 0.03 5 5 0.6]
+[charaPut Q -300,0]
+[charaRoll Q 270]
+[charaEffect Q bit_talk_impactlanding]
+
+
+
+
+[bgm BGM_EVENT_3 0.1]
+[wt 1.5]
+
+[seVolume ad9 1.0 0.5]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 -100,0]
+[charaMove C -50,0 0.4]
+[wt 0.6]
+[se ade263]
+
+
+
+＠謎の怪物
+[i berserker_language_2]ーーーッ！！
+[k]
+
+？1：うわーーーっ！？
+？2：食堂から謎の怪物がーーー！？
+？！
+
+
+
+[messageOff]
+[charaTalk off]
+[charaFadein O 0.4 -80,-250]
+[charaFace R 0]
+[charaFadein R 0.4 120,0]
+[charaMove O -100,-250 0.4]
+[charaMove R 100,0 0.4]
+[wt 0.4]
+
+＠シリウス
+[tVoice ValVoice_1001700 0_V700]
+とりゃー。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace D 0]
+[charaFadein D 0.1 900,0]
+[charaFadein C 0.1 -300,0]
+[se ad73]
+[charaMoveEase R -400,0 0.8 easeOutSine]
+[charaMoveEase D 120,0 0.8 easeInSine]
+[wt 0.3]
+[charaFadeout R 0.4]
+[charaFadeout O 0.4]
+[wt 0.5]
+
+[se ad76]
+[charaEffect C bit_talk_14]
+[charaShake C 0.05 2 2 1.5]
+[wt 0.1]
+[charaMoveEase D 150,0 0.3 easeInSine]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk C]
+
+[se ade266]
+＠謎の怪物
+[i berserker_language_1]ーーーッ！？
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad52]
+[charaSpecialEffect C enemyErasure 1 1.5]
+[wt 0.5]
+[wait charaSpecialEffect C]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_3 1.5]
+[flashout 0.5]
+[seStop ad9 1.0]
+[wt 1.0]
+[flashOff]
+
+？1：意外とあっさり倒したーーー！！
+？！
+
+
+[cameraMove 1.6 -100,-20 1.2]
+[se ad606]
+[fadeout white 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFace A 16]
+[charaFace B 5]
+[charaFadein A 0.1 -120,0]
+[charaFadein B 0.1 120,0]
+[wt 1.0]
+[cameraMove 0.1 0,0 1.1]
+[wt 0.1]
+
+[cameraMove 1.5 0,0 1.01]
+[fadein white 1.5]
+[wait fade]
+[wt 0.2]
+
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 16]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V710]
+くっ……。[r]店長、か……。[wait tVoice]
+[k]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V720]
+わざわざ来てもらったのに、悪いな。[r]お前に食わせるはずだったチョコは……[wait tVoice]
+[k]
+
+[charaFace A 22]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V730]
+たった今消滅したところだ。[wait tVoice]
+[k]
+
+？1：ちょっと待ってね？
+？2：どう見ても怪物でしたよね？
+？！
+
+
+[charaFace B 11]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V740]
+サーヴァントになった事で、[r]本当にすごいチョコができちゃったね。[wait tVoice]
+[k]
+
+[charaFace B 18]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V750]
+うーん、神様パワーおそるべし……。[wait tVoice]
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[charaDepth I 2]
+[charaDepth A 3]
+[charaDepth B 4]
+[charaScale I 1.0]
+[charaFace I 0]
+[charaPut I -400,0]
+[charaMove I -420,0 0.4]
+[charaFadeTime I 0.4 0.5]
+[wt 1.0]
+[charaFace I 1]
+[se ade395]
+[charaEffect I bit_talk_starshine 10,125]
+[wt 1.2]
+
+？1：それ使い方間違ってるよね！？
+？！
+
+[charaMove I -400,0 0.5]
+[charaFadeout I 0.4]
+[wt 0.5]
+
+[charaFace F 22]
+[charaFadein F 0.4 -80,0]
+[charaFadein K 0.4 70,-250]
+[charaMove F -50,0 0.5]
+[charaMove K 100,-250 0.5]
+[wt 1.0]
+[charaFaceFade F 9 0.2]
+[wt 0.2]
+
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V760]
+まあ……どっちだっていいさ。[wait tVoice]
+[k]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V770]
+あれだけ大口叩いておきながら、[r]肝心のチョコを用意できなかったんだからな。[wait tVoice]
+[k]
+
+[charaFace F 22]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V780]
+ああ、認めるよ店長……。[r]この勝負は[line 3]私の負けだ。[wait tVoice]
+[k]
+
+？1：桂木さん……
+？2：いや思ってたのと違うというか……
+？！
+
+
+[bgmStop BGM_EVENT_11 1.0]
+
+
+[se ade226]
+[charaScale G 1.4]
+[charaScale O 1.4]
+[charaFace G 2]
+[charaFadein G 0.2 70,0]
+[charaFadein O 0.2 -80,-250]
+[charaMove G 50,0 0.2]
+[charaMove O -100,-250 0.2]
+[effect bit_talk_41_fs 20,0]
+[shake 0.05 2 2 0.4]
+[wt 0.2]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V790]
+[f large]ち[messageShake 0.04 3 3 0.7]ょっと待ったぁーーー！！[wait tVoice]
+[k]
+
+[effectStop bit_talk_41_fs]
+
+[charaFadeout F 0.1]
+[charaFadeout K 0.1]
+[messageShakeStop]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V800]
+ストップザその決着！[r]審判として異議を申し立てます！[wait tVoice]
+[k]
+
+？1：ひ、日比乃さん！？
+？！
+
+
+[bgm BGM_REQUIEM 0.1]
+
+[charaFace G 10]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V810]
+チカちゃんはチョコを用意できなかった……。[r]確かにこれは、不戦敗と言われても仕方がない。[wait tVoice]
+[k]
+
+[charaFace G 2]
+[charaFace B 2]
+[charaFace A 14]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V820]
+ですが、食べきると豪語した店長さんもまた……[r]チョコを食べることができなかったのです！[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaTalk A,G]
+[charaFadeout G 0.3]
+[charaFadeout O 0.3]
+[wt 0.4]
+
+
+[charaTalk A]
+[charaFace A 12]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V830]
+ハッ！？[wait tVoice]
+[k]
+
+
+[charaFace B 2]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V840]
+つまり、この勝負は……！[r]店長さんの負けでもあるのですよ！[wait tVoice]
+[k]
+
+[charaFace B 9]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V850]
+フフフ……いかがですかな、店長さん？[wait tVoice]
+[k]
+
+？1：あ、はい……
+？2：それでいいです……
+？！
+
+[bgmStop BGM_REQUIEM 0.5]
+
+[charaFace B 16]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V860]
+よかった！[r]それじゃあ、納得をいただいたところで。[wait tVoice]
+[k]
+
+[bgm BGM_BATTLE_134 0.1]
+
+[charaFace B 1]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V870]
+闇のバレンタインに敗れた二人には、[r]闇の罰ゲームを受けてもらいましょう！[wait tVoice]
+[k]
+
+
+[charaFace A 18]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V880]
+な[messageShake 0.04 3 3 0.7]……何ィーーーッ！？[r]闇の罰ゲームだとぉーーーッ！？[wait tVoice]
+[k]
+
+？1：その前に闇のバレンタインとは！？
+？！
+
+
+[messageOff]
+[messageShakeStop]
+[charaTalk A,G]
+[charaScale G 1.3]
+[charaScale O 1.3]
+[charaFace G 1]
+[charaFadein G 0.4 0,0]
+[charaFadein O 0.4 -100,-250]
+[wt 0.8]
+[charaFace G 6]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V890]
+ではでは、罰ゲームの内容を発表しまーす。[r]これから二人にはぁ……。[wait tVoice]
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_134 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[scene 10000]
+[charaFadeout G 0.1]
+[charaFadeout O 0.1]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 1.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[cueSe SE_24 24_ade1120]
+[wt 1.2]
+[seStop 24_ade1120 0.5]
+[wt 0.8]
+
+[cueSe SE_23 23_ade825]
+[wt 1.5]
+[seStop 23_ade825 1.0]
+[wt 2.5]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V900]
+あとは、チョコレートソースをたっぷりかけて……[wait tVoice]
+[k]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V910]
+最後にトッピングを加えたら……！[wait tVoice]
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestClear lblClear03c 94064915]
+[branchQuestClear lblClear03c 3001101]
+[branchQuestClear lblClear03b 3000303]
+[label lblClear03a]
+[scene 105600]
+[sceneSet J 106000 1]
+[sceneSet M 105600 1]
+[sceneSet N 105600 1]
+[sceneSet O 241200 1]
+[sceneSet P 105501 1]
+[sceneSet Q 10000 1]
+[charaScale M 1.3]
+[charaScale N 1.3]
+[charaScale J 1.01]
+[charaScale O 1.01]
+[charaScale P 1.01]
+[charaScale Q 1.01]
+
+[branch lblConf03]
+[label lblClear03b]
+[scene 105900]
+[sceneSet J 105800 1]
+[sceneSet M 105900 1]
+[sceneSet N 105900 1]
+[sceneSet O 241200 1]
+[sceneSet P 104201 1]
+[sceneSet Q 10000 1]
+[charaScale M 1.3]
+[charaScale N 1.3]
+[charaScale J 1.01]
+[charaScale O 1.01]
+[charaScale P 1.01]
+[charaScale Q 1.01]
+
+
+[branch lblConf03]
+[label lblClear03c]
+[scene 158100]
+[sceneSet J 157900 1]
+[sceneSet M 158100 1]
+[sceneSet N 158100 1]
+[sceneSet O 241400 1]
+[sceneSet P 213800 1]
+[sceneSet Q 10000 1]
+[charaScale M 1.3]
+[charaScale N 1.3]
+[charaScale J 1.01]
+[charaScale O 1.01]
+[charaScale P 1.01]
+[charaScale Q 1.01]
+
+
+
+[label lblConf03]
+
+
+[charaDepth J 1]
+[charaDepth L 1]
+[charaDepth A 2]
+[charaDepth B 3]
+[charaDepth M 4]
+[charaDepth F 5]
+[charaDepth N 6]
+[charaDepth G 7]
+[charaDepth Q 8]
+[charaDepth P 9]
+[charaDepth O 10]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+[cueSe SE_22 22_ade819]
+[effect bit_talk_41_fs]
+[charaFadein S 0.5 0,-70]
+[wt 2.8]
+[effectStop bit_talk_41_fs]
+[charaFadeout S 0.4]
+[wt 0.6]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V920]
+はいっ、かーーーんせーーーい！[r]バレンタインチョコレートパンケーキでーす！[wait tVoice]
+[k]
+
+[charaFace B 6]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V930]
+店長さんと、チカちゃんと……わたしの分！[r]ちゃんと全員分が出来上がったね！[wait tVoice]
+[k]
+
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.7 0,-20]
+[charaMove A 0,0 1.0]
+[charaShake A 0.05 2 0 1.0]
+[wt 1.2]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V940]
+う……腕の筋肉がひきつっとる……。[wait tVoice]
+[k]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V950]
+あれから……あれから何時間くらい、[r]卵の白身かき混ぜとったんじゃい……。[wait tVoice]
+[k]
+
+？1：日比乃さん……
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 1.5]
+
+？1：最初に棚の上に隠してたあれって
+？2：ハンドミキサーでしたよね……？
+？！
+
+[charaFace B 16]
+[wt 0.6]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V960]
+ふふふー、二人が[#頑張ってくれた]おかげで、[r]すっごくふわふわに仕上がったよ。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V970]
+これはみんなで一緒に作った、[r][#みんなのチョコレート]だからね。[wait tVoice]
+[k]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V980]
+チカちゃんはチョコレートを用意できたし、[r]店長さんはそのチョコレートを食べられる、と。[wait tVoice]
+[k]
+
+[charaFace B 6]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V990]
+バレンタイン勝負の結果は、二人とも優勝！[r]これぞウィンウィンというやつですなー！[wait tVoice]
+[k]
+
+？1：思ってたのと違うんだよなあ……！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_94 1.5]
+
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V1000]
+ま、まぁ、そういう事なら……。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace F 12]
+[charaFadein F 0.8 1]
+[charaFadein M 0.8 0,-250]
+[wt 1.0]
+[charaFaceFade F 2 0.2]
+[cueSe SE_24 24_ade1060]
+[seVolume 24_ade1060 0 0.2]
+[effect bit_talk_glitter]
+[wt 1.5]
+[bgm BGM_EVENT_159 0.1]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V1010]
+この勝負……[#実質私の勝ち]だけど、[r]勝敗なんてもうどうでもいいよな。[wait tVoice]
+[k]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V1020]
+なんだかんだ言って、私ら二人とも、[r]お前には世話になりっぱなしだからさ。[wait tVoice]
+[k]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V1030]
+ほら、イースター島でも助けてもらったし？[r]これは二人からの感謝の気持ちってやつだよ。[wait tVoice]
+[k]
+
+[charaFaceFade F 27 0.2]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V1040]
+遠慮しないで……食え？[wait tVoice]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_159 1.0]
+[effectStop bit_talk_glitter]
+[seStop 24_ade1060 1.0]
+[wt 1.5]
+[charaFace B 0]
+[charaFace A 27]
+[charaFadein A 0.1 -120,0]
+[charaFadein B 0.1 120,0]
+
+？1：素直にはいと言えない感じわかりますか？
+？！
+
+[charaFadeout F 0.4]
+[charaFadeout M 0.4]
+[wt 1.8]
+
+？1：でも、ありがとう
+？2：これが三人のバレンタインチョコだね
+？！
+
+[charaFaceFade A 19 0.2]
+[charaFaceFade B 16 0.2]
+[wt 1.6]
+
+
+？1：ありがたく、いただきます！
+？2：どうぞ、めしあがれ！
+？！
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[charaScale F 1.2]
+[charaScale G 1.2]
+
+
+
+[se ad492]
+[fadein black 2.0]
+[wait fade]
+[seStop ad492 1.0]
+
+[bgm BGM_DRAGONCASTLE_1 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V1050]
+なんつーか……。[r]すっかり、ひびきに丸め込まれた気もするが。[wait tVoice]
+[k]
+
+[charaFace A 21]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V1060]
+つまるところ、[r]これは、私のバレンタインチョコでもあるんだな？[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠日比乃ひびき
+[tVoice ValVoice_1001700 0_V1070]
+うん、そうだね！[r]チカちゃんすごく頑張ってたよ！[wait tVoice]
+[k]
+
+[messageOff]
+
+
+[charaTalk B,F]
+[charaFace F 16]
+[charaFadein F 0.6 1]
+[charaFadein M 0.6 -150,-250]
+[wt 1.0]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V1080]
+……。[r]……。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad492]
+[charaMove F 0,-6 0.6]
+[wt 1.6]
+[seStop ad492 0.6]
+[charaMove F 0,0 0.6]
+[wt 1.2]
+[charaFace G 0]
+[charaPut G -400,0]
+[charaMoveEase M 150,-250 1.4 easeInOutSine]
+[charaMoveEase F 200,0 1.4 easeInOutSine]
+[charaMoveEase G -200,0 1.4 easeInOutSine]
+[wt 0.6]
+[charaFadein G 0.5]
+[wt 1.0]
+
+[charaTalk on]
+[charaFace F 9]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V1090]
+………………ほれ、ひびき。[r]口開けろ。[wait tVoice]
+[k]
+
+
+[charaFace G 5]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V1100]
+ほい？[wait tVoice]
+[k]
+
+
+[charaFace F 24]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V1110]
+手作りで返した事なんて、なかったからな。[r]今までの分だと思って……私の分も食べろよ。[wait tVoice]
+[k]
+
+
+[messageOff]
+[charaTalk G]
+[wt 1.0]
+[charaFaceFade G 0 0.2]
+[wt 1.5]
+[charaFaceFade G 16 0.2]
+[wt 0.4]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V1120]
+えへへへ、チカちゃんの手作りチョコかぁ。[r]やっぱり嬉しいなぁ……。[wait tVoice]
+[k]
+
+[charaFace G 6]
+[charaMove G -190,0 0.6]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V1130]
+はい、あーーーん。[wait tVoice]
+[k]
+
+
+
+[messageOff]
+[charaTalk off]
+[charaMove F 190,0 0.6]
+[wt 0.9]
+[se adm34 0.4]
+[charaFace G 16]
+[charaMoveReturn G -190,-2 0.4]
+[wt 0.8]
+[charaTalk on]
+[charaFace F 14]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V1140]
+くっ……こ、今回だけだぞ。[r]こんなのもう二度とやらんからな……！[wait tVoice]
+[k]
+
+？1：この二人……
+？2：隙あらばすぐいちゃいちゃする……
+？！
+
+
+[charaFace F 11]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V1150]
+し[messageShake 0.04 3 3 0.7]てねえよ！！[r]見てないで黙って食え！！[wait tVoice]
+[k]
+
+[messageShakeStop]
+
+
+[charaFace G 1]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V1160]
+あっ、店長さんもやりたいですか？[r]それじゃあ……。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad492]
+[charaMove G -190,-6 0.4]
+[wt 0.6]
+[charaMove G -190,0 0.4]
+[wt 0.6]
+[charaFace G 6]
+[charaMove G -190,15 1.0]
+[charaMoveScale G 1.3 1.0]
+[wt 0.5]
+[seStop ad492 0.4]
+[wt 0.5]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V1170]
+はい、あーんしてくださーい！[wait tVoice]
+[k]
+
+
+[charaFace F 18]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V1180]
+そ[messageShake 0.04 3 3 0.7]れはダメだろ！！[wait tVoice]
+[k]
+
+[messageShakeStop]
+
+[charaFace G 12]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V1190]
+えぇー。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad492]
+[cameraMove 1.0 0,-15 1.05]
+[wt 0.5]
+[seStop ad492 0.4]
+[wt 0.5]
+
+？1：はい、日比乃さん食べて
+？！
+
+[charaFace G 6]
+
+＠G：日比乃ひびき
+[tVoice ValVoice_1001700 0_V1200]
+あーーーん。[wait tVoice]
+[k]
+
+
+[charaFace F 11]
+
+＠F：桂木千鍵
+[tVoice ValVoice_1001700 0_V1210]
+だ[messageShake 0.04 3 3 0.7]から！[r]ダメだって言ってんだろーーーーーー！？[wait tVoice]
+[k]
+
+[messageOff]
+[bgmStop BGM_DRAGONCASTLE_1 1.5]
+[cueSe SE_21 21_ade637]
+[charaEffect F bit_talk_irisout 0,150]
+[wt 1.8]
+
+[cueSe SE_21 21_ade638]
+[charaEffectStop F bit_talk_irisout]
+[wt 0.4]
+
+[fadeout black 0.2]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout M 0.1]
+
+[wt 5.0]
+
+
+
+
+
+
+
+
+
+
+
+
+[charaScale J 1.01]
+[charaFadein J 0.1 0,-200]
+[wt 0.1]
+
+[subCameraOn 1]
+
+[charaLayer A sub #A]
+[charaLayer Q sub #A]
+[subCameraFilter #A maskEdge cut359_mask23 4 255,255,255,255 0]
+[subRenderScale #A 0.55]
+[charaScale A 2.0]
+[charaScale Q 1.2]
+[charaDepth A 2]
+[charaDepth Q 1]
+[charaFace A 16]
+[charaFadein A 0.1 350,180]
+[charaFadein Q 0.1 0,20]
+
+
+
+
+
+
+？1：ところで……
+？！
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+？1：素朴な疑問があるのですが
+？！
+
+
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.4 1]
+[wt 0.5]
+[bgm BGM_TOU_1 0.1]
+
+＠シリウス
+[tVoice ValVoice_1001700 0_V1220]
+ほうほう。[wait tVoice]
+[k]
+
+
+[messageOff]
+[charaTalk A]
+[subRenderFadein #A 0.3 -550,-40]
+[wt 0.6]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V1230]
+わざわざ合体させたんだから、[r]よっぽどの疑問なんだろうな。[wait tVoice]
+[k]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V1240]
+これでつまらん事聞いたら怒るぞ？[wait tVoice]
+[k]
+
+？1：シリウスの時の日比乃さんって……
+？！
+
+[messageOff]
+[charaTalk D]
+[subRenderFadeout #A 0.4]
+[wt 1.2]
+
+？1：チョコレートを贈る方？
+？2：チョコレートを贈られる方？
+？！
+
+
+[charaFace D 0]
+
+＠シリウス
+[tVoice ValVoice_1001700 0_V1250]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFace D 4]
+
+＠シリウス
+[tVoice ValVoice_1001700 0_V1260]
+ん……んん……？[r]そう言われてみると、どっちなんだろう。[wait tVoice]
+[k]
+
+[charaFace D 9]
+
+＠シリウス
+[tVoice ValVoice_1001700 0_V1270]
+自分では考えた事、なかったな。[r]僕としてはどっちでもいいんだけど……。[wait tVoice]
+[k]
+
+＠シリウス
+[tVoice ValVoice_1001700 0_V1250]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFace D 6]
+
+＠シリウス
+[tVoice ValVoice_1001700 0_V1280]
+うん、それじゃあ。[r]チカちゃんが決めて。[wait tVoice]
+[k]
+
+
+[charaTalk A]
+[charaFace A 12]
+[subRenderFadein #A 0.2 -550,-40]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V1290]
+な[messageShake 0.04 3 3 0.7]んでだよ！？[wait tVoice]
+[k]
+
+
+[charaTalk D]
+[charaFace D 6]
+
+＠シリウス
+[tVoice ValVoice_1001700 0_V1300]
+チカちゃんが好きな方を選んでくれたら、[r]僕はそれに合わせるよ、どう？[wait tVoice]
+[k]
+
+[charaFace A 16]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V1310]
+い、いや待て。[r]いきなりそんな事言われても困るだろ。[wait tVoice]
+[k]
+
+[charaFace A 22]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V1320]
+私としては、その……。[wait tVoice]
+[k]
+
+
+[charaTalk D]
+[charaFace D 8]
+
+＠シリウス
+[tVoice ValVoice_1001700 0_V1330]
+どっち？[wait tVoice]
+[k]
+
+[charaTalk A]
+[charaFace A 11]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V1340]
+え[messageShake 0.04 3 3 0.7]えーーーーーーい！！[r]やめやめ、この話は保留だ保留！！[wait tVoice]
+[k]
+
+？1：保留されてしまった……
+？！
+
+
+[charaFace D 9]
+
+＠シリウス
+[tVoice ValVoice_1001700 0_V1350]
+……そっかー。[r]ちょっと残念。[wait tVoice]
+[k]
+
+[charaTalk A]
+[charaFace A 23]
+
+＠桂木千鍵
+[tVoice ValVoice_1001700 0_V1360]
+お前そういうとこはホントひびきだよな！？[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk D]
+[subRenderFadeout #A 0.4]
+[charaFace D 8]
+[wt 1.6]
+[charaFaceFade D 5 0.2]
+[wt 2.0]
+
+
+
+[fadeout black 3.0]
+[bgmStop BGM_TOU_1 3.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

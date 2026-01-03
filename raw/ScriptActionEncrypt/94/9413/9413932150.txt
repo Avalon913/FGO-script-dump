@@ -1,0 +1,1783 @@
+
+＄94-13-93-21-5-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5026000 1 エリザベート_ハロウィン]
+[charaSet B 5026000 1 エリザベート_ハロウィン（演出用）]
+[charaSet C 1098157500 1 エリザベート_JAPAN]
+
+[charaSet D 5043002 1 アスクレピオス]
+[charaSet E 5043000 1 アスクレピオス_第一]
+
+[charaSet F 1010000 1 エリザベート]
+[charaSet G 1010000 1 エリザベート（演出用）]
+[charaSet H 3005002 1 エリザベート・バートリー]
+
+[charaSet I 4001000 1 メドゥーサ]
+[charaSet J 1098257310 1 ダ・ヴィンチ]
+[charaSet K 1098257810 1 マシュ]
+
+[charaSet L 1098319400 1 ビショーネ？]
+[charaSet M 1098319400 1 ビショーネ？（演出用）]
+
+[masterBranch _Male _Female]
+[label _Male]
+[charaSet N 1098259460 1 主人公_決戦礼装（男）_表情差分あり]
+[branch master_end]
+[label _Female]
+[charaSet N 1098259470 1 主人公_決戦礼装（女）_表情差分あり]
+[label master_end]
+
+[imageSet O black_fade_re 1]
+[charaScale O 2.0]
+[imageSet P cut636_dragon3 1]
+[imageSet Q cut636_dragon3 1]
+
+[sceneSet R 239201 1]
+[charaScale R 1.2]
+[sceneSet S 239201 1]
+[charaScale S 1.2]
+[sceneSet T 239201 1]
+[charaScale T 1.2]
+
+[charaSet V 98115000 1 エフェクト用1]
+[charaSet W 98115000 1 エフェクト用2]
+[charaSet X 98115000 1 エフェクト用3]
+[charaSet Y 98115000 1 エフェクト用4]
+[charaSet Z 98115000 1 エフェクト用5]
+
+[charaPut V 2000,2500]
+[charaPut W 2000,2500]
+[charaPut X 2000,2500]
+[charaEffect V bit_talk_radiallight02_big]
+[charaEffect W bit_talk_noble_light_r]
+[charaEffect X bit_talk_06]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 239201]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_122 0.1]
+
+
+[charaTalk off]
+
+[subCameraOn 2]
+
+[charaLayer Y sub #A]
+[charaLayer X sub #A]
+[charaLayer W sub #A]
+[charaLayer V sub #A]
+[charaLayer D sub #A]
+[charaLayer R sub #A]
+
+[charaLayer F sub #B]
+[charaLayer S sub #B]
+
+[subCameraFilter #A normal]
+
+[subCameraFilter #B maskEdge cut359_mask10 5 114,55,70,255]
+
+[subRenderScale #A 1.01]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaTalk depthOff]
+[charaDepth R 2]
+[charaDepth D 3]
+[charaDepth V 4]
+[charaDepth W 5]
+[charaDepth X 6]
+
+[charaScale R 1.2]
+[charaFadein R 0 0,-260]
+
+[charaPut V 0,-400]
+[charaPut W 0,-75]
+[charaPut X 0,-200]
+
+[charaScale D 1.2]
+[charaFace D 7]
+[charaFadein D 0 1]
+
+[charaDepth S 2]
+[charaDepth F 3]
+
+[charaScale S 1.2]
+[charaFadein S 0 -400,0]
+
+[charaScale F 1.2]
+[charaFace F 2]
+[charaFadein F 0 80,225]
+[charaEffectEdgeBlur F FFFFFF FFFFFF 3 3]
+
+[cueSe SE_21 21_ad1117]
+[cueSeVolume 21_ad1117 0 0]
+
+[se ad933]
+[seVolume ad933 0 0]
+[cueSe SE_21 21_ad1108]
+[cueSeVolume 21_ad1108 0 0]
+[wt 0.5]
+
+
+[seVolume ad933 0.8 0.3]
+[cueSeVolume 21_ad1108 0.8 0.5]
+
+[subRenderFadein #A 0.8 0,0]
+[wt 1.8]
+
+[seVolume ad933 0.5 0.1]
+[cueSeVolume 21_ad1108 0.5 0.3]
+
+[charaTalk on]
+[charaTalk D]
+＠アスクレピオス
+くそっ。足りん！
+[k]
+
+[charaFace D 5]
+
+＠アスクレピオス
+エリザベート、もっと気合いを入れろ！
+[k]
+
+[messageOff]
+[charaTalk F]
+[subRenderFadeinFSSideL #B 0.3 -500,-150]
+[subRenderMoveEaseFSSideL #B -450,-250 0.4 easeOutSine]
+
+[cueSeVolume 21_ad1117 0.5 0.2]
+[wt 0.4]
+
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.7]
+
+＠エリザベート
+これでも勇者パワー全開だってば！
+[k]
+
+＠エリザベート
+キャスターじゃないんだから、[r]こういう細かい魔力操作とか引っかかっちゃうのよ！
+[k]
+
+[bgmStop BGM_EVENT_122 1.5]
+[seStop ad933 1.5]
+[cueSeStop 21_ad1108 1.5]
+[cueSeStop 21_ad1117 1.5]
+
+[charaFace F 8]
+
+＠エリザベート
+……。[r]……ん？
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+＠アスクレピオス
+どうした？
+[k]
+
+[messageOff]
+[charaTalk G,D]
+[subRenderFadeout #A 0.5]
+[subRenderFadeout #B 0.5]
+[wt 0.75]
+
+＠G：エリザベート
+思いついたの。
+[k]
+
+[charaFace G 1]
+
+＠G：エリザベート
+なーんだ、だったら[r]キャスターになればいいんだわ？
+[k]
+
+＠G：エリザベート
+クラスチェーンジ！
+[k]
+
+[messageOff]
+[wt 0.4]
+
+[se ad236]
+[fowardEffect bit_talk_magical_pon]
+[wt 0.15]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 1.6]
+
+[fowardEffectDestroy bit_talk_magical_pon]
+[bgm BGM_MAP_4 0.1]
+
+？1：そんな気軽にーーー！？
+？！
+
+[charaFace A 5]
+
+＠A：エリザベート
+な、なによ？[r]最近気付いたけどなれるのよ！
+[k]
+
+＠A：エリザベート
+元々キャスターの[#私:アタシ]とランサーの[#私:アタシ]が[r]合体したのが勇者だもの。
+[k]
+
+[charaFace A 0]
+
+＠A：エリザベート
+まあ今は表面的なカタチだけっていう感じではあって、
+[k]
+
+＠A：エリザベート
+そう、ただステージ衣装を着替えたみたいな[r]ニュアンスではあるけど、やらないよりマシかなって。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+[charaScale R 1.0]
+[charaPut R 0,-200]
+[charaTalk D]
+[charaFace D 5]
+[subRenderFadein #A 0.1 0,0]
+
+＠アスクレピオス
+いろいろと言いたいことはあるが、[r]それで魔力が送られてくるならなんでもいい！
+[k]
+
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠A：エリザベート
+でしょ？　じゃあ改めて魔力を渡す……[r]つまり、元気を渡す……元気づける……？
+[k]
+
+[charaFace A 0]
+
+＠A：エリザベート
+また思いついちゃったわ。[r]ステージ衣装、って自分の台詞で。
+[k]
+
+[charaFace A 1]
+
+＠A：エリザベート
+一番やりやすい形でいいかしら？
+[k]
+
+[charaFace A 3]
+
+＠A：エリザベート
+つまり[line 3][r][#歌ってもいい]？　ってことだけど。
+[k]
+
+？1：（誰かのために歌うなら、それは[line 3]！）
+？2：ビショーネのために歌ってくれる、エリちゃん！？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[subRenderFadein #A 0.1 0,0]
+
+＠アスクレピオス
+何度も言うが、魔力が来れば何でもいい！
+[k]
+
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：エリザベート
+いいのね？　だったら歌うわ。[r][#私:アタシ]、歌うわ！
+[k]
+
+＠A：エリザベート
+何かになりたくて、何になればいいかわかってなかった、[r]このお馬鹿な寝ぼすけビショーネのために歌うわ！
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_4 1.5]
+
+[charaTalk off]
+[charaDepth A 2]
+[charaDepth T 3]
+[charaDepth Z 4]
+[charaDepth B 5]
+
+[charaScale B 1.2]
+[charaScale T 1.2]
+[charaScale Z 1.5]
+
+[charaTalk A,B]
+[charaFace B 0]
+[charaFadein B 0.7 1]
+[charaFadein T 0.7 0,-260]
+[wt 1.05]
+
+[cueSe SE_21 21_ade581]
+[charaPut Z 0,200]
+[charaEffect Z bit_talk_spotlight02]
+[wt 1.4]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 255,255,255,255]
+
+[charaScale D 1.2]
+[charaScale R 1.2]
+[charaPutFSR D 50,225]
+[charaPut R -400,0]
+
+[charaPutFSR V 50,-175]
+[charaPutFSR W 50,150]
+[charaPutFSR X 50,25]
+[wt 0.2]
+
+
+[bgm BGM_EVENT_13 0.1]
+
+[charaEffect B bit_talk_sing_notes]
+
+[charaTalk on]
+[charaFace B 1]
+＠B：エリザベート
+起きなさい、ビショーネ～。[r]チビーネも、一緒に～。
+[k]
+
+[messageOff]
+[charaTalk D]
+[charaFace D 6]
+[subRenderScale #A 1.04]
+[subRenderFadeinFSR #A 0.3 450,-250]
+[subRenderMoveEaseFSR #A 200,-250 0.5 easeOutSine]
+
+[charaMoveEaseFSL Z -250,200 0.5 easeOutSine]
+[charaMoveEaseFSL B -250,0 0.5 easeOutSine]
+[charaMoveEase T -160,-260 0.5 easeOutSine]
+[wt 0.7]
+
+＠アスクレピオス
+ふざけているようだが、魔力が……来た！[r]スムーズだ、続けろ！
+[k]
+
+[charaTalk B]
+[charaFace B 1]
+＠B：エリザベート
+わかった、わ～～～～～♪
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_13 2.0]
+[wait fade]
+
+[subRenderScale #A 1.01]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout T 0.1]
+[charaPut B 2000,2500]
+[charaEffectDestroy B bit_talk_sing_notes]
+[charaPut Z 2000,2500]
+[charaEffectDestroy Z bit_talk_spotlight02]
+
+[subRenderFadeout #A 0.1]
+
+[scene 10000]
+
+[pictureFrameTop cut063_cinema]
+[wt 0.8]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠
+……。
+[k]
+
+＠
+……。[r]……。
+[k]
+
+＠
+…………。[r]…………。
+[k]
+
+[messageOff]
+[se ad952 0.3]
+[seStop ad952 3.0]
+[effect bit_talk_light_skyrock01]
+[wt 2.4]
+
+[bgm BGM_EVENT_11 2.0]
+
+＠
+ふ、と。
+[k]
+
+＠
+闇の中に、何かが聞こえたような気がして。
+[k]
+
+＠
+思い出す。
+[k]
+
+＠
+隔絶したわたしに、続きが生まれる。
+[k]
+
+＠
+円を描くように、わたしが還ってくる。
+[k]
+
+＠
+後悔はなく。[r]ただの疑問として、思う。
+[k]
+
+＠
+[line 3]こうじゃない結末も、あったのかな。
+[k]
+
+＠
+そうだとしたら、わたしは。
+[k]
+
+＠
+いったい、どんなわたしになれば[r]よかったんだろう？
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+……うん。正直に言えば、わたしは。
+[k]
+
+＠
+もっともっと、別のわたしも見たかった。
+[k]
+
+＠
+たとえば選択肢がさらにいっぱい、十個二十個あっても、[r]全部素晴らしくて、選べなくて、困ってたと思うけど、
+[k]
+
+＠
+間違いなく、どれも素敵にきらきらして見えてたと思う。[r]それになった自分を、わくわくと想像してたと思う。
+[k]
+
+＠
+……いやあ。新人のくせに、みんなが優しくしてくれて、[r]甘やかされちゃったから。
+[k]
+
+＠
+欲がいっぱい出てきて、だめですね。
+[k]
+
+＠
+なりたいものに、後悔しないものに、なれたっていうのに。[r]それが……短かったなあ、って寂しくて。
+[k]
+
+＠
+他にもいっぱい、なりたかったものはあったなあ、って、[r]ないものねだりして[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.5]
+
+[se ad7]
+[charaTalk G]
+[charaFace G 2]
+[charaPut G 0,-550]
+[charaFadeTime G 0.2 0.5]
+[charaMoveEase G 0,-50 0.4 easeOutBack]
+[wt 1.1]
+
+＠G：エリザベート
+バカー！
+[k]
+
+[messageOff]
+[charaFadeout G 1.0]
+[wt 1.2]
+
+＠
+びっくりです。[r]イマジナリーエリちゃん先輩に怒られました。
+[k]
+
+＠
+新人のわたしは、足りないものばかりで、[r]間違ってばかりで。
+[k]
+
+＠
+怒られて当然ですね。[r]ごめんなさい。
+[k]
+
+[messageOff]
+[charaTalk G]
+[charaFace G 2]
+[charaPut G 0,-50]
+[charaFadeTime G 0.4 0.5]
+[wt 0.4]
+
+[bgm BGM_EVENT_13 2.5 0.4]
+
+＠G：エリザベート
+何を叱られたかもわかってないのに[r]謝ったりするんじゃないの！
+[k]
+
+[charaFace G 8]
+
+＠G：エリザベート
+いい？
+[k]
+
+[charaFace G 5]
+
+＠G：エリザベート
+[line 3]ダメなんかじゃないのよ！
+[k]
+
+＠G：エリザベート
+欲がいっぱいあったって、[r]ないものねだりしたって、いいの！
+[k]
+
+[charaFace G 2]
+
+＠G：エリザベート
+歌いたい歌は歌っていいのよ！
+[k]
+
+＠G：エリザベート
+聞きたい歌だって、なんだってリクエストすればいいの！[r][#私:アタシ]のレパートリーは無限なんだから！
+[k]
+
+＠
+[charaTalk V]
+そう、かも、です、ね。
+[k]
+
+＠
+[charaTalk V]
+でも、エリちゃん先輩、ごめんなさい。[r]わたしは、ここまで、みたいですから[line 3]
+[k]
+
+[charaTalk G]
+[charaFace G 2]
+＠G：エリザベート
+諦[messageShake 0.05 4 3 0.4]めちゃダメー！
+[k]
+
+＠G：エリザベート
+いい、[#私:アタシ]を見なさい！[r]本当に、歌いたいものを歌う[#私:アタシ]を！
+[k]
+
+＠G：エリザベート
+[#私:アタシ]がアナタの先輩だっていうんなら、[r]これが一番先輩らしいところよ！
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout G 0.1]
+[effectDestroy bit_talk_light_skyrock01]
+
+[pictureFrameTop]
+
+[charaSet B 4046000 1 エリザベート_シンデレラ]
+
+[scene 239201]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[charaEffect A bit_talk_sing_notes]
+
+[charaPut B 2000,2500]
+[charaPut C 2000,2500]
+[charaPut H 2000,2500]
+[charaEffect B bit_talk_sing_notes]
+[charaEffect C bit_talk_sing_notes]
+[charaEffect H bit_talk_sing_notes]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_13 1.0 1.0]
+[wait fade]
+[wt 0.4]
+
+＠A：エリザベート
+こら、ビショーネ～～～♪[r]いい加減に、起きなさい～♪
+[k]
+
+[charaFace A 5]
+
+＠A：エリザベート
+ハッ。今唐突にセットリストの天啓が[r]下りてきたわ！
+[k]
+
+[charaFace A 2]
+
+＠A：エリザベート
+ここでミュージカル調よ！[r]今までもちょっとそうだった気がするけど！
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ade1116]
+[wt 0.2]
+[fowardEffect bit_talk_tornado01]
+[wt 1.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+[charaFadeout A 0.1]
+[charaPut A 2000,2500]
+[charaEffectDestroy A bit_talk_sing_notes]
+[wt 0.7]
+[cueSeStop 24_ade1116 1.0]
+[wt 1.0]
+[fowardEffectDestroy bit_talk_tornado01]
+
+＠B：エリザベート
+ビビら～、ないで～、このお姫様オーラに～♪[r]ラララ～、[#私:アタシ]は、シンデレエリなのよ～♪
+[k]
+
+[charaFace B 1]
+
+＠B：エリザベート
+調子が出てきたわ！[r]次は意表をついてヘビメタ調よ！
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_mgn_light_p]
+[wt 0.2]
+[se ad64]
+[se ad627]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaFadeout B 0.1]
+[charaPut B 2000,2500]
+[charaEffectDestroy B bit_talk_sing_notes]
+[wt 2.0]
+[fowardEffectDestroy bit_talk_mgn_light_p]
+
+＠C：エリザベート
+見なさい、ドームを満員にする[r]隠し球のエリザベートＪＡＰＡＮ再結成！　一人だけど！
+[k]
+
+[charaFace C 2]
+
+＠C：エリザベート
+アイリブ！　ユーリブ！　ドントダーイ！[r]カモォォォンヌ！
+[k]
+
+[charaFace C 5]
+
+＠C：エリザベート
+はあはあ……そして勿論！[r]正統派アイドルソングも！
+[k]
+
+[messageOff]
+[se ad29]
+[fadeout white 0.4]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaPut C 2000,2500]
+[charaEffectDestroy C bit_talk_sing_notes]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+[wt 0.6]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.4]
+
+＠H：エリザベート
+ねえ起きて、ほら起きて～。[r]夢の中にも、手を伸ばすわ～。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_13 1.0 0.4]
+[wait fade]
+
+[charaFadeout H 0.1]
+[charaPut H 2000,2500]
+
+[scene 10000]
+
+[pictureFrameTop cut063_cinema]
+
+[effect bit_talk_light_skyrock01]
+
+
+[charaTalk G]
+[charaFace G 5]
+[charaPut G 0,-50]
+[charaFadeTime G 0.1 0.5]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+＠G：エリザベート
+起きなさい、ビショーネ！[r]アナタはまだ終わりじゃない。
+[k]
+
+＠G：エリザベート
+ここからだって、何にだってなれるのよ！
+[k]
+
+[charaFace G 7]
+
+＠G：エリザベート
+そりゃあね、変われない怪物だっているわ。[r]救われない怪物だっているわ。
+[k]
+
+[charaFace G 8]
+
+＠G：エリザベート
+……でも、アナタは違うでしょう！
+[k]
+
+＠G：エリザベート
+自分がやったことも、自分がどんなものなのかも[r]はっきり覚えてないのに、簡単に諦めるんじゃないわよ！
+[k]
+
+[charaFace G 0]
+
+＠G：エリザベート
+怖がらなくてもいいわ。[r][#私:アタシ]は夢を与えるアイドル。
+[k]
+
+＠G：エリザベート
+[#私:アタシ]の歌を聞いて、勇気をもって変身しようとする[r]ファンの応援なんてお手のものなんだから！
+[k]
+
+[messageOff]
+[charaFadeout G 0.4]
+[wt 0.6]
+
+[bgmStop BGM_EVENT_13 3.0]
+
+＠
+そうなのかな。[r]なって、いいのかな。
+[k]
+
+＠
+まだ、これからも。[r]なりたいものに。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_light_skyrock01]
+
+[pictureFrameTop]
+
+
+[subCameraFilter #A normal]
+
+[charaPut V 100,-400]
+[charaPut W 100,-75]
+[charaPut X 100,-200]
+
+[charaScale R 1.2]
+[charaScale D 1.2]
+[charaPut R 100,-260]
+[charaPut D 100,0]
+[charaFace D 7]
+
+[se ad933]
+[seVolume ad933 0 0]
+[cueSe SE_21 21_ad1108]
+[cueSeVolume 21_ad1108 0 0]
+
+
+[scene 239201]
+
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+＠H：エリザベート
+～～～～♪
+[k]
+
+[messageOff]
+[charaTalk D,H]
+[seVolume ad933 0.7 0.1]
+[cueSeVolume 21_ad1108 0.7 0.2]
+[subRenderFadein #A 0.3 0,0]
+
+[charaMoveEase V 0,-400 0.5 easeOutSine]
+[charaMoveEase W 0,-75 0.5 easeOutSine]
+[charaMoveEase X 0,-200 0.5 easeOutSine]
+[charaMoveEase R 0,-260 0.5 easeOutSine]
+[charaMoveEase D 0,0 0.5 easeOutSine]
+[wt 0.3]
+
+[charaFadeout H 0.1]
+[charaPut H 2000,2500]
+[charaEffectDestroy H bit_talk_sing_notes]
+[wt 0.6]
+
+[se ade462]
+[se ad927]
+[seVolume ad927 0 0.5]
+[charaDepth Y 9]
+[charaPut Y 0,-350]
+[charaEffect Y bit_talk_36_sl02_explosion]
+[wt 1.0]
+
+[charaFace D 8]
+
+[charaEffectStop Y bit_talk_36_sl02_explosion]
+[wt 1.5]
+
+[charaFace D 9]
+[wt 0.5]
+
+[se ad747]
+[cueSe SE_21 21_ade669]
+[fadeout white 0.3]
+[seStop ad933 0.3]
+[cueSeStop 21_ad1108 0.3]
+[seStop ade462 0.3]
+[seStop ad927 0.3]
+[wait fade]
+
+[charaPut W 0,0]
+[charaPut X 2000,2500]
+[charaEffectDestroy Y bit_talk_36_sl02_explosion]
+
+[charaEffectEdgeBlur D D71D3B D71D3B 4 4]
+[wt 2.5]
+
+[charaFace D 9]
+
+[fadein white 1.5]
+[wait fade]
+[wt 1.0]
+
+
+[bgm BGM_BATTLE_184 0.1]
+
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠アスクレピオス
+[line 3]よし！　来たぞ！[r]最後の投与を行う！
+[k]
+
+[charaFace D 5]
+
+＠アスクレピオス
+これは相変わらずの[#倣薬:ほうやく]だが、[r]真に迫る[#倣薬:ほうやく]だ！
+[k]
+
+＠アスクレピオス
+哀しむがいいハデスよ、怒るがいいゼウスよ！[r]その全てを僕は患者の生をもって[#嘲笑:あざわら]おう！
+[k]
+
+＠アスクレピオス
+[#蘇:よみがえ]れ[line 3]ビショーネ！
+[k]
+
+[messageOff]
+[wt 0.05]
+[se ad368]
+[seVolume ad368 0 0.4]
+[se ad364]
+[seVolume ad364 0 0.4]
+[charaPut Y 0,-300]
+[charaEffect Y bit_talk_lightning_02r]
+[charaEffect Y bit_talk_secret_garden01_red]
+[wt 1.4]
+
+[se ad365]
+[seVolume ad365 0 0.6]
+[se ade456]
+[seVolume ade456 0 0.3]
+[wt 0.3]
+[seStop ad368 0.3]
+[seStop ad364 0.3]
+[charaEffectStop W bit_talk_noble_light_r]
+[wt 0.6]
+
+[fadeout white 0.7]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+
+[charaPut V 2000,2500]
+[charaPut W 2000,2500]
+[charaPut X 2000,2500]
+[charaPut Y 2000,2500]
+[charaEffectDestroy V bit_talk_radiallight02_big]
+[charaEffectDestroy W bit_talk_noble_light_r]
+[charaEffectDestroy X bit_talk_06]
+[charaEffectDestroy Y bit_talk_lightning_02r]
+[charaEffectDestroy Y bit_talk_secret_garden01_red]
+[charaFadeout R 0]
+[charaFadeout D 0]
+[charaEffectEdgeBlurDestroy D]
+
+[charaFadeout S 0]
+[charaFadeout F 0]
+[charaEffectEdgeBlurDestroy F]
+
+[subCameraOff]
+[charaLayer V normal]
+[charaLayer W normal]
+[charaLayer X normal]
+[charaLayer Y normal]
+[charaLayer R normal]
+[charaLayer D normal]
+[charaLayer S normal]
+[charaLayer F normal]
+[charaScale V 1.0]
+[charaScale W 1.0]
+[charaScale X 1.0]
+[charaScale Y 1.0]
+[charaScale R 1.0]
+[charaScale D 1.0]
+[charaScale S 1.0]
+[charaScale F 1.0]
+
+[charaScale Z 1.0]
+[charaPut Z 2000,2500]
+[charaEffect Z bit_talk_light_skyrock01]
+
+[scene 10000]
+[wt 1.0]
+[seStop ad365 2.0]
+[bgm BGM_BATTLE_184 2.0 0.5]
+
+[wt 1.5]
+
+[fadein white 1.5]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+
+[pictureFrame cut063_cinema]
+
+[charaPut Z 1]
+[wt 0.7]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+
+＠
+うん。正直に言えば。[r]まだまだ、なりたいものは、ある。
+[k]
+
+＠
+いいのかな。
+[k]
+
+＠
+ただのやられ役の[#怪物:ドラゴン]でしかなかったわたしが、[r]他の輝かしいものに、なっても、いいのかな？
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+言葉未満の問いに、当然、[r]答えてくれるひとは誰もいなかったけれど。
+[k]
+
+＠
+遠くから聞こえてくる、とても綺麗な歌声が、[r]それを後押ししてくれているように思えて。
+[k]
+
+＠
+[line 3]ああ。[r]そうなんだ。
+[k]
+
+＠
+わたしはまだまだ、本当の意味で、[r]いろいろなものになれるんだ。
+[k]
+
+＠
+たとえば、身体の色だけじゃなく。体型だけじゃなく、[r]ブレスだけじゃなく、角の本数だけじゃなく。
+[k]
+
+＠
+どんな風に目覚めるか。[r]どんな風に眠るか。
+[k]
+
+＠
+目の前に困っている人がいたら、どうするか。
+[k]
+
+＠
+目の前に好きな人がいたら、どうするか[line 3]
+[k]
+
+＠
+どんな自分になるのか、[r]それを、自分で決めていいのかな？
+[k]
+
+＠
+何になっても、いいのかな？
+[k]
+
+＠
+だったら。[r]今、わたしが一番、なりたいものは[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth I 2]
+[charaDepth G 3]
+[charaDepth D 4]
+[charaDepth N 5]
+
+[charaFace I 1]
+[charaPut I -450,-50]
+[charaFadeTime I 0.8 0.5]
+
+[charaFace G 1]
+[charaPut G 150,-50]
+[charaFadeTime G 0.8 0.5]
+
+[charaScale E 0.95]
+[charaFace E 0]
+[charaPut E -175,-50]
+[charaFadeTime E 0.8 0.5]
+
+[charaFace N 0]
+[charaPut N 400,-50]
+[charaFadeTime N 0.8 0.5]
+[wt 1.4]
+
+＠
+みんなを助けられる、もの。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[cameraMove 10.0 0,-15 1.05]
+
+＠
+そう、怪物は英雄に殺されるものだけど。
+[k]
+
+＠
+わたしは英雄になりたいわけじゃない。[r]人になりたいわけでもない。
+[k]
+
+＠
+たとえ最後に退治されてしまうのだとしても。
+[k]
+
+＠
+どうして、なんて疑問だけに包まれて死ぬ[r]わたしじゃなく[line 3]
+[k]
+
+[bgmStop BGM_BATTLE_184 2.0]
+
+＠
+最後まで、わたしとして誇れるわたしでいたい！[r]それだけなんだ！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[se adm20]
+[seVolume adm20 0 0.7]
+[se ad744]
+[seVolume ad744 0 0.2]
+[fadeout white 1.0]
+[wait fade]
+
+[pictureFrame]
+
+[charaPut Z 2000,2500]
+[charaFadeout I 0.1]
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[charaFadeout N 0.1]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.5]
+
+[seStop ad744 1.0]
+
+[scene 239201]
+
+
+[charaPut V 2000,2500]
+[charaEffect V bit_talk_10_LowLevel]
+
+
+[subCameraOn 3]
+
+[charaLayer W sub #A]
+[charaLayer R sub #A]
+
+[charaLayer H sub #B]
+[charaLayer D sub #B]
+[charaLayer S sub #B]
+
+[charaLayer V sub #C]
+[charaLayer K sub #C]
+[charaLayer J sub #C]
+[charaLayer T sub #C]
+
+[subCameraFilter #A normal]
+
+[subCameraFilter #B maskEdge cut359_mask10 5 255,255,255,255]
+[subCameraFilter #C maskEdge cut359_mask16 5 255,255,255,255]
+
+[subRenderScale #A 1.01]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 2]
+
+[charaDepth R 2]
+[charaDepth W 3]
+
+[charaScale R 1.4]
+[charaFadein R 0 0,-320]
+
+[charaDepth S 2]
+[charaDepth D 3]
+[charaDepth H 3]
+
+[charaScale S 1.2]
+[charaFadein S 0 400,0]
+
+[charaScale D 1.0]
+[charaFace D 6]
+[charaFadein D 0 45,225]
+
+[charaDepth T 2]
+[charaDepth J 3]
+[charaDepth K 3]
+[charaDepth V 4]
+
+[charaScale T 1.2]
+[charaFadein T 0 -400,0]
+
+[charaPut V -50,225]
+[charaScale J 1.0]
+[charaFace J 25]
+[charaFadein J 0 -45,225]
+
+[subRenderFadein #A 0 0,0]
+
+[wt 2.7]
+
+[fadein white 1.5]
+[wait fade]
+
+[wt 0.6]
+
+[se ad842]
+[cueSe SE_22 22_ad1196]
+[cueSe SE_24 24_ad1378]
+
+[cueSe SE_22 22_ad1197]
+[cueSeVolume 22_ad1197 0 0.6]
+[cueSe SE_23 23_ad1310]
+[cueSeVolume 23_ad1310 0 0]
+
+[charaScale W 1.4]
+[charaPut W 1]
+[charaEffect W bit_talk_revival_light]
+[charaPut X 1]
+[charaEffect X bit_talk_revival_light]
+[wt 0.1]
+
+[cueSeVolume 23_ad1310 1.0 0.5]
+[subRenderShake #A 0.02 3 3 1.2]
+[wt 2.6]
+
+[subRenderFadeout #A 1.2]
+[wt 1.6]
+
+[charaTalk on]
+[charaTalk D]
+[subRenderFadeinFSSideL #B 0.3 -500,-150]
+[subRenderMoveEaseFSSideL #B -450,-250 0.4 easeOutSine]
+[wt 0.5]
+
+[bgm BGM_EVENT_91 0.1]
+
+＠アスクレピオス
+来た来た、来たぞ、ククク、ハハハハ！[r]僕はまた、やった……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 50,225]
+
+＠H：エリザベート
+仮想アンコールに応えて歌い続けてた甲斐があったわ！[r]すっごい派手な演出ね！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 45,225]
+
+＠アスクレピオス
+……だが。何か、様子が……[r]元通りのビショーネでは、ない……？
+[k]
+
+[messageOff]
+[charaTalk J]
+[subRenderFadeinFSSideR #C 0.3 500,-150]
+[subRenderMoveEaseFSSideR #C 450,-250 0.4 easeOutSine]
+[wt 0.5]
+
+＠ダ・ヴィンチ
+ちょ、ちょっとー！？[r]何したのアスクレピオス！
+[k]
+
+＠ダ・ヴィンチ
+蘇生にかこつけて[r]変な手術とかしたんじゃないだろうね！？
+[k]
+
+[charaFace J 26]
+
+＠ダ・ヴィンチ
+ビショーネから感じる、[r]この膨大な魔力反応は何だい！？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 6]
+[charaFadein K 0.1 -50,225]
+
+＠マシュ
+チビーネさんは、身体そのものが光るような変化が見えて……[r]ビショーネさんと同様の魔力反応があります！
+[k]
+
+[charaFace K 5]
+
+＠マシュ
+いえ、この魔力パターンは……[r]類似したものが、近くに……？
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_91 1.0 0.5]
+[cueSeStop 22_ad1197 1.0]
+[cueSeStop 23_ad1310 1.0]
+[wait fade]
+
+[subRenderFadeout #B 0.1]
+[subRenderFadeout #C 0.1]
+
+[charaFadeout R 0]
+[charaPut W 2000,2500]
+[charaEffectDestroy W bit_talk_revival_light]
+[charaFadeout S 0]
+[charaFadeout D 0]
+[charaFadeout H 0]
+[charaPut V 2000,2500]
+[charaFadeout T 0]
+[charaFadeout J 0]
+[charaFadeout K 0]
+
+[subCameraOff]
+[charaLayer V normal]
+[charaLayer W normal]
+[charaLayer R normal]
+[charaLayer S normal]
+[charaLayer T normal]
+[charaLayer D normal]
+[charaLayer H normal]
+[charaLayer K normal]
+[charaLayer J normal]
+[charaScale V 1.0]
+[charaScale W 1.0]
+[charaScale R 1.0]
+[charaScale S 1.0]
+[charaScale T 1.0]
+[charaScale D 1.0]
+[charaScale H 1.0]
+[charaScale J 1.0]
+[charaScale K 1.0]
+
+
+[charaPut X 2000,2500]
+
+[scene 10000]
+
+[charaPut Z 1]
+
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠
+[#それ]は、薄く薄く、[r]わたしの中に繋がっていた。
+[k]
+
+＠
+今までは全然気付かなかったけれど[line 3][r]わたしは、見た。
+[k]
+
+＠
+[#死と再生の循環を]、[#この目で見た]。
+[k]
+
+＠
+だから、その[#理:ことわり]を捕まえて、[r][#手繰:た　ぐ]って、引き寄せる。
+[k]
+
+＠
+それも[#わたしという可能性]の一つであると、[r]今ならわかる。
+[k]
+
+＠
+……ああ、そうだ。[r]そうだったんだ。
+[k]
+
+＠
+わたしはミランのビショーネ。[r]だけど、それだけじゃない。
+[k]
+
+＠
+わたしは[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+[#わたしという可能性]、そのものだ。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaPut Z 2000,2500]
+[charaEffectDestroy Z bit_talk_light_skyrock01]
+
+[scene 239201]
+
+[ifClear 60139307]
+[charaSet A 1098315100 1 チビーネ]
+[charaSet B 1098315100 1 チビーネ（演出用）]
+[flag rbody_1 true]
+
+[ifClear 60139308]
+[charaSet A 1098315000 1 チビーネ]
+[charaSet B 1098315000 1 チビーネ（演出用）]
+[flag rbody_2 true]
+
+[ifClear 60139309]
+[charaSet A 1098314900 1 チビーネ]
+[charaSet B 1098314900 1 チビーネ（演出用）]
+[flag rbody_3 true]
+
+[ifClear 60139310]
+[charaSet A 1098316600 1 チビーネ]
+[charaSet B 1098316600 1 チビーネ（演出用）]
+[flag bbody_1 true]
+
+[ifClear 60139311]
+[charaSet A 1098316700 1 チビーネ]
+[charaSet B 1098316700 1 チビーネ（演出用）]
+[flag bbody_2 true]
+
+[ifClear 60139312]
+[charaSet A 1098316800 1 チビーネ]
+[charaSet B 1098316800 1 チビーネ（演出用）]
+[flag bbody_3 true]
+
+[ifClear 60139313]
+[charaSet A 1098317000 1 チビーネ]
+[charaSet B 1098317000 1 チビーネ（演出用）]
+[flag gbody_1 true]
+
+[ifClear 60139314]
+[charaSet A 1098317100 1 チビーネ]
+[charaSet B 1098317100 1 チビーネ（演出用）]
+[flag gbody_2 true]
+
+[ifClear 60139315]
+[charaSet A 1098317200 1 チビーネ]
+[charaSet B 1098317200 1 チビーネ（演出用）]
+[flag gbody_3 true]
+
+[else]
+[charaSet A 1098315100 1 チビーネ]
+[charaSet B 1098315100 1 チビーネ（演出用）]
+[flag rbody_1 true]
+
+[endIf]
+[ifClear 60139328]
+[charaSet E 1098238800 1 無角]
+[charaSet F 1098238800 1 無角（演出用）]
+[flag horn_00 true]
+
+[ifClear 60139331]
+[charaSet E 1098317300 1 重_一角]
+[charaSet F 1098317300 1 重_一角（演出用）]
+[flag horn_11 true]
+
+[ifClear 60139332]
+[charaSet E 1098317310 1 重_二角]
+[charaSet F 1098317310 1 重_二角（演出用）]
+[flag horn_12 true]
+
+[ifClear 60139333]
+[charaSet E 1098317400 1 中_一角]
+[charaSet F 1098317400 1 中_一角（演出用）]
+[flag horn_21 true]
+
+[ifClear 60139334]
+[charaSet E 1098317410 1 中_二角]
+[charaSet F 1098317410 1 中_二角（演出用）]
+[flag horn_22 true]
+
+[ifClear 60139335]
+[charaSet E 1098317500 1 軽_一角]
+[charaSet F 1098317500 1 軽_一角（演出用）]
+[flag horn_31 true]
+
+[ifClear 60139336]
+[charaSet E 1098317510 1 軽_二角]
+[charaSet F 1098317510 1 軽_二角（演出用）]
+[flag horn_32 true]
+
+[else]
+[charaSet E 1098238800 1 無角]
+[charaSet F 1098238800 1 無角（演出用）]
+[flag horn_00 true]
+
+[endIf]
+
+[charaPut B 2000,2500]
+[charaPut E 2000,2500]
+[charaFilter B silhouette FFFFFF80]
+[charaEffectEdgeBlur B ffffff ffffff 4 4]
+[charaEffectEdgeBlur E ffffff ffffff 4 2]
+
+[sceneSet G 231100 1]
+[charaScale G 1.2]
+[sceneSet H 231100 1]
+[charaScale H 1.2]
+
+[scene 239201]
+
+[charaPut X 1]
+[cueSe SE_22 22_ad1197]
+[cueSeVolume 22_ad1197 0 0]
+[cueSe SE_23 23_ad1310]
+[cueSeVolume 23_ad1310 0 0]
+[wt 0.5]
+
+
+[fadein black 1.0]
+[cueSeVolume 22_ad1197 1.0 0.6]
+[cueSeVolume 23_ad1310 1.0 0.5]
+[bgm BGM_EVENT_91 1.0 1.0]
+[wait fade]
+[wt 0.6]
+
+
+[se ad747]
+[se ade390]
+[seVolume ade390 0 0.5]
+[charaEffectStop X bit_talk_revival_light]
+[cueSeStop 22_ad1197 1.0]
+[cueSeStop 23_ad1310 1.0]
+[wt 1.0]
+
+[fadeout white 0.5]
+[wait fade]
+
+[charaEffectDestroy X bit_talk_revival_light]
+
+[scene 10001]
+[wt 0.5]
+
+[subCameraOn 3]
+
+[charaLayer P sub #A]
+[charaLayer G sub #A]
+
+[charaLayer Q sub #B]
+[charaLayer H sub #B]
+
+[charaLayer M sub #C]
+
+[subCameraFilter #A maskEdge cut359_mask08 10 255,255,255,255 1]
+[subCameraFilter #B maskEdge cut359_mask08 10 255,255,255,255 1]
+[subCameraFilter #C through]
+
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+
+[charaDepth G 2]
+[charaDepth P 3]
+
+[charaScale G 1.4]
+[charaFadein G 0 -200,250]
+
+[charaScale P 1.2]
+[charaFadein P 0 -200,650]
+
+[charaDepth H 2]
+[charaDepth Q 3]
+
+[charaScale H 1.4]
+[charaFadein H 0 200,100]
+
+[charaScale Q 1.6]
+[charaFadein Q 0 200,300]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[cueSe SE_24 24_ade1007]
+[subRenderFadein #A 0.3 0,-450]
+[charaMove G -20,250 0.3 easeOutQuint]
+[charaMove P -20,650 0.3 easeOutQuint]
+[wt 0.3]
+[charaMove G 20,250 1.8]
+[charaMove P 20,650 1.8]
+[wt 0.4]
+[cueSeStop 24_ade1007 0.5]
+[wt 1.4]
+
+[subRenderFadeout #A 0.3]
+[charaMove G 200,250 0.3 easeOutQuint]
+[charaMove P 200,650 0.3 easeOutQuint]
+[wt 0.65]
+
+[cueSe SE_24 24_ade988]
+[cueSeVolume 24_ade998 0 0.2]
+[subRenderFadein #B 0.3 0,-250]
+[charaMove H 20,100 0.3 easeOutQuint]
+[charaMove Q 20,300 0.3 easeOutQuint]
+[wt 0.3]
+[cueSeStop 24_ade988 0.3]
+[charaMove H -20,100 1.8]
+[charaMove Q -20,300 1.8]
+[wt 1.8]
+
+[subRenderFadeout #B 0.3]
+[charaMove H -200,100 0.3 easeOutQuint]
+[charaMove Q -200,300 0.3 easeOutQuint]
+[wt 0.5]
+
+[fadeout white 0.5]
+[wait fade]
+
+[charaDepth R 2]
+[charaDepth L 3]
+[charaDepth S 4]
+[charaDepth M 5]
+
+
+[charaScale R 1.2]
+[charaFadein R 0.1 -75,-260]
+
+[charaFace L 20]
+[charaFadein L 0.1 1]
+
+[charaScale S 1.4]
+[charaFadein S 0.1 -75,-210]
+
+[subRenderFadein #C 0 0,0]
+
+[blur lens 0.1 4 10]
+
+[wt 0.2]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.35]
+
+[charaScale M 1.4]
+
+[se ad60]
+[charaFace M 20]
+[charaFadein M 0.4 0,260]
+[wt 0.4]
+[seStop ad60 0.2]
+[wt 1.1]
+
+[charaMoveEase M 0,50 1.7 easeInOutSine]
+[charaMoveEase S -75,-420 1.7 easeInOutSine]
+[wt 2.7]
+
+[blurOff lens 1.0]
+[subRenderFadeout #C 1.0]
+[charaFadeout S 1.0]
+[wt 1.0]
+
+[charaFadeout G 0]
+[charaFadeout H 0]
+[charaFadeout P 0]
+[charaFadeout Q 0]
+[charaFadeout M 0]
+[wt 0.15]
+
+[subCameraOff]
+[charaLayer G normal]
+[charaLayer H normal]
+[charaLayer P normal]
+[charaLayer Q normal]
+[charaLayer M normal]
+[charaScale G 1.0]
+[charaScale H 1.0]
+[charaScale P 1.0]
+[charaScale Q 1.0]
+[charaScale M 1.0]
+[wt 0.35]
+
+[charaTalk off]
+＠ビショーネ？
+蛇は[line 3]
+[k]
+
+[messageOff]
+[charaFaceFade L 6 0.4]
+[wt 1.2]
+
+＠ビショーネ？
+蛇は[#廻:まわ]り、そして、[r][#廻:まわ]る力は輪転する。
+[k]
+
+＠ビショーネ？
+今のわたしは、輪転する蛇。[r]それに偏位した姿[line 3]
+[k]
+
+[messageOff]
+[charaMoveEase R 75,-260 0.7 easeOutSine]
+[charaMoveEase L 175,0 0.7 easeOutSine]
+[wt 0.85]
+
+[se ad598]
+[wt 0.2]
+[charaPut W -175,525]
+[charaEffect W bit_talk_eyelight_small]
+[charaMoveEase W -175,25 1.0 easeOutQuint]
+[wt 0.8]
+[seStop ad598 0.6]
+[wt 0.45]
+
+[cueSe SE_24 24_ade1041]
+[charaEffect W bit_talk_eyelight_small]
+[charaEffect W bit_talk_eyelight_small]
+[charaEffect W bit_talk_eyelight_small]
+[wt 1.1]
+
+[cueSeStop 24_ade1041 0.3]
+[se ad834]
+[fadeout white 0.2]
+[wait fade]
+
+[charaPut W 2000,2500]
+[charaEffectDestroy W bit_talk_blight_02lp]
+
+
+[charaDepth A 4]
+[charaDepth E 6]
+[charaDepth W 10]
+
+[charaDepth B 7]
+
+[charaFace A 0]
+[charaFace E 0]
+[charaFadein A 0 -175,0]
+[charaFadein E 0 -175,0]
+
+[charaFace B 0]
+[charaFadein B 0 -175,0]
+
+[fadein white 0.2]
+[wait fade]
+[wt 0.5]
+[seStop ad834 0.5]
+[wt 0.8]
+
+[wt 0.2]
+[charaFadeTime B 1.4 0.9]
+[wt 2.4]
+
+[charaFace L 1]
+
+＠ビショーネ？
+[#片側のウロボロス]、です。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_91 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

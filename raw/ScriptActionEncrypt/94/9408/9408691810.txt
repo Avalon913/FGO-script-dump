@@ -1,0 +1,1686 @@
+
+
+＄94-08-69-18-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 2050000 1 プトレマイオス]
+[charaSet B 2050002 1 プトレマイオス_第三]
+[charaSet C 2051001 1 杉谷善住坊]
+[charaSet D 1098257310 1 ダ・ヴィンチ]
+[charaSet E 1098255110 1 ゴルドルフ]
+[charaSet F 1098257810 1 マシュ]
+
+[charaSet G 2050000 1 プトレマイオス_演出用]
+[charaSet H 2050002 1 プトレマイオス_第三_演出用]
+
+[charaSet I 1098272600 1 ドレッドノート]
+[charaSet J 1098272600 1 ドレッドノート]
+[charaScale I 0.8]
+[charaScale J 0.8]
+[charaSet K 1098272500 1 影の騎士_セイバー]
+[charaSet L 1098272530 1 影の騎士_ライダー]
+[charaSet M 1098272520 1 影の騎士_ランサー]
+
+[sceneSet O 194100 1]
+[sceneSet P 194100 1]
+[sceneSet Q 194100 1]
+[sceneSet R 194100 1]
+[sceneSet S 10001 1]
+[charaScale S 1.01]
+
+[charaSet T 98115000 1 通信エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+[imageSet V cut404_line_vs 1]
+
+
+[scene 194100]
+
+[subCameraOn 4]
+[subCameraFilter #A maskEdge cut359_mask05 2 0,0,0,0]
+[subCameraFilter #B mask cut359_mask15]
+[subCameraFilter #C mask cut359_mask16]
+[subCameraFilter #D through]
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.0]
+[subRenderScale #C 1.0]
+[subRenderScale #D 1.0]
+[subRenderDepth #A 4]
+[subRenderDepth #B 2]
+[subRenderDepth #C 1]
+[subRenderDepth #D 3]
+[charaLayer F sub #A]
+[charaLayer D sub #A]
+[charaLayer T sub #A]
+[charaLayer O sub #A]
+[charaLayer G sub #B]
+[charaLayer Q sub #B]
+[charaLayer H sub #C]
+[charaLayer R sub #C]
+[charaLayer V sub #D]
+[charaDepth T 4]
+[charaDepth D 3]
+[charaDepth F 3]
+[charaDepth O 1]
+[charaPut T -10,170]
+[charaEffect T bit_talk_10_LowLevel_depth]
+[charaFace F 6]
+[charaFadein F 0.1 0,250]
+[charaScale O 1.1]
+[charaFadein O 0.1 -250,50]
+[charaDepth G 2]
+[charaDepth Q 1]
+[charaScale G 1.2]
+[charaScale Q 1.3]
+[charaFace G 1]
+[charaFadein G 0.1 -50,300]
+[charaFadein Q 0.1 450,0]
+[charaDepth H 2]
+[charaDepth R 1]
+[charaScale H 1.2]
+[charaScale R 1.3]
+[charaFace H 6]
+[charaFadein H 0.1 110,300]
+[charaFadein R 0.1 50,0]
+[charaScale V 1.25]
+[charaRoll V 140 0 0]
+[charaFadein V 0.1 150,50]
+
+[cueSe SE_23 23_ade909]
+[cueSeVolume 23_ade909 0 0.8]
+[charaPut U 1]
+[charaEffect U bit_talk_miasma_eruption]
+
+[charaTalk depthOff]
+[charaDepth S 5]
+[charaDepth U 4]
+[charaDepth A 3]
+[charaDepth B 2]
+[charaDepth K 4]
+[charaDepth L 3]
+[charaDepth M 2]
+[charaDepth I 3]
+[charaDepth J 2]
+[charaDepth P 1]
+
+[charaScale P 1.6]
+[charaFadein P 0.1 200,-250]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_102 0.1]
+
+[charaTalk F]
+[subRenderFadeinFSR #A 0.4 280,-240]
+[subRenderMoveFSR #A 280,-270 0.4]
+[wt 0.4]
+
+＠マシュ
+修正データ適用！[r]礼装と術式の同調認証……いけます！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 0,250]
+
+＠ダ・ヴィンチ
+よし、礼装適応術式、[r]『アルカナの泉』、起動！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[subRenderMoveFSR #A 280,-300 0.4]
+[wt 0.4]
+
+[se ad912]
+[seVolume ad912 0 0.4]
+[cueSe SE_21 21_ade562]
+[cueSeVolume 21_ade562 0 0.5]
+[fowardEffect bit_talk_raniment03 0,50]
+[wt 1.0]
+[seStop ad912 1.0]
+[wt 1.2]
+
+[cueSe SE_23 23_ad1306]
+[fowardEffectStop bit_talk_raniment03]
+[wt 1.0]
+[cueSeStop 23_ad1306 1.0]
+[wt 1.2]
+
+[cueSe Servants_100100 bac1457]
+[charaFadein S 0.4 0,-200]
+[wt 0.4]
+[fowardEffectDestroy bit_talk_raniment03]
+[wt 0.1]
+[charaFadeout S 1.0]
+[wt 1.5]
+
+[cueSeStop 23_ade909 2.0]
+[charaEffectStop U bit_talk_miasma_eruption]
+[wt 2.0]
+
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[bgm BGM_MAP_102 0.6 0.4]
+[wait wipe]
+
+[charaPut U 2000,2000]
+[charaEffectDestroy U bit_talk_miasma_eruption]
+
+[charaEffect K bit_talk_11 0,-100]
+[charaEffect L bit_talk_11 0,-100]
+[charaEffect M bit_talk_11 0,-100]
+
+[charaTalk off]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[charaFace L 0]
+[charaFadeinFSR L 0.1 300,0]
+[charaFace M 0]
+[charaFadeinFSL M 0.1 -300,0]
+[charaFadein P 0.1 -350,-250]
+[wt 0.2]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[bgm BGM_MAP_102 0.6 1.0]
+[wait wipe]
+
+[wt 0.5]
+[cueSe SE_22 22_ade777]
+[charaEffect K bit_talk_atomization]
+[charaEffect L bit_talk_atomization]
+[charaEffect M bit_talk_atomization]
+[charaSpecialEffect K erasure]
+[charaSpecialEffect L erasure]
+[charaSpecialEffect M erasure]
+[wt 0.7]
+[charaEffectStop K bit_talk_11]
+[charaEffectStop L bit_talk_11]
+[charaEffectStop M bit_talk_11]
+[wt 3.5]
+
+[bgmStop BGM_MAP_102 1.0]
+[charaFadeout P 1.0]
+[wt 1.2]
+
+[charaTalk D]
+[charaFace D 0]
+[subRenderFadeinFSR #A 0.4 280,-270]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+浄化完了……とはいかないが、[r]二割まで低減したね。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.6]
+
+[charaTalk I,J]
+[charaFace I 0]
+[charaFadein I 0.6 320,-80]
+[charaFace J 0]
+[charaFadein J 0.6 -290,-80]
+[charaScale P 1.4]
+[charaFadein P 0.6 100,-250]
+[wt 1.2]
+
+[charaFadeout D 0.1]
+[charaFace F 1]
+[charaFadein F 0.1 0,250]
+
+[se ad642]
+[charaMove I 270,-80 1.0]
+[charaFadeout I 0.6]
+[wt 0.4]
+[charaMove J -340,-80 1.0]
+[charaFadeout J 0.6]
+[wt 1.2]
+[seStop ad642 2.0]
+[wt 1.8]
+
+[charaTalk F]
+[subRenderFadeinFSR #A 0.4 280,-270]
+[wt 0.4]
+
+＠マシュ
+ドレッドノートたちも遠ざかっていきます。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+[charaFadeout P 0.1]
+[subRenderFadeout #A 0.1]
+
+[charaDepth A 2]
+[charaDepth B 1]
+[charaTalk B]
+[charaFace A 0]
+[charaFadeinFSL A 0.1 0]
+[charaFace B 0]
+[charaFadeinFSR B 0.1 2]
+
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠B：プトレマイオス
+よし、後はテュフォンのいる場まで突入するだけだな。
+[k]
+
+＠B：プトレマイオス
+とはいえ用心深く行け。[r]城の内部に気配は薄いが、何がいるか分からん。
+[k]
+
+[clear]
+[charaTalk A]
+[charaFace A 1]
+
+＠A：プトレマイオス
+は、ジジイだからって仕切ってんなよ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace B 6]
+[wt 0.8]
+
+[subRenderFadein #B 0.3 -259,-270]
+[subRenderMove #B -259,-320 0.4]
+[subRenderFadein #C 0.3 135,-370]
+[subRenderMove #C 135,-320 0.4]
+[wt 0.2]
+[se adm31]
+[subRenderFadein #D 0.1 0,220]
+[wt 0.1]
+[shake 0.01 3 4 0.4]
+[wt 0.8]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 1.2]
+
+[seStop adm31 0.6]
+[charaTalk on]
+[charaTalk G,H,C]
+[subRenderFadeout #B 0.6]
+[subRenderFadeout #C 0.6]
+[subRenderFadeout #D 0.6]
+[wt 0.6]
+
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠杉谷善住坊
+また、自分同士で喧嘩してやがる。[r]飽きないのか、おまえら。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadeinFSL A 0.1 0]
+[charaFace B 10]
+[charaFadeinFSR B 0.1 2]
+
+＠プトレマイオス
+フン。[r]……とはいえ、同じ[#吾:あ]だからナ。意見は賛成だ。
+[k]
+
+[charaFace A 16]
+
+＠プトレマイオス
+可能な限り速やかに、しかし細心さを失わず。[r]臆病な兎ほど狩られにくいってこった。
+[k]
+
+[charaFace A 0]
+
+＠プトレマイオス
+いいな。マスター？
+[k]
+
+？1：うん！
+？2：行こう！
+？！
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_62 2.0]
+[cueSe SE_21 21_ad1066]
+[wait wipe]
+
+[cueSeStop 21_ad1066 1.5]
+[wt 1.0]
+
+[charaTalk depthOn]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[charaPut T 2000,2000]
+[charaEffectDestroy T bit_talk_10_LowLevel_depth]
+[charaLayer F normal]
+[charaLayer D normal]
+[charaLayer T normal]
+[charaLayer O normal]
+[charaLayer G normal]
+[charaLayer Q normal]
+[charaLayer H normal]
+[charaLayer R normal]
+[charaLayer V normal]
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[charaFadeout T 0.1]
+[charaFadeout O 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[charaFadeout V 0.1]
+[subCameraOff]
+[wt 0.1]
+
+[charaSet G 1098123010 1 ムニエル]
+[charaSet H 1098273000 1 水晶の書物]
+[charaScale H 0.58]
+[imageSet I cut475_tpn_full 1]
+[imageSet J cut475_tpn_full 1]
+[imageSet K cut475_tpn_full 1]
+[charaSet L 1098273120 1 エフェメロス]
+[charaSet M 1098273120 1 演出用_エフェメロス(流体金属)]
+[sceneSet O 194200 1]
+[sceneSet P 194300 1]
+[sceneSet Q 194300 1]
+[sceneSet R 194300 1]
+[sceneSet S 194300 1]
+
+[scene 194200]
+[wt 0.5]
+
+[charaScale O 1.2]
+[charaFadein O 0.1 -80,-220]
+[charaMove O 80,-220 8.0]
+
+[se ad95]
+[seVolume ad95 0 0]
+[seVolume ad95 1.0 0.5]
+[wt 0.1]
+[se adm36]
+[seVolume adm36 0 0]
+[seVolume adm36 1.0 0.5]
+[wt 0.2]
+
+[wipein rightToLeft 1.0 1.0]
+[se ade422]
+[seVolume ade422 0 0]
+[seVolume ade422 1.0 0.5]
+[wait wipe]
+[wt 1.4]
+
+
+[charaFadeout O 0.7]
+[seStop ad95 0.6]
+[seStop ade422 0.4]
+[seStop adm36 0.4]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠プトレマイオス
+ここが、[#黄昏:たそがれ]の城の内側か……
+[k]
+
+？1：なんだか……
+？2：城というよりも……
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠杉谷善住坊
+同感。こいつは城なんて言うよりも、[r]蟻の巣穴とかそういう方が近いぜ。
+[k]
+
+[charaFace C 3]
+
+＠杉谷善住坊
+中に人間が住むっていう発想がない。
+[k]
+
+[charaFace C 17]
+
+＠杉谷善住坊
+戦向けに特化した城だろうが、[r]だからこそ居住性ってのは手を抜けない。
+[k]
+
+＠杉谷善住坊
+長期間苦痛に耐えながらで、[r]全力が出せるはずねえからな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠プトレマイオス
+つくりも異様に単純だな。
+[k]
+
+[charaFace A 0]
+
+＠プトレマイオス
+籠城用だと、敵軍を誘い込むようにするものだが、[r]そういう細工も見られない。
+[k]
+
+＠プトレマイオス
+これまでの城は、それぞれの城主の個性があったが、[r]どうにもここは虚無に過ぎる。
+[k]
+
+＠プトレマイオス
+外にいた影の騎士すら見当たらないのは、[r]ちょっと予想外だぜ。
+[k]
+
+[clear]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠プトレマイオス
+今までの城の構造からすると、そろそろ中央地点になるぞ。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait wipe]
+
+[se ad95]
+[seVolume ad95 0 0.5]
+[wt 0.1]
+[se adm36]
+[seVolume adm36 0 0.5]
+[wt 0.2]
+[se ade422]
+[seVolume ade422 0 0.5]
+
+[charaTalk on]
+[charaFadeout B 0.1]
+
+[sceneSet O 194300 1]
+[wt 0.1]
+
+[subCameraOn 3]
+[subCameraFilter #A maskEdge cut359_mask07 5 0,0,0,0]
+[subCameraFilter #B maskEdge cut359_mask07 5 0,0,0,0]
+[subCameraFilter #C maskEdge cut359_mask16 5 255,255,255,255]
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.0]
+[subRenderScale #C 1.0]
+[subRenderDepth #A 3]
+[subRenderDepth #B 2]
+[subRenderDepth #C 1]
+[charaLayer I sub #A]
+[charaLayer O sub #A]
+[charaLayer J sub #B]
+[charaLayer P sub #B]
+[charaLayer A sub #C]
+[charaLayer C sub #C]
+[charaLayer D sub #C]
+[charaLayer E sub #C]
+[charaLayer F sub #C]
+[charaLayer G sub #C]
+[charaLayer T sub #C]
+[charaLayer Q sub #C]
+[charaDepth I 2]
+[charaDepth O 1]
+[charaScale I 2.2]
+[charaScale O 1.2]
+[charaFace I 1]
+[charaFadein I 0.1 550,500]
+[charaFadein O 0.1 0,0]
+[charaFilter O silhouette 00000080]
+[charaEffect O bit_talk_suspicious]
+[charaDepth J 2]
+[charaDepth P 1]
+[charaScale J 2.2]
+[charaScale P 1.2]
+[charaFace J 1]
+[charaFadein J 0.1 -180,-350]
+[charaFadein P 0.1 0,0]
+[charaFilter P silhouette 00000080]
+[charaEffect P bit_talk_suspicious]
+[charaDepth T 3]
+[charaDepth A 2]
+[charaDepth C 2]
+[charaDepth D 2]
+[charaDepth E 2]
+[charaDepth F 2]
+[charaDepth G 2]
+[charaDepth P 1]
+[charaScale A 1.0]
+[charaScale C 1.0]
+[charaScale D 1.0]
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaScale G 1.0]
+[charaScale Q 1.15]
+[charaPut T 0,180]
+[charaEffect T bit_talk_10_LowLevel_depth]
+[charaFace F 5]
+[charaFadein F 0.1 0,180]
+[charaFadein Q 0.1 -580,20]
+[charaTalk depthOff]
+[charaDepth H 5]
+[charaDepth L 4]
+[charaDepth B 4]
+[charaDepth R 3]
+[charaDepth M 2]
+[charaDepth S 1]
+
+[scene 194300]
+
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+[wt 1.0]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[seStop ad95 0.7]
+[seStop ade422 0.7]
+[seStop adm36 0.7]
+[wait wipe]
+[wt 1.0]
+
+[bgm BGM_EVENT_79 0.1]
+
+
+[charaScale R 1.3]
+[charaFadein R 0.7 -80,-200]
+[wt 1.0]
+
+[charaTalk F]
+[subRenderFadeinFSSideR #C 0.4 370,-160]
+[subRenderMoveFSSideR #C 350,-200 0.4]
+[wt 0.4]
+
+＠マシュ
+広間に……巨大な竜が！？[r]いやまさか、あれがテュフォンの本体……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,180]
+
+＠プトレマイオス
+いや、こいつは竜っつうよりも……
+[k]
+
+[messageOff]
+[subRenderFadeout #C 0.4]
+[wt 0.6]
+
+[charaFadeout A 0.1]
+[charaPut T 0,180]
+[charaFace E 5]
+[charaFadein E 0.1 0,180]
+
+[blur lens 1.0 2 20]
+[subRenderFadeinFSL #A 1.0 -150,-200]
+[charaMove I 550,450 10.0]
+[wt 3.0]
+[subRenderFadeout #A 0.8]
+[wt 0.8]
+
+[subRenderFadeinFSR #B 1.0 150,-200]
+[charaMove J -180,-300 10.0]
+[wt 3.0]
+
+[subRenderFadeout #B 0.8]
+[blurOff lens 0.8]
+[wt 0.8]
+
+[charaFadeout R 1.0]
+[wt 1.2]
+
+[charaTalk E]
+[subRenderFadeinFSSideR #C 0.4 350,-200]
+[wt 0.4]
+
+[charaFilter O normal]
+[charaFilter P normal]
+[charaEffectDestroy O bit_talk_suspicious]
+[charaEffectDestroy P bit_talk_suspicious]
+
+＠ゴルドルフ
+う、うむ。[r]竜と巨大な[#推進装置:ロ　ケ　ッ　ト]が融合したかのような……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 0,180]
+
+＠ダ・ヴィンチ
+まさか、[#宙:ソラ]から、来た……？
+[k]
+
+[branchQuestNotClear lblNotClear01 3000628]
+
+[branch lblClear01]
+
+[label lblNotClear01]
+
+[branch lblConf01]
+
+[label lblClear01]
+
+？1：じゃあオリュンポスの神々と同じ[line 3]！
+
+？！
+
+＠ダ・ヴィンチ
+うん、おそらくそうだ！
+[k]
+
+＠ダ・ヴィンチ
+ここで現界したテュフォンは、[r]少なからず外宇宙の要素を[#顕:あら]わにしている。
+[k]
+
+＠ダ・ヴィンチ
+オリュンポス十二神と同系統、或いは……
+[k]
+
+＠ダ・ヴィンチ
+ソレに関連する何かが、地球環境に触れて、[r]竜種の[#生命:いのち]や[#形態:かたち]、性質まで獲得した……？
+[k]
+
+[label lblConf01]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 0,180]
+
+＠杉谷善住坊
+……クソでかいが……[r]眠ってるのか、テュフォンってのは……
+[k]
+
+[messageOff]
+[cueSe SE_23 23_ade895]
+[wt 0.7]
+
+[charaTalk M]
+[charaFace M 28]
+[charaFadein M 0.4 -200,0]
+[cueSeStop 23_ade895 0.4]
+[wt 0.4]
+
+＠M：テュフォン
+眠れる我の名を知ったのか。
+[k]
+
+？1：テュフォン[line 3]！
+？！
+
+[charaFace C 15]
+＠杉谷善住坊
+ふたり……！　いや、さっきマシュが本体って[r]言ってたように、おまえは分身か何かなのか。
+[k]
+
+[charaFace C 17]
+＠杉谷善住坊
+封印されてるってなら、[r]本体が動けないのは道理だものな。
+[k]
+
+[messageOff]
+[charaTalk M]
+[wt 1.2]
+
+[subRenderFadeout #C 0.6]
+
+[charaTalk L]
+[charaScale L 1.2]
+[charaScale R 1.2]
+[charaFace L 28]
+[charaFadein L 0.6 1]
+[charaFadein R 0.6 0,-200]
+[charaMove L 0,0 0.6]
+[charaMove R 0,-200 0.6]
+[wt 1.0]
+[charaFadeout M 0.1]
+
+？1：どうして、こんなことをする？
+？！
+
+[charaFace L 14]
+
+＠テュフォン
+どうして？[r]その質問に、意味はない。
+[k]
+
+[charaFace L 15]
+
+＠テュフォン
+我とおまえたちでは、生命の方向性が異なる。
+[k]
+
+[charaFace L 28]
+
+＠テュフォン
+竜種がすでに[#運命線:ラ　イ　ン]を見ている以上、[r]そこに厳密な自由意思はない。
+[k]
+
+＠テュフォン
+我は、そのように在れと投げかけられた光であり、[r]そのように[#荒れ]と渦巻いている嵐である。
+[k]
+
+？1：光……
+？2：嵐……
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_79 1.0]
+[charaFadeout L 1.0]
+[charaFadeout R 1.0]
+[wt 1.5]
+
+[bgm BGM_EVENT_72 0.1]
+
+[se ade103]
+[seVolume ade103 0 0.5]
+[wt 0.1]
+[charaScale S 1.03]
+[charaFadein S 0.4 0,-200]
+[charaShake S 0.01 4 4 1.0]
+[wt 0.4]
+[seStop ade103 0.2]
+[charaFadeout S 0.4]
+[wt 1.0]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaShakeStop S]
+[charaTalk depthOn]
+
+[charaLayer I normal]
+[charaLayer O normal]
+[charaLayer J normal]
+[charaLayer P normal]
+[charaLayer A normal]
+[charaLayer C normal]
+[charaLayer D normal]
+[charaLayer E normal]
+[charaLayer F normal]
+[charaLayer G normal]
+[charaLayer T normal]
+[charaLayer Q normal]
+[charaFadeout I 0.1]
+[charaFadeout O 0.1]
+[charaFadeout J 0.1]
+[charaFadeout P 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout T 0.1]
+[charaPut T 2000,2000]
+[charaEffectDestroy T bit_talk_10_LowLevel_depth]
+[charaFadeout Q 0.1]
+[subCameraOff]
+[wt 0.2]
+
+[charaScale U 1.2]
+[charaPut U 0,60]
+[charaEffect U bit_talk_10]
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_10_LowLevel]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[se ad539]
+[wait wipe]
+[wt 0.1]
+[seStop ad539 0.1]
+
+
+＠ムニエル
+くそ、なんだこのデタラメな魔力！
+[k]
+
+＠ムニエル
+[#まともに目覚めてもいない]のに、[r]こっちに注意を向けただけで計器が丸ごと[line 2]！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut U 2000,2000]
+[wt 0.4]
+
+[se ade103]
+[wt 0.1]
+[charaShake R 0.01 4 4 1.0]
+[charaScale R 1.05]
+[charaFadein R 0.4 0,-200]
+[wt 0.4]
+[seStop ade103 0.2]
+[charaFadeout R 0.4]
+[wt 0.6]
+
+[charaPut U 0,60]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ムニエル
+おい、[%1]！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut U 2000,2000]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠プトレマイオス
+[%1]！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[shake 0.01 4 3 1.5]
+[wt 0.2]
+[se ad240]
+[fowardEffect bit_talk_35]
+[wt 2.2]
+
+[charaTalk L]
+[charaScale L 1.1]
+[charaScale R 1.1]
+[charaFace L 28]
+[charaFadein L 0.6 -150,0]
+[charaFadein R 0.6 -30,-200]
+[charaMove L -120,0 0.6]
+[charaMove R 0,-200 0.6]
+[wt 1.0]
+
+[charaFaceFade L 16 0.3]
+[wt 1.5]
+
+[charaFadeout L 0.6]
+[charaMove L -150,0 0.6]
+[charaFadeout R 0.6]
+[charaMove R -30,-200 0.6]
+[wt 0.6]
+
+[charaPut U 0,60]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠マシュ
+先輩！
+[k]
+
+[charaFace F 14]
+
+＠マシュ
+ば、バイタル低下！　内臓機能および神経系にダメージ！[r]礼装を通じた活性術式と安定術式を開始します！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut U 2000,2000]
+
+[charaTalk off]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠プトレマイオス
+く、[#叡智:えいち]の光よ！[r]該当術式を即時補助せよ！
+[k]
+
+[messageOff]
+[cueSe SE_23 23_ade912]
+[wt 0.05]
+[charaFace H 0]
+[charaFadein H 0.3 -170,-230]
+[charaMoveEase H -170,-180 0.5 easeOutCubic]
+[wt 1.4]
+
+[charaFadeout B 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[se ad39]
+[effect bit_talk_spell_r]
+[wt 2.0]
+
+[bgmStop BGM_EVENT_72 2.0]
+
+[cueSe SE_23 23_ade913]
+[effect bit_talk_diremond_dust]
+[effect bit_talk_barrier_white_once]
+[wt 0.3]
+[fowardEffect bit_talk_barrier_iyo]
+[wt 1.2]
+
+[subCameraOn 1]
+[subCameraFilter #A through]
+[subRenderScale #A 1.15]
+[charaLayer M sub #A]
+[charaLayer O sub #A]
+[charaDepth M 9]
+[charaDepth O 1]
+[charaScale M 1.0]
+[charaScale O 1.2]
+[charaFace M 28]
+[charaFadein M 0.1 -100,-40]
+[charaFadein O 0.1 0,-250]
+
+[effectStop bit_talk_diremond_dust]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk depthOff]
+[charaScale U 1.0]
+[charaPut U 2000,2000]
+[charaPut T 2000,2000]
+[wt 1.5]
+
+[se ad874]
+[charaPut U 1]
+[charaTalk D]
+[charaFace D 33]
+[charaFadein D 0.1 1]
+[wt 0.6]
+[charaPut U 2000,2000]
+[charaPut T 1]
+[seStop ad874 0.2]
+[wt 0.3]
+[charaPut T 2000,2000]
+[charaPut U 1]
+[se ad539]
+[wt 0.4]
+[seStop ad539 0.3]
+[charaPut U 2000,2000]
+[charaPut T 1]
+[wt 0.7]
+[charaPut T 2000,2000]
+[charaPut U 1]
+[se ad539]
+[seStop ad539 0.4]
+[wt 0.2]
+[charaPut U 2000,2000]
+[charaEffectDestroy U bit_talk_10]
+[charaPut T 1]
+[wt 0.4]
+＠ダ・ヴィンチ
+[%1][&君:ちゃん]！[r]聞こえるかい！
+[k]
+
+？1：大丈夫……！
+？2：ちょっと気分が悪い、だけ
+
+？！
+
+[messageOff]
+[charaFace D 10]
+[wt 1.0]
+[charaFace D 22]
+
+[bgm BGM_MAP_36 0.1]
+
+＠ダ・ヴィンチ
+すまない。聞いてくれ……！
+[k]
+
+＠ダ・ヴィンチ
+私もすぐに信じられなかったけど、そのテュフォンは[r]竜種の中ですら、極めて現象に近い個体らしい。
+[k]
+
+
+？1：……現象？
+？2：……どういうこと？
+？！
+
+[charaFace D 23]
+
+＠ダ・ヴィンチ
+多くの神々は、現象や概念から発して独自の知性を得たし、[r]人と関わってきたギリシャの神々はとりわけ人間臭い。
+[k]
+
+＠ダ・ヴィンチ
+だけど、テュフォンは[r]オリュンポスの神を殺すために生じた竜種だ。
+[k]
+
+＠ダ・ヴィンチ
+発生が[#宙:ソラ]ならば、なおさらだろう。
+[k]
+
+＠ダ・ヴィンチ
+地球の外で発生し、[r]ただ神を殺すための現象と為った、怪物の中の怪物。
+[k]
+
+[charaFace D 8]
+
+＠ダ・ヴィンチ
+だからこそ、[r]竜種としての純度がありえないほどに高い。
+[k]
+
+＠ダ・ヴィンチ
+[#純血の竜]、と言えるほどに。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+
+＠杉谷善住坊
+……なんとなく分かるな。[r]山の神様みたいなもんだ。
+[k]
+
+[charaFace C 17]
+
+＠杉谷善住坊
+山にはたくさんの生命が渦巻いていて、[r]俺たちはその全部を神様みたいに捉えてる。
+[k]
+
+＠杉谷善住坊
+数十万だか数億だかの命の総体を捉えて、[r]神様という形を認識してるんだ。
+[k]
+
+[charaFace C 3]
+
+＠杉谷善住坊
+だけど、こいつは[#個]のままで、[r]山の神様みたいになってる。
+[k]
+
+＠杉谷善住坊
+人間の信仰どころか、[r]他の神の認識すら、多分必要としていない。
+[k]
+
+[charaFace C 17]
+
+＠杉谷善住坊
+あくまで[#個]のまま、その膨大な『力』だけでねじ伏せて[r]山や嵐といった現象、概念にまで為りおおせたんだ。
+[k]
+
+＠杉谷善住坊
+一体、どれほど[#途轍:とてつ]もない『力』があれば、[r]そんなことが……
+[k]
+
+
+[messageOff]
+[charaTalk M,C]
+[subRenderFadein #A 0.6 -15,-40]
+[subRenderMove #A 15,-40 7.0]
+[wt 0.6]
+[charaFadeout C 0.1]
+
+＠テュフォン
+テュフォンとは、神を裁くための[#現象:竜]である。[r]テュフォンとは、罪を導くための[#機構:竜]である。
+[k]
+
+＠テュフォン
+罪なるかな。[#咎:とが]なるかな。悪なるかな。
+[k]
+
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠テュフォン
+おまえたちに、我は正しい最後をくれてやろう。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadeout #A 0.6]
+[wt 0.8]
+
+＠プトレマイオス
+…………。
+[k]
+
+＠プトレマイオス
+……いいや、やはり、違う。
+[k]
+
+？1：プトレマイオス？
+？2：何が違うの？
+？！
+
+＠プトレマイオス
+確かに、それらしいことは言っている。[r]高位の竜種とは、そういうことだろうよ。
+[k]
+
+＠プトレマイオス
+だが、どうにもおさまりが悪い。[r]おまえからは妙な[#憎しみ]が感じられる。
+[k]
+
+＠プトレマイオス
+テセウスとアステリオスのときだってそうだ。
+[k]
+
+＠プトレマイオス
+単なる現象というには不可解なほど、[r]テセウスを絶望させようと、言葉を紡いでいた。
+[k]
+
+＠プトレマイオス
+今の話通りであれば、たかが人の子に[r]あれほどの悪意は持たないだろう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaScale L 1.0]
+[charaTalk on]
+[charaTalk L]
+[charaFace L 28]
+[charaFadein L 0.1 1]
+
+＠テュフォン
+…………。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠プトレマイオス
+ああ、今だってそうだナ。[r]確かに竜みたいなフリはしてる。
+[k]
+
+[charaFace A 0]
+
+＠プトレマイオス
+だが、内側に[#孕:はら]んだ感情は[r]そうそう隠し切れるものじゃないサ。
+[k]
+
+＠プトレマイオス
+[#吾:あ]の時代で生きるには、相手の本心を[r]見抜く必要があったからナ。
+[k]
+
+[bgmStop BGM_MAP_36 2.0]
+
+＠プトレマイオス
+……おまえは、本当にテュフォンか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 28]
+[charaFadein L 0.1 1]
+
+＠テュフォン
+…………。
+[k]
+
+[messageOff]
+[charaFaceFade L 15 0.4]
+[wt 1.4]
+
+[charaFace L 14]
+
+[bgm BGM_MAP_91 0.1]
+
+＠テュフォン
+……願いが叶わなければ良かった、[r]と思ったことはないか。
+[k]
+
+？1：……え？
+？2：願いが？
+？！
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[subRenderScale #A 1.1]
+[charaFace M 0]
+[charaFadein M 0.1 0,-40]
+[charaFadein O 0.1 0,-250]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠杉谷善住坊
+なんだって？
+[k]
+
+[messageOff]
+[charaTalk M,C]
+[charaFace M 28]
+[subRenderFadein #A 0.6 0,0]
+[subRenderMoveScale #A 1.15 8.0]
+[subRenderMove #A 0,-15 8.0]
+[wt 0.6]
+[charaFadeout C 0.1]
+
+＠テュフォン
+太公望は、彼が勝たなければ、[r][#妲己:だっき]を殺さなくてもよかっただろう。
+[k]
+
+＠テュフォン
+テセウスは、彼が勝たなければ、[r]アステリオスを殺さなくてよかっただろう。
+[k]
+
+[charaFace A 11]
+[charaFadeinFSL A 0.1 0]
+[charaFace B 9]
+[charaFadeinFSR B 0.1 2]
+
+＠テュフォン
+そして、おまえたちが勝たなければ、[r][#後継者:ディアドコイ]戦争など起こらなかっただろう。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadeout #A 0.6]
+[wt 2.0]
+
+[charaTalk on]
+[charaTalk B]
+
+＠B：プトレマイオス
+おまえは……！
+[k]
+
+[messageOff]
+[charaTalk M,B]
+[subRenderScale #A 1.2]
+[subRenderFadein #A 0.6 0,-20]
+[wt 0.6]
+
+＠テュフォン
+サーヴァントだけの話ではない。[r]おまえはどうだ。カルデアのマスター。
+[k]
+
+＠テュフォン
+己が勝たなければよかったのだと、[r]そう思ったことはないか。
+[k]
+
+[messageOff]
+[fadeout white 0.7]
+[cueSe SE_22 22_ad1177]
+[bgm BGM_MAP_91 0.7 0.4]
+[wait fade]
+
+[charaTalk depthOn]
+[subRenderFadeout #A 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[sceneSet A 87501 1 1]
+[imageSet B cut164_twins02 1]
+[sceneSet C 129201 1]
+[sceneSet D 177600 1]
+[charaSet H 1098272500 1 影の騎士_セイバー]
+[charaSet I 1098272520 1 影の騎士_ランサー]
+[charaSet J 1098272560 1 影の騎士_バーサーカー]
+[charaSet K 1098272530 1 影の騎士_ライダー]
+[sceneSet R 56800 1 1]
+[sceneSet S 62703 1 1]
+[sceneSet U 77300 1 1]
+[charaScale R 1.0]
+[charaScale S 1.05]
+[charaScale U 1.0]
+[charaScale A 1.05]
+[charaScale B 1.31]
+[charaScale C 1.0]
+
+[charaFadein R 0.1 0,-200]
+
+[fadein white 0.7]
+[wait fade]
+
+[wt 1.5]
+
+[branchQuestNotClear lblNotClear02 3000218]
+
+[branch lblClear02]
+
+[label lblNotClear02]
+
+[branch lblConf02]
+
+[label lblClear02]
+
+[fadeout white 0.7]
+[wait fade]
+
+[charaFadeout R 0.1]
+[charaFadein S 0.1 0,-250]
+[wt 0.5]
+
+[fadein white 0.7]
+[wait fade]
+
+[wt 1.5]
+
+[branchQuestNotClear lblNotClear03 3000421]
+
+[branch lblClear03]
+
+[label lblNotClear03]
+
+[branch lblConf03]
+
+[label lblClear03]
+
+[fadeout white 0.7]
+[wait fade]
+
+[charaFadeout S 0.1]
+[charaFadein U 0.1 0,-200]
+[wt 0.5]
+
+[fadein white 0.7]
+[wait fade]
+
+[wt 1.5]
+
+[branchQuestNotClear lblNotClear04 3000531]
+
+[branch lblClear04]
+
+[label lblNotClear04]
+
+[branch lblConf04]
+
+[label lblClear04]
+
+[fadeout white 0.7]
+[wait fade]
+
+[charaFadeout U 0.1]
+[charaFadein A 0.1 0,-250]
+[wt 0.5]
+
+[fadein white 0.7]
+[wait fade]
+
+[wt 1.5]
+
+[branchQuestNotClear lblNotClear05 3000628]
+
+[branch lblClear05]
+
+[label lblNotClear05]
+
+[branch lblConf05]
+
+[label lblClear05]
+
+[fadeout white 0.7]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadein B 0.1 0,-300]
+[wt 0.5]
+
+[fadein white 0.7]
+[wait fade]
+
+[wt 1.5]
+
+[branchQuestNotClear lblNotClear06 3001009]
+
+[branch lblClear06]
+
+[label lblNotClear06]
+
+[branch lblConf06]
+
+[label lblClear06]
+
+[fadeout white 0.7]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadein C 0.1 0,-200]
+[wt 0.5]
+
+[fadein white 0.7]
+[wait fade]
+
+[wt 1.5]
+
+[branchQuestNotClear lblNotClear07 3001327]
+
+[branch lblClear07]
+
+[label lblNotClear07]
+
+[branch lblConf07]
+
+[label lblClear07]
+
+[fadeout white 0.7]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadein D 0.1 0,-200]
+[wt 0.5]
+
+[fadein white 0.7]
+[wait fade]
+
+[wt 1.5]
+
+[label lblConf02]
+[label lblConf03]
+[label lblConf04]
+[label lblConf05]
+[label lblConf06]
+[label lblConf07]
+
+[fadeout white 0.7]
+[wait fade]
+
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+[charaFadeout U 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[scene 194300]
+
+[charaEffectDestroy T bit_talk_10_LowLevel]
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_10_LowLevel_depth]
+
+[charaTalk depthOff]
+[charaDepth L 9]
+[charaDepth H 8]
+[charaDepth I 7]
+[charaDepth K 6]
+[charaDepth J 5]
+[charaDepth P 3]
+[charaDepth T 2]
+[charaDepth E 1]
+[wt 0.2]
+
+[fadein white 0.7]
+[bgm BGM_MAP_91 0.7 1.0]
+[wait fade]
+
+？1：それは……
+？2：思ったことは……
+
+？！
+
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+しっかりしたまえ、[%1]！
+[k]
+
+？1：新所長
+？！
+
+[charaFace E 13]
+
+＠ゴルドルフ
+今は問答の時ではあるまい！[r]見てる限り、テュフォンの本体は眠ってるのだろう！
+[k]
+
+＠ゴルドルフ
+万が一にも、復活させてはならん。
+[k]
+
+[charaFace E 11]
+
+＠ゴルドルフ
+その少女は……うむ、なるべく手荒でない方法で[r]拘束してしまうべきだろう！
+[k]
+
+[messageOff]
+[charaScale L 1.2]
+[charaScale P 1.2]
+[charaTalk L,E]
+[charaFace L 28]
+[charaFadein L 0.4 -100,0]
+[charaFadein P 0.4 -100,-220]
+[charaMove L -50,0 0.4]
+[charaMove P -50,-220 0.4]
+
+[bgmStop BGM_MAP_91 0.4]
+[wt 0.4]
+
+[charaFaceFade L 10 0.3]
+[wt 1.0]
+
+[charaFace L 15]
+
+＠テュフォン
+言ったな。[r]テュフォンを復活させてはならないと。
+[k]
+
+[messageOff]
+[charaTalk L,E]
+[charaFadeout L 0.4]
+[charaFadeout P 0.4]
+[wt 0.4]
+
+[charaFace E 4]
+
+＠ゴルドルフ
+え？
+[k]
+
+[messageOff]
+[charaScale L 1.0]
+[charaScale P 1.1]
+[charaTalk L]
+[charaFace L 16]
+[overlayFadein L 0.4 1]
+[charaFadein P 0.4 0,-220]
+
+[bgm BGM_BATTLE_107 0.1]
+[wt 0.4]
+
+[charaFadeout E 0.1]
+[charaPut T 2000,2000]
+
+＠テュフォン
+聞き届けたぞ！　おまえの願いを！[r]影の騎士ども、こやつらの相手をせよ！
+[k]
+
+[messageOff]
+[charaScale H 0.9]
+[charaScale I 0.9]
+[charaScale J 0.9]
+[charaScale K 0.9]
+[se ad769]
+[cueSe SE_21 21_ad1119]
+[charaEffect H bit_talk_11 0,-100]
+[charaFace H 0]
+[charaFadeinFSL H 0.4 -200,-20]
+[wt 0.3]
+[charaEffect K bit_talk_11 0,-100]
+[charaFace K 0]
+[charaFadeinFSR K 0.4 200,-20]
+[wt 0.2]
+[charaEffect I bit_talk_11 0,-100]
+[charaFace I 0]
+[charaFadeinFSSideL I 0.4 -440,-20]
+[wt 0.3]
+[charaEffect J bit_talk_11 0,-100]
+[charaFace J 0]
+[charaFadeinFSSideR J 0.4 440,-20]
+[cueSeStop 21_ad1119 1.0]
+[seStop ad769 1.0]
+[wt 1.8]
+
+
+
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_107 0.4]
+[wait fade]
+[subCameraOff]
+[wt 0.5]
+[soundStopAllEnd]
+[end]
+

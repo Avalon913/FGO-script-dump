@@ -1,0 +1,1267 @@
+
+
+＄94-13-85-10-1-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098123000 1 ムニエル]
+[charaSet B 1098257300 1 ダ・ヴィンチ]
+[charaSet C 1098269330 1 エルロン]
+[charaSet D 1098255100 1 ゴルドルフ]
+
+[charaSet E 5047902 1 大黒天１号]
+[charaSet F 5047912 1 大黒天２号]
+[charaSet G 1098283040 1 ネモサンタ]
+[charaSet H 1098283310 1 ネモ・プロフェッサー]
+[charaSet I 1098283100 1 ネモ・マリーン]
+[charaSet J 1098283200 1 ネモ・ナース]
+[charaSet K 1098283400 1 ネモ・エンジン]
+[charaSet L 1098283500 1 ネモ・ベーカリー]
+[charaSet M 1098310700 1 マシュ]
+[charaSet N 7050002 1 ロウヒ]
+[charaSet O 7002002 1 ランスロット_バーサーカー]
+[charaSet P 1020002 1 ランスロット_セイバー]
+
+[imageSet Q cut624_sampo04 1]
+[imageSet V cut624_sampo03 1]
+
+[imageSet R cut626_nem_jeep_02 1]
+
+[imageSet S cut619_luh_full02 1]
+[sceneSet T 236300 1]
+
+[imageSet U back10000 1 1]
+[charaScale U 1.3]
+
+[sceneSet W 236300 1]
+[sceneSet X 236300 1]
+[sceneSet Y 236300 1]
+
+[charaSet Z 98115000 1 エフェクト用]
+[charaPut Z 2500,2500]
+[charaEffect Z bit_talk_10_LowLevel]
+
+[charaTalk depthOff]
+
+[charaDepth W 1]
+[charaDepth X 2]
+[charaScale W 1.4]
+[charaScale X 1.5]
+[charaFadein W 0.1 180,-370]
+[cameraMove 0.1 0,0 1.01]
+[scene 236300]
+[cueSe SE_24 24_ade1141]
+[cueSeVolume 24_ade1141 0 0]
+[wt 0.1]
+
+[charaMove W 130,-370 5.0]
+[fadein black 1.0]
+[cueSeVolume 24_ade1141 1.0 1.0]
+[wait fade]
+
+
+
+[wt 3.0]
+[charaFadein X 0.5 -170,-400]
+[charaMove X -170,-450 5.0]
+[wt 0.5]
+[charaFadeout W 0.1]
+[wt 2.5]
+
+[fadeout black 1.5]
+[seStop 24_ade1141 1.5]
+[wait fade]
+
+[charaFadeout X 0.1]
+
+[scene 132900]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[flashin loop 0.6 0.9 FF000080 FF000000]
+[se ad9]
+[seVolume ad9 1.0 0.8]
+[wt 1.0]
+[bgm BGM_MAP_116 0.1]
+[wt 2.5]
+[seStop ad9 1.0]
+[wt 1.0]
+[flashOff]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ムニエル
+や……やりやがった！！
+[k]
+
+＠ムニエル
+マジでサンポを使いやがったぞ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+計測されているのは、まだ魔力波に留まっている。[r]いわば表面的なものだが[line 3]
+[k]
+
+[charaFace B 14]
+
+＠ダ・ヴィンチ
+テクスチャ侵食後に予想される[r]地震のモーメント・マグニチュードは！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear01 4000217]
+
+[label lblClear01]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エルロン
+推定値暫定、Ｍ９．４です。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[branch lblConf01]
+
+[label lblNotClear01]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ムニエル
+推定値は[line 3][wt 0.7][charaFace A 8][charaShake A 0.03 2 2 0.3]え、Ｍ９．４んん！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[label lblConf01]
+
+[charaTalk B]
+[charaFace B 26]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+[line 3]！　なんだって……？[r]惑星規模の地震波か……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+具体的な影響はどうなんだね！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear02 4000217]
+
+[label lblClear02]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エルロン
+地球自転軸が最低４センチメートル移動。[r]おそらく数メートル単位のオーダーで遷移します。
+[k]
+
+[charaFace C 1]
+
+＠エルロン
+いえ、すでにずれ始めています。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[branch lblConf02]
+
+[label lblNotClear02]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ムニエル
+……ええとぉ、地球自転軸が最低でも４センチ移動。[r]放置すれば数メートル単位で拡大を……。
+[k]
+
+[charaFace A 2]
+
+＠ムニエル
+いやもう、ずれ始めてますよ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[label lblConf02]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+地軸の遷移[line 3]
+[k]
+
+[charaFace D 5]
+
+＠ゴルドルフ
+[f large]……ポールシフトか！！
+[k]
+
+[messageOff]
+[bgm BGM_MAP_116 1.0 0.5]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout D 0.1]
+[charaSet A 1098310400 1 アビゲイル]
+[charaSet B 1098257310 1 ダ・ヴィンチ]
+[charaSet C 2022000 1 アルテラサンタ]
+[charaSet D 1098255110 1 ゴルドルフ]
+[scene 236300]
+
+[subCameraOn 4]
+[subCameraFilter #A maskEdge cut359_mask07 3 0,0,0,255]
+[subRenderScale #A 1.0]
+[charaLayer R sub #A]
+[charaFadein R 0.1 1]
+
+[cueSe SE_24 24_ade1141]
+[cueSeVolume 24_ade1141 0 0]
+[wt 1.0]
+[fadein black 1.0]
+[bgm BGM_MAP_116 1.0 1.0]
+[cueSeVolume 24_ade1141 1.0 1.0]
+[wait fade]
+[wt 1.2]
+
+[cueSe SE_23 23_ad1255 0.7]
+[shake 0.04 3 3 2.0]
+[wt 2.4]
+[seStop 24_ade1141 3.5]
+[seStop 23_ad1255 3.5]
+
+？1：ポールシフト！？
+？！
+
+[charaPut Z 1]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+伝承から推測されたサンポの[#権能][line 3]。[r]霊脈の大規模な書き換え。極地への資源の異常な集中。
+[k]
+
+＠ダ・ヴィンチ
+そういった大魔術の行使の結果として、[r]現実面で観測される事象が、地軸の急激な移動[line 3]
+[k]
+
+＠ダ・ヴィンチ
+すなわち、ポールシフトだったのか！
+[k]
+
+[charaFace B 34]
+
+＠ダ・ヴィンチ
+未知ではあった。実現しえない範疇であるとも。[r]ではあったけれど……よもやここまでとは[line 3]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut Z 2500,2500]
+
+[charaTalk A]
+[charaFace A 27]
+[charaFadein A 0.1 1]
+
+＠アビゲイル
+……ポホヨラが……。
+[k]
+
+[charaFace A 12]
+
+＠アビゲイル
+こんなポホヨラの姿を[r]ロウヒさんが望まれているはずがないわ……。
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_116 1.4]
+[charaDepth G 3]
+[charaDepth R 2]
+[charaDepth W 1]
+[charaDepth A 0]
+[charaScale W 1.2]
+[charaFadein W 0.4 60,-160]
+[charaMoveEase W 120,-160 0.7 easeOutCubic]
+[wt 0.4]
+[charaFadeout A 0.1]
+
+[se ad551 0]
+[seVolume ad551 1.5 0.7]
+[wt 2.0]
+[seStop ad551 1.5]
+
+
+[se ad607]
+[subRenderFadeinFSL #A 0.3 -200,-200]
+[subRenderMoveEaseFSL #A -150,-200 0.8 easeOutExpo]
+[wt 1.5]
+
+[cueSe SE_23 23_ade934]
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+[charaFadeout R 0.1]
+
+[bgm BGM_EVENT_223 0.1]
+
+[se ad586]
+[seStop ad586 0.6]
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.4 0,50]
+[charaMoveEase W 120,-210 0.7 easeOutSine]
+[charaMoveEase G 0,0 0.7 easeOutSine]
+[wt 0.7]
+
+＠ネモサンタ
+マスター！[r]お互い無事でなによりだ！　早速だけど[line 3]
+[k]
+
+＠ネモサンタ
+ロウヒとサンポの現在位置を確認した！[r]すぐにペンギンポーターで移動を……[wt 1.0][se ade220][seStop ade220 1.5][charaFace G 1]おや？
+[k]
+
+[charaFace G 2]
+
+＠ネモサンタ
+そうか、アルテラが来てくれたのか！[r]じゃあマスターは[#二人乗り:タ　ン　デ　ム]で併走を！
+[k]
+
+[messageOff]
+[charaFadeout W 0.4]
+[charaFadeout G 0.4]
+[wt 0.4]
+
+[charaDepth C 0]
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.2 1]
+
+＠アルテラサンタ
+フォフォッ、まかされた。[r]いくぞツェルコ、ふわふわの毛並みの見せどころだ！
+[k]
+
+[messageOff]
+[charaTalk C,H]
+[charaDepth H 2]
+[charaDepth W 1]
+[charaScale H 1.2]
+[charaScale W 1.2]
+[charaFace H 1]
+[charaFadein H 0.4 -250,0]
+[charaFadein W 0.4 0,-270]
+[wt 0.4]
+[charaFadeout C 0.1]
+[charaDepth E 0]
+[charaDepth F 0]
+[charaFace E 5]
+[charaFadein E 0.1 150,0]
+
+＠ネモ・プロフェッサー
+実に幸いなことに、あの高空に顕現した黒い星とは[r]異なる場所にロウヒは位置しておりましてー。
+[k]
+
+＠ネモ・プロフェッサー
+あちらは作用の中心、サンポ自体は[r]遠隔コントローラー的なもののようですー。はい。
+[k]
+
+[messageOff]
+[charaTalk H,E]
+[charaFadeout H 0.4]
+[charaFadeout W 0.4]
+[wt 0.4]
+[charaScale H 1.0]
+
+＠大黒天１号
+ついに……[r]サンポの実体が姿を現したのですね。
+[k]
+
+[messageOff]
+[charaDepth E 0]
+[charaDepth F 1]
+[charaDepth W 4]
+[charaDepth I 5]
+[charaDepth J 6]
+[charaDepth K 7]
+[charaDepth L 8]
+[charaScale W 1.2]
+[charaScale I 1.2]
+[charaScale J 1.2]
+[charaScale K 1.2]
+[charaScale L 1.2]
+[charaTalk E,I]
+[charaFace I 3]
+[charaFadein I 0.4 1]
+[charaFadein W 0.4 -10,-240]
+[wt 0.4]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaDepth M 0]
+[charaFace M 8]
+[charaFadein M 0.1 1]
+
+＠ネモ・マリーン
+あーっ、マスターだけ元の姿に戻ってるー！？
+[k]
+
+[charaMoveEase W 10,-240 0.4 easeOutCubic]
+[charaFadeout I 0.2]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.2 -250,0]
+
+＠ネモ・ナース
+まあそれは[r]ちょっと勿体ないですね？
+[k]
+
+[charaMoveEase W -10,-240 0.4 easeOutCubic]
+[charaFadeout J 0.2]
+[wt 0.2]
+
+[charaTalk K]
+[charaFace K 3]
+[charaFadein K 0.2 250,0]
+
+＠ネモ・エンジン
+なにがだ？　質量増えてるだろ！？
+[k]
+
+
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.2 -250,0]
+
+＠ネモ・ベーカリー
+トントゥ型の等身大コロネパンとか[r]考えてました～。トントゥコロコロパンです～！
+[k]
+
+
+[charaTalk K]
+[charaFace K 2]
+
+＠ネモ・エンジン
+……！　それは……いいかも？
+[k]
+
+[charaFace K 7]
+
+＠ネモ・エンジン
+……いや待てなんか[r]想像すると怖くないか？
+[k]
+
+[messageOff]
+[charaTalk K,M,G]
+[charaFadeout L 0.5]
+[charaFadeout W 0.5]
+[charaFadeout K 0.5]
+[wt 0.5]
+
+[wt 1.5]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠ネモサンタ
+さあ、みんなポーターに乗るんだ！[r]でなきゃ適当に掴まって！
+[k]
+
+＠ネモサンタ
+落下物はなるべく避けるけど[r]荒っぽい運転になるからじゅうぶん注意して！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+これまで観測を遮っていた外殻は崩壊した。[r]断続的ながら通信は可能だよ。けれど[line 3]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+それだ、[%1]。[r]何か策はあるのかね？
+[k]
+
+？1：……はい。一つだけ
+？2：トントゥたちに託された祈りが手の中に
+？！
+
+[charaFace D 0]
+
+＠ゴルドルフ
+む……そうか。では、行きたまえ！
+[k]
+
+？1：了解！
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaPut Z 2500,2500]
+[wt 0.1]
+
+[se ad551]
+[se ade220]
+[wt 2.0]
+[seStop ad551 1.5]
+[seStop ade220 1.5]
+
+[bgmStop BGM_EVENT_223 1.0]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[imageSet R cut619_luh_full02 1]
+[charaDepth W 1]
+[charaDepth U 2]
+[charaDepth Q 3]
+[charaDepth V 4]
+[charaScale W 1.2]
+[charaFadein W 0.1 0,-200]
+[wt 0.7]
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+[wt 1.0]
+
+[charaFadein Q 0.4 0,-180]
+[wt 2.2]
+[charaFadeout Q 0.6]
+[charaFadeout W 0.6]
+[wt 0.7]
+[bgm BGM_MAP_129 0.1]
+
+[charaTalk M]
+[charaFace M 11]
+[charaFadein M 0.1 1]
+
+＠マシュ
+あれが……サンポ……！[r]天空の鍛冶師イルマリネンが鋳造した神器……。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+
+＠ネモ・プロフェッサー
+起動したサンポを通じて膨大な魔力が[r]ロウヒに循環してますねー。やばいですー。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 27]
+[charaFadein A 0.1 1]
+
+＠アビゲイル
+なんてまぶしい……。[r]麦を[#碾:ひ]く石臼のように、ゆっくりと旋回して。
+[k]
+
+＠アビゲイル
+その形もどこか卵のような[line 3][r]ああ……また卵なのね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+……“世界卵”。[r]フィンランド神話において世界は卵から生まれた。
+[k]
+
+[messageOff]
+[charaLayer Y sub #A]
+[charaLayer N sub #A]
+[charaLayer R sub #A]
+[charaLayer T sub #B]
+[charaLayer S sub #B]
+[subCameraFilter #A maskEdge cut359_mask05 4 0,0,0,255 0]
+[subCameraFilter #B normal]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[charaDepth Y 1]
+[charaDepth N 2]
+[charaScale Y 1.2]
+[charaScale N 1.2]
+[charaFadein Y 0 420,-50]
+[subRenderFadein #A 0.4 -350,-150]
+[subRenderMoveEase #A -350,-200 0.4 easeOutSine]
+[charaMove Y 420,-100 15.0]
+[cueSe SE_24 24_ade1140]
+[cueSeVolume 24_ade1140 0 0.3]
+[cueSeVolume 24_ade1140 2.5 0.8]
+[wt 2.5]
+[cueSeStop 24_ade1140 0.5]
+[charaFace B 22]
+
+＠ダ・ヴィンチ
+神域の鳥ソトゥカが産み落とした卵が、精霊にして原初の[r]乙女イルマタルのもとで砕けて[#孵:かえ]り、空と大地になった。
+[k]
+
+＠ダ・ヴィンチ
+後には固有結界魔術として模倣されるまでに至る[r]神代の奇跡だ……。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth T 1]
+[charaDepth S 2]
+[charaScale T 1.6]
+[charaScale S 1.6]
+[subRenderScale #B 1.01]
+[charaFace S 0]
+[charaFadein S 0 100,250]
+[charaFadein T 0 100,-150]
+[subRenderFadein #B 0.4 0,0]
+[charaMove S 100,220 5.0]
+[charaMove T 100,-180 5.0]
+[cueSe SE_24 24_ade1140]
+[cueSeVolume 24_ade1140 0 0.3]
+[cueSeVolume 24_ade1140 3.0 1.0]
+[wt 1.5]
+[charaFadeout B 0.1]
+[charaPut Z 2500,2500]
+[charaEffectDestroy Z bit_talk_10_LowLevel]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+[subRenderFadein #A 0.1 0,0]
+[charaDepth Y 1]
+[charaDepth R 2]
+[charaScale Y 1.8]
+[charaScale R 2.0]
+[charaFace R 0]
+[charaFadein R 0 120,-300]
+[charaFadein Y 0 -100,-380]
+[charaMove Y -100,-380 0.1]
+[wt 1.5]
+[subRenderFadeout #B 0.4]
+[charaMove R 80,-300 5.0]
+[charaMove Y -140,-380 5.0]
+[wt 1.5]
+[charaFadeout T 0.1]
+[charaFadeout S 0.1]
+[charaLayer T normal]
+[charaLayer S normal]
+[charaLayer N normal]
+[wt 1.0]
+[charaScale N 1.2]
+[charaScale W 1.2]
+[charaFace N 11]
+[charaFadein W 0.1 0,-320]
+[wt 0.5]
+[wipeout rectangleStripDownToUp 0.4 1]
+[wait wipe]
+
+[cueSeStop 24_ade1140 0.5]
+[subRenderFadeout #A 0.1]
+[charaFadeout Y 0.1]
+[charaFadeout R 0.1]
+[charaLayer Y normal]
+[charaLayer R normal]
+[subCameraOff]
+[wt 0.2]
+[charaMoveEase W 0,-280 1.0 easeOutCubic]
+[wipein rectangleStripUpToDown 0.4 1]
+[wait wipe]
+
+[wt 0.8]
+[cueSe SE_24 24_ade1140]
+[charaFadein N 0.4 0,30]
+[charaMoveEase N 0,0 1.0 easeOutSine]
+[wt 1.5]
+[cueSeStop 24_ade1140 0.2]
+[wt 0.3]
+
+[charaTalk on]
+[charaTalk N]
+[charaDepth A 0]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠ロウヒ
+ヴォイ……。[r]今さら来たって遅いんだぁよ。
+[k]
+
+＠ロウヒ
+サンポはもう目覚めた。[r]ロウヒのために回りはじめたんだからね。
+[k]
+
+[charaFace N 1]
+
+＠ロウヒ
+どうした。[r]もう一人のロウヒは[line 3]シトナイは？
+[k]
+
+[charaFace N 35]
+
+＠ロウヒ
+……ああ。そうか、なるほどな。[r][%1]のガンドを解いたのか。
+[k]
+
+[charaFace N 11]
+
+＠ロウヒ
+ロウヒが気にしていたのはシトナイだけだ。[r]おまえたちでは、ロウヒを止められやしない。
+[k]
+
+[cueSe Servants_9945030 m96206 0.6]
+[cueSe Servants_9945030 m96217 0.6]
+[charaMoveEase N 0,5 0.3 easeOutSine]
+[charaFace N 10]
+
+＠ロウヒ
+もうこの広げた翼の中には[r]サンポがあるんだぁよ！
+[k]
+
+？1：でもそれは、不完全なサンポだ
+？！
+
+[messageOff]
+[charaTalk N,A]
+[charaFace N 12]
+[wt 1.2]
+[charaSet B 1098232500 1 大黒天３号]
+[charaSet D 1098232600 1 大黒天４号]
+[charaSet R 1098232700 1 大黒天５号]
+[imageSet S cut624_sampo03 1]
+[charaFadeout W 0.4]
+[charaFadeout N 0.4]
+[wt 0.4]
+[charaScale N 1.0]
+
+＠アビゲイル
+ええその通りです、ロウヒさん！
+[k]
+
+＠アビゲイル
+ここは、あなたの愛する故郷ポホヨラでしょう？[r]その故郷をこんなふうに壊してしまうだなんて[line 3]。
+[k]
+
+＠アビゲイル
+ロウヒさんご自身が教えてくださった[r]どこか[#歪:ゆが]んでしまっている、不完全な宝です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 34]
+[charaFadein N 0.1 1]
+
+＠ロウヒ
+………………。
+[k]
+
+[charaFace N 11]
+
+＠ロウヒ
+完全でなくたっていいんだぁよ、アビゲイル。
+[k]
+
+[messageOff]
+[charaFaceFade N 12 0.1]
+[se ade434]
+[charaMoveEase N 0,-5 0.3 easeOutSine]
+[wt 1.5]
+
+＠ロウヒ
+おまえたちが最後の“かけら”を[r]持っているのは知ってる。
+[k]
+
+＠ロウヒ
+こちらに渡す気が無いのなら[r]最初から無いも同じなんだぁよ。
+[k]
+
+[charaFace N 35]
+
+＠ロウヒ
+思い通りに願いがかなう[line 3]。[r]誰も傷つかない幸せがある[line 3]。
+[k]
+
+[charaFace N 12]
+
+＠ロウヒ
+そんな白日夢に[#耽:ふけ]っていられるのは[r]嫁入り前の[#箭:や]の[#手:て][#開:ひら]かぬ娘だけ。
+[k]
+
+[charaFace N 11]
+
+＠ロウヒ
+[line 3]いいかい、お聞き。[r]おまえたちにはロウヒも恩義を感じている。
+[k]
+
+[charaFace N 35]
+
+＠ロウヒ
+憎しみのガンドを向けるべき相手では無いとも[r]知っている。
+[k]
+
+[charaFace N 11]
+
+＠ロウヒ
+……だから、これが最後の警告だ。
+[k]
+
+＠ロウヒ
+この地から去れ、[%1]。[r]仲間を連れて立ち去るんだぁよ。
+[k]
+
+＠ロウヒ
+そして遙かカルデアで[line 3]。
+[k]
+
+＠ロウヒ
+見事に息を吹き返したポホヨラが奏でる[r][#鼓:ルンプ]と[#歌:ヨイク]の調べを聴け。
+[k]
+
+＠ロウヒ
+北風に乗って、それは届く。
+[k]
+
+？1：まだサンポの力を星に振るうつもりなのか
+？2：それは見過ごせない
+？！
+
+[charaFace N 9]
+
+＠ロウヒ
+くどいんだぁよ。
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_129 1.0]
+[charaMoveEase N 0,80 0.6 easeOutCirc]
+[charaMoveScaleEase N 1.05 0.6 easeOutCirc]
+[charaFadeout N 0.3]
+[cueSe Servants_9945030 m96211 0.5]
+[seStop m96211 1.6]
+[wt 1.8]
+
+[charaTalk M]
+[charaFace M 4]
+[charaFadein M 0.1 1]
+[bgm BGM_BATTLE_179 0.1]
+
+＠マシュ
+マスターっ……！　回避を！
+[k]
+
+[messageOff]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[subCameraOn 2]
+[charaLayer Y sub #A]
+[charaLayer N sub #A]
+[subCameraFilter #A maskEdge cut359_mask20 3 0,0,0,255 0]
+[charaDepth Y 1]
+[charaDepth N 2]
+[charaScale Y 1.2]
+[charaScale N 1.2]
+[charaTalk N]
+[charaFace N 10]
+[charaFadein N 0 0,200]
+[charaFadein Y 0 0,-50]
+[subRenderFadein #A 0.3 0,-200]
+[wt 0.4]
+
+＠ロウヒ
+[f large][#火よ:ト ゥ ル タ][line 3]！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad707]
+[charaEffect N bit_talk_easy_spell_r]
+[wt 1.5]
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+
+[charaDepth W 1]
+[charaDepth O 2]
+[charaDepth P 3]
+[charaFadein W 0.4 0,-200]
+[effect bit_talk_flame_bullet]
+[cueSe SE_23 23_ad1338]
+[wt 1.0]
+[se ad1057]
+[shake 0.03 3 3 1.5]
+[wt 1.5]
+
+[charaScale O 1.2]
+[charaScale P 1.2]
+[charaFace O 5]
+[charaFadein O 0.3 -350,0]
+[charaFace P 5]
+[charaFadein P 0.3 350,0]
+[charaMoveEase O -300,0 0.3 easeOutExpo]
+[charaMoveEase P 300,0 0.3 easeOutExpo]
+[se ade321 0.6]
+[seStop ade321 1.0]
+[wt 0.2]
+[cueSe SE_24 24_ad1415]
+[seStop 24_ad1415 1.5]
+[se ad980]
+[fowardEffect bit_talk_h_slash01_fs]
+[effect bit_talk_h_slash02_fs 0,0 H]
+[wt 0.3]
+[effectDestroy bit_talk_flame_bullet]
+[wt 1.2]
+[charaTalk on]
+[charaTalk P]
+[charaFace P 2]
+
+＠P：ランスロット
+[f large]させるものか！
+[k]
+
+[messageOff]
+[charaTalk P,N]
+[charaFadeout P 0.4]
+[charaFadeout O 0.4]
+[charaFadeout W 0.4]
+[charaFace N 29]
+[subRenderFadein #A 0.4 0,-200]
+[wt 0.4]
+[charaScale O 1.0]
+[charaScale P 1.0]
+
+＠ロウヒ
+ヒュヴァ、受け流すか？　たいした剣技だ！[r]ではこれなら？
+[k]
+
+＠ロウヒ
+[f large][#雪つぶてよ:ル　ミ　ミ　ュ　ル　ス　キ][line 3]！！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad707]
+[charaEffect N bit_talk_easy_spell_r]
+[wt 1.5]
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+
+[charaDepth W 1]
+[charaDepth O 2]
+[charaDepth P 3]
+[charaFadein W 0.4 0,-200]
+[effect bit_talk_ice_petal]
+[cueSe SE_23 23_ad1338]
+[wt 1.0]
+[se ad1057]
+[shake 0.03 3 3 1.5]
+[wt 1.0]
+
+[charaScale E 1.2]
+[charaScale F 1.2]
+[charaScale B 1.2]
+[charaScale D 1.2]
+[charaScale R 1.2]
+[charaDepth E 6]
+[charaDepth F 5]
+[charaDepth B 4]
+[charaDepth D 3]
+[charaDepth R 2]
+[charaShake E 0.03 2 2 1.4]
+[charaShake F 0.03 2 2 1.4]
+[charaShake B 0.03 2 2 1.4]
+[charaShake D 0.03 2 2 1.4]
+[charaShake R 0.03 2 2 1.4]
+[charaFace E 5]
+[charaFadein E 0.3 -150,0]
+[charaMoveEase E -25,0 0.3 easeOutExpo]
+[wt 0.1]
+[charaFace F 4]
+[charaFadein F 0.3 150,0]
+[charaMoveEase F 25,0 0.3 easeOutExpo]
+[wt 0.3]
+[charaFace B 0]
+[charaFadein B 0.3 -50,0]
+[charaMoveEase B 0,0 0.3 easeOutExpo]
+[wt 0.2]
+[charaFace D 1]
+[charaFadein D 0.3 -600,0]
+[charaMoveEase D -400,0 0.3 easeOutExpo]
+[wt 0.2]
+[charaFace R 0]
+[charaFadein R 0.3 600,0]
+[charaMoveEase R 400,0 0.3 easeOutExpo]
+[wt 1.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 4]
+
+＠大黒天１号
+ぐっ……。
+[k]
+
+＠大黒天１号
+大旦那様……反撃をなさいませぬと……。
+[k]
+
+＠大黒天２号
+ううっ……命が危ういです……！
+[k]
+
+？1：……くっ！　ロウヒ！
+？！
+
+[messageOff]
+[charaTalk F,N]
+[charaFadeout E 0.4]
+[charaFadeout F 0.4]
+[charaFadeout B 0.4]
+[charaFadeout D 0.4]
+[charaFadeout R 0.4]
+[charaFadeout W 0.4]
+[charaFace N 11]
+[subRenderFadein #A 0.4 0,-200]
+[wt 0.4]
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaScale B 1.0]
+[charaScale D 1.0]
+[charaScale R 1.0]
+
+[cueSe SE_22 22_ad1179 0.7]
+[charaEffect N bit_talk_36 0,-50]
+[wt 1.5]
+
+＠ロウヒ
+……警告はしたんだぁよ。
+[k]
+
+[charaFace N 10]
+
+＠ロウヒ
+仲間の死に責任を負うのは、[r]おまえなんだぁよ、[%1]！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[seStop 22_ad1179 1.0]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[charaEffectDestroy N bit_talk_36]
+
+[scene 10000]
+[wt 0.4]
+
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[skip false]
+[wt 0.3]
+
+[fadein black 0.5]
+[wait fade]
+
+[criMovie talk_mov284 bgmPlay false]
+[wt 15.6]
+
+[messageOff]
+[fadeout white 0.4]
+[wait fade]
+
+[cameraHome 0.1]
+[wait camera]
+
+[skip true]
+
+[scene 236300]
+[charaTalk off]
+[charaDepth W 1]
+[charaDepth J 2]
+[charaDepth I 3]
+[charaDepth L 4]
+[charaScale W 1.2]
+[charaScale J 1.2]
+[charaScale I 1.2]
+[charaScale L 1.2]
+
+[charaFace J 4]
+[charaFace I 5]
+[charaFace L 4]
+[charaFadein J 0.4 300,0]
+[charaFadein I 0.4 -50,0]
+[charaFadein L 0.4 -400,0]
+[charaFadein W 0.4 -50,-250]
+[wt 2.0]
+
+[charaMove J 250,0 15.0]
+[charaMove I -100,0 15.0]
+[charaMove L -450,0 15.0]
+[charaMove W -100,-250 15.0]
+[fadein white 1.0]
+[wait fade]
+
+
+[wt 1.0]
+
+＠ロウヒ
+[line 3]サンポよ。[r]砕けて沈み、時経て還りし、ポホヨラの至宝。
+[k]
+
+[charaDepth X 5]
+[charaDepth K 6]
+[charaDepth H 7]
+[charaScale X 1.2]
+[charaScale K 1.2]
+[charaScale H 1.2]
+
+[charaFace K 0]
+[charaFace H 4]
+[charaFadein K 0.4 300,0]
+[charaFadein H 0.4 -100,0]
+[charaFadein X 0.4 50,-250]
+[charaMove K 350,0 15.0]
+[charaMove H -50,0 15.0]
+[charaMove X 100,-250 15.0]
+
+＠ロウヒ
+[#九:ここの]つの[#錠:じょう]、[#十:とお]の[#掛:か]け[#金:がね]の下[line 3][r][#星夜:ほしよ]の魔力を[#蓄:たくわ]えた、天の[#釘星:くぎぼし]よ。[wt 0.4][charaFadeout J 0.1][charaFadeout I 0.1][charaFadeout L 0.1][charaFadeout W 0.1]
+[k]
+
+[charaDepth X 1]
+[charaDepth K 2]
+[charaDepth H 3]
+[charaDepth W 4]
+[charaDepth G 5]
+
+[charaScale W 1.2]
+[charaScale G 1.2]
+
+[charaFace G 5]
+[charaFadein G 0.4 0,0]
+[charaFadein W 0.4 -25,-250]
+[charaMove G -50,0 15.0]
+[charaMove W -75,-250 15.0]
+
+＠ロウヒ
+虹の乙女らの母ロウヒが言う。[r]ポホヤの敵を倒せとおまえに語りかける！[wt 0.4][charaFadeout K 0.1][charaFadeout H 0.1][charaFadeout X 0.1]
+[k]
+
+[charaDepth W 1]
+[charaDepth G 2]
+[charaDepth X 3]
+[charaDepth A 4]
+[charaDepth C 5]
+
+[charaScale X 1.2]
+[charaScale A 1.2]
+[charaScale C 1.2]
+
+[charaFace A 9]
+[charaFadein A 0.4 -200,0]
+[charaFace C 6]
+[charaFadein C 0.4 300,0]
+[charaFadein X 0.4 25,-250]
+[charaMove A -150,0 15.0]
+[charaMove C 350,0 15.0]
+[charaMove X 75,-250 15.0]
+
+＠ロウヒ
+銀の太陽、金の月、炎すらもポホヨラに眠る。[r]このロウヒの胸に抱かれ横たわる。[wt 0.4][charaFadeout W 0.1][charaFadeout G 0.1]
+[k]
+
+[messageOff]
+[charaFadeout A 0.5]
+[charaFadeout C 0.5]
+[charaFadeout X 0.5]
+[charaFace N 10]
+[subRenderFadein #A 0.5 0,-200]
+[wt 0.5]
+
+＠ロウヒ
+そして今、[#彼:か]の[#者:もの]たちの番が来た……[r]トゥオネラの川を渡る時が来た！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[fowardEffect bit_talk_white_aura]
+[wt 0.3]
+
+[charaFadein V 0.3 0,-200]
+[charaPut U 0,-200]
+[charaFadeTime U 0.3 0.5]
+[wt 0.2]
+[cueSe SE_22 22_ad1195 0.5]
+[seStop 22_ad1195 2.5]
+[wt 1.5]
+
+
+[bgmStopEnd BGM_BATTLE_179 1.5]
+[fadeout white 1.5]
+[wt 0.2]
+[se ad966]
+[seStop ad966 2.2]
+[wait fade]
+[fowardEffectDestroy bit_talk_white_aura]
+[charaFadeout V 0.1]
+[charaFadeout U 0.1]
+[scene 10000]
+[wt 1.5]
+[fadein white 0.5]
+[wait fade]
+[fadeout black 0.1]
+[wait fade]
+[soundStopAllEnd]
+[end]
+

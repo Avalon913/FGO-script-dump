@@ -1,0 +1,664 @@
+
+
+＄94-10-12-05-1-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 10018000 1 カズラドロップ]
+[charaSet B 1098255100 1 ゴルドルフ]
+[charaSet C 1098239320 1 カドック]
+[charaSet D 1098272300 1 オベロン]
+
+[sceneSet E 230300 1]
+[charaScale E 1.2]
+
+[charaSet H 98115000 1 エフェクト用]
+
+
+
+[scene 229700]
+
+[cueSe SE_23 23_ade933]
+[seVolume 23_ade933 0 0]
+[wt 0.5]
+[seVolume 23_ade933 1.0 0.8]
+[wt 0.8]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[cueSe SE_23 23_ade935 0]
+[cueSeVolume 23_ade935 1.5 0.6]
+[wt 1.5]
+[seStop 23_ade935 0.7]
+[wt 1.0]
+
+[se ade330]
+[wt 0.8]
+
+
+
+
+[bgm BGM_EVENT_112 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+やれやれ。相変わらず、見えるのは[r]スケール感のおかしな寝具ばかり。
+[k]
+
+
+＠ゴルドルフ
+メルヘンであると同時に、やはり不気味だ。[r]本能的な不安感がどうにも拭えん。
+[k]
+
+＠ゴルドルフ
+生活感が見えるくせに誰もいないのが[r]それに拍車をかけている。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠オベロン
+メルヘンってそういうものじゃない？[r]僕は静かでいいと思うけどね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠カドック
+ここらの巨大物品を扱える住人は、[r]いるとしてもこの世界に一人だけだろうな。
+[k]
+
+＠カドック
+実際に使うことがあるのかどうかは知らないが。
+[k]
+
+[charaFace C 0]
+[bgmStop BGM_EVENT_112 1.5]
+
+＠カドック
+……噂をすれば、だ。[r]出てきたぞ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.8]
+[bgm BGM_KAZURA_1 0.1]
+
+＠カズラドロップ
+最終チェックポイントへようこそ。
+[k]
+
+＠カズラドロップ
+今までのテストの結果に手応えがあれば[r]今回もそれを続けられるように、
+[k]
+
+＠カズラドロップ
+逆に不安があれば今回のテストで[r]マイナスを取り返せるように、
+[k]
+
+＠カズラドロップ
+完璧なパパを目指して[r]最後まで頑張ってくださいね。
+[k]
+
+[charaFace A 2]
+
+＠カズラドロップ
+それでは、今回のパパチェックの場へと[r]ご招待しましょう。
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ade1080]
+[charaMove A -150,0 1.0]
+[wt 1.0]
+[seStop 24_ade1080]
+[wt 0.5]
+[charaFadeout A 0.4]
+[wt 0.4]
+
+[charaDepth H 1]
+[charaDepth A 5]
+[se ad606]
+[se ad933]
+[seVolume ad933 0 0.3]
+[charaPut H 1]
+[charaEffect H bit_talk_light_door]
+[wt 3.0]
+[seStop ad606 1.0]
+
+[cueSe SE_24 24_ade1080]
+[charaFadein A 0.1 -150,0]
+[charaMove A -100,0 1.0]
+[wt 1.0]
+[seStop 24_ade1080]
+[se adm20]
+[effect bit_talk_light_particles_scatter -100,0]
+[wt 1.0]
+[charaFadeout A 0.4]
+[wt 2.0]
+
+
+
+
+[se ad311]
+[cameraMove 1.0 0,0 1.2]
+[wt 1.5]
+[seStop ad311]
+[se adm20]
+[seStop ad933 1.0]
+[bgmStop BGM_KAZURA_1 1.0]
+[fadeout white 1.0]
+[wait fade]
+
+[charaPut H 2000,2000]
+[charaEffectStop H bit_talk_light_door]
+[scene 230000]
+[cameraHome 0.1]
+[wt 0.5]
+
+[fadein white 2.0]
+[wait fade]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_194 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+おや？
+[k]
+
+？1：最初のテストの家……？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠オベロン
+ネタ切れかな？[r]寝室ならではの試練に期待していたんだけど。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カズラドロップ
+残念ながらネタ切れでも[r]省エネでもありません。
+[k]
+
+＠カズラドロップ
+料理チェックと同じく、この試練においては[r]ここがベストだろうと判断しただけです。
+[k]
+
+＠カズラドロップ
+そして今回はこの部屋だけではありません。[r]こちらへどうぞ。
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ade1080]
+[charaMove A -150,0 1.0]
+[charaDepth H 1]
+[charaDepth A 5]
+[se ad606]
+[se ad933]
+[seVolume ad933 0 0.3]
+[charaPut H 1]
+[charaEffect H bit_talk_light_door]
+[wt 1.0]
+[seStop 24_ade1080]
+[wt 0.5]
+[charaFadeout A 0.4]
+[wt 0.4]
+
+[wt 2.0]
+[seStop ad606 1.0]
+
+[se ad311]
+[cameraMove 1.0 0,0 1.2]
+[wt 1.5]
+[seStop ad311]
+[se adm20]
+[bgmStop BGM_EVENT_194 1.0]
+[seStop ad933 1.0]
+[fadeout white 1.0]
+[wait fade]
+
+[charaPut H 2000,2000]
+[scene 230300]
+[cameraHome 0.1]
+[charaFadein E 0.1 50,-320]
+[wt 1.5]
+
+[fadein white 2.0]
+[charaMove E -80,-320 5.0]
+[wait fade]
+[bgm BGM_EVENT_157 0.1]
+[wt 2.5]
+[charaFadeout E 0.5]
+[wt 1.0]
+
+
+？1：ファンシー＆ポップなここは……
+？2：玩具売り場……？
+？！
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠カズラドロップ
+はい、ここでお題の発表です。[r]最後のチェックポイントは[line 3]
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ade1099]
+[cameraMove 3.0 0,0 1.15]
+[wt 2.8]
+[seStop 24_ade1099 0.2]
+[wt 0.2]
+[cueSe SE_24 24_ade1100]
+[cameraMove 0.2 0,0 1.01]
+[effect bit_talk_41_fs]
+[charaFace A 12]
+
+＠カズラドロップ
+『ただしいパパは素敵なプレゼントをくれるんです！』[r]ということになりまーす！
+[k]
+
+[effectStop bit_talk_41_fs]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ゴルドルフ
+ふーむ。ここで選んだプレゼントを贈り、[r]そのセンスによって評価がされるということか。
+[k]
+
+＠ゴルドルフ
+わかりやすくはあるかもしれんな。
+[k]
+
+[charaFace B 16]
+
+＠ゴルドルフ
+完璧なパパらしさということに[r]ついては……
+[k]
+
+[charaFace B 8]
+
+＠ゴルドルフ
+うーん、まあ、子供にとっては[r]そうかもしれんな、というところだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カズラドロップ
+プレゼントを目の前で選ばれるのは[r]風情がないでしょう？
+[k]
+
+＠カズラドロップ
+だからリビングも用意しています。[r]あちらは私の待機場所のようなものです。
+[k]
+
+＠カズラドロップ
+あ、ちなみにですが、[r]その商品棚にないものをプレゼントしたい、
+[k]
+
+＠カズラドロップ
+というのであれば、他の場所で[r]調達してきても構わないということにします。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カドック
+他の場所というのは？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カズラドロップ
+こちらのバックヤードに、おでかけパパチェックと[r]似たようなＶＲシステムを完備していますので。
+[k]
+
+＠カズラドロップ
+各自必要な素材がありそうな場所を[r]仮想構築してしまってください。
+[k]
+
+＠カズラドロップ
+そこで得られるアイテムは厳密には[r]立体映像のようなものですが、
+[k]
+
+＠カズラドロップ
+このパパチェック内においては[r]リアルなプレゼントとしての演算が可能です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+相変わらず理屈はよくわからんが、[r]とんでもなくハイテクではありそうだ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カドック
+自由度の高さが重視されているみたいだな。
+[k]
+
+＠カドック
+何が『素敵なプレゼント』かを決める選択の幅も、[r]パパの能力のうち、ということか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カズラドロップ
+私からはいつものようにノーヒントです。[r]それ以外に何か質問は？
+[k]
+
+？1：プレゼントはみんなで一つ？
+？！
+
+[charaFace A 2]
+
+＠カズラドロップ
+最後ですしサービスしちゃいましょうか。
+[k]
+
+＠カズラドロップ
+今回は一人が一つのプレゼントをする、ということで。[r]そのうちの最高点をチームの点数としましょう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+ほほう！[r]それは少し有利になったぞ。
+[k]
+
+＠ゴルドルフ
+我々の中の三人が失敗しても、残る一人がバッチリの[r]プレゼントを選べればそれでよいのだからな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠オベロン
+待って、護衛の僕も数に入ってるのかな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+当たり前だろう。
+[k]
+
+＠ゴルドルフ
+四つのプレゼントを出せば、それは[r]得点チャンスが四倍になるというコトだ。
+[k]
+
+＠ゴルドルフ
+護衛だからといって頭数を無駄にしてどうする。[r]部下が百人いれば百人にやらせとるわい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠オベロン
+了解だ。できる範囲で工夫してみよう。
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_EVENT_157 2.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+？1：さて、どうしよう？
+？！
+
+[bgm BGM_MIZUGI_2017 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+ノーヒントということだから、[r]基本は各々のセンスだけが頼りになるだろうな。
+[k]
+
+＠ゴルドルフ
+これまでと同じだ。駄目で元々、しかし[r]今後の指標を立てるために全力は尽くす、と。
+[k]
+
+[charaFace B 13]
+
+＠ゴルドルフ
+とはいえ、さすがに各々が勝手に用意した[r]プレゼントが被ったりするのは愚の骨頂か。
+[k]
+
+＠ゴルドルフ
+最低限の話し合いは必要だろうな。
+[k]
+
+[charaFace B 16]
+
+＠ゴルドルフ
+まずはザックリとでいいが、[r]何か意見があるものはいるか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カドック
+僕はここにあるような[#玩具:がんぐ]についての知識がない。[r]センスがあるのかどうかもわからない。
+[k]
+
+＠カドック
+独自の路線でいったほうがよさそうな気がする。
+[k]
+
+＠カドック
+まだしも知識のある『森』をＶＲで構築して、[r]そこで何かを探すつもりだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+＠オベロン
+それなら僕もご相伴させていただこうかな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+ふむ……古臭い魔術師という生き物の中でも、[r]別格にナウでイケてると噂の私はここで探すとするか。
+[k]
+
+＠ゴルドルフ
+[%1]はどうする？
+[k]
+
+？1：ひとまず自分もここで探してみます
+？！
+
+[charaFace B 0]
+
+＠ゴルドルフ
+よかろう。では二度手間を避けるためにも、[r]まずは皆でこの商品倉庫を見て回ってから、
+[k]
+
+＠ゴルドルフ
+次にＶＲ空間でおまえたちのプレゼントを[r]探すことにしよう。
+[k]
+
+[charaFace B 1]
+
+＠ゴルドルフ
+だからまずは付き合いなさいよ。
+[k]
+
+＠ゴルドルフ
+興味がない場所のアイテムでも、
+[k]
+
+＠ゴルドルフ
+逆にフッとインスピレーションが降りて[r]何かいいものを見つけられるかもしれん。
+[k]
+
+[charaFace B 0]
+
+＠ゴルドルフ
+何につけても、最初から可能性は[r]ゼロだと諦めてかかるよりは、
+[k]
+
+＠ゴルドルフ
+よくわからない理由でも偶然でもいいから[r]上手くいくかも、と思っておいたほうが
+[k]
+
+＠ゴルドルフ
+意外といい結果になるものだよ、[r]人生においてはね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠カドック
+そう言われるとそんな気もしてくる。[r]意外といいこと言うな、アンタ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+意外は余計だよ君ィ？
+[k]
+
+[messageOff]
+[wt 1.2]
+[charaFace B 12]
+
+＠ゴルドルフ
+よし、それでは始めよう！
+[k]
+
+＠ゴルドルフ
+各自死力を尽くして、[r]完璧なパパとしてのプレゼントを選ぶようにな！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_MIZUGI_2017 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

@@ -1,0 +1,174 @@
+
+
+＄94-10-12-16-1-0
+
+
+[enableFullScreen]
+[soundStopAll]
+[charaSet A 1098255100 1 ゴルドルフ]
+[charaSet B 1098239320 1 カドック]
+[charaSet C 10018000 1 カズラドロップ]
+
+[charaSet K 98115000 1 エフェクト用]
+
+[sceneSet L 10000 1]
+[charaScale L 1.2]
+
+[charaTalk depthOff]
+[wt 0.1]
+
+[scene 229403]
+[se ad311 0]
+[seVolume ad311 1.5 0.5]
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+[seStop ad311 0.5]
+[wt 1.5]
+
+[se ad606]
+[se ad933]
+[seVolume ad933 0 0.3]
+[charaPut K 1]
+[charaEffect K bit_talk_light_door]
+[wt 2.5]
+[seStop ad606 1.5]
+[wt 1.0]
+[se ad311]
+[cameraMove 1.0 0,0 1.2]
+[wt 1.5]
+[seStop ad311]
+[se adm20]
+
+[seStop ad933 1.0]
+[fadeout white 1.0]
+[wait fade]
+[charaPut K 2000,2000]
+[charaEffectDestroy K bit_talk_light_door]
+[cameraHome 0.1]
+[scene 230100]
+[wt 1.5]
+[fadein white 2.0]
+[wait fade]
+
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.2 1]
+[wt 0.2]
+[bgm BGM_MAP_85 0.1]
+＠カズラドロップ
+……ようこそ第二のパパチェックへ。
+[k]
+
+＠カズラドロップ
+先程は円周率が導く完全性に惑わされた挙げ句に[r]はしたない暴食が出てしまいましたが、
+[k]
+
+＠カズラドロップ
+今回はそうはいきません。
+[k]
+
+[charaFace C 3]
+
+＠カズラドロップ
+粛々と、冷静に！
+[k]
+
+＠カズラドロップ
+[&アナタ:貴女]たちが完璧なパパであるかどうかを[r]判断させてもらいます！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠カドック
+望むところだ。それでは、ここは[line 3][r]勿論、と言っていいな。
+[k]
+
+＠カドック
+[%1]、頼む。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[se ad311]
+[cameraMove 0.5 0,0 1.05]
+[wt 0.5]
+[seStop ad311]
+[charaFaceFade C 15 0.2]
+[wt 1.8]
+[charaFaceFade C 0 0.1]
+[wt 0.2]
+
+＠カズラドロップ
+さ、さあ。今回のパパは、[r]私をどこにお出かけさせてくれるんですか？
+[k]
+
+？1：今回は[line 3]
+？2：なんと[line 3]
+？！
+
+[messageOff]
+[bgmStop BGM_MAP_85 1.2]
+[wt 1.2]
+
+？1：どこにも出かけません！
+？！
+
+[charaFace C 13]
+[wt 1.5]
+
+[charaFadeout C 0.2]
+[wt 1.0]
+[se ad311]
+[cameraMove 1.0 0,0 1.2]
+[wt 1.5]
+[seStop ad311]
+[wt 0.5]
+[se ade406]
+[wt 1.5]
+[fadeout white 1.0]
+[wait fade]
+[seStop ade406 1.5]
+[cameraHome 0.1]
+[scene 230000]
+[wt 1.5]
+[fadein white 2.0]
+[wait fade]
+
+[wt 1.0]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 0,0]
+[wt 0.7]
+[bgm BGM_GALATEA_1 0.1]
+？1：今日はこの家で
+？2：キミと一緒に双六をしたいと思います
+？！
+
+[charaFace C 15]
+
+＠カズラドロップ
+！！！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_GALATEA_1 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

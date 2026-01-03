@@ -1,0 +1,1206 @@
+
+
+＄94-13-66-20-4-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 2053000 1 ツタンカーメン]
+[charaSet B 2020000 1 イシュタル]
+[charaSet C 1098257310 1 ダ・ヴィンチ]
+[charaSet D 3056000 1 ゴッホ]
+[charaSet E 1098187100 1 エルメロイⅡ世]
+
+[charaSet F 1098157410 1 カエサル]
+[sceneSet G 232900 1]
+[charaSet H 1098306900 1 マンドリカルド]
+[sceneSet I 121900 1]
+[charaSet J 1098196510 1 織田信長]
+[sceneSet K 232200 1]
+[sceneSet L 232300 1]
+[charaSet M 3031000 1 哪吒]
+[sceneSet N 232100 1]
+[sceneSet O 232400 1]
+
+[imageSet R back10000 1 1]
+[charaScale R 1.3]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用]
+[charaSet X 98115000 1 エフェクト用]
+
+[charaPut S 2000,2500]
+[charaEffect S bit_talk_10_LowLevel]
+[charaPut T 2000,2500]
+[charaEffect T bit_sepia01_depth_fs]
+[charaPut U 2000,2500]
+[charaEffect U bit_talk_noise02]
+[charaEffect U bit_talk_noise02]
+[charaEffect U bit_talk_noise02]
+[charaPut V 2000,2500]
+[charaEffect V bit_talk_noise_gr]
+
+
+[cameraMove 0 0,0 1.01]
+
+[scene 231600]
+
+[fadein black 0.5]
+[wait fade]
+[wt 0.1]
+
+[se ad606]
+[charaPut W 0,50]
+[charaEffect W bit_talk_glowing_sphere_red]
+[wt 2.5]
+
+[charaPut W 2000,2500]
+[charaEffectStop W bit_talk_glowing_sphere_red]
+[wt 0.1]
+
+[seStop ad606 0.8]
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+＠ツタンカーメン
+３つ目の断片、入手してござりまする！[r]さあ、急ぎ見てまいりましょう、マスターどの！
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1188]
+[cueSeVolume 22_ad1188 0 0]
+[blur lens 0.6 4 1]
+[cueSeVolume 22_ad1188 0.4 0.7]
+[wt 1.5]
+
+[se ade410]
+[wipeout uzumaki 1.0 1.0]
+[cueSeStop 22_ad1188 1.0]
+[wait wipe]
+
+[blurOff lens 0.1]
+[charaFadeout A 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[wipein uzumaki 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 232500]
+
+[charaTalk depthOff]
+[charaDepth R 3]
+[charaDepth B 4]
+[charaDepth U 7]
+[charaDepth V 7]
+[charaDepth T 8]
+
+[charaPut R 1]
+[charaFadeTime R 0.1 0.6]
+
+[charaPut T 1]
+[charaPut U 1]
+
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.7]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_MAP_57 0.1]
+
+＠イシュタル
+うん、いいんじゃない？　[#霊障建築:ミステリーハウス]。[r]考えれば考えるほど、私たちの目的にピッタリ。
+[k]
+
+
+＠イシュタル
+アナタの[#吝嗇:ケ　チ]な微小特異点を核にして[r]『迷宮』を『増築』する。概念的な相性もバッチリだし、
+[k]
+
+＠イシュタル
+世界最大の幽霊屋敷に、最も血濡れた迷宮を重ねれば、[r]死霊をたっぷり内包する大規模特異点に育つでしょう。
+[k]
+
+
+
+[charaFace B 6]
+＠イシュタル
+え、邪魔が入りにくいように空中に創りたい？[r]いいんじゃない？　私の神殿の設計を貸してあげる。
+[k]
+
+[charaFace B 1]
+＠イシュタル
+で、特異点の増築を兼ねて『牝牛』のボディ制作を進め、[r]完成したら特異点全体を大・変・形！
+[k]
+
+[messageOff]
+[se ad192]
+[charaMoveReturn B 0,-7 0.3]
+[wt 0.4]
+[seStop ad192 0.1]
+[wt 0.6]
+
+[subCameraOn 3]
+
+[charaLayer V sub #A]
+[charaLayer W sub #B]
+[charaLayer X sub #C]
+
+[subCameraFilter #A through]
+[subCameraFilter #B through]
+[subCameraFilter #C through]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+
+[charaPut V 1]
+
+[se ad31]
+[seVolume ad31 0 0]
+
+[charaPut W 1]
+[charaEffect W bit_talk_noise_gr]
+[charaEffect W bit_sepia01_depth_fs]
+
+[charaPut X 1]
+[charaEffect X bit_talk_noise_gr]
+[charaEffect X bit_sepia01_depth_fs]
+
+＠イシュタル
+起動した『牝牛』は、特異点の死霊すべてを消化し、[r]それなりのサイズの聖杯が完成するって寸法ね。
+[k]
+
+[charaFace B 0]
+＠イシュタル
+そしたら聖杯はアナタに渡し、私は『牝牛』をもらう。[r]どう？　完璧な計画でしょ？
+[k]
+
+[charaFace B 7]
+＠イシュタル
+あ、そうそう。大型のラビリンスを維持するには、[r]それなりの[#生贄:イケニエ]が必要かもだから[line 3]
+[k]
+
+
+[subRenderFadein #A 2.0 0,0]
+
+[bgm BGM_MAP_57 2.0 0.8]
+[seVolume ad31 2.0 0.2]
+
+＠イシュタル
+アナタの微小特異点の縛りを使って、弱い英霊を[line 3][r]あと数体召喚すれば[line 3]
+[k]
+
+[charaFace B 8]
+＠イシュタル
+そいつらはあくまで[line 3]ビリンス維持のための[line 3][r]触媒だか[line 3]弱くていいし[line 3]
+[k]
+
+＠イシュタル
+ダイダロスは[line 3]アイデアが欲しいだけ[line 7][r]頭数が多いことは[line 3]歓迎するはず[line 3]
+[k]
+
+[subRenderFadein #B 1.5 0,0]
+[seVolume ad31 1.5 0.4]
+[bgm BGM_MAP_57 1.5 0.6]
+
+[charaFace B 11]
+＠イシュタル
+[line 3]にしても[line 3]ナタ[line 3]杯を手に入れて[line 3][r]何を願う気[line 3]かしら[line 3]
+[k]
+
+[charaFace B 16]
+＠イシュタル
+[line 3]は？　[line 3]んな話、聞いてないわ[line 3]！？
+[k]
+
+＠イシュタル
+そりゃあ、確かに私の守備範囲じゃない[line 3]でも[line 3][r][line 3]神の領分[line 3]いやまあ貴方は[line 3]だけど[line 3]
+[k]
+
+[subRenderFadein #C 1.0 0,0]
+[seVolume ad31 1.0 0.6]
+[bgm BGM_MAP_57 1.0 0.4]
+
+[charaFace B 14]
+＠イシュタル
+美の女神として私が許すべきじゃ[line 6][r][line 3]うーん[line 3]どうしよ[line 9]
+[k]
+
+[charaFace B 10]
+＠イシュタル
+[line 6]先送り[line 6]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 1.0]
+[seStop ad31 1.0]
+[bgmStop BGM_MAP_57 1.0]
+[wait fade]
+
+[charaPut T 2000,2500]
+[charaPut U 2000,2500]
+[charaEffectDestroy U bit_talk_noise02]
+
+[charaFadeout R 0.1]
+[charaFadeout B 0.1]
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[subRenderFadeout #C 0.1]
+[charaPut V 2000,2500]
+[charaPut W 2000,2500]
+[charaPut X 2000,2500]
+[charaEffectDestroy V bit_talk_noise_gr]
+[charaEffectDestroy W bit_talk_noise_gr]
+[charaEffectDestroy W bit_sepia01_depth_fs]
+[charaEffectDestroy X bit_talk_noise_gr]
+[charaEffectDestroy X bit_sepia01_depth_fs]
+[subCameraOff]
+[charaLayer V normal]
+[charaLayer W normal]
+[charaLayer X normal]
+[charaScale V 1.0]
+[charaScale W 1.0]
+[charaScale X 1.0]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout uzumaki 0.1 1.0]
+[wait wipe]
+
+[scene 231600]
+[wt 1.0]
+
+[wipein uzumaki 1.0 1.0]
+[wait wipe]
+[wt 0.6]
+
+？1：なんだか後半は……
+？2：ノイズがひどかった
+？！
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ツタンカーメン
+はいい。かすれたパピルスのようにて。[r]記憶が薄れていた？　あるいは、特に隠そうと……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaPut S 1]
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 1]
+＠ダ・ヴィンチ
+ひとまず、順を追って整理しよう。
+[k]
+
+[charaFace C 22]
+＠ダ・ヴィンチ
+まず、『記述』が力を持つ微小特異点が発生した。[r]そこにダイダロスが現界。
+[k]
+
+＠ダ・ヴィンチ
+ダイダロスは『記述』を用いることで、[r]現界ギリギリの弱い霊基でイシュタルを招き寄せた。
+[k]
+
+[charaFace C 35]
+＠ダ・ヴィンチ
+彼らは共謀し、最初の微小特異点を拡張する形で[r]特異点を再設計し……
+[k]
+
+＠ダ・ヴィンチ
+『増築』『迷宮』の相性の良さと、素材確保のため、[r][#霊障建築:ミステリーハウス]と[#大迷宮:ラビリンス]を重ねることにした。
+[k]
+
+[charaFace C 23]
+＠ダ・ヴィンチ
+素材とは、特異点にいた大量の死霊。
+[k]
+
+＠ダ・ヴィンチ
+これを費やして、『パーシパエーの牝牛』の建造コストと[r]より上質な聖杯の原料に充てる。
+[k]
+
+[charaFace C 22]
+＠ダ・ヴィンチ
+ビルダーたちの役目は、ダイダロスの着想源になることと、[r][#ラビリンスを象徴するための生贄]となること。
+[k]
+
+＠ダ・ヴィンチ
+ビルダーたちが増築を続けるだけで、特異点拡大と[r]『牝牛』制作が進むよう、巧妙に設計がされていた。
+[k]
+
+＠ダ・ヴィンチ
+戦力としてはハナから期待してなかったから、[r]徹底的に魔力を節約して、霊基を弱めておいた[line 3]
+[k]
+
+[charaFace C 0]
+＠ダ・ヴィンチ
+……うん、製階戦争の正体は大体見えたかな。
+[k]
+
+？1：まわりくどい……
+
+[charaFace C 36]
+＠ダ・ヴィンチ
+そうだねえ。黒幕はよほど回り道が好きなのか、[r]それとも回り道をするしかなかったのか……
+[k]
+
+？2：……ややこしい……
+
+[charaFace C 29]
+＠ダ・ヴィンチ
+ややこしいねえ！　黒幕はよほどのひねくれものだ！
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠ゴッホ
+待ってください、ビルダーさまがたが、[#生贄:イケニエ]？[r]ラビリンスを象徴する？　全然ピンときませんが……
+[k]
+
+
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠エルメロイⅡ世
+つまるところ、この[#霊障建築:ミステリーハウス]では、ギリシャの[r][#大迷宮:ラビリンス]と比較して神秘が[#足りない]のだ。
+[k]
+
+＠エルメロイⅡ世
+特異点の特性をフル活用したところで、[r]所詮は近代の建築物だ。
+[k]
+
+＠エルメロイⅡ世
+神秘という側面ではダイダロスの迷宮に及びもつかない。[r]だから照応魔術の理論を応用した。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk D]
+[charaFace D 27]
+[charaFadein D 0.1 1]
+＠ゴッホ
+照応……魔術。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠エルメロイⅡ世
+簡単に言うなら、異なる二つの概念を結びつけて、[r]その力を『似ている』という意味で利用するものだ。
+[k]
+
+＠エルメロイⅡ世
+形式的な要素を加えて、近似的な関係にする……。
+[k]
+
+＠エルメロイⅡ世
+つまり、[#霊障建築:ミステリーハウス]に[r][#大迷宮:ラビリンス]のモチーフを集めることで[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+＠ダ・ヴィンチ
+[#霊障建築:ミステリーハウス]が[#大迷宮:ラビリンス]に照応するようにした、[r]という訳だね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠エルメロイⅡ世
+そういう訳だ。モチーフにサーヴァントを用いたから、[r]イシュタルは[#生贄:イケニエ]と表現したのだろう。
+[k]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+[charaFace E 0]
+＠エルメロイⅡ世
+……長くなったが、それぞれのサーヴァントが[r]何を象徴する[#生贄:イケニエ]だったかは、次のように解析済みだ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subCameraOn 1]
+
+[charaLayer F sub #A]
+[charaLayer H sub #A]
+[charaLayer J sub #A]
+[charaLayer B sub #A]
+[charaLayer M sub #A]
+[charaLayer G sub #A]
+[charaLayer I sub #A]
+[charaLayer K sub #A]
+[charaLayer L sub #A]
+[charaLayer N sub #A]
+
+[subCameraFilter #A normal]
+
+[subRenderScale #A 1.01]
+
+[subRenderDepth #A 1]
+
+[charaDepth G 1]
+[charaDepth F 2]
+[charaDepth I 3]
+[charaDepth H 4]
+[charaDepth K 5]
+[charaDepth J 6]
+[charaDepth L 7]
+[charaDepth B 8]
+
+[charaScale F 1.2]
+[charaScale G 1.2]
+[charaFace F 0]
+[charaFadein F 0 200,0]
+[charaFadein G 0 -100,-260]
+
+
+[subRenderFadein #A 0.8 0,0]
+[wt 1.0]
+
+[bgm BGM_REQUIEM 0.1]
+
+＠エルメロイⅡ世
+[#半神:ヒーロー]。
+[k]
+
+[messageOff]
+[charaScale H 1.2]
+[charaScale I 1.2]
+[charaFace H 0]
+[charaFadein H 0.8 -200,0]
+[charaFadein I 0.8 100,-260]
+[wt 1.0]
+
+＠エルメロイⅡ世
+[#王:キング]。
+[k]
+
+[messageOff]
+[charaScale J 1.2]
+[charaScale K 1.2]
+[charaFace J 17]
+[charaFadein J 0.8 200,0]
+[charaFadein K 0.8 -100,-260]
+[wt 1.0]
+
+＠エルメロイⅡ世
+[#定命者:モ ー タ ル]。
+[k]
+
+[messageOff]
+[charaScale B 1.2]
+[charaScale L 1.2]
+[charaFace B 0]
+[charaFadein B 0.8 -200,0]
+[charaFadein L 0.8 100,-260]
+[wt 0.8]
+
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+[charaFadeout J 0.1]
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+[charaFadeout K 0.1]
+[wt 0.2]
+
+
+＠エルメロイⅡ世
+[#強壮なる牛:マ イ テ ィ ・ ブ ル]。
+[k]
+
+[messageOff]
+
+[charaDepth L 1]
+[charaDepth B 2]
+[charaDepth N 3]
+[charaDepth M 4]
+
+[charaScale M 1.2]
+[charaScale N 1.2]
+[charaFace M 0]
+[charaFadein M 0.8 200,0]
+[charaFadein N 0.8 -100,-260]
+[wt 0.5]
+
+[charaSet F 7028000 1 バニヤン]
+[sceneSet G 112000 1]
+[charaSet H 3053001 1 ブリトマート]
+[sceneSet I 107901 1]
+[wt 0.1]
+
+[charaLayer F sub #A]
+[charaLayer H sub #A]
+[charaLayer G sub #A]
+[charaLayer I sub #A]
+[charaDepth G 5]
+[charaDepth F 6]
+[charaDepth I 7]
+[charaDepth H 8]
+
+＠エルメロイⅡ世
+[#超絶技術:マジカルテック]。
+[k]
+
+[messageOff]
+[charaScale F 1.2]
+[charaScale G 1.2]
+[charaFace F 0]
+[charaFadein F 0.8 -200,0]
+[charaFadein G 0.8 100,-260]
+[wt 1.0]
+
+＠エルメロイⅡ世
+[#両刃斧:ラブリュス]。
+[k]
+
+[messageOff]
+[charaScale H 1.2]
+[charaScale I 1.2]
+[charaFace H 1]
+[charaFadein H 0.8 200,0]
+[charaFadein I 0.8 -100,-260]
+[wt 1.0]
+
+＠エルメロイⅡ世
+そして……[#怪物:モンスター]だ。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.6]
+[wt 0.6]
+[charaFadeout B 0]
+[charaFadeout M 0]
+[charaFadeout F 0]
+[charaFadeout H 0]
+[charaFadeout L 0]
+[charaFadeout N 0]
+[charaFadeout G 0]
+[charaFadeout I 0]
+[wt 0.2]
+[subCameraOff]
+[charaLayer J normal]
+[charaLayer B normal]
+[charaLayer M normal]
+[charaLayer F normal]
+[charaLayer H normal]
+[charaLayer K normal]
+[charaLayer L normal]
+[charaLayer N normal]
+[charaLayer G normal]
+[charaLayer I normal]
+[charaScale J 1.0]
+[charaScale B 1.0]
+[charaScale M 1.0]
+[charaScale F 1.0]
+[charaScale H 1.0]
+[charaScale K 1.0]
+[charaScale L 1.0]
+[charaScale N 1.0]
+[charaScale G 1.0]
+[charaScale I 1.0]
+
+[charaSet F 3053001 1 ブリトマート]
+[charaFilter F silhouette 00000080]
+[sceneSet G 147700 1]
+
+[charaTalk on]
+＠エルメロイⅡ世
+牛も斧も、極めて強いシンボルだ。加えてダイダロスの[r]超絶技術、ミノス王、半神と人間と怪物の対比……
+[k]
+
+＠エルメロイⅡ世
+この７つが重なることで、『クレタ島』[line 3][r]ギリシャ南海の神秘の島が表現されている。
+[k]
+
+＠エルメロイⅡ世
+『クレタ島』が成立したからこそ、底なしのラビリンス[r]などという無理が通っている、というわけだ。
+[k]
+
+＠エルメロイⅡ世
+このことを鑑みれば、[r]ビルダー・哪吒の不可解なパワーアップにも説明がつく。
+[k]
+
+[messageOff]
+[subCameraOn 1]
+[charaLayer O sub #A]
+[charaLayer M sub #A]
+[charaLayer T sub #A]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+
+[charaTalk off]
+[charaDepth O 3]
+[charaDepth M 4]
+[charaDepth T 8]
+[charaScale M 1.01]
+[charaScale O 1.01]
+
+[charaPut T 1]
+
+[charaFace M 2]
+[charaFadein M 0 0,0]
+[charaFadein O 0 0,-200]
+[subRenderFadein #A 0.7 0,0]
+[wt 0.7]
+[charaFadeout E 0.1]
+[charaPut S 2000,2500]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+[wt 0.2]
+
+＠エルメロイⅡ世
+哪吒は[#超絶技術:マジカルテック]の象徴。それが技術を行使することは、[r]『棟梁』ダイダロスが腕前をふるうことに相当する。
+[k]
+
+＠エルメロイⅡ世
+だからこそあの無茶な試みは、『このクレタ島』に限り、[r]自己改造の儀式として効果を発揮したのだろう。
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaTalk M,D]
+[subRenderFadeout #A 0.7]
+[wt 0.7]
+[charaPut T 2000,2500]
+[charaFadeout M 0.1]
+[charaFadeout O 0.1]
+[charaScale M 1.0]
+[charaMove M 50,0 0.1]
+[charaMove O -50,-260 0.1]
+
+＠ゴッホ
+……う、う～ん？　その説明はともかく……[r]モンスター、ですか？　華麗なブリトマートさまが？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaLayer T normal]
+[charaLayer M normal]
+[charaLayer O normal]
+[subCameraOff]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ツタンカーメン
+はいい。[r]他も全体的に、こじつけじみて聞こえまする。
+[k]
+
+＠ツタンカーメン
+そも、ギリシャの島を再現するならば、[r]ギリシャの英霊がたを[#喚:よ]ぶのが最適解のはずでは？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+２人の疑問はもっともだ。この儀式は明らかに、[r][#ギリシャを使わずにクレタ島を表す]ことにこだわってる。
+[k]
+
+[charaFace C 23]
+＠ダ・ヴィンチ
+これは凄まじい非合理だ。もちろん弊害もある。[r]おそらくブリトマートがいなければ儀式は成立してない。
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[subCameraOn 2]
+
+[charaLayer T sub #A]
+[charaLayer F sub #A]
+[charaLayer G sub #A]
+
+[charaLayer H sub #A]
+[charaLayer I sub #A]
+
+[subCameraFilter #A normal]
+
+[subRenderScale #A 1.01]
+
+[subRenderDepth #A 1]
+
+[charaDepth I 2]
+[charaDepth H 3]
+[charaDepth G 4]
+[charaDepth F 5]
+
+[charaScale F 1.2]
+[charaScale G 1.2]
+
+[charaPut T 1]
+
+[charaFace F 0]
+[charaFadein F 0 -50,0]
+[charaFadein G 0 -50,-260]
+
+[charaScale H 1.2]
+[charaScale I 1.2]
+
+[charaFace H 8]
+[charaFadein H 0 80,0]
+[charaFadein I 0 80,-260]
+
+[subRenderFadein #A 0.8 0,0]
+[charaMove F -10,0 30.0]
+[charaMove G -10,-260 30.0]
+[wt 1.0]
+
+＠ダ・ヴィンチ
+……ブリトマートという騎士の『名前』のルーツは、[r]実はクレタ島にある。
+[k]
+
+＠ダ・ヴィンチ
+その名も『[#甘やかな乙女:ブ  リ  ト  マ  ル  テ  ィ  ス]』。[r]名前に反し恐るべき容姿と力を持つ、女神または怪物だ。
+[k]
+
+＠ダ・ヴィンチ
+彼女は古代のクレタ島一円を恐怖と暴力で支配した。[r]あえての可憐な名は、怒りを少しでも[#宥:なだ]めるためかな。
+[k]
+
+[messageOff]
+[charaMove H 40,0 30.0]
+[charaMove I 40,-260 30.0]
+[charaFadeout F 1.0]
+[charaFadeout G 1.0]
+[wt 1.0]
+[wt 0.2]
+
+＠ダ・ヴィンチ
+……彼女、なぜか火に襲われるだろ？[r]多分あれは、『ミノア噴火』の再現なんだ。
+[k]
+
+＠ダ・ヴィンチ
+古代のクレタ島で栄えたミノア文明に[r]大きな打撃を与えた、3600年前の大噴火……
+[k]
+
+＠ダ・ヴィンチ
+彼女自身がクレタ島の大黒柱にされたため、[r]島が受けた災厄も概念的に再現された……と推測される。
+[k]
+
+[messageOff]
+[charaFace C 0]
+
+[subRenderFadeout #A 0.7]
+[wt 0.7]
+[charaPut T 2000,2500]
+[charaEffectDestroy T bit_sepia01_depth_fs]
+[charaFadeout F 0]
+[charaFadeout H 0]
+[charaFadeout G 0]
+[charaFadeout I 0]
+[wt 0.2]
+[subCameraOff]
+[charaLayer T normal]
+[charaLayer F normal]
+[charaLayer H normal]
+[charaLayer G normal]
+[charaLayer I normal]
+[charaScale T 1.0]
+[charaScale F 1.0]
+[charaScale H 1.0]
+[charaScale G 1.0]
+[charaScale I 1.0]
+
+[charaSet F 1098157410 1 カエサル]
+[charaSet H 1098306900 1 マンドリカルド]
+[sceneSet G 231600 1]
+[sceneSet I 231600 1]
+[sceneSet K 231600 1]
+[charaSet L 7028000 1 バニヤン]
+[charaSet N 3053001 1 ブリトマート]
+
+[charaTalk on]
+＠ダ・ヴィンチ
+というわけで……ブリトマート本人は全く関係ないのに、[r]名前と、[#妖精騎士:ひ  と  で  な  い]という特異性がジャストフィット。
+[k]
+
+＠ダ・ヴィンチ
+[#怪物:モンスター]というシンボルとして、[r]『クレタ島』を成立させる中核になったってわけさ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠ツタンカーメン
+成る……程に。
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_REQUIEM 0.8 0.5]
+[wait wipe]
+
+[charaTalk off]
+[subCameraOn 2]
+
+[charaLayer J sub #A]
+[charaLayer N sub #A]
+[charaLayer G sub #A]
+
+[charaLayer T sub #B]
+[charaLayer H sub #B]
+[charaLayer M sub #B]
+[charaLayer L sub #B]
+[charaLayer I sub #B]
+
+[subCameraFilter #A normal]
+[subCameraFilter #B normal]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+
+[charaDepth G 2]
+[charaDepth J 4]
+[charaDepth F 3]
+[charaDepth N 5]
+
+[charaScale G 1.2]
+[charaFace F 0]
+[charaFace N 0]
+[charaFace J 12]
+[charaFadein N 0 260,-50]
+[charaFadein J 0 -270,-50]
+[charaFadein G 0 -100,-260]
+
+[charaDepth I 2]
+[charaDepth H 3]
+[charaDepth M 4]
+[charaDepth L 5]
+[charaDepth T 8]
+
+[charaScale I 1.2]
+[charaFace H 0]
+[charaFace M 0]
+[charaFace L 1]
+[charaFadein H 0 -450,-50]
+[charaFadein M 0 250,-50]
+[charaFadein L 0 -100,-75]
+[charaFadein I 0 0,-260]
+
+
+[subRenderFadein #A 0.1 0,0]
+
+[pictureFrameTop cut063_cinema]
+[wt 0.6]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaDepth K 2]
+[charaDepth D 3]
+[charaDepth A 3]
+[charaDepth C 3]
+[charaDepth S 8]
+
+[charaScale K 1.2]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+[charaFadein K 0.1 -100,-260]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaMoveReturn J -270,-58 0.4]
+[wt 0.4]
+[charaMoveReturn J -270,-58 0.4]
+[wt 0.8]
+
+[charaFace N 3]
+[charaMoveReturn N 260,-58 0.5]
+[wt 1.1]
+
+
+[subRenderFadein #B 0.4 0,0]
+[charaMoveEase L 0,-75 0.6 easeOutSine]
+[charaMoveEase M 350,-50 0.6 easeOutSine]
+[charaMoveEase H -350,-50 0.6 easeOutSine]
+[charaMoveEase I 100,-260 0.6 easeOutSine]
+[wt 0.6]
+[subRenderFadeout #A 0.1]
+[wt 0.3]
+
+[charaFace L 8]
+[charaMoveReturn L 0,-65 0.35]
+[wt 0.35]
+[charaMoveReturn L 0,-65 0.35]
+[wt 0.7]
+
+[charaPut T 325,-25]
+[charaEffect T bit_talk_comic_shock]
+[charaFace M 9]
+[charaShake M 0.02 3 3 0.3]
+[wt 1.0]
+
+[charaFace H 1]
+[charaMoveReturn H -350,-58 0.5]
+[wt 1.1]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+
+[subRenderFadeout #B 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+[charaEffectDestroy T bit_talk_comic_shock]
+[charaFadeout G 0]
+[charaFadeout I 0]
+[charaFadeout H 0]
+[charaFadeout M 0]
+[charaFadeout L 0]
+[charaFadeout J 0]
+[charaFadeout N 0]
+[wt 0.2]
+[subCameraOff]
+[charaLayer T normal]
+[charaLayer H normal]
+[charaLayer L normal]
+[charaLayer J normal]
+[charaLayer N normal]
+[charaLayer H normal]
+[charaLayer G normal]
+[charaLayer I normal]
+[charaScale T 1.0]
+[charaScale H 1.0]
+[charaScale J 1.0]
+[charaScale L 1.0]
+[charaScale M 1.0]
+[charaScale N 1.0]
+[charaScale G 1.0]
+[charaScale I 1.0]
+
+[pictureFrameTop]
+[wt 0.3]
+
+[bgm BGM_REQUIEM 0.8 1.0]
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk on]
+＠ゴッホ
+ビルダーのみなさまは、これをご存じなんですかね……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠ツタンカーメン
+分かりませぬが、言わぬがよいかと。
+[k]
+
+[charaFace A 11]
+＠ツタンカーメン
+しかし、なんとも微妙、絶妙なバランスに感じまする。[r][#己:うぬ]がキャスターでも、成立させる自信はありませぬ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk C]
+[charaFace C 36]
+[charaFadein C 0.1 1]
+＠ダ・ヴィンチ
+私だってそうさ。エルメロイⅡ世に言わせれば、[r]端的に神業、あるいは悪夢的な偶然の産物だろうってさ。
+[k]
+
+[charaFace C 0]
+＠ダ・ヴィンチ
+ともかく、儀式のネタが割れた以上、対策も検討中だ。[r]成果は少し待ってね、[%1][&君:ちゃん]。
+[k]
+
+[messageOff]
+[cameraMoveEase 0,8 0.4 easeOutSine 1.01]
+[wt 0.55]
+[cameraMoveEase 0,0 0.4 easeOutSine 1.01]
+[wt 1.1]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠ゴッホ
+……ところで、ダイダロスの願いは何だったのでしょう？[r]イシュタルさまは不本意げでしたが……[bgmStop BGM_REQUIEM 1.5]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠ツタンカーメン
+いえ、あれはそうでは[line 3]
+[k]
+
+[messageOff]
+[subCameraOn 2]
+
+[charaLayer S sub #A]
+[charaLayer T sub #A]
+[charaLayer C sub #A]
+[charaLayer G sub #A]
+
+[charaLayer D sub #B]
+[charaLayer I sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask10 5 255,255,255,255]
+[subCameraFilter #B normal]
+
+[subRenderScale #B 1.01]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaDepth G 2]
+[charaDepth C 3]
+[charaDepth S 4]
+[charaDepth T 8]
+[charaDepth U 9]
+
+[charaScale G 1.2]
+
+[charaPutFSL S -50,225]
+[charaTalk C]
+[charaFace C 36]
+[charaFadeinFSL C 0 -50,225]
+[charaFadein G 0 200,0]
+
+[charaFace D 8]
+[charaFadein D 0 1]
+[charaFadein I 0 0,-200]
+
+[subRenderFadein #A 0.4 -475,-250]
+[subRenderMoveEase #A -225,-250 0.6 easeOutSine]
+[charaMoveEaseFSR A 225,0 0.6 easeOutSine]
+[charaMoveEase K 100,-260 0.6 easeOutSine]
+[wt 0.7]
+[bgm BGM_EVENT_2 0.1]
+
+＠ダ・ヴィンチ
+っと、ツタン！　そこはまだ内緒にしてくれるかな！？[r]これこれこういう事情でさ！
+[k]
+
+
+[messageOff]
+[charaTalk C,A]
+[cueSe SE_21 21_ad1108]
+[charaPutFSL T -50,225]
+[charaEffect T bit_talk_easy_spell_r]
+[wt 1.1]
+
+[cueSeStop 21_ad1108 2.0]
+[charaPutFSR U 225,0]
+[charaEffect U bit_talk_easy_spell_r]
+[wt 2.2]
+
+[charaFace A 4]
+＠ツタンカーメン
+ほ……そういうものにござりまするか？[r]ううん、[#己:うぬ]にはよく分かりませぬが、承知にて。
+[k]
+
+[messageOff]
+[charaTalk D,A]
+[subRenderFadein #B 0.6 0,0]
+[wt 0.6]
+[charaFadeout A 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+＠ゴッホ
+あー！　なんですかその魔術師だけわかるやつみたいな！[r]ずるい！　寂しい！！
+[k]
+
+＠ゴッホ
+マスターさま、会話しましょう！　アルクラの隠語で！[r]このハードコアなバイオームはSMPで乗り切らねばー！
+[k]
+
+？1：分からん……
+？2：自分もまだまだニワカなのです……
+？！
+
+[messageOff]
+[charaFaceFade D 10 0.2]
+[wt 1.6]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

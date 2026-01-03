@@ -1,0 +1,816 @@
+
+
+＄04-00-02-10-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098270600 1 ラニ＝Ｋ1]
+[charaSet B 1098270600 1 ラニ＝Ｋ2]
+[charaSet C 1098270600 1 ラニ＝Ｋ3]
+[charaSet D 1098270000 1 シオン]
+[charaSet E 6037001 1 カーマ]
+[charaSet F 1098270300 1 アーユス]
+[charaSet G 7046001 1 ドゥリーヨダナ]
+[charaSet H 1098270700 1 ラニ＝Ｔ1]
+[charaSet I 1098270700 1 ラニ＝Ｔ2]
+[charaSet J 1098269910 1 マキリ]
+[charaSet K 1098269400 1 高長恭]
+[charaSet L 1098269400 1 高長恭（演出用）]
+[charaSet M 1098271200 1 刻印蟲1]
+[charaSet N 1098271200 1 刻印蟲2]
+[charaSet O 1098271200 1 刻印蟲3]
+[charaSet U 1098271200 1 刻印蟲3]
+
+[charaSet P 1098269400 1 高長恭（シルエット）]
+[charaFilter P silhouette A5000080]
+
+
+[sceneSet Q 189900 1]
+[charaScale Q 1.3]
+
+[sceneSet R 189900 1]
+[charaScale R 1.3]
+
+[imageSet S back10000 1 1]
+[charaScale S 1.3]
+
+[charaSet T 98115000 1 エフェクト用ダミー]
+
+
+[scene 189900]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_104 1.5]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth Q 1]
+[charaDepth A 2]
+[charaDepth B 3]
+[charaDepth C 4]
+[charaDepth R 5]
+
+[charaFadein Q 0.7 100,-250]
+[charaMove Q 150,-250 0.7]
+[wt 0.85]
+
+[se ad95]
+[wt 0.05]
+[se ade422]
+[charaFace A 0]
+[charaFace B 1]
+[charaFadein A 0.4 0,0]
+[charaFadein B 0.4 -200,0]
+[charaMove A -200,0 2.0]
+[charaMove B -400,0 2.0]
+[wt 1.2]
+[se ade423]
+[charaFadein C 0.4 400,0]
+[charaMove C 100,0 2.0]
+[wt 0.4]
+
+[seStop ade422 1.0]
+[seStop ad95 1.0]
+[charaFadeout A 0.4]
+[charaFadeout B 0.4]
+[wt 0.8]
+
+[seStop ade423 1.0]
+[wt 0.4]
+[charaFadeout C 0.4]
+[wt 0.6]
+
+[charaDepth A 6]
+[charaDepth B 7]
+[charaDepth C 8]
+
+[charaFadein R 0.7 -100,-250]
+[charaMove R -150,-250 0.7]
+
+[charaFace A 0]
+[charaFadein A 0.7 400,0]
+[charaMove A 350,0 0.65]
+[wt 0.7]
+[charaFadeout Q 0.1]
+[wt 0.2]
+
+[se ad95]
+[wt 0.4]
+[charaFace B 0]
+[charaFadein B 0.4 100,0]
+[wt 0.4]
+[seStop ad95 0.2]
+[wt 0.4]
+[charaFace B 1]
+[charaMoveReturn B 100,-7 0.5]
+[wt 0.8]
+[charaFace A 2]
+[charaMoveReturn A 350,-7 0.5]
+[wt 0.9]
+
+[se ade422]
+[se ad95]
+[charaMove A 300,0 0.4]
+[charaMove B 50,0 0.4]
+[charaFadeout A 0.4]
+[charaFadeout B 0.4]
+[seStop ade422 1.2]
+[seStop ad95 1.2]
+[wt 1.4]
+
+
+[charaFadeout R 0.6]
+[wt 1.0]
+
+？1：アーユスたち、本当にこっちに？
+？！
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠シオン
+[#追跡子:ト レ ー サ ー]の反応ではそうです。
+[k]
+
+＠シオン
+吹っ飛ばされたところから動いて[r]こちらに来たようですね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+＠カーマ
+なんで勝手に動くんですかね。[r]面倒臭ーい。
+[k]
+
+[charaFace E 0]
+＠カーマ
+っと、あれでは？
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_104 1.0 0.5]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_104 1.0 1.0]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠アーユス
+あっ！　よかった、無事だったのね！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠シオン
+そちらこそ。[r]ですが、どうしてこのようなところに？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠アーユス
+ゴメンね。飛ばされた場所からあんまり動くつもりは[r]なかったんだけど、バーサーカーが……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+＠ドゥリーヨダナ
+腹が減った！　何やら美味そうな匂いがした！[r]ならばそっちに行って当然だろう。もぐもぐ。
+[k]
+
+？1：そう言えばここ、屋台みたいなのが多いね
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠アーユス
+うん。元々は、なんていうか『四角いのをくれる』[r]『丸いのをくれる』『量が違う』
+[k]
+
+＠アーユス
+程度の違いのお店しかなかったんだけど。
+[k]
+
+＠アーユス
+最近は『料理』が流行ってるからか、[r]ここもいろいろ進化してるわね。
+[k]
+
+[charaFace F 1]
+
+＠アーユス
+見たこともないマテリアルの加工が……！
+[k]
+
+[charaFace F 7]
+＠アーユス
+あっ、何それバーサーカー！[r]美味しそう、一口！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠ドゥリーヨダナ
+むう、欲しいのか？
+[k]
+
+[charaFace G 3]
+＠ドゥリーヨダナ
+そうかー。[wt 0.4][charaMoveReturn G 0,-8 0.25]（ぱくー）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠アーユス
+あー！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMove F -80,0 0.3]
+[charaFadeout F 0.3]
+[wt 0.4]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth F 2]
+
+[charaFace G 12]
+[charaFadein G 0.1 1]
+[wt 0.2]
+
+[charaFace F 8]
+[charaFadein F 0.3 350,0]
+[charaMove F 300,0 0.3]
+[wt 0.4]
+
+[charaTalk on]
+[cueSe SE_23 23_ade838]
+[charaMoveReturn F 270,0 0.3]
+＠ドゥリーヨダナ
+コラコラ、食い意地がはっておるな。[wt 0.2][cueSeStop 23_ade838 0.12][wt 0.1][charaMoveReturn F 270,0 0.3][wt 0.05][cueSe SE_23 23_ade838][wt 0.1][cueSeStop 23_ade838 0.12][r]ぽかぽか殴るのは止めーい。
+[k]
+
+[charaFace F 7]
+＠アーユス
+ど[messageShake 0.05 4 3 0.4]っちがー！？
+[k]
+
+[charaFace G 0]
+＠ドゥリーヨダナ
+おまえも買ってくればよかろう。[r]止めんぞ。
+[k]
+
+？1：ラニメントで買うのかな？
+？！
+
+[charaFace F 0]
+＠アーユス
+あ、うん。そうよ。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠カーマ
+ラニメントを払って、ラニメントが少量含まれてる[#料理:マテリアル]を[r]買うのって何か損してません？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠アーユス
+ラニメント目当てならそうね。でも私たちにとっては、[r]ＡＩとしての構造体を維持するって効果があるから。
+[k]
+
+[charaFace F 2]
+＠アーユス
+バーサーカーは、ラニメントを払って料理を買っても[r]あんまり意味ないでしょうに。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠ドゥリーヨダナ
+知るか！　わし様は食いたいと思ったら食うだけだ！
+[k]
+
+[charaFace G 0]
+＠ドゥリーヨダナ
+……ところで、ここはどういう場所なのだ？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠アーユス
+それよ。言おうと思ったのに[r]勝手に買い食いに走っちゃうんだもの。
+[k]
+
+[charaFace F 0]
+＠アーユス
+ここは[#維持部:キ　ー　プ]エリアの端っこよ。[#維持部のＡＩ:タ　　 イ　　 プ　　 Ｋ]が[r]店にいるんだからわかるでしょ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+＠ドゥリーヨダナ
+何……[#維持部:キ　ー　プ]ということは、ランサーのところか……！？
+[k]
+
+[charaFace G 6]
+＠ドゥリーヨダナ
+それを早く言わんか！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth Q 1]
+[charaDepth A 2]
+[charaDepth B 3]
+[charaDepth C 4]
+[charaDepth H 5]
+[charaDepth I 6]
+
+[charaFadein Q 0.8 -30,-225]
+[charaMove Q 30,-225 10,0]
+[wt 0.8]
+
+[se ad95]
+[seVolume ad95 0 0]
+[wt 0.05]
+[se ade422]
+[seVolume ade422 0 0]
+[seVolume ad95 0.6 0.4]
+[seVolume ade422 0.6 0.4]
+
+[charaFace A 0]
+[charaFadein A 0.4 -100,0]
+[charaMove A -250,0 1.2]
+[wt 0.8]
+[charaFadeout A 0.4]
+[wt 0.4]
+
+[cueSe SE_23 23_ad1297]
+[cueSeVolume 23_ad1297 0 0]
+[cueSeVolume 23_ad1297 0.4 0.5]
+[charaShake H 0.05 1 2 0]
+[charaFace H 0]
+[charaFadein H 0.4 400,0]
+[charaMove H 100,0 1.6]
+[wt 0.8]
+
+[charaFace B 2]
+[charaFace C 1]
+[charaFadein B 0.4 350,0]
+[charaFadein C 0.4 50,0]
+[charaMove B 1 2.8]
+[charaMove C -300,0 2.8]
+[wt 0.4]
+[cueSeStop 23_ad1297 1.0]
+[charaFadeout H 0.4]
+[wt 0.4]
+
+[cueSe SE_23 23_ad1298]
+[cueSeVolume 23_ad1298 0 0]
+[cueSeVolume 23_ad1298 0.4 0.5]
+[charaFace I 3]
+[charaFadein I 0.4 50,0]
+[charaMove I -450,0 1.6]
+[wt 0.8]
+[wt 0.4]
+[cueSeStop 23_ad1298 1.0]
+[charaFadeout I 0.4]
+[wt 0.2]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+
+[cueSe SE_23 23_ad1297]
+[cueSeVolume 23_ad1297 0 0]
+[cueSeVolume 23_ad1297 0.4 0.5]
+[charaFace H 0]
+[charaFadein H 0.4 400,0]
+[charaMove H 100,0 1.2]
+[wt 0.8]
+[cueSeStop 23_ad1297 1.0]
+[charaFadeout H 0.4]
+[wt 0.4]
+
+[seStop ad95 0.8]
+[seStop ade422 0.8]
+[charaShakeStop A]
+[charaShakeStop B]
+[charaFadeout Q 0.8]
+[wt 1.0]
+
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠シオン
+今のところランサーの姿は見当たりませんが。
+[k]
+
+＠シオン
+用がないのであれば刺激しないうちに[r]このエリアを離れたほうがいいのは確かです。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠アーユス
+そうね、今後の方針を決めなくちゃ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠カーマ
+別にいいんですけど、一ついいです？
+[k]
+
+＠カーマ
+何だか妙にここにいるＡＩの種類が偏っているような[r]気がしますが、こんなものなんですかね。
+[k]
+
+＠カーマ
+[#維持部のＡＩ:タ　　 イ　　 プ　　 Ｋ]はともかく[r][#移送部のＡＩ:タ　　 イ　　 プ　　 Ｔ]もやたら多いような。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠アーユス
+……？　言われてみればそうね。
+[k]
+
+＠アーユス
+特にタイプＴだけ構造体が摩耗しやすいとか[r]そういうことはないはずだけど……なんでかしら？
+[k]
+
+[bgmStop BGM_EVENT_104 1.5]
+
+＠J：？？？
+さて、何故かのう？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.15]
+
+
+[se ad452]
+[wt 0.4]
+[seStop ad452 0.2]
+[wt 0.2]
+
+[se ad452]
+[cueSeVolume ad452 0 0]
+[wt 0.5]
+[cueSeVolume ad452 0.1 1.0]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.4 1]
+[wt 0.4]
+[seStop ad452 0.2]
+[wt 1.0]
+
+[bgm BGM_EVENT_71 0.1]
+
+？1：キャスターの……！
+？！
+
+＠マキリ
+[#今は]、違う。
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+
+[se ade428]
+[charaTalk K]
+[charaFace K 4]
+[charaFadein K 0.4 1]
+[wt 0.4]
+[seStop ade428 0.2]
+[wt 0.6]
+
+[charaFace K 6]
+＠高長恭
+ぐ……[wt 0.6]か[messageShake 0.05 4 3 0.3]ッ……！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠カーマ
+……ライダー。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠シオン
+あの大術式砲を生き延びただけでなく、[r]サーヴァントまで奪っているとは。
+[k]
+
+[charaFace D 8]
+＠シオン
+どのような経緯でそうなったのか興味はありますが、[r]おそらく、それを聞く機会は訪れないでしょう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+＠マキリ
+その通り。話や食事をするために[r]儂はここを訪れたのではない。
+[k]
+
+[charaFace J 2]
+＠マキリ
+クカカ、キャスターの無限の怪物はもはや失われたが、[r]儂の力は[#此奴:ライダー]とも相性がよいものであった。
+[k]
+
+[charaFace J 0]
+＠マキリ
+ホレ動け、ライダー。[#蟲:むし]が貴様を支えておる。[r][#溢:あふ]れんばかりの力があるはずじゃぞ？
+[k]
+
+＠マキリ
+正確には、より少ないラニメントで今まで以上の[r]稼働効率が出せるよう霊基を弄ったのだがな。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 6]
+[charaFadein K 0.1 1]
+＠高長恭
+……ッ……！
+[k]
+
+[messageOff]
+[charaMove K 0,-7 0.6]
+[se adm37]
+[wt 1.8]
+
+[charaFace K 7]
+＠高長恭
+逃げ、ろ……もはや、私は……！[r]いや、この男、は……！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+＠マキリ
+無駄話はよい。[#啼:な]け、蟲！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_71 1.5]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth K 1]
+[charaDepth P 2]
+[charaDepth L 3]
+[charaDepth M 6]
+[charaDepth N 5]
+[charaDepth O 4]
+
+[charaPut P 1]
+
+[charaFace K 6]
+[charaFadein K 0.1 1]
+[wt 0.2]
+
+[cueSe SE_23 23_ad1286]
+[cueSeVolume 23_ad1286 0 0]
+[cueSeVolume 23_ad1286 0.3 1.0]
+[charaFadeTime P 0.6 0.6]
+[wt 0.1]
+[charaShake K 0.02 2 2 1.0]
+[charaShake P 0.02 2 2 1.0]
+[wt 0.5]
+[cueSeStop 23_ad1286 0.9]
+[charaFadeout P 0.6]
+[wt 1.0]
+
+[se ad231]
+[charaScale L 1.2]
+[charaFace L 6]
+[charaFadein L 0 0,25]
+[charaFadeout L 0.8]
+[wt 1.2]
+
+[charaFace K 7]
+[se ad1006]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaMoveScale K 1.1 0.25]
+[charaMove K 0,12 0.25]
+[charaFadeout K 0.25]
+[wt 0.25]
+[blurOff motion 0.1]
+[wt 0.4]
+
+[se ad85]
+[effect bit_talk_x_slash01]
+[wt 0.6]
+
+[se ad32]
+[wt 0.05]
+[se ad1014]
+[fowardEffect bit_talk_14]
+
+[se ad671]
+[charaScale G 1.1]
+[charaFace G 6]
+[charaFadein G 0.1 0,15]
+[charaMove G 1 0.3]
+[charaShake G 0.02 3 3 0.6]
+[charaMoveScale G 1.0 0.3]
+[seStop ad671 0.8]
+[wt 1.2]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaDepth M 1]
+[charaDepth N 2]
+[charaDepth O 3]
+[charaDepth U 4]
+[charaDepth G 6]
+[charaDepth E 6]
+
+[charaPut M 200,-20]
+[charaPut U -200,-20]
+[charaPutFSR N 450,-80]
+[charaPutFSL O -450,-80]
+
+[charaSpecialEffect M appearance 0,0 1.0]
+[wt 0.2]
+[cueSe SE_23 23_ad1287]
+[cueSe SE_23 23_ad1288]
+[wt 0.1]
+[charaSpecialEffect N appearance 0,0 1.0]
+[wt 0.3]
+[charaSpecialEffect O appearance 0,0 1.0]
+[wt 0.3]
+[charaSpecialEffect U appearance 0,0 1.0]
+[wt 0.3]
+[cueSeStop 23_ad1287 1.0]
+[cueSeStop 23_ad1288 1.0]
+[wait charaSpecialEffect U]
+[wt 0.8]
+
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaFadeout U 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_137 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ドゥリーヨダナ
+逃げられるわけがあるまい。
+[k]
+
+[charaFace G 7]
+＠ドゥリーヨダナ
+しつこいジジイだとは思うが、あのデカブツより[r]強くなっているとは全然思えんからな！
+[k]
+
+[charaFace G 5]
+＠ドゥリーヨダナ
+仕留めどきだ！[r]……場所的には不安が残るゆえ、さっさと済ませるぞ！
+[k]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠カーマ
+逃げるよりは、[r]確かにそっちのほうが話が早そうですねぇ。
+[k]
+
+[charaFace E 2]
+＠カーマ
+なんだか生理的に、こういう不快な蟲は[r]ブッ潰したい気分でもありますし！
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_137 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

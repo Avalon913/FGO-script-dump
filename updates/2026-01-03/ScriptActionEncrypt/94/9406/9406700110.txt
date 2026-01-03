@@ -1,0 +1,594 @@
+
+
+
+
+
+＄94-06-70-01-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet B 1098124500 1 ダ・ヴィンチ]
+[charaSet C 1044001 1 斎藤一]
+[charaSet D 98001000 1 マシュ]
+[charaSet E 2041000 1 織田信勝]
+[charaSet F 4037001 1 ネモ]
+[charaSet G 7020000 1 クー・フーリン・オルタ]
+[charaSet H 7033002 1 アルジュナ・オルタ]
+[charaSet I 1098181900 1 ネモ・マリーン]
+[charaSet J 1098181900 1 ネモ・マリーン2]
+[charaSet K 1098181900 1 ネモ・マリーン3]
+
+[sceneSet L 116500 1]
+[charaScale L 1.4]
+
+[imageSet M cut328_glasses_M 1]
+[imageSet N cut328_glasses_F 1]
+[charaScale M 0.8]
+[charaScale N 0.8]
+[charaSet O 1098181900 1 エフェクト]
+[charaPut O 1200,1200]
+[charaEffect O bit_talk_spotlight02]
+[charaEffect O bit_talk_spotlight03 0,150]
+[charaEffect O bit_talk_spotlight03 0,150 H]
+
+[scene 116500]
+
+[charaFadein L 0.1 -120,-200]
+[charaMove L 120,-200 80.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠
+[line 3][#生存競争:せいぞんきょうそう]とは、古くなればなるほど[r]厳しくなるものである。
+[k]
+
+＠
+走れなければ、[r]走る獣を追うことはできない。
+[k]
+
+＠
+武器を握れなければ、[r]獣を狩ることはできない。
+[k]
+
+＠
+振り落とされ、打ち捨てられる者。
+[k]
+
+＠
+しかし人は諦めず[line 3][r]代用品を作り、あるいは共同することで。
+[k]
+
+＠
+生命としての死を、[r]ギリギリまで引き延ばそうとした。
+[k]
+
+[messageOff]
+
+[fadeout black 0.8]
+[bgm BGM_EVENT_1 0.8 0.5]
+[wait fade]
+[charaFadeout L 0.1]
+
+[scene 10000]
+[wt 0.5]
+
+[bgm BGM_EVENT_1 0.8 1.0]
+[fadein black 0.8]
+[wait fade]
+
+＠
+そんな引き延ばしの一つに、視力がある。
+[k]
+
+＠
+あらゆる競争において、必須ともいえる[r]視覚能力をフォローするため……
+[k]
+
+＠
+人類は十三世紀に、[r]ある視覚補助道具を発明した。
+[k]
+
+＠
+視力の弱った老人であろうとも、[r]文字をハッキリと見せるための道具。
+[k]
+
+＠
+後に、ファッションの一つとしても[r]扱われる道具。
+[k]
+
+＠
+不思議と相手に『賢明』[r]であるイメージを抱かせる道具。
+[k]
+
+[messageOff]
+[wt 0.7]
+[cueSe SE_21 21_ade581]
+[seVolume 21_ade581 0 0.3]
+[charaPut O 0,0]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[charaFadein M 0.2 0,-150]
+
+[branch _branchEnd]
+
+[label _Female]
+
+[charaFadein N 0.2 0,-150]
+
+[label _branchEnd]
+
+[wt 0.7]
+
+＠
+つまりはそれを、メガネと呼ぶ。
+[k]
+
+[messageOff]
+
+[wt 1.0]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_1 1.5]
+[wait fade]
+
+[charaPut O 1200,1200]
+[wt 0.5]
+
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[effectDestroy bit_talk_spotlight02]
+[effectDestroy bit_talk_spotlight03]
+
+[scene 104100]
+
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.4 1]
+[wt 0.4]
+＠ダ・ヴィンチ
+よーし、今日も今日とて[r]微小特異点の修正、いってみようかー！
+[k]
+
+？1：イエーイ！
+
+[charaFace B 1]
+＠ダ・ヴィンチ
+イエーイ！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠斎藤一
+何このテンションの高さ。[r]二人ともこういうノリでしたっけ……。
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠マシュ
+いえ、そういう訳ではないと思うのですが。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+？2：ダ・ヴィンチちゃん気合い入ってる？
+
+[charaFace B 12]
+＠ダ・ヴィンチ
+気合いというよりは、[r]テンションを上げないといけない感じかな。
+[k]
+
+？！
+
+[charaFace B 0]
+＠ダ・ヴィンチ
+という訳で、今回の特異点に向かってもらう[r]サーヴァントたちだけど[line 3]
+[k]
+
+＠ダ・ヴィンチ
+こんな感じだね。
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth H 1]
+[charaDepth E 2]
+[charaDepth G 3]
+[charaDepth C 4]
+[charaDepth F 5]
+
+[charaFace H 0]
+[charaFadein H 0.4 0,0]
+
+[charaFace G 0]
+[charaFadeinFSR G 0.4 370,0]
+
+[charaFace C 0]
+[charaFadeinFSR C 0.4 160,0]
+
+[charaFace E 0]
+[charaFadeinFSL E 0.4 -370,0]
+
+[charaFace F 0]
+[charaFadeinFSL F 0.4 -160,0]
+
+[wt 1.8]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠斎藤一
+……僕と信勝くんはともかくとして、[r]他三人は戦力過剰なんじゃない？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+かもしれないけどね。
+[k]
+
+[charaFace B 14]
+＠ダ・ヴィンチ
+どうも今回の特異点は、[r]いつものそれと違って……。
+[k]
+
+[charaFace B 25]
+＠ダ・ヴィンチ
+[#少し引っ掛かる点がある]。
+[k]
+
+[charaFace B 26]
+＠ダ・ヴィンチ
+なので出し惜しみはしない。
+[k]
+
+＠ダ・ヴィンチ
+今回の特異点と相性の良いサーヴァントは、[r]５騎とも行ってもらう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠斎藤一
+はいはい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠織田信勝
+なんで僕じゃなくて姉上をお呼びしないんです？
+[k]
+
+[charaFace E 2]
+＠織田信勝
+いえ、姉上をこんな[#些事:さじ]に、[r]お呼びするわけにはいきませんが！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠斎藤一
+相変わらずですこと。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠ネモ
+ノーチラス号から離れてのレイシフトか……。
+[k]
+
+[charaFace F 0]
+＠ネモ
+ひとまずマリーンたちはカルデアで待機だ。[r]僕がいなくても職務は行うように。いいね。
+[k]
+
+[messageOff]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth F 1]
+[charaDepth E 2]
+[charaDepth C 3]
+
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[charaFace J 1]
+[charaFadeinFSR J 0.4 2]
+[charaFace K 3]
+[charaFadeinFSL K 0.4 0]
+[wt 0.4]
+
+＠ネモ・マリーン
+はーい！[r]ちゃーんと艦内清掃やってまーす！
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠クー・フーリン・オルタ
+それで。[r]具体的には何を殺してどれを壊せばいい？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.7]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠アルジュナ・オルタ
+……彼の言い方は直接的過ぎますが、[r]確かにそれは私も疑問です。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+それが……特異点のサーヴァントの反応は[r]観測できていないんだ。
+[k]
+
+[charaFace B 14]
+＠ダ・ヴィンチ
+もちろん、私たちが思いもよらない方法で[r]隠れているのかもしれないけど。
+[k]
+
+[charaFace B 24]
+＠ダ・ヴィンチ
+ただ、何かしらの生命体が複数いることは[r]確認できている。
+[k]
+
+[charaFace B 25]
+＠ダ・ヴィンチ
+データから推定するに、[r]魔獣程度のものだろうけどね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠アルジュナ・オルタ
+……ふむ……。
+[k]
+
+＠アルジュナ・オルタ
+サーヴァントの反応なし、[r]魔獣が複数体いる程度。
+[k]
+
+＠アルジュナ・オルタ
+なのに、嫌な予感がする……ですか。
+[k]
+
+[charaFace H 0]
+＠アルジュナ・オルタ
+あなたの仰る通り、[r]ここは予感を信じた方がよさそうですね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠斎藤一
+へー、そういうもんですか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠アルジュナ・オルタ
+特異点とは、人類史の[#陥穽:かんせい]。
+[k]
+
+＠アルジュナ・オルタ
+どんなに小さく、あるいは奇妙なものであれ、[r]人類史を揺るがすものに違いはありません。
+[k]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+＠アルジュナ・オルタ
+何があろうとも粛々と、[r]やるべきことをこなさなければならない。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠織田信勝
+正直、どうでもいいと言えばいいですけど。[r]姉上の名代としてはやらざるを得ません。
+[k]
+
+[charaFace E 1]
+＠織田信勝
+ぱぱっと行って、[r]ささっと解決してしまいましょう。
+[k]
+
+？1：よし、行こう！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+オーケー、それでは。[r]レイシフト準備！
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_07_fs]
+[se ad12]
+[wt 4]
+
+[fadeout white 1.0]
+[wait fade]
+[scene 10001]
+[wt 1.5]
+
+[fadein white 0.1]
+[wait fade]
+[fadeout black 2.0]
+[wait fade]
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+
+[charaSet B 1098124500 1 ダ・ヴィンチ]
+[charaSet C 1044001 1 斎藤一]
+[charaSet D 98001000 1 マシュ]
+[charaSet E 2041000 1 織田信勝]
+[charaSet F 4037001 1 ネモ]
+[charaSet G 7020000 1 クー・フーリン・オルタ]
+[charaSet H 7033002 1 アルジュナ・オルタ]
+[charaSet I 1098181900 1 ネモ・マリーン]
+[charaSet J 1098181900 1 ネモ・マリーン2]
+[charaSet K 1098181900 1 ネモ・マリーン3]
+[sceneSet L 116500 1]
+[imageSet M cut328_glasses_M 1]
+[imageSet N cut328_glasses_F 1]
+[charaSet O 1098181900 1 エフェクト]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+
+[wt 0.5]
+
+[fowardEffect bit_queststart80361_2]
+[wait fowardEffect]
+
+[wt 0.5]
+
+[fadeout black 2.0]
+[wait fade]
+
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

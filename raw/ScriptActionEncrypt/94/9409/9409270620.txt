@@ -1,0 +1,884 @@
+
+＄94-09-27-06-2-0
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1098257310 1 ダ・ヴィンチ]
+[charaSet B 1098257910 1 マシュ]
+[charaSet C 6032000 1 セミラミス]
+[charaSet D 4055000 1 アンドロメダ]
+[charaSet E 1098288100 1 コロンブス]
+[charaSet F 4008300 1 黒髭]
+[charaSet G 4034000 1 バーソロミュー]
+[charaSet H 1098196710 1 虞美人]
+[charaSet I 10014000 1 徐福]
+
+[sceneSet M 207700 1]
+[charaScale M 1.3]
+[sceneSet N 199900 1]
+[sceneSet O 204200 1]
+[sceneSet P 208200 1]
+[sceneSet Q 207700 1]
+
+[charaSet R 98115000 1 エフェクト用1]
+[charaSet S 98115000 1 通信エフェクト用]
+
+[charaSet U 98115000 1 エフェクト用2]
+
+[charaPut S 2500,2500]
+[charaEffect S bit_talk_10_LowLevel]
+
+[scene 207700]
+
+[charaTalk depthOff]
+[charaDepth M 7]
+[charaDepth D 5]
+
+[charaFadein M 0.1 0,-200]
+[charaShake M 0.03 4 4 2.7]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+[se ad14]
+[seVolume ad14 1.0 0.6]
+[cueSe SE_21 21_ade614 0.5]
+
+[bgm BGM_BATTLE_107 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 1.0]
+[cueSe SE_23 23_ad1320]
+[wt 0.8]
+[cueSe SE_22 22_ade805]
+[wt 0.5]
+[seStop ad14 0.8]
+[charaShake M 0.03 2 2 0.8]
+[wt 0.8]
+[charaShake M 0.05 2 2 0.8]
+[wt 0.8]
+[cueSeStop 21_ade614 0.6]
+[charaFadeout M 0.4]
+[wt 0.6]
+
+
+＠アンドロメダ
+応急処置の岩を入れることで、[r]なんとか耐えてるけどっ……これ以上はヤバそうー！
+[k]
+
+＠アンドロメダ
+何か手はないかなっ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠マシュ
+すみません、わたしも『好きが形になったアイテム』[r]というのを持ってはおらず……！
+[k]
+
+[charaFace B 11]
+
+＠マシュ
+せめて部屋に帰れれば、フォウさん人形や先輩の……[wt 1.2][charaFace B 3][r]いえその、いろいろありますので、
+[k]
+
+＠マシュ
+なんとかお力になれる可能性もあったのですが。
+[k]
+
+？1：こっちもさすがに手元には……！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠セミラミス
+我にもないぞ。
+[k]
+
+[charaFace C 0]
+
+＠セミラミス
+あえて言うが、我は別に毒が好きというわけではない。[r]必要ゆえに用いるというだけだ。
+[k]
+
+[charaFace C 12]
+
+＠セミラミス
+研究対象としての興味はあるがな。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+？1：こうなれば、『好き』に[#溢:あふ]れた助っ人を呼ぶしか[line 3]
+？！
+
+
+[subCameraOn 2]
+[charaLayer H sub #A]
+[charaLayer N sub #A]
+
+[charaLayer I sub #B]
+[charaLayer O sub #B]
+
+[charaTalk off]
+[charaDepth H 6]
+[charaDepth N 4]
+
+[charaDepth I 6]
+[charaDepth O 4]
+
+[charaScale N 1.2]
+[charaScale O 1.2]
+
+[subCameraFilter #A maskEdge cut359_mask08 4 238,85,153,255]
+[subCameraFilter #B maskEdge cut359_mask08 4 0,102,184,255]
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.0]
+
+[charaFace H 0]
+[charaFadein H 0.1 0,235]
+[charaFadein N 0.1 0,50]
+[subRenderFadein #A 0.4 0,-170]
+
+[charaFace I 8]
+[charaFadein I 0.1 -25,180]
+[charaFadein O 0.1 0,100]
+[subRenderFadein #B 0.4 0,-470]
+[wt 1.6]
+
+？1：たとえば、↑の人とか！
+
+
+[se ade84]
+[fadeout eb6ea0 1.0]
+[bgmStop BGM_BATTLE_107 1.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+[charaFadeout N 0.1]
+[charaFadeout I 0.1]
+[charaFadeout O 0.1]
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+
+[subCameraOff]
+[charaLayer H normal]
+[charaLayer N normal]
+[charaLayer I normal]
+[charaLayer O normal]
+
+
+[cameraMove 0.1 0,0 1.01]
+
+[wipeFilter cinema 0.5 0]
+
+[scene 199900]
+[wt 0.5]
+
+[fadein eb6ea0 1.0]
+[wait fade]
+[wt 0.4]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.4 0,-50]
+[wt 0.4]
+
+＠虞美人
+は？　項羽様グッズを放出しろって？[r]何それふざけてんの？
+[k]
+
+[charaFace H 0]
+
+＠虞美人
+数の問題じゃないわよ、[r]この頭の飾りだって予備いっぱいあるし。
+[k]
+
+[charaFace H 5]
+
+＠虞美人
+普通に『項羽様という概念に関わるもの』を手放すのが[r]ありえないってこと！
+[k]
+
+[charaFace H 2]
+
+＠虞美人
+やっと出会えたんだから、たとえ概念だって[r]もう離れたりしたくないわ。わかりなさい！
+[k]
+
+[charaFace H 1]
+
+＠虞美人
+あ、『大好きな項羽様の槍から生み出される痛み』[r]とかなら別にあげてもいいけど。ホラ。ホラ。
+[k]
+
+[messageOff]
+[charaMove H 0,-35 0.2]
+[charaMoveScale H 1.1 0.2]
+[wt 0.2]
+[se ade184]
+[charaMove H 0,-50 0.2]
+[charaMoveScale H 1.0 0.2]
+[wt 0.2]
+
+[charaMove H 0,-35 0.2]
+[charaMoveScale H 1.1 0.2]
+[wt 0.2]
+[se ade184]
+[charaMove H 0,-50 0.2]
+[charaMoveScale H 1.0 0.2]
+[wt 0.5]
+
+[fadeout black 0.7]
+[bgmStop BGM_EVENT_94 0.7]
+[wait fade]
+
+[wipeOff]
+[charaFadeout H 0.1]
+
+[cameraHome 0.1]
+
+？2：たとえば、↓の人とか！
+
+[se ade84]
+[fadeout 00AEEF 1.0]
+[bgmStop BGM_BATTLE_107 1.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+[charaFadeout N 0.1]
+[charaFadeout I 0.1]
+[charaFadeout O 0.1]
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+
+[subCameraOff]
+[charaLayer H normal]
+[charaLayer N normal]
+[charaLayer I normal]
+[charaLayer O normal]
+
+[wipeFilter cinema 0.5 0]
+
+[scene 204200]
+[wt 0.5]
+
+[fadein 00AEEF 1.0]
+[wait fade]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 28]
+[charaFadein I 0.4 0,-50]
+[wt 0.4]
+
+＠徐福
+え？　ぐっ様グッズを？
+[k]
+
+[charaFace I 31]
+
+＠徐福
+フツーに嫌ですけど。[r]無理です無理無理。
+[k]
+
+[charaFace I 24]
+
+＠徐福
+いっぱい持ってるように見えても、あれは一つ一つ[r]私が[#愛:呪]を込めて手作りした品なのでぇ……。
+[k]
+
+[charaFace I 2]
+
+＠徐福
+誰かに渡したりなんぞしてたまるかー！[r]私の好きは私が独占するんじゃーい！
+[k]
+
+[charaFace I 21]
+
+＠徐福
+無駄に消費されるくらいなら、[r]も、燃やしてやるー！
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ade669]
+[charaEffect I bit_talk_taoism]
+[wt 1.0]
+[flashin once 0.2 0.3 FFFFFFFA FFFFFF50]
+[charaFadeout I 0.1]
+[charaEffectDestroy I bit_talk_taoism]
+[effect bit_talk_surround_flames]
+[wt 0.1]
+[se ad267]
+[se ad439]
+[wt 2.0]
+
+[fadeout black 0.7]
+[seStop ad439 0.7]
+[bgmStop BGM_EVENT_7 0.7]
+[wait fade]
+
+[wipeOff]
+[effectDestroy]
+
+
+？！
+
+
+[scene 207700]
+[wt 0.5]
+
+[charaDepth A 6]
+[charaDepth C 6]
+[charaDepth D 5]
+[charaDepth B 4]
+[charaDepth M 2]
+[charaScale M 1.4]
+
+[charaFadein M 0.1 -250,-320]
+
+[fadein black 0.7]
+[wait fade]
+
+[wt 0.4]
+
+？1：と思ったけど、想像しただけで無理があった！
+？！
+
+[bgm BGM_EVENT_49 0.1]
+
+[charaPut S 0,0]
+
+[charaTalk A]
+[charaFace A 33]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+それ以前に、今からそっちに助っ人を[r]送り込めるようなリソースはないんだゴメン！
+[k]
+
+＠ダ・ヴィンチ
+まだ補給が間に合ってなくて。[r]困ったぞ……！
+[k]
+
+[messageOff]
+[charaPut S 2500,2500]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[subCameraOn 2]
+[charaLayer F sub #A]
+[charaLayer G sub #A]
+[charaLayer P sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 255,255,255,255]
+
+[charaScale P 1.3]
+
+[charaDepth G 4]
+[charaDepth F 3]
+[charaDepth P 2]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 195,100]
+[charaFace G 0]
+[charaFadein G 0.1 -85,100]
+
+[charaEffect F bit_talk_charge_ppl]
+[charaEffect G bit_talk_charge_ppl]
+[charaBackEffect F bit_talk_charge_aura_02]
+[charaBackEffect G bit_talk_charge_aura_02]
+
+[charaFadein P 0.1 200,-200]
+
+[blur lens 0.4 2 20]
+[subRenderFadeinFSR #A 0.6 300,-150]
+[subRenderMoveEaseFSR #A 200,-150 0.6 easeOutExpo]
+[wt 0.6]
+
+＠黒髭
+フハハハハ！　無駄な足掻きはお止めなさい！[r]理想の美少女との結婚はすぐそこでござる！
+[k]
+
+[messageOff]
+[blurOff lens 0.4]
+[subRenderFadeout #A 0.4]
+[wt 0.6]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout P 0.1]
+[charaEffectStop F bit_talk_charge_ppl]
+[charaEffectStop G bit_talk_charge_ppl]
+[charaBackEffectStop F bit_talk_charge_aura_02]
+[charaBackEffectStop G bit_talk_charge_aura_02]
+[subCameraOff]
+[charaEffectDestroy F]
+[charaEffectDestroy G]
+[charaBackEffectDestroy F]
+[charaBackEffectDestroy G]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠セミラミス
+ふざけた相手ではあるが、[r]奴らの想いの強さだけは侮れぬ。
+[k]
+
+＠セミラミス
+たとえ効果的なアイテムでも、[r]一つや二つ入れた程度では大勢は動かぬだろう。
+[k]
+
+＠セミラミス
+好きなものである以上に、量も用意することができねば[r]意味はあるまい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠マシュ
+そんな……！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaFace D 17]
+[charaFadeinFSL D 0.4 0]
+[charaFace C 4]
+[charaFadeinFSR C 0.4 2]
+[wt 2.2]
+
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_49 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout M 0.1]
+
+[scene 207601]
+[wt 1.5]
+
+
+
+＠
+[line 3]あと少しのはずだ。
+[k]
+
+＠
+ここまで来て、辿り着けない、[r]ということはあってはならない。
+[k]
+
+＠
+辿り着くために。
+[k]
+
+＠
+この目で確かめるために、[r]自分はこの船に乗っているのだから。
+[k]
+
+[messageOff]
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+[wt 1.0]
+[charaFaceFade E 3 0.3]
+[wt 0.5]
+
+[bgm BGM_BATTLE_123 0.1]
+
+
+＠コロンブス
+仕方ねぇな。[r]ああ、仕方ねぇ……。
+[k]
+
+[messageOff]
+[subCameraOn 3]
+
+[charaTalk off]
+
+[charaLayer D sub #A]
+[charaLayer B sub #A]
+[charaLayer C sub #A]
+[charaLayer M sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 255,255,255,255]
+
+[charaScale C 1.2]
+[charaScale D 1.2]
+[charaScale B 1.2]
+[charaScale M 1.2]
+
+[charaDepth C 7]
+[charaDepth D 7]
+[charaDepth B 7]
+[charaDepth M 3]
+
+[charaFace D 11]
+[charaFadein D 0.1 0,300]
+
+[charaFadein M 0.1 250,50]
+
+[subRenderFadeinFSSideR #A 0.3 550,-300]
+[subRenderMoveEaseFSSideR #A 350,-300 0.4 easeInOutSine]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk D]
+
+＠アンドロメダ
+お髭のおじさん、何か手があるの！？
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+[charaTalk E]
+[charaFadeout D 0.1]
+
+[charaFaceFade E 5 0.3]
+[wt 0.5]
+
+＠コロンブス
+おうよ。実を言やあ、俺にはあるんだぜ。[r]好きって気持ちが形になったものが、たくさんな。
+[k]
+
+[charaFaceFade E 7 0.3]
+
+＠コロンブス
+正直に言えば惜しいし、川に流したくなんざねえが……
+[k]
+
+＠コロンブス
+今まで嬢ちゃんたちだけに戦いを任せてた負い目もある。[r]こいつはまさしく、正当な代金ってモンだろうよ。
+[k]
+
+[messageOff]
+[charaFaceFade E 0 0.3]
+[charaPut R -350,190]
+[charaEffect R bit_talk_starshine]
+[charaMove R -330,-80 0.8]
+[wt 1.0]
+[se ade459]
+[wt 0.8]
+
+？1：コロンブスが握った拳の隙間から、何か落ちた……
+？！
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 -70,330]
+
+[subRenderFadeinFSSideR #A 0.4 350,-300]
+[wt 0.4]
+
+
+＠マシュ
+それは……コイン、でしょうか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 -25,300]
+
+＠セミラミス
+色味からして銀貨のようだが。[r]まさか、それだけではあるまい？
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+[charaTalk E]
+[charaFadeout C 0.1]
+
+[charaFaceFade E 3 0.3]
+
+
+＠コロンブス
+量がいるんだったよな。[r]まったく、しょうがねぇ……。
+[k]
+
+[messageOff]
+[charaCrossFade E 1098288140 3 0.3]
+[wt 0.3]
+[charaPut R -350,190]
+[charaEffect R bit_talk_starshine]
+[charaMove R -330,-80 0.8]
+[cueSe SE_24 24_ade997]
+[wt 2.0]
+
+[charaScale U 1.4]
+[charaPut U 1]
+[charaEffect U bit_talk_summon_fs 0,-100]
+[cueSe SE_24 24_ade998]
+[wt 2.0]
+[cueSeVolume 24_ade998 1.5 0]
+
+
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 0,300]
+
+[subRenderFadeinFSSideR #A 0.4 350,-300]
+[wt 0.4]
+
+＠アンドロメダ
+わ、山ができるくらいのすっごい量！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[wt 0.6]
+[charaFadeout D 0.1]
+
+[charaFaceFade E 0 0.3]
+
+＠コロンブス
+こいつは紛れもなく俺の『好き』が詰まったものだ。
+[k]
+
+＠コロンブス
+俺が俺という存在であるがゆえに[r]集めてきたコインだが、大放出してやるよ。
+[k]
+
+[charaFaceFade E 2 0.3]
+
+＠コロンブス
+ここで船が止まっちまっちゃあ何にもならねえからな！[r]大盤振る舞いだぜ！
+[k]
+
+[messageOff]
+
+[cueSeVolume 24_ade998 0.1 1.0]
+[se ad14]
+[seVolume ad14 0 0.4]
+[wt 1.0]
+[cueSe SE_24 24_ade999]
+[wt 2.0]
+[cueSeStop 24_ade998 1.0]
+[cueSeStop 24_ade999 1.0]
+[seStop ad14 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 -70,330]
+
+[subRenderFadeinFSSideR #A 0.4 350,-300]
+[wt 0.4]
+
+＠マシュ
+コロンブスさんのコインが、[r]滝のようにこちらの川に投入されて……
+[k]
+
+＠マシュ
+強い進行ベクトルが発生した気配です！
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_BATTLE_123 0.7 0.5]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[subRenderFadeout #A 0.1]
+
+[charaFadeout B 0.1]
+[charaFadeout M 0.1]
+[charaPut U 2500,2500]
+
+[charaLayer D normal]
+[charaLayer D normal]
+[charaScale D 1.0]
+
+[charaEffectStop S bit_talk_10_LowLevel]
+[charaEffectDestroy S bit_talk_10_LowLevel]
+
+[sceneSet N 207700 1]
+[sceneSet O 208200 1]
+[charaScale N 1.4]
+[charaScale O 1.4]
+
+[charaSet V 98115000 1 エフェクト用2]
+
+[scene 207700]
+[wt 0.5]
+
+[charaDepth S 7]
+[charaDepth A 6]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+[charaPut S 0,0]
+[charaEffect S bit_talk_10_LowLevel_depth]
+
+[charaLayer V sub #C]
+[charaLayer N sub #C]
+[charaLayer O sub #B]
+
+[subCameraFilter #C maskEdge cut359_mask10 5 255,255,255,255 0]
+[subCameraFilter #B maskEdge cut359_mask09 5 255,255,255,255 0]
+[subRenderDepth #B 4]
+[subRenderDepth #C 6]
+
+[charaPut V 0,50]
+[charaEffect V bit_talk_diremond_dust]
+
+[charaFadein N 0.1 100,50]
+[charaFadein O 0.1 -100,50]
+
+[charaMove N 300,50 10.0]
+[charaMove O -300,50 10.0]
+
+[subRenderFadein #C 0.1 -122,-220]
+[subRenderFadein #B 0.1 302,-220]
+
+[cueSe SE_21 21_ade614 0.7]
+[cueSeVolume 21_ade614 0 0.6]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_BATTLE_123 0.7 1.0]
+[wait wipe]
+
+[cueSeVolume 21_ade614 0.7 1.4]
+[wt 0.4]
+
+[se ad14]
+[cueSe SE_22 22_ade807]
+[cueSeVolume 22_ade807 0 0.6]
+[charaShake N 0.03 4 4 1.4]
+[wt 1.4]
+[charaShake N 0.03 2 2 1.0]
+[seStop ad14 1.0]
+[cueSeStop 22_ade807 1.0]
+[wt 1.5]
+
+[cueSeStop 21_ade614 1.0]
+[subRenderFadeout #C 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+
+[charaPut V 2500,2500]
+[charaEffectStop V bit_talk_diremond_dust]
+
+＠ダ・ヴィンチ
+それだけのコインどこに持ってた？　とか、[r]どうやって出してる？　とか、
+[k]
+
+＠ダ・ヴィンチ
+いろいろ言いたいことはあるけど……[r]確かに、それはここでは有効なアイテムだったみたい！
+[k]
+
+[charaFace A 0]
+
+＠ダ・ヴィンチ
+防戦一方だった状況が変わり始めたよ。[r]このまま押し返していこう！
+[k]
+
+[charaPut S 2500,2500]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠アンドロメダ
+お、おっけー！
+[k]
+
+
+＠アンドロメダ
+ありがとう、おじさん！[wt 1.0][charaFace D 4][r]あとお金使わせちゃってゴメンー！
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_BATTLE_123 0.7 0.5]
+[wait wipe]
+
+[subCameraOff]
+
+[charaFadeout D 0.1]
+[charaPut U 1]
+
+[scene 207601]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_BATTLE_123 0.7 1.0]
+[wait wipe]
+
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠コロンブス
+なあに、こういう状況なら[line 3][r]何度も言うが、しょうがねぇさ。
+[k]
+
+[messageOff]
+[charaFaceFade E 4 1.0]
+[wt 1.0]
+
+＠コロンブス
+船を動かすには金がかかる。[r]そうだろ？
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_123 0.5]
+[wait fade]
+[soundStopAllEnd]
+[end]

@@ -1,0 +1,238 @@
+
+＄94-09-27-04-3-0
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1098257310 1 ダ・ヴィンチ]
+[charaSet B 1098257900 1 マシュ]
+[charaSet C 6032000 1 セミラミス]
+[charaSet D 4055000 1 アンドロメダ]
+
+[sceneSet M 207700 1]
+
+[charaSet O 98115000 1 エフェクト用1]
+[charaSet P 98115000 1 エフェクト用2]
+[charaSet Q 98115000 1 エフェクト用3]
+[charaSet S 98115000 1 通信エフェクト用]
+
+[charaPut S 2500,2500]
+[charaEffect S bit_talk_10_LowLevel]
+
+[scene 207700]
+
+[subCameraOn 1]
+
+[charaLayer C sub #A]
+[charaLayer M sub #A]
+[charaLayer P sub #A]
+[charaLayer Q sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask04 4 120,104,196,255]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 8]
+[charaDepth M 2]
+[charaDepth P 6]
+[charaDepth Q 7]
+
+[charaScale M 1.4]
+[charaScale C 1.4]
+
+[charaFace C 2]
+[charaFadein C 0.1 -200,290]
+[charaFadein M 0.1 -100,0]
+
+[bgm BGM_BATTLE_48 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.3]
+
+[se ad1006]
+[blur motion 5.0 4 100 0.5 0.65 0.05 100]
+[charaMoveScaleEase D 1.2 0.2 easeOutQuint]
+[charaMoveEase D 0,25 0.2 easeOutQuint]
+[effect bit_talk_41_fs]
+[charaFadeout D 0.2]
+[wt 0.2]
+[blurOff motion 0.3]
+[effectDestroy]
+
+
+[effect bit_talk_v_slash01]
+[cueSe Servants_603200 bac638]
+[se ad85]
+[wt 0.8]
+[cueSeStop bac638 0.3]
+[fowardEffect bit_talk_14]
+[se bac394]
+[wt 0.05]
+[shake 0.03 3 3 0.1]
+[wt 0.5]
+
+[se ade153]
+[charaPut O 0,0]
+[charaEffect O bit_talk_ppl_fog02]
+[subRenderFadein #A 0.3 -150,-240]
+[subRenderMoveEase #A 0,-240 0.5 easeOutQuart]
+[wt 0.5]
+[cueSe Servants_603200 bac643]
+[wt 1.0]
+[seStop ade153 0.6]
+[charaEffectStop O bit_talk_ppl_fog02]
+[subRenderFadeout #A 0.2]
+[subRenderMove #A 140,-240 0.2]
+[wt 0.2]
+[charaFadeout M 0.1]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[charaLayer C normal]
+[charaScale D 1.0]
+[charaScale C 1.0]
+[charaScale B 1.1]
+
+[se ad32]
+[se ad1014]
+[effect bit_talk_blow02]
+[wt 0.3]
+[charaPut O 3000,3000]
+[wt 0.5]
+
+[se ad671]
+[seVolume ad671 0 0.7]
+[seStop ad671 0.8]
+[charaFace B 5]
+[charaFadein B 0.2 0,10]
+[charaMoveScale B 1.0 0.2]
+[charaMove B 0,-10 0.2]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 28]
+
+＠マシュ
+ダ・ヴィンチちゃん、川の状況は！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+
+＠ダ・ヴィンチ
+相変わらずの[#膠着:こうちゃく]状態だ！
+[k]
+
+[charaPut S 2500,2500]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠マシュ
+くっ……。
+[k]
+
+？1：みんな、連戦の疲れが……！
+？2：さすがに素材どころじゃない……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠アンドロメダ
+でも、ここで休んだら、[r]向こうの勢いに飲み込まれちゃうかも。
+[k]
+
+[charaFace D 2]
+
+＠アンドロメダ
+なんとか踏ん張るしかないよ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+同感です。カーリーさんがいくら強いとはいえ、[r]数ではこちらが勝っています。
+[k]
+
+＠マシュ
+大黒天さんは船の仕事のほうに[r]かかりきりのようですし……。
+[k]
+
+＠マシュ
+みんなで力を合わせて戦い続ければ、[r]こちらを優位に持っていける可能性はあるかと！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[subCameraFilter #A maskEdge cut359_mask08 4 0,0,0,255]
+
+[charaPut P -300,400]
+[charaFadein M 0.1 -100,0]
+
+？1：さらに数の力を増やしたいな……
+？2：誰か助っ人とか呼べればいいけど……
+？！
+
+？1：って思った[#傍:そば]から、誰かが！？
+？！
+
+[cueSe SE_21 21_ade546]
+[seVolume 21_ade546 0 0.6]
+[blur lens 0.4 2 2]
+[subRenderFadein #A 0.4 50,-320]
+[subRenderMove #A 0,-320 0.3]
+[wt 0.4]
+
+[charaEffect P bit_talk_gale]
+[wt 0.6]
+
+[blurOff lens 0.4]
+[subRenderFadeout #A 0.4]
+[subRenderMove #A -50,-320 0.3]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 20]
+[charaFadein B 0.1 1]
+
+＠マシュ
+あ、あなたは[line 3]！？
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_48 0.5]
+[wait fade]
+[soundStopAllEnd]
+[end]

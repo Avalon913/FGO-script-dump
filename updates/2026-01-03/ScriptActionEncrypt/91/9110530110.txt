@@ -1,0 +1,1368 @@
+
+＄91-10-53-01-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1053910 1 徴弐]
+[charaSet B 1053900 1 徴側]
+[charaSet C 7013001 1 清姫]
+[charaSet D 5042001 1 紫式部]
+[charaSet E 2040000 1 清少納言]
+
+[charaSet F 1098231700 1 コン]
+[charaSet G 1098231700 1 コン]
+[charaSet H 1098231700 1 コン]
+[charaSet I 1098231700 1 コン]
+
+[charaSet J 1053910 1 徴弐_演出用]
+[charaSet K 1053900 1 徴側_演出用]
+
+[charaSet L 98115000 1 エフェクト用]
+
+[sceneSet M 10000 1 1]
+[charaScale M 1.2]
+[sceneSet N 10000 1 1]
+[charaScale N 1.2]
+
+
+[branchQuestClear lblClear01b 94064915]
+[branchQuestClear lblClear01b 3001101]
+
+[label lblClear01a]
+
+[scene 105800]
+
+[sceneSet P 105800 1]
+[sceneSet Q 104200 1]
+[sceneSet R 104200 1]
+[sceneSet S 105900 1]
+
+[branch lblConf01]
+[label lblClear01b]
+
+[scene 157900]
+
+[sceneSet P 157900 1]
+[sceneSet Q 203800 1]
+[sceneSet R 203800 1]
+[sceneSet S 158100 1]
+
+[label lblConf01]
+
+[cameraMove 0 0 1.01]
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_YAMA 0.1]
+
+[wt 1.0]
+
+？1：フフフ……小腹が空いたから
+？2：エミヤに珍しい軽食作ってもらっちゃった
+？！
+
+
+[se ade11]
+[wt 1.5]
+
+？1：おお、これが、バインミー……
+？2：ベトナムのサンドイッチらしいけど、どれどれ
+？！
+
+
+[se ade161]
+[cameraMove 0.4 0,5 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.6]
+[cameraMove 0.4 0,5 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 1.5]
+
+？1：うん、美味しい……！
+？！
+
+
+[cameraMove 1.0 0,-5 1.01]
+[se adm25]
+[wt 1.0]
+[cameraMove 0.5 0,0 1.01]
+[seStop adm25 0.3]
+[wt 0.7]
+
+？1：（まったり……）
+？2：（今日は穏やかな午後が過ごせそう……）
+？！
+
+
+[bgmStop BGM_YAMA 0.1]
+
+
+[se ad728]
+[effect bit_talk_smoke 0,0 H]
+[shake 0.05 3 3 0.8]
+[effectStop bit_talk_smoke]
+[wt 0.5]
+[se ad224]
+[wt 3.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 -196,0]
+[wt 0.4]
+
+＠徴弐
+[f large]たたた大変だー！[messageShake 0.05 5 7 1.0][wt 1.0][bgm BGM_EVENT_146 0.1]
+[k]
+
+[charaFace A 0]
+
+＠徴弐
+……気のせいだった、って何が？
+[k]
+
+[charaFace A 2]
+
+＠徴弐
+とにかく、呑気にパンなんて食ってる場合じゃ[r]ないんだよ、マスター！
+[k]
+
+？1：まあまあ落ち着いて
+？2：はい、これお[#裾:すそ][#分:わ]け
+？！
+
+[messageOff]
+
+＠徴弐
+いや別にいらな……[wt 0.5][charaFace A 3][se ade161][charaMoveReturn A -196,-5 1.0]むぐむぐ。[wt 1.0][seStop ade161 0.1]
+[k]
+
+[charaFace A 1]
+
+＠徴弐
+[line 3]美味しいじゃん。え、うちの国の料理？[r]こういうのが名物になってるんだ、へー。
+[k]
+
+[charaFace A 2]
+[bgmStop BGM_EVENT_146 1.5]
+
+＠徴弐
+……じゃ、なくて！[r]本当に大変なんだって！
+[k]
+
+？1：何があったの？
+？！
+
+[bgm BGM_EVENT_5 0.1]
+[charaFace A 7]
+
+＠徴弐
+言葉で説明するのは、ちょっと、難しいな……。
+[k]
+
+[charaFace A 0]
+
+＠徴弐
+実際に見てもらったほうが早いかも。[r]まだ部屋にいるはずだから。
+[k]
+
+[charaFace A 5]
+
+＠徴弐
+でも、いい？[r]静かに、だよ。気付かれたくないから。
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_5 1.0 0.4]
+[wait fade]
+[charaFadeout A 0.1]
+
+
+[subCameraOn 3]
+[subCameraFilter #A mask cut359_mask22]
+[subCameraFilter #B mask cut359_mask22]
+[subCameraFilter #C mask cut359_mask22]
+[subRenderScale #A 1.05]
+[subRenderScale #B 1.05]
+[subRenderScale #C 1.05]
+[subRenderDepth #A 3]
+[subRenderDepth #B 2]
+[subRenderDepth #C 1]
+[charaLayer A sub #A]
+[charaLayer F sub #A]
+[charaLayer C sub #A]
+[charaLayer Q sub #A]
+[charaLayer J sub #A]
+[charaLayer I sub #A]
+[charaLayer L sub #A]
+[charaDepth L 7]
+[charaDepth I 6]
+[charaDepth J 5]
+[charaDepth F 3]
+[charaDepth A 2]
+[charaDepth C 2]
+[charaDepth Q 1]
+[charaScale A 0.95]
+[charaScale F 0.95]
+[charaScale C 0.95]
+[charaScale I 1.2]
+[charaScale J 1.2]
+[charaScale Q 1.2]
+[charaFadein Q 0 -550,-30]
+[charaLayer R sub #B]
+[charaScale R 1.2]
+[charaFadein R 0 793,-30]
+[charaLayer N sub #C]
+[charaFadein N 0 0,-30]
+
+[charaTalk depthOff]
+[charaDepth P 1]
+[charaDepth B 2]
+[charaDepth G 3]
+[charaDepth H 3]
+[charaDepth M 4]
+[charaFace B 4]
+[charaScale B 0.8]
+[charaFadein B 0.1 -170,-60]
+[charaFace G 0]
+[charaScale G 0.8]
+[charaFadein G 0.1 -90,-200]
+[charaScale P 1.1]
+[charaFadein P 0.1 -200,-200]
+[charaFadein M 0.1 1]
+
+[subRenderFadein #A 0.1 550,-200]
+[subRenderFadein #B 0.1 -862,-200]
+[subRenderFadein #C 0.1 540,-200]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_5 1.5 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFadein A 0.1 -450,180]
+[charaFace A 5]
+
+＠徴弐
+ここ。普段ならゼッタイ許可しない行為っていうか[r]拷問案件だけど、今は特別。そっと覗いて。
+[k]
+
+[messageOff]
+[charaMove A -440,180 0.5]
+[wt 0.8]
+
+
+[charaTalk A,B]
+[subRenderFadeout #B 1.0]
+[wt 1.0]
+[charaFadeout M 1.5]
+[charaFadeout R 0.1]
+[wt 0.1]
+[charaLayer R sub #A]
+[charaDepth R 4]
+[wt 1.5]
+
+？1：あれは……お姉ちゃんだー！
+
+[charaFace A 3]
+
+＠徴弐
+ちょ、静かにって言ったでしょ！？
+[k]
+
+[charaFace A 5]
+
+＠徴弐
+それと、あれは私のお姉ちゃんであって[r]貴方のじゃないし。
+[k]
+
+[charaFace A 2]
+
+＠徴弐
+今の、なんか自分の姉に呼びかける[r]テンションじゃなかった！？
+[k]
+
+[charaFace A 6]
+
+＠徴弐
+いやまあ誰しも認める完璧なお姉ちゃんだし、[r]そう思いたがるのもわからなくはないけど……。
+[k]
+
+[charaFace A 2]
+
+＠徴弐
+やっぱりあれは私だけのお姉ちゃんだから、[r]そこんとこの線引きはね！　しっかりとね！
+[k]
+
+？2：予想通り、[#側:チャク]さんだね
+
+[charaFace A 1]
+
+＠徴弐
+そーだよ。[r]私が全世界に誇れる完璧お姉ちゃん。
+[k]
+
+？！
+
+？1：それと[line 3]
+？！
+
+[messageOff]
+[charaTalk off]
+
+
+[subRenderMoveEase #A 710,-200 1.2 easeInOutSine]
+[subRenderMoveEase #C 700,-200 1.2 easeInOutSine]
+[charaMoveEase A -593,180 1.2 easeInOutSine]
+[charaMoveEase Q -703,-30 1.2 easeInOutSine]
+[wt 1.4]
+
+[charaFace G 1]
+[charaMoveReturnEase G -90,-150 0.8 easeOutSine easeInSine]
+[cueSe SE_22 22_ade695]
+[wt 1.2]
+
+[charaFace F 0]
+[charaFadein F 0.4 -120,40]
+[charaMove F -270,40 1.2]
+[se adm59]
+[wt 1.2]
+[seStop adm59 0.1]
+[wt 0.2]
+[cueSe SE_22 22_ade695]
+[charaMoveEase F -300,90 0.4 easeInOutSine]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk A,F]
+[charaFace A 0]
+
+＠徴弐=spot[A,F]
+コンはまあいつものことで、あんまり関係ない。[cueSe SE_22 22_ade695][charaMove F -300,120 0.4][r]気にしないで。本筋はそこじゃない。[wt 0.4][cueSe SE_22 22_ade695][charaMove F -300,150 0.4][wt 0.4]
+[k]
+
+[messageOff]
+
+
+？1：（確かに、別のコンが弐さんにもよじ登ってるけど）
+？2：（意識すらしてないみたいだしまあいいか）
+？！
+
+[bgmStop BGM_EVENT_5 1.5]
+[messageOff]
+[charaTalk off]
+
+
+[subRenderMoveEaseFSSideR #A 1260,-200 2.0 easeInOutSine]
+[subRenderMoveEaseFSSideR #C 1250,-200 2.0 easeInOutSine]
+
+[charaMoveEase B 176,-60 2.0 easeInOutSine]
+[charaMoveEase G 246,-200 2.0 easeInOutSine]
+[charaMoveEase P 0,-200 2.0 easeInOutSine]
+[wt 2.0]
+[bgm BGM_EVENT_96 0.1 0.8]
+
+[charaTalk on]
+[charaTalk B,G]
+[charaFace B 4]
+
+＠徴側
+……はぁ……。
+[k]
+
+[messageOff]
+
+
+[charaTalk B,G]
+[charaMove G 100,-200 1.0]
+[se adm59]
+[wt 0.3]
+[charaMoveEase B 196,-85 0.7 easeInOutSine]
+[wt 0.7]
+[seStop adm59]
+[wt 0.2]
+[se ade385]
+[wt 0.2]
+[charaMoveEase B 176,-60 0.7 easeInOutSine]
+[charaMoveEase G 70,-150 0.7 easeInOutSine]
+[wt 0.2]
+[seStop ade385 0.3]
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 11]
+
+＠徴側
+……ふぅ……[r]どうしようかしら……。
+[k]
+
+[messageOff]
+
+
+[charaTalk B,G]
+[charaMoveReturn B 176,-65 0.6]
+[cueSe SE_21 21_ade578]
+[wt 0.6]
+[charaMoveReturn B 176,-65 0.6]
+[cueSe SE_21 21_ade578]
+[wt 0.6]
+[charaFace G 1]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 4]
+
+＠徴側
+……うぅん……。
+[k]
+
+[messageOff]
+
+
+[charaTalk B,G,H]
+[charaFace H 0]
+[charaScale H 0.8]
+[charaFadein H 0.4 -200,-300]
+[wt 0.4]
+[charaMoveEase H -150,-150 0.5 easeOutQuint]
+[cueSe SE_22 22_ade695]
+[wt 0.7]
+[charaMoveEase H -100,0 0.5 easeOutQuint]
+[cueSe SE_22 22_ade695]
+[wt 1.5]
+
+
+[charaTalk off]
+
+[subRenderMoveEase #A 0,-200 2.0 easeInOutSine]
+[charaMoveEase A -200,180 2.0 easeInOutSine]
+[charaMoveEase F 93,150 2.0 easeInOutSine]
+[charaMoveEase Q 0,-30 2.0 easeInOutSine]
+
+[subRenderMoveEase #C -10,-200 2.0 easeInOutSine]
+
+[charaMoveEase P -200,-200 2.0 easeInOutSine]
+[charaMoveEase B -124,-60 2.0 easeInOutSine]
+[charaMoveEase G -230,-150 2.0 easeInOutSine]
+[charaMoveEase H -400,0 2.0 easeInOutSine]
+
+[wt 2.2]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFace F 0]
+
+＠徴弐
+み、見たでしょ！？[r]そして聞いたでしょ！？
+[k]
+
+＠徴弐
+お姉ちゃ……おほん、普段は冷静沈着で誰よりも[r]格好良くて可愛くて最高のリーダーな姉さんが、あんな！
+[k]
+
+[charaFace A 7]
+
+＠徴弐
+ぼんやり顔で、物憂げな雰囲気で、[r]熱っぽい溜め息なんかついちゃって。
+[k]
+
+[charaFace A 2]
+
+＠徴弐
+ゼッタイ変でしょ、大変でしょ、大問題でしょ！？
+[k]
+
+＠徴弐
+何かあったのってそれとなく聞いても[r]はぐらかされたし！
+[k]
+
+？1：ああなってる理由の心当たりとかは？
+？！
+
+[charaFace A 6]
+
+＠徴弐
+ない。あるわけない。
+[k]
+
+[charaFace A 7]
+[charaFace F 2]
+
+＠徴弐
+……でも……
+[k]
+
+
+＠徴弐
+どこか、ここにいない遠くの誰かを見ているような目。[r]胸を押さえる仕草。物思いとセットの吐息。
+[k]
+
+[bgmStop BGM_EVENT_96 1.5]
+
+＠徴弐
+まさか……考えたくないけど、ひょっとしたら。[r]ひょっとしたら[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.4 1]
+[charaMoveEase C 0,200 0.2 easeOutQuint]
+[cueSe SE_24 24_ade988]
+[seStop 24_ade988 0.7]
+[wt 0.7]
+[bgm BGM_EVENT_94 0.1]
+
+＠C：突然の清姫
+それは、間違いなく！[wt 0.1][r][#ＫＯＩ:あ　い]！[wt 0.2]　[#ＷＡＺＵ:し　　　て]！[wt 0.2]　[#ＲＡＩ:ま ー す]！[wt 0.2]　ですね！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFace F 3]
+[charaFadein A 0.1 -200,180]
+[charaFadein F 0.1 93,150]
+
+＠徴弐
+！？[r]（なんか生えてきた！）
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,200]
+[charaMove C -10,200 0.5]
+[wt 0.7]
+
+＠清姫
+ふーむふむふむ？　あの顔からすると……[r]少なくともますたぁが相手ではないようですね。
+[k]
+
+＠清姫
+え、ソース？
+[k]
+
+[charaFace C 2]
+
+＠清姫
+わたくしほどの恋の達人となれば[r]見ただけでまるっとお見通しでございますが？
+[k]
+
+[charaFace C 1]
+
+＠清姫
+なのでわたくしとしては……頑張ってください、[r]と言うだけですね。
+[k]
+
+＠清姫
+カルデアに『恋愛ＯＫむしろ自然なことでは？　推奨！』[r]な風潮が広まるのは[line 3]
+[k]
+
+＠清姫
+わたくしとますたぁの逢瀬もやりやすくなる、[r]とても前向きな流れですから。
+[k]
+
+＠清姫
+どしどし、ずんずんどうぞ！
+[k]
+
+[messageOff]
+
+
+[charaFace C 0]
+[wt 1.0]
+[charaFace C 3]
+
+＠清姫
+それでは。[r]わたくしたちは、また今宵に……（意味深な視線）
+[k]
+
+[bgm BGM_EVENT_94 2.0 0.7]
+[messageOff]
+
+
+[charaFadeout C 0.4]
+[se ad452]
+[seStop ad452 1.5]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFace F 3]
+[charaFadein A 0.1 -200,180]
+[charaFadein F 0.1 93,150]
+
+＠徴弐
+……誰、今の。
+[k]
+
+？1：突然現れる[#恋:狂気]の伝道師……かな
+？2：ベッドの下にたまに潜んでいる妖精さん……かな
+？！
+
+[charaFace A 2]
+
+＠徴弐
+いや、この際アレのことはどうでもいいけど！
+[k]
+
+[charaFace A 10]
+
+＠徴弐
+ててて、ていうか！　そんな！　間違ってるよね！？[r]まさか、まさかまさか、お姉ちゃんが[line 3]
+[k]
+
+[charaFace A 2]
+[charaFace F 6]
+
+＠徴弐
+[#恋わずらい]！　なんて！
+[k]
+
+？1：おかしくはないのでは？
+
+[bgmStop BGM_EVENT_94 1.0]
+
+[charaFace A 8]
+
+＠徴弐
+は？
+[k]
+
+[charaFace F 2]
+[charaFace I 2]
+
+＠徴弐
+マスター、言葉には気をつけたほうがいい。[r]おかしいよ。おかしいの。
+[k]
+
+＠徴弐
+おかしくないっていうなら私の竹槍トラップ落とし穴の中で[r]白い骨になるまでもう一回考え直して。
+[k]
+
+[charaFace A 5]
+[charaFace J 5]
+
+＠徴弐
+おかしいと思う理由だってちゃんとある。[r]いい？　それはね[line 3]
+[k]
+
+？2：ありえない、と思う？
+
+[bgmStop BGM_EVENT_94 1.0]
+
+[charaFace A 6]
+[charaFace J 6]
+[charaFace F 2]
+[charaFace I 2]
+
+＠徴弐
+ないない、ありえないね。[r]だって[line 3]
+[k]
+
+？！
+
+[messageOff]
+[charaTalk A,J]
+
+[charaFadein J 0.6 -240,190]
+[charaFadein I 0.6 120,150]
+[charaFadein R 0.6 0,-130]
+[wt 1.0]
+
+[charaTalk J]
+[charaFace A 9]
+[charaFace J 9]
+[charaFace F 1]
+[charaFace I 1]
+
+[se ade242]
+
+[charaPut L 0,280]
+[charaEffect L bit_talk_41_r]
+
+＠J：徴弐
+お姉ちゃんが一番好きなのは私だもん！[wt 0.3][bgm BGM_EVENT_27 0.1 0.7]
+[k]
+
+[charaMoveScaleEase J 1.3 0.2 easeInOutSine]
+[charaMoveScaleEase I 1.3 0.2 easeInOutSine]
+[charaMoveScaleEase R 1.3 0.2 easeInOutSine]
+[charaMoveEase J -260,190 0.2 easeInOutSine]
+[charaMoveEase I 130,147 0.2 easeInOutSine]
+[charaMoveEase R 0,-180 0.2 easeInOutSine]
+[wt 0.2]
+
+[se ad186]
+
+＠J：徴弐
+そして私が地球で一番好きなのはお姉ちゃんだもん！
+[k]
+
+[messageOff]
+[charaTalk A,J]
+[charaFadeout J 0.6]
+[charaFadeout I 0.6]
+[charaFadeout R 0.6]
+[charaEffectStop L bit_talk_41_r]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 8]
+
+＠徴弐
+このパーフェクトな二つの理由によって、[r]お姉ちゃんが恋……なんてのは否定されるの。違うの。
+[k]
+
+[charaFace A 2]
+
+＠徴弐
+わかった？　ほらわかったって言って！[wt 0.1][charaMoveScale A 1.0 0.3][charaMoveScale F 1.0 0.3][charaMove A -210,190 0.3][charaMove F 98,158 0.3][se ad7][wt 0.5][r]言えー！（がくがく）[charaFace F 2][subRenderShake #A 0.05 0 6 0][se ade190][seVolume ade190 0 0.8]
+[k]
+
+[messageOff]
+[charaTalk off]
+
+
+[subRenderMoveEase #A 1400,-200 2.5 easeInOutSine]
+[charaMoveEase A -400,180 2.5 easeInOutSine]
+[charaMoveEase F -50,150 2.5 easeInOutSine]
+[charaMoveEase Q -150,-30 2.5 easeInOutSine]
+
+[subRenderMoveEase #C 1390,-200 2.5 easeInOutSine]
+
+[charaMoveEase P 0,-200 2.5 easeInOutSine]
+[charaMoveEase B 176,-60 2.5 easeInOutSine]
+[charaMoveEase G 70,-150 2.5 easeInOutSine]
+[charaMoveEase H -100,0 2.5 easeInOutSine]
+
+[bgmStop BGM_EVENT_27 2.5]
+[seStop ade190 2.5]
+
+[wt 2.5]
+[subRenderShakeStop #A]
+[subRenderFadeout #C 0.1]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 4]
+
+＠徴側
+んー？　さっきから、何だか外が[r]騒がしい気がするわねぇ。弐っちゃん……？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMove B 196,-60 1.5]
+[charaMove G 90,-150 1.5]
+[charaMove H -80,0 1.5]
+[se ade422]
+[seStop ade422 1.0]
+[wt 1.0]
+
+[se ad8]
+[wipeout rightToLeft 0.7 1.0]
+[wait wipe]
+
+[charaFadeout P 0.1]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[subRenderMove #A 0,-200 0.1]
+[charaMove Q 30,-30 0.1]
+[wt 0.1]
+
+[charaLayer B sub #A]
+[charaLayer G sub #A]
+[charaLayer H sub #A]
+[charaDepth B 2]
+[charaDepth G 3]
+[charaDepth H 3]
+
+[wt 0.9]
+
+[wipein leftToRight 0.7 1.0]
+[wait wipe]
+
+
+[charaFace B 4]
+[charaFace G 1]
+[charaFace H 0]
+[charaFadein B 0.4 176,120]
+[charaFadein G 0.4 70,30]
+[charaFadein H 0.4 -100,180]
+[charaMove B 196,120 1.5]
+[charaMove G 90,30 1.5]
+[charaMove H -80,180 1.5]
+[se ade422]
+[seVolume ade422 0 0.3]
+[seVolume ade422 1.5 1.0]
+[wt 1.4]
+[seStop ade422 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+
+＠徴側
+誰もいない……わね。[r]気のせいだったのかしら？
+[k]
+
+[bgm BGM_EVENT_194 0.1]
+
+[charaFace B 5]
+
+＠徴側
+とにかく[line 3]決めたわ。
+[k]
+
+＠徴側
+ずっと部屋で悩んでても仕方ないし。[r]思い切って、みんなの力を借りて……
+[k]
+
+[charaFace B 2]
+
+＠徴側
+言うべきコトを、言っちゃおう……！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+
+[charaFace B 5]
+[charaMoveReturn B 196,115 0.6]
+[charaMoveReturn G 90,25 0.6]
+[charaMoveReturn H -80,175 0.6]
+[wt 1.0]
+[charaFadeout B 0.4]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[se ade422]
+[seStop ade422 1.5]
+[wt 3.5]
+
+
+[charaFadein A 0.4 0,180]
+[charaFadein F 0.4 330,150]
+[se ade422]
+[wt 0.1]
+[seStop ade422 0.1]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+
+＠徴弐
+（わなわな）[charaShake A 0.1 1 1 1.0][charaShake F 0.1 1 1 1.0][charaFace F 2][wt 1.0]
+[k]
+
+[messageOff]
+[charaFace F 0]
+[charaFace A 6]
+[charaMove A -60,180 0.5]
+[charaMove F 270,150 0.5]
+[se ade422]
+[wt 0.1]
+[seStop ade422 0.1]
+[wt 1.0]
+
+＠徴弐
+……いや、まだ。[r]まだ何も決まっちゃいない。うん。
+[k]
+
+[messageOff]
+[charaMove A -120,180 0.5]
+[charaMove F 210,150 0.5]
+[se ade422]
+[wt 0.1]
+[seStop ade422 0.1]
+[wt 1.0]
+
+＠徴弐
+言うべきコト、なんてのも、あの、[r]おぞましくもありえないアレなんかじゃない……
+[k]
+
+[messageOff]
+[charaMove A -180,180 0.5]
+[charaMove F 150,150 0.5]
+[se ade422]
+[wt 0.1]
+[seStop ade422 0.1]
+[wt 1.0]
+
+[charaFace A 2]
+
+＠徴弐
+きっと姉さんには私には思いもつかない[r]深い考えがあるはず！
+[k]
+
+[charaFace F 6]
+
+＠徴弐
+行くよマスター、とりあえず姉さんを尾行だ！
+[k]
+
+[messageOff]
+
+
+[wipeout leftToRight 0.7 1.0]
+[bgmStop BGM_EVENT_194 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[wt 0.1]
+[charaLayer B normal]
+[charaLayer A normal]
+[charaLayer F normal]
+[charaLayer Q normal]
+[charaLayer R normal]
+[wt 0.1]
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+[subCameraFilter #C maskEdge cut359_mask16 3 111,158,255,255 0]
+[charaLayer A sub #C]
+[charaLayer Q sub #C]
+[charaDepth A 2]
+[charaDepth Q 1]
+[charaScale Q 1.1]
+[charaFadein Q 0.1 -300,0]
+[charaFace A 0]
+[charaFadein A 0.1 -270,150]
+
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+
+[charaScale B 0.85]
+[charaScale E 0.85]
+[charaScale D 0.85]
+
+[charaDepth B 4]
+[charaDepth E 2]
+[charaDepth D 3]
+[charaDepth S 1]
+[charaFadein S 0.1 0,-200]
+[wt 0.1]
+
+[wipein rightToLeft 0.7 1.0]
+[wait wipe]
+[bgm BGM_EVENT_147 0.1]
+
+
+[charaTalk off]
+[charaFace D 1]
+[charaFace E 6]
+[charaFace B 0]
+[charaFadein D 0.1 0,-40]
+[charaFadeinFSR E 0.1 300,-40]
+[charaFadeinFSL B 0.1 -150,-40]
+[wt 1.0]
+[charaFace D 0]
+[charaMoveReturn D 0,-45 1.0]
+[wt 1.2]
+[charaFace E 15]
+[charaFace B 5]
+[charaMoveReturnFSL B -150,-45 0.4]
+[wt 0.4]
+[charaMoveReturnFSL B -150,-45 0.4]
+[wt 1.0]
+
+
+[subRenderFadeinFSSideR #C 0.6 900,-250]
+[subRenderMoveEaseFSSideR #C 550,-250 0.6 easeOutSine]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk A]
+
+＠徴弐
+……？[r]あまり見ない組み合わせだね。
+[k]
+
+[messageOff]
+
+
+[charaMoveReturn A -270,145 0.6]
+[se ade96]
+[wt 1.0]
+
+＠徴弐
+この『極秘★お姉ちゃん交友関係リスト』を見ても、
+[k]
+
+＠徴弐
+特にあの平安文学コンビと親しいってわけじゃ[r]なかったはずだけど。
+[k]
+
+？1：何そのリスト……？
+？！
+
+[charaFace A 1]
+
+＠徴弐
+これは私たちがカルデアに来てからの、
+[k]
+
+＠徴弐
+お姉ちゃんが日々誰と何を話してどんな笑顔を[r]浮かべていたかという記録を元にした[line 3]
+[k]
+
+[charaFace A 3]
+
+＠徴弐
+お、おほん。いや、極秘は極秘だから。[r]いくらマスターでも詳しくは言えないね。
+[k]
+
+[charaFace A 0]
+
+＠徴弐
+とにかく姉さん、[r]二人と何を話してるんだろう……？
+[k]
+
+[messageOff]
+[subRenderMoveEaseFSSideR #C 900,-250 0.6 easeInSine]
+[subRenderFadeout #C 0.6]
+[wt 0.8]
+[charaFadeout A 0.1]
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaLayer A normal]
+[charaLayer Q normal]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+
+＠紫式部
+はい、お求めの効果を出すのに必要なものは、[r]最低限そんなところでしょうか……？
+[k]
+
+[charaFace D 1]
+
+＠紫式部
+それを持ってきていただけたら、[r]私でもなんとか作成はできるかと。
+[k]
+
+[charaTalk B]
+[charaFace B 9]
+
+＠徴側
+なるほど……わかりました、探してみます。[r]ありがとうございました！
+[k]
+
+[charaTalk E]
+[charaFace E 6]
+
+＠清少納言
+でも[#徴側:チャッピー]、ほんとに大丈夫？[r]あたしちゃんも一緒に行こっか？
+[k]
+
+[charaFace E 5]
+
+＠清少納言
+待てよ、さっき頼んだカレーがそろそろ出てくるな。[r]しゃーない、皿ごと持っていくか……。
+[k]
+
+[charaTalk B]
+[charaFace B 1]
+
+＠徴側
+いえいえ、お気持ちはありがたいですが大丈夫です！[r]もし人手が必要でも、きっとなんとかなるかと。
+[k]
+
+[charaTalk E]
+[charaFace E 8]
+
+＠清少納言
+そういうとこは、やっぱりお姉ちゃんだねー。[r]オッケー、[#徴弐:ニンニン]にもよろしく！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace B 9]
+[charaMoveReturnFSL B -150,-50 0.5]
+[wt 1.2]
+
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout S 0.1]
+
+[charaTalk depthOff]
+[charaDepth Q 1]
+[charaDepth B 2]
+[charaDepth A 3]
+[charaDepth R 4]
+[charaDepth K 5]
+
+[charaScale B 1.0]
+[charaScale A 1.0]
+[charaScale Q 1.1]
+[charaFadein Q 0.1 0,-250]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_147 1.0]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 -196,0]
+
+＠徴弐
+ん、姉さんが二人と別れて……こっちに来る……？
+[k]
+
+[messageOff]
+[se ade423]
+[seStop ade423 1.3]
+[charaMove A -146,0 1.3]
+[wt 0.9]
+[charaFadeout A 0.4]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 7]
+[se ade422]
+[seVolume ade422 0.0 0.3]
+[seVolume ade422 1.0 1.0]
+[wt 0.6]
+[charaFadeinFSL B 0.4 -10,0]
+[wt 0.4]
+[seStop ade422 0.1]
+[wt 0.4]
+
+＠徴側
+くんくん。[charaMoveReturnFSL B -10,-2 0.3][wt 0.3][charaMoveReturnFSL B -10,-2 0.3][wt 0.3]弐っちゃんの匂いがするから、[r]近くにはいると思うんだけど……。
+[k]
+
+[charaFace B 0]
+
+＠徴側
+弐っちゃーん？　いないー？[r]頼みがあるのー！
+[k]
+
+[messageOff]
+
+
+[charaTalk off]
+[charaFace A 9]
+[charaFadeinFSR A 0.1 110,0]
+[charaMoveFSR A 10,0 0.1]
+[se ad73]
+[wt 0.3]
+
+[charaTalk on]
+[charaTalk A]
+[bgm BGM_CHOUSIMAI_1 0.1]
+
+＠徴弐
+いるいる、いるよもちろん？[r]何かな姉さん、頼みって。何でも聞くけど！
+[k]
+
+[charaTalk B]
+[charaFace B 1]
+
+＠徴側
+あ、やっぱりいたー。
+[k]
+
+[charaFace B 0]
+
+＠徴側
+あら、マスターさんも一緒だったんですね？
+[k]
+
+
+[charaTalk A]
+[charaFace A 3]
+
+＠徴弐
+いやたまたまでなりゆきで偶然で特に意味なく、ね？[r]二人で尾行とかしてたわけじゃないよ、まったく。
+[k]
+
+？1：こんにちはー
+
+[charaTalk B]
+[charaFace B 1]
+
+＠徴側
+はいこんにちは。
+[k]
+
+？2：はんなまー！
+
+[charaTalk B]
+[charaFace B 1]
+
+＠徴側
+はい、はんなま、です。[r]元気のいい挨拶、素晴らしいですね。
+[k]
+
+？！
+
+[charaFace B 0]
+
+＠徴側
+ちょうどよかったかもです。
+[k]
+
+＠徴側
+弐っちゃんには最初からお願いするつもりだったけど、[r]もう一人くらい助っ人がいるかも、と思ってたから。
+[k]
+
+[charaTalk A]
+[charaFace A 6]
+
+＠徴弐
+助っ人。
+[k]
+
+[charaFace A 8]
+
+＠徴弐
+わかった。誰かを闇討ちするんだね。任せて。
+[k]
+
+＠徴弐
+痕跡は残さないほうがいい？[r]それともあえて残して仲間に恐怖を与える？
+[k]
+
+[charaTalk B]
+[charaFace B 11]
+
+＠徴側
+いや、そういうことじゃなくて。
+[k]
+
+[charaFace B 0]
+
+＠徴側
+ええと……少しお願いがあるんです。
+[k]
+
+＠徴側
+おかしな話に思えるかもなんですけど、[r]聞いてくれますか？
+[k]
+
+？1：何でもどうぞ
+？！
+
+[charaTalk A]
+[charaFace A 9]
+
+＠徴弐
+うんうん、闇討ちじゃなくても何でも言って！
+[k]
+
+[charaTalk B]
+[charaFace B 5]
+[bgmStop BGM_CHOUSIMAI_1 0.8]
+
+＠徴側
+はい。実は、わたし[line 3]
+[k]
+
+[messageOff]
+
+
+[charaTalk off]
+
+[charaScale K 1.25]
+[charaScale R 1.25]
+
+[charaFace K 5]
+[charaFadein K 0.6 240,0]
+[charaFadein R 0.6 0,-250]
+[wt 0.6]
+
+[charaFadeout B 0.1]
+[charaFace A 9]
+[charaFadein A 0.1 -196,0]
+[wt 0.4]
+
+[charaFace K 2]
+[se ade242]
+[wt 0.1]
+
+＠徴側
+どうしても、ある人の髪の毛が欲しくて！
+[k]
+
+[messageOff]
+[charaMoveScaleEase K 1.3 0.2 easeInOutSine]
+[charaMoveScaleEase R 1.3 0.2 easeInOutSine]
+[charaMoveEase K 250,0 0.2 easeInOutSine]
+[charaMoveEase R 0,-270 0.2 easeInOutSine]
+[wt 0.2]
+
+＠徴側
+おまじないというか、[se ad186][r]お守りを作ってもらうために必要なんです！
+[k]
+
+[messageOff]
+[charaFadeout K 0.6]
+[charaFadeout R 0.6]
+[wt 1.2]
+
+
+[charaTalk on]
+[charaTalk A]
+
+＠徴弐
+は？[charaCrossFade A 1098309800 9 0.1][cueSe Servants_9942260 bac1454][seVolume bac1454 0 0.6][se ad148][seVolume ad148 0 0.1][se ad541][seVolume ad541 0 0.1][wt 0.4][seStop ad148 0.2][seStop ad541 0.4]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

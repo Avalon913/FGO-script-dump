@@ -1,0 +1,632 @@
+
+
+
+＄91-40-43-01-4-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4043001 1 太公望]
+[charaSet B 4043001 1 太公望2]
+[charaSet C 1014001 1 フェルグス]
+[charaSet D 2021000 1 巴御前]
+
+[sceneSet E 10000 1]
+[charaScale E 1.1]
+[sceneSet F 131200 1]
+[charaScale F 1.3]
+[sceneSet G 127700 1]
+[charaScale G 1.4]
+[sceneSet H 127700 1]
+[charaScale H 1.01]
+[sceneSet I 127701 1]
+[charaScale I 1.01]
+
+[sceneSet J 131200 1]
+[sceneSet K 131200 1]
+[sceneSet L 131200 1]
+
+[imageSet M cut380_mkd00_full 1]
+[imageSet N cut380_mkd00_full 1]
+[imageSet O cut380_mkd00_full 1]
+[imageSet P cut380_mkd00_full 1]
+[charaFilter O silhouette 00000080]
+[charaFilter P silhouette 00000080]
+
+[charaSet R 98115000 1 エフェクト用1]
+[charaSet S 98115000 1 エフェクト用2]
+[charaSet T 98115000 1 エフェクト用3]
+
+[charaPut R 2000,2000]
+[charaEffect R bit_talk_sand_dust_back_fs]
+[charaPut S 2000,2000]
+[charaEffect S bit_talk_sand_dust_front_fs]
+
+[subCameraOn 3]
+[charaLayer J sub #A]
+[charaLayer A sub #A]
+[charaLayer K sub #B]
+[charaLayer B sub #B]
+[charaLayer L sub #C]
+[charaLayer N sub #C]
+[charaLayer P sub #C]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 2]
+
+[charaScale J 1.6]
+[charaScale K 1.05]
+[charaScale L 1.3]
+[charaScale A 1.6]
+
+[subCameraFilter #A maskEdge cut359_mask04 30 0,0,0,255 1]
+[subCameraFilter #B maskEdge cut359_mask20 30 0,0,0,255 1]
+[subCameraFilter #C maskEdge cut359_mask20 30 0,0,0,255 1]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth A 2]
+[charaDepth K 1]
+[charaDepth B 2]
+[charaDepth L 1]
+[charaDepth N 2]
+[charaDepth P 3]
+
+[charaFace A 5]
+[charaFadein J 0.1 50,200]
+[charaFadein A 0.1 250,260]
+
+[charaFace B 5]
+[charaFadein K 0.1 0,110]
+[charaFadein B 0.1 0,200]
+
+[charaFadein L 0.1 350,-200]
+[charaFadein N 0.1 0,200]
+[charaPut P 0,200]
+[charaFadeTime P 0.1 0.5]
+
+[scene 131200]
+
+[charaDepth F 1]
+[charaDepth R 2]
+[charaDepth M 3]
+[charaDepth O 4]
+[charaDepth S 5]
+[charaDepth E 6]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+
+[se ad619]
+[seVolume ad619 0 0]
+[seVolume ad619 0.5 1.0]
+[shake 0.02 2 2 0]
+[charaFadein F 0.6 0,-170]
+[wt 2.2]
+
+[seStop ad619 0.5]
+[cueSe Servants_9943340 m86311 0 0.7]
+[se ad238]
+[se ad214]
+[shake 0.03 2 4 1.0]
+[charaPut T 1]
+[charaEffect T bit_talk_impactlanding]
+[wt 0.5]
+[fadeout white 0.5]
+[wait fade]
+
+[charaPut R 1]
+[charaPut S 1]
+[charaFadein O 0.1 1]
+[cameraMove 0.1 0,-10 1.1]
+[wt 1.5]
+
+[fadein white 2.0]
+[wait fade]
+
+[seStop ad214 1.0]
+[cueSe Servants_9941940 bac1081]
+[effect bit_talk_voice02]
+[charaEffectStop R bit_talk_sand_dust_back_fs]
+[charaEffectStop S bit_talk_sand_dust_front_fs]
+[wt 0.15]
+[shake 0.02 2 1 2.5]
+[wt 1.0]
+[cueSeStop bac1081 1.5]
+[wt 1.5]
+[effectStop bit_talk_voice02]
+
+[cameraHome 2.5]
+[charaFadein M 0 1]
+[charaFadeout O 0.7]
+[se ad989]
+[cueSe SE_21 21_ad1083]
+[cueSe SE_23 23_ad1287]
+[wt 1.0]
+[seStop ad989 1.5]
+[cueSeStop 21_ad1083 1.5]
+[cueSeStop 23_ad1287 1.5]
+[charaPut O 2000,2000]
+[charaFadeTime O 0.1 0.5]
+[wt 2.0]
+
+[bgm BGM_MAP_63 0.1]
+
+[charaPut O 1]
+[charaTalk A]
+[subRenderFadein #A 0.3 -100,-320]
+[subRenderMove #A 0,-320 0.3]
+[wt 0.3]
+
+＠太公望
+…………お出ましですね。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadeout #A 0.4]
+[charaFadein E 0.4 0,-200]
+[subRenderFadeinFSR #B 0.4 250,-330]
+[subRenderFadeinFSL #C 0.4 -250,-150]
+[subRenderMoveFSR #B 250,-280 40.0]
+[subRenderMoveFSL #C -250,-200 40.0]
+[wt 0.6]
+[charaScale A 1.0]
+[charaFadeout J 0.1]
+[charaFadeout A 0.1]
+[charaPut O 2000,2000]
+
+＠太公望
+[#昏:くら]くうねるもの。[r]寡聞にして存じ上げませんが、どうも古き怪のようだ。
+[k]
+
+＠太公望
+影はともかく大本は神怪……[r]いわゆる神獣にも及ぶ程の域でしょう。
+[k]
+
+＠太公望
+或いは神霊という可能性もあるか。
+[k]
+
+[charaFace B 4]
+
+＠太公望
+どうあれ、あなたは礼拝堂を[line 3][r]封印の破壊を望んでいる。
+[k]
+
+＠太公望
+僕たちは不死の[#影:あなた]を倒せない以上、[r]礼拝堂を破壊して、大本へ挑むより他にない。
+[k]
+
+[charaFace B 1]
+
+＠太公望
+当然ながら、地中深くで眠る大本は[r]不死ならずとも……
+[k]
+
+＠太公望
+それはもう、とんでもない強さなんでしょうね？
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.5]
+[subRenderFadeout #C 0.5]
+[charaFadeout E 0.5]
+[wt 0.7]
+[charaFadeout K 0.1]
+[charaFadeout B 0.1]
+
+[charaShake M 0.03 2 2 2.0]
+[se ad990]
+[cueSe SE_21 21_ad1083]
+[cueSe SE_23 23_ad1287]
+[wt 1.0]
+
+[charaLayer A normal]
+[charaLayer B normal]
+
+[cueSeStop ad990 1.5]
+[cueSeStop 21_ad1083 1.5]
+[cueSeStop 23_ad1287 1.5]
+[charaPut O 2000,2000]
+[wt 1.0]
+[charaFadeout F 0.5]
+[charaFadeout M 0.5]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠太公望
+はい、はい。[r]何を言っているか分かりませんが、正解ですね？
+[k]
+
+[bgmStop BGM_MAP_63 1.2]
+
+[charaFace A 5]
+
+＠太公望
+……。[r]……。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth A 1]
+[charaDepth F 2]
+[charaDepth B 3]
+
+[charaScale F 1.2]
+[charaScale B 1.15]
+[charaFace B 5]
+[charaFadein F 0.5 0,-300]
+[charaFadein B 0.5 1]
+[wt 1.0]
+
+[bgm BGM_BATTLE_128 0.1]
+
+[charaFaceFade B 13 0.2]
+
+＠太公望
+………………舐めてますよね？
+[k]
+
+＠太公望
+いえ言わなくてもいいですよ。[r]そういうの、分かるので。
+[k]
+
+[charaFace B 15]
+
+＠太公望
+舐められてるなァ僕！[r]となれば、多少の無茶はしなきゃいけない！
+[k]
+
+[messageOff]
+[charaFace B 13]
+[charaEffect A bit_talk_sorcery_tik_01]
+[wt 0.1]
+[cueSe SE_21 21_ade669]
+[wt 2.0]
+[se ad478]
+[charaMoveReturn B 0,-4 0.4]
+[wt 0.6]
+[se ad478]
+[charaMoveReturn B 0,-4 0.3]
+[wt 0.3]
+[se ad478]
+[charaMoveReturn B 0,-4 0.3]
+[wt 1.0]
+[charaFace B 10]
+
+＠太公望
+[line 6][#崑崙山:こんろんざん]は！　元始天尊に奉る！
+[k]
+
+[messageOff]
+[fadeout white 3.0]
+[se ad927]
+[seVolume ad927 0 0]
+[effect bit_talk_noble_light_r]
+[seVolume ad927 3.0 0.7]
+[wt 2.8]
+
+[cueSe SE_21 21_ade662]
+[se ade251]
+[bgmStop BGM_BATTLE_128 2.2]
+[wt 1.2]
+[effectStop bit_talk_noble_light_r]
+[wait fade]
+
+[charaFadeout N 0.1]
+[charaFadeout P 0.1]
+[charaLayer N sub normal]
+[charaLayer P sub normal]
+[wt 0.1]
+
+[charaSet N 1014001 1 フェルグス2]
+[charaSet P 2021000 1 巴御前2]
+
+[charaLayer N sub #A]
+[charaLayer P sub #B]
+[subCameraFilter #A maskEdge cut359_mask16 5 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask10 5 0,0,0,255 0]
+
+[charaDepth N 2]
+[charaDepth P 2]
+[charaScale J 1.2]
+[charaScale N 1.2]
+[charaScale K 1.2]
+[charaScale P 1.2]
+
+[charaFace N 2]
+[charaFadein J 0.1 -500,0]
+[charaFadein N 0.1 10,225]
+[charaFace P 2]
+[charaFadein K 0.1 500,0]
+[charaFadein P 0.1 0,225]
+
+[charaEffectDestroy A bit_talk_sorcery_tik_01]
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[effectDestroy bit_talk_lightning_01r_fs]
+[charaEffectDestroy B bit_talk_charge_red]
+
+[charaDepth I 1]
+[charaDepth H 2]
+[charaFadein G 0.1 -260,-350]
+[wt 1.5]
+
+[bgm BGM_EVENT_133 0.1]
+[charaMove G -190,-350 15.0]
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+＠太公望
+魚尾金冠、[#鶴氅:かくしょう]を[#纏:まと]い、[#乾:けん]と[#坤:こん]を[#双:ふた]つに結ぶ！[r][#仙風道骨:せんぷうどうこつ]、神清にして！　極楽神仙、陣に臨む！
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ade661]
+[fadeout white 0.2]
+[wait fade]
+
+[charaFadeout G 0]
+[charaFadein H 0 0,-200]
+[wt 0.1]
+
+[sceneSet G 127700 1]
+[charaScale G 1.4]
+[charaDepth G 3]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.3]
+
+＠太公望
+我が諸手、雌雄の宝剣に相違なし！[r]地理天文を包含し、我が[#裡:うち]には[#八卦:はっけ]あり！
+[k]
+
+＠太公望
+すなわち我が身は神仙臨陣に似たり！
+[k]
+
+＠太公望
+[line 3]以下略！
+[k]
+
+？1：えっ超高速！
+？2：よく知らないけど、そういうのアリなの！？
+？！
+
+[messageOff]
+[charaFadein G 0.6 -170,-300]
+[charaMove G -170,-350 15.0]
+[wt 0.8]
+
+＠太公望
+緊急なので！　ええ！
+[k]
+
+＠太公望
+東王父、炎帝・神農、西王母、[#泰皇:たいこう]・女媧！[r]後ほど玄気を返納いたしますので平にご容赦！
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ade662]
+[fadeout white 0.2]
+[wait fade]
+
+[charaFadeout G 0]
+[cameraMove 0.1 -100,-40 1.2]
+[charaFadein I 0.1 0,-200]
+[wt 0.1]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.3]
+
+＠太公望
+[line 3]特権領域・超高速接続！
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ad1378]
+[se ad289]
+[flashin once 0.1 0.4 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[cameraMoveEase 0,0 0.6 easeOutCubic 1.0]
+[charaFadeout H 0.1]
+[wt 0.9]
+
+＠太公望
+[line 3][#対象の伝承防御を強制破棄]！
+[k]
+
+＠太公望
+[line 3][#大本の魂を端末に強制接続]！
+[k]
+
+＠太公望
+[line 3]更にもうひとつ！[r][line 3]是より後、対象は金気に依って立つものとする！
+[k]
+
+[messageOff]
+[se ad743]
+[fadeout white 1.0]
+[wait fade]
+
+[charaFadeout I 0.1]
+
+[scene 131200]
+
+[charaDepth F 1]
+[charaDepth M 2]
+[charaScale F 1.3]
+[charaFadein F 0.1 0,-170]
+[wt 2.0]
+
+[seStop ad743 1.5]
+[fadein white 1.5]
+[wait fade]
+
+[charaFadein M 0.1 1]
+[wt 0.3]
+[se ad193]
+[effect bit_talk_debuff]
+[wt 1.2]
+
+[se ad18]
+[charaShake M 0.03 2 2 1.5]
+[wt 2.0]
+
+[charaFadeout F 0.5]
+[charaFadeout M 0.5]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠巴御前
+ご覧くださいマスター！[r]影なるものが[#纏:まと]う、魔力の気配が何やら……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠フェルグス
+明らかに弱っているな！[r]それに[line 3]
+[k]
+
+＠フェルグス
+虚ろの影、といった気配ではないぞ。[r]実体があり、脈動する心臓やらが感じられる！
+[k]
+
+＠フェルグス
+太公望殿、やったのか！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠太公望
+ええ、はい。やってやりましたとも。[r]端末への攻撃が大本へ反映されるよう[#繋ぎました]！
+[k]
+
+＠太公望
+フレイザー風に言えば類感魔術とかその類です！[r]まあ、端的に言って凄いですよははははは！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠巴御前
+……つまり、あれを叩けば。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠フェルグス
+地中深くとやらの大本を殺せる、という訳だ！[r]でかしたぞ太公望殿！
+[k]
+
+？1：でかした！
+？2：太公望、グッジョブ！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠太公望
+いやあ、それほどでもありますね！
+[k]
+
+＠太公望
+[#おまけ]で皆さんの武具に強化を仕込みました。[r]怪物退治といえばコレ！　とっておきの三昧真火だ！
+[k]
+
+＠太公望
+金気の性質を強制付与された相手には、[r]それはもうびっくりする程、効きますとも！
+[k]
+
+[charaFace A 5]
+
+＠太公望
+さあ、マスター。[r][line 3]号令を！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+？1：みんな、一斉攻撃！
+？2：畳み掛けよう！
+？！
+
+[charaTalk off]
+[charaDepth F 1]
+[charaDepth A 2]
+
+[charaScale F 1.2]
+[charaScale A 1.2]
+[charaFace A 2]
+[charaFadein F 0.3 0,-250]
+[charaFadein A 0.3 0,50]
+[charaMoveEase F 0,-300 0.3 easeOutSine]
+[charaMoveEase A 0,0 0.3 easeOutSine]
+[subRenderFadeinFSR #A 0.3 400,-250]
+[subRenderMoveEaseFSR #A 350,-250 0.3 easeOutSine]
+[subRenderFadeinFSL #B 0.3 -400,-250]
+[subRenderMoveEaseFSL #B -350,-250 0.3 easeOutSine]
+[wt 0.5]
+
+＠三人
+了解！
+[k]
+
+[charaTalk on]
+[charaTalk A]
+
+＠太公望
+ここで幕としましょう、皆さん！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_133 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

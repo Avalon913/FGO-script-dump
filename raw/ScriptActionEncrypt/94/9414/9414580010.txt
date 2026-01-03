@@ -1,0 +1,924 @@
+
+＄94-14-58-00-1-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098257300 1 ダ・ヴィンチ]
+[charaSet B 1098255100 1 ゴルドルフ]
+[charaSet C 1098257800 1 マシュ]
+[charaSet D 1098123000 1 ムニエル]
+[charaSet E 3057000 1 ビショーネ]
+[charaSet F 1098328400 1 ヴリトラ]
+[charaSet G 1098203810 1 ムニエル_黒仮面]
+[charaSet H 1098269330 1 エルロン]
+[charaSet I 2015001 1 アルジュナ]
+[charaSet J 1019001 1 ラーマ]
+
+[charaSet K 1098257300 1 ダ・ヴィンチ_演出用]
+[charaSet L 1098257800 1 マシュ_演出用]
+[charaSet M 1098123000 1 ムニエル_演出用]
+[charaSet N 1098328400 1 ヴリトラ_演出用]
+[charaSet O 1098328400 1 ヴリトラ_演出用]
+[charaSet P 1098328400 1 ヴリトラ_演出用]
+
+[sceneSet Q 132900 1]
+[sceneSet R 132900 1]
+[sceneSet S 187300 1]
+[sceneSet T 187300 1]
+[sceneSet U 187300 1]
+
+[sceneSet V 253200 1]
+[sceneSet W 253200 1]
+
+[sceneSet X 10000 1]
+[charaScale X 1.1]
+[imageSet Y back10000 1 1]
+[charaScale Y 1.01]
+[imageSet Z back10000 1 1]
+[charaScale Z 1.01]
+
+[subCameraOn 2]
+[charaLayer K sub #A]
+[charaLayer L sub #A]
+[charaLayer M sub #A]
+[charaLayer Q sub #A]
+[subCameraFilter #A maskEdge cut359_mask11 5 255,255,255,255 0]
+
+[charaTalk depthOff]
+[charaDepth Q 1]
+[charaDepth L 2]
+[charaDepth M 3]
+[charaDepth K 4]
+
+[charaScale K 1.1]
+[charaScale L 1.1]
+[charaScale M 1.1]
+[charaScale Q 1.1]
+[charaFace K 22]
+[charaFadein K 0 520,250]
+[charaFadein Q 0 520,0]
+
+[charaDepth C 5]
+[charaDepth A 6]
+[charaDepth V 7]
+[charaDepth W 8]
+[charaDepth S 9]
+[charaDepth N 10]
+[charaDepth T 11]
+[charaDepth O 12]
+[charaDepth U 13]
+[charaDepth P 14]
+[charaDepth R 15]
+[charaDepth E 16]
+[charaDepth F 17]
+[charaDepth I 18]
+[charaDepth J 19]
+
+[scene 132900]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_MAP_23 0.1]
+
+＠ダ・ヴィンチ
+さて、[%1][&君:ちゃん]。[r]来てもらった理由は他でもない。
+[k]
+
+？1：特異点が発生したんですね
+？2：準備は出来ています
+？！
+
+[charaFace A 2]
+
+＠ダ・ヴィンチ
+頼もしい発言、ありがとう。[r]今回も妙な事になっていてね。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠ゴルドルフ
+奇妙でない特異点など今までになかっただろう。[r]キリエライト、説明してやりなさい。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠マシュ
+はい。今回、わたしは管制室側のスタッフとして[r]発言させていただきますね。
+[k]
+
+[charaFace C 0]
+
+＠マシュ
+まず、最も特徴的な点は[line 3]
+[k]
+
+＠マシュ
+過去にも何度か特殊な状況下で[r]観測されたパターンではありますが、
+[k]
+
+＠マシュ
+今回の特異点は『現在』に発生しています。[r]より具体的に言えば、この白紙化地球の空に、です。
+[k]
+
+？1：空？
+？！
+
+
+＠マシュ
+光学観測もできています。[r]その映像がこちらです。
+[k]
+
+[bgmStop BGM_MAP_23 1.5]
+
+[messageOff]
+[se ad172]
+[charaMoveReturn C 0,-3 0.4]
+[wt 0.6]
+[charaMoveReturn C 0,-3 0.4]
+[wt 0.4]
+[charaMoveReturn C 0,-3 0.3]
+[seStop ad172 0.4]
+[wt 0.4]
+[se ad15]
+[wt 0.5]
+[se ad1]
+[wt 0.2]
+[charaScale V 1.01]
+[charaFadein V 0.6 0,-200]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.7]
+
+[bgm BGM_MAP_57 0.1]
+
+[charaTalk off]
+[subRenderFadeinFSSideR #A 0.4 -160,-170]
+[subRenderMoveFSSideR #A -130,-200 0.4]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+見ての通り、とんでもなく巨大な黒雲に[r]覆われているような外観の特異点だ。
+[k]
+
+＠ダ・ヴィンチ
+もちろん、意味合い的には[r]『そう見えているだけ』が近い。
+[k]
+
+＠ダ・ヴィンチ
+たとえば飛行機や気球で普通に[r]突っ込んでいったとしても中には入れない。
+[k]
+
+＠ダ・ヴィンチ
+異聞帯を覆っていた嵐の壁とも違う。[r]レイシフトでなければ侵入できない。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaScale W 1.3]
+[charaTalk L]
+[charaFace L 6]
+[charaFadein L 0.1 515,245]
+
+＠マシュ
+よく観察すれば分かるのですが、[charaFadein W 0.8 190,-200][charaMove W 190,-350 35.0]
+[k]
+
+＠マシュ
+あの黒雲の内と外の境目は、[r]現実ではありえない様相を呈しています。
+[k]
+
+＠マシュ
+つまり厳密には、黒雲という自然現象ではなく、
+[k]
+
+＠マシュ
+それ以外の『何か』が[r]あの特異点を形作っているのだと思われます。
+[k]
+
+？1：それ以外の何かというと……？
+？！
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaFace K 34]
+[charaFadein K 0.1 520,250]
+
+＠ダ・ヴィンチ
+うーん。[charaFadeout W 0.7]実を言うと、あの特異点には[r]見た目通りの部分もあってね。
+[k]
+
+＠ダ・ヴィンチ
+内部のパラメータが嵐みたいに荒れているんだ。[r]だから中の観測は難しいんだけど……
+[k]
+
+[charaFace K 22]
+
+＠ダ・ヴィンチ
+現状、二つの要素だけがひとまず確定できている。
+[k]
+
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+『[#空が壊れている]』『[#安定した足場はある]』[r]というのがその二点だ。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.5]
+[charaFadeout V 0.5]
+[wt 0.7]
+
+[charaPut Q -150,-50]
+[charaPutFSL K -70,200]
+[subCameraFilter #A maskEdge cut359_mask15 5 255,255,255,255 0]
+
+＠ムニエル
+空が壊れているのに足場がある？[r]そもそも空には地面はないですよ？
+[k]
+
+
+？1：空が壊れてるってことは
+？2：空が空じゃなくなってる、みたいな？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+まあ、そう考えるのが妥当だろうね。
+[k]
+
+＠ダ・ヴィンチ
+フワッとした理解だけど、[r]そのレベルの情報しか私たちは得られていない。
+[k]
+
+＠ダ・ヴィンチ
+それくらいのニュアンスで[r]空に関する何かの異常が起こっている、
+[k]
+
+＠ダ・ヴィンチ
+ぐらいの受け止め方をしてくれればいい。
+[k]
+
+＠ダ・ヴィンチ
+結局のところ私たちに打てる手は、[r]二番目の観測情報を信じて[line 3]
+[k]
+
+[charaFace A 22]
+
+＠ダ・ヴィンチ
+つまり、レイシフトで突入しての情報集め、[r]という事になる。
+[k]
+
+？1：足場があるんなら、まぁなんとかなるかな……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+すみません。できるだけマスターに事前情報を[r]多くお渡ししたいところではあるのですが、
+[k]
+
+＠マシュ
+現時点ではまだ不明瞭な点も多くて……。
+[k]
+
+[bgmStop BGM_MAP_57 3.0]
+
+＠F：外からの声
+どーいうことじゃー！？[messageShake 0.04 3 3 0.4][wt 0.2][charaFace C 5]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 35]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+そう、他の懸念事項もなくはないんだ。[r]まだ調査が必要で詳しいことは言えないんだけど。
+[k]
+
+＠ダ・ヴィンチ
+まさに、どーいうことじゃー、なことが[line 3][wt 0.7][charaFace A 24][r]…………何、今の声？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth Y 20]
+[charaDepth Z 21]
+[charaFadein Y 0.1 0,-850]
+[charaFadein Z 0.1 0,850]
+[charaMove Y 0,-738 1.2]
+[charaMove Z 0,738 1.2]
+[wt 1.5]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1 0.7]
+
+＠外からの声Ｂ
+わっ、と。あぶないあぶない、[r]ぶつかっちゃうところでした。
+[k]
+
+＠外からの声Ｂ
+廊下を走ったりおっきな声出したりしたら[r]ダメですよー。
+[k]
+
+＠外からの声Ｂ
+……あんまり見ない子蛇さんですけど……[r]迷子かなー？
+[k]
+
+＠外からの声Ａ
+ちがーう！[messageShake 0.04 3 3 0.7]　ここに用があるのじゃ！
+[k]
+
+＠外からの声Ｂ
+えーと、ここに？　ホントに？　でも、[r]今は大事なブリーフィング中のはずだから……
+[k]
+
+＠外からの声Ｂ
+代わりにわたしと遊びません？[wt 1.2][r]……って、ダメですってばー！
+[k]
+
+[messageOff]
+[se ad8]
+[messageOff]
+[charaMove Y 0,-850 1.0]
+[charaMove Z 0,850 1.0]
+[charaScale R 1.3]
+[charaFadein R 0.6 -100,-320]
+[charaMoveEase R -190,-320 0.8 easeOutSine]
+[wt 0.6]
+[se ade421]
+[wt 0.2]
+[charaFadeout Y 0.1]
+[charaFadeout Z 0.1]
+[wt 0.2]
+
+[seStop ade421 0.4]
+[charaScale E 1.3]
+[charaTalk E]
+[charaFace E 21]
+[charaFadein E 0.4 400,-30]
+[charaMoveEase E 300,-30 0.6 easeOutCubic]
+[wt 1.0]
+
+[charaTalk K]
+[charaFace K 24]
+[subRenderFadein #A 0.4 -200,-200]
+[wt 0.4]
+
+＠K：ダ・ヴィンチ
+あれ、ビショーネ？
+[k]
+
+[charaTalk E]
+[charaFace E 17]
+
+＠ビショーネ
+あっ、す、すみません！
+[k]
+
+＠ビショーネ
+入る気はなかったんですけど、[r]この子を止めようとしたら、ついうっかり……。
+[k]
+
+[charaFace E 19]
+
+＠ビショーネ
+むむ。思わずだっこしちゃいましたけど、[r]ちょうどいいサイズでだっこしがいがありますね。
+[k]
+
+[se adm69]
+[charaMove E 295,-30 0.3]
+
+＠ビショーネ
+むぎゅー。
+[k]
+
+[se ad77 0.5]
+[charaScale F 1.3]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.3 150,-365]
+
+＠F：？？？
+こらっ、はーなーせー！[charaShake F 0.04 3 3 1.0]
+[k]
+
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+？1：？
+？2：……！？
+？！
+
+[messageOff]
+[charaTalk C,F]
+[subRenderFadeout #A 0.4]
+[charaFadeout R 0.4]
+[charaFadeout E 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+[charaFadeout K 0.1]
+[charaFadeout Q 0.1]
+
+[charaLayer P sub #A]
+[charaLayer U sub #A]
+[subCameraFilter #A normal]
+[charaLayer F sub #B]
+[subCameraFilter #B through]
+[subRenderDepth #A 2]
+[subRenderDepth #B 1]
+[charaFace F 0]
+[charaFadein F 0.1 0,550]
+
+＠マシュ
+そ、その子は……！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_HALLOWEEN_2021_1 1.8]
+
+[charaTalk A]
+[charaFace A 33]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+まさかだけど、キミ[line 3]
+[k]
+
+＠F：？？？
+うむ。よく見るがいい！
+[k]
+
+[messageOff]
+[charaScale S 1.4]
+[charaScale N 1.7]
+[charaTalk F,N,O,P]
+[charaFace N 0]
+[charaFadein N 0.6 120,1420]
+[charaFadein S 0.6 30,-150]
+[charaMove N 180,1420 5.0]
+[charaMove S 90,-150 5.0]
+[wt 0.6]
+[bgm BGM_MAP_123 0.1]
+[wt 0.4]
+[charaFadeout A 0.1]
+[wt 2.0]
+
+[charaScale T 1.4]
+[charaScale O 1.7]
+[charaFace O 0]
+[charaFadein O 0.6 -120,600]
+[charaFadein T 0.6 -30,-275]
+[charaMove O -180,600 5.0]
+[charaMove T -90,-275 5.0]
+[wt 1.0]
+[charaFadeout N 0.1]
+[charaFadeout S 0.1]
+[wt 2.0]
+
+[charaScale U 1.4]
+[charaScale P 1.7]
+[charaFace P 0]
+[charaFadein P 0 0,100]
+[charaFadein U 0 -30,-400]
+[charaMove P 60,100 5.0]
+[charaMove U 30,-400 5.0]
+[subRenderFadein #A 0.6 0,0]
+[wt 0.6]
+[charaScale R 1.6]
+[charaScale F 1.5]
+[subRenderFadein #B 0.1 0,0]
+[charaFadein R 0.1 0,-150]
+[blur lens 0.1 2 20]
+[wt 0.4]
+[charaFadeout O 0.1]
+[charaFadeout T 0.1]
+[wt 2.0]
+
+[subRenderFadeout #A 0.8]
+[wt 1.3]
+[charaFadeout P 0.1]
+[charaFadeout U 0.1]
+[charaMoveEase F 0,100 1.5 easeOutSine]
+[charaMoveEase R 0,-450 1.5 easeOutSine]
+[wt 2.0]
+[charaFaceFade F 6 0.2]
+
+＠ヴリトラ
+わえ、ヴリトラじゃ！[r]なんでかこんな姿になってしもうた！
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_MAP_123 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[subRenderFadeout #B 0.1]
+[blurOff]
+[charaFadeout F 0.1]
+[charaFadeout R 0.1]
+
+[charaLayer K normal]
+[charaLayer L normal]
+[charaLayer M normal]
+[charaLayer Q normal]
+[charaLayer F normal]
+[charaLayer P normal]
+[charaLayer U normal]
+[subCameraOff]
+
+[charaTalk off]
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaFace E 0]
+[charaFadein E 0.1 150,0]
+[charaFace F 0]
+[charaFadein F 0.1 -150,0]
+[wt 0.5]
+
+[charaSet Y 98115000 1 エフェクト用1]
+[subCameraOn 2]
+[charaLayer V sub #A]
+[charaLayer Y sub #A]
+[subCameraFilter #A maskEdge cut359_mask15 5 255,255,255,255 0]
+[subRenderScale #A 1.01]
+[charaDepth Y 22]
+[charaFadeinFSL V 0 -50,68]
+[charaPutFSL Y -50,350]
+[charaEffect Y bit_talk_41]
+
+[charaLayer Q sub #B]
+[charaLayer A sub #B]
+[subCameraFilter #B normal]
+[subRenderScale #B 1.01]
+[charaScale Q 1.01]
+[charaDepth B 23]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+[charaFadein Q 0 0,-200]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_147 0.1]
+
+[charaTalk on]
+[charaTalk E]
+
+＠ビショーネ
+ヴリトラさん、ですか？[r]この子がー？
+[k]
+
+[messageOff]
+[charaTalk E,F]
+[charaMoveReturn E 143,0 0.4]
+[wt 0.2]
+[se ad673 0.3]
+[charaShake F 0.03 1 0 0.2]
+[wt 0.2]
+[charaMoveReturn E 143,0 0.4]
+[wt 0.2]
+[se ad673 0.3]
+[charaShake F 0.03 1 0 0.2]
+[wt 0.7]
+[charaFace F 4]
+
+＠ヴリトラ
+こら、ほっぺをつつくな。[r]いつもはわえにビビっておるくせに。
+[k]
+
+[charaFace E 19]
+
+＠ビショーネ
+いやー、だって、ねえ？[charaMoveReturn E 143,0 0.4][r]こんなに可愛いんですもん。（ぷにぷに）[se ad673 0.3][charaShake F 0.03 1 0 0.2]
+[k]
+
+[charaFace F 3]
+
+＠ヴリトラ
+むぐぐ。[r]わえ、むかつくー。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaDepth X 24]
+[charaDepth D 25]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[charaPut X 0,-200]
+[charaFadeTime X 0.2 0.5]
+
+＠ムニエル
+（見た目だけじゃなくて、喋り方も[r]　少し子供っぽくなっているみたいだな……）
+[k]
+
+[charaFadeout D 0.2]
+[charaFadeout X 0.2]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+ど、どうしてそんなことになっておるのだ、[r]邪竜ヴリトラよ！
+[k]
+
+＠ゴルドルフ
+貴様は危険ではあるが強力で有用な[r]ドラゴン系サーヴァントだったはずだ！
+[k]
+
+＠ゴルドルフ
+なのにその子供のような姿は……アレか、[r]英雄王の若返りの薬でも飲んだのかね！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠ヴリトラ
+そんなもの知らーん。[r]気付いたらこうなっておったのじゃ。
+[k]
+
+＠ヴリトラ
+心当たりなどもない。
+[k]
+
+[charaFace F 10]
+
+＠ヴリトラ
+そう、ないのじゃが[line 3][r]感覚的に、わかることもある。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+それは？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+[cameraMove 20.0 0,-10 1.06]
+
+＠ヴリトラ
+[#力の大半がなくなっておる]、と感じる。[r]だから姿がこうなっておるのじゃろう。
+[k]
+
+[charaFace F 4]
+
+＠ヴリトラ
+消し飛んだ、のではないな。[r]どこかに封じられておる……そんな感覚じゃ。
+[k]
+
+[charaFace F 0]
+
+＠ヴリトラ
+そして、それがどこにか、というと……
+[k]
+
+[charaFace F 6]
+[cameraMoveEase 0,-30 0.4 easeOutQuart 1.21]
+
+＠ヴリトラ
+ここじゃー！
+[k]
+
+[messageOff]
+[se ade434 0.7]
+[subRenderFadein #A 0.4 -452,-300]
+[subRenderMoveEase #A -252,-300 0.6 easeOutCubic]
+[cameraMoveEase 200,-30 0.6 easeOutCubic 1.21]
+[wt 2.6]
+
+[charaTalk F,A]
+[subRenderFadein #B 0.4 0,0]
+[wt 0.4]
+
+[charaFadeout F 0.1]
+[cameraMoveEase 0,0 0.1 easeOutQuart 1.0]
+[subRenderFadeout #A 0.1]
+
+＠ダ・ヴィンチ
+発生したあの特異点と関係があるかも、ということか。[r]なるほどね。
+[k]
+
+[charaLayer F sub #B]
+[charaLayer B sub #B]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+そんなコトが有り得るのかね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 36]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+可能性としてはないワケではない、[r]という感じかな。
+[k]
+
+[charaFace A 34]
+
+＠ダ・ヴィンチ
+あの特異点の出現自体が[r]ヴリトラに縁があるというか……
+[k]
+
+＠ダ・ヴィンチ
+因果で強く繋がっている誰かが[r]関わっているとかなら、あるいは……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠ヴリトラ
+…………む。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+…………ほう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠ヴリトラ
+……とにかく！　わえの力はきっとあの中じゃ。[r]わえ自身が取り戻しにいかねばならん！
+[k]
+
+？1：危険そうではあるんだけど
+？2：それでも、一緒に行くしかないかな
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+そうだねぇ。[r]手がかりがヴリトラの感覚しかないのが不安だけど、
+[k]
+
+＠ダ・ヴィンチ
+もし本当にその姿の変化が[r]特異点と関係があるのだとしたら、
+[k]
+
+＠ダ・ヴィンチ
+ヴリトラが特異点解決の鍵になる可能性はある。[r]他に有力な情報があるわけでもない。
+[k]
+
+＠ダ・ヴィンチ
+結局のところ、虎穴に[#入:い]らずんば、[r]の状況は変わってないんだからね。
+[k]
+
+[charaFace A 36]
+
+＠ダ・ヴィンチ
+やれやれ、同行サーヴァントの条件を[r]もう少し厳密に設定し直さないとだ。
+[k]
+
+[charaFace A 1]
+
+＠ダ・ヴィンチ
+作戦を微調整するための時間を取らせて。[r]その間、ちょっと休んでいてくれていいよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠ヴリトラ
+急ぎたいところではあるが、仕方あるまいな。[r]早くせいよー。
+[k]
+
+[messageOff]
+[charaMove F 60,0 0.8]
+[se ade422 0.8]
+[wt 0.6]
+
+[seStop ade422 0.3]
+[se ad977 0.4]
+[charaTalk A]
+[charaFace A 30]
+[charaFadein A 0.2 -250,0]
+[wt 0.2]
+[charaShake F 0.03 2 2 0.15]
+[wt 0.3]
+
+＠ダ・ヴィンチ
+コラコラ、わえーっとした顔で出ていこうと[r]するんじゃない。キミはここにいるように。
+[k]
+
+＠ダ・ヴィンチ
+キミの簡易検査だってさせてもらうからね。
+[k]
+
+[charaFace F 4]
+
+＠ヴリトラ
+ちぇー。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_147 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

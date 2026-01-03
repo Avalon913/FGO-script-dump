@@ -1,0 +1,620 @@
+
+
+＄94-14-02-04-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257800 1 マシュ]
+[charaSet B 6048001 1 ロクスタ]
+[charaSet C 1098213800 1 飛竜]
+[charaSet D 6031300 1 刑部姫]
+[charaSet E 4044000 1 ニキチッチ]
+[charaSet F 5058001 1 小野小町]
+[charaSet G 1098315700 1 小野篁]
+[charaSet H 1098257310 1 ダ・ヴィンチ]
+[charaSet I 6041000 1 鬼一法眼]
+[charaSet J 1037000 1 紅閻魔]
+[charaSet K 1098315800 1 キラキラエネミー]
+
+[imageSet N cut651_waka03 1]
+
+[sceneSet O 122605 1]
+[charaScale O 1.3]
+[sceneSet P 122605 1]
+[charaScale P 1.2]
+[sceneSet Q 122605 1]
+[charaScale Q 1.2]
+[sceneSet R 122605 1]
+[charaScale R 1.4]
+[sceneSet S 122605 1]
+[charaScale S 1.4]
+
+[charaSet T 98115000 1 エフェクト用ダミー1]
+[charaSet U 98115000 1 エフェクト用ダミー2]
+[charaSet V 98115000 1 エフェクト用ダミー3]
+[charaSet W 98115000 1 エフェクト用ダミー4]
+
+[scene 122605]
+
+[subCameraOn 4]
+[charaLayer P sub #A]
+[charaLayer B sub #A]
+[charaLayer A sub #A]
+[charaLayer Q sub #B]
+[charaLayer D sub #B]
+[charaLayer R sub #C]
+[charaLayer E sub #C]
+[charaLayer V sub #C]
+[charaLayer S sub #D]
+[charaLayer G sub #D]
+[charaLayer W sub #D]
+
+[subRenderDepth #C 1]
+[subRenderDepth #D 2]
+
+[subCameraFilter #A maskEdge cut359_mask05 4 103,65,150,255 0]
+[subCameraFilter #B maskEdge cut359_mask05 4 255,157,188,255 0]
+[subCameraFilter #C maskEdge cut359_mask13 4 115,177,252,255 0]
+[subCameraFilter #D maskEdge cut359_mask02 4 170,40,14,255 0]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth P 1]
+[charaDepth B 2]
+[charaFace B 20]
+[charaFadein P 0.1 400,100]
+[charaFadein B 0.1 0,250]
+
+[charaDepth Q 1]
+[charaDepth D 2]
+[charaFace D 5]
+[charaFadein Q 0.1 -400,100]
+[charaFadein D 0.1 0,250]
+
+[charaDepth R 1]
+[charaDepth E 2]
+[charaDepth V 3]
+[charaFace E 2]
+[charaFadein R 0.1 160,-50]
+[charaFadein E 0.1 -400,230]
+
+[charaDepth S 1]
+[charaDepth G 2]
+[charaDepth W 3]
+[charaFace G 3]
+[charaFadein S 0.1 260,-80]
+[charaFadein G 0.1 400,180]
+
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_143 0.1]
+
+[fadein black 0.5]
+[wait fade]
+[wt 0.3]
+
+[subRenderFadeinFSL #A 0.3 -300,-280]
+[subRenderMoveEaseFSL #A -300,-330 0.5 easeOutCubic]
+[subRenderFadeinFSR #B 0.3 300,-380]
+[subRenderMoveEaseFSR #B 300,-330 0.5 easeOutCubic]
+[wt 1.0]
+
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[subRenderMoveFSL #A -300,-380 0.5 easeOutCubic]
+[subRenderMoveFSR #B 300,-280 0.5 easeOutCubic]
+[wt 0.3]
+
+[cueSe Servants_604800 bac1546 0 0.2]
+[effect bit_talk_poison_mushroom_attack]
+[wt 0.2]
+[charaShake K 0.05 2 2 0.8]
+[wt 0.6]
+[effectStop bit_talk_poison_mushroom_attack]
+[wt 0.2]
+
+[se ad923]
+[seVolume ad923 0 0.7]
+[se ad1051]
+[seVolume ad1051 0 0.6]
+[effect bit_talk_quick_slash_ppl 0,50]
+[charaShake K 0.04 4 3 1.0]
+[wt 0.2]
+[effect bit_talk_14]
+[wt 0.4]
+[cueSeStop bac1546 0.3]
+[wt 0.5]
+
+[subRenderFadein #C 0.3 0,-210]
+[subRenderFadein #D 0.3 0,-440]
+[charaMoveEase R 260,-50 0.5 easeOutCubic]
+[charaMoveEase S 160,-80 0.5 easeOutCubic]
+[charaMoveEase E -300,230 0.5 easeOutCubic]
+[charaMoveEase G 300,180 0.5 easeOutCubic]
+[wt 0.8]
+
+[se ad158]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut V 0,230]
+[charaEffect V bit_talk_42]
+[charaMove E -100,230 0.2]
+[charaFadeout E 0.2]
+
+[charaPut W 0,230]
+[charaEffect W bit_talk_42 0,0 H]
+[charaMove G 100,180 0.2]
+[charaFadeout G 0.2]
+[wt 0.5]
+[seStop ad158 0.1]
+[subRenderFadeout #C 0.2]
+[subRenderFadeout #D 0.2]
+[wt 0.2]
+
+[se ad1051]
+[seVolume ad1051 0 0.6]
+[cueSe Battle bac389 0 0.6]
+[effect bit_talk_claw_blue02]
+[wt 0.2]
+[effect bit_talk_14]
+[charaShake K 0.05 3 3 0.5]
+[wt 0.25]
+
+[se ad249]
+[seVolume ad249 0 0]
+[seVolume ad249 0.3 0.6]
+[se ad960]
+[effect bit_talk_29_black_red]
+[wt 0.15]
+[charaShake K 0.05 4 3 1.0]
+[wt 0.5]
+
+[bgmStop BGM_BATTLE_143 1.5]
+
+[charaShake K 0.03 2 1 1.0]
+[seStop ad960 1.0]
+[seStop ad249 1.0]
+[wt 1.5]
+
+[cueSe SE_24 24_ade1060]
+[effect bit_talk_miko2 0,50]
+[wt 0.5]
+[effectStop bit_talk_miko2]
+
+[charaPut T 0,50]
+[charaEffect T bit_talk_glitter_parts]
+[wt 0.7]
+[charaFadeout K 0.3]
+[wt 3.1]
+
+[charaMoveEase T 700,0 1.5 easeOutQuad]
+[wt 0.5]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[cueSeVolume 24_ade1060 0.5 0.5]
+[wait wipe]
+
+[charaDepth F 1]
+[charaDepth T 2]
+[charaPut T -700,0]
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+[wt 0.5]
+
+[charaMoveEase T 0,0 1.5 easeOutQuad]
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[cueSeVolume 24_ade1060 0.5 1.0]
+[wait wipe]
+[cueSeStop 24_ade1060 1.0]
+[wt 1.0]
+
+[cueSe SE_21 21_ade590]
+[charaEffectStop T bit_talk_glitter_parts]
+[fowardEffect bit_talk_light_particles_scatter]
+[wt 1.0]
+[cueSeStop 21_ade590 1.5]
+[wt 1.0]
+
+[se ad732]
+[fadeout white 0.7]
+[wait fade]
+
+[charaSet K 5058001 1 小野小町2]
+[charaScale K 1.3]
+
+[charaFadeout F 0.1]
+[charaEffectDestroy V bit_talk_42]
+[charaEffectDestroy W bit_talk_42]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[charaLayer B normal]
+[charaLayer Q normal]
+[charaLayer D normal]
+[charaLayer R normal]
+[charaLayer E normal]
+[charaLayer V normal]
+[charaLayer S normal]
+[charaLayer G normal]
+[charaLayer W normal]
+[wt 0.1]
+
+[charaLayer K sub #B]
+[subCameraFilter #A normal]
+[subCameraFilter #B through]
+
+[charaDepth A 2]
+[charaScale P 1.3]
+[charaScale A 1.3]
+[charaFace A 29]
+[charaFadein P 0.1 0,-350]
+[charaFadein A 0.1 -50,0]
+[subRenderFadein #B 0.1 0,0]
+
+[charaFace E 11]
+[charaPut E 330,0]
+[charaFadeTime E 0 0]
+
+[charaFadein N 0.1 0,-200]
+[charaEffectEdgeBlur N FFFFFF FFFFFF 3 3]
+[wt 2.5]
+
+[cueSe SE_22 22_ade727 1.8 0.7]
+[fadein white 0.7]
+[wait fade]
+
+
+
+
+[wt 3.5]
+
+[wait touch]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk A]
+[subRenderFadein #A 0.8 0,0]
+[charaMove P -150,-350 60.0]
+[charaMove A -200,0 60.0]
+[wt 1.0]
+[charaFadeout N 0]
+[charaEffectEdgeBlurDestroy N]
+[charaFace F 18]
+[charaFadein F 0.1 1]
+
+＠マシュ
+『花の色は　うつりにけりな　いたづらに[r]　わが身世にふる　ながめせしまに』
+[k]
+
+＠マシュ
+百人一首にも収められている、[r]小野小町さんの有名な歌です。
+[k]
+
+[charaFace A 4]
+
+＠マシュ
+[#色褪:いろあ]せていく花に、衰えた自分の姿を重ねて嘆く、[r]そんな歌……
+[k]
+
+＠マシュ
+九相図と合わせて、この歌。[r]やはり、今回のパーツはそういう……
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.6]
+[wt 0.6]
+[charaFadeout P 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaLayer P normal]
+[charaLayer A normal]
+[wt 0.1]
+[charaSet A 1098257800 1 マシュ]
+
+[charaTalk on]
+[charaTalk F]
+
+＠小野小町
+…………………………………………嗚呼。
+[k]
+
+[charaFaceFade F 21 0.2]
+
+＠小野小町
+ああ[line 3][r]キラキラして、きれい。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠刑部姫
+小町パイセン？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 21]
+[charaFadein F 0.1 1]
+
+＠小野小町
+桜は散り際が最も美しい[line 3][r]そう、思いませんか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+＠小野篁
+……。[r]……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ええと……
+[k]
+
+[charaFace A 11]
+
+＠マシュ
+限りあるものだから。[r]移ろいゆくものだから美しい[line 3]
+[k]
+
+＠マシュ
+はい……分かります。[r]わたしにも、理解できるように思います。
+[k]
+
+＠マシュ
+だから……小町さんの言うとおり、[r]これもまた輝きなのだと。
+[k]
+
+＠マシュ
+……そう、思います。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠小野小町
+……ええ、ええ。そうです。[r]そうでしょうとも。
+[k]
+
+[bgmStop BGM_EVENT_11 1.5]
+
+[messageOff]
+[charaDepth F 1]
+[charaDepth O 2]
+[charaDepth E 3]
+
+[charaTalk E,F]
+[charaFadein O 0.6 -160,-350]
+[charaFadeTime E 0.6 1.0]
+[charaFace K 2]
+[charaFadein K 0.6 -220,20]
+[charaMoveEase O -190,-350 0.6 easeOutSine]
+[charaMoveEase E 300,0 0.6 easeOutSine]
+[charaMoveEase K -250,20 0.6 easeOutSine]
+[subBlur #B lens 0.6 1 20 1.0 subBlur]
+[wt 1.0]
+[charaFadeout F 0.1]
+
+＠ニキチッチ
+…………。
+[k]
+
+[messageOff]
+[charaFadeout O 0.6]
+[charaFadeout E 0.6]
+[charaFadeout K 0.6]
+[wt 0.7]
+[charaLayer K normal]
+[wt 0.1]
+[subBlurOff #B lens 0.1 normal]
+[wt 0.2]
+[subRenderFadeout #B 0.1]
+[subCameraOff]
+
+[charaTalk off]
+[se ade4]
+[se ad479]
+[seVolume ad479 0 0.6]
+[charaFace I 16]
+[charaFadein I 0.5 256,35]
+[charaMoveEase I 256,0 0.8 easeOutBack]
+[wt 0.15]
+[charaFace J 4]
+[charaFadein J 0.5 -256,35]
+[charaMoveEase J -256,0 0.8 easeOutBack]
+[wt 0.25]
+[cueSe SE_21 21_ade537]
+[cueSeStop 21_ade537 0.5]
+[wt 0.35]
+[se ade141]
+[seStop ade141 0.5]
+[seStop ade4]
+[seStop ad479 0.6]
+[wt 0.8]
+
+[bgm BGM_EVENT_116 0.1]
+
+[charaTalk on]
+[charaTalk I]
+
+＠鬼一法眼
+やれやれ……[r]取り戻してしまったか。
+[k]
+
+[charaTalk J]
+
+＠紅閻魔
+仕方ありまちぇん。[r]後はなるようにしかならないでち。
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠ニキチッチ
+……東の師よ。[r]結局、おまえは何を警戒していたのだ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠鬼一法眼
+勘のいい武辺者だなァ。
+[k]
+
+[charaFace I 7]
+
+＠鬼一法眼
+なァに、焦らずとも[#直:じき]に分かるさ。[r]望む望まないにかかわらず、な。
+[k]
+
+[charaFace I 9]
+
+＠鬼一法眼
+だろう、マスター？[r]小町の欠けた霊基も、だいぶ埋まったと見るが？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaPut U 1]
+[charaEffect U bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+うん。欠けた５つのパーツのうち、[r]４つまでを回収できたね。
+[k]
+
+＠ダ・ヴィンチ
+観測結果を見ても、小野小町の霊基は[r]さっきと比べ物にならないくらい安定している。
+[k]
+
+[charaFace H 4]
+
+＠ダ・ヴィンチ
+あと一息だよ。[r]みんながんばって！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut U 2000,2000]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠飛竜
+よーし！　ラストスパートだぁー！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠ロクスタ
+景気づけにキノコ、イッときます？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+？1：…………。
+？！
+
+[wt 0.5]
+
+？1：（ダ・ヴィンチちゃんはそう言うけど）
+？！
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……先輩？[r]どうかしましたか？
+[k]
+
+[messageOff]
+[wt 0.5]
+
+？1：（小町さん）
+？2：（何だか今までよりも……）
+？！
+
+[bgmStop BGM_EVENT_116 2.0]
+
+[charaTalk off]
+[charaDepth A 1]
+[charaDepth O 2]
+[charaDepth F 3]
+
+[charaScale F 1.3]
+[charaFace F 2]
+[charaFadein F 0.7 1]
+[charaFadein O 0.7 0,-300]
+[charaMoveEase O 0,-350 1.0 easeOutSine]
+[charaMoveEase F 0,-50 1.0 easeOutSine]
+[wt 1.5]
+
+＠小野小町
+[line 21]。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+？1：（[line 3]儚く、感じる）
+？！
+
+
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

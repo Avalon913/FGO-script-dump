@@ -1,0 +1,220 @@
+
+＄94-09-56-03-7-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098294900 1 マシュ]
+[charaSet B 25014000 1 蒼崎青子]
+[charaSet D 1098294820 1 イシュタリン]
+
+[charaSet E 98006200 1 黒い魔物1]
+[charaSet F 98006200 1 黒い魔物2]
+[charaSet G 98006200 1 黒い魔物3]
+[charaSet H 98006200 1 黒い魔物4]
+
+[charaSet J 98115000 1 エフェクト用1]
+[charaSet K 98115000 1 エフェクト用2]
+[charaPut J 0,-70]
+[charaEffect J bit_talk_black_fog]
+[charaPut K 2000,2000]
+[charaEffect K bit_talk_black_fog]
+
+[sceneSet L 216200 1]
+[charaScale L 1.2]
+
+[subCameraOn 1]
+[charaTalk depthOff]
+[charaDepth L 1]
+[charaLayer K sub #A]
+[charaLayer L sub #A]
+[subCameraFilter #A maskEdge cut359_mask15 5 204,41,73,255]
+[charaPut K 0,250]
+[charaFadein L 0.1 175,125]
+
+[charaDepth K 8]
+[charaDepth J 7]
+[charaDepth D 6]
+[charaDepth E 5]
+[charaDepth F 4]
+[charaDepth G 3]
+[charaDepth H 2]
+
+[charaScale D 0.8]
+[charaScale E 0.8]
+[charaScale F 0.8]
+[charaScale G 0.8]
+[charaScale H 0.8]
+
+[scene 216200]
+[wt 0.5]
+
+[bgm BGM_BATTLE_270 0.1]
+[se ad459 0.5]
+
+[fadein black 1.0]
+[shake 0.05 1 2 1.5]
+[cameraMove 1.5 0,-30 1.3]
+[wait fade]
+
+[charaTalk off]
+[charaFace D 8]
+[charaFadein D 0.4 0,-70]
+
+[charaFace E 0]
+[charaFadein E 0.4 -450,-70]
+[charaFace F 0]
+[charaFadein F 0.4 -150,-70]
+[charaFace G 0]
+[charaFadein G 0.4 150,-70]
+[charaFace H 0]
+[charaFadein H 0.4 450,-70]
+[wt 0.7]
+[seStop ad459 0.3]
+[wt 0.3]
+
+？1：追いついた！
+
+[charaFace D 1]
+[charaMoveReturn D 0,-65 0.3]
+[wt 0.3]
+[charaMoveReturn D 0,-65 0.3]
+[wt 0.6]
+
+？！
+
+[cueSe SE_24 24_ade1024]
+[effect bit_talk_retrograde_fwd]
+[wt 3.0]
+
+[fadeout white 0.5]
+[wait fade]
+
+[effectDestroy]
+[cameraHome 0.1]
+
+[charaPut J 1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+
+[charaLayer D sub #A]
+[charaLayer E sub #A]
+[charaLayer F sub #A]
+
+[charaScale D 1.0]
+[charaScale E 1.0]
+[charaScale F 1.0]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace E 0]
+[charaFadein E 0.1 -75,275]
+[charaFace F 0]
+[charaFadein F 0.1 175,275]
+[charaFace D 10]
+[charaFadein D 0.1 125,275]
+
+[scene 216100]
+[wt 0.1]
+
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[charaMove L 150,100 0.3]
+[charaMove E -100,250 0.3]
+[charaMove F 150,250 0.3]
+[charaMove D 100,250 0.3]
+[subRenderFadeinFSL #A 0.3 -350,-300]
+[wt 0.3]
+＠イシュタリン
+助けが来たのに一瞬でいなくなったのだわ！[r]喜びの瞬間に[#裏切:う ら ぎ]られたのだわーーー！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+？1：廊下の入り口に戻ってる……！？
+
+？！
+
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+
+[charaDepth A 1]
+[charaDepth B 1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+マスター、[#驚愕:きょうがく]の超常現象です……！[r]シバ（子機）の時間計測が乱れています！
+[k]
+
+＠マシュ
+おそらく、この状態にある渡り廊下を[r]渡りきろうとすると、その分時間が巻き戻ります！
+[k]
+
+＠マシュ
+ゴールに辿り着いた瞬間、[r]距離ではなく時間がスタート地点に戻るため、
+[k]
+
+＠マシュ
+仮に一瞬で100メートル走れるとしても[r]イシュタリンさんには永遠に追いつけません！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠蒼崎青子
+それで『永廊下』なのね。[r]ある意味ずっと続く廊下って事だもの。
+[k]
+
+[charaFace B 0]
+
+＠蒼崎青子
+仕方ない。乱用はしたくないけど、[r]ちょっとズルするわ。
+[k]
+
+＠蒼崎青子
+あの娘、あのままだと取り憑かれて殺される。[r]まずは人命救助、だものね。
+[k]
+
+？1：何か手がある[&んですか:の]？
+？2：外に出て、旧館から回り込むとか？
+
+？！
+
+[charaFace B 1]
+
+＠蒼崎青子
+正面から行くだけよ。[r]私がどうやってこの特異点に来たと思ってるの？
+[k]
+
+＠蒼崎青子
+ゴールに着くと巻き戻されるなら、[r]ゴールの先に跳べばいい。
+[k]
+
+[charaFace B 8]
+
+＠蒼崎青子
+本当の魔法を見せてあげる。[r]魔法使いと言うには、ちょっとだけ地味だけどね☆
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_BATTLE_270 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

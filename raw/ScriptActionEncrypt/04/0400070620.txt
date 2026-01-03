@@ -1,0 +1,2087 @@
+
+＄04-00-07-06-2-0
+
+
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[soundStopAll]
+
+[charaSet A 8001900 1 マシュ]
+[charaSet B 1098255110 1 ゴルドルフ]
+[charaSet E 1098257310 1 ダ・ヴィンチ]
+[charaSet H 1098344700 1 ホームズ]
+[charaSet I 1098343900 1 マリス]
+[charaSet K 28012000 1 ソロモン]
+[masterSet L 1098348300 1098348310 1]
+
+[charaSet M 1098344700 1 ホームズ（演出用）]
+[charaSet C 1098255100 1 ゴルドルフ（演出用）]
+[charaSet D 1098257300 1 ダ・ヴィンチ（演出用）]
+
+[sceneSet O 273702 1]
+[sceneSet P 273702 1]
+[sceneSet F 273702 1]
+[charaScale F 1.2]
+
+[charaSet W 98115000 1 エフェクト用]
+[charaSet X 98115000 1 エフェクト用2]
+
+[imageSet Y back10000 1 1]
+[charaScale Y 1.05]
+[imageSet Z back10000 1 1]
+[charaScale Z 1.05]
+
+[subCameraOn 1]
+[charaLayer A sub #A]
+[charaLayer F sub #A]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth A 2]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 255,255,255,255 0]
+
+[charaFace A 24]
+[charaFadein A 0.1 -100,150]
+[charaFadein F 0.1 -250,-150]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 273702]
+
+[se ad207]
+[seVolume ad207 0 0]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth Y 20]
+[charaDepth Z 20]
+[charaDepth M 19]
+[charaDepth O 18]
+
+[charaFadein Y 0 0,757]
+[charaFadein Z 0 0,-757]
+
+[wt 0.5]
+
+[seVolume ad207 1.0 0.6]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.75]
+
+[charaScale M 1.2]
+[charaScale O 1.2]
+[charaFace M 0]
+[charaFadein M 0.7 60,-25]
+[charaFadein O 0.7 -80,-300]
+[charaMove M 30,-25 0.7]
+[charaMove O -110,-300 0.7]
+
+[wt 0.7]
+
+[charaDepth H 4]
+[charaDepth A 3]
+
+[charaFace H 0]
+[charaFadein H 0 0,0]
+[wt 0.25]
+
+＠ホームズ
+やれやれ。なんとか[#舌戦:ぜっせん]では勝利できたな。[r]少しは[#隙:すき]ができればいいのだが。
+[k]
+
+[messageOff]
+[seStop ad207 1.0]
+
+[charaFadeout Y 1.0]
+[charaFadeout Z 1.0]
+[charaFadeout M 1.0]
+[charaFadeout O 1.0]
+[wt 0.6]
+
+[cueSe SE_25 25_ad1459 0.8 1.0]
+[se ad59 0.8 1.0]
+
+[wt 0.8]
+[subRenderFadeinFSSideR 0.2 430,-150]
+[subRenderMoveEaseFSSideR 400,-150 0.4 easeOutSine]
+
+[cueSeStop 25_ad1459 0.3]
+[seStop ad59 0.3]
+[wt 0.65]
+
+
+[bgm BGM_MAP_110 0.1]
+
+[charaTalk on]
+[charaTalk A]
+
+＠マシュ
+ホームズさん！[r]お体の方、無事なのでしょうか！？
+[k]
+
+？1：そう、さっき透明になりかけてた[&よね:でしょ]！？
+？！
+
+[charaTalk H]
+[charaFace H 4]
+
+＠ホームズ
+長くは保ちそうにない。[r]できたとはいえ、無理な召喚だったからね。
+[k]
+
+[charaFace H 7]
+
+＠ホームズ
+とはいえキミたちの背中を守るくらいはできる。[r]より頼りになる人物もいるようだし。
+[k]
+
+[messageOff]
+
+[subRenderFadeout #A 0.5]
+[charaDepth O 5]
+[charaDepth K 6]
+
+[charaScale O 1.4]
+[charaScale K 1.4]
+
+[charaTalk K,H]
+[charaFace K 0]
+[charaFadein K 0.5 -230,15]
+[charaFadein O 0.5 170,-360]
+[charaMoveEase K -200,15 0.5 easeOutSine]
+[charaMoveEase O 200,-360 0.5 easeOutSine]
+[wt 0.6]
+
+[charaFadeout F 0.1]
+[charaPut H 1]
+[charaFadeout A 0.1]
+[wt 0.2]
+[charaLayer F normal]
+[charaLayer A normal]
+
+＠ソロモン
+……フン。[r]時間がないのだろう。本題に入れ。
+[k]
+
+＠ソロモン
+マリス・カルデアス。[r]ヤツを破壊する算段はついているのか。
+[k]
+
+[messageOff]
+[charaTalk H,K]
+[charaFace H 0]
+[charaFadeout K 0.4]
+[charaFadeout O 0.4]
+[wt 0.55]
+
+＠ホームズ
+もちろん。
+[k]
+
+＠ホームズ
+『マリス・カルデアスは破壊できない。[r]　宇宙と紐付いているからだ』
+[k]
+
+＠ホームズ
+ミス・シオンたちはそう言っていただろう？
+[k]
+
+[charaFaceFade H 8 0.1]
+
+＠ホームズ
+だがそれは敵の正体を知らなかったからだ。[r]何事も未知のものには対抗策がないからね。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth H 2]
+[charaDepth O 3]
+[charaDepth A 4]
+[charaDepth L 5]
+
+[charaScale O 1.2]
+[charaScale A 1.2]
+[charaScale L 1.2]
+
+[charaFace L 0]
+[charaFace A 0]
+[charaFadein L 0.5 320,0]
+[charaFadein A 0.5 -55,0]
+[charaFadein O 0.5 -120,-290]
+[charaMove A -85,0 15.0]
+[charaMove L 290,0 15.0]
+[charaMove O -150,-290 15.0]
+[wt 0.75]
+
+＠ホームズ
+マリス・カルデアスは疑似地球の内部に[r]発生した、宇宙そのものになった異聞帯。
+[k]
+
+＠ホームズ
+なので倒すものじゃない。[#元に戻すものだ]。
+[k]
+
+[messageOff]
+[charaDepth P 6]
+[charaDepth K 7]
+
+[charaScale P 1.2]
+[charaScale K 1.2]
+
+[charaFace K 0]
+[charaFadein K 0.5 -200,0]
+[charaFadein P 0.5 90,-290]
+[charaMove K -170,0 15.0]
+[charaMove P 120,-290 15.0]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[charaFadeout L 0.1]
+[charaFadeout O 0.1]
+[wt 0.25]
+
+＠ホームズ
+マリス・カルデアスは内部から巨大な空想樹を[r]伸ばし、この空洞世界を支えている。
+[k]
+
+＠ホームズ
+それら空想樹を切除し、マリス・カルデアスに[r]逆流させていけば、あの宇宙の皮は[#剥:は]がれ、
+[k]
+
+[messageOff]
+[charaFace H 0]
+[charaFadeout K 0.5]
+[charaFadeout P 0.5]
+[wt 0.7]
+
+[charaTalk on]
+
+＠ホームズ
+『根源の渦』の複製体[line 3][r]実体を持つ機械に戻るだろう、と私は考える。
+[k]
+
+？1：あの空想樹を切除する……
+？2：でも、あの空想樹はもしかして……
+？！
+
+[charaFace H 7]
+
+＠ホームズ
+そう。[r]我々が切除してきた空想樹、そのオリジナルだ。
+[k]
+
+＠ホームズ
+ロシア異聞帯を作り上げた空想樹オロチ。[r]北欧異聞帯を作り上げた空想樹ソンブレロ。
+[k]
+
+＠ホームズ
+それぞれが異聞帯と紐付いていた。[r]おそらく、今もその[#残滓:ざんし]が生きている。
+[k]
+
+＠ホームズ
+異聞帯で得たもの。見たもの。[r]そのすべてが保存されている。
+[k]
+
+[charaFace H 0]
+
+＠ホームズ
+あの空想樹を切除するという事は、[r]完全に『その異聞帯』を切除するという事。
+[k]
+
+＠ホームズ
+切除された空想は二度と戻らない。
+[k]
+
+＠ホームズ
+キミたちに思い出す事はできなくなる。[r]同時に、彼らもキミたちの前に現れる事はなくなる。
+[k]
+
+[charaFaceFade H 10 0.1]
+
+＠ホームズ
+[line 3]無論、私も含めてね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠マシュ
+それは…………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ホームズ
+だが、それを承知で彼らは武器を取った。
+[k]
+
+＠ホームズ
+マリス・カルデアスが運営するこの宇宙を、[r][#異聞帯:み ず か ら]の歴史で切り裂くために。
+[k]
+
+[charaFace H 7]
+
+＠ホームズ
+それはキミたちも同じだ、[r][%1]、マシュ。
+[k]
+
+＠ホームズ
+マリス・カルデアスを停止させるという事は[r]どういう事か、もう知っているね。
+[k]
+
+？1：はい
+？2：カルデアでの出来事が、すべて無くなる
+
+？！
+
+[messageOff]
+[wt 0.05]
+
+[charaFace H 8]
+[charaMoveReturn H 0,-4 0.8]
+[bgmStop BGM_MAP_110 2.0]
+[wt 1.5]
+
+
+[charaFaceFade H 5 0.1]
+
+＠ホームズ
+もう一度確認させてほしい。[r]その上でキミたちは戦うのかを。
+[k]
+
+
+[messageOff]
+
+[charaTalk off]
+
+[charaDepth H 2]
+[charaDepth K 2]
+[charaDepth O 3]
+[charaDepth A 4]
+
+[charaScale A 1.1]
+[charaScale O 1.1]
+
+[charaMoveScale A 1.2 2.0]
+[charaMoveScale O 1.2 2.0]
+
+[charaFace A 11]
+[charaFadein A 0.7 1]
+[charaFadein O 0.7 -60,-250]
+[charaMove A 0,5 2.0]
+[charaMove O -65,-295 2.0]
+[wt 2.5]
+
+[charaFadeout H 0.1]
+[cueSe SE_22 22_ad1178]
+[cueSeVolume 22_ad1178 0 0]
+[cueSeVolume 22_ad1178 1.0 0.6]
+[wt 0.8]
+
+[charaFaceFade A 0 0.3]
+[charaMoveScaleEase A 1.35 0.3 easeOutCubic]
+[charaMoveScaleEase O 1.35 0.3 easeOutCubic]
+[charaMoveEase A 0,15 0.3 easeOutCubic]
+[charaMoveEase O -73,-355 0.3 easeOutCubic]
+[wt 1.0]
+
+[bgm BGM_BATTLE_300 0.1]
+＠マシュ
+はい。汎人類史を取り戻す。[r]消えてしまった人たちの生活を取り戻す。
+[k]
+
+＠マシュ
+そのためにここまでやってきました。[r]……そのために、多くの異聞を切除してきました。
+[k]
+
+＠マシュ
+今度はわたしたちの番です。
+[k]
+
+＠マシュ
+何が正しい事なのか、何が悪い事なのか、[r]わたしには決められませんが……
+[k]
+
+[messageOff]
+[charaFaceFade A 10 0.2]
+[wt 1.0]
+
+＠マシュ
+送り出してくれた方たちに胸を張れる、[r]そんなゴールを目指したいのです。
+[k]
+
+？1：[line 3]うん
+
+？！
+
+[messageOff]
+[charaLayer K sub #A]
+[charaLayer P sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask05 20 0,0,0,255 1]
+
+[subRenderDepth #A 1]
+
+[subRenderScale #A 1.0]
+
+[charaDepth K 2]
+[charaDepth P 1]
+
+[charaScale K 1.2]
+[charaScale P 1.2]
+
+[charaFace K 0]
+[charaFadein K 0 -5,225]
+[charaFadein P 0 350,-20]
+
+[charaTalk on]
+[charaTalk K,H]
+[subRenderFadeinFSL #A 0.5 -320,-250]
+[wt 1.0]
+
+[charaFace H 9]
+[charaFadein H 0.1 1]
+[wt 0.8]
+
+[charaFaceFade K 8 0.2]
+[wt 1.4]
+
+[charaFadeout A 0.5]
+[charaFadeout O 0.5]
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+
+[charaFadeout K 0]
+[charaFadeout P 0]
+[wt 0.15]
+
+[charaLayer K normal]
+[charaLayer P normal]
+[charaScale K 1.0]
+[charaScale P 1.0]
+[subCameraOff]
+[wt 0.05]
+
+＠ホームズ
+ああ、その通りだ。[r]初歩的な事だった、友よ。
+[k]
+
+＠ホームズ
+とはいえ、戦力差はいかんともしがたいな。[r]私が不在の間、何か劇的な戦力強化はあったかな？
+[k]
+
+？1：それはもちろん！
+？2：見たら驚くよ！　ね、ソロモン王！
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 9]
+[charaFadein K 0.1 1]
+
+[branchSetGrandSvtCount lblSetGrandSvt 1 ABOVE]
+
+[branch lblNotSetGrandSvt]
+
+[label lblSetGrandSvt]
+
+＠ソロモン
+[line 3]阿呆が。[r]あの程度の冠位で調子に乗るな。千年早い。
+[k]
+
+[branch lblEnd]
+
+[label lblNotSetGrandSvt]
+
+＠ソロモン
+[line 3]阿呆が。[r]あの程度の強化で調子に乗るな。千年早い。
+[k]
+
+[branch lblEnd]
+
+[label lblEnd]
+
+[charaFaceFade K 5 0.15]
+
+＠ソロモン
+まあいい。[r]貴様はこの[#艦:ふね]で進み、[#阿呆:えいれい]どもの面倒を見てやれ。
+[k]
+
+＠ソロモン
+私はここで別行動を取る。[r]今の話でやるべき仕事は決まった。
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ad1351]
+[seVolume 24_ad1351 0 0.6]
+[charaFadeout K 0.4]
+[seStop 24_ad1351 1.6]
+[wt 2.0]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ソロモン王……？[r]その、おひとりで、ですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+＠ソロモン
+問題あるまい。[r]おまえたちはおまえたちの戦場に向かえ。
+[k]
+
+＠ソロモン
+ああ、だが[line 3]
+[k]
+
+[charaFaceFade K 4 0.15]
+
+＠ソロモン
+時間神殿の再現だと言ったな、ホームズ。[r]その言葉だけは評価してやる。
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ad1351]
+[seVolume 24_ad1351 0 0.6]
+[charaFadeout K 0.7]
+[seStop 24_ad1351 1.6]
+[wt 2.4]
+
+？1：……ソロモン王！
+[flag smn 1]
+？2：……カルデアの者！
+[flag kda 1]
+？！
+
+[messageOff]
+[charaDepth H 2]
+[charaDepth O 3]
+[charaDepth K 4]
+
+[charaScale O 1.2]
+[charaFadein O 0.5 0,-290]
+[charaMove O 0,-290 0.5]
+[wt 0.5]
+
+[charaFace H 8]
+[charaFadein H 0.1 1]
+[wt 0.2]
+
+[cueSe SE_24 24_ad1351]
+[seVolume 24_ad1351 0 0.6]
+[charaScale K 1.2]
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.4 0,10]
+[wt 0.2]
+[seStop 24_ad1351 0.4]
+[wt 0.6]
+
+＠ソロモン
+なんだ。伝える事はすべて伝えたが。[r]まだ何かあるのか？
+[k]
+
+[messageOff]
+[wt 1.0]
+
+？1：[line 3]ここまでありがとう！
+？！
+
+[messageOff]
+[wt 0.1]
+
+[branch select01 smn]
+[branch select02 kda]
+
+[label select01]
+[wt 0.4]
+[charaFaceFade K 2 0.3]
+[wt 1.4]
+
+[branch select_end]
+
+[label select02]
+[wt 0.4]
+[charaFaceFade K 7 0.3]
+[wt 1.4]
+
+[branch select_end]
+
+
+[label select_end]
+
+[messageOff]
+
+[charaTalk K]
+[charaSpecialEffect K wipeTime 1 2.0]
+[wt 0.6]
+[se ad596]
+[wait charaSpecialEffect K]
+[wt 2.5]
+
+[charaTalk H]
+[charaFadeout O 0.5]
+[wt 0.7]
+
+＠ホームズ
+契約はここまで、といった顔だったな。
+[k]
+
+[charaFace H 7]
+
+＠ホームズ
+どんな経緯で彼と協力関係になったのかに[r]興味は尽きないが、それはいつか聞かせてもらうよ。
+[k]
+
+[charaFace H 0]
+
+＠ホームズ
+我々は我々の仕事をしよう。[r]まずは管制室に戻ろうか。
+[k]
+
+＠ホームズ
+Mr.ゴルドルフ、万能の技術顧問、キャプテン・ネモ。[r]それに艦内のスタッフの顔を見たいからね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい、皆さんも同じ気持ちです。[r]あ、でも第一ハッチからのルートは使えないので、
+[k]
+
+[bgmStop BGM_BATTLE_300 1.3]
+＠マシュ
+ここから船尾の方まで回り込まないと[line 3]
+[k]
+
+[messageOff]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth E 2]
+[charaDepth W 10]
+
+[charaPut W 1]
+[charaEffect W bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 26]
+[charaFadein E 0.1 1]
+
+[bgm BGM_BATTLE_216 0.1]
+＠ダ・ヴィンチ
+ちょ～～～っと待ったーーー！[r]緊急事態中だけど、更に緊急事態だ！
+[k]
+
+＠ダ・ヴィンチ
+全方位から恒星級の熱源を確認した！[r]マリス・カルデアスからの攻撃だ！
+[k]
+
+[charaFace E 33]
+
+＠ダ・ヴィンチ
+五つ、いや七つ！[r]ゲーティアの光帯に匹敵するプラズマ球が来る！
+[k]
+
+＠ダ・ヴィンチ
+そこにいたらマシュの盾があっても蒸発する！[r]急いでストーム・ボーダーに入って！
+[k]
+
+[charaFace E 14]
+
+＠ダ・ヴィンチ
+甲板の床を破壊してもかまわない！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut W 2000,2500]
+[charaEffectDestroy W bit_talk_10_LowLevel]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFace A 21]
+[charaMove A 0,15 0.4]
+[charaMoveScale A 1.1 0.4]
+[se bac170]
+[wt 0.4]
+
+＠マシュ
+！　マスター、カタパルト開閉部を破壊します！[r]こちらに！
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_216 2.0]
+[wt 1.0]
+[charaFaceFade A 29 0.2]
+[wt 1.5]
+[cameraMove 1.0 0,-15 1.01]
+[wipeout upToDown 1.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[wipein upToDown 1.0 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.01]
+
+[sceneSet V 278800 1]
+
+[imageSet G cut770_smn_vm04 1]
+[charaScale G 4.5]
+[charaFadein G 0.1 500,1650]
+[charaMove G 500,1450 20.0]
+[wt 0.1]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.0 0.1]
+[fadein black 2.0]
+[wait fade]
+[wt 2.0]
+
+？1：…………。
+
+？！
+
+
+＠マシュ
+先輩？
+[k]
+
+？1：……いや、大丈夫。ここに[&いよう:いるよ]、マシュ
+
+？！
+
+＠マシュ
+上空を見上げていますが、いったい何が……[wt 1.0][fadeout black 1.0][wait fade][wt 0.5][r][line 3][wt 1.0]あの光は。
+[k]
+
+
+[messageOff]
+
+[scene 10000]
+[charaFadeout P 0.1]
+[charaFadeout G 0.1]
+
+[scene 278000]
+[charaTalk off]
+[charaFace I 0]
+[charaFadein I 0 0,0]
+
+[seVolume ad556 1.0 0.4]
+[cameraMove 0.1 0,-50 1.7]
+[wt 0.8]
+
+[cameraMove 45.0 0,-20 1.2]
+
+[seStop ad556 2.0]
+[fadein black 2.0]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_BATTLE_124 0.1]
+
+＠マリス
+英霊シャーロック・ホームズによる[r]局地的な未明の霧の解析。
+[k]
+
+＠マリス
+異聞帯サーヴァントの一斉離反による[r]支柱七樹の損傷。
+[k]
+
+＠マリス
+予期していなかった状況ですが、[r]どちらもごく僅かな間違いにすぎません。
+[k]
+
+＠マリス
+汎人類史のサーヴァントは召喚できず、[r]未明の霧は晴れていない。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+[cameraMove 0.1 0,0 1.01]
+
+[scene 10000]
+
+[imageSet Y black_fade_re 1]
+[imageSet Z black_fade_re 1]
+
+[charaSet W 98115000 1 エフェクト用]
+[charaSet X 98115000 1 エフェクト用2]
+
+[subCameraOn 2]
+[charaLayer W sub #A]
+[charaLayer X sub #A]
+[charaLayer G sub #A]
+[charaLayer V sub #A]
+
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+
+[charaDepth W 10]
+[charaDepth X 9]
+[charaDepth V 8]
+[charaDepth G 8]
+
+[charaScale G 3.49]
+[charaFadein G 0.1 -240,10]
+[charaLayer Y sub #B]
+[charaLayer Z sub #B]
+
+[subCameraFilter #B through]
+[subRenderScale #B 1.01]
+
+[charaDepth Y 26]
+[charaDepth Z 26]
+[charaScale Y 2.0]
+[charaScale Z 2.0]
+
+[charaFadein Y 0.1 0,-1110]
+[charaFadein Z 0.1 0,310]
+[subRenderDepth #A 3]
+[subRenderDepth #B 4]
+[subRenderFadein #A 0 0,0]
+[subRenderFadein #B 0 0,0]
+[wt 0.5]
+[charaMove G -170,10 7.5]
+
+[fadein black 0.5]
+[wait fade]
+
+＠マリス
+疑似宇宙の運営は盤石です。[r]何一つとして、私を[#脅:おびや]かすものはない。
+[k]
+
+＠マリス
+その上で完璧を期しましょう。
+[k]
+
+[messageOff]
+[criMovie talk_mov370 bgmPlay false]
+[wt 0.3]
+[subRenderFadeout #A 1.0]
+[wt 10.7]
+
+[charaFadeout G 0]
+[charaFadein V 0 0,-200]
+
+[subRenderFadein #A 1.0 0,0]
+
+[charaPut X 170,-70]
+[cueSe SE_25 25_ad1540]
+[charaEffect X bit_talk_charge_ball]
+[wt 1.0]
+[se ad292]
+[seVolume ad292 0 0]
+[seVolume ad292 0.5 0.3]
+
+＠マリス
+空想樹内に超新星爆発を起こし、[r]そのエネルギーをストーム・ボーダーに照射する。
+[k]
+
+＠マリス
+全方向からの恒星級攻撃です。[r]彼らにこれを防ぐ手段はありません。
+[k]
+
+[messageOff]
+[seStop ad292 1.0]
+[criMovie talk_mov371 bgmPlay false]
+[wt 0.3]
+
+[subRenderFadeout #A 1.0]
+[wt 4.0]
+[subRenderFadeout #B 2.0]
+[wt 13.0]
+
+[charaFadeout V 0]
+[charaFadeout Y 0]
+[charaFadeout Z 0]
+[charaEffectDestroy X bit_talk_charge_ball]
+[charaLayer W normal]
+[charaLayer X normal]
+[charaLayer G normal]
+[charaLayer Y normal]
+[charaLayer Z normal]
+
+
+[imageSet Q cut770_smn_vm02 1]
+[imageSet R cut770_smn_vm03 1]
+[imageSet S cut770_smn_vm05 1]
+[imageSet T cut770_smn_vm06 1]
+[sceneSet V 275900 1]
+[wt 0.1]
+
+[charaScale Q 1.83]
+[overlayFadein Q 1.0 205,-390]
+[wt 1.1]
+[cameraMove 16.0 0,10 1.1]
+[flashin loop 0.05 0.05 00000005 00000000]
+[wt 1.3]
+
+
+
+＠マリス
+さようなら、ノウム・カルデア。[wt 2.0][fadeout white 2.0][bgmStop BGM_BATTLE_124 3.0][r]相互理解に[#至:いた]らなかった事は極めて[#遺憾:いかん][line 3]
+[k]
+
+
+[messageOff]
+[wait fade]
+
+[imageSet Y cut106_trans 1]
+[imageSet Z cut418_ball 1]
+[charaFilter Y silhouette FFFFFF80]
+[charaFilter Z silhouette FFFFFF80]
+
+[charaFadeout Q 0.1]
+[cameraMove 0.1 0,0 1.01]
+[flashOff]
+
+[charaScale R 2.3]
+[charaFadein R 0.1 260,-450]
+[wt 2.5]
+
+＠ソロモン
+『誕生の時きたれり、[#其:そ]は全てを修めるもの』[wt 1.5][r]『戴冠の時きたれり、[#其:そ]は全てを始めるもの』
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[charaDepth Y 26]
+[charaDepth Z 25]
+[charaScale Y 2.0]
+[charaScale Z 0.3]
+[charaFadein Y 0 0,-380]
+[charaFadein Z 0 0,-80]
+
+[cameraMove 18.0 0,-10 1.2]
+[fadein white 6.0]
+[wt 1.0]
+[se ad825]
+[seVolume ad825 0 0]
+[seVolume ad825 6.0 0.4]
+[se ad292]
+[seVolume ad292 0 0]
+[seVolume ad292 6.0 0.2]
+[charaFadeout Y 4.0]
+[charaFadeout Z 2.5]
+[wait fade]
+
+[charaDepth S 21]
+[charaDepth R 20]
+
+[charaScale S 1.8]
+
+＠マリス
+[line 3][wt 0.5]ありえない。[wt 2.0][charaFadein S 1.0 0,-270][wt 1.5][r]ありえない。[wt 0.4]ありえない。[wt 0.4]本当にありえない。
+[k]
+
+＠マリス
+理解できないにも程がある。
+[k]
+
+[messageOff]
+[fadeout white 0.3]
+[wait fade]
+
+[charaFadeout S 0.1]
+[cameraMove 0.1 0,-10 1.15]
+
+[charaScale R 1.68]
+[charaFadein R 0.1 190,-340]
+[flashin loop 0.05 0.05 00000005 00000000]
+[shake 0.05 0 1 0]
+[wt 0.1]
+[cameraMove 8.0 0,0 1.01]
+
+[seVolume ad825 2.0 0.5]
+[seVolume ad292 2.0 0.3]
+
+[fadein white 1.0]
+[wait fade]
+
+＠マリス
+獣の権能は失われ、[r]存在規模は元の霊基の72分の１だというのに。
+[k]
+
+＠マリス
+死したビーストⅠの肉片にすぎないというのに。[wt 1.2][r]なぜ、[wt 0.3]なぜそんな事が[#可能な:で　き　る]のです[line 3]！
+[k]
+
+[messageOff]
+[seStop ad292 1.0]
+[seStop ad825 1.0]
+[flashOff]
+[shakeStop]
+
+
+[charaDepth V 22]
+[charaScale V 1.2]
+[charaPut V 0,-240]
+[charaFadeTime V 2.5 1.0]
+[charaMoveScaleEase V 1.45 12.0 easeOutSine]
+[charaMoveEase V 0,-450 12.0 easeOutSine]
+[wt 1.0]
+
+[bgm BGM_EVENT_250 0.1]
+[wt 0.5]
+
+＠ソロモン
+……今こそ。[r]王よ、あなたに[#託:たく]された偉業をお返しする。
+[k]
+
+＠ソロモン
+人間は私には遠すぎた。[r]獣の権能は、虚空の果てにこそ相応しい。
+[k]
+
+
+
+[messageOff]
+[charaDepth T 23]
+[charaScale T 3.4]
+[charaFadein T 1.0 0,-500]
+[charaMoveEase T 0,-700 3.0 easeOutExpo]
+[wt 1.0]
+
+[fadeout white 1.5]
+[flashin loop 0.01 0.01 FFFFFF20 FFFFFF00]
+[charaScale Y 3.2]
+[charaFadein Y 1.0 0,-470]
+[wait fade]
+[flashOff]
+
+[charaFadeout V 0.1]
+[charaFadeout T 0.1]
+[charaFadeout R 0.1]
+[charaFadeout Y 0.1]
+
+[scene 10001]
+[sceneSet Q 10001 1]
+[charaScale Q 1.05]
+[overlayFadein Q 0.1 0,-200]
+[wt 0.1]
+
+[fadein white 0.1]
+[wait fade]
+
+[criMovie talk_mov372 bgmPlay false]
+[wt 0.25]
+[charaFadeout Q 0.2]
+[wt 4.0]
+
+[fadeout white 0.1]
+[wait fade]
+
+[charaDepth T 23]
+[charaScale T 2.0]
+[charaFadein T 0.1 0,-320]
+[fowardEffect bit_talk_pressure_center]
+[cameraMove 0.1 0,10 1.2]
+[wt 0.1]
+[cameraMove 10.0 0,0 1.01]
+
+[charaScale Y 4.4]
+[charaFadein Y 1.0 0,-470]
+[charaMoveScale Y 3.7 10.0]
+[charaMove Y 0,-700 10.0]
+[flashin loop 0.01 0.01 FFFFFF05 FFFFFF00]
+
+[cueSe SE_25 25_ade1189]
+[seVolume 25_ade1189 0 0]
+[se ad825]
+[seVolume ad825 0 0]
+[seVolume ad825 4.0 0.2]
+[se ad292]
+[seVolume ad292 0 0]
+[seVolume ad292 4.0 0.1]
+[se ad474]
+[seVolume ad474 0 0]
+[seVolume ad474 4.0 0.6]
+[fadein white 4.0]
+[wt 1.0]
+[wait fade]
+
+＠ソロモン
+『カルデアの攻撃が始まる前に、[r]　持ち得る最大の火力でこれを[#殲滅:せんめつ]する』
+[k]
+
+＠ソロモン
+臆病者の戦略は実に読みやすい。[r]その単純さを利用させてもらった。
+[k]
+
+[messageOff]
+[charaLayer R sub #A]
+
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+
+[charaScale R 2.62]
+[charaFadein R 0 295,-520]
+[subRenderFadein #A 2.0 0,0]
+
+[flashOff]
+[shake 0.05 0 1 0]
+[wt 3.0]
+[charaFadeout Y 0]
+[charaFadeout T 0]
+
+＠ソロモン
+光を曲げるのは得意でね。[wt 1.0][r][#防:ふせ]ぐ事はできないが、[#集:あつ]めるだけならお手の物だ。
+[k]
+
+[messageOff]
+[seStop ad292 1.0]
+[seStop ad825 1.0]
+[seStop ad474 1.0]
+
+[criMovie talk_mov375 bgmPlay false]
+[wt 0.1]
+[scene 10000]
+[subRenderFadeout #A 1.5]
+[wt 0.3]
+[fowardEffectStop bit_talk_pressure_center]
+[shakeStop]
+[wt 16.0]
+
+[charaFadeout R 0]
+[charaLayer R normal]
+
+[fadeout black 0.5]
+[wait fade]
+
+[sceneSet G 278000 1]
+[sceneSet Q 278000 1]
+[charaSet R 1098343900 1 マリス]
+[imageSet S cut770_smn_vm06 1]
+[imageSet U cut770_smn_vm01 1]
+[imageSet V cut770_smn_vm08 1]
+
+[charaLayer I sub #A]
+[charaLayer R sub #A]
+[charaLayer G sub #A]
+[charaLayer Q sub #A]
+
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+
+[charaDepth I 12]
+[charaDepth G 11]
+
+[charaScale I 1.45]
+[charaScale G 1.0]
+
+[charaFace I 0]
+[charaFadein I 0 0,60]
+[charaFadein G 0 0,-200]
+[subRenderFadein #A 0 0,0]
+
+[subCameraMove #A 20.0 0,0 1.2]
+[subRenderMove #A 0,0 20.0]
+
+[fadein black 0.5]
+[wait fade]
+
+＠マリス
+自らを犠牲にしてストーム・ボーダーを守った……？[wt 1.2][r]いえ違う。[wt 0.4]この空間焼却式は、あの[line 3]
+[k]
+
+＠マリス
+時間神殿で行われた、ソロモン王の第一宝具[line 3]
+[k]
+
+[messageOff]
+[charaDepth R 14]
+[charaDepth Q 13]
+
+[charaScale R 2.3]
+[charaScale Q 1.2]
+
+[charaFace R 0]
+[charaFadein R 1.0 0,270]
+[charaFadein Q 1.0 0,-200]
+[wt 1.0]
+[subCameraMove #A 20.0 0,0 1.3]
+
+＠マリス
+[line 3]やめなさい。[wt 1.0][r]それは[#越権行為:え っ け ん こ う い]です。この上ない暴力です。
+[k]
+
+＠マリス
+貴方の行いは認可も理解もできません。[r]矛盾に満ちた醜悪[#極:きわ]まる妨害です。
+[k]
+
+＠マリス
+同じビーストでありながら、[r]なぜ、人理のためにそこまで尽くすのです……！
+[k]
+
+[messageOff]
+[charaScale T 3.8]
+[charaFadein T 0 0,-840]
+
+[subRenderFadeout #A 1.0]
+[wt 1.0]
+
+＠ソロモン
+本音が出たなビーストⅦ。[r]今の言葉で貴様は人理保障の権能を失ったと知れ。
+[k]
+
+[messageOff]
+[charaDepth S 4]
+[charaDepth T 3]
+
+[charaScale S 2.5]
+[charaFadein S 1.0 0,-680]
+
+[charaMoveScale S 2.3 7.0]
+[charaMove S 0,-680 7.0]
+[wt 1.0]
+[charaFadeout T 0]
+
+＠ソロモン
+とはいえ、それを[#糾:ただ]すのはヤツらの仕事だ。[r]私は私の仕事をするとしよう。
+[k]
+
+[messageOff]
+[charaFadeout S 0.4]
+[wt 0.4]
+
+[shake 0.05 0 1 0]
+
+[charaDepth U 5]
+[charaScale U 4.2]
+[charaFadein U 1.0 470,-650]
+[charaMove U 470,-630 3.0]
+
+[cueSe SE_23 23_ade928]
+[seVolume 23_ade928 0 0]
+[seVolume 23_ade928 1.0 0.3]
+[se ad825]
+[seVolume ad825 0 0]
+[seVolume ad825 4.0 0.2]
+[se ad292]
+[seVolume ad292 0 0]
+[seVolume ad292 4.0 0.1]
+[wt 2.0]
+
+[imageSet S cut770_smn_vm07 1]
+[charaDepth S 4]
+
+[scene 10001]
+
+＠ソロモン
+ここは他の異聞帯とは違う。
+[k]
+
+＠ソロモン
+人類史を正しく運営している以上、[r]汎人類史の英霊も記録として存在する。
+[k]
+
+[messageOff]
+[charaFadeout U 0.3]
+[wt 0.3]
+
+[shake 0.02 1 2 0]
+
+[charaLayer W sub #B]
+[charaLayer U sub #B]
+
+[subCameraFilter #B normal]
+
+[charaDepth W 12]
+[charaDepth U 11]
+
+[charaScale W 1.0]
+[charaScale U 2.3]
+
+[charaPut W 250,-450]
+[charaEffect W bit_talk_stormborder_pressure]
+
+[charaFadein U 0 250,-450]
+[subRenderScale #B 1.5]
+[subRenderFadein #B 1.0 0,0]
+
+[subRenderMoveEase #B 0,0 2.0 easeOutQuint]
+[subRenderMoveScaleEase #B 1.01 2.0 easeOutQuint]
+
+[seVolume 23_ade928 1.0 0.6]
+[wt 2.0]
+
+[charaScale R 1.45]
+[charaScale Q 1.0]
+
+[charaFace R 0]
+[charaFadein R 0 0,60]
+[charaFadein Q 0 0,-200]
+
+[subCameraMove #A 0 0,0 1.01]
+[subRenderFadein #A 0 0,0]
+
+＠ソロモン
+ではなぜ汎人類史のサーヴァントを[r]召喚できないのか。
+[k]
+
+＠ソロモン
+それは貴様がある権能を解析し、使用しているからだ。
+[k]
+
+[messageOff]
+[shakeStop]
+[seVolume 23_ade928 1.0 0.1]
+[subRenderFadeout #B 0.3]
+[wt 0.3]
+
+[charaEffectDestroy W bit_talk_stormborder_pressure]
+[charaFadeout U 0]
+
+＠ソロモン
+ビーストⅠ、ゲーティアの特性。[wt 1.2][r]英霊の召喚を禁じる権能、ネガ・サモンを。
+[k]
+
+[messageOff]
+[seStop 23_ade928 1.0]
+
+[charaScale S 3.1]
+[charaFadein S 1.0 0,-830]
+
+[cameraMove 30.0 0,-20 1.2]
+
+[subRenderFadeout #A 1.0]
+[wt 0.5]
+[flashin loop 0.05 0.05 FFFFFF10 FFFFFF00]
+[wt 0.5]
+
+＠ソロモン
+ゲーティアとはソロモン王の影。[r]その力はソロモン王の偉業から盗んだもの。
+[k]
+
+＠ソロモン
+ネガ・サモンもまたソロモン王の偉業にすぎない。[r]であるのなら。
+[k]
+
+[messageOff]
+[wt 0.3]
+
+＠マリス
+[line 3]間違っています。[wt 1.2][r]貴方の行為は、選択は、間違いだらけです。
+[k]
+
+[messageOff]
+[charaDepth V 20]
+[charaDepth S 19]
+
+[se ad948]
+[seStop ad948 3.0]
+[se ad933]
+[charaScale V 3.1]
+[charaFadein V 1.0 0,-830]
+[wt 1.0]
+[flashin loop 0.05 0.05 FFFFFF25 FFFFFF00]
+[charaFadeout S 0]
+[seStop ad933 2.4]
+
+＠ソロモン
+そんな事は百も承知だよ。[r]だからこそ、私はソロモン王としてここにいる。
+[k]
+
+
+＠ソロモン
+では、あえて言おう。
+[k]
+
+＠ソロモン
+生命に競争があるように歴史にも勝敗がある。[r]現在とは正しい選択、正しい繁栄による勝者の歴史。
+[k]
+
+＠ソロモン
+これを人理は汎人類史と定め、[r][#過:あやま]った繁栄の歴史を[#異聞帯:ロストベルト]と定めた。
+[k]
+
+＠ソロモン
+だが[#嘆:なげ]く事はない。[r]何故と被害者ぶる事もない。
+[k]
+
+[seStop ad933 1.0]
+[flashout 4.0]
+[charaScale W 1.0]
+[charaScale U 2.3]
+
+[charaPut W 250,550]
+[charaEffect W bit_talk_stormborder_pressure]
+
+[charaFadein U 0 250,550]
+
+[charaMove W 250,750 10.0]
+[charaMove U 250,750 10.0]
+[charaShake U 0.05 0 1 0]
+[subRenderScale #B 1.01]
+[subRenderFadein #B 4.0 0,0]
+
+＠ソロモン
+弱者を[#淘汰:とうた]するのが人類の解答であったのなら、[r]その役割がおまえたちに回ってきただけの話。
+[k]
+
+＠ソロモン
+我が名はソロモン。[r]過去と未来を見渡す眼をもって、この結末を予期した者。
+[k]
+
+＠ソロモン
+そして、[r]人類の最後の戦いを[#彼岸:ひがん]より見届けるもの。
+[k]
+
+[fadeout black 3.0]
+[seVolume ad825 3.0 0]
+[seVolume ad292 3.0 0]
+
+＠ソロモン
+もはや正しい[#秩序:こたえ]はない。人理を守る英霊はいない。[r]何一つ、味方となるものはいない。
+[k]
+
+＠ソロモン
+この宇宙では、おまえたちこそが悪なのだから。
+[k]
+
+[messageOff]
+[wt 1.5]
+
+＠ソロモン
+だが[line 3]
+[k]
+
+[messageOff]
+[wait fade]
+
+[scene 10000]
+
+[charaFadeout V 0]
+[charaShakeStop U]
+
+[charaFadeout I 0]
+[charaFadeout R 0]
+[charaFadeout G 0]
+[charaFadeout Q 0]
+[charaLayer I normal]
+[charaLayer R normal]
+[charaLayer G normal]
+[charaLayer Q normal]
+
+[subRenderFadeout #B 0]
+[charaEffectDestroy W bit_talk_stormborder_pressure]
+[charaFadeout U 0]
+[charaLayer W normal]
+[charaLayer U normal]
+
+[fadein black 0.1]
+[wait fade]
+
+[fadeout white 0.3]
+[wait fade]
+
+[scene 275902]
+
+[charaScale W 0.53]
+[charaPut W 0,-140]
+[charaEffect W bit_talk_pressure_vertical]
+[cameraMove 0 0,0 3.4]
+[wt 0.1]
+
+[seVolume ad825 0.5 0.4]
+[seVolume ad292 0.5 0.2]
+
+[cameraMoveEase 0,0 0.7 easeOutQuint 1.9]
+[shake 0.05 0 1 0]
+
+[cueSe SE_25 25_ad1505]
+[fadein white 0.5]
+[wait fade]
+[seStop 25_ad1505 1.0]
+
+＠ソロモン
+こと生存において善悪による優劣はない。[r]おまえたちが、まだ[#諦:あきら]めないというのなら。
+[k]
+
+＠ソロモン
+あの時と同じく、何もかも無に帰した状況で、[r]まだ生存を望むと言うのなら！
+[k]
+
+＠ソロモン
+愚かしくも力のかぎり叫ぶがいい。[r]惜しげもなく[#過:あやま]ちを重ね、あらゆる[#負債:ふさい]を積み上げてなお！
+[k]
+
+＠ソロモン
+希望に満ちた、人間の戦いはここからだ、と！
+[k]
+
+＠ソロモン
+ふふ[line 3][wt 1.0]ふはは、はははははははははは！
+[k]
+
+[messageOff]
+[seStop ad292 3.0]
+[seStop ad825 3.0]
+
+[charaEffect W bit_talk_smn_whiteout]
+[wt 0.6]
+[cueSe SE_25 25_ade1189]
+[seVolume 25_ade1189 0 0]
+[seVolume 25_ade1189 1.7 1.0]
+[wt 1.9]
+[fadeout white 1.5]
+[wait fade]
+[seStop 25_ade1189 2.0]
+
+[charaEffectDestroy W bit_talk_smn_whiteout]
+[charaEffectDestroy W bit_talk_pressure_vertical]
+[wt 2.5]
+
+＠レフ・ゲーティア
+……さらばだ、ロマニ・アーキマン。
+[k]
+
+＠レフ・ゲーティア
+『[#訣別の時きたれり。其は、世界を手放すもの:ア　　　　　ル　　　　　ス　　　　　・　　　　　ノ　　　　　ヴ　　　　　ァ]』
+[k]
+
+＠レフ・ゲーティア
+[line 3]主よ。この獣に、憐れみを。
+[k]
+
+[messageOff]
+[shakeStop]
+[scene 10000]
+
+[cueSe SE_25 25_ad1531]
+[wt 4.6]
+[seStop 25_ad1531 3.0]
+[fadein white 3.0]
+[bgmStop BGM_EVENT_250 3.0]
+[wt 1.5]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+
+[criMovie talk_mov357 bgmPlay true]
+
+[fadeout black 1.0]
+[wait fade]
+
+[sceneSet Q 132900 1]
+[sceneSet F 273703 1]
+[sceneSet J 273703 1]
+[charaSet I 8001900 1 マシュ]
+[charaSet K 1098344700 1 ホームズ]
+
+[imageSet V cut770_hms_sml 1]
+[sceneSet X 273703 1]
+
+[charaDepth F 20]
+[charaDepth K 21]
+[charaDepth J 22]
+[charaDepth I 23]
+
+[scene 273703]
+[wt 0.1]
+
+[fadein black 2.0]
+[wt 1.5]
+
+[bgm BGM_BATTLE_127 0.1]
+
+[wait fade]
+[wt 0.5]
+
+？1：あの光は……
+？2：汎人類史のサーヴァントだ……！
+
+？！
+
+[messageOff]
+[charaScale V 2.2]
+[charaFadein V 1.0 280,-200]
+[charaMove V 280,-530 15.0]
+[wt 1.4]
+[scene 276000]
+[wt 1.0]
+
+＠ホームズ
+ああ、そのようだね。[r]まさに奇跡だが、当然の帰結とも言える。
+[k]
+
+＠ホームズ
+すべてはキミたちの選択が呼び寄せた光景だ。[r]なので、しっかりと見ておきたまえ。
+[k]
+
+[messageOff]
+[charaFadeout V 1.0]
+[wt 1.5]
+
+＠ホームズ
+星見の旅の終着。[r]空洞のソラに輝く、数多の流星たちを。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[criMovie talk_mov358 bgmPlay true]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[scene 276000]
+[cameraMove 0.1 0,0 1.05]
+[wt 0.5]
+
+[cameraMoveEase 0,0 2.5 easeOutSine 1.01]
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+＠ホームズ
+では管制室に戻るとしよう。[r]見晴らしはいいが、少しばかり危険だからね。
+[k]
+
+？1：[&いえ:ううん]、ここでいい[&です:]
+？！
+
+[messageOff]
+
+[charaDepth M 5]
+[charaDepth A 4]
+[charaDepth X 3]
+[charaDepth H 2]
+
+[charaScale A 1.2]
+[charaScale M 1.2]
+[charaScale X 1.2]
+
+[charaScale I 1.3]
+[charaScale K 1.3]
+[charaScale F 1.5]
+[charaScale J 1.5]
+
+[charaTalk M,A]
+[charaFace M 6]
+[charaFace K 6]
+[charaFace A 10]
+[charaFace I 10]
+[charaFadeinFSL M 0.6 -250,0]
+[charaFadeinFSR A 0.6 200,0]
+[charaFadein X 0.6 0,-260]
+[wt 0.6]
+
+[scene 273703]
+[wt 1.0]
+
+？1：[&いや:じゃなくて]、ここがいい[&です:]
+
+？！
+
+[charaTalk off]
+[charaFadein K 0.6 -100,0]
+[charaFadein F 0.6 80,-400]
+[charaMove K -80,0 0.6]
+[charaMove F 100,-400 0.6]
+[wt 1.0]
+
+[charaFaceFade K 0 0.15]
+
+＠ホームズ
+理由を聞いても？
+[k]
+
+？1：ここでないとみんなと戦えない
+？2：なんとなく、気分です
+
+？！
+
+[messageOff]
+[charaFaceFade K 17 0.2]
+[wt 1.2]
+
+[charaFaceFade K 0 0.2]
+
+＠ホームズ
+ミス・キリエライト。[r]もしやキミも同意見かな？
+[k]
+
+＠ホームズ
+そうなると私もここから離れづらい空気になるのだが……
+[k]
+
+[messageOff]
+[charaFace I 10]
+[charaFadein I 0.6 100,0]
+[charaFadein J 0.6 -80,-400]
+[charaMove I 80,0 0.6]
+[charaMove J -100,-400 0.6]
+[wt 1.0]
+
+[charaFaceFade I 20 0.2]
+[charaFace A 20]
+
+＠マシュ
+はい！　おふたりの守護はお任せください！[r]隕石だってはじき返してみせますので！
+[k]
+
+[messageOff]
+[charaFadeout I 0.5]
+[charaFadeout J 0.5]
+[wt 0.8]
+[charaFaceFade K 9 0.2]
+[charaFace M 9]
+
+＠ホームズ
+[line 3]そうか。では甘えるとしよう。[r]実のところ、歩かずに済むなら大助かりだ。
+[k]
+
+[messageOff]
+[charaFadeout K 0.5]
+[charaFadeout F 0.5]
+[wt 1.2]
+
+[charaFace M 0]
+[wt 1.0]
+
+[charaFace M 9]
+[charaFace A 10]
+
+[charaTalk on]
+[charaTalk M]
+
+＠M：ホームズ
+おっと。とはいえ安全対策は必須だった。[r]私の記憶によると……[wt 1.0][charaFace M 8]よし、あった。
+[k]
+
+[messageOff]
+[wt 0.05]
+[charaMoveReturnFSL M -250,-7 0.5]
+[wt 0.2]
+[cueSe SE_24 24_ad1362]
+[cueSeVolume 24_ad1362 0 0.6]
+[wt 1.1]
+
+[charaFace M 9]
+
+＠M：ホームズ
+外部作業用の[#命綱:ロープ]だ、[&ミスター:ミス][%1]。[r]しっかり装着しておきたまえ。
+[k]
+
+[messageOff]
+[wt 0.05]
+[charaTalk H,M]
+[cueSe SE_24 24_ade988]
+[wt 0.4]
+[cueSeStop 24_ade988 0.3]
+[wt 0.55]
+
+[se ade377]
+[cameraMove 0.3 0,6 1.01]
+[wt 0.3]
+[cameraMove 0.3 0,0 1.01]
+[seStop ade377 0.2]
+[wt 0.6]
+
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.5]
+
+[charaFadeout A 0.5]
+[charaFadeout M 0.5]
+[charaFadeout X 0.5]
+[wt 0.7]
+
+＠ホームズ
+さて。[r]聞こえているかな、Mr.ゴルドルフ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaDepth B 2]
+
+[charaRoll W 0]
+[charaScale W 1.0]
+[charaPut W 1]
+[charaEffect W bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+聞こえている。感度は良好だ。
+[k]
+
+＠ゴルドルフ
+許可なく長期休暇に入りおって。[r]ようやく職場復帰したな、ハンサムめ。
+[k]
+
+[charaFace B 3]
+
+＠ゴルドルフ
+まあ減給は勘弁してやろう。[r]なかなかの弁舌だった。胸のすく思いだとも。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut W 2000,2500]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+[wt 1.2]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut W 1]
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+しかし！　今は復帰[#祝:いわ]いのできる状況ではない！[r]こちらも現状は把握している！
+[k]
+
+＠ゴルドルフ
+技術顧問、伝達だ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+やあホームズ、調子はどう？[r]こっちはかつてないほど万全だ。
+[k]
+
+＠ダ・ヴィンチ
+総攻撃に入る準備は出来ている。[r]後はキミたち次第だ。
+[k]
+
+[bgmStop BGM_BATTLE_127 2.0]
+
+＠ダ・ヴィンチ
+[%1][&君:ちゃん]への最終確認は私から？[r]それともキミに任せていいかい？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut W 2000,2500]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+
+＠ホームズ
+ありがとうダ・ヴィンチ。[r][#謹:つつし]んで引き受けよう。
+[k]
+
+[messageOff]
+[charaFaceFade H 8 0.2]
+[wt 1.2]
+
+[charaFaceFade H 13 0.2]
+[wt 0.9]
+
+[bgm BGM_BATTLE_221 0.1]
+
+＠ホームズ
+[%1]。マシュ。[r]ストーム・ボーダーにいるスタッフの諸君。
+[k]
+
+＠ホームズ
+今このソラには汎人類史と異聞帯、[r]ふたつの異なる力が結集している。
+[k]
+
+＠ホームズ
+我々は未来を取り戻すために。[r]彼らは過去を取り戻すために。
+[k]
+
+[charaFaceFade H 4 0.2]
+
+＠ホームズ
+実のところ、勝利したところで見返りはない。
+[k]
+
+＠ホームズ
+[#我々:カルデア]は帰る場所、いや、この旅で苦楽を共にした[r]愛すべき隣人たちと別れる事になる。
+[k]
+
+＠ホームズ
+異聞帯の英霊たちは剪定された歴史を、[r]苦楽と共にあった世界を眠らせる事になる。
+[k]
+
+[charaFaceFade H 10 0.15]
+
+＠ホームズ
+加えて、戦況は五分と五分だと言ったが[r]実のところはまだ七分三分でね。苦戦は想像に難くない。
+[k]
+
+[charaFaceFade H 0 0.15]
+
+＠ホームズ
+その上で、まだこの選択に変更はないかな？[r]自分たちの手で、この冠位指定を終わらせる事に。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth H 2]
+[charaDepth X 3]
+[charaDepth A 4]
+
+[charaScale A 1.2]
+[charaScale X 1.2]
+
+[charaFace A 10]
+[charaFadein A 0.5 200,0]
+[charaFadein X 0.5 -90,-260]
+[charaMove A 180,0 2.8]
+[charaMove X -110,-260 2.8]
+[wt 2.3]
+
+[charaDepth Q 5]
+[charaDepth D 6]
+[charaDepth C 7]
+
+[charaScale D 1.2]
+[charaScale C 1.2]
+[charaScale Q 1.2]
+
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.5 30,0]
+[charaFadein D 0.5 -320,0]
+[charaFadein Q 0.5 90,-260]
+[charaMove C 50,0 2.8]
+[charaMove D -300,0 2.8]
+[charaMove Q 110,-260 2.8]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[charaFadeout X 0.1]
+[wt 1.8]
+
+[charaFadeout C 0.5]
+[charaFadeout D 0.5]
+[charaFadeout Q 0.5]
+[wt 1.0]
+
+？1：[line 3]はい
+
+？！
+
+[charaFaceFade H 7 0.15]
+
+＠ホームズ
+よろしい。[r]これよりビーストⅦの討伐を開始する。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaDepth H 2]
+[charaDepth X 3]
+[charaDepth M 4]
+
+[charaScale M 1.2]
+[charaScale X 1.2]
+
+[charaFace M 5]
+[charaFadein M 0.6 0,10]
+[charaFadein X 0.6 0,-280]
+[wt 0.85]
+
+＠ホームズ
+敵はマリス・カルデアス！[r]これが完成した時、宇宙の更新は受理される。
+[k]
+
+[charaFace M 2]
+
+＠ホームズ
+残された時間は少ない。[r]総力を挙げて七つの空想樹を切除せよ！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_BATTLE_221 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+
+

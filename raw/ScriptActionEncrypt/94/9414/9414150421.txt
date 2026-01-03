@@ -1,0 +1,1365 @@
+
+
+＄94-14-15-04-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098318800 1 ジニー]
+[charaSet B 1098257810 1 マシュ]
+[charaSet C 1098319200 1 カドック]
+[charaSet D 28010001 1 ダンテ]
+[charaSet E 1008300 1 ジークフリート]
+[charaSet F 7042001 1 クリームヒルト]
+[charaSet H 1098178300 1 謎の声]
+[charaFilter H silhouette 00000080]
+[charaRollAxis H y 180 0 0]
+
+[charaSet I 1038000 1 謎の富豪]
+[charaSet J 7046000 1 謎の不動産業者]
+[charaSet K 2023001 1 謎のアラフィフ]
+[charaSet L 1098319000 1 ホテルスタッフ]
+[charaSet M 1098224300 1 岡田以蔵]
+[charaSet N 1098255110 1 ゴルドルフ]
+[charaSet O 1098319000 1 ホテルスタッフ2]
+[charaSet P 1098257310 1 ダ・ヴィンチ]
+[charaSet Q 1038000 1 謎の富豪]
+[charaScale Q 1.2]
+[charaSet R 7046000 1 謎の不動産業者]
+[charaScale R 1.2]
+[charaSet S 2023001 1 謎のアラフィフ]
+[charaScale S 1.2]
+
+[charaSet T 98115000 1 エフェクト用]
+[imageSet U cut662_reset_button 1]
+[charaDepth U 2]
+
+[sceneSet V 183900 1]
+[charaScale V 1.3]
+[sceneSet W 243200 1]
+[charaScale W 1.3]
+
+
+[sceneSet X 243102 1]
+[charaScale X 1.3]
+[sceneSet Y 243102 1]
+[charaScale Y 1.3]
+
+[charaSet Z 1057000 1 セタンタ]
+
+[charaSet G 98115000 1 エフェクト用1]
+
+[charaDepth G 8]
+[charaPut T 2000,2500]
+[charaEffect T bit_talk_10_LowLevel]
+
+[cameraMove 0 0,0 1.01]
+[scene 183900]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+＠ジニー
+……。[r]……。
+[k]
+
+[messageOff]
+[effect bit_talk_sparks_fs 0,0]
+[wt 0.15]
+[cueSe Battle ba6]
+[effectStop bit_talk_sparks_fs]
+[charaSpecialEffect A erasure 0,0 1.3]
+[wt 3.2]
+
+？1：……戦闘、勝利しました……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい。こちらでも消滅を確認しました。[r]お疲れ様でした、マスター……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カドック
+……。[r]……[wt 0.7][charaFace C 2]待て待て待て。[bgm BGM_EVENT_81 0.1]
+[k]
+
+＠カドック
+特異点修正の兆候は？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+いえ、それがまだ……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+[wt 0.05]
+
+[se ade491]
+[wt 0.7]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.2]
+[seStop ade491 0.2]
+[wt 0.6]
+
+＠ダンテ
+エレノアはご両親に預けた。[r]ジニーは……。
+[k]
+
+？1：倒したんだけど……！
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.5]
+[wt 0.05]
+
+[cueSe SE_21 21_ade645]
+[scene 243200 0.2]
+[wt 0.25]
+[scene 183900 0.2]
+[wt 0.5]
+[scene 243200 0.15]
+[wt 0.15]
+[scene 183900 0.15]
+[wt 0.15]
+[scene 243200 0.12]
+[wt 0.9]
+
+[charaFace D 14]
+
+？1：……停電！？
+？！
+
+[messageOff]
+[fadeout black 0.8]
+[bgm BGM_EVENT_127 0.8 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[subCameraOn 3]
+[charaLayer H sub #B]
+
+[subCameraFilter #B through]
+
+[subRenderScale #B 1.01]
+
+[charaScale H 2.5]
+
+[subRenderFadein #B 0 0,0]
+
+[pictureFrameTop cut063_cinema]
+
+[scene 243102]
+
+[charaTalk depthOff]
+[charaDepth X 2]
+[charaDepth F 3]
+[charaDepth E 4]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFace F 5]
+[charaFadein E 0.1 100,-50]
+[charaFadein F 0.1 -200,-50]
+[charaFadein X 0.1 50,-260]
+[wt 0.6]
+
+[fadein black 0.8]
+[wait fade]
+[wt 0.2]
+
+
+＠ジークフリート
+貴様ら……何者だ！[wt 0.7][charaFace E 4][charaShake E 0.03 4 3 0.5][se ade37][cueSe SE_23 23_ad1324][cueSe SE_21 21_ad1131][r]ぐぅっ！
+[k]
+
+[messageOff]
+[charaMove E 100,-80 0.3]
+[wt 0.2]
+[se ad775]
+[wt 0.05]
+[charaShake E 0.02 2 2 0.4]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 2]
+
+＠クリームヒルト
+あなた！
+[k]
+
+[messageOff]
+[charaMoveEase F -350,-50 0.7 easeOutSine]
+[charaMoveEase E -50,-80 0.7 easeOutSine]
+[charaMoveEase X -100,-260 0.7 easeOutSine]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadeinFSSideR H 0.4 600,100]
+[charaMoveEaseFSSideR H 450,100 0.7 easeOutSine]
+[wt 1.0]
+
+＠謎の声
+さあ、クリームヒルト様。[r]戻りましょう。
+[k]
+
+＠謎の声
+所詮、貴女と彼では住む世界が違ったのです。
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.8 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout X 0.1]
+[subRenderFadeout #B 0.1]
+[charaFadeout H 0.1]
+[charaLayer H normal]
+[charaScale H 1.0]
+
+[sceneSet V 243102 1]
+[charaScale V 1.3]
+[sceneSet W 243102 1]
+[charaScale W 1.3]
+
+[charaDepth W 1]
+[charaDepth Q 2]
+[charaDepth V 3]
+[charaDepth R 4]
+
+[charaTalk Q]
+[charaFace Q 2]
+[charaFadein Q 0.1 0,-50]
+[charaFadein W 0.1 0,-300]
+[wt 0.6]
+
+[wipein leftToRight 0.8 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠Q：謎の富豪
+騙したな！　この……！
+[k]
+
+[messageOff]
+[charaTalk Q,R]
+[charaScale R 1.2]
+[charaFace R 15]
+[charaFadeinFSR R 0.3 350,-70]
+[charaFadein V 0.3 -20,-300]
+[charaMoveEaseFSR R 250,-70 0.4 easeOutSine]
+[charaMoveEase V -120,-300 0.4 easeOutSine]
+[wt 0.4]
+[charaFadeout W 0.1]
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+＠R：謎の不動産業者
+いや、騙されたのはわし様もだ！[r]ええい、アラフィフ！　どこに行った！
+[k]
+
+[messageOff]
+[charaLayer S sub #A]
+[charaLayer Y sub #A]
+
+[subCameraFilter #A normal]
+
+[subRenderScale #A 1.01]
+
+[charaDepth Y 2]
+[charaDepth S 3]
+
+[charaScale Y 1.2]
+[charaScale S 1.2]
+
+[charaTalk S,R]
+[charaFace S 2]
+[charaFadeinFSL S 0 -350,-70]
+[charaFadein Y 0 20,-300]
+
+[subRenderFadein #A 0.3 0,0]
+[charaMoveEaseFSL S -250,-70 0.4 easeOutSine]
+[charaMoveEase Y 120,-300 0.4 easeOutSine]
+[wt 0.4]
+
+[charaDepth I 2]
+[charaDepth K 3]
+[charaDepth J 1]
+[charaFace J 15]
+[charaFace I 2]
+[charaFace K 2]
+[charaFadein I 0.1 0,-50]
+[charaFadeinFSR J 0.1 350,-50]
+[charaFadeinFSL K 0.1 -350,-50]
+[charaFadeout V 0.1]
+[charaFadeout R 0.1]
+[wt 0.1]
+
+＠S：謎のアラフィフ
+いやいや、騙されたのは私もだヨ！！[r]うーん、つまり詐欺師ペテン師地面師という訳だ！
+[k]
+
+[messageOff]
+[charaTalk S,I]
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+[charaFadeout S 0]
+[charaFadeout Y 0]
+[wt 0.15]
+[subCameraOff]
+[charaLayer S normal]
+[charaLayer Y normal]
+[charaScale S 1.0]
+[charaScale Y 1.0]
+
+[charaTalk on]
+
+＠謎の富豪
+どいつもこいつもロクでもねえな！[r]よし、俺と俺の金のために死ね！
+[k]
+
+[charaTalk J]
+[charaFace J 5]
+[charaMoveEaseFSR J 325,-50 0.2 easeOutSine]
+
+＠謎の不動産業者
+なんてヒドいヤツだ！！
+[k]
+
+[charaTalk K]
+[charaFace K 2]
+[charaMoveEaseFSL K -325,-50 0.2 easeOutSine]
+
+＠謎のアラフィフ
+まったくだ！
+[k]
+
+[charaTalk I]
+[charaFace I 13]
+
+＠謎の富豪
+鏡[messageShake 0.05 4 3 0.4]見て物言いやがれええええ！
+[k]
+
+＠謎の富豪
+くそ、レストランの料理がショボかったせいで、[r]苛立ちが三割増しだ！
+[k]
+
+[charaTalk K]
+[charaFace K 1]
+[charaMoveEaseFSL K -300,-50 0.2 easeOutSine]
+
+＠謎のアラフィフ
+ホントホント！[r]あの鶏肉料理、ひどかったよねェ！
+[k]
+
+[charaTalk J]
+[charaFace J 7]
+[charaMoveEaseFSR J 300,-50 0.2 easeOutSine]
+
+＠謎の不動産業者
+フッ。野菜も……駄目だったぞ……！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[se ad815]
+[se ad854]
+[fadeout white 0.1]
+[wait fade]
+
+[scene 243103]
+
+[effect bit_talk_fire_fs 0,-380]
+[effect bit_talk_sparks_fs 0,-150]
+
+[shake 0.02 3 3 1.6]
+
+[charaFace J 9]
+[charaFace I 14]
+[charaFace K 3]
+
+[fadein white 0.1]
+[wait fade]
+
+[wt 1.8]
+
+[charaTalk I]
+[charaTalk on]
+
+＠謎の富豪
+……な……何だ！
+[k]
+
+[charaTalk K]
+[charaFace K 2]
+[charaMoveEaseFSL K -300,-70 0.5 easeOutExpo]
+[se ade303]
+
+＠謎のアラフィフ
+爆発……いかん、逃げなければ！[wt 0.4][charaMoveReturnFSL K -300,-63 0.3][wt 0.3][charaMoveReturnFSL K -300,-63 0.3][wt 0.3][seStop ade166 0.2]
+[k]
+
+[charaTalk J]
+[charaFace J 15]
+
+＠謎の不動産業者
+待て！　権利書を持っていくな！
+[k]
+
+[messageOff]
+[fadeout black 0.8]
+[wait fade]
+
+[effectStop bit_talk_fire_fs]
+[effectStop bit_talk_sparks_fs]
+
+[pictureFrameTop]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout I 0.1]
+
+[charaSet H 98115000 1 エフェクト用2]
+[sceneSet V 243201 1]
+[charaScale V 1.3]
+[sceneSet W 243201 1]
+[charaScale W 1.3]
+[sceneSet Q 10000 1]
+[charaScale Q 1.1]
+
+[charaDepth V 3]
+[charaDepth G 8]
+[charaDepth H 8]
+
+[scene 243201]
+
+[charaPut G 0,-350]
+[charaEffect G bit_talk_sparks_fs]
+
+[charaPut H 2000,2500]
+[charaEffect H bit_talk_fire_fs]
+
+[se ad450]
+[seVolume ad450 0 0]
+[cueSe SE_21 21_ad1114]
+[seVolume 21_ad1114 0 0]
+
+[charaFadein V 0.1 -100,-300]
+[wt 0.5]
+
+
+[charaMove V -150,-300 4.6]
+
+[fadein black 1.0]
+[seVolume ad450 1.0 0.3]
+[seVolume 21_ad1114 1.0 0.3]
+[wait fade]
+
+[charaDepth L 2]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+[wt 2.5]
+
+[charaTalk L]
+[charaFadeout V 1.0]
+[wt 1.2]
+
+＠ホテルスタッフ
+押さないで！　押さないでください！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+……おかしい。なぜ火事が起きた……！[r]火事の原因は！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+＠ホテルスタッフ
+古いヒーターが過熱して、爆発したんだ！
+[k]
+
+＠ホテルスタッフ
+業者が他の修理を優先したせいで、[r]ヒーターを後回しにしちまったらしい……！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+くっ……！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[se ad138]
+[seVolume ad138 0 0.7]
+[se ad267]
+[seVolume ad267 0 0.7]
+[seVolume ad450 0.4 0.6]
+[cueSeVolume 21_ad1114 0.4 0.5]
+[wt 0.1]
+
+[fadeout FF4300 0.2]
+[wait fade]
+
+[charaPut G 0,-350]
+[charaPut H 0,-350]
+
+[scene 243202]
+
+[fadein FF4300 0.2]
+[wait fade]
+[wt 1.7]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠ダンテ
+……想像以上に燃え広がるのが早い！[r][%1]！
+[k]
+
+＠ダンテ
+修正はまだか！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 5]
+[charaFadein M 0.1 1]
+
+＠岡田以蔵
+このままやと保たんぞ！
+[k]
+
+？1：その気配もない！
+？！
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+くっ……[%1]！[r]すまない……リセットを、頼む……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk N]
+[charaFace N 5]
+[charaFadein N 0.1 1]
+
+＠ゴルドルフ
+待て待て！　特異点修正が起きるはずだ。[r]それさえできれば……できれば……。
+[k]
+
+[charaFace N 18]
+
+＠ゴルドルフ
+……。[r]……。
+[k]
+
+[charaFace N 14]
+
+＠ゴルドルフ
+ええい、[%1]！[r]命令だ、リセットしなさい！
+[k]
+
+＠ゴルドルフ
+次は火事にならないよう、気を付けなさいよ！！
+[k]
+
+？1：はい！
+？！
+
+[messageOff]
+[charaFadeout N 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+[wt 0.2]
+
+[seVolume 21_ad1114 1.0 0.2]
+[seVolume ad450 1.0 0.2]
+
+[charaDepth G 5]
+[charaDepth H 5]
+[charaDepth Q 9]
+[charaDepth U 10]
+
+[se ad77]
+[charaPut Q 1]
+[charaFadeTime Q 0.4 0.5]
+
+[charaTalk U]
+[charaFace U 0]
+[charaFadein U 0.4 0,-200]
+[wt 1.8]
+
+
+[cueSe SE_25 25_ade1186]
+[wt 1.2]
+
+[fadeout black 1.0]
+[seStop 21_ad1114 1.0]
+[seStop ad450 1.0]
+[bgmStop BGM_EVENT_127 1.0]
+[wait fade]
+
+[charaPut G 2000,2500]
+[charaPut H 2000,2500]
+[charaEffectDestroy G bit_talk_sparks_fs]
+[charaEffectDestroy H bit_talk_fire_fs]
+
+[charaFadeout U 0.1]
+[charaFadeout Q 0.1]
+
+[scene 10000]
+[wt 0.2]
+
+[fadein black 0.5]
+[wait fade]
+
+[criMovie talk_mov303 bgmPlay true]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+
+[scene 242902]
+
+[sceneSet V 242903 1]
+[charaScale V 1.4]
+
+[charaDepth N 2]
+[charaDepth V 3]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+？1：……ふはっ！
+？！
+
+[charaPut T 1]
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+＠ゴルドルフ
+どうやらリセットは成功したようだが……。[r]む？
+[k]
+
+[charaFace N 9]
+
+＠ゴルドルフ
+何かおかしくないかね？[r]時間帯が……。
+[k]
+
+[messageOff]
+
+[se ad286]
+[seVolume ad286 0 0.4]
+[wt 0.1]
+[se ad854]
+[seVolume ad854 0 0.4]
+
+[fadeout white 0.1]
+[wait fade]
+
+[scene 242903]
+
+[shake 0.02 3 2 1.7]
+
+[fadein white 0.1]
+[wait fade]
+
+[seStop ad286 2.0]
+[wt 0.5]
+[charaFace N 15]
+
+[se ad4]
+[seVolume ad4 0 0]
+[se ad162]
+[seVolume ad162 0 0]
+[cueSe SE_21 21_ade643]
+[cueSeVolume 21_ade643 0 0]
+[wt 2.0]
+
+？1：え……！？
+？！
+
+[messageOff]
+
+[charaPut T 2000,2500]
+[charaFadein V 1.0 265,-320]
+[charaMove V 265,-420 15.0]
+
+[seVolume ad4 1.0 0.2]
+[seVolume ad162 1.0 0.1]
+[cueSeVolume 21_ade643 1.0 0.2]
+[wt 1.0]
+
+
+[charaFace C 10]
+[charaFadein C 0.1 1]
+[charaFadeout N 0.1]
+[wt 0.4]
+
+[bgm BGM_EVENT_126 0.1]
+
+＠ホテルスタッフ
+ば……爆発だ！[r]客を避難させるぞ！　急げ！
+[k]
+
+[messageOff]
+[charaPut T 1]
+[charaTalk C]
+[charaFadeout V 0.6]
+[wt 0.8]
+
+＠カドック
+くっ……リセットはしても、[r]時間帯そのものが巻き戻ってない！
+[k]
+
+[charaFace C 7]
+
+＠カドック
+[#同じような出来事]が起こって、[r]変わらない結果になっている！
+[k]
+
+＠カドック
+[%1]、[r]もう一度スイッチを押せ！
+[k]
+
+？1：わ、わかった！
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+[wt 0.2]
+
+
+[seVolume ad4 1.0 0.1]
+[cueSeVolume 21_ade643 1.0 0.1]
+
+
+[charaDepth G 5]
+[charaDepth H 5]
+[charaDepth Q 9]
+[charaDepth U 10]
+
+[se ad77]
+[charaPut Q 1]
+[charaFadeTime Q 0.4 0.5]
+
+[charaTalk U]
+[charaFace U 0]
+[charaFadein U 0.4 0,-200]
+[wt 1.8]
+
+[cueSe SE_25 25_ade1186]
+[wt 1.2]
+
+[fadeout black 1.0]
+[seStop ad4 1.0]
+[seStop ad162 1.0]
+[cueSeStop 21_ade643 1.0]
+[bgmStop BGM_EVENT_126 1.0]
+[wait fade]
+
+[charaFadeout Q 0.1]
+[charaFadeout U 0.1]
+
+[scene 10000]
+[wt 0.2]
+
+[fadein black 0.5]
+[wait fade]
+
+[criMovie talk_mov304 bgmPlay true]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+
+[scene 242900]
+
+[charaSet A 1098257800 1 マシュ（演出用）]
+[charaSet I 1098239320 1 カドック（演出用）]
+[charaSet J 1098255100 1 ゴルドルフ（演出用）]
+[charaSet K 1098257300 1 ダ・ヴィンチ（演出用）]
+[sceneSet V 242900 1]
+[charaScale V 1.2]
+[sceneSet W 132900 1]
+[charaScale W 1.2]
+
+[charaSet E 28010001 1 ダンテ]
+[charaScale E 1.2]
+
+[charaDepth D 2]
+[charaDepth V 3]
+[charaDepth E 4]
+
+[cueSe SE_24 24_ad1359]
+[cueSeVolume 24_ad1359 0 0]
+
+[charaFadein V 0.1 50,-220]
+
+[wt 0.2]
+
+[cueSeVolume 24_ad1359 1.5 0.7]
+
+[charaMove V -20,-220 10.0]
+[fadein black 1.5]
+[wait fade]
+
+
+[wt 2.0]
+
+[cueSeStop 24_ad1359 1.0]
+[charaFadeout V 1.0]
+[wt 1.4]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+い、今……何かおかしいことが……。
+[k]
+
+？1：ダンテ！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_115 0.1]
+
+[charaPut T 1]
+[charaTalk N]
+[charaFace N 8]
+[charaFadein N 0.1 1]
+
+＠ゴルドルフ
+よ、よし。今度はちゃんと朝に戻ったか。
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠カドック
+だけど、もうリセットは使えないという前提で[r]動いた方がいいだろうな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 16]
+[charaFadein N 0.1 1]
+
+＠ゴルドルフ
+うむ……元より、リセット自体が奇跡の産物だ。
+[k]
+
+[charaFace N 13]
+
+＠ゴルドルフ
+だが、その前にだ。[r]……なんで特異点が修正できなかったのだね？
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 23]
+[charaFadein P 0.1 1]
+
+＠ダ・ヴィンチ
+うん。確かに一番重要な点はそこだ。
+[k]
+
+＠ダ・ヴィンチ
+もちろん、倒してどうにかなる敵ではない、[r]という可能性もあったけど……。
+[k]
+
+[charaFace P 22]
+
+＠ダ・ヴィンチ
+それにしたって、聖杯が出てこないのはおかしい。[r]マシュ、あの時の魔力に何か異変はあったかい？
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+いえ、目立った反応はありませんでした。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠カドック
+そもそも、あそこで起きるはずもない爆発だった。[r]あの爆発は……何だったんだ？
+[k]
+
+[charaFadeout C 0.1]
+[charaPut T 1200,1200]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+……ヒーターが過熱したせいらしい……。
+[k]
+
+[charaFace D 0]
+＠ダンテ
+だからヒーターを押さえれば、[r]爆発は起きないはず……。
+[k]
+
+[charaFace D 17]
+
+＠ダンテ
+……フフ……ここで嫌な推測発表……いいかな？
+[k]
+
+[messageOff]
+
+[subCameraOn 2]
+[charaLayer Z sub #A]
+[charaLayer M sub #A]
+[charaLayer V sub #A]
+
+[charaLayer A sub #B]
+[charaLayer J sub #B]
+[charaLayer I sub #B]
+[charaLayer K sub #B]
+[charaLayer W sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask06 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask06 5 255,255,255,255]
+
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+
+[subRenderDepth #A 2]
+[subRenderDepth #B 1]
+
+[charaScale Z 1.1]
+[charaScale M 1.1]
+[charaScale V 1.2]
+
+[charaDepth V 2]
+[charaDepth Z 3]
+[charaDepth M 4]
+
+[charaTalk off]
+
+
+[charaFace M 8]
+[charaFace Z 4]
+[charaFadein M 0.1 256,225]
+[charaFadein Z 0.1 -256,235]
+[charaFadein V 0.1 0,0]
+
+[charaScale A 1.1]
+[charaScale J 1.1]
+[charaScale I 1.1]
+[charaScale K 1.1]
+[charaScale W 1.2]
+
+[charaDepth W 2]
+[charaDepth A 5]
+[charaDepth K 3]
+[charaDepth J 5]
+[charaDepth I 4]
+
+[charaFace A 5]
+[charaFace K 24]
+[charaFace J 0]
+[charaFace I 1]
+[charaFadein K 0.1 -420,250]
+[charaFadein J 0.1 175,215]
+[charaFadein I 0.1 -160,235]
+[charaFadein A 0.1 450,240]
+[charaFadein W 0.1 0,0]
+
+
+[subRenderFadein #A 0.4 -50,-210]
+[subRenderFadein #B 0.4 50,-425]
+[subRenderMoveEase #A 0,-210 0.4 easeOutSine]
+[subRenderMoveEase #B 0,-425 0.4 easeOutSine]
+
+[blur lens 0.3 4 1]
+[wt 1.0]
+
+＠全員
+[FFFFFF]？[-]
+[k]
+
+[messageOff]
+[blurOff lens 0.3]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 18]
+
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[subRenderMoveEase #A 50,-210 0.4 easeOutSine]
+[subRenderMoveEase #B -50,-425 0.4 easeOutSine]
+[wt 0.5]
+[charaFadeout M 0.1]
+[charaFadeout Z 0.1]
+[charaFadeout A 0.1]
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[charaFadeout V 0.1]
+[charaFadeout W 0.1]
+[wt 0.15]
+[subCameraOff]
+[charaLayer M normal]
+[charaLayer Z normal]
+[charaLayer A normal]
+[charaLayer K normal]
+[charaLayer J normal]
+[charaLayer I normal]
+[charaLayer V normal]
+[charaLayer W normal]
+[charaScale M 1.0]
+[charaScale Z 1.0]
+[charaScale A 1.0]
+[charaScale K 1.0]
+[charaScale J 1.0]
+[charaScale I 1.0]
+[charaScale V 1.0]
+[charaScale W 1.0]
+[wt 0.05]
+
+＠ダンテ
+……一度起きた出来事は……変えられない……。
+[k]
+
+[charaFace D 16]
+
+＠ダンテ
+一旦爆発という結果が出てきたため、[r]リセットして何をしようが爆発する……とか……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk P]
+[charaFace P 34]
+[charaFadein P 0.1 1]
+
+＠ダ・ヴィンチ
+運命は変えられない、かー。[r]うーん……。
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠カドック
+あくまで同じ一日をやり直しているだけだ。[r]運命が変えられない、なんてことはないと思う。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+カドックさんの意見に同意します。
+[k]
+
+＠マシュ
+このホテルが壊れやすくなっているのは[r]確かなのだと思います。
+[k]
+
+＠マシュ
+ですが、火災は防げるはずです！
+[k]
+
+[charaFadeout B 0.1]
+[charaPut T 1200,1200]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+だけど老朽化……支配人の予算削減……。[r]火災に至る理由は色々あるだろうからな……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth M 3]
+[charaDepth Z 2]
+
+[charaTalk Z]
+[charaFace M 0]
+[charaFace Z 8]
+[charaFadeinFSR M 0.1 2]
+[charaFadeinFSL Z 0.1 0]
+
+＠セタンタ
+それ全部押さえるのか、ちょっと大変だなー。
+[k]
+
+[charaFace M 7]
+＠岡田以蔵
+何言うとんじゃ。[r]わしら、サーヴァントじゃぞ。
+[k]
+
+[charaFace M 16]
+＠岡田以蔵
+全力出せば何とかなるわい。
+[k]
+
+[charaFace Z 1]
+＠セタンタ
+以蔵兄……[wt 0.7][charaFace Z 5]そうだな、全力出してみるか！
+[k]
+
+[bgmStop BGM_MAP_115 1.5]
+
+？1：全力……全力か……
+？！
+
+[charaFadeout M 0.1]
+[charaFadeout Z 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠ダンテ
+フフ、どうしたね？
+[k]
+
+
+[bgm BGM_KYOSU_1 0.1]
+
+？1：コンシェルジュとして、[&オレ:わたし]たちは全力を出してない！
+？！
+
+[charaFace D 14]
+
+＠ダンテ
+……なんですって？
+[k]
+
+？1：コンシェルジュ、サーヴァント……
+？2：二つの意味で全力を出してみよう！
+？！
+
+
+[messageOff]
+[charaFaceFade D 0 0.2]
+[wt 1.5]
+
+
+[charaFaceFade D 17 0.2]
+
+＠ダンテ
+全力……か。[r]……フフ……確かに……考えてみれば……。
+[k]
+
+[charaFace D 18]
+
+＠ダンテ
+色々と深く考えて……。[r]全力を出さずにいたのは確かか……。
+[k]
+
+[charaFace D 9]
+＠ダンテ
+しかし、エレノアの誕生日はどうしたものか……。
+[k]
+
+＠ダンテ
+既にかなりの時間がズレている。[r]エレノアの本来の誕生日はとっくに過ぎてしまった。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk Z]
+[charaFace Z 8]
+[charaFadein Z 0.1 1]
+＠セタンタ
+そうか……ホテルで過ごした時間と、[r]周囲の時間はリセットでズレるんだ。
+[k]
+
+[charaFadeout Z 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk N]
+[charaFace N 8]
+[charaFadein N 0.1 1]
+＠ゴルドルフ
+つまり、外部から誕生日パーティーにやってくる客は、[r]絶対に存在しないということか……。
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+
+
+＠ダンテ
+……。[r]……む。
+[k]
+
+？1：ダンテ？
+？！
+
+[charaFace D 3]
+
+＠ダンテ
+フフ……閃いた。
+[k]
+
+[messageOff]
+[charaDepth D 2]
+[charaDepth V 3]
+[charaDepth E 4]
+
+[charaScale V 1.2]
+[charaTalk D,E]
+[charaFace E 0]
+[charaFadein E 0.7 0,0]
+[charaFadein V 0.7 0,-260]
+[wt 0.7]
+[charaFadeout D 0.1]
+[wt 0.4]
+
+＠E：ダンテ
+[%1]、[r]私たちは今までお客様のため、ホテルのために
+[k]
+
+[charaFace E 1]
+＠E：ダンテ
+善きコンシェルジュであろうとしたが[line 3][r]その逆も然り、だ。
+[k]
+
+
+[charaFace E 18]
+＠E：ダンテ
+善きコンシェルジュなら、善きホテル。[r]善きホテルなら善き客。
+[k]
+
+＠E：ダンテ
+善き客であれば、不幸な少女のために[r]奇跡と夢を届けてもらおう。
+[k]
+
+[charaFace E 17]
+
+＠E：ダンテ
+我々と一緒にね……。[r]フフフ……！
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_KYOSU_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

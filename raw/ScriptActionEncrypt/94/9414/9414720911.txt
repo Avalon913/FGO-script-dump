@@ -1,0 +1,365 @@
+
+
+
+
+＄94-14-72-09-1-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11011000 1 カーマ]
+[charaSet B 2042001 1 イリヤ]
+[charaSet C 2042001 1 イリヤ]
+[charaSet D 2042001 1 イリヤ（シルエット用）]
+[charaFilter D silhouette 00000080]
+[charaSet E 11016000 1 クロエ]
+[charaSet F 11016000 1 クロエ]
+[charaSet G 11016000 1 クロエ（シルエット用）]
+[charaFilter G silhouette 00000080]
+[charaSet H 2036000 1 刑部姫]
+[charaSet I 7052000 1 呼延灼]
+[charaSet J 1044400 1 斎藤一]
+[charaSet K 4041000 1 イマジナリー紫式部]
+
+[imageSet L back10000 1]
+[imageSet M back10000 1]
+[charaScale L 1.01]
+[charaScale M 1.01]
+
+[sceneSet W 10000 1]
+[charaScale W 1.01]
+[sceneSet X 258300 1]
+[charaScale X 1.4]
+[sceneSet Y 258300 1]
+[sceneSet Z 258300 1]
+
+[scene 258300]
+
+[cueSe SE_23 23_ade823]
+[seVolume 23_ade823 0 0.2]
+[seStop 23_ade823 0.4]
+[se ad113]
+[seVolume ad113 0 0.5]
+[seStop ad113 1.0]
+[se ad299]
+[seVolume ad299 0 0.7]
+[seStop ad299 1.5]
+
+[fadein black 1.0]
+[wt 0.2]
+[se ade403]
+[se ad892]
+[se ad228]
+[seVolume ad228 0 0.2]
+[seStop ad228 1.2]
+[wt 0.5]
+[seStop ad892 0.5]
+[wait fade]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+＠カーマ
+もー、なんなんですかいったい。
+[k]
+
+[charaFaceFade A 17 0.2]
+
+＠カーマ
+変な石像もそろそろ弾切れでしょう。[r]いい加減出てきなさい。
+[k]
+
+[messageOff]
+
+[subCameraOn 3]
+
+[charaLayer B sub #A]
+[charaLayer D sub #A]
+[charaLayer E sub #A]
+[charaLayer G sub #A]
+[charaLayer X sub #A]
+
+[charaLayer C sub #B]
+[charaLayer Y sub #B]
+
+[charaLayer F sub #C]
+[charaLayer Z sub #C]
+
+[subCameraFilter #A normal]
+[subCameraFilter #B maskEdge cut359_mask04 3 255,255,255,255]
+[subCameraFilter #C maskEdge cut359_mask04 3 255,255,255,255]
+
+[subRenderDepth #C 3]
+[subRenderDepth #B 2]
+[subRenderDepth #A 1]
+
+[charaDepth D 5]
+[charaDepth B 4]
+[charaDepth G 3]
+[charaDepth E 2]
+[charaDepth X 1]
+
+[charaFadein X 0 0,-280]
+
+[charaDepth C 2]
+[charaDepth Y 1]
+
+[charaScale C 1.2]
+[charaScale Y 1.4]
+
+[charaFace C 5]
+[charaFadein C 0 250,310]
+[charaFadein Y 0 -50,-100]
+
+[charaDepth F 2]
+[charaDepth Z 1]
+
+[charaScale F 1.2]
+[charaScale Z 1.4]
+
+[charaFace F 17]
+[charaFadein F 0 -255,315]
+[charaFadein Z 0 50,-100]
+
+[subRenderFadein #A 0.5 0,0]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad27]
+
+[charaTalk depthOff]
+[charaFadein D 0.4 1]
+[wt 0.9]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0 1]
+[charaFadeout D 0.6]
+[wt 0.7]
+
+＠イリヤ
+あれ、[%1][&お兄さん:お姉さん]たち……[r]だったの？
+[k]
+
+[messageOff]
+[charaTalk E]
+[charaPut G -452,0]
+[charaFace G 0]
+[charaMoveEase G -226,0 0.9 easeOutQuad]
+[charaMoveEase B 226,0 0.9 easeOutQuad]
+[charaMoveEase X 226,-280 0.9 easeOutQuad]
+[wt 0.4]
+
+[se ad27]
+[charaFadeTime G 0.5 1.0]
+[wt 0.7]
+
+[charaFace E 5]
+[charaFadein E 0 -226,0]
+[charaFadeout G 0.6]
+[wt 0.7]
+
+
+＠クロエ
+待ちなさいイリヤ、今は役目を果たすのが先よ！[r]せっかく作戦が成功したんだから！
+[k]
+
+？1：……？
+？！
+
+[charaFace B 0]
+
+＠イリヤ
+そ、そうだね。[r]じゃあ……[wt 0.5][charaFace B 16][charaMoveReturn B 226,-2 0.5]こほん。
+[k]
+
+[messageOff]
+
+[wt 0.7]
+
+[charaFace B 2]
+
+＠イリヤ
+わ、わあー。[r]ぷりずま様の石像が粉々だあー。（棒）
+[k]
+
+[charaFace E 2]
+
+＠クロエ
+うんうん、間違いないわ。[r]だからこう言うしかないわね。
+[k]
+
+[messageOff]
+
+[charaTalk C,F]
+[subRenderScale #B 1.15]
+[subRenderScale #C 1.15]
+[subRenderFadein #B 0.4 0,-280]
+[subRenderFadein #C 0.4 0,-480]
+[charaMoveEase C 225,310 0.4 easeOutCubic]
+[charaMoveEase F -230,315 0.4 easeOutCubic]
+[charaMoveEase Y -75,-100 0.4 easeOutCubic]
+[charaMoveEase Z 75,-100 0.4 easeOutCubic]
+[wt 0.7]
+
+[charaMoveReturn C 225,305 0.5]
+[charaMoveReturn F -230,310 0.5]
+[wt 0.6]
+
+[charaFace E 5]
+[charaFace B 5]
+
+[charaTalk C,F,E]
+[subRenderFadeout #B 0.4]
+[subRenderFadeout #C 0.4]
+[wt 0.4]
+
+＠クロエ
+……せーの、
+[k]
+
+[charaTalk B,E]
+[charaFace B 2]
+[charaFace E 7]
+
+[subRenderMoveScaleEase #A 1.2 0.5 easeOutExpo]
+[subRenderMoveEase #A 0,-10 0.5 easeOutExpo]
+
+＠イリヤ＆クロエ
+[f large]石[messageShake 0.04 4 5 0.4]像を壊してしもうたんか！ あんたら！
+[k]
+
+[messageOff]
+
+[charaTalk B,E,H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+
+[charaFadeout B 0]
+[charaFadeout C 0]
+[charaFadeout E 0]
+[charaFadeout F 0]
+[charaFadeout X 0]
+[charaFadeout Y 0]
+[charaFadeout Z 0]
+[subCameraOff]
+
+[charaTalk depthOn]
+
+＠刑部姫
+あー、なるほど！　お約束のアレ！
+[k]
+
+＠刑部姫
+触れてはいけないモノを壊しちゃう、[r]村の[#禁忌:タブー]！
+[k]
+
+[charaFace H 3]
+
+＠刑部姫
+……。[r]……え？
+[k]
+
+[charaFaceFade H 7 0.2]
+
+＠刑部姫
+これ、[#姫:わたし]たちが壊したことになるの？
+[k]
+
+？1：……そうなるかなー！
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠呼延灼
+呼延灼知ってます！[r]これ、マッチポンプって言うんですよね！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 7]
+[charaFadein J 0.1 1]
+
+＠斎藤一
+マッチポンプだねぇ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠刑部姫
+そうかー。[#姫:わたし]たちはあれか。[r]調子に乗った迷惑系配信者だったかー……。
+[k]
+
+[messageOff]
+[charaFadeout H 0.2]
+
+[bgm BGM_HALLOWEEN_2021_1 0.4 0.5]
+
+[charaFadein L 0.1 0,-800]
+[charaFadein M 0.1 0,800]
+[charaMove L 0,-736 0.5]
+[charaMove M 0,736 0.5]
+[wt 0.5]
+
+[se ade250]
+[seVolume ade250 0 0.6]
+[charaScale K 0.9]
+[charaTalk K]
+[charaFace K 0]
+[overlayFadein K 0.5 350,-120]
+[wt 0.5]
+
+＠イマジナリー紫式部
+解説します……。
+[k]
+
+＠イマジナリー紫式部
+ここ数年のホラー映画では、殺される役回りに[r]迷惑系配信者がよく起用されます……。
+[k]
+
+[charaFace K 4]
+
+＠イマジナリー紫式部
+村の禁忌を犯したり、どんな恐ろしいことがあっても[r]『バズりたい』の動機で進み続けてくれる……。
+[k]
+
+＠イマジナリー紫式部
+無惨に殺されても視聴者には[r]『そりゃそうだね』としか思われない……。
+[k]
+
+＠イマジナリー紫式部
+とても……とても便利な方々なのです……。[wt 1.4][charaFaceFade K 1 0.2][r]解説はイマジナリー紫式部でした……。
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_HALLOWEEN_2021_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

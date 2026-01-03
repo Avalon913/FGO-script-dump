@@ -1,0 +1,613 @@
+
+＄94-03-35-80-3-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 28007001 1 カリオストロ]
+[charaSet B 28007001 1 カリオストロ_シルエット]
+[charaFilter B silhouette 00000080]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[equipSet I 9809310 1 バレンタイン礼装]
+
+[effect bit_sepia01_fade_fs]
+
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[scene 105500]
+
+[branch lblConf01]
+
+[label lblClear01b]
+[scene 104200]
+
+[branch lblConf01]
+
+[label lblClear01c]
+[scene 203800]
+
+[label lblConf01]
+
+[cameraMove 0 0,0 1.01]
+[pictureFrameTop cut063_cinema]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+[effectStop bit_sepia01_fade_fs]
+[wt 1.5]
+
+[bgm BGM_EVENT_194 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.4 0,-50]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V010]
+は[line 5][wait tVoice]
+[k]
+
+[charaFace A 15]
+
+[masterBranch lblmst01a lblmst01b]
+[label lblmst01a]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V020]
+畏れながら、陛下。[r]お言葉を今一度確かめさせていただけますか？[wait tVoice]
+[k]
+
+[branch lblmst01]
+[label lblmst01b]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V030]
+畏れながら、女王陛下。[r]お言葉を今一度確かめさせていただけますか？[wait tVoice]
+[k]
+
+[label lblmst01]
+
+[charaFace A 0]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V040]
+[#私:わたくし]の聞き間違いでなければ、[r]貴方はこのように仰った。すなわち、[wait tVoice]
+[k]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V050]
+[line 3]“チョコレートを贈りたい”、と。[wait tVoice]
+[k]
+
+[charaFace A 17]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V060]
+ふむ。[r]ふむ。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V070]
+聞き間違いでしょうか？[r]ええ、きっとそうなのでしょうとも。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+[masterBranch lblmst02a lblmst02b]
+[label lblmst02a]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V080]
+マスター。[r]我が愛しき陛下。[wait tVoice]
+[k]
+
+[branch lblmst02]
+[label lblmst02b]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V090]
+マスター。[r]我が愛しき女王陛下。[wait tVoice]
+[k]
+
+[label lblmst02]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V100]
+お戯れは、どうかおやめいただきたい。[wait tVoice]
+[k]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V110]
+我が心を千々に乱れさせたとて、[r]貴方が得られるものなど何もありはしますまい。[wait tVoice]
+[k]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V120]
+ですから……[line 3][wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V130]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFace A 12]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V140]
+……………………マスター。[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V150]
+マスター？[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 4.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+[effectDestroy]
+
+
+[charaFace A 3]
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V160]
+これ、は[line 6][wait tVoice]
+[k]
+
+[masterBranch lblmst03a lblmst03b]
+[label lblmst03a]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V170]
+我が陛下。[r]本当に……[wait tVoice]
+[k]
+
+[branch lblmst03]
+[label lblmst03b]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V180]
+我が女王陛下。[r]本当に……[wait tVoice]
+[k]
+
+[label lblmst03]
+
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V190]
+この[#私:わたくし]なぞに？[r]手ずから、お渡しになるなどと……[wait tVoice]
+[k]
+
+[charaFace A 18]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V200]
+………………宜しいのですか？[wait tVoice]
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 1.2]
+
+[charaFace A 1]
+[wt 1.5]
+
+
+[charaFace A 10]
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V210]
+何と……[wait tVoice]
+[k]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V220]
+何と罪な御方でしょうか。[r]マスター。[wait tVoice]
+[k]
+
+[messageOff]
+[effect bit_sepia01_fade_fs]
+[wt 1.5]
+[bgmStop BGM_EVENT_194 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[effectDestroy bit_sepia01_fade_fs]
+
+
+[pictureFrame]
+[scene 148300]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[masterBranch lblmst04a lblmst04b]
+[label lblmst04a]
+
+＠？？？
+[tVoice ValVoice_2800700 0_V230]
+[line 6]陛下。[wait tVoice]
+[k]
+
+[branch lblmst04]
+[label lblmst04b]
+
+＠？？？
+[tVoice ValVoice_2800700 0_V240]
+[line 6]女王陛下。[wait tVoice]
+[k]
+
+[label lblmst04]
+
+[messageOff]
+[se ad311]
+[wt 1.5]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 2]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFadein B 1.0 1]
+[wt 1.0]
+[seStop ad311]
+[wt 1.0]
+
+[charaFace A 0]
+[charaFadein A 1.0 1]
+
+[wt 1.5]
+[bgm BGM_EVENT_116 0.1]
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V250]
+大変お待たせいたしました。[r]カリオストロ、[#此処:こ　こ]に帰参しましてございます。[wait tVoice]
+[k]
+
+[masterBranch lblmst05a lblmst05b]
+[label lblmst05a]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V260]
+……嗚呼、陛下。[r]この[#私:わたくし]なぞを本当に待ってくださったのですね。[wait tVoice]
+[k]
+
+[branch lblmst05]
+[label lblmst05b]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V270]
+……嗚呼、女王陛下。[r]この[#私:わたくし]なぞを本当に待ってくださったのですね。[wait tVoice]
+[k]
+
+[label lblmst05]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V280]
+お忙しい身でしょうに、[r]何とお優しいことか。[wait tVoice]
+[k]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V290]
+その御心に、[#私:わたくし]は応えたく想います。[wait tVoice]
+[k]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V300]
+それでは[line 3][r]どうか、こちらをお受け取りくださいませ。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaTalk depthOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 4.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[effectDestroy]
+[charaFadeout A 0.5]
+[se bas2]
+[charaFadein I 0.5 0,-70]
+[wt 3.0]
+
+
+
+？1：ありがとう
+？！
+
+[wt 0.5]
+
+？1：ハンカチ[line 3]
+
+？2：お[#洒落:しゃれ]な柄[&だ:だね]
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.5 1]
+[charaFadeout I 0.5]
+[wt 0.5]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V310]
+はい。[wait tVoice]
+[k]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V320]
+返礼の品として相応しいものをと考えた次第です。[r]とはいえ扱える資源には限りがあります故、[wait tVoice]
+[k]
+
+[charaFace A 13]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V330]
+まったくもって残念なことに[r]至上の品とまではいきませんでしたが……[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+[masterBranch lblmst06a lblmst06b]
+[label lblmst06a]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V340]
+どうぞ、普段使いしていただければ幸いです。[r]我が陛下。[wait tVoice]
+[k]
+
+[branch lblmst06]
+[label lblmst06b]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V350]
+どうぞ、普段使いしていただければ幸いです。[r]我が女王陛下。[wait tVoice]
+[k]
+
+[label lblmst06]
+
+
+？1：普段使い……
+？2：できるかな……
+？！
+
+[charaFace A 2]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V360]
+ええ、はい。どうぞご遠慮なく。[wait tVoice]
+[k]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V370]
+我が身、我が霊基と同じくして、[r]使い倒していただいて結構ですので。[wait tVoice]
+[k]
+
+？1：うーんなるほど？
+？2：そう言われると逆にアレかな！
+？！
+
+[charaFace A 16]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V380]
+はははははははは。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.5]
+[charaFadein I 0.5 0,-70]
+[wt 2.0]
+
+？1：……………………。
+？！
+
+[wt 0.5]
+
+？1：お値段の張るブランド物、だよね？
+？2：どうやって手に入れたの？
+？！
+
+[charaFadeout I 0.5]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.5 1]
+[wt 0.8]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V390]
+あぁ、ふふ。[r]そこは[#所謂:いわゆる]……[wait tVoice]
+[k]
+
+[charaFace A 16]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V400]
+蛇の道は蛇、ということで！[wait tVoice]
+[k]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V410]
+貴方の故郷に[#於:お]ける言葉を以て、[r]返答とさせていただくということで如何でしょう。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V420]
+ただ、そうですね[line 3][wait tVoice]
+[k]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V430]
+ひとつ。[r]ひとつだけ申し上げておきましょう。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V440]
+是なる返礼品、[#決して贋作ではありません]。[wait tVoice]
+[k]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V450]
+どうかお忘れなく、[r]御心に留めておいていただければ幸いです。[wait tVoice]
+[k]
+
+？1：それは……
+？！
+
+[messageOff]
+[wt 1.0]
+
+
+？1：物品鋳造のスキルを使ってないってこと？
+
+[charaFaceFade A 16 0.2]
+[wt 2.0]
+
+？2：心を込めた贈り物、ってこと？
+
+[charaFaceFade A 12 0.2]
+[wt 2.0]
+
+？！
+
+？1：おっと
+？2：あえての無言かなー
+？！
+
+[charaFaceFade A 17 0.2]
+[wt 2.0]
+
+？1：どういう顔それは……
+
+？！
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V460]
+いえ、いえ。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V470]
+……。[r]……。[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_116 1.0 0]
+
+[masterBranch lblmst07a lblmst07b]
+[label lblmst07a]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V480]
+…………忠告しておきましょう、陛下。[wait tVoice]
+[k]
+
+[branch lblmst07]
+[label lblmst07b]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V490]
+…………忠告しておきましょう、女王陛下。[wait tVoice]
+[k]
+
+[label lblmst07]
+
+
+[messageOff]
+[charaMoveScale A 1.1 0.8]
+[charaMove A 0,10 0.8]
+[se ad311]
+[wt 1.0]
+[seStop ad311 0.2]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V500]
+お耳を拝借。[wait tVoice]
+[k]
+
+[messageOff]
+[cameraMoveEase 0,-20 1.0 easeOutSine 1.1]
+[cueSe SE_24 24_ade981]
+[charaMoveScale A 1.2 0.8]
+[charaMove A 0,20 0.8]
+[wt 1.5]
+[charaFace A 1]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V510]
+反英雄の[line 3][wait tVoice]
+[k]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V520]
+特に、我らプリテンダーの霊基に在る者が[r]放つ言葉は、あまり……[wait tVoice]
+[k]
+
+[charaFaceFade A 8 0.2]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V530]
+あまり。[r]真に受けぬが御身のためでしょう。[wait tVoice]
+[k]
+
+？1：……キミ、反英雄なの？
+
+
+？2：なんとかのパラドックスだっけ、それ
+？！
+
+[messageOff]
+[bgm BGM_EVENT_116 1.0 1.0]
+[charaFace A 17]
+[wt 2.0]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V540]
+………………ふふ。[wait tVoice]
+[k]
+
+＠カリオストロ
+[tVoice ValVoice_2800700 0_V550]
+何とも、困った御方だ。[wait tVoice]
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_116 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,770 @@
+
+
+＄94-14-47-07-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4032000 1 ライネス]
+[charaSet B 1098325400 1 イプシロン]
+[charaSet C 1098255110 1 ゴルドルフ]
+[charaSet D 28011001 1 テュフォン・エフェメロス]
+[charaSet E 6039000 1 グレイ]
+[charaSet F 1098123010 1 ムニエル]
+[charaSet G 1098257810 1 マシュ]
+[charaSet H 5020000 1 アイリスフィール]
+[charaSet I 1098257310 1 ダ・ヴィンチ]
+[charaSet J 28002000 1 ヘファイスティオン]
+[charaSet K 4038001 1 オデュッセウス]
+
+[sceneSet L 251204 1]
+[sceneSet M 251204 1]
+[sceneSet N 109700 1]
+[sceneSet S 91502 1]
+
+[charaScale L 1.2]
+[charaScale M 1.2]
+[charaScale N 1.2]
+[charaScale S 1.0]
+[sceneSet O 251204 1]
+[charaSet P 28002000 1 演出用_ヘファイスティオン]
+[charaSet Q 1098189800 1 ゼウス]
+[sceneSet R 10000 1]
+[charaScale R 1.1]
+
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用2]
+[charaPut W 2000,2000]
+[charaEffect W bit_sepia01_depth_fs]
+
+[charaSet X 98115000 1 エフェクト用2]
+[charaPut X 2000,2000]
+[charaEffect X bit_sepia01_depth_fs]
+
+[charaTalk depthOff]
+[charaDepth L 1]
+[charaDepth M 2]
+[charaDepth N 3]
+[charaDepth R 4]
+
+[charaDepth C 5]
+[charaDepth I 6]
+[charaDepth G 7]
+[charaDepth F 8]
+[charaDepth V 9]
+
+[charaDepth A 10]
+[charaDepth B 11]
+[charaDepth D 12]
+[charaDepth E 13]
+[charaDepth H 14]
+[charaDepth J 15]
+[charaDepth O 16]
+[charaDepth P 17]
+[charaDepth Q 18]
+
+[charaDepth W 20]
+[charaDepth X 21]
+
+[charaPut V 2000,2500]
+[charaEffect V bit_talk_10_LowLevel_depth]
+
+[scene 251204]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad139]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[charaEffect A bit_talk_41_fs]
+
+＠ライネス
+というわけで、エフェメロスたちと協議した結果の、[r]テュフォン強化作戦を発表するぞ！
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 2000,2000]
+[charaEffectStop A bit_talk_41_fs]
+
+[bgm BGM_EVENT_94 0.1]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠イプシロン
+ホワイトボードはこちらです！
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ad1077]
+[wt 0.1]
+
+[scene 200300 0.8]
+[charaFadeout B 0.8]
+[wt 0.4]
+[cueSeStop 21_ad1077 1.0]
+[wt 1.0]
+
+[subCameraOn 4]
+[subCameraFilter #A maskEdge cut359_mask11 5 255,255,255,255 0]
+[subCameraFilter #B maskEdge cut359_mask12 5 255,255,255,255 0]
+[subCameraFilter #C maskEdge cut359_mask05 5 222,184,135,255]
+[subCameraFilter #D normal]
+[subRenderScale #C 1.1]
+[subRenderScale #D 1.1]
+
+[charaLayer B sub #B]
+[charaLayer D sub #B]
+[charaLayer E sub #B]
+[charaLayer H sub #B]
+[charaLayer L sub #A]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 -485,215]
+[charaFadein L 0.1 -120,100]
+[wt 0.1]
+
+[charaLayer I sub #A]
+[charaLayer G sub #A]
+[charaLayer C sub #A]
+[charaLayer F sub #A]
+[charaLayer V sub #A]
+[charaLayer M sub #B]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 400,315]
+[charaPut V 400,315]
+[charaFadein M 0.1 -100,200]
+[wt 0.1]
+
+[subRenderFadeinFSSideR #A 0.4 30,-330]
+[subRenderMoveFSSideR #A 0,-300 0.4]
+[wt 0.4]
+
+＠ゴルドルフ
+またホワイトボードかね？！
+[k]
+
+[messageOff]
+[charaTalk B]
+[subRenderFadeinFSSideL #B 0.4 60,-210]
+[subRenderMoveFSSideL #B 90,-190 0.4]
+[wt 0.4]
+
+＠イプシロン
+便利なものはどんどん使うべきでしょう！[r]ホワイトボードは万能です！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 -485,215]
+
+＠テュフォン・エフェメロス
+カルデアの知恵と、願望機としてのアイリスフィール。[r]そのふたつを合わせて考えてみたわ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad408]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 -485,215]
+
+＠イプシロン
+というわけで、強化できそうな項目です！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[wt 0.25]
+
+[cueSe SE_25 25_ade1197]
+[wt 0.2]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[scene 252302 1.5]
+[wt 1.4]
+[cueSeStop 25_ade1197 0.1]
+[wt 0.7]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 -485,225]
+
+[charaFace F 0]
+[charaFadein F 0.1 400,315]
+[wt 0.1]
+
+[subRenderFadeinFSSideL #B 0.4 90,-190]
+[wt 0.4]
+
+＠グレイ
+砲門出力の強化……
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 0]
+[subRenderFadeinFSSideR #A 0.4 0,-300]
+[wt 0.4]
+
+＠ムニエル
+偏向斥力フィールド……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 400,335]
+
+＠マシュ
+自己修復機能……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 -500,245]
+
+＠アイリスフィール
+わあ、どれもすごい響きねえ。[r]おすすめはどれなのかしら？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 51]
+[charaFadein B 0.1 -485,215]
+
+＠イプシロン
+砲門出力の強化です！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 -485,215]
+
+＠テュフォン・エフェメロス
+自己修復機能よね！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 400,315]
+
+＠ゴルドルフ
+はいはい、ふたりとも落ち着いてね！[r]うん、響きとしては偏向斥力フィールドとかアリだな！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 400,355]
+
+＠ダ・ヴィンチ
+前回同様、指針の決定はキミに任せるよ。
+[k]
+
+＠ダ・ヴィンチ
+もちろん、前回に間に合わなかった修復でもいい。[r]一部の強化はその上でないとできないだろうし。
+[k]
+
+
+[charaFace I 17]
+
+＠ダ・ヴィンチ
+テュフォン・ネオス打倒に向けて、[r]最善の選択を期待するよ！
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_94 1.5]
+
+[charaTalk J,I]
+[charaFace J 0]
+[charaFadein J 0.7 1]
+
+[subRenderFadeout #A 0.7]
+[subRenderFadeout #B 0.7]
+[scene 251204 0.7]
+[wt 0.7]
+[charaFadeout D 0.1]
+[charaFadeout L 0.1]
+[charaFadeout I 0.1]
+[charaFadeout M 0.1]
+[charaPut V 2000,2000]
+[wt 0.2]
+
+[charaLayer B normal]
+[charaLayer D normal]
+[charaLayer E normal]
+[charaLayer H normal]
+[charaLayer L normal]
+[charaLayer I normal]
+[charaLayer G normal]
+[charaLayer C normal]
+[charaLayer F normal]
+[charaLayer V normal]
+[charaLayer M normal]
+[wt 0.3]
+
+＠ヘファイスティオン
+その前に、少しいいか？
+[k]
+
+＠ヘファイスティオン
+テュフォン・ネオスとオデュッセウス・オルタの[r]場所だが、私にはわかるかもしれない。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠グレイ
+居場所が、つきとめられそうなんですか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠ヘファイスティオン
+というよりも、[r]オデュッセウス・オルタの正体に見当がついた。
+[k]
+
+[bgm BGM_MAP_23 0.1]
+
+？1：本当に[line 3]？！
+？！
+
+
+[charaFace J 11]
+
+＠ヘファイスティオン
+いささか[#癪:しゃく]な相手の洞察によるものだがな。
+[k]
+
+[messageOff]
+[wt 1.2]
+[charaFaceFade J 4 0.2]
+[wt 0.3]
+
+＠ヘファイスティオン
+私の戦車について、[r][#謂:いわ]れを知っているか？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+確か……イスカンダルの使う『[#神威の車輪:ゴルディアス・ホイール]』[r]と同じものだろう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠ヘファイスティオン
+そうだ。私は[#影武者:フェイカー]として[r]この戦車を王から借り受けている。
+[k]
+
+＠ヘファイスティオン
+そして、我が王はサバージオスの神殿で、[r]この戦車を手に入れたんだ。
+[k]
+
+＠ヘファイスティオン
+おまえにも、この特異点に来てすぐに、[r]その話をしたな。
+[k]
+
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[wt 0.1]
+[fadeout white 0.7]
+[bgm BGM_MAP_23 0.7 0.5]
+[wait fade]
+
+[charaFadeout J 0.1]
+
+
+[scene 109700]
+
+[charaPut W 1]
+
+[charaLayer X sub #C]
+[charaLayer J sub #C]
+[charaLayer N sub #C]
+
+[charaPut X 0,140]
+[charaFadein J 0.1 0,140]
+[charaFadein N 0.1 -160,-150]
+
+[subRenderFadein #C 0.4 150,-180]
+
+[wt 0.4]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.4]
+
+[charaFace J 0]
+
+＠ヘファイスティオン
+なにしろ我が征服王が、かのゴルディアスの結び目を解き[r]サバージオスの神殿で手に入れた戦車だ。
+[k]
+
+[charaFace J 4]
+
+＠ヘファイスティオン
+あの時はずいぶん苦労した。絶対に解けない結び目なんて[r]聞いて、我が王がはちゃめちゃに興奮してな。
+[k]
+
+＠ヘファイスティオン
+これを解くまで征服は再開しないなんぞ言い出して、[r]プトレマイオスもエウメネスも困り果てていたものさ。
+[k]
+
+[messageOff]
+[fadeout white 0.7]
+[wait fade]
+
+[subRenderFadeout #C 0.1]
+[charaFadeout J 0.1]
+[charaFadeout N 0.1]
+[charaPut W 2000,2000]
+[charaPut X 2000,2000]
+[wt 0.15]
+
+[scene 251204]
+[charaLayer J normal]
+[charaLayer N normal]
+[charaLayer X normal]
+[wt 0.15]
+
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.1]
+
+[fadein white 0.7]
+[bgm BGM_MAP_23 0.7 1.0]
+[wait fade]
+[wt 0.4]
+
+？1：あの話の[line 3]！
+？！
+
+？1：じゃあ正体っていうのは
+？！
+
+[charaFace J 4]
+
+＠ヘファイスティオン
+オデュッセウス・オルタの正体は、[r]神霊サバージオスだ。
+[k]
+
+＠ヘファイスティオン
+現代ではあまり有名な神ではないが、[r]当時のフリュギアでは広く信仰されていた。
+[k]
+
+＠ヘファイスティオン
+そして、このサバージオスは、[r]とある神と習合した、別の名でも知られているんだ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠グレイ
+別の名……？
+[k]
+
+[messageOff]
+
+[bgmStop BGM_MAP_23 1.5]
+
+[charaScale P 1.1]
+[charaScale O 1.1]
+
+[charaTalk off]
+[charaFace P 4]
+[charaFadein P 0.7 1]
+[charaFadein O 0.7 0,-260]
+[charaMoveScale P 1.2 1.5]
+[charaMoveScale O 1.2 1.5]
+[charaMove P 0,10 1.5]
+[charaMove O 0,-300 1.5]
+[wt 1.8]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaFace A 6]
+[charaFace E 6]
+[charaFadein A 0.1 2]
+[charaFadein E 0.1 0]
+
+[charaFaceFade P 2 0.2]
+[wt 0.4]
+
+＠ヘファイスティオン
+いわく、ゼウス・サバージオス。
+[k]
+
+[messageOff]
+[charaFadeout P 0.5]
+[charaFadeout O 0.5]
+[wt 0.6]
+
+
+
+[charaLayer W sub #D]
+[charaLayer Q sub #D]
+[charaLayer S sub #D]
+
+[charaDepth S 2]
+[charaDepth Q 3]
+[charaDepth W 4]
+
+[charaPut W 1]
+[charaFace Q 0]
+[charaFadein Q 0.1 1]
+[charaFadein S 0.1 0,-200]
+
+[wt 1.2]
+
+[bgm BGM_EVENT_114 0.1]
+
+？1：それって、まさか……
+？！
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠ヘファイスティオン
+テュフォンと戦い、一度は敗れ、[r]後に勝利した大神ゼウスのことだとも。
+[k]
+
+[messageOff]
+[charaTalk J,Q]
+[bgm BGM_EVENT_114 0.8 0.5]
+
+[subRenderFadein #D 0.8 -15,0]
+[subRenderMove #D 0,0 5.0]
+
+
+[wt 3.0]
+
+
+
+[bgm BGM_EVENT_114 0.8 1.0]
+
+[charaFace J 4]
+
+[subRenderFadeout #D 0.8]
+[wt 1.0]
+
+＠ヘファイスティオン
+どうやってテュフォンを制御しているのかと思っていたが[r]なにしろサバージオス自身が天空と騎乗の神だ。
+[k]
+
+[charaFace J 0]
+
+＠ヘファイスティオン
+それらの権能に加えて、[r]ゼウスと習合した逸話によるものだろう。
+[k]
+
+＠ヘファイスティオン
+もちろん、大神ゼウスほどの[#圧力:プレッシャー]は[r]あいつからは感じなかった。
+[k]
+
+＠ヘファイスティオン
+サーヴァントとなっている以上、[r]あくまで分霊としての枠にとどまるはずだ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk I]
+[charaFace I 12]
+[charaFadein I 0.1 1]
+
+＠ダ・ヴィンチ
+だとしても、神霊サーヴァント級だ。[r]恐るべき相手には違いない。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+違いないどころか、神霊サーヴァントが[r]テュフォンの竜体を使っているんだろう！
+[k]
+
+[charaFace C 15]
+
+＠ゴルドルフ
+それが脅威でなくて一体なんだというのかね！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut V 2000,2000]
+
+[charaTalk K]
+[charaFace K 4]
+[charaFadein K 0.1 1]
+
+＠オデュッセウス
+……俺と似た『[#神体結界:ア　イ　ギ　ス]』を[#纏:まと]っている理由も、[r]今ので納得がいった。
+[k]
+
+[charaFace K 0]
+
+＠オデュッセウス
+オリュンポス十二神に何らかの形で連なるなら、[r]権能をこの形で顕現するのは難しくないだろう。
+[k]
+
+＠オデュッセウス
+ヒトガタならば、いっそ自然な形かもしれないな。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaPut R 1]
+[charaFadeTime R 0.2 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+（ある種のパイロットスーツみたいなもの、[r]　ということか……）
+[k]
+
+[charaFadeout R 0.2]
+
+＠ライネス
+……で、居場所を捜せるかもしれない、[r]というのはどういうことだい？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠ヘファイスティオン
+神代の魔術にも種類はあるが、[r]多くは神とつながることで起動するものだ。
+[k]
+
+＠ヘファイスティオン
+サバージオスの戦車を魔術で操っている以上、[r]私はその魔力について、他人よりは敏感でね。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+サバージオスの魔力を追える、ということか！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut V 2000,2000]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠ヘファイスティオン
+その通りだ。いささか時間はかかるが、[r]大雑把な特定は可能だと思う。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk I]
+[charaFace I 22]
+[charaFadein I 0.1 1]
+
+＠ダ・ヴィンチ
+うん。だったら、[r]今回はこっちが主導権を握れる。
+[k]
+
+[charaFace I 17]
+
+＠ダ・ヴィンチ
+キミたちがテュフォンを強化してる間に、[r]こちらはテュフォン・ネオスを発見しておこう！
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_114 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

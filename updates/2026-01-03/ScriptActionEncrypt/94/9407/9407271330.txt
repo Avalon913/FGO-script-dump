@@ -1,0 +1,642 @@
+
+
+＄94-07-27-13-3-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 6033000 1 岡田以蔵]
+[charaSet C 25002000 1 葛飾北斎]
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+[charaSet E 1098240200 1 曲亭馬琴]
+[charaSet F 1098240200 1 曲亭馬琴・演出用]
+
+[charaSet G 1098240500 1 ソウスケ]
+[charaSet H 1098241100 1 ケノ]
+
+[charaSet J 1098244300 1 人型エネミー（化け猫）]
+
+[sceneSet K 157600 1 1]
+
+[charaSet N 98115000 1 通信用ノイズ1]
+[charaEffect N bit_talk_10_LowLevel]
+[charaPut N 2000,2000]
+
+[charaDepth D 2]
+[charaDepth A 3]
+[charaDepth N 4]
+
+[charaDepth E 2]
+[charaDepth K 4]
+[charaDepth F 6]
+
+[charaDepth H 2]
+[charaDepth C 4]
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad878]
+[effect bit_talk_v_slash01]
+[wt 0.3]
+
+[fadeout white 0.1]
+[wait fade]
+
+[scene 157500]
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0 0,0]
+[charaShake J 0.04 3 3 0.6]
+
+[fadein white 0.1]
+[wait fade]
+
+[wt 0.7]
+
+[charaMove J 0,-100 0.5]
+[charaFadeout J 0.3]
+[wt 0.3]
+[se ad144]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,0]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠葛飾北斎
+……！？　今、倒した[#妖:あやかし]は！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 0,0]
+
+＠岡田以蔵
+……おう。確かにのう。[r]馬琴のジジイ、いや[#路:みち]をさらった奴じゃったな。
+[k]
+
+[charaFace B 13]
+
+＠岡田以蔵
+………………。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,0]
+
+＠葛飾北斎
+[line 3]ましゅ殿？　どうでい？
+[k]
+
+＠葛飾北斎
+今の戦いで、奴らの気配の[#たまり場]を[r]いい感じにえぐり出せたんじゃねえかい？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut N 0,0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,0]
+
+＠マシュ
+はいっ。敵の発見こそ遅れを取りましたが、[r]解析は進みました。
+[k]
+
+＠マシュ
+今度こそ、不要な遭遇を避けながら、[r]城内の犬士のもとまで案内いたします。
+[k]
+
+？1：さすがマシュ、頼もしい！
+？2：自慢の後輩すぎる
+？！
+
+[charaTalk depthOff]
+[charaFace D 19]
+[charaFadein D 0.5 -100,0]
+[charaFace A 3]
+
+＠マシュ
+いえ、その、もちろんわたしだけの力ではなく、
+[k]
+
+＠マシュ
+お[charaFadeout D 0.5]喋りをする暇こそありませんが[line 3]
+[k]
+
+[charaFace A 17]
+
+＠マシュ
+幾度もダ・ヴィンチちゃんがいらして[r]フォローして下さってるのですけれどね？
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_5 1.0 0.4]
+[wipeout leftToRight 1.0 1.0]
+[cueSe SE_22 22_ade745]
+[cueSeVolume 22_ade745 0.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaPut N 2000,2000]
+
+[scene 157400]
+[wt 0.4]
+
+[bgm BGM_EVENT_5 1.0 1.0]
+[wipein rightToLeft 1.0 1.0]
+[cueSeStop 22_ade745 1.0]
+[wait wipe]
+
+[charaPut N 0,0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,0]
+
+＠マシュ
+[line 3]そちらのはず、です。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_5 1.0 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaPut N 2000,2000]
+
+[charaScale F 1.2]
+[charaScale K 1.4]
+
+[scene 157600]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace F 37]
+[charaFadeinFSR K 0.1 64,-250]
+[charaFadeinFSR F 0.1 30,0]
+[wt 1.5]
+[charaMoveFSL K -64,-250 10.0]
+[charaMoveFSL F -30,0 10.0]
+
+[charaFace E 37]
+[charaFadein E 0.1 0,0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_5 1.5 1.0]
+[wt 3.0]
+
+[charaFadeout K 1.0]
+[charaFadeout F 1.0]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 37]
+
+＠お路
+………………。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 0,0]
+
+＠岡田以蔵
+なんじゃ……眠っちょるがか？[r]助け甲斐が無い奴じゃのう。
+[k]
+
+？1：とにかく無事でよかった
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadeinFSL H 0.4 0]
+[charaFadeinFSR G 0.4 2]
+[wt 0.8]
+＠ソウスケと？
+……ワフ……。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 0,0]
+
+＠岡田以蔵
+……おう？[r]犬コロどもには首縄がつけられちゅう。
+[k]
+
+[charaFace B 0]
+＠岡田以蔵
+雑巾犬と、新しい顔も一匹おるにゃあ。[r]この“[#相模:さがみ]”の犬士っちゅうことやろうか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut N 0,0]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,0]
+
+＠マシュ
+“智”の珠を首に提げています。[r]でしたらきっと、犬士“ケノ”さんですね。
+[k]
+
+[charaFadeout A 0.1]
+[charaPut N 2000,2000]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,0]
+[cueSe SE_22 22_ade759]
+＠ケノ
+キ[charaMoveReturn H 0,10 0.2]ャン！[seStop 22_ade759 0.3]
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+[se ade503]
+[charaTalk C]
+[charaFace C 5]
+[charaFadeinFSR C 0.5 150,0]
+[charaMoveFSR C 80,0 0.5]
+[wt 0.5]
+[seStop ade503 0.1]
+
+＠葛飾北斎
+……ちょいと待ってくんな、以蔵殿。[r]ますたあ殿もだ。
+[k]
+
+＠葛飾北斎
+無事とわかったなら、[r]馬琴の旦那はこのままにしとこう。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_124 0.1]
+
+[charaPut N 0,0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,0]
+
+＠マシュ
+えっ……？　北斎さん？
+[k]
+
+＠マシュ
+曲亭馬琴さん……お[#路:みち]さんを[r]助けにいらっしゃったのでは？
+[k]
+
+[charaFadeout A 0.1]
+[charaPut N 2000,2000]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 0,0]
+
+＠葛飾北斎
+そりゃあ、助けてやりてえさ。[r]犬士たちだって他の連中と引き合わせてやりてえ。
+[k]
+
+[charaFace C 16]
+
+＠葛飾北斎
+だが、おれたちの狙いはあくまで[#為朝:ためとも]だ！[r]奴の五人張りの弓をたたき折ることだ！
+[k]
+
+[charaFace C 11]
+
+＠葛飾北斎
+そうだろ。違うかい以蔵殿。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 0,0]
+
+＠岡田以蔵
+……わしは……。
+[k]
+
+＠岡田以蔵
+わしはマスターの言う通りに動くだけぜよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 0,0]
+
+＠葛飾北斎
+……この城には、万が一にも敵将[#為朝:ためとも]が[r]隠れ潜んでやしねえか、確かめにきたまでサ。
+[k]
+
+[charaFace C 14]
+
+＠葛飾北斎
+よもや[#鎮西八郎:ちんぜいはちろう]ほどの剛の者が、[r]おれたちを前に、そんな弱腰のわけはねェがナ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut N 0,0]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 0,0]
+
+＠マシュ
+……お[#路:みち]さんが目を覚まされませんが[r]大丈夫でしょうか？
+[k]
+
+[charaFadeout A 0.1]
+[charaPut N 2000,2000]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 0,0]
+
+＠岡田以蔵
+覚めんがやったら、それでもえいき。[r]わしも白黒つけときたい話があるがぜよ。
+[k]
+
+＠岡田以蔵
+曲亭馬琴と[#路:みち]、この義親子は、[r][#為朝:ためとも]にええように操られとるんじゃないかえ？
+[k]
+
+？1：……！！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 0,0]
+
+＠葛飾北斎
+…………[#為朝:ためとも]に、かい？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 0,0]
+
+＠岡田以蔵
+ほうじゃ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth B 2]
+[charaDepth K 3]
+[charaDepth F 4]
+
+[charaFace F 37]
+[charaFadeinFSR K 0.8 40,-250]
+[charaFadeinFSR F 0.8 10,0]
+[charaMoveFSL K -40,-250 50.0]
+[charaMoveFSL F -20,0 50.0]
+[wt 0.4]
+
+＠岡田以蔵
+馬琴のジジイや、[#路:みち]のやる事ぜんぶが、[r][#為朝:ためとも]の都合がえいようにとは言わん。
+[k]
+
+[charaFace B 0]
+＠岡田以蔵
+が、お膳立てが綺麗すぎて、どうにも不気味じゃ。[r]ここまで来ても、まだ疑いを捨てきれん。
+[k]
+
+[messageOff]
+[charaFadeout K 0.8]
+[charaFadeout F 0.8]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk depthOn]
+＠岡田以蔵
+残る島は“[#上総:かずさ]” “[#下総:しもうさ]”じゃ。[r][#為朝:ためとも]は、このどちらかにおるちや。
+[k]
+
+[charaFace B 6]
+
+＠岡田以蔵
+“[#上総:かずさ]”には犬士が一匹もおらんのじゃろ？
+[k]
+
+＠岡田以蔵
+ほんなら、[r]十中八九“[#下総:しもうさ]”で決まりじゃ！
+[k]
+
+＠岡田以蔵
+もう島をめぐっての[#右往左往:う お う さ お う]はいらん。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 0,0]
+
+＠葛飾北斎
+ハァン、なるほどね。[r]おれの望みとも重なるってわけかい。
+[k]
+
+[charaFace C 5]
+
+＠葛飾北斎
+[line 3]ますたあ殿、[r]お[#路:みっ]ちゃんはここに置いていこう。
+[k]
+
+[charaFace C 16]
+＠葛飾北斎
+どこか安全そうな場所を見つけて残していく。[r]犬士たちもおんなじにだ。
+[k]
+
+？1：北斎ちゃん……
+？2：いや……お栄さん……
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut N 0,0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,0]
+
+＠マシュ
+ですが……我々の移動手段がありません。[r]犬士さんたちの力をお借りしなくては[line 3]
+[k]
+
+＠マシュ
+[#源為朝:みなもとのためとも]のいる島へと到達できません。
+[k]
+
+＠マシュ
+ここに主人だけを残して、犬士さんたちが[r]わたしたちに従ってくれるとも……思えません。
+[k]
+
+[charaFadeout A 0.1]
+[charaPut N 2000,2000]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 0,0]
+
+＠葛飾北斎
+くあっ！……そうだった！[r]そいつは頭が痛いねエ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,0]
+
+＠岡田以蔵
+なんも心配はいらんき。
+[k]
+
+＠岡田以蔵
+わしらのマスターなら、[r]ええようにしてくれるぜよ。
+[k]
+
+？1：うん。[line 3]えっ
+？！
+
+[charaFace B 9]
+
+＠岡田以蔵
+…………馬琴のジジイは[r][#為朝:ためとも]のことなら何でも知っちゅうがやろう？
+[k]
+
+＠岡田以蔵
+北斎、おまんもそうなんじゃろ？[r]連れて行けば役に立つんじゃないがか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 27]
+[charaFadein C 0.1 0,0]
+
+＠葛飾北斎
+……う～ん。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_124 1.0]
+
+[se adm76]
+[seVolume adm76 0.0 0.0]
+[seVolume adm76 0.8 0.5]
+[cueSe SE_22 22_ade744 0]
+[seVolume 22_ade744 0.8 0.5]
+[wt 0.5]
+[charaFace C 7]
+[se ad21 0.4]
+[wt 0.5]
+[seStop adm76 2.0]
+[seStop 22_ade744 2.0]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaPut N 0,0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,0]
+
+＠マシュ
+[line 3]敵勢力、接近中です！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut N 2000,2000]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,0]
+
+＠岡田以蔵
+ほうかい、外の連中の時間稼ぎの蓄えも[r]すっかり尽きたようじゃの。
+[k]
+
+＠岡田以蔵
+首を[#揃:そろ]えて[r]ゆっくり話し合いする暇も無いがか！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

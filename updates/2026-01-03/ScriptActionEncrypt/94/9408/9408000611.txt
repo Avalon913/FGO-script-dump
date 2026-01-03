@@ -1,0 +1,1311 @@
+
+＄94-08-00-06-1-1
+[enableFullScreen]
+[soundStopAll]
+
+
+[charaSet A 1098234900 1 ヨハンナ]
+[charaSet B 8001500 1 マシュ]
+[charaSet C 3026000 1 ジャンヌ・オルタ・サンタ・リリィ]
+[charaSet D 5004001 1 ナーサリー]
+[charaSet E 1019001 1 ラーマ]
+
+[charaSet F 1098234900 1 ヨハンナ_アップ用]
+[charaScale F 1.4]
+
+[charaSet H 9004001 1 マルタ]
+[charaSet I 5050000 1 サンタマルタ]
+[charaSet J 4019001 1 マルタ]
+
+[imageSet L cut429_suitcase01 1]
+[imageSet M cut429_suitcase02 1]
+
+[charaSet N 1098124510 1 エフェクト用]
+
+[sceneSet O 178704 1]
+[charaScale O 1.2]
+
+[sceneSet P 117801 1]
+[charaScale P 1.2]
+
+[imageSet U cut431_mono 1 1]
+[charaScale U 1.32]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth U 9]
+[charaDepth H 6]
+[charaDepth J 5]
+[charaDepth I 4]
+
+
+[scene 10000]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[se adm14]
+[se adm15]
+[effect bit_talk_strike_01 0,-100 F]
+[effect bit_talk_ichimon01wh]
+[wt 0.2]
+[se ad32]
+[se ad1032]
+[cueSe Servants_402900 bac728]
+[fowardEffect bit_talk_14]
+[wt 0.7]
+[effectDestroy bit_talk_ichimon01wh]
+
+[scene 178702 0.3]
+[wt 0.4]
+
+[charaScale A 1.2]
+[charaFace A 7]
+[charaFadein A 0.1 0,20]
+
+[charaMoveScale A 1.0 0.2]
+[charaMove A 0,0 0.2]
+[charaShake A 0.02 3 3 0.3]
+[se ad671]
+[wt 0.8]
+
+[charaFace A 5]
+[charaPut N 220,80]
+[charaEffect N bit_talk_light_loop02]
+[se bac35]
+[se ad386]
+[wt 0.8]
+[charaFadeout A 0.1]
+[fowardEffect bit_talk_gram_slash_04]
+[se ad85]
+[wt 0.4]
+[cueSe Battle bac234]
+[shake 0.05 1 4 1.0]
+[effect bit_talk_impactlanding]
+[wt 1.5]
+
+[charaFace H 4]
+[charaFadeinFSL H 0.1 -306,0]
+[charaFace J 5]
+[charaFadein J 0.1 0,0]
+[charaFace I 5]
+[charaFadeinFSR I 0.1 306,0]
+[charaShake H 0.03 4 4 0.3]
+[charaShake J 0.03 4 4 0.3]
+[charaShake I 0.03 4 4 0.3]
+[wt 1.3]
+[effectDestroy]
+
+[bgmStop BGM_EVENT_3 1.2]
+
+[charaFace J 4]
+[charaMove J 0,-10 0.3]
+[charaMoveFSR I 306,-10 0.3]
+[wt 0.2]
+[se ad54]
+[seVolume ad54 0 0.4]
+[charaFace I 4]
+[charaMoveFSL H -306,-7 0.3]
+[wt 0.3]
+[se ad54]
+[seVolume ad54 0 0.4]
+[wt 0.7]
+
+[charaFadeout H 0.1]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+な、何とか……勝った……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+つよかったです……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ラーマ
+さすがの余も三連聖人は初めてだった。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace H 5]
+[charaFadeinFSL H 0.1 -306,0]
+[charaFace J 5]
+[charaFadein J 0.1 0,0]
+[charaFace I 4]
+[charaFadeinFSR I 0.1 306,0]
+
+＠J：マルタ
+うち一人は聖女未満ですけどね。[wt 0.7][charaFace J 1][r]でも[line 3]うん！　ここまでにしましょう！
+[k]
+
+[clear]
+
+＠H：マルタ
+そうね。[r]できれば、もーちょいやり合いたかっ[line 3]
+[k]
+
+[charaFace H 0]
+
+＠H：マルタ
+コホン。
+[k]
+
+[charaFace H 1]
+
+＠H：マルタ
+もう少し抗いたいところでしたが……。[r]でも、この辺にしておきましょう。
+[k]
+
+[clear]
+[charaTalk I]
+[charaFace I 1]
+
+＠I：サンタマルタ
+それじゃあ、ヨハンナ様。[r]私たちから大切な贈り物。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+ま、またですか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.1 1]
+[bgmStop BGM_EVENT_2 2.0]
+
+＠J：マルタ
+問答無用。[r]受け取りなさい[line 3]ハレルヤ！
+[k]
+
+[messageOff]
+[charaMoveScale J 1.1 0.2]
+[charaMove J 0,10 0.2]
+[se ad73]
+[charaFadeout J 0.3]
+[wt 0.4]
+
+[effect bit_talk_14]
+[se bac151]
+[wt 0.2]
+
+[charaScale J 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[charaShake A 0.03 4 4 0.3]
+
+[effect bit_talk_hearts_dance]
+[cueSe SE_23 23_ade840]
+[wt 1.2]
+
+[charaFace A 5]
+
+＠ヨハンナ
+前回より微妙に剛力的だ！
+[k]
+
+[messageOff]
+[effectStop bit_talk_hearts_dance]
+[cueSe SE_23 23_ade841]
+[wt 0.7]
+
+[wipeout heartOutBig 0.7 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[effectStop bit_talk_gagemist]
+
+[charaTalk off]
+[charaDepth N 7]
+[charaDepth L 5]
+[charaDepth M 4]
+
+[charaFadein L 0.1 0,-200]
+
+[scene 10000]
+[wt 1.2]
+
+[wipein heartOutBig 0.7 1]
+[wait wipe]
+
+[wt 1.2]
+
+[bgm BGM_EVENT_156 0.1]
+
+＠
+[line 3]空のスーツケースが目の前にある。
+[k]
+
+＠
+これが私の人生というならば、[r]どうするべきだろうか？
+[k]
+
+＠ヨハンナ
+……埋めないと。
+[k]
+
+＠
+空っぽのスーツケースに、[r]一つ一つ大切なものを入れていく。
+[k]
+
+[messageOff]
+[se ade166]
+[wt 0.5]
+[charaPut N 0,0]
+[charaEffect N bit_talk_glitter]
+[seStop ade166 0.8]
+[wt 1.0]
+[se ade253]
+[charaFadein M 0.1 0,-200]
+[charaFadeout L 0.8]
+[wt 1.8]
+
+＠
+それは私の名前だったり。[r]私の信仰だったり。
+[k]
+
+＠
+あるいは、私の生前の記録だったり。[r]私の能力だったり。
+[k]
+
+＠
+まずは、それで埋めていこう。[r]ひとまず、これでいいはずだ。
+[k]
+
+＠ヨハンナ
+……あれ？
+[k]
+
+[charaEffectStop N bit_talk_glitter]
+
+＠
+折角空っぽのケースを埋めたのに、[r]入れた箱は手で押しただけで、空気が抜けてしまう。
+[k]
+
+＠
+空っぽのスーツケースに、空っぽの箱を入れて、[r]埋めた気になっていたよう。
+[k]
+
+＠ヨハンナ
+でもなぁ。
+[k]
+
+＠
+私にはない。空っぽの箱以外にスーツケースを[r]埋める手段がない。
+[k]
+
+＠
+頭をひねる。[r]何かないかと、辺りを手当たり次第に探し出す。
+[k]
+
+＠ヨハンナ
+[line 3]あ。
+[k]
+
+＠
+見つけた。
+[k]
+
+＠
+それは小さくて、グシャグシャで。[r]ちょっとみっともない感じがしたけど。
+[k]
+
+＠
+確かに中身のある[line 3][r]不思議な不思議な、[#私]という品物だった。
+[k]
+
+＠
+これは、一体……どんな品物なんだろう。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_156 1.0]
+[wait fade]
+
+[charaFadeout M 0.1]
+
+[charaTalk on]
+[charaDepth A 7]
+[charaDepth F 7]
+[charaDepth J 6]
+[charaDepth O 5]
+[charaDepth B 3]
+[charaDepth E 3]
+
+[scene 178704]
+[wt 1.0]
+
+[charaFadein O 0.1 0,-280]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFaceFade A 4 0.3]
+[wt 1.3]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠ヨハンナ
+……。[r]……あー……。
+[k]
+
+？1：ヨハンナ、大丈夫？
+？！
+
+[charaFace A 0]
+
+＠ヨハンナ
+マルタ様、いらっしゃいますか？
+[k]
+
+[messageOff]
+[charaMove O -100,-280 0.9]
+[charaMove A -250,0 0.9]
+[wt 1.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadeinFSR J 0.4 256,0]
+[wt 0.4]
+
+＠J：マルタ
+もちろん、いるわよ。[r]退去ももうちょっと後にするつもりです。
+[k]
+
+[charaFace A 1]
+
+
+＠ヨハンナ
+[line 3]教えようとしてくださる事、[r]何だか見えてきた気がします。
+[k]
+
+＠J：マルタ
+そう。例えば？
+[k]
+
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+[charaFace A 0]
+
+＠ヨハンナ
+例えば、私には私がないという事。
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFadeout A 0.4]
+[charaFadeout J 0.4]
+[charaFadeout O 0.4]
+[wt 0.4]
+
+＠マシュ
+[#私がない]、とは……？
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaFadein O 0.4 0,-280]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 0,-50]
+
+[charaMove F 0,50 15.0]
+[charaMove O 0,-180 15.0]
+[wt 0.4]
+
+＠F：ヨハンナ
+んー。[r]例えば、私はさっき料理を作ることができました。
+[k]
+
+[charaFace F 4]
+
+＠F：ヨハンナ
+でも、あれは多分『そういう感じの人間だったに[r]違いない』という当て推量だと思うのです。
+[k]
+
+
+＠F：ヨハンナ
+後世の人間が、頭をひねって考えて、[r]後天的に付与した技能……みたいな。
+[k]
+
+[charaFace F 0]
+
+＠F：ヨハンナ
+いえ、もちろんこれはどの英雄、どの反英雄にも[r]当てはまります。
+[k]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[charaFace F 4]
+
+
+＠F：ヨハンナ
+奇跡のように扱われる様々な力が……[r][#無辜:む　こ]の怪物として備わった後天的なもの、なんて。
+[k]
+
+[messageOff]
+[charaTalk E]
+[charaFadeout F 0.4]
+[charaFadeout O 0.4]
+[wt 0.4]
+
+[charaScale A 1.0]
+
+＠ラーマ
+ああ……生前になかった特徴が[r]体に表出することもあるそうだな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+だから、このままでは私のスーツケースは[r]いつまで経っても空っぽで。
+[k]
+
+＠ヨハンナ
+空のスーツケースに、空っぽの箱を[r]しまっているようなもので。
+[k]
+
+[charaFace A 12]
+
+＠ヨハンナ
+……でも。[r]今日、大事なものをしまいこめました。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+大事なもの……ですか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+ええ。[r]私が料理を作った、という大事な証。
+[k]
+
+＠ヨハンナ
+影法師でも、特異点でも、[r]その事実だけは私にとって揺らがない。
+[k]
+
+[charaFace A 8]
+
+＠ヨハンナ
+まだ……まだ色々な答えがぐるぐると[r]回っているけど。
+[k]
+
+[charaFace A 1]
+
+＠ヨハンナ
+『これが大事なんだ』と思えるものは、[r]できたと思います。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠J：マルタ
+ヨハンナ様なら、[r]あと少しで真理を掴めるでしょう。
+[k]
+
+＠J：マルタ
+それを得た時に、ヨハンナ様がどう思うかまでは[r]分かりませんが[line 3]
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+後悔とかは、しないと思いますよ。[r]たぶん、ですけど。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠H：マルタ
+それなら、戦った甲斐もあったというものです。[r]残る鎖は二本、健闘をお祈りします。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+……ありがとうございます！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_11 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+
+[wipeFilter cinema 0.5 0]
+
+[scene 110102]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+[scene 115200 0.7]
+[wt 1.2]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+[bgm BGM_EVENT_112 0.1]
+
+＠ヨハンナ
+ふいぇあぁぁ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠ラーマ
+教皇という地位にあるまじき変な声だ……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+＠ヨハンナ
+いいんですー。[r]いーいーんーでーすー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+もう、ダメですよヨハンナさん。[r]しっかり！　しっかりです！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+
+＠ナーサリー・ライム
+うーん、でもヨハンナも教皇である前に、[r]一人の女性よ。
+[k]
+
+[charaFace D 1]
+
+＠ナーサリー・ライム
+息をついた時に奇声を発するくらい、[r]大目に見るべきよ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+
+＠ヨハンナ
+なんか私の尊厳が失われそうなので、[r]今後は控えようと思います！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠ナーサリー・ライム
+あら、そう。悲しいわ、わたし。[r]子供のようなヨハンナも割と好きなのに。
+[k]
+
+[charaFace D 1]
+
+＠ナーサリー・ライム
+子供になってしまえばいいのにね、[r]いっそのこと。ふふふ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠ラーマ
+それで、ビーマに対する答えは見えてきたか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+
+＠ヨハンナ
+う。[r]それは……まだ、いまいち見えてこないです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+
+＠ラーマ
+そうか。ま、[#急:せ]かすつもりもない。
+[k]
+
+＠ラーマ
+どうしても不安であれば、[r]誰かに意見を求めるのもいいだろう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+
+＠ヨハンナ
+はい。じゃあラーマ様、どうぞ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠ラーマ
+余の理由など、参考にならんぞ。[r]余はコサラの王、そして人理を守る者。
+[k]
+
+＠ラーマ
+で、あれば。[r]九を活かすために一を捨てるのも当然だ。
+[k]
+
+[charaFace E 5]
+
+＠ラーマ
+こればかりは、誰に何と言われようとも、[r]譲る訳にはいかん。
+[k]
+
+＠ラーマ
+無数の後悔あれど、[r][#ここを譲ってしまってはならない]という一線がある。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠ヨハンナ
+……申し訳ありません。[r]無神経な質問でしたね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠ラーマ
+いやいや。余が勝手に言い出しただけだ。
+[k]
+
+＠ラーマ
+余の立ち位置は汝と異なるであろうが、[r]何かの参考になればいい。
+[k]
+
+＠ラーマ
+二人は何かないか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+私は特に何もありません！[r]嫌なものは嫌です！
+[k]
+
+[charaFace C 4]
+
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+それでも『らぶらぶはぁとジャンヌ・オルタ・[r]サンタ・リリィ様像』を作りたいと言われたら……。
+[k]
+
+[charaFace C 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+うれしいです！　放置します！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+
+
+＠ヨハンナ
+そ、そうですか。[r]譲れないかなこの立ち位置……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠ラーマ
+そ、そうか……そうなるか……。[r]ナーサリー・ライムはどうだ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠ナーサリー・ライム
+わたしの石像？
+[k]
+
+[charaFace D 4]
+
+＠ナーサリー・ライム
+うーん、そうね。[r]わたしは[line 3]
+[k]
+
+[charaFace D 1]
+
+
+＠ナーサリー・ライム
+もしかすると、[#ヨハンナと同じ答えかも]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+
+＠ヨハンナ
+え……！？
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠ナーサリー・ライム
+だから、教えてあげたりできないの。[r]ヨハンナが自分で気付くまでは。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+
+＠ヨハンナ
+ヒントくらい、ないです？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+
+＠ナーサリー・ライム
+ないわ、ないわ、全くないの。
+[k]
+
+＠ナーサリー・ライム
+だってこの特異点は、[r][#あなたのためのものだから]。
+[k]
+
+[charaFace D 0]
+
+＠ナーサリー・ライム
+[line 3]たぶん、だけどね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠ラーマ
+ふーむ……。[r]ヨハンナのための特異点、か。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠ヨハンナ
+プレッシャーかかるなぁ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 0,-50]
+
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+そうですか？[r]私なら、光栄に思いますけど！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠ヨハンナ
+……光栄に？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 0,-50]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+だって、自分のための特異点です。[r]つまりヨハンナさんが主役なんですよ。
+[k]
+
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+自分が主役だと、うれしくありませんか？
+[k]
+
+[charaFace C 1]
+
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+私はクリスマスになると主役なので、[r]毎年うれしいですけど！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠ヨハンナ
+そういう考え方もあるかなぁ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠ラーマ
+まあ、余とこの二人ではこれくらいが限界か。
+[k]
+
+[charaFace E 1]
+
+＠ラーマ
+それでも悩みが続くようであれば、[r]マスターとマシュに相談するといい。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠ヨハンナ
+あの二人なら、的確な答えを出してくれる……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠ラーマ
+いや、恐らく難しいだろう。
+[k]
+
+[charaFace E 1]
+
+＠ラーマ
+だがな、[#共に悩んでくれる]というのは、[r]案外良いものだし……。
+[k]
+
+＠ラーマ
+何より、そんな状況だからこそ、[r]ころりと悩みが解決するかもしれないぞ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠ヨハンナ
+なるほど……。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_112 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[wipeOff]
+
+[scene 117801]
+[wt 1.0]
+
+[charaDepth A 7]
+[charaDepth B 6]
+[charaDepth P 4]
+
+[charaFadein P 0.1 100,-280]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_147 0.1]
+
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+……という訳で、一緒に悩んでお願いします！
+[k]
+
+？1：よし悩もう！
+？！
+
+[charaFace A 6]
+
+＠ヨハンナ
+ありがとう！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMove P 0,-280 0.9]
+[charaMove A -256,0 0.9]
+[wt 1.1]
+
+[charaFace B 1]
+[charaFadeinFSR B 0.4 256,0]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk B]
+
+＠マシュ
+はい、わたしたちでよければ、[r]一緒に悩みます。
+[k]
+
+[charaTalk A]
+[charaFace A 3]
+
+＠ヨハンナ
+二人ともちゅき……。[r]……もとい、好き……。
+[k]
+
+[charaTalk B]
+[charaFace B 3]
+
+＠マシュ
+あ、ありがとうございます。
+[k]
+
+[messageOff]
+[charaTalk U]
+[charaFadein U 0.4 0,-360]
+[wt 0.4]
+
+＠
+[charaTalk U][line 3]そうして、私とマスターとマシュさんは、[r]一緒になって悩み出す。
+[k]
+
+
+＠
+[charaTalk U]
+この特異点の秘密とか。[r]ビーマ様にどう答えればいいのか、とか。
+[k]
+
+
+＠
+[charaTalk U]
+何が答えなんだろう。[r]何が正しいんだろう。
+[k]
+
+＠
+[charaTalk U]
+自分の尻尾を追いかけ回す犬みたいに、[r]ぐるぐるぐるぐる。どこまでいっても答えがない。
+[k]
+
+＠
+[charaTalk U]
+一時間……二時間？[r]くらい話して、話して、一緒に悩んで。
+[k]
+
+[messageOff]
+[charaFadeout U 0.4]
+[wt 0.4]
+
+[charaFace B 7]
+
+＠マシュ
+……という訳で、フォウさんのブラッシングは[r]わたしが一番だ、と自負しています。
+[k]
+
+[charaFace B 1]
+
+＠マシュ
+こればかりは先輩といえども、[r]譲れない一線ですね。
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_147 1.0 0.5]
+[wait wipe]
+
+[charaFace A 1]
+[charaFace B 1]
+
+[charaTalk off]
+
+[wt 0.6]
+
+[wipein rollLeft 1.0 1.0]
+[bgm BGM_EVENT_147 1.0 1.0]
+[wait wipe]
+
+[wt 0.4]
+
+？1：それで新所長がさー
+？！
+
+[charaMoveReturn A -256,-7 0.3]
+[charaMoveReturnFSR B 256,-7 0.3]
+[wt 0.3]
+[charaMoveReturn A -256,-7 0.5]
+[charaMoveReturnFSR B 256,-7 0.5]
+[wt 1.0]
+
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_147 1.0 0.5]
+[wait wipe]
+
+[wt 0.6]
+
+[wipein rollLeft 1.0 1.0]
+[bgm BGM_EVENT_147 1.0 1.0]
+[wait wipe]
+
+[wt 0.4]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 10]
+
+
+＠ヨハンナ
+[#聖言:せいげん]が無意識で発動するとか、[r]ちょっとホラーすぎない？
+[k]
+
+＠ヨハンナ
+『疲れた』って言っただけで、[r]周囲の人間が全員疲労状態になるとかさー。
+[k]
+
+[charaFace A 4]
+
+＠ヨハンナ
+……。[r]……何の話してたんだっけ……。
+[k]
+
+[messageOff]
+[charaTalk U]
+[charaFadein U 0.4 0,-360]
+[wt 0.4]
+
+＠
+[charaTalk U]
+思えばこれも貴重な体験。
+[k]
+
+＠
+[charaTalk U]
+砂に書いた文字のように、[r]一日も[#保:も]たずに消えてしまう雑談。
+[k]
+
+＠
+[charaTalk U]
+宝石のように煌めくことのない、[r]ささやかで秘めやかで価値のない時間。
+[k]
+
+＠
+[charaTalk U]
+そして。[r]多分、私が初めて味わった果実。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_147 2.0]
+[wait fade]
+[soundStopAll]
+[end]

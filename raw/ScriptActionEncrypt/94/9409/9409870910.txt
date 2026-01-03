@@ -1,0 +1,2008 @@
+
+＄94-09-87-09-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 7006000 1 坂田金時]
+[charaSet B 4039000 1 マンドリカルド]
+[charaSet C 1030000 1 鈴鹿御前]
+[charaSet D 1098187810 1 清少納言]
+[charaSet E 5019001 1 エルメロイⅡ世]
+[charaSet F 5042001 1 紫式部]
+[charaSet H 1098257800 1 マシュ]
+[charaSet I 1098300600 1 乙姫清姫]
+
+[charaSet J 5019001 1 エルメロイ（演出用）]
+[charaSet K 1098296900 1 エフェクト用]
+[charaSet M 7006000 1 坂田金時（演出用）]
+[charaSet N 1098187810 1 清少納言（演出用）]
+[charaSet O 10010000 1 蘆屋道満]
+[sceneSet S 106700 1]
+
+
+[sceneSet W 10000 1]
+[charaScale W 1.1]
+
+[charaSet X 98115000 1 エフェクト用]
+[sceneSet Y 199500 1]
+[charaScale Y 1.2]
+
+[charaPut K 2000,2500]
+[charaEffect K bit_sepia01_depth_fs]
+[charaPut X 2000,2500]
+[charaEffect X bit_talk_noise02]
+
+
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+[label lblClear01a]
+[flag route1 0]
+[charaSet G 5009001 1 ダ・ヴィンチ]
+[sceneSet P 105600 1]
+[sceneSet Q 105600 1]
+[sceneSet R 105600 1]
+[scene 105600]
+
+[branch lblConf01]
+[label lblClear01b]
+[flag route1 1]
+[charaSet G 1098257300 1 ダ・ヴィンチ]
+[sceneSet P 105900 1]
+[sceneSet Q 105900 1]
+[sceneSet R 105900 1]
+[scene 105900]
+
+[branch lblConf01]
+[label lblClear01c]
+[flag route1 2]
+[charaSet G 1098257300 1 ダ・ヴィンチ]
+[sceneSet P 158100 1]
+[sceneSet Q 158100 1]
+[sceneSet R 158100 1]
+[scene 158100]
+
+[label lblConf01]
+
+[charaScale P 1.2]
+[charaScale Q 1.2]
+[charaScale R 1.2]
+[charaScale S 1.2]
+[charaTalk depthOff]
+
+
+[cueSe SE_24 24_ad1364]
+[cueSeVolume 24_ad1364 0 0]
+[wt 0.1]
+
+
+[cueSeVolume 24_ad1364 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+[wt 0.2]
+
+
+[subCameraOn 1]
+[charaLayer M sub #A]
+[charaLayer P sub #A]
+[subCameraFilter #A maskEdge cut359_mask08 5 255,255,255,255 0]
+
+[charaDepth M 5]
+[charaDepth P 4]
+[charaScale M 1.3]
+[charaScale P 1.4]
+[charaFadein P 0 0,-170]
+[subRenderFadein #A 0.4 0,-270]
+[blur lens 0.4 4 1]
+[wt 0.5]
+[charaFace M 1]
+[charaFadein M 0.7 150,240]
+[charaMove M -150,240 4.0]
+[charaShake M 0.3 0 1 4.0]
+[se ad311 0]
+[seVolume ad311 0.7 1.0]
+[wt 2.7]
+[charaFadeout M 0.7]
+[seStop ad311 0.7]
+[wt 0.7]
+[charaShakeStop M]
+[charaMove M -100,240 0.1]
+[subRenderFadeout #A 0.4]
+[blurOff lens 0.4]
+[seStop 24_ad1364 0.7]
+[wt 0.6]
+[charaFadeout P 0.1]
+[charaFadeout M 0.1]
+[charaFace A 2]
+[charaFadein A 0.3 -100,0]
+[charaMoveEase A 0,0 0.3 easeOutExpo]
+[se ad7]
+[wt 0.4]
+[charaLayer P normal]
+[charaLayer M normal]
+[subCameraOff]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaShake A 0.03 3 3 0.4]
+＠坂田金時
+うおっ！？
+[k]
+
+[charaFace A 3]
+＠坂田金時
+珍しい組み合わせに、思わず二度見しちまったぜ……。[r]お二人さん、今日はどういう[line 3]
+[k]
+
+[charaFace A 4]
+＠坂田金時
+！！
+[k]
+
+＠坂田金時
+……あのよ、先生。[r]その人、見た目はともかく根は善人だからよ。
+[k]
+
+＠坂田金時
+何やったか知らねえが、[r]あんまり怒らねえでやってくれよな……？
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_77 1.0 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[se ade428]
+[wt 0.3]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 100,0]
+[charaMove B 0,0 1.0]
+[charaShake B 0.3 0 1 1.0]
+[wt 0.8]
+[seStop ade428 0.2]
+[wt 0.2]
+[charaShake B 0.03 3 3 0.2]
+[charaFace B 7]
+
+＠マンドリカルド
+うおわっ！？
+[k]
+
+[charaFace B 0]
+＠マンドリカルド
+え、なんで呼び出し食らってんすか？[r]今日は一体何やったんすか？
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_77 1.0 0.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[cueSe SE_24 24_ad1352]
+[seStop 24_ad1352 1.0]
+[wt 0.4]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.4 -100,0]
+[charaMove C 0,0 1.0]
+[charaShake C 0.3 0 1 1.0]
+[wt 1.0]
+[charaFace C 15]
+[charaShake C 0.03 3 3 0.2]
+[wt 0.9]
+[charaFace C 14]
+
+＠鈴鹿御前
+あのさぁ……。
+[k]
+
+＠鈴鹿御前
+確かに一回くらい怒られとけって思ってたけど。[r]今度は何やらかしたわけ？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[charaDepth N 8]
+[charaDepth J 6]
+[charaDepth O 1]
+[charaDepth P 4]
+[charaDepth D 3]
+[charaDepth E 2]
+[charaDepth Q 7]
+[charaScale N 1.4]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.2]
+
+
+[charaTalk N]
+[charaFace N 2]
+[charaFadein N 0.2 1]
+[charaFadein P 0.2 0,-340]
+[wt 0.2]
+[effect bit_talk_41_fs 0,35]
+[charaFace E 0]
+[charaFadein E 0.1 -256,0]
+[charaFace D 5]
+[charaFadein D 0.1 200,0]
+
+[bgm BGM_EVENT_146 0.1]
+
+＠N：清少納言
+納得いかん！！
+[k]
+
+[messageOff]
+[charaTalk N,D]
+[charaFadeout N 0.4]
+[charaFadeout P 0.4]
+[effectDestroy bit_talk_41_fs]
+[wt 0.5]
+
+＠清少納言
+なんであたしちゃんが、[r]生徒指導食らってるみたいな話になってんだ。
+[k]
+
+＠清少納言
+ようやくレイシフトから帰ってきて、[r]二人でお疲れ様会やってるだけなのにね！
+[k]
+
+[charaFace E 0]
+＠エルメロイⅡ世
+日頃の行い、というやつだな。
+[k]
+
+＠エルメロイⅡ世
+そもそもがお疲れ様会ではない。[r]私が一服してる所に、君が押しかけてきただけだ。
+[k]
+
+[charaFace D 4]
+＠清少納言
+あんだよー、つれねーこと言うなよー。[r]一緒に特異点修正した仲じゃんかよー。
+[k]
+
+[charaFace E 4]
+＠エルメロイⅡ世
+それに、君と一緒にいるとな……。
+[k]
+
+[messageOff]
+[charaFace O 3]
+[charaFadeTime O 0.4 0.6]
+[charaPut O -370,0]
+[charaMoveEase O -420,0 0.4 easeOutSine]
+[wt 0.5]
+
+＠エルメロイⅡ世
+蘆屋道満が『おやおやご愁傷様です』と言わんばかりの[r]目を向けてきて、微妙にイラッとくる。
+[k]
+
+[charaTalk D]
+[charaFadeout O 0.2]
+
+[charaFace D 0]
+＠清少納言
+ふぅん……。[r]それ多分、仲間外れにされてイジけてんだな。
+[k]
+
+[charaFace D 9]
+＠清少納言
+よっしゃ！[r]あとでマンボちゃんも誘って遊びに行こうぜ！
+[k]
+
+[messageOff]
+[charaFace O 11]
+[charaFadeTime O 0.4 0.6]
+[charaPut O 400,0]
+[charaMoveEase O 450,0 0.4 easeOutSine]
+[wt 1.5]
+
+[charaTalk D,F]
+[charaFadein Q 0.4 -80,-220]
+[wt 0.4]
+[charaFadeout D 0.1]
+
+[se ade253 0.6]
+[se ad492]
+[seStop ad492 0.6]
+[charaDepth F 8]
+[charaScale F 1.1]
+[charaFace F 4]
+[charaFadein F 0.4 0,15]
+[charaMoveEase F 0,0 0.4 easeOutSine]
+[wt 0.4]
+[charaFadeout E 0.1]
+[charaFadeout O 0.1]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+＠紫式部
+……なぎこさん。[r]あまり孔明様に迷惑をかけてはいけませんよ？
+[k]
+
+＠紫式部
+まさかとは思いますが、レイシフト先でも[r]お手を煩わせていた等ということは[line 3]
+[k]
+
+[messageOff]
+[charaTalk F,D]
+[charaFadeout F 0.4]
+[charaFadeout Q 0.4]
+[wt 0.5]
+
+＠清少納言
+おいおい、かおるっち君さぁ。[r]君は一体何を言ってるんだい？
+[k]
+
+[charaFace D 15]
+＠清少納言
+フッフフ……見せてやりたかったぜ。
+[k]
+
+[charaFace D 16]
+＠清少納言
+ウチらパリピと軍師with女子高校生で、[r]群がるサメどもを、あ、千切っては投げぇ……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠エルメロイⅡ世
+やめてくれないか。[r]その謎のユニット名のような呼び方は。
+[k]
+
+[charaFace E 0]
+＠エルメロイⅡ世
+だが、まぁ……頼りにしていたのは事実だよ。[r]そこの清少納言と……
+[k]
+
+＠エルメロイⅡ世
+[#あの二人]がいなければ、[r]私も特異点の修正には手を焼いただろうからな。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+[wt 1.2]
+
+[charaFaceFade D 8 0.3]
+[charaFadein S 0.5 0,-200]
+[cameraMoveEase 0,-30 0.5 easeOutQuint 1.2]
+[wt 0.5]
+
+＠清少納言
+……な！？
+[k]
+
+＠紫式部
+その満面の笑み、ぐむ、んむむむむむむぅ～！！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_146 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[cameraHome 0.1]
+
+[charaScale F 1.0]
+[charaFadeout D 0.1]
+[charaFadeout S 0.1]
+
+[sceneSet S 161300 1]
+[sceneSet T 109600 1]
+[sceneSet U 168400 1]
+[sceneSet V 219100 1]
+[wt 1.5]
+
+[cueSe SE_24 24_ad1364 0]
+[seVolume 24_ad1364 1.5 0.8]
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+[seStop 24_ad1364 2.5]
+
+[bgm BGM_EVENT_147 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠紫式部
+なるほど……。[r][#大綿津見神:お お わ だ つ み の か み]の、呪い……。
+[k]
+
+＠紫式部
+[#子々孫々:し し そ ん そ ん]にいたるまで、[#未来永劫:みらいえいごう]その身を縛られ続ける、[r]絶対服従の呪いと言っていいのでしょうね。
+[k]
+
+[charaFace F 4]
+＠紫式部
+海幸彦が聖杯を求めてまで解呪したいと考えるのは、[r]むしろ当然……無理からぬ事です。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠清少納言
+んー、願いとしてはもっとシンプルだったけど。[r]難儀な呪いかけられたもんだね、さっちーもさ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠紫式部
+……。[r]……。
+[k]
+
+＠紫式部
+この話を聞きながら、[r]ふと、思ったのですが……。
+[k]
+
+＠紫式部
+海幸山幸神話において、[r]なぜ、[#弟が兄を呪う必要があったのでしょう]？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠エルメロイⅡ世
+ふむ……。
+[k]
+
+＠エルメロイⅡ世
+確かに、強引に弓と釣り針を交換させたのも弟。[r]それを失くしたのも弟だ。
+[k]
+
+＠エルメロイⅡ世
+怒りにかられた兄に対する行動としては、[r]いささか理不尽とも言えるが……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠清少納言
+ハイッ！　ハイッ！[r]ハイーーーーーッ！
+[k]
+
+[charaFace D 8]
+＠清少納言
+あたしちゃん、ちょっと考えてみたんだけど！[r]これ二人に聞いてもらってもいーい？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠紫式部
+それは……なぎこさんが考えた、[r]海幸彦が呪われた理由、ですか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠エルメロイⅡ世
+まあ、聞くだけは聞いてみるが……。[r]話してみたまえ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠清少納言
+え、なにその微妙な反応。[r]まあいいか。
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[wipeout circleIn 1.5 1]
+[bgmStop BGM_EVENT_147 1.5]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[charaPut K 1]
+
+[pictureFrameTop cut063_cinema]
+
+[charaDepth S 1]
+[charaDepth T 2]
+[charaDepth U 3]
+[charaDepth V 4]
+[charaDepth K 8]
+[charaScale S 1.1]
+[charaScale T 1.2]
+[charaScale U 1.1]
+[charaScale V 1.2]
+[charaFadein S 0.1 0,-300]
+[wt 1.0]
+
+[charaMove S 0,-270 30.0]
+[charaMoveScale S 1.0 30.0]
+[wipein circleIn 1.5 1]
+[wait wipe]
+[wt 0.4]
+
+[bgm BGM_MAP_95 0.1]
+
+＠清少納言
+えーと、神話によると[line 3][r]国生みの後、海を統治した神は[#スサノオ]だったよね。
+[k]
+
+＠清少納言
+でもスサノオは[#妣の国:ははのくに]に行っちゃったから、[r]その役割は宙ぶらりんになったわけ。
+[k]
+
+＠清少納言
+その後、海の統治がどうなったかっていうと、[r]やっぱり[#大綿津見神:お お わ だ つ み の か み]が引き継いだんじゃない？
+[k]
+
+[messageOff]
+[charaFadein T 0.8 50,-270]
+[charaMove T -50,-270 30.0]
+[wt 1.0]
+[charaFadeout S 0.1]
+[wt 0.1]
+
+＠清少納言
+で、その統治がずっと続いてたとこに変化が起きた。[r]アマテラスに連なる天孫が、地上に降りてきたのさ。
+[k]
+
+＠清少納言
+新しい神様も生まれて、天孫族は地上を治めていく。[r]その中には、海幸山幸兄弟なんかもいるわけだけど。
+[k]
+
+＠清少納言
+その海幸彦が、海の領域にまで踏み込んできたら、[r][#大綿津見神:お お わ だ つ み の か み]も気が気じゃないよね。
+[k]
+
+＠清少納言
+天孫族は地上ばかりか、この海まで治めようと[r]しているのではないか……なんて考えたりして。
+[k]
+
+[messageOff]
+[charaFadein U 0.8 0,-240]
+[charaMove U 0,-260 30.0]
+[charaMoveScale U 1.15 30.0]
+[wt 1.0]
+[charaFadeout T 0.1]
+[wt 0.1]
+
+＠清少納言
+そんな時、兄弟の不仲を知った[#大綿津見神:お お わ だ つ み の か み]が、[r]ある一計を案じたのさ。
+[k]
+
+＠清少納言
+弟の山幸彦を上手く利用して、[r]兄の海幸彦に呪いをかける事で……。
+[k]
+
+＠清少納言
+海に寄り添って生きていた、その神様を、[r]水に溺れる体へと変えてしまった。
+[k]
+
+＠清少納言
+で、山幸彦は[#大綿津見神:お お わ だ つ み の か み]の娘と結ばれるけど、[r]これも最後には[#袂:たもと]を分かっちゃうでしょ。
+[k]
+
+[messageOff]
+[charaFadein V 0.8 0,-390]
+[charaMove V 0,-290 30.0]
+[wt 1.0]
+[charaFadeout U 0.1]
+[wt 0.1]
+
+＠清少納言
+海幸彦は海に入る事もかなわず、[r]地上と海を結んでいた[#海境:うなさか]も閉ざされて。
+[k]
+
+＠清少納言
+もう誰も、海の統治を奪う事はできなくなった。[r]海そのものが不可侵の異界となった[line 3]ってわけさ。
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_MAP_95 1.5]
+[wipeout circleIn 1.5 1]
+[wait wipe]
+
+[charaFadeout V 0.1]
+
+[charaPut K 2000,2500]
+[charaEffectDestroy K bit_sepia01_depth_fs]
+[pictureFrame]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[wipein circleIn 1.5 1]
+[wait wipe]
+[wt 0.2]
+
+[bgm BGM_EVENT_147 0.1]
+
+＠紫式部
+なんと言いますか……。
+[k]
+
+[charaFace F 6]
+＠紫式部
+さすがにそれは、いくらなんでも、[r][#荒唐無稽:こうとうむけい]がすぎるのではっ……！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠清少納言
+あ、やっぱダメか！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠エルメロイⅡ世
+……。[r]……。
+[k]
+
+＠エルメロイⅡ世
+本人の与り知らぬところで、[r]大きな存在に利用される理不尽さ……か。
+[k]
+
+＠エルメロイⅡ世
+もしかすると、本当に海幸彦は……[r]彼に、自分と似たものを感じたのかもしれない。
+[k]
+
+[charaFace E 4]
+＠エルメロイⅡ世
+それが、とても人間に従うとは思えない神霊が、[r]あえて召喚に応じた理由……いや、なんとも言えんな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠紫式部
+も、もう……！[r]孔明様も乗っからないでください！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠清少納言
+……。[r]……。
+[k]
+
+[charaFace D 1]
+＠清少納言
+……ね、メロっち先生。[r]聞いてみてもいい？
+[k]
+
+＠清少納言
+あれから30年経ったら、[r]シーボルトはお瀧さんたちに会えた筈だけど。
+[k]
+
+＠清少納言
+海幸彦もいつか、願いがかなって、[r][#大綿津見神:お お わ だ つ み の か み]に……。
+[k]
+
+[charaFace D 16]
+＠清少納言
+会いたい人に、会えるのかな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠エルメロイⅡ世
+……。[r]……。
+[k]
+
+＠エルメロイⅡ世
+ああ、そういえば……。[r]今日は七夕だったな。
+[k]
+
+＠エルメロイⅡ世
+引き離された機織りと牛飼いが、[r][#鵲:かささぎ]の作った橋を渡っていく夜だ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠清少納言
+うん？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠エルメロイⅡ世
+[#そうあれかし]という誰かの願いが、[r]どこかに届くのならば[line 3]
+[k]
+
+＠エルメロイⅡ世
+それくらいの奇跡は、[r]いつか、起きたっていい。
+[k]
+
+[charaFace E 1]
+＠エルメロイⅡ世
+……そういう話さ。
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_147 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[charaSet A 1098300600 1 乙姫清姫（演出用）]
+[charaSet B 1098300600 1 乙姫清姫（演出用）]
+[charaSet C 1098300600 1 乙姫清姫（演出用）]
+[sceneSet S 218600 1]
+[branchQuestClear lblClear02c 94064915]
+[branchQuestClear lblClear02c 3001101]
+[branchQuestClear lblClear02b 3000303]
+[label lblClear02a]
+[sceneSet P 135100 1]
+[sceneSet Q 135100 1]
+[sceneSet R 135100 1]
+[scene 135100]
+
+[branch lblConf02]
+[label lblClear02b]
+[sceneSet P 104100 1]
+[sceneSet Q 104100 1]
+[sceneSet R 104100 1]
+[scene 104100]
+
+[branch lblConf02]
+[label lblClear02c]
+[sceneSet P 132900 1]
+[sceneSet Q 132900 1]
+[sceneSet R 132900 1]
+[scene 132900]
+
+[label lblConf02]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+[charaTalk off]
+[charaDepth H 2]
+[charaDepth Y 3]
+[charaDepth G 4]
+
+[branch 1_A route1 0]
+[charaScale G 1.4]
+[charaTalk G]
+[charaFace G 24]
+[charaFadein G 0.4 225,-25]
+[charaFadein Y 0.4 -80,-250]
+[branch 1_Conf]
+[label 1_A]
+[charaScale G 1.4]
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.4 275,-50]
+[charaFadein Y 0.4 -80,-250]
+[label 1_Conf]
+[cueSe SE_24 24_ad1404 0.4]
+[wt 0.4]
+[wt 0.6]
+
+＠ダ・ヴィンチ
+……[r]……。
+[k]
+
+＠マシュ
+ダ・ヴィンチちゃんが、[r]宇宙の猫みたいな顔をしてます……。
+[k]
+
+？1：今回のレイシフトも……
+？2：色んな事があったので……
+？！
+
+[messageOff]
+[wt 0.7]
+[seStop 24_ad1404 0.7]
+[charaFadeout G 0.7]
+[charaFadeout Y 0.7]
+[wt 1.2]
+[bgm BGM_EVENT_112 0.1]
+[charaScale G 1.0]
+
+
+[charaTalk on]
+[branch 2_A route1 0]
+[charaTalk G]
+[charaFace G 34]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+い、いや……[r]この程度でフリーズしてられないよね。
+[k]
+
+[charaFace G 0]
+＠ダ・ヴィンチ
+水着の季節も近いのだし！[r]とりあえずは、そうだな……。
+[k]
+
+＠ダ・ヴィンチ
+無事に戻ってきてくれて、何よりだよ。[r]今回も苦労をかけたね、[%1][&君:ちゃん]。
+[k]
+
+＠ダ・ヴィンチ
+微小特異点の修正は、これで完了だ。[r]長崎の町は、本来の歴史を歩む事になる……。
+[k]
+
+[branch 2_Conf]
+
+[label 2_A]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+い、いや……[r]この程度でフリーズしてられないよね。
+[k]
+
+[charaFace G 0]
+＠ダ・ヴィンチ
+水着の季節も近いのだし！[r]とりあえずは、そうだな……。
+[k]
+
+＠ダ・ヴィンチ
+無事に戻ってきてくれて、何よりだよ。[r]今回も苦労をかけたね、[%1][&君:ちゃん]。
+[k]
+
+＠ダ・ヴィンチ
+微小特異点の修正は、これで完了だ。[r]長崎の町は、本来の歴史を歩む事になる……。
+[k]
+
+[label 2_Conf]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠マシュ
+あの、ダ・ヴィンチちゃん。[r]ひとつだけ、聞いてもいいですか。
+[k]
+
+＠マシュ
+シーボルトさんと瀧さんは、[r]再び会う事ができたのですよね……？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[branch 3_A route1 0]
+[charaTalk G]
+[charaFace G 23]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+……[r]……。
+[k]
+
+＠ダ・ヴィンチ
+今回のレイシフトから30年後の、１８５９年。
+[k]
+
+＠ダ・ヴィンチ
+追放令を解かれ、再び日本に戻ったシーボルトは、[r]お瀧と再会を果たしている。
+[k]
+
+＠ダ・ヴィンチ
+新しい家族を伴ってね。
+[k]
+
+[branch 3_Conf]
+
+[label 3_A]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+……[r]……。
+[k]
+
+＠ダ・ヴィンチ
+今回のレイシフトから30年後の、１８５９年。
+[k]
+
+＠ダ・ヴィンチ
+追放令を解かれ、再び日本に戻ったシーボルトは、[r]お瀧と再会を果たしている。
+[k]
+
+＠ダ・ヴィンチ
+新しい家族を伴ってね。
+[k]
+
+[label 3_Conf]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠マシュ
+新しい、家族……。[r]それじゃあ……？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[branch 4_A route1 0]
+[charaTalk G]
+[charaFace G 34]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+現実は、[#御伽話:おとぎばなし]のようにはいかないって事かな。
+[k]
+
+＠ダ・ヴィンチ
+異人との混血児を抱えるお瀧には苦労もあった。[r]追放処分を受けたシーボルトも再来日を許されない。
+[k]
+
+＠ダ・ヴィンチ
+二人はまだ若かったし、正式な婚姻関係もなかった。[r]……そのどちらにも、新しい人生が必要だったのさ。
+[k]
+
+[branch 4_Conf]
+
+[label 4_A]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+現実は、[#御伽話:おとぎばなし]のようにはいかないって事かな。
+[k]
+
+＠ダ・ヴィンチ
+異人との混血児を抱えるお瀧には苦労もあった。[r]追放処分を受けたシーボルトも再来日を許されない。
+[k]
+
+＠ダ・ヴィンチ
+二人はまだ若かったし、正式な婚姻関係もなかった。[r]……そのどちらにも、新しい人生が必要だったのさ。
+[k]
+
+[label 4_Conf]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠マシュ
+……[r]……。
+[k]
+
+＠マシュ
+そう、なんですね。
+[k]
+
+＠マシュ
+思い出に縛られていては、[r]先に進めないから……。
+[k]
+
+？1：それは……
+？2：少し違う気がするよ
+？！
+
+[charaFace H 5]
+＠マシュ
+え？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[branch 5_A route1 0]
+[charaTalk G]
+[charaFace G 23]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+……ああ、そうだね。
+[k]
+
+[charaFace G 2]
+＠ダ・ヴィンチ
+この世界に永遠はなくとも、[r]築き上げてきたものが消え去るわけじゃない。
+[k]
+
+＠ダ・ヴィンチ
+瀧は、シーボルトとの子供を立派に育て上げ、[r]そのイネも、父と同じ医療の道を歩んだ。
+[k]
+
+＠ダ・ヴィンチ
+海の向こうで開国を訴え続けていた、[r]シーボルトだって、そうさ。
+[k]
+
+＠ダ・ヴィンチ
+もう一度会いたいというその思いが、[r]彼らを支え、生きる力を与えていた……なんて。
+[k]
+
+＠ダ・ヴィンチ
+そんな風に考えてしまうのは……[wt 0.8][charaFaceFade G 37 0.1][r]少しロマンチックがすぎるかな。
+[k]
+
+[branch 5_Conf]
+
+[label 5_A]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+……ああ、そうだね。
+[k]
+
+＠ダ・ヴィンチ
+この世界に永遠はなくとも、[r]築き上げてきたものが消え去るわけじゃない。
+[k]
+
+＠ダ・ヴィンチ
+瀧は、シーボルトとの子供を立派に育て上げ、[r]そのイネも、父と同じ医療の道を歩んだ。
+[k]
+
+＠ダ・ヴィンチ
+海の向こうで開国を訴え続けていた、[r]シーボルトだって、そうさ。
+[k]
+
+[charaFace G 1]
+
+＠ダ・ヴィンチ
+もう一度会いたいというその思いが、[r]彼らを支え、生きる力を与えていた……なんて。
+[k]
+
+＠ダ・ヴィンチ
+そんな風に考えてしまうのは……[r]少しロマンチックがすぎるかな。
+[k]
+
+[label 5_Conf]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠マシュ
+い、いえ……！
+[k]
+
+＠マシュ
+そう、ですよね！[r]そうであったらいいと……わたしも思います！
+[k]
+
+[charaFace H 18]
+＠マシュ
+……。[r]……。
+[k]
+
+＠マシュ
+きっと、織姫と彦星も……[r]そうなんです。
+[k]
+
+？1：織姫？
+？！
+
+[charaFace H 11]
+＠マシュ
+先輩、実はわたし……。[r]七夕のお話を聞いた時から思っていたんです。
+[k]
+
+＠マシュ
+年に一度しか会えない、離れ離れの二人は……。[r]どうやって、その一年を過ごしているんだろう。
+[k]
+
+＠マシュ
+悲しい気持ちでいっぱいになってしまわないのか、[r]なんて、そんな事を。
+[k]
+
+[charaFace H 12]
+＠マシュ
+でも……悲しいだけじゃないんですね。
+[k]
+
+＠マシュ
+また会えると信じているからこそ、[r]二人は頑張れるんです。
+[k]
+
+＠マシュ
+きっと、シーボルトさんたちが、[r]そうであったように。
+[k]
+
+？1：うん……
+？2：きっと、そうだよ
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[branch 6_A route1 0]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+そうか……そういえば、今日は七夕だったね。
+[k]
+
+＠ダ・ヴィンチ
+エミヤくんが張り切って料理を用意していたし、[r]二人とも、楽しんでくるといいよ。
+[k]
+
+[charaFace G 1]
+＠ダ・ヴィンチ
+星空が見たければシミュレーター室を開放しよう。[r]まあ、ちょっと、風情には欠けるけどね。
+[k]
+
+[branch 6_Conf]
+
+[label 6_A]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+そうか……そういえば、今日は七夕だったね。
+[k]
+
+＠ダ・ヴィンチ
+エミヤ君が張り切って料理を用意していたし、[r]二人とも、楽しんでくるといいよ。
+[k]
+
+[charaFace G 1]
+＠ダ・ヴィンチ
+星空が見たければシミュレーター室を開放しよう。[r]まあ、ちょっと、風情には欠けるけどね。
+[k]
+
+[label 6_Conf]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 30]
+[charaFadein H 0.1 1]
+＠マシュ
+ありがとうございます、ダ・ヴィンチちゃん！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_112 1.5]
+[charaTalk I]
+[wt 0.1]
+
+[se ade426 0]
+[seVolume ade426 1.4 1.0]
+[wt 1.2]
+
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[seStop ade426 0.2]
+
+[charaFadeout H 0.1]
+[charaFadein W 0.1 0,-200]
+
+[wt 0.4]
+
+[se ad8]
+
+[fadeout black 0.1]
+[wait fade]
+
+[wipein rectangleStripRightToLeft 0.1 1]
+[wait wipe]
+
+[charaTalk off]
+
+＠？？？
+おかえりなさいませ[line 3]ますたぁ♡
+[k]
+
+[messageOff]
+[fadein black 0.5]
+[wait fade]
+
+
+[imageSet D back10000 1 1]
+[charaScale D 1.05]
+[imageSet E back10000 1 1]
+[charaScale E 1.05]
+[imageSet F back10000 1 1]
+[charaScale F 1.05]
+[imageSet H back10000 1 1]
+[charaScale H 1.05]
+[imageSet K back10000 1 1]
+[charaScale K 1.05]
+[imageSet J back10000 1 1]
+[charaScale J 1.05]
+
+
+
+[subCameraOn 3]
+[charaLayer A sub #A]
+[charaLayer P sub #A]
+[charaLayer D sub #A]
+[charaLayer E sub #A]
+[charaLayer B sub #B]
+[charaLayer Q sub #B]
+[charaLayer F sub #B]
+[charaLayer H sub #B]
+[charaLayer C sub #C]
+[charaLayer R sub #C]
+[charaLayer K sub #C]
+[charaLayer J sub #C]
+[subRenderDepth #A 3]
+[subRenderDepth #B 2]
+[subRenderDepth #C 1]
+[subRenderScale #A 1.2]
+[subRenderScale #B 1.2]
+[subRenderScale #C 1.2]
+[charaDepth D 9]
+[charaDepth E 9]
+[charaDepth F 9]
+[charaDepth H 9]
+[charaDepth K 9]
+[charaDepth J 9]
+[charaDepth A 2]
+[charaDepth B 2]
+[charaDepth C 2]
+[charaDepth P 1]
+[charaDepth Q 1]
+[charaDepth R 1]
+[subCameraFilter #A maskEdge cut359_mask10 5 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask16 5 0,0,0,255 0]
+[subCameraFilter #C maskEdge cut359_mask22 5 0,0,0,255 0]
+[charaScale A 1.15]
+[charaScale P 1.2]
+[charaScale B 1.6]
+[charaScale Q 1.2]
+[charaScale C 1.5]
+[charaScale R 1.2]
+
+[charaFadein D 0.1 0,887]
+[charaFadein E 0.1 0,-555]
+[charaFadein F 0.1 0,887]
+[charaFadein H 0.1 0,-555]
+[charaFadein K 0.1 0,887]
+[charaFadein J 0.1 0,-555]
+
+[charaFace A 0]
+[charaFadein A 0.1 640,325]
+[charaFadein P 0.1 0,0]
+
+[charaRoll B 7]
+[charaFace B 0]
+[charaFadein B 0.1 -175,-60]
+[charaFadein Q 0.1 0,0]
+
+[charaFace C 0]
+[charaFadein C 0.1 50,430]
+[charaFadein R 0.1 0,0]
+[subRenderFadeinFSL #A 0.2 -500,-200]
+[se ade227]
+[seStop ade227 0.45]
+[wt 0.45]
+[subRenderFadeinFSR #B 0.2 500,-200]
+[se ade227]
+[seStop ade227 0.45]
+[wt 0.45]
+[subRenderFadein #C 0.2 0,-200]
+[se ade227]
+[seStop ade227 0.45]
+[wt 0.45]
+[charaFadeout W 0.1]
+[charaFace I 22]
+[charaFadein I 0.1 1]
+[wt 1.0]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[subRenderFadeout #C 0.4]
+[wt 0.4]
+[charaFadeout A 0.1]
+[charaFadeout P 0.1]
+[charaFadeout B 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout C 0.1]
+[charaFadeout R 0.1]
+[wt 0.2]
+[charaLayer A normal]
+[charaLayer P normal]
+[charaLayer B normal]
+[charaLayer Q normal]
+[charaLayer C normal]
+[charaLayer R normal]
+[subCameraOff]
+
+[charaSet D 1098187810 1 清少納言]
+[charaSet E 5019001 1 エルメロイⅡ世]
+[charaSet F 5042001 1 紫式部]
+[charaSet H 1098257800 1 マシュ]
+[charaSet K 1098296900 1 エフェクト用]
+[charaSet J 5019001 1 エルメロイⅡ世（演出用）]
+
+[wt 0.1]
+[charaFace I 23]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk on]
+＠清姫？
+本日もおつとめご苦労様です！[r]あなたの清姫です！
+[k]
+
+＠清姫？
+さぁ、七夕の宴も準備ができておりますよ。[r]一緒に食堂へと[line 3]
+[k]
+
+？1：待って
+？！
+
+[charaFace I 17]
+＠清姫？
+はい？
+[k]
+
+？1：その姿は……一体？
+？！
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 2]
+＠清姫？
+はい、この霊衣でございますか？
+[k]
+
+＠清姫？
+先ほど目覚めた時には、[r]既にこの姿になっておりましたが。
+[k]
+
+[charaFace I 33]
+＠清姫？
+会えない時間に二人の愛が燃え盛り、[r]ここに最強フォームの清姫が生まれた[line 3]！
+[k]
+
+[charaFace I 0]
+＠清姫？
+……という事だと思っていましたが、[r]違うのでしょうか。
+[k]
+
+？1：なにそれ知らん……
+？！
+
+[messageOff]
+[wt 0.2]
+
+[se ad31]
+[se ad539]
+[bgm BGM_EVENT_94 0.6 0.2]
+[wipeout verBlind 0.6 1]
+[wt 0.3]
+[seStop ad31 0.4]
+[seStop ad539 0.3]
+[wait wipe]
+
+[charaDepth I 2]
+[charaDepth S 1]
+[charaScale I 1.4]
+[charaScale S 1.3]
+[charaTalk I]
+[charaFace I 15]
+[charaFadein I 0.1 0,20]
+[charaPut X 1]
+
+[cameraFilter gray]
+
+[charaFadein S 0.1 0,-270]
+[wt 0.45]
+
+[wipein verBlind 0.6 1]
+[wait wipe]
+[wt 0.4]
+
+＠乙姫清姫
+どうか、私の分まで。[r]清姫様を大切にしてあげてください……ね？
+[k]
+
+[messageOff]
+[cameraMoveEase 0,0 0.5 easeOutQuad 1.2]
+[charaFaceFade I 39 0.5]
+[wt 0.7]
+＠乙姫清姫
+どうか、私の分まで。
+[k]
+
+[messageOff]
+[cameraMoveEase 0,0 0.3 easeOutQuad 1.4]
+[charaFaceFade I 40 0.3]
+[wt 0.5]
+
+＠乙姫清姫
+私の分まで。
+[k]
+
+[messageOff]
+[wt 0.2]
+[se ad31]
+[se ad539]
+[wipeout verBlind 0.6 1]
+[wt 0.2]
+[seStop ad31 0.4]
+[seStop ad539 0.4]
+[wait wipe]
+
+[charaFadeout S 0.1]
+[charaFilter W silhouette D7272700]
+[cameraHome 0.1]
+
+[charaFadeout I 0.1]
+[charaPut X 2000,2500]
+[charaEffectDestroy X bit_talk_noise02]
+[cameraFilter normal]
+
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+[wt 0.45]
+
+[bgm BGM_EVENT_94 0.6 1.0]
+[wipein verBlind 0.6 1]
+[wait wipe]
+[wt 0.2]
+
+＠マシュ
+これは……。
+[k]
+
+＠マシュ
+乙姫清姫さんの執念が、座に逆流して……[r]そこから、こちらの清姫さんにまで影響を……？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[branch 7_A route1 0]
+[charaTalk G]
+[charaFace G 33]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+え……こわ……。
+[k]
+
+[bgmStop BGM_EVENT_94 1.5]
+
+[messageOff]
+[charaDepth W 10]
+[charaFadein W 0.8 0,-200]
+[se ad9 0.7]
+[wt 0.8]
+[charaFadeout W 0.8]
+[wt 0.8]
+[charaFadein W 0.8 0,-200]
+[wt 0.8]
+[charaFadeout W 0.8]
+[seStop ad9 0.6]
+[wt 0.8]
+
+[charaFace G 11]
+＠ダ・ヴィンチ
+うわぁーん！！[r]今度はなにーーー！？
+[k]
+
+[branch 7_Conf]
+
+[label 7_A]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+え……こわ……。
+[k]
+
+[bgmStop BGM_EVENT_94 1.5]
+
+[messageOff]
+[charaDepth W 10]
+[charaFadein W 0.8 0,-200]
+[se ad9 0.7]
+[wt 0.8]
+[charaFadeout W 0.8]
+[wt 0.8]
+[charaFadein W 0.8 0,-200]
+[wt 0.8]
+[charaFadeout W 0.8]
+[seStop ad9 0.6]
+[wt 0.8]
+
+[charaFace G 2]
+＠ダ・ヴィンチ
+うわぁーん！！[r]今度はなにーーー！？
+[k]
+
+[label 7_Conf]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 16]
+[charaFadein H 0.1 1]
+[bgm BGM_MAP_122 0.1]
+
+＠マシュ
+え……ええと……！[r]あ、新たな微小特異点が発生しました！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[branch 8_A route1 0]
+[charaFace G 12]
+[branch 8_Conf]
+[label 8_A]
+[charaFace G 2]
+[label 8_Conf]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+はやすぎー！！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+＠マシュ
+発生地点は太平洋上、イースター島です！[r]モアイさんの島ですね！
+[k]
+
+＠マシュ
+モニター感度は良好……[wt 0.8][charaFace H 11][r]あっ、地表に何か、文字のようなものが。
+[k]
+
+＠マシュ
+S、O、S……[r]タスケテ、テンチョウ[line 3]？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[branch 9_A route1 0]
+[charaFace G 13]
+[branch 9_Conf]
+[label 9_A]
+[charaFace G 4]
+[label 9_Conf]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+なんだそりゃ。[r]何かの暗号かい？
+[k]
+
+？1：…………
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠マシュ
+先輩……？[r]どうして、笑っているんですか？
+[k]
+
+？1：それ、多分……
+？2：友達からのメッセージ
+？！
+
+＠マシュ
+は、はぁ？[r]お友達から、でしたか？
+[k]
+
+？1：ちょっと、回収に……
+？2：行ってきます！！
+？！
+
+[messageOff]
+[bgmStop BGM_MAP_122 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[scene 10000]
+[wt 0.2]
+[fadein black 0.2]
+[wait fade]
+
+[se ad12]
+[effect bit_talk_07_fs]
+[wt 4.0]
+
+[fadeout white 1.0]
+[wait fade]
+[scene 10000]
+[wt 0.5]
+[fadein white 1.5]
+[wait fade]
+
+[fadeout black 0.5]
+[wait fade]
+
+[charaSet A 10017900 1 日比乃ひびき]
+[charaSet B 10017910 1 桂木千鍵]
+[charaSet C 1098296900 1 スマホさん]
+
+[charaSet D 1098218700 1 モアイ兵士]
+[charaSet E 1098218700 1 モアイ兵士2]
+[charaSet F 1098218700 1 モアイ兵士3]
+[charaSet G 1098218700 1 モアイ兵士4]
+[charaSet H 1098218700 1 モアイ兵士5]
+[charaSet I 23003000 1 キングモアイ]
+[charaSet J 23003000 1 キングモアイ（演出用）]
+[charaFilter J silhouette 00000080]
+
+[sceneSet P 156200 1]
+[sceneSet Q 156200 1]
+[sceneSet R 110100 1]
+[charaDepth P 1]
+[charaDepth Q 7]
+[charaDepth R 4]
+[charaDepth D 6]
+[charaDepth E 5]
+[charaDepth F 4]
+[charaDepth G 3]
+[charaDepth H 2]
+[charaDepth I 8]
+[charaDepth J 9]
+[charaDepth K 8]
+[charaDepth B 0]
+
+[cameraMove 0 0,0 1.01]
+
+[pictureFrameTop cut063_cinema]
+
+[scene 156200]
+[wt 2.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_GALATEA_1 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+＠日比乃ひびき
+ふぅっ。
+[k]
+
+＠日比乃ひびき
+メッセージ、こんなのでいいかな。[r]でも、本当に気付いてくれるかなぁ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe SE_22 22_ade695]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.2 0,-50]
+[charaMoveEase C 0,0 0.6 easeOutElastic]
+＠スマホさん
+上等、上等ですよ！[r]なーに、すぐに見つけてくれますって！
+[k]
+
+＠桂木千鍵
+うおおおおおおおおい！！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 0,-50]
+[wt 0.3]
+
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[wt 0.2]
+
+＠桂木千鍵
+そっちはもういいから、[r]早くこっちを手伝ってくれ！！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se adm76]
+[charaScale P 1.2]
+[charaFadein P 0.4 80,-270]
+[charaFace D 0]
+[charaFadein D 0.4 0,-30]
+[wt 0.1]
+[charaFace E 0]
+[charaFadein E 0.4 -300,-45]
+[wt 0.05]
+[charaFace F 0]
+[charaFadein F 0.4 300,-45]
+[wt 0.1]
+[charaFace G 0]
+[charaFadein G 0.4 -600,-37]
+[wt 0.05]
+[seStop adm76 0.6]
+[charaFace H 0]
+[charaFadein H 0.4 600,-37]
+[wt 0.8]
+
+[charaFadeout B 0.1]
+[charaTalk on]
+[charaTalk D]
+＠モアイ兵士
+モアッモアッモアーーー！！
+[k]
+
+＠モアイ兵士
+我らが聖地に侵入した異教徒めー！[r]キングモアイ様の生贄としてくれるわー！
+[k]
+
+[messageOff]
+[se ad14 0]
+[seVolume ad14 0.7 1.0]
+[se ade393 0]
+[seVolume ade393 0.7 1.0]
+[charaScale Q 1.4]
+[charaFadein Q 0.4 80,-270]
+[charaEffect K bit_talk_sand_dust_front_fs]
+[charaEffect K bit_talk_sand_dust_back_fs]
+[wt 1.6]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout P 0.1]
+
+[charaScale I 1.2]
+[charaScale J 1.2]
+[charaTalk J,I]
+[charaFace J 0]
+[charaFadein J 0.7 0,-100]
+[charaMove J 0,50 2.5]
+[charaShake J 0.04 3 3 0]
+[wt 2.0]
+[charaEffectStop K bit_talk_sand_dust_front_fs]
+[charaEffectStop K bit_talk_sand_dust_back_fs]
+[wt 0.4]
+[se ade79]
+[seVolume ade79 0 0.4]
+[wt 0.1]
+[seStop ad14 0.3]
+[seStop ade393 0.3]
+[charaShakeStop J]
+[charaFadein I 0.1 0,50]
+[wt 0.6]
+[seStop ade79 0.6]
+[wt 0.4]
+[charaFadeout J 0.8]
+[wt 1.0]
+
+[se ad908]
+[wt 0.1]
+[charaFaceFade I 2 0.1]
+[charaDepth B 2]
+[charaScale B 1.1]
+[charaFace B 11]
+[charaFadein B 0.1 0,-50]
+[wt 1.0]
+＠キングモアイ
+キィィ～～～ング……[r]モアアア～～～～イ！！
+[k]
+
+[messageOff]
+[charaTalk I,B]
+[charaFadeout I 0.4]
+[charaFadeout Q 0.4]
+[wt 0.4]
+[charaScale I 1.0]
+[wt 0.1]
+
+＠桂木千鍵
+それ絶対モアイじゃないから！！[r]お前たち、騙されてんぞ！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_GALATEA_1 2.0]
+
+[cueSe SE_22 22_ade695]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.2 0,-50]
+[charaMoveEase C 0,0 0.6 easeOutElastic]
+＠スマホさん
+さぁ、ひびきさん！[r]あとなんでしたっけ、そこの緑の人！
+[k]
+
+[bgm BGM_MAP_55 0.1]
+
+＠スマホさん
+アヅミノイソラに、変身だっ！
+[k]
+
+[messageOff]
+[charaTalk C,A,B]
+[charaFadein P 0.4 0,-270]
+[wt 0.5]
+
+[charaDepth B 2]
+[charaDepth A 3]
+[charaScale B 1.2]
+[charaScale A 1.2]
+[charaFace B 7]
+[charaFadein B 0.3 -240,-50]
+[charaFace A 0]
+[charaFadein A 0.3 240,-50]
+[charaMoveEase B -140,-50 0.5 easeOutQuint]
+[charaMoveEase A 140,-50 0.5 easeOutQuint]
+[wt 0.1]
+[se ad977]
+[seVolume ad977 0 0.6]
+[wt 0.1]
+[charaShake A 0.02 3 3 0.4]
+[charaShake B 0.03 4 3 0.4]
+[wt 0.2]
+[charaFadeout C 0.1]
+[wt 0.7]
+
+[charaFace B 11]
+＠桂木千鍵
+お前も後で覚えとけよな！？[r]だいたい、なんで普通に出てきてんだ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaEffectEdgeBlur B ffffff ffffff 2 1.5]
+[charaEffectEdgeBlur A ffffff ffffff 2 1.5]
+[cueSe SE_21 21_ad1110 0.2]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 6]
+＠日比乃ひびき
+よーし、行くよチカちゃん！[r]はりきってどうぞー！
+[k]
+
+[messageOff]
+[seStop 21_ad1110 0.7]
+[cameraMoveEase 0,-30 0.6 easeInSine 1.01]
+[wt 0.1]
+[wipeout rectangleStripUpToDown 0.4 1]
+[wait wipe]
+
+[charaEffectEdgeBlurDestroy B]
+[charaEffectEdgeBlurDestroy A]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout P 0.1]
+
+
+[scene 110100]
+[charaScale R 1.25]
+[charaFadein R 0.1 0,-275]
+[wt 0.2]
+[cameraMove 0 0,20 1.01]
+[wt 0.15]
+
+[cameraMoveEase 0,0 0.4 easeOutSine 1.01]
+[wipein rectangleStripDownToUp 0.4 1]
+[wait wipe]
+[wt 0.45]
+
+＠桂木千鍵
+店長ーーーッ！！[r]マジではやく来てくれーーーッ！！
+[k]
+
+
+[messageOff]
+[wt 1.5]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_55 2.0]
+[wait fade]
+[pictureFrame]
+[wt 1.0]
+[soundStopAll]
+[end]

@@ -1,0 +1,684 @@
+
+＄94-03-35-73-5-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4047001 1 コンスタンティノス]
+
+[sceneSet B 135200 1]
+[charaScale B 1.3]
+
+[charaSet M 5009000 1 エフェクト用1]
+
+[equipSet U 9808430 1 バレンタイン礼装]
+
+[cameraMove 0.1 50,0 1.1]
+
+[scene 145900]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_TEITO 0.1]
+
+[wt 0.4]
+[cameraMove 1.5 -50,0 1.1]
+[wt 2.0]
+[cameraMove 1.5 50,0 1.1]
+[wt 2.0]
+[cameraMove 1.0 0,0 1.1]
+[wt 1.5]
+
+？1：いたいた！
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 0,-30]
+[wt 0.4]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V010]
+おや、マスター。[r]どうしたのかな？[wait tVoice]
+[k]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V020]
+ふむ、君のリラックスした様子から察するに、[r]戦闘関連ではないようだが……。[wait tVoice]
+[k]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V030]
+まさか……。[r]遂にアルコールデビューかな？[wait tVoice]
+[k]
+
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V040]
+なら、祝いに[#奢:おご]るべきだが[line 3][twt 2.7][charaFace A 4][r]違うのか。それは残念。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V050]
+いつか君と、[#葡萄酒:ぶどうしゅ]でも[r]酌み交わしたいものだな。[wait tVoice]
+[k]
+
+？1：それはいずれの話、ということで
+？！
+
+[charaFace A 1]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V060]
+楽しみにしているとも。[twt 2.65][charaFace A 0][r]おっと。それで用件だが[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.5]
+[wipeout rollRight 1.0 0.5]
+[bgm BGM_TEITO 1.0 0.5]
+[wait wipe]
+
+
+[wt 1.0]
+
+[wipein rollLeft 1.0 0.5]
+[bgm BGM_TEITO 1.0 1.0]
+[wait wipe]
+
+[wt 0.4]
+
+[charaFace A 1]
+
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V070]
+ああ、なるほど。[r]聖ウァレンティヌスの祭りか。[wait tVoice]
+[k]
+
+？1：どうぞ！
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 4.0]
+[effectDestroy]
+
+[charaFace A 6]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V080]
+ありがとう。大切に食べるとしよう。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V090]
+さて……となると、このチョコレートに対して、[r]返礼の品を差し出さねばね。[wait tVoice]
+[k]
+
+？1：軽いものでいいよー
+？！
+
+[charaFace A 6]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V100]
+ははは、そうか。[r]なら、なるべく軽いものを選ぶとしよう。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_TEITO 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[cameraHome 0.1]
+
+[wipeFilter cinema 0.5 0]
+
+
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[label lblClear01a]
+[scene 105500]
+
+[branch lblConf01]
+
+[label lblClear01b]
+[scene 104200]
+
+[branch lblConf01]
+
+[label lblClear01c]
+[scene 132800]
+
+[label lblConf01]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_AMAZONES 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V110]
+軽いもの、軽いもの……。[r]となると、やはり材料はアレか。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V120]
+ふ、皇帝自ら[#軽いもの]を[#鍛造:つ　く]るとは。[r]だがこれもサーヴァントとしての務め。[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V130]
+ようし、気合いを入れようじゃないか！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 5]
+[se ade274]
+[wt 0.1]
+[charaShake A 0.03 4 4 0.3]
+[wt 1.0]
+
+[charaFace A 2]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V140]
+では、出陣……！[wait tVoice]
+[k]
+
+[messageOff]
+[bgmStop BGM_AMAZONES 1.0]
+[se ad8]
+[wt 1.0]
+
+[charaMove A -50,-50 0.5]
+[charaFadeout A 0.4]
+[se ad166]
+[seVolume ad166 1.5 0.3]
+[wt 1.5]
+[seStop ad166 0.5]
+[wt 1.0]
+
+[cueSe SE_23 23_ade833]
+[cueSeVolume 23_ade833 0 0.2]
+[wt 0.5]
+[cueSeVolume 23_ade833 0.5 0.4]
+[wt 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[wipeOff]
+
+
+[wt 1.0]
+
+[fadein black 1.0]
+[cueSeVolume 23_ade833 1.0 0.6]
+[wait fade]
+
+[wt 0.4]
+
+？1：……うん？　何か妙な音が……？
+？！
+
+[cameraMove 3.0 0,0 1.1]
+[wt 1.0]
+
+[cueSeVolume 23_ade833 1.0 1.0]
+[wt 2.0]
+
+
+？1：ここかな……？
+？！
+
+[wipeout leftToRight 0.7 1]
+[cueSeStop 23_ade833 0.7]
+[wait wipe]
+
+[subCameraOn 1]
+[charaLayer A sub #A]
+
+[charaScale A 1.2]
+
+[cameraHome 0.1]
+
+[scene 10000]
+[wt 0.5]
+
+[wipein rightToLeft 0.7 1]
+[se ad8]
+[wait wipe]
+
+[seStop ad8 0.4]
+[wt 0.4]
+
+[effect bit_talk_sparks 0,-200]
+[wt 1.0]
+
+[se ad439]
+[seVolume ad439 0 0]
+[seVolume ad439 2.0 0.1]
+[wt 0.5]
+
+[se ad432]
+[seVolume ad432 0 0.6]
+[wt 1.4]
+
+[se ad432]
+[seVolume ad432 0 0.6]
+[wt 1.4]
+
+[se ad432]
+[seVolume ad432 0 0.6]
+[wt 1.4]
+[seStop ad439 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,150]
+
+[subCameraFilter #A maskEdge cut359_mask05 3 255,255,255,255 1]
+[subRenderFadein 0.4 -300,-200]
+[wt 0.4]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V150]
+おや、マスターか。[r]どうしたのかな？[wait tVoice]
+[k]
+
+？1：何か作ってるの？
+？！
+
+[charaFace A 1]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V160]
+ふふ、バレンタインに軽いものを[r]注文しただろう？[wait tVoice]
+[k]
+
+？1：う、うん……
+？！
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V170]
+だから、軽いものを作っているのさ。[r]まもなく完成する見込みだ。[wait tVoice]
+[k]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V180]
+悪いが、もう少しだけ[r]待っていてくれたまえ。[wait tVoice]
+[k]
+
+？1：……軽いものだよね？
+？！
+
+[charaFace A 6]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V190]
+もちろん、軽いものだ。[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_62 1.0]
+[wait fade]
+
+[effectStop bit_talk_sparks]
+[effectDestroy]
+
+[charaFadeout A 0.1]
+[subRenderFadeout 0.1]
+
+[subCameraOff]
+
+[charaLayer A normal]
+[charaScale A 1.0]
+
+[wipeout rollRight 0.1 0.5]
+[wait wipe]
+
+[fadein black 0.1]
+[wait fade]
+
+
+[branchQuestClear lblClear02c 94064915]
+[branchQuestClear lblClear02c 3001101]
+[branchQuestClear lblClear02b 3000303]
+
+[label lblClear02a]
+[scene 105500]
+
+[branch lblConf02]
+
+[label lblClear02b]
+[scene 104200]
+
+[branch lblConf02]
+
+[label lblClear02c]
+[scene 132800]
+
+[label lblConf02]
+[wt 2.0]
+
+[wipein rollLeft 1.0 0.5]
+[se ad8]
+[wait wipe]
+
+[wt 0.4]
+
+[bgm BGM_EVENT_147 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V200]
+待たせたな、完成だぞマスター！[wait tVoice]
+[k]
+
+
+？1：本当に軽いもの？
+？！
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V210]
+ああ。[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V220]
+……うーん、とはいえさすがに[r]ここでは厳粛さに欠けるか。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V230]
+シミュレーターにお邪魔しよう！[r]さあさあ、早く早く。[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_147 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaScale A 1.2]
+
+[charaDepth U 8]
+[charaDepth M 8]
+[charaDepth A 7]
+[charaDepth B 5]
+
+
+[scene 135200]
+[wt 1.0]
+
+[charaTalk depthOff]
+[charaTalk off]
+
+[charaFadein B 0.1 30,-280]
+
+[fadein black 1.0]
+[charaMove B 0,-280 1.5]
+[wait fade]
+
+[wt 2.0]
+
+[charaFace A 0]
+[charaFadein A 0.4 0,0]
+[wt 1.4]
+
+[charaFace A 1]
+
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V240]
+[line 3]では、[twt 1.8][charaFace A 2]マスター。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaFace A 5]
+[wt 0.5]
+[charaCrossFade A 4047002 7 0.7]
+
+[charaPut M 0,0]
+[charaEffect M bit_talk_np_buf_02]
+[cueSe SE_22 22_ade699]
+[wait charaCrossFade A]
+[wt 1.0]
+
+[bgm BGM_MAP_2 0.1]
+
+
+？1：（いきなり皇帝オーラが！？）
+？！
+
+[charaFace A 2]
+
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V250]
+聖ウァレンティヌスを祭る日に端を発する、[r]聖なるチョコレート菓子を戴いた。[wait tVoice]
+[k]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V260]
+ならば祝祭の式典を開くは当然のこと。[wait tVoice]
+[k]
+
+？1：（そうかなぁ！？）
+？！
+
+[charaFace A 7]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V270]
+とはいえ、マスターのリクエストもあり、[r]軽いものをチョイスした。[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V280]
+では、受け取り[line 3]の前に。[r]音楽！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 5]
+[bgm BGM_MAP_2 0.5 0.3]
+[cueSe SE_23 23_ade854]
+[wt 5.0]
+[bgm BGM_MAP_2 0.5 1.0]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V290]
+受け取りたまえ、我がマスター。[r]これが君の望んだ軽いもの[line 3][wait tVoice]
+[k]
+
+[charaFace A 2]
+
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V300]
+即ち、皇帝より贈るサーコート及び[r]チェインメイル一式、である。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_2 0.5 0.3]
+[cueSe SE_23 23_ade854]
+[charaFadein U 0.5 0,-70]
+[wt 5.0]
+[bgm BGM_MAP_2 0.5 1.0]
+
+[charaFadeout U 0.4]
+[wt 0.5]
+
+[charaFace A 1]
+[charaFadein A 0.1 0,0]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V310]
+マスターのリクエストもなかなか難儀だった。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V320]
+確かに君の体力は人間である以上、[r]重量が重要なことは明白だ。[wait tVoice]
+[k]
+
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V330]
+なので、軽量化の魔術礼装を組み込み、[r]鋼の頑丈さに羽根のような軽さを実現させたとも。[wait tVoice]
+[k]
+
+[bgmStop BGM_MAP_2 1.0]
+
+？1：軽いとはそういう意味ではありません陛下
+？！
+
+[charaFace A 1]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V340]
+フッ。[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_146 0.1]
+[charaFace A 4]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V350]
+……実は途中で気付いていたが……。[r]気付かなかったことにしたのだ……。[wait tVoice]
+[k]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V360]
+走り出したプランは止められないというか……。[r]閃いたアイデアを捨て切れなかったというか……。[wait tVoice]
+[k]
+
+？1：だよね！
+？！
+
+[charaFace A 6]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V370]
+ははは、とはいえ受け取ってくれると、[r]非常に嬉しい。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_146 1.5]
+
+？1：ありがたく受け取ります……！
+？！
+
+[messageOff]
+[charaTalk on]
+[charaTalk B]
+[se ad157]
+[wt 1.5]
+[seStop ad157 0.1]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V380]
+[charaMoveReturn A 0,-7 0.6]
+ふむふむ……。[twt 0.85][charaMoveReturn A 0,-7 0.6][wait tVoice]
+[k]
+
+？1：どうかな？
+？！
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V390]
+そうだな。一言で言うなら[line 3][twt 4.0][charaFace A 1][bgm BGM_EVENT_98 0.1][r]私の見立ては間違っていなかった、という事だ。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V400]
+よく似合っている。[wait tVoice]
+[k]
+
+？1：ありがとう、皇帝
+？！
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V410]
+武器は重たいままでいいかな？[wait tVoice]
+[k]
+
+？1：そもそも武器を持ってもあまり意味が……
+？！
+
+[charaFace A 1]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V420]
+それもそうか。[r]何しろ私が武器なのだからね。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V430]
+その鎧と私という武器がある限り、[r]我らは共に歩む軍勢であり、国家だ。[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠コンスタンティノス
+[tVoice ValVoice_404700 0_V440]
+恐れることなく、突き進もうじゃないか。[r]我がマスターよ！[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_98 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

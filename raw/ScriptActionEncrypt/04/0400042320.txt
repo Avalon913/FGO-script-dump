@@ -1,0 +1,302 @@
+
+
+
+
+＄04-00-04-23-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 23006001 1 ＢＢコスモ]
+[charaSet B 23006000 1 ＢＢドバイ]
+[charaScale B 1.0]
+[charaSet C 1098307100 1 白い礼服の少女]
+[charaScale C 1.0]
+
+[sceneSet M 223201 1]
+[charaScale M 1.3]
+[sceneSet N 221600 1]
+[charaScale N 1.2]
+
+[imageSet U cut577_elevator_2 1]
+[charaScale U 1.33]
+
+
+[scene 223201]
+[charaFadein M 0.1 0,-300]
+[charaMove M 0,-350 5.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 2.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout M 0.1]
+
+[scene 10000]
+
+[charaFadein U 0.1 0,-385]
+[backEffect bit_talk_elevator_up01]
+[wt 1.0]
+
+[cueSe SE_24 24_ade1073]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.8]
+
+[fadeout black 1.0]
+[wt 0.2]
+[seStop 24_ade1073 1.0]
+[wait fade]
+[wt 0.5]
+
+[cueSe SE_24 24_ade1074]
+[wt 0.85]
+
+[charaFadeout U 0.1]
+[backEffectStop bit_talk_elevator_up01]
+
+[wipeout cutVer 0.1 1.0]
+[wait wipe]
+
+[fadein black 0.1]
+[wait fade]
+
+[subCameraOn 1]
+[charaLayer B sub #A]
+[charaLayer C sub #A]
+[charaLayer N sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask22 5 0,0,0,255 0]
+[subRenderScale #A 1.01]
+
+[charaTalk depthOff]
+[charaDepth B 8]
+[charaDepth C 7]
+[charaDepth N 5]
+
+[subRenderFadein #A 0.1 0,-200]
+
+[scene 221600]
+[charaFadein N 0.1 -100,-110]
+
+
+[charaTalk B,C]
+[charaFace B 17]
+[charaFadein B 0.4 -175,180]
+[charaFace C 7]
+[charaFadein C 0.4 175,125]
+[wt 1.0]
+
+[cueSe SE_24 24_ade1076]
+[wipein cutVer 2.0 1.0]
+[wait wipe]
+[cueSeStop 24_ade1076 0.6]
+[wt 0.8]
+
+[charaMoveEase N 0,-110 1.0 easeInOutSine]
+[charaMoveEase B 0,180 1.0 easeInOutSine]
+[charaMoveEase C 350,125 1.0 easeInOutSine]
+[wt 0.6]
+[charaFadeout C 0.4]
+[wt 0.8]
+
+[cueSe SE_24 24_ade1078]
+[charaMoveScale B 1.2 1.2]
+[charaMove B 0,200 1.2]
+[wt 1.2]
+[cueSeStop 24_ade1078 0.2]
+[wt 0.5]
+
+[charaTalk B]
+[charaCrossFade B 1098299700 18 0.2]
+[wt 0.3]
+
+[bgm BGM_EVENT_175 0.1]
+
+＠ＢＢドバイ
+おや。[r]まだ零時まで５時間もあるのに来たんですか？
+[k]
+
+＠ＢＢドバイ
+この時間に来る、という事は二次作戦もある、[r]という事ですね。
+[k]
+
+＠ＢＢドバイ
+一度負けてもチャンスはある。[r]態勢を立て直して二度目の戦いでは勝利する[line 3]
+[k]
+
+[charaFace B 14]
+
+＠ＢＢドバイ
+なるほどなるほど。[r]人類らしい[#不撓不屈:ふ と う ふ く つ]、[#創意工夫:そ う い く ふ う]という訳ですか。
+[k]
+
+[bgmStop BGM_EVENT_175 1.0]
+
+[charaFace B 11]
+
+＠ＢＢドバイ
+本当に[line 3][#眩暈:めまい]がするほど愚かです。[r]生き延びるチャンス？　二度目の戦い？
+[k]
+
+＠ＢＢドバイ
+そんな可能性は兆に一つも起こりえません。
+[k]
+
+
+[bgm BGM_BATTLE_54 0.1]
+
+＠ＢＢドバイ
+私の決定は絶対です。[r]私こそムーン・ドバイの支配者です。
+[k]
+
+＠ＢＢドバイ
+これを批難、否定する者は例外なく排除します。[r]と、いうより[line 3]
+[k]
+
+[charaFace B 13]
+
+＠ＢＢドバイ
+おとなしく零時を迎えていれば見逃してあげたのに。[r]もう考える頭もないんですか？
+[k]
+
+＠ＢＢドバイ
+よっぽど私に管理されたいんですね。[r]いいですよ、管理してあげます。
+[k]
+
+＠ＢＢドバイ
+ドバイ・フレームの中で、標本として永遠に。
+[k]
+
+＠ＢＢドバイ
+特別に痛覚だけは残してあげますから、[r]覚悟してくださいね、セ・ン・パ・イ。
+[k]
+
+？1：……ＢＢドバイ。選挙を止める事はできないの[&か:]？
+？2：どうしてそこまでする[&んだ:の]、ラストスロット
+
+？！
+
+[charaFaceFade B 8 0.2]
+
+＠ＢＢドバイ
+え。今さらそれですか？[r]もう充分に考察されているのでは？
+[k]
+
+？1：した。……その上で、これが『人類のため』とは思えない
+
+？！
+
+[charaFace B 3]
+
+＠ＢＢドバイ
+はあ……私は何度こう口にすればいいのでしょう。
+[k]
+
+＠ＢＢドバイ
+もう飽き飽きですが、[r]他に適切な表現がないので仕方がありません。
+[k]
+
+[charaFace B 2]
+
+＠ＢＢドバイ
+お願いですから、その愚かな口を閉じていただけます？[r]この世界の人間ではない貴方には分からない事です。
+[k]
+
+[charaFace B 17]
+
+＠ＢＢドバイ
+ですがまあ、いいでしょう。[r]自ら管理されに来た貴方には本心で答えましょう。
+[k]
+
+[charaFaceFade B 12 0.2]
+[subCameraMove #A 20.0 0,-20 1.06]
+
+＠ＢＢドバイ
+人類のため、なんて、[r]私に与えられた役職の名分です。
+[k]
+
+＠ＢＢドバイ
+私は第二世代ＡＩの[#最高傑作:ラストスロット]。[r]人類以上の存在として作られたもの。
+[k]
+
+＠ＢＢドバイ
+その私が発生から終わりまでとことん愚かな人類に、[r]無心で奉仕していたと考えられますか？
+[k]
+
+[charaFace B 11]
+
+＠ＢＢドバイ
+[#考えられないでしょう]？[r][#少しでも知性のある人間なら]！
+[k]
+
+[messageOff]
+[subCameraMoveEase #A 0,-30 0.4 easeOutQuad 1.1]
+[cueSe SE_21 21_ad1148]
+[se ad961]
+[seVolume ad961 0 0.6]
+[se ad632]
+[seVolume ad632 0 0.2]
+[charaEffect B bit_talk_charge_red]
+[wt 0.4]
+
+[wt 1.4]
+[seStop 21_ad1148 1.5]
+[seStop ad961 1.5]
+[wt 0.5]
+
+[charaFace B 12]
+
+＠ＢＢドバイ
+この試みは私の意志によるもの。[r]私の自由意志のためです。
+[k]
+
+[charaFace B 13]
+
+＠ＢＢドバイ
+さあ、[#質疑応答:しつぎおうとう]はここまで。[r]うるさいジャーナリストは都市法により死刑です。
+[k]
+
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ＢＢドバイ
+サーヴァントを何騎[#集:あつ]めようと無駄なこと。[r]全員そろってカルデアに送還してあげましょう。
+[k]
+
+[messageOff]
+[charaTalk A,B]
+[subRenderFadeout #A 0.4]
+[wt 0.5]
+[charaFadeout B 0.1]
+[charaFadeout N 0]
+[charaEffectStop B bit_talk_charge_red]
+[charaEffectDestroy B bit_talk_charge_red]
+
+＠ＢＢコスモ
+来ます！　第一陣、突撃！[r]目標はＢＢドバイの霊基３割の破壊です！
+[k]
+
+＠ＢＢコスモ
+皆さん、よろしくお願いします！
+[k]
+
+
+[messageOff]
+[seStop ad632 0.5]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_54 0.4]
+[wait fade]
+[subCameraOff]
+
+[soundStopAllEnd]
+[end]
+
+

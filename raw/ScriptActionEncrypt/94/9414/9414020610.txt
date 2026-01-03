@@ -1,0 +1,1789 @@
+
+
+＄94-14-02-06-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257800 1 マシュ]
+[charaSet B 1098257800 1 マシュ2]
+[charaSet C 6048001 1 ロクスタ]
+[charaSet D 5058002 1 小野小町]
+[charaSet E 5058002 1 小野小町2]
+[charaSet F 5058002 1 小野小町3]
+[charaSet G 6031300 1 刑部姫]
+[charaSet H 6031300 1 刑部姫2]
+[charaSet I 4044000 1 ニキチッチ]
+[charaSet J 1098213800 1 飛竜]
+[charaSet K 1098315700 1 小野篁]
+[charaSet L 1098257310 1 ダ・ヴィンチ]
+[charaSet M 1098241300 1 鬼一法眼]
+[charaSet O 1098319700 0 1]
+
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+
+[sceneSet Q 102900 1]
+[charaScale Q 1.2]
+[sceneSet R 102900 1]
+[charaScale R 1.3]
+[sceneSet S 102900 1]
+[charaScale S 1.3]
+
+[sceneSet T 102900 1]
+[charaScale T 1.3]
+[sceneSet U 102900 1]
+[charaScale U 1.3]
+[sceneSet V 241100 1]
+[charaScale V 1.3]
+[sceneSet W 241100 1]
+[charaScale W 1.2]
+
+[charaSet X 98115000 1 エフェクト用ダミー]
+[charaSet Y 98115000 1 エフェクト用ダミー1]
+[charaSet Z 98115000 1 エフェクト用ダミー2]
+
+[subCameraOn 4]
+[charaLayer Y sub #A]
+[charaLayer D sub #A]
+[charaLayer Q sub #A]
+[charaLayer A sub #B]
+[charaLayer T sub #B]
+[charaLayer C sub #B]
+[charaLayer P sub #B]
+[charaLayer U sub #C]
+[charaLayer G sub #C]
+[charaLayer V sub #D]
+
+[subCameraFilter #A normal]
+[subCameraFilter #B maskEdge cut359_mask16 5 255,255,255,255]
+[subCameraFilter #C maskEdge cut359_mask10 5 255,255,255]
+[subCameraFilter #D maskEdge cut359_mask07 30 0,0,0,255 1]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+[subRenderDepth #D 4]
+
+[charaTalk depthOff]
+[charaDepth Q 1]
+[charaDepth Y 2]
+[charaDepth D 3]
+[charaTalk D]
+[charaScale Y 1.2]
+[charaScale D 1.2]
+[charaFace D 11]
+[charaFadein Q 0.1 0,-150]
+[charaPut Y 0,100]
+[charaEffect Y bit_talk_radiallight02_big01]
+[charaFadein D 0.1 0,100]
+[subRenderFadein #A 0.1 0,0]
+
+[charaDepth T 1]
+[charaDepth A 2]
+[charaDepth H 2]
+[charaFace A 5]
+[charaFadein A 0.1 -50,140]
+[charaFadein T 0.1 -200,20]
+
+[charaDepth U 1]
+[charaDepth G 2]
+[charaFace G 9]
+[charaFadein G 0.1 50,140]
+[charaFadein U 0 400,20]
+
+[charaFadein V 0.1 -100,0]
+
+[scene 102900]
+
+[wt 0.5]
+[charaMoveEase Q 0,-250 3.5 easeOutSine]
+[charaMoveEase Y 0,0 3.5 easeOutSine]
+[charaMoveEase D 0,0 3.5 easeOutSine]
+[cueSe SE_22 22_ad1180 1.0 0.6]
+[cueSe SE_24 24_ade1060 1.0 0.3]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_131 0.1]
+[wt 3.0]
+
+[cueSeVolume 22_ad1180 0.7 0.3]
+[charaTalk A]
+[subRenderFadeinFSSideR #B 0.3 400,-350]
+[subRenderMoveEaseFSSideR #B 430,-250 0.3 easeOutSine]
+[wt 0.3]
+
+＠マシュ
+……小町さん？
+[k]
+
+[charaTalk D]
+
+[charaFaceFade D 0 0.2]
+
+＠小野小町
+………………。
+[k]
+
+[charaTalk G]
+[subRenderFadeinFSSideL #C 0.3 -400,-350]
+[subRenderMoveEaseFSSideL #C -430,-250 0.3 easeOutSine]
+[wt 0.3]
+
+＠刑部姫
+これが……小町パイセン完全体？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth C 2]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 -50,140]
+
+＠ロクスタ
+キラキラしてるっつーか……[r][#後光:ハイロゥ]っぽいの、差しちゃってません？
+[k]
+
+[charaTalk G]
+
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+＠刑部姫
+大変ありがたい雰囲気なんだけど……[r]ほ、本当に小町パイセンなのかなぁ？
+[k]
+
+[messageOff]
+[charaTalk K,G]
+[subRenderFadeout #A 0.5]
+[subRenderFadeout #B 0.5]
+[subRenderFadeout #C 0.5]
+[wt 0.5]
+[charaScale D 1.0]
+[charaScale Y 1.0]
+[charaPut Y 2500,2500]
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout T 0.1]
+[charaFadeout U 0.1]
+[wt 0.1]
+[charaLayer Y normal]
+[charaLayer D normal]
+[charaLayer Q normal]
+[charaLayer A normal]
+[charaLayer T normal]
+[charaLayer C snormal]
+[charaLayer U normal]
+[charaLayer G normal]
+[wt 0.1]
+
+＠小野篁
+小町。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[charaPut Y 1]
+
+＠小野小町
+[line 6][#回向:えこう]あるべし。
+[k]
+
+[messageOff]
+[cueSeStop 24_ade1060 0.7]
+[cueSeStop 22_ad1180 0.7]
+[charaTalk off]
+[charaDepth Y 1]
+[charaDepth D 2]
+[charaDepth R 3]
+[charaDepth I 4]
+[charaDepth S 5]
+[charaDepth K 6]
+
+[charaScale I 1.2]
+[charaScale K 1.2]
+[charaFace I 20]
+[charaFadein I 0.3 -250,0]
+[charaFadein R 0.3 140,-250]
+[charaMoveEase R 190,-250 0.6 easeOutCubic]
+[charaMoveEase I -200,0 0.6 easeOutCubic]
+[wt 0.6]
+
+＠ニキチッチ
+……[#篁:たかむら]！[r]あれは何だ！？
+[k]
+
+[messageOff]
+[charaFace K 0]
+[charaFadein S 0.4 -190,-250]
+[charaFadein K 0.4 200,0]
+[wt 0.4]
+
+＠小野篁
+[line 9]。
+[k]
+
+[charaFace I 2]
+
+＠小野篁
+[#是:これ]が英霊・小野小町のまことの在り方ならば、[r]我が身もただ、かく在るだけのこと。
+[k]
+
+[messageOff]
+[charaFadeout K 0.4]
+[charaFadeout S 0.4]
+[wt 0.4]
+
+＠ニキチッチ
+答えろ！　[#篁:たかむら]！
+[k]
+
+＠ニキチッチ
+どこまでも寄り添うつもりなのは分かった！[r]だが、まずは質問に答えろ！
+[k]
+
+＠ニキチッチ
+あれは何だ[line 3][r]英霊などではあるまい、わかるぞ！
+[k]
+
+＠ニキチッチ
+人ではない！[r]娘ではない！
+[k]
+
+＠ニキチッチ
+恋の歌と輝きを愛する小野小町なぞではない！[r]あれは[line 3]
+[k]
+
+＠ニキチッチ
+何処かの[#神の類]だろう！
+[k]
+
+[messageOff]
+[charaFace K 0]
+[charaFadein S 0.4 -190,-250]
+[charaFadein K 0.4 200,0]
+[wt 0.4]
+
+＠小野篁
+…………………………。
+[k]
+
+[messageOff]
+
+[charaFace I 20]
+
+[se ad596]
+[charaSpecialEffect K wipeTime 1 1.5]
+[wt 2.0]
+[charaFadeout K 0.5]
+[charaScale K 1.0]
+[wt 0.5]
+
+[charaFadeout S 0.5]
+[wt 0.8]
+
+＠ニキチッチ
+チッ！
+[k]
+
+[messageOff]
+
+[charaFadeout I 0.5]
+[charaFadeout R 0.5]
+
+[wt 1.5]
+
+[charaScale I 1.0]
+
+？1：小町さん！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut Y 2000,2000]
+
+[charaPut X 1]
+[charaEffect X bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk on]
+[charaTalk L]
+[charaFace L 25]
+[charaFadein L 0.1 1]
+
+＠ダ・ヴィンチ
+……嘘だぁ！？[r]こんなのってアリなの！？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……ダ・ヴィンチちゃん？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 17]
+[charaFadein M 0.1 1]
+[charaPut X 1]
+
+＠鬼一法眼
+ううむ！[r]やはりこうなってしまったか。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+ダ・ヴィンチちゃん、鬼一法眼さん！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：鬼一師匠が欠片を渡すのを渋ってたのは[line 2]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut Y 2000,2000]
+
+[messageOff]
+[charaPut X 1]
+[charaEffect X bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk on]
+[charaTalk M]
+[charaFace M 6]
+[charaFadein M 0.1 1]
+
+＠鬼一法眼
+うむ！[r]懸念した通りになってしまったな！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠飛竜
+鬼一の旦那！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠ニキチッチ
+思った通りとは何だ！[r]いったい何が起こっている！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 25]
+[charaFadein L 0.1 1]
+[charaPut X 1]
+
+＠ダ・ヴィンチ
+ちょっと、ちょっと……！[r]こんなことってありえるの！？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+小町さんの魔力、急激に上昇しています！[r]計測値[line 3]神霊級！？[wt 0.4][charaFace A 5]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠刑部姫
+え？　え？[r]なになに？　何が起きてるの？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+？！
+
+[bgmStop BGM_EVENT_131 1.5]
+
+[messageOff]
+
+
+[charaTalk M]
+[charaFace M 23]
+[charaFadein M 0.1 1]
+[charaPut X 1]
+
+[wt 1.5]
+
+[charaFace M 7]
+
+＠鬼一法眼
+菩薩。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠刑部姫
+………………はい？
+[k]
+
+[charaFadeout G 0.1]
+
+[charaLayer Q sub #A]
+[charaLayer Y sub #A]
+[charaLayer D sub #A]
+
+[charaDepth Q 1]
+[charaDepth Y 2]
+[charaDepth D 3]
+[charaScale D 1.2]
+[charaScale Y 1.2]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaFadein Q 0.1 0,-250]
+[charaPut Y 1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+[charaPut X 1]
+
+＠鬼一法眼
+だからアレ、菩薩。
+[k]
+
+[bgm BGM_EVENT_79 0.1]
+
+[messageOff]
+[charaTalk off]
+[subCameraMove #A 15.0 0,-20 1.1]
+[subRenderFadein #A 0.7 0,0]
+[wt 1.5]
+[charaPut X 2000,2000]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+[charaFadeout M 0.1]
+
+＠鬼一法眼
+[line 6]謂うところの、[#観音:かんのん]様というやつだ。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+[subCameraMove #A 0.1 0,0 1.0]
+[charaScale D 1.0]
+[charaScale Y 1.0]
+[charaPut Y 2500,2500]
+[charaFadeout Q 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaLayer Y normal]
+[charaLayer D normal]
+
+＠刑部姫
+はぁ！？[r]……な、なんですと？
+[k]
+
+＠刑部姫
+[#姫:わたし]、何かいま聞き間違えたかなぁ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠マシュ
+！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 25]
+[charaFadein L 0.1 1]
+[charaPut X 1]
+
+＠ダ・ヴィンチ
+え[line 6]
+[k]
+
+＠ダ・ヴィンチ
+[#仏性の実体化]だって！？[r]そんな話、時計塔にもデータなんてないよ！
+[k]
+
+＠ダ・ヴィンチ
+分霊や憑依なんかじゃない……[r]神霊本体の現界と同規模の……
+[k]
+
+[charaFace L 33]
+
+＠ダ・ヴィンチ
+いや、分からない。さっぱり分からない！
+[k]
+
+＠ダ・ヴィンチ
+[#前の私]でさえ一度も聞いたことがない！[r]なんでそんなことが[line 3]
+[k]
+
+[messageOff]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+
+[charaTalk A]
+[charaFace A 34]
+[charaFadein A 0.1 1]
+
+[wt 1.5]
+
+[charaFaceFade A 6 0.2]
+
+＠マシュ
+歌道[line 3]
+[k]
+
+[charaFace A 2]
+
+＠マシュ
+[#歌道極まって仏道に至る]！[r]小野小町伝説のひとつには、確かに……
+[k]
+
+
+＠マシュ
+小町さんと[#在原業平:ありわらのなりひら]、歌仙ふたりを指して[r]揃って観音の化身とするものはありますが[line 3]
+[k]
+
+[charaFace A 11]
+
+＠マシュ
+まさか英霊ではなく、[r]神性の一種として現界するだなんて……
+[k]
+
+＠マシュ
+一体、どうして……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 11]
+[charaFadein M 0.1 1]
+[charaPut X 1]
+
+＠鬼一法眼
+かんら、から、から！[r]菩薩に何故を問うというのは大それたことだぞ！
+[k]
+
+[charaFace M 1]
+
+＠鬼一法眼
+魔王尊としては思うところもあるにはあるが、[r]なにせ相手は菩薩だからな！
+[k]
+
+＠鬼一法眼
+如来でないだけ、まだマシだと思っておけ！
+[k]
+
+[messageOff]
+
+
+[subCameraFilter #B maskEdge cut359_mask05 3 255,255,255,255]
+[charaLayer A sub #B]
+[charaLayer T sub #B]
+
+[charaDepth T 1]
+[charaDepth A 2]
+
+[charaScale T 1.2]
+[charaScale A 1.2]
+
+[charaFace A 6]
+[charaFadein A 0.1 0,200]
+[charaFadein T 0.1 -400,-80]
+[wt 0.1]
+
+[charaTalk A]
+[subRenderFadein #B 0.3 350,-130]
+[subRenderMoveEase #B 350,-180 0.7 easeOutCubic]
+[wt 0.6]
+
+＠マシュ
+……！
+[k]
+
+[messageOff]
+
+[subRenderMoveEase #B 350,-230 0.7 easeOutCubic]
+[subRenderFadeout #B 0.3]
+[wt 0.5]
+
+[charaFace M 7]
+
+＠鬼一法眼
+そうさなあ。一切の救い無き魂があれば、[r]或いは[#御仏も慈悲を垂れる]やも知れんが……
+[k]
+
+[charaFace M 1]
+
+＠鬼一法眼
+まあ、ないな！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 29]
+[charaFadein L 0.1 1]
+
+＠ダ・ヴィンチ
+そんな[#滅茶苦茶:めちゃくちゃ]なー！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk I]
+[charaFace I 11]
+[charaFadein I 0.1 1]
+
+＠ニキチッチ
+……ふむ。
+[k]
+
+＠ニキチッチ
+つまるところ、[r]これも小町の伝説の一端、なのか？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 34]
+[charaFadein L 0.1 1]
+[charaPut X 1]
+
+＠ダ・ヴィンチ
+そうといえばそう[line 3]
+[k]
+
+＠ダ・ヴィンチ
+って、ことになるのかな。
+[k]
+
+[charaFace L 22]
+
+＠ダ・ヴィンチ
+『秋風の　吹き散るごとに　あなめあなめ[r]　小野とは言はじ　[#薄:すすき]おひけり』
+[k]
+
+[charaFace L 8]
+
+＠ダ・ヴィンチ
+……いわゆる、[r]小野小町の[#髑髏:どくろ]伝説だね。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk J]
+[charaFace J 15]
+[charaFadein J 0.1 1]
+
+＠飛竜
+なんか不吉な感じだけどぉ！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 34]
+[charaFadein L 0.1 1]
+[charaPut X 1]
+
+＠ダ・ヴィンチ
+その名から想像がつく通り、[r]小野小町が死んだ後のお話だ。
+[k]
+
+＠ダ・ヴィンチ
+そして小野小町と同じ六歌仙、三十六歌仙の一人、[r][#在原業平:ありわらのなりひら]にまつわる伝説でもある。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_79 1.0 0.5]
+[wait fade]
+
+[charaScale A 1.0]
+[charaFadeout A 0.1]
+[charaFadeout T 0.1]
+
+[charaLayer A normal]
+[charaLayer T normal]
+
+[charaLayer W sub #C]
+[subCameraFilter #B normal]
+[subCameraFilter #C maskEdge cut359_mask08 30 0,0,0,255 1]
+[charaFadein W 0.1 -120,0]
+[subRenderFadein #B 0.1 0,-0]
+[subRenderFadein #D 0.1 -200,-170]
+[wt 1.0]
+
+[charaMove V -100,-200 50.0]
+[fadein black 0.5]
+[bgm BGM_EVENT_79 1.0 1.0]
+[wait fade]
+[wt 0.5]
+
+＠ダ・ヴィンチ
+[#在原業平:ありわらのなりひら]が[#奥州:おうしゅう]、[#玉造:たまつくり]の小野を訪ねると、[r]そこには野ざらしになった小野小町の髑髏があった。
+[k]
+
+
+＠ダ・ヴィンチ
+『秋風の　吹き散るごとに　あなめあなめ』
+[k]
+
+
+＠ダ・ヴィンチ
+[#眼窩:がんか]からススキが生えた髑髏が上の句を詠むと、[r]応えて、[#業平:なりひら]は下の句を付ける。
+[k]
+
+[messageOff]
+[subRenderFadeout #D 0.5]
+[subRenderFadein #C 0.5 0,-300]
+[charaMove W 120,0 50.0]
+[wt 1.0]
+
+
+＠ダ・ヴィンチ
+『小野とは言わじ　[#薄:すすき]おひけり』
+[k]
+
+
+＠ダ・ヴィンチ
+ススキが生い茂っているから、[r][#小さな野]とは言わない……
+[k]
+
+＠ダ・ヴィンチ
+あなたを[#小野]小町とは言わないと告げて、[r]髑髏を弔ったわけだ。
+[k]
+
+[messageOff]
+[charaFace L 23]
+[subRenderFadeout #B 0.5]
+[subRenderFadeout #C 0.5]
+[wt 0.5]
+[charaFadeout P 0.1]
+[charaFadeout V 0.1]
+[charaFadeout W 0.1]
+[wt 0.2]
+[charaLayer P normal]
+[charaLayer W normal]
+[charaLayer W normal]
+
+＠ダ・ヴィンチ
+この伝説には小野小町を[#如意輪観音:にょいりんかんのん]、[r][#在原業平:ありわらのなりひら]を[#馬頭観音:ばとうかんのん]の化身とするものがある。
+[k]
+
+
+？1：（馬頭観音[line 3]）
+？2：（剣の神さま、だったっけ）
+？！
+
+[charaFace L 22]
+
+＠ダ・ヴィンチ
+ふたりは観音の化身なのだから、[r][#回向:えこう]あるべし[line 3]
+[k]
+
+
+＠ダ・ヴィンチ
+と、話は締めくくられる。
+[k]
+
+＠ダ・ヴィンチ
+回向という言葉は、[r]善や功徳を人々へ与えて悟りへと導く[line 3]
+[k]
+
+＠ダ・ヴィンチ
+そういった意味合いだ。[wt 0.5][charaFace L 13][r]……だからって、仏性そのものになるとか！
+[k]
+
+＠ダ・ヴィンチ
+そんなことある！？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 2]
+[charaFace G 2]
+[charaFadein G 0.1 0]
+
+＠ロクスタ
+でも実際なってやがりますよぉ！？
+[k]
+
+＠刑部姫
+なってるよねえ！[r]なってるよねえ！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 22]
+[charaFadein L 0.1 1]
+[charaPut X 1]
+
+＠ダ・ヴィンチ
+……観音菩薩という存在は、[r]女性的なイメージで語られることが多い。
+[k]
+
+
+[charaFace L 23]
+
+＠ダ・ヴィンチ
+女性性の象徴である小野小町が、仏性を開くことで[r]観音菩薩になる、と結びつけられたのかも。
+[k]
+
+[charaFace L 34]
+
+＠ダ・ヴィンチ
+……うん？　この場合、馬頭観音の[#在原業平:ありわらのなりひら]は、[r]小野小町の[#男性性:アニムス]ってことになるのかな？
+[k]
+
+
+[charaFace L 1]
+
+＠ダ・ヴィンチ
+興味は尽きないけど[line 3]
+[k]
+
+？1：最後のパーツは小町さんの[line 3]仏性？
+
+[charaFace L 8]
+
+＠ダ・ヴィンチ
+そうかもしれない。[r]ただ、欠片としてはあまりに強烈に過ぎる！
+[k]
+
+＠ダ・ヴィンチ
+見たところ、霊基全体が仏性に傾いてる！
+[k]
+
+＠ダ・ヴィンチ
+ひとつの欠片を回収しただけで、[r]歌人としての、恋の歌を好む少女の側面を塗り替えてる！
+[k]
+
+[charaFace L 33]
+
+＠ダ・ヴィンチ
+このままだと、[r]良くないことになるかもだ！
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+？2：（菩薩……菩薩……？）
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+
+[charaTalk O]
+[charaFace O 1]
+[charaPut O 0,0]
+[charaFadeTime O 0.5 0.8]
+[wt 1.5]
+
+[charaFadeout O 0.5]
+[wt 0.7]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠飛竜
+マスター、顔色が悪いぜえ！[r]ビビってんのかい！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+？！
+
+[bgmStop BGM_EVENT_79 1.5]
+
+[cueSe SE_22 22_ad1180 0.5 0.8]
+[cueSe SE_21 21_ad1110 1.0 0.5]
+[charaDepth Q 1]
+[charaDepth Y 2]
+[charaDepth Z 3]
+[charaDepth D 4]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaPut Y 1]
+[wt 0.3]
+[charaPut Z 0,0]
+[charaEffect Z bit_talk_sunlight01]
+[wt 0.5]
+[charaEffectStop Y bit_talk_radiallight02_big01]
+[charaFadeTime D 2.5 0.7]
+[wt 1.8]
+[cueSeStop 22_ad1180 1.8]
+[cueSeStop 21_ad1110 1.8]
+[wt 2.3]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut Z 2500,2500]
+
+[bgm BGM_EVENT_142 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……！？
+[k]
+
+[charaFace A 16]
+
+＠マシュ
+先輩！[r]小町さんの身体が薄れていきます！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 15]
+[charaFadein J 0.1 1]
+
+＠飛竜
+なんでー！？[r]パーツは全部集めたじゃんか！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+[charaPut X 1]
+
+＠鬼一法眼
+菩薩だからな。[r][line 3]当然、現世なんぞ離れて[#涅槃:ねはん]へ至るだろうよ。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 25]
+[charaFadein L 0.1 1]
+
+＠ダ・ヴィンチ
+あっ、そ、そうか……そうきたか！[r]仮初めだろうと、肉体に仏性が留まる訳がないんだ！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk I]
+[charaFace I 24]
+[charaFadein I 0.1 1]
+
+＠ニキチッチ
+ネハン？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+昇天、昇華に近い概念です！[r][#輪廻転生:りんねてんしょう]の終了、物理的な世界からの離脱……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠刑部姫
+結局消えるってことじゃないですかぁー！？
+[k]
+
+[charaFadeout G 0.1]
+[charaLayer Z sub #A]
+[charaLayer D sub #A]
+
+[charaDepth Q 1]
+[charaDepth Z 2]
+[charaDepth D 3]
+
+[charaScale D 1.2]
+[charaScale Z 1.2]
+[charaFace D 0]
+[charaFadein Q 0.1 0,-200]
+[charaPut Z -130,50]
+[charaPut D 0,50]
+[charaFadeTime D 0.1 0.7]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+
+＠ロクスタ
+パーツ全部集めたらサヨナラって、[r]とんだ詐欺ですよねえソレ！？
+[k]
+
+[messageOff]
+[charaTalk off]
+[cueSe SE_22 22_ad1180 0.6 0.5]
+[charaMoveEase Q 0,-250 3.5 easeOutSine]
+[charaMoveEase Z 0,0 3.5 easeOutSine]
+[charaMoveEase D 0,0 3.5 easeOutSine]
+[subRenderFadein #A 0.6 0,0]
+[wt 0.5]
+[se ad952]
+[wt 1.0]
+[charaFace D 1]
+[charaFadeTime D 2.0 0.5]
+[wt 2.0]
+[seStop ad952 1.0]
+[charaFadeout C 0.1]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠小野小町
+[line 15]。
+[k]
+
+[messageOff]
+[cueSeStop 22_ad1180 0.7]
+[subRenderFadeout #A 0.5]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk A]
+
+＠マシュ
+あ……ああ！[r]小町さんの霊基が、薄れて……
+[k]
+
+＠マシュ
+あ、あの、ど、どうすれば……！[r]先輩！
+[k]
+
+？1：…………………………。
+？2：何か、打つ手は[line 3]
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 10]
+[charaFadein L 0.1 1]
+[charaPut X 1]
+
+＠ダ・ヴィンチ
+う、うーんどうしよう！[r]彼女が本当に菩薩なのだとしたら……
+[k]
+
+＠ダ・ヴィンチ
+現界も消滅も、彼女自身が定めることで、[r]外部から止める手立てはないってことになる！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠マシュ
+そんな[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 6]
+[charaFadein M 0.1 1]
+[charaPut X 1]
+
+＠鬼一法眼
+……そんな顔をするな。[r]迷いを脱け、悟りを得るなぞ容易なことではない。
+[k]
+
+[charaFace M 7]
+
+＠鬼一法眼
+ただまあ、そうだな。[r]少なくともこの場からは[#消えてなくなる]。
+[k]
+
+＠鬼一法眼
+[#此度:こたび]の騒動、是にて仕舞い。[r]そういうことになるだろう。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+…………！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+
+＠ロクスタ
+ええー……ソレ、もしかして、[r][#デウス・エクス・マキナ:め　　で　　た　　し　　め　　で　　た　　し]のつもりです？
+[k]
+
+[charaFace C 17]
+
+＠ロクスタ
+……ホントにそんなオチでいいんですかぁ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠ニキチッチ
+いい訳が！[r]あるかぁ！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠刑部姫
+そ、そう言われてもさぁ……[r]仏様ってのはホント規格外中の規格外っていうか、
+[k]
+
+＠刑部姫
+そんなの出て来られちゃったら、[r]ただの姫、ただの妖怪としてはどーしようもさ……？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 7]
+[charaFadein J 0.1 1]
+
+＠飛竜
+ああ、相当偉い神サマなんスね！[r]それはまあスゲーと思うけど、どうかなあ！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠刑部姫
+へ？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 8]
+[charaFadein J 0.1 1]
+
+＠飛竜
+大パイセンなんだろ？[r]おっきー、このまま消えられちゃっていい訳？
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+[wt 0.15]
+[charaShake G 0.03 2 2 0.3]
+[wt 1.5]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 8]
+[charaFadein J 0.1 1]
+
+＠飛竜
+マスターもそうだぜ。[r]せっかくの新顔サーヴァントだってのにさァ。
+[k]
+
+＠飛竜
+放っとけばこれ、勝手に消えておしまいだ。
+[k]
+
+＠飛竜
+……そこんとこ、どうなん？
+[k]
+
+？1：……どうもこうもないよ
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_142 1.5]
+
+[charaTalk M]
+[charaFace M 8]
+[charaFadein M 0.1 1]
+[charaPut X 1]
+
+＠鬼一法眼
+…………ほう？
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠刑部姫
+……マーちゃん？
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.5]
+
+？1：仏様のことはよく分からないけど
+？2：どれだけ凄いのかも知らないけど
+？！
+
+[wt 0.7]
+
+？1：でも
+？！
+
+[wt 0.3]
+
+？1：恋の話をする小町さんは、楽しそうだった
+？！
+
+[bgm BGM_BATTLE_116 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠マシュ
+…………！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[charaPut X 1]
+
+＠ダ・ヴィンチ
+……[%1][&君:ちゃん]。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 9]
+[charaFadein M 0.1 1]
+
+＠鬼一法眼
+………………。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠ニキチッチ
+そうだぞ、マスター！
+[k]
+
+＠ニキチッチ
+オレは太陽公の勇士だからな！[r]東洋の偉い神さまだののことは知るよしもない！
+[k]
+
+[charaFace I 20]
+
+＠ニキチッチ
+故に尋ねるぞ！[r]そこで、さっきから黙って見ている奴！
+[k]
+
+＠ニキチッチ
+[#霊体化を解け][line 3]
+[k]
+
+[charaFace I 2]
+
+＠ニキチッチ
+[f large][#篁:たかむら]！
+[k]
+
+＠ニキチッチ
+おまえはそれでいいのか！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaPut K 1]
+[charaTalk K]
+[charaFace K 0]
+[se ad598]
+[charaSpecialEffect K wipeTimeRe 1 1.0]
+[wait charaSpecialEffect K]
+[charaFadein K 0 0,0]
+[seStop ad598 0.5]
+[wt 0.2]
+
+＠小野篁
+[line 9]。
+[k]
+
+＠小野篁
+我が身は、英霊・小野小町の一部。[r]ただの影に過ぎぬ……
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠ニキチッチ
+[f large][#莫迦:ば　　　か]者ォ！
+[k]
+
+
+[messageOff]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut Y 1]
+[charaEffect Y bit_talk_41_fs]
+[charaMoveScale I 1.5 0.3]
+[charaMove I 0,50 0.3]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaFadeout I 0.3]
+[wt 0.4]
+[charaPut Y 2500,2500]
+[charaEffectStop Y bit_talk_41_fs]
+[charaScale I 1.0]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[charaScale K 1.4]
+[charaTalk K]
+[charaFace K 3]
+[charaFadein K 0.1 0,50]
+[effect bit_talk_14 0,20]
+[wt 0.2]
+
+[cueSe Battle bac150]
+[charaMoveScaleEase K 1.0 0.4 easeOutQuad]
+[charaMoveEase K 0,0 0.4 easeOutQuad]
+[wt 1.2]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 1]
+
+＠ロクスタ
+殴ったァー！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 15]
+[charaFadein J 0.1 1]
+
+＠飛竜
+えぇー！？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠ニキチッチ
+この期に及んで何を誤魔化す！[r]いい加減にしろ！
+[k]
+
+＠ニキチッチ
+己が娘が消えかけているのに、[r]黙って見ている奴があるか！　[#莫迦:ば　か]者！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 13]
+[charaFadein K 0.1 1]
+
+＠小野篁
+……………………。
+[k]
+
+＠小野篁
+紅閻魔殿にも告げたが……[r][#然様:さよう]な問いかけは、無意味である。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 19]
+[charaFadein I 0.1 1]
+
+＠ニキチッチ
+頑固者め！
+[k]
+
+[charaFace I 2]
+
+[bgmStop BGM_BATTLE_116 1.2]
+
+＠ニキチッチ
+ならばよい、そこで見ていろ！[r]まずは小町の消滅を止めるぞ、マスター！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_123 0.1]
+
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0.1 1]
+
+＠飛竜
+……ッ！　ヒュー！[r]それでこそニキチの大将だぜ！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+先輩！　わたしも……！
+[k]
+
+[charaFace A 17]
+
+＠マシュ
+わたしも、もっと小町さんと……[r]こ、恋バナなど！　してみたいと思ってます！
+[k]
+
+＠マシュ
+少女漫画のお薦めも！[r]聞いてみたいのです！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 1]
+[charaFadein G 0.1 0]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+[wt 0.25]
+
+[charaMoveReturn G -256,-3 0.5]
+[charaMoveReturn C 256,-3 0.5]
+[wt 1.0]
+
+？1：いいね、せっかく現界したんだから
+？2：もっとキラキラを楽しんでほしい！
+？！
+
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk M]
+[charaFace M 11]
+[charaFadein M 0.1 1]
+[charaPut X 1]
+
+＠鬼一法眼
+かんら、から、から！
+[k]
+
+[charaFace M 1]
+
+＠鬼一法眼
+成る程、恋と来たか！[r]何とも悟りとはかけ離れた俗っぽさよ！
+[k]
+
+＠鬼一法眼
+あいや分かった！　ならば僕も[r][#増上慢:ぞうじょうまん]の天狗として助言をくれてやろう。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠ダ・ヴィンチ
+何か考えがあるのかい、鬼一法眼？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 9]
+[charaFadein M 0.1 1]
+
+＠鬼一法眼
+なぁに簡単なこと！[r]目前に、仏になろうとする奴がいるのなら[line 3]
+[k]
+
+[charaFace M 1]
+
+＠鬼一法眼
+そんなもの！　仏性が薄れに薄れるまで、[r][#未練をたっぷり叩き込んでやればいい]！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+[charaShake C 0.05 2 2 0.3]
+
+＠ロクスタ
+ゲェーッ！[r]力技だッ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠刑部姫
+さすが天狗、やり方が天狗！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 11]
+[charaFadein M 0.1 1]
+[charaPut X 1]
+
+＠鬼一法眼
+かんら、から、から！[r]常道、定石と言ってくれたまえ！
+[k]
+
+[charaFace M 8]
+
+＠鬼一法眼
+仏に逢うては仏を殺し、[r]父母に逢うては父母を殺す……なんてなァ！
+[k]
+
+[charaFace M 1]
+
+＠鬼一法眼
+そうはいかぬが、人の[#情:なさけ]に人の業。[r]小町には、まだまだ迷ってもらおうかのぅ！
+[k]
+
+？1：な、なるほど未練[line 3]
+？2：とにかくやるだけやってみる！
+？！
+
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+了解しました！[r]対菩薩戦闘、開始します！
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[charaFace D 12]
+[cueSe SE_22 22_ad1180 0.7 0.6]
+[cueSe SE_24 24_ade1060 0.7 0.3]
+[subCameraMove #A 15.0 0,-30 1.15]
+[subRenderFadein #A 0.7 0,0]
+
+[wt 1.8]
+
+[charaFace D 0]
+
+[wt 1.5]
+
+[charaFace D 2]
+
+[wt 1.5]
+
+＠小野小町
+[line 6]煩悩、退散。
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[cueSeStop 22_ad1180 0.4]
+[cueSeStop 24_ade1060 0.4]
+[bgmStopEnd BGM_BATTLE_123 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

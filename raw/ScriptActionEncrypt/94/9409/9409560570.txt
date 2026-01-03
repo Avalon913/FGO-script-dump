@@ -1,0 +1,488 @@
+
+
+＄94-09-56-05-7-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 7049000 1 静希草十郎]
+[charaSet B 2051000 1 杉谷]
+[charaSet C 1098295240 1 久遠寺有珠]
+[charaScale C 0.8]
+[charaSet D 1098295240 1 久遠寺有珠2]
+[charaScale D 1.2]
+
+[sceneSet E 216405 1]
+[sceneSet F 217900 1]
+[sceneSet G 216401 1]
+[sceneSet H 216402 1]
+[sceneSet I 216402 1]
+[sceneSet J 216403 1]
+[sceneSet K 216403 1]
+
+[charaSet L 98115000 1 エフェクト用]
+[charaSet M 98115000 1 エフェクト用]
+
+[charaSet R 98115000 1 エフェクト用]
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+
+[sceneSet U 216401 1]
+[sceneSet V 216402 1]
+
+[subCameraOn 4]
+
+[charaLayer G sub #A]
+[charaLayer H sub #A]
+
+[charaLayer U sub #C]
+[charaLayer V sub #C]
+
+[charaLayer I sub #B]
+[charaLayer J sub #B]
+[charaLayer L sub #B]
+[charaLayer M sub #B]
+
+[charaLayer K sub #D]
+[charaLayer D sub #D]
+
+[subCameraFilter #A maskEdge cut359_mask05 30 0,0,0,255 1]
+[subCameraFilter #C maskEdge cut359_mask05 30 0,0,0,255 1]
+
+[subCameraFilter #B maskEdge cut359_mask07 30 0,0,0,255 1]
+[subCameraFilter #D maskEdge cut359_mask07 30 0,0,0,255 1]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #D 3]
+
+[charaScale G 1.6]
+[charaScale H 1.6]
+[charaScale U 1.6]
+[charaScale V 1.6]
+
+[charaScale I 1.6]
+[charaScale J 1.6]
+
+[charaScale K 1.2]
+
+[charaPut R 2000,2500]
+[charaScale R 1.1]
+[charaEffect R bit_sepia01_depth_fs]
+
+[charaDepth G 1]
+[charaDepth H 2]
+[charaDepth U 1]
+[charaDepth V 2]
+
+[charaDepth I 1]
+[charaDepth J 2]
+[charaDepth L 3]
+
+[charaDepth K 1]
+[charaDepth D 2]
+
+[charaFace D 9]
+[charaFadein D 0.1 0,200]
+[charaFadein K 0.1 0,-80]
+
+[charaFadein G 0.1 -780,-100]
+[charaFadein U 0.1 -280,-100]
+
+[charaFadein I 0.1 -640,-110]
+
+
+[scene 216401]
+[bgm BGM_EVENT_205 0.1]
+
+[wt 0.7]
+
+[se ade503]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 -100,-60]
+
+[wt 2.9]
+
+[fadein black 1.5]
+[wait fade]
+[seStop ade503 0.2]
+[wt 0.8]
+
+＠久遠寺有珠
+やって来たわね。[r]さあ、もっと奥にいらっしゃい。
+[k]
+
+
+＠久遠寺有珠
+階段の前じゃ踊れないわ。[r]わたしを[#祓:はら]いたいのなら勇気を持って進まないと。[bgmStop BGM_EVENT_205 1.5]
+[k]
+
+？1：そうはいかない！
+？2：その前に[line 3]こうだ！
+？！
+
+[messageOff]
+[charaFadeout C 0.2]
+[wt 0.1]
+
+[bgm BGM_BATTLE_270 0.1]
+
+[se ad1023]
+
+[cameraMove 1.2 -110,10 1.6]
+[wt 0.5]
+[scene 10000 0.7]
+[wt 0.7]
+[seStop ad1023 1.5]
+
+[subRenderFadein #A 0.3 300,-200]
+[wt 0.5]
+[charaFadein H 0.3 -780,-100]
+[cueSe SE_24 24_ade1027]
+[wt 0.5]
+[subRenderFadeout #A 0.3]
+
+[subRenderFadein #C 0.3 0,-200]
+[wt 0.5]
+[cueSe SE_24 24_ade1027]
+[charaFadein V 0.3 -280,-100]
+[wt 0.5]
+[subRenderFadeout #C 0.3]
+
+[charaFadeout H 0]
+[charaFadein G 0 480,-100]
+[subRenderFadein #A 0.3 -300,-200]
+[wt 0.5]
+
+[cueSe SE_24 24_ade1027]
+[charaFadein H 0.3 480,-100]
+[wt 0.8]
+
+[subRenderFadein #B 0.3 200,-200]
+[wt 0.3]
+
+[cueSe SE_23 23_ade911]
+[wt 0.5]
+
+[cueSe SE_23 23_ade910]
+[charaPut L 0,200]
+[charaEffect L bit_talk_shot_01_once]
+[wt 0.2]
+
+[cueSeStop 23_ade910 0.3]
+
+[se ad149]
+[se ade187]
+[charaFadein J 0.3 -640,-110]
+
+[wt 1.2]
+
+[charaFadeout U 0]
+[charaFadeout V 0]
+[subRenderFadeout #A 0.6]
+[subRenderFadeout #B 0.6]
+
+[charaTalk D]
+[subRenderFadein #D 0.6 0,-200]
+
+[wt 1.5]
+
+[wipeout circleIn 1.0 1.0]
+[bgm BGM_BATTLE_270 1.0 0.4]
+[wait wipe]
+
+[cameraHome 0.2]
+
+[subRenderFadeout #D 0.1]
+
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout K 0.1]
+
+[charaLayer G normal]
+[charaLayer H normal]
+[charaLayer I normal]
+[charaLayer J normal]
+[charaLayer L normal]
+[charaLayer D normal]
+[charaLayer K normal]
+
+[scene 10000]
+[wt 0.2]
+
+
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 215701]
+
+[charaPut R 1]
+
+[charaDepth B 3]
+[charaDepth A 4]
+[charaDepth R 8]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFace B 0]
+[charaFadeinFSL A 0.1 0]
+[charaFadeinFSR B 0.1 2]
+
+[cameraMove 0.1 0,0 1.01]
+
+[wt 0.1]
+
+[fadein black 0.8]
+[wait fade]
+[wt 0.2]
+
+＠静希草十郎
+百歩[#譲:ゆず]って突入するのはいいけど、[r]『逆写しの間』は鏡だらけだ。
+[k]
+
+＠静希草十郎
+あの[#偽:にせ]有珠が部屋の奥に陣取っていたら、[r]近づくだけで鏡に取り囲まれる事になるぞ。
+[k]
+
+＠杉谷
+俺たちが[#揃:そろ]っていれば[r]鏡に閉じ込められる事はないだろ。
+[k]
+
+
+＠杉谷
+たがいを見張っていればいい。[r]ひとりでなければ鏡に捕まる事はないんだろ。
+[k]
+
+[charaFace A 23]
+＠静希草十郎
+いや、どうだろう。[r]それなら個別で誘い出すよ。
+[k]
+
+＠静希草十郎
+三人で来い、と言ったのには裏がある。[r]こっそり自分専用[#反則:ルール]を付け足しているとか。
+[k]
+
+[charaFace B 12]
+＠杉谷
+確かに、そういう事しそうなお嬢さんだが……。
+[k]
+
+[charaFace A 0]
+＠静希草十郎
+[%1]。[r]何か作戦は[line 3]
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[wt 0.4]
+
+[cameraMove 0.3 0,7 1.01]
+[wt 0.32]
+[cameraMove 0.3 0,0 1.01]
+[wt 0.32]
+
+[cameraMove 0.3 0,7 1.01]
+[wt 0.32]
+[cameraMove 0.3 0,0 1.01]
+[wt 0.8]
+
+[charaFace A 15]
+[charaFace B 13]
+[wt 1.4]
+
+[charaTalk on]
+[charaFace A 2]
+＠静希草十郎
+よし、それでいこう。後衛は霊印坊。[r]前衛は俺と[%1]だ。
+[k]
+
+[messageOff]
+[fadeout black 0.8]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[cameraHome 0.1]
+[charaPut R 2000,2500]
+[charaEffectDestroy R bit_sepia01_depth_fs]
+[scene 10000]
+[wt 0.2]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout circleIn 0.1 1.0]
+[wait wipe]
+
+[scene 216403]
+[wt 0.1]
+
+
+[charaLayer F sub #C]
+[charaLayer B sub #C]
+[charaLayer S sub #C]
+[charaLayer T sub #C]
+
+[subCameraFilter #C maskEdge cut359_mask05 30 0,0,0,255 1]
+
+[charaScale F 1.2]
+[charaScale B 1.2]
+
+[charaDepth F 1]
+[charaDepth B 2]
+
+[charaFace B 6]
+[charaFadein B 0.1 0,170]
+[charaFadein F 0.1 -360,-40]
+
+
+[bgm BGM_BATTLE_270 1.0 1.0]
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+[wt 0.15]
+
+[charaTalk B]
+[cueSe SE_23 23_ade911]
+
+[subRenderFadein #C 0.3 -350,-150]
+[wt 0.5]
+
+＠杉谷
+雨戸さえ開けてもらえれば丸見えだ！[r]狙撃手を舐めんなよ！
+[k]
+
+
+
+
+[messageOff]
+[cueSe SE_23 23_ade910]
+[charaPut S 25,185]
+[charaScale T 1.5]
+[charaPut T 25,325]
+[charaEffect S bit_talk_14]
+[charaEffect T bit_talk_shot_02_once]
+[wt 0.5]
+
+[se ad149]
+[se ade187]
+[fadeout white 0.1]
+[wait fade]
+
+[subRenderFadeout #C 0]
+
+[scene 216404]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.45]
+
+[cueSe SE_23 23_ade910]
+[wt 0.5]
+
+[se ad149]
+[se ade187]
+[fadeout white 0.1]
+[wait fade]
+
+[scene 216405]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.8]
+
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[subCameraOff]
+[charaLayer B normal]
+[charaLayer F normal]
+[charaLayer S normal]
+[charaLayer T normal]
+
+[charaScale B 1.0]
+[charaScale F 1.0]
+[wt 0.2]
+
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠久遠寺有珠
+ズルい！　外から鏡を割っていくなんて！[r]せっかくの特別ルールが台無しだわ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth C 2]
+[charaDepth E 3]
+[charaDepth A 4]
+
+[charaScale A 1.2]
+[charaScale E 1.2]
+
+[charaFace A 4]
+[charaFadein A 0.4 -250,0]
+[charaFadein E 0.4 -125,-260]
+[charaMoveEase A -200,0 0.6 easeOutSine]
+[charaMoveEase E -75,-260 0.6 easeOutSine]
+[wt 0.8]
+
+[charaTalk on]
+＠静希草十郎
+畳みかける！[r]いつものヤツ、頼むぞマスター！
+[k]
+
+？1：まかせて、フル召喚でいく！
+？2：鏡の国は、[#此処:こ　こ]までだ！
+？！
+
+[messageOff]
+[charaTalk off]
+[charaFadeout A 0.5]
+[charaFadeout E 0.5]
+[wt 1.0]
+
+
+[charaDepth C 2]
+[charaDepth R 5]
+[charaFace C 2]
+[wt 0.8]
+
+[se ade153]
+[charaPut R 1]
+[charaEffect R bit_talk_ghost_fog_white]
+[wt 1.7]
+
+
+
+[fadeout white 0.8]
+[seStop ade153 1.2]
+[wait fade]
+
+[charaPut R 2000,2500]
+[charaEffectDestroy R bit_talk_ghost_fog]
+[charaFadeout C 0.1]
+[scene 10000]
+[wt 0.8]
+
+[bgmStopEnd BGM_BATTLE_270 0.5]
+[fadein white 0.5]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+[soundStopAllEnd]
+[end]

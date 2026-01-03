@@ -1,0 +1,214 @@
+
+
+＄94-09-15-06-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3017002 1 李書文]
+[charaSet B 1059000 1 ヤマトタケル]
+[charaSet C 1098284220 1 紅玉の書]
+[charaSet D 1060000 1 宮本伊織]
+[sceneSet E 10000 1]
+[charaScale E 1.3]
+
+[charaSet L 98115000 1 エフェクト用]
+[charaSet M 98115000 1 エフェクト用]
+
+[scene 204600]
+
+[bgm BGM_BATTLE_253 0.1]
+[fadein black 0.5]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠李書文
+どうした！[r]手が緩んでいるぞ！
+[k]
+
+[charaFace A 0]
+
+＠李書文
+戯れとは云え[line 3]死に物狂いでなければ、[r]一息で死ぬるのみ！
+[k]
+
+[messageOff]
+[charaMoveEase A 0,10 0.2 easeOutQuint]
+[charaMoveScaleEase A 1.1 0.2 easeOutQuint]
+[charaFadeout A 0.2]
+[effect bit_talk_v_slash01]
+[se ad1006]
+[wt 0.1]
+[se ad85]
+[wt 0.4]
+
+[charaScale D 1.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,10]
+[charaMoveEase D 0,0 0.2 easeOutQuint]
+[charaMoveScaleEase D 1.0 0.2 easeOutQuint]
+[se ad32]
+[se ad471]
+[seVolume ad471 0 1.0]
+[effect bit_talk_14]
+[wt 0.1]
+[charaShake D 0.05 3 3 0.3]
+[wt 0.8]
+[charaFace D 7]
+
+＠宮本伊織
+……云われずとも！
+[k]
+
+[messageOff]
+[se ad1006]
+[charaMoveEase D 0,10 0.2 easeOutQuint]
+[charaMoveScaleEase D 1.1 0.2 easeOutQuint]
+[charaFadeout D 0.2]
+[wt 0.3]
+[charaScale A 1.0]
+[charaScale D 1.0]
+
+[se ad1053]
+[effect bit_talk_quick_slash]
+[wt 1.5]
+
+[charaTalk depthOff]
+[charaDepth B 3]
+[charaDepth E 1]
+
+[charaPut E 0,-200]
+[charaFadeTime E 0.2 0.5]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠ヤマトタケル
+（イオリ……[r]　やはり昂っているな）
+[k]
+
+＠ヤマトタケル
+（まるで、かつての[r]　盈月の儀のように……）
+[k]
+
+[bgm BGM_BATTLE_253 1.0 0.4]
+
+[messageOff]
+[charaFadeout E 0.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad609]
+[seVolume ad609 0 0.5]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠紅玉の書
+ぬおおっ！？　何事じゃ！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[pictureFrameTop cut063_cinema]
+[charaPut L 0,-600]
+[charaPut M 1]
+[charaEffect L bit_talk_blk_fire_aura]
+[charaEffect M bit_talk_sparks_black]
+[wt 0.5]
+
+[cueSe SE_21 21_ad1114 0.4 0.5]
+[se ad963]
+[seVolume ad963 0 0]
+[seVolume ad963 0.4 0.5]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[wt 1.0]
+
+[cueSe SE_24 24_ade972 0 0.6]
+[wt 1.5]
+[cueSeStop ad963 2.0]
+[wt 1.5]
+[cueSeStop 24_ade972 1.0]
+[wt 1.0]
+
+[cueSeStop 21_ad1114 0.5]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[pictureFrame]
+[charaPut L 2000,2000]
+[charaPut M 2000,2000]
+[charaEffectStop L bit_talk_blk_fire_aura]
+[charaEffectStop M bit_talk_sparks_black]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+[wipein rectangleStripLeftToRight 0.4 1]
+[bgm BGM_BATTLE_253 0.4 1.0]
+[wait wipe]
+
+＠李書文
+む……戯れが過ぎたか。[r]どうやら先手を打たれたようだ。
+[k]
+
+？1：……しまった！
+？2：もしかして地右衛門が！？
+
+？！
+
+[charaFace A 4]
+
+＠李書文
+やれやれ、仕方あるまい。
+[k]
+
+[charaFace A 0]
+＠李書文
+小娘の小言なぞ、聞くに堪えんからな。[r]務めを果たすとするか。
+[k]
+
+[messageOff]
+[se ad678]
+[seVolume ad678 0 0.7]
+[charaEffect A bit_talk_quickmove]
+[charaSpecialEffect A erasureReverse 1 0.3]
+[wt 1.2]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ヤマトタケル
+待て、[#逸:はぐ]れのアサシン……[r]じゃなくて、[#逸:はぐ]れのランサー！
+[k]
+
+[charaFace B 3]
+
+＠ヤマトタケル
+……ややこしいな！[r]とにかく追うぞ、ふたりとも！
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_BATTLE_253 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

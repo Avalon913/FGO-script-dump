@@ -1,0 +1,673 @@
+
+＄94-13-93-11-1-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 4001000 1 メドゥーサ]
+[charaSet C 5043000 1 アスクレピオス]
+[charaSet D 1098257310 1 ダ・ヴィンチ]
+[charaSet E 1098313600 1 ザッハーク]
+[charaSet F 1010000 1 エリザベート]
+[charaSet H 1062001 1 黒姫]
+[charaSet I 3057001 1 ビショーネ]
+[charaSet J 1098313000 1 捕食竜]
+[charaSet K 1098313000 1 捕食竜]
+
+[ifClear 60139307]
+[charaSet G 1098315100 1 チビーネ]
+[flag rbody_1 true]
+
+[ifClear 60139308]
+[charaSet G 1098315000 1 チビーネ]
+[flag rbody_2 true]
+
+[ifClear 60139309]
+[charaSet G 1098314900 1 チビーネ]
+[flag rbody_3 true]
+
+[ifClear 60139310]
+[charaSet G 1098316600 1 チビーネ]
+[flag bbody_1 true]
+
+[ifClear 60139311]
+[charaSet G 1098316700 1 チビーネ]
+[flag bbody_2 true]
+
+[ifClear 60139312]
+[charaSet G 1098316800 1 チビーネ]
+[flag bbody_3 true]
+
+[ifClear 60139313]
+[charaSet G 1098317000 1 チビーネ]
+[flag gbody_1 true]
+
+[ifClear 60139314]
+[charaSet G 1098317100 1 チビーネ]
+[flag gbody_2 true]
+
+[ifClear 60139315]
+[charaSet G 1098317200 1 チビーネ]
+[flag gbody_3 true]
+
+[else]
+[charaSet G 1098315100 1 チビーネ]
+[flag rbody_1 true]
+
+[endIf]
+
+[charaSet B 4001001 1 メドゥーサ]
+[charaSet V 5043000 1 アスクレピオス]
+[charaSet W 3057001 1 ビショーネ]
+
+[imageSet L cut635_king_snake 1]
+[imageSet M cut635_king_snake 1]
+
+[sceneSet O 238901 1]
+[sceneSet P 238901 1]
+[sceneSet Q 238901 1]
+
+[imageSet T back10000 1]
+[charaScale T 1.01]
+[charaSet U 98115000 1 エフェクト用]
+
+[imageSet N black_fade_re 1]
+[imageSet R black_fade_re 1]
+
+[subCameraOn 2]
+[charaLayer L sub #A]
+[charaLayer B sub #A]
+[charaLayer A sub #A]
+[charaLayer P sub #A]
+
+[charaLayer M sub #B]
+[charaLayer V sub #B]
+[charaLayer W sub #B]
+[charaLayer G sub #B]
+[charaLayer T sub #B]
+[charaLayer Q sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask18 30 0,0,0,255 1]
+[subCameraFilter #B maskEdge cut359_mask05 30 0,0,0,255 1]
+[subRenderScale #A 1.03]
+[subRenderScale #B 1.03]
+[subRenderDepth #A 2]
+[subRenderDepth #B 3]
+
+[charaTalk depthOff]
+[charaDepth E 4]
+[charaDepth O 3]
+
+[charaDepth L 6]
+[charaDepth B 7]
+[charaDepth A 8]
+[charaDepth P 5]
+[charaDepth M 7]
+[charaDepth V 7]
+[charaDepth W 7]
+[charaDepth G 5]
+[charaDepth T 5]
+[charaDepth Q 4]
+
+[charaScale L 1.4]
+[charaScale M 1.4]
+[charaScale B 1.2]
+[charaScale A 1.2]
+[charaScale P 1.2]
+[charaScale V 1.2]
+[charaScale Q 1.4]
+
+[charaFadein L 0.1 200,0]
+[charaFadein P 0.1 0,-200]
+
+[charaFadein M 0.1 300,250]
+[charaFadein Q 0.1 350,0]
+
+
+[charaPut U 2000,2000]
+[charaEffect U bit_talk_10_LowLevel]
+
+[scene 10000]
+
+
+[charaMove L 150,50 8.0]
+[charaMove P -50,-150 8.0]
+[subRenderFadein #A 0.1 0,-120]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_105 0.1]
+[wait fade]
+
+[wt 1.8]
+[subRenderFadeout #A 0.5]
+[wt 0.65]
+
+[charaMove M 300,200 8.0]
+[charaMove Q 350,-50 8.0]
+[subRenderFadeinFSL #B 0.5 -200,-200]
+[wt 2.8]
+
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+
+[subRenderFadeout #B 0.1]
+
+[subCameraFilter #A maskEdge cut359_mask06 5 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask06 5 0,0,0,255 0]
+
+[charaScale E 1.2]
+[charaScale O 1.3]
+
+[charaFace E 0]
+[charaFadein E 0.4 0,70]
+[charaFadein O 0.4 0,-280]
+
+[scene 238901]
+[wt 0.5]
+
+[charaMoveScaleEase E 1.0 2.0 easeOutSine]
+[charaMoveEase E 0,0 2.0 easeOutSine]
+[charaMoveScaleEase O 1.1 2.0 easeOutSine]
+[charaMoveEase O 0,-240 2.0 easeOutSine]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 3.0]
+
+？1：あれが、蛇王……！？
+？2：ザッハーク！？
+？！
+
+[charaTalk off]
+[charaFace B 2]
+[charaFadein B 0 -250,230]
+[charaFace A 2]
+[charaFadein A 0 -250,230]
+[charaFadein P 0 0,-100]
+
+[subRenderFadein #A 0.4 50,-220]
+[subRenderMoveEase #A 0,-220 0.4 easeOutQuart]
+[wt 0.3]
+[charaFadeout A 0.3]
+[cueSe SE_24 24_ade988]
+[wt 0.1]
+[cueSeStop 24_ade988 0.4]
+
+＠メドゥーサ
+敵の[line 3]首魁！
+[k]
+
+[messageOff]
+[charaFace B 5]
+[charaEffect B bit_talk_mysticeyes_mds_rider_lp]
+[wt 0.45]
+[cueSe SE_23 23_ad1296]
+[cueSe SE_21 21_ad1108]
+[wt 2.0]
+
+[charaTalk on]
+[charaTalk V]
+[charaFace V 0]
+[charaFadein V 0 250,320]
+[charaFadein Q 0 0,-100]
+
+[subRenderFadein #B 0.4 -50,-450]
+[subRenderMoveEase #B 0,-450 0.4 easeOutQuart]
+[cueSeStop 21_ad1108 0.4]
+[wt 0.4]
+
+[charaFadeTime T 0.2 0.5]
+
+＠V：アスクレピオス
+（ふん。さすがは神にも抗する怪物。[r]　判断が早い！）
+[k]
+
+[messageOff]
+[charaTalk V,E]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.5]
+
+[charaFadeout V 0.1]
+[charaFadeout T 0.1]
+[charaFadeout Q 0.1]
+
+[charaTalk E]
+[charaCrossFade E 1098313640 0 0.7]
+[cueSe SE_24 24_ade1007]
+[seStop 24_ade1007 1.4]
+[wt 1.8]
+[charaLayer A normal]
+[charaScale A 1.0]
+[charaDepth A 0]
+[charaSet A 4001001 1 メドゥーサ]
+
+[charaTalk B]
+[subRenderFadein #A 0.4 0,-220]
+[cueSe SE_21 21_ad1108 0.4]
+[wt 0.5]
+[charaEffectStop B bit_talk_mysticeyes_mds_rider_lp]
+[cueSeStop 21_ad1108 2.0]
+[wt 3.0]
+
+？1：メドゥーサさん！？
+？！
+
+[charaFaceFade B 10 0.1]
+
+＠B：メドゥーサ
+……。[r]……。
+[k]
+
+＠B：メドゥーサ
+目の前に現れてくれたのです。[r]初手の奇襲で石化させられれば、
+[k]
+
+＠B：メドゥーサ
+あとはどうとでもなる[line 3][r]と思ったのですが。
+[k]
+
+[charaFace B 12]
+
+＠B：メドゥーサ
+そう上手くはいかないようです。
+[k]
+
+[messageOff]
+[charaFadeout E 0.5]
+[charaFadeout O 0.5]
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+[charaFadeout B 0.1]
+[charaFadeout P 0.1]
+
+[charaPut U 0,0]
+[charaTalk D]
+[charaFace D 25]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+[#抵抗:レジスト]された？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut U 2000,2000]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠メドゥーサ
+それ以前に、[r][#あれは実体ではありません]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaChange E 1098313600 1 fade 0.1]
+[wait charaChange E]
+
+＠ザッハーク
+いかにも。浅はかなる、蛇よ。[r]この余の姿は、投影された、影にすぎぬ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠メドゥーサ
+間接的に届かせようとすることはできますが、[r]精度も確実性も落ちます。
+[k]
+
+＠メドゥーサ
+令呪に近いレベルのリソースサポートも必要です。[r]どうしますか。
+[k]
+
+[subCameraFilter #A maskEdge cut359_mask05 5 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask05 5 0,0,0,255 0]
+
+[bgmStop BGM_EVENT_105 2.0]
+
+？1：今は少し様子をみよう
+？！
+
+[messageOff]
+[charaMoveReturn A 0,-4 0.5]
+[wt 0.8]
+[cueSe SE_24 24_ade988]
+[charaCrossFade A 4001000 12 0.3]
+[charaCrossFade B 4001000 12 0.3]
+[wait charaCrossFade A]
+[cueSeStop 24_ade988 0.6]
+[wt 1.3]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+[bgm BGM_EVENT_175 0.1]
+
+＠エリザベート
+アナタが魔王ね。
+[k]
+
+[charaFace F 5]
+
+＠エリザベート
+勇者エリザベートが倒しに来てあげたわ！[r]そこになおりなさい！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ザッハーク
+……勇者？　ククク。
+[k]
+
+＠ザッハーク
+フェリドゥーンとは、似ても似つかぬ。[r][#無辜:む　こ]の竜よ。貴様には、不可能だ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠エリザベート
+よくわかんないけどディスられた気がしたわ！[r]許せない！
+[k]
+
+＠エリザベート
+ビショーネ、アナタも何か言ってやりなさい……[r]って、どうして目を逸らしてるのよ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 17]
+[charaFadein I 0.1 1]
+
+＠ビショーネ
+いえ、わたし、そのう。
+[k]
+
+＠ビショーネ
+実を言うと、男の人の裸を見るのが、[r]ちょっと、恥ずかしくて……！
+[k]
+
+[charaFace I 10]
+
+＠ビショーネ
+うう、あの人、[r]どうしてあんなに薄着なんですかぁ……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠エリザベート
+魔王はだいたいあんな感じ……っていうか、
+[k]
+
+＠エリザベート
+骨まで見えてることだってあるんだからアレは[r]だいぶマシなほうよ！　我慢して前向いてなさい！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 13]
+[charaFadein I 0.1 1]
+
+＠ビショーネ
+はぁい……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠黒姫
+陛下。[r]何故、ここに。
+[k]
+
+＠黒姫
+この者たちのことは、[r]捨て置け、と仰ったはずでは……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaChange E 1098313600 2 fade 0.1]
+[wait charaChange E]
+
+＠ザッハーク
+愚問。
+[k]
+
+[charaFaceFade E 0 0.2]
+
+＠ザッハーク
+捨て置けと言ったは[line 3][r]余計な手間はかけられぬ、という意味にすぎぬ。
+[k]
+
+＠ザッハーク
+姫の窮地を救うのは。[r]手間の[#範疇:はんちゅう]には、入らぬ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 2000,2000]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠黒姫
+あ……。[r]ありがとう、ございます……。
+[k]
+
+[charaCrossFade E 1098313650 0 0.1]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ザッハーク
+姫を救う[#傍:かたわ]らであれば、[r][#時宜:じ　ぎ]に適おう。
+[k]
+
+＠ザッハーク
+邪魔であるなら、殺すべき機会であるなら、殺す。[r][#相応:ふさわ]しき形で。
+[k]
+
+[messageOff]
+[charaTalk E,W]
+[charaFace W 11]
+[charaFadein W 0 0,200]
+[charaFadein Q 0.1 500,-200]
+
+[subRenderFadeinFSL #B 0.4 -350,-220]
+[wt 0.8]
+[charaFadeTime T 0.2 0.5]
+
+＠W：ビショーネ
+（わたし……見られ、てる……？[r]　どうして……？）
+[k]
+
+[charaFadeout W 0.1]
+[charaFadeout T 0.2]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 70,200]
+
+＠チビーネ
+きゅ……。
+[k]
+
+[messageOff]
+[charaFadeout E 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+[bgmStop BGM_EVENT_175 1.5]
+[charaFadeout G 0.1]
+[charaFadeout Q 0.1]
+
+[charaDepth J 5]
+[charaDepth K 4]
+
+[charaTalk J,K]
+[charaFace J 1]
+[charaFadein J 0.1 200,0]
+[charaFace K 1]
+[charaFadein K 0.1 -300,0]
+[cueSe SE_25 25_ade1156]
+[wt 1.5]
+[seStop 25_ade1156 0.3]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaChange E 1098313650 0 fade 0.1]
+[wait charaChange E]
+
+＠ザッハーク
+相応しき形とは、すなわち。[r]贄だ。
+[k]
+
+[messageOff]
+[charaScale B 1.0]
+[charaScale V 1.0]
+
+[charaTalk B,V]
+[charaFace B 4]
+[charaFadein B 0 -25,140]
+[charaFadein P 0.1 0,-50]
+[charaFace V 5]
+[charaFadein V 0 0,150]
+[charaFadein Q 0.1 0,-50]
+
+[subRenderFadeinFSR #A 0.4 350,-160]
+[subRenderFadeinFSL #B 0.4 -350,-160]
+[wt 1.4]
+
+[bgm BGM_BATTLE_261 0.1]
+
+＠ザッハーク=spot[B,V,E]
+薬臭い半神。[r]蛇たる女怪。
+[k]
+
+[messageOff]
+[charaTalk B,V,E]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+[charaFadeout B 0.1]
+[charaFadeout V 0.1]
+
+[charaTalk E]
+[charaCrossFade E 1098313660 0 0.3]
+
+＠ザッハーク
+共に、供されたことはないが。[r]少なくとも、腹は膨れよう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+おまえに神の要素を語られたくはないな。[r]純粋に不愉快だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠メドゥーサ
+数々の人間を喰らってきた私を。[r]逆に喰らう、と？
+[k]
+
+＠メドゥーサ
+面白い冗談です、蛇王。
+[k]
+
+？1：ザッハークが幻影でも[line 3]
+？2：捕食竜には立ち向かわないと！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠ビショーネ
+そ、そうですね。[r]さっきは勝てそうだったんです。
+[k]
+
+＠ビショーネ
+二匹に増えたからって関係ありません。
+[k]
+
+[charaFace I 7]
+
+＠ビショーネ
+肌の露出度が相変わらず気になるところでは[r]ありますけど、あれは気にしないようにして！
+[k]
+
+＠ビショーネ
+倍頑張れば、きっと[line 3]！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_261 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

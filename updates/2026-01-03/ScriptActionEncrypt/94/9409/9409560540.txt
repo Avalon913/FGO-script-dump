@@ -1,0 +1,337 @@
+
+
+＄94-09-56-05-4-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 25014000 1 蒼崎青子]
+[charaSet B 1098257800 1 マシュ]
+[charaSet C 2051000 1 杉谷]
+
+[sceneSet D 115500 1]
+[charaScale D 1.2]
+
+[sceneSet E 215501 1]
+[charaScale E 1.2]
+
+[sceneSet F 115500 1]
+[charaSet G 2051000 1 杉谷]
+
+[scene 215501]
+
+[cameraMove 10.0 120,-45 1.3]
+
+[fadein black 1.0]
+[se ad1023]
+[seVolume ad1023 0.0 0.0]
+[seVolume ad1023 0.0 0.5]
+[wait fade]
+[wt 0.5]
+
+[fadeout black 1.0]
+[seVolume ad1023 0.0 0.2]
+[wait fade]
+[seStop ad1023 0.2]
+
+[cameraHome 0.1]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout leftToRight 0.1 1.0]
+[wait wipe]
+
+[scene 115500]
+[wt 0.7]
+
+[se ade34]
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.7]
+
+[bgm BGM_EVENT_200 0.1]
+
+？1：……やっぱり誰もいない……
+
+？！
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい……。この部屋は両儀さんご家族が[r]宿泊されている[#兎角:と か く]の間ですが……
+[k]
+
+＠マシュ
+３人分の荷物があるだけで[r]両儀さんたちの姿はありません……。
+[k]
+
+[charaFace B 4]
+
+＠マシュ
+士郎さんも両儀さんも軽率な方には見えませんでした。[r]宿のご主人からの指示に[#背:そむ]くとは思えません。
+[k]
+
+？1：……部屋の中に霧は入ってきていない……
+？2：……なのに消えてしまった、という事は……？
+
+？！
+
+[charaFace B 0]
+
+＠マシュ
+状況が[#掴:つか]めない以上、今は有珠さんを見つけて[r]結界を解いてもらう事を最優先にすべきです。
+[k]
+
+
+＠マシュ
+先輩、天空の間に戻ってみましょう。[r]有珠さんの手がかりがあるかもしれません。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_200 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[pictureFrameTop cut063_cinema]
+
+[scene 215501]
+[wt 1.0]
+
+[cueSe SE_23 23_ade895]
+[seVolume 23_ade895 0 0]
+
+[se ade422]
+[cueSeVolume ade422 0 0]
+
+[seVolume ade422 1.0 0.5]
+[cueSeVolume 23_ade895 1.0 0.5]
+
+[wt 0.5]
+
+[charaFadein E 0.5 -60,-240]
+[charaMove E 60,-240 10.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[seStop ade422 1.5]
+[cueSeStop 23_ade895 1.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[subCameraOn 2]
+
+[charaLayer A sub #A]
+[charaLayer D sub #A]
+[charaLayer G sub #B]
+[charaLayer F sub #B]
+[subCameraFilter #A maskEdge cut359_mask07 20 0,0,0,255 1]
+[subCameraFilter #B through]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth G 2]
+
+[charaDepth D 1]
+[charaDepth A 2]
+
+[charaScale G 1.2]
+[charaScale F 1.2]
+[charaScale D 1.1]
+[charaScale A 1.1]
+
+[charaFace A 0]
+[charaFadein A 0.1 0,200]
+[charaFadein D 0.1 400,-50]
+
+[charaFace G 18]
+[charaFadein G 0.1 130,-50]
+[charaFadein F 0.1 -120,-280]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout leftToRight 0.1 1.0]
+[wait wipe]
+
+[scene 115500]
+[wt 0.7]
+
+[se ade34]
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.7]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 250,-50]
+
+＠杉谷
+ここは[#濡鴉:ぬれがらす]の間……[r]ふじのんの部屋だな。
+[k]
+
+＠杉谷
+茶の間は俺が調べる。[r]蒼崎はそっちの細かいところを見てくれ。
+[k]
+
+[messageOff]
+
+[charaTalk A]
+[subRenderFadeinFSL #A 0.3 -250,-250]
+[wt 0.8]
+
+
+＠蒼崎青子
+ふじのんさんね……[bgm BGM_EVENT_204 0.1]
+[k]
+
+＠蒼崎青子
+[%1][&:さん]が話してくれた[r]これまでの調査記録にはあまり出てこなかったけど、
+[k]
+
+＠蒼崎青子
+どんな人なのか、杉谷さんは知ってる？
+[k]
+
+[charaFace C 8]
+
+＠杉谷
+あ？
+[k]
+
+[charaFace A 27]
+
+＠蒼崎青子
+なに今の反応。ツチノコを見たような声だったけど。
+[k]
+
+[charaFace C 12]
+
+＠杉谷
+いや、悪い。[r]あんた、除霊士なのにねじり屋を知らなかったのか。
+[k]
+
+[messageOff]
+
+[charaTalk G,C]
+[subRenderFadein #B 0.5 0,0]
+[charaMove G 200,-50 20.0]
+[charaMove F -50,-280 20.0]
+
+[wt 0.7]
+
+＠G：杉谷
+この旅館に来たメンツで一番ヤバイのはアイツだぜ。[r][#千里念動呪殺:せ ん り ね ん ど う じ ゅ さ つ]流の開祖だ。
+[k]
+
+＠G：杉谷
+離れた場所にいる人間、壁の向こうにいる人間、[r]かまわず呪いをかけてこう、体をぎゅっとな。
+[k]
+
+[charaFace C 18]
+[charaFace A 15]
+
+＠G：杉谷
+呪われた人間は[#絞:しぼ]られた[#雑巾:ぞうきん]みたいになっちまう。[r]それでついた[#異名:いみょう]が[#螺子:ね　じ]り屋だ。
+[k]
+
+[messageOff]
+
+[charaTalk G,A]
+[subRenderFadeout #B 0.6]
+
+[wt 0.8]
+
+＠蒼崎青子
+なにそれ。密室殺人やりたい放題じゃない。[r]私を殺した犯人の候補にあがらなかったの？
+[k]
+
+[charaFace C 17]
+
+＠杉谷
+そりゃあんたの死因はたいてい頭部損壊だったからな。[r]ねじり屋の仕事じゃないとみんな思ったはずだ。
+[k]
+
+[charaFace C 15]
+
+＠杉谷
+ただ……そうだな。冷静に考えてみりゃ、[r]なんであんな物騒なのが除霊に来てるんだ？
+[k]
+
+[charaFace C 14]
+
+＠杉谷
+どっちかっていうと[#祓:はら]われる側の女だ。[r]この旅館に来る理由がない。
+[k]
+
+[charaFace A 0]
+
+＠蒼崎青子
+宿泊客たちには隠された理由があるはずだ、が[r][%1][&:さん]たちの推論だっけ。
+[k]
+
+＠蒼崎青子
+杉谷さんの理由は……[r]そっか、今日の秘湯にいたのはそういう事か。
+[k]
+
+
+[charaFace A 15]
+
+＠蒼崎青子
+……え？
+[k]
+
+[messageOff]
+[charaSpecialEffect A wipeTime 1 1.5]
+[wt 2.0]
+
+[charaFace C 2]
+
+＠杉谷
+みなまで言うな恥ずかしい。[r]そういうあんたたちこそなんでこんな山奥に来た。
+[k]
+
+[bgmStop BGM_EVENT_204 2.0]
+
+[charaFace C 0]
+
+＠杉谷
+秘湯なんてものに[#縋:すが]るタマじゃないだろ。[r]一番大きな隠し事をしているのはあんがい身近の[line 3]
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.5]
+[wt 1.0]
+
+[charaFace C 7]
+
+＠杉谷
+蒼崎？[wt 0.5][charaMove C 0,-50 0.5][r]おい。どうした蒼崎？　どこに行った？
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

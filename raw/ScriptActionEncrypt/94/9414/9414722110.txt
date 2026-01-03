@@ -1,0 +1,1225 @@
+
+
+
+
+
+＄94-14-72-21-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098336600 1 ティアマト]
+[charaSet B 1098253200 1 大統領]
+[charaSet C 1098253200 1 大統領（演出用）]
+[charaFilter C silhouette 00000080]
+[charaRollAxis C y 180 0]
+
+[charaSet D 1098331600 1 キレーちゃん]
+[charaSet E 1098336002 1 ジュネス]
+[charaSet F 1098336002 1 ジュネス（演出用）]
+[charaSet G 1098336002 1 ジュネス（演出用）]
+[charaSet H 1098333200 1 ミカ]
+
+[sceneSet O 258700 1]
+[sceneSet P 258700 1]
+[sceneSet Q 258700 1]
+[sceneSet R 258100 1]
+
+[sceneSet S 10000 1]
+[charaScale S 1.1]
+
+[imageSet T back10000 1 1]
+[charaScale T 1.01]
+[imageSet U back10000 1 1]
+[charaScale U 1.01]
+
+[charaSet X 98115000 1 エフェクト用]
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 153203]
+
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth X 3]
+[charaDepth Y 4]
+
+[charaPut X 1]
+[charaEffect X bit_talk_security_depth_gold]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[se ade373]
+[seVolume ade373 0 0]
+[wt 0.5]
+
+[seVolume ade373 1.0 0.2]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+＠ティアマト
+うんうん、よろしい！[r]それでは、改めまして。
+[k]
+
+[charaFaceFade A 4 0.2]
+
+＠ティアマト
+[line 3]よろしくね、[%1]！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[seStop ade373 0.3]
+
+[se ad562]
+[charaPut Y 1]
+[charaEffect Y bit_talk_switch_off]
+[wt 0.9]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaFadeout A 0]
+[charaPut Y 2000,2500]
+[charaEffectDestroy Y bit_talk_switch_off]
+[charaPut X 2000,2500]
+[charaEffectDestroy X bit_talk_security_depth_gold]
+
+[scene 258700]
+
+[subCameraOn 3]
+
+[charaLayer T sub #A]
+[charaLayer U sub #A]
+
+[subCameraFilter #A through]
+
+[subRenderDepth #A 4]
+
+[subRenderScale #A 1.01]
+
+[charaDepth T 2]
+[charaDepth U 3]
+
+[subRenderFadein #A 0 0,0]
+
+[charaFadein T 0 0,737]
+[charaFadein U 0 0,-737]
+
+[charaTalk off]
+[charaDepth B 2]
+[charaDepth O 3]
+[charaDepth C 4]
+
+[charaScale O 1.6]
+[charaScale C 1.6]
+
+[charaFace C 0]
+[charaFadein C 0.1 -250,-60]
+[charaFadein O 0.1 200,-500]
+
+[wt 1.1]
+
+[charaMove C -260,-60 5.0]
+[charaMove O 210,-500 5.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 2.0]
+
+[charaFace B 1]
+[charaFadein B 0.4 0,-50]
+[wt 0.5]
+
+[charaFadeout C 0.7]
+[charaFadeout O 0.7]
+[wt 0.7]
+
+[charaSet C 1098253200 1 大統領（演出用）]
+[sceneSet O 258700 1]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk B]
+
+[bgm BGM_WHITE_1 0.1]
+
+＠大統領
+…………。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠キレーちゃん
+再生が終わりました。もう一度、再生しますか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+いや、もうよい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠キレーちゃん
+承知いたしました。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.25]
+
+[se ad902]
+[wt 1.2]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.4 0,-50]
+[wt 0.8]
+
+＠ジュネス
+し、失礼します。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+ああ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+えっと……その。[r]大統領補佐官、ジュネス。参上いたしました。
+[k]
+
+[charaFace E 7]
+
+＠ジュネス
+遅くなって、ごめんなさい。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+それは構わない。[r]しばらく、[#アイツら:カ 　ル 　デ 　ア]を眺めていたからな。
+[k]
+
+[charaFace B 12]
+
+＠大統領
+どこのエリアでも、相変わらず騒々しい。[r]しかも、エリアを引っ掻き回す方向にな。
+[k]
+
+[charaFace B 23]
+
+＠大統領
+かと思えば、現在はレトロな……ええと、なんだっけ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠キレーちゃん
+1980年代シティポップ・レトロ・ロマンスです。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+そう、それ。[r]ティアマトのところでイチャついてる。
+[k]
+
+[charaFace B 9]
+
+＠大統領
+真剣に[#叛逆:はんぎゃく]してるのか、遊んでいるのか、[r]どうにも一言ではくくれないな、アレは。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+あの……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+ああ、オマエを呼んだ用件だな。[r]ひとつ頼みがあるのだが[line 3]
+[k]
+
+[charaFace B 27]
+
+＠大統領
+顔色が悪いぞ。[r]あの偽者の一件が堪えたか。
+[k]
+
+[charaFace B 13]
+
+＠大統領
+ならば、今はやめておく。[r]自室で休め。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+いえっ、大丈夫……です。
+[k]
+
+[charaFace E 6]
+
+＠ジュネス
+私は、あなたの補佐官ですし、[r]それに……た、頼まれた、ので。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+[FFFFFF]？[-]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 0,-50]
+[wt 0.8]
+
+[charaFace E 4]
+
+＠ジュネス
+『お友達を助けてあげて』と。[r]友達、を……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+そうか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+あの……。
+[k]
+
+[charaFace E 10]
+
+＠ジュネス
+『友達』なんて呼んじゃって、怒らないんですか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+うん？[r]そうだな……。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaDepth O 2]
+[charaDepth B 3]
+[charaDepth E 4]
+[charaDepth P 5]
+[charaDepth C 6]
+[charaDepth Q 7]
+[charaDepth F 8]
+
+[charaScale C 1.2]
+[charaScale P 1.2]
+
+[charaFace C 25]
+[charaFadein C 0.5 230,-50]
+[charaFadein P 0.5 -70,-270]
+[charaMove C 200,-50 0.5]
+[charaMove P -100,-270 0.5]
+[wt 0.5]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+＠大統領
+馴れ馴れしい。敬意が足りない。言い方が軽い。
+[k]
+
+[messageOff]
+[charaScale F 1.2]
+[charaScale Q 1.2]
+
+[charaFace F 12]
+[charaFadein F 0.5 -230,-50]
+[charaFadein Q 0.5 70,-270]
+[charaMove F -200,-50 0.5]
+[charaMove Q 100,-270 0.5]
+[wt 0.65]
+
+＠ジュネス
+う[charaShake F 0.02 3 3 0.3]うっ。
+[k]
+
+[messageOff]
+
+[charaFace C 6]
+[charaFadeTime F 0.5 0]
+[charaFadeTime Q 0.5 0]
+[wt 0.7]
+
+＠大統領
+だが、それを[#咎:とが]めだてはしない。[r]好きにすればいい。
+[k]
+
+[messageOff]
+[charaFace F 9]
+[charaFadeTime F 0.5 1.0]
+[charaFadeTime Q 0.5 1.0]
+[wt 0.5]
+
+[charaScale O 1.0]
+[charaFace B 13]
+[charaFadein B 0.1 0,-50]
+[charaFadein O 0.1 0,-200]
+
+[charaFadeout C 0.1]
+[charaFadeout P 0.1]
+[wt 0.15]
+
+＠ジュネス
+は……[wt 0.5][charaFace F 3]はいっ！
+[k]
+
+[messageOff]
+[bgmStop BGM_WHITE_1 1.5]
+
+[charaFadeout F 0.5]
+[charaFadeout Q 0.5]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk B]
+
+＠大統領
+では本題に入る。
+[k]
+
+[charaFace B 1]
+
+＠大統領
+ズバッと聞くぞ。[r]カルデアは、なぜ、あんなにも楽しそうなのだ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+カルデア……マッさんたちが……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_142 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+監視モニターで見る[#反乱分子:カ 　ル 　デ 　ア]は、[r]普通の島民よりも、ずっと楽しそうではないか。
+[k]
+
+[charaFace B 6]
+
+＠大統領
+オマエは直に接して、その目で見てきたのだろう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+ええ、ええ。それはもうしっかりと。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+戦闘で、わざわざ苦しく痛い思いをしている分だけ、[r]満足度は低くなるはずだ。理屈の上ではな。
+[k]
+
+[charaFace B 1]
+
+＠大統領
+なのに、リストバンドは、[&彼:彼女]らは満足だと伝える。[r]私が与えた夏ではないにもかかわらず、だ。
+[k]
+
+[charaFace B 12]
+
+＠大統領
+甘美な洗脳を拒み、[r]あがいて、もがいて、なにが楽しい？
+[k]
+
+＠大統領
+アイツらは、一体、[r]どんな夏を楽しんでいるというのだ？
+[k]
+
+[charaFace B 27]
+
+＠大統領
+アイツらにとって、私が与える[#これ]は、[r]夏ではないというのか？
+[k]
+
+＠大統領
+……私には、わからない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+大統領……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+
+
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+人類が作った、夏に関する音楽や映像、文献を見た。[r]そこで望まれている『夏のカタチ』を与えた。
+[k]
+
+＠大統領
+それなのに……。
+[k]
+
+[charaFace B 13]
+
+＠大統領
+…………。
+[k]
+
+[charaFace B 23]
+
+＠大統領
+補佐官。[r]夏とは、なんだろうな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+！？[r]えっと、それは。
+[k]
+
+[charaFace E 6]
+
+＠ジュネス
+大統領ご自身が夏なのだと、おっしゃったのでは？[r]なんでしたっけ、え、えれめんつ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+いかにも。
+[k]
+
+＠大統領
+私は、[#青夏:せいか][#遺分體:い ぶ ん た い]ファビュラスサマーマリー。[r]陽性の夏で民を刺激する、究極無敵の大統領。
+[k]
+
+[charaFace B 27]
+
+＠大統領
+そのはず、なのだが……。[r]『完璧な夏』というものについて、その……。
+[k]
+
+[bgmStop BGM_EVENT_142 1.5]
+
+[charaFaceFade B 33 0.2]
+
+＠大統領
+……自信が、揺らいできた。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+え。
+[k]
+
+[charaFace E 13]
+
+＠ジュネス
+え[messageShake 0.03 3 3 0.4]ええええええっ！？[r]じ、自信がっ、揺らぐ……？　大統領が？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+うむ。
+[k]
+
+[messageOff]
+
+
+[charaLayer F sub #B]
+[charaLayer P sub #B]
+
+[charaLayer G sub #C]
+[charaLayer Q sub #C]
+
+[subCameraFilter #B maskEdge cut359_mask05 5 0,0,0,255 0]
+[subCameraFilter #C maskEdge cut359_mask05 5 0,0,0,255 0]
+
+[subRenderDepth #B 1]
+[subRenderDepth #C 2]
+
+[subRenderScale #B 1.0]
+[subRenderScale #C 1.0]
+
+[charaDepth P 2]
+[charaDepth F 3]
+
+[charaScale P 1.2]
+[charaScale F 1.2]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0 0,295]
+[charaFadein P 0 0,50]
+
+[charaDepth Q 2]
+[charaDepth G 3]
+
+[charaScale Q 1.2]
+[charaScale G 1.2]
+
+[charaFace G 13]
+[charaFadein G 0 0,195]
+[charaFadein Q 0 0,-50]
+
+[bgm BGM_EVENT_7 0.1]
+
+[subRenderFadeinFSSideR #B 0.4 350,-300]
+[charaMoveEase F 0,245 0.4 easeOutCubic]
+[charaMoveEase P 0,0 0.4 easeOutCubic]
+[wt 0.5]
+
+＠F：ジュネス
+[#傲岸不遜:ご う が ん ふ そ ん]で、人の心が無くて、押しつけがましくて、[r]自分が正義・中心・一番エライと確信してて！
+[k]
+
+[charaTalk B]
+[charaFace B 34]
+
+＠大統領
+…………。
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.4]
+[charaMoveEase F 0,195 0.4 easeOutCubic]
+[charaMoveEase P 0,-50 0.4 easeOutCubic]
+[wt 0.5]
+
+[charaTalk G]
+[charaFace G 13]
+[subRenderFadeinFSSideL #C 0.4 -350,-300]
+[charaMoveEase G 0,245 0.4 easeOutCubic]
+[charaMoveEase Q 0,0 0.4 easeOutCubic]
+[wt 0.4]
+
+
+[wt 0.1]
+
+＠G：ジュネス
+ぐいぐい引っ張ってくれるスパダリ♡しゅき♡なんて[r]つきあい始めたら、単に人の話を聞かないってだけの！
+[k]
+
+[charaFace B 25]
+[charaFace G 11]
+
+＠G：ジュネス
+あの！　大統領が！？
+[k]
+
+[messageOff]
+[subRenderFadeout #C 0.4]
+[charaMoveEase G 0,295 0.4 easeOutCubic]
+[charaMoveEase Q 0,50 0.4 easeOutCubic]
+[wt 0.4]
+
+[charaFadeout F 0]
+[charaFadeout G 0]
+[charaFadeout P 0]
+[charaFadeout Q 0]
+
+[charaLayer F normal]
+[charaLayer G normal]
+[charaLayer P normal]
+[charaLayer Q normal]
+[charaScale F 1.0]
+[charaScale G 1.0]
+[charaScale P 1.0]
+[charaScale Q 1.0]
+[wt 0.1]
+
+[se ade160]
+[wt 0.05]
+[charaTalk B]
+[charaFace B 25]
+[charaMoveReturn B 0,-57 0.2]
+[wt 0.9]
+
+＠大統領
+よーし、キレーちゃん。ギロチンの準備を。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+ん[messageShake 0.04 3 3 0.9]ぎゃー！？[r]ごめんなさいごめんなさいごめんなさいっ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+謝ればよろしい。[r]しかし、それにしても……ふーむ。なるほど。
+[k]
+
+[charaFace B 4]
+
+＠大統領
+謙虚でしおらしくて忠実な右腕キャラと見せかけて、[r]内心は好き放題言う系か、この雛鶴は。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+恐縮です……私も思春期でして、[r]十代には罪も悪気もないんです……うっかり屋さん♡
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+ふん、まあよい。[r]ともかく、少し夏がわからなくなったのは事実だ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+……大統領は、マッさんたちがどう感じているか、[r]それを知りたいんですか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_SHINYAMA_1 0.1]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+アイツらだけではないがな。[r]今、島にいる全員の、本当の気持ちを知りたい。
+[k]
+
+[charaFaceFade B 27 0.2]
+
+＠大統領
+ひとりひとりの表情が、反応が、求める夏のカタチ。[r]それを、知りたい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+…………
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth O 2]
+[charaDepth E 3]
+[charaDepth B 3]
+[charaDepth P 4]
+[charaDepth C 5]
+[charaDepth Q 6]
+[charaDepth F 7]
+
+[charaScale C 1.2]
+[charaScale P 1.2]
+
+[charaFace C 27]
+[charaFadein C 0.7 220,-50]
+[charaFadein P 0.7 -60,-270]
+[charaMove C 170,-50 45.0]
+[charaMove P -110,-270 45.0]
+[wt 0.7]
+
+[charaFadeout E 0.1]
+[wt 0.2]
+
+＠大統領
+前は、個々の違いなんてどうでもよかった。[r]洗脳すれば、全員同じだ。
+[k]
+
+[charaFaceFade C 33 0.2]
+
+＠大統領
+だが、なぜだろうな。[r]そんな夏は、ひどく……空虚に思えてきた。
+[k]
+
+[messageOff]
+
+[charaScale F 1.2]
+[charaScale Q 1.2]
+
+[charaFace F 7]
+[charaFadein F 0.7 -220,-50]
+[charaFadein Q 0.7 60,-270]
+[charaMove F -170,-50 45.0]
+[charaMove Q 110,-270 45.0]
+[wt 0.9]
+
+＠ジュネス
+大統領……。
+[k]
+
+[messageOff]
+[charaFace C 33]
+[charaFadeTime F 0.5 0]
+[charaFadeTime Q 0.5 0]
+[wt 0.7]
+
+＠大統領
+だが、それでも。[r]私の心は夏を欲してしまう。
+[k]
+
+[charaFaceFade C 31 0.3]
+
+＠大統領
+島を夏で満たしているのに、[r]尽きせぬ渇望が、私を灼き焦がしている。
+[k]
+
+[messageOff]
+
+[charaFace F 6]
+[charaFadeTime F 0.5 1.0]
+[charaFadeTime Q 0.5 1.0]
+[wt 0.5]
+
+[charaFace B 31]
+[charaFadein B 0.1 0,-50]
+
+[charaFadeout C 0.1]
+[charaFadeout P 0.1]
+[wt 0.2]
+
+＠ジュネス
+…………。
+[k]
+
+[messageOff]
+[charaFadeout F 0.6]
+[charaFadeout Q 0.6]
+[wt 0.6]
+
+[charaSet C 1098253200 1 大統領（演出用）]
+[charaSet F 1098336002 1 ジュネス（演出用）]
+[sceneSet O 258700 1]
+[sceneSet P 258700 1]
+[wt 0.35]
+
+[charaTalk off]
+[charaTalk B]
+
+＠大統領
+ジュネス。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+はい、大統領。
+[k]
+
+[charaFace E 6]
+
+＠ジュネス
+……？
+[k]
+
+[charaFace E 13]
+
+＠ジュネス
+……！？[wt 0.4][messageShake 0.04 3 3 0.3][r]ひゃあ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 29]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+わ[charaShake B 0.02 2 2 0.25]あっ！[r]急になに！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+い、今、『ジュネス』って……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+それがオマエの名前だろうに。[wt 0.8][charaFace B 16][r]『補佐官』よりも言いやすい気がした。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+はぁ、それは、そうかも、ですが！[r]なんでいきなり、名前呼びなんて……。
+[k]
+
+[charaFace E 8]
+
+＠ジュネス
+嬉しい、ですけど。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+ともかく！
+[k]
+
+[bgmStop BGM_SHINYAMA_1 1.5]
+
+[charaFace B 14]
+
+＠大統領
+ジュネス！[r]オマエが知っている『夏』を、私に教えろ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+！！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth S 3]
+[charaDepth B 4]
+[charaDepth R 5]
+[charaDepth H 6]
+
+[charaFace B 14]
+[charaFadein B 0.1 0,-50]
+[wt 0.35]
+
+[cueSe SE_22 22_ad1177]
+[wt 0.15]
+
+[charaPut H 0,-50]
+[charaPut S 0,-50]
+[charaPut R 0,-200]
+[charaFace H 17]
+[charaFadeTime H 0.8 0.6]
+[charaFadeTime R 0.8 0.6]
+[charaFadeTime B 0.8 0.5]
+[charaFadeTime S 0.8 0.5]
+[wt 1.5]
+
+＠ミカ
+ジュネス様。あなたの素敵な『夏』を、[r]わたくしに教えていただけませんか？
+[k]
+
+[messageOff]
+[charaFadeTime B 0.7 1.0]
+[charaFadeout H 0.7]
+[charaFadeout R 0.7]
+[charaFadeout S 0.7]
+[wt 1.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_DRAGONCASTLE_1 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+あ……。
+[k]
+
+[charaFace E 7]
+
+＠ジュネス
+[#あなた:ミ　　カ]は、もしかして。[r]だから、[#あなた:大　統　領]は……？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+……なにを言っている？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+いえっ、なんでもありません。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+まずは、オマエからだ。[r]ひとつひとつ、夏を知っていくぞ。
+[k]
+
+＠大統領
+そして本当の夏、楽しい夏を見つけた時、[r]きっと、私の渇望は癒やされるのだ。
+[k]
+
+[charaFace B 0]
+
+＠大統領
+だから、ジュネス。[r]色々聞かせてくれ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 0,-50]
+
+＠ジュネス
+はいっ、喜んで！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_DRAGONCASTLE_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,625 @@
+
+＄94-09-44-03-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098292100 1 アクアマリー]
+[charaSet B 1098257910 1 マシュ]
+[charaSet C 1098158340 1 ネモ]
+[charaSet D 1098292100 1 演出用_アクアマリー]
+[charaSet E 1098292100 1 演出用_アクアマリー2]
+[charaSet F 1098257910 1 演出用_マシュ]
+
+[sceneSet Q 185100 1]
+[sceneSet R 126500 1]
+[sceneSet S 126500 1]
+[sceneSet T 126500 1]
+
+[charaSet W 98115000 1 エフェクト用]
+[charaSet X 98115000 1 エフェクト用]
+
+[sceneSet Y 10000 1]
+[charaScale Y 1.05]
+
+[subCameraOn 2]
+[charaLayer D sub #A]
+[charaLayer Q sub #A]
+[charaLayer F sub #B]
+[charaLayer S sub #B]
+
+[charaDepth Q 1]
+[charaDepth D 2]
+[charaDepth S 1]
+[charaDepth F 2]
+
+[charaScale D 1.2]
+[charaScale Q 1.2]
+
+[charaScale F 1.3]
+[charaScale S 1.3]
+
+[charaFace D 10]
+[charaFadein D 0.1 0,220]
+[charaFadein Q 0.1 0,-100]
+
+[charaFace F 5]
+[charaFadein F 0.1 460,230]
+[charaFadein S 0.1 200,100]
+
+[subCameraFilter #A maskEdge cut359_mask06 4 255,255,255,255 0]
+[subCameraFilter #B maskEdge cut359_mask11 4 0,0,0,255 0]
+[subRenderScale #A 1.01]
+
+
+[scene 185100]
+
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[shake 0.03 3 3 1.0]
+[cueSe SE_23 23_ade890]
+[seVolume 23_ade890 0 0]
+
+[fadein black 1.0]
+[cueSe Servants_9944510 m93119]
+[seVolume 23_ade890 1.0 0.5]
+[wait fade]
+
+[wt 0.4]
+
+[bgm BGM_BATTLE_185 0.1]
+
+[seVolume 23_ade890 0.5 0.2]
+[blur lens 0.5 2 20]
+
+[charaTalk off]
+[subRenderFadein #A 0.3 -100,-330]
+[subRenderMove #A 0,-330 0.3]
+[wt 0.4]
+
+[cueSe Servants_104700 m41906]
+[cueSeStop m41906 0.6]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[charaShake D 0.02 1 1 0.4]
+[wt 0.6]
+
+[cueSe Servants_104700 m41906]
+[cueSeStop m41906 0.8]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[charaShake D 0.02 2 2 0.6]
+[wt 0.8]
+
+＠アクアマリー
+こんな[line 3]こんな、結果[line 3]！
+[k]
+
+＠アクアマリー
+崩れる……！[r]我がマニフェストが、心象空間と共に[#瓦解:がかい]する……！
+[k]
+
+＠アクアマリー
+貴様ら、いったいどれだけのバッヂを集めた！？[r][#程々:ほどほど]にしておく謙虚さは無かったのか！？
+[k]
+
+＠アクアマリー
+[#にっくき敵に塩を送る]！[r]これこそ公正さの証明であると考えたが[line 3]
+[k]
+
+＠アクアマリー
+もしや、送る[#援助:バッヂ]の桁を間違え[line 3][cueSe Servants_104700 m41906][cueSeStop m41906 0.8][flashin once 0.1 0.2 FFFFFFAF FFFFFF00][charaShake D 0.02 2 2 0.6][wt 0.1][charaFace D 28][wt 0.4][r]くう、あぁあああああ！！！！
+[k]
+
+[messageOff]
+
+[shake 0.03 3 3 2.0]
+
+[fadeout white 2.0]
+[bgmStop BGM_BATTLE_185 2.0]
+[seStop 23_ade890 2.0]
+[se ad743]
+[se ad836]
+[se ad153]
+[seVolume ad153 0 0]
+[seVolume ad153 2.0 1.0]
+[wait fade]
+
+[blurOff]
+
+[subRenderFadeout #A 0.1]
+
+[charaFadeout D 0.1]
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[charaLayer Q normal]
+
+[charaScale D 1.0]
+[charaScale Q 1.0]
+
+[seStop ad153 2.0]
+[wt 3.0]
+
+[cameraMove 0.1 0,0 1.08]
+[wt 0.1]
+
+[scene 126500]
+
+[cameraMove 5.0 0,0 1.01]
+
+[fadein white 3.0]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 3.0 0.6]
+[wait fade]
+
+[wt 1.0]
+[seStop ad556 1.5]
+[wt 2.0]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……状況、白紙化地球に戻りました。[r]敵[#遺分體:エ レ メ ン ツ]の反応、消滅を確認……[wt 0.6][charaFace B 20]あれ？
+[k]
+
+＠マシュ
+消滅、していませんか？
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[charaDepth B 1]
+[charaDepth T 2]
+[charaDepth E 3]
+
+[charaScale T 1.3]
+[charaScale E 1.3]
+
+[charaFadein T 0.6 -70,-300]
+[charaMove T 0,-300 1.6]
+[wt 2.4]
+
+[charaFadeout B 0.1]
+
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[se ad984]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+[wt 0.6]
+
+[bgm BGM_EVENT_71 0.1]
+
+＠アクアマリー
+いない。地球大統領は[#完全燃焼:かんぜんねんしょう]でないかぎり、[r]ラストチャンスで３分間だけ活動できる。
+[k]
+
+？1：……あと３分間だけ……
+
+[charaFace A 23]
+[charaFace E 23]
+
+＠アクアマリー
+そう、それだけ。[r]すぐに消滅する。
+[k]
+
+＠アクアマリー
+『倒してすまない』『勝っちゃってゴメン』[r]そんな発言をしようものなら道連れにしていたがな。
+[k]
+
+？2：やっぱり３分間だけなんだ……
+
+[charaFace A 13]
+[charaFace E 13]
+
+＠アクアマリー
+そう、そうとも。[r]地球上で活動する時間は３分間がいい。
+[k]
+
+＠アクアマリー
+それは平常時でも変わらない美学よ。[r]Ｕたるもの、何事も３分間で解決すべし、みたいな。
+[k]
+
+？！
+
+[messageOff]
+
+[charaFadeout T 0.6]
+[charaFadeout E 0.6]
+[wt 0.8]
+
+[charaScale T 1.0]
+[charaScale E 1.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+
+＠アクアマリー
+まあいい。[r]雑談に使うために姿を現したのではない。
+[k]
+
+＠アクアマリー
+私は『楽』の[#遺分體:エ レ メ ン ツ]だ。[r]勝者には敬意を示す。故に忠告をしておく。
+[k]
+
+＠アクアマリー
+貴様たちは私たちをＵ－オルガマリーの[#破片:パーツ]、[r]それぞれ分割した劣化品だと考えているようだが、
+[k]
+
+＠アクアマリー
+私たちはみな同格であり同じ存在だ。[r]別に、
+[k]
+
+＠アクアマリー
+『頭部パーツ』→フレアマリー[r]『両腕パーツ』→アクアマリー　[FFD14C][f small center]←new！[f -][-]
+[k]
+
+＠アクアマリー
+『胴体パーツ』→？？？マリー[r]『両脚パーツ』→？？？マリー
+[k]
+
+＠アクアマリー
+という断片ではない。カタチにおいては[r]『Ｕ－オルガマリー』の複写と言っていい。
+[k]
+
+[charaFace A 13]
+
+＠アクアマリー
+『では何が、どのあたりが違うのか？』[r]『フレアマリーよりアクアマリーの方が強かった！』
+[k]
+
+＠アクアマリー
+という顔だな。
+[k]
+
+[charaFace A 6]
+
+＠アクアマリー
+その顔に免じて伝えてやる。[r]私たちを差別化したものは『感情』だ。
+[k]
+
+＠アクアマリー
+オルガマリー・アニムスフィアが[r]その人生において経験・獲得した[#喜怒哀楽:き ど あ い ら く]の感情。
+[k]
+
+＠アクアマリー
+『哀』であったフレアマリーは、[r]彼女が哀しい時の記録で構成されている。
+[k]
+
+＠アクアマリー
+『楽』である私は[r]彼女が平常状態だった時の記録で構成されている。
+[k]
+
+[charaFace A 23]
+
+＠アクアマリー
+言ってみれば、『楽』である私は貴様たちの知る[r]Ｕ－オルガマリーにもっとも近い性質だっただろう。
+[k]
+
+＠アクアマリー
+まあ、そのあたりはどうでもいいが。
+[k]
+
+[charaFace A 6]
+
+＠アクアマリー
+大事なのは、それぞれの[#遺分體:エ レ メ ン ツ]では[r]持ち得る知識が違う、という事だ。
+[k]
+
+＠アクアマリー
+考えてみろ。[r]『楽』な状態である時、貴様たちは何をしている？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+楽……リラックスしている時、ですね？[r]読書をしていたり、トレーニングをしていたり……
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_71 2.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+？1：休暇中ののんびり時間
+？2：[#凪:なぎ]の心で素材集めとか……？
+
+？！
+
+[bgm BGM_EVENT_146 0.1]
+
+[charaFace A 15]
+
+＠アクアマリー
+そう。大した事はしていない、という事だ。[r]なので私も大した事は知らない、という事になるな！
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+[wt 1.4]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+？1：た、たしかに[line 3]！
+？2：大事な３分間をそんな事実のために！？
+
+？！
+
+[bgmStop BGM_EVENT_146 1.5]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 13]
+
+＠アクアマリー
+事実を隠しても仕方があるまい。[r]問題はここからだ。
+[k]
+
+[messageOff]
+[wt 0.8]
+[charaFaceFade A 27 0.2]
+[wt 0.2]
+[bgm BGM_EVENT_161 0.1]
+
+＠アクアマリー
+おそらく、ダ・ヴィンチが知りたがっている[r]カルデアスの情報は『哀』か『喜』が持っている。
+[k]
+
+＠アクアマリー
+だが『哀』は貴様たちの手で既に解放済みだ。[r]もう、これ以上哀しむ事はない。
+[k]
+
+＠アクアマリー
+もう一体の[#遺分體:エ レ メ ン ツ]である『喜』だが……[r]できればこの[#遺分體:エ レ メ ン ツ]とは戦うな。
+[k]
+
+[charaFaceFade A 31 0.2]
+
+＠アクアマリー
+[line 3]我が事ながら、ヤツは怖ろしい怪物だ。[r]他の[#遺分體:わ   た   し]もヤツとは関わりたくないだろう。
+[k]
+
+[charaFaceFade A 27 0.2]
+
+＠アクアマリー
+貴様たちがまだ[#遺分體:わ た し た ち]と優劣を競いたいというのなら、[r]『怒』の[#遺分體:エ レ メ ン ツ]を探せ。
+[k]
+
+＠アクアマリー
+怒りは憎しみから生じるもの。[r]その点において、ヤツは余分のない『[#宇宙人:エ イ リ ア ン]』だ。
+[k]
+
+＠アクアマリー
+私と違い、この[#惑星:ほ  し]への思い入れはない。[r]……だからこそ戦う必要がある。
+[k]
+
+＠アクアマリー
+貴様たちがヤツと対峙した時、一つの大きな謎[line 3][r]ある一つの間違いが解明されるはずだ。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_161 1.0]
+[wt 1.0]
+
+
+[charaLayer R sub #A]
+[charaLayer X sub #A]
+
+[charaDepth R 1]
+[charaDepth D 2]
+[charaDepth X 3]
+
+[subCameraFilter #A mask cut359_mask21]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[subRenderScale #A 1.3]
+
+[charaPut X 0,300]
+[charaEffect X bit_talk_36_sl02_explosion]
+[charaFace D 0]
+[charaFadein D 0.1 0,330]
+[charaFadein R 0.1 0,160]
+
+[subRenderScale #B 1.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth Y 1]
+[charaDepth A 2]
+[charaDepth W 3]
+
+[charaPut W 1]
+
+[charaEffect W bit_talk_36_sl02_explosion]
+[cueSe SE_22 22_ad1179]
+[seVolume 22_ad1179 0 0]
+[seVolume 22_ad1179 1.5 0.4]
+[wt 2.5]
+
+[subRenderFadein #A 0.6 -20,-530]
+[subRenderMove #A 0,-530 0.6]
+[wt 1.0]
+
+＠アクアマリー
+よし！　以上が私の知る全てだ！[r]演説[#清聴:せいちょう]、感謝しよう！
+[k]
+
+＠アクアマリー
+まさかの敗北は胃が燃えるように悔しいが、[r]本当に[line 3]
+[k]
+
+[bgm BGM_EVENT_78 0.1]
+
+＠アクアマリー
+いい戦いだったぞ、マシュ、[%1]！[r]それでこそ、[#私]の見たカルデアだ！
+[k]
+
+[messageOff]
+
+[subRenderFadeinFSSideR #B 0.3 -250,-220]
+[subRenderMoveFSSideR #B -220,-250 0.3]
+[wt 1.5]
+
+[subRenderMoveFSSideR #B -200,-280 0.3]
+[subRenderFadeout #B 0.3]
+[wt 0.3]
+
+[charaFace A 0]
+
+＠アクアマリー
+私は大統領の星に還る！[r]もし次があるのなら、その時は私が勝つ運命だな！
+[k]
+
+[messageOff]
+
+[subRenderFadeout #A 0.6]
+[wt 0.6]
+
+[charaEffectDestroy X bit_talk_36_sl02_explosion]
+[charaFadeout D 0.1]
+[charaFadeout R 0.1]
+[charaFadeout F 0.1]
+[charaFadeout S 0.1]
+[wt 0.2]
+
+[charaScale F 1.0]
+
+[charaLayer D normal]
+[charaLayer R normal]
+[charaLayer F normal]
+[charaLayer S normal]
+
+[subCameraOff]
+
+[charaEffectStop W bit_talk_36_sl02_explosion]
+[seStop 22_ad1179 0.1]
+[cueSe SE_24 24_ade1015]
+
+[wt 1.2]
+[flashin once 0.2 0.2 FFFFFFFF FFFFFF50]
+[wt 0.2]
+[charaFadeTime Y 0.2 0.3]
+[charaFadeout A 0.1]
+[wt 2.0]
+[charaFadeout Y 0.5]
+
+[bgmStop BGM_EVENT_78 3.0]
+[wt 6.0]
+
+？1：……そっか
+？2：……楽しかった時の、記憶なんだ[line 3]
+
+？！
+
+[bgm BGM_EVENT_116 0.1]
+
+
+[charaTalk on]
+[charaTalk dpthOn]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……はい。ミクトランで一緒に過ごした、[r]オルガマリーさんと同じ笑顔でした。
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut W 1]
+[charaEffect W bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ネモ
+こちらストーム・ボーダー。[r]応答せよ、[%1]。
+[k]
+
+[charaFace C 2]
+
+＠ネモ
+大統領特異点の消滅を確認した。[r]キミたちの位置も確認した。
+[k]
+
+＠ネモ
+その場に待機していてくれ。[r]すぐに迎えに行く。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut W 2500,2500]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ストーム・ボーダーが来てくれるようですね。[r]いかがしますか、先輩？
+[k]
+
+？1：もちろん[line 3]
+
+？！
+
+[messageOff]
+
+？1：ゆっくり休んで、次の大統領戦に備えよう！
+
+？！
+
+[charaFace B 9]
+[wt 2.5]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_116 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

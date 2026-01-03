@@ -1,0 +1,541 @@
+
+
+＄03-00-13-16-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257910 1 マシュ]
+[charaSet B 1098255300 1 ニトクリス]
+[charaSet C 1098257300 1 ダ・ヴィンチ]
+[charaSet D 1098252410 1 ククルカン]
+[charaSet E 1098252900 1 テペウ]
+[charaSet F 1098255200 1 ハベトロット]
+[charaSet G 1098257900 1 マシュ_バイザー]
+[charaSet I 1098252700 1 無知性ディノス]
+[charaScale I 1.05]
+
+[charaDepth G 2]
+[charaDepth A 1]
+
+[sceneSet H 169101 1]
+
+[scene 169101]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.4]
+
+[effect bit_talk_14]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.2 0,8]
+[charaMoveScale I 1.0 0.4]
+[charaMove I 0,0 0.4]
+
+[wt 0.1]
+[se ad32]
+[cueSe Servants_800101 bac691]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[shake 0.03 3 3 0.4]
+[wt 0.8]
+[cueSe SE_22 22_ad1207]
+[wt 1.0]
+[cueSe SE_22 22_ad1208]
+[seStop 22_ad1208 2.0]
+[wt 0.5]
+[charaFadeout I 0.4]
+
+[bgmStop BGM_EVENT_80 2.5]
+[wt 1.8]
+
+[charaTalk off]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+[wt 0.1]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+[charaFadeout G 0.4]
+[wt 0.3]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 1.0]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+
+＠マシュ
+戦闘、無事終了しました。[r]無知性ディノス、離脱していきます。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ニトクリス
+そら見なさい、簡易召喚のいい確認に[r]なったではないですか！
+[k]
+
+＠ニトクリス
+私の狙い通りです！[r]なかなかの戦果でしたね、[%1]！
+[k]
+
+？1：Yes。ファラオ様の言う通り
+？2：でも、令呪そのものはまだ使えない……
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+うん。マスターである証、[r]召喚を行う機能は戻ってきたけど、
+[k]
+
+＠ダ・ヴィンチ
+令呪を発動させる機能そのものは[r]まだ戻っていないようだ。
+[k]
+
+[charaFace C 23]
+
+＠ダ・ヴィンチ
+今の[%1][&君:ちゃん]はサーヴァントを[r]召喚できるものの、令呪による強化は行えない。
+[k]
+
+＠ダ・ヴィンチ
+マスターとして不完全な状態……[r]仮マスター、あるいは[#召喚術士:サ　モ　ナ　ー]、といったところだ。
+[k]
+
+[charaFace C 34]
+
+＠ダ・ヴィンチ
+なぜそんな状態になってしまったのかは、[r]第一冥界の時の記録に目を通したけど……
+[k]
+
+＠ダ・ヴィンチ
+『よく分からない場所で、よく分からない相手と[r]　取引して、生き返った』だっけ？
+[k]
+
+[charaFace C 9]
+
+＠ダ・ヴィンチ
+その話が本当なら、ミクトランにいる間は[r]ずっとその状態なのかもしれない。
+[k]
+
+＠ダ・ヴィンチ
+あるいは、
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠ククルカン
+[%1]さんと取引した『誰か』を[r]こらしめるか、ですね。
+[k]
+
+＠ククルカン
+カマソッソが令呪を所有していたのなら、[r]彼が『その誰か』であるのが道理ですが……
+[k]
+
+[branchRouteSelect lblSel01a 3001314 1000]
+[branchNotRouteSelect lblSel01b 3001314 1000]
+
+[k]
+
+[label lblSel01a]
+
+？1：取引したのはカマソッソじゃない
+？2：……たぶん、メヒコにいたテスカトリポカ
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠テペウ
+カマソッソが言っていましたね。[r]テスカトリポカと取引をした、と。
+[k]
+
+＠テペウ
+そうなると、[%1]が出会った[r]『よく覚えていない誰か』はテスカトリポカです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ククルカン
+やっぱりあのサングラス野郎？[r]よしよし。痛めつけていい理由が増えましたねぇ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+[branch lblSel01conf]
+
+[label lblSel01b]
+
+？1：取引したのはカマソッソじゃないと思う
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠テペウ
+取引をした場所、相手は思い出せないものの、[r]『カマソッソでは無い』という確信はあるのですね。
+[k]
+
+＠テペウ
+そうなると、カマソッソはその『誰か』から[r][%1]の令呪を買い取ったかもですね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+？2：カマソッソも取引したのでは？
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠ニトクリス
+あの騒がしい[#蝙蝠:こうもり]男にそのような判断が[r]できるとは思えませんが……
+[k]
+
+[charaFace B 0]
+
+＠ニトクリス
+実際に『冥界の番人』に令呪を一画ずつ[r]預けていたのなら、そうなのでしょう。
+[k]
+
+[charaFace B 9]
+
+？！
+
+[label lblSel01conf]
+
+＠ニトクリス
+しかし……先ほどの無知性ディノス、[r]数が多くありませんでしたか？
+[k]
+
+＠ニトクリス
+第七層には無知性ディノスたちの巣がある……とか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠テペウ
+いえ、第七層は知性を無くしたディノスにとって[r]過ごしやすい、というだけです。
+[k]
+
+＠テペウ
+通常のディノスやオセロトルには厳しい環境ですね。[r]一歩間違えると死に至る。
+[k]
+
+＠テペウ
+ひとつ隣の第八層が[r]死神カマソッソの巣である、というのもありますが、
+[k]
+
+＠テペウ
+第八層から第九層には有毒ガスだけでなく、[r]生物に有害な宇宙線が充満しています。
+[k]
+
+＠テペウ
+まさに死の世界。[r]生命が立ち入れる場所ではないのです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+ああ、それで……ボーダーの偵察ドローンも[r]第八層に入ると誤作動で、機能停止していたんだね。
+[k]
+
+[charaFace C 34]
+
+＠ダ・ヴィンチ
+となると、やっぱり空想樹があるのは最下層かぁ……。[r]そこ以外にないもんなぁ……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.7 50,0]
+[charaMove F 0,0 0.7]
+[se ad527 0.5]
+[seStop ad527 1.4]
+[wt 0.7]
+[charaMove F 0,-10 0.7]
+[wt 0.7]
+[se ade505]
+[wt 0.8]
+[charaMove F 0,0 0.7]
+[se ade24]
+[wt 0.7]
+[seStop ade24 2.0]
+
+＠ハベトロット
+よっと。たき火はこんなもんか。[r]お喋りはそこまでにして、キャンプの準備しようぜ。
+[k]
+
+＠ハベトロット
+持ってきたテントは二つ。一つはマシュとダ・ヴィンチ、[r]もう一つは[%1]。
+[k]
+
+＠ハベトロット
+三人は生身なんだから、[r]ちゃんとした寝床を用意しないとね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠テペウ
+言うまでもなく、私はマイ寝草で休眠します。[r]大地の硬さがたまりません。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ククルカン
+私も生身なのですが……[r]サーヴァントの皆さんは霊体化とかずるいデース……
+[k]
+
+[masterBranch lblmst01a lblmst01b]
+[label lblmst01a]
+[charaSet E 1098252940 1 テペウ]
+
+？1：それならオレのテントに来ます？
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠マシュ
+！　そ、そうですね。
+[k]
+
+＠マシュ
+ククルカンさんは、ストーム・ボーダーを[r]攻撃した事実を明かしてくださいました。
+[k]
+
+＠マシュ
+信頼しあう仲間として、テントの左スペースを[r]提供するのは当然です。はい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠ククルカン
+あー……はは。[r]いい、いえ、私もテペウと同じ、大地で寝ます。
+[k]
+
+[charaFace D 15]
+
+＠ククルカン
+まだ１年たらずの私ですが、ほら、密室で[r]ふたりきりというのは刺激が強すぎるので……
+[k]
+
+＠ククルカン
+自制ができなくなったら、[r]それこそミクトランの終わりデース……
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+[label lblmst01b]
+[charaSet E 1098252940 1 テペウ]
+
+[charaFace D 11]
+
+＠ククルカン
+あ、[#閃:ひらめ]いた！　マシュさんとダ・ヴィンチさんが[r]同じテントなんですよね？
+[k]
+
+[charaFace D 2]
+
+＠ククルカン
+なら、[%1]さんのテントは[r]空いているはず！　お邪魔させてくださーい！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 29]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はわ！？　い、いえ、それでしたら[r]わたしのテントをお使いください！
+[k]
+
+＠マシュ
+寝袋を使って、たき火の前で休みますので！
+[k]
+
+？1：いや、それならわたしが寝袋で休む
+？2：マシュがこっちのテントに、自分がそっちに行くのは？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+＠ククルカン
+んー？　それだとちょっと[#淋:さみ]しいですね？
+[k]
+
+[charaFace D 2]
+
+＠ククルカン
+どうせならみんなでテントを使いましょう！[r]ぎゅうぎゅうな空間で濃密なトークがしたいです、私！
+[k]
+
+＠ククルカン
+カルデアや『異星の神』の話もいいですが、[r]それ以外の汎人類史の話を聞かせてください！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠マシュ
+そ、そういう事でしたか……[r]とてもいい提案かと。
+[k]
+
+[charaFace A 9]
+
+＠マシュ
+わたしも日常生活は知識でしか知らないので、[r]先輩の独壇場ですね。
+[k]
+
+＠マシュ
+ぜひ、日本の都市部のエピソードを聞かせてください。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+なになに、女子会？　テントパーティー？[r]なら私も参加する～！　テントくっつけちゃおう！
+[k]
+
+[charaFace C 5]
+
+＠ダ・ヴィンチ
+もちろんニトクリスもハベトロットもね！[r]夜更かしは推奨できないけど、華やかな話を沢山しよう！
+[k]
+
+[messageOff]
+[charaFadeout C 0.7]
+
+[charaScale E 1.2]
+[charaScale H 1.4]
+
+[charaDepth H 1]
+[charaDepth E 2]
+
+[bgmStop BGM_EVENT_77 2.0]
+[charaFadein H 0.7 100,-250]
+[charaMove H 150,-250 1.0]
+[wt 1.4]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.4 -100,-30]
+[wt 1.0]
+
+＠テペウ
+[line 3]解せぬ。
+[k]
+
+[messageOff]
+[wt 0.7]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

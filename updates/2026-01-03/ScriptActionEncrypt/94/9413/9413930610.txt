@@ -1,0 +1,824 @@
+
+＄94-13-93-06-1-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1062001 1 黒姫]
+[charaSet B 1098314200 1 おみぃさん]
+
+[charaSet C 1062001 1 黒姫_演出用]
+[charaSet D 1062001 1 黒姫_演出用]
+
+[sceneSet L 239100 1]
+[sceneSet M 239100 1]
+[sceneSet N 239301 1]
+[sceneSet O 239301 1]
+
+[imageSet P cut644_comb 1]
+
+[imageSet V black_fade_re 1]
+
+[sceneSet Y 10000 1]
+[charaScale Y 1.05]
+
+[charaSet Z 98115000 1 ？？？]
+
+[scene 10000]
+[pictureFrame cut063_cinema]
+
+[charaTalk depthOff]
+[charaDepth L 0]
+[charaScale L 1.2]
+[charaPut L 0,-240]
+[charaFadeTime L 0.1 0.2]
+
+[subCameraOn 2]
+
+[charaLayer A sub #A]
+[charaLayer M sub #A]
+
+[charaLayer V sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask07 20 0,0,0,255 1]
+[subCameraFilter #B through]
+
+[subRenderDepth #A 4]
+[subRenderDepth #B 2]
+
+[charaDepth A 6]
+[charaDepth M 5]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,270]
+[charaFadein M 0.1 -200,0]
+
+[charaScale V 1.4]
+[charaFadein V 0.1 0,-200]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_MAP_129 0.1]
+[wt 0.5]
+
+[subRenderScale #A 1.15]
+[subRenderFadeinFSR #A 0.4 200,-360]
+[subRenderFadeinFSR #B 0.4 400,0]
+[wt 0.4]
+
+＠黒姫
+陛下。[r]少しよろしいでしょうか。
+[k]
+
+
+＠？？？
+どうした。
+[k]
+
+＠黒姫
+[#捕食竜:アルナワーズ]がいつになく[#昂:たかぶ]っているような[r]気配があります。
+[k]
+
+[charaFace A 7]
+
+＠黒姫
+慮外の異変がありやなしや、と……[r]杞憂かもしれませぬが、小心の身にて。
+[k]
+
+＠？？？
+大事ない。[r]理由はわかっている。
+[k]
+
+＠？？？
+[#第一鱗門が]、[#開いた]。[r]それ故だ。
+[k]
+
+[charaFace A 9]
+
+＠黒姫
+鱗門が？[r]しかし、あれは[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace A 4]
+
+＠黒姫
+……いえ。[r]対処は如何に。
+[k]
+
+＠？？？
+何も。
+[k]
+
+＠？？？
+さしたる問題ではない。
+[k]
+
+[charaFace A 8]
+
+＠黒姫
+……。[r]……。
+[k]
+
+[charaFace A 3]
+
+＠黒姫
+差し支えなければ、[r]様子を見に行ってもよろしいでしょうか。
+[k]
+
+＠黒姫
+無論、アルナワーズは置いていきますが。
+[k]
+
+＠？？？
+なぜだ。
+[k]
+
+[charaFace A 7]
+
+＠黒姫
+鱗一枚。[r]されど、[#貴方の身体です]。
+[k]
+
+＠？？？
+……。[r]……。
+[k]
+
+＠？？？
+必要はない。[r]ないが[line 3]
+[k]
+
+＠？？？
+そうしたいのであれば、好きにしろ。
+[k]
+
+[charaFace A 3]
+
+＠黒姫
+は。[r]ありがとうございます。
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ad1352]
+[seStop 24_ad1352 2.0]
+[charaFadeout A 0.4]
+[wt 2.0]
+
+[subRenderFadeout #A 1.0]
+[subRenderFadeout #B 1.0]
+[charaFadeout L 1.0]
+[wt 1.5]
+[charaFadeout M 0]
+[subCameraOff]
+[charaLayer A normal]
+[charaLayer M normal]
+
+
+[charaTalk off]
+[charaFace A 4]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+＠
+この地は彼の身体に等しい。
+[k]
+
+＠
+そして彼の身体を流れる『脈』に乗ることを、[r]自分たちは彼に連なる者として許されている。
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ade1024]
+[backEffect bit_talk_ripples_out_back 0,0]
+[effect bit_talk_ripples_out_front 0,0]
+[wt 2.0]
+[cueSeStop 24_ade1024 1.3]
+[charaMoveEase A 0,-540 1.2 easeOutSine]
+[wt 2.0]
+[charaFadeout A 0.1]
+
+
+＠
+故に、ほどなくして[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_MAP_129 1.0]
+[wait fade]
+
+[cueSe SE_25 25_ade1172 0.7]
+[wt 1.2]
+[pictureFrame]
+
+[scene 239301]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_MAP_95 0.1]
+
+＠黒姫
+これは……確かに。
+[k]
+
+[messageOff]
+[charaFace A 3]
+[wt 0.5]
+
+[charaScale C 1.2]
+[charaScale D 1.2]
+[charaScale N 1.2]
+[charaScale O 1.2]
+
+[charaDepth D 5]
+[charaDepth O 4]
+[charaDepth C 3]
+[charaDepth N 2]
+[charaDepth A 1]
+
+[charaTalk off]
+[charaFadein N 0.5 80,-270]
+[charaMove N 100,-270 0.5]
+[se ad173]
+[seStop ad173 1.2]
+[wt 0.5]
+[charaFace C 3]
+[charaFadein C 0.5 -100,10]
+[charaMove C -150,10 0.5]
+[wt 2.0]
+
+[charaFadein O 0.5 -80,-270]
+[charaMove O -100,-270 0.5]
+[se ad173]
+[seStop ad173 0.8]
+[wt 0.5]
+[charaFace D 3]
+[charaFadein D 0.5 150,10]
+[wt 0.7]
+[charaMove D 150,-5 0.5]
+[se ade385]
+[seStop ade385 0.7]
+[wt 0.05]
+[cueSe SE_24 24_ade1034]
+[seVolume 24_ade1034 0 0.5]
+[seStop 24_ade1034 1.0]
+[wt 0.95]
+[charaFadeout C 0.1]
+[charaFadeout N 0.1]
+[charaPut A 0,-10]
+[wt 1.0]
+
+[charaFadeout D 0.5]
+[charaFadeout O 0.5]
+[wt 0.5]
+
+[charaMove A 0,0 0.5]
+[se ade385]
+[seStop ade385 0.6]
+[wt 0.5]
+
+[charaTalk on]
+
+＠黒姫
+……成る程。[r]本当に、[#ただ開いている]だけですね。
+[k]
+
+[charaFace A 0]
+
+＠黒姫
+乱暴に破壊されているようなことが……[r]血が流れているようなことがなくて、よかったです。
+[k]
+
+[charaFace A 3]
+
+＠黒姫
+しかし、なぜ開いているのでしょう。
+[k]
+
+[charaDepth A 5]
+[charaDepth Y 1]
+
+[charaPut Y 1]
+[charaFadeTime Y 0.2 0.5]
+
+[charaFace A 7]
+
+＠黒姫
+（聞いていた限りでは。これは、[r]　[#陛下でなくては開けられぬ]はずですが……）
+[k]
+
+[messageOff]
+[charaFadeout Y 0.3]
+[wt 1.2]
+
+[se ad984]
+[se ad227]
+[wt 0.2]
+[charaFace A 3]
+
+[bgmStop BGM_MAP_95 1.3]
+[wt 1.5]
+
+＠？？？
+あれ？
+[k]
+
+[charaFace A 4]
+
+＠黒姫
+[line 3]。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe SE_24 24_ade1034]
+[seVolume 24_ade1034 0 0.1]
+[seVolume 24_ade1034 0.5 1.0]
+[wt 0.8]
+[seStop 24_ade1034 1.0]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.4 1]
+[wt 0.8]
+
+[bgm BGM_EVENT_96 0.1]
+
+＠おみぃさん
+ふふ、こんにちは。[r]珍しいところで珍しい子に会うもんだねぇ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth A 5]
+[charaDepth Y 1]
+
+[charaPut Y 1]
+[charaFadeTime Y 0.2 0.5]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠黒姫
+（殺気や敵意は……感じません。[r]　敵ではない、ですか）
+[k]
+
+[charaFadeout Y 0.2]
+
+[charaFace A 3]
+
+＠黒姫
+貴方は？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠おみぃさん
+んー？　風の便りで、[r]ここの門が開いたって聞いてね。
+[k]
+
+＠おみぃさん
+ここらへんの町はもう結構巡っちゃったし、[r]次は新しい場所にでも行ってみようかなって。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠黒姫
+そうですか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠おみぃさん
+通っていいの？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠黒姫
+止めろという[#命:めい]は受けていません。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠おみぃさん
+みゃはは、そうなんだ。[r]やったね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠黒姫
+しかし忠告するならば、[r]止めておいたほうがいいでしょう。
+[k]
+
+＠黒姫
+ここから先の地は[line 3]わかりやすく言えば、[r]『上の生態系』です。
+[k]
+
+＠黒姫
+貴方という蛇を喰らうものが[r]いないとも限りません。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠おみぃさん
+んー、ま、なんとかなるでしょ。[r]逃げ足は速いんだ、アタシ。
+[k]
+
+[charaFace B 15]
+
+＠おみぃさん
+忠告ありがとね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠黒姫
+……。[r]……。
+[k]
+
+＠黒姫
+貴方は……私が、怖くないのですか？
+[k]
+
+＠黒姫
+蛇王様の捕食竜を先導する私の姿を、[r]貴方も見たことがあるはずです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠おみぃさん
+いやぁ、別に？　だって今は[r]あのおっきな蛇、いないじゃないのさ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠黒姫
+それはそうですが。
+[k]
+
+＠黒姫
+[#贄:にえ]を集めるものとして……民の立場からすれば、[r]憎しみなども覚えようかと。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠おみぃさん
+んー、どうだろ。[r]誰だって食べなきゃいけないのは確かだしねぇ。
+[k]
+
+[charaFace B 11]
+
+＠おみぃさん
+お腹を空かせた子供がいるなら尚更さ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠黒姫
+……。[r]……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠おみぃさん
+それで[line 3]あー、ええっと。
+[k]
+
+[charaFace B 15]
+
+＠おみぃさん
+ふふ。機会があればアンタと喋りたいとは[r]ずっと思ってたんだけど、
+[k]
+
+＠おみぃさん
+いざ会ってみると、[r]何を話したかったのか忘れちゃった。
+[k]
+
+[charaFace B 6]
+
+＠おみぃさん
+本当に、お姫様みたいにキレイすぎるからかね。[r]緊張しちゃうよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠黒姫
+……[#空言:そらごと]はお止めください。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠おみぃさん
+いやいや、ホントさね。[r]特にその長くて綺麗な髪といったら[line 3]
+[k]
+
+[charaFace B 14]
+
+＠おみぃさん
+あ、そうだ。
+[k]
+
+＠おみぃさん
+最初から持ってたんだったかな？[r]物々交換で手に入れたんだったかな？
+[k]
+
+[charaFace B 15]
+
+＠おみぃさん
+とにかくいつの間にか持ってたんだけど、[r]はいこれ。あげるよ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.2]
+[wt 0.2]
+
+[charaTalk depthOff]
+[charaDepth P 5]
+[charaDepth Y 1]
+
+[charaFadein P 0.4 0,-200]
+[charaFadeTime Y 0.4 0.5]
+[se ad164]
+[seStop ad164 0.2]
+[wt 2.2]
+
+[charaFadeout Y 0.2]
+[charaFadeout P 0.4]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠黒姫
+[#櫛:くし]……？[r]これは、なんとも可愛らしい……。
+[k]
+
+[charaFace A 3]
+
+＠黒姫
+[line 3]いえ、貰えませぬ。[r]貰う理由がありませぬ。お返しします。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠おみぃさん
+いいんだよ。アタシは使わないけど、アンタには[r]その綺麗な髪をしっかり手入れしてほしいからね。
+[k]
+
+[charaFace B 7]
+
+＠おみぃさん
+要らなかったら捨てちゃってもいいし。[r]それじゃね～。
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[cueSe SE_24 24_ade1034]
+[seStop 24_ade1034 1.8]
+[bgmStop BGM_EVENT_96 1.5]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠黒姫
+あ……。
+[k]
+
+[messageOff]
+[charaScale B 1.2]
+[charaScale N 1.2]
+
+[charaDepth B 3]
+[charaDepth N 2]
+[charaDepth A 1]
+
+[charaTalk off]
+[charaFadein N 0.5 -100,-290]
+[charaMove N -120,-290 0.5]
+[wt 0.5]
+[cueSe SE_24 24_ade1034]
+[seStop 24_ade1034 1.0]
+[charaFace B 15]
+[charaFadeinFSR B 0.5 250,10]
+[charaMoveFSR B 270,10 0.5]
+[wt 1.0]
+
+[charaFadeout A 0]
+
+[subCameraOn 1]
+[charaLayer A sub #A]
+[charaLayer O sub #A]
+[subCameraFilter #A maskEdge cut359_mask15 5 0,0,0,255]
+
+[charaScale A 1.2]
+[charaScale O 1.2]
+
+[charaDepth A 6]
+[charaDepth O 5]
+
+[charaFace A 6]
+[charaFadeinFSL A 0.1 -110,160]
+[charaFadein O 0.1 250,-140]
+
+[charaTalk on]
+
+＠おみぃさん
+ああ、一つだけ思い出した。[r]話したかったこと。
+[k]
+
+＠おみぃさん
+後戻りしてまで話すコトじゃないから、[r]軽～く言うだけにしとくけど。
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 6]
+[subRenderFadein #A 0.3 -160,-120]
+[subRenderMoveEase #A -180,-150 0.4 easeOutSine]
+[wt 0.4]
+
+＠黒姫
+……？
+[k]
+
+[bgm BGM_SHINYAMA_1 0.1]
+
+[charaFace B 0]
+
+＠おみぃさん
+母親っていうのはさ。
+[k]
+
+[charaFace B 1]
+
+＠おみぃさん
+子供には……苦しいときには、[r]苦しいって言ってもらいたいものだよ。
+[k]
+
+[charaFace A 7]
+
+＠黒姫
+[line 3]。
+[k]
+
+[charaFace B 11]
+
+＠おみぃさん
+たとえその苦しみを代わってやれなくても。[r]どうすることもできなくても。
+[k]
+
+＠おみぃさん
+黙って我慢されるよりは、ずっといい。
+[k]
+
+＠おみぃさん
+苦しいって言ってくれなきゃ、教えてくれなきゃ、[r]手を握ってやることだってできないからね。
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 3]
+[wt 1.6]
+
+[charaTalk B]
+[charaFace B 15]
+[wt 1.6]
+
+[charaMoveFSR B 290,10 0.5]
+[charaFadeout B 0.4]
+[cueSe SE_24 24_ade1034]
+[seStop 24_ade1034 1.8]
+[wt 1.0]
+
+[charaScale C 1.0]
+[charaDepth C 1]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[subRenderFadeout #A 0.5]
+[charaFadeout N 0.5]
+[wt 1.4]
+
+[charaFaceFade C 15 0.3]
+[wt 1.4]
+
+[charaMove C -40,0 1.0]
+[charaFadeout C 0.7]
+[se ad173 0.6]
+[seStop ad173 2.4]
+[wt 2.2]
+
+[fadeout black 2.0]
+[bgmStop BGM_SHINYAMA_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

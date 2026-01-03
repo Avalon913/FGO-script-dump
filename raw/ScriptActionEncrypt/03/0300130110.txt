@@ -1,0 +1,1255 @@
+
+
+＄03-00-13-01-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 98001000 1 マシュ]
+[charaSet B 1098239320 1 カドック]
+[charaSet C 1098257400 1 シオン]
+[charaSet D 1098255100 1 ゴルドルフ]
+[charaSet E 1098158330 1 ネモ]
+[charaSet F 1098182000 1 ネモ・ナース]
+[charaSet G 1098257300 1 ダ・ヴィンチ]
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 98002000 1 フォウ]
+[masterImageSet J cut396_costume_m cut396_costume_w 1]
+[charaSet K 1098255200 1 ハベトロット]
+[charaSet L 1098123000 1 ムニエル]
+[charaSet M 1098254800 1 ネモ・マリーン1]
+[charaSet N 1098254800 1 ネモ・マリーン2]
+[charaSet O 1098254800 1 ネモ・マリーン3]
+[sceneSet P 132900 1]
+[charaSet Q 1098182110 1 ネモ・プロフェッサー]
+[charaSet R 1098255300 1 ニトクリス]
+[charaSet S 98005000 1 オルガマリー]
+[sceneSet T 132900 1]
+[charaSet U 1098255300 1 ニトクリス_アップ用]
+[masterBranch _Male _Female]
+[label _Male]
+[charaSet V 1098259400 1 決戦礼装マスター立ち絵（男）]
+[branch _branchEnd]
+[label _Female]
+
+[charaSet V 1098259410 1 決戦礼装マスター立ち絵（女）]
+[branch _branchEnd]
+[label _branchEnd]
+
+
+
+[scene 157900]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad775]
+[seVolume ad775 0 0.2]
+[charaScale J 0.95]
+[charaFadein J 0.4 0,-200]
+[wt 1.0]
+[wait touch]
+[charaFadeout J 0.4]
+[se ade385]
+[seVolume ade385 0 0.6]
+[wt 1.0]
+[se ad748]
+[wt 0.2]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠フォウ
+フォウ、フォーウ！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth K 1]
+[charaDepth F 2]
+
+[charaTalk off]
+[charaScale K 1.0]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaFace K 1]
+[charaPut K 250,0]
+
+＠ネモ・ナース
+良かった。寸法はピッタリですね。[wt 0.8][charaFadeTime K 0.4 0.7][r]さすがはハベトロットさん。よい仕事です。
+[k]
+[charaFadeout K 0.4]
+
+＠ネモ・ナース
+そちらが第七異聞帯攻略……いえ、[r]対『異星の神』攻略用の魔術礼装です。
+[k]
+
+[charaTalk depthOn]
+[charaTalk on]
+＠ネモ・ナース
+ストーム・ボーダーは対地速度900km/hで[r]南米大陸に向けて飛行しています。
+[k]
+
+＠ネモ・ナース
+到着まであと約４時間。
+[k]
+
+＠ネモ・ナース
+満足な休息は取れませんが、[r]２時間ほど仮眠なさいますか？
+[k]
+
+？1：大丈夫です
+
+[charaFace F 1]
+
+＠ネモ・ナース
+では気持ちを落ち着かせる紅茶など、一杯。[r]たっぷりハチミツを入れましょう。
+[k]
+
+？2：（……対『異星の神』の装備、か……）
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[fadeout white 0.5]
+[wait fade]
+[effect bit_sepia01_depth_fs]
+
+[charaFadeout F 0.1]
+[charaTalk S]
+[charaFace S 0]
+[charaFadein S 0.1 1]
+
+[scene 10710]
+[wt 0.1]
+
+[fadein white 0.5]
+[wait fade]
+
+[wt 2.5]
+
+[fadeout white 0.5]
+[wait fade]
+
+[effectDestroy bit_sepia01_depth_fs]
+[charaFadeout S 0.1]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.1]
+[scene 157900]
+
+[fadein white 0.8]
+[wait fade]
+
+
+＠フォウ
+…………。
+[k]
+
+？！
+[messageOff]
+[bgmStop BGM_EVENT_77 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+[charaFadeout F 0.1]
+[wt 1.0]
+[scene 89200]
+
+[pictureFrame cut063_cinema]
+
+[cueSe SE_21 21_ade579]
+[fadein black 1.0]
+[wait fade]
+[wt 1.2]
+
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠ダ・ヴィンチ
+よかった、トラオムでの[#緊急出撃:アサルトシフト]による[r]不具合はないようだ。
+[k]
+
+＠ダ・ヴィンチ
+これなら南米での活動に心配はない。[r]フルタイムで活躍できるよ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+ありがとうございます、ダ・ヴィンチちゃん。[r]そう言っていただけると自信が持てます。
+[k]
+
+[charaFace A 13]
+
+＠マシュ
+その、自己診断ではあるのですが、[r]わたしもかつてない仕上がりの気がするというか……
+[k]
+
+＠マシュ
+ブラックバレルの使用はともかく、[r]オルテナウスの扱いは楽になってきました。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 22]
+[charaFadein G 0.1 0,-50]
+[wt 1.0]
+[charaFace G 28]
+
+＠ダ・ヴィンチ
+そのようだね。[r]マシュの身体能力値は以前より向上している。
+[k]
+
+＠ダ・ヴィンチ
+この成長速度ならトップサーヴァントへの[r]仲間入りだって夢じゃない。
+[k]
+
+＠ダ・ヴィンチ
+文字通り、私たちノウム・カルデアの代表戦力だ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+は、はい。たいへんくすぐったい評価ですが、[r]そうなれるよう、努力します。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 36]
+[charaFadein G 0.1 0,-50]
+
+＠ダ・ヴィンチ
+ああ、でもブラックバレルの使用は[r]さらに制限させてもらうよ。
+[k]
+
+＠ダ・ヴィンチ
+これからは単純な『魔力圧縮による砲撃』を[r]基本運用とする。
+[k]
+
+＠ダ・ヴィンチ
+[#刻寿測定針:アコンプリッシュ・メジャー]を使った[#存在規模:ライフスケール]の算出、[r][#逆説構造体:ブ ラ ッ ク バ レ ル]の形成、
+[k]
+
+＠ダ・ヴィンチ
+[#生命距離弾:デ ッ ド カ ウ ン タ ー]の生成は禁止だ。[r]あれはキミの体にも、マスターの運命力にも負荷がかかる。
+[k]
+
+＠ダ・ヴィンチ
+あと、基本運用であっても、都市部では厳禁だ。[r][%1][&君:ちゃん]にも言ってある。
+[k]
+
+＠ダ・ヴィンチ
+範囲が広すぎるからね。[r]どうしても一般に被害が出てしまう。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+はい、正しい判断だと思います。[r][#生命距離弾:デ ッ ド カ ウ ン タ ー]は世界の法則を破るものです。
+[k]
+
+＠マシュ
+[#濫用:らんよう]してはいけないものだと理解しています。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠ダ・ヴィンチ
+ああ、その通りだ。『死の[#概念:がいねん]』を兵器にするとか、[r]アトラス院が危険視されるのも頷けたよ。
+[k]
+
+＠ダ・ヴィンチ
+……それと。
+[k]
+
+[charaFace G 1]
+
+＠ダ・ヴィンチ
+通常のサーヴァントは基本、霊体だ。[r]実体化してもその体はエーテルで作られたもの。
+[k]
+
+＠ダ・ヴィンチ
+[#肉体]と呼べるものじゃないし、生前……[r]英霊の座に記録されている能力以上の成長はしない。
+[k]
+
+＠ダ・ヴィンチ
+けど、デミ・サーヴァントは知っての通り、[r]人間の体に英霊の霊基を移植したものだ。
+[k]
+
+＠ダ・ヴィンチ
+キミは霊体化できないが、初めから肉体を持っている。[r]その特徴がいま、アドバンテージとして出てきている。
+[k]
+
+[charaFace G 0]
+
+＠ダ・ヴィンチ
+前にも言ったけど。キミの霊基パターンは、[r]肉体に合わせて成長し出している。
+[k]
+
+＠ダ・ヴィンチ
+いや、成長要因は肉体の成長じゃなく精神の変化に[r]あるようだけど、それはまあ、いいとして。
+[k]
+
+[charaFace G 23]
+
+＠ダ・ヴィンチ
+問題なのは『生きているのに英霊に近づく』ということ。
+[k]
+
+＠ダ・ヴィンチ
+サーヴァントが魔術世界では[r]なんと言われているか知っているね。[#境界記録帯]だ。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 23]
+[charaFadein G 0.1 0,-50]
+
+＠ダ・ヴィンチ
+どちらにせよ、いま以上の力を求めるなら[r]キミはじき『デミ』ではなくなる。
+[k]
+
+[charaFace G 22]
+
+＠ダ・ヴィンチ
+そのことをよく考えておくんだ。[r]成長は不可逆だからね。
+[k]
+
+[charaFace G 17]
+
+＠ダ・ヴィンチ
+なあに。まずい、と思ったらオルテナウスを[r][#脱:ぬ]いでボーダーに戻ってくればいい。
+[k]
+
+＠ダ・ヴィンチ
+私たちはもう以前の私たちじゃない。[r]ノウム・カルデアには頼れる仲間たちがいる。
+[k]
+
+＠ダ・ヴィンチ
+戦力はキミひとりじゃないんだ。[r]ピンチの時はみんなで考えよう。
+[k]
+
+＠ダ・ヴィンチ
+それは[%1][&君:ちゃん]も[r]分かってるはずだよ。
+[k]
+
+[se ade158]
+[charaFaceFade G 3 0.2]
+
+＠ダ・ヴィンチ
+ふたりとも、オルガマリー所長を諦めてないんだろ？[r]もちろん私も付き合うとも。
+[k]
+
+[charaFaceFade G 31 0.2]
+
+＠ダ・ヴィンチ
+だって彼女、[r]どう見ても記録にあるオルガマリーだしね？
+[k]
+
+[charaFace G 5]
+
+＠ダ・ヴィンチ
+方法はまだ[#皆目:かいもく]見当がつかないけど、[r]無力化さえできれば、あとは対話あるのみさ。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+[wt 1.0]
+[charaFaceFade A 26 0.2]
+
+[wt 1.5]
+
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[pictureFrame]
+
+
+[charaFadeout A 0.1]
+[scene 132900]
+[wt 1.0]
+[charaSet G 1098257310 1 ダ・ヴィンチ]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_124 0.1]
+
+[charaTalk off]
+[charaDepth V 5]
+[charaDepth A 4]
+[charaDepth B 6]
+
+[charaDepth L 5]
+[charaDepth M 5]
+[charaDepth N 7]
+[charaDepth O 6]
+[charaDepth C 4]
+
+[charaFace A 7]
+[charaFace B 0]
+[charaFace V 0]
+[charaFadeinFSR A 0.1 300,0]
+[charaFadein V 0.1 1]
+[charaFadeinFSL B 0.1 -300,0]
+[wt 1.6]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout V 0.1]
+[wt 0.1]
+
+
+[charaFace M 5]
+[charaFace N 5]
+[charaFace O 5]
+[charaFace L 0]
+[charaFace C 9]
+[charaFadeinFSR M 0.1 440,0]
+[charaFadeinFSR N 0.1 300,0]
+[charaFadeinFSR O 0.1 150,0]
+[charaFadein L 0.1 -50,0]
+[charaFadeinFSL C 0.1 -300,0]
+[wt 1.6]
+
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaFadeout L 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠ネモ
+当艦はじき中米を通過する！[r]メキシコからグアテマラまで敵による妨害なし！
+[k]
+
+＠ネモ
+白海大地を越えれば南米の『嵐の壁』に到達する！[r]作戦開始まで、あと20分を予定！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+よ、よし！[r]ノウム・カルデア、総員、配置についているな！
+[k]
+
+＠ゴルドルフ
+急な作戦決行となったが、[r]準備そのものは事前に完了していたのだ。
+[k]
+
+＠ゴルドルフ
+何も慌てる必要はない！[r]そうだな、技術顧問！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad13]
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.2]
+[charaTalk G]
+[charaFace G 18]
+[charaFadein G 0.1 1]
+
+＠ダ・ヴィンチ
+もちろんだとも。[r]対『異星の神』の切り札。
+[k]
+
+＠ダ・ヴィンチ
+聖剣の[#概念:がいねん]を武装化した聖剣兵装[line 3]
+[k]
+
+＠ダ・ヴィンチ
+汎人類史の正統性、人理そのものを弾丸として[r]装填する主砲、[#人理定理:ヒュームバレル]・[#未来証明:レ イ プ ル ー フ]。
+[k]
+
+＠ダ・ヴィンチ
+トリスメギストスⅡ内でのシミュレーション、[r]その実験回数は億を超えたが、
+[k]
+
+＠ダ・ヴィンチ
+99.99％の成功率を実証した。[r]変形シークエンス含め、実戦投入に問題はない。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+うむ頼もしい！[r]それでこそ我らが技術顧問！
+[k]
+
+[charaFace D 1]
+
+＠ゴルドルフ
+ところで主砲、というからにはアレかな？
+[k]
+
+＠ゴルドルフ
+発射の際には、銃を模した発射装置が[r]この管制室にあるのかな？　後でぜひ見せなさい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 7]
+[charaFadein L 0.1 1]
+
+＠ムニエル
+おっさん、砲撃手はマリーンだって決まっただろ。[r]往生際が悪いぜ。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+ええい、わかっているわジビエ君！[r]ただロマンを感じたかっただけだ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠シオン
+こちらからの報告は要りますか、司令官。[r]『被検体：Ｅ』の解析結果ですが。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_124 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 3]
+[charaDepth L 2]
+[charaDepth E 1]
+[charaDepth A 5]
+[charaDepth B 4]
+[charaDepth P 6]
+[charaDepth C 7]
+[charaFace D 5]
+[charaFace L 2]
+[charaFace E 4]
+[charaFadein D 0.1 1]
+[charaFadeinFSR L 0.1 320,0]
+[charaFadeinFSL E 0.1 -320,0]
+[wt 1.5]
+[charaFadeout D 0.1]
+[charaFadeout L 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaFace A 7]
+[charaFace B 3]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+[wt 1.5]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+
+＠カドック
+ぜひ聞かせてくれ。[r]何が分かった？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale P 1.2]
+[charaScale C 1.2]
+[charaFace C 17]
+[charaFadein P 0.4 50,-250]
+[charaFadein C 0.4 -150,0]
+[charaMove P 70,-250 0.6]
+[charaMove C -130,0 0.6]
+[bgm BGM_MAP_57 1.0]
+[wt 1.0]
+
+
+＠シオン
+それが肝心な事はなんとも。[r]分かった事は以下の三つです。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFace C 9]
+
+＠シオン
+１．手術室は我々の文明レベルと同じもの。[r]　　最新鋭の設備だった。
+[k]
+
+＠シオン
+２．『被検体：Ｅ』は未知の生命体である。[r]　　トリスメギストスⅡ内に該当データなし。
+[k]
+＠シオン
+３．拭き取られていたが、室内からは大量の血痕、[r]　　細胞が検出された。こちらは人類のもの。
+[k]
+
+[charaFace C 11]
+
+＠シオン
+より深い解析には時間が必要ですが、[r]今は南米異聞帯攻略を優先しているため、
+[k]
+
+＠シオン
+トリスメギストスⅡによる解析は止めています。[r]現時点で、何か質問はありますか？
+[k]
+
+？1：……血痕という事は……殺人事件があった？
+
+？！
+
+[charaFace C 12]
+
+＠シオン
+ご明察。キレイに掃除はされていますが、[r]室内から少なくない血液と肉片が検出されました。
+[k]
+
+＠シオン
+自傷行為でなければ、[r]殺人事件があった事は推測できます。
+[k]
+
+[messageOff]
+[charaFadeout P 0.6]
+[charaFadeout C 0.6]
+[wt 0.8]
+[charaScale C 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……。手術室ですので、治療中のミス、と[r]いう事はありませんか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠シオン
+ああ、なるほど。確かにその可能性も半分ですね。
+[k]
+
+＠シオン
+普通、手術台から１メートル離れた床に[r]血は飛び散ったりしませんが。
+[k]
+
+[bgmStop BGM_MAP_57 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ネモ
+『被検体：Ｅ』の話はそこまで。[r]じき戦闘区域に入る。戦力の補充はどうなっている？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaPut H 1]
+[charaTalk Q]
+[charaFace Q 1]
+[charaFadein Q 0.1 1]
+
+＠ネモ・プロフェッサー
+はいお任せ～。[r]こちら電算室、じゃなくて召喚室～。
+[k]
+
+＠ネモ・プロフェッサー
+トリスメギストスⅡは今回のミッションにあたり、[r]サーヴァント４騎の召喚を[#推奨:すいしょう]しています～。
+[k]
+
+＠ネモ・プロフェッサー
+異聞帯に突入してから召喚した方が[r]省エネなのですが、ブリテンの例もありますのでー。
+[k]
+
+＠ネモ・プロフェッサー
+まずは１騎目の方の召喚を完了、[r]管制室に向かっていただきました～。
+[k]
+
+[charaFace Q 5]
+
+＠ネモ・プロフェッサー
+すぐに残り３騎の方にもおいでいただきますので、[r]期待して待っててね。
+[k]
+
+[messageOff]
+[se ad1]
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+ふむ、賢明な判断だ。異聞帯に入った後で[r]『召喚できない！』では話にならんからな。
+[k]
+
+[charaFace D 1]
+
+＠ゴルドルフ
+さあて。最後の異聞帯を攻略するための英霊、[r]その栄えある１騎目はいったい誰かな？
+[k]
+
+＠ゴルドルフ
+南米は過酷な土地だからねぇ。
+[k]
+
+＠ゴルドルフ
+やはり筋骨隆々、猪突猛進、文明忘却、[bgmStop BGM_EVENT_62 1.0][r][#むくつけき:ウ  ホ  ウ  ホ  し  た]ゴリラのようなサーヴァントがやって来、
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth T 2]
+[charaDepth U 3]
+[charaDepth E 1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[se ad8]
+[wt 1.2]
+
+[charaFace U 9]
+[charaScale T 1.4]
+[charaScale U 1.35]
+[se ade422]
+[wt 0.8]
+[charaFadein T 0.8 180,-150]
+[charaMove T 200,-150 0.8]
+[wt 0.5]
+[seStop ade422 0.5]
+[wt 1.0]
+[charaFadein U 0.4 0,260]
+[charaMove T 200,-250 3.0]
+[charaMove U 0,30 3.0]
+[wt 3.4]
+
+[charaFace U 5]
+[bgm BGM_MAP_85 0.1]
+
+＠ニトクリス
+誰がウホウホですか！[r]不敬ですよ、カルデアの司令官！
+[k]
+
+？1：ニトクリス！
+
+[charaFace U 0]
+
+＠ニトクリス
+ええ。元気そうですね[%1]。[r]この通り、助けを求める声に応じ参上しました。
+[k]
+
+？2：メジェド様のなかのひと！
+
+[charaFace U 4]
+
+＠ニトクリス
+メ、メジェド様になかのひと、否、[r]なかのファラオなどいません！
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout U 0.4]
+[charaFadeout T 0.4]
+[wt 0.5]
+
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ネモ
+その反応……顔見知り？
+[k]
+
+＠ネモ
+ニトクリス。キミは第六特異点でマシュと[r][%1]が出会った、
+[k]
+
+＠ネモ
+ニトクリスの記憶を持っているのかい？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk R]
+[charaFace R 9]
+[charaFadein R 0.1 1]
+
+＠ニトクリス
+そのようですね。カルデアが記録した[r]霊基グラフからの召喚であれば、
+[k]
+
+＠ニトクリス
+このような『経験の引き継ぎ』も[r]起こりえるのでしょう。
+[k]
+
+＠ニトクリス
+まあ、実際のところは初対面です。[r]確かに挨拶は必要でした。
+[k]
+
+＠ニトクリス
+コホン。面を上げてよい、カルデアの者たち。[r]……もう上がっていますね。不敬ですが大目に見ます。
+[k]
+
+＠ニトクリス
+我が名はニトクリス。[r]天空神の化身、冥界の鏡の使い手。
+[k]
+
+＠ニトクリス
+南米の地は不慣れなれど、[r]ファラオの輝きは異邦であろうと変わらぬもの。
+[k]
+
+＠ニトクリス
+ぞんぶんに私を[#敬:うやま]い、そして頼るといいでしょう。
+[k]
+
+[charaFadeout R 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+１騎目の同行者はニトクリスさんだったのですね。[r]たいへん心強いです。
+[k]
+
+[charaFace A 6]
+
+＠マシュ
+ですが……その、以前お会いしたニトクリスさんと[r]どこか違うところがあるような……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk R]
+[charaFace R 0]
+[charaFadein R 0.1 1]
+
+＠ニトクリス
+ふふふ。霊基。霊基の姿が違うのですよ、マシュ。[r]この私は初めからフルパワー。
+[k]
+
+＠ニトクリス
+ストーム・ボーダーからの膨大な魔力提供により、[r]霊基は最終的な“あるべきカタチ”に。
+[k]
+
+＠ニトクリス
+そしてマスターなしでも行動できるよう、[r]『単独行動』の機能も付加されているのです！
+[k]
+
+？1：すごい……！
+？2：じゃあ自由に動けるんだ！
+
+？！
+
+[charaFace R 6]
+
+＠ニトクリス
+そこを喜ぶのですね、貴方は。[r]呆れるというか、気が抜けるというか。
+[k]
+
+[charaFace R 9]
+
+＠ニトクリス
+今回の私は、いわば単独で成立するサーヴァント。
+[k]
+
+＠ニトクリス
+マスターからの魔力供給は必須ではなく、[r]カルデアに縛られてもいない。まったくの自由です。
+[k]
+
+[charaFace R 0]
+
+＠ニトクリス
+ですが、すべき事は分かっています。[r]汎人類史のため、カルデアの勝利のため、
+[k]
+
+＠ニトクリス
+契約の縛りがなくとも、ファラオ・ニトクリスは[r]最後まで貴方たちの力になりましょう。
+[k]
+
+[charaFadeout R 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠カドック
+……そりゃあ、護衛のサーヴァントは[r]単独で行動できた方が便利だが……
+[k]
+
+＠カドック
+それを可能とした魔力量もたいがいだが、[r]良しとした度胸もたいがいだ。
+[k]
+
+＠カドック
+おまえたちにとって、それほど信頼できる[r]サーヴァントなんだな、ニトクリスは。
+[k]
+
+？1：[&ああ:うん]、敵側だったのに毎回助けてくれた程[&さ:だし]！
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[bgmStop BGM_MAP_85 1.5]
+[charaFace A 26]
+[charaFace R 4]
+[charaFadein A 0.1 2]
+[charaFadein R 0.1 0]
+[wt 1.5]
+[charaFadeout R 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ダ・ヴィンチ
+ニトクリスはマスターの護衛役……というより、[r]現地チームの護衛役を任せたい。
+[k]
+
+＠ダ・ヴィンチ
+南米では徒歩で探索する場面も多いと予想される。[r]小回りがきいて、集団戦にも対応できて、
+[k]
+
+＠ダ・ヴィンチ
+熱病や[#穢:けが]れに強い魔術の使い手が必要なんだ。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaScale K 1.0]
+
+[charaPut K 1]
+
+[se ad595]
+[charaTalk K]
+[charaFace K 2]
+[charaSpecialEffect K wipeTimeRe 0 1.0 0 0.2]
+[wt 1.2]
+[charaFadein K 0.0 1]
+＠ハベトロット
+ふーん。ようはボディガードってワケか。[r]そういう事ならボクも挨拶しとかなきゃな。
+[k]
+
+[charaFace K 9]
+
+＠ハベトロット
+よっす！　ボクはハベトロット！[r]マシュの盾に宿った守護妖精みたいなものなんだわ！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk R]
+[charaFace R 0]
+[charaFadein R 0.1 1]
+
+＠ニトクリス
+これはご丁寧に。バステト神の[#眷属:けんぞく]ですね？[r]よろしくお願いします。
+[k]
+
+[charaFadeout R 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+＠ハベトロット
+[FFFFFF]？（バステト神ってなに？）[-]
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+うむ。この後、さらに３騎の常時現界型[r]サーヴァントが召喚されるワケか。
+[k]
+
+[charaFace D 2]
+
+＠ゴルドルフ
+まったく頼もしい！[r]やはり特異点より異聞帯だよ君たち！
+[k]
+
+＠ゴルドルフ
+今度こそ、ツングースカではできなかった[r]サーヴァント大量投入作戦ができそうだ！
+[k]
+
+＠ゴルドルフ
+空想樹など見つけ次第、[r]速攻で伐採してしまおうじゃないか！
+[k]
+
+[messageOff]
+[cueSe Servants_204300 m44717]
+[seVolume m44717 0 0.2]
+[effect bit_talk_red_light -200,0]
+[wt 3.0]
+[effectStop bit_talk_red_light]
+[charaFace D 4]
+
+＠ゴルドルフ
+ああいや、違ったな。[r]南米異聞帯に空想樹の反応は無かったのだった。
+[k]
+
+＠ゴルドルフ
+そうだな、シオン君？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠シオン
+その通りです。南米異聞帯には[r]空想樹特有のエネルギー反応はありません。
+[k]
+
+[charaCrossFade C 1098257410 12 0.3]
+
+＠シオン
+とはいえ、異聞帯としてまだ存続している以上、[r]空想樹に該当するものはどこかにある筈です。[wait charaCrossFade C]
+[k]
+
+＠シオン
+ブリテンのように何らかの理由で枯れているか、[r]あるいは中国異聞帯のように隠されているか。
+[k]
+
+[wait charaCrossFade C]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 23]
+[charaFadein G 0.1 1]
+
+＠ダ・ヴィンチ
+どっちにしろ、今回は空想樹は後回しだ。[r]最優先事項は『異星の神』の攻略にある。
+[k]
+
+＠ダ・ヴィンチ
+Ｕ－オルガマリーが『[#ＯＲＴ:オ　ル　ト]』と融合する前に[r]彼女を止めなくてはならない。
+[k]
+
+＠ダ・ヴィンチ
+みんな、そこを忘れないように。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 5]
+[charaDepth R 4]
+[charaDepth K 3]
+
+[charaTalk off]
+[charaFace R 9]
+[charaFace A 7]
+[charaFace K 2]
+[charaFadeinFSL R 0.1 -320,0]
+[charaFadein A 0.1 1]
+[charaFadeinFSR K 0.1 320,0]
+[wt 0.5]
+[charaMoveReturnFSL R -320,-5 0.4]
+[charaMoveReturn A 0,-5 0.4]
+[charaMoveReturnFSR K 320,-5 0.4]
+[wt 1.0]
+
+[charaFadeout A 0.2]
+[charaFadeout R 0.2]
+[charaFadeout K 0.2]
+[wt 0.2]
+
+[charaFace B 0]
+[charaFace D 0]
+[charaFadeinFSL B 0.2 0]
+[charaFadeinFSR D 0.2 2]
+[wt 0.5]
+[charaMoveReturnFSL B -256,-5 0.4]
+[charaMoveReturnFSR D 256,-5 0.4]
+[wt 1.0]
+
+[charaFadeout D 0.2]
+[charaFadeout B 0.2]
+[wt 0.2]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ネモ
+[line 3]作戦目的の共有はできたようだね。[r]ちょうどいい。
+[k]
+
+＠ネモ
+当艦はまもなく『嵐の壁』に到達する。[r]総員、席についてベルトを締めて。
+[k]
+
+[se ade208]
+[seVolume ade208 0 0]
+[seVolume ade208 1.0 0.7]
+
+＠ネモ
+トリトンエンジン、一号基から三号基まで並列稼働。[r]推進力に六割、防御障壁に四割の配分で。
+[k]
+
+＠ネモ
+異聞帯を囲む空間断層型[#積乱雲:スーパーセル]を[r]ストーム・ボーダーで突破する。
+[k]
+
+[charaFace E 8]
+
+＠ネモ
+艦首、次元穿孔機構、展開！[r]これより、『異星の神』攻略作戦を開始する！
+[k]
+
+
+[messageOff]
+[se ade7]
+[seVolume ade7 0 0.3]
+[cueSe SE_21 21_ad1097]
+[seVolume 21_ad1097 0 0.7]
+[fadeout white 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[fadein white 2.0]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+
+[wt 0.5]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,664 @@
+
+
+＄94-13-85-00-3-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257800 1 マシュ]
+[charaSet B 7044000 1 千利休]
+[charaSet C 1098257300 1 ダ・ヴィンチ]
+[charaSet D 1098283330 1 ネモ・プロフェッサー]
+[charaSet E 1098283100 1 ネモ・マリーン]
+[charaSet G 1098283410 1 ネモ・エンジン]
+[charaSet H 1098283500 1 ネモ・ベーカリー]
+[charaSet I 1098283200 1 ネモ・ナース]
+
+[charaSet J 1098257800 1 マシュ_演出用]
+[charaSet K 1098257300 1 ダ・ヴィンチ_演出用]
+[charaSet L 1098283330 1 ネモ・プロフェッサー_演出用]
+
+[sceneSet M 132900 1]
+[sceneSet N 132900 1]
+[sceneSet O 132900 1]
+[sceneSet P 132900 1]
+[charaScale M 1.2]
+[charaScale N 1.1]
+[charaScale O 1.1]
+[charaScale P 1.2]
+
+[imageSet Q cut621_flute01 1]
+
+[sceneSet R 10000 1]
+[charaScale R 1.01]
+
+[charaSet S 98115000 1 エフェクト用]
+
+[scene 132900]
+
+[subCameraOn 2]
+[subCameraFilter #A maskEdge cut359_mask05 3 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask10 3 255,255,255,255]
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+[charaLayer J sub #A]
+[charaLayer N sub #A]
+[charaLayer G sub #B]
+[charaLayer O sub #B]
+[charaScale J 1.1]
+[charaScale N 1.1]
+[charaDepth J 2]
+[charaDepth N 1]
+[charaFace J 0]
+[charaFadein J 0.1 -10,170]
+[charaFadein N 0.1 -200,-40]
+[charaScale G 1.1]
+[charaScale O 1.1]
+[charaDepth G 2]
+[charaDepth O 1]
+[charaFace G 2]
+[charaFadein G 0.1 60,170]
+[charaFadein O 0.1 500,-50]
+
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth B 1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadeinFSR A 0.1 230,0]
+[charaFace B 21]
+[charaFadeinFSL B 0.1 -230,0]
+
+[bgm BGM_EVENT_124 0.1]
+
+＠マシュ
+[line 3]新たな特異点の反応が！？[r][#北極圏]にですか？
+[k]
+
+？1：今、どんな状況？
+
+？2：（茶器の鑑定どころじゃなくなったかな……）
+
+[charaFace B 0]
+
+＠千利休
+（……その様でございますね）
+[k]
+
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_124 0.7 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[charaDepth H 7]
+[charaDepth L 7]
+[charaDepth P 6]
+[charaDepth K 5]
+[charaDepth M 4]
+[charaDepth D 3]
+[charaDepth E 2]
+[charaDepth C 1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_124 0.7 1.0]
+[wait wipe]
+
+[charaTalk off]
+[charaFace C 23]
+[charaFadein C 0.4 -30,0]
+[charaFace E 0]
+[charaFadeinFSR E 0.4 330,0]
+[charaFace D 0]
+[charaFadeinFSL D 0.4 -340,0]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk C]
+
+＠ダ・ヴィンチ
+うん。そうなんだ。[wt 1.0][charaFace C 34][r][line 3]いや、違うな。ごめん。
+[k]
+
+[messageOff]
+[charaTalk C,K]
+[charaScale K 1.2]
+[charaFace K 34]
+[charaFadein K 0.6 100,20]
+[charaFadein M 0.6 100,-230]
+[charaMove K 60,20 14.0]
+[charaMove M 60,-230 14.0]
+[wt 0.6]
+[charaTalk off]
+
+[charaFace K 22]
+
+＠ダ・ヴィンチ
+[%1][&君:ちゃん]への報告が[r]遅れてしまったことを、まず謝るよ。
+[k]
+
+＠ダ・ヴィンチ
+私ともあろう者が[r]とっさの判断に迷ってしまった。
+[k]
+
+[charaFace K 0]
+
+＠ダ・ヴィンチ
+今のところ状況が急変する様子は無いから[r]落ち着いてもらって大丈夫。
+[k]
+
+[messageOff]
+[charaScale L 1.2]
+[charaFace L 3]
+[charaFadein L 0.6 -100,20]
+[charaFadein P 0.6 -100,-230]
+[charaMove L -60,20 14.0]
+[charaMove P -60,-230 14.0]
+[wt 0.6]
+[charaFadeout K 0.1]
+[charaFadeout M 0.1]
+
+＠ネモ・プロフェッサー
+はいジングルベルー。[r]反応が実に微弱でしてー。
+[k]
+
+＠ネモ・プロフェッサー
+ボーダーの魔力増幅レーダーの最大利得モードで[r]ギリギリ拾えたくらい。座標もブレブレ。
+[k]
+
+[charaFace D 3]
+[charaFace C 34]
+[charaFace E 0]
+
+＠ネモ・プロフェッサー
+普段でしたらノイズとして[r]切り捨ててしまうレベルです、はい。
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaTalk L,C]
+[charaFadeout L 0.4]
+[charaFadeout P 0.4]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+うん。白紙化された地球でなかったら[r]見過ごしていただろうね。
+[k]
+
+＠ダ・ヴィンチ
+現時点では目標となる反応が弱すぎて[r]レイシフトで向かうことすら難しい。
+[k]
+
+[charaFace C 2]
+
+＠ダ・ヴィンチ
+ひとまず、北極圏まで発生地域を限定できたので、[r]焦点を絞り込んで探知を続けているところさ。
+[k]
+
+[charaFace D 0]
+
+＠ネモ・プロフェッサー
+その探知もそろそろ継続困難になってきた有様で。[r]数日中にも消えてしまう可能性は濃厚ですねぇ。
+[k]
+
+[messageOff]
+[charaTalk J]
+[charaFace J 11]
+[subRenderFadeinFSR #A 0.4 250,-160]
+[subRenderMoveFSR #A 250,-180 0.4]
+[wt 0.4]
+[charaFace C 23]
+
+＠J：マシュ
+では、新たな特異点が発見されるも数日内に[r]自然消滅してしまうかも、という状況なのですね。
+[k]
+
+[subRenderMoveFSR #A 250,-200 0.4]
+[subRenderFadeout #A 0.3]
+
+＠ダ・ヴィンチ
+探知不能　[#＝:イコール]　特異点の消滅、ではないけれどね。[r]我々の活動にとっては結果は同じだ。
+[k]
+
+[bgmStop BGM_EVENT_124 1.0]
+
+[charaFace E 2]
+[charaMoveReturnFSR E 330,10 0.3]
+
+＠ネモ・マリーン
+ハイハイハイ、ハーイ！
+[k]
+
+[charaFace E 1]
+
+＠ネモ・マリーン
+これはきっとサンタさんだよ！[r]なんてったって、クリスマスだもん！
+[k]
+
+[bgm BGM_XMAS_2016 0.1]
+[charaFace E 0]
+
+＠ネモ・マリーン
+ボクらだってついさっきまで、[r]明日の飾り付けで艦内を走り回ってたんだし？
+[k]
+
+[messageOff]
+[charaTalk G]
+[subRenderFadeinFSL #B 0.4 -450,-150]
+[subRenderMoveFSL #B -400,-150 0.4]
+[wt 0.4]
+
+＠ネモ・エンジン
+ハァ？　おいそれ、現代都市伝説っていうか[r]空軍伝説のアレだろ？
+[k]
+
+[charaFace G 3]
+
+＠ネモ・エンジン
+クリスマス・イブに領空侵犯する謎の超音速飛行物体が[r]世界各国の防空レーダーを騒がせるっていう。
+[k]
+
+？1：へえー。でも飛行してる感じじゃないん[&だよね:でしょ]？
+
+[subRenderMoveFSL #B -450,-150 0.4]
+[subRenderFadeout #B 0.3]
+
+[charaFace C 0]
+
+＠ダ・ヴィンチ
+うん。座標にバラつきはあるが、[r]大きな移動の兆候はない。
+[k]
+
+？2：具体的には北極圏のどのあたり？
+
+[subRenderMoveFSL #B -450,-150 0.4]
+[subRenderFadeout #B 0.3]
+
+？！
+
+[charaFace C 1]
+
+＠ダ・ヴィンチ
+場所は、フィンランド北部を中心に、スウェーデン、[r]ノルウェー、ロシアのそれぞれ一部を含む範囲[line 3]
+[k]
+
+＠ダ・ヴィンチ
+いわゆる“ラップランド”地域にちょうど重なる。
+[k]
+
+[charaFace C 19]
+
+＠ダ・ヴィンチ
+フィンランド……ラップランド……うん、なるほど？[r]サンタ説にも説得力が出てきたかなぁ？
+[k]
+
+[messageOff]
+[charaFadeout D 0.6]
+[charaFadeout E 0.6]
+[charaFadeout C 0.6]
+[cameraMoveEase 50,-10 1.0 easeOutSine 1.15]
+[wt 1.0]
+
+[charaScale H 0.85]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.4 -160,-20]
+[wt 0.4]
+
+＠ネモ・ベーカリー
+ラップランド……！[r]でしたらこれはいよいよサンタさん！
+[k]
+
+[charaFace H 2]
+
+＠ネモ・ベーカリー
+伝説の“サンタ村”かもしれませんね？
+[k]
+
+[messageOff]
+[charaTalk J]
+[charaFace J 5]
+[subRenderFadeinFSR #A 0.4 250,-150]
+[subRenderMoveFSR #A 250,-180 0.4]
+[wt 0.4]
+
+＠J：マシュ
+サンタ村、ですか？
+[k]
+
+[messageOff]
+[cameraMoveEase 0,0 1.0 easeOutSine 1.0]
+[charaFadeout H 0.4]
+[subRenderFadeout #A 0.3]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 -30,0]
+[charaFace E 2]
+[charaFadeinFSR E 0.4 330,0]
+[charaFace D 0]
+[charaFadeinFSL D 0.4 -340,0]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+ふふっ。
+[k]
+
+[charaFace C 1]
+
+＠ダ・ヴィンチ
+……とまあ、管制室としては[r]反応の完全消失まで警戒は続けるけれど、
+[k]
+
+＠ダ・ヴィンチ
+現在のところ緊急性は無くて、無害で、[r]危険性もみられない[line 3]というわけ。
+[k]
+
+[charaFace C 0]
+
+＠ダ・ヴィンチ
+[%1][&君:ちゃん]もマシュも[r]休憩に戻って構わないよ？
+[k]
+
+？1：ええ～？　[&ホントかなあ？:ほんとうに～？]
+
+[charaFace C 17]
+
+＠ダ・ヴィンチ
+懸念はごもっとも。
+[k]
+
+[charaFace C 30]
+
+＠ダ・ヴィンチ
+イレギュラーな事態に鍛えられて[r]用心深くなったのはいいことだ。
+[k]
+
+[charaFace C 31]
+
+＠ダ・ヴィンチ
+でも、心配のしすぎも体によくないからね？[r][%1][&君:ちゃん]？
+[k]
+
+？2：おつかれさまです
+
+[charaFace C 4]
+
+＠ダ・ヴィンチ
+ありがとう。
+[k]
+
+[charaFace C 19]
+
+＠ダ・ヴィンチ
+その言葉とコーヒーがあれば、[r]この万能の天才はまだまだ頑張れるよ。
+[k]
+
+？！
+
+[charaFace C 24]
+
+＠ダ・ヴィンチ
+ところで、キミたちこそ[r]私に用事があったんだろう？
+[k]
+
+＠ダ・ヴィンチ
+[line 3]ふむ？[r]正体不明のアイテムの鑑定を？　[wt 1.2][charaFace C 17]いいとも！
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgmStop BGM_XMAS_2016 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+
+[charaLayer J normal]
+[charaLayer N normal]
+[charaLayer G normal]
+[charaLayer O normal]
+[charaFadeout J 0.1]
+[charaFadeout N 0.1]
+[charaFadeout G 0.1]
+[charaFadeout O 0.1]
+[subCameraOff]
+
+[charaDepth Q 9]
+[charaDepth B 8]
+[charaDepth K 7]
+[charaDepth M 6]
+[charaDepth C 5]
+[charaDepth A 4]
+[charaDepth I 4]
+[charaDepth Q 3]
+[charaDepth R 2]
+
+[charaScale A 1.0]
+[charaScale K 1.1]
+[charaScale B 1.1]
+[charaScale M 1.15]
+[wt 1.0]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+
+[charaFadein Q 0.4 0,-200]
+[charaPut R 0,-200]
+[charaFadeTime R 0.4 0.5]
+[wt 2.0]
+[charaFadeout Q 0.4]
+[charaFadeout R 0.4]
+[wt 0.4]
+
+[bgm BGM_AMAZONES 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.2 1]
+
+＠ダ・ヴィンチ
+ふむふむ……。[r]なるほど、信長公がね……。
+[k]
+
+＠ダ・ヴィンチ
+ごくわずかに魔力は宿しているものの[r][#凡庸:ぼんよう]な市販の[#護符:アミュレット]クラスだね。
+[k]
+
+[charaFace C 23]
+
+＠ダ・ヴィンチ
+用途は……なんだろう？[wt 0.8][cueSe SE_23 23_ade839][cueSeStop 23_ade839 1.0][r]（コツコツ）
+[k]
+
+[charaFace C 17]
+
+＠ダ・ヴィンチ
+……ははあ、これは一種のフルート、[r]“楽器”の可能性があるね？
+[k]
+
+＠ダ・ヴィンチ
+指穴は無いけど、オーバートーンフルートの如く[r]倍音を共鳴させる構造になっているようだ。
+[k]
+
+？1：さすがダ・ヴィンチちゃん！　あっという間だね
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠マシュ
+茶器やイースター・エッグではなく[r]楽器ですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 34]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+うーん、いや、まだ結論には早い。
+[k]
+
+＠ダ・ヴィンチ
+少なくとも私にとっては[r]未知なる工芸品なのは確かだ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[se ad8]
+[wt 2.0]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[se ad95]
+[seStop ad95 0.4]
+[wt 0.4]
+
+＠ネモ・ナース
+巡回検診のお手伝いから戻りました。
+[k]
+
+＠ネモ・ナース
+いつものお医者様嫌いで[r]大暴れされる方々以外は異常なしです。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+[line 3]おかえり、ナース。ご苦労さま。
+[k]
+
+[charaFace C 23]
+
+＠ダ・ヴィンチ
+ふーむ？　用途もだけど[r]材質や制作年代が気になるなあ。
+[k]
+
+[charaFace C 2]
+
+＠ダ・ヴィンチ
+機材を使ってもう少し詳しく調べてみたいから[r]預からせてもらっていいかな？
+[k]
+
+＠ダ・ヴィンチ
+[line 3]といっても特異点の件もあるし、[r]調査の時間が取れるまで……
+[k]
+
+[messageOff]
+[charaTalk C,K]
+[charaFace K 2]
+[charaFadein K 0.6 -280,10]
+[charaFace B 0]
+[charaFadein B 0.6 280,10]
+[charaFadein M 0.6 -30,-230]
+[wt 1.0]
+[charaFadeout C 0.1]
+
+[charaFace K 0]
+
+＠K：ダ・ヴィンチ
+うん、ムニエルくんに保管してもらおう。[r]利休からもそう信長公に伝えておいて。
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFaceFade B 25 0.2]
+[charaMoveReturn B 280,7 0.5]
+[wait charaMove B]
+[wt 0.5]
+
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+？1：了解！　そういえばキャプテンは？
+？！
+
+[messageOff]
+[charaTalk B,I]
+[charaFadeout K 0.6]
+[charaFadeout B 0.6]
+[charaFadeout M 0.6]
+[wt 0.6]
+
+＠ネモ・ナース
+キャプテンでしたら、[r]ゴルドルフ所長の様子を見に行かれました。
+[k]
+
+＠ネモ・ナース
+度を越した飾り付けで[r]艦の機能を損なっていないか気がかりだとか。
+[k]
+
+[charaFace I 0]
+
+＠ネモ・ナース
+最終的にはご自分から率先して[r]熱心にデコボーダーされていましたが。
+[k]
+
+＠ネモ・ナース
+昨年度のサンタを務めた者の最後の仕上げとして、[r]恥ずかしいものは披露できない、ですとか。
+[k]
+
+？1：キャプテンらしいね！
+？2：（……そういえば今年のサンタって？）
+？！
+
+[messageOff]
+[charaTalk I,K]
+[charaFace K 13]
+[charaFadein K 0.6 -280,10]
+[charaFace B 0]
+[charaFadein B 0.6 280,10]
+[charaFadein M 0.6 -30,-230]
+[wt 0.6]
+[charaFadeout I 0.1]
+
+＠K：ダ・ヴィンチ
+えーっ、[%1][&君:ちゃん]たちは[r]バレエ談義してきたのかい？
+[k]
+
+[charaFace K 7]
+
+＠K：ダ・ヴィンチ
+いーなー！　私も交ざりたかったなー！[r]新しいバレエ舞台のアイデアがあるんだよー！
+[k]
+
+[charaFace B 2]
+
+＠千利休
+こほん。[r][#皆々:みなみな]さま、なかなかの浮かれぶりでございますな。
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_AMAZONES 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

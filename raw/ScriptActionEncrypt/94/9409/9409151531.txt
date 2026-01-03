@@ -1,0 +1,250 @@
+
+
+＄94-09-15-15-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11018002 1 丑御前]
+[charaSet B 1098257810 1 マシュ]
+[charaSet C 1098284000 1 地右衛門]
+[charaSet D 1060000 1 宮本伊織]
+
+[charaSet E 1098284000 1 地右衛門_演出用]
+[charaSet F 1098284000 1 地右衛門_演出用]
+[charaFilter F silhouette 00000080]
+
+[sceneSet O 205500 1]
+[sceneSet P 205500 1]
+
+[charaSet Q 1098284000 1 エフェクト用]
+[charaSet R 1098284000 1 エフェクト用]
+
+[sceneSet S 10000 1]
+[charaScale S 1.1]
+
+[charaSet T 98115000 1 エフェクト用]
+[charaPut T 2000,2500]
+[charaEffect T bit_talk_10_LowLevel]
+
+[charaTalk depthOff]
+[se ad207]
+[scene 205500]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.2]
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 1.5]
+[effect bit_talk_06]
+[seStop ad207 1.5]
+[bgm BGM_EVENT_188 0.1]
+
+＠丑御前
+……嗚呼。
+[k]
+
+＠丑御前
+[#幽:かす]かな残り香なれど……[r]この死の気配……確かに……
+[k]
+
+[charaFace A 6]
+
+＠丑御前
+いつか……きっと……[r]すべてを……ただして……
+[k]
+
+[charaFace A 8]
+＠丑御前
+またいつか、お会いしましょう。[r]カルデアのマスター。
+[k]
+
+[messageOff]
+[wt 0.7]
+
+[charaSpecialEffect A flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect A]
+[effectStop bit_talk_06]
+[wt 1.2]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……頼光さん。
+[k]
+
+[charaFace B 6]
+
+＠マシュ
+[line 3]霊基消滅を確認しました。[r]丑御前、撃破です！
+[k]
+
+[messageOff]
+[charaTalk B,C]
+[se ad429 0]
+[seVolume ad429 0.4 0.7]
+[subCameraOn 1]
+[charaLayer O sub #A]
+[charaLayer S sub #A]
+[charaLayer Q sub #A]
+[charaLayer C sub #A]
+[charaLayer F sub #A]
+[subCameraFilter #A normal]
+[charaDepth O 5]
+[charaDepth S 7]
+[charaDepth Q 6]
+[charaDepth C 8]
+[charaScale O 1.2]
+[charaScale C 1.2]
+[charaFadein O 0.1 -90,-250]
+[charaFace C 33]
+[charaFadein C 0.1 -90,0]
+[charaMove O -100,-250 3.0]
+[charaMove C -100,0 3.0]
+[charaEffect Q bit_talk_sparks_fs]
+[subRenderFadein #A 0.4 0,0]
+[wt 3.0]
+[charaPut T 2000,2500]
+[charaFadeout B 0.1]
+[charaPut T 2000,2500]
+[charaDepth P 2]
+[charaDepth R 3]
+[charaDepth E 4]
+[charaDepth D 0]
+[charaScale P 1.1]
+[charaScale E 1.0]
+[charaFadein P 0.1 0,-200]
+[charaFace E 28]
+[charaFadein E 0.1 0,0]
+[charaFace D 5]
+[charaFadein D 0.1 0,0]
+
+＠地右衛門
+……………………。
+[k]
+
+[messageOff]
+[charaFadeTime S 0.4 0.5]
+[wt 0.4]
+[charaDepth F 10]
+[charaScale F 1.2]
+[charaPut F -100,0]
+[charaFadeTime F 0.1 0.3]
+＠
+『……困った子だね』
+[k]
+
+[charaFadeout S 0.2]
+[charaFadeout F 0.2]
+[charaFaceFade C 32 0.1]
+
+＠地右衛門
+おっ、かあ……俺……
+[k]
+
+＠地右衛門
+俺たち……島原で……[r]たくさん殺しちまったから……
+[k]
+
+[charaFaceFade C 31 0.1]
+
+＠地右衛門
+だから、きっと……[r]みんな地獄に堕ちて……
+[k]
+
+＠地右衛門
+俺……みんなに会いたくて……[r][#莫迦:ば　か]だから……これしか思いつかなくて……
+[k]
+
+[messageOff]
+[se ad961 0.4]
+[charaEffect Q bit_talk_fire_fs]
+[charaEffect R bit_talk_sparks_fs]
+[charaEffect R bit_talk_fire_fs]
+[seVolume ad429 0.4 1.0]
+[wt 1.5]
+[charaFaceFade C 27 0.1]
+
+＠地右衛門
+でも……いなかった……[r]いなかったんだ……
+[k]
+
+＠地右衛門
+[line 3]地獄には、だれも、いなかった。
+[k]
+
+[charaFaceFade C 28 0.1]
+
+＠地右衛門
+だから……おっ[#父:とう]も……おっ[#母:かあ]も……[r]みんな、きっと……
+[k]
+
+[messageOff]
+[charaTalk C,E]
+[wt 1.0]
+[subRenderFadeout #A 0.6]
+[wt 0.6]
+[charaFadeout O 0.6]
+[charaFadeout C 0.6]
+[charaPut Q 2000,2500]
+[charaEffectStop Q bit_talk_sparks_fs]
+[charaEffectStop Q bit_talk_fire_fs]
+[fowardEffect bit_talk_charge_fire_red 0,-450]
+[se ad960 0.7]
+[wt 1.2]
+[charaFaceFade E 33 0.1]
+[charaEffect E bit_talk_06 0,-50]
+
+＠E：地右衛門
+………………………………。
+[k]
+
+[charaFaceFade E 19 0.1]
+
+＠E：地右衛門
+俺は行かねえ。[r]行っちゃならねえ。
+[k]
+
+＠E：地右衛門
+地獄は……俺だけで……
+[k]
+
+[messageOff]
+[charaFaceFade E 24 0.4]
+[cueSe SE_21 21_ad1148]
+[seStop 21_ad1148 2.5]
+[seStop ad429 1.5]
+[charaTalk E,D]
+[charaEffectStop R bit_talk_sparks_fs]
+[charaEffectStop R bit_talk_fire_fs]
+[wt 1.0]
+[bgmStop BGM_EVENT_188 4.0]
+
+[charaSpecialEffect E flashErasure 1 1.7]
+[se ad52]
+[wt 0.7]
+[fowardEffectStop bit_talk_charge_fire_red]
+[wait charaSpecialEffect E]
+[charaEffectStop E bit_talk_06]
+[wt 1.5]
+[charaFadeout P 0.4]
+[wt 1.4]
+
+＠宮本伊織
+……地右衛門。
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

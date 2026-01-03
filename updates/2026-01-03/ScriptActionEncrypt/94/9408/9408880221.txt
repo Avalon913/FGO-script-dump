@@ -1,0 +1,979 @@
+
+
+
+＄94-08-88-02-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 25013000 1 ワンジナ]
+[charaSet B 1098257910 1 マシュ]
+[charaSet D 25005000 1 ボイジャー]
+[charaSet F 2022000 1 アルテラサンタ]
+[charaSet G 1098243000 1 エリセ]
+[charaSet H 7042000 1 クリームヒルト]
+[charaSet I 98110000 1 柳生但馬守]
+[charaSet J 1098257310 1 ダ・ヴィンチ]
+
+[charaSet K 98006000 1 魔獣1]
+[charaSet L 98006000 1 魔獣2]
+[charaSet M 98006000 1 魔獣3]
+[charaSet N 98006000 1 魔獣4]
+[charaSet O 98006000 1 魔獣5]
+[charaSet S 1098257900 1 マシュ_アーマード]
+
+[charaSet P 98115000 1 エフェクト用]
+[sceneSet Q 107801 1]
+[sceneSet R 107801 1]
+[sceneSet T 107801 1]
+[sceneSet E 107801 1]
+[charaSet C 10012000 1 太歳星君]
+
+[scene 107801]
+
+[subCameraOn 4]
+
+[charaLayer I sub #A]
+[charaLayer Q sub #A]
+
+[charaLayer H sub #B]
+[charaLayer R sub #B]
+
+[charaLayer A sub #C]
+[charaLayer T sub #C]
+
+[charaLayer S sub #D]
+[charaLayer E sub #D]
+
+[subCameraFilter #A maskEdge cut359_mask03 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask02 5 102,0,0,255]
+[subCameraFilter #C maskEdge cut359_mask03 5 96,238,255,255]
+[subCameraFilter #D maskEdge cut359_mask16 5 255,255,255,255]
+
+[charaScale H 1.3]
+[charaScale A 1.4]
+[charaScale I 1.3]
+[charaScale S 1.3]
+[charaScale Q 1.3]
+[charaScale R 1.3]
+[charaScale T 1.3]
+[charaScale E 1.3]
+
+[charaDepth Q 1]
+[charaDepth R 2]
+[charaDepth T 2]
+[charaDepth E 2]
+
+[charaDepth A 3]
+[charaDepth H 3]
+[charaDepth I 3]
+[charaDepth S 3]
+
+[charaDepth N 1]
+[charaDepth O 2]
+[charaDepth K 3]
+[charaDepth M 4]
+[charaDepth L 5]
+
+
+[charaFace I 5]
+[charaFadein I 0.1 -150,0]
+[charaFadein Q 0.1 -150,-220]
+
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk off]
+[charaFace K 0]
+[charaFadeinFSL K 0.1 0]
+
+[charaFace L 0]
+[charaFadeinFSR L 0.1 2]
+
+[wt 0.5]
+
+[subRenderFadein #A 0.2 0,-130]
+[charaMove I 0,0 0.2]
+[charaMove Q 0,-220 0.2]
+[wt 0.3]
+
+＠柳生但馬守
+むん！
+[k]
+
+[messageOff]
+
+[charaMove I 150,0 0.2]
+[charaMove Q 150,-220 0.2]
+[subRenderFadeout #A 0.2]
+
+[wt 0.5]
+
+[se ad386]
+
+[effect bit_talk_kengekiall02_fs]
+[se bac528]
+[wt 0.1]
+[charaShake K 0.05 2 2 0.3]
+[charaShake L 0.05 2 2 0.3]
+[wt 0.2]
+[se ad467]
+[wt 0.1]
+[charaShake K 0.05 2 2 0.3]
+[charaShake L 0.05 2 2 0.3]
+[wt 0.6]
+
+[se ad42]
+[charaSpecialEffect L erasure 1 1.0]
+[wt 0.1]
+[charaSpecialEffect K erasure 1 1.0]
+[wait charaSpecialEffect K]
+[wait charaSpecialEffect L]
+
+[charaFadeout I 0.1]
+
+[wt 0.5]
+
+[charaFace S 2]
+[charaFadeinFSR S 0.1 -100,150]
+[charaFadein E 0.1 -250,-150]
+
+[subRenderFadein #D 0.2 400,-150]
+[subRenderMove #D 350,-200 0.3]
+[wt 0.5]
+
+＠マシュ
+敵性反応、消失を確認！[r]生命体というより、ゴーストなどに近いようです。
+[k]
+
+[messageOff]
+[subRenderMove #D 300,-250 0.3]
+[subRenderFadeout #D 0.2]
+
+[wt 0.5]
+
+[se ad769]
+[se ad443]
+[charaFace K 0]
+[charaFadeinFSL K 0.7 -350,0]
+
+[charaFace L 0]
+[charaFadein L 0.7 1]
+
+[charaFace M 0]
+[charaFadeinFSR M 0.7 350,0]
+[wt 0.5]
+[seStop ad769 0.4]
+[seStop ad443 0.4]
+[wt 0.8]
+
+[charaFace H 2]
+[charaFadein H 0.1 50,250]
+[charaFadein R 0.1 150,-150]
+
+[subRenderFadein #B 0.2 0,-300]
+[charaMove H -100,250 0.2]
+[charaMove R 0,-150 0.2]
+[wt 0.3]
+
+＠クリームヒルト
+ああもう、[#鬱陶:うっとう]しい！
+[k]
+
+[messageOff]
+
+[charaMove H -250,250 0.2]
+[charaMove R -150,-150 0.2]
+[subRenderFadeout #B 0.2]
+
+[wt 0.5]
+
+[se bac266]
+[effect bit_talk_x_slash_bk_01]
+[wt 0.2]
+[charaShake K 0.05 2 2 0.2]
+[charaShake L 0.05 2 2 0.2]
+[charaShake M 0.05 2 2 0.2]
+
+[se bac209]
+[effect bit_talk_x_slash_bk_02]
+[wt 0.2]
+[charaShake K 0.05 2 2 0.2]
+[charaShake L 0.05 2 2 0.2]
+[charaShake M 0.05 2 2 0.2]
+
+[se bac265]
+[effect bit_talk_x_slash_bk_03]
+[wt 0.2]
+[charaShake K 0.05 2 2 0.2]
+[charaShake L 0.05 2 2 0.2]
+[charaShake M 0.05 2 2 0.2]
+[wt 0.5]
+
+[se ad42]
+[charaSpecialEffect K erasure 1 1.0]
+[wt 0.1]
+[charaSpecialEffect L erasure 1 1.0]
+[wt 0.1]
+[charaSpecialEffect M erasure 1 1.0]
+[wait charaSpecialEffect K]
+[wait charaSpecialEffect L]
+[wait charaSpecialEffect M]
+
+[charaFadeout H 0.1]
+[wt 0.8]
+
+[se ad443]
+[se ad769]
+[charaFace L 0]
+[charaFadein L 0.7 1]
+[wt 0.3]
+
+[charaFace K 0]
+[charaFadeinFSL K 0.7 -250,0]
+
+[charaFace M 0]
+[charaFadeinFSR M 0.7 250,0]
+[wt 0.3]
+
+[charaFace N 0]
+[charaFadeinFSR N 0.7 500,0]
+
+[charaFace O 0]
+[charaFadeinFSL O 0.7 -500,0]
+[wt 0.5]
+[seStop ad769 0.4]
+[seStop ad443 0.4]
+[wt 0.8]
+
+[charaFace A 1]
+[charaFadein A 0.1 -200,50]
+[charaFadein T 0.1 -150,-220]
+
+[subRenderFadein #C 0.2 0,-130]
+[charaMove A 0,50 0.2]
+[charaMove T 0,-220 0.2]
+[wt 0.3]
+
+＠ワンジナ
+にーげーなーいーでー！[r]どーいーてー！
+[k]
+
+[messageOff]
+
+[charaMove A 150,50 0.2]
+[charaMove T 150,-220 0.2]
+[subRenderFadeout #C 0.2]
+
+[wt 0.5]
+
+
+[charaFadeout A 0.1]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[se ad923]
+[se ad1051]
+
+[effect bit_talk_quick_slash_bl]
+[wt 0.1]
+[flashin once 0.1 0.3 66FF66AF 66FF6600]
+[charaShake K 0.05 2 2 0.5]
+[charaShake L 0.05 2 2 0.5]
+[charaShake M 0.05 2 2 0.5]
+[charaShake N 0.05 2 2 0.5]
+[charaShake O 0.05 2 2 0.5]
+[wt 0.9]
+
+[charaSpecialEffect K enemyErasure 1 1.0]
+[se ad42]
+[wt 0.1]
+
+[charaSpecialEffect M enemyErasure 1 1.0]
+[wt 0.1]
+
+[charaSpecialEffect L enemyErasure 1 1.0]
+[wt 0.1]
+
+[charaSpecialEffect N enemyErasure 1 1.0]
+[wt 0.1]
+
+[charaSpecialEffect O enemyErasure 1 1.0]
+
+[seStop ad42 1.5]
+
+[wait charaSpecialEffect K]
+[wait charaSpecialEffect L]
+[wait charaSpecialEffect M]
+[wait charaSpecialEffect N]
+[wait charaSpecialEffect O]
+
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[charaFadeout S 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[charaFadeout T 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠太歳星君
+逃げられちゃったぞー！
+[k]
+
+[charaLayer A normal]
+[charaLayer I normal]
+[charaLayer H normal]
+[charaLayer S normal]
+[charaLayer Q normal]
+[charaLayer R normal]
+[charaLayer T normal]
+[charaLayer E normal]
+
+[charaScale I 1.0]
+[charaScale A 1.0]
+[charaScale H 1.0]
+[charaScale S 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ボイジャー
+ああ、くやしいなあ……。
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad13]
+[wt 0.3]
+
+[charaPut P 1]
+[charaEffect P bit_talk_10_LowLevel]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 14]
+[charaFadein J 0.1 1]
+
+＠ダ・ヴィンチ
+はいはい、こちらダ・ヴィンチちゃん！[r]悪いお知らせがある！
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaFace J 8]
+＠ダ・ヴィンチ
+タッチの差で聖杯が逃げて行った！
+[k]
+
+[charaFace J 25]
+＠ダ・ヴィンチ
+聖杯は今……え、これマジ？[r]マジかー……。
+[k]
+
+[charaFace J 26]
+＠ダ・ヴィンチ
+えーと……[r]アメリカ大陸のグランドキャニオンにいる！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut P 2000,2000]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ほ、本当ですか！[r]グランドキャニオンって、グランドキャニオンですよね！？
+[k]
+
+＠マシュ
+というよりも、[r]この特異点はそんなに大きいのですか！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 9]
+[charaFadein J 0.1 1]
+[charaPut P 1]
+
+＠ダ・ヴィンチ
+うん、最初に見たときは確かにオーストラリアだけ[r]だったんだけど、その後で急速に拡大を果たした……？
+[k]
+
+＠ダ・ヴィンチ
+いや、あるいは最初の観測で数値がかなり乱れていたから、[r]元々、巨大だったのかも……？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut P 2000,2000]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠クリームヒルト
+待ちなさい。[r]私たちはサーヴァントだけど……。
+[k]
+
+＠クリームヒルト
+いくら何でもオーストラリアから一足飛びで[r]アメリカ大陸に向かうのは不可能よ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 34]
+[charaFadein J 0.1 1]
+[charaPut P 1]
+
+＠ダ・ヴィンチ
+だよねえ。[r]どうしたものか……。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut P 2000,2000]
+[charaEffectDestroy P bit_talk_10_LowLevel]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ワンジナ
+はい！[charaMoveReturn A 0,5 0.2][r]ワンジナ、はーい！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠柳生但馬守
+うむ、ではわんじな殿。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ワンジナ
+よく分からないけど、[r]離れた聖杯のところへ向かいたいんだよね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+＠エリセ
+そ、そうだけど……。[r]何とかなるかな？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ワンジナ
+なるー！[r]カルデアのマスター、手を握って！
+[k]
+
+？1：こう？
+？！
+
+[messageOff]
+
+[cameraMove 0.5 0,-10 1.1]
+[wt 0.4]
+
+[se ad775]
+[wt 0.5]
+
+[charaFace A 0]
+＠ワンジナ
+ほらほら、みんなも。[r]隣の人とぎゅーっとして！　手と手を繋いで！
+[k]
+
+[messageOff]
+
+[fadeout black 0.5]
+[wait fade]
+
+[cameraHome 0.1]
+
+[charaFadeout A 0.1]
+
+[charaSet E 1098122300 1 ドゥムジ]
+[charaSet S 25013000 1 ワンジナ1]
+[charaSet K 25013000 1 ワンジナ_演出用]
+[charaSet B 1098257910 1 マシュ]
+[sceneSet O 107801 1]
+
+[charaTalk depthOff]
+
+[charaDepth R 1]
+[charaDepth H 3]
+[charaDepth B 2]
+[charaDepth C 8]
+[charaDepth D 7]
+[charaDepth G 9]
+[charaDepth E 6]
+[charaDepth F 7]
+[charaDepth I 8]
+
+[charaScale H 1.2]
+[charaScale B 1.2]
+[charaScale C 1.2]
+[charaScale D 1.2]
+[charaScale G 1.2]
+[charaScale E 1.1]
+[charaScale F 1.2]
+[charaScale I 1.2]
+
+[charaFadein R 0.1 150,-150]
+
+[charaTalk off]
+
+[charaFace H 0]
+[charaFadein H 0.1 -250,0]
+
+[charaFace B 0]
+[charaFadein B 0.1 250,0]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.7]
+
+[charaMove H -230,0 0.5]
+[charaMove B 230,0 0.5]
+[wt 0.5]
+[se ad775]
+[wt 0.5]
+
+[charaMove R 100,-150 0.5]
+[charaMove H -280,0 0.5]
+[charaMove B 170,0 0.5]
+[charaFadeout H 0.5]
+[charaFadeout B 0.5]
+
+[charaFace C 0]
+[charaFadein C 0.4 -250,0]
+[charaFace D 1]
+[charaFadein D 0.4 70,0]
+[charaFace G 0]
+[charaFadein G 0.4 350,0]
+
+[charaMove C -300,0 0.5]
+[charaMove D 20,0 0.5]
+[charaMove G 300,0 0.5]
+[wt 1.0]
+
+[charaMove C -280,0 0.5]
+[charaMove D 20,0 0.5]
+[charaMove G 280,0 0.5]
+[wt 0.5]
+[se ad775]
+[wt 0.5]
+
+[charaMove C -330,0 0.5]
+[charaMove D -30,0 0.5]
+[charaMove G 230,0 0.5]
+[charaMove R 52,-150 0.47]
+[charaFadeout C 0.5]
+[charaFadeout D 0.5]
+[charaFadeout G 0.5]
+
+[charaFace E 0]
+[charaFadein E 0.4 -250,0]
+[charaFace F 0]
+[charaFadein F 0.4 50,0]
+[charaFace I 0]
+[charaFadein I 0.4 350,0]
+
+[charaMove I 300,0 0.5]
+[charaMove E -300,0 0.5]
+[charaMove F 0,0 0.5]
+[wt 1.0]
+
+[charaMove E -280,0 0.5]
+[charaMove I 280,0 0.5]
+[wt 0.5]
+[se ad775]
+[wt 0.5]
+
+[charaFadeout E 0.2]
+[charaFadeout F 0.2]
+[charaFadeout I 0.2]
+[charaFadeout R 0.2]
+
+[wt 0.3]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ワンジナ
+それじゃあいくよ。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaDepth A 1]
+[charaDepth Q 2]
+[charaDepth O 2]
+[charaDepth S 3]
+[charaDepth K 3]
+
+[charaScale K 1.3]
+[charaScale S 1.3]
+[charaScale Q 1.3]
+[charaScale O 1.3]
+
+[charaScale H 1.0]
+[charaScale B 1.0]
+[charaScale C 1.0]
+[charaScale D 1.0]
+[charaScale G 1.0]
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaScale I 1.0]
+
+[charaTalk S]
+[charaFace S 12]
+[charaFadein S 0.7 -100,0]
+[charaFadein Q 0.7 0,-200]
+[charaMove S 0,0 20.0]
+[charaMove Q 100,-200 20.0]
+
+[bgm BGM_EVENT_38 2.0]
+
+[se ad852]
+[effect bit_talk_noble_light]
+
+[wt 0.5]
+
+[seVolume ad852 0 0]
+[seVolume ad852 1.0 0.5]
+[cueSe SE_21 21_ad1108]
+[seVolume 21_ad1108 0 0]
+[seVolume 21_ad1108 1.0 0.2]
+
+[charaFadeout A 0.1]
+
+＠S：ワンジナ
+[line 4]風よ、風よ。星を踊る軽やかなる、風よ。
+[k]
+
+＠S：ワンジナ
+地を越え、海を越え、世界さえ越えて。
+[k]
+
+＠S：ワンジナ
+[&彼:彼女]らを乗せて。[r]さあ、彼方までの軌跡を描け。
+[k]
+
+＠S：ワンジナ
+[#霊基スケール]、[#一時的復元]。[r][#七惑星:セブンスターズ]、超空間魔力リンク開始。
+[k]
+
+[messageOff]
+
+[se ad934]
+[seStop 21_ad1108 1.0]
+[seStop ad852 1.0]
+[effectStop bit_talk_noble_light]
+[wt 1.0]
+[charaFadeout S 0.5]
+[charaFadeout Q 0.5]
+
+[wt 2.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ドゥムジ
+Ｏｈ……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠アルテラサンタ
+む？　どうしたドゥムジ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ドゥムジ
+エア。大気は星を覆うものであり、自由そのもの。[r][#世界:テクスチャ]の制限さえなく何処へでも渡れますね。
+[k]
+
+＠ドゥムジ
+大したものですよ、これは。[r]イシュタルがいたら大惨事です。私によこせ、と。
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_38 1.5]
+
+[charaTalk K]
+[charaFace K 4]
+[charaFadein K 0.3 1]
+[charaFadein O 0.3 0,-200]
+
+＠K：ワンジナ
+いっくよーーー！[r]びゅーーーんって、飛んじゃえーーー！
+[k]
+
+
+[messageOff]
+
+[se ad598]
+[wt 0.1]
+[charaMoveEase K 0,10 1.0 easeInOutBack]
+[wt 1.2]
+
+[se ad306]
+[charaMove K 0,100 0.3]
+[charaFadeout K 0.3]
+[wipeout rectangleStripUpToDown 0.2 1.0]
+[wait wipe]
+
+[scene 110100]
+
+[charaFadeout O 0.1]
+[sceneSet Q 110100 1]
+
+
+[charaLayer G sub #A]
+[charaLayer Q sub #A]
+
+[charaLayer A sub #A]
+
+[charaLayer C sub #A]
+[charaLayer D sub #A]
+[charaLayer H sub #A]
+[charaLayer I sub #A]
+[charaLayer F sub #A]
+[charaLayer E sub #A]
+[charaLayer B sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask04 3 255,255,255,255]
+
+[charaScale G 1.4]
+[charaScale A 1.4]
+[charaScale Q 1.3]
+[charaScale B 1.3]
+[charaScale C 1.2]
+[charaScale D 1.2]
+[charaScale H 1.3]
+[charaScale I 1.3]
+[charaScale F 1.3]
+[charaScale E 1.1]
+
+
+[charaDepth Q 1]
+[charaDepth A 3]
+[charaDepth G 4]
+[charaDepth B 4]
+[charaDepth C 4]
+[charaDepth D 4]
+[charaDepth H 4]
+[charaDepth I 4]
+[charaDepth F 4]
+[charaDepth E 4]
+
+[charaTalk G]
+[charaFace G 15]
+[charaFadein G 0.1 0,300]
+[charaFadein Q 0.1 0,200]
+[wt 0.1]
+
+[effect bit_talk_41_fs]
+
+[wt 0.8]
+
+[se ad291]
+[wipein rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+[wt 0.4]
+
+[bgm BGM_MAP_2 0.1]
+
+[subRenderFadein #A 0.2 0,-320]
+[wt 0.2]
+
+＠エリセ
+と……飛んでるーーー！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,300]
+＠マシュ
+は、はい！[r]わたしたち全員で飛翔、高速移動しています！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 0,330]
+＠太歳星君
+わはー、気持ちいいなー！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 0,290]
+＠ボイジャー
+うん、いいね！[r]ちきゅうのそらも、かくべつだ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 -100,290]
+＠クリームヒルト
+やっ、ちょ、スカート……めくれないわね。[wt 0.5][charaFace H 1][r]不思議パワーね！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 0,250]
+
+＠柳生但馬守
+不思議ぱわぁ、善し。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 0,280]
+
+＠アルテラサンタ
+フォッフォッフォッ。[r]便利な技だ、サンタも欲しいぞ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,330]
+＠ドゥムジ
+Ｏｈ、リストラ。[r]電気羊が夢を見るでしょう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,300]
+
+＠ワンジナ
+みんな！[r]聖杯のところへ、真っ直ぐ向かうよ！
+[k]
+
+＠ワンジナ
+ワンジナに、任せてね！
+[k]
+
+？1：と、とにかく……よろしく！
+？！
+
+[charaFace A 4]
+
+＠ワンジナ
+うん！[r]そーれ、ばっびゅーーーん！
+[k]
+
+[messageOff]
+
+
+[se ad555]
+[seVolume ad555 0 0]
+[seVolume ad555 0.5 1.0]
+[subRenderFadeout #A 0.2]
+[subRenderMove #A 0,-270 0.4]
+[wt 0.5]
+[seVolume ad555 0.5 0.2]
+[seStop ad555 1.0]
+[wt 1.0]
+
+
+
+
+[messageOff]
+[seStop ad291 4.0]
+[fadeout black 4.0]
+[bgmStopEnd BGM_MAP_2 4.0]
+[wait fade]
+[soundStopAllEnd]
+[end]

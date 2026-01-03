@@ -1,0 +1,373 @@
+
+
+＄94-09-15-09-1-0
+
+
+
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5054001 1 由井正雪]
+[charaSet B 1098284000 1 地右衛門]
+[charaSet C 1098284100 1 ジャンヌ]
+[charaSet D 11018000 1 丑御前]
+
+[sceneSet E 102301 1]
+[sceneSet F 102301 1]
+[sceneSet H 10000 1]
+[charaScale H 1.1]
+
+[charaSet I 11018000 1 エフェクト用]
+
+[pictureFrameTop cut063_cinema]
+[scene 102301]
+[bgm BGM_BATTLE_253 0.1]
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 49]
+[charaFadein B 0.1 0,-50]
+[wt 0.4]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaMoveScale B 1.4 0.3]
+[charaMove B 0,10 0.3]
+[blur motion 0.3 4 200 0.5 0.5 0.02 200]
+[charaFadeout B 0.3]
+[wt 0.4]
+[charaScale B 1.0]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[effect bit_talk_flame_slash_01 0,0 F]
+[cueSe Servants_100700 m41902]
+[wt 0.5]
+[effect bit_talk_29]
+[shake 0.03 3 3 1.0]
+[wt 1.4]
+
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 0,-30]
+[charaMoveScale A 1.0 0.4]
+[charaMove B 0,-50 0.3]
+[se ad671]
+[wt 0.4]
+
+＠由井正雪
+くっ……！[r]地右衛門！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[subCameraOn 2]
+[charaLayer F sub #B]
+[charaLayer C sub #B]
+[subCameraFilter #B through]
+[subRenderDepth #B 2]
+
+[charaDepth F 0]
+[charaDepth C 1]
+[charaScale F 1.3]
+[charaScale C 1.3]
+[charaFace C 20]
+[charaFadein C 0.1 0,-50]
+[charaFadein F 0.1 0,-300]
+[charaEffect C bit_talk_36]
+
+
+[cueSe SE_24 24_ade980]
+
+[insertionAnimationSet ac_fude_h_open_close_LtoR 0,50]
+
+[insertionAnimationStart ac_fude_h_open_close_LtoR cut536_tem_47_1]
+[wait insertionAnimationStart ac_fude_h_open_close_LtoR]
+
+＠地右衛門
+[#殺:や]れ！　ランサー！
+[k]
+
+[messageOff]
+
+[insertionAnimationEnd ac_fude_h_open_close_LtoR]
+[wait insertionAnimationEnd ac_fude_h_open_close_LtoR]
+
+[charaTalk C]
+[cueSe SE_22 22_ad1179 0]
+[seVolume 22_ad1179 0.3 0.7]
+[subRenderFadein #B 0.2 0,50]
+[subRenderMove #B 0,0 5.0]
+[wt 0.3]
+
+＠ジャンヌ
+[line 3]在るべき場所に還りなさい。
+[k]
+
+[bgm BGM_BATTLE_253 0.7 0.5]
+[seStop 22_ad1179 0.7]
+[subRenderFadeout #B 0.1]
+[wt 0.1]
+[charaEffectDestroy C bit_talk_36]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+[charaFadeTime H 0.1 0.5]
+
+＠由井正雪
+（……逃げられぬか！　やむ無し！）
+[k]
+
+[bgm BGM_BATTLE_253 0.7 1.0]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaFace A 3]
+
+＠由井正雪
+令呪を以て、命ずる！[r][line 3][#疾:と]く駆けつけよ、ライダー！
+[k]
+
+
+
+[messageOff]
+[se ad980]
+[bgmStop BGM_BATTLE_253 0.3]
+[fadeout black 0.2]
+[wait fade]
+[scene 10000]
+[charaFadeout A 0]
+[wt 0.3]
+[fadein black 0.1]
+[wait fade]
+
+[pictureFrameTop]
+
+[se ad161]
+[se ad240]
+[cueSe SE_21 21_ad1125]
+[effect bit_talk_35]
+[wt 0.5]
+[seStop 21_ad1125 1.5]
+[wt 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.5]
+[charaScale C 1.0]
+[charaLayer C normal]
+[charaLayer F normal]
+[subCameraOff]
+[scene 102301]
+[wt 0.2]
+[subCameraOn 1]
+[charaLayer E sub #A]
+[subCameraFilter #A through]
+[charaDepth E 2]
+[charaScale E 1.2]
+[charaFadein E 0.1 40,-100]
+[charaEffect E bit_talk_summon_fs 0,350]
+
+[pictureFrameTop cut063_cinema]
+[wt 0.3]
+[fadein black 1.0]
+[wait fade]
+
+[charaShake A 0.04 3 3 0.3]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠由井正雪
+かっ……はっ……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 0,-50]
+
+＠ジャンヌ
+……………………。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠由井正雪
+何故……だ……？[r]ラ、イダー……
+[k]
+
+[messageOff]
+[charaMove A 0,-75 0.4]
+[wt 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+[se ad144]
+[wt 1.4]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 0,-50]
+
+＠ジャンヌ
+せめてもの安らぎを。[r][line 3]汝、苦しむことなかれ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_185 0.1]
+
+[charaTalk B]
+[charaFace B 43]
+[charaFadein B 0.1 0,-50]
+
+＠地右衛門
+……くだらねえ。[r]やはり、そう云う[#からくり]かよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠ジャンヌ
+……ライダーの仕業でしょうか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 0,-50]
+
+＠地右衛門
+黒幕は別だろうがな。[r]まあ、そっちはどうでもいいさ。
+[k]
+
+[charaFace B 21]
+
+＠地右衛門
+それよりもこれだ。
+[k]
+
+[messageOff]
+[se ad933 0]
+[seVolume ad933 1.0 0.3]
+[subRenderFadein #A 0.4 0,0]
+[charaMove E -40,-100 4.0]
+[wt 3.5]
+[seStop ad933 3.0]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+
+[cueSe SE_21 21_ad1108 0]
+[seVolume 21_ad1108 1.0 0.5]
+[effect bit_talk_noble_light_r]
+[wt 1.5]
+
+[charaFace B 23]
+
+＠地右衛門
+“種”は片付けた。[r]さっきのが最後の[#要石]だ。
+[k]
+
+[messageOff]
+[seStop 21_ad1108 1.0]
+[cueSe SE_21 21_ade605]
+[fadeout white 0.5]
+[wait fade]
+[charaFadeout E 0.1]
+[charaEffectDestroy E bit_talk_summon_fs]
+[wt 0.5]
+[charaLayer E normal]
+[subCameraOff]
+[charaFace B 21]
+[effectDestroy bit_talk_noble_light_r]
+[wt 0.5]
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.8]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠ジャンヌ
+……結界が消えましたね。[r]これで中央への道が開きます。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 20]
+[charaFadein B 0.1 0,-50]
+
+＠地右衛門
+ああ……[r]地獄を始めようじゃないか。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_185 2.0]
+[fadeout black 2.0]
+[wait fade]
+[charaFadeout B 0.1]
+[scene 206001]
+[wt 2.0]
+[cueSe SE_22 22_ad1151 0]
+[seVolume 22_ad1151 3.0 0.3]
+[fadein black 2.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+＠丑御前
+嗚呼、これは[#迂闊:う か つ]。[r]先を越されてしまいますね。
+[k]
+
+[charaFace D 8]
+
+＠丑御前
+さあ、如何なさいますか……正雪？
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[seStop 22_ad1151 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

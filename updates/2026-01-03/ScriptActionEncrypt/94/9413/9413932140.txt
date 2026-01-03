@@ -1,0 +1,535 @@
+
+＄94-13-93-21-4-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5043000 1 アスクレピオス]
+[charaSet B 5043002 1 アスクレピオス（演出用）]
+[charaSet C 5043002 1 アスクレピオス（演出用）]
+[charaSet D 1010000 1 エリザベート]
+[charaSet E 1062001 1 黒姫]
+
+[charaSet F 1098318100 1 ザッハーク]
+[charaSet G 1098318100 1 ザッハーク（演出用）]
+[charaSet H 1098313100 1 黒蛇馬]
+[charaSet I 1098315430 1 ザッハーク（演出用）]
+
+[sceneSet N 10000 1]
+[charaScale N 1.1]
+[charaFilter N silhouette FFFFFF80]
+
+[sceneSet O 239201 1]
+[charaScale O 1.2]
+[sceneSet P 239201 1]
+[charaScale P 1.2]
+[sceneSet Q 239201 1]
+[charaScale Q 1.2]
+[sceneSet R 10000 1]
+[charaScale R 1.2]
+
+[charaSet S 98115000 1 エフェクト用1]
+[charaSet T 98115000 1 エフェクト用2]
+[charaSet U 98115000 1 エフェクト用3]
+
+[scene 239201]
+
+[se ad207]
+[seVolume ad207 0 0]
+[se ad951]
+[seVolume ad951 0 0]
+[wt 0.1]
+
+[seVolume ad207 1.0 0.4]
+[seVolume ad951 1.0 0.4]
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.2 1]
+[wt 0.2]
+
+＠アスクレピオス
+……ふん。怪物よ。[r]形のない島に[#棲:す]まう蛇の怪物よ。
+[k]
+
+[charaFace A 5]
+＠アスクレピオス
+まさかおまえが、[r]僕の杖に絡みつく蛇となるとはな！
+[k]
+
+＠アスクレピオス
+だが、いいだろう。おまえが蛇であるならば、[r]怪物だろうが[#遣:つか]ってみせよう。
+[k]
+
+[se ade446]
+[seVolume ade446 0 0]
+[cueSe SE_22 22_adm89]
+[cueSeVolume 22_adm89 0 0]
+
+＠アスクレピオス
+僕は蛇遣いだ、皮を脱いで自らを新しくする蛇のように、[r]人自身も自らを新しくできると信じる医者だ！
+[k]
+
+[messageOff]
+[seStop ad207 1.0]
+[seStop ad951 1.0]
+
+[charaTalk depthOff]
+[charaDepth S 2]
+[charaDepth A 3]
+[charaDepth T 4]
+[charaDepth U 5]
+
+[seVolume ade446 0.4 0.4]
+[cueSeVolume 22_adm89 0.4 0.3]
+
+[charaPut S 1]
+[charaEffect S bit_talk_charge_blu]
+
+[charaPut T 1]
+[charaEffect T bit_talk_lightning_07b]
+
+[charaPut U 0,-300]
+[charaEffect U bit_talk_charge_blu]
+[wt 2.0]
+[bgm BGM_BATTLE_200 0.1]
+
+＠アスクレピオス
+死する[#理:ことわり]なんてもの[line 3][r]何度だろうが、踏み倒してやる！
+[k]
+
+＠アスクレピオス
+ゼウスの[#雷霆:らいてい]なんぞ恐れるものか！
+[k]
+
+[messageOff]
+[se ade406]
+[charaEffectEdgeBlur A 99FFFF 99FFFF 4 2]
+[fowardEffect bit_talk_summon_fs]
+[wt 1.5]
+[fowardEffectStop bit_talk_summon_fs]
+[wt 0.4]
+
+[se ad29]
+[seVolume ad29 0 0.6]
+[wt 0.05]
+[se ad574]
+[fadeout white 0.6]
+[seStop ade446 1.0]
+[cueSeStop 22_adm89 1.0]
+[seStop ade406 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[fowardEffectDestroy bit_talk_summon_fs]
+[charaPut S 2000,2500]
+[charaPut U 2000,2500]
+[charaEffectDestroy S bit_talk_charge_blu]
+[charaEffectDestroy U bit_talk_charge_blu]
+[charaEffectDestroy T bit_talk_lightning_07b]
+
+[cameraMove 0.1 0,0 1.2]
+
+[wt 0.1]
+
+[charaSet A 5043002 1 アスクレピオス]
+[wt 0.9]
+
+[charaDepth B 3]
+[charaDepth T 4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.4]
+
+[cameraMoveEase 0,0 1.4 easeOutSine 1.01]
+[fadein white 1.2]
+[wait fade]
+[wt 1.1]
+
+＠B：アスクレピオス
+ここからは、[r]もはや症例を求める往診ではない。
+[k]
+
+[charaFace B 5]
+
+＠B：アスクレピオス
+立ち向かうべきものは既に目の前にある。[r]僕は再び、医によって神を[#嘲笑:あざわら]おう！
+[k]
+
+？1：行けるの、先生！？
+？！
+
+[charaFace B 0]
+
+＠B：アスクレピオス
+ゴルゴーンの血はおそらく問題ない。[r]次に必要なのは[line 3]力だ。リソースだ。
+[k]
+
+＠B：アスクレピオス
+それは心臓マッサージに使っていたおみぃの眼球由来の力、[r]血清の余りをそのまま使う。
+[k]
+
+[charaFace B 5]
+
+＠B：アスクレピオス
+だが、まだまだ足りんぞ。[r]魔力はあればあるだけいい！
+[k]
+
+＠B：アスクレピオス
+当てはあるか、マスター！？
+[k]
+
+？1：今こそ令呪を使う！
+？2：全部をアスクレピオスに預ける！
+？！
+
+[messageOff]
+[charaTalk off]
+[charaDepth B 2]
+[charaDepth O 3]
+[charaDepth A 4]
+[charaDepth S 5]
+[charaDepth T 6]
+[charaDepth P 7]
+[charaDepth D 8]
+
+[charaScale A 1.2]
+[charaScale O 1.2]
+
+[charaFace A 5]
+[charaFadein A 0.6 0,10]
+[charaFadein O 0.6 0,-270]
+[wt 0.6]
+
+[charaFadeout B 0.1]
+[wt 0.25]
+
+
+[se ad822]
+[masterBranch _Male _Female]
+[label _Male]
+[charaPut T 1]
+[charaEffect T bit_talk_CommandMantra_03]
+[branch master_end]
+[label _Female]
+[charaPut T 1]
+[charaEffect T bit_talk_CommandMantra_04]
+[label master_end]
+[charaEffectStop S bit_talk_blood_cell02]
+[wt 4.0]
+
+[charaFace A 6]
+
+＠アスクレピオス
+助かる！
+[k]
+
+＠アスクレピオス
+今はメドゥーサの血という核があるからな。[r]一気に預けられても転換できる。
+[k]
+
+[charaFace A 5]
+
+＠アスクレピオス
+だが、まだ足りん！[r]エリザベート、おまえもだ！
+[k]
+
+＠アスクレピオス
+足しになれば何でもいい、[r]どんな形でもいいから魔力をよこせ！
+[k]
+
+[messageOff]
+[charaTalk D,A]
+
+[charaScale D 1.2]
+[charaScale P 1.4]
+
+[charaFace D 8]
+[charaFadein D 0.3 -300,0]
+[charaFadein P 0.3 150,-320]
+[charaMoveEase D -200,0 0.4 easeOutSine]
+[charaMoveEase P 250,-320 0.4 easeOutSine]
+[wt 0.3]
+
+[charaScale A 1.0]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[charaFadeout O 0.1]
+[wt 0.3]
+
+＠エリザベート
+わ、わかったわ！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad73]
+[cueSe SE_21 21_ad1119]
+[charaEffect D bit_talk_quickmove 0,50]
+[charaSpecialEffect D erasureReverse 1 0.4]
+[cueSeStop 21_ad1119 0.5]
+[wt 0.95]
+
+[charaTalk A]
+[charaFadeout P 0.5]
+[wt 0.65]
+
+＠アスクレピオス
+くそっ、余裕がない。力技だが、[r]配合しながら投与するしかないな。
+[k]
+
+[charaFace A 4]
+
+＠アスクレピオス
+つまりエリザベートも[r]この蘇生作業にかかりきりになる。
+[k]
+
+[charaFace A 0]
+
+＠アスクレピオス
+マスター、おまえだけで時間が稼げるか！？
+[k]
+
+？1：……少しなら！
+？2：なんとかやってみます！
+？！
+
+[messageOff]
+[se ad33]
+[seVolume ad33 0 0.3]
+[charaTalk S]
+[wt 1.1]
+[seStop ad33 0.3]
+[se ad32]
+[seVolume ad32 0 0.3]
+[wt 0.65]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_BATTLE_200 0.5 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[pictureFrameTop cut063_cinema]
+
+[scene 10000]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.1 1.0]
+[wait wipe]
+
+[se ad715]
+[effect bit_talk_h_slash01_fs]
+[wt 0.25]
+
+[se ad818]
+[seStop ad715 0.3]
+[wt 0.15]
+[overlayFadein N 0.1 1]
+[wt 0.1]
+
+[effectDestroy bit_talk_h_slash01_fs]
+
+[charaDepth H 2]
+[charaDepth E 3]
+
+[charaTalk off]
+[charaFace H 0]
+[charaFace E 4]
+[charaFadein H 0 -100,-50]
+[charaFadein E 0 100,-50]
+
+[charaMoveEaseFSL H -250,-50 0.25 easeOutCubic]
+[charaMoveEaseFSR E 250,-50 0.25 easeOutCubic]
+[charaShake H 0.03 4 4 0.85]
+[charaShake E 0.02 3 3 0.85]
+
+[scene 239201]
+
+[fowardEffect bit_talk_blow]
+[charaFadeout N 0.1]
+[wt 0.1]
+[seStop ad818 1.0]
+[wt 0.95]
+
+[charaMoveFSL H -250,-100 0.4]
+[charaFadeout H 0.4]
+[wt 0.4]
+
+[cueSe SE_21 21_ad1074]
+[wt 1.4]
+
+[se ad73]
+[charaEffect E bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.4]
+[wt 0.75]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[fowardEffectDestroy bit_talk_blow]
+
+[pictureFrameTop]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_BATTLE_200 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+
+[charaTalk E]
+[charaFace E 3]
+[charaPut E 1]
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect E appearanceReverse 1 0.25]
+[wt 1.0]
+
+＠黒姫
+ここはもはや合流すべきとみました。
+[k]
+
+[charaFace E 5]
+
+＠黒姫
+私も[#懸:か]けます。[r]ビショーネ様が[#蘇:よみがえ]れば何かが変わると、信じます！
+[k]
+
+？1：黒姫さん、お願い！
+？2：もう少しだけ踏ん張ろう！
+？！
+
+[messageOff]
+[charaFace E 3]
+[wt 0.1]
+[charaMoveReturn E 0,-5 0.4]
+[wt 1.7]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_BATTLE_200 1.5]
+[wait fade]
+
+[sceneSet N 10000 1]
+[charaScale N 1.1]
+
+[charaFadeout E 0.1]
+
+[pictureFrameTop cut063_cinema]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk off]
+[charaDepth O 1]
+[charaDepth N 2]
+[charaDepth F 3]
+[charaDepth P 4]
+[charaDepth G 5]
+
+[charaScale O 1.4]
+[charaScale G 1.4]
+
+[charaFace G 0]
+[charaFadein G 0.8 -50,15]
+[charaFadein P 0.8 -50,-320]
+[charaMove G 50,35 25.0]
+[charaMove P 50,-320 45.0]
+[wt 1.2]
+
+[bgm BGM_EVENT_97 0.1]
+
+＠
+状況は変わらず、[r]至るべき場所へ進むのみ。
+[k]
+
+＠
+腹に求めるは最後の一分目。
+[k]
+
+＠
+眼前では蛇の一匹が弾けて消えたが、[r]どうでもよい。
+[k]
+
+＠
+他で満たされるのであれば、[r]あえて喰う必要すらない。
+[k]
+
+＠
+残された小さき者どもが、[r]何事かをやろうとしているようだが。
+[k]
+
+＠
+変わらぬ。[r]先程、確かめた。
+[k]
+
+＠
+あれは、繋がっていないのだ。[r]外れているのだ。至っていないのだ。
+[k]
+
+＠
+問題は、ない。
+[k]
+
+[messageOff]
+[charaScale O 1.2]
+[charaScale F 1.2]
+
+[charaPut N 1]
+[charaFadeTime N 0.1 0.5]
+
+[charaFace F 0]
+[charaFadein F 0.1 25,-10]
+[charaFadein O 0.1 100,-260]
+[wt 1.0]
+
+＠
+[line 3]だが。
+[k]
+
+[messageOff]
+[charaFadeout G 0.8]
+[charaFadeout P 0.8]
+[wt 1.4]
+[subCameraOn 1]
+[charaLayer I sub #A]
+[charaLayer R sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 4 0,0,0,255 0]
+[charaDepth R 1]
+[charaDepth I 2]
+[charaScale R 1.2]
+[charaScale I 1.2]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0 -120,350]
+[charaFadein R 0 0,-50]
+[subRenderFadein #A 0.4 250,-250]
+[wt 0.4]
+
+[charaTalk on]
+＠I：ザッハーク
+（この胸騒ぎは、何だ……？）
+[k]
+
+＠I：ザッハーク
+（余は、何を。何の可能性を。[r]　[#恐れている][line 3]？）
+[k]
+
+
+[messageOff]
+[wt 1.5]
+[fadeout black 1.5]
+[bgmStopEnd BGM_EVENT_97 1.0]
+[wait fade]
+[soundStopAllEnd]
+[end]

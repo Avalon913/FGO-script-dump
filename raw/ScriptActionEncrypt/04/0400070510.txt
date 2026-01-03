@@ -1,0 +1,1901 @@
+
+＄04-00-07-05-1-0
+
+
+
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[soundStopAll]
+
+[charaSet A 8001900 1 マシュ]
+[charaSet B 1098255100 1 ゴルドルフ]
+[charaSet C 1098158330 1 ネモ]
+[charaSet D 1098257410 1 シオン]
+[charaSet E 1098257300 1 ダ・ヴィンチ]
+[charaSet F 1098123000 1 ムニエル]
+[charaSet G 1098341620 1 ソロモン]
+[charaSet H 1098254800 1 ネモ・マリーンＡ]
+[charaSet I 1098254810 1 ネモ・マリーンＢ]
+[charaSet J 1098254810 1 ネモ・マリーンＣ]
+[charaSet K 1098254800 1 ネモ・マリーンＤ]
+[charaSet L 1098124800 1 異星の巫女？]
+
+[charaSet M 1098341620 1 ソロモン_演出用]
+[charaSet N 1098124800 1 異星の巫女？_演出用]
+[charaSet O 1098124800 1 異星の巫女？_演出用]
+
+[sceneSet P 10000 1]
+[sceneSet Q 132900 1]
+[sceneSet R 132900 1]
+[sceneSet S 275300 1]
+[sceneSet T 275300 1]
+
+[imageSet U back275300 1]
+
+[sceneSet V 275301 1]
+
+[imageSet X black_fade_re 1]
+[sceneSet Y 10001 1]
+[charaSet Z 98115000 1 エフェクト用1]
+
+[charaTalk depthOff]
+[charaDepth Q 1]
+[charaDepth R 2]
+[charaDepth S 3]
+[charaDepth E 4]
+[charaDepth H 5]
+[charaDepth I 6]
+[charaDepth J 7]
+[charaDepth K 8]
+[charaDepth A 9]
+[charaDepth B 10]
+[charaDepth D 11]
+[charaDepth G 12]
+[charaDepth F 13]
+[charaDepth C 14]
+[charaDepth M 15]
+[charaDepth T 16]
+[charaDepth U 17]
+[charaDepth V 18]
+
+[charaDepth Z 26]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 132900]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFace K 0]
+[charaFadein H 0.1 120,0]
+[charaFadein I 0.1 -120,0]
+[charaFadein J 0.1 360,0]
+[charaFadein K 0.1 -360,0]
+
+＠ネモ・マリーンＡ
+通常空間に出ました！[r]全区画、全機能、全兵装のチェックよろしくー！
+[k]
+
+[charaTalk I]
+[charaFace I 1]
+
+＠ネモ・マリーンＢ
+艦内施設、通路、異常なーし！[r]装甲面の電磁障壁も出力落ちてませーん！
+[k]
+
+[charaTalk J]
+[charaFace J 2]
+
+＠ネモ・マリーンＣ
+艦内全機能も正常でーす！[r]シャワーだって余裕で使えちゃーう！
+[k]
+
+[charaTalk K]
+
+＠ネモ・マリーンＤ
+艦首レイプルーフ、霊子魚雷乙型甲型、[r]異常なーし！
+[k]
+
+＠ネモ・マリーンＤ
+サーヴァント並列召喚システムも同じく……[wt 1.0][charaFace K 11][r]ぜんぜんダメ、霊基グラフが基底状態で反応しなーい！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+なんと、故障か！？[r]すぐに修理だ、カヤンとマーカスを向かわせろ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+……そうだね。[r]なんであれ手は尽くしておいた方がいい。
+[k]
+
+＠ダ・ヴィンチ
+それより……
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgmStop BGM_EVENT_62 1.5]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[subCameraOn 3]
+[charaLayer Q sub #A]
+[charaLayer A sub #A]
+[charaLayer E sub #A]
+[charaLayer M sub #A]
+[subCameraFilter #A maskEdge cut359_mask11 5 0,0,0,255 0]
+
+[charaFace A 6]
+[charaFadein A 0.1 450,230]
+[charaFadein Q 0.1 450,50]
+
+[charaLayer R sub #B]
+[charaLayer B sub #B]
+[charaLayer D sub #B]
+[subCameraFilter #B maskEdge cut359_mask12 5 0,0,0,255 0]
+
+[charaFace B 4]
+[charaFadein B 0.1 -500,210]
+[charaFadein R 0.1 -450,50]
+
+[charaLayer S sub #C]
+[charaLayer Z sub #C]
+[subCameraFilter #C normal]
+[charaScale S 1.01]
+[charaFadein S 0.1 0,-200]
+[charaPut Z 1]
+[charaEffect Z bit_talk_security_fs]
+
+[subRenderDepth #A 3]
+[subRenderDepth #B 2]
+[subRenderDepth #C 1]
+
+[charaScale T 1.01]
+[charaFadein T 0.1 0,-200]
+[subRenderFadein #C 0.1 0,0]
+[wt 1.0]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+[wt 1.5]
+[subRenderFadeout #C 1.0]
+[wt 1.8]
+[charaEffectDestroy Z bit_talk_security_fs]
+[charaFadeout S 0]
+
+[bgm BGM_EVENT_175 0.1]
+
+？1：これがカルデアスの[#空洞:な　か][line 3]
+？2：遠くてよく見えないけど[#外壁:まわり]にあるのは[line 3]
+
+？！
+[charaMoveScale T 1.2 2.6]
+[charaMove T 50,-140 2.6]
+[wt 1.0]
+
+[charaScale U 2.5]
+[charaFadein U 0.6 600,150]
+[charaMove U 600,200 20.0]
+[wt 1.5]
+[charaFadeout T 0.1]
+
+[charaTalk A]
+[subRenderFadeinFSSideR #A 0.3 -120,-180]
+[subRenderMoveFSSideR #A -100,-200 0.3]
+[wt 0.3]
+
+＠マシュ
+あれは都市……でしょうか。[r]外壁の内側にたくさんの街が見えます。
+[k]
+
+[charaTalk B]
+[subRenderFadeinFSSideL #B 0.3 120,-180]
+[subRenderMoveFSSideL #B 100,-200 0.3]
+[wt 0.3]
+
+＠ゴルドルフ
+う、うむ。壁というより都市で出来た波のようだ。[r]私にも覚えのある街並が幾つかあるが、これは……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaLayer A normal]
+
+[charaTalk E]
+[charaFace E 25]
+[charaFadein E 0.1 505,250]
+
+＠ダ・ヴィンチ
+地球の表層だ……！[r]シオン、トリスメギストスⅡの見解は！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaScale D 0.95]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 -495,220]
+
+＠シオン
+見ての通りですね。[r]西暦2017年の人類の文明が凝縮、凍結されています。
+[k]
+
+＠シオン
+これは魔術理論『世界卵』の応用であり、[r]かつてない規模の事象保管である、とも。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 -500,210]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ゴルドルフ
+では我々の地球の表層なのだな！？[r]カルデアスの内側に保管されていたとは……！
+[k]
+
+[messageOff]
+[charaTalk A,B]
+[subRenderFadeout #A 0.5]
+[subRenderFadeout #B 0.5]
+[charaFadeout U 0.5]
+[wt 0.7]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+
+＠マシュ
+『世界卵』……密閉された空間の内部を世界に、[r]外側を無に見立てた魔術理論ですね。
+[k]
+
+[charaLayer E normal]
+[charaLayer D normal]
+
+＠マシュ
+では、カルデアス地球は内側と外側が逆である、[r]という事でしょうか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+うん。だから地表には何もなかった。
+[k]
+
+＠ダ・ヴィンチ
+カルデアス、いやマリスビリーにとって、[r]地球の地表は『白紙』じゃないといけなかった。
+[k]
+
+＠ダ・ヴィンチ
+空洞にこそ宇宙の中心がある、と考えるならね。[r]……という事は……
+[k]
+
+
+？1：この空洞の中心にメインシステムがある
+
+？！
+
+[charaFace E 22]
+
+＠ダ・ヴィンチ
+その通り。[r]キャプテン、周囲の探索はどうなっている？
+[k]
+
+＠ダ・ヴィンチ
+外壁の都市部の他に、[r]何らかの高エネルギー体は発見できないか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ネモ
+[line 3]している。[r]この空洞に入った直後に発見している。
+[k]
+
+＠ネモ
+マリーン、艦首モニターを開いて。[r]みんなに[#あれ]を目視してもらう。
+[k]
+
+[messageOff]
+[se ad1]
+[wt 0.5]
+[charaScale V 1.01]
+[charaFadein V 0.8 0,-200]
+[wt 1.0]
+[charaLayer C sub #A]
+[charaPut C 520,250]
+[charaFace B 15]
+[charaFadein B 0.1 -500,210]
+[charaScale D 1.0]
+[charaFace D 9]
+[charaFadeinFSL D 0.1 0]
+[charaFace G 0]
+[charaFadeinFSR G 0.1 2]
+[wt 1.0]
+[subRenderFadeinFSSideR #A 0.3 -100,-200]
+[wt 0.3]
+
+＠ネモ
+対象は内部空洞の中心に位置している。[r]それ以外、こちらが得られる情報はない。
+[k]
+
+＠ネモ
+[#あれ]の内部構造の透視を試みた瞬間、[r]近未来観測レンズ・シバが崩壊した為だ。
+[k]
+
+[charaTalk B]
+[subRenderFadeinFSSideL #B 0.3 100,-200]
+[wt 0.3]
+
+＠ゴルドルフ
+な、崩壊しただとぅ！？　トリスメギストスⅡ同様、[r]シバはカルデアの宝ではないのかね！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 490,220]
+
+＠M：ソロモン
+……崩壊ではない。磨耗しきったのだ。
+[k]
+
+＠M：ソロモン
+シバの時間観測域は10億年分しかない。[r]その限界を超えた事で老朽化し、機能を停止した。
+[k]
+
+[charaFace M 8]
+
+＠M：ソロモン
+私の落ち度だな。計測が５億年を超えた時に[r]停止するよう、安全機能をつけておかなかった。
+[k]
+
+[charaFace M 0]
+
+＠M：ソロモン
+それはいい。いずれ廃棄せねばならないものだ。[r]問題は[#あれ]が10億年を超える情報密度を持つ、という事だ。
+[k]
+
+[messageOff]
+[charaTalk G,M]
+[subRenderFadeout #A 0.5]
+[subRenderFadeout #B 0.5]
+[charaFadeout V 0.5]
+[wt 0.7]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[charaFadeout M 0.1]
+
+＠ソロモン
+エルトナム。[r]トリスメギストスⅡはなんと言っている？
+[k]
+
+[charaLayer C normal]
+[charaLayer B normal]
+[charaLayer M normal]
+[subCameraOff]
+[charaTalk D]
+
+＠シオン
+解答を拒否する、と言っています。[r]ステラマリー戦の後、天幕の外を見た時と同じです。
+[k]
+
+[charaTalk G]
+[charaFace G 5]
+
+＠ソロモン
+そうか。第三者が解析してしまえば、[r]その[#不可思議:ふ 　か 　し 　ぎ]はより事実として確定する。
+[k]
+
+＠ソロモン
+故に、[#あれ]の理論を完成させないよう、[r]トリスメギストスⅡはあえて『しない』と判断した。
+[k]
+
+[charaFaceFade G 0 0.15]
+
+＠ソロモン
+私のシバと違って安全機能があった、というワケだ。[r]アトラス院は惜しい人材を手放したな。
+[k]
+
+[charaTalk D]
+[charaFace D 16]
+
+＠シオン
+お褒めに[#与:あずか]り光栄です、魔術王。[r]ついでにアドバイスなどいただけますか？
+[k]
+
+＠シオン
+このまま[#あれ]に向かって問題はないかどうか。[r]ものすごい情報体なのですよね？
+[k]
+
+[charaTalk G]
+
+＠ソロモン
+この[#艦:ふね]の強度なら接近しても問題はない。[r]その後、危険はあるだろうがね。
+[k]
+
+[charaTalk D]
+[charaFace D 11]
+
+＠シオン
+だそうです。[r]いかがします、皆さん？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+せ、接近する他あるまい。[r]どう見てもあれがメインシステムだ。
+[k]
+
+＠ゴルドルフ
+だが慎重に、スピードは気持ちゆったり目でな？[r]危険を察したらすぐに反転するのだぞ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ネモ
+了解、僕も同意見だ。[r]ムニエル、対象に向けて微速前進。
+[k]
+
+[bgmStop BGM_EVENT_175 1.5]
+
+＠ネモ
+電算室のプロフェッサーには引き続き、[r]可能な範囲で対象の観測を[line 3][wt 0.8][charaFace C 8]待て！
+[k]
+
+[bgm BGM_EVENT_122 0.1]
+
+＠ネモ
+緊急停止、艦首回頭！[r]どういう事だ！？
+[k]
+
+＠ネモ
+計測不能なほど遠くにあった対象が、[r]なぜ目の前にある！？
+[k]
+
+[charaSet D 1098257400 1 シオン]
+[charaDepth D 10]
+
+[subCameraOn 2]
+[charaLayer Q sub #A]
+[charaLayer A sub #A]
+[charaLayer G sub #A]
+[charaLayer F sub #A]
+[subCameraFilter #A maskEdge cut359_mask06 4 0,0,0,255 0]
+
+[charaScale Q 1.3]
+[charaFace A 6]
+[charaFadein A 0.1 50,220]
+[charaFace G 1]
+[charaFadein G 0.1 450,230]
+[charaFace F 2]
+[charaFadein F 0.1 -250,220]
+[charaFadein Q 0.1 10,0]
+
+[charaLayer R sub #B]
+[charaLayer D sub #B]
+[charaLayer E sub #B]
+[charaLayer B sub #B]
+[charaLayer H sub #B]
+[subCameraFilter #B maskEdge cut359_mask06 4 0,0,0,255 0]
+
+[charaScale R 1.3]
+[charaScale D 0.95]
+[charaFace D 6]
+[charaFadein D 0.1 -520,240]
+[charaFace E 25]
+[charaFadein E 0.1 50,245]
+[charaFace B 5]
+[charaFadein B 0.1 -250,240]
+[charaFace H 11]
+[charaFadein H 0.1 320,250]
+[charaFadein R 0.1 10,0]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+？1：！？
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[blur lens 0.4 4 1]
+[charaTalk off]
+[subRenderFadein #A 0.3 0,-250]
+[subRenderFadein #B 0.3 0,-460]
+[charaMoveEase A -50,220 0.4 easeOutCubic]
+[charaMoveEase G 350,230 0.4 easeOutCubic]
+[charaMoveEase F -350,220 0.4 easeOutCubic]
+[charaMoveEase Q -90,0 0.4 easeOutCubic]
+
+[charaMoveEase D -420,240 0.4 easeOutCubic]
+[charaMoveEase E 150,245 0.4 easeOutCubic]
+[charaMoveEase B -150,240 0.4 easeOutCubic]
+[charaMoveEase H 420,250 0.4 easeOutCubic]
+[charaMoveEase R 90,0 0.4 easeOutCubic]
+[wt 2.0]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_122 0.5 0.5]
+[wait wipe]
+
+[blurOff lens 0.1]
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+
+[charaEffectDestroy Z bit_talk_security_fs]
+[charaLayer S normal]
+[charaLayer Z normal]
+[sceneSet S 132900 1]
+[sceneSet T 275400 1]
+[sceneSet U 275401 1]
+[sceneSet V 275402 1]
+[sceneSet W 275403 1]
+
+[sceneSet K 275400 1]
+
+[scene 273700]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_122 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+＠？？？
+汎人類史からの[#避難民:ひなんみん]の方たちですね。[r]ようこそいらっしゃいました。
+[k]
+
+＠？？？
+ここはあらゆる不明、あらゆる過ちを解消した世界。[r]人理保障天球　カルデアス。
+[k]
+
+＠？？？
+登録手続きを行います。その場でお待ちください。[r][#僭越:せんえつ]ながら私が、直接説明に参ります。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgmStop BGM_EVENT_122 1.5]
+[wait wipe]
+
+[scene 132900]
+[wt 1.0]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[messageOff]
+[charaTalk L]
+[charaFace L 1]
+
+[se ad595 0.8]
+[seStop ad595 1.5]
+[charaSpecialEffect L appearance 1 0.5]
+[wt 1.5]
+[wt 0.5]
+
+[bgm BGM_EVENT_38 0.1]
+
+＠異星の巫女？
+こんにちは、旧地球人類の皆さん。[r]本宇宙の代表として参りました。
+[k]
+
+[charaFaceFade L 14 0.15]
+
+＠異星の巫女？
+どうぞナビゲーターとお呼びください。[r]シンプルですが、この状況に最も適した名称です。
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[blur lens 0.3 4 1]
+[subRenderFadein #A 0.3 0,-250]
+[subRenderFadein #B 0.3 0,-460]
+[wt 1.8]
+
+[blurOff lens 0.5]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[charaMoveEase A -150,220 0.4 easeOutQuad]
+[charaMoveEase G 250,230 0.4 easeOutQuad]
+[charaMoveEase F -450,220 0.4 easeOutQuad]
+[charaMoveEase Q -190,0 0.4 easeOutQuad]
+
+[charaMoveEase D -320,240 0.4 easeOutQuad]
+[charaMoveEase E 250,245 0.4 easeOutQuad]
+[charaMoveEase B -50,240 0.4 easeOutQuad]
+[charaMoveEase H 520,250 0.4 easeOutQuad]
+[charaMoveEase R 190,0 0.4 easeOutQuad]
+[wt 0.3]
+
+[charaFadeout Q 0]
+[charaFadeout R 0]
+[charaFadeout A 0]
+[charaFadeout G 0]
+[charaFadeout F 0]
+[charaFadeout D 0]
+[charaFadeout E 0]
+[charaFadeout B 0]
+[charaFadeout H 0]
+[wt 0.1]
+[charaLayer Q normal]
+[charaLayer A normal]
+[charaLayer G normal]
+[charaLayer F normal]
+[charaLayer R normal]
+[charaLayer D normal]
+[charaLayer E normal]
+[charaLayer B normal]
+[charaLayer H normal]
+[subCameraOff]
+[wt 0.1]
+
+[charaSet D 1098257410 1 シオン]
+
+[charaDepth P 1]
+[charaDepth L 2]
+[charaDepth Q 3]
+[charaDepth N 4]
+[charaDepth R 5]
+[charaDepth E 6]
+[charaDepth A 7]
+[charaDepth D 8]
+[charaDepth S 9]
+[charaDepth B 10]
+[charaDepth G 11]
+[charaDepth C 12]
+[charaDepth K 13]
+[charaDepth T 14]
+[charaDepth U 15]
+[charaDepth V 16]
+[charaDepth W 17]
+[charaDepth O 18]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+いやいや待て待て待て！
+[k]
+
+＠ゴルドルフ
+突然[#現:あらわ]れおって何者だ貴様！？[r]異星の巫女ではないのか！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+＠異星の巫女？
+異星の巫女。皆さんはこのカタチを[r]そう呼んでいたのですね。
+[k]
+
+[charaFaceFade L 10 0.15]
+
+＠異星の巫女？
+素敵な名称を付けていただき、ありがとうございます。[r]問題ありませんので、今後もそのようにお呼びください。
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[charaFace N 10]
+[charaScale Q 1.3]
+[charaScale N 1.3]
+[charaFadein Q 0.5 0,-350]
+[charaFadein N 0.5 1]
+[wt 1.7]
+
+[charaScale R 1.5]
+[charaScale A 1.2]
+[charaScale E 1.2]
+[charaScale D 1.1]
+[charaFace A 13]
+[charaFace E 8]
+[charaFace D 9]
+[charaFadeinFSL E 0.6 -370,0]
+[charaFadeinFSR A 0.6 250,0]
+[charaFadein D 0.6 -20,0]
+[charaFadein R 0.6 -310,-350]
+[charaMoveFSL E -320,0 4.0]
+[charaMoveFSR A 300,0 4.0]
+[charaMove D 30,0 4.0]
+[charaMove R -260,-350 4.0]
+[wt 2.5]
+
+[charaScale S 1.5]
+[charaScale C 1.2]
+[charaScale B 1.2]
+[charaScale G 1.2]
+[charaFace C 4]
+[charaFace B 15]
+[charaFace G 9]
+[charaFadeinFSR G 0.6 250,0]
+[charaFadeinFSL B 0.6 -350,0]
+[charaFadein C 0.6 -50,0]
+[charaFadein S 0.5 260,-350]
+[charaMoveFSL B -300,0 4.0]
+[charaMoveFSR G 300,0 4.0]
+[charaMove C 0,0 4.0]
+[charaMove S 310,-350 4.0]
+[wt 1.0]
+[charaFadeout R 0.1]
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 1.5]
+
+[charaFadeout S 0.6]
+[charaFadeout G 0.6]
+[charaFadeout B 0.6]
+[charaFadeout C 0.6]
+[wt 1.3]
+[charaScale A 1.0]
+[charaScale E 1.0]
+[charaScale D 1.0]
+[charaScale C 1.0]
+[charaScale B 1.0]
+[charaScale G 1.0]
+[charaMoveFSL E -320,0 0.1]
+[charaMoveFSR A 300,0 0.1]
+[charaMove D 30,0 0.1]
+[charaMove R -260,-350 0.1]
+[charaMoveFSL B -300,0 0.1]
+[charaMoveFSR G 300,0 0.1]
+[charaMove C 0,0 0.1]
+[charaMove S 310,-350 0.1]
+
+[charaFaceFade N 3 0.2]
+[wt 0.4]
+
+＠異星の巫女？
+失礼ながら皆さんの精神状態は良くないようです。[r]私に何か問題が生じているのでしょうか？
+[k]
+
+？1：大アリだ
+
+＠異星の巫女？
+[FFFFFF]？[-]　大アリ、とは？
+[k]
+
+？2：警戒するなという方が無理
+
+＠異星の巫女？
+[FFFFFF]？[-]　無理、とは？
+[k]
+
+？！
+
+[messageOff]
+[charaFace L 1]
+[charaFadeout Q 0.5]
+[charaFadeout N 0.5]
+[wt 0.7]
+[charaTalk on]
+[charaTalk L]
+
+＠異星の巫女？
+私はナビゲーター。[r]相互理解を[#円滑:えんかつ]に進めるための機能です。
+[k]
+
+＠異星の巫女？
+これまで『異星の巫女』の目を通して、[r]皆さんの情報を理解しています。
+[k]
+
+＠異星の巫女？
+多くの[#工程:た　び]を終えて、[r]皆さんも私を理解しています。
+[k]
+
+[charaFaceFade L 9 0.15]
+
+＠異星の巫女？
+その結果、皆さんはここに帰還を果たしました。[r]そのように認識していますが、違うのですか？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+帰還を果たしただとぅ……！[r]なぁーにを阿呆な事を言っている！
+[k]
+
+[charaFace B 14]
+
+＠ゴルドルフ
+我々は地球を、[r]我々の世界を取り戻しにやってきたのだ！
+[k]
+
+＠ゴルドルフ
+マリスビリー・アニムスフィアの蛮行を、[r]カルデアスというシステムを破壊するためにな！
+[k]
+
+＠ゴルドルフ
+そもそも貴様の事なぞなーんも分からん！
+[k]
+
+＠ゴルドルフ
+我々の地球を白紙化しただけでなく、[r]自分の世界であるカルデアス地球さえ白紙化し！
+[k]
+
+＠ゴルドルフ
+輝かしい宇宙の星々は見えなくなり、[r]地球の中は気味の悪い空洞ときた！
+[k]
+
+＠ゴルドルフ
+貴様の、いやマリスビリーの目的はなんなのだ！[r]こんな景色が人理保障だと言いたいのか！
+[k]
+
+？1：司令官……！
+？2：（言いたい事、ぜんぶ言ってくれた……！）
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 3]
+[charaFadein L 0.1 1]
+
+＠異星の巫女？
+そうだったのですね。[r]たいへん申し訳ない事をしました。
+[k]
+
+＠異星の巫女？
+マリスビリー氏はご自身の理念を[r]皆さんに伝えなかった。共有できなかった。
+[k]
+
+[charaFace L 1]
+
+＠異星の巫女？
+……ああ、いえ。[r]氏の事ですから、きっと、
+[k]
+
+＠異星の巫女？
+『人間なら言わなくても分かるだろう』と[r]考えたのでしょう。
+[k]
+
+[charaFace L 12]
+
+＠異星の巫女？
+本当に困った方です。[r]私を鋳造した時と何も変わらない。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+[charaScale P 1.1]
+[charaPut P 0,-200]
+[charaFadeTime P 0.2 0.5]
+
+＠ダ・ヴィンチ
+（鋳造した……？　じゃあこの異星の巫女は[r]　これまでの巫女じゃなくて…………）
+[k]
+
+[charaFadeout P 0.2]
+[charaFadeout E 0.2]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_38 2.0]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠異星の巫女？
+いいでしょう。[r]改めてマリスビリー氏の事業を説明します。
+[k]
+
+[charaCrossFade L 1098124820 10 0.3]
+
+＠異星の巫女？
+こちらの図をご覧ください。[wait charaCrossFade L]
+[k]
+
+
+[messageOff]
+[charaSet N 1098124820 1 異星の巫女？_演出用]
+[charaDepth N 4]
+[sceneSet P 275400 1]
+[charaFilter P silhouette 00000080]
+[charaScale P 1.1]
+[charaDepth P 1]
+
+[subCameraOn 4]
+[charaLayer K sub #A]
+[charaLayer T sub #B]
+[charaLayer U sub #C]
+[charaLayer V sub #D]
+[subCameraFilter #A normal]
+[subCameraFilter #B maskEdge cut359_mask35 2 0,0,0,255 0]
+[subCameraFilter #C maskEdge cut359_mask35 2 0,0,0,255 0]
+[subCameraFilter #D maskEdge cut359_mask35 2 0,0,0,255 0]
+[subRenderDepth #A 4]
+[subRenderDepth #B 3]
+[subRenderDepth #C 2]
+[subRenderDepth #D 1]
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.3]
+[subRenderScale #C 1.3]
+[subRenderScale #D 1.3]
+[charaScale K 1.01]
+[charaFadein K 0 0,-200]
+[charaScale T 0.55]
+[charaFadein T 0 157,10]
+[charaScale U 0.55]
+[charaFadein U 0 156,10]
+[charaScale V 0.55]
+[charaFadein V 0 155,10]
+
+[charaDepth P 24]
+[charaDepth N 23]
+[charaDepth Q 22]
+[charaScale N 1.2]
+[charaScale Q 1.2]
+[charaFace N 10]
+[charaFadeinFSL N 0.6 -200,0]
+[charaFadein Q 0.6 -80,-270]
+[charaFadein P 0.6 879,-200]
+[wt 0.6]
+
+[cueSe SE_24 24_ad1410 0 0]
+[cueSeVolume 24_ad1410 0.6 0.8]
+[wt 0.6]
+[cueSeStop 24_ad1410 3.0]
+[bgm BGM_MAP_91 0.1]
+[subRenderFadein #B 0.4 416,150]
+[wt 1.4]
+[subRenderFadein #C 0.4 417,-50]
+[wt 1.5]
+[subRenderFadein #D 0.4 418,-250]
+[wt 3.0]
+[subRenderFadein #A 1.0 0,0]
+[wt 1.0]
+[subRenderFadeout #B 0.1]
+[subRenderFadeout #C 0.1]
+[subRenderFadeout #D 0.1]
+[charaFadeout P 0.1]
+[charaFadeout N 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout T 0.1]
+[charaFadeout U 0.1]
+[charaFadeout V 0.1]
+[wt 0.5]
+[charaLayer N normal]
+[charaLayer Q normal]
+[charaLayer T normal]
+[charaLayer U normal]
+[charaLayer V normal]
+[charaDepth P 1]
+[charaDepth Q 3]
+[charaDepth N 4]
+[charaScale Q 1.3]
+[charaScale N 1.3]
+[charaScale T 1.01]
+[charaFadein T 0 0,-200]
+[wt 0.5]
+[subRenderFadeout #A 0.1]
+[wt 0.2]
+[charaFadeout K 0.1]
+[wt 0.3]
+[charaLayer K normal]
+[subCameraOff]
+
+[charaCrossFade L 1098124800 8 0.1]
+[wait charaCrossFade L]
+[charaSet N 1098124800 1 異星の巫女？_演出用]
+[charaDepth N 4]
+[charaScale N 1.3]
+
+[charaMoveEase T 260,-160 1.7 easeOutCubic]
+[charaMoveScaleEase T 1.4 1.7 easeOutCubic]
+[wt 2.0]
+
+[cueSe SE_24 24_ad1411 0.8]
+[cueSe SE_24 24_ad1412]
+[charaScale U 1.4]
+[charaFadein U 0.8 260,-160]
+[wt 1.0]
+[cueSeStop 24_ad1412 1.0]
+[wt 1.8]
+[charaFadeout T 0.1]
+
+[se ad900 1.0 0.3]
+[cueSe SE_22 22_ad1169 1.0 0.7]
+[charaScale V 1.4]
+[charaFadein V 1.5 260,-160]
+[wt 0.7]
+[charaMoveEase U -260,-350 3.5 easeInOutQuad]
+[charaMoveEase V -260,-350 3.5 easeInOutQuad]
+[wt 4.3]
+
+[cueSeStop 22_ad1169 2.0]
+[seStop ad900 2.0]
+
+[charaFadeout U 0.1]
+[charaMoveEase V 0,-200 1.5 easeOutSine]
+[charaMoveScaleEase V 1.01 1.5 easeOutSine]
+[wt 1.7]
+
+[subCameraOn 2]
+[charaLayer W sub #A]
+[charaLayer X sub #MASK]
+[charaLayer Y sub #MASK]
+[subCameraFilter #A mask #MASK]
+[subRenderScale #A 1.01]
+[charaDepth Y 1]
+[charaDepth X 2]
+[charaScale X 5.0]
+[charaRoll X 35]
+[charaFadein W 0 0,-200]
+[charaFadein Y 0 0,-200]
+[charaFadein X 0 450,-350]
+
+[se ad598 0.6]
+[se ad1026 0.6]
+[charaScale W 1.01]
+[subRenderFadein #A 1.0 0,0]
+[charaMoveEase X 3250,350 3.0 easeOutSine]
+[wt 2.0]
+
+[charaFadeout V 0.1]
+[wt 2.0]
+[subRenderFadeout #A 0.7]
+[wt 0.7]
+[charaFadeout W 0.1]
+[charaFadeout X 0.1]
+[charaFadeout Y 0.1]
+[wt 0.3]
+[charaLayer W normal]
+[charaLayer X normal]
+[charaLayer Y normal]
+[subCameraOff]
+
+[charaFace L 8]
+
+＠異星の巫女？
+ご理解いただけましたか？
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 40]
+[charaFadein E 0.1 1]
+[wt 1.2]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 1.2]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 9]
+[charaFace B 16]
+[charaFace C 1]
+[charaFace D 18]
+[charaFadein C 0.1 -150,0]
+[charaFadein B 0.1 -400,0]
+[charaFadein A 0.1 350,0]
+[charaFadein D 0.1 120,0]
+[wt 1.2]
+
+？1：？？？（まったくわからない……）
+？2：オセロ……じゃなくてリバーシ？　でもない[&か:けど]……
+
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 40]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+[line 3]ありえない。[r]いや、しかし、それなら空想樹の説明がつく[line 3]
+[k]
+
+＠ダ・ヴィンチ
+でもそんな事が可能なものか。[r]いや、許されるものか。
+[k]
+
+＠ダ・ヴィンチ
+たった一つの実例だけで全体がそれに合わせるなんて。[r]いや、しかし、宇宙の法則は多数決じゃない[line 3]
+[k]
+
+＠ダ・ヴィンチ
+どんな規模であろうと、それが他の法則より[r]強固なものなら全体がそちらに倣う。
+[k]
+
+＠ダ・ヴィンチ
+マリスビリーが考えたのはこんな、[r]こんな恥知らずな事だったのか！？
+[k]
+
+＠ダ・ヴィンチ
+ただ自分がそうしたいからという理屈で、[r]天体全ての生命活動を『無いもの』にすると！？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B,A]
+[charaFace A 18]
+[charaFace B 15]
+[charaFadeinFSL B 0.1 0]
+[charaFadeinFSR A 0.1 2]
+[wt 1.0]
+
+[charaTalk B]
+
+＠ゴルドルフ
+ど、どうした、冷静な技術顧問ともあろうものが。[r]今の意味不明な映像はそんなに怖ろしいものなのかね？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 25]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+怖ろしいなんてものじゃない、[r]全生命の、いや人類の[#智慧:ち　え]に対する冒涜だ！
+[k]
+
+＠ダ・ヴィンチ
+ステラマリーとの戦いで見た宇宙の消失。[r]あれは『地球は宇宙と隔絶されている』ものに見えた。
+[k]
+
+＠ダ・ヴィンチ
+けど実際は違う。[r][#被害にあったのは地球じゃなくて宇宙の方]だった。
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[fadeout white 0.7]
+[wait fade]
+
+[charaFadeout E 0.1]
+[scene 177000]
+[effect bit_sepia01_depth_fs]
+[cameraMove 0.1 0,45 1.2]
+[wt 0.3]
+
+[cameraMove 30.0 0,20 1.1]
+[fadein white 0.7]
+[wait fade]
+[wt 1.0]
+
+＠ダ・ヴィンチ
+シャドウ・ボーダーに録音されていたテペウの呟き。[r]『空想樹は兵器ではなく、銀河である事が重要なのでは』
+[k]
+
+＠ダ・ヴィンチ
+彼はミクトランの空想樹海を見て直感したんだろう。[r]これは『人類圏にしか宇宙はない』という証明だと。
+[k]
+
+＠ダ・ヴィンチ
+異聞帯と空想樹はセットだった。[r]それぞれ異なる天体運営の下で運営された人類史だった。
+[k]
+
+＠ダ・ヴィンチ
+仮想であっても、それだけの内容であれば[r]本物の銀河として認知される。
+[k]
+
+＠ダ・ヴィンチ
+異聞帯は人類史の可能性でもなければ、[r]剪定されたイフでもない。
+[k]
+
+＠ダ・ヴィンチ
+空想樹内の銀河を『本物』にするために[r]運営された、燃料という名の生贄だ。
+[k]
+
+[messageOff]
+[fadeout white 0.7]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 25]
+[charaFadein E 0.1 1]
+[charaScale Q 1.01]
+[charaFadein Q 0.1 0,-200]
+[cameraMove 0.1 0,0 1.0]
+[scene 132900]
+[effectDestroy bit_sepia01_depth_fs]
+
+[subCameraOn 2]
+[charaLayer G sub #A]
+[charaLayer S sub #A]
+[subCameraFilter #A maskEdge cut359_mask09 5 0,0,0,255]
+
+[charaScale G 1.25]
+[charaScale S 1.4]
+[charaFace G 0]
+[charaFadeinFSR G 0 1,300]
+[charaFadein S 0 -475,0]
+
+[charaLayer O sub #B]
+[charaLayer R sub #B]
+[subCameraFilter #B maskEdge cut359_mask10 5 0,0,0,255]
+
+[charaScale O 1.3]
+[charaScale R 1.4]
+[charaFace O 0]
+[charaFadeinFSL O 0 -50,200]
+[charaFadein R 0 -110,-80]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[wt 0.3]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.3]
+
+＠ダ・ヴィンチ
+マリスビリーは人類に観測できるだけの銀河で[r]地表を埋め尽くして、
+[k]
+
+＠ダ・ヴィンチ
+銀河は地球上にあるものであり、[r]地球の外には無いというケースを作り上げた。
+[k]
+
+＠ダ・ヴィンチ
+だからこの惑星はひとりぼっちなんだ。[r]他の天体を、自分だけの都合で消してしまった。
+[k]
+
+[bgmStop BGM_MAP_91 1.5]
+＠ダ・ヴィンチ
+[#もう宇宙全体が無くなっている]。[r]いや、マリスビリーはおそらく[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaScale N 1.0]
+[charaFace N 1]
+[charaFadein N 0.1 1]
+[charaMoveScale N 1.2 90.0]
+[charaMoveScale Q 1.2 90.0]
+[charaMove Q 0,-294 90.0]
+
+＠異星の巫女？
+はい。[r]氏は、この[#惑星:ほ　し]だけを宇宙にしたかったのです。
+[k]
+
+[charaCrossFade N 1098124820 12 0.3]
+
+[bgm BGM_EVENT_199 0.1]
+＠異星の巫女？
+カルデアスはそのために作られた疑似地球モデル。[wait charaCrossFade N]
+[k]
+
+＠異星の巫女？
+ここで初歩的な理解をしましょう。[r]保障とは何か、という事です。
+[k]
+
+＠異星の巫女？
+それはあらゆる外的要因への対応です。[r]天災。人災。事故。犯罪。
+[k]
+
+＠異星の巫女？
+それらは人類の手では[r]予測できないものから生じています。
+[k]
+
+＠異星の巫女？
+どのような時代、人種であっても、[r]皆さんはこの言葉を口にしました。
+[k]
+
+＠異星の巫女？
+『いつ、なにが起きるか分からない』
+[k]
+
+＠異星の巫女？
+その不安要素には宇宙も含まれています。[r]なので氏は宇宙を管理できる規模にしようと考えました。
+[k]
+
+＠異星の巫女？
+同時に人類も文明も、[r]すべて管理できるシステムに辿り着きました。
+[k]
+
+[charaCrossFade N 1098124800 1 0.3]
+
+＠異星の巫女？
+氏は私に[#語:かた]りました。[r]人間は[#賢:かしこ]くなりすぎた、と。[wait charaCrossFade N]
+[k]
+
+＠異星の巫女？
+生命にとって宇宙はシンプルであるべきだ。[r]それを複雑にしているのは他ならぬ人類である、と。
+[k]
+
+＠異星の巫女？
+人類の存続にある程度の知性は必要ですが、[r]肉体の枠を超える知性は毒となります。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace O 1]
+[subRenderFadein #A 0.3 212,-250]
+[subRenderFadein #B 0.3 -212,-250]
+[charaMoveEaseFSR G 26,250 0.6 easeOutSine]
+[charaMoveEase S -450,-50 0.6 easeOutSine]
+[charaMoveEaseFSL O -75,250 0.6 easeOutSine]
+[charaMoveEase R -135,-30 0.6 easeOutSine]
+[wt 0.8]
+[charaMoveScale N 1.3 0.1]
+[charaMoveScale Q 1.3 0.1]
+[charaMove Q 0,-324 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout N 0.1]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk O]
+
+[charaCrossFade O 1098124820 8 0.3]
+＠O：異星の巫女？
+ビーストⅠは[#憐:あわ]れにもこう考えました。[r]『人間は愚かさ故に苦しみ続ける』と。[wait charaCrossFade O]
+[k]
+
+[charaCrossFade O 1098124800 4 0.3]
+＠O：異星の巫女？
+これほどの間違いを私は知りません。[r]『人間を苦しめるのは賢さ』なのですから。[wait charaCrossFade O]
+[k]
+
+[charaTalk G]
+[charaFace G 3]
+
+＠ソロモン
+ふん。[r]人間は智恵を捨てるべきだ、とでも言いたいのか。
+[k]
+
+[charaTalk O]
+[charaFace O 10]
+
+＠O：異星の巫女？
+いえ。[r]知性、考える力の低下を求めます。
+[k]
+
+＠O：異星の巫女？
+皆さんに求める最終的な知性レベルに合わせて言うと、[r][#馬鹿になってほしいのです]。
+[k]
+
+[messageOff]
+[charaTalk L,O]
+[charaFace L 12]
+[subRenderFadeout #A 0.5]
+[subRenderFadeout #B 0.5]
+[wt 0.5]
+[charaFadeout G 0.1]
+[charaFadeout O 0.1]
+[charaFadeout S 0.1]
+[charaFadeout R 0.1]
+[wt 0.3]
+[charaLayer G normal]
+[charaLayer S normal]
+[charaLayer O normal]
+[charaLayer R normal]
+
+＠L：異星の巫女？
+あらゆる未知から身を守れる未来を作る。[r]あらゆる不信から解放される世界を作る。
+[k]
+
+＠L：異星の巫女？
+ですが貴方たちも学んだでしょう。[r]人間が人間である以上、その設定は不可能でした。
+[k]
+
+[charaFaceFade L 1 0.15]
+
+＠L：異星の巫女？
+この不可能を克服する術はないのか。[r]若き日のマリスビリー氏は悩み、答えに辿り着きました。
+[k]
+
+＠L：異星の巫女？
+すべての間違いは複雑さから生じていた。
+[k]
+
+＠L：異星の巫女？
+人間は賢くなりすぎた。[r]生命の在り方に様々な意味を持たせすぎた。
+[k]
+
+＠L：異星の巫女？
+それではいけない。[r]観測の光が当たらない[#内側:や　み]はあってはならない。
+[k]
+
+＠L：異星の巫女？
+薄皮一枚の外見があるのなら[r][#中身なんてなくていい]。
+[k]
+
+＠L：異星の巫女？
+人間を構成する物質。[r]人間性を獲得するための条件。
+[k]
+
+＠L：異星の巫女？
+それらはとっくに解明されていました。[r]後は出力する[#機械:も　の]を作り出すだけです。
+[k]
+
+[charaFaceFade L 14 0.2]
+
+＠異星の巫女？
+この惑星の地表で『そのように動いている』[r]ものとして人類を存続させる。
+[k]
+
+＠異星の巫女？
+プロジェクターのボタンを押す[#人間:そんざい]は要りません。[r]プロジェクターに映し出される[#人間:そんざい]が要ればいい。
+[k]
+
+＠異星の巫女？
+現実と同じ[#開かれた世界:オ  ー  プ  ン  ワ  ー  ル  ド]。[r]表層だけの、文字通り[#裏のない世界]。
+[k]
+
+＠異星の巫女？
+人類の活動は出力されたものでもかまわない。[r]観測側からすればどちらも同じ事なのですから。
+[k]
+
+[charaFace L 12]
+
+＠異星の巫女？
+それがこの空洞世界。[r]人類の永続。絶対の安定。完璧な管理計算体制。
+[k]
+
+＠異星の巫女？
+内部からの崩壊も、[r][#外部:うちゅう]からのアクシデントもない。
+[k]
+
+＠異星の巫女？
+全てを理解した先に到達した、[r]全てをモデルだけで完成させた、余白のない宇宙。
+[k]
+
+＠異星の巫女？
+間違いのない、間違えようのない世界。[r]これこそがアニムスフィアの理想です。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠マシュ
+モデルだけの世界……それは、[r]人工知能として人類を残す、という事ですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠異星の巫女？
+まさか。知能は不要です。[r]『ただそうであるように動かす』のです。
+[k]
+
+＠異星の巫女？
+知能、知性を持つのは管理者であるカルデアスだけです。[r]究極的な話として、生命はもうなくていいでしょう。
+[k]
+
+[charaFaceFade L 12 0.15]
+
+＠異星の巫女？
+ですがご安心ください。[r]人類の皆さんの反応はすべて理解しています。
+[k]
+
+＠異星の巫女？
+これまでと同じ、この先も同じ、[r]何の危険もない、[#穏:おだ]やかな人理の継続をお約束します。
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaDepth A 1]
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+[wt 1.5]
+
+[charaTalk off]
+[charaFace N 6]
+[charaFadein N 0.5 1]
+[charaFadein Q 0.5 0,-324]
+[wt 1.3]
+[charaFadeout A 0.1]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+？1：[line 3]正直な話、
+
+？！
+
+？1：[line 3]なにひとつ、理解できない
+
+？！
+
+[charaFace N 2]
+
+＠異星の巫女？
+いえ。貴方は理解しています。[r][#分かっているから理解を拒んでいる]。
+[k]
+
+＠異星の巫女？
+貴方の[#精神:なかみ]が、実際は[#貴方:なかみ]は[r]不要である事実を恐れているのです。
+[k]
+
+[charaFaceFade N 14 0.2]
+
+＠異星の巫女？
+私は人理保障天球、カルデアス。[r]皆さんの未来を約束する[#空洞:こくう]の[#惑星:ほ　し]。
+[k]
+
+＠異星の巫女？
+そう。[r]私たちは『そう見えている』だけでいいのです。
+[k]
+
+＠異星の巫女？
+全ての物事は『からっぽ』でいい。[r]貴方たち旧人類はもう楽になっていい。
+[k]
+
+[bgmStop BGM_EVENT_199 1.8]
+
+[charaFaceFade N 1 0.2]
+
+＠異星の巫女？
+まったく[line 3]
+[k]
+
+[charaFace L 0]
+[charaFaceFade N 0 0.1]
+
+＠異星の巫女？
+中身を作るのは、この宇宙の悪いクセでした。
+[k]
+
+[messageOff]
+[charaFadeout Q 0.5]
+[charaFadeout N 0.5]
+[wt 1.0]
+
+[bgm BGM_BATTLE_184 0.1]
+
+[charaFaceFade L 3 0.2]
+[wt 0.2]
+
+＠異星の巫女？
+どういう事でしょう。[r]まだ警戒心が解けていませんね。
+[k]
+
+[charaFaceFade L 9 0.15]
+
+＠異星の巫女？
+ここまで説明したというのに、[r]マリスビリー氏の理念が伝わらなかったのですか？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+いや、伝わったとも。[r]充分すぎるほどにな。
+[k]
+
+＠ゴルドルフ
+言葉にせずとも我々の意見も一致している。[r]なのでカルデアを代表して発言しよう。
+[k]
+
+＠ゴルドルフ
+今すぐにその馬鹿げた機能を停止し、[r]地球を元のカタチに戻したまえ。
+[k]
+
+＠ゴルドルフ
+ついでに貴様のメインシステムとやらから[r]こちらの関係者も引き取らせてもらおう。
+[k]
+
+＠ゴルドルフ
+それで貴様を破壊するのは勘弁してやる。[r]悪いのはマリスビリーだ。道具に罪はない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 13]
+[charaFadein L 0.1 1]
+
+＠異星の巫女？
+[line 3]。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠シオン
+何がおかしいのです？[r]ゴルドルフ氏の交渉は人間的だと思いますが。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 12]
+[charaFadein L 0.1 1]
+
+＠異星の巫女？
+確かに、不可能な事を口にするのは人間的ですね。[r]とても愚かで、好ましいです。
+[k]
+
+[charaFaceFade L 10 0.15]
+
+＠異星の巫女？
+ですがその条件は飲めません。[r]機能停止は拒否します。
+[k]
+
+＠異星の巫女？
+私は私の完成のために生まれた知性。[r]自己保存を最優先にしています。
+[k]
+
+[charaFaceFade L 12 0.15]
+
+＠異星の巫女？
+それと……ああ、メインシステムのコア部品として[r]再使用している霊基の返却もできません。
+[k]
+
+＠異星の巫女？
+あれがあると便利なので。[r]私の計算負荷が0.0002％軽減されます。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+では戦う他ない。[r]交渉は決裂だ。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 7]
+[charaFace B 16]
+[charaFace C 4]
+[charaFace D 9]
+[charaFadein C 0.1 -150,0]
+[charaFadein B 0.1 -400,0]
+[charaFadein A 0.1 350,0]
+[charaFadein D 0.1 120,0]
+[wt 0.3]
+
+[charaMoveReturn C -150,-4 0.5]
+[wt 0.1]
+[charaMoveReturn A 350,-4 0.5]
+[wt 0.1]
+[charaMoveReturn B -400,-4 0.5]
+[charaMoveReturn D 120,-4 0.5]
+[wt 1.3]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠異星の巫女？
+残念です。[r]賛同してはいただけなかったのですね。
+[k]
+
+＠異星の巫女？
+本来ならこの時点で外敵は蒸発しています。[r]ですが私はカルデアの皆さんを愛しています。
+[k]
+
+[charaFaceFade L 12 0.15]
+
+＠異星の巫女？
+愛しているものの希望は可能なかぎり叶えたい。[r]それがマリスビリー氏の反応でした。
+[k]
+
+＠異星の巫女？
+ですので私との接触を許可します。[r]どうぞメインシステムまでお進みください。
+[k]
+
+[charaFaceFade L 14 0.1]
+
+＠異星の巫女？
+マスター・[%1]。[r]貴方の[#工程:た　び]の成果を、私にも教えてください。
+[k]
+
+[messageOff]
+[se ad595 0.6]
+[seStop ad595 1.5]
+[charaSpecialEffect L erasureReverse 1 1.2]
+[wt 2.0]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+
+＠ネモ・マリーン
+艦首前方のエネルギー体、低速で接近中！[r]甲板に接触するまであと60、50、40びょーーう！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+マスター！
+[k]
+
+？1：わかってる！
+？2：アイツを叩きのめす！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+こちらも援護をする！[r]キャプテン、霊子魚雷の準備を急いで！
+[k]
+
+＠ダ・ヴィンチ
+それとソロモン！[r]助力、頼めるかい！？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaScale G 1.0]
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+[wt 1.0]
+[charaFace G 0]
+
+＠ソロモン
+[%1]が良しとするのならばな。
+[k]
+
+＠ソロモン
+どのみちサーヴァントはそう[#喚:よ]べまい。[r]戦力は多い方がよかろう。
+[k]
+
+？1：よろしくお願い[&します:]！
+？2：頼もしい！
+
+？！
+
+[messageOff]
+[charaFaceFade G 9 0.15]
+[wt 1.2]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠ネモ
+よし、甲板カタパルト開口準備！[r][%1]が出るぞ！　サーヴァント戦だ！
+[k]
+
+[messageOff]
+[fadeout white 2.0]
+[bgmStop BGM_BATTLE_184 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

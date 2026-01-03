@@ -1,0 +1,274 @@
+
+
+＄94-09-15-04-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098284200 1 紅玉の書]
+[charaSet B 1060000 1 宮本伊織]
+[charaScale B 1.2]
+[charaSet C 1060000 1 宮本伊織1]
+[charaScale C 1.4]
+[charaSet D 98025000 1 怪異]
+[charaSet E 98025000 1 怪異1]
+[charaScale E 1.1]
+
+[sceneSet G 10000 1]
+[charaScale G 1.01]
+
+[sceneSet I 204900 1]
+[charaScale I 1.15]
+
+[charaSet J 1098173500 1 エフェクト用]
+[charaPut J 2000,2000]
+[charaEffect J bit_talk_noise_gr]
+
+[subCameraOn 2]
+
+
+
+[charaTalk depthOff]
+[charaDepth G 2]
+[charaDepth B 3]
+[charaDepth A 2]
+[charaDepth D 2]
+
+[scene 204900]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_254 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[se ad680]
+[effect bit_talk_v_slash01]
+[wt 0.3]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,20]
+[wt 0.2]
+
+[se ad170]
+[se ad419]
+[se ad1014]
+[effect bit_talk_14]
+[wt 0.2]
+
+[se ad496]
+[charaMove B 0,0 0.3]
+[charaMoveScale B 1.0 0.3]
+[wt 0.3]
+
+[charaFace B 1]
+
+＠宮本伊織
+ぐ[messageShake 0.05 3 3 0.3]ううぅっ……！
+[k]
+
+
+[cueSe SE_24 24_ade980]
+
+[insertionAnimationSetFSSideL ac_fude_triangle_slide_L 0,70]
+
+[insertionAnimationStart ac_fude_triangle_slide_L cut529_kgk_05]
+[wait insertionAnimationStart ac_fude_triangle_slide_L]
+
+＠F：紅玉の書
+伊織！
+[k]
+
+[messageOff]
+
+
+[insertionAnimationEnd ac_fude_triangle_slide_L]
+[wait insertionAnimationEnd ac_fude_triangle_slide_L]
+
+[charaFace B 0]
+[charaFadeTime G 0.2 0.5]
+
+＠宮本伊織
+（手応えはあった。[r]　だが……！）
+[k]
+
+[charaFadeout G 0.2]
+[charaFadeout B 0.2]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠紅玉の書
+奴め、魔力の鎧を[#纏:まと]いおった！[r]尋常の怪異ではなさそうじゃ！
+[k]
+
+？1：……強い！
+？2：まるで英霊並み！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[charaFadeTime G 0.2 0.5]
+
+＠宮本伊織
+（いや。俺が[#弱い]）
+[k]
+
+＠宮本伊織
+（セイバーの云う通りだな。[r]　あの絶技ならばこの程度、物ともするまい）
+[k]
+
+[charaFace B 9]
+
+＠宮本伊織
+（二天一流を磨き、[r]　紅玉の南蛮外法を得ても[#尚:なお]……）
+[k]
+
+＠宮本伊織
+（俺は、天下一の剣士には程遠い）
+[k]
+
+[messageOff]
+[charaFadeout G 0.2]
+[charaFadeout B 0.2]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[cueSe SE_24 24_ade979 0 0.7]
+[effect bit_talk_charge_ppl02]
+[wt 2.5]
+
+？1：まずい！
+？2：下がって、伊織！
+
+？！
+
+[cueSeStop 24_ade979 0.6]
+[fowardEffect bit_talk_quickmove]
+[se ad678]
+[charaSpecialEffect D erasureReverse 0,0 0.4]
+[effectStop bit_talk_charge_ppl02]
+[wt 0.8]
+[fowardEffectDestroy bit_talk_quickmove]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+[charaFadeTime G 0.2 0.5]
+
+＠宮本伊織
+（俺の剣は……届かんか）
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_254 0.5]
+
+[charaDepth G 1]
+[charaDepth B 2]
+[charaDepth I 3]
+[charaDepth E 4]
+[charaDepth C 5]
+
+[charaLayer C sub #B]
+[subCameraFilter #B through]
+[charaFace C 9]
+[charaFadein C 0.1 300,0]
+[subRenderFadein #B 0.7 0,0]
+[charaFadein I 0.7 -50,-250]
+[wt 0.3]
+
+[charaFadeout G 0.2]
+[charaFadeout B 0.2]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 -50,-20]
+[charaMoveEase E -250,-20 0.3 easeInOutSine]
+[wt 0.1]
+[cueSe Servants_704800 m58463]
+[wt 0.3]
+
+[se ad715]
+[effect bit_talk_h_slash02_fs 0,50 F]
+[wt 0.2]
+
+[fadeout black 0.2]
+[wait fade]
+
+[scene 10000]
+[subRenderFadeout #B 0.1]
+
+[cameraHome 0.1]
+[effectDestroy bit_talk_h_slash02_fs]
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout I 0.1]
+[wt 0.2]
+
+[scene 10000]
+[pictureFrame cut063_cinema]
+[wt 0.2]
+
+[fadein black 0.2]
+[wait fade]
+
+
+＠
+[line 3][#何に]？
+[k]
+
+＠
+武蔵の剣に？[r]セイバーの絶技に？
+[k]
+
+＠
+それとも[line 3]
+[k]
+
+[messageOff]
+[fadeout black 0.8]
+[wait fade]
+
+[scene 45902]
+[wt 0.2]
+
+[se ad31]
+[seVolume ad31 0 0.0]
+[charaPut J 1]
+
+[seVolume ad31 2.0 0.7]
+[fadein black 2.0]
+[wait fade]
+
+[wt 1.8]
+
+[seStop ad31 3.0]
+[fadeout black 3.0]
+[wait fade]
+[charaPut J 2000,2000]
+[charaEffectDestroy J bit_talk_noise_gr]
+[soundStopAll]
+[end]
+
+

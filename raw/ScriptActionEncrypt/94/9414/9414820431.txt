@@ -1,0 +1,492 @@
+
+＄94-14-82-04-3-1
+
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[soundStopAll]
+
+[charaSet A 1098330300 1 オグ]
+[charaSet B 4043001 1 太公望]
+[charaSet C 4057001 1 ネモ]
+[charaSet D 1098330200 1 レイヴン]
+[charaSet E 1037001 1 紅閻魔]
+[charaSet F 1098330100 1 ドーヴ]
+[charaSet G 5033000 1 キルケー]
+[charaSet H 1098310200 1 ロウヒ]
+[charaSet I 1098214000 1 四不相]
+
+[charaSet J 1098330300 1 オグ_演出用]
+[charaSet K 1098330300 1 オグ_演出用]
+[charaSet L 4057001 1 ネモ_演出用]
+
+[sceneSet M 254601 1]
+[sceneSet N 254601 1]
+[sceneSet O 254601 1]
+[sceneSet P 254601 1]
+[sceneSet Q 254601 1]
+
+[charaSet R 1098330300 1 オグ_演出用]
+[charaRollAxis R y 180 0]
+[charaSet S 98115000 1 エフェクト用]
+
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用]
+
+[sceneSet X 10001 1]
+[imageSet Y back10000 1]
+[imageSet Z back10000 1]
+
+[charaTalk depthOff]
+[charaDepth Z 3]
+[charaDepth Y 2]
+[charaDepth X 1]
+
+[charaDepth V 4]
+[charaDepth A 3]
+[charaDepth O 2]
+
+[charaDepth W 4]
+[charaDepth J 3]
+[charaDepth P 2]
+
+[charaDepth L 5]
+[charaDepth K 3]
+[charaDepth Q 2]
+[charaDepth R 4]
+[charaDepth S 6]
+
+[charaDepth E 16]
+[charaDepth I 15]
+[charaDepth B 14]
+[charaDepth N 13]
+[charaDepth G 6]
+[charaDepth C 5]
+[charaDepth H 4]
+[charaDepth M 3]
+[charaDepth F 2]
+[charaDepth D 1]
+
+[subCameraOn 4]
+[charaLayer V sub #A]
+[charaLayer A sub #A]
+[charaLayer O sub #A]
+[charaLayer W sub #B]
+[charaLayer J sub #B]
+[charaLayer P sub #B]
+[charaLayer R sub #C]
+[charaLayer S sub #C]
+[charaLayer K sub #C]
+[charaLayer L sub #C]
+[charaLayer Q sub #C]
+[charaLayer X sub #MASK]
+[charaLayer Y sub #MASK]
+[charaLayer Z sub #MASK]
+[subCameraFilter #A maskEdge #MASK 5 0,0,0,255 0]
+[subCameraFilter #B normal]
+[subCameraFilter #C maskEdge cut359_mask09 5 137,160,159,255 0]
+[subRenderDepth #A 4]
+[subRenderDepth #B 3]
+[subRenderDepth #C 2]
+
+[charaScale Y 2.0]
+[charaScale Z 2.0]
+[charaFadein X 0 0,-200]
+[charaFadein Y 0 1750,0]
+[charaFadein Z 0 -1750,0]
+
+[charaScale P 1.3]
+[charaFadein P 0 120,-320]
+[subRenderFadein #B 0.1 0,0]
+
+[charaScale A 1.2]
+[charaScale O 1.3]
+[charaTalk B,A]
+[charaFace A 0]
+[charaFadein A 0 50,-50]
+[charaFadein O 0 0,-160]
+[subRenderFadein #A 0.1 0,0]
+
+[scene 254601]
+[wt 0.1]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_63 0.1]
+[wt 0.2]
+[charaEffect V bit_talk_blow -100,100]
+[cueSe Servants_404300 m45122 0.6]
+[wt 0.1]
+[charaShake A 0.05 2 2 0.4]
+[charaEffect V bit_talk_blow02 150,-150]
+[wt 0.15]
+[cueSe Servants_404300 m45123 0.6]
+[wt 0.65]
+[charaEffect V bit_talk_down_beam]
+[charaEffectStop V bit_talk_down_beam]
+[cueSe Servants_404300 bac1410 0.5]
+[cueSe Servants_404300 bac1411 0.5]
+[charaShake A 0.04 2 2 2.0]
+[wt 2.5]
+[charaFadeout A 0.4]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[charaShake P 0.04 4 4 0]
+[charaEffect W bit_talk_impactlanding]
+[charaEffect W bit_talk_rubble02]
+[charaEffectStop W bit_talk_rubble02]
+[cueSe SE_23 23_ad1318]
+[se ade344]
+[se ad789]
+[se ad913]
+[wt 3.0]
+[seStop 23_ad1318 1.0]
+[subRenderFadeout #B 0.7]
+[wt 0.7]
+[charaShakeStop P]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠太公望
+[line 3]ふぅ！
+[k]
+
+[charaFace B 5]
+＠太公望
+どうにか、一旦は落ち着かせられたようですが……。[r]ほとんど相手は無傷です！
+[k]
+
+＠太公望
+たちまち傷はふさがり、即座に回復も果たす。[r]なんという強靱さ！
+[k]
+
+[charaFace B 4]
+
+＠太公望
+これはまともにやりあえる相手じゃない！
+[k]
+
+？1：太古の巨人の名は伊達じゃない、か
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠ネモ
+これは……[r]方舟の力をその一身に集めているせいだ。
+[k]
+
+[charaFace C 11]
+
+＠ネモ
+そうか、きみは[#ノアの怒り]なのか、オグ。
+[k]
+
+＠ネモ
+やり場のない怒りが[r]ここに吹きだまっているのか。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[subRenderFadein #A 0.4 0,0]
+[wt 0.6]
+[charaFace A 0]
+[charaFadein A 0.7 50,-50]
+[charaShake A 0.06 2 2 1.5]
+[charaMove A 50,0 1.5]
+[wt 0.3]
+[se ade79]
+[seStop ade79 1.5]
+[wt 2.0]
+
+＠オグ
+[f large]………グォ…。
+[k]
+
+[subRenderFadeout #A 0.2 0,0]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠レイヴン
+やっと目が覚めたのか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[subRenderFadein #A 0.2 0,0]
+[wt 0.2]
+
+＠オグ
+[f large]……オグ。
+[k]
+
+[subRenderFadeout #A 0.2 0,0]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠ネモ
+…………よし。
+[k]
+
+[messageOff]
+[se ad73]
+[charaEffect C bit_talk_quickmove]
+[charaSpecialEffect C erasureReverse 1 0.3]
+[wt 0.5]
+
+[charaTalk off]
+
+[charaPut Y 1550,0]
+[charaPut Z -1550,0]
+[charaScale O 1.5]
+[charaScale A 1.6]
+[charaPut A 600,100]
+[charaPut O -200,-430]
+[charaEffect V bit_talk_43h_fs 0,0]
+
+[subCameraFilter #B maskEdge #MASK 5 0,0,0,255 0]
+[charaScale P 1.5]
+[charaScale J 1.7]
+[charaFace J 0]
+[charaFadein J 0 -250,550]
+[charaFadein P 0 200,-130]
+[charaShake J 0.04 1 1 0]
+[charaShake P 0.04 1 1 0]
+[charaEffect W bit_talk_43h_fs 0,0]
+
+[se ad770]
+[seVolume ad770 0 0.3]
+[cueSe SE_23 23_ad1238 0]
+[seVolume 23_ad1238 1.0 0.2]
+[subRenderFadein #B 0.4 200,0]
+[wt 0.4]
+[charaShake A 0.04 1 1 0]
+[charaShake O 0.04 1 1 0]
+
+[wt 1.5]
+
+[subRenderFadeout #B 0.4]
+[subRenderFadein #A 0.4 -200,0]
+[wt 1.9]
+
+[seStop ad770 0.4]
+[subRenderFadeout #A 0.4 0,0]
+[seStop 23_ad1238 1.0]
+[wt 0.6]
+[charaShakeStop A]
+[charaShakeStop O]
+[charaShakeStop J]
+[charaShakeStop P]
+[charaEffectDestroy V bit_talk_43h_fs]
+[charaEffectDestroy W bit_talk_43h_fs]
+
+[bgmStop BGM_MAP_63 2.0]
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠紅閻魔
+オグの身体を駆け上がったネモ様が[r]あの大きな顔の間近に寄り添って……
+[k]
+
+＠紅閻魔
+何をしているでち？
+[k]
+
+[messageOff]
+[charaTalk E,L]
+[subCameraFilter #B maskEdge cut359_mask10 5 137,160,159,255 0]
+[charaScale P 1.5]
+[charaScale J 1.5]
+[charaFace J 0]
+[charaFadeinFSL J 0 -50,200]
+[charaFadein P 0 200,-130]
+[charaScale Q 1.5]
+[charaScale L 1.5]
+[charaScale K 1.5]
+[charaScale R 5.0]
+[charaFace L 10]
+[charaPutFSR L 50,200]
+[charaPutFSR S 50,200]
+[charaFadein R 0 -800,-10]
+[charaFadein Q 0 -200,-130]
+
+[subRenderFadein #B 0.4 -212,-200]
+[subRenderFadein #C 0.4 212,-200]
+[wt 0.4]
+[charaFadeout E 0.1]
+[subCameraFilter #A normal]
+[subRenderDepth #A 1]
+[charaFadeout A 0.1]
+[charaScale O 1.2]
+[charaPut O 0,-270]
+[subRenderFadein #A 0.1 0,0]
+[wt 0.2]
+
+[se ad223]
+[charaEffect S bit_talk_quickmove]
+[charaSpecialEffect L appearanceReverse 1 0.4]
+[wt 0.5]
+
+
+[bgm BGM_SHINYAMA_1 0.1]
+
+＠L：ネモ
+…………。
+[k]
+
+＠J：オグ
+[f large]……オォグ。
+[k]
+
+[charaFace L 12]
+
+＠L：ネモ
+ああ…………[r]おまえの悲しみの気持ちと……これは……。
+[k]
+
+＠L：ネモ
+ネフィリムたちの激しい憎しみが[r]流れ込んでくる……。
+[k]
+
+＠L：ネモ
+未来を奪われた者たちの、[#怨嗟:えんさ]の叫びが。
+[k]
+
+＠L：ネモ
+それをおまえは、近しき同族として[r]一番に聞いてしまうんだね、オグ。
+[k]
+
+＠J：オグ
+[f large]オォ…グ。
+[k]
+
+[charaFace L 20]
+
+＠L：ネモ
+でも……[r]でも、なんだい……？
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace L 12]
+
+＠L：ネモ
+…………そうか……。[r]そうだったのか、オグ。
+[k]
+
+＠L：ネモ
+ノアが苦しむよりはよいと、[r]ノアが彼自身を罰するよりはよかれと[line 3]
+[k]
+
+＠L：ネモ
+そう[line 3]思ったのか。
+[k]
+
+＠L：ネモ
+彼の旧知の友として。[r]誇りある、[#旧:ふる]き巨人の王として。
+[k]
+
+＠L：ネモ
+誰にも会わぬように、傷つけぬように、[r]この船底に自分を縛りつけて……。
+[k]
+
+＠L：ネモ
+ネフィリムたちの憎しみと狂気を[r]その身に一手に引き受けていたのか……。
+[k]
+
+＠J：オグ
+[f large]オォォォォ……グ…。
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.6]
+[subRenderFadeout #C 0.6]
+[wt 0.6]
+
+[charaEffect V bit_talk_voice01]
+[se ad625]
+[wt 2.8]
+[subRenderFadeout #A 0.7]
+[wt 0.7]
+[charaEffectDestroy V bit_talk_voice01]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠ドーヴ
+……オグ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠レイヴン
+…………オグ……。
+[k]
+
+＠レイヴン
+……ノア……さま。
+[k]
+
+[messageOff]
+
+[charaScale M 1.2]
+[charaTalk off]
+[charaFace G 4]
+[charaFadein G 0.4 -200,0]
+[charaFace H 34]
+[charaFadein H 0.4 200,0]
+[charaFadein M 0.4 70,-280]
+[charaMove G -220,0 5.0]
+[charaMove H 180,0 5.0]
+[charaMove M 50,-280 5.0]
+[wt 0.4]
+[wt 2.5]
+
+[charaScale N 1.2]
+[charaScale I 1.2]
+[charaRoll I 10]
+[charaFace E 13]
+[charaFadein E 0.4 -300,0]
+[charaFace I 3]
+[charaFadein I 0.4 0,-140]
+[charaFace B 4]
+[charaFadein B 0.4 300,0]
+[charaFadein N 0.4 -70,-280]
+[charaMove E -280,0 5.0]
+[charaMove I 20,-140 5.0]
+[charaMove B 320,0 5.0]
+[charaMove N -50,-280 5.0]
+[wt 2.5]
+
+[bgmStop BGM_SHINYAMA_1 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

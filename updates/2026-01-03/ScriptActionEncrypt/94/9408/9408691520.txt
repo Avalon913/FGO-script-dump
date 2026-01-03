@@ -1,0 +1,1851 @@
+
+
+
+＄94-08-69-15-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098273300 1 テセウス]
+[charaSet B 7009001 1 アステリオス]
+[charaSet C 2050000 1 プトレマイオス]
+[charaSet D 2051001 1 杉谷善住坊]
+[charaSet E 1098228200 1 ケルベロス]
+[charaSet F 1098272700 1 ヒュドラ]
+[charaSet G 1098257310 1 ダ・ヴィンチ]
+[charaSet H 1098123010 1 ムニエル]
+[charaSet I 1098257810 1 マシュ]
+[charaSet J 1098273400 1 アステリオス？]
+[charaSet K 1098255110 1 ゴルドルフ]
+
+[imageSet L cut106_trans 1]
+[imageSet M cut106_trans 1]
+
+[charaSet N 1098272520 1 影の騎士3]
+[charaSet O 1098272530 1 影の騎士4]
+[charaSet P 1098272540 1 影の騎士5]
+[charaSet Q 1098272550 1 影の騎士6]
+[charaSet R 1098272560 1 影の騎士7]
+
+[sceneSet S 194900 1]
+[charaScale S 1.01]
+[sceneSet T 194900 1]
+[charaScale T 1.4]
+
+[charaSet U 98115000 1 エフェクト用]
+[charaSet V 98115000 1 エフェクト用2]
+[charaSet W 98115000 1 エフェクト用3]
+[charaSet X 98115000 1 エフェクト用4]
+[charaSet Y 98115000 1 エフェクト用5]
+
+[imageSet Z back10000 1 1]
+[charaScale Z 1.3]
+
+[scene 10000]
+
+[subCameraOn 3]
+[charaLayer S sub #A]
+[charaLayer L sub #A]
+[charaLayer T sub #B]
+[charaLayer M sub #B]
+[charaLayer Z sub #C]
+[charaLayer V sub #C]
+[charaLayer W sub #C]
+[charaLayer X sub #C]
+[charaLayer Y sub #C]
+
+[subCameraFilter #A mask cut359_mask09]
+[subCameraFilter #B mask cut359_mask10]
+[subCameraFilter #C through]
+[subRenderScale #C 1.01]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+
+[charaTalk on]
+[charaTalk depthOff]
+[charaDepth S 1]
+[charaDepth T 1]
+[charaDepth L 2]
+[charaDepth M 2]
+[charaDepth Z 2]
+[charaDepth V 3]
+[charaDepth W 3]
+[charaDepth X 3]
+[charaDepth Y 3]
+
+[charaScale S 1.01]
+[charaScale T 1.01]
+[charaFadein S 0.1 -210,50]
+[charaFadein T 0.1 210,50]
+[charaFadein Z 0.1 0,-200]
+
+[subRenderFadein #A 0.1 209,-250]
+[subRenderFadein #B 0.1 -209,-250]
+[subRenderFadein #C 0.1 0,0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_69 0.1]
+
+＠
+[line 3]怪物と出会ったのは、迷宮だった。
+[k]
+
+[messageOff]
+[subRenderFadeout #C 1.0]
+[wt 1.4]
+
+＠
+そのときの僕は、[r]ただ[#英雄らしい行為]だけを続けていた。
+[k]
+
+＠
+英雄ならそうするはずだからと、多くの盗賊を成敗し、[r]魔物を打ち倒し、誇らしさで胸をいっぱいにしていた。
+[k]
+
+＠
+やがて、そんな僕は、とある怪物の話を聞いた。
+[k]
+
+＠
+九年に一度、子供たちを生贄に要求する怪物がいると。[r]迷宮の底に暮らすその怪物には、王も手が出せないと。
+[k]
+
+＠
+当時の僕は、勝手な義憤を燃やして、[r]生贄に加わって、迷宮へと潜り込んだ。
+[k]
+
+＠
+王女アリアドネの神器である糸玉を授かり、[r]迷宮の底へとひたすら進んでいったのだ。
+[k]
+
+＠
+そして、怪物に出会った。
+[k]
+
+[messageOff]
+[subRenderFadein #C 0.8 0,0]
+[wt 1.0]
+
+[charaScale S 1.0]
+[charaScale T 1.0]
+[se ad171]
+[charaPut V 1]
+[charaEffect V bit_talk_x_slash02]
+[wt 0.4]
+
+[cueSe Servants_901600 m53540]
+[charaPut W 1]
+[charaEffect W bit_talk_x_slash01]
+[wt 0.45]
+
+[se ad32]
+[cueSe Battle bac97]
+[fowardEffect bit_talk_blow]
+[wt 0.1]
+[charaEffectDestroy W bit_talk_x_slash01]
+[charaEffectDestroy V bit_talk_x_slash02]
+[shake 0.03 4 5 0.6]
+[wt 0.6]
+
+[se ad85]
+[charaPut V 1]
+[charaEffect V bit_talk_v_slash01]
+[wt 0.5]
+
+[cueSe Servants_401900 bac941]
+[wt 0.1]
+[cueSe Battle bac153]
+[charaPut W 1]
+[charaEffect W bit_talk_h_slash01_fs]
+[wt 0.55]
+
+
+[se ad170]
+[cueSe Battle bac98]
+[fowardEffect bit_talk_blow02]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+[shake 0.03 4 5 0.6]
+[charaEffectDestroy V bit_talk_v_slash01]
+[charaEffectDestroy W bit_talk_h_slash01_fs]
+[wt 1.6]
+
+[charaMoveScale S 1.2 90.0]
+[charaMoveScale T 1.2 90.0]
+[charaRollMoveEx S 270.0 360 -225,-225]
+
+[charaFadein T 0.1 270,50]
+[charaRollMoveEx T 270.0 -360 290,-180]
+
+[charaScale L 1.2]
+[charaScale M 1.2]
+[charaFadein L 0.1 75,0]
+[charaFadein M 0.1 -75,0]
+
+[wt 0.1]
+[subRenderFadeout #C 1.5]
+[wt 1.9]
+
+＠
+戦いは、ただ奇跡の連続だった。
+[k]
+
+＠
+かつての冒険で磨かれた直感に身を委ね、[r]ひたすらに怪物の隙をつく。
+[k]
+
+＠
+一度でも間違えれば、こちらは即死。[r]こちらの攻撃は百度積み重ねても、怪物の肉を断てない。
+[k]
+
+＠
+それでも、ただ積み重ねた。[r]百で足りなければ千、千で足りなければ万。
+[k]
+
+[messageOff]
+[subRenderFadein #C 0.8 0,0]
+[wt 1.0]
+
+[se ad171]
+[charaPut V 1]
+[charaEffect V bit_talk_x_slash02]
+[wt 0.45]
+
+[se ad32]
+[cueSe Battle bac263]
+[fowardEffect bit_talk_blow]
+[wt 0.1]
+[charaEffectDestroy V bit_talk_x_slash02]
+[wt 0.55]
+
+[cueSe Servants_901600 m53540]
+[charaPut W 1]
+[charaEffect W bit_talk_x_slash03]
+[charaEffect W bit_talk_quick_slash]
+[wt 0.35]
+
+[se ad85]
+[cueSe Battle bac154]
+[charaPut X 1]
+[charaEffect X bit_talk_h_slash01_fs 0,0 H]
+[wt 0.6]
+
+[se ad32]
+[se ad170]
+[se ad419]
+[fowardEffect bit_talk_blow02]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+[charaEffectDestroy W bit_talk_x_slash03]
+[charaEffectDestroy X bit_talk_h_slash01_fs]
+[charaEffectDestroy W bit_talk_quick_slash]
+[wt 0.75]
+
+[cueSe Battle bac154]
+[cueSe Servants_105200 m45801]
+[charaPut V 1]
+[charaEffect V bit_talk_v_slash01]
+[wt 0.6]
+
+[se ad171]
+[cueSe Servants_901600 m53540]
+[charaPut W 1]
+[charaEffect W bit_talk_x_slash02 0,0 F]
+[wt 0.55]
+
+[se ad32]
+[se ad419]
+[fowardEffect bit_talk_14]
+[wt 0.7]
+
+[cueSe Servants_401900 bac941]
+[charaPut X 1]
+[charaEffect X bit_talk_v_slash01 0,0 H]
+[charaEffect X bit_talk_quick_slash 0,0 H]
+[wt 0.5]
+
+[cueSe Servants_901600 m53540]
+[charaPut Y 1]
+[charaEffect Y bit_talk_x_slash01 0,0 H]
+[wt 0.5]
+
+[se ad170]
+[se ad633]
+[seVolume ad633 0 0.6]
+[cueSe Battle bac139]
+[fowardEffect bit_talk_blow02]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+[charaEffectDestroy W bit_talk_x_slash02]
+[charaEffectDestroy X bit_talk_v_slash01]
+[charaEffectDestroy Y bit_talk_x_slash01]
+[charaEffectDestroy X bit_talk_quick_slash]
+[wt 1.4]
+
+
+＠
+不運なことに
+[k]
+
+＠
+僕は、奇跡を積み重ねてしまった。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[cueSe Battle bac95]
+[cueSe Battle bac266]
+[fadeout BE0032 0.1]
+[wait fade]
+
+[subRenderFadeout #A 0]
+[subRenderFadeout #B 0]
+[subRenderFadeout #C 0]
+[charaFadeout S 0]
+[charaFadeout T 0]
+[charaFadeout Z 0]
+[charaFadeout L 0]
+[charaFadeout M 0]
+[charaPut V 2000,2500]
+[charaPut W 2000,2500]
+[charaPut X 2000,2500]
+[charaPut Y 2000,2500]
+
+[fadein BE0032 0.1]
+[wait fade]
+[wt 0.5]
+
+[subCameraOff]
+[charaLayer S normal]
+[charaLayer T normal]
+[charaLayer Z normal]
+[charaLayer V normal]
+[charaLayer W normal]
+[charaLayer X normal]
+[charaLayer Y normal]
+[charaLayer L normal]
+[charaLayer M normal]
+[charaScale Z 1.0]
+[charaScale S 1.0]
+[charaScale T 1.0]
+[charaScale V 1.0]
+[charaScale W 1.0]
+[charaScale X 1.0]
+[charaScale Y 1.0]
+[charaScale L 1.0]
+[charaScale M 1.0]
+
+
+[se ad464]
+[cueSe Battle bac267]
+[charaRoll U -30]
+[charaPut U 1]
+[charaEffect U bit_talk_blood_splash]
+[wt 1.2]
+
+[se adm39]
+[wt 1.2]
+
+＠
+そして怪物を殺したとき[r][#彼がただの人間であった]と、知った。
+[k]
+
+＠
+父にあたる王が[#海神:ポセイドン]を怒らせたために罰を受けて、[r]怪物の姿で生まれてしまっただけの人間だったと。
+[k]
+
+＠
+忌まわしい姿に苦しんだ王は、[r]身勝手にもこの息子を迷宮へと閉じ込めた。
+[k]
+
+＠
+この怪物を留めるためには生贄が必要などと思い込み、[r]何の意味もないのに、子供たちを送り込んだ。
+[k]
+
+[messageOff]
+[effect bit_talk_fang_02]
+[wt 0.2]
+[cueSe SE_21 21_ad1147]
+[wt 6.0]
+
+[sceneSet S 194900 1]
+[charaScale S 1.01]
+[effectStop bit_talk_fang_02]
+[wt 1.0]
+
+[charaRoll S 0]
+[charaScale S 1.3]
+[charaFadein S 1.0 -200,-260]
+[wt 0.1]
+[charaMoveScale S 1.45 30.0]
+[charaMove S -260,-320 30.0]
+[wt 1.4]
+
+＠
+何の意味もないのに、彼は生贄を喰らった。
+[k]
+
+＠
+『かいぶつとよばれたんだから、[r]　ぼくはかいぶつらしくふるまわなきゃ』
+[k]
+
+＠
+たどたどしく、[r]おおよそはそんな意味のことを、言ったと思う。
+[k]
+
+＠
+[line 3]僕は、ただ、震えた。
+[k]
+
+＠
+信じた正義は、正義ではなかった。[r]理不尽へ燃やした義憤は、むなしく散って、消えた。
+[k]
+
+＠
+『これが、すくいだ』
+[k]
+
+＠
+嬉しそうに、彼が言った。
+[k]
+
+＠
+『うれしい。だって、ちちうえはただしかった』
+[k]
+
+＠
+馬鹿なことを言うな。
+[k]
+
+＠
+君は救われるべきだった。[r]少なくとも、こんな死に方をすべきじゃなかった。
+[k]
+
+[messageOff]
+[charaFadeout S 1.2]
+[wt 2.0]
+
+＠
+[line 3]後年、僕はとある国の王となった。
+[k]
+
+＠
+だけど、胸にくすぶった疑念という残り火は、[r]消えることがなかった。
+[k]
+
+＠
+テセウスという英雄は王になるべきではなかった。[r]アステリオスという怪物は、王になるべきだった。
+[k]
+
+＠
+ならば、帰結はひとつしかない。
+[k]
+
+[bgmStop BGM_EVENT_69 2.0]
+
+＠
+[#テセウスは]、[#アステリオスにこそ仕えるべきだったのだ]。
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaSet L 1098272500 1 影の騎士1]
+[charaSet M 1098272510 1 影の騎士2]
+[sceneSet S 200500 1]
+[charaScale S 1.01]
+[sceneSet T 200500 1]
+[charaScale T 1.2]
+[charaSet Z 98115000 1 エフェクト用6]
+[wt 0.5]
+
+[scene 200500]
+
+[charaPut Z 2000,2500]
+[charaEffect Z bit_sepia01_depth_fs]
+
+[charaTalk depthOff]
+[charaDepth S 1]
+[charaDepth A 2]
+[charaDepth B 2]
+[charaDepth C 2]
+[charaDepth D 2]
+
+[charaScale S 1.1]
+[charaFadein S 0.1 0,-220]
+[wt 1.0]
+
+[charaRoll U 0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_MAP_23 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠テセウス
+生前の僕は……出発点から間違っていた。
+[k]
+
+
+＠テセウス
+アステリオスこそが[#ミノタウロス:怪　　　　　　　物]の真実であり、[r]怪物などという伝説が、ただの偽りだったのなら。
+[k]
+
+＠テセウス
+僕こそ、アステリオスを救って[r]父王ともども罪を償わせなければならなかった……
+[k]
+
+？1：出発点……
+？2：君とアステリオスの……
+？！
+
+[charaFace A 3]
+＠テセウス
+アステリオス！
+[k]
+
+＠テセウス
+もう、僕のことはかまうな！[r]おまえの好きにやれ！　その聖杯の雫を好きに使え！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠アステリオス
+てせうす……ぼく……は……
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_23 1.5]
+[cameraMove 1.5 0,-10 1.07]
+[wt 1.9]
+
+[charaPut U 2000,2500]
+[charaEffect U bit_talk_miasma_eruption]
+
+[cueSe Battle bas2]
+[fowardEffect bit_talk_20]
+[wt 2.4]
+
+
+
+[charaFace B 2]
+＠アステリオス
+[f large]て[messageShake 0.05 4 3 0.5]せうすううううう！
+[k]
+
+[messageOff]
+
+[se ad284]
+[seVolume ad284 0 0.5]
+[se ad623]
+[se ad789]
+[se ad875]
+[cueSe SE_23 23_ade909]
+[fadeout white 0.1]
+[wait fade]
+
+[fowardEffectDestroy bit_talk_20]
+[cameraMove 0 0,0 1.01]
+
+[charaDepth U 8]
+
+[charaPut U 1]
+
+[fadein white 0.1]
+[seStop ad623 2.0]
+[seStop ad789 2.0]
+[seStop ad875 2.0]
+[wait fade]
+[wt 2.5]
+
+[cueSeVolume 23_ade909 0.3 0.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut U 2000,2500]
+
+[bgm BGM_EVENT_126 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠プトレマイオス
+なんだ、これは！
+[k]
+
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[charaTalk off]
+
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+[charaFace D 5]
+[charaSpecialEffect D appearanceReverse 0,0 0.3]
+[wt 0.8]
+
+[charaTalk on]
+＠杉谷善住坊
+おい、こいつはどうなってる、プトレとマスター！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠プトレマイオス
+城壁から降りてきたのか、杉谷！[r]残念だが、[#吾:あ]も分からん！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[cueSeVolume 23_ade909 0.3 0.5]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.05]
+[charaPut U 1]
+[wt 0.05]
+＠アステリオス
+[f large]あああああああ！
+[k]
+
+
+[messageOff]
+[charaDepth L 2]
+[charaDepth M 2]
+[charaDepth N 2]
+[charaDepth O 2]
+[charaDepth P 2]
+[charaDepth Q 2]
+[charaDepth R 2]
+[charaDepth V 3]
+[charaDepth W 3]
+[charaDepth X 3]
+[charaDepth Y 3]
+[charaDepth B 4]
+[charaDepth U 5]
+[cueSe SE_23 23_ade908]
+[cueSeVolume 23_ade908 0 0]
+[cueSe SE_23 23_ade916]
+[cueSeVolume 23_ade916 0 0]
+[wt 0.1]
+
+[charaPut X 450,0]
+[charaPut Y -450,0]
+[charaEffect X bit_talk_miasma_aura]
+[charaEffect Y bit_talk_miasma_aura]
+[wt 0.1]
+[cueSeVolume 23_ade908 0.6 0.8]
+[cueSeVolume 23_ade916 0.6 0.2]
+[wt 1.5]
+
+
+[se ad219]
+[cueSe SE_21 21_ad1082]
+[cueSeVolume 21_ad1082 0 0.5]
+[charaPut L 175,0]
+[charaPut M -175,0]
+[charaPut N 350,0]
+[charaPut O -350,0]
+[charaPut P 525,0]
+[charaPut Q -525,0]
+[charaFace L 0]
+[charaFace M 0]
+[charaFace N 0]
+[charaFace O 0]
+[charaFace P 0]
+[charaFace Q 0]
+
+[charaSpecialEffect L appearance 0,0 1.2]
+[wt 0.2]
+[se ad177]
+[se ade55]
+[charaSpecialEffect M appearance 0,0 1.2]
+[wt 0.2]
+[charaSpecialEffect N appearance 0,0 1.2]
+[wt 0.2]
+[charaSpecialEffect O appearance 0,0 1.2]
+[wt 0.2]
+[charaSpecialEffect P appearance 0,0 1.2]
+[wt 0.2]
+[charaSpecialEffect Q appearance 0,0 1.2]
+[wt 0.2]
+[seStop ade55 1.5]
+[cueSeStop 21_ad1082 1.5]
+[wt 0.8]
+
+[wt 1.5]
+
+[cueSeVolume 23_ade909 0.6 0.1]
+[cueSeVolume 23_ade908 0.6 0.1]
+[cueSeStop 23_ade916 0.6]
+
+[charaFadeout B 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[wt 0.1]
+[charaPut U 2000,2500]
+
+[charaPut L 2000,2500]
+[charaPut M 2000,2500]
+[charaPut N 2000,2500]
+[charaEffect L bit_talk_11 0,-100]
+[charaEffect M bit_talk_11 0,-100]
+[charaEffect N bit_talk_11 0,-100]
+
+
+[charaPut X 2000,2500]
+[charaPut Y 2000,2500]
+[charaEffectDestroy X bit_talk_miasma_aura]
+[charaEffectDestroy Y bit_talk_miasma_aura]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠杉谷善住坊
+おいおいおい！[r]また影の騎士どもが大量に！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠プトレマイオス
+いや、あいつらも様子がおかしい……！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth L 4]
+[charaDepth M 3]
+[charaDepth N 2]
+
+[charaFace L 0]
+[charaFace M 0]
+[charaFace N 0]
+[charaFadein L 0.1 1]
+[charaFadeinFSR M 0.1 300,0]
+[charaFadeinFSL N 0.1 -300,0]
+[wt 0.4]
+[charaShake L 0.02 2 3 0.4]
+[charaShake M 0.03 3 3 0.4]
+[charaShake N 0.04 2 2 0.4]
+[wt 0.9]
+
+[se ad46]
+[se ad185]
+[cueSe SE_22 22_adm93]
+[se ad854]
+[seVolume ad854 0 0.7]
+[se ad882]
+[seVolume ad882 0 0.5]
+[charaPut V 100,0]
+[charaPut W 350,0]
+[charaPut X -100,0]
+[charaPut Y -350,0]
+[charaEffect V bit_talk_explosion_black]
+[charaEffect W bit_talk_explosion_black]
+[charaEffect X bit_talk_explosion_black]
+[charaEffect Y bit_talk_explosion_black]
+[charaFadeout L 0.4]
+[charaFadeout M 0.4]
+[charaFadeout N 0.4]
+[charaEffectStop L bit_talk_11]
+[charaEffectStop M bit_talk_11]
+[charaEffectStop N bit_talk_11]
+[seStop ad854 1.0]
+[wt 0.5]
+[seStop ad185 0.1]
+[wt 1.0]
+
+[charaEffectStop V bit_talk_explosion_black]
+[charaEffectStop W bit_talk_explosion_black]
+[charaEffectStop X bit_talk_explosion_black]
+[charaEffectStop Y bit_talk_explosion_black]
+[wt 0.4]
+[charaMove S 65,-220 1.2]
+[charaMove V 350,0 1.2]
+[charaMove W 600,0 1.2]
+[charaMove X 150,0 1.2]
+[charaMove Y -100,0 1.2]
+[wt 1.4]
+[charaEffectDestroy V bit_talk_explosion_black]
+[charaEffectDestroy W bit_talk_explosion_black]
+[charaEffectDestroy X bit_talk_explosion_black]
+[charaEffectDestroy Y bit_talk_explosion_black]
+
+[charaDepth O 5]
+[charaDepth P 4]
+[charaDepth Q 3]
+[charaDepth R 2]
+
+[charaEffect O bit_talk_11 0,-100]
+[charaEffect P bit_talk_11 0,-100]
+[charaEffect Q bit_talk_11 0,-100]
+[charaEffect R bit_talk_11 0,-100]
+[charaFace O 0]
+[charaFace P 0]
+[charaFace Q 0]
+[charaFace R 0]
+[charaFadein O 0.4 150,0]
+[charaFadein P 0.4 -150,0]
+[charaFadein Q 0.4 400,0]
+[charaFadein R 0.4 -450,0]
+[wt 0.7]
+[charaShake O 0.02 2 3 0.4]
+[charaShake P 0.03 3 3 0.4]
+[charaShake Q 0.04 2 2 0.4]
+[charaShake R 0.03 3 4 0.4]
+[wt 0.9]
+
+[se ad46]
+[se ad185]
+[cueSe SE_22 22_adm93]
+[se ad854]
+[seVolume ad854 0 0.7]
+[se ad882]
+[seVolume ad882 0 0.5]
+[charaPut V 100,0]
+[charaPut W 350,0]
+[charaPut X -100,0]
+[charaPut Y -350,0]
+[charaEffect V bit_talk_explosion_black]
+[charaEffect W bit_talk_explosion_black]
+[charaEffect X bit_talk_explosion_black]
+[charaEffect Y bit_talk_explosion_black]
+[charaFadeout O 0.4]
+[charaFadeout P 0.4]
+[charaFadeout Q 0.4]
+[charaFadeout R 0.4]
+[charaEffectStop O bit_talk_11]
+[charaEffectStop P bit_talk_11]
+[charaEffectStop Q bit_talk_11]
+[charaEffectStop R bit_talk_11]
+[seStop ad854 1.0]
+[wt 0.5]
+[seStop ad185 0.1]
+[wt 1.6]
+
+[charaPut V 2000,2500]
+[charaPut W 2000,2500]
+[charaPut X 2000,2500]
+[charaPut Y 2000,2500]
+[wt 0.3]
+
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠杉谷善住坊
+なんだって……！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut V 100,50]
+[charaPut W 350,50]
+[charaPut X -100,50]
+[charaPut Y -350,50]
+[wt 0.5]
+
+[charaDepth E 2]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.6]
+
+[cueSe SE_23 23_ade916]
+[charaEffectStop V bit_talk_explosion_black]
+[charaEffectStop W bit_talk_explosion_black]
+[charaEffectStop X bit_talk_explosion_black]
+[charaEffectStop Y bit_talk_explosion_black]
+[wt 0.5]
+[cueSeStop 23_ade916 1.5]
+[wt 1.5]
+
+？1：影の騎士が弾け飛んで
+？2：内側から、魔獣が！？
+？！
+
+[charaPut V 2000,2500]
+[charaPut W 2000,2500]
+[charaPut X 2000,2500]
+[charaPut Y 2000,2500]
+[charaEffect V bit_talk_explosion_black]
+[charaEffect W bit_talk_explosion_black]
+[charaEffect X bit_talk_explosion_black]
+[charaEffect Y bit_talk_explosion_black]
+
+[cueSe Servants_9942210 bac1400]
+＠ケルベロス
+[image berserker_language_3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaPut V 100,0]
+[charaPut W 350,0]
+[charaPut X -100,0]
+[charaPut Y -350,0]
+[wt 0.5]
+
+
+
+[charaDepth F 2]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.6]
+
+[cueSe SE_23 23_ade916]
+[charaEffectStop V bit_talk_explosion_black]
+[charaEffectStop W bit_talk_explosion_black]
+[charaEffectStop X bit_talk_explosion_black]
+[charaEffectStop Y bit_talk_explosion_black]
+[wt 0.5]
+[cueSeStop 23_ade916 1.5]
+[wt 1.5]
+
+[charaEffectDestroy V bit_talk_explosion_black]
+[charaEffectDestroy W bit_talk_explosion_black]
+[charaEffectDestroy X bit_talk_explosion_black]
+[charaEffectDestroy Y bit_talk_explosion_black]
+
+[cueSe Servants_2500900 m45506]
+＠ヒュドラ
+[image berserker_language_4]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaDepth G 2]
+[charaPut W 1]
+[charaEffect W bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk G]
+[charaFace G 25]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+影の騎士同士が融合して、変化した！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut W 2000,2500]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.05]
+[charaPut U 1]
+[wt 0.05]
+＠アステリオス
+てせうす……てせうす……[r]ちちうえはまちがってなかった……
+[k]
+
+＠アステリオス
+だって……[r]ぼくのともだちが……やられた……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut U 2000,2500]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠テセウス
+アステリオス……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.05]
+[charaPut U 1]
+[wt 0.05]
+＠アステリオス
+きみが、ぼくのすくい、だったのに……！
+[k]
+
+[charaFace B 4]
+＠アステリオス
+ぼくは……
+[k]
+
+[messageOff]
+
+[cueSeVolume 23_ade909 1.0 0.3]
+[cueSeVolume 23_ade908 1.0 0.4]
+[cueSe SE_23 23_ade916]
+[cueSeVolume 23_ade916 0 0]
+[charaPut V 450,0]
+[charaPut X -450,0]
+[charaPut Y 0,0]
+[charaEffect V bit_talk_miasma_aura]
+[charaEffect X bit_talk_miasma_aura]
+[charaEffect Y bit_talk_miasma_aura]
+
+[charaDepth V 2]
+[charaDepth X 2]
+[charaDepth Y 2]
+[charaDepth H 3]
+[charaDepth C 3]
+[charaDepth D 3]
+[charaDepth A 3]
+[charaDepth I 3]
+[charaDepth G 3]
+[wt 0.1]
+[cueSeVolume 23_ade916 1.0 0.6]
+[wt 3.5]
+
+[charaSet Q 98115000 1 エフェクト用7]
+[charaSet R 98115000 1 エフェクト用8]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut U 2000,2500]
+
+[cueSeVolume 23_ade909 0.6 0.1]
+[cueSeVolume 23_ade908 0.6 0.2]
+[cueSeVolume 23_ade916 0.6 0.4]
+
+[charaPut W 1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠ムニエル
+アステリオスからの瘴気、さらに広がっていく！[r]地形まで変化してる！　止めないとまずいぞこれ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut W 2000,2500]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠プトレマイオス
+くっ！　これは想定外だが、やるしかないナ！[r]いいか、杉谷！　マスター！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠杉谷善住坊
+待て、プトレ！　様子がおかしい！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 0.05]
+[charaPut U 1]
+[wt 0.05]
+＠アステリオス
+ぼ……くは……かい……ぶつ……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut U 2000,2500]
+
+[bgmStop BGM_EVENT_126 1.5]
+[cueSeStop 23_ade909 1.5]
+[cueSeStop 23_ade908 1.5]
+[cueSeStop 23_ade916 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠テセウス
+アステリオス？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 0.05]
+[charaPut U 1]
+[wt 0.05]
+＠アステリオス
+…………
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[cueSe SE_21 21_ad1082]
+[cueSe SE_22 22_ad1181]
+[cueSeVolume 22_ad1181 0 0]
+[charaDepth Q 7]
+[charaPut Q 1]
+[charaEffect Q bit_talk_black_mist]
+[wt 0.1]
+[cueSeVolume 22_ad1181 0.7 0.2]
+[wt 1.3]
+
+[charaDepth R 8]
+[charaPut R 1]
+[charaEffect R bit_talk_blackfire_all_fs]
+[wt 0.4]
+[cueSe SE_21 21_ad1084]
+[wt 1.4]
+
+[cueSe SE_23 23_ade916]
+[wipeout magic 1.5 1.0]
+[wt 1.0]
+[cueSeStop 23_ade916 2.0]
+[cueSeStop 21_ad1082 2.0]
+[cueSeStop 21_ad1084 2.0]
+[cueSeStop 22_ad1181 2.0]
+[wait wipe]
+
+
+[charaFadeout B 0.1]
+[charaFadeout S 0.1]
+
+[charaPut Q 2000,2500]
+[charaPut R 2000,2500]
+[charaEffectDestroy Q bit_talk_black_mist]
+[charaEffectDestroy R bit_talk_blackfire_all_fs]
+
+[charaPut U 2000,2500]
+[charaPut V 2000,2500]
+[charaPut X 2000,2500]
+[charaPut Y 2000,2500]
+[charaEffectDestroy V bit_talk_miasma_aura]
+[charaEffectDestroy X bit_talk_miasma_aura]
+[charaEffectDestroy Y bit_talk_miasma_aura]
+
+[scene 10000]
+[wt 0.2]
+
+[wipein magic 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[wt 0.6]
+
+[imageSet L cut475_mtr_full 1]
+[imageSet M cut475_mtr_full 1]
+[imageSet N cut475_mtr_full 1]
+[sceneSet O 10000 1]
+[charaScale O 1.01]
+[sceneSet P 10000 1]
+[charaScale P 1.01]
+[sceneSet S 10000 1]
+[charaScale S 1.01]
+
+[scene 10000]
+[wt 1.5]
+
+[charaTalk off]
+[charaDepth V 2]
+[charaDepth J 3]
+[charaDepth L 4]
+[charaDepth M 5]
+[charaDepth N 6]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_127 1.5]
+
+
+[subCameraOn 3]
+[charaLayer O sub #A]
+[charaLayer L sub #A]
+[charaLayer V sub #A]
+[charaLayer P sub #B]
+[charaLayer N sub #B]
+[charaLayer X sub #B]
+[charaLayer S sub #C]
+[charaLayer M sub #C]
+[charaLayer Y sub #C]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 220,20,60,255]
+[subCameraFilter #B maskEdge cut359_mask09 5 220,20,60,255]
+[subCameraFilter #C maskEdge cut359_mask10 5 220,20,60,255]
+
+[subRenderDepth #A 3]
+[subRenderDepth #C 2]
+[subRenderDepth #B 1]
+
+[charaTalk depthOff]
+[charaDepth O 1]
+[charaDepth P 1]
+[charaDepth S 1]
+[charaDepth V 2]
+[charaDepth X 2]
+[charaDepth Y 2]
+[charaDepth L 3]
+[charaDepth M 3]
+[charaDepth N 3]
+
+[charaScale O 1.4]
+[charaScale P 1.4]
+[charaScale S 1.4]
+[charaFadein O 0.1 0,0]
+[charaFadein P 0.1 0,0]
+[charaFadein S 0.1 0,0]
+
+[charaScale L 1.5]
+[charaRoll M -24]
+[charaScale M 1.7]
+[charaScale N 2.5]
+[charaFadein L 0.1 -330,800]
+[charaFadein M 0.1 490,250]
+[charaFadein N 0.1 150,0]
+
+[charaScale V 0.8]
+[charaScale X 0.8]
+[charaScale Y 0.8]
+[charaPut V 0,150]
+[charaPut X 100,150]
+[charaPut Y 0,150]
+[charaEffect V bit_talk_suspicious]
+[charaEffect X bit_talk_suspicious]
+[charaEffect Y bit_talk_suspicious]
+
+[wt 1.5]
+
+[se ad250]
+[subRenderFadeinFSR #A 0.35 425,-150]
+[subRenderMoveFSR #A 400,-250 0.35]
+[wt 0.35]
+[charaMove L -350,750 6.5]
+[wt 1.6]
+
+[se ad195]
+[se ad997]
+[subRenderFadeinFSL #C 0.35 -375,-350]
+[subRenderMoveFSL #C -400,-250 0.35]
+[wt 0.35]
+[charaMove M 470,300 6.0]
+[wt 1.5]
+
+[cueSe SE_23 23_ad1315]
+[cueSe SE_22 22_adm89]
+[cueSeVolume 22_adm89 0 0.8]
+[subRenderFadein #B 0.35 -155,-250]
+[subRenderMove #B -55,-250 0.35]
+[wt 0.35]
+[charaMove N 250,0 10.0]
+
+[charaSet B 1098273400 1 アステリオス]
+
+[scene 200500]
+
+[charaDepth J 1]
+[charaDepth T 2]
+[charaDepth B 3]
+
+[charaScale T 1.4]
+[charaFadein T 0.1 0,-260]
+[wt 1.7]
+
+[seStop ad250 0.8]
+[seStop ad195 0.8]
+[seStop ad997 0.8]
+[seStop ade446 0.8]
+[cueSeStop 22_adm89 0.8]
+[cueSeStop 23_ad1315 0.8]
+[subRenderFadeout #A 0.8]
+[subRenderFadeout #B 0.8]
+[subRenderFadeout #C 0.8]
+[wt 0.8]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout S 0.1]
+[charaPut V 2000,2500]
+[charaPut X 2000,2500]
+[charaPut Y 2000,2500]
+[charaEffectDestroy V bit_talk_suspicious]
+[charaEffectDestroy X bit_talk_suspicious]
+[charaEffectDestroy Y bit_talk_suspicious]
+[wt 0.3]
+
+[subCameraOff]
+[charaLayer L normal]
+[charaLayer M normal]
+[charaLayer N normal]
+[charaLayer O normal]
+[charaLayer O normal]
+[charaLayer O normal]
+[charaLayer V normal]
+[charaLayer X normal]
+[charaLayer Y normal]
+
+[charaScale L 1.0]
+[charaScale M 1.0]
+[charaScale N 1.0]
+[charaScale V 1.0]
+[charaScale X 1.0]
+[charaScale Y 1.0]
+[charaScale O 1.0]
+[charaScale P 1.0]
+[charaScale S 1.0]
+
+
+
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.2]
+
+[se ad57]
+[wt 0.2]
+[charaScale B 1.4]
+[charaFace B 0]
+[charaFadein B 0.4 0,250]
+[wt 0.4]
+[seStop ad57 0.4]
+[wt 0.8]
+
+[charaMove B 0,50 1.6]
+[charaMove T 0,-360 1.6]
+[wt 2.2]
+
+[charaFadeout B 0.8]
+[charaFadeout T 0.8]
+[wt 1.5]
+
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+
+[charaTalk on]
+[charaPut W 1]
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+＠マシュ
+アステリオスさんの姿が！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 14]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+異聞帯でも確認された、[r]ミノタウロスとしてのアステリオス！？
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[wt 0.1]
+[fadeout white 0.6]
+[bgm BGM_EVENT_127 0.8 0.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaPut W 2000,2500]
+
+[charaSet B 1098128300 1 アステリオス]
+[wt 0.2]
+
+[charaPut V 2000,2500]
+
+
+[scene 55002]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+[charaPut Z 1]
+[wt 0.5]
+
+[fadein white 0.6]
+[wait fade]
+[wt 1.8]
+
+[fadeout white 0.6]
+[wait fade]
+
+
+[charaFadeout B 0.1]
+[charaPut Z 2000,2500]
+
+[charaPut V 1]
+
+[scene 200500]
+[wt 0.7]
+
+[bgm BGM_EVENT_127 0.8 1.0]
+[fadein white 0.6]
+[wait fade]
+[wt 0.2]
+
+
+
+[charaPut W 1]
+[charaTalk I]
+[charaFace I 14]
+[charaFadein I 0.1 1]
+＠マシュ
+いえ……あのときとも反応が違います！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+
+
+＠ムニエル
+この数値は……
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut W 2000,2500]
+
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.2 1]
+＠アステリオス？
+…[messageShake 0.03 4 4 0.4]…ああ、そうだ。
+[k]
+
+＠アステリオス？
+生[messageShake 0.03 4 4 1.1]粋の怪物だから、天性の魔であったから、[r]我は[#おまえ:ウ　ツ　ワ]を選んだ。
+[k]
+
+[messageShakeStop]
+
+？1：……アステリオス？
+？2：今、なんて？
+
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠テセウス
+お、前……どうして……[r]いや、まさか……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+＠アステリオス？
+分かっていたはずだ、テセウス。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠テセウス
+違う！　僕は彼を助けるために！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+＠アステリオス？
+ならば、喜べ。[#言祝:ことほ]ぐがよい。[r]彼はもはや悩まない。苦しまない。
+[k]
+
+＠アステリオス？
+我とともに、生き続ける。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠テセウス
+そういう意味では……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+＠アステリオス？
+お疲れ様、テセウス。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad85]
+[se ad980]
+[effect bit_talk_v_slash02 0,0 H]
+[wt 0.85]
+
+[cueSe SE_21 21_ad1125]
+[fadeout BE0032 0.1]
+[wait fade]
+
+[effectDestroy bit_talk_v_slash02]
+
+[charaDepth A 3]
+[charaDepth X 4]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0 1]
+
+[charaFadeout J 0]
+
+[effect bit_talk_23]
+[charaShake A 0.03 4 4 0.6]
+
+[fadein BE0032 0.1]
+[wait fade]
+[wt 0.85]
+
+
+[se ad464]
+[charaRoll X -30]
+[charaPut X 1]
+[charaEffect X bit_talk_blood_splash]
+[fowardEffect bit_talk_blood_splash02]
+[wt 1.85]
+
+[charaShake A 0.05 3 3 0.6]
+[charaMove A 0,-50 0.5]
+[charaFadeout A 0.4]
+[wt 0.4]
+
+[se ad144]
+[se adm39]
+[wt 1.6]
+
+[charaRoll U 0]
+[charaEffectDestroy U bit_talk_blood_splash]
+[fowardEffectDestroy bit_talk_blood_splash02]
+
+？1：テセウス！
+？2：アステリオス、何を！
+？！
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.2 1]
+＠アステリオス？
+アステリオスの天性からして、[r]いずれこうなるのは分かっていたはずだ。
+[k]
+
+？1：アステリオスじゃない？
+？2：おまえは誰だ？
+？！
+
+＠アステリオス？
+我が身はいまだ[#揺籃:ようらん]なれど、結末は訪れた。[r]聖杯の雫はすべてここに集まり、『器』は決定した。
+[k]
+
+[messageOff]
+[charaFadeout J 0.2]
+[wt 0.1]
+
+[charaPut V 1]
+[charaEffect V bit_talk_miasma_smoke]
+[wt 0.1]
+
+[cueSe SE_23 23_ade908]
+[cueSeVolume 23_ade908 0 0]
+[cueSe SE_23 23_ade909]
+[cueSeVolume 23_ade909 0 0]
+[cueSe SE_23 23_ade916]
+[wt 0.1]
+[cueSeVolume 23_ade908 0.6 0.2]
+[cueSeVolume 23_ade909 0.6 0.2]
+[wt 3.55]
+
+[cueSeVolume 23_ade916 0.6 0.2]
+[wt 0.5]
+
+[sceneSet S 200502 1]
+[sceneSet T 200502 1]
+
+[charaPut W 1]
+[charaTalk G]
+[charaFace G 25]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+城が、瘴気で溶けていく……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaDepth K 3]
+[charaTalk K]
+[charaFace K 6]
+[charaFadein K 0.1 1]
+＠ゴルドルフ
+と、溶けた端から別の城になっておらんかね！？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_127 1.5]
+[charaFadeout K 0.1]
+[wt 0.1]
+[charaPut W 2000,2500]
+
+
+[scene 200502]
+
+[charaPut V 1]
+[charaEffectStop V bit_talk_miasma_smoke]
+[wt 1.5]
+[cueSeStop 23_ade908 1.8]
+[cueSeStop 23_ade909 1.8]
+[cueSeStop 23_ade916 1.8]
+[wt 3.0]
+
+[charaPut V 2000,2500]
+[charaEffectDestroy V bit_talk_miasma_smoke]
+
+[bgm BGM_BATTLE_135 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.2 1]
+＠アステリオス？
+罪なるかな。[#咎:とが]なるかな。悪なるかな。
+[k]
+
+＠アステリオス？
+我は我を構築するすべてを[#言祝:ことほ]ごう。[r]我が子すべてを心より愛そう。
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.15]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+[cueSe Servants_9942210 bac1401]
+＠ケルベロス
+[image berserker_language_3]
+[k]
+
+[messageOff]
+[cueSeStop bac1401 0.3]
+[charaFadeout E 0.1]
+[wt 0.15]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+[se ad1027]
+[cueSe Servants_2500900 m45506]
+＠ヒュドラ
+[image berserker_language_4]
+[k]
+
+
+[messageOff]
+[seStop ad1027 0.3]
+[cueSeStop m45506 0.3]
+
+[se ad14]
+[seVolume ad14 0 0]
+[se ade186]
+[seVolume ade186 0 0]
+[se ade393]
+[seVolume ade393 0 0]
+[cueSe SE_23 23_ade916]
+[cueSeVolume 23_ade916 0 0]
+[wt 0.1]
+
+[seVolume ad14 1.0 0.5]
+[seVolume ade186 1.0 0.8]
+[seVolume ade393 1.0 0.3]
+[cueSeVolume 23_ade916 1.0 0.5]
+[charaTalk off]
+[charaDepth F 2]
+[charaDepth T 3]
+[charaScale T 1.2]
+[charaFadein T 1.0 75,-310]
+[charaMove T -75,-310 5.0]
+[charaShake T 0.02 2 2 0]
+[wt 1.0]
+[charaFadeout F 0.1]
+[wt 3.0]
+
+
+[seStop ad14 1.0]
+[seStop ade186 1.0]
+[seStop ade393 1.0]
+[cueSeStop 23_ade916 1.0]
+[charaFadeout T 1.0]
+[wt 1.4]
+[charaShakeStop T]
+
+[charaSet J 1098273400 1 アステリオス？]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠プトレマイオス
+まずい！　怪物どもも、この城も、[r]あいつに反応している！
+[k]
+
+[charaFace C 11]
+＠プトレマイオス
+城主がどちらか見誤った、[#吾:あ]のミスだ！[r]だが、一体何が！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut W 1]
+[charaTalk G]
+[charaFace G 22]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+……同じことを考えているんじゃないかな、[r]プトレマイオス。
+[k]
+
+[charaFace G 23]
+＠ダ・ヴィンチ
+私たちと、太公望と、テセウスたちが、[r]全員聖杯の雫を所持していた。
+[k]
+
+[charaFace G 14]
+＠ダ・ヴィンチ
+だとすれば、大きな問題が残る。[r]一体、[#誰が聖杯を使って]、[#この特異点をつくったんだ]？
+[k]
+
+？1：聖杯を使った相手……！
+？2：特異点をつくった相手……！
+
+？！
+
+[messageOff]
+[subCameraOn 1]
+[charaLayer J sub #A]
+[charaLayer S sub #A]
+
+[subCameraFilter #A through]
+
+[charaTalk off]
+[charaDepth S 1]
+[charaDepth J 2]
+
+[charaScale S 1.2]
+[charaFadein S 0.1 0,-260]
+
+[subRenderFadein #A 1.0 0,0]
+[wt 1.0]
+[charaFadeout G 0.1]
+[charaPut W 2000,2500]
+[wt 0.3]
+
+[se ad57]
+[wt 0.2]
+[charaScale J 1.2]
+[charaFace J 0]
+[charaFadein J 0.4 0,25]
+[wt 0.4]
+[seStop ad57 0.4]
+[wt 0.8]
+
+＠アステリオス？
+さあ、祝祭だ！　喜べ！　歌え！　愛せ！[r]美酒の代わりに、我はおまえたちを飲み干そう！
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[bgmStopEnd BGM_BATTLE_135 1.5]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

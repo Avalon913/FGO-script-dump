@@ -1,0 +1,672 @@
+
+
+＄94-14-02-03-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257800 1 マシュ]
+[charaSet B 6048001 1 ロクスタ]
+[charaSet C 1098213800 1 飛竜]
+[charaSet D 6031300 1 刑部姫]
+[charaSet E 4044000 1 ニキチッチ]
+[charaSet F 5058001 1 小野小町]
+[charaSet G 5058001 1 小野小町2]
+[charaSet H 1098260500 1 深草少将]
+[charaSet I 25004001 1 楊貴妃]
+[charaSet J 1098315700 1 小野篁]
+[charaSet K 6008000 1 クレオパトラ]
+
+[sceneSet L 203900 1]
+[charaScale L 1.2]
+[sceneSet M 158000 1]
+[charaScale M 1.2]
+[sceneSet N 158000 1]
+[charaScale N 1.2]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaPut S 2000,2000]
+[charaEffect S bit_talk_glitter_parts]
+[charaSet T 98115000 1 エフェクト用2]
+
+[scene 203900]
+
+[pictureFrame cut063_cinema]
+[effect bit_talk_snowstorm_01]
+[wt 1.0]
+
+[se ad555]
+[seVolume ad555 0 0]
+[seVolume ad555 1.0 0.2]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_SHINYAMA_1 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+
+＠深草少将
+山城の……[#木幡:こわた]の里に……馬はあれども……[r]君を思へば……[#徒歩跣足:か ち は だ し]……
+[k]
+
+＠深草少将
+……………………。
+[k]
+
+[messageOff]
+[charaTalk off]
+[cueSe Battle ba6]
+[charaSpecialEffect H enemyErasure 1 2.0]
+[wt 3.0]
+
+[charaTalk depthOff]
+[charaDepth L 1]
+[charaDepth G 2]
+
+[charaScale G 1.2]
+[charaFace G 7]
+[charaFadein G 0.6 50,-50]
+[charaFadein L 0.6 50,-250]
+[charaMove G -50,-50 25.0]
+[charaMove L -50,-250 25.0]
+[wt 1.0]
+
+＠小野小町
+ああ……あたしは。[r]あたしは、なんて……
+[k]
+
+＠小野小町
+[line 3][#冷たい]、女なのかしら。
+[k]
+
+[messageOff]
+[seVolume ad555 1.5 0.6]
+[effect bit_talk_snowstorm_02]
+[wt 3.0]
+
+[fadeout white 2.0]
+[bgmStop BGM_SHINYAMA_1 2.0]
+[seStop ad555 2.0]
+[wait fade]
+
+[pictureFrame]
+[charaFadeout G 0.1]
+[charaFadeout L 0.1]
+[effectDestroy bit_talk_snowstorm_02]
+[effectDestroy bit_talk_snowstorm_01]
+[wt 0.1]
+[charaSet G 5058001 1 小野小町2]
+[scene 10000]
+
+[subCameraOn 1]
+[charaLayer N sub #A]
+[charaLayer G sub #A]
+[charaLayer T sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask10 5 255,153,204,255]
+
+[charaDepth N 1]
+[charaDepth G 2]
+[charaDepth T 3]
+
+[charaScale G 1.2]
+[charaScale T 1.2]
+[charaFace G 8]
+[charaFadein N 0.1 290,-10]
+[charaFadein G 0.1 -120,370]
+[charaPut T -120,370]
+[charaEffect T bit_talk_glitter_parts]
+[wt 1.5]
+
+[fadein white 1.5]
+[wait fade]
+
+[fadeout black 0.2]
+[wait fade]
+
+[scene 158000]
+[wt 0.5]
+
+[blur lens 0.1 2 10]
+[wipeout openEye 0.1 0.5]
+[wait wipe]
+[fadein black 0.1]
+[wait fade]
+[wt 1.8]
+
+[wipein openEye 1.0 0.5]
+[wait wipe]
+
+[wipeout openEye 0.5 0.5]
+[wait wipe]
+[wipein openEye 0.5 0.5]
+[wait wipe]
+
+[wipeout openEye 0.5 0.5]
+[wait wipe]
+[blurOff lens 0.1]
+[wt 0.3]
+[wipein openEye 1.0 0.5]
+[wait wipe]
+[wt 0.8]
+
+？1：今のは、もしかして……
+？2：[line 3]小町さんの記憶？
+？！
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+先輩！
+[k]
+
+＠マシュ
+……レムレムから覚醒までのタイム、[r]最短記録更新です。
+[k]
+
+[charaFace A 6]
+
+＠マシュ
+バイタル確認しますから、[r]少しだけ動かないでくださいね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠刑部姫
+どうしたの、マーちゃん？[r]ぼーっとしてたけど何、またレムった？
+[k]
+
+？1：暁の……
+？2：深草少将って……
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.5]
+
+[charaTalk E]
+[charaFace E 24]
+[charaFadein E 0.1 1]
+
+＠ニキチッチ
+フカクサノショウショウ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+[#百夜通:も も よ が よ]いの逸話に登場する、[r]小町さんに恋した貴族の方ですね。
+[k]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠マシュ
+百夜通えば想いに応えるという小町さんの言葉に、[r]深草少将は九十九夜、毎晩通い続けます。
+[k]
+
+[charaFace A 4]
+
+＠マシュ
+ですが、あと一夜という、百夜目[line 3]
+[k]
+
+＠マシュ
+深草少将は、大雪のために命を落とします。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠ロクスタ
+あー、いわゆる悲劇ってやつです？[r]セネカさまの[#作品:ファーブラ]みたいな？
+[k]
+
+
+？1：………………。
+？2：小町さん
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth F 1]
+[charaDepth S 2]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+[charaPut S 1]
+
+＠小野小町
+……[%1]さま。[r]あなたも、目にされたのですね。
+[k]
+
+＠小野小町
+この欠片に宿っていた、あたしの記憶。
+[k]
+
+＠小野小町
+あれこそが３つめの、あたしの欠片。[r]冷たく輝く、雪のきらめき。
+[k]
+
+[charaFace F 7]
+
+＠小野小町
+あの方の愛を疎んじて、遠ざけたあたしの……
+[k]
+
+＠小野小町
+[line 3]あたしの、[#冷酷:つめた]さです。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut S 2000,2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……百夜通いは、小野小町さんの伝説として[r]伝わっているものです。
+[k]
+
+[charaFace A 7]
+
+＠マシュ
+それが小町さんの本性なのか、或いは[r][#無辜:む　こ]の伝説なのかは分かりませんが……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠楊貴妃
+美人は冷たい……[r]みたいな話ですよね？
+[k]
+
+[charaFace I 4]
+＠楊貴妃
+うん……いろいろ言われちゃったりします。[r]私たちみたいなのは、やっぱり。
+[k]
+
+[charaFace I 10]
+
+＠楊貴妃
+特に……傾国っちゃったりすると、[r]それはもう、あることないこと……
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 18]
+[charaFadein F 0.1 1]
+[charaPut S 1]
+
+＠小野小町
+あたしは……[line 3]
+[k]
+
+[messageOff]
+[wt 1.3]
+
+[charaDepth M 3]
+[charaDepth J 4]
+[charaFadein M 0.5 -70,-250]
+[charaMoveEase M -120,-250 0.7 easeOutSine]
+[wt 0.7]
+
+[charaScale J 1.2]
+[charaPut J 250,0]
+[charaTalk J]
+[charaFace J 0]
+[se ad598]
+[charaSpecialEffect J wipeTimeRe 1 1.0]
+[wait charaSpecialEffect J]
+[charaFadein J 0 250,0]
+[seStop ad598 0.5]
+[wt 0.2]
+
+＠小野篁
+[line 3]小町。
+[k]
+
+[messageOff]
+[charaTalk G]
+[subRenderFadein #A 0.4 -192,-300]
+[charaMove N 320,-100 0.4]
+[charaMove G -90,280 0.4]
+[charaMove T -90,280 0.4]
+[wt 0.4]
+
+＠G：小野小町
+お父さま。
+[k]
+
+[charaTalk J]
+[charaFace J 5]
+
+＠小野篁
+望まぬならば、[r]語る必要はない。得る必要も。
+[k]
+
+[charaTalk G]
+[charaFace G 6]
+
+＠G：小野小町
+……。[r]……。
+[k]
+
+[charaFace F 0]
+[charaFace G 0]
+
+＠G：小野小町
+……ありがとうございます。[r]でも、お父さま。心配はいりません。
+[k]
+
+＠G：小野小町
+あたしは[line 3]
+[k]
+
+[bgmStop BGM_EVENT_11 2.5]
+
+[messageOff]
+[cueSe SE_24 24_ade1060 0.5 1.0]
+[charaTalk F,G]
+[subRenderFadeout #A 0.5]
+[charaFadeout M 0.5]
+[charaFadeout J 0.5]
+[wt 1.0]
+[charaFaceFade F 7 0.3]
+[wt 1.5]
+
+[cueSeStop 24_ade1060 1.0]
+[charaFaceFade F 15 0.2]
+[wt 0.8]
+
+[cueSe SE_21 21_ade590]
+[charaEffectStop S bit_talk_glitter_parts]
+[fowardEffect bit_talk_light_particles_scatter]
+[wt 2.5]
+
+[se ad596]
+[fadeout white 0.5]
+[wait fade]
+
+[charaEffectDestroy T bit_talk_glitter_parts]
+[charaFadeout N 0.1]
+[charaFadeout G 0.1]
+[charaLayer N normal]
+[charaLayer G normal]
+[charaLayer T normal]
+[subCameraOff]
+
+[charaCrossFade F 1098315600 15 0.1]
+[charaSet G 1098315600 1 小野小町2]
+[wt 0.7]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_112 0.1]
+
+[charaFaceFade F 32 0.2]
+
+＠小野小町
+……あたし、恋が実るお話が好きです。[r]……キラキラしていて、素敵です。
+[k]
+
+[charaFaceFade F 11 0.2]
+
+＠小野小町
+でも……
+[k]
+
+[charaFace F 18]
+
+＠小野小町
+[#恋が散る]お話もまた、[r]美しいと思えてしまうのです。
+[k]
+
+＠小野小町
+儚くて……[r]キラキラと、[#眩:まぶ]しく……この目に映るのです。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠刑部姫
+悲恋、悲恋かぁ……。[r][#姫:わたし]もわからなくはないつもりではあるけど、
+[k]
+
+[charaFace D 4]
+
+＠刑部姫
+心に余裕ないときは、しんどいの無理……。[wt 0.6][charaFace D 7][r]余裕ある時ならめっちゃ好き……白米三杯いける……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠飛竜
+物語として？[r]んじゃ、我が事としたら？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠刑部姫
+え。[#姫:わたし]の悲恋とか絶対に許しませんが？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth A 1]
+[charaDepth M 2]
+[charaDepth G 3]
+[charaScale M 1.3]
+[charaScale G 1.3]
+
+[charaFace G 1]
+[charaFadein M 0.6 -100,-250]
+[charaFadein G 0.6 -100,0]
+[charaMove M 0,-250 50.0]
+[charaMove G 1 50.0]
+
+[wt 1.5]
+[charaFadeout D 0.1]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+[charaFaceFade G 6 0.2]
+
+＠小野小町
+……冷たき輝きを見つめてしまうこと。
+[k]
+
+＠小野小町
+それもまたまぎれもなく、[r]あたしの一部。
+[k]
+
+＠小野小町
+恋に焦がれ、恋に狂わせる[line 3]
+[k]
+
+＠小野小町
+恋の歌を愛するあたしは……[r][#昏:くら]き恋もまた愉しむ女なのでしょう。
+[k]
+
+[messageOff]
+[charaFadeout M 0.6]
+[charaFadeout G 0.6]
+[wt 0.8]
+[sceneSet M 158000 1]
+[charaScale M 1.2]
+
+＠マシュ
+小町さん。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠小野小町
+……あはは。[r]大丈夫です、マシュさま。
+[k]
+
+[charaFace F 3]
+[charaMoveReturn F 0,-3 0.5]
+
+＠小野小町
+心配無用です！[r]しっかりします！
+[k]
+
+＠小野小町
+ちゃんと自分をぜんぶ取り戻して、[r]お父さまにも心配かけないように[line 3]
+[k]
+
+[messageOff]
+[charaDepth M 2]
+[charaDepth J 3]
+[charaFace J 0]
+[charaFadein M 0.5 -120,-250]
+[charaFadein J 0.5 250,0]
+[wt 0.7]
+
+[se ad596]
+[charaSpecialEffect J wipeTime 1 1.5]
+[wt 2.5]
+[charaFadeout M 0.5]
+[charaFadeout J 0.5]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk F]
+
+＠小野小町
+……心配、かけないようにします。
+[k]
+
+[messageOff]
+[charaDepth F 1]
+[charaDepth M 2]
+[charaDepth I 3]
+[charaDepth K 4]
+
+[charaTalk K,F]
+[charaFace I 0]
+[charaFace K 1]
+[charaScale M 1.3]
+[charaFadein M 0.5 190,-250]
+[charaFadeinFSL I 0.5 0]
+[charaFadeinFSR K 0.5 2]
+[wt 0.7]
+
+[subCameraOn 1]
+[charaLayer N sub #A]
+[charaLayer F sub #A]
+[subCameraFilter #A normal]
+
+[charaDepth N 1]
+[charaDepth F 2]
+[charaScale N 1.01]
+[charaFadein N 0.1 0,-200]
+
+＠クレオパトラ
+ふう。分かっているのなら、[r][#私:わたくし]から言うことはありません。
+[k]
+
+＠クレオパトラ
+貴女が美しく在る以上、自らが放つ輝きに[r]目が[#眩:くら]んでしまうこともあるでしょう……。
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ade588 0.3 0.4]
+[charaEffectEdgeBlur K FFFFFF FFFFFF 4 3]
+[charaBackEffect K bit_talk_radiallight02_big]
+[wt 1.5]
+
+[charaFace K 2]
+
+＠クレオパトラ
+心なさい！[r]それが美に生きる[#妾:わらわ]たちの宿命でしてよ！
+[k]
+
+[charaTalk I]
+[charaFace I 2]
+
+＠楊貴妃
+お、おー……！
+[k]
+
+[messageOff]
+[charaTalk I,F]
+[cueSeStop 21_ade588 0.5]
+[subRenderFadein #A 0.5 0,0]
+[wt 1.0]
+[charaEffectEdgeBlurDestroy K]
+[charaBackEffectDestroy K bit_talk_radiallight02_big]
+[charaFadeout M 0.1]
+[charaFadeout K 0.1]
+[charaFadeout I 0.1]
+
+？1：残るパーツはあとふたつ！
+？2：次の座標に向かおう
+？！
+
+[charaTalk F]
+[charaFace F 2]
+
+＠小野小町
+はい……よろしくお願いします！
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_112 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

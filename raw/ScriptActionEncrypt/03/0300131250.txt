@@ -1,0 +1,1153 @@
+
+＄03-00-13-12-5-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098182200 1 ネモ・エンジン]
+[charaSet B 1098182100 1 ネモ・プロフェッサー]
+[charaSet C 1098182300 1 ネモ・ベーカリー]
+[charaSet D 1098257300 1 ダ・ヴィンチ]
+[charaSet E 98001000 1 マシュ]
+[charaSet F 1098252900 1 テペウ]
+[charaSet G 1098252940 1 テペウ_B]
+[charaSet H 1098253200 1 Ｕ－オルガマリー]
+[charaSet I 1098254800 1 ネモ・マリーン]
+[charaSet J 1098252410 1 ククルカン]
+[charaSet M 1098253120 1 キングプロテア・オルタ_全身]
+[charaSet N 1098253150 1 キングプロテア・オルタ]
+[sceneSet O 158000 1]
+[sceneSet P 169300 1]
+[sceneSet Q 10000 1]
+[imageSet R cut422_text 1]
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+[charaSet V 98115000 1 エフェクト用]
+
+[scene 170301]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.5]
+
+
+[scene 170300 1.5]
+[wt 3.0]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 158000]
+
+[pictureFrame cut063_cinema]
+
+[charaTalk depthOff]
+[charaDepth C 4]
+[charaDepth A 3]
+[charaDepth B 2]
+[charaDepth O 1]
+
+[charaScale B 1.2]
+[charaScale C 1.2]
+
+[charaFadein O 0.1 0,-200]
+[wt 1.0]
+
+[se ade18]
+[fadein black 1.0]
+[bgm BGM_EVENT_62 0.1]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+＠ネモ・エンジン
+だぁー！　もう我慢できない、エンジン止めるかんな！[r]メンテいれないとぶっ壊れる！
+[k]
+
+[charaFace A 2]
+
+＠ネモ・エンジン
+マリーン、キャプテン野郎に連絡！[r]１時間後にトリトンエンジンは全基停止、
+[k]
+
+＠ネモ・エンジン
+最低120時間、オーバーホールにかかるってな！[r]他の施設への電気？　知るかバカ！
+[k]
+
+＠ネモ・エンジン
+心臓がぶっ壊れたらそれどころじゃないだろーが！[r]アタシは自殺する気はねーからな！
+[k]
+
+[se ade227]
+[effect bit_talk_41_fs]
+[charaMove A 0,-15 0.2]
+[charaMove O 0,-250 0.2]
+[charaMoveScale A 1.2 0.2]
+[charaMoveScale O 1.2 0.2]
+
+＠ネモ・エンジン
+反対すんなら今日こそキャプテンに決闘を申し込む！[r]んで、アタシがメインになるしかねぇ！
+[k]
+
+[messageOff]
+[effectDestroy bit_talk_41_fs]
+
+[bgm BGM_EVENT_62 1.0 0.6]
+[charaTalk B]
+[charaFace B 5]
+[charaFadeinFSL B 0.4 -400,-15]
+[charaMoveFSL B -350,-15 0.4]
+[wt 0.4]
+
+
+＠ネモ・プロフェッサー
+はいひょっこり～。
+[k]
+
+＠ネモ・プロフェッサー
+落ち着いてエンジン、はいこれ、[r]ベーカリーの新作、アイス岩塩～。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_62 1.0]
+[charaTalk B,A]
+[charaMoveReturnFSL B -342,-15 0.4]
+[cueSe Servants_2300300 bac1130]
+[wt 0.6]
+[charaShake A 0.02 3 3 0.4]
+[charaMoveReturn A 0,-20 0.3]
+[cueSe Servants_2300300 bac1131]
+[wt 0.7]
+[se ad182]
+[wt 0.1]
+[cueSe Servants_400600 m42803]
+[wt 1.0]
+
+[charaFace A 5]
+
+＠ネモ・エンジン
+ん……つめひゃくておいひい。
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+[charaFace B 0]
+
+＠ネモ・プロフェッサー
+そして決闘の必要はありませんよ。[r]私もエンジンの意見には賛成しかありませんので。
+[k]
+
+[charaFace B 1]
+
+＠ネモ・プロフェッサー
+120時間分の電力供給のアテはあります。[r]それが完成次第、エンジンを落としましょう。
+[k]
+
+＠ネモ・プロフェッサー
+昨夜、外部からの電力供給ラインのチェックを[r]したところなのでタイムリ～。
+[k]
+
+＠ネモ・プロフェッサー
+私から計画をダ・ヴィンチ氏に伝えます～。[r]マリーンを６名ほど借りますね～。
+[k]
+
+[messageOff]
+[charaTalk B,A,C]
+[charaFace C 3]
+[charaFadeinFSR C 0.4 400,-15]
+[charaMoveFSR C 350,-15 0.4]
+[wt 0.4]
+
+＠ネモ・ベーカリー
+話、聞こえちゃった～☆[r]それならたくさんのお弁当が必要だよね！
+[k]
+
+＠ネモ・ベーカリー
+おいしいチキンを獲ってきてもらえたし、[r]チキンサンド、たっくさん用意しま～す♪
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout O 0.1]
+
+[charaTalk depthOn]
+
+[pictureFrame]
+
+[scene 169700]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_147 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+[line 3]という訳で、次は水力発電だ！[r]今回は私が同行しよう！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠マシュ
+水力発電、ですか？[r]でもこのあたりに大きな河は[line 3]
+[k]
+
+？1：第一冥界の滝！
+？2：ニコラ・テスラのナイアガラフォールズだ！
+
+？！
+
+
+＠マシュ
+！　そうでした、ナイアガラの滝に負けない、[r]広大な滝を通ってきましたね！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+うん。マシュからの[#行動記録:レ　ポ　ー　ト]にあったのを見て、[r]プロフェッサーが思いついたんだ。
+[k]
+
+＠ダ・ヴィンチ
+いま必要な機材をコンテナに詰め込んでる。[r]本来なら運ぶだけで40時間は経過するけど……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad217]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[charaMoveReturn J 0,-6 0.6]
+[wt 0.5]
+[seStop ad217 0.1]
+[wt 0.5]
+[charaFace J 11]
+
+＠ククルカン
+このチキンサンド、という食べ物、美味しいですね！[r]でもなぜ、私にだけこんなご馳走を？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 36]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+このとおり、[#運び手:ポ ー タ ー]は確保してある。
+[k]
+
+＠ダ・ヴィンチ
+[%1][&君:ちゃん]には、[r]うまく説明してご機嫌をとってほしい。
+[k]
+
+？1：それはいいけど……
+？2：Ｕ－オルガマリーを見た？
+
+？！
+
+[charaFace D 24]
+
+＠ダ・ヴィンチ
+Ｕかい？[r]昨日は一日、ずっと部屋にいたようだけど……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠テペウ
+今日は太陽の訪れより早く出かけましたよ。[r]夜には戻ってくるのではないでしょうか。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠マシュ
+あの……どのようなご様子でしたか？
+[k]
+
+＠マシュ
+いえ、チチェン・イツァーに[r]戻ってから元気がないようでしたので、その……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_147 1.5]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠G：テペウ
+ハチャメチャに元気でしたが。
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[fadeout white 1.0]
+[wait fade]
+
+[charaFadeout G 0.1]
+
+[charaPut S 1]
+[charaEffect S bit_sepia01_depth_fs]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+[bgm BGM_EVENT_94 0.1]
+[wt 0.5]
+
+
+＠Ｕ－オルガマリー
+ははははははは！　喜ぶがいい人類ども！[r]ようやく体の調子が戻ってきた！
+[k]
+
+[charaFace H 2]
+
+＠Ｕ－オルガマリー
+なので、さっそくメヒコシティを滅ぼしに行く！[r]私は受けた誹謗中傷を忘れない女だ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+[bgmStop BGM_EVENT_94 1.5]
+
+＠テペウ
+[line 3]。
+[k]
+
+＠テペウ
+いえ、お待ちください大統領。[r]武力行使は時期尚早ではないでしょうか。
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+＠テペウ
+オセロトルはディノスを狩っていますが、[r]それは樹海での話。
+[k]
+
+＠テペウ
+樹海での生存競争は生物として当然のこと。[r]それは批判されるべきものではないのです。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠Ｕ－オルガマリー
+……生贄として殺されているのにか？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠テペウ
+そうです。我々は侵略者ではありません。[r]身は守りますが、攻撃する事はない。
+[k]
+
+＠テペウ
+一方、前回はこちらがメヒコシティに侵入し、[r]彼らの宗教儀式を妨害したカタチになります。
+[k]
+
+＠テペウ
+いま貴女がメヒコシティに攻めこむのは侵略行為です。[r]そこに大義名分はありません。
+[k]
+
+＠テペウ
+ただ“苛ついたから”で滅ぼしてしまうのは、[r]大統領としての経歴に[#瑕:きず]がつきます。
+[k]
+
+＠テペウ
+それとも……メヒコシティを滅ぼすのは[r]この惑星を統べる者としての考えではなく、
+[k]
+
+＠テペウ
+極めて個人的な、[#特定の人物たちへの心証を][r][#良くする]ための行いですか？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 18]
+[charaFadein H 0.1 1]
+[wt 1.0]
+
+[charaFace H 7]
+
+＠Ｕ－オルガマリー
+もちろん地球国家元首としての考えだ！[r]どんな理由があれ、私は人類をみな平等に扱う！
+[k]
+
+[charaFace H 15]
+
+＠Ｕ－オルガマリー
+けどアナタの言う通りねテペウ！[r]少し頭を冷やしてくるわ！
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout white 1.5]
+[bgmStop BGM_EVENT_70 1.5]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[charaPut S 2000,2000]
+[charaEffectDestroy S bit_sepia01_depth_fs]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 1.0]
+
+？1：……？（テペウ、黙り込んじゃった[&ぞ:]？）
+？2：何があったんですか？
+
+？！
+
+[charaFaceFade G 0 0.3]
+
+＠G：テペウ
+少し体を冷却してくる、と。[bgm BGM_EVENT_77 0.1][r]今のミクトランは暑いですからね。
+[k]
+
+＠G：テペウ
+ですが、おふたりの事をとても心配していた事は[r]伝わりました。なんというか、いろんな要素で。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+
+＠マシュ
+そうですか……ここのところ忙しくてお話ができず、[r]オルガマリーさんはボーダーにいらっしゃらないので
+[k]
+
+＠マシュ
+疎遠になっていましたが、[r]夜になれば会えそうで、良かったです。
+[k]
+
+？1：うん
+？2：（……本当に元気なのかな……）
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+あ。そういえばワクチャンは？[r]二日前、Ｕ－オルガマリーと一緒にいたはずだけど。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠G：テペウ
+ああ、ワクチャンですか。[r]昨夜、大通りで目撃しました。
+[k]
+
+＠G：テペウ
+死んだ魚のような目をしていたので[r]声をかけたのですが、
+[k]
+
+＠G：テペウ
+“やっちまった。オレはやっちまった”[r]“男として、いやディノスとして恥ずかしい”
+[k]
+
+＠G：テペウ
+と独り言しか言わないので放置しています。[r]まあ、そのうち復帰するでしょう。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 34]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+あっちゃあ……フラれちゃったのかぁ……。[r]いったい何処に連れて行ったんだ、ワクチャンは。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth R 2]
+[charaDepth F 1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠G：テペウ
+ワクチャンは生粋の闘士職です。特技は[r]『ぶちかまし』と『体当たり』しかないので……[wt 1.0][se ade178][seVolume ade178 0 0.4][charaFadein R 0.3 -50,-85]
+[k]
+
+[charaFadeout R 0.2]
+[charaFace G 4]
+
+＠G：テペウ
+最悪、太陽が遠ざかり戻ってくるまでの間、[r]ずっと闘士の舞などを見せていたのかもしれません。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠マシュ
+それは……勉強になりますね。[r]まさに値千金、黄金に等しい時間だったかと。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 2]
+[charaDepth Q 1]
+
+[charaTalk D]
+[charaFace D 26]
+[charaFadein D 0.1 1]
+
+[charaPut Q 1]
+[charaFadeTime Q 0.2 0.5]
+
+＠ダ・ヴィンチ
+（前から分かってはいたけど、[r]　マシュのシールダー[#情緒:スピリッツ]がヤバイ！）
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout Q 0.1]
+
+[sceneSet A 10001 1]
+[sceneSet B 10001 1]
+[sceneSet O 169200 1]
+
+[charaTalk off]
+[charaDepth S 5]
+[charaDepth P 4]
+[charaDepth A 3]
+[charaDepth M 2]
+[charaDepth B 1]
+
+[charaScale N 1.0]
+[charaScale O 1.01]
+[charaScale A 1.2]
+[charaScale B 1.2]
+[charaScale M 1.5]
+[charaScale P 1.3]
+
+[subCameraOn 2]
+
+[subCameraFilter #A through]
+[subCameraFilter #B through]
+
+[charaLayer M sub #A]
+[charaLayer B sub #A]
+
+[charaLayer P sub #B]
+[charaLayer A sub #B]
+[charaLayer T sub #B]
+[charaLayer U sub #B]
+[charaLayer V sub #B]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[subRenderScale #A 1.0]
+[subRenderScale #B 3.0]
+
+[charaFace M 2]
+[charaFadein M 0.1 -200,260]
+[charaFadein B 0.1 0,-200]
+
+[charaPut A 1]
+[charaFadeTime A 0.1 0.4]
+[charaPut P -400,-350]
+[charaFadeTime P 0.1 0.8]
+[charaPut T 1]
+[charaEffect T bit_talk_rain01]
+[charaPut U -50,0]
+[charaEffect U bit_talk_rain01]
+[charaPut V 50,0]
+[charaEffect V bit_talk_rain01]
+
+[scene 169300]
+
+[cameraMove 0.1 40,-10 1.1]
+[wait camera]
+[wt 1.0]
+
+[fadein black 1.0]
+[cueSe SE_22 22_ad1170]
+[cueSeVolume 22_ad1170 0 0]
+[cueSeVolume 22_ad1170 3.0 0.6]
+
+[cueSe SE_22 22_ad1176]
+[cueSeVolume 22_ad1176 0 0]
+[cueSeVolume 22_ad1176 3.0 0.6]
+
+[cameraMove 5.0 -40,-10 1.1]
+[wait fade]
+[bgm BGM_MAP_2 0.1]
+
+[wt 2.0]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+
+[scene 169200]
+
+[cameraMove 0.1 0,0 1.01]
+
+[subRenderFadein #A 0.1 0,30]
+[subRenderMove #A 0,0 5.5]
+
+[subRenderFadein #B 0.1 750,800]
+[subRenderMove #B 750,400 5.5]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.5]
+
+[subRenderFadeout #A 1.0]
+[subRenderFadeout #B 1.0]
+[wt 1.5]
+
+[charaEffectStop T bit_talk_rain01]
+[charaEffectStop U bit_talk_rain01]
+[charaEffectStop V bit_talk_rain01]
+
+[cueSeStop 22_ad1170 2.0]
+[cueSeStop 22_ad1176 2.0]
+[shake 0.04 2 2 0]
+[se ade393]
+[seVolume ade393 0 0]
+[seVolume ade393 1.0 0.5]
+[se ad619]
+[seVolume ad619 0 0]
+[seVolume ad619 1.0 0.2]
+[wt 2.0]
+
+[wipeout rectangleStripUpToDown 0.8 1.0]
+[wait wipe]
+
+[subCameraOff]
+
+[charaFadeout M 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout P 0.1]
+[charaLayer M normal]
+[charaLayer A normal]
+[charaLayer B normal]
+[charaLayer P normal]
+[charaLayer T normal]
+[charaLayer U normal]
+[charaLayer V normal]
+
+[scene 170300]
+
+[cameraHome 0.1]
+
+[charaDepth J 6]
+[charaDepth I 5]
+[charaDepth D 4]
+[charaDepth O 3]
+[charaDepth N 2]
+[charaDepth Q 1]
+
+[seVolume ade393 1.0 0.8]
+[seVolume ad619 1.0 1.0]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+[charaTalk on]
+[charaTalk N]
+[charaFace N 2]
+[charaFadein N 0.9 0,-20]
+[charaMove N 0,0 1.5]
+[se adm11]
+[seStop adm11 3.0]
+[cueSe SE_22 22_ade720]
+[cueSeStop 22_ade720 3.0]
+[wt 1.0]
+
+[bgmStop BGM_MAP_2 1.0]
+[shakeStop 1.0]
+[seStop ade393 2.0]
+[seStop ad619 2.0]
+[wt 2.0]
+
+
+＠キングプロテア・オルタ
+いやです。[r]発電施設なんて、作らせるワケないじゃない。
+[k]
+
+＠キングプロテア・オルタ
+分かってます？[r]ここ、一時とはいえ私の居住区ですよ？
+[k]
+
+[charaFace N 7]
+
+＠キングプロテア・オルタ
+暇すぎて死にそうなんですから、[r]快適な暮らしぐらいはさせてもらいます。
+[k]
+
+＠キングプロテア・オルタ
+と言うか[line 3]気遣いに使う神経の量、[r][#極小:ミ ク ロ]どころか[#無:ム]に近いとか、ほんと虫ケラ。
+[k]
+
+＠キングプロテア・オルタ
+漏電してビリビリ痺れたりしたら責任とれる？[r]とれないでしょ？　そんな大きさじゃ。
+[k]
+
+[messageOff]
+[charaTalk D,I]
+[charaFace I 11]
+[charaFadeinFSL I 0.4 0]
+[charaFace D 26]
+[charaFadeinFSR D 0.4 2]
+[charaFadein O 0.4 0,-200]
+[wt 1.4]
+[bgm BGM_EVENT_122 0.1]
+
+[charaFace N 12]
+
+？1：オルタになってるーーー！？
+
+？！
+
+[messageOff]
+[charaTalk N,D,I]
+[charaFadeout D 0.4]
+[charaFadeout I 0.4]
+[charaFadeout O 0.4]
+[wt 0.4]
+
+＠キングプロテア・オルタ
+なに、驚いた？[r]怖い？　逃げたい？　いい顔ごちそうさま。
+[k]
+
+＠キングプロテア・オルタ
+おとなしくて聞き分けのいい『普段のプロテア』が[r]待ってると思いました？
+[k]
+
+[charaFaceFade N 6 0.2]
+
+＠キングプロテア・オルタ
+ふん。勘違いしないで。[r]ミクトランでは私が『普通』なの。
+[k]
+
+＠キングプロテア・オルタ
+前は仮面から解放したご褒美として、[r]いっとき、[#異霊:オ ル タ]化を解いてあげただけ。
+[k]
+
+＠キングプロテア・オルタ
+サービスはいつまでも続きません。[r]人間の言いなりなんて[#巨人:わ た し]のプライドが許さないし。
+[k]
+
+＠キングプロテア・オルタ
+魔術師であろうとマスターであろうと、[r]人間はみんな、私に従うしかない[#無様:ぶ ざ ま]な奴隷よ。
+[k]
+
+＠キングプロテア・オルタ
+それが気に食わないのなら逃げ出したら？
+[k]
+
+[charaFaceFade N 13 0.2]
+
+＠キングプロテア・オルタ
+逃げる背中めがけて、[r]バーンって平手を落としますけどね？
+[k]
+
+[messageOff]
+[charaTalk D,N]
+[charaFace I 4]
+[charaFadeinFSL I 0.4 0]
+[charaFace D 12]
+[charaFadeinFSR D 0.4 2]
+[charaFadein O 0.4 0,-200]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+ひ、非協力的だけど、どうしちゃったんだ彼女！？[r]マシュの報告では仲間になったってあったけど！
+[k]
+
+＠ネモ・マリーン
+うん。ボクたちもそんな気がしてるんだけど、[r]プロテア、なんかご機嫌ななめだね？
+[k]
+
+[bgm BGM_EVENT_122 1.5 0.7]
+[charaFace N 0]
+
+＠ネモ・マリーン
+どったの？　どこか痛むところとかあるの？[r]診てあげようか？　ボクたち、鯨で慣れてるよ？
+[k]
+
+[messageOff]
+[charaTalk N,I]
+[charaFadeout D 0.4]
+[charaFadeout I 0.4]
+[charaFadeout O 0.4]
+[wt 0.4]
+
+＠キングプロテア・オルタ
+……？[r]マリーン、たくさんいますね。
+[k]
+
+[bgmStop BGM_EVENT_122 1.5]
+＠キングプロテア・オルタ
+前にここに来たマリーンは？[r]あの子の頼みなら、ちょっとは融通してもいいけど。
+[k]
+
+
+[messageOff]
+[charaTalk I,N]
+[charaFace I 5]
+[charaFadein I 0.4 1]
+[charaFadein O 0.4 0,-200]
+[wt 1.2]
+
+[charaFace I 0]
+
+[bgm BGM_EVENT_2 0.1]
+＠ネモ・マリーン
+あのマリーンは今回はいないんだ～。[r]でもボクたち、気持ちは同期してるからさ。
+[k]
+
+＠ネモ・マリーン
+プロテアの事『好きだな～』って気持ちは[r]受け継いでるよ。だから安心して。
+[k]
+
+[messageOff]
+[charaTalk N,I]
+[charaFadeout I 0.4]
+[charaFadeout O 0.4]
+[wt 1.0]
+[charaFaceFade N 8 0.2]
+
+
+＠キングプロテア・オルタ
+……。別に、警戒しているとか、[r]不安がってるワケじゃないですけど。
+[k]
+
+[charaFaceFade N 5 0.2]
+
+＠キングプロテア・オルタ
+私は自分の権利を、[r]自分の立場を主張しているだけ。
+[k]
+
+＠キングプロテア・オルタ
+アナタたちだって、自分の部屋に[r]ベッドサイズの発電機を置かれたらイヤでしょう？
+[k]
+
+[messageOff]
+[charaTalk N,I]
+[charaFace I 2]
+[charaFadein I 0.4 1]
+[charaFadein O 0.4 0,-200]
+[wt 0.4]
+
+＠ネモ・マリーン
+うん、それはイヤ～！[r]エンジンは喜ぶだろうけど！
+[k]
+
+[charaFace N 4]
+
+？1：それはたしかに
+？2：共感しかない例を出された[&な:ね]……
+
+？！
+
+[messageOff]
+[charaTalk N,I]
+[charaFadeout I 0.4]
+[charaFadeout O 0.4]
+[wt 0.4]
+
+＠キングプロテア・オルタ
+そら見なさい。[r]分かったのなら負けを認めて無様に[line 3]いえ。
+[k]
+
+[charaFace N 3]
+
+＠キングプロテア・オルタ
+いいこと思いついちゃった。[r]条件次第で発電所作りに協力してもいいです。
+[k]
+
+[messageOff]
+[charaTalk D,N]
+[charaFace D 2]
+[charaFadein D 0.4 1]
+[charaFadein O 0.4 0,-200]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+ほんとかい？　設置まで手伝ってもらえるなら[r]文句なしだ。キミなら重機要らずだからね。
+[k]
+
+
+[charaFace N 11]
+
+＠ダ・ヴィンチ
+それで、条件というのは？
+[k]
+
+[bgmStop BGM_EVENT_2 1.0]
+[messageOff]
+[charaTalk D,N]
+[charaFadeout D 0.4]
+[charaFadeout O 0.4]
+[wt 0.4]
+
+＠キングプロテア・オルタ
+もう一度、私と戦って♡[r]人間に負けっぱなしとか、虫唾が走って仕方がないの。
+[k]
+
+？1：マジ！？
+？2：今の戦力で、もう一度！？
+
+？！
+
+[bgm BGM_BATTLE_62 0.1]
+[charaFaceFade N 13 0.2]
+
+＠キングプロテア・オルタ
+そうよね。戦いたくないですよね？[r]まぐれは二度続かないって分かっているんですもの。
+[k]
+
+[charaFaceFade N 9 0.2]
+
+＠キングプロテア・オルタ
+あーあ。ちっさ。[r]体ばかりか心もちっさ。
+[k]
+
+＠キングプロテア・オルタ
+そんな小さいと生きていくのもタイヘンでしょう？[r]私の仮面に住んでみる？
+[k]
+
+[charaFaceFade N 4 0.2]
+
+＠キングプロテア・オルタ
+さあどう応えるの、[%1]。
+[k]
+
+＠キングプロテア・オルタ
+私が負けたら発電所を作るのを手伝って、[r]その後もずっと警備してあげます。
+[k]
+
+＠キングプロテア・オルタ
+でも、逆にアナタが負けたら[line 3]
+[k]
+
+[charaFaceFade N 13 0.2]
+
+＠キングプロテア・オルタ
+口では言えない扱いを覚悟なさい。[r]どんな目に[#遇:あ]わされるか、楽しみにね？
+[k]
+
+[messageOff]
+[charaTalk D,N]
+[charaFace D 13]
+[charaFadein D 0.4 1]
+[charaFadein O 0.4 0,-200]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+むう。通常の彼女が引っ込み思案な分、[r]オルタな彼女は負けず嫌いのようだね。
+[k]
+
+＠ダ・ヴィンチ
+どうする[%1][&君:ちゃん]？[r]やっちゃう？　余計こじれそうだけど。
+[k]
+
+[charaFace N 4]
+
+？1：仕方ない。わからせよう
+？2：（今のこっちの戦力、知らないんだろうなぁ……）
+
+？！
+
+[messageOff]
+[charaTalk D,N]
+[charaFadeout D 0.4]
+[charaFadeout O 0.4]
+[wt 0.4]
+
+＠キングプロテア・オルタ
+それとも謝る？　謝っちゃう？[r]それで永久契約とかしちゃう？
+[k]
+
+[charaFace N 12]
+
+＠キングプロテア・オルタ
+サクラファイブ枠は私だけにして、[r]他のハイ・サーヴァントは解雇する？
+[k]
+
+[se ad623]
+[wt 0.2]
+[shake 0.05 0 2 1.0]
+
+＠キングプロテア・オルタ
+それなら考えてあげない事も[line 3][bgmStop BGM_BATTLE_62 1.0][seStop ad623 2.0]
+[k]
+
+[messageOff]
+[charaFadein O 0.6 0,-200]
+[se ad987]
+[wt 1.0]
+[seStop ad987 1.0]
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.4 50,0]
+[charaMove J 0,0 0.8]
+[wt 1.0]
+
+＠ククルカン
+コンテナ、所定位置に置いてきましたー！[r]次は何をしましょうか、皆さん！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠ネモ・マリーン
+うん、バトルだって！[r]ククルカン対キングプロテア、冥界の大決戦～！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 7]
+[charaFadein J 0.1 1]
+[wt 1.0]
+
+[bgm BGM_BATTLE_98 0.1]
+
+[charaFace J 2]
+[charaMoveReturn J 0,10 0.3]
+
+[charaFace N 10]
+[charaPut Q 1]
+[charaFadeTime Q 0.2 0.5]
+
+＠ククルカン
+オッケー！　なぜか[#心:こころ]わき立ちマース！[r]いい[#試合]をしましょうね、お嬢さん！
+[k]
+
+[messageOff]
+[charaTalk J,N]
+[charaFadeout J 0.4]
+[charaFadeout O 0.4]
+[wt 0.4]
+
+＠キングプロテア・オルタ
+（見間違い？　あのコンテナの山をひとりで[r]　運んでたように見えたけど……気のせい、ですよね？）
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_98 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,1154 @@
+
+
+
+
+
+＄94-14-72-24-1-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098336002 1 ジュネス]
+[charaSet B 1098276910 1 マシュ]
+[charaSet C 6024000 1 スカサハ]
+[charaSet D 9014001 1 スカサハ＝スカディ]
+[charaSet E 11019000 1 徐福]
+[charaSet F 1044400 1 斎藤一]
+[charaSet G 7052000 1 呼延灼]
+[charaSet H 4026000 1 イシュタル]
+[charaSet I 9012000 1 ダ・ヴィンチ]
+[charaSet J 1098253200 1 大統領]
+[charaSet K 9009001 1 アルトリア・ルーラー]
+[charaSet L 11011000 1 カーマ]
+[charaSet M 5021300 1 クー・フーリン]
+
+[charaSet N 1098336002 1 ジュネス_演出用]
+[charaSet O 6024000 1 スカサハ_演出用]
+[charaSet P 9014001 1 スカサハ＝スカディ_演出用]
+[charaSet Q 1044400 1 斎藤一_演出用]
+
+[charaSet U 98115000 1 エフェクト用]
+[charaSet V 98115000 1 エフェクト用]
+
+[sceneSet W 260700 1]
+[sceneSet X 260700 1]
+[sceneSet Y 260700 1]
+
+[sceneSet Z 10000 1]
+[charaScale Z 1.1]
+
+[charaPut A 2500,2500]
+[charaPut U 2500,2500]
+[charaEffectEdgeBlur A ffff84 ffff84 2 4]
+[charaEffect U bit_talk_charge_aura_set]
+[cueSe SE_25 25_ade1189 0 0]
+
+[charaTalk depthOff]
+[charaDepth Q 24]
+[charaDepth P 23]
+[charaDepth O 22]
+[charaDepth N 21]
+[charaDepth X 20]
+[charaDepth Y 19]
+
+[charaDepth A 17]
+[charaDepth B 16]
+[charaDepth C 15]
+[charaDepth D 14]
+[charaDepth E 13]
+[charaDepth F 12]
+[charaDepth G 11]
+[charaDepth H 10]
+[charaDepth I 9]
+[charaDepth J 8]
+[charaDepth K 7]
+[charaDepth L 6]
+[charaDepth M 5]
+[charaDepth U 4]
+[charaDepth W 3]
+
+[subCameraOn 1]
+[charaLayer N sub #A]
+[charaLayer X sub #A]
+[subCameraFilter #A normal]
+[charaFace N 7]
+[charaFadein N 0 1]
+[charaFadein X 0 0,-200]
+
+[scene 10000]
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_BATTLE_216 0.1]
+[wt 0.2]
+
+[fowardEffect bit_talk_kengekiall02_fs]
+[wt 0.1]
+[cueSe Battle bac137]
+[wt 0.1]
+[cueSe Battle bac136]
+[wt 0.3]
+[cueSe Battle bac138]
+[wt 0.4]
+[cueSe Battle bac135]
+[se ad682]
+[fowardEffect bit_talk_h_slash01_fs]
+[wt 0.2]
+
+[fadeout black 0.1]
+[wait fade]
+[charaPut U 0,-50]
+[charaTalk off]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[scene 260700]
+[wt 0.1]
+
+[cueSeVolume 25_ade1189 0.5 0.2]
+[se ad634 0.5 0.3]
+
+[charaEffectEdgeBlurStop A]
+[fadein black 0.2]
+[wait fade]
+
+[charaShake A 0.04 3 3 0.5]
+[se ad596]
+[wt 1.5]
+
+＠ジュネス
+うあっ……！
+[k]
+
+[messageOff]
+[subRenderFadein #A 0.8 0,0]
+[cueSe SE_23 23_ade907]
+[cueSeStop 25_ade1189 1.0]
+[seStop ad634 1.0]
+[wt 1.8]
+[charaEffectDestroy U bit_talk_charge_aura_set]
+[charaFadeout A 0.1]
+[wt 0.3]
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+[charaFadeout N 0.1]
+[charaFadeout X 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ジュネスさんのオーラが消えていきます！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaLayer N normal]
+[charaLayer X normal]
+[subCameraOff]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ジュネス
+ダメ、かぁ。[r]肝心のところで役に立てないな、私。
+[k]
+
+＠ジュネス
+ごめんなさい、大統領。[r]ごめんなさい、ミカ……。
+[k]
+
+[bgmStop BGM_BATTLE_216 1.0]
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaMoveEase A 0,-30 0.4 easeOutSine]
+[wt 0.4]
+[se ad144]
+[wt 0.9]
+
+？1：ジュネス！
+？！
+
+[charaScale X 1.2]
+[charaFadein X 0.5 0,-200]
+[wt 0.6]
+
+＠ジュネス
+…………。
+[k]
+
+[messageOff]
+[charaScale O 1.3]
+[charaTalk off]
+[charaFace O 0]
+[charaFadein O 0.4 100,10]
+[charaMoveEase O 100,-10 0.4 easeOutSine]
+[se ade255 0 0.5]
+[seStop ade255 0.7]
+[wt 1.0]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[bgm BGM_GOGH_1 0.1]
+
+
+＠スカサハ
+ふむ、消耗は激しいものの、[r]霊核の損傷にまでは至ってないか。
+[k]
+
+＠スカサハ
+だが、このままだと危ういな。
+[k]
+
+
+？1：誰か、治療を！
+？！
+
+[messageOff]
+[charaFadeout O 0.4]
+[charaFadeout X 0.4]
+[wt 0.4]
+[subCameraOn 1]
+[charaLayer V sub #A]
+[charaLayer P sub #A]
+[charaLayer X sub #A]
+[subCameraFilter #A normal]
+[charaDepth V 24]
+[charaScale X 1.2]
+[charaScale P 1.3]
+[charaFace P 0]
+[charaFadein P 0 1]
+[charaFadein X 0 0,-200]
+[charaPut V 1]
+[charaEffect V bit_talk_noble_light]
+
+＠スカサハ＝スカディ
+わかった。[r]ルーンで治してやろう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 22]
+[charaFadein E 0.1 1]
+
+＠徐福
+いやいやいや……[#遺分體:エ レ メ ン ツ]の力を借りるとか、[r]無茶が過ぎるだろー。普通死ぬでしょ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠斎藤一
+ああ、まったくだ。[r]死んじゃったら、全部おしまいだよ。
+[k]
+
+[charaFace F 9]
+
+＠斎藤一
+……けれど、それでも貫きたい信念があったんだねぇ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠呼延灼
+『友達を守る』って、言ってましたね……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠イシュタル
+それにしたって急じゃない？[r]こないだは、私たちのために料理なんかしてたのに。
+[k]
+
+＠イシュタル
+一体なにがあったのよ。
+[k]
+
+？1：目を覚ましたら本人に聞いてみよう
+？！
+
+[messageOff]
+[cueSe SE_22 22_ad1180 0.4 0.3]
+[subRenderFadein #A 0.4 0,0]
+[wt 1.2]
+[cueSe SE_22 22_ade768]
+[wt 0.8]
+[cueSeStop 22_ad1180 2.0]
+[charaEffectStop V bit_talk_noble_light]
+[wt 3.2]
+[charaFadeout H 0.1]
+
+＠スカサハ＝スカディ
+……よし、もう大丈夫だ。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+[charaFadeout P 0.1]
+[charaFadeout X 0.1]
+[wt 0.2]
+[charaLayer P normal]
+[charaLayer X normal]
+[subCameraOff]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.4 0,-30]
+[charaMove A 0,0 0.6]
+[charaShake A 0.04 2 2 0.6]
+[cueSe SE_24 24_ade1034]
+[cueSeStop 24_ade1034 0.6]
+[wt 0.8]
+
+＠ジュネス
+う……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ジュネスさん！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ジュネス
+助けて、くれたのですか……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠斎藤一
+まぁ、そちらさんにも殺意が微塵もなかったし？[r]そんなもん、持たずに済むにこしたことはないけど。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.8]
+
+？1：大統領を守りたかったの？
+？！
+
+[charaMoveReturn A 0,-4 0.5]
+
+＠ジュネス
+（こくり）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+
+＠イシュタル
+変なの。アンタより大統領の方がずっと強いでしょ。[r][#遺分體:エ レ メ ン ツ]なんだし。
+[k]
+
+＠イシュタル
+守る必要なんて、ある？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ジュネス
+そうですね、あの人は強い。[r]けれど、相手は[#あなたたち:カ　　ル　　デ　　ア]です。
+[k]
+
+＠ジュネス
+みなさんのこれまでの戦いを思えば、[r]『彼女なら大丈夫だ』なんて、とても思えません。
+[k]
+
+＠ジュネス
+だから、この命にかえてでも、[r]私が止める必要があったんです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ジュネスさん……。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale N 1.1]
+[charaScale X 1.1]
+[charaFace N 7]
+[charaFadein N 0.4 1]
+[charaFadein X 0.4 0,-240]
+[charaMoveScaleEase N 1.2 0.4 easeOutCubic]
+[charaMoveScaleEase X 1.2 0.4 easeOutCubic]
+[charaMoveEase N 0,15 0.4 easeOutCubic]
+[charaMoveEase X 0,-270 0.4 easeOutCubic]
+[wt 0.5]
+[charaFadeout B 0.1]
+[charaFace I 25]
+[charaFadein I 0.1 1]
+
+＠ジュネス
+無理は承知で、お願いします。[r]大統領の所へは行かないでください。
+[k]
+
+＠ジュネス
+あの人の夏を、止めないで……。[r]どうか、どうか……！[bgmStop BGM_GOGH_1 2.0]
+[k]
+
+？1：……ごめん、それはできない
+？！
+
+[charaFace N 6]
+
+＠ジュネス
+ああ……。[bgm BGM_EVENT_11 0.1]
+[k]
+
+[messageOff]
+[charaFadeout N 0.4]
+[charaFadeout X 0.4]
+[wt 0.4]
+[charaTalk on]
+[charaTalk I]
+
+＠ダ・ヴィンチ
+彼女を放置すれば、人類史は崩壊してしまうんだ。[r]たとえ、陽気な夏の世界になるだけだとしてもね。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠イシュタル
+そういうわけだから、じゃあねー。[wt 1.0][charaFace H 6][r]……ってする前に聞きたいことがあるのよね。
+[k]
+
+＠イシュタル
+なんで急に、邪魔したわけ？[r]いくらでも機会はあったでしょ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ジュネス
+それは……。
+[k]
+
+？1：教えて。力になれるかもしれない
+？！
+
+[messageOff]
+[charaTalk A,N]
+[charaFace N 6]
+[charaFadein N 0.6 -260,0]
+[charaFadein X 0.6 70,-270]
+[charaMove N -270,0 3.0]
+[charaMove X 60,-270 3.0]
+[subCameraOn 1]
+[charaLayer H sub #A]
+[charaLayer W sub #A]
+[subCameraFilter #A maskEdge cut359_mask09 5 255,255,255,255 0]
+[charaScale H 1.2]
+[charaScale W 1.2]
+[charaFace H 8]
+[charaFadein H 0 40,200]
+[charaFadein W 0 -100,0]
+[wt 1.6]
+[charaFaceFade N 7 0.2]
+[wt 0.2]
+
+＠N：ジュネス
+…………。[r]あの人は、今、苦しんでいます。
+[k]
+
+[messageOff]
+[charaTalk H]
+[subRenderFadein #A 0.4 237,-250]
+[subRenderMove #A 212,-200 0.4]
+[wt 0.4]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠イシュタル
+苦しむ？[r]好き放題やってる、あの女が？
+[k]
+
+[charaTalk N]
+[charaFace N 7]
+
+＠N：ジュネス
+渇望、と言っていました。[r]本当の夏が見つからないのだと。
+[k]
+
+[charaTalk H]
+[charaFace H 13]
+
+＠イシュタル
+本当の夏……ってなに。
+[k]
+
+[charaTalk N]
+[charaFace N 7]
+
+＠N：ジュネス
+わかりません。
+[k]
+
+[charaTalk H]
+[charaFace H 13]
+
+＠イシュタル
+雲を掴むような話ねぇ。
+[k]
+
+[messageOff]
+[charaTalk H,A]
+[charaFadeout N 0.4]
+[charaFadeout X 0.4]
+[subRenderFadeout #A 0.4]
+[wt 0.5]
+[charaFadeout H 0.1]
+[charaFadeout W 0.1]
+
+＠ジュネス
+[#あの人:大　統　領]がそんなことを言い出したのは、[r]ミカとひとつになってからです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaLayer H normal]
+[charaLayer W normal]
+[subCameraOff]
+[charaScale H 1.0]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ミカが……！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ジュネス
+大統領は、ミカを危険視して……[r]ご自分の中に取り込んでしまいました。
+[k]
+
+＠ジュネス
+私は、それを止められなかった。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠マシュ
+…………。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ジュネス
+でも、それから大統領は変わり始めました。[r]私のこと、初めて名前で呼んでくれたり。
+[k]
+
+[charaFace A 6]
+
+＠ジュネス
+そして[line 3]
+[k]
+
+＠ジュネス
+『夏がわからなくなった』と。
+[k]
+
+＠ジュネス
+あんなにも夏を追い求めていたのに。[r]急に自信を失くしてしまって……。
+[k]
+
+
+
+[messageOff]
+[se ad592]
+[fadeout white 0.7]
+[bgm BGM_EVENT_11 1.0 0.5]
+[wait fade]
+
+[pictureFrame cut063_cinema]
+[charaFadeout A 0.1]
+[effect bit_sepia01_depth_fs]
+[charaTalk J]
+[charaFace J 8]
+[charaFadein J 0.1 0,-50]
+[scene 258700]
+[wt 0.1]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.3]
+
+＠大統領
+まずは、オマエからだ。[r]ひとつひとつ、夏を知っていくぞ。
+[k]
+
+＠大統領
+そして本当の夏、楽しい夏を見つけた時、[r]きっと、私の渇望は癒やされるのだ。
+[k]
+
+[messageOff]
+[fadeout white 0.7]
+[wait fade]
+
+[charaFadeout J 0.1]
+[pictureFrame]
+[effectDestroy bit_sepia01_depth_fs]
+[charaTalk off]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[scene 260700]
+[wt 0.1]
+
+[fadein white 0.7]
+[bgm BGM_EVENT_11 0.7 1.0]
+[wait fade]
+[wt 0.3]
+
+＠ジュネス
+あの人が渇望に苦しんでいるなら、[r]それを癒やしてあげたい。
+[k]
+
+＠ジュネス
+だから、この夏が終わるのは今じゃない。[r]今じゃダメなんです。
+[k]
+
+＠ジュネス
+あの人はまだ、本当の夏を見つけていないから……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ジュネスさん……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 23]
+[charaFadein I 0.1 1]
+
+＠ダ・ヴィンチ
+『夏』を名乗る[#遺分體:エ レ メ ン ツ]が、[r]自分の根幹に揺らぎを覚えた……これは、驚きだよ。
+[k]
+
+＠ダ・ヴィンチ
+彼女は、これまでの[#遺分體:エ レ メ ン ツ]とは、[r]随分とタイプが異なっているぞ。
+[k]
+
+？1：『癒やされる』というのが気になるよ
+？！
+
+[charaFace I 24]
+
+＠ダ・ヴィンチ
+そこだね。ここからは推測だが……彼女は本質的に、[r]人類とも、カルデアとも敵対しない可能性がある。
+[k]
+
+＠ダ・ヴィンチ
+もしかして、その『渇望』を満たしてやれば、[r]活動を停止するんじゃないか……？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+
+＠イシュタル
+だとしてもよ？[r]悠長に待ってやる義理も、時間の余裕もないでしょ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠スカサハ
+そうだな。本当の夏とやらを見つける頃には、[r]この星は終わっているかもしれん。
+[k]
+
+？1：『本当の夏』ってなんだろうね
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 4]
+[charaFadein K 0.1 1]
+
+＠アルトリア・ルーラー
+ただの季節ではなく、なにか詩的な意味合いでしょうか。[r]皆目、見当もつきませんが……。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 14]
+[charaFadein I 0.1 1]
+
+＠ダ・ヴィンチ
+大統領の個人的体験、記憶に根ざした基準で[r]『本当』をジャッジするとなると……ううん、難しいな。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ジュネス
+…………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 12]
+[charaFadein L 0.1 1]
+
+＠カーマ
+ちょっとわかりませんよねぇ。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 1.5]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠斎藤一
+なんだかんだで会ったこともないしねぇ。[r]共通の体験でもあればまだ……。
+[k]
+
+？1：もしかして、それかな？
+？！
+
+[charaFace F 13]
+
+＠斎藤一
+ん？
+[k]
+
+？1：こちらから楽しい夏を教えにいけばいい！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_104 0.1]
+
+[charaTalk L]
+[charaFace L 20]
+[charaFadein L 0.1 1]
+
+＠カーマ
+マスターさんが、大統領に？[r]そんなことができるんですか？
+[k]
+
+[subCameraOn 1]
+[charaLayer M sub #A]
+[charaLayer W sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 4 255,255,255,255 0]
+[charaScale M 1.2]
+[charaScale W 1.2]
+[charaFace M 7]
+[charaFadein M 0 0,300]
+[charaFadein W 0 -100,100]
+
+？1：[&オレ:わたし]は楽しい夏をたくさん知ってるから！
+？！
+
+[charaFace L 6]
+
+＠カーマ
+なるほど、そういう意味。[r]ふふっ、それは確かにそうですね。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠徐福
+カルデアの夏はハチャメチャだもんなー。
+[k]
+
+[charaTalk M]
+[subRenderFadeinFSR #A 0.3 300,-280]
+[subRenderMoveFSR #A 300,-330 0.3]
+[wt 0.3]
+
+＠クー・フーリン
+ボス経験者がそれ言うの？
+[k]
+
+[subRenderFadeout #A 0.3]
+[subRenderMoveFSR #A 300,-380 0.3]
+[wt 0.3]
+[charaFadeout M 0.1]
+[charaFadeout W 0.1]
+
+[charaTalk E]
+[charaFace E 18]
+
+＠徐福
+あれは徐福であって徐福じゃないので……。[r]記録はあるけど記憶はないので……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaLayer M normal]
+[charaLayer W normal]
+[subCameraOff]
+[charaScale M 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠マシュ
+教えてあげると、きっとびっくりしますね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠呼延灼
+ええ……それって大統領と遊ぶって意味です？[r][#遺分體:エ レ メ ン ツ]と？　本気ですか……！
+[k]
+
+[messageOff]
+[charaScale Q 1.2]
+[charaScale X 1.2]
+[charaTalk G,Q]
+[charaFace Q 0]
+[charaFadein Q 0.4 1]
+[charaFadein X 0.4 0,-270]
+[wt 0.5]
+[charaFadeout G 0.1]
+
+＠Q：斎藤一
+一応の確認をするよ、マスターちゃん。[r]そいつは、直接戦うよりも意味のあること？
+[k]
+
+？1：夏を、楽しいまま終わらせられるよ
+？！
+
+[charaFace Q 4]
+
+＠Q：斎藤一
+……ははっ。マスターちゃん、[r]そいつはマスターちゃんの趣味だよね。
+[k]
+
+[charaFace Q 0]
+
+＠Q：斎藤一
+けど……そうだな。[r]夏には、血しぶきよりも、海の水しぶきがお似合いだ。
+[k]
+
+＠Q：斎藤一
+だったら、俺は話に乗るよ。
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[charaDepth I 25]
+[charaScale I 1.2]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[charaFace H 7]
+[charaFadeinFSR H 0.1 2]
+[charaFace C 1]
+[charaFadeinFSL C 0.1 0]
+
+＠ダ・ヴィンチ
+私も[%1][&君:ちゃん]に賛成だ。
+[k]
+
+[charaFace I 26]
+
+＠ダ・ヴィンチ
+我々は夏の大ベテランだということを、[r]あの[#遺分體:エ レ メ ン ツ]に、思い知らせてやろうじゃないか。
+[k]
+
+[messageOff]
+[charaTalk I,H]
+[charaFadeout I 0.4]
+[charaFadeout X 0.4]
+[wt 0.4]
+[charaDepth I 9]
+[charaScale I 1.0]
+
+＠イシュタル
+……ま、いいか。[r]それがマスターの願いってんなら、つきあってあげる。
+[k]
+
+[charaTalk C]
+
+＠スカサハ
+結局わかりあえなかったとしても、[r]そのまま殴り合いに移行すればいい。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ジュネス
+みなさん……。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+？1：一緒に大統領に夏を教えよう、ジュネス
+？！
+
+[charaFace A 3]
+
+＠ジュネス
+は……はいっ！[r]ありがとう、ございます……！
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_MAP_104 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠呼延灼
+それにしても、[r]よく大統領の力を借りるなんてできましたね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジュネス
+元々、大統領の力のごく一部は[r]私でも使用できる形でプールしてあったんです。
+[k]
+
+[messageOff]
+[charaEffect A bit_talk_U_powerball]
+[se ad606]
+[wt 2.5]
+[charaFadeout A 0.1]
+[seStop ad606 0.7]
+[wt 0.1]
+[charaPut A 2500,2500]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠呼延灼
+光の玉……？
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[seVolume ad933 0.7 0.4]
+[wt 0.7]
+[cueSe SE_22 22_ad1214]
+[charaEffectStop A bit_talk_U_powerball]
+[wt 1.7]
+[charaFace A 1]
+
+＠ジュネス
+力を使い果たして、割れてしまいましたね。[r]大統領パワーボールと呼んでいます。
+[k]
+
+＠ジュネス
+島の管理や造営で、いちいち大統領自らが[r]力を振るうのは面倒だとのことで。
+[k]
+
+＠ジュネス
+私はそれを、ちょっとずつ利用して、[r]この島を改善してきたんですよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠呼延灼
+ほほー。国家予算を金庫に入れておく、[r]みたいな感じですか。便利だ……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 3]
+[charaFadein M 0.1 1]
+
+＠クー・フーリン
+でもよ、国庫に手を付けるってなぁ[r]“横領”っていうんじゃねーの？
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ジュネス
+うぐっ、痛いとこをつきますね。[r]はい、それは確かに。
+[k]
+
+[charaFace A 6]
+
+＠ジュネス
+……あああっ、冷静になって考えると、[r]すっごく怖くなってきました。
+[k]
+
+？1：あとで謝ろうね
+？！
+
+[charaFace A 7]
+
+＠ジュネス
+はい……。[r]誠意を込めて謝罪します……。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

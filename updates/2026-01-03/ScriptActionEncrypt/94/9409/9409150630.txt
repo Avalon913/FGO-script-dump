@@ -1,0 +1,934 @@
+
+
+＄94-09-15-06-3-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3017002 1 李書文]
+[charaSet B 1098284100 1 ジャンヌ]
+[charaSet C 1098284000 1 地右衛門]
+[charaSet D 1098284200 1 紅玉の書]
+[charaSet E 1060000 1 宮本伊織]
+[charaSet F 1059000 1 ヤマトタケル]
+[charaSet G 98025000 1 怪異の首魁]
+
+[sceneSet J 204600 1]
+[charaScale J 1.01]
+
+[charaSet L 98115000 1 エフェクト用]
+[charaSet M 98115000 1 エフェクト用]
+[charaSet N 98115000 1 エフェクト用]
+[charaSet O 98115000 1 エフェクト用]
+[charaSet P 98115000 1 エフェクト用]
+[charaSet Q 98115000 1 エフェクト用]
+
+[sceneSet T 204600 1]
+[sceneSet U 204600 1]
+[sceneSet V 10000 1]
+[charaScale V 1.4]
+
+[charaTalk depthOff]
+[charaDepth Q 8]
+[charaDepth P 7]
+[charaDepth O 7]
+[charaDepth B 4]
+[charaDepth A 3]
+[charaDepth C 3]
+[charaDepth E 3]
+[charaDepth D 3]
+[charaDepth F 3]
+[charaDepth G 3]
+[charaDepth L 2]
+[charaDepth M 9]
+
+
+[charaScale T 1.4]
+[charaScale U 1.4]
+
+
+
+[scene 204600]
+
+[charaEffect L bit_talk_blk_fire_aura]
+[charaEffect M bit_talk_sparks_black]
+[charaPut L 1000,1000]
+[charaPut M 1000,1000]
+
+[pictureFrameTop cut063_cinema]
+
+[bgm BGM_BATTLE_252 0.1]
+
+[fadein black 0.5]
+[cueSe SE_21 21_ad1114 1.0 1.0]
+[wait fade]
+
+[charaPut L 0,-700]
+[charaPut M 1]
+[wt 2.0]
+[cueSeStop 21_ad1114 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+
+＠李書文
+[line 3][#哈:ハ]ァッ！
+[k]
+
+[messageOff]
+[charaPut N 0,-50]
+[charaEffect N bit_talk_41_fs]
+[se ad1006]
+[charaMoveEase A 0,-40 0.2 easeOutQuint]
+[charaMoveScaleEase A 1.1 0.2 easeOutQuint]
+[charaFadeout A 0.2]
+[wt 0.2]
+[charaPut N 2000,2000]
+[wt 0.2]
+[charaScale A 1.0]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 0,-50]
+
+＠ジャンヌ
+フッ……！
+[k]
+
+[messageOff]
+[effect bit_talk_29_black_red]
+[charaEffect O bit_talk_blk_fire_aura]
+[charaScale O 0.8]
+[charaPut O 0,100]
+[charaMoveScale O 1.8 0.5]
+[charaMove O 0,0 0.3]
+
+[cueSe SE_21 21_ade546 0.3 1.0]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[wt 0.7]
+[charaFadeout B 0.3]
+[charaPut O 2500,2500]
+[charaEffectStop O bit_talk_41_fs]
+[seStop ad439 0.1]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-40]
+[se ad671]
+[charaMoveScaleEase A 1.0 0.4 easeOutQuint]
+[charaMoveEase A 0,-50 0.4 easeOutQuint]
+[wt 1.0]
+
+
+＠李書文
+……ランサーとは云え、その身のこなし。[r]槍は本分ではあるまいと[#見縊:み く び]っていたが[line 3]
+[k]
+
+[messageOff]
+[charaPut N 0,-50]
+[messageOff]
+[se ad85]
+[effect bit_talk_v_slash01]
+[wt 0.4]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+[charaScale B 1.2]
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 0,-30]
+[charaMoveEase B 0,-50 0.2 easeOutQuint]
+[charaMoveScaleEase B 1.0 0.2 easeOutQuint]
+[charaShake B 0.05 3 3 0.3]
+
+[se ad170]
+[se ad1014]
+[cueSe Battle bac98]
+[effect bit_talk_14 0,0]
+[charaPut N 2500,2500]
+[charaEffectDestroy N bit_talk_41_fs]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠李書文
+呵呵！　許せ、娘！[r]儂の目が節穴であったわ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk off]
+
+
+
+[cueSe SE_24 24_ade980]
+
+[insertionAnimationSet ac_fude_h_open_close_RtoL 0,110]
+[insertionAnimationSet ac_fude_h_open_close_LtoR 0,-110]
+
+
+[insertionAnimationStart ac_fude_h_open_close_RtoL cut536_rsb3_02]
+[insertionAnimationStart ac_fude_h_open_close_LtoR cut536_jot_21]
+[wait insertionAnimationStart ac_fude_h_open_close_RtoL]
+[wait insertionAnimationStart ac_fude_h_open_close_LtoR]
+
+[wt 1.0]
+
+[se ad1006]
+[wt 0.1]
+
+
+[insertionAnimationEnd ac_fude_h_open_close_LtoR]
+[insertionAnimationEnd ac_fude_h_open_close_RtoL]
+[wait insertionAnimationEnd ac_fude_h_open_close_LtoR]
+[wait insertionAnimationEnd ac_fude_h_open_close_RtoL]
+
+[fadeout black 0.2]
+[wait fade]
+
+[charaPut L 1000,1000]
+[charaPut M 1000,1000]
+[charaScale A 1.0]
+[charaScale B 1.0]
+
+
+[blurOff motion 0.1]
+[scene 10000]
+[wt 0.1]
+
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad32]
+[effect bit_talk_blow -100,80]
+[wt 0.3]
+
+[se ad1013]
+[effect bit_talk_blow 100,-80]
+[wt 0.3]
+
+[effect bit_talk_blow02]
+[flashin once 0.2 0.2 FFFFFFAF FFFFFF00]
+[se ad85]
+[wt 0.3]
+[se ad170]
+[se ad1014]
+[wt 0.75]
+
+[fadeout black 0.4]
+[wait fade]
+
+[scene 204600]
+[charaPut L 0,-600]
+[charaPut M 0,-50]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+
+＠地右衛門
+……手こずってやがるな。
+[k]
+
+[messageOff]
+[charaDepth C 5]
+[charaDepth G 7]
+[charaDepth T 6]
+
+[charaFadein T 0.4 50,-200]
+[charaMove T 100,-200 1.0]
+[wt 1.2]
+
+[charaFace G 0]
+[charaFadein G 0.4 0,-50]
+[wt 1.2]
+
+[charaMove T 50,-200 0.6]
+[charaMove G -50,-50 0.6]
+[charaFadeout T 0.6]
+[charaFadeout G 0.6]
+[wt 1.0]
+
+[charaFace C 18]
+[wt 0.4]
+
+[se ad85]
+[effect bit_talk_v_slash02]
+[wt 0.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFadein G 0.1 0,-50]
+[wt 0.2]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect G erasureReverse 0,0 0.4]
+[wt 1.0]
+
+[fowardEffect bit_talk_quickmove]
+[charaPut G 0,-50]
+[se ad223]
+[charaSpecialEffect G appearanceReverse 0,0 0.25]
+[wt 1.2]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+
+＠地右衛門
+俺たちの狙いはコイツのほうだ。[r][#逸:はぐ]れ如きと遊んでいるんじゃねえ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠ジャンヌ
+……はい。[r]速やかに片付けます。
+[k]
+
+[messageOff]
+[charaDepth B 5]
+[charaDepth P 4]
+
+[charaFace B 19]
+[charaPut P 0,-50]
+[se ad961]
+[seVolume ad961 0 0.7]
+[charaEffect P bit_talk_blk_fire_aura]
+[wt 1.5]
+[seStop ad961 1.0]
+[wt 0.5]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut P 2000,2000]
+[charaEffectDestroy P bit_talk_blk_fire_aura]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠李書文
+寂しいことを云ってくれるな。[r]猿真似とは云え、これも聖杯戦争。
+[k]
+
+＠李書文
+存分に死合を楽しむべきではないか？[wt 0.5][charaFace A 2][r]……なあ！
+[k]
+
+[messageOff]
+[blur motion 0.3 4 100 0.5 0.5 0.03 100]
+[se ad1006]
+[charaMoveEase A 0,-30 0.2 easeOutQuint]
+[charaMoveScaleEase A 1.2 0.2 easeOutQuint]
+
+[fadeout black 0.2]
+[wait fade]
+
+[blurOff motion 0.1]
+[charaPut L 1000,1000]
+[charaPut M 1000,1000]
+[charaScale A 1.0]
+[charaScale B 1.0]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad1053]
+[effect bit_talk_quick_slash]
+[wt 1.2]
+
+[se ad32]
+[effect bit_talk_14 -200,20]
+[wt 0.3]
+[se ad1013]
+[wt 0.2]
+[effect bit_talk_14 200,-50]
+[wt 0.3]
+
+[se ad998]
+[effect bit_talk_h_slash01_fs]
+[wt 0.5]
+[se ad85]
+[effect bit_talk_h_slash02_fs 0,0 H]
+[seStop ad998 0.2]
+[wt 0.4]
+
+[effect bit_talk_blow02]
+[wt 0.2]
+[effect bit_talk_14]
+[se ad32]
+[se ad1014]
+[se ad1015]
+[se ad429]
+[seStop ad429 1.0]
+[wt 1.0]
+
+[bgmStop BGM_BATTLE_252 1.0]
+
+[fadeout black 0.4]
+[wait fade]
+
+[scene 204600]
+[charaPut L 0,-600]
+[charaPut M 1]
+[wt 1.5]
+
+[pictureFrameTop]
+[cueSe SE_23 23_ad1292 0.5 1.0]
+[fadein black 0.5]
+[wait fade]
+[wt 0.5]
+
+[cueSeStop 23_ad1292 0.5]
+[wt 0.5]
+
+[bgm BGM_BATTLE_254 0.1]
+
+
+？1：追いついた！
+？2：地右衛門！　やっぱり！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 20]
+[charaFadein C 0.1 1]
+
+＠地右衛門
+チッ……。[r]面倒なのが増えやがった。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠宮本伊織
+地右衛門！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 46]
+[charaFadein C 0.1 1]
+
+＠地右衛門
+宮本伊織。相も変わらず、[r][#反吐:へ　ど]が出る[#面構:つらがま]えをしていやがる。
+[k]
+
+＠地右衛門
+その顔で、俺の地獄を[#彷徨:う ろ つ]くんじゃねえ……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠宮本伊織
+酷い云われようだな。
+[k]
+
+[charaFace E 0]
+
+＠宮本伊織
+だが盈月を以て、災いをもたらさんとする[r]貴殿を見過ごすわけにはいかぬ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 49]
+[charaFadein C 0.1 1]
+
+＠地右衛門
+まだそんな[#戯言:たわごと]を[#吐:ぬ]かすか。[r]どれだけ面の皮が厚いんだ、テメエは？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ヤマトタケル
+……挑発に乗るなよ、イオリ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠宮本伊織
+ああ。奴が[#何故:なにゆえ]、[r]俺を目の敵にするかは[#解:わか]らぬが[line 3]
+[k]
+
+＠宮本伊織
+俺は為すべきを為すまでだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠地右衛門
+この辺りでうろちょろされると[r]目障りなもんでな……。
+[k]
+
+[charaFace C 2]
+
+＠地右衛門
+……せっかくだ。[r]ここらで全員、死んでおけ……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+＠ジャンヌ
+はい。阻む者は残らず[r]灰に還しましょう。
+[k]
+
+[messageOff]
+[charaFace B 20]
+[effect bit_talk_29_black_red]
+[charaEffect O bit_talk_blk_fire_aura]
+[charaScale O 0.8]
+[charaPut O 0,100]
+[charaMoveScale O 1.8 0.5]
+[charaMove O 0,40 0.3]
+
+[cueSe SE_21 21_ade546 0.3 1.0]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[wt 0.7]
+[charaFadeout B 0.3]
+[charaPut O 2500,2500]
+[charaEffectStop O bit_talk_41_fs]
+[seStop ad439 0.1]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[bgm BGM_BATTLE_254 0.4 0.5]
+[wait wipe]
+
+[wt 0.4]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[bgm BGM_BATTLE_254 0.4 1.0]
+[wait wipe]
+
+[charaDepth E 6]
+[charaDepth A 5]
+
+[charaScale E 1.2]
+[charaScale A 0.9]
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 200,0]
+[charaFace A 0]
+[charaFadein A 0.1 -200,-50]
+
+＠宮本伊織
+はっ……！
+[k]
+
+[messageOff]
+[se ad73]
+[effect bit_talk_quickmove 200,0]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[wt 0.4]
+
+
+
+
+[charaTalk A]
+＠李書文
+ふんっ！
+[k]
+
+[messageOff]
+[se ad73]
+[charaDepth P 6]
+[charaPut P -200,0]
+[charaEffect P bit_talk_quickmove]
+[charaSpecialEffect A erasureReverse 1 0.3]
+[wt 0.4]
+
+[wipeout rectangleStripRightToLeft 0.4 1]
+[bgm BGM_BATTLE_254 0.4 0.5]
+[wait wipe]
+
+[charaScale E 1.0]
+[charaScale A 1.0]
+[wt 0.4]
+
+[wipein rectangleStripLeftToRight 0.4 1]
+[bgm BGM_BATTLE_254 0.4 1.0]
+[wait wipe]
+
+[se ad439]
+[seVolume ad439 0 0]
+[seVolume ad439 0.2 1.0]
+[charaEffect O bit_talk_blk_fire_aura]
+[charaScale O 0.8]
+[charaPut O 0,-50]
+[charaMoveScale O 1.8 0.5]
+[wt 0.5]
+[charaMove O 0,20 0.3]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[wt 0.5]
+[seVolume ad439 1.0 0.2]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[subCameraOn 1]
+[charaLayer F sub #A]
+[charaLayer J sub #A]
+[subCameraFilter #A maskEdge cut359_mask02 5 100,100,100,255 0]
+[subRenderDepth #A 8]
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth J 1]
+
+[charaScale F 1.4]
+[charaScale J 1.4]
+[charaFadein F 0.1 0,250]
+[charaFadein J 0.1 0,200]
+[charaTalk F]
+[subRenderFadein #A 0.3 100,-320]
+[subRenderMoveEase #A 0,-320 0.3 easeOutQuint]
+[wt 0.4]
+
+＠ヤマトタケル
+させるか！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+[charaFadeout F 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+[subCameraOff]
+[charaLayer F normal]
+[charaLayer J normal]
+[charaScale F 1.0]
+[charaScale J 1.0]
+
+[seStop ad439 0.4]
+[fowardEffect bit_talk_attack_splash 0,30]
+[cueSe Servants_401900 bac941]
+[wt 0.2]
+
+[charaEffectStop O bit_talk_blk_fire_aura]
+[se ad715]
+[se ad983]
+[fowardEffect bit_talk_underwater_bombing]
+[wt 3.0]
+
+
+
+
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[bgm BGM_BATTLE_254 0.4 0.5]
+[wait wipe]
+
+[wt 0.4]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[bgm BGM_BATTLE_254 0.4 1.0]
+[wait wipe]
+
+[se ad439]
+[seVolume ad439 0 0]
+[seVolume ad439 0.2 1.0]
+[charaEffect O bit_talk_blk_fire_aura]
+[charaScale O 0.8]
+[charaPut O 0,-50]
+[charaMoveScale O 1.8 0.5]
+[wt 0.5]
+[charaMove O 0,20 0.3]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[wt 1.0]
+[seVolume ad439 1.0 0.2]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠怪異
+[line 9]！
+[k]
+
+[messageOff]
+[se adm32]
+[se ad23]
+[seVolume ad23 0 1.0]
+[effect bit_talk_barrier_white_once]
+[wt 0.5]
+[seStop adm32 1.0]
+[seStop ad439 0.6]
+[effectStop bit_talk_barrier_white_once]
+[charaPut O 2500,2500]
+[wt 1.3]
+[charaEffectDestroy O bit_talk_blk_fire_aura]
+
+[cueSe SE_24 24_ade979 0 0.7]
+[se ad927]
+[seVolume ad927 0 0.6]
+[cueSe SE_22 22_ad1213 0 0.5]
+[cueSe SE_23 23_ade958 0 0.5]
+[effect bit_talk_summon_o]
+[effect bit_talk_noble_light_r]
+[wt 3.5]
+
+[wipeout rectangleStripRightToLeft 0.7 1]
+[bgm BGM_BATTLE_254 0.7 0.5]
+[cueSeStop 22_ad1213 0.7]
+[cueSeStop 23_ade958 0.7]
+[cueSeStop 24_ade979 0.7]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[effectDestroy bit_talk_summon_o]
+[effectDestroy bit_talk_noble_light_r]
+
+[charaSet D 1098284220 1 紅玉の書]
+[charaDepth A 3]
+[charaDepth D 3]
+
+[subCameraOn 1]
+[charaLayer U sub #A]
+[charaLayer N sub #A]
+[charaLayer O sub #A]
+[charaLayer B sub #A]
+[charaLayer C sub #A]
+[subCameraFilter #A normal]
+
+[charaDepth U 1]
+[charaDepth N 2]
+[charaDepth O 5]
+[charaDepth B 3]
+[charaDepth C 4]
+
+[charaScale O 1.0]
+[charaEffect N bit_talk_blk_fire_aura]
+[charaEffect O bit_talk_sparks_black]
+[charaPut N 0,-600]
+[charaPut O 1]
+[charaFace C 0]
+[charaFadein C 0.4 -200,0]
+[charaFadein U 0.4 0,-200]
+[wt 0.2]
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[bgm BGM_BATTLE_254 0.7 1.0]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠紅玉の書
+むむっ！　見よ、伊織！[r]吉原の時と同じじゃ！
+[k]
+
+＠紅玉の書
+あの怪異に、膨大な霊地力が流れ込んでいる！[r]一筋縄ではいかぬぞ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadein #A 0.6 0,0]
+[charaMoveEase C -100,0 0.6 easeOutCubic]
+[charaMoveEase U 100,-200 0.6 easeOutCubic]
+[wt 0.7]
+[charaFadeout D 0.1]
+
+[charaTalk C]
+
+＠地右衛門
+あのバケモンに地獄が注がれている。[r]やはり奴が、この地の[#要:かなめ]だ。
+[k]
+
+[charaFace C 46]
+
+＠地右衛門
+[line 3]ランサー！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMove U 0,-200 0.6]
+[charaMove C -200,0 0.6]
+[wt 0.3]
+[charaFace B 1]
+[charaFadein B 0.2 350,0]
+[charaMove B 300,0 0.3]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk B]
+
+＠ジャンヌ
+承知しました。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMove B 300,-10 0.2]
+[cueSe SE_22 22_ad1211]
+
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[subRenderFadeout #A 0.4]
+[wt 0.6]
+[charaEffectDestroy N bit_talk_blk_fire_aura]
+[charaEffectDestroy O bit_talk_sparks_black]
+
+＠李書文
+賑やかになってきたではないか。[r]こうでなくてはな。
+[k]
+
+[messageOff]
+[charaMove A 0,-10 0.2]
+[se ad51]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠宮本伊織
+乱戦に次ぐ乱戦だが、やるしかあるまい！[r]援護を頼む、[%1]！
+[k]
+
+
+？1：任せて！
+？2：……来い！
+
+？！
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[effect bit_talk_summon_fs]
+[se ad39]
+[wt 1.5]
+[seStop ad39 1.8]
+[wt 0.3]
+[effectStop bit_talk_summon_fs]
+[se ad574]
+[wt 1.0]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[bgm BGM_BATTLE_254 0.4 0.5]
+[wait wipe]
+
+[charaFadeout U 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[subCameraOff]
+
+[wt 0.4]
+[effectDestroy bit_talk_summon_fs]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[bgm BGM_BATTLE_254 0.4 1.0]
+[wait wipe]
+
+[charaDepth V 3]
+[charaDepth F 4]
+[charaPut V 1]
+[charaFadeTime V 0.2 0.5]
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+
+＠ヤマトタケル
+（……これほどの騒ぎになっても、[r]　テイは姿を見せず、か）
+[k]
+
+＠ヤマトタケル
+（赤坂にいないのか。[r]　息を潜めて、様子をうかがっているのか）
+[k]
+
+＠ヤマトタケル
+（それとも[line 3]）
+[k]
+
+
+
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_254 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

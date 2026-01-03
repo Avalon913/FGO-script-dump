@@ -1,0 +1,1560 @@
+
+
+＄03-00-13-11-5-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 1098259300 1 ウィツィロポチトリ]
+[charaSet C 1098253200 1 Ｕ－オルガマリー]
+[charaSet D 1098259200 1 テスカトリポカ]
+[charaSet E 1098239310 1 カドック]
+[charaSet F 1098252410 1 ククルカン]
+[charaSet G 1098124330 1 デイビット]
+
+[branchRouteSelect skill_activated 03001311 1000]
+
+[branchNotRouteSelect skill_not_activate 03001311 1000]
+
+[label skill_activated]
+[flag nemo_stage 3]
+[charaSet H 4037002 1 ネモ]
+[branch lblConf01]
+
+[label skill_not_activate]
+[flag nemo_stage 1]
+[charaSet H 1098158330 1 ネモ]
+[branch lblConf01]
+
+[label lblConf01]
+
+[sceneSet I 10000 1]
+[charaScale I 1.01]
+[sceneSet J 170500 1]
+[charaScale J 1.2]
+[sceneSet K 172400 1]
+[charaScale K 1.3]
+[sceneSet L 172500 1]
+[charaScale L 1.7]
+[sceneSet M 172500 1]
+[charaScale M 1.8]
+[sceneSet N 172500 1]
+[charaScale N 1.7]
+[sceneSet O 172600 1]
+[charaScale O 1.3]
+[sceneSet P 172800 1]
+[charaScale P 1.2]
+
+[imageSet Q back10001 1]
+[imageSet R black_fade_re 1 1]
+[charaScale R 2.0]
+[imageSet S black_fade_re 1 1]
+[charaScale S 2.0]
+
+[charaSet T 5009000 1 エフェクト用1]
+[charaSet U 5009000 1 エフェクト用1]
+
+[cameraMove 0.1 0,0 1.01]
+
+[charaTalk depthOff]
+[charaDepth T 1]
+[charaDepth B 2]
+[charaDepth U 3]
+[charaPut T 2500,2500]
+[charaEffect T bit_talk_black_aura_tsk]
+[charaPut U 2500,2500]
+[charaEffect U bit_talk_black_aura_tsk]
+[wt 1.0]
+
+[scene 170500]
+
+[fadein black 1.5]
+[bgm BGM_BATTLE_97 0.1]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+[charaPut U 0,-200]
+[charaPut T 1]
+
+＠ウィツィロポチトリ
+ククルカン[line 3]マヤのククルカン？
+[k]
+
+＠ウィツィロポチトリ
+このミクトランにマヤの神霊は存在しないはず……[r]でも、この陽気な風は確かにケツァル・コアトルの[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2500,2500]
+[charaPut U 2500,2500]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠テスカトリポカ
+前だ！　気を抜くな、ハチドリ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+[charaPut U 0,-200]
+[charaPut T 1]
+
+＠ウィツィロポチトリ
+！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2500,2500]
+[charaPut U 2500,2500]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠ククルカン
+じゃ、ちょっと肉体言語で語り合おっか！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgm BGM_BATTLE_97 0.5 0.5]
+[wait fade]
+
+[scene 10000]
+[charaFadeout F 0.1]
+[wt 0.5]
+
+[fadein black 0.5]
+[bgmStop BGM_BATTLE_97 1.0]
+[wait fade]
+
+[criMovie talk_mov152 bgmPlay true]
+
+[messageOff]
+[fadeout black 0.1]
+[wait fade]
+
+[scene 170500]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+[charaPut U 0,-200]
+[charaPut T 1]
+[wt 0.3]
+
+[se ad85]
+[fowardEffect bit_talk_gram_slash_green]
+[wt 0.3]
+
+[cueSe Battle bac98]
+[fowardEffect bit_talk_14]
+[charaMove B -1050,0 0.5]
+[charaMove T -1050,0 0.5]
+[charaMove U -1050,-200 0.5]
+[wt 0.1]
+[se ad980]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[charaEffectStop T bit_talk_black_aura_tsk]
+[charaEffectStop U bit_talk_black_aura_tsk]
+[charaPut T 2500,2500]
+[charaPut U 2500,2500]
+[bgmStop BGM_BATTLE_97 2.0]
+[seStop ad75 0.5]
+[wt 0.5]
+
+[se ad815]
+[shake 0.05 5 4 1.0]
+[wt 1.5]
+
+＠ウィツィロポチトリ
+ぐっ[line 3]、ぅ[line 3]……[r]ぁ………………。
+[k]
+
+[charaTalk depthOn]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ククルカン
+ごめんなさい、貴方を壊す気はないんです。[r]そこで、しばらく気絶していてね。
+[k]
+
+[charaFace F 9]
+
+＠ククルカン
+[line 3]大通りではどうも。[bgm BGM_EVENT_131 0.1][r]自己紹介は要りません。本題に入ります。
+[k]
+
+＠ククルカン
+まだ戦えますか、カルデアの方。
+[k]
+
+＠ククルカン
+そうであれば私の後ろに。[r]そうでなければ、すぐに地上に向かってください。
+[k]
+
+[charaFace F 11]
+
+＠ククルカン
+私、これからあのサングラス野郎を[r]ブチのめさなければならないので。
+[k]
+
+＠ククルカン
+力いっぱいやっちゃうから、この祭壇にいる[r]皆さんの安全は保証できないのです。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+サングラス野郎とはテスカトリポカ神ですか？
+[k]
+
+＠マシュ
+異聞帯の王なのに、[r]貴女はテスカトリポカ神と敵対している……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠ククルカン
+あれ？[r]そこ、驚くところなの？
+[k]
+
+＠ククルカン
+汎人類史だと、ケツァル・コアトルと[r]テスカトリポカはライバルなんでしょう？
+[k]
+
+[charaFace F 6]
+
+＠ククルカン
+なら私もそれに[#倣:なら]うまで、なのです。
+[k]
+
+＠ククルカン
+ふふふ。神話的背景を理由にして、[r]もうメッタクソにぶちのめして泣かせマース♡
+[k]
+
+[charaFace F 9]
+
+＠ククルカン
+まあ、本当のところは[r]マィヤの総意があったからですが。
+[k]
+
+＠ククルカン
+[line 3]あの人間を放置してはミクトランが滅びる。[r]なので、そうなる前に抹殺しに来たのです。
+[k]
+
+？1：人間……？
+？2：ちょっと待って、サーヴァントじゃない[&のか:の]！？
+
+？！
+
+[charaFace F 7]
+
+＠ククルカン
+あれ、違いました？[r]貴方と同じ生体構造してますけど、彼？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠テスカトリポカ
+ああ。そりゃそうだ。[r]テスカトリポカはそのままでは召喚できない。
+[k]
+
+＠テスカトリポカ
+オレは自分の依代になる人間を作ってから、[r]その体に乗り移った疑似サーヴァントだ。
+[k]
+
+＠テスカトリポカ
+魂は神霊。だが肉体は人間だ。なんで、マスターが[r]いなくとも『今を生きる人類』として活動できる。
+[k]
+
+＠テスカトリポカ
+神霊を召喚するのは難しいからな。
+[k]
+
+＠テスカトリポカ
+オレなりに裏技を使って、[r]デイビットのフォローをしてやったんだよ。
+[k]
+
+＠テスカトリポカ
+もちろん、この体は[#今の時代]に沿った[r]テスカトリポカとしてデザインしたものだ。
+[k]
+
+＠テスカトリポカ
+体が人間なだけで正真正銘、オレはテスカトリポカだ。[r]そこは信用してもらっていい。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[blur lens 0.5 1 20]
+
+[subCameraOn 2]
+[charaLayer J sub #A]
+[charaLayer I sub #A]
+[charaLayer E sub #A]
+[charaLayer Q sub #MASK]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth I 2]
+[charaDepth E 3]
+[charaDepth Q 4]
+
+[charaScale E 1.3]
+[charaScale J 1.5]
+[charaTalk E]
+[charaFace E 0]
+[charaFadeinFSSideR J 0.1 -400,-300]
+[charaFadeinFSSideR E 0.1 360,-130]
+[charaFadeinFSSideR Q 0.1 1000,-400]
+[charaPut I 0,-200]
+[charaFadeTime I 0.1 0.5]
+[charaRoll Q 45]
+[wt 0.1]
+
+[subCameraFilter #A maskEdge #MASK 3]
+[subRenderFadein #A 0.1 0,0]
+[charaMoveFSSideR Q 500,-400 0.5]
+[wt 0.7]
+
+＠カドック
+（オリュンポスの機械神たちが使っていた[r]　アバターみたいなものか……だとしても）
+[k]
+
+[charaFadeout I 0.2]
+[charaFace E 7]
+
+＠カドック
+[#人間の体]ならサーヴァントとは戦えない！[r]ウィツィロポチトリは神殿まで吹き飛んで戦闘不能だ！
+[k]
+
+＠カドック
+今がチャンスだ、[%1]！[r]テスカトリポカをやるぞ……！
+[k]
+
+＠カドック
+何が目的なのか不明だが、[r]ソイツはストーム・ボーダーを欲しがっている！
+[k]
+
+＠カドック
+危険な神霊だ、[r]ここで倒せるなら倒すのが一番いい……！
+[k]
+
+[messageOff]
+[blurOff lens 0.5]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[charaFadeout J 0.1]
+[charaFadeout E 0.1]
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaScale E 1.3]
+
+[subCameraOff]
+[charaLayer J normal]
+[charaLayer I normal]
+[charaLayer E normal]
+[charaLayer Q normal]
+
+[charaTalk depthOn]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ククルカン
+あ、そっちでやっちゃう？
+[k]
+
+＠ククルカン
+そっかー。残念だけど、[r]皆さんがその気なら譲りますね！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠テスカトリポカ
+[line 3]まったく。異聞帯の神が、[r]汎人類史を学習した結果がそれか。
+[k]
+
+＠テスカトリポカ
+素のククルカンよりマシになるかと思ったが、[r]やはり羽を持つヤツはダメだな。軽すぎる。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ククルカン
+え。[r]私、けっこう重いんだけど、軽いだなんて、そんな。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠テスカトリポカ
+頭の話だよトリ公。[r][line 3]デイビット！　構わん、やれ！
+[k]
+
+[bgmStop BGM_EVENT_131 1.7]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[blur lens 0.5 3 30]
+
+[subCameraOn 1]
+[charaLayer J sub #A]
+[charaLayer G sub #A]
+
+[charaTalk depthOff]
+[charaScale G 1.2]
+[charaDepth J 1]
+[charaDepth G 2]
+
+[charaFadein J 0.1 330,-120]
+[wt 0.1]
+[subCameraFilter #A maskEdge cut359_mask03 3 160,82,45,255]
+[subRenderFadein #A 0.4 -50,-100]
+[subRenderMove #A 0,-100 0.3]
+[wt 0.4]
+
+[se ad311]
+[wt 0.7]
+[seStop ad311 0.5]
+[charaTalk G]
+[charaFace G 0]
+[charaFadeinFSL G 0.4 -256,140]
+[wt 0.8]
+[charaMove J 330,-260 1.0]
+[charaMoveFSL G -256,0 1.0]
+[wt 1.2]
+[charaFace G 2]
+
+＠デイビット
+令呪を以て命じよう！[r]人の[#身体:み]であろうと、その[#権能:ちから]を使え、黒きテスカトリポカ！
+[k]
+
+[messageOff]
+[blurOff lens 0.5]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[charaFadeout J 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[subCameraOff]
+[charaLayer J normal]
+[charaLayer G normal]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[cueSe Battle bas16]
+[effect bit_talk_CommandMantra_db02]
+[wt 2.5]
+
+[bgm BGM_BATTLE_33 0.1]
+
+＠テスカトリポカ
+もちろんだ。我が[#臓腑:ぞうふ]二つを代償に、[r]蝕の太陽を呼び起こす。
+[k]
+
+[charaFaceFade D 4 0.2]
+
+＠テスカトリポカ
+一つの種が[#栄:さか]え続ける黄金期など悪い夢だ。
+[k]
+
+＠テスカトリポカ
+生命は消える。世界は滅びる。惑星は燃える。
+[k]
+
+＠テスカトリポカ
+絶滅を見せてやろう。[r]交代の時だ、素晴らしき戦士たちよ！
+[k]
+
+？1：まずい……！
+？2：宝具を使われる前に……！
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+[wt 1.5]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth K 1]
+[charaDepth T 2]
+[charaDepth D 3]
+[charaDepth U 4]
+[charaDepth R 5]
+[charaDepth S 5]
+[charaDepth C 6]
+[charaDepth A 7]
+[charaDepth H 8]
+[charaDepth E 9]
+
+[branch stage3_1 nemo_stage 3]
+
+[charaFace C 7]
+[charaFace A 2]
+[charaFace H 8]
+[charaFadein C 0.1 1]
+[charaFadeinFSR A 0.1 320,0]
+[charaFadeinFSL H 0.1 -320,0]
+
+＠マシュ＆ネモ＆Ｕ
+させない！
+[k]
+
+[branch lblConf02]
+
+[label stage3_1]
+[charaFace C 7]
+[charaFace A 2]
+[charaFace H 2]
+[charaFadein C 0.1 1]
+[charaFadeinFSR A 0.1 320,0]
+[charaFadeinFSL H 0.1 -320,0]
+
+＠マシュ＆ネモ＆Ｕ
+させない！
+[k]
+
+[branch lblConf02]
+
+[label lblConf02]
+
+
+[messageOff]
+[se ad73]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaMoveFSR A 320,20 0.3]
+[charaMoveFSL H -320,20 0.3]
+[charaMoveScale A 1.2 0.4]
+[charaMoveScale H 1.2 0.4]
+[charaFadeout A 0.3]
+[charaFadeout H 0.3]
+[wt 0.3]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_BATTLE_33 1.5]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+[charaPut U 0,-200]
+[charaPut T 1]
+
+[wt 0.1]
+[se ade409]
+[charaEffect T bit_talk_black_aura_tsk]
+[charaEffect U bit_talk_black_aura_tsk]
+[wt 0.6]
+
+[fadeout black 0.8]
+[wait fade]
+
+[charaScale A 1.0]
+[charaScale H 1.0]
+[charaPut T 2500,2500]
+[charaPut U 2500,2500]
+[charaFadeout D 0.1]
+[charaFadein R 0.1 0,-1070]
+[charaFadein S 0.1 0,270]
+[scene 10000]
+[wt 1.0]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad609]
+[seVolume ad609 0 0]
+[seVolume ad609 1.2 0.3]
+[se ad297]
+[seVolume ad297 0 0]
+[seVolume ad297 1.2 0.3]
+[se ad295]
+[seVolume ad295 0 0]
+[seVolume ad295 1.2 0.3]
+[wt 1.2]
+[se ad294]
+[seVolume ad294 0 0]
+[seVolume ad294 1.2 0.3]
+[wt 0.7]
+[se ad585]
+[wt 0.3]
+[se ad891]
+[seVolume ad891 0 0]
+[seVolume ad891 1.2 0.3]
+[cueSe SE_21 21_ade654 0 0.4]
+[wt 0.7]
+[se ade64]
+[seVolume ade64 0 0.4]
+[wt 1.0]
+[se ad754]
+[se ade96]
+[seVolume ade96 0 0.5]
+[wt 0.2]
+[se ad614]
+[seVolume ad614 0 0.4]
+[wt 1.0]
+[se ad828]
+[seVolume ad828 0 0]
+[seVolume ad828 1.2 0.3]
+[cueSe SE_21 21_ade653 0 0.3]
+[se ad611]
+[seVolume ad611 0 0.4]
+[wt 0.8]
+[se ade96]
+[seVolume ade96 0 0.6]
+[wt 0.8]
+[cueSe SE_21 21_ade654 0 0.4]
+[se ad611]
+[seVolume ad611 0 0.3]
+[wt 0.7]
+[se ade64]
+[seVolume ade64 0 0.5]
+[wt 1.0]
+[se ad836]
+[seVolume ad836 0 0]
+[seVolume ad836 1.2 0.3]
+[se ade96]
+[seVolume ade96 0 0.4]
+[wt 0.7]
+[seStop ad754 1.5]
+[seStop ad585 1.5]
+[seStop ad294 1.5]
+[wt 1.5]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaFadein K 1.0 50,-350]
+[charaMove K 0,-350 2.0]
+[seVolume ad295 2.0 0.1]
+[seVolume ad297 2.0 0.2]
+[wt 1.6]
+
+[charaScale A 1.1]
+[charaScale E 1.1]
+[charaScale C 1.1]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 6]
+[charaFadeinFSR A 0.4 266,-50]
+[charaMoveFSR A 256,-50 0.4]
+[wt 0.4]
+
+＠マシュ
+[line 3]え？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadeinFSR E 0.1 256,-50]
+
+＠カドック
+なんだ[line 3]なんだよ、これは。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 29]
+[charaFadeinFSR C 0.1 256,-50]
+
+＠Ｕ－オルガマリー
+[line 6]。
+[k]
+
+[messageOff]
+[fadeout white 0.7]
+[wait fade]
+
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+[charaFadeout C 0.1]
+[charaScale A 1.0]
+[charaScale E 1.0]
+[charaScale C 1.0]
+
+[scene 170503]
+[wt 0.5]
+
+[charaMove K 0,-200 5.0]
+[charaMoveScale K 1.01 5.0]
+[seStop ad295 3.0]
+[seStop ad297 3.0]
+[fadein white 1.5]
+[wait fade]
+
+[wt 4.0]
+
+？1：ミクトランが……
+？2：崩壊、してる……
+
+？！
+
+[wipeout rectangleStripDownToUp 0.7 1]
+[wait wipe]
+
+[charaFadeout K 0.1]
+[wt 0.5]
+
+[cameraMove 0.1 0,-10 1.05]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[branch stage3_2 nemo_stage 3]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠ネモ
+[line 3]っ。いや、幻覚だ！[r]たった数秒で、これだけの破壊活動は行えない！
+[k]
+
+＠ネモ
+小細工はよせ！[r]おまえの仕業だな、テスカトリポカ！
+[k]
+
+[branch lblConf03]
+
+[label stage3_2]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠ネモ
+[line 3]っ。いや、幻覚だ！[r]たった数秒で、これだけの破壊活動は行えない！
+[k]
+
+＠ネモ
+小細工はよせ！[r]おまえの仕業だな、テスカトリポカ！
+[k]
+
+[branch lblConf03]
+
+[label lblConf03]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[charaPut U 0,-200]
+[charaPut T 1]
+＠テスカトリポカ
+……やれやれ。
+[k]
+
+＠テスカトリポカ
+“これは幻ではない”[r]“自分は知っている。これは紛れもなく戦争の匂いだ”
+[k]
+
+＠テスカトリポカ
+今、そう思ったな？　悲しいな、英霊ネモ。[r]この中でオマエだけが近代の戦闘を経験している。
+[k]
+
+＠テスカトリポカ
+真っ先に『幻ではない』と認めながら、[r]未熟者たちのために『幻である』と否定した。
+[k]
+
+＠テスカトリポカ
+[line 3]確かに、オマエは船長に相応しい。[r]殺すのが惜しくなる程度にはな。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut T 2500,2500]
+[charaPut U 2500,2500]
+
+[branch stage3_3 nemo_stage 3]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+[cueSe SE_22 22_ad1213]
+[seVolume 22_ad1213 0 0]
+[seVolume 22_ad1213 1.0 1.0]
+[wt 1.0]
+[se ade8]
+[seVolume ade8 0 0.5]
+[wt 0.3]
+[se ad7]
+[charaFace H 8]
+[branch lblConf04]
+
+[label stage3_3]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+[cueSe SE_22 22_ad1213]
+[seVolume 22_ad1213 0 0]
+[seVolume 22_ad1213 1.0 1.0]
+[wt 1.0]
+[se ade8]
+[seVolume ade8 0 0.5]
+[wt 0.3]
+[se ad7]
+[charaFace H 2]
+[branch lblConf04]
+
+[label lblConf04]
+
+
+[charaMove H 0,15 0.4]
+[charaMoveScale H 1.15 0.4]
+[blur motion 0.4 4 100 0.5 0.6 0.03 100]
+[wt 0.4]
+[se ad479]
+[shake 0.05 2 2 0.6]
+[cameraMove 0.4 0,0 1.01]
+
+[bgmStop BGM_EVENT_72 1.0]
+[wt 0.2]
+
+[se ad971]
+[seStop 22_ad1213 0.5]
+[wipeout leftUpToRightDown 0.5 1.0]
+[wait wipe]
+
+[blurOff motion 0.1]
+
+[charaFadeout H 0.1]
+[scene 10000]
+[wt 0.5]
+
+[wipein leftUpToRightDown 0.1 1.0]
+[wait wipe]
+
+[cueSe SE_22 22_ad1220 0 0.8]
+[wt 0.4]
+[effect bit_talk_ort_beam]
+[wt 2.3]
+
+[se ad284]
+[seVolume ad284 0 0.7]
+[se ad828]
+[seVolume ad828 0 0.5]
+[fadeout white 0.5]
+[wait fade]
+
+[branch stage3_4 nemo_stage 3]
+
+[charaSet H 1098254900 1 ネモ]
+[branch lblConf05]
+
+[label stage3_4]
+[charaSet H 1098254910 1 ネモ]
+[branch lblConf05]
+
+[label lblConf05]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[scene 170503]
+
+[se ad541]
+[seVolume ad541 0 0.2]
+[wt 1.5]
+
+[cameraMove 0.1 0,-20 1.2]
+[wt 0.6]
+
+[shake 0.05 2 2 1.0]
+
+[cameraMove 4.5 0,0 1.0]
+[fadein white 3.5]
+[seStop ad284 2.0]
+[wait fade]
+
+[se ad932]
+[seVolume ad932 0 0.3]
+[wt 1.8]
+[seStop ad932 0.5]
+
+[cueSe SE_22 22_ad1221]
+[wt 0.5]
+
+[charaSpecialEffect H enemyErasure 1 1.9]
+[fowardEffect bit_talk_crystal_break]
+
+[wt 4.5]
+
+？1：キャプ……テン？
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+[charaPut U 0,-200]
+[charaPut T 1]
+
+＠テスカトリポカ
+他人の命を気にしている場合じゃない。[r]自分の足元を見てみろ。それが現実だ。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaPut T 2500,2500]
+[charaPut U 2500,2500]
+
+[charaDepth A 1]
+[charaDepth E 1]
+[charaDepth F 1]
+[charaDepth T 2]
+[charaDepth D 3]
+[charaDepth U 4]
+[charaDepth L 5]
+[charaDepth M 5]
+[charaDepth N 5]
+[charaDepth O 6]
+
+[charaFadein L 0.1 440,-200]
+[wt 0.5]
+
+[charaMove L 400,-200 3.0]
+[charaMoveScale L 1.8 3.0]
+[se ade393]
+[seVolume ade393 0 0]
+[seVolume ade393 1.0 0.3]
+[se ad231]
+[fadein black 0.5]
+[wait fade]
+[se ad299]
+[seVolume ad299 0 0]
+[seVolume ad299 1.0 0.3]
+
+[wt 0.5]
+[se ad227]
+[wt 1.0]
+
+[seStop ad299 1.5]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout L 0.1]
+[charaFadein M 0.1 150,-620]
+[wt 0.5]
+
+[charaMove M 50,-620 4.0]
+[se ad231]
+[fadein black 0.5]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout M 0.1]
+[charaFadein N 0.1 -460,-200]
+[wt 0.5]
+
+[charaMove N -535,-230 3.0]
+[charaMoveScale N 1.8 3.0]
+[se ad231]
+[fadein black 0.5]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout N 0.1]
+[scene 172500]
+[cameraMove 0.1 0,20 1.15]
+[wt 1.0]
+
+[cameraMove 4.0 0,0 1.01]
+[fadein black 2.0]
+[seStop ade393 4.0]
+[wait fade]
+
+[wt 3.0]
+
+[bgm BGM_MAP_97 0.1]
+
+？1：あ[line 3]、あ[line 3]
+
+？！
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+みんな死んで[line 3]死んで、る？
+[k]
+
+＠マシュ
+な、ぜ……？[r]さっきまで、あんなに、熱気に溢れていたのに[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaSet A 1098257900 1 マシュ]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠カドック
+ありえない！　どんな宝具であろうと、これだけの規模、[r]これだけの範囲に[#及:およ]ぶ破壊を一瞬で行うのは不可能だ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaPut U 0,-200]
+[charaPut T 1]
+
+＠テスカトリポカ
+そう無茶な話じゃない。[r]少しばかり先の未来と、現在を入れ替えただけだ。
+[k]
+
+＠テスカトリポカ
+黒いテスカトリポカは万象を操作する全能神だ。[r]ああ、何もかも作れる、という権能じゃない。
+[k]
+
+＠テスカトリポカ
+『そのルールの中で起きうる事であれば、[r]　自在に引き寄せられる』という権能でね。
+[k]
+
+＠テスカトリポカ
+[#未来に起きる事であれば]、[r][#その順番を入れ替えられる]。
+[k]
+
+＠テスカトリポカ
+この光景は何日か後のミクトランの現実だ。
+[k]
+
+＠テスカトリポカ
+オマエたち、21世紀の人間だろ？[r]ならゲームくらい[#嗜:たしな]んでるよな？
+[k]
+
+＠テスカトリポカ
+ようは『滅亡の体験版』だ。[r]いずれ味わうものだが、一足先に楽しんでくれ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut T 2500,2500]
+[charaPut U 2500,2500]
+
+[charaTalk A]
+[charaFace A 20]
+[charaFadein A 0.1 1]
+
+＠マシュ
+これが……未来？[r]何日か後の、ミクトラン……なのですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet A 8001400 1 マシュ]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+[charaPut U 0,-200]
+[charaPut T 1]
+
+＠テスカトリポカ
+ああ。オセロトルは死に絶える。[r]ディノスは絶滅する。世界は気にせず回り続ける。
+[k]
+
+＠テスカトリポカ
+いつも通り。いつも通りの光景だ。[r]そうだろう、ククルカン？
+[k]
+
+＠テスカトリポカ
+オレたちにとっちゃ、[r]この手のリセットは朝飯のようなもんだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut T 2500,2500]
+[charaPut U 2500,2500]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠ククルカン
+[line 6]。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[charaPut U 0,-200]
+[charaPut T 1]
+
+＠テスカトリポカ
+とはいえ、だ。さすがに喰い飽きたんで、[r]たまには豪勢な夕食も喰いたくなる。
+[k]
+
+＠テスカトリポカ
+今回はその機会に恵まれた。[r]オレひとりで味わうにはあまりにも勿体ない。
+[k]
+
+[charaFaceFade D 3 0.2]
+
+＠テスカトリポカ
+オマエたちにも見せてやろう。
+[k]
+
+＠テスカトリポカ
+クリプター、デイビット・ゼム・ヴォイド。[r]『異星の神』も予想しなかった、この料理人の腕前をな。
+[k]
+
+[messageOff]
+[charaDepth O 7]
+[charaDepth K 8]
+[charaDepth P 9]
+[charaScale K 1.2]
+
+[se ade393]
+[seVolume ade393 0 0]
+[se ad293]
+[seVolume ad293 0 0]
+[se ad14]
+[seVolume ad14 0 0]
+[seVolume ade393 1.0 1.0]
+[seVolume ad293 1.0 1.0]
+[seVolume ad14 1.0 1.0]
+[charaFadein O 1.0 0,-200]
+[charaMove O 50,-350 5.5]
+[charaShake O 0.03 1 1 5.5]
+[wt 1.5]
+
+[scene 172600]
+[charaFadeout L 0.1]
+[charaFadeout D 0.1]
+[charaPut T 2500,2500]
+[charaPut U 2500,2500]
+[wt 2.5]
+
+[seStop ad293 2.0]
+[seStop ad14 2.0]
+[charaFadeout O 1.5]
+[wt 2.0]
+
+＠テスカトリポカ
+まずオマエたちが死ぬ。
+[k]
+
+[messageOff]
+[seStop ade393 4.0]
+[charaFadein K 1.5 50,-250]
+[charaMove K -50,-250 20.0]
+[wt 2.5]
+
+＠テスカトリポカ
+もちろんミクトランも消える。
+[k]
+
+[messageOff]
+[charaFadein P 1.5 0,-300]
+[charaMoveScale P 1.01 25.0]
+[charaMove P 0,-200 25.0]
+[wt 2.5]
+[charaFadeout K 0.1]
+
+＠テスカトリポカ
+そしてこの星が終わる。
+[k]
+
+＠テスカトリポカ
+ソレは汎人類史では[#まだ]目覚めない筈の怪物。
+[k]
+
+＠テスカトリポカ
+もっとも完成されたこの異聞帯でのみ[r]生き続けた星喰らい。
+[k]
+
+＠テスカトリポカ
+ソレは地底世界を蹂躙し、地上に這い上がり、[r]南極に到達し、オマエたちの希望を打ち砕く。
+[k]
+
+＠テスカトリポカ
+カルデアの基地は無に帰すだろう。[r]天球は喰われるだろう。
+[k]
+
+＠テスカトリポカ
+ソレは惑星上に自らの巣を拡げていき、[r]サイクルなどせず、この天体にトドメを刺す。
+[k]
+
+[messageOff]
+[se ad949]
+[seVolume ad949 0 0.8]
+[fadeout white 2.0]
+[bgm BGM_MAP_97 2.0 0.5]
+[wait fade]
+
+[charaFadeout P 0.1]
+[scene 170503]
+[wt 0.5]
+
+[bgm BGM_MAP_97 1.5 1.0]
+[fadein white 1.5]
+[wait fade]
+
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaPut U 0,-200]
+[charaPut T 1]
+
+＠テスカトリポカ
+これが未来だ。[r]今のところ確定している、な。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut T 2500,2500]
+[charaPut U 2500,2500]
+
+[charaSet G 1098124340 1 デイビット]
+
+[se ad311]
+[seVolume ad311 0 0]
+[seVolume ad311 0.5 1.0]
+[wt 1.5]
+
+[charaTalk depthOn]
+[seStop ad311 0.4]
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠デイビット
+そう。[r][#ＯＲＴ:オ　ル　ト]によって、この星は終わりを迎える。
+[k]
+
+？1：デイビット……！
+？2：（あれが……[#ＯＲＴ:オ　ル　ト]……）
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠カドック
+多少、いかれてるとは思ってたけどな。[r]ここまでとは思わなかったぜ、デイビット。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠デイビット
+三人とも生きていたか。未来の前借りとはいえ、[r][#地球:ほ　し]が終わる[#瞬間:と　き]に対峙するとは、数奇な運命だ。
+[k]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……これが貴方の目的なのですか、デイビットさん。
+[k]
+
+＠マシュ
+キリシュタリアさんは『異星の神』の思惑に逆らい、[r]空想樹を使って人類の進化を目指しました。
+[k]
+
+＠マシュ
+でも貴方は……完全に、人類を滅ぼそうとしている。[r]それは……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+？1：人類史を消そうとする『異星の神』と変わらない
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 29]
+[charaFadein C 0.1 1]
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 1.0]
+
+[charaFace G 7]
+
+＠デイビット
+一つ、訂正しておく。
+[k]
+
+＠デイビット
+オレは『異星の神』には[#与:くみ]していない。[r]自分の意志と判断でここにいる。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠カドック
+ああ、そんなのおまえを知っていれば[r]言われなくても分かる！　今更だ！
+[k]
+
+＠カドック
+でも、だから何だ！？
+[k]
+
+＠カドック
+『異星の神』側じゃないから、[r]敵ではないって言いたいのか！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+＠デイビット
+いや。どう捉えてもオレは人類の敵だ。[r]『[#異星の神]』[#とは違う]。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+『異星の神』とは違う……？[r]『異星の神』は人類の脅威、ではない、と……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+＠デイビット
+…………。
+[k]
+
+＠デイビット
+クリプターとしての役割を遂行する。[r]すべてが空洞になる前に、この惑星を破壊する。
+[k]
+
+[messageOff]
+[se ad297]
+[seVolume ad297 0 0.7]
+[fowardEffect bit_talk_rubble_smoke]
+[wt 1.0]
+
+[shake 0.03 2 2 2.0]
+[se ad296]
+[seVolume ad296 0 0]
+[seVolume ad296 1.0 0.7]
+[wt 0.5]
+
+[se ad913]
+[wt 1.0]
+
+[shake 0.05 4 4 3.0]
+[seStop ad296 1.0]
+[seStop ad297 1.5]
+[charaFadeout G 0.1]
+[wt 3.7]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠カドック
+くそ、アイツ下に落ちたぞ！？[r]言いたい事だけ言って消えやがった……！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[se ade393]
+[seVolume ade393 0 0]
+[seVolume ade393 0.5 1.0]
+[se ad14]
+[seVolume ad14 0 0]
+[seVolume ad14 0.5 1.0]
+[shake 0.02 3 3 0]
+[wt 1.5]
+
+
+[seVolume ad14 1.0 0.6]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+！　シバから最大限の危険観測です！[r]敵性生物[line 3]いえ、致死的運命、接近！
+[k]
+
+＠マシュ
+っ[line 3]こんな間近に[line 3][r]もう逃げられない[line 3]
+[k]
+
+＠マシュ
+来ます[line 3][#ＯＲＴ:オ　ル　ト]です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 32]
+[charaFadein C 0.1 1]
+
+＠Ｕ－オルガマリー
+…………。
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ade393 0.4]
+[seStop ad14 0.4]
+[bgmStop BGM_MAP_97 0.4]
+[wait fade]
+[shakeStop]
+[soundStopAll]
+[end]
+

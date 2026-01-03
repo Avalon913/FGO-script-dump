@@ -1,0 +1,399 @@
+
+
+＄94-13-66-20-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 2053000 1 ツタンカーメン]
+[charaSet B 2020000 1 イシュタル]
+[charaSet C 1098305900 1 ナウクラテー]
+[charaSet D 1098257310 1 ダ・ヴィンチ]
+[charaSet E 1098305800 1 ダイダロス]
+
+[imageSet M back10000 1 1]
+[charaScale M 1.3]
+
+[sceneSet O 232500 1]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用]
+
+[charaPut S 2000,2500]
+[charaEffect S bit_talk_10_LowLevel]
+[charaPut T 2000,2500]
+[charaEffect T bit_sepia01_depth_fs]
+[charaPut U 2000,2500]
+[charaEffect U bit_talk_noise_gr]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 231600]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+
+[wt 0.2]
+
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth V 5]
+
+
+[se ad1045]
+[charaPut V 1]
+[charaEffect V bit_talk_ttn_spell]
+[wt 2.1]
+
+＠ツタンカーメン
+……得たり。彼の記憶を幻像に変換して届けまする。[r]ご覧下さりませ、マスターどの。
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1188]
+[cueSeVolume 22_ad1188 0 0]
+[blur lens 0.6 4 1]
+[cueSeVolume 22_ad1188 0.4 0.7]
+[wt 1.5]
+
+[se ade410]
+[wipeout uzumaki 1.0 1.0]
+[cueSeStop 22_ad1188 1.0]
+[wait wipe]
+
+[blurOff lens 0.1]
+[charaFadeout A 0.1]
+[charaPut V 2000,2500]
+
+[scene 10000]
+[wt 0.1]
+
+[wipein uzumaki 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 232500]
+
+[charaDepth M 2]
+[charaDepth B 3]
+[charaDepth E 4]
+[charaDepth C 5]
+[charaDepth T 8]
+[charaDepth U 9]
+
+[charaPut M 1]
+[charaFadeTime M 0.1 0.6]
+
+[charaPut T 1]
+[wt 1.2]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.4 1]
+[wt 0.6]
+
+[bgm BGM_MAP_57 0.1]
+
+＠イシュタル
+女神の姿を拝したからには、[r]せいぜい貢いで[line 3]
+[k]
+
+[charaFace B 16]
+＠イシュタル
+ってちょっと、何よこの弱っちい霊基！？[r]は？　特異点のルール？　『記述』で？　この私を？
+[k]
+
+
+[messageOff]
+[se ad437]
+[wt 0.05]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[se ad31]
+[charaPut U 1]
+[wt 0.9]
+
+[se ad437]
+[wt 0.05]
+[fadeout white 0.1]
+[wait fade]
+
+[charaDepth O 1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace B 10]
+[charaFadeinFSL E 0 0]
+[charaPutFSR B 2]
+[charaPut U 2000,2500]
+[seStop ad31 0.1]
+
+[charaScale O 1.2]
+[charaFadein O 0 -100,-260]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.6]
+
+[cueSe SE_24 24_ade1097 0.25]
+[seStop 24_ade1097 0.8]
+[charaFaceFade E 2 0.1]
+[wt 0.4]
+[charaFaceFade E 0 0.1]
+[wt 0.4]
+[cueSe SE_24 24_ade1097 0.25]
+[seStop 24_ade1097 0.8]
+[charaFaceFade E 2 0.1]
+[wt 0.4]
+[charaFaceFade E 0 0.1]
+[wt 0.4]
+[cueSe SE_24 24_ade1097 0.25]
+[seStop 24_ade1097 0.8]
+[charaFaceFade E 2 0.1]
+[wt 0.4]
+[charaFaceFade E 0 0.1]
+[wt 0.4]
+
+
+＠イシュタル
+……ダイダロスですって？[r]光るのやめなさい、口はどうしたのよ口は。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMoveEase E 0,0 0.6 easeOutSine]
+[charaMoveEaseFSR B 512,0 0.6 easeOutSine]
+[charaMoveEase O 100,-260 0.6 easeOutSine]
+[charaFadeout B 0.3]
+[wt 0.7]
+
+[cueSe SE_23 23_ade831]
+[seStop 23_ade831 1.2]
+[wt 0.1]
+[charaMoveEase E -250,-225 1.0 easeOutCubic]
+[wt 0.8]
+
+[se ad896]
+[seVolume ad896 0 0.7]
+[charaPut C 1]
+[charaDepth E 6]
+[charaDepth C 5]
+[charaFace C 3]
+[charaSpecialEffect C appearance 3 2.4]
+[charaMove E -250,150 2.4]
+[wt 3.4]
+
+[se ad691]
+[se ad904 0.7]
+[seStop ad904 1.8]
+[charaMoveEase E 0,750 0.4 easeOutExpo]
+[wt 1.0]
+
+[charaMoveEase E 0,-20 0.4 easeOutExpo]
+[wt 0.1]
+[charaMoveEase C 0,-20 0.3 easeOutCubic]
+[se ad672 0.7]
+[charaShake C 0.03 1 1 0.15]
+[wt 1.2]
+
+[charaMove E 0,0 0.7]
+[charaMove C 0,0 0.7]
+[wt 0.7]
+[charaCrossFade C 1098306000 27 0.4]
+[wait charaCrossFade C]
+[charaFadeout E 0.4]
+
+
+＠ナウクラテー
+[#僭越:せんえつ]ながら[#私:わたくし]から。[#主:あるじ]は超絶名工。[wt 1.0][charaFace C 0][r]腕だけあればよいと、他は捨ててしまわれたのです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠イシュタル
+……バカじゃないの。自分のカタチまで捨てて、[r]よく正気を保ててるわね。ん、まさか正気じゃない？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+
+
+[se ad905]
+[wt 0.05]
+[charaFace C 19]
+[wt 0.25]
+[charaFace C 20]
+[wt 0.25]
+[charaFace C 19]
+[wt 0.25]
+[charaFace C 20]
+[wt 0.25]
+[charaFace C 19]
+[wt 0.25]
+[charaFace C 20]
+[wt 0.5]
+[charaFaceFade C 18 0.1]
+
+＠ナウクラテー
+[#主:あるじ]はこう仰せです。[r]そんなことより、[#発注をしてほしい]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠イシュタル
+は？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ナウクラテー
+[#主:あるじ]は……聖杯を求めています。
+[k]
+
+＠ナウクラテー
+しかし[#主:あるじ]は魔術も神秘も超絶不得手。[r]聖杯なるものをどう作るか、とっかかりがないのが現状。
+[k]
+
+＠ナウクラテー
+そもそも[#主:あるじ]は発注を受けて形にするタイプの名工。[r][#イメージさえいただければ]、形にするのは超簡単。
+[k]
+
+[charaFace C 9]
+＠ナウクラテー
+ゆえに、[#聖杯鋳造装置]のアイデアと発注がほしい。[r]そういう次第です。わかったか。超絶最強美神様。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠イシュタル
+……たぶん敬語を間違って覚えてると思うけど……[r]ふむ、なるほど、聖杯鋳造……そういうことなら……
+[k]
+
+[charaFace B 1]
+＠イシュタル
+……ひらめいた！
+[k]
+
+＠イシュタル
+あれ創ればいいじゃない。あれ！[r]『パーシパエーの牝牛』！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 1.0]
+[bgmStop BGM_MAP_57 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout O 0.1]
+[charaPut M 2000,2500]
+[charaPut T 2000,2500]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout uzumaki 0.1 1.0]
+[wait wipe]
+
+[scene 231600]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[wipein uzumaki 1.0 1.0]
+[wait wipe]
+[wt 0.6]
+
+[bgm BGM_EVENT_141 0.1]
+
+？1：イシュタルが召喚された時の記憶だ
+？2：でも、何の話だか……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaPut S 1]
+[charaTalk D]
+[charaFace D 23]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+こっちでも確認したけど、確かに、奇妙な話だ。
+[k]
+
+＠ダ・ヴィンチ
+普通、聖杯があって、特異点ができ、英霊が[#喚:よ]ばれる。[r]なのにどうやらこのケースでは逆らしい。
+[k]
+
+[charaFace D 34]
+＠ダ・ヴィンチ
+なぜか先にダイダロスがいて、聖杯を必要とした。[r]だから聖杯を鋳造しようとして、イシュタルを招いた。
+[k]
+
+＠ダ・ヴィンチ
+そしてイシュタルは奇妙な提案をした。[r]『パーシパエーの牝牛』？　聖杯と何の関係がある……？
+[k]
+
+[charaFace D 0]
+＠ダ・ヴィンチ
+謎を解くには、次の記憶をひもとく必要がありそうだ。[r]引き続き、ラビリンス攻略を頼むよ！
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_141 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

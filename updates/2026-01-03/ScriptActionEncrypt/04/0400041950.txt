@@ -1,0 +1,392 @@
+
+
+
+
+＄04-00-04-19-5-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098307100 1 白い礼服の少女]
+[charaSet B 23006000 1 ＢＢドバイ]
+[charaSet C 1098299700 1 ＢＢドバイ_1B]
+
+[charaSet D 1098307100 1 白い礼服の少女（演出用）]
+[charaSet E 23006000 1 ＢＢドバイ（演出用）]
+[charaSet F 1098299700 1 ＢＢドバイ_1B（演出用）]
+
+[sceneSet O 221600 1]
+[sceneSet P 221600 1]
+[sceneSet Q 225420 1]
+
+[charaSet S 98115000 1 エフェクト用1]
+[charaSet T 98115000 1 エフェクト用2]
+
+[cameraMove 0 0,0 1.01]
+
+
+[pictureFrameTop cut063_cinema]
+
+[scene 221600]
+
+
+[subCameraOn 1]
+[charaLayer S sub #A]
+[charaLayer Q sub #A]
+
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth Q 2]
+[charaDepth S 3]
+
+[charaPut S 1]
+[charaEffect S bit_talk_security_depth]
+[charaScale Q 1.1]
+[charaFadein Q 0 -10,-260]
+[charaMove Q 20,-260 5.0]
+
+[subRenderFadein #A 0 0,0]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 2.0]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 0,-50]
+[wt 0.5]
+
+[subRenderFadeout #A 0.8]
+[wt 0.8]
+
+[charaPut S 2000,2500]
+[charaEffectDestroy S bit_talk_security_depth]
+[charaFadeout Q 0]
+[wt 0.15]
+[subCameraOff]
+[charaLayer S normal]
+[charaLayer Q normal]
+[charaScale S 1.0]
+[charaScale Q 1.0]
+
+
+[bgm BGM_EVENT_54 0.1]
+
+[charaTalk on]
+＠白い礼服の少女
+ＢＢドバイ、たいへんだ！[r]月の海が一面のお風呂に！
+[k]
+
+＠白い礼服の少女
+なんかボタン、押し間違えた！？[r]浴槽にある制御パネルとか！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+
+＠ＢＢドバイ
+あのですね。神の如き存在である私が[r]そんなミスを犯す筈がないでしょう。
+[k]
+
+＠ＢＢドバイ
+たしかに都市部のインフラは私の管轄ですが、[r]あの海は管轄外です。
+[k]
+
+[charaFace B 3]
+＠ＢＢドバイ
+あれはエリアＡの新しいムーンキャンサー、[r]殺生院キアラによる環境改造ですよ。
+[k]
+
+＠ＢＢドバイ
+本来ならあんな暴挙は許可しませんが、[r]彼女は特別なので見て見ぬフリ、というヤツです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠白い礼服の少女
+そうなんだ。どのあたりが特別なの？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 0,-50]
+＠C：ＢＢドバイ
+それはもちろん、彼女の滅亡案が最高だからです。
+[k]
+
+＠C：ＢＢドバイ
+殺生院キアラにとって人間とは自分ひとりだけ。[r]他の人間は彼女にとって虫と同じかそれ以下の[#塵芥:ちりあくた]。
+[k]
+
+＠C：ＢＢドバイ
+気持ち良く、確実に、一匹残らず人類を使用して滅ぼし、[r]文明は停止する。
+[k]
+
+[charaFace C 14]
+＠C：ＢＢドバイ
+それはバッドエンドですが、[r][#地球人類には責のない滅亡です]。
+[k]
+
+＠C：ＢＢドバイ
+この世界はたまたま、あの女が本願[#成就:じょうじゅ]してしまう[r]世界だった、という事なので。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠白い礼服の少女
+……そっか。[r]その場合、悪いのはキアラさんだけになる。
+[k]
+
+＠白い礼服の少女
+ムーン・ドバイの人たちは全員被害者だ。[r]誰の責任でもないまま終わりを迎える。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠C：ＢＢドバイ
+そう。そしてそれを行うだけの能力が[r]今の殺生院キアラにはあります。
+[k]
+
+＠C：ＢＢドバイ
+いわば彼女は『人類滅亡ラスボス決定戦』の[r]最有力候補にして、私の切り札なのです。
+[k]
+
+[charaFace C 5]
+＠C：ＢＢドバイ
+誰にも彼女は止められない。
+[k]
+
+＠C：ＢＢドバイ
+ムーン・ドバイ市民たちの支持率はすぐに[r]70パーセントを超えるでしょう。
+[k]
+
+＠C：ＢＢドバイ
+それでこの選挙は終わりです。[r]人類は悪夢のような滅亡を迎えておしまい。
+[k]
+
+＠C：ＢＢドバイ
+私はやっと人類から解放されて自由になれる。[r]これで、そうこれで[line 3]！
+[k]
+
+[charaFace C 4]
+＠C：ＢＢドバイ
+うふふ。うふふふふ。[r]あーーーはっはっはっはっは！
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth O 3]
+[charaDepth D 4]
+[charaDepth P 5]
+[charaDepth E 6]
+
+[charaScale D 1.2]
+[charaScale O 1.2]
+[charaTalk C,D]
+[charaFace D 7]
+[charaFadein D 0.6 250,-50]
+[charaFadein O 0.6 -100,-260]
+[wt 0.6]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+＠D：白い礼服の少女
+大笑いしてるけど大丈夫？[r]キアラさんの[#獲物:えもの]の中にはあなたも[#含:ふく]まれてるよ。
+[k]
+
+＠D：白い礼服の少女
+あのひと、[#見境:みさかい]なしだから。[r]私だって危ない。ちゃんと首輪とかつけてる？
+[k]
+
+[messageOff]
+[charaScale E 1.2]
+[charaScale P 1.2]
+[charaTalk E,D]
+[charaFace E 3]
+[charaFadein E 0.6 -250,-50]
+[charaFadein P 0.6 100,-260]
+[wt 0.6]
+
+[charaFace D 8]
+[wt 0.2]
+
+＠E：ＢＢドバイ
+……まあ、その時はその時です。[r]そもそも勝手に出てきた人ですからね、アレ。
+[k]
+
+＠E：ＢＢドバイ
+[#焚:た]きつける事はできても制御はできません。[r]いざとなったら太陽にでも射出します。
+[k]
+
+[messageOff]
+[charaTalk E,D]
+[charaFadeout E 0.6]
+[charaFadeout P 0.6]
+[wt 0.8]
+
+＠D：白い礼服の少女
+ふーん。まあそこはいいや。[r]計画の範疇なら意見はないよ。
+[k]
+
+＠D：白い礼服の少女
+でも……
+[k]
+
+[messageOff]
+[charaTalk E,D]
+[charaFace E 16]
+[charaFadein E 0.6 -250,-50]
+[charaFadein P 0.6 100,-260]
+[wt 0.6]
+
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+
+[charaFadeout D 0.1]
+[charaFadeout O 0.1]
+[wt 0.2]
+
+＠E：ＢＢドバイ
+なんです。[r]囚人のクセに、私の方針に不満があると？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_54 1.5]
+
+[charaTalk E,A]
+[charaFadeout E 0.6]
+[charaFadeout P 0.6]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk A]
+＠白い礼服の少女
+あるでしょ、そりゃあ！[r]だってあっちの私、すごく楽しそうじゃない！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0,-50]
+＠ＢＢドバイ
+はい？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_55 0.1 0.7]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+＠白い礼服の少女
+カルデアのマスターと一緒にいろんなところを[r]走り回って、冒険して、果ては殺生院[#大浴場:だいよくじょう]とか！
+[k]
+
+＠白い礼服の少女
+私だけ不公平だ！[r]こっちもなんかないの、ＢＢ！
+[k]
+
+＠白い礼服の少女
+何でもできる月の支配者なんでしょ！？[r]もっとすごい事、できるはずだ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 0,-50]
+＠C：ＢＢドバイ
+……私に言われても……[r]別に、貴方の保護者でもないのですし……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+＠白い礼服の少女
+じゃあドバイ・フレームに行きたい。[r]あんな面白いカタチのビルなら、中はもっと面白いはず。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 0,-50]
+＠C：ＢＢドバイ
+ないですね。[r]上から見ればドバイ・フレームもただのビルですよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+＠白い礼服の少女
+すごい[#強者:きょうしゃ]発言……[r]こんな上から意見、聞いた事ない……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 0,-50]
+＠C：ＢＢドバイ
+いいから黙って見ていてください！[r]ここが『人類滅亡ラスボス決定戦』の大一番、
+[k]
+
+＠C：ＢＢドバイ
+ムーン・ドバイにおける最後の戦いです！[r]お茶請けはマカロンでいいですね！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+[wt 1.5]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_55 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

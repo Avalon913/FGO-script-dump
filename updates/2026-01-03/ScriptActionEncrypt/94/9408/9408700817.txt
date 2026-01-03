@@ -1,0 +1,122 @@
+
+
+＄94-08-70-08-1-7
+[enableFullScreen]
+[warBoardTalkScreen]
+
+
+[charaSet A 2050000 1 プトレマイオス]
+[charaSet B 2050002 1 プトレマイオス]
+[charaSet C 1098257810 1 マシュ]
+[charaSet D 1098123010 1 ムニエル]
+[charaSet E 1098257310 1 ダ・ヴィンチ]
+
+[charaSet F 98115000 1 エフェクト用]
+
+[charaPut F 1200,1200]
+[charaEffect F bit_talk_10_LowLevel]
+
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth E 2]
+[charaDepth D 2]
+[charaDepth F 3]
+
+
+
+[warEffectPiece B flash 0,0,6]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 250,0]
+＠B：プトレマイオス
+うむ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[warEffectOff B]
+
+
+[warEffectPiece A flash 0,0,5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 250,0]
+＠A：プトレマイオス
+着いたな、マスター！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[warEffectOff A]
+
+
+[charaPut F 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠マシュ
+マスター、ポイントに到着！[r]座標固定！　魔術アンカー設置！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ムニエル
+霊脈内部の汚染測定終了！[r]呪的乖離、潜伏儀礼係数、ともに４％内……
+[k]
+
+[charaFace D 2]
+＠ムニエル
+いや、すまない、６％にズレた！[r]こっちで修正する！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut F 2000,2500]
+
+[se ad172]
+[wt 1.4]
+[seStop ad172 0.2]
+[wt 0.4]
+
+[charaPut F 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠マシュ
+修正データ適用！[r]礼装と術式の同調認証……いけます！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+＠ダ・ヴィンチ
+よし、礼装適応術式、[r]『アルカナの泉』、起動！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut F 2000,2500]
+[cueSe SE_21 21_ad1110]
+[cueSeVolume 21_ad1110 0 0.7]
+[wt 0.1]
+
+[se adm20]
+[seVolume adm20 0 0.7]
+[flashin once 1.3 1.3 FFFFFFFA FFFFFF00]
+[wt 1.2]
+[cueSeStop 21_ad1110 1.2]
+[wt 2.3]
+
+
+[end]

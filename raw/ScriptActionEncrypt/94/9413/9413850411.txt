@@ -1,0 +1,1993 @@
+
+
+＄94-13-85-04-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098310300 1 ロウヒ]
+[charaSet B 1098310700 1 マシュ]
+[charaSet C 1098310400 1 アビゲイル]
+[charaSet D 5047902 1 大黒天１号]
+[charaSet E 5047912 1 大黒天２号]
+[charaSet F 10008001 1 シトナイ]
+[masterSet G 1098310500 1098310600 1]
+
+[charaSet H 1098310900 1 トントゥ赤]
+[charaSet I 1098310920 1 トントゥ紫]
+[charaSet J 1098310910 1 トントゥ青]
+[charaSet K 1098310930 1 トントゥ黄]
+[charaSet L 1098310940 1 トントゥ_灰1]
+[charaSet M 1098310950 1 トントゥ_灰2]
+[charaSet N 1098310960 1 トントゥ_灰3]
+[charaSet O 1098310970 1 トントゥ_灰4]
+[charaSet P 1098310980 1 トントゥ_灰5]
+[charaSet Q 1098310990 1 トントゥ_灰6]
+
+[charaSet R 1098310300 1 ロウヒ_演出用]
+[charaScale R 1.2]
+
+[sceneSet S 10000 1]
+[charaScale S 1.1]
+
+[sceneSet T 235900 1]
+[charaScale T 1.3]
+[sceneSet U 235900 1]
+[charaScale U 1.2]
+
+[sceneSet V 235800 1 1]
+[charaScale V 1.2]
+
+[sceneSet W 203900 1]
+[charaScale W 1.2]
+[sceneSet X 53802 1]
+[charaScale X 1.2]
+[sceneSet Y 180600 1]
+[charaScale Y 1.2]
+
+[scene 236700]
+[charaTalk A]
+[charaFace A 16]
+[charaScale A 1.0]
+[charaFadein A 0.1 0,-60]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_36 0.1]
+
+＠ロウヒ
+ワイナミョイネンたちは、[r]まんまとポホヨラからサンポを盗みおおせた。
+[k]
+
+[charaFace A 11]
+
+＠ロウヒ
+ロウヒもまた兵を引き連れて必死に追いかけた。[r]けれど……。
+[k]
+
+[charaFace A 17]
+
+＠ロウヒ
+戦いのなかで、[r]サンポは砕けてバラバラになった。
+[k]
+
+[charaFace A 18]
+
+＠ロウヒ
+無数の破片になって[r][#海:アハトラ]に沈んでしまったんだぁよ……。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_MAP_36 0.5 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaScale A 1.0]
+
+[charaTalk depthOff]
+[charaDepth S 1]
+[charaDepth B 2]
+[charaDepth T 2]
+[charaDepth C 3]
+
+[charaTalk off]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[charaPut S 0,-200]
+[charaFadeTime S 0.1 0.5]
+
+
+[scene 235900]
+
+[wt 1.0]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_MAP_36 0.5 1.0]
+[wait wipe]
+
+＠マシュ
+（ここまでは、ほぼカレワラ叙事詩で[r]　伝えられている通りのお話ですね……）
+[k]
+
+[charaFace B 11]
+
+＠マシュ
+（賢者詩人ワイナミョイネンに対しては[r]　ロウヒさんの[#偏見:バイアス]が強烈に加わっていそうですが……）
+[k]
+
+[charaFace B 1]
+
+＠マシュ
+（その後、砕けたサンポの破片は[r]　波に打ち寄せられカレワの地を[#潤:うるお]したはず）
+[k]
+
+[bgm BGM_MAP_36 1.5 0.6]
+[messageOff]
+[charaScale C 1.2]
+[charaFace C 1]
+[charaFadein C 0.6 330,0]
+[charaFadein T 0.6 50,-250]
+[charaMoveEase C 280,0 0.6 easeInOutSine]
+[charaMoveEase T 0,-250 0.6 easeInOutSine]
+[wt 0.8]
+[charaFadeout B 0.1]
+[charaFadeout S 0.1]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+
+＠アビゲイル
+あの、よろしいかしらロウヒさん？
+[k]
+
+[charaFace C 25]
+
+＠アビゲイル
+イルマリネンさんに、もう一度サンポを[r]作っていただくわけにはいかなかったのかしら……？
+[k]
+
+[messageOff]
+[subCameraOn 1]
+[subCameraFilter #A maskEdge cut359_mask15 3 0,0,0,255 0]
+[charaLayer U sub #A]
+[charaLayer R sub #A]
+[charaDepth U 1]
+[charaDepth R 2]
+[charaFadein U 0.1 300,50]
+[charaFace R 8]
+[charaFadein R 0.1 -70,250]
+[wt 0.1]
+
+[bgmStop BGM_MAP_36 1.0]
+[subRenderFadein #A 0.3 -170,-200]
+[subRenderMoveEase #A -200,-250 0.3 easeOutSine]
+[wt 0.3]
+[charaTalk on]
+[charaTalk R]
+
+＠R：ロウヒ
+[f large]ハ[messageShake 0.05 2 3 0.3]アア！？？
+[k]
+
+[charaTalk C]
+[charaFace C 16]
+[charaShake C 0.05 2 3 0.3]
+
+＠アビゲイル
+[f large]（びくっ）
+[k]
+
+[charaTalk R]
+[charaFace R 23]
+
+＠R：ロウヒ
+おっ、おお、ごめん……。[r]大声出してすまなかった。
+[k]
+
+[charaFaceFade R 11 0.3]
+[bgm BGM_EVENT_156 0.1]
+[charaFace C 0]
+
+＠R：ロウヒ
+でもね、知っておくんだよ。[r]魔術でも呪術でも、これは常識なんだよ。
+[k]
+
+[charaFace C 11]
+[charaFace R 34]
+
+＠R：ロウヒ
+まったく同じものを、完璧に再現する、[r]というのは魔術の世界ではとんでもなく難しいんだよ。
+[k]
+
+＠R：ロウヒ
+それが神域の芸術ならなおさらだ。
+[k]
+
+[charaFace R 35]
+
+＠R：ロウヒ
+最初の火、最初の息吹、最初の土、最初の雪[line 3][r]だからこそ価値があり意味があり、神秘がこもる。
+[k]
+
+[charaFace A 11]
+[charaFace R 11]
+
+＠R：ロウヒ
+わかるだろ？　アビゲイル。
+[k]
+
+[charaFace C 11]
+
+＠R：ロウヒ
+もしイルマリネンに、もう一度サンポを作り直させても[r]同じものにはならない。
+[k]
+
+[charaFace R 1]
+[charaFace A 1]
+[charaFace C 0]
+
+＠R：ロウヒ
+決してうまくはいかないのさ。[r]どこか[#歪:ゆが]んで、[#色褪:いろあ]せてしまうんだぁよ。
+[k]
+
+[messageOff]
+[charaTalk A,R]
+[charaFadeout C 0.6]
+[charaFadeout T 0.6]
+[subRenderFadeout #A 0.6]
+[bgmStop BGM_EVENT_156 2.0]
+[wt 0.6]
+[charaFadeout U 0.1]
+[charaFadeout R 0.1]
+[wt 0.1]
+[charaScale C 1.0]
+[charaLayer U normal]
+[charaLayer R normal]
+[wt 0.2]
+
+[charaFace A 18]
+
+＠ロウヒ
+………………ハァ……。
+[k]
+
+[charaFace A 16]
+
+＠ロウヒ
+ただね……一つだけ……。
+[k]
+
+[charaFace A 17]
+
+＠ロウヒ
+いや……そんなことは……。
+[k]
+
+[bgm BGM_EVENT_25 0.1]
+？1：もしや隠された手段が？　それ、聞きたいです
+？！
+
+
+[se ad512]
+[seVolume ad512 0 0]
+[seVolume ad512 1.0 0.3]
+
+[charaFace A 12]
+
+＠ロウヒ
+むう、ずうずうしいぞ？
+[k]
+
+[charaFace A 1]
+
+＠ロウヒ
+……語ってやってもいいけどね。[r]なんの参考にもならないよ。夢物語さ。
+[k]
+
+[charaFace A 16]
+
+＠ロウヒ
+……ほら、折れた剣がもう一度鍛え直されて[r]もっと強力な剣となる伝説、聞いたことあるだろ？
+[k]
+
+[charaFace A 11]
+
+＠ロウヒ
+盲目の[#翁:おきな]に殺されたレンミンカイネンは、[r]切り刻まれた身体を母親が縫い合わせて[#蘇:よみがえ]った。[seStop ad512 2.0]
+[k]
+
+[bgmStop BGM_EVENT_25 2.0]
+[charaFace A 34]
+
+＠ロウヒ
+そう。完全な[#新生]は不可能でも、[r][#復活と再生]という道が残されているならば[line 3]。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[subCameraOn 2]
+[subCameraFilter #A maskEdge cut359_mask11 3 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask12 3 0,0,0,255 0]
+
+[charaLayer T sub #A]
+[charaLayer E sub #A]
+[charaLayer C sub #A]
+[charaLayer G sub #A]
+[charaLayer U sub #B]
+[charaLayer D sub #B]
+[charaLayer F sub #B]
+[charaLayer B sub #B]
+
+[charaScale T 1.2]
+[charaScale E 1.1]
+[charaScale C 1.1]
+[charaScale G 0.9]
+[charaScale U 1.2]
+[charaScale D 1.1]
+[charaScale F 1.1]
+[charaScale B 0.9]
+
+[charaDepth T 1]
+[charaDepth E 2]
+[charaDepth C 3]
+[charaDepth B 4]
+[charaDepth U 1]
+[charaDepth D 2]
+[charaDepth F 3]
+[charaDepth G 4]
+
+[charaFace E 6]
+[charaFadein E 0.1 320,285]
+[charaFadein T 0.1 -100,-50]
+
+[charaFace D 6]
+[charaFadein D 0.1 -350,280]
+[charaFadein U 0.1 100,-50]
+
+[pictureFrame cut063_cinema]
+[effect bit_sepia01_depth_fs 0,0]
+
+[charaDepth V 1]
+[charaDepth W 2]
+[charaDepth X 3]
+[charaDepth Y 4]
+
+[charaFadein V 0.1 0,-300]
+[charaMove V 0,-200 50.0]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_129 0.1]
+
+
+
+
+＠ロウヒ
+サンポは砕けて海に沈んでしまった。[r][#海:アハトラ]の[#水底:みなそこ]はロウヒの[#鷲:わし]爪には届かない場所だ。
+[k]
+
+＠ロウヒ
+カレワの地にたどりついた破片も[r]民の生きる[#糧:かて]となり、もはや切り離せない。
+[k]
+
+[charaFadein W 0.6 -50,-300]
+[charaMove W 50,-300 50.0]
+
+
+
+＠ロウヒ
+けれど……[r]もし、[#すべての海が凍りついたなら][line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadeinFSSideR #A 0.3 -160,-220]
+[subRenderMoveFSSideR #A -130,-250 0.3]
+[subRenderFadeinFSSideL #B 0.3 160,-220]
+[subRenderMoveFSSideL #B 130,-250 0.3]
+[wt 1.3]
+
+[charaFadein X 0.6 50,-300]
+[charaMove X -50,-300 50.0]
+
+[charaTalk on]
+[charaTalk A]
+
+＠ロウヒ
+もし、[#すべての陸が干上がって][r][#誰もいなくなってしまったのなら][line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 27]
+[charaFace F 5]
+[charaFadein C 0.1 540,240]
+[charaFadein F 0.1 -540,240]
+[wt 1.1]
+
+
+
+[charaTalk on]
+[charaTalk A]
+
+[charaFadein Y 0.6 0,-250]
+[charaMove Y 0,-350 50.0]
+
+＠ロウヒ
+そこには主人を失ったサンポの[r][#破片:かけら]だけが残る。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 11]
+[charaFace B 11]
+[charaFadein G 0.1 520,300]
+[charaFadein B 0.1 -540,300]
+[wt 1.1]
+
+[charaTalk on]
+[charaTalk A]
+
+＠ロウヒ
+ロウヒとサンポとの絆をたどって、[r]破片をかき集められる。
+[k]
+
+[messageOff]
+
+
+[fadeout black 1.0]
+[wait fade]
+
+[pictureFrame]
+[effectDestroy bit_sepia01_depth_fs]
+
+[charaFadeout V 0.1]
+[charaFadeout W 0.1]
+[charaFadeout X 0.1]
+[charaFadeout Y 0.1]
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[wt 0.1]
+
+[charaLayer T normal]
+[charaLayer E normal]
+[charaLayer C normal]
+[charaLayer G normal]
+[charaLayer U normal]
+[charaLayer D normal]
+[charaLayer F normal]
+[charaLayer B normal]
+[charaFadeout T 0.1]
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[charaFadeout U 0.1]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[subCameraOff]
+[wt 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 34]
+[charaFadein A 0.4 1]
+[wt 0.6]
+
+＠ロウヒ
+そうすればもう鍛え直す必要すらないさ。
+[k]
+
+＠ロウヒ
+魔力さえ与えれば、[r]サンポはまた目覚めるだろう。
+[k]
+
+[charaFace A 35]
+
+＠ロウヒ
+再び我がポホヨラのために、[r]無限の富を生み出してくれるだろう[line 3]。
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_129 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaScale T 1.3]
+[charaScale E 1.0]
+[charaScale C 1.0]
+[charaScale G 1.0]
+[charaScale U 1.2]
+[charaScale D 1.0]
+[charaScale F 1.0]
+[charaScale B 1.0]
+
+
+[scene 235900]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[wt 1.0]
+[se ad512]
+[seVolume ad512 0 0]
+[seVolume ad512 2.0 0.3]
+[wt 2.0]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……語り終えたロウヒさんは[r]お仕事に戻っていかれましたね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠シトナイ
+なるほどね。話が見えてきたわ。[r]全部じゃないけれど。
+[k]
+
+[charaFace F 4]
+
+＠シトナイ
+失われてしまったサンポ……。[r]消えたカムイの黄金……。ちょっと似てるのかな。
+[k]
+
+[charaTalk depthOff]
+[charaDepth S 1]
+[charaDepth F 2]
+[charaPut S 0,-200]
+[charaFadeTime S 0.2 0.5]
+
+＠シトナイ
+（だから、[#狂戦士:バーサーカー]……[r]　肝心なものが見えていないのね……ロウヒ……）
+[k]
+
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[seStop ad512 0.7]
+[wait wipe]
+
+[charaFadeout S 0.1]
+[charaFadeout F 0.1]
+
+[cameraMove 0 0,0 1.01]
+
+[charaFadein T 0.1 -10,-150]
+[charaMove T 10,-150 5.0]
+
+[wt 1.0]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+
+[bgm BGM_XMAS_2016 0.1]
+[wt 1.5]
+
+＠アビゲイル
+マスターー！
+[k]
+
+[messageOff]
+[charaFadeout T 0.6]
+
+
+[se ad586]
+[seVolume ad586 0 0.2]
+[seVolume ad586 1.0 0.5]
+[wt 0.6]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 1]
+[wt 0.4]
+[seStop ad586 0.1]
+
+＠アビゲイル
+考え事のお散歩中、失礼いたします。
+[k]
+
+[charaFace C 3]
+
+＠アビゲイル
+トントゥさんたちに紛れてしまって[r]見つけるのに苦心したわ？　うふふっ。
+[k]
+
+[charaFace C 25]
+
+＠アビゲイル
+あら？　お世話役の大黒天さんたちも[r]ご一緒だったのでは……？
+[k]
+
+？1：なんか突然具合が悪くなったみたいで
+？2：どこか行っちゃった
+？！
+
+[charaFace C 17]
+
+＠アビゲイル
+もうっ……。
+[k]
+
+[charaFace C 2]
+
+＠アビゲイル
+シトナイさんや、マシュさんが、[r]そろそろ出発しませんかって。
+[k]
+
+＠アビゲイル
+カルデアとの連絡も取りたいのですって。
+[k]
+
+？1：うん、そうだね
+？2：行かなきゃね
+？！
+
+[messageOff]
+[cueSe SE_21 21_ad1065]
+[cueSeVolume 21_ad1065 0 0]
+[cueSeVolume 21_ad1065 1.0 1.0]
+
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_XMAS_2016 2.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[charaSet D 98115000 1 エフェクト用1]
+[charaSet E 98115000 1 エフェクト用2]
+[charaSet F 98115000 1 エフェクト用3]
+[charaSet R 98115000 1 エフェクト用4]
+[sceneSet V 10000 1]
+[charaScale V 1.1]
+[sceneSet W 235900 1]
+[charaScale W 1.2]
+[sceneSet X 235900 1]
+[charaScale X 1.2]
+[sceneSet Y 235901 1]
+[charaScale Y 1.2]
+[charaSet Z 1098310400 1 アビゲイル_演出用]
+[charaScale Z 1.2]
+
+[scene 235901]
+
+[charaTalk depthOff]
+[charaDepth S 1]
+[charaDepth C 2]
+[charaDepth Y 3]
+[charaDepth V 4]
+[charaDepth Z 5]
+
+[charaPut S 0,0]
+[charaFadeTime S 0 0.3]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaFadein Y 0.1 -5,-150]
+[charaPut V 0,0]
+[charaFadeTime V 0 0.3]
+
+[charaMove Y 5,-150 3.0]
+
+[wt 1.0]
+[cueSe SE_21 21_ade674]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+
+[cueSeStop 21_ad1065 1.0]
+[wt 2.0]
+[charaFadeout V 0.6]
+[charaFadeout Y 0.6]
+[wt 1.0]
+
+？1：アビーはさ、ロウヒに教えたほうがいいと思う？
+？2：もしアビーだったら、知りたいと思う？
+？！
+
+[charaTalk C]
+[charaFace C 11]
+
+＠アビゲイル
+もし私が、ロウヒさんの立場でしたら……？
+[k]
+
+[charaFace C 12]
+
+＠アビゲイル
+………………私は……。
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaFace Z 12]
+[charaFadein Z 0.6 50,0]
+[charaPut V 0,0]
+[charaFadeTime V 0.6 0.3]
+[charaFadein Y 0.6 50,-300]
+[charaMove Z -50,0 50.0]
+[charaMove Y -50,-300 50.0]
+[wt 1.0]
+
+[charaFaceFade Z 17 0.3]
+[bgm BGM_TOU_1 0.1]
+
+＠アビゲイル
+……私は知りたいとは思いません。
+[k]
+
+[charaFace Z 12]
+
+＠アビゲイル
+もうこの星には、プレゼントを渡す子供たちも[r]その輝く顔を見て微笑む家族も、誰もいないだなんて。
+[k]
+
+[charaFace Z 11]
+
+＠アビゲイル
+残酷すぎます。[r]あのひとはどれだけ悲しむことでしょう。
+[k]
+
+[charaFaceFade Z 17 0.3]
+
+＠アビゲイル
+ロウヒさんはこのポホヨラで、トントゥさんや[r]仲間たちと不自由なく暮らしていたんです。
+[k]
+
+[charaFace C 11]
+[charaFace Z 11]
+
+＠アビゲイル
+私たちはこの星をまた元通りに、にぎやかな場所に[r]するために長い旅をしているのでしょう？
+[k]
+
+[charaFace Z 0]
+
+＠アビゲイル
+真実を教えるのは、せめてそれからでも[r]よろしいのじゃないかしら？
+[k]
+
+？1：うーん……
+？2：本当にそうなのかな……
+？！
+
+[messageOff]
+
+？1：（サンポ復活を願う引き金にもなってしまう）
+？2：（そうしたら、どうなるかわからない……）
+？！
+
+[messageOff]
+[charaFadeout Z 0.6]
+[charaFadeout V 0.6]
+[charaFadeout Y 0.6]
+[wt 1.0]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 17]
+
+＠アビゲイル
+ごめんなさい、マスター。[r]こんな頼りない答えで。
+[k]
+
+？1：いいん[&だ:だよ]アビー。ありがとう
+？2：せめてこの状況を招いた原因だけでも[line 3]
+？！
+
+[messageOff]
+
+
+[charaFadeout S 0.6]
+[bgmStop BGM_TOU_1 0.6]
+[se ad512]
+[seVolume ad512 0 0]
+[seVolume ad512 1.0 0.3]
+[wt 1.5]
+
+[charaFaceFade C 25 0.3]
+[wt 1.0]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[scene 235900]
+
+[charaTalk off]
+
+[subCameraOn 4]
+[subCameraFilter #A mask cut359_mask22]
+[charaLayer T sub #A]
+[charaLayer D sub #A]
+[charaLayer E sub #A]
+[charaLayer F sub #A]
+[charaLayer H sub #A]
+[charaLayer I sub #A]
+[charaLayer J sub #A]
+[charaLayer K sub #A]
+[charaDepth T 1]
+[charaDepth D 3]
+[charaDepth E 2]
+[charaDepth F 4]
+[charaDepth H 5]
+[charaDepth I 5]
+[charaDepth J 5]
+[charaDepth K 5]
+[subCameraFilter #B maskEdge cut359_mask08 3 255,255,255,255 0]
+[subRenderScale #B 1.1]
+[charaLayer U sub #B]
+[charaLayer L sub #B]
+[charaLayer M sub #B]
+[charaLayer N sub #B]
+[charaDepth U 1]
+[charaDepth L 3]
+[charaDepth M 3]
+[charaDepth N 3]
+[subCameraFilter #C maskEdge cut359_mask07 3 255,255,255,255 0]
+[subRenderScale #C 1.1]
+[charaLayer W sub #C]
+[charaDepth W 1]
+[subCameraFilter #D maskEdge cut359_mask07 3 255,255,255,255 0]
+[subRenderScale #D 1.1]
+[charaLayer X sub #D]
+[charaDepth X 1]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+[subRenderDepth #D 4]
+
+[charaFadein T 0.1 0,0]
+[charaFace H 0]
+[charaFadein H 0.1 360,100]
+[charaFace I 0]
+[charaFadein I 0.1 120,100]
+[charaFace J 0]
+[charaFadein J 0.1 -120,100]
+[charaFace K 0]
+[charaFadein K 0.1 -360,100]
+[charaPut D 0,-400]
+[charaEffect D bit_talk_smoke]
+[charaEffect E bit_talk_tonttu_jump 200,200]
+[wt 0.3]
+[charaEffect F bit_talk_tonttu_jump -200,230]
+[wt 0.7]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[wt 1.0]
+[subRenderScale #A 1.2]
+[subRenderFadein #A 0.6 -100,-200]
+[subRenderMove #A 100,-200 4.0]
+[bgm BGM_EVENT_94 0.1]
+[charaMove T -120,0 4.0]
+[charaMoveReturnEase H 360,150 1.0 easeOutCubic easeInCubic]
+[wt 0.3]
+[charaMoveReturnEase I 120,150 1.0 easeOutCubic easeInCubic]
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaDepth R 1]
+[charaDepth C 2]
+[charaFace C 27]
+[charaFadein C 0.1 1]
+[charaPut R 0,-400]
+[charaEffect R bit_talk_fog_side]
+
+[charaMoveReturnEase J -120,150 1.0 easeOutCubic easeInCubic]
+[wt 0.3]
+[charaMoveReturnEase K -360,150 1.0 easeOutCubic easeInCubic]
+[wt 0.3]
+[charaMoveReturnEase H 360,150 1.0 easeOutCubic easeInCubic]
+[wt 0.3]
+[charaMoveReturnEase I 120,150 1.0 easeOutCubic easeInCubic]
+[wt 0.3]
+[charaMoveReturnEase J -120,150 1.0 easeOutCubic easeInCubic]
+[wt 0.3]
+[charaMoveReturnEase K -360,150 1.0 easeOutCubic easeInCubic]
+[wt 0.3]
+[charaMoveReturnEase H 360,150 1.0 easeOutCubic easeInCubic]
+[wt 0.3]
+[charaMoveReturnEase I 120,150 1.0 easeOutCubic easeInCubic]
+[wt 0.3]
+[charaMoveReturnEase J -120,150 1.0 easeOutCubic easeInCubic]
+[wt 0.3]
+[charaMoveReturnEase K -360,150 1.0 easeOutCubic easeInCubic]
+[subRenderFadeout #A 0.6]
+[wt 0.6]
+
+[charaEffectDestroy D]
+[charaEffectDestroy E]
+[charaEffectDestroy F]
+
+[subCameraFilter maskEdge cut359_mask08 3 255,255,255,255 0]
+[subRenderScale #A 1.1]
+[charaLayer O sub #A]
+[charaLayer P sub #A]
+[charaLayer Q sub #A]
+[charaDepth T 1]
+[charaDepth D 2]
+[charaDepth H 3]
+[charaDepth O 3]
+[charaDepth P 3]
+[charaDepth Q 3]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaPut D 0,0]
+[charaPut H -330,300]
+[charaFace O 0]
+[charaFadein O 0.1 -110,300]
+[charaFace P 0]
+[charaFadein P 0.1 110,300]
+[charaFace Q 0]
+[charaFadein Q 0.1 330,300]
+
+[wt 0.3]
+[charaLayer E normal]
+[charaLayer F normal]
+
+[charaTalk on]
+[charaTalk C]
+
+＠アビゲイル
+まあ。[r]トントゥさんたちの大集団が……！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaEffect D bit_talk_smoke 0,0 H]
+[charaDepth E 2]
+[charaPut E 0,0]
+[charaEffect E bit_talk_42_depth 0,0 H]
+[subRenderFadein #A 0.3 30,-290]
+[subRenderMove #A 0,-290 0.3]
+[se ad73]
+[wt 0.4]
+[subRenderMove #A -60,-290 10.0]
+
+＠トントゥたち
+モイ！　つぎの仕事場へ！
+[k]
+
+[messageOff]
+[subRenderMove #A -90,-290 0.3]
+[subRenderFadeout #A 0.3]
+[charaEffectDestroy D]
+[charaEffectStop E]
+[wt 0.2]
+
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaLayer D sub #B]
+[charaLayer I sub #B]
+[charaDepth D 2]
+[charaDepth I 3]
+[charaFadein U 0.1 0,0]
+[charaPut D 0,0]
+[charaEffect D bit_talk_smoke]
+[charaFace I 0]
+[charaFadein I 0.1 330,310]
+[charaFace L 0]
+[charaFadein L 0.1 110,300]
+[charaFace M 0]
+[charaFadein M 0.1 -110,300]
+[charaFace N 0]
+[charaFadein N 0.1 -330,300]
+[wt 0.1]
+
+[charaEffect E bit_talk_42_depth]
+[subRenderFadein #B 0.3 -30,-290]
+[subRenderMove #B 0,-290 0.3]
+[se ad73]
+[wt 0.4]
+[subRenderMove #B 60,-290 10.0]
+
+＠トントゥたち
+左からしつれい！
+[k]
+
+[messageOff]
+[subRenderMove #B 90,-290 0.3]
+[subRenderFadeout #B 0.3]
+[charaEffectDestroy D]
+[charaEffectStop E]
+[wt 0.2]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaLayer D sub #C]
+[charaLayer J sub #C]
+[charaLayer O sub #C]
+[charaLayer P sub #C]
+[charaLayer Q sub #C]
+[charaDepth D 2]
+[charaDepth J 3]
+[charaDepth O 3]
+[charaDepth P 3]
+[charaDepth Q 3]
+[charaFadein W 0.1 0,0]
+[charaPut D 0,0]
+[charaEffect D bit_talk_smoke 0,0 V]
+[charaFace J 0]
+[charaFadein J 0.1 70,130]
+[charaFace O 0]
+[charaFadein O 0.1 -100,230]
+[charaFace P 0]
+[charaFadein P 0.1 50,330]
+[charaFace Q 0]
+[charaFadein Q 0.1 -100,420]
+[wt 0.1]
+
+[charaEffect E bit_talk_43h_fs 0,0 V]
+[subRenderFadein #C 0.3 0,-180]
+[subRenderMove #C 0,-210 0.3]
+[se ad73]
+[wt 0.4]
+[subRenderMove #C 0,-270 10.0]
+
+＠トントゥたち
+上からしつれい！
+[k]
+
+[messageOff]
+[subRenderMove #C 0,-300 0.3]
+[subRenderFadeout #C 0.3]
+[charaEffectDestroy D]
+[charaEffectStop E]
+[wt 0.2]
+
+[charaLayer D sub #D]
+[charaLayer K sub #D]
+[charaLayer L sub #D]
+[charaLayer M sub #D]
+[charaLayer N sub #D]
+[charaDepth D 2]
+[charaDepth K 3]
+[charaDepth L 3]
+[charaDepth M 3]
+[charaDepth N 3]
+[charaFadein X 0.1 0,0]
+[charaPut D 0,0]
+[charaEffect D bit_talk_smoke 0,0 F]
+[charaFace K 0]
+[charaFadein K 0.1 0,390]
+[charaFace L 0]
+[charaFadein L 0.1 -130,320]
+[charaFace M 0]
+[charaFadein M 0.1 120,280]
+[charaFace N 0]
+[charaFadein N 0.1 0,180]
+[wt 0.1]
+
+[charaEffect E bit_talk_43h_fs]
+[subRenderFadein #D 0.3 0,-320]
+[subRenderMove #D 0,-290 0.3]
+[se ad73]
+[wt 0.4]
+[subRenderMove #D 0,-230 10.0]
+
+＠トントゥたち
+下からもしつれい！
+[k]
+
+[messageOff]
+[se ad348]
+[subRenderMove #D 0,-200 0.3]
+[subRenderFadeout #D 0.3]
+[charaEffectDestroy D]
+[charaEffectDestroy E]
+[wt 0.3]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout T 0.1]
+[charaFadeout U 0.1]
+[charaFadeout W 0.1]
+[charaFadeout X 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[wt 0.1]
+
+[charaSet H 1098311000 1 トントゥ？]
+[charaFilter H silhouette 00000080]
+[charaSet I 1098311000 1 トントゥ？_演出用]
+[charaSet J 1098311000 1 トントゥ？_演出用]
+[charaFilter J silhouette 00000080]
+[imageSet K cut622_piece 1]
+[imageSet L cut623_calendar03 1]
+[imageSet M cut623_calendar04 1]
+[imageSet N cut625_sweets 1]
+[charaSet O 1098310300 1 ロウヒ_演出用]
+[charaScale O 1.2]
+[charaSet P 1098310700 1 マシュ_演出用]
+
+
+[charaDepth H 2]
+[charaDepth R 3]
+[charaFace H 2]
+[charaFadein H 0.4 1]
+
+[seStop ad512 2.0]
+[bgmStop BGM_EVENT_94 2.0]
+[charaEffectStop R]
+[wt 3.5]
+
+
+[subCameraFilter #A maskEdge cut359_mask06 3 0,0,0,255 0]
+[charaLayer T sub #A]
+[charaLayer I sub #A]
+[charaDepth T 1]
+[charaDepth I 2]
+[charaScale I 1.5]
+[charaFadein T 0.1 0,0]
+[charaFadein I 0.1 0,160]
+[wt 0.1]
+
+[subRenderFadein #A 0.5 -100,-300]
+[subRenderMoveEase #A 0,-300 0.5 easeInOutSine]
+[wt 0.5]
+
+[charaFace H 2]
+[charaFace I 2]
+[charaMoveReturn H 0,5 0.5]
+[charaMoveReturn I 0,165 0.5]
+[se ad78]
+
+＠トントゥ？
+[f large]モイ！
+[k]
+
+[charaFace H 3]
+[charaFace I 3]
+
+＠トントゥ？
+モイモイモイっと。[r]あー、いそがしいそがしー。
+[k]
+
+[charaFace H 4]
+[charaFace I 4]
+
+＠トントゥ？
+昼寝の暇もありゃしない。[r]とんだブラック職場だナー。
+[k]
+
+？1：？　だれ？？
+？！
+
+[messageOff]
+
+[subRenderFadeout #A 0.5]
+[subRenderMoveEase #A 100,-300 0.5 easeInOutSine]
+[wt 0.5]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaLayer I normal]
+[wt 0.1]
+
+[charaDepth H 1]
+[charaDepth U 2]
+[charaDepth I 3]
+[charaDepth J 4]
+
+[charaScale I 1.25]
+[charaScale J 1.25]
+
+[charaLayer U normal]
+[charaFace J 3]
+[charaFadein J 0.6 0,0]
+[charaFadein U 0.6 0,-300]
+[wt 1.0]
+[charaFace I 3]
+[charaFadein I 0.8 1]
+[wt 1.0]
+[charaFadeout J 0.6]
+[wt 0.5]
+
+[charaFadeout H 0.1]
+[charaFilter H normal]
+[charaDepth C 1]
+[charaFace C 27]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_145 0.1]
+
+＠トントゥ？
+Ｙｏー！　じゃなくてモーイ！[r]Ｈｅｙ！　モーイ！
+[k]
+
+[messageOff]
+[charaFadeout I 0.6]
+[charaFadeout U 0.6]
+[wt 1.0]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk C]
+
+＠アビゲイル
+ず、ずいぶん大きな[r]トントゥさんでいらっしゃるのね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠トントゥ？
+んー？　それ差別かー？[r]よくないナー！
+[k]
+
+[messageOff]
+
+[subCameraFilter #A maskEdge cut359_mask02 3 0,0,0,255 0]
+[charaLayer G sub #A]
+[charaLayer I sub #A]
+[charaDepth G 2]
+[charaDepth I 2]
+[charaFace G 5]
+[charaFadein G 0.1 250,300]
+[charaFace I 4]
+[charaScale I 1.4]
+[charaFadein I 0.1 -250,280]
+[wt 0.1]
+
+[charaTalk off]
+[subRenderFadein #A 0.3 100,-300]
+[subRenderMoveEase #A 0,-300 0.3 easeInOutSine]
+[wt 1.3]
+
+[charaCrossFade H 1098311030 4 0.2]
+[charaCrossFade I 1098311030 4 0.2]
+[wait charaCrossFade I]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk I]
+
+＠I：トントゥ？
+そっちだって[r]めちゃめちゃ[#中途半端:ちゅうとはんぱ]だろー？
+[k]
+
+＠I：トントゥ？
+『貴様のようなトントゥがいるか！』[r]とかツッコむとブーメランだからナー？
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[subRenderMoveEase #A -100,-300 0.3 easeInOutSine]
+[wt 0.3]
+[charaTalk H]
+[wt 0.2]
+
+＠トントゥ？
+あーそうそう、おまえたちだろ？[r]捜し物してるよそものってのは。
+[k]
+
+[charaCrossFade H 1098311000 4 0.3]
+[wait charaCrossFade H]
+
+＠トントゥ？
+えーと（バッグをごそごそ）。[se ad77][seVolume ad77 0.1 0.4][charaMoveReturn H 0,-5 0.5][wt 0.5][charaMoveReturn H 0,-5 0.5][wt 0.5][seStop ad77 0.1]
+[k]
+
+[charaFace H 2]
+[bgm BGM_EVENT_145 1.0 0.5]
+
+＠トントゥ？
+これだナ。[r]ホイ、あっちで拾ったからあげる。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaSet H 1098311030 1 トントゥ？]
+
+
+[se bas2]
+
+[charaTalk depthOff]
+[charaDepth S 1]
+[charaDepth K 2]
+[charaPut S 1]
+[charaFadeTime S 0.4 0.5]
+[charaFadein K 0.4 0,-200]
+[wt 2.0]
+[charaFadeout S 0.4]
+[charaFadeout K 0.4]
+[wt 0.4]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 27]
+[charaFadein C 0.1 1]
+[bgm BGM_EVENT_145 1.0 1.0]
+
+＠アビゲイル
+“空のかけら”を……！？
+[k]
+
+[charaFace C 25]
+
+＠アビゲイル
+た、助かります。確かに捜していました。[r]でも、それならご自分の手で直接ロウヒさんに[line 3]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠トントゥ？
+やだ、めんどくさい。[r]そっちでロウヒに渡しといて。
+[k]
+
+[charaCrossFade H 1098311000 3 0.3]
+[wait charaCrossFade H]
+
+＠トントゥ？
+[f large]じゃーナ！
+[k]
+
+[bgmStop BGM_EVENT_145 1.0]
+[messageOff]
+
+
+[se ad73]
+[charaEffect H bit_talk_quickmove]
+[charaSpecialEffect H erasureReverse 1 0.3]
+[wt 0.4]
+
+[charaFadeout H 0.3]
+[wt 2.0]
+
+[wt 0.7]
+
+？1：……今の[&:さ]、サーヴァントだよね？
+？！
+
+[charaTalk C]
+[charaFace C 28]
+[charaFadein C 0.1 1]
+[bgm BGM_EVENT_2 0.1]
+
+＠アビゲイル
+ええ。[r]私にも、そうとしか見えませんでした。
+[k]
+
+[charaFace C 11]
+
+＠アビゲイル
+あまりの不審さに[r]唖然となってしまいました。
+[k]
+
+[charaFace C 12]
+
+＠アビゲイル
+一瞬、追いかけなきゃ、[r]……と身構えたのですけれど。
+[k]
+
+＠アビゲイル
+このままマスターをお一人にするのも、[r]“かけら”を持ったまま追うのも、はばかられて……。
+[k]
+
+[charaFace C 23]
+
+＠アビゲイル
+でも念のために[r]ちょっとした仕掛けは施しましたから。
+[k]
+
+[messageOff]
+
+
+[cueSe SE_23 23_ad1304]
+[seVolume 23_ad1304 0 0]
+[seVolume 23_ad1304 0.5 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth S 1]
+[charaDepth D 2]
+[charaDepth L 2]
+[charaDepth E 3]
+[charaDepth M 3]
+[charaDepth N 3]
+[charaDepth F 4]
+[charaDepth R 4]
+
+[charaLayer D normal]
+[charaScale D 0.4]
+[charaPut D 126,-300]
+[charaEffect D bit_talk_light_sphere2]
+[wt 1.5]
+
+[charaFace C 2]
+[bgmStop BGM_EVENT_2 1.5]
+
+＠アビゲイル
+次にあの奇妙な人と再会することがあれば、[r]あらかじめお伝えできると思うわ。
+[k]
+
+？1：うん、上出来！　助かるよ！
+
+
+[messageOff]
+[charaFace C 5]
+[wt 1.5]
+
+？2：……？　アビーちょっと光ってない[&かい:]？
+
+[messageOff]
+
+？！
+
+
+[cameraMoveEase -120,80 2.0 easeInOutSine 1.3]
+
+[charaScale E 0.5]
+[charaPut E 115,-270]
+[charaEffect E bit_talk_cosmic_choco]
+[wt 2.2]
+
+[charaFace C 28]
+
+＠アビゲイル
+あっ……もしかして[r]また新しい“空のかけら”を手にしたから[line 3]？
+[k]
+
+[messageOff]
+[charaScale F 0.2]
+[charaPut F 150,-370]
+[charaEffect F bit_talk_light_particles_scatter_gold]
+[wt 0.3]
+
+[se ad732]
+
+[fadeout white 0.5]
+[seStop 23_ad1304 1.0]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.01]
+[charaFadeout C 0.1]
+[charaEffectDestroy D]
+[charaEffectDestroy E]
+[charaEffectDestroy F]
+
+
+[charaFadein L 0.1 0,-200]
+[charaPut S 1]
+[charaFadeTime S 0.1 0.5]
+
+[wt 2.0]
+
+[fadein white 0.5]
+[wait fade]
+
+[wt 1.0]
+
+
+[cueSe SE_24 24_ad1360]
+[seStop 24_ad1360 0.5]
+[charaFadein M 0.3 0,-200]
+[wt 1.0]
+
+[se ad934]
+[charaPut D -18,-221]
+[charaEffect D bit_talk_blight_01]
+[wt 0.8]
+
+[fadeout white 0.6]
+[wait fade]
+
+[charaPut D 2000,2000]
+[charaEffectDestroy D bit_talk_blight_01]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+
+[charaPut R 0,0]
+[charaEffect R bit_talk_smoke_pon]
+[wt 0.25]
+
+[charaFadein N 0.1 0,-200]
+[se ade121 0.6]
+[se ade415 0.4]
+[seStop ade415 1.5]
+[cueSe SE_24 24_ade968 0.4]
+[seStop 24_ade968 1.0]
+[fadein white 1.0]
+[wait fade]
+
+[wt 2.0]
+
+[charaFadeout N 0.4]
+[charaFadeout S 0.4]
+[wt 0.6]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFadein C 0.1 1]
+[charaFace C 2]
+
+＠アビゲイル
+またお菓子が現れ[line 3][wt 1.0][charaFace C 21][messageShake 0.05 1 2 0.4]こ、今度は液体！？
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+[shake 0.05 2 3 0]
+
+？1：あつッ、あつい熱い、アツい
+？！
+
+[charaMoveScale C 1.05 0.3]
+[se ad7]
+
+＠アビゲイル
+ごめんなさいマスター！[r]そのマグカップ、私が持ちます！
+[k]
+
+[messageOff]
+[cameraMove 0.3 0,0 1.05]
+[wt 0.5]
+[se ad215]
+[seVolume ad215 0 0.4]
+[wt 0.5]
+[shakeStop]
+[cameraMove 0.3 0,0 1.01]
+[wt 0.5]
+
+＠アビゲイル
+あああ危ない、[r]ヤケドなさいませんでした！？
+[k]
+
+？1：ギリセーフ
+？2：身軽で器用で助かった……（雪で冷却中）
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaScale C 1.0]
+
+[se ad586]
+[seVolume ad586 0 0]
+[seVolume ad586 0.8 1.0]
+[wt 0.4]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[seStop ad586 0.6]
+[wt 0.4]
+
+＠マシュ
+[line 3]マスター！[r]こちらにいらっしゃったんですね。
+[k]
+
+＠マシュ
+ロウヒさんからお話がある……とか……[wt 1.2][charaFace B 11][r]あの、何かありましたか？
+[k]
+
+[charaFace B 6]
+
+＠マシュ
+それはもしかして[r]三つ目の“かけら”では……？
+[k]
+
+？1：あ、あとでちゃんと話すね？
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ade674 0 0]
+[cueSeVolume 21_ade674 1.0 1.0]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 30]
+[charaFadein A 0.4 1]
+[wt 0.4]
+[cueSeStop 21_ade674 0.1]
+
+＠ロウヒ
+[%1]！[r]次の探索は、ロウヒも一緒に行くんだぁよ！
+[k]
+
+[charaFace A 3]
+
+＠ロウヒ
+マーケットの守りはしっかり固めたからね。[r]トントゥたちを残していっても大丈夫。
+[k]
+
+[charaFace A 0]
+
+＠ロウヒ
+……と。[r]おや、その手に何を持ってるアビゲイル？
+[k]
+
+[charaFace A 35]
+
+＠ロウヒ
+（すんすん）[charaMoveReturn A 0,-3 0.3][wt 0.3][charaMoveReturn A 0,-3 0.3][wt 0.5][charaFace A 2]……シナモンの香り？[r]ホットワインかい？　甘くていーい香りがするね。
+[k]
+
+[charaFace A 31]
+
+＠ロウヒ
+けれど、おまえにお酒は早くないかい？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠アビゲイル
+お酒ではなくてこれは……。
+[k]
+
+[charaFace C 2]
+
+＠アビゲイル
+嗚呼、わかりました。[r]これは“エッグノッグ”です！
+[k]
+
+[charaFace C 3]
+
+＠アビゲイル
+卵と牛乳、砂糖とシナモンで作った[r]クリスマスの飲み物……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 31]
+[charaFadein A 0.1 1]
+
+＠ロウヒ
+ふうん！　それもクリスマスの飲み物か。[r]そんなものを自分で作ったのかい。
+[k]
+
+[charaFace A 3]
+
+＠ロウヒ
+エッグノッグ。[r]ウン、嗅ぐからに美味しそうなんだぁよ。
+[k]
+
+[charaFace A 5]
+
+＠ロウヒ
+トントゥたちの店にはまだないメニューだ。[r]勉強のためにちょっと味見させてほしいんだよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠アビゲイル
+ええっと……[wt 1.0][charaFace C 9][charaMoveScale C 1.05 0.5][charaMove C 0,10 0.5][se ad78]ど、どうぞ！[wt 0.5]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ロウヒ
+どれ、いただくよ？
+[k]
+
+[messageOff]
+[charaTalk off]
+
+
+[subCameraFilter #A maskEdge cut359_mask11 3 0,0,0,255 0]
+[charaScale G 0.7]
+[charaFace G 11]
+[charaFadein G 0.1 500,250]
+[charaFadein T 0.1 200,-50]
+[subCameraFilter #B maskEdge cut359_mask12 3 0,0,0,255 0]
+[charaLayer U sub #B]
+[charaLayer P sub #B]
+[charaDepth U 1]
+[charaDepth P 2]
+[charaScale P 0.7]
+[charaFace P 11]
+[charaFadein P 0.1 -500,260]
+[charaFadein U 0.1 -200,-50]
+[wt 0.1]
+
+[subRenderFadeinFSSideR #A 0.6 -160,-170]
+[subRenderMoveFSSideR #A -130,-200 0.6]
+
+[subRenderFadeinFSSideL #B 0.6 160,-170]
+[subRenderMoveFSSideL #B 130,-200 0.6]
+[wt 1.5]
+
+[charaTalk on]
+[charaTalk A]
+[charaFaceFade A 35 0.3]
+[charaMoveReturn A 0,5 2.0]
+[cueSe SE_22 22_ade813 0.1 0.8]
+
+＠ロウヒ
+……………………。[wt 0.2][cueSeStop 22_ade813 0.1]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.0]
+[subRenderFadeout #A 0.6]
+[subRenderFadeout #B 0.6]
+[charaFadeout A 0.6]
+[wt 0.6]
+
+[charaFadeout G 0.1]
+[charaFadeout P 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠マシュ
+いかが……ですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 35]
+[charaFadein A 0.1 1]
+
+＠ロウヒ
+うん……。
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaFaceFade A 3 0.3]
+[bgm BGM_XMAS_2016 0.1]
+
+＠ロウヒ
+悪くない。[r]優しくて、ほっとする味なんだぁよ。
+[k]
+
+[charaFace A 2]
+
+＠ロウヒ
+大雪の中の仕事から帰ってきて、この飲み物が[r]出迎えてくれたら、疲れが取れるだろうね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaScale C 1.0]
+[charaFadein C 0.1 1]
+
+＠アビゲイル
+まあ、本当ですか？　よかったです……！
+[k]
+
+？1：今回はうまくいった……？
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠マシュ
+前回の結果がまだ判明していませんが……。[r]ウィツィロポチトリさん……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+？2：サルミアッキ舌の人だしなぁ
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠ロウヒ
+失礼なんだよ[%1]！[r]サルミアッキは飲み物にだってなるんだよ！
+[k]
+
+[charaFace A 12]
+
+？！
+
+＠ロウヒ
+四の五の言ってないで！[wt 0.6][charaMoveScale A 1.05 0.2][charaMove A 0,10 0.2][se ad78][r]おまえたちも味見してみるんだよ！　ニュトユオ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+は、はいっ。[r]サイズ的にちょっと飲みづらいですが。
+[k]
+
+[messageOff]
+[charaMoveReturn B 0,5 2.0]
+[wt 0.4]
+[cueSe SE_22 22_ade812 0.1 0.4]
+[wt 0.3]
+[cueSeStop 22_ade812 0.1]
+[wt 1.5]
+
+[charaFace B 6]
+
+＠マシュ
+……あ、ちゃんと美味しいですね。
+[k]
+
+[charaFace B 3]
+
+＠マシュ
+身構えてしまってごめんなさい、アビーさん。
+[k]
+
+[charaFace B 0]
+
+＠マシュ
+シナモン以外にも[r]いろいろなスパイスが合いそうです。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[cameraMove 1.0 0,-5 1.01]
+[cueSe SE_22 22_ade812 0.1 0.5]
+[wt 1.0]
+[cueSeStop 22_ade812 0.1]
+[cameraMove 1.0 0,0 1.01]
+[seStop adm25 0.3]
+[wt 1.2]
+
+？1：うん。身体があったまる
+？！
+
+[wt 0.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaScale A 1.0]
+[charaFadein A 0.1 1]
+
+＠ロウヒ
+ま……お祭りの店で出すには、[r]ちょぉっと華やかさが足りないか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠アビゲイル
+大人の方でしたら、[r]よくブランデーを加えて[#嗜:たしな]まれます。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ロウヒ
+ヒュヴァ！　それはいい！[r]あとで試してみるんだよ！
+[k]
+
+[charaFace A 30]
+
+＠ロウヒ
+さ、それより今は！[r]次の“空のかけら”捜しに出発するんだぁよ！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_XMAS_2016 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

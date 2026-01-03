@@ -1,0 +1,831 @@
+
+
+
+
+
+＄94-14-72-19-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098336000 1 ジュネス]
+[charaSet B 1098253200 1 大統領]
+[charaSet C 5046001 1 ミス・クレーン]
+
+[sceneSet D 106800 1]
+[charaScale D 1.2]
+
+[sceneSet E 113300 1]
+[charaScale E 1.2]
+
+[charaSet F 98115000 1 エフェクト用1]
+
+[sceneSet G 113300 1]
+[charaScale G 1.1]
+
+
+
+
+
+[charaTalk depthOff]
+
+[scene 106800]
+
+[pictureFrameTop cut063_cinema]
+[charaPut F 1]
+[charaEffect F bit_talk_lens_flare_fs]
+
+[charaFadein D 0.1 -50,-180]
+[charaMove D 20,-250 20.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[bgm BGM_EVENT_38 0.1]
+
+＠
+[line 3]夏の夢を、見た。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 1.5]
+[bgm BGM_EVENT_38 1.5 0.5]
+[wait fade]
+
+[charaPut F 2000,2000]
+[charaEffectDestroy F bit_talk_lens_flare_fs]
+
+[scene 113300]
+
+[charaScale E 1.1]
+[charaScale C 1.1]
+
+[charaDepth G 1]
+[charaDepth A 2]
+[charaDepth E 3]
+[charaDepth C 4]
+
+[charaFadeout D 0.1]
+[charaFadein G 0.1 0,-200]
+[wt 1.0]
+
+[fadein black 1.5]
+[bgm BGM_EVENT_38 1.5 1.0]
+[wait fade]
+
+＠
+目覚めた場所は、カルデア。[r]知っている。
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.7 0,-50]
+[charaFadein E 0.7 0,-240]
+[charaMoveScale C 1.15 25.0]
+[charaMove C 0,-30 25.0]
+[charaMoveScale E 1.15 25.0]
+[charaMove E 0,-240 25.0]
+
+＠
+この人は、ミス・クレーン。[r]知っている。
+[k]
+
+[charaScale A 1.1]
+[charaFace A 0]
+[charaFadein A 0.1 0,-30]
+
+＠
+[#私:夢]を見た人。
+[k]
+
+＠
+懐かしい未練と憧れの糸で、[r]夢うつつのままに、[#私:夏の服]を仕立てた人。
+[k]
+
+＠
+私の[#思い出:過　　 去]は、この人の引き写し。
+[k]
+
+＠
+サーヴァントは夢を見ない。[r]なのに、彼女は夢を見た。存在しない、少女の頃を。
+[k]
+
+＠
+私はただの、思いがこもっただけの服。[r]なのに[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout C 0.7]
+[charaFadeout E 0.7]
+[charaMove A 0,-50 15.0]
+[charaMove G 0,-220 15.0]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+
+＠
+私は、[#この姿:ジ ュ ネ ス]を得た。[r]どこにも存在するはずのない、英霊の姿を。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_38 2.5]
+[charaScale E 1.3]
+[charaFadein E 0.6 60,-220]
+[wt 0.7]
+[charaFadeout G 0.1]
+[charaMove A 0,-70 0.1]
+[charaMove G 0,-220 0.1]
+
+＠
+[line 4]。[line 4]。[r][line 8]！
+[k]
+
+[messageOff]
+[charaScale A 1.0]
+[charaFace A 1]
+[charaFadeout E 0.6]
+[wt 0.7]
+
+＠
+……誰かが、私を[#喚:よ]んでいる。[r]この気配、すごく、好きだ。行かなきゃ。
+[k]
+
+[charaFace A 3]
+
+＠
+行ってきまーす！
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[se adm20]
+[seVolume adm20 0.0 0.0]
+[seVolume adm20 1.0 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+
+[sceneSet D 261700 1]
+[charaScale D 1.2]
+[sceneSet E 261700 1]
+
+[sceneSet G 211301 1]
+
+[charaDepth G 1]
+[charaDepth E 2]
+[charaDepth A 3]
+[charaDepth D 4]
+[charaDepth B 5]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein white 0.5]
+[seStop adm20 1.0]
+[wait fade]
+[wt 0.5]
+
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadein E 0.1 0,-200]
+[scene 261700]
+
+[effect bit_talk_summon_fs 0,0]
+
+[cameraMove 0.1 0,0 1.02]
+[wt 1.0]
+
+[fadein black 1.0]
+[se ad39]
+[seVolume ad39 0.0 0.0]
+[seVolume ad39 1.0 1.0]
+[wait fade]
+[wt 2.0]
+
+[se ad574]
+[seStop ad39 1.5]
+[effectStop bit_talk_summon_fs]
+[wt 2.3]
+
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-30]
+[wt 1.2]
+
+[charaFace A 12]
+[charaMoveEase A 0,-80 0.4 easeOutQuint]
+[charaFadeout A 0.4]
+[wt 0.4]
+[shake 0.04 5 3 0.3]
+[se ad144]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.4 0,-80]
+[se ad999 0 0.8]
+[charaMove A 0,-50 0.4 easeOutSine]
+[wt 0.4]
+[seStop ad999 0.4]
+
+＠ジュネス
+あいたーっ！？[r]あうう、ここは……砂、浜？　[wt 0.5][charaFace A 8]綺麗……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_115 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.4 0,-50]
+[wt 0.4]
+
+＠大統領
+……オマエは何者だ？[r]初めて見るサーヴァントだな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 0,-50]
+
+＠ジュネス
+おおっ！？[wt 1.0][charaFace A 0][r]あ、そっか。[#召喚主:マ  ス  タ  ー]ですね。
+[k]
+
+[se ade385]
+[charaMoveReturn A 0,-55 0.8]
+
+＠ジュネス
+初めまして、私は……。[wt 0.2][seStop ade385 0.2]
+[k]
+
+[charaFace A 7]
+
+＠ジュネス
+名前……私の……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 20]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+
+＠ジュネス
+……そう、ジュネス。[wt 1.0][charaFace A 2][r]私の名前は、[#ジュネス:若　　 　い]・クレーンです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+そうか。私は、偉大にして究極の地球国家元首、[r]Ｕ－オルガマリー。この宇宙で最も強い、唯一の者である。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+
+＠ジュネス
+はい、オッさん。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 0,-50]
+[bgmStop BGM_EVENT_115 1.0]
+
+＠大統領
+ほう、いい反応速度だ。我が名乗りを聞いて即座に[r]反応できる者はそういな[line 3][wt 1.0][charaFace B 15][messageShake 0.05 4 4 0.2]待て、なんと言ったか！[bgm BGM_EVENT_146 0.1]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 0,-50]
+
+＠ジュネス
+す、すみません！[r]愛称で呼ぶと、可愛いかな、と……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+雑！　まるで私がおっさんみたいではないか！[r]私のことは、[#大統領:プレジデント]と呼ぶように！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠ジュネス
+はいっ。[r]わかりました、大統領。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+……私の夏と最も相性が[#好:よ]い者という[r]条件で[#喚:よ]んでみたのだがな。
+[k]
+
+＠大統領
+本当に大丈夫なのだろうか……。[wt 1.5][charaFaceFade B 6 0.15][r]まあよい。
+[k]
+
+[charaFace B 14]
+
+＠大統領
+ともかく、私は大統領だ。[r]そしてオマエは国民第一号にして、大統領補佐官となる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠ジュネス
+補佐官。[r]ふむ。それは一体、なんでしょう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+私に仕え、全力で支える仕事だ。
+[k]
+
+[charaFace B 8]
+
+＠大統領
+無論、支えがなくとも、私は独り立てるがな。[r][#些末:さまつ]な仕事を任せるという意味だ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠ジュネス
+はあ、わかりました。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+ぼんやりした返事ね……まあいいわ。
+[k]
+
+[bgmStop BGM_EVENT_146 1.0]
+
+[charaFace B 18]
+
+＠大統領
+とりあえず、そこに座れ。[r]私の最初の[#大統領声明:マ  ニ  フ  ェ  ス  ト]を聞かせよう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+
+＠ジュネス
+はーい。[wt 0.4][se ad7][charaMove A 0,-70 0.4][r]（正座）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+なにを隠そう、私は、この島を[line 3]
+[k]
+
+[se ade227]
+[effect bit_talk_41_fs 0,75]
+[charaMoveScaleEase B 1.1 0.3 easeOutSine]
+[charaMoveEase B 0,-55 0.3 easeOutSine]
+[charaMoveScaleEase E 1.1 0.3 easeOutSine]
+[charaMoveEase E 0,-250 0.3 easeOutSine]
+[charaFace B 14]
+
+
+＠大統領
+夏にする！[wt 0.5][bgm BGM_BATTLE_23 0.1][charaDepth A 1][charaFace A 0][charaFadein A 0.1 0,-70][r]誰もが憧れ、喜び、ひれ伏す、『完璧な夏』に！
+[k]
+
+[messageOff]
+[charaTalk B,A]
+[charaFace A 9]
+
+[effectDestroy bit_talk_41_fs]
+[charaFadeout B 0.4]
+[charaFadeout E 0.4]
+[wt 0.4]
+[charaDepth A 3]
+
+＠ジュネス
+かんぺきな、なつ。
+[k]
+
+[charaFace A 6]
+
+＠ジュネス
+夏……。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[se ad7]
+[charaFace A 5]
+[charaMove A 0,-50 0.2]
+
+＠ジュネス
+[f large]夏！？[messageShake 0.05 5 5 0.5]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 29]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+わぁっ！？[charaShake B 0.04 4 1 0.3][r]急になんだ！　びっくりするだろう！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad173]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+[charaMoveScaleEase A 1.05 0.4 easeOutQuint]
+[charaMoveEase A 0,-40 0.4 easeOutQuint]
+[wt 0.4]
+[seStop ad173 0.1]
+
+＠ジュネス
+今、胸がときめきました！[r]いいですよね、夏！　ええ、ええ！　大好きです！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad999 0 0.8]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.2 0,-50]
+[charaMoveScaleEase B 0.95 0.2 easeInSine]
+[charaMoveEase B 0,-55 0.2 easeInSine]
+[wt 0.4]
+[seStop ad999 0.4]
+
+＠大統領
+近い近い近い！[r]わかったわかった！
+[k]
+
+[messageOff]
+[charaMoveScale B 1.0 0.4]
+[charaMove B 0,-50 0.4]
+[wt 0.5]
+
+[charaFace B 14]
+
+＠大統領
+ともかく！[r]私はここに、[#ドすごい夏:Tremendous-Summer]を作る。
+[k]
+
+[charaFace B 6]
+
+＠大統領
+そのための道具としてオマエを[#喚:よ]んだ。[r]応じたからには、その力があるのだろう？
+[k]
+
+[charaFace B 19]
+
+＠大統領
+あるはずだ。あると言ってくれ。[r]人材採用の失敗は私の支持率に関わる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+
+＠ジュネス
+そうですね……[wt 0.8][charaFace A 0]私にできることは、まず、お裁縫。[r]それと、家事全般に自信あり。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+家庭的才能は評価するが……。[r]島内を開発し、施設を作るとか、そういうのは？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+[bgmStop BGM_BATTLE_23 1.0]
+
+＠ジュネス
+むむむむむ……。[wt 1.0][charaFace A 2][r]あ、でしたら、このような技はいかがでしょう？
+[k]
+
+[messageOff]
+[se ad476]
+[charaEffect A bit_talk_36]
+[cameraMove 15.0 0,0 1.2]
+
+[wt 1.5]
+[bgm BGM_BATTLE_293 0.1]
+[charaFaceFade A 4 1.5]
+
+＠ジュネス
+まどろみの泡に映る、懐かしき景色を今ここに。[r]たとえありえぬ夢だとしても。
+[k]
+
+[charaFace A 5]
+
+＠ジュネス
+『[#九夏泡影:きゅうかほうよう]・[#鶴睡青春歌:つるのまどろみわかきひのゆめ]』！！
+[k]
+
+[messageOff]
+[seStop ad476 1.0]
+
+[se ad744]
+[fadeout white 0.5]
+[wait fade]
+
+[charaEffectStop A bit_talk_36]
+
+[cameraMove 0.1 0,0 1.02]
+[charaFadeout A 0.1]
+
+[charaScale G 1.1]
+[charaFadein G 0.1 0,-230]
+[wt 1.0]
+
+[charaMoveScaleEase G 1.0 3.5 easeOutSine]
+[charaMoveEase G 0,-200 3.5 easeOutSine]
+[fadein white 1.0]
+[seStop ad744 2.0]
+[wait fade]
+[wt 2.5]
+
+[charaTalk B]
+[charaFace B 29]
+[charaFadein B 0.2 0,-50]
+
+＠大統領
+おおっ！？　これは固有結界か！？[r]ここまで[#殺意:やるき]のない固有結界は見た事がないが！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,-50]
+
+＠ジュネス
+あ、いえ。[r]そんな大それたものではないです。
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ade1006 0 0.4]
+[cueSeStop 24_ade1006 2.5]
+[charaScale E 1.0]
+[charaCutin E cutVer 2.0 1.0]
+[wt 2.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+む？　なぜ元に戻す？[r]もったいつけるな。建物見学くらいさせなさいよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+
+＠ジュネス
+束の間、夢をお見せするだけの宝具なんです。[r]少女がマッチで灯した炎の中に見える夢、的な。
+[k]
+
+[bgmStop BGM_BATTLE_293 2.0]
+[charaFace A 8]
+
+＠ジュネス
+あはは……。[r]がっかりさせちゃいましたかね。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 0,-50]
+[wt 1.5]
+
+＠大統領
+……いや、これは使える。[charaFace B 22][r]むしろうってつけだ。[bgm BGM_BATTLE_242 0.1]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 0,-50]
+
+＠ジュネス
+えっ？　意外な反応……。
+[k]
+
+
+[messageOff]
+[charaScale B 1.2]
+[charaTalk A,B]
+[charaFace B 22]
+[charaFadein B 0.4 30,-50]
+[charaFadein D 0.4 30,-320]
+[charaMoveEase B 0,-50 0.4 easeOutSine]
+[charaMoveEase D 0,-320 0.4 easeOutSine]
+
+＠大統領
+夢を私の力で強化し、盤石たる現実とする。[wt 0.8][charaFace B 8][charaFace A 9][charaFadein A 0.1 0,-50][r]いけるぞ！
+[k]
+
+[charaFace B 0]
+
+＠大統領
+大統領補佐官！[r]その宝具、私のために使うがいい！
+[k]
+
+[messageOff]
+[charaTalk B,A]
+[charaFace A 0]
+[charaFadeout B 0.3]
+[charaFadeout D 0.3]
+[wt 0.3]
+
+[se ad173]
+
+＠ジュネス
+は、[charaMoveReturn A 0,-40 0.4]はいっ！[seStop ad173 0.2]
+[k]
+
+[charaFace A 2]
+
+＠ジュネス
+夢から生まれた雛鶴サーヴァント・ジュネス！[r]あなたの夢を、カタチにします！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0,-50]
+
+＠大統領
+いい返事だ。それでは、島の構想について、[r]たっぷりと話そう。覚悟して聞け。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+
+＠ジュネス
+喜んでー！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_BATTLE_242 2.5 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[wt 0.5]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+＠ジュネス
+[line 3]そうして、私の夏は始まった。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_BATTLE_242 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

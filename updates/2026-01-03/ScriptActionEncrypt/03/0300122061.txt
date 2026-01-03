@@ -1,0 +1,288 @@
+
+
+＄03-00-12-20-6-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1008001 1 ジークフリート]
+[charaSet B 7042000 1 クリームヒルト]
+[charaSet C 1098235000 1 カドック]
+[charaSet D 99502600 1 マシュ]
+[charaSet E 1098123210 1 ゴルドルフ]
+[charaSet F 7013002 1 清姫]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+
+[scene 150900]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_98 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth B 1]
+
+[charaPut S 1]
+[charaEffect S bit_talk_06]
+[charaTalk A]
+[charaFace A 4]
+[charaFace B 4]
+[charaFadein B 0.1 140,0]
+[charaFadein A 0.1 -150,0]
+＠ジークフリート
+……ここまでか……。
+[k]
+
+＠クリームヒルト
+ねえ、本当にいいのかしら……。[r]私……酷い女なのに……。
+[k]
+
+[charaFace A 0]
+
+＠ジークフリート
+君が酷い振る舞いをしたとしても、[r]君が酷い結末を迎える義務はない。
+[k]
+
+[charaFace B 12]
+
+＠クリームヒルト
+[line 3]いえ、充分に酷い結末よ。
+[k]
+
+[charaFace B 0]
+＠クリームヒルト
+だって、私、後悔してる。
+[k]
+
+[charaFace B 2]
+＠クリームヒルト
+私の狂った復讐も、この状況も、[r]何もかも……！
+[k]
+
+[charaFace A 0]
+
+＠ジークフリート
+なら、それが俺と君の罰であり、[#贖:あがな]いだ。
+[k]
+
+[charaFace A 1]
+
+＠ジークフリート
+行こう。[r]俺は君と共に死ねるなら、後悔はない。
+[k]
+
+[charaFace B 1]
+
+＠クリームヒルト
+……そう。[r]なら、手を握って。離さないで。
+[k]
+
+＠クリームヒルト
+落ちて泡のように消えるまで。[r]どうか、どうか[line 3]
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[se ad52]
+[charaSpecialEffect B flashErasure 1 2.0]
+[wt 1.3]
+
+[bgmStop BGM_EVENT_98 2.0]
+[se ad52]
+[charaSpecialEffect A flashErasure 1 2.0]
+[wait charaSpecialEffect A]
+[charaEffectStop S bit_talk_06]
+[wait charaEffect S bit_talk_06]
+[wt 1.5]
+[charaPut S 2000,2000]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠カドック
+終わった……か？
+[k]
+
+？1：まだだよ
+？！
+
+[bgm BGM_MAP_91 0.1]
+[charaFace C 4]
+＠カドック
+そうだな。[r]まだ、最悪のヤツが一騎残ってた。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaEffect S bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠マシュ
+マスター！
+[k]
+
+[charaFace D 7]
+＠マシュ
+こちらの観測結果ですと、[r]聖杯が三つ確保されていますが……！
+[k]
+
+？1：大丈夫！
+？！
+
+[charaFace D 0]
+＠マシュ
+復讐界域のサーヴァントは、[r]既にほぼ大部分が消滅しています。
+[k]
+
+＠マシュ
+一部は残ったまま降伏を選んでいますが……。[r]既に三界域は統一されました。
+[k]
+
+＠マシュ
+速やかに退去、という形になるかと思います。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+うむ、何はともあれよくやった！[r]よくやったが！
+[k]
+
+[charaFace E 7]
+＠ゴルドルフ
+……特異点消滅の気配が、全くないね？
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 1.5]
+[bgmStop BGM_MAP_91 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+[charaPut S 2000,2500]
+[charaEffectStop S bit_talk_10_LowLevel]
+
+[scene 151300]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_116 0.1]
+
+＠清姫
+あら……もう終わりましたのね？
+[k]
+
+？1：復讐界域は終わったよ
+？！
+
+[charaFace F 4]
+＠清姫
+……そう。
+[k]
+
+＠清姫
+三つの聖杯が集まり、[r][#叛逆:はんぎゃく]するサーヴァントたちも消えていく。
+[k]
+
+[messageOff]
+[charaPut S 1]
+[charaEffect S bit_talk_06]
+[wt 2.0]
+
+＠清姫
+贅沢で、不思議なものです。
+[k]
+
+＠清姫
+疎ましいとすら感じていた、あの醜く身勝手な争いと[r]それに興じていた者たちが[line 3]
+[k]
+
+＠清姫
+消えてしまっただけで、[r]こんなに寂しくなるなんて。
+[k]
+
+[charaFace F 0]
+＠清姫
+わたくしもこれで、失礼いたします。[r]ああ、最後に[line 3]
+[k]
+
+？1：うん？
+？！
+
+[charaFace F 1]
+＠清姫
+わたくし、あなたが安珍様だと思うのです。
+[k]
+
+？1：違うんじゃないかな……
+
+[charaFace F 3]
+＠清姫
+いいですよ。[r]わたくしはそう確信していますから。
+[k]
+
+？2：ちょっと分からない
+
+[charaFace F 3]
+＠清姫
+自分のことほど、[r]分からないものですからね。
+[k]
+
+＠清姫
+大丈夫です。[r]わたくしの観察眼を信じてくださいまし。
+[k]
+
+？！
+
+[charaFace F 1]
+＠清姫
+それではお先に失礼します。[r]どうか、善き日々をお過ごしくださいませ。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[se ad52]
+[charaSpecialEffect F flashErasure 1 2.0]
+[wait charaSpecialEffect F]
+[charaEffectStop S bit_talk_06]
+[wait charaEffect S bit_talk_06]
+[wt 1.5]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_116 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

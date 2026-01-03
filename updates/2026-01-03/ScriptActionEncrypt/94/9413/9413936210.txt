@@ -1,0 +1,386 @@
+
+＄94-13-93-62-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1010000 1 エリザベート]
+[charaSet B 4001000 1 メドゥーサ]
+[charaSet C 5043000 1 アスクレピオス]
+[charaSet D 3057000 1 ビショーネ]
+
+[charaSet E 1098257810 1 マシュ]
+[charaSet F 1098257310 1 ダ・ヴィンチ]
+
+[ifClear 60139301]
+[charaSet G 1098316400 1 チビーネ]
+[flag color_r true]
+
+[ifClear 60139302]
+[charaSet G 1098316500 1 チビーネ]
+[flag color_b true]
+
+[ifClear 60139303]
+[charaSet G 1098316900 1 チビーネ]
+[flag color_g true]
+
+[else]
+[charaSet G 1098316400 1 チビーネ]
+[flag color_r true]
+
+[endIf]
+
+[charaSet H 5038000 1 ？？？]
+[charaFilter H silhouette 000000FF]
+
+[charaSet I 1010000 1 エリザベート2]
+[charaSet J 4001000 1 メドゥーサ2]
+[charaSet K 5043000 1 アスクレピオス2]
+[charaSet L 3057000 1 ビショーネ2]
+[charaScale L 1.3]
+
+[sceneSet M 187800 1]
+[charaScale M 1.2]
+
+[sceneSet N 187800 1]
+[charaScale N 1.4]
+
+[sceneSet O 187800 1]
+[charaScale O 1.2]
+
+[charaSet Z 98115000 1 通信エフェクト用]
+[charaPut Z 2000,2000]
+[charaEffect Z bit_talk_10_LowLevel]
+
+
+[subCameraOn 1]
+[charaLayer I sub #A]
+[charaLayer J sub #A]
+[charaLayer K sub #A]
+[charaLayer M sub #A]
+
+[charaScale I 1.2]
+[charaScale J 1.2]
+[charaScale K 1.2]
+[charaScale M 1.2]
+
+[charaTalk depthOff]
+[charaDepth D 2]
+[charaDepth I 3]
+[charaDepth J 3]
+[charaDepth K 3]
+[charaDepth M 2]
+[charaDepth O 7]
+[charaDepth A 5]
+
+[subCameraFilter #A maskEdge cut359_mask09 4 255,255,255,255 0]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 -80,320]
+[charaFadein M 0.1 80,20]
+
+[charaTalk off]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[charaFadein O 0.1 -50,-250]
+[wt 0.1]
+
+[scene 187800]
+
+[charaMove O 50,-250 5.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_147 0.1]
+[wt 3.0]
+[charaFadeout O 0.6]
+[wt 1.0]
+
+＠エリザベート
+ここが中型竜一派の聖地……みたいなトコね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+綺麗な泉ではありますが、聖地と呼ばれるほどの[r]何かがあるわけでもないような。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+あえて単語にすれば聖地、っていうだけで、[r]別に宗教的な意味はないらしいからね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠マシュ
+体調が悪いときにそこに[#篭:こ]もっていたら[r]なんとなく治りが早くなるような場所、
+[k]
+
+＠マシュ
+という話でしたね。
+[k]
+
+？1：湯治の温泉みたいな感じなのかな
+？！
+
+[charaFace E 1]
+
+＠マシュ
+温泉ではなく泉のようですが、[r]位置づけとしては近いのかもしれません。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+どうあれ、話通りに独特の魔力パターンを感じる。[r]ビショーネ、どうだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+はい。[r]なんとなく、わかります。
+[k]
+
+＠ビショーネ
+あまり尖った部分はないんですけど、[r]足りないんじゃなくて、
+[k]
+
+＠ビショーネ
+バランスの取れた感じというか……。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[bgmStop BGM_EVENT_147 1.0]
+
+[charaTalk off]
+[cueSe SE_23 23_ade908]
+[seVolume 23_ade908 0 0.4]
+[effect bit_talk_suspicious]
+[wt 1.5]
+[effect bit_talk_shadow_aura02]
+[effect bit_talk_11]
+[wt 2.0]
+
+[bgm BGM_EVENT_175 0.1]
+
+[subRenderFadeinFSSideR #A 0.3 440,-300]
+[subRenderMoveFSSideR #A 450,-330 0.3]
+[wt 0.3]
+[charaTalk on]
+
+＠K：アスクレピオス
+むっ？
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[wt 0.5]
+
+[cueSe SE_23 23_ade927]
+[seVolume 23_ade927 0 0]
+[seVolume 23_ade927 1.0 0.6]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 1.0 1]
+[wt 1.0]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 -110,320]
+[wt 0.4]
+
+[subRenderFadeinFSSideR #A 0.3 450,-330]
+[wt 0.3]
+
+＠J：メドゥーサ
+場の魔力が、[r]何かの形を取ろうとしているようです。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 -80,320]
+
+＠I：エリザベート
+んー、よく見えないわね。特に[r]大きすぎたり小さすぎたりもしない感じ。
+[k]
+
+＠I：エリザベート
+一言で言えば……
+[k]
+
+＠I：エリザベート
+地味？
+[k]
+
+[messageOff]
+[wt 0.5]
+
+＠？？？
+……うん……[r]そうだな、すまない……
+[k]
+
+？1：なんだか声が聞こえるような
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 -80,320]
+
+＠K：アスクレピオス
+魔力の結集によって、[r]場の特性が半実体化しているようだな。
+[k]
+
+＠K：アスクレピオス
+見覚えがあるような気がしてくるのは……偶然か、[r]それともこちらの認識力に干渉しているのか。
+[k]
+
+[subRenderFadeout #A 0.3]
+
+＠？？？
+さあ。力を得たければ……来るといい……
+[k]
+
+＠？？？
+地味であることを恥じる必要は、ないと思う。[r]目立たないというのは自然であるということ。
+[k]
+
+＠？？？
+自然であるというのは安定しているということ。
+[k]
+
+＠？？？
+突出した[#英雄:も　の]でなくとも、[r]できることはきっとある……。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_175 1.5]
+[seStop 23_ade927 0.6]
+[cueSeStop 23_ade908 0.6]
+[wipeout rectangleStripRightToLeft 0.6 1]
+[wait wipe]
+
+[effectDestroy bit_talk_shadow_aura02]
+[effectDestroy bit_talk_suspicious]
+[effectDestroy bit_talk_11]
+[charaFadeout C 0.1]
+[charaFadeout H 0.1]
+[charaTalk D]
+[charaFace D 20]
+[charaFadein D 0.1 1]
+[wt 0.5]
+[wipein rectangleStripLeftToRight 0.6 1]
+[wait wipe]
+
+
+＠ビショーネ
+……。[r]言葉の意味はよくわかりませんが。
+[k]
+
+[charaFace D 7]
+
+＠ビショーネ
+大事なことを教えようとしてくれている、[r]ような気がします。
+[k]
+
+[bgm BGM_EVENT_63 0.1]
+
+＠ビショーネ
+頑張ってみても、いいでしょうか！？
+[k]
+
+？1：もちろん、なんでも手伝うよ！
+？！
+
+[charaFace D 2]
+
+＠ビショーネ
+ありがとうございます！
+[k]
+
+[charaFace D 20]
+
+＠ビショーネ
+……わたしはまだまだ、成長しなくちゃ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth L 6]
+[charaDepth N 4]
+[charaDepth D 2]
+[charaDepth G 5]
+
+[charaFace L 9]
+[charaFadein L 0.4 0,30]
+[charaFadein N 0.4 0,-240]
+[wt 0.2]
+[fowardEffect bit_talk_41_fs 0,0]
+[wt 0.2]
+
+＠ビショーネ
+新人の体当たりお仕事二件目、[r]いかせてもらいます！
+[k]
+
+[charaFadeout L 0.1]
+[fowardEffectDestroy bit_talk_41_fs]
+[wt 0.1]
+
+[charaScale G 1.3]
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠チビーネ
+きゅぴー！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

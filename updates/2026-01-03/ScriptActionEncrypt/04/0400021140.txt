@@ -1,0 +1,433 @@
+
+
+＄04-00-02-11-4-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 98015000 1 汎用サーヴァント]
+[charaSet B 98015000 1 汎用サーヴァント]
+[charaSet C 1098270000 1 シオン]
+[charaSet D 6037001 1 カーマ]
+[charaSet E 1098269000 1 ＤＸ]
+[charaSet F 1098270300 1 アーユス]
+[charaSet G 1098271300 1 ケルベロス]
+[charaSet H 7046001 1 ドゥリーヨダナ]
+
+
+[charaSet L 1098269020 1 ＤＸ（演出用）]
+[charaScale L 1.25]
+[sceneSet M 189500 1]
+[charaScale M 1.2]
+
+[imageSet R back10000 1 1]
+[charaScale R 1.3]
+
+[charaSet S 98115000 1 エフェクト用ダミー]
+[charaSet T 98115000 1 エフェクト用ダミー]
+
+
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSe Battle bac19]
+[charaPutFSR S 2]
+[charaEffect S bit_shot_01]
+[wt 0.2]
+[cueSe Battle bac19]
+[wt 0.15]
+[cueSe Battle bac19]
+[wt 0.2]
+
+[cueSe Servants_105100 m45824]
+[charaPutFSL T 0]
+[charaEffect T bit_talk_strike_02 0,0 H]
+[wt 0.6]
+
+[cueSe Battle bac143]
+[cueSe Battle bac151]
+[fowardEffect bit_talk_blow02]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[effectDestroy bit_talk_strike_02]
+[effectDestroy bit_shot_01]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[scene 189500]
+
+[charaTalk off]
+[charaDepth A 4]
+[charaDepth B 3]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFadeinFSR A 0 2]
+[charaFadeinFSL B 0 0]
+[charaShake A 0.02 3 4 0.6]
+[charaShake B 0.03 4 2 0.6]
+[wt 1.2]
+
+[se ad42]
+[charaSpecialEffect A enemyErasure 0,0 1.0]
+[charaSpecialEffect B enemyErasure 0,0 1.0]
+[wait charaSpecialEffect A]
+[wt 1.0]
+
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠シオン
+ちょうどいいですね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠カーマ
+脈絡なく出てきたバグたちを倒したのが？[r]面倒臭いだけなんですけど。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠シオン
+いいえ。本来その仕事を行うべき方が[r]寄ってきてくれたからです。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.15]
+
+[cueSe SE_23 23_ad1303]
+[wt 0.6]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.2]
+[cueSeStop 23_ad1303 0.4]
+[wt 1.2]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_141 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠アーユス
+あ、ＤＸ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ＤＸ
+また任務の手伝いをしてもらっていた模様。[r]感謝。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠シオン
+会えて嬉しいです。そもそもラニ＝ⅩⅡには[r]貴女との面談も希望する予定でした。
+[k]
+
+？1：（そう、もしこの世界にアーチャーがいるのなら）
+？2：（マスター候補の第一は、残る筆頭ＡＩの……）
+？！
+
+[charaFace C 8]
+＠シオン
+一応確認できれば、というだけの話です。[r]なので手っ取り早く[line 3]
+[k]
+
+[messageOff]
+[se ad73]
+[charaMoveScale C 1.1 0.25]
+[charaMove C 0,15 0.25]
+[charaFadeout C 0.25]
+[wt 0.35]
+
+[cueSe SE_23 23_ad1308]
+[effect bit_talk_ether_light01]
+[wt 0.6]
+
+[se ad7]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.25 50,0]
+[charaMove E 200,0 0.3]
+[charaShake E 0.01 1 1 0.5]
+[wt 1.2]
+
+＠ＤＸ
+警告。当機に対する無断での内部接続は禁じられている。[r]それ以上の行為は敵対行為と認識する。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠シオン
+[#問答無用:もんどうむよう]作戦第二弾、失敗のようです。
+[k]
+
+[charaFace C 6]
+＠シオン
+それでは[line 3]失礼ですが、[r]装甲を外して身体を見せていただけますか？
+[k]
+
+＠シオン
+この世界の聖杯戦争においても、マスター権の根幹は令呪。[r]それを確かめれば早いでしょう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ＤＸ
+……。[r]……。
+[k]
+
+＠ＤＸ
+意味は、不明。されど。
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[cueSe SE_23 23_ad1301]
+[wt 0.1]
+[charaCrossFade E 1098269010 0 0.4]
+[wait charaCrossFade E]
+[wt 0.9]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[se ad156]
+[wt 0.5]
+[cueSe Servants_305300 bac1460]
+[wt 1.0]
+[seStop ad156 0.2]
+[wt 0.2]
+
+[se ad661]
+[wt 0.4]
+[seStop ad661 0.8]
+[wt 0.6]
+
+[charaSet E 1098269020 1 ＤＸ]
+
+[wt 0.5]
+
+[charaTalk off]
+[charaDepth E 1]
+[charaDepth M 2]
+[charaDepth L 3]
+
+[charaScale M 1.4]
+[charaFadein M 0.7 0,-220]
+[wt 0.9]
+
+[se ade422]
+[charaFace L 0]
+[charaFadein L 0.5 0,200]
+[wt 0.4]
+[seStop ade422 0.4]
+[wt 0.7]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[charaMove M 0,-320 1.4]
+[charaMove L 0,30 1.4]
+[wt 2.2]
+
+[charaFadeout L 0.7]
+[charaFadeout M 0.7]
+[wt 1.0]
+
+[charaTalk on]
+＠ＤＸ
+これで満足か、と問う。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠シオン
+……インナーの下にもないようですね。
+[k]
+
+[charaFace C 10]
+＠シオン
+いいでしょう。失礼しました。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠カーマ
+確かに、もしアーチャーがいるとすればマスターは[r]ソレだったでしょうね。
+[k]
+
+＠カーマ
+支配エリアを持つ、マスターでない筆頭ＡＩは[r]もう彼女しかいないんですから。
+[k]
+
+＠カーマ
+でも違うというんなら、やっぱりライダーの[r]勘違いじゃないです？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠シオン
+……そうかもしれません。
+[k]
+
+＠シオン
+最大の可能性を確かめられたことで[r]優先度は下がりました。
+[k]
+
+[charaFace C 6]
+＠シオン
+ただ、行きがけの駄賃ではあります。
+[k]
+
+＠シオン
+このままラニ＝ⅩⅡと面談し、一応の最終確認を[r]取ってから次の動きを決めたいのですが[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_141 1.5]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠ＤＸ
+……注意喚起！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.15]
+
+[cueSe Servants_9942210 bac1401]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.7 1]
+[wt 2.4]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+＠ドゥリーヨダナ
+う[messageShake 0.05 4 3 0.5]おっ、唐突に出てきおって！[r]なんだこいつらは！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠ＤＸ
+バグに[#非:あら]ず。されど中央区画のＡＩたちを[r]狙っていると判断。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.15]
+
+[charaSet E 1098269010 1 ＤＸ]
+
+[cueSe Servants_305300 m08601]
+[wt 0.5]
+
+[cueSe Servants_305300 m86305]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.8]
+
+＠ＤＸ
+規定違反により、排除を推奨[line 3][wt 0.8][charaFace E 2]協力要請！
+[k]
+
+[messageOff]
+[wt 0.05]
+
+[cueSe SE_23 23_ad1302]
+
+[charaCrossFade E 1098269000 1 0.4]
+[wait charaCrossFade E]
+[wt 0.9]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠アーユス
+わ、わかったわ！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

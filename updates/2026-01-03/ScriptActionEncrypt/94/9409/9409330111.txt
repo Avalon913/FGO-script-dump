@@ -1,0 +1,335 @@
+
+
+＄94-09-33-01-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098234400 1 クラス・ランサー]
+[charaSet B 1098234300 1 クラス・アーチャー]
+[charaSet C 1098234700 1 クラス・アサシン]
+[charaSet D 1098234800 1 クラス・バーサーカー]
+[charaSet E 3036001 1 ブラダマンテ]
+[charaSet F 1052000 1 シャルルマーニュ]
+[charaSet G 3051901 1 ドン・キホーテ]
+[charaSet H 1098287200 1 シラノ]
+
+[charaSet I 3051911 1 サンチョ]
+[charaSet J 4004001 1 アストルフォ]
+
+[imageSet L back10000 1 1]
+[charaScale L 1.3]
+
+[sceneSet O 209800 1]
+[charaScale O 1.3]
+
+
+[scene 209800]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_147 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠クラス・ランサー
+……よくわからないが、芝居の手伝いをするのが、[r]我らが使命なのか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 6]
+[charaDepth C 5]
+[charaDepth D 4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein B 0.1 1]
+[charaFadeinFSR C 0.1 300,0]
+[charaFadeinFSL D 0.1 -300,0]
+＠クラス・アーチャー
+よし、やるぞ！
+[k]
+
+＠クラス・アサシン
+脇役のスリも兼ねるとのこと。[r]……気配遮断しすぎると不味いですな。
+[k]
+
+[charaFace D 2]
+＠クラス・バーサーカー
+おおどうぐをはこぶ！[r]おで、ちからもち！
+[k]
+
+[charaFace D 0]
+＠クラス・バーサーカー
+……敵役のスペイン兵士なども兼ねます。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠ブラダマンテ
+裏方のブラちゃんです。[r]皆さん、よろしくお願いしますね。
+[k]
+
+[charaDepth L 2]
+[charaDepth E 3]
+
+[charaPut L 1]
+[charaFadeTime L 0.2 0.5]
+
+[charaFace E 3]
+＠ブラダマンテ
+（もう少しいい名前なかったんですか、陛下！）
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout L 0.2]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth A 5]
+[charaDepth B 4]
+[charaDepth C 3]
+[charaDepth D 2]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein A 0.1 150,0]
+[charaFadein B 0.1 -150,0]
+[charaFadeinFSR C 0.1 350,0]
+[charaFadeinFSL D 0.1 -300,0]
+＠全員
+はーい。
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth O 6]
+
+[charaScale O 1.4]
+[charaFadein O 0.4 0,-280]
+[charaMoveEase O -100,-280 1.0 easeOutSine]
+[wt 1.0]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.4]
+
+[charaDepth O 2]
+[charaDepth F 3]
+[charaDepth H 3]
+[charaDepth G 4]
+[charaDepth I 5]
+[charaDepth J 5]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠シャルルマーニュ
+なるほどなるほど。
+[k]
+
+＠シャルルマーニュ
+俺のクリスチャンは、割と頭がアレだから[r]難しい台詞は吐けないと……。
+[k]
+
+[charaFace F 3]
+＠シャルルマーニュ
+いいな、俺にとってもありがたい！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠ドン・キホーテ
+老人に長台詞は酷ですのう。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMoveEase G -225,0 1.0 easeInOutSine]
+[charaMoveEase O -250,-280 1.0 easeInOutSine]
+[wt 1.0]
+
+
+[charaFace H 0]
+[charaFadein H 0.4 225,0]
+[wt 0.6]
+
+[charaTalk on]
+＠シラノ
+ドン爺さんは安心してくれ。[r]台詞は俺がやる。
+[k]
+
+[charaFace G 2]
+＠ドン・キホーテ
+おお、それならただ突っ立っているだけ！
+[k]
+
+[charaCrossFade H 1098287240 0 0.3]
+＠シラノ
+アクションは頼むぞ、ご老体。[wait charaCrossFade]
+[k]
+
+[messageOff]
+[charaFadeout G 0.6]
+[charaFadeout H 0.6]
+[charaFadeout O 0.6]
+[wt 0.8]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠サンチョ
+ふふふ、そう考えると奇妙ですね。
+[k]
+
+？1：奇妙……？
+？！
+
+[charaFace I 0]
+＠サンチョ
+『シラノ・ド・ベルジュラック』において、[r]シラノ様はクリスチャンの代わりを務めます。
+[k]
+
+＠サンチョ
+クリスチャンには文才が欠落しているため、[r]文才豊かなシラノ様が手紙を書いたり……。
+[k]
+
+＠サンチョ
+あるいは、[r]口説き文句を即興で作ったりするのですね。
+[k]
+
+[charaFace I 1]
+＠サンチョ
+そんな『シラノ・ド・ベルジュラック』で、[r]シラノ様がシラノ役の台詞を代わりに言うというのは……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+
+[charaSet H 1098287220 1 シラノ]
+
+[charaDepth H 3]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠シラノ
+つまり[#シラノ:お　れ]が[#俺:シラノ]の役を務める人間の代わりになる……。
+[k]
+
+
+？1：ややこしい！
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠サンチョ
+はい、実にややこしいです。
+[k]
+
+[charaFace I 0]
+＠サンチョ
+とはいえ、こうでもしなければ旦那様に演技は[r]難しいと思うので……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaSet H 1098287270 1 シラノ]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠シラノ
+よし！　それじゃあ一度、台本読んでみるか。[r]多少の下手よりも声を出すことを意識しろよ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+＠アストルフォ
+オッケー！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠サンチョ
+裏方に関しましては私にお任せください。[r]脚本から必要な道具は把握いたしましたので。
+[k]
+
+？1：さすがメイドさん！
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠ドン・キホーテ
+何しろワシの大親友にして敬愛する姫なので！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+＠サンチョ
+……コホン。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠シャルルマーニュ
+よーし、それじゃあ役者も裏方も、[r]カッコ良く、頑張るとしようぜ！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_147 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

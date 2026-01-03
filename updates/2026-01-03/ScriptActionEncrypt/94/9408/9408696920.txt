@@ -1,0 +1,1061 @@
+
+＄94-08-69-69-2-0
+
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098257310 1 ダ・ヴィンチ]
+[charaSet B 2051001 1 杉谷善住坊]
+[charaSet C 2050002 1 プトレマイオス]
+[charaSet D 1098255110 1 ゴルドルフ]
+[charaSet E 1098273110 1 エフェメロス]
+[charaSet F 1098257810 1 マシュ]
+
+[sceneSet G 194500 1]
+[charaScale G 1.4]
+
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 1098273740 1 テュフォン]
+[charaSet J 98115000 1 エフェクト用2]
+[charaSet K 98115000 1 エフェクト用3]
+[charaSet M 98115000 1 エフェクト用4]
+
+[charaSet N 1098273600 1 テュフォン・エフェメロス]
+
+[sceneSet O 194500 1]
+[charaScale O 1.4]
+
+[charaSet P 98115000 1 エフェクト用5]
+[charaSet Q 98115000 1 エフェクト用6]
+[imageSet R cut475_tpne_l 1]
+[imageSet S cut475_tpne_c 1]
+[imageSet T cut475_tpne_r 1]
+[charaScale R 1.01]
+[charaScale S 1.01]
+[charaScale T 1.01]
+
+[subCameraOn 2]
+[charaLayer O sub #A]
+[charaLayer I sub #A]
+
+[charaDepth O 1]
+[charaDepth I 3]
+[charaFadein O 0.1 1]
+[charaFadein I 0.1 0,200]
+
+[charaPut H 2000,2000]
+[charaEffect H bit_talk_10_LowLevel]
+
+[scene 194500]
+[charaFadein G 0.1 0,-250]
+
+[cueSe SE_23 23_ade922]
+[cueSeVolume 23_ade922 0 0]
+[wt 0.1]
+
+[fadein black 1.0]
+[cueSeVolume 23_ade922 1.0 1.0]
+[charaMove G 0,-200 6.0]
+[wait fade]
+[wt 4.0]
+[seStop 23_ade922 1.2]
+[charaFadeout G 1.0]
+[wt 1.2]
+
+？1：これって……
+？2：床が溶けてる……
+
+？！
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+もともと内部にはマグマが流れていたようだけど、[r]残っていた床まで、さらに引き裂けて融解してる。
+[k]
+
+＠ダ・ヴィンチ
+テュフォンのブレスと、[r]プトレマイオスの宝具の激突によるものだね。
+[k]
+
+＠ダ・ヴィンチ
+渦巻いてる魔力なんて、[r]神代でもほとんどありえない数値だ……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaTalk B]
+[charaFace B 17]
+[charaPut B 1]
+[se ad595]
+[charaSpecialEffect B appearanceReverse 1 0.7]
+[wait charaSpecialEffect B]
+[wt 1.0]
+
+＠杉谷善住坊
+俺たちは残った足場を渡っていけるが、[r]マスターは四不相から離れるなよ。
+[k]
+
+＠杉谷善住坊
+骨まで一瞬で焼け焦げるぜ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠プトレマイオス
+……やれやれ。[r]残念ながら、あいつは健在らしい。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+
+[charaFadeout C 0.1]
+
+[charaScale G 1.2]
+[charaScale I 1.2]
+[charaDepth G 1]
+[charaDepth E 2]
+[charaFadein G 0.1 0,-200]
+
+
+
+[charaTalk off]
+[charaFace E 27]
+[charaFadein E 0.4 150,0]
+[wt 0.4]
+
+[charaMove G 50,-200 1.9]
+[charaMove E 200,0 1.9]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+[wt 1.2]
+
+[subCameraFilter #A maskEdge cut359_mask07 4 0,0,0,255]
+[subRenderFadein #A 0.4 -300,-260]
+[subRenderMove #A -300,-270 0.4]
+[wt 2.0]
+
+
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaFadeout I 0.1]
+[charaFadeout G 0.1]
+[subRenderFadeout #A 0.1]
+[charaFadeout E 0.1]
+[wt 0.4]
+[charaScale I 1.0]
+[charaLayer I normal]
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+おお、テュフォンの本体は傷ついているぞ！[r]これが[#三重の壊れた幻想:トリプル・ブロークン・ファンタズム]の威力か！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 25]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+逆に言うと、眠っている状態でさえ、[r]そこまでやっても仕留めきれていない。
+[k]
+
+＠ダ・ヴィンチ
+純血の竜という存在が、[r]どれほど規格外かってことだね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk E]
+[charaFace E 27]
+[charaFadein E 0.1 1]
+
+＠エフェメロス
+戻ったか……
+[k]
+
+[charaFace E 8]
+
+＠エフェメロス
+まず、先の一撃に敬意を表しよう。
+[k]
+
+[charaFace E 27]
+
+＠エフェメロス
+威力・精度ともに、人間の霊基から放たれたとは思えぬ。[r]よくぞ、あれほどの歴史を積み上げた。
+[k]
+
+？1：テュフォン・エフェメロス……！
+？！
+
+[messageOff]
+[charaFace E 21]
+[wt 1.2]
+[charaFace E 27]
+
+＠エフェメロス
+それは、我の名前か。[r]なるほど、うまく言うものだな。
+[k]
+
+[charaFace E 9]
+
+＠エフェメロス
+無常の果実……エフェメロス。[r]つまり、我の機能もすでに知っているな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠プトレマイオス
+反聖杯、ということかね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠エフェメロス
+おまえたちの言葉なら、それがふさわしいだろう。[r]反願望機。願いを叶えない機能こそが我だ。
+[k]
+
+[charaFace E 7]
+
+＠エフェメロス
+開けてはならぬ[#匣:はこ]のように、[r]望まれなかった機能である。
+[k]
+
+[charaFace E 27]
+＠エフェメロス
+だが、叶うべきだった願いと同じだけ、[r]叶うべきではなかった願いがあるはずだ。
+[k]
+
+[charaFace E 10]
+＠エフェメロス
+[#夢が叶わなかったらよかったのに]、[r]とおまえは思わないのか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠プトレマイオス
+……無論、思うとも。
+[k]
+
+＠プトレマイオス
+夢とは、常に毒の性質を持つ。[r]叶った夢も、叶わなかった夢も、毒になる。
+[k]
+
+＠プトレマイオス
+実際に、[#吾:あ]の夢は世界史にまで残る毒になった。[r]後悔していないなんて、言えるはずがなかろうよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+＠エフェメロス
+汝は勝ち抜いた。[r]汝は堕ち抜いた。
+[k]
+
+＠エフェメロス
+昼にあって人を殺め、夜にあって骸をつくり、[r]一切の[#躊躇:ためら]いなく、他人の死を重ねに重ねた。
+[k]
+
+[charaFace E 16]
+
+＠エフェメロス
+ふたつの[#大戦:マキア]をくぐり抜けたゼウスのように、[r]傲慢という毒を[#撒:ま]き散らした。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠プトレマイオス
+それも、正しい。[r]……だが、反聖杯よ。
+[k]
+
+[charaFace C 0]
+[bgmStop BGM_EVENT_90 1.0]
+
+＠プトレマイオス
+汝も知るがいい。[r]それは、順序が違うのだと。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 27]
+[charaFadein E 0.1 1]
+
+＠エフェメロス
+順序だと……？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠プトレマイオス
+そうであったな、[#吾:あ]のマスターよ。
+[k]
+
+？1：そう[&だ:だね]
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 27]
+[charaFadein E 0.1 1]
+[wt 0.3]
+
+？1：生きるのが、先だから
+？！
+
+[bgm BGM_EVENT_79 0.1]
+[charaFace E 3]
+
+＠エフェメロス
+生きるのが、先？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠プトレマイオス
+おまえが言ってることは、[r]全て結果でしかない。
+[k]
+
+[charaFace C 9]
+
+＠プトレマイオス
+確かに結果として、[#吾:あ]のような英霊は[r]いろんな傷を歴史に残してしまった。
+[k]
+
+＠プトレマイオス
+とりわけ反英雄なんて[r]カテゴライズされるヤツらはそうだろうとも。
+[k]
+
+＠プトレマイオス
+だけど、それもこれも含めて、[r]生き足掻いた証拠なんだ。
+[k]
+
+＠プトレマイオス
+いつかこの夢の代価として裁かれるのはいい。[r]傷つけた相手に償うのだって当然だとも。
+[k]
+
+＠プトレマイオス
+だけど、叶わなかったらよかった、なんて言ったら[r]今度こそ[#吾:あ]は取り返しのつかない愚者になってしまう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠エフェメロス
+それを傲慢と言わずしてなんと言う……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠プトレマイオス
+ああ、それでいい。[r]その感情で[#吾:あ]の前に立つ資格が、おまえにはある。
+[k]
+
+＠プトレマイオス
+今のおまえは[#運命の女神:モ　　 イ　　 ラ]ではない。[r]おまえ自身の怒りを持って、[#吾:あ]やマスターと戦うべきだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠エフェメロス
+戦う？　戦いなどにはならない。[r]もはやテュフォンの目覚めは間近だ。
+[k]
+
+[charaFace E 12]
+
+＠エフェメロス
+おまえたちが目覚めてはならないと願えばこそ、[r]その願いは叶わない！
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1169]
+[seVolume 22_ad1169 0 0]
+[seVolume 22_ad1169 0.5 1.0]
+[charaTalk depthOff]
+[charaDepth E 5]
+[charaDepth J 7]
+[charaDepth K 6]
+[bgmStop BGM_EVENT_79 1.0]
+[charaPut J 1]
+[charaPut K 0,-100]
+[charaEffect K bit_talk_miasma_aura 0,-150]
+[charaEffect J bit_talk_shadow_aura03 0,-150]
+[wt 1.5]
+[bgm BGM_EVENT_72 0.1]
+[wt 2.0]
+[seStop 22_ad1169 0.5]
+
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 3000,3000]
+[charaPut K 3000,3000]
+
+[wt 0.3]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.5]
+[effect bit_talk_voice02 -70,180]
+[cueSe SE_23 23_ade918]
+[wt 0.1]
+[shake 0.05 4 4 3.2]
+[wt 4.0]
+
+[seStop 23_ade918 0.4]
+[effectDestroy bit_talk_voice02]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠マシュ
+テュフォンの体内からの霊基反応増大！[r]信じられません！　すでに神獣級を[line 3]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[cueSe SE_22 22_ad1169]
+[seVolume 22_ad1169 0 0]
+[seVolume 22_ad1169 0.5 1.0]
+[charaPut J 1]
+[charaPut K 0,-100]
+[charaPut M 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[cueSe SE_22 22_ad1181]
+[se ad39]
+[charaEffect M bit_talk_36]
+[wt 2.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[seStop 22_ad1169 0.5]
+[seVolume 22_ad1181 0.5 0.2]
+[charaPut J 3000,3000]
+[charaPut K 3000,3000]
+[charaPut M 1200,1200]
+[wt 0.2]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+エフェメロスの宝具！[r]まさか、これは反願望機としての権能の！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[cueSe SE_22 22_ad1169]
+[seVolume 22_ad1181 0.5 1.0]
+[charaPut J 1]
+[charaPut K 0,-100]
+[charaPut M 1]
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+＠エフェメロス
+暗き罪を[#纏:まと]った者よ。[r]重き[#咎:とが]を重ねた者よ。
+[k]
+
+＠エフェメロス
+災いを喜べ。
+[k]
+
+[charaFace E 16]
+
+＠エフェメロス
+罪なるかな。[#咎:とが]なるかな。悪なるかな。[r]我が果実は、おまえの願いを叶えない[line 3]！
+[k]
+
+[effect bit_talk_31]
+[se ad696]
+[seVolume ad696 0 0.8]
+[seStop 22_ad1181 0.4]
+[charaEffectStop M bit_talk_36]
+[charaFace E 24]
+
+＠エフェメロス
+[f large]『』
+[k]
+
+[seStop 22_ad1169 0.5]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 3000,3000]
+[charaPut K 3000,3000]
+[charaPut M 3000,3000]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠プトレマイオス
+今だ、杉谷！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[blur motion 0.1 4 100 0.5 0.65 0.05 100]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+[cueSe SE_23 23_ade911]
+＠杉谷善住坊
+おおおおお！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_72 1.0]
+[se bac341]
+[fadeout white 0.1]
+[wait fade]
+
+[blurOff motion 0.1]
+[charaFadeout B 0]
+[scene 10000]
+[wt 0.15]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.85]
+
+[cueSe SE_23 23_ade915]
+[effect bit_talk_arrow_grl]
+[wt 1.3]
+[se ade338]
+[seVolume ade338 0 0]
+[wt 0.2]
+[seVolume ade338 0.1 0.7]
+[wt 0.1]
+[seStop ade338 0.7]
+[wt 0.9]
+
+[se ad240]
+[se ad881]
+[seVolume ad881 0 0.2]
+[se ad789]
+[seVolume ad789 0 0.6]
+[wt 2.0]
+
+[fadeout black 0.5]
+[wait fade]
+
+[scene 194500]
+[effectDestroy bit_talk_arrow_grl]
+
+[charaPut J 1]
+[charaPut K 0,-100]
+[charaPut M 1]
+[charaTalk E]
+[charaFace E 24]
+[charaFadein E 0.1 1]
+[wt 0.2]
+[charaFaceFade E 21 0.2]
+[wt 0.35]
+
+[cueSe SE_22 22_ad1169]
+[seVolume 22_ad1169 0 0]
+[seVolume 22_ad1169 1.0 0.5]
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+
+＠エフェメロス
+今、何を撃った……？
+[k]
+
+[bgm BGM_EVENT_63 0.1]
+[messageOff]
+[charaPut P 30,-50]
+[charaEffect P bit_talk_20_mini]
+[cueSe SE_23 23_ade914]
+[wt 2.0]
+[charaFace E 22]
+
+＠エフェメロス
+ぐっ！
+[k]
+
+[messageOff]
+[charaShake E 0.05 3 3 0.3]
+[wt 1.0]
+[seStop 22_ad1169 0.5]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 3000,3000]
+[charaPut K 3000,3000]
+[charaPut M 3000,3000]
+[charaEffectDestroy P bit_talk_20_mini]
+[charaPut P 3000,3000]
+[charaPut Q 3000,3000]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.2]
+[cueSe SE_23 23_ade919]
+[wt 0.2]
+[shake 0.05 2 2 1.8]
+[wt 2.2]
+
+[seStop 23_ade919 0.4]
+[effectDestroy bit_talk_voice02]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaEffectStop P bit_talk_20_mini]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠プトレマイオス
+聖杯の雫を加工してつくった、[r]さしずめ聖杯弾とでも呼べばいいか。
+[k]
+
+＠プトレマイオス
+杉谷の宝具の弾丸を加工できるのは、[r]テセウスの時で分かっていた。
+[k]
+
+[charaFace C 9]
+
+＠プトレマイオス
+カルデアでもこんな貴重品はまずないだろう。[r]大盤振る舞いを味わうがいい！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut J 1]
+[charaPut K 0,-100]
+[charaPut M 1]
+[cueSe SE_22 22_ad1169]
+[seVolume 22_ad1169 0 0.5]
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+[wt 0.2]
+[se bac341]
+[effect bit_talk_14 60,40]
+[wt 0.2]
+[charaShake E 0.05 3 3 0.7]
+[wt 0.1]
+[cueSe SE_23 23_ade910]
+[effect bit_talk_14 -10,-120]
+[wt 0.8]
+[cueSe SE_23 23_ade914]
+[charaPut Q -10,-120]
+[charaPut P 60,40]
+[charaEffect Q bit_talk_20_mini]
+[charaEffect P bit_talk_20_mini]
+[wt 1.4]
+[se ad596]
+[flashin once 0.8 1.0 FFFFFFF0 FFFFFF00]
+[charaPut P 3000,3000]
+[charaPut Q 3000,3000]
+[charaMove M 0,-200 1.0]
+[wt 0.8]
+[charaPut K 0,-200]
+[charaPut J 0,-100]
+[wt 1.7]
+[seStop 22_ad1169 0.5]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 3000,3000]
+[charaPut K 3000,3000]
+[charaPut M 3000,3000]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠マシュ
+エフェメロスおよびテュフォンの魔力、減衰を確認！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[cueSe SE_22 22_ad1169]
+[seVolume 22_ad1169 0 0.5]
+[charaPut J 0,-100]
+[charaPut K 0,-200]
+[charaPut M 0,-100]
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠エフェメロス
+なるほど……我と反対の性質を持っているらしい。
+[k]
+
+[charaFace E 4]
+
+＠エフェメロス
+この有様では、テュフォンの覚醒までは難しい。[r]ああ、だったら仕方ない。
+[k]
+
+[bgmStop BGM_EVENT_63 1.0]
+[charaFace E 27]
+
+＠エフェメロス
+……本当に、仕方ない。
+[k]
+
+？1：何を……？
+？！
+
+[messageOff]
+[charaFaceFade E 13 0.3]
+[wt 0.5]
+
+＠エフェメロス
+憎きおまえたちの最期を、[r]この目で見られないのは、仕方ない！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[seStop 22_ad1169 0.5]
+[charaPut J 3000,3000]
+[charaPut K 3000,3000]
+[charaPut M 3000,3000]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.5]
+[effect bit_talk_voice02 -70,180]
+[cueSe SE_23 23_ade918]
+[wt 0.1]
+[shake 0.05 4 4 3.2]
+[wt 4.0]
+
+[seStop 23_ade918 0.4]
+[effectDestroy bit_talk_voice02]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_33 0.1]
+[charaPut J 0,-100]
+[charaPut K 0,-200]
+[charaPut M 0,-100]
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+
+＠エフェメロス
+喰らえ、テュフォン！[r]この我を！　神話のように！
+[k]
+
+＠エフェメロス
+我も、叶わぬ願いのひとつとなろう！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[seStop 22_ad1169 0.4]
+[charaPut J 3000,3000]
+[charaPut K 3000,3000]
+[charaPut M 3000,3000]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.7]
+[cueSe SE_22 22_ad1177]
+[cameraMoveEase 20,-50 1.0 easeInExpo 1.3]
+[wt 0.4]
+[fadeout black 0.5]
+[wait fade]
+[wt 0.1]
+
+[charaFadeout I 0.1]
+[scene 10000]
+[wt 0.1]
+[cameraHome 0.1]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_fang_02]
+[cueSe SE_21 21_ad1147]
+[wt 4.0]
+[seStop 21_ad1147 0.5]
+[wt 1.0]
+
+[cueSe SE_21 21_ad1125]
+[wt 4.0]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 194500]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+？1：テュフォンが
+？2：エフェメロスを喰らった……！？
+
+？！
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth R 2]
+[charaDepth S 4]
+[charaDepth T 3]
+[charaDepth N 1]
+[charaFadein R 0.4 -160,-220]
+[charaMove R -160,-200 1.0]
+[wt 1.5]
+
+[charaFadein T 0.4 160,-220]
+[charaMove T 160,-200 1.0]
+[wt 1.5]
+[charaFadein S 0.4 0,-180]
+[charaMove S 0,-200 1.0]
+[wt 1.2]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+[wt 1.0]
+
+[charaFadeout R 1.0]
+[charaFadeout S 1.0]
+[charaFadeout T 1.0]
+[wt 1.5]
+
+＠テュフォン・エフェメロス
+ああ、やっぱりこうなった……[r]我の願いは叶わなかった……
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠杉谷善住坊
+おいおい、あのお嬢ちゃんの声だと……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠プトレマイオス
+……そういうことか。
+[k]
+
+＠プトレマイオス
+これが本来の姿なのだな。[r]プリテンダー、テュフォン・エフェメロスの。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+＠テュフォン・エフェメロス
+テュフォンの願いを叶えぬために、[r]運命の女神は、テュフォンに我を食わせた。
+[k]
+
+＠テュフォン・エフェメロス
+テュフォンの願いは悪だから、と[r]運命の女神は言っていた。
+[k]
+
+＠テュフォン・エフェメロス
+だから、我は犠牲になって良いのだと。[r]喰らわれれば良いのだと。
+[k]
+
+？1：エフェメロス……！
+？！
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠プトレマイオス
+[#吾:あ]の図書館でも読んだ通りだ。[r]竜の神話の類型であろう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+[#八岐大蛇:やまたのおろち]が酒で酔ったところを倒されたように。[r]金羊毛の竜をイアソンがメディアの薬で眠らせたように。
+[k]
+
+＠ダ・ヴィンチ
+強大すぎる竜や怪物は、[r]薬や捧げ物による騙し討ちに遭う。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠プトレマイオス
+……そして、この際の薬や捧げ物は[r]しばしば生贄としての姫と同一視される。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+＠テュフォン・エフェメロス
+我は憎む。[r]罪深き英雄たちも！　傲慢なる神々も！
+[k]
+
+＠テュフォン・エフェメロス
+その願いの全てを、我は否定する！
+[k]
+
+＠テュフォン・エフェメロス
+我らを踏み[#躙:にじ]って得た願いを、[r]その全てを、後悔させてやる！
+[k]
+
+
+[messageOff]
+[effect bit_talk_voice02 -70,180]
+[cueSe SE_23 23_ade918]
+[wt 0.1]
+[shake 0.05 4 4 3.2]
+[wt 4.0]
+[fadeout black 1.0]
+[bgmStopEnd BGM_BATTLE_33 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

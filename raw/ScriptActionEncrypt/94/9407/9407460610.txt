@@ -1,0 +1,716 @@
+
+＄94-07-46-06-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098248580 1 駒姫]
+[charaSet B 11007000 1 ノッブ]
+[charaSet C 9015000 1 壱与]
+[charaSet D 7044000 1 千利休]
+[charaSet E 11012000 1 蘭丸Ｘ]
+[charaSet F 1098249600 1 流星茶獣]
+[charaSet G 6018000 1 謎のヒロインＸ]
+
+[sceneSet H 143500 1]
+[charaScale H 1.4]
+
+[sceneSet I 143500 1]
+[charaScale I 1.4]
+
+[scene 143500]
+
+[charaTalk depthOff]
+[charaDepth I 2]
+[charaDepth H 3]
+[charaDepth A 4]
+[charaDepth B 5]
+[charaDepth C 6]
+[charaDepth G 7]
+[charaDepth E 8]
+
+[charaFadein H 0.1 100,-280]
+[charaMove H -100,-280 6.0]
+[wt 0.1]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 2.0 0.1]
+[fadein black 2.0]
+[wait fade]
+[wt 1.5]
+[seStop ad556 2.5]
+[charaFadeout H 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_147 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠駒姫
+はて、ここは何処になりますでしょうか？[r]なにやらひどく暑いうえに見渡す限りの砂の原。
+[k]
+
+[charaFace A 13]
+
+＠駒姫
+駒は黒いのでより一層、暑さが応えまする。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale C 1.2]
+[charaScale B 1.2]
+[charaScale E 1.2]
+
+[charaTalk off]
+
+[charaFadein I 0.6 0,-280]
+[charaFace C 12]
+[charaFadein C 0.6 100,0]
+[wt 0.8]
+
+[charaTalk on]
+
+＠壱与
+どうやら道に迷ってしまったようですね。[r]それにしても確かに暑いですね～。
+[k]
+
+？1：のどが渇いた……
+
+[messageOff]
+
+[charaTalk off]
+
+[se ad173]
+[seVolume ad173 0 0]
+[seVolume ad173 1.0 1.0]
+
+[charaMove I 100,-280 1.2]
+[charaMove C 256,0 1.2]
+[wt 1.2]
+
+[seStop ad173 0.5]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.4 -250,0]
+[wt 1.0]
+
+＠ノッブ
+わしもう喉カラカラ大名。コーラない、コーラ？
+[k]
+
+？2：砂漠なんかあったんだ
+
+[messageOff]
+
+[charaTalk off]
+
+[se ad173]
+[seVolume ad173 0 0]
+[seVolume ad173 0.4 1.0]
+
+[charaMove I 100,-280 1.2]
+[charaMove C 256,0 1.2]
+[wt 1.2]
+
+[seStop ad173 0.5]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.4 -250,0]
+[wt 1.0]
+
+＠ノッブ
+そもそも日本に砂漠があるのかという話じゃが、[r]いや、毛利のほうに砂丘があったか。
+[k]
+
+？！
+
+[charaFace C 4]
+
+＠壱与
+未来さん、水筒に自販機のお茶を入れて[r]きたのでよろしければどうぞ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_147 1.0]
+[charaTalk E]
+[charaFace E 2]
+[se ad7]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect E appearance 1 0.25]
+[charaMoveReturn E 0,-5 0.5]
+[wt 0.2]
+
+[charaFace B 13]
+[charaFace C 8]
+[charaMove B -300,0 0.2]
+[charaMove C 300,0 0.2]
+[wt 0.4]
+
+＠E：蘭丸Ｘ
+ちょっと待つであります！[r]主様にお茶を用意するのはこの蘭丸の役目！
+[k]
+
+[messageOff]
+[charaFadeout E 0.4]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+[charaFadeout I 0.4]
+[wt 0.5]
+
+[charaScale C 1.0]
+[charaScale B 1.0]
+[charaScale E 1.0]
+
+[bgm BGM_MEIJI 0.1]
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 1]
+
+＠駒姫
+おや、こちらの……、こちらの……、[r]この形容しがたくも可愛らしいお方は？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[charaShake E 0.03 2 2 0.4]
+
+＠蘭丸Ｘ
+ふぇっ！？　蘭丸が可愛いって……、[wt 1.2][charaFace E 3][r]えへへ……、まあそれほどでもありますが、
+[k]
+
+[charaFace E 5]
+
+＠蘭丸Ｘ
+って、危ない危ない、だいたい蘭丸の方が[r]年上でありますよ、多分！
+[k]
+
+[charaFace E 2]
+
+＠蘭丸Ｘ
+いや、そんな話もしてないでありますよ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠駒姫
+蘭丸様ですか。わたくしは駒と申します。[r]以後よろしくお願い致します。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+
+＠蘭丸Ｘ
+くっ！　なんとなく小姓である蘭丸の[r]ポジションがピンチな気がするでありますが、
+[k]
+
+[charaFace E 0]
+
+＠蘭丸Ｘ
+余裕をかましていられるのも今の内でありますよ。
+[k]
+
+[se ad77]
+[seStop ad77 1.5]
+[charaMoveReturn E 0,-5 0.5]
+[charaFace E 7]
+
+＠蘭丸Ｘ
+さ、主様、蘭丸がちょっと銀河を二つ三つ飛び越えて[r]買ってきた流星抹茶、
+[k]
+
+[charaFace E 1]
+
+＠蘭丸Ｘ
+どうかご賞味くださいであります！
+[k]
+
+？1：見当たらないと思ったら……
+
+[flag select_answer_01 true]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 1]
+
+＠駒姫
+まあ、七色に光るお茶とは珍しい。[r]とても綺麗で……、しょうか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 20]
+[charaFadein E 0.1 1]
+
+＠蘭丸Ｘ
+この流星抹茶の凄さがまだわからないでありますか。[r]これはでありますね……、
+[k]
+
+？2：流星抹茶ですか
+
+[flag select_answer_01 false]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[cueSe SE_22 22_ade699]
+[seVolume 22_ade699 0 0.4]
+[effect bit_talk_np_buf_02 0,-200]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 21]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠千利休
+流星抹茶……、初めて耳にしまするが、[r]どのような茶でございますかな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 21]
+[charaFadein E 0.1 1]
+
+＠蘭丸Ｘ
+へへー、これを手に入れるのには[r]苦労したんでありますよ、何を隠そう……、
+[k]
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠ノッブ
+まったく、姿を見んからどこを[r]ほっつき歩いとるのかと思ったら……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+[wt 0.4]
+[bgmStop BGM_MEIJI 1.0]
+[wt 0.6]
+
+[charaFace C 8]
+[cueSe Servants_504400 bac1203]
+[wt 0.2]
+
+＠壱与
+……！？　この感じは！？
+[k]
+
+
+[bgm BGM_EVENT_80 0.1]
+[charaFace C 3]
+
+＠壱与
+未来さん、空から何か来ます！
+[k]
+
+[charaFace C 6]
+
+＠壱与
+予知はあまり得意ではないですが、これはきっと、[r]いえ、確実に滅びを[#纏:まと]った何かが！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠ノッブ
+なんじゃなんじゃ急に……、上じゃと？
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+[scene 106800]
+[wt 0.3]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[effect bit_talk_starshine -250,120]
+[se ade126]
+[wt 2.0]
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[effectStop bit_talk_starshine]
+[scene 143500]
+[wt 0.3]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[branch select_answer_02 select_answer_01 false]
+
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+[branch select_join]
+
+[label select_answer_02]
+
+
+[charaSet A 1098248580 1 駒姫]
+
+[cueSe SE_22 22_ade699]
+[seVolume 22_ade699 0 0.4]
+[effect bit_talk_np_buf_02 0,-200]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[label select_join]
+
+
+＠駒姫
+あら、本当でございますね。[r]何か光るものが落ちて……、
+[k]
+
+？1：危ない、駒姫さん！
+
+[charaFace A 32]
+
+＠駒姫
+きゃっ！
+[k]
+
+？2：みんな伏せて！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[flashin once 0.5 0.5 FFFFFFAF FFFFFF00]
+[se ade454]
+[seVolume ade454 0 0.3]
+[seStop ade454 2.0]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠壱与
+結界を！
+[k]
+
+？！
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+
+[cameraMove 0.1 0,0 1.01]
+[scene 10000]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.1 1.0]
+[wait wipe]
+
+[se ade8]
+[effect bit_talk_flash_g 0,0 F]
+[wt 0.8]
+
+[wipeout rectangleStripDownToUp 0.1 1.0]
+[wait wipe]
+
+[scene 143500]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.1 1.0]
+[wait wipe]
+
+[effect bit_talk_impactlanding]
+[se ad628]
+[shake 0.05 5 4 2.5]
+[wt 0.5]
+[bgmStop BGM_EVENT_80 2.0]
+[fowardEffect bit_talk_haboob_01 0,0]
+[backEffect bit_talk_haboob_02 0,0]
+[wt 1.8]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.4 0,-10]
+[charaMove B 0,0 0.4]
+[wt 0.4]
+
+＠ノッブ
+ゲホゲホ……、なんじゃ一体？　隕石か何かか！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[bgm BGM_BATTLE_113 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.7 1]
+[wt 0.8]
+[fowardEffectStop bit_talk_haboob_01]
+[backEffectStop bit_talk_haboob_02]
+[wt 0.4]
+
+[se ad827]
+[seStop ad827 3.0]
+[cueSe SE_22 22_ade809]
+[shake 0.05 2 2 0.8]
+[wt 0.3]
+[seStop 22_ade809 2.7]
+
+＠？？？
+MAーCHACHACHACHA！！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠壱与
+な、なんですか、この巨大な、[r]なんていうかその……、ほんとに何なんですか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠ノッブ
+こやつは帝都とかで見た黒巨人……、
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠蘭丸Ｘ
+こ、こいつは遥か昔にサウザンド利休星を[r]滅ぼしたという伝説の流星茶獣！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[cueSe SE_22 22_ade699]
+[seVolume 22_ade699 0 0.4]
+[effect bit_talk_np_buf_02 0,-200]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠千利休
+サウザンド、[wt 0.6]利休、[wt 0.6]星。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_np_buf_02]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠蘭丸Ｘ
+はい、サウザンド利休星、であります！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠ノッブ
+なんとはなしに使いまわし感がするが、[r]違うのなら是非もないの！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠蘭丸Ｘ
+こいつは流星抹茶を餌に成長する[r]ヤバい奴であります！
+[k]
+
+[charaFace G 1]
+[charaFadein G 0.7 250,0]
+[charaFadeTime G 0.7 0.7]
+[charaMove G 300,0 0.7]
+
+＠蘭丸Ｘ
+伝説では謎の聖剣使いＸに滅ぼされたと[r]いわれていたのですが！
+[k]
+
+[charaFadeout G 0.5]
+[charaMove G 250,0 0.5]
+
+[charaFace E 2]
+
+＠蘭丸Ｘ
+まさか蘭丸が手に入れた流星抹茶につられて[r]襲ってきたというわけでありますか！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠ノッブ
+貴様が余計なことしたせいではないか！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 22]
+[charaFadein E 0.1 1]
+
+＠蘭丸Ｘ
+地球の皆さん、ここはこの蘭丸Ｘと力を合わせて[r]流星茶獣を倒すでありますよ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[cueSe SE_22 22_ade699]
+[seVolume 22_ade699 0 0.4]
+[effect bit_talk_np_buf_02 0,-200]
+
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠駒姫
+…………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_np_buf_02]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠ノッブ
+いかん、超展開についてこれておらんぞ、こやつ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 1]
+[wt 1.2]
+
+[charaFaceFade A 3 0.2]
+[wt 0.3]
+
+＠駒姫
+カルデアの皆さまは本当に愉快でございますね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠ノッブ
+と思ったら、意外と肝が据わっとるネ！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_113 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+

@@ -1,0 +1,257 @@
+
+
+
+＄04-00-02-04-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098270900 1 ラニ＝Ｒ]
+[charaSet B 1098269600 1 キャスター]
+[charaSet C 1098270300 1 アーユス]
+[charaSet D 1098269800 1 キャスターのマスター]
+[charaSet E 6037000 1 カーマ]
+[charaSet F 7046001 1 ドゥリーヨダナ]
+[charaSet G 1098270000 1 シオン]
+
+[charaSet L 1098269800 1 キャスターのマスター（演出用）]
+[sceneSet M 189401 1]
+
+
+[charaSet S 98115000 1 エフェクト用ダミー]
+
+
+[scene 189401]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+[wt 0.35]
+
+[se ade423]
+[charaMove A 20,0 0.4]
+[wt 0.3]
+[seStop ade423 0.2]
+[wt 0.65]
+
+[se ad59]
+[charaMove A 120,0 0.4]
+[charaFadeout A 0.4]
+[seStop ad59 1.0]
+[wt 1.3]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠キャスター
+おっと。逃がすと思うか？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[cueSe Battle bac134]
+[cueSe Servants_2500900 m45605]
+[effect bit_talk_x_slash_bk_01]
+[wt 0.65]
+
+
+[se ad464]
+[effect bit_talk_blood_splash_fs]
+[wt 2.2]
+
+[se ad142]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠キャスター
+ああ……たまらん。
+[k]
+
+[charaFace B 12]
+＠キャスター
+命無き人形とはいえ！　女の柔肌に剣を刺し入れるのは！[r]やはり、たまらんものだ！　ハハハハハ！
+[k]
+
+[messageOff]
+[charaTalk L]
+
+[subCameraOn 1]
+[charaLayer L sub #A]
+[charaLayer M sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 3 0,0,0,0]
+
+[charaScale L 1.1]
+[charaScale M 1.2]
+[charaFace L 4]
+[charaFadein L 0.1 0,100]
+[charaFadein M 0.1 450,-125]
+
+[subRenderFadeinFSL #A 0.6 -250,-150]
+[wt 0.8]
+
+＠L：？？？
+喜ぶのはいいが、[r]きちんとラニメントは喰っておけよ、キャスター。
+[k]
+
+[charaFadeout B 0.1]
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠アーユス
+っ、やめなさい！　やめて！
+[k]
+
+？1：キャスターと……
+？2：そのマスター、か……！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠キャスターのマスター
+確認するまでもないだろう？
+[k]
+
+＠キャスターのマスター
+やはり愚かだな、[r]バーサーカーとアサシンのマスター。
+[k]
+
+[charaFaceFade D 9 0.2]
+＠キャスターのマスター
+[#ＡＩ聖杯戦争:システム・グレイルウォー]はリソース確保と補給の戦争だ。
+[k]
+
+＠キャスターのマスター
+それが読めていないから、[r]優秀な私に大事な宝箱を差し出すことになる。
+[k]
+
+[charaFaceFade D 1 0.2]
+＠キャスターのマスター
+ああ、タイプは違うが、大本は同じシリーズだ。
+[k]
+
+＠キャスターのマスター
+ネットワーク妨害程度、解析すれば簡単にできたが、[r]貴様には無理なのだろう？　愚かな顔をしているからな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠アーユス
+……っ……！[wt 0.7][charaFace C 7][r]いいから、その子たちから、離れなさい！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠キャスターのマスター
+離れるわけがないだろう。
+[k]
+
+＠キャスターのマスター
+[#生産部:グ　ロ　ウ]じゃないが、この世界という畑から[r]どうラニメントを収穫するかというときに、
+[k]
+
+＠キャスターのマスター
+最高効率の方法は決まっている。[r]他から奪うことだ。
+[k]
+
+[charaFace D 3]
+＠キャスターのマスター
+まさか[#馬鹿:ば　か][#正直:しょうじき]に自分のところだけで[r]済ませる気だったのか？
+[k]
+
+[charaFace D 4]
+＠キャスターのマスター
+それは[line 3]ああ、本当に愚かなことだな。[r]これほど合理的な唯一の正解にすら気付けないとは。
+[k]
+
+＠キャスターのマスター
+ランダマイザはこんな性能差も生んでしまうのか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_71 1.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠カーマ
+何でしょう。[r]特に理由はないんですけど、心の底から[line 3]
+[k]
+
+[charaFace E 5]
+＠カーマ
+イラッとします。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+＠ドゥリーヨダナ
+欲しいものは奪う。まぁそれはいいだろう。
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace F 10]
+＠ドゥリーヨダナ
+だが実際それをやっていいのは、血筋と顔と実力に[r]恵まれたこのわし様のようなものだけだ！
+[k]
+
+[charaFace F 5]
+＠ドゥリーヨダナ
+ガキが、片腹痛いわ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+＠シオン
+……やるしかないようですね。[r]ですが、気をつけてください。
+[k]
+
+[charaFace G 7]
+＠シオン
+この場に姿を現したということは。[r]私の計算によれば[line 3]
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

@@ -1,0 +1,514 @@
+
+
+
+＄04-00-02-01-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 7046001 1 ドゥリーヨダナ]
+[charaSet B 1098269600 1 キャスター]
+[charaSet C 1098270300 1 アーユス]
+[charaSet D 1098270000 1 シオン]
+[charaSet E 1098270100 1 カーマ]
+[charaSet F 1098269810 1 マキリ]
+[charaSet G 1098270300 1 アーユス_演出用]
+[charaSet H 1098270100 1 カーマ_演出用]
+[charaSet I 1098270000 1 シオン_演出用]
+
+[sceneSet J 10000 1]
+[charaScale J 1.05]
+[sceneSet K 189300 1]
+[sceneSet L 189300 1]
+[charaScale L 1.2]
+
+[charaSet R 5009000 1 エフェクト用1]
+[charaSet S 5009000 1 エフェクト用2]
+[charaSet T 5009000 1 エフェクト用3]
+
+[scene 189300]
+
+[subCameraOn 1]
+[charaLayer K sub #A]
+[charaLayer G sub #A]
+[charaLayer H sub #A]
+[charaLayer I sub #A]
+
+[subCameraFilter #A through]
+[subRenderScale #A 1.02]
+
+[charaTalk depthOff]
+[charaDepth K 1]
+[charaDepth L 1]
+[charaDepth G 2]
+[charaDepth H 2]
+[charaDepth I 2]
+[charaDepth B 2]
+[charaDepth E 2]
+[charaDepth F 2]
+[charaDepth R 3]
+[charaDepth S 3]
+[charaDepth T 3]
+
+[charaFace G 8]
+[charaFadein K 0.1 0,-200]
+[charaFadein G 0.1 1]
+[charaFadein L 0.1 0,-250]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.3]
+
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut R 1]
+[charaEffect R bit_talk_41_fs]
+[charaMoveScale B 1.2 0.3]
+[charaMove B 0,20 0.3]
+[blur motion 0.3 4 200 0.5 0.6 0.05 400]
+[charaFadeout B 0.3]
+[wt 0.4]
+[charaPut R 2500,2500]
+[charaEffectStop R bit_talk_41_fs]
+[charaScale B 1.0]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[se ad85]
+[fowardEffect bit_talk_h_slash01_fs]
+[wt 0.5]
+[cueSe Battle bac169]
+[fowardEffect bit_talk_v_slash01]
+[wt 0.5]
+
+[se ad170]
+[effect bit_talk_14]
+[wt 0.2]
+
+[charaScale E 1.3]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,30]
+[se ad543]
+[seVolume ad543 0 0.5]
+[se ad671]
+[charaShake E 0.05 2 2 0.4]
+[seStop ad671 0.5]
+[seStop ad543 0.5]
+[charaMoveScale E 1.0 0.4]
+[charaMove E 0,0 0.4]
+[wt 0.6]
+
+[se ad73]
+[charaEffect E bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[wt 0.7]
+
+[charaPut R 250,0]
+[charaPut S 1]
+[charaPut T -250,0]
+[se ade440]
+[charaEffect R bit_shot_01]
+[wt 0.3]
+[charaEffect S bit_shot_01]
+[wt 0.3]
+[charaEffect T bit_shot_01]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[cueSe Battle bac169]
+[se ad1014]
+[fowardEffect bit_talk_ichimon01wh 0,-50]
+[fowardEffect bit_talk_14 250,0]
+[charaMoveReturn B -8,0 0.2]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+[fowardEffect bit_talk_14 -250,0]
+[wt 0.8]
+[charaFadeout L 0.5]
+[charaFadeout B 0.5]
+[wt 0.7]
+
+[charaPut E 0,-10]
+[charaTalk E]
+[charaFace E 0]
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect E appearance 1 0.25]
+[wt 0.5]
+[charaMove E 0,0 0.3]
+[wt 1.0]
+
+[fowardEffectDestroy bit_talk_ichimon01wh]
+
+？1：知ってるジルと、何か違う……！？
+？！
+
+＠カーマ
+ええ。騎士っぽい感じかと思いきや、[r]太刀筋はなんだか粗暴で……。
+[k]
+
+[charaFace E 4]
+
+＠カーマ
+しかもこの使い魔たちの操りっぷり。[r]剣持ってるくせにキャスターですか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠B：？？？
+ククク。いかにも、[#俺]のクラスはキャスターだ。[r]よく気付いたな、美しいお嬢さん。
+[k]
+
+＠キャスター
+なかなかに[#そそる]香りの花だ。[r]もう少し育てば我が花嫁に迎えてやってもよい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠カーマ
+今はこの[#朴念仁:ぼくねんじん]を堕落させるのに忙しいので、[r]そういうのは遠慮しておきます。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠C：？？？
+どうなってるの？　助けてくれた……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[clear]
+[charaDepth J 1]
+[charaDepth A 2]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[charaPut J 0,-200]
+[charaFadeTime J 0.2 0.5]
+
+＠A：？？？
+（ハッ）
+[k]
+
+[charaFadeout J 0.2]
+[charaFace A 3]
+
+＠A：？？？
+よ、よーし。よしよしよォし！[r]よく来たな、待っていたぞ！
+[k]
+
+＠A：？？？
+実にさすがだ、心の友よ。[r]おまえたちが来てくれたのならば百人力だ！
+[k]
+
+＠A：？？？
+さあ、共にキャスターを打ち倒そうではないか！
+[k]
+
+？1：へ？
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale B 1.2]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.5 1]
+[charaFadein L 0.5 0,-300]
+[wt 0.7]
+
+＠キャスター
+……。[r]……。
+[k]
+
+＠キャスター
+どうする、マスター。
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_80 0.5 0.5]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[pictureFrame cut063_cinema]
+[charaScale L 1.5]
+[charaMove L 330,-55 0.1]
+[wt 0.3]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[se ad95]
+[seStop ad95 0.5]
+[charaScale F 1.2]
+[charaTalk F]
+[charaFace F 0]
+[charaFadeinFSL F 0.4 -276,200]
+[charaMoveFSL F -256,200 0.4]
+[wt 1.0]
+[charaMove L 330,-222 2.0]
+[charaMoveFSL F -256,-50 2.0]
+[wt 2.2]
+
+＠F：？？？
+チッ。[r]既に別陣営と手を組んでいたのか。
+[k]
+
+＠F：？？？
+二騎を相手取れるほどには[r]リソースの確保は進んでいない。
+[k]
+
+＠F：？？？
+……ここは撤退だ、キャスター。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaScale L 1.2]
+[charaMove L 0,-300 0.1]
+[charaFadeout F 0.1]
+[pictureFrame]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_80 0.5 1.0]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠キャスター
+了解した。部屋に招くのはまた今度……[r]ということだな。
+[k]
+
+[bgmStop BGM_EVENT_80 2.0]
+
+[messageOff]
+[se ade428]
+[charaFadeout B 0.4]
+[wt 0.5]
+[seStop ade428 2.0]
+[wt 3.0]
+
+[charaFadeout L 1.5]
+[wt 2.0]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠シオン
+周囲の触手生物も全て消えたようです。[r]一段落、といったところでしょうか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠カーマ
+さすがに追撃とかしませんからね？[r]今日は働きすぎました。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：？？？
+ど、どういうこと？[r]あっちの人たち、知り合いなの？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[clear]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠A：？？？
+フゥー。ヨシ。[r]わし様の判断は間違っていなかったはずだ。
+[k]
+
+＠A：？？？
+『計算外の何かよくわからん奴』は敵になる前に[r]味方にしとくべきだ。何の役に立つかわからんからな。
+[k]
+
+＠A：？？？
+まあカルナぐらいの掘り出し物は[r]そうそうおらんだろうが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[clear]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠C：？？？
+ちょっと、説明しなさいってば、バーサーカー！
+[k]
+
+？1：（カルナって言った……？）
+？2：（バーサーカー……）
+？！
+
+[messageOff]
+[charaTalk off]
+[subRenderFadein #A 0.4 0,0]
+
+[blur lens 0.1 2 2]
+[se ad231]
+[wt 0.5]
+
+[subRenderFadeout #A 0.5]
+[blurOff lens 1.0]
+[wt 0.5]
+
+[charaFadeout G 0.1]
+[charaFace H 18]
+[charaFadein H 0.1 1]
+[wt 0.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFace E 18]
+[charaFadein E 0.1 1]
+
+＠カーマ
+あれ、ちょっと、マスター？
+[k]
+
+[messageOff]
+[subRenderFadein #A 0.4 0,0]
+
+[blur lens 0.1 2 2]
+[se ad231]
+[wt 0.5]
+
+[subRenderFadeout #A 0.5]
+[blurOff lens 1.0]
+[wt 0.5]
+
+[charaFadeout H 0.1]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+[wt 0.5]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠シオン
+しまった……！[r]後回しにすべきではありませんでした。
+[k]
+
+[charaFace D 1]
+
+＠シオン
+やはり元々不調な部分があり、今の本格的な戦闘行為で[r]さらに負荷がかかってしまったのでしょう。
+[k]
+
+＠シオン
+[%1][&くん:さん]、[r]横になって、深呼吸して[line 3]
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaFace D 4]
+
+＠シオン
+[%1][&くん:さん]！？
+[k]
+
+[messageOff]
+[subRenderFadein #A 0.4 0,0]
+
+[blur lens 0.1 4 4]
+[se ad231]
+[wt 0.5]
+
+[subRenderFadeout #A 0.5]
+[blurOff lens 1.0]
+[wt 0.5]
+
+[charaFadeout I 0.1]
+[charaFadeout K 0.1]
+[wt 0.5]
+
+[subCameraOff]
+[charaLayer G normal]
+[charaLayer H normal]
+[charaLayer I normal]
+[charaLayer K normal]
+[wt 1.0]
+
+[blur lens 0.1 4 4]
+[cameraMove 0.5 0,30 1.01]
+[wipeout openEye 0.5 1.0]
+[wait wipe]
+
+[se ad144]
+[charaFadeout D 0.1]
+[scene 10000]
+[wt 1.5]
+
+[wipein openEye 0.1 1.0]
+[wait wipe]
+
+[fadeout black 2.0]
+[wait fade]
+[blurOff lens 0.1]
+[cameraHome 0.1]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

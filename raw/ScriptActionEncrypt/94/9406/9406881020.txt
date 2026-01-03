@@ -1,0 +1,632 @@
+
+＄94-06-88-10-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 1098229700 1 ヴォジャノーイ]
+[charaSet B 1098231700 1 コン]
+[charaSet C 1053900 1 徴側]
+[charaSet D 1053910 1 徴弐]
+[charaSet E 1098124510 1 ダ・ヴィンチ]
+[charaSet F 1098229300 1 屈強な半魚人]
+[charaSet G 1098124500 1 エフェクト用]
+[charaSet H 1098124500 1 エフェクト用ダミー]
+
+[ifClear 60068801]
+[charaSet I 1098238200 1 リボンコン武装]
+[charaSet J 1098237900 1 コン武装]
+[charaSet K 1098237900 1 コン武装]
+[flag Seisaku_B 1]
+
+[ifClear 60068802]
+[charaSet I 1098238210 1 リボンコン武装]
+[charaSet J 1098237910 1 コン武装]
+[charaSet K 1098237910 1 コン武装]
+[flag Seisaku_B 1]
+
+[ifClear 60068803]
+[charaSet I 1098238220 1 リボンコン武装]
+[charaSet J 1098237920 1 コン武装]
+[charaSet K 1098237920 1 コン武装]
+[flag Seisaku_B 1]
+
+[ifClear 60068804]
+[charaSet I 1098238300 1 リボンコン武装]
+[charaSet J 1098238000 1 コン武装]
+[charaSet K 1098238000 1 コン武装]
+[flag Seisaku_B 2]
+
+[ifClear 60068805]
+[charaSet I 1098238310 1 リボンコン武装]
+[charaSet J 1098238010 1 コン武装]
+[charaSet K 1098238010 1 コン武装]
+[flag Seisaku_B 2]
+
+[ifClear 60068806]
+[charaSet I 1098238320 1 リボンコン武装]
+[charaSet J 1098238020 1 コン武装]
+[charaSet K 1098238020 1 コン武装]
+[flag Seisaku_B 2]
+
+[ifClear 60068807]
+[charaSet I 1098238400 1 リボンコン武装]
+[charaSet J 1098238100 1 コン武装]
+[charaSet K 1098238100 1 コン武装]
+[flag Seisaku_B 3]
+
+[ifClear 60068808]
+[charaSet I 1098238410 1 リボンコン武装]
+[charaSet J 1098238110 1 コン武装]
+[charaSet K 1098238110 1 コン武装]
+[flag Seisaku_B 3]
+
+[ifClear 60068809]
+[charaSet I 1098238420 1 リボンコン武装]
+[charaSet J 1098238120 1 コン武装]
+[charaSet K 1098238120 1 コン武装]
+[flag Seisaku_B 3]
+
+[else]
+[charaSet I 1098238200 1 リボンコン武装]
+[charaSet J 1098237900 1 コン武装]
+[charaSet K 1098237900 1 コン武装]
+[flag Seisaku_B 1]
+
+[endIf]
+
+[imageSet L back10000 1]
+[charaScale L 1.01]
+[charaFilter L silhouette e6b42280]
+[charaFilter L silhouette ffd70080]
+
+[charaDepth L 2]
+[charaDepth E 3]
+[charaDepth B 10]
+[charaDepth J 1]
+[charaDepth K 1]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+[charaPut G 0,0]
+[charaBackEffect G bit_talk_ppl_fog02]
+
+[scene 147104]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[fowardEffect bit_talk_x_slash01]
+[wt 0.1]
+[se bac137]
+[charaShake A 0.04 4 4 0.4]
+[wt 0.1]
+[fowardEffect bit_talk_x_slash02]
+[wt 0.1]
+[se bac136]
+[charaShake A 0.04 4 4 0.4]
+[wt 0.4]
+
+[charaScale J 1.2]
+[se bac1 0.4]
+[wt 0.1]
+[charaFace J 0]
+[charaFadein J 0.4 320,-170]
+[charaMoveScale J 1.0 0.4]
+[charaMove J 256,-150 0.4]
+[wt 0.4]
+
+[branch lblClear_B1_1 Seisaku_B 1]
+[branch lblClear_B2_1 Seisaku_B 2]
+[branch lblClear_B3_1 Seisaku_B 3]
+
+[label lblClear_B1_1]
+[se bac136]
+[branch lblConf1]
+
+
+[label lblClear_B2_1]
+[se bac141]
+[branch lblConf1]
+
+
+[label lblClear_B3_1]
+[se bac145]
+[branch lblConf1]
+
+[label lblConf1]
+
+[charaEffect A bit_talk_14]
+[charaShake A 0.05 4 4 0.4]
+[wt 1.2]
+[charaFadeout J 0.2]
+[wt 0.2]
+
+[charaSpecialEffect A enemyErasure 1 1.2]
+[se ad42]
+[wait charaSpecialEffect A]
+[wt 0.3]
+
+[cueSe SE_22 22_ade699]
+[effect bit_talk_kira_lp]
+[wt 1.2]
+[seStop adm19 1.0]
+[effectStop bit_talk_kira_lp]
+[charaFace B 0]
+[charaFadein B 0.2 0,-70]
+[charaMove B 0,-30 0.2]
+[se adm58]
+[wt 0.2]
+[seStop adm58 0.2]
+[charaMove B 0,-50 0.2]
+[wt 1.2]
+
+[messageOff]
+[wipeout leftToRight 0.5 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 147400]
+[wt 0.4]
+[wipein rightToLeft 0.5 1]
+[wait wipe]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[se bac149]
+[fowardEffect bit_talk_13 80,140]
+[wt 0.1]
+[charaShake A 0.04 4 4 0.4]
+[wt 0.1]
+[se bac150]
+[fowardEffect bit_talk_13 -150,-80]
+[wt 0.1]
+[charaShake A 0.04 4 4 0.4]
+[wt 0.4]
+
+[charaScale J 1.2]
+[se bac1 0.4]
+[wt 0.1]
+[charaFace J 0]
+[charaFadein J 0.4 -320,-170]
+[charaMoveScale J 1.0 0.4]
+[charaMove J -256,-150 0.4]
+[wt 0.4]
+
+[branch lblClear_B1_2 Seisaku_B 1]
+[branch lblClear_B2_2 Seisaku_B 2]
+[branch lblClear_B3_2 Seisaku_B 3]
+
+[label lblClear_B1_2]
+[se bac136]
+[se bac137]
+[branch lblConf2]
+
+
+[label lblClear_B2_2]
+[se bac141]
+[se bac142]
+[branch lblConf2]
+
+
+[label lblClear_B3_2]
+[se bac145]
+[se bac146]
+[branch lblConf2]
+
+[label lblConf2]
+
+[charaEffect A bit_talk_14]
+[charaShake A 0.05 4 4 0.4]
+[wt 1.2]
+[charaFadeout J 0.2]
+[wt 0.2]
+
+[charaSpecialEffect A enemyErasure 1 1.2]
+[se ad42]
+[wait charaSpecialEffect A]
+[wt 0.3]
+
+[cueSe SE_22 22_ade699]
+[effect bit_talk_kira_lp]
+[wt 1.2]
+[seStop adm19 1.0]
+[effectStop bit_talk_kira_lp]
+[charaFace B 0]
+[charaFadein B 0.2 0,-70]
+[charaMove B 0,-30 0.2]
+[se adm58]
+[wt 0.2]
+[seStop adm58 0.2]
+[charaMove B 0,-50 0.2]
+[wt 1.2]
+
+[messageOff]
+[wipeout leftToRight 0.5 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 147700]
+[wt 0.4]
+[wipein rightToLeft 0.5 1]
+[wait wipe]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[charaFadeTime L 0.2 0.7]
+[cueSe Servants_403800 bac1589]
+[wt 0.3]
+[charaFadeout L 0.4]
+[charaShake A 0.04 4 4 0.7]
+[wt 0.4]
+
+[charaScale J 1.2]
+[charaScale K 1.2]
+[se bac1 0.4]
+[wt 0.1]
+[charaFace K 0]
+[charaFadein K 0.4 320,-170]
+[charaMoveScale K 1.0 0.4]
+[charaMove K 256,-150 0.4]
+[wt 0.1]
+[charaFace J 0]
+[charaFadein J 0.4 -320,-170]
+[charaMoveScale J 1.0 0.4]
+[charaMove J -256,-150 0.4]
+[wt 0.25]
+
+[branch lblClear_B1_3 Seisaku_B 1]
+[branch lblClear_B2_3 Seisaku_B 2]
+[branch lblClear_B3_3 Seisaku_B 3]
+
+[label lblClear_B1_3]
+[se bac137]
+[branch lblConf3]
+
+
+[label lblClear_B2_3]
+[se bac142]
+[branch lblConf3]
+
+
+[label lblClear_B3_3]
+[se bac146]
+[branch lblConf3]
+
+[label lblConf3]
+
+[charaEffect A bit_talk_14]
+[charaShake A 0.05 4 4 0.4]
+[wt 0.2]
+
+[branch lblClear_B1_4 Seisaku_B 1]
+[branch lblClear_B2_4 Seisaku_B 2]
+[branch lblClear_B3_4 Seisaku_B 3]
+
+[label lblClear_B1_4]
+[se bac139]
+[branch lblConf4]
+
+
+[label lblClear_B2_4]
+[se bac143]
+[branch lblConf4]
+
+
+[label lblClear_B3_4]
+[se bac147]
+[branch lblConf4]
+
+[label lblConf4]
+
+[wt 1.1]
+[charaFadeout J 0.2]
+[charaFadeout K 0.2]
+[wt 0.2]
+[charaScale J 1.0]
+[charaScale K 1.0]
+
+[charaSpecialEffect A enemyErasure 1 1.2]
+[se ad42]
+[wait charaSpecialEffect A]
+[wt 0.3]
+
+[cueSe SE_22 22_ade699]
+[effect bit_talk_kira_lp]
+[wt 1.2]
+[seStop adm19 1.0]
+[effectStop bit_talk_kira_lp]
+[charaFace B 0]
+[charaFadein B 0.2 0,-70]
+[charaMove B 0,-30 0.2]
+[se adm58]
+[wt 0.2]
+[seStop adm58 0.2]
+[charaMove B 0,-50 0.2]
+[wt 1.2]
+
+[messageOff]
+[wipeout leftToRight 0.5 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaDepth B 0]
+[charaFilter L normal e6b42280]
+[scene 147104]
+[wt 0.4]
+[wipein rightToLeft 0.5 1]
+[wait wipe]
+
+[bgmStop BGM_EVENT_80 2.0]
+[se ade153 0.4]
+[seStop ade153 2.0]
+[charaBackEffectStop G bit_talk_ppl_fog02]
+[scene 147100 0.5]
+[wt 2.0]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 176,0]
+
+＠徴側
+あっ、霧が晴れました！[r]どうやらヴォジャノーイの襲撃が終わったみたいです！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 -196,0]
+
+＠徴弐
+ふぅ。守りきれた……。
+[k]
+
+[charaFace D 1]
+
+＠徴弐
+追い払えたの、初めてだ。よかった。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+[charaTalk off]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+[charaFace J 0]
+[charaFadeinFSL J 0.1 0]
+[charaFace K 1]
+[charaFadeinFSR K 0.1 2]
+[wt 0.4]
+[cueSe SE_22 22_ade697]
+[charaMoveReturn I 0,4 0.4]
+[wt 0.1]
+[charaMoveReturnFSL J -256,4 0.2]
+[wt 0.2]
+[charaMoveReturnFSR K 256,4 0.5]
+[wt 0.2]
+[cueSe SE_22 22_ade697]
+[charaMoveReturnFSL J -256,4 0.2]
+[wt 0.1]
+[charaMoveReturn I 0,4 0.4]
+[wt 0.7]
+
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 176,0]
+
+＠徴側
+弐っちゃんの言った通りです。[r]せっかく島のエリアを取り戻せても、
+[k]
+
+＠徴側
+新しい水怪が海から来て取り返されちゃったら[r]堂々巡りになっていました。
+[k]
+
+＠徴側
+わたしたちの戦いにはちゃんと意味があるんだ、
+[k]
+
+＠徴側
+きちんと前進してるんだ、[r]って思えるようになったのが嬉しいです！
+[k]
+
+[charaFace C 0]
+
+＠徴側
+これも皆さんが[r]防衛網を構築してくださったおかげですね。
+[k]
+
+＠徴側
+わたしたちには見たこともないような、[r]素敵な設備を作ってくださって……
+[k]
+
+＠徴側
+本当に、ありがとうございます。[r]コンたちも喜んでますし。
+[k]
+
+？1：力になれたならよかった
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：二人の指導力もあってこそだよ！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth D 1]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 1.2]
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk on]
+[charaTalk depthOn]
+？！
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+よーし、水怪たちの襲撃も終わったようだし。
+[k]
+
+＠ダ・ヴィンチ
+おかわりが来ないうちに、[r]次のエリアの攻略を始めるとしよう。
+[k]
+
+＠ダ・ヴィンチ
+もちろん、ちょっとは休息してからね！
+[k]
+
+[charaFace E 24]
+[bgm BGM_EVENT_77 0.2 0.7]
+[charaFadeTime L 0.2 0.6]
+
+＠ダ・ヴィンチ
+（……その隙に、[r]　こちらは改めて分析作業を進めないとだ）
+[k]
+
+＠ダ・ヴィンチ
+（海の彼方の霧から現れる、[r]　地域がバラバラな水怪たち）
+[k]
+
+＠ダ・ヴィンチ
+（相変わらずはっきりしないこの島の座標数値。[r]　ここは、『何』で『何処』なんだ……？）
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaPut H 1200,1200]
+[charaFadeout E 0.1]
+[charaFadeout L 0.1]
+[pictureFrame cut063_cinema]
+[scene 10000]
+[wt 1.5]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_129 0.1 0.7]
+
+＠
+補充は失敗した。不甲斐ない。[r]あれでは足りぬ。
+[k]
+
+＠
+大事なものを奪われようとしているのならば、[r]もう少し必死になってよかろうものを。
+[k]
+
+＠
+だが、失望するほどの期待はなかった。
+[k]
+
+＠
+[line 3]故にこそ、残り物にも興味はなく。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_129 1.0 0.4]
+[fadeout black 1.0]
+[wait fade]
+[scene 147700]
+[wt 1.0]
+[bgm BGM_EVENT_129 1.0 0.7]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.2]
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth A 1]
+[charaScale F 0.8]
+[charaTalk off]
+[charaFace A 0]
+[charaFadeinFSL A 0.1 -256,-50]
+[charaFace F 0]
+[charaFadeinFSR F 0.1 256,-50]
+[se ad26]
+[wt 1.0]
+[seStop ad26 1.0]
+[cueSe SE_22 22_ade702]
+[wt 1.4]
+[charaMove A 0,-50 0.2]
+[charaMove F 0,-50 0.2]
+[charaFadeout A 0.2]
+[charaFadeout F 0.2]
+[wt 0.4]
+
+[se bac149 0.7]
+[wt 0.2]
+[se bac148 0.7]
+[se ad466 0.7]
+[wt 0.3]
+[se ad1028 0.7]
+[effect bit_talk_35]
+[wt 2.0]
+
+[charaSet F 1098229310 1 屈強な半魚人]
+[charaScale F 0.8]
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 0,-50]
+[wt 0.4]
+
+＠屈強な半魚人
+ハーーーーッ……。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_129 1.0 0.4]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout F 0.1]
+[scene 10000]
+[wt 1.0]
+[bgm BGM_EVENT_129 1.0 0.7]
+[fadein black 1.0]
+[wait fade]
+
+＠
+あのご馳走とは程遠くとも。
+[k]
+
+＠
+誰かの腹の足しに、なるだけだろう。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_129 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

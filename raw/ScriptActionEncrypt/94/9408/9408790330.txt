@@ -1,0 +1,779 @@
+
+
+＄94-08-79-03-3-0
+
+
+
+[enableFullScreen]
+[soundStopAll]
+[charaSet A 7031000 1 ジャンヌ・オルタ]
+[charaSet B 4008000 1 黒髭]
+[charaSet C 4008000 1 黒髭_演出用1]
+[charaScale C 1.2]
+[charaSet D 4008000 1 黒髭_演出用2]
+[charaScale D 1.2]
+[charaSet E 4008000 1 黒髭_演出用3]
+[charaScale E 1.2]
+[charaSet F 4008000 1 黒髭_演出用4]
+[charaScale F 1.2]
+[charaSet G 1098276800 1 マシュ]
+[charaSet H 7016300 1 タマモキャット]
+[charaSet I 1034001 1 メイヴ]
+[charaSet J 1098274400 1 アルトリア・キャスター]
+[charaSet K 1020300 1 ランスロット]
+[charaSet L 7031000 1 ジャンヌ・オルタ_石化]
+[charaFilter L silhouette 79797980]
+[charaSet M 23001000 1 BB]
+
+[sceneSet N 10000 1]
+[sceneSet O 196900 1]
+[charaScale O 1.2]
+[sceneSet P 196900 1]
+[charaScale P 1.2]
+[sceneSet Q 196900 1]
+[charaScale Q 1.2]
+[sceneSet R 196900 1]
+[charaScale R 1.2]
+
+[charaSet S 98115000 1 エフェクト用]
+
+
+
+
+
+
+[subCameraOn 4]
+[charaLayer O sub #A]
+[charaLayer C sub #A]
+[charaLayer P sub #B]
+[charaLayer D sub #B]
+[charaLayer Q sub #C]
+[charaLayer E sub #C]
+[charaLayer R sub #D]
+[charaLayer F sub #D]
+
+[charaDepth O 1]
+[charaDepth P 1]
+[charaDepth Q 1]
+[charaDepth Q 1]
+[charaDepth C 2]
+[charaDepth D 2]
+[charaDepth E 2]
+[charaDepth F 2]
+
+[subCameraFilter #A maskEdge cut359_mask05 4 255,255,255,255 0]
+[subCameraFilter #B maskEdge cut359_mask05 4 255,255,255,255 0]
+[subCameraFilter #C maskEdge cut359_mask05 4 255,255,255,255 0]
+[subCameraFilter #D maskEdge cut359_mask05 4 255,255,255,255 0]
+
+[charaFace C 0]
+[charaFace D 3]
+[charaFace E 5]
+[charaFace F 2]
+[charaFadein O 0.1 0,150]
+[charaFadein P 0.1 0,150]
+[charaFadein Q 0.1 0,150]
+[charaFadein R 0.1 0,150]
+[charaFadein C 0.1 -20,300]
+[charaFadein D 0.1 -20,300]
+[charaFadein E 0.1 -20,300]
+[charaFadein F 0.1 -20,300]
+
+[scene 196900]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+最終日の人気投票ぉ？[r]負けたら解散ですってぇ？
+[k]
+
+[charaFace A 0]
+
+＠ジャンヌ・オルタ
+黒髭、なに勝手に勝負受けてるのよ。[r]そんなの罠に決まってるじゃない。死にたいの？
+[k]
+
+＠ジャンヌ・オルタ
+というより殺すか。黒髭の首を送り届ければ[r]『さっきのなし』って伝わるでしょ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠黒髭
+やだ、拙者の首飛んじゃう？[r]船の上じゃないから海にも飛び込めない？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+そうよ。無能な働き者は即死刑。[r]……なんて、今までなら言っていただろうけど……
+[k]
+
+[se ad139]
+[charaFace A 11]
+
+＠ジャンヌ・オルタ
+今回にかぎっては褒めてあげる！[r]サークル勝負、受けて立ちましょう！
+[k]
+
+＠ジャンヌ・オルタ
+こっちには[%1]がいるんだから、[r]もう勝ったも同然よ！
+[k]
+
+？1：それなんだけど、今回は一般参加なんだ
+？2：ちょっと他に用事があって
+
+？！
+
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth L 2]
+[charaDepth A 1]
+[charaPut L 1]
+[charaFadeTime L 0.3 0.6]
+[se ad198]
+[wt 3.0]
+[charaFadeout L 0.2]
+
+[charaFace A 8]
+
+＠ジャンヌ・オルタ
+どうして！？　悪いものでも食べた！？[r]サークルに参加しないなんて生きてる意味なくない！？
+[k]
+
+？1：会場にいるだけで参加者だよ
+？2：フィナーレを楽しみにしているよ
+
+？！
+
+[charaFace A 16]
+
+＠ジャンヌ・オルタ
+うげ。その顔、本気ね。[r]そうなるとテコでも動かないわよね、アンタ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠黒髭
+まあ、拙者はなんとなく察していましたが。
+[k]
+
+＠黒髭
+だって[%1]殿、[r]今回は澄んだオーラしてたので。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+[#前回:わたし]の時は[r][#淀:よど]んだオーラだったって言いたいのかしら？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+＠マシュ
+でも、わたしは賛成です。今回の先輩は[r]カルデアの宿題を終わらせたばかりですので、
+[k]
+
+＠マシュ
+こちらに来てからはゆっくりするのが[r]よろしいかと。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+……まあ、そうよね。[r]疲れ切った脳じゃろくなネームも浮かばないし。
+[k]
+
+[charaFace A 0]
+
+＠ジャンヌ・オルタ
+となると、やっぱり黒髭の首を斬るしかないか……[r]紅閻魔に頼めば塩漬けにしてもらえるでしょ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠黒髭
+やめて、拙者のガッツをそういうコトに使わないで。
+[k]
+
+[charaFace B 5]
+[bgmStop BGM_EVENT_7 1.5]
+
+＠黒髭
+そもそも、一度買ったケンカから逃げるなんて[r]オルタ殿らしくありませんぞ。
+[k]
+
+＠黒髭
+ここはもうやるしかないでしょ。[r]オルタ殿も、同盟のみんながいるんだし。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_5 0.1]
+
+＠ジャンヌ・オルタ
+……私はパス。[r]前回は[%1]のアシがあってこそよ。
+[k]
+
+＠ジャンヌ・オルタ
+[%1]がやらないんなら、[r]同盟の足を引っ張るだけだし。
+[k]
+
+[charaFace A 13]
+
+＠ジャンヌ・オルタ
+それに同盟の連中もとっくに牙が折れて[r]そこいらで遊んでるじゃない。
+[k]
+
+＠ジャンヌ・オルタ
+ジャンル・アルトリアでサバフェスの頂点を[r]とれるようなサークルなんて、今の同盟にはないわ。
+[k]
+
+？1：他のサークルに連絡はとれる？
+？2：同盟のサークルを教えて
+
+？！
+
+[charaFace A 9]
+
+＠ジャンヌ・オルタ
+他のサークルぅ？
+[k]
+
+＠ジャンヌ・オルタ
+同盟の創設メンバーは私と黒髭と[r]タマモキャットとメイヴだったけど、
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaPut H 1]
+[charaFadeTime H 0.4 0.7]
+[wt 0.4]
+
+＠タマモキャット
+ケモノはケモノでもナマケモノになる気はないのだな。[r]反省してユーカリでもかじって死ぬがよい。
+[k]
+
+[messageOff]
+[charaFadeout H 0.4]
+[wt 0.4]
+
+[charaTalk depthOff]
+[charaDepth G 2]
+[charaDepth N 1]
+[charaScale N 1.2]
+[charaPut N 0,-200]
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+[charaFadeTime N 0.2 0.5]
+
+＠マシュ
+（なぜユーカリ？）
+[k]
+
+[messageOff]
+[charaFadeout N 0.2]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 11]
+[charaPut I 1]
+[charaFadeTime I 0.4 0.7]
+[wt 0.4]
+
+＠メイヴ
+ジャンルがアルトリアって、私の写真集じゃ[r]ダメってコトでしょ？　カルデアに帰るわ。
+[k]
+
+[messageOff]
+[charaFadeout I 0.4]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+あとは正常化委員会のノリに合わないんで[r]うちに来た連中が……黒髭、誰だっけ？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[se ade227]
+[blur lens 0.4 2 20]
+[subRenderFadein #A 0.3 -382,-280]
+[subRenderMove #A -382,-330 0.3]
+[wt 0.5]
+
+＠黒髭
+『とにかく体制に[#叛逆:はんぎゃく]したいモードレッドと、[r]　そんなモードレッドを付け狙う謎のレディ』
+[k]
+
+[messageOff]
+[se ade227]
+[subRenderMove #A -382,-380 0.3]
+[subRenderFadeout #A 0.3]
+[subRenderFadein #B 0.3 -128,-380]
+[subRenderMove #B -128,-330 0.3]
+[wt 0.5]
+
+＠黒髭
+『はじめての同人活動でワイワイしたいのに[r]　なにしていいか分からないガールズ』
+[k]
+
+
+[messageOff]
+[se ade227]
+[subRenderMove #B -128,-280 0.3]
+[subRenderFadeout #B 0.3]
+[subRenderFadein #C 0.3 130,-280]
+[subRenderMove #C 130,-330 0.3]
+[wt 0.5]
+
+＠黒髭
+『確かに前回のサバフェスでは出番はなかった。[r]　だが今は違う！　たのしい保健室』
+[k]
+
+[messageOff]
+[se ade227]
+[subRenderMove #C 130,-380 0.3]
+[subRenderFadeout #C 0.3]
+[subRenderFadein #D 0.3 384,-380]
+[subRenderMove #D 384,-330 0.3]
+[wt 0.5]
+
+＠黒髭
+『サバフェス史上最大のスケール、[r]　100名を超える巨大サークル・ヨロシク[#梁山泊:りょうざんぱく]』
+[k]
+
+[messageOff]
+[blurOff lens 0.3]
+[subRenderMove #D 384,-280 0.3]
+[subRenderFadeout #D 0.3]
+[charaTalk on]
+[cameraMove 0.7 0,-35 1.1]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.5]
+[se ade227]
+[wt 0.2]
+
+＠黒髭
+『犬も歩けば美少年。その[#畑:ジャンル]は既に二百年前に[#耕:たがや]した。[r]　再び手を組んだ二人のジジイとその仲間たち』
+[k]
+
+
+[se ade226]
+
+＠黒髭
+以上がうちの主力サークルですな。
+[k]
+
+[messageOff]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout B 0.4]
+[cameraHome 0.5]
+[wt 0.7]
+[charaLayer O normal]
+[charaLayer P normal]
+[charaLayer Q normal]
+[charaLayer R normal]
+[charaLayer C normal]
+[charaLayer D normal]
+[charaLayer E normal]
+[charaLayer F sub #D]
+[subCameraOff]
+
+[charaTalk depthOn]
+[charaTalk J]
+[charaFace J 14]
+[charaFadein J 0.1 1]
+
+＠アルトリア・キャスター
+すごい、[r]そんなにたくさんのサークルがあるんだ！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠黒髭
+まあ、ジャンル・アルトリアのせいで[r]今はどこも活動停止中ですが。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 12]
+[charaFadein J 0.1 1]
+
+＠アルトリア・キャスター
+すごい、そんなにたくさんのサークルに[r]迷惑かけてるんだ……。
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.2]
+[bgmStop BGM_EVENT_5 1.5]
+
+？1：わかった。サークル参加はできないけど
+
+？！
+
+[wt 0.2]
+
+？1：みんなに差し入れをするくらいは手伝うよ
+
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_77 0.1]
+
+＠ジャンヌ・オルタ
+臨時アシスタント、いえ、[r]臨時マネージャーって事ね！
+[k]
+
+＠ジャンヌ・オルタ
+それなら完成する可能性もあるわ。[r]えーと、なんだっけ。ハワトリアで[#奪:と]れる資源。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+＠ランスロット
+本能のエナドリ、知識のカレー、感情のステーキ、[r]この三つのエナジーの事かな？
+[k]
+
+＠ランスロット
+たしかにあれらは創作のエネルギーになると[r]他の水着サーヴァントから聞いている。
+[k]
+
+＠ランスロット
+それ以外の応援物資の入手は[r]アンテナショップを利用するといいだろう。
+[k]
+
+＠ランスロット
+アルポンドがあれば、[r]委員会のスタッフが様々な物資と取り替えてくれる。
+[k]
+
+＠ランスロット
+これがその会員証だ。マスターに譲ろう。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠マシュ
+なるほど。[r]詳しいんですねランスロット卿。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 14]
+[charaFadein K 0.1 1]
+
+＠ランスロット
+も、もちろん、オフィス街で事前調査をした結果だとも。[r]ビーチではないんだ。わかるね？
+[k]
+
+[charaFace K 0]
+
+＠ランスロット
+とにかく、それらの資源は『創作の糧』になるらしい。
+[k]
+
+＠ランスロット
+やる気を失ったサークルには[r]いい薬になるのではないかな？
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+そうそう。心の力を取り戻す差し入れは[r]栄養補給こそベストよ。
+[k]
+
+＠ジャンヌ・オルタ
+まあ、アンタが顔を出すのが連中にとって[r]最高のエナジーでしょうけど。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠黒髭
+ふむ。つまり、まとめると……
+[k]
+
+＠黒髭
+マスター殿が反サバフェス同盟のリーダーになって、[r]うだつあがらぬサークルの尻持ちをしてくれる、と。
+[k]
+
+[charaFace B 5]
+
+＠黒髭
+なんてこった夢みたい。[r]ええい、こんな姿をさらしている場合じゃねえ！
+[k]
+
+[charaFace B 2]
+[bgmStop BGM_EVENT_77 1.0]
+
+＠黒髭
+黒髭、チェーーーンジ！
+[k]
+
+[messageOff]
+[se bac66]
+[se ade395]
+[fadeout white 0.3]
+[wait fade]
+
+[charaCrossFade B 1098155400 8 0.1]
+[wait charaCrossFade K]
+[wt 0.2]
+
+[fadein white 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_62 0.1]
+
+＠黒髭
+サバフェス[#既:すで]に死す、オルタまさに立つべし！[r]拙者も手伝うぜ、[%1]の[&兄貴:姉貴]！
+[k]
+
+[charaFace B 5]
+
+＠黒髭
+アンタが決起したなら勝利は確定だ！[r]コイツは楽しいフィナーレになりそうですなぁ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+＠マシュ
+その方針であれば無理のない観光ができますね。[r]資源集め、わたしもお手伝いします先輩。
+[k]
+
+＠マシュ
+それに……
+[k]
+
+＠マシュ
+やっぱり、サバフェスの最終日に本が[r]完成していないのは悲しい事ですから。
+[k]
+
+＠マシュ
+あ、でも先輩たちには他に用事がある、[r]との事でしたが……？
+[k]
+
+？1：そう。後でマシュにも相談するよ
+[messageOff]
+[wt 0.5]
+
+？2：（黒髭には……話せないか）
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth G 2]
+
+[charaPut M -300,0]
+[charaFace M 1]
+[charaFadeTime M 0.2 0.7]
+[wt 1.5]
+[charaFadeout M 0.2]
+[wt 0.2]
+[charaTalk depthOn]
+[charaTalk on]
+
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.5]
+
+
+？1：アルキャスもそれでいい？
+
+？！
+
+[charaFace J 6]
+
+＠アルトリア・キャスター
+うん。ヤラアーンドゥの事も気になるし、[r]コードについては他人事じゃないし。
+[k]
+
+＠アルトリア・キャスター
+反サバフェス同盟のみんなを助けるのは[r]最終的にプラスになると思う。
+[k]
+
+[charaFace J 0]
+
+＠アルトリア・キャスター
+ただ、わたしはサークル活動とか[r]よく分からないので、
+[k]
+
+＠アルトリア・キャスター
+[%1]とマシュがそっちに[r]専念している時は例の調査を進めてるね。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFadein K 0.1 1]
+
+＠ランスロット
+万事まとまったようで何より。[r]では、私はこのあたりで、
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 15]
+[charaFadein G 0.1 1]
+
+＠マシュ
+ランスロット卿もサークル活動のお手伝いをして[r]くださるんですよね。
+[k]
+
+＠マシュ
+鶏ではあるまいし、ビーチで羽を伸ばす[r]円卓の騎士がいるはずがないのですし。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 10]
+[charaFadein K 0.1 1]
+[wt 1.2]
+[charaFaceFade K 14 0.3]
+[wt 0.3]
+＠ランスロット
+もちろんだとも。困っている者を助けるのが[r]騎士の本懐。いやあ、腕がなるなあ！
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[wt 0.5]
+
+？1：よし、じゃあ早速[line 3]
+？2：島の調査と、みんなへの挨拶を始めよう！
+
+？！
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStopEnd BGM_EVENT_62 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]
