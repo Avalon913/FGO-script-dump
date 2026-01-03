@@ -1,4 +1,4 @@
-name: Auto Dump FGO Scripts (no txt + updates story-only, append changes)
+name: Auto Dump FGO Scripts (no txt + updates only NEW story files)
 
 permissions:
   contents: write
@@ -22,7 +22,7 @@ jobs:
           rm -rf atlas-data
           git clone --depth 1 https://git.atlasacademy.io/atlasacademy/fgo-game-data.git atlas-data
 
-      - name: Sync Script + updates/YYYY-MM-DD (append changed story files; do NOT delete updates)
+      - name: Sync Script + updates/YYYY-MM-DD (updates = NEW story files only)
         shell: bash
         run: |
           set -euo pipefail
@@ -37,27 +37,32 @@ jobs:
             rm -f "Script/ScriptFileList"
           fi
 
+          # Walk all .txt files in upstream data (no directory assumptions)
           while IFS= read -r -d '' f; do
-            rel="${f#atlas-data/ScriptActionEncrypt/}"  # preserve relative path
-            out="Script/${rel%.txt}"                    # remove .txt
-            upd="updates/$DATE/${rel%.txt}"
+            rel="${f#atlas-data/ScriptActionEncrypt/}"   # keep relative path
+            out="Script/${rel%.txt}"                    # Script cache (no .txt)
+            upd="updates/$DATE/${rel%.txt}"             # updates keeps relative path (no .txt)
 
             mkdir -p "$(dirname "$out")"
+            mkdir -p "$(dirname "$upd")"
 
-            # Only when new/changed compared to Script cache
-            if [ ! -f "$out" ] || ! cmp -s "$f" "$out"; then
+            # 1) NEW file (never existed in Script before) -> may go into updates
+            if [ ! -f "$out" ]; then
               # Update Script cache
               cp "$f" "$out"
 
-              # updates: only story files (no content modifications)
+              # updates: only NEW story files
               if grep -a -q -E '^(＠|？[0-9]+：)' "$f"; then
-                mkdir -p "$(dirname "$upd")"
                 cp "$f" "$upd"
               fi
+
+            # 2) Existing file changed -> update Script only (NEVER into updates)
+            elif ! cmp -s "$f" "$out"; then
+              cp "$f" "$out"
             fi
           done < <(find atlas-data/ScriptActionEncrypt -type f -name "*.txt" -print0)
 
-          # Safety: remove any accidental .txt files under Script/
+          # Safety: remove any accidental .txt files under Script/ (shouldn't exist)
           find Script -type f -name "*.txt" -delete || true
 
       - name: Commit and push (skip if no changes)
