@@ -1,8 +1,6 @@
 import requests
 
-# 测试用：一个已知存在的 ScriptID
-SCRIPT_ID = "0100000010"
-
+SCRIPT_ID = "0400000100"
 URL = f"https://apps.atlasacademy.io/db/JP/script/{SCRIPT_ID}.json"
 
 def main():
@@ -11,12 +9,12 @@ def main():
 
     if resp.status_code != 200:
         print("请求失败")
+        print(resp.text[:200])
         return
 
     data = resp.json()
-
     print("成功获取 Script JSON")
-    print("包含的字段：", list(data.keys()))
+    print("字段:", list(data.keys()))
     print("text 行数:", len(data.get("text", [])))
 
 if __name__ == "__main__":
