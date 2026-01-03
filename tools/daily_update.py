@@ -1,19 +1,22 @@
 import requests
 
-URL = "https://api.atlasacademy.io/export/JP/script.json"
+# 测试用：一个已知存在的 ScriptID
+SCRIPT_ID = "0100000010"
+
+URL = f"https://apps.atlasacademy.io/db/JP/script/{SCRIPT_ID}"
 
 def main():
-    resp = requests.get(URL, timeout=60)
-    resp.raise_for_status()
+    resp = requests.get(URL, timeout=30)
+    print("HTTP 状态码:", resp.status_code)
+
+    if resp.status_code != 200:
+        print("请求失败")
+        return
 
     data = resp.json()
 
-    ids = [str(item["id"]) for item in data]
-
-    print(f"ScriptID 总数: {len(ids)}")
-    print("前 10 个 ScriptID：")
-    for sid in ids[:10]:
-        print(sid)
+    print("成功获取 Script JSON")
+    print("包含的字段：", list(data.keys()))
 
 if __name__ == "__main__":
     main()
