@@ -13,29 +13,31 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
       - name: Clone Atlas Academy game data
         run: |
           git clone --depth 1 https://git.atlasacademy.io/atlasacademy/fgo-game-data.git atlas-data
 
-      - name: Prepare directories
-        run: |
-          mkdir -p raw
-          mkdir -p updates/$(date +%F)
-
       - name: Sync ScriptActionEncrypt to raw
         run: |
+          mkdir -p raw
           rsync -a --delete atlas-data/ScriptActionEncrypt/ raw/ScriptActionEncrypt/
 
-      - name: Copy updated scripts to updates folder
+      - name: Build Script folder (remove .txt extension)
         run: |
-          rsync -a atlas-data/ScriptActionEncrypt/ updates/$(date +%F)/ScriptActionEncrypt/
+          rm -rf Script
+          mkdir -p Script
+          find raw/ScriptActionEncrypt -type f -name "*.txt" | while read f; do
+            name=$(basename "$f" .txt)
+            cp "$f" "Script/$name"
+          done
 
-      - name: Commit changes
+      - name: Commit and push
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add raw updates
-          git diff --cached --quiet || git commit -m "auto: update script dumps ($(date +%F))"
+          git add raw Script
+          git diff --cached --quiet || git commit -m "auto: update scripts ($(date +%F))"
           git push
