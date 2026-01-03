@@ -1,0 +1,289 @@
+
+
+
+
+
+
+
+
+
+＄04-00-05-21-3-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098239320 1 カドック]
+[charaSet B 1098324400 1 リリス]
+[charaSet C 1098321400 1 モリアーティ]
+[charaSet D 28010001 1 ダンテ]
+[charaSet E 1098321000 1 メタトロン・ジャンヌ]
+
+[sceneSet F 245600 1]
+[charaScale F 1.4]
+[sceneSet G 245600 1]
+[charaScale G 1.4]
+[charaSet H 98115000 1 エフェクト用]
+
+[charaSet I 1098239320 1 カドック_拡大用]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth B 2]
+[charaDepth A 3]
+[charaDepth G 4]
+[charaDepth I 5]
+
+[scene 245600]
+
+[charaFadein F 0.1 -100,-200]
+[pictureFrameTop cut063_cinema]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 0,-50]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠カドック
+これで何とか……！
+[k]
+
+[messageOff]
+[charaMoveEase F 100,-200 1.2 easeOutSine]
+[charaMoveEase A 200,-50 1.2 easeOutSine]
+[wt 1.2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 -300,-50]
+[wt 0.4]
+
+＠リリス
+これで目的地まで行ける？[r]じゃあアテシはこれで失礼するー。
+[k]
+
+[charaFace A 8]
+
+＠カドック
+お、おう。……ありがとな。
+[k]
+
+[charaFace B 13]
+
+＠リリス
+なに言ってんの。敵相手に、さ。
+[k]
+
+[charaFace A 1]
+
+＠カドック
+……敵、か。
+[k]
+
+[charaFace B 2]
+
+＠リリス
+そうだよー？
+[k]
+
+[charaFace A 0]
+
+＠カドック
+前は味方だって言ってなかったっけか？
+[k]
+
+[charaFace B 6]
+
+＠リリス
+言ってたっけー？　うーん……言ってたかも。
+[k]
+
+[charaFace A 4]
+
+＠カドック
+……まさかとは思うが。[r]アンタ、その場[#凌:しの]ぎで言葉を口に出してるのか？
+[k]
+
+[charaFace B 17]
+
+＠リリス
+何よー、悪いー？
+[k]
+
+[charaFace A 2]
+
+＠カドック
+いや……悪いだろ、それは。[r]……まあ、僕が[#叱咤:しった]できる身分でもないか。
+[k]
+
+[charaFace B 12]
+
+＠リリス
+そだねー。ロシア異聞帯で敵に回って、[r]いつのまにか味方になってたカドック君？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[charaScale I 1.3]
+[charaTalk B,I]
+[charaFace I 3]
+[charaFadein G 0.4 -50,-200]
+[charaFadein I 0.4 250,-50]
+[charaMoveEase G -100,-200 1.0 easeOutSine]
+[charaMoveEase I 200,-50 1.0 easeOutSine]
+[wt 1.5]
+
+[charaFace I 13]
+[charaFadein F 0.1 100,-200]
+[charaScale B 1.3]
+[charaFace B 5]
+[charaFadein B 0.1 -200,-50]
+[charaFadeout A 0.1]
+
+＠I：カドック
+……痛いところ突くな、という想いと[r]どれだけ知ってるんだ、という疑念がある。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout G 0.4]
+[charaFadeout I 0.4]
+[wt 0.4]
+
+＠リリス
+何もかも。[r][line 3]何もかも、だよ。
+[k]
+
+[messageOff]
+[charaFace I 5]
+[charaFadein G 0.4 -50,-200]
+[charaFadein I 0.4 200,-50]
+[wt 0.4]
+[charaFace B 11]
+
+＠I：カドック
+……それなら、どうしてアンタはマシュの[r]敵に回るんだ？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout G 0.4]
+[charaFadeout I 0.4]
+[wt 0.4]
+
+＠リリス
+どうして、かぁ。[r]それは[line 3]教えない。
+[k]
+
+＠リリス
+[#アレ]が聞いてきたら教えてやるけど。[wt 1.2][charaFace B 5][r]……いややっぱ嫌だな。
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout I 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[pictureFrame]
+
+[subCameraOn 1]
+[charaLayer A sub #A]
+[charaLayer F sub #A]
+[subCameraFilter #A maskEdge cut359_mask10 5 255,255,255,255 0]
+[charaLayer H sub #A]
+[charaDepth F 1]
+[charaDepth H 2]
+[charaDepth A 3]
+
+[charaTalk on]
+[charaPut H 40,180]
+[charaScale A 0.8]
+[charaEffect H bit_talk_41_fs]
+[charaFace A 1]
+[overlayFadein A 0.1 40,150]
+[charaFadein F 0.1 0,100]
+[charaMoveScale A 0.9 50.0]
+[charaMove A 40,180 50.0]
+[charaShake A 0.1 0 1 0]
+
+[wt 2.0]
+
+[fadein black 1.0]
+[se ad1007]
+[seVolume ad1007 0 0]
+[seVolume ad1007 2.0 0.3]
+[wait fade]
+
+[charaTalk A]
+[subRenderFadeinFSSideL #A 0.3 -420,-210]
+[subRenderMoveEaseFSSideL #A -400,-250 0.3 easeOutSine]
+
+[bgm BGM_BATTLE_48 0.1]
+[wt 1.0]
+[seVolume ad1007 2.0 0.1]
+
+？1：戻ってきた！
+？！
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 150,0]
+
+＠モリアーティ
+よし、ちょっと不安だったが問題なさそうだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 150,0]
+
+＠メタトロン・ジャンヌ
+しゃあない、やるかー。
+[k]
+
+[seVolume ad1007 2.0 0.3]
+[charaFace A 7]
+
+＠カドック
+おーい。後は頼むぞ、みんな！
+[k]
+
+[messageOff]
+[charaDepth E 5]
+[charaDepth C 4]
+[charaDepth D 3]
+
+[charaTalk C,E,D]
+[charaFace C 5]
+[charaFadeinFSR C 0.2 350,0]
+[charaFace E 1]
+[charaFace D 4]
+[charaFadeinFSL D 0.2 -50,0]
+
+＠全員
+[charaTalk C,E,D]
+任せろ！
+[k]
+
+
+[messageOff]
+[seStop ad1007 0.5]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_48 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

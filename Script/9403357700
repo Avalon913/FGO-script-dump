@@ -1,0 +1,951 @@
+
+＄94-03-35-77-0-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098261000 1 ドラコー]
+[charaSet B 33001002 1 ドラコー]
+
+[charaSet C 1098266100 1 魔獣ルクスリア]
+[charaSet D 1098266000 1 魔獣ルクスリア]
+[charaSet E 1098266300 1 魔獣アワリティア]
+[charaSet F 1098266200 1 魔獣インヴィディア]
+[charaSet G 1098265700 1 偽フラウロス]
+
+[charaDepth C 6]
+[charaDepth E 4]
+[charaDepth F 3]
+
+[sceneSet J 10000 1 1]
+[charaScale J 1.05]
+[charaDepth J 1]
+
+[sceneSet K 10001 1 1]
+[charaScale K 1.05]
+[charaDepth K 9]
+
+[charaSet M 1098261000 1 ドラコー]
+[charaScale M 1.2]
+[charaSet N 1098265700 1 偽フラウロス]
+[charaScale N 1.2]
+
+[sceneSet R 180900 1]
+[sceneSet S 186000 1]
+[sceneSet T 186000 1]
+[sceneSet U 186000 1]
+[sceneSet V 186000 1]
+
+[charaDepth S 4]
+[charaDepth T 5]
+[charaDepth U 7]
+[charaDepth V 2]
+
+[charaSet W 98115000 1 エフェクト用]
+
+[sceneSet X 181000 1]
+[charaScale X 1.2]
+
+[equipSet Z 9808930 1 バレンタイン礼装]
+
+
+[scene 10000]
+
+[cameraMove 0.1 0,0 1.02]
+
+[fadein black 0.1]
+[wait fade]
+
+＠D：？？？
+[tVoice ValVoice_3300100 0_V010]
+[line 3]我が契約者よ。[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[label lblClear01a]
+[scene 106001]
+
+[branch lblConf01]
+
+[label lblClear01b]
+[scene 105801]
+
+[branch lblConf01]
+
+[label lblClear01c]
+[scene 178900]
+
+[label lblConf01]
+
+[blur lens 0.1 4 50]
+
+[wipein openEye 1.2 1]
+[wait wipe]
+[wt 0.1]
+
+[wipeout openEye 0.8 1]
+[wait wipe]
+
+
+
+
+[wipein openEye 1.5 1]
+[wait wipe]
+
+[wt 0.8]
+
+？1：……うーん
+？2：誰か……いるの？
+
+？！
+
+
+
+
+[charaTalk depthOff]
+[charaScale T 1.35]
+[charaScale U 1.35]
+
+[blurOff lens 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_81 1.3]
+
+[charaFadein T 0.4 230,-300]
+[charaMoveEase T 50,-300 1.3 easeOutSine]
+[wt 1.6]
+
+[charaFadein U 0.4 -230,-300]
+[charaMoveEase U -50,-300 1.3 easeOutSine]
+[wt 1.3]
+[charaFadein S 0.1 0,-175]
+[charaFadeout T 0.1]
+[wt 0.3]
+[charaFadeout U 1.0]
+[wt 2.5]
+
+
+？1：ええー……
+？2：ウソでしょ
+
+？！
+
+＠魔獣ルクスリア
+[tVoice ValVoice_3300100 0_V020]
+[line 3]獣の契約者よ。[r]我らと共に来てもらうぞ。[wait tVoice]
+[k]
+
+[messageOff]
+
+[se ad14]
+
+[charaFadeout J 0.5]
+[charaFadeout S 0.5]
+[wt 0.5]
+
+
+
+
+
+
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[se ad238]
+[effect bit_talk_impactlanding]
+[shake 0.03 5 5 1.0]
+[se ad609]
+[charaScale D 1.2]
+[charaMoveScale M 1.4 0.4]
+[charaTalk D]
+[charaFace D 0]
+[charaPut D 0,-50]
+[charaSpecialEffect D appearance 1 0.4]
+[wt 1.2]
+
+
+[charaTalk D]
+[se ad14 0]
+[seVolume ad14 0.2 1.0]
+[wt 0.5]
+[seStop ad14 1.2]
+[wt 1.2]
+
+[cueSe SE_23 23_ade863]
+[charaMoveScaleEase D 2.5 1.0 easeOutQuad]
+[charaMoveEase D 0,0 1.0 easeOutQuad]
+[cameraMoveEase 0,-50 1.5 easeOutQuad]
+[wt 0.5]
+
+[fadeout black 0.5]
+[cueSeStop 23_ade863 0.5]
+[wait fade]
+
+
+[charaFadeout S 0.1]
+
+
+[charaFadeout D 0.1]
+[scene 10000]
+[wt 0.1]
+
+[charaScale D 1.0]
+
+
+
+
+
+
+[fadein black 0.5]
+[wait fade]
+[wt 0.9]
+[cameraHome 0.1]
+[wt 0.1]
+
+[effect bit_talk_07_fs]
+[se ad12]
+[wt 4.0]
+
+[fadeout black 1.5]
+[wait fade]
+
+[scene 181000]
+[wt 1.0]
+
+[cameraMove 0.1 0,0 1.02]
+
+[charaDepth R 3]
+[charaDepth X 4]
+
+[charaScale R 1.2]
+[charaScale X 1.2]
+[charaFadein R 1.0 150,-240]
+[charaMove R 50,-240 10.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_115 0.1]
+[wt 4.0]
+
+[charaFadein X 1.0 0,-250]
+[charaMove X 0,-200 10.0]
+[charaFadeout R 3.0]
+[wt 3.5]
+
+[charaMove R 50,-240 0.1]
+
+[charaFadeout X 3.0]
+[wt 4.0]
+
+[charaMove X -150,-240 0.1]
+
+
+
+
+[charaTalk depthOff]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠魔獣ルクスリア
+[tVoice ValVoice_3300100 0_V030]
+落陽さえ超えて。[r]輝く星に手を伸ばし。[wait tVoice]
+[k]
+
+＠魔獣ルクスリア
+[tVoice ValVoice_3300100 0_V040]
+それでもなお、我らは囚われている。[wait tVoice]
+[k]
+
+＠魔獣ルクスリア
+[tVoice ValVoice_3300100 0_V050]
+[line 3]この、辺獄の底に。[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_115 1.0 0.0]
+
+？1：……ここシミュレーターの中だよね？
+
+？！
+
+
+[bgm BGM_EVENT_115 1.0 1.0]
+
+＠魔獣ルクスリア
+[tVoice ValVoice_3300100 0_V060]
+答えを得てなお、醜態を晒し。[r]光を目指してなお、道を失う。[wait tVoice]
+[k]
+
+＠魔獣ルクスリア
+[tVoice ValVoice_3300100 0_V070]
+つくづく獣とは度し難い。[wait tVoice]
+[k]
+
+？1：無視しないで
+
+？！
+
+＠魔獣ルクスリア
+[tVoice ValVoice_3300100 0_V080]
+[#焦:じ]れるな、我が契約者よ。[r]思わず先に手を出してしまいそうだ。[wait tVoice]
+[k]
+
+＠魔獣ルクスリア
+[tVoice ValVoice_3300100 0_V090]
+……………………。[wait tVoice]
+[k]
+
+＠魔獣ルクスリア
+[tVoice ValVoice_3300100 0_V100]
+……ひとかじりくらいなら構わぬか？[wait tVoice]
+[k]
+
+[messageOff]
+[se ad1017]
+[charaMoveScale C 1.1 0.5]
+[charaMove C 0,-5 0.5]
+[wt 0.5]
+[seStop ad1017 0.1]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadeinFSL E 1.0 -380,0]
+[wt 1.0]
+
+＠魔獣アワリティア
+[tVoice ValVoice_3300100 0_V110]
+ルクスリア、ステイ。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadeinFSR F 1.0 370,0]
+[wt 1.0]
+
+
+＠魔獣インヴィディア
+[tVoice ValVoice_3300100 0_V120]
+我らはぬけがけに[#叛逆:はんぎゃく]する。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_115 1.0]
+
+＠魔獣インヴィディア
+[tVoice ValVoice_3300100 0_V130]
+それに……そろそろだ。[r]来るぞ。[wait tVoice]
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_80 0.1]
+[charaTalk N]
+[se ad1051]
+[wt 0.5]
+[se ad284]
+[wt 0.5]
+[shake 0.03 3 3 1.5]
+[charaPut K 0,0]
+[charaFadeTime K 0.5 0.5]
+[wt 1.0]
+[charaFadeout K 0.5]
+[wt 0.5]
+[seStop ad1048 0.1]
+[se ad835]
+[wt 0.5]
+[se ad1051]
+[wt 3.0]
+[shake 0.03 4 4 1.5]
+[se ad285]
+[wt 0.5]
+[seStop ad284 1.5]
+[charaFadeTime K 0.5 0.5]
+[se ad286]
+[wt 0.8]
+[seStop ad285 0.3]
+[charaFadeout K 0.5]
+[wt 0.4]
+[seStop ad286 1.0]
+
+？1：なにごとーーーー！？
+
+？！
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_80 0.5 0.5]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_80 0.5 1.0]
+[wait wipe]
+
+
+
+[charaDepth N 2]
+[charaDepth X 1]
+
+[cueSe SE_23 23_ade863]
+[charaFace X 0]
+[charaFadeinFSL X 1.0 -50,-240]
+[charaMove X -60,-240 1.0]
+[wt 0.1]
+[charaFace N 0]
+[charaFadein N 0.9 -400,0]
+[charaMoveFSL N -300,0 0.9]
+[wt 0.9]
+[cueSeStop 23_ade863 1.0]
+[wt 1.0]
+
+[charaDepth M 5]
+
+[se ad166]
+[charaTalk M]
+[charaFace M 4]
+[charaFadeinFSR M 1.0 450,0]
+[charaMoveFSR M 400,0 1.0]
+[wt 1.0]
+[seStop ad166 0.1]
+
+＠M：ドラコー
+[tVoice ValVoice_3300100 0_V140]
+このぉぉぉ！[r]痴れ者がぁぁぁぁっ！[wait tVoice]
+[k]
+
+
+[messageOff]
+
+[se ad1051]
+[flashin once 0.1 0.2 FFFFFFFA FFFFFF50]
+[wt 0.2]
+[charaShake N 0.03 5 5 0.2]
+[wt 0.2]
+
+[se ad1028]
+[flashin once 0.1 0.2 FFFFFFFA FFFFFF50]
+[wt 0.2]
+[charaShake N 0.03 5 5 0.2]
+[wt 0.2]
+
+[se ad1051]
+[flashin once 0.1 0.2 FFFFFFFA FFFFFF50]
+[wt 0.2]
+[charaShake N 0.03 5 5 0.2]
+[wt 0.8]
+
+
+[cueSe SE_23 23_ade864]
+[charaShake N 0.05 5 5 2.0]
+[wt 3.0]
+
+
+？1：ドラコー！？
+？2：めっちゃ怒ってるけど……
+
+？！
+
+[se bac25]
+[se bac19]
+[se bac20]
+[wt 1.0]
+
+[shake 0.03 3 3 2.0]
+[se ad284]
+[fadeout white 1.0]
+[wait fade]
+
+[charaFadeout X 0.1]
+[charaFadeout N 0.1]
+[charaFadeout M 0.1]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+[seStop ad284 1.5]
+[wt 1.5]
+
+[charaScale A 1.0]
+
+[cueSe SE_21 21_ad1120]
+[cueSeVolume 21_ad1120 0.0 0.0]
+[cueSeVolume 21_ad1120 1.5 1.0]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 -50,0]
+[charaMove A 0,0 0.4]
+[wt 0.4]
+[cueSeStop 21_ad1120 0.1]
+
+＠ドラコー
+[tVoice ValVoice_3300100 0_V150]
+おのれ……！　よもや二度も、[r]飼い犬に手を噛まれるとはな！[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+
+＠ドラコー
+[tVoice ValVoice_3300100 0_V160]
+事と次第によっては、[r][#魔獣赫:まじゅうかく]制圧戦の開催も辞さぬぞ！[wt 1.0][se ad51][charaMoveReturn A 0,-5 0.2][wt 0.4][wait tVoice]
+[k]
+
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace E 0]
+[charaFace C 0]
+[charaFace F 0]
+[charaFadeinFSL E 0.1 -380,0]
+[charaFadein C 0.1 1]
+[charaFadeinFSR F 0.1 370,0]
+
+
+＠魔獣ルクスリア
+[tVoice ValVoice_3300100 0_V170]
+……[#戯言:ざれごと]を。[r]我らが[#叛逆:はんぎゃく]の理由、[#解:わか]らぬわけではあるまい。[wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ドラコー
+[tVoice ValVoice_3300100 0_V180]
+う[charaShake A 0.03 3 1 0.3]っ……！[r]そ、それは……。[wait tVoice]
+[k]
+
+
+？1：……どういうこと？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_146 0.1]
+
+[charaTalk C]
+[charaFace E 0]
+[charaFace C 0]
+[charaFace F 0]
+[charaFadeinFSL E 0.1 -380,0]
+[charaFadein C 0.1 1]
+[charaFadeinFSR F 0.1 370,0]
+
+
+＠魔獣ルクスリア
+[tVoice ValVoice_3300100 0_V190]
+まーつまり、この獣、バレンタインのチョコを[r]渡せないで[#悶々:もんもん]としているだけの話なんだが。[wait tVoice]
+[k]
+
+[messageOff]
+
+[subCameraOn 1]
+
+[charaLayer M sub #A]
+[charaLayer X sub #A]
+[subCameraFilter #A maskEdge cut359_mask03 6 255,0,0,0 0]
+
+[charaDepth M 4]
+[charaDepth X 1]
+
+
+[charaFace M 8]
+[charaFadein M 0.1 0,150]
+[charaFace X 0]
+[charaFadein X 0.1 20,0]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 8]
+[subRenderScale #A 1.1]
+[subRenderFadein #A 0.3 0,-120]
+[subRenderMoveEase #A 10,-120 0.3 easeOutQuint]
+[wt 0.3]
+
+
+＠M：ドラコー
+[tVoice ValVoice_3300100 0_V200]
+[f large]う[charaShake M 0.03 4 0 0.5][cueSe battle bac95]ぎゃあああああああああ！[wait tVoice]
+[k]
+
+[messageOff]
+[subRenderMoveEase #A 0,-120 0.3 easeOutQuint]
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+
+[subRenderScale #A 1.0]
+
+
+[charaTalk C]
+[charaFace C 0]
+
+＠魔獣ルクスリア
+[tVoice ValVoice_3300100 0_V210]
+度し難いほどに見苦しい。[r]覚悟を決めて、さっさと渡すのだ。[wait tVoice]
+[k]
+
+＠魔獣ルクスリア
+[tVoice ValVoice_3300100 0_V220]
+では……ファイッ！[wait tVoice][wt 2.5][se ade225]
+[k]
+
+[messageOff]
+[charaSpecialEffect C wipeTime 0,0 1.0]
+[charaSpecialEffect E wipeTime 0,0 1.0]
+[charaSpecialEffect F wipeTime 0,0 1.0]
+[wt 0.5]
+[se ad528]
+[wt 2.0]
+[seStop ad528 1.0]
+
+[charaFadeout M 0.1]
+[charaFadeout X 0.1]
+[wt 0.1]
+
+[charaLayer M main]
+[charaLayer X main]
+[subCameraOff]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠ドラコー
+[tVoice ValVoice_3300100 0_V230]
+ま、待て……貴様ら……！[wait tVoice]
+[k]
+
+[charaFace A 10]
+
+＠ドラコー
+[tVoice ValVoice_3300100 0_V240]
+……………………。[wait tVoice]
+[k]
+
+
+？1：えーと……
+？2：チョコ、くれるの？
+
+？！
+
+[charaFace A 11]
+
+＠ドラコー
+[tVoice ValVoice_3300100 0_V250]
+待て……。[r]本当に待ってくれ……。[wait tVoice]
+[k]
+
+
+＠ドラコー
+[tVoice ValVoice_3300100 0_V260]
+し、しばし待つがいい。[r]少し化粧直しをば……[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_146 1.0]
+
+？1：落ち着くまで、待ってるね
+
+[messageOff]
+
+[cueSe SE_21 21_ad1120]
+[charaMove A 30,0 0.3]
+[charaFadeout A 0.3]
+[wt 1.0]
+[cueSeStop 21_ad1120 1.0]
+[wt 2.0]
+
+[se ad357]
+[se ade19]
+[cueSe SE_21 21_ad1082]
+[fadeout white 1.2]
+[wait fade]
+[wt 1.5]
+
+[fadein white 1.2]
+[seStop ad357 0.8]
+[seStop ade19 0.8]
+[cueSeStop 21_ad1082 0.8]
+[wait fade]
+[wt 1.0]
+
+[se ad166]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 30,0]
+[charaMove B 0,0 0.8]
+[wt 0.8]
+[seStop ad166 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_161 0.1]
+
+＠B：ドラコー
+[tVoice ValVoice_3300100 0_V270]
+はぁーはっはっはっ！[r]かくして、完全に開き直る余なのであった！[wait tVoice]
+[k]
+
+[charaFace B 9]
+
+＠B：ドラコー
+[tVoice ValVoice_3300100 0_V280]
+というわけで待たせたな！[r]これが余のッ！　手作りのッッ！[wait tVoice]
+[k]
+
+＠B：ドラコー
+[tVoice ValVoice_3300100 0_V290]
+バレンタインのぉぉぉー……[r]チョコレイトであるッッッッ！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[bgm BGM_EVENT_161 0.5 0.5]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 4.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[bgm BGM_EVENT_161 0.5 1.0]
+[effectDestroy]
+
+[charaFace B 11]
+
+＠B：ドラコー
+[tVoice ValVoice_3300100 0_V300]
+……実はな。[r]少しばかり失敗してしまったのだ。[wait tVoice]
+[k]
+
+＠B：ドラコー
+[tVoice ValVoice_3300100 0_V310]
+[#些:いささ]か不格好ではあるが……[r]貴様に、受け取って欲しい。[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠B：ドラコー
+[tVoice ValVoice_3300100 0_V320]
+まったく……。[r]このような辱めを受けるとは……。[wait tVoice]
+[k]
+
+[charaFace B 13]
+
+＠B：ドラコー
+[tVoice ValVoice_3300100 0_V330]
+獣の騎手に相応しい、[r]何とも悪辣な契約者だな、貴様は。[wait tVoice]
+[k]
+
+[charaFace B 9]
+
+＠B：ドラコー
+[tVoice ValVoice_3300100 0_V340]
+…………ふふっ。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_161 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[se bas2]
+[charaFace Z 0]
+[charaFadein Z 0.5 0,-70]
+[wt 3.0]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_161 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+
+？2：令呪を以て命ずる。そのままで
+
+[messageOff]
+[wt 0.5]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+[effect bit_talk_CommandMantra_05]
+[se bas16]
+[wt 1.5]
+[effectStop bit_talk_CommandMantra_05]
+
+[branch _Conf]
+
+[label _Female]
+[effect bit_talk_CommandMantra_08]
+[se bas16]
+[wt 1.5]
+[effectStop bit_talk_CommandMantra_08]
+[wt 1.0]
+
+[label _Conf]
+[wt 1.5]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaFace A 8]
+
+＠ドラコー
+[tVoice ValVoice_3300100 0_V350]
+[f large]騎手ぅぅぅぅーーーーっ！？[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠ドラコー
+[tVoice ValVoice_3300100 0_V360]
+よ、よせ……！[r][#素面:しらふ]でできるか、こんなこと！[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠ドラコー
+[tVoice ValVoice_3300100 0_V370]
+せめて天動説体の方で……！[r]あっ……ああ……！[wait tVoice]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_27 1.0]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 4.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[effectDestroy]
+[bgm BGM_EVENT_161 0.1]
+
+[charaFace A 20]
+
+＠ドラコー
+[tVoice ValVoice_3300100 0_V380]
+うう……こんな辱め……。[wait tVoice]
+[k]
+
+＠ドラコー
+[tVoice ValVoice_3300100 0_V390]
+……失敗作なのだ、それは。[wait tVoice]
+[k]
+
+＠ドラコー
+[tVoice ValVoice_3300100 0_V400]
+……このような無様な品、[r]我らの皿には相応しくなかろう。[wait tVoice]
+[k]
+
+[messageOff]
+
+[se ade422]
+[cameraMoveEase 0,-20 1.0 easeOutSine 1.1]
+[wt 0.5]
+[seStop ade422 0.1]
+[wt 1.0]
+
+[se ad458]
+[charaShake A 0.1 4 1 1.0]
+[wt 1.0]
+[seStop ad458 0.1]
+[wt 0.5]
+
+[charaFace A 8]
+
+＠ドラコー
+[tVoice ValVoice_3300100 0_V410]
+……やめよ。頭を撫でるな。[r]ええい、噛むぞ！[wait tVoice]
+[k]
+
+[charaFace A 19]
+
+＠ドラコー
+[tVoice ValVoice_3300100 0_V420]
+貴様という奴は……。[r]獣の騎手に相応しい、悪辣な契約者よ。[wait tVoice]
+[k]
+
+[charaFace A 15]
+
+＠ドラコー
+[tVoice ValVoice_3300100 0_V430]
+…………ふん。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_161 1.5]
+[wait fade]
+
+[cameraHome 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+
+[se bas2]
+[charaFace Z 0]
+[charaFadein Z 0.5 0,-70]
+[wt 3.0]
+
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

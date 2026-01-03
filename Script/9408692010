@@ -1,0 +1,1420 @@
+
+＄94-08-69-20-1-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098257810 1 マシュ]
+[charaSet B 1098273600 1 テュフォン・エフェメロス]
+[charaSet C 2050000 1 プトレマイオス]
+[charaSet D 1098257310 1 ダ・ヴィンチ]
+[charaSet E 2051001 1 杉谷善住坊]
+[charaSet F 1098213900 1 四不相(シフソウ)]
+[charaSet G 1098273120 1 エフェメロス_流体金属]
+
+[sceneSet P 194500 1]
+[sceneSet Q 194500 1]
+[sceneSet R 194500 1]
+[sceneSet S 195600 1]
+[sceneSet T 195401 1]
+
+[sceneSet U 10000 1]
+[charaScale U 1.05]
+[sceneSet V 10001 1]
+[charaScale V 1.05]
+[sceneSet W 194400 1]
+
+[charaSet X 98115000 1 通信エフェクト用]
+[charaPut X 2000,2000]
+[charaEffect X bit_talk_10_LowLevel_depth]
+
+[sceneSet Y 203700 1]
+
+
+[scene 194500]
+
+[cameraMove 0.1 0,0 1.01]
+
+[subCameraOn 1]
+
+[charaLayer A sub #A]
+[charaLayer P sub #A]
+[charaLayer X sub #A]
+[charaLayer D sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask11 5 0,0,0,255 0]
+
+[subRenderScale #A 1.05]
+
+[charaTalk depthOff]
+[charaDepth X 9]
+[charaDepth D 4]
+[charaDepth A 3]
+[charaDepth P 2]
+
+[charaPut X 540,150]
+[charaFace A 6]
+[charaFadein A 0.1 560,150]
+[charaFadein P 0.1 0,0]
+
+[bgm BGM_BATTLE_48 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad715]
+[effect bit_talk_gram_slash_03_fs]
+[wt 0.4]
+[se ad728]
+[se ad609]
+[effect bit_talk_explosion_triple02]
+[shake 0.05 2 2 1.5]
+[wt 1.2]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.7 0,-20]
+[charaShake B 0.05 2 2 1.5]
+[wt 2.5]
+[se ade215]
+[charaMove B 0,0 1.5]
+[charaShake B 0.05 2 2 1.5]
+[wt 2.0]
+[effectDestroy bit_talk_explosion_triple02]
+[charaMove B 0,-10 0.3]
+[wt 0.3]
+[shake 0.05 4 4 1.5]
+[se ad716]
+[wt 2.0]
+
+[charaTalk A]
+[subRenderFadeinFSSideR #A 0.2 -190,-160]
+
+＠マシュ
+テュフォン・エフェメロス、行動停止！[r]魔力の減衰も、一気に維持限界まで！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+
+[charaTalk B]
+
+[cueSe SE_22 22_ad1214]
+[wt 1.2]
+
+[se ad728]
+[shake 0.05 2 2 1.5]
+[fadeout white 0.2]
+[wait fade]
+
+[charaCrossFade B 1098273640 0 0]
+[wait charaCrossFade B]
+
+[fadein white 0.2]
+[wait fade]
+[wt 1.0]
+
+？1：表面に亀裂が！
+
+？！
+
+[se ad632]
+[seVolume ad632 0 0]
+[seVolume ad632 1.0 0.2]
+[effect bit_talk_06]
+[wt 1.5]
+
+
+[charaTalk A]
+[subRenderFadeinFSSideR #A 0.2 -180,-140]
+
+＠マシュ
+胸部コアから、エフェメロスの反応が露出……！
+[k]
+
+[messageOff]
+[se ade185]
+[se ade212]
+[cueSe SE_22 22_ade807]
+[fadeout white 2.0]
+[seStop ad632 2.0]
+[bgmStop BGM_BATTLE_48 2.0]
+[wait fade]
+[seStop 22_ade807 1.0]
+[seStop ade212 1.0]
+
+[charaFadeout B 0.1]
+[effectDestroy bit_talk_06]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout A 0.1]
+[charaFace D 23]
+[charaFadein D 0.1 560,150]
+[charaFadein P 0.1 0,0]
+
+[charaScale G 1.2]
+[charaScale Q 1.2]
+
+[charaDepth G 9]
+[charaDepth Q 8]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 1.0 0,60]
+[charaFadein Q 1.0 0,-220]
+[charaMove G 0,-15 5.0]
+[charaMove Q 0,-270 5.0]
+[wt 0.3]
+[cueSe SE_22 22_ade807]
+[seVolume 22_ade807 0 0.1]
+[seVolume 22_ade807 0.8 0.7]
+[seStop 22_ade807 2.0]
+[fadein white 2.0]
+[wt 0.5]
+[wait fade]
+
+[wt 3.0]
+
+
+
+[charaScale C 1.2]
+[charaScale R 1.2]
+
+[charaDepth C 2]
+[charaDepth R 1]
+
+[charaFace C 11]
+[charaFadein C 0.1 150,0]
+[charaFadein R 0.1 -50,-270]
+[wt 0.5]
+
+？1：あの姿は……
+？！
+
+[charaTalk D]
+[subRenderFadeinFSSideR #A 0.2 -190,-160]
+
+＠ダ・ヴィンチ
+テュフォンに喰われたことで、[r]ケイオスタイド同様の状態に戻ったのか。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadeout #A 0.2]
+[wt 1.0]
+
+[bgm BGM_MAP_36 0.1]
+
+[charaCrossFade G 1098273120 7 0.2]
+
+＠テュフォン・エフェメロス
+叶わない……
+[k]
+
+
+＠テュフォン・エフェメロス
+我の願いが……叶わない……
+[k]
+
+？1：…………
+？！
+
+[messageOff]
+[charaFadeout G 0.5]
+[charaFadeout Q 0.5]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[charaFadeout P 0.1]
+[charaPut X 2000,2000]
+[wt 0.5]
+[subCameraOff]
+[charaLayer A normal]
+[charaLayer D normal]
+[charaLayer X normal]
+[charaLayer P normal]
+[wt 1.7]
+
+[charaFace G 5]
+[charaFadein G 0.5 -150,-15]
+[charaFadein Q 0.5 80,-270]
+[charaMove G -180,-15 10.0]
+[charaMove Q 50,-270 10.0]
+[wt 0.5]
+
+＠テュフォン・エフェメロス
+おまえたちは……自分を[#悍:おぞ]ましいと思わないのか……
+[k]
+
+＠テュフォン・エフェメロス
+おまえたちは……自分の願いに逆らえない生物だろう……[r]そして能力と幸運があれば……辿り着いてしまう……
+[k]
+
+[charaFace G 4]
+
+＠テュフォン・エフェメロス
+竜さえも……倒してしまうのに……
+[k]
+
+[messageOff]
+[charaMove C 180,0 10.0]
+[charaMove R -20,-270 10.0]
+
+[charaFadeout G 0.5]
+[charaFadeout Q 0.5]
+[wt 0.5]
+
+[charaSet G 1098273120 1 エフェメロス_流体金属]
+[sceneSet Q 194500 1]
+[charaScale G 1.2]
+[charaScale Q 1.2]
+[charaDepth B 5]
+[charaDepth G 9]
+[charaDepth Q 8]
+
+＠プトレマイオス
+怖いし、[#悍:おぞ]ましいサ。[r]願いが叶ってしまうのだって、恐ろしいに決まってる。
+[k]
+
+＠プトレマイオス
+だってそれは、[r]自分の本質を問われるようなものだろう。
+[k]
+
+＠プトレマイオス
+それでも、生きて、生きて、生き足掻いて、[r]死んだ後にやっと、命の意味が決まるんだ。
+[k]
+
+[messageOff]
+[charaFace G 27]
+[charaFadein G 0.5 0,-15]
+[charaFadein Q 0.5 0,-270]
+[wt 1.5]
+[charaFadeout C 0.1]
+[charaFadeout R 0.1]
+
+[charaCrossFade G 1098273120 7 0.4]
+[wt 2.2]
+
+[charaCrossFade G 1098273120 21 0.3]
+
+＠テュフォン・エフェメロス
+そう……[r]生きて、生きて、生き足掻いて……
+[k]
+
+[charaCrossFade G 1098273120 3 0.3]
+
+
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠テュフォン・エフェメロス
+……ならば…………
+[k]
+
+[messageOff]
+[charaFadeout G 0.5]
+[charaFadeout Q 0.5]
+[wt 0.5]
+
+[se ade216]
+[wt 0.2]
+[charaCrossFade B 1098273660 0 0.4]
+[wait charaCrossFade B]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut X 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+テュフォンの翼が！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.15]
+
+[cueSe SE_23 23_ade919]
+[cueSeVolume 23_ade919 0 0.7]
+[wt 1.05]
+
+[cueSe SE_23 23_ade892]
+[charaSpecialEffect B erasureReverse 0,0 0.6]
+[wt 0.35]
+[charaMove B 0,100 0.3]
+[wt 0.4]
+
+[shake 0.05 0 3 1.5]
+[effect bit_talk_impactlanding 0,0 V]
+[se ad1015]
+[se ad299]
+[se ad96]
+[seStop ad96 2.0]
+[se ad609]
+[wt 2.0]
+[seStop ad609 1.0]
+[seStop ad299 1.0]
+
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠プトレマイオス
+天井をぶち破って！[r]おまえ[line 2]！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale G 1.0]
+[charaTalk G]
+[charaFace G 16]
+[charaFadein G 0.1 1]
+
+＠テュフォン・エフェメロス
+[line 3]ならば……我もおまえに学ぼう！
+[k]
+
+[messageOff]
+[charaFadeout G 0.2]
+[se ad914]
+[wt 0.4]
+[se ade216]
+[shake 0.05 4 4 0.5]
+[effect bit_talk_rubble]
+[wt 2.2]
+[effectStop bit_talk_rubble]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠プトレマイオス
+この期に及んで逃げて、[r]羽化するつもりか、テュフォン・エフェメロス！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+
+[subCameraOn 2]
+
+[charaLayer G sub #A]
+[charaLayer S sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask05 3 0,0,0,255]
+
+[charaScale G 1.2]
+[charaScale S 1.2]
+
+[charaDepth G 6]
+[charaDepth S 5]
+
+[charaFace G 23]
+[charaFadein G 0.1 0,250]
+[charaFadein S 0.1 0,0]
+[wt 0.1]
+
+[charaTalk G]
+[subRenderFadein #A 0.2 0,-310]
+[subRenderMoveEase #A 0,-270 0.4 easeOutExpo]
+[wt 0.6]
+
+＠テュフォン・エフェメロス
+ふふふ、あはは！[r]あはははははははははははは！
+[k]
+
+＠テュフォン・エフェメロス
+そうだ！　その通りだ！[r]存分に生き足掻いてやろう！
+[k]
+
+[charaFace G 24]
+
+＠テュフォン・エフェメロス
+[#私]は私の思うままに、生きてやろう！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_MAP_36 1.0]
+
+[subRenderMoveEase #A 0,-210 0.4 easeInExpo]
+[cueSe SE_21 21_ade546]
+[seStop 21_ade546 1.2]
+[wt 0.2]
+[subRenderFadeout #A 0.2]
+[wt 1.5]
+
+[charaPut X 1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[se ad9]
+[seVolume ad9 0 0.1]
+[seVolume ad9 1.0 1.0]
+[wt 2.2]
+[seStop ad9 2.0]
+
+[charaFace A 2]
+
+＠マシュ
+緊急警告です！[r]テュフォン・エフェメロス、体内で魔力炉心形成！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_122 0.1]
+
+[charaTalk D]
+[charaFace D 25]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+これは[#悪竜現象:フ ァ ヴ ニ ー ル][line 3]！
+[k]
+
+＠ダ・ヴィンチ
+そうか、反願望機であるエフェメロスが、[r]自分の願いを持つというのはそういう！
+[k]
+
+＠ダ・ヴィンチ
+だけど、この規模じゃ原典である[r]ファヴニールすら超えて[line 3]！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[se ade216]
+[seVolume ade216 0 0.5]
+[wt 2.0]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠プトレマイオス
+[line 3]逃がすものかよ。
+[k]
+
+＠プトレマイオス
+最後の令呪を、[#吾:あ]にくれ。マスター。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠杉谷善住坊
+は、ここは譲れるかよ。
+[k]
+
+[charaFaceFade E 0 0.2]
+
+＠杉谷善住坊
+俺にくれ。マスター！
+[k]
+
+？1：だったら……
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_122 1.5]
+
+＠？？？
+[line 3]いいや。[r]大事なのは、逃さないことなんだろう？
+[k]
+
+＠？？？
+だったら、その令呪は、[r]僕と契約して、僕に使ってもらいたい。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.5]
+[wait fade]
+
+[cameraHome 0.1]
+
+[scene 195600]
+
+[charaLayer S normal]
+[charaFadein S 0.1 0,-250]
+[wt 1.6]
+
+[charaMove S 0,-220 5.0]
+
+[se ade216]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.5 0.4]
+[fadein black 2.5]
+[wt 1.0]
+[bgm BGM_MAP_92 0.1]
+[wait fade]
+[wt 2.0]
+[seStop ad556 5.0]
+
+[charaDepth T 9]
+[charaScale T 1.2]
+[charaFadein T 1.0 80,-260]
+[charaMove T -50,-310 10.0]
+[wt 2.0]
+
+[scene 195401]
+[wt 1.0]
+
+[charaFadeout S 0]
+[sceneSet S 195600 1]
+[charaLayer S sub #A]
+[charaScale S 1.2]
+[charaFadein S 0.1 0,0]
+
+[charaFace G 2]
+[wt 1.0]
+
+[charaFadeout T 1.0]
+[wt 2.0]
+
+[charaTalk G]
+[subRenderFadein #A 0.4 -250,-270]
+[wt 0.4]
+
+＠テュフォン・エフェメロス
+そうだ……そうだ[line 3][r]生きるのを目的にしていいのだ[line 3]！
+[k]
+
+[charaFace G 23]
+
+＠テュフォン・エフェメロス
+初めて学んだ！[r]初めて知った！
+[k]
+
+＠テュフォン・エフェメロス
+私は、今こそ解放された！
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.7 1.0]
+[bgm BGM_MAP_92 1.0 0.7]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+
+[scene 195302]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.7 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaPut F 0,10]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect F appearance 1 0.25]
+[cueSe Servants_302000 m07405]
+[seVolume m07405 0 0.4]
+[charaMoveEase F 0,0 0.4 easeOutExpo]
+[wt 0.4]
+[wait charaSpecialEffect F]
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠プトレマイオス
+よし、観測地点を確保したナ。[r]マスターは大丈夫か？
+[k]
+
+
+？1：大丈夫
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut X 1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+テュフォン・エフェメロス、凄まじい速度で移動中です。[r]このままだと、すぐに特異点を脱出して……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut X 2000,2500]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠プトレマイオス
+射程範囲内なのは、[#吾:あ]の第三宝具ぐらいか。[r]エフェメロスも、さぞ安心してるだろうサ。
+[k]
+
+[charaFace C 18]
+＠プトレマイオス
+もともと、生物どころか存在としての規模が違うんだ。[r]その上、個としての願望を持ったなら、勝負にならん。
+[k]
+
+[charaFace C 16]
+＠プトレマイオス
+仮に届いたところで、[r]あの装甲を突破するのは不可能だろう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠杉谷善住坊
+だが、今回は[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠プトレマイオス
+ああ、[#アレ]の導きならナ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+[wt 1.0]
+
+＠杉谷善住坊
+不思議な縁だったなあ、プトレ。
+[k]
+
+
+＠杉谷善住坊
+国も時代も何もかも違う俺とおまえが、[r]こうして竜退治だなんてよ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠プトレマイオス
+違うからいいんだ。
+[k]
+
+＠プトレマイオス
+[#吾:あ]もおまえも、違う形で歴史に名を刻んだ。
+[k]
+
+＠プトレマイオス
+その名前を、いつか誰かが読み上げるんだ。
+[k]
+
+＠プトレマイオス
+書物かもしれない。画像かもしれない。[r]もっと別の情報媒体かもしれない。
+[k]
+
+[charaFace C 2]
+
+＠プトレマイオス
+そんな[#荒唐無稽:こ う と う む け い]を、[r][#吾:あ]の王も愛したんだ。
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.7 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[scene 195401]
+[charaTalk G]
+[charaFace G 1]
+[subRenderFadein #A 0.1 -250,-270]
+[wt 0.5]
+
+[bgm BGM_MAP_92 1.0 1.0]
+[wipein rectangleStripDownToUp 0.7 1.0]
+[wait wipe]
+
+
+＠テュフォン・エフェメロス
+自由だ！　自由だ！[r]今度こそ[line 3]私は自由になれる[line 3]！
+[k]
+
+[charaFace G 10]
+
+＠テュフォン・エフェメロス
+テュフォンほどの竜種なら、[r]特異点からだって飛び立てる！
+[k]
+
+[charaFace G 9]
+
+＠テュフォン・エフェメロス
+特異点の外ならば時間も問題ない。[r]急ぐ必要はない。
+[k]
+
+＠テュフォン・エフェメロス
+新しい魔力炉心で[r]少しずつ魔力をかき集めればいいんだ。
+[k]
+
+[charaFace G 15]
+
+＠テュフォン・エフェメロス
+完全に羽化すれば、[r]カルデアのマスターにも復讐できよう！
+[k]
+
+[charaFace G 0]
+
+＠テュフォン・エフェメロス
+ああ[line 3]どうして私は気づかなかった[line 3]
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_MAP_92 1.0]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+＠？？？
+そうだね、[r]ほんの少し気づくのが遅すぎたよ。反聖杯。
+[k]
+
+[messageOff]
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[se bas16]
+[effect bit_talk_CommandMantra_07]
+[wt 2.2]
+
+[branch _branchEnd]
+
+[label _Female]
+
+[se bas16]
+[effect bit_talk_CommandMantra_10]
+[wt 2.2]
+
+[label _branchEnd]
+
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 195401]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[effect bit_talk_glowing_sphere 230,-30]
+[cueSe SE_22 22_ad1213]
+[wt 2.2]
+
+[charaTalk G]
+[charaFace G 20]
+[subRenderFadein #A 0.2 -250,-270]
+
+＠テュフォン・エフェメロス
+また、あの[line 2]第三宝具[line 3]！？[r]いえ[line 3]違う[line 3]これは[line 3]！
+[k]
+
+[charaFace G 22]
+
+＠テュフォン・エフェメロス
+[line 3]そんな[line 3]生きてたというの！
+[k]
+
+[messageOff]
+[charaLayer U sub #B]
+[subCameraFilter #B through]
+[subRenderDepth #A 4]
+[subRenderDepth #B 5]
+
+[subRenderFadein #B 0 0,0]
+
+[charaFadeTime U 0.2 0.7]
+
+[bgm BGM_MAP_53 0.1]
+
+＠？？？
+忘れてないだろう？　僕の宝具[line 3][r]必ず正しい道へ導く、運命の糸を。
+[k]
+
+＠？？？
+『[#かくして紡糸は極点へ誘う:ア  リ  ア  ド  ネ  ・  ア  ポ  リ  ト  ・  ア  デ  ィ  ス]』。
+[k]
+
+＠？？？
+さあ、[#印をつけた:マ ー キ ン グ は し た]ぞ！
+[k]
+
+[messageOff]
+[seStop 22_ad1213 1.0]
+[fadeout black 0.5]
+[bgm BGM_MAP_53 0.5 0.7]
+[wait fade]
+
+[effectDestroy bit_talk_glowing_sphere]
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+
+[scene 195302]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+[charaEffect C bit_talk_36]
+[wt 0.5]
+
+[fadein black 0.5]
+[se ad39]
+[seVolume ad39 0 0.1]
+[seVolume ad39 0.5 1.0]
+[bgm BGM_MAP_53 0.5 1.0]
+[wait fade]
+
+＠プトレマイオス
+おお、任されたとも！
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[seStop ad39 1.0]
+[bgm BGM_MAP_53 1.0 0.7]
+[wait fade]
+
+[charaEffectDestroy C bit_talk_36]
+[charaFadeout C 0.1]
+[scene 10000]
+[overlayFadein V 0.1 0,-200]
+[wt 0.5]
+
+[fadein white 0.7]
+[wait fade]
+
+
+
+
+[criMovie talk_mov201 bgmPlay false]
+[wt 0.5]
+[charaFadeout V 0.5]
+[wt 15.5]
+[overlayFadein V 1.0 0,-200]
+
+[fadeout white 0.1]
+[wait fade]
+
+[charaFadeout V 0.1]
+
+[sceneSet Q 195302 1]
+[charaLayer Q sub #B]
+[charaLayer C sub #B]
+[charaLayer E sub #B]
+
+[charaDepth W 9]
+[charaDepth C 3]
+[charaDepth E 2]
+[charaDepth Q 1]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaFadein Q 0.1 0,-200]
+
+
+[scene 10001]
+[cameraMove 0 0,0 1.01]
+[wt 0.2]
+
+[fadein white 0.2]
+[bgm BGM_MAP_53 1.0 1.0]
+[wait fade]
+
+[se ad728]
+[se ad609]
+[se ad854]
+[fowardEffect bit_talk_explosion_triple02 0,-250]
+[effect bit_talk_explosion_triple02 250,100]
+[effect bit_talk_explosion_triple02 -250,100]
+[shake 0.05 3 3 3.5]
+[wt 1.0]
+
+[scene 195401 0.5]
+[wt 3.0]
+
+[charaTalk G]
+[charaFace G 21]
+[subRenderFadein #A 0.2 -250,-270]
+＠テュフォン・エフェメロス
+そんな[line 3]そんな[line 3]そん[line 3]な！[r]この距離で[line 3]私の核を見抜くなんて[line 3]！
+[k]
+
+[charaFace G 12]
+
+＠テュフォン・エフェメロス
+続く攻撃で正確に[line 3]周辺の装甲を[line 3][r]でも[line 3]まだ[line 3]私の核は健[line 3]
+[k]
+
+[messageOff]
+[charaTalk C,G]
+[subRenderScale #B 1.01]
+[subRenderFadein #B 0.7 0,0]
+[wt 0.7]
+[charaFadein W 0.1 0,-200]
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+[fowardEffectDestroy bit_talk_explosion_triple02]
+[effectDestroy bit_talk_explosion_triple02]
+
+＠プトレマイオス
+外すなよ、杉谷。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 1]
+
+＠杉谷善住坊
+ははは、マスターにも言ったがな。
+[k]
+
+[charaFadeout W 0.1]
+[subRenderFadein #A 0.1 -250,-270]
+[charaFace E 5]
+
+＠杉谷善住坊
+二度と、拙僧は外さないさ。
+[k]
+
+[messageOff]
+[charaTalk G,E]
+[charaFace G 13]
+
+[subRenderFadeout #B 0.7]
+[wt 0.7]
+
+[charaFadeout E 0.1]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠テュフォン・エフェメロス
+嫌だ、嫌だ嫌だ嫌だ[line 3]！[r]だって、やっと分かったばかりだ[line 3]！
+[k]
+
+＠テュフォン・エフェメロス
+私は自由になれる！　なっていい[line 3]！
+[k]
+
+[charaFace G 12]
+
+＠テュフォン・エフェメロス
+[#誰かを傷つけてでも]、自由になって[line 3]
+[k]
+
+[charaFace G 21]
+
+＠テュフォン・エフェメロス
+あ[line 3]
+[k]
+
+[messageOff]
+[charaTalk C,G]
+[subRenderFadein #B 0.7 0,0]
+[wt 0.7]
+
+＠プトレマイオス
+ああ、やっと分かったか。
+[k]
+
+＠プトレマイオス
+生きるとは、そういうことなんだ。[r]テュフォン・エフェメロス。
+[k]
+
+＠プトレマイオス
+[#吾:あ]を含む生物は、生きることこそを第一とすべきだ。[r]不完全な生物で、その道程が間違いだらけでも。
+[k]
+
+[charaFace C 1]
+
+＠プトレマイオス
+それでも、生きて、生きて、生き抜いた先に、[r]いつか答えが浮き上がると、信じて進むんだ。
+[k]
+
+＠プトレマイオス
+そして今、[r]おまえに答えが生まれたのサ。
+[k]
+
+[messageOff]
+[charaTalk G,C]
+[charaFace G 6]
+
+[subRenderFadeout #B 0.7]
+[wt 0.7]
+
+[charaFadeout C 0.1]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+
+＠テュフォン・エフェメロス
+それはなんて[line 3]
+[k]
+
+＠テュフォン・エフェメロス
+[line 3]なんて[line 3]愚かしくて[line 3]
+[k]
+
+[charaFace G 7]
+
+＠テュフォン・エフェメロス
+……なんて[line 3]
+[k]
+
+[messageOff]
+[charaTalk E,G]
+[subRenderFadein #B 0.7 0,0]
+[wt 0.7]
+[subRenderFadeout #A 0.1]
+
+[charaEffect E bit_talk_36]
+[se ad39]
+
+[charaScale Y 1.4]
+[overlayFadein Y 1.0 160,-390]
+＠杉谷善住坊
+……最後の聖杯弾を、くれてやる。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth E 2]
+[charaDepth Y 6]
+[wt 0.4]
+
+[subRenderFadeout #B 0.6]
+[wt 0.2]
+[cueSe SE_23 23_ade911]
+[charaMove Y -50,-360 7.0]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[charaPut E 2000,2500]
+[charaEffectStop E bit_talk_36]
+[wt 2.5]
+
+[fadeout white 1.0]
+[seStop ad39 1.0]
+[bgm BGM_MAP_53 1.0 0.7]
+[wait fade]
+
+[charaFadeout Y 0.1]
+[wt 0.5]
+
+
+[charaEffectDestroy E bit_talk_36]
+[scene 10000]
+[overlayFadein V 0.1 0,-200]
+
+[bgmStop BGM_MAP_53 1.0]
+[wt 0.5]
+[fadein white 1.0]
+[wait fade]
+
+[cameraMove 0 0,0 1.01]
+
+[sceneSet Z 203600 1]
+[sceneSet Y 203600 1]
+
+
+
+[criMovie talk_mov203 bgmPlay false]
+[wt 0.5]
+[charaFadeout V 0.5]
+[wt 21.6]
+[charaScale Z 1.01]
+[overlayFadein Z 0.8 0,-200]
+
+
+[charaFace G 7]
+[wt 2.0]
+
+[scene 203600]
+
+
+
+
+
+[wt 0.5]
+
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[wt 0.5]
+[charaLayer C normal]
+[charaLayer E normal]
+
+
+
+
+
+[sceneSet Y 195401 1]
+
+
+
+[wt 1.0]
+
+＠テュフォン・エフェメロス
+あ……
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[bgm BGM_EVENT_75 0.1]
+
+＠テュフォン・エフェメロス
+ダメだ……今のはダメだ[line 3][r]今度こそ、核を撃ち抜かれた[line 3]
+[k]
+
+[charaScale Y 1.1]
+[charaFadein Y 0.1 0,-220]
+＠テュフォン・エフェメロス
+私が[line 3]私が消えていく[line 3]
+[k]
+
+
+[messageOff]
+[charaMoveScale Y 1.01 6.0]
+[charaMove Y 0,-200 6.0]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.5 0.4]
+[charaFadeout Z 1.5]
+[wt 1.5]
+[scene 195302]
+[wt 0.4]
+[cameraMove 6.0 0,0 1.01]
+[wt 3.8]
+
+[subCameraFilter #A maskEdge cut359_mask06 3 0,0,0,255]
+[subRenderScale #A 1.01]
+[charaLayer G sub #A]
+[charaLayer S sub #A]
+[charaDepth G 2]
+[charaDepth S 1]
+[charaFace G 6]
+[charaFadein G 0.1 0,250]
+[charaScale S 1.2]
+[charaFadein S 0.1 0,0]
+
+？1：テュフォンが飛んでいく[line 3]
+？！
+
+[charaFadeout Y 1.0]
+[seVolume ad556 2.0 0.0]
+[wt 1.0]
+
+[charaPut X 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+飛翔速度、変化ありません。[r]じゃあ杉谷さんの聖杯弾は[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠杉谷善住坊
+[line 3]安心しろ。確かに穿った。[r]あれはもう終わりだ。間違いない。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+
+＠プトレマイオス
+あれだけ凝縮された魔力となれば、[r]急所を[#抉:えぐ]ったところで、すぐ消えるわけじゃない。
+[k]
+
+＠プトレマイオス
+終わっても、なお飛び続けるのサ。[r]ただ、ただ遠くまで……。
+[k]
+
+＠プトレマイオス
+彼方まで……。
+[k]
+
+
+[messageOff]
+[seVolume ad556 1.0 0.4]
+[scene 195401 1.0]
+[charaFadeout C 1.0]
+[wt 2.5]
+
+[sceneSet P 195600 1]
+[charaScale P 1.2]
+[charaFadein P 2.0 -50,-300]
+[charaMove P -50,-180 30.0]
+[wt 3.0]
+[seStop ad556 5.0]
+
+[charaTalk G]
+[charaFace G 6]
+[subRenderFadein #A 0.4 0,-340]
+[wt 1.0]
+
+＠テュフォン・エフェメロス
+ああ、もう終わりだ……
+[k]
+
+＠テュフォン・エフェメロス
+忌々しい聖杯弾が[line 3]私を根こそぎ消していく[line 3][r]一瞬ごとに、私はどうしようもなく分解されていく[line 3]
+[k]
+
+[messageOff]
+[fadeMove white 2.0 0.2]
+[effect bit_talk_06_02_fs]
+[wt 1.5]
+
+[charaFaceFade G 27 0.2]
+
+＠テュフォン・エフェメロス
+……ああ。
+[k]
+
+＠テュフォン・エフェメロス
+そうか。[r]本当に、私は終わるんだ。
+[k]
+
+[charaFaceFade G 2 0.2]
+
+＠テュフォン・エフェメロス
+終わるから、こんな風に[r]足掻くことが、できたんだ[line 3]
+[k]
+
+＠テュフォン・エフェメロス
+まるで、人間みたいに[line 3]
+[k]
+
+[messageOff]
+[wt 0.6]
+[charaFaceFade G 8 0.4]
+[wt 0.8]
+
+＠テュフォン・エフェメロス
+もっと早く気づいたら、[r]何かが[line 3]変わっていた[line 3]？
+[k]
+
+[fadeMove white 2.0 0.4]
+
+＠テュフォン・エフェメロス
+あのマスターと[line 3]サーヴァントみたいに[line 3]
+[k]
+
+
+[messageOff]
+[subRenderFadeout #A 1.0]
+[wt 1.0]
+
+[charaDepth V 3]
+[charaDepth P 1]
+
+[fadeMove white 2.0 0.6]
+
+[charaFadeTime V 5.5 0.5]
+[wt 2.5]
+
+
+＠テュフォン・エフェメロス
+いつか[line 3]
+[k]
+
+＠テュフォン・エフェメロス
+いつか、私は[line 3]
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeMove white 2.0 1.0]
+[bgmStopEnd BGM_EVENT_75 2.0]
+[wait fade]
+
+[effectDestroy bit_talk_06_02_fs]
+[scene 10000]
+[charaFadeout P 0.1]
+[charaFadeout V 0.1]
+[wt 1.5]
+
+[fadeMove white 2.0 0.0]
+[wait fade]
+
+[fadeout black 1.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

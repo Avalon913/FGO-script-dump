@@ -1,0 +1,1419 @@
+
+＄94-09-27-02-2-0
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1098257310 1 ダ・ヴィンチ]
+[charaSet B 1098257910 1 マシュ]
+[charaSet C 6032000 1 セミラミス]
+[charaSet D 4055000 1 アンドロメダ]
+[charaSet E 1098288100 1 コロンブス]
+[charaSet F 1019001 1 ラーマ]
+[charaSet G 1019001 1 ラーマ_演出用]
+[charaScale G 1.3]
+[charaSet H 6032000 1 セミラミス_演出用]
+
+[imageSet M back208600 1 1]
+[charaScale M 1.34]
+
+[sceneSet N 207601 1]
+[charaScale N 1.4]
+[sceneSet O 207800 1]
+[charaScale O 1.3]
+[sceneSet P 107202 1]
+[charaScale P 1.3]
+
+[charaSet S 98115000 1 通信エフェクト用]
+
+[charaPut S 2500,2500]
+[charaEffect S bit_talk_10_LowLevel]
+
+[imageSet T back10000 1]
+[charaScale T 1.01]
+
+[charaDepth T 2]
+
+[scene 208700]
+
+[charaFadein M 0.1 0,-100]
+[charaMove M 0,-300 5.0]
+[bgm BGM_EVENT_49 0.1]
+
+[cueSe SE_24 24_ade993 1.0]
+[cueSeVolume 24_ade993 0 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad520]
+[wt 3.0]
+[cueSeVolume 24_ade993 1.0 0.3]
+[wt 0.5]
+
+？1：何、これ……？
+？！
+
+
+[bgmStop BGM_EVENT_49 1.5]
+[fadeout black 1.0]
+[cueSeStop 24_ade993 1.0]
+[wait fade]
+
+[charaFadeout M 0.1]
+
+[charaTalk depthOff]
+
+[scene 207601]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+[bgm BGM_EVENT_5 0.1]
+
+＠コロンブス
+こいつは、信じらんねえが……[r]別のチョコ川だ。
+[k]
+
+＠コロンブス
+俺たちと同じようにチョコやら何やらを追加して[r]川筋を伸ばしてたそいつの先端が、
+[k]
+
+＠コロンブス
+こちらの川の進路を[r]塞ぐように突っ込んできたのさ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+別のチョコ川！？
+[k]
+
+
+＠ダ・ヴィンチ
+キミたちが乗ってた奴だけじゃなかったってこと？[r]支流があったって感じ？
+[k]
+
+[charaPut S 2500,2500]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠コロンブス
+さて、どっちが支流になるのかねぇ？
+[k]
+
+＠コロンブス
+どうやら川の勢いや水量……チョコ量は[r]互角だったみてぇだ。
+[k]
+
+[charaFaceFade E 6 0.3]
+
+＠コロンブス
+完全に拮抗して、[r]お互いの流れが止まっちまってるぜ。
+[k]
+
+＠コロンブス
+衝撃であそこに妙なチョコの噴水みてぇなのが[r]噴き上がっちゃあいるがな。
+[k]
+
+？1：まるでチョコファウンテンだね
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠アンドロメダ
+ていうかさ、船、止まっちゃってない？[r]どうしよ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠コロンブス
+川自体の流れが止まっちまってるんだから、[r]そりゃそうなるさ。
+[k]
+
+[charaFaceFade E 7 0.3]
+
+＠コロンブス
+さらにチョコやら何やらを加えて圧力を増せば、
+[k]
+
+＠コロンブス
+あっちの川を飲み込んでまた進めるようには[r]なると思うが……。
+[k]
+
+？1：何か問題が？
+？！
+
+＠コロンブス
+問題大アリだな。[r]あっちの川を見てみろ。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_5 0.7 0.5]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[charaFadeout N 0.1]
+
+[subCameraOn 3]
+
+[charaLayer B sub #A]
+[charaLayer D sub #A]
+[charaLayer E sub #A]
+[charaLayer S sub #A]
+[charaLayer A sub #A]
+[charaLayer C sub #A]
+[charaLayer N sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask15 5 255,255,255,255]
+
+[charaScale B 1.2]
+[charaScale A 1.2]
+[charaScale E 1.2]
+[charaScale D 1.2]
+[charaScale C 1.2]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth B 6]
+[charaDepth A 7]
+[charaDepth S 8]
+[charaDepth E 4]
+[charaDepth D 5]
+[charaDepth C 7]
+[charaDepth N 3]
+[charaDepth H 8]
+
+[charaDepth O 6]
+
+[scene 207800]
+[wt 0.5]
+
+[charaFadein O 0.1 100,-280]
+[charaMove O -100,-280 6.0]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_5 0.7 1.0]
+[wait wipe]
+
+[wt 3.0]
+[charaFadeout O 1.0]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 -80,300]
+[charaFadein N 0.1 150,100]
+
+[subRenderFadeinFSL #A 0.4 -325,-275]
+[subRenderMoveFSL #A -350,-300 0.4]
+[wt 0.4]
+
+＠マシュ
+あれは……チョコ面に浮いているのは、[r]バナナ、でしょうか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 22]
+[charaFadein D 0.1 10,300]
+
+＠アンドロメダ
+美味しそうだね。[r]なんだかチョコと相性いい気がする。ゴクリ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 -10,300]
+
+＠セミラミス
+我らの川とは違うな。
+[k]
+
+＠セミラミス
+我らの川はそこの娘が方向性を定めたがゆえに、[r]『岩』という性質を持った。
+[k]
+
+＠セミラミス
+であるならば、あちらの川は、また別の[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.0]
+
+
+[se ad520]
+[seStop ad520 1.5]
+
+[charaTalk B]
+[wt 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFace B 2]
+[charaFadein B 0.1 -80,300]
+
+＠マシュ
+あれは……船です！[r]向こうの川にも船が浮かんでいます！
+[k]
+
+＠マシュ
+そして、そこに乗っているのは……！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+
+[charaLayer G sub #C]
+[subCameraFilter #C through]
+
+[charaFadeout B 0.1]
+
+[charaDepth G 8]
+[charaDepth P 7]
+[charaDepth F 6]
+
+[scene 107202]
+[wt 0.5]
+
+[charaFace G 0]
+[charaFadein G 0.1 0,198]
+[charaFadein P 0.1 -50,-180]
+
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+[bgm BGM_MAP_50 0.1]
+
+[subRenderFadein #C 0.4 0,0]
+
+[wt 0.6]
+[charaMove G 0,0 2.0]
+[charaMove P -50,-280 2.0]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 2.5]
+
+[subRenderFadeout #C 0.4]
+
+[charaFadeout P 0.4]
+[wt 0.8]
+[charaFadeout G 0.1]
+
+？1：ラーマ！
+？！
+
+[charaTalk on]
+[charaTalk F]
+
+
+＠ラーマ
+うむ、余だ。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[scene 207800]
+
+[charaLayer F sub #B]
+[charaLayer P sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask15 4 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask09 4 255,255,255,255]
+
+[charaScale F 1.2]
+[charaScale P 1.2]
+
+[charaTalk off]
+[charaDepth P 4]
+[charaDepth F 6]
+
+[charaFace B 5]
+[charaFadein B 0.1 -40,330]
+
+[subRenderFadeinFSL #A 0.1 -350,-300]
+
+[charaFace F 0]
+[charaFadein F 0.1 -20,300]
+[charaFadein P 0.1 150,100]
+
+[subRenderFadeinFSR #B 0.1 350,-300]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk B]
+
+[wipein rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+＠マシュ
+ラーマさん、なぜここに？
+[k]
+
+＠ラーマ
+何故、と問うか。[r]愚問だ。
+[k]
+
+＠ラーマ
+余には会いたい者がいる。[r]会わねばならぬ者がいる。
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace F 5]
+
+＠ラーマ
+[line 3]シータ。[r]我が最愛の妻だ。
+[k]
+
+[charaFace B 13]
+
+＠マシュ
+……！
+[k]
+
+[charaFace F 5]
+
+＠ラーマ
+だから、[#会いたい者に会える]というこの川は、[r]余が先に進めねばならない。
+[k]
+
+＠ラーマ
+余の川こそがその場所に辿り着かねばならない。
+[k]
+
+＠ラーマ
+どいてくれ。
+[k]
+
+[messageOff]
+[bgm BGM_MAP_50 1.5 0.5]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+
+[charaFadeout B 0.1]
+[charaFadeout N 0.1]
+
+[charaFadeout F 0.1]
+[charaFadeout O 0.1]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+
+[subCameraOff]
+[charaLayer N normal]
+[charaLayer O normal]
+[charaLayer B normal]
+[charaLayer S normal]
+[charaLayer A normal]
+[charaLayer D normal]
+[charaLayer E normal]
+[charaLayer C normal]
+[charaLayer F normal]
+
+[charaScale B 1.0]
+[charaScale A 1.0]
+[charaScale D 1.0]
+[charaScale E 1.0]
+[charaScale C 1.0]
+[charaScale F 1.0]
+
+[scene 207601]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+
+＠コロンブス
+なるほど、道を譲る気はねぇ、と。[r]どうしたモンかな。
+[k]
+
+[charaFadeTime T 0.2 0.5]
+
+＠コロンブス
+（だが……考えるまでもねえ、か）
+[k]
+
+[charaFadeout T 0.2]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[bgmStop BGM_MAP_50 1.5]
+
+
+
+＠アンドロメダ
+ああ……わかる。[r]わかっちゃうなぁ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠セミラミス
+何がだ、娘？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[bgm BGM_MAP_56 0.1]
+
+＠アンドロメダ
+あの人が本気でそれを想ってるってこと。
+[k]
+
+＠アンドロメダ
+本当に、心の底から、[r]自分の全てを懸けた願いであること[line 3]かな。
+[k]
+
+[charaFace D 1]
+
+＠アンドロメダ
+それと……[r]あの人が凄く立派な英雄さんだってことも、だね。
+[k]
+
+＠アンドロメダ
+あたしは名前も顔も知らないヒトだけど、[r]そうでしょ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……そうですね。
+[k]
+
+[charaFace B 6]
+
+＠マシュ
+ラーマさんはいつも正しく在ろうとしている、[r]立派な王様で、叙事詩に[#謳:うた]われる英雄です。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠アンドロメダ
+へへ、だと思った。
+[k]
+
+[charaFace D 1]
+
+＠アンドロメダ
+なんかね。顔とか声とかじゃなくて、[r]周りの空気が……[#彼:カレ]に、似てるから。
+[k]
+
+＠アンドロメダ
+どんな敵にも負けない強さ、[r]けっして失われない正しさ。
+[k]
+
+＠アンドロメダ
+どんな困難が立ち塞がっても、[r]最後には乗り越えて絶対に前に進めるような、
+[k]
+
+＠アンドロメダ
+在り方の真っ直ぐさ。
+[k]
+
+＠アンドロメダ
+そんな感じの、[r]みんなが認める『英雄』みたいな……
+[k]
+
+[charaFace D 0]
+
+＠アンドロメダ
+そう。[r][#眩:まぶ]しさがね、一緒なんだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠セミラミス
+ふん。[r]だからどうした？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 20]
+[charaFadein D 0.1 1]
+
+＠アンドロメダ
+いやー、その通り。[r]だからどうしよっかなってなってるワケですよ。
+[k]
+
+＠アンドロメダ
+あたしたちはさ、この世界の異変を解消するために[r]チョコ川を進めてるわけなんだけど……
+[k]
+
+[charaFace D 1]
+
+＠アンドロメダ
+それって、ひょっとして、[r]あたしの川じゃなくてもよかったりする？
+[k]
+
+？1：それは……
+？2：どうなんだろう……？
+？！
+
+[charaFace D 22]
+
+＠アンドロメダ
+あたしには、[r]あの人の想いが本物なのはわかる。
+[k]
+
+＠アンドロメダ
+何か特別な理由があるんだってことも。
+[k]
+
+[charaFace D 1]
+
+＠アンドロメダ
+あたしがペルセウスに会いたいと[r]思ってるのも間違いなく本当だけど、
+[k]
+
+＠アンドロメダ
+あの人みたいな特別な理由はないし。
+[k]
+
+＠アンドロメダ
+どっちかの川しか伸ばせないっていうんなら、[r]あたしは譲って、
+[k]
+
+＠アンドロメダ
+あっちを主流にしてもらってもいいかなって。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+
+＠コロンブス
+いや。それは無理だ。[r]あっちの川は辿り着かねえ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠アンドロメダ
+え？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+えーと、ここをこうして、こうすれば……[r]うん、やっぱりだ！
+[k]
+
+[charaFace A 25]
+
+
+＠ダ・ヴィンチ
+みんな、気をつけて。[r][#あれはカルデアのラーマじゃない]！
+[k]
+
+[bgmStop BGM_MAP_56 1.5]
+＠ダ・ヴィンチ
+ラーマの反応はちゃんとカルデアにある。[r]あそこにいるのは、何か別のものだ！
+[k]
+
+？1：どういうこと！？
+？！
+
+[charaPut S 2500,2500]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠セミラミス
+む……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠アンドロメダ
+見て！[r]なんだか、色が！
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 107202]
+[wt 0.5]
+
+[charaDepth F 5]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+[wt 0.5]
+[bgm BGM_EVENT_81 0.1]
+
+[charaCrossFade F 1098287400 0 0.6]
+[wait charaCrossFade F]
+[wt 1.6]
+
+？1：チョコレート……？
+？！
+
+[charaCrossFade F 1019001 0 0.6]
+[wait charaCrossFade F]
+[wt 1.6]
+
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_81 0.7 0.5]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[scene 207601]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_81 0.7 1.0]
+[wait wipe]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい。一瞬のことで、今はまた元に戻りましたが……[r]わたしにもそう見えました。
+[k]
+
+＠マシュ
+ダ・ヴィンチちゃん、今のは？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+うん。推測するに、あれはサーヴァントじゃない。[r]まさしくチョコレートで出来ているモノだ。
+[k]
+
+＠ダ・ヴィンチ
+特殊な指向性のある魔力か何かが[r]チョコレートと結びついて、
+[k]
+
+＠ダ・ヴィンチ
+霊基を模してサーヴァントの形を作ったもの。
+[k]
+
+[charaFace A 9]
+
+＠ダ・ヴィンチ
+名付けるなら、[r]チョコサーヴァント……みたいな感じなのかな。
+[k]
+
+＠ダ・ヴィンチ
+詳しい理屈はよくわかんないけど！
+[k]
+
+
+[branchQuestNotClear lblNotClear1 94020812]
+
+[messageOff]
+[charaPut S 2500,2500]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+？1：なんだか似たものを知ってるような
+？！
+
+[cueSe SE_22 22_ad1177]
+[fadeout white 0.4]
+[bgm BGM_EVENT_81 0.4 0.5]
+[wait fade]
+
+[effect bit_sepia01]
+[wipeFilter cinema 0.5 0]
+
+[scene 208500]
+
+[charaTalk off]
+[charaPut H 0,-50]
+[charaFilter H silhouette A0522D]
+[charaFadeTime H 0.1 0.5]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+[wt 0.5]
+
+[fadein white 0.4]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout white 0.4]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout H 0.1]
+
+[effectStop bit_sepia01]
+[wipeOff]
+
+[scene 207601]
+[wt 0.5]
+
+[fadein white 0.4]
+[bgm BGM_EVENT_81 0.4 1.0]
+[wait fade]
+
+
+？1：あれは、確か、そう……チョコラミス……
+？！
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠セミラミス
+チョコラミス？[r]さて、何のことやらさっっぱり、わからんな。
+[k]
+
+＠セミラミス
+それ以上口にすれば、いくらマスターと言えども[r]忘却の毒を飲ませずにはいられなくなるぞ。
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch lblConf1]
+
+[label lblNotClear1]
+
+[charaPut S 2500,2500]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[label lblConf1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠コロンブス
+あれの[#基:もと]になってるのは、[r]力ある奴らの思念……会いたいって想い、だろうな。
+[k]
+
+＠コロンブス
+それが独立してチョコに結びついた、って感じだろう。
+[k]
+
+＠コロンブス
+サーヴァントそのものならともかく、[r]模されたチョコレートじゃあ、駄目だ。
+[k]
+
+＠コロンブス
+本物の想いを持つ者じゃなければ、駄目だ。[r]この川は行くべき場所に辿り着かねえ。
+[k]
+
+[charaFaceFade E 5 0.3]
+
+＠コロンブス
+だから譲るってのはナシだぜ、嬢ちゃん。
+[k]
+
+＠コロンブス
+あっちの川が主流になれば、川はどこにも辿り着かずに[r]堂々巡りすることになっちまう。
+[k]
+
+＠コロンブス
+この特異点を解消する方法はなくなる。[r]だからこっちが勝たなくちゃいけねぇんだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+
+[charaTalk A]
+[charaFace A 30]
+[charaFadein A 0.1 1]
+
+[charaFadeTime T 0.2 0.5]
+
+＠ダ・ヴィンチ
+（……そういう細かい分析を、[r]　どうしてキミが言い切れるのかなー？）
+[k]
+
+[charaFadeout T 0.2]
+[charaPut S 2500,2500]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠アンドロメダ
+そう、なんだ。
+[k]
+
+[charaFace D 17]
+
+＠アンドロメダ
+[line 3]でも、勝つって、どうやって？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠コロンブス
+単純な話だ。今のこの停滞した場は、[r]二つの川が互角に衝突したからこそできている。
+[k]
+
+＠コロンブス
+その均衡を崩すしかねえ。力技でな。
+[k]
+
+[charaFaceFade E 8 0.3]
+
+＠コロンブス
+やるべきことは今までと同じ。
+[k]
+
+[charaFaceFade E 0 0.3]
+
+＠コロンブス
+こっちの川のほうがより強く流れるよう、[r]物量、燃料をブッ込むんだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+岩とチョコをさらにこちら側の川に追加すればいい、[r]ということですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠コロンブス
+そうだな。加えて言えば、この場はあっち側の川も[r]微妙に混ざり合った噴水池みてぇになってる。
+[k]
+
+＠コロンブス
+この決戦場近くに限って言えば、おそらくだが、
+[k]
+
+＠コロンブス
+『嬢ちゃんの魔力を流したあっち側の性質のモノ』も[r]川のかさ増しに使えるだろう。
+[k]
+
+
+[charaFaceFade E 6 0.3]
+
+＠コロンブス
+ひょっとしたらそれが勝負のアヤになるかもしんねぇな。[r]『どっちが相手側の属性も利用できるか』って感じだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠アンドロメダ
+あっちの属性は……やっぱり、バナナ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠コロンブス
+みてぇだな。
+[k]
+
+＠コロンブス
+ちっと抜けてる感じも受けるが、[r]相手は大真面目だぜ。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_81 0.4 0.5]
+
+[subCameraOn 1]
+[charaLayer F sub #A]
+[charaLayer O sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 216,90,0,255]
+
+[charaScale F 1.2]
+[charaScale O 1.2]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,300]
+
+[charaFadein P 0.1 150,100]
+
+
+[subRenderFadeinFSR #A 0.4 365,-270]
+[subRenderMoveEaseFSR #A 350,-300 0.5 easeOutExpo]
+[wt 0.6]
+[se adm37]
+[wt 1.2]
+
+[bgm BGM_EVENT_81 0.4 1.0]
+[subRenderMoveFSR #A 335,-330 0.5]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+
+[charaFadeout F 0.1]
+[charaFadeout P 0.1]
+
+＠コロンブス
+そうそう、当然あっちも同じことを狙うはずだし、[r]場合によっちゃあ直接的に邪魔してくるだろう。
+[k]
+
+
+＠コロンブス
+いや、完全にこっちを実力で排除してから、その後で[r]ゆっくり川の勢いを増そうとする可能性もあるな。
+[k]
+
+＠コロンブス
+こいつは意外と面倒かもだぜ。
+[k]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠セミラミス
+逆に相手のほうをこちらが完全排除してから、[r]という手もあるのではないか？
+[k]
+
+＠セミラミス
+我は邪魔者であれば、カルデアの関係者であろうと[r]容赦する必要はないと考えるぞ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠コロンブス
+いや。そういうのとは別に……多分だが、アイツの[r]元になってるチョコは『あっちの川そのもの』だ。
+[k]
+
+＠コロンブス
+結局、あっちの川をどうにかしない限り[r]倒しても復活するだろう。[bgmStop BGM_EVENT_81 1.5]
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+
+[charaLayer F normal]
+[charaScale F 1.0]
+
+[charaSet H 1098286000 1 魔猿1]
+[charaSet I 1098286000 1 魔猿2]
+[charaSet J 1098286000 1 魔猿3]
+[charaSet K 1098286000 1 魔猿4]
+[charaSet L 1098286000 1 魔猿5]
+[charaSet M 1098286000 1 魔猿6]
+
+
+[scene 107202]
+
+[charaLayer S sub #A]
+[charaLayer A sub #A]
+[charaLayer T sub #A]
+[charaLayer N sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask10 4 255,255,255,255]
+
+[charaScale A 1.2]
+[charaScale N 1.2]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+[wt 0.5]
+
+[charaDepth A 7]
+[charaDepth S 8]
+[charaDepth T 4]
+[charaDepth N 3]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+
+
+[bgm BGM_BATTLE_105 0.1]
+
+＠ラーマ
+悪いが、余は[#退:ひ]けぬ。[r]退けぬのであれば、戦うしかないぞ。
+[k]
+
+[charaFace F 0]
+
+＠ラーマ
+[line 3]無論、おまえたちを殺しはしない。[r]マスター、マシュ。
+[k]
+
+
+[charaPutFSL S 40,300]
+[charaPut T 250,100]
+[charaTalk A]
+[charaFace A 23]
+[charaFadeinFSL A 0.1 40,300]
+[charaFadeTime T 0.1 0.5]
+[charaFadein N 0.1 250,50]
+[wt 0.1]
+
+[subRenderFadeinFSL #A 0.2 -420,-260]
+[subRenderMoveFSL #A -400,-300 0.2]
+[wt 0.2]
+
+
+
+
+＠ダ・ヴィンチ
+（部分的なものかもしれないけれど、[r]　パーソナリティはカルデアのラーマと同じなのか）
+[k]
+
+＠ダ・ヴィンチ
+（コロンブスの言う通り、会いたい想いだけが分かれた[r]　コピー、分身ってことなのかな）
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[subRenderMoveFSL #A -380,-340 0.2]
+[wt 0.2]
+
+[charaFadeout T 0.1]
+[charaPut S 2500,2500]
+[charaFadeout A 0.1]
+
+＠ラーマ
+これが余の[#我儘:わがまま]であることを、[r]余は知っている。
+[k]
+
+＠ラーマ
+だがそれは世界を相手にしても退けぬ我儘だ。[r]撤回など有り得ぬ我儘だ。
+[k]
+
+＠ラーマ
+そちらの川の属性は岩だな。よかろう。
+[k]
+
+＠ラーマ
+我が友ハヌマーンは、かつて[r]山を運んで我らが窮地を救った。
+[k]
+
+＠ラーマ
+ハヌマーンの[#眷属:けんぞく]らしきもの……その前で、[r]余が似たようなことをするのも一興であろうさ。
+[k]
+
+[charaFace F 2]
+
+＠ラーマ
+そこらの岩山を切り落とし、[r]川に投げ入れてくれる！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth H 8]
+[charaDepth I 7]
+[charaDepth J 6]
+[charaDepth K 5]
+[charaDepth L 4]
+[charaDepth M 3]
+[charaDepth F 3]
+
+[charaScale H 0.8]
+[charaScale I 0.8]
+[charaScale J 0.8]
+[charaScale K 0.8]
+[charaScale L 0.8]
+[charaScale M 0.8]
+
+[cueSe SE_24 24_ade995]
+[cueSe SE_22 22_ade707]
+[wt 0.2]
+
+[charaFace H 0]
+[charaFadein H 0.4 200,-150]
+[charaMove H 150,-150 0.4]
+
+[charaFace I 0]
+[charaFadein I 0.4 370,-50]
+[charaMove I 320,-50 0.4]
+
+[charaFace J 0]
+[charaFadein J 0.4 550,50]
+[charaMove J 500,50 0.4]
+
+[charaFace K 0]
+[charaFadein K 0.4 -200,-150]
+[charaMove K -150,-150 0.4]
+
+[charaFace L 0]
+[charaFadein L 0.4 -370,-50]
+[charaMove L -320,-50 0.4]
+
+[charaFace M 0]
+[charaFadein M 0.4 -550,50]
+[charaMove M -500,50 0.4]
+
+[wt 0.4]
+[cueSeStop 22_ade707 0.3]
+
+[wt 1.4]
+[cueSeStop 22_ade703 0.7]
+
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_BATTLE_105 0.7 0.5]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+
+[subCameraOff]
+[charaLayer S normal]
+[charaLayer A normal]
+[charaScale A 1.0]
+
+[scene 207601]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_BATTLE_105 0.7 1.0]
+[wait wipe]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 20]
+[charaFadein B 0.1 1]
+
+＠マシュ
+バナナを抱えたおさるさんたちがいっぱいです！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠セミラミス
+よく見ればあの船だけではなく、[r]周囲の岸にもいるぞ。
+[k]
+
+＠セミラミス
+どうやら奴らのおかげであちらは[r]バナナを大量に仕入れられているようだな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠コロンブス
+岸にもいるって？[r]だったら逆にチャンスかもしれねぇぜ。
+[k]
+
+＠コロンブス
+あの猿たちからバナナを奪うことができりゃあ、[r]相手の勢いを削ぎつつ、俺たちの川の力にもできる。
+[k]
+
+＠コロンブス
+[#一石二鳥:いっせきにちょう]だぜ。
+[k]
+
+？1：何にしても、やるしかなさそう……！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 21]
+[charaFadein D 0.1 1]
+
+＠アンドロメダ
+……そうだね。[r]やるしかない、か。
+[k]
+
+[charaFace D 4]
+
+＠アンドロメダ
+[#あたしでいいのか]、なんて答えはまだ出ていない。[r]あの人の願いを否定したいわけでもない。けど……
+[k]
+
+[charaFace D 22]
+
+＠アンドロメダ
+そうしないと、[r]誰かを救う道がなくなっちゃうっていうんなら。
+[k]
+
+[charaFace D 2]
+
+＠アンドロメダ
+あたしは、あたしの『会いたい』を[r]貫かせてもらうしかない！
+[k]
+
+[charaFace D 22]
+
+＠アンドロメダ
+ごめんね。[r]先に[line 3]進ませてもらうよ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_105 0.5]
+[wait fade]
+[soundStopAllEnd]
+[end]

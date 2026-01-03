@@ -1,0 +1,677 @@
+
+＄94-06-96-13-1-0
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 10013001 1 スーパーバニヤン]
+[charaSet C 7011000 1 ダレイオス3世]
+[charaSet D 6019001 1 風魔小太郎]
+[charaSet E 4028001 1 イヴァン雷帝]
+[sceneSet F 150400 1]
+[charaScale F 1.01]
+[imageSet G cut341_tips10 1]
+[charaScale G 1.01]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[sceneSet I 10000 1]
+[charaScale I 1.01]
+[sceneSet J 10001 1]
+[charaScale J 1.01]
+
+[sceneSet K 150600 1]
+[charaScale K 1.3]
+[sceneSet L 150600 1]
+[charaScale L 1.7]
+[sceneSet M 150600 1]
+[charaScale M 1.7]
+[charaSet N 6019001 1 風魔小太郎_演出用]
+[charaSet O 6019001 1 風魔小太郎_演出用2]
+
+[sceneSet P 150000 1]
+[charaScale P 1.4]
+
+[sceneSet Q 156200 1]
+[charaScale Q 1.7]
+[sceneSet R 156200 1]
+[charaScale R 1.7]
+
+[charaDepth I 9]
+[charaPut I 1]
+[charaFadeTime I 0.1 1.0]
+
+[scene 150200]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade306]
+[seVolume ade306 0 0.3]
+[seVolume ade306 1.0 1.0]
+[fowardEffect bit_talk_movie_film_fs]
+[fowardEffect bit_talk_film_noise]
+[wt 1.2]
+
+[effect bit_talk_movie_title_telop08]
+[wt 0.2]
+[charaFadeTime I 1.0 0.5]
+[wt 0.3]
+[seStop ade306 1.0]
+[wt 1.2]
+[cueSe SE_22 22_ade735]
+[wt 4.5]
+
+[effectForceStop bit_talk_movie_title_telop08]
+
+[charaFadeout I 1.0]
+[wt 1.2]
+
+[se ade431]
+[seVolume ade431 0 0]
+[seVolume ade431 1.0 1.0]
+[wt 1.5]
+
+＠
+『突っ走る弾丸列車。積み荷は金塊。護衛はニンジャ』
+[k]
+
+[messageOff]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠D：ニンジャ
+奴らは来る……！
+[k]
+
+[messageOff]
+
+[charaDepth D 0]
+[charaFadeTime I 0.7 1.0]
+[seStop ade431 1.0]
+[wt 0.7]
+
+[charaFadeout D 0]
+
+[scene 150600]
+[wt 0.7]
+
+[charaFadeout I 0.7]
+[wt 0.7]
+
+[se ade383]
+[seVolume ade383 0 0]
+[seVolume ade383 1.0 0.2]
+[se ad619]
+[seVolume ad619 0 0]
+[seVolume ad619 1.0 0.5]
+[wt 1.0]
+
+＠
+『突如として現れた象軍団が、大平原を埋め尽くし[r]　弾丸列車に追いすがる』
+[k]
+
+[messageOff]
+[seStop ad619 1.0]
+[seStop ade383 1.0]
+[wt 0.5]
+
+[bgm BGM_BATTLE_68 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠C：列車強盗・頭目
+[f large]奪[messageShake 0.05 6 3 0.9]エェエエ……ェェイィ！
+[k]
+
+[messageOff]
+[messageShakeStop]
+
+[charaDepth C 0]
+[charaFadeTime I 0.5 1.0]
+[bgm BGM_BATTLE_68 0.5 0.5]
+[wt 0.5]
+
+[charaFadeout C 0]
+
+[scene 150200]
+
+[charaTalk D]
+[charaFace D 5]
+[charaDepth D 0]
+[charaFadein D 0 1]
+[wt 0.2]
+
+[charaFadeout I 0.5]
+[bgm BGM_BATTLE_68 0.5 1.0]
+[wt 0.5]
+
+＠D：ニンジャ
+来たぞ。迎え撃つ。
+[k]
+
+[messageOff]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth H 2]
+[charaDepth I 3]
+
+[charaPut H 1]
+[charaEffect H bit_talk_42 0,0 H]
+[wt 0.1]
+[se ad7]
+[charaMove D -120,0 0.2]
+[charaFadeout D 0.2]
+
+[charaEffectStop H bit_talk_42]
+
+[charaFadeTime I 0.5 1.0]
+[bgm BGM_BATTLE_68 0.5 0.5]
+[wt 0.2]
+[wt 0.3]
+
+[scene 150600]
+[wt 0.2]
+
+[charaPut D 150,0]
+[charaFadeout I 0.5]
+[bgm BGM_BATTLE_68 0.5 1.0]
+[wt 0.4]
+[wt 0.1]
+
+[se ad671]
+[charaMove D 0,0 0.2]
+[charaFadein D 0.2]
+[wt 0.2]
+[seStop ad671 0.2]
+
+[wt 0.6]
+
+[charaTalk depthOn]
+
+[charaFace D 0]
+
+＠D：ニンジャ
+１匹たりとも通すな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠C：列車強盗・頭目
+[f large]消[messageShake 0.05 6 3 0.9]エロォォ……オオオオオッ！
+[k]
+
+[messageOff]
+[messageShakeStop]
+
+[se ad678]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale C 1.1 0.2]
+[charaMove C 0,15 0.2]
+[wt 0.1]
+[charaFadeout C 0.1]
+[blurOff motion 0.3]
+[wt 0.1]
+[charaScale C 1.0]
+
+[effect bit_talk_kengekiall02_fs]
+[wt 0.2]
+[se ad1010]
+[se ad1031]
+[wt 0.2]
+[se ad471]
+[wt 0.2]
+[se ad1013]
+[wt 0.1]
+[effect bit_talk_14]
+[wt 0.1]
+[charaPut J 1]
+[charaFadeTime J 0.2 0.8]
+[wt 0.2]
+[charaFadeout J 0.5]
+[wt 1.0]
+
+＠
+『と[line 3]行く手の線路上を塞ぐ、巨体を見よ！』
+[k]
+
+[messageOff]
+
+[se ade383]
+[wt 0.2]
+[seStop ade383 0.6]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠E：列車強盗・客分
+余の許しなく押し通れると思うか。[r]その[#驕:おご]り、まっこと笑止千万！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠D：ニンジャ
+またしても象だと……？
+[k]
+
+[charaFace D 0]
+
+＠D：ニンジャ
+奴に構うな。不殺の陣を張れ。[r]いや、敷設の陣だ。
+[k]
+
+[messageOff]
+[charaDepth D 1]
+[charaDepth N 2]
+[charaDepth O 3]
+
+[charaTalk off]
+
+[charaFace N 0]
+[charaFace O 0]
+[charaPut N 0,0]
+[charaPut O 0,0]
+[charaFadeTime N 0.3 0.6]
+[charaFadeTime O 0.3 0.6]
+[charaMoveReturn N -10,0 0.6]
+[charaMoveReturn O 10,0 0.6]
+[se ade282]
+[seStop ade282 1.0]
+[wt 0.3]
+[charaFadeout N 0.3]
+[charaFadeout O 0.3]
+[wt 0.3]
+
+[charaFadein N 0.3 1]
+[charaFadein O 0.3 1]
+[charaMove N -250,0 0.4]
+[charaMove O 250,0 0.4]
+[se ad443]
+[wt 0.6]
+[seStop ad443 0.2]
+[wt 0.4]
+
+[se ad73]
+[charaEffect N bit_talk_quickmove]
+[charaSpecialEffect N erasureReverse 1 0.25]
+[charaEffect O bit_talk_quickmove]
+[charaSpecialEffect O erasureReverse 1 0.25]
+[wt 0.6]
+
+[se ad443]
+[seVolume ad443 0 0.1]
+[seVolume ad443 0.5 1.0]
+[wt 0.1]
+
+[charaDepth D 1]
+[charaDepth Q 2]
+[charaDepth L 3]
+[charaDepth R 4]
+[charaDepth M 5]
+
+[charaFadein Q 0.3 -200,-98]
+[charaMove Q -100,-98 1.0]
+[charaPut L -200,-98]
+[charaMove L -100,-98 1.0]
+
+[se ad101]
+[se ad883]
+[seVolume ad883 0 0.5]
+[effect bit_talk_quick_slash 0,0 H]
+[wt 0.4]
+[charaFadeTime L 0.5 1.0]
+[seStop ad101 1.0]
+[seStop ad883 1.0]
+[wt 0.8]
+[charaFadeout Q 0.1]
+
+[charaFadein R 0.3 200,-98]
+[charaMove R 100,-98 1.0]
+[charaPut M 200,-98]
+[charaMove M 100,-98 1.0]
+
+[se ad101]
+[se ad883]
+[seVolume ad883 0 0.5]
+[effect bit_talk_quick_slash]
+[wt 0.4]
+[charaFadeTime M 0.5 1.0]
+[seStop ad101 1.0]
+[seStop ad883 1.0]
+[seStop ad443 1.0]
+[wt 1.0]
+[charaFadeout R 0.1]
+[charaFadeout L 0.1]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+＠
+『ニンジャ恐るべし！　八方に散った手の者どもが、[r]　たちまち線路を増設する！　２本、５本、10本……！』
+[k]
+
+[messageOff]
+
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth K 2]
+[charaDepth N 3]
+[charaDepth M 4]
+
+[charaScale N 1.3]
+
+[charaFace N 13]
+[charaFadein N 0.1 0,-10]
+[charaFadein K 0.1 0,-280]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[charaFadeout M 1.0]
+[wt 1.4]
+
+＠ニンジャ
+忍法、[wt 0.6][se ade211][charaFace N 18][effect bit_talk_41]『[#不確定性鉄道:アンサーティンティ・レイルロード]』！
+[k]
+
+[messageOff]
+[effectDestroy bit_talk_41]
+[charaFadeout N 1.0]
+[charaFadeout K 1.0]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk E]
+
+
+＠E：列車強盗・客分
+愚か者が！　余の[#雷霆:らいてい]に死角なし！[r]『[#雷帝無敵砲:ヴァイナー・グローズヌイ]』！
+[k]
+
+
+
+[messageOff]
+[charaDepth E 1]
+[charaDepth H 4]
+[charaDepth J 5]
+
+[se ad427]
+[se ad626]
+[seVolume ad626 0 0.3]
+
+[charaEffect H bit_talk_ivan_lightning_charge_l]
+[charaEffect H bit_talk_ivan_lightning_charge_l_back]
+[wt 3.0]
+
+[seStop ad626 1.0]
+[charaFadein J 1.0 0,-200]
+[wt 1.0]
+[charaEffectDestroy H bit_talk_ivan_lightning_charge_l]
+[charaEffectDestroy H bit_talk_ivan_lightning_charge_l_back]
+[charaFadeout E 0.1]
+[wt 0.6]
+[charaFadeout J 0.5]
+[wt 0.3]
+
+[se ade9]
+[wt 0.2]
+[se ad627]
+[se ad63]
+[wt 0.1]
+[charaEffect H bit_talk_thunderbolt_fs]
+[wt 0.6]
+[shake 0.02 3 3 3.0]
+[wt 2.4]
+
+[charaEffectStop H bit_talk_thunderbolt_fs]
+[wt 1.0]
+[charaFadein J 1.0 0,-200]
+[wt 1.0]
+[charaFadeout J 1.0]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+
+＠C：列車強盗・頭目
+ヤリスギ……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠D：ニンジャ
+なんの！　我ら灰となって消えようとも、築きし鉄路は[r]響きを止めず。列車は走る、どこまでも[line 3]！
+[k]
+
+
+[messageOff]
+[charaPut I 1]
+[charaFadeTime I 1.5 1.0]
+[bgmStop BGM_BATTLE_68 1.5]
+[wt 1.5]
+
+[charaFadeout D 0.1]
+
+[wt 2.0]
+
+[charaFadeTime I 0.5 0.5]
+
+[cueSe SE_22 22_ade726]
+[wt 0.2]
+
+[effect bit_talk_movie_end_telop08]
+[wt 1.5]
+[se ade306]
+[seVolume ade306 0 0.5]
+[seVolume ade306 1.0 1.0]
+[wt 2.5]
+
+[seStop ade306 1.0]
+
+[maskout black 1.0]
+[wait mask]
+
+[effectDestroy bit_talk_movie_end_telop08]
+[fowardEffectDestroy bit_talk_movie_film_fs]
+[fowardEffectDestroy bit_talk_film_noise]
+[charaFadeout I 0.1]
+
+[cameraHome 0.1]
+
+[charaTalk depthOn]
+
+[scene 10000]
+[wt 0.1]
+
+[maskin black 1.5]
+[wait mask]
+
+[charaDepth P 2]
+[charaDepth F 3]
+[charaDepth G 4]
+
+[charaFadein F 0.4 0,-200]
+[se ade277]
+[wt 0.3]
+
+[charaFadein G 0.1 0,-200]
+[wt 1.0]
+
+[wait touch]
+
+[charaFadeout F 0.5]
+[charaFadeout G 0.2]
+[wt 0.2]
+[se ad420]
+
+[fadeout black 0.1]
+[wt 0.1]
+
+
+[scene 150000]
+[wt 0.5]
+
+[charaFadein P 0.1 100,-200]
+[wt 1.0]
+
+[charaMove P -200,-200 35.0]
+
+[fadein black 1.5]
+[wt 1.0]
+[bgm BGM_SEIHAI_1 0.1]
+[wait mask]
+
+[wt 3.5]
+
+[charaFadeout P 1.0]
+[wt 2.5]
+
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠マシュ
+これは……壮絶と言うか……。
+[k]
+
+？1：むちゃくちゃと言うか
+？2：投げっ放しエンド……！
+
+？！
+
+[bgmStop BGM_SEIHAI_1 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠スーパーバニヤン
+正解だよ！　なにしろ[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[se ad171]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale D 1.1 0.2]
+[charaMove D 0,15 0.2]
+[wt 0.1]
+[charaFadeout D 0.1]
+[blurOff motion 0.3]
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth E 1]
+
+[charaTalk off]
+[charaFace C 2]
+[charaFace E 0]
+[charaFadeinFSR C 0.1 300,0]
+[charaFadeinFSL E 0.1 -300,0]
+[wt 0.1]
+
+[effect bit_talk_x_slash01]
+[cueSe Servants_102800 bac657]
+[wt 0.25]
+[charaShake C 0.05 3 3 0.7]
+[charaShake E 0.05 3 3 0.7]
+
+[effect bit_talk_x_slash02]
+[cueSe Servants_102800 bac658]
+[wt 0.25]
+
+[effect bit_talk_x_slash03]
+[cueSe Servants_102800 bac657]
+[wt 1.0]
+
+[charaEffect C bit_talk_charge_red]
+[charaEffect E bit_talk_charge_blu]
+[se ad632]
+[se ad556]
+[seVolume ad556 0 0.6]
+[wt 2.5]
+
+[seStop ad632 0.5]
+[seStop ad556 0.5]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut C 2000,2000]
+[charaPut E 2000,2000]
+[charaEffectStop C bit_talk_charge_red]
+[charaEffectStop E bit_talk_charge_blu]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.2 0,15]
+[charaMoveScale D 1.0 0.2]
+[charaMove D 0,0 0.2]
+[se ad671]
+[seStop ad671 0.6]
+[wt 0.8]
+[se ad442]
+[wt 1.0]
+
+＠スーパーバニヤン
+[line 3]戦いは、まだ続いてるからね！
+[k]
+
+＠マシュ
+映画の中の話では！？
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

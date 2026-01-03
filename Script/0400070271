@@ -1,0 +1,171 @@
+
+＄04-00-07-02-7-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 1098344400 1 セイバーオルタ]
+[charaSet B 1098344400 1 セイバーオルタ]
+[charaScale B 1.25]
+[charaSet C 8001900 1 マシュ]
+
+[charaSet D 98115000 1 エフェクト用1]
+
+[sceneSet E 107400 1]
+[charaScale E 1.2]
+
+[charaDepth C 1]
+[charaDepth A 2]
+[charaDepth E 3]
+[charaDepth B 4]
+
+
+[scene 10001]
+[cueSe SE_23 23_ade880]
+[fadein black 0.5]
+[wait fade]
+[wt 0.5]
+
+[fadeout white 0.1]
+[wait fade]
+
+[cueSe Servants_100100 bac1462]
+[seVolume bac1462 0 0.5]
+
+[scene 107400]
+[wt 0.1]
+
+[cueSe SE_21 21_ad1134]
+[seVolume 21_ad1134 0 0]
+
+[fadein white 1.5]
+[wt 1.0]
+[cueSe SE_22 22_ad1197]
+[seVolume 22_ad1197 0 0.5]
+[seStop 23_ade880 1.0]
+
+[fowardEffect bit_talk_blow03]
+[se ad32]
+[seVolume ad32 0 0.5]
+[se ad363]
+[seVolume ad363 0 0.5]
+[cueSe SE_23 23_ad1341]
+[seVolume 23_ad1341 0 0.4]
+[cueSe SE_21 21_ad1133]
+[seStop 21_ad1133 1.0]
+[seVolume 21_ad1134 0.2 1.0]
+[wt 0.3]
+[seStop ad363 0.6]
+[seStop bac1462 1.0]
+[seStop 22_ad1197 1.0]
+[charaScale A 1.5]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 0,60]
+[charaMoveScaleEase A 1.0 0.6 easeOutCubic]
+[charaMoveEase A 0,0 0.6 easeOutCubic]
+[se ad671]
+[seStop ad671 1.0]
+
+[wt 2.2]
+
+[wait fade]
+
+
+[charaTalk off]
+[charaFace B 4]
+[charaFadein B 0.7 0,15]
+[charaFadein E 0.7 0,-270]
+[wt 1.0]
+
+＠セイバーオルタ
+多くの円卓の技を[#学:まな]んだようだな。[wt 1.6][charaFaceFade B 1 0.3][bgm BGM_MAP_41 0.5][r]……我らにも、いい後輩ができたものだ。
+[k]
+
+[charaFace A 1]
+
+＠セイバーオルタ
+聖剣使いの基礎は叩き込んだ。[r][#後:あと]は卿[#次第:しだい]だ。心のまま進むがいい。
+[k]
+
+[messageOff]
+[charaFadeout B 0.5]
+[charaFadeout E 0.5]
+[wt 0.2]
+
+[charaPut D 1]
+[charaEffect D bit_talk_06]
+[wt 2.5]
+
+[charaFadeout A 0.1]
+[charaPut D 1200,1200]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 37]
+[charaFadein C 0.1 1]
+
+＠マシュ
+……はい！[r]ご指導、ありがとうございました！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaPut D 1]
+
+＠セイバーオルタ
+[%1]と言ったな。[r]この先は今を生きる者の戦いだ。
+[k]
+
+＠セイバーオルタ
+多くの魂、多くの戦士たちの[#標:しるべ]になれ。[r]ここまで来た貴様には、その責務がある。
+[k]
+
+？1：……はい
+
+？2：……あなたはついてきてくれないんですか？
+
+[charaFaceFade A 6 0.2]
+
+＠セイバーオルタ
+無茶を言うな。[r]今のでも英霊の座で問題になるほどの霊基酷使だ。
+[k]
+
+＠セイバーオルタ
+成果をぶつけると言って本当にぶつけてくる者がいるか。[wt 1.2][charaFaceFade A 3 0.2][r]何を笑っている。貴様もだぞ。
+[k]
+
+？！
+
+[charaFaceFade A 1 0.15]
+
+＠セイバーオルタ
+……さて。意地を張って残っていたが、[r]私にできる事はもうない。
+[k]
+
+＠セイバーオルタ
+[#歪:ゆが]まされた冬木の聖杯戦争はこれで終わる。[r]振り返らず大聖杯に向かえ。
+[k]
+
+＠セイバーオルタ
+おまえたちの旅の始まり……[r]この原初特異点に決着をつけるがいい。
+[k]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect A flashErasure 1 2.0]
+[wait charaSpecialEffect A]
+[charaEffectStop D bit_talk_06]
+[wt 2.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_MAP_41 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

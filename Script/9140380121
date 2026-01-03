@@ -1,0 +1,504 @@
+
+
+
+
+＄91-40-38-01-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4038002 1 オデュッセウス]
+[charaSet B 5033001 1 キルケー]
+[charaSet C 5033001 1 キルケー_カットイン]
+
+[charaSet E 4038002 1 スペース・オデュッセウス_演出用]
+[charaScale E 1.3]
+
+[charaSet F 98115000 1 エフェクト用ダミー]
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+[label lblClear1]
+
+[sceneSet D 104200 1 1]
+
+[scene 104200]
+
+[branch lblConf1]
+
+[label lblNotClear1]
+
+[sceneSet D 105500 1 1]
+
+[scene 105500]
+
+[label lblConf1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[se bac162]
+[effect bit_talk_shelling_pink02 -150,-50]
+[charaMoveReturn B -80,0 0.3]
+[wt 0.3]
+
+[effect bit_talk_shelling_pink02 150,-50]
+[wt 0.1]
+[se bac162]
+[charaMoveReturn B 80,0 0.3]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[effect bit_talk_shelling_pink01 50,-30]
+[wt 0.2]
+[se ad170]
+[charaFace A 5]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaShake A 0.05 3 3 0.3]
+
+[wt 0.2]
+[effect bit_talk_shelling_pink01 -50,-70]
+[wt 0.2]
+
+[se ad170]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaShake A 0.05 3 3 0.3]
+[wt 0.5]
+
+[se ad1052]
+[fowardEffect bit_talk_windstorm]
+[wt 0.2]
+[charaFace A 8]
+[seStop ad1052 0.8]
+[fowardEffectStop bit_talk_windstorm]
+[wt 0.3]
+[charaShake A 0.05 3 3 0.7]
+[wt 1.5]
+
+[charaFace A 2]
+[se ad129]
+[fowardEffect bit_talk_41_fs]
+[charaMove A 0,20 0.2]
+[charaMoveScale A 1.2 0.2]
+[wt 0.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_41_fs]
+
+[charaScale B 1.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,10]
+
+[se ad473]
+[seVolume ad473 0 0.6]
+[effect bit_talk_v_slash01]
+[wt 0.5]
+[se ad170]
+[fowardEffect bit_talk_14 0,0]
+[wt 0.3]
+
+[charaFace B 4]
+
+[charaMoveScale B 1.0 0.2]
+[charaMove B 0,0 0.2]
+[se ad671]
+[seStop ad671 0.7]
+[wt 0.8]
+
+[charaDepth B 1]
+[charaDepth F 2]
+
+[charaFace B 5]
+
+[se ad474]
+[charaPut F 0,0]
+[charaEffect F bit_talk_charge_red]
+[wt 2.0]
+
+[subCameraOn]
+[charaLayer C sub]
+[charaLayer D sub]
+
+[charaDepth C 4]
+[charaDepth D 3]
+
+[charaScale C 1.5]
+[charaScale D 1.5]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace C 2]
+[charaFace D 0]
+[charaFadein D 0.1 -20,-300]
+
+[subCameraFilter mask cut359_mask03]
+[subRenderFadein 0.3 0,-30]
+[charaFadein C 0.3 -80,90]
+
+[charaMove D 50,-300 1.5]
+[charaMove C 80,90 1.5]
+[wt 1.0]
+[charaFace B 2]
+
+[charaFadeout C 0.3]
+[charaFadeout D 0.3]
+[subRenderFadeout 0.3]
+[wt 0.5]
+
+＠キルケー
+[f large]『[#禁断なる狂宴:メ    タ    ボ    ・    ピ    グ    レ    ッ    ツ]』！
+[k]
+
+[messageOff]
+
+
+[seStop ad474 0.5]
+[charaPut F 2000,2000]
+[charaEffectStop F bit_talk_charge_red]
+[charaEffectStop C bit_talk_charge_red]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠オデュッセウス
+！
+[k]
+
+[messageOff]
+
+[fowardEffect bit_talk_smoke_pon]
+[se ade310]
+[wt 0.1]
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_80 1.0]
+[wait fade]
+
+[wt 0.8]
+
+[charaLayer C main]
+[charaLayer D main]
+[subCameraOff]
+
+？1：オデュッセウス！
+？！
+
+[messageOff]
+
+[charaTalk depthOn]
+
+
+
+[charaFace A 8]
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 8]
+
+＠オデュッセウス
+……。[r]……。
+[k]
+
+
+[charaFace A 0]
+
+＠オデュッセウス
+…………特に、何も起こらないな。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[se ad119]
+[charaShake B 0.05 3 2 0.5]
+[wt 1.5]
+[bgm BGM_EVENT_146 0.1]
+
+[charaFace B 2]
+
+＠キルケー
+うう！[r]そうだよ、きみには効かないよこの宝具！
+[k]
+
+[charaFace B 4]
+
+＠キルケー
+面倒臭がらずに魔術を行使しとけば良かった！[r]まあでもアイギスには通じないか……
+[k]
+
+[charaFace B 6]
+
+＠キルケー
+ふんだ。変な喧嘩の売り方してきて！[r]よし、決めた！
+[k]
+
+[charaFace B 2]
+
+＠キルケー
+その喧嘩、買うもんか！
+[k]
+
+＠キルケー
+三度謝らないと許さないからなー！[r]ふーんだ！
+[k]
+
+[messageOff]
+
+
+
+[bgmStop BGM_EVENT_146 1.0]
+
+[se ad59]
+[charaFadeout B 0.5]
+[seStop ad59 1.5]
+[wt 1.8]
+
+？1：行っちゃった……
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠オデュッセウス
+ああ……。
+[k]
+
+？1：オデュッセウス
+？！
+
+[charaFace A 0]
+
+＠オデュッセウス
+ん。
+[k]
+
+？1：ギルケーって……
+？2：なんで、あんなこと聞いたの？
+？！
+
+[charaFace A 8]
+
+＠オデュッセウス
+……。[r]……。
+[k]
+
+[bgm BGM_EVENT_112 0.1]
+
+＠オデュッセウス
+……キルケーの妹はパーシパエー。[r]ミノスの王妃であり、アステリオスの母である女だ。
+[k]
+
+[charaFace A 0]
+
+＠オデュッセウス
+それは知っている。[r]知ってはいるが、それでもな。
+[k]
+
+[messageOff]
+
+[charaFace A 1]
+[wt 1.5]
+
+[charaFace A 0]
+
+＠オデュッセウス
+それでも、[#おまえの冒険の話]だからな。
+[k]
+
+＠オデュッセウス
+俺は知っている。[r]夢もまた、冒険の舞台に他ならないことを。
+[k]
+
+＠オデュッセウス
+夢は時に冒険の道標となるし、[r]迷宮そのものとなって俺たち冒険野郎を惑わせる。
+[k]
+
+[charaFace A 8]
+
+＠オデュッセウス
+夢見ただけのこと[line 3]
+[k]
+
+[charaFace A 0]
+
+＠オデュッセウス
+そう言って、軽んじたりはしないさ。[r]当然だ。
+[k]
+
+＠オデュッセウス
+何より、おまえの話だからな。[r]であれば、どんな内容であろうと真剣に聞くとも。
+[k]
+
+[charaFace A 1]
+＠オデュッセウス
+たとえそれが、[r]まるであり得ないような話でもな！
+[k]
+
+[messageOff]
+
+[wt 1.0]
+
+？1：ありがとうオデュッセウス
+？！
+
+？1：でも……
+？！
+
+[charaFace A 0]
+
+
+？1：ギルケーはないと思うよ
+
+[charaFace A 8]
+
+＠オデュッセウス
+それは……
+[k]
+
+[charaFace A 1]
+
+＠オデュッセウス
+まあ、そうだな！！
+[k]
+
+[messageOff]
+
+[wt 1.5]
+
+[branch scriptEnd]
+
+？2：キルケーには謝っておこうね
+[branch canossa]
+
+？！
+
+[label canossa]
+
+＠オデュッセウス
+それは……
+[k]
+
+[charaFace A 1]
+
+＠オデュッセウス
+そうだな。[r]きちんと説明した上で謝っておかねばだ。
+[k]
+
+[charaFace A 8]
+
+＠オデュッセウス
+…………。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace A 4]
+
+＠オデュッセウス
+……むう、しまったな。[r]もう少し言い方を考えておくべきだったか……。
+[k]
+
+
+？1：大丈夫、一緒に謝りに行こう
+？！
+
+[bgmStop BGM_EVENT_112 1.0]
+
+[charaFace A 0]
+
+＠オデュッセウス
+！
+[k]
+
+[charaFace A 7]
+
+＠オデュッセウス
+すまない、マスター。[r]気を遣わせてしまったな。
+[k]
+
+[charaFace A 1]
+
+＠オデュッセウス
+だが問題はない、一人で行けるさ。[bgm BGM_MAP_55 1.0]
+[k]
+
+[charaFace A 0]
+
+＠オデュッセウス
+怒らせてしまった大魔女への謝罪。[r]これもまた難行……ある意味では冒険と言える。
+[k]
+
+＠オデュッセウス
+そしてそう、冒険とあらば[line 3]
+[k]
+
+？1：冒険野郎の[&出番！:出番だね！]
+？！
+
+[charaScale D 1.3]
+[charaDepth E 5]
+[charaDepth D 3]
+[charaTalk off]
+[charaFace A 6]
+
+＠オデュッセウス
+はは、そうとも！
+[k]
+
+＠オデュッセウス
+この俺[line 3][wt 0.5][charaFace E 2][charaFadein D 0.2 0,-340][charaFadein E 0.2 0,0][effect bit_talk_41_fs][#冒険野郎:オデュッセウス]の出番だとも！
+[k]
+
+[messageOff]
+[effectDestroy bit_talk_41_fs]
+
+[charaFace E 1]
+[wt 0.2]
+[se ade126]
+[effect bit_talk_starshine 30,95]
+
+[wt 2.5]
+
+[label scriptEnd]
+
+
+
+[fadeout black 2.0]
+[bgmStop BGM_MAP_55 2.0]
+[bgmStop BGM_EVENT_112 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,795 @@
+
+＄94-08-69-01-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 2050000 1 プトレマイオス]
+[charaSet B 1098214000 1 四不相]
+[charaSet C 1098257310 1 ダ・ヴィンチ]
+[charaSet D 1098257810 1 マシュ]
+[charaSet E 1098255110 1 ゴルドルフ]
+
+[charaSet F 2050000 1 プトレマイオス_演出用１]
+[charaSet G 2050000 1 プトレマイオス_演出用２]
+[charaSet H 1098214000 1 四不相_演出用]
+
+[charaSet I 1098272500 1 ？？？]
+[charaSet J 1098272550 1 ？？？]
+[charaSet K 1098272560 1 ？？？]
+[charaSet L 1098272540 1 ？？？]
+
+[sceneSet M 192800 1]
+[sceneSet N 192800 1]
+[sceneSet O 192800 1]
+
+[charaSet Q 98115000 1 通信エフェクト用]
+[charaSet R 98115000 1 通信エフェクト用]
+[charaSet S 98115000 1 エフェクト用]
+
+[scene 192800]
+
+[subCameraOn 3]
+[subCameraFilter #A through]
+[subCameraFilter #B maskEdge cut359_mask16 5 255,255,255,255]
+[subCameraFilter #C maskEdge cut359_mask10 5 255,255,255,255]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+[charaLayer F sub #A]
+[charaLayer G sub #B]
+[charaLayer N sub #B]
+[charaLayer H sub #C]
+[charaLayer O sub #C]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaDepth G 2]
+[charaDepth N 1]
+[charaScale G 1.1]
+[charaScale N 1.1]
+[charaFace G 13]
+[charaFadein G 0.1 -40,150]
+[charaFadein N 0.1 -100,-50]
+[charaDepth H 2]
+[charaDepth O 1]
+[charaScale H 1.1]
+[charaScale O 1.1]
+[charaFace H 0]
+[charaFadein H 0.1 -40,200]
+[charaFadein O 0.1 100,-20]
+
+[subRenderFadein #A 0.1 0,0]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth F 3]
+[charaDepth B 2]
+[charaDepth M 1]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+[charaPut R 2000,2000]
+[charaEffect R bit_talk_10]
+
+[charaScale M 1.1]
+[charaFadein M 0.1 0,-240]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_147 0.1]
+
+
+＠プトレマイオス
+ほうほう、なかなかの腕前じゃないサ。
+[k]
+
+[charaFace F 0]
+
+＠プトレマイオス
+魔術師っぽいとは思っていたが、[r][#吾:あ]のようなサーヴァントの影を扱うのか。
+[k]
+
+＠プトレマイオス
+あいつが見たら、召し抱えたがるぞ。[r]いや、[wt 0.6][se ad987][seStop ad987 0.4][charaFace F 1][charaMove F 0,5 0.3][charaMoveScale F 1.1 0.3]いやいや、[#吾:あ]に仕えるといい。
+[k]
+
+[se ad984]
+[effect bit_talk_41_fs]
+[charaFace F 15]
+[charaMove F 0,10 0.3]
+[charaMoveScale F 1.2 0.3]
+
+＠プトレマイオス
+さあ、そうしよう是非そうしよう！
+[k]
+
+[messageOff]
+[charaTalk off]
+[effectDestroy bit_talk_41_fs]
+[charaMove F -60,10 0.8]
+[charaMove M -60,-240 0.8]
+[wt 0.4]
+[subBlur #A lens 0.1 2 20 1.0 subBlur]
+
+[charaFace B 0]
+[charaFadein B 0.4 200,-50]
+[charaMove B 250,-50 0.4]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk B]
+
+＠四不相
+モ！[charaMoveReturn B 250,-45 0.3]
+[k]
+
+[messageOff]
+[charaFadeout F 0.6]
+[charaFadeout B 0.6]
+[charaFadeout M 0.6]
+[wt 0.6]
+
+[se ad539]
+[wt 0.1]
+[charaPut R 1]
+[wt 0.5]
+[seStop ad539 0.2]
+[charaPut R 2000,2000]
+[wt 0.6]
+
+[charaPut Q 1]
+[charaEffect Q bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+[%1][&君:ちゃん]！
+[k]
+
+[messageOff]
+[charaTalk G]
+[subRenderFadeinFSSideR #B 0.4 500,-200]
+[subRenderMoveFSSideR #B 400,-200 0.4]
+[wt 0.4]
+
+＠G：プトレマイオス
+お、また妙な魔術だな。[r]アトラス院っぽいことを。
+[k]
+
+[messageOff]
+[charaTalk G,C]
+[subRenderFadeout #B 0.4]
+[subRenderMoveFSSideR #B 500,-200 0.4]
+
+？1：ダ・ヴィンチちゃん！
+？！
+
+[charaFace C 31]
+
+＠ダ・ヴィンチ
+ふう、やっと通信が回復した。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マシュ
+先輩！　よかった無事だったんですね！[r]四不相さんも！
+[k]
+
+？1：太公望は？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+太公望は、まだ連絡が取れてない。
+[k]
+
+[charaFace C 23]
+＠ダ・ヴィンチ
+こちらに帰還してはいないし、[r]カルデアの霊基情報にも揺らぎはないから、
+[k]
+
+＠ダ・ヴィンチ
+きっと、何らかの方法で[r]現界は維持できてると思うんだけど……
+[k]
+
+[messageOff]
+[charaTalk H]
+[subRenderFadeinFSSideL #C 0.4 -500,-200]
+[subRenderMoveFSSideL #C -400,-200 0.4]
+[wt 0.4]
+
+[charaMoveReturn H -40,205 0.3]
+
+＠H：四不相
+モ、モ、モ、モ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+まあ四不相が無事なら、[r]主人の太公望も大丈夫だと考えていいだろう。
+[k]
+
+[subRenderFadeout #C 0.4]
+[subRenderMoveFSSideL #C -500,-200 0.4]
+
+＠ゴルドルフ
+ところで、[r]そちらのサーヴァントっぽい槍使い君は？
+[k]
+
+
+？1：プトレマイオス一世だって……
+？！
+
+[bgmStop BGM_EVENT_147 1.0]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[charaFace D 5]
+[wt 1.0]
+
+[bgm BGM_SENGOKU_1 0.1]
+
+＠マシュ
+プトレマイオス！　征服王イスカンダルに仕え、[r]後にファラオとなって、自らの王朝を建てた英雄です！
+[k]
+
+？1：そういえば、さっきもファラオって
+
+[charaFace D 0]
+
+＠マシュ
+征服王イスカンダルからエジプトの太守を任ぜられ、[r]後にマケドニア人ながらファラオとなっています。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+？2：プトレマイオス朝！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+イスカンダルとともにダレイオス三世を打破することで、[r]事実上ペルシャの属州だった前王朝を解体したんだ。
+[k]
+
+？！
+
+＠ダ・ヴィンチ
+世界を制覇したマケドニアの猛者であり、[r]現代まで影響を残す[#東西融合:ヘ  レ  ニ  ズ  ム]文化を発信した賢王だ。
+[k]
+
+＠ダ・ヴィンチ
+[#文武両道:ぶんぶりょうどう]という意味で、[r]比類なき業績をもつ英雄だと断じていいだろうね。
+[k]
+
+＠ダ・ヴィンチ
+似たようなところでは、それこそ太公望か。[r]大陸の西と東、時代も異なるが、共通するところはある。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Q 2000,2000]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠プトレマイオス
+なんだか面白い話をしてるナ。[r][#吾:あ]もこのまま聞いていたい気はするんだが。
+[k]
+
+[bgmStop BGM_SENGOKU_1 1.5]
+
+[charaFace A 0]
+
+＠プトレマイオス
+このままだと、またあいつらが出てくるぞ。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[charaLayer F normal]
+[charaLayer G normal]
+[charaLayer N normal]
+[charaLayer H normal]
+[charaLayer O normal]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout N 0.1]
+[charaFadeout H 0.1]
+[charaFadeout O 0.1]
+[subCameraOff]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth N 1]
+[charaDepth K 2]
+[charaDepth J 3]
+[charaDepth I 4]
+
+[charaScale N 1.2]
+[charaFadein N 0.1 0,-300]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[cueSe SE_21 21_ad1119]
+[wait wipe]
+
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[charaEffect I bit_talk_11 0,-100]
+[wt 0.4]
+
+[charaFace J 0]
+[charaFadeinFSR J 0.4 300,0]
+[charaEffect J bit_talk_11 0,-100]
+[wt 0.2]
+
+[charaFace K 0]
+[charaFadeinFSL K 0.4 -300,0]
+[charaEffect K bit_talk_11 0,-100]
+[cueSeStop 21_ad1119 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_80 0.1]
+
+？1：次から次に……！
+？2：キリがない！
+
+？！
+
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_80 0.7 0.4]
+[wait wipe]
+
+[charaEffectDestroy I bit_talk_11]
+[charaEffectDestroy J bit_talk_11]
+[charaEffectDestroy K bit_talk_11]
+[charaFadeout N 0.1]
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_80 0.7 1.0]
+[wait wipe]
+
+＠プトレマイオス
+やはり、元を絶たんとダメだナ。[r]おい、英霊使い。
+[k]
+
+？1：[%1]です
+
+？！
+
+[charaFace A 2]
+
+＠プトレマイオス
+ほう、変わった響きの名だナ。
+[k]
+
+[charaFace A 0]
+
+＠プトレマイオス
+どうやら、それなり以上に戦いに慣れてるようだが、[r]ここの影の騎士はいささか特殊だ。
+[k]
+
+？1：影の騎士……！
+？！
+
+
+[charaFace A 11]
+
+＠プトレマイオス
+この土地と強く結びついているようでナ。[r]倒し切るためには、そちらを処理せねばならん。
+[k]
+
+[charaFace A 0]
+
+＠プトレマイオス
+どうだ？　[#吾:あ]と協力できるか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Q 1]
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+ん～。状況からするに、ひとまず協力しても[r]問題なさそうだけど……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Q 2000,2000]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[charaMoveReturn B 0,5 0.3]
+[wait charaMove B]
+[charaMoveReturn B 0,5 0.3]
+
+＠四不相
+モ、モ（賛成してるっぽい）
+[k]
+
+？1：必要みたいだし
+？2：さっきは助けられたから
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠プトレマイオス
+よし、それなら簡単に話すぞ。
+[k]
+
+＠プトレマイオス
+あいつらの増殖を止めるためには、[r]侵食された霊脈をどうにかする必要がある。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_80 0.7 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[effect bit_talk_miasma_eruption -200,0]
+[charaScale M 1.8]
+[charaFadein M 0.1 300,-420]
+[cueSe SE_23 23_ade909]
+[cueSeVolume 23_ade909 0 0]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[cueSeVolume 23_ade909 0.7 0.4]
+[bgm BGM_EVENT_80 0.7 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+？1：あそこ？
+？2：瘴気っぽいのが湧いてる……
+
+？！
+
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[cueSeStop 23_ade909 0.8]
+[wait wipe]
+
+[effectDestroy bit_talk_miasma_eruption]
+[charaFadeout M 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+＠プトレマイオス
+そうだ。影の騎士どもは、[r]あの霊脈から生産されてくるらしいから。
+[k]
+
+＠プトレマイオス
+おまえは一応魔術師みたいだが、[r]ああいう瘴気を浄化することはできるか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Q 1]
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+ちょっと待って。[wt 0.4][charaFace C 22][r]……うん、可能だと思う。
+[k]
+
+＠ダ・ヴィンチ
+こちらの分析の範囲でも、プトレマイオスの言う通り、[r]霊脈の各種数値が異常を示している。
+[k]
+
+[charaFace C 0]
+
+＠ダ・ヴィンチ
+でも、これぐらいの異常なら、[r]召喚サークルの応用で干渉できるはずだよ。
+[k]
+
+＠ダ・ヴィンチ
+[%1][&君:ちゃん]の礼装を通じて[r]瘴気を浄化するぐらいの術式はつくれそうだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Q 2000,2000]
+
+[charaTalk depthOff]
+[charaDepth J 5]
+[charaDepth L 4]
+[charaDepth K 3]
+[charaDepth M 2]
+[charaDepth A 1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠プトレマイオス
+おう、大したもんだ。[r]期待はしてたが、きっちり返してくれそうだ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale M 1.1]
+[charaFadein M 0.6 -40,-200]
+[charaMove M 0,-200 0.6]
+[wt 0.7]
+
+[se ad219]
+[cueSe SE_21 21_ad1082]
+[cueSeVolume 21_ad1082 0 0.5]
+[charaPut J 1]
+[charaPutFSR L 300,0]
+[charaPutFSL K -300,0]
+[charaFace J 0]
+[charaFace L 0]
+[charaFace K 0]
+[charaSpecialEffect J appearance 0,0 1.2]
+[charaSpecialEffect L appearance 0,0 1.2]
+[charaSpecialEffect K appearance 0,0 1.2]
+[wt 0.6]
+[charaEffect J bit_talk_11 0,-100]
+[charaEffect K bit_talk_11 0,-100]
+[charaEffect L bit_talk_11 0,-100]
+[wt 0.2]
+[cueSeStop 21_ad1082 1.3]
+[wt 1.4]
+
+[charaFace A 0]
+
+？1：また、敵たちが！
+？2：急がないと！
+
+？！
+
+[messageOff]
+[charaTalk on]
+[charaTalk A]
+[charaFadeout J 0.6]
+[charaFadeout K 0.6]
+[charaFadeout L 0.6]
+[charaFadeout M 0.6]
+[wt 0.3]
+[charaEffectStop J bit_talk_11]
+[charaEffectStop K bit_talk_11]
+[charaEffectStop L bit_talk_11]
+[wt 0.3]
+
+＠プトレマイオス
+落ち着け。無限に出てくるヤツらだ。[r]手当たり次第に倒すだけじゃどうにもならん。
+[k]
+
+[charaTalk depthOn]
+
+＠プトレマイオス
+通信先の魔術師。[r]その術式、射程距離はどの程度だ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Q 1]
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+召喚サークルの応用だからね。[r][%1][&君:ちゃん]の接触範囲が限度だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Q 2000,2000]
+
+
+[charaTalk depthOff]
+[charaDepth F 3]
+[charaDepth M 2]
+[charaDepth A 1]
+
+[bgmStop BGM_EVENT_80 2.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠プトレマイオス
+だったら……[#戦術]が必要になるナ。
+[k]
+
+？1：戦術？
+？！
+
+[bgm BGM_MAP_23 0.1]
+
+＠プトレマイオス
+今の手際を見る限り、[r]おまえはそれなりに修羅場をくぐってきたんだろう。
+[k]
+
+[charaFace A 11]
+
+＠プトレマイオス
+だが、そのほとんどが[r]個人単位の戦いだったんじゃないか？
+[k]
+
+[charaFace A 0]
+
+＠プトレマイオス
+召喚したサーヴァント全員を同じ場所に集め、[r]そのすべてを一振りの剣とする戦い方だ。
+[k]
+
+＠プトレマイオス
+その手で剣を振るうのと同じく、[r]一番単純に力を発揮できる戦い方だろうサ。
+[k]
+
+？1：それは……
+？2：そんなのが分かるんですか？
+
+？！
+
+[charaFace A 2]
+
+＠プトレマイオス
+分かるとも。
+[k]
+
+[charaFace A 0]
+＠プトレマイオス
+相手のくぐってきた戦ぐらい、[#一瞥:いちべつ]ではかれなければ、[r][#吾:あ]の時代の将なんてやってられん。
+[k]
+
+[charaFace A 16]
+＠プトレマイオス
+おまえの戦い方でも、相手を倒すだけならいい。
+[k]
+
+[charaFace A 0]
+＠プトレマイオス
+だが、戦場を制圧するのならば、話は別だ。[r]まったく違う単位の戦い方が、必要になる。
+[k]
+
+＠プトレマイオス
+サーヴァントを一騎ずつ指揮して、[r]矛として盾として、時には弓や砦にも変えて、
+[k]
+
+＠プトレマイオス
+[#異なる場所で]、[#同時に運用せねばならん]。
+[k]
+
+[charaFace A 3]
+＠プトレマイオス
+戦術とは、そういうことだ。[r]できそうか？
+[k]
+
+？1：訓練は受けています
+
+[charaFace A 8]
+
+＠プトレマイオス
+へえ、すでに訓練ずみか？[r]おまえらの組織ってのはずいぶん[#用意周到:よういしゅうとう]なんだナ。
+[k]
+
+？2：ちょっと無理かもです
+
+[charaFace A 0]
+
+＠プトレマイオス
+ああ、正直に言ってもらえるのは助かる。[r]半端な意地ほど始末に負えないものはないからナ。
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠プトレマイオス
+おおむね、現時点での[r]おまえの経験については理解できた。
+[k]
+
+＠プトレマイオス
+だったら必要な助言はしてやるサ。[r]その上で、おまえが指揮を執ればいい。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale F 1.2]
+[charaScale M 1.2]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[charaFadein M 0.4 0,-280]
+[wt 0.4]
+
+＠F：プトレマイオス
+なあに、こんなものは実地でやればすぐに慣れる。
+[k]
+
+[charaFace F 4]
+
+＠F：プトレマイオス
+なにしろ、慣れなきゃ死ぬだけだからナ！
+[k]
+
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_MAP_23 1.0]
+[wait fade]
+[soundStopAll]
+[end]
+

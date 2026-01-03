@@ -1,0 +1,425 @@
+
+
+＄03-00-12-20-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098123210 1 ゴルドルフ]
+[charaSet B 9005001 1 ホームズ]
+[charaSet C 1052000 1 シャルルマーニュ]
+[charaSet D 1098231810 1 徐福]
+[charaSet E 3036001 1 ブラダマンテ]
+[charaSet F 1098234900 1 ヨハンナ]
+[charaSet G 1098243510 1 ドン・キホーテ]
+
+[charaSet H 1098234210 1 クラス・セイバー]
+[charaSet I 1098234310 1 クラス・アーチャー]
+[charaSet J 1098234410 1 クラス・ランサー]
+[charaSet K 1098234610 1 クラス・ライダー]
+[charaSet L 1098234510 1 クラス・キャスター]
+[charaSet M 1098234710 1 クラス・アサシン]
+[charaSet N 1098234810 1 クラス・バーサーカー]
+
+[charaSet O 1098172600 1 クラス・セイバー]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用2]
+[charaSet U 98115000 1 エフェクト用3]
+
+[charaPut S 2000,2500]
+[charaEffect S bit_talk_10_LowLevel]
+[charaPut U 2000,2500]
+[charaEffect U bit_talk_10]
+
+[scene 151400]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[bgm BGM_MAP_58 0.1]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+＠ゴルドルフ
+よし、ついに門へ突入した！[r]まさか自動で開くとは思ってもみなかったぞ！
+[k]
+
+＠ゴルドルフ
+後は[line 3]
+[k]
+
+[messageOff]
+
+[charaPut U 1]
+[charaPut S 2000,2500]
+
+[se ad539]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut U 2000,2500]
+[charaEffectStop S bit_talk_10_LowLevel]
+[charaEffectStop U bit_talk_10]
+[wt 0.8]
+
+？1：新所長？
+？！
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ホームズ
+通信が切断されたようだ。[r]仕方ない。しばらくは現場で判断しよう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠シャルルマーニュ
+よし。予定通り、[r]ここから部隊を二つに分ける！
+[k]
+
+＠シャルルマーニュ
+このまま突っ切るのはジークフリート、[r]ブラダマンテ、ドン・キホーテ、サンチョさん、
+[k]
+
+＠シャルルマーニュ
+そしてヨハンナ、ホームズ、[r]カドック、[%1]！
+[k]
+
+[charaFace C 5]
+＠シャルルマーニュ
+後陣、それ以外！
+[k]
+
+＠シャルルマーニュ
+全員でこの門を守れ！[r]この門を死ぬ気で守れ！
+[k]
+
+＠サーヴァントたち
+[charaTalk S]
+[f large]応！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad133]
+[wt 1.4]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+[charaMoveReturn D 0,-10 0.4]
+
+＠徐福
+ひぃ、[wt 0.4]ひ[charaMoveReturn D 0,-10 0.4]ぃ、ひぃ……。[r]もー走れない……。
+[k]
+
+[charaFace D 0]
+＠徐福
+あ、いってらっしゃーい。[r]そしてさようならー。
+[k]
+
+？1：徐福ちゃん、元気で！
+？！
+
+[charaFace D 8]
+＠徐福
+おーう。[r]じゃ、みんな。やるぞー！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+
+[se ad16]
+[seVolume ad16 0 0]
+[se ad455]
+[seVolume ad455 0 0]
+[se ad889]
+[seVolume ad889 0 0]
+[wt 0.1]
+[seVolume ad16 0.3 1.0]
+[seVolume ad455 0.3 1.0]
+[seVolume ad889 0.3 1.0]
+[wt 2.0]
+
+[fadeout black 1.0]
+[seStop ad16 1.0]
+[seStop ad455 1.0]
+[seStop ad889 1.0]
+[bgm BGM_MAP_58 1.0 0.5]
+[wait fade]
+
+[scene 151400]
+
+[cameraMove 0 0,0 1.01]
+
+[wt 1.5]
+
+[bgm BGM_MAP_58 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠シャルルマーニュ
+さて、と。[r]それじゃ……！？
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_35]
+[wt 0.1]
+
+[se ad240]
+[charaShake C 0.02 3 4 0.4]
+[wt 0.8]
+[se ad166]
+[charaMove C 0,-10 0.4]
+[wt 0.2]
+[seStop ad166 0.4]
+[wt 1.2]
+
+？1：シャルル！？
+？！
+
+[fowardEffectDestroy bit_talk_35]
+
+[charaFace C 6]
+＠シャルルマーニュ
+……すまん、俺の代わりに言ってくれ。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[cameraMove 0.4 0,10 1.01]
+[wt 0.5]
+[cameraMove 0.4 0,0 1.01]
+[wt 1.1]
+
+？1：総員、突撃！！
+？！
+
+[messageOff]
+[se ad16]
+[seVolume ad16 0 0]
+[se ad647]
+[seVolume ad647 0 0]
+[se ad889]
+[seVolume ad889 0 0]
+[wt 0.1]
+
+[seVolume ad16 0.2 1.0]
+[seVolume ad647 0.2 1.0]
+[seVolume ad889 0.2 1.0]
+[wt 1.8]
+
+[seStop ad16 2.0]
+[seStop ad647 2.0]
+[seStop ad889 2.0]
+[wt 1.0]
+
+[charaFace C 5]
+＠シャルルマーニュ
+……もうちょい、いけるな……よし！
+[k]
+
+[messageOff]
+[se ad132]
+[charaFadeout C 0.4]
+[seStop ad132 1.0]
+[wt 0.8]
+
+[wipeout leftToRight 0.6 1.0]
+[bgm BGM_MAP_58 0.6 0.5]
+[wait wipe]
+
+[wt 0.6]
+
+[bgm BGM_MAP_58 0.6 1.0]
+[wipein rightToLeft 0.6 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠ブラダマンテ
+前方、敵サーヴァント約300騎！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠ヨハンナ
+ドン・キホーテ様、お願いします！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠ドン・キホーテ
+畏まりました、姫君！[wt 0.7][charaFace G 2][r]じゃなくて教皇[#猊下:げいか]！
+[k]
+
+＠ドン・キホーテ
+聞けい！！[r]復讐界域の者ども！！
+[k]
+
+＠ドン・キホーテ
+ヨハンナ教皇[#猊下:げいか]からの、[r][#聖言:せいげん]である！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth H 7]
+[charaDepth I 6]
+[charaDepth J 5]
+[charaDepth K 4]
+[charaDepth L 3]
+[charaDepth M 2]
+
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFace K 0]
+[charaFace L 0]
+[charaFace M 0]
+[charaFadein H 0.1 100,0]
+[charaFadein I 0.1 -100,0]
+[charaFadeinFSR J 0.1 250,0]
+[charaFadeinFSL K 0.1 -250,0]
+[charaFadeinFSSideR L 0.1 450,0]
+[charaFadeinFSSideL M 0.1 -450,0]
+＠サーヴァントたち
+な……！？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFace F 5]
+＠ヨハンナ
+『退がれ、さもなくば伏せよ』
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth H 7]
+[charaDepth I 6]
+[charaDepth J 5]
+[charaDepth K 4]
+[charaDepth L 3]
+[charaDepth M 2]
+
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFace K 0]
+[charaFace L 0]
+[charaFace M 0]
+[charaFadein H 0.1 100,0]
+[charaFadein I 0.1 -100,0]
+[charaFadeinFSR J 0.1 250,0]
+[charaFadeinFSL K 0.1 -250,0]
+[charaFadeinFSSideR L 0.1 450,0]
+[charaFadeinFSSideL M 0.1 -450,0]
+[wt 0.1]
+
+[se ad875]
+[charaPut T 1]
+[charaEffect T bit_talk_pressure_fs]
+[wt 0.1]
+[shake 0.01 1 2 2.5]
+[wt 2.5]
+＠サーヴァントたち
+ぐっ……これは……重圧……！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+
+[charaTalk on]
+[charaTalk O]
+[charaFace O 1]
+[charaFadein O 0.1 1]
+＠O：クラス・セイバー
+お、おい。[r]どうした……！？
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ヨハンナ
+……やはり、信じる対象が異なれば[r]私の命令は通じにくいでしょうね。
+[k]
+
+[charaFace F 2]
+＠ヨハンナ
+とはいえ、かなり削りました。[r]つまりは後、よろしく！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠ブラダマンテ
+了解！[r]さあ、速攻で行きましょう！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_MAP_58 0.4]
+[wait fade]
+[soundStopAll]
+[end]

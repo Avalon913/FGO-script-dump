@@ -1,0 +1,309 @@
+
+＄94-07-36-02-2-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet C 99502600 1 マシュ]
+[charaSet D 98002000 1 フォウ]
+[charaSet E 10010300 1 蘆屋道満]
+[charaSet F 6026300 1 燕青]
+[charaSet G 5043300 1 アスクレピオス]
+[charaSet H 1054000 1 ガレス]
+
+[charaSet I 6043000 1 オルトリンデ]
+[charaSet J 6044000 1 ヒルド]
+[charaSet K 6045000 1 スルーズ]
+
+[charaSet M 28003000 1 レディ・アヴァロン]
+
+[charaSet R 98115000 1 エフェクト用ダミー]
+[charaSet S 98115000 1 エフェクト用ダミー]
+
+[charaPut S 2000,2000]
+[charaEffect S bit_talk_10_LowLevel]
+
+[cameraMove 0.1 0,0 1.01]
+
+[scene 159800]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 0.2]
+
+[se ad678]
+[seVolume ad678 0 0.4]
+[wt 0.1]
+[charaMoveScale F 1.1 0.2]
+[charaMove F 0,10 0.2]
+[effect bit_talk_41_fs]
+[blur motion 0.3 2 10000 0.5 0.7 0.05 100]
+[charaFadeout F 0.2]
+[wt 0.2]
+[blurOff motion 0.2]
+[wt 0.1]
+[effectDestroy bit_talk_41_fs]
+[charaScale F 1.0]
+[wt 0.1]
+
+[fowardEffect bit_talk_14 0,120]
+[se bac150]
+[wt 0.3]
+[effect bit_talk_14 360,20]
+[se bac151]
+[wt 0.3]
+[se bac150]
+[effect bit_talk_14 -360,-50]
+[wt 0.5]
+
+[cueSe SE_22 22_ade777]
+[wt 2.5]
+
+[shake 0.05 3 3 2.0]
+[se bac255]
+[se ad1041]
+[wt 1.5]
+[se bac255]
+[seStop ad1041 1.0]
+[wt 1.5]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠燕青
+……球根はやっぱりキリがねえな。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠蘆屋道満
+何処かに源があると見ましたぞ。[wt 0.8][charaFace E 9][r]そうれ！
+[k]
+
+[messageOff]
+[effect bit_talk_pentagram_06]
+[se ad1054]
+[wt 3.0]
+[effectStop bit_talk_pentagram_06]
+[seStop ad1054 1.0]
+[wt 1.0]
+[se ade251]
+[wt 1.5]
+
+[effectDestroy]
+
+[charaFaceFade E 15 0.3]
+
+＠蘆屋道満
+……ありましたな。
+[k]
+
+[charaFaceFade E 2 0.3]
+
+＠蘆屋道満
+戦乙女の方々！[r]視覚情報に座標を映しましたので、お任せいたす！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaDepth K 3]
+[charaDepth J 2]
+[charaDepth I 4]
+[charaTalk depthOff]
+
+[charaTalk K]
+[charaFace K 5]
+[charaFadein K 0.1 1]
+[wt 0.5]
+
+[cueSe SE_21 21_ad1108]
+[se bac398]
+[wt 0.05]
+[fadeout white 0.4]
+[wait fade]
+
+[charaTalk off]
+
+[charaFace J 5]
+[charaFadeinFSR J 0.1 386,0]
+
+[charaFace I 5]
+[charaFadeinFSL I 0.1 -386,0]
+
+[cueSeStop 21_ad1108 0.7]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk J]
+[charaFace J 11]
+
+＠ヒルド
+わっ。なにこれ気持ち悪！[r]視界に変なマーク出てる～！
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaPut S 0,0]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+こちらにも道満さんから座標情報届きました！[r]地上に空いた……穴、でしょうか？
+[k]
+
+？1：ゲイザー風球根の発生源！？
+？2：封じられるようなら、試してみて！
+？！
+
+[charaPut S 2000,2000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFadein K 0.1 1]
+
+＠スルーズ
+了解！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.3]
+
+[charaMove K 0,10 0.3]
+[charaFadeout K 0.2]
+[fowardEffect bit_talk_quickmove]
+[se bac1]
+[wt 0.3]
+
+[charaTalk off]
+
+[charaDepth I 5]
+[charaDepth J 4]
+
+[charaFace I 8]
+[charaFadeinFSL I 0.1 -256,0]
+[charaFace J 10]
+[charaFadeinFSR J 0.1 256,0]
+[wt 1.0]
+
+[charaMoveFSR J 256,10 0.3]
+[charaFadeout J 0.2]
+[charaEffect J bit_talk_quickmove]
+[charaMoveFSL I -256,10 0.3]
+[charaFadeout I 0.2]
+[charaEffect I bit_talk_quickmove]
+[se bac1]
+[wt 1.5]
+
+[messageOff]
+[wipeout rollRight 1.0 0.5]
+[wait wipe]
+
+[wt 1.0]
+
+[wipein rollLeft 1.0 0.5]
+[wait wipe]
+
+[bgm BGM_EVENT_147 0.1]
+[wt 0.4]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠ヒルド
+という訳で、塞いできたよー！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠オルトリンデ
+たくさんゲイザー……[r]いえ、球根が湧いて出てくる穴がありました。
+[k]
+
+＠オルトリンデ
+ルーンを用いて、巨大な氷を作成。[r]穴は完全に塞ぎました。
+[k]
+
+[charaFace I 1]
+
+＠オルトリンデ
+これで、球根が湧くことはないでしょう。[r]ふう！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 1]
+[charaFadein M 0.1 1]
+
+＠レディ・アヴァロン
+やったー、ありがとう！[r]これで売り上げ倍増しちゃうんじゃないかな？
+[k]
+
+？1：発生源を叩けたのは球根だけ！
+？2：次は、歩く樹木を何とかしなきゃだよ
+？！
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+
+＠ガレス
+ですね！[r]さあ、今度はあの樹木を根絶やしにしましょう！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠燕青
+言ってることは正しいけど、[r]言い方に気を付けようか！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_147 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

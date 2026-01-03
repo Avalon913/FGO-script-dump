@@ -1,0 +1,304 @@
+
+
+＄94-14-48-07-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257310 1 ダ・ヴィンチ]
+[charaSet B 1098325400 1 イプシロン]
+[charaSet C 28011001 1 テュフォン・エフェメロス]
+[charaSet D 3008001 1 エルキドゥ]
+[charaSet E 28002000 1 ヘファイスティオン]
+[charaSet F 5020000 1 アイリスフィール]
+
+[sceneSet I 251900 1]
+[charaScale I 1.2]
+[sceneSet J 251900 1]
+[charaScale J 1.2]
+[sceneSet K 251900 1]
+[charaScale K 1.2]
+
+[sceneSet L 10001 1]
+[charaScale L 1.2]
+[sceneSet M 10001 1]
+[charaScale M 1.2]
+[sceneSet N 10001 1]
+[charaScale N 1.2]
+
+[charaSet X 98115000 1 エフェクト用2]
+[charaSet Y 98115000 1 エフェクト用3]
+
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth Z 9]
+[charaPut Z 2000,2500]
+[charaEffect Z bit_talk_10_LowLevel_depth]
+
+[cameraMove 0 0,0 1.01]
+
+[subCameraOn 3]
+[charaLayer B sub #A]
+[charaLayer I sub #A]
+[charaLayer L sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 4 255,255,255,255 0]
+
+[charaDepth B 3]
+[charaDepth I 2]
+[charaDepth L 5]
+
+[charaScale B 1.1]
+
+[charaFace B 5]
+[charaFadein B 0.1 0,300]
+[charaFadein I 0.1 -350,50]
+
+[charaLayer E sub #B]
+[charaLayer J sub #B]
+[charaLayer M sub #B]
+[subCameraFilter #B maskEdge cut359_mask05 4 255,255,255,255 0]
+
+[charaDepth E 3]
+[charaDepth J 2]
+[charaDepth M 5]
+
+[charaScale E 1.1]
+
+[charaFace E 2]
+[charaFadein E 0.1 0,300]
+[charaFadein J 0.1 0,50]
+
+[charaLayer C sub #C]
+[charaLayer K sub #C]
+[charaLayer N sub #C]
+[subCameraFilter #C maskEdge cut359_mask05 4 255,255,255,255 0]
+
+[charaDepth C 3]
+[charaDepth K 2]
+[charaDepth N 5]
+
+[charaScale C 1.1]
+
+[charaFace C 15]
+[charaFadein C 0.1 0,300]
+[charaFadein K 0.1 350,50]
+
+[subRenderDepth #A 3]
+[subRenderDepth #B 2]
+[subRenderDepth #C 1]
+
+[scene 251900]
+
+[bgm BGM_BATTLE_123 0.1]
+
+[fadein black 0.5]
+[wait fade]
+[wt 0.1]
+
+[charaTalk off]
+
+[subRenderFadeinFSR #A 0.3 350,-280]
+[subRenderMoveEaseFSR #A 350,-330 0.4 easeOutCubic]
+[subRenderFadein #B 0.3 0,-380]
+[subRenderMoveEase #B 0,-330 0.4 easeOutCubic]
+[subRenderFadeinFSL #C 0.3 -350,-280]
+[subRenderMoveEaseFSL #C -350,-330 0.4 easeOutCubic]
+[wt 0.5]
+
+[se ad39]
+[charaEffect B bit_talk_charge_blu]
+[charaEffect E bit_talk_charge_red]
+[charaEffect C bit_talk_charge_ppl]
+[wt 0.7]
+
+[wt 0.5]
+[seStop ad39 1.0]
+[charaFadein L 0.75 0,50]
+[charaFadein M 0.75 0,50]
+[charaFadein N 0.75 0,50]
+[wt 1.1]
+
+[bgmStop BGM_BATTLE_123 1.5]
+
+[cueSe NoblePhantasm_2800200 NP_2800200_7]
+[cueSeVolume NP_2800200_7 0 0.5]
+[cueSe NoblePhantasm_205300 NP_205300_23]
+[cueSeVolume NP_205300_23 0 0.5]
+[cueSe NoblePhantasm_2800600 NP_2800600_9]
+[cueSeVolume NP_2800600_9 0 0.5]
+
+[fadeout white 0.5]
+[wait fade]
+
+[charaEffectDestroy B bit_talk_charge_blu]
+[charaEffectDestroy E bit_talk_charge_red]
+[charaEffectDestroy C bit_talk_charge_ppl]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[subRenderFadeout #C 0.1]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+
+[charaLayer C main]
+[charaLayer E main]
+[charaLayer B main]
+[charaLayer I main]
+[charaLayer J main]
+[charaLayer K main]
+[charaLayer L main]
+[charaLayer M main]
+[charaLayer N main]
+
+[charaScale C 1.0]
+[charaScale B 1.0]
+[charaScale E 1.0]
+
+[subCameraOff]
+
+[charaDepth D 2]
+[charaDepth X 3]
+[charaDepth Y 4]
+
+[scene 10001]
+
+[wt 0.4]
+
+[fadein white 0.2]
+[wait fade]
+
+[cueSeStop NP_2800200_7 0.6]
+[cueSeStop NP_205300_23 0.6]
+[cueSeStop NP_2800600_9 0.6]
+
+[se ad609]
+[seVolume ad609 0 0.7]
+[se ad854]
+[seVolume ad854 0 0.7]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaEffect Y bit_talk_explosion_triple02 275,-100]
+[charaEffect Y bit_talk_explosion_triple02 -275,-100]
+[charaEffect Y bit_talk_explosion_triple02 0,100]
+
+[charaPut X 1]
+[charaEffect X bit_talk_dust_cloud]
+[wt 0.4]
+
+[scene 251900]
+
+[wt 1.0]
+
+[seStop ad609 2.0]
+[seStop ad854 2.0]
+
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 1.5]
+
+[charaEffectStop X bit_talk_dust_cloud]
+[wt 3.5]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 0]
+
+＠エルキドゥ
+おっと……さすがにこのあたりで打ち止めかな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_147 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ヘファイスティオン
+さすがは……神代の兵器。[r]あれだけ食らわせても揺るぎなし、か。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠テュフォン・エフェメロス
+これ以上やるんだったら、[r]竜体をフル起動させようかと思ったわよ……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠イプシロン
+というか、お姉ちゃん、[r]ほとんどフル起動させてたじゃない！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠アイリスフィール
+機能の本質は、修復と言うより、[r]もとの形状を[#装甲自体が認識している]ことかしら？
+[k]
+
+[charaFace F 4]
+
+＠アイリスフィール
+魂がその形を保存してるのにも似てる、[r]形状記憶装甲、とでもいうべきよね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+ははは、理解の仕方がいかにも聖杯らしい。[wt 1.0][charaFace A 0][r]どう？　再現できそう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut Z 200,2000]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠アイリスフィール
+ええ、ここまで理解できれば、[r]願望機として叶えられるわ！　期待しておいて！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_147 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,331 @@
+
+
+
+＄91-40-43-01-4-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4043001 1 太公望]
+[charaSet B 1014001 1 フェルグス]
+[charaSet C 2021000 1 巴御前]
+[charaSet D 1098257810 1 マシュ]
+[charaSet E 1098257310 1 ダ・ヴィンチ]
+
+[sceneSet F 131200 1]
+
+[charaSet R 98115000 1 エフェクト用1]
+[charaSet S 98115000 1 エフェクト用2]
+[charaSet T 98115000 1 エフェクト用3]
+
+[scene 131200]
+
+[subCameraOn 2]
+[charaLayer F sub #A]
+[charaLayer A sub #A]
+[charaLayer R sub #A]
+[subCameraFilter #A normal]
+[subRenderMoveScale #A 1.1 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth R 3]
+[charaDepth A 4]
+
+[charaScale F 1.3]
+[charaScale R 1.1]
+[charaScale A 1.35]
+
+[charaPut R 1]
+[charaEffect R bit_talk_10_LowLevel_depth]
+[charaFadein F 0.1 190,-300]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_147 0.1]
+
+[charaPut T 1]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+
+＠マシュ
+……聞こえますか、聞こえますか！[r]先輩！
+[k]
+
+＠マシュ
+こちらマシュ・キリエライトです！[r]たった今、そちらとの通信が回復しました！
+[k]
+
+[charaFace D 13]
+
+＠マシュ
+状況は！[r]ご無事ですか、先輩！
+[k]
+
+？1：マシュ
+？2：大丈夫、こっちは問題ないよ
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：ちょうど今、聖杯が出現してくれたところだから
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+
+[charaPut S 1]
+[charaEffect S bit_talk_20]
+[wt 0.2]
+[cueSe Battle bas2]
+[wt 2.5]
+[charaLayer S sub #NODISP]
+
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+あ、聖杯が実体化してる！[r]うんうん、じゃあ速やかに回収プロセスを始めてね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠フェルグス
+ははは、英霊使いの荒いことだ。[r]そうでなくてはな！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut S -15,0]
+[charaLayer S normal]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠巴御前
+聖杯回収礼装、展開いたします。[r][#此度:こたび]のれいしふとではマシュ殿がおりませんから、
+[k]
+
+＠巴御前
+回収は巴の御役目にございますので。[r]お任せください。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaLayer S sub #NODISP]
+
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+うん、よろしくねー。[r]分からないことがあったら聞いて？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaLayer S normal]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠巴御前
+いえいえ、大丈夫です。[r]しっかりとまにゅあるを事前に読み込んでいます！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaEffectDestroy S bit_talk_20]
+
+[charaLayer D sub #A]
+[charaDepth D 2]
+[charaScale D 1.1]
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 0,-30]
+[wt 1.0]
+[subRenderFadein #A 0.6 0,0]
+[wt 1.0]
+
+＠マシュ
+……ご無事で何よりです、先輩。
+[k]
+
+[charaFace D 12]
+
+＠マシュ
+何があったのか詳細をお聞きしたいですが、[r]今は我慢しますね。まずはお疲れさまでした！
+[k]
+
+？1：ありがとう
+？2：多分太公望がひどい無茶をしたので後で説教です
+？！
+
+[messageOff]
+[subRenderMoveScaleEase #A 1.0 1.0 easeOutSine]
+[charaMoveEase F -10,-300 1.0 easeOutSine]
+[charaMoveEase D -200,-30 1.0 easeOutSine]
+[charaMoveEase R -200,0 1.0 easeOutSine]
+[wt 1.0]
+[charaFace A 0]
+[charaFadein A 0.1 250,0]
+[charaFace D 11]
+
+＠マシュ
+そ、そうなのですか？[r]太公望さん？
+[k]
+
+[charaTalk A]
+[charaFace A 3]
+
+＠太公望
+…………あー、はははは。[r]バレてるみたいですね。
+[k]
+
+[bgmStop BGM_EVENT_147 1.5]
+
+[messageOff]
+[wt 0.5]
+
+？1：平にご容赦、あたりに本気感があったよ
+？2：ちょっと顔色悪いように見えるし
+？！
+
+[wt 0.5]
+
+？1：相当、無理をしたよね？
+？！
+
+[charaFace A 6]
+
+＠太公望
+……。[r]……。
+[k]
+
+＠太公望
+………………………………。
+[k]
+
+＠太公望
+…………………………[wt 0.5][charaFace A 4]はい。
+[k]
+
+[bgm BGM_EVENT_116 0.1]
+
+
+＠太公望
+……申し訳ない、マスター。[r]あなたに心配を掛けたくはなかったんですが、つい。
+[k]
+
+
+＠太公望
+ちょっと調子に乗って、[r]大盤振る舞いしすぎたかもしれません。
+[k]
+
+＠太公望
+血を吐く程ではないですが……
+[k]
+
+[charaFace A 0]
+
+＠太公望
+正直に言えば、はい。[r]丸一日は回復ポッドに入りたいと思っています。
+[k]
+
+[charaTalk D]
+[charaFace D 5]
+
+＠マシュ
+そ、それは一大事なのでは！？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut R 2000,2000]
+[charaEffectDestroy R bit_talk_10_LowLevel_depth]
+
+[charaTalk A]
+[charaFace A 4]
+[charaMoveEase F -190,-300 1.0 easeOutSine]
+[charaMoveEase A 0,0 1.0 easeOutSine]
+[wt 1.5]
+
+？1：なんでそんな無茶を……
+？2：もっと余裕をもってやれそうなのに
+？！
+
+[charaFace A 0]
+
+＠太公望
+それは、まあ[line 3]
+[k]
+
+[messageOff]
+[charaFaceFade A 12 0.2]
+[wt 2.0]
+
+＠太公望
+…………あー。
+[k]
+
+＠太公望
+…………その、まあ。
+[k]
+
+[charaFace A 0]
+
+＠太公望
+たまには僕も、[r]格好いいところを見せたいですからね。
+[k]
+
+
+＠太公望
+それだけですよ。
+[k]
+
+[messageOff]
+[charaFace A 7]
+[wt 2.0]
+[charaFace A 3]
+
+＠太公望
+……………………………………。
+[k]
+
+＠太公望
+…………本当ですよ？
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_116 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

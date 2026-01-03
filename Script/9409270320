@@ -1,0 +1,638 @@
+
+＄94-09-27-03-2-0
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1098257310 1 ダ・ヴィンチ]
+[charaSet B 1098257910 1 マシュ]
+[charaSet C 6032000 1 セミラミス]
+[charaSet D 4055000 1 アンドロメダ]
+[charaSet E 1098288100 1 コロンブス]
+[charaSet F 7039001 1 ガラテア]
+[charaSet G 5025001 1 エジソン]
+[charaSet H 5036001 1 アヴィケブロン]
+[charaSet I 1098286700 1 機械化歩兵_岩]
+[charaSet J 1098127000 1 岩ゴーレム]
+
+[charaSet S 98115000 1 通信エフェクト用]
+
+[charaPut S 2500,2500]
+[charaEffect S bit_talk_10_LowLevel]
+
+
+[scene 207601]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.4]
+[cueSe SE_22 22_ad1179]
+[effect bit_talk_summon_fs]
+[wt 1.5]
+
+
+？1：作戦は[line 3]
+？！
+
+[skip false]
+[input selectBranch]
+
+[soundStopAllFade 0.1]
+
+[charaSet A 1098257310 1 ダ・ヴィンチ]
+[charaSet B 1098257910 1 マシュ]
+[charaSet C 6032000 1 セミラミス]
+[charaSet D 4055000 1 アンドロメダ]
+[charaSet E 1098288100 1 コロンブス]
+[charaSet F 7039001 1 ガラテア]
+[charaSet G 5025001 1 エジソン]
+[charaSet H 5036001 1 アヴィケブロン]
+[charaSet I 1098286700 1 機械化歩兵_岩]
+[charaSet J 1098127000 1 岩ゴーレム]
+
+[charaSet S 98115000 1 通信エフェクト用]
+
+[charaPut S 2500,2500]
+[charaEffect S bit_talk_10_LowLevel]
+
+[scene 207601]
+
+[cueSe SE_22 22_ad1179]
+[effect bit_talk_summon_fs]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+？1：質より量！
+
+
+？2：彫像自体に動いてもらう！
+
+
+？！
+
+[skip true]
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+
+[label INPUT_SELECT_BRANCH_1]
+
+
+[effectStop bit_talk_summon_fs]
+[wt 1.0]
+[cueSeStop 22_ad1179 0.5]
+[se ad574]
+[wt 0.3]
+[fadeout white 0.8]
+[wait fade]
+
+[effectDestroy]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[fadein white 0.8]
+[wait fade]
+
+[bgm BGM_EVENT_12 0.1]
+
+[wt 0.5]
+[charaFaceFade G 2 0.3]
+
+＠エジソン
+ふはは、私を呼んだのは最良の選択だとも！
+[k]
+
+[charaFaceFade G 1 0.3]
+
+＠エジソン
+だがその作戦名には少し語弊があるな。[r]私の大量生産は質だって[#グー:ｇｏｏｄ]だ。
+[k]
+
+＠エジソン
+皆が満足する逸品が犯罪的なスピードで[r]作り出せるのだよ。
+[k]
+
+[charaFaceFade G 2 0.3]
+
+
+＠エジソン
+そう、天才っぷりを遺憾なく発揮して速攻で作った、[wt 0.5][scene 106700 0.3][se ade508][wt 0.3][r]この[line 3]『直流式全自動岩人形変換マシーン』ならね！
+[k]
+
+[messageOff]
+[scene 207601 0.3]
+[charaFadeout G 0.3]
+[wt 0.6]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠アンドロメダ
+わ！　なんかよくわかんないけど凄そうだね！
+[k]
+
+[charaFace D 4]
+
+＠アンドロメダ
+ごめんね、あんまり勉強は得意じゃないから、どこが[r]どうスゴイのかは説明されても理解できなくて。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠エジソン
+いやいや構わないよ。発明家に対する[r]最高の褒め言葉をありがとう、元気なレディ。
+[k]
+
+＠エジソン
+発明を活用さえしてくれれば、[r]理解などは必須ではないとも。
+[k]
+
+[charaFace G 4]
+
+
+＠エジソン
+中身を理解されすぎても色々な問題が生まれるからな。[r]道理を弁えぬ者たちの模倣とか法廷バトルとか。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠アンドロメダ
+あとこのライオンのかぶりものも、[r]なんかよくわかんないけど凄いね！　リアル！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠エジソン
+ハハハかぶりものではないからヒゲを[r]引っ張るのは止めていただきたいぞ、レディ。
+[k]
+
+＠エジソン
+この頭についても理解は必須ではないとも。
+[k]
+
+[charaFace G 0]
+
+＠エジソン
+おほん。[r]とにかく、このマシーンは実際に凄いのだ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+使い方はどうすればよいのでしょう？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[bgmStop BGM_EVENT_12 1.0]
+
+＠エジソン
+簡単だ。スイッチを入れて起動させ、[r]ここに必要量の岩を放り込むだけで……
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaRoll I 20 0,0]
+
+[se ad896]
+[se ade292]
+
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.2 -700,-400]
+[charaMove I -500,-200 0.8]
+[wt 0.8]
+[charaRollMove I 0.8 0]
+[charaMove I -200,-100 0.8]
+[wt 0.8]
+[charaMove I 200,-100 1.0]
+[wt 0.8]
+[charaFadeout I 0.2]
+[wt 0.6]
+
+[charaRoll I 20 0,0]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.2 -700,-400]
+[charaMove I -500,-200 0.8]
+[wt 0.8]
+[charaRollMove I 0.8 0]
+[charaMove I -200,-100 0.8]
+[wt 0.8]
+[charaMove I 200,-100 1.0]
+[wt 0.8]
+[charaFadeout I 0.2]
+[seStop ade292 0.2]
+[wt 0.6]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠エジソン
+このように！　岩石を素材とした彫像が[r]自動的に作られるという仕組みだ！
+[k]
+
+[charaFaceFade G 4 0.3]
+
+＠エジソン
+もう少し時間があれば成形するだけでなく、[r]自律稼働するようにしたかったのだがな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠コロンブス
+いや、充分だろ。これであっちの川の性質に効く[r]『彫像』がこっちも作れるようになったってわけだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ガラテアさんの彫像は素晴らしいものかもしれませんが、[r]これがあれば数で対抗することは可能かと！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+時間単位あたりの生産量では[r]こっちが勝っているだろうね。
+[k]
+
+＠ダ・ヴィンチ
+あとは一品モノの彫像と大量生産の岩人形、[r]その出来の差が川の進行力に違いを生むかどうかだけど……
+[k]
+
+＠ダ・ヴィンチ
+それはやってみるしかない、かな。
+[k]
+
+[charaPut S 2500,2500]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠セミラミス
+では、残る問題は……材料か？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠エジソン
+うむ。さすがの天才の私であっても、[r]無から有を作り出すのは難しい。
+[k]
+
+[bgmStop BGM_EVENT_94 1.3]
+
+＠エジソン
+今のはお試し稼働だ。[r]材料の岩を入れ続けなくては生産は止まるぞ。
+[k]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+[bgm BGM_BATTLE_49 0.1]
+
+＠アンドロメダ
+だったら任せて！　魔力の続く限り、[r]あたしの岩をこの機械に食べさせちゃうよ！
+[k]
+
+？1：こっちも仕入れに行ってくる！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい、マスター！　岩山の位置はセミラミスさんが[r]調べてくださっているはずです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠セミラミス
+億劫だが、仕方あるまい。
+[k]
+
+[messageOff]
+[se ade407]
+[charaCrossFade C 1098231600 0 0.5]
+[wait charaCrossFade C]
+[wt 0.7]
+
+[charaFace C 2]
+
+＠セミラミス
+案内はしてやる。[r]さっさと済ませるぞ！
+[k]
+
+
+[messageOff]
+
+[branch select01_end]
+
+
+
+[label INPUT_SELECT_BRANCH_2]
+
+[effectStop bit_talk_summon_fs]
+[wt 1.0]
+[cueSeStop 22_ad1179 0.5]
+[se ad574]
+[wt 0.3]
+[fadeout white 0.8]
+[wait fade]
+
+[effectDestroy]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.5]
+
+[fadein white 0.8]
+[wait fade]
+
+[bgm BGM_MAP_5 0.1]
+
+[wt 0.5]
+
+＠アヴィケブロン
+ふむ。僕のゴーレムに目を付けたのはいい考えだ。[r]造形自体にそれほどこだわりはないがね。
+[k]
+
+＠アヴィケブロン
+必要なのは即時性を重視した製造法だろう？[r]その方向性にも研究の手は伸ばしている。
+[k]
+
+＠アヴィケブロン
+実演してあげよう。[r]岩の塊にこの術式を走らせれば……
+[k]
+
+[messageOff]
+[se ad474]
+[fowardEffect bit_talk_easy_spell_r]
+[wt 1.0]
+[seStop ad474 0.9]
+[wt 0.5]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[se ad575]
+[wt 0.7]
+[charaTalk J]
+[charaSpecialEffect J appearance 1 1.5]
+[wait charaSpecialEffect J]
+[wt 1.0]
+[seStop ad575 0.2]
+[wt 1.0]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠アンドロメダ
+わ！　すぐできちゃった、すごーい！
+[k]
+
+[charaFace D 5]
+
+＠アンドロメダ
+これはよっぽどの大魔術師の人とみました！[r]宮廷勤めとかしてました？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠アヴィケブロン
+ふふ。お褒めに[#与:あずか]り光栄だよ、[r]アンドロメダ王女。
+[k]
+
+＠アヴィケブロン
+実のところは、これしか能がない[r]ただの学者というだけだがね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠コロンブス
+よし。この岩ゴーレムも『彫像』扱いになるんなら、[r]川の進行に役立つだろうな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠アヴィケブロン
+ただし、これはほとんど『形だけ』のものだ。[r]動きはするが、戦闘には[#堪:た]えない。
+[k]
+
+＠アヴィケブロン
+勝手に動いて川に飛び込むようにする、ぐらいが[r]プログラミングの関の山かな。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+充分かと。実際に川にものを投げ込むのも[r]それなりに労力がかかりますので、
+[k]
+
+＠マシュ
+それがひとりでに済むというのであれば[r]かなりの時短になりそうです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠アヴィケブロン
+それならよかった。[r]残る問題は[line 3]やはり材料だ。
+[k]
+
+[bgmStop BGM_MAP_5 2.0]
+
+＠アヴィケブロン
+岩から[#彫像:ゴーレム]を作るのはいくらでも僕がやるが、[r]元となる岩がなければどうしようもない。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+[bgm BGM_BATTLE_49 0.1]
+
+＠アンドロメダ
+だったら任せて！　魔力の続く限り、[r]あたしの岩を鎖で引っ張り出すから！
+[k]
+
+？1：こっちも仕入れに行ってこよう
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい、マスター。岩山の位置はセミラミスさんが[r]調べてくださっているはずです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠セミラミス
+億劫だが、仕方あるまい。
+[k]
+
+[messageOff]
+[se ade407]
+[charaCrossFade C 1098231600 0 0.5]
+[wait charaCrossFade C]
+[wt 0.7]
+
+[charaFace C 2]
+
+＠セミラミス
+案内はしてやる。[r]さっさと済ませるぞ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠アヴィケブロン
+……似合うね、君。[r]それ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠セミラミス
+やかましいマンチニールぶつけるぞ。
+[k]
+
+
+
+
+
+[messageOff]
+[label select01_end]
+
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_49 0.5]
+[wait fade]
+[soundStopAllEnd]
+[end]
+

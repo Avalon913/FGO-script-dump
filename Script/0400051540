@@ -1,0 +1,1157 @@
+
+
+
+
+
+
+
+
+
+＄04-00-05-15-4-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098257900 1 マシュ]
+[charaSet B 1098321400 1 モリアーティ]
+[charaSet C 1098324400 1 リリス]
+[charaSet D 28010001 1 ダンテ]
+[charaSet E 1098321000 1 メタトロン・ジャンヌ]
+[charaSet F 1098239320 1 カドック]
+[charaSet G 1098321900 1 スタルジオ]
+[charaSet H 1098323000 1 罪人1]
+[charaSet I 1098228200 1 ケルベロス]
+
+[charaSet J 98115000 1 エフェクト用]
+
+[charaPut J 1]
+[charaEffect J bit_talk_rain_gr]
+
+[sceneSet K 247002 1]
+[sceneSet L 247003 1]
+[charaSet M 98115000 1 エフェクト用2]
+[sceneSet N 10000 1]
+[charaScale N 1.4]
+[sceneSet O 10000 1]
+[charaScale O 1.4]
+[charaFilter O silhouette 8B000080]
+
+[charaSet P 1098323110 1 罪人2]
+
+[charaPut M 3000,3000]
+[charaEffect M bit_talk_rain_gr]
+
+[scene 247002]
+
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth J 2]
+[charaDepth N 3]
+[charaDepth A 9]
+[charaDepth E 4]
+
+[charaDepth B 7]
+[charaDepth C 8]
+[charaDepth D 9]
+[charaDepth F 10]
+[charaDepth L 13]
+[charaDepth K 14]
+[charaDepth M 15]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.1]
+
+[se ade307]
+[seVolume ade307 0 0]
+[seVolume ade307 0.5 0.1]
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+[effect bit_talk_voice02 -60,-150]
+[se ad564]
+[wt 2.0]
+[effectStop bit_talk_voice02]
+[wt 0.5]
+
+？1：しぶとい……！
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_voice02]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+まだか！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+申し訳ありません、後少し……！
+[k]
+
+＠C：？？？
+よーしよしよし。[r]それならアテシが手伝ってあげようじゃん。
+[k]
+
+[charaFace A 20]
+
+＠マシュ
+[line 3]。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se bac389]
+[seVolume bac389 0 0.5]
+[effect bit_talk_throwing]
+[wt 0.4]
+[se bac389]
+[seVolume bac389 0 0.5]
+[effect bit_talk_throwing 0,0 H]
+[wt 0.6]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.1]
+[cueSe Servants_704900 m60001]
+[effect bit_talk_shelling_pink01]
+[wt 0.6]
+[se ad609]
+[cueSe Servants_704900 m60006]
+[effect bit_talk_explosion_triple02]
+[charaShake I 0.05 3 3 0.7]
+
+[wt 0.8]
+[se ad526]
+[charaFadeout I 0.2]
+[wt 2.4]
+[effectDestroy bit_talk_explosion_triple02]
+
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[se ad658]
+[charaCrossFade A 1098257910 8 0.3]
+[wt 0.6]
+
+＠マシュ
+リリスさん……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaPut C 1]
+[fowardEffect bit_talk_quickmove 40,0]
+[se ad223]
+[charaSpecialEffect C appearanceReverse 1 0.25]
+[se adm74]
+[wt 0.6]
+[seStop adm74 0.2]
+
+＠リリス
+ハァイ、キリエライト。[r]元気だったー？　アテシはこの通り！
+[k]
+
+？1：ありがとうさあ急ごう！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+よし、ケルベロスは倒せたな！[r]僕たちも走るぞ、ダンテ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+……我が宝具を発動する……。
+[k]
+
+[charaFaceFade D 13 0.2]
+
+＠ダンテ
+『[#汝、この門を潜る者、一切の希望を捨てよ:ラ シ ャ ー テ ・ オ ー ニ ・ ス ペ ラ ン ツ ァ 、 ヴ ォ イ ・ ケ ン ト ラ ー テ]』！
+[k]
+
+[messageOff]
+[se ad978]
+[se ad439]
+[seVolume ad439 0 0.4]
+[se ad429]
+[effect bit_talk_kien01]
+[effect bit_talk_kien02]
+[shake 0.05 2 2 3.5]
+[wt 2.0]
+[se ad14]
+[seVolume ad14 0 0.5]
+[charaScale K 1.5]
+[charaScale L 1.5]
+[charaPut M 1]
+[charaFadein K 0.5 0,-200]
+[wt 1.0]
+[se ad578]
+[charaFadein L 0.5 0,-200]
+[wt 1.0]
+[scene 247003]
+[charaFadeout K 1.0]
+[wt 3.0]
+[seStop ad978 1.0]
+[seStop ad429 1.0]
+[seStop ad439 1.0]
+[seStop ad14 1.0]
+[effectStop bit_talk_kien01]
+[effectStop bit_talk_kien02]
+[wt 1.0]
+[charaPut M 2000,2000]
+[charaFace D 9]
+[charaFadeout L 0.6]
+[wt 1.2]
+
+＠ダンテ
+……ああ[#悍:おぞ]ましきかな、我が地獄……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.0]
+[seStop ade307 1.0]
+[cueSe SE_23 23_ade873]
+[cueSe SE_23 23_ade828]
+[seVolume 23_ade828 0 0.6]
+[fadeout black 1.0]
+[wait fade]
+
+
+
+
+[charaFadeout D 0.1]
+[charaPut J 3000,3000]
+[charaPut M 3000,3000]
+[charaEffectStop J bit_talk_rain_gr]
+[charaEffectStop M bit_talk_rain_gr]
+
+[sceneSet K 245902 1]
+[charaScale K 1.5]
+
+[charaDepth K 5]
+[charaFadein K 0.1 0,-250]
+
+[seStop 23_ade828 1.5]
+[seStop 23_ade873 1.5]
+
+[scene 245902]
+[wt 1.0]
+
+[se ad92]
+[wt 0.5]
+
+[charaMove K 100,-250 2.0]
+[fadein black 1.0]
+[wt 0.5]
+[cueSe SE_23 23_ade873]
+[seVolume 23_ade873 0 0.1]
+[seVolume 23_ade873 1.0 0.5]
+[se ad769]
+[seVolume ad769 0 0.1]
+[seVolume ad769 1.0 0.5]
+[wait fade]
+
+[wt 1.0]
+[seStop ad769 1.0]
+[seStop 23_ade873 1.0]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠カドック
+ぜぇ……ぜぇ……。
+[k]
+
+＠カドック
+何と言うか、この特異点はしょっちゅう[r]走らされるな……。
+[k]
+
+？1：まったく……
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+休憩しているところ、申し訳ないが。[r]……天使たちが門を開こうとしているぞ。
+[k]
+
+[charaFace B 0]
+
+＠モリアーティ
+第四圏は既に『天秤証書』を手に入れている。[r]ここでのんびりする必要はない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+……ふう。[r]フフ……皆さん、悪い知らせだ……。
+[k]
+
+＠ダンテ
+……天使たちがあと三分くらいで[r]門をこじ開けそうです、はい……。
+[k]
+
+？1：走るー！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠カドック
+わかったよ、くそ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠リリス
+アテシは空飛ぶねー。[r]何しろ嵐の悪霊だし、ふふふふふ。
+[k]
+
+[charaFace C 1]
+
+＠リリス
+あ、マスター乗ってく？[r]送迎サービス、タダでもいいよ？
+[k]
+
+？1：空飛ぶのは怖いので結構です！
+？！
+
+[charaFace C 18]
+
+＠リリス
+むぅ、そっか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠マシュ
+[line 3]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠リリス
+キリエライト、何か嬉しそうじゃない？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……いえ、まったく。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠リリス
+性格わるーい。
+[k]
+
+[messageOff]
+[charaMoveEase K 300,-250 1.0 easeOutSine]
+[charaMoveEase C 200,0 1.0 easeOutSine]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.4 -170,0]
+[wt 0.4]
+
+＠ダンテ
+フフ……自己紹介……？
+[k]
+
+[messageOff]
+[charaMoveEase K 100,-250 1.0 easeOutSine]
+[charaMoveEase C 0,0 1.0 easeOutSine]
+[charaMoveEase D -370,0 1.0 easeOutSine]
+[wt 1.0]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.4 320,0]
+[wt 0.4]
+
+＠モリアーティ
+鏡が必要かネ？
+[k]
+
+[charaFace C 3]
+
+＠リリス
+何か言ったかボンクラどもー？
+[k]
+
+[charaFace B 6]
+
+＠モリアーティ
+フハハハハ、何度でも言ってあげよう。[r]リリス、君の性格は悪い！
+[k]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFace E 14]
+[charaFadein E 0 1]
+
+＠リリス
+ようしその喧嘩買った！
+[k]
+
+[messageOff]
+[charaTalk E,C,B]
+[wt 0.4]
+[charaMoveReturn B 310,0 0.3]
+[charaMoveReturn C 10,0 0.3]
+[wt 0.1]
+[se bac8]
+[wt 0.4]
+[charaMoveReturn B 310,0 0.3]
+[charaMoveReturn C 10,0 0.3]
+[wt 0.1]
+[se bac8]
+[wt 1.0]
+
+[charaFadeout K 0.4]
+[charaFadeout C 0.4]
+[charaFadeout D 0.4]
+[charaFadeout B 0.4]
+[wt 0.8]
+
+＠メタトロン・ジャンヌ
+アパートの住人が仲良くて、ちょっと嬉しい私であった。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+……ウム。仲が良いのはいいことだ……。[r]……仲悪いみたいだけど……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+悪い、悪いとも。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠リリス
+でもアテシは[%1]とは、[r]仲良いよねー？
+[k]
+
+？1：仲良くなりたいとは思っているよ
+？！
+
+[charaFace C 15]
+
+＠リリス
+むぅ、つれない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut N 0,-200]
+[charaFadeTime N 0.2 0.5]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠カドック
+（そりゃなぁ。マシュを敵視している以上、[r]　僕らが仲良くなれるはずがない）
+[k]
+
+＠カドック
+（[%1]も、[r]　その辺を理解して警戒しているんだろうな）
+[k]
+
+[charaFace F 9]
+
+＠カドック
+（……正直、僕も最大の警戒に値すると思う。[r]　何しろ、彼女の目的が不明すぎる）
+[k]
+
+[charaFace F 13]
+
+＠カドック
+（敵対なのか、友好なのか。[r]　存続なのか、破滅なのか）
+[k]
+
+＠カドック
+（何もわからないから、警戒する以外にない。[r]　マシュも彼女については語らないしな……）
+[k]
+
+＠カドック
+（まあ、確実なのはマシュと[r]　仲が良くないことくらいだが……）
+[k]
+
+[charaFadeout N 0.2]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠マシュ
+カドックさん、何か？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠カドック
+……いや、何でもない。
+[k]
+
+[charaFace F 1]
+
+＠カドック
+それよりメタトロン、第五圏に入ったら、[r]一旦休憩させてくれ。
+[k]
+
+＠カドック
+[%1]も僕もそろそろ限界だ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠メタトロン・ジャンヌ
+む、確かに。[r]じゃあ、第五圏までは走り通しかな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+……スタルジオとセリエナに挨拶くらいはしたかったが、[r]そんな余裕はなさそうだ……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+ん、誰だいそれは？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠カドック
+ああ。[#煉獄:れんごく]から地獄の第四圏へ自発的に向かった二人だ。[r]依頼でな、しばらく同行したんだよ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+自ら地獄を志願するとは、信仰深いというべきか。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth K 16]
+[charaFadein K 0.5 -100,-250]
+[charaMove K 100,-250 6.0]
+[wt 0.5]
+[se ad769]
+[se ad667]
+[seVolume ad667 0 0.5]
+[wt 3.0]
+[charaFadeout B 0.1]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_70 1.5]
+[seStop ad667 1.0]
+[seStop ad769 1.0]
+[charaFadeout K 0.6]
+[wt 1.0]
+
+＠マシュ
+……マスター、カドックさん。[r]あそこにいらっしゃるのは、スタルジオさんでは？
+[k]
+
+？1：……ん？
+？！
+
+[messageOff]
+[charaFadein K 0.4 50,-250]
+[charaMoveEase K 150,-250 1.2 easeOutSine]
+[wt 1.2]
+
+[charaDepth B 1]
+[charaDepth A 2]
+[charaDepth K 3]
+[charaDepth G 5]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 3]
+[charaFadeinFSL G 0.4 -270,0]
+[wt 0.4]
+
+[bgm BGM_MAP_95 0.1]
+
+＠スタルジオ
+おお、あなた方は……！
+[k]
+
+[charaFadeout A 0.1]
+
+？1：何かあった？
+？！
+
+[charaFace G 2]
+
+＠スタルジオ
+実はこのところ、セリエナの調子が思わしくなく……。
+[k]
+
+[messageOff]
+[charaDepth A 4]
+[charaTalk A]
+[charaFace A 8]
+[charaFadeinFSR A 0.4 270,0]
+[wt 0.4]
+
+＠マシュ
+ご病気……ですか？
+[k]
+
+＠スタルジオ
+いえ、[#臥:ふ]せっているという訳ではないのです。[r]ただ……。
+[k]
+
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠スタルジオ
+以前より、怒りっぽくなったというか……。
+[k]
+
+[messageOff]
+[charaTalk G,B]
+[charaFadeout K 0.5]
+[charaFadeout G 0.5]
+[charaFadeout A 0.5]
+[wt 0.8]
+
+＠モリアーティ
+……例えばそれは、[r][#物に執着するようになったとか]？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠スタルジオ
+はい……。
+[k]
+
+？1：それは……
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠リリス
+あー、ヤバいね。[r]それは間違いなく、アレでしょ。
+[k]
+
+＠リリス
+ハヤ・ラア化してんじゃない？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠スタルジオ
+……！[r]その、ような……ハズが……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+気になるところだが、[r]今は急ぎだ。残念ながら、できることはない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠スタルジオ
+……失礼しました。[r]それでは……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……。[r]……マスター。
+[k]
+
+？1：マシュ
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠リリス
+ん？　何で頷き合ってんの二人とも。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠カドック
+……まさか。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ちょっと行ってきます！[r]スタルジオさん、案内お願いします！
+[k]
+
+？1：すぐ追いつくから！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+あ、コラ君たち。[r]団体行動中だぞー、列を乱すな……ええい、もう！
+[k]
+
+
+[messageOff]
+[se ad769]
+[se ad667]
+[seVolume ad667 0 0.5]
+[bgmStop BGM_MAP_95 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 250700]
+
+[sceneSet K 250700 1]
+[sceneSet L 250700 1]
+[charaScale K 1.5]
+[charaScale L 1.5]
+[charaScale H 1.2]
+[charaScale P 1.2]
+
+[charaDepth K 1]
+[charaDepth H 2]
+[charaDepth L 3]
+[charaDepth P 4]
+[charaDepth O 20]
+
+[charaPut O 0,-200]
+[charaFadeTime O 0.1 0.5]
+[pictureFrameTop cut063_cinema]
+[charaFadeout B 0.1]
+
+[seStop ad667 1.0]
+[seStop ad769 1.0]
+[wt 3.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_35 0.1]
+
+＠
+[line 3]欲しい。[r]何か欲しい、何でも欲しい。全てが欲しい。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace H 4]
+[charaFadein K 0.4 50,-200]
+[charaFadein H 0.4 -200,-50]
+[charaMoveEase K 100,-200 0.8 easeOutSine]
+[charaMoveEase H -150,-50 0.8 easeOutSine]
+[wt 0.8]
+
+＠罪人
+なぜ貯める！？
+[k]
+
+[messageOff]
+[charaFace P 4]
+[charaFadein L 0.4 -50,-200]
+[charaFadein P 0.4 200,-50]
+[charaMoveEase L -100,-200 0.8 easeOutSine]
+[charaMoveEase P 150,-50 0.8 easeOutSine]
+[wt 0.8]
+[charaFadeout K 0.1]
+[charaFadeout H 0.1]
+
+＠罪人
+なぜ[#費:つか]う！？
+[k]
+
+[messageOff]
+[charaFadeout L 0.5]
+[charaFadeout P 0.5]
+[wt 0.8]
+
+[charaTalk on]
+
+＠
+貯めるのは欲しいから。[r][#費:つか]うのは楽しいからだ。
+[k]
+
+＠
+貪欲に貪欲に。
+[k]
+
+＠
+煉獄に居た頃から[#燻:くすぶ]っていた想いが、[r]地獄に来たことで爆発した。
+[k]
+
+＠
+ああ……地獄に来た甲斐があったというもの。
+[k]
+
+＠
+溜め込もう溜め込もう。[r]惜しみなく欲しがろう。
+[k]
+
+＠
+ぽろぽろと体が崩れていく。[r]内側の欲望が膨れ上がり、それが魂ごと爆発増殖。
+[k]
+
+＠
+欲しい、欲しい、欲しい……！
+[k]
+
+＠？？？
+セリエナさん……！
+[k]
+
+＠
+誰かの声が聞こえた。[r]ああ、とても貴重なものを持っている。
+[k]
+
+＠
+盾はとても貴重なものだけど、[r]彼女は何より素晴らしい魂を持っている。
+[k]
+
+＠
+[line 3]ほしい。
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ad1065]
+[wt 0.2]
+[se ad666 0]
+[seVolume ad666 1.0 1.0]
+[wt 0.8]
+[charaTalk A]
+[charaFace A 13]
+[charaFace C 0]
+[charaFadeinFSR A 0.4 256,-50]
+[charaFadeinFSL C 0.4 -256,-50]
+[wt 0.4]
+[seStop ad666 0.2]
+[seStop 21_ad1065 0.2]
+[wt 0.6]
+
+＠A：？？？
+これは……もう……。
+[k]
+
+[clear]
+[charaFace C 14]
+
+＠C：？？？
+あ、見切っちゃうんだ。[r]まあでも、これは仕方ないかー。
+[k]
+
+[messageOff]
+[charaTalk H]
+[wt 0.5]
+
+＠
+[charaTalk H]
+山のような黄金を積み上げても、[r]彼女が安らぐことはない。
+[k]
+
+＠
+[charaTalk H]
+【強欲】とは、そのくらいの罪であり、[r]彼女が変貌するのもまた、罪の象徴といえる。
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaFace A 30]
+
+＠A：？？？
+リリスさん、気が散るので黙ってください。
+[k]
+
+[charaFace C 11]
+
+＠リリス
+ふふふ、キリエライト冷たーい。
+[k]
+
+[messageOff]
+[charaTalk H]
+[wt 0.5]
+＠
+[charaTalk H]
+ああ、何はともあれ。[r]その魂を、しゃぶり尽くさなければ気が済まない。
+[k]
+
+[messageOff]
+[se ad513]
+[wt 2.0]
+[charaFace C 3]
+
+＠リリス
+来るよ。キリエライト、戦闘準備。[r][%1]もね。
+[k]
+
+[charaFace A 2]
+
+＠マシュ
+……わかっています！[r]セリエナさん……いきます！
+[k]
+
+[messageOff]
+[se ad658]
+[charaCrossFade A 1098257900 2 0.3]
+[wt 1.0]
+
+[wipeout rectangleStripLeftToRight 1.0 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[pictureFrame]
+[charaFadeout O 0.1]
+
+[charaSet Q 1098325100 1 マシュ後ろ姿]
+[charaSet R 1098325200 1 リリス後ろ姿]
+[charaSet S 1098322000 1 セリエナ]
+[charaSet T 1098323200 1 ハヤ・ラア]
+[charaRollAxis S y -180 0 0]
+
+[charaDepth S 1]
+[charaDepth T 2]
+[charaDepth J 3]
+[charaDepth Q 4]
+[charaDepth R 5]
+
+[charaTalk off]
+
+[charaPut J 1]
+[charaFace S 9]
+[charaFadein S 0.1 10,0]
+
+[charaScale Q 1.4]
+[charaFace Q 0]
+[charaFadeinFSSideL Q 0.1 -400,0]
+
+[charaScale R 1.4]
+[charaFace R 0]
+[charaFadeinFSSideR R 0.1 400,0]
+[wt 1.0]
+
+[charaMoveFSSideL Q -420,0 5.0]
+[charaMoveFSSideR R 420,0 5.0]
+[cameraMove 5.0 0,-30 1.1]
+[wipein rectangleStripRightToLeft 1.0 1]
+[wait wipe]
+
+[se ad448]
+[charaEffect J bit_talk_bubble_atomization]
+[wt 1.0]
+[se ad177]
+[charaEffectStop J bit_talk_bubble_atomization]
+[wt 1.0]
+[se ad137]
+[cueSe SE_23 23_ade909]
+[wt 1.0]
+[charaFadeout S 0.1]
+[charaFadein T 0.1 1]
+[wt 1.5]
+[seStop 23_ade909 1.0]
+[wt 1.5]
+
+
+＠
+[charaTalk H]
+[line 3]ああ、それは。[r]誰の名前だったのだろう。
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 0.5]
+[bgmStopEnd BGM_MAP_35 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

@@ -1,0 +1,1042 @@
+
+
+＄94-14-15-06-3-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098318810 1 ジニー]
+[charaSet B 1098318810 1 ジニー（演出用）]
+[charaSet C 1098318810 1 ジニー（シルエット用）]
+[charaSet D 1098255110 1 ゴルドルフ]
+[charaSet E 28010001 1 ダンテ]
+[charaSet F 28010001 1 ダンテ（演出用）]
+[charaSet G 1098318700 1 エレノア]
+[charaSet H 1098318700 1 エレノア（演出用）]
+[charaSet I 1098318700 1 エレノア（シルエット用）]
+[charaSet J 1098257310 1 ダ・ヴィンチ]
+[charaSet K 1057000 1 セタンタ]
+[charaSet L 1098224300 1 岡田以蔵]
+
+[imageSet M cut662_reset_button 1]
+[charaScale M 0.9]
+[sceneSet N 10000 1]
+[charaScale N 1.1]
+
+[sceneSet O 243106 1]
+[charaScale O 1.2]
+[sceneSet P 243106 1]
+[charaScale P 1.2]
+[sceneSet Q 243106 1]
+[charaScale Q 1.4]
+
+[charaSet R 1098319200 1 カドック]
+
+[charaSet V 98115000 1 通信エフェクト用]
+[charaSet W 98115000 1 エフェクト用]
+
+[charaPut V 2000,2500]
+[charaEffect V bit_talk_10_LowLevel]
+[charaPut W 2000,2500]
+[charaEffect W bit_talk_spotlight]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 243106]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_41 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジニー
+[line 3]さて、聖杯をあげるという話ね。[r]あれ本当よ。
+[k]
+
+＠ジニー
+私の中にある聖杯を取り出して、[r]あなたたちに引き渡す。それでおしまい。
+[k]
+
+[charaFace A 6]
+＠ジニー
+ただ……一応伝えておくけど。[r]聖杯、結構リソース減ったから。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+そ、それは何故！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジニー
+リセットボタンのせいよ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subCameraOn 1]
+[charaLayer W sub #A]
+[charaLayer M sub #A]
+[charaLayer N sub #A]
+
+[subCameraFilter #A normal]
+
+[subRenderScale #A 1.01]
+
+[charaTalk depthOff]
+[charaDepth N 2]
+[charaDepth M 3]
+[charaDepth W 4]
+
+[charaPut W 25,0]
+
+[charaFadein M 0 0,-140]
+[charaFadein N 0 0,0]
+
+[subRenderFadein #A 0.7 0,0]
+[wt 1.1]
+
+＠ジニー
+破壊しかできない私が、エレノアの誕生日を台無しに[r]しないために作った、疑似回帰礼装。
+[k]
+
+？1：やっぱりキミが……
+？！
+
+[messageOff]
+
+[charaFace A 6]
+
+[subRenderFadeout #A 0.7]
+[wt 0.7]
+[charaPut W 2000,2500]
+[charaEffectDestroy W bit_talk_spotlight]
+[charaFadeout M 0]
+[charaFadeout N 0]
+[wt 0.15]
+[subCameraOff]
+[charaLayer W normal]
+[charaLayer M normal]
+[charaLayer N normal]
+[charaScale W 1.0]
+[charaScale M 1.0]
+[charaScale N 1.0]
+[wt 0.05]
+
+[charaTalk on]
+[charaTalk A]
+＠ジニー
+あなたに使ってもらおうとした、[r]一回目の私の判断は間違いじゃなかったみたいね。
+[k]
+
+
+[charaFace A 2]
+＠ジニー
+……良かった。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 4]
+[charaFadein K 0.1 1]
+＠セタンタ
+なぁ。オレたち、なんでおまえが聖杯だって[r]見抜けなかったんだ？
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ジニー
+それは簡単。[r]私はエレノアの願いが叶うまで[line 3]
+[k]
+
+＠ジニー
+[#自分が聖杯だとバレたくなかった]。[r]だから、あなたたちは聖杯だと見抜けなかったの。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk J]
+[charaFace J 29]
+[charaFadein J 0.1 1]
+＠ダ・ヴィンチ
+例外の例外の、そのまた例外みたいな荒技だなぁ！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk R]
+[charaFace R 4]
+[charaFadein R 0.1 1]
+＠カドック
+自意識を持つ聖杯ならではの裏技だな……。
+[k]
+
+[charaFadeout R 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ダンテ
+私からも一つ質問……。[r]……なぜ、君はそこまでやったのかな……？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ジニー
+だって、友達なんだもの。[r]当然でしょう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ダンテ
+……。[r]……。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠エレノア
+ジニー、話わかんないよ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジニー
+そう、エレノア？[r]もう自分でも薄々わかっているって思ってたけど。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_41 1.5]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠エレノア
+……何が……？
+[k]
+
+[messageOff]
+
+[charaDepth A 2]
+[charaDepth G 3]
+[charaDepth O 4]
+[charaDepth B 5]
+[charaDepth P 6]
+[charaDepth H 7]
+
+[charaScale O 1.2]
+[charaScale B 1.2]
+
+[charaTalk B,G]
+[charaFace B 0]
+[charaFadein B 0.7 -250,0]
+[charaFadein O 0.7 50,-260]
+[charaMove B -200,0 0.7]
+[charaMove O 100,-260 0.7]
+[wt 0.7]
+[charaFadeout G 0.1]
+[wt 0.2]
+
+＠B：ジニー
+お別れの時が来たってこと。
+[k]
+
+[messageOff]
+
+[charaScale H 1.2]
+[charaScale P 1.2]
+
+[charaTalk H,B]
+[charaFace H 5]
+[charaFadein H 0.5 200,0]
+[charaFadein P 0.5 -100,-260]
+[wt 0.5]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[bgm BGM_SHINYAMA_1 0.1]
+
+＠H：エレノア
+そんな……！　[wt 0.7][charaFace H 4]嫌、嫌だよ！[r]ずっと一緒に居るんだと……思ってたのに！
+[k]
+
+[messageOff]
+[charaTalk B,H]
+[charaFace B 3]
+[charaFadeTime H 0.4 0]
+[charaFadeTime P 0.4 0]
+[wt 0.5]
+
+＠B：ジニー
+嘘をつくのは止めなさい、エレノア。
+[k]
+
+[charaFace B 0]
+＠B：ジニー
+心のどこかで、そんな日が近いって[r]思ってたでしょう？
+[k]
+
+[messageOff]
+[charaTalk H,B]
+[charaFace H 6]
+[charaFadeTime H 0.4 1.0]
+[charaFadeTime P 0.4 1.0]
+[wt 0.4]
+
+[charaFace G 6]
+[charaFace A 0]
+[charaFadein G 0.1 225,0]
+[charaFadein A 0.1 -225,0]
+[charaFadeout B 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+＠H：エレノア
+…[messageShake 0.03 3 3 0.3]…！
+[k]
+
+[messageOff]
+[charaTalk H,A]
+[charaFadeout H 0.6]
+[charaFadeout P 0.6]
+[wt 0.8]
+
+＠ジニー
+この世界の、大抵のものは不思議じゃないか、[r]ちょっと不思議なだけで。
+[k]
+
+[charaFace A 6]
+＠ジニー
+奇跡的な出来事というのは、いつしか消えていくもの。[r]私も、少し長く居すぎたからね。
+[k]
+
+[charaTalk G]
+[charaFace G 7]
+
+＠エレノア
+……お別れなの？
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+
+＠ジニー
+お別れよ。そもそも、私は[#炎の精霊:イ フ リ ー タ]。[r]炎が留まれば、いつかあなたに火傷させてしまうわ。
+[k]
+
+[charaTalk G]
+[charaFace G 6]
+
+＠エレノア
+うう。
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+
+＠ジニー
+エレノア、でも楽しかったよ。[r]この日々のことは、忘れられないと思う。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk J]
+[charaFace J 35]
+[charaFadein J 0.1 1]
+
+＠ダ・ヴィンチ
+……。[r]……。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace G 0]
+[charaFadein A 0.1 -225,0]
+[charaFadein G 0.1 225,0]
+
+＠ジニー
+パパとママのところに行きなさい。[r]私はもう少し、コンシェルジュと話があるから。
+[k]
+
+
+[messageOff]
+[charaDepth A 2]
+[charaDepth G 3]
+[charaDepth O 4]
+[charaDepth H 5]
+[charaDepth C 6]
+[charaDepth P 7]
+[charaDepth B 8]
+[charaDepth I 9]
+
+[charaFilter C silhouette 00000080]
+[charaFilter I silhouette 00000080]
+[charaRollAxis C y 180 0 0]
+[charaRollAxis I y 180 0 0]
+
+[charaScale H 1.2]
+[charaScale O 1.2]
+[charaScale C 2.1]
+
+[charaTalk H,A]
+[charaFace C 0]
+[charaFadein C 0.6 -450,150]
+[charaFace H 0]
+[charaFadein H 0.6 250,0]
+[charaFadein O 0.6 90,-260]
+[charaMove C -440,150 0.6]
+[charaMove H 230,0 0.6]
+[charaMove O 55,-260 0.6]
+[wt 0.6]
+
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+[wt 0.5]
+
+＠H：エレノア
+うん。[wt 0.6][charaFace H 1]……ばいばい、ジニー。
+[k]
+
+[messageOff]
+
+[charaScale B 1.2]
+[charaScale P 1.2]
+[charaScale I 2.1]
+
+[charaTalk H,B]
+[charaFace B 2]
+[charaFadein B 0.6 -220,0]
+[charaFace I 0]
+[charaFadein I 0.6 360,150]
+[charaFadein P 0.6 -90,-260]
+[charaMove B -200,0 0.6]
+[charaMove I 350,150 0.6]
+[charaMove P -55,-260 0.6]
+[wt 1.1]
+
+＠B：ジニー
+ばいばい、[wt 0.6][charaFace B 1]またね。
+[k]
+
+[messageOff]
+[charaTalk H,B]
+[charaFadeout B 0.4]
+[charaFadeout I 0.4]
+[charaFadeout P 0.4]
+[wt 0.6]
+
+[charaFace H 1]
+
+＠H：エレノア
+……うん！
+[k]
+
+[messageOff]
+[bgmStop BGM_SHINYAMA_1 1.5]
+
+[cueSe SE_25 25_ade1182]
+[charaFadeout H 0.4]
+[cueSeStop 25_ade1182 1.2]
+[wt 1.2]
+
+[charaDepth P 2]
+[charaDepth A 3]
+[charaFace A 0]
+[charaFadein A 0.1 -100,0]
+[charaFadein P 0.1 100,-260]
+[wt 0.8]
+
+[charaTalk A]
+[charaFadeout C 0.7]
+[charaFadeout O 0.7]
+[wt 1.1]
+
+＠ジニー
+さて、それじゃ早速[line 3][wt 0.65][charaFace A 5]うん？
+[k]
+
+[messageOff]
+[charaDepth E 4]
+
+
+[cueSe SE_23 23_ade895]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 155,0]
+[charaMove E 175,0 0.4]
+[wt 0.4]
+[cueSeStop 23_ade895 0.2]
+[wt 1.6]
+
+？1：……なるほど
+？！
+
+[bgm BGM_TOU_1 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 2]
+
+＠ダンテ
+……フフ。あまり驚かないのだね……。
+[k]
+
+？1：何となく、そうするかもなって
+？！
+
+[charaFace E 5]
+
+＠ダンテ
+見抜かれていたとは……フフ、恥ずかしい……。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+
+＠ジニー
+何？　話が見えてこないのだけど。
+[k]
+
+[charaTalk E]
+[charaFace E 16]
+
+＠ダンテ
+そうだね……端的に説明すると……。[r]私は君のために……。
+[k]
+
+[charaFace E 18]
+
+＠ダンテ
+……。[r]……いや違うな……。
+[k]
+
+[charaFace E 4]
+
+＠ダンテ
+私は[#私のために]、戦わなくてはいけないのさ……。
+[k]
+
+[charaTalk A]
+[charaFace A 6]
+
+＠ジニー
+……どゆこと？
+[k]
+
+[messageOff]
+[charaDepth P 2]
+[charaDepth A 3]
+[charaDepth E 4]
+
+[charaDepth Q 5]
+[charaDepth B 6]
+[charaDepth F 7]
+
+[charaScale F 1.3]
+[charaScale B 1.2]
+[charaScale Q 1.4]
+
+[charaTalk F,A]
+[charaFace F 0]
+[charaFace B 6]
+[charaFadein F 1.0 220,0]
+[charaFadein B 1.0 -280,0]
+[charaFadein Q 0.7 -30,-320]
+[charaMove F 280,0 40.0]
+[charaMove B -220,0 40.0]
+[charaMove Q 30,-320 40.0]
+[wt 1.0]
+
+[charaScale E 1.0]
+[charaScale A 1.0]
+[charaDepth E 2]
+[charaDepth A 1]
+[charaFace E 17]
+[charaFadein E 0.1 175,0]
+[charaFadeout P 0.1]
+[wt 0.4]
+
+＠F：ダンテ
+ジニー。君は聖杯を[&彼:彼女]らに託したら、どうなる？
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+
+＠B：ジニー
+どうなる、って……そりゃあ、消えるでしょ。[r]元々、私は何年か前に発生しただけの現象なのだし。
+[k]
+
+[charaTalk F]
+[charaFace F 1]
+
+＠F：ダンテ
+そう、消える。[r]……君は嫌じゃないのかな？
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+
+＠B：ジニー
+うーん、私は所詮そういうモノだから。[r]エレノアだって、あまり未練はなかったでしょう？
+[k]
+
+[charaTalk F]
+[charaFace F 9]
+
+＠F：ダンテ
+彼女は……君が消えてしまうことを、[r]予想していないだけだとも……。
+[k]
+
+
+[charaFace F 18]
+
+＠F：ダンテ
+恐らく実感がないのだ……。[r]今、さよならの挨拶をしても……。
+[k]
+
+＠F：ダンテ
+戻ってくれば、まだいるはず。[r]そう信じているのだろう……。
+[k]
+
+
+[charaTalk B]
+[charaFace B 6]
+
+＠B：ジニー
+……悪いこと、しちゃったのかしら……。[r]でも、それとダンテが関係あるの？
+[k]
+
+[messageOff]
+[charaTalk E,B]
+[charaFadeout F 0.7]
+[charaFadeout B 0.7]
+[charaFadeout Q 0.7]
+[wt 0.9]
+
+＠ダンテ
+……フフ、まあいい……。[r]私はね、ジニー……。
+[k]
+
+[charaFace E 2]
+
+＠ダンテ
+子供が消えて無くなるという現象に……。[r]我慢ならないだけだ……。
+[k]
+
+
+[charaFace A 0]
+
+＠ジニー
+でも、そうしないと……このホテル、[r]その内また燃えるわよ？
+[k]
+
+
+[charaFace E 5]
+
+＠ダンテ
+お客様に被害が出ないなら……ホテルが一軒燃えても、[r]まあ……いいんじゃないかな……？
+[k]
+
+
+[charaFace A 3]
+
+＠ジニー
+良くないと思う！！[r]ちょ、ちょっとあなた。止めなさいよ。
+[k]
+
+[bgmStop BGM_TOU_1 1.5]
+
+？1：……いや、やろう
+？2：疲れてるとこ、二人には悪いけど……
+？！
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[wt 0.15]
+
+[charaDepth K 3]
+[charaDepth L 4]
+
+[se ade491]
+[wt 0.1]
+[cueSe SE_23 23_ade895]
+
+[charaTalk off]
+[charaFace K 6]
+[charaFace L 16]
+[charaFadeinFSL K 0.4 0]
+[charaFadeinFSR L 0.4 2]
+[wt 0.3]
+[seStop ade491 0.2]
+[wt 0.1]
+[cueSeStop 23_ade895 0.2]
+[wt 0.8]
+
+[charaTalk on]
+[bgm BGM_KYOSU_1 0.1]
+
+＠セタンタ
+なーに言ってんだよマスター。[r]オレたちはマスターの剣。
+[k]
+
+＠岡田以蔵
+そうじゃき、安心して命令せぇ。
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFace A 5]
+[charaFadein A 0.1 -100,0]
+[charaFadein E 0.1 175,0]
+
+＠ダンテ
+……フフ、それでいい……。
+[k]
+
+＠ジニー
+どうしてよ、何なのよ。[r]まるで意味がないじゃない……。
+[k]
+
+[charaFace E 3]
+
+＠ダンテ
+……意味は……あるさ……。[r]私はこのホテルの……コンシェルジュだからね……。
+[k]
+
+[charaFace E 6]
+
+＠ダンテ
+お客様を泣かせたまま、帰らせたくはないのだ……。
+[k]
+
+[charaFace A 0]
+
+＠ジニー
+泣く訳ないでしょう？
+[k]
+
+[charaFace E 0]
+
+＠ダンテ
+……かもしれない。でも……。[r]君のために戦う者が……一人くらい居てもいい……。
+[k]
+
+[charaFace E 18]
+
+＠ダンテ
+地獄で一人[#彷徨:さまよ]っていた私を[r]救ってくれた師匠のように……。
+[k]
+
+[charaFace E 9]
+＠ダンテ
+道に迷った者を……導く責任が……[r]英霊たる私には……あると思うのだ……。
+[k]
+
+[charaFace E 1]
+
+＠ダンテ
+それがたとえ……人理に立ち向かうことであっても……。[r]そういう信念がある……。
+[k]
+
+[charaFace E 3]
+
+＠ダンテ
+だから、あくまで私自身のためだ……。[r]君は気にしないでほしい……。
+[k]
+
+[charaFace A 6]
+
+＠ジニー
+……そう。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+まったく英霊というのは、これだから……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠ダンテ
+フフ……ジニー、部屋が壊れないように[r]祈ってくれ……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ジニー
+……あ、そうか。そうよね。[wt 0.8][charaFace A 0][r]ええと……こうかな？
+[k]
+
+[messageOff]
+[charaEffectEdgeBlur A FFFFFF FFFFFF 3 3]
+[wt 0.1]
+
+[se ade297]
+[wt 1.0]
+[seStop ade297 0.2]
+
+[charaDepth W 1]
+[charaDepth A 10]
+[charaDepth E 10]
+[se ad931]
+[seVolume ad931 0 0.9]
+[backEffect bit_talk_barrier_atc]
+[charaEffectEdgeBlurStop A]
+[wt 1.0]
+[seStop ad931 1.0]
+[wt 1.4]
+
+＠ジニー
+これで壊れにくくなったと思うよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.05]
+[charaEffectEdgeBlurDestroy A]
+[wt 0.05]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠ダンテ
+フフ……感謝。[r]じゃあ、やろうか……何、すぐに終わるよ。
+[k]
+
+[messageOff]
+[subCameraOn 1]
+[charaLayer F sub #A]
+[charaLayer B sub #A]
+[charaLayer O sub #A]
+[charaLayer P sub #A]
+
+[subCameraFilter #A normal]
+
+[subRenderScale #A 1.01]
+
+[charaDepth E 2]
+[charaDepth O 3]
+[charaDepth F 4]
+
+[charaScale O 1.2]
+[charaScale F 1.3]
+
+[charaTalk E,F]
+[charaFace F 0]
+[charaFadein F 0 180,0]
+[charaFadein O 0 -70,-260]
+
+[subRenderFadein #A 0.7 0,0]
+[charaMove F 150,0 0.7]
+[charaMove O -100,-260 0.7]
+[wt 0.7]
+[charaFadeout E 0.1]
+[wt 0.2]
+[backEffectDestroy bit_talk_barrier_atc]
+
+＠F：ダンテ
+ではジニー。[r]私は[#聖人君子:せいじんくんし]ではないので、一つ報酬が欲しい。
+[k]
+
+[messageOff]
+[charaDepth P 5]
+[charaDepth B 6]
+
+[charaTalk B,F]
+[charaFace B 6]
+[charaFadein B 0.5 -150,0]
+[charaFadein P 0.5 100,-260]
+[wt 0.7]
+
+＠B：ジニー
+報酬？　あげられるものは、そんなにないけど。
+[k]
+
+[messageOff]
+[charaTalk F,B]
+[charaFace F 2]
+[charaFadeTime P 0.4 0]
+[charaFadeTime B 0.4 0]
+
+[wt 0.5]
+
+＠F：ダンテ
+……がんばれと一言言ってくれればそれでいいさ。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_KYOSU_1 1.5]
+
+[charaTalk B,F]
+[charaFace B 5]
+[charaFadeTime P 0.4 1.0]
+[charaFadeTime B 0.4 1.0]
+[wt 0.5]
+
+＠B：ジニー
+がんばれ？
+[k]
+
+[messageOff]
+[charaTalk F,B,E]
+[charaFace F 18]
+[charaFadeout B 0.4]
+[charaFadeout P 0.4]
+[wt 1.2]
+
+[charaFaceFade F 5 0.3]
+[wt 1.3]
+
+[charaFace E 3]
+[charaFadein E 0.1 1]
+[wt 0.2]
+
+[subRenderFadeout #A 0.7]
+[wt 0.7]
+[charaFadeout F 0]
+[charaFadeout B 0]
+[charaFadeout O 0]
+[charaFadeout P 0]
+[wt 0.15]
+[subCameraOff]
+[charaLayer F normal]
+[charaLayer B normal]
+[charaLayer O normal]
+[charaLayer P normal]
+[charaScale F 1.0]
+[charaScale B 1.0]
+[charaScale O 1.0]
+[charaScale P 1.0]
+[wt 0.25]
+
+[bgm BGM_BATTLE_123 0.1]
+
+＠ダンテ
+よし。報酬は充分。では、カルデアのマスター、[r][%1]。
+[k]
+
+[charaFace E 7]
+
+＠ダンテ
+コンシェルジュとして互いに最後の業務を全うしようか！[r]ダンテ・アリギエーリ……[wt 0.8][charaFace E 13]いくぞ！
+[k]
+
+？1：……いきます！
+？2：以蔵さん、セタンタ、お願い！
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaDepth L 4]
+[charaDepth K 3]
+
+[charaTalk L,K]
+[charaFace K 2]
+[charaFace L 5]
+[charaFadeinFSL K 0.1 0]
+[charaFadeinFSR L 0.1 2]
+
+＠二人=spot[L,K]
+応とも！
+[k]
+
+？！
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_123 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

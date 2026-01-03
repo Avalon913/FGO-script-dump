@@ -1,0 +1,265 @@
+
+
+＄04-00-03-11-4-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098292500 1 ジャンヌ・オルタ]
+[charaSet B 11006000 1 サリエリ]
+
+[sceneSet C 213100 1]
+[charaScale C 1.4]
+[sceneSet D 213100 1]
+
+[sceneSet E 10001 1]
+[charaScale E 1.01]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+
+[scene 213100]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[bgm BGM_BATTLE_68 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth A 3]
+[charaDepth S 2]
+[charaDepth C 1]
+[charaFadein C 0.6 20,-300]
+[charaMove C -20,-300 0.6]
+[wt 0.8]
+
+[charaPut S -100,-500]
+[charaEffect S bit_talk_haboob_02_fs]
+
+[charaScale A 1.8]
+[se ad671]
+[seStop ad671 1.0]
+[charaTalk A]
+[charaFace A 2]
+[charaFadeinFSL A 0.4 100,-10]
+[charaMoveEaseFSL A 200,-10 1.0 easeOutExpo]
+[charaMoveScaleEase A 1.3 1.0 easeOutExpo]
+[wt 1.0]
+[charaEffectStop S bit_talk_haboob_02_fs]
+[charaFace A 4]
+
+＠ジャンヌ・オルタ
+数が！　多い！
+[k]
+
+＠ジャンヌ・オルタ
+あと強い。[r][line 3]何よ、あのデカくて黒いのは！
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaFadeout C 0.4]
+[charaPut S -2000,-2000]
+[wt 0.4]
+
+[se ad322]
+[seVolume ad322 0 0.8]
+[effect bit_talk_impactlanding]
+[wt 0.15]
+[shake 0.05 4 4 1.0]
+[wt 0.5]
+[shake 0.02 1 1 0.5]
+[wt 1.2]
+[se ad772]
+[effect bit_talk_voice02]
+[wt 0.15]
+[shake 0.03 3 3 2.5]
+[wt 3.2]
+
+[charaTalk B]
+[charaFace B 0]
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect B appearance 1 0.25]
+[wt 1.0]
+
+[se ad596]
+[fadeout white 0.5]
+[wait fade]
+
+[charaTalk depthOn]
+
+[charaChange B 11006001 6 normal 0.1]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.2]
+
+
+＠サリエリ
+砂漠の神獣スフィンクスか。[r]魔力量では、並のサーヴァントを超えている[line 3]
+[k]
+
+[charaFace B 8]
+
+＠サリエリ
+何らかの変種のようではあるが……[r]どうあれ強敵だ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 30]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+神獣の変種とか、冗談！[r]また妙に硬めの霊基してるし！
+[k]
+
+？1：……このまま消耗したくない
+？2：作戦を立てたい
+？！
+
+[messageOff]
+
+？1：一度、切り抜けよう
+？！
+
+[charaFace A 1]
+
+＠ジャンヌ・オルタ
+簡単に言ってくれちゃって！[r]でも、ええ。方針には賛成！
+[k]
+
+[charaFace A 2]
+
+＠ジャンヌ・オルタ
+この物量とまともにやり合うのはノーサンキュー。[r]サリエリ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠サリエリ
+……引き受けよう。[wt 0.5][charaFace B 2][r][#慟哭:どうこく]外装！
+[k]
+
+[messageOff]
+[se ad489]
+[se ade446]
+[seVolume ade446 0 0]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ade446 0.5 0.4]
+[seVolume ad556 0.5 0.3]
+[effect bit_talk_sparks_black]
+[fowardEffect bit_talk_blk_fire_aura 0,-350]
+[wt 1.5]
+
+[se ad574]
+[fadeout white 0.5]
+[seStop ade446 1.0]
+[seStop ad556 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_sparks_black]
+[fowardEffectDestroy bit_talk_blk_fire_aura]
+
+[charaChange B 11006000 1 normal 0.1]
+
+[charaTalk off]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.2]
+
+[se ad1061]
+[cueSe SE_22 22_ad1181 0 0.5]
+[cueSe SE_23 23_ade927 0 0.4]
+[effect bit_talk_charge_ppl02]
+[charaEffectEdgeBlur B dc143c dc143c]
+[wt 2.0]
+
+[se ad574]
+[fadeout white 1.0]
+[cueSeStop 22_ad1181 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaEffectEdgeBlurDestroy B]
+[effectDestroy bit_talk_charge_ppl02]
+[wt 0.1]
+
+[charaSet B 11006002 1 サリエリ]
+[charaScale B 1.3]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,120]
+
+[charaTalk depthOff]
+[charaDepth B 3]
+[charaDepth S 2]
+[charaDepth C 1]
+[wt 0.1]
+[charaEffectEdgeBlur B dc143c dc143c]
+[charaFadein C 0.1 0,-150]
+
+[charaScale S 1.2]
+[charaPut S 0,-100]
+[charaEffect S bit_talk_charge_ppl02]
+[wt 0.8]
+
+[charaMoveEase B 0,-70 3.5 easeOutSine]
+[charaMoveEase C 0,-350 3.5 easeOutSine]
+[wt 0.5]
+
+[se ad626]
+[seVolume ad626 0 0]
+[seVolume ad626 1.5 0.3]
+[cueSeVolume 23_ade927 1.5 0.7]
+[fadein white 1.5]
+[wait fade]
+[wt 2.0]
+
+[charaFaceFade B 1 0.2]
+
+＠サリエリ
+オ[messageShake 0.05 5 5 0.5]オオオオオオオオ！[r]ゆくぞ、公演の始まりだ！
+[k]
+
+＠サリエリ
+[line 3]『[#至高の神よ、我を憐れみたまえ:ディオ・サンティシモ・ミゼルコディア・ディ・ミ]』！
+[k]
+
+[messageOff]
+[charaDepth E 9]
+[charaFadein E 1.4 0,-200]
+[cueSeStop 23_ade927 0.7]
+[seStop ad626 0.7]
+[se ad964]
+[seVolume ad964 0 0.7]
+[se ad285]
+[seVolume ad285 0 0.7]
+[wt 1.4]
+
+[fadeout black 2.0]
+[seStop ad285 2.0]
+[seStop ad964 2.0]
+[bgmStop BGM_BATTLE_68 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

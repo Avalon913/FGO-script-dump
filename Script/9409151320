@@ -1,0 +1,791 @@
+
+
+＄94-09-15-13-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1060000 1 宮本伊織]
+[charaSet B 1059000 1 ヤマトタケル]
+[charaSet C 11018000 1 丑御前]
+[charaSet D 5054000 1 由井正雪]
+[charaSet E 5054000 1 由井正雪2]
+[charaSet F 5054000 1 由井正雪3]
+[charaSet G 5054000 1 由井正雪4]
+[charaSet H 5054000 1 由井正雪5]
+[charaSet I 5054000 1 由井正雪6]
+[charaSet J 5054000 1 由井正雪7]
+[charaSet K 1098284210 1 紅玉の書]
+[charaSet L 1098257810 1 マシュ]
+[charaSet M 1098203600 1 空想樹の種子1]
+[charaSet N 1098203600 1 空想樹の種子2]
+[charaSet O 1098203600 1 空想樹の種子3]
+
+[sceneSet Q 204702 1]
+[charaScale Q 1.4]
+[sceneSet R 204702 1]
+[charaScale R 1.4]
+
+[charaSet S 5009000 1 エフェクト用1]
+[charaSet T 5009000 1 エフェクト用2]
+[charaPut S 2000,2000]
+[charaEffect S bit_talk_06]
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_10_LowLevel_depth]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth T 1]
+[charaDepth D 1]
+[charaDepth E 2]
+[charaDepth F 3]
+
+[scene 204702]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+[bgm BGM_BATTLE_252 0.1]
+[fadein black 1.5]
+[wait fade]
+
+
+[charaFace D 11]
+[charaFace E 11]
+[charaFace F 11]
+[charaFadeinFSL D 0.1 -360,0]
+[charaFadeinFSR E 0.1 360,0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[charaEffect D bit_talk_06]
+[charaEffect E bit_talk_06]
+[charaEffect F bit_talk_06]
+[wt 2.0]
+[se ad52]
+[charaSpecialEffect D flashErasure 1 2.0]
+[charaSpecialEffect E flashErasure 1 2.0]
+[charaSpecialEffect F flashErasure 1 2.0]
+[wait charaSpecialEffect F]
+[charaEffectStop D bit_talk_06]
+[charaEffectStop E bit_talk_06]
+[charaEffectStop F bit_talk_06]
+[wt 1.5]
+[charaSet D 5054001 1 由井正雪]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠宮本伊織
+今のは、正雪……なのか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠ヤマトタケル
+どう云うことだ？[r][#何故:なにゆえ]ユイがたくさんいる？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear01 94086401]
+
+
+＠伯爵
+……では、丑御前。[r]後は貴方の好きにするといい。
+[k]
+
+＠伯爵
+私は次なる舞台で、[r]カルデアを迎え入れるとしましょう。
+[k]
+
+[messageOff]
+[se ad808]
+[wt 2.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠丑御前
+……次？[r]次などありませぬ。
+[k]
+
+[charaFace C 9]
+
+＠丑御前
+カルデアも異星の神もすべて。そう、すべて。[r]私が[#ただ:こ　わ]し尽くしてみせましょう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[label lblNotClear01]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠由井正雪
+……なん、だ？[r]何、なのだ……今のは……？
+[k]
+
+＠由井正雪
+どうして……怪異が……私に……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠丑御前
+[#解:わか]っている[#筈:はず]ですよ、正雪。
+[k]
+
+＠丑御前
+貴女は造られし[#生命:い の ち][line 3][r]元より人ではありませぬ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_BATTLE_252 1.5]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠由井正雪
+…………っ！
+[k]
+
+
+？1：……人間じゃない？
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_185 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠宮本伊織
+どう云うことだ、爺さん？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.1 1]
+
+＠紅玉の書
+……そうじゃったな。[r]おまえたちにはまだ告げていなかったか。
+[k]
+
+[charaCrossFade K 1098284200 1 0.2]
+[wait charaCrossFade K]
+
+＠紅玉の書
+由井正雪の正体は[#人造人間:ホ ム ン ク ル ス]……[r][#森宗意軒:も り そ う い け ん]によって造られし[#贋造:がんぞう]生命なのじゃ。
+[k]
+
+？2：もしかしてホムンクルス？
+
+[charaSet K 1098284200 0 1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_185 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠宮本伊織
+ホムンクルス[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+＠紅玉の書
+西洋魔術、特に錬金術によって[r]生み出された人造人間。
+[k]
+
+＠紅玉の書
+由井正雪は[#森宗意軒:も り そ う い け ん]によって造られた[r][#贋造:がんぞう]生命なのじゃ。
+[k]
+
+？！
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠丑御前
+正雪。貴女の血肉、その一片に至るまですべて、[r]理想を形とする為に設計されたモノ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠由井正雪
+……………………。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠丑御前
+その無垢なる在り方は英霊へ至るにあたり、[r]宝具として昇華されたのです。
+[k]
+
+＠丑御前
+それこそが……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠由井正雪
+[line 12]
+[k]
+
+[messageOff]
+[charaFaceFade D 9 0.2]
+[charaMove D 0,-30 0.6]
+[wt 0.2]
+[charaFadeout D 0.4]
+[wt 0.4]
+[se ad144]
+[charaSet D 5054000 1 由井正雪]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠宮本伊織
+正雪！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠丑御前
+……正雪？[r]どうなさいましたか？
+[k]
+
+＠丑御前
+……眠ってしまわれたのですか、[#主:あるじ]？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[wt 0.5]
+[se ad52]
+[wt 2.0]
+[charaEffectStop S bit_talk_06]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ヤマトタケル
+……ユイ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠丑御前
+ああ……お[#労:いたわ]しや、我が[#主:あるじ]。
+[k]
+
+＠丑御前
+……また、敗れてしまいましたね。[wt 0.8][charaFace C 8][r]ですが、どうかご安心を。
+[k]
+
+[bgmStop BGM_EVENT_185 1.5]
+
+＠丑御前
+[#幾度:いくたび]でも臨みましょう。[r]幾度でも殺しましょう。
+[k]
+
+[bgm BGM_BATTLE_255 0.1]
+
+[charaFace C 14]
+
+＠丑御前
+[line 3][#どうせ代わりなど]、[#幾らでもおりますれば]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk L]
+[charaFace L 6]
+[charaFadein L 0.1 1]
+
+＠マシュ
+高魔力反応、さらに接近中！
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[charaDepth Q 2]
+[charaDepth M 3]
+[charaDepth D 3]
+[charaDepth N 4]
+[charaDepth E 4]
+[charaDepth O 5]
+[charaDepth F 5]
+[charaDepth R 6]
+
+[se ad843]
+[charaPut M -400,0]
+[charaPut N 400,0]
+[charaPut O 1]
+[charaFadein Q 0.5 -220,-150]
+[charaMove Q -260,-150 1.0]
+[wt 1.0]
+
+[charaFadeout L 0.1]
+[charaPut T 2000,2000]
+
+[seStop ad843 0.5]
+[se ad322]
+[charaEffect M bit_talk_impactlanding]
+[shake 0.05 0 3 1.0]
+[wt 0.2]
+
+[charaFace M 0]
+[charaFadein M 0.4 -400,0]
+[wt 0.2]
+
+[se ad322]
+[charaEffect N bit_talk_impactlanding]
+[shake 0.05 0 3 1.0]
+[wt 0.2]
+[charaFace N 0]
+[charaFadein N 0.4 400,0]
+[wt 0.4]
+
+[se ad322]
+[charaEffect O bit_talk_impactlanding]
+[shake 0.05 0 3 1.0]
+[wt 0.2]
+[charaFace O 0]
+[charaFadein O 0.4 1]
+[wt 1.0]
+
+
+[se ad753]
+[wt 1.0]
+[seStop ad753 0.2]
+[se ad210]
+[wt 0.8]
+
+[cueSe SE_23 23_ade909 0]
+[seVolume 23_ade909 0.7 0.7]
+[charaEffect M bit_talk_explosion_black]
+[wt 0.1]
+[charaEffect N bit_talk_explosion_black]
+[wt 0.1]
+[charaEffect O bit_talk_explosion_black]
+[wt 1.4]
+[seStop 23_ade909 1.0]
+
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+
+[charaFace D 11]
+[charaFace E 11]
+[charaFace F 11]
+[charaFadein D 0.4 -400,0]
+[charaFadein E 0.4 400,0]
+[charaFadein F 0.4 1]
+
+[charaEffectStop M bit_talk_explosion_black]
+[charaEffectStop N bit_talk_explosion_black]
+[charaEffectStop O bit_talk_explosion_black]
+
+[wt 1.8]
+[charaFadeout D 0.5]
+[charaFadeout E 0.5]
+[charaFadeout F 0.5]
+[wt 0.5]
+
+[charaDepth M 7]
+[charaDepth N 8]
+[charaDepth O 9]
+[charaDepth D 7]
+[charaDepth E 8]
+[charaDepth F 9]
+
+[se ad843]
+[charaFadein R 0.5 220,-150]
+[charaMove R 260,-150 1.0]
+[wt 1.0]
+
+[seStop ad843 0.5]
+[se ad322]
+[charaEffect O bit_talk_impactlanding]
+[shake 0.05 0 3 1.0]
+[wt 0.2]
+
+[charaFace O 0]
+[charaFadein O 0.4 1]
+[wt 0.4]
+
+[se ad322]
+[charaEffect N bit_talk_impactlanding]
+[shake 0.05 0 3 1.0]
+[wt 0.2]
+
+[charaFace N 0]
+[charaFadein N 0.4 400,0]
+[wt 0.2]
+
+[se ad322]
+[charaEffect M bit_talk_impactlanding]
+[shake 0.05 0 3 1.0]
+[wt 0.2]
+
+[charaFace M 0]
+[charaFadein M 0.4 -400,0]
+[wt 1.0]
+
+
+[se ad753]
+[cueSe SE_21 21_ad1112]
+[wt 1.0]
+[seStop ad753 0.2]
+[se ad210]
+[wt 0.3]
+[cueSeStop 21_ad1112 0.5]
+[wt 0.5]
+
+[cueSe SE_23 23_ade909 0]
+[seVolume 23_ade909 0.7 0.7]
+[charaEffect M bit_talk_explosion_black]
+[wt 0.1]
+[charaEffect N bit_talk_explosion_black]
+[wt 0.1]
+[charaEffect O bit_talk_explosion_black]
+[wt 1.4]
+[seStop 23_ade909 1.0]
+
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+
+[charaFace D 11]
+[charaFace E 11]
+[charaFace F 11]
+[charaFadein D 0.4 -400,0]
+[charaFadein E 0.4 400,0]
+[charaFadein F 0.4 1]
+
+[charaEffectStop M bit_talk_explosion_black]
+[charaEffectStop N bit_talk_explosion_black]
+[charaEffectStop O bit_talk_explosion_black]
+
+[wt 1.8]
+
+[subCameraOn 1]
+[charaLayer G sub #A]
+[charaLayer H sub #A]
+[charaLayer I sub #A]
+[subCameraFilter #A through]
+[subRenderFadein #A 0.1 0,0]
+
+[charaDepth Q 1]
+[charaDepth G 1]
+[charaDepth H 2]
+[charaDepth I 3]
+[charaPut Q -100,-150]
+
+[charaFadeout R 0.5]
+[charaFadeout D 0.5]
+[charaFadeout E 0.5]
+[charaFadeout F 0.5]
+[wt 0.7]
+
+[se ad1025]
+[charaFace G 11]
+[charaFace H 11]
+[charaFace I 11]
+[charaFadein G 0.4 -300,0]
+[charaMove G -350,0 0.5]
+[wt 0.15]
+[charaFadein I 0.4 50,0]
+[charaMove I 1 0.5]
+[wt 0.15]
+[seStop ad1025 0.5]
+[charaFadein H 0.4 400,0]
+[charaMove H 350,0 0.5]
+[wt 0.7]
+
+[charaMove Q 0,-200 1.0]
+[subRenderFadeout #A 0.5]
+[subCameraMove #A 1.0 100,-50 0.857]
+[charaMoveScale Q 1.2 1.0]
+[wt 1.0]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+
+[se ad1025]
+[charaFace D 11]
+[charaFace E 11]
+[charaFace F 11]
+[charaFadein E 0.4 300,0]
+[charaMove E 350,0 0.5]
+[wt 0.15]
+[charaFadein F 0.4 -50,0]
+[charaMove F 1 0.5]
+[wt 0.15]
+[seStop ad1025 0.5]
+[charaFadein D 0.4 -400,0]
+[charaMove D -350,0 0.5]
+[wt 1.0]
+[charaLayer G normal]
+[charaLayer H normal]
+[charaLayer I normal]
+[subCameraOff]
+
+[charaFadeout Q 0.5]
+[charaFadeout D 0.5]
+[charaFadeout E 0.5]
+[charaFadeout F 0.5]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠丑御前
+お喜びあれ！[r]我が[#主:あるじ]、由井正雪！
+[k]
+
+＠丑御前
+[#数多:あ ま た]の貴女が積み上げた敵の骸が。[r][#数多:あ ま た]に積み重なった貴女の骸が。
+[k]
+
+＠丑御前
+[line 3]ついに盈月を満たすのです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠ヤマトタケル
+ライダー！[r]貴様と云う奴は……！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth D 1]
+[charaDepth E 3]
+[charaDepth F 2]
+[charaDepth G 4]
+
+[se ad1025]
+[charaFace D 11]
+[charaFace E 11]
+[charaFace F 11]
+[charaFace G 11]
+[charaFadein D 0.4 450,0]
+[charaFadein E 0.4 170,0]
+[charaMove D 400,0 0.3]
+[charaMove E 120,0 0.3]
+[wt 0.3]
+[seStop ad1025 0.5]
+[charaFadein F 0.4 -200,0]
+[charaFadein G 0.4 -480,0]
+[charaMove F -150,0 0.3]
+[charaMove G -430,0 0.3]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk K]
+[charaFace K 5]
+[charaFadein K 0.1 1]
+
+＠紅玉の書
+……完全に囲まれておるぞ！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠丑御前
+あはははははははははははははははは！
+[k]
+
+[messageOff]
+[se ad842]
+[seVolume ad842 0 0.7]
+[fowardEffect bit_talk_thunder_05]
+[wt 0.3]
+[se ad73]
+[charaEffect C bit_talk_quickmove]
+[charaSpecialEffect C erasureReverse 1 0.3]
+[wt 0.9]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+[charaMoveScale B 1.1 0.3]
+[charaMove B 0,10 0.3]
+
+＠ヤマトタケル
+待て！　ライダー！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth D 1]
+[charaDepth E 2]
+[charaDepth F 3]
+[charaDepth G 4]
+[charaDepth H 6]
+[charaDepth I 5]
+[charaDepth J 7]
+
+[se ad1025]
+[charaFace G 11]
+[charaFace H 11]
+[charaFace I 11]
+[charaFace J 11]
+[charaFadein G 0.4 400,0]
+[charaFadein H 0.4 120,0]
+[charaFadein I 0.4 -150,0]
+[charaFadein J 0.4 -430,0]
+[wt 0.2]
+[seStop ad60 0.3]
+[charaMoveScale H 1.1 0.3]
+[charaMove H 120,10 0.3]
+[wt 0.1]
+[charaMoveScale J 1.1 0.3]
+[charaMove J -480,10 0.3]
+[wt 0.1]
+[charaMoveScale G 1.1 0.3]
+[charaMove G 450,10 0.3]
+[wt 0.1]
+[charaMoveScale I 1.1 0.3]
+[charaMove I -150,10 0.3]
+[wt 0.3]
+[charaFace D 11]
+[charaFace E 11]
+[charaFace F 11]
+[charaFadein F 0.4 1]
+[wt 0.15]
+[charaFadein D 0.4 320,0]
+[wt 0.1]
+[seStop ad1025 0.5]
+[charaFadein E 0.4 -280,0]
+[wt 1.0]
+
+？1：襲いかかってくる！
+？2：どうするの伊織！　タケル！
+
+？！
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠宮本伊織
+……ッ！[r]やるしかあるまい！
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_255 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+

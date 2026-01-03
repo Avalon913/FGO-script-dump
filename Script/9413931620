@@ -1,0 +1,1334 @@
+
+＄94-13-93-16-2-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1062001 1 黒姫]
+[charaSet B 1062001 1 黒姫（演出用）]
+[charaSet C 1098314200 1 おみぃさん]
+[charaSet D 1010000 1 エリザベート]
+[charaSet E 1098257310 1 ダ・ヴィンチ]
+[charaSet F 1098257810 1 マシュ]
+[charaSet G 4001000 1 メドゥーサ]
+[charaSet H 5043000 1 アスクレピオス]
+[charaSet I 3057001 1 ビショーネ]
+
+[ifClear 60139307]
+[charaSet K 1098315100 1 チビーネ]
+[flag rbody_1 true]
+
+[ifClear 60139308]
+[charaSet K 1098315000 1 チビーネ]
+[flag rbody_2 true]
+
+[ifClear 60139309]
+[charaSet K 1098314900 1 チビーネ]
+[flag rbody_3 true]
+
+[ifClear 60139310]
+[charaSet K 1098316600 1 チビーネ]
+[flag bbody_1 true]
+
+[ifClear 60139311]
+[charaSet K 1098316700 1 チビーネ]
+[flag bbody_2 true]
+
+[ifClear 60139312]
+[charaSet K 1098316800 1 チビーネ]
+[flag bbody_3 true]
+
+[ifClear 60139313]
+[charaSet K 1098317000 1 チビーネ]
+[flag gbody_1 true]
+
+[ifClear 60139314]
+[charaSet K 1098317100 1 チビーネ]
+[flag gbody_2 true]
+
+[ifClear 60139315]
+[charaSet K 1098317200 1 チビーネ]
+[flag gbody_3 true]
+
+[else]
+[charaSet K 1098315100 1 チビーネ]
+[flag rbody_1 true]
+
+[endIf]
+[ifClear 60139319]
+[charaSet J 1098317600 1 ブレス_炎_重]
+[flag breath_f1 true]
+
+[ifClear 60139320]
+[charaSet J 1098317610 1 ブレス_炎_中]
+[flag breath_f2 true]
+
+[ifClear 60139321]
+[charaSet J 1098317620 1 ブレス_炎_軽]
+[flag breath_f3 true]
+
+
+[ifClear 60139322]
+[charaSet J 1098317700 1 ブレス_氷_重]
+[flag breath_i1 true]
+
+[ifClear 60139323]
+[charaSet J 1098317710 1 ブレス_氷_中]
+[flag breath_i2 true]
+
+[ifClear 60139324]
+[charaSet J 1098317720 1 ブレス_氷_軽]
+[flag breath_i3 true]
+
+
+[ifClear 60139325]
+[charaSet J 1098317800 1 ブレス_毒_重]
+[flag breath_p1 true]
+
+[ifClear 60139326]
+[charaSet J 1098317810 1 ブレス_毒_中]
+[flag breath_p2 true]
+
+[ifClear 60139327]
+[charaSet J 1098317820 1 ブレス_毒_軽]
+[flag breath_p3 true]
+
+
+[else]
+[charaSet J 1098317600 1 ブレス_炎_重]
+[flag breath_f1 true]
+
+[endIf]
+
+[charaSet L 1098314020 1 蛇竜人]
+[charaRollAxis L y 180 0 0]
+[charaSet M 1098314000 1 蛇竜人]
+
+[sceneSet N 10000 1]
+[charaScale N 1.05]
+[sceneSet O 238801 1]
+[sceneSet P 238801 1]
+[sceneSet Q 238801 1]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用2]
+[charaSet U 98115000 1 エフェクト用3]
+
+[charaPut S 2000,2500]
+[charaEffect S bit_talk_10_LowLevel]
+
+[charaPut T 2000,2500]
+[charaEffect T bit_sepia01_depth_fs]
+
+
+[scene 238801]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_92 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠黒姫
+……。[r]……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠おみぃさん
+落ち着いた？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠黒姫
+……はい。[r]申し訳ありません、お見苦しいところを。
+[k]
+
+[charaFace A 3]
+
+＠黒姫
+ご存じのように、私は蛇王ザッハークの手駒として、[r]数多の非道に荷担した身。
+[k]
+
+＠黒姫
+そのような私をお救いいただき、[r]重ね重ね、お礼申し上げます。
+[k]
+
+[messageOff]
+[se ade434]
+[seVolume ade434 0 0.7]
+[wt 0.1]
+[charaMove A 0,-8 0.15]
+[wt 1.2]
+
+？1：（一分の隙もない、完璧な正座と礼[&だ:]……！）
+？2：（シェヘラさんのドゲザといい勝負かも……！）
+？！
+
+＠黒姫
+私の事情は……おおよそは、[r]皆様が悟っておられる通りです。
+[k]
+
+＠黒姫
+私は蛇王がこの世を作り出したとき、[r]蛇の[#縁:えにし]により召喚されたもの。
+[k]
+
+[charaFace A 4]
+
+＠黒姫
+しかし召喚と同時に蛇王の目に留まり[line 3]
+[k]
+
+＠黒姫
+[#彼:か]の者と蛇毒の契約を結ばせられた状態で、[r]この世に降り立つこととなりました。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠エリザベート
+王様のくせにいきなり契約で縛るとか、[r]ずいぶんな小物ムーブしてくれるじゃない。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk E]
+[charaFace E 22]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+契約か……そう言えばザッハークには[r]宣言書についてのエピソードがあったね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠マシュ
+はい。『ザッハークは善で、真実を語り、正義を為した』[r]という宣言書に署名するよう、
+[k]
+
+＠マシュ
+蛇王は臣下に求めた、とあります。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠エリザベート
+ええ……？　毎日生贄をバクバクしてたのに、[r]後世には自分のいい伝説を残そうとしたってこと？
+[k]
+
+[charaFace D 4]
+
+＠エリザベート
+ちょっとダサすぎじゃない……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+＠メドゥーサ
+愚王はそういう名誉欲に囚われるものでしょう。[r]どうあれ、そういう逸話があるのであれば……
+[k]
+
+[charaFace G 13]
+
+＠メドゥーサ
+蛇の呪毒による契約は、ザッハークのスキル、[r]あるいは宝具の一つであった可能性がありますね。
+[k]
+
+＠メドゥーサ
+抵抗できずに身を縛られたのも[r]無理からぬことです。
+[k]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠アスクレピオス
+ククク。だが、しかるべき手順で、[r]適切な治療を行えば、治せる。
+[k]
+
+＠アスクレピオス
+それが医術の力というものだ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 19]
+[charaFadein I 0.1 1]
+
+＠ビショーネ
+ほ、本当に凄いと思います、医術！[r]心の底から尊敬です！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠黒姫
+避けようのない、[r]強制的な契約だったとはいえ。
+[k]
+
+＠黒姫
+自ら治める土地の民を、贄として喰らう無法。[r]それを先導する役目を任じられたのであれば、
+[k]
+
+＠黒姫
+速やかに自刃して果てるが[r]道の一つではあったのでしょう。
+[k]
+
+[charaFace A 15]
+
+＠黒姫
+ですが[line 3][r]ザッハークもまた、蛇。
+[k]
+
+＠黒姫
+強制されたものとはいえ、[r]私が愛すべき蛇の一匹でありました。
+[k]
+
+[charaFace A 7]
+
+＠黒姫
+ですから、私は。[r]愚かにも……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠おみぃさん
+それは、愚かとは違うんじゃないかい。[r]わかんないけど、さ。
+[k]
+
+[charaFace C 15]
+
+＠おみぃさん
+アンタはアンタらしく、そのとき目の前にあった、[r]大事な何かを重んじた。そういうことだろ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠黒姫
+おみぃさま……。
+[k]
+
+[charaFace A 14]
+
+＠黒姫
+……。[r]……。
+[k]
+
+[charaFace A 3]
+
+＠黒姫
+私の事情は、そのようなところです。
+[k]
+
+＠黒姫
+よろしければ、貴方がたの事情を[r]お聞かせ願えませぬか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠エリザベート
+いいわよ！　まずはこの[#私:アタシ]、[r]大勇者エリちゃんがどうやって目覚めたか、から[line 3]
+[k]
+
+？1：その話は面白すぎるから
+？2：もうちょっと後にとっておいてね
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+うん。それじゃあまずは、[r]カルデアについて軽く説明しよう……
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgmStop BGM_EVENT_92 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[charaPut S 2000,2500]
+
+[wt 1.0]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[bgm BGM_EVENT_147 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠黒姫
+……この蛇の世は、特異点。[r]その[#歪:ゆが]みを正さねばならぬ、と。
+[k]
+
+＠黒姫
+なるほど、左様なことが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠おみぃさん
+アタシはアンタと同じく、どういうわけか[r]そこに[#喚:よ]ばれちまった蛇女房ってだけさ。
+[k]
+
+[charaFace C 4]
+
+＠おみぃさん
+実はおみぃってのも、なんとなくそんな感じで[r]呼ばれてたことがあったような……なかったような……？
+[k]
+
+[charaFace C 7]
+
+＠おみぃさん
+ってだけだから、ミセスでもなんでも[r]まあ好きに呼んでくれりゃいいさね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth N 2]
+[charaDepth F 3]
+[charaDepth S 8]
+
+[charaPut N 1]
+[charaFadeTime N 0.2 0.5]
+
+[charaPut S 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠マシュ
+（蛇女房の物語は日本全国にあるようですが、）
+[k]
+
+＠マシュ
+（特に滋賀県にある[#三井寺:み い で ら]……[r]　にまつわるものが有名なようです）
+[k]
+
+＠マシュ
+（ひょっとして、そのあたりの関係でしょうか？）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout N 0.2]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaDepth I 3]
+[charaDepth K 2]
+
+
+[charaTalk I]
+[charaFace I 19]
+[charaFace K 0]
+[charaFadein I 0.1 150,0]
+[charaFadein K 0.1 -150,-50]
+
+＠ビショーネ
+え、えへへ。実はわたしもここ出身で、縁があって[r]カルデアに仮入社させてもらってるものです！
+[k]
+
+＠ビショーネ
+新人ですけど、安心・安全・安定な[r]社会人生活目指して頑張っています！
+[k]
+
+＠ビショーネ
+そしてこっちはよくわかんないですけど[r]ドラゴン形態のちっちゃなわたし！
+[k]
+
+[charaTalk K]
+[charaFace K 2]
+
+＠チビーネ
+き[charaMoveReturn K -150,-53 0.3]ゅぴっ！
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠黒姫
+まあ。見かけて気になってはいましたが、[r][#不可思議:ふ　か　し　ぎ]なこともあるもの。
+[k]
+
+[charaFace A 0]
+
+＠黒姫
+おいで、おいで……？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth A 2]
+[charaDepth O 3]
+[charaDepth C 4]
+[charaDepth I 4]
+[charaDepth K 5]
+[charaDepth J 5]
+
+[charaScale O 1.2]
+
+[charaFace I 1]
+[charaFace K 0]
+[charaFadein I 0.7 150,0]
+[charaFadein K 0.7 -150,-100]
+[charaFadein O 0.7 -100,-260]
+[wt 1.1]
+
+[charaMoveReturn I 150,-7 0.4]
+[wt 0.9]
+
+[branch lblBody13 rbody_1 true]
+[branch lblBody13 bbody_1 true]
+[branch lblBody13 gbody_1 true]
+[branch lblBody13 rbody_2 true]
+[branch lblBody13 bbody_2 true]
+[branch lblBody13 gbody_2 true]
+
+[branch lblBody02 rbody_3 true]
+[branch lblBody02 bbody_3 true]
+[branch lblBody02 gbody_3 true]
+
+[label lblBody13]
+
+[cueSe SE_22 22_ad1210]
+[charaMove K -300,-100 0.4]
+[charaFadeout K 0.4]
+[cueSeVolume 22_ad1210 1.2 0.4]
+[wt 0.8]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout I 0.1]
+
+[charaPut O 100,-260]
+[charaPut A -175,0]
+
+[charaDepth A 4]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[cueSeVolume 22_ad1210 0.6 1.0]
+[wt 0.4]
+
+[charaFace K 0]
+[charaFadein K 0.4 350,-100]
+[charaMove K 150,-100 0.4]
+[wt 0.2]
+[cueSeStop 22_ad1210 0.4]
+[wt 0.9]
+
+[branch lblConf01]
+[label lblBody02]
+
+[cueSe SE_25 25_ade1147]
+[charaMove K -300,-100 0.4]
+[charaFadeout K 0.4]
+[cueSeVolume 25_ade1147 1.2 0.2]
+[wt 0.8]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout I 0.1]
+
+[charaPut O 100,-260]
+[charaPut A -175,0]
+
+[charaDepth A 4]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[cueSeVolume 25_ade1147 0.6 1.0]
+[wt 0.4]
+
+[charaFace K 0]
+[charaFadein K 0.4 340,-100]
+[charaMove K 140,-100 0.4]
+[wt 0.2]
+[cueSeStop 25_ade1147 0.4]
+[wt 0.9]
+
+[branch lblConf01]
+
+[label lblConf01]
+
+[se ad60]
+[charaMove A -150,0 0.4]
+[wt 0.4]
+[seStop ad60 0.2]
+[wt 0.4]
+
+[cueSe SE_24 24_ade1008]
+[charaMoveReturn A -140,0 0.5]
+[wt 0.2]
+[charaFace K 2]
+[charaShake K 0.02 2 2 0.5]
+[wt 1.0]
+[cueSeStop 24_ade1008 0.4]
+
+[charaTalk on]
+[charaFace A 11]
+
+＠黒姫
+ふふ、可愛らしいものですね。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMoveEase A -300,0 0.5 easeOutSine]
+[charaMoveEase K 0,-100 0.5 easeOutSine]
+[charaMoveEase O -50,-260 0.5 easeOutSine]
+[wt 0.65]
+
+[se ad60]
+[charaFace C 6]
+[charaFadein C 0.4 330,0]
+[charaMove C 300,0 0.4]
+[wt 0.4]
+[seStop ad60 0.2]
+[wt 0.4]
+
+[charaTalk on]
+＠おみぃさん
+だろ？　このへんの鱗の[r]撫で心地がいいんだよ。ほーれほーれ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[cueSe SE_24 24_ade1008]
+[charaMoveReturn C 290,0 0.4]
+[wt 0.2]
+[charaShake K 0.02 2 2 0.8]
+[wt 0.2]
+[charaMoveReturn C 290,0 0.4]
+[wt 0.6]
+[cueSeStop 24_ade1008 0.4]
+[wt 0.6]
+
+[subCameraOn 1]
+[charaLayer I sub #A]
+[charaLayer P sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask05 5 0,157,191,255]
+
+[charaDepth P 2]
+[charaDepth I 3]
+
+[charaScale I 1.2]
+[charaScale P 1.2]
+[charaFace I 19]
+[charaFadein I 0 0,225]
+[charaFadein P 0 -650,0]
+
+[charaTalk on]
+[charaTalk I]
+[subRenderFadeinFSSideR #A 0.3 350,-150]
+[subRenderMoveEaseFSSideR #A 350,-250 0.4 easeOutSine]
+[wt 0.5]
+
+＠ビショーネ
+お[charaShake I 0.02 3 3 0.4]ひっ、うふっ、二人で同時に、とか、[r]うへへへ？　まずい、ヨダレが……。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadeout #A 0.3]
+[subRenderMoveEaseFSSideR #A 350,-350 0.5 easeOutSine]
+[wt 0.3]
+
+[charaFadeout P 0]
+[charaFadeout I 0]
+[subCameraOff]
+[charaLayer I normal]
+[charaLayer P normal]
+[charaScale I 1.0]
+[charaScale P 1.0]
+[wt 0.9]
+
+？1：それで[line 3]お二人は、これからどうします？
+？！
+
+[bgmStop BGM_EVENT_147 1.5]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 13]
+[charaFace C 0]
+[charaFace K 0]
+＠黒姫
+そうでした。可愛らしい子蛇を[r]愛でている場合ではありませんでしたね。
+[k]
+
+[messageOff]
+[charaDepth P 6]
+[charaDepth B 7]
+
+[charaScale B 1.2]
+[charaScale P 1.2]
+[charaTalk A,B]
+[charaFace B 13]
+[charaFadein B 0.7 1]
+[charaFadein P 0.7 0,-260]
+[wt 0.7]
+
+[charaFadeout O 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[wt 0.2]
+
+[se ad748]
+[wt 0.1]
+[charaMoveReturn B 0,-7 0.65]
+[wt 1.6]
+
+[charaMoveScale B 1.3 45.0]
+[charaMoveScale P 1.3 45.0]
+[charaMove B 0,10 45.0]
+[charaMove P 0,-300 45.0]
+
+[bgm BGM_EVENT_141 0.1]
+
+[charaFace B 3]
+
+＠B：黒姫
+この蛇の世に私が[#喚:よ]ばれた理由は、[r]今もって皆目見当もつきませぬ。
+[k]
+
+＠B：黒姫
+ですが、どうあれ。
+[k]
+
+＠B：黒姫
+今の私は、蛇王の非道を許してはならない、[r]と感じています。
+[k]
+
+[charaFace B 7]
+
+＠B：黒姫
+……私は、[#彼:か]の者の[#走狗:そうく]であった身。
+[k]
+
+[charaFace B 3]
+
+＠B：黒姫
+それでも良いと仰っていただけるのであれば、[r]お許しいただけるのであれば[line 3]
+[k]
+
+＠B：黒姫
+共に[#彼:か]の蛇王を討ち果たすべく、[r]この先、同道させていただきたく。
+[k]
+
+[charaFace B 7]
+
+＠B：黒姫
+いえ、心情的には勿論お[#厭:いや]でしょうし、
+[k]
+
+＠B：黒姫
+再び私が[line 3]あるいはさらに強制的な術などにより[r]操られる危険性も[#孕:はら]んでおりましょう。
+[k]
+
+[charaFace B 15]
+
+＠B：黒姫
+その際は[#潔:いさぎよ]く自害する覚悟ではありますが、[r]それが不可能な際には、どうぞ遠慮無くこの首を……
+[k]
+
+[bgmStop BGM_EVENT_141 1.5]
+
+？1：はい、一緒に行きましょう
+？！
+
+[charaDepth G 2]
+[charaFace G 1]
+[charaFadein G 0 1]
+
+[charaFace B 9]
+
+＠B：黒姫
+おや？
+[k]
+
+＠B：黒姫
+……聞き違いでしょうか。[r]いともあっさり許されたような……
+[k]
+
+？1：頼りになる味方が増えて嬉しいです
+？2：これからもよろしくお願いします！
+？！
+
+[messageOff]
+[charaTalk B,G]
+[charaFadeout B 0.7]
+[charaFadeout P 0.7]
+[wt 1.1]
+
+[charaSet B 1062001 1 黒姫（演出用）]
+[sceneSet P 238801 1]
+
+[bgm BGM_EVENT_116 0.1]
+
+＠メドゥーサ
+こういう[#人間:ひ　と]なのですよ、我らがマスターは。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.15]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.4]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠おみぃさん
+黒子ちゃんも行くとなっちゃあ、[r]アタシもついてくしかないね。
+[k]
+
+[charaFace C 1]
+
+＠おみぃさん
+もうアタシを好物にする蛇は来ないだろうけど、[r]万一ってことがあるし。
+[k]
+
+＠おみぃさん
+いや、蛇王サマ本人が来る可能性もあるのかな。
+[k]
+
+[charaFace C 11]
+
+＠おみぃさん
+そんとき……アタシのほうに来るのかな、[r]それとも力を渡したそっちに行くのかな、
+[k]
+
+
+＠おみぃさん
+なーんて遠くでやきもきするのは……[r]なんか、もう、[#懲:こ]りたんだ。
+[k]
+
+[charaFace C 7]
+
+＠おみぃさん
+心臓に悪いっていうか？[r]だからいっそ、一緒にいるしかないなって。
+[k]
+
+？1：おみぃさんもいてくれたら嬉しいです
+？2：是非よろしくお願いします
+？！
+
+[charaFace C 2]
+
+＠おみぃさん
+ありゃま。[r]こっちもあっさりだ。
+[k]
+
+[charaFace C 7]
+
+＠おみぃさん
+みゃはは、ホントにいいの？
+[k]
+
+＠おみぃさん
+戦う力なんてないから、[r]迷惑をかけちまうかもしれないけど。
+[k]
+
+＠おみぃさん
+休憩のときに[r]料理を振る舞うぐらいがせいぜいさね。
+[k]
+
+[charaFace C 6]
+
+＠おみぃさん
+あ、でも今んトコ、[r]残りの目でダシを取るつもりはないよ。
+[k]
+
+＠おみぃさん
+さすがにコッチまでなくしちまったら[r]色々不便だからね。
+[k]
+
+？1：全然ＯＫです！
+？2：普通の料理でも、あの味ならパワーが貰えます！
+？！
+
+[charaFace C 7]
+
+＠おみぃさん
+そうかい、そうかい。
+[k]
+
+＠おみぃさん
+んなら、隣の若奥さんとして、[r]腕によりをかけた差し入れを作っちまおうかね。
+[k]
+
+[messageOff]
+[charaDepth N 2]
+[charaDepth C 3]
+[charaDepth O 4]
+[charaDepth L 5]
+
+[charaFadein O 0.3 0,-260]
+[charaMoveEase O 100,-260 0.5 easeOutSine]
+[wt 0.7]
+
+
+[se ad987]
+[charaTalk L]
+[charaFace L 0]
+[charaFadeinFSSideL L 0.4 -380,0]
+[charaMoveFSSideL L -330,0 0.4]
+[wt 0.2]
+[seStop ad987 0.4]
+[wt 0.8]
+
+＠蛇竜人
+ん？　通りすがりだけど、[r]差し入れって言った？
+[k]
+
+[charaFace L 2]
+＠蛇竜人
+建物の片付けとかしてたら腹が減っちゃったよ。[r]あのトンネルで飲んだ甘酒、美味しかったなあ。
+[k]
+
+[messageOff]
+[charaTalk L,C]
+[charaFace C 12]
+[charaFadeout L 0.5]
+[charaFadeout O 0.5]
+[wt 1.4]
+
+[cueSe SE_22 22_ad1177]
+[wt 0.1]
+[fadeout white 0.7]
+[bgm BGM_EVENT_116 0.7 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+
+[scene 240900]
+
+[pictureFrame cut063_cinema]
+
+[charaPut T 1]
+
+[charaTalk M]
+[charaFace M 2]
+[charaFadein M 0.1 0,-50]
+[wt 0.5]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.4]
+
+＠M：おみぃさん
+（そう言えば、余りをこの子たちに振る舞って……）
+[k]
+
+[messageOff]
+[fadeout white 0.7]
+[wait fade]
+
+[charaPut T 2000,2500]
+[charaFadeout M 0.1]
+
+[pictureFrame]
+
+[scene 238801]
+
+[charaPut N 1]
+[charaFadeTime N 0.1 0.5]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[fadein white 0.7]
+[bgm BGM_EVENT_116 0.7 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaFace C 11]
+
+＠おみぃさん
+（薄い部分だったから、[r]　あんまり力は移らないような気はしてたけど）
+[k]
+
+[charaFace C 0]
+
+＠おみぃさん
+（それでも、ちょっとはあった）
+[k]
+
+＠おみぃさん
+（だからここの蛇としては珍しく、成長して……[r]　前に進んで、この町まで来ちまった、のかねえ？）
+[k]
+
+[charaFadeout N 0.2]
+
+[charaFace C 15]
+
+＠おみぃさん
+この子たちにも迷惑をかけたかもしれないし。[r]お詫びに、最後に料理を振る舞おうかね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠蛇竜人
+最後？　どっか行っちまうのか？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠おみぃさん
+ああ、そうさ。
+[k]
+
+＠おみぃさん
+……アタシたちもそれを食べてから[r]出発するってことで、どうだい？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エリザベート
+いいんじゃないかしら。
+[k]
+
+＠エリザベート
+いろいろあって勇者のＭＰもガス欠よ。[r]休憩して回復したいわ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+＠蛇竜人
+うひょー、やったぜ！　楽しみ！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+
+＠おみぃさん
+材料が違うから、あんときほどパワーが[r]出るとは限らないよ。味は保証するけど。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠蛇竜人
+[#美味:う　ま]ければなんでもいいよ！[r]みんな呼んでくるな！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠おみぃさん
+おっと、そうそう。
+[k]
+
+[charaFace C 15]
+
+＠おみぃさん
+せっかくだから、アンタと同じ毛の長い竜で、[r]また短く刈りたいってやつがいたら呼んでくればいいさ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 8]
+[charaFadein L 0.1 1]
+
+＠蛇竜人
+[FFFFFF]？[-]　[wt 0.6]…[charaFace L 4][messageShake 0.05 4 3 0.3]…あっ！　[wt 0.6]あんた、そうか、[r]散髪屋さんはあんただったのか！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠黒姫
+っ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠蛇竜人
+なーんだ、そうかそうか！
+[k]
+
+[charaFace L 2]
+＠蛇竜人
+いつも捕食竜と一緒にいたからおっかないのかなと[r]思ってたけど、別にそんなことなかったな！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠黒姫
+……怖くは、ないのですか？[r]私が。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth A 2]
+[charaDepth O 3]
+[charaDepth L 4]
+
+[charaScale L 1.2]
+[charaScale O 1.2]
+[charaFace L 0]
+[charaFadein L 0.6 -200,0]
+[charaFadein O 0.6 100,-260]
+[wt 0.6]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+＠蛇竜人
+なんで？　俺たちを食べてたのは捕食竜で、[r]あんたじゃないだろ？
+[k]
+
+[messageOff]
+[charaDepth P 5]
+[charaDepth A 6]
+
+[charaScale A 1.2]
+[charaScale P 1.2]
+
+[charaFace A 9]
+[charaFadein A 0.6 200,0]
+[charaFadein P 0.6 -100,-260]
+[wt 0.6]
+
+[charaScale L 1.0]
+[charaPut L 1]
+[charaFace L 0]
+[charaFadeout O 0.1]
+[wt 1.4]
+
+[charaFadeout A 0.6]
+[charaFadeout P 0.6]
+[wt 0.8]
+
+[charaTalk on]
+＠蛇竜人
+そう言えば、ちょっとここの毛、もう少し短くても[r]カッコいいかなって思えてきたんだ。
+[k]
+
+[charaFace L 2]
+＠蛇竜人
+悪いけどあとで調整してくれるかい？[r]頼むよ、それじゃなー！
+[k]
+
+[messageOff]
+[cueSe SE_25 25_ade1158]
+[se ad132]
+[charaFadeout L 0.7]
+[cueSeStop 25_ade1158 1.6]
+[wt 2.4]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠黒姫
+どのような理不尽があろうとも。
+[k]
+
+＠黒姫
+[#逞:たくま]しく……生きておられるのですね、[r]この世の[#蛇:かた]たちは。
+[k]
+
+[charaFace A 7]
+
+＠黒姫
+私は、見ようとはしていませんでした。[r]怖くて、目を逸らしておりました……。
+[k]
+
+？1：だったら、今はもう大丈夫ですね
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠おみぃさん
+そうそう。今までできなかったぶん、[r]しっかり見て、思ってあげたらいいさ。
+[k]
+
+[charaFace C 7]
+
+＠おみぃさん
+[line 3]可愛い[#蛇:コ]たちだなあ、ってさ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠黒姫
+……はい！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_116 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

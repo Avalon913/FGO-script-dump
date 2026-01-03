@@ -1,0 +1,557 @@
+
+
+
+
+
+
+
+
+
+＄04-00-05-14-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098239320 1 カドック]
+[charaSet B 1098321000 1 メタトロン・ジャンヌ]
+[charaSet C 28010001 1 ダンテ]
+[charaSet D 1098321400 1 モリアーティ]
+
+[charaSet E 6008000 1 クレオパトラ]
+[charaSet F 98014000 1 罪兵士]
+[charaSet G 98014000 1 罪兵士1]
+[charaSet H 98014000 1 罪兵士2]
+[charaSet I 98014000 1 罪兵士3]
+[charaScale G 0.8]
+[charaScale H 0.8]
+[charaScale I 0.8]
+
+[sceneSet J 247200 1]
+[charaScale J 1.1]
+[sceneSet K 247200 1]
+[charaScale K 1.1]
+
+[charaSet L 6008000 1 クレオパトラ_サブレイヤー用]
+[sceneSet M 247200 1]
+[charaScale M 1.1]
+
+[charaSet N 6008000 1 クレオパトラ_拡大用]
+[charaScale N 1.2]
+[sceneSet O 247200 1]
+[charaScale O 1.2]
+
+[charaSet P 98115000 1 エフェクト用ダミー]
+[charaEffect P bit_talk_41_fs]
+[charaPut P 2000,2000]
+
+[sceneSet Q 10000 1]
+[charaScale Q 1.1]
+
+[subCameraOn 2]
+[charaLayer J sub #A]
+[charaLayer G sub #A]
+[charaLayer H sub #A]
+[charaLayer I sub #A]
+
+[charaLayer M sub #B]
+[charaLayer L sub #B]
+[subCameraFilter #A maskEdge cut359_mask04 3 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask15 5 255,255,255,255]
+[subRenderScale #A 1.01]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth G 2]
+[charaDepth I 3]
+[charaDepth H 4]
+[charaFace G 1]
+[charaFadein G 0.1 -300,200]
+[charaFace H 1]
+[charaFadein H 0.1 0,200]
+[charaFace I 1]
+[charaFadein I 0.1 300,200]
+[charaFadein J 0.1 0,100]
+
+[charaDepth M 1]
+[charaDepth L 2]
+[charaFace L 0]
+[charaFadeinFSL L 0.1 -50,200]
+[charaFadein M 0.1 250,0]
+
+[charaDepth Q 1]
+[charaDepth A 2]
+[charaDepth K 3]
+[charaDepth C 4]
+[charaDepth O 5]
+[charaDepth N 6]
+
+[scene 250700]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_124 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠カドック
+……途中、天から雷降ってきたな……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠メタトロン・ジャンヌ
+多分、管理者からの罰だろうねー。
+[k]
+
+[charaFace B 3]
+
+＠メタトロン・ジャンヌ
+手伝ってくれた、というよりは[r]適当にブチ込んだ感じだけど。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠モリアーティ
+こちらには落とさなかった。[r]敵意はまだ、ないようだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カドック
+まだ、な。
+[k]
+
+＠カドック
+『天秤証書』を手に入れたい、という申し出に[r]どう反応するか。
+[k]
+
+＠カドック
+……それが問題だ。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_124 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 247200]
+[pictureFrame cut063_cinema]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_MAP_123 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠クレオパトラ
+いつもの通り、[#私:わたくし]は美しい。[r]そうですわね？
+[k]
+
+[messageOff]
+[charaTalk G,H,I]
+[subRenderFadein #A 0.3 30,-435]
+[subRenderMoveEase #A 0,-435 1.0 easeOutQuart]
+[wt 1.0]
+
+＠罪兵士たち=spot[G,H,I]
+その通りです、クレオパトラ様！
+[k]
+
+[messageOff]
+[subRenderMoveEase #A -30,-435 1.0 easeOutQuart]
+[subRenderFadeout #A 0.5]
+[wt 0.7]
+
+[charaTalk E]
+[charaFace E 1]
+＠クレオパトラ
+よろしい！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+＠罪兵士
+クレオパトラ様。[r]ダンテ・アリギエーリ一行が謁見に参りました。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠クレオパトラ
+ああ、さっきのはやはり……。[r]いいでしょう、通しなさい。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_MAP_123 1.5 0.4]
+[wait fade]
+
+[charaFadeout E 0.1]
+[pictureFrame]
+[charaFadein K 0.1 -50,-250]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_MAP_123 1.5 1.0]
+[wait fade]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+……第二圏管理者、クレオパトラ。
+[k]
+
+[messageOff]
+[charaTalk L,C]
+[subRenderFadein #B 0.3 -500,-220]
+[subRenderMoveEase #B -250,-220 1.0 easeOutQuad]
+[charaMoveEaseFSR C 250,0 1.0 easeOutQuad]
+[charaMoveEaseFSR K 50,-250 1.0 easeOutQuad]
+[wt 1.5]
+
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠L：クレオパトラ
+ダンテ。久しぶり、というほど時は流れていませんね。
+[k]
+
+＠L：クレオパトラ
+第二圏を通過し、第三圏から第四圏へ……[r]というのが先の目的だったはずですが。
+[k]
+
+＠L：クレオパトラ
+依頼とやらは果たしたのですか？
+[k]
+
+[charaTalk C]
+[charaFace C 1]
+＠ダンテ
+……ええ、そちらの依頼は……。[r]しかし、新たな目的が設定されまして。
+[k]
+
+[charaTalk L]
+[charaFace L 0]
+＠L：クレオパトラ
+ふむ？
+[k]
+
+[charaTalk C]
+[charaFace C 7]
+＠ダンテ
+[line 3]『天秤証書』を、お譲り願えませんか。
+[k]
+
+[charaTalk L]
+[charaFace L 5]
+＠L：クレオパトラ
+……。[r]……ふむ。
+[k]
+
+＠L：クレオパトラ
+どうやら一枚は所有しているようですね。[r]……第四圏の管理者からですか。
+[k]
+
+＠L：クレオパトラ
+盗みましたか？
+[k]
+
+[charaTalk C]
+[charaFace C 0]
+＠ダンテ
+……いえ。正当に譲り受けましたが……。
+[k]
+
+[messageOff]
+[charaTalk A,C]
+[subRenderFadeout #B 0.5]
+[charaFadeout C 0.5]
+[charaFadeout K 0.5]
+[wt 0.7]
+
+＠カドック
+……。[r]……。
+[k]
+
+？1：（カドック、これ……）
+？！
+
+[charaFace A 2]
+
+＠カドック
+（わかってる。[r]　……ちょっと怒ってるな、死にそうだ）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠クレオパトラ
+……後でカレンに連絡しなければいけませんが、[r]どうやら本当のようですね。
+[k]
+
+＠クレオパトラ
+では、この【色欲】の圏でも『天秤証書』を求めると。[r]いいでしょう。ですが……。
+[k]
+
+？1：ですが？
+？！
+
+[bgmStop BGM_MAP_123 1.5]
+
+[charaFace E 2]
+
+＠クレオパトラ
+兵士たち。少々[#個人的:プライベート]な会話をします。[r]立ち去るように。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠罪兵士
+はっ。
+[k]
+
+[messageOff]
+[se ade428]
+[seStop ade428 1.0]
+[charaFadeout F 0.5]
+[wt 1.5]
+
+[bgm BGM_MAP_115 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠クレオパトラ
+……[#私:わたくし]は第二圏の管理者として、[r]罪人たちに美を求めさせています。
+[k]
+
+＠クレオパトラ
+美しいが故に愛を求め、[r]愛を求めるが故にこの地獄では苦しみ続ける。
+[k]
+
+[charaFace E 4]
+
+＠クレオパトラ
+……そんな[#私:わたくし]もまた、[r][#裁判長:メ タ ト ロ ン]の基準からすれば罪人です。
+[k]
+
+＠クレオパトラ
+たとえ、[#裁定者:ル ー ラ ー]としての権能を[r]最大限与えられているとしても。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+[charaPut Q 0,-200]
+[charaFadeTime Q 0.2 0.5]
+
+＠カドック
+（さらっと言ってるが……それつまり、サーヴァントが[r]　サーヴァントのクラスを変更したってことだよな）
+[k]
+
+[charaFace A 4]
+
+＠カドック
+（滅茶苦茶な能力だぞ……。しかも僕が思うに、[r]　多分クレオパトラはルーラーとしてのクラス資格はない）
+[k]
+
+[charaFace A 10]
+
+＠カドック
+（つまり……。クラス資格がないサーヴァントにも、[r]　強引にルーラークラスを付与できるってことか……）
+[k]
+
+[charaFadeout Q 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠クレオパトラ
+[line 3]ですが、[#私:わたくし]には生前、[r]心を通わせた殿方がいるのです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+……はぁ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠クレオパトラ
+別に愛を交わすとか、そういう真似はいたしません。[r]ただ、一目でいいのでその姿を見てみたい、と。
+[k]
+
+＠クレオパトラ
+……その苦しみこそが、[#私:わたくし]にとっての[r]罰ともなるのです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+……愛した人がいるが、その方と心を通わすことが[r]できない……なるほど、確かにそれは罰です……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠クレオパトラ
+ですが。まあ、その。
+[k]
+
+＠クレオパトラ
+意図的に罪人を忌避するというのもまた、[r]公平性に欠けるというもの。
+[k]
+
+＠クレオパトラ
+せめて一度なり、[r]その姿を見ておくべきかと思いまして[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_115 1.2]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+フフ、なるほど……。[r]それで、心を通わせた殿方とは一体……？
+[k]
+
+
+[messageOff]
+[se ad186]
+[charaTalk off]
+[charaFace N 2]
+[charaFadein N 0.2 1]
+[charaFadein O 0.2 0,-250]
+[charaPut P 1]
+[wt 0.2]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+[charaFace C 19]
+
+＠クレオパトラ
+それはもちろん。[r][line 3]カエサル様です！
+[k]
+
+[messageOff]
+[charaPut P 2000,2000]
+[charaEffectStop P bit_talk_41_fs]
+[charaFadeout N 0.5]
+[charaFadeout O 0.5]
+[wt 0.7]
+
+＠ダンテ
+……なるほど……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠モリアーティ
+……そうか、カエサルか……。[wt 0.7][charaFace D 7][r]……ちょっと前まで、同行してたじゃん！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠クレオパトラ
+……さ、
+[k]
+
+＠クレオパトラ
+捜してきていただけないかしら！！
+[k]
+
+？1：（楽な任務になりそう……）
+？！
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_HALLOWEEN_2021_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

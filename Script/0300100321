@@ -1,0 +1,251 @@
+
+＄03-00-10-03-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098216010 1 バーゲスト]
+[charaSet B 1050000 1 バーゲスト（演出用）]
+[charaScale B 1.03]
+
+
+
+[charaSet M 1098210410 1 モース]
+[charaSet N 1098210410 1 モース]
+[charaSet O 1098210410 1 モース]
+[charaSet P 1098210410 1 モース]
+[charaSet Q 1098210410 1 モース]
+
+[charaSet T 98115000 1 エフェクト用]
+
+
+[scene 120401]
+
+[bgm BGM_EVENT_69 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.4 0,0]
+[charaShake A 0.05 1 1 0.7]
+[wt 1.2]
+[charaMove A 0,-10 0.4]
+[cueSe SE_21 21_ad1119]
+[wt 0.3]
+[seStop 21_ad1119 0.3]
+[wt 0.5]
+
+＠バーゲスト
+……どういう、事だ……視界が、赤い……[r]……目にモースの毒でも、入ったのか……
+[k]
+
+＠バーゲスト
+……よく、見えない……[r]夜の中にいるようだ、が……
+[k]
+
+＠バーゲスト
+……よし。今ので、最後、だ。[r]手こずったが、これで、円卓軍の人間たち、も……
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_69 1.0 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 120302]
+[wt 1.0]
+
+[bgm BGM_EVENT_69 1.0 1.0]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[effect bit_talk_35]
+[se ad240]
+[wt 1.0]
+
+[fowardEffect bit_talk_blood_splash]
+[se ad863]
+[wt 2.0]
+
+[fowardEffectDestroy bit_talk_blood_splash]
+[effectDestroy bit_talk_35]
+
+[charaTalk off]
+
+
+
+
+
+[charaDepth M 9]
+[charaDepth N 8]
+[charaDepth O 7]
+[charaDepth P 6]
+[charaDepth Q 5]
+
+[charaFace M 0]
+[charaFace N 0]
+[charaFace O 0]
+[charaFace P 0]
+[charaFace Q 0]
+
+[cueSe SE_21 21_ad1083]
+[seVolume 21_ad1083 0 0.5]
+[se ad638]
+[seVolume ad638 0 0.5]
+[charaFadein M 0.4 1]
+[charaFadein N 0.4 -225,0]
+[charaFadein O 0.4 225,0]
+[charaFadein P 0.4 -450,0]
+[charaFadein Q 0.4 450,0]
+[wt 0.7]
+[cueSe SE_21 21_ad1073]
+[wt 3.0]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+
+＠円卓軍の兵士
+……………………。
+[k]
+
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+＠バーゲスト
+あ……あ、あ……[wt 0.8][messageShake 0.04 4 3 0.7][r]あああああああああああああああ！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgm BGM_EVENT_69 0.5 0.4]
+[wait fade]
+
+[se ad678]
+[seVolume ad678 0 0.7]
+
+[charaFadeout A 0.1]
+[scene 10000]
+
+[charaSet A 1050000 1 バーゲスト]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[se ad171]
+[wt 0.2]
+[cueSe SE_21 21_ad1125]
+[wt 0.6]
+
+[cueSe Battle bac7]
+[wt 0.3]
+[cueSe Servants_102800 bac658]
+[wt 1.0]
+
+[cueSe Battle bac137]
+[wt 0.3]
+[se ad240]
+[wt 0.8]
+
+[cueSe Servants_102800 bac657]
+[wt 0.3]
+[se ad863]
+[wt 1.0]
+
+[fadeout black 0.5]
+[wait fade]
+
+[scene 120302]
+[wt 0.2]
+
+[bgm BGM_EVENT_69 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠バーゲスト
+[line 3]すまない。[r]私の力が足りず、すまない……
+[k]
+
+＠バーゲスト
+……城の外に逃げろ、など……[r]……何を、偉そうに[line 3]！
+[k]
+
+＠バーゲスト
+……だが、他にどんな道があった……？
+[k]
+
+＠バーゲスト
+中にいても外に出ても、[r]どうあれ死ぬしかなかったのなら……
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_69 3.0]
+
+[charaTalk off]
+[charaDepth A 5]
+[charaDepth B 6]
+
+[se ad231]
+[charaFace B 18]
+[charaFadein B 0.1 0,5]
+
+[charaFadeout B 1.1]
+[wt 1.6]
+
+[charaTalk on]
+[charaFace A 18]
+＠バーゲスト
+いっそ[line 3][r]みな、食べてしまえば、良かったのか。
+[k]
+
+＠バーゲスト
+弱き者は、強き者の糧、に。[r]強き者は、弱き者を、守る。
+[k]
+
+＠バーゲスト
+[line 3]そうだ。
+[k]
+
+＠バーゲスト
+ブリテンは……もう終わりだと、しても……[r]まだ、守りたいものが、残っている……
+[k]
+
+＠バーゲスト
+……私は、行かなければ。[r]ここで、共に眠ってやれずに、すまない。
+[k]
+
+＠バーゲスト
+マンチェスター……マンチェスターに……[r]私は、あの街の、領主として……
+[k]
+
+＠バーゲスト
+マンチェスターに住む者たちを、[r]守らなければ[line 3]
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

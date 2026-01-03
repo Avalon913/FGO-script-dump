@@ -1,0 +1,417 @@
+
+＄94-14-96-07-1-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 1098112320 1 宣伝マン]
+[charaSet B 6051001 1 メイドイン彦斎]
+[charaSet C 3061000 1 原田左之助]
+[charaSet D 9018002 1 マガツ謙信ノカミ]
+[charaSet E 4052002 1 マガツ信玄ノカミ]
+[charaSet F 1098333800 1 松永弾正]
+[charaScale F 1.2]
+
+[charaSet H 9018002 1 マガツ謙信ノカミ（サブレイヤー用）]
+[charaScale H 1.2]
+[charaSet I 4052002 1 マガツ信玄ノカミ（サブレイヤー用）]
+[charaScale I 1.1]
+
+[sceneSet K 206000 1]
+[charaScale K 1.3]
+[sceneSet L 206000 1]
+[charaScale L 1.2]
+[sceneSet M 206000 1]
+[charaScale M 1.2]
+[sceneSet N 206000 1]
+[charaScale N 1.2]
+
+[imageSet S back10000 1 1]
+[charaScale S 1.01]
+[imageSet T back10000 1 1]
+[charaScale T 1.01]
+
+[subCameraOn 2]
+
+[subCameraFilter #A maskEdge cut359_mask25 50 255,255,255,255 1]
+[subCameraFilter #B maskEdge cut359_mask25 50 255,255,255,255 1]
+
+[subRenderDepth #B 2]
+[subRenderDepth #A 1]
+
+[charaLayer H sub #A]
+[charaLayer M sub #A]
+
+[charaDepth H 2]
+[charaDepth M 1]
+
+[charaFadeinFSR H 0.1 -400,250]
+[charaFadein M 0.1 -350,10]
+
+[charaLayer I sub #B]
+[charaLayer N sub #B]
+
+[charaDepth I 2]
+[charaDepth N 1]
+
+[charaFadeinFSL I 0.1 -40,200]
+[charaFadein N 0.1 0,-30]
+
+
+[charaTalk depthOff]
+
+[charaDepth K 8]
+[charaDepth A 7]
+[charaDepth F 6]
+[charaDepth L 5]
+[charaDepth B 4]
+[charaDepth C 3]
+[charaDepth D 2]
+[charaDepth E 1]
+
+
+[scene 206000]
+
+[charaFadein K 0.1 -50,-270]
+[charaMove K 50,-270 7.0]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.8]
+
+[se adm46]
+[wt 1.5]
+[cueSeStop 21_ade643 0.5]
+[wt 0.5]
+
+[bgm BGM_MAP_43 0.1]
+
+[charaTalk A]
+[charaFadeout K 0.4]
+[wt 0.4]
+
+＠宣伝マン
+さあ、いよいよ始まる『ハイパー時代劇決戦カワナカジマ』！
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[wt 0.2]
+
+[charaTalk off]
+[subRenderFadein #A 0.3 667,-290]
+[subRenderFadein #B 0.3 -220,-270]
+[subRenderMoveEase #A 667,-280 5.0 easeOutExpo]
+[subRenderMoveEase #B -220,-280 5.0 easeOutExpo]
+[wt 0.3]
+
+＠宣伝マン
+あの越後の龍『上杉謙信』と、[r]甲斐の虎『武田信玄』がまさかの[#上洛:じょうらく]、
+[k]
+
+＠宣伝マン
+京都に現れた川中島で大激突だ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_MAP_43 0.5 0.5]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+
+[wt 1.0]
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_MAP_43 0.5 1.0]
+[wait wipe]
+
+[charaTalk on]
+
+？1：川中島身軽すぎるでしょ
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠メイドイン彦斎
+川中島は現れるとか現れないとかの話ではないと思うけど。
+[k]
+
+
+？2：何してるのあの二人
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠原田左之助
+あれが上杉謙信に武田信玄。
+[k]
+
+[charaFace C 12]
+
+＠原田左之助
+いえ、話には聞いてましたが、[r]ホントにあの二人も大将のサーヴァントなんすか。
+[k]
+
+
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgmStop BGM_MAP_43 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠宣伝マン
+それでは両雄、意気込みの方、お願いします！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠マガツ謙信ノカミ
+というわけで、久しぶりに[#上洛:じょうらく]した[r]ビシャモンテンこと上杉謙信です。
+[k]
+
+[charaFace D 18]
+
+＠マガツ謙信ノカミ
+なにげに[#上洛:じょうらく]したことの無い晴信とは格が違いますので、[r]皆さん応援よろしくお願い致しますね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠宣伝マン
+おおっと、これはいきなりの[#上洛:じょうらく]マウント。[r]これを受けてどうぞ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠マガツ信玄ノカミ
+なにが[#上洛:じょうらく]だ、くだらんことを言ってる暇があったら[r]さっさとかかってくるんだな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠宣伝マン
+こちらの軍神煽りも軽く受け流す、さすがの貫禄。
+[k]
+
+＠宣伝マン
+この幕末戦国バトルを見なきゃ京都に来た意味がない！
+[k]
+
+＠宣伝マン
+さあ、チケットは一枚100万QPだよ！　買った買った！[wt 0.3][cueSe SE_21 21_ad1069][charaMoveReturn A 0,-5 0.3][wt 0.3][charaMoveReturn A 0,-5 0.3][wt 0.3]
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ade643 0.5 0.7]
+[se ad413 0.5 0.7]
+[wt 2.5]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_94 0.5 0.5]
+[cueSeStop 21_ade643 1.0]
+[seStop ad413 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_94 0.5 1.0]
+[wait wipe]
+
+＠原田左之助
+チケット代、高くないすか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠メイドイン彦斎
+大きなシノギの臭いがするわね。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_94 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[overlayFadein S 0.1 0,-738]
+[overlayFadein T 0.1 0,738]
+
+[charaFadein L 0.1 100,-300]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_CHOGORYO_1 0.1]
+
+[se ad133 0.5 1.0]
+[wt 1.5]
+[seStop ad133 0.5]
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 -250,-50]
+[charaMove A -200,-50 0.4]
+[wt 0.4]
+
+＠宣伝マン
+弾正さん！　チケット売れまくりでもう席がありませんよ！
+[k]
+
+[messageOff]
+[charaPut F 200,-30]
+[charaMoveEase A -300,-50 0.8 easeInOutSine]
+[charaMoveEase L 0,-300 0.8 easeInOutSine]
+[charaMoveEase F 100,-30 0.8 easeInOutSine]
+[charaFadeout A 0.4]
+[wt 0.4]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.4]
+[wt 0.5]
+
+＠松永弾正
+構わないから、売って売って、売りまくれ！[r]会場に着いたら立ち見席にぶち込めばわかんねーから！
+[k]
+
+[charaFace F 9]
+
+＠松永弾正
+アハハハハハ！　儲かり過ぎて笑いが止まらないんですけど。[r]毎年これやってくれない？
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFadeout F 0.4]
+[charaFadeout L 0.4]
+[wt 0.4]
+
+[charaMove S 0,-850 1.2]
+[charaMove T 0,850 1.2]
+[wt 1.2]
+[charaFadeout S 0.1]
+[charaFadeout T 0.1]
+
+[se ad984]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠メイドイン彦斎
+やっぱり……、こういうあくどい元締めは[r]きっちり痛めつける必要がある。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_CHOGORYO_1 1.0]
+
+[charaScale F 1.0]
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+
+＠松永弾正
+げっ！　人が楽しく儲けてるときに……！
+[k]
+
+[bgm BGM_BATTLE_119 0.1]
+[charaFace F 0]
+
+＠松永弾正
+こうなったら、謙信公に、信玄公！[r]始めちゃってくださーい！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+＠マガツ謙信ノカミ
+待ちかねましたよ！　いざ尋常にバトルイン京の都！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠マガツ信玄ノカミ
+瀬田どころか三条大橋を越えてやろう、ゆくぞ！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_119 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+
+

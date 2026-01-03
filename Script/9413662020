@@ -1,0 +1,194 @@
+
+
+＄94-13-66-20-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3056000 1 ゴッホ]
+[charaSet B 2053000 1 ツタンカーメン]
+
+[charaSet H 1098306700 1 ダイダロスメカ]
+[charaSet I 1098306700 1 ダイダロスメカ]
+[charaSet J 1098306700 1 ダイダロスメカ]
+[charaSet K 1098306700 1 ダイダロスメカ]
+[charaSet L 1098306700 1 ダイダロスメカ]
+
+[sceneSet O 231600 1]
+[sceneSet P 231600 1]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+
+[scene 231600]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_175 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠ゴッホ
+もうすっかり、[r]武骨な内装ばかりになってまいりましたね……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠ツタンカーメン
+はいい、もはや審美ではなく、殺意のみが見えまする！[r]かの名工の粗野なる心の表現にござりまするか……！
+[k]
+
+＠ツタンカーメン
+しかしもうすぐ、記憶の断片の最初の１つ、[r]そのありかにたどり着きまする……！
+[k]
+
+[messageOff]
+[se ad95]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_175 1.0 0.5]
+[wt 0.15]
+[se ade422]
+[seStop ad95 1.0]
+[seStop ade422 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+
+[subCameraOn 2]
+
+[charaLayer H sub #A]
+[charaLayer I sub #A]
+[charaLayer J sub #A]
+[charaLayer K sub #A]
+[charaLayer L sub #A]
+
+[charaLayer B sub #B]
+[charaLayer A sub #B]
+[charaLayer P sub #B]
+
+[subCameraFilter #A through]
+[subCameraFilter #B maskEdge cut359_mask16 5 255,255,255,255]
+
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaTalk depthOff]
+[charaDepth H 5]
+[charaDepth I 4]
+[charaDepth J 3]
+[charaDepth K 2]
+[charaDepth L 1]
+
+[charaDepth O 1]
+[charaDepth A 2]
+[charaDepth B 2]
+
+[charaScale P 1.4]
+[charaScale A 1.2]
+[charaScale B 1.2]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0 -50,250]
+[charaFadein P 0 -300,0]
+
+[subRenderFadein #A 0 0,0]
+
+[charaDepth O 2]
+[charaDepth S 8]
+[charaPut S 1]
+[charaEffect S bit_talk_glowing_sphere_red]
+
+[charaScale O 1.2]
+[charaFadein O 0 50,-260]
+[wt 0.5]
+
+[wipein rightToLeft 1.0 1.0]
+[bgm BGM_EVENT_175 1.0 1.0]
+[wait wipe]
+[wt 1.0]
+
+[subRenderFadeinFSSideR #B 0.3 600,-250]
+[subRenderMoveEaseFSSideR #B 400,-250 0.5 easeOutSine]
+[charaMoveEase S -250,0 0.5 easeOutSine]
+[charaMoveEase O -150,-260 0.5 easeOutSine]
+[wt 0.7]
+
+＠ツタンカーメン
+あっ、あれかと存じまする！
+[k]
+
+[bgmStop BGM_EVENT_175 1.2]
+
+[messageOff]
+[charaTalk S]
+[se ad710]
+[subRenderShake #B 0.02 2 3 0.6]
+[shake 0.02 2 3 0.6]
+[wt 0.7]
+[charaFace B 12]
+[wt 0.5]
+
+[subRenderShake #B 0.02 2 3 0.6]
+[shake 0.02 2 3 0.6]
+[wt 0.8]
+[seStop ad710 0.2]
+[wt 0.4]
+
+[se ad270]
+[charaTalk H,I,J,K,L]
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFace K 0]
+[charaFace L 0]
+[charaFadein H 0.4 -220,15]
+[charaMove H -250,15 0.4]
+[wt 0.15]
+[charaFadein I 0.4 -530,0]
+[charaMove I -500,0 0.4]
+[wt 0.15]
+[charaFadein J 0.4 30,0]
+[charaMove J 0,0 0.4]
+[wt 0.15]
+[charaFadein K 0.4 -780,-15]
+[charaMove K -750,-15 0.4]
+[wt 0.15]
+[charaFadein L 0.4 280,-15]
+[charaMove L 250,-15 0.4]
+[wt 1.2]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_195 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 -50,250]
+＠ゴッホ
+[line 3]さすがに守りは強固です！　本気でいきますよ！！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_195 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

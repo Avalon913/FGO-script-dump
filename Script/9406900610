@@ -1,0 +1,558 @@
+
+
+
+＄94-06-90-06-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1053900 1 徴側]
+[charaSet B 1053910 1 徴弐]
+
+[charaSet C 1013001 1 カエサル]
+[charaSet D 1005001 1 ネロ]
+[charaSet E 3010001 1 ロムルス]
+[charaSet F 7010001 1 カリギュラ]
+[charaSet G 3042000 1 ヤングロムルス]
+[charaSet H 1098124510 1 ダ・ヴィンチ]
+[charaSet J 6008001 1 クレオパトラ]
+
+[charaSet K 98115000 1 エフェクト用]
+
+[ifClear 60068831]
+[charaSet X 1098237910 1 刀ローマ鎧コン１]
+[charaSet Y 1098237910 1 刀ローマ鎧コン２]
+[charaSet Z 1098237910 1 刀ローマ鎧コン３]
+
+[ifClear 60068832]
+[charaSet X 1098238010 1 槍ローマ鎧コン１]
+[charaSet Y 1098238010 1 槍ローマ鎧コン２]
+[charaSet Z 1098238010 1 槍ローマ鎧コン３]
+
+[ifClear 60068833]
+[charaSet X 1098238110 1 杭ローマ鎧コン１]
+[charaSet Y 1098238110 1 杭ローマ鎧コン２]
+[charaSet Z 1098238110 1 杭ローマ鎧コン３]
+
+[else]
+[charaSet X 1098237910 1 刀ローマ鎧コン１]
+[charaSet Y 1098237910 1 刀ローマ鎧コン２]
+[charaSet Z 1098237910 1 刀ローマ鎧コン３]
+
+[endIf]
+
+[imageSet I cut214_text01 1]
+
+[charaSet S 98115000 1 エフェクト用ダミー]
+[charaPut S 2000,2000]
+[charaEffect S bit_talk_10_LowLevel]
+
+[charaDepth A 4]
+[charaDepth B 3]
+
+[charaDepth C 2]
+[charaDepth D 3]
+[charaDepth E 3]
+[charaDepth F 4]
+[charaDepth G 2]
+
+[charaDepth J 4]
+[charaDepth K 5]
+
+[charaDepth X 6]
+[charaDepth Y 6]
+[charaDepth Z 6]
+
+[charaDepth I 8]
+
+[scene 147500]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_NERO_1 0.1]
+
+[charaFace X 0]
+[charaFace Y 0]
+[charaFace Z 0]
+[charaFadeinFSL X 0.1 0]
+[charaFadein Y 0.1 1]
+[charaFadeinFSR Z 0.1 2]
+[wt 1.0]
+
+[charaTalk Y]
+[charaFace Y 1]
+
+[cueSe SE_22 22_ade695]
+[charaMoveReturn Y 0,7 0.2]
+[wt 0.3]
+
+＠Y：コン
+わはー。
+[k]
+
+[messageOff]
+[charaTalk X]
+[charaFace X 6]
+
+[cueSe SE_22 22_ade695]
+[charaMoveReturnFSL X -256,7 0.2]
+[wt 0.3]
+
+＠X：コン
+ワガハイ、ばらのこうてい？
+[k]
+
+[messageOff]
+[charaTalk Z]
+[charaFace Z 0]
+
+[cueSe SE_22 22_ade695]
+[charaMoveReturnFSR Z 256,7 0.2]
+[wt 0.3]
+
+＠Z：コン
+ろーま！
+[k]
+
+[messageOff]
+[charaFadeout X 0.1]
+[charaFadeout Y 0.1]
+[charaFadeout Z 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,0]
+[wt 0.4]
+
+＠カエサル
+ふむ。いろいろ初体験な部分はあるが、[r]ガリアほどの難度ではあるまい。
+[k]
+
+＠カエサル
+何にせよ私が来、私が見ているのだから、[r]もちろんこれはもう既に勝ったようなものだ。
+[k]
+
+？1：あれ、カエサルだけ？　てっきりこんな……
+？！
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_NERO_1 1.0 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.0]
+[bgm BGM_NERO_1 1.0 1.0]
+[wait fade]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[fowardEffect bit_talk_diremond_dust]
+[se bac216]
+
+[charaFace D 6]
+[charaFace F 2]
+[charaFace E 0]
+[charaFace X 0]
+[charaFace Y 0]
+[charaFace Z 0]
+[charaFadeinFSSideL D 0.5 -402,-50]
+[charaFadeinFSL F 0.5 -10,-50]
+[charaFadeinFSSideR E 0.5 402,-50]
+
+[charaFadeinFSL X 0.5 -256,-210]
+[charaFadein Y 0.5 0,-210]
+[charaFadeinFSR Z 0.5 256,-210]
+[wt 0.5]
+
+[charaFace G 0]
+[charaFadeinFSL G 2.0 -160,-120]
+[charaMoveFSL G -160,-50 1.5]
+[wt 1.5]
+
+[charaFadeinFSSideR I 0.4 0,-276]
+
+
+[charaFace X 1]
+[charaMoveReturnFSL X -256,-203 0.2]
+[wt 0.3]
+[charaFace Z 1]
+[charaMoveReturnFSR Z 256,-203 0.2]
+[wt 0.3]
+[charaFace Y 1]
+[charaMoveReturn Y 0,-203 0.2]
+[wt 0.3]
+[charaMoveReturnFSL X -256,-203 0.2]
+[wt 0.3]
+[charaMoveReturnFSR Z 256,-203 0.2]
+[wt 0.3]
+[charaMoveReturn Y 0,-203 0.2]
+[wt 2.0]
+
+[fadeout black 1.0]
+[seStop bac216 1.0]
+[bgm BGM_NERO_1 1.0 0.5]
+[wait fade]
+
+[fowardEffectStop bit_talk_diremond_dust]
+[fowardEffectDestroy]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout X 0.1]
+[charaFadeout Y 0.1]
+[charaFadeout Z 0.1]
+[charaFadeout I 0.1]
+
+[wipeOff]
+
+[charaTalk on]
+[charaTalk depthOn]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_NERO_1 1.0 1.0]
+[wait fade]
+[wt 0.3]
+
+[charaPut S 0,0]
+[charaTalk H]
+[charaFace H 17]
+[charaFadein H 0.1 0,0]
+
+＠ダ・ヴィンチ
+想像通り、全ローマ大集合！　みたいな[r]派手すぎる感じになりそうだったからね。
+[k]
+
+＠ダ・ヴィンチ
+今回はちょっと自重してもらった。
+[k]
+
+[charaFadeout H 0.1]
+[charaPut S 2000,2000]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,0]
+
+＠カエサル
+しかし一人ではないとも。[r]私は最も信頼できる者と来た。それは勿論[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.4 0,0]
+[charaEffect K bit_talk_valentine_brilliant_fs]
+[se bac212]
+[wt 1.0]
+
+＠クレオパトラ
+[#妾:わらわ]よ！
+[k]
+
+[messageOff]
+[charaEffectStop K bit_talk_valentine_brilliant_fs]
+[wt 0.5]
+
+[charaTalk depthOn]
+[charaFace J 1]
+
+＠クレオパトラ
+フフフ。この可愛らしい方々を導きながら[r]戦えばよろしいのね？
+[k]
+
+＠クレオパトラ
+真の美とは種族の壁など容易く越えて伝わるもの。[r]すなわち共通言語です。
+[k]
+
+[charaFace J 0]
+
+＠クレオパトラ
+カエサル様は溢れる知性とカリスマで、[r][#私:わたくし]は絨毯に包まれようと[#零:こぼ]れる美で、
+[k]
+
+[charaFace J 2]
+
+＠クレオパトラ
+何よりも確かな勝利を！[r]夫婦の共同作業、見せてさしあげてよ！
+[k]
+
+[messageOff]
+
+[charaTalk depthOff]
+[charaEffect K bit_talk_valentine_brilliant_fs]
+[se bac212]
+[wt 2.5]
+
+[charaPut K 2000,2000]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaEffectStop K bit_talk_valentine_brilliant_fs]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFace B 0]
+[charaFadein A 0.1 0,0]
+[charaFadein B 0.1 0,0]
+
+＠徴側
+わあ、綺麗な方ですねえ。[r]とっても大人っぽくて……。
+[k]
+
+[charaTalk B]
+[charaFace B 3]
+
+＠徴弐
+ね、姉さんも本気を出せばいけるし。[r]だって姉さんなんだもの。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 0,0]
+
+＠クレオパトラ
+フフ？　貴女たちにも美を感じるわね。[r]対の美、素朴の美。
+[k]
+
+＠クレオパトラ
+そして、内側より漏れ出るそのビューティーなオーラ、[r][#美気:ビューラ]の種類は……人妻の[#美気:ビューラ]！
+[k]
+
+＠クレオパトラ
+サーヴァントとしての見た目はともかく、[r]あなた、人妻、ですわよね？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk A]
+[charaFace A 4]
+[charaFace B 0]
+[charaFadein A 0.1 0,0]
+[charaFadein B 0.1 0,0]
+
+＠徴側
+はあ、一応……そうですね。[r]かつて夫のいた身ではあります。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 0,0]
+
+＠クレオパトラ
+かつて？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk A]
+[charaFace A 4]
+[charaFace B 0]
+[charaFadein A 0.1 0,0]
+[charaFadein B 0.1 0,0]
+
+＠徴側
+はい。[r]いろいろあって……殺されてしまって。
+[k]
+
+＠徴側
+本来ならば夫が皆をまとめて戦うような[r]立場だったのですが……。
+[k]
+
+？1：（だから、代わりに……）
+？2：（[#側:チャク]さんが指導者になったのか……）
+？！
+
+[charaTalk B]
+[charaFace B 6]
+
+＠徴弐
+…………。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 0,0]
+
+＠クレオパトラ
+そう。ごめんなさいね、[r]別に深い意味があったわけではないの。
+[k]
+
+＠クレオパトラ
+美しいものがあれば、そのバックグラウンドを[r]知りたいと思うのは当然のこと。
+[k]
+
+＠クレオパトラ
+それは貴女も同じでしょう？
+[k]
+
+[charaFace J 0]
+[bgmStop BGM_NERO_1 1.0]
+
+＠クレオパトラ
+というわけで、これは[#妾:わらわ]が経営する[r][#美気の館:ビ ュ ー ラ ボ]の回数券よ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,0]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠カエサル
+クレオパトラの美の秘密が明らかになるかもしれない、[r]その美を少しでも世の女性に還元できればという
+[k]
+
+＠カエサル
+美と健康のためのスーパーエステティックサロンだ。[r]優れた収益はもちろんだが……
+[k]
+
+＠カエサル
+なにより、ご婦人方から“とても癒された”と[r]好評を得ている。疲れた体を癒すとよい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 0,0]
+
+＠クレオパトラ
+ええ。機会があればぜひおいでなさい。
+[k]
+
+＠クレオパトラ
+最新のコブラデトックスが[r]貴女をもう一段階上の美に引き上げるコトでしょう。
+[k]
+
+＠クレオパトラ
+いえ、むしろこの場所に作ってもらうのもいいわね？[r]南国っぽいし。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,0]
+
+＠カエサル
+おっと２号店かね？[r]悪くない、考えておこう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk X]
+[charaFace X 0]
+[charaFace Y 0]
+[charaFace Z 0]
+[charaFadeinFSL X 0.1 0]
+[charaFadein Y 0.1 1]
+[charaFadeinFSR Z 0.1 2]
+
+＠X：コン
+ワガハイたちのようにー。
+[k]
+
+[clear]
+
+[charaTalk Z]
+[charaFace Z 0]
+
+＠Z：コン
+目指せ、おはだつるつる！
+[k]
+
+[charaFadeout X 0.1]
+[charaFadeout Y 0.1]
+[charaFadeout Z 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+[charaTalk H]
+[charaFace H 17]
+[charaFadein H 0.1 0,0]
+
+＠ダ・ヴィンチ
+はいはい、経営の話はそこまで。
+[k]
+
+[charaFace H 0]
+[bgmStop BGM_EVENT_7 1.5]
+
+＠ダ・ヴィンチ
+今は軍の指揮官としての能力を発揮してもらうときだよ、[r]カエサル。
+[k]
+
+[charaFadeout H 0.1]
+[charaPut S 2000,2000]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,0]
+
+＠カエサル
+理解しているとも。
+[k]
+
+[charaFace C 2]
+
+＠カエサル
+それでは、出陣といこうではないか！
+[k]
+
+[messageOff]
+
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

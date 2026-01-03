@@ -1,0 +1,876 @@
+
+
+＄91-70-33-01-3-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 7033002 1 アルジュナ・オルタ]
+[charaSet B 1098124510 1 ダ・ヴィンチ]
+[charaSet C 1048000 1 サンタカルナ]
+
+[charaSet D 1098203100 1 土蜘蛛1]
+[charaSet E 1098203100 1 土蜘蛛2]
+[charaSet F 1098203100 1 土蜘蛛3]
+[charaSet G 1098203100 1 土蜘蛛4]
+[charaSet H 1098203100 1 土蜘蛛5]
+
+[charaSet I 1098203100 1 男]
+
+[charaSet J 7033002 1 アルジュナ・オルタ]
+
+[sceneSet K 10000 1]
+[charaScale K 1.01]
+[sceneSet L 10000 1]
+[charaScale L 1.01]
+[charaDepth K 7]
+[charaDepth L 8]
+
+[imageSet X back10000 1 1]
+[charaScale X 1.01]
+[charaSet Y 98115000 1 エフェクト用ダミー]
+[charaSet Z 98115000 1 通信エフェクト用ダミー]
+
+[charaDepth D 2]
+[charaDepth E 3]
+[charaDepth F 4]
+[charaDepth G 5]
+[charaDepth H 4]
+
+[scene 112000]
+
+[subCameraOn]
+[charaLayer J sub]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[cueSe Servants_703300 bac1137]
+[charaScale J 1.22]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 150,200]
+[subCameraFilter mask cut359_mask06]
+[subRenderFadein 1.0 0,-250]
+
+[charaMove J 230,200 3.5]
+[wt 1.5]
+
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaLayer J normal]
+[subCameraOff]
+
+[scene 10000]
+
+[fadein black 0.5]
+[wait fade]
+
+[fowardEffect bit_talk_ereshki02 0,0 H]
+[cueSe Servants_703300 bac1135 0]
+[seVolume bac1135 0.4 1.0]
+[wt 1.5]
+
+[seStop bac1135 1.0]
+[fadeout black 0.5]
+[wait fade]
+
+[scene 112000]
+[charaTalk off]
+[charaFace D 0]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadeinFSL D 0 -500,0]
+[charaFadeinFSL G 0 -150,0]
+[charaFadeinFSR F 0 150,0]
+[charaFadeinFSR E 0 500,0]
+
+[cueSe Servants_201500 bac1158 0]
+[seVolume bac1158 0.5 1.0]
+[cueSe Servants_404700 m48631 0]
+[cueSeVolume m48631 1.0 0.5]
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.2]
+[cueSe Servants_201500 bac1107]
+[wt 0.3]
+
+[fowardEffectStop bit_talk_ereshki02]
+[charaShake D 0.05 7 7 1.0]
+[charaShake E 0.05 7 7 1.0]
+[charaShake F 0.05 7 7 1.0]
+[charaShake G 0.05 7 7 1.0]
+[wt 1.0]
+[cueSeStop m48631 0.1]
+
+[se ad989]
+[charaSpecialEffect G enemyErasure 1 0.8]
+[wt 0.1]
+[charaSpecialEffect F enemyErasure 1 0.8]
+[wt 0.1]
+[charaSpecialEffect D enemyErasure 1 0.8]
+[wt 0.1]
+[charaSpecialEffect E enemyErasure 1 0.8]
+[wt 0.8]
+[seStop ad989 1.0]
+[wt 1.0]
+
+＠
+その矢は、その刃は、その輝きは、[r][#縦横無尽:じゅうおうむじん]に魔獣を駆逐した。
+[k]
+
+[messageOff]
+
+[charaFace D 0]
+[charaFace E 0]
+[charaFace F 0]
+[charaFadeinFSL F 0.1 0]
+[charaFadein D 0.1 1]
+[charaFadeinFSR E 0.1 2]
+[wt 0.5]
+
+[fowardEffect bit_talk_quick_slash]
+[wt 0.1]
+[cueSe Servants_703300 bac1144]
+[charaShake F 0.04 3 3 0.4]
+[charaShake E 0.04 3 3 0.4]
+[charaShake D 0.04 3 3 0.4]
+[wt 1.0]
+[fowardEffect bit_talk_gram_slash_03_fs]
+[wt 0.1]
+[se bac139]
+[se ad473]
+[seStop ad473 1.5]
+[charaShake F 0.04 3 3 0.4]
+[charaShake E 0.04 3 3 0.4]
+[charaShake D 0.04 3 3 0.4]
+[wt 1.0]
+[se ad989]
+[charaSpecialEffect F enemyErasure 1 1.0]
+[wt 0.1]
+[charaSpecialEffect E enemyErasure 1 1.0]
+[wt 0.1]
+[charaSpecialEffect D enemyErasure 1 1.0]
+[wt 1.0]
+[seStop ad989 1.0]
+[wt 1.0]
+
+＠
+斬撃と射撃は重ねて百を超え、[r]激闘であれど盤石にして揺るがず。
+[k]
+
+[messageOff]
+
+[charaTalk on]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[cueSe Servants_703300 bac1140]
+[effect bit_talk_17_bl_03 0,0]
+[wt 2.0]
+
+[effectDestroy bit_talk_17_bl_03]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace D 0]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadeinFSL D 0.1 -500,0]
+[charaFadeinFSL E 0.1 -150,0]
+[charaFadeinFSR F 0.1 150,0]
+[charaFadeinFSR G 0.1 500,0]
+
+[cueSe Servants_703300 bac1141]
+[fowardEffect bit_talk_shock_wave 0,0]
+[wt 0.5]
+[shake 0.04 3 3 2.5]
+[wt 0.5]
+[fowardEffectStop bit_talk_shock_wave]
+[wt 0.7]
+[fadeout white 0.3]
+[wait fade]
+[fowardEffectDestroy bit_talk_shock_wave]
+[wt 0.5]
+[fadein white 1.0]
+[wait fade]
+[se ad989]
+[charaSpecialEffect G enemyErasure 1 1.2]
+[charaSpecialEffect F enemyErasure 1 1.2]
+[charaSpecialEffect E enemyErasure 1 1.2]
+[charaSpecialEffect D enemyErasure 1 1.2]
+[wt 1.0]
+[seStop ad989 1.5]
+[wt 1.5]
+
+＠
+元より敗北することなど有り得ぬ戦いであったが。[r]アルジュナ・オルタの完全なる[#封殺:ふうさつ]であった。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_63 1.5]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+＠男
+……。[r]……。
+[k]
+
+[messageOff]
+[charaTalk on]
+
+[se ad60]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 1.0 1]
+[wt 0.5]
+[seStop ad60 0.1]
+[wt 0.5]
+
+＠アルジュナ・オルタ
+ここであったことは忘れて、[r]日常にお帰りなさい。
+[k]
+
+[charaFace A 7]
+
+＠アルジュナ・オルタ
+さあ！
+[k]
+
+＠男
+は、はい……はい……！
+[k]
+
+[messageOff]
+[se ad132]
+[wt 0.8]
+[charaTalk A]
+[charaFace A 0]
+[wt 1.0]
+[seStop ad132 0.1]
+
+[charaFadeout A 0.2]
+[wt 0.2]
+
+[overlayFadein K 0.1 0,-800]
+[overlayFadein L 0.1 0,800]
+[charaMove K 0,-745 0.5]
+[charaMove L 0,745 0.5]
+[wt 0.7]
+
+＠
+礼を言うことも忘れて、[r]男は転げるように立ち去っていく。
+[k]
+
+＠
+あの男が、どうなるのか。[r]それは分からない。
+[k]
+
+＠
+派遣された魔術師により、記憶が消されるのか。[r]あるいはこのまま覚えているのか。
+[k]
+
+＠
+後悔して善を行うのか、[r]後悔せずに悪を続けるのか。
+[k]
+
+＠
+あるいは、人間らしく[r][#どっちつかず]の道を選ぶのか。
+[k]
+
+＠
+正直、それはどうでも良かった。
+[k]
+
+＠
+善悪を定める役割からは、[r]もうとっくに解放されていたのだから。
+[k]
+
+[messageOff]
+[charaMove K 0,-800 0.5]
+[charaMove L 0,800 0.5]
+[wt 0.5]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[wt 0.5]
+
+[se ad13]
+[wt 0.3]
+
+[charaPut Z 1]
+[charaEffect Z bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 25]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+[line 3]おっと。[r]ようやく通信が回復したか！[bgm BGM_EVENT_2 0.1]
+[k]
+
+[charaFace B 32]
+
+＠ダ・ヴィンチ
+でも、バイタルサインから考慮するに、[r]もしかしてもう終わっちゃってる？
+[k]
+
+[charaPut Z 2000,2000]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アルジュナ・オルタ
+ええ、終わりましたよ。[r]これで特異点は修正されたはずですが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+えーと……ふんふん。[r]うん、確かに。
+[k]
+
+＠ダ・ヴィンチ
+うん、アルジュナ・オルタは軽傷、[r][%1][&君:ちゃん]は無傷、と。
+[k]
+
+＠ダ・ヴィンチ
+メンタルも異常無し。
+[k]
+
+[charaPut Z 2000,2000]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アルジュナ・オルタ
+完勝、と呼ぶべきものでした。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+ははは、さすが！[r]それじゃあ、撤収作業を開始するよ。
+[k]
+
+＠ダ・ヴィンチ
+二人とも、お疲れ様！
+[k]
+
+？1：了解！
+？！
+
+[charaPut Z 2000,2000]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠アルジュナ・オルタ
+お疲れ様でした、マスター。
+[k]
+
+？1：……何か良いこととかあった？
+？！
+
+[charaFace A 0]
+
+＠アルジュナ・オルタ
+いえ、別に。
+[k]
+
+＠アルジュナ・オルタ
+良いことがあった訳ではありません。[r]ですが[line 3]
+[k]
+
+＠アルジュナ・オルタ
+ほんの少し、些細な出来事がきっかけで、[r]ストンと[#腑:ふ]に落ちる、という事がある。
+[k]
+
+＠アルジュナ・オルタ
+私の魂の灯火を、[r]ようやく見つけられた気がするのです。
+[k]
+
+[charaFace A 6]
+
+＠アルジュナ・オルタ
+さあ帰りましょう、マスター。
+[k]
+
+[messageOff]
+
+[cameraMove 0.5 0,15 1.01]
+[wt 0.6]
+[cameraMove 0.5 0,0 1.01]
+[wt 1.5]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cameraMove 0.1 0,0 1.0]
+
+[sceneSet W 110101 1 1]
+[charaScale W 1.4]
+
+[scene 10000]
+[wt 0.5]
+
+[charaFadein W 0.1 -200,-200]
+[wt 1.0]
+
+[charaMove W 200,-200 80.0]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_78 0.1]
+
+＠
+罪があり、罰があり、[#贖:あがな]いがあり、救いがある。
+[k]
+
+＠
+善があり、悪があり、正義があり、邪悪がある。
+[k]
+
+＠
+ただ、それら全てを超越したところで、[r]今の私は戦うべきなのだ、という想いがある。
+[k]
+
+＠
+私は、私の立ち位置を信じている。[r]マスターを信じた、自分を信じている。
+[k]
+
+＠
+かつて神であった。[r]悲惨な戦いがあり、悲惨な行動があった。
+[k]
+
+＠
+それらを忘れることは絶対にない。[r]だが[line 3]
+[k]
+
+＠
+それはやはり、過去の遺物なのだ。
+[k]
+
+＠
+私にとって必要なものではあるが、[r]マスターにとって必要なものではない。
+[k]
+
+＠
+私が見出した答えは、人生の物語としては[r]不完全で、欠落していて、不充分だ。
+[k]
+
+＠
+本当はより充実した回答が必要なのだろう。[r][#一目瞭然:いちもくりょうぜん]、明々白々な。
+[k]
+
+＠
+……でも、きっとそれは私にとって[r][#欺瞞:ぎまん]でしかない。
+[k]
+
+＠
+悩み続けろ、足掻き続けろ、[#煩悶:はんもん]し続けろ。[r]その先に答えがなかったとしても。
+[k]
+
+＠
+それまでの道程だけは、きっと。[r]嘘でもなく虚無でもないのだろうから。
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_78 1.5]
+[wait fade]
+
+[charaFadeout W 0.1]
+[wt 0.1]
+
+[charaSet D 2033000 1 アシュヴァッターマン]
+
+[charaDepth D 2]
+[charaDepth C 4]
+
+[pictureFrame cut063_cinema]
+
+
+[branchQuestClear lblClear1 94064915]
+[branchQuestClear lblClear1 3001101]
+
+
+[label lblNotClear1]
+
+[scene 104200]
+
+[branch lblConf1]
+
+
+[label lblClear1]
+
+[scene 132800]
+
+[label lblConf1]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_104 0.1]
+
+
+[se ade146]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 1.0 0,-50]
+[wt 0.8]
+[seStop ade146 0.1]
+[wt 0.5]
+
+＠アルジュナ・オルタ
+おや。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad95]
+[seVolume ad95 0.0 0.0]
+[seVolume ad95 0.5 1.0]
+[wt 1.0]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 1.0 0,-50]
+[wt 0.8]
+[seStop ad95 0.1]
+[wt 0.5]
+
+
+＠サンタカルナ
+む、アルジュナ……の別側面か。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠アルジュナ・オルタ
+そうだが……。
+[k]
+
+＠アルジュナ・オルタ
+……。[r]……ボクサーの……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠サンタカルナ
+ではない。[r]サンタクロースだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠アルジュナ・オルタ
+そうか……。[r]いや、常々思っていたのだが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠サンタカルナ
+ああ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠アルジュナ・オルタ
+おまえは割とフリーダムに生きているな。[r]そこは羨ましくもある。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠サンタカルナ
+……。[r]……。
+[k]
+
+[charaFace C 4]
+
+＠サンタカルナ
+そうだったのか……。[r]そうだったのか……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠アルジュナ・オルタ
+いや、サンタクロースをやっているのに[r]フリーダムじゃないは通らないと思うのだが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠サンタカルナ
+なるほど確かに……そういう見方もできるか。
+[k]
+
+＠サンタカルナ
+……。[r]……。
+[k]
+
+＠サンタカルナ
+別側面のアルジュナよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠アルジュナ・オルタ
+うん？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠サンタカルナ
+なるか？[r]サンタクロース。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 0,-50]
+
+＠アルジュナ・オルタ
+……そういう二番煎じ感はちょっと、[r]勘弁してほしいところだな……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠サンタカルナ
+そうか……残念だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠アルジュナ・オルタ
+[line 3]ああ、でも。
+[k]
+
+[charaFace A 1]
+
+＠アルジュナ・オルタ
+子供にプレゼントを贈る手伝いなら、[r]喜んで参加するとも。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+
+＠サンタカルナ
+無論、その際は必ず連絡しよう。
+[k]
+
+[messageOff]
+
+[se ad95]
+[seStop ad95 1.0]
+[charaMoveFSL C -50,-50 0.8]
+[wt 0.3]
+[charaFadeout C 0.5]
+[wt 0.5]
+
+
+＠
+立ち去るカルナとすれ違う。
+[k]
+
+＠
+[line 3]何て、シュールな会話。
+[k]
+
+＠
+噴き出すのを堪える。[r]突然廊下で笑い出す、変人になってしまう。
+[k]
+
+＠
+我慢しろ、我慢しろ……。
+[k]
+
+＠
+そう思っていた私へ、トドメの一撃がやってきた。
+[k]
+
+[messageOff]
+
+
+[se ad95]
+[seVolume ad95 0.0 0.0]
+[seVolume ad95 0.5 1.0]
+[wt 0.3]
+[charaTalk C]
+[charaFace C 0]
+[charaFadeinFSL C 1.0 -50,-50]
+[wt 0.2]
+[charaMove C 0,-50 1.0]
+[wt 0.5]
+[seStop ad95 0.1]
+
+＠サンタカルナ
+そうだ、別側面のアルジュナよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 0,-50]
+
+＠アルジュナ・オルタ
+な、何だ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠サンタカルナ
+アシュヴァッターマンは、[r]子供の枠組みに入れるべきだろうか。
+[k]
+
+[messageOff]
+[charaPut D -250,-50]
+[charaFadeTime D 0.8 0.6]
+[wt 2.0]
+[charaFadeout D 0.1]
+[cameraFilter gray]
+[wt 0.5]
+
+＠
+突然廊下で笑い出す羽目になったが、[r]私は悪くないと思う。
+[k]
+
+＠
+大変に人間らしい笑いであり、[r]これもまた[line 3]魂の灯火と言えるだろう。
+[k]
+
+＠
+私の魂は笑い、[r]そして輝いているのだから。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_104 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

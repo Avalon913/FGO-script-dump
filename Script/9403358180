@@ -1,0 +1,907 @@
+
+
+＄94-03-35-81-8-0
+
+
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098323600 1 カズラドロップ]
+[equipSet B 9809340 1 バレンタイン礼装]
+[imageSet C cut672_kazuradrop 1]
+[sceneSet D 10000 1]
+[charaSet E 10018002 1 カズラドロップ]
+[charaScale E 1.2]
+
+[charaSet F 1098323600 1 カズラドロップ]
+[charaScale F 0.7]
+
+[sceneSet G 10000 1]
+[sceneSet I 10000 1]
+[charaScale G 1.2]
+[charaScale I 1.2]
+
+[subCameraOn 3]
+[charaLayer C sub #A]
+[subCameraFilter #A mask cut359_mask05]
+
+[charaLayer D sub #B]
+[charaLayer A sub #B]
+[charaScale D 1.2]
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth A 2]
+
+[charaFadein D 0.1 1]
+[charaFace A 1]
+[charaFadein A 0.1 0,100]
+
+[subCameraFilter #B maskEdge cut359_mask15 5 195,217,65,255 0]
+
+[charaScale C 0.6]
+[charaFadein C 0.1 150,150]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[cameraMove 0 0,0 1.01]
+
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[label lblClear01a]
+[scene 106000]
+[sceneSet Q 106000 1]
+[sceneSet R 106000 1]
+[sceneSet S 106000 1]
+
+[branch lblConf01]
+
+[label lblClear01b]
+[scene 105800]
+[sceneSet Q 105800 1]
+[sceneSet R 105800 1]
+[sceneSet S 105800 1]
+[branch lblConf01]
+
+[label lblClear01c]
+[scene 157910]
+[sceneSet Q 157910 1]
+[sceneSet R 157910 1]
+[sceneSet S 157910 1]
+
+[label lblConf01]
+
+[charaScale R 1.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+[se ad489]
+[seVolume ad489 0 0.2]
+[shake 0.05 1 1 0.5]
+[wt 0.5]
+[cameraMove 1.0 0,0 1.0]
+[wt 1.0]
+
+？1：……？
+？2：なんだか突然、嫌な予感が……
+？！
+
+
+＠？？？
+[tVoice ValVoice_1001800 0_V010]
+くすくすくす。[wait tVoice]
+[k]
+
+[messageOff]
+[overlayFadein S 0.5 0,-200]
+[wt 0.5]
+[scene 10000 0.5]
+
+[branchQuestClear lblClear02c 94064915]
+[branchQuestClear lblClear02c 3001101]
+[branchQuestClear lblClear02b 3000303]
+
+[label lblClear02a]
+
+[criMovie talk_mov294 bgmPlay false]
+
+[branch lblConf02]
+
+[label lblClear02b]
+
+[criMovie talk_mov296 bgmPlay false]
+
+[branch lblConf02]
+
+[label lblClear02c]
+
+[criMovie talk_mov297 bgmPlay false]
+
+[label lblConf02]
+
+[wt 0.3]
+[charaFadeout S 0.5]
+[wt 12.5]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 10000]
+[wt 1.0]
+
+
+
+[fadein black 1.0]
+[wait fade]
+
+？1：ううん……はっ！？
+？！
+
+[se ad7]
+[wt 1.0]
+
+？1：ここは……
+？2：周りにあるこれは……
+？！
+
+[subRenderFadein #A 0.4 0,-140]
+[charaMove C 70,150 2.0]
+
+[wt 2.6]
+
+？1：でっかいお団子ーーー！？
+？2：でっかいチョコーーー！？
+？！
+
+＠？？？
+[tVoice ValVoice_1001800 0_V020]
+くすくすくす。[wait tVoice]
+[k]
+
+＠？？？
+[tVoice ValVoice_1001800 0_V030]
+おはようございます、虫さん……[r]いえ、マスターさん？[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaTalk A]
+[subRenderFadeinFSSideL #B 0.4 -340,-120]
+[subRenderMoveEaseFSSideL #B -350,-150 0.6 easeOutSine]
+[wt 1.0]
+[bgm BGM_BATTLE_90 0.1]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V040]
+今日の日付を思い出していただければ、[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V050]
+それは『説明をスキップする』のチェックボックスを[r]オンにしたも同然でしょう。[wait tVoice]
+[k]
+
+[charaFaceFade A 0 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V060]
+完璧なＡＩである私はもちろん、[#私利私欲:し り し よ く]など抜きに[r]冷静にスケジュール通りのタスクを実行します。[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V070]
+なので粛々とバレンタインのチョコを贈るのです。[wait tVoice]
+[k]
+
+
+？1：なるほど、これは[line 3]
+？2：カズラのバレンタインチョコ、なんだね
+？！
+
+[charaFaceFade A 12 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V080]
+そのとおりです。[r]ただ、チョコレートだけというのも味気ないので、[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V090]
+唯一の和風サクラファイブならではの[r]和風な甘味をセットとして贈ることにしました。[wait tVoice]
+[k]
+
+[charaFaceFade A 6 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V100]
+あ、言うまでもないコトですが、[r]その和風である理由については語りませんよ。[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V110]
+最重要機密ですので！[r]私のエッセンスとは関係ないですから、ええ！[wait tVoice]
+[k]
+
+[bgmStop BGM_BATTLE_90 1.5]
+
+？1：それで、なんでわざわざ虫空間に？
+？！
+
+[charaFaceFade A 15 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V120]
+うっ。[wait tVoice]
+[k]
+
+[bgm BGM_KAZURA_1 0.1]
+
+[charaFaceFade A 14 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V130]
+な、なんですかダメだって言うんですか？[r]『大は小を兼ねる』と言うでしょう？[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V140]
+ストレージ容量もメモリ容量も大きい方がいいでしょう[r]違いますか違わないですよね！？[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V150]
+このサイズならいくらだってお代わりできますし、[r]何も欠点なんて、[wait tVoice]
+[k]
+
+？1：欠点じゃないかもだけど、これだと遠すぎて
+？2：お互いに顔を合わせたことにはなってないかなって
+？！
+
+[charaFaceFade A 16 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V160]
+え？[wait tVoice]
+[k]
+
+？1：せっかくのプレゼントなんだから
+？2：ちゃんとキミの顔を見てお礼を言いたいな
+？！
+
+[charaFaceFade A 7 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V170]
+っ……それは……[wait tVoice]
+[k]
+
+[charaFaceFade A 15 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V180]
+……うう。[r]確かに、一理ある、かも、です。[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V190]
+最初から最後まで虫空間、一方的に投げ与えて[r]ハイ終わり、ではまさに虫に与える[#食餌:しょくじ]。[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V200]
+バレンタインチョコを渡すという定義からは[r]少しずれてしまうかもしれません。[wait tVoice]
+[k]
+
+[charaFaceFade A 7 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V210]
+定義から外れるのは……よくありません。[r]うう、じゃあ、仕方ないです……。[wait tVoice]
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ade1024]
+[seVolume 24_ade1024 0 0.7]
+[bgmStop BGM_KAZURA_1 1.0]
+[fadeout white 1.0]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+
+
+[branchQuestClear lblClear03c 94064915]
+[branchQuestClear lblClear03c 3001101]
+[branchQuestClear lblClear03b 3000303]
+
+[label lblClear03a]
+[scene 106000]
+
+[branch lblConf03]
+
+[label lblClear03b]
+[scene 105800]
+
+[branch lblConf03]
+
+[label lblClear03c]
+[scene 157910]
+[label lblConf03]
+
+[wt 2.0]
+[charaSet A 10018002 1 カズラドロップ]
+
+[fadein white 1.0]
+[wait fade]
+[wt 1.0]
+
+？1：戻った……
+？2：（普通の大きさのお団子が机の上にある）
+？！
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+[wt 1.5]
+
+[bgm BGM_MAP_127 0.1]
+
+？1：ありがとね、カズラ
+？2：味わって食べるよ！
+？！
+
+[charaFace A 15]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V220]
+～～～～～！[wait tVoice]
+[k]
+
+[charaFace A 14]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V230]
+それはどうも！　はい、では[r]これで満足ですか満足ですよね！[wait tVoice]
+[k]
+
+
+[charaFace A 4]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V240]
+タスクが終わったようなので私はこれで。[wait tVoice]
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ade1080]
+[seStop 24_ade1080 0.8]
+[charaMove A -50,0 0.8]
+[wt 1.5]
+
+[charaFace A 14]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V250]
+べ、別に評価が怖いから[r]逃げ出そうとしてるわけじゃなくて、[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V260]
+ただいろいろ仕事の予定があるからなので[r]お気になさらず！[wait tVoice]
+[k]
+
+？1：せっかくだから一緒に食べない？
+？！
+
+[charaFace A 13]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V270]
+はーーーー！？
+[k]
+
+？1：一緒に食べれば[line 3]
+？2：『評価』じゃなくて『感想を言い合う』になるよ
+？！
+
+[charaFace A 6]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V280]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V290]
+で、でも。それはマスターさんのために[r]作ったものですから……[wait tVoice]
+[k]
+
+？1：それでも一緒に食べたりするのが
+？2：完璧なバレンタインの過ごし方だったりするよ
+？！
+
+[charaFace A 13]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V300]
+……！[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V310]
+ふ、ふーん？[r]そう、ですか。[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V320]
+それが完璧の一つだと言うのであれば、まあ、[r]受け入れられないワケではありません。[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V330]
+私はバレンタインというものの定義を[r]インストールしたばかり。[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V340]
+アップデートをかけてそれを[r]より完璧に近付けられるというのならば、[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V350]
+否定するのも私の在り方に反します。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V360]
+いいですよ。[r]ご一緒してあげようじゃありませんか。[wait tVoice]
+[k]
+
+？1：それじゃ、キミは椅子にどうぞ
+？2：自分はベッドにでも座って……
+？！
+
+[charaFace A 3]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V370]
+だ、ダメです！[r]ベッドでオヤツを食べる気なんですか？[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V380]
+こぼしちゃったらどうするんですか、[r]汚いことこの上なし、ですよ！[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V390]
+ちゃんと椅子に座って[r]テーブルで食べてください！[wait tVoice]
+[k]
+
+？1：とはいえ、今はここに椅子は一つしかないから
+？2：別の部屋から椅子持ってくる？
+？！
+
+
+[messageOff]
+[charaTalk off]
+[charaFace E 16]
+[charaScale Q 1.2]
+[charaDepth A 1]
+[charaDepth Q 2]
+[charaDepth E 3]
+[charaFadein Q 0.4 0,-200]
+[charaFadein E 0.4 -80,30]
+[charaMove Q 30,-200 1.2]
+[charaMove E -50,30 1.2]
+[wt 2.2]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFadeout E 0.5]
+[charaFadeout Q 0.5]
+[wt 0.8]
+
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V400]
+[line 3]いいえ。[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V410]
+かしこい・かわいい・かよわいカズラちゃんは[r]既に解決策を[#導出:どうしゅつ]しました。[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V420]
+マスターさんは椅子に座ったままで。[r]私のほうが[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ade1080]
+[seStop 24_ade1080 0.8]
+[charaMoveScale A 1.2 1.0]
+[charaMove A 0,40 1.0]
+[wt 1.5]
+
+[subRenderScale #C 1.2]
+[charaLayer G sub #C]
+[charaLayer Q sub #C]
+[charaLayer F sub #C]
+[charaDepth Q 1]
+[charaDepth F 3]
+[charaDepth G 2]
+
+[charaFadein Q 0.1 0,-100]
+[charaFadein F 0.1 0,0]
+[subCameraFilter #C maskEdge cut359_mask07 5 195,217,65,255 0]
+
+[cueSe SE_25 25_ade1144]
+[subRenderFadein #C 0.3 0,-140]
+[subRenderMove #C 0,-120 0.3]
+[charaFadeout A 0.3]
+[wt 0.4]
+[cueSe SE_24 24_ade981]
+[seStop 24ade981 0.5]
+[wt 1.0]
+
+
+？1：わあ、こっちの膝の上に座るの！？
+？2：不安定じゃない？　大丈夫？
+
+[charaFaceFade F 15 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V430]
+ま、まったく問題ありません。[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V440]
+重くもないでしょう？[r]私は小さい妖精なので。[wait tVoice]
+[k]
+
+？！
+
+[charaFaceFade F 11 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V450]
+計算したところ[line 3][r]これがもっとも『完璧』なスタイルです。[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V460]
+二人で一緒に食べられますし。[r]食べるときの視界だって一緒ですし。[wait tVoice]
+[k]
+
+[charaFaceFade F 14 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V470]
+な、何か問題がありますか？[wait tVoice]
+[k]
+
+？1：（ちょっと恥ずかしくはあるけど）
+？2：カズラがいいなら、ない……かな
+？！
+
+[charaFaceFade F 12 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V480]
+問題はないようですね。[wait tVoice]
+[k]
+
+[charaFaceFade F 13 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V490]
+さあ！[wait tVoice]
+[k]
+
+[charaFaceFade F 14 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V500]
+いくら鈍感で不勉強なマスターさんと言えども、[r]この次の設問の正解ぐらいはわかりますよね？[wait tVoice]
+[k]
+
+[charaFaceFade F 4 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V510]
+どうやって『一緒に食べる』をするか。[wait tVoice]
+[k]
+
+[charaFaceFade F 7 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V520]
+それくらいは……[r]わかって、くれますよね？[wait tVoice]
+[k]
+
+？1：それじゃあ……
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：[line 3]あーん、かな？
+
+？！
+
+[charaFaceFade F 11 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V530]
+ふふっ。[wait tVoice]
+[k]
+
+[charaFaceFade F 12 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V540]
+正解、ですっ☆[r]よくできました！[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V550]
+あーん。[wait tVoice]
+[k]
+
+[messageOff]
+[charaMoveReturn F 0,5 0.4]
+[wt 0.2]
+[se adm34]
+[wt 0.5]
+[se ade161]
+[seStop ade161 1.2]
+[wt 1.5]
+
+[charaFaceFade F 11 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V560]
+うーん、美味しい！[r]さすが私、お菓子作りのスキルも完璧です。[wait tVoice]
+[k]
+
+[charaFaceFade F 1 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V570]
+じゃあ次は私のターンですね。[r]はい、あーん……[wait tVoice]
+[k]
+
+[charaFaceFade F 7 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V580]
+え？　恥ずかしい？[wait tVoice]
+[k]
+
+[charaFaceFade F 6 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V590]
+何を言ってるんですか、[r]私にだけやらせるとかありえないでしょう。[wait tVoice]
+[k]
+
+[charaFaceFade F 3 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V600]
+お互いにこうするのが、[r]完璧に公平な『一緒に食べる』！[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V610]
+パーフェクトなバレンタインの[r]過ごし方（最新アップデート版）、なのです！[wait tVoice]
+[k]
+
+[charaFaceFade F 5 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V620]
+ワガママ言ってるとまた虫空間ですよ！[wait tVoice]
+[k]
+
+？1：じゃあ……あーん
+？！
+
+[charaFaceFade F 0 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V630]
+観念しましたか。[r]最初からそうすればいいのです。[wait tVoice]
+[k]
+
+[bgm BGM_MAP_127 1.0 0.6]
+[charaPut G 0,0]
+[charaPut I 0,0]
+[charaFadeTime G 0.2 0.5]
+[charaFadeTime I 0.2 0.5]
+[charaFace F 16]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V640]
+（今まで、管理といえば虫空間の中で……[r]　と思っていましたが）[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V650]
+（ひょっとしたら、こういうのもアリなのかもです）[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V660]
+（膝の上に乗って、ゼロ距離で、完全管理……）[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V670]
+（普段は肉体的な強度問題が気になりますし、[r]　今だっていつ怖くなっても不思議じゃないんですけど）[wait tVoice]
+[k]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V680]
+（ありえないとわかっていても、[r]　このヒトだったらひょっとして、なんて気分に……）[wait tVoice]
+[k]
+
+
+[messageOff]
+[charaFadeout G 0.5]
+[charaFadeout I 0.5]
+
+[bgm BGM_MAP_127 1.0 1.0]
+[se ade385]
+[seStop ade385 0.6]
+[cameraMove 0.5 0,-20 1.1]
+[subCameraMove #C 0.5 0,-20 1.1]
+[wt 1.0]
+
+？1：[line 3]？　どうかした？
+？！
+
+[charaShake F 0.05 2 2 0.2]
+[charaFaceFade F 14 0.1]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V690]
+わあ！[r]いきなり顔を近付けないでください。[wait tVoice]
+[k]
+
+[charaFaceFade F 15 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V700]
+こういうの、初めてだったから……[r]その、ちょっと精神を集中させていただけです。[wait tVoice]
+[k]
+
+[charaFaceFade F 14 0.2]
+
+＠カズラドロップ
+[tVoice ValVoice_1001800 0_V710]
+さあ、もっと大きく口を開けてください。[r]かよわい雛鳥のように、非力な青虫のように！[wait tVoice]
+[k]
+
+[messageOff]
+[subRenderFadeout #C 0.4]
+[charaFadein R 0.4 100,-220]
+[charaMove R -100,-220 75.0]
+[wt 1.5]
+
+[charaDepth A 1]
+[charaDepth R 2]
+[charaFace A 12]
+[charaFadein A 0.4 1]
+
+
+＠
+[tVoice ValVoice_1001800 0_V720]
+強くて弱いあなた。[r]完全を目指して不完全を許容するあなた。[wait tVoice]
+[k]
+
+＠
+[tVoice ValVoice_1001800 0_V730]
+[#中途半端:ちゅうとはんぱ]で、認めたくなくて、嫌ではあるけれど。[wait tVoice]
+[k]
+
+＠
+[tVoice ValVoice_1001800 0_V740]
+未だ完全ではないからこそ、[r]考えていいこともあるのかもしれない。[wait tVoice]
+[k]
+
+＠
+[tVoice ValVoice_1001800 0_V750]
+目的は変わらなくとも。[r]タスクは変わらなくとも。[wait tVoice]
+[k]
+
+＠
+[tVoice ValVoice_1001800 0_V760]
+それを叶える方法のアップデート。[wait tVoice]
+[k]
+
+＠
+[tVoice ValVoice_1001800 0_V770]
+今より少しだけ甘い、[r]実行プログラムのことを。[wait tVoice]
+[k]
+
+＠
+[tVoice ValVoice_1001800 0_V780]
+そう、目的に近付くためのプログラムの進歩を[r]考えるのは、完璧なＡＩとして当然のこと。[wait tVoice]
+[k]
+
+＠
+[tVoice ValVoice_1001800 0_V790]
+何も問題はない。[wait tVoice]
+[k]
+
+＠
+[tVoice ValVoice_1001800 0_V800]
+この膝の上に乗っている時間は、[r]テーブルの上のお菓子がなくなるまでの時間は、[wait tVoice]
+[k]
+
+＠
+[tVoice ValVoice_1001800 0_V810]
+そのプログラムの[#試運転:テストラン]期間。[wait tVoice]
+[k]
+
+＠
+[tVoice ValVoice_1001800 0_V820]
+だから、ちゃんと近くでこちらを見て。[wait tVoice]
+[k]
+
+＠
+[tVoice ValVoice_1001800 0_V830]
+ちゃんと、同じになってくださいね？[wait tVoice]
+[k]
+
+
+[messageOff]
+[charaTalk A]
+[charaFadeout R 0.6]
+[wt 1.0]
+
+＠
+[tVoice ValVoice_1001800 0_V840]
+そうして、慈愛のアルターエゴは。[r]心からの願いを込めて[line 3][wait tVoice]
+[k]
+
+＠
+[tVoice ValVoice_1001800 0_V850]
+[#憎:愛]らしい人間の口に、[r]菓子よりも甘い慈愛をそっと押し込むのでした。[wait tVoice]
+[k]
+
+
+
+[messageOff]
+[wt 1.5]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_127 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

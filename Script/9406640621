@@ -1,0 +1,941 @@
+
+
+＄94-06-64-06-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098231900 1 バゼット]
+[charaSet B 10011002 1 マナナン]
+[charaSet C 1098218300 1 テオブローマン]
+[charaSet D 98006300 1 チョコレートの精霊]
+[charaSet E 1098226800 1 アストライア_シャドウ]
+[charaSet F 1098226800 1 アストライア_シャドウ]
+[charaSet G 9008000 1 アストライア]
+[charaSet H 3027001 1 メドゥーサ]
+
+[imageSet I cut317_mnn05 1 1]
+[imageSet J cut317_bzt05 1 1]
+[imageSet K cut317_mnn02 1 1]
+[imageSet L cut317_bzt02 1 1]
+
+[charaSet M 1098231900 1 バゼット]
+[charaSet N 10011002 1 マナナン]
+[sceneSet O 131201 1]
+[imageSet P back10000 1 1]
+[charaScale P 1.05]
+[imageSet Q back10000 1 1]
+[charaScale Q 1.05]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用]
+[imageSet X back10000 1 1]
+[charaScale X 1.3]
+
+[scene 131201]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+[se ad1006]
+[charaMoveScale C 1.1 0.2]
+[charaMove C 0,14 0.2]
+[charaFadeout C 0.2]
+[wt 0.3]
+
+[se ad1051]
+[fowardEffect bit_talk_claw_red02 0,0 H]
+[wt 0.6]
+
+[se ad170]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_claw_red02]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[fowardEffect bit_talk_14]
+[charaScale A 1.1]
+[charaScale B 1.1]
+[charaFace A 2]
+[charaFace B 5]
+[charaFadeinFSR A 0 256,10]
+[charaFadeinFSL B 0 -256,10]
+[charaShake A 0.02 3 4 0.6]
+[charaShake B 0.03 3 3 0.6]
+[charaMoveScale A 1.0 0.2]
+[charaMoveScale B 1.0 0.2]
+[wt 0.1]
+[cueSeStop ad671 0.6]
+[wt 1.0]
+
+
+[se ad678]
+[se ad7]
+[charaFace A 3]
+[charaFace B 2]
+[charaMoveScale A 1.1 0.2]
+[charaMoveScale B 1.1 0.2]
+[charaMoveFSR A 261,14 0.2]
+[charaMoveFSL B -261,14 0.2]
+[charaFadeout A 0.2]
+[charaFadeout B 0.2]
+[wt 0.4]
+
+[cueSe Servants_104800 m42602]
+[fowardEffect bit_talk_gram_slash_04_fs 0,0 V]
+[wt 0.6]
+
+[se ad1052]
+[fowardEffect bit_talk_windstorm]
+[wt 1.0]
+
+[seStop ad1052 0.1]
+[se ad32]
+[se ad633]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_windstorm]
+[fowardEffectDestroy bit_talk_gram_slash_04_fs]
+
+
+[charaTalk on]
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0 1]
+[charaShake C 0.03 4 4 0.5]
+[wt 1.0]
+
+＠テオブローマン
+カカーッカカカーーー！！[r]そう簡単にやられたりはしないのです！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad73]
+[charaEffect C bit_talk_quickmove]
+[charaSpecialEffect C erasureReverse 1 0.2]
+[charaMove C 0,6 0.4]
+[wt 0.9]
+
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠バゼット
+くっ……枝から枝へと！[r]なんと鬱陶しい戦い方を！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ad73]
+[charaTalk C]
+[charaPut C 1]
+[charaEffect C bit_talk_quickmove]
+[charaSpecialEffect C appearanceReverse 1 0.2]
+[wt 1.0]
+
+＠テオブローマン
+とはいえ、[r]状況はあんまりよろしくないかにゃー。
+[k]
+
+＠テオブローマン
+よし、ここはひとつ、[r]出直す事にしますか！
+[k]
+
+＠テオブローマン
+聖杯さえあれば、[r]どこにだって木を生やせるもんねーだ！
+[k]
+
+＠テオブローマン
+カカカカカ、さらばだ諸君……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[cueSe Battle bac95]
+[charaShake C 0.03 3 4 0.6]
+[wt 1.5]
+
+＠テオブローマン
+あれ？
+[k]
+
+＠テオブローマン
+……[r]……
+[k]
+
+＠テオブローマン
+うぎゃーーーーーーッ！！？？[bgm BGM_EVENT_7 0.1]
+[k]
+
+＠テオブローマン
+背中にアフリカブワカ族の[r]投げナイフっぽいのがブッスリとぉー！？
+[k]
+
+
+
+
+＠D：？？？
+ひひひ、悪いね。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠チョコレートの精霊
+復讐するは我にありって精神は分かるんだが、[r]そこまでにしておこうぜ、虎の姉ちゃん。
+[k]
+
+＠チョコレートの精霊
+ここまではやりすぎだ。[r]他の植物たちもこう言っているの、聞こえない？
+[k]
+
+＠チョコレートの精霊
+“やられたらやり返す、は自然の法則だけどぉ。[r][f small]  [f -]生態系を乱すまでの分からせはＮＧじゃない？”
+[k]
+
+＠チョコレートの精霊
+ってさ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠テオブローマン
+お、おのれえええ！！[r][#日和見:ひよりみ]主義の植物どもめぇーーー！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠チョコレートの精霊
+そりゃそうでしょ。[r]植物だもの、光合成するからね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+
+＠テオブローマン
+上手い事言ったつもりカカーーーッ！？
+[k]
+
+＠テオブローマン
+おのれおのれ、[r]かくなる上は[line 3]
+[k]
+
+＠テオブローマン
+このワガママボディに溜めに溜めた、[r]ありったけの魔力で自爆してやらぁー！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.5]
+
+[charaPut S 1]
+[charaEffect S bit_talk_charge_aura_set]
+[wt 0.1]
+[se ad606]
+[wt 2.5]
+
+[seStop ad606 1.0]
+＠テオブローマン
+うおお、輝け私のサンシャイン！[r]『やる気』がミチミチ満ちてくる！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠マナナン
+！！[wt 0.6][charaFace B 2][r]バゼット、ここです！
+[k]
+
+[bgm BGM_BATTLE_78 0.1]
+[messageOff]
+[charaDepth B 2]
+[charaDepth T 3]
+[charaPut T 1]
+[charaEffect T bit_talk_lightning_07b]
+[wt 0.1]
+
+[se ad632]
+[seVolume ad632 0 0.4]
+[se ad820]
+[seVolume ad820 0 0.4]
+[cueSe SE_21 21_ad1116]
+[cueSeVolume 21_ad1116 0 0.2]
+[wt 3.0]
+
+[seStop ad632 0.3]
+[seStop ad820 0.3]
+[cueSeStop 21_ad1116 0.3]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠バゼット
+言われるまでもありません！
+[k]
+
+
+[messageOff]
+[charaDepth A 2]
+[charaDepth U 3]
+[charaPut U 1]
+[charaEffect U bit_talk_lightning_07b]
+[wt 0.1]
+
+[se ad632]
+[seVolume ad632 0 0.4]
+[se ad820]
+[seVolume ad820 0 0.4]
+[cueSe SE_21 21_ad1116]
+[cueSeVolume 21_ad1116 0 0.2]
+[wt 3.0]
+
+[seStop ad632 0.3]
+[seStop ad820 0.3]
+[cueSeStop 21_ad1116 0.3]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut U 2000,2500]
+
+
+[charaPut S 1]
+[charaEffect S bit_talk_charge_red]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠テオブローマン
+キミよ自然に還れ！[r]グレートカカオクロー……
+[k]
+
+＠テオブローマン
+[f large]……エクスプロージョン！！
+[k]
+
+
+[messageOff]
+[se ad678]
+[se ad1006]
+[charaMoveScale C 1.2 0.3]
+[charaMove C 0,18 0.3]
+[blur motion 0.2 4 10 0.5 0.6 0.05 100]
+[wt 0.7]
+
+[charaTalk off]
+[charaDepth O 5]
+[charaDepth M 7]
+[charaDepth N 8]
+[charaDepth T 6]
+[charaDepth U 6]
+[charaDepth V 9]
+[charaDepth W 9]
+
+[charaDepth S 1]
+[charaDepth C 8]
+[charaDepth X 9]
+
+[blurOff motion 0.3]
+[charaPut X 1]
+[charaFadeTime X 0.3 0.6]
+[wt 0.1]
+
+
+
+
+
+
+[se ad632]
+[seVolume ad632 0 0.2]
+[se ad820]
+[seVolume ad820 0 0.2]
+[cueSe SE_21 21_ad1116]
+[cueSeVolume 21_ad1116 0 0.1]
+
+[se ad747]
+[seVolume ad747 0 0.8]
+[overlayFadein I 0.1 -300,-300]
+[charaMove I 0,-300 0.2]
+[wt 0.1]
+[seStop ad747 0.6]
+[wt 0.4]
+
+＠N：マナナン
+応答せよ[line 3][r][#後より出でて先に断つもの:ア　　　ン　　　サ　　　ラ　　　ー][line 3]！！
+[k]
+
+[messageOff]
+[se ad421]
+[overlayFadein J 0.1 300,-300]
+[charaMove J 0,-300 0.2]
+[wt 0.5]
+
+＠M：バゼット
+逆光剣[line 3]『[#斬り抉る:フ　　ラ　　ガ][line 3]！！
+[k]
+
+[charaTalk off]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[overlayFadein K 0 0,-300]
+[overlayFadein L 0 0,-300]
+[charaFadeout I 0]
+[charaFadeout J 0]
+＠バゼット＆マナナン
+[f large][line 3][messageShake 0.05 4 3 0.6][#戦神の剣:ラ　　ッ　　ク]』！！
+[k]
+
+
+[messageOff]
+[wipeout circleIn 0.3 1.0]
+[bgm BGM_BATTLE_78 0.5 0.4]
+[seStop ad632 0.6]
+[seStop ad820 0.6]
+[cueSeStop 21_ad1116 0.6]
+[wait wipe]
+
+[charaFadeout K 0]
+[charaFadeout L 0]
+[charaFadeout X 0.1]
+[charaFadeout C 0.1]
+[charaPut S 2000,2500]
+[charaEffectDestroy S bit_talk_charge_red]
+[charaEffectDestroy S bit_talk_charge_aura_set]
+
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaPut T 2000,2500]
+[charaPut U 2000,2500]
+[charaPut V 2000,2500]
+[charaPut W 2000,2500]
+[charaEffectDestroy T bit_talk_lightning_07b]
+[charaEffectDestroy U bit_talk_lightning_07b]
+[charaEffectDestroy V bit_talk_lightning_07b]
+[charaEffectDestroy W bit_talk_lightning_07b]
+
+[scene 10000]
+[wt 0.2]
+
+[charaScale T 1.0]
+[charaScale U 1.0]
+[charaScale V 1.0]
+[charaScale W 1.0]
+
+[wipein circleIn 0.2 1.0]
+[wait wipe]
+
+[se ad1051]
+[se ad85]
+[charaPut S 1]
+[charaEffect S bit_talk_claw_red02]
+[wt 0.5]
+
+[se ad1051]
+[se ad85]
+[charaPut T 1]
+[charaEffect T bit_talk_claw_red02 0,0 H]
+[wt 1.0]
+
+[charaPut U 250,0]
+[charaPut V -250,0]
+[charaEffect U bit_talk_chargeflash_b]
+[charaEffect V bit_talk_chargeflash_b 0,0 H]
+[wt 0.1]
+[cueSe Servants_104800 m42617]
+[wt 0.1]
+[charaEffectStop U bit_talk_chargeflash_b]
+[charaEffectStop V bit_talk_chargeflash_b]
+[wt 1.0]
+
+[cueSeStop m42617 0.1]
+
+[cueSe Servants_104800 m42623]
+[cueSe Servants_104800 m42614]
+[cueSe Battle bac325]
+[se ad828]
+
+[fadeout white 0.3 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[cueSeStop m42623 2.0]
+[cueSeStop m42614 2.0]
+[cueSeStop bac325 2.0]
+[seStop ad828 2.0]
+
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+[charaPut U 2000,2500]
+[charaEffect S bit_talk_06b2]
+[charaEffect T bit_talk_11]
+[charaEffect U bit_talk_11]
+[wt 2.5]
+
+[scene 131201]
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+[bgm BGM_BATTLE_78 1.5 0.8]
+[wt 0.5]
+
+[charaTalk on]
+[charaScale C 1.0]
+[charaPut S 0,0]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaShake C 0.03 4 4 0.6]
+＠テオブローマン
+ぐ……ぐわあああーーー！！[r]これ死ぬしかないやつーーー！！
+[k]
+
+＠テオブローマン
+だ、だが覚えておくのだ人類……[r]我を倒そうとも第二、第三の我が……！
+[k]
+
+
+＠テオブローマン
+あ、あと水のあげすぎには注意してね！[r]根腐れダメ、絶対……！
+[k]
+
+＠テオブローマン
+がくり。
+[k]
+
+
+[bgmStop BGM_BATTLE_78 1.5]
+[messageOff]
+[wt 0.1]
+
+[se ad52]
+[seVolume ad52 0 0.4]
+[se ade59]
+[seVolume ade59 0 0]
+[charaSpecialEffect C enemyErasure 0,0 1.8]
+[wt 0.2]
+[seVolume ade59 0.3 0.5]
+[wt 0.7]
+[seStop ade59 1.2]
+[wt 0.5]
+[se adm18]
+[seVolume adm18 0 0.6]
+[wt 0.2]
+[seStop adm18 0.4]
+[wait charaSpecialEffect C]
+[charaEffectStop S bit_talk_06b2]
+[wt 1.2]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+
+[overlayFadein P 0.1 0,-755]
+[overlayFadein Q 0.1 0,755]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+[charaPutFSR T 256,-200]
+[charaPutFSL U -256,-200]
+[charaFace E 0]
+[charaFace F 0]
+[charaFadeinFSR E 0.1 256,-50]
+[charaFadeinFSL F 0.1 -256,-50]
+[wt 1.0]
+
+[se ad52]
+[seVolume ad52 0 0.4]
+[se ade59]
+[seVolume ade59 0 0]
+[charaSpecialEffect E enemyErasure 1 1.8]
+[charaSpecialEffect F enemyErasure 1 1.8]
+[wt 0.2]
+[seVolume ade59 0.3 0.5]
+[wt 0.3]
+[charaEffectStop T bit_talk_11]
+[charaEffectStop U bit_talk_11]
+[wt 0.4]
+[seStop ade59 1.2]
+[wt 0.5]
+[se adm18]
+[seVolume adm18 0 0.6]
+[wt 0.2]
+[seStop adm18 0.4]
+[wait charaSpecialEffect F]
+[wt 1.1]
+
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+＠アストライア
+あら……
+[k]
+
+＠アストライア
+もう打ち止めですの？[r]まるで物足りなかったですわね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 0,-50]
+＠メドゥーサ
+ふふ……見事な裁定でした、[r][#正義の女神:レディ・ジャスティス]。
+[k]
+
+＠メドゥーサ
+どうやら向こうでも、[r]あの二人がやってくれたようですね。
+[k]
+
+＠メドゥーサ
+ああ、最後のテオブロマの樹が……[r]倒れていきます[line 3]
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+
+[wt 1.0]
+
+[cueSe SE_21 21_ade680]
+[wt 4.0]
+
+[charaSet A 10011000 1 バゼット]
+
+[charaDepth S 8]
+[charaDepth T 9]
+[charaPut S 300,-100]
+[charaPut T -300,-100]
+[charaEffect S bit_talk_40_fs]
+[charaEffect T bit_talk_40_fs]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+＠バゼット
+終わった……[r]これでようやく、この微小特異点も……
+[k]
+
+[charaFace A 5]
+＠バゼット
+……！
+[k]
+
+[charaFace A 2]
+＠バゼット
+待ってください、そこの方！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+
+＠チョコレートの精霊
+ん？　オレ？
+[k]
+
+＠チョコレートの精霊
+はいはい、ご苦労さん。[r]悪くない仕事ぶりでしたよっと。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 6]
+[charaDepth D 4]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFace D 0]
+[charaFadeinFSR A 0.1 256,-50]
+[charaFadeinFSL D 0.1 -256,-50]
+＠バゼット
+そ、そうですか。ありがとうございます。[r]上手くいったのはあなたのおかげです。
+[k]
+
+[charaFace A 0]
+＠バゼット
+それで……あなたは一体？
+[k]
+
+＠バゼット
+その、こうして目の前にいるのに、[r]よく顔が見えないのですが……
+[k]
+
+＠チョコレートの精霊
+うん。そりゃあよく分からないものだからね。[r]アンタが知らないうちは、そんなもんさ。
+[k]
+
+＠チョコレートの精霊
+わざわざ呼び止めるほどのモンじゃない。[r]分からないまま別れるのがいい。
+[k]
+
+[charaFace A 4]
+＠バゼット
+でも……助けてくれました。[r]一度だけでなく……何度も……何度も……
+[k]
+
+[charaFace A 8]
+＠バゼット
+そんな記憶はないのですが……[r]とにかく、そんな気がするのです。
+[k]
+
+＠チョコレートの精霊
+何度も、は言い過ぎだ。[r]せいぜい一度か二度くらい、じゃない？
+[k]
+
+＠チョコレートの精霊
+それも背中を押す程度だ、大したコトじゃない。[r]今回と同じ、ただの気まぐれさ。
+[k]
+
+＠チョコレートの精霊
+[#条件反射:じょうけんはんしゃ]だよ、[#条件反射:じょうけんはんしゃ]。[r]溺れそうな子を見たら助けるのが人間だろ？
+[k]
+
+[charaFace A 3]
+＠バゼット
+[line 3]それは[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠チョコレートの精霊
+んじゃまあ、てるてる坊主はこのあたりで。[r]楽しかったなら何よりだ。
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad595]
+[seVolume ad595 0 0.5]
+[wt 0.1]
+[charaFadeout D 1.0]
+[seStop ad595 1.0]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+＠バゼット
+あ……！
+[k]
+
+[charaFace A 0]
+＠バゼット
+……[r]……
+[k]
+
+＠バゼット
+一体、何者だったんだろう。[r]初めて会った筈なのに……
+[k]
+
+＠バゼット
+私は、あの人を知らない筈なのに……
+[k]
+
+[charaFace A 4]
+＠バゼット
+どうして、こんな……
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+[charaEffectStop S bit_talk_40_fs]
+[charaEffectStop T bit_talk_40_fs]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+
+？1：バゼットさん、マナナンさん！
+？！
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠マナナン
+……[r]……
+[k]
+
+[charaFace B 0]
+＠マナナン
+[%1]……
+[k]
+
+
+？1：これで……終わった[&のか:の]？
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[pictureFrame cut063_cinema]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk off]
+[charaDepth G 4]
+[charaDepth H 6]
+
+[charaFace G 1]
+[charaFace H 1]
+[charaFadeinFSL G 0.1 -256,-50]
+[charaFadeinFSR H 0.1 256,-50]
+[wt 1.4]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+[wt 1.4]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[pictureFrame]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マナナン
+……[r]……
+[k]
+
+＠マナナン
+……いいえ。
+[k]
+
+＠マナナン
+あの樹の中には……[r][#聖杯はありませんでした]。
+[k]
+
+[charaFace B 5]
+＠マナナン
+この微小特異点は、[r]どうやら……
+[k]
+
+＠マナナン
+[#まだ]、[#終わりではないようです]。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,959 @@
+
+
+＄94-09-56-06-7-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257800 1 マシュ]
+[charaSet B 25014001 1 蒼崎青子]
+[charaSet C 7049000 1 静希草十郎]
+[charaSet D 2051000 1 杉谷]
+[charaSet E 1098294400 1 木乃美芳助]
+[charaSet F 6049001 1 花心]
+[charaScale F 1.3]
+[charaSet G 1098293700 1 巨大怪異]
+[charaSet H 1098293700 1 巨大怪異_演出用]
+[charaFilter H silhouette 00000080]
+[charaSet I 2051000 1 杉谷_演出用]
+[charaSet J 6049001 1 花心_演出用]
+[charaScale J 1.3]
+
+[charaSet K 98115000 1 エフェクト用1]
+[charaSet L 98115000 1 エフェクト用2]
+
+[sceneSet N 215903 1]
+[charaScale N 1.45]
+[sceneSet O 215903 1]
+[charaScale O 1.2]
+[sceneSet P 215903 1]
+[charaScale P 1.2]
+[sceneSet Q 215903 1]
+[charaScale Q 1.2]
+[sceneSet R 215903 1]
+[charaScale R 1.2]
+
+[imageSet T back10000 1]
+[charaScale T 1.1]
+
+[subCameraOn 2]
+[subCameraFilter #A maskEdge cut359_mask13 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask02 5 255,255,255,255]
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.0]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[charaLayer I sub #A]
+[charaLayer Q sub #A]
+[charaLayer B sub #B]
+[charaLayer R sub #B]
+[charaDepth I 2]
+[charaDepth Q 1]
+[charaScale I 1.5]
+[charaScale Q 1.4]
+[charaFace I 6]
+[charaFadein I 0.1 -250,270]
+[charaFadein Q 0.1 200,-200]
+[charaDepth B 2]
+[charaDepth R 1]
+[charaScale B 1.5]
+[charaScale R 1.4]
+[charaFace B 5]
+[charaFadein B 0.1 120,250]
+[charaFadein R 0.1 -200,-200]
+
+[scene 215903]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth K 8]
+[charaDepth H 7]
+[charaDepth G 6]
+
+[charaScale G 0.8]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+[cueSe SE_22 22_ad1219]
+
+[bgm BGM_BATTLE_270 0.1]
+
+[fadein black 0.5]
+[cueSeVolume 22_ad1219 1.0 0.7]
+[charaShake G 0.01 0 3 1.5]
+[charaMoveScale G 1.0 1.5]
+[charaMove G 0,0 1.5]
+[wait fade]
+[cueSeStop 22_ad1219 1.5]
+[wt 1.1]
+
+[subRenderFadein #A 0.3 -100,-210]
+[subRenderMoveEase #A 0,-210 0.3 easeInOutSine]
+[subRenderFadein #B 0.3 100,-450]
+[subRenderMoveEase #B 0,-450 0.3 easeInOutSine]
+[wt 0.3]
+
+[charaEffect I bit_talk_smoke 800,0]
+[charaEffect B bit_talk_lightning_06i -100,180]
+[wt 0.2]
+[cueSe SE_23 23_ade910]
+[charaMoveReturn I -250,265 0.3]
+[charaShake I 0.02 2 2 0.3]
+[wt 0.3]
+[charaEffectStop I bit_talk_smoke]
+[wt 0.6]
+
+[charaFace B 5]
+[se adm31]
+[seVolume adm31 0 0]
+[seVolume adm31 0.5 0.8]
+[wt 0.5]
+
+[fadeout white 0.3]
+[seStop adm31 0.5]
+[wait fade]
+
+[charaEffectDestroy I bit_talk_smoke 800,0]
+[charaEffectDestroy B bit_talk_lightning_06i -100,180]
+
+[charaFadeout G 0.1]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[charaLayer I normal]
+[charaLayer Q normal]
+[charaLayer B normal]
+[charaLayer R normal]
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[subCameraOff]
+[wt 0.1]
+
+[subCameraOn 2]
+[subCameraFilter #A maskEdge cut359_mask22]
+[subCameraFilter #B maskEdge cut359_mask20 10 0,0,0,255 1]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[charaLayer F sub #A]
+[charaLayer O sub #A]
+[charaLayer Q sub #B]
+[charaDepth F 2]
+[charaDepth O 1]
+[charaFadein O 0.1 -130,-120]
+[charaDepth Q 1]
+[charaFadein Q 0.1 -130,-120]
+
+[scene 10000]
+[cueSe SE_22 22_ad1220]
+[wt 0.5]
+
+[fadein white 0.3]
+[effect bit_talk_chargeflash_b]
+[shake 0.03 3 3 2.5]
+[wait fade]
+[wt 1.0]
+
+[cueSe Servants_2501100 m52534]
+[fadeout white 0.5]
+[wait fade]
+[effectDestroy bit_talk_chargeflash_b]
+
+[scene 215903]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[fadein white 0.5]
+[se ad854]
+[effect bit_talk_impactlanding]
+[charaShake G 0.02 3 3 1.2]
+[shake 0.03 2 2 1.4]
+[wait fade]
+[wt 0.7]
+
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[cueSe Servants_104700 m41906]
+[cueSeStop m41906 0.6]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[shake 0.03 3 3 0.4]
+[wt 0.4]
+[charaFadeout G 0.1]
+[wt 0.2]
+
+[charaShake H 0.02 3 3 0.8]
+[cueSe Servants_104700 m41906]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[shake 0.03 3 3 0.4]
+[wt 0.8]
+[cueSeStop m41906 1.2]
+[wt 0.5]
+
+
+[charaEffect H bit_talk_atomization_gra02]
+[charaPut K 340,0]
+[charaEffect K bit_talk_atomization_gra02]
+[charaPut L -340,0]
+[charaEffect L bit_talk_atomization_gra02]
+[cueSe Battle ba6]
+[wt 0.5]
+
+[bgmStop BGM_BATTLE_270 2.5]
+[se ad596]
+[charaFadeout H 0.8]
+[wt 3.0]
+
+[charaDepth C 8]
+[charaDepth B 7]
+[charaDepth D 6]
+[charaDepth N 5]
+[charaDepth I 4]
+[charaScale B 1.4]
+[charaScale C 1.3]
+[charaScale D 1.2]
+[charaScale I 1.0]
+
+？1：やった……
+？2：[&倒せてしまった……:倒せた……みたい？]
+
+？！
+
+[bgm BGM_EVENT_216 0.1]
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠I：杉谷
+俺もこの業界は長いが、そうお目にかかれない[r][#山怪:さんかい]だったぜ。ほとんど神さまだった。
+[k]
+
+[messageOff]
+[charaTalk B]
+
+[charaFace B 0]
+[charaFadein B 0.4 -155,30]
+
+[charaFace D 1]
+[charaFadein D 0.4 270,-30]
+
+[charaFadein N 0.4 -280,-350]
+
+[charaMoveEase D 300,-30 0.4 easeInOutSine]
+[charaMoveEase B -125,30 0.4 easeInOutSine]
+[charaMoveEase N -270,-350 0.4 easeInOutSine]
+[wt 0.5]
+
+[charaFadeout I 0.1]
+
+[charaTalk on]
+[charaTalk B]
+
+＠蒼崎青子
+ええ。[r]この旅館ぐらいまるっと[#祟:たた]り殺せそうなほどね。
+[k]
+
+＠蒼崎青子
+私たちが止めなかったら、[r]被害はもっと大きくなっていたはず。
+[k]
+
+[charaFace D 16]
+
+＠杉谷
+だがもういなくなった。[r]旅館に[#漂:ただよ]っていたイヤな空気もない。
+[k]
+
+
+＠杉谷
+これで万事解決だ。[r]他の霊障も次第に収まっていくだろうよ。
+[k]
+
+？1：じゃあこれで『世界が滅びる原因』はなくなった……？
+
+？！
+
+[messageOff]
+[charaTalk off]
+[charaMoveEase B 250,0 1.4 easeOutSine]
+[charaMoveScaleEase B 1.3 1.4 easeOutSine]
+[charaMoveEase D 450,-70 1.4 easeOutSine]
+[charaMoveScaleEase D 1.1 1.4 easeOutSine]
+[charaMoveEase N -180,-380 1.4 easeOutSine]
+[charaMoveScaleEase N 1.35 1.4 easeOutSine]
+[charaFadeout D 0.6]
+[wt 1.3]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 -300,0]
+[wt 0.4]
+
+＠静希草十郎
+そうなるんじゃないか？[r]『万能の秘湯』がこの先にあるとしても、
+[k]
+
+＠静希草十郎
+『願いを叶えてくれる』[#椀々:わんわん]様はいなくなった以上、[r]これ以上おかしな事は起きないはずだ。
+[k]
+
+[charaFace B 24]
+
+＠蒼崎青子
+……まあ、理屈ではそうなるわよね。
+[k]
+
+[charaFace B 23]
+
+＠蒼崎青子
+ただ、『誰がそんな事を願ったのか』は分からずじまい。[r]それだけは心残り。
+[k]
+
+[messageOff]
+[se ad59 1.0]
+[charaFadeout C 0.4]
+[charaFadeout B 0.4]
+[charaFadeout N 0.4]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.4 50,0]
+[charaMove A 0,0 0.3]
+[wt 0.4]
+[seStop ad59 0.2]
+
+[charaScale B 1.0]
+[charaScale C 1.0]
+[charaScale D 1.0]
+
+＠マシュ
+マスター、ご無事ですか！？
+[k]
+
+？1：もちろん！
+？2：なんとかなったよ
+
+？！
+
+[messageOff]
+[charaFace A 12]
+[wt 1.0]
+[se ad1023]
+[wt 0.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.4 50,0]
+[charaMove E 0,0 0.3]
+[seStop ad1023 0.5]
+[wt 0.4]
+
+＠木乃美芳助
+うひぃ、マシュちゃん足[#速:はえ]ぇー！[r]追いつけねぇー！
+[k]
+
+[charaFace E 5]
+
+＠木乃美芳助
+お？　このまったりした空気、[r]さてはぜんぶ解決した？　やったぜ！
+[k]
+
+[charaFace E 7]
+
+＠木乃美芳助
+って、花心ちゃん様倒れてるじゃん！[r]おおい何してんだよ、介抱しないと！
+[k]
+
+＠木乃美芳助
+なんか黒幕っぽそうだけどそこは気にしない！[r]しっかりするんだ花心ちゃん様！
+[k]
+
+[messageOff]
+[charaDepth J 8]
+[charaDepth P 7]
+[charaDepth B 5]
+[charaDepth E 4]
+[charaDepth A 3]
+
+[charaTalk F,E]
+[charaFace F 6]
+[charaFadein F 0.1 -200,125]
+[wt 0.1]
+
+[subRenderFadein #A 0.6 0,-175]
+
+[charaMoveEase F -200,145 1.0 easeInOutSine]
+[charaMoveEase O -130,-100 1.0 easeInOutSine]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+
+＠花心
+ん[line 6]。
+[k]
+
+[messageOff]
+[charaFaceFade F 3 0.3]
+[wt 0.5]
+[cueSe SE_24 24_ade981]
+[cueSe SE_23 23_ade862]
+[charaMove F -200,155 0.6]
+[wt 0.7]
+[cueSeStop 23_ade862 0.4]
+
+＠花心
+ヨシスケ……さン？[r]こコは……開かずの間、ですカ？
+[k]
+
+
+[charaFace F 8]
+
+＠花心
+はテ？　見知らぬ方が、たくさん、いますネ？[r]新しいお客さマ、ですカ？
+[k]
+
+[messageOff]
+[charaTalk F,A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+
+＠マシュ
+わたしたちの事を覚えていないのですか？[r]先輩、花心さんはおそらく……
+[k]
+
+
+？1：この５日間の記憶がない
+？2：[#椀々:わんわん]様に取り憑かれていた
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠蒼崎青子
+そのようね。演技でもなさそうだし。
+[k]
+
+＠蒼崎青子
+花心さん。貴女は『開かずの間』の結界を斬って、[r][#椀々:わんわん]様になっていたの。意味、分かる？
+[k]
+
+[messageOff]
+[charaTalk B,F]
+[charaFace F 4]
+[subRenderFadein #A 0.4 0,-175]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+
+＠花心
+[line 3]私が、ですカ？
+[k]
+
+[charaFace F 3]
+
+＠花心
+申し訳アリませン。人形師にあるまジき[#失態:しったい]、でス。
+[k]
+
+＠花心
+確かに……ズッと、暗い闇にいた気がしまス。[r]長い夢ヲ、見ていたようナ。
+[k]
+
+[messageOff]
+[charaTalk F,E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+
+＠木乃美芳助
+あ、そうなの？[r]どうりで様子がヘンだと思った。
+[k]
+
+＠木乃美芳助
+花心ちゃん様、いつも声の発音がバラバラなのに[r]ここ数日、[#流暢:りゅうちょう]に話すもんだからさー！
+[k]
+
+
+[messageOff]
+[charaTalk E,F]
+[charaFace F 8]
+[subRenderFadein #A 0.4 0,-175]
+[wt 0.4]
+[charaFadeout E 0.1]
+
+＠花心
+私、普通に、喋っていた、のですカ？[r]ふム。降りてくださった、牛神様の、おかげですネ。
+[k]
+
+＠花心
+他に悪サは、シマセンでした、カ？[r]牛神様は、ともかく、人に対して、意地悪、なのデ。
+[k]
+
+＠花心
+とくに強い霊障を、活性化さセる、なド、[r]お手の物ではなイでしょウか。
+[k]
+
+[messageOff]
+[charaTalk F,B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+
+＠蒼崎青子
+あー……五大怪談を最悪のタイミングで[r]起こしていたの、花心with[#椀々:わんわん]様だったワケね……
+[k]
+
+[charaFace B 21]
+
+＠蒼崎青子
+逃げるイシュタリンさんごと私たちを[r]消そうとして永廊下を呼び起こしたり、
+[k]
+
+＠蒼崎青子
+バゼットからケースを盗んで[r]逆写しの間に隠して罠に[#嵌:は]めたり、
+[k]
+
+＠蒼崎青子
+最後の足止めとして[r][#椿:つばき]の間の霊障を呼び起こしたり。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠静希草十郎
+なるほど。どうりで悪い事が重なると思った。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+[charaLayer I sub #B]
+[charaDepth I 2]
+[charaScale I 1.3]
+[charaFace I 8]
+[charaFadein I 0.1 0,160]
+
+＠杉谷
+ハッ！？[r]なら俺が女にされたのも牛神のせいだったのか！
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 10]
+[subRenderFadein #A 0.4 0,-175]
+[wt 0.4]
+[charaFadeout D 0.1]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠花心
+いエ、それハ私の趣味デすが。[r]いい[#魂:モノ]ヲお持ちだったノで、サービスしましタ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadeinFSR #B 0.3 200,-180]
+[se ad119]
+[seVolume ad119 0 0.7]
+[wt 1.8]
+[seStop ad119 0.4]
+
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+
+＠マシュ
+わたしたちが到着した時から花心さんは牛神様……[r][#椀々:わんわん]様に意識を乗っ取られていた事は分かりましたが、
+[k]
+
+[charaTalk on]
+＠マシュ
+花心さんは元々、どのような目的で[r][#隈乃:くまの]旅館に滞在していらしたのですか？
+[k]
+
+[messageOff]
+[charaTalk A,F]
+[charaFace F 1]
+[subRenderFadein #A 0.4 0,-175]
+[subRenderMove #A 50,-205 20.0]
+[subRenderMoveScale #A 1.1 20.0]
+[wt 0.4]
+[charaFadeout A 0.1]
+
+＠花心
+私の主人は、この山に[#棲:す]む幻獣……[r]牛神様を捕まえるタめに来た、妖術師だったソうです。
+[k]
+
+＠花心
+未来を見る眼、とイうものに関心ガあったトか。[r]デすが、牛神様はカタチのない霊魂のヨウな存在デシた。
+[k]
+
+＠花心
+捕まえる事はデきない、と悟った主人ハ、[r]次の特異能力保持者を探シに旅立チ、
+[k]
+
+＠花心
+私はこの山に残された、のでス。
+[k]
+
+＠花心
+主人の言いつけニ従って牛神様を研究してイタだけ[r]ナのですが、いつのマにか、
+[k]
+
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠花心
+牛神様の巫女と、呼ばれるようニ、なりましタ。
+[k]
+
+[messageOff]
+[charaTalk F,A]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+[subRenderScale #A 1.0]
+
+＠マシュ
+そうだったのですね……[r]辛い話をさせてしまい、申し訳ありません……。
+[k]
+
+[messageOff]
+[charaTalk A,F]
+[charaFace F 9]
+[subRenderFadein #A 0.4 0,-175]
+[wt 0.4]
+
+[charaFadeout A 0.1]
+
+＠花心
+ハイ。失礼なハナし、ですよね。[r]私、巫女では、ありませン。
+[k]
+
+[messageOff]
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+
+＠杉谷
+とはいえ、牛神様に一番近い因縁があった。[r]それで牛神様そのものに取り憑かれたんだろうよ。
+[k]
+
+？1：その牛神様はいま倒したけど……
+？2：もしかして、その……扉の向こうに？
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠蒼崎青子
+そうね。ここまできたら中に入ってみましょう。[r]いいわよね、木乃美君。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠木乃美芳助
+お、おう。バチが当たりそうだけど、[r]もうバチを当てる[#椀々:わんわん]様もいないワケだし？
+[k]
+
+[charaFace E 5]
+
+
+＠木乃美芳助
+行こうぜ行こうぜ！　オレも興味ある！[r]うまくいけば[#隈乃:くまの]旅館に第２のブームが来るかもだ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠静希草十郎
+だってさ、[%1]。[r]観念して付き合ってくれ。
+[k]
+
+＠静希草十郎
+蒼崎も余裕そうだし、俺も[#厭:いや]な予感はしていない。[r]もう危険はないと思うよ。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_216 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[charaLayer I normal]
+[charaLayer F normal]
+[charaLayer O normal]
+[charaLayer Q normal]
+[charaFadeout I 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout F 0.1]
+[charaFadeout O 0.1]
+[subCameraOff]
+[wt 0.5]
+
+[imageSet K cut563_cave 1]
+[imageSet L cut563_cave 1]
+
+[sceneSet Q 217800 1]
+[charaScale Q 1.5]
+[sceneSet R 217800 1]
+[charaScale R 1.2]
+[sceneSet S 217800 1]
+[charaScale S 1.5]
+
+[subCameraOn 1]
+[subCameraFilter #A maskEdge cut359_mask20 20 0,0,0,255 1]
+[charaLayer K sub #A]
+[charaFadein K 0.1 0,0]
+
+[charaScale K 1.8]
+[charaFadein K 0.1 0,-320]
+[subRenderFadein #A 0.1 0,-200]
+
+[scene 10000]
+[wt 0.5]
+
+[charaMove K 0,0 25.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSe SE_24 24_ade1035]
+
+＠蒼崎青子
+自然にできた縦穴みたい。[r][#椀々:わんわん]様の帰り道、とはよく言ったものだわ。
+[k]
+
+
+＠蒼崎青子
+ロッククライミングってほどじゃないから、[r]気をつけていれば問題なく降りられそう。
+[k]
+
+＠マシュ
+魔力反応、ありません。[r]ただ少しだけ熱源があります。
+[k]
+
+＠マシュ
+これは……地熱、でしょうか？[r]伝わっていた話によると、この先にあるのは[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[cueSeStop 24_ade1035 2.0]
+[wait fade]
+
+[charaLayer K normal]
+[charaFadeout K 0.1]
+[subCameraOff]
+
+[scene 217800]
+[wt 1.0]
+
+[charaDepth Q 9]
+[charaDepth S 8]
+[charaDepth C 7]
+[charaDepth A 6]
+[charaDepth B 5]
+[charaDepth D 4]
+[charaDepth R 3]
+[charaDepth E 2]
+
+[charaFadein S 0.1 0,-280]
+[charaMove S 100,-280 6.0]
+
+[bgm BGM_EVENT_208 0.1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 2.0]
+
+[charaFadein Q 0.6 200,-470]
+[charaMove Q 200,-370 6.0]
+[wt 0.6]
+[charaFadeout S 0.1]
+[wt 2.4]
+
+[charaFadeout Q 0.8]
+[wt 1.0]
+
+？1：あった！　第六の秘湯！
+？2：うっわ、[#趣:おもむき]ある……！
+
+？！
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠静希草十郎
+『万能の秘湯』は本当にあったんだな！
+[k]
+
+[charaFace C 8]
+
+＠静希草十郎
+あ。でも[#椀々:わんわん]様は[r]さっき俺たちが倒してしまったから……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 25]
+[charaFadein B 0.1 1]
+[charaMove B 0,-10 0.5]
+[wt 0.5]
+[se adm16]
+[wt 0.4]
+
+＠蒼崎青子
+残念ながらそうみたい。[r]お湯に触れたけどなんの異常もないわ。
+[k]
+
+[charaFace B 0]
+
+＠蒼崎青子
+３日目の『[#変成男子:へんじょうなんし]の秘湯』、[r]今日の『[#家内安全:か な い あ ん ぜ ん]の秘湯』は強い魔力成分があったけど、
+[k]
+
+＠蒼崎青子
+これはもうただの温泉ね。[r]水質はいいみたいだけど。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠静希草十郎
+だってさ。[r]残念だったな木乃美。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠木乃美芳助
+いや、ぜんぜんいけるって！[r]この雰囲気だけでめっちゃ人気でる！
+[k]
+
+＠木乃美芳助
+縦穴を工事してエレベーター……はよくないな、[r]せっかくの[#野趣:やしゅ]が台無しだ！
+[k]
+
+＠木乃美芳助
+木造の階段を作って、移動を楽にして、[r]天井に[#梁:はり]を通して、最低限の明かりをつけて[line 3]
+[k]
+
+＠木乃美芳助
+[#椀々:わんわん]様の秘湯、完成じゃん！[r]うおお、やる気でてきたーーー！　人生逆転、待ったなし！
+[k]
+
+[charaFace E 5]
+
+
+＠木乃美芳助
+[#隈乃:くまの]温泉殺人事件、これにて[#一件落着:いっけんらくちゃく]！[r]ひゅー！
+[k]
+
+＠木乃美芳助
+ここで会ったのも神様のおぼしめしってコトで、[r]皆さん、協力と融資と宣伝、よろしくね！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale A 1.2]
+[charaScale C 1.1]
+[charaScale D 0.9]
+
+[charaFace B 21]
+[charaFadein B 0.4 -140,-15]
+[charaFace C 8]
+[charaFadein C 0.4 -390,0]
+[charaFace D 12]
+[charaFadein D 0.4 200,-30]
+[charaFace A 22]
+[charaFadein A 0.4 400,0]
+
+[charaFadein R 0.4 -110,-300]
+[charaMoveEase R -120,-300 0.4 easeInOutSine]
+[charaMoveEase B -150,-15 0.4 easeInOutSine]
+[charaMoveEase C -400,0 0.4 easeInOutSine]
+[charaMoveEase D 190,-30 0.4 easeInOutSine]
+[charaMoveEase A 390,0 0.4 easeInOutSine]
+[wt 1.5]
+
+[charaFadeout E 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 3]
+
+＠静希草十郎
+だってさ。[r]何か意見あるか、蒼崎？
+[k]
+
+[charaFace B 7]
+
+＠蒼崎青子
+何も。ここまでくると感心するわ。[r]欲深なのに欲のない、木乃美君のひとり勝ちってね。
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_208 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

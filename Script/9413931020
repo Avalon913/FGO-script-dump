@@ -1,0 +1,1331 @@
+
+＄94-13-93-10-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1010000 1 エリザベート]
+[charaSet B 4001000 1 メドゥーサ]
+[charaSet C 5043000 1 アスクレピオス]
+[charaSet D 3057000 1 ビショーネ]
+[charaSet E 3057000 1 ビショーネ（演出用）]
+
+[ifClear 60139307]
+[charaSet F 1098315100 1 チビーネ]
+[flag rbody_1 true]
+[ifClear 60139308]
+[charaSet F 1098315000 1 チビーネ]
+[flag rbody_2 true]
+[ifClear 60139309]
+[charaSet F 1098314900 1 チビーネ]
+[flag rbody_3 true]
+
+[ifClear 60139310]
+[charaSet F 1098316600 1 チビーネ]
+[flag bbody_1 true]
+[ifClear 60139311]
+[charaSet F 1098316700 1 チビーネ]
+[flag bbody_2 true]
+[ifClear 60139312]
+[charaSet F 1098316800 1 チビーネ]
+[flag bbody_3 true]
+
+[ifClear 60139313]
+[charaSet F 1098317000 1 チビーネ]
+[flag gbody_1 true]
+[ifClear 60139314]
+[charaSet F 1098317100 1 チビーネ]
+[flag gbody_2 true]
+[ifClear 60139315]
+[charaSet F 1098317200 1 チビーネ]
+[flag gbody_3 true]
+[else]
+[charaSet F 1098315100 1 チビーネ]
+[flag rbody_1 true]
+
+[endIf]
+
+[charaSet H 1098257310 1 ダ・ヴィンチ]
+
+[charaSet I 1062001 1 黒姫]
+[charaSet J 1062001 1 黒姫（演出用）]
+[charaSet K 1062001 1 黒姫（演出用）]
+[charaSet L 1098313000 1 捕食竜]
+[charaSet M 1098313000 1 捕食竜（演出用）]
+[charaSet N 1098313000 1 捕食竜（演出用）]
+
+[sceneSet O 10000 1]
+[charaScale O 1.1]
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+[charaFilter O silhouette 9C1B2680]
+
+[sceneSet Q 238901 1]
+[sceneSet R 238901 1]
+[sceneSet S 238901 1]
+[sceneSet T 238901 1]
+
+[imageSet U cut636_dragon2 1]
+[imageSet V cut636_dragon2 1]
+
+[imageSet G cut645_emblem 1]
+
+[charaSet W 98115000 1 エフェクト用]
+[charaSet X 98115000 1 エフェクト用2]
+[charaSet Y 98115000 1 エフェクト用3]
+[charaSet Z 98115000 1 エフェクト用4]
+
+[charaPut W 2000,2000]
+[charaEffect W bit_talk_10_LowLevel]
+
+[scene 238901]
+
+[bgm BGM_BATTLE_137 0.1]
+
+[charaTalk depthOff]
+[charaDepth R 1]
+[charaDepth L 2]
+
+[charaScale L 1.2]
+[charaScale R 1.2]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 -200,0]
+[charaFadein R 0.1 -75,-250]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.1]
+
+[se ad496]
+[se ad678]
+[seVolume ad678 0 0.5]
+[charaMoveScaleEase L 1.4 0.25 easeOutCubic]
+[charaMoveEase L -190,10 0.25 easeOutCubic]
+[charaFadeout L 0.25]
+[wt 0.7]
+
+[charaDepth Q 3]
+[charaDepth D 4]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.2 1]
+[charaFadein Q 0.2 0,-200]
+
+[blur motion 0.25 4 10000 0.5 0.6 0.05 100]
+
+[charaMoveScaleEase D 1.2 0.25 easeOutSine]
+[charaMoveScaleEase Q 1.2 0.25 easeOutSine]
+[charaMoveEase D 0,10 0.25 easeOutSine]
+[charaMoveEase Q 0,-290 0.25 easeOutSine]
+
+
+[charaFace D 10]
+
+[messageOff]
+[se ad85]
+[wt 0.15]
+[fowardEffect bit_talk_h_slash02_fs 0,0 H]
+[wt 0.4]
+
+[cueSe SE_21 21_ad1132]
+[flashin once 0.1 0.1 9C1B26FA 9C1B2650]
+[wt 0.1]
+[charaFadeout R 0]
+[blurOff motion 0.1]
+[fowardEffectDestroy bit_talk_h_slash02_fs]
+[charaMoveScaleEase D 0.85 0.5 easeOutCubic]
+[charaMoveEase D 0,-50 0.5 easeOutCubic]
+[charaFadeout D 0.35]
+[wt 0.4]
+[cueSeStop 21_ad1132 0.4]
+
+[se ad322]
+[fowardEffect bit_talk_impactlanding 0,-200]
+[charaShake Q 0.02 2 2 1.0]
+[wt 1.75]
+
+[fowardEffectDestroy bit_talk_impactlanding]
+[charaDepth R 5]
+[charaDepth L 6]
+
+[charaScale L 1.2]
+[charaScale R 1.2]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.3 -300,0]
+[charaFadein R 0.3 -25,-250]
+[charaMoveEase L -200,0 0.5 easeOutSine]
+[charaMoveEase R 75,-250 0.5 easeOutSine]
+[wt 0.3]
+
+[charaFadeout Q 0.1]
+[wt 0.2]
+
+[cueSe SE_25 25_ade1155]
+[shake 0.05 2 2 2.0]
+
+[charaPut X -60,50]
+[charaEffect X bit_talk_voice02]
+[wt 1.8]
+
+[subCameraOn 1]
+[charaLayer I sub #A]
+[charaLayer M sub #A]
+[charaLayer Q sub #A]
+
+
+[subCameraFilter #A maskEdge cut359_mask05 5 0,0,0,255]
+[charaDepth Q 2]
+[charaDepth M 3]
+[charaDepth I 4]
+[charaScale Q 1.2]
+[charaScale I 1.1]
+[charaScale M 2.5]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFace M 0]
+[charaFadein I 0 0,275]
+[charaFadein M 0 -75,-300]
+[charaFadein Q 0 0,-25]
+
+[subRenderFadeinFSL #A 0.4 -350,-150]
+[subRenderMoveEaseFSL #A -350,-250 0.5 easeOutCubic]
+[wt 0.5]
+
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+
+＠黒姫
+案に[#違:たが]わず。
+[k]
+
+[messageOff]
+[charaTalk I,A]
+[subRenderFadeout #A 0.4]
+[charaFadeout L 0.4]
+[charaFadeout R 0.4]
+[wt 0.5]
+
+＠エリザベート
+くっ……チビーネも、相手の狙いを外す感じで[r]頑張ってくれてるけど……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth F 4]
+[charaDepth C 3]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFace C 7]
+[charaFadein C 0.1 175,0]
+[charaFadein F 0.1 -150,-50]
+
+＠チビーネ
+き[charaMove F -150,-57 0.5]ゅぷす……。
+[k]
+
+[charaTalk C]
+＠アスクレピオス
+体力の限界、か。[r]休んでいろ。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+認めたくはありませんが、[r]我々もそれが近いのではありませんか。
+[k]
+
+＠メドゥーサ
+休むわけにはいかないのが[r]辛いところですが。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.15]
+
+[charaScale D 1.0]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.4 0,-30]
+[charaShake D 0.03 2 2 0.6]
+[charaMove D 0,0 0.6]
+[wt 0.35]
+[se ad987]
+[wt 0.3]
+[seStop ad987 0.2]
+[wt 0.4]
+
+＠ビショーネ
+はぁ、はぁっ……。
+[k]
+
+？1：ビショーネ、無理しないで……！
+？2：一旦下がってもいい……！
+？！
+
+[charaFace D 7]
+
+＠ビショーネ
+[line 3]いいえ。
+[k]
+
+＠ビショーネ
+わたし、まだ、やれます。[r]やらなくちゃ、ダメなんです。
+[k]
+
+[messageOff]
+[charaTalk D,I]
+[charaFace I 3]
+[subRenderFadeinFSL #A 0.4 -350,-250]
+[charaFace L 0]
+[charaFadein L 0.4 -100,0]
+[charaFadein R 0.4 125,-250]
+[wt 0.5]
+
+＠黒姫
+……既に[#満身創痍:まんしんそうい]。[r]なのに、[#何故:なにゆえ]？
+[k]
+
+＠黒姫
+偉大なる蛇王の捕食竜と比べて、[r]貴方はまだまだ小さき蛇だというのに。
+[k]
+
+[messageOff]
+[charaTalk I,D]
+[charaFace D 11]
+[subRenderFadeout #A 0.4]
+[charaFadeout L 0.4]
+[charaFadeout R 0.4]
+[wt 0.4]
+
+[charaFadeout I 0]
+[charaFadeout M 0]
+[charaFadeout Q 0]
+[wt 0.1]
+[subCameraOff]
+[charaLayer I normal]
+[charaLayer M normal]
+[charaLayer Q normal]
+[charaScale I 1.0]
+[charaScale M 1.0]
+[charaScale Q 1.0]
+
+＠ビショーネ
+そう、かも、しれません。
+[k]
+
+＠ビショーネ
+ここに居る[#この子:わ　た　し]もまだ小さければ、[r]元々のわたしも、ただの退治された蛇です。
+[k]
+
+＠ビショーネ
+退治されたってことだけがお話に残るような、[r]ただの、やられ役です。
+[k]
+
+[bgmStop BGM_BATTLE_137 1.5]
+
+[charaFace D 8]
+
+＠ビショーネ
+でも[line 3]今は、違うから。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+ビショーネ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_216 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+退治される側じゃなくて、いい人側にいるのが、[r]わたし、嬉しいんです。
+[k]
+
+[charaFace D 11]
+
+＠ビショーネ
+戦うのは、正直ちょっと怖いけど。
+[k]
+
+[charaFace D 1]
+
+＠ビショーネ
+それ以上に、わたしは正しい流れの中にいる、[r]って思えるから。
+[k]
+
+[charaFace D 8]
+
+＠ビショーネ
+悪い蛇だから退治されて当然、なんて流れに、[r]入らなくてもいいから！
+[k]
+
+＠ビショーネ
+だからわたしは、カルデアのみんなと一緒に、[r]まだまだ、頑張りたいんです！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+よく言ったわ、ビショーネ！[r]胸を張りなさい、アナタは立派な[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_216 1.0]
+[charaFace A 5]
+[charaShake A 0.02 2 1 0.3]
+[wt 0.8]
+
+[charaTalk off]
+
+[subCameraOn 2]
+[charaLayer O sub #A]
+[charaLayer X sub #A]
+[charaLayer E sub #A]
+[charaLayer S sub #A]
+
+[charaLayer B sub #B]
+[charaLayer T sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask15 5 0,0,0,255]
+[subCameraFilter #B normal]
+
+[subRenderDepth #A 2]
+[subRenderDepth #B 3]
+
+[subRenderScale #B 1.01]
+
+[charaDepth S 2]
+[charaDepth E 3]
+[charaDepth X 4]
+[charaDepth O 5]
+[charaScale S 1.3]
+[charaScale E 1.3]
+[charaScale X 1.0]
+[charaTalk E]
+[charaFace E 21]
+[charaFadein E 0 0,300]
+[charaFadein S 0 0,0]
+
+[charaDepth T 2]
+[charaDepth B 3]
+
+[charaScale T 1.1]
+[charaFace B 2]
+[charaFadein B 0 225,-15]
+[charaFadein T 0 0,-240]
+
+[subRenderFadeinFSL #A 0.3 -400,-350]
+[subRenderMoveEaseFSL #A -350,-250 0.5 easeOutCubic]
+[wt 0.45]
+
+[se ad85]
+[wt 0.15]
+[charaPut X 0,225]
+[charaEffect X bit_talk_h_slash02_fs 0,0 H]
+[wt 0.4]
+
+[cueSe SE_21 21_ad1132]
+[charaFadein O 0.1 0,225]
+[wt 0.1]
+[charaFace E 10]
+[charaEffectDestroy X bit_talk_h_slash02_fs]
+[charaMoveScaleEase E 0.85 0.5 easeOutCubic]
+[charaMoveEase E 100,210 0.5 easeOutCubic]
+[charaFadeout E 0.35]
+[charaFadeout O 0.1]
+[wt 0.4]
+[cueSeStop 21_ad1132 0.4]
+[wt 0.05]
+
+[subRenderFadeout #A 0.3]
+[wt 0.4]
+
+[cameraMoveEase -40,-25 0.3 easeOutCubic 1.2]
+
+[charaTalk D,A]
+[charaScale D 1.4]
+[charaFace D 10]
+[charaFadein D 0.4 0,150]
+[charaMoveScaleEase D 0.95 0.3 easeOutCubic]
+[charaMoveEase D 125,35 0.3 easeOutCubic]
+[wt 0.2]
+
+[charaFace A 4]
+[se ad977]
+[seVolume ad977 0 0.6]
+[se ade258]
+[seVolume ade258 0 0.6]
+[se ad787]
+[seVolume ad787 0 0.6]
+[charaShake D 0.02 3 3 0]
+[charaShake A 0.02 2 2 0]
+[wt 0.9]
+[seStop ade258 0.2]
+[seStop ad787 0.4]
+
+[se ad74]
+[cueSe SE_23 23_ad1232]
+[flashin once 0.1 0.1 9C1B26FA 9C1B2650]
+[wt 0.1]
+[charaMoveScaleEase D 0.75 0.5 easeOutCubic]
+[charaMoveScaleEase A 0.85 0.5 easeOutCubic]
+[charaMoveEase D 120,-20 0.5 easeOutCubic]
+[charaMoveEase A 5,-50 0.5 easeOutCubic]
+[charaFadeout D 0.35]
+[charaFadeout A 0.35]
+[wt 0.4]
+[seStop ad74 0.4]
+[cueSeStop 23_ad1232 0.4]
+[charaShakeStop D]
+[charaShakeStop A]
+
+[se ad608]
+[se ad322]
+[effect bit_talk_impactlanding 250,-200]
+[effect bit_talk_impactlanding -250,-200]
+[charaShake Q 0.02 2 2 1.0]
+[wt 2.2]
+
+[charaTalk on]
+[charaTalk B]
+[subRenderFadein #B 0.3 0,0]
+[charaMoveEase B 150,-15 0.5 easeOutCubic]
+[charaMoveEase T -75,-240 0.5 easeOutCubic]
+[wt 0.3]
+
+[cameraMove 0 0,0 1.01]
+
+[charaDepth R 2]
+[charaDepth Y 3]
+[charaDepth A 3]
+[charaDepth D 4]
+[charaDepth Z 5]
+
+[charaPut Y 1]
+[charaPut Z 1]
+[charaEffect Y bit_talk_sand_dust_back_blk]
+[charaEffect Z bit_talk_sand_dust_front_blk]
+[charaScale R 1.2]
+[charaFadein R 0.1 0,-240]
+[wt 0.5]
+
+
+＠メドゥーサ
+ビショーネ！
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.8]
+[wt 0.8]
+
+[charaFadeout B 0]
+[charaFadeout S 0]
+[charaFadeout T 0]
+[wt 0.15]
+[subCameraOff]
+[charaLayer O normal]
+[charaLayer X normal]
+[charaLayer E normal]
+[charaLayer S normal]
+[charaLayer B normal]
+[charaLayer T normal]
+[charaScale O 1.1]
+[charaScale X 1.0]
+[charaScale E 1.0]
+[charaScale S 1.0]
+[charaScale B 1.0]
+[charaScale T 1.0]
+[wt 0.5]
+
+[se ad984]
+[charaScale A 1.2]
+[charaScale D 1.2]
+[charaTalk A,D]
+[charaFace A 5]
+[charaFace D 20]
+[charaFadein D 0.4 125,0]
+[charaFadein A 0.4 -125,-20]
+[charaMove D 125,10 0.4]
+[charaMove A -125,-10 0.4]
+
+[charaMove Y -300,0 3.0]
+[charaMove Z 300,0 3.0]
+[charaEffectStop Y bit_talk_sand_dust_back_blk]
+[charaEffectStop Z bit_talk_sand_dust_front_blk]
+[wt 1.0]
+
+[bgm BGM_EVENT_175 0.1]
+
+[charaTalk A]
+＠エリザベート
+だ、大丈夫よ。[r]ギリギリで受け止めたから。
+[k]
+
+[charaFace A 8]
+＠エリザベート
+ちょっと、起きなさい！
+[k]
+
+[charaTalk D]
+＠ビショーネ
+ううん……[wt 0.7][charaFace D 18][messageShake 0.05 4 3 0.3]はっ。
+[k]
+
+[charaFace D 11]
+＠ビショーネ
+ご、ごめんなさいエリちゃん先輩、[r]わたし……身体が、なんだか……
+[k]
+
+[charaTalk A]
+[charaFace A 5]
+＠エリザベート
+どうしたのよ。
+[k]
+
+＠エリザベート
+あの大きな蛇の尻尾で吹っ飛ばされた衝撃で、[r]首でも折れた？
+[k]
+
+[charaFace A 0]
+
+＠エリザベート
+安心しなさい、こっちには医者がいるのよ。[r]首が折れようがもげようが即全快、なのよ！
+[k]
+
+[charaTalk D]
+[charaFace D 11]
+＠ビショーネ
+いえ、違くて。身体が、そのぅ……[wt 1.0][charaFace D 16][charaShake D 0.02 3 3 0.3][r]へくちっ。
+[k]
+
+＠ビショーネ
+うう、全身が痛いのもそうなんですけど、[r]こんなときにまた、身体がむずむずして……。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_175 1.5]
+[cueSe SE_21 21_ad1108]
+[cueSeVolume 21_ad1108 0 0.4]
+[charaEffectEdgeBlur D EFFFE5 EFFFE5 1 1]
+[wt 2.4]
+
+[charaTalk A]
+[charaFace A 7]
+＠エリザベート
+むずむずする？　そう言えば[r]前からそんなこと言ってたわね。
+[k]
+
+＠エリザベート
+それに、この感じ……[r]何か光ってる気がするけど。
+[k]
+
+[charaFace A 8]
+＠エリザベート
+[line 3]ああ。直接触れてるから、[r]なんとなくわかる、かも。
+[k]
+
+＠エリザベート
+ビショーネ、それ……
+[k]
+
+[messageOff]
+[cueSeStop 21_ad1108 1.5]
+[wt 1.0]
+
+[charaFace A 0]
+＠エリザベート
+[#脱皮じゃない]？
+[k]
+
+？1：脱皮？
+？！
+
+[messageOff]
+[subCameraOn 2]
+[charaLayer W sub #A]
+[charaLayer H sub #A]
+[charaLayer Q sub #A]
+
+[charaLayer F sub #B]
+[charaLayer E sub #B]
+[charaLayer S sub #B]
+
+[subCameraFilter #A normal]
+[subCameraFilter #B normal]
+
+[subRenderDepth #A 2]
+[subRenderDepth #B 3]
+
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+
+[charaDepth Q 2]
+[charaDepth H 3]
+[charaDepth W 5]
+[charaScale Q 1.0]
+[charaScale H 1.0]
+[charaScale W 1.0]
+[charaPut W 1]
+[charaTalk A,H]
+[charaFace H 25]
+[charaFadein H 0 1]
+[charaFadein Q 0 0,-200]
+
+[charaDepth S 2]
+[charaDepth F 3]
+[charaDepth E 4]
+
+[charaScale S 1.2]
+[charaScale E 1.2]
+[charaScale F 1.0]
+
+[charaFace E 22]
+[charaFadein E 0 200,10]
+[charaFadein S 0 -100,-260]
+[charaEffectEdgeBlur E EFFFE5 EFFFE5 1 1]
+
+[subRenderFadein #A 0.4 0,0]
+[wt 0.4]
+[charaPut D 2000,2500]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠ダ・ヴィンチ
+脱皮？
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadein #B 0.4 0,0]
+[wt 0.4]
+
+[charaScale A 1.2]
+[charaScale R 1.2]
+[charaFace A 1]
+[charaFadein A 0.1 -200,0]
+[charaFadein R 0.1 100,-260]
+[subRenderFadeout #A 0.1]
+[charaFadeout H 0.1]
+[charaFadeout Q 0.1]
+[charaPut W 2000,2000]
+[wt 0.1]
+
+＠ビショーネ
+……脱皮？
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.4]
+[wt 0.5]
+
+＠エリザベート
+そうよ、きっとそう！
+[k]
+
+＠エリザベート
+チビーネだって色がついて体型が決まったのよ？[r]アナタだって成長していいはずじゃない！
+[k]
+
+[charaFace A 0]
+
+＠エリザベート
+そのスーツも新入社員っぽさがあって可愛いけど、[r]ずっとそれじゃあね、とは思ってたのよ。
+[k]
+
+＠エリザベート
+もうだいぶ慣れたんだから、[r]そろそろ別のスタイルでもいいと思うわよ。
+[k]
+
+[charaFace A 1]
+
+＠エリザベート
+カルデアはそういうとこ自由だし！[r]素で水着みたいな格好の奴らもいるし！
+[k]
+
+[messageOff]
+[charaFace E 3]
+[subRenderFadein #B 0.4 0,0]
+[wt 0.4]
+
+[charaScale D 1.0]
+[charaFace D 4]
+[charaPut D 1]
+[charaFadeout A 0.1]
+[charaFadeout R 0.1]
+[wt 0.1]
+
+＠ビショーネ
+ああ……エリちゃん先輩が[r]そんなこと言ってくれるなんて。
+[k]
+
+＠ビショーネ
+わたし、少しだけ、仮新入社員として認められて……[r]私服勤務もアリになって……
+[k]
+
+[charaFace E 4]
+＠ビショーネ
+嬉しいなあ……[r]じゃあ、脱皮、しちゃおうかなあ……。
+[k]
+
+[messageOff]
+[charaScale F 0.8]
+[charaFace F 6]
+[charaFadein F 0.4 -50,-100]
+[wt 0.4]
+＠チビーネ
+き[charaMoveReturn F -50,-90 0.3]ゅぴー！
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ad1108]
+[cueSeVolume 21_ad1108 0 0.5]
+[subRenderFadeout #B 0.7]
+[wt 0.7]
+[charaEffectEdgeBlurDestroy E]
+[charaFadeout F 0]
+[charaFadeout E 0]
+[charaFadeout S 0]
+[wt 0.15]
+[subCameraOff]
+[charaLayer W normal]
+[charaLayer H normal]
+[charaLayer Q normal]
+[charaLayer F normal]
+[charaLayer E normal]
+[charaLayer S normal]
+[charaScale F 1.0]
+[charaScale E 1.0]
+[charaScale S 1.0]
+[wt 0.6]
+
+
+[charaDepth D 2]
+[charaDepth E 3]
+[charaFilter E silhouette FFFFFF80]
+[charaDepth X 8]
+
+[cueSe SE_21 21_ad1116]
+[cueSeVolume 21_ad1116 0 0.4]
+
+[charaScale X 2.2]
+[charaPut X 0,250]
+[charaEffect X bit_talk_wht_way_back]
+[charaFadein E 0.7 1]
+[charaEffectEdgeBlur E EFFFE5 EFFFE5 3 3]
+[wt 2.0]
+
+[subCameraOn 1]
+[charaLayer I sub #A]
+[charaLayer M sub #A]
+[charaLayer Q sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask05 5 0,0,0,255]
+[charaDepth Q 2]
+[charaDepth M 3]
+[charaDepth I 4]
+[charaScale Q 1.2]
+[charaScale I 1.1]
+[charaScale M 2.5]
+
+[charaFace I 4]
+[charaFace M 0]
+[charaFadein I 0 0,275]
+[charaFadein M 0 -75,-300]
+[charaFadein Q 0 0,-25]
+
+[subRenderFadeinFSL #A 0.4 -350,-150]
+[subRenderMoveEaseFSL #A -350,-250 0.5 easeOutCubic]
+[wt 0.5]
+
+＠黒姫
+[line 3]！？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_62 1.5]
+
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[charaFadeout Q 0]
+[charaFadeout M 0]
+[charaFadeout I 0]
+[wt 0.15]
+[subCameraOff]
+[charaLayer Q normal]
+[charaLayer M normal]
+[charaLayer I normal]
+[charaScale Q 1.0]
+[charaScale M 1.0]
+[charaScale I 1.0]
+
+[cueSe SE_21 21_ade562]
+[fowardEffect bit_talk_light_through]
+[wt 1.6]
+
+[fadeout white 0.4]
+[cueSeStop 21_ad1116 1.2]
+[cueSeStop 21_ad1108 1.2]
+[wait fade]
+
+[charaPut X 2000,2500]
+[charaEffectDestroy X bit_talk_wht_way_back]
+[fowardEffectDestroy bit_talk_light_through]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaEffectEdgeBlurDestroy D]
+[charaEffectEdgeBlurDestroy E]
+
+[charaSet D 3057001 1 ビショーネ]
+[sceneSet S 223001 1]
+[sceneSet T 223001 1]
+
+[scene 10001]
+
+[subCameraOn 2]
+[charaLayer U sub #A]
+[charaLayer S sub #A]
+
+[charaLayer V sub #B]
+[charaLayer T sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask20 20 255,255,255,255 1]
+[subCameraFilter #B maskEdge cut359_mask08 20 255,255,255,255 1]
+
+[charaDepth S 2]
+[charaDepth U 3]
+[charaScale S 1.2]
+[charaScale U 1.2]
+
+[charaFadein U 0 225,300]
+[charaFadein S 0 350,-75]
+
+[charaDepth T 2]
+[charaDepth V 3]
+[charaScale T 1.2]
+[charaScale V 1.15]
+
+[charaRoll V 350]
+[charaFadein V 0 -120,350]
+[charaFadein T 0 -120,0]
+
+[wt 1.0]
+
+[fadein white 0.5]
+[wait fade]
+
+[bgm BGM_BATTLE_174 0.1]
+
+[se ade321]
+[subRenderFadein #A 0.3 300,-250]
+[charaMoveEase U 225,400 0.3 easeOutSine]
+[charaMoveEase S 350,25 0.3 easeOutSine]
+[wt 0.3]
+
+[charaMove U 225,450 1.9]
+[charaMove S 350,75 1.9]
+
+[wt 1.9]
+[subRenderFadeout #A 0.3]
+[charaMoveEase U 225,550 0.3 easeOutSine]
+[charaMoveEase S 350,175 0.3 easeOutSine]
+
+[wt 0.6]
+
+[cueSe SE_24 24_ade988]
+[subRenderFadein #B 0.3 0,-300]
+[charaMoveEase V -20,350 0.3 easeOutSine]
+[charaMoveEase T -20,0 0.3 easeOutSine]
+[wt 0.3]
+[cueSeStop 24_ade988 0.3]
+
+[charaMove V 20,350 1.9]
+[charaMove T 20,0 1.9]
+[wt 1.9]
+
+[subRenderFadeout #B 0.3]
+[charaMoveEase V 120,350 0.3 easeOutSine]
+[charaMoveEase T 120,0 0.3 easeOutSine]
+[wt 0.3]
+
+[fadeout white 0.1]
+[wait fade]
+
+[charaFadeout S 0]
+[charaFadeout T 0]
+[charaFadeout U 0]
+[charaFadeout V 0]
+[wt 0.15]
+[subCameraOff]
+[charaLayer S normal]
+[charaLayer T normal]
+[charaLayer U normal]
+[charaLayer V normal]
+[charaScale S 1.0]
+[charaScale T 1.0]
+[charaScale U 1.0]
+[charaScale V 1.0]
+
+[scene 238901]
+
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[charaEffectEdgeBlur D EFFFE5 EFFFE5 3 3]
+
+[cameraMove 0 0,0 1.2]
+[wt 0.5]
+
+[cameraMoveEase 0,0 1.6 easeOutCubic 1.01]
+[fadein white 1.2]
+[wait fade]
+[charaEffectEdgeBlurStop D]
+[wt 0.8]
+
+[sceneSet S 238901 1]
+[sceneSet T 238901 1]
+
+[charaTalk on]
+＠ビショーネ
+だ、脱皮しちゃいました！[r]こんなのどうですか？
+[k]
+
+[messageOff]
+[wt 1.0]
+
+？1：霊基再臨……かもしれないけど
+？2：素敵な脱皮だと思うよ！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaEffectEdgeBlurDestroy D]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+本当に脱皮なら実に興味深い症例だ。[r]それと首は折れていないな？　ならばよし、だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+一つ疑問なのですが、なぜ王冠を？
+[k]
+
+＠メドゥーサ
+今まであまり気にしていなかった、[r]チビーネの冠と何か関係があるのでしょうか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+これは、そのぅ。
+[k]
+
+＠ビショーネ
+被ってるのが自然かなと思っただけというか、[r]特に意味があるわけではないといいますか。
+[k]
+
+[charaFace D 4]
+
+＠ビショーネ
+なぜか最初から被っていたチビーネに合わせて、[r]あるほうが可愛いかなと思って……
+[k]
+
+[charaFace D 19]
+
+＠ビショーネ
+つまり、ただのアクセです！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth G 0]
+[charaDepth H 1]
+[charaDepth W 2]
+[charaPut W 1]
+[charaTalk H]
+[charaFace H 34]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+思い出した。実はそうだった。
+[k]
+
+[charaScale G 0.75]
+[charaPut G -200,-55]
+[charaFadeTime G 0.4 0.7]
+[charaMove G -230,-55 15.0]
+
+＠ダ・ヴィンチ
+ミラノのビショーネ、なんでか[r]王冠をかぶった蛇の姿で描かれてたんだよねえ。
+[k]
+
+＠ダ・ヴィンチ
+私も理由は知らないけど。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut W 2000,2000]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+可愛いから別にいいじゃない。[r][#私:アタシ]が許すわ！
+[k]
+
+＠エリザベート
+チェイテ城の城主の座を狙ってるとかだったら[r]さすがに拷問案件だけど。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+ね、[wt 0.5][messageShake 0.05 4 3 0.4]狙ってませんよ！？
+[k]
+
+[messageOff]
+[charaTalk D,I]
+[subCameraOn 3]
+[charaLayer O sub #A]
+[charaFilter O silhouette 0000080]
+[charaLayer I sub #A]
+[charaLayer J sub #A]
+[charaLayer M sub #A]
+[charaLayer Q sub #A]
+
+
+[subCameraFilter #A maskEdge cut359_mask05 5 0,0,0,255]
+
+[subRenderDepth #A 2]
+
+
+[charaDepth Q 2]
+[charaDepth O 3]
+[charaDepth M 4]
+[charaDepth I 5]
+[charaDepth J 6]
+[charaScale Q 1.2]
+[charaScale I 1.1]
+[charaScale J 1.3]
+[charaScale M 2.5]
+
+[charaFace I 6]
+[charaFace M 0]
+[charaFadein I 0 0,275]
+[charaFadein M 0 -75,-300]
+[charaFadein Q 0 0,-25]
+
+[charaDepth S 2]
+[charaDepth K 4]
+
+[charaScale S 1.4]
+[charaScale K 1.2]
+
+
+[subRenderFadeinFSL #A 0.4 -350,-250]
+[charaFace L 0]
+[charaFadein L 0.4 -100,0]
+[charaFadein R 0.4 125,-250]
+[wt 0.5]
+[charaTalk I]
+
+＠黒姫
+……その衣替えで、[r]何が変わるというのですか。
+[k]
+
+[messageOff]
+[charaTalk I,D]
+[charaFace D 6]
+[subRenderFadeout #A 0.4]
+[charaFadeout L 0.4]
+[charaFadeout R 0.4]
+[wt 0.5]
+
+＠ビショーネ
+やってみなければ、わかりません。[r]わたしはまだ新人ですから。
+[k]
+
+＠ビショーネ
+これからのわたしも、とりあえず精一杯、[r]体当たりでぶつかっていくだけです！
+[k]
+
+[messageOff]
+[charaTalk D,I]
+[charaFace I 4]
+
+[charaDepth P 8]
+[charaPut O 0,225]
+[charaPut P 1]
+[charaFadeTime O 0 0.5]
+[charaFadeTime P 0.4 0.5]
+
+[subRenderFadeinFSL #A 0.4 -350,-250]
+[charaFace L 0]
+[charaFadein L 0.4 -100,0]
+[charaFadein R 0.4 125,-250]
+[wt 0.4]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠黒姫
+（しかし[line 3]確かに。[r]　今までにない輝きがあるような気も……）
+[k]
+
+[messageOff]
+[charaFaceFade I 15 0.2]
+[wt 1.2]
+
+＠黒姫
+（ああ、蛇よ。愛しき蛇よ。[r]　私は[line 3]）
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_174 1.5]
+
+[se ad231]
+[charaTalk I,J]
+[charaFace J 15]
+[charaPut J 0,305]
+[charaFadeTime J 0.1 0.7]
+[wt 0.1]
+[charaEffect I bit_talk_snake_curse]
+
+[charaFadeout J 1.2]
+[wt 2.0]
+
+[charaFadeout O 0.2]
+[charaFadeout P 0.2]
+
+[charaFace I 7]
+＠黒姫
+……。[r]……。
+[k]
+
+[messageOff]
+[se ad73]
+[charaEffect I bit_talk_quickmove]
+[wt 0.05]
+[charaSpecialEffect I erasureReverse 1 0.4]
+[wt 0.9]
+
+[subRenderFadeout #A 0.5]
+[charaFadeout L 0.5]
+[charaFadeout R 0.5]
+[wt 0.6]
+
+[charaTalk off]
+[charaFace K 4]
+[charaPut K 0,15]
+
+[charaLayer I sub #B]
+[charaLayer R sub #B]
+[subCameraFilter #B maskEdge cut359_mask20 5 0,0,0,255 0]
+[subRenderScale #B 1.2]
+[charaDepth R 1]
+[charaDepth I 2]
+[charaScale I 1.3]
+[charaScale R 1.3]
+[charaFace I 4]
+[charaFadein I 0 -5,490]
+[charaFadein R 0 0,100]
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect K appearance 1 0.25]
+[wt 0.9]
+
+[subRenderFadein #B 0.4 0,-250]
+[charaFadeout K 0.4]
+[se adm52]
+[wt 0.1]
+[charaMove I -5,480 0.6]
+[charaCrossFade I 1098318300 4 0.6]
+[wt 0.6]
+[charaMoveEase I -5,200 1.0 easeOutExpo]
+[charaMoveEase R 0,-180 1.0 easeOutExpo]
+[wt 1.5]
+
+[bgm BGM_BATTLE_259 0.1]
+
+[charaFace K 4]
+＠黒姫
+どうしても[#退:ひ]かぬと。[r]諦めぬというのであれば、仕方ありません。
+[k]
+
+＠黒姫
+[#此度:こたび]は私も刀を抜きましょう。
+[k]
+
+＠黒姫
+蛇王様の捕食を邪魔することは、許されない。[r]許されないのです[line 3]！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_259 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+
+
+

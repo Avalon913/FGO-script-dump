@@ -1,0 +1,234 @@
+
+
+
+
+＄04-00-04-13-4-1
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098298200 1 岸波白野]
+[charaSet B 1098188410 1 キングプロテア]
+
+[charaSet G 10009000 1 エフェクト用]
+[sceneSet L 225800 1]
+[sceneSet N 224000 1]
+
+[subCameraOn 2]
+[charaLayer G sub #B]
+
+[subCameraFilter #A through]
+[subCameraFilter #B normal]
+[charaDepth B 2]
+[charaDepth L 1]
+[charaScale B 1.0]
+[charaScale L 1.2]
+[charaFace B 5]
+
+[charaDepth G 2]
+[charaScale G 1.0]
+[charaEffect G bit_talk_fog_side_orange]
+
+[scene 223400]
+[wt 0.1]
+
+[effect bit_talk_41_fs]
+[shake 0.05 0 2 0]
+[se ad769 0]
+[seVolume ad769 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_51 0.1]
+
+？1：プロテアは！？
+
+？！
+
+[seStop ad769 0.5]
+[wipeout rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+
+[shakeStop]
+[effectStop bit_talk_41_fs]
+[effectDestroy bit_talk_41_fs]
+
+[charaDepth N 1]
+[charaScale N 1.2]
+[pictureFrameTop cut063_cinema]
+[wt 0.2]
+
+[scene 225800]
+
+[wipein rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+
+[wt 0.5]
+
+[se ad298 0.3]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 0,-30]
+[charaMove B 0,-50 1.2]
+[shake 0.05 0 2 1.5]
+[wt 1.0]
+[seStop ad298 2.0]
+[wt 1.0]
+
+＠キングプロテア
+みんな同じに見えます……[r]不規則で、グチャグチャで、ゴミゴミしていて……
+[k]
+
+[charaFace B 7]
+
+＠キングプロテア
+これじゃ目当てのＡＩを見つけられません……[r]知らないうちに踏み潰しちゃうとか[#勿体:もったい]ない……
+[k]
+
+＠キングプロテア
+……はあ。ちびっちゃいＡＩに[r]いちいち話しかけるなんてイヤだけど……
+[k]
+
+[charaFace B 10]
+
+＠キングプロテア
+あー、テステス。オールド・ドバイに集まっている、[r]出来損ないの皆さんに命令します！
+[k]
+
+＠キングプロテア
+第三世代ＡＩは広いところに集まってください。
+[k]
+
+＠キングプロテア
+言うことを聞くなら、[r]今日だけは他のＡＩは見逃してあげます！
+[k]
+
+[messageOff]
+[wt 1.2]
+[charaFace B 5]
+
+＠キングプロテア
+…………。[r]…………びっくりするくらい、誰も出てこない……。
+[k]
+
+[charaFace B 2]
+
+＠キングプロテア
+じゃあ仕方ありません。[r]自分で捜しますね。
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[se ad85]
+[subRenderDepth #B 3]
+[wt 0.4]
+[subRenderFadein #B 0.4 0,0]
+
+[se ad854]
+[se ad238]
+[se ad14 0.2]
+[charaEffect G bit_talk_impactlanding]
+[shake 0.03 3 3 1.2]
+[wt 0.7]
+[charaEffect G bit_talk_rubble_smoke]
+[wt 0.2]
+
+[se ad162 0]
+[seVolume ad162 0.7 0.7]
+[wt 2.5]
+
+[seVolume ad162 2.5 0.2]
+[seVolume ad14 2.5 0.15]
+
+[charaLayer B sub #A]
+
+[subRenderDepth #A 2]
+[subRenderDepth #B 1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 0,-50]
+[subRenderFadein #A 0.4 0,0]
+[wt 0.4]
+
+＠キングプロテア
+ほら。皆さんが悪いんですよ？
+[k]
+
+＠キングプロテア
+私が他のエリアに入ればこうなります。[r][%1]さんから聞いていませんでした？
+[k]
+
+＠キングプロテア
+こんな地区、歩くだけで沈められるんだから。[r]でもその前に、もう一度だけチャンスをあげます。
+[k]
+
+[charaFace B 10]
+
+＠キングプロテア
+第三世代のＡＩをひとり、差し出してください。
+[k]
+
+＠キングプロテア
+そいつの名前は[#ベックマン]。[r][#アンソニー]・[#ベックマン]。
+[k]
+
+[charaFace B 9]
+
+＠キングプロテア
+ムーン・ドバイでもっとも罪深い、[r]旧人類が残した汚点です。
+[k]
+
+[messageOff]
+[seStop ad162 0.7]
+[seStop ad14 0.7]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaEffectDestroy G bit_talk_fog_side_orange]
+[charaEffectDestroy G bit_talk_rubble_smoke]
+[pictureFrame]
+[subRenderFadeout #B 0.1]
+[charaFadeout B 0.1]
+[charaFadeout L 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+[charaLayer B normal]
+[charaLayer L normal]
+[charaLayer G normal]
+[scene 223400]
+[wt 0.1]
+[se ad854 0.3]
+[se ad238 0.3]
+[shake 0.05 2 2 1.0]
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 1.0]
+
+？1：なんでアンソニーさんを！？
+？2：旧人類が残した汚点……？
+
+？！
+
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+
+＠岸波白野
+まずいぞ、広場に急ごう[%1]！
+[k]
+
+＠岸波白野
+理由はどうあれジナコさんならアンソニーを[#匿:かくま]う！[r]結果的にジナコさんも見つかってしまう！
+[k]
+
+＠岸波白野
+マシュさんは隠れ家との個人通信を開いて、[r]ジナコさんに逃げるよう伝えてくれ！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_51 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

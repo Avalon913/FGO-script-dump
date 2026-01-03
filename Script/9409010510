@@ -1,0 +1,489 @@
+
+＄94-09-01-05-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098280700 1 今魔川残党]
+[charaSet B 1098281000 1 領民]
+[charaSet C 1098285420 1 上杉謙信]
+[charaSet D 10007001 1 沖田オルタ]
+[charaSet E 6036002 1 李書文]
+
+[charaSet I 98115000 1 エフェクト用1]
+
+[charaSet L 10007001 1 煉獄]
+[sceneSet M 201300 1]
+
+[scene 201300]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_49 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠今魔川残党
+うはははは！　この塩は頂いていくぜー！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠領民
+ああっ、その塩をもっていかれてしもうたら、[r]パスタをゆでるときに困るんじゃ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠今魔川残党
+うるせえ、年寄りはコシの無いパスタでも[r]食ってやがれ！　ソースも薄味にするがいいさ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠領民
+か、神様仏様、どうかお救いを……！[r]助けて頂ければ埋蔵金の情報をお教えしますので。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[backEffect bit_talk_radiallight02_big]
+[cueSe SE_22 22_ad1180 0]
+[seVolume 22_ad1180 1.5 1.0]
+[wt 1.5]
+[seStop 22_ad1180 1.0]
+
+[fadeout white 1.5]
+[se adm20]
+[seVolume adm20 0.3 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[backEffectDestroy bit_talk_radiallight02_big]
+[seStop adm20 1.0]
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+＠上杉謙信
+はい、お呼びにあずかりました[#毘沙門天:び し ゃ も ん て ん]の化身です。[r]あ、以前の怖い方ではないので勘違いしないよう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠領民
+あ、はい。それはそれとして、[r]あいつらに村の塩を奪われたので、何とかしてくだされ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠上杉謙信
+では宝塔で軽くけん制してですね……、
+[k]
+
+[messageOff]
+
+[charaFace C 16]
+[wt 0.2]
+
+[cueSe Servants_301600 bac1397 0 0.7]
+[cueSeStop bac1397 0.5]
+[se ad147]
+[seVolume ad147 0 0]
+[seVolume ad147 0.2 1.0]
+[charaMoveReturn C 0,-5 0.2]
+[wt 0.6]
+
+[cueSe Servants_301600 bac1397]
+[seVolume bac1397 0 0.7]
+[se ad147]
+[seVolume ad147 0 0]
+[seVolume ad147 0.2 1.0]
+[charaMoveReturn C 0,-5 0.2]
+[wt 1.0]
+[seStop bac1397 1.0]
+[seStop ad147 1.0]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[bgm BGM_EVENT_49 0.4 0.6]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[bgm BGM_EVENT_49 0.4 1.0]
+[wait wipe]
+[wt 0.1]
+
+＠今魔川兵
+ん？　何の音[line 3]
+[k]
+
+[messageOff]
+
+[flashin once 0.2 0.3 FFFFFFAF FFFFFF00]
+[cueSe SE_21 21_ade623]
+[se ad289]
+[wt 0.4]
+[se ade458]
+[wt 1.2]
+
+[shake 0.05 2 3 0.6]
+[effect bit_talk_explosion_triple02]
+
+[se ad609]
+[seVolume ad609 0.2 1.0]
+[seStop ad609 3.0]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_49 1.5]
+
+[fadeout white 1.0]
+[wt 0.7]
+[effect bit_talk_sand_dust_front_slow 0,-100]
+[effect bit_talk_sand_dust_back_slow 0,-100]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaScale M 1.2]
+[charaFadein M 0.1 -50,-250]
+[wt 2.0]
+[charaMove M 50,-250 6.0]
+
+[fadein white 1.5]
+[wt 0.5]
+[cueSe SE_22 22_ad1221]
+[seVolume 22_ad1221 0 0]
+[seVolume 22_ad1221 1.5 0.2]
+[se ad951]
+[seVolume ad951 0 0]
+[seVolume ad951 1.5 0.5]
+[wait fade]
+
+[effectStop bit_talk_sand_dust_front_slow]
+[effectStop bit_talk_sand_dust_back_slow]
+[wt 2.0]
+
+[seStop 22_ad1221 1.5]
+[seStop ad951 1.5]
+[charaFadeout M 1.0]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.2 1]
+[wt 0.2]
+
+＠領民
+…………。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 21]
+[charaFadein C 0.1 1]
+
+＠上杉謙信
+…………。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠領民
+……軍神様、取られた塩も蒸発しちまったみたいですが。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠上杉謙信
+す、少しやりすぎましたかね。
+[k]
+
+？1：凄い砲撃でしたね
+
+[charaFace C 22]
+
+＠上杉謙信
+いえ、これ砲ではなくて経を納めた宝塔でして、[r]神罰レーザーとか罰当たりビームというかそんな感じで。
+[k]
+
+？2：従来の謙信ちゃんと火力が違い過ぎる
+
+[charaFace C 22]
+
+＠上杉謙信
+[#毘沙門天:び し ゃ も ん て ん]的に火力があるに越したことはないのですが、[r]ちょっとあり過ぎます？
+[k]
+
+？！
+
+[charaFace C 10]
+
+＠上杉謙信
+じつはこの姿、いまいちまだ慣れておりませんので、[r]ついうっかり超火力を振るってしまうんですよね。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠沖田オルタ
+その気持ちわかるぞ、わかりみ。
+[k]
+
+[charaFace D 1]
+＠沖田オルタ
+私も朝ごはんが美味しくて食べ過ぎたときは、[r]無駄に凄いまじんさんビームを撃ってしまう時があるからな。
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth L 2]
+
+[charaScale L 1.3]
+[charaScale M 1.05]
+
+[charaTalk L]
+[charaFace L 0]
+
+[subCameraOn 1]
+
+[charaLayer L sub #A]
+[charaLayer M sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask05 3 0,0,0,255 1]
+
+[charaFadein L 0 -280,370]
+[charaFadein M 0 100,-20]
+
+[subRenderFadein #A 0.3 280,-150]
+[wt 0.4]
+
+＠煉獄
+いや、その気持ちわかってないよね。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[charaFadeout D 0.2]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠李書文
+ふむ、儂もけん制のつもりで軽く触ってみたら、[r]相手が絶命してしまうことがよくあるな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace D 1]
+[charaFadein D 0.2 1]
+[subRenderFadein #A 0.2 280,-150]
+
+＠煉獄
+それはちょっとあってるけど、[r]逸話としてはおかしいよね、色々と。
+[k]
+
+[subRenderFadeout #A 0.2]
+[charaFadeout D 0.2]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+
+＠上杉謙信
+というわけで、この体の力を十全と発揮するためにも、[r]お二人にご協力を頂きたいと思いまして。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+[wt 0.6]
+
+[messageOff]
+[fadeout white 0.5]
+[se ad574]
+[seVolume ad574 0.3 1.0]
+[wait fade]
+
+[charaSet D 10007002 1 沖田オルタ]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[seStop ad574 1.0]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.4]
+
+[bgm BGM_BATTLE_145 0.1]
+
+[charaFace D 1]
+
+＠沖田オルタ
+そういう事なら任せろ、朝ごはんもたくさん食べたから[r]魔パワー全開で行くぞ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[effect bit_talk_kien01]
+[se ad961]
+[seStop ad961 1.2]
+[se ad429]
+[wt 1.2]
+[seStop ad429 0.5]
+[wt 0.5]
+
+[charaFace E 1]
+
+＠李書文
+神仏の化身に渾身の一撃を向けるのも面白かろうよ。
+[k]
+
+[effectDestroy bit_talk_kien01]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠上杉謙信
+では、いざ[#毘沙門天:び し ゃ も ん て ん]の加護ぞ在り！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠領民
+軍神様。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+
+＠上杉謙信
+え？　なんです、これからいいところなんですけど。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠領民
+すまんが、よそでやってもらえるかの？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠上杉謙信
+あ、はい。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_145 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

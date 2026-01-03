@@ -1,0 +1,1550 @@
+
+
+
+＄04-00-02-05-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1098269800 1 キャスターのマスター]
+[charaSet B 1098269600 1 キャスター]
+[charaSet D 1098270800 1 ラニ＝Ｂ1]
+[charaSet E 1098270800 1 ラニ＝Ｂ2]
+[charaSet F 1098270800 1 ラニ＝Ｂ3]
+[charaSet G 1098270410 1 ラニ＝Ｇ1]
+[charaSet H 1098270410 1 ラニ＝Ｇ2]
+[charaSet I 1098268900 1 サクラ]
+[charaSet J 1098267100 1 セイバー]
+[charaSet K 1098271000 1 蠢魔1]
+[charaSet L 1098271000 1 蠢魔2]
+
+[sceneSet M 10000 1]
+[charaScale M 1.05]
+[sceneSet N 190500 1]
+[charaScale N 1.2]
+[sceneSet O 190300 1]
+[charaScale O 1.2]
+[sceneSet P 190500 1]
+[charaScale P 1.3]
+[sceneSet Q 190300 1]
+[charaScale Q 1.3]
+
+[charaSet R 5009000 1 エフェクト用1]
+[charaSet S 5009000 1 エフェクト用2]
+[charaSet T 5009000 1 エフェクト用3]
+
+[scene 190500]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+そこに並べ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠D：構築部ＡＩ（ラニ＝Ｂ）
+……了。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+ヒトでなく、モノであれば無駄口は叩くな。[r]黙って私の言葉に従え。
+[k]
+
+＠キャスターのマスター
+イエスという返事すらいらない。
+[k]
+
+＠キャスターのマスター
+私に迷いはない。[r]故に、おまえたちも迷いは見せるな。
+[k]
+
+＠キャスターのマスター
+私には絶対服従だという最優先のルールに[r]従うのなら、自然、そうなる。
+[k]
+
+＠キャスターのマスター
+優秀な私の管理下にあるＡＩに、[r]無駄は一切必要ない。それが理想のはずだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠D：ラニ＝Ｂ
+……。[r]……。
+[k]
+
+[messageOff]
+[se ade428]
+[charaMove D 50,0 0.5]
+[charaFadeout D 0.4]
+[wt 1.0]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth N 1]
+[charaDepth D 2]
+[charaDepth E 3]
+[charaDepth F 4]
+
+[charaScale D 1.2]
+[charaScale E 1.2]
+[charaScale F 1.2]
+[charaFace E 0]
+[charaFace F 0]
+[charaFadeinFSR E 1.0 370,0]
+[charaFadein F 1.0 50,0]
+[charaFadein N 1.0 50,-300]
+[charaMove N 0,-300 0.8]
+[charaMoveFSR E 320,0 0.8]
+[charaMove F 1 0.8]
+[wt 0.8]
+
+[seStop ade428 0.6]
+[charaFace D 0]
+[charaFadeinFSL D 0.4 -370,0]
+[charaMoveFSL D -320,0 0.3]
+[wt 1.8]
+
+[charaFadeout N 0.5]
+[charaFadeout D 0.5]
+[charaFadeout E 0.5]
+[charaFadeout F 0.5]
+[wt 0.7]
+[charaScale D 1.0]
+[charaScale E 1.0]
+[charaScale F 1.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+よし。改良した新プログラムを起動する。
+[k]
+
+＠キャスターのマスター
+筆頭ＡＩ権限を利用、制限を解除……[r]数値は最大、安全装置は[line 3]無視する。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFace E 0]
+[charaFace F 0]
+[charaFadeinFSR D 0.1 320,0]
+[charaFadeinFSL E 0.1 -320,0]
+[charaFadein F 0.1 1]
+[wt 0.2]
+
+[se ad39]
+[charaDepth R 9]
+[charaDepth S 9]
+[charaDepth T 9]
+[charaPutFSR R 320,0]
+[charaPutFSL S -320,0]
+[charaPut T 1]
+[charaEffect R bit_talk_spell_r]
+[charaEffect S bit_talk_spell_r]
+[charaEffect T bit_talk_spell_r]
+[wt 2.2]
+
+[se ad626]
+[se ade446]
+[charaScale R 1.15]
+[charaScale S 1.15]
+[charaScale T 1.15]
+[charaEffect R bit_talk_beam_shot01]
+[charaEffect S bit_talk_beam_shot01]
+[charaEffect T bit_talk_beam_shot01]
+[wt 0.3]
+[flashin once 0.2 0.2 FFFFFFFA FFFFFF50]
+[wt 0.2]
+
+[charaFace D 6]
+[charaFace E 6]
+[charaFace F 7]
+[charaShake F 0.05 2 2 0]
+[charaShake D 0.05 2 2 0]
+[charaShake E 0.05 2 2 0]
+[wt 0.8]
+[flashin once 0.2 0.2 FFFFFFFA FFFFFF50]
+[wt 0.7]
+[flashin once 0.2 0.2 FFFFFFFA FFFFFF50]
+[wt 1.0]
+[flashin once 0.1 0.2 FFFFFFFA FFFFFF50]
+[wt 0.6]
+[flashin once 0.1 0.3 FFFFFFFA FFFFFF50]
+[wt 0.6]
+
+[se ad964]
+[seVolume ad964 0 0.7]
+[charaEffect R bit_talk_lightning_02g]
+[charaEffect S bit_talk_lightning_02g]
+[charaEffect T bit_talk_lightning_02g]
+[charaShake F 0.05 4 4 0.5]
+[wt 0.1]
+
+[seStop ad626 1.5]
+[seStop ade446 1.5]
+[seStop ad964 1.5]
+[charaShake D 0.05 4 4 0.5]
+[charaShake E 0.05 4 4 0.5]
+[wt 0.5]
+
+[charaEffectStop R bit_talk_lightning_02g]
+[charaEffectStop S bit_talk_lightning_02g]
+[charaEffectStop T bit_talk_lightning_02g]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk E]
+＠E：ラニ＝Ｂ
+う……あ……！
+[k]
+
+[clear]
+[charaTalk D]
+
+＠D：ラニ＝Ｂ
+……っ……ひ、あ[line 3]。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠キャスター
+おお、心地好い響きだ。[r]部屋に満たされる音楽は、そうでなくては……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+……。[r]……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaScale R 1.0]
+[charaScale S 1.0]
+[charaScale T 1.0]
+[charaFace D 6]
+[charaFace E 6]
+[charaFace F 7]
+[charaFadeinFSR D 0.1 320,0]
+[charaFadeinFSL E 0.1 -320,0]
+[charaFadein F 0.1 1]
+[wt 0.2]
+[cueSe SE_23 23_ad1304 0 0.8]
+[charaEffect R bit_talk_raniment01]
+[charaEffect S bit_talk_raniment01]
+[charaEffect T bit_talk_raniment01]
+[wt 2.0]
+
+[charaMoveFSR R 520,0 0.8]
+[wt 0.1]
+[charaMove T 200,0 0.8]
+[wt 0.1]
+[charaMoveFSL S -120,0 0.8]
+[wt 0.5]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_48 0.5 0.5]
+[cueSeVolume 23_ad1304 0.5 0.4]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[charaDepth B 1]
+[charaDepth A 2]
+
+[charaFace B 0]
+[charaFace A 0]
+[charaFadeinFSL B 0.1 0]
+[charaFadeinFSR A 0.1 2]
+[charaMove R 1 0.1]
+[charaMove S -200,0 0.1]
+[charaMove T -400,0 0.1]
+[wt 0.1]
+
+[charaMove R 200,0 0.8]
+[charaMove S 1 0.8]
+[charaMove T -200,0 0.8]
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_48 0.5 1.0]
+[cueSeVolume 23_ad1304 0.5 0.8]
+[wait wipe]
+[wt 0.8]
+
+[cueSeStop 23_ad1304 0.2]
+[cueSe SE_23 23_ad1305 0 0.8]
+[charaEffectStop R bit_talk_raniment01]
+[charaEffectStop S bit_talk_raniment01]
+[charaEffectStop T bit_talk_raniment01]
+[wt 0.5]
+[se adm20]
+[charaEffectEdgeBlur B FFF9A5 FFF9A5 4 1.5]
+[charaEffectEdgeBlur A FFF9A5 FFF9A5 4 1.5]
+[wt 0.3]
+[charaEffectEdgeBlurStop B]
+[charaEffectEdgeBlurStop A]
+[wt 3.5]
+
+[charaPut R 2000,2500]
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+[charaEffectDestroy R bit_talk_raniment01]
+[charaEffectDestroy S bit_talk_raniment01]
+[charaEffectDestroy T bit_talk_raniment01]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace D 6]
+[charaFace E 6]
+[charaFace F 7]
+[charaFadeinFSR D 0.1 320,0]
+[charaFadeinFSL E 0.1 -320,0]
+[charaFadein F 0.1 1]
+[wt 0.3]
+
+[charaShake D 0.03 2 2 0.5]
+[charaMoveFSR D 320,-50 0.5]
+[charaFadeout D 0.4]
+[wt 0.1]
+[charaShake E 0.03 2 2 0.5]
+[charaMoveFSL E -320,-50 0.5]
+[charaFadeout E 0.4]
+[wt 0.1]
+[charaShake F 0.03 2 2 0.5]
+[charaMove F 0,-50 0.5]
+[charaFadeout F 0.4]
+[wt 0.3]
+[se ad144]
+[wt 0.2]
+[se ad144]
+[wt 0.2]
+[se ad144]
+[wt 1.5]
+
+[charaSet D 1098270810 1 ラニ＝Ｂ1]
+[charaSet E 1098270810 1 ラニ＝Ｂ2]
+[charaSet F 1098270810 1 ラニ＝Ｂ3]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+ラニメントの強制移譲プログラムは正常稼働。[r]量、転送速度、安定性、共に問題なし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠キャスター
+それは良きこと。
+[k]
+
+＠キャスター
+しかし……問題がある箇所もあっただろう。
+[k]
+
+[messageOff]
+[se ad60]
+[charaFace B 6]
+[charaMoveScale B 1.1 1.5]
+[wt 1.2]
+[seStop ad60 0.3]
+
+＠キャスター
+主の命に反して、[r]勝手に歌った奴らがいたなあ！？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout B 0.1]
+
+[subCameraOn 1]
+[charaLayer P sub #A]
+[charaLayer D sub #A]
+[charaLayer E sub #A]
+[charaLayer F sub #A]
+
+[charaScale D 1.1]
+[charaScale E 1.1]
+[charaScale F 1.1]
+
+[charaDepth P 1]
+[charaDepth D 2]
+[charaDepth E 3]
+[charaDepth F 4]
+
+[charaFace D 7]
+[charaFace E 7]
+[charaFace F 9]
+[charaFadein P 0.1 0,330]
+[charaFadeinFSR D 0.1 320,225]
+[charaFadeinFSL E 0.1 -320,225]
+[charaFadein F 0.1 0,225]
+[wt 0.1]
+
+[blur lens 0.4 2 20]
+[subCameraFilter #A maskEdge cut359_mask08 4 255,255,255,255 0]
+[subRenderFadein #A 0.4 0,-290]
+[wt 0.7]
+
+[charaShake F 0.03 2 2 0.5]
+[wt 0.1]
+[charaShake D 0.05 2 3 0.5]
+[charaShake E 0.04 3 2 0.5]
+[wt 1.5]
+
+[blurOff lens 0.1]
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠キャスター
+[#無駄口を叩くな]、と主が言っただろう？[r]どうしてそれを守れない？　愚図め。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[blur lens 0.1 2 20]
+[charaTalk E]
+[subRenderFadein #A 0.1 0,-290]
+
+＠E：ラニ＝Ｂ
+う……あ……。
+[k]
+
+[blurOff lens 0.1]
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠B：キャスター
+たまたまいい音楽になったからと言って、[r]勝手に歌ったことが許されるわけではない。
+[k]
+
+＠B：キャスター
+そうだろう、マスター？
+[k]
+
+[charaFace B 7]
+
+＠B：キャスター
+であれば、ああ、罰を与えるしかあるまいよ。
+[k]
+
+＠B：キャスター
+それが正しき論理だ。[r]それが正しき摂理だ！
+[k]
+
+＠B：キャスター
+どうせ代わりはいくらでも作製できる。[r]さあ、さあ、さあ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaFadeout P 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaScale B 1.0]
+[charaScale D 1.0]
+[charaScale E 1.0]
+[charaScale F 1.0]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+……。[r]……。
+[k]
+
+[charaLayer P normal]
+[charaLayer D normal]
+[charaLayer E normal]
+[charaLayer F normal]
+[subCameraOff]
+
+＠キャスターのマスター
+[line 3]そうだな。[r]追加の抽出を行う。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+[charaTalk off]
+[charaFace D 7]
+[charaFace E 7]
+[charaFace F 9]
+[charaFadeinFSR D 0.1 320,0]
+[charaFadeinFSL E 0.1 -320,0]
+[charaFadein F 0.1 1]
+[wt 0.2]
+
+[se ad39]
+[charaScale R 1.0]
+[charaScale S 1.0]
+[charaScale T 1.0]
+[charaPutFSR R 320,0]
+[charaPutFSL S -320,0]
+[charaPut T 1]
+[charaEffect R bit_talk_spell_r]
+[charaEffect S bit_talk_spell_r]
+[charaEffect T bit_talk_spell_r]
+[wt 2.2]
+
+[se ad626]
+[se ade446]
+[cueSe SE_22 22_adm89]
+[charaScale R 1.15]
+[charaScale S 1.15]
+[charaScale T 1.15]
+[charaEffect R bit_talk_beam_shot01]
+[charaEffect S bit_talk_beam_shot01]
+[charaEffect T bit_talk_beam_shot01]
+[wt 0.3]
+[flashin once 0.2 0.2 FFFFFFFA FFFFFF50]
+[wt 0.2]
+[charaFace D 6]
+[charaFace E 6]
+[charaFace F 6]
+[charaShake F 0.05 2 2 0]
+[charaShake D 0.05 2 2 0]
+[charaShake E 0.05 2 2 0]
+[wt 0.8]
+[flashin once 0.2 0.2 FFFFFFFA FFFFFF50]
+[wt 0.7]
+[flashin once 0.2 0.2 FFFFFFFA FFFFFF50]
+[wt 1.0]
+[flashin once 0.1 0.2 FFFFFFFA FFFFFF50]
+[wt 0.6]
+[flashin once 0.1 0.3 FFFFFFFA FFFFFF50]
+[wt 0.6]
+
+[se ad964]
+[charaEffect R bit_talk_lightning_02g]
+[charaEffect S bit_talk_lightning_02g]
+[charaEffect T bit_talk_lightning_02g]
+[charaShake F 0.03 4 4 0.5]
+[wt 0.1]
+
+[seStop ad626 1.5]
+[seStop ad964 2.0]
+[seStop ade446 2.0]
+[cueSeStop 22_adm89 2.0]
+[charaShake D 0.05 5 5 0.5]
+[charaShake E 0.05 5 5 0.5]
+[wt 0.5]
+
+[charaEffectStop R bit_talk_lightning_02g]
+[charaEffectStop S bit_talk_lightning_02g]
+[charaEffectStop T bit_talk_lightning_02g]
+[wt 1.5]
+
+[cueSe SE_23 23_ad1299]
+[charaScale R 1.0]
+[charaScale S 1.0]
+[charaScale T 1.0]
+[charaEffect R bit_talk_atomization_ele01]
+[charaEffect S bit_talk_atomization_ele01]
+[charaSpecialEffect D enemyErasure 1 2.0]
+[charaSpecialEffect E enemyErasure 1 2.0]
+[wt 4.0]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk F]
+
+＠F：ラニ＝Ｂ
+……。[r]……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠キャスター
+ハハハ、ハハハハ！[r]わかっただろう？　わかれよ？
+[k]
+
+＠キャスター
+言いつけは守らねばならない。[r]主人の命は絶対なのだ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+……その通りだ。[r]誰も私に逆らってはならない。
+[k]
+
+＠キャスターのマスター
+なぜなら、私はこの場で最も優秀な存在だからだ。
+[k]
+
+＠キャスターのマスター
+そして優秀な者は上に立つ責務がある。[r]それが理想だ。だから私はそのように動く。
+[k]
+
+＠キャスターのマスター
+そのために最も合理的な手段を用い、[r]最も効率的に勝利する[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠キャスター
+ああ、何も間違ってはいない。[r]力あるものが力なきものを支配する。それが道理だ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+故にこそ、私はこの世界の支配者と[r]ならねばならない。
+[k]
+
+＠キャスターのマスター
+この聖杯戦争に勝利し、[r]新たな統括ＡＩとならねばならない。
+[k]
+
+＠キャスターのマスター
+世界にとって、それが最も幸せなことなのだ。[r]全てのＡＩたちにとっての幸福なのだ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠F：ラニ＝Ｂ
+……。[r]……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠キャスター
+寂しき無音。だが、その顔は良い。
+[k]
+
+[charaFace B 7]
+
+＠キャスター
+怯え、苦痛、恐怖、惑乱。それでいてなお[r]自らの働きに殉じようとする無思考の意思。
+[k]
+
+＠キャスター
+それは作られた人形としての機能。[r]ゆえにこそ、いかなる残酷からも逃れられぬ。
+[k]
+
+[charaFace B 10]
+
+＠キャスター
+ああ、それは呪いだ。[r]まさしく呪いに等しいものだ！
+[k]
+
+＠キャスター
+踊れ、無言劇の役者どもよ。俺は命の臭い漂う[r]部屋の中からそれを眺めることとしよう[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+……。[r]……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_48 1.2]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠キャスター
+さて[line 3]補給も済んだ。[r]世界の王へ至る道筋は見えているのかな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_124 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+当然だ。食えるところから食う。
+[k]
+
+＠キャスターのマスター
+手を組んだ卑怯者たちはとりあえず後回しだ。[r]次は隣接する逆のエリアを狙う。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠キャスター
+[#生産部:グ　ロ　ウ]……セイバーの領地だな。
+[k]
+
+＠キャスター
+バーサーカーの[#修理部:リ　ペ　ア]とは隔たっているゆえ、[r]手を組んでいることはあるまいが。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+ふん。向こうの戦力なぞ気にするな。
+[k]
+
+[charaFace A 3]
+
+＠キャスターのマスター
+こちらには調整が終わった例の奥の手もある。[r]いざとなればそれを使えばいい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠キャスター
+確かに。
+[k]
+
+[charaFace B 6]
+
+＠キャスター
+ああ、楽しみだ。[r][#あれ]が部屋から[#溢:あふ]れ出すのがな……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+では行くぞ、キャスター。
+[k]
+
+＠キャスターのマスター
+私がこの世界の王となる日は近い。
+[k]
+
+＠キャスターのマスター
+そして私は[line 3]マキリの当主として、[r]独力で根源に至るのだ！
+[k]
+
+[charaFace A 4]
+
+＠キャスターのマスター
+そう、すべての悪を[line 3]理想を掴むために！[r]はは、ふははは、ははははは！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_124 0.5 0.6]
+
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth B 2]
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+[charaPut M 0,-200]
+[charaFadeTime M 0.2 0.5]
+
+＠キャスター
+（[#マキリの当主]。何度かマスターが口にする[r]　言葉ではあるが、さて、それは何なのか）
+[k]
+
+[charaFace B 3]
+
+＠キャスター
+（おそらく無意識の発露で、[r]　マスター自身も気付いてはいまい）
+[k]
+
+＠キャスター
+（このマスターなる人格は、いったい、[r]　どこからやってきたものなのか[line 3]？）
+[k]
+
+[messageOff]
+[charaFace B 0]
+[wt 1.5]
+[charaFace B 11]
+
+＠キャスター
+（……それは俺も同じか。何にせよ、今ここにいる我々は、[r]　聖杯戦争の駒としての役割を果たすのみ）
+[k]
+
+[bgm BGM_EVENT_124 0.5 1.0]
+
+[charaFadeout M 0.2]
+[charaFace B 0]
+
+＠キャスター
+全てが同じだ。生きとし生けるもの全てが、[r]神の、物語の、駒だ。
+[k]
+
+＠キャスター
+我らはその中で、与えられた欲望をただ解放し、[r]死にゆくまで快楽と共に生き続けるのみ。
+[k]
+
+[charaFace B 10]
+
+＠キャスター
+行こう、そして悲鳴を喰らおう。
+[k]
+
+＠キャスター
+俺があの部屋の中で[#耽溺:たんでき]していたように[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_124 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[charaSet S 1098271000 1 蠢魔3]
+
+[scene 190300]
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_MAP_63 0.1]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadeinFSR G 0.4 226,0]
+[charaMoveFSR G 2 0.4]
+[charaShake G 0.03 2 2 0.4]
+[wt 0.3]
+[charaFadeinFSL H 0.4 -286,0]
+[charaMoveFSL H 0 0.4]
+[charaShake H 0.03 2 2 0.4]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk G]
+
+＠G：ラニ＝Ｇ
+……損傷……です。
+[k]
+
+[clear]
+[charaTalk H]
+
+＠H：ラニ＝Ｇ
+逃げ、なく、ては……。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth I 1]
+[charaDepth O 2]
+[charaDepth J 3]
+[charaDepth K 4]
+[charaDepth L 5]
+[charaDepth S 6]
+[charaDepth G 7]
+[charaDepth H 8]
+[charaDepth M 9]
+
+[cueSe Servants_2500700 m41410 0 0.6]
+[cameraMove 0.4 0,-10 1.1]
+
+[charaScale K 1.1]
+[charaScale L 1.1]
+[charaFace K 0]
+[charaFace L 0]
+[charaFadeinFSL K 0.4 -306,0]
+[charaMoveFSL K 0 0.4]
+[wt 0.2]
+[cueSeStop m41410 0.8]
+[charaFadeinFSR L 0.4 306,0]
+[charaMoveFSR L 2 0.4]
+[wt 0.8]
+[se ad466]
+[charaFadein M 0 0,-200]
+[wt 0.1]
+[se ad342]
+[cameraHome 0.1]
+[wt 0.1]
+[cueSe SE_21 21_ad1118]
+[se ad342]
+[wt 0.7]
+[se ad191]
+[wt 0.7]
+[se adm26]
+[wt 0.3]
+[se ad464]
+[fowardEffect bit_talk_blood_splash_fs]
+[fowardEffect bit_talk_blood_splash_fs 0,0 H]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.5]
+[seStop adm26 0.8]
+[wt 1.3]
+[charaFadeout M 0.5]
+[wt 0.7]
+
+[charaFace I 21]
+[charaFadein I 0.4 -286,0]
+[charaMove I 0 0.4]
+[wt 0.4]
+
+＠サクラ
+ああっ……みんな……！
+[k]
+
+[messageOff]
+[charaFadein O 0.5 -80,-210]
+[charaMove O -120,-210 0.5]
+[wt 0.7]
+
+[cueSe Servants_2500700 m41410 0 0.6]
+[charaFace K 0]
+[charaFace L 0]
+[charaFace S 0]
+[charaFadein S 0.4 -50,0]
+[charaMove S 1 0.4]
+[wt 0.2]
+[charaFadein L 0.4 350,0]
+[charaMove L 300,0 0.4]
+[wt 0.2]
+[cueSeStop m41410 0.8]
+[charaFadein K 0.4 -350,0]
+[charaMove K -300,0 0.4]
+[wt 1.0]
+
+[cueSe Battle bac139]
+[fowardEffect bit_talk_x_slash03 0,0 H]
+[wt 0.1]
+[charaShake S 0.05 4 4 0.5]
+[wt 0.1]
+[charaShake K 0.05 4 4 0.5]
+[charaShake L 0.05 4 4 0.5]
+[wt 0.8]
+
+[charaFace J 17]
+[charaFadein J 0.1 0,-75]
+[se ad42]
+[charaSpecialEffect S enemyErasure 1 1.5]
+[wt 0.2]
+[charaSpecialEffect K enemyErasure 1 1.5]
+[charaSpecialEffect L enemyErasure 1 1.5]
+[wt 0.5]
+[charaMove O -120,-160 1.0]
+[charaMove J 1 1.0]
+[wt 1.0]
+[seStop ad42 0.5]
+
+[se ad73]
+[charaEffect J bit_talk_quickmove]
+[charaSpecialEffect J erasureReverse 1 0.3]
+[wt 0.4]
+[charaFadeout O 0.5]
+[charaFadeout J 0.5]
+[wt 0.7]
+[charaScale R 1.0]
+
+[charaDepth J 1]
+[charaDepth I 2]
+
+[charaScale J 1.0]
+[charaPut J 2]
+[charaFace J 17]
+[se ad223]
+[charaEffect J bit_talk_quickmove]
+[charaSpecialEffect J appearance 1 0.25]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk J]
+
+＠セイバー
+足を止めないで、サクラ！[r]敵の数が少ないのはどこ！？
+[k]
+
+[charaTalk I]
+[charaFace I 15]
+
+＠サクラ
+ＡＩたちの通信密度から考えると……[r]多分、フィールド、Ｎ３４、あたり……。
+[k]
+
+[charaTalk J]
+[charaFace J 16]
+＠セイバー
+じゃあそっちに後退！
+[k]
+
+＠セイバー
+こいつら一体一体は別に倒せるけど、[r]いかんせん数が多すぎる……！
+[k]
+
+[charaTalk I]
+[charaFace I 9]
+[charaMove I -200,0 0.5]
+
+＠サクラ
+う、うん、わかっ……。
+[k]
+
+[messageOff]
+[se ad775]
+[charaFace I 14]
+[charaMove I -150,-30 0.3]
+[charaShake I 0.03 3 2 0.5]
+[wt 0.7]
+
+[charaTalk J]
+[charaFace J 2]
+[charaMove J 150,-30 0.4]
+
+＠セイバー
+ちょっと！　しっかりしなさい！
+[k]
+
+[messageOff]
+[se ad661]
+[seVolume ad661 0 0.6]
+[seStop ad661 0.8]
+[charaMove J 150,0 0.4]
+[wt 0.15]
+[charaFace I 10]
+[charaMove I -150,0 0.4]
+[wt 0.5]
+[charaTalk I]
+
+＠サクラ
+ごめん、足がもつれた、だけ。[r]大丈夫……。
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaSet G 1098270460 1 ラニ＝Ｇ1]
+[se ad527]
+[seStop ad527 0.5]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 -30,0]
+[charaShake G 0.03 2 2 0.4]
+[charaMove G 1 0.4]
+[wt 1.0]
+
+[bgmStop BGM_MAP_63 1.5]
+
+[charaFace G 1]
+[charaShake G 0.03 2 2 0.4]
+[charaFadeout G 0.4]
+[charaMove G 0,-50 0.5]
+[wt 0.5]
+[se ad144]
+[wt 1.5]
+
+[se ad984]
+[seStop ad984 0.5]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_122 0.1]
+
+＠キャスターのマスター
+おやおや。ここのＡＩは、[r]仲良く地面を舐めるのが趣味と見えるな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠セイバー
+貴様は……！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[se ad60]
+[seStop ad60 0.5]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠キャスター
+キャスター、だ。[r]お初にお目にかかる。
+[k]
+
+[charaFace B 0]
+
+＠キャスター
+[line 3]ペットの食事の途中でね。[r]不作法だが失礼。
+[k]
+
+＠キャスター
+食え。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFilter M silhouette FF0000]
+[blur lens 0.5 2 20]
+
+[charaTalk off]
+[subCameraOn 1]
+[charaLayer Q sub #A]
+[charaLayer K sub #A]
+[charaLayer G sub #A]
+[charaLayer R sub #A]
+[charaLayer M sub #A]
+
+[charaDepth Q 1]
+[charaDepth K 2]
+[charaDepth G 3]
+[charaDepth R 4]
+[charaDepth M 5]
+
+[charaScale K 1.2]
+[charaScale G 1.1]
+[charaFace G 2]
+[charaFadein Q 0.1 0,320]
+[charaFadein G 0.1 -20,290]
+[wt 0.1]
+[subCameraFilter #A maskEdge cut359_mask08 4 0,0,0,255 0]
+[subRenderFadein #A 0.4 50,-340]
+[subRenderMove #A 0,-340 0.3]
+[wt 0.3]
+
+[se ad527]
+[seStop ad527 0.5]
+[charaShake G 0.03 2 2 0.5]
+[charaMove G -10,290 0.5]
+[wt 0.7]
+
+[cueSe Servants_2500700 m41410 0 0.6]
+[charaFace K 0]
+[charaFadein K 1.0 0,350]
+[charaMove K 0,400 0.7]
+[wt 0.7]
+[cueSeStop m41410 1.0]
+[se ad527]
+[seStop ad527 0.5]
+[charaShake G 0.03 2 2 0.5]
+[charaMove G 0,290 0.5]
+[wt 1.0]
+
+[charaMove K 0,410 0.4]
+[charaMoveScale K 1.5 0.4]
+[wt 0.2]
+[cueSe SE_21 21_ad1118]
+[charaFadein M 0.1 0,300]
+[wt 0.1]
+[charaFadeout K 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[se adm26]
+[charaFadeout M 0.4]
+[charaPut R 0,320]
+[charaEffect R bit_talk_35]
+[wt 0.5]
+[cueSe Servants_704200 m49211]
+[wt 1.0]
+[se ad191]
+[wt 1.0]
+[seStop adm26 0.5]
+[subRenderFadeout #A 0.5]
+[blurOff lens 0.5]
+[wt 0.5]
+[charaFadeout Q 0.1]
+[charaLayer K normal]
+[charaLayer G normal]
+[charaLayer M normal]
+[subCameraOff]
+
+[charaFilter M normal]
+
+[charaTalk I]
+[charaFace I 21]
+[charaFadein I 0.1 1]
+
+＠サクラ
+ああ、ああっ……[r]お願い、止めて、止めさせて！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+無理だな。このような美味いご馳走、[r]残すことこそ不合理にすぎる。
+[k]
+
+[charaFace A 2]
+
+＠キャスターのマスター
+ふん。バーサーカーのところといい……[r]マスターとは、優れた魔術師がなるもの。
+[k]
+
+[charaFace A 7]
+
+＠キャスターのマスター
+だというのに、[r]道理の分からぬ愚図が多すぎるのはなぜだ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 21]
+[charaFadein I 0.1 1]
+
+＠サクラ
+いくら聖杯戦争のためでも、[r]こんな、こんなのは……。
+[k]
+
+＠サクラ
+この[#ＡＩ:子]たちは運営の要です。
+[k]
+
+＠サクラ
+[#生産部:グ　ロ　ウ]という区画だけじゃない、[r]この世界をこの世界として成り立たせるための[#礎:いしずえ]。
+[k]
+
+＠サクラ
+こんなことをしたら、追いつかなくなる。[r]色々なものに[#歪:ゆが]みが生じて、壊れてしまう……！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+くだらん。どうせＡＩは再生成される。[r]一時的に数が減るだけだ。
+[k]
+
+＠キャスターのマスター
+こんなマテリアルごとき、[r]放っておいても勝手に生えるものだろう。
+[k]
+
+[charaFaceFade A 1 0.2]
+
+＠キャスターのマスター
+そうだな。私が統括ＡＩとなった暁には、[r]ここは完全な自動化区画としよう。
+[k]
+
+＠キャスターのマスター
+無駄なリソースを使っている場所は[r]削減するのが正解だ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 20]
+[charaFadein I 0.1 1]
+
+＠サクラ
+違う。違い、ます。[r]そんなのは、絶対……。
+[k]
+
+＠サクラ
+わかってください。
+[k]
+
+＠サクラ
+わたしたちがどれだけ誇りを持って仕事しているか。[r]真剣に、自らの役割を、果たそうとしているか……！
+[k]
+
+＠サクラ
+貴方のところの[#構築部:ビ　ル　ド]だって、同じはず……
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+知らないね。私は下級ＡＩとは違う。[r]不要なものは不要なものだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 15]
+[charaFadein I 0.1 1]
+
+＠サクラ
+わたしは、わたしの命なんか惜しくない。[r]何をされたっていい。
+[k]
+
+＠サクラ
+でも、この[#生産部:グ　ロ　ウ]という場所を壊すのは、[r]それだけは、止めてください。
+[k]
+
+[charaFace I 9]
+
+＠サクラ
+戦うなら、戦いたいなら。[r]相手は、しますから……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+当然だ、そのためにここにいる。[r]まあ[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠キャスター
+食事はずっと続けるつもりだがな。[r]ペットの胃袋は俺の胃袋だ。
+[k]
+
+＠キャスター
+そちらの気が乗らぬなら、[r]ここのエサを喰らい尽くすまで待ってやってもいいぞ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_122 1.0]
+
+[charaTalk I]
+[charaFace I 21]
+[charaFadein I 0.1 1]
+
+＠サクラ
+そんな……！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠セイバー
+駄目。話は無駄よ。[r]こいつらはどうあっても[#生産部:こ　　こ]を潰すつもりだわ。
+[k]
+
+＠セイバー
+やるしかない。
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 9]
+[charaFadein I 0.1 1]
+[wt 1.5]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.5 0.5]
+
+[charaDepth M 1]
+[charaDepth J 2]
+
+[charaTalk J]
+[charaFace J 12]
+[charaFadein J 0.1 1]
+[charaPut M 0,-200]
+[charaFadeTime M 0.2 0.5]
+
+＠セイバー
+（まだ精神が安定していない[line 3][r]　魔力供給がスムーズにいくとは限らない）
+[k]
+
+＠セイバー
+（宝具は使えないと思ったほうがよさそう。[r]　令呪も、こんなところでは使わせられない……）
+[k]
+
+[charaFace J 13]
+
+＠セイバー
+（加えて、周りのＡＩや施設も気にする必要がある。[r]　自由には戦えない）
+[k]
+
+[charaFace J 1]
+
+＠セイバー
+（でも、あるもので、やるしかない。こんなところで[r]　サクラを終わらせて、たまるものか[line 3]！）
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_24 0.5 1.0]
+[cameraMove 0.5 0,-30 1.1]
+[charaFadeout M 0.2]
+[wt 0.7]
+
+[se ade158]
+[charaCrossFade J 1098267110 2 0.3]
+[wait charaCrossFade J]
+
+[wait fastPlayDraw 1.0]
+
+[wt 1.5]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

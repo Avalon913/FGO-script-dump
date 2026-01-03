@@ -1,0 +1,899 @@
+
+
+＄91-10-53-01-3-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 7040000 1 モルガン]
+[charaSet B 1053900 1 徴側]
+[charaSet C 1098231700 1 コン]
+[charaScale C 0.8]
+[charaSet D 1098231700 1 コン]
+[charaSet E 1053910 1 徴弐]
+[charaSet F 4025000 1 コロンブス]
+
+[charaSet G 7040000 1 モルガン_演出用]
+
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+
+
+[branchQuestClear lblClear01b 94064915]
+[branchQuestClear lblClear01b 3001101]
+
+[label lblClear01a]
+
+[scene 104200]
+
+[sceneSet Q 104200 1]
+[sceneSet R 104200 1]
+
+[branch lblConf01]
+[label lblClear01b]
+
+[scene 203800]
+
+[sceneSet Q 203800 1]
+[sceneSet R 203800 1]
+
+[label lblConf01]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth Q 1]
+[charaDepth A 2]
+[charaDepth P 2]
+[charaDepth E 3]
+[charaDepth B 4]
+[charaDepth D 5]
+[charaDepth C 6]
+[charaDepth R 7]
+[charaDepth G 8]
+
+[charaScale Q 1.15]
+[charaScale R 1.25]
+[charaScale G 1.25]
+[charaFadein Q 0 100,-250]
+[charaFadein R 0 50,-350]
+
+[cameraMove 0 0,0 1.01]
+
+[charaFace A 0]
+[charaFace G 0]
+[charaFace B 3]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein A 0.1 -300,0]
+[charaFadein B 0.1 466,0]
+[charaFadein C 0.1 410,-100]
+[charaFadein D 0.1 120,-100]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+
+[se ade242]
+
+＠モルガン
+[f large]私に何か用ですか。
+[k]
+
+？1：（なるほど圧が強い……！）
+？！
+
+[messageOff]
+
+[charaFadeout G 0.6]
+[charaFadeout R 0.6]
+[wt 1.2]
+
+[bgm BGM_EVENT_139 0.1 0.8]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 8]
+
+＠モルガン
+わかってはいるでしょうが、[r]私が契約しているのは我が[&夫:妻]。
+[k]
+
+＠モルガン
+その他のサーヴァントの頼みを聞く義理は[r]そうありません。
+[k]
+
+
+[charaTalk B]
+[charaFace C 0]
+[charaFace D 0]
+
+＠徴側
+そ、そそ、そうです……よね？
+[k]
+
+[charaTalk A]
+[charaFace A 9]
+
+＠モルガン
+……裏を返せば、我が[&夫:妻]が言葉を尽くして[r]頼んできたのであれば考えなくもない、
+[k]
+
+＠モルガン
+というところですが[line 3]（ちらり）
+[k]
+
+？1：こっちもどういう話か今いちわかってなくて
+？！
+
+[charaFace A 8]
+
+＠モルガン
+そうですか。[r]では、この話はここで終わりですね。
+[k]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFace C 0]
+[charaFace D 0]
+
+＠徴側
+すみません、ちょっと待ってください！[r]一応、お話だけ聞いてもらえますか？
+[k]
+
+[charaFace B 4]
+
+＠徴側
+そのう……とっても凄い魔術師であるモルガンさんに、[r]一つ、作っていただきたいアイテムがありまして。
+[k]
+
+＠徴側
+おまもり、みたいなものなんですけど。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+
+＠モルガン
+[line 3]おまもり。
+[k]
+
+＠モルガン
+話はわかりました。請われて[#護符:アミュレット]を作る、[r]それはまさしく魔女のような仕事ですが。
+[k]
+
+[charaFace A 5]
+
+＠モルガン
+ここにいるこの私がそのような仕事を[r]しなくてはならない理由は……理由は……。[bgmStop BGM_EVENT_139 1.5]
+[k]
+
+[messageOff]
+
+
+[charaTalk off]
+[charaFace B 4]
+[charaFace C 0]
+[charaFace D 0]
+
+[charaMoveEase C 340,-180 0.5 easeInOutSine]
+[charaMoveEase D 70,-120 0.5 easeInOutSine]
+[cueSe SE_22 22_ade695]
+[wt 0.6]
+[charaMove C 290,-180 0.5]
+[charaMove D 20,-120 0.5]
+[cueSe SE_22 22_ade710]
+[wt 0.4]
+[cueSeStop 22_ade710 0.1]
+[wt 0.3]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 1]
+
+＠C：コン
+わー。[r]もるもる、久しぶりなのだー？
+[k]
+
+[clear]
+
+[charaTalk D]
+[charaFace D 2]
+
+＠D：コン
+ちからかげんのわからぬ、[r]いたきもちいいぐにぐに……。
+[k]
+
+[charaFace D 3]
+
+＠D：コン
+くせになります。
+[k]
+
+[messageOff]
+
+
+[charaTalk B,C,D]
+[charaMove B 416,0 0.5]
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 0]
+
+＠徴側
+あ、ちょっと待ってね、[r]今大事なお話してるから。
+[k]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFace C 4]
+[charaFace D 4]
+
+＠モルガン
+……。[r]……。
+[k]
+
+[charaFace A 0]
+
+＠モルガン
+とはいえ、まあ[line 3]たまには。
+[k]
+
+＠モルガン
+カルデアの一員として、[r]サービスをするのもやぶさかではないでしょう。
+[k]
+
+＠モルガン
+マスターがここにいて[r]同意の視線を向けているという事は、
+[k]
+
+＠モルガン
+我が[&夫:妻]に頼まれているのと[#大凡:おおよそ]同じ、[r]という解釈も可能です。
+[k]
+
+[charaFace A 3]
+[charaFace C 0]
+[charaFace D 0]
+
+＠モルガン
+ええ。だから、その手はもう放してその子らを[r]好きにさせても問題ないでしょう。
+[k]
+
+[charaTalk B]
+[charaFace B 9]
+
+＠徴側
+え、ほんとですか？[r]やったー！　ありがとうございます！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+
+[charaFace C 1]
+[charaFace D 1]
+[charaMoveReturnEase C 290,-150 0.7 easeOutSine easeInSine]
+[charaMoveReturnEase D 20,-100 0.7 easeOutSine easeInSine]
+[cueSe SE_22 22_ade695]
+[wt 0.9]
+[charaMove B 466,0 1.0]
+[charaMove C -210,-180 2.5]
+[charaMove D -340,-120 2.0]
+[cueSe SE_22 22_ade710]
+[wt 1.2]
+[charaMove A -300,-30 0.7]
+[wt 1.3]
+[cueSeStop 22_ade710 0.1]
+[wt 0.3]
+[charaMove A -300,0 0.7]
+[charaMove C -210,-150 0.7]
+[charaMove D -340,-90 0.7]
+[wt 0.9]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+＠モルガン
+……この不可解な感触……久方ぶりですね……。[r]（ぐにぐに）[wt 0.5][charaMoveReturn A -300,-5 0.7][cueSe SE_23 23_ad1323][wt 0.2][cueSeStop 23_ad1323 0.2][wt 0.5][charaMoveReturn A -300,-5 0.7][cueSe SE_23 23_ad1323][wt 0.2][cueSeStop 23_ad1323 0.2][wt 0.5]
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.4]
+
+？1：（緑色のワイロが効いたみたい[&だ:]）
+
+[bgmStop BGM_HALLOWEEN_2021_1 1.0]
+[charaTalk on]
+[charaTalk B]
+
+？2：（たまたま……いや、これを予想して……？）
+
+[bgmStop BGM_HALLOWEEN_2021_1 1.0]
+
+
+[messageOff]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 1]
+[wt 1.4]
+
+？！
+
+[charaFace B 0]
+
+＠徴側
+えーと、具体的な話をしていいですか？
+[k]
+
+[bgm BGM_EVENT_147 0.1]
+
+＠徴側
+詳しく言うと、お願いしたいのは、[r]幸運のおまもり……みたいなものなんですけど。
+[k]
+
+＠徴側
+とにかく漠然といいことがあるような、[r]悪いことを遠ざけられるような。
+[k]
+
+
+[charaTalk A]
+[charaFace A 0]
+
+＠モルガン
+……曖昧ですね。[r]そのような注文で魔女が護符を作ると思いますか？
+[k]
+
+＠モルガン
+まあ作れますが。ただし、しっかりした効果を望むなら[r]特殊な材料が必要です。
+[k]
+
+[charaTalk B]
+[charaFace B 1]
+
+＠徴側
+あ、それなら大丈夫です。[r]何だって集めてきますよ！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 -196,0]
+
+[charaPut P 0,-200]
+[charaFadeTime P 0.2 0.5]
+
+＠徴弐
+（幸運のおまもり……[r]　まさか、こ、告白成功率を上げるため？）
+[k]
+
+[charaFadeout P 0.2]
+[wt 0.2]
+
+[charaFace E 5]
+
+＠徴弐
+ん、[charaShake E 0.05 2 3 0.5]んぎぎぎぎ……！[wt 0.5]
+[k]
+
+？1：はい落ち着いて落ち着いて
+？！
+
+[charaFace E 2]
+
+＠徴弐
+落ち着けないよ！[r]むしろどうしてそんなに落ち着けてるんだよ！
+[k]
+
+？1：うーん、まあ、なんとなく？
+？2：（側さんの雰囲気からすると、どうも……）
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 176,0]
+
+＠徴側
+弐っちゃん、手伝ってくれないの？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 -196,0]
+
+＠徴弐
+～～～～！　手伝う、手伝うよ！[r]決まってるでしょ！
+[k]
+
+＠徴弐
+それで、何を集めてきたらいいの！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein A 0.1 1]
+[charaFadein C 0.1 90,-150]
+[charaFadein D 0.1 -40,-90]
+
+＠モルガン
+ここは魔女らしくいく事にしましょう。
+[k]
+
+[charaFace C 6]
+[charaFace D 6]
+
+＠モルガン
+幸運の護符を作るために、[r]『幸運なる者の身体の一部』を持ってくるのです。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 -196,0]
+
+＠徴弐
+わかった！　お姉ちゃんに……された幸運なヤツの[r]目玉を[#抉:えぐ]って持ってくればいいんだね！　任せて！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 176,0]
+
+＠徴側
+怖いこと言わないで！？
+[k]
+
+[charaFace B 0]
+
+＠徴側
+えーと、身体の一部というと……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein A 0.1 1]
+[charaFadein C 0.1 90,-150]
+[charaFadein D 0.1 -40,-90]
+
+＠モルガン
+貴方が今持っているその護符と似たようなものです。
+[k]
+
+[charaFace C 2]
+[charaFace D 2]
+
+＠モルガン
+当人と深く結びついた魔力パターンが[r]計測できれば何でも構いません。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 176,0]
+
+＠徴側
+ほっ。[r]じゃあやっぱり、髪とかでいい感じね？
+[k]
+
+[charaFace B 0]
+
+＠徴側
+それで、幸運なる者っていうと……
+[k]
+
+[messageOff]
+
+[se ade116]
+[wt 1.3]
+
+？1：それは心当たりがあります
+？！
+
+[charaFace B 1]
+
+＠徴側
+本当？　とってもありがたいです！[r]それじゃあ、案内お願いしていいかしら？
+[k]
+
+[messageOff]
+
+
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.9]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace C 1]
+[charaFace D 1]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+[charaFadein C 0.1 90,-150]
+[charaFadein D 0.1 -40,-90]
+
+＠D：コン
+いてらー。
+[k]
+
+[clear]
+
+[charaTalk C]
+[charaFace C 0]
+
+＠C：コン
+おきをつけつけてー。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_147 1.0]
+[wait fade]
+
+[charaFadeout R 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth Q 1]
+[charaDepth E 2]
+[charaDepth F 2]
+[charaDepth B 3]
+[charaScale Q 1.1]
+[charaFadein Q 0.1 50,-200]
+
+[wt 0.9]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_SENGOKU_1 0.1]
+
+
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠コロンブス
+おう、マスター……に、[r]ベトナムの姉妹さんか。どしたい？
+[k]
+
+？1：幸運が高い男と見込んで
+？2：そのヒゲをいただく！
+？！
+
+[charaFace F 4]
+
+＠コロンブス
+あん？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 -196,0]
+
+＠徴弐
+……。[r]……。
+[k]
+
+[messageOff]
+
+
+[charaMove E -196,-10 0.4]
+[se ad60]
+[wt 0.3]
+[seStop ad60 0.1]
+[wt 0.1]
+[charaMoveScale E 1.05 0.4]
+[charaMove E -206,0 0.4]
+[se adm37]
+[wt 1.3]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠コロンブス
+待て待て、なんでそっちの嬢ちゃんは[r]無言で剣を構えてんだぁ？
+[k]
+
+＠コロンブス
+今にもマジで斬りかかってきそうな気配だが？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 -196,0]
+
+＠徴弐
+今から斬りかかろうとしてたからね。[r]大丈夫、下手に動かなければすぐ終わる。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 176,0]
+
+＠徴側
+ちょっと二人とも！[r]まずは説明するのが筋でしょう。もう……！
+[k]
+
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_SENGOKU_1 1.0 0.5]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[wipein rollLeft 1.0 1.0]
+[bgm BGM_SENGOKU_1 1.0 1.0]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠コロンブス
+ははぁ。幸運のおまもりのために、[r]この俺のヒゲが必要、ねぇ……？
+[k]
+
+？1：真っ先にイメージが浮かんだので
+？2：[#活:い]きのいい毛が取れそうだったので
+
+[charaFace F 4]
+
+＠コロンブス
+活きのいい……？
+[k]
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace E 5]
+[charaFadein B 0.1 0,0]
+[charaFadein E 0.1 0,0]
+
+＠徴側
+ともあれ、そういうことなんです。[r]ご協力いただけますか？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 1.0]
+[charaFace F 1]
+
+＠コロンブス
+ハッハァ。妹ちゃんの手段は乱暴だったが、[r]手っ取り早かったのは事実だよなあ。
+[k]
+
+＠コロンブス
+初手のアレで済ませられりゃ、[r]話は単純だったのかもしんねえ。
+[k]
+
+[charaFace F 4]
+
+＠コロンブス
+事情を聞いちまえば道理は通るが、[r]余計な要素も増えちまうってもんだ。[bgmStop BGM_SENGOKU_1 1.5]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFace E 5]
+[charaFadein B 0.1 0,0]
+[charaFadein E 0.1 0,0]
+
+＠徴側
+余計な要素……とは？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+[bgm BGM_EVENT_71 0.1]
+
+＠コロンブス
+そりゃもちろん、[#損得]さ。[r]俺は商人なんでね？
+[k]
+
+＠コロンブス
+俺に所有権がある、他人にとって価値あるものを[r]渡すとなりゃあ、タダとはいかねえよ。
+[k]
+
+[charaFace F 0]
+
+＠コロンブス
+そいつに値がつくと知っちまったからには、[r]無条件で渡すってワケにゃいかなくなったのさ。
+[k]
+
+[charaFace F 1]
+
+＠コロンブス
+てなわけで、どうする？[r]交渉といくかい？
+[k]
+
+[charaFaceFade F 11 0.3]
+
+＠コロンブス
+それとも王様らしく言い値で買ってくれるかね？
+[k]
+
+[bgmStop BGM_EVENT_71 1.5]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFace E 5]
+[charaFadein B 0.1 0,0]
+[charaFadein E 0.1 0,0]
+
+＠徴側
+……。[r]……。
+[k]
+
+[charaFace B 0]
+[charaFace E 0]
+[bgm BGM_MAP_96 0.1]
+
+＠徴側
+ええ、わたしはかつて、[r]王の立場であったものです。
+[k]
+
+[charaFace B 7]
+
+＠徴側
+けれど、それは支配や血の象徴のような[r]意味ではなく、皆のまとめ役のようなもの。
+[k]
+
+＠徴側
+食料の調達、[#兵站:へいたん]の管理、商人との[#折衝:せっしょう]……[r]いろいろなことを直接しなくてはなりませんでした。
+[k]
+
+[charaFace B 1]
+
+＠徴側
+ですから、交渉の経験もないわけではありませんよ。
+[k]
+
+＠徴側
+お望みであれば、やりましょう。[r]適正価格の値付けに協力させてもらいます。
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+
+＠徴弐
+その通り。姉さんを舐めんなって感じ。[r]私だって手伝うし。
+[k]
+
+？1：弐さんも交渉事とかやってたの？
+？！
+
+[charaFace E 1]
+
+＠徴弐
+うん。主に商人と話してる姉さんの後ろで[r]ガン飛ばしたり、
+[k]
+
+＠徴弐
+おもむろに刃物を研ぎ始めたりするんだ。[r]それでいい流れにする。
+[k]
+
+[messageOff]
+
+
+[charaTalk off]
+[charaFace B 3]
+[wt 0.5]
+
+
+？1：（それは交渉とは別のスキルなのでは……）
+？！
+
+[bgmStop BGM_MAP_96 1.0]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠コロンブス
+なんか怖えな。
+[k]
+
+[charaFace F 1]
+[bgm BGM_EVENT_3 0.1]
+
+＠コロンブス
+まあいいか、俺も王様相手の交渉は[r]どっちかっていうと得意なほうさ。
+[k]
+
+[charaFaceFade F 7 0.3]
+
+＠コロンブス
+さあさあ、俺のヒゲにはいくらの値がつくんだ？[r]納得いく答えを聞かせてもらおうじゃねえか！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+
+

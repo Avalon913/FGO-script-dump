@@ -1,0 +1,1113 @@
+
+
+
+
+
+
+＄94-15-00-04-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 3062000 1 エリザベート]
+[charaSet C 25010001 1 モレー]
+[charaSet D 1098337710 1 フレッカス]
+[charaSet E 1098338100 1 死滅の尾]
+[charaSet F 1098338100 1 死滅の尾2]
+[charaSet G 1098338100 1 死滅の尾3]
+[charaSet K 1098338100 1 死滅の尾4]
+[charaSet L 1098338100 1 死滅の尾5]
+
+[charaSet H 25010001 1 モレー_演出用]
+[charaSet I 3062000 1 エリザベート_演出用]
+[charaSet J 3062000 1 エリザベート_演出用]
+
+[charaSet M 1098339700 1 エリザベートの槍]
+
+[charaSet N 1098340700 1 メカエリチャンⅡ号機]
+[charaSet O 1098340700 1 メカエリチャンⅡ号機]
+
+[masterBranch _Male _Female]
+[label _Male]
+
+[sceneSet Q 268200 1]
+[sceneSet R 268200 1]
+[branch _branchEnd]
+
+[label _Female]
+
+[sceneSet Q 268210 1]
+[sceneSet R 268210 1]
+[branch _branchEnd]
+[label _branchEnd]
+
+[sceneSet V 129800 1]
+[sceneSet W 265800 1]
+[sceneSet X 265800 1]
+[sceneSet Y 265900 1]
+
+[sceneSet Z 10000 1]
+[charaScale Z 1.1]
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+
+[charaTalk depthOff]
+[charaDepth J 25]
+[charaDepth I 17]
+[charaDepth H 16]
+[charaDepth Z 15]
+[charaDepth A 8]
+[charaDepth V 7]
+[charaDepth D 6]
+[charaDepth W 5]
+[charaDepth C 4]
+[charaDepth P 4]
+[charaDepth O 3]
+[charaDepth X 2]
+
+[charaDepth E 11]
+[charaDepth F 10]
+[charaDepth G 9]
+[charaDepth K 8]
+[charaDepth L 7]
+[charaDepth Y 6]
+
+[subCameraOn 3]
+[charaLayer N sub #A]
+[charaLayer Q sub #A]
+[subCameraFilter #A maskEdge cut359_mask14 3 192,192,192,255]
+[subRenderDepth #A 1]
+[subRenderScale #A 1.0]
+[charaScale N 0.93]
+[charaScale Q 0.55]
+
+[charaDepth Q 2]
+[charaDepth N 4]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 460,192]
+[charaFadein Q 0 420,110]
+
+[charaLayer O sub #C]
+[charaLayer P sub #C]
+[charaLayer R sub #C]
+[subCameraFilter #C maskEdge cut359_mask14 3 192,192,192,255]
+[subRenderDepth #C 1]
+[subRenderScale #C 1.0]
+[charaScale O 0.93]
+[charaScale R 0.55]
+
+[charaDepth R 2]
+[charaDepth O 4]
+[charaDepth P 5]
+
+[charaTalk O]
+[charaFace O 6]
+[charaFadein O 0.1 460,192]
+[charaFadein R 0 420,110]
+
+
+
+[scene 265300]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_141 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+
+＠モレー
+よーいしょっと。
+[k]
+
+[messageOff]
+[charaMoveEase C 0,-10 0.7 easeOutBack]
+[se ad796]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout C 0.1]
+[scene 129800]
+
+[wt 1.5]
+[cueSe SE_24 24_ade1007]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠フレッカス
+お、簡易テントか。[r]高くて買えなかったんだよな、これ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠モレー
+経費で落としたぜ。[r]ユニヴァースも便利なものだね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+つっっっかれたぁぁ……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaMove A 0,-30 0.4]
+[wt 0.3]
+[se ad775]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠フレッカス
+肩はないけど、肩が凝った……。
+[k]
+
+[messageOff]
+[charaLayer V sub #B]
+[charaLayer A sub #B]
+[charaLayer H sub #B]
+[subCameraFilter #B normal]
+[subRenderDepth #B 1]
+[subRenderScale #B 1.01]
+[charaScale V 1.2]
+[charaFadein V 0 -100,-160]
+[subRenderFadein #B 0.4 0,0]
+[charaMoveEase V -50,-160 0.6 easeOutSine]
+[wt 0.7]
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 -150,-100]
+[charaMoveEase A -150,-50 0.4 easeOutQuint]
+[cueSe SE_25 25_ade1144 0 0.7]
+[wt 0.4]
+[charaFadeout D 0.1]
+[charaFace N 6]
+[subRenderFadein #A 0.1 -150,-220]
+
+＠エリザベート
+で、これからどうするの？[r]やっぱりアポロンの言う通りにする？
+[k]
+
+[messageOff]
+[charaTalk A,N]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+
+＠メカエリチャンⅡ号機
+今のところはそれ以外に選択肢がないでしょうね。
+[k]
+
+[messageOff]
+[charaTalk A,N]
+[charaFace A 7]
+[subRenderFadein #B 0.4 0,0]
+[wt 0.4]
+
+＠エリザベート
+このままだと追い詰められるだけだし、[r]行くしかないか……。
+[k]
+
+[messageOff]
+[charaTalk A,N]
+[charaFace N 8]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+
+[charaFadeout V 0.1]
+[charaFadeout A 0.1]
+[charaScale A 1.0]
+
+＠メカエリチャンⅡ号機
+……ところでジャック・ド・モレー。
+[k]
+
+＠メカエリチャンⅡ号機
+そもそもアナタはどうやってここへ？
+[k]
+
+[messageOff]
+[charaScale H 1.2]
+[charaScale V 1.2]
+[charaTalk off]
+[charaFace H 0]
+[charaFadein H 0 -15,0]
+[charaFadein V 0 -15,-270]
+[charaMove H 15,0 15.0]
+[charaMove V 15,-270 15.0]
+[subRenderFadein #B 0.4 0,0]
+[wt 0.5]
+[subRenderFadeout #A 0.1]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠モレー
+ウィ。カルデアでエリちゃん、メカエリチャン、[r]そしてマスターが行方不明[line 3]
+[k]
+
+＠モレー
+というか、空飛ぶチェイテピラミッド姫路城に[r]乗り込んでいたことが判明してさ。
+[k]
+
+[charaFace H 23]
+
+＠モレー
+サーヴァントたちは大騒ぎだし、[r]マシュはショックで寝込むし、
+[k]
+
+＠モレー
+ダ・ヴィンチちゃんは思考したまま動かないし、[r]ゴルドルフくんは唸りながら頭痛薬を飲んでた。
+[k]
+
+？1：帰ったら怒られるかなぁ！
+？！
+
+[charaFace H 8]
+
+＠モレー
+あはは、ないない。[r]いくら何でも予測がつかない事態だからね。
+[k]
+
+[charaFace H 1]
+[charaFace C 1]
+
+＠モレー
+まあ、バイタル観測は何とかなってて、[r]無事は伝わってるから大丈夫でしょう。
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.6]
+[wt 0.8]
+[charaFadeout H 0]
+[charaFadeout V 0]
+
+＠モレー
+でさ。あたしは邪神に縁があるサーヴァントだからかな？
+[k]
+
+[charaFace C 17]
+
+＠モレー
+あと、かつてハロウィンのやらかし役だったことも[r]あるからかもなんだけど。
+[k]
+
+[charaFace C 23]
+
+＠モレー
+[#何か]に引き寄せられる感じがして、[r]抵抗せずに身を任せたら[line 3]
+[k]
+
+[charaFace C 0]
+
+＠モレー
+こっちに到着してた。[r]レイシフトとは違う感覚だったね、あれは。
+[k]
+
+[charaTalk on]
+[charaTalk N]
+[charaFace N 6]
+[subRenderFadein #A 0.2 -150,-220]
+
+＠メカエリチャンⅡ号機
+そう。私たちも似たようなものね。
+[k]
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+[charaTalk C]
+
+＠モレー
+で、あたしは『三竜教団』に潜り込んでたのよ。[r]もう滅茶苦茶怪しい団体だったしね。
+[k]
+
+＠モレー
+それで、さっきまで信徒の皆と行動を共にしていて……。[r]皆のピンチに颯爽と駆けつけた訳だね。
+[k]
+
+？1：改めてありがとう！
+？！
+
+[charaFace C 8]
+
+＠モレー
+えへへ、いいってことよ。
+[k]
+
+[charaFace C 1]
+
+＠モレー
+さて。それじゃ、そっちはどんな感じだったの？[r]まず、その辺を聞かせてもらおうかな。
+[k]
+
+[messageOff]
+[cameraMove 0.3 0,5 1.01]
+[wt 0.3]
+[cameraMove 0.3 0,0 1.01]
+[wt 0.8]
+
+[bgm BGM_EVENT_141 1.0 0.5]
+[wipeout rollRight 1.0 1]
+[wait wipe]
+
+[charaFace C 6]
+[charaLayer A normal]
+[wt 1.0]
+
+[bgm BGM_EVENT_141 1.0 1.0]
+[wipein rollLeft 1.0 1]
+[wait wipe]
+
+＠モレー
+なるほどなるほど。[r]タルシス三山に霊脈が……。
+[k]
+
+[charaFace C 1]
+
+＠モレー
+うん、あたしが『三竜教団』で集めた情報とも、[r]ほぼ一致しているね。
+[k]
+
+＠モレー
+この槍は長い間、教団が追い求めていた槍……。[r]これも教団で伝えられてきたのは確か。
+[k]
+
+[charaFace C 23]
+
+＠モレー
+逆にいうと教団も槍と霊脈の関係は[r]把握しているんだよね。
+[k]
+
+＠モレー
+妨害されるのは確実だと思うよ。
+[k]
+
+[charaTalk N]
+[charaFace N 6]
+[subRenderFadein #A 0.2 -150,-220]
+
+＠メカエリチャンⅡ号機
+そうね。それでも三山あるのだから、[r]妨害するにせよ、戦力は分散されるはず。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+あれ？　それ最終的には詰まない？
+[k]
+
+[charaTalk N]
+[charaFace N 0]
+
+＠メカエリチャンⅡ号機
+……それまでには、何か考えるわ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_141 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[subRenderFadeout #A 0.1]
+
+[charaScale W 1.4]
+[charaFadein W 0.1 -220,-410]
+[charaScale X 1.3]
+[charaFadein X 0.1 60,-200]
+[masterBranch _Male1 _Female1]
+[label _Male1]
+
+[sceneSet Q 268200 1]
+
+[branch _branchEnd1]
+[label _Female1]
+
+[sceneSet Q 268210 1]
+
+[branch _branchEnd1]
+[label _branchEnd1]
+
+[charaLayer Q sub #A]
+[charaScale Q 0.7]
+
+[charaDepth Q 2]
+[charaFadein Q 0 330,45]
+
+[scene 265800]
+[wt 1.5]
+[se ad556 0 0]
+[seVolume ad556 1.5 0.1]
+[charaMove W -160,-410 5.0]
+[fadein black 1.5]
+[wait fade]
+
+
+[wt 2.5]
+[seStop ad556 3.0]
+[charaFadeout W 0.6]
+[charaMove X 70,-260 5.0]
+[cueSe SE_25 25_ade1291]
+[seVolume 25_ade1291 0 0.2]
+[cueSe SE_21 21_ad1065 0 0]
+[cueSeVolume 21_ad1065 1.5 0.7]
+[wt 3.6]
+
+[seStop 25_ade1291 1.2]
+[cueSeStop 21_ad1065 1.2]
+[charaFadeout X 0.8]
+[wt 1.2]
+
+＠
+[line 3]アルシア山。
+[k]
+
+[messageOff]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[bgm BGM_MAP_95 0.1]
+
+＠モレー
+で、『三竜』についてなんだけど。
+[k]
+
+＠モレー
+まあ、950年前に出現した時はとにかく[r]酷かったみたいよ。
+[k]
+
+＠モレー
+そもそも、この星がこんなに荒れ果て[line 3][r]尚且つ、ハロウィン仕様になったのも、
+[k]
+
+＠モレー
+この竜の仕業らしいし。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠フレッカス
+へー、そうかい。[r]でもハロウィン自体は嬉しいけどね、俺。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth W 2]
+[charaDepth D 4]
+[charaDepth C 1]
+[charaDepth A 3]
+
+
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 0,0]
+
+＠モレー
+ほー、そうなんだ。[r]……ところでなんで、まだいるの？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaLayer C normal]
+[charaScale C 1.0]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠フレッカス
+ここまで来たの俺の車なんですけど！？[r]あと、現在進行形で槍を運んでいるんですが！
+[k]
+
+[charaTalk O]
+[subRenderFadein #C 0.2 -150,-220]
+
+＠O：メカエリチャンⅡ号機
+心配しなくても、これが終わったら[r]充分な報酬を支払うつもりよ。
+[k]
+
+[charaTalk D]
+[charaFace D 11]
+
+＠フレッカス
+いいよね、『充分な報酬』って言葉。[r]『発売前重版』『超満員札止め』みたいなときめきがある。
+[k]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadeinFSL A 0.1 -320,0]
+
+＠エリザベート
+その代わり、裏切ったらただじゃおかないわよ？
+[k]
+
+[charaTalk D]
+[charaFace D 3]
+
+＠フレッカス
+嫌だよね、『ただじゃおかない』。[r]『無償交換』『閑散』みたいな切なさがある。
+[k]
+
+？1：ちゃんとお手当つけるから！
+？！
+
+[charaFace D 1]
+
+＠フレッカス
+わーい！
+[k]
+
+[subRenderFadeout #C 0.1]
+[charaTalk D,C]
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaFadeout P 0]
+[charaFadeout A 0]
+[charaFadeout X 0]
+[charaScale A 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モレー
+それで、『特攻機関[#竜殺剣:シ グ ル ド]』は[r]『三竜教団』にとっての敵。
+[k]
+
+＠モレー
+業炎のワタナベ、鮮血のウィドウヒルト、[r]太陽のパリス、絶対勝利のジークフリート。
+[k]
+
+＠モレー
+『三竜教団』はこの組織のために、[r]何度も地に潜らざるを得なかったとか。
+[k]
+
+[charaFace C 17]
+
+＠モレー
+それでもリーダーであった竜殺のシグルドが[r]別の戦闘組織に組み込まれたため[line 3]
+[k]
+
+＠モレー
+ギリギリで全滅を免れたんだってさ。
+[k]
+
+[messageOff]
+[charaScale W 1.4]
+[charaFadein W 0.4 0,-200]
+[shake 0.03 3 3 1.8]
+[se ad14 0 0]
+[seVolume ad14 0.4 1.0]
+[wt 1.8]
+[seStop ad14 1.0]
+[wt 0.6]
+[charaLayer H sub #B]
+[charaLayer X sub #B]
+[subCameraFilter #B maskEdge cut359_mask06 5 59,56,80,255 0]
+[charaScale X 1.2]
+[charaScale H 1.3]
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0 50,250]
+[charaFadein X 0 50,-70]
+[charaMoveEase H 0,250 0.4 easeOutCubic]
+[charaMoveEase X 0,-70 0.4 easeOutCubic]
+[subRenderFadein #B 0.4 0,-300]
+[wt 0.4]
+
+＠H：モレー
+そしてこの、何度も起こる地震は邪竜が[r]覚醒する前兆。
+[k]
+
+[charaFace H 14]
+
+＠H：モレー
+だから、あなたたちは一刻も早く入信すべきですよ！[wt 1.0][charaFace H 10][r]……というのがざっくりとした教えね。
+[k]
+
+[messageOff]
+[charaTalk H,C]
+[charaFace C 6]
+[charaFadeout W 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+[charaFadeout H 0]
+[charaFadeout X 0]
+[charaLayer H normal]
+[charaLayer A normal]
+[charaLayer X normal]
+
+＠モレー
+で、この教団にも戦力がある。[r]信徒の中で戦闘力が高い者を集めた[#秘匿:ひとく]部隊。
+[k]
+
+＠モレー
+『死滅の尾』とか呼ばれてるらしくて、[r]多分こいつらが待ち構えてるんじゃないかな。
+[k]
+
+[charaFace C 1]
+
+＠モレー
+それから、教団の信徒は隠れて活動している場合もある。[r]合い言葉は『王の戴冠はいつか？』だって。
+[k]
+
+＠モレー
+それからそれから、[r]各倉庫街に支部の他にも隠れ家があって[line 3]
+[k]
+
+[messageOff]
+[charaScale I 1.2]
+[charaScale W 1.2]
+[charaTalk C,I]
+[charaFace I 5]
+[charaFadein I 0.4 -150,0]
+[charaFadein W 0.4 100,-220]
+[charaMoveEase I -130,0 0.6 easeOutSine]
+[charaMoveEase W 120,-220 0.6 easeOutSine]
+[wt 0.8]
+
+＠I：エリザベート
+……聞けば聞くほど、[r]ドン引きレベルで本格的なカルトなんですけど。
+[k]
+
+[charaFace I 3]
+
+＠I：エリザベート
+[#私:アタシ]よく、そんな環境で二年半も暮らしてたわね！？
+[k]
+
+[messageOff]
+[charaTalk I,C]
+[charaFace C 1]
+[charaFadeout I 0.4]
+[charaFadeout W 0.4]
+[wt 0.4]
+[charaScale I 1.0]
+
+＠モレー
+そうだね。組織構成だけなら、100点満点。
+[k]
+
+＠モレー
+信仰対象が明らかにヤバ目なのを[r]隠そうともしないのがマイナス1000点くらい。
+[k]
+
+[charaFace C 8]
+
+＠モレー
+それで、この期に及んでも何か隠している感じで、[r]プラス10000点かなー。
+[k]
+
+[charaTalk O]
+[charaFace O 6]
+[subRenderFadein #C 0.2 -150,-220]
+
+＠O：メカエリチャンⅡ号機
+何かを隠している、ですか？
+[k]
+
+[charaTalk C]
+[charaFace C 10]
+
+＠モレー
+ん。今の情報って、ちょっと教団に潜ったら、[r]誰でも掴める情報なんだよねー。
+[k]
+
+＠モレー
+なんなら、[r]あたしがスパイなのはバレてたかもしれない。
+[k]
+
+＠モレー
+だから肝心の、具体的に何をしようとしているのか、[r]それがわからなかったんだよねぇ。
+[k]
+
+[charaFace C 18]
+
+＠モレー
+もうちょっと潜り込んでいてもよかったけど、[r]マスターがピンチだったし。
+[k]
+
+[charaTalk O]
+[charaFace O 8]
+
+＠O：メカエリチャンⅡ号機
+いえ、あのタイミングはベストでした。[r]感謝します。
+[k]
+
+[messageOff]
+[charaLayer W sub #B]
+[charaLayer H sub #B]
+[charaLayer I sub #B]
+[charaLayer J sub #B]
+[charaLayer Z sub #B]
+[subCameraFilter #B normal]
+[charaDepth W 13]
+[charaScale H 1.2]
+[charaScale W 1.4]
+[charaTalk O,H]
+[charaFace H 1]
+[charaFadein H 0 1]
+[charaFadein W 0 0,-270]
+[subRenderFadein #B 0.4 0,0]
+[wt 0.4]
+[charaFadeout C 0.1]
+[subRenderFadeout #C 0.1]
+
+＠H：モレー
+[#どういたしまして:D　 e　  　 r　 i　 e　 n]。[r]それからエリちゃんに質問があるんだけど。[bgmStop BGM_MAP_95 1.5]
+[k]
+
+[messageOff]
+[charaTalk H,I]
+[charaMoveEase H 250,0 1.0 easeOutSine]
+[charaMoveEase W 250,-270 1.0 easeOutSine]
+[wt 1.0]
+[charaScale I 1.2]
+[charaFace I 0]
+[charaFadein I 0.4 -300,0]
+[wt 0.4]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠I：エリザベート
+ん？
+[k]
+
+[bgm BGM_EVENT_175 0.1]
+[charaTalk H]
+[charaFace H 0]
+
+＠H：モレー
+かくかくしかじかで話を聞いた限りでは、[r]エリちゃんって騙されてたんだよね？
+[k]
+
+[charaTalk I]
+[charaFace I 0]
+
+＠I：エリザベート
+……まあ、そうなる……わね……？
+[k]
+
+[charaTalk H]
+[charaFace H 17]
+
+＠H：モレー
+その割には終わりのエリザベートに対する、[r]恨み辛みとかあんまなさそうだなって。
+[k]
+
+[charaTalk I]
+[charaFace I 7]
+
+＠I：エリザベート
+無いわよ？　……あれ。なんで無いのかしら。
+[k]
+
+[charaTalk H]
+[charaFace H 1]
+
+＠H：モレー
+そこ、ちょっと深掘りしてみない？
+[k]
+
+[charaFadeTime Z 0.2 0.5]
+[charaScale J 1.2]
+[charaPut J -300,0]
+[charaFilter J silhouette 00000080]
+[charaFadeTime J 0.2 0.5]
+[charaFace H 6]
+
+＠H：モレー
+（……少し危険そうな気もするけど、[r]　踏み込んでみるべきとあたしの勘が告げている）
+[k]
+
+＠H：モレー
+（実は洗脳されてて裏切り展開とか、[r]　エリちゃん割とありそうだからなー……）
+[k]
+
+[messageOff]
+[charaTalk H,A]
+[subRenderFadeout #B 0.4]
+[wt 0.5]
+[charaFadeout H 0.1]
+[charaFadeout W 0.1]
+[charaFadeout I 0.1]
+[charaFadeout Z 0.1]
+[charaFadeout J 0.1]
+[wt 0.5]
+[charaLayer W normal]
+[charaLayer H normal]
+[charaLayer I normal]
+[charaLayer J normal]
+[charaLayer Z normal]
+[charaFaceFade A 0 0.2]
+[wt 0.3]
+
+＠エリザベート
+んー……記憶を思い出してから、[r]何度もこの三年を振り返っているんだけど[line 3]
+[k]
+
+＠エリザベート
+あんまりイヤな思い出ないのよね。[r]ジャンルは違うけど、歌は歌いたい放題だったし。
+[k]
+
+[charaFace A 1]
+
+＠エリザベート
+それに……三食昼寝付きだったし。[r]三食全部、母様が作ってくれたし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 1]
+
+＠モレー
+終わりのエリザベートが？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+うん。美味しかったわね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 1]
+
+＠モレー
+……まあ、食事を作ってくれる人をあんまり[r]嫌いにはなれないか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+母にあたる人が食事を作ってくれるなんて、[r]初めての経験だったもの！
+[k]
+
+？1：そういえばエリちゃん貴族だった……
+？2：忘れかけてた
+？！
+
+[charaFace A 3]
+
+＠エリザベート
+忘れないでよ！？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_175 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 1.0]
+[cueSe SE_21 21_ad1065 0 0.4]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[cueSeStop 21_ad1065 0.7]
+[wt 0.4]
+＠モレー
+さて、そろそろ山頂だけど。
+[k]
+
+[messageOff]
+[charaTalk C,H]
+[charaScale W 1.3]
+[charaScale H 1.3]
+[charaFace H 10]
+[charaFadein H 0.6 150,0]
+[charaFadein W 0.6 0,-320]
+[wt 0.6]
+
+＠H：モレー
+……お、いるねえ。
+[k]
+
+
+[messageOff]
+[cueSe SE_21 21_ad1065 0 0.3]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[charaLayer E sub #B]
+[charaLayer F sub #B]
+[charaLayer G sub #B]
+[charaLayer K sub #B]
+[charaLayer L sub #B]
+[charaLayer Y sub #B]
+[subCameraFilter #B normal]
+[subRenderFadein #B 0.1 0,0]
+[charaFadeout C 0.1]
+[charaFadeout H 0.1]
+[charaFadeout W 0.1]
+[charaScale Y 1.2]
+[charaFadein Y 0.1 0,-270]
+
+[masterBranch _Male2 _Female2]
+[label _Male2]
+
+[sceneSet Q 268200 1]
+
+[branch _branchEnd2]
+[label _Female2]
+
+[sceneSet Q 268210 1]
+
+[branch _branchEnd2]
+[label _branchEnd2]
+
+[charaLayer Q sub #A]
+[charaScale Q 0.7]
+[charaDepth Q 2]
+[charaFadein Q 0 330,45]
+[scene 265900]
+[wt 0.7]
+[cueSeStop 21_ad1065 1.0]
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+[bgm BGM_BATTLE_195 0.1]
+＠E：？？？
+む、居たぞ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[cueSe SE_21 21_ad1120]
+[charaFace F 0]
+[charaFace G 0]
+[charaFace K 0]
+[charaFace L 0]
+[charaFadein F 0.4 -256,-10]
+[wt 0.2]
+[charaFadein G 0.4 256,-10]
+[wt 0.2]
+[charaFadein K 0.4 -512,0]
+[wt 0.2]
+[charaFadein L 0.4 512,0]
+[cueSeStop 21_ad1120 0.7]
+[wt 0.7]
+[charaTalk on]
+[charaTalk E]
+
+＠E：？？？
+我ら『三竜教団』秘匿抹殺部隊、『死滅の尾』！[r]異端である汝ら、カルデアを滅ぼす者である！
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+[charaFadeout Y 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+
+＠モレー
+げ、やっぱりいた。[r]でも人数的には大したことないね。
+[k]
+
+＠モレー
+これなら何とか……！
+[k]
+
+[charaTalk O]
+[charaFace O 6]
+[subRenderFadein #C 0.2 -150,-220]
+
+＠O：メカエリチャンⅡ号機
+……。[r]……。
+[k]
+
+？1：どうしたの？
+？！
+
+[charaFace O 7]
+
+＠O：メカエリチャンⅡ号機
+何でもないわ。[r]それより戦わない訳にはいかないでしょう。
+[k]
+
+＠O：メカエリチャンⅡ号機
+モレー、お願い。
+[k]
+
+[charaTalk C]
+[charaFace C 14]
+
+＠モレー
+了解！　さあ、一つ[#呪殺:じゅっころ]しちゃいますねー！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_195 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

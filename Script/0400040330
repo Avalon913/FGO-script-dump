@@ -1,0 +1,284 @@
+
+
+
+
+＄04-00-04-03-3-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098276910 1 マシュ]
+[charaSet B 4034300 1 バーソロミュー]
+[charaSet C 33002001 1 アンキ・エレシュキガル]
+[charaSet D 1098301810 1 ＢＢコスモ]
+
+[sceneSet I 225800 1]
+[sceneSet J 223800 1]
+
+[sceneSet K 223810 1]
+[sceneSet L 223800 1]
+
+[charaSet T 98115000 1 エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+
+[scene 223800]
+
+[charaTalk depthOff]
+
+[subCameraOn 2]
+[charaLayer C sub #A]
+[charaLayer U sub #A]
+[charaLayer I sub #A]
+[charaLayer B sub #B]
+[charaLayer J sub #B]
+[subCameraFilter #A maskEdge cut359_mask07 5 111,81,161,255 0]
+[subCameraFilter #B maskEdge cut359_mask03 3 0,0,0,255 0]
+[subRenderScale #B 1.01]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaDepth C 3]
+[charaDepth U 2]
+[charaDepth I 1]
+[charaScale C 1.3]
+[charaScale I 1.3]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0 0,150]
+[charaFadein I 0 0,-50]
+
+[charaDepth B 2]
+[charaDepth J 1]
+[charaScale B 1.4]
+[charaScale J 1.3]
+[charaFace B 9]
+[charaFadein B 0 -200,50]
+[charaFadein J 0 50,-180]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_113 0.1]
+
+[subRenderFadein #A 0.3 0,-50]
+[subRenderMoveEase #A 0,-150 0.3 easeOutSine]
+[wt 0.4]
+
+＠アンキ・エレシュキガル
+この地が人類の終焉地であるのなら、[r]ビーストとして責務を果たすまで！
+[k]
+
+＠アンキ・エレシュキガル
+人類を滅ぼす者は私以外ありえません！[r]なので、私もラスボス決定戦にエントリーします！
+[k]
+
+[messageOff]
+[charaPut U 0,-250]
+[charaEffect U bit_talk_sand_geyser]
+[cueSe SE_24 24_ad1425]
+[wt 0.3]
+[shake 0.03 3 3 1.5]
+[charaEffectStop U bit_talk_sand_geyser]
+[cueSeStop 24_ad1425 2.5]
+[wt 2.0]
+
+？1：なんでそうなる[&んだ:の]、エレシュキガル！
+
+[charaFace C 18]
+＠アンキ・エレシュキガル
+それが私の責務だからです。
+[k]
+
+＠アンキ・エレシュキガル
+アナタもこのムーン・ドバイが人類にとって[r]どんな未来なのかを知れば理解するでしょう。
+[k]
+
+？2：船がたいへんなことにーー！
+
+[charaFace C 4]
+
+＠アンキ・エレシュキガル
+[FFFFFF]？[-]　私、まだ攻撃はしていないけど……なにこれ？
+[k]
+
+？！
+
+[messageOff]
+[charaTalk C,B]
+[subRenderFadeout #A 0.3]
+[charaFace B 14]
+[subRenderFadein #B 0.4 -200,-80]
+[subRenderMoveEase #B 0,-80 0.4 easeOutQuint]
+[wt 0.4]
+
+＠バーソロミュー
+つぅ、舵がまったく利かない！[wt 0.5][charaFace B 6][r]諸君、どこでもいい、船に掴まれ！
+[k]
+
+＠バーソロミュー
+砂の中に何かいるぞ！[r]この衝撃、[#鯨:くじら]に違いない！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[subRenderFadeout #B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout I 0.1]
+
+[charaScale K 1.3]
+[charaFadein K 0.1 0,-280]
+[wt 0.3]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaPut T 0,0]
+[charaEffect T bit_talk_sand_geyser]
+[cueSe SE_24 24_ad1425]
+[wt 0.3]
+[shake 0.03 4 4 1.5]
+[charaEffectStop T bit_talk_sand_geyser]
+[cueSeStop 24_ad1425 2.5]
+[wt 2.0]
+
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout K 0.1]
+[charaEffectDestroy T bit_talk_sand_geyser]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+[wt 0.3]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+＠ＢＢコスモ
+！　あれは削岩用の超大型重機です！[r]逃げてください、この船なんて一飲みです！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[subRenderFadein #B 0.2 0,-80]
+[wt 0.2]
+
+＠バーソロミュー
+できればやっているとも！[r]だが、砂の流れがまるで大渦だ！
+[k]
+
+[charaFace B 6]
+＠バーソロミュー
+ガイド君、小型艇はないかな！？[r]ああいや、小型艇では吸い込まれるか！
+[k]
+
+＠バーソロミュー
+空を飛ぶ乗り物はないかな？　ない？[r]だろうね、私も自分の船にそんなものは用意しない！
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.2]
+[wt 0.2]
+[charaFadeout B 0.1]
+
+[se ad854]
+[se ad876]
+[shake 0.04 4 4 1.5]
+[se ad14 0]
+[seVolume ad14 1.5 0.6]
+[wt 1.5]
+[shake 0.03 2 2 0]
+
+？1：ああもう、次から次へとーー！
+？2：こうなったら破れかぶれだ！
+
+？！
+
+[cueSe SE_22 22_ad1213]
+[flashin once 1.0 1.5 FFFFFFFF FFFFFF00]
+[wt 1.5]
+[cueSeStop 22_ad1213 1.5]
+[seStop ad14 1.0]
+[shakeStop]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+船が砂上に固定されました！[r]これは、おそらく[line 3]！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaLayer C normal]
+[charaLayer I normal]
+[charaLayer U normal]
+[charaLayer B normal]
+[charaLayer J normal]
+[charaDepth C 2]
+[charaDepth I 1]
+[charaScale C 1.3]
+[charaScale I 1.3]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0 0,20]
+[charaFadein I 0 0,-320]
+[wt 0.2]
+[wipein rectangleStripDownToUp 0.4 1]
+[wait wipe]
+
+＠アンキ・エレシュキガル
+船は私が固定したわ。[r]あと、アレは私が呼び寄せた訳じゃないわ。
+[k]
+
+＠アンキ・エレシュキガル
+冥界の化身が[#砂虫]をけしかけた、[r]なんてデマが流れるのはまっぴらよ。
+[k]
+
+[charaFace C 18]
+
+＠アンキ・エレシュキガル
+アナタたちがどうなろうと興味はないけど、[r]ここで死なれるのは私の[#沽券:こけん]に関わります。
+[k]
+
+＠アンキ・エレシュキガル
+一度だけ手を貸しましょう。[r]それで私たちは晴れて敵同士。
+[k]
+
+[charaFace C 1]
+
+＠アンキ・エレシュキガル
+さあ、力を見せてみなさい、[r][%1]！
+[k]
+
+＠アンキ・エレシュキガル
+無の獣、『保存』の理を持つ人類悪！[r]アンキ・エレシュキガルの宿敵に相応しいかどうか、
+[k]
+
+＠アンキ・エレシュキガル
+この獲物で[#測:はか]ってあげます！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_113 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+
+

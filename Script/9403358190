@@ -1,0 +1,1470 @@
+
+
+
+
+
+＄94-03-35-81-9-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 2053000 1 ツタンカーメン]
+[charaSet B 2053000 1 ツタンカーメン_演出用]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠
+ツタンカーメンにチョコレートを渡そう。[r]しばらく捜したのち、見つかった彼は……
+[k]
+
+[messageOff]
+[input selectBranch]
+
+[charaSet A 2053000 1 ツタンカーメン]
+[charaSet B 2053000 1 ツタンカーメン_演出用]
+[scene 10000]
+
+[fadein black 0.1]
+[wt 0.8]
+
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+？1：幼い姿だった
+[flag _SEL 1]
+
+？2：成長した姿だった
+[flag _SEL 2]
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[branch lblRootB _SEL 2]
+
+[label lblRootA]
+
+[charaSet A 2053000 1 ツタンカーメン]
+[charaSet B 2053000 1 ツタンカーメン_演出用]
+[charaSet C 98115000 1 エフェクト用]
+[equipSet D 9809480 1 バレンタイン礼装]
+
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[label lblClear01a]
+[scene 105500]
+[sceneSet F 105500 1]
+[charaScale F 1.25]
+[branch lblConf01]
+
+[label lblClear01b]
+[scene 104200]
+[sceneSet F 104200 1]
+[charaScale F 1.25]
+[branch lblConf01]
+
+[label lblClear01c]
+[scene 203800]
+[sceneSet F 203800 1]
+[charaScale F 1.25]
+
+[label lblConf01]
+
+
+[charaFadein F 0.1 80,-260]
+[charaMove F 0,-260 7.0]
+[wt 1.0]
+
+[se ade74]
+[seVolume ade74 0 0]
+[seVolume ade74 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 2.0]
+
+[seStop ade74 1.0]
+[charaFadeout F 1.0]
+[wt 1.6]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_25 0.1]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V010]
+これは、マスターどの。今日は賑やかにござりまするね。[r]聞けばバレンタインなる『愛の祭典』の最中だとか。[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V020]
+[#稚児:ち　ご]なる[#己:うぬ]には無縁の催しなれど、[r]マスターどのにはさぞや大変な[line 3][wait tVoice]
+[k]
+
+？1：そんな無関係ヅラの[&キミ:あなた]に
+？2：いいものをあげよう
+？！
+
+[messageOff]
+[charaFace A 11]
+[wt 0.4]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V030]
+ほ……[wait tVoice]
+[k]
+
+[charaFace A 12]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V040]
+……これは、[twt 1.2][charaFaceFade A 4 0.2]あの、[wt 0.3][twt 1.8][charaFaceFade A 15 0.2]いけませぬ。[r]年端もいかぬ[#己:うぬ]に、このようなものは早すぎる……[wait tVoice]
+[k]
+
+？1：[#年中行事:ねんちゅうぎょうじ]だから、重く考えなくていいんだよ
+
+[charaFace A 11]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V050]
+……そう……に、ござりまするか……？[r]ならば、よいのですが……[wait tVoice]
+[k]
+
+？2：親愛の印ってやつだよ
+
+[charaFace A 1]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V060]
+愛……親愛……？[twt 4.0][charaFace A 0][r]それならば……問題もなし、にて……？[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 10]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V070]
+（深呼吸）[charaMoveEase A 0,5 0.6 easeOutQuad][twt 1.8][charaMoveEase A 0,0 1.0 easeOutQuad][twt 2.3][charaFace A 0][r]承知にて。つつしんで、頂戴いたしまする。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V080]
+[#己:うぬ]がマスターの、手ずからの賜り物。[r]それに見合う返礼とは……[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 10]
+[bgmStop BGM_EVENT_25 1.5]
+[wt 2.0]
+
+[charaFaceFade A 2 0.2]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V090]
+……しばし時間を下さりませ、マスターどの。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad598]
+[seVolume ad598 0 0.7]
+[charaMove A -80,0 0.6]
+[charaFadeout A 0.4]
+[wt 1.5]
+[seStop ad598 0.2]
+[wt 1.0]
+
+？1：（心配だ）
+？2：（後をつけよう）
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[sceneSet F 157702 1]
+
+[subCameraOn 1]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.02]
+[charaLayer C sub #A]
+[charaLayer B sub #A]
+[charaLayer F sub #A]
+[charaScale C 1.2]
+[charaScale B 1.2]
+[charaScale F 1.2]
+[charaDepth C 3]
+[charaDepth B 2]
+[charaDepth F 1]
+[charaFace B 2]
+[charaFadein B 0.1 -120,20]
+[charaFadein F 0.1 -100,-260]
+
+[charaTalk depthOff]
+[charaTalk off]
+
+[scene 157702]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[subRenderFadein #A 1.0 0,0]
+[wt 1.2]
+
+[bgm BGM_EVENT_221 0.1]
+
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V100]
+えいっ。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad98]
+[charaMoveReturn B -120,10 0.3]
+[wait charaMove B]
+[wt 0.1]
+
+[charaPut C 0,0]
+[charaEffect C bit_talk_35]
+[se ad161]
+[seVolume ad161 0 0.6]
+[wt 0.3]
+[charaFaceFade B 22 0.2]
+[wt 1.5]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V110]
+……たかが包丁一本、[r]この身体では、うまく操れぬ。[wait tVoice]
+[k]
+
+[charaEffectDestroy C bit_talk_35]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V120]
+されど泣き言の暇はなし。[r]手作りに報いるには、手作りこそがふさわしき道理にて、[wait tVoice]
+[k]
+
+[messageOff]
+[charaFaceFade B 10 0.2]
+
+[se ad1045]
+[charaPut C -100,0]
+[charaEffect C bit_talk_ttn_spell]
+[charaEffectEdgeBlur B ffffcc ffffcc]
+[wt 2.5]
+
+[se bas4]
+[charaEffect B bit_talk_cure]
+[charaEffectEdgeBlurStop B]
+[wt 2.0]
+
+[charaFace B 5]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V130]
+[line 3]魔力尽きる前に、完成すればよし！[r]さあ、斬って斬って斬りまくるべし！[wait tVoice]
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.6]
+[wt 0.8]
+[charaEffectEdgeBlurDestroy B]
+[charaEffectDestroy C bit_talk_35]
+[charaEffectDestroy C bit_talk_ttn_spell]
+
+？1：ストーップ！！
+？！
+
+[charaTalk on]
+[charaFace A 12]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V140]
+ほ！？　マスターどの、[r]なぜ[#己:うぬ]のひみつシミュレーター部屋へ……[wait tVoice]
+[k]
+
+[charaFace A 9]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V150]
+……どうやらご心配をかけし模様、[twt 4.1][charaFace A 3]されど[#退:ひ]けませぬ！[r][#屍山血河:し ざ ん け つ が]を越え、いざ返礼の手料理を！[wait tVoice]
+[k]
+
+？1：一緒に料理しよう！！
+？2：それならありがたくいただくから！！
+？！
+
+[messageOff]
+[charaFace A 12]
+[wt 1.2]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_221 1.0]
+[wait fade]
+
+[charaTalk depthOn]
+[charaFadeout A 0.1]
+
+[charaLayer C normal]
+[charaLayer B normal]
+[charaLayer F normal]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[subCameraOff]
+[wt 0.1]
+
+[sceneSet F 230000 1]
+[sceneSet G 230000 1]
+
+[scene 230000]
+
+[subCameraOn 1]
+[subCameraFilter #A maskEdge cut359_mask05 3 255,255,255,255]
+[subRenderScale #A 1.1]
+[charaLayer B sub #A]
+[charaLayer G sub #A]
+[charaScale B 1.1]
+[charaScale G 1.1]
+[charaDepth B 3]
+[charaDepth G 2]
+[charaFace B 12]
+[charaFadein B 0.1 -10,190]
+[charaFadein G 0.1 -250,80]
+
+[charaTalk depthOff]
+[charaTalk off]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.5]
+
+[bgm BGM_KAZURA_1 0.1]
+
+[charaScale F 1.4]
+[charaFadein F 0.6 -250,-140]
+[subRenderFadeinFSL #A 0.6 -200,-200]
+[wt 1.0]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V160]
+シミュレーター設定が変わった……[r]洗練された厨房と存じまする。[wait tVoice]
+[k]
+
+？1：野外料理はハードルが上がるから
+？2：自分も素人だし、設備に頼ろう
+？！
+
+[charaFace B 11]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V170]
+成程に……しかし、マスターどのの手伝いを受けるは、[r][#己:うぬ]の返礼にならぬような？[wait tVoice]
+[k]
+
+？1：こっちも料理の練習をするから
+？2：お互いに助け合うってことで
+？！
+
+[charaFace B 18]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V180]
+……ふふ。それなら確かに、等価にて。[r]早速はじめましょう、マスターどの！[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_KAZURA_1 1.0 0.4]
+[wait fade]
+
+[charaTalk on]
+[charaTalk depthOn]
+[subRenderFadeout #A 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaLayer B normal]
+[charaLayer G normal]
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[subCameraOff]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 3]
+[charaDepth F 2]
+
+[charaScale A 1.2]
+[charaScale F 1.2]
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 0,20]
+[charaFadein F 0.1 0,-240]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_KAZURA_1 1.0 1.0]
+[wait fade]
+[wt 0.5]
+[charaFace A 0]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V190]
+成程に、[twt 3.0][charaFace A 2][charaMove A 0,10 0.5][charaShake A 0.02 2 0 0.5]食材を押さえる指は丸めて、猫のごとく……[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSe SE_21 21_adm82]
+[cueSeVolume 21_adm82 0 0.6]
+[cueSeStop 21_adm82 1.0]
+[wt 1.2]
+
+[charaFace A 2]
+[charaFadein A 0.7 150,20]
+[charaFadein F 0.7 70,-240]
+[charaMoveEase A 120,20 0.7 easeOutQuad]
+[charaMoveEase F 40,-240 0.7 easeOutQuad]
+[wt 0.8]
+
+[charaMoveEase A 120,30 0.7 easeOutCubic]
+[wt 0.4]
+[charaFace A 3]
+[charaShake A 0.02 2 1 1.0]
+[wt 1.2]
+[se ad795]
+[charaFace A 20]
+[charaMoveEase A 120,20 0.4 easeOutCubic]
+[wt 0.5]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V200]
+鉄鍋を振る腕力が不足にて！[twt 4.2][charaFace A 12][r]ほ、フッ素加工フライパン……？[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaScale A 1.2]
+[charaScale F 1.2]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,20]
+[charaFadein F 0.1 0,-240]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[se ad7]
+[charaFace A 13]
+[charaMove A 0,35 0.2]
+[charaMoveScale A 1.3 0.2]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V210]
+調味料なら少し分かりまする！[r]医術魔術に通じるものがありますれば！[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaScale A 1.2]
+[charaScale F 1.2]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.6]
+
+[charaFadein F 1.0 -80,-240]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 -40,20]
+[charaMove A 0,20 0.4]
+[wt 0.6]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V220]
+揚げ油の温度は[twt 2.2]（ちゃぽん）[se adm16][seVolume adm16 0 0.6][charaMove A 0,15 0.4][twt 1.0]摂氏153度……[twt 3.2][charaFace A 12]ほ？　指？[r]サーヴァントゆえ平気[line 3][twt 5.6][se ad7][charaFace A 9][charaMove A 0,10 0.15][charaMoveScale A 1.1 0.15]は、はいい、やめまする！[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_KAZURA_1 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+
+[scene 230000]
+
+[charaScale A 1.0]
+[charaDepth D 2]
+[charaDepth A 1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.2 1]
+
+[bgm BGM_MAP_122 0.1]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V230]
+……や、やった！[charaMoveReturn A 0,10 0.3]　成し遂げたり、マスターどの！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.5]
+
+[se bas2]
+[charaFadein D 0.5 0,-70]
+[wt 2.8]
+
+？1：おいしそう！
+？2：夢のお弁当箱だ……
+？！
+
+[charaFadeout D 0.4]
+[charaFace A 18]
+[charaFadein A 0.4 1]
+[wt 0.6]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V240]
+はいい、御国の料理を一通り勉強し、[r]たっぷりと詰めた特製の[#御饌:ごはん]にござりまする。[wait tVoice]
+[k]
+
+[charaFace A 25]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V250]
+たいへん日持ちいたしますれば、[r]いざという時の糧食に、どうかお持ち下さりませ。[wait tVoice]
+[k]
+
+[charaTalk depthOn]
+
+？1：では、これは後でありがたくいただくとして……
+？！
+
+[messageOff]
+[wt 0.2]
+
+？1：たくさん作った試作品を別の箱に詰めて
+？2：どこかへ持っていって食べようか
+？！
+
+[messageOff]
+[charaFace A 12]
+[wt 1.8]
+[charaFaceFade A 21 0.2]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V260]
+成程に、マスターどのの試作品は、そのつもりで……[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 6]
+[wt 1.8]
+[charaFaceFade A 7 0.2]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V270]
+マスターどのは、策士なり。[r]なればこそ、このツタンのマスターにふさわしい。[wait tVoice]
+[k]
+
+[charaFace A 18]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V280]
+どこまでもお供しまする、マスターどの！[r]もしよければ、良い狩り場を存じておりまするが[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_122 2.0]
+[wait fade]
+
+[branch select01]
+
+
+[label lblRootB]
+
+[charaSet A 2053002 1 ツタンカーメン]
+[charaSet B 2053002 1 ツタンカーメン_演出用]
+[charaSet C 98115000 1 エフェクト用]
+[equipSet D 9809480 1 バレンタイン礼装]
+
+[branchQuestClear lblClear02c 94064915]
+[branchQuestClear lblClear02c 3001101]
+[branchQuestClear lblClear02b 3000303]
+
+[label lblClear02a]
+[scene 105500]
+[sceneSet F 105500 1]
+[charaScale F 1.25]
+[branch lblConf02]
+
+[label lblClear02b]
+[scene 104200]
+[sceneSet F 104200 1]
+[charaScale F 1.25]
+[branch lblConf02]
+
+[label lblClear02c]
+[scene 203800]
+[sceneSet F 203800 1]
+[charaScale F 1.25]
+
+[label lblConf02]
+
+[charaTalk depthOff]
+[charaDepth B 5]
+[charaDepth F 4]
+[charaDepth A 1]
+[charaScale B 1.2]
+[charaScale F 1.2]
+
+[charaFadein F 0.1 80,-260]
+[charaMove F 0,-260 7.0]
+[wt 1.0]
+
+[se ade74]
+[seVolume ade74 0 0]
+[seVolume ade74 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 2.0]
+
+[seStop ade74 1.0]
+[charaFadeout F 1.0]
+[wt 1.6]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V290]
+これは、マスターどの！[r]今日もご壮健なりや？[wait tVoice]
+[k]
+
+？1：いきなりだけど
+？2：どうぞー！
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace A 12]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V300]
+ほ……これはまさか、[r]バレンタイン・チョコなる賜り物……？[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk A,B]
+[charaFace B 12]
+[charaFadein B 1.2 -10,-10]
+[charaFadein F 1.2 -5,-308]
+
+[charaMoveScale B 1.25 4.0]
+[charaMove B -10,3 4.0]
+[charaMoveScale F 1.25 4.0]
+[charaMove F -5,-320 4.0]
+[wt 3.0]
+[charaFadeout A 0.1]
+
+[charaFaceFade B 0 0.2]
+[wt 1.2]
+
+[charaFace A 8]
+[charaFaceFade B 8 0.2]
+
+＠B：ツタンカーメン
+[tVoice ValVoice_205300 0_V310]
+失礼をば。喜びと衝撃を受け止めるべく、[r]時を頂きましてござりまする。[wait tVoice]
+[k]
+
+？1：神妙にされると恐縮だけど……
+？2：喜んでくれたならよかった！
+？！
+
+[charaFaceFade B 5 0.2]
+
+＠B：ツタンカーメン
+[tVoice ValVoice_205300 0_V320]
+[#然:さ]らばマスターどの、[r]恐れながらしばし、時間を頂けませぬか？[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[charaTalk depthOn]
+
+[charaSet A 1098305640 1 ツタンカーメン]
+[charaSet B 1098305640 1 ツタンカーメン_演出用]
+[sceneSet F 174000 1]
+[sceneSet G 174000 1]
+
+[cameraMove 0.1 -10,-10 1.25]
+[wait camera]
+
+[scene 174000]
+
+[se ad220]
+[seVolume ad220 0 0]
+[cueSe SE_23 23_ade853]
+[cueSeVolume 23_ade853 0 0]
+[wt 1.0]
+
+[fadein black 1.0]
+[seVolume ad220 1.0 0.4]
+[cueSeVolume 23_ade853 1.0 1.0]
+[wait fade]
+[wt 2.0]
+
+[cameraMoveEase 0,0 1.8 easeOutSine 1.01]
+[seStop ad220 2.0]
+[cueSeStop 23_ade853 2.0]
+[wt 1.4]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 -180,0]
+[wt 0.4]
+
+[bgm BGM_GOGH_1 0.1]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V330]
+このようなこともあろうかと[#設:しつら]えた、[r]シミュレーターの部屋にござりまする。[wait tVoice]
+[k]
+
+？1：ここは……オアシス？
+？！
+
+[charaFace A 6]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V340]
+どこぞの異郷のデータと存じまするが、[r][#己:うぬ]が[#故郷:ふるさと]の趣があり、選んだ次第にて。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V350]
+マスターどの。賜り物の返礼として、[r]このひと時、[#己:うぬ]と狩りをしませぬか。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk B]
+[se ad526]
+[wt 2.4]
+
+[charaFace A 5]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V360]
+……様々の獣を放っておりまする。[r]さらに[#己:うぬ]のステータスも、常人なみに抑制済み。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V370]
+生身の肉体で挑む狩り。[r]その生々しいまでの悦びを、マスターどのと分かちたく。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.2]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 1.0]
+
+[charaFaceFade A 7 0.2]
+[wt 1.5]
+
+[fadeout black 1.0]
+[bgm BGM_GOGH_1 1.0 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[cameraHome 0.1]
+[wait camera]
+[wt 1.4]
+
+[fadein black 1.0]
+[bgm BGM_GOGH_1 1.0 1.0]
+[wait fade]
+
+[se ad60]
+[seStop ad60 0.6]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[charaMove A 20,0 0.4]
+[wt 0.6]
+
+[cueSe SE_24 24_ade1008]
+[cueSeStop 24_ade1008 1.0]
+[charaMove A 20,-10 0.6]
+[wt 1.0]
+
+[cueSe SE_24 24_ade1052]
+[wt 1.0]
+
+[charaFace A 11]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V380]
+木に泥の跡……獣が体をこすりつけた跡。[r]しかし、ずいぶん古いようにて。[wait tVoice]
+[k]
+
+[charaMove A 20,0 0.6]
+[charaFace A 5]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V390]
+ここは望み薄ゆえ、[r]川沿いへ向かいまする、マスターどの。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad60]
+[se ad987]
+[fadeout black 1.0]
+[bgm BGM_GOGH_1 1.0 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[sceneSet F 116500 1]
+[sceneSet G 116500 1]
+
+[scene 	116500]
+
+[charaTalk depthOff]
+[charaDepth A 5]
+[charaDepth F 4]
+[charaScale A 1.2]
+[charaScale F 1.2]
+[wt 1.0]
+[seStop ad60 1.0]
+[seStop ad987 1.0]
+
+[fadein black 1.0]
+[bgm BGM_GOGH_1 1.0 1.0]
+[wait fade]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.8 -50,10]
+[charaFadein F 0.8 -50,-240]
+[charaMoveEase A 0,10 0.8 easeOutQuad]
+[charaMoveEase F 0,-240 0.8 easeOutQuad]
+[wt 1.0]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V400]
+ふう。ここまで何もなし。[wait tVoice]
+[k]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V410]
+猟犬なしでは狩猟は至難、[r]されど無駄骨もまた[#猟果:ゲーム]。焦りは禁物にて。[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V420]
+さても、青年の両の足で狩り場を[#行:ゆ]けるとは。[r]第二の生は、存外の驚きと喜びに満ちておりまする。[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V430]
+マスターどの、足は痛みませぬか？[twt 4.2][charaFace A 0][r][line 3]良し、では、少し先の森を目指しまする！[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_GOGH_1 1.0]
+[se ad60]
+[se ad987]
+[wait fade]
+
+[charaTalk depthOn]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+
+[sceneSet F 147700 1]
+[sceneSet G 147700 1]
+
+[scene 147700]
+
+[subCameraOn 4]
+[subCameraFilter #A maskEdge cut359_mask05 3 255,255,255,255]
+[subRenderScale #A 1.1]
+[charaLayer B sub #A]
+[charaLayer G sub #A]
+[charaScale B 1.1]
+[charaScale G 1.0]
+[charaDepth B 2]
+[charaDepth G 1]
+[charaFace B 2]
+[charaFadein B 0.1 -20,160]
+[charaFadein G 0.1 500,0]
+
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[charaTalk depthOff]
+[charaDepth F 6]
+[charaDepth A 1]
+[charaScale F 1.3]
+[charaScale A 1.0]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[charaFadein F 0.1 100,-350]
+[charaMove F 0,-350 22.0]
+
+[se ad663]
+[seVolume ad663 0 0]
+[cueSe SE_23 23_ade853]
+[cueSeVolume 23_ade853 0 0]
+[wt 1.0]
+[seStop ad60 1.5]
+[seStop ad987 1.5]
+[wt 1.5]
+
+[fadein black 1.0]
+[seVolume ad663 1.0 1.0]
+[cueSeVolume 23_ade853 1.0 1.0]
+[wait fade]
+[wt 3.0]
+
+[seVolume ad663 1.0 0.4]
+[cueSeVolume 23_ade853 1.0 0.4]
+
+[charaTalk off]
+[subRenderFadeinFSL #A 0.6 -250,-220]
+[wt 0.6]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V440]
+……足跡に、真新しい[#糞:ふん]……[r]きっとこの先、獣の[#寝屋:ね　や]に至りまする……[wait tVoice]
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.8]
+[charaFadeout F 0.8]
+[wt 1.0]
+
+[charaFace A 5]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V450]
+マスターどの、ここからはお静かに……[wait tVoice]
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 1.2]
+
+[fadeout black 1.0]
+[seStop ad663 1.0]
+[cueSeStop 23_ade853 1.0]
+[wait fade]
+
+[charaTalk on]
+[charaFadeout A 0.1]
+
+[charaSet K 98115000 1 エフェクト用]
+[charaSet L 98115000 1 エフェクト用]
+[charaSet M 98115000 1 エフェクト用]
+[sceneSet H 147700 1]
+
+[charaSet I 1098183600 1 魔獣1]
+[charaSet J 1098183600 1 魔獣2]
+
+[sceneSet N 10000 1]
+
+[subCameraFilter #A maskEdge cut359_mask15 5 0,0,0,0]
+[subCameraFilter #B maskEdge cut359_mask16 5 0,0,0,0]
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[charaLayer B sub #A]
+[charaLayer G sub #A]
+[charaLayer C sub #A]
+[charaLayer J sub #B]
+[charaLayer H sub #B]
+[charaLayer K sub #B]
+[charaScale B 1.2]
+[charaScale G 1.2]
+[charaScale C 1.0]
+[charaDepth C 3]
+[charaDepth B 2]
+[charaDepth G 1]
+[charaFace B 1]
+[charaFadein B 0.1 -80,200]
+[charaFadein G 0.1 -150,0]
+[charaScale J 1.3]
+[charaScale H 1.2]
+[charaScale K 1.0]
+[charaDepth K 3]
+[charaDepth J 2]
+[charaDepth H 1]
+[charaFace J 0]
+[charaFadein J 0.1 100,260]
+[charaFadein H 0.1 150,0]
+
+[cameraMove 0.1 0,0 1.01]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth N 7]
+[charaDepth L 6]
+[charaDepth A 5]
+[charaDepth I 4]
+[charaDepth M 3]
+[charaDepth F 2]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_48 0.1]
+
+
+
+[charaScale I 1.2]
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[se ad526]
+[wt 2.0]
+
+[subRenderFadein #A 0.4 -206,-200]
+[subRenderMove #A -212,-230 0.4]
+[subRenderFadein #B 0.4 206,-260]
+[subRenderMove #B 212,-230 0.4]
+[wt 1.2]
+[charaFadeout I 0.1]
+
+[charaFace B 2]
+[se ade533]
+[seVolume ade533 0 0.8]
+[charaMove B -80,195 0.8]
+[wt 1.5]
+[se ade440]
+[charaPut C 0,150]
+[charaEffect C bit_talk_shot_02]
+[wt 1.0]
+
+[se ad1006]
+[se ad321]
+[charaMove J -300,260 0.4]
+[charaFadeout J 0.4]
+[wt 0.3]
+
+[charaPut K 0,200]
+[charaEffect K bit_shot_01]
+[se ad28]
+[wt 0.1]
+[seStop ad28 0.2]
+[cueSe Servants_900200 m06303]
+[wt 0.2]
+[se ad28]
+[wt 0.6]
+
+[subRenderMove #A -206,-200 0.4]
+[subRenderMove #B 206,-260 0.4]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[wt 0.3]
+[seStop ad321 0.3]
+[charaEffectDestroy C bit_talk_shot_02]
+
+[cueSe SE_21 21_ade607]
+[cueSeStop 21_ade607 0.8]
+[charaScale I 1.1]
+[charaFace I 0]
+[charaFadein I 0.7 -220,-10]
+[charaMoveEase I 0,-10 0.7 easeOutCubic]
+[wt 0.9]
+
+[se ad678]
+[charaPut L 1]
+[charaEffect L bit_talk_quickmove]
+[charaSpecialEffect I erasureReverse 1 0.3]
+[wt 0.4]
+[charaFadeout I 0.3]
+[wt 0.2]
+
+[effect bit_shot_01]
+[seStop ad28 0.2]
+[cueSe Servants_900200 m06303]
+[wt 0.2]
+[se ad28]
+[wt 1.0]
+
+[subCameraFilter #A maskEdge cut359_mask03 3 0,0,0,0]
+[subRenderScale #A 1.01]
+[charaScale B 1.4]
+[charaScale G 1.2]
+[charaFace B 3]
+[charaFadein B 0.1 -120,70]
+[charaFadein G 0.1 -120,-180]
+
+[charaScale L 1.45]
+[charaScale I 1.3]
+[charaFace I 0]
+[se ad322]
+[charaPut L 0,120]
+[charaEffect L bit_talk_quickmove]
+[charaPut I 0,60]
+[charaSpecialEffect I appearance 1 0.25]
+[charaEffect I bit_talk_impactlanding]
+[shake 0.05 0 5 0.6]
+[wt 1.0]
+
+[subRenderFadein #A 0.3 0,-110]
+[charaMoveEase B 0,70 0.3 easeOutCubic]
+[charaMoveEase G 0,-180 0.3 easeOutCubic]
+[wt 1.1]
+
+[charaFaceFade B 2 0.2]
+[charaMoveEase B 120,70 0.3 easeOutCubic]
+[charaMoveEase G 120,-180 0.3 easeOutCubic]
+[subRenderFadeout #A 0.3]
+[wt 0.8]
+
+[bgmStop BGM_BATTLE_48 0.5]
+
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut I 0,60]
+[charaEffect I bit_talk_41_fs]
+[charaMoveScale I 1.7 0.3]
+[charaMove I 0,120 0.3]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaFadeout I 0.4]
+
+[charaFadein N 0.2 1]
+[wt 0.3]
+[charaFadeout I 0.1]
+[charaEffectDestroy L bit_talk_quickmove]
+[charaEffectDestroy I bit_talk_41_fs]
+[charaEffectDestroy I bit_talk_impactlanding]
+[blurOff motion 0.1]
+[wt 0.3]
+
+[fowardEffect bit_talk_14]
+[cueSe Battle bac10]
+[scene 10000]
+[wt 1.0]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[charaFadeout N 0.1]
+[scene 147700]
+
+[charaScale A 1.45]
+[charaScale I 1.0]
+[charaScale F 1.15]
+[charaFace A 20]
+[charaFadein A 0.1 -40,40]
+[charaFadein F 0.1 50,-220]
+[wt 1.0]
+
+[charaShake A 0.02 1 1 2.0]
+[wt 0.5]
+
+[wipein openEye 1.0 1.0]
+[charaMoveEase A -40,50 1.2 aseOutQuad]
+[wait wipe]
+[wt 1.4]
+
+[charaMoveEase A -140,50 1.2 easeOutQuad]
+[charaMoveEase F -50,-220 1.2 easeOutQuad]
+[wt 1.2]
+
+[charaFace I 0]
+[charaFadein I 0.4 350,-30]
+[wt 1.0]
+
+[se ad321]
+[seStop ad321 3.0]
+[charaMove I 50,-30 0.6]
+[charaFadeout I 0.4]
+[wt 2.4]
+
+[charaMoveEase A 0,50 1.2 easeOutQuad]
+[charaMoveEase F 90,-220 1.2 easeOutQuad]
+[wt 1.2]
+[charaFaceFade A 17 0.2]
+[wt 1.2]
+
+[cueSe SE_24 24_ade1008]
+[charaFaceFade A 6 0.2]
+[charaMoveScaleEase A 1.3 0.8 easeOutSine]
+[charaMoveEase A 0,20 0.8 easeOutSine]
+[wt 0.4]
+[cueSeStop 24_ade1008 1.0]
+[wt 1.0]
+
+[charaFaceFade A 21 0.2]
+[wt 1.6]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+[charaScale A 1.0]
+[charaTalk on]
+
+[charaLayer B normal]
+[charaLayer G normal]
+[charaLayer C normal]
+[charaLayer J normal]
+[charaLayer H normal]
+[charaLayer K normal]
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+[charaFadeout J 0.1]
+[charaFadeout H 0.1]
+[charaFadeout K 0.1]
+[subCameraOff]
+[wt 0.1]
+
+[charaDepth D 2]
+[charaDepth A 1]
+
+[scene 174000]
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.2 1]
+
+[bgm BGM_MIZUGI_2020_1 0.1]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V460]
+[#残念無念:ざ ん ね ん む ね ん]、あれほどの大物を逃すとは……[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V470]
+マスターどのに勝利の楽しみも捧げること叶わず、[r]申し訳もござりませぬ。[wait tVoice]
+[k]
+
+？1：スリル満点だったよ、狩り！
+？2：すごくドキドキして、楽しめたよ
+？！
+
+[messageOff]
+[wt 0.2]
+
+？1：また連れて来て[&ほしい:]！
+？！
+[charaFace A 12]
+[wt 1.2]
+
+[charaFaceFade A 18 0.3]
+[wt 1.2]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V480]
+もちろん、いつでも、何度でも！[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V490]
+狩りの楽しみは他にもござりまする。[r]マスターどの、こちらを！[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[charaFadeout A 0.5]
+
+[se bas2]
+[charaFadein D 0.5 0,-70]
+[wt 2.8]
+
+？1：お弁当だ！　すごく豪華な！
+？2：まさか……手作り？
+？！
+
+[charaFadeout D 0.4]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.6]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V500]
+御国の料理を選んでおりまする。[r]魔術を用いぬ手製ゆえ、御口に合えばよいのですが。[wait tVoice]
+[k]
+
+[bgmStop BGM_MIZUGI_2020_1 1.5]
+
+？1：ツタン……
+？2：ものすごく、準備したね？
+？！
+
+[charaFace A 15]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V510]
+……[r]お察しの通り、にて。[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_116 0.1]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V520]
+バレンタインを知ってより、万が一の賜り物を想定し、[r]多くの助けも借りに借り、このような先回りを……[wait tVoice]
+[k]
+
+[charaFace A 21]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V530]
+……やはり、[#己:うぬ]は未熟。[r]自爆と根回しが取り柄の、恥晒しな英霊にござりまする。[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V540]
+しかし、[#己:うぬ]の恥が少しでも御役に立つなら、[r]いくらでもかく所存にて。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠ツタンカーメン
+[tVoice ValVoice_205300 0_V550]
+己が敬愛するマスターどの。[r]どうかこのツタンを、今後もお傍に置いて下さりませ。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.2]
+
+？1：あたりまえ[&だろ:でしょ]
+？2：一緒に食べよう、[&オレ:わたし]のアーチャー！
+？！
+
+[messageOff]
+[charaFaceFade A 18 0.3]
+[wt 1.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_116 2.0]
+[wait fade]
+
+[label select01]
+
+[wt 0.5]
+[soundStopAll]
+[end]

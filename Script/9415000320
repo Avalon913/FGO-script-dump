@@ -1,0 +1,1856 @@
+
+
+
+
+
+
+＄94-15-00-03-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 1098337710 1 フレッカス]
+[charaSet B 98006300 1 エリザベート_変装]
+[charaSet C 98006300 1 主人公]
+[charaSet D 1098340700 1 メカエリチャンⅡ号機]
+[charaSet E 1098337600 1 古代火星人]
+[charaSet F 98114500 1 アマゾネス]
+[charaSet G 1098337600 1 古代火星人]
+[charaSet H 1098234700 1 クラス・アサシン]
+[charaSet I 1098339100 1 エリザベート]
+[masterSet J 1098339000 1098339010 1]
+
+[charaSet K 98006300 1 エリザベート]
+[charaSet L 1098339100 1 エリザベート(演出用)]
+[charaSet M 1098340700 1 メカエリチャンⅡ号機_サブ]
+
+[imageSet R cut760_warehouse_night 1 1]
+[sceneSet T 10000 1]
+[charaScale T 1.1]
+
+[sceneSet U 265401 1]
+[charaSet N 1098340700 1 メカエリチャンⅡ号機_サブ]
+[sceneSet V 10000 1]
+[charaScale V 1.1]
+
+
+[masterBranch _Male _Female]
+[label _Male]
+[sceneSet Q 268200 1]
+[sceneSet O 268200 1]
+
+[branch _branchEnd]
+[label _Female]
+[sceneSet Q 268210 1]
+[sceneSet O 268210 1]
+
+[branch _branchEnd]
+[label _branchEnd]
+
+[subCameraOn 4]
+
+[charaLayer D sub #C]
+[charaLayer Q sub #C]
+[charaLayer V sub #C]
+
+[subCameraFilter #C maskEdge cut359_mask14 3 192,192,192,255]
+[subRenderScale #C 1.0]
+
+[charaLayer N sub #D]
+[charaLayer O sub #D]
+
+[subCameraFilter #D maskEdge cut359_mask14 3 192,192,192,255]
+[subRenderScale #D 1.0]
+
+[charaTalk depthOff]
+
+[charaScale D 0.93]
+[charaScale Q 0.55]
+
+[charaDepth Q 2]
+[charaDepth D 4]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 460,192]
+[charaFadein Q 0 420,110]
+
+[charaScale N 1.0]
+[charaScale O 0.7]
+
+[charaDepth O 2]
+[charaDepth N 4]
+
+[charaTalk N]
+[charaFadein O 0 330,45]
+
+[charaDepth B 9]
+[charaDepth C 8]
+[charaDepth I 7]
+[charaDepth J 6]
+[charaDepth A 5]
+[charaDepth R 3]
+
+[charaDepth V 5]
+
+[charaFadein R 0.1 0,-380]
+[wt 0.1]
+[charaMoveEase R 0,240 6.0 easeInOutCubic]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BISCIONE_1 0.1]
+
+[wt 6.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フレッカス
+到着だぜー。
+[k]
+
+＠フレッカス
+第二ギガントストレージ、[r]つまりアマゾネス・ドットコムの倉庫街だ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad661]
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.4 150,-6]
+[charaMove C 150,0 0.4]
+[charaFace B 0]
+[charaFadein B 0.4 -200,-6]
+[charaMove B -200,0 0.4]
+[wt 1.0]
+
+[charaFace J 0]
+[charaPut J 300,20]
+[charaFadeTime J 0.4 0.7]
+[charaFace I 1]
+[charaPut I -350,40]
+[charaFadeTime I 0.4 0.7]
+
+[charaMove J 320,20 0.5]
+[charaMove I -380,40 0.5]
+[wt 2.0]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠フレッカス
+……怪しすぎない？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B,I]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace I 3]
+[charaPut I -190,40]
+[charaFadeTime I 0.1 0.7]
+
+＠エリザベート=spot[B,I]
+[#剥:む]き出しよりはマシよ、マシ。[r]じゃあ、[#私:アタシ]たちは宿を。
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フレッカス
+こちらは情報だな。[r]それから[line 3]
+[k]
+
+[charaTalk D]
+[subRenderFadein #C 0.2 -150,-220]
+
+＠メカエリチャンⅡ号機
+それから先ほどエネミーを退治した時に[r]手に入れた素材の売却です。
+[k]
+
+[charaFace D 8]
+
+＠メカエリチャンⅡ号機
+頼みましたよ、フレッカス。
+[k]
+
+[messageOff]
+[charaTalk A]
+[subRenderFadeout #C 0.1]
+[wt 0.1]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFaceFade A 11 0.3]
+[wt 0.4]
+
+＠フレッカス
+……おう！
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaMove A -50,0 0.5]
+[cueSe SE_25 25_ade1291]
+[wt 1.0]
+[cueSeStop 25_ade1291 0.7]
+[wt 0.5]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace I 0]
+[charaPut I -190,40]
+[charaFadeTime I 0.1 0.7]
+[wt 1.2]
+[charaFace I 3]
+
+＠エリザベート
+[line 3]ねえ、メカエリにマスター。[r]フレッカス、ちょっと信用できなくない？
+[k]
+
+＠エリザベート
+なんかこう、売って手に入れたＱＰを[r]ちょろまかしそうな気がしてならないわ。
+[k]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 1]
+[subRenderFadein #C 0.2 -150,-220]
+
+＠メカエリチャンⅡ号機
+別に構いません。
+[k]
+
+[charaFace D 6]
+
+＠メカエリチャンⅡ号機
+その利益があるなら、[r]フレッカスも容易に裏切らないでしょう。
+[k]
+
+＠メカエリチャンⅡ号機
+飴と鞭、飴と鞭ですよ。
+[k]
+
+？1：まあ、それが前提なら……
+？！
+
+[charaTalk B,I]
+[charaFace I 8]
+
+＠エリザベート=spot[B,I]
+じゃあ[#私:アタシ]たちは宿屋探しね。[r]あーあ、お風呂が欲しいわ。お風呂が。
+[k]
+
+[charaTalk D]
+[charaFace D 8]
+
+＠メカエリチャンⅡ号機
+私は[#胴体:ボディ]が欲しいですが、[r]贅沢は言っていられませんか。
+[k]
+
+？1：じゃあ宿を探そう
+？！
+
+[messageOff]
+[charaTalk off]
+[wt 1.0]
+[fadeout black 1.0]
+[bgm BGM_BISCIONE_1 1.0 0.5]
+[wait fade]
+
+[subRenderFadeout #C 0.1]
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[charaFadeout R 0.1]
+[wt 0.1]
+
+[subCameraFilter #A maskEdge cut359_mask33 5 220,20,60,255]
+[charaLayer K sub #A]
+[charaLayer L sub #A]
+[charaLayer U sub #A]
+
+[charaDepth K 3]
+[charaDepth L 4]
+[charaDepth O 5]
+[charaDepth M 6]
+[charaDepth C 5]
+[charaDepth U 2]
+
+[charaScale L 1.55]
+[charaScale U 1.5]
+[subRenderScale #A 0.8]
+
+[charaRoll K -30 0,0]
+
+[charaFace L 1]
+[charaFadein L 0 370,140]
+
+[charaFadein U 0 1110,20]
+
+
+[se ad413]
+[seVolume ad413 0 0]
+[seVolume ad413 1.0 1.0]
+[scene 265401]
+
+[cameraMove 0.1 0,0 1.15]
+[wt 1.0]
+
+[cameraMove 3.0 0,0 1.05]
+[fadein black 1.0]
+[bgm BGM_BISCIONE_1 0.5 1.0]
+[wait fade]
+[seStop ad413 1.5]
+[wt 2.5]
+
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠古代火星人
+はいはい、毎度。[r]宿？　ベッドはないが、ハンモックはあるぞ。
+[k]
+
+＠古代火星人
+棚と棚の間にぶら下げて、[r]そこで寝るんだ。
+[k]
+
+？1：それでお願いします
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B,I]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace I 9]
+[charaPut I -190,40]
+[charaFadeTime I 0.1 0.7]
+
+＠エリザベート=spot[B,I]
+何だか楽しそうね、[&子イヌ:子ジカ]！
+[k]
+
+[messageOff]
+[cameraMove 0.3 0,5 1.05]
+[wt 0.3]
+[cameraMove 0.4 0,0 1.05]
+[wt 1.0]
+
+[wipeout rollRight 1.5 1.0]
+[bgmStop BGM_BISCIONE_1 1.5]
+[wait wipe]
+
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[wt 2.0]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+
+＠
+[line 3]一時間ほど後。
+[k]
+
+[messageOff]
+[cueSe SE_25 25_ade1291]
+[seVolume 25_ade1291 0 0]
+[seVolume 25_ade1291 1.0 1.0]
+[wt 0.7]
+[cueSeStop 25_ade1291 0.4]
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.4 20,0]
+[charaMove A 0,0 0.4]
+[wt 0.6]
+
+＠フレッカス
+おーい、売ってきたぞ。[r]あと情報も仕入れてきた。偉いだろう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B,I]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace I 0]
+[charaPut I -190,40]
+[charaFadeTime I 0.1 0.7]
+
+＠エリザベート=spot[B,I]
+偉いわね。じゃ、ハンモックで寝るから、[r]情報を聞かせなさいな。
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_MIZUGI_2024_1 0.1]
+
+＠フレッカス
+ああ、まずは[line 3]『三竜教団』についてだな。[r]この街にも支部がある。
+[k]
+
+＠フレッカス
+で、最近活動が活発なんだそうだ。
+[k]
+
+＠フレッカス
+信徒の出入りは激しいし、[r]信徒集めの炊き出しは積極的だしで。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B,I]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace I 5]
+[charaPut I -190,40]
+[charaFadeTime I 0.1 0.7]
+
+＠エリザベート=spot[B,I]
+炊き出しねぇ。
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フレッカス
+で、信徒は急増してる。[r]何でかってーと[line 3]地震が多いからだ。
+[k]
+
+[charaTalk D]
+[charaFace D 7]
+[subRenderFadein #C 0.2 -150,-220]
+
+＠メカエリチャンⅡ号機
+そうなの？
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+
+＠フレッカス
+そうなの。最近滅茶苦茶多い。[r]で、教団によればこれは竜が起きる前兆なんだと。
+[k]
+
+[charaFadeout A 0.1]
+[subRenderFadeout #C 0.1]
+[wt 0.1]
+
+[charaTalk B,I]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace I 0]
+[charaPut I -190,40]
+[charaFadeTime I 0.1 0.7]
+
+＠エリザベート=spot[B,I]
+よく信じるわね？
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フレッカス
+そりゃあ信じるさ。
+[k]
+
+[charaFace A 6]
+
+＠フレッカス
+俺たち古代火星人は竜に滅ぼされそうになった、[r]そういう説があるからな。
+[k]
+
+[charaFace A 3]
+
+＠フレッカス
+恐ろしい三頭の竜が現れて、[r]この星を滅茶苦茶にした、みたいな。
+[k]
+
+[charaTalk D]
+[subRenderFadein #C 0.2 -150,-220]
+
+＠メカエリチャンⅡ号機
+……三頭の竜、ですか。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+
+＠フレッカス
+だから『三竜教団』なんだろ？
+[k]
+
+[charaTalk D]
+[charaFace D 6]
+
+＠メカエリチャンⅡ号機
+それは確かに……。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+
+＠フレッカス
+なので、『三竜教団』は勢力を伸ばし続けている。
+[k]
+
+
+[subRenderFadeout #C 0.2]
+[wt 0.1]
+
+[charaFace A 2]
+
+＠フレッカス
+それで、ここからが重要だな。[r]アンタたちが一番欲しい情報[line 3]
+[k]
+
+[charaFace A 11]
+
+＠フレッカス
+仲間に入るかもしれないサーヴァントについてだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B,I]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace I 1]
+[charaPut I -190,40]
+[charaFadeTime I 0.1 0.7]
+
+＠エリザベート=spot[B,I]
+そうね。さ、聞かせなさい。
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フレッカス
+何でもこの街の一番奥に、[r]引き籠もっているサーヴァントがいるんだと。
+[k]
+
+＠フレッカス
+何か財宝？　的な代物を守っているみたいでな。[r]何人かそれを奪おうと戦ったみたいだが[line 3]
+[k]
+
+[charaFace A 3]
+
+＠フレッカス
+[#悉:ことごと]く返り討ちだとさ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B,I]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace I 0]
+[charaPut I -190,40]
+[charaFadeTime I 0.1 0.7]
+
+＠エリザベート=spot[B,I]
+へー、いいじゃないいいじゃない。[r]で、どんなヤツ？
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フレッカス
+そこまでは知らねぇ。[r]会いに行ってみたらどうだ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MIZUGI_2024_1 1.5]
+
+[charaTalk D]
+[charaFace D 6]
+[subRenderFadein #C 0.2 -150,-220]
+[wt 0.2]
+
+＠メカエリチャンⅡ号機
+マスター、どう思う？
+[k]
+
+？1：会いに行ってみよう
+？！
+
+＠メカエリチャンⅡ号機
+そうね、賛成。
+[k]
+
+[bgm BGM_EVENT_92 0.1 0.8]
+
+[charaFace D 8]
+
+＠メカエリチャンⅡ号機
+でも、ひとまず休息よ。[r]マスター、疲れたでしょう？
+[k]
+
+[subRenderFadeout #C 0.2]
+[wt 0.1]
+
+[charaTalk B,I]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace I 8]
+[charaPut I -190,40]
+[charaFadeTime I 0.1 0.7]
+
+＠エリザベート=spot[B,I]
+しっかり休んでちょうだいな、[&子イヌ:子ジカ]！
+[k]
+
+[messageOff]
+[charaFadeout I 0.4]
+[wt 0.4]
+
+[charaMove B 0,-10 0.4]
+[wt 0.4]
+[charaMoveEase B -75,5 0.4 easeOutCubic]
+[charaFadeout B 0.4]
+[wt 0.4]
+[cueSe SE_21 21_ade553]
+[wt 0.3]
+
+[cameraMove 0.5 10,0 1.05]
+[wt 0.7]
+[cameraMove 0.5 10,-10 1.05]
+[wt 0.5]
+[cameraMove 0.5 10,10 1.05]
+[wt 0.3]
+[cueSe SE_21 21_ade553]
+[wt 0.3]
+
+[charaTalk L]
+[subRenderFadein #A 0.4 -600,-80]
+[wt 0.4]
+
+＠L：エリザベート
+ふわふわする感触ね。[r]結構気に入ったわ。
+[k]
+
+[charaTalk D]
+[charaFace D 6]
+[subRenderFadein #C 0.2 -150,-220]
+
+＠メカエリチャンⅡ号機
+マスター、重たくない？
+[k]
+
+？1：大丈夫大丈夫
+？！
+
+[messageOff]
+[charaTalk off]
+[charaFaceFade L 9 0.2]
+[charaFaceFade D 8 0.2]
+[wt 1.5]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #C 0.3]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠フレッカス
+じゃ、俺もとっとと寝るぜ。[r]グッナイ。
+[k]
+
+[messageOff]
+[cameraMove 0.4 10,15 1.05]
+[wt 0.4]
+[cameraMove 0.4 10,10 1.05]
+[wt 1.2]
+
+[se ad77]
+[charaFadeout A 0.5]
+[wt 1.5]
+
+[charaPut T 0,-200]
+[charaFadeTime T 1.5 0.6]
+[wt 1.8]
+
+[wipeout openEye 1.5 1.0]
+[bgmStop BGM_EVENT_92 1.5]
+[wait wipe]
+
+[cameraMove 0.1 0,0 1.01]
+[charaFadeout A 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout D 0.1]
+
+[charaLayer D normal]
+[charaLayer Q normal]
+
+[charaFadeout T 0.1]
+
+[charaFadeout O 0.1]
+[charaFadeout C 0.1]
+[charaFadeout U 0.1]
+
+[charaSet L 1047002 1 業炎のワタナベ]
+[charaFilter L silhouette 00000080]
+[charaSet M 1008001 1 フリーダムと呼ばれた男]
+[charaFilter M silhouette 00000080]
+
+[charaSet O 7042001 1 鮮血のウィドウヒルト]
+[charaFilter O silhouette 00000080]
+[charaScale O 0.9]
+
+[charaSet P 2035000 1 ？？？]
+[charaFilter P silhouette 00000080]
+[charaScale P 0.9]
+
+[sceneSet R 267800 1]
+[sceneSet S 267800 1]
+[sceneSet T 267800 1]
+[charaScale T 1.6]
+[charaSet U 98115000 1 エフェクト用]
+
+
+[sceneSet V 10000 1]
+[sceneSet W 10000 1]
+[sceneSet Y 10000 1]
+[charaScale V 1.5]
+[charaScale W 1.5]
+[charaScale Y 1.5]
+
+[sceneSet X 267300 1]
+[charaScale X 1.4]
+
+[charaLayer L sub #A]
+[charaLayer R sub #A]
+[charaLayer V sub #A]
+
+[charaLayer U sub #B]
+[charaLayer M sub #B]
+[charaLayer S sub #B]
+[charaLayer W sub #B]
+
+[charaLayer P sub #C]
+[charaLayer T sub #C]
+[charaLayer Y sub #C]
+
+
+[subCameraFilter #A maskEdge cut359_mask02 5 255,255,255,255]
+[subRenderScale #A 1.01]
+
+[subCameraFilter #B maskEdge cut359_mask03 5 255,255,255,255]
+[subRenderScale #B 1.01]
+
+[subCameraFilter #C maskEdge cut359_mask05 5 255,255,255,255]
+[subRenderScale #C 1.01]
+
+
+[charaDepth R 1]
+[charaDepth L 2]
+[charaDepth V 5]
+
+[charaDepth S 1]
+[charaDepth M 2]
+[charaDepth U 3]
+[charaDepth W 5]
+
+[charaDepth T 1]
+[charaDepth P 3]
+[charaDepth O 4]
+[charaDepth U 5]
+[charaDepth Y 6]
+
+[charaFace L 0]
+[charaFadein L 0.1 0,200]
+[charaFadein R 0.1 0,0]
+
+[charaFace M 0]
+[charaFadein M 0.1 0,-50]
+[charaFadein S 0.1 0,-200]
+
+[charaFace P 0]
+[charaFadein P 0.1 0,200]
+[charaFadein T 0.1 0,-200]
+
+[scene 10000]
+[wt 0.5]
+
+[fadeout black 0.1]
+[wait fade]
+
+[wipein openEye 0.1 1.0]
+[wait wipe]
+
+
+[wipeFilter circleIn 0.6 1.0]
+
+[cameraMove 0.1 0,0 1.01]
+
+[scene 267300]
+[charaFadein X 0.1 250,-280]
+[wt 0.3]
+
+[cueSe SE_23 23_ade922]
+[cueSeVolume 23_ade922 0 0.3]
+[wt 1.5]
+[cueSeVolume 23_ade922 1.0 0.8]
+
+
+[bgm BGM_BATTLE_125 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.4]
+
+[effect bit_talk_kengekiall02_fs]
+[wt 0.1]
+[se ad32]
+[wt 0.1]
+[shake 0.04 2 2 1.0]
+[wt 0.1]
+[se ad1014]
+[wt 0.2]
+[effect bit_talk_kengekiall02_fs 0,0 F]
+[se ad1013]
+[wt 0.4]
+[se ad1031]
+[wt 0.6]
+
+
+[charaTalk off]
+[subRenderFadein #A 0.3 50,-300]
+[subRenderMoveEase #A 0,-300 0.6 easeOutQuart]
+[wt 0.6]
+
+＠業炎のワタナベ
+今だ！　行け、フリーダム！
+[k]
+
+[messageOff]
+[subRenderMoveEase #A -50,-300 0.6 easeOutQuart]
+[subRenderFadeout #A 0.3]
+
+[wt 0.6]
+
+[effect bit_talk_flare_plzm_low]
+[cueSe SE_22 22_ad1179]
+[wt 1.0]
+
+[subRenderFadein #B 0.3 -50,-100]
+[subRenderMoveEase #B 0,-100 0.6 easeOutQuart]
+[wt 0.6]
+
+[charaPut U 0,0]
+[charaEffect U bit_talk_charge_blu]
+＠フリーダムと呼ばれた男
+うむ！　『[#幻想大剣:バ　　ル][line 3]
+[k]
+
+＠フリーダムと呼ばれた男
+[f large][#天魔失墜:ム　　　ン　　　ク]！』
+[k]
+
+[messageOff]
+[subRenderMoveEase #B 50,-100 0.6 easeOutQuart]
+[subRenderFadeout #B 0.3]
+[wt 0.6]
+
+[charaPut U 2000,2000]
+[charaEffectDestroy U bit_talk_charge_blu]
+[cueSeStop 22_ad1179 0.15]
+[shake 0.05 5 4 2.5]
+[effect bit_talk_gram_slash_green_02]
+[wt 0.15]
+[effectStop bit_talk_flare_plzm_low]
+[se ad696]
+[se ad983]
+[cueSeStop 23_ade922 0.5]
+[fadeout white 2.0]
+[wait fade]
+
+[bgmStop BGM_BATTLE_125 4.0]
+[wt 2.0]
+
+[fadein white 2.0]
+[wait fade]
+
+[charaMoveEase X -150,-280 1.5 easeOutQuad]
+[charaMoveScaleEase X 1.2 1.5 easeOutQuad]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+
+[charaLayer O sub #A]
+[charaFadein S 0.1 0,0]
+
+[subCameraFilter #A maskEdge cut359_mask05 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask05 5 255,255,255,255]
+
+[charaScale L 0.9]
+[charaScale M 0.8]
+
+[charaDepth L 2]
+[charaDepth M 2]
+
+[wt 1.7]
+
+[charaTalk P]
+[subRenderFadein #C 0.3 -270,-200]
+[subRenderMove #C -270,-230 0.3]
+[charaFace O 0]
+[charaFadein O 0.1 -70,200]
+[wt 0.5]
+
+＠？？？
+やりましたか！？
+[k]
+
+[messageOff]
+[charaPut Y 0,0]
+[charaFadeTime Y 0 0.6]
+[subRenderFadein #A 0.3 270,-200]
+[subRenderMove #A 270,-230 0.3]
+[wt 0.5]
+
+＠鮮血のウィドウヒルト
+ダメね、仕留めてはいない……！
+[k]
+
+[bgm BGM_MAP_129 0.1]
+
+[charaPut V 0,0]
+[charaFadeTime V 0 0.6]
+
+[charaFadeout Y 0]
+
+＠？？？
+だが、動きは封じた。[r]見立て通りだ。
+[k]
+
+＠？？？
+この星に渦巻く膨大なエネルギーは、[r]全てをこの三竜の封印に使おう。
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaFadeout V 0.2]
+[charaPut Y 0,0]
+[charaFadeTime Y 0 0.6]
+[charaFace L 0]
+[charaFadein L 0.2 0,200]
+＠業炎のワタナベ
+……不毛な惑星になるだろうな。
+[k]
+
+[messageOff]
+[charaFadeTime V 0 0.6]
+
+[subRenderFadein #B 0.3 0,-200]
+[subRenderMove #B 0,-230 0.3]
+[wt 0.6]
+
+[charaPut M -60,150]
+[charaEffect M bit_talk_quickmove]
+[wt 0.1]
+[se ad223]
+[charaFace M 0]
+[charaFadein M 0.3 -60,140]
+[wt 0.5]
+
+＠フリーダムと呼ばれた男
+それは仕方がない。シグルド殿不在の今、[r]俺たちだけではここまでが限界だろう。
+[k]
+
+＠フリーダムと呼ばれた男
+生まれたてで助かった。[r]成熟していれば、太陽系が消えていた。
+[k]
+
+[charaFadeout V 0]
+[charaFadeTime W 0 0.6]
+[charaFadeout L 0.2]
+[wt 0.2]
+
+[charaFace O 0]
+[charaFadein O 0.2 -70,200]
+
+＠鮮血のウィドウヒルト
+でも、これでは封印は1000年保つかどうか。
+[k]
+
+＠鮮血のウィドウヒルト
+いえ、星の上で人が活動すれば、[r]その分だけ覚醒も早まるわ。
+[k]
+
+[charaFadeout O 0.2]
+[wt 0.2]
+
+[charaFace L 0]
+[charaFadein L 0.2 0,200]
+
+＠業炎のワタナベ
+[#火星:じもと]の人類は乾眠状態だ。
+[k]
+
+＠業炎のワタナベ
+それにこの荒れようでは、開拓をしようという[r]物好きも現れまい。
+[k]
+
+[charaFadeout W 0]
+[charaFadeTime V 0 0.6]
+
+＠フリーダムと呼ばれた男
+では、このまま放置するのが正しいのか？
+[k]
+
+[charaFadeTime W 0 0.6]
+[wt 0.1]
+
+[charaFadeout Y 0]
+＠？？？
+それはちょっと問題があるかな。
+[k]
+
+＠？？？
+んー、見立てでは1000年保つけど[r]1000年後に元気いっぱいに跳ね起きそう。
+[k]
+
+＠？？？
+まあともかく、頑張って封印してみるか。[r]よし、専用礼装を作るぞー。
+[k]
+
+＠？？？
+ついでに、彼女が覚醒した場合の対抗策も[r]兼ねておこう。
+[k]
+
+[charaFadeout W 0]
+[charaFadeTime Y 0 0.6]
+
+＠フリーダムと呼ばれた男
+ふむ。あなたなら可能だろうが[line 3]
+[k]
+
+[charaFadeout V 0]
+[charaFadeTime W 0 0.6]
+
+＠業炎のワタナベ
+どうやって作り、どうやって保管する？
+[k]
+
+[charaFadeout Y 0]
+[charaFadeTime V 0 0.6]
+
+＠？？？
+材料は君たちに集めてもらおう。[r]竜殺しの概念礼装を片っ端から。
+[k]
+
+＠？？？
+私はそれを持った者に適した武器に[#変奏]しよう。[r][#剣士:セイバー]ならば剣に、[#弓兵:アーチャー]ならば弓に。
+[k]
+
+＠？？？
+どんな手を使っても、我々では殺し切れない。[r]あの[image berserker_language_1]がある限りは。
+[k]
+
+[charaFadeTime Y 0 0.6]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaFadeout V 0]
+[charaFace O 0]
+[charaFadein O 0.2 -70,200]
+
+＠鮮血のウィドウヒルト
+では、誰がその武器を扱うのですか？
+[k]
+
+[charaFadeout Y 0]
+[charaFadeTime V 0 0.6]
+
+＠？？？
+さあ、それは1000年後にわかるかもね。
+[k]
+
+[messageOff]
+[charaFadeout V 0.2]
+[charaFadeout W 0.2]
+[charaFadeout Y 0.2]
+[wt 1.5]
+
+[fadeout black 1.5]
+[bgmStop BGM_MAP_129 1.5]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[subRenderFadeout #C 0.1]
+
+[cameraHome 0.1]
+
+[charaFadeout P 0.1]
+[charaFadeout O 0.1]
+[charaFadeout M 0.1]
+[charaFadeout X 0.1]
+
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+[charaFadeout T 0.1]
+
+[charaFadeout V 0.1]
+[charaFadeout W 0.1]
+[charaFadeout Y 0.1]
+
+[charaLayer U normal]
+[charaLayer L normal]
+[charaLayer R normal]
+[charaLayer M normal]
+[charaLayer S normal]
+
+[charaLayer O normal]
+[charaLayer P normal]
+[charaLayer T normal]
+[charaLayer S normal]
+
+[masterBranch _Male2 _Female2]
+[label _Male2]
+[sceneSet Q 268200 1]
+
+[branch _branchEnd2]
+[label _Female2]
+[sceneSet Q 268210 1]
+
+[branch _branchEnd2]
+[label _branchEnd2]
+
+[charaLayer D sub #C]
+[charaLayer Q sub #C]
+
+[subCameraFilter #C maskEdge cut359_mask14 3 192,192,192,255]
+[subRenderScale #C 1.0]
+
+[charaScale Q 0.55]
+[charaScale D 0.93]
+
+[charaDepth Q 2]
+[charaDepth D 4]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 460,192]
+[charaFadein Q 0 420,110]
+
+[scene 10000]
+[wt 0.5]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+[fadein black 0.1]
+[wait fade]
+
+[scene 265400]
+[blur lens 0.1 4 5]
+
+[wt 1.0]
+[wipein openEye 0.5 1.0]
+[wait wipe]
+
+[wipeout openEye 0.5 1.0]
+[wait wipe]
+[wt 0.6]
+
+[blurOff lens 1.5]
+[wipein openEye 1.5 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_104 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[subRenderFadein #C 0.4 -150,-220]
+[wt 0.4]
+
+＠メカエリチャンⅡ号機
+[line 3]おはよう、嫌な夢でも見たのかしら？
+[k]
+
+？1：いや、どちらかというと……手がかり的な？
+？！
+
+[charaFace D 8]
+
+＠メカエリチャンⅡ号機
+そう。[r]後で教えてちょうだい。
+[k]
+
+[messageOff]
+[subRenderFadeout #C 0.3]
+[wt 0.3]
+
+[cueSe SE_25 25_ade1291]
+[seVolume 25_ade1291 0 0]
+[seVolume 25_ade1291 1.0 1.0]
+[wt 0.5]
+[cueSeStop 25_ade1291 0.7]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 20,0]
+[charaMove A 0,0 0.4]
+[wt 0.6]
+
+＠フレッカス
+おはよッス。[r]ふへへへへ、財宝財宝。
+[k]
+
+[subRenderScale #C 1.0]
+[charaTalk D]
+[charaFace D 8]
+[subRenderFadein #C 0.2 -150,-220]
+
+＠メカエリチャンⅡ号機
+財宝目当てのフレッカスおはよう。
+[k]
+
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[subRenderFadeout #C 0.2]
+[wt 0.1]
+
+[se ad748 0.5]
+[charaTalk B,I]
+[charaFace B 0]
+[charaFadein B 0.4 0,-10]
+[charaMove B 0,0 0.4]
+[wt 0.5]
+
+[charaFace I 8]
+[charaPut I -190,40]
+[charaFadeTime I 0.3 0.7]
+[wt 0.3]
+
+＠エリザベート=spot[B,I]
+この倉庫街の奥にいるのよね。サーヴァント。[r]さあ、ガンガン進むわよ！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace I 3]
+
+＠エリザベート=spot[B,I]
+で、どこからどこへ行くの！？
+[k]
+
+[messageOff]
+[wt 0.7]
+
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_104 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+
+[sceneSet T 265400 1]
+
+[charaDepth T 1]
+[charaDepth F 2]
+
+[charaScale T 2.5]
+[charaFadein T 0.1 1000,-400]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 -150,0]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_GALATEA_1 0.1]
+
+＠アマゾネス
+倉庫の奥？　知らない！[r]奥には未発送の荷物が多数あると聞くが！
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.6 1.0]
+[bgm BGM_GALATEA_1 0.6 0.5]
+[se ad184]
+[cueSe SE_25 25_ade1291]
+[cueSeVolume 25_ade1291 0 0.2]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaFadeout T 0.1]
+
+[charaDepth G 2]
+
+[charaFadein T 0.1 -600,-250]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 150,0]
+
+[wt 0.5]
+
+[seStop ad184 0.6]
+[cueSeStop 25_ade1291 0.6]
+
+[wipein leftToRight 0.6 1.0]
+[bgm BGM_GALATEA_1 0.6 1.0]
+[wait wipe]
+
+＠G：古代火星人
+倉庫の奥？　止めた方がいいぜ。[r]放置された商品が暴走してるって噂だ。
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.6 1.0]
+[bgm BGM_GALATEA_1 0.6 0.5]
+[se ad184]
+[cueSe SE_25 25_ade1291]
+[cueSeVolume 25_ade1291 0 0.2]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout T 0.1]
+
+[charaDepth H 2]
+
+[charaFadein T 0.1 600,-400]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[wt 0.5]
+
+[seStop ad184 0.6]
+[cueSeStop 25_ade1291 0.6]
+
+[wipein rightToLeft 0.6 1.0]
+[bgm BGM_GALATEA_1 0.6 1.0]
+[wait wipe]
+
+＠クラス・アサシン
+行くんなら止めないけど、[r]保険とか入っていた方がいいと思うよ。
+[k]
+
+[messageOff]
+[se ade277]
+[charaMove H 0,15 0.6]
+[charaMoveScale H 1.1 0.6]
+[wt 0.6]
+
+＠クラス・アサシン
+一ついい保険がありまして[line 3]
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.6 1.0]
+[bgm BGM_GALATEA_1 0.6 0.5]
+[se ad184]
+[cueSe SE_25 25_ade1291]
+[cueSeVolume 25_ade1291 0 0.2]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[charaFadeout T 0.1]
+
+[charaDepth B 3]
+[charaDepth I 2]
+[charaDepth A 4]
+
+[charaFadein T 0.1 0,-250]
+[charaScale T 1.2]
+
+[wt 1.0]
+
+[seStop ad184 0.6]
+[cueSeStop 25_ade1291 0.6]
+
+[wipein leftToRight 0.6 1.0]
+[bgm BGM_GALATEA_1 0.6 1.0]
+[wait wipe]
+
+[wt 0.2]
+
+[turnPageOff]
+[charaTalk B,I]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace I 3]
+[charaPut I -190,40]
+[charaFadeTime I 0.1 0.7]
+
+＠エリザベート=spot[B,I]
+[messageShake 0.03 5 5 0.3]
+何で倉庫の奥に行くだけで、[r]保険に入らないといけない訳！？
+[k]
+
+＠エリザベート=spot[B,I]
+何故か入ったんだけどね！
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[turnPageOn]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠フレッカス
+受取人は俺にしておかない？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B,I]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace I 4]
+[charaPut I -190,40]
+[charaFadeTime I 0.1 0.7]
+
+＠エリザベート=spot[B,I]
+そうなったら[#絶体絶命:ぜったいぜつめい]の危機の時に、[r]渾身の力でカチ殺すけど、いい？
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠フレッカス
+すいませんでした。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_GALATEA_1 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout T 0.1]
+
+[charaLayer D normal]
+[charaLayer Q normal]
+
+[charaLayer U normal]
+[charaSet J 1098182900 1 ユニヴァース・アポロン]
+[charaSet K 1098182800 1 パリス]
+
+[charaSet Q 3016001 1 ヘクトール？]
+[charaScale Q 1.0]
+
+[charaSet Y 3016001 1 ヘクトール？]
+[charaScale Y 1.4]
+
+[sceneSet W 265500 1]
+[charaScale W 1.4]
+
+[sceneSet T 265500 1]
+[charaScale T 1.02]
+
+[masterBranch _Male3 _Female3]
+[label _Male3]
+[sceneSet F 268200 1]
+
+[branch _branchEnd3]
+[label _Female3]
+[sceneSet F 268210 1]
+
+[branch _branchEnd3]
+[label _branchEnd3]
+
+[charaLayer D sub #C]
+[charaLayer F sub #C]
+
+[subCameraFilter #C maskEdge cut359_mask14 3 192,192,192,255]
+[subRenderScale #C 1.0]
+
+[charaScale F 0.55]
+[charaScale D 0.93]
+
+[charaDepth F 2]
+[charaDepth D 4]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 460,192]
+[charaFadein F 0 420,110]
+[charaDepth Q 15]
+[charaDepth W 13]
+
+[wt 0.5]
+
+[charaDepth T 1]
+[charaDepth A 2]
+
+[cueSe SE_24 24_ad1352]
+[cueSeVolume 24_ad1352 0 0.3]
+[cueSeVolume 24_ad1352 0.5 0.6]
+[cueSe SE_24 24_ad1353]
+[cueSeVolume 24_ad1353 0 0.3]
+[cueSeVolume 24_ad1353 0.5 0.6]
+[cueSe SE_25 25_ade1291]
+[cueSeVolume 25_ade1291 0 0.1]
+[cueSeVolume 25_ade1291 0.5 0.2]
+
+[scene 265500]
+
+[charaFadein T 0.1 0,-230]
+[wt 1.0]
+
+[cueSeVolume 24_ad1352 1.0 1.0]
+[cueSeVolume 24_ad1353 1.0 1.0]
+[cueSeVolume 25_ade1291 1.0 0.4]
+
+[charaMoveScale T 1.15 2.5]
+[charaMove T 50,-250 2.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[cueSeStop 24_ad1352 0.3]
+[cueSeStop 24_ad1353 0.3]
+[cueSeStop 25_ade1291 0.3]
+[wt 0.5]
+
+[bgm BGM_GOGH_1 0.1]
+
+[charaTalk B,I]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace I 0]
+[charaPut I -190,40]
+[charaFadeTime I 0.1 0.7]
+
+＠エリザベート=spot[B,I]
+だいぶ奥まで入り込んできたわね……。
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad77]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠フレッカス
+見てくれよ。300年前の生鮮食品があるぜ！[seStop ad77 0.8]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B,I]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace I 3]
+[charaPut I -190,40]
+[charaFadeTime I 0.1 0.7]
+
+＠エリザベート=spot[B,I]
+捨てなさいよ！
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠フレッカス
+でも中身は全然新鮮だぞ！
+[k]
+
+？1：余計怪しいよ！！
+？！
+
+[bgmStop BGM_GOGH_1 1.0]
+
+[charaTalk Q]
+
+＠Q：？？？
+大丈夫です、食べられますよ。[r]それで生き延びてきましたから、僕たち。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B,I]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace I 3]
+[charaPut I -190,40]
+[charaFadeTime I 0.1 0.7]
+
+＠エリザベート=spot[B,I]
+！
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠フレッカス
+逃げる！
+[k]
+
+[messageOff]
+[se ade97]
+[wt 0.2]
+[charaMove A 500,0 0.7]
+[charaFadeout A 0.6]
+[wt 0.9]
+
+[se ade422]
+[seVolume ade422 0 0.2]
+[seVolume ade422 1.0 1.0]
+[wt 1.0]
+
+[charaDepth Y 12]
+[charaDepth W 8]
+[charaDepth Q 5]
+
+[charaTalk Y]
+[charaFace Y 0]
+[charaFadein Y 0.4 0,175]
+[charaFadein W 0.4 0,-150]
+[seStop ade422 0.4]
+[wt 0.8]
+[charaFadeout T 0.1]
+[charaMoveEase Y 0,0 1.0 easeOutSine]
+[charaMoveEase W 0,-325 1.0 easeOutSine]
+[wt 1.6]
+[charaFace Q 0]
+[charaFadein Q 0.1 1]
+
+[bgm BGM_EVENT_81 0.1]
+
+？1：ヘクトール……！？
+？！
+
+
+＠Y：ヘクトール？
+兄[line 3]ではなく、僕のことを知っているんですね。[wt 1.0][charaFace Y 1][r]こんにちは！
+[k]
+
+[charaFace Y 0]
+
+＠Y：ヘクトール？
+この奥にある財宝を求めに来たんですか？
+[k]
+
+[messageOff]
+[charaScale Q 1.0]
+[charaTalk Q,Y,D]
+[charaFadeout Y 0.4]
+[charaFadeout W 0.4]
+[wt 1.0]
+[subRenderFadein #C 0.2 -150,-220]
+
+＠メカエリチャンⅡ号機
+兄、って言ったわね。
+[k]
+
+[subRenderFadeout #C 0.1]
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[charaDepth I 2]
+[charaDepth B 3]
+[charaDepth W 4]
+
+
+[charaTalk B,I]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace I 0]
+[charaPut I -190,40]
+[charaFadeTime I 0.1 0.7]
+
+＠エリザベート=spot[B,I]
+言ったわ。ヘクトールの弟ということなら、[r]パリス……だったかしら？　あの、羊の。
+[k]
+
+[messageOff]
+
+[charaDepth J 5]
+[charaDepth K 6]
+[charaDepth Q 7]
+[charaScale W 1.2]
+
+[charaTalk Q,K,B,I,J]
+[charaFace Q 4]
+[charaFadein Q 0.4 1]
+[charaFadein W 0.4 0,-250]
+
+[wt 0.8]
+
+[charaMoveEase Q 200,0 1.0 easeOutSine]
+[charaMoveEase W 100,-250 1.0 easeOutSine]
+
+[wt 1.1]
+
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+
+[se ad42 0.4]
+[charaFace K 4]
+[charaPut K -150,0]
+[charaFadeTime K 0.8 0.6]
+[charaFace J 0]
+[charaPut J -360,-200]
+[charaFadeTime J 0.8 0.6]
+
+[wt 1.0]
+
+[bgmStop BGM_EVENT_81 1.0]
+＠K：パリス？
+うう……アポロン様、バレてます。大体全部。
+[k]
+
+[messageOff]
+[charaTalk J]
+
+＠ユニヴァース・アポロン
+はっはっは、これが伝説にある地球のマスター[r]という訳か。
+[k]
+
+[bgm BGM_BATTLE_68 0.1]
+
+＠ユニヴァース・アポロン
+いいね、今回は楽しめそうだ。[r]最大強度でいくとしよう。
+[k]
+
+[messageOff]
+[charaTalk K,J]
+[cueSe SE_25 25_ade1144]
+[charaMoveEase J -180,50 0.2 easeOutSine]
+[wt 0.2]
+[charaMove J -150,0 0.5]
+[wt 0.4]
+[cueSe SE_22 22_ade817 0.5]
+[wt 0.5]
+
+[charaTalk off]
+[charaFace Q 2]
+[charaFace K 2]
+[charaMoveEase Q 220,0 0.7 easeOutQuart]
+[charaMoveEase W 80,-270 0.7 easeOutQuart]
+[charaMoveEase K -170,0 0.7 easeOutQuart]
+[charaMoveEase J -170,0 0.7 easeOutQuart]
+
+[charaMoveScaleEase Q 1.2 0.7 easeOutQuart]
+[charaMoveScaleEase W 1.4 0.7 easeOutQuart]
+[charaMoveScaleEase K 1.2 0.7 easeOutQuart]
+[charaMoveScaleEase J 1.2 0.7 easeOutQuart]
+[wt 0.7]
+
+[charaTalk K,J]
+＠パリス？
+はい！　この財宝を欲するならば、[r]我らを倒してからにしろ！
+[k]
+
+＠パリス？
+『特攻機関[#竜殺剣:シグルド]』、[r]太陽のパリス[line 3]今回は兄さんモードで参ります！
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.5]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_68 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+
+
+

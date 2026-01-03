@@ -1,0 +1,618 @@
+
+
+＄04-00-03-21-2-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098293910 1 カリオストロ]
+[charaSet B 1098293910 1 カリオストロ_シルエット]
+[charaFilter B silhouette 00000080]
+[charaSet C 6050001 1 ハサン]
+[charaSet D 1098291300 1 恩讐の残火]
+
+[sceneSet E 213500 1]
+[charaScale E 1.15]
+
+[charaSet R 5009000 1 エフェクト用1]
+[charaSet S 5009000 1 エフェクト用2]
+[charaSet T 5009000 1 エフェクト用3]
+
+[scene 211901]
+[cameraFilter gray]
+
+[subCameraOn 2]
+[charaLayer A sub #A]
+[charaLayer C sub #A]
+[charaLayer B sub #B]
+[subCameraFilter #A through]
+[subCameraFilter #B through]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaFace B 19]
+[charaFadein B 0.1 1]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[wt 1.0]
+
+[charaTalk off]
+[subRenderFadein #B 0.4 0,0]
+[wt 1.2]
+[subRenderFadein #A 0.1 0,0]
+[wt 0.1]
+[subRenderFadeout #B 0.7]
+[wt 1.0]
+[charaTalk on]
+[charaTalk A]
+
+＠カリオストロ
+おかえりなさい。[r]お戻りをお待ちしておりました。
+[k]
+
+？1：ちょっとびっくりした
+？2：どうして、[#此処:こ　こ]に
+？！
+
+[charaFace A 1]
+
+＠カリオストロ
+……はは。
+[k]
+
+＠カリオストロ
+勿論、[#其処:そ　こ]なるハサン殿に頼みました。[r]ご自宅の前にてお待ちしているので、
+[k]
+
+＠カリオストロ
+是非、連れて来ていただきたいと。
+[k]
+
+[charaFace A 19]
+
+＠カリオストロ
+第三、第四の試練以外は[r]貴方の足元の影が移動を司ったようですが……
+[k]
+
+？1：……そうだね
+？2：今は、反応はないよ
+？！
+
+[charaFace A 1]
+
+＠カリオストロ
+はい。
+[k]
+
+＠カリオストロ
+ですので、[#私:わたくし]がご案内いたします。[r]こちらへどうぞ。
+[k]
+
+？1：こちら、って
+？2：そっちは家の[line 3]
+
+？！
+
+[charaFace A 13]
+
+＠カリオストロ
+はい。
+[k]
+
+？1：？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ハサン
+……間違ってないぜ。[r]オレもずっと気付いてなかった。
+[k]
+
+＠ハサン
+カリオストロの言う通りだ。[r]第三の試練を装ってる最中に知ったんだとさ。
+[k]
+
+＠ハサン
+黒幕の居場所は、[r]間違いなくそこにある。
+[k]
+
+＠ハサン
+[line 3]おまえの家に。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_81 1.0 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 212000]
+[wt 1.0]
+
+[cueSe SE_24 24_ad1360]
+[wt 1.5]
+[fadein black 1.0]
+[bgm BGM_EVENT_81 1.0 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[se ade247]
+[wt 2.0]
+[seStop ade247 0.5]
+
+？1：ああ、そうか
+？！
+
+？1：書斎[line 3]
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ハサン
+そうだ。[r]……誰も近付いてはいけない、[#父の書斎]。
+[k]
+
+＠ハサン
+英霊にも効くレベルの、認識に対する[r]プロテクトが掛けられてる。
+[k]
+
+＠ハサン
+強力な暗示だ。[r]言われなきゃ、オレだって気付けなかった。
+[k]
+
+？1：仮面の巌窟王は……
+？2：ずっと、近くにいたってこと？
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+
+＠カリオストロ
+ある意味では、そうですね。[r]正確には違います。
+[k]
+
+＠カリオストロ
+ご覧になるのが早いでしょう。[r]今、扉を開けますので。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaLayer A normal]
+[charaLayer C normal]
+[charaLayer B normal]
+[subCameraOff]
+
+[scene 10000]
+[cameraFilter normal]
+[wt 1.5]
+
+[se ade278]
+[wt 0.7]
+[seStop ade278 0.1]
+[wt 0.3]
+[se ad755]
+[wt 1.3]
+
+
+[scene 212300]
+[cameraMove 0.1 -100,0 1.2]
+[wt 0.1]
+
+[cueSe SE_22 22_ad1155]
+[seVolume 22_ad1155 0 0]
+[wt 0.25]
+[seVolume 22_ad1155 0.1 1.0]
+[wt 0.2]
+[cameraMoveEase 0,0 2.5 easeOutSine 1.2]
+[wipein rightToLeft 2.5 1.0]
+[wait wipe]
+[wt 1.0]
+
+
+[cameraMoveEase -100,0 1.5 easeOutSine 1.3]
+[wt 2.0]
+[cameraMove 2.0 100,0 1.3]
+[wt 3.0]
+[cameraMoveEase 0,0 1.5 easeOutSine 1.0]
+[wt 2.0]
+
+[bgm BGM_EVENT_124 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠カリオストロ
+[line 3]ようこそ、本特異点に[#於:お]けるバックヤードへ。[r][#是:これ]こそは最果てへの入口。
+[k]
+
+＠カリオストロ
+外界から隔絶された[#静謐:せいひつ]の室にして、[r]あらゆる感知を遮断する場でもある。
+[k]
+
+[charaFace A 19]
+
+＠カリオストロ
+仮面の巌窟王その人が、[r]六日間にわたって存在を隠し続けられた理由こそ、
+[k]
+
+＠カリオストロ
+この書斎なのです。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+？1：じゃあ
+？2：三人が、襲われた時に
+？！
+
+？1：サリエリが感知できなかったのは……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ハサン
+ああ、この部屋のせいだろう。
+[k]
+
+＠ハサン
+感知に対する遮断能力は、[r]家全体に及んでいる。
+[k]
+
+＠ハサン
+オレが護衛のために常駐してる最中、[r]霊体化をしていなければ[line 3]
+[k]
+
+＠ハサン
+或いは、ジャンヌ・オルタや景清あたりが[r]気付く可能性はあったかもな。
+[k]
+
+？1：………………。
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：気付かなかった
+？2：……ずっと、この家にいたのに
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠カリオストロ
+実に、痛ましいことです。[r]悪辣な所業ですとも。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠ハサン
+……。[r]……。
+[k]
+
+[charaFace C 0]
+
+＠ハサン
+……手を出せ、[%1]。
+[k]
+
+＠ハサン
+不思議そうな顔をするんじゃない。[r]仮契約だ。
+[k]
+
+＠ハサン
+最後の試練が目前なんだ、[r]今更、贅沢なんざ言ってられないだろ。
+[k]
+
+？1：それはありがたい、けど
+？2：あなたのお眼鏡にはかなったのかな
+？！
+
+[charaFace C 15]
+
+＠ハサン
+さあな。[r]正直なところは分からない。
+[k]
+
+＠ハサン
+人類最後のマスターって意味じゃ、[r]おまえの自覚は大分薄いように見える。
+[k]
+
+[charaFace C 0]
+
+＠ハサン
+だが同時に……[r]おまえは確かに、どうにか踏ん張っている。
+[k]
+
+＠ハサン
+神霊相手でも一切[#怯:ひる]まないしな。[r]だから、とりあえずの及第点だ。
+[k]
+
+＠ハサン
+[line 3]いくぞ。
+[k]
+
+[messageOff]
+[wt 0.5]
+[masterBranch _Male _Female]
+
+[label _Male]
+[cueSe Battle bas16]
+[effect bit_talk_CommandMantra_01]
+[wt 2.3]
+
+[branch _branchEnd]
+
+[label _Female]
+
+[cueSe Battle bas16]
+[effect bit_talk_CommandMantra_02]
+[wt 2.3]
+
+[branch _branchEnd]
+
+[label _branchEnd]
+
+＠ハサン
+[line 3]よし。[r]これで、おまえはオレの仮のマスターだ。
+[k]
+
+＠ハサン
+やっと十全に戦えるぜ。[r]攻撃全振りの[#規格外ども:エ ク ス ト ラ ク ラ ス]程じゃないが、
+[k]
+
+＠ハサン
+せいぜい役には立ってやるとも。[r][#機会は多くなさそうだが]。
+[k]
+
+？1：……ありがとう
+？2：……短い間かもしれないけど、よろしく
+？！
+
+＠ハサン
+ああ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠カリオストロ
+……ふふ、微笑ましい光景です。[r]素晴らしい。
+[k]
+
+[charaFace A 17]
+
+＠カリオストロ
+叶うならば[#私:わたくし]とも仮契約を果たしてほしいですが、[r]いえ、いえ、贅沢は言いませんよ。
+[k]
+
+[charaFace A 19]
+
+＠カリオストロ
+さあ。[r]参りましょう。
+[k]
+
+＠カリオストロ
+[line 3]暗黒が、我らを待っていますよ。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_124 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 213500]
+[wt 2.0]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_199 0.1]
+
+[cueSe SE_21 21_ade548]
+[seVolume 21_ade548 0 0.8]
+[charaFadein E 1.0 0,-220]
+[charaMoveScale E 1.3 30.0]
+[wt 2.0]
+
+＠
+現代的な住宅に不似合いな[r]古めかしい書斎、その向こうには[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+暗黒が。[r]果てなく。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+[#平衡感覚:へいこうかんかく]が狂いそうな程に、[r]深く、深く。
+[k]
+
+＠
+あなたの足元には。[r][line 3]どこまでも続く、黒色の渦が。
+[k]
+
+[messageOff]
+[cueSeStop 21_ade548 1.0]
+[wt 0.5]
+[charaFadeout E 1.0]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ハサン
+……深いな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+
+＠カリオストロ
+その名を[#暗黒螺旋階段:コ リ マ ソ ン ・ ノ ワ ー ル]！[wt 0.7][charaFace A 19][r]と、いうのは[#私:わたくし]が付けた呼び名に過ぎませんが[line 3]
+[k]
+
+＠カリオストロ
+果てなきが如く続く[#螺旋:らせん]の何処かに、[r]奴は居座っているのです。
+[k]
+
+[charaFace A 13]
+
+＠カリオストロ
+何、単に長いだけ。[r]いずれ出逢えましょう。
+[k]
+
+[charaFace A 8]
+
+＠カリオストロ
+ですので後は……[r]無事、歩んでいくのみです。
+[k]
+
+[bgmStop BGM_EVENT_199 1.0]
+
+＠カリオストロ
+敵が来ます。[r]ご注意を。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[fowardEffect bit_talk_embers01]
+[se ad436]
+[seStop ad436 2.5]
+[cueSe SE_22 22_ad1194 0.5 1.0]
+[wt 2.5]
+[cueSeStop 22_ad1194 2.5]
+[seStop ad434 2.5]
+
+[cueSeVolume 22_ad1194 0.5 0.5]
+[fowardEffect bit_talk_embers02]
+[cueSe SE_21 21_ad1148]
+[wt 1.5]
+[cueSeStop 22_ad1194 2.5]
+[seStop ad434 2.5]
+
+[cueSe SE_23 23_ade909]
+[charaTalk off]
+[charaFace D 0]
+[charaSpecialEffect D wipeTimeRe 0 2.0 0 0.5]
+[wt 0.5]
+[cueSeStop 23_ade909 2.0]
+[fowardEffectStop bit_talk_embers01]
+[wt 2.0]
+[charaFadein D 0.1 1]
+
+[bgm BGM_BATTLE_137 0.1]
+
+[charaTalk depthOff]
+[charaDepth R 1]
+[charaDepth D 2]
+[charaDepth S 3]
+
+[se ad960]
+[cueSe SE_21 21_ad1114]
+[fowardEffect bit_talk_29_black]
+[wt 0.5]
+[charaPut R 0,150]
+[charaPut S 1]
+[charaEffect R bit_talk_fire_blue]
+[charaEffect S bit_talk_sparks_blue]
+[wt 1.5]
+[cueSeVolume 21_ad1114 1.0 0.7]
+
+[charaTalk on]
+[charaTalk A]
+
+＠A：カリオストロ
+来たな、恩讐の毒炎。[r]いやはやまったく。
+[k]
+
+＠A：カリオストロ
+…………何とも、醜い。
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad859]
+[seVolume ad859 0 0.8]
+[charaPut T 1]
+[charaEffect T bit_talk_41_fs]
+[charaMoveScaleEase D 1.5 0.3 easeOutQuint]
+[charaMoveEase R 0,200 0.3 easeOutQuint]
+[charaMoveEase D 0,50 0.3 easeOutQuint]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[wt 0.7]
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad859 0.4]
+[cueSeStop 21_ad1114 0.4]
+[bgmStopEnd BGM_BATTLE_137 0.4]
+[wait fade]
+[blurOff motion 0.1]
+[soundStopAllEnd]
+[end]

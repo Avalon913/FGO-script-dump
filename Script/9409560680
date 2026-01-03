@@ -1,0 +1,739 @@
+
+
+＄94-09-56-06-8-0
+[soundStopAll]
+[enableFullScreen]
+
+
+
+[charaSet A 25014001 1 蒼崎青子]
+[charaSet B 1098257800 1 マシュ]
+[charaSet C 1098295230 1 久遠寺有珠]
+[charaSet D 2051000 1 杉谷]
+[charaSet E 1098293500 1 隈乃院ヨシスケ]
+[charaSet F 1098296500 1 両儀]
+[charaSet G 2029002 1 ふじのん]
+[charaSet H 1049002 1 士郎さん]
+
+[charaSet I 1098295400 1 マシュ_演出用]
+[charaScale I 2.0]
+[charaFilter I silhouette 00000080]
+[charaSet J 7049000 1 静希草十郎]
+
+[sceneSet M 217201 1]
+[charaScale M 1.2]
+[sceneSet N 217201 1]
+[charaScale N 1.4]
+[sceneSet O 215200 1]
+[charaScale O 1.3]
+
+[scene 217201]
+
+[charaFadein M 0.1 0,-250]
+[charaMove M 0,-200 10.0]
+
+[effect bit_talk_yuge_fs]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.0]
+
+[wipeout rectangleStripDownToUp 1.5 1.0]
+[wait wipe]
+
+[charaFadeout M 0.1]
+
+[effectStop bit_talk_yuge_fs]
+[effectDestroy]
+
+[scene 216701]
+
+[masterBranch _Male01 _Female01]
+
+[label _Female01]
+[branch select_end01]
+
+[label _Male01]
+[pictureFrame cut063_cinema]
+
+[label select_end01]
+
+[wt 1.0]
+
+[se ade150]
+[wipein rectangleStripUpToDown 1.0 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_MAP_120 0.1]
+
+
+＠蒼崎青子
+はあーーー。[r]仕事を終わらせてからの温泉、最っっ高[line 3]
+[k]
+
+＠久遠寺有珠
+やっと羽を伸ばせた、といった顔ね。[r]青子ひとりだけ事情が違っていたからかしら。
+[k]
+
+＠久遠寺有珠
+だらしのない姿だけど、[r]大目に見てあげて、[&マシュさん:ふたりとも]。
+[k]
+
+[masterBranch _Male02 _Female02]
+
+[label _Male02]
+
+[branch select_end02]
+
+[label _Female02]
+
+？1：自分もふにゃけてるから同じで～～す！
+？2：貸し切り、露天風呂、星空……当然の結果かと
+
+？！
+
+[label select_end02]
+
+＠マシュ
+はい。宿に残っている宿泊客の皆さんに感謝ですね。[r]今夜の露天風呂も[#快:こころよ]く譲ってくださいました。
+[k]
+
+[messageOff]
+[wipeout circleIn 1.5 1.0]
+[bgm BGM_MAP_120 1.5 0.5]
+[wait wipe]
+
+[masterBranch _Male03 _Female03]
+
+[label _Male03]
+
+[branch select_end03]
+
+[label _Female03]
+
+[pictureFrame cut063_cinema]
+
+[label select_end03]
+
+[effect bit_sepia01 0,0]
+
+[scene 215200]
+[wt 1.0]
+
+[charaTalk depthOff]
+
+
+[wipein circleIn 1.5 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 0,-50]
+
+＠久遠寺有珠
+そう。[r][#椀々:わんわん]様は退治されて、事件は解決したのね。
+[k]
+
+＠久遠寺有珠
+旅館の霊障は少しずつ無くなっていくでしょう。[r]その代償に『万能の秘湯』も失われた訳だけど。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-50]
+
+＠両儀さん
+お疲れさま、マシュさん。[r]私の部屋の守衛をしてくれてありがとう。
+[k]
+
+＠両儀さん
+霊障もなくなるという話だし、[r]明日からやっと親子水入らずで楽しめるわ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 0,-50]
+
+＠マシュ
+両儀さんはまだご滞在になるのですね。[r]他の皆さんも同じでしょうか？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale D 1.1]
+[charaScale G 1.1]
+[charaScale H 1.1]
+
+[charaDepth I 9]
+[charaDepth D 8]
+[charaDepth G 7]
+[charaDepth H 6]
+[charaDepth O 5]
+[charaDepth E 4]
+[charaDepth B 3]
+
+[charaFace D 0]
+[charaFadein D 0.6 70,-70]
+[charaMoveEase D 100,-70 0.6 easeOutSine]
+[charaFace I 0]
+[charaFadein I 0.6 -370,50]
+[charaMoveEase I -340,50 0.6 easeOutSine]
+[charaFadein O 0.6 -50,-250]
+[charaMoveEase O -20,-250 0.6 easeOutSine]
+[wt 0.7]
+
+[charaFadeout B 0.1]
+
+[charaTalk on]
+[charaTalk D]
+
+＠杉谷
+ああ。花心のヤツ、[#椀々:わんわん]様になっていた時の[r]精神的ダメージが大きいらしくてな。ヘコんでやがる。
+[k]
+
+[charaFace D 13]
+
+＠杉谷
+もうしばらく様子を見てやって、[r]調子が戻りしだい２年分の文句を言ってやる予定だ。
+[k]
+
+[messageOff]
+[charaTalk D,G]
+[charaFace G 0]
+[charaFadein G 0.6 240,-70]
+[charaMoveEase G 200,-70 0.6 easeOutSine]
+[charaMoveEase D 50,-70 0.6 easeOutSine]
+[charaMoveEase O -60,-250 0.6 easeOutSine]
+[charaMoveEase I -380,50 0.6 easeOutSine]
+[charaFadeout D 0.6]
+[wt 0.6]
+
+＠ふじのん
+私もあと少しだけこちらの旅館に。[r]今回の件で修業不足だと痛感しました。
+[k]
+
+[charaFace G 6]
+
+＠ふじのん
+地獄堂という洞窟、修業にはもってこいですよね？[r]明かりはないし、的になる大岩も沢山ありそう。
+[k]
+
+[messageOff]
+[charaTalk G,H]
+[charaFace H 7]
+[charaFadein H 0.6 300,-70]
+[charaMoveEase H 260,-70 0.6 easeOutSine]
+[charaMoveEase G 150,-70 0.6 easeOutSine]
+[charaMoveEase O -100,-250 0.6 easeOutSine]
+[charaMoveEase I -420,50 0.6 easeOutSine]
+[charaFadeout G 0.6]
+[wt 0.6]
+
+
+＠士郎さん
+[#儂:オレ]はここでお別れだな。[r]商売も済んだし、温泉もたっぷり味わった。
+[k]
+
+＠士郎さん
+一足先に[#手前:てめえ]の日常に戻るとすらぁ。[r]じゃあな、探偵団の[&坊主ども:嬢ちゃんたち]。
+[k]
+
+[charaFace E 3]
+[charaFadein E 0.1 0,-50]
+
+[charaFace H 16]
+
+＠士郎さん
+どこかで再会する事になったら、[r]そん時は安くしとくぜ。
+[k]
+
+
+[messageOff]
+[charaTalk E,H]
+[charaFadeout H 0.4]
+[charaFadeout I 0.4]
+[charaFadeout O 0.4]
+[wt 0.4]
+
+[charaScale D 1.0]
+[charaScale G 1.0]
+[charaScale H 1.0]
+
+＠隈乃院ヨシスケ
+おや。一度も当館自慢の露天風呂を[r]お使いにならないとは。
+[k]
+
+＠隈乃院ヨシスケ
+もう[#一晩:ひとばん]残ってお使いになっては？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 0,-50]
+
+＠士郎さん
+そいつは功労者に譲ってやんな。[r]露天風呂ならうちにもあるしな。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-50]
+
+＠両儀さん
+そうね。青子さん、久遠寺さん。[r]私たちは遠慮するから、皆さんで楽しんで。
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaScale A 1.45]
+[charaScale C 0.95]
+[charaScale J 0.95]
+
+[charaDepth A 9]
+[charaDepth J 8]
+[charaDepth B 7]
+[charaDepth C 6]
+[charaDepth O 5]
+[charaDepth D 4]
+[charaDepth F 3]
+
+[charaFace J 0]
+[charaFadein J 0.6 30,-70]
+[charaMoveEase J 0,-70 0.6 easeOutSine]
+[charaFace C 0]
+[charaFadein C 0.6 250,-70]
+[charaMoveEase C 220,-70 0.6 easeOutSine]
+[charaFace B 12]
+[charaFadein B 0.6 440,-70]
+[charaMoveEase B 410,-70 0.6 easeOutSine]
+
+[charaFace A 9]
+[charaFadein A 0.6 -290,0]
+[charaMoveEase A -320,0 0.6 easeOutSine]
+
+[charaFadein O 0.6 -50,-250]
+[charaMoveEase O -80,-250 0.6 easeOutSine]
+[wt 0.8]
+
+[charaFadeout F 0.1]
+
+[charaTalk on]
+[charaTalk A]
+
+＠蒼崎青子
+ありがとうございます。[r]お言葉に甘えて天空の間一行で……って。
+[k]
+
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+[charaFace A 0]
+
+＠蒼崎青子
+あれ？　鳶丸は？　姿がないけど。
+[k]
+
+[messageOff]
+[charaTalk A,D]
+[charaFadeout A 0.4]
+[charaFadeout J 0.4]
+[charaFadeout C 0.4]
+[charaFadeout B 0.4]
+[charaFadeout O 0.4]
+[wt 0.4]
+
+＠杉谷
+槻司なら旧館のロビーだよ。[r]夕方になるといつも旧館にいるだろ。
+[k]
+
+[charaFace D 17]
+
+＠杉谷
+そういえば何してたんだろうな、アイツ。
+[k]
+
+＠杉谷
+蒼崎殺しの手がかりを探しているにしちゃあ、[r]やけにコソコソしていたが。
+[k]
+
+[messageOff]
+[wipeout circleIn 1.5 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[effectDestroy bit_sepia01]
+[wt 0.1]
+
+[masterBranch _Male04 _Female04]
+
+[label _Male04]
+
+[pictureFrame]
+
+[branch select_end04]
+
+[label _Female04]
+
+
+[label select_end04]
+
+[scene 216700]
+[wt 1.0]
+
+[wipein circleIn 1.5 1.0]
+[bgm BGM_MAP_120 1.5 1.0]
+[wait wipe]
+
+
+[masterBranch _Male05 _Female05]
+
+[label _Male05]
+
+？1：槻司さん、さっきは何処に行ってたんですか？
+
+？！
+
+＠槻司鳶丸
+ああ、ちょっとな。[r]暇なんで土産屋で土産を見てた。
+[k]
+
+＠槻司鳶丸
+一週間近く事務所を留守にしていたからな。[r]それくらいは買っていかないと印象悪くなるだろ？
+[k]
+
+[branch lblConf05]
+
+[label _Female05]
+
+
+＠蒼崎青子
+ねえ鳶丸ー。[r]アンタ、さっき旧館で何してたのー？
+[k]
+
+＠槻司鳶丸
+電話だよ電話。いつまでたっても警察が来ないから、[r]山道で土砂崩れでもあったのか心配になってな。
+[k]
+
+＠槻司鳶丸
+明日には全員帰るんだろ？[r]道が安全であるかは確かめておくべきだろ。
+[k]
+
+[label lblConf05]
+
+＠静希草十郎
+大人の対応だ。[r]10年後の鳶丸は、その、細かいところにも気が利くな。
+[k]
+
+＠槻司鳶丸
+俺は昔から神経質だよ。根が臆病だからな。[r]おまえさんや蒼崎みたいに、いざって時は行動できない。
+[k]
+
+＠槻司鳶丸
+どうしようもない[#現実:か  べ]にぶちあたったら、[r]背を丸めて回れ右だ。
+[k]
+
+＠槻司鳶丸
+叶わない事があれば、奇跡にだってそりゃ願うさ。
+[k]
+
+[masterBranch _Male06 _Female06]
+
+[label _Male06]
+
+？1：なにか、悩みとかあったりするんですか？
+
+？！
+
+[branch lblConf06]
+
+[label _Female06]
+
+
+＠蒼崎青子
+深刻な声だったけど、鳶丸、悩みとかあったりするー？[r]あ。興信所の経営、うまくいってないとか！
+[k]
+
+[label lblConf06]
+
+＠槻司鳶丸
+まさか。人生それなりに楽しんでるぜ。[r]将来明るいことばかりだしな！
+[k]
+
+＠槻司鳶丸
+って、そうか、[r]おまえさんたちは未来の人間だったか。
+[k]
+
+＠槻司鳶丸
+俺と草十郎は2001年の人間だ。[r]まあ、今そこにいる草の字は別だが。
+[k]
+
+＠槻司鳶丸
+西暦が2000年になって、社会も国も変わっていないが[r][#心機一転:し ん き い っ て ん]って言うのかね。
+[k]
+
+＠槻司鳶丸
+急いで成長してきた時代が終わって、[r]その負担で苦しんでいた時代も終わって、
+[k]
+
+＠槻司鳶丸
+これからは何もかも新しい、どこまでも[r]進歩していく時代になったと大抵の人間が思っている。
+[k]
+
+＠槻司鳶丸
+10年後には貧富の差はなくなって、[r]つまらない偏見もなくなって、多くの国が発展していく。
+[k]
+
+＠槻司鳶丸
+そんな都合のいい展望を誇らしげに語っても、[r]まあ、白い目で見られる事のない世界だ。
+[k]
+
+＠槻司鳶丸
+おまえさんの時代はどうだ、[%1]。[r]映画で見るような、そんな世界になっているか？
+[k]
+
+？1：それは[line 3]
+？2：少なくとも、車は空には飛ばないかな
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_MAP_120 1.0 0.5]
+[wait fade]
+
+[scene 216701]
+
+[masterBranch _Male07 _Female07]
+
+[label _Male07]
+
+[pictureFrame cut063_cinema]
+
+[branch select_end07]
+
+[label _Female07]
+
+[pictureFrame]
+
+[label select_end07]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_MAP_120 1.0 1.0]
+[wait fade]
+
+＠蒼崎青子
+細かな日用品は[#映画:ゆ　め]の世界を超えたかもね。[r]携帯端末の進歩とかすごいわよー？
+[k]
+
+＠蒼崎青子
+『車が空を飛ぶ』より革新的だと思うわ。[r]世界を縮める、という意味でね。
+[k]
+
+＠久遠寺有珠
+リデルも言っていたわね。
+[k]
+
+＠久遠寺有珠
+『夢のような世界になった代わりに、[r]　夢は語られなくなった』って。
+[k]
+
+＠久遠寺有珠
+わたしは違うと思うけど。
+[k]
+
+＠久遠寺有珠
+どんな時代でも、どんな検閲があっても、[r]夢を語る人間は絶えない。
+[k]
+
+＠久遠寺有珠
+きっと、[#託:たく]す先が代わるだけよ。[r]夢を受け取る側が、その時代の人である必要はないわ。
+[k]
+
+＠マシュ
+託す先が代わる……
+[k]
+
+＠マシュ
+自分たちの時代が……その人が生きている世界が、[r]進化の袋小路に入ったものだとしても[line 3]
+[k]
+
+＠マシュ
+そこで生まれたものは次の時代に認められ、[r]愛される。そういう事でしょうか？
+[k]
+
+＠マシュ
+……たとえ。その世界が、『正しくないから』と[r]消されてしまったものだとしても？
+[k]
+
+＠久遠寺有珠
+マシュさんはロマンチストね。
+[k]
+
+＠久遠寺有珠
+わたしの持っているイメージとは違うけれど、[r]いまの喩えはとてもいい。
+[k]
+
+＠久遠寺有珠
+一つの文化を踏みつけて、新しい文化が生まれる。[r]わたしたちの歴史はそういうものだけど[line 3]
+[k]
+
+＠久遠寺有珠
+行き場を無くした夢を受け取るヒトは必ずいる。[r]貴女がそう願う事自体が、世界の拡張に繋がるでしょう。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_MAP_120 1.0 0.5]
+[wait fade]
+
+[scene 216700]
+
+[masterBranch _Male08 _Female08]
+
+[label _Male08]
+
+[pictureFrame]
+
+[branch select_end08]
+
+[label _Female08]
+
+[pictureFrame cut063_cinema]
+
+[label select_end08]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_MAP_120 1.0 1.0]
+[wait fade]
+
+＠静希草十郎
+むう。なにか向こうで難しい話をしているけど、[r]こっちでもする？
+[k]
+
+[masterBranch _Male09 _Female09]
+
+[label _Male09]
+
+？1：投資の話ですか。いいでしょう
+？2：仮想通貨の話ですね。ドンとこい
+
+？！
+
+[branch lblConf09]
+[label _Female09]
+
+[label lblConf09]
+
+＠槻司鳶丸
+しなくていい、しなくていい。[r]野暮な話を振った俺が悪かった。
+[k]
+
+＠槻司鳶丸
+というよりだ。未来がどれだけ発展しようが、[r]今の俺たちには敵わない。
+[k]
+
+＠槻司鳶丸
+満天の星の下で、[r]高級旅館の露天風呂を貸し切って、
+[k]
+
+＠槻司鳶丸
+気の合う仲間と風呂に入ってるんだぞ？[r]これ以上の贅沢がどこにある！
+[k]
+
+＠槻司鳶丸
+将来の話はまた今度、それぞれの時代でな。[r]今だけは、今あるものを楽しもうぜ。
+[k]
+
+[messageOff]
+[wt 1.0]
+[wipeout rectangleStripUpToDown 1.5 1.0]
+[bgm BGM_MAP_120 2.0 0.2]
+[bgmStop BGM_MAP_120 2.5]
+[wait wipe]
+
+
+[pictureFrame]
+
+[scene 217201]
+[wt 2.0]
+
+[charaFadein N 0.1 0,-280]
+[charaMove N 0,-320 8.5]
+
+[wipein rectangleStripDownToUp 1.5 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_202 0.1]
+[wt 3.0]
+
+[fadeout black 1.5]
+[bgm BGM_EVENT_202 1.5 0.5]
+[wait fade]
+
+[charaFadeout N 0.1]
+
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_202 1.0 1.0]
+[wait fade]
+
+＠
+こうして[#椀々:わんわん]様を巡る2001年の[r][#隈乃:くまの]旅館の事件は幕を閉じた。
+[k]
+
+＠
+過去・現在・未来。[r]それぞれ異なる世界から集まった男女は、
+[k]
+
+＠
+星空を見上げながらそれぞれの時代に思いを馳せ、[r]同時に、自らが生きる日常を噛みしめた。
+[k]
+
+＠
+[#椀々:わんわん]様は正体不明のまま、[r]犯人の行動は意味不明のまま、
+[k]
+
+＠
+地球最後の夜は更けていった。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_202 2.0]
+[wt 2.8]
+
+＠
+翌朝。[r]大浴場で、蒼崎青子の死体が発見された。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

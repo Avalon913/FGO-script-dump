@@ -1,0 +1,585 @@
+
+
+＄94-14-02-03-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257800 1 マシュ]
+[charaSet B 6048001 1 ロクスタ]
+[charaSet C 1098213800 1 飛竜]
+[charaSet D 6031300 1 刑部姫]
+[charaSet E 4044000 1 ニキチッチ]
+[charaSet F 5058001 1 小野小町]
+[charaSet G 1098260500 1 ？？？]
+[charaSet H 1098260500 1 ？？？]
+[charaSet I 6008000 1 クレオパトラ]
+[charaSet J 25004001 1 楊貴妃]
+[charaSet K 1098315800 1 キラキラエネミー]
+
+[imageSet M cut651_waka04 1]
+
+[sceneSet N 203900 1]
+[charaScale N 1.3]
+[sceneSet O 203900 1]
+[charaScale O 1.3]
+
+[sceneSet P 158000 1]
+[charaScale P 1.3]
+[sceneSet Q 158000 1]
+[charaScale Q 1.3]
+
+[charaSet R 98115000 1 エフェクト用ダミー1]
+[charaPut R 1]
+[charaEffect R bit_talk_charge_gld]
+[charaSet S 98115000 1 エフェクト用ダミー2]
+[charaSet T 98115000 1 エフェクト用ダミー3]
+
+[scene 158000]
+
+[charaTalk depthOff]
+[charaDepth R 1]
+[charaDepth I 2]
+[charaDepth S 3]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+[wt 0.5]
+
+[se ad626]
+[seVolume ad626 0 0]
+[seVolume ad626 1.0 0.3]
+[cueSe SE_21 21_ad1117 1.0 0.2]
+[fadein black 1.0]
+[wait fade]
+[wt 0.3]
+
+＠クレオパトラ
+……なるほど、理解しました。
+[k]
+
+[messageOff]
+[seStop ad626 1.5]
+[cueSeStop 21_ad1117 1.5]
+[charaEffectStop R bit_talk_charge_gld]
+[wt 1.7]
+
+＠クレオパトラ
+小野小町……[r]貴女はそういう[#女性:ひ　と]なのね。
+[k]
+
+[bgm BGM_EVENT_147 0.1]
+
+[charaFace I 1]
+＠クレオパトラ
+いいでしょう！[r]貴女の輝き、確かに見せてもらいました！
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ade1060]
+[charaPut S 1]
+[charaEffect S bit_talk_glitter_parts]
+[wt 2.0]
+
+＠クレオパトラ
+どうぞ！　受け取りなさい！
+[k]
+
+[messageOff]
+[charaMoveEase S 700,0 1.5 easeOutQuad]
+[wt 0.5]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[cueSeVolume 24_ade1060 0.5 0.5]
+[wait wipe]
+
+[charaPut S -700,0]
+[charaFadeout I 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[subCameraOn 2]
+[charaLayer P sub #A]
+[charaLayer Q sub #B]
+[charaLayer I sub #B]
+
+[subCameraFilter #A normal]
+[subCameraFilter #B maskEdge cut359_mask10 5 0,0,0,255 0]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaDepth P 1]
+[charaDepth F 2]
+[charaDepth S 3]
+[charaFadein P 0.1 -120,-250]
+
+[charaDepth Q 1]
+[charaDepth I 2]
+[charaDepth J 3]
+[charaScale I 1.2]
+[charaFace I 2]
+[charaFadein Q 0.1 200,-50]
+[charaFadein I 0.1 -120,280]
+[wt 0.5]
+
+[charaMoveEase S 0,0 1.5 easeOutQuad]
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[cueSeVolume 24_ade1060 0.5 1.0]
+[wait wipe]
+[cueSeStop 24_ade1060 1.5]
+[wt 2.0]
+
+[charaPut S 2000,2000]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaLayer F sub #A]
+[charaLayer S sub #A]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠飛竜
+よく分からないけど……[r]納得してくれたみたいッスね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 16]
+[charaFadein J 0.1 1]
+
+＠楊貴妃
+えっと……終わりました？
+[k]
+
+[charaFace J 8]
+＠楊貴妃
+良かった～。[r]お疲れ様です～……。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaLayer J sub #B]
+[charaScale J 1.2]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠ロクスタ
+……結局、何のためのバトルだったんです？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[charaMoveReturn D 0,-3 0.5]
+
+[charaScale F 1.15]
+[charaScale S 1.2]
+[charaFace F 15]
+[charaFadein F 0.1 0,50]
+[charaPut S 0,50]
+
+＠刑部姫
+ぜえ、はあ……[wt 0.5][charaMoveReturn D 0,-3 0.5]ゼェ……。[r]と、とりあえず、[#姫:わたし]すっごい疲れたぁ……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ニキチッチ
+よき戦いだったぞ！
+[k]
+
+＠ニキチッチ
+クレオパトラが必要と感じ、小町が応えた。[r]であればそれ以上の理由は不要！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ともあれ、[r]これで３つめのパーツを回収です！
+[k]
+
+[messageOff]
+[charaTalk off]
+[cueSe SE_24 24_ade1060 0.8 1.0]
+[charaMoveEase P -120,-300 0.8 easeOutSine]
+[charaMoveEase F 0,0 0.8 easeOutSine]
+[charaMoveEase S 0,0 0.8 easeOutSine]
+[subRenderFadein #A 0.6 0,0]
+[wt 1.3]
+
+[cueSeVolume 24_ade1060 0.5 0.7]
+[charaFadeout A 0.1]
+[charaTalk on]
+[charaTalk F]
+
+＠小野小町
+……あたしの、欠片。
+[k]
+
+[messageOff]
+[se ad800]
+[seStop ad800 0.5]
+[charaMoveScale F 1.2 0.5]
+[wt 0.7]
+
+[bgmStop BGM_EVENT_147 1.5]
+
+[seStop 24_ade1060 0.8]
+[charaTalk I]
+[charaMove P 120,-300 0.6]
+[charaMove F 240,0 0.6]
+[charaMove S 240,0 0.6]
+[subRenderFadein #B 0.4 -432,-300]
+[subRenderMove #B -192,-300 0.6]
+[wt 0.6]
+
+＠クレオパトラ
+[line 3]お待ちなさい。
+[k]
+
+[charaTalk F]
+[charaFace F 8]
+
+＠小野小町
+…………？
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+
+＠クレオパトラ
+それは、まぎれもなく貴女の輝き。[r]ですが……
+[k]
+
+＠クレオパトラ
+分かっているのかしら？
+[k]
+
+＠クレオパトラ
+美しく在るものが。輝けるものが。[r]必ずしも[#佳:よ]いものとは限らないことを[line 3]
+[k]
+
+[charaTalk F]
+
+＠小野小町
+……。[r]……。
+[k]
+
+＠小野小町
+どういう、ことでしょうか？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 -120,280]
+
+＠楊貴妃
+…………。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 -120,280]
+
+＠クレオパトラ
+気をつけることね。[r]貴女の輝きに、貴女自身が呑み込まれないように。
+[k]
+
+[charaTalk F]
+[charaFace F 0]
+
+＠小野小町
+……おっしゃる意味は分かりませんが、[r]お言葉は覚えておきます。
+[k]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+[charaFaceFade F 11 0.2]
+
+＠小野小町
+では。
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ade1060]
+[charaFaceFade F 15 0.2]
+[wt 1.2]
+[se ad800]
+[seStop ad800 0.5]
+[charaMoveScale F 1.25 0.5]
+[wt 0.8]
+
+[se ad732]
+[fadeout white 0.7]
+[cueSeStop 24_ade1060 3.0]
+[wait fade]
+
+[charaEffectDestroy S bit_talk_glitter_parts]
+
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout F 0.1]
+[charaFadeout I 0.1]
+[charaScale F 1.0]
+[charaScale I 1.0]
+[charaScale S 1.0]
+
+[charaLayer P normal]
+[charaLayer Q normal]
+[charaLayer F normal]
+[charaLayer I normal]
+[charaLayer J normal]
+[charaLayer S normal]
+[subCameraOff]
+
+[scene 10001]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[cueSe SE_25 25_ade1187]
+[effect bit_talk_lotus_flower_opens]
+[wt 2.5]
+
+[fadeout white 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_lotus_flower_opens]
+
+[scene 158000]
+[charaFadein M 0.1 0,-200]
+[charaEffectEdgeBlur M FFFFFF FFFFFF 3 3]
+[wt 1.0]
+
+[cueSe SE_22 22_ade727 1.8 0.7]
+[fadein white 0.7]
+[wait fade]
+
+
+[wt 3.0]
+
+[wait touch]
+
+
+[se ad735]
+[seVolume ad735 0 0.6]
+[se ade310]
+[seVolume ade310 0 0.8]
+[effect bit_talk_gavel_hit]
+[effect bit_talk_gavel_smoke]
+[wt 0.2]
+
+[charaFadeout M 0]
+[charaEffectEdgeBlurDestroy M]
+[wt 0.3]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[wt 1.0]
+
+[bgm BGM_BATTLE_107 0.1]
+
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut T 1]
+[charaEffect T bit_talk_41_fs]
+[charaMoveScale K 1.6 0.2]
+[charaMove K 0,100 0.2]
+[blur motion 0.3 3 100 0.5 0.5 0.02 200]
+[wt 0.7]
+
+？1：わっ！
+
+？2：キラキラがこっちに……！
+？！
+
+＠マシュ
+先輩！？
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1178]
+[fadeout white 1.0]
+[bgmStop BGM_BATTLE_107 1.5]
+[wait fade]
+
+[blurOff motion 0.1]
+[charaFadeout K 0.1]
+[charaEffectDestroy T bit_talk_41_fs]
+
+[scene 10001]
+[wt 2.0]
+
+[fadein white 1.0]
+[wait fade]
+
+
+＠
+[line 3]百夜。
+[k]
+
+＠
+百夜、あたしの下へと通い詰めてくれたのなら、[r]きっとあなたと添い遂げましょう[line 3]
+[k]
+
+[messageOff]
+[fadeout white 0.2]
+[wait fade]
+
+[scene 203900]
+[pictureFrame cut063_cinema]
+[charaDepth F 1]
+[charaDepth N 2]
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 0,-50]
+[charaFadein N 0.1 -50,-300]
+[effect bit_talk_snowstorm_01]
+[wt 1.0]
+
+[se ad555]
+[seVolume ad555 0 0]
+[seVolume ad555 1.5 0.4]
+[charaMove N 50,-300 15.0]
+[fadein white 1.5]
+[wait fade]
+[wt 2.5]
+
+[seVolume ad555 1.0 0.2]
+[charaFadeout N 0.8]
+[wt 1.0]
+[sceneSet N 203900 1]
+[charaScale N 1.3]
+
+＠小野小町
+[#此処:こ　こ]は……
+[k]
+
+＠小野小町
+この光景は……[r]あたしの……
+[k]
+
+＠小野小町
+………………………………………………………………[r]………………………………………………………………。
+[k]
+
+[charaFace F 6]
+
+＠小野小町
+いいえ……これは……
+[k]
+
+[charaTalk G]
+
+＠？？？
+あかつきの……
+[k]
+
+[bgm BGM_MAP_67 0.1]
+
+[messageOff]
+[charaDepth O 2]
+[charaDepth H 3]
+[charaDepth N 4]
+[charaDepth G 5]
+
+[charaScale G 1.2]
+[charaFace G 0]
+[charaFadein N 0.6 -190,-150]
+[charaFadein G 0.6 0,230]
+[charaMove N -190,-200 20.0]
+[charaMove G 0,180 20.0]
+[wt 0.8]
+
+[charaTalk off]
+[charaScale H 1.1]
+[charaFace H 0]
+[charaFadein O 0.1 50,-250]
+[charaFadein H 0.1 0,-40]
+[charaFace F 16]
+
+＠？？？
+[#暁:あかつき]の　[#鴫:しぎ]の[#羽:はね]がき　[#百羽:ももは]がき……
+[k]
+
+＠？？？
+…………………………。
+[k]
+
+[messageOff]
+[charaMoveEase O 50,-300 1.3 easeOutCubic]
+[charaMoveEase H 0,-90 1.3 easeOutCubic]
+[charaFadeout N 0.5]
+[charaFadeout G 0.5]
+[wt 1.5]
+
+[charaEffect H bit_talk_charge_aura_05]
+[cueSe SE_23 23_ade908]
+[cueSeVolume 23_ade908 0 0]
+[wt 0.1]
+[cueSeVolume 23_ade908 0.6 1.0]
+[wt 2.3]
+
+＠？？？
+暁の　[#榻:しじ]の[#端:はし]がき　[#百夜:ももよ]かき……[r]君が来ぬ夜は　[#我:わ]れぞ[#数:かず]かく
+[k]
+
+[messageOff]
+[cueSeStop 23_ade908 1.0]
+[charaFadeout O 0.5]
+[charaFadeout H 0.5]
+[wt 0.2]
+[charaEffectDestroy H bit_talk_charge_aura_05]
+
+[wt 0.5]
+
+＠小野小町
+ああ[line 3]あなたは……
+[k]
+
+＠小野小町
+[line 3][#深草少将:ふかくさのしょうしょう]さま。
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad555 0.5]
+[bgmStopEnd BGM_MAP_67 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

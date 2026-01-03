@@ -1,0 +1,519 @@
+
+
+＄94-14-15-01-3-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098224300 1 岡田以蔵]
+[charaSet B 1057000 1 セタンタ]
+[charaSet C 28010001 1 ダンテ]
+[charaSet D 28010001 1 ダンテ（演出用）]
+[charaSet E 1098257810 1 マシュ]
+[charaSet F 1098211400 1 客]
+[charaSet G 1098255110 1 ゴルドルフ]
+
+[charaSet H 1098319100 1 種火の腕1]
+[charaSet I 1098319100 1 種火の腕2]
+[charaSet J 1098319100 1 種火の腕3]
+
+[sceneSet O 243200 1]
+[sceneSet P 183900 1]
+[sceneSet Q 183900 1]
+
+[sceneSet X 10000 1]
+[charaDepth X 9]
+[charaScale X 1.1]
+
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用2]
+
+[charaPut Y 2000,2500]
+[charaEffect Y bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 243501]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk off]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+[se ad1006]
+[charaFace A 5]
+[charaMoveScaleEase A 1.2 0.25 easeOutQuint]
+[charaMoveEase A 0,30 0.25 easeOutQuint]
+[charaFadeout A 0.25]
+[wt 0.25]
+
+[charaFace X 0]
+[charaFadein X 0.3 1]
+[wt 0.3]
+
+[se ad1053]
+[fowardEffect bit_talk_quick_slash]
+[wt 0.8]
+
+[se ad878]
+[fadeout white 0.1]
+[seStop ad1053 0.3]
+[bgmStop BGM_EVENT_80 1.5]
+[wait fade]
+
+[charaFadeout X 0]
+[fowardEffectDestroy bit_talk_quick_slash]
+
+[charaTalk depthOff]
+[charaDepth H 2]
+[charaDepth J 3]
+[charaDepth I 4]
+
+[charaScale H 1.05]
+[charaScale I 1.05]
+[charaScale J 1.05]
+
+[charaFace H 0]
+[charaFadein H 0 -350,75]
+[charaFace I 0]
+[charaFadein I 0 0,100]
+[charaFace J 0]
+[charaFadein J 0 350,75]
+
+[charaShake H 0.02 2 3 0.8]
+[charaShake I 0.02 3 2 0.8]
+[charaShake J 0.03 3 3 0.8]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.95]
+
+[se ad42]
+[charaSpecialEffect H enemyErasure 0,0 1.2]
+[charaSpecialEffect I enemyErasure 0,0 1.2]
+[charaSpecialEffect J enemyErasure 0,0 1.2]
+[wait charaSpecialEffect H]
+[wt 1.1]
+
+
+[charaTalk on]
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+[se ad954]
+[charaMoveReturn A 0,-7 0.7]
+[wt 1.2]
+
+[bgm BGM_EVENT_194 0.1]
+
+[charaFace A 11]
+＠岡田以蔵
+手ごたえ無かったのう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+何だこいつら……？
+[k]
+
+？1：……弱かった……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+フフ……確かに……。[r]これでは雑霊と変わりない……。
+[k]
+
+[charaFace C 15]
+
+＠ダンテ
+とはいえ、そもそも何故こんな場所に出現したのか、[r]そちらの方が……重要かもしれない……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠マシュ
+そうですね。分析してみましたが、[r]今の敵性反応はあくまで残り火……。
+[k]
+
+[charaFace E 6]
+＠マシュ
+つまり、もっと大きな“何か”が現れて、[r]その[#残滓:ざんし]として彼らが存在しただけ、のような……。
+[k]
+
+＠マシュ
+そんな感覚がします。
+[k]
+
+[charaFadeout E 0.1]
+[charaPut Y 2000,2000]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+フフ……感覚……いいね……。[r]生物が生きるために、絶対に必要なもの……。
+[k]
+
+[charaFace C 0]
+＠ダンテ
+我々は直感によって、霊長類としての優位性を[r]保っている、と言っても……過言ではあるけど……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+そこは自信を持って言えないのかよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+最新の生物学の知識が身についている訳でもないから……。
+[k]
+
+[charaFace C 10]
+＠ダンテ
+『あ、2017年の学説では違うんですよ』[r]とか言われたら羞恥で死ぬ……フフ……。
+[k]
+
+？1：心配性だ……
+？！
+
+[charaFace C 0]
+
+＠ダンテ
+その心配性の私からなんだけど……。[r]何か……こう……。
+[k]
+
+[charaFace C 16]
+
+＠ダンテ
+不安じゃないか……？[r]漠然……漠然とした何か……。
+[k]
+
+＠ダンテ
+[#何かが間違っている]みたいな……。
+[k]
+
+？1：確かにそんな感じは……
+
+[charaFace C 2]
+
+＠ダンテ
+フフ……気が合う……嬉しいけど、[r]状況的にはあまり嬉しくない……。
+[k]
+
+？2：あまり感じないかな？
+
+[charaFace C 18]
+
+＠ダンテ
+そうか……私の[#杞憂:きゆう]であればいいのだが……。
+[k]
+
+？！
+
+[charaFace C 0]
+
+＠ダンテ
+ともかく……分電盤の修理は何とかなりそうだ……。[r]レバーを引いて……これで……何とか……。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_194 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaFadeout C 0.1]
+
+[cueSe Battle bac363]
+[wt 1.2]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.05]
+
+[se ad813]
+[wt 0.65]
+
+[cueSe SE_21 21_ade645]
+[scene 243500 0.2]
+[wt 0.3]
+[scene 243501 0.2]
+[wt 0.5]
+[cueSe SE_23 23_ade842]
+[scene 243500 0.1]
+[wt 0.5]
+[scene 243501 0.25]
+[wt 0.6]
+[se ad593]
+[scene 243500 0.3]
+[wt 1.2]
+
+[bgm BGM_EVENT_77 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠岡田以蔵
+おう、ついたかえ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+……少々不安定だが……何とかなるか……。[r]修理業者を改めて呼ぶべきだな……。[wt 0.4][cueSe SE_23 23_ade842][scene 243501 0.2][wt 0.3][cueSeStop 23_ade842 0.1][scene 243500 0.2]
+[k]
+
+？1：どうにかなるといいけど……
+？！
+
+[messageOff]
+[charaTalk Y]
+[bgmStop BGM_EVENT_77 1.5]
+[se ad882]
+[seVolume ad882 0 0.5]
+[wt 1.2]
+
+＠E：客
+だ、誰か助けてーーー！
+[k]
+
+
+[charaTalk C]
+[charaFace C 19]
+[charaShake C 0.02 2 2 0.35]
+＠ダンテ
+！？
+[k]
+
+？1：行こう！
+？！
+
+[messageOff]
+[charaFace C 0]
+[cueSe SE_23 23_ad1292]
+[wipeout leftToRight 0.8 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+
+[scene 183900]
+[wt 0.8]
+
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[cueSeStop 23_ad1292 0.2]
+[wt 0.5]
+
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠ダンテ
+フフ……コンシェルジュ、推参！[r]何かありましたか……？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[subCameraOn 1]
+[charaLayer P sub #A]
+[charaScale P 1.6]
+
+[charaFace P 0]
+[charaFadein P 0.1 -700,-80]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 255,255,255,255 0]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 -100,0]
+
+＠客
+そこのスイートルームで、突然爆音が……！[subRenderFadeinFSSideR #A 0.3 315,-330][subRenderMoveFSSideR #A 300,-330 0.3]
+[k]
+
+？1：爆音……！？
+？！
+
+[subRenderFadeout #A 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+わかりました。[r]ひとまず、あなたは避難してください……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠客
+は、はい……！[wt 0.7][charaFace F 0][r]あの……コンシェルジュさん……？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+フフ……はい。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaDepth C 2]
+[charaDepth Q 3]
+[charaDepth D 4]
+[charaDepth F 5]
+
+[charaScale Q 1.2]
+[charaScale F 1.2]
+[charaScale D 1.2]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFace D 3]
+[charaFadein F 0.7 -250,0]
+[charaFadein D 0.7 250,0]
+[charaFadein Q 0.7 0,-260]
+[wt 0.7]
+
+[charaDepth B 2]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+[charaFadeout C 0.1]
+[wt 0.6]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+＠客
+よろしければ、この後でお食事でも[line 3]
+[k]
+
+[charaTalk D]
+[charaFace D 10]
+＠D：ダンテ
+フフ……めん……[wt 0.8][charaFace D 1]仕事がありますので……！
+[k]
+
+？1：（今めんどくさいって言おうとしたな……）
+？！
+
+[messageOff]
+[charaTalk D,B]
+[charaFadeout D 0.6]
+[charaFadeout F 0.6]
+[charaFadeout Q 0.6]
+[wt 0.8]
+
+＠セタンタ
+（今めんどくさいって言おうとしたな……）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+
+＠ゴルドルフ
+（苦手そうだもんなぁ……人付き合い……）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut Y 2000,2000]
+
+[charaScale F 1.0]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠客
+あぁん……つれない人……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+失礼……フフ……！
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_HALLOWEEN_2021_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

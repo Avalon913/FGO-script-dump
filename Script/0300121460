@@ -1,0 +1,533 @@
+
+＄03-00-12-14-6-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1043000 1 ローラン]
+[charaSet B 4004001 1 アストルフォ]
+[charaSet C 7007001 1 ヴラド三世]
+[charaSet D 1098234430 1 クラス・ランサー]
+[charaSet E 1098234530 1 クラス・キャスター]
+[charaSet F 1098234730 1 クラス・アサシン]
+[charaSet G 1098234820 1 クラス・バーサーカー]
+[charaSet H 1098234820 1 クラス・バーサーカー2]
+[charaSet I 1098234820 1 クラス・バーサーカー3]
+
+[charaSet S 1098124510 1 通信用ダミー]
+[charaSet T 1098124510 1 通信用ダミー]
+
+[imageSet O back10000 1 1]
+[charaScale O 1.05]
+[imageSet P back10000 1 1]
+[charaScale P 1.05]
+[scene 154401]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ローラン
+こっちの攻撃、厳しいな……。
+[k]
+
+＠ローラン
+正面から力押しでいけるタイプが[r]揃ったか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠クラス・ランサー
+こちら西門！[r]バーサーカーの宝具が雨あられと連発されています！
+[k]
+
+＠クラス・ランサー
+身動きが取れず、門が壊れそうです……！[r]至急、増援を！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ローラン
+すぐに行く！[r]アストルフォ、ここは任せるぞ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠アストルフォ
+オーケー、引き受けた！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ローラン
+アサシン！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠クラス・アサシン
+はっ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ローラン
+『気配遮断』で後ろを[#攪乱:かくらん]しろ！
+[k]
+
+＠ローラン
+無理して[#殺:と]る必要はない、[r]居ると思わせるだけでいい！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠クラス・アサシン
+了解！
+[k]
+
+[messageOff]
+[cueSe Battle ba4]
+[wt 0.1]
+[charaFadeout F 0.7]
+[wt 1.6]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ローラン
+じゃあ、ちょっと行ってくらぁ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠アストルフォ
+行ってらっしゃい、晩ご飯はカレーだよ！[r]ツクツクボウシが鳴く前に帰ってきてね！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ローラン
+おまえはホントに訳分からないトークを[r]かましてくるな！？
+[k]
+
+
+[messageOff]
+[wt 0.05]
+
+[charaDepth A 5]
+[charaDepth S 8]
+[charaDepth T 2]
+
+[se ad678]
+[charaPut S 1]
+[charaEffect S bit_talk_quickmove]
+[wt 0.1]
+[charaSpecialEffect A erasureReverse 1 0.2]
+[wt 0.6]
+
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[bgm BGM_EVENT_80 0.5 0.5]
+[wait wipe]
+
+[charaEffectDestroy S bit_talk_quickmove]
+
+[scene 154100]
+
+[wt 0.3]
+
+[wt 0.2]
+
+
+[bgm BGM_EVENT_80 0.5 1.0]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 0.4 0.5]
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[seStop ad556 1.5]
+[wt 1.0]
+
+[se ad728]
+[seVolume ad728 0 0.2]
+[cueSe Servants_104800 m42604]
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 0,0]
+[charaMove A 0,-20 0.2]
+[charaEffect S bit_talk_impactlanding 0,-250]
+[shake 0.05 0 2 1.0]
+[wt 2.5]
+
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+[effectDestroy bit_talk_impactlanding]
+
+
+[charaTalk off]
+[charaDepth G 6]
+[charaDepth H 5]
+[charaDepth I 4]
+
+[se ade264]
+[charaFace G 2]
+[charaFace H 2]
+[charaFace I 2]
+[charaFadein G 0.1 1]
+[charaFadeinFSL H 0.1 -350,0]
+[charaFadeinFSR I 0.1 350,0]
+＠クラス・バーサーカー
+[i berserker_language_1]
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ローラン
+うるせえ俺も狂乱っぷりで負けてらんねー！[r]だって狂えるローランだからね！
+[k]
+
+[messageOff]
+[se ad678]
+[wt 0.1]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,14 0.2]
+[charaFadeout A 0.2]
+[blur motion 0.2 4 10 0.5 0.6 0.05 100]
+[wt 0.2]
+
+[blurOff motion 0.1]
+[wt 0.4]
+[charaScale A 1.0]
+
+＠ローラン
+デ[messageShake 0.05 4 3 0.3][cueSe Battle bac137][effect bit_talk_x_slash01]ュランダル！　[wt 0.5]デ[messageShake 0.05 4 3 0.3][cueSe Battle bac143][effect bit_talk_x_slash02 0,0 V]ュランダル！　[wt 0.5]デ[messageShake 0.05 4 3 0.3][cueSe Battle bac128][effect bit_talk_x_slash02]ュランダル！[wt 0.5][r]膝[messageShake 0.05 4 3 0.3][cueSe Battle bac150][effect bit_talk_14]蹴り！　[wt 0.4]デ[messageShake 0.05 4 3 0.3][cueSe Battle bac266][effect bit_talk_x_slash03]ュランダル！　[wt 0.5]当[cueSe Battle bac8][effect bit_talk_13]て身、[wt 0.5]か[messageShake 0.05 4 3 0.3][cueSe Battle bac211][effect bit_talk_h_slash01_fs]らのデュランダル！
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠クラス・ランサー
+当て身、いります？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ローラン
+いらないな！
+[k]
+
+[charaFace A 0]
+＠ローラン
+でも暴れてる時って、なんかこう、[r]訳分からない攻撃とかしたくならないか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠クラス・ランサー
+いやアンタだけだと思います多分。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ローラン
+そうかなー！[r]ウラー！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[bgm BGM_EVENT_80 0.5 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 154401]
+[wt 0.4]
+
+[bgm BGM_EVENT_80 0.5 1.0]
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アストルフォ
+おー、ローランが暴れてる暴れてる。[r]そこのキャスターとアサシン、いいかな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth E 4]
+[charaDepth F 5]
+
+[charaFace E 0]
+[charaFace F 0]
+[charaFadeinFSR F 0.1 2]
+[charaFadeinFSL E 0.1 0]
+＠二人
+はっ。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アストルフォ
+適当なとこで[line 3][wt 0.5][charaFace B 4]んー、肩で息し始めたら、[r]ローランを引っ張って休ませて。
+[k]
+
+＠アストルフォ
+アイツ、ああ見えて滅茶苦茶魔力消費してるから、[r]ヘマすると、マズいことになる。
+[k]
+
+＠アストルフォ
+生前とは違うってのに、[r]興奮すると訳分からなくなるからなー。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠クラス・キャスター
+了解です。[r]鎮静効果とか、そういう魔術掛けていいです？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠アストルフォ
+あ、ダメダメ。[r]そういうのあんまり効果ない。
+[k]
+
+＠アストルフォ
+とりあえず……[wt 0.6][charaFace B 1]水ぶっかけてみて！[r]そしてアサシンが連れ戻す！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠クラス・キャスター
+マジかよ。[r]……了解！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_80 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 6]
+[charaDepth F 4]
+[charaDepth O 9]
+[charaDepth P 9]
+[charaDepth D 5]
+[charaDepth S 3]
+[charaDepth C 2]
+
+[charaFadein O 0.1 0,-760]
+[charaFadein P 0.1 0,760]
+
+
+[scene 154100]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠クラス・ランサー
+ダメだ、数が違いすぎる！[r]ローラン殿！　ここから先は[line 3]
+[k]
+
+[se ad416]
+[seVolume ad416 0 0.1]
+＠クラス・ランサー
+ってああ！[r]水ぶっかけられたローラン殿が引き摺られていく！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 5]
+[charaFace F 0]
+[charaFadein A 0.2 -200,-50]
+[charaFadein F 0.2 100,-50]
+[charaShake A 0.02 2 3 0.5]
+[charaMove F 150,-50 0.4]
+[charaMove A -150,-50 0.4]
+[wt 0.6]
+
+[charaTalk on]
+＠ローラン
+ま、まだ戦える、戦えるぞ俺は……！
+[k]
+
+＠クラス・アサシン
+四の五の言わずに一時撤退です撤退！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠クラス・ランサー
+畜生もうおしまいかー！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad922]
+[wt 0.3]
+[wt 0.1]
+[wt 0.6]
+＠ヴラド三世
+西門の守備隊よ、[r]そちらに増援を向かわせた。
+[k]
+
+
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠クラス・ランサー
+何と！[r]そ、それはありがたい！
+[k]
+
+＠クラス・ランサー
+しかし生半可な増援では、[r]焼け石に[line 3]
+[k]
+
+[messageOff]
+[se ad133]
+[charaMove O 0,-850 1.0]
+[charaMove P 0,850 1.0]
+[wt 1.5]
+
+？1：お手伝いします！
+？！
+
+[bgm BGM_EVENT_63 0.1]
+
+＠クラス・ランサー
+キャスターか……！
+[k]
+
+＠クラス・ランサー
+それでできることは、結界か？[r]あるいは攻撃か？
+[k]
+
+＠クラス・ランサー
+ともかく支援を[line 3]
+[k]
+
+？1：という訳で召喚します！
+？！
+
+
+[messageOff]
+[se ad29]
+[se ad476]
+[effect bit_talk_summon_fs]
+[wt 2.5]
+
+[seStop ad476 0.5]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]

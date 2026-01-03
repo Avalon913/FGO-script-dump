@@ -1,0 +1,463 @@
+
+
+
+
+＄94-06-90-14-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1053900 1 徴側]
+[charaSet B 1053910 1 徴弐]
+
+[charaSet C 99502600 1 マシュ]
+[charaSet D 3040001 1 ラムダ]
+[charaSet E 4036000 1 カーミラ]
+[charaSet F 6027000 1 武則天]
+[charaSet G 3032000 1 エレシュキガル]
+
+[charaSet H 1098229800 1 ケルピー]
+
+[charaSet I 1098238610 1 スーパーカー１下]
+[charaSet J 1098238610 1 スーパーカー２下]
+[charaSet K 1098238610 1 スーパーカー３下]
+[charaSet L 1098238600 1 スーパーカー１上]
+[charaSet M 1098238600 1 スーパーカー２上]
+[charaSet N 1098238600 1 スーパーカー３上]
+
+[charaSet P 98115000 1 通信用ノイズ]
+[charaSet Q 98115000 1 エフェクト用]
+
+[ifClear 60068801]
+[charaSet X 1098237900 1 コン１]
+[charaSet Y 1098237900 1 コン２]
+[charaSet Z 1098237900 1 コン３]
+
+[ifClear 60068802]
+[charaSet X 1098237910 1 コン１]
+[charaSet Y 1098237910 1 コン２]
+[charaSet Z 1098237910 1 コン３]
+
+[ifClear 60068803]
+[charaSet X 1098237920 1 コン１]
+[charaSet Y 1098237920 1 コン２]
+[charaSet Z 1098237920 1 コン３]
+
+[ifClear 60068804]
+[charaSet X 1098238000 1 コン１]
+[charaSet Y 1098238000 1 コン２]
+[charaSet Z 1098238000 1 コン３]
+
+[ifClear 60068805]
+[charaSet X 1098238010 1 コン１]
+[charaSet Y 1098238010 1 コン２]
+[charaSet Z 1098238010 1 コン３]
+
+[ifClear 60068806]
+[charaSet X 1098238020 1 コン１]
+[charaSet Y 1098238020 1 コン２]
+[charaSet Z 1098238020 1 コン３]
+
+[ifClear 60068807]
+[charaSet X 1098238100 1 コン１]
+[charaSet Y 1098238100 1 コン２]
+[charaSet Z 1098238100 1 コン３]
+
+[ifClear 60068808]
+[charaSet X 1098238110 1 コン１]
+[charaSet Y 1098238110 1 コン２]
+[charaSet Z 1098238110 1 コン３]
+
+[ifClear 60068809]
+[charaSet X 1098238120 1 コン１]
+[charaSet Y 1098238120 1 コン２]
+[charaSet Z 1098238120 1 コン３]
+
+[else]
+[charaSet X 1098237900 1 コン１]
+[charaSet Y 1098237900 1 コン２]
+[charaSet Z 1098237900 1 コン３]
+
+[endIf]
+
+[charaDepth A 4]
+[charaDepth B 3]
+
+[charaDepth X 4]
+[charaDepth Y 4]
+[charaDepth Z 4]
+[charaDepth I 3]
+[charaDepth J 3]
+[charaDepth K 3]
+[charaDepth L 5]
+[charaDepth M 5]
+[charaDepth N 5]
+
+[charaEffect P bit_talk_10_LowLevel]
+[charaPut P 2000,2000]
+
+
+[scene 147400]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 0,0]
+[wt 0.4]
+
+＠カーミラ
+……Get ready?
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[se adm44 0]
+[seVolume adm44 1.0 1.0]
+[wt 0.7]
+
+[charaFace X 0]
+[charaFadein X 1.0 0,0]
+[charaMoveFSL X -320,0 2.0]
+[charaFace I 0]
+[charaFadein I 0.6 0,0]
+[charaMoveFSL I -320,0 2.0]
+[charaFace L 0]
+[charaFadein L 0.6 0,0]
+[charaMoveFSL L -320,0 2.0]
+[wt 0.1]
+
+[charaFace Y 0]
+[charaFadeinFSR Y 1.0 320,0]
+[charaMove Y 0,0 2.0]
+[charaFace J 0]
+[charaFadeinFSR J 0.6 320,0]
+[charaMove J 0,0 2.0]
+[charaFace M 0]
+[charaFadeinFSR M 0.6 320,0]
+[charaMove M 0,0 2.0]
+[wt 0.2]
+
+[charaFace Z 0]
+[charaFadeinFSR Z 1.0 640,0]
+[charaMoveFSR Z 320,0 2.0]
+[charaFace K 0]
+[charaFadeinFSR K 0.6 640,0]
+[charaMoveFSR K 320,0 2.0]
+[charaFace N 0]
+[charaFadeinFSR N 0.6 640,0]
+[charaMoveFSR N 320,0 2.0]
+[wt 2.5]
+
+[bgm BGM_EVENT_111 0.1]
+
+[charaFace X 1]
+[charaFace Z 1]
+
+＠コンたち
+いぇー！
+[k]
+
+[messageOff]
+
+[se adm44]
+[wt 0.5]
+[charaMoveFSL X -640,0 2.0]
+[charaMoveFSL Y -320,0 2.0]
+[charaMove Z 0,0 2.0]
+[charaMoveFSL I -640,0 2.0]
+[charaMoveFSL J -320,0 2.0]
+[charaMove K 0,0 2.0]
+[charaMoveFSL L -640,0 2.0]
+[charaMoveFSL M -320,0 2.0]
+[charaMove N 0,0 2.0]
+[wt 0.5]
+[charaFadeout X 0.4]
+[charaFadeout Y 0.4]
+[charaFadeout Z 0.4]
+[wt 0.05]
+[charaFadeout I 0.5]
+[charaFadeout J 0.5]
+[charaFadeout K 0.5]
+[charaFadeout L 0.5]
+[charaFadeout M 0.5]
+[charaFadeout N 0.5]
+[wt 1.0]
+
+？1：本当にパンダの乗り物ぐらいの速度で
+？2：のろのろ進んでる……
+？！
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 0,0]
+[charaPut P 0,0]
+
+＠マシュ
+はい。なんだか不思議な光景ですね。
+[k]
+
+＠マシュ
+ジャングルとの相性はよくないと思うのですが、[r]可愛らしいのは確かで……。
+[k]
+
+[charaPut P 2000,2000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,0]
+
+＠カーミラ
+一人一台のミニスーパーカー、壮観ね。
+[k]
+
+＠カーミラ
+スーパーバイザーとしてやってきたのに、[r]この私が先陣を切って走れないのが残念だわ。
+[k]
+
+[charaFace E 4]
+
+＠カーミラ
+ただのジャングルなら木とか薙ぎ倒して走るけど、[r]さすがに水場が多いとちょっとね……。
+[k]
+
+＠カーミラ
+あの子たちのように小回りが利かない以上、[r]水陸両用にカスタマイズしておくべきだったわ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_111 1.0]
+
+[charaTalk depthOff]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFace B 0]
+[charaFadein A 0.1 0,0]
+[charaFadein B 0.1 0,0]
+
+＠徴側
+それで……効果のほどは、どうなんでしょうか？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,0]
+
+＠カーミラ
+フフ。ご覧なさい？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_146 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk X]
+[se adm44]
+[wt 0.5]
+[charaFace X 6]
+[charaFadeinFSR X 0.5 160,0]
+[charaFace I 0]
+[charaFadeinFSR I 0.5 160,0]
+[charaFace L 0]
+[charaFadeinFSR L 0.5 160,0]
+[charaMove X 0,0 1.0]
+[charaMove I 0,0 1.0]
+[charaMove L 0,0 1.0]
+[wt 1.0]
+
+＠X：コン
+わはー。[r]このしんくのぼでぃ、たまらないのだ。
+[k]
+
+[messageOff]
+[charaMoveFSL X -160,0 1.0]
+[charaMoveFSL I -160,0 1.0]
+[charaMoveFSL L -160,0 1.0]
+[wt 0.5]
+[charaFadeout X 0.4]
+[wt 0.05]
+[charaFadeout I 0.5]
+[charaFadeout L 0.5]
+[seStop adm44 1.0]
+[wt 1.0]
+
+[charaTalk Y]
+[se adm44]
+[wt 0.5]
+[charaFace Y 1]
+[charaFadeinFSL Y 0.5 -160,0]
+[charaFace J 0]
+[charaFadeinFSL J 0.5 -160,0]
+[charaFace M 0]
+[charaFadeinFSL M 0.5 -160,0]
+[charaMove Y 0,0 1.0]
+[charaMove J 0,0 1.0]
+[charaMove M 0,0 1.0]
+[wt 1.0]
+
+＠Y：コン
+かぜをきるぜー。
+[k]
+
+[messageOff]
+[charaMoveFSR Y 160,0 1.0]
+[charaMoveFSR J 160,0 1.0]
+[charaMoveFSR M 160,0 1.0]
+[wt 0.5]
+[charaFadeout Y 0.4]
+[wt 0.05]
+[charaFadeout J 0.5]
+[charaFadeout M 0.5]
+[seStop adm44 1.0]
+[wt 1.0]
+
+[charaTalk Z]
+[se adm44]
+[wt 0.5]
+[charaFace Z 0]
+[charaFadeinFSR Z 0.5 160,0]
+[charaFace K 0]
+[charaFadeinFSR K 0.5 160,0]
+[charaFace N 0]
+[charaFadeinFSR N 0.5 160,0]
+[charaMove Z 0,0 1.0]
+[charaMove K 0,0 1.0]
+[charaMove N 0,0 1.0]
+[wt 1.0]
+
+＠Z：コン
+のってく？
+[k]
+
+[messageOff]
+[charaMoveFSL Z -160,0 1.0]
+[charaMoveFSL K -160,0 1.0]
+[charaMoveFSL N -160,0 1.0]
+[wt 0.5]
+[charaFadeout Z 0.4]
+[wt 0.05]
+[charaFadeout K 0.5]
+[charaFadeout N 0.5]
+[seStop adm44 1.0]
+[wt 1.0]
+
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,0]
+
+＠ケルピー
+…………？？？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk B]
+[charaFace A 0]
+[charaFace B 6]
+[charaFadein A 0.1 0,0]
+[charaFadein B 0.1 0,0]
+
+＠徴弐
+ドヤ顔でケルピーの前を往復してるね。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk G]
+[charaFace G 19]
+[charaFadein G 0.1 0,0]
+
+＠エレシュキガル
+心が揺れ動いているような様子は[r]まったくないのだわ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,0]
+
+＠カーミラ
+ホホホ！　当然よ、乗ったら死ぬ水の馬なんかより、[r]時代は真紅のスーパーカー！
+[k]
+
+＠カーミラ
+あまりにもcool ＆ stylish。[r]だからこそ怪盗はそれを乗り物に選ぶ。
+[k]
+
+＠カーミラ
+そのセンスに疑う余地はない[line 3]つまり、[r]負ける要素なんてありはしないわ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_146 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,0]
+
+＠ラムダ
+戦闘は難しめでも、とどめを刺すくらいは[r]乗ったままでもできるでしょう。
+[k]
+
+[charaFace D 1]
+
+＠ラムダ
+コンたちの安全が確保できたのなら、[r]私たちがやるべきコトは変わらないわ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,0]
+
+＠武則天
+うむ！　うっかり背中に乗ってしまわんように[r]注意しながら妖馬退治じゃ！　ゆくぞー！
+[k]
+
+[messageOff]
+
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_24 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

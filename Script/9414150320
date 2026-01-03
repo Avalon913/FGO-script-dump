@@ -1,0 +1,996 @@
+
+
+＄94-14-15-03-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098319200 1 カドック]
+[charaSet B 28010001 1 ダンテ]
+[charaSet C 7042001 1 セレブな客Ａ]
+[charaSet D 7042001 1 セレブな客Ａ（演出用）]
+[charaSet E 1098224300 1 岡田以蔵]
+[charaSet F 1008300 1 ジークフリート]
+[charaSet G 1008300 1 ジークフリート（演出用）]
+[charaSet H 1098255110 1 ゴルドルフ]
+[charaSet I 1057000 1 セタンタ]
+[charaSet J 1098257310 1 ダ・ヴィンチ]
+[charaSet K 1098257810 1 マシュ]
+
+[charaSet L 1098239320 1 カドック（演出用）]
+[charaSet M 1098255100 1 ゴルドルフ（演出用）]
+[charaSet N 1098257300 1 ダ・ヴィンチ（演出用）]
+[charaSet O 1098257800 1 マシュ（演出用）]
+
+[sceneSet Q 243401 1]
+[charaScale Q 1.2]
+[sceneSet R 120200 1]
+[charaScale R 1.2]
+[sceneSet S 243300 1]
+[charaScale S 1.2]
+[sceneSet T 132900 1]
+[charaScale T 1.2]
+
+[sceneSet U 10000 1]
+[charaScale U 1.1]
+
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用2]
+
+[charaPut V 2000,2500]
+[charaEffect V bit_talk_10_LowLevel]
+[charaPut W 2000,2500]
+[charaEffect W bit_sepia01_depth_fs]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 243000]
+
+[se ad518]
+[seVolume ad518 0 0]
+[cueSe SE_21 21_ad1079]
+[cueSeVolume 21_ad1079 0 0]
+[wt 0.1]
+
+[fadein black 1.0]
+[seVolume ad518 1.0 0.3]
+[cueSeVolume 21_ad1079 1.0 0.3]
+[wait fade]
+[wt 1.5]
+
+[bgm BGM_EVENT_147 0.1]
+
+？1：……ダンテ遅い[&な:ね]……
+？！
+
+[charaPut V 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カドック
+見に行った方がよさそうだな。
+[k]
+
+[messageOff]
+[cameraMove 0.35 0,7 1.01]
+[wt 0.5]
+[cameraMove 0.35 0,0 1.01]
+[wt 1.1]
+
+[messageOff]
+[fadeout black 1.0]
+[seStop ad518 1.0]
+[cueSeStop 21_ad1079 1.0]
+[bgmStop BGM_EVENT_147 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaPut V 2000,2500]
+
+[scene 243400]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_167 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+[charaMoveReturn B 0,-8 0.45]
+＠ダンテ
+ぜぇ……[wt 0.55][charaMoveReturn B 0,-8 0.45]ぜぇ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠セレブな客Ａ
+体力がないわね！　ホント、ないわね！
+[k]
+
+[charaFace C 2]
+＠セレブな客Ａ
+コンシェルジュだったら、[r]ある程度の体力は欲しいところよ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠ダンテ
+フフ……まったくごもっとも……。
+[k]
+
+
+
+？1：手伝うよ！
+？！
+
+[charaFace B 5]
+＠ダンテ
+よろしく……フフ……力尽きる……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠セレブな客Ａ
+よし、代わりはあなたなのね？[r]じゃあ、さっさとやってちょうだい。
+[k]
+
+？1：畏まりました！
+？！
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_167 1.0 0.5]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[scene 243401]
+[wt 1.5]
+
+[wipein rollLeft 1.0 1.0]
+[bgm BGM_EVENT_167 1.0 1.0]
+[wait wipe]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠セレブな客Ａ
+……ま、こんなものでしょう。[wt 0.9][charaFace C 0][r]あなたたち、テニスはできるかしら？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠岡田以蔵
+わしはテニスなんぞやらんき。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠ダンテ
+フフ……体を動かすことは苦手で……。
+[k]
+
+？1：できますけど、他に仕事が……
+？2：できません……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠セレブな客Ａ
+でしょうね。
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth Q 3]
+[charaDepth D 4]
+[charaDepth G 5]
+
+[charaScale Q 1.2]
+[charaScale D 1.2]
+[charaScale G 1.2]
+
+[charaTalk C,D]
+[charaFace D 11]
+[charaFadein D 0.7 200,0]
+[charaFadein Q 0.7 100,-260]
+[wt 0.7]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se ad60]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 -250,0]
+[wt 0.4]
+[seStop ad60 0.2]
+[wt 0.6]
+
+＠G：セレブな客Ｂ
+すまない。片付けに手間取った。[r]さあ、テニスをするか。
+[k]
+
+[charaTalk D]
+[charaFace D 1]
+＠D：セレブな客Ａ
+あら、間に合ったわね。[r]ごめんなさい、みなさん。
+[k]
+
+[charaTalk G]
+[charaFace G 0]
+
+＠G：セレブな客Ｂ
+む。もしみなさんとテニスをするなら、[r]俺は遠慮した方が[line 3]
+[k]
+
+[charaTalk D]
+[charaFace D 2]
+
+＠D：セレブな客Ａ
+ど[messageShake 0.05 2 2 1.6][wt 0.05]・[wt 0.05]う[wt 0.05]・[wt 0.05]し[wt 0.05]・[wt 0.05]て[wt 0.05]・[wt 0.05]そ[wt 0.05]・[wt 0.05]う[wt 0.05]・[wt 0.05]な[wt 0.05]・[wt 0.05]る[wt 0.05]・[wt 0.05]の[wt 0.05]・[wt 0.05]か[wt 0.05]・[wt 0.05]し[wt 0.05]・[wt 0.05]ら[wt 0.05]！
+[k]
+
+[charaTalk G]
+[charaFace G 4]
+
+＠G：セレブな客Ｂ
+すまない。俺はテニスがあまり得意ではない。[r]君の足を引っ張るのではないか、と[line 3]
+[k]
+
+[charaTalk D]
+[charaFace D 12]
+
+＠D：セレブな客Ａ
+……もう、いいです！　[wt 0.8][charaFace D 2]もう！
+[k]
+
+[messageOff]
+[se ade423]
+[charaFadeout D 0.4]
+[seStop ade423 1.2]
+[wt 1.2]
+
+[charaDepth F 2]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[wt 0.6]
+
+[charaTalk F]
+[charaFadeout G 0.6]
+[charaFadeout Q 0.6]
+[wt 0.8]
+
+＠F：セレブな客Ｂ
+……。[r]……俺という男は……どうしてこう……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ダンテ
+……。[r]……落ち込んでいるね……。
+[k]
+
+？1：落ち込んでますね……
+？！
+
+[charaFace B 1]
+＠ダンテ
+あちらを見たまえ。顔つきがもう、完全に[r](´･ω･｀)←こんな感じだ……。
+[k]
+
+？1：わかりにくい表現を……
+？！
+
+[charaFace B 17]
+＠ダンテ
+フフ……コホン。[r]それはともかく、話を聞いてみようか……。
+[k]
+
+[charaFace B 3]
+＠ダンテ
+顧客の悩みを聞き、受け止めるのも[r]コンシェルジュの仕事だからね……。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_167 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_194 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠F：セレブな客Ｂ
+[line 3]遅くなったが。俺の名前はジークフリート、[r]彼女はクリームヒルトという。
+[k]
+
+＠ジークフリート
+ああ、ニーベルンゲンの歌の彼らと同じだよ。[wt 1.0][charaFace F 4][r]もっとも俺はそんな大層な人間ではないが……。
+[k]
+
+[charaFace F 0]
+＠ジークフリート
+彼女は見ての通り、誇り高い貴族の一人娘だ。[r]俺は婿として彼女の生家に来た身でね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ダンテ
+……恋愛結婚？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ジークフリート
+彼女はともかく、俺はそのつもりだったが。[r]何しろ、俺は平凡な家庭の出でね。
+[k]
+
+＠ジークフリート
+大学の歴史学で彼女と知り合ったのが、[r]縁だったんだが……。
+[k]
+
+[messageOff]
+[wipeout circleIn 1.0 1.0]
+[bgm BGM_EVENT_194 1.0 0.5]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[scene 10000]
+[wt 0.2]
+
+[wipein circleIn 0.2 1.0]
+[wait wipe]
+
+[fadeout black 0.2]
+[wait fade]
+
+[scene 120200]
+
+[pictureFrameTop cut063_cinema]
+
+[charaDepth R 2]
+[charaDepth W 8]
+
+[charaPut W 1]
+
+[charaScale R 1.2]
+[charaFadein R 0.1 50,-260]
+[wt 0.2]
+
+[charaMove R -50,-260 45.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+＠親族Ａ
+君の御父上の職業は？[r]……ほう、ふむ……何と……炭鉱で働いていたと。
+[k]
+
+＠親族Ａ
+クリームヒルトと釣り合いが取れるとは思えないな。[r]別れた方が賢明だよ、君。
+[k]
+
+＠親族Ｂ
+我々は君たちを差別したい訳ではない。
+[k]
+
+＠親族Ｂ
+だが、違う層の人間が寄り添う難しさは[r]よく理解しているのでね。
+[k]
+
+＠親族Ｃ
+私は叔父として断言する。[r]君たちはすぐに別れたまえ。言い訳は許さん。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[pictureFrameTop]
+
+[charaFadeout R 0.1]
+[charaPut W 2000,2500]
+[charaEffectDestroy W bit_sepia01_depth_fs]
+[scene 10000]
+[wt 0.2]
+
+[fadein black 0.2]
+[wait fade]
+
+[wipeout circleIn 0.2 1.0]
+[wait wipe]
+
+[scene 243401]
+
+[charaDepth Q 3]
+[charaDepth B 4]
+[charaDepth E 4]
+[charaDepth U 4]
+[charaDepth F 5]
+
+[charaScale Q 1.0]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+[charaFadein Q 0.1 0,-200]
+
+[charaPut U 1]
+[charaFadeTime U 0 0]
+
+[wt 0.2]
+
+[wipein circleIn 1.0 1.0]
+[bgm BGM_EVENT_194 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠ダンテ
+……フフ、20世紀になって30年も経つというのに、[r]また古臭い考えだ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠岡田以蔵
+気に入らんのう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠ジークフリート
+それだけ彼女が大切にされていた、[r]ということだろう。
+[k]
+
+[charaFace F 0]
+＠ジークフリート
+反対を押し切って結婚したまでは良かったのだが[line 3]
+[k]
+
+[bgmStop BGM_EVENT_194 1.5]
+
+[charaDepth B 2]
+[charaFace B 10]
+[charaFadein B 0 1]
+
+？1：だが？
+？！
+
+[charaMoveScale F 1.15 35.0]
+[charaMoveScale Q 1.15 35.0]
+[charaMove F 0,-10 35.0]
+[charaMove Q 0,-265 35.0]
+[charaFadeTime U 3.0 1.0]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaFace F 4]
+＠ジークフリート
+共に生きる、というのはやはり大変でな。[r]俺がビールを飲むと、彼女は顔をしかめる。
+[k]
+
+＠ジークフリート
+シャンパンを飲むべきだ、と言うんだ。[r]自分と一緒にいるのだからな。
+[k]
+
+＠ジークフリート
+まあ、そのくらいなら我慢はできるが、[r]一事が万事その調子だと……。
+[k]
+
+＠ジークフリート
+俺がそれまでの人生で培ってきたものは、[r]もしかして無意味だったんじゃないか……。
+[k]
+
+＠ジークフリート
+そんな想いに囚われるんだ。
+[k]
+
+[charaFace F 0]
+＠ジークフリート
+……それが彼女にも伝わったのだろうな。[r]どうもここ最近、ギクシャクして仕方がない。
+[k]
+
+[charaFadeout Q 0]
+＠ジークフリート
+コンシェルジュ。どうすればいいだろうか？
+[k]
+
+[messageOff]
+[charaTalk B,F]
+[charaFadeout F 0.6]
+[charaFadeout U 0.6]
+[wt 0.8]
+
+＠ダンテ
+……フフ……難しい質問ですね……。[r]色恋沙汰とは……。
+[k]
+
+？1：しょ、少々考えさせてくださーい！
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_11 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[scene 243300]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut V 1]
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠ゴルドルフ
+……な……。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk off]
+[subCameraOn 2]
+[charaLayer B sub #A]
+[charaLayer I sub #A]
+[charaLayer E sub #A]
+[charaLayer S sub #A]
+
+[charaLayer M sub #B]
+[charaLayer O sub #B]
+[charaLayer L sub #B]
+[charaLayer N sub #B]
+[charaLayer T sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask06 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask06 5 255,255,255,255]
+
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+
+[subRenderDepth #A 2]
+[subRenderDepth #B 1]
+
+[charaScale B 1.1]
+[charaScale I 1.1]
+[charaScale E 1.1]
+[charaScale S 1.2]
+
+[charaDepth S 2]
+[charaDepth I 3]
+[charaDepth E 4]
+[charaDepth B 5]
+
+[charaFace B 14]
+[charaFace E 13]
+[charaFace I 11]
+[charaFadein B 0 350,225]
+[charaFadein E 0 0,225]
+[charaFadein I 0 -350,235]
+[charaFadein S 0 0,0]
+
+[charaScale M 1.1]
+[charaScale O 1.1]
+[charaScale L 1.1]
+[charaScale N 1.1]
+[charaScale T 1.2]
+
+[charaDepth T 2]
+[charaDepth N 3]
+[charaDepth M 4]
+[charaDepth L 5]
+[charaDepth O 6]
+
+[charaFace N 30]
+[charaFace M 7]
+[charaFace L 10]
+[charaFace O 14]
+[charaFadein N 0 -450,250]
+[charaFadein M 0 -175,215]
+[charaFadein L 0 175,235]
+[charaFadein O 0 450,240]
+[charaFadein T 0 0,0]
+
+[subRenderFadein #A 0.3 -200,-210]
+[subRenderFadein #B 0.3 200,-425]
+[subRenderMoveEase #A 0,-210 0.4 easeOutCubic]
+[subRenderMoveEase #B 0,-425 0.4 easeOutCubic]
+[wt 0.5]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+＠全員
+難問だ……！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[subRenderMoveEase #A 200,-210 0.5 easeOutCubic]
+[subRenderMoveEase #B -200,-425 0.5 easeOutCubic]
+[wt 0.3]
+[charaFadeout B 0]
+[charaFadeout E 0]
+[charaFadeout I 0]
+[charaFadeout N 0]
+[charaFadeout M 0]
+[charaFadeout L 0]
+[charaFadeout O 0]
+[charaFadeout S 0]
+[charaFadeout T 0]
+[wt 0.15]
+[subCameraOff]
+[charaLayer B normal]
+[charaLayer E normal]
+[charaLayer I normal]
+[charaLayer N normal]
+[charaLayer M normal]
+[charaLayer L normal]
+[charaLayer O normal]
+[charaLayer S normal]
+[charaLayer T normal]
+[charaScale B 1.0]
+[charaScale E 1.0]
+[charaScale I 1.0]
+[charaScale N 1.0]
+[charaScale M 1.0]
+[charaScale L 1.0]
+[charaScale O 1.0]
+[charaScale S 1.0]
+[charaScale T 1.0]
+
+[charaTalk on]
+[charaPut V 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠カドック
+そうだな。たった今気付いたが、[r]今ここにいる人間には全員不向きな質問だったな……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaDepth I 2]
+[charaDepth E 3]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFace I 8]
+[charaFadeinFSR E 0.1 2]
+[charaFadeinFSL I 0.1 0]
+
+＠岡田以蔵
+知らんわそんなもん。
+[k]
+
+[charaTalk I]
+＠セタンタ
+オレに聞く？
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠カドック
+魔術師なんて、色恋沙汰とはまるで縁の無い……[wt 1.1][charaFace A 2][r]なんかそうでもない伝説のロードとかもいるが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 36]
+[charaFadein J 0.1 1]
+
+＠ダ・ヴィンチ
+私ももちろん、天才過ぎて縁がないからねえ。[r]ゴルドルフくん、何か一言。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+
+＠ゴルドルフ
+継承問題を考えないといけないのに、[r]婚約者すら決まっていませんよ？
+[k]
+
+？1：コヤンスカヤに籠絡されてましたからね……
+？！
+
+[charaFace H 2]
+＠ゴルドルフ
+ははは。[r]忘れなさい[%1]。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 34]
+[charaFadein J 0.1 1]
+
+＠ダ・ヴィンチ
+なるほど。つまりアテにならない。[wt 0.9][charaFace J 23][r]ダンテは[line 3]
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠ダンテ
+フフ……ベアトリーチェに生涯の愛を捧げた、[r]それとは別の妻がいる私……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+
+＠ゴルドルフ
+なんか最低なこと言ってるぞ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠ダンテ
+サーヴァントとして召喚されたクラスも相まって、[r]結婚相手のことは……マジで覚えてない……。
+[k]
+
+？1：クラスは……プリテンダー……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk J]
+[charaFace J 24]
+[charaFadein J 0.1 1]
+
+＠ダ・ヴィンチ
+あれ？　考えてみれば変だよね。[r]ダンテは何を被っているんだ？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ダンテ
+フフ……別にネタバレ禁止でもないから言うけど、[r]私は『神曲』のダンテを被ったクラスなのさ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠ダ・ヴィンチ
+ああ、なるほど。[r]作者が物語の主人公の役を被っている訳か……。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠ダンテ
+『神曲』におけるダンテはただひたすら、[r]ベアトリーチェへの愛を捧げている……。
+[k]
+
+[charaFace B 4]
+＠ダンテ
+そんな[#登場人物:キ ャ ラ ク タ ー]の皮を被った私もまた、[r]そういう性質のサーヴァントなのさ……。
+[k]
+
+[charaFace B 10]
+＠ダンテ
+故に……。[r]現実的な恋愛の行く末は……ちょっと苦手……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk J]
+[charaFace J 34]
+[charaFadein J 0.1 1]
+
+＠ダ・ヴィンチ
+八方塞がりか……仕方ない。[wt 0.9][charaFace J 14][r]八方塞がりなりに、意見を出しあおう！
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgmStop BGM_HALLOWEEN_2021_1 1.0]
+[wait wipe]
+
+[charaFadeout J 0.1]
+[charaPut V 2000,2500]
+
+[wt 1.5]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[bgm BGM_EVENT_146 0.1]
+
+？1：ダメでした
+？！
+
+[charaPut V 1]
+[charaTalk J]
+[charaFace J 31]
+[charaFadein J 0.1 1]
+
+＠ダ・ヴィンチ
+ダメだったねぇ……。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFace I 4]
+[charaFadeinFSR E 0.1 2]
+[charaFadeinFSL I 0.1 0]
+
+＠岡田以蔵
+そりゃそうじゃ。
+[k]
+
+[charaTalk I]
+＠セタンタ
+だよなー。
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk K]
+[charaFace K 7]
+[charaFadein K 0.1 1]
+
+＠マシュ
+お役に立てず……。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 8]
+[charaFadein J 0.1 1]
+
+＠ダ・ヴィンチ
+ええい、こうなったら暇を持て余している[r]サーヴァントを呼んでこよう！
+[k]
+
+[charaFace J 14]
+＠ダ・ヴィンチ
+おーい、誰かー！[r]恋愛関係に一家言ある人ーーー！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_146 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

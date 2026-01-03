@@ -1,0 +1,704 @@
+
+
+
+＄03-00-13-20-6-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098253030 1 カマソッソ]
+[charaSet B 1098257900 1 マシュ]
+[charaSet C 1098255300 1 ニトクリス]
+[charaSet D 1098256600 1 イシュキック]
+[charaSet E 11015000 1 ニトクリス・オルタ]
+[imageSet F cut444_nto 1]
+
+[imageSet L back10000 1 1]
+[charaScale L 1.3]
+[imageSet M back10001 1 1]
+[charaScale M 1.3]
+
+[sceneSet O 170301 1]
+[sceneSet P 174200 1]
+[sceneSet Q 176100 1]
+[sceneSet R 176100 1]
+[sceneSet S 176100 1]
+[charaSet T 98115000 1 エフェクト用ダミー]
+[charaSet U 98115000 1 エフェクト用ダミー]
+
+[charaPut U 2000,2500]
+[charaEffect U bit_sepia01_fade_fs]
+
+[charaDepth A 2]
+[charaDepth O 1]
+[charaDepth T 3]
+
+[charaDepth B 2]
+[charaDepth P 1]
+
+[subCameraOn 4]
+[charaLayer A sub #A]
+[charaLayer O sub #A]
+[charaLayer T sub #A]
+[charaLayer B sub #B]
+[charaLayer P sub #B]
+[charaLayer R sub #C]
+[charaLayer S sub #D]
+[subCameraFilter #A maskEdge cut359_mask15 3 255,255,255,255 0]
+[subCameraFilter #B maskEdge cut359_mask16 3 0,0,0,255 0]
+[subCameraFilter #C through]
+[subCameraFilter #D through]
+
+[subRenderDepth #A 2]
+[subRenderDepth #B 3]
+[subRenderDepth #C 4]
+[subRenderDepth #D 5]
+[charaScale A 1.1]
+[charaScale B 1.1]
+[charaScale O 1.2]
+[charaScale P 1.2]
+
+[charaTalk off]
+[charaFace A 2]
+[charaFadeinFSSideL A 0.1 -200,200]
+[charaFadein O 0.1 250,0]
+
+[charaFace B 13]
+[charaFadeinFSSideR B 0.1 -50,200]
+[charaFadein P 0.1 -250,0]
+
+[scene 10000]
+
+[bgm BGM_BATTLE_139 0.1]
+
+[se ad664]
+[seVolume ad664 0 0]
+[se ad135]
+[seVolume ad135 0 0]
+
+
+[seVolume ad664 1.0 1.0]
+[seVolume ad135 1.0 1.0]
+[effect bit_talk_windstorm]
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[se ad85]
+[cueSe Servants_9944030 m89906]
+[fowardEffect bit_talk_v_slash02]
+[wt 0.55]
+
+[cueSeStop m89906 0.3]
+[seStop ad664 0.3]
+[seStop ad135 0.3]
+[se ad170]
+[se ad686]
+[cueSe Servants_9943450 m86301]
+[cueSeVolume m86301 0 0.5]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[se ad671]
+[wt 0.1]
+[effectDestroy bit_talk_windstorm]
+[fowardEffectDestroy bit_talk_v_slash02_fs]
+[fowardEffect bit_talk_14]
+[scene 174200]
+
+[subRenderFadein #A 0 0,-250]
+[subRenderFadein #B 0 180,-250]
+[charaMoveFSSideL A -250,200 0.3]
+[charaMoveFSSideR B 0,200 0.3]
+[charaShake B 0.02 3 4 0.5]
+[seStop ad671 0.7]
+[wt 0.75]
+
+[cueSe SE_23 23_ad1238]
+[charaPutFSSideL T -250,0]
+[charaEffect T bit_talk_bat_aura03]
+[wt 1.0]
+[wt 1.5]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[cueSeStop 23_ad1238 0.6]
+[bgm BGM_BATTLE_139 0.6 0.7]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout P 0.1]
+
+[pictureFrame cut063_cinema]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk depthOff]
+[charaDepth L 4]
+[charaDepth C 6]
+[charaDepth M 8]
+
+[charaPut L 1]
+[charaFadeTime L 0.2 0.5]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 0,-50]
+＠ニトクリス
+（やはり……カマソッソは倒せない。[r]　彼はミクトランに起きた人類史の代表）
+[k]
+
+＠ニトクリス
+（その責務が、呪いがあるかぎり、[r]　彼が倒れる事はない）
+[k]
+
+＠ニトクリス
+（[#ただ不死身である]という事だけ。[r]　それだけで星を喰う怪物と戦い続けた、最後の戦士）
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[cueSeVolume 22_ad1177 0 0.9]
+[charaFadein M 0.2 0,-200]
+[wt 0.2]
+[charaFadeout M 0.2]
+[cueSeStop 22_ad1177 0.8]
+[cameraFilter gray]
+[charaFadeout C 0]
+[charaFadeout L 0]
+[wt 0.5]
+
+＠
+“オマエははじめから楽園に行く気がなかった。”[r]“そこは正直に話せ。カマソッソには嘘が分かる。”
+[k]
+
+[messageOff]
+[charaFadein M 0.2 0,-200]
+[wt 0.2]
+[cameraFilter normal]
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0 0,-50]
+[charaFadeout M 0.2]
+[wt 0.6]
+
+＠ニトクリス
+……その通りです、カマソッソ。[r]たとえ、神官たちが私欲を[#恣:ほしいまま]にした悪人でも。
+[k]
+
+＠ニトクリス
+法に照らされた経緯でなく、[r]闇に紛れた手段で神官たちを殺した事は、罪なのです。
+[k]
+
+＠ニトクリス
+私に楽園に行く資格はありません。[r]復讐を正当なものだと思った事もありません。
+[k]
+
+＠ニトクリス
+罪には罰を。[#過:あやま]ちには[#償:つぐな]いを。
+[k]
+
+＠ニトクリス
+兄弟たちを助けられなかった罪はもちろん、[r]ファラオの身で神職を殺めた事も罪なれば。
+[k]
+
+[bgmStop BGM_BATTLE_139 1.5]
+
+＠ニトクリス
+その償いとして、私は自らを殺しました。[r]その後の国ではなく、自身の心を守ったのです。
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[wt 0.1]
+[fadeout white 0.6]
+[seStop ad788 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[pictureFrame]
+
+[scene 173700]
+
+[charaPut U 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.7]
+
+[fadein white 0.6]
+[wait fade]
+[wt 0.4]
+
+[bgm BGM_MAP_59 0.1 0.8]
+
+＠イシュキック
+では、わたしが見たままの出来事を語りましょう。
+[k]
+
+＠イシュキック
+異霊とは、その霊基の核を否定したもの。
+[k]
+
+＠イシュキック
+聖女として生きたものが、聖女である事を否定する。[r]王になる事を忌避した戦士が、嫌悪した通りの王になる。
+[k]
+
+＠イシュキック
+その英霊の信念、人生、といったものへの裏切りを、[r]自らの手で行う事です。
+[k]
+
+[charaFace D 5]
+＠イシュキック
+キングプロテアは人間への憧憬、渇愛を捨て、[r]冷酷非情な女神になりました。
+[k]
+
+＠イシュキック
+紅閻魔は[#童話:こども]のままでいる、という誓いを捨て、[r]大人になりました。
+[k]
+
+＠イシュキック
+エレシュキガルは冥界を美しい土地にする、という[r]夢を捨て、残忍な女神になりました。
+[k]
+
+
+＠ニトクリス
+『何を守るために戦うのか』。[r]……だからエレシュキガルはあんな事を……
+[k]
+
+＠ニトクリス
+では、私は？[r]私は何を裏切ればいいと言うのです？
+[k]
+
+
+[charaFace D 0]
+＠イシュキック
+それを決められるのは貴女だけですよ、ニトクリス。
+[k]
+
+[charaFace D 4]
+＠イシュキック
+ただ……貴女の神話背景はミクトランと相性が悪い。
+[k]
+
+＠イシュキック
+他のサーヴァントより、[r]もっと大きな代償を必要とする。
+[k]
+
+＠イシュキック
+この先、大きな苦難があるとしても、よく考えて。
+[k]
+
+[charaFace D 0]
+＠イシュキック
+貴女の異霊化は、[r]取り返しのつかないものになるでしょう。
+[k]
+
+
+[messageOff]
+[fadeout white 0.6]
+[bgm BGM_MAP_59 0.6 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaPut U 2000,2500]
+[charaEffectStop U bit_sepia01_fade_fs]
+
+[scene 174200]
+[pictureFrame cut063_cinema]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 0,-50]
+[wt 0.7]
+
+[bgm BGM_MAP_59 0.6 1.0]
+[fadein white 0.6]
+[wait fade]
+[wt 0.2]
+
+＠ニトクリス
+[line 3]もちろん。[r]よく考えての結論です。
+[k]
+
+＠ニトクリス
+私が裏切るべきものは分かっています。[r]同時に、この世界に[#捧:ささ]げるものも。
+[k]
+
+＠ニトクリス
+我らの冥界において、ソレは死後に罪の重さを[#量:はか]るもの。[r]アステカ世界において、ソレは神に[#捧:ささ]げるもの。
+[k]
+
+＠ニトクリス
+郷に入っては郷に従え、ですよね。[r]これ以上の裏切りは、他に考えつきません。
+[k]
+
+[bgmStop BGM_MAP_59 2.0]
+
+＠ニトクリス
+……ファラオのお歴々には、しばらくの間、[r]合わせる顔がないほどに。
+[k]
+
+[messageOff]
+[wt 1.0]
+[se ad28]
+[charaFace C 9]
+[blur motion 0.1 4 100 0.5 0.4 0.03 100]
+[cameraMove 0.3 0,0 1.1]
+[wt 0.1]
+
+[wipeout circleIn 0.4 1.0]
+[wait wipe]
+
+[pictureFrame]
+
+[charaFadeout C 0.1]
+[blurOff motion 0.1]
+
+[scene 10000]
+[cameraMove 0 0,0 1.01]
+[wt 0.2]
+
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+[se ad99]
+[cueSe SE_23 23_ad1241]
+[cueSe SE_21 21_ad1125]
+
+[effect bit_talk_35]
+[wt 2.4]
+[fadeout black 0.1]
+[wait fade]
+
+[effectDestroy bit_talk_35]
+
+
+[cueSe SE_23 23_ad1240]
+[seVolume 23_ad1240 0 0.0]
+[seVolume 23_ad1240 1.0 0.5]
+
+
+[charaLayer Q sub #B]
+[charaLayer L sub #B]
+
+[subCameraFilter #B maskEdge cut359_mask08 3 60,20,69,255 0]
+
+[subRenderFadein #B 0.1 420,-200]
+[subRenderScale #B 1.2]
+[subCameraRoll #B -45 0,0]
+
+[charaDepth L 7]
+[charaDepth Q 6]
+
+[charaPut L 1]
+
+[charaFadein Q 0.1 25,-110]
+[charaScale Q 1.5]
+[charaRoll Q 45 0,0]
+
+[scene 174200]
+[wt 1.2]
+
+[subRenderMove #B 400,-200 2.0]
+
+[bgm BGM_MAP_92 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[subCameraFilter #A maskEdge cut359_mask08 3 0,0,0,0 0]
+
+[subRenderScale #A 1.2]
+[subCameraRoll #A -45 0,0]
+
+[charaScale A 1.1]
+[charaPut T -50,300]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 -50,260]
+[wt 0.1]
+
+[subRenderDepth #A 3]
+[subRenderDepth #B 2]
+
+[charaFadeTime L 0.4 0.5]
+
+[subRenderFadein #A 0.3 -350,-620]
+[subRenderMove #A -200,-620 0.3]
+[wt 0.4]
+
+＠カマソッソ
+！[r]止めろ、止めろ、止めろ！
+[k]
+
+＠カマソッソ
+オレは見ないと言った！[r]カマソッソの言葉を忘れたか！
+[k]
+
+＠カマソッソ
+オマエの心は、[#矜持:きょうじ]は、[r]他者に[#捧:ささ]げられるものであってはならない。
+[k]
+
+＠カマソッソ
+それはオマエ自身に[#捧:ささ]げたもの。[r]オマエの誇りの証明だ。
+[k]
+
+＠カマソッソ
+神の供物になどなるな。他人のためになど生きるな。[r]かくも激しく、かくも悲しい女よ。
+[k]
+
+＠カマソッソ
+これ以上[line 3]オマエの人生を、焼き尽くすな。
+[k]
+
+[messageOff]
+
+
+
+
+
+[charaTalk B]
+[charaFadeout L 0.2]
+
+＠ニトクリス
+……そうですね。[r]貴方が私を勢いで助けた理由が、分かりました。
+[k]
+
+＠ニトクリス
+何もかも忘れる事で、何一つ自分に与えない事で、[r]貴方はこれまで生き続けた。
+[k]
+
+＠ニトクリス
+何があっても過去を[#思い出さない事]で、[r]自死したくなる自分を律していたのです。
+[k]
+
+＠ニトクリス
+消え去った人類史を保障し続けるために。[r]自らに、死ねないという永劫の罰を与えた。
+[k]
+
+[charaFadeTime L 0.1 0.5]
+
+[charaTalk A]
+[charaFaceFade A 0 0.2]
+＠カマソッソ
+[line 3]この上なく愚かな。[r]カマソッソにそんな感情はない。
+[k]
+
+＠カマソッソ
+忘れるのは面倒だからだ。[r]オレがある事のみが重要だからだ。
+[k]
+
+[charaFaceFade A 3 0.2]
+＠カマソッソ
+カーン王国、その市民が自ら[#捧:ささ]げた王の体だ。[r]オレの戦いには、一片の悔恨もあってはならない！
+[k]
+
+[messageOff]
+[charaFadeout L 0.2]
+
+[subRenderFadein #C 0 0,0]
+[subRenderFadein #D 0 0,0]
+
+[cueSe SE_23 23_ad1241]
+[fadeout 9F0000 0.4]
+[wait fade]
+
+[charaScale R 1.01]
+[cameraMove 0.1 0,10 1.1]
+[wt 0.1]
+
+[fadein 9F0000 0.4]
+[wait fade]
+[wt 0.8]
+[cueSe SE_23 23_ad1242]
+[wt 0.3]
+[flashin once 0.1 0.2 FFFFFFFF FFFFFF00]
+[charaFadein R 0.1 0,-200]
+[cameraMove 0.3 0,0 1.00]
+
+[bgmStop BGM_MAP_92 2.0]
+[seVolume 23_ad1240 1.0 1.0]
+[wt 1.5]
+
+＠ニトクリス
+では私も[#捧:ささ]げましょう！[r]我が死後に、我が罪を量る心臓は不要！
+[k]
+
+＠ニトクリス
+[#冥府神:ア ヌ ビ ス]よ、我が魂に断罪を。
+[k]
+
+＠ニトクリス
+是より我は天空神の化身にあらず。[r]復讐を認め、神罰を下す冥府の神、その顕現。
+[k]
+
+[seStop 23_ad1240 1.2]
+
+＠ニトクリス
+[line 3]ネフェルウ・スエン・アヌビス。[r]女王ニトクリス、その異霊である。
+[k]
+
+[messageOff]
+[charaDepth R 4]
+[charaDepth S 5]
+[wt 0.1]
+[cueSe SE_23 23_ad1240]
+[charaScale S 1.1]
+[charaFadein S 0 0,-225]
+[charaFadeout S 0.9]
+[wt 0.5]
+[seStop 23_ad1240 0.5]
+[wt 0.8]
+
+[se ade409]
+[cueSe Servants_704400 m51716]
+[cueSe NoblePhantasm_501200 NP_501200_1]
+[wt 1.2]
+[cueSe NoblePhantasm_501200 NP_501200_5]
+[wt 0.2]
+
+[fowardEffect bit_talk_light_through]
+[wt 0.5]
+[seStop ade409 0.3]
+[cueSeStop m51716 0.3]
+[fadeout white 0.4]
+[wait fade]
+
+[seStop NP_501200_5 2.2]
+
+[fowardEffectDestroy bit_talk_light_through]
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[subRenderFadeout #C 0.1]
+[subRenderFadeout #D 0.1]
+
+[charaPut T 2000,2500]
+[charaEffectStop T bit_talk_bat_aura03]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+[subCameraOff]
+[charaLayer A normal]
+[charaLayer C normal]
+[charaLayer B normal]
+[charaLayer T normal]
+[charaLayer O normal]
+[charaLayer P normal]
+[charaLayer R normal]
+[charaLayer S normal]
+[charaScale A 1.0]
+[charaScale C 1.0]
+[charaScale B 1.0]
+[charaScale T 1.0]
+[charaScale O 1.0]
+[charaScale P 1.0]
+[charaScale R 1.0]
+[charaScale S 1.0]
+
+[sceneSet P 174200 1]
+
+[scene 174200]
+
+[charaTalk off]
+[charaDepth E 2]
+[charaDepth P 3]
+[charaDepth F 4]
+
+[charaScale P 1.6]
+[charaFadein P 0.1 -15,-300]
+
+[charaScale F 1.8]
+[charaFace F 0]
+[charaPut F 100,350]
+
+[charaFace E 0]
+[charaFadein E 0.1 0,0]
+[wt 3.2]
+
+[charaMove F 115,350 5.3]
+[charaMove P -30,-300 5.3]
+
+[fadein white 2.0]
+[wt 1.5]
+[wait fade]
+
+[cueSe Servants_9944140 m90911]
+[cueSe Servants_901500 m51803]
+[bgm BGM_BATTLE_200 0.1]
+[charaFadeTime F 1.0 1.0]
+[wt 0.4]
+[seStop bac1145 0.1]
+[wt 2.0]
+
+[fadeout black 0.5]
+[wait fade]
+[charaPut F -5,-130]
+[charaMove F -15,-130 2.6]
+[charaPut P -85,-220]
+[charaMove P -70,-220 2.6]
+[wt 0.1]
+[fadein black 0.5]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout black 0.5]
+[wait fade]
+[charaPut F 60,-380]
+[charaMove F 70,-380 1.5]
+[charaPut P 60,-300]
+[charaMove P 50,-300 1.5]
+[wt 0.1]
+[fadein black 0.5]
+[wait fade]
+
+[wt 2.0]
+
+[charaFadeout F 1.2]
+[charaFadeout P 1.2]
+[wt 2.2]
+
+[charaTalk on]
+＠ニトクリス・オルタ
+そして無論、先ほどの賭けの賞品も[#戴:いただ]く。
+[k]
+
+＠ニトクリス・オルタ
+契約により、第四冥界は我が庭になった。[r]故に新しい[#掟:ルール]を敷く。
+[k]
+
+[charaFace E 2]
+＠ニトクリス・オルタ
+[#この冥界において]、[#あらゆる忘却を禁じる]。
+[k]
+
+＠ニトクリス・オルタ
+[line 3]戦いだ、[#蝙蝠:こうもり]の王。
+[k]
+
+＠ニトクリス・オルタ
+600万年もの間、罰から逃れ続けた不死の戦士よ。[r]その償いに、相応しい結末を与えよう。
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_200 0.4]
+[wait fade]
+[soundStopAll]
+[end]

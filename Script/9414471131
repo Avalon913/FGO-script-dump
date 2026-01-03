@@ -1,0 +1,253 @@
+
+
+＄94-14-47-11-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4002001 1 イスカンダル]
+[charaSet B 5019002 1 エルメロイⅡ世]
+[charaSet C 6039000 1 グレイ]
+[charaSet D 1098325400 1 イプシロン]
+[charaSet E 4032000 1 ライネス]
+[charaSet F 2050001 1 プトレマイオス]
+
+[charaSet G 1098325830 1 テュフォン・ネオス]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[sceneSet R 241600 1]
+[sceneSet S 241600 1]
+[sceneSet T 241600 1]
+[sceneSet U 241600 1]
+[sceneSet V 241600 1]
+[sceneSet W 241601 1]
+
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+
+[subCameraOn 4]
+[charaLayer A sub #A]
+[charaLayer B sub #A]
+[charaLayer R sub #A]
+[subCameraFilter #A maskEdge cut359_mask20 4 128,0,0,255 0]
+[charaLayer B sub #B]
+[charaLayer S sub #B]
+[subCameraFilter #B maskEdge cut359_mask20 4 128,0,0,255 0]
+[charaLayer T sub #C]
+[charaLayer Y sub #C]
+[charaLayer Z sub #C]
+[charaLayer H sub #C]
+[subCameraFilter #C normal]
+
+[subRenderScale #A 1.1]
+[charaDepth R 1]
+[charaDepth A 2]
+[charaScale R 1.2]
+[charaScale A 1.1]
+[charaFace A 2]
+[charaFadein A 0 22,190]
+[charaFadein R 0 0,-30]
+
+[subRenderScale #B 1.1]
+[charaDepth S 1]
+[charaDepth B 2]
+[charaScale S 1.2]
+[charaScale B 1.1]
+[charaFace B 2]
+[charaFadein B 0 10,230]
+[charaFadein S 0 0,-30]
+
+[charaDepth T 1]
+[charaDepth Y 2]
+[charaDepth Z 3]
+[charaScale T 1.1]
+[charaFadein T 0 0,-240]
+[charaEffect Y bit_talk_sand_dust_back_fs 0,-350]
+[charaEffect Z bit_talk_sand_dust_back_fs 0,-350 H]
+
+[scene 241600]
+
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_123 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[subRenderFadein #A 0.4 0,-240]
+[subRenderMoveEase #A 0,-290 0.4 easeOutCubic]
+[wt 0.4]
+
+
+＠イスカンダル
+[f large][#ＡＡＡＡＬａＬａＬａＬａＬａｉｅ:ア  　　　　ァ  　　　　ァ  　　　　ァ  　　　　ラ  　　　　ラ  　　　　ラ  　　　　ラ  　　　　ラ  　　　　イ  　　　　ッ]！
+[k]
+
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[subRenderMoveEase #A 0,-340 0.4 easeInOutCubic]
+[wt 0.4]
+
+[cueSe Servants_400200 bac821 0]
+[seVolume bac821 0.3 1.0]
+[charaEffect H bit_talk_41_fs]
+[subCameraMoveEase #C 0,0 1.5 easeOutSine 1.1]
+[subRenderShake #C 0.04 0 1 2.0]
+[subRenderFadein #C 0.6 0,25]
+[wt 2.0]
+[seStop bac821 3.5]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0 10,230]
+[subRenderFadein #B 0.4 250,-240]
+[subRenderMoveEase #B 250,-290 0.4 easeOutCubic]
+[wt 0.4]
+
+＠エルメロイⅡ世
+よし！　今度こそ怪物どもを抜けたぞ！
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 1]
+[subRenderFadein #A 0.4 -250,-340]
+[subRenderMoveEase #A -250,-290 0.4 easeOutCubic]
+[wt 0.4]
+
+＠イスカンダル
+ははは！　[#蒼天:そうてん]まで走るぞ！[r]あの機械の竜を突き破ってな！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[subRenderFadeout #C 0.1]
+
+[charaDepth G 2]
+[charaDepth U 1]
+
+[charaScale U 1.6]
+[charaFadein U 0.1 0,-525]
+[wt 0.3]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[wt 0.1]
+
+[charaScale G 0.85]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 0,-75]
+[wt 1.8]
+
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout G 0.1]
+[charaFadeout U 0.1]
+[wt 0.3]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠グレイ
+見えました、テュフォン・ネオス！[r]もう数分ほどで、接触します！
+[k]
+
+[messageOff]
+[charaTalk C,D]
+[charaDepth C 0]
+[charaDepth U 1]
+[charaDepth D 2]
+[charaScale D 1.3]
+[charaScale U 1.1]
+[charaFace D 34]
+[charaFadein D 0.3 120,0]
+[charaFadein U 0.3 70,-270]
+[wt 0.3]
+[charaFadeout C 0.1]
+
+＠イプシロン
+待って！
+[k]
+
+？1：イプシロン？
+？！
+
+[charaFace D 7]
+
+＠イプシロン
+あそこに、お姉ちゃんを感じる……！
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_123 2.0]
+[charaFadeout D 0.6]
+[charaFadeout U 0.6]
+[wt 1.1]
+
+[se ad676]
+[seVolume ad676 0 0.3]
+[se ade187]
+[seVolume ade187 0 0.3]
+[cueSe SE_25 25_ade1209]
+[shake 0.05 5 5 0.6]
+[flashin once 0.3 0.3 FFFFFFFF FFFFFF00]
+[wt 0.3]
+[scene 241601]
+[wt 1.5]
+
+[charaLayer E sub #D]
+[charaLayer F sub #D]
+[charaLayer U sub #D]
+[subCameraFilter #D maskEdge cut359_mask16 5 0,0,0,255 0]
+[charaDepth U 1]
+[charaDepth E 2]
+[charaDepth F 2]
+[charaScale U 1.2]
+[charaScale E 1.1]
+[charaScale F 1.1]
+[charaFace E 6]
+[charaFadein E 0 -70,220]
+[charaFadein U 0 -200,0]
+[wt 0.6]
+[charaTalk E]
+[subRenderFadeinFSSideR #D 0.4 415,-300]
+[subRenderMoveEaseFSSideR #D 440,-250 0.4 easeOutCubic]
+[wt 0.4]
+
+＠ライネス
+なんだ、あの亀裂……？！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 19]
+[charaFadein F 0.1 -50,220]
+
+＠プトレマイオス
+まさか、あれは……
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

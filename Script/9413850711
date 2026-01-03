@@ -1,0 +1,669 @@
+
+
+＄94-13-85-07-1-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 5047902 1 大黒天１号]
+[charaSet B 5047912 1 大黒天２号]
+[charaSet C 7050002 1 ロウヒ]
+[charaSet D 7002002 1 ランスロット_バーサーカー]
+[charaSet E 1020002 1 ランスロット_セイバー]
+[charaSet F 10008001 1 シトナイ]
+[charaSet G 1098310700 1 マシュ]
+[charaSet H 1098310400 1 アビゲイル]
+[charaSet I 3026000 1 ジャンヌ・オルタ・サンタ・リリィ]
+[charaSet J 3026000 1 ジャンヌ・オルタ・サンタ・リリィ_演出用]
+[charaFilter J silhouette 00000080]
+
+[imageSet K cut622_piece 1]
+
+[imageSet L back10000 1 1]
+[charaScale L 1.3]
+
+[imageSet S back10000 1 1]
+[charaScale S 1.05]
+[imageSet T back10000 1 1]
+[charaScale T 1.05]
+
+[sceneSet W 236102 1]
+[sceneSet X 236102 1]
+[sceneSet Y 236102 1]
+
+[charaSet Z 98115000 1 エフェクト用]
+[charaPut Z 2500,2500]
+[charaEffect Z bit_talk_shinystar_wind04]
+
+[charaTalk depthOff]
+
+[cameraMove 0.1 0,0 1.01]
+[scene 236102]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_216 0.1]
+[wt 0.4]
+[effect bit_talk_kengekiall02_fs]
+[se ad974]
+[seStop ad974 1.4]
+[wt 0.6]
+[se ad1032]
+[shake 0.03 3 3 0.2]
+[effect bit_talk_14 -200,-120]
+[wt 0.4]
+[se ad1031]
+[shake 0.03 3 3 0.3]
+[fowardEffect bit_talk_14 150,80]
+[wt 0.6]
+
+[cueSe Servants_9945030 m96218]
+[subCameraOn 1]
+[charaLayer W sub #A]
+[charaLayer E sub #A]
+[charaLayer L sub #A]
+[charaLayer K sub #A]
+[subCameraFilter #A maskEdge cut359_mask20 4 0,0,0,255 0]
+[charaDepth W 1]
+[charaDepth E 2]
+[charaDepth L 3]
+[charaDepth K 4]
+[charaScale W 1.3]
+[charaScale E 1.3]
+[charaScale K 0.8]
+[charaFadeTime L 0 0.5]
+[charaFadein K 0 0,10]
+[charaFadein W 0 0,0]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0 0,400]
+[subRenderFadein #A 0.3 0,-200]
+[wt 0.6]
+[charaMoveScaleEase W 1.6 0.6 easeOutExpo]
+[charaMoveScaleEase E 1.6 0.6 easeOutExpo]
+[charaMoveScaleEase K 1.1 0.6 easeOutExpo]
+[charaMoveEase W 0,50 0.6 easeOutExpo]
+[charaMoveEase E 0,450 0.6 easeOutExpo]
+[charaMoveEase K 0,-115 0.4 easeOutExpo]
+[cameraMoveEase 0,0 0.4 easeOutQuart 1.41]
+[blur motion 0.4 4 10000 0.5 0.5 0.05 100]
+[wt 0.4]
+[cueSe SE_22 22_ad1212 0.4]
+[se ade434]
+[charaMoveEase K 0,150 0.5 easeOutQuart]
+[charaFadeout K 0.4]
+[wt 0.1]
+[se ad7]
+[wt 0.8]
+[subRenderFadeout #A 0.3]
+[blurOff motion 0.3]
+[wt 0.3]
+[charaFadeout W 0.1]
+[charaFadeout E 0.1]
+[charaFadeout L 0.1]
+[charaFadeout K 0.1]
+[wt 0.2]
+[charaLayer W normal]
+[charaLayer E normal]
+[charaLayer L normal]
+[charaLayer K normal]
+[charaScale E 1.0]
+[charaScale K 1.0]
+[charaScale W 1.2]
+[subCameraOff]
+
+[charaScale B 0.8]
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 -150,-50]
+
+＠大黒天２号
+ああっ、“かけら”が！
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_216 4.0]
+[wipeout rectangleStripUpToDown 0.3 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[cameraHome 0.1]
+[charaScale B 1.0]
+[subCameraOn 1]
+[charaLayer C sub #A]
+[subCameraFilter #A through]
+[charaScale C 1.05]
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0 1]
+[subRenderFadein #A 0.1 0,0]
+[charaPut Z 1]
+[scene 236500]
+[wt 0.2]
+[cueSe SE_23 23_ade890 0]
+[seVolume 23_ade890 1.0 0.4]
+[wipein rectangleStripDownToUp 0.3 1]
+[wait wipe]
+
+[wt 2.0]
+
+[charaMoveEase C 0,50 0.4 easeOutSine]
+[charaFadeout C 0.3]
+[seStop 23_ade890 1.0]
+[se ade216]
+[seStop ade216 2.2]
+[wt 0.1]
+[wipeout rectangleStripDownToUp 0.3 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaPut Z 2500,2500]
+[charaEffectDestroy Z bit_talk_snowstorm_01]
+[scene 236102]
+[wt 0.2]
+[wipein rectangleStripUpToDown 0.3 1]
+[wait wipe]
+[wt 1.2]
+
+[bgm BGM_EVENT_175 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 150,0]
+
+＠大黒天１号
+みるみる離れてしまいますね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠E：ランスロット
+……ぐっ、抜かった！[r]戦いに熱くなりすぎ、奪取を許してしまうとは……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠シトナイ
+ポホヨラでのロウヒは圧倒的だわ……。[r]しかもまだ力を残していた。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 150,0]
+
+＠大黒天１号
+単純計算ではシトナイ様の３倍ですしね……。
+[k]
+
+[charaFace A 9]
+
+＠大黒天１号
+まあそれでいきますと、私ども大黒鼠は[r]一人あたり十分の一とかになってしまうのですが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠シトナイ
+[line 3]（キッ）。
+[k]
+
+＠シトナイ
+[#わたし:シ ト ナ イ]と[#わたし:フ レ イ ヤ]もいるの。[r]ハイ・サーヴァントはそんなに単純じゃないんだから。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 150,0]
+[charaShake A 0.03 3 3 0.2]
+
+＠大黒天１号
+失礼いたしました。[r]余計なことを申しました！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠シトナイ
+特異点中央のマーケットのほうへ飛び去ったわ。[r]先に回収した“かけら”も確保するつもりね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+＠マシュ
+ですが、アビゲイルさんの魔法陣には[r]関与しないままでした。ということは……。
+[k]
+
+＠マシュ
+もうロウヒさんは、独力でサンポを復活させられる[r]ということでしょうか？
+[k]
+
+？1：そうかもしれない。元の設計図を知っていたし
+？2：でも、まだかけらは一つ残っているはず
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 15]
+[charaFadein H 0.1 1]
+
+＠アビゲイル
+…………。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠D：[FFFFFF]ランスロット
+……Ｓａａａａａａ……ａａ……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠マシュ
+どう……されました？[r]バーサーカーのランスロットさん。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_175 1.5]
+[wt 1.0]
+[charaFace G 11]
+
+＠マシュ
+あっ……[r]それは……。
+[k]
+
+[bgm BGM_SHINYAMA_1 0.1]
+[charaFace G 7]
+
+＠マシュ
+プレゼントの包み……ですね。[r]お二人で持ってきてくださった[line 3]
+[k]
+
+＠マシュ
+戦闘に巻き込まれて潰れてボロボロに……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠E：ランスロット
+……何、気にしないでくれ！[r]たいしたことはない。
+[k]
+
+＠E：ランスロット
+それより今の戦闘で、負傷した者はいなかったか？[r]火傷を負った者は？
+[k]
+
+？1：うん。ひとまずみんな無事だね
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠マシュ
+………………。
+[k]
+
+＠マシュ
+ごめんなさい、ランスロットさん。[r]せっかくのプレゼントを。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠E：ランスロット
+い、いや、本当にいいんだマシュ。[r]困らせるつもりはなくてだな！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠D：[FFFFFF]ランスロット
+Ｄｏｏｏｏｎｍｉｎｎｎｎ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠マシュ
+突き放した言葉も[r]聞かせてしまいました。
+[k]
+
+＠マシュ
+その……気恥ずかしかったんです。
+[k]
+
+＠マシュ
+わたし、自分のことばかりで、[r]お返しなんて考えもしていなくて。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subCameraOn 1]
+[charaLayer D sub #A]
+[charaLayer E sub #A]
+[charaLayer W sub #A]
+[charaLayer S sub #A]
+[charaLayer T sub #A]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.05]
+[charaDepth W 1]
+[charaDepth D 2]
+[charaDepth E 3]
+[charaDepth S 10]
+[charaDepth T 10]
+[charaScale D 1.0]
+[charaScale E 1.0]
+[charaScale W 1.1]
+[charaFace D 1]
+[charaFadein D 0 -246,-50]
+[charaFace E 1]
+[charaFadein E 0 266,-50]
+[charaFadein W 0 60,-250]
+[charaFadein S 0 0,757]
+[charaFadein T 0 0,-757]
+[charaMove D -266,-50 10.0]
+[charaMove E 246,-50 10.0]
+[charaMove W 40,-250 10.0]
+[subRenderFadein #A 0.4 0,0]
+[wt 1.0]
+
+＠マシュ
+壊れてしまった贈り物……。
+[k]
+
+＠マシュ
+中身が何かわかりませんが、[r]今のわたしには、たぶん大きすぎたでしょうね？
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout W 0.1]
+[charaFadeout S 0.1]
+[charaFadeout T 0.1]
+[wt 0.5]
+[charaMove D -256,0 0.1]
+[charaMove E 256,0 0.1]
+[charaMove W 50,-320 0.1]
+[charaScale D 1.0]
+[charaScale E 1.0]
+[charaLayer D normal]
+[charaLayer E normal]
+[charaLayer W normal]
+[charaLayer S normal]
+[charaLayer T normal]
+[subCameraOff]
+
+[charaTalk on]
+[charaTalk G]
+
+＠マシュ
+またあとで、あらためて受け取らせてください。[r]それに[line 3]
+[k]
+
+[charaFace G 10]
+
+＠マシュ
+カルデアに戻ったらちゃんとお二人にも[r]お返しをさせてください。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace D 1]
+[charaFadein D 0.1 -256,0]
+[charaFace E 1]
+[charaFadein E 0.1 256,0]
+
+＠E：ランスロット
+ああ、もちろんだとも。とても楽しみにしている。
+[k]
+
+[charaTalk D]
+
+＠D：[FFFFFF]ランスロット
+Ｏ……Ｏｕｕｉｉｉｉｉｉｉｉｉ！！
+[k]
+
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 15]
+[charaFadein H 0.1 1]
+[wt 1.0]
+
+＠アビゲイル
+………………。
+[k]
+
+？1：アビー、そんなに気にしなくていいよ
+？！
+
+[charaFace H 16]
+
+＠アビゲイル
+……マスター。
+[k]
+
+＠アビゲイル
+でも、これはきっと私のせいだわ。[r]私がロウヒさんを追い詰めてしまった。
+[k]
+
+＠アビゲイル
+この楽園のようなポホヨラに、[r]私が持ち込んでしまった、悪魔の果実のような……。
+[k]
+
+？1：そうなのかも……出来すぎたクリスマス・イブだった
+？2：でも、それは[&きみ:あなた]だけじゃない。自分もだ
+？！
+
+[messageOff]
+[wt 0.2]
+
+？1：カルデアはこの場所をほうってはおけない
+？2：いずれ必ず、対決を迫る状況になっていた
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaDepth A 1]
+[charaDepth B 2]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠大黒天１号
+……この極北の地におわす神の手で鋳造された[r]真正なるサンポでしたら、
+[k]
+
+＠大黒天１号
+すべて丸くおさめるような、[r]豊かな恵みを生み出してくれたかもしれませんね。
+[k]
+
+＠大黒天１号
+でも、私どもには[r]あいにくそうは思えないのです。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠シトナイ
+…………その通りね。
+[k]
+
+[messageOff]
+[charaDepth H 0]
+[charaDepth F 0]
+[charaDepth J 2]
+[charaDepth W 1]
+[charaScale J 1.3]
+[charaScale W 1.3]
+[charaFadein W 0.5 0,-240]
+[bgmStop BGM_SHINYAMA_1 2.5]
+[wt 0.5]
+[se ade251 0.4]
+[cueSe Servants_505000 m47704]
+[wt 0.3]
+[charaFadeout F 0.1]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.7 0,200]
+[wt 1.4]
+[charaMoveEase J 0,100 1.2 easeOutSine]
+[charaMoveEase W 0,-340 1.2 easeOutSine]
+[wt 1.8]
+[charaFace H 27]
+[charaFadein H 0.1 1]
+
+＠J：？？？
+落胆している場合ではありませんよ？[r]トナカイさんたち！？
+[k]
+
+[messageOff]
+[charaTalk H]
+[charaFadeout J 0.4]
+[charaFadeout W 0.4]
+[wt 0.4]
+[charaScale J 1.0]
+
+＠アビゲイル
+まあ……！　サンタ・リリィさん！？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_115 0.1]
+[charaTalk J,I]
+[charaDepth J 3]
+[charaDepth I 2]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.1]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+[wt 0.4]
+[charaFadeout J 0.4]
+[wt 0.7]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+はいっ、お待たせしました！[r]ジャンヌ・ダルク・オルタ・サンタ・リリィです！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠マシュ
+ああ……よかった！
+[k]
+
+＠マシュ
+やっとサンタサーヴァントさんの[r]お一人にお会い出来ましたね！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+皆さんを迎えにまいりました！[r]すでに最後の“空のかけら”も見つかっています！
+[k]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+さあ、私と一緒についてきてください！[r]他の仲間たちも待っています！
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_BATTLE_115 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]
+

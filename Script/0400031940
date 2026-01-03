@@ -1,0 +1,501 @@
+
+
+＄04-00-03-19-4-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11010001 1 平景清]
+[charaSet B 1098292500 1 ジャンヌ・オルタ]
+[charaSet C 11006000 1 サリエリ]
+[charaSet D 1098291900 1 テオドリック・オルタ]
+[charaSet E 1098289510 1 カリオストロ]
+
+[charaSet G 6050001 1 ハサン]
+
+[charaSet H 5009000 1 エフェクト用1]
+[charaSet I 5009000 1 エフェクト用2]
+
+
+[charaTalk depthOff]
+
+[charaDepth D 3]
+[charaDepth H 4]
+[charaDepth I 5]
+
+[scene 212701]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.0 0.3]
+[fadein black 1.5]
+[bgm BGM_MAP_110 0.1]
+[wait fade]
+
+
+[charaPut G 0,-10]
+[charaTalk G]
+[charaFace G 0]
+[se ad223]
+[fowardEffect bit_talk_quickmove 0,0 V]
+[charaSpecialEffect G appearance 1 0.25]
+[wt 0.4]
+[charaMove G 0,0 0.3]
+[wt 0.4]
+
+[seStop ad556 2.0]
+
+＠ハサン
+…………よく、オレに合わせたな。[r]驚いたぞ。
+[k]
+
+？1：ハサン！
+？2：……合わせたってどういうこと
+？！
+
+＠ハサン
+言ったままだ。[r]他の意味はない。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠平景清
+うむ。紫電の[#迅:はや]さで迫る気配が[r]あった故、そこに合わせたまでのこと。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 30]
+[charaFadein B 0.1 1]
+
+＠ジャンヌ・オルタ
+サラッと言うんじゃないわよ……[r]結構しんどかったわよ、あれ。
+[k]
+
+[charaFace B 18]
+
+＠ジャンヌ・オルタ
+サリ先なんて見た？[r]最後の最後に間に合ってなかったでしょうが。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠サリエリ
+……。[r]…………それはそうだが、オルタ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+
+＠ジャンヌ・オルタ
+何よ。
+[k]
+
+[charaFace B 10]
+
+＠ジャンヌ・オルタ
+ってか、つい返事しちゃったけど[r]アンタたちオルタ呼びやめなさい？
+[k]
+
+＠ジャンヌ・オルタ
+そもそもいっぱいいるのよ、オルタ。[r]ンなことより[line 3]
+[k]
+
+[charaFace B 8]
+
+＠ジャンヌ・オルタ
+次は大将に仕掛けていくわよ。[r]ほら[line 3]アイツ、めっちゃこっち見てる。
+[k]
+
+[messageOff]
+[bgm BGM_MAP_110 0.5 0.5]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[bgm BGM_MAP_110 1.0 1.0]
+[wt 1.8]
+
+＠サリエリ
+……精霊種を破壊されて尚、[r]動く様子なし、か。
+[k]
+
+＠サリエリ
+自己の戦闘能力に余程の信頼があるのか？[r]或いは、防御型宝具の持ち主。
+[k]
+
+＠カリオストロ
+はい。[#見えざる嵐]があれを守護しています。[r]ですが、やはり恐るべきは霊基本体の火力かと。
+[k]
+
+＠ジャンヌ・オルタ
+何でもいいわ。[r]どの道、やることは同じでしょう。
+[k]
+
+＠ジャンヌ・オルタ
+さっきの鳥と同じに、灼き尽くしてやるまでよ。
+[k]
+
+
+[messageOff]
+[bgm BGM_MAP_110 1.0 0.5]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 1.0]
+
+[bgm BGM_MAP_110 1.0 1.0]
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+
+＠ジャンヌ・オルタ
+……にしても転校生。[r]タイミング、ジャストで駆け付けてくれたけど。
+[k]
+
+＠ジャンヌ・オルタ
+どういう理由？[r]一応、[#訊:き]いておくわ。
+[k]
+
+？1：ハサン
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ハサン
+ああ、叔母のことだな。[r]オレが守るまでもないと判断した。
+[k]
+
+＠ハサン
+消えたからな。
+[k]
+
+？2：叔母さんのことは
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ハサン
+ああ。[r]突然、消えた。
+[k]
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠ジャンヌ・オルタ
+……何て？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ハサン
+消えた。隣家の人間たちもだ。
+[k]
+
+＠ハサン
+ここへ駆け付けるまでの間、[r]人間の姿は一人たりとも見掛けなかったぞ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠サリエリ
+試練の際には同様の事態が起きている。[r]だが、そこまで広範囲となると……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠平景清
+ふむ。[#此度:こたび]の戦場は東京のおよそ全土が含まれる、[r]といったあたりであろうよ。
+[k]
+
+？1：東京、全土
+？2：そういう……
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠ジャンヌ・オルタ
+は。大きく出るわね！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠サリエリ
+戦力集中が叶ったのは[#僥倖:ぎょうこう]だ。[r]東京すべてを戦いの舞台とするまでもない。
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_110 1.0]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.0 0.3]
+[cameraMove 3.0 0,-15 1.04]
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+[bgm BGM_EVENT_195 0.5]
+[wt 2.4]
+
+[seStop ad556 2.0]
+
+＠サリエリ
+[line 3]アヴェンジャー・ワイルドハント。[r]第五、第六の試練。
+[k]
+
+＠サリエリ
+精霊種さえ配下とする化け物。[r]神霊規模の相手だが、後退の選択は我らにない。
+[k]
+
+＠サリエリ
+エクストラクラス四騎、アサシン一騎。[r]そしてマスターの簡易召喚。
+[k]
+
+＠サリエリ
+すべての戦力を注ぎ込み、[r]ヤツを、[#お台場:こ　　こ]で仕留めきる！
+[k]
+
+＠ジャンヌ・オルタ
+当然！
+[k]
+
+
+＠平景清
+無論！
+[k]
+
+
+＠ハサン
+……強気な連中だ。[r]いいだろう、やるだけやってみるさ。
+[k]
+
+[messageOff]
+[charaTalk D]
+[wt 1.0]
+[bgmStop BGM_EVENT_195 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+
+[charaTalk D]
+[wt 0.8]
+
+
+[se ade106]
+[cameraMove 2.0 0,0 1.01]
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_MAP_53 0.1]
+
+＠テオドリック・オルタ
+…………我らは、予兆。[r]…………我らは、残酷。
+[k]
+
+＠テオドリック・オルタ
+復讐者。[r][#異霊:オルタ]なりし[#大嵐成す二騎:ワ　イ　ル　ド　ハ　ン　ト]である。
+[k]
+
+[seStop ade106 2.0]
+
+＠テオドリック・オルタ
+心あるものは震えよ。[r]我らは、おまえを殺す牙である！
+[k]
+
+[messageOff]
+[cueSe SE_23 23_ade904]
+[seVolume 23_ade904 0 0]
+[seVolume 23_ade904 0.5 1.0]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.0 0.2]
+[se ad555]
+[seVolume ad555 0 0]
+[seVolume ad555 1.0 0.2]
+[charaPut H 1]
+[charaPut I 1]
+[charaEffect H bit_talk_strongwind02_cl]
+[charaEffect I bit_talk_strongwind02_cl]
+[wt 1.5]
+
+？1：（強烈な圧力に耐える）
+
+
+＠カリオストロ
+そう！[r]それで正解です、カルデアのマスター！
+[k]
+
+？2：（戦闘態勢を取る）
+
+＠カリオストロ
+カルデアのマスター！[r][#此処:こ　こ]は、どうかお気を付けて。
+[k]
+
+？！
+
+＠カリオストロ
+[#是:これ]なる圧力こそは見えざる嵐！[r]耐性なき生身の精神では、長くは保ちません！
+[k]
+
+＠カリオストロ
+際限なき破滅と喪失の恐怖！[r]脳神経を[#苛:さいな]む電磁的圧力！
+[k]
+
+＠カリオストロ
+果たして！　たちまち狂い落ちて自死するのが先か、[r]或いは脳神経が寸断されるのが先か[line 3]
+[k]
+
+
+＠ジャンヌ・オルタ
+は！？[r]見えざる嵐ってそんなヤバイの！？
+[k]
+
+＠カリオストロ
+はい。
+[k]
+
+＠ジャンヌ・オルタ
+…………！
+[k]
+
+＠ジャンヌ・オルタ
+マスターは退きなさい。[r]ここは、私たちで……！
+[k]
+
+？1：退かないよ
+？2：この礼装なら多分、大丈夫
+？！
+
+[messageOff]
+[wt 0.1]
+
+？1：ある程度までなら
+？2：耐えられる……！
+？！
+
+[charaTalk D]
+
+＠テオドリック・オルタ
+破滅は誰も彼もに等しく訪れ、希望はない。[r]喪失は誰も彼もに等しく訪れ、すべてが終わる。
+[k]
+
+＠テオドリック・オルタ
+戦え。殺せ。[r][#裡:うち]の怒りを剣として立ち向かえ。
+[k]
+
+＠テオドリック・オルタ
+破滅に空しく刃を突き立て、[r]喪失に咽び泣くがいい。
+[k]
+
+[messageOff]
+[wt 1.5]
+
+＠テオドリック・オルタ
+或いは、おまえが、明日を求めるならば[line 3]
+[k]
+
+[messageOff]
+
+[cameraMove 0.4 0,-20 1.15]
+[se ad642]
+[charaFace D 0]
+[charaMoveScale D 1.05 0.4]
+[charaMove D 0,10 0.4]
+[wt 1.0]
+
+[seStop ad642 0.2]
+
+＠テオドリック・オルタ
+[f large]抗え！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop 23_ade904 0.4]
+[seStop ad555 0.4]
+[seStop ad556 0.4]
+[bgmStopEnd BGM_MAP_53 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

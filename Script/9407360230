@@ -1,0 +1,296 @@
+
+＄94-07-36-02-3-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet C 99502600 1 マシュ]
+[charaSet D 98002000 1 フォウ]
+[charaSet E 10010300 1 蘆屋道満]
+[charaSet F 6026300 1 燕青]
+[charaSet G 5043300 1 アスクレピオス]
+[charaSet H 1054000 1 ガレス]
+
+[charaSet I 6043000 1 オルトリンデ]
+[charaSet J 6044000 1 ヒルド]
+[charaSet K 6045000 1 スルーズ]
+[charaSet L 1098243700 1 アークティックフィッシュＡ]
+[charaSet M 28003000 1 レディ・アヴァロン]
+
+[charaSet R 98115000 1 エフェクト用ダミー]
+[charaSet S 98115000 1 エフェクト用ダミー]
+
+[charaPut S 2000,2000]
+[charaEffect S bit_talk_10_LowLevel]
+
+[scene 159800]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.4]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[charaTalk I]
+[charaFace I 8]
+[charaPut I 1]
+[charaSpecialEffect I appearanceReverse 1 0.2]
+
+[wt 0.2]
+[se ad223]
+[wt 0.2]
+
+[bgm BGM_EVENT_63 0.1]
+
+＠オルトリンデ
+……偵察より帰還しました。
+[k]
+
+
+＠オルトリンデ
+歩く樹木ですが、[r]総じて西方向からやってきています。
+[k]
+
+[charaFace I 9]
+
+＠オルトリンデ
+発生地点まではまだ確認できていません。[r]（と言いつつ道満を見る）
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠蘆屋道満
+拙僧に期待しておられますかな？[r]しかし[#残念無念:ざんねんむねん]、この付近にはありませんなァ。
+[k]
+
+
+＠蘆屋道満
+西の方角ですか。[r]皆で赴いて探るのが宜しいかと。
+[k]
+
+？1：そうだね
+？2：全員で移動してみよう
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ガレス
+はい！　走りますか？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 2]
+[charaFadein M 0.1 1]
+
+＠レディ・アヴァロン
+は、走る！？[r]元気だねえこっちのガレスも……。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠燕青
+サーヴァントが走ったらマスターは置いてけぼりだ。[r]ま、俺が抱えて走れば済むが。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠蘆屋道満
+ではマスター、拙僧の肩に乗りますかな？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠燕青
+そう来たか～。
+[k]
+
+[charaFace F 5]
+[bgmStop BGM_EVENT_63 1.0]
+
+＠燕青
+……っと。[r]何か来てるな、歩く樹木か？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠蘆屋道満
+ンンンンンどうでしょうなァ、この神気は[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠マシュ
+敵性反応です！[r]マスター、前方に飛来する敵性体が複数！
+[k]
+
+[charaPut S 2000,2000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFadein K 0.1 1]
+
+＠スルーズ
+[line 3]迎撃態勢！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠ヒルド
+はいはい。いくよっ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠オルトリンデ
+はい……！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth I 6]
+[charaDepth J 5]
+[charaDepth K 4]
+
+[charaFace K 9]
+[charaFace J 5]
+[charaFace I 5]
+[charaFadein K 0.1 1]
+[wt 0.5]
+[se ad39]
+[effect bit_talk_radiallight01]
+[wt 1.5]
+
+[charaPutFSL I -256,0]
+[charaPutFSR J 256,0]
+[charaFadeTime I 0.3 0.6]
+[charaFadeTime J 0.3 0.6]
+
+[charaMoveFSL I -50,0 1.3]
+[charaMoveFSR J 50,0 1.3]
+[wt 0.6]
+[charaFadeout I 0.6]
+[charaFadeout J 0.6]
+
+[fadeout white 0.3]
+[seStop ad39 1.5]
+[se bac398]
+[wait fade]
+
+[effectDestroy]
+
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+[wt 0.2]
+
+[charaCrossFade H 1098243400 5 0.5]
+[se ad694]
+[se ade321]
+[wait charaCrossFade H]
+[wt 1.0]
+
+[charaFace H 2]
+
+＠ガレス
+あれは……なんでしょう！[r]空飛ぶお魚！？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaScale L 0.8]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.4 20,150]
+[charaMoveScale L 1.0 1.5]
+[charaMove L -50,120 0.4]
+[cueSe SE_22 22_ade784]
+[wt 0.4]
+[charaMove L 50,20 0.8]
+[wt 0.8]
+[charaMove L 0,0 0.2]
+[wt 0.2]
+[cueSeStop 22_ade784 0.1]
+
+[fowardEffect bit_talk_41_fs]
+[cueSe SE_21 21_ade655]
+[wt 1.0]
+
+[cueSe SE_22 22_ad1177]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[cameraMove 0.3 0,-20 1.3]
+[wt 0.4]
+
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

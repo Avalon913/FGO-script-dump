@@ -1,0 +1,1020 @@
+
+＄94-03-35-77-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1057000 1 セタンタ]
+[charaSet B 6048001 1 ロクスタ]
+[charaSet C 1098286600 1 仔犬]
+
+[charaSet D 1057000 1 セタンタ]
+
+[equipSet Z 9808950 1 バレンタイン礼装]
+[charaDepth Z 10]
+
+[charaDepth A 4]
+[charaDepth B 2]
+
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[label lblClear01a]
+[scene 105600]
+
+[sceneSet X 105600 1]
+[sceneSet Y 105600 1]
+
+[branch lblConf01]
+
+[label lblClear01b]
+[scene 105900]
+
+[sceneSet X 105900 1]
+[sceneSet Y 105900 1]
+
+[branch lblConf01]
+
+[label lblClear01c]
+[scene 158100]
+
+[sceneSet X 158100 1]
+[sceneSet Y 158100 1]
+
+[label lblConf01]
+
+[subCameraOn 1]
+[charaLayer D sub #A]
+[charaLayer X sub #A]
+[subRenderScale #A 1.02]
+[subCameraFilter #A maskEdge cut359_mask06 4 0,0,180,0 0]
+
+[charaDepth C 4]
+[charaDepth D 4]
+[charaDepth X 2]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace D 1]
+[charaFadein D 0.1 0,220]
+[charaFace X 0]
+[charaFadein X 0.1 1]
+[wt 0.1]
+
+[cameraMove 0.1 0,0 1.01]
+
+[charaScale Y 1.2]
+[charaFace Y 0]
+[charaFadein Y 0.1 50,-250]
+[charaMove Y -50,-250 15.0]
+[wt 0.1]
+
+[fadein black 1.5]
+[se ad518]
+[seVolume ad518 0.0 0.0]
+[seVolume ad518 1.5 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[subRenderFadein #A 0.3 0,-300]
+[wt 0.6]
+[charaMoveEase D -50,220 0.5 easeOutQuad]
+[wt 0.9]
+[charaMoveEase D 50,220 0.7 easeOutQuad]
+[wt 1.0]
+[charaMoveEase D 10,220 0.4 easeOutQuad]
+[wt 0.9]
+
+[seStop ad518 2.0]
+[charaFace D 0]
+[wt 1.0]
+
+[bgm BGM_EVENT_109 0.1]
+
+＠D：セタンタ
+[tVoice ValVoice_105700 0_V010]
+お[line 3][wait tVoice]
+[k]
+
+[charaFace D 5]
+
+＠D：セタンタ
+[tVoice ValVoice_105700 0_V020]
+いたいた！[r]おーいマスター、こっちだこっち！[wait tVoice]
+[k]
+
+[messageOff]
+
+[subRenderFadeout #A 0.5]
+[charaFadeout Y 0.5]
+[wt 0.5]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[charaFadeout X 0.1]
+[wt 0.1]
+
+[charaLayer D main]
+[charaLayer C main]
+[charaLayer X main]
+[subCameraOff]
+
+[se adm36]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 1.0]
+[seStop adm36 0.1]
+
+？1：セタンタ！
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V030]
+おうよ。[wait tVoice]
+[k]
+
+
+[charaFace A 4]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V040]
+……ふう、やっと見つけたぜ。[r]今日のあんた、なかなか見つからねーからさ。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V050]
+って、普段の[#出てる日]もそうっちゃそうか？[r]まあいいや。[wait tVoice]
+[k]
+
+
+？2：あれ、[&自分:わたし]のこと捜してた？
+
+[charaFace A 14]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V060]
+あー、まーな。[r]……てかさ。[wait tVoice]
+[k]
+
+
+[charaFace A 8]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V070]
+もしかして気付いてねえか？[r]捜さねーと見つからねーんだよ、今日のあんた。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V080]
+ま、見つかったからヨシ！　だ！[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[subCameraOn 2]
+[charaLayer C sub #A]
+[charaLayer X sub #A]
+[subCameraFilter #A maskEdge cut359_mask14 6 255,255,255,0 0]
+[charaScale X 1.2]
+[charaFace C 0]
+[charaFadein C 0.1 470,200]
+[charaFace X 0]
+[charaFadein X 0.1 100,150]
+
+[charaLayer Z sub #B]
+[subCameraFilter #B through]
+[charaFace Z 0]
+[charaFadein Z 0.1 1]
+
+[charaTalk C]
+[charaFace C 5]
+[subRenderFadein #A 0.3 -200,-300]
+[subRenderMove #A -200,-250 0.3]
+[wt 0.3]
+
+＠仔犬
+[tVoice ValVoice_105700 0_V090]
+バウ！[wait tVoice]
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3 0]
+[subRenderMove #A -200,-300 0.3]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 1]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V100]
+お、[#犬:コイツ]もヨシだってさ。[wait tVoice]
+[k]
+
+？1：その子の言ってること、[&分かるんだ？:分かるの？]
+？！
+
+[charaFace A 4]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V110]
+いや、わかんねーよ？[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 5]
+[subRenderFadein #A 0.3 -200,-300]
+[subRenderMove #A -200,-250 0.3]
+[wt 0.3]
+
+＠仔犬
+[tVoice ValVoice_105700 0_V120]
+バウ、ワウ！[wait tVoice]
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3 0]
+[subRenderMove #A -200,-300 0.3]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 7]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V130]
+なー。だよなあ？[wait tVoice]
+[k]
+
+？1：…………。
+？！
+
+[charaFace A 5]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V140]
+ははは。なんてな。[r]悪い悪い、今日のマスターは忙しいんだもんな。[wait tVoice]
+[k]
+
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V150]
+オレばっかが時間取ってちゃ、[r]熱上げてる連中に喧嘩売[line 3][wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_109 1.5]
+＠セタンタ
+[tVoice ValVoice_105700 0_V160]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFace A 9]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V170]
+…………あー。[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+
+[charaFace A 7]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V180]
+ソレ、結構いいんじゃねえ？[r]たとえばさ、ここであんたをふん縛ったとすりゃ、[wait tVoice]
+[k]
+
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V190]
+キレた英霊が山ほど来る！[r]オレは[#古今東西:こ こ ん と う ざ い]の強者どもとやり合える！[wait tVoice]
+[k]
+
+？1：やめた　ほうが　いい
+
+[messageOff]
+[charaTalk C]
+[charaFace C 0]
+[subRenderFadein #A 0.3 -200,-300]
+[subRenderMove #A -200,-250 0.3]
+[wt 0.3]
+
+＠仔犬
+[tVoice ValVoice_105700 0_V200]
+バウバウ！！[wait tVoice]
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3 0]
+[subRenderMove #A -200,-300 0.3]
+[wt 0.3]
+
+
+[charaTalk A]
+[charaFace A 5]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V210]
+……わーってるって、冗談冗談。[r]楽しみにしてる連中の邪魔する気はねーよ。[wait tVoice]
+[k]
+
+？2：悪いことは言わないから……
+
+
+[charaFace A 8]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V220]
+まー、そうだよなー。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V230]
+人の楽しみを取るのは最低だしな、[r]思っただけだ。やらねえから、安心してくれ。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V240]
+っとと。[r]言ってる側から無駄話しちまったか。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 6]
+[wt 1.0]
+
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V250]
+へっ、ほらよ！[r]受け取れ、マスター！[wait tVoice]
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_7 1.0 0.5]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 4.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[effectDestroy]
+[blur lens 0.5 4 1]
+
+[charaFadeout A 0.5]
+[se bas2]
+[subRenderFadein #B 0.5 0,-70]
+[wt 3.0]
+
+？1：こ、これは[line 3]
+
+[subRenderFadeout #B 0.4]
+[blurOff lens 0.4]
+[wt 0.5]
+
+[bgm BGM_EVENT_7 1.0 1.0]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V260]
+へへっ。どうだ？[wait tVoice]
+[k]
+
+
+？2：あっ、これ『肩たたき券』だ！？
+
+[subRenderFadeout #B 0.4]
+[blurOff lens 0.4]
+[wt 0.5]
+
+[bgm BGM_EVENT_7 1.0 1.0]
+
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V270]
+ちげーぞ？[r]まあでも、ソレを参考にしたんだけどな。[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[charaTalk C]
+[charaFace C 2]
+[subRenderFadein #A 0.3 -200,-300]
+[subRenderMove #A -200,-250 0.3]
+[wt 0.3]
+
+＠仔犬
+[tVoice ValVoice_105700 0_V280]
+バウ！　ヘッヘッヘッヘ……[wait tVoice]
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3 0]
+[subRenderMove #A -200,-300 0.3]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 3]
+
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V290]
+そうそう、図書館な。[r]こっちのカルデアにはあるんだよなー。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V300]
+自主練って気分じゃねえけど、[r]誰も相手してくんねーし、って時に行ってみてさ、[wait tVoice]
+[k]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V310]
+面白ぇマンガがあったんだよ。[r]なんつったかな、名前は忘れた。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V320]
+ちっちぇー女のガキが笑かしてくるヤツでさ、[r]遊んだり、失敗したりするマンガ！[wait tVoice]
+[k]
+
+？1：何かな～？
+
+[charaFace A 1]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V330]
+髪の短いガキでさ？[r]……あー。[wait tVoice]
+[k]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V340]
+アレだ、ロクスタにちょこっとだけ似て……[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 8]
+[wt 1.0]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V350]
+あーいや、うーん。[r]似てねーかも。んー？[wait tVoice]
+[k]
+
+
+[bgm BGM_EVENT_7 1.0 0.5]
+[messageOff]
+[charaTalk B]
+[charaFace B 0]
+[charaFadeinFSSideL B 0.4 -460,0]
+[charaMoveFSSideL B -450,0 0.5]
+[wt 0.4]
+
+＠ロクスタ
+[tVoice ValVoice_105700 0_V370]
+くくくくく。[r]ガキがガキって言ってら、です。[wait tVoice]
+[k]
+
+[messageOff]
+[cameraMove 1.0 50,-10 1.1]
+[charaMoveFSL B -500,0 0.5]
+[charaFadeout B 0.3]
+[charaFadeout A 0.3]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.5 -80,-10]
+[charaMove B -50,-10 0.5]
+[wt 0.5]
+
+
+＠ロクスタ
+[tVoice ValVoice_105700 0_V390]
+おまえなんか劇場版にしか出て来ない[r]サッカー少年ポジがいいとこの癖に生意気です！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 -50,-10]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V380]
+あっ、テメエいつの間に！[r]相変わらず訳分かんねえコト言って[line 3][wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 -50,-10]
+
+＠ロクスタ
+[tVoice ValVoice_105700 0_V410]
+え？[wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 -50,-10]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V400]
+ん？[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 4]
+[subRenderFadein #A 0.3 -250,-310]
+[subRenderMove #A -250,-260 0.3]
+[wt 0.3]
+
+＠仔犬
+[tVoice ValVoice_105700 0_V430]
+バウ？[wait tVoice]
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3 0]
+[subRenderMove #A -250,-310 0.3]
+[charaFadeout A 0.3]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 -50,-10]
+
+＠ロクスタ
+[tVoice ValVoice_105700 0_V420]
+ええっ、劇場版の後にテレビにも原作にも出てる？[r]げげえ！　そうなんだー！[wait tVoice]
+[k]
+
+[charaFace B 25]
+
+＠ロクスタ
+[tVoice ValVoice_105700 0_V360]
+うわーんそんなの英霊が知る訳ないだろ！[r]キノコ食って死ねバーカ！[wait tVoice]
+[k]
+
+[messageOff]
+[se ade97]
+[charaMove B -300,-10 0.5]
+[charaFadeout B 0.5]
+[wt 2.0]
+
+[cameraHome 0.5]
+[wt 0.5]
+
+[bgm BGM_EVENT_7 1.0 1.0]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V440]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V450]
+……ま、まあアレだ。ともかくだ。[r]そのマンガに出てきた『肩たたき券』ってのを参考に、[wait tVoice]
+[k]
+
+？2：ああ、アレかな……？
+
+[charaFace A 9]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V460]
+心当たりあんのか？[r]へー、やるじゃねえか！[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 6]
+[subRenderFadein #A 0.3 -200,-300]
+[subRenderMove #A -200,-250 0.3]
+[wt 0.3]
+
+＠仔犬
+[tVoice ValVoice_105700 0_V470]
+バウバウ！[wait tVoice]
+[k]
+
+
+[messageOff]
+[subRenderFadeout #A 0.3 0]
+[subRenderMove #A -200,-300 0.3]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V480]
+まあ、ともかくだ。[r]そのマンガに出てきた『肩たたき券』ってのを参考に、[wait tVoice]
+[k]
+
+？！
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V490]
+ちょびっとアレンジ加えた代物だ。[r]好きな時に使ってくれ！[wait tVoice]
+[k]
+
+？1：うん、ありがとう
+？！
+
+[messageOff]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+？1：ありがとうなんだけど……これ、何？
+
+[charaFace A 1]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V500]
+ん。[wait tVoice]
+[k]
+
+
+？2：ごめん、これどういう券[&なんだ？:なの？]
+
+[charaFace A 8]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V510]
+ありゃ、分かんねーか？[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V520]
+ンなの、読んだままだぜ。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 3]
+[wt 1.0]
+
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V530]
+[f large]その名も[wt 1.6]『ぶっ叩き券』！[wait tVoice][wt 0.7][cueSe SE_21 21_ade620][effect bit_talk_41_fs 0,0][bgm BGM_EVENT_146 1.0]
+[k]
+
+[cueSeStop 21_ade620 0.1]
+[effectStop bit_talk_41_fs]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V540]
+気に入らない奴がいたら、[r]オレが代わりにぶっ叩いてやる[line 3]って券だ！[wait tVoice]
+[k]
+
+？1：なる……ほど……！
+？2：そのまんまだ！
+
+[messageOff]
+[charaTalk C]
+[charaFace C 0]
+[subRenderFadein #A 0.3 -200,-300]
+[subRenderMove #A -200,-250 0.3]
+[wt 0.3]
+
+＠仔犬
+[tVoice ValVoice_105700 0_V550]
+バウバウ！[wait tVoice]
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3 0]
+[subRenderMove #A -200,-300 0.3]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 5]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V560]
+ははは、だな。まんまだな！[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 1]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V570]
+あ、弱い奴とかただの人間とか叩くのは基本パスな。[r]最低限、サーヴァントじゃねーと……[wait tVoice]
+[k]
+
+[charaFace A 12]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V580]
+あーでも、分っかンねーよな！[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V590]
+すげー強くてすげー嫌な人間とか、[r]とんでもねー猪とかも世の中にゃいるしなあ。[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V600]
+うーん、そっか。[r]そうだよな……ん～～～～～～～～。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V610]
+ま、ともかく、好きに使ってくれ！[r]全部で十回使えっからさ！[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 5]
+[subRenderFadein #A 0.3 -200,-300]
+[subRenderMove #A -200,-250 0.3]
+[wt 0.3]
+
+＠仔犬
+[tVoice ValVoice_105700 0_V620]
+バウ！　バウバウ！[wait tVoice]
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3 0]
+[subRenderMove #A -200,-300 0.3]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 1]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V630]
+あとはまあ……アレだな。[r]おまえのコトぶっ叩いてやってもいいぜ？[wait tVoice]
+[k]
+
+
+？1：おっとそうきたか
+？2：パードゥン？
+？！
+
+[charaFace A 12]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V640]
+あん。何、変な顔してんだ？[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 1]
+[subRenderFadein #A 0.3 -200,-300]
+[subRenderMove #A -200,-250 0.3]
+[wt 0.3]
+
+＠仔犬
+[tVoice ValVoice_105700 0_V650]
+バウ！　バウバウバウ、バウ。[wait tVoice]
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3 0]
+[subRenderMove #A -200,-300 0.3]
+[wt 0.3]
+
+[bgmStop BGM_EVENT_146 1.5]
+
+[charaTalk A]
+[charaFace A 8]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V660]
+ん[line 3][wait tVoice]
+[k]
+
+
+[charaFace A 4]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V670]
+…………あ、確かにオレ変なこと言ったな。悪ィ。[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V680]
+なしなし、今のナシだ。あークソ！[r]そう思ったらめちゃくちゃ恥ずくなってきた……[wait tVoice]
+[k]
+
+[charaFace A 14]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V690]
+顔熱ィな、クソ！！[wait tVoice]
+[k]
+
+[charaFace A 15]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V700]
+あー、っと。だから、だな。[r]おまえのこともぶっ叩く、ってのは[line 3][wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V710]
+鍛錬したくなったら付き合ってやる、ってコト！[r]そんだけだ！[wait tVoice]
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[subRenderFadein #A 0.3 -200,-300]
+[subRenderMove #A -200,-250 0.3]
+[wt 0.3]
+
+＠仔犬
+[tVoice ValVoice_105700 0_V720]
+バウ？[wait tVoice]
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3 0]
+[subRenderMove #A -200,-300 0.3]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 2]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V730]
+ンな遠回りな喧嘩の売り方する訳ねーだろ！[r]わかれ！[wait tVoice]
+[k]
+
+？1：（微笑んで頷く）
+
+[charaFace A 14]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V740]
+お、おう。[wait tVoice]
+[k]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V750]
+……。[r]……。[wait tVoice]
+[k]
+
+？2：喧嘩売られたとは思ってないよ、大丈夫
+
+[charaFace A 12]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V760]
+そう[line 3]なのか？[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+[charaMoveScale A 1.2 0.6]
+[charaMove A 0,12 0.6]
+[wt 0.2]
+[se adm36]
+[wt 0.5]
+[seStop adm36 0.1]
+[wt 0.2]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V770]
+……………………。[wait tVoice]
+[k]
+
+[messageOff]
+[charaMoveScale A 1.0 0.6]
+[charaMove A 0,0 0.6]
+[wt 1.0]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V780]
+……ああ、本当にそうみたいだな。[r]顔見りゃ分かる。[wait tVoice]
+[k]
+
+[charaFace A 10]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V790]
+流石はマスター。[r]分かってンじゃねーか。[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V800]
+……ほっ。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V810]
+じゃ、長々呼び止めて悪かったな！[r]バレンタインってやつ、頑張れよ。[wait tVoice]
+[k]
+
+＠セタンタ
+[tVoice ValVoice_105700 0_V820]
+オレはもう行くわ。[r]またな！[wait tVoice]
+[k]
+
+[messageOff]
+[se adm36]
+[charaFadeout A 0.4]
+[seStop adm36 1.5]
+[wt 1.7]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 6]
+[subRenderFadein #A 0.3 -200,-300]
+[subRenderMove #A -200,-250 0.3]
+[wt 0.3]
+
+＠仔犬
+[tVoice ValVoice_105700 0_V830]
+バウ！[wait tVoice]
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ade791]
+[cueSeVolume 22_ade791 0.0 0.4]
+[subRenderFadeout #A 0.4]
+[cueSeStop 22_ade791 1.5]
+[wt 1.6]
+
+
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

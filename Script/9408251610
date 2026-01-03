@@ -1,0 +1,903 @@
+
+＄94-08-25-16-1-0
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1009000 1 モードレッド]
+[charaSet B 3019001 1 アルトリア]
+[charaSet C 98006300 1 ？？？]
+[charaFilter C silhouette 00000080]
+
+[charaSet D 1098213600 1 おかあさん]
+[charaFilter D silhouette 00000080]
+
+[charaSet E 6005001 1 ジャック]
+[charaSet F 1098265900 1 偽フォルネウス]
+
+[charaSet G 3019001 1 エフェクト用]
+[charaSet H 3019001 1 エフェクト用]
+[charaDepth G 10]
+[charaDepth H 10]
+[charaSet I 3019001 1 エフェクト用]
+[charaSet J 3019001 1 エフェクト用]
+[charaSet K 6005001 1 ジャック_シルエット]
+
+[sceneSet L 10001 1]
+[charaScale L 1.1]
+[sceneSet M 185600 1]
+[charaScale M 1.2]
+[pictureFrame cut063_cinema]
+
+[sceneSet X 10000 1]
+[charaScale X 1.1]
+[charaFilter X silhouette FFFFFF00]
+
+[charaEffect I bit_talk_white_fog01 0,-200]
+[charaFadeTime L 0.1 0.4]
+
+[charaTalk depthOff]
+
+[charaDepth L 1]
+[charaDepth B 2]
+[charaDepth C 2]
+[charaDepth E 2]
+[charaDepth D 3]
+[charaDepth A 3]
+[charaDepth F 3]
+
+[scene 185600]
+[fadein black 1.0]
+[wait fade]
+
+
+
+[bgm BGM_BATTLE_135 0.1]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.4 0,-50]
+[charaEffect A bit_talk_charge_red]
+[cueSe NoblePhantasm_100900 NP_100900_2]
+[wt 0.5]
+
+＠モードレッド
+……赤雷よ！
+[k]
+
+[messageOff]
+
+[charaEffect A bit_talk_charge_red]
+[backEffect bit_talk_lightning_02r]
+[wt 1.0]
+
+[cueSe NoblePhantasm_100900 NP_100900_4]
+[seStop NP_100900_2 0.4]
+[charaDepth X 10]
+[charaFadein X 0.2 0,-200]
+[wt 0.2]
+
+[charaFadeTime L 0.1 0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaEffectStop A bit_talk_charge_red]
+[backEffectStop bit_talk_lightning_02r]
+[charaEffectDestroy I bit_talk_white_fog01]
+[wt 1.0]
+
+[cueSeStop NP_100900_4 1.5]
+
+[se ad608]
+
+[charaFadeout X 1.5]
+[shake 0.01 3 2 1.5]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+
+＠モードレッド
+どうだ！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+[cueSe Servants_404800 m49608 0]
+[seVolume m49608 0.4 1.0]
+[charaFadeTime L 1.0 0.4]
+[charaEffect I bit_talk_white_fog01 0,-200]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+＠モードレッド
+クソ……今ので散らせねえのかよ。
+[k]
+
+[messageOff]
+[charaEffect A bit_talk_debuff]
+[se bas13]
+[wt 1.5]
+
+＠モードレッド
+……ったく、何なんだよこの[#都市:ま　ち]は。[r]これ、本当に霧なのかよ？
+[k]
+
+[charaFace A 4]
+
+＠モードレッド
+あまりに重苦しくて、肺が圧し潰れそうだ……！
+[k]
+
+[messageOff]
+[charaTalk F]
+[cueSe SE_23 23_ade863]
+[wt 1.0]
+[seStop 23_ade863 1.5]
+[wt 1.0]
+
+[charaFace A 7]
+
+＠モードレッド
+まずい……魔獣赫が外に……！
+[k]
+
+[messageOff]
+[charaEffect A bit_talk_debuff]
+[se bas13]
+[charaFace A 4]
+[charaShake A 0.03 3 3 0.4]
+[wt 1.5]
+
+＠モードレッド
+ぐぅっ！　がああああっ……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaEffect C bit_talk_blood_aura_fs]
+[se ade280]
+[cueSe SE_22 22_ade807]
+[seVolume 22_ade807 0 0.5]
+[cueSe SE_22 22_ad1213]
+[wt 1.5]
+[seStop ade280 1.5]
+[seStop 22_ade807 1.5]
+[seStop 22_ad1213 1.5]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+＠モードレッド
+クソが……！
+[k]
+
+[messageOff]
+[bgm BGM_BATTLE_135 1.5 0.4]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaEffectDestroy C bit_talk_blood_aura_fs]
+[charaEffectDestroy C bit_talk_blood_aura_back_fs]
+[scene 185600]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1]
+[wait wipe]
+[scene 185700]
+
+[charaPut I 0,100]
+[charaFadeTime L 0.1 0.7]
+
+[wt 0.3]
+[wipein rectangleStripDownToUp 0.4 1]
+[wait wipe]
+
+
+
+[bgm BGM_BATTLE_135 1.5 1.0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 0,-50]
+[wt 0.4]
+
+＠アルトリア
+全てが霧に呑まれてゆく。[r]否……これは霧というより雲か。
+[k]
+
+＠アルトリア
+なるほど。第四模倣特異点は、[r]螺旋証明世界の上層に位置する。
+[k]
+
+＠アルトリア
+[#此処:こ　こ]は、概念的には[#天:ソラ]に近い。
+[k]
+
+[messageOff]
+[charaTalk F]
+[cueSe SE_23 23_ade863 0.4]
+[wt 1.0]
+[seStop 23_ade863 1.0]
+[wt 1.0]
+
+＠アルトリア
+……魔獣赫がアングルボダの封印を破るか。
+[k]
+
+＠アルトリア
+ここに来て、急激に力を増している。[r]ソドムズビーストに呼応しているのか[line 3]
+[k]
+
+＠アルトリア
+だが侮るな、魔獣赫よ。[r][#此処:こ　こ]がソラであるならば、嵐の王である私の領域だ。
+[k]
+
+[messageOff]
+[charaEffect B bit_talk_36]
+[se ad39]
+[wt 1.5]
+[charaFace B 5]
+
+＠アルトリア
+[line 3]聖槍、[#抜錨:ばつびょう]。
+[k]
+
+＠アルトリア
+突き立て。喰らえ。[r]十三の牙[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_135 1.0]
+[charaScale C 1.5]
+[charaPut C 0,100]
+[charaBackEffect C bit_talk_blood_aura_fs 0,200 V]
+[charaBackEffect C bit_talk_blood_aura_back_fs 0,0 V]
+[se ade280]
+[cueSe SE_22 22_ade807]
+[seVolume 22_ade807 0 0.5]
+[cueSe SE_22 22_ad1213]
+[wt 1.5]
+[seStop ade280 1.5]
+[seStop 22_ade807 1.5]
+[seStop 22_ad1213 1.5]
+[charaFace B 0]
+
+＠アルトリア
+[line 9]何？
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.3 1]
+[wait wipe]
+[charaPut C 1200,1200]
+[charaPut B 1200,1200]
+[scene 10000]
+[wt 0.1]
+[wipein rectangleStripDownToUp 0.3 1]
+[wait wipe]
+
+[effect bit_talk_v_slash02]
+[se ad85]
+[wt 1.0]
+
+[wipeout rectangleStripDownToUp 0.3 1]
+[wait wipe]
+[charaBackEffectDestroy C bit_talk_blood_aura_fs]
+[charaBackEffectDestroy C bit_talk_blood_aura_back_fs]
+[charaPut C 0,100]
+[charaPut B 0,-50]
+[charaScale B 1.1]
+[scene 185700]
+[wt 0.1]
+[wipein rectangleStripUpToDown 0.3 1]
+[wait wipe]
+
+
+[effect bit_talk_14]
+[se ad32]
+[charaEffectStop B bit_talk_36]
+[charaShake B 0.03 3 3 0.4]
+[charaFace B 4]
+[wt 1.2]
+
+＠アルトリア
+クッ……！[bgm BGM_MAP_19 0.1]
+[k]
+
+[charaFace B 0]
+
+＠アルトリア
+……何故だ？[r]何故、貴様が[line 3]
+[k]
+
+[messageOff]
+[cueSe SE_23 23_ade863]
+[wt 1.0]
+[seStop 23_ade863 1.0]
+[wt 0.2]
+[cueSe Servants_403900 bac1395 0]
+[wt 0.3]
+[charaFace B 5]
+[cueSe Servants_1001300 m48509]
+[se ad85]
+[seVolume bac1395 0.7 1.0]
+[wt 0.1]
+[effect bit_talk_h_slash02_fs 0,0 H]
+[wt 0.4]
+[effect bit_talk_blow02]
+[wt 0.2]
+[effect bit_talk_14]
+[wt 0.1]
+[se ad170]
+[se ad880]
+[se ad1014]
+[se ad1015]
+[charaShake B 0.03 3 3 0.6]
+[wt 0.2]
+[se ad671 0.7]
+[charaMoveScale B 1.0 0.2]
+[charaMove B 0,-70 0.2]
+[wt 1.0]
+
+＠アルトリア
+[line 6]ッ！
+[k]
+
+
+[messageOff]
+[charaMove B 0,-65 0.3]
+[wt 0.15]
+[se ad442 0.6]
+[wt 0.6]
+[cueSe SE_22 22_ad1178]
+[wt 0.7]
+[effect bit_talk_41_fs]
+[cameraMove 0.3 -45,-45 1.5]
+[blur motion 0.2 4 10000 0.5 0.5 0.05 100]
+[bgmStop BGM_MAP_19 3.0]
+[wt 0.2]
+[fadeout black 0.1]
+[wait fade]
+
+[cameraHome 0.1]
+[blurOff motion 0.1]
+[charaFadeout B 0.1]
+[charaFadeout L 0.1]
+[charaPut I 2000,2000]
+
+[effectDestroy bit_talk_41_fs]
+[charaEffectDestroy C bit_talk_blood_aura_fs]
+[charaEffectDestroy C bit_talk_blood_aura_back_fs]
+[scene 10000]
+[wt 0.1]
+[fadein black 0.1]
+[wait fade]
+
+[se ad809 0.6]
+[se ad1014]
+[se ad881]
+[charaDepth X 0]
+[charaFadein X 0.1 0,-200]
+[wt 0.1]
+[charaFadeout X 0.2]
+[wt 1.9]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaScale C 1.0]
+[charaPut I 0,-100]
+[charaFadeTime L 0.1 0.4]
+
+[scene 185600]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_63 0.1]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+[wt 0.2]
+[charaChange A 1009001 6 fade 0.4]
+[se ade355]
+[wt 0.4]
+
+＠モードレッド
+させるかよ、魔獣赫！[r]この魔霧ごと、テメエをぶった斬る！
+[k]
+
+[messageOff]
+[charaEffect A bit_talk_charge_red]
+[cueSe NoblePhantasm_100900 NP_100900_2]
+[wt 1.0]
+
+[charaFadeTime L 0.5 0.7]
+
+[wt 1.5]
+[se ad437 0.2]
+[wt 0.4]
+
+＠C：？？？
+いつまで……[r]いつまで騎士ごっこをやっているの？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[seStop NP_100900_2 0.4]
+[charaEffectDestroy A bit_talk_charge_red]
+[charaPut A 1200,1200]
+
+[se ad592 0.3]
+[wt 0.4]
+[charaScale C 1.05]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.7 0,-25]
+[wt 1.7]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,-50]
+
+＠モードレッド
+…………！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-25]
+
+＠C：？？？
+貴方はアーサー王の嫡子……[r]その生命の精髄を生き写した王の分身……
+[k]
+
+＠？？？
+ねえ、そうでしょう……
+[k]
+
+[charaTalk off]
+
+[messageOff]
+[se ade385]
+[wt 0.2]
+
+[charaFace D 0]
+[charaFadeout C 0.8]
+[charaFadein D 0.8 -15,-50]
+[seStop ade385 1.0]
+[wt 1.4]
+
+
+＠おかあさん
+[line 3]我が子、モードレッドよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,-50]
+
+＠モードレッド
+………………母上、か？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 -15,-50]
+
+＠おかあさん
+[line 9]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+＠モードレッド
+そうか……そういうことかよ。[r]テメエ、切り裂きジャックだな……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFilter K silhouette 00000080]
+[bgmStop BGM_MAP_63 2.0]
+[charaTalk off]
+[charaDepth E 2]
+[charaDepth K 3]
+[charaFace D 0]
+[charaFadein D 0.1 -15,-50]
+[wt 0.1]
+[fowardEffect bit_talk_atomization]
+[wt 0.6]
+[se ade153 0.5]
+[charaFadeout D 0.7]
+[charaFace K 5]
+[charaFadein K 0.1 25,-50]
+[wt 0.1]
+[charaFadein E 0 25,-50]
+[wt 0.7]
+[se ad595 0.6]
+[charaFadeout K 1.0]
+[wt 2.4]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_72 0.1]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+
+＠モードレッド
+アサシン風情が！[r]ずいぶんと舐めた真似してくれたな！
+[k]
+
+[messageOff]
+[charaEffect A bit_talk_charge_red]
+[cueSe NoblePhantasm_100900 NP_100900_2]
+[wt 1.0]
+
+＠モードレッド
+ブッ殺してやる！[r]テメエは、もうおしまいだ！
+[k]
+
+[seStop NP_100900_2 2.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-50]
+
+＠ジャック？
+[line 9]。
+[k]
+
+[bgmStop BGM_EVENT_72 1.5]
+[charaFace E 1]
+＠ジャック？
+[line 3]ああ、そうだ。[r]これで、終わりだ。
+[k]
+
+[charaEffectDestroy A bit_talk_charge_red]
+[seStop NP_100900_2 0.4]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+
+＠モードレッド
+……何！？
+[k]
+
+[bgm BGM_MAP_19 0.1]
+[messageOff]
+[charaTalk F]
+[cueSe SE_23 23_ade863]
+[wt 1.0]
+[seStop 23_ade863 1.0]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+
+＠モードレッド
+[line 3]ッ！[r]上だと！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth F 2]
+[charaDepth M 1]
+[charaDepth A 0]
+
+[charaScale M 1.2]
+[charaScale F 1.2]
+[se ad14 0]
+[seVolume ad14 0.2 1.0]
+[charaFadein M 0.4 0,-320]
+[charaMove M 0,-350 1.4]
+[shake 0.03 2 2 3.0]
+[wt 1.8]
+[charaFace F 0]
+[charaFadein F 0.7 0,15]
+[wt 2.0]
+[seStop ad14 1.2]
+[wt 1.0]
+
+[charaFadeout F 0.4]
+[charaFadeout M 0.4]
+[wt 0.4]
+[charaScale M 1.0]
+[charaScale F 1.0]
+
+[charaDepth A 3]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+
+＠モードレッド
+フォルネウス！？　第三特異点に[r]封印されている魔獣赫がなぜ……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 -150,-50]
+[charaEffect E bit_talk_blood_aura_fs 0,30]
+[charaBackEffect E bit_talk_blood_aura_back_fs 0,30]
+[se ade280]
+[cueSe SE_22 22_ade807]
+[seVolume 22_ade807 0 0.5]
+[cueSe SE_22 22_ad1213]
+[wt 1.0]
+[seStop ade280 1.5]
+[seStop 22_ade807 1.5]
+[seStop 22_ad1213 1.5]
+[wt 0.5]
+[charaMoveScale E 1.1 0.2]
+[charaMove E -120,-42 0.2]
+[se ad73]
+[charaFadeout E 0.1]
+[wt 0.1]
+[effect bit_talk_h_slash02_fs 0,0 F]
+[wt 0.1]
+[charaPut E 1200,1200]
+[wt 0.2]
+[cueSe Servants_603800 bac1218]
+[cueSe Servants_603800 bac1219]
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 80,-50]
+[cueSe SE_23 23_ade863]
+[wt 1.0]
+[seStop 23_ade863 1.0]
+[charaFadeout F 0.2]
+[wt 0.2]
+[charaRoll D 50]
+[charaRoll F 50]
+[charaPut D 0,-50]
+[charaPut F 0,-50]
+[charaEffect D bit_bolg_01 0,50]
+[charaEffect F bit_bolg_01 0,-50]
+[wt 0.1]
+[charaEffectStop D bit_bolg_01]
+[charaEffectStop F bit_bolg_01]
+[se ad85]
+[se adm15]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+
+＠モードレッド
+しまった……！
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_19 1.5]
+[cameraMove 0.3 0,-20 1.2]
+[wipeout circleIn 0.2 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaPut I 1200,1200]
+[charaFadeout L 0.1]
+[scene 10000]
+[wt 0.1]
+[cameraHome 0.1]
+[se bac145]
+[wt 0.2]
+[wipein circleIn 0.2 1]
+[wait wipe]
+
+[effect bit_talk_blood_stay]
+[cueSe SE_21 21_ad1118]
+[wt 2.0]
+
+[fadeout black 0.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,-50]
+[effectDestroy bit_talk_blood_stay]
+[charaPut I 0,-200]
+[charaFadeTime L 0.1 0.7]
+
+[scene 185600]
+[wt 0.2]
+[fadein black 1.0]
+[wait fade]
+
+＠モードレッド
+なっ……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+
+＠アルトリア
+…………ッ。
+[k]
+
+[messageOff]
+[charaShake B 0.03 3 3 0.4]
+[effect bit_talk_35]
+[se ad240]
+[wt 1.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+[bgm BGM_SEIHAI_3 0.1]
+
+＠モードレッド
+……父上？
+[k]
+
+[charaFace A 4]
+
+＠モードレッド
+あ……ああ……？
+[k]
+
+＠モードレッド
+ああ[line 3][r]ああああああああああ……！
+[k]
+
+[charaFace A 6]
+
+＠モードレッド
+[line 3][#これは違うだろうが]！[r]父う……アーサー王よ！
+[k]
+
+＠モードレッド
+貴方は私を顧みない！　一片の情も[line 3][r]憎しみさえも、何ひとつ私には与えない！
+[k]
+
+＠モードレッド
+それが貴方だろう！？[r]何故だ！？　何故こんな……！
+[k]
+
+＠モードレッド
+これは……こんなものは……[r][#王の振る舞いではない]ッ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale B 1.2]
+[charaScale M 1.2]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.7 0,-50]
+[charaFadein M 0.7 0,-250]
+[charaMove B -50,-50 30.0]
+[charaMove M -50,-250 30.0]
+[wt 0.8]
+
+＠アルトリア
+[line 9]。
+[k]
+
+＠アルトリア
+名も知らぬ騎士よ。[r]私には貴様の言うことが理解できぬ。
+[k]
+
+＠アルトリア
+私はもはやアーサーではない。[r]私は人を統べる王の機能を一切持ち合わせない。
+[k]
+
+＠アルトリア
+私は、ただ荒れ狂う嵐。[r]嵐に意味を問うな。心を問うな。
+[k]
+
+＠アルトリア
+嵐はただ、眼の前の全てを粉砕するのみ。[r]そして。
+[k]
+
+[messageOff]
+[charaEffect B bit_talk_36 30,0]
+[se ad39]
+[wt 1.2]
+[charaFace B 5]
+
+＠アルトリア
+我が前には魔獣の首が蠢くばかり。[r]路傍の騎士など、目には入らぬ[line 3]
+[k]
+
+
+[charaFace B 2]
+
+＠アルトリア
+[line 3]『[#最果てにて輝ける槍:ロ　　ン　　ゴ　　ミ　　ニ　　ア　　ド]』
+[k]
+
+[messageOff]
+[cueSe NoblePhantasm_301900 NP_301900_2 0]
+[seVolume NP_301900_2 1.0 1.0]
+[charaDepth X 10]
+[charaFadein X 1.0 0,-200]
+[bgmStop BGM_SEIHAI_3 1.0]
+[wt 1.0]
+[seStop NP_301900_2 1.0]
+[cueSe NoblePhantasm_301900 NP_301900_3]
+[charaEffectDestroy I bit_talk_white_fog01]
+[charaEffectDestroy B bit_talk_36]
+[charaFadeout B 0.1]
+[charaFadeout M 0.1]
+[charaFadeout L 0.1]
+[scene 10000]
+[wt 2.5]
+[seStop NP_301900_3 2.5]
+[wt 1.0]
+[charaFadeout X 1.5]
+[wt 1.5]
+
+
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

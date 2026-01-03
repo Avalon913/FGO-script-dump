@@ -1,0 +1,755 @@
+
+＄94-08-00-05-1-1
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098234900 1 ヨハンナ]
+[charaSet B 8001500 1 マシュ]
+[charaSet C 3026000 1 ジャンヌ・オルタ・サンタ・リリィ]
+[charaSet D 5004001 1 ナーサリー]
+[charaSet E 1019001 1 ラーマ]
+[charaSet F 1098124510 1 ダ・ヴィンチ]
+[charaSet G 1098231600 1 セミラミス]
+[charaSet H 98109000 1 作業員]
+
+[sceneSet N 179301 1]
+[sceneSet O 179302 1]
+
+[charaSet S 1098124510 1 通信用ダミー]
+
+[imageSet R cut429_suitcase01 1]
+
+[imageSet T back10000 1]
+[charaScale T 1.01]
+
+[imageSet U cut431_mono 1 1]
+[charaScale U 1.32]
+
+[charaDepth U 9]
+
+[charaPut S 2500,2500]
+[charaEffect S bit_talk_10_LowLevel]
+
+[scene 178701]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.4]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+
+＠作業員
+む、無念……！[r]お先に失礼します、工事長様！
+[k]
+
+[messageOff]
+[charaShake H 0.03 4 4 0.3]
+[charaMove H 0,-50 0.4]
+[charaFadeout H 0.4]
+[wt 0.4]
+
+[se ad144]
+[wt 0.7]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠セミラミス
+ふむ、ここまでか。
+[k]
+
+[messageOff]
+
+[subCameraOn 1]
+
+[charaLayer N sub #A]
+[charaLayer O sub #A]
+
+[charaDepth N 4]
+[charaDepth O 3]
+
+[charaScale N 1.6]
+[charaScale O 1.6]
+
+[subCameraFilter #A maskEdge cut359_mask08 3 0,0,0,255 1]
+[subRenderDepth #A 1]
+
+[charaFadein N 0.3 0,360]
+[charaFadein O 0.3 0,360]
+
+[subRenderFadein #A 0.4 0,-280]
+
+[blur lens 0.4 1 20]
+[wt 0.4]
+
+[se ad253]
+[se ad641]
+[wt 0.5]
+[charaFadeout N 0.7]
+[seVolume ad253 1.7 0.2]
+[wt 1.7]
+[seStop ad253 0.5]
+[wt 0.7]
+
+[blurOff lens 0.3]
+[subRenderFadeout #A 0.3]
+[charaFadeout O 0.5]
+[charaFadeout G 0.3]
+[scene 178702 0.3]
+[wt 0.5]
+
+[charaLayer N normal]
+[charaLayer O normal]
+
+[subCameraOff]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠ヨハンナ
+ぜーぜー……つ、疲れた……。[r]ようやく、一本目……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+がんばりましたー！[r]褒めてください、[#トナカイ:マ　ス　タ　ー]さーん！
+[k]
+
+？1：ナイスファイト！
+？！
+
+[charaFace C 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+へへー。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+……。[r]……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+＠セミラミス
+おい、何を羨ましそうに呆けている。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+う、羨ましそうにはしていませんが！
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+
+＠セミラミス
+まあ良い。コレをくれてやろう。[r]ここから先の汝にとり、必要な物ゆえな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+へ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+＠セミラミス
+……。[r]……コホン。
+[k]
+
+[charaFace G 3]
+
+＠セミラミス
+『らぶらぶはぁとヨハンナ様』～♪
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[effect bit_talk_hearts_dance]
+[cueSe SE_23 23_ade840]
+[wt 1.2]
+
+[charaFace A 5]
+
+＠ヨハンナ
+な、な、な、何ーーー！？
+[k]
+
+[messageOff]
+[effectStop bit_talk_hearts_dance]
+[cueSe SE_23 23_ade841]
+[wt 0.7]
+
+[wipeout heartOutBig 0.7 1]
+[wait wipe]
+
+
+[charaFadeout A 0.1]
+
+[effect bit_talk_diremond_dust02]
+
+[scene 10000]
+
+[wt 1.2]
+
+[wipein heartOutBig 0.7 1]
+[wait wipe]
+
+[wt 0.4]
+
+[charaFadein R 0.4 0,-200]
+[se ad568]
+[wt 1.6]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠
+祝福を、祝福を。[r]あなたの生に、あなたの献身に祝福を。
+[k]
+
+＠
+生は煌めき、死はくすんで、[r]喜びも悲しみも、その全てをこのカバンに詰めていく。
+[k]
+
+＠
+ぎちぎち、ぎちぎち。
+[k]
+
+＠
+短くとも沢山の[#荷物:おもいで]を抱えた者、[r]長くとも少ない[#荷物:おもいで]しかない者。
+[k]
+
+＠
+カバンの重さは、人によって様々です。[r]辛いこともあるでしょう。喜ばしいこともあるでしょう。
+[k]
+
+＠
+時に、辛い荷物を捨てる人だっているでしょう。
+[k]
+
+＠
+[line 3]では、最初から荷物のないあなたは？
+[k]
+
+＠
+その答えは目の前に、いつもあるのに。
+[k]
+
+＠
+もっとも。[r]こんなところでは、まだ分からないだろうけど。
+[k]
+
+＠
+これはあなたの旅路。[r]あなたの人生、あなたの物語。
+[k]
+
+[messageOff]
+
+[subCameraOn 1]
+
+[charaLayer O sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask07 3 255,255,255,255 1]
+[subRenderDepth #A 1]
+
+[charaScale O 1.2]
+[charaFadein O 0.3 -75,0]
+
+[subRenderFadein #A 0.6 0,-160]
+[subRenderMove #A 0,-200 0.6]
+[se ad14]
+[subRenderMoveScale #A 1.1 0.6]
+[wait subRenderMoveScale]
+
+
+[wt 0.6]
+[seStop ad14 0.2]
+
+
+＠
+あなたのための、巨大像。
+[k]
+
+
+＠ヨハンナ
+[messageShake 0.03 5 5 0.3]
+急に出てこられると怖い！？
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_1 1.0]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout O 0.1]
+
+[charaLayer O normal]
+
+[subCameraOff]
+
+[charaFadeout R 0.1]
+
+[effectStop bit_talk_diremond_dust02]
+[effectDestroy]
+
+
+[scene 117801]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+[charaMove A 0,0 0.3]
+[se ad7]
+[wt 0.3]
+
+＠ヨハンナ
+……あれ？　ここは……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_77 0.1]
+
+
+＠マシュ
+ヨハンナさん！[r]お気付きになりましたか！
+[k]
+
+＠マシュ
+マスター！[r]ヨハンナさん、お目覚めになりました！
+[k]
+
+？1：大丈夫！？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+あ、はい。[r]大丈夫……です、けど。
+[k]
+
+＠ヨハンナ
+一体何があったんですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい。
+[k]
+
+[charaFace B 12]
+
+＠マシュ
+セミラミスさんとの戦いの後、[r]ヨハンナさんは何かを与えられて[line 3]
+[k]
+
+＠マシュ
+そのまま、倒れてしまったのです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+倒れた……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ラーマ
+セミラミスによると、[r]それは汝にとって必要なものだった、らしい。
+[k]
+
+＠ラーマ
+大丈夫か？　[#身体:しんたい]に異常は？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+異常は……ないと思いますが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+ヨハンナさーーーんっ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ナーサリー・ライム
+起きたのね。大丈夫かしら？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+え、ええ。[r]特に体は何ともない、です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+こちらの計測でも、霊基数値に異変はない。[r]それで、何があったのかな？
+[k]
+
+[charaPut S 2500,2500]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+いえ、私にも何が何だか。[r]ただ[line 3]
+[k]
+
+[messageOff]
+[charaTalk U]
+[charaFadein U 0.4 0,-360]
+[wt 0.4]
+
+＠
+[charaTalk U]
+あの独白は、[r]あの想いは、
+[k]
+
+＠
+[charaTalk U]
+私に欠けているものを、諭すような口ぶりで。
+[k]
+
+[messageOff]
+[charaFadeout U 0.4]
+[charaFadeout A 0.4]
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ラーマ
+ただ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+すみません、何でもありません。[r]えっと……時間帯は……夜、でしょうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい。マスターと話し合って、[r]本日は、このまま休みにしようと思うのですが。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+そうですね。[r]セミラミス様は強敵でしたし……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠セミラミス
+ほう、強敵だったか。[r]それは重畳。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+いるーーー！？[r]え、あの、消滅しなかったのです？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠セミラミス
+鎖が砕かれ、戦闘能力は喪失した。[r]まあ、退去しても問題ないのだが。
+[k]
+
+[charaFace G 12]
+
+＠セミラミス
+それではつまらぬのでな。[r]しばし、様子を見させてもらおう。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+はぁ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠セミラミス
+何、我は加わるつもりはない。[r]使い魔を通して、観戦するだけよ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ラーマ
+何と。[r]なぜ、そのような真似を？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠セミラミス
+ふふ、何故[line 3]か。[r]我も女帝、祝祭の重要性は身に沁みておるのでな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+しゅくさい？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+
+＠ナーサリー・ライム
+お祭り？[r]ふふ、いい響きね。とても楽しそう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+祝祭とは、一体何の[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk depthOff]
+[charaDepth T 9]
+[charaDepth G 7]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.5]
+[charaFaceFade G 12 0.3]
+[effect bit_talk_fade_pause]
+[wt 1.6]
+
+
+？1：あと、『らぶらぶはぁとヨハンナ様』は
+？2：恥ずかしかったですか？
+？！
+
+[effectStop bit_talk_fade_pause]
+[wt 0.6]
+
+[charaFace G 3]
+[bgm BGM_EVENT_146 0.1]
+
+
+＠セミラミス
+まあ、それなりに恥ずかしかった……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ヨハンナ
+ですよね！！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_146 2.0]
+[wait fade]
+[soundStopAll]
+[end]

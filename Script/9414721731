@@ -1,0 +1,1632 @@
+
+
+
+
+＄94-14-72-17-3-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1098333000 1 テスカトリポカ]
+[charaSet B 23011002 1 玉兎輝夜]
+[charaSet C 23011000 1 玉兎（演出用）]
+[charaSet D 2029002 1 藤乃]
+[charaSet E 2029002 1 藤乃（演出用）]
+[charaSet F 23010002 1 テノチティトラン・バニー]
+[charaSet G 4058000 1 クリームヒルト]
+[charaSet H 2036000 1 刑部姫]
+[charaSet I 7052000 1 呼延灼]
+[charaSet J 1098276910 1 マシュ]
+[charaSet K 1098332800 1 ？？？]
+[charaSet L 1044400 1 斎藤一]
+[charaSet M 1098332700 1 黒髭]
+[charaSet N 3025000 1 清姫]
+
+[sceneSet O 10000 1]
+[sceneSet P 10000 1]
+[sceneSet Q 10001 1]
+
+[sceneSet R 260300 1]
+[sceneSet S 110100 1]
+[sceneSet T 260300 1]
+[sceneSet U 260300 1]
+[sceneSet V 260301 1]
+
+[sceneSet W 10000 1]
+[charaScale W 1.1]
+
+[imageSet X cut106_trans 1]
+
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 260300]
+
+[bgm BGM_BATTLE_216 0.1]
+
+[charaTalk depthOff]
+[charaDepth Z 15]
+[charaDepth Y 10]
+[charaDepth B 2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+[wt 0.2]
+
+[cueSe SE_24 24_ade1034]
+[charaMoveEase B 0,-8 0.4 easeOutSine]
+[wt 0.4]
+[cueSeStop 24_ade1034 0.2]
+[wt 0.55]
+
+[se ad678]
+[se ad1006]
+[wt 0.05]
+[charaPut Y 1]
+[charaEffect Y bit_talk_quickmove]
+[charaMoveEase B 0,10 0.3 easeOutCubic]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[wait charaSpecialEffect B]
+[wt 0.35]
+
+[wipeout rectangleStripUpToDown 0.35 1.0]
+[wait wipe]
+
+[pictureFrame cut063_cinema]
+
+[charaDepth Y 10]
+[charaDepth R 2]
+
+[charaPut Y 1]
+[charaEffect Y bit_talk_41_fs]
+
+[charaScale R 1.4]
+[charaFadein R 0.1 0,-480]
+[charaShake R 0.01 1 1 0]
+
+[se ad556]
+[seVolume ad556 0 0]
+
+[wt 0.6]
+
+[seVolume ad556 0.6 0.6]
+
+[wipein rectangleStripDownToUp 0.35 1.0]
+[wait wipe]
+
+[subCameraOn 3]
+
+[charaLayer B sub #A]
+[charaLayer S sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask04 5 0,0,0,255 0]
+
+[subRenderDepth #A 1]
+
+[subRenderScale #A 1.01]
+
+[charaDepth S 2]
+[charaDepth B 3]
+
+[charaScale S 1.4]
+[charaScale B 1.5]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0 120,275]
+[charaFadein S 0 120,0]
+[wt 0.55]
+
+
+[se ad442]
+[subRenderFadein #A 0.3 0,-375]
+[charaMoveEase B 0,275 0.3 easeOutCubic]
+[charaMoveEase S 0,0 0.3 easeOutCubic]
+[wt 1.05]
+
+[subRenderFadeout #A 0.3]
+[charaMoveEase B -120,275 0.3 easeOutCubic]
+[charaMoveEase S -120,0 0.3 easeOutCubic]
+[wt 0.4]
+
+
+[seStop ad556 0.6]
+
+[se ad715]
+[cueSe SE_21 21_ade546]
+[wt 0.1]
+
+[se ad774]
+[seVolume ad774 0 0.6]
+
+[fowardEffect bit_talk_h_slash01_fs]
+
+[charaMoveScaleEase R 1.6 0.4 easeOutCubic]
+[charaMoveEase R 0,-585 0.4 easeOutCubic]
+[wt 0.2]
+
+[se ade344]
+[seVolume ade344 0 0.5]
+[se ad789]
+[seVolume ad789 0 0.3]
+[wt 0.1]
+
+[fadeout white 0.2]
+[wait fade]
+
+[fowardEffectDestroy bit_talk_h_slash01_fs]
+
+[seStop ad774 1.0]
+
+[wt 1.0]
+
+[seStop ade344 1.0]
+
+[charaFadeout R 0]
+[charaShakeStop R]
+[charaPut Y 2000,2500]
+[charaEffectDestroy Y bit_talk_41_fs]
+
+[charaFadeout B 0]
+[charaFadeout S 0]
+
+[charaLayer B normal]
+[charaLayer S normal]
+[charaScale B 1.0]
+[charaScale S 1.0]
+
+[pictureFrame]
+[wt 0.2]
+
+[fadein white 0.8]
+[wait fade]
+[wt 0.05]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠テスカトリポカ
+この地獄妻が[line 3]！
+[k]
+
+[messageOff]
+
+[charaDepth A 2]
+[charaDepth R 3]
+[charaDepth B 4]
+[charaDepth D 4]
+
+[charaScale B 1.0]
+[charaScale R 1.2]
+
+[charaFadein R 0.4 0,-260]
+[charaMoveEase R -100,-260 0.5 easeOutSine]
+[wt 0.6]
+
+[charaFadeout A 0.1]
+[wt 0.15]
+
+[se ad223]
+[charaPut Y 1]
+[charaEffect Y bit_talk_quickmove]
+
+[charaTalk B]
+[charaFace B 0]
+[charaPut B 1]
+[charaSpecialEffect B appearanceReverse 1 0.3]
+[wait charaSpecialEffect B]
+[wt 0.75]
+
+＠玉兎輝夜
+夜も明ける。婚活も終わりの時間。[r]藤乃さん。あなたがやる？　それとも私でいい？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+
+＠藤乃
+[line 3]引っ込んでいてください。私がやります。
+[k]
+
+[messageOff]
+
+[bgm BGM_BATTLE_216 1.0 0.6]
+
+[charaTalk off]
+
+[charaDepth R 2]
+[charaDepth D 3]
+[charaDepth T 4]
+[charaDepth E 5]
+[charaDepth W 6]
+
+[charaScale T 1.4]
+[charaScale E 1.4]
+
+[charaFace E 12]
+[charaFadein E 0.8 0,15]
+[charaFadein T 0.8 -130,-340]
+[wt 0.8]
+
+[charaFadeout D 0.1]
+[charaFadeout R 0.1]
+[wt 0.25]
+
+＠藤乃
+[f large]『[#凶:まが]れ』
+[k]
+
+[messageOff]
+
+[bgmStop BGM_BATTLE_216 1.5]
+
+[charaLayer X sub #B]
+[charaLayer Y sub #B]
+[charaLayer D sub #B]
+[charaLayer R sub #B]
+
+[charaLayer O sub #MASK]
+[charaLayer P sub #MASK]
+[charaLayer Q sub #MASK]
+
+[subCameraFilter #B mask #MASK]
+
+[subRenderDepth #B 2]
+
+[subRenderScale #B 1.0]
+
+[charaDepth Q 6]
+[charaDepth O 7]
+[charaDepth P 8]
+
+[charaScale O 1.2]
+[charaScale P 1.2]
+[charaScale Q 1.2]
+
+[charaFadein Q 0 0,0]
+[charaFadein O 0 900,0]
+[charaFadein P 0 -900,0]
+
+[charaDepth R 2]
+[charaDepth D 3]
+[charaDepth X 4]
+[charaDepth Y 5]
+
+[charaScale R 1.8]
+[charaScale D 2.0]
+[charaScale X 2.0]
+
+[charaFace D 12]
+[charaFadein D 0 -30,142]
+[charaFadein R 0 -450,-150]
+
+[charaFadein W 0.4 1]
+
+[subRenderFadein #B 0.4 25,25]
+[charaMoveEase D -30,42 0.4 easeOutCubic]
+[charaMoveEase R -450,-250 0.4 easeOutCubic]
+[wt 0.65]
+
+[charaFadein X 0.5 0,-375]
+[cueSe NoblePhantasm_202900 NP_202900_5]
+[charaPut Y -17,-117]
+[charaEffect Y bit_talk_takasugi_eye]
+
+[wt 1.7]
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[cueSeStop NP_202900_5 0.6]
+[wait wipe]
+
+[subRenderFadeout #B 0.1]
+
+[charaFadeout X 0]
+[charaFadeout D 0]
+[charaFadeout R 0]
+[charaPut Y 2000,2500]
+[charaEffectDestroy Y bit_talk_takasugi_eye]
+
+[charaFadeout O 0]
+[charaFadeout P 0]
+[charaFadeout Q 0]
+
+[subCameraOff]
+[charaLayer X normal]
+[charaLayer Y normal]
+[charaLayer D normal]
+[charaLayer R normal]
+[charaLayer O normal]
+[charaLayer P normal]
+[charaLayer Q normal]
+[charaScale X 1.0]
+[charaScale Y 1.0]
+[charaScale D 1.0]
+[charaScale R 1.0]
+[charaScale O 1.0]
+[charaScale P 1.0]
+[charaScale Q 1.0]
+[wt 0.2]
+
+[charaFadeout W 0.1]
+[charaFadeout T 0.1]
+[charaFadeout E 0.1]
+
+[charaEffect Y bit_talk_pressure_fs]
+
+[charaDepth A 2]
+[charaDepth R 3]
+[charaDepth V 4]
+
+[charaScale R 1.45]
+[charaFadein R 0.1 0,-440]
+
+[wt 0.3]
+
+[se ad650]
+[seVolume ad650 0 0]
+
+[wt 0.1]
+
+[charaMoveScale R 1.5 2.2]
+[charaMove R 0,-470 2.2]
+
+[seVolume ad650 0.6 0.8]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 1.7]
+
+
+[seStop ad650 0.3]
+[cueSe NoblePhantasm_202900 NP_202900_9]
+[fadeout white 0.1]
+[wait fade]
+
+[scene 260301]
+
+[charaPut Y 1]
+
+[charaScale V 1.5]
+[charaFadein V 0 0,-470]
+[charaFadeout R 0]
+
+[charaShake V 0.02 6 8 0]
+
+[fadein white 0.1]
+[wait fade]
+
+[wt 1.5]
+
+[charaShake V 0.03 3 5 0]
+[wt 1.2]
+
+[charaShake V 0.01 1 2 0]
+[wt 0.2]
+
+[charaEffectStop Y bit_talk_pressure_fs]
+[wt 0.8]
+
+[charaShakeStop V]
+[wt 0.9]
+
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[wt 0.4]
+
+[charaFadeout V 0.7]
+[wt 0.7]
+
+
+[sceneSet R 260301 1]
+[sceneSet S 260301 1]
+[sceneSet T 260301 1]
+[sceneSet U 260301 1]
+[charaSet O 7052000 1 呼延灼（演出用）]
+
+[wt 0.3]
+
+
+[charaTalk on]
+[charaTalk A]
+
+＠テスカトリポカ
+マジかよ。[r][#自分:テメェ]から結婚のチャンスを破壊しやがった。
+[k]
+
+＠テスカトリポカ
+まったく[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[bgm BGM_EVENT_39 0.1]
+
+[charaCrossFade A 6047400 7 0.2]
+＠テスカトリポカ
+人間ってのはいつの時代も同じだな！[r]厄介な物事はぶっ壊して解決する！[wait charaCrossFade A]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠テノチティトラン・バニー
+……残念です。[r]理想の姿をした結婚相手たちも[line 3]
+[k]
+
+[charaFace F 17]
+
+＠テノチティトラン・バニー
+既にオセロトルに姿が戻っているでしょう。[r]遺憾ながらテクシス社は解散です、ね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠クリームヒルト
+大丈夫それ？[r]詐欺で訴訟されない？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 18]
+[charaFadein F 0.1 1]
+
+＠テノチティトラン・バニー
+抜かりはありません。
+[k]
+
+[charaFace F 20]
+
+＠テノチティトラン・バニー
+すべての契約書には小さく『ご利用は自己責任で』と[r]ナワトル語で書いておきました。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+
+＠刑部姫
+逃[messageShake 0.03 2 2 0.3]げる気だコレ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠テスカトリポカ
+つまりここは、ありきたりの[r]ブライダルエリアに戻るって訳だ。
+[k]
+
+＠テスカトリポカ
+婚姻遍歴がなくなった以上、オレたちのやる気もなくなった。[r]またイチから新しい商売を始めるさ。
+[k]
+
+[charaCrossFade A 1098333000 0 0.2]
+
+＠テスカトリポカ
+しかしその前に、マスターの[&花嫁:花婿]に[r]謝罪しなきゃいけないかね。[wait charaCrossFade A]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠呼延灼
+はい神様。
+[k]
+
+[charaFace I 3]
+
+＠呼延灼
+ええと……結局、マスターの[&花嫁:花婿]さんって、[r]どなただったのでしょう？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 14]
+[charaFadein J 0.1 1]
+
+＠マシュ
+（それはわたしも知りたいという顔）
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠テスカトリポカ
+何だ。わからないのか？[r]この島でオレを除いて一番偉い人間だよ。
+[k]
+
+[charaFaceFade A 11 0.2]
+
+＠テスカトリポカ
+大手のお得意様だと言ったろう？
+[k]
+
+[messageOff]
+[charaDepth K 2]
+[charaDepth A 3]
+
+[charaTalk K]
+[charaFace K 14]
+[charaPutFSL K -300,0]
+[charaFadeTime K 0.5 0.6]
+[wt 0.7]
+
+＠？？？
+[line 3]平伏し感謝なさい。結婚する権利をあげるわ。[wt 1.2][charaFace K 26][r]これからは夫婦となるのよ。
+[k]
+
+[charaTalk A]
+[charaFace A 10]
+
+＠テスカトリポカ
+申し上げたでしょう。どちらも利しかないと。[r]これはこれで特異点の解決につながります。
+[k]
+
+？1：……マジか……
+？2：そのスマイルやめてほんと
+？！
+
+[messageOff]
+
+[charaTalk I,A]
+[charaDepth F 2]
+[charaDepth K 2]
+[charaDepth A 3]
+[charaDepth R 4]
+[charaDepth I 5]
+
+[charaScale R 1.4]
+[charaScale I 1.4]
+
+[charaFace I 4]
+[charaFadein I 0.5 230,0]
+[charaFadein R 0.5 -150,-320]
+[charaMove I 190,0 0.5]
+[charaMove R -190,-320 0.5]
+[wt 0.5]
+
+[charaFadeout K 0.1]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk off]
+
+＠呼延灼
+……ちょっといいかも、とか思ってません？
+[k]
+
+[messageOff]
+[se ad163]
+[cameraMoveEase -7,0 0.3 easeOutCubic 1.01]
+[charaMoveEase I 183,0 0.3 easeOutCubic]
+[charaMoveEase R -197,-320 0.3 easeOutCubic]
+
+[wt 0.3]
+
+[cameraMoveEase 7,0 0.4 easeOutCubic 1.01]
+[charaMoveEase I 197,0 0.4 easeOutCubic]
+[charaMoveEase R -183,-320 0.4 easeOutCubic]
+[wt 0.45]
+
+[cameraMoveEase -7,0 0.4 easeOutCubic 1.01]
+[charaMoveEase I 183,0 0.4 easeOutCubic]
+[charaMoveEase R -197,-320 0.4 easeOutCubic]
+[wt 0.05]
+[se ad163]
+[wt 0.3]
+
+[cameraMoveEase 0,0 0.3 easeOutCubic 1.01]
+[charaMoveEase I 190,0 0.3 easeOutCubic]
+[charaMoveEase R -190,-320 0.3 easeOutCubic]
+[wt 0.8]
+
+[charaFace F 2]
+[charaFace A 11]
+[charaFadeinFSL F 0.1 0]
+[charaFadeinFSR A 0.1 2]
+[wt 0.4]
+
+[charaFadeout I 0.5]
+[charaFadeout R 0.5]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk F]
+
+＠テノチティトラン・バニー
+では、私たちはこれで失礼します、ね。[r]行きましょう、兄様。
+[k]
+
+[charaTalk A]
+[charaCrossFade A 6047400 11 0.2]
+
+＠テスカトリポカ
+それじゃあな。[r]ま、夏を楽しんでやってくれ。[wait charaCrossFade A]
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad95]
+[wt 0.05]
+[se ad60]
+[charaFadeout A 0.4]
+[charaFadeout F 0.4]
+[seStop ad60 1.2]
+[seStop ad95 1.2]
+[wt 1.2]
+
+[se ad754]
+[seVolume ad754 0 0]
+[cueSe SE_23 23_ad1229]
+[cueSeVolume 23_ad1229 0 0]
+[wt 0.4]
+
+[seVolume ad754 0.6 0.4]
+[cueSeVolume 23_ad1229 0.6 0.2]
+[wt 1.6]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠刑部姫
+……あれ？　なんか音が聞こえない？
+[k]
+
+？1：エリアのあちこちで悲鳴と爆発が起きてるね……
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 9]
+[charaFadein L 0.1 1]
+
+＠斎藤一
+まあ、騙されたと知ったサーヴァントがやることなんて、[r]一つしかないからなぁ。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠黒髭
+クキキキキ……愉悦……！
+[k]
+
+？1：あと黒髭は反省ね
+？！
+
+＠黒髭
+人間雑巾みたいになってる拙者に、[r]更なる反省が必要？
+[k]
+
+？1：懲りてないでしょ？
+？！
+
+＠黒髭
+はい。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 13]
+[charaFadein J 0.1 1]
+
+＠マシュ
+そうですね。黒髭さんは加害者なので、[r]本当に反省してください。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠黒髭
+マシュマシュに説教されると、なんか拙者ってば[r]大悪党のような気がしてきてならない……。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+＠斎藤一
+大悪党大悪党。
+[k]
+
+[bgmStop BGM_EVENT_39 1.5]
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[seStop ad754 0.7]
+[cueSeStop 23_ad1229 0.7]
+[wait wipe]
+
+[charaFadeout L 0.1]
+
+[charaSet B 23011000 1 玉兎]
+
+[charaDepth R 2]
+[charaDepth B 3]
+[charaDepth D 4]
+
+[charaScale R 1.2]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFadein B 0.1 2]
+[charaFadein R 0.1 100,-260]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+[bgm BGM_EVENT_221 0.1]
+
+＠玉兎
+チッ。[r]テクシス社のビルはオレがブッ壊したかったのに。
+[k]
+
+[charaFace B 11]
+
+＠玉兎
+まあいいか。浅上も懲りた事だし。[r][#一件落着:いっけんらくちゃく]だ。
+[k]
+
+[charaTalk D]
+[charaFace D 9]
+
+＠D：藤乃
+……そうですね。この島のおかしな雰囲気に[r]流されてしまった私がダメ人間でした……。
+[k]
+
+[charaFace D 7]
+
+＠D：藤乃
+でも……少し、ほんの少し、楽しかったです。[r]初恋を追いかけるなんて、これも夏の魔力ですね。
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+
+＠玉兎
+夏と初恋、関係あるの？
+[k]
+
+[charaTalk D]
+[charaFace D 7]
+
+＠D：藤乃
+ありますよ。夏は郷愁、ノスタルジーの季節です。
+[k]
+
+[charaFace D 6]
+
+＠D：藤乃
+仮に両儀さんが私の立場だったら、[r]初恋の人を諦めたくはないでしょう？
+[k]
+
+[messageOff]
+
+[charaTalk D,C]
+
+[charaDepth S 5]
+[charaDepth C 6]
+[charaDepth T 7]
+[charaDepth E 8]
+
+[charaScale S 1.4]
+[charaScale C 1.2]
+
+[charaFace C 0]
+[charaFadein C 0.5 230,0]
+[charaFadein S 0.5 250,-320]
+[charaMove C 200,0 0.5]
+[charaMove S 220,-320 0.5]
+[wt 0.7]
+
+＠C：玉兎
+[line 3]。[r][line 3]。
+[k]
+
+[charaFace C 3]
+
+＠C：玉兎
+いや、初恋とか知らないし。
+[k]
+
+[messageOff]
+
+[charaTalk E,C]
+
+[charaScale T 1.4]
+[charaScale E 1.2]
+
+[charaFace E 8]
+[charaFadein E 0.5 -230,0]
+[charaFadein T 0.5 -100,-320]
+[charaMove E -200,0 0.5]
+[charaMove T -70,-320 0.5]
+[wt 0.7]
+
+＠E：藤乃
+どの口で仰っているのですか？[r]どの口で？
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout R 0.1]
+[charaFadeout C 0.1]
+[charaFadeout S 0.1]
+[charaFadeout E 0.1]
+[charaFadeout T 0.1]
+
+[charaScale I 1.0]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_221 0.7 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠呼延灼
+しかし……惜しかったですね。[r]『婚姻遍歴』。
+[k]
+
+[charaFace I 7]
+
+＠呼延灼
+あれがあれば私も結婚のような、[r]一夜の夢は見られたのですが……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠黒髭
+おや、呼延灼ちゃんがそう言うのは珍しい。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaDepth W 2]
+[charaDepth I 3]
+
+[charaPut W 1]
+[charaFadeTime W 0.2 0.5]
+
+[charaTalk I]
+[charaFace I 8]
+[charaFadein I 0.1 1]
+
+＠呼延灼
+（凄い状態で雑談に加わってきますねこの海賊）
+[k]
+
+[charaFadeout W 0.2]
+
+[charaFace I 0]
+
+＠呼延灼
+[line 3]まあ、私のエンプーサ成分が[r]乙女なことに憧れを持っているのかもしれません。
+[k]
+
+[charaFace I 4]
+
+＠呼延灼
+ふふ……結婚……結婚かぁ……。[r]いいですよねぇ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠黒髭
+ほうほう。ちなみにお相手は？
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+
+＠呼延灼
+言いませんよ。言うと迷惑でしょうし。[wt 1.0][bgmStop BGM_EVENT_221 1.5][r]ですから[line 3]
+[k]
+
+[messageOff]
+[charaFace I 7]
+[wt 1.2]
+
+[subCameraOn 1]
+
+[charaLayer O sub #A]
+
+[subCameraFilter #A through]
+
+[subRenderDepth #A 1]
+
+[subRenderScale #A 1.01]
+
+[charaDepth O 2]
+
+[charaScale O 1.8]
+
+[subRenderFadein #A 0 0,0]
+
+
+
+[charaFace I 5]
+
+＠呼延灼
+……漫画にしようと思います！！[bgm BGM_MIZUGI_2022_1 0.1]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠黒髭
+ほ[charaShake M 0.03 3 3 0.4]ぼ言うって事だよ！！
+[k]
+
+＠黒髭
+……いかん。拙者の役回りじゃないのに、[r]さすがにツッコんでしまった。
+[k]
+
+＠黒髭
+するのか、漫画に。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠呼延灼
+はい！　何、一度やった身です。[r]怖いものなどありませんので！
+[k]
+
+[messageOff]
+
+[charaDepth I 2]
+[charaDepth R 3]
+
+[charaDepth H 4]
+[charaDepth N 5]
+
+[charaTalk I,O]
+
+[charaFace O 1]
+[charaFadein O 0.7 400,200]
+
+[subBlur #A lens 0.7 4 15 1.0 subBlur]
+
+[charaScale R 1.4]
+[charaFadein R 0.7 250,-320]
+[wt 0.7]
+
+[charaFadeout I 0.1]
+[wt 0.25]
+
+[charaScale H 0.77]
+[charaScale N 0.8]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 -250,-95]
+[wt 0.6]
+
+＠刑部姫
+……。[r]……。
+[k]
+
+[messageOff]
+[charaTalk N]
+[charaFace N 1]
+[charaFadein N 0.4 -455,-75]
+[charaMove N -435,-75 0.4]
+[wt 0.5]
+
+＠清姫
+おっきー、やってみます？
+[k]
+
+[charaTalk H]
+[charaFace H 7]
+
+＠刑部姫
+う……ぐ……が……。[r]や、らな……い……！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+[charaFadeout N 0.1]
+[charaFadeout R 0.1]
+
+[subBlurOff #A lens 0.1 normal]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout O 0]
+
+[subCameraOff]
+[charaLayer O normal]
+[charaScale O 1.0]
+
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 0.3]
+[wait fade]
+
+＠
+こうして【第四】エリアのリーダーであった[r]テスカトリポカは謎の失踪を遂げ[line 3]
+[k]
+
+＠
+極めて健全なエリアとなったのである。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgmStop BGM_MIZUGI_2022_1 1.0]
+[wait fade]
+
+[charaSet A 1033300 1 シグルド]
+[charaSet B 1033300 1 シグルド（演出用）]
+[charaSet C 7038000 1 ブリュンヒルデ]
+[charaSet D 7038000 1 ブリュンヒルデ（演出用）]
+[imageSet E back10000 1 1]
+[charaScale E 1.01]
+[imageSet F back10000 1 1]
+[charaScale F 1.01]
+
+[charaSet G 98108900 1 カップルがいなくなった人1]
+[charaSet I 1098275100 1 カップルがいなくなった人2]
+[charaRollAxis I y 180 0 0]
+[charaSet J 1098233800 1 カップルがいなくなった人3]
+[charaRollAxis J y 180 0 0]
+[charaSet K 1098275000 1 カップルがいなくなった人4]
+[charaRollAxis K y 180 0 0]
+[charaSet L 1098227200 1 カップルがいなくなった人5]
+[charaSet M 98109000 1 カップルがいなくなった人6]
+
+
+[charaSet P 98115000 1 エフェクト用]
+
+
+[sceneSet R 260000 1]
+[sceneSet S 260000 1]
+[sceneSet T 260000 1]
+[sceneSet U 228201 1]
+[sceneSet V 153201 1]
+
+
+[scene 260000]
+
+
+[subCameraOn 4]
+
+[charaLayer E sub #D]
+[charaLayer F sub #D]
+
+[subCameraFilter #D through]
+
+[subRenderDepth #D 3]
+
+[subRenderScale #D 1.01]
+
+[charaDepth E 2]
+[charaDepth F 2]
+
+[charaFadein E 0 0,737]
+[charaFadein F 0 0,-737]
+
+[subRenderFadein #D 0 0,0]
+
+[charaTalk off]
+[charaDepth R 2]
+[charaDepth G 3]
+[charaDepth I 4]
+[charaDepth M 5]
+[charaDepth S 6]
+[charaDepth J 7]
+[charaDepth K 8]
+[charaDepth L 9]
+
+[se ad3]
+[seVolume ad3 0 0]
+[cueSe SE_24 24_ad1375]
+[cueSeVolume 24_ad1375 0 0]
+[wt 1.1]
+
+[seVolume ad3 1.0 0.5]
+[cueSeVolume 24_ad1375 1.0 0.3]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.8]
+
+[charaScale R 1.2]
+
+[charaScale G 0.8]
+[charaScale I 0.6]
+[charaScale M 1.15]
+
+[charaFace G 3]
+[charaFace I 2]
+[charaFace M 0]
+[charaFadein G 0.7 375,-95]
+[charaFadein I 0.7 30,-150]
+[charaFadein M 0.7 -350,-30]
+[charaFadein R 0.7 -100,-260]
+[wt 0.7]
+
+[charaMoveReturn G 375,-88 0.3]
+[wt 0.3]
+
+[charaMoveReturn G 375,-88 0.3]
+[wt 0.6]
+
+[charaMoveReturn I 30,-157 0.5]
+[wt 0.6]
+
+[charaMoveReturn M -350,-23 0.3]
+[wt 0.35]
+
+[charaMoveReturn M -350,-23 0.3]
+[wt 1.0]
+
+[charaScale S 1.2]
+
+[charaScale J 0.75]
+[charaScale K 1.1]
+[charaScale L 0.75]
+
+[charaFace J 2]
+[charaFace K 2]
+[charaFace L 3]
+[charaFadein J 0.7 -400,-100]
+[charaFadein K 0.7 375,-25]
+[charaFadein L 0.7 -150,-100]
+[charaFadein S 0.7 100,-260]
+[wt 0.7]
+
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+[charaFadeout M 0.1]
+[charaFadeout R 0.1]
+
+[charaMoveReturn K 375,-18 0.3]
+[wt 0.3]
+
+[charaMoveReturn K 375,-18 0.3]
+[wt 0.7]
+
+[charaMoveReturn J -400,-107 0.4]
+[wt 0.4]
+
+[charaMoveReturn J -400,-107 0.4]
+[wt 0.8]
+
+[charaMoveReturn L -150,-108 0.7]
+[wt 1.3]
+
+[seStop ad3 1.5]
+[cueSeStop 24_ad1375 1.5]
+
+[charaFadeout J 0.7]
+[charaFadeout K 0.7]
+[charaFadeout L 0.7]
+[charaFadeout S 0.7]
+[wt 0.9]
+
+
+[charaLayer Y sub #A]
+[charaLayer B sub #A]
+[charaLayer R sub #A]
+
+[charaLayer Z sub #B]
+[charaLayer D sub #B]
+[charaLayer S sub #B]
+
+[charaLayer H sub #C]
+[charaLayer N sub #C]
+[charaLayer T sub #C]
+
+
+[subCameraFilter #A normal]
+[subCameraFilter #B normal]
+[subCameraFilter #C normal]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 4]
+
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+[subRenderScale #C 1.01]
+
+[charaDepth Y 4]
+[charaDepth B 3]
+[charaDepth R 2]
+
+[charaScale Y 1.0]
+[charaScale B 1.4]
+[charaScale R 1.4]
+
+[charaPut Y 1]
+[charaEffect Y bit_talk_glitter]
+[charaEffect Y bit_talk_valentine_brilliant_fs]
+
+[charaFace B 8]
+[charaFadein B 0 -230,-35]
+[charaFadein R 0 230,-320]
+
+[charaDepth Z 4]
+[charaDepth D 3]
+[charaDepth S 2]
+
+[charaScale Z 1.0]
+[charaScale D 1.4]
+[charaScale S 1.4]
+
+[charaPut Z 1]
+[charaEffect Z bit_talk_glitter]
+[charaEffect Z bit_talk_valentine_brilliant_fs]
+
+[charaFace D 10]
+[charaFadein D 0 230,-35]
+[charaFadein S 0 -230,-320]
+
+[charaDepth N 4]
+[charaDepth H 3]
+[charaDepth T 2]
+
+[charaScale N 1.1]
+[charaScale H 1.1]
+[charaScale T 1.2]
+
+[charaFace H 4]
+[charaFace N 0]
+[charaFadein H 0.1 380,0]
+[charaFadein N 0.1 80,0]
+[charaFadein T 0.1 -70,-260]
+
+
+[charaPut P 2000,2500]
+[charaEffect P bit_talk_glitter]
+[charaEffect P bit_talk_valentine_brilliant_fs]
+
+[wt 0.2]
+
+[se ad95]
+[se ade422]
+
+[charaDepth A 3]
+[charaDepth C 2]
+
+[charaFace A 4]
+[charaFace C 8]
+[charaFadein A 0.4 -256,-50]
+[charaFadein C 0.4 256,-50]
+[wt 0.4]
+
+[seStop ad95 0.2]
+[seStop ade422 0.2]
+[wt 0.6]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1 0.5]
+
+[charaTalk on]
+[charaTalk A]
+
+＠シグルド
+む。
+[k]
+
+＠シグルド
+何やら、昨日まであった幸福な覇気が、[r][#雲散霧消:うんさんむしょう]しているようだが。
+[k]
+
+[charaTalk C]
+[charaFace C 7]
+
+＠ブリュンヒルデ
+代わりに、そこはかとない怨念が[r]渦巻いているようにも感じますね。
+[k]
+
+[charaFace C 16]
+
+＠ブリュンヒルデ
+どうしたのでしょう……。
+[k]
+
+
+[charaTalk A]
+[charaFace A 10]
+
+＠シグルド
+うむ……不思議なこともあるものだな。
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ade588]
+[cueSeVolume 21_ade588 0 0]
+
+[charaTalk A,B]
+[subRenderFadein #A 0.7 0,0]
+
+[cueSeVolume 21_ade588 0.7 0.5]
+
+[charaMove B -200,-35 15.0]
+[charaMove R 260,-320 15.0]
+
+[wt 1.1]
+
+＠B：シグルド
+さて、我々は今日の挙式のための[r]プランを相談しに行かなければ。
+[k]
+
+[messageOff]
+[charaTalk D,B]
+
+[subRenderFadein #B 0.7 0,0]
+
+[charaMove D 200,-35 15.0]
+[charaMove S -260,-320 15.0]
+
+[wt 0.7]
+
+
+[charaDepth C 2]
+[charaDepth A 3]
+[charaDepth P 10]
+
+[charaPut P 1]
+
+[charaFace A 8]
+[charaFace C 10]
+[charaFadein A 0.1 -256,-50]
+[charaFadein C 0.1 256,-50]
+
+[subRenderFadeout #A 0.1]
+[wt 0.3]
+
+＠D：ブリュンヒルデ
+ふふ、でも昨日申し込んで今日式を挙げられるなんて。[r]便利になりましたね。
+[k]
+
+[messageOff]
+[charaTalk D,A,C]
+[subRenderFadeout #B 0.7]
+[wt 1.3]
+
+[se ad95]
+[wt 0.1]
+[se ade422]
+[charaFadeout A 0.4]
+[charaFadeout C 0.4]
+[wt 0.1]
+[seStop ad95 1.2]
+[seStop ade422 1.2]
+[cueSeStop 21_ade588 1.2]
+[wt 1.7]
+
+
+[charaMove E 0,847 1.35]
+[charaMove F 0,-847 1.35]
+[wt 1.55]
+
+[bgm BGM_HALLOWEEN_2021_1 1.0 1.0]
+
+[charaTalk H]
+[subRenderFadein #C 0.6 0,0]
+[charaMove H 350,0 0.6]
+[charaMove N 50,0 0.6]
+[charaMove T -100,-260 0.6]
+
+[wt 0.6]
+
+[charaPut P 2000,2500]
+[charaEffectDestroy P bit_talk_glitter]
+[charaEffectDestroy P bit_talk_valentine_brilliant_fs]
+
+[wt 0.25]
+
+＠刑部姫
+[line 3]まあ、メインになってた会社が潰れたから、[r]結婚式の予約が全部キャンセルになったんだけどネ……。
+[k]
+
+[charaFace H 3]
+
+＠刑部姫
+しかし居るだけで周囲に[#精神:メンタル]ダメージを[r]与えていくな、あのカップル……。
+[k]
+
+[charaTalk N]
+[charaFace N 1]
+
+＠清姫
+やっぱり燃やした方が怨念も綺麗さっぱりしません？[wt 1.2][se ad988][charaShake N 0.05 0 1 0.3][charaMoveEase N 35,25 0.3 easeOutCubic][charaMoveScaleEase N 1.25 0.3 easeOutCubic][r]ねえますたぁ？　[wt 0.3][seStop ad988 0.1][wt 0.5][charaFace H 9][se ad984][charaShake N 0.05 1 2 0.3][charaMoveEase N 15,50 0.3 easeOutCubic][charaMoveScaleEase N 1.4 0.3 easeOutCubic]ね、ね、ね？[wt 0.3][seStop ad452 0.1]
+[k]
+
+[charaMove H 400,0 0.5]
+[charaFadeTime H 0.5 0]
+
+？1：よし、次のエリアもがんばるぞ！
+？！
+
+[charaFace N 3]
+
+＠清姫
+ああん。つれないです、ますたぁ……。[wt 1.0][charaFace N 4][r]あれ、おっきー？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_HALLOWEEN_2021_1 0.7 0.5]
+[wait wipe]
+
+[subRenderFadeout #C 0.1]
+[subRenderFadeout #D 0.1]
+[charaFadeout B 0]
+[charaFadeout D 0]
+[charaFadeout R 0]
+[charaFadeout S 0]
+[charaFadeout H 0]
+[charaFadeout N 0]
+[charaFadeout T 0]
+[charaFadeout E 0]
+[charaFadeout F 0]
+[charaPut Y 2000,2500]
+[charaPut Z 2000,2500]
+[charaEffectDestroy Y bit_talk_glitter]
+[charaEffectDestroy Y bit_talk_valentine_brilliant_fs]
+[charaEffectDestroy Z bit_talk_glitter]
+[charaEffectDestroy Z bit_talk_valentine_brilliant_fs]
+[subCameraOff]
+[charaLayer B normal]
+[charaLayer D normal]
+[charaLayer R normal]
+[charaLayer S normal]
+[charaLayer H normal]
+[charaLayer N normal]
+[charaLayer T normal]
+[charaLayer Y normal]
+[charaLayer Z normal]
+[charaLayer E normal]
+[charaLayer F normal]
+[charaScale B 1.0]
+[charaScale D 1.0]
+[charaScale R 1.0]
+[charaScale S 1.0]
+[charaScale H 1.0]
+[charaScale N 1.0]
+[charaScale T 1.0]
+[charaScale Y 1.0]
+[charaScale Z 1.0]
+[charaScale E 1.0]
+[charaScale F 1.0]
+[wt 0.5]
+
+[charaDepth R 2]
+[charaDepth H 3]
+
+[charaScale R 1.2]
+[charaFadein R 0.1 110,-260]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_HALLOWEEN_2021_1 0.7 1.0]
+[wait wipe]
+[wt 0.1]
+
+[charaScale H 1.1]
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.5 -50,0]
+[charaMove H 1 0.5]
+[wt 0.7]
+
+＠刑部姫
+ふふ……[wt 0.75]しばらく……[wt 0.75][messageShake 0.03 3 3 0.4]対面はむり……！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_HALLOWEEN_2021_1 2.0]
+[wait fade]
+
+[wt 0.5]
+[soundStopAll]
+[end]

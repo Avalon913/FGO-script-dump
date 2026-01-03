@@ -1,0 +1,457 @@
+
+
+＄94-09-56-05-5-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 7049000 1 静希草十郎]
+[charaSet B 1098293400 1 槻司鳶丸]
+[charaSet C 1098257800 1 マシュ]
+[sceneSet D 115500 1]
+[charaScale D 1.8]
+[sceneSet E 215402 1]
+[charaScale E 1.2]
+
+[charaSet F 25014000 1 青子]
+[sceneSet G 215401 1]
+[charaScale G 1.2]
+
+[charaSet S 98115000 1 エフェクト用]
+
+[charaSet H 1098293410 1 鳶丸_反転シルエット用]
+[charaFilter H silhouette 00000080]
+[charaScale H 2.0]
+
+[sceneSet I 215701 1]
+[charaScale I 1.2]
+[sceneSet J 215701 1]
+[charaScale J 1.4]
+
+[charaSet K 1098296600 1 草十郎_反転シルエット用]
+[charaFilter K silhouette 00000080]
+[charaScale K 2.0]
+
+[charaSet L 7049000 1 静希草十郎2]
+[charaSet M 1098293400 1 槻司鳶丸2]
+
+[scene 215402]
+
+[subCameraOn]
+
+[charaLayer C sub #A]
+[charaLayer D sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask07 30 0,0,0,255 1]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth C 2]
+
+[charaScale C 1.2]
+[charaFace C 0]
+[charaFadein C 0.1 0,225]
+[charaFadein D 0.1 -950,-275]
+
+[charaTalk E]
+[charaFadein E 0.1 50,-260]
+[wt 0.1]
+
+[charaMove E -50,-260 6.0]
+[bgm BGM_EVENT_200 0.1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 2.5]
+
+[charaFadeout E 1.0]
+[wt 1.7]
+
+
+？1：隣の部屋にも、天空の間にもいない[&な:ね]……
+？2：手がかりがあるといいんだけど……
+？！
+
+[messageOff]
+[charaTalk C]
+[subRenderFadein #A 0.4 100,-250]
+[wt 0.6]
+
+
+＠マシュ
+洗面台の方には……異常はありません。[r]駒鳥さんのために水を汲んだ小皿があるくらいです。
+[k]
+
+[charaFace C 21]
+＠マシュ
+それより。ふたりきりですね、先輩。[r]……少し、込み入った話をしていいでしょうか。
+[k]
+
+
+？1：[FFFFFF]？[-]
+？2：[&お、おう:う、うん]
+？！
+
+[charaFace C 10]
+＠マシュ
+その、[#槻司:つきじ]さんの事です。
+[k]
+
+＠マシュ
+二日ほど槻司さんの護衛として行動を[r]共にした件について、です。
+[k]
+
+[charaFace C 11]
+＠マシュ
+槻司さんは神秘とは無関係の方でありながら、[r]魔術、特異点、レイシフト、といった、
+[k]
+
+＠マシュ
+超常の現象を拒絶せず受け入れてくれました。[r]それはご本人の気質だとは思うのですが……
+[k]
+
+＠マシュ
+調査をしている時、決まった時間、[r]『用がある』とひとりになられたのです。
+[k]
+
+＠マシュ
+夕方の６時になると目立たないよう、[r]静かに自然に旧館に足を運ばれて……
+[k]
+
+[charaFace C 7]
+＠マシュ
+昨日、気になって[r]少しだけ後を付けてしまったのです……。
+[k]
+
+？1：槻司さんも探偵だ。尾行される覚悟はあるはず
+？2：（マシュが怪しむのはよっぽどだ[&ぞ:な]……）
+？！
+
+[charaFace C 0]
+＠マシュ
+廊下の曲がり角から耳をそばだてていたので、[r]誰と会っているかは[#判:わか]らなかったのですが、
+[k]
+
+＠マシュ
+『ここに間違いはない』『約束は守る』[r]『あと２日で終わらせる』と、
+[k]
+
+＠マシュ
+とても真剣な声でどなたかと話して[line 3][wt 0.8][charaFace C 5][bgmStop BGM_EVENT_200 1.5][r]あれ？
+[k]
+
+[messageOff]
+[charaSpecialEffect C wipeTime 1 1.5]
+[wt 2.9]
+
+？1：[FFFFFF]？[-]
+？2：マシュ？
+？！
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[wt 2.0]
+
+？1：そんな……
+？2：マシュまで……消えてしまった……
+？！
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[subCameraOff]
+[charaLayer C normal]
+[charaLayer D normal]
+[charaScale C 1.0]
+[charaScale D 1.0]
+[wt 0.2]
+
+
+[scene 215701]
+
+[pictureFrameTop cut063_cinema]
+[wt 0.6]
+
+[subCameraOn 1]
+[charaLayer F sub #A]
+[charaLayer S sub #A]
+[charaLayer G sub #A]
+
+[subCameraFilter #A normal]
+
+[charaDepth G 1]
+[charaDepth F 2]
+[charaDepth S 3]
+
+[charaScale F 1.2]
+[charaScale G 1.2]
+[charaScale S 1.0]
+
+[charaFace F 22]
+[charaFadein F 0.1 40,-50]
+[charaFadein G 0.1 40,-310]
+
+[charaPut S 1]
+[charaEffect S bit_sepia01_depth_fs]
+
+[charaDepth B 1]
+[charaDepth A 2]
+[charaDepth I 3]
+[charaDepth L 4]
+[charaDepth H 5]
+[charaDepth J 6]
+[charaDepth M 7]
+
+[charaScale L 1.1]
+[charaScale M 1.3]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 250,-65]
+
+[charaFace H 0]
+[charaFadein H 0.1 -200,20]
+[charaFadein I 0.1 -120,-300]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.1]
+
+[bgm BGM_EVENT_204 0.1]
+
+＠L：静希草十郎
+鳶丸はどう見てるんだ？[r]『日刊・青子殺し』についてだけど。
+[k]
+
+＠L：静希草十郎
+蒼崎は世界の崩壊を止めるためにやってきた。
+[k]
+
+＠L：静希草十郎
+その蒼崎を殺している以上、[r]犯人イコール世界の破壊者と考えていいのか？
+[k]
+
+[messageOff]
+[charaTalk L,M]
+[charaFace M 0]
+[charaFadein J 0.6 200,-350]
+[charaFadein M 0.6 0,-65]
+[charaMove J 200,-370 15.0]
+[charaMove M 0,-85 15.0]
+[wt 0.8]
+
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[charaFadeout L 0.1]
+
+＠M：槻司鳶丸
+ああ。そこはもうハッキリしている。[r]蒼崎の功績もな。
+[k]
+
+[charaFace B 0]
+[charaFadeinFSL B 0.1 -250,-50]
+[charaFace A 15]
+[charaFadeinFSR A 0.1 250,-50]
+
+＠M：槻司鳶丸
+蒼崎はあえなく殺される側だが、[r]あれはあれで蒼崎の[#目論:もくろ]みは成功しているはずだ。
+[k]
+
+＠M：槻司鳶丸
+蒼崎は被害者だが被害者じゃない。[r]犯人に言わせれば[#自分の方が被害者]のはずだ。
+[k]
+
+[messageOff]
+[charaTalk A,M]
+[charaFadeout J 0.5]
+[charaFadeout M 0.5]
+[wt 0.7]
+[sceneSet J 215701 1]
+[charaScale J 1.4]
+[charaSet M 1098293400 1 槻司鳶丸2]
+
+＠静希草十郎
+犯人は泣きっ[#面:つら]って事か？　なんで？
+[k]
+
+[charaTalk B]
+[charaFace B 14]
+＠槻司鳶丸
+蒼崎殺しが連続する理由はなんだ？[r][#目的が果たされていない]からだ。
+[k]
+
+＠槻司鳶丸
+どんな目的かは不明だが、犯人は毎日[r]蒼崎に妨害されてるんだよ。結果的にな。
+[k]
+
+[charaTalk A]
+[charaFace A 1]
+＠静希草十郎
+なるほど。[r]スポーツでいうとインターセプト。
+[k]
+
+[charaTalk B]
+[charaFace B 19]
+＠槻司鳶丸
+そうそう。そんな可哀相な犯人の目的と、[r]この霧はまったくの別件だ。
+[k]
+
+[charaFace B 16]
+＠槻司鳶丸
+久遠寺のお嬢さんがどうしていなくなったのか、[r]なぜこんな霧を出しているかは不明だが、
+[k]
+
+＠槻司鳶丸
+[%1]たちなら[r]すぐに見つけて解決してくれるさ。
+[k]
+
+[charaFace B 14]
+＠槻司鳶丸
+それよりだ。[r]いま俺たちが検討すべきは蒼崎の話だ。
+[k]
+
+[messageOff]
+
+[subRenderFadein #A 0.8 0,0]
+[charaMove F -40,-50 30.0]
+[charaMove G -40,-310 30.0]
+[wt 1.2]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+＠槻司鳶丸
+“この温泉を放置すると世界が滅びる”[r]なんて言っていたが、[#それは本当なのか]？
+[k]
+
+＠槻司鳶丸
+そんな予兆はこれっぽっちもねえ。[r]かといって蒼崎がホラ話をするはずもねえ。
+[k]
+
+＠槻司鳶丸
+それに……万能の秘湯、聖杯だっけ？[r]何でも願いを叶えてくれるって話だが、
+[k]
+
+[charaDepth J 6]
+[charaDepth M 7]
+[charaDepth K 8]
+
+[charaFace L 19]
+[charaFadein L 0.1 250,-65]
+[charaFace H 0]
+[charaFadein H 0.1 -200,20]
+[charaFadein I 0.1 -120,-300]
+
+[charaScale M 1.1]
+[charaFace M 13]
+[charaFadein M 0.1 -250,-65]
+[charaFace K 0]
+[charaFadein K 0.1 200,20]
+[charaFadein J 0.1 120,-360]
+
+＠槻司鳶丸
+個人の願いを叶えたら世界が滅びるなんて、[r]俺は信じられない。
+[k]
+
+[messageOff]
+[charaTalk M]
+[subRenderFadeout #A 0.6]
+[wt 0.8]
+
+[charaFace A 19]
+[charaFadein A 0.1 0,-50]
+
+＠M：槻司鳶丸
+どう思う草の字。おまえさんなら蒼崎が[r]どれだけ本気か分かるだろ。[#彼女:ツ　レ]なんだから。
+[k]
+
+[messageOff]
+[charaTalk L,M]
+[charaFadeout K 0.4]
+[charaFadeout M 0.4]
+[charaFadeout J 0.4]
+[wt 0.6]
+
+＠L：静希草十郎
+[line 6]。
+[k]
+
+[messageOff]
+[charaTalk L,M]
+[charaTalk M]
+[charaFace M 11]
+[charaFadein M 0.4 -250,-65]
+[charaFace K 0]
+[charaFadein K 0.4 200,20]
+[charaFadein J 0.4 120,-360]
+[wt 0.4]
+[charaFadeout L 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+
+＠M：槻司鳶丸
+何に対して黙秘してんだよ！？
+[k]
+
+[bgmStop BGM_EVENT_204 1.5]
+
+[charaFace M 17]
+＠M：槻司鳶丸
+まあいい。[r]ちょいと気分転換に顔[#洗:あら]ってくる。
+[k]
+
+[messageOff]
+[se ade247]
+[charaFadeout M 0.4]
+[charaMove M -300,-65 0.5]
+[seStop ade247 1.5]
+[wt 1.6]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 150,-50]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaPut S 2000,2500]
+[charaEffectDestroy S bit_sepia01_depth_fs]
+[wt 0.2]
+
+[subCameraOff]
+[charaLayer F normal]
+[charaLayer S normal]
+[charaLayer G normal]
+[charaScale F 1.0]
+[charaScale S 1.0]
+[charaScale G 1.0]
+[wt 0.2]
+[charaFadeout K 0.4]
+[charaFadeout J 0.4]
+[wt 0.6]
+
+＠静希草十郎
+鳶丸。さっきの有珠の話だけど[line 3]
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[charaFace A 15]
+＠静希草十郎
+[line 3]鳶丸？
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,248 @@
+＄98-99-99-05-0-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098199300 1 マシュ]
+[charaSet B 1001000 1 アルトリア]
+[sceneSet C 197600 1]
+
+[scene 158100]
+
+[fadein black 1.0]
+[wait fade]
+
+＠アナウンス
+こちらはイージング（AVALON-227145）のテストです。
+[k]
+
+＠アナウンス
+charaMoveEase、cameraMoveEase、[r]subRenderMoveEase
+[k]
+
+＠アナウンス
+それぞれのテストを行います。
+[k]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠マシュ
+まずはcharaMoveのテストを行います。[r]最初に早く、後半に遅く画面右に移動します。
+[k]
+
+＠マシュ
+タッチ後に処理開始いたします。
+[k]
+
+[messageOff]
+[charaMoveEase A 350,0 2.0 easeOutExpo]
+[wt 2.0]
+
+＠マシュ
+次に別パターン、[r]最初に遅く、後半に早く画面左に移動します。
+[k]
+
+＠マシュ
+タッチ後に処理開始いたします。
+[k]
+
+[messageOff]
+[charaMoveEase A -350,0 2.0 easeInExpo]
+[wt 2.0]
+
+＠マシュ
+次に別パターン、[r]左右にぶれ続けながら、中間に早く画面右に移動します。
+[k]
+
+＠マシュ
+タッチ後に処理開始いたします。
+[k]
+
+[messageOff]
+[charaMoveEase A 350,0 2.0 easeInOutElastic]
+[wt 2.0]
+
+＠マシュ
+次にcameraMoveのテストを行います。
+[k]
+
+＠マシュ
+charaMoveとは違うパターンで[r]最初に早く、後半に遅く画面右にカメラが移動します。
+[k]
+
+＠マシュ
+タッチ後に処理開始いたします。
+[k]
+
+[messageOff]
+[cameraMoveEase -100,-50 2.0 easeOutQuart 1.2]
+[wt 2.0]
+
+＠マシュ
+次に別パターン、[r]最初に遅く、後半に早く画面左下にカメラが移動します。
+[k]
+
+＠マシュ
+タッチ後に処理開始いたします。
+[k]
+
+[messageOff]
+[cameraMoveEase 100,50 2.0 easeInQuart 1.4]
+[wt 2.0]
+
+＠マシュ
+次に別パターン、はねるようにカメラが右に移動します。[r]酔うかもしれませんので、少し画面よりお離れ下さい。
+[k]
+
+＠マシュ
+タッチ後に処理開始いたします。
+[k]
+
+[messageOff]
+[cameraMoveEase -200,-80 2.0 easeOutBounce 1.6]
+[wt 2.0]
+
+＠マシュ
+次にsubRenderMove、サブレイヤーの[r]イージング処理のテストを行います。
+[k]
+
+[subCameraOn]
+[charaLayer B sub #A]
+[charaLayer C sub #A]
+[subCameraFilter maskEdge cut359_mask10 3 255,255,255,0]
+[subRenderScale #A 1.1]
+
+[charaDepth B 2]
+[charaDepth C 1]
+[charaScale B 1.2]
+[charaScale C 1.3]
+
+[charaFadein B 0.1 0,70]
+[charaFadein C 0.1 0,-180]
+
+＠マシュ
+charaMoveとは違うパターンでサブレイヤーが[r]最初に早く、後半に遅く画面左に移動されます。
+[k]
+
+＠マシュ
+表示自体は0.6秒で、移動に2.0秒を指定しております。[r]イージングがかかるのは移動です。
+[k]
+
+＠マシュ
+タッチ後に処理開始いたします。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadein #A 0.6 -450,-130]
+[subRenderMoveEase #A -300,-130 2.0 easeOutQuint]
+[wt 2.0]
+
+[charaTalk on]
+
+＠マシュ
+次に別パターン、サブレイヤーが[r]最初に遅く、後半に早く画面右に移動します。
+[k]
+
+＠マシュ
+サブレイヤーの端が見えますが、こちらは正常ですので[r]イージングがかかっているかご確認を。
+[k]
+
+＠マシュ
+タッチ後に処理開始いたします。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderMoveEase #A 300,-130 2.0 easeInQuint]
+[wt 2.0]
+
+[charaTalk on]
+
+＠マシュ
+次に別パターン、サブレイヤーが[r]はねるように画面左に移動します。
+[k]
+
+＠マシュ
+最初に弱く、後半に強く跳ねます。[r]酔うかもしれませんので、少し画面よりお離れ下さい。
+[k]
+
+＠マシュ
+タッチ後に処理開始いたします。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderMoveEase #A -300,-130 2.0 easeInBounce]
+[wt 2.0]
+
+[charaTalk on]
+
+
+＠マシュ
+次に別パターンの命令文を使い、[r]サブレイヤーを移動させます。
+[k]
+
+＠マシュ
+今まではサブレイヤーを指定して動かしておりましたが、[r]今度は指定しないVerでのテストを行います。
+[k]
+
+＠マシュ
+タッチ後に処理開始いたします。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderMoveEase 300,-130 2.0 easeInElastic]
+[wt 2.0]
+
+[charaTalk on]
+
+＠マシュ
+次に別パターンの命令文を使い、[r]サブレイヤーを元のの位置に移動させます。
+[k]
+
+＠マシュ
+こちらもサブレイヤーを指定しないVerで[r]テストを行います。
+[k]
+
+＠マシュ
+タッチ後に処理開始いたします。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderMoveEase -300,-130 2.0 easeOutElastic]
+[wt 2.0]
+
+[charaTalk on]
+
+＠マシュ
+画面を戻します。
+[k]
+
+＠マシュ
+charaMoveEase、cameraMoveEase、subRenderMoveEase[r]を使用して、マシュが最初に立っていた画面を再現します。
+[k]
+
+[messageOff]
+[charaMoveEase A 0,0 2.0 easeInOutCubic]
+[subRenderFadeout #A 2.0]
+[cameraMoveEase 0,0 2.0 easeInOutCubic 1.0]
+[subRenderMoveEase #A -600,-130 2.0 easeInOutCubic]
+[wt 2.0]
+
+[charaFace A 1]
+
+＠マシュ
+テストを終了いたします。[r]お疲れ様でした。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

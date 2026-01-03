@@ -1,0 +1,489 @@
+
+
+＄94-14-02-01-4-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 6046001 1 呼延灼]
+[charaSet B 6048001 1 ロクスタ]
+[charaSet C 6026001 1 燕青]
+[charaSet D 1098257800 1 マシュ]
+[charaSet E 1098257800 1 マシュ2]
+[charaSet F 28004000 1 九紋竜エリザ]
+[charaSet G 1098315700 1 小野篁]
+[charaScale G 1.2]
+[charaSet H 1098213800 1 飛竜]
+[charaSet I 1098323800 1 刑部姫]
+[charaSet J 4044000 1 ニキチッチ]
+[charaSet K 5058001 1 小野小町]
+[charaSet L 1098315800 1 キラキラエネミー]
+
+[sceneSet M 203800 1]
+[charaScale M 1.03]
+[sceneSet N 203800 1]
+[charaScale N 1.3]
+[sceneSet O 203800 1]
+[charaScale O 1.3]
+[sceneSet P 203800 1]
+[charaScale P 1.3]
+
+[sceneSet Q 203800 1]
+[charaScale Q 1.2]
+[sceneSet R 203800 1]
+[charaScale R 1.3]
+
+[charaSet S 98115000 1 エフェクト用1]
+[charaPut S 2000,2000]
+[charaEffect S bit_talk_41_fs]
+[charaSet T 98115000 1 エフェクト用2]
+
+[subCameraOn 1]
+[charaLayer E sub #A]
+[charaLayer Q sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 3 255,255,255,255]
+
+[charaTalk depthOff]
+[charaDepth Q 1]
+[charaDepth E 2]
+[charaScale E 1.2]
+[charaFace E 13]
+[charaFadein E 0.1 0,200]
+[charaFadein Q 0.1 -300,0]
+
+[charaDepth M 2]
+[charaDepth K 3]
+[charaDepth G 5]
+[charaDepth L 6]
+[charaDepth C 7]
+[charaDepth A 8]
+[charaDepth S 9]
+
+[scene 203800]
+[charaFadein M 0.1 0,-230]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_BATTLE_107 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠呼延灼
+……うーん。
+[k]
+
+[messageOff]
+[charaMove A 50,-20 0.4]
+[wt 0.2]
+
+[charaScale C 1.03]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.2 300,0]
+[charaMove C 250,-20 0.2]
+[wt 0.2]
+[charaShake A 0.03 2 2 0.3]
+[se ad775]
+
+＠燕青
+おっと！
+[k]
+
+
+＠燕青
+よし、意識を失ってるだけだな。[r]あとは……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[wt 0.3]
+
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut S 1]
+[charaMoveScaleEase L 1.4 0.3 easeOutQuint]
+[charaMoveEase S 0,0 0.3 easeOutQuint]
+[charaMoveEase L 0,70 0.3 easeOutQuint]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[wt 0.3]
+
+[blurOff motion 0.2]
+[charaFadeout L 0.2]
+[charaPut S 2000,2000]
+[wt 0.1]
+
+[bgmStop BGM_BATTLE_107 1.0]
+
+[charaTalk K]
+[charaFace K 8]
+[charaFadein K 0.1 1]
+[wt 0.5]
+
+[se ad85]
+[charaPut S 1]
+[charaMoveScaleEase K 1.2 0.3 easeOutExpo]
+[charaMoveScaleEase M 1.2 0.3 easeOutExpo]
+[charaMoveEase S 0,0 0.3 easeOutExpo]
+[charaMoveEase K 0,20 0.3 easeOutExpo]
+[charaMoveEase M 0,-300 0.3 easeOutExpo]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[wt 0.3]
+
+＠小野小町
+……！
+[k]
+
+[messageOff]
+[charaTalk E]
+[subRenderFadein #A 0.3 350,-100]
+[subRenderMoveEase #A 350,-200 0.5 easeOutCubic]
+[wt 0.5]
+
+＠E：マシュ
+小野小町さん！？
+[k]
+
+[messageOff]
+[subRenderMoveEase #A 350,-300 0.8 easeOutCubic]
+[subRenderFadeout #A 0.3]
+[charaScale L 1.0]
+[blurOff motion 0.3]
+[charaPut S 2000,2000]
+[charaEffectDestroy S bit_talk_41_fs]
+[wt 0.4]
+
+[charaMoveEase K -200,20 1.0 easeOutQuart]
+[charaMoveEase M -100,-300 1.0 easeOutQuart]
+[charaFadeout K 0.7]
+
+[wt 0.8]
+
+[charaPut G 0,0]
+[charaTalk G]
+[charaFace G 3]
+[se ad598]
+[charaSpecialEffect G wipeTimeRe 1 1.0]
+[wait charaSpecialEffect G]
+[charaFadein G 0 0,0]
+[seStop ad598 0.5]
+[wt 0.2]
+
+
+[charaDepth L 1]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+[bgm BGM_EVENT_63 0.1]
+[charaFace G 4]
+＠G：？？？
+[f large][#悪業所感:あ  く  ご  う  し  ょ  か  ん]、閻魔王！
+[k]
+
+[messageOff]
+[charaTalk L,G]
+[charaFadeout E 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout G 0.3]
+[charaFadeout M 0.3]
+[wt 0.4]
+[charaLayer E normal]
+[charaLayer Q normal]
+[subCameraOff]
+
+
+[effect bit_talk_29_black_red]
+[se ad267]
+[se ad439]
+[cueSe Servants_703100 bac777 0.8]
+[wt 0.2]
+[shake 0.04 4 3 0.5]
+[charaShake L 0.04 3 3 0.8]
+[wt 0.6]
+[seStop ad439 1.5]
+[cueSeStop bac777 1.0]
+[wt 1.2]
+
+[charaTalk off]
+[charaMoveScaleEase K 1.0 0.1 easeOutExpo]
+[charaDepth N 2]
+[charaDepth I 3]
+[charaDepth B 4]
+[charaDepth D 5]
+
+[charaFace D 5]
+[charaFadein D 0.4 1]
+[charaFace I 2]
+[charaFadeinFSL I 0.4 0]
+[charaFace B 23]
+[charaFadeinFSR B 0.4 2]
+[charaFadein N 0.4 190,-250]
+[wt 0.6]
+
+[charaFadeout L 0.1]
+
+＠一同
+………………。
+[k]
+
+[messageOff]
+[charaDepth O 6]
+[charaDepth H 7]
+[charaDepth J 8]
+
+[charaFace J 24]
+[charaFadein J 0.4 2]
+[charaFace H 15]
+[charaFadein H 0.4 0]
+[charaFadein O 0.4 -190,-250]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+[charaFadeout D 0.1]
+[charaFadeout N 0.1]
+
+[charaDepth F 1]
+[charaDepth C 2]
+[charaFace F 27]
+[charaFadein F 0.1 0]
+[charaFace C 2]
+[charaFadein C 0.1 2]
+
+＠一同
+………………………………。
+[k]
+
+[messageOff]
+[charaFadeout O 0.4]
+[charaFadeout J 0.4]
+[charaFadeout H 0.4]
+[wt 0.6]
+
+＠一同
+…………………………………………………………。[r]…………………………………………………………。
+[k]
+
+[messageOff]
+[charaDepth I 3]
+[charaDepth P 4]
+[charaDepth G 5]
+
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[charaFadein P 0.4 0,-350]
+[wt 0.6]
+
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+
+＠？？？
+[line 19]。
+[k]
+
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+[charaFace G 9]
+
+＠？？？
+[f large]以上。
+[k]
+
+[messageOff]
+[charaFadeout P 0.4]
+[charaFadeout G 0.4]
+[wt 0.6]
+
+＠刑部姫
+[f large]どちらさまぁぁぁぁぁーーーー！？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 15]
+[charaFadein H 0.1 1]
+
+＠飛竜
+急にイケメンが来た。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+＠ロクスタ
+……急ですねえ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth L 2]
+[charaDepth T 3]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[wt 0.3]
+
+
+[cueSe SE_24 24_ade1060]
+[effect bit_talk_miko2 0,50]
+[wt 0.5]
+[effectStop bit_talk_miko2]
+
+[charaPut T 0,50]
+[charaEffect T bit_talk_glitter_parts]
+[wt 0.7]
+[charaFadeout L 0.3]
+[wt 2.1]
+
+[charaMoveEase T 700,0 1.5 easeOutQuad]
+[wt 0.5]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_63 0.5 0.5]
+[cueSeVolume 24_ade1060 0.5 0.5]
+[wait wipe]
+
+[charaScale G 1.0]
+[charaDepth K 2]
+[charaDepth T 3]
+[charaPut T -700,0]
+[charaTalk K]
+[charaFace K 8]
+[charaFadein K 0.1 1]
+
+[subCameraOn 2]
+[charaLayer Q sub #A]
+[charaLayer I sub #A]
+[charaLayer B sub #A]
+[charaLayer D sub #A]
+[charaLayer R sub #B]
+[charaLayer H sub #B]
+[charaLayer J sub #B]
+[charaLayer F sub #B]
+[charaLayer C sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask06 4 255,255,255,255 0]
+[subCameraFilter #B maskEdge cut359_mask06 4 255,255,255,255 0]
+
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+
+[charaDepth Q 1]
+[charaDepth I 2]
+[charaDepth B 3]
+[charaDepth D 4]
+[charaFace D 5]
+[charaScale Q 1.3]
+[charaFadein Q 0.1 90,50]
+[charaFadein D 0.1 -100,220]
+[charaFace I 2]
+[charaFadeinFSL I 0.1 -356,235]
+[charaFace B 23]
+[charaFadeinFSR B 0.1 156,250]
+
+[charaDepth R 1]
+[charaDepth H 2]
+[charaDepth J 3]
+[charaDepth F 4]
+[charaDepth C 5]
+[charaFadein R 0.1 -90,50]
+[charaFace J 24]
+[charaFadein J 0.1 500,250]
+[charaFace H 15]
+[charaFadein H 0.1 250,250]
+[charaFace F 27]
+[charaFadein F 0.1 -300,250]
+[charaFace C 2]
+[charaFadein C 0.1 -50,250]
+[wt 0.5]
+
+[charaMoveEase T 0,0 1.5 easeOutQuad]
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_63 0.5 1.0]
+[cueSeVolume 24_ade1060 0.5 1.0]
+[wait wipe]
+[cueSeStop 24_ade1060 1.0]
+[wt 1.0]
+
+[cueSe SE_21 21_ade590]
+[charaEffectStop T bit_talk_glitter_parts]
+[fowardEffect bit_talk_light_particles_scatter]
+[wt 1.0]
+[cueSeStop 21_ade590 1.5]
+[wt 1.0]
+
+＠小野小町
+あ……
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[charaMoveReturn G 0,-3 0.8]
+
+＠？？？
+………………。
+[k]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+＠小野小町
+はい、ありがとうございます！[r][#お父さま]！
+[k]
+
+？1：お父さま！！！？
+？！
+
+[messageOff]
+[blur lens 0.5 2 20]
+[subRenderFadein #A 0.3 0,-235]
+[charaMoveEase Q 190,50 0.5 easeOutQuad]
+[charaMoveEase D 0,220 0.5 easeOutQuad]
+[charaMoveEaseFSL I -256,235 0.5 easeOutQuad]
+[charaMoveEaseFSR B 256,250 0.5 easeOutQuad]
+
+[subRenderFadein #B 0.3 0,-450]
+[charaMoveEase R -190,50 0.5 easeOutQuad]
+[charaMoveEase J 400,250 0.5 easeOutQuad]
+[charaMoveEase H 150,250 0.5 easeOutQuad]
+[charaMoveEase F -400,250 0.5 easeOutQuad]
+[charaMoveEase C -150,250 0.5 easeOutQuad]
+[wt 2.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_63 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

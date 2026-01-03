@@ -1,0 +1,405 @@
+
+＄94-06-96-04-1-0
+
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 10013001 1 スーパーバニヤン]
+[charaSet C 1098232800 1 愉快なライダー]
+[charaSet D 6008000 1 クレオパトラ]
+
+[charaSet E 6008000 1 クレオパトラシルエット]
+[charaFilter E silhouette 00000080]
+
+[charaSet F 1098233500 1 オロチ]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[imageSet I cut341_tips04 1]
+[charaScale I 1.01]
+[sceneSet J 150400 1]
+[charaScale J 1.01]
+[sceneSet K 149400 1]
+[charaScale K 1.4]
+
+[sceneSet S 10000 1]
+[charaScale S 1.01]
+
+[charaDepth S 9]
+[charaPut S 1]
+[charaFadeTime S 0.1 1.0]
+
+[scene 142600]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade306]
+[seVolume ade306 0 0.3]
+[seVolume ade306 1.0 1.0]
+[fowardEffect bit_talk_movie_film_fs]
+[fowardEffect bit_talk_film_noise]
+[wt 1.2]
+
+[effect bit_talk_movie_title_telop02]
+[wt 0.2]
+[charaFadeTime S 1.0 0.5]
+[wt 0.3]
+[seStop ade306 1.0]
+[wt 1.2]
+[cueSe SE_22 22_ade729]
+[wt 4.0]
+
+[effectForceStop bit_talk_movie_title_telop02]
+
+[charaFadeout S 1.0]
+[wt 2.0]
+
+[bgm BGM_EVENT_79 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠クレオパトラ
+おお、蛇よ、蛇よ！[r]ナイルの泥から生まれた者よ！
+[k]
+
+[charaFace D 1]
+＠クレオパトラ
+さあ、早く安らぎのくちづけを。願わくば優しく[line 3]
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_79 2.0]
+
+[cueSe SE_22 22_ade724]
+
+[effect bit_talk_comic_shock]
+[wt 0.15]
+
+[charaPut H 0,-400]
+[charaEffect H bit_talk_11]
+[charaShake D 0.02 3 3 0.4]
+[charaFace D 2]
+[wt 0.5]
+
+＠クレオパトラ
+ぐっ！？
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth D 1]
+
+[charaTalk off]
+[charaFace E 0]
+
+[charaMove H 0,-200 2.0]
+
+[charaFace D 4]
+＠クレオパトラ
+おまえは……ナイルの生まれではありませんね。[wt 1.2][charaFadein E 1.5 1][r][#私:わたくし]に何をしたのです？[wt 1.5]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.05]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+[se ad17]
+[seVolume ad17 0 0.7]
+[cueSe Servants_9942710 m84102]
+[wt 2.5]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut H 0,-200]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠クレオパトラ
+いいでしょう。ならば[#私:わたくし]は呪いの牙となり、[r]この世に毒を撒き散らしましょう！
+[k]
+
+
+[messageOff]
+[charaDepth E 1]
+[charaDepth H 2]
+[charaDepth S 8]
+[charaPut S 1]
+[charaFadeTime S 1.5 1.0]
+[bgmStop BGM_EVENT_72 1.5]
+[wt 1.5]
+
+[charaEffectStop H bit_talk_11]
+[charaFadeout E 0.1]
+[wt 2.0]
+
+[charaFadeTime S 0.5 0.5]
+
+[cueSe SE_22 22_ade726]
+[wt 0.2]
+
+[effect bit_talk_movie_end_telop02]
+[wt 1.5]
+[se ade306]
+[seVolume ade306 0 0.5]
+[seVolume ade306 1.0 1.0]
+[wt 2.5]
+
+[seStop ade306 1.0]
+
+[maskout black 1.0]
+[wait mask]
+
+[effectDestroy bit_talk_movie_end_telop02]
+[fowardEffectDestroy bit_talk_movie_film_fs]
+[fowardEffectDestroy bit_talk_film_noise]
+[charaFadeout S 0.1]
+
+[cameraHome 0.1]
+
+[scene 149400]
+[wt 2.0]
+
+
+[charaFadein K 0.1 100,-130]
+[wt 1.0]
+
+[charaMove K -200,-130 35.0]
+
+[maskin black 1.5]
+[wt 1.0]
+[bgm BGM_EVENT_77 0.1]
+[wait mask]
+
+[wt 3.5]
+
+[charaFadeout K 1.0]
+[wt 2.5]
+
+
+[bgm BGM_EVENT_77 1.0 0.5]
+
+[charaDepth K 2]
+[charaDepth J 3]
+[charaDepth I 4]
+
+[charaFadein J 0.4 0,-200]
+[se ade277]
+[wt 0.3]
+
+[charaFadein I 0.1 0,-200]
+[wt 1.0]
+
+[wait touch]
+
+[charaFadeout J 0.5]
+[charaFadeout I 0.2]
+[wt 0.2]
+[se ad420]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+これで終わり……ですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠愉快なライダー
+脚本の半分まで撮って中断しちゃいましたからね☆
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠クレオパトラ
+ここまで撮るのも大変だったのです！[r]誰ですか、あんな[#大蛇:サーペント]を連れてきたのは！
+[k]
+
+？1：ひょっとして[line 3]
+？2：小道具ではなく[line 3]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠スーパーバニヤン
+もちろん本物さ。[r]しかも神話級の大物。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.7]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠クレオパトラ
+[#私:わたくし]よりも魔物の[#序列:ビリング]が上なのも[r]許しがたいのですが！　ええ、それはさておき！
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠クレオパトラ
+暴れ出して！　襲って来て！[r]なんとか撃退した後、そのまま野放しなんて！
+[k]
+
+＠クレオパトラ
+もう、ひどいにも程があります！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠マシュ
+大蛇、野放しなのですか！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠クレオパトラ
+町中をのたうち回った結果は見てのとおりです！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠スーパーバニヤン
+蛇の監理はキミの担当だったよね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠クレオパトラ
+主演女優に[#蛇使い:チャーマー]を演じろと言うなら、[r]経験上やってやれないことはありませんが[line 3]
+[k]
+
+[charaFace D 2]
+＠クレオパトラ
+この[#私:わたくし]に猛獣狩りまでさせるとなれば、[r]屈辱に耐えかねるというものです。
+[k]
+
+[charaFace D 4]
+＠クレオパトラ
+さらには昨今、この町の周辺は急激に様変わりして、[r]見慣れぬ大トカゲの[#類:たぐい]まで出没する始末。
+[k]
+
+[charaFace D 2]
+＠クレオパトラ
+おまけに女王を[#僭称:せんしょう]する不届き者まで現れるに到っては、[r]あまりの侮られように笑いが込み上げてきました！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠スーパーバニヤン
+ランサーったら……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[bgm BGM_EVENT_80 0.1]
+＠クレオパトラ
+重ね重ねの不敬の報い、[r]その身で受けて朽ち果てなさい！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠マシュ
+クレオパトラさん、大変にお怒りです！[r]心苦しい気もしますが、先輩！
+[k]
+
+？1：止めよう！
+
+[charaFace A 7]
+＠マシュ
+はいっ！
+[k]
+
+？2：クレオパトラごめん……！
+
+[charaFace A 2]
+＠マシュ
+迎撃に入ります！
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

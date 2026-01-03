@@ -1,0 +1,317 @@
+
+＄94-13-93-02-1-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1010000 1 エリザベート]
+[charaSet B 3057000 1 ビショーネ]
+[charaSet C 5043000 1 アスクレピオス]
+[charaSet D 4001000 1 メドゥーサ]
+[charaSet E 1062001 1 黒姫]
+[charaSet F 1098314800 1 チビドラゴン]
+[charaSet G 1098257810 1 マシュ]
+[charaSet H 1098257310 1 ダ・ヴィンチ]
+[charaSet I 1098313000 1 捕食竜]
+[charaSet J 98115000 1 エフェクト用]
+[charaPut J 2000,2000]
+[charaEffect J bit_talk_10_LowLevel]
+
+[cameraMove 0.1 0,0 1.01]
+
+[scene 238801]
+
+[bgm BGM_BATTLE_48 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad728]
+[se ad640]
+[effect bit_talk_impactlanding -300,0]
+[shake 0.05 5 5 2.5]
+[wt 1.4]
+[se ad608]
+[wt 1.0]
+[se ad728]
+[se ad640]
+[effect bit_talk_impactlanding 300,0]
+[shake 0.05 5 5 2.5]
+[wt 2.5]
+
+[se ad460]
+[wt 1.0]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[wt 0.5]
+[cueSe SE_25 25_ade1154]
+[wt 1.5]
+
+？1：この蛇は……！
+？2：大きいだけじゃなくて、強い……！
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaPut A 0,0]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect A appearance 1 0.25]
+[wt 0.4]
+[wait charaSpecialEffect A]
+
+＠エリザベート
+ぜいはあ。これって[r]最初の村にいていいレベルのやつかしらー！？
+[k]
+
+[charaFace A 5]
+
+＠エリザベート
+ハッ。ということは？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ビショーネ
+どうかしましたか、エリちゃん先輩！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+ふん、こんな蛇がいたとはな。ピュートーンの代わりに[r]デルポイを守ってみるのはどうだ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠メドゥーサ
+アポロンを返り討ちにできるかどうかはともかく、[r]確かにこれは、なかなかの怪物です。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠黒姫
+……。[r]……。
+[k]
+
+＠黒姫
+勝てぬ、とは申しましたが。[r]小さき蛇たちながらなかなかの胆力。
+[k]
+
+[charaFace E 4]
+
+＠黒姫
+とはいえ、このまま続けたのならば、[r]時間の問題で[line 3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.2]
+[wt 0.2]
+
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.2 1]
+[wt 0.5]
+[cueSe SE_25 25_ade1156]
+[charaMove I 0,-5 1.0]
+[charaMoveScale I 0.95 1.0]
+[wt 1.2]
+
+[charaFadeout I 0.2]
+[wt 0.2]
+
+[bgmStop BGM_BATTLE_48 1.5]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠黒姫
+……運が良うございましたね。[r][#彼:か]の王の口は、今日は腹が膨れた様子。
+[k]
+
+？1：（そう言えばさっき、別の建物に突っ込んで……）
+？2：（まさかあのとき、ついでに他の誰かを……）
+？！
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaFace E 4]
+
+
+＠黒姫
+これ以上の贄は必要ないようです。[r]我らは城へと戻らせていただきましょう。
+[k]
+
+＠黒姫
+贄として喰わぬものの命を無駄に奪うのは、[r]将来の贄候補を減らすことにしかなりませんので。
+[k]
+
+
+？1：待[&て:って]！
+？2：本当に、[#住人たち:み　ん　な]を食べるのは止められない[&のか:の]！？
+？！
+
+[charaFace E 7]
+
+＠黒姫
+……。[r]……。
+[k]
+
+[charaFace E 4]
+
+
+＠黒姫
+……蛇は肉を喰らうもの。その[#理:ことわり]を[#違:たが]えては、[r]全てが立ちゆかなくなるでしょう。
+[k]
+
+[charaFace E 14]
+
+＠黒姫
+[line 3]さらば。
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ade1024]
+[backEffect bit_talk_ripples_out_back]
+[fowardEffect bit_talk_ripples_out_front]
+[wt 2.0]
+[cueSeStop 24_ade1024 1.3]
+[charaMoveEase E 0,-540 1.2 easeOutSine]
+[wt 1.2]
+[cueSe SE_25 25_ade1172]
+[wt 1.0]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.5]
+[cueSe SE_24 24_ade1024]
+[backEffect bit_talk_ripples_out_back]
+[fowardEffect bit_talk_ripples_out_front]
+[wt 2.0]
+[cueSeStop 24_ade1024 1.3]
+[charaMoveEase I 0,-540 1.2 easeOutSine]
+[wt 1.0]
+[charaFadeout I 0.2]
+[wt 0.2]
+[cueSe SE_25 25_ade1172]
+[wt 1.5]
+[charaFadeout E 0.1]
+
+[bgmStop BGM_EVENT_90 1.5]
+
+？1：（今、一瞬だけ見えた表情は……？）
+？！
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+
+＠エリザベート
+やっぱり顔見せして逃げてく系戦闘イベントだったわ！[r]ムカつく！
+[k]
+
+[charaFace A 1]
+
+＠エリザベート
+まあでも、強くなった勇者に後でやり返されるってのが[r]その裏にあるお約束だから別にいいけど？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ビショーネ
+エリちゃん先輩はやっぱり余裕があってスゴイなあ……。
+[k]
+
+[charaFace B 11]
+
+＠ビショーネ
+わたしはいつ食べられるかビクビクしっぱなしで、[r]疲れちゃって、はぁ……。もう腕が上がんないです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠チビドラゴン
+きゅー……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠マシュ
+いきなりの激しいバトルでしたから。[r]疲労なさるのも当然かと思います。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+ひとまず落ち着ける場所を探して[r]休息をとることを勧めるよ。
+[k]
+
+[charaFace H 36]
+
+＠ダ・ヴィンチ
+その町に落ち着ける場所があるのか[line 3]
+[k]
+
+＠ダ・ヴィンチ
+残っているのかは、[r]ちょっと、わからないけれどね。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

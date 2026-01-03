@@ -1,0 +1,605 @@
+
+
+＄03-00-13-15-4-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098231510 1 マシュ]
+[charaSet B 1098252900 1 テペウ]
+[charaSet C 1098252410 1 ククルカン]
+[charaSet D 1098257300 1 ダ・ヴィンチ]
+[charaSet E 1098255300 1 ニトクリス]
+[charaSet F 1098255200 1 ハベトロット]
+[charaSet G 6028000 1 水着ニトクリス]
+
+[sceneSet H 173900 1]
+
+[sceneSet I 10001 1]
+[charaScale I 1.05]
+
+[charaSet T 98115000 1 エフェクト用]
+
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_sand_dust_back_fs]
+
+[cameraMove 0.1 0,0 1.01]
+
+[scene 173900]
+
+[charaTalk depthOff]
+[charaDepth E 8]
+[charaDepth G 7]
+[charaDepth F 6]
+[charaDepth A 5]
+[charaDepth B 4]
+[charaDepth D 3]
+[charaDepth C 2]
+[charaDepth I 1]
+
+[charaPut I 0,-200]
+[charaFadeTime I 0.1 0.7]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠テペウ
+これは一体[line 3][r]布？　布のようなものが、我々をすっぽりと！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠ニトクリス
+だまって、静かに……！[r]これは神聖なるメジェド様のご加護。
+[k]
+
+＠ニトクリス
+動かずにいれば見つかる事はありません。[r]ここで、なんとか状況を把握しましょう。
+[k]
+
+？1：そうか、ニトクリスは一度、メジェド様の[line 3]
+
+[messageOff]
+[charaTalk E,G]
+[charaFace G 0]
+[charaPut G 220,0]
+[charaFadeTime G 0.4 0.6]
+[charaMove G 270,0 0.4]
+[wt 1.0]
+
+[charaFace E 14]
+
+＠ニトクリス
+なんの事です？[r]これはたまたま持ち合わせていた魔術品ですが。
+[k]
+
+？2：まさか、メジェド様の[#正体:なかみ]はニトクリス[line 3]
+
+[messageOff]
+[charaTalk E,G]
+[charaFace G 0]
+[charaPut G 220,0]
+[charaFadeTime G 0.4 0.6]
+[charaMove G 270,0 0.4]
+[wt 1.0]
+
+[charaFace E 1]
+
+＠ニトクリス
+ワケありませんし不敬ですよ？[r]そもそも、どんな姿であれ中の人などいないのです。
+[k]
+
+？！
+
+[charaFadeout G 0.2]
+[charaFadeout E 0.2]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+はあ～……とにかく助かった。[r]ありがとうニトクリス。まさに簡易キャンプだ。
+[k]
+
+＠ダ・ヴィンチ
+これなら落ち着いて外の様子を探れる。[r]さっきの影は……
+[k]
+
+[messageOff]
+[charaFadeout D 0.2]
+[bgm BGM_EVENT_71 1.0 0.6]
+[wt 0.5]
+
+[subCameraOn 1]
+
+[charaLayer T sub #A]
+[charaLayer H sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask08 3 255,255,255,255]
+
+[charaDepth T 2]
+[charaDepth H 1]
+
+[charaPut T 0,320]
+
+[charaScale H 1.2]
+[charaFadein H 0.1 0,220]
+[wt 0.1]
+
+[subRenderFadein #A 1.0 0,-350]
+[wt 1.6]
+
+[charaShake H 0.05 5 5 0.7]
+[se ade311]
+[se ad882]
+[wt 2.2]
+
+[charaShake H 0.05 5 5 0.7]
+[se ade311]
+[se ad882]
+[wt 2.0]
+
+[subRenderFadeout #A 1.0]
+[bgm BGM_EVENT_71 1.0 1.0]
+[wt 1.0]
+[charaEffectDestroy T bit_talk_sand_dust_back_fs]
+[charaFadeout H 0.1]
+[wt 0.1]
+[subCameraOff]
+[charaLayer H normal]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.2 1]
+[wt 0.2]
+
+＠ダ・ヴィンチ
+……まだ近くにいるみたいだ。[r]あれが立ち去るまで、ここで待機、だね。
+[k]
+
+＠ダ・ヴィンチ
+と、その前に確認だ。[r]みんな、無事かい？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠テペウ
+はい。[r]この謎の密閉空間への興味が止まりません。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+こちら、異常ありません。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaPut F 1]
+[charaFadeTime F 0.1 0.7]
+
+＠ハベトロット
+ボクもケガはしてないよ。[r]あんまりの事で霊体化を忘れただけ。
+[k]
+
+？1：[&自分:わたし]も無傷[&です:だよ]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠ククルカン
+こちらも問題ありません。[r]この布、便利ですね？　もしかして異空間ですか？
+[k]
+
+？2：ククルカンは？
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[wt 1.2]
+[charaFace C 2]
+
+＠ククルカン
+はい、何の驚きもなく！[r]逆に心配してもらって、元気でてきました！
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_71 1.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+よし。じゃあ声を潜めて話をしよう。[r]ここは第三の冥界線、ソソアウワキ。
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠ダ・ヴィンチ
+見たところ、一面の砂漠と強風、[r]そして無重力の世界だった。
+[k]
+
+＠ダ・ヴィンチ
+おそらくアステカ神話におけるミクトランの第五層、[r]パンクエトラカロヤンに相当してる。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……パンクエトラカロヤン。[r]広大な砂漠地帯の冥界ですね。
+[k]
+
+＠マシュ
+『途中には８つのオアシスがあるが、[r]　そこでは人が吹き飛ばされるほどの風が吹いており、
+[k]
+
+＠マシュ
+　死者は空中に囚われぬよう、木々にしがみつき、[r]　旗のように横断していく……』
+[k]
+
+＠マシュ
+確かに符合する点が多いです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠テペウ
+ふむ。では、変化した今の冥界線を突破するには、
+[k]
+
+＠テペウ
+８つのオアシスを越えていく必要がある……[r]という事でしょうか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaPut F 1]
+[charaFadeTime F 0.1 0.7]
+
+＠ハベトロット
+空に浮いてたけどね、オアシス。[r]ボクもちょっと飛べるけど、この強風じゃ絶対むり。
+[k]
+
+＠ハベトロット
+しかも[#空:うえ]の方は無重力状態なんだろ？
+[k]
+
+＠ハベトロット
+上空に出た途端、どこに対して『浮けば』いいか[r]分からなくなるんだわ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠テペウ
+[FFFFFF]？[-]　重力とは引力ですよね。[r]その重力が無いのに、分からなくなる、とは？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+万物の法則として、[r]軽いものは重いものに引き寄せられる。
+[k]
+
+＠ダ・ヴィンチ
+無重力状態というものは[r]厳密には存在しないんだ、テペウ。
+[k]
+
+＠ダ・ヴィンチ
+無重力だと『ふわふわ浮く』というのは、[r]何らかの力で相殺している場合だけだ。
+[k]
+
+[charaFace D 22]
+
+＠ダ・ヴィンチ
+たとえ宇宙空間に出たとしても、軽いものは、[r]自分より重いものに引き寄せられる。
+[k]
+
+＠ダ・ヴィンチ
+さっきの空を見た感じ、上空に行けば[r]オアシスのある大地に落ちて行けそうだけど……
+[k]
+
+[charaFace D 23]
+
+＠ダ・ヴィンチ
+ハベトロットの飛行は『今いる大地からの引力緩和』だ。[r]一度地面に足を着けないと浮遊できない。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠テペウ
+なるほど。空にあるオアシスで飛行するためには、[r]一度落下してぺしゃんこになる必要がある、と。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaPut F 1]
+[charaFadeTime F 0.1 0.7]
+
+＠ハベトロット
+言い方な！　あと地面に近づけば浮けるから！[r]ギリギリで助かるかも知んないだろ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaSet B 1098252940 1 テペウ]
+[charaDepth B 4]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠テペウ
+ハベトロットの浮遊力と落下速度を比べると……[r]いえなんでも。
+[k]
+
+[charaFaceFade B 0 0.2]
+
+＠テペウ
+ところで、皆さんの知る中でもっとも[r]『重いもの』とはなんでしょうか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+もちろんこの地球だとも。なにしろ[r]約6000000000000000000000トンの巨大質量だ。
+[k]
+
+＠ダ・ヴィンチ
+飛行機が地表から遠く離れようと地球に[r]引き寄せられる……落下するのも納得の数値だね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ククルカン
+でも、ここでは上空400メートルまで到達できれば[r]地球の重力から逃れられる、という事ですよね？
+[k]
+
+＠ククルカン
+さきほどは『危ない』と言いましたが、[r]これはオアシスに近づくための手段になりません？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠ニトクリス
+あの強風の中で飛べれば、の話でしょう。
+[k]
+
+＠ニトクリス
+私もハベトロットも無理。ここは地道に徒歩で移動し、[r]オアシスへの道を探すべきです。
+[k]
+
+？1：正体不明の巨大生物が徘徊する中を？
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 34]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+……危険だけど、それしかない。[r]幸い、私たちには砂漠の女王ニトクリスがいる。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？2：それか、強風が過ぎ去るのを待つか
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaPut F 1]
+[charaFadeTime F 0.1 0.7]
+
+＠ハベトロット
+そうしたいところだけど……[r]ここ、汎人類史の冥界を模してるんだろ？
+[k]
+
+[charaFace F 6]
+
+＠ハベトロット
+なら強風が止むことはないんじゃない？[r]あと、いつ巨人に踏み潰されるか怖いだろぉ……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい。いつまでもこうしてはいられません。[r]ですがご安心を、ハベトロットさん。
+[k]
+
+＠マシュ
+わたしたちには、砂漠行きのスペシャリスト、[r]ニトクリスさんがいらっしゃるのですから！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[bgmStop BGM_EVENT_70 1.5]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+
+＠ニトクリス
+[line 3]あ。[r]（唐突にイヤな予感）
+[k]
+
+[charaFace E 0]
+
+＠ニトクリス
+コホン。私は飛べない、と言いました。それも二度。[r]正しく事実を告げるのがファラオです。
+[k]
+
+[charaFace E 6]
+
+＠ニトクリス
+なので、私も皆さんと同じ条件です。[r]ここはもう少し、冷静に話し合うべきではありませんか？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaScale B 1.2]
+[charaScale C 0.9]
+[charaScale D 0.9]
+
+[charaTalk off]
+
+[charaFace B 0]
+[charaFadein B 0.1 380,50]
+[charaFace D 0]
+[charaFadein D 0.1 0,-110]
+[charaFace C 0]
+[charaFadein C 0.1 -350,-110]
+[wt 1.2]
+
+[cueSe SE_21 21_ad1065]
+[seStop 21_ad1065 1.5]
+[charaMove B 330,50 0.5]
+[charaMove D -50,-110 0.5]
+[charaMove C -400,-110 0.5]
+[charaFadeout B 0.4]
+[charaFadeout D 0.4]
+[charaFadeout C 0.4]
+[wt 1.2]
+[charaScale C 1.0]
+[charaScale D 1.0]
+
+[charaFace A 13]
+[charaFadein A 0.1 300,0]
+[charaFace F 2]
+[charaPut F -300,0]
+[charaFadeTime F 0.1 0.7]
+[wt 1.2]
+
+[cueSe SE_21 21_ad1065]
+[seStop 21_ad1065 1.0]
+[charaMove A 250,0 0.5]
+[charaMove F -350,0 0.5]
+[charaFadeout A 0.4]
+[charaFadeout F 0.4]
+[wt 0.6]
+
+＠一同
+…………。[r]（いそいそと外に出る準備をしはじめる）
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ニトクリス
+先頭はくじ引きで決めましょうね？[r]それがカルデア式というものです。ね、同盟者？
+[k]
+
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_7 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

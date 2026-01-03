@@ -1,0 +1,533 @@
+
+
+
+
+
+＄04-00-04-08-4-1
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257910 1 マシュ]
+[charaSet B 3055001 1 ニキチッチ]
+[charaSet C 1098303500 1 パッションリップ]
+[charaSet D 3047300 1 パーシヴァル]
+[charaSet E 4034300 1 バーソロミュー]
+
+[charaSet F 23009001 1 シエル]
+
+[charaSet G 23010002 1 テノチティトラン・バニー]
+
+[charaSet H 2046000 1 ムーンアーチャー1]
+[charaSet I 2046001 1 ムーンアーチャー2]
+[charaSet J 2046002 1 ムーンアーチャー3]
+
+[sceneSet K 10000 1]
+[charaDepth K 1]
+
+[imageSet L cut581_tnt_card 1]
+[sceneSet M 224000 1]
+
+[scene 224000]
+
+[subCameraOn 1]
+[charaScale M 1.5]
+[charaLayer M sub #A]
+[charaLayer L sub #A]
+[charaFadein M 0.1 0,0]
+[subCameraFilter #A maskEdge cut359_mask05 3 0,0,0,255 0]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_BATTLE_58 0.1]
+
+[charaTalk depthOff]
+[charaDepth G 5]
+[charaDepth K 1]
+[charaDepth M 1]
+[charaDepth L 2]
+
+[effect bit_talk_blow02]
+
+[wt 0.2]
+[se ad686]
+[se ad1014]
+[wt 0.3]
+
+[se ad671]
+[seStop ad671 0.8]
+[charaScale G 1.2]
+[charaTalk G]
+[charaFace G 27]
+[charaFadein G 0.2 0,50]
+[charaMoveScaleEase G 1.0 0.4 easeOutQuint]
+[charaMoveEase G 0,0 0.4 easeOutQuint]
+[wt 1.0]
+
+＠テノチティトラン・バニー
+……この攻撃。[r]以前、観光中に遭遇した謎のサーヴァントでしたか。
+[k]
+
+[charaPut K 0,0]
+[charaFadeTime K 0.2 0.5]
+
+＠テノチティトラン・バニー
+（……宇宙から来たサーヴァントは相手にするな、と[r]　ＢＢドバイから言われていましたね……）
+[k]
+
+[charaFadeout K 0.2]
+[charaCrossFade G 1098305200 1 0.2]
+
+＠テノチティトラン・バニー
+いいでしょう。[r]ジナコへの制裁はこれで終了とします。
+[k]
+
+＠テノチティトラン・バニー
+ジナコは臆病なムーンキャンサー。
+[k]
+
+＠テノチティトラン・バニー
+これに懲りて、選挙の勝者になろうなんて[r]思い上がりはなくなるはずですから、ね。
+[k]
+
+[messageOff]
+[se ad598]
+[seStop ad598 1.0]
+[charaMoveEase G 0,60 0.7 easeOutSine]
+[charaFadeout G 0.7]
+[wipeout rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[scene 225800]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.7 1]
+[wait wipe]
+
+[charaDepth G 6]
+[charaDepth H 2]
+[charaDepth I 3]
+[charaDepth J 4]
+
+[charaTalk off]
+[charaFace G 1]
+[se ad598]
+[seStop ad598 0.8]
+[charaFadein G 0.4 0,-50]
+[charaMoveEase G 0,0 0.6 easeOutSine]
+[wt 0.7]
+
+[cueSe SE_23 23_ade832]
+
+[charaFace H 0]
+[charaFadeinFSSideL H 0.4 -400,-50]
+[charaMoveFSSideL H -400,0 0.4]
+[charaFace I 0]
+[charaFadeinFSR I 0.4 200,-50]
+[charaMoveFSR I 200,0 0.4]
+[charaFace J 0]
+[charaFadeinFSSideR J 0.4 400,-50]
+[charaMoveFSSideR J 400,0 0.4]
+[wt 0.5]
+[seStop 23_ade832 1.0]
+
+？1：（撤退してくれるのかな……？）
+
+[charaTalk on]
+[charaTalk G]
+[charaCrossFade G 23010002 17 0.1]
+
+？2：正気に戻[&るんだ:って]、テノチティトラン！
+
+[charaTalk on]
+[charaTalk G]
+[charaCrossFade G 23010002 27 0.2]
+
+＠テノチティトラン・バニー
+私は正気です。[r]アナタこそ、選挙が終わるまで大人しくしているように。
+[k]
+
+[charaFace G 17]
+
+？！
+
+＠テノチティトラン・バニー
+これは撤退ではありません。[r]仕事を達成したので帰投するだけです。
+[k]
+
+[messageOff]
+[charaMoveReturn G 0,-5 0.2]
+[se ad28]
+[wt 0.5]
+[subRenderFadeinFSSideR #A 0.2 300,0]
+[subRenderMoveFSSideR #A 300,-150 0.3]
+[wt 0.5]
+[charaFadein L 0.2 -50,50]
+[charaMoveEase L 0,0 0.3 easeOutCubic]
+[cueSe SE_23 23_ade955]
+[wt 1.0]
+
+[charaFace G 39]
+
+＠テノチティトラン・バニー
+それは警告です。[r]一刻も早く自分の心に気づいてください。
+[k]
+
+＠テノチティトラン・バニー
+ムーンキャンサーたちがどのような者であれ、[r]必ず勝者は選ばれる。
+[k]
+
+＠テノチティトラン・バニー
+賢明な判断を期待します。[r]そうなってからでは遅い、ですよ。
+[k]
+
+[messageOff]
+[subRenderMoveFSSideR #A 300,-200 0.2]
+[subRenderFadeout #A 0.2]
+[wt 0.4]
+
+[charaTalk off]
+[wt 0.5]
+[se ad678]
+[se ade7]
+[seVolume ade7 0 0.6]
+[effect bit_talk_mgn_light02]
+[wt 0.2]
+[cueSe SE_21 21_ad1097]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 1.0]
+[seStop ade7 2.0]
+[cueSeStop 21_ad1097 2.0]
+[wt 2.0]
+
+[bgmStop BGM_BATTLE_58 0.7]
+[wipeout rectangleStripDownToUp 0.7 1]
+[wait wipe]
+
+[subRenderFadeinFSSideR #A 0.1 300,-150]
+[scene 224000]
+[wt 1.0]
+
+[wipein rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠マシュ
+なんでしょうか……マスターを狙って投げられた[r]ものですが、当たらなかったようですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠パッションリップ
+どこかの会員カードでしょうか。[r]……シンプルに趣味が悪いです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ニキチッチ
+文字っぽい模様が刻まれているな。移……なんだ？[r]なんとなく読めるような、読めないような。
+[k]
+
+？1：ただの警告[&だ:だよ]。大したものじゃない[&だろう:でしょ]
+？2：忘れよう。それより[line 3]
+
+？！
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[cueSe SE_24 24_ad1397]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.5]
+[seStop 24_ad1397 0.5]
+[wt 0.3]
+[charaFaceFade F 16 0.2]
+[wt 0.2]
+
+[bgm BGM_EVENT_167 0.1]
+
+＠？？？
+こんにちは。[r]先ほどは出すぎたマネをしてしまい、失礼しました。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 29]
+[charaFadein A 0.1 1]
+
+＠マシュ
+そんな事はありません、たいへん助かりました！
+[k]
+
+[charaFace A 3]
+
+＠マシュ
+その、以前お会いしましたが[r]念のため確認させてください。
+[k]
+
+＠マシュ
+代行者のシエルさん、でよろしいのでしょうか……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠シエル
+はい。代行者のシエルです。[r]覚えていてもらえて良かった。
+[k]
+
+[charaFace F 18]
+
+＠シエル
+それと、ジナコさんなら無事ですのでご安心を。
+[k]
+
+＠シエル
+彼女がいなくてはオールド・ドバイは[r]立ち行きませんからね。全力で守らせていただきました。
+[k]
+
+？1：シエルさんもムーン・ドバイにいたんですね
+
+？！
+
+[charaFace F 10]
+
+＠シエル
+はい。[r]突然街の作りが変わって、私も驚きました。
+[k]
+
+[charaFace F 14]
+
+＠シエル
+これは一大事、観光気分ではいられません、と[r]私なりにムーン・ドバイを調査していたのですが……
+[k]
+
+[charaFace F 15]
+
+＠シエル
+さすがに８日経つとお腹が減ってしまって……[r]ですが、どこにいってもマトモな飲食店がなく……
+[k]
+
+[charaFace F 16]
+
+＠シエル
+香ばしい香りに誘われて、命からがら[r]オールド・ドバイに辿り着きました。
+[k]
+
+＠シエル
+ああ、チャッカリムさんですか？[r]はい。とても良くしていただきました。
+[k]
+
+＠シエル
+そうしておかわりに勤しんでいる時、[r]先ほどの襲撃があったのです。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 21]
+[charaFadein D 0.1 1]
+
+＠パーシヴァル
+なるほど。では貴方もカルデア側……いや、[r]人理側のサーヴァントと見ていいのかな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠シエル
+もちろんです。もともとはこの宙域、この時代に[r]人理の[#歪:ゆが]みがあるので派遣された者ですから。
+[k]
+
+[charaFace F 17]
+
+＠シエル
+とはいえ、私の任務と皆さんの任務は[r]同じようで違うもののようなので……
+[k]
+
+[charaFace F 4]
+
+＠シエル
+できるだけ関わらないよう距離を取っていたのです。[r]ほら。私もムーンキャンサーのクラスなので。
+[k]
+
+＠シエル
+敵と思われても当然ですし、[r]身の潔白を証明する術もありませんから。
+[k]
+
+？1：でもこれで知り合いになれました
+？2：協力関係にはなれませんか？
+
+？！
+
+[charaFace F 7]
+
+＠シエル
+私のような不審者とですか？[r]自分で言うのもなんですが謎の代行者ですよ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠マシュ
+不審者なんてとんでもない。
+[k]
+
+＠マシュ
+シエルさんが清く正しい方である事は[r]近くにいるだけで伝わってきます。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠ニキチッチ
+うん。ここまで秩序・善な空気いっぱいの[r]サーヴァントも珍しいぞ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠パーシヴァル
+そうだね。ギャラハッド卿を思い出すよ。[r]……まあ、それは転じてマシュの事でもあるんだが。
+[k]
+
+＠パーシヴァル
+先ほどのようにオールド・ドバイを[r]守ってくれるだけでも助かるよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠バーソロミュー
+ムーンキャンサーだからといって気にする事もない。
+[k]
+
+[charaFace E 1]
+
+＠バーソロミュー
+そこにいるマスター・[%1]は[r]たとえクラス・ビーストであっても気にしないからね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠シエル
+！　[%1]！？[r][%1]と言いましたか、今！？
+[k]
+
+＠シエル
+では貴方が、[#蒼輝銀河:ユ ニ ヴ ァ ー ス]に[r]お家カレーのレシピを広めた伝説の……！
+[k]
+
+[branchQuestClear lblIsClear 94041916]
+
+[label lblIsNotClear]
+
+[branchQuestClear lblIsClear2 94054816]
+
+[label lblIsNotClear2]
+
+？1：？？？
+？2：？？？？？？
+
+？！
+[branch Conf00]
+[label lblIsClear]
+[label lblIsClear2]
+？1：？　（……あ。もしかして、あの時の？）
+？2：！　（Ｓイシュタルたちが広めたんだ！）
+
+？！
+[label Conf00]
+
+[charaFace F 12]
+
+＠シエル
+なんという運命の巡り合わせなのでしょう……[r]これはもうフレンドになるしかないですね……
+[k]
+
+[charaFace F 1]
+
+＠シエル
+わかりました。[r]では、改めて自己紹介ですね！
+[k]
+
+[charaFace F 16]
+
+＠シエル
+私はシエル。[r]対吸血鬼に特化した代行者です。
+[k]
+
+＠シエル
+ちょっとしたお手伝いしかできませんが、[r]緊急時には遠慮なくお声掛けを。
+[k]
+
+＠シエル
+色々と謎まみれな立場ですが、私に許された範囲で、[r]皆さんのお役に立ってみせますね！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_167 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,904 @@
+
+＄94-08-25-24-1-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 6048001 1 ロクスタ]
+[charaSet B 1057000 1 セタンタ]
+[charaSet C 10016000 1 ティアマト]
+[charaSet D 28003000 1 レディ・アヴァロン]
+[charaSet E 10016002 1 ティアマト_演出用]
+
+[charaSet F 6048001 1 エフェクト用]
+
+[sceneSet I 181100 1]
+[sceneSet J 186100 1]
+[sceneSet K 186100 1]
+
+[sceneSet L 10000 1]
+[charaScale L 1.05]
+
+[sceneSet M 181100 1]
+
+[sceneSet O 10001 1]
+[charaScale O 2.0]
+
+
+[scene 181900]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.5]
+
+[fadein black 2.2]
+[wait fade]
+
+？1：……何ともない？
+
+？！
+
+[bgm BGM_EVENT_38 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ロクスタ
+アタシたち……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+泥に呑まれて……ないな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ティアマト
+……だいじょうぶ。
+[k]
+
+[messageOff]
+[charaEffectEdgeBlur C afeeee afeeee 10 2.0]
+[cueSe SE_22 22_ad1180]
+[seVolume 22_ad1180 0 0]
+[seVolume 22_ad1180 1.0 0.6]
+[wt 1.0]
+[seStop 22_ad1180 1.5]
+[wt 1.0]
+
+[charaFace C 4]
+
+＠ティアマト
+わたしが泥を退ける……！
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ad1110]
+[fadeout white 1.5]
+[bgm BGM_EVENT_38 1.5 0.5]
+[wait fade]
+
+[seStop 21_ad1110 1.5]
+[charaFadeout C 0.1]
+[charaPut C 2000,2000]
+[wt 1.5]
+
+[fadein white 1.5]
+[bgm BGM_EVENT_38 1.5 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠レディ・アヴァロン
+なるほどね。[r][#生命の海:ケイオスタイド]の力を応用して……
+[k]
+
+？1：……助かった
+？2：ありがとう、ティアマト
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠ティアマト
+………………。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut C 2000,2000]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+だけど、この状況は……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_38 2.0]
+
+[se ade393]
+[seVolume ade393 0 0.1]
+[seVolume ade393 1.0 1.0]
+[shake 0.02 2 2 9.5]
+[charaScale F 2.0]
+[charaPut F 0,300]
+[charaEffect F bit_talk_blood_aura_fs]
+[charaBackEffect F bit_talk_blood_aura_back_fs]
+[wt 2.0]
+[effect bit_talk_blood_rain 0,0 V]
+
+[cueSe SE_22 22_ade720]
+[seVolume 22_ade720 0 0.1]
+[seVolume 22_ade720 1.0 1.0]
+[wt 0.2]
+[flashin once 0.3 4.0 8E0019FF 8E001900]
+[wt 0.3]
+[se adm11]
+[se ad979]
+[se ade66]
+[se ad414]
+
+[effectDestroy bit_talk_blood_rain]
+[charaEffectDestroy F bit_talk_blood_aura_fs]
+[charaBackEffectDestroy F bit_talk_blood_aura_back_fs]
+[effect bit_talk_mud_down]
+[effectStop bit_talk_mud_down]
+[charaScale I 1.3]
+[charaFadein I 1.5 0,-150]
+[charaMove I 0,-320 7.0]
+[wt 0.5]
+[se ad226]
+[wt 1.0]
+
+[scene 181100]
+[wt 4.0]
+
+[seVolume ade393 2.0 0.2]
+[seStop 22_ade720 2.0]
+[seStop ad414 1.0]
+
+[charaFadeout I 1.5]
+[wt 3.0]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠ロクスタ
+……ネロさまの黄金劇場。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠レディ・アヴァロン
+[line 3]ソドムズビーストの宝具だ。[r]ついに[#覚醒:め　ざ]めてしまったか……。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[cueSe SE_23 23_ade867]
+[shake 0.02 4 4 3.6]
+[wt 2.5]
+[seStop 23_ade867 1.5]
+[seStop ade393 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[cameraHome 0.1]
+[scene 10000]
+[wt 1.0]
+
+[fadein black 0.5]
+[wait fade]
+
+
+
+[criMovie talk_mov169 bgmPlay true]
+
+[fadeout black 0.5]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth J 4]
+[charaDepth K 3]
+
+[charaScale K 1.3]
+[charaFadein K 0.1 0,-250]
+
+[charaScale J 1.2]
+[charaFadein J 0.1 50,-200]
+[charaMove J -150,-200 15.0]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_171 0.1]
+[wait fade]
+
+[wt 2.5]
+
+[charaMove K 0,-450 15.0]
+[charaFadeout J 1.5]
+[wt 2.5]
+
+[sceneSet J 186100 1]
+[charaDepth J 2]
+[charaScale J 1.01]
+[charaFadein J 0.1 0,-200]
+[wt 2.0]
+
+[charaFadeout K 1.5]
+[wt 2.5]
+
+？1：……あれがソドムズビースト真体？
+
+？！
+
+[scene 181100]
+[charaDepth M 1]
+[charaScale M 1.2]
+[charaFadein M 0.1 -80,-200]
+
+[subCameraOn 1]
+
+[charaLayer C sub #A]
+[charaLayer B sub #A]
+[charaLayer D sub #A]
+[charaLayer A sub #A]
+[charaLayer I sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask05 3 255,255,255,255]
+
+[charaScale C 1.2]
+[charaScale B 1.2]
+[charaScale D 1.2]
+[charaScale A 1.2]
+[charaScale I 1.2]
+
+[charaDepth A 8]
+[charaDepth B 6]
+[charaDepth C 5]
+[charaDepth D 4]
+[charaDepth I 3]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 10,270]
+[charaFadein I 0.1 0,0]
+[wt 0.1]
+
+[subRenderFadeinFSR #A 0.2 250,-230]
+[subRenderMoveFSR #A 250,-270 0.2]
+[wt 0.2]
+
+＠ティアマト
+わたしたち……向こうのカルデアが戦った[r]ソドムズビーストとは別物。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut C 2000,2000]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 30,250]
+
+＠セタンタ
+オレたちが戦ったのは、あちこちデッカくなった[r]ドラコーって感じだったよな。
+[k]
+
+＠セタンタ
+つまり、アレの中身は……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,250]
+
+＠レディ・アヴァロン
+魔獣赫を核にした、新たなソドムズビースト。[r]だから、もうドラコーは……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 0,250]
+
+＠ロクスタ
+……そんな……ネロさまが……
+[k]
+
+？1：………………
+？2：……もうダメなのかな？
+
+？！
+
+[messageOff]
+[charaFadeout J 1.0]
+
+[subRenderFadeout #A 1.0]
+[wt 1.0]
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaScale C 1.0]
+[charaScale B 1.0]
+[charaScale D 1.0]
+[charaScale A 1.0]
+
+[charaLayer C normal]
+[charaLayer B normal]
+[charaLayer D normal]
+[charaLayer A normal]
+[charaLayer I normal]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ティアマト
+いいえ！[r]……いいえっっっ！
+[k]
+
+[messageOff]
+[charaBackEffect C bit_talk_radiallight02_big]
+[cueSe SE_22 22_ad1180]
+[seVolume 22_ad1180 0 0]
+[seVolume 22_ad1180 1.0 0.8]
+[wt 2.5]
+
+[seStop 22_ad1180 0.3]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut C 2000,2000]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+……ティアマト？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ティアマト
+[%1]！[r]あきらめてはいけません！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut C 2000,2000]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠レディ・アヴァロン
+ティアマト。キミは……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ティアマト
+ごめんなさい、[%1]！[r]お母さん、まちがってました！
+[k]
+
+[charaFace C 4]
+
+＠ティアマト
+ドラコー……あの子は、泣いてる子供！[r]ビーストである以前に、ひとりの子供！
+[k]
+
+＠ティアマト
+ドラコー！[r]あの子も、この母のかわいい子供です！
+[k]
+
+＠ティアマト
+お母さんはっっっっ！[r]我が子を絶対見捨てないっっっ！
+[k]
+
+[messageOff]
+[charaTalk D]
+[charaMove C 100,0 0.8]
+[charaMove M 0,-200 0.8]
+[charaPut D -300,-50]
+[charaMove D -310,-50 0.8]
+[wt 0.5]
+
+[charaScale D 0.92]
+[charaFace D 3]
+[charaFadeTime D 0.3 1.0]
+[wt 1.7]
+
+[charaTalk D,C]
+[charaMove D -420,-50 0.8]
+[charaFadeout D 0.5]
+[charaMove C 0,0 0.8]
+[charaMove M -100,-200 0.8]
+[wt 1.2]
+
+[charaScale D 1.0]
+
+？1：ティアマト！
+？2：みんなのお母さん！
+
+？！
+
+[charaTalk C,A]
+[charaFace A 25]
+[overlayFadein A 0.4 310,0]
+[charaMove A 260,0 0.4]
+[wt 0.4]
+[se ad183]
+
+[charaFace C 7]
+[charaShake C 0.1 1 1 0.4]
+[wt 0.6]
+
+＠ロクスタ
+ぶええええええええんっ！[r]ティアマトさまぁだいすきぃぃぃぃぃぃぃ！
+[k]
+
+＠ロクスタ
+お礼に最高級のトリュフあげますぅぅっ！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut C 2000,2000]
+
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+オレの時と、態度が大違いじゃねえか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ティアマト
+あの大きな魔獣赫は、お母さんが何とかします！[r]だから、[%1]！
+[k]
+
+＠ティアマト
+ドラコーを迎えに行きなさい！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut C 2000,2000]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+迎えに行くって、おまえ……[r]どうやってだよ？
+[k]
+
+＠セタンタ
+ドラコーが生きてるとしても、[r]あのバケモンの中だろ？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth L 2]
+[charaPut L 1]
+[charaFadeTime L 0.3 0.4]
+[wt 0.2]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[effect bit_talk_CommandMantra_30]
+[se bac41]
+[wt 2.0]
+[effectStop bit_talk_CommandMantra_30]
+
+[branch _branchEnd]
+
+[label _Female]
+
+[effect bit_talk_CommandMantra_32]
+[se bac41]
+[wt 2.0]
+[effectStop bit_talk_CommandMantra_32]
+
+[label _branchEnd]
+
+[wt 0.5]
+[charaFadeout L 0.3]
+[wt 0.8]
+
+？1：[line 3]大丈夫
+？2：[&オレ:わたし]に任せて
+
+？！
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠レディ・アヴァロン
+……そうだね。ここまで来て、[r]バッドエンドなんてまっぴらごめんさ！
+[k]
+
+＠レディ・アヴァロン
+私はドラコーとは違うからね。[r]物語を綺麗に終わらせたい、なんて全然思わない！
+[k]
+
+
+
+[charaFace D 7]
+
+＠レディ・アヴァロン
+ずっと、ずっと終わらない[line 3][r]いつまでも続く綺羅星の物語が好みなのさ！
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠ティアマト
+それじゃあ……[r]お母さんは本気を出します！
+[k]
+
+[messageOff]
+[effect bit_talk_light_through]
+[se ad474]
+[wt 1.0]
+
+[fadeout white 1.5]
+[bgmStop BGM_EVENT_171 1.5]
+[seStop ad474 2.2]
+[wait fade]
+
+[charaFadeout M 0.1]
+[charaBackEffectStop C bit_talk_radiallight02_big]
+[effectDestroy bit_talk_light_through]
+[charaEffectEdgeBlurDestroy C]
+
+
+[charaSet C 10016002 1 ティアマト]
+
+[charaScale E 1.2]
+[charaScale I 1.25]
+
+[charaTalk depthOff]
+[charaDepth E 3]
+[charaDepth I 2]
+[charaDepth C 1]
+
+[charaTalk E,C]
+[charaFace E 0]
+[charaFadein E 0.1 0,150]
+[charaFadein I 0.1 0,-150]
+
+[effect bit_talk_fog_side]
+[charaFace E 0]
+[charaFadein C 0.1 0,0]
+[charaBackEffect E bit_talk_charge_blu]
+[charaEffect E bit_talk_lightning_07b 0,-200]
+[charaBackEffect C bit_talk_charge_blu]
+[charaEffect C bit_talk_lightning_07b 0,-200]
+[se ad300]
+[wt 1.0]
+
+[charaMove E 0,-25 10.0]
+[charaMove I 0,-300 10.0]
+
+[se ad978 0.6]
+[seStop ad978 2.5]
+[wt 1.0]
+[effectStop bit_talk_fog_side]
+[fadein white 2.0]
+[se ad169 0]
+[seVolume ad169 2.0 0.3]
+[se ade446 0]
+[seVolume ade446 2.0 0.2]
+[wt 1.0]
+[bgm BGM_BATTLE_127 0.1]
+[wait fade]
+
+
+[wt 3.0]
+
+[charaFadeout E 1.0]
+[charaFadeout I 1.0]
+[charaBackEffectStop E bit_talk_charge_blu]
+[charaEffectStop E bit_talk_lightning_07b]
+[wt 1.0]
+[charaBackEffectDestroy E bit_talk_charge_blu]
+[charaEffectDestroy E bit_talk_lightning_07b]
+[wt 0.5]
+[seStop ad169 2.5]
+[seStop ade446 2.5]
+[charaBackEffectStop C bit_talk_charge_blu]
+[charaEffectStop C bit_talk_lightning_07b]
+
+＠ティアマト
+[line 9]。
+[k]
+
+？1：その姿……バビロニアの時の
+？2：あの時のティアマトに似ている
+
+？！
+
+[charaFace C 5]
+
+＠ティアマト
+……ダイジョウブ。[r]コワクナイカラ……
+[k]
+
+＠ティアマト
+ムカシノ、ワタシ、チガイマス。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ロクスタ
+……見た目だけじゃなく、[r]性格もなんか変わってませんです？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠ティアマト
+……ミンナ、マモリマス。
+[k]
+
+[messageOff]
+[wt 0.2]
+[effect bit_talk_voice01]
+[charaFace C 4]
+[wt 0.1]
+[cueSe SE_23 23_ade868]
+[shake 0.03 2 2 2.8]
+[wt 0.4]
+[se ad805 0.6]
+[se ad875 0.8]
+[se ade393 0.4]
+[wt 1.9]
+[seStop ad805 1.5]
+
+＠ティアマト
+ａａ[line 3][r]ａａａａａａａａａａａａａａａ[line 3]！
+[k]
+
+[messageOff]
+[seStop ade393 1.0]
+[fadeout white 1.0]
+[bgm BGM_BATTLE_127 1.0 0.5]
+[seStop 23_ade868 1.0]
+[wait fade]
+
+[charaEffectDestroy C bit_talk_charge_blu]
+[charaBackEffectDestroy C bit_talk_lightning_07b]
+[effectDestroy bit_talk_voice01]
+[charaFadeout C 0.1]
+[scene 10001]
+[overlayFadein O 0.1 0,-200]
+[wt 1.0]
+
+[fadein white 0.5]
+[wait fade]
+
+[criMovie talk_mov170 bgmPlay false]
+[wt 0.3]
+[charaFadeout O 1.0]
+[wt 1.0]
+[scene 10000 0.5]
+[wt 12.0]
+[scene 10001 0.5]
+[wt 1.0]
+
+[fadeout white 0.5]
+[wait fade]
+
+[scene 186100]
+[cameraMove 0.1 0,0 1.01]
+[wt 1.0]
+
+[shake 0.02 4 4 2.5]
+[se ade467]
+[se ad978]
+
+[fadein white 1.5]
+[bgm BGM_BATTLE_127 1.5 1.0]
+[wait fade]
+
+[wt 2.0]
+
+＠魔獣赫・真体
+[line 12]！？
+[k]
+
+＠魔獣赫・真体
+この力[line 3]ビーストⅡか。
+[k]
+
+[charaPut L 1]
+[charaFadeTime L 0.2 0.5]
+
+
+[subCameraOn 1]
+
+[charaLayer C sub #A]
+[charaLayer I sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask20 3 255,255,255,255]
+
+[charaScale C 1.2]
+[charaScale I 1.2]
+
+[charaDepth C 7]
+[charaDepth I 5]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 0,250]
+[charaFadein I 0.1 0,0]
+[wt 0.1]
+[bgmStop BGM_BATTLE_127 1.5]
+
+[subRenderFadeinFSR #A 0.2 250,-270]
+[wt 0.2]
+
+＠ティアマト
+……オトナシク、シテ。
+[k]
+
+？1：魔獣赫！
+？2：ドラコーを返してもらう[&ぞ:よ]
+
+？！
+
+[messageOff]
+
+[charaFadeout L 0.2]
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+[charaFadeout C 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_53 0.1]
+[subCameraOff]
+[charaLayer C normal]
+[charaLayer I normal]
+
+
+＠魔獣赫・真体
+[%1]。[r]……ようやく、この時がやって来たのだ。
+[k]
+
+[messageOff]
+[cueSe SE_23 23_ade867]
+[shake 0.02 5 5 2.2]
+[wt 1.5]
+[seStop 23_ade867 1.5]
+[wt 1.7]
+
+＠魔獣赫・真体
+共に来い、我らがマスター。[r]我らは人類悪。我らは都市喰いの獣。
+[k]
+
+＠魔獣赫・真体
+[#都市:ローマ]を灼くのだ。[r][#世界:ローマ]を灼くのだ。
+[k]
+
+＠魔獣赫・真体
+[#人類:ローマ]を。[#人理:ローマ]を。[#宮殿:ローマ]を。[r][#玉座:ローマ]を。[#母上:ローマ]を。[#毒薬:ローマ]を。
+[k]
+
+＠魔獣赫・真体
+全ての[#浪漫:ローマ]を。[r]全て、全て、全て、焼べて[line 3]
+[k]
+
+＠魔獣赫・真体
+あの[#落陽:ローマ]を[line 3]貴様と[line 3]
+[k]
+
+[messageOff]
+[wt 0.3]
+[cameraMove 0.4 -100,30 1.4]
+[blur motion 0.5 4 100 0.5 0.5 0.03 100]
+[se ad85]
+[wt 0.5]
+
+[charaFilter L silhouette FFFFFF80]
+[charaFadein L 0.3 0,-200]
+[wt 0.2]
+[cueSe SE_23 23_ade867]
+[wt 1.1]
+[seStop 23_ade867 1.4]
+[wt 1.0]
+
+[fadeout black 0.5]
+[seStop ad85 0.4]
+[bgmStop BGM_MAP_53 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+

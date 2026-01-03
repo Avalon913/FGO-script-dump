@@ -1,0 +1,852 @@
+
+
+＄94-14-58-02-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[effect bit_talk_strongwind04_cl]
+
+[charaSet A 1019001 1 ラーマ]
+[charaSet B 1098330700 1 アルジュナ]
+[charaSet C 1098328400 1 ヴリトラ]
+[charaSet D 1098328720 1 インドラ]
+[charaSet E 1098328000 1 ヴァジュラ]
+[charaSet F 1098328100 1 ヴァジュラ]
+[charaSet G 3054000 1 ビーマ]
+
+[charaSet H 1098328400 1 ヴリトラ演出用]
+[charaSet I 1098330700 1 アルジュナ演出用]
+[charaSet J 1098330700 1 アルジュナ演出用]
+[charaSet K 3054000 1 ビーマ演出用]
+
+[sceneSet L 253600 1]
+
+[sceneSet M 253600 1]
+[sceneSet N 253600 1]
+[sceneSet O 253600 1]
+
+[imageSet P cut699_touch_fingertip 1]
+[imageSet Q cut700_medal_01 1]
+
+[sceneSet W 10001 1]
+[sceneSet X 10000 1]
+[charaScale X 1.1]
+[imageSet Y back10000 1]
+[charaScale Y 1.05]
+[imageSet Z back10000 1]
+[charaScale Z 1.05]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaDepth C 3]
+[charaDepth L 4]
+[charaDepth K 5]
+[charaDepth J 6]
+[charaDepth Q 7]
+
+[subCameraOn 4]
+[charaLayer D sub #A]
+[charaLayer E sub #A]
+[charaLayer F sub #A]
+[charaLayer M sub #A]
+[charaLayer W sub #MASK]
+[charaLayer Y sub #MASK]
+[charaLayer Z sub #MASK]
+[subCameraFilter #A normal]
+[subCameraFilter #A maskEdge #MASK 5 77,102,132,255 0]
+
+[charaDepth M 1]
+[charaDepth D 2]
+[charaDepth F 3]
+[charaDepth E 4]
+[charaDepth W 5]
+[charaDepth Y 6]
+[charaDepth Z 7]
+
+[charaScale M 1.2]
+[charaScale E 0.9]
+[charaScale F 0.9]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0 1]
+[charaFace E 0]
+[charaPut E 250,-8]
+[charaFadeTime E 0 0]
+[charaFace F 0]
+[charaPut F -250,-16]
+[charaFadeTime F 0 0]
+[charaFadein M 0 0,-300]
+
+[charaFadein W 0 0,-200]
+[charaFadein Y 0 960,-200]
+[charaFadein Z 0 -960,-200]
+
+[charaLayer N sub #B]
+[charaLayer I sub #B]
+[subCameraFilter #B maskEdge cut359_mask10 4 0,0,0,255]
+
+[charaDepth N 1]
+[charaDepth I 2]
+
+[charaScale N 1.3]
+[charaScale I 1.3]
+[charaFace I 5]
+[charaFadeinFSL I 0.1 -50,180]
+[charaFadein N 0.1 300,-100]
+
+[charaLayer O sub #C]
+[charaLayer H sub #C]
+[subCameraFilter #C maskEdge cut359_mask09 4 0,0,0,255]
+
+[charaDepth O 1]
+[charaDepth H 2]
+
+[charaScale O 1.3]
+[charaScale H 1.3]
+[charaFace H 3]
+[charaFadeinFSR H 0.1 50,180]
+[charaFadein O 0.1 -300,0]
+
+[scene 253610]
+
+[cameraMove 0.1 0,-40 1.2]
+[wt 0.5]
+
+[cueSe SE_23 23_ade904 1.0 0.6]
+[cameraMoveEase 0,0 6.5 easeOutSine 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[cueSeStop 23_ade904 5.5]
+[wt 2.0]
+
+[scene 253600 2.0]
+[wt 1.0]
+[effectStop bit_talk_strongwind04_cl]
+[wt 3.5]
+
+[bgm BGM_EVENT_167 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠ビーマ
+いやー、負けた負けた！[r]いいのを入れられちまったな！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠アルジュナ
+そう言いながらケロッとしてるように見えるのが[r]兄様の恐ろしいところですが……。
+[k]
+
+[charaTalk A]
+[charaFace A 1]
+
+＠ラーマ
+しかし事実、風は収まっているぞ。[r]我らが勝利したことに間違いはあるまい！
+[k]
+
+＠ラーマ
+よーし、よくやったぞ、アルジュナ。
+[k]
+
+＠ラーマ
+ライブラリで映画を見た限りでは、[r]共に勝利を掴んだ相棒はこうするものらしい。
+[k]
+
+＠ラーマ
+拳を合わせるのだ。
+[k]
+
+[charaTalk B]
+[charaFace B 1]
+
+＠アルジュナ
+……フ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMove A 180,0 0.7]
+[charaMove B -180,0 0.7]
+[wt 1.0]
+[charaMoveReturn A 177,0 0.4]
+[charaMoveReturn B -177,0 0.4]
+[se ade274]
+[seVolume ade274 0 0.6]
+[wt 0.9]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+
+＠ラーマ
+もちろん相棒は余だけではない。[r]これはチームプレイであった。マスターとも！
+[k]
+
+？1：やったね！
+？！
+
+[messageOff]
+[charaTalk off]
+[charaMoveScale B 1.1 0.7]
+[charaMoveScale A 1.1 0.7]
+[charaMove B -200,0 0.7]
+[charaMove A 200,0 0.7]
+[cameraMove 0.7 0,-20 1.1]
+[wt 1.0]
+[cameraMove 0.2 0,-20 1.11]
+[se ade274]
+[seVolume ade274 0 0.6]
+[wt 0.2]
+[cameraMove 0.2 0,-20 1.1]
+[wt 0.7]
+[charaTalk on]
+[charaTalk A]
+
+＠ラーマ
+そして……
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadein #B 0.3 -215,-230]
+[subRenderMoveEase #B -225,-200 0.8 easeOutQuart]
+[subRenderFadein #C 0.3 192,-170]
+[subRenderMoveEase #C 202,-200 0.8 easeOutQuart]
+[wt 1.3]
+[charaTalk on]
+[charaTalk H]
+[cameraMove 0.1 0,0 1.0]
+[charaScale B 1.0]
+[charaScale A 1.0]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+
+＠H：ヴリトラ
+……。[r]……。
+[k]
+
+[charaTalk I]
+
+＠I：アルジュナ
+……。[r]……。
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.5]
+
+？1：（野良猫同士が出会ったみたいに）
+？2：（変な緊張感で睨み合っている……）
+？！
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 10]
+
+＠H：ヴリトラ
+ふん。インドラの息子よ。貴様はわえのことを[r]まだ信用しきれてはおらんようじゃ。
+[k]
+
+[charaTalk I]
+[charaFace I 5]
+
+＠I：アルジュナ
+当然だな、[#干魃:かんばつ]の邪竜よ。
+[k]
+
+[charaTalk H]
+[charaFace H 3]
+
+＠H：ヴリトラ
+しかし今回、マスターの策の[#下:もと]、[r]協力したのは事実。
+[k]
+
+[charaTalk I]
+[charaFace I 0]
+
+＠I：アルジュナ
+……そうだな。
+[k]
+
+[charaTalk H]
+[charaFace H 0]
+
+＠H：ヴリトラ
+マスターの顔を立てるためにも、[r]ここは間を取って手打ちにしよう。
+[k]
+
+[charaFace H 1]
+[charaFace B 0]
+[charaFadein B 0.1 -250,0]
+[charaFace C 1]
+[charaFadein C 0.1 250,0]
+
+＠H：ヴリトラ
+……指先でどうじゃ？
+[k]
+
+[charaTalk I]
+
+＠I：アルジュナ
+いいだろう。
+[k]
+
+[messageOff]
+[charaTalk I,B,C]
+[subRenderFadeout #B 0.4]
+[subRenderFadeout #C 0.4]
+[wt 0.6]
+
+[charaFadeout N 0]
+[charaFadeout O 0]
+[charaFadeout H 0]
+[charaFadeout I 0]
+
+[charaLayer X sub #B]
+[charaLayer P sub #B]
+[subCameraFilter #B through]
+[charaDepth X 1]
+[charaDepth P 2]
+[charaScale P 1.45]
+[charaPut X 0,-200]
+[charaFadeTime X 0 0.5]
+[charaFadein P 0 0,-385]
+
+[charaMove B -200,0 0.7]
+[charaMove C 200,0 0.7]
+[wt 1.0]
+[cueSe SE_21 21_ade578 0 0.4]
+[subRenderFadein #B 0.5 0,0]
+[blur lens 0.5 2 20]
+[wt 1.7]
+
+[charaTalk A]
+
+＠ラーマ
+拳ではなく人指し指の先端同士を合わせているな。[r]まあ、何もせんよりはいいだろう。
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.5]
+
+？1：（それはまた別の文脈が発生してるような）
+？2：（なんか古い映画で見た気がする……！）
+？！
+
+[blurOff lens 0.3]
+[subRenderFadeout #B 0.3]
+[wt 0.4]
+[charaFadeout X 0]
+[wt 0.1]
+[charaLayer X normal]
+
+[se ad7]
+[charaMoveEaseFSR C 400,0 0.4 easeOutCubic]
+[wt 0.4]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 16]
+
+＠ヴリトラ
+むむうー。はい終わり終わり！[r]わえ、こっぱずかしい！
+[k]
+
+[charaTalk B]
+[charaFace B 12]
+
+＠アルジュナ
+こっちの台詞だが？
+[k]
+
+[messageOff]
+[charaTalk B,J]
+[charaScale L 1.3]
+[charaScale K 1.2]
+[charaScale J 1.2]
+[charaFace J 0]
+[charaFadein J 0.5 50,0]
+[charaFadein L 0.5 140,-300]
+[charaMoveEase J 100,0 0.5 easeOutSine]
+[charaMoveEase L 190,-300 0.5 easeOutSine]
+[cueSe SE_25 25_ade1226]
+[wt 1.0]
+
+[cueSeStop 25_ade1226 0.5]
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.4 -320,0]
+[charaMoveEase K -270,0 0.5 easeOutSine]
+[wt 0.5]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+＠K：ビーマ
+ははは。[r]アルジュナよ、俺は嬉しいぞ。
+[k]
+
+[charaFace K 5]
+
+＠K：ビーマ
+いつも共に戦っているのは[r]俺たちだったからな。
+[k]
+
+[charaFace K 1]
+
+＠K：ビーマ
+俺たち兄弟以外の奴らと協力して何かを為す[r]おまえの姿は[line 3]うむ、なんというか、いい！
+[k]
+
+＠K：ビーマ
+気持ちよくメシが食えそうな感じだ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMoveReturn K -265,0 0.5]
+[charaFace J 3]
+[charaShake J 0.03 2 1 0.5]
+[cueSe SE_24 24_ade1008 0 0.7]
+[wt 0.8]
+[charaMoveReturn K -265,0 0.5]
+[charaShake J 0.03 2 1 0.5]
+[wt 0.7]
+[cueSeStop 24_ade1008 0.5]
+[charaTalk on]
+[charaTalk J]
+
+＠J：アルジュナ
+うっ、兄様、[r]人前でそのように頭をわしゃわしゃは……
+[k]
+
+[charaFace J 14]
+
+＠J：アルジュナ
+それに、今までだって[r]別に我々だけで戦ってきたのではありません。
+[k]
+
+＠J：アルジュナ
+あの大戦争のときも、[r]仲間はたくさんいたでしょう。
+[k]
+
+[charaFace J 7]
+
+＠J：アルジュナ
+ドリシュタデュムナ、シカンディン、サーティヤキ、[r]そして、クリシュナ……。
+[k]
+
+[charaTalk K]
+[charaFace K 10]
+
+＠K：ビーマ
+へへ、イメージっつーか雰囲気の話込みだよ。[wt 0.8][charaFace K 0][r][line 3]っと？
+[k]
+
+[bgmStop BGM_EVENT_167 1.5]
+
+[messageOff]
+[charaTalk off]
+[se ade459]
+[seVolume ade459 0 0.6]
+[wt 0.8]
+[charaFace J 0]
+[se ade21]
+[seVolume ade21 0 0.4]
+[wt 0.5]
+[se ade459]
+[seVolume ade459 0 0.15]
+[wt 1.0]
+
+？1：何か落ちたね
+？！
+
+[se ad661]
+[seVolume ad661 0 0.3]
+[cameraMove 0.5 0,13 1.0]
+[wt 0.7]
+[seStop ad661 0.5]
+[cameraMove 0.5 0,0 1.0]
+[wt 0.8]
+
+[charaFadeout L 0.5]
+[charaFadeout K 0.5]
+[charaFadeout J 0.5]
+[wt 0.8]
+
+
+[charaFadein Q 0.2 0,-200]
+[charaPut X 0,-200]
+[charaFadeTime X 0.2 0.5]
+[cueSe SE_25 25_ade1221]
+[wt 1.0]
+[wait touch]
+
+[charaFadeout X 0.4]
+[charaFadeout Q 0.4]
+[wt 0.6]
+
+[bgm BGM_EVENT_221 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ビーマ
+俺が押し止めてた『風』の要素のカタマリ、[r]みてぇなもんだな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[subRenderFadein #A 0.2 0,0]
+[wt 0.2]
+
+＠インドラ
+まがりなりにも試練を越えたのだからな。[r]よって、おまえたちはそれを託される資格を得た。
+[k]
+
+＠インドラ
+それを我が宝物庫の鍵として使えば、[r]自動的に内部で空の修復に使われるだろう。
+[k]
+
+？1：……マシーンと大きさが違いすぎない？
+？2：このメダルでちゃんと回せるのかな……
+？！
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ビーマ
+大きさなんて気にすんな。[r]本質は風という概念そのものだ。
+[k]
+
+＠ビーマ
+一応の見た目がこうなってるってだけだからよ。
+[k]
+
+[charaFace G 3]
+
+＠ビーマ
+ところで[line 3]『まがりなりにも』、[r]なんて言葉が気になったんだが。
+[k]
+
+[charaFace G 5]
+
+＠ビーマ
+うちの弟たちの戦いっぷりはどうでしたかね、[r]インドラ様よ？
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[subRenderFadein #A 0.2 0,0]
+[wt 1.4]
+
+[charaFaceFade D 8 0.1]
+
+＠インドラ
+はっきり言ってやろう。[r]駄目だな。
+[k]
+
+＠インドラ
+極上などという言葉とは程遠い。[r]退屈にして不愉快。
+[k]
+
+＠インドラ
+[#神:オレ]を満足させる見世物ではなかった。
+[k]
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ラーマ
+それなりに苦労したうえで、皆で[line 3]
+[k]
+
+[charaFace A 0]
+
+＠ラーマ
+サーヴァントたちだけではない、[r]マスターとも力を合わせて頑張ったのだがな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[subRenderFadein #A 0.2 0,0]
+[wt 0.2]
+
+＠インドラ
+それがつまらんところだ。[r]いいか、苦労などするな。
+[k]
+
+＠インドラ
+[#神:オレ]は苦行者の姿など見るのも嫌いだ。
+[k]
+
+＠インドラ
+人間が弱いことなどわかりきっている。
+[k]
+
+＠インドラ
+それでも世界を救うというのであれば、[r]それに値する強さ、器の大きさを見せるがよい。
+[k]
+
+[messageOff]
+[charaTalk E]
+[charaFace E 5]
+[charaFadeTime E 0.4 1.0]
+[charaMoveEase E 125,-8 0.5 easeOutSine]
+[charaMoveEase F -375,-16 0.5 easeOutSine]
+[charaMoveEase D -125,0 0.5 easeOutSine]
+[charaMoveEase M -125,-300 0.5 easeOutSine]
+[wt 0.5]
+
+＠E：ヴァジュラ
+インドラさまの前じゃ、[r]苦行は[#禁止:ダメ、ゼッタイ]ー！
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 2]
+[charaFadeTime E 0.4 0]
+[charaFadeTime F 0.4 1.0]
+[charaMoveEase E 375,-8 0.7 easeOutSine]
+[charaMoveEase F -125,-16 0.7 easeOutSine]
+[charaMoveEase D 125,0 0.7 easeOutSine]
+[charaMoveEase M 125,-300 0.7 easeOutSine]
+[wt 0.7]
+
+＠F：ヴァジュラ
+[#無様千万:と て も 見 苦 し い]、です。
+[k]
+
+＠F：ヴァジュラ
+そんな姿を見せるのは[r]お止めくださいますよう。
+[k]
+
+？1：苦労するようじゃダメ、ってことか……
+？2：耳が痛い部分もあります……
+？！
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+[charaFadeTime F 0 0]
+[charaPut M 0,-300]
+[charaPut D 1]
+[charaPut E 250,-8]
+[charaPut F -250,-16]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠ヴリトラ
+気にするなマスター。[r]ヤツは何もわかっておらん！
+[k]
+
+＠ヴリトラ
+むしろわえはもうちょっと協力を渋って[r]おまえたちに困難を与えるべきじゃったかとすら思う！
+[k]
+
+[charaFace C 4]
+
+＠ヴリトラ
+まったく。泥水を[#啜:すす]り……絶望の中に足掻き……[r]情けなく逃げ出し、迷い、その先に……
+[k]
+
+[charaFace C 6]
+
+＠ヴリトラ
+ドカーンと来る！[r]そこが一番美味しいところじゃというのに！
+[k]
+
+[charaFace C 8]
+
+＠ヴリトラ
+……いかん、ヨダレが。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaPut X 0,-200]
+[charaFadeTime X 0.2 0.5]
+
+＠ラーマ
+（そういう意味でも対照的な関係なのだろうか……）
+[k]
+
+[charaFadeout X 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_221 1.8]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+
+＠ビーマ
+うん？[r]うーん……？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アルジュナ
+拳を握ったり開いたりして、[r]どうかしましたか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_MIZUGI_2024_1 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠ビーマ
+いや。試練が終わって、[r]てっきりお役御免かと思ってたが。
+[k]
+
+＠ビーマ
+まだ微妙にこの特異点の『風』と接続されてるな。[r]もう何戦かくらいはいけそうだぜ。
+[k]
+
+[charaFace G 0]
+
+＠ビーマ
+そうだなあ……次の要素を解放する手伝いくらいは[r]できんじゃねえか？
+[k]
+
+？1：それはとっても助かります！
+？2：意外に珍しいパターンかも！
+？！
+
+＠ビーマ
+俺がもともとは[r]カルデアのサーヴァントだからか？
+[k]
+
+＠ビーマ
+無論、インドラ様に召喚されて守護者になったことで[r]いろんなとこがズレちまってるだろうから、
+[k]
+
+＠ビーマ
+いずれはカルデアに戻らねえとならんだろうが。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ラーマ
+では次はビーマと共に試練に挑めるのだな。[r]それは楽ができそうだ。
+[k]
+
+[charaFace A 0]
+
+＠ラーマ
+……インドラ神よ、[r]この流れは想定済みだったか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[subRenderFadein #A 0.2 0,0]
+[wt 0.2]
+
+＠インドラ
+それは極上の愚問だな、ハハハ！
+[k]
+
+＠インドラ
+[#何時:い　つ][#如何:い　か]なる時も、[r]全ては[#神:オレ]の[#掌:てのひら]の上。
+[k]
+
+＠インドラ
+余興としてはなかなかだろう、[r]楽しむがいい！
+[k]
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[charaPut X 0,-200]
+[charaFadeTime X 0.2 0.5]
+
+＠ラーマ
+（本当にそうなのかアドリブで誤魔化してるだけなのか[r]　全然わからんのだよな……）
+[k]
+
+＠ラーマ
+（……いや、思い返せばヴィシュヌも[r]　似たようなところがある。神とはそういうものか……）
+[k]
+
+[charaFadeout X 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ヴリトラ
+とにかく、これでわえの力の解放が一歩近付いた。[r]この調子じゃ。
+[k]
+
+＠ヴリトラ
+引き続き空の砕片を集めながら、[r]次の試練の場所に向かおうではないか。きひひー！
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_MIZUGI_2024_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

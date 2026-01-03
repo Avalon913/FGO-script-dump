@@ -1,0 +1,119 @@
+
+＄94-14-82-03-2-1
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[soundStopAll]
+
+[charaSet A 4057001 1 ネモ？]
+[charaSet B 98006000 1 エネミー]
+[charaSet C 98006000 1 エネミー]
+[charaSet D 98006000 1 エネミー]
+[charaSet E 98006000 1 エネミー]
+[charaSet F 98006000 1 エネミー]
+
+[imageSet R back10000 1 1]
+[charaScale R 1.4]
+
+
+[scene 254400]
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fadein black 0.5]
+[bgm BGM_BATTLE_259 0.5]
+[wait fade]
+＠ネモ？
+よし、もう充分に追い込んだようだ！[cueSe SE_23 23_ade911][r][line 3]ロックを解除する！
+[k]
+
+[messageOff]
+[charaMoveScale A 0.99 0.1]
+[charaMove A 0,-3 0.1]
+[effect bit_talk_shot_02_once -100,-50]
+[cueSe Servants_405300 m58508]
+[wt 0.1]
+[charaMoveScale A 1.0 0.1]
+[charaMove A 0,0 0.1]
+[wt 0.2]
+[flashin once 0.2 0.2 FFFFFFF0 FFFFFF00]
+[se ad251]
+[seVolume ad251 0 0.4]
+[shake 0.05 2 2 0.8]
+[wt 1.0]
+[charaFace A 9]
+
+＠ネモ？
+この場から離れて！　落下するぞ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[cameraMove 0.1 0,0 1.01]
+[charaFadeout A 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth B 6]
+[charaDepth C 5]
+[charaDepth D 4]
+[charaDepth E 3]
+[charaDepth F 2]
+
+[charaFadein B 0.1 0,0]
+[charaFadeinFSR E 0.1 456,0]
+[charaFadeinFSR C 0.1 256,0]
+[charaFadeinFSL F 0.1 -456,0]
+[charaFadeinFSL D 0.1 -186,0]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1]
+[cueSe SE_25 25_ade1238]
+[wait wipe]
+
+[shake 0.05 0 1 3.5]
+
+
+
+[wt 2.0]
+
+[se ad246]
+[wt 1.0]
+[shake 0.05 0 4 1.5]
+[seStop ad246 0.2]
+[fowardEffect bit_talk_impactlanding]
+[effect bit_talk_dust_cloud]
+[cueSe SE_21 21_ad1131]
+[se ad23]
+[seVolume ad23 2.0 0]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 0.1]
+[charaMoveFSR E 456,-50 0.4]
+[charaMoveFSL D -186,-50 0.4]
+[charaFadeout E 0.4]
+[charaFadeout D 0.4]
+[wt 0.1]
+[charaMoveFSL F -456,-50 0.4]
+[charaMoveFSR C 256,-50 0.4]
+[charaFadeout F 0.4]
+[charaFadeout C 0.4]
+
+[se ad609]
+[seStop ad609 3.0]
+[wt 0.8]
+
+
+[se ad565]
+[wt 1.0]
+[seStop ad565 2.0]
+[wt 2.0]
+[fadeout black 2.0]
+[bgmStop BGM_BATTLE_259 2.0]
+[wait fade]
+[soundStopAll]
+[end]

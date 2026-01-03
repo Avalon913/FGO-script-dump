@@ -1,0 +1,373 @@
+
+
+＄94-06-96-11-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 10013001 1 スーパーバニヤン]
+[charaSet C 2037000 1 ジェーン]
+[charaSet D 2010000 1 ビリー]
+[charaSet E 7009001 1 アステリオス]
+
+[imageSet F back11110 1]
+[imageSet G back11110 1]
+[imageSet H back11110 1]
+[charaScale F 1.01]
+[charaScale G 1.3]
+[charaScale H 1.3]
+
+[charaSet I 2037000 1 ジェーン_演出用]
+[charaSet J 2010000 1 ビリー_演出用]
+[charaSet K 7009000 1 アステリオス_演出用]
+[charaScale I 1.3]
+[charaScale J 1.3]
+[charaScale K 1.3]
+
+[imageSet L cut341_tips08 1]
+[charaScale L 1.01]
+[sceneSet M 150400 1]
+[charaScale M 1.01]
+[sceneSet N 149900 1]
+[charaScale N 1.4]
+
+[sceneSet O 10000 1]
+[charaScale O 1.01]
+
+[charaSet P 98100400 1 エフェクト用]
+
+[scene 10000]
+
+[charaDepth O 9]
+[charaPut O 1]
+[charaFadeTime O 0.1 1.0]
+
+[charaTalk depthOff]
+[charaDepth I 6]
+[charaDepth J 5]
+[charaDepth K 4]
+[charaDepth H 3]
+[charaDepth G 2]
+[charaDepth F 1]
+
+[charaFadein F 1.0 0,-200]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade306]
+[seVolume ade306 0 0.3]
+[seVolume ade306 1.0 1.0]
+[fowardEffect bit_talk_movie_film_fs]
+[fowardEffect bit_talk_film_noise]
+[wt 1.2]
+
+[effect bit_talk_movie_title_telop07]
+[wt 0.2]
+[charaFadeTime O 1.0 0.5]
+[wt 0.3]
+[seStop ade306 1.0]
+[wt 1.2]
+[cueSe SE_22 22_ade734]
+[wt 4.5]
+
+[effectForceStop bit_talk_movie_title_telop07]
+
+[charaFadeout O 1.0]
+[wt 2.0]
+
+[bgm BGM_BATTLE_113 0.1]
+
+＠
+『バーベキューの都カンザスシティ！[r]　最強の[#肉:ビーフ]を求め、今日も[#弾丸:バレット]が飛び交う！』
+[k]
+
+[messageOff]
+[charaPut P 1]
+[charaEffect P bit_shot_01 -200,150]
+[se ad614]
+[wt 0.2]
+[charaEffect P bit_shot_01 0,-100]
+[wt 0.2]
+[charaEffect P bit_shot_01 200,120]
+[wt 0.4]
+
+[charaEffectDestroy P bit_shot_01]
+[charaPut P 1200,1200]
+
+[se ad671]
+[effect bit_talk_haboob_02 0,-50]
+[wt 0.2]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.3 -120,220]
+[charaFadein G 0.3 -50,-140]
+
+[charaMove J 60,220 0.2]
+[charaMove G -150,-140 0.2]
+
+[effectStop bit_talk_haboob_02]
+[wt 0.2]
+
+[seStop ad671 0.5]
+[charaMove J 55,220 0.5]
+[charaMove G -155,-140 0.5]
+[wt 0.5]
+
+[charaMove J 55,40 0.3]
+[charaMove G -155,-310 0.3]
+[wt 0.8]
+
+＠J：ブリスケット・ボーイ
+ヒッコリー・ヒル・ファミリー参上！[charaFace J 1][r]大物は丸焼きに限るよね！
+[k]
+
+[messageOff]
+[charaFadeout G 0.2]
+[charaFadeout J 0.2]
+[wt 0.2]
+
+[charaPut P 1]
+[charaEffect P bit_shot_01 200,150]
+[se ad614]
+[wt 0.2]
+[charaEffect P bit_shot_01 0,-100]
+[wt 0.2]
+[charaEffect P bit_shot_01 -200,120]
+[wt 0.4]
+
+[charaEffectDestroy P bit_shot_01]
+[charaPut P 1200,1200]
+
+[se ad671]
+[effect bit_talk_haboob_01 0,-50]
+[wt 0.2]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.3 120,220]
+[charaFadein H 0.3 50,-140]
+
+[charaMove I -60,220 0.2]
+[charaMove H 150,-140 0.2]
+
+[effectStop bit_talk_haboob_01]
+[wt 0.2]
+
+[seStop ad671 0.5]
+[charaMove I -55,220 0.5]
+[charaMove H 155,-140 0.5]
+[wt 0.5]
+
+[charaMove I -55,40 0.3]
+[charaMove H 155,-310 0.3]
+[wt 0.8]
+
+＠I：ピットマスター・パティ
+おぉーっと待ったぁー！[charaFace I 2][r]カラミティ牧場としては見過ごせないデース！
+[k]
+
+[messageOff]
+[charaFadeout I 0.2]
+[charaFadeout H 0.2]
+[wt 0.2]
+
+[charaPut P 1]
+[charaEffect P bit_shot_01 0,150]
+[se ad615]
+[wt 0.2]
+[charaEffect P bit_talk_shot_02 200,-100]
+[wt 0.2]
+[charaEffect P bit_talk_shot_02 -200,120]
+[se ad614]
+[wt 0.2]
+[charaEffect P bit_talk_shot_01 -120,50]
+[wt 0.2]
+[charaEffect P bit_talk_shot_01 0,-50]
+[wt 0.4]
+
+[charaEffectDestroy P bit_shot_01]
+[charaEffectDestroy P bit_shot_02]
+[charaPut P 1200,1200]
+
+[backEffect bit_talk_haboob_01 0,-150]
+[effect bit_talk_haboob_02 0,-150]
+
+[se ad671]
+[seStop ad671 0.8]
+[se ad1006]
+[wt 0.2]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.3 0,200]
+[charaFadein G 0.3 0,-140]
+
+[backEffectStop bit_talk_haboob_01]
+[effectStop bit_talk_haboob_02]
+[wt 0.3]
+
+[charaMove K 0,-20 0.3]
+[charaMove G 0,-290 0.3]
+[wt 0.8]
+
+[charaShake K 0.05 3 3 1.2]
+[charaFace K 2]
+
+＠K：ベイブ・ザ・ブルーオックス
+ぶ……ぶもおおおおおお！？
+[k]
+
+[messageOff]
+[charaFadeout K 0.2]
+[charaFadeout G 0.2]
+[wt 0.2]
+
+＠
+『食うか食われるか！　硝煙とスパイスの火祭は、[r]　果てしなく続く！』
+[k]
+
+
+
+[messageOff]
+[charaDepth O 9]
+[charaPut O 1]
+[charaFadeTime O 1.5 1.0]
+[bgmStop BGM_BATTLE_113 1.5]
+[wt 3.5]
+
+[charaFadeTime O 0.5 0.5]
+
+[cueSe SE_22 22_ade726]
+[wt 0.2]
+
+[effect bit_talk_movie_end_telop07]
+[wt 1.5]
+[se ade306]
+[seVolume ade306 0 0.5]
+[seVolume ade306 1.0 1.0]
+[wt 2.5]
+
+[seStop ade306 1.0]
+
+[maskout black 1.0]
+[wait mask]
+
+[effectDestroy bit_talk_movie_end_telop07]
+[fowardEffectDestroy bit_talk_movie_film_fs]
+[fowardEffectDestroy bit_talk_film_noise]
+[charaFadeout O 0.1]
+
+[charaFadeout F 0.1]
+[charaTalk depthOn]
+
+
+[scene 10000]
+[wt 0.1]
+
+[maskin black 1.5]
+[wait mask]
+
+[charaDepth N 2]
+[charaDepth M 3]
+[charaDepth L 4]
+
+[charaFadein M 0.4 0,-200]
+[se ade277]
+[wt 0.3]
+
+[charaFadein L 0.1 0,-200]
+[wt 1.0]
+
+[wait touch]
+
+[charaFadeout M 0.5]
+[charaFadeout L 0.2]
+[wt 0.2]
+[se ad420]
+
+[fadeout black 0.1]
+[wt 0.1]
+
+
+[scene 149900]
+[wt 0.5]
+
+[charaFadein N 0.1 100,-250]
+[wt 1.0]
+
+[charaMove N -200,-250 35.0]
+
+[fadein black 1.5]
+[wt 1.0]
+[bgm BGM_MAP_13 0.1]
+[wait fade]
+
+[wt 3.5]
+
+[charaFadeout N 1.0]
+[wt 2.5]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+[bgmStop BGM_MAP_13 1.0]
+
+＠スーパーバニヤン
+みんな、お待たせ！　やっとギャラが払えるよ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth C 2]
+[charaDepth D 3]
+
+[charaFace C 2]
+[charaFadeinFSL C 0.1 -290,0]
+[charaFace E 2]
+[charaFadein E 0.1 -30,0]
+[charaFace D 2]
+[charaFadeinFSR D 0.1 300,0]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠[#出　演　者:パーティメンバー]
+遅[messageShake 0.05 4 4 0.2]い！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠マシュ
+皆さん怒髪天の勢い……！[r]いきなり戦闘開始です！
+[k]
+
+？1：どれだけ放置してたんだろう[&:ね]……
+？2：じっくり[#お仕置き:ロ　ー　ス　ト]されそう[&だ:]……
+
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

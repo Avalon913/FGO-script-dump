@@ -1,0 +1,369 @@
+
+
+
+＄91-20-51-01-2-0
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 2051002 1 杉谷善住坊]
+[charaSet B 2010001 1 ビリー]
+[charaSet C 99200300 1 ロビンフッド]
+[charaSet D 98109100 1 雀蜂]
+[charaSet E 98109100 1 雀蜂]
+[charaSet F 98109100 1 雀蜂]
+[charaSet G 98109100 1 雀蜂]
+[charaSet H 98109100 1 雀蜂]
+
+[charaSet I 2051002 1 杉谷善住坊]
+[sceneSet O 145300 1]
+[charaScale O 1.4]
+
+[sceneSet P 145200 1]
+[charaScale P 1.4]
+
+[sceneSet Q 145200 1]
+[charaScale Q 1.4]
+
+[sceneSet S 145200 1]
+
+[charaSet Y 3019001 1 エフェクト用1]
+[charaDepth Y 8]
+
+[charaTalk depthOff]
+[charaTalk off]
+[scene 145200]
+
+[subCameraOn 2]
+
+[subCameraFilter #A maskEdge cut359_mask04 4 106,118,82,255]
+
+[charaLayer I sub #A]
+[charaLayer S sub #A]
+
+[charaDepth I 3]
+[charaDepth S 1]
+
+[charaScale I 1.45]
+[charaScale S 1.4]
+[subRenderScale #A 1.2]
+[charaFadein S 0.1 -200,0]
+[charaFadein I 0.1 0,255]
+[charaFace I 17]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_48 0.1]
+
+
+
+[charaEffect Y bit_talk_10_LowLevel_depth]
+[charaPut Y 1]
+[wt 0.2]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.8]
+[charaMoveReturn C 0,-4 0.5]
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[charaPut Y 1200,1200]
+[wt 0.1]
+[charaTalk off]
+[cueSe SE_23 23_ade911]
+[subRenderFadein #A 0.4 250,-400]
+[subRenderMove #A 0,-400 0.3]
+[wt 2.0]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[cueSe SE_23 23_ade910]
+[flashin once 0.2 0.1 FFFFFFAF FFFFFF00]
+[cameraMoveEase 0,50 0.7 easeOutCubic 1.2]
+[wt 0.5]
+[se ad881]
+[effect bit_talk_shot_01_once 0,-200]
+[wt 0.2]
+[fadeout white 0.2]
+[wait fade]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein white 0.2]
+[se ad284]
+[shake 0.05 4 5 1.5]
+[fowardEffect bit_talk_blow 0,-200]
+[backEffect bit_talk_smoke_pon 0,0]
+[fowardEffect bit_talk_smoke_pon 0,-500]
+[se ad643]
+[wait fade]
+
+[wt 2.5]
+
+[charaPutFSL Y -256,0]
+[charaFace C 1]
+[charaFadeinFSL C 0.1 -256,0]
+
+[charaFace A 13]
+[charaFadeinFSR A 0.1 256,0]
+
+[wt 2.5]
+
+[bgm BGM_EVENT_48 1.0 0.5]
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[cameraHome 0.1]
+
+[charaPut Y 1200,1200]
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+
+[charaFadein O 0.1 100,-240]
+[charaDepth A 4]
+[charaDepth B 3]
+[charaDepth O 2]
+
+[charaMove O 50,-240 2.0]
+[bgm BGM_EVENT_48 1.0 1.0]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 1.0]
+[charaFace A 17]
+[charaFadeinFSR A 0.4 100,0]
+[charaMoveFSR A 80,0 0.6]
+[charaFace B 0]
+[charaFadeinFSR B 0.4 400,0]
+[charaMoveFSR B 380,0 0.6]
+
+[wt 2.0]
+
+[charaMoveReturnFSR A 80,-10 0.4]
+[se ade302]
+[wt 0.4]
+[se ad872]
+[fowardEffect bit_talk_arrow_back_y -300,0]
+[wt 0.4]
+[cueSe SE_21 21_ade679]
+
+[wt 1.5]
+
+[charaFace A 12]
+[charaFace B 4]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_48 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout O 0.1]
+[charaFadein P 0.1 -230,-200]
+
+[charaDepth P 1]
+[charaDepth A 2]
+[charaDepth B 2]
+[charaDepth C 2]
+
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_124 0.1]
+
+？1：今のところ無事だね
+？！
+
+[charaPut Y 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaTalk on]
+
+＠ロビンフッド
+ああ、そこの机に置いてある書類。[r]多分、罠が張ってあるぞ。
+[k]
+
+[charaFadeout C 0.1]
+[charaPut Y 1200,1200]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠杉谷善住坊
+だろうなァ。[r]ところで有識者から見てどうよ、この罠。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ロビンフッド
+まあ、プロの仕業だな。
+[k]
+
+[charaFadeout C 0.1]
+[charaPut Y 1200,1200]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ビリー
+そうなの？　全部見つかってるじゃん。[r]アマチュアの僕でも、結構わかるレベルだし。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ロビンフッド
+だからだよ。[r]要するに罠の専門家じゃないってこと。
+[k]
+
+[charaFadeout C 0.1]
+[charaPut Y 1200,1200]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+
+＠杉谷善住坊
+じゃ、何の為に罠を張ったかってーと。[r]要するに鳴子……じゃない、警戒装置だな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ビリー
+……罠がバレても、発動すれば『誰かが来た』[r]ということはわかるから？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ロビンフッド
+それだ、ビリー。[r]罠の殺傷能力はオマケみたいなもんでね。
+[k]
+
+＠ロビンフッド
+本命は、罠を破っていい気になってる連中を[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_124 1.0]
+[se ad533]
+[shake 0.05 2 3 0.5]
+[wt 0.5]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaTalk off]
+
+[charaFadeout P 0.1]
+[charaFadeout C 0.1]
+[charaPut Y 1200,1200]
+
+[charaFadein Q 0.1 230,-200]
+
+[charaDepth D 4]
+[charaDepth E 3]
+[charaDepth F 2]
+[charaDepth G 5]
+[charaDepth H 6]
+[charaDepth Q 1]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[cueSe SE_23 23_ad1292]
+[wait wipe]
+[bgm BGM_BATTLE_48 0.1]
+
+[charaFace D 0]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein D 0.4 1]
+[wt 0.5]
+[charaFadein E 0.4 0]
+[wt 0.2]
+[charaFadein F 0.4 2]
+[wt 0.3]
+[charaFadein G 0.4 500,0]
+[charaFadein H 0.4 -500,0]
+[cueSeStop 23_ad1292 1.0]
+[wt 1.0]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout Q 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+[charaFadein P 0.1 -230,-200]
+
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+
+＠杉谷善住坊
+実力で排除するってところだな！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ビリー
+ようし、ガンアクションの始まりだね。[r]さあ、マスター！
+[k]
+
+[charaFace B 1]
+
+＠ビリー
+とりあえずこのテロリスト（仮）を、[r]サクサクと排除しようか！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_48 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+

@@ -1,0 +1,866 @@
+
+
+
+
+
+
+
+
+＄04-00-05-16-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257910 1 マシュ]
+[charaSet B 1098239320 1 カドック]
+[charaSet C 1098321400 1 モリアーティ]
+[charaSet D 28010001 1 ダンテ]
+[charaSet E 1098324400 1 リリス]
+[charaSet F 1098321000 1 メタトロン・ジャンヌ]
+[charaSet G 3058000 1 アショカ王]
+[charaSet H 4038001 1 オデュッセウス]
+
+[charaSet I 1098321400 1 モリアーティ_拡大]
+[charaSet J 1098321400 1 モリアーティ_サブ]
+[charaSet K 28010001 1 ダンテ_拡大]
+[charaSet L 1098324400 1 リリス_サブ]
+
+[sceneSet M 247200 1]
+[sceneSet N 247200 1]
+
+[sceneSet O 247200 1]
+[sceneSet P 247200 1]
+
+[sceneSet S 10000 1]
+[charaScale S 1.1]
+[sceneSet T 10000 1]
+[charaScale T 1.1]
+
+[scene 247800]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_194 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠オデュッセウス
+いやあ、助かった！[r]どうだ、しばらくここで働いていくか？
+[k]
+
+？1：そういう訳にも……
+？！
+
+[charaFace H 0]
+
+＠オデュッセウス
+うむ、そうか。[r]おまえたちはやるべきことがあるのだな。
+[k]
+
+＠オデュッセウス
+俺はこの地獄で、命ある限り、[r]この船渡しを務めるつもりだが[line 3]
+[k]
+
+[charaFace H 1]
+
+＠オデュッセウス
+おまえたちがやるべきことが、正しく[r]罪でないと祈るとしよう。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_194 1.5]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[subCameraOn 2]
+[charaLayer J sub #A]
+[charaLayer O sub #A]
+[charaLayer L sub #B]
+[charaLayer P sub #B]
+[subCameraFilter #A maskEdge cut359_mask04 30 0,0,0,255 1]
+[subCameraFilter #B maskEdge cut359_mask04 30 0,0,0,255 1]
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+
+[charaDepth O 1]
+[charaDepth J 2]
+[charaScale O 1.5]
+[charaScale J 1.4]
+[charaFace J 0]
+[charaFadein O 0.1 50,120]
+[charaFadein J 0.1 300,300]
+
+[charaDepth P 1]
+[charaDepth L 2]
+[charaScale P 1.5]
+[charaScale L 1.4]
+[charaFace L 11]
+[charaFadein P 0.1 -50,0]
+[charaFadein L 0.1 -350,310]
+
+[scene 247200]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_SEIHAI_5 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠アショカ王
+ほう、英雄オデュッセウス。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠カドック
+本人は仕事に乗り気らしいぞ。[r]死ぬまでやるつもりらしい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠リリス
+地獄で死ぬ、とかちょっと訳わかんないけどね。
+[k]
+
+[charaFace E 0]
+
+＠リリス
+まあオデュッセウスはバリバリに正義って訳じゃないけど、[r]邪悪でもないっしょ。
+[k]
+
+＠リリス
+アイツなら、やってくる人間を拒むことはないし、[r]理想の人材じゃない？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠アショカ王
+かのオデュッセウスならば、[r]【憤怒】の荒波も乗り越えられるだろう。
+[k]
+
+？1：依頼完了ですか？
+？！
+
+[charaFace G 1]
+
+＠アショカ王
+『天秤証書』[line 3]受け取るがよい。
+[k]
+
+＠アショカ王
+[#咎:とが]められるより前に、[r]私は戻ろう。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠カドック
+……？　[#咎:とが]められるのか？[r]僕はてっきり納得ずくだと思ってたんだが。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠アショカ王
+この特異点にあって、裁判長の力はあまりに強大だ。
+[k]
+
+[charaFace G 2]
+
+＠アショカ王
+それにな。[r]我が天の車輪は、あれには通じ難い。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠カドック
+そうか……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠アショカ王
+はは。[r]貴方の期待には応えられなかったか。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠カドック
+いや、まさか！[r]……もしかして、そんな顔してたか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠アショカ王
+冗談だ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠カドック
+何だ。アンタも冗談なんて言うんだな……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠アショカ王
+はははは。[r][line 3]では、さらばだ。
+[k]
+
+[messageOff]
+[charaFadeout G 0.6]
+[se ad452]
+[seVolume ad452 1.0 0.3]
+[wt 0.5]
+[seStop ad452 1.5]
+[wt 2.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠リリス
+裁判長に怒られるかもねー、あれ。
+[k]
+
+？1：悪いことをしたかな……
+？！
+
+[charaFace E 1]
+
+＠リリス
+いやいや。あれはアショカ王の意志で[r]渡したんだから、いいんじゃないの。
+[k]
+
+[bgmStop BGM_SEIHAI_5 2.0]
+[charaFaceFade E 10 0.2]
+
+＠リリス
+[line 3]ヨハンナみたいに殺されることはないっしょ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ヨハンナさんが……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+[bgm BGM_MAP_95 0.1]
+
+＠リリス
+そ。[#アンタたちに味方をしたから]。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+[line 3]っ。
+[k]
+
+？1：ヨハンナが……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠リリス
+……ま、それだけが理由じゃないけどね。
+[k]
+
+[charaFace E 0]
+
+＠リリス
+ヨハンナにはヨハンナなりの理由があって、[r]彼女の前に立った。
+[k]
+
+＠リリス
+感謝の念を覚えるのはいいけど、[r]自分たちの責任だって思うのは善くないね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠メタトロン・ジャンヌ
+……ヨハンナを……ね。
+[k]
+
+[charaFace F 18]
+
+＠メタトロン・ジャンヌ
+[line 3]ああ、たぶん。私のせいなのでしょうね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+アショカ王は……本当に大丈夫なのか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠リリス
+大丈夫！　彼は[#ルーラーじゃないからね]。
+[k]
+
+[charaFace E 14]
+
+＠リリス
+ランサークラスとして顕現した以上、[r]ルーラーよりコントロールが利かないことは承知でしょう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠カドック
+……そうか。ルーラークラスは、この特異点において[r]逆に危ういのか……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠リリス
+この特異点では秩序の持ち主である、[r]裁定者のクラスこそが力を持つけど……。
+[k]
+
+＠リリス
+該当サーヴァントは、メタトロンに逆らえない。[r]そういう仕組みでできてるのさ。
+[k]
+
+[charaFace E 18]
+
+＠リリス
+だからメタトロンと相対したときは、[r]間違ってもルーラークラスを[#召喚し:よ　　ば]ないこと。
+[k]
+
+＠リリス
+普通に何もできずに消えるから。
+[k]
+
+？1：（気を付けよう……）
+？！
+
+[charaFace E 0]
+
+＠リリス
+それは置いといて第六圏だけど、[r]こっちは管理者も罪人も不在だよ。
+[k]
+
+[charaFace E 1]
+
+＠リリス
+だよね、ダンテ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+……その通りだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠リリス
+誰かさんが特異点を作る際に、[r]【異端】を罪でなくしたからねー。
+[k]
+
+[charaFace E 1]
+
+＠リリス
+そこらへん、どうよ。[r]ダンテ・アリギエーリ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+……ええと、それは……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠モリアーティ
+ん？　僕たちのことなら気にする必要ないぞ。
+[k]
+
+[charaFace C 0]
+
+＠モリアーティ
+そもそも『[#神曲:げんさく]』そのままの世界が[r]再現されていて、君が関係ない訳ないだろ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+フフ……気付いていないとばかり……。
+[k]
+
+[charaDepth T 11]
+[charaDepth I 10]
+[charaDepth D 9]
+[charaDepth M 8]
+[charaDepth K 6]
+[charaDepth N 5]
+[charaDepth E 4]
+[charaDepth C 3]
+[charaDepth S 2]
+
+[charaScale I 1.25]
+[charaScale K 1.3]
+[charaScale M 1.2]
+[charaScale N 1.2]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モリアーティ
+そこまで鈍くはないさ。[r]ただ、僕の疑問は二つだけだ。
+[k]
+
+[bgmStop BGM_MAP_95 2.0]
+[messageOff]
+[charaTalk C,I]
+[charaFace I 2]
+[charaFadein I 0.4 320,0]
+[charaFadein M 0.4 30,-270]
+[charaMoveEase I 250,0 1.0 easeOutCubic]
+[charaMoveEase M -40,-270 1.0 easeOutCubic]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[charaFace K 1]
+[charaFadein K 0.1 -250,0]
+[charaFadein N 0.1 120,-270]
+
+＠I：モリアーティ
+その内の一つを、今すぐに教えて欲しい。[wt 1.0][charaFaceFade I 0 0.4][r][line 3]君は敵か？　それとも味方か？
+[k]
+
+[messageOff]
+[charaTalk I,K]
+[charaFadeout I 0.4]
+[charaFadeout M 0.4]
+[wt 0.6]
+
+＠K：ダンテ
+……私は、味方だ。[r]少なくとも、[#こちら側]でありたいと思うが……。
+[k]
+
+[messageOff]
+[charaTalk I,K]
+[charaFace I 1]
+[charaFadein I 0.4 250,0]
+[charaFadein M 0.4 -40,-270]
+[wt 0.5]
+
+[charaFadeout K 0.1]
+[charaFadeout N 0.1]
+
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠I：モリアーティ
+[line 3]ふむ。それだけ聞けば充分かな。[bgm BGM_GOGH_1 0.1]
+[k]
+
+[messageOff]
+[charaTalk I,E]
+[charaFadeout I 0.4]
+[charaFadeout M 0.4]
+[wt 0.5]
+
+＠リリス
+いやいや、充分じゃないっしょ。
+[k]
+
+[charaFace E 1]
+
+＠リリス
+ここから裏切るだの裏切らないだの、[r]そういう話が始まるんじゃないの？
+[k]
+
+[messageOff]
+[charaTalk I,E]
+[charaFace I 0]
+[charaFadein I 0.4 300,0]
+[charaFadein M 0.4 -40,-270]
+[wt 0.5]
+
+[charaScale D 0.95]
+[charaTalk I,D]
+[charaMoveEase I 220,0 1.0 easeOutSine]
+[charaMoveScaleEase I 1.15 1.0 easeOutSine]
+[charaMoveEase M -120,-220 1.0 easeOutSine]
+[charaMoveScaleEase M 1.1 1.0 easeOutSine]
+[wt 1.1]
+
+[charaFace D 9]
+[charaFadein D 0.4 -300,-50]
+[wt 0.8]
+
+[charaFadeout E 0.1]
+[charaTalk I]
+[charaFace I 8]
+
+＠I：モリアーティ
+あのな、僕とコイツはこの特異点で知り合って、[r]それなりに長いのだよ。
+[k]
+
+[charaFace I 1]
+
+＠I：モリアーティ
+真偽の程など、とうに見分けがついている。
+[k]
+
+[charaFace D 14]
+
+＠ダンテ
+……嘘をついても、すぐバレると……？
+[k]
+
+[charaFace I 1]
+
+＠I：モリアーティ
+君が、僕の科学的根拠を上回るような[r]深遠さを持っているのなら別だが？
+[k]
+
+[charaFace D 15]
+
+＠ダンテ
+……ううむ……。
+[k]
+
+＠I：モリアーティ
+ま、その時は素直にシャッポを脱ぐとも。
+[k]
+
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠I：モリアーティ
+僕は君の力を見極められない間抜けだった、[r]ということだ。
+[k]
+
+[messageOff]
+[charaTalk I,C]
+[charaFadeout D 0.4]
+[charaFadeout I 0.4]
+[charaFadeout M 0.4]
+[wt 0.5]
+
+[charaScale D 1.0]
+
+＠モリアーティ
+カルデアの君たちは、どうだい。[r]僕の言葉を信頼できるかな？
+[k]
+
+？1：もちろん、信頼するよ
+？！
+
+[charaFace C 5]
+
+＠モリアーティ
+もちろん、と来たか。[r]少々[#面映:おもは]ゆいな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+……それで、もう一つの疑問は……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠モリアーティ
+うむ、それは……また後でいいだろう。
+[k]
+
+[charaFace C 0]
+
+＠モリアーティ
+重要な問題かもしれないが、[r]今尋ねるべき事柄でもないからな。
+[k]
+
+＠モリアーティ
+それでリリス。君はアレかね？[r]不和の種でも蒔こうとしたのかな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠リリス
+まさか。[r]知らないなら教えてあげようっていう親切心？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠モリアーティ
+僕たちからすると、君の方こそ[r]我々の敵という感じがするがね。
+[k]
+
+[messageOff]
+[charaTalk L,C]
+[charaFadein T 0.4 1]
+[subRenderFadein #A 0.4 0,-415]
+[subRenderFadein #B 0.4 0,-250]
+[wt 0.6]
+
+＠L：リリス
+[#あなたたちの敵じゃないよ]。[r]モリアーティはアテシの嘘も見抜ける？
+[k]
+
+[charaPut S 1]
+[charaFadeTime S 0.1 0.5]
+[charaFace C 11]
+
+＠J：モリアーティ
+君との付き合いはあまりないから、[r]見抜けないと言っておこう。
+[k]
+
+[messageOff]
+[charaTalk J,C]
+[charaFadeout T 0.4]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.5]
+
+＠モリアーティ
+（……まあ、本当は見抜ける。[r]　だが……見抜けるが故に恐ろしいのだ）
+[k]
+
+＠モリアーティ
+（彼女はマシュ・キリエライトを憎んでいる。[r]　それも生半可な憎み方ではない）
+[k]
+
+[charaFace C 9]
+
+＠モリアーティ
+（なぜ彼女は……ここまでマシュ・キリエライトを[r]　憎悪するのか？）
+[k]
+
+＠モリアーティ
+（問い合わせてみたいところだが……感付かれそうだな。[r]　何より、この二人に）
+[k]
+
+[charaFace C 11]
+
+＠モリアーティ
+（だが、同時にそれを言えば即殺し合いが勃発する。[r]　そういう決意も秘めている）
+[k]
+
+＠モリアーティ
+（[#迂闊:う か つ]なことは言わない方がいいだろう。[r]　敵じゃないという言葉は真実なのだから）
+[k]
+
+＠モリアーティ
+（マシュ・キリエライトの敵であって、[r]　カルデアの敵ではない……ということかナ？）
+[k]
+
+[charaFadeout C 0.2]
+[charaFadeout S 0.2]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……。[r]……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠リリス
+[%1]、[r]アテシの言葉を信じてくれる？
+[k]
+
+？1：信じないよ
+
+[charaFace E 15]
+
+＠リリス
+……そっか。いいもんねー。[r]尽くす系女悪魔のアテシを見て、後悔するがいいさ。
+[k]
+
+？2：信じたいよ
+
+[charaFace E 4]
+
+＠リリス
+信じたい、か。[r]……上手い言い回しだなぁ、それ。
+[k]
+
+[charaFace E 1]
+
+＠リリス
+でも、きっとあなたの本心なんだろうね。
+[k]
+
+？！
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_GOGH_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

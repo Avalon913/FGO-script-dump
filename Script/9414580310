@@ -1,0 +1,1161 @@
+
+
+＄94-14-58-03-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 3054000 1 ビーマ]
+[charaSet B 1098330700 1 アルジュナ]
+[charaSet C 1098328400 1 ヴリトラ]
+[charaSet D 1098328720 1 インドラ]
+[charaSet E 1098328000 1 ヴァジュラ_女]
+[charaScale E 0.9]
+[charaSet F 1098328100 1 ヴァジュラ_男]
+[charaScale F 0.9]
+[charaSet G 1019001 1 ラーマ]
+[charaSet H 3041001 1 カイニス]
+[charaScale H 0.9]
+[charaSet I 25013000 1 ワンジナ]
+[sceneSet J 10000 1]
+[charaScale J 1.1]
+[sceneSet K 253300 1]
+[charaScale K 1.3]
+
+[imageSet M cut701_vimana01 1]
+
+[charaSet N 1019001 1 ラーマ_サブレイヤー用]
+[charaScale N 1.2]
+
+[sceneSet O 253310 1]
+[charaScale O 1.2]
+[sceneSet P 253600 1]
+[sceneSet Q 253620 1]
+
+
+[charaSet L 98115000 1 エフェクト用ダミー1]
+[charaSet R 98115000 1 エフェクト用ダミー2]
+
+[imageSet S black_fade_re 1]
+[imageSet T black_fade_re 1]
+
+
+[charaSet Y 1098330700 1 アルジュナ_サブレイヤー用2]
+[charaScale Y 1.2]
+
+[charaTalk depthOff]
+[charaDepth P 1]
+[charaDepth S 2]
+[charaDepth T 3]
+
+[charaScale P 1.2]
+[charaScale S 2.0]
+[charaScale T 2.0]
+[charaFadein P 0 -120,-250]
+[charaFadein S 0 0,-1030]
+[charaFadein T 0 0,250]
+[wt 0.1]
+
+[charaMove P 120,-250 50.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[bgm BGM_MAP_49 0.1]
+
+＠
+[align center]空に響く賛歌[align]
+[k]
+
+＠？？？
+第一の試練、風の試練を神は見ゆ。
+[k]
+
+＠？？？
+風神の子、嵐が如く荒ぶれど、[r]神々の王は泰然と動くことなし。
+[k]
+
+＠？？？
+人の子らの[#難渋:なんじゅう]を叱咤し、[r]その在り方を教示する。
+[k]
+
+＠？？？
+風と[#友誼:ゆうぎ]を結び共に天を駆ける、[r]偉大なる空の神。
+[k]
+
+＠？？？
+彼が、人々よ、インドラなり……インドラなり……。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_49 2.0]
+[wait fade]
+
+[charaFadeout P 0]
+[charaFadeout S 0]
+[charaFadeout T 0]
+[wt 0.1]
+
+[sceneSet P 253600 1]
+
+[charaDepth J 1]
+[charaDepth K 2]
+[charaDepth L 3]
+[charaDepth D 4]
+[charaDepth E 5]
+[charaDepth F 6]
+[charaDepth H 7]
+[charaDepth A 8]
+[charaDepth G 9]
+[charaDepth C 10]
+[charaDepth B 11]
+
+[subCameraOn 2]
+[charaLayer O sub #A]
+[charaLayer N sub #A]
+[charaLayer Y sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 3 255,255,255,255]
+
+[charaDepth O 1]
+[charaDepth N 2]
+[charaDepth Y 3]
+[charaFace N 1]
+[charaFadein N 0.1 0,200]
+[charaFadein O 0.1 300,-50]
+
+[charaLayer K sub #B]
+[charaLayer L sub #B]
+[charaLayer R sub #B]
+[subCameraFilter #B normal]
+[charaDepth K 1]
+[charaDepth L 2]
+[charaDepth R 3]
+[charaFadein K 0.1 0,-350]
+[charaPut L 1]
+[charaEffect L bit_talk_strongwind04_cl]
+[charaPut R 1]
+[charaEffect R bit_talk_rain_storm]
+[subRenderFadein #B 0.1 0,0]
+
+[scene 253310]
+[wt 2.0]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.0 0.3]
+[cueSe SE_25 25_ade1222]
+[seVolume 25_ade1222 0 0]
+[seVolume 25_ade1222 1.0 0.6]
+[charaMove K 190,-350 20.0]
+[fadein black 1.0]
+[wait fade]
+[wt 1.1]
+
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.2]
+[fowardEffect bit_talk_thunder_08]
+[wt 1.7]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.2]
+[fowardEffect bit_talk_thunder_07]
+[wt 1.9]
+[cueSeStop 25_ade1222 1.8]
+[seStop ad556 1.8]
+[wt 0.8]
+[subRenderFadeout #B 1.0]
+[wt 1.2]
+[charaFadeout K 0.1]
+[charaPut L 2000,2000]
+[charaPut R 2000,2000]
+[charaEffectDestroy L bit_talk_strongwind04_cl]
+[charaEffectDestroy R bit_talk_rain_storm]
+[bgm BGM_SABERWARS2 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠ビーマ
+ほぉう、もう一人のアルジュナのヴィマーナ……を、[r]工夫して使ってんのか。意外に乗り心地がいいもんだな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠アルジュナ
+玩具に毛が生えたようなもので、[r]危なっかしくはありますがね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠ヴリトラ
+その玩具に貴様らの命運がかかっておること、[r]忘れないほうがよいと思うぞ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ビーマ
+何にしても予想外に快適なんで[line 3]
+[k]
+
+＠ビーマ
+なんかもう普通に話せる位置にくっついてる[r]インドラ様に話しかけちまうか。
+[k]
+
+[charaFace A 5]
+
+＠ビーマ
+ちと、いいですかね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[charaFace E 3]
+[charaFadein E 0.1 300,-8]
+[charaFace F 0]
+[charaFadein F 0.1 -300,-16]
+
+＠インドラ
+なんだ。[r]酒はくれてやらんぞ。
+[k]
+
+[charaFace E 1]
+＠E：ヴァジュラ
+[#贈呈はんたーい:や　　ら　　ね　　ー　　ぞ　　ー]！[r]欲しがりは[#神罰:や]っちゃうぞー！
+[k]
+
+[clear]
+
+[charaTalk F]
+＠F：ヴァジュラ
+……[#無礼千万:強  欲  な  る  も  の]。[r]そのようなものには、必ず報いがあるでしょう。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ビーマ
+さすがの俺もそこまで礼儀知らずじゃねぇすよ。[r]一つ質問があるだけです。
+[k]
+
+[charaFace A 0]
+
+＠ビーマ
+インドラ様は[line 3][r]ヴァーユ神と親しいので？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠インドラ
+ほう。[r]自身の父の話が聞きたいか？
+[k]
+
+[charaFace D 3]
+
+＠インドラ
+……まあ、数少ない、[r]神の中でも見込みのあるヤツだ。
+[k]
+
+＠インドラ
+[#神:オレ]と同じものを[#俯瞰:ふかん]し、[r][#神:オレ]と同じ高みに息づく。
+[k]
+
+＠インドラ
+気が向けば共に空を駆けることもある。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ビーマ
+[line 3]友、ですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠インドラ
+ふん……さてな。[r]神の関係性を人の言葉で語るのは不適当だ。
+[k]
+
+＠インドラ
+どうとでも好きに思っておけ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ビーマ
+少なくとも対立はしていないようでほっとしました。
+[k]
+
+[charaFace A 3]
+
+＠ビーマ
+もし、どっちが上か、とかバチバチにやりあってる[r]みてえな間柄だったら[line 3]
+[k]
+
+[charaFace A 11]
+
+＠ビーマ
+息子として、ちったあ気合いあるとこを[r]見せなきゃならんか、って感じだったんで。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠インドラ
+フ。風は穏やかなるときもあれば、暴れ狂うときもある。[r]貴様は確かにヴァーユの子のようだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠ヴリトラ
+ヴァーユの子でもなんでも、[#インドラ:コ 　イ 　ツ]に吠え面を[r]かかせてくれるなら是非やってほしいところじゃが。
+[k]
+
+[charaFace C 10]
+
+＠ヴリトラ
+ここではやるなよ？　中でも外でも[r]雷と風が暴れるようになってはたまらん。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ビーマ
+だからやらねーっての。[r]今はな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadeinFSL G 0.1 0]
+[charaFace B 0]
+[charaFadeinFSR B 0.1 2]
+
+＠ラーマ
+今はしないが機会があれば喜んで手合わせを、[r]というニュアンスを感じるぞ。
+[k]
+
+[charaFace G 1]
+
+＠ラーマ
+意外と好戦的なのだな、おまえの兄は。
+[k]
+
+[charaFace B 4]
+＠アルジュナ
+まあ、ハヌマーンにも初対面で[r]喧嘩を売る程度には、そうかもしれない……。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠インドラ
+[#神:オレ]の言葉ではないが。[r]友と言えば、だ。
+[k]
+
+＠インドラ
+先程、何か話していたな。[r]アルジュナ。
+[k]
+
+＠インドラ
+戯れの暇潰しだ、[r]おまえの友の話を聞かせてみるがいい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_SABERWARS2 2.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アルジュナ
+先程の……というと。
+[k]
+
+＠アルジュナ
+かつての戦争を共に戦った、シカンディンや[r]ドリシュタデュムナの話でしょうか。
+[k]
+
+[charaFace B 7]
+
+＠アルジュナ
+[line 3]いいでしょう。
+[k]
+
+[bgm BGM_EVENT_104 0.1]
+
+[charaFace B 1]
+
+＠アルジュナ
+シカンディンは元々は女でありましたが、[r]のちに男となった戦士です。
+[k]
+
+＠アルジュナ
+パンチャーラ王の子で、共に[r]ドローナ師のもとで武術を学びました。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠インドラ
+待て。当然のように言ったが、[r]なぜ女が男になった？
+[k]
+
+＠インドラ
+神ならともかく人間だろう、そいつは。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠アルジュナ
+詳しく聞いたわけではないのですが、[r][#夜叉:ヤクシャ]が絡んでいた、ような……。
+[k]
+
+[charaFace B 1]
+
+＠アルジュナ
+性別に関係なく、彼は立派な戦士でした。[r]おかげで我々は長老ビーシュマを倒せたのです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠ビーマ
+そう言えば、カルデアには似たようなヤツがいるよな。[r]会ったらどんな反応すんのか気になるぜ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaPut J 0,-200]
+[charaFadeTime J 0.2 0.5]
+[wt 0.2]
+[charaFace H 7]
+[charaFadein H 0.1 -200,-50]
+[charaFadeTime H 0.4 0.7]
+[charaMoveEase H -230,-50 0.5 easeOutSine]
+[wt 2.0]
+
+[charaFadeout J 0.2]
+[charaFadeout H 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アルジュナ
+ドリシュタデュムナはシカンディンの兄弟です。
+[k]
+
+＠アルジュナ
+というか、その二人は我らが妻ドラウパディーの[r]兄弟でもあります。
+[k]
+
+＠アルジュナ
+彼が我らの師ドローナを討ち取りました。[r]その策を授けた、クリシュナについては[line 3]
+[k]
+
+[charaFace B 8]
+
+＠アルジュナ
+インドラ神もおそらくご存じでしょう。[r]彼を語るには言葉と時間が少なすぎます。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ラーマ
+その者についての話は、いつか機会があれば[r]余も聞きたいと思っていたがな。
+[k]
+
+[charaFace G 1]
+
+＠ラーマ
+いろいろ思うところが生まれそうで、[r]今は知らぬままでよいような気もしている。
+[k]
+
+＠ラーマ
+同じヴィシュヌの化身ではあるが、[r]役割も立場も違うのであろうし。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アルジュナ
+……そうだな。貴方とは、[r]似ているようで似ていない……気がする。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠インドラ
+かつての大戦争のときの者であれば、[r][#神:オレ]の耳にも届いている名はある。
+[k]
+
+＠インドラ
+新鮮味という意味では薄い。[r]現世での友はどうだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠アルジュナ
+もちろん、いますとも。[r]まずはここにいるラーマ。
+[k]
+
+[charaTalk N]
+[subRenderFadein #A 0.3 -350,-200]
+[wt 0.3]
+
+＠N：ラーマ
+ふふ、光栄の限りだ。
+[k]
+
+[charaTalk N,B]
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+
+＠アルジュナ
+あとは……イアソン、オリオン、[r]ゲオルギウス、オデュッセウスなどは
+[k]
+
+＠アルジュナ
+共に特異点で旅をしたこともあり、よく話します。[r]頼りになる仲間、と言えば他の皆もそうですが。
+[k]
+
+[charaFadeout N 0.1]
+[charaFadeout B 0.1]
+[charaPut K 300,-50]
+[charaFace Y 10]
+[charaFadein Y 0.1 0,200]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ビーマ
+へーえ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠アルジュナ
+何です？　ニヤニヤするのは止めてください。[r]……兄様はカルデアで交流していますか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ビーマ
+ああ、もちろんだ。[r]俺の一推しは俵藤太ってヤツだな。
+[k]
+
+[charaFace A 0]
+
+＠ビーマ
+アイツはマジで凄ぇ。[r]強いうえに無限に米が出せる。
+[k]
+
+[charaFace A 15]
+
+＠ビーマ
+あれほど心から俺が欲しいと思った能力は[r]初めてかもしれん。
+[k]
+
+[charaFace A 3]
+
+＠ビーマ
+いや、エミヤや女将にも学ぶところは多いから、[r]技術って意味では[line 3]
+[k]
+
+[charaFace A 8]
+
+＠ビーマ
+待て、料理の話ばかりだと思ったな？
+[k]
+
+[charaFace A 1]
+
+＠ビーマ
+相撲仲間の金時もいるぜ。[r]たまに開催されてる相撲大会じゃあ、
+[k]
+
+＠ビーマ
+たいていあいつかオリオンと最後に戦うことになるな。
+[k]
+
+[charaFace A 0]
+
+＠ビーマ
+アステリオスも強ぇが、真っ直ぐすぎるのと[r]性根が優しいのがまだまだ[line 3]
+[k]
+
+[messageOff]
+[charaTalk Y,A]
+[subRenderFadein #A 0.3 350,-200]
+[wt 1.8]
+
+[subRenderFadeout #A 0.3]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 8]
+[bgmStop BGM_EVENT_104 2.0]
+
+＠ビーマ
+待て、いつの間にか俺の話になっちまってる。
+[k]
+
+＠ビーマ
+インドラ様が聞きたいのは[r]アルジュナの交友関係の話だろう？　口を[#噤:つぐ]もう。
+[k]
+
+[bgm BGM_EVENT_147 0.1]
+？1：でも、仲がいいかはともかく
+？2：一番言葉を交わすのは、やっぱり……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠アルジュナ
+マスター？　まさかあの男のことを[r]口にしようとしたのではありませんよね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠インドラ
+あの男とは？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ヴリトラ
+ここにはおらんが、[r]スーリヤの子のことであろう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠インドラ
+……[#神:オレ]の槍をくれてやったあいつか。[r]まさか負けてはおらんだろうな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠アルジュナ
+無論です。現在過去未来の全てにおいて、[r]ヤツに負けることなどありえません。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaPut J 0,-200]
+[charaFadeTime J 0.2 0.5]
+
+＠ラーマ
+（まあ、だいたいいつも引き分けというか[r]　痛み分けのようになっているが……）
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠インドラ
+ふん、それならばよい。
+[k]
+
+[charaFace D 7]
+
+＠インドラ
+いいか。世には太陽こそが偉大だと[#宣:のたま]う[r]愚か者どももいるが、
+[k]
+
+＠インドラ
+太陽は[#神:オレ]が空に浮かぶのを許可して[r]やっているだけで、けっしてヤツが主体ではない。
+[k]
+
+[charaFace D 0]
+
+＠インドラ
+太陽がなくとも空は存在できるが、[r]空なくして太陽はどこに浮かぶ？
+[k]
+
+＠インドラ
+仮に太陽が偉大に見えるのであれば、[r]それを浮かべる空はなお偉大だということだ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ヴリトラ
+と、コイツは勝手に[#宣:のたま]っとるというワケじゃ。[r]わえからしてみれば五十歩百歩じゃがのー。
+[k]
+
+＠ヴリトラ
+どーせわえが全部閉ざしてやるというのに。[r]きひひー。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+？1：まさか次は太陽の試練とかでは？
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠インドラ
+それこそ愚かだな人間。[r]逆だ。
+[k]
+
+[charaFaceFade D 7 0.2]
+
+＠インドラ
+次の試練は、調子に乗った太陽を心地好く覆い隠し、[r]おまえたち矮小な人間を守るもの[line 3]
+[k]
+
+[messageOff]
+[cameraMoveEase 0,-60 1.3 easeOutQuart 1.2]
+[wt 1.0]
+
+[charaFaceFade D 4 0.1]
+
+＠インドラ
+そう。[r]『雲』の試練である！
+[k]
+
+[messageOff]
+[wt 0.8]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_147 1.5]
+[wait fade]
+
+[cameraHome 0.1]
+[charaFadeout B 0.1]
+[charaFadeout O 0.1]
+[charaFadeout D 0.1]
+
+[charaLayer B normal]
+[charaLayer N normal]
+[charaLayer O normal]
+
+[imageSet A cut702_cloud 1]
+[charaScale A 1.33]
+
+[charaSet R 98115000 1 エフェクト用ダミー2]
+[charaSet S 98115000 1 エフェクト用ダミー3]
+[charaSet T 98115000 1 エフェクト用ダミー4]
+[charaSet U 98115000 1 エフェクト用ダミー5]
+[charaSet V 98115000 1 エフェクト用ダミー6]
+[charaSet W 98115000 1 エフェクト用ダミー7]
+[charaSet X 98115000 1 エフェクト用ダミー8]
+
+[charaPut W 2000,2000]
+[charaEffect W bit_talk_cloud]
+[charaPut X 2000,2000]
+[charaEffect X bit_talk_cloud]
+[wt 0.5]
+
+[scene 253600]
+
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[cueSe SE_23 23_ade872]
+[wt 1.0]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 0,50]
+[charaMoveEase I 0,0 1.5 easeOutBack]
+[wt 1.0]
+[cueSeStop 23_ade872 0.2]
+[wt 0.5]
+
+[bgm BGM_BATTLE_271 0.1]
+
+＠ワンジナ
+こんにちは、ワンジナだよー！
+[k]
+
+[charaFace I 4]
+
+＠ワンジナ
+雲がもくもく出せるし、雲がワンジナなんだー！
+[k]
+
+[messageOff]
+[charaFace I 0]
+[charaDepth I 1]
+[charaDepth A 2]
+[charaDepth P 3]
+[charaDepth Q 4]
+[charaDepth R 5]
+[charaDepth S 6]
+[charaDepth T 7]
+[charaDepth U 8]
+[charaDepth V 9]
+[charaDepth W 10]
+[charaDepth X 11]
+
+[charaScale R 1.4]
+[charaScale S 1.5]
+[charaScale T 1.2]
+[charaScale U 1.7]
+[charaScale V 1.6]
+[charaScale W 1.3]
+[charaScale X 1.55]
+
+[cueSe SE_25 25_ade1219]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.0 0.3]
+[wt 0.2]
+
+[charaPut R 50,300]
+[charaEffect R bit_talk_cloud]
+[wt 0.4]
+[cueSe SE_25 25_ade1220]
+[charaMove R 800,300 2.0]
+[wt 0.2]
+
+[charaPut S -50,0]
+[charaEffect S bit_talk_cloud]
+[wt 0.4]
+[cueSe SE_25 25_ade1246]
+[charaMove S -800,0 2.0]
+[wt 0.2]
+
+[charaPut T 50,150]
+[charaEffect T bit_talk_cloud]
+[wt 0.4]
+[cueSe SE_25 25_ade1220]
+[charaMove T 800,150 2.0]
+[wt 0.2]
+
+[charaPut U -50,250]
+[charaEffect U bit_talk_cloud]
+[wt 0.4]
+[cueSe SE_25 25_ade1246]
+[charaMove U -800,250 2.0]
+[wt 0.2]
+
+[charaPut V 50,100]
+[charaEffect V bit_talk_cloud]
+[wt 0.4]
+[cueSe SE_25 25_ade1220]
+[charaMove V 800,100 2.0]
+[wt 0.2]
+
+[cueSeStop 25_ade1219 0.5]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[cueSeStop 25_ade1246 0.2]
+[cueSeStop 25_ade1220 0.2]
+
+[charaFadeout I 0.1]
+[charaScale P 1.3]
+[charaScale Q 1.3]
+[charaFadein P 0.1 140,-200]
+[charaPut Q 140,-200]
+[charaFadeTime Q 0 0]
+
+[charaMove R 900,450 0.1]
+[charaMove S -900,130 0.1]
+[charaMove T 900,0 0.1]
+[charaMove U -900,-50 0.1]
+[charaMove V 900,250 0.1]
+[charaPut W -900,130]
+[charaPut X 900,0]
+[wt 0.5]
+
+[charaMove P 190,-200 10.0]
+[charaMove Q 190,-200 10.0]
+[cueSe SE_25 25_ade1246]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[cueSe SE_25 25_ade1220]
+
+[charaMove R -800,450 4.0]
+[wt 0.5]
+[cueSe SE_25 25_ade1246]
+
+[charaMove S 800,130 4.0]
+[wt 0.5]
+[cueSe SE_25 25_ade1220]
+
+[charaMove T -800,0 4.0]
+[wt 0.5]
+[cueSe SE_25 25_ade1246]
+
+[charaFadeTime Q 1.5 1.0]
+
+[charaMove U 800,-50 4.2]
+[wt 0.5]
+[cueSe SE_25 25_ade1220]
+
+[charaMove V -800,250 4.0]
+[wt 0.5]
+[cueSe SE_25 25_ade1246]
+
+[charaMove W 800,130 4.5]
+[wt 0.5]
+[cueSe SE_25 25_ade1220]
+
+[charaMove X -800,0 4.0]
+[wt 0.5]
+[cueSe SE_25 25_ade1246]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaMove R -900,300 0.1]
+[charaMove S 900,150 0.1]
+[charaMove T -900,-30 0.1]
+[charaMove U 900,-50 0.1]
+[charaMove V -900,300 0.1]
+[charaMove W 900,230 0.1]
+[charaMove X -900,0 0.1]
+
+[charaMove P -140,-350 0.1]
+[charaMove Q -140,-350 0.1]
+[charaFadeTime Q 0 0]
+[wt 0.1]
+[scene 253600]
+[charaMove R 800,300 4.0]
+[wt 0.5]
+
+[charaMove S -800,150 4.0]
+[charaMove P -190,-350 10.0]
+[charaMove Q -190,-350 10.0]
+[cueSe SE_25 25_ade1246]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[cueSe SE_25 25_ade1220]
+
+[charaMove T 800,-30 4.0]
+[wt 0.5]
+[cueSe SE_25 25_ade1246]
+
+[charaFadeTime Q 1.5 1.0]
+[charaMove U -800,-50 4.5]
+[wt 0.5]
+[cueSe SE_25 25_ade1220]
+
+[charaMove V 800,300 4.2]
+[wt 0.5]
+[cueSe SE_25 25_ade1246]
+
+[charaMove W -800,230 4.0]
+[wt 0.5]
+[cueSe SE_25 25_ade1220]
+
+[charaMove X 800,0 3.8]
+[wt 0.5]
+[cueSe SE_25 25_ade1246]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[seStop ad556 1.2]
+[cueSeStop 25_ade1220 1.0]
+[cueSeStop 25_ade1246 1.0]
+[wait wipe]
+
+[scene 253620]
+
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaPut R 2000,2000]
+[charaPut S 2000,2000]
+[charaPut T 2000,2000]
+[charaPut U 2000,2000]
+[charaPut V 2000,2000]
+[charaPut W 2000,2000]
+[charaPut X 2000,2000]
+
+[charaEffectDestroy R bit_talk_cloud]
+[charaEffectDestroy S bit_talk_cloud]
+[charaEffectDestroy T bit_talk_cloud]
+[charaEffectDestroy U bit_talk_cloud]
+[charaEffectDestroy V bit_talk_cloud]
+[charaEffectDestroy W bit_talk_cloud]
+[charaEffectDestroy X bit_talk_cloud]
+
+[charaFadein A 0.1 0,-388]
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 20,0]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.4]
+
+＠ワンジナ
+来てくれてありがとう！[r]いっぱい遊ぼうねー！
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_271 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

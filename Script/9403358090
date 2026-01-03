@@ -1,0 +1,1704 @@
+
+
+＄94-03-35-80-9-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 98002000 1 フォウ]
+[imageSet B cut653_text01 1]
+
+[scene 10000]
+
+[charaFadein B 0.1 0,-200]
+[wt 0.5]
+[se ade192]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[wait touch]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[label lblClear01a]
+[scene 106000]
+[branch lblConf01]
+
+[label lblClear01b]
+[scene 105800]
+[branch lblConf01]
+
+[label lblClear01c]
+[scene 157900]
+[label lblConf01]
+
+[cameraMove 0.1 0,0 1.05]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+[wt 1.0]
+
+
+＠
+『夏のお礼をするので２月○日　10:00[r]　シミュレーター室に来られたし　冥界の女神より』
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠フォウ
+[tVoice ValVoice_3300200 0_V010]
+フォーウ……。[r]（特別意訳：招待状とは恋愛弱者にしては頑張ったな……）[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.3]
+[se ad748]
+[cameraMove 0.5 0,-10 1.05]
+[wait camera]
+[wt 0.4]
+
+？1：そろそろ時間だ、行ってくる！
+
+？！
+
+＠フォウ
+[tVoice ValVoice_3300200 0_V020]
+フ[charaMoveReturn A 0,10 0.3]ォーウ！[r]（特別意訳：しっかりね！）[wait tVoice]
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[cameraHome 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet A 33002000 1 エレシュキガル]
+[charaSet B 33002000 1 エレシュキガル_演出用1]
+[charaSet C 33002000 1 エレシュキガル_演出用2]
+[imageSet D cut657_erebeast_3 1]
+[imageSet E cut657_erebeast_3 1]
+[charaSet F 98115000 1 エフェクト用]
+[charaSet G 98115000 1 エフェクト用]
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 98115000 1 エフェクト用]
+[sceneSet J 197700 1]
+[sceneSet K 197700 1]
+[sceneSet L 197700 1]
+[sceneSet M 197700 1]
+[equipSet N 9809370 1 バレンタイン礼装]
+[imageSet O cut061_bad 1]
+[charaScale O 1.01]
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+
+[subCameraOn 4]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+[charaLayer E sub #A]
+[charaLayer K sub #A]
+[charaLayer G sub #A]
+[charaScale E 1.6]
+[charaScale K 1.8]
+[charaScale G 1.45]
+[charaDepth E 6]
+[charaDepth G 3]
+[charaDepth K 2]
+[charaFadein E 0.7 60,-230]
+[charaFadein K 0.7 400,-350]
+[charaPut G 20,250]
+[charaEffect G bit_talk_valentine_brilliant_fs]
+
+[charaScale D 1.3]
+[charaScale J 1.8]
+[charaScale F 1.2]
+
+[charaDepth N 9]
+[charaDepth D 8]
+[charaDepth F 7]
+[charaDepth B 6]
+[charaDepth H 5]
+[charaDepth L 4]
+[charaDepth A 3]
+[charaDepth H 2]
+[charaDepth P 2]
+[charaDepth J 1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[cameraMove 0.1 0,0 1.01]
+
+[scene 197700]
+[se ad37]
+[seVolume ad37 0 0]
+[wt 1.0]
+
+[fadein black 1.0]
+[seVolume ad37 1.0 1.0]
+[wait fade]
+[wt 1.5]
+[seVolume ad37 1.0 0.3]
+
+[bgm BGM_MIZUGIKENGOU 0.1]
+
+
+[se ad799]
+[seVolume ad799 0 0]
+[seVolume ad799 1.0 0.7]
+[charaFadein J 0.7 280,-100]
+[charaMoveEase J 320,-100 1.2 easeOutQuad]
+[wt 1.5]
+
+[seStop ad799 0.3]
+[cueSe SE_21 21_ade588]
+[cueSeVolume 21_ade588 0 0.3]
+[charaPut F -100,-50]
+[charaEffect F bit_talk_valentine_brilliant_fs]
+[charaFadein D 0.6 180,400]
+[wt 2.0]
+
+[subRenderFadein #A 0.7 0,0]
+[charaMove E 40,-230 3.0]
+[charaMove K 380,-350 3.0]
+[charaMove G 0,250 3.0]
+[wt 0.7]
+
+[charaPut F 2000,2000]
+[charaEffectDestroy F bit_talk_valentine_brilliant_fs]
+[charaFadeout D 0.1]
+[charaFadeout J 0.1]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+[charaScale J 1.05]
+[charaFadein J 0.1 0,-210]
+[wt 2.5]
+
+[charaMoveEase E 40,-480 2.5 easeOutCubic]
+[charaMoveEase K 380,-600 2.5 easeOutCubic]
+[charaMoveEase G 0,0 2.5 easeOutCubic]
+[wt 2.8]
+
+[seStop ad37 1.0]
+[cueSeStop 21_ade588 1.0]
+[subRenderFadeout #A 0.8]
+[wt 1.4]
+[charaPut G 2000,2000]
+[charaEffectDestroy G bit_talk_valentine_brilliant_fs]
+
+[charaFaceFade A 11 0.2]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V030]
+時間通りねマスター。冥界の[#水着:めがみ]エレシュキガル、[r]この通り少し前から到着していました。[wait tVoice]
+[k]
+
+[charaTalk on]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V040]
+まずは私の招待に応じた事を評価しましょう。[r]臆せず、よくやって来ました。[wait tVoice]
+[k]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V050]
+ちゃんと身だしなみを整えているのも素晴らしいです。[r]すぐに水着に着替えるのが勿体ないくらい。[wait tVoice]
+[k]
+
+？1：招待に応じるだけで褒められた？
+
+[charaFace A 23]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V060]
+そ、そう簡単に褒めたつもりはありませんけど！？[r]ただの経験則ですけど！？[wait tVoice]
+[k]
+
+[charaFace A 21]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V070]
+だって……普通の人間であれば女神からの[r]招待状なんて受け取った時点で恐れおののき、[wait tVoice]
+[k]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V080]
+身に余る幸運に震えながらも熟考の末、[r]見なかったフリでリスクヘッジするじゃない……[wait tVoice]
+[k]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V090]
+シュメルの女神に関わるとろくな事にならないし……[r]７割イシュタルのせいだけど。[wait tVoice]
+[k]
+
+[charaFace A 23]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V100]
+と、とにかくその勇気を称えます。[r]いつも（優しくしてくれて）ありがとう、みたいな！[wait tVoice]
+[k]
+
+？2：水着持ってきてないけど……
+
+[charaFace A 9]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V110]
+え。うそ、なんで？[r][line 3]って、[wait tVoice]
+[k]
+
+[charaPut P 1]
+[charaFadeTime P 0.2 0.5]
+
+[charaFace A 25]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V120]
+（し[charaShake A 0.02 1 1 0]まった、海だって書き忘れてたーー！）[wait tVoice]
+[k]
+
+[charaFadeout P 0.2]
+
+[charaFace A 34]
+[charaMoveReturn A 0,5 0.3]
+[charaShakeStop A]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V130]
+そそそ、そう、そうだったわね。[r]そもそも冥界に海ないものね。あはは。[wait tVoice]
+[k]
+
+[charaFaceFade A 35 0.2]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V140]
+まあいいのだわ、細かい事は。[r]水着の一着や二着、なんとでもなります。[wait tVoice]
+[k]
+
+？！
+
+[bgmStop BGM_MIZUGIKENGOU 1.0]
+[charaFace A 11]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V150]
+コ[charaMoveReturn A 0,-5 0.3]ホン。じゃあまず作戦第一段階。[wait tVoice]
+[k]
+
+[bgm BGM_KAZURA_1 0.1]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V160]
+そこのテーブルに座って。[r]帽子もなしで日射しを浴びるのはよくないし。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad661]
+[seVolume ad661 0 0.6]
+[wt 0.4]
+[seStop ad661 1.0]
+[charaMoveEase A 0,10 1.0 easeOutCubic]
+[charaMoveEase J 0,-200 1.0 easeOutCubic]
+[wt 1.5]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V170]
+はい。次は私も腰を下ろします。[r]作戦第二段階。[wait tVoice]
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ade1007]
+[cueSeVolume 24_ade1007 0 0.6]
+[cueSeStop 24_ade1007 0.8]
+[charaMoveEase A 0,0 0.7 easeOutCubic]
+[wt 1.5]
+
+[charaTalk off]
+[charaScale B 1.25]
+[charaScale L 1.25]
+[charaFace B 11]
+[charaFadein B 0.8 0,20]
+[charaFadein L 0.8 0,-290]
+[wt 0.8]
+[charaFadeout A 0.1]
+[charaFadeout J 0.1]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V180]
+……………………。[wait tVoice]
+[k]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V190]
+…………………………………。[wait tVoice]
+[k]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V200]
+……………………………………………[twt 0.5][charaFaceFade B 12 0.2]えへへ。[wait tVoice]
+[k]
+
+？1：もしかして
+？2：第二段階でおしまい？
+
+？！
+
+[charaFace B 24]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V210]
+！[charaShake B 0.02 1 1 0.4][wait tVoice]
+[k]
+
+[charaFace B 23]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V220]
+そ、そうだった、お礼、お礼よね！[r]はい、どうぞ！[wait tVoice]
+[k]
+
+[charaFace B 24]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V230]
+第三作戦、第四作戦、第五作戦まであったけど、[r]そんなに欲しいなら予定を繰り上げてあげる！[wait tVoice]
+[k]
+
+[charaFaceFade B 30 0.2]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V240]
+ええ、私とてこれが二度目のバレンタイン！[r]何を臆する事があるのだわ！[wait tVoice]
+[k]
+
+[messageOff]
+[charaScale F 1.1]
+[charaScale H 1.1]
+[wt 0.1]
+[se ad79]
+[wt 0.1]
+[charaPut F 0,20]
+[charaEffect F bit_talk_valentinegift01]
+[charaPut H 0,20]
+[charaEffect H bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[charaEffectStop H bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+？1：ありがとう。嬉しい[&よ:]
+？2：あけていい[&:かな]？
+
+？！
+
+[charaFaceFade B 24 0.2]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V250]
+もちろん構いません。許可します。[wait tVoice]
+[k]
+
+[messageOff]
+[se ade11]
+[cameraMove 0.3 0,2 1.01]
+[wait camera]
+[cameraMove 0.3 0,0 1.01]
+[wait camera]
+[cameraMove 0.3 0,2 1.01]
+[wait camera]
+[cameraMove 0.3 0,0 1.01]
+[wait camera]
+[wt 0.6]
+
+[charaFadeout B 0.5]
+
+[se bas2]
+[charaFadein N 0.5 0,-70]
+[wt 2.8]
+
+？1：これは……（どこかで見た覚えが……）
+
+？2：うん。美味しそう[&だ:だね]
+
+？！
+
+[charaFadeout N 0.4]
+[charaFace B 0]
+[charaFadein B 0.4 0,20]
+[wt 0.6]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V260]
+[line 3]妙に慣れてるのね、アナタ。[r]まるでこれが今年何十個目かのチョコみたいな。[wait tVoice]
+[k]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V270]
+あるいは、これからもらう予定が[r]山ほど詰まってる、みたいな。[wait tVoice]
+[k]
+
+[messageOff]
+[shake 0.01 2 2 0.3]
+[bgmStop BGM_KAZURA_1 1.0]
+
+？1：ぎく
+
+？！
+
+[charaMove B 0,30 7.0]
+[charaMove L 0,-305 7.0]
+[charaMoveScale B 1.3 7.0]
+[charaMoveScale L 1.3 7.0]
+
+[charaFaceFade B 37 0.2]
+[wt 0.2]
+
+[bgm BGM_MAP_123 0.1]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V280]
+そう。質問その１。[r]他の[#女神:こ]からチョコ、もらった？[wait tVoice]
+[k]
+
+？1：さ、さあ？
+？2：ま、まあ？
+
+？！
+
+[charaFace B 36]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V290]
+そんなに怯えなくていいのだわ。[r]バレンタインってそういうものだし。[wait tVoice]
+[k]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V300]
+贈り物を受け取らないのもよくないわ。[r]アナタが頑張った証だもの。[wait tVoice]
+[k]
+
+[charaFace B 35]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V310]
+それはそれとして質問その２。[r]私のチョコが最初のチョコかしら？[wait tVoice]
+[k]
+
+[charaScale F 1.1]
+[charaScale H 1.1]
+[charaScale I 1.1]
+
+[charaDepth I 8]
+[charaDepth A 7]
+[charaDepth H 6]
+[charaDepth F 5]
+
+？1：もちろん！（真実）
+？2：もちろん！（嘘）
+
+？！
+
+[bgmStop BGM_MAP_123 1.5]
+
+[messageOff]
+[charaMove B 0,30 0.2]
+[charaMove L 0,-305 0.2]
+[charaMoveScale B 1.3 0.2]
+[charaMoveScale L 1.3 0.2]
+
+[charaPut F 380,20]
+[charaPut H -380,20]
+[se ad690]
+[seVolume ad690 1.0 0.3]
+[charaEffect F bit_talk_charge_aura_05]
+[charaEffect H bit_talk_charge_aura_05]
+[wt 2.0]
+
+[charaPut I 0,20]
+[charaEffect I bit_talk_suspicious]
+
+[cameraMove 3.0 0,-20 1.1]
+[cueSe SE_23 23_ade908]
+[wt 3.0]
+
+[charaMove B 0,150 3.0]
+[cameraMove 1.0 0,98 3.0]
+[seStop 23_ade908 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaTalk depthOn]
+[cameraHome 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout L 0.1]
+[charaPut F 3000,3000]
+[charaPut H 3000,3000]
+[charaPut I 3000,3000]
+[charaEffectDestroy F bit_talk_charge_aura_05]
+[charaEffectDestroy H bit_talk_valentine_brilliant_fs]
+[charaEffectDestroy I bit_talk_suspicious]
+[wt 0.1]
+
+[charaLayer E normal]
+[charaLayer K normal]
+[charaLayer G normal]
+[charaFadeout E 0.1]
+[charaFadeout K 0.1]
+[charaFadeout G 0.1]
+[charaEffectDestroy G bit_talk_valentine_brilliant_fs]
+[subCameraOff]
+[wt 0.1]
+
+[charaSet A 1098307500 1 アンキ・エレシュキガル]
+[charaSet B 1098307500 1 アンキ・エレシュキガル_演出用1]
+[charaSet C 1098307500 1 アンキ・エレシュキガル_演出用2]
+[charaFilter C silhouette 00000080]
+[sceneSet J 33810 1]
+[sceneSet K 33810 1]
+[sceneSet L 33810 1]
+[sceneSet M 33810 1]
+
+[charaScale F 1.0]
+[charaScale G 1.0]
+[charaScale H 1.0]
+[charaScale I 1.0]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.2]
+[wait fade]
+
+[effect bit_talk_07_negaposi_inversion]
+[se ad12]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+
+[charaScale J 1.2]
+[charaFadein J 0.1 50,-200]
+[scene 33810]
+[wt 2.0]
+
+[fadein white 2.0]
+[charaMove J -50,-200 5.0]
+[wait fade]
+[wt 1.0]
+
+[charaFadeout J 1.0]
+[wt 1.5]
+
+[charaTalk depthOff]
+[charaDepth C 4]
+[charaDepth B 3]
+[charaDepth J 2]
+[charaDepth A 1]
+[charaScale B 1.2]
+[charaScale J 1.2]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_BATTLE_282 0.1]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V320]
+まあ最初だろうと最後だろうと関係ないけど。[r]どうあれ沢山もらうわよね、アナタ？[wait tVoice]
+[k]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V330]
+えーと、こういうのなんて言ったっけ。[r]働き過ぎて倒れるヤツ。あ、過労チョコ死？[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V340]
+可哀相だけど[#自業自得:じ ご う じ と く]と諦めて。[r]死んで冥界に来てもらうしかなくなったわ。[wait tVoice]
+[k]
+
+[input selectBranch]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_77 0.7]
+[bgmStop BGM_MIZUGIKENGOU 0.7]
+[bgmStop BGM_KAZURA_1 0.7]
+[bgmStop BGM_MAP_123 0.7]
+
+[seStop ade192 0.7]
+[seStop ad748 0.7]
+[seStop ad37 0.7]
+[seStop ad799 0.7]
+[cueSeStop 21_ade588 0.7]
+[seStop ad661 0.7]
+[cueSeStop 24_ade1007 0.7]
+[seStop ad79 0.7]
+[seStop ade11 0.7]
+[seStop bas2 0.7]
+[seStop ad690 0.7]
+[cueSeStop 23_ade908 0.7]
+[seStop ad12 0.7]
+
+[charaSet A 1098307500 1 アンキ・エレシュキガル]
+[charaSet B 1098307500 1 アンキ・エレシュキガル_演出用1]
+[charaSet C 1098307500 1 アンキ・エレシュキガル_演出用2]
+[charaFilter C silhouette 00000080]
+[imageSet D cut657_erebeast_3 1]
+[imageSet E cut657_erebeast_3 1]
+[charaSet F 98115000 1 エフェクト用]
+[charaSet G 98115000 1 エフェクト用]
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 98115000 1 エフェクト用]
+[sceneSet J 33810 1]
+[sceneSet K 33810 1]
+[sceneSet L 33810 1]
+[sceneSet M 33810 1]
+[equipSet N 9809370 1 バレンタイン礼装]
+[imageSet O cut061_bad 1]
+[sceneSet P 10000 1]
+
+[scene 33810]
+
+[charaTalk depthOff]
+[charaDepth C 4]
+[charaDepth B 3]
+[charaDepth J 2]
+[charaDepth A 1]
+[charaScale B 1.2]
+[charaScale J 1.2]
+
+[bgm BGM_BATTLE_282 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[fadein black 0.1]
+[wt 0.8]
+
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+？1：もう来てるんですけど！？
+
+[charaFace A 16]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V350]
+あら、理解が早いじゃない。[r]色恋沙汰もそれくらい察しが良ければ助かったのに。[wait tVoice]
+[k]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V360]
+そう、アナタはいま[#冥界:わたし]の中にいる。[r]光すら抜け出せない暗黒の宙域に。[wait tVoice]
+[k]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V370]
+まさに死刑執行を待つ罪人、と言ったところね。[r]どんな[#死蔵:まつろ]がお望みかしら？[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V380]
+恨む……じゃないか、叱るのなら[r]後で汎人類史のエレシュキガルにね。[wait tVoice]
+[k]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V390]
+冥界の女神は独占欲が強いの。[r]これ、そのあたりの悪性を我慢した反動だから。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace B 5]
+[charaFadein B 0.8 0,10]
+[charaFadein J 0.8 0,-200]
+[wt 1.0]
+[charaFadeout A 0.1]
+
+[charaFaceFade B 17 0.2]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V400]
+それじゃあ[line 3]目の前のご馳走を[r]くまなくいただこうかしら。[wait tVoice]
+[k]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V410]
+収納。展示。上書き。ゴミ箱。[r]どこでもとびきりの冷遇をしてあげる。[wait tVoice]
+[k]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V420]
+バレンタイン中は外には出さないから。[r]観念して私に食べられなさい。[wait tVoice]
+[k]
+
+[messageOff]
+[cameraMove 4.0 0,-30 1.1]
+[wt 1.5]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V430]
+あーん。[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_BATTLE_282 1.0]
+[cameraMoveEase 0,-40 1.0 easeOutQuad 1.2]
+[wait fade]
+
+[wt 1.0]
+[se ad217]
+[wt 0.4]
+[seStop ad217 0.2]
+[wt 0.4]
+
+[charaTalk on]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout J 0.1]
+[cameraHome 0.1]
+[scene 10000]
+[wt 1.0]
+
+[fadein black 0.5]
+[wait fade]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V440]
+これでもビーストですもの。[r]バッドエンドの一つはこなしておかないとね？[wait tVoice]
+[k]
+
+[messageOff]
+[wt 2.0]
+[charaTalk O]
+[charaFadein O 0.5 -30,-180]
+[wt 3.5]
+
+[charaFadeout O 0.7]
+[wt 1.9]
+
+[branch select01_end]
+
+？2：アンキ・エレシュキガルだー！　やったー！
+
+[rewardSwitch true]
+
+[messageOff]
+[charaFace A 6]
+[wt 1.4]
+
+[charaFace A 15]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V450]
+いま自分がどこにいるのかどうでもいい感じね……[r]死んでるのよアナタ？[wait tVoice]
+[k]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V460]
+私が言うのもなんだけど、[r]冥界に慣れすぎるのは良くないわよ。[wait tVoice]
+[k]
+
+[bgmStop BGM_BATTLE_282 1.0]
+
+[charaFace A 14]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V470]
+……まあ、その反応は素直に嬉しいけど。[r]格好つけて登場したこっちがバカみたい。[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[cueSe SE_22 22_ad1169]
+[cueSeVolume 22_ad1169 0 0.4]
+[wt 0.4]
+
+[cueSeVolume 22_ad1188 1.2 1.0]
+[se ad789]
+[seVolume ad789 0 0.4]
+[charaPut C 0,0]
+[charaFadeTime C 0.5 0.7]
+[wt 0.5]
+[charaFadeout C 0.6]
+[wt 0.7]
+
+[se ad789]
+[seVolume ad789 0 0.8]
+[charaPut C 0,0]
+[charaFadeTime C 0.5 0.7]
+[wt 0.5]
+[charaFadeout C 0.6]
+[wt 0.7]
+
+[cueSe Servants_3300200 m61024]
+[wt 0.2]
+
+[cueSeStop 22_ad1169 1.0]
+[fadeout black 0.8]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet A 33002001 1 アンキ・エレシュキガル]
+[charaSet B 33002001 1 アンキ・エレシュキガル_演出用1]
+[charaSet C 33002001 1 アンキ・エレシュキガル_演出用2]
+[imageSet D cut657_erebeast_4 1]
+[imageSet E cut657_erebeast_4 1]
+[imageSet L back10000 1 1]
+[imageSet M back10000 1 1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth A 6]
+[charaDepth K 5]
+[charaDepth D 2]
+[charaDepth J 1]
+
+[charaScale A 1.1]
+[charaScale K 1.25]
+[charaScale D 1.2]
+[charaScale J 1.45]
+
+[charaFadein J 0 -120,-90]
+
+[cameraMove 0.1 0,-20 1.11]
+[wait camera]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaFadein D 0.7 -20,520]
+[charaMoveEase D -20,420 1.0 easeOutQuart]
+[wt 0.5]
+[cueSe SE_21 21_ade665]
+[cueSeStop 21_ade665 1.0]
+[wt 0.7]
+
+[charaMove D -20,220 3.0]
+[charaMove J -120,-290 3.0]
+[wt 2.2]
+
+[charaFace A 20]
+[charaFadein A 0.7 0,170]
+[charaFadein K 0.7 0,-160]
+[charaMoveEase A 0,10 3.5 easeOutQuad]
+[charaMoveEase K 0,-320 3.5 easeOutQuad]
+[wt 3.8]
+[charaFadeout D 0.1]
+[charaFadeout J 0.1]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V480]
+ビーストらしくノルマを果たす気でいたけど、[r]今ので毒気が抜かれちゃったわ。[wait tVoice]
+[k]
+
+[bgm BGM_VALENTINE_1 0.1]
+
+[charaTalk on]
+[charaFaceFade A 2 0.2]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V490]
+正しく私の[#名称:なまえ]を口にしてくれたわね。[r]改めてこんにちは、ごきげんようマスター。[wait tVoice]
+[k]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V500]
+バレンタイン、楽しんでる？[r]というかエレシュキガルはちゃんとやってる？[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V510]
+せっかく霊基一丸になってチョコレートを作っても、[r]アナタに渡せないんじゃ意味ありませんから。[wait tVoice]
+[k]
+
+？1：これ以上ないほど、ちゃんともらいました
+？2：バッチバチに水着に決めて、もらいました
+
+？！
+
+[charaFace A 2]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V520]
+ふふ。なにその嬉しそうな顔。[r]聞くまでもなかったわね。[wait tVoice]
+[k]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V530]
+もう少しからかいたかったけど、[r]こういう行事に私は邪魔者でしょ。[wait tVoice]
+[k]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V540]
+今回にかぎり外に逃がしてあげる。[r]馬に蹴られて吹っ飛びなさい。[wait tVoice]
+[k]
+
+[charaFace A 15]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V550]
+それと、他のサーヴァントからであっても[r]もらったチョコは食べること。[wait tVoice]
+[k]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V560]
+死蔵するのは許さないわよ。[wait tVoice]
+[k]
+
+＠アンキ・エレシュキガル
+[tVoice ValVoice_3300200 0_V570]
+腐るのは物質だけで充分。[r]気持ちはちゃんと受けとめてね。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.2]
+[cueSe SE_21 21_ade665]
+[cueSeStop 21_ade665 0.6]
+[charaMove A 0,15 0.5]
+[charaMoveScale A 1.13 0.5]
+[wt 0.4]
+
+[se ad775]
+[seVolume ad775 0 0.7]
+[seStop ad775 0.4]
+[shake 0.01 1 1 0.3]
+[cameraMove 1.0 0,-20 1.08]
+[wt 0.9]
+
+[cameraMove 1.5 0,-10 1.01]
+[charaMove A 0,-5 1.5]
+[charaMoveScale A 0.98 1.5]
+
+[charaMove K 0,-265 1.5]
+[charaMoveScale K 1.1 1.5]
+[wt 0.5]
+
+[se ade283]
+[seVolume ade283 0 0.6]
+[fadeout white 1.0]
+[bgmStop BGM_VALENTINE_1 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout K 0.1]
+[charaTalk depthOn]
+
+[scene 10001]
+[wt 1.5]
+
+[seStop ade283 0.6]
+[fadein white 1.0]
+[wait fade]
+
+[effect bit_talk_07_02_negaposi_inversion]
+[se ad12]
+[wt 4.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_07_02_negaposi_inversion]
+
+[charaSet A 33002000 1 エレシュキガル]
+[charaSet B 33002000 1 エレシュキガル_演出用1]
+[charaSet C 33002000 1 エレシュキガル_演出用2]
+[sceneSet J 197700 1]
+[sceneSet K 197700 1]
+[sceneSet L 197700 1]
+[sceneSet M 197700 1]
+
+[scene 197700]
+
+[cameraMove 0.1 0,-20 1.2]
+
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 0,-10]
+[wt 2.0]
+
+[cueSe SE_22 22_ad1177]
+[cameraMoveEase 0,0 1.5 easeOutSine 1.01]
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+
+[se ad7]
+[charaFace A 23]
+[charaShake A 0.02 3 3 0.4]
+[charaMove A 0,0 0.3]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V580]
+は！？　寝てた！？[r]ごご、ごめんなさい、私ったら……！[wait tVoice]
+[k]
+
+[bgm BGM_MIZUGI_2022_1 0.1]
+
+[charaFace A 24]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V590]
+……もしかして、やっちゃった？[r]ビーストの暗黒パワーが[#溢:あふ]れてしまったかしら？[wait tVoice]
+[k]
+
+？1：うん。どばーっ、と[#溢:あふ]れてた
+？2：おかげでアンキに会えたよ
+
+？！
+
+[charaFace A 26]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V600]
+[line 6]。[wait tVoice]
+[k]
+
+[charaFace A 28]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V610]
+そう。[r]どうりで気持ちがスッキリしてると思った。[wait tVoice]
+[k]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V620]
+アンキが私の悪性を消費してくれたのね。[r]それともアナタが消してくれたのかしら。[wait tVoice]
+[k]
+
+[charaFaceFade A 31 0.2]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V630]
+どちらであってもありがとう、マスター。[wait tVoice]
+[k]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V640]
+アンキ、きっとお礼を言わなかったでしょ？[r]だから今の感謝は彼女の代わりね。[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V650]
+今は霊基が重なってはいるけれど、[r]私とアンキはまったく別の存在。[wait tVoice]
+[k]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V660]
+彼女には彼女のポリシーがあるから、[r]私が代弁するのもちょっと違うけどね。[wait tVoice]
+[k]
+
+？1：イシュタルとの関係みたいなもの？
+
+[charaFaceFade A 36 0.2]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V670]
+そう。イシュタルは[#我:わ]が[#儘:まま]ではた迷惑な陽気女神で、[r]私は臆病で災厄よりの陰気女神。[wait tVoice]
+[k]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V680]
+同じ神性から分かれて発生したとは思えない[r]光と闇なのだわ。[wait tVoice]
+[k]
+
+？2：まったく別？　まったく同じ、じゃなくて？
+
+[charaFaceFade A 35 0.2]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V690]
+どういう意味かしら？[r]私は真面目で勤勉で重めの女神ですけど？[wait tVoice]
+[k]
+
+？！
+
+[charaFaceFade A 31 0.2]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V700]
+とはいえ。そんな私が、ここならイシュタルに[r]負けないくらい自由でいる。[wait tVoice]
+[k]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V710]
+いつも明るく接してくれる人がいるおかげです。[r]だから、その……[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth B 5]
+[charaDepth F 4]
+[charaDepth J 2]
+[charaDepth A 1]
+
+[charaScale B 1.2]
+[charaScale J 1.2]
+
+[charaFace B 31]
+[charaFadein B 0.7 0,20]
+[charaFadein J 0.7 0,-240]
+[wt 0.8]
+
+[charaFaceFade B 23 0.2]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V720]
+これからもこの先も、なんていうか、[r]カルデアの旅が終わっても、アナタと一緒に[line 3][wait tVoice]
+[k]
+
+[bgmStop BGM_MIZUGI_2022_1 1.0]
+[charaFaceFade B 4 0.2]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V730]
+って、ちょっと待って。[r]急に鼻がむずむずして……[twt 5.5][charaMoveReturn B 0,10 0.3]く[messageShake 0.05 5 5 0.4]しゅん！[wait tVoice]
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ad1110]
+[cueSeVolume 21_ad1110 0 0.4]
+[cueSe Servants_3300200 m61003]
+[effect bit_talk_radiallight01]
+[wt 0.8]
+
+[fadeout white 1.0]
+[wait fade]
+
+[charaTalk on]
+[charaTalk depthOn]
+[cameraHome 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout J 0.1]
+[charaFadeout F 0.1]
+[effectDestroy bit_talk_radiallight01]
+[wt 0.1]
+
+[charaSet A 33002002 1 スペース・エレシュキガル]
+[charaSet B 33002002 1 スペース・エレシュキガル_白シルエット]
+[charaFilter B silhouette F8F8FFFF]
+[charaSet C 33002002 1 スペース・エレシュキガル_演出用2]
+[imageSet D cut657_erebeast_5 1]
+[imageSet E cut657_erebeast_5 1]
+[sceneSet J 83605 1 1]
+[sceneSet K 83605 1 1]
+[sceneSet L 83605 1 1]
+[sceneSet M 83605 1 1]
+[equipSet N 9809370 1 バレンタイン礼装]
+[imageSet O cut654_text_sesk01 1]
+[imageSet Q cut657_erebeast_5 1]
+
+[scene 83605]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth O 9]
+[charaDepth N 9]
+[charaDepth B 7]
+[charaDepth C 6]
+[charaDepth Q 6]
+[charaDepth L 5]
+[charaDepth E 5]
+[charaDepth K 4]
+[charaDepth D 3]
+[charaDepth J 2]
+[charaDepth A 1]
+
+[charaScale D 1.6]
+[charaScale E 1.6]
+[charaScale Q 1.6]
+[charaScale J 1.3]
+[charaScale K 1.3]
+[charaScale L 1.3]
+[wt 0.5]
+
+[fadein white 1.5]
+[cueSeStop 21_ad1110 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_113 0.1]
+[wt 0.5]
+
+[charaFadein D 0.6 -80,540]
+[charaFadein J 0.6 40,-145]
+[charaMove D 20,540 4.0]
+[charaMove J 140,-145 4.0]
+[wt 2.6]
+
+[charaFadein E 0.6 80,-130]
+[charaFadein K 0.6 -40,-180]
+[charaMove E -20,-130 4.0]
+[charaMove K -140,-180 4.0]
+[wt 0.6]
+[charaFadeout D 0.1]
+[charaFadeout J 0.1]
+[wt 2.2]
+
+[charaFace Q 4]
+[charaFadein Q 0.6 -80,-540]
+[charaFadein L 0.6 40,-250]
+[charaMove Q 20,-540 4.0]
+[charaMove L 140,-250 4.0]
+[wt 0.6]
+[charaFadeout E 0.1]
+[charaFadeout K 0.1]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 2.2]
+
+[charaFadeout Q 0.6]
+[charaFadeout L 0.6]
+[wt 1.0]
+
+[charaFace A 5]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V740]
+私と一緒に世界を救ってね、マスター。[r]宇宙のビーストがついているんだもの。[wait tVoice]
+[k]
+
+[charaTalk on]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V750]
+たとえカルデアと関係がなくなっても、[r]それくらいの事はしてもらわないとね☆[wait tVoice]
+[k]
+
+？1：くしゃみでビーストになる[&んだ:の]！？
+
+[charaFace A 9]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V760]
+驚[messageShake 0.05 3 3 0.4]くのそこ！？[r]ずっと温めてきた決め台詞だったんですけど！？[wait tVoice]
+[k]
+
+？2：かっこいー！　スペース・エレシュキガルだー！
+
+[charaFace A 8]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V770]
+素直に喜びすぎね！？[r]もしかして私、恋愛より応援対象になってない！？[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 7]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V780]
+まあ、それもこれも私のビ[#力:りょく]が強すぎるからね。[wait tVoice]
+[k]
+
+[se ade178]
+[charaFadein O 0.2 -10,-200]
+[wt 2.4]
+[charaFadeout O 0.2]
+
+[charaFace A 2]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V790]
+予想とは違う反応だったけど、[r]心の底からの歓声には違いありません。受理します。[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V800]
+さて、それじゃあ[line 3][wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V810]
+今さら自己紹介の必要はないけど、定型は大事だから！[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale C 1.15]
+[charaScale L 1.15]
+[charaFace C 5]
+[charaFadein C 0.7 0,5]
+[charaFadein L 0.7 0,-220]
+[charaMoveScale C 1.25 14.0]
+[charaMoveScale L 1.25 14.0]
+[charaMove C 0,10 14.0]
+[charaMove L 0,-260 14.0]
+[wt 0.7]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V820]
+[#旧:ふる]く異なる[#宙:ソラ]は契約により新しき宙へ！[r][#獣:ケモノ]の鎖は女神のドレスに！[wait tVoice]
+[k]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V830]
+ごきげんようマスター！[r]人呼んでスペース・エレシュキガル、[wait tVoice]
+[k]
+
+[charaFace C 10]
+[charaMoveScale C 1.3 0.2]
+[charaMoveScale L 1.3 0.2]
+[charaMove C 0,10 0.2]
+[charaMove L 0,-283 0.2]
+[fowardEffect bit_talk_41_fs]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V840]
+あまりにも良く出来たから、[r]チョコレートの説明がしたくてやって来たわ！[wait tVoice]
+[k]
+
+
+[charaFace A 4]
+
+？1：[FFFFFF]？[-]
+？2：チョコレートの説明……とは？
+
+？！
+
+[messageOff]
+[charaFadeout C 0.6]
+[charaFadeout L 0.6]
+[fowardEffectDestroy bit_talk_41_fs]
+[wt 0.6]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V850]
+ふふ。[r]何もわからない、という顔ね。わかります。[wait tVoice]
+[k]
+
+[charaTalk on]
+[charaFace A 7]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V860]
+自分で言うのもなんだけど、[r]ちょっとレベル高すぎたものね……[wait tVoice]
+[k]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V870]
+芸術をいちいち説明するのはそれこそ[r]芸術の価値を[#貶:おとし]めてしまうけど、[wait tVoice]
+[k]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V880]
+このチョコレートの真価を知らないまま[r]食べてしまうのは人類の進化損失だもの……[wait tVoice]
+[k]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V890]
+ちょっとドヤ顔でうざいと思われるのも、[r]今回は仕方ないと受け入れるわ……[wait tVoice]
+[k]
+
+？1：うざくないよ
+
+[messageOff]
+[charaFace A 6]
+[wt 1.0]
+
+？2：したいんだね？
+
+[messageOff]
+[charaFace A 13]
+[wt 1.0]
+
+？！
+
+[bgmStop BGM_EVENT_113 1.5]
+[charaFace A 3]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V900]
+そうでしょう、そうでしょう！[r]なので説明を始めます！[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale C 1.2]
+[charaScale L 1.2]
+[charaScale N 1.1]
+[charaFace C 0]
+[charaFadein C 0.6 200,10]
+[charaFadein L 0.6 0,-230]
+[wt 0.8]
+
+[bgm BGM_AMAZONES 0.1]
+
+[charaFadein N 0.5 -260,-50]
+[wt 1.2]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V910]
+このチョコレートは私の武器でありオーラである[r]ビーストフラッシュをカタチにしたもの。[wait tVoice]
+[k]
+
+[charaFace C 1]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V920]
+厄を[#祓:はら]い（悪運を美味しくいただき）、[r]富を招き（金持ちになるくらい働かせ）、[wait tVoice]
+[k]
+
+[charaFace C 2]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V930]
+悪を倒し（より強い悪逆で立場を奪い）、[r]人を信じ（裏切りは死より怖ろしい目にあうぞ）、[wait tVoice]
+[k]
+
+[charaFace C 10]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V940]
+愛を築く（大好き＆大好き）という、[r]宇宙最強にして普遍の御利益５大権能！[wait tVoice]
+[k]
+
+[charaFace C 4]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V950]
+まあ、地球で言うラッキー・ビーストのようなものね。[r]それぞれ名前があって、[wait tVoice]
+[k]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V960]
+『頭角のウグ・ディリム』『呼吸するキリカ』[r]『空洞のズィ』『骨を組むアティ』『脂肉のザグ』[wait tVoice]
+[k]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V970]
+と言うの。私が攻撃する時に現れてるでしょ？[wait tVoice]
+[k]
+
+？1：なるほど、勉強になる
+？2：ありがとう。食べながら覚える[&よ:ね]
+
+？！
+
+[messageOff]
+[charaFace C 6]
+[wt 1.4]
+
+[charaFace C 13]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V980]
+ま、まあ、絶対に覚えてほしい訳じゃないから、[r]ほどほどにね。[wait tVoice]
+[k]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V990]
+そういう名称なんだって認識してもらえる[r]だけでいいです。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 13]
+
+[charaScale B 1.2]
+[charaPut B 200,10]
+[charaFadeTime B 0.4 0.5]
+[se ad971]
+[wt 0.5]
+[seStop ad971 1.0]
+[charaFadeout B 1.0]
+[wt 1.0]
+[charaPut B 200,10]
+[charaFadeTime B 0.3 0.5]
+[se ad971]
+[wt 0.5]
+[seStop ad971 1.0]
+[charaFadeout B 1.0]
+[wt 1.4]
+
+[charaFadeout N 0.7]
+[charaFadeout C 0.7]
+[charaFadeout L 0.7]
+[wt 1.0]
+
+[charaFaceFade A 4 0.2]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V1000]
+と、時間切れみたい。[r]言いたい事も言えたし元の私に戻るわ。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V1010]
+せっかくの水着なんだし。バレンタインには[r]宇宙より海辺の方が相応しいもの。[wait tVoice]
+[k]
+
+＠スペース・エレシュキガル
+[tVoice ValVoice_3300200 0_V1020]
+だぁ～か～らぁ……このあとは何をするべきか、[r]分かってるわよねマスター？[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.5]
+[se ade406]
+[fadeout white 1.5]
+[bgmStop BGM_AMAZONES 1.5]
+[wait fade]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet A 33002000 1 スペース・エレシュキガル]
+[charaSet B 33002000 1 スペース・エレシュキガル_白シルエット]
+[charaSet C 33002000 1 スペース・エレシュキガル_演出用2]
+[sceneSet J 197700 1]
+[sceneSet K 197700 1]
+[sceneSet L 197700 1]
+[sceneSet M 197700 1]
+
+[scene 197700]
+
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V1030]
+突然のスペースは疲れるのだわ……[r]まだまだ修業が必要ね……[wait tVoice]
+[k]
+
+[bgm BGM_MIZUGI_2020_1 0.1]
+[charaFaceFade A 11 0.2]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V1040]
+驚かせてごめんなさい。[r]でもスペースな私で話せて良かった。[wait tVoice]
+[k]
+
+[charaFaceFade A 32 0.2]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V1050]
+今回のチョコレートはスペースありきだから。[r]楽しく説明できたでしょ？[wait tVoice]
+[k]
+
+？1：もちろん。面白い本心もバッチリ聞けた
+
+？！
+
+[charaFace A 24]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V1060]
+お、面白い本心？[r]何か口を滑らせましたっけ、私！？[wait tVoice]
+[k]
+
+？1：このあと何をしてほしいかって
+
+？！
+
+[charaFaceFade A 5 0.2]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V1070]
+お[charaShake A 0.02 3 3 0.6]、覚えがないのですけどぉ……！[wait tVoice]
+[k]
+
+
+？1：せっかく水着なんだから、泳ぎに行こう！
+
+？！
+
+[messageOff]
+[charaFaceFade A 19 0.2]
+[wt 1.4]
+[charaFace A 16]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V1080]
+ええ、もちろん！[r]ドバイじゃ角を気にして遊べなかったものね！[wait tVoice]
+[k]
+
+[charaFaceFade A 28 0.2]
+
+＠エレシュキガル
+[tVoice ValVoice_3300200 0_V1090]
+行きましょう、マスター！[r]冥界の女神は泳ぎも上手なところ、見せてあげる！[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout white 2.0]
+[bgmStop BGM_MIZUGI_2020_1 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[scene 10001]
+[wt 1.0]
+
+[fadein white 0.1]
+[wait fade]
+
+[fadeout black 1.0]
+[wait fade]
+
+[label select01_end]
+
+[wt 0.5]
+[soundStopAll]
+[end]

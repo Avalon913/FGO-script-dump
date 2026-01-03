@@ -1,0 +1,1167 @@
+
+
+＄94-07-36-09-1-0
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1054000 1 ガレス]
+[charaSet B 28003000 1 レディ・アヴァロン]
+[charaSet C 6026300 1 燕青]
+[charaSet D 1098243000 1 エリセ]
+[charaSet E 1046300 1 伊吹童子]
+[charaSet F 98002000 1 フォウ]
+[charaSet G 99502600 1 マシュ]
+[charaSet H 10010000 1 蘆屋道満]
+[charaSet I 1098247500 1 武則天]
+[charaSet J 6043000 1 オルトリンデ]
+[charaSet K 6045300 1 リンド]
+[charaSet L 1098243700 1 アークティックフィッシュＡ1]
+[charaSet M 1098243700 1 アークティックフィッシュＡ2]
+[charaSet N 1098243700 1 アークティックフィッシュＡ3]
+
+[sceneSet O 160900 1]
+[charaScale O 1.4]
+[sceneSet P 160900 1]
+[charaScale P 1.4]
+
+[charaSet Q 5009000 1 エフェクト用1]
+[charaSet R 5009000 1 エフェクト用2]
+[charaSet S 5009000 1 エフェクト用3]
+[charaSet T 98115000 1 エフェクト用4]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[effect bit_sepia01_depth_fs]
+[scene 126500]
+[blur lens 0.1 2 10]
+[wt 0.3]
+
+[se ad135]
+[seVolume ad135 0 0]
+[seVolume ad135 1.0 0.2]
+[wipein openEye 1.0 1.0]
+[wait wipe]
+
+[wt 0.3]
+
+[wipeout openEye 0.5 1.0]
+[wait wipe]
+
+[blurOff]
+[wt 0.2]
+
+
+[wipein openEye 1.5 1.0]
+[seVolume ad135 1.5 0.8]
+[wait wipe]
+
+[wt 0.5]
+
+[seStop ad135 1.5]
+[wt 1.5]
+
+[bgm BGM_EVENT_79 0.1]
+
+＠
+[#一年巡]前[line 3]
+[k]
+
+[messageOff]
+[se ad1042]
+[seVolume ad1042 0 0]
+[seVolume ad1042 1.0 1.0]
+[wt 2.0]
+
+[seStop ad1042 0.1]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠伊吹童子
+ほう。
+[k]
+
+＠伊吹童子
+[#斯様:かよう]な場所さえ、漂白されるか。
+[k]
+
+＠伊吹童子
+極北であれば或いは、とも思うたが。
+[k]
+
+[charaFace E 6]
+
+＠伊吹童子
+ふむ。[r]……やはり白か。
+[k]
+
+[messageOff]
+[charaFace E 12]
+[wt 1.0]
+[charaFace E 9]
+
+＠伊吹童子
+見渡す限りの真白。
+[k]
+
+[charaFace E 7]
+
+＠伊吹童子
+よい。[r]これはこれで、やりようもある。
+[k]
+
+＠伊吹童子
+[line 3]そうとも。なあ、ここで[#佳:よ]いのではないか？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+
+[wt 1.3]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+
+＠蘆屋道満
+御意。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠伊吹童子
+ではここに作る。[r]極北に、余は特異点なるものを作り出そうぞ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠蘆屋道満
+御身であれば叶いましょう。[r]畏れ多く荒ぶる御方。
+[k]
+
+[charaFaceFade H 8 0.3]
+
+＠蘆屋道満
+しかし拙僧驚きましたぞ。
+[k]
+
+＠蘆屋道満
+それなる荒ぶる霊基、[r]カルデアには持ち込んでおらぬとばかり……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+
+＠伊吹童子
+何、気紛れだ。
+[k]
+
+[branchQuestClear lblClear 3000716]
+
+[branch lblConf]
+
+[label lblClear]
+
+[charaFace E 0]
+
+＠伊吹童子
+[#此度:こたび]はどうする？[r]おまえ、また獣を目指してみせるか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+
+＠蘆屋道満
+は。まさかまさか、ソソソソソお戯れを。[r]他はまだしもカーマ殿に並ぶはぞっとしません。
+[k]
+
+[charaFaceFade H 8 0.3]
+
+＠蘆屋道満
+もとい。それはリンボなる者の所業では？
+[k]
+
+[charaFace H 9]
+
+＠蘆屋道満
+拙僧とんと[#与:あずか]り知らぬことにて。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠伊吹童子
+ふ。ふ。[r]何処までも笑わせてくれる。
+[k]
+[branch lblConf]
+
+[label lblConf]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+[wt 1.0]
+
+[charaFace H 0]
+
+＠蘆屋道満
+は[line 3][r]さて、それでは如何様な特異点になさいますのか。
+[k]
+
+＠蘆屋道満
+聖杯に命ずるもよし。[r]何らか不足であれば、拙僧にお命じ下さるもよし。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠伊吹童子
+フ[line 3]
+[k]
+
+＠伊吹童子
+ならば探せ。[r]ただちに、速やかに、愛深き者を探せ。
+[k]
+
+＠伊吹童子
+業でもよい。[r]怨でもよい。
+[k]
+
+＠伊吹童子
+[#慟哭:どうこく]の代わりに愛を求めし者にこそ、[r][#これ]は相応しかろう。
+[k]
+
+[messageOff]
+[charaPut Q 45,0]
+[charaEffect Q bit_talk_20]
+[cueSe Battle bas2]
+
+[wt 2.3]
+[charaPut Q 2000,2000]
+[charaEffectStop Q bit_talk_20]
+[wt 0.1]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[charaEffect Q bit_talk_20]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠蘆屋道満
+聖杯。御身が扱わずとも宜しいので？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut Q 45,0]
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠伊吹童子
+余は[#神:カミ]である。[r]この地で聖杯を得てより後には、[#御霊:みたま]は荒ぶるばかり。
+[k]
+
+＠伊吹童子
+荒ぶる[#御霊:みたま]はあらゆるモノを顧みぬ。[wt 0.5][charaFace E 13][r]もっとも[line 3]
+[k]
+
+[charaFace E 7]
+
+＠伊吹童子
+神とは本来、左様な機能であろうがな？
+[k]
+
+[charaPut Q 2000,2000]
+[charaEffectStop Q bit_talk_20]
+[wt 0.1]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[charaEffect Q bit_talk_20]
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+
+＠蘆屋道満
+御意。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut Q 45,0]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠伊吹童子
+余はここに特異点を作る。[r]だが、それを彩るのは余ではない。
+[k]
+
+[charaFace E 14]
+
+＠伊吹童子
+我が特異点を彩る者は、愛深き者でなくてはな。[r]ふ、ふ……。
+[k]
+
+[messageOff]
+[se ade446]
+[seVolume ade446 0 0]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ade446 0.3 0.5]
+[seVolume ad556 0.3 0.5]
+[charaEffect E bit_talk_charge_red]
+[effect bit_talk_lightning_01r_fs]
+[wt 2.5]
+
+[seStop ade446 1.0]
+[seStop ad556 1.0]
+[se adm20]
+[wt 0.3]
+
+[fadeout white 1.5]
+[wait fade]
+
+[charaPut Q 2000,2000]
+[charaEffectStop Q bit_talk_20]
+[charaEffectStop E bit_talk_charge_red]
+[charaChange E 7043002 3 normal 0]
+[charaSet H 1098248400 1 蘆屋道満]
+[se ad39]
+[se ad574]
+[wt 1.5]
+
+[effectStop bit_talk_lightning_01r_fs]
+[seStop ad39 1.0]
+[fadein white 1.5]
+[wait fade]
+
+[wt 0.4]
+
+＠伊吹童子
+[line 3]さあ、愛深き者を此処へ。
+[k]
+
+＠伊吹童子
+白紙の大地に永遠の楽園を彩ってみせるがいい。[r]我が[#御霊:みたま]を荒々しく、震えさせてみせよ。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_79 1.0]
+[wait fade]
+
+[effectStop bit_sepia01_depth_fs]
+[charaFadeout E 0.1]
+[scene 10000]
+[wt 0.5]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 160900]
+[blur lens 0.1 2 4]
+[wt 0.3]
+
+[wipein openEye 1.0 1.0]
+[wait wipe]
+
+[wt 0.3]
+
+[wipeout openEye 0.5 1.0]
+[wait wipe]
+
+[blurOff]
+[wt 0.2]
+
+[wipein openEye 1.5 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_81 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ガレス
+……マスター？
+[k]
+
+？1：何秒だった？
+？2：何秒、[&自分:わたし]は[#微睡:まどろ]んでた？
+？！
+
+[charaFace A 0]
+
+＠ガレス
+噂のレムレム状態だったんですね！[r]いえ、ご安心を。時間にして3.2秒ほどです。
+[k]
+
+[charaFace A 5]
+
+＠ガレス
+状況に変化なし。道満さんは笑っています。[r]そして私たちの眼前には、敵性反応ばりばりの……
+[k]
+
+[charaFace A 2]
+
+＠ガレス
+神霊・伊吹童子さんがいます！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 1.0]
+
+[charaFace E 11]
+[wt 1.0]
+
+？1：[line 3]伊吹童子
+？！
+
+＠伊吹童子
+永遠の夏の楽園[line 3]
+[k]
+
+＠伊吹童子
+そうか、そうか。気に入らぬか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠燕青
+……はい？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠伊吹童子
+夏を拒みはすまい。[r]おまえたちは、いつも、夏を軽やかに楽しもう。
+[k]
+
+＠伊吹童子
+ならば、我が楽園を楽しめなんだか。
+[k]
+
+[charaFace E 0]
+
+＠伊吹童子
+[line 3]いいや違う。おまえたちは、永遠にこそ罪を見る。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+
+＠蘆屋道満
+……。[r]……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠伊吹童子
+何故だ？
+[k]
+
+＠伊吹童子
+真の永遠は、ない。
+[k]
+
+＠伊吹童子
+人だけではなく、神さえ同じく。
+[k]
+
+＠伊吹童子
+星も、月も、[#広大無辺:こうだいむへん]の宇宙さえも[r]何ひとつとして永遠のモノはない。
+[k]
+
+＠伊吹童子
+だとしても。だとしてもだ。[r]永遠と[#嘯:うそぶ]く意気さえなくてなんとする。
+[k]
+
+
+＠伊吹童子
+ここは永遠を目指す特異点。[r]人理が終わろうと、星が白紙と化そうと、
+[k]
+
+＠伊吹童子
+永遠の楽園を目指すのだ。[r]そのように在れと、余が決めた。
+[k]
+
+＠伊吹童子
+それの、何が罪だ？
+[k]
+
+[messageOff]
+[charaFace E 9]
+[wt 1.0]
+
+[charaFaceFade E 3 1.0]
+[wt 1.0]
+
+＠伊吹童子
+[line 6]ねえ、何が悪いのかしらね？
+[k]
+
+[messageOff]
+[wt 0.5]
+
+？1：永遠のことはよくわからない
+？！
+
+[wt 0.5]
+
+？1：でも[line 3]
+？！
+
+[wt 0.5]
+
+？1：特異点は閉じなくちゃいけない
+
+[charaFace E 9]
+
+＠伊吹童子
+……。[r]……。
+[k]
+
+？2：人理を、取り戻した後の世界のために
+
+[charaFace E 9]
+
+＠伊吹童子
+……人理か。
+[k]
+
+？！
+
+[bgmStop BGM_EVENT_81 1.5]
+
+[messageOff]
+[charaFace E 11]
+[se ade446]
+[seVolume ade446 0 0]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ade446 0.3 0.5]
+[seVolume ad556 0.3 0.5]
+
+[charaTalk depthOff]
+[charaDepth Q 1]
+[charaDepth T 2]
+
+[charaPut Q 1]
+[charaPut T 1]
+[charaEffect Q bit_talk_charge_red]
+[charaEffect T bit_talk_lightning_01r_fs]
+
+[wt 2.5]
+
+[seStop ade446 0.5]
+[seStop ad556 0.5]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut Q 2000,2000]
+[charaPut T 2000,2000]
+[charaEffectStop Q bit_talk_charge_red]
+[charaEffectStop T bit_talk_lightning_01r_fs]
+[wt 0.5]
+
+[bgm BGM_BATTLE_62 0.1]
+[wt 0.2]
+
+[se ade280]
+[seVolume ade280 0 0]
+[seVolume ade280 0.2 0.8]
+[se ade59]
+[seVolume ade59 0 0.3]
+[cueSe SE_22 22_ade785]
+[charaTalk off]
+[charaDepth L 3]
+[charaDepth M 1]
+[charaDepth N 2]
+[charaDepth Q 4]
+[charaDepth R 5]
+[charaDepth S 6]
+
+[charaPut Q 1]
+[charaEffect Q bit_talk_call_jp]
+[wt 0.8]
+[seStop ade59 0.8]
+[charaFace L 0]
+[charaFadein L 0.4 1]
+
+[wt 0.4]
+
+[se ade59]
+[seVolume ade59 0 0.3]
+[cueSe SE_22 22_ade785]
+[charaPutFSR R 380,0]
+[charaEffect R bit_talk_call_jp]
+[wt 0.2]
+[charaPutFSL S -380,0]
+[charaEffect S bit_talk_call_jp]
+[wt 0.6]
+[charaFace M 0]
+[charaFace N 0]
+[charaFadeinFSR M 0.4 340,0]
+[wt 0.2]
+[seStop ade59 1.5]
+[seStop ade280 1.5]
+[charaFadeinFSL N 0.4 -340,0]
+[wt 1.0]
+[wt 1.0]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+[charaPut Q 2000,2000]
+[charaPut R 2000,2000]
+[charaPut S 2000,2000]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ガレス
+氷の魚！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+
+＠エリセ
+スカディさんの使い魔って話じゃ……！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠レディ・アヴァロン
+スカディのものではなく、黒幕の[line 3][r]伊吹童子の使い魔、いや神使といったところかな！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠フォウ
+フォウ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠レディ・アヴァロン
+でも、アレだね。[r]ぱっと見の質感、スカディの使い魔に似せてるよね！
+[k]
+
+＠レディ・アヴァロン
+よっぽど前に出たくなかったんだ？[r]……でも、その割に顔は出してたのが妙だなあ。
+[k]
+
+[charaFace B 1]
+
+＠レディ・アヴァロン
+もしかしてあれかい。[r]バレたくないけどマスターとは絡みたいとか、
+[k]
+
+＠レディ・アヴァロン
+そんな思惑だったり？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ガレス
+乙女心というやつでしょうか？[r]分かるような分からないような[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ade655 0 0.5]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+＠氷の魚
+キシャアアアアア！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠レディ・アヴァロン
+うわこわ！　図星かなあ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ガレス
+これまで何度も妨害を行ってきたのは、[r]スカディさんではなく伊吹童子さんだった。
+[k]
+
+＠ガレス
+いえ、今は考えません。[wt 0.8][charaFace A 2][r]魔剣抜刀！
+[k]
+
+[messageOff]
+[charaSet F 1098246700 1 アネト号]
+
+[charaCrossFade A 1098243400 2 0.5]
+[se ad694]
+[se ade321]
+[wait charaCrossFade A]
+[wt 1.0]
+
+[se ad51]
+[charaFace A 5]
+
+＠ガレス
+アネト号、いくよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[cueSe SE_21 21_ade556 0 0.8]
+
+＠アネト号
+バウッ！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[cueSe SE_22 22_ade784]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth L 1]
+[charaDepth M 3]
+[charaDepth N 2]
+
+[charaFace L 0]
+[charaFace M 0]
+[charaFace N 0]
+
+[charaFadeinFSR L 0.1 290,0]
+[charaMoveFSR L 340,0 0.3]
+[wt 0.2]
+[charaFadeinFSL M 0.1 -50,0]
+[charaMove M 0,0 0.3]
+[wt 0.2]
+[charaFadeinFSL N 0.1 -390,0]
+[charaMoveFSL N -340,0 0.3]
+[wt 0.5]
+
+[cueSeStop 22_ade784 1.0]
+[wt 1.0]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+
+＠武則天
+むううう魚如きが[#妾:わらわ]の前に立ちはだかるでない！[r]調子に乗っておる伊吹童子が見えぬ！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠レディ・アヴァロン
+……サーヴァント級のお魚さんだ、いやだなあ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠マシュ
+いずれも敵性体と断定します！[r]レディ・アヴァロンさんの言う通り、英霊級の魔力です！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[wt 0.5]
+
+？1：[line 3]みんな、[&やるぞ:お願い]！
+？！
+
+[charaTalk depthOff]
+[charaDepth O 1]
+[charaDepth C 2]
+[charaDepth P 3]
+[charaDepth D 4]
+[charaDepth J 6]
+[charaDepth K 7]
+[charaDepth Q 8]
+
+[charaScale C 1.3]
+[charaScale D 1.3]
+[charaScale J 1.3]
+[charaScale K 1.3]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[charaFadein O 0.4 0,-395]
+[wt 0.6]
+
+＠燕青
+あいよ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace D 34]
+[charaFadein D 0.4 200,0]
+[charaFadein P 0.4 -260,-395]
+[charaMove D 256,0 0.4]
+[charaMove P -204,-395 0.4]
+[wt 0.6]
+[charaFadeout O 0.1]
+[charaFadeout C 0.1]
+[se ad442]
+[charaMoveReturn D 256,-10 0.3]
+[wt 0.8]
+
+[charaDepth O 5]
+[charaFace J 8]
+[charaFadein J 0.1 -200,0]
+[charaFadein O 0.4 260,-395]
+[charaMove J -256,0 0.4]
+[charaMove O 204,-395 0.4]
+[wt 0.6]
+[charaFadeout P 0.1]
+[charaFadeout D 0.1]
+
+[se ade446]
+[seVolume ade446 0 0]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ade446 0.3 0.4]
+[seVolume ad556 0.3 0.4]
+[charaPut Q 0]
+[charaEffect Q bit_talk_charge_blu]
+
+[wt 1.2]
+
+[seStop ade446 1.0]
+[seStop ad556 1.0]
+[wt 0.3]
+
+[se ad39]
+[se ad574]
+[wt 0.3]
+
+[fadeout white 1.0]
+[wait fade]
+
+[charaPut Q 2000,2000]
+[charaEffectStop Q bit_talk_charge_blu]
+[charaChange J 6045000 9 normal 0]
+[charaDepth J 9]
+[charaScale J 1.3]
+[wt 0.1]
+
+[seStop ad39 1.0]
+[fadein white 1.0]
+[wait fade]
+
+[se ad223]
+[charaPut K 2]
+[charaPut Q 2]
+[charaFace K 9]
+[charaEffect Q bit_talk_quickmove]
+[charaSpecialEffect K appearance 1 0.25]
+[wt 0.5]
+
+[se ad346]
+[charaMoveReturn K 256,-10 0.2]
+[wt 0.4]
+[charaMoveReturn J -256,-10 0.2]
+[wt 0.3]
+
+＠二人
+[line 3]戦闘同期開始。高機動戦闘準備！
+[k]
+
+[messageOff]
+[charaFadeout O 0.4]
+[charaFadeout J 0.4]
+[charaFadeout K 0.4]
+[wt 0.6]
+
+[charaScale C 1.0]
+[charaScale D 1.0]
+[charaScale K 1.0]
+
+[cueSe SE_21 21_ade655 0 0.5]
+[charaDepth L 1]
+[charaDepth M 3]
+[charaDepth N 2]
+
+[charaFace L 0]
+[charaFace M 0]
+[charaFace N 0]
+
+[charaFadeinFSR L 0.1 340,0]
+[charaFadein M 0.1 1]
+[charaFadeinFSL N 0.1 -340,0]
+＠氷の魚の群れ
+[f large]キ[messageShake 0.05 5 5 0.5]シャアアアアアアア！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_BATTLE_62 0.5 0.5]
+[wait wipe]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_BATTLE_62 0.5 1.0]
+[wait wipe]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠伊吹童子
+我が永遠の夏、[r]拒みたくば追ってこい。
+[k]
+
+＠伊吹童子
+そして我が[#御霊:みたま]を荒々しく、震えさせてみせよ。
+[k]
+
+[charaFace E 3]
+
+＠伊吹童子
+さすれば……。[r]この脆き夏、おまえの思うままにしてやるぞ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 13]
+[charaFadein H 0.1 1]
+
+＠蘆屋道満
+それでは童子殿。[#此方:こちら]へ。
+[k]
+
+[messageOff]
+[se ad60]
+[charaFadeout H 0.4]
+[wt 0.5]
+[seStop ad60 1.5]
+[wt 0.5]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_BATTLE_62 0.5 0.5]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_BATTLE_62 0.5 1.0]
+[wait wipe]
+
+[charaPut T 1]
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠マシュ
+伊吹童子さんと道満さんが移動！[r]タワー内部へ入ります！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠燕青
+そんならさっさとコレ片付けなきゃだねえ！[r][line 3]各々方、やりますか！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.5]
+
+？1：戦闘開始！
+？！
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠エリセ
+やあああああっ！
+[k]
+
+[messageOff]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut Q 1]
+[charaEffect Q bit_talk_41_fs]
+[charaMoveScale D 1.1 0.3]
+[charaMove D 0,10 0.3]
+[blur motion 0.3 4 100 0.5 0.6 0.03 100]
+[charaFadeout D 0.3]
+[wt 0.4]
+[charaPut Q 2000,2000]
+[charaEffectStop Q bit_talk_41_fs]
+[charaScale D 1.0]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_62 0.4]
+[wait fade]
+[soundStopAll]
+[end]

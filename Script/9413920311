@@ -1,0 +1,860 @@
+
+
+
+＄94-13-92-03-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098253050 1 カマソッソ]
+[charaSet B 1098257910 1 マシュ]
+[charaSet C 1098255200 1 ハベトロット]
+[charaSet D 1098257300 1 ダ・ヴィンチ]
+[charaSet E 1098253800 1 ワクチャン]
+[charaSet F 1098252900 1 テペウ]
+[charaSet G 11015000 1 ニトクリス・オルタ]
+[charaSet H 1098255300 1 ニトクリス]
+[charaSet I 1098253300 1 神官ヴクブ]
+
+[charaSet S 98115000 1 エフェクト用ダミー]
+
+[imageSet T cut443_kms 1]
+[sceneSet U 10000 1]
+[sceneSet V 174200 1]
+
+[bgm BGM_BATTLE_184 0.1]
+
+[scene 10000]
+
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[se ad240]
+[effect bit_talk_blood_stay]
+
+[wt 1.2]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 174200]
+
+[effectStop bit_talk_blood_stay]
+[effectDestroy bit_talk_blood_stay]
+
+[charaScale V 1.3]
+[charaScale U 1.3]
+[charaScale T 1.65]
+
+[charaTalk depthOff]
+
+[charaDepth V 2]
+[charaDepth U 3]
+[charaDepth T 4]
+
+[charaFadein V 0.1 -50,-200]
+[charaFadeTime U 0.1 0.6]
+
+[charaTalk T]
+[charaFace T 0]
+[charaFadein T 0.1 -50,0]
+
+[wt 0.1]
+
+[charaMove T -100,0 2.7]
+[charaMove V -100,-200 2.7]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[fadeout black 0.7]
+[wait fade]
+
+[charaTalk T]
+[charaFace T 0]
+[charaFadein T 0.1 50,-300]
+
+[charaFadein V 0.1 50,-200]
+
+[charaMove T 50,-300 0.1]
+[charaMove V 50,-200 0.1]
+[wt 0.1]
+
+[charaMove T 100,-300 2.7]
+[charaMove V 100,-200 2.7]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[fadeout black 0.7]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.05]
+[charaFadeout U 0.1]
+[charaFadeout V 0.1]
+
+[charaTalk T]
+[charaFace T 0]
+[charaFadein T 0.1 0,-250]
+[wt 0.1]
+
+[cameraMove 2.8 0,0 1.00]
+[fadein black 1.8]
+[wait fade]
+[wt 1.2]
+
+[charaShake T 0.02 2 2 0.4]
+＠カマソッソ
+オ、ォォ……ア、ハァァアア[line 3]！
+[k]
+
+[charaFadeout T 0.2]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 28]
+[charaFadein B 0.1 1]
+＠マシュ
+敵ビースト個体、存命です！[r]まだ完全には無力化できていません……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ハベトロット
+ここで決めなくちゃ後がないんだわ！[r][%1]！
+[k]
+
+？1：……わかってる！
+？2：……カマソッソ……！
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠カマソッソ
+ふぅ、ふぅぅ…………[r][line 3]、[wt 0.5][messageShake 0.05 4 3 0.3]！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[bgm BGM_BATTLE_184 0.6 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+
+[scene 170301]
+
+[charaPut H 2000,2500]
+[charaEffectEdgeBlur H FFEF20]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[bgm BGM_BATTLE_184 0.6 1.0]
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.2]
+
+[se ad952]
+[seVolume ad952 0 0.5]
+[se ad948]
+[seVolume ad948 0 0.7]
+[se ade404]
+[seVolume ade404 0 0]
+[seVolume ade404 0.4 0.2]
+
+[effect bit_talk_22]
+[charaEffectEdgeBlur G FFEF20]
+[wt 1.0]
+[wt 1.4]
+
+[se ad149]
+[se ad934]
+[fadeout white 0.3]
+[seStop ade404 0.3]
+[seStop ad948 0.3]
+[seStop ad952 0.3]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaPut G 2000,2500]
+[charaEffectEdgeBlurStop G]
+
+[charaTalk H]
+[charaFace H 17]
+[charaFadein H 0.1 1]
+[wt 1.5]
+
+[fadein white 1.0]
+[wt 0.7]
+[charaEffectEdgeBlurStop H]
+[wait fade]
+[wt 1.4]
+
+[charaShake H 0.01 1 2 0.4]
+[wt 0.9]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 0.4 1.0]
+[charaPut S 1]
+[effect bit_talk_43h_fs 0,0 V]
+[charaAttack H normal 0,-200 0.5]
+[charaFadeout H 0.5]
+[wt 0.8]
+
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[bgm BGM_BATTLE_184 0.6 0.5]
+[seStop ad556 1.0]
+[wait wipe]
+
+[effectDestroy bit_talk_43h_fs]
+[charaPut H 2000,2500]
+[charaPut S 2000,2500]
+[charaEffectDestroy S bit_talk_43h_fs]
+
+[scene 174200]
+[wt 0.6]
+
+[bgm BGM_BATTLE_184 0.6 1.0]
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 25]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+ニトクリス！？[r]意識がないのか！？
+[k]
+
+＠ダ・ヴィンチ
+あの位置、まずい！[r]谷底に落ちる！　ワクチャン、急いで！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠ワクチャン
+おおおぉ、無理でもやってみるぜぇぇぇぇえ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠カマソッソ
+ハ[line 3][wt 0.6][charaFace A 2][messageShake 0.05 4 3 0.4]クァアアアアア！
+[k]
+
+[messageOff]
+[se ade216]
+[charaMove A 0,5 0.1]
+[wt 0.2]
+[charaMove A 0,-100 0.4]
+[cueSe SE_21 21_ad1078]
+[charaDepth S 8]
+[charaDepth A 6]
+[charaPut S 1]
+[charaSpecialEffect A erasure 0,0 0.3]
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[bgmStop BGM_BATTLE_184 2.0]
+[wait wipe]
+
+[wt 0.5]
+[wait charaSpecialEffect A]
+
+[effect bit_talk_43h_fs 0,0 V]
+[charaFadeout A 0.1]
+[charaEffectDestroy S bit_talk_quickmove]
+
+
+[scene 10000]
+[wt 0.2]
+
+[charaRoll H 180]
+[charaRoll A 180]
+
+[charaTalk off]
+[charaDepth S 9]
+[charaDepth H 8]
+[charaDepth A 7]
+
+[charaPut S 1]
+[charaEffect S bit_talk_43h_fs]
+[charaScale H 1.1]
+[charaScale A 1.1]
+
+[charaFace H 17]
+[charaFadein H 0.1 0,-350]
+[charaShake H 0.01 1 1 0]
+[se ad1022]
+[seVolume ad1022 0 0]
+[wt 0.3]
+
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 0.4 0.3]
+[seVolume ad1022 0.4 0.2]
+[charaMove H 0,-450 3.2]
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[wt 2.0]
+
+[cueSe Servants_404400 m45205]
+[charaFace A 0]
+[charaFadein A 0.4 -80,-300]
+[charaAttack A normal -80,-500 0.4]
+[wt 1.0]
+
+[charaMove A -30,-500 0.25]
+[wt 0.1]
+[se ad977]
+[seVolume ad977 0 0.6]
+[charaShake H 0.02 3 4 0.35]
+[wt 1.4]
+
+[se ade338]
+[seVolume ade338 0 0.5]
+[charaAttack H normal 0,-700 0.5]
+[charaAttack A normal -30,-700 0.5]
+[charaFadeout A 0.5]
+[charaFadeout H 0.5]
+[wt 0.7]
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[seStop ad1022 0.6]
+[seStop ad556 0.6]
+[seStop ade338 1.0]
+[wait wipe]
+
+[charaRoll H 0]
+[charaRoll A 0]
+
+[charaScale H 1.0]
+[charaScale A 1.0]
+[effectDestroy bit_talk_43h_fs]
+[charaPut S 2000,2500]
+[charaEffectDestroy S bit_talk_43h_fs]
+
+[scene 174200]
+[wt 0.6]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.2]
+
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠テペウ
+カマソッソが、ニトクリスを抱いて下に？[r]しかし……今の姿は、まるで……
+[k]
+
+？1：急ごう！
+？2：……（ニトクリスを守っているように見えた……）
+
+？！
+
+[messageOff]
+[charaFadeout F 0.1]
+
+[se ad667]
+[se ad769]
+[cueSe SE_22 22_ad1210]
+[cueSe SE_22 22_ad1219]
+[cueSeVolume 22_ad1219 0 0.7]
+[wt 0.1]
+
+[fadeout black 1.5]
+[seStop ad667 1.5]
+[seStop ad769 1.5]
+[cueSeStop 22_ad1210 1.5]
+[cueSeStop 22_ad1219 1.5]
+[wait fade]
+
+[scene 10000]
+[se ad1022]
+[seVolume ad1022 0 0]
+[wt 1.5]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.5 0.4]
+[seVolume ad1022 1.5 0.4]
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+[seVolume ad556 2.0 0.1]
+[seVolume ad1022 2.0 0.1]
+
+[bgm BGM_EVENT_75 0.1]
+
+＠？？？
+この上なく愚か、と言ったのは早まったな。[r]あげく、さらに上の形容ができなくなった。
+[k]
+
+＠？？？
+心臓を自ら抜くとは。[r]オレでもそんな挑戦はせん。痛いのは怖い。
+[k]
+
+＠？？？
+……女王よ。一つ、オマエの間違いを訂正しよう。[r]オレは誰が死んでも悲しまない。
+[k]
+
+＠？？？
+種の絶滅を前にした100万の民。[r]悲涙。歓涙。[#慟哭:どうこく]。[#恍惚:こうこつ]。
+[k]
+
+＠？？？
+死なせたくない、と[#哭:な]きながら炉に身を投げる親と子。[r]お救いください、と笑いながら炉に身を投げる戦士たち。
+[k]
+
+＠？？？
+炉の底で、手足のない肉塊となった身で、[r]オレはその光景を見届け続けたが、
+[k]
+
+＠？？？
+オレの精神は平坦だった。[r]“ああ、死んだのか”程度の感想だ。
+[k]
+
+＠？？？
+ソイツの死はソイツの人生だ。
+[k]
+
+＠？？？
+目の前で命を[#捧:ささ]げられようと、[r]それまでにあった日常の光景と何も変わらない。
+[k]
+
+＠？？？
+いつもそうだった。親であれ妻であれ友であれ、[r]誰が死のうと、オレに悲しみは訪れなかった。
+[k]
+
+＠？？？
+作り物の物語には、感涙する癖にな。
+[k]
+
+＠？？？
+オレは本当に、[r]誰が死のうと罪の意識を持たなかった。
+[k]
+
+＠？？？
+他人の死にも、自分の死にも不感症だ。[r]だからこそ王になった。
+[k]
+
+＠？？？
+[line 3]本当に。何をすれば、[#人間:み　な]のように[r]涙する事ができるのか、考えながら。
+[k]
+
+＠？？？
+おかしな話だ。[r]そのオレが、故も知らぬ、ひとりの女を案じている。
+[k]
+
+＠？？？
+……ああ、しかし。[r]思い出せる、とは、いい事だ。
+[k]
+
+＠？？？
+過ぎ去った時間が目の前にある。[r]失ったものが何度でも何度でも、美しく蘇る。
+[k]
+
+[bgmStop BGM_EVENT_75 2.0]
+＠？？？
+[line 3]なるほど。
+[k]
+
+＠？？？
+[line 3]永劫とはいかないが[line 3]
+[k]
+
+＠？？？
+[line 3]過ぎた後も生き続けるとは、こういう事か。
+[k]
+
+[messageOff]
+[seVolume ad1022 0.8 0.7]
+[seVolume ad556 0.8 0.8]
+[wt 1.2]
+
+[se ade338]
+[wt 0.8]
+
+[seStop ade338 0.2]
+[seStop ad1022 0.2]
+[seStop ad556 0.2]
+
+[cueSe Servants_9943340 m06312]
+[cueSeVolume m06312 0 0.5]
+[cueSe Servants_9944030 m89921]
+[cueSeVolume m87721 0 0.5]
+[cueSe SE_23 23_ad1243]
+[cueSeVolume 23_ad1243 0 0.5]
+
+[wt 2.5]
+[seStop 23_ad1243 2.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+
+[scene 174100]
+
+[se ad667]
+[seVolume ad667 0 0]
+[se ad769]
+[seVolume ad769 0 0]
+[cueSe SE_22 22_ad1210]
+[cueSeVolume 22_ad1210 0 0]
+[cueSe SE_22 22_ad1219]
+[cueSeVolume 22_ad1219 0 0]
+[wt 2.0]
+
+[seVolume ad667 1.0 0.5]
+[seVolume ad769 1.0 0.5]
+[cueSeVolume 22_ad1210 1.0 0.5]
+[cueSeVolume 22_ad1219 1.0 0.3]
+[fadein black 1.0]
+[wait fade]
+[wt 1.5]
+
+[seStop ad667 0.3]
+[seStop ad769 0.3]
+[cueSeStop 22_ad1210 0.3]
+[cueSeStop 22_ad1219 0.3]
+[wt 0.6]
+
+[charaTalk D]
+[charaFace D 26]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+このあたりで間違いない！[r]途中で気がついていてくれればいいんだが[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+
+[charaFace B 1]
+＠マシュ
+いました、ニトクリスさんです！[r]外傷はありません、ご無事のようです！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠ニトクリス
+………………。
+[k]
+
+？1：ニトクリスーー！
+？2：無事で良かった！
+？！
+
+[messageOff]
+[charaFace H 3]
+[wt 1.0]
+
+[bgm BGM_EVENT_116 0.1]
+
+[charaFace H 6]
+＠ニトクリス
+心配をかけてしまったようですね。[r]魔力切れで気を失い、落下してしまいましたが、
+[k]
+
+＠ニトクリス
+途中で目を覚まし、なんなく着地できました。[r]これもオシリスのご加護ですね。
+[k]
+
+？1：それは良かった、けど……
+？2：カマソッソは……？
+
+？！
+
+[charaFace H 9]
+＠ニトクリス
+カマソッソがどうかしましたか？[r]私が目覚めた時は影も形もありませんでした。
+[k]
+
+＠ニトクリス
+そもそも皆さんが頂上で討伐されたでしょう？[r]なら、それでいいのです。
+[k]
+
+＠ニトクリス
+……彼が暗闇を彷徨う事は、もう永遠にありません。
+[k]
+
+[messageOff]
+[charaFace H 7]
+[wt 1.0]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠テペウ
+確かにカマソッソの羽音は聞こえません。[r]洞窟に満ちていた[#蝙蝠:こうもり]の気配もない。
+[k]
+
+[charaFace F 2]
+＠テペウ
+ミクトランにおける最大の脅威、[r]死神カマソッソは皆さんの手で打ち倒されました。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+＠ニトクリス
+…………。
+[k]
+
+[charaFace H 0]
+＠ニトクリス
+それより！　見事な勝利でしたね、[r]マシュ、[%1]。
+[k]
+
+＠ニトクリス
+それでこそ我が同盟者。私も鼻が高いです！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+ああ、ミクトラン内で発展した人類圏限定とはいえ、[r]カマソッソはクラス・ビーストだった。
+[k]
+
+＠ダ・ヴィンチ
+我々だけで撃破できたのは奇跡に等しい。[r]それもキミの助けあってこそだ、ニトクリス。
+[k]
+
+＠ダ・ヴィンチ
+キングプロテアたち同様、[#異霊:オルタ]化していたけど[r]あれは限定的なものだったようだね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠ニトクリス
+もちろんです。アヌビス神をこの身に[#招:まね]くなど、[r]冥界でなければ耐えられません。
+[k]
+
+＠ニトクリス
+[FFFFFF]？[-]　どうかしましたか、同盟者？
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[wt 0.1]
+[fadeout white 0.6]
+[seStop ad788 1.0]
+[bgm BGM_EVENT_116 0.6 0.5]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[scene 176100]
+
+[cameraFilter gray]
+[wt 0.7]
+
+[fadein white 0.6]
+[wait fade]
+[wt 1.5]
+
+[fadeout white 0.6]
+[wait fade]
+
+[scene 174100]
+
+[cameraFilter normal]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.7]
+
+[bgm BGM_EVENT_116 0.6 1.0]
+[fadein white 0.6]
+[wait fade]
+[wt 0.6]
+
+？1：……（本当は、あんな事してほしくなかったけど）
+？2：……（それはニトクリスの決意を損なう発言だ）
+？！
+
+[wt 0.5]
+
+？1：[&いや:ううん][line 3]ありがとう、ニトクリス
+？！
+
+[messageOff]
+[charaFace H 1]
+[wt 1.5]
+
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_116 1.5]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[scene 151001]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.2]
+
+[wipeout leftToRight 1.0 1.0]
+[wt 0.3]
+[cueSe SE_22 22_ad1167]
+[wait wipe]
+
+[scene 169601]
+[wt 1.5]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.4 1]
+[wt 0.8]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠神官ヴクブ
+見張りのディノスすら居なくなった。[r]能無しどもがそろって死んだ結果だ。馬鹿め。
+[k]
+
+＠神官ヴクブ
+恐竜王は死に、闘士職も全滅。[r]チチェン・イツァーはこれで終わりだな。
+[k]
+
+[charaFaceFade I 2 0.2]
+＠神官ヴクブ
+いや、終わりなのはこの街だけではない。
+[k]
+
+＠神官ヴクブ
+カルデアにしろクリプターにしろ、[r]ヤツらを野放しにした以上、じき絶滅がやってくる。
+[k]
+
+[charaFace I 1]
+＠神官ヴクブ
+そんな道理も分からん……いや、分かった上で[r]放置するのがディノスの生態だ。
+[k]
+
+＠神官ヴクブ
+その強さ故、生命欲も危機感もない。[r]我らは死ぬまで、いや、どれほど生きても同じなのだ。
+[k]
+
+＠神官ヴクブ
+他者と自分を比較すらしない知性に、[r]発展の芽はあり得ない。
+[k]
+
+[charaFace I 0]
+＠神官ヴクブ
+一年、一ヶ月、一日、一瞬。
+[k]
+
+＠神官ヴクブ
+この恐ろしさを知るディノスは、結局、[r]短命種である私だけだったな。
+[k]
+
+[charaFace I 4]
+＠神官ヴクブ
+まあいい。[r][#同胞:ディノス]を批判したところで何の得もない。
+[k]
+
+＠神官ヴクブ
+重要なのは生存し、改革する事だ。[r]メヒコシティにはイスカリが用意した私の席がある。
+[k]
+
+[charaFaceFade I 6 0.2]
+＠神官ヴクブ
+オセロトルであっても神官は必要な存在らしい。[r]あの猿どもを使って、私だけでも生き延びてやる。
+[k]
+
+[messageOff]
+[se ad7]
+[seVolume ad7 0 0.6]
+[se ad1006]
+[seVolume ad1006 0 0.6]
+[wt 0.05]
+[charaDepth S 9]
+[charaPut S 1]
+[charaEffect S bit_talk_quickmove]
+[charaSpecialEffect I erasureReverse 0,0 0.5]
+[wt 0.7]
+
+[se ade437]
+[wt 0.9]
+[se ade437]
+[seVolume ade437 0 0.5]
+[wt 0.4]
+
+[fadeout black 2.0]
+[wt 0.5]
+[se ade437]
+[seVolume ade437 0 0.2]
+[bgmStop BGM_EVENT_70 2.0]
+[seStop ade437 1.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

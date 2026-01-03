@@ -1,0 +1,952 @@
+
+＄94-08-80-52-1-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098275300 1 鈴鹿]
+[charaSet B 1098276000 1 クロエ]
+[charaSet C 1098274400 1 アルトリア・キャスター]
+
+[charaSet D 6046001 1 呼延灼]
+[charaSet E 6026300 1 燕青]
+[charaSet F 28004000 1 九紋竜エリザ]
+[charaSet G 4049001 1 黄飛虎]
+
+[charaSet H 1020300 1 ランスロット]
+[charaSet I 2008300 1 トリスタン]
+[charaSet J 1007400 1 ガウェイン]
+
+
+[charaSet K 6026300 1 燕青（演出用）]
+[charaSet L 28004000 1 九紋竜エリザ（演出用）]
+[sceneSet M 147900 1]
+
+[charaSet Y 5009000 1 エフェクト用ダミー]
+[sceneSet Z 10000 1]
+
+
+[backEffect bit_talk_spotlight02 0,0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_92 0.1]
+
+＠
+[line 3]物語には色んな形があるし、[r]物語が作られる理由も様々だ。
+[k]
+
+＠
+崇高な動機もあれば、ちょっと引く動機もある。
+[k]
+
+＠
+さて、ここで問題。[r]今から私が描くものは引かれるだろうか。
+[k]
+
+＠
+……うん、間違いなく引かれると思う。[r]何故なら、私だったらドン引きするからだ。
+[k]
+
+＠
+でも、描きたくて描きたくてたまらないのだ。
+[k]
+
+＠
+たとえ、後で消滅するほどの精神ダメージを[r]叩き込まれたとしても。
+[k]
+
+[messageOff]
+[effect bit_talk_spotlight]
+[wt 0.15]
+
+[charaFilter D silhouette 00000080]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 1.0 1]
+[wt 1.2]
+
+＠
+私は[line 3]私を、主役にしたい。[r]しかも、ラブコメ漫画で。
+[k]
+
+＠
+……。[r]……しかも、ラブコメ漫画で！！
+[k]
+
+＠
+マズいな……我ながら、[r]ちょっと正気の沙汰じゃないな……。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_92 1.5]
+[wait fade]
+
+[effectDestroy bit_talk_spotlight]
+[backEffectDestroy bit_talk_spotlight02]
+
+[charaFilter D normal]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth E 4]
+
+[fadein black 0.5]
+[wait fade]
+
+[se adm21]
+[charaFace F 23]
+[charaFadeinFSL F 0.5 -256,-500]
+[charaMoveFSL F -256,50 0.3]
+[wt 0.3]
+[charaMoveFSL F -256,0 0.2]
+[wt 0.4]
+
+[charaFace E 0]
+[charaFadeinFSR E 0.4 2]
+[wt 0.9]
+
+[charaTalk on]
+＠九紋竜エリザ
+あらすじなのだわ！
+[k]
+
+[charaFace F 6]
+
+＠九紋竜エリザ
+反サバフェスどーめい、[r]あたちたち『ヨロシク[#梁山泊:りょうざんぱく]』は改めて……。
+[k]
+
+[charaFace F 25]
+
+＠九紋竜エリザ
+もういっさつ、[r]あるとりあでない本を出すことに決めたのだわ！
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+
+＠燕青
+で、とりあえずたった今、[r]呼延灼に描きたい本は何かと聞いてみたが……。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[scene 147900]
+
+[pictureFrame cut063_cinema]
+
+
+[subCameraOn 1]
+[charaLayer K sub #A]
+[charaLayer L sub #A]
+
+[subCameraFilter #A through]
+
+[charaScale K 0.8]
+[charaScale L 0.8]
+[charaFace K 4]
+[charaFadeinFSSideR K 0.1 400,-200]
+
+[charaFace L 0]
+[charaFadeinFSSideL L 0.1 -400,-180]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,-50]
+[wt 0.2]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠呼延灼
+も、もくひけんを。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 0,-50]
+
+＠黄飛虎
+うむ、黙秘か。[wt 0.6][charaFace G 4][r]……どうやって本を作れと？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 0,-50]
+
+＠呼延灼
+フィ、フィーリングー……ですかね？[wt 1.0][charaFace D 8][r]にへへ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠燕青
+にへへ、ではなく。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_7 1.0 0.4]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth Z 9]
+
+[charaPut Z 1]
+[charaFadeTime Z 0.8 0.5]
+[wt 0.9]
+
+[subRenderFadein #A 0.4 0,0]
+[wt 0.7]
+
+[charaTalk on]
+＠K：燕青
+などと言うので、手を替え品を替え、[r]どうにか聞き出すことにした。
+[k]
+
+[charaFace K 4]
+＠K：燕青
+ちゃちゃっと話しなさいなって、[r]ちゃちゃっと。
+[k]
+
+[charaTalk L]
+[charaFace L 8]
+＠L：九紋竜エリザ
+そちて！
+[k]
+
+[messageOff]
+[wipeout rollRight 0.8 1.0]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout Z 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.8 1.0]
+[wipein rollLeft 0.8 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠呼延灼
+わ、私が……主人公の……[r]ラブ……コメ……漫画、を……！！
+[k]
+
+[charaPut Y 0,0]
+[charaEffect Y bit_talk_41_back]
+[charaFace D 2]
+＠呼延灼
+[f large]描きたい！！
+[k]
+
+
+[messageOff]
+[bgm BGM_EVENT_7 1.0 0.4]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth Z 9]
+
+[charaPut Z 1]
+[charaFadeTime Z 0.8 0.5]
+[wt 0.9]
+
+[charaFace L 0]
+[charaFace K 0]
+[subRenderFadein #A 0.4 0,0]
+[wt 0.6]
+
+[charaTalk on]
+＠K：燕青
+初手感想。[r]『そう来たか……』だったな。
+[k]
+
+[charaTalk L]
+[charaFace L 7]
+
+＠L：九紋竜エリザ
+あたち、呼延灼ならきっと素敵なまんがに[r]なると思うわ！
+[k]
+
+[charaTalk K]
+[charaFace K 4]
+
+＠K：燕青
+あるいは、死ぬほど羞恥に身悶える[r]代物になるかだが……。
+[k]
+
+[charaFace K 1]
+
+＠K：燕青
+ま、それは呼延灼次第ってことで！
+[k]
+
+[charaTalk L]
+[charaFace L 23]
+
+＠L：九紋竜エリザ
+がんばるのだわー！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+
+[pictureFrame]
+
+[charaFadeout D 0.1]
+[charaFadeout Z 0.1]
+[charaPut Y 2500,2500]
+[charaEffectStop Y bit_talk_41_back]
+
+[subRenderFadeout #A 0.1]
+
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[wt 0.2]
+
+[subCameraOff]
+[charaLayer L normal]
+[charaLayer K normal]
+[charaScale L 1.0]
+[charaScale K 1.0]
+[wt 0.3]
+
+[charaTalk depthOn]
+
+[scene 147900]
+
+[charaTalk depthOff]
+[charaDepth B 2]
+[charaDepth D 3]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[cameraMove 0 0,0 1.01]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.3]
+
+[bgm BGM_EVENT_28 0.1]
+
+？1：なるほどラブコメ……
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠クロエ
+呼延灼ならではの長所……いえ、[r]持ち味を活かしてきたわね！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠呼延灼
+はい、マスター。[r]それでその、今回も……お手伝いを……。
+[k]
+
+[charaFace D 2]
+
+＠呼延灼
+していただければ、と思うのですが。[r]いかがでしょうか！
+[k]
+
+
+
+[messageOff]
+[cameraMove 0.2 0,10 1.01]
+[wt 0.2]
+[cameraMove 0.2 0,0 1.01]
+[wt 0.2]
+[cameraMove 0.2 0,10 1.01]
+[wt 0.2]
+[cameraMove 0.2 0,0 1.01]
+[wt 0.6]
+
+[charaFace D 1]
+
+＠呼延灼
+ありがとうございます！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+＠クロエ
+[line 3]！？[r]待って、それはアクセル踏みすぎ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ade491]
+[charaMove B -100,0 0.4]
+[charaFadeout B 0.4]
+[seStop ade491 0.8]
+[wt 0.9]
+
+
+[charaFace D 1]
+[charaFadein D 0.1 -150,0]
+[wt 0.15]
+
+[se ade491]
+[charaFadein B 0.4 250,0]
+[charaMove B 150,0 0.4]
+[wt 0.4]
+[seStop ade491 0.2]
+[wt 0.3]
+
+[charaTalk on]
+＠クロエ
+呼延灼、ちょっと！[r]ちょっと話があるんだけど！
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+＠呼延灼
+はい？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace B 7]
+[charaMove B 100,0 0.25]
+[wt 0.15]
+[se adm69]
+[wt 0.05]
+[charaFace D 4]
+[charaShake D 0.01 1 1 0.3]
+[wt 0.9]
+
+[charaTalk on]
+＠クロエ
+マスターはそこにいてね！[r]鈴鹿さん、お願い！
+[k]
+
+[messageOff]
+[charaTalk A]
+
+[subCameraOn 1]
+[charaLayer A sub #A]
+[charaLayer M sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask11 4 0,0,0,0]
+
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth A 2]
+
+[charaTalk A]
+[charaScale A 1.0]
+[charaScale M 1.2]
+[charaFace A 31]
+[charaFadein A 0.1 570,110]
+[charaFadein M 0.1 -50,-100]
+
+[subRenderFadeinFSSideR #A 0.35 -60,-70]
+[subRenderMoveFSSideR #A -160,-70 0.35]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 31]
+
+
+＠A：鈴鹿御前
+！
+[k]
+
+[charaFace A 9]
+
+＠A：鈴鹿御前
+りょうかーい、まっかせてー！
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderMoveFSSideR #A -60,-70 0.4]
+[subRenderFadeout #A 0.4]
+[wt 0.5]
+[subRenderMoveFSR #A 10000,0 0.1]
+[wt 0.05]
+
+[se ade491]
+[charaMove B -125,0 0.8]
+[se ade421]
+[charaMove D -375,0 0.8]
+[wt 0.4]
+[charaFadeout B 0.4]
+[charaFadeout D 0.4]
+[seStop ade491 0.8]
+[seStop ade421 0.8]
+[wt 0.95]
+
+[se ad94]
+[wt 0.85]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_28 1.0]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[subRenderMoveFSL #A 10000,0 0.1]
+
+[charaFadeout A 0.1]
+[charaFadeout M 0.1]
+[wt 0.2]
+
+[subCameraOff]
+[charaLayer A normal]
+[charaLayer M normal]
+[charaScale A 1.0]
+[charaScale M 1.0]
+[wt 1.2]
+
+[pictureFrame cut063_cinema]
+
+[scene 63300]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 10]
+[charaFace D 0]
+[charaFadeinFSR B 0.1 256,-50]
+[charaFadeinFSL D 0.1 -256,-50]
+＠クロエ
+大丈夫なの呼延灼。[r]よりによって、マスターが関わるなんて。
+[k]
+
+[charaFace B 0]
+
+＠クロエ
+どうせ、[line 6]でしょ？
+[k]
+
+[charaTalk D]
+[charaFace D 3]
+
+＠呼延灼
+だ、大丈夫、です。
+[k]
+
+＠呼延灼
+ギリギリまで[line 6]で、[r]いけると思います。
+[k]
+
+[charaTalk depthOff]
+[charaDepth B 3]
+[charaDepth Z 2]
+[charaDepth D 1]
+
+[charaPut Z 1]
+
+[charaTalk B]
+[charaFace B 14]
+＠クロエ
+いけるかなぁ……。[wt 0.6][bgm BGM_EVENT_11 0.5 0.5][charaFadeTime Z 0.2 0.5][r]（内容じゃなくて、難易度の問題で……）
+[k]
+
+[bgm BGM_EVENT_11 0.5 1.0]
+[charaFadeout Z 0.2]
+
+[charaTalk D]
+[charaFace D 5]
+
+＠呼延灼
+いけなかったら、恥ずか死の運命が[r]私を待っています！
+[k]
+
+[charaFace D 2]
+
+＠呼延灼
+クロエ、いや、クロエさん、[r]どうか協力を……協力を！！
+[k]
+
+[charaTalk B]
+[charaFace B 5]
+
+＠クロエ
+作家の願望100パーの作品は熱量すごくなるけど、[r]そのかわりダメージも大きいわよ？
+[k]
+
+[charaTalk D]
+[charaFace D 6]
+
+＠呼延灼
+で、でしょうね……[r]想像したくないけど分かりますっ！
+[k]
+
+[charaFace D 2]
+
+＠呼延灼
+でも、今はこれが一番描きたいものなんです！[r]バッチバチに恋！　したいんです！
+[k]
+
+[charaTalk B]
+[charaFace B 3]
+
+＠クロエ
+……はあ。[r]まったく、しょうがないわねー！
+[k]
+
+[charaFace B 0]
+
+＠クロエ
+マンガ家のやる気に応えてこその編集だもの。[r]あらゆる面でアシストさせていただきます。
+[k]
+
+[charaTalk D]
+[charaFace D 2]
+
+＠呼延灼
+ありがとうございまする！[r]ははー！
+[k]
+
+[messageOff]
+[se ad77]
+[charaMoveFSL D -256,-175 0.4]
+[charaFadeout D 0.4]
+[wt 0.1]
+[seStop ad77 0.5]
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 10]
+
+＠クロエ
+ちょ、平伏するのは止めて！？[r]極悪編集者と誤解されるから！
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_11 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[pictureFrame]
+
+[scene 147900]
+
+[cameraMove 0.1 0,0 1.02]
+[wt 1.4]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad93]
+[wt 1.6]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠クロエ
+ごめんマスター、待った？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 23]
+[charaFadein F 0.1 1]
+
+＠九紋竜エリザ
+あたちがしゅりょーとおはなちしてたから、[r]大丈夫よ！
+[k]
+
+[charaFace F 0]
+
+＠九紋竜エリザ
+クロエおねえちゃんは、[r]おはなち終わったのかちら？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠クロエ
+お姉ちゃん……いい響きね……。
+[k]
+
+[charaFace B 14]
+
+＠クロエ
+イリヤはわたしのこと、[r]姉とはこれっぽっちも認識してないからね……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠鈴鹿御前
+おかえりー！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+？1：何かあったの？
+？！
+
+[charaFace B 3]
+＠クロエ
+何でもないわ、マスター。
+[k]
+
+[charaFace B 7]
+
+＠クロエ
+さ、呼延灼の描きたい本のために、[r]一肌脱ぐわよ！
+[k]
+
+[charaFace B 15]
+
+＠クロエ
+……。[r]……あ、脱いでおく？
+[k]
+
+[messageOff]
+[cameraMove 0.1 -10,0 1.02]
+[wt 0.2]
+[cameraMove 0.2 10,0 1.02]
+[wt 0.3]
+[cameraMove 0.2 -10,0 1.02]
+[wt 0.3]
+[cameraMove 0.1 0,0 1.02]
+[wt 0.7]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠燕青
+教育に悪い何なら着込むくらいでいい。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠クロエ
+ちぇー。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[se ade491]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.4]
+[seStop ade491 0.2]
+[wt 0.6]
+
+＠ランスロット
+頑張りすぎてはいけないぞ、クロエ。
+[k]
+
+＠ランスロット
+もうないとは思うが、力を入れすぎて[r][#また]ああならないとも限らないからね。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+[charaShake B 0.02 2 2 0.5]
+[wt 1.4]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[wt 0.4]
+＠トリスタン
+確かに。[r]それではラブコメが特撮になってしまいます。
+[k]
+
+＠トリスタン
+今からジャンル変更はさすがに時間がありません……[r]というより、ぺしゃんこになりたくありません……
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠クロエ
+その話は蒸し返さないで……[r]あれは何かの間違い、夏の夜の夢だったんだから……
+[k]
+
+＠クロエ
+うう……クロエ・フォン・アインツベルン、[r]一生の汚点だわ……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.4 1]
+[wt 0.4]
+＠ガウェイン
+そう気落ちしないで、レディ・クロエ。
+[k]
+
+＠ガウェイン
+仮に夢だとしても、あれは貴女が誰よりも[r]奔走してくれていた証明なのですから。
+[k]
+
+＠ガウェイン
+この中で『編集の災害』を[#怖:こわ]が……失礼、[r]毛嫌いする者はおりません。
+[k]
+
+＠ガウェイン
+貴女は貴女の思うまま、クリエイターの[r]助けになってあげてください。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠クロエ
+ガウェインさん……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+
+＠ガウェイン
+それと、世の中にはヒロイン失恋の結果、[r]ジャンルが特撮に変わる話もあると聞きました。
+[k]
+
+＠ガウェイン
+街を一つ壊したくらいで好感度は下がりません。[r]むしろ[#箔:はく]が付いたと評しましょう。
+[k]
+
+＠ガウェイン
+なにしろ人命は失われていませんからね。[r]『実績を一つ解除』くらいに思うのがよろしい。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠クロエ
+そ、そうなんだ……どこの話か知らないけど、[r]続編は大人しくなる事を祈るわ。
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStopEnd BGM_EVENT_94 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

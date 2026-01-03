@@ -1,0 +1,1512 @@
+
+
+
+
+
+
+＄94-15-00-08-1-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 4029300 1 ソニックマッハ・ジェッター]
+[charaSet B 25010001 1 モレー]
+[charaSet C 3062000 0 エリザベート]
+[charaSet D 1098337710 1 フレッカス]
+[charaSet E 1098338300 1 ハロウィンゴースト]
+[charaSet F 1098338300 1 ハロウィンゴースト]
+[charaSet G 1098338300 1 ハロウィンゴースト]
+[charaSet H 1098337450 1 終わりのエリザベート]
+[charaSet I 1098337440 1 終わりのエリザベート_演出用]
+[charaSet J 1098339700 1 パーフェクトエリザベート_第三_槍]
+
+[charaSet K 98115000 1 エフェクト用]
+[charaSet L 98115000 1 エフェクト用]
+
+[sceneSet M 266200 1]
+[sceneSet N 266300 1]
+[sceneSet O 266300 1]
+[sceneSet P 266300 1]
+
+[sceneSet Q 10000 1]
+[charaScale Q 1.1]
+[charaSet S 1098340700 1 メカエリチャンⅡ号機]
+
+[masterBranch _Male _Female]
+[label _Male]
+[sceneSet R 268200 1]
+[branch _branchEnd]
+[label _Female]
+[sceneSet R 268210 1]
+[branch _branchEnd]
+[label _branchEnd]
+
+[subCameraOn 4]
+
+[charaLayer R sub #A]
+[charaLayer Q sub #A]
+[charaLayer S sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask14 3 192,192,192,255]
+
+[subRenderDepth #A 1]
+
+[subRenderScale #A 1.0]
+
+[charaDepth R 1]
+[charaDepth S 2]
+[charaDepth Q 3]
+
+[charaScale S 0.93]
+
+[charaFace S 7]
+[charaFadein S 0.1 460,192]
+[charaScale R 0.55]
+[charaFadein R 0.1 420,110]
+
+[scene 265320]
+
+[charaTalk off]
+[charaDepth F 2]
+[charaDepth E 3]
+[charaDepth G 1]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaFace F 0]
+[charaFadein F 0.1 -370,30]
+[charaFace G 0]
+[charaFadein G 0.1 370,30]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad1053]
+[se ad1038]
+[effect bit_talk_quick_slash_bl]
+[wt 0.1]
+[seStop ad1038 0.9]
+[charaShake E 0.05 2 3 0.5]
+[wt 0.1]
+[charaShake F 0.05 2 3 0.5]
+[wt 0.1]
+[charaShake G 0.05 2 3 0.5]
+
+[wt 0.5]
+
+[se ad882]
+[se ad865]
+[effect bit_talk_gram_slash_green]
+[wt 0.2]
+[charaShake G 0.05 2 3 0.5]
+[wt 0.1]
+[charaShake E 0.05 2 3 0.5]
+[wt 0.1]
+[charaShake F 0.05 2 3 0.5]
+[wt 0.5]
+
+[se ad42]
+[charaSpecialEffect G darkEnemyErasure 1 1.5]
+[wt 0.2]
+[charaSpecialEffect E darkEnemyErasure 1 1.5]
+[wt 0.2]
+[charaSpecialEffect F darkEnemyErasure 1 1.5]
+
+[bgmStop BGM_EVENT_80 2.5]
+[wt 3.0]
+[seStop ad42 0.5]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ソニックマッハ・ジェッター
+仕留めたは仕留めたが……何だこいつら？[r][#カ星:こ　こ]じゃ初めて見るタイプだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+＠モレー
+[#カ星の幽霊:パンプキンゴースト]かぁ。[r]……キングエリザの影響かな。
+[k]
+
+[charaTalk S]
+[subRenderFadein #A 0.2 -150,-220]
+
+＠メカエリチャンⅡ号機
+星を滅ぼす怪物が出現した余波、という感じかしら。[r]地震の原因、これでしょうね。
+[k]
+
+[charaTalk B]
+
+＠モレー
+キングエリザが滅ぼした生命体の残留思念的なものかな？[r]カ星の[#幽霊:ゴースト]かぁ。
+[k]
+
+[charaTalk S]
+
+＠メカエリチャンⅡ号機
+急ぎましょう。これ、どんどん増えると思うわ。
+[k]
+
+[se ad769]
+
+[messageOff]
+[wt 0.2]
+
+[fadeout black 1.0]
+[wait fade]
+[seStop ad769 1.5]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout B 0.1]
+
+[scene 266200]
+
+[charaTalk depthOff]
+[charaDepth M 3]
+[charaDepth D 2]
+
+[charaScale M 1.4]
+[charaFadein M 0.1 0,-350]
+[wt 2.5]
+
+[charaMove M 0,-400 5.0]
+
+[bgm BGM_EVENT_199 0.1]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+[wt 3.0]
+
+[charaFadeout M 0.5]
+[wt 0.6]
+
+[charaTalk depthOn]
+
+＠フレッカス
+ここか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モレー
+……っぽいね。あたしがいた支部と似た感じの建物だし。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ソニックマッハ・ジェッター
+んー……？[r]何だ。人の気配、なくないか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠エリザベート
+え、わかんないわよ。そんなの。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠モレー
+そういう戦士としての直感はあんまり……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ソニックマッハ・ジェッター
+しょうがねえなあ。[r]いや、本当に人の気配がない。
+[k]
+
+[charaFace A 6]
+
+＠ソニックマッハ・ジェッター
+まあ、とりあえず乗り込んでみるか！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_199 1.0]
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[cameraMove 0 0,0 1.02]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ad728]
+[se ad913]
+
+[scene 266300]
+
+[effect bit_talk_smoke -800,0]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[effectStop bit_talk_smoke]
+
+[wt 2.5]
+
+[seStop ad913 1.0]
+
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ソニックマッハ・ジェッター
+ホラやっぱり誰もいねえ。
+[k]
+
+？1：本当だ……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モレー
+じゃ、とりあえず手がかり探すとしますか。[r]まずはこの意味不明なタブレットを……[wt 0.7][charaMoveReturn B 0,-3 0.3][se ad901][wt 0.4][charaFace B 25]ん？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth K 6]
+[charaDepth H 5]
+[charaDepth N 4]
+[charaDepth C 3]
+[charaDepth B 2]
+
+[se ad1]
+[charaPut K 0,0]
+[charaEffect K bit_talk_magic_com]
+[wt 0.3]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.3 1]
+
+[wt 1.5]
+
+[bgm BGM_MAP_35 0.1]
+
+＠終わりのエリザベート
+[line 3]。[r][line 3]。
+[k]
+
+[charaFadeout H 0.1]
+[charaPut K 2000,2000]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠エリザベート
+母様！
+[k]
+
+[messageOff]
+[charaScale H 1.1]
+[charaScale K 1.1]
+[charaScale N 1.2]
+
+[charaTalk C,H]
+[charaFace H 0]
+[charaPut K 0,0]
+[charaFadein H 0.5 0,0]
+[charaFadein N 0.5 0,-250]
+
+[charaFadeout C 0.1]
+[wt 0.6]
+
+[charaTalk H]
+
+＠終わりのエリザベート
+……『三竜教団』の皆様。[r]巫女、終わりのエリザベートです。
+[k]
+
+＠終わりのエリザベート
+大事なお知らせが二つあります。
+[k]
+
+[charaCrossFade H 1098337440 2 0.3]
+
+＠終わりのエリザベート
+この度、我らの悲願であったキングエリザの復活が[r]果たされました。[wait charaCrossFade H]
+[k]
+
+＠終わりのエリザベート
+つまり、皆様の並々ならぬ努力がここに[r]結実した、ということです。嬉しいことですね。
+[k]
+
+[charaCrossFade H 1098337450 4 0.3]
+
+＠終わりのエリザベート
+そして、もう一つ。[r]申し訳ありません、皆様。私は嘘をつきました。[wait charaCrossFade H]
+[k]
+
+[charaFaceFade H 5 0.2]
+
+＠終わりのエリザベート
+キングエリザが復活した時、[r]『三竜教団』にいれば救われるというのは嘘です。
+[k]
+
+＠終わりのエリザベート
+彼女は平等に、カ星の生命体全てを滅ぼす予定です。
+[k]
+
+[charaFace H 0]
+
+＠終わりのエリザベート
+『むしろ自分たちが神の使徒として君臨する』と[r]考えていた方もいらっしゃったようですが……。
+[k]
+
+[charaFaceFade H 4 0.2]
+
+＠終わりのエリザベート
+大変お気の毒ですが、それほど上手い話はない、[r]という訳ですね。
+[k]
+
+[charaFaceFade H 1 0.2]
+
+＠終わりのエリザベート
+では、皆様さようなら。どうか幸運を。
+[k]
+
+[messageOff]
+[wt 0.5]
+[se ad1]
+[charaFadeout H 0.3]
+[charaEffectStop K bit_talk_magic_com]
+[wt 1.7]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[charaFace H 6]
+
+[charaFadeout N 0.7]
+[wt 1.0]
+
+[charaTalk depthOn]
+
+＠エリザベート
+母様……ものすごい爆弾置いていったわね……。
+[k]
+
+[charaTalk S]
+[charaFace S 6]
+
+[subRenderFadein #A 0.2 -150,-220]
+＠メカエリチャンⅡ号機
+なるほどね。道理で誰もいないはず。
+[k]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_35 1.0]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+＠モレー
+……ん？　でも今、音がしたような……。
+[k]
+
+＠
+[charaTalk S]
+[line 3]侵入者検知。[r]全自動防衛機能、発動します。
+[k]
+
+[messageOff]
+[charaTalk B]
+[se bac250]
+[wt 0.5]
+
+[charaFace B 26]
+
+＠モレー
+おっと！
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+
+
+[wt 0.4]
+
+[fowardEffect bit_talk_laser01 -20,30 V]
+[se bac250]
+
+[wt 0.3]
+[seStop bac250 0.2]
+[bgm BGM_REQUIEM 0.1]
+
+[charaShake B 0.05 2 3 0.5]
+[se bac121]
+
+[charaEffect B bit_talk_14 -10,20]
+[wt 0.7]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 0.2]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+＠ソニックマッハ・ジェッター
+む。
+[k]
+
+[messageOff]
+[se bac250]
+[fowardEffect bit_talk_laser01 0,50]
+
+[wt 0.3]
+[seStop bac250 0.2]
+
+
+[charaShake A 0.05 1 2 0.5]
+[se bac121]
+[charaEffect A bit_talk_14 0,60]
+[wt 0.7]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[wt 0.2]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaDepth L 4]
+[charaDepth C 2]
+[charaDepth P 1]
+
+[se bac250]
+
+[fowardEffect bit_talk_laser02 0,150]
+[wt 0.3]
+[seStop bac250 0.2]
+
+
+[charaShake C 0.05 3 4 0.5]
+[charaPut L 0,150]
+[charaEffect L bit_talk_blow]
+[se bac46]
+
+[wt 0.2]
+[charaFace C 3]
+[wt 0.3]
+
+＠エリザベート
+ぎ[messageShake 0.04 3 3 0.3]ゃば！？[r]何すんのよアンタたち！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ソニックマッハ・ジェッター
+わ、悪い。そっちに跳ねるとは。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad806]
+[wt 0.8]
+
+＠アナウンス=spot[D]
+エリザベート・バートリーの声紋確認。[r]おかえりなさい。
+[k]
+
+[messageOff]
+[se ad538]
+[wt 2.2]
+
+[charaTalk B]
+[charaFace B 25]
+[charaFadein B 0.1 1]
+
+＠モレー
+今の声で反応した？
+[k]
+
+[charaTalk S]
+[subRenderFadein #A 0.2 -150,-220]
+
+＠メカエリチャンⅡ号機
+扉が開いたわね。行ってみましょう。
+[k]
+
+[cueSe SE_25 25_ad1462]
+
+[messageOff]
+[wt 0.2]
+[wipeout leftToRight 1.2 1.0]
+[bgmStop BGM_REQUIEM 2.0]
+[cueSeStop 25_ad1462 1.5]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout B 0.1]
+
+[scene 266900]
+
+[sceneSet M 266900 1]
+[sceneSet N 266900 1]
+[charaScale N 1.3]
+[charaSet H 1098337440 1 終わりのエリザベート]
+[sceneSet O 266900 1]
+[charaSet E 3062000 0 エリザベート_サブレイヤー]
+[charaScale E 1.1]
+[charaScale H 1.1]
+
+[charaLayer E sub #B]
+[charaLayer M sub #B]
+
+[subCameraFilter #B maskEdge cut359_mask12 5 255,255,255,255]
+
+[charaDepth E 2]
+[charaDepth M 1]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 -530,220]
+[charaFadein M 0.1 -150,30]
+
+[sceneSet P 266900 1]
+
+[charaLayer J sub #C]
+[charaLayer P sub #C]
+
+[subCameraFilter #C maskEdge cut359_mask05 5 255,255,255,255]
+
+[charaDepth J 3]
+[charaDepth P 1]
+
+[charaScale P 1.2]
+
+[charaRoll J 246 0,0]
+[charaFadein J 0.1 180,-120]
+[charaFadein P 0.1 400,100]
+
+[charaScale O 1.2]
+[charaFadein O 0.1 -50,-270]
+
+[charaPut K 2000,2000]
+[charaEffect K bit_talk_magic_com]
+
+[wt 1.2]
+
+[charaMove O 50,-270 8.0]
+
+[bgm BGM_EVENT_92 0.1]
+[wipein rightToLeft 1.2 1.0]
+[wait wipe]
+
+[wt 2.5]
+
+[charaFadeout O 0.7]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エリザベート
+あ。[r]……ここ[#私:アタシ]が住んでた部屋だ。
+[k]
+
+
+？1：エリちゃんの私室かー……
+？！
+
+[charaFace C 1]
+
+＠エリザベート
+そう。なかなか良い部屋でしょ。
+[k]
+
+[charaFace C 0]
+
+＠エリザベート
+もう少し赤々しい方がいいかなと思ったけど、[r]母様にこれでいいのって押されちゃったのよね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+＠モレー
+終わりのエリちゃん、大正解だな……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ソニックマッハ・ジェッター
+でも、この部屋に手がかりはないんじゃないか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠エリザベート
+それもそうね。懐かしがってる場合じゃない。[r]違う部屋を探しま[line 3]
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_92 0.1 0]
+
+
+[charaTalk depthOff]
+[charaDepth K 5]
+[charaDepth H 4]
+[charaDepth N 3]
+[charaDepth C 2]
+
+[charaFadein N 0.1 -130,-250]
+
+[cueSe SE_24 24_ade1139]
+[seVolume 24_ade1139 0 0.7]
+[charaPut K 0,0]
+
+[charaFadeout C 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 0,40]
+[charaMove H 0,0 0.2]
+＠終わりのエリザベート
+じゃーん。
+[k]
+
+[subRenderFadeinFSSideL #B 0.1 130,-140]
+[subRenderMoveEaseFSSideL #B 100,-170 0.4 easeOutSine]
+
+＠E：エリザベート
+[f large]ぎ[messageShake 0.05 3 3 0.3]ゃあさま！？
+[k]
+
+[bgm BGM_EVENT_92 1.0 1.0]
+
+[charaFace H 2]
+
+＠終わりのエリザベート
+……驚きましたか、エリザベート。
+[k]
+
+＠終わりのエリザベート
+貴女のことだから、[r]ぎゃあと悲鳴を上げて驚いているのでしょうね。
+[k]
+
+[charaFace E 3]
+
+＠E：エリザベート
+そりゃ驚くわよ！？
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_92 1.0]
+
+[charaTalk H,E]
+[charaFaceFade H 4 0.2]
+[subRenderFadeout #B 0.3]
+[wt 0.5]
+
+
+＠終わりのエリザベート
+……。[r]……。
+[k]
+
+[bgm BGM_MAP_115 0.1]
+
+[charaFaceFade H 0 0.2]
+
+＠終わりのエリザベート
+エリザベート。多分ないと思うけど。[r]この部屋を訪れた時のために伝言を残します。
+[k]
+
+[messageOff]
+
+[charaTalk E]
+[charaFace E 7]
+
+[subRenderFadeinFSSideL #B 0.4 140,-170]
+[wt 0.5]
+
+＠E：エリザベート
+母様……。
+[k]
+
+[messageOff]
+[charaTalk H,E]
+[subRenderFadeout #B 0.3]
+
+[wt 0.7]
+
+[charaFace E 3]
+
+＠終わりのエリザベート
+キングエリザを倒す手がかりを探しているのね。[r]それとも[line 3]私を救おうとしているのかしら。
+[k]
+
+＠終わりのエリザベート
+だって貴女がここにいるということは、[r]私が[#核:コア]の代理になったのでしょうからね。
+[k]
+
+[charaFaceFade H 4 0.2]
+
+＠終わりのエリザベート
+はぁ……我ながら愚かしい。[r]こんなパンクな不良娘を[#庇:かば]っちゃうとか……。
+[k]
+
+[messageOff]
+
+[charaTalk E]
+[subRenderFadeinFSSideL #B 0.2 100,-170]
+
+＠E：エリザベート
+母様ひどい！
+[k]
+
+[messageOff]
+
+[charaTalk H,E]
+
+[subRenderFadeout #B 0.2]
+
+[charaFace H 5]
+
+＠終わりのエリザベート
+やってしまったものは仕方ないわね。[r]でも、一応まず最初に伝えておくわ。
+[k]
+
+[charaCrossFade H 1098337450 6 0.3]
+
+＠終わりのエリザベート
+[line 3]逃げなさい。勝ち目はありません。[wait charaCrossFade H]
+[k]
+
+＠終わりのエリザベート
+エリザ粒子を使って『[#並行宇宙転送:ス ラ イ ド ・ シ フ ト]』を成功させれば、[r]帰還はできるはずです。
+[k]
+
+＠終わりのエリザベート
+この星が滅びようとも、[r]カルデアには無関係なのですから。
+[k]
+
+[messageOff]
+
+[charaTalk H,C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[charaFadeout H 0.4]
+[charaPut K 2000,2000]
+[charaFadeout N 0.4]
+[wt 0.5]
+
+[charaTalk C]
+
+＠エリザベート
+[&子イヌ:子ジカ]ー……。
+[k]
+
+？1：もちろん逃げないよ
+？！
+
+[charaFace C 8]
+
+＠エリザベート
+よね！
+[k]
+
+[messageOff]
+[charaTalk H,C]
+[charaFace H 5]
+[charaFadein H 0.5 0,0]
+[charaFadein N 0.5 -130,-250]
+[wt 0.2]
+[charaPut K 0,0]
+[wt 0.4]
+[charaFace C 1]
+
+＠終わりのエリザベート
+……ま、逃げないでしょうね。[r]そして私を全力で救おうとするのでしょうね。
+[k]
+
+[charaFace H 0]
+
+＠終わりのエリザベート
+ここでもったいぶっても手がかりを探すだけだろうし、[r]言ってしまうわ。
+[k]
+
+[charaCrossFade H 1098337440 6 0.3]
+
+＠終わりのエリザベート
+[line 3]私とキングエリザを切り離したいなら、[r]エリザベートの持つ槍が必要です。[wait charaCrossFade H]
+[k]
+
+＠終わりのエリザベート
+それは持ってるわよね、もちろん？
+[k]
+
+[messageOff]
+
+[charaTalk C,J,H]
+[charaFadeout H 0.4]
+[charaPut K 2000,2000]
+[charaFadeout N 0.4]
+[subRenderFadein #C 0.4 -280,-350]
+[wt 0.8]
+
+[charaFace H 0]
+
+
+[charaMoveReturn C 0,-5 0.3]
+[wt 0.3]
+[charaMoveReturn C 0,-5 0.3]
+[wt 0.6]
+
+[charaTalk H,C,J]
+[charaFace H 0]
+[charaFadein H 0.5 1]
+[charaFadein N 0.5 0,-250]
+[subRenderFadeout #C 0.5]
+[wt 0.3]
+[charaPut K 0,0]
+[wt 0.3]
+[charaFadeout C 0.1]
+
+＠終わりのエリザベート
+その槍を握り、キングエリザの[#後継者]としての[r]正式なコスチュームを[#纏:まと]いなさい。
+[k]
+
+＠終わりのエリザベート
+そうすれば、[r]貴女はキングエリザの魂に触れることができます。
+[k]
+
+[charaCrossFade H 1098337450 0 0.3]
+
+＠終わりのエリザベート
+私がキングエリザと結合しているのは、[r]私がキングエリザと同一の存在だからです。[wait charaCrossFade H]
+[k]
+
+[charaFace H 5]
+
+＠終わりのエリザベート
+ですが[line 3]恐らく、真の意味で同化してはいません。[r]私はあまりに、長い時間を単独で生きすぎました。
+[k]
+
+＠終わりのエリザベート
+分離してからずっと、[r]この星で一人、布教活動していましたからね。
+[k]
+
+[charaFace H 0]
+
+＠終わりのエリザベート
+キングエリザは私を同一存在と見なしているかも[r]しれませんが……そうではなくなっているのです。
+[k]
+
+＠終わりのエリザベート
+少なくとも私の実感では、ですが。
+[k]
+
+[charaCrossFade H 1098337440 4 0.3]
+
+＠終わりのエリザベート
+さて、私はキングエリザの体内でエリザ粒子を集める[r]臓器の役割を果たしているでしょう。[wait charaCrossFade H]
+[k]
+
+[charaFaceFade H 0 0.2]
+
+＠終わりのエリザベート
+でも、それは言うなれば[r]外付けのハードディスクのようなもの。
+[k]
+
+＠終わりのエリザベート
+ほんの少しの衝撃で、[r]私は[#さくり]と引き[#剥:は]がされます。
+[k]
+
+[charaFaceFade H 1 0.2]
+
+＠終わりのエリザベート
+例えば[line 3]キングエリザの魂に触れられる武器を、[r]勢いよく突き立てれば。
+[k]
+
+[messageOff]
+
+[charaTalk E,H]
+[charaFace E 3]
+
+[subRenderFadeinFSSideL #B 0.2 100,-170]
+
+＠E：エリザベート
+……！
+[k]
+
+[messageOff]
+
+[charaTalk E,H]
+[charaFace H 6]
+
+[subRenderFadeout #B 0.2]
+
+[charaFadeout E 0]
+[charaFadeout M 0]
+[charaFadeout J 0]
+[charaFadeout O 0]
+[charaFadeout P 0]
+
+[charaLayer J nomal]
+[charaLayer E nomal]
+[charaLayer M nomal]
+[charaLayer P nomal]
+[charaLayer O nomal]
+
+
+＠終わりのエリザベート
+でも、注意点が一つ。
+[k]
+
+＠終わりのエリザベート
+そもそもキングエリザは強いです。バカ強いです。[r]伊達に星を滅ぼすランクの生命体ではありませんよ。
+[k]
+
+[charaFace H 6]
+
+＠終わりのエリザベート
+だから……エリザ粒子を集めなさい。[r]彼女の護りを貫くだけの、エリザ粒子を。
+[k]
+
+[charaCrossFade H 1098337450 0 0.3]
+
+＠終わりのエリザベート
+残るエリザ粒子はオリュンポスと、[r]もう一つ。[wait charaCrossFade H]
+[k]
+
+＠終わりのエリザベート
+[#チェイテピラミッド姫路城]に格納されているはずです。[r]使用方法のマニュアルを残しておきます。
+[k]
+
+[charaFace H 1]
+
+＠終わりのエリザベート
+そちらの……ええと、メカエリチャンだったかしら。[r]彼女なら残したメモリを解析して何とかできるでしょう。
+[k]
+
+[charaTalk S]
+[charaFace S 6]
+
+[subRenderFadein #A 0.2 -150,-220]
+[wt 0.2]
+
+＠メカエリチャンⅡ号機
+マスター。そこのメモリらしきものを取ってちょうだい。[r]解析してみるわ。
+[k]
+
+[messageOff]
+
+[cueSe SE_24 24_ade1008]
+[charaTalk H,S]
+[subRenderFadeout #A 0.2]
+[wt 0.4]
+[cueSeStop 24_ade1008 0.7]
+[wt 0.8]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠終わりのエリザベート
+……これで全部かな。[wt 0.7][charaFace H 5][r]はぁ……どうして助けてしまうのかしら、貴女を。
+[k]
+
+＠終わりのエリザベート
+……。[wt 0.4][charaFace H 2][r]……ま、いいか。
+[k]
+
+[charaFace H 6]
+
+＠終わりのエリザベート
+最後にもう一度念押し。[r]逃げてしまいなさい、エリザベート。
+[k]
+
+＠終わりのエリザベート
+今言ったことが何もかも全て上手くいったとしても。[r]命の保証なんかこれっぽっちもないのですから。
+[k]
+
+[messageOff]
+
+[bgm BGM_MAP_115 1.0 0]
+
+[se ad1]
+[charaFadeout H 0.3]
+[charaEffectStop K bit_talk_magic_com]
+[wt 1.7]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[charaFadeout N 0.7]
+[wt 0.6]
+
+＠エリザベート
+待って、母様、待って！[r]……どうして[#私:アタシ]を助けたのよ……。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad1]
+[charaPut K 0,0]
+[charaEffect K bit_talk_magic_com]
+[wt 0.3]
+
+[bgm BGM_MAP_115 1.0 1.0]
+
+[charaTalk H]
+[charaScale H 1.0]
+[charaFace H 0]
+[charaFadein H 0.3 1]
+
+[wt 0.8]
+
+[charaLayer C sub #B]
+[charaLayer M sub #B]
+
+[subCameraFilter #B maskEdge cut359_mask10 5 255,255,255,255]
+
+[charaDepth C 2]
+[charaDepth M 1]
+
+[charaScale M 1.2]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 0,350]
+[charaFadein M 0.1 450,100]
+
+[subRenderFadeinFSSideL #B 0.3 -390,-300]
+[subRenderMoveEaseFSSideL #B -370,-350 0.3 easeOutSine]
+[wt 0.3]
+
+[charaShake C 0.04 2 3 0.2]
+
+＠エリザベート
+おわビックリした！
+[k]
+
+[subRenderFadeout #B 0.2]
+[wt 0.3]
+
+[charaFadeout C 0]
+[charaFadeout M 0]
+
+[charaLayer C nomal]
+[charaLayer M nomal]
+
+[charaTalk H]
+[charaFace H 0]
+
+＠終わりのエリザベート
+……エリザベートがどうして自分を助けたのか、[r]とか言い出している気がするので、追伸です。
+[k]
+
+＠終わりのエリザベート
+貴女を助けた理由なんて、[r]きっとその時の私にもわかりませんよ。
+[k]
+
+[charaFaceFade H 4 0.2]
+
+＠終わりのエリザベート
+そもそも助けるつもりなんてありません。[r]これでやっと、私の役割が終わるのですから。
+[k]
+
+[messageOff]
+[charaDepth I 4]
+[charaDepth N 3]
+[charaDepth H 2]
+
+[charaScale I 1.2]
+[charaScale N 1.4]
+
+[charaTalk H,I]
+[charaFace I 5]
+[charaFadein I 0.6 0,30]
+[charaFadein N 0.6 0,-250]
+[charaMove I 0,10 30.0]
+[charaMove N 0,-280 30.0]
+[wt 0.5]
+[charaFadeout H 0.1]
+
+＠I：終わりのエリザベート
+それでも。[r]もし貴女を助けてしまったのだとしたら[line 3]
+[k]
+
+[charaFaceFade I 1 0.2]
+
+＠I：終わりのエリザベート
+私は……自分が想像する以上に[r]甘っちょろいサーヴァントだったんでしょうね。
+[k]
+
+[charaFace I 2]
+
+＠I：終わりのエリザベート
+期待しないで待っていますよ。ふふ。
+[k]
+
+[messageOff]
+[se ad1]
+[charaFadeout I 0.3]
+[charaEffectStop K bit_talk_magic_com]
+[bgmStop BGM_MAP_115 1.7]
+[wt 1.7]
+
+＠
+メッセージ、終了しました。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[charaFadeout N 0.7]
+[wt 1.0]
+
+[charaTalk depthOn]
+
+[bgm BGM_EVENT_141 0.1]
+
+＠モレー
+エリザ粒子を集める、か……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ソニックマッハ・ジェッター
+よくわからんが、ただの魔力じゃダメなのか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠モレー
+あー、それはダメっぽい。
+[k]
+
+[charaFace B 6]
+
+＠モレー
+エリザ粒子って、ようはエリちゃんのエリちゃんによる[r]エリちゃんのために調整された魔力みたいだから。
+[k]
+
+＠モレー
+軽油とニトログリセリンくらい違う。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ソニックマッハ・ジェッター
+そういうものか……。[wt 0.5][charaFace A 0][r]おっと、それよりも、だ。
+[k]
+
+＠ソニックマッハ・ジェッター
+エリザベート・バートリー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エリザベート
+え、あ、うん。[r]何かしら、ソニックマッハ。
+[k]
+
+[messageOff]
+
+[charaSet D 3062000 1 エリザベート]
+
+[charaTalk depthOff]
+[charaDepth D 6]
+[charaDepth M 5]
+[charaDepth A 4]
+[charaDepth N 3]
+[charaDepth C 2]
+
+[charaScale D 1.2]
+[charaScale M 1.2]
+[charaScale A 1.2]
+[charaScale N 1.2]
+
+[charaTalk C,A]
+[charaFace A 0]
+[charaFadein A 0.5 110,0]
+[charaFadein N 0.5 10,-250]
+[charaMoveEase A 100,0 0.5 easeOutSine]
+[charaMoveEase N 0,-250 0.5 easeOutSine]
+[wt 0.6]
+
+[charaTalk A]
+
+＠ソニックマッハ・ジェッター
+何。念押しさ。[r]アンタたちは逃げてもいい。
+[k]
+
+＠ソニックマッハ・ジェッター
+カルデアに逃げて、[r]こちらのことは[#与:あずか]り知らぬでも文句はない。
+[k]
+
+＠ソニックマッハ・ジェッター
+そもそも、アンタたちにとっちゃ[r][#他所:よ そ]の世界だ。だろう？
+[k]
+
+[charaFace A 5]
+
+＠ソニックマッハ・ジェッター
+[line 3]どうする？
+[k]
+
+[messageOff]
+[charaTalk A,D]
+[charaFace D 0]
+[charaFadein D 0.5 -110,0]
+[charaFadein M 0.5 120,-220]
+[charaMoveEase D -100,0 0.5 easeOutSine]
+[charaMoveEase M 130,-220 0.5 easeOutSine]
+[wt 0.9]
+
+？1：……エリちゃんはどうしたい？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+
+[bgmStop BGM_EVENT_141 1.5]
+
+＠D：エリザベート
+[#私:アタシ]、は……。
+[k]
+
+[charaFace D 7]
+
+＠D：エリザベート
+……。[r]……。
+[k]
+
+[charaFace D 3]
+
+[bgm BGM_MAP_89 0.1]
+
+＠D：エリザベート
+……助けるわ！[r]三年、三年間もお世話になったのだもの！
+[k]
+
+＠D：エリザベート
+絶対に助ける、何としてでも！[r]だって[line 3]
+[k]
+
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[fadeout white 1.0]
+[bgm BGM_MAP_89 1.0 0.5]
+[wait fade]
+
+[scene 247200]
+
+[effect bit_sepia01]
+
+[charaSet H 1098337350 1 終わりのエリザベート_ポーズ2_ヴェールあり]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+[charaFadeout A 0.1]
+[charaFadeout N 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout M 0.1]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[cueSe SE_22 22_ad1177]
+[fadeout white 1.0]
+[wait fade]
+
+[effectDestroy bit_sepia01]
+
+[scene 266900]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.5 -150,0]
+[charaFadein M 0.5 120,-250]
+
+[charaFadeout H 0.1]
+[wt 0.5]
+
+[fadein white 1.0]
+[bgm BGM_MAP_89 1.0 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaTalk D]
+
+＠D：エリザベート
+母様、と。[r]そう呼べる人に初めて出会ったんだもん！
+[k]
+
+[messageOff]
+
+[charaTalk D,A]
+[charaFace A 0]
+[charaScale A 1.0]
+[charaFadein A 0.1 1]
+
+[charaFadeout D 0.4]
+[charaFadeout M 0.4]
+[wt 0.9]
+
+[charaTalk depthOn]
+
+？1：という訳なので、助けに行くよ
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+
+＠ソニックマッハ・ジェッター
+オーケー、マスター！[r]地球最後のマスターって二つ名は伊達じゃねえな！
+[k]
+
+[charaTalk S]
+[charaFace S 6]
+
+[subRenderFadein #A 0.2 -150,-220]
+
+＠メカエリチャンⅡ号機
+では、出発しましょう。[r]まずは[line 3]チェイテピラミッド姫路城へ！
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_89 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

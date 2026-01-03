@@ -1,0 +1,711 @@
+
+＄94-07-36-11-1-0
+
+[enableFullScreen]
+[soundStopAll]
+
+
+
+[charaSet A 1098250100 1 スカサハ＝スカディ]
+[charaSet B 6044300 1 エルン]
+[charaSet C 6043300 1 イルス]
+[charaSet D 6045300 1 リンド]
+
+[charaSet E 6045300 1 リンド_シルエット]
+[charaFilter E silhouette 00000080]
+
+[charaSet F 28003000 1 レディ・アヴァロン]
+[charaSet G 98002000 1 フォウ]
+[charaSet I 6043000 1 オルトリンデ]
+[charaSet J 6044000 1 ヒルド]
+[charaSet K 6045000 1 スルーズ]
+
+[sceneSet M 159702 1]
+[charaScale M 1.05]
+
+[sceneSet N 159601 1]
+[charaScale N 1.01]
+
+[charaSet P 1098238800 1 エフェクト用1]
+[charaSet Q 1098238800 1 エフェクト用1]
+[charaSet R 1098238800 1 エフェクト用1]
+
+[charaSet S 28003000 1 レディ・アヴァロン_アップ用]
+
+[sceneSet X 10000 1]
+[charaFilter X silhouette F9C1CF80]
+[charaScale X 1.4]
+
+
+[cameraMove 0.1 0,0 1.01]
+
+
+[scene 159601]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[se ad95 0.5]
+[seVolume ad95 0 0.1]
+[wt 0.5]
+[seVolume ad95 1.0 0.6]
+[wt 1.0]
+[seVolume ad95 1.0 1.0]
+[wt 1.0]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth E 6]
+[charaDepth D 4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+[seStop ad95 0.4]
+[wt 1.0]
+
+[bgm BGM_EVENT_116 0.1]
+[charaTalk on]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[charaFadeout E 0.4]
+[wt 1.4]
+
+＠リンド
+……ああ、いたいた。
+[k]
+
+[charaFace D 0]
+
+＠リンド
+ねえ、カルデアのマスター。[r]ちょっとだけ私たちに時間をくれないかな。
+[k]
+
+？1：構わないよ
+
+＠リンド
+ありがとう。
+[k]
+
+？2：どうしたの？
+
+＠リンド
+まあ、いいからいいから。
+[k]
+
+？！
+
+＠リンド
+甲板まで来てくれる？
+[k]
+
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 1.2]
+
+[se ade74]
+[bgm BGM_EVENT_116 0.7 0.4]
+[wipeout rightToLeft 0.7 1]
+[wait wipe]
+[charaFadeout D 0.1]
+
+[charaScale M 1.05]
+[charaFadein M 0.1 -25,-220]
+
+[charaDepth M 1]
+[charaDepth C 5]
+[charaDepth D 4]
+[charaDepth B 3]
+[charaDepth A 4]
+[charaDepth F 3]
+[charaDepth X 6]
+[charaDepth S 7]
+
+
+[scene 159702]
+[wt 1.0]
+[seStop ade74 0.5]
+[wt 0.5]
+
+[wipein leftToRight 0.7 1]
+[bgm BGM_EVENT_116 0.7 1.0]
+[wait wipe]
+
+
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠エルン
+あっ、リンドとカルデアのマスター！[r]こっちです！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠イルス
+ほんとに来てくれたんだ。[r]夜遅くなのに、突然ごめんね。
+[k]
+
+＠イルス
+休息の時間だというのは理解しているんだ。[r]でも、今しかないから。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_116 1.0]
+[charaFadeout C 0.4]
+[wt 1.0]
+
+[charaTalk off]
+[charaFace C 1]
+[charaFadeinFSL C 0.2 -406,0]
+[charaFace D 1]
+[charaFadein D 0.2 0,0]
+[charaFace B 0]
+[charaFadeinFSR B 0.2 406,0]
+[wt 1.0]
+
+[charaPut P 0,-50]
+[charaEffect P bit_talk_06]
+[wt 0.5]
+[bgm BGM_EVENT_123 0.1]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 4]
+
+＠イルス
+……あ。始まってしまったね。
+[k]
+
+？1：（無言で[#俯:うつむ]く）
+
+[messageOff]
+[cameraMove 0.5 0,7 1.01]
+[wt 1.0]
+
+[charaFace B 11]
+
+＠エルン
+分かって……ましたよね。[r]ですよね。
+[k]
+
+[charaFace B 4]
+＠エルン
+わたしたち三騎で話して……[r]何も言わずに退去しちゃうのがいいかなって、
+[k]
+
+＠エルン
+ちょっと迷いました……[r]……でも……
+[k]
+
+[charaFace B 11]
+
+＠エルン
+何も言わないのはやっぱり寂しい、です。[r]だから……。
+[k]
+
+[messageOff]
+[cameraMove 0.5 0,0 1.01]
+[wt 1.0]
+
+？2：三人は、聖杯で喚ばれた霊基だから[line 3]
+
+[charaFace D 4]
+
+＠リンド
+……そう。そうなんだ。
+[k]
+
+＠リンド
+聖杯で喚ばれた特異点の英霊は、[r]聖杯が回収されれば消える。そういうものだよね。
+[k]
+
+[charaFace D 12]
+＠リンド
+実は[#三騎:み ん な]で話して……[r]何も言わずに消えようかって話も出たんだけど、
+[k]
+
+[charaFace D 10]
+＠リンド
+それはイヤだったんだ。[r]三騎とも、イヤだってなったんだ。
+[k]
+
+[charaFace D 8]
+
+＠リンド
+何でだろうね。不思議。[r]スルーズたちやお姉様なら分かるのかな、この感じ。
+[k]
+
+？！
+
+[charaFace C 6]
+
+＠イルス
+ボクが思うに……[r]きっと、リンドがあなたと同行した時、
+[k]
+
+＠イルス
+戦闘同期するために、[r]スルーズたちと何度か情報同期したせいなんだ。
+[k]
+
+＠イルス
+それで[#人間:あ な た]のことを[line 3]
+[k]
+
+[messageOff]
+[charaFace C 1]
+[wt 1.0]
+[charaFace C 3]
+
+＠イルス
+ううん、今のなし。何でもない。
+[k]
+
+[charaFace D 8]
+
+＠リンド
+……イルス。
+[k]
+
+[charaFace B 1]
+
+＠エルン
+言いたいこと分かります。[r]わたしたち、皆同じですから。
+[k]
+
+[charaFace D 13]
+
+＠リンド
+そうだね。[r]だから、イルスの言う通りかも？
+[k]
+
+[charaFace D 9]
+
+＠リンド
+でもね、当機たちはこうも思ってる。
+[k]
+
+[charaFace D 12]
+
+＠リンド
+本気でスカディ様を助けようとしてくれた、[r]あなたの姿に[line 3]
+[k]
+
+[charaFace D 8]
+
+＠リンド
+勇士らしさを、感じたのかも……？
+[k]
+
+[charaFace D 0]
+
+＠リンド
+……なーんてね。[r]本当のところはやっぱり分からない。
+[k]
+
+[charaFace D 13]
+
+＠リンド
+ほんと、不思議。
+[k]
+
+
+[messageOff]
+[charaFadeout D 0.2]
+[charaFadeout C 0.2]
+[charaFadeout B 0.2]
+[wt 0.2]
+[charaPut P 2000,2000]
+
+[se ade421 1.5]
+[seVolume ad421 0 0.3]
+[wt 0.5]
+[seVolume ad421 0.5 1.0]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 50,0]
+[charaMove A 0,0 0.5]
+[wt 0.5]
+[seStop ade421 0.2]
+
+＠スカサハ＝スカディ
+いたな、新三姉妹！
+[k]
+
+[charaFace A 4]
+
+＠スカサハ＝スカディ
+霊基の揺らぎを感じたが……[r]そ、そうだな……どうだろう、ここは私が[line 3]
+[k]
+
+？1：無茶は！　禁物！
+？2：原初のルーンはやめておこう
+？！
+
+[charaFace A 14]
+
+＠スカサハ＝スカディ
+……！
+[k]
+
+[charaFace A 15]
+
+＠スカサハ＝スカディ
+し、しかしだな……[r]私が喚びだしたからには……。
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 400,0]
+[charaMove F 300,0 1.0]
+[wt 1.3]
+[charaMove F 200,0 0.3]
+[se ad7]
+[wt 0.3]
+
+＠レディ・アヴァロン
+そりゃ！[r]（くすぐり）
+[k]
+
+[messageOff]
+
+[charaFace A 14]
+
+＠スカサハ＝スカディ
+はわ！[charaShake A 0.03 4 4 0.3]
+[k]
+
+＠レディ・アヴァロン
+カルデアのマスターの言う通り無茶は禁物。[r]キミ、死にかけてたんだろうに。
+[k]
+
+[messageOff]
+[cameraMove 1.0 -50,-30 1.1]
+[charaMove M -25,-220 1.0]
+
+[charaMove A -50,0 1.0]
+[charaFadeout A 1.0]
+[wt 1.0]
+[charaFace F 6]
+[bgmStop BGM_EVENT_123 1.5]
+
+＠レディ・アヴァロン
+だからここは、裏技を使っておこうよ。
+[k]
+
+[messageOff]
+[charaPut Q 200,0]
+[charaEffect Q bit_talk_magic_circle]
+[cueSe SE_21 21_ad1108]
+[wt 2.0]
+[charaEffectStop Q bit_talk_magic_circle]
+[wt 0.3]
+
+[fadeout white 0.3]
+[cueSeStop 21_ad1108 0.3]
+[se bac231]
+[wait fade]
+
+
+[charaEffectDestroy Q bit_talk_magic_circle]
+
+[charaFadeout F 0.1]
+[charaFadeout M 0.1]
+
+[cameraHome 0.1]
+[wait camera]
+
+[charaTalk off]
+[charaPut P 0,-50]
+[charaFace C 0]
+[charaFadeinFSL C 0.1 -406,0]
+[charaFace D 8]
+[charaFadein D 0.1 0,0]
+[charaFace B 10]
+[charaFadeinFSR B 0.1 406,0]
+
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[se ad39]
+[wt 1.5]
+[seStop ad39 0.3]
+
+[charaEffectStop P bit_talk_06]
+[cueSe SE_22 22_ade699]
+[charaPut X 0,-200]
+[charaFadeTime X 1.0 0.8]
+[fowardEffect bit_talk_petal_ppl]
+[wt 1.0]
+[charaFadeout X 1.3]
+[wt 1.3]
+
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[bgm BGM_EVENT_78 0.1]
+
+＠エルン
+あ、あれ、これって……！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠スカサハ＝スカディ
+なんと鮮やかな。[r]しかしこれは[line 3]
+[k]
+
+？1：退去が止まった！？
+？2：ＬＡ、何したの！？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠レディ・アヴァロン
+裏技！　ふふふ！
+[k]
+
+[charaFace F 0]
+＠レディ・アヴァロン
+戦闘対応できるのは一騎というか、[r]表裏二騎というか、そういう感じになるけど……
+[k]
+
+＠レディ・アヴァロン
+そこから先はマスター次第、かな？
+[k]
+
+＠レディ・アヴァロン
+ちょっとややこしい霊基の状態だけど、[r]まあ慣れだよ慣れ。しっかり慣れておくこと。
+[k]
+
+[charaFace F 6]
+
+＠レディ・アヴァロン
+あとはキャビンに録画データ残しておいたから、[r]それ見といてね！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[charaPut P 0,0]
+[charaEffect P bit_talk_06]
+[wt 1.5]
+
+[charaFace F 0]
+
+＠レディ・アヴァロン
+……あ。
+[k]
+
+？1：レディ・アヴァロン[line 3]
+？！
+
+[charaPut P 2000,2000]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠スカサハ＝スカディ
+………………っ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 4]
+[charaFadeinFSL C 0.1 -406,0]
+[charaFace D 10]
+[charaFadein D 0.1 0,0]
+[charaFace B 2]
+[charaFadeinFSR B 0.1 406,0]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaPut P 0,0]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠レディ・アヴァロン
+……うん。みんな、分かってた顔だね。
+[k]
+
+＠レディ・アヴァロン
+私自身もまた聖杯に喚ばれてきた霊基だからね。[r]そりゃあ、こうもなるさ。
+[k]
+
+？1：…………
+？！
+
+[charaFace F 2]
+
+＠レディ・アヴァロン
+駄目駄目。[r]そんな顔しない！
+[k]
+
+[charaPut P 2000,2000]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠スカサハ＝スカディ
+……すまぬ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut P 0,0]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠レディ・アヴァロン
+こらこら、何でもかんでも謝るものじゃあない。[r]私はそもそもキミに喚ばれた訳じゃないぞ。
+[k]
+
+＠レディ・アヴァロン
+単に、面白そうだからやって来ただけの、[r]綺麗な花の魔術師さ！
+[k]
+
+？1：さっきの方法を自分には……
+
+？！
+
+[charaFace F 1]
+
+＠レディ・アヴァロン
+あはは、それは無理だ。
+[k]
+
+[charaFace F 0]
+
+＠レディ・アヴァロン
+あれは、この子たちがワルキューレだからこそ、[r]霊基が同質であるからこその裏技なんだ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMove P 0,-220 5.0]
+[charaDepth M 7]
+[charaDepth S 8]
+[charaScale M 1.4]
+[charaScale S 1.4]
+[charaFadein M 0.6 0,-200]
+[charaFadein S 0.6 1]
+[wt 1.0]
+
+＠レディ・アヴァロン
+だから、うん……[r]縁があったら召喚されることもあるさ。
+[k]
+
+[charaFace S 1]
+
+＠レディ・アヴァロン
+むしろ、ふふふふ。[r]私としてはそうしてくれると嬉しいかな！
+[k]
+
+
+＠レディ・アヴァロン
+本当は、ちょっと遊びに来た[r]だけのつもりだったけど……
+[k]
+
+＠レディ・アヴァロン
+キミたちに興味が湧いてきたし、[r]もっとスカディの漫画も読みたいしね。
+[k]
+
+
+？1：分かった
+？2：いつか、きっとまた[&会おう:ね]
+？！
+
+＠レディ・アヴァロン
+じゃあ、さよなら！
+[k]
+
+[charaFace S 6]
+
+＠レディ・アヴァロン
+私の分も、ワルキューレたちを愛してあげて！[r]妹っぽいお姉さんとの約束だ。
+[k]
+
+
+[messageOff]
+[charaFaceFade S 1 0.3]
+[wt 1.3]
+[charaFaceFade S 7 0.7]
+[wt 0.7]
+
+＠レディ・アヴァロン
+[#ボクは]アヴァロンの塔にかけて願おう！
+[k]
+
+＠レディ・アヴァロン
+キミたちの歩く道のすべて、[r]いつか、輝く青空といっぱいの花で[#溢:あふ]れますように！
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_EVENT_78 3.0]
+
+[se ad52]
+[charaSpecialEffect S flashErasure 1 2.0]
+[wait charaSpecialEffect S]
+[charaEffectStop P bit_talk_06]
+[wt 2.5]
+
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

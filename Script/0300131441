@@ -1,0 +1,404 @@
+
+
+＄03-00-13-14-4-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098256300 1 骸骨兵]
+[charaSet B 1098256300 1 骸骨兵]
+[charaSet C 1098256300 1 骸骨兵]
+[charaSet D 1098256300 1 骸骨兵]
+[charaSet E 1098256300 1 骸骨兵]
+[charaSet F 1098256300 1 骸骨兵]
+[charaSet G 1098253040 1 カマソッソ]
+[charaSet H 1098255300 1 ニトクリス]
+[charaSet I 1098252940 1 テペウ]
+[charaSet J 8001400 1 マシュ]
+
+[sceneSet O 175700 1]
+
+[charaSet T 98115000 1 エフェクト用ダミー]
+
+
+[scene 173800]
+
+[bgm BGM_BATTLE_137 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk J]
+[charaFace J 7]
+[charaFadein J 0.1 1]
+[wt 0.3]
+
+[se ad7]
+[seVolume ad7 0 0.6]
+[se ad1006]
+[seVolume ad1006 0 0.6]
+[charaFace J 2]
+[charaMoveScale J 1.15 0.3]
+[charaMove J 0,36 0.3]
+[blur motion 0.3 4 100 0.5 0.6 0.03 100]
+[charaFadeout J 0.3]
+[se ad85]
+[effect bit_talk_v_slash01]
+[wt 0.35]
+[blurOff motion 0.1]
+[wt 0.25]
+
+[cueSe Servants_800101 bac690]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+[effectDestroy bit_talk_v_slash01]
+[charaTalk off]
+[charaDepth A 7]
+[charaDepth B 6]
+[charaDepth C 5]
+[charaDepth D 4]
+[charaDepth E 3]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein A 0 1]
+[charaFadeinFSR B 0 150,0]
+[charaFadeinFSL C 0 -150,0]
+[charaFadeinFSSideR D 0 350,0]
+[charaFadeinFSSideL E 0 -350,0]
+[charaShake A 0.02 3 4 0.6]
+[charaShake B 0.03 2 4 0.5]
+[charaShake C 0.03 3 2 0.6]
+[charaShake D 0.02 4 2 0.6]
+[charaShake E 0.02 3 3 0.5]
+[wt 1.0]
+
+[charaMove A 0,-50 0.4]
+[charaFadeout A 0.4]
+[wt 0.05]
+[charaMoveFSSideR D 350,-50 0.4]
+[charaFadeout D 0.4]
+[wt 0.1]
+[charaMoveFSL C -150,-50 0.4]
+[charaMoveFSSideL E -350,-50 0.4]
+[charaFadeout C 0.4]
+[charaFadeout E 0.4]
+[wt 0.05]
+[charaMoveFSR B 150,-50 0.4]
+[charaFadeout B 0.4]
+[wt 0.2]
+[se ad804]
+[seVolume ad804 0 0.8]
+[se ad144]
+[wt 0.2]
+[se ad144]
+[wt 1.3]
+
+
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+＠カマソッソ
+[line 3]どういう事か。[r]これはどういう事か。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠ニトクリス
+勝負ありという事です、中南米の魔神。[r]この廃墟に集まった死霊は霧散しました。
+[k]
+
+＠ニトクリス
+貴方が操れる手駒は、もう一つもありません。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+[wt 0.2]
+
+[cueSe SE_22 22_ad1211]
+[charaCrossFade G 1098253000 5 0.5]
+[wait charaCrossFade G]
+[wt 0.9]
+
+[charaFaceFade G 6 0.2]
+＠カマソッソ
+[line 3]カマソッソは、どういう事かと聞いている！
+[k]
+
+[messageOff]
+[se ade216]
+[wt 0.4]
+
+[cueSe SE_22 22_ad1212]
+[charaMoveScale G 1.25 0.2]
+[charaMove G 0,40 0.2]
+[blur motion 0.2 4 100 0.5 0.6 0.03 100]
+[charaFadeout G 0.2]
+[wt 0.2]
+
+[wipeout circleIn 0.4 1.0]
+[bgm BGM_BATTLE_137 0.6 0.5]
+[wait wipe]
+
+[blurOff motion 0.1]
+
+[scene 10000]
+[wt 0.1]
+[cueSe Servants_105500 m51510]
+[wt 0.1]
+
+[wipein circleIn 0.1]
+[wait wipe]
+
+[effect bit_talk_v_slash01 -100,0]
+[effect bit_talk_v_slash01 0,0]
+[effect bit_talk_v_slash01 100,0]
+[effect bit_talk_v_slash01 -200,0]
+[se ad85]
+[se ad171]
+[cueSe Servants_105500 m51511]
+[wt 1.0]
+
+[se ade33]
+[se ad421]
+[fadeout black 0.2]
+[wait fade]
+
+[scene 175700]
+[wt 1.0]
+
+[charaScale O 1.2]
+[charaFadein O 0.1 100,-225]
+
+[se ad787]
+[charaMove O -100,-225 5.0]
+[bgm BGM_BATTLE_137 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 3.0]
+
+[charaFadeout O 1.0]
+[wt 1.6]
+
+？1：ニトクリス！？
+？2：カマソッソ……！
+
+？！
+
+
+＠カマソッソ
+動くな。[r]動かばオレの鎌が、この女を縦に裂く。
+[k]
+
+[messageOff]
+[se ad532]
+[wt 0.7]
+
+[cueSe SE_21 21_ad1101]
+[shake 0.01 1 1 0.4]
+[wt 1.4]
+
+＠ニトクリス
+っ……！[r]（なんて速度……[#瞬:またた]きより速いなんて……！）
+[k]
+
+＠カマソッソ
+さあ答えろ女。[r]今のはどういう事か。どういう理屈で行った事か。
+[k]
+
+＠ニトクリス
+っ……貴方の使い魔を土に返した事、ですか……？[r]それは死霊をもって死霊を払[line 3]
+[k]
+
+＠カマソッソ
+違う違う違う違う！[r]兵士だ！　貴様が従わせた兵士だ！
+[k]
+
+＠カマソッソ
+あの白い亡者ども[line 3][r]貴様はあの亡者どもを、民として扱ったな？
+[k]
+
+＠カマソッソ
+死した者を！　夢見る魂を失ったものを！[r]よもや、貴様[line 3]
+[k]
+
+[bgmStop BGM_BATTLE_137 1.5]
+
+＠カマソッソ
+[#あの亡者ども全員の]、[r][#名前を覚えているとでも言うのか]？
+[k]
+
+＠ニトクリス
+[line 3]は？
+[k]
+
+＠カマソッソ
+いちいち[#思い出しているのか]、と[#訊:き]いている！
+[k]
+
+＠カマソッソ
+死した者の名を、その記録を、[r]呼び出す度に思い出して使役していると！
+[k]
+
+[bgm BGM_BATTLE_178 0.1]
+
+＠ニトクリス
+[line 3]当然です。[r]彼らはファラオに仕えた臣民。
+[k]
+
+＠ニトクリス
+既に失われたものであれ、その勇名を尊重します。
+[k]
+
+＠ニトクリス
+私のような未熟なファラオが英霊として在るのは、[r]彼らの痛みと共にあるからです。
+[k]
+
+＠カマソッソ
+[line 3]カ。[wt 0.6][r]カ[messageShake 0.05 4 3 0.6]ァァ、カァァァァァアアア！
+[k]
+
+[messageOff]
+[se ad977]
+[se ade216]
+[wt 0.1]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[bgm BGM_BATTLE_178 0.4 0.5]
+[wait wipe]
+
+[cueSe SE_22 22_ad1212]
+
+[scene 170300]
+[wt 0.65]
+
+[bgm BGM_BATTLE_178 0.4 1.0]
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.25]
+
+[cueSe Servants_404400 m45219]
+
+[charaPut T 1]
+[charaEffect T bit_talk_quickmove 0,0 V]
+[wt 0.1]
+[charaPut G 0,-10]
+[charaFace G 14]
+[charaSpecialEffect G appearance 0,0 0.2]
+[wait charaSpecialEffect G]
+[charaMove G 0,0 0.2]
+[wt 0.3]
+
+＠カマソッソ
+虫唾が走る、虫唾が走る！[r]ああ、かゆいかゆいかゆいかゆい！
+[k]
+
+＠カマソッソ
+耐えきれぬ、オレは耐えきれぬ！
+[k]
+
+＠カマソッソ
+最悪の日だ、最低の女だ、[r]なんだその[#小癪:こしゃく]な耳は、全身の産毛が針になる！
+[k]
+
+[charaFaceFade G 10 0.2]
+＠カマソッソ
+オレは[#第四冥界:ヤ　ヤ　ウ　キ]に[#湯治:とうじ]に行く！[r]夜の[#源泉:げんせん]であれば、この悪寒も癒えるだろう！
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_178 1.5]
+[se ade216]
+[wt 0.1]
+[cueSe SE_21 21_ad1078]
+[charaDepth T 8]
+[charaDepth G 6]
+[charaPut T 1]
+[charaEffect T bit_talk_quickmove]
+[charaSpecialEffect G erasureReverse 0,0 0.3]
+[wt 0.5]
+[seStop 21_ad1078 0.7]
+[wt 1.0]
+[wait charaSpecialEffect G]
+
+[wt 1.4]
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[scene 173800]
+[wt 0.6]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk H]
+[charaFace H 13]
+[charaFadein H 0.1 1]
+＠ニトクリス
+……何やらたいへん不敬な言葉を[r]吐かれた気がしますが……
+[k]
+
+＠ニトクリス
+これで撃退したのでしょうか？[r]なんの攻撃も与えられはしませんでしたが……
+[k]
+
+？1：うん、まあ……
+？2：とりあえず、勝利かと……
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+＠テペウ
+はい。皆さんの勝利です。[r]そして助かりました。ありがとうございます。
+[k]
+
+＠テペウ
+ニトクリス。貴女は今まで誰も撃退する事の[r]できなかったカマソッソに打ち勝ったのです。
+[k]
+
+＠テペウ
+間違いなく[#祭事:まつり]が執り行われます。[r]胸を張ってチチェン・イツァーにお戻りください。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+＠ニトクリス
+はあ、[#祭事:まつり]ですか……[wt 0.7][charaFace H 4][r]って、はい？
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
