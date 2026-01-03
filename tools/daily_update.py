@@ -17,4 +17,3 @@ def main():
         print(sid)
 
 if __name__ == "__main__":
-    main()
