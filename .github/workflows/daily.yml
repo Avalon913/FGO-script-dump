@@ -20,26 +20,30 @@ jobs:
         run: |
           git clone --depth 1 https://git.atlasacademy.io/atlasacademy/fgo-game-data.git atlas-data
 
-      # 只生成 Script（保留目录结构，去掉 .txt，增量）
-      - name: Sync Script folder (keep dirs, no .txt)
+      - name: Sync Script folder (keep dirs, remove .txt)
         run: |
           mkdir -p Script
-
           find atlas-data/ScriptActionEncrypt -type f -name "*.txt" | while read f; do
-            rel="${f#atlas-data/ScriptActionEncrypt/}"   # 01/0100000010.txt
-            out="Script/${rel%.txt}"                     # Script/01/0100000010
+            rel="${f#atlas-data/ScriptActionEncrypt/}"   # 例如 01/0100000010.txt
+            out="Script/${rel%.txt}"                     # 变成 Script/01/0100000010
 
             mkdir -p "$(dirname "$out")"
 
+            # 增量：只有新增或内容变化才复制
             if [ ! -f "$out" ] || ! cmp -s "$f" "$out"; then
               cp "$f" "$out"
             fi
           done
 
-      - name: Commit and push
+      - name: Commit and push (skip if no changes)
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add Script
-          git diff --cached --quiet || git commit -m "auto: update scripts ($(date +%F))"
-          git push
+
+          if git diff --cached --quiet; then
+            echo "No changes, skip commit."
+          else
+            git commit -m "auto: update scripts ($(date +%F))"
+            git push
+          fi
