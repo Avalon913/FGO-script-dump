@@ -1,4 +1,4 @@
-name: Auto Dump FGO Scripts (no txt + daily updates, keep 15 days)
+name: Auto Dump FGO Scripts (no txt + updates story-only, append changes)
 
 permissions:
   contents: write
@@ -6,8 +6,7 @@ permissions:
 on:
   workflow_dispatch:
   schedule:
-    # GitHub cron is UTC. Runs at minute 10 and 20 of every hour.
-    - cron: "10,20 * * * *"
+    - cron: "10,20 * * * *"  # UTC
 
 jobs:
   dump:
@@ -23,56 +22,42 @@ jobs:
           rm -rf atlas-data
           git clone --depth 1 https://git.atlasacademy.io/atlasacademy/fgo-game-data.git atlas-data
 
-      - name: Sync Script + updates/YYYY-MM-DD (incremental, keep 15 days)
+      - name: Sync Script + updates/YYYY-MM-DD (append changed story files; do NOT delete updates)
         shell: bash
         run: |
           set -euo pipefail
 
-          DATE="$(date +%F)"     # e.g. 2026-01-03 (UTC date on runner)
-          KEEP_DAYS=15
+          DATE="$(date +%F)"   # UTC date
 
           mkdir -p Script
           mkdir -p "updates/$DATE"
 
-          # Fix: if history had a file named Script/ScriptFileList, it conflicts with directory creation
+          # Fix conflict: Script/ScriptFileList file vs directory
           if [ -e "Script/ScriptFileList" ] && [ ! -d "Script/ScriptFileList" ]; then
             rm -f "Script/ScriptFileList"
           fi
 
-          # Sync: Any new/changed -> overwrite Script (without .txt) and copy to updates/DATE (only changed files)
           while IFS= read -r -d '' f; do
-            rel="${f#atlas-data/ScriptActionEncrypt/}"  # e.g. 01/0100000010.txt or sp/xxxx.txt
-            out="Script/${rel%.txt}"                    # Script/01/0100000010
-            upd="updates/$DATE/${rel%.txt}"             # updates/DATE/01/0100000010
+            rel="${f#atlas-data/ScriptActionEncrypt/}"  # preserve relative path
+            out="Script/${rel%.txt}"                    # remove .txt
+            upd="updates/$DATE/${rel%.txt}"
 
             mkdir -p "$(dirname "$out")"
-            mkdir -p "$(dirname "$upd")"
 
+            # Only when new/changed compared to Script cache
             if [ ! -f "$out" ] || ! cmp -s "$f" "$out"; then
+              # Update Script cache
               cp "$f" "$out"
-              cp "$f" "$upd"
+
+              # updates: only story files (no content modifications)
+              if grep -a -q -E '^(＠|？[0-9]+：)' "$f"; then
+                mkdir -p "$(dirname "$upd")"
+                cp "$f" "$upd"
+              fi
             fi
           done < <(find atlas-data/ScriptActionEncrypt -type f -name "*.txt" -print0)
 
-          # NOTE:
-          # Do NOT delete updates/$DATE when empty.
-          # Because this workflow runs multiple times per day; deleting it could remove earlier runs' contents.
-
-          # Keep only the latest KEEP_DAYS days in updates/
-          if [ -d "updates" ]; then
-            cutoff="$(date -d "$KEEP_DAYS days ago" +%s)"
-            find updates -mindepth 1 -maxdepth 1 -type d | sort | while read -r d; do
-              dir_date="$(basename "$d")"  # YYYY-MM-DD
-              if date -d "$dir_date" >/dev/null 2>&1; then
-                dts="$(date -d "$dir_date" +%s)"
-                if [ "$dts" -lt "$cutoff" ]; then
-                  rm -rf "$d"
-                fi
-              fi
-            done
-          fi
-
-          # Safety: remove any accidental .txt files under Script/ (shouldn't exist, but just in case)
+          # Safety: remove any accidental .txt files under Script/
           find Script -type f -name "*.txt" -delete || true
 
       - name: Commit and push (skip if no changes)
