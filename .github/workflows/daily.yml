@@ -1,4 +1,4 @@
-name: Auto Dump FGO Scripts
+name: Auto Dump FGO Scripts (no txt)
 
 permissions:
   contents: write
@@ -20,24 +20,26 @@ jobs:
         run: |
           git clone --depth 1 https://git.atlasacademy.io/atlasacademy/fgo-game-data.git atlas-data
 
-      - name: Sync ScriptActionEncrypt to raw
+      # 只生成 Script（保留目录结构，去掉 .txt，增量）
+      - name: Sync Script folder (keep dirs, no .txt)
         run: |
-          mkdir -p raw
-          rsync -a --delete atlas-data/ScriptActionEncrypt/ raw/ScriptActionEncrypt/
-
-      - name: Build Script folder (remove .txt extension)
-        run: |
-          rm -rf Script
           mkdir -p Script
-          find raw/ScriptActionEncrypt -type f -name "*.txt" | while read f; do
-            name=$(basename "$f" .txt)
-            cp "$f" "Script/$name"
+
+          find atlas-data/ScriptActionEncrypt -type f -name "*.txt" | while read f; do
+            rel="${f#atlas-data/ScriptActionEncrypt/}"   # 01/0100000010.txt
+            out="Script/${rel%.txt}"                     # Script/01/0100000010
+
+            mkdir -p "$(dirname "$out")"
+
+            if [ ! -f "$out" ] || ! cmp -s "$f" "$out"; then
+              cp "$f" "$out"
+            fi
           done
 
       - name: Commit and push
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add raw Script
+          git add Script
           git diff --cached --quiet || git commit -m "auto: update scripts ($(date +%F))"
           git push
