@@ -1,23 +1,39 @@
-name: Daily Script Check
+name: Auto Dump FGO Scripts
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 3 * * *"   # 每天 UTC 3 点跑（你可改）
+    - cron: "0 3 * * *"   # 每天 UTC 03:00 自动跑
 
 jobs:
-  check:
+  dump:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout your repo
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
+      - name: Clone Atlas Academy game data
+        run: |
+          git clone --depth 1 https://git.atlasacademy.io/atlasacademy/fgo-game-data.git atlas-data
 
-      - name: Install deps
-        run: python -m pip install requests
+      - name: Prepare directories
+        run: |
+          mkdir -p raw
+          mkdir -p updates/$(date +%F)
 
-      - name: Run update
-        run: python tools/daily_update.py
+      - name: Sync ScriptActionEncrypt to raw
+        run: |
+          rsync -a --delete atlas-data/ScriptActionEncrypt/ raw/ScriptActionEncrypt/
+
+      - name: Copy updated scripts to updates folder
+        run: |
+          rsync -a atlas-data/ScriptActionEncrypt/ updates/$(date +%F)/ScriptActionEncrypt/
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add raw updates
+          git diff --cached --quiet || git commit -m "auto: update script dumps ($(date +%F))"
+          git push
