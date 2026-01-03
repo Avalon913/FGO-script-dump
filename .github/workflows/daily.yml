@@ -1,4 +1,4 @@
-name: Auto Dump FGO Scripts (no txt + dated updates, keep 15 days)
+name: Auto Dump FGO Scripts (no txt + daily updates, keep 15 days)
 
 permissions:
   contents: write
@@ -6,38 +6,44 @@ permissions:
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 3 * * *"
+    # GitHub cron is UTC. Runs at minute 10 and 20 of every hour.
+    - cron: "10,20 * * * *"
 
 jobs:
   dump:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Clone Atlas Academy game data
         run: |
+          rm -rf atlas-data
           git clone --depth 1 https://git.atlasacademy.io/atlasacademy/fgo-game-data.git atlas-data
 
-      - name: Sync Script + Dated updates (keep dirs, remove .txt, incremental)
+      - name: Sync Script + updates/YYYY-MM-DD (incremental, keep 15 days)
+        shell: bash
         run: |
-          DATE="$(date +%F)"
+          set -euo pipefail
+
+          DATE="$(date +%F)"     # e.g. 2026-01-03 (UTC date on runner)
           KEEP_DAYS=15
 
           mkdir -p Script
           mkdir -p "updates/$DATE"
 
-          # 修复：历史里若有同名文件 Script/ScriptFileList，会与目录冲突
+          # Fix: if history had a file named Script/ScriptFileList, it conflicts with directory creation
           if [ -e "Script/ScriptFileList" ] && [ ! -d "Script/ScriptFileList" ]; then
             rm -f "Script/ScriptFileList"
           fi
 
-          # 同步：新增/变化 -> 覆盖 Script，并复制到 updates/DATE
-          find atlas-data/ScriptActionEncrypt -type f -name "*.txt" | while read f; do
-            rel="${f#atlas-data/ScriptActionEncrypt/}"   # 01/0100000010.txt
-            out="Script/${rel%.txt}"                     # Script/01/0100000010
-            upd="updates/$DATE/${rel%.txt}"              # updates/DATE/01/0100000010
+          # Sync: Any new/changed -> overwrite Script (without .txt) and copy to updates/DATE (only changed files)
+          while IFS= read -r -d '' f; do
+            rel="${f#atlas-data/ScriptActionEncrypt/}"  # e.g. 01/0100000010.txt or sp/xxxx.txt
+            out="Script/${rel%.txt}"                    # Script/01/0100000010
+            upd="updates/$DATE/${rel%.txt}"             # updates/DATE/01/0100000010
 
             mkdir -p "$(dirname "$out")"
             mkdir -p "$(dirname "$upd")"
@@ -46,20 +52,18 @@ jobs:
               cp "$f" "$out"
               cp "$f" "$upd"
             fi
-          done
+          done < <(find atlas-data/ScriptActionEncrypt -type f -name "*.txt" -print0)
 
-          # 如果今天没有任何变化，删除空的 updates/DATE
-          if [ -z "$(find "updates/$DATE" -type f 2>/dev/null)" ]; then
-            rmdir "updates/$DATE" || true
-          fi
+          # NOTE:
+          # Do NOT delete updates/$DATE when empty.
+          # Because this workflow runs multiple times per day; deleting it could remove earlier runs' contents.
 
-          # ====== 只保留最近 KEEP_DAYS 天的 updates ======
+          # Keep only the latest KEEP_DAYS days in updates/
           if [ -d "updates" ]; then
-            find updates -mindepth 1 -maxdepth 1 -type d | sort | while read d; do
-              dir_date="$(basename "$d")"
-              # 只处理形如 YYYY-MM-DD 的目录
+            cutoff="$(date -d "$KEEP_DAYS days ago" +%s)"
+            find updates -mindepth 1 -maxdepth 1 -type d | sort | while read -r d; do
+              dir_date="$(basename "$d")"  # YYYY-MM-DD
               if date -d "$dir_date" >/dev/null 2>&1; then
-                cutoff="$(date -d "$KEEP_DAYS days ago" +%s)"
                 dts="$(date -d "$dir_date" +%s)"
                 if [ "$dts" -lt "$cutoff" ]; then
                   rm -rf "$d"
@@ -68,10 +72,16 @@ jobs:
             done
           fi
 
+          # Safety: remove any accidental .txt files under Script/ (shouldn't exist, but just in case)
+          find Script -type f -name "*.txt" -delete || true
+
       - name: Commit and push (skip if no changes)
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions"
           git config user.email "actions@github.com"
+
           git add Script updates
 
           if git diff --cached --quiet; then
