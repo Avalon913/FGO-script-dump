@@ -1,0 +1,552 @@
+
+
+
+＄04-00-04-14-5-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 25016001 1 ＸＸ・オルタ]
+[charaSet B 1098253140 1 キングプロテア・オルタ]
+[charaSet C 1098303530 1 パッションリップ]
+[charaSet D 1098307900 1 岸波白野]
+
+[sceneSet E 225800 1]
+[charaScale E 1.4]
+[sceneSet F 225800 1]
+[charaScale F 1.4]
+
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 98115000 1 エフェクト用2]
+
+[sceneSet J 225100 1]
+[charaScale J 1.2]
+
+[scene 225100]
+
+[subCameraOn 1]
+[charaLayer B sub #A]
+[charaLayer E sub #A]
+[charaLayer F sub #A]
+[subCameraFilter #A maskEdge cut359_mask07 3 0,0,0,255 0]
+[charaLayer H sub #A]
+
+[charaTalk depthOff]
+[charaDepth H 4]
+[charaDepth B 3]
+[charaDepth F 2]
+[charaDepth E 1]
+
+[charaDepth C 3]
+[charaDepth A 2]
+[charaDepth J 1]
+
+[charaFadein J 0.1 0,-250]
+
+[charaFadein E 0.1 0,0]
+[subRenderFadein #A 0.1 -0,-200]
+[wt 0.1]
+[fadein black 0.5]
+[wt 0.4]
+[se ad32]
+[se ad1014]
+[fowardEffect bit_talk_blow02 0,0]
+[wait fade]
+
+[charaScale B 1.2]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.2 0,190]
+[wt 0.1]
+[charaMoveScaleEase B 1.0 0.2 easeOutQuint]
+[charaMoveEase B 0,150 0.2 easeOutQuint]
+[wt 1.2]
+
+[bgm BGM_MAP_64 1.0]
+
+？1：勝負あった！　今こそ話を聞いてもらう時！
+
+[subRenderMoveEase #A -200,-200 0.5 easeInOutSine]
+[charaMoveEase J -100,-250 0.5 easeInOutSine]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 20]
+[charaFadein A 0.2 350,0]
+[wt 0.2]
+
+＠ＸＸ・オルタ
+あれ？[r]世界を救う時ではなく？
+[k]
+
+[charaFace B 14]
+
+＠B：キングプロテア・オルタ
+そう思っていたのはアナタだけよ、不良社員！
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 350,0]
+
+？2：周りのケーキを粗末にしたくなかったんだね
+
+[charaFace B 20]
+
+＠キングプロテア・オルタ
+……！
+[k]
+
+[subRenderMoveEase #A -200,-200 0.5 easeInOutSine]
+[charaMoveEase J -100,-250 0.5 easeInOutSine]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.2 350,0]
+
+？！
+
+＠パッションリップ
+力自慢の貴女が負けたのは事実です。[r]これ以上、その[#巨:たか]いプライドに[#泥:どろ]を塗りますか？
+[k]
+
+[charaFace B 7]
+
+＠B：キングプロテア・オルタ
+くっ……！　なに、リップのクセにヴァイオレット[r]みたいな事を……
+[k]
+
+＠B：キングプロテア・オルタ
+……みたいな……。
+[k]
+
+[charaFace B 0]
+
+＠B：キングプロテア・オルタ
+……。[r]アナタ、もしかして初期化してる？
+[k]
+
+[charaFace C 12]
+
+＠パッションリップ
+はい。カルデアに所属していた[r]パッションリップの記録は消滅しました。
+[k]
+
+＠パッションリップ
+今の私はＢＢに作られた時の、[r]まだエゴのない私です。
+[k]
+
+[charaFace B 5]
+
+＠B：キングプロテア・オルタ
+どういう事。説明して[%1]。
+[k]
+
+＠B：キングプロテア・オルタ
+パッションリップに、いえ、[r][#私たち]に何があったの？
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_MAP_64 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadein B 0.1 0,100]
+[charaPut H 100,200]
+[charaEffect H bit_talk_skip_noise02]
+[effect bit_talk_skip_noise02]
+[charaFadeout C 0.1]
+[charaFace B 0]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad235]
+[wt 0.4]
+[charaMoveReturn B 0,95 0.2]
+[wt 0.6]
+[seStop ad235]
+[wt 0.1]
+[charaFace B 7]
+[wt 0.2]
+[se ad235]
+[wt 1.0]
+[seStop ad235]
+[wt 0.1]
+[charaFace B 10]
+[wt 0.2]
+
+[se ad234]
+[seVolume ad234 0 0.6]
+[wt 1.4]
+[charaFace B 5]
+[wt 1.0]
+[charaFace B 19]
+[charaMoveReturn B 0,95 0.2]
+[wt 0.5]
+[seStop ad234]
+[wt 0.4]
+[charaFace B 9]
+
+[se ad235]
+[wt 1.4]
+[seStop ad235]
+[wt 0.1]
+
+
+[se ad234]
+[seVolume ad234 0 0.6]
+[charaShake B 0.05 3 3 0.3]
+[charaFace B 18]
+[wt 1.0]
+[seStop ad234 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFace B 0]
+[charaFadein B 0.1 0,150]
+[charaFadeout J 0.1]
+
+[charaPut H 2000,2000]
+[charaEffectStop H bit_talk_skip_noise02]
+[effectStop bit_talk_skip_noise02]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+？1：[line 3]というのが今までの出来事なんだ
+
+？！
+
+
+[bgm BGM_EVENT_77 0.1]
+
+＠B：キングプロテア・オルタ
+いいわ。協力します。[r]支度をするから少し待っていて。10分ちょうだい。
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ad1441]
+[charaMove B 0,145 0.5]
+[wt 0.8]
+[charaMove B 5,145 0.3]
+[wt 0.3]
+[charaMove B -5,145 0.6]
+[wt 0.6]
+[charaMove B 0,145 0.3]
+[seStop 24_ad1441 0.6]
+
+[wt 1.0]
+
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 350,0]
+
+＠パッションリップ
+あっさり承諾しましたが、[r]何をしてほしいのか分かってますか？
+[k]
+
+[charaFace B 2]
+
+＠B：キングプロテア・オルタ
+プロテアをぶん殴ればいいんでしょ。[r]望むところよ。いつか決着をつけようと思っていたし。
+[k]
+
+＠B：キングプロテア・オルタ
+でも……
+[k]
+
+[charaFace B 5]
+
+＠B：キングプロテア・オルタ
+確認するけど、プロテアのヤツはムーンキャンサーを[r]吸収するたびに大きくなったのね？
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 350,0]
+
+＠岸波白野
+ああ。アストルフォとジナコさん、[r]二騎のムーンキャンサーを吸収して、
+[k]
+
+＠岸波白野
+今は100メートルほどの大きさになっている。[r]キミはいま80メートルほどだけど、勝算はある？
+[k]
+
+[charaFace B 6]
+
+＠キングプロテア・オルタ
+20メートル差なんて[#放:ほう]っておけばすぐ育ちます。
+[k]
+
+＠キングプロテア・オルタ
+プロテアのスキル『ヒュージスケール』は[r]もともと『成長願望』から生まれたもの。
+[k]
+
+＠キングプロテア・オルタ
+キングプロテアは生存しているだけで成長する。[r]微量だけど常に種火を獲得しているようなものだから。
+[k]
+
+？1：？
+？2：巨大化にムーンキャンサーは必要ないって事？
+
+？！
+
+[charaFace B 1]
+
+＠キングプロテア・オルタ
+さあ？[r]まあ、今のプロテアはムーンキャンサーなんでしょ。
+[k]
+
+[charaFace B 3]
+
+＠キングプロテア・オルタ
+[#同じ属性のものを吸収]した方が効率がいいのかもよ？
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ad1441]
+[wt 0.5]
+[fadeout black 1.0]
+[wait fade]
+[seStop 24_ad1441 0.6]
+
+[subRenderFadein #A 0.1 -0,-200]
+[charaFadein B 0.1 0,150]
+
+[charaFadeout D 0.1]
+[charaFace B 0]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+＠キングプロテア・オルタ
+支度ができた。[r]まずはエリアＥのモールに行けばいいのね。
+[k]
+
+＠キングプロテア・オルタ
+私は先に行っているわ。[r]アナタたちのコンパスに合わせるなんて面倒だから。
+[k]
+
+？1：運んでくれないんだ？
+？！
+
+[charaFace B 18]
+
+＠キングプロテア・オルタ
+あのですね、死にたいんですか？
+[k]
+
+＠キングプロテア・オルタ
+対プロテアのために[r]歩きながら[#成長:グロウアップ]するんです。
+[k]
+
+＠キングプロテア・オルタ
+途中で落としたりしたら大惨事でしょ。[r]私は責任とれませんから。
+[k]
+
+[messageOff]
+[se ade79]
+[charaMove B 50,150 0.5]
+[charaFadeout B 0.5]
+[wt 2.0]
+
+？1：ところで、なんでケーキ屋を開いて[&たんだ:たの]？
+？！
+
+[messageOff]
+[charaFace B 8]
+[charaFadein B 0.5 0,150]
+[charaFadein F 0.5 -150,0]
+[wt 1.0]
+
+＠キングプロテア・オルタ
+なんでって……それは……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.5]
+[wipeout diaOut 1.5 1]
+[se ade84]
+[wait wipe]
+[charaFadeout F 0.1]
+[effect bit_sepia01_depth_fs]
+[cameraFilter gray]
+[charaPut H 0,200]
+[charaEffect H bit_sepia01_depth_fs]
+[subCameraFilter #A maskEdge&gray cut359_mask07 3 0,0,0,255 0]
+
+[subRenderFadeout #A 0.1]
+[seStop ade84 1.5]
+[scene 224900]
+[wt 1.0]
+
+[wipein diaOut 1.0 1]
+[wt 0.5]
+[wait wipe]
+
+[subRenderFadein #A 0.4 0,-150]
+[subRenderMove #A 0,-200 0.4]
+[wt 0.4]
+[bgm BGM_EVENT_139 0.1]
+
+
+
+[charaFace B 10]
+
+＠キングプロテア・オルタ
+ここが私の配属先？[r]ＢＢは何を考えてるの？
+[k]
+
+＠キングプロテア・オルタ
+各自マスターを歓迎しろって話だけど、[r]こんなところで何をしろと……
+[k]
+
+[charaFace B 0]
+
+＠キングプロテア・オルタ
+…………。[r]……………………。
+[k]
+
+[messageOff]
+[se ad441]
+[wt 1.5]
+
+[charaFace B 7]
+
+＠キングプロテア・オルタ
+こんな時でもお腹の減る[#霊基:からだ]がイヤになる。[r]もとのプロテアが悪いのよ、プロテアが。
+[k]
+
+＠キングプロテア・オルタ
+自分で食べ物を用意しなくちゃいけないなんて[r]最強のサクラファイブにあるまじき[line 3]
+[k]
+
+[charaFace B 19]
+
+＠キングプロテア・オルタ
+食べ物！[r]そっか。それでいいんだ！
+[k]
+
+＠キングプロテア・オルタ
+今こそ私の夢を叶える時！[r]牛乳なら宝具でいくらでも出せるし！
+[k]
+
+[charaFace B 16]
+
+＠キングプロテア・オルタ
+見てなさいＢＢ！[r]そして見て感動するのよ人間たち！
+[k]
+
+＠キングプロテア・オルタ
+ここにとびきりのケーキショップを開きます！[r]噂を聞きつけて１日でも早くやって来ることね！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_139 1.5]
+[wipeout diaOut 1.5 1]
+[se ade84]
+[wait wipe]
+[effectDestroy bit_sepia01_depth_fs]
+[charaPut H 2000,2000]
+[charaPut E -150,0]
+[cameraFilter normal]
+[subCameraFilter #A maskEdge cut359_mask07 3 0,0,0,255 0]
+[subRenderFadein #A 0.1 -200,-200]
+[seStop ade84 1.5]
+[scene 225100]
+[wt 1.0]
+[charaFace B 2]
+
+[wipein diaOut 1.0 1]
+[wt 0.5]
+[wait wipe]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠キングプロテア・オルタ
+……たまたま器具と材料が[#揃:そろ]っていたからよ。[r]エリアＤに手を伸ばせばフルーツもあったしね。
+[k]
+
+[charaFace B 4]
+
+＠キングプロテア・オルタ
+楽しい毎日だったわ。マスターに命令されず、[r]好きなだけここでエンジョイできたんだもの。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 350,0]
+
+＠ＸＸ・オルタ
+え。マスターが来ないからとイライラして[r]私に愚痴ばかり言っていまし
+[k]
+
+
+[messageOff]
+[se ad628]
+[charaMoveReturn B 10,150 0.2]
+[wt 0.1]
+[charaMoveEase A 600,0 0.4 easeOutQuint]
+[charaFadeout A 0.4]
+[wt 0.2]
+[seStop ad628 1.0]
+[charaPutFSSideR I 700,0]
+[charaEffect I bit_talk_impactlanding]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 11]
+
+＠キングプロテア・オルタ
+そうそう。ＸＸ・オルタもコキつかって。
+[k]
+
+＠キングプロテア・オルタ
+彼女の借金、残り13日分の労働義務を[r][%1]に譲渡するわ。
+[k]
+
+[charaFace B 4]
+
+＠キングプロテア・オルタ
+嬉しい？　サービスしすぎで釣り合いが取れない？[r]そうよね。なら協力条件を追加してあげる。
+[k]
+
+＠キングプロテア・オルタ
+『[%1]は１日１個、[r]　テーブルガーデンのケーキを食べること』
+[k]
+
+[charaFace B 12]
+
+＠キングプロテア・オルタ
+分かった？　プロテア退治に協力するんだから、[r]在庫処理にも協力してよね、マスター？
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[seStop ade79 2.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

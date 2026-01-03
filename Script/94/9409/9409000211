@@ -1,0 +1,931 @@
+
+＄94-09-00-02-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1098282700 1 長尾景虎]
+[charaSet B 1098280700 1 今魔川兵]
+[charaSet C 1098173200 1 兵卒]
+[charaSet D 1098282310 1 永倉新八]
+[charaSet E 1098282100 1 蛍（ゴーグル付き）]
+[charaSet F 2052000 1 蛍]
+
+[sceneSet G 200700 1]
+[charaScale G 1.3]
+[sceneSet H 200700 1]
+[charaScale H 1.3]
+
+[sceneSet I 200700 1]
+[charaScale I 1.2]
+[sceneSet J 200700 1]
+[charaScale J 1.2]
+
+[charaSet S 98115000 1 エフェクト用1]
+[charaSet T 98115000 1 エフェクト用2]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth C 2]
+[charaDepth B 3]
+[charaDepth T 4]
+[charaDepth H 5]
+[charaDepth A 6]
+[charaDepth D 7]
+[charaDepth S 8]
+[charaFadein H 0.1 -190,-200]
+
+[scene 200700]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaFace A 13]
+[charaFadein A 0.1 200,0]
+
+＠長尾景虎
+せやぁっ！！
+[k]
+
+[messageOff]
+[se ad158]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut S 1]
+[charaEffect S bit_talk_42 0,0 H]
+[charaMove A 1 0.2]
+[charaFadeout A 0.2]
+[wt 0.5]
+[seStop ad158 0.1]
+[charaPut S 2000,2000]
+[charaEffectStop S bit_talk_42]
+[charaFadeout H 0.4]
+[wt 0.5]
+
+[se ad170]
+[se ad686]
+[cueSe Battle bac151]
+[effect bit_bolg_03y]
+[wt 0.2]
+[fowardEffect bit_talk_14]
+[wt 0.3]
+
+[se ad543]
+[seVolume ad543 0 0.5]
+[se ad671]
+[seStop ad671 0.8]
+[seStop ad543 0.8]
+[charaPut T 1]
+[charaEffect T bit_talk_42 0,0 H]
+[charaFace B 0]
+[charaFadein B 0.4 200,0]
+[charaFadein G 0.5 -190,-200]
+[charaMoveEase G 0,-200 0.8 easeOutQuad]
+[charaMoveEase B -190,0 0.8 easeOutQuad]
+[wt 0.5]
+[effectDestroy bit_bolg_03y]
+[wt 0.3]
+[charaPut T 2000,2000]
+[charaEffectStop T bit_talk_42]
+[wt 0.2]
+
+＠今魔川兵
+ぬおっ！？　ちっ、やるじゃねぇか……。[r]これがサーヴァントの力ってわけか。
+[k]
+
+[messageOff]
+[charaFace A 0]
+[charaFadein H 0.5 -190,-200]
+[charaFadein A 0.5 150,0]
+[wt 0.5]
+[charaMove G 90,-200 0.1]
+[charaMove B -100,0 0.1]
+[wt 0.2]
+
+＠長尾景虎
+私の打ち込みを……、確かにただの雑兵ではありませんね。
+[k]
+
+[messageOff]
+[charaFadeout H 0.8]
+[charaFadeout A 0.8]
+[charaMoveEase G 190,-200 1.0 easeOutQuad]
+[charaMoveEase B 0,0 1.0 easeOutQuad]
+[wt 0.6]
+
+[cueSe SE_21 21_ad1119]
+[se ade210]
+[wt 0.2]
+[charaFace C 0]
+[charaFadein C 0.4 -470,0]
+[charaMove C -440,0 0.4]
+[cueSeStop 21_ad1119 0.5]
+[seStop ade210 0.5]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk C]
+
+＠兵卒
+ど、どうします、頭？
+[k]
+
+[charaTalk B]
+
+＠今魔川兵
+こいつらサーヴァントを操ってる奴をやる。
+[k]
+
+[charaTalk C]
+
+＠兵卒
+操ってる……、ああ！
+[k]
+
+[se bac305]
+[charaTalk B]
+
+＠今魔川兵
+そう、後ろで指図してるあいつをやるんだよ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad678]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut T 1]
+[charaEffect T bit_talk_41_fs]
+[charaMoveScale B 1.4 0.3]
+[charaMove B 0,40 0.3]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaFadeout B 0.3]
+[wt 0.4]
+[charaPut T 2500,2500]
+[charaEffectStop T bit_talk_41_fs]
+[charaScale B 1.0]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[charaFace A 0]
+[charaFadein H 0.5 -190,-200]
+[charaFadein A 0.5 150,0]
+[wt 0.5]
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+
+＠長尾景虎
+そうはさせま……、[wt 0.6][charaFace A 19][charaShake A 0.02 2 2 0.3][se ad240][fowardEffect bit_talk_35]こふっ！？
+[k]
+
+[messageOff]
+[charaMove A 150,-30 0.3]
+[wt 0.3]
+[charaShake A 0.02 2 2 0.3]
+[se ad775]
+[wt 0.5]
+
+[fowardEffectDestroy bit_talk_35]
+[charaMoveEase H -90,-200 0.7 easeOutQuad]
+[charaMoveEase A 250,-30 0.7 easeOutQuad]
+[wt 0.7]
+
+[charaTalk on]
+[charaScale D 1.05]
+[charaTalk D]
+[charaFace D 25]
+[charaFadein D 0.4 -300,0]
+[charaMove D -250,0 0.4]
+[wt 0.4]
+
+＠永倉新八
+どうした姉さん！？　おい、なんだその傷は、[r]えれえ深手じゃねえか！
+[k]
+
+[charaTalk A]
+
+＠長尾景虎
+私にかまわずマスターを……！
+[k]
+
+[charaTalk D]
+[charaFace D 26]
+
+＠永倉新八
+あの[&坊主:嬢ちゃん]か！　ちっ、間に合えよぉっ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale B 1.1]
+[charaFace B 0]
+[charaFadein G 0.1 0,-250]
+[charaFadein B 0.1 0,-100]
+
+[se ad73]
+[charaMoveScale D 1.47 0.3]
+[charaMove D -250,40 0.3]
+[charaFadeout D 0.3]
+[wt 0.4]
+[charaScale D 1.0]
+[wt 0.2]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 0.4 0.5]
+[charaFadeout H 0.4]
+[charaFadeout A 0.4]
+
+[charaPut T 1]
+[charaEffect T bit_talk_41_fs]
+[blur motion 0.4 4 200 0.5 0.6 0.08 200]
+
+[charaMoveScale G 1.08 10.0]
+[charaMoveScale B 1.32 10.0]
+[charaMove G 0,-200 10.0]
+[charaMove B 0,-50 10.0]
+[wt 2.0]
+
+＠今魔川兵
+もうおせぇよ！　死にな！
+[k]
+
+[bgmStop BGM_EVENT_24 0.6]
+[seStop ad556 0.5]
+
+[messageOff]
+[se ad85]
+[charaMoveScale G 1.01 0.35]
+[charaMoveScale B 1.5 0.35]
+[charaMove G 0,-190 0.35]
+[charaMove B 0,-40 0.35]
+[wt 0.15]
+
+[wipeout openEye 0.2 1.0]
+[wait wipe]
+
+[seStop ad85 0.5]
+
+[blurOff motion 0.1]
+[charaFadeout G 0.1]
+[charaPut T 2500,2500]
+[charaEffectDestroy T bit_talk_41_fs]
+
+[subCameraOn 3]
+
+[charaLayer A sub #A]
+[charaLayer I sub #A]
+[charaLayer D sub #B]
+[charaLayer J sub #B]
+[charaLayer B sub #C]
+
+[charaDepth I 1]
+[charaDepth A 2]
+[charaDepth J 1]
+[charaDepth D 2]
+
+[charaFace A 10]
+[charaFace D 25]
+
+[charaFadein I 0.1 -170,-50]
+[charaFadein A 0.1 500,220]
+[charaFadein J 0.1 170,-50]
+[charaFadein D 0.1 -500,220]
+
+[subCameraFilter #A maskEdge cut359_mask11 5 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask12 5 0,0,0,255]
+[subCameraFilter #C through]
+[subRenderFadein #C 0.1 0,0]
+
+[charaScale B 1.4]
+[charaMove B 0,30 0.1]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[se ad563]
+[blur lens 0.1 2 20]
+[wt 2.5]
+
+[wipein openEye 2.0 0.7]
+[wait wipe]
+[wt 0.5]
+
+＠今魔川兵
+…………。
+[k]
+
+[charaShake B 0.03 2 2 0.3]
+
+＠今魔川兵
+うごっ！？
+[k]
+
+
+[messageOff]
+[blurOff lens 1.0]
+[subBlur #C lens 1.0 2 20 1.0 subBlur]
+[charaMoveEase B 0,-270 1.5 easeInQuart]
+[wt 1.0]
+[charaFadeout B 0.5]
+[wt 0.5]
+
+[se ad144]
+[wt 1.0]
+
+[bgm BGM_EVENT_133 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[subRenderFadeinFSSideR #A 0.3 -120,-180]
+[subRenderMoveFSSideR #A -100,-200 0.3]
+[wt 0.3]
+
+＠長尾景虎
+貴方は……！？
+[k]
+
+[charaTalk E]
+[charaFace E 1]
+
+＠E：？？？
+……依頼人はあなたね。
+[k]
+
+？1：君は……
+
+[charaFace E 3]
+
+＠E：？？？
+殺しのサインＭ５１、確かに確認した。
+[k]
+
+？2：さっきの店員さん？
+
+[charaFace E 10]
+
+＠E：？？？
+何の話？　わたしはその依頼を受けてやって来ただけ。[r]そう、殺しのサインＭ５１の。
+[k]
+
+？！
+
+[charaTalk A]
+[charaFace A 1]
+
+＠長尾景虎
+殺しのサイン……？
+[k]
+
+[charaTalk D]
+[subRenderFadeinFSSideL #B 0.3 120,-180]
+[subRenderMoveFSSideL #B 100,-200 0.3]
+[wt 0.3]
+
+＠永倉新八
+Ｍ５１……？
+[k]
+
+[charaTalk E]
+[charaFace E 1]
+
+＠E：？？？
+わたしは[#雑賀:さ い か]の[#蛍:ほたる]。話はあと、とにかくこいつらを始末する。
+[k]
+
+[messageOff]
+[subRenderMoveFSSideR #A -80,-220 0.3]
+[subRenderMoveFSSideL #B 80,-220 0.3]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[wt 0.3]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaLayer A normal]
+[charaLayer D normal]
+[charaLayer B normal]
+[charaLayer I normal]
+[charaLayer J normal]
+[charaScale A 1.0]
+[charaScale D 1.0]
+[charaScale B 1.0]
+[subCameraOff]
+
+[se ade191]
+[charaMoveReturn E 0,-3 0.3]
+[wt 0.5]
+[charaMoveReturn E 0,-3 0.3]
+[wt 1.5]
+
+[charaFace E 3]
+
+＠E：蛍
+目標確認、数２０、近接仕様展開。
+[k]
+
+[messageOff]
+[cueSe SE_23 23_ad1312]
+[effect bit_talk_noble_light]
+[effect bit_talk_magic_absorption]
+[wt 2.0]
+[cameraMoveEase 0,-30 1.0 easeOutCubic 1.2]
+[wt 1.0]
+[cueSe SE_23 23_ade911]
+
+
+[charaFace E 11]
+
+＠E：蛍
+[line 3]これより雑賀を開始する。
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_133 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_noble_light]
+[effectDestroy bit_talk_magic_absorption]
+
+[cameraMoveEase 0,0 0.1 easeOutCubic 1.0]
+[charaScale E 1.0]
+[charaFadeout E 0.1]
+[scene 10000]
+[wt 1.0]
+
+[fadein black 0.1]
+[wait fade]
+
+[skip false]
+[wt 1.0]
+
+[input selectBranch]
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+[cameraMoveEase 0,0 0.1 easeOutCubic 1.0]
+[blurOff]
+[subCameraOff]
+
+[charaEffectDestroy S bit_talk_41_fs]
+[charaEffectDestroy T bit_talk_41_fs]
+[effectDestroy bit_talk_noble_light]
+[effectDestroy bit_talk_magic_absorption]
+[fowardEffectDestroy bit_talk_35]
+
+[charaSet A 1098282700 1 長尾景虎]
+[charaSet B 1098280700 1 今魔川兵]
+[charaSet C 1098173200 1 兵卒]
+[charaSet D 7048000 1 永倉新八]
+[charaSet E 1098282100 1 蛍（ゴーグル付き）]
+[charaSet F 2052000 1 蛍]
+
+[sceneSet G 200700 1]
+[charaScale G 1.3]
+[sceneSet H 200700 1]
+[charaScale H 1.3]
+
+[sceneSet I 200700 1]
+[charaScale I 1.2]
+[sceneSet J 200700 1]
+[charaScale J 1.2]
+
+[charaSet S 98115000 1 エフェクト用1]
+[charaSet T 98115000 1 エフェクト用2]
+
+[scene 10000]
+[wt 0.4]
+
+[maskin black 1.0]
+[wait mask]
+
+[label selectBranch]
+[wt 0.5]
+
+[fowardEffect bit_queststart80451]
+[wait fowardEffect]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaSet D 7048000 1 永倉新八]
+
+[scene 200700]
+[wt 1.0]
+
+[skip true]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠今魔川兵
+ち、ちくしょう……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaMove B 0,-40 0.5]
+[charaShake B 0.03 2 2 0.5]
+[wt 0.4]
+
+[se ad144]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+
+[cueSe Servants_203600 bac1267]
+[wt 1.0]
+
+＠E：蛍
+雑賀完了……。依頼人は無事？
+[k]
+
+？1：大丈夫
+
+[bgm BGM_EVENT_77 0.1]
+[charaFace E 2]
+
+＠E：蛍
+そう、よかった……。
+[k]
+
+？2：ありがとう店員さん
+
+[bgm BGM_EVENT_77 0.1]
+[charaFace E 14]
+
+＠E：蛍
+やはり、バレている。
+[k]
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠長尾景虎
+雑賀……、もしや紀州の[#雑賀衆:さいかしゅう]ですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠E：蛍
+そう、その雑賀衆、名は蛍。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠永倉新八
+まあ、なんでもいいやな。とにかく助かったぜ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：蛍
+……子供たちは無事？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+
+＠永倉新八
+ん？　ああ、おかげさんでな。[r]おまえさんが手を貸してくれなきゃ、ちと危なかった。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠E：蛍
+そう……、良かった……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠長尾景虎
+ええ、助太刀感謝いたします。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠E：蛍
+雑賀は誰かに肩入れしたりはしない。[r]助けたわけじゃなく、ただ依頼をこなしただけ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠長尾景虎
+依頼……、もしや先ほどのチケット、ですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠E：蛍
+そう、Ｍ５１は殺しのサイン、[r]雑賀を[#喚:よ]ぶための符丁。
+[k]
+
+＠E：蛍
+普段は行商人をしているけど、[r]依頼があれば雑賀の仕事をする。
+[k]
+
+[charaFace E 4]
+
+＠E：蛍
+それにしてもこんなに早く正体が[r]ばれるとは思わなかった。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠長尾景虎
+いや、見たままですし……、[r]まあそれは、置いておきますか。
+[k]
+
+[charaFace A 1]
+
+＠長尾景虎
+ところで永倉なにがし、でしたか？[r]確か新選組とかなんとか……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠永倉新八
+おっ！　もしかして知ってんのか、新選組を？
+[k]
+
+？1：知ってるも何も……
+
+[charaFace D 5]
+
+＠永倉新八
+そいつは嬉しいじゃねぇか。最近の若いのは……、[r]おっと、こういうのは良くねぇな。
+[k]
+
+[charaFace D 28]
+
+＠永倉新八
+そうさ、新選組二番隊隊長、永倉新八ってな儂のことよ。
+[k]
+
+
+？2：二番隊隊長の！
+
+[charaFace D 28]
+
+＠永倉新八
+クカカカ！　よくご存じじゃねぇか。[r]その通り、新選組二番隊隊長、永倉新八ってな儂のことよ。
+[k]
+
+？！
+
+[charaFace D 4]
+
+
+＠永倉新八
+まあ、細けぇことは後でいいさ。
+[k]
+
+[charaFace D 18]
+
+＠永倉新八
+とりあえず連れてこられた奴らを、[r]安全な場所まで運ばねぇとな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠長尾景虎
+安全な場所……、何か当てでもあるのですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+
+＠永倉新八
+ちと遠いがな。あいつらのトラックがあるし何とかなんだろ。[r]おまえさんたちはどうする？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠長尾景虎
+私たちも追われる身なので、ご一緒しますか、マスター？
+[k]
+
+？1：よろしくお願いします
+
+＠長尾景虎
+そう致しますか。
+[k]
+
+＠長尾景虎
+ところで雑賀の……、[wt 0.7][charaFace A 1][r]あれ？　また居なくなって……、
+[k]
+
+？2：君はどうする？
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth G 2]
+[charaDepth H 3]
+
+[charaScale G 1.3]
+[charaScale H 1.3]
+[charaFadein G 0.8 90,-250]
+[charaMoveEase G 190,-250 1.5 easeOutSine]
+[wt 2.5]
+[charaFadein H 0.8 -90,-250]
+[charaMoveEase H -190,-250 1.5 easeOutSine]
+[wt 1.0]
+[charaFadeout G 0.1]
+[wt 1.5]
+[charaFadeout H 1.0]
+[wt 1.2]
+[charaFace A 1]
+
+＠長尾景虎
+……また居なくなってますね。[r]何がしたいのかよくわからない御仁ですね。
+[k]
+
+＠長尾景虎
+ところで我々の足はどうしましょ……、
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe SE_23 23_ade945]
+[wt 2.2]
+
+[seStop 23_ade945 1.0]
+[wt 1.5]
+[cueSe SE_23 23_ade943]
+[wt 1.2]
+
+[se ade421]
+[seVolume ade421 0.0 0]
+[seVolume ade421 0.5 1.0]
+[wt 0.8]
+
+[charaTalk depthOn]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+[wt 0.2]
+[seStop ade421 0.3]
+[wt 0.4]
+
+＠蛍
+タクシーの仕事もやってる、[r]今なら貸し切りで格安にしておくけど？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠長尾景虎
+あ、はい。じゃあよろしく。
+[k]
+
+[charaFace A 1]
+
+＠長尾景虎
+それで永倉殿、当てというのはどちらになりますか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠永倉新八
+おう、信濃はほとんど今川の勢力だが、[r]ここから東へ行った地にはあいつがいる。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠長尾景虎
+あいつ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[bgmStop BGM_EVENT_77 2.0]
+
+＠永倉新八
+ああ……、
+[k]
+
+
+＠永倉新八
+[line 3]甲斐の武田がな。
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

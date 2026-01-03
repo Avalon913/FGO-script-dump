@@ -1,0 +1,170 @@
+＄94-14-82-00-1-1
+
+
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[soundStopAll]
+
+[charaSet A 1098330100 1 ドーヴ]
+[charaSet B 1098330200 1 レイヴン]
+
+[charaSet C 1098330100 1 ドーヴ_拡大]
+[charaSet D 1098330200 1 レイヴン_拡大]
+
+[charaScale C 1.2]
+[charaScale D 1.2]
+
+[sceneSet E 254000 1]
+[charaScale E 1.2]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth H 10]
+[charaDepth A 2]
+[charaDepth B 1]
+[charaDepth E 3]
+[charaDepth C 5]
+[charaDepth D 4]
+
+[scene 254000]
+[pictureFrame cut063_cinema]
+[charaTalk off]
+[charaFace A 1]
+[charaFadein A 0.1 -150,-50]
+[charaFace B 0]
+[charaFadein B 0.1 150,-50]
+
+[charaFace D 0]
+[charaFace C 1]
+[charaFadein E 0.1 20,-220]
+[charaFadein C 0.1 -136,-50]
+[charaFadein D 0.1 176,-50]
+[wt 0.1]
+
+[charaPut H 0,0]
+[charaEffect H bit_talk_rain01]
+[se ad507]
+[seVolume ad507 0 0]
+[seVolume ad507 1.0 1.0]
+[charaMove E -20,-220 4.0]
+[charaMove C -176,-50 4.0]
+[charaMove D 136,-50 4.0]
+[fadein black 1.0]
+[wait fade]
+[wt 2.0]
+[bgm BGM_EVENT_175 1.0]
+
+[charaFadeout E 1.0]
+[charaFadeout D 1.0]
+[charaFadeout C 1.0]
+[seVolume ad507 1.0 0.3]
+[wt 1.0]
+
+[charaTalk on]
+＠A：？？？
+……すごい……すごいな……。[r]ネフィリムたちを倒しちゃうなんて……。
+[k]
+
+＠A：？？？
+ね、ねえ、あの人たちならもしかして……！
+[k]
+
+[charaFace A 3]
+
+＠A：？？？
+……嗚呼……でも、でもでも……[r]これでよかったのかな、レイちゃん？
+[k]
+
+[clear]
+[charaTalk B]
+
+＠B：？？？
+[line 3]うん。
+[k]
+
+[charaFace B 3]
+
+＠B：？？？
+他に方法なんかないって、ドー。[r]もう、これしかないんだ。
+[k]
+
+＠B：？？？
+わたしたちの船と……[r]ノア様のためには……。
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[wt 1.0]
+[seStop ad507 2.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_175 2.0]
+[wait fade]
+
+[charaEffectDestroy H bit_talk_rain01]
+[pictureFrame]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[scene 10000]
+[wt 0.2]
+
+[fadein black 1.5]
+[wait fade]
+
+[input selectBranch]
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+
+[charaEffectDestroy H bit_talk_rain01]
+[pictureFrame]
+
+[charaSet A 98115000 1 初期化用ダミー]
+[charaSet B 98115000 1 初期化用ダミー]
+[charaSet C 98115000 1 初期化用ダミー]
+[charaSet D 98115000 1 初期化用ダミー]
+[charaSet E 98115000 1 初期化用ダミー]
+[charaSet F 98115000 1 初期化用ダミー]
+[charaSet G 98115000 1 初期化用ダミー]
+[charaSet H 98115000 1 初期化用ダミー]
+[charaSet I 98115000 1 初期化用ダミー]
+[charaSet J 98115000 1 初期化用ダミー]
+[charaSet K 98115000 1 初期化用ダミー]
+[charaSet L 98115000 1 初期化用ダミー]
+[charaSet M 98115000 1 初期化用ダミー]
+[charaSet N 98115000 1 初期化用ダミー]
+[charaSet O 98115000 1 初期化用ダミー]
+[charaSet P 98115000 1 初期化用ダミー]
+[charaSet Q 98115000 1 初期化用ダミー]
+[charaSet R 98115000 1 初期化用ダミー]
+[charaSet S 98115000 1 初期化用ダミー]
+[charaSet T 98115000 1 初期化用ダミー]
+[charaSet U 98115000 1 初期化用ダミー]
+[charaSet V 98115000 1 初期化用ダミー]
+[charaSet W 98115000 1 初期化用ダミー]
+[charaSet X 98115000 1 初期化用ダミー]
+[charaSet Y 98115000 1 初期化用ダミー]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+
+[wt 0.5]
+
+[fowardEffect bit_chapterstart80559]
+[wait fowardEffect]
+[wt 0.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[soundStopAll]
+[end]
+

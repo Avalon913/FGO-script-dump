@@ -1,0 +1,1074 @@
+
+
+＄94-14-58-02-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098333400 1 ラーマ]
+[charaSet B 1098330700 1 アルジュナ]
+[charaSet C 1098328400 1 ヴリトラ]
+[charaSet D 1098328720 1 インドラ]
+[charaSet E 1098328000 1 ヴァジュラ]
+[charaSet F 1098328100 1 ヴァジュラ]
+[charaSet G 3054000 1 ビーマ]
+
+[charaSet H 3046001 1 ヴリトラ演出用]
+[charaSet I 3054000 1 ビーマ演出用]
+[charaSet J 1098330700 1 アルジュナ演出用]
+
+[sceneSet K 253610 1]
+[sceneSet L 253610 1]
+[sceneSet M 253610 1]
+
+[sceneSet O 253610 1]
+[sceneSet P 253610 1]
+[sceneSet Q 10000 1]
+
+[charaSet S 98115000 1 エフェクト用1]
+[charaSet T 98115000 1 エフェクト用2]
+[charaSet U 98115000 1 エフェクト用3]
+[charaSet V 98115000 1 エフェクト用4]
+
+[sceneSet W 10001 1]
+[sceneSet X 10000 1]
+[charaScale X 1.1]
+[imageSet Y back10000 1]
+[charaScale Y 1.05]
+[imageSet Z back10000 1]
+[charaScale Z 1.05]
+
+[charaTalk depthOff]
+[charaDepth L 1]
+[charaDepth C 2]
+[charaDepth B 3]
+[charaDepth X 4]
+[charaDepth M 5]
+[charaDepth A 6]
+[charaDepth K 7]
+
+[subCameraOn 4]
+[charaLayer D sub #A]
+[charaLayer E sub #A]
+[charaLayer F sub #A]
+[charaLayer O sub #A]
+[charaLayer W sub #MASK]
+[charaLayer Y sub #MASK]
+[charaLayer Z sub #MASK]
+[subCameraFilter #A normal]
+[subCameraFilter #A maskEdge #MASK 5 77,102,132,255 0]
+
+[charaDepth O 1]
+[charaDepth D 2]
+[charaDepth F 3]
+[charaDepth E 4]
+[charaDepth W 5]
+[charaDepth Y 6]
+[charaDepth Z 7]
+
+[charaScale O 1.2]
+[charaScale E 0.9]
+[charaScale F 0.9]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0 1]
+[charaFace E 0]
+[charaFadein E 0 250,-8]
+[charaFace F 0]
+[charaFadein F 0 -250,-16]
+[charaFadein O 0 0,-300]
+
+[charaFadein W 0 0,-200]
+[charaFadein Y 0 1060,-200]
+[charaFadein Z 0 -1060,-200]
+
+[charaLayer P sub #B]
+[charaLayer I sub #B]
+[charaLayer S sub #B]
+[subCameraFilter #B maskEdge cut359_mask20 4 105,29,159,255 0]
+
+[charaDepth P 1]
+[charaDepth I 2]
+[charaDepth S 3]
+
+[charaScale P 1.3]
+[charaFace I 0]
+[charaFadein I 0 0,280]
+[charaFadein P 0 250,0]
+[charaEffect I bit_talk_wind_aura_bma]
+
+[charaLayer K sub #C]
+[charaLayer G sub #C]
+[charaLayer V sub #C]
+[subCameraFilter #C normal]
+[charaDepth K 1]
+[charaDepth G 2]
+[charaDepth V 8]
+[charaScale K 1.4]
+[charaFace G 0]
+[charaFadein G 0 1]
+[charaFadein K 0 0,-350]
+
+[charaEffect G bit_talk_wind_aura_bma]
+
+[scene 253610]
+
+[bgm BGM_BATTLE_107 0.1]
+
+[cueSe SE_23 23_ade904 0.5 0.3]
+[fadein black 0.5]
+[wait fade]
+[wt 0.2]
+
+[charaTalk off]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.3]
+[se ad73]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[wt 0.6]
+[cueSe Servants_201500 bac1158]
+[effect bit_talk_arrow_enemy_r]
+[fowardEffect bit_talk_strongwind04_cl]
+[wt 1.0]
+
+[cueSe SE_23 23_ade890 0.8 0.6]
+[cueSeVolume 23_ade904 0.8 0.8]
+[subRenderFadein #C 0.3 0,0]
+[wt 0.3]
+[se ade338]
+[wt 0.3]
+[effectDestroy bit_talk_arrow_enemy_r]
+[cueSe SE_23 23_ade930]
+[fowardEffect bit_talk_guard_eighthit]
+[wt 1.0]
+[cueSeStop 23_ade890 2.0]
+[cueSeVolume 23_ade904 2.0 0.2]
+[wt 2.0]
+[fowardEffectStop bit_talk_strongwind04_cl]
+
+？1：凄い風で攻撃が阻まれて……
+？！
+
+[messageOff]
+[charaFace G 2]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[cueSe Servants_305400 m55016]
+[charaPut V 1]
+[charaEffect V bit_talk_41_fs]
+[charaMoveScale K 1.2 0.3]
+[charaMoveScale G 1.5 0.3]
+[charaMove K 0,-300 0.3]
+[charaMove G 0,50 0.3]
+[charaFadeout G 0.3]
+[wt 0.4]
+[charaPut V 2500,2500]
+[charaPut G 2500,2500]
+[charaEffectStop V bit_talk_41_fs]
+[charaScale G 1.0]
+[wt 0.1]
+
+[subRenderFadeout #C 0.3]
+[wt 0.3]
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.15]
+[se ad85]
+[effect bit_talk_gram_slash_violet_02]
+[wt 0.3]
+[effectStop bit_talk_windstorm]
+[effect bit_talk_14]
+[se ad32]
+[wt 0.1]
+[se ad671]
+[charaShake A 0.03 2 2 0.5]
+[charaMoveScaleEase A 1.0 0.5 easeOutSine]
+[charaMoveEase A 0,-20 0.5 easeOutSine]
+[charaFadeout A 0.5]
+[wt 1.0]
+
+？1：向こうの攻撃は凄い風の勢いが乗ってる……！
+？！
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 0]
+[subRenderFadein #A 0.2 0,0]
+[wt 0.2]
+[charaScale A 1.0]
+
+＠インドラ
+ヴァーユの子なだけはあるか。
+[k]
+
+＠インドラ
+[#神:オレ]ほどとは行かずとも、[r]空に属するものの操り方は堂に入っている。
+[k]
+
+[charaTalk E]
+
+＠E：ヴァジュラ
+勝てないんじゃないー？[r]どうしますー？
+[k]
+
+[charaTalk D]
+[charaFaceFade D 8 0.1]
+
+＠インドラ
+それならそれで仕方あるまい。
+[k]
+
+＠インドラ
+つまらぬ見世物だった、と溜め息一つで[r]不味くなった杯を捨て[line 3]
+[k]
+
+＠インドラ
+[#神:オレ]がくだらぬ後始末をする羽目に[r]なるだけだ。
+[k]
+
+[charaFace D 7]
+
+＠インドラ
+無論そのときには、どれだけ小さかろうが、[r]目障りな[#邪竜:魔]など一緒くたに潰す。
+[k]
+
+＠インドラ
+褒美や容赦など考える必要もあるまい。
+[k]
+
+[charaTalk F]
+
+＠F：ヴァジュラ
+御意に。
+[k]
+
+[charaFace F 7]
+
+＠F：ヴァジュラ
+結局のところ世界を救うのは、[r]いつだってインドラさまの御威光です。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+[charaTalk off]
+[charaScale L 1.3]
+[charaScale C 1.0]
+[charaFace C 12]
+[charaFadein C 0.4 1]
+[charaFadein L 0.4 0,-240]
+
+[charaScale A 1.3]
+[charaScale B 1.3]
+[charaFace A 5]
+[charaFace B 0]
+[charaPut A -265,85]
+[charaPut B 265,85]
+[charaFadeTime A 0 0]
+[charaFadeTime B 0 0]
+[wt 0.5]
+
+＠ヴリトラ
+こらー、あんなこと言っておるぞ！
+[k]
+
+＠ヴリトラ
+わえを救うためじゃ、頑張れー！
+[k]
+
+[messageOff]
+[charaMoveScaleEase L 1.01 1.2 easeOutSine]
+[charaMoveScaleEase C 0.777 1.2 easeOutSine]
+[charaMoveScaleEase A 1.0 1.2 easeOutSine]
+[charaMoveScaleEase B 1.0 1.2 easeOutSine]
+[charaMoveEase L 0,-200 1.2 easeOutSine]
+[charaMoveEase C 0,-75 1.2 easeOutSine]
+[charaMoveEase A -200,0 1.2 easeOutSine]
+[charaMoveEase B 200,0 1.2 easeOutSine]
+[charaFadeout C 0.4]
+
+[wt 0.6]
+[charaFadeTime A 0.4 1.0]
+[charaFadeTime B 0.4 1.0]
+[wt 0.6]
+[charaScale C 1.0]
+[charaTalk on]
+[charaTalk A]
+
+＠ラーマ
+頑張ってはいるが、さすがはビーマだ！
+[k]
+
+＠ラーマ
+ヴァーユの子、ハヌマーンの弟、[r]剛力無双の輝ける戦士！
+[k]
+
+＠ラーマ
+アルジュナとは[r]また違う強さを感じるな！
+[k]
+
+[charaTalk B]
+[charaFace B 1]
+
+＠アルジュナ
+そうでしょう、自慢の兄です！
+[k]
+
+[charaTalk I]
+[charaFace I 12]
+[subRenderFadein #B 0.3 0,-280]
+[subRenderMove #B 0,-330 0.3]
+[wt 0.3]
+
+＠I：ビーマ
+ハハハ、こそばゆいじゃねえか、っと！
+[k]
+
+[messageOff]
+[cueSe Servants_305400 m55028]
+[charaPut S 0,350]
+[charaEffect S bit_talk_gram_slash_green_02]
+[wt 0.5]
+[subRenderFadeout #B 0.2]
+[wt 0.1]
+
+[cueSeStop m55028 0.7]
+[charaTalk off]
+[charaFace B 0]
+[effect bit_talk_gram_slash_green_02]
+[se ad73]
+[charaMoveEase A -380,0 0.5 easeOutQuart]
+[se ad7]
+[charaMoveEase B 380,0 0.5 easeOutQuart]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaMoveEase A -350,0 0.5 easeOutSine]
+[charaMoveEase B 350,0 0.5 easeOutSine]
+[wt 0.5]
+
+＠ラーマ
+ただでさえ強いのに、[r]今のやつには風の加護がある。
+[k]
+
+＠ラーマ
+いや、いつもあるのだろうが、[r]今のあいつはおそらく、
+[k]
+
+＠ラーマ
+『この特異点における風という概念の化身』[r]のようなものだ。相性が良すぎる。
+[k]
+
+＠ラーマ
+真正面からでは、余とおまえの二人がかりでも[r]いささか難しそうだぞ。
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+
+＠アルジュナ
+同意しよう。
+[k]
+
+[charaFace B 7]
+
+＠アルジュナ
+[#真剣勝負:しんけんしょうぶ]である以上、全力で宝具を撃つことも[r]やぶさかではないが[line 3]
+[k]
+
+[charaFace B 5]
+
+＠アルジュナ
+今はそれですら届かぬ可能性がある。[r]せめて勝機を見つけてからにしたいところだ。
+[k]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaPut X 0,-200]
+[charaFadeTime X 0.2 0.5]
+
+＠ラーマ
+（こいつらも大概戦闘バカな兄弟だな……）
+[k]
+
+[charaFadeout X 0.2]
+[charaFace A 0]
+
+＠ラーマ
+マスター、何か手はないか？
+[k]
+
+＠ラーマ
+向こうの攻撃は避ければなんとかなる。[r]大事なのはこちらの刃を届かせる方法だ。
+[k]
+
+＠ラーマ
+凄まじい速度の風の前では全てがねじ曲がり、[r]勢いを殺されてしまう。
+[k]
+
+＠ラーマ
+それを貫く[#術:すべ]があればよいのだが。
+[k]
+
+[messageOff]
+[wt 1.5]
+
+？1：じゃあ、こっちも……
+？2：負けないくらいスピードに乗る……とか？
+？！
+
+[charaFace A 4]
+
+＠ラーマ
+言うのは簡単だが、[r]既に余たちは最高速を出している。
+[k]
+
+＠ラーマ
+そうでなくば、[r]風に乗ったビーマの攻撃はとても避けられん。
+[k]
+
+＠ラーマ
+あの巨体からは信じられん速度だ。[r]思えばハヌマーンもそうだったが。
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+
+＠アルジュナ
+これ以上のスピードを得る算段が[r]あるのでしょうか、マスター？
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_107 1.5]
+[wt 1.5]
+
+[cueSe SE_22 22_ad1177]
+[fadeout white 0.7]
+[cueSeStop 23_ade904 0.7]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaLayer K normal]
+[charaLayer G normal]
+[charaLayer V normal]
+
+[charaLayer Q sub #C]
+[charaLayer J sub #C]
+[charaLayer T sub #C]
+[charaLayer U sub #C]
+[subCameraFilter #C maskEdge cut359_mask06 4 0,0,0,255 0]
+
+[charaDepth Q 1]
+[charaDepth J 2]
+[charaDepth T 3]
+[charaDepth U 4]
+[charaFace J 0]
+[charaFadein J 0 100,220]
+[charaFadein Q 0 0,0]
+
+[pictureFrame cut063_cinema]
+[scene 132900]
+[cameraFilter gray]
+[wt 0.1]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.3]
+
+[se ad28 0.4]
+[wt 0.8]
+
+[cueSe SE_21 21_ad1103 0.7]
+[shake 0.03 1 1 0.3]
+[wt 1.5]
+
+[branchQuestNotClear lblNotClear01 94085019]
+
+[fadeout white 0.7]
+[wait fade]
+
+[scene 188900]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 0,-50]
+[wt 0.1]
+
+[fadein white 0.7]
+[wait fade]
+
+[wt 2.0]
+
+[label lblNotClear01]
+
+[fadeout white 0.7]
+[wait fade]
+
+[pictureFrame]
+[cameraFilter normal]
+[charaFadeout H 0.1]
+
+[scene 253610]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0.1 -350,0]
+[charaFadein B 0.1 350,0]
+[charaPut C 0,-75]
+[charaScale C 0.88]
+[wt 0.1]
+
+[cueSe SE_23 23_ade904 0.7 0.2]
+[fadein white 0.7]
+[wait fade]
+[wt 0.5]
+
+[cameraMove 0.4 0,10 1.0]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.0]
+[wt 0.9]
+
+[bgm BGM_MAP_55 0.1]
+
+？1：ちょっと力技なうえに
+？！
+
+？1：三人で協力しないとダメなんだけど……
+？！
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaMoveScaleEase C 0.92 0.4 easeOutSine]
+[charaMoveEase C 0,0 0.4 easeOutSine]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠ヴリトラ
+わえも含まれておるのか？
+[k]
+
+[charaFace C 4]
+
+＠ヴリトラ
+わかっとるとは思うが、わえ、戦えんぞ。[r]板を出して玩具を作る程度がせいぜいじゃ。
+[k]
+
+[charaFace C 2]
+
+＠ヴリトラ
+ま、それでもできることがあるというのであれば、[r]手伝いはしてやろう。
+[k]
+
+＠ヴリトラ
+わえ自身を取り戻すためじゃしな。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+
+＠ラーマ
+余に異論はない。
+[k]
+
+＠ラーマ
+ヴィマーナの補強といい、ヴリトラの[r][#中途半端:ちゅうと　は ん ぱ]な力も使いようではあるのだろう。
+[k]
+
+[charaTalk B]
+
+＠アルジュナ
+私もです。兄様との手合わせは、果てなく[r]時間を忘れて楽しんでしまうもの……。
+[k]
+
+＠アルジュナ
+ですが今はそうはいきません。[r]目的のための最短ルートを辿るべきかと。
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.5]
+
+？1：よーし、それじゃあ[line 3]
+？2：後悔させちゃうかもなんだけど
+？！
+
+？1：『人間吹き矢大作戦』でよろしく！
+？！
+
+[messageOff]
+[charaFace C 1]
+[charaFace A 2]
+[charaFace B 9]
+[wt 1.5]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_MAP_55 1.5]
+[cueSeStop 23_ade904 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaScale C 1.0]
+
+[pictureFrameTop cut063_cinema]
+[wt 2.0]
+
+[cueSe SE_23 23_ade904 1.5 0.2]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_MAP_23 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠ビーマ
+へへっ、さすがは俺の弟、[r]そして大英雄ラーマだ。
+[k]
+
+＠ビーマ
+風のブーストがあっても気は抜けねえし、[r]すんでのところで[#躱:かわ]されちまう。
+[k]
+
+＠ビーマ
+こっちの消耗もゼロとはいかねぇ[line 3][r]っと、何か作戦を立てたようだな。
+[k]
+
+[charaFace G 5]
+
+＠ビーマ
+面白ぇ。[r]息を整えがてら待ってやろう。
+[k]
+
+[charaFace G 12]
+
+＠ビーマ
+次が決め手の一合になりそうだぜ……！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[cueSeVolume 23_ade904 0.5 0.1]
+[bgm BGM_MAP_23 0.5 0.5]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaPut G 2500,2500]
+[pictureFrame]
+[charaFadein L 0.1 0,-200]
+[wt 1.0]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[cueSeVolume 23_ade904 0.5 0.2]
+[bgm BGM_MAP_23 0.5 1.0]
+[wait wipe]
+
+[se ad157]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[charaMoveReturn C 0,-3 0.5]
+[wt 0.5]
+[charaMoveReturn C 0,-3 0.5]
+
+＠ヴリトラ
+ここをこうして、こう、と。[seStop ad157 0.5][r]よーし、筒と土台、完成じゃ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+＠ラーマ
+それで……どっちにする？
+[k]
+
+[charaTalk B]
+
+＠アルジュナ
+私が中のほうがいいだろう。
+[k]
+
+＠アルジュナ
+私の魔力放出は炎の性質を持つもの。[r]シナジーがあるはずだ。
+[k]
+
+[charaTalk A]
+
+＠ラーマ
+わかった。[r]では余が射出係、おまえが矢の係だな。
+[k]
+
+[charaTalk B]
+
+＠アルジュナ
+それでは、[r]私がヴリトラの作った筒の中に入り[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠ヴリトラ
+うーんと、マスター、手伝え！[r]重いし手が小さくて動かしにくい！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[cueSe SE_25 25_ade1226]
+[cueSeStop 25_ade1226 1.0]
+[charaMoveScale L 1.1 0.8]
+[charaMove L 0,-230 0.8]
+[wt 1.0]
+[se ad156]
+[charaMoveReturn L 0,-225 0.7]
+[wt 1.0]
+[charaMoveReturn L 0,-227 0.5]
+[wt 0.5]
+[seStop ad156 0.5]
+[charaMoveReturn L 0,-227 0.5]
+[wt 0.5]
+[se ad508]
+[wt 1.0]
+
+？1：よーし……照準固定！
+？！
+
+[charaScale M 1.3]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein M 0.5 -120,-200]
+[charaFadeinFSSideR A 0.5 250,0]
+[charaMove M -170,-200 0.5]
+[charaMoveFSSideR A 200,0 0.5]
+[wt 0.5]
+[charaFadeout L 0.1]
+
+＠ラーマ
+位置についたぞ。カウントダウン後、[r]余はここに全力の魔力をぶち込んで押し出す。
+[k]
+
+＠ラーマ
+準備はよいか？
+[k]
+
+[charaTalk J]
+[charaFace J 5]
+[subRenderFadein #C 0.3 0,-375]
+[charaMoveEase J 50,220 0.3 easeOutSine]
+[wt 0.3]
+
+＠J：アルジュナ
+いつでも！
+[k]
+
+[bgmStop BGM_MAP_23 1.8]
+
+[messageOff]
+[se ade446]
+[seVolume ade446 0 0]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ade446 0.5 0.4]
+[seVolume ad556 0.5 0.3]
+[charaTalk A]
+[charaFace A 5]
+[charaEffect A bit_talk_charge_red]
+[wt 1.8]
+
+＠ラーマ
+では、三、[wt 0.6]二、[wt 0.6]一……[wt 0.6][charaFace A 2]いま！
+[k]
+
+[messageOff]
+[charaPutFSSideR V 50,-150]
+[charaEffect V bit_talk_sunlight]
+[wt 0.3]
+[seStop ad556 0.5]
+[seStop ade446 0.5]
+[cueSe SE_22 22_ad1196]
+[flashin once 0.2 0.3 FFFFFFFA FFFFFF50]
+[wt 0.2]
+[charaEffectDestroy V bit_talk_sunlight]
+[wt 0.3]
+[charaEffectStop A bit_talk_charge_red]
+
+[charaTalk J]
+[charaFace J 2]
+
+＠J：アルジュナ
+魔力放出！
+[k]
+
+[messageOff]
+[se ad836]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+[charaPut T 150,250]
+[charaEffect T bit_talk_29_blue]
+[wt 0.3]
+[se ade90]
+[charaPut U 0,250]
+[charaEffect U bit_talk_42_depth 0,0 H]
+[charaMove J -1500,220 0.4]
+[wt 0.6]
+[seStop ade90 1.0]
+[seStop ad836 1.0]
+[subRenderFadeout #C 0.2]
+[charaFadeout J 0.1]
+[wt 0.4]
+
+[charaTalk C]
+[charaFadeout M 0.5]
+[charaFadeout A 0.5]
+[wt 0.5]
+[charaEffectDestroy U bit_talk_42_depth]
+
+[bgm BGM_BATTLE_174 0.1]
+
+＠ヴリトラ
+おお、成功じゃ！[r]すんごい勢いでカッ飛んでいきおった！
+[k]
+
+[charaFace C 5]
+
+＠ヴリトラ
+よくぞこんな手を思いついたの、マスター！[r]きひひー！
+[k]
+
+[branchQuestNotClear lblNotClear02 94085019]
+
+？1：管制室で見た吹き矢がヒントになったよ
+？2：前も空気砲みたいな原理で高速移動してたしね
+
+[charaFace C 4]
+
+＠ヴリトラ
+そう……じゃったか？[r]よく覚えておらんが。
+[k]
+
+？！
+
+[branch lblConf01]
+
+[label lblNotClear02]
+
+？1：管制室で見た吹き矢がヒントになったよ
+？！
+
+[label lblConf01]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ラーマ
+よし、そのまま全力でぶつかるがいい、アルジュナ！[r]きっとビーマは避けたりはせん。
+[k]
+
+[charaFace A 1]
+
+＠ラーマ
+ふふ。これが、[r]今の余が撃ち出すインドラの矢だ。
+[k]
+
+＠ラーマ
+その破壊力、クンバーカルナの首を落としたものに[r]勝るとも劣るまい！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[cueSeVolume 23_ade904 0.5 0.1]
+[bgm BGM_BATTLE_174 0.5 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[pictureFrame cut063_cinema]
+[wt 0.7]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[cueSeVolume 23_ade904 0.5 0.2]
+[bgm BGM_BATTLE_174 0.5 1.0]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFace E 0]
+[charaFace F 0]
+[subRenderFadein #A 0.2 0,-50]
+[wt 0.2]
+
+＠インドラ
+巨人クンバーカルナとやらの首を落とすのに、[r][#神:オレ]の矢を使ったのだったな。
+[k]
+
+[charaFaceFade D 5 0.1]
+
+＠インドラ
+であれば、それは[#神:オレ]が[#斃:たお]したと言っても[r]過言ではない。ハハハ、勝手に武勲が増えて困る。
+[k]
+
+[charaTalk E]
+[charaFace E 9]
+
+＠E：ヴァジュラ
+ひゅーひゅー！[r]インドラさま、[#凄ーい:ぐ　れ　ー　と]！
+[k]
+
+[clear]
+[charaTalk F]
+[charaFace F 7]
+
+＠F：ヴァジュラ
+お言葉ですが、インドラさまの武勲は[r]いくら増えても困りません。
+[k]
+
+＠F：ヴァジュラ
+実際そのようなお方なのですから。[r]常に賛歌は[#不足千万:物　足　り　な　い]です。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[cueSeVolume 23_ade904 0.5 0.1]
+[bgm BGM_BATTLE_174 0.5 0.7]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+[wt 0.7]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+[charaPut X 0,-200]
+[charaFadeTime X 0.2 0.5]
+
+＠ラーマ
+（……クンバーカルナが生まれたとき、）
+[k]
+
+＠ラーマ
+（ヴァジュラを撃って殺そうとした挙げ句に[r]　反撃されて負けたと聞いたが[line 3]）
+[k]
+
+＠ラーマ
+（相手が赤子だったから手加減、したのだろうな……[r]　うむ、きっとそうだ……）
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgmStop BGM_BATTLE_174 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout X 0.1]
+[pictureFrame]
+
+[charaDepth U 2]
+[charaDepth J 3]
+[charaPut U 0,250]
+[charaEffect U bit_talk_back_splash_bl 0,0 H]
+[wt 0.7]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[cueSeVolume 23_ade904 0.5 0.2]
+[wait wipe]
+
+[cueSe SE_21 21_ad1097]
+[charaScale J 1.2]
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.3 450,220]
+[charaMoveEase J 0,220 0.5 easeOutCubic]
+[subRenderFadein #C 0.3 0,-350]
+[wt 1.5]
+[cueSe SE_21 21_ade546]
+[cueSeStop 21_ad1097 1.5]
+[charaMoveEase J -450,220 0.5 easeOutCubic]
+[charaFadeout J 0.3]
+[wt 0.7]
+[cueSeStop 21_ade546 1.2]
+[subRenderFadeout #C 0.3]
+[wt 0.5]
+
+[bgm BGM_BATTLE_221 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠ビーマ
+おお、アルジュナよ！[r]おまえ自身が矢となるとは！
+[k]
+
+[charaFace G 0]
+
+＠ビーマ
+なるほど、その速度なら[r]俺の風の守りも越えられるかもな！
+[k]
+
+[messageOff]
+[charaFace G 5]
+[wt 1.2]
+
+＠ビーマ
+いいだろう。
+[k]
+
+[charaFace G 12]
+
+＠ビーマ
+趣向を凝らしたおまえの一撃[line 3][r]兄ちゃんが真正面から受け止めてやるぜ！
+[k]
+
+[cameraMoveEase 0,-40 0.5 easeOutCubic 1.2]
+[charaFace G 13]
+
+＠ビーマ
+来い！
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_221 0.4]
+[cueSeStop 23_ade904 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

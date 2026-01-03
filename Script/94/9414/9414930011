@@ -1,0 +1,419 @@
+
+
+＄94-14-93-00-1-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 1098333900 1 ボンバーノッブ]
+[charaSet B 1098333900 1 ボンバーノッブ]
+[charaSet C 1098333900 1 ボンバーノッブ]
+[charaSet D 1098333900 1 ボンバーノッブ]
+[charaSet E 1098334660 1 河上彦斎]
+[charaSet F 1098282400 1 沖田総司]
+[charaSet G 1098333800 1 松永弾正]
+
+[charaSet H 1098334660 1 河上彦斎_演出用]
+[charaSet I 1098334660 1 河上彦斎_演出用]
+[charaSet J 1098334660 1 河上彦斎_演出用]
+[charaSet K 1098282400 1 沖田総司]
+[charaFilter K silhouette 00000080]
+[charaSet L 1098282400 1 沖田総司]
+
+[sceneSet M 263201 1]
+[sceneSet N 263201 1]
+[sceneSet O 263201 1]
+
+[charaSet P 98115000 1 エフェクト用]
+[charaSet Q 98115000 1 エフェクト用]
+
+[subCameraOn 4]
+
+[charaLayer H sub #A]
+[subCameraFilter #A through]
+[subRenderFadein #A 0.1 0,0]
+
+[charaLayer C sub #B]
+[charaLayer D sub #B]
+[subCameraFilter #B through]
+[charaFace C 0]
+[charaFadein C 0.1 450,-50]
+[charaFace D 0]
+[charaFadein D 0.1 130,-20]
+
+[charaLayer I sub #C]
+[subCameraFilter #C through]
+[subRenderFadein #C 0.1 0,0]
+
+[charaLayer J sub #D]
+[subCameraFilter #D through]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth M 2]
+[charaDepth A 4]
+[charaDepth B 3]
+[charaDepth C 5]
+[charaDepth D 6]
+[charaDepth E 7]
+[charaDepth N 8]
+[charaDepth F 9]
+[charaDepth K 10]
+[charaDepth O 11]
+[charaDepth L 12]
+[charaDepth H 13]
+[charaDepth P 26]
+
+[charaTalk off]
+[charaScale M 1.6]
+[charaScale A 0.95]
+[charaScale B 0.85]
+[charaScale C 1.0]
+[charaScale D 1.1]
+[charaFace A 0]
+[charaFadein A 0.1 -450,-40]
+[charaFace B 0]
+[charaFadein B 0.1 -160,-70]
+[subRenderFadein #B 0.1 0,0]
+[charaFadein M 0.1 350,-200]
+
+[scene 263201]
+[wt 0.1]
+[bgm BGM_EVENT_80 0.1]
+[fadein black 0.5]
+[wait fade]
+
+[cueSe Battle bac528]
+[charaRoll P 350]
+[charaEffect P bit_talk_x_slash_bl_03 0,30]
+[wt 0.1]
+
+[charaFace A 1]
+[charaFace B 4]
+[charaShake A 0.05 3 4 0.4]
+[charaShake B 0.03 3 4 0.4]
+[wt 0.2]
+
+[cueSe Battle bac308]
+[charaLayer C normal]
+[charaLayer D normal]
+[charaRoll P 355]
+[charaEffect P bit_talk_x_slash_bl_03 0,-80 H]
+[wt 0.1]
+[charaFace C 3]
+[charaFace D 1]
+[charaShake C 0.05 3 4 0.4]
+[charaShake D 0.03 3 4 0.4]
+[wt 0.5]
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[subRenderFadeout #C 0.1]
+
+＠ボンバーノッブ
+ボ、ボンバーノーッブ！？
+[k]
+
+[messageOff]
+[cueSe SE_25 25_ade1288]
+[effect bit_talk_explosion_continuous -300,-50]
+[wt 0.15]
+[se ad854]
+[effect bit_talk_explosion_continuous 0,-25]
+[wt 0.15]
+[cueSe Battle bac1759]
+[effect bit_talk_explosion_continuous 350,0]
+[wt 0.5]
+[se ad42]
+[charaSpecialEffect A enemyErasure 1 1.5]
+[charaSpecialEffect B enemyErasure 1 1.5]
+[charaSpecialEffect C enemyErasure 1 1.5]
+[charaSpecialEffect D enemyErasure 1 1.5]
+[wait charaSpecialEffect D]
+[seStop ad42 0.5]
+[wt 0.5]
+
+[charaFadeout M 0.5]
+[wt 0.5]
+
+[charaFace E 0]
+[charaFadein E 0.2 1]
+[wt 0.2]
+
+＠？？？
+妙な手応えの、妙な生き物……。可愛げ、なくはないけど。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet E 1098334650 1 河上彦斎]
+[charaDepth E 7]
+
+[clear]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+＠？？？
+は[messageShake 0.05 5 5 0.5]ああああああああ！？！？
+[k]
+
+[charaFace G 6]
+
+＠？？？
+こいつら、全然役に立たないんですけど！[r]なーにが、第六天魔王の[#眷属:けんぞく]だ、ボケ！
+[k]
+
+[charaFace G 13]
+
+＠？？？
+というか、こいつ目つきだけじゃなくて[r]剣[#捌:さば]きもヤバいんですけど！　なんか抜き方もキモい！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[clear]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠？？？
+うるさい人は嫌い、それに次はおまえの番……。
+[k]
+
+＠？？？
+じゃあ……、死んで。
+[k]
+
+[messageOff]
+[cueSe SE_25 25_ade1273]
+[charaMove E 0,-10 0.3]
+[wt 1.3]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet E 1098334660 1 河上彦斎]
+[charaDepth E 7]
+
+[clear]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+＠？？？
+死んでって言われて大人しく死ぬ奴がいるわけねーだろ！
+[k]
+
+[charaFace G 0]
+
+＠？？？
+ま、別にマスター君は二の次で良くはないけど、[r]一旦そういうことでいいし、
+[k]
+
+＠？？？
+とりあえず目的は達成したからここは退いてあげるわよ。
+[k]
+
+[charaFace G 11]
+
+＠？？？
+それにほら、後ろ後ろ☆
+[k]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+
+[charaScale J 1.9]
+[charaFace J 2]
+[charaFadein J 0.1 0,75]
+[charaScale N 2.0]
+[charaFadein N 0.1 650,-200]
+[subRenderFadein #D 0 0,0]
+[charaRoll N 7]
+[charaRoll J 7]
+[charaRoll K 7]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaScale K 1.1]
+[charaFace K 0]
+[charaFadein K 0.4 0,-60]
+[charaMoveEase K -200,-60 1.0 easeOutQuad]
+[charaMoveEase N 450,-200 1.0 easeOutQuad]
+[charaMoveEase J 200,75 1.0 easeOutQuad]
+[subBlur #D lens 0.5 4 2 1.0 subBlur]
+[wt 1.8]
+[subBlurOff #D lens 0.5 normal]
+[wt 0.5]
+[charaFace J 14]
+
+＠？？？
+っ！？
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaRoll F 7]
+[charaScale F 1.1]
+[charaTalk F,J]
+[charaFace F 2]
+[charaFadein F 0 -200,-60]
+
+[charaFadeout J 0.3]
+[cameraMoveEase 60,0 0.3 easeOutCubic 1.2]
+[subCameraMoveEase #D 60,0 0.3 easeOutCubic 1.2]
+[charaFadeout K 0.2]
+[wt 0.4]
+
+＠沖田総司
+せいっ！
+[k]
+
+[messageOff]
+[effect bit_talk_v_slash01]
+[charaMoveScaleEase F 1.4 0.3 easeOutCubic]
+[charaMoveEase F -190,-20 0.3 easeOutCubic]
+[charaFadeout F 0.3]
+[wt 0.2]
+[se ad471]
+[fadeout white 0.2]
+[wait fade]
+
+[cameraMoveEase 0,0 0.1 easeOutCubic 1.0]
+[subCameraMoveEase #D 0,0 0.1 easeOutCubic 1.0]
+[blurOff]
+[subRenderFadeout #D 0.1]
+[charaLayer H normal]
+[charaLayer C normal]
+[charaLayer D normal]
+[charaLayer I normal]
+[charaLayer J normal]
+[subCameraOff]
+
+[charaFadeout J 0]
+[charaFadeout N 0]
+[charaFadeout F 0]
+[charaScale F 1.0]
+[charaScale K 1.0]
+[charaScale H 1.0]
+[charaScale I 1.0]
+
+[charaScale M 1.6]
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0 0,0]
+[charaFadein M 0 90,-280]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+[se ad671]
+[seStop ad671 1.2]
+[charaMoveEase M -100,-280 0.7 easeOutCubic]
+[charaMoveEase E 200,0 0.7 easeOutCubic]
+[fadein white 0.2]
+[wait fade]
+[wt 0.7]
+
+＠E：？？？
+この剣は……！　おまえっ……！
+[k]
+
+[messageOff]
+[charaTalk E,G]
+[charaFadeout E 0.5]
+[charaFadeout M 0.5]
+[wt 0.7]
+
+[bgm BGM_EVENT_122 0.1]
+
+＠G：？？？
+ア[messageShake 0.05 5 5 0.5]ハハハハハハハハ！　アタシってば運がイイー！[r]今年の運気は爆上げダンジョーかも！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale M 1.4]
+[charaScale E 1.2]
+[charaFace E 3]
+[charaFadein E 0.4 200,20]
+[charaFadein M 0.4 -100,-265]
+[wt 0.6]
+[charaFadeout G 0.1]
+
+＠？？？
+くっ……！　いえ、それよりここは……！
+[k]
+
+[messageOff]
+[subCameraOn 1]
+[charaLayer L sub #A]
+[charaLayer N sub #A]
+[subCameraFilter #A maskEdge cut359_mask15 5 0,0,0,255 0]
+[charaTalk on]
+[charaRoll N 0]
+[charaScale L 1.2]
+[charaScale N 1.4]
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0 -30,200]
+[charaFadein N 0 360,0]
+[subRenderFadeinFSL #A 0.4 -292,-250]
+[subRenderMoveEaseFSL #A -272,-200 0.4 easeOutCubic]
+[wt 0.6]
+
+＠L：沖田総司
+マスター！　私の後ろへ！[r]そのサーヴァントは危険です！
+[k]
+
+[charaFace E 14]
+
+＠E：？？？
+ま、待って、わたしは……！
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaTalk E,F]
+[charaScale H 1.4]
+[charaScale O 1.6]
+[charaFace H 14]
+[charaFadein H 0.6 0,0]
+[charaFadein O 0.6 -100,-335]
+[subRenderFadeout #A 0.6]
+[cameraMove 30.0 0,-10 1.1]
+[wt 0.6]
+
+
+＠沖田総司
+この京の町で、またあなたとやり合うことに[r]なるとは思いませんでしたよ。
+[k]
+
+＠沖田総司
+河上……、いえ……、
+[k]
+
+＠沖田総司
+[line 3]人斬り[#彦斎:げんさい]！
+[k]
+
+[messageOff]
+[charaTalk H]
+[wt 1.2]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_122 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

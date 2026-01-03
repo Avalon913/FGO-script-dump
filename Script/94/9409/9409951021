@@ -1,0 +1,413 @@
+
+＄94-09-95-10-2-1
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098276910 1 マシュ]
+[charaSet B 1098297911 1 カルナ]
+[charaSet C 7046000 1 ドゥリーヨダナ]
+[charaSet D 2033000 1 アシュヴァッターマン]
+[charaSet E 7006000 1 坂田金時]
+[charaSet G 1098298510 1 テノチティトラン]
+
+[charaSet H 1098297911 1 カルナ_演出用]
+[charaSet I 7006000 1 坂田金時_演出用]
+
+[sceneSet M 221200 1]
+[imageSet T back10000 1]
+[charaScale T 1.02]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[scene 221200]
+
+[subCameraOn 2]
+[subCameraFilter #A through]
+[subCameraFilter #B through]
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+[subRenderDepth #A 2]
+[subRenderDepth #B 1]
+[charaLayer H sub #A]
+[charaLayer I sub #B]
+[charaLayer M sub #B]
+[charaScale H 1.0]
+[charaScale I 1.0]
+[charaScale M 1.1]
+[charaDepth I 2]
+[charaDepth M 1]
+[charaFadein M 0.1 0,-220]
+
+[subRenderFadein #A 0 0,0]
+[subRenderFadein #B 0 0,0]
+
+[bgm BGM_BATTLE_105 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[fowardEffect bit_talk_kengekiall02_fs]
+[wt 0.2]
+[se ad1014]
+[cueSe Battle bac528]
+[wt 0.2]
+[se ad467]
+[shake 0.03 2 2 0.4]
+[wt 1.0]
+[fowardEffect bit_talk_gold_slash_02]
+[se ad171]
+[wt 0.5]
+[fowardEffect bit_talk_14]
+[se ad1032]
+[wt 0.2]
+
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[se ad471]
+[fowardEffect bit_talk_sparkle]
+
+[cueSe SE_22 22_ade804]
+[charaFace I 1]
+[charaFace H 2]
+[charaFadein I 0 -100,0]
+[charaFadein H 0 100,0]
+
+[charaMoveScaleEase I 0.85 0.35 easeInOutSine]
+[charaMoveScaleEase H 1.2 0.35 easeInOutSine]
+[charaMoveEase I -300,-75 0.35 easeInOutSine]
+[charaMoveEase H 240,20 0.35 easeInOutSine]
+[charaShake I 0.02 3 2 0.8]
+[charaShake H 0.03 3 4 0.8]
+[wt 0.1]
+[seStop ad671 1.0]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk I]
+
+[subRenderMoveEase #A 85,-40 0.6 easeOutQuart]
+[subRenderMoveScaleEase #A 1.2 0.6 easeOutQuart]
+[subBlur #A lens 0.6 3 4 1.0 subBlur]
+[subRenderMoveEase #B 85,-40 0.6 easeOutQuart]
+[subRenderMoveScaleEase #B 1.2 0.6 easeOutQuart]
+[wt 0.6]
+
+[charaFace I 2]
+
+＠I：坂田金時
+……ハッ！？[charaShake I 0.02 3 2 0.3]
+[k]
+
+＠I：坂田金時
+ストップ。ストーーーップ！
+[k]
+
+[messageOff]
+[charaTalk H]
+[subRenderMoveEase #A 0,0 0.6 easeOutQuart]
+[subRenderMoveScaleEase #A 1.01 0.6 easeOutQuart]
+[subBlurOff #A lens 0.6 normal]
+[subRenderMoveEase #B 0,0 0.6 easeOutQuart]
+[subRenderMoveScaleEase #B 1.01 0.6 easeOutQuart]
+[wt 0.6]
+[charaFace H 0]
+
+[bgmStop BGM_BATTLE_105 1.5]
+
+＠H：カルナ
+どうした。お互い、[r]まだ決定打は入っていないはずだが。
+[k]
+
+[charaTalk I]
+[charaFace I 4]
+
+＠I：坂田金時
+それはわかってンだが……[r]バッドゴールデン！　ついついやっちまった！
+[k]
+
+[charaFace I 2]
+
+＠I：坂田金時
+やるのは相撲だって言ってンのに、[r]何で[#得物:エモノ]でやりあってんだオレたち！
+[k]
+
+？1：止めようとは思ったんだけど
+？2：ずいぶん夢中でやってたから……
+？！
+
+[messageOff]
+[charaTalk I]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+
+[cueSe SE_24 24_ad1397]
+[cueSeVolume 24_ad1397 0 0.2]
+[cueSeVolume 24_ad1397 1.0 1.0]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.4 1]
+[cueSeStop 24_ad1397 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠坂田金時
+……悪い。[r]完全に無意識でやっちまってたわ……
+[k]
+
+＠坂田金時
+あんまりゴールデンな気迫を真正面から浴びて、[r]思わずマサカリ出しちまってたぜ。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-10]
+[wt 0.2]
+
+[se ad442]
+[charaMove B 0,0 0.3]
+[charaCrossFade B 1098297910 0 0.3]
+[wait charaCrossFade B]
+[wt 0.5]
+
+＠カルナ
+オレも同様だ。[r]だが、こちらとしては一向に構わん。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠坂田金時
+それはそれでまた今度な。[r]へへっ、アンタ多分バーサーカーも向いてるぜ。
+[k]
+
+＠坂田金時
+しっかし、ゴールデンにいい汗かいたぜ！[r]勝負自体は[#無効試合:ノ ー コ ン テ ス ト]みてぇなモンだが、
+[k]
+
+＠坂田金時
+流れる汗は随分と心地がいいや。[r]……よし！
+[k]
+
+[charaFace E 2]
+
+＠坂田金時
+そのネックレス、しっかり値引きしてやるよ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠ドゥリーヨダナ
+おっ？
+[k]
+
+[charaFace C 3]
+
+＠ドゥリーヨダナ
+そうかそうか、それならばよしだ！
+[k]
+
+[charaFace C 0]
+
+＠ドゥリーヨダナ
+証拠のない『先に武器を出したのはどちらか論争』[r]に持っていった挙げ句に、
+[k]
+
+＠ドゥリーヨダナ
+水掛け論を勢いで制しておまえを反則負けにする流れを[r]考えていたがその必要もなくなったようだ。
+[k]
+
+[charaFace C 3]
+
+＠ドゥリーヨダナ
+わっはっは！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth T 1]
+[charaDepth D 2]
+
+[charaPut T 0,0]
+[charaFadeTime T 0.2 0.5]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠アシュヴァッターマン
+（どんだけ強引でも、欲しいもののためなら[r]　いくらでも策を出して粘る[line 3]）
+[k]
+
+[charaFace D 1]
+
+＠アシュヴァッターマン
+（抜け目ねぇっつうか諦めが悪いっつうか、[r]　さすが旦那だぜ）
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaTalk depthOn]
+
+[charaFadeout D 0.1]
+[charaFadeout T 0.1]
+
+[charaLayer H normal]
+[charaLayer I normal]
+[charaLayer M normal]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout M 0.1]
+[subCameraOff]
+[wt 0.1]
+
+[charaSet B 1098297910 1 カルナ]
+[charaSet H 1098297910 1 カルナ_演出用]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 0.1]
+[wait fade]
+
+[cueSe SE_21 21_ade626]
+[cueSeVolume 21_ade626 0 0.2]
+
+＠坂田金時
+じゃあな、毎度あり！
+[k]
+
+
+[messageOff]
+[fadeout black 0.1]
+[wait fade]
+
+[scene 221200]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+[bgm BGM_SABERWARS2 0.1]
+
+＠ドゥリーヨダナ
+どうだ？　まずはこのようにして[r]金のネックレスを安くゲットだ。
+[k]
+
+＠ドゥリーヨダナ
+わし様の知略に満ちた、[r]そして体も張った交渉術を見たか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+
+＠テノチティトラン
+知略の定義を確かめる必要がありそうです、ね。[r]体を張ったのも本人ではありませんし。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ドゥリーヨダナ
+カルナの手柄はわし様の手柄と同じに決まっておろうが！[r]だってカルナだぞ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠カルナ
+……フ。
+[k]
+
+？1：でも、確かに勉強にはなった……かな
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ドゥリーヨダナ
+そうだろう、そうだろう。
+[k]
+
+？2：店員さんも人間なのを忘れずに、だね
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ドゥリーヨダナ
+うむ、その通りだ。[r]それがわかればいろいろと選択肢が増える。
+[k]
+
+？！
+
+＠ドゥリーヨダナ
+では次のスークに向かうか。
+[k]
+
+＠ドゥリーヨダナ
+スパイス・スークでよいな？[r]そこでまた適当な店に入ってみようではないか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+異論はありません。[r]引き続き、よろしくお願いします……！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_SABERWARS2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

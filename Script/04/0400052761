@@ -1,0 +1,123 @@
+
+
+
+
+
+
+
+
+
+＄04-00-05-27-6-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001900 1 マシュ]
+[charaSet B 1098322103 1 天使_第一階梯_暴走]
+[charaScale B 1.5]
+[sceneSet C 248700 1]
+[charaScale C 1.4]
+[sceneSet D 10000 1]
+[charaScale D 1.1]
+
+[scene 248700]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth B 2]
+[charaDepth A 3]
+[charaDepth D 4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0 0,30]
+[charaFadein C 0 0,-350]
+[charaFadein D 0 0,-200]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_BATTLE_216 0.1]
+
+[se ad85]
+[fowardEffect bit_talk_gram_slash_03_fs]
+[wt 0.5]
+[se ad687]
+[effect bit_talk_14]
+[wt 0.4]
+[se ad85]
+[fowardEffect bit_talk_gram_slash_03_fs 0,0 H]
+[wt 0.2]
+
+[effect bit_talk_blow02]
+[wt 0.3]
+[se ad686]
+[fadeout white 0.1]
+[wait fade]
+
+[charaShake B 0.03 4 5 0.8]
+[charaMoveEase B 0,0 0.4 easeOutCubic]
+[charaMoveScaleEase B 1.0 0.4 easeOutCubic]
+[charaFadeout D 0]
+[fadein white 0.1]
+[wait fade]
+[wt 0.3]
+
+[cueSeStop 22_ad1220 2.0]
+[wt 0.8]
+
+[cueSe SE_25 25_ad1487]
+[charaShake B 0.03 3 3 0.8]
+[wt 0.4]
+[charaMove B 0,-100 1.0]
+[charaFadeout B 0.7]
+[wt 1.0]
+
+[cueSeStop 25_ad1487 0.5]
+[se ad322]
+[effect bit_talk_impactlanding 0,-200]
+
+[shake 0.05 5 4 1.5]
+[wt 2.5]
+
+[charaMoveScaleEase C 1.2 1.0 easeOutCubic]
+[charaMoveEase C -120,-300 1.0 easeOutCubic]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 7]
+[charaPut A 250,-10]
+[charaScale A 1.2]
+[se ad223]
+[charaEffect A bit_talk_quickmove 0,55]
+[charaSpecialEffect A appearance 1 0.25]
+[wt 0.4]
+
+＠マシュ
+天使・第一[#階梯:かいてい]、撃破！
+[k]
+
+？1：すごい、マシュ！
+？！
+
+[charaFace A 20]
+
+＠マシュ
+はい。正直に言って、自分でも絶好調です！[r]さあ、急ぎましょうマスター！
+[k]
+
+[charaFace A 0]
+
+＠マシュ
+リリスを……止めるために！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_BATTLE_216 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,397 @@
+
+
+＄94-07-27-12-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 2020001 1 イシュタル]
+[charaSet B 2001002 1 エミヤ]
+
+[imageSet D cut361_radar05 1]
+
+[imageSet E cut372_cut_back02_line 1]
+[imageSet F cut372_cut_back02_nebula 1]
+
+[imageSet G cut372_cut_back02_ist 1]
+[imageSet H cut372_cut_back02_emy 1]
+
+[scene 157301]
+
+[fadein black 2.0]
+[wait fade]
+
+[se ad550]
+[seVolume ad550 0 0]
+[seVolume ad550 0.5 0.8]
+[wt 0.5]
+
+[fowardEffect bit_talk_warp_out]
+[wt 0.8]
+[seStop ad550 0.3]
+[se ad473]
+[seVolume ad473 0 0.5]
+[se ade132]
+[seVolume ade132 0 0.5]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 1]
+[wt 1.8]
+
+＠イシュタル
+フゥ[line 6]。[bgm BGM_MAP_23 0.1]
+[k]
+
+＠イシュタル
+この窮屈きわまりないポッドから[r]勝手に出てきたのは正解だったみたいね。
+[k]
+
+[charaFace A 5]
+[branchQuestNotClear lblNotClear01 3001222]
+[branch lblClear01]
+
+[label lblNotClear01]
+
+＠イシュタル
+あの探偵、[#落:お]ち[#穂:ぼ][#拾:ひろ]いにキミが最も適任だ、[r]なんて言ってくれたけれど[line 3]。
+[k]
+
+[branch lblConf01]
+
+[label lblClear01]
+
+＠イシュタル
+あのエジプト娘、[#落:お]ち[#穂:ぼ][#拾:ひろ]いに貴女が最も適任です、[r]なんて言ってくれたけれど[line 3]。
+[k]
+
+[label lblConf01]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad1]
+[charaFadein D 0.2 0,-200]
+[wt 1.2]
+
+＠イシュタル
+まったく……[r]見せてやりたいわね、このひどい光景を。
+[k]
+
+[messageOff]
+[charaFadeout D 0.2]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠イシュタル
+カルデアとの通信もダメ。[r]他のポッドとの交信も不可、と。
+[k]
+
+[charaFace A 11]
+＠イシュタル
+そもそも操作方法がよくわからなーい、と。
+[k]
+
+＠イシュタル
+この空間にいるのは私、[r]それと[#天舟:マアンナ]だけ、か。
+[k]
+
+＠イシュタル
+……まんまと[#欺:あざむ]かれたわ。
+[k]
+
+[charaFace A 8]
+＠イシュタル
+アレは元からただの矢じゃなかった。[r]膨大な、無色の魔力の[#迸:ほとばし]りでもなかった。
+[k]
+
+＠イシュタル
+あれは[line 3]“[#物語の宝具]”。
+[k]
+
+＠イシュタル
+[#為朝:ためとも]はその発射台、聖杯の魔力の焦点、[r]カモフラージュだった。
+[k]
+
+[charaFace A 8]
+＠イシュタル
+躍起になって叩けば叩くほど、何度でも[r]しぶとく這い上がってくるのはそういう[#理由:ワ　ケ]。
+[k]
+
+＠イシュタル
+それに、あれは[#勧善懲悪:かんぜんちょうあく]の物語ね。[r]妥協の余地も、交渉の余地も無し、ときてる。
+[k]
+
+[charaFace A 2]
+＠イシュタル
+いいわ？　どちらが善でどちらが悪か。[r]ここできちんと解らせてあげようじゃない！
+[k]
+
+[messageOff]
+
+[cueSe SE_22 22_ad1179]
+[effect bit_talk_36]
+[wt 2.0]
+
+[bgmStop BGM_MAP_23 1.0]
+[seVolume 22_ad1179 0.5 0.5]
+＠B：？？？
+悪役のような口上、堂に入っていて何より。
+[k]
+
+
+＠B：？？？
+しかしなんだ。血気盛んなのは結構だが[r]肩に力が入りすぎじゃないか？
+[k]
+
+[seStop 22_ad1179 0.3]
+[effectDestroy bit_talk_36]
+[charaFace A 16]
+＠イシュタル
+……！？
+[k]
+
+[charaFace A 8]
+＠イシュタル
+アナタ……！？[r]今さら増援を寄越すなんて聞いてないわよ？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad60]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[bgm BGM_BATTLE_18 0.1]
+[wt 0.4]
+[seStop ad60]
+
+＠エミヤ
+こちらも寝耳に水だよ。[r]よほどの緊急事態なんだろう。
+[k]
+
+＠エミヤ
+これはMr.ゴルドルフから預かったなけなしの宝石だ。[r]魔力の足しにするといい。
+[k]
+
+[messageOff]
+
+[se ad194]
+[wt 0.5]
+[seVolume ad194 0.3 0.1]
+[seStop ad194 0.3]
+
+[wt 0.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠イシュタル
+え、ほんと！？[r]やったぁ、気が利くじゃない！
+[k]
+
+[charaFace A 6]
+＠イシュタル
+ようやく女神の慈悲深さに気づいたのかしら。[r]やる気、二割増しになった感じ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠エミヤ
+おや。金星の二割とは豪気な、と[r]言いたいところだが。
+[k]
+
+[charaFace B 0]
+＠エミヤ
+今回は見渡すかぎりの大軍だ。[r]“物語”であれば、それこそ無限に湧き出るだろう。
+[k]
+
+＠エミヤ
+二割増し程度では手に負えまい。[r]もう一割ほど、手助けは必要かね？
+[k]
+
+[messageOff]
+[bgm BGM_BATTLE_18 0.4 0.5]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[se ad944]
+[cueSe SE_22 22_ade741]
+[seVolume 22_ade741 1.5 0.2]
+[effect bit_talk_arrow_enemy_l]
+[wt 2.0]
+
+[seStop ad944 0.4]
+[seStop 22_ade741 0.4]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[effectDestroy bit_talk_arrow_enemy_l]
+[wt 0.5]
+
+[bgm BGM_BATTLE_18 0.4 1.0]
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠イシュタル
+[line 3]いいわ。[r]付き合ってくれる、[#アーチャー]？
+[k]
+
+＠イシュタル
+これは殲滅戦だから。徹底的にね？[r]一匹でも逃すわけにはいかないの。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠エミヤ
+では初撃はそちらに。
+[k]
+
+＠エミヤ
+君の派手な宝具で群れの先陣をなぎ払い、[r]こぼれ出た敵を私が各個撃破しよう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠イシュタル
+ええ、異論はないわ。
+[k]
+
+[messageOff]
+[bgm BGM_BATTLE_18 0.4 0.5]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth G 1]
+[charaDepth A 2]
+[charaDepth F 3]
+
+[charaDepth H 4]
+[charaDepth B 5]
+[charaDepth E 9]
+
+[charaFadein E 0.1 5,-200]
+[charaFadein F 0.1 -162,-200]
+[charaFadein G 0.1 160,-200]
+[wt 0.5]
+
+[charaScale A 1.295]
+[charaFace A 8]
+[charaFadein A 0.1 289,49]
+[charaMove A 309,49 5.0]
+
+[bgm BGM_BATTLE_18 0.4 1.0]
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[se ad302]
+[wt 1.0]
+[charaFace A 5]
+
+＠イシュタル
+[#天舟:マアンナ]！　ゲート・オープン！[seVolume ad302 0.8 0.1][seStop ad302 1.0]
+[k]
+
+[se ad303]
+[seVolume ad303 0 0]
+[seVolume ad303 1.0 0.5]
+＠イシュタル
+これが私の全力全霊！[r][line 3]打ち砕け！
+[k]
+
+[charaFace A 2]
+[seStop ad303 0.5]
+＠イシュタル
+[align right][f large]『[#山脈震撼す明星の薪:ア      ン      ガ      ル      タ      ・      キ      ガ      ル      シ      ュ]』！！[align]
+[k]
+
+[messageOff]
+
+[charaFadein H 0.1 -161,-200]
+
+[charaScale B 1.4]
+[charaFace B 0]
+[charaFadein B 0.4 -260,20]
+[charaMove B -280,20 5.0]
+
+[cueSe SE_21 21_ad1108]
+＠エミヤ
+[#投影:トレース]、[#開始:オ  ン]。
+[k]
+
+[se ad1054]
+
+＠エミヤ
+装填[line 3][#偽・螺旋剣:カ  ラ  ド  ボ  ル  グ  Ⅱ]、[wt 0.3][seStop ad1054 0.5][r][#赤原猟犬:フルンディング][line 3]
+[k]
+
+[seStop 21_ad1108 0.5]
+[charaFace B 2]
+＠エミヤ
+[f large]剣は……飛ぶものだっ！
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_18 0.5]
+[se ad704]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[seStop ad704 0.5]
+[fadein white 0.5]
+[wait fade]
+
+
+
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

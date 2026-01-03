@@ -1,0 +1,1038 @@
+
+
+＄94-07-14-21-1-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 23001000 1 ＢＢ]
+[imageSet B cut330_sdbb 1]
+[charaSet C 23003000 1 大いなる石像神]
+[charaSet D 1098228900 1 ジナコ]
+[charaSet E 98002000 1 フォウ]
+[charaSet F 98022000 1 モブＡ？]
+[charaSet G 98018100 1 モブＢ？]
+[charaSet H 98115900 1 モブＣ？]
+[charaSet I 98108900 1 モブＤ？]
+[charaSet J 98112300 1 モブＥ？]
+[charaSet K 98115100 1 モブＦ？]
+[charaSet L 1098120900 1 モブＧ？]
+[charaSet M 1098123500 1 モブＨ？]
+[charaSet N 98006300 1 モブＩ？]
+
+[imageSet O cut331_seraph 1]
+
+[charaSet P 23001000 1 シルエット用ＢＢ]
+[charaFilter P silhouette 00000080]
+
+[charaSet T 98006300 1 エフェクト用ダミー]
+
+[wipeout openEye 0.1 0.5]
+[wait wipe]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad189]
+[seVolume ad189 0 0.1]
+[seVolume ad189 1.0 1.0]
+[wt 0.5]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 105800]
+[branch lblConf]
+[label lblNotClear]
+[scene 106000]
+[label lblConf]
+[wt 0.1]
+
+[wipein openEye 1.0 0.5]
+[wait wipe]
+[wipeout openEye 0.5 0.5]
+[wait wipe]
+[wipein openEye 0.8 0.5]
+[wait wipe]
+
+[seStop ad189 1.2]
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+[wt 0.6]
+
+？1：いつも通りの起床時間
+？2：健康は大切にね
+
+？！
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠フォウ
+フォム。フォウ、フォーウ。
+[k]
+
+？1：管制室で点呼だね。わかってる
+
+？！
+
+
+[messageOff]
+[se ad8]
+
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 104200]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 105500]
+[label lblConf2]
+[wt 0.5]
+
+[wipein rightToLeft 1.0 1.0]
+[wt 0.5]
+
+[se ad95]
+[seVolume ad95 0 0.3]
+[seVolume ad95 1.0 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[seStop ad95 2.0]
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 105900]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 105600]
+[label lblConf3]
+[wt 0.5]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[se ad95]
+[wipeout leftToRight 1.0 1.0]
+[wt 0.5]
+[seStop ad95 1.5]
+[wait wipe]
+
+[scene 10000]
+[charaScale O 1.4]
+[charaFadein O 0.1 0,250]
+[wt 0.5]
+
+[se ad8]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フ[messageShake 0.05 4 4 0.2]ォーウ！？[bgm BGM_EVENT_3 0.1]
+[k]
+
+？1：管制室が……電脳空間に！？
+
+？！
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠モブＡ？
+どうなってんだよコイツは！[r]管制室がまるで別世界だ！
+[k]
+
+[branchQuestNotClear lblNotClear20 3000303]
+
+[branch lblConf20]
+[label lblNotClear20]
+
+[branchQuestNotClear lblNotClear21 1000822]
+
+[branch lblConf21]
+[label lblNotClear21]
+
+
+＠モブＡ？
+ドクター！　ダ・ヴィンチ女史！[r]ふたりの分析力でなんとかしてくれーー！
+[k]
+
+[branch lblNotClear_out21]
+[label lblConf21]
+
+
+＠モブＡ？
+ダ・ヴィンチ！　ホームズ！[r]ふたりの[#叡智:えいち]でなんとかしてくれーー！
+[k]
+
+[label lblNotClear_out21]
+
+[branch lblNotClear_out20]
+[label lblConf20]
+
+＠モブＡ？
+ホームズ！　あれ、いない？[r]肝心なときはいつも留守だなあの安楽椅子探偵！
+[k]
+
+＠モブＡ？
+ダ・ヴィンチ、シオン！　なんとかしてくれーー！[r]キャプテンの顔が見分けられないとかあんまりだー！
+[k]
+
+[label lblNotClear_out20]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠モブＢ？
+うーん、まさにカオス。[r]こうなっては大英雄も小英雄も、
+[k]
+
+＠モブＢ？
+はたまたＣもＲもありませんなァ！[r]めでたいですぞーーー！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+＠モブＣ？
+背広か……嫌いってワケじゃないが、[r]落ち着かないのは確かだな。
+[k]
+
+＠モブＣ？
+ま、殴り合いができるなら問題ねえ。[r]どうだ、いっちょ朝の準備体操といくか、金時？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[wt 0.4]
+
+[se ad150]
+
+＠モブＤ？
+ひと違いと申しましょう……。[r]私は悲しい……トリスタンです……。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.4 1]
+[wt 0.4]
+
+
+＠モブＥ？
+ベオウルフの旦那、オレっちはこっちだ！[r]さっき、たまたま村正サンに木刀もらってな？
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.4 1]
+[wt 0.4]
+
+＠モブＦ？
+落ち着くのよみんな！[r]姿カタチに惑わされてはいけません！
+[k]
+
+＠モブＦ？
+というか、服装がなんだ！[r]豪華なドレスとかノーサンキュー！
+[k]
+
+＠モブＦ？
+着ぐるみ！　着ぐるみこそがすべてを解決するの！[r]うおお、私を虎と呼ぶな！
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.4 1]
+[wt 0.4]
+
+
+＠モブＧ？
+落ち着け、暴れるんじゃない英語教師くん！[r]そこの[#衛生兵:メディック]、鎮静剤はあるかな！？
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.4 1]
+[wt 0.4]
+
+＠モブＨ？
+ん、頭冷やすタオルならあるよー。[r]徹夜で原稿あげる時の必需品だから。
+[k]
+
+＠モブＨ？
+でも、ちょっといい？[r]酷くない？　[#姫:わたし]の扱い、酷くない？
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォウ、フォーーウ！
+[k]
+
+？1：これはひどい
+？2：目がチカチカしてきた[&ぞ:よ]……
+
+？！
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.4 1]
+[wt 0.4]
+
+
+＠モブＩ？
+おっと、[%1][&君:ちゃん]だ！[r]良かった、キミはそのままのようだ！
+[k]
+
+＠モブＩ？
+もういろいろ分からないとは思うが、[r]落ち着いてほしい。
+[k]
+
+＠モブＩ？
+数分前、シミュレーターが作動したかと思うと、[r]管制室が電脳化したばかりか、
+[k]
+
+＠モブＩ？
+スタッフ、サーヴァント、すべての外見が[r]こんなコトになってしまったんだ！
+[k]
+
+？1：何者かの攻撃ですか！？
+
+？！
+
+＠モブＩ？
+いや、外部からの侵入じゃない。[r]これはカルデア内部からの侵入だ。
+[k]
+
+＠モブＩ？
+現在、カルデアで契約しているサーヴァント。[r]その中でこれだけの事が出来るのは[line 3]
+[k]
+
+？1：……まあ、電脳化と言ったら……
+？2：……この手のたちの悪い嫌がらせは……
+
+？！
+
+＠モブＩ？
+ああ。[#十中八九:じっちゅうはっく]、彼女だろう。
+[k]
+
+[bgmStop BGM_EVENT_3 2.0]
+
+＠モブＩ？
+違う世界からやって来た次世代の知性体。[r]何故かカルデアに残っている電脳魔、ＢＢ[line 3]
+[k]
+
+[messageOff]
+[charaFadeout N 0.2]
+[wt 0.1]
+
+[charaMove O 0,-130 1.0]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth P 2]
+[charaDepth N 3]
+[charaDepth E 4]
+
+[charaScale N 0.9]
+[charaScale E 0.9]
+[wt 1.2]
+
+
+[charaTalk off]
+[charaFace D 6]
+[charaPut D 0,0]
+[charaFadeTime D 0.4 0.7]
+
+[effect bit_talk_41_fs]
+[se ad139]
+[wt 0.6]
+
+
+＠？？？
+そう思うでしょ？　でしょでしょー？[r]でも違うんだなー！
+[k]
+
+＠？？？
+[#頭:あたま]隠してお[#腹:なか]隠さず！　何を隠そう！[r]今回のボスは、ボクなのでーす！
+[k]
+
+[effectDestroy bit_talk_41_fs]
+
+[cameraMove 0.4 0,200 1.0]
+
+[bgm BGM_EVENT_64 0.1]
+[charaFace N 0]
+[charaFadein N 0.2 310,-320]
+[wt 0.3]
+
+
+＠モブＩ？
+キミは……大いなる石像神のなかのひと！？[r]おまんじゅうの食べ過ぎでそんなに大きく！？
+[k]
+
+[cameraMove 0.4 0,0 1.0]
+
+[charaFadeout N 0.2]
+[wt 0.3]
+
+[charaFace D 3]
+
+＠D：？？？
+[#違:ちが]わい、[#立体映像:ホ ロ グ ラ ム]だっつーの！[r]ＢＢもよくやるでしょ、このボス演出！
+[k]
+
+[charaFace D 5]
+
+＠D：？？？
+それと、ボクはジナコ＝カリギリ。[r]ガネーシャさんに選ばれた、ふくよかな人間ッス。
+[k]
+
+＠ジナコ
+体が[#豊:ゆた]かな者は心も[#豊:ゆた]かって言うでしょ？
+[k]
+
+＠ジナコ
+そんな海のように広い心を見抜かれて、[r]ボクは疑似サーヴァントになったのです！
+[k]
+
+[charaFace D 0]
+
+＠ジナコ
+さっすが『富と繁栄の神』ガネーシャさん！[r]分かる神様には分かっちゃうんだな～！
+[k]
+
+？1：その富と繁栄の疑似サーヴァントが、なにを？
+？2：ガネーシャ神はこんなコトしないよ
+
+？！
+
+[charaFace D 6]
+
+＠ジナコ
+おっと。[r]ガネーシャ神とは思えない所業ッスか？
+[k]
+
+＠ジナコ
+フッ。そこは『これも勉強』って[#説明:コ　ト]で[r]ガネーシャさんにも納得してもらっているッス。
+[k]
+
+[charaFace D 5]
+
+＠ジナコ
+いまカルデアは比較的平和だけど、またいつ、[r]バカな緊急クエストが起きるか分からないでしょ？
+[k]
+
+[cameraMove 0.4 0,200 1.0]
+
+[charaFace E 0]
+[charaFadein E 0.2 276,-320]
+[wt 0.3]
+
+＠フォウ
+フォフォフォウ。
+[k]
+
+[cameraMove 0.4 0,0 1.0]
+[charaFadeout E 0.2]
+[wt 0.3]
+
+＠ジナコ
+カルデアは人類の最後の砦。[r]緊急時に備えて、気を引き締めていなくちゃいけない。
+[k]
+
+[charaFace D 0]
+
+＠ジナコ
+な・の・でぇ[line 3]
+[k]
+
+[charaFace D 1]
+
+＠ジナコ
+ボクの偉大な力でSE.RA.PHを発注！[r]バトルフィールドを作ってみました！
+[k]
+
+＠ジナコ
+ボクはここに宣戦を布告する！[r][%1]、ちょっと聖杯戦争しよ～！
+[k]
+
+[charaFace D 8]
+
+＠ジナコ
+あ、ランクマとかＰｖＰでもないからね？[r]勝っても負けてもペナルティなし！
+[k]
+
+＠ジナコ
+ボク、ギスギスしたゲーム嫌いだからさー。
+[k]
+
+＠ジナコ
+まったりのんびりスキル上げ、が[r]ゲームの本質だと思うんだよね？
+[k]
+
+[cameraMove 0.4 0,200 1.0]
+
+[charaFace N 0]
+[charaFadein N 0.2 310,-320]
+[wt 0.3]
+
+＠モブＩ？
+うーん、[r]『校庭で野球やろうぜ』くらいの気軽さだね。
+[k]
+
+＠モブＩ？
+管制室をこんな風にしたのは[r]聖杯戦争の模擬戦をするためなのかな？
+[k]
+
+＠モブＩ？
+落ち着いて見れば、[r]管制室の機能に変化はないし、
+[k]
+
+＠モブＩ？
+実害はスタッフとサーヴァントの見分けが[r]つかなくなったくらいだ。
+[k]
+
+＠モブＩ？
+模擬戦はマスターとして有意義な経験だし、[r]付き合ってあげるかい、[%1][&君:ちゃん]？
+[k]
+
+？1：とにかく試合すればいいんだ[&な:ね]？
+？2：そういうコトなら喜んで
+
+？！
+
+[cameraMove 0.4 0,0 1.0]
+[charaFadeout N 0.2]
+[wt 0.3]
+
+[charaFace D 6]
+
+＠ジナコ
+[line 3]フッ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.2]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_64 1.0]
+
+[charaScale T 1.4]
+[charaPut P 1]
+[charaPut T 1]
+[se ad1]
+[charaEffect T bit_talk_noise_pink02]
+[wt 0.2]
+[charaFace P 0]
+[charaFadeTime P 0.3 0.6]
+[wt 0.5]
+
+＠？？？
+騙[messageShake 0.05 4 4 0.2]されないでーーー！
+[k]
+
+＠？？？
+ジナコさんを倒さないと、カルデアじゅうが[r]こんな、ほのぼのワールドになってしまいますぅー！
+[k]
+
+[cameraMove 0.4 0,200 1.0]
+[charaFadeout P 0.4]
+[charaPut T 2000,2000]
+[charaEffectStop T bit_talk_noise_pink02]
+
+[charaFace E 0]
+[charaFadein E 0.1 276,-320]
+[wt 0.3]
+
+[charaTalk off]
+
+＠フォウ
+フォウ！？
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.0]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaFadeout E 0.1]
+[charaFadeout O 0.1]
+
+[scene 146700]
+[charaScale T 1.1]
+[charaPut T 0,0]
+[charaEffect T bit_talk_noise_pink01]
+[pictureFrame cut063_cinema]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠ＢＢ
+わたしです！　ＢＢです！[r]いま、最後の力でカルデアに通信を送っています！
+[k]
+
+[charaFace A 15]
+
+＠ＢＢ
+ジナコさんにやられて石像の中に[r]幽閉されちゃいました、うわぁぁぁぁぁん！
+[k]
+
+[charaFace A 5]
+
+＠ＢＢ
+あ。「無敵のＢＢちゃんがどうしてそんなコトに？」[r]という当然の疑問、浮かんでいますね？
+[k]
+
+＠ＢＢ
+では再現映像、スタート！[r]こんなコトがあったのです！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_71 1.0]
+[wait fade]
+
+[charaEffectDestroy T bit_talk_noise_pink01]
+[charaFadeout A 0.1]
+
+[effect bit_talk_movie_film_fs]
+[effect bit_talk_film_noise]
+[pictureFrame]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_49 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠大いなる石像神
+カッ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fowardEffect bit_talk_13]
+[se bac150]
+[wt 0.1]
+[charaShake A 0.05 3 3 0.7]
+[wt 1.0]
+
+＠ＢＢ
+きゃああぁぁあーーーーーー！[r]そんな、ワンパンでやられちゃいましたーー！？
+[k]
+
+[messageOff]
+[charaMove A 0,-20 0.4]
+[charaFadeout A 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠大いなる石像神
+いやあ。一瞬マジで[#焦:あせ]ったけど、[r]考えてみれば、アタシってば[#Ｍ:ムーン]・[#Ｃ:キャンサー]じゃん！
+[k]
+
+＠大いなる石像神
+不利な点なし、レア度も上で神霊サーヴァント！
+[k]
+
+＠大いなる石像神
+[%1]には内緒だけど、[r]昔はマスターだったしね！
+[k]
+
+[charaFace C 6]
+
+＠大いなる石像神
+フッ……これで勝てない道理はなかったな……[r]強くなりすぎた自分が怖い……
+[k]
+
+[charaFace C 1]
+
+＠大いなる石像神
+そういうワケでこの聖杯（模造品）は[r]お[#布施:ふせ]として没収するね！
+[k]
+
+[charaFace C 0]
+
+＠大いなる石像神
+そして……ＢＢ。みじめな敗者よ。
+[k]
+
+＠大いなる石像神
+ソリッドな展開にされたくなければ、[r]おまえは我のサーヴァントとして働くのだ……
+[k]
+
+＠大いなる石像神
+SE.RA.PHを作るがよい……[r]カルデアをのっぴきならない事態にするがよい……
+[k]
+
+＠大いなる石像神
+我は聖杯戦争を開き、[r]この聖杯にエネルギーを溜め[line 3]
+[k]
+
+[charaFace C 2]
+
+＠大いなる石像神
+その力でSE.RA.PHをオープンワールドにし、[r]やがて地球をゲーム世界で上書きする！
+[k]
+
+＠大いなる石像神
+ふははは！　人類はデイリーミッションと[r]素材集めとキャラ育成の奴隷になるのだ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ＢＢ
+ええー。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_49 1.5]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[effectDestroy bit_talk_movie_film_fs]
+[effectDestroy bit_talk_film_noise]
+[pictureFrame cut063_cinema]
+
+[charaScale T 1.1]
+[charaPut T 0,0]
+[charaEffect T bit_talk_noise_pink01]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+[bgm BGM_EVENT_41 0.1]
+
+？1：ＢＢすらドン引くって……
+？2：ゆ　る　せ　な　い
+
+？！
+
+[charaFace A 4]
+
+＠ＢＢ
+そう言って、ジナコさんは無理矢理[r]サーヴァント契約を迫って、SE.RA.PHを作らせ、
+[k]
+
+＠ＢＢ
+わたしをSE.RA.PHの一番奥に閉じ込めたのです……
+[k]
+
+[charaFace A 15]
+
+＠ＢＢ
+こんなのひどすぎますぅぅーー！[r]屈辱ですぅーーーー！
+[k]
+
+＠ＢＢ
+お願いしますマスターさん、[r]ジナコさんを止めてくださぁーーい！
+[k]
+
+[charaFace A 5]
+
+＠ＢＢ
+というか、終わりのないレベリングとか[r]ＢＢちゃんの主義に反します！
+[k]
+
+＠ＢＢ
+人類の皆さんの[#憐:あわ]れなルーチンワークは[r]進歩・革新のためにあるから尊いのです！
+[k]
+
+＠ＢＢ
+ただレベルだけ上がり続けて、世界に変化のない[r]ゲームなんて、わたしが許しません！
+[k]
+
+[charaFace A 15]
+
+＠ＢＢ
+でも……今のわたしはこの通り、ＢＢスタジオで[r]動画編集・違法配信をするコトしかできません……
+[k]
+
+＠ＢＢ
+どうかジナコさんの野望を食い止めて、[r]わたしを助けに来てくださーーーい！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_41 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaEffectDestroy T bit_talk_noise_pink01]
+[pictureFrame]
+
+[scene 10000]
+[charaFadein O 0.1 0,-130]
+
+[charaTalk D]
+[charaFace D 2]
+[charaPut D 0,0]
+[charaFadeTime D 0.1 0.8]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_64 0.1]
+[wait fade]
+
+＠ジナコ
+違[messageShake 0.05 4 4 0.2]法配信ダメーーー！
+[k]
+
+[charaFace D 3]
+
+＠ジナコ
+ふう。スタンドアローン状態にしたはずなのに、[r]ＢＢさん、油断も隙もあったもんじゃないよね……。
+[k]
+
+[charaFace D 6]
+
+＠ジナコ
+でも……バレてしまったのなら仕方がない。
+[k]
+
+＠ジナコ
+ＢＢさんを解放してほしかったら、[r]ボクに勝つしかないってワケ。
+[k]
+
+＠ジナコ
+ボクは聖杯戦争ができればそれでいいんで、[r]いつでもSE.RA.PHに来ていいッスよ。
+[k]
+
+[charaFace D 1]
+
+
+＠ジナコ
+じゃあね～！　SE.RA.PHで会おうぜ、[r]親愛なる我がライバルよ！
+[k]
+
+[messageOff]
+[se ad1]
+[seVolume ad1 0 0.5]
+[cueSe SE_21 21_ad1127]
+[cueSeStop 21_ad1127 0.6]
+[charaFadeout D 0.4]
+[wt 0.4]
+[bgmStop BGM_EVENT_64 1.7]
+
+[charaMove O 0,250 1.8]
+[charaScale N 1.0]
+[charaScale E 1.0]
+[wt 1.8]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+＠モブＩ？
+たいへんな事になったね……
+[k]
+
+＠モブＩ？
+とにかく、聖杯戦争をしてジナコに勝利して、[r]聖杯を取り上げて、ＢＢを助ける。
+[k]
+
+＠モブＩ？
+……そういう事でいいのかな？
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+
+＠？？？
+はい！　そのためなら協力は惜しみません！[r]とーーーぅ！
+[k]
+
+[messageOff]
+[charaDepth B 2]
+[charaDepth O 1]
+
+[se ad348]
+[seStop ad348 0.9]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.3 -300,-200]
+[charaMove B 0,-200 0.5]
+[wt 1.2]
+[bgm BGM_BATTLE_120 0.1]
+
+？1：ＢＢ！？
+？2：捕まっていたのでは！？
+
+？！
+
+
+＠ＢＢナビ
+いえ、わたしはＢＢナビ！[r]ＢＢちゃん最後の抵抗です！
+[k]
+
+＠ＢＢナビ
+『聖杯戦争に挑むセンパイに、せめて応援ぐらい……！』
+[k]
+
+＠ＢＢナビ
+そんな思いでなんとか送り込めた、[r]ＢＢちゃんの分身なのです！
+[k]
+
+＠ＢＢナビ
+どんな機能があるのか？　ですか？[r]特にサポート能力はありませんが……
+[k]
+
+＠ＢＢナビ
+なんと！　今回は特別編なのでボイス付きで[r]ナビゲーションさせていただきます♡
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォウ。フォウフォウ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-200]
+
+＠ＢＢナビ
+状況は分かりましたね？[r]では早速、偽りのSE.RA.PHに向かいましょう！
+[k]
+
+＠ＢＢナビ
+これは月と人類とわたしを助ける一大作戦……[r]名付けて、
+[k]
+
+＠ＢＢナビ
+『ムーンサルト・オペレーション』！
+[k]
+
+＠ＢＢナビ
+ジナコさんが聖杯の魔力に[#溺:おぼ]れて悪堕ちする……[r]なんて、わたしにも不本意なバッドエンドです。
+[k]
+
+＠ＢＢナビ
+彼女が２Ｐカラーになる前に、[r]センパイの手で改心させてあげてくださーい！
+[k]
+
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_BATTLE_120 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

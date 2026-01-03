@@ -1,0 +1,855 @@
+
+
+
+＄94-06-90-16-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1053900 1 徴側]
+[charaSet B 1053910 1 徴弐]
+
+[charaSet C 99502600 1 マシュ]
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+[charaSet E 6027000 1 武則天]
+[charaSet F 3032000 1 エレシュキガル]
+[charaSet G 3040001 1 ラムダ]
+
+[charaSet H 1098238810 1 ヴィマーナ１]
+[charaSet I 1098238810 1 ヴィマーナ２]
+[charaSet J 1098238810 1 ヴィマーナ３]
+
+[charaSet K 98115000 1 通信用ノイズ]
+
+[ifClear 60068801]
+[charaSet X 1098237900 1 コン１]
+[charaSet Y 1098237900 1 コン２]
+[charaSet Z 1098237900 1 コン３]
+
+[ifClear 60068802]
+[charaSet X 1098237910 1 コン１]
+[charaSet Y 1098237910 1 コン２]
+[charaSet Z 1098237910 1 コン３]
+
+[ifClear 60068803]
+[charaSet X 1098237920 1 コン１]
+[charaSet Y 1098237920 1 コン２]
+[charaSet Z 1098237920 1 コン３]
+
+[ifClear 60068804]
+[charaSet X 1098238000 1 コン１]
+[charaSet Y 1098238000 1 コン２]
+[charaSet Z 1098238000 1 コン３]
+
+[ifClear 60068805]
+[charaSet X 1098238010 1 コン１]
+[charaSet Y 1098238010 1 コン２]
+[charaSet Z 1098238010 1 コン３]
+
+[ifClear 60068806]
+[charaSet X 1098238020 1 コン１]
+[charaSet Y 1098238020 1 コン２]
+[charaSet Z 1098238020 1 コン３]
+
+[ifClear 60068807]
+[charaSet X 1098238100 1 コン１]
+[charaSet Y 1098238100 1 コン２]
+[charaSet Z 1098238100 1 コン３]
+
+[ifClear 60068808]
+[charaSet X 1098238110 1 コン１]
+[charaSet Y 1098238110 1 コン２]
+[charaSet Z 1098238110 1 コン３]
+
+[ifClear 60068809]
+[charaSet X 1098238120 1 コン１]
+[charaSet Y 1098238120 1 コン２]
+[charaSet Z 1098238120 1 コン３]
+
+[else]
+[charaSet X 1098237900 1 コン１]
+[charaSet Y 1098237900 1 コン２]
+[charaSet Z 1098237900 1 コン３]
+
+[endIf]
+
+[charaDepth A 4]
+[charaDepth B 3]
+
+[charaDepth X 4]
+[charaDepth Y 5]
+[charaDepth Z 6]
+[charaDepth H 1]
+[charaDepth I 2]
+[charaDepth J 3]
+
+[charaEffect K bit_talk_10_LowLevel]
+[charaPut K 2000,2000]
+
+
+[scene 147400]
+[fadein black 1.0]
+[wait fade]
+
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[se ade208]
+[seVolume ade208 0.0 0.0]
+[seVolume ade208 0.5 0.3]
+[wt 1.2]
+
+[charaFace X 0]
+[charaFadein X 1.0 0,-60]
+[charaMoveFSL X -320,-60 2.0]
+[charaFace H 0]
+[charaFadein H 1.0 0,-60]
+[charaMoveFSL H -320,-60 2.0]
+[wt 0.1]
+
+[charaFace Y 0]
+[charaFadeinFSR Y 1.0 320,80]
+[charaMove Y 0,80 2.0]
+[charaFace I 0]
+[charaFadeinFSR I 1.0 320,80]
+[charaMove I 0,80 2.0]
+[wt 0.2]
+
+[charaFace Z 0]
+[charaFadeinFSR Z 1.0 640,-60]
+[charaMoveFSR Z 320,-60 2.0]
+[charaFace J 0]
+[charaFadeinFSR J 1.0 640,-60]
+[charaMoveFSR J 320,-60 2.0]
+[wt 2.5]
+
+[bgm BGM_EVENT_111 0.1]
+[charaTalk on]
+[charaTalk X]
+[charaFace X 0]
+
+＠X：コン
+わはー！
+[k]
+
+[clear]
+
+[charaTalk Y]
+[charaFace Y 6]
+
+＠Y：コン
+しんぷるに、かっこよすぎなのでは？
+[k]
+
+[charaFadeout X 0.1]
+[charaFadeout Y 0.1]
+[charaFadeout Z 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0.1 0,0]
+[charaFadein B 0.1 0,0]
+
+＠徴側
+ええと……聞いてよいのでしょうか。[r]そもそも、あれ、何ですか？
+[k]
+
+？1：ヴィマーナだよ
+？！
+
+[charaTalk B]
+[charaFace B 0]
+
+＠徴弐
+だから、それが何なのって話だけど。[r]飛行機ってやつ？
+[k]
+
+？1：さあ……
+？2：実のところ謎です
+？！
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 0,0]
+[charaPut K 0,0]
+
+＠マシュ
+はい。はぐらかしているわけではなく、[r]本当にそうなのだとご理解いただきたく。
+[k]
+
+[charaPut K 2000,2000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFace B 7]
+[charaFadein A 0.1 0,0]
+[charaFadein B 0.1 0,0]
+
+＠徴弐
+何なのかわかんないものが[r]なんで作れるんだよ……。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 32]
+[charaFadein D 0.1 0,0]
+[charaPut K 0,0]
+
+＠ダ・ヴィンチ
+開発者の一人として言うけど、[r]形状と雰囲気を模しているだけで、
+[k]
+
+＠ダ・ヴィンチ
+これは本物とは全然違うものだよ。[r]サイズも浮遊機構もね。
+[k]
+
+[charaFace D 14]
+
+＠ダ・ヴィンチ
+もちろん、本当は全てを理解したうえで[r]小型化するのが美しい。それが一番だ。
+[k]
+
+＠ダ・ヴィンチ
+答えが詰まっている現物の所有者、[r]所在地もはっきりしているしね。
+[k]
+
+＠ダ・ヴィンチ
+だけどさ……
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_111 1.0]
+[wait fade]
+
+
+[charaPut K 2000,2000]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaSet L 2002000 1 ギルガメッシュ]
+
+[charaSet M 2011001 1 二コラ・テスラ]
+[charaSet N 2023000 1 モリアーティ]
+[charaSet O 1098124500 1 ダ・ヴィンチ]
+[sceneSet P 10001 1]
+[imageSet R back10000 1]
+[charaScale R 1.01]
+[imageSet S back10000 1]
+[charaScale S 1.01]
+
+[charaTalk depthOff]
+[charaDepth O 5]
+[charaDepth R 7]
+[charaDepth S 6]
+[charaDepth M 3]
+[charaDepth N 4]
+
+[charaDepth P 6]
+
+[charaFadein R 0.1 0,-745]
+[charaFadein S 0.1 0,745]
+[scene 105900]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 0,-50]
+[wt 1.5]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace O 0]
+[charaFadeinFSR O 1.0 50,-50]
+[wt 0.2]
+[charaMove O 0,-50 0.5]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk O]
+[charaFace O 1]
+
+＠O：ダ・ヴィンチ
+見ーせーて！
+[k]
+
+[messageOff]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 0,-50]
+[wt 0.5]
+
+[charaFace L 2]
+[wt 1.5]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait fade]
+
+[charaFadeout L 0.1]
+
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+[scene 147400]
+[wt 0.5]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 32]
+[charaFadein D 0.1 0,0]
+[charaPut K 0,0]
+
+＠ダ・ヴィンチ
+……って頼んだのに駄目だったんだ。[r]いい笑顔だったと思うんだけどなあ。
+[k]
+
+[charaPut K 2000,2000]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 0,0]
+[charaPut K 0,0]
+
+＠マシュ
+当然ですが、宝物庫の中のものは[r]ギルガメッシュ王の私物ですからね……。
+[k]
+
+[charaPut K 2000,2000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFace B 0]
+[charaFadein A 0.1 0,0]
+[charaFadein B 0.1 0,0]
+
+＠徴側
+でも、こんな不思議なものが[r]作れてしまうなんて凄いです！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 0,0]
+[charaPut K 0,0]
+
+＠ダ・ヴィンチ
+えへー、そうかな？　ありがと。
+[k]
+
+＠ダ・ヴィンチ
+急ぎの仕事でもあったから、[r]一人で作ったんじゃないけどね。
+[k]
+
+[charaFace D 0]
+
+＠ダ・ヴィンチ
+興味がありそうなサーヴァントたちと力を合わせて[r]開発したものだよ。面子はこんな感じ。
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait fade]
+
+[charaPut K 2000,2000]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth O 8]
+[charaFadein R 0.1 0,-745]
+[charaFadein S 0.1 0,745]
+[scene 10600]
+[wt 0.5]
+
+[charaScale O 0.6]
+
+[charaTalk O]
+[charaFace O 23]
+[charaFadeinFSR O 0.1 440,-240]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait fade]
+
+
+[charaTalk off]
+[charaFace M 1]
+[charaFace N 0]
+[charaFadeinFSL M 0.4 -256,-50]
+[charaFadeinFSR N 0.4 256,-50]
+[wt 2.0]
+
+＠O：ダ・ヴィンチ
+あ、いや、教授は途中でリタイアしたんだった。
+[k]
+
+[messageOff]
+
+[charaTalk on]
+[charaTalk N]
+[charaFace N 4]
+[wt 0.5]
+[charaFadeout N 1.0]
+[wt 1.5]
+
+？1：何かあったの？
+？！
+
+[charaTalk O]
+[charaFace O 14]
+
+＠O：ダ・ヴィンチ
+いやー、ダメもとで教授も行っちゃったんだよね？[r]私は止めとけって言ったんだけど。
+[k]
+
+[messageOff]
+
+[bgm BGM_EVENT_7 1.0 0.4]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout M 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[overlayFadein R 0.1 0,-745]
+[overlayFadein S 0.1 0,745]
+
+[scene 105900]
+[wt 0.5]
+
+[bgm BGM_EVENT_7 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk off]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 0,-50]
+[wt 1.0]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.5]
+[charaTalk on]
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 1.0 50,-50]
+[wt 0.2]
+[charaMove N 0,-50 0.5]
+[wt 1.0]
+
+[charaFace N 1]
+
+＠モリアーティ
+見ーせーて！
+[k]
+
+[messageOff]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 0,-50]
+[wt 0.7]
+
+[bgm BGM_EVENT_80 0.1]
+[charaFace L 2]
+[wt 0.7]
+
+[se ad39]
+[effect bit_talk_charge_red 0,0]
+[wt 1.5]
+
+
+[charaTalk off]
+[charaFadein P 2.0 0,0]
+[se ad372]
+[seStop ad39 1.0]
+[wt 1.5]
+
+[effectStop bit_talk_charge_red]
+[charaFadeout L 0.5]
+[wt 0.5]
+
+[scene 10001]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk N]
+[charaFace N 1]
+[charaFadein N 0.1 0,-50]
+[wt 0.5]
+
+[charaFadeout P 0.5]
+[wt 0.5]
+
+[charaFace N 4]
+[wt 0.5]
+
+[charaFadein P 3.0 0,0]
+[wt 3.0]
+
+[fadeout black 2.0]
+[wait fade]
+
+[wipeOff]
+[charaFadeout O 0.1]
+[charaFadeout N 0.1]
+[charaFadeout P 0.1]
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+
+[charaSet Q 1098229800 1 ケルピー]
+
+
+[scene 147400]
+[wt 0.1]
+
+[fadein black 2.0]
+[bgmStop BGM_EVENT_80 1.0]
+[wait fade]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 0,0]
+[charaPut K 0,0]
+
+＠ダ・ヴィンチ
+それ以降、彼の姿を見ることはなかった……
+[k]
+
+＠ダ・ヴィンチ
+具体的にはエヌマ的な攻撃から必死に逃げた際に[r]腰をグキリと[#捻:ひね]って療養することになった……
+[k]
+
+[charaFace D 16]
+
+＠ダ・ヴィンチ
+というお話！
+[k]
+
+[charaFace D 9]
+
+[bgm BGM_EVENT_147 0.1]
+
+＠ダ・ヴィンチ
+まあとにかく完成まで持っていけてよかったよ。
+[k]
+
+[charaFace D 27]
+
+＠ダ・ヴィンチ
+ちなみに、このミニヴィマーナの動力やら[r]何やらも一応企業秘密ということで。
+[k]
+
+＠ダ・ヴィンチ
+本物と違うのかどうかすらわかんないけど、[r]ビックリのテクノロジーが詰め込まれてるんだ。
+[k]
+
+[charaPut K 2000,2000]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk X]
+[charaFace X 0]
+[charaFace Y 0]
+[charaFace Z 0]
+[charaFadeinFSL X 0.1 -320,-60]
+[charaFadein Y 0.1 0,80]
+[charaFadeinFSR Z 0.1 320,-60]
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFadeinFSL H 0.1 -320,-60]
+[charaFadein I 0.1 0,80]
+[charaFadeinFSR J 0.1 320,-60]
+
+＠X：コン
+りくつはわからんですがー。
+[k]
+
+[clear]
+
+[charaTalk Y]
+
+＠Y：コン
+とにかくかっこいいよ。
+[k]
+
+[charaFadeout X 0.1]
+[charaFadeout Y 0.1]
+[charaFadeout Z 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,0]
+[charaPut K 0,0]
+
+＠ダ・ヴィンチ
+うんうん、今はそれこそが大事さ！
+[k]
+
+[charaPut K 2000,2000]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0.1 0,0]
+[charaFadein B 0.1 0,0]
+
+[bgmStop BGM_EVENT_147 1.5]
+
+＠徴側
+そうですね、そろそろ目的地に到達します。[r]効果のほどはどうでしょう？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_146 0.1]
+
+[charaTalk X]
+[wt 0.2]
+[se ade208 0]
+[seVolume ade208 0.5 0.3]
+[charaFace X 1]
+[charaFadeinFSR X 0.5 160,0]
+[charaFace H 0]
+[charaFadeinFSR H 0.5 160,0]
+[charaMove X 0,0 1.0]
+[charaMove H 0,0 1.0]
+
+＠X：コン
+なぞの空飛ぶのりものは、実に、なぞ……。
+[k]
+
+[messageOff]
+[charaMoveFSL X -160,0 1.0]
+[charaMoveFSL H -160,0 1.0]
+[wt 0.5]
+[charaFadeout X 0.5]
+[charaFadeout H 0.5]
+[seStop ade208 1.0]
+[wt 1.0]
+
+[charaTalk Y]
+[wt 0.2]
+[se ade208 0]
+[seVolume ade208 0.5 0.3]
+
+[charaFace Y 2]
+[charaFadeinFSL Y 0.5 -160,0]
+[charaFace I 0]
+[charaFadeinFSL I 0.5 -160,0]
+[charaMove Y 0,0 1.0]
+[charaMove I 0,0 1.0]
+
+＠Y：コン
+こどくなそらのたび、たよれるのは自分ひとり。[r]いい……。
+[k]
+
+[messageOff]
+[charaMoveFSR Y 160,0 1.0]
+[charaMoveFSR I 160,0 1.0]
+[wt 0.5]
+[charaFadeout Y 0.5]
+[charaFadeout I 0.5]
+[seStop ade208 1.0]
+[wt 1.0]
+
+[charaTalk Z]
+[wt 0.2]
+[se ade208 0]
+[seVolume ade208 0.5 0.3]
+[charaFace Z 0]
+[charaFadeinFSR Z 0.5 160,0]
+[charaFace J 0]
+[charaFadeinFSR J 0.5 160,0]
+[wt 0.2]
+[charaMove Z 0,0 1.0]
+[charaMove J 0,0 1.0]
+
+＠Z：コン
+しぶすぎる……。
+[k]
+
+[messageOff]
+[charaMoveFSL Z -160,0 1.0]
+[charaMoveFSL J -160,0 1.0]
+[wt 0.5]
+[charaFadeout Z 0.5]
+[charaFadeout J 0.5]
+[seStop ade208 1.0]
+[wt 1.0]
+
+
+[charaTalk Q]
+[charaFace Q 0]
+[charaFadein Q 0.1 0,0]
+
+＠ケルピー
+…………？？？
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFace B 6]
+[charaFadein A 0.1 0,0]
+[charaFadein B 0.1 0,0]
+
+＠徴弐
+ドヤ顔でケルピーの前を往復してるね。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 19]
+[charaFadein F 0.1 0,0]
+
+＠エレシュキガル
+心が揺れ動いているような様子は[r]まったくないのだわ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,0]
+[charaPut K 0,0]
+
+＠ダ・ヴィンチ
+オッケー、ばっちりだ！
+[k]
+
+[charaFace D 0]
+
+＠ダ・ヴィンチ
+でも改めて言っとくと、あれはただ浮かんで[r]横に動くだけの、風船レベルの機動性だ。
+[k]
+
+＠ダ・ヴィンチ
+高さもあれ以上は上がらない。[r]つまり[line 3]
+[k]
+
+[charaPut K 2000,2000]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_146 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,0]
+
+＠ラムダ
+戦闘はしにくくなっている、ということね。
+[k]
+
+＠ラムダ
+けれど、とどめを刺すくらいは[r]乗ったままでもできるでしょう。
+[k]
+
+[charaFace G 1]
+
+＠ラムダ
+コンたちの安全が確保できたのなら、[r]私たちがやるべきコトは変わらないわ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,0]
+
+＠武則天
+うむ！　うっかり背中に乗ってしまわんように[r]注意しながら妖馬退治じゃ！　ゆくぞー！
+[k]
+
+[messageOff]
+
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_24 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

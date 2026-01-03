@@ -1,0 +1,451 @@
+
+
+
+＄94-14-15-04-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098224300 1 岡田以蔵]
+[charaSet B 1057000 1 セタンタ]
+[charaSet C 28010001 1 ダンテ]
+[charaSet D 1098319200 1 カドック]
+[charaSet E 1098255110 1 ゴルドルフ]
+[charaSet F 1098257310 1 ダ・ヴィンチ]
+[charaSet G 1098257810 1 マシュ]
+[charaSet H 1098318700 1 エレノア]
+[charaSet I 1098318700 1 エレノア（演出用）]
+[charaSet J 1098324000 1 エレノアの父]
+[charaSet K 1098318900 1 エレノアの母]
+
+[imageSet M back10000 1 1]
+[charaScale M 1.05]
+[imageSet N back10000 1 1]
+[charaScale N 1.05]
+
+[sceneSet O 243105 1]
+[charaScale O 1.2]
+[sceneSet P 243002 1]
+[charaScale P 1.2]
+
+[charaSet S 1098238800 1 エフェクト用]
+[charaSet T 1098238800 1 エフェクト用2]
+[charaSet U 1098238800 1 エフェクト用3]
+
+[charaPut S 2000,2500]
+[charaEffect S bit_talk_10_LowLevel]
+[charaPut T 2000,2500]
+[charaEffect T bit_sepia01_depth_fs]
+[charaPut U 2000,2500]
+[charaEffect U bit_sepia01_depth_fs]
+
+[scene 242900]
+
+[fadein black 1.5]
+[cueSe SE_24 24_ad1359 1.5 0.8]
+[wait fade]
+[wt 2.0]
+
+[cueSeStop 24_ad1359 2.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_194 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.4 1]
+
+＠岡田以蔵
+またかえ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+ま、今回もしょうがないよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+……フフ。それで一体何が起きたのかね……？
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_194 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 243300]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_124 0.1]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+……なるほど。そういう理由でその……[r]炎の精霊が……。
+[k]
+
+[charaFace C 0]
+
+＠ダンテ
+……うん？[r]そのジニー、という精霊種は……。
+[k]
+
+＠ダンテ
+今日の、あの瞬間に生まれたのか？[r]それとも、元からか？
+[k]
+
+？1：長い付き合いみたいだけど
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠カドック
+聖杯は相変わらず姿を現さないが……[r]エレノアが願いを叶える対象なのは間違いない。
+[k]
+
+＠カドック
+そして、彼女の願い事を拒絶するのは難しい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+だろうな……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 24]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+そんなに難しいかい？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠カドック
+僕が上手く説明できる気はしないから、[r]新所長頼む。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+はいはい。
+[k]
+
+＠ゴルドルフ
+エレノアという少女の、今日一日を考えてみろ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subCameraOn 3]
+[charaLayer T sub #A]
+[charaLayer H sub #A]
+[charaLayer O sub #A]
+
+[charaLayer U sub #B]
+[charaLayer I sub #B]
+[charaLayer J sub #B]
+[charaLayer K sub #B]
+[charaLayer P sub #B]
+
+[charaLayer M sub #C]
+[charaLayer N sub #C]
+
+[subCameraFilter #A normal]
+[subCameraFilter #B normal]
+[subCameraFilter #C through]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+
+[subRenderScale #A 1.2]
+[subRenderScale #B 1.2]
+[subRenderScale #C 1.01]
+
+[charaDepth O 2]
+[charaDepth H 3]
+[charaDepth T 4]
+
+[charaScale S 1.0]
+[charaScale H 0.9]
+[charaScale O 1.0]
+
+[charaPut T 1]
+[charaFace H 7]
+[charaFadein H 0 0,-50]
+[charaFadein O 0 0,-200]
+
+[charaDepth P 2]
+[charaDepth K 3]
+[charaDepth J 4]
+[charaDepth I 5]
+[charaDepth U 4]
+
+[charaPut U 1]
+
+[charaScale I 0.9]
+[charaScale J 0.9]
+[charaScale K 0.9]
+[charaFace J 2]
+[charaFace K 5]
+[charaFace I 5]
+[charaFadein J 0 0,-75]
+[charaFadein K 0 -300,-75]
+[charaFadein I 0 300,-75]
+[charaFadein P 0 0,-200]
+
+[charaDepth M 2]
+[charaDepth N 2]
+
+[charaFadein M 0.1 0,756]
+[charaFadein N 0.1 0,-756]
+
+[subRenderFadein #C 1.0 0,0]
+
+[subRenderFadein #A 1.0 30,0]
+[subRenderMove #A -30,0 30.0]
+[bgm BGM_EVENT_124 1.0 0.5]
+[wt 1.2]
+
+＠ゴルドルフ
+自分の誕生日パーティーだというのに、[r]友人は誰一人としてホテルに来ない。
+[k]
+
+＠ゴルドルフ
+仲が良かったはずの親戚も無視だ。
+[k]
+
+＠ゴルドルフ
+両親は娘を愛しているのかいないのか、[r]今は自分の経済状況で精一杯だ。
+[k]
+
+[messageOff]
+[subRenderFadein #B 1.0 -30,0]
+[subRenderMove #B 30,0 30.0]
+[wt 1.0]
+[subRenderFadeout #A 0.1]
+[wt 0.2]
+
+＠ゴルドルフ
+おまけにこのホテルに来たのが、娘の……つまり、[r]彼女の誕生日に駆けつけるであろう親戚への……。
+[k]
+
+＠ゴルドルフ
+借金申し入れが主目的だと聞かされたんだぞ？
+[k]
+
+＠ゴルドルフ
+そりゃあ破壊衝動に身を任せたくなるし、[r]友達も求めるだろう。
+[k]
+
+[messageOff]
+[charaFace E 8]
+[bgm BGM_EVENT_124 1.0 1.0]
+[subRenderFadeout #B 1.0]
+[subRenderFadeout #C 1.0]
+[wt 1.2]
+
+[charaTalk on]
+＠ゴルドルフ
+さて、そして厄介なことにだ。[r]リセットしようが、その状況自体は変わらないのだ。
+[k]
+
+＠ゴルドルフ
+父親を押さえれば、エレノアが真実を知ることを[r]遅らせられるかもしれない。
+[k]
+
+[charaFace E 9]
+＠ゴルドルフ
+だが、遅らせるだけだ。[r]誰も来ない誕生日パーティーで彼女は真実に気付くだろう。
+[k]
+
+[charaFace E 16]
+＠ゴルドルフ
+そうなれば、彼女は当然あの精霊に[#縋:すが]り付き、[r]精霊はホテルを破壊する。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+……悲しい事実だが……。[r]受け入れなければならないか……。
+[k]
+
+＠ダンテ
+……。[r]……。
+[k]
+
+[charaFace C 0]
+
+＠ダンテ
+どうにか……良い結末に向かいたいものだが……。
+[k]
+
+？1：これからどうしよう……？
+？！
+
+[charaFace C 1]
+＠ダンテ
+炎の精霊が出てくるまでは、[r]私たちは何もできそうにない。
+[k]
+
+＠ダンテ
+だから、何もしないというのが正しい……。[r]かもしれないが……。
+[k]
+
+[charaFace C 18]
+
+＠ダンテ
+……。[r]……。
+[k]
+
+[charaFace C 9]
+
+＠ダンテ
+いや……リセットされる以上、[r]何もしない方が正しいのかな……。
+[k]
+
+＠ダンテ
+エレノアが聖杯に願う行動を誘発するような[r]トラブルは排除するとして……。
+[k]
+
+[charaFace C 10]
+
+＠ダンテ
+それ以外は様子見しようか……。
+[k]
+
+？1：佐々木仮面やＶＩＰは無視？
+？！
+
+[charaFace C 16]
+
+＠ダンテ
+……。[r]……。
+[k]
+
+＠ダンテ
+彼らは……関係ないしな……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠カドック
+……関係ない、か……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+＠マシュ
+どうしました、カドックさん？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠カドック
+いや……本当に無関係なのか、と少し思ってな。[r]エレノアと直接関係がある訳じゃもちろんないが……。
+[k]
+
+[charaFace D 12]
+＠カドック
+すまない、考えすぎかもだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+うむ。エレノアは気の毒だし、他の面々も[r]我々が動かない以上は難しいだろうが……。
+[k]
+
+＠ゴルドルフ
+今はこの特異点修正に集中するべきだ。[r]いいな？
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_124 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

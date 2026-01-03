@@ -1,0 +1,614 @@
+
+＄94-08-69-02-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257810 1 マシュ]
+[charaSet B 1098123010 1 ムニエル]
+[charaSet C 1098257310 1 ダ・ヴィンチ]
+[charaSet D 1098255110 1 ゴルドルフ]
+[charaSet E 2050000 1 プトレマイオス]
+[charaSet F 1098214000 1 四不相]
+
+[charaSet G 1098257810 1 マシュ_演出用]
+[charaSet H 1098123010 1 ムニエル_演出用]
+[charaSet I 1098257310 1 ダ・ヴィンチ_演出用]
+[charaSet J 2050000 1 プトレマイオス_演出用]
+
+[charaSet K 4002001 1 イスカンダル]
+
+[sceneSet M 192800 1]
+[sceneSet N 192800 1]
+[sceneSet O 10001 1]
+[charaScale O 1.01]
+
+[charaSet Q 98115000 1 通信エフェクト用]
+[charaPut Q 2000,2000]
+[charaEffect Q bit_talk_10_LowLevel]
+[charaSet R 98115000 1 通信エフェクト用]
+[charaSet S 98115000 1 エフェクト用]
+
+[charaSet T 1098272500 1 ？？？]
+[charaSet U 1098272550 1 ？？？]
+[charaSet W 1098272560 1 ？？？]
+[charaSet X 98115000 1 エフェクト用]
+
+[scene 192800]
+
+[subCameraOn 1]
+[subCameraFilter #A maskEdge cut359_mask05 2 0,0,0,0]
+[subRenderScale #A 1.0]
+[charaLayer G sub #A]
+[charaLayer H sub #A]
+[charaLayer I sub #A]
+[charaLayer R sub #A]
+[charaLayer N sub #A]
+[charaDepth R 4]
+[charaDepth I 3]
+[charaDepth H 3]
+[charaDepth G 3]
+[charaDepth N 1]
+[charaPut R -10,170]
+[charaEffect R bit_talk_10_LowLevel_depth]
+[charaFace G 6]
+[charaFadein G 0.1 0,250]
+[charaScale N 1.1]
+[charaFadein N 0.1 100,50]
+
+[charaTalk depthOff]
+[charaDepth O 9]
+[charaDepth S 8]
+[charaDepth T 4]
+[charaDepth U 3]
+[charaDepth W 2]
+[charaDepth M 1]
+
+[effect bit_talk_41_fs]
+
+[shake 0.02 1 1 0]
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[se ad769]
+[seVolume ad769 0 0]
+[seVolume ad769 1.0 1.0]
+
+[fadein black 1.0]
+[bgm BGM_BATTLE_48 0.1]
+[cameraMove 2.2 40,0 1.3]
+[wait fade]
+
+[wt 0.3]
+
+[wipeout leftToRight 0.7 1.0]
+[seStop ad769 1.0]
+[bgm BGM_BATTLE_48 0.7 0.4]
+[wait wipe]
+
+[effectDestroy bit_talk_41_fs]
+[shakeStop]
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[cueSe SE_23 23_ade909]
+[cueSeVolume 23_ade909 0 0.8]
+[charaPut S 1]
+[charaEffect S bit_talk_miasma_eruption]
+
+[charaScale M 1.8]
+[charaFadein M 0.1 500,-420]
+[wt 0.4]
+
+[wipein rightToLeft 0.7 1.0]
+[bgm BGM_BATTLE_48 0.7 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk G]
+[subRenderFadeinFSR #A 0.4 280,-240]
+[subRenderMoveFSR #A 280,-270 0.4]
+[wt 0.4]
+
+＠G：マシュ
+ポイント、到達しました！[r]座標固定！　魔術アンカー設置！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,250]
+
+＠H：ムニエル
+霊脈内部の汚染測定終了！[r]呪的乖離、潜伏儀礼係数、ともに４％内に収束！
+[k]
+
+[messageOff]
+[se ad912]
+[seVolume ad912 0 0.4]
+[cueSe SE_21 21_ade562]
+[cueSeVolume 21_ade562 0 0.5]
+
+[charaDepth S 5]
+[charaDepth X 8]
+[charaPut X 0,50]
+[charaEffect X bit_talk_raniment03]
+[wt 1.0]
+[seStop ad912 1.0]
+[wt 1.0]
+
+＠H：ムニエル
+礼装と術式の同調認証、終了！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 14]
+[charaFadein I 0.1 0,250]
+
+＠I：ダ・ヴィンチ
+礼装適応術式、[r]命名『アルカナの泉』、起動！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[subRenderMoveFSR #A 280,-300 0.4]
+[wt 0.4]
+
+[cueSe SE_23 23_ad1306]
+[charaEffectStop X bit_talk_raniment03]
+[wt 1.0]
+[cueSeStop 23_ad1306 1.0]
+[wt 1.2]
+
+[cueSe Servants_100100 bac1457]
+[charaFadein O 0.4 0,-200]
+[wt 0.4]
+[charaEffectDestroy X bit_talk_raniment03]
+[charaPut R 2000,2000]
+[charaEffectDestroy R bit_talk_10_LowLevel_depth]
+[wt 0.1]
+[charaFadeout O 1.0]
+[wt 1.5]
+
+[cueSeStop 23_ade909 2.0]
+[charaEffectStop S bit_talk_miasma_eruption]
+[wt 1.0]
+
+[bgmStop BGM_BATTLE_48 1.5]
+[wt 1.5]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaPut S 2000,2000]
+[charaEffectDestroy S bit_talk_miasma_eruption]
+
+[charaEffect T bit_talk_11 0,-100]
+[charaEffect U bit_talk_11 0,-100]
+[charaEffect W bit_talk_11 0,-100]
+[charaTalk off]
+[charaFace T 0]
+[charaFadein T 0.1 1]
+[charaFace U 0]
+[charaFadeinFSR U 0.1 300,0]
+[charaFace W 0]
+[charaFadeinFSL W 0.1 -300,0]
+[charaScale M 1.4]
+[charaFadein M 0.1 0,-350]
+[wt 0.2]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[wt 0.5]
+[cueSe SE_22 22_ade777]
+[charaEffect T bit_talk_atomization]
+[charaEffect U bit_talk_atomization]
+[charaEffect W bit_talk_atomization]
+[charaSpecialEffect T erasure]
+[charaSpecialEffect U erasure]
+[charaSpecialEffect W erasure]
+[wt 0.7]
+[charaEffectStop T bit_talk_11]
+[charaEffectStop U bit_talk_11]
+[charaEffectStop W bit_talk_11]
+[wt 3.5]
+
+[charaFadeout M 1.0]
+[wt 1.2]
+
+[charaEffectDestroy T bit_talk_11]
+[charaEffectDestroy U bit_talk_11]
+[charaEffectDestroy W bit_talk_11]
+
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaPut Q 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠ダ・ヴィンチ
+うん、浄化完了だ。[r]即席のわりにうまくいったね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Q 2000,2000]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠プトレマイオス
+大したものだな……！
+[k]
+
+？1：いや、今のはカルデアのおかげで……
+
+？！
+
+[charaFace E 4]
+
+＠プトレマイオス
+はっはっは、指揮の話サ！
+[k]
+
+[charaFace E 0]
+
+＠プトレマイオス
+個体の戦力で劣る相手とはいえ、そもそも[r]複数のサーヴァントを運用すること自体が稀なんだ。
+[k]
+
+＠プトレマイオス
+戦術眼はまだ不安定にしろ、召喚された英霊たちが[r]おまえを信頼してるのは、影の動きを見ても分かる。
+[k]
+
+？1：みんなのおかげです
+
+[charaFace E 8]
+
+＠プトレマイオス
+謙遜も過ぎると毒だぞ。[#吾:あ]が滅多にないと[r]言うからには、それは間違いのない事実だ。
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth J 4]
+[charaDepth M 3]
+[charaDepth E 2]
+[charaDepth F 1]
+[charaDepth K 1]
+
+[charaScale J 1.2]
+[charaScale M 1.2]
+[charaTalk E,J]
+[charaFace J 8]
+[charaFadein J 0.6 0,-5]
+[charaFadein M 0.6 0,-300]
+[wt 0.8]
+
+？2：一緒に、長く戦ってきたから
+
+[charaFace E 2]
+
+＠プトレマイオス
+なるほど、歳月が信頼を醸成させるとは限らんが、[r]いい時間を過ごしてきたらしい。
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth J 4]
+[charaDepth M 3]
+[charaDepth E 2]
+[charaDepth F 1]
+[charaDepth K 1]
+
+[charaScale J 1.2]
+[charaScale M 1.2]
+[charaTalk E,J]
+[charaFace J 2]
+[charaFadein J 0.6 0,-5]
+[charaFadein M 0.6 0,-300]
+[wt 0.8]
+
+？！
+
+[charaFaceFade J 11 0.2]
+[wt 1.4]
+[charaFaceFade J 0 0.2]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+
+＠J：プトレマイオス
+よし、いいだろう。[r]ならば、おまえと仮契約しよう。
+[k]
+
+？1：いい[&んですか:の]？
+？2：決断早くないです？
+
+？！
+
+＠J：プトレマイオス
+サーヴァントとして、人理の危機は理解できる。[r]特異点と聖杯の関係も、現界の際に知った。
+[k]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠J：プトレマイオス
+加えて、マスターの腕も確かとなれば、[r]契約しない理由がないサ。
+[k]
+
+[messageOff]
+[charaTalk F,J]
+[charaFadeout J 0.6]
+[charaFadeout M 0.6]
+[wt 0.6]
+
+[charaMoveReturn F 0,10 0.3]
+[wait charaMove F]
+[wt 0.2]
+[charaMoveReturn F 0,10 0.3]
+
+＠四不相
+モ、モ、モ（喜んでるらしい）
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠プトレマイオス
+ほれ、さっさと手を出せ。
+[k]
+
+[messageOff]
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[wt 0.4]
+[se bas16]
+[effect bit_talk_CommandMantra_01 0,64]
+[wt 3.0]
+[branch _branchEnd]
+
+[label _Female]
+
+[wt 0.4]
+[se bas16]
+[effect bit_talk_CommandMantra_02 0,64]
+[wt 3.0]
+[branch _branchEnd]
+
+[label _branchEnd]
+
+[charaFace E 0]
+
+＠プトレマイオス
+これで契約完了か。[r]うむ、魔力が流れ込んでくるのを感じるナ。
+[k]
+
+＠プトレマイオス
+特異点の解決と聖杯か。[r]は、世には未知ばかりが多いもんだ。
+[k]
+
+＠プトレマイオス
+イスカンダルの小僧めが聞いたら、[r]さぞジタバタしたろう。
+[k]
+
+[charaTalk E,K]
+[charaPutFSR K 350,0]
+[charaFace K 0]
+[charaFadeTime K 0.6 0.7]
+[charaMoveFSR K 300,0 5.0]
+
+[charaFace E 9]
+
+＠プトレマイオス=spot[E,K]
+酒を飲むためだけに、[r]余に聖杯をよこせ、とか言い出しかねん。
+[k]
+
+
+？1：確かに……
+？2：言いそうな気がする……
+
+？！
+
+[messageOff]
+[charaFadeout K 0.6]
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaFace E 2]
+[wt 1.2]
+
+[charaFaceFade E 0 0.2]
+
+＠プトレマイオス
+さて。
+[k]
+
+[bgm BGM_SEIHAI_1 0.1]
+
+＠プトレマイオス
+この特異点の場合、聖杯の在処は極めて明確だ。[r]おまえにも分かるだろう。
+[k]
+
+
+？1：この城……
+？2：さっきの騎士が、守ってる？
+
+？！
+
+＠プトレマイオス
+そうだ。この城の中で、あの騎士たちが[r]聖杯を守っていると見て、間違いなかろう。
+[k]
+
+[charaFace E 11]
+
+＠プトレマイオス
+一体一体は大したことないが、群れると面倒でナ。
+[k]
+
+＠プトレマイオス
+聖杯を持って逃げられてもかなわんから、[r]今までは手の打ちようがなかった。
+[k]
+
+[charaFace E 0]
+
+＠プトレマイオス
+が、おまえが加わると話が変わる。
+[k]
+
+？1：あ、だから
+？2：すぐに仮契約を
+
+？！
+
+[charaFace E 2]
+
+＠プトレマイオス
+ハハハ、手伝ってもらうぞ、マスター。[r]宝を前にして、指を咥えているのは性に合わん。
+[k]
+
+[charaFace E 0]
+
+＠プトレマイオス
+まあ、その分[#吾:あ]もこき使ってくれればいい。[r]同盟というのは互いの利が重要だからな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut Q 1]
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+むむむ。言ってることは確かだが……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+こちらから連れていった太公望の行方も分からない今、[r]現地のサーヴァントの協力はなんとしてでもほしい。
+[k]
+
+[charaFace C 0]
+
+＠ダ・ヴィンチ
+プトレマイオスの性質もさしあたっては[r]問題なさそうだし、悪くない条件じゃないかな？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Q 2000,2000]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 1.2]
+
+？1：わかりました
+？2：お手柔らかに
+
+？！
+
+[charaFace E 2]
+
+＠プトレマイオス
+よし、これで名実ともに同盟成立だ！[r]頼りにしてるぞ、マスター！
+[k]
+
+[messageOff]
+[blur lens 0.8 2 20]
+[wait blur]
+
+[wipeout openEye 0.5 0.5]
+[wait wipe]
+[wipein openEye 0.5 0.5]
+[wait wipe]
+[wipeout openEye 0.5 0.5]
+[wait wipe]
+[blurOff lens 0.5]
+[wipein openEye 0.5 0.5]
+[cameraMove 0.8 0,10 1.01]
+[wait wipe]
+
+[se ad480]
+[charaFace E 13]
+[charaMove E 0,-10 0.3]
+[charaMoveScale E 1.05 0.3]
+[wt 0.3]
+
+[charaMove E 0,-5 0.3]
+[cameraMove 0.3 0,0 1.01]
+[shake 0.05 2 0 0.3]
+
+＠プトレマイオス
+おっと。
+[k]
+
+
+[charaFace E 0]
+
+＠プトレマイオス
+気をつけろ、マスター。[r]さすがに疲れてるようだからナ。
+[k]
+
+＠プトレマイオス
+一旦休め。肉体はともかく、脳には休息が必要だ。[r]起きたら、向こうの[#吾:あ]にもよろしく。
+[k]
+
+？1：起きたら？
+？2：向こうの[#吾:あ]？
+
+？！
+
+[charaFace E 8]
+
+＠プトレマイオス
+ああ、そのままの意味サ。[r]おまえもすぐに分かる。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStopEnd BGM_SEIHAI_1 2.0]
+[wait fade]
+[charaLayer G normal]
+[charaLayer H normal]
+[charaLayer I normal]
+[charaLayer R normal]
+[charaLayer N normal]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout R 0.1]
+[charaFadeout N 0.1]
+[subCameraOff]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

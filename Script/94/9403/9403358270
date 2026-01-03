@@ -1,0 +1,817 @@
+
+
+＄94-03-35-82-7-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098315700 1 小野篁]
+[charaSet B 1098315600 1 小野小町]
+
+[charaSet C 1098318500 1 小野篁_シルエット]
+[charaSet D 1098315600 1 小野小町_シルエット]
+[charaFilter D silhouette 00000080]
+
+[charaSet E 1098315700 1 小野篁_演出用]
+[charaScale E 1.2]
+
+[equipSet F 9809550 1 バレンタイン礼装]
+
+[sceneSet G 10000 1]
+[charaScale G 1.1]
+
+
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[label lblClear01a]
+[scene 106000]
+[sceneSet H 106000 1]
+[branch lblConf01]
+
+[label lblClear01b]
+[scene 105800]
+[sceneSet H 105800 1]
+[branch lblConf01]
+
+[label lblClear01c]
+[scene 157900]
+[sceneSet H 157900 1]
+
+[label lblConf01]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+
+[wt 1.5]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth A 2]
+[charaDepth C 3]
+[charaFace C 0]
+[charaPut C 1]
+[se ad598]
+[charaSpecialEffect C wipeTimeRe 1 1.0]
+[wait charaSpecialEffect C]
+[seStop ad598 0.5]
+[wt 0.4]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaFadeout C 0.4]
+[wt 2.0]
+
+？1：わっ、いたんですね[#小野篁:おののたかむら]さん
+？2：……あれ？　お一人ですか？
+？！
+
+[charaTalk on]
+[charaTalk A]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V010]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFace A 12]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V020]
+………………[#此度:こたび]は、失礼を承知で申し上げる。[r]マスター殿。[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V030]
+あくまで私は小町に付随する霊体なれば、[r]貴殿と縁を結んだ間柄にあらず、[wait tVoice]
+[k]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V040]
+主従の契りも交わしておらぬ身[line 3][wait tVoice]
+[k]
+
+[charaFace A 12]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V050]
+ですがどうか、[r]我が言の葉を聞き届けていただきたい。[wait tVoice]
+[k]
+
+？1：あらたまって、何です？
+
+[charaFace A 11]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V060]
+実は……[wait tVoice][bgmStop BGM_EVENT_77 1.0]
+[k]
+
+？2：[&自分:わたし]が力になれることなら喜んで
+
+[charaFace A 2]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V070]
+……何とありがたきこと。[r]ではお伝えする。[wait tVoice][bgmStop BGM_EVENT_77 1.0]
+[k]
+
+？！
+
+[messageOff]
+[charaFace A 0]
+[charaMoveScale A 1.05 1.0]
+[se ad999]
+[seVolume ad999 0 0]
+[seVolume ad999 1.0 0.5]
+[wt 1.0]
+[seStop ad999 0.3]
+[wt 1.0]
+
+
+？1：あ、内緒話なんですね
+？2：どれどれ……
+？！
+
+
+[cameraMove 1.0 0,-20 1.05]
+[se ad999]
+[seVolume ad999 0 0]
+[seVolume ad999 1.0 0.5]
+[wt 1.0]
+[seStop ad999 0.3]
+[wt 0.5]
+
+[charaPut G 0,-200]
+[charaFadeTime G 0.2 0.5]
+[wt 0.5]
+[charaFace A 12]
+[bgm BGM_EVENT_158 0.1]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V080]
+…………ここのところ。[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V090]
+我が娘、小町の様子が些かおかしいのです。[wait tVoice]
+[k]
+
+？1：様子がおかしい？
+？2：具体的にどういう感じに？
+？！
+
+[charaFace A 12]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V100]
+は。[r]聞けば、この時分は当世の祭りか何かがあるとか。[wait tVoice]
+[k]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V110]
+確か、名を[line 3][wait tVoice]
+[k]
+
+？1：バレンタインデー？
+？！
+
+[charaFace A 11]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V120]
+然り、バレンタインデー。[r]まさに、そういった名を聞き及んでいる。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V130]
+その仔細までは私には不明なれど、[r]小町はそれを聞くや否やがらりと様子が変わり……[wait tVoice]
+[k]
+
+[charaFace A 13]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V140]
+紫式部殿に何事かを頼み込み、[r]図書館に籠もったかと思うと[line 3][wait tVoice]
+[k]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V150]
+ここ数日というもの、図書館最奥、[r]書庫に籠もったまま出て来ようとせぬ始末。[wait tVoice]
+[k]
+
+？1：ふむふむ
+？2：図書館の奥に籠もってしまった、と
+？！
+
+[messageOff]
+
+
+[charaMoveScale A 1.0 1.0]
+[se ad999]
+[seVolume ad999 1.0 0.5]
+[wt 1.0]
+[seStop ad999 0.3]
+[wt 1.0]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V160]
+然り。
+[k]
+
+[charaFace A 6]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V170]
+……常であれば、私は霊体。[r]あくまで小町の霊基を成す一端に過ぎぬ身。[wait tVoice]
+[k]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V180]
+何処に籠もろうとも[r]共に在ることができる筈[line 3][wait tVoice]
+[k]
+
+[charaFace A 14]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V190]
+なの、ですが。[r]どうにも[#此度:こたび]ばかりは同行できぬ……どころか……[wait tVoice]
+[k]
+
+？1：入ってこないで、と言われたとか？
+？2：……同行禁止なんですね
+？！
+
+[charaFace A 5]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V200]
+…………然り。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V210]
+今や小町は、寝食も忘れ[line 3][wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠小野篁
+……。[r]……。
+[k]
+
+[charaFace A 6]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V230]
+……正しき命なきもの、生者ならざるがゆえ、[r]寝食不要の身となったことは、承知の上ながら……[wait tVoice]
+[k]
+
+[charaFace A 13]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V240]
+我が娘、小町がそのように振る舞うさまは、[r]些かばかり[line 3][wait tVoice]
+[k]
+
+？1：わかります
+？2：お父さんとしては心配ですよね
+？！
+
+[charaFace A 5]
+
+＠小野篁
+…………………………。
+[k]
+
+[charaFaceFade A 15 0.1]
+
+＠小野篁
+……。[r]……。
+[k]
+
+[messageOff]
+
+
+[charaFaceFade A 0 0.1]
+[cameraMove 1.0 0,0 1.0]
+[charaFadeout G 0.2]
+[se ad999]
+[seVolume ad999 0 0.5]
+[seStop ad999 1.0]
+[wt 1.2]
+
+[charaTalk depthOn]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V270]
+我が不安、お聞き届けいただき感謝申し上げる。[wait tVoice]
+[k]
+
+？1：[#小野篁:おののたかむら]さん
+？！
+
+[charaFace A 12]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V280]
+は。[wait tVoice]
+[k]
+
+？1：きっと小町さんは大丈夫だと思います
+？！
+
+[messageOff]
+
+？1：多分、なんですが……
+？2：ちょっと熱が入ってるだけじゃないかな
+？！
+
+[charaFace A 2]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V290]
+おお……[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V300]
+マスター殿がそう仰るのであれば信じよう。[r]な、成る程、そういうものか[line 3][wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_158 1.0]
+[messageOff]
+[wt 0.5]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth A 1]
+[charaDepth H 2]
+[charaDepth G 3]
+[charaDepth E 4]
+
+[charaScale H 1.25]
+
+[charaFace E 1]
+[charaFadein E 0.6 -50,0]
+[charaFadein H 0.6 -50,-350]
+[charaPut G 0,0]
+[charaFadeTime G 0.6 0.5]
+[charaMoveEase E 0,0 0.6 easeInOutSine]
+[charaMoveEase H 0,-350 0.6 easeInOutSine]
+[wt 1.0]
+
+[charaFace E 10]
+[charaFace A 10]
+[effect bit_talk_37 40,180]
+[se ade116]
+[wt 1.5]
+[charaFadeout G 0.6]
+
+？1：[#篁:たかむら]さん？
+？！
+
+
+＠小野篁
+[tVoice ValVoice_505800 0_V310]
+……我が娘の気配。近い！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout H 0.6]
+[charaFadeout E 0.6]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 12]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V320]
+[#不躾:ぶしつけ]ながらマスター殿、[r]私は是にて失礼させていただく。では。[wait tVoice]
+[k]
+
+[messageOff]
+
+
+[charaSpecialEffect A wipeTime 1 1.5]
+[wt 0.5]
+[se ad598]
+[wait charaSpecialEffect A]
+
+[wt 1.0]
+
+
+[se ad8]
+[wt 2.0]
+
+[se ad95]
+[seVolume ad95 0 0.3]
+[seVolume ad95 1.0 1.0]
+[wt 1.0]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth D 2]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+[seStop ad95 0.1]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.6]
+[charaFadeout D 0.4]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk B]
+[bgm BGM_EVENT_7 0.1]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V330]
+マスターさま。[r]あの、失礼します。[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V340]
+……いま、すこしだけお時間よろしいですか？[wait tVoice]
+[k]
+
+？1：小町さん
+？2：どうぞどうぞ
+？！
+
+[charaFace B 21]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V350]
+えへへ。[r]……それじゃあお邪魔します。[wait tVoice]
+[k]
+
+[charaFaceFade B 12 0.2]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V360]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFaceFade B 11 0.2]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V370]
+……ええと、ええっと……[line 3][wait tVoice]
+[k]
+
+[charaFaceFade B 6 0.2]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V380]
+は。どこから何をお話ししたものでしょうか[line 3][wait tVoice]
+[k]
+
+？1：もしかしてだけど
+？！
+
+[messageOff]
+
+？1：バレンタインデー……
+？2：……二月のこの時期に関係があったり？
+？！
+
+[charaFace B 9]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V390]
+はっ。[wait tVoice]
+[k]
+
+[charaFace B 20]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V400]
+そう、そうです。[r]まさに世はバレンタインデー、なのですよね？[wait tVoice]
+[k]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V410]
+ですから……[r]あたしも、マスターさまに用意したんです。[wait tVoice]
+[k]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V420]
+バレンタインデーの贈り物！[wait tVoice]
+[k]
+
+[charaFace B 21]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V430]
+それが……[r]こちらになります、どうぞ。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth F 2]
+
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+
+[charaFadeout B 0.4]
+[se bas2]
+[charaFadein F 0.5 0,-70]
+[wt 2.0]
+
+[wait touch]
+
+
+？1：少女漫画がたくさん！
+？2：わーっ、ありがとう！
+？！
+
+[charaFadeout F 0.4]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 27]
+[charaFadein B 0.1 1]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V440]
+…………えへへ。[wait tVoice]
+[k]
+
+[charaFace B 20]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V450]
+小野小町[#特撰:とくせん]、少女漫画詰め合わせ！[r]……です。[wait tVoice]
+[k]
+
+[charaFace B 21]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V460]
+……図書館の紫式部さんに無理を言って、[r]データから実体化してもらいました。[wait tVoice]
+[k]
+
+[charaFace B 24]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V470]
+本当は、もっと、もっともっともっと、[r]たくさんの少女漫画を実体化したかったんですけど、[wait tVoice]
+[k]
+
+[charaFace B 25]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V480]
+そこは……[r]さすがに、我慢して……。[wait tVoice]
+[k]
+
+[charaFace B 24]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V490]
+月内のデータ変換容量を超えない程度になるよう、[r]厳選いたしました！[wait tVoice]
+[k]
+
+？1：（写真集の類のハードコピーが減りそうだから）
+？2：（オリオンやフェルグスが悲しがるだろうけど……）
+？！
+
+[messageOff]
+[wt 1.4]
+
+？1：（それは言わないでおこう！）
+？！
+
+[charaFace B 8]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V500]
+マスターさま？[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+？1：ううん、なんでもないよ
+？！
+
+[messageOff]
+
+？1：プレゼントありがとう
+？2：大切に読むね！
+？！
+
+[charaFaceFade B 20 0.2]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V510]
+……はいっ。[wait tVoice]
+[k]
+
+[charaFace B 22]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V520]
+一応……[r]本当の本当に、一応、ではあるのですが……[wait tVoice]
+[k]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V530]
+あたしのお気に入りの少女漫画の中でも、[r]選びに選ばせていただいて……[wait tVoice]
+[k]
+
+[charaFace B 24]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V540]
+きっとマスターさまに喜んでもらえるに違いない！[r]……そう、確信できるものばかり揃えています。[wait tVoice]
+[k]
+
+[charaFace B 23]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V550]
+あ、雑誌のほうは、[r]もちろん一冊まるごとお薦めではあるのですが、[wait tVoice]
+[k]
+
+[charaFace B 24]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V560]
+中でもこれだ！[r]というモノを……別途メモしていますので……[wait tVoice]
+[k]
+
+[charaFace B 21]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V570]
+そちらをご覧になりつつ、[r]お楽しみくださいね……？[wait tVoice]
+[k]
+
+？1：了解！
+？！
+
+[charaFace B 27]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V580]
+…………えっと、ちなみに、[r]単行本未収録の読み切りが中心です。[wait tVoice]
+[k]
+
+？1：なる　ほど！
+？2：ふむふむ
+？！
+
+[messageOff]
+
+
+[charaFace B 21]
+[wt 1.5]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V590]
+えっと、ええと……[r]それじゃあ……[wait tVoice]
+[k]
+
+[charaFace B 20]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V600]
+あたし、このあたりで失礼しますね。[r]……どうかよき少女漫画ライフをお送りください。[wait tVoice]
+[k]
+
+[charaFace B 21]
+
+＠小野小町
+[tVoice ValVoice_505800 0_V610]
+……それではまた。[wait tVoice]
+[k]
+
+[messageOff]
+
+
+[charaFadeout B 0.4]
+[se ad59]
+[wt 0.5]
+[seStop ad59 1.0]
+[wt 1.0]
+
+
+[se ad8]
+[wt 2.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wt 2.5]
+
+？1：[#小野篁:おののたかむら]さん、います？
+？！
+
+
+[charaTalk A]
+[charaFace A 12]
+[charaPut A 1]
+[se ad598]
+[charaSpecialEffect A wipeTimeRe 1 1.0]
+[wait charaSpecialEffect A]
+[seStop ad598 0.5]
+[wt 1.0]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V620]
+[line 3]は。[wait tVoice]
+[k]
+
+[charaFace A 11]
+[bgm BGM_EVENT_50 0.1]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V630]
+ご[#慧眼:けいがん]、感服する他なく。[r]確かに小町には疲弊、消耗した様子もなく……[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V640]
+それどころか、あのように。[r]声弾ませて微笑むなどと[line 3][wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V650]
+実に。佳きものを見せていただいた。[r]この礼は必ずや……[wait tVoice]
+[k]
+
+？1：[#篁:たかむら]さん
+？2：お礼はいらないですよ
+？！
+
+[messageOff]
+
+？1：そんなことより[line 3]
+？！
+
+？1：よければ一緒に読みませんか！
+
+？2：小野小町[#特撰:とくせん]、少女漫画詰め合わせ！
+？！
+
+
+[charaFace A 10]
+[wt 1.5]
+[charaFace A 2]
+
+＠小野篁
+[tVoice ValVoice_505800 0_V660]
+…………是非とも！[wait tVoice]
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_50 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

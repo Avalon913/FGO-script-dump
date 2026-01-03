@@ -1,0 +1,225 @@
+
+＄94-06-88-09-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 1053900 1 徴側]
+[charaSet B 1053910 1 徴弐]
+[charaSet C 3032000 1 エレシュキガル]
+[charaSet D 6027000 1 武則天]
+[charaSet E 3040001 1 ラムダ]
+
+[ifClear 60068801]
+[charaSet F 1098238200 1 コン]
+
+[ifClear 60068802]
+[charaSet F 1098238210 1 コン]
+
+[ifClear 60068803]
+[charaSet F 1098238220 1 コン]
+
+[ifClear 60068804]
+[charaSet F 1098238300 1 コン]
+
+[ifClear 60068805]
+[charaSet F 1098238310 1 コン]
+
+[ifClear 60068806]
+[charaSet F 1098238320 1 コン]
+
+[ifClear 60068807]
+[charaSet F 1098238400 1 コン]
+
+[ifClear 60068808]
+[charaSet F 1098238410 1 コン]
+
+[ifClear 60068809]
+[charaSet F 1098238420 1 コン]
+
+[else]
+[charaSet F 1098238200 1 コン]
+
+[endIf]
+
+[charaSet G 1098229700 1 ヴォジャノーイ]
+[sceneSet H 147107 1]
+[charaScale H 1.5]
+
+[charaDepth H 1]
+[charaDepth G 2]
+
+[scene 147104]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.4]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.2]
+[fowardEffect bit_talk_13]
+[wt 0.1]
+[se bac10]
+[charaShake G 0.04 4 4 0.7]
+[wt 0.5]
+[se ad26]
+[wt 1.0]
+[charaMove G 0,-10 0.4]
+[wt 0.2]
+[charaFadeout G 0.2]
+[wt 0.1]
+[se ad144 0.3]
+[cueSe SE_21 21_ad1065]
+[seStop 21_ad1065 0.4]
+[bgmStop BGM_EVENT_80 1.5]
+[wt 1.5]
+
+？1：意外に弱かった……？
+？2：楽勝だね！
+？！
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 176,0]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠徴側
+はい……ですが、数が少なかったですね。[r]これが全てだとは思えません。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 -196,0]
+
+＠徴弐
+近くを探してみよう。[r]別の一団がいるかもしれない。
+[k]
+
+[messageOff]
+[wt 0.2]
+[se ad173]
+[wipeout leftToRight 1.0 1]
+[wait wipe]
+[charaFadeout B 0.1]
+
+[scene 147107]
+[wt 0.7]
+[seStop ad173 1.0]
+[wipein rightToLeft 1.0 1]
+[wait wipe]
+
+[wt 0.4]
+[bgm BGM_EVENT_70 0.7 0.6]
+[charaFadein H 0.4 40,-200]
+[charaMove H 60,-200 5.0]
+[wt 1.0]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 -100,0]
+[charaMove G -80,0 5.0]
+[wt 2.4]
+[charaFadeout H 0.4]
+[charaFadeout G 0.4]
+[bgm BGM_EVENT_70 0.4 1.0]
+[wt 0.7]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠エレシュキガル
+いました！　あそこ、[r]内陸に向かって川みたいになってるところ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠武則天
+うん？　何やらその川のあたり、[r]おかしなことになってはおらんか？
+[k]
+
+＠武則天
+木切れや岩が山のように積まれて……
+[k]
+
+＠武則天
+[#堰:せ]き止められているというか、[r][#堰堤:ダ　ム]のようになっているというか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ラムダ
+些細なことよ。[r]とにかく、あの水怪を倒せばいいんでしょう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaMoveReturn F 0,10 0.4]
+
+[wait charaMove F]
+
+
+＠F：コン
+やるやるやるぞー！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace F 0]
+[charaFadeinFSL F 0.1 0]
+[charaFace E 4]
+[charaFadeinFSR E 0.1 2]
+
+＠ラムダ
+アナタはやらないの。まだ誰も食べられてないんだから。[r]下がってなさい。
+[k]
+
+
+[charaFace F 4]
+
+＠F：コン
+りょっかー。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 176,0]
+
+＠徴側
+さっきと同じ種類であることには間違いないようですね。[r]さっさと片付けてしまいましょう！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_70 0.4]
+[wait fade]
+[soundStopAll]
+[end]

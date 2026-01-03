@@ -1,0 +1,110 @@
+
+
+＄94-13-66-03-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098157410 1 カエサル]
+[charaSet B 1098157410 1 カエサル（演出用）]
+
+[sceneSet O 232900 1]
+
+[scene 232900]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_SEIHAI_1 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠カエサル
+クッ……フッフッフ……
+[k]
+
+＠カエサル
+[#舌鋒:ぜっぽう]こそ我が剣、[#叡智:えいち]こそ我が鎧、[wt 0.6][charaFace A 4][r]とは言ったものの……
+[k]
+
+＠カエサル
+カルデアに抗すには……[r]言霊ひとつでは不足であったか……
+[k]
+
+[messageOff]
+[charaMove A 0,-50 0.4]
+[charaFadeout A 0.4]
+[wt 0.4]
+
+[se ad144]
+[wt 1.4]
+
+
+[subCameraOn 1]
+
+[charaLayer B sub #A]
+[charaLayer O sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask23 5 255,255,255,255]
+
+[subCameraRoll #A -10 0,0]
+
+[subRenderScale #A 0.6]
+
+[charaDepth O 2]
+[charaDepth B 3]
+[charaScale O 1.2]
+[charaScale B 1.4]
+
+[charaRoll O 10]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0 370,90]
+[charaFadein O 0 350,50]
+
+[subRenderFadein #A 0.4 -300,-100]
+[wt 0.6]
+
+＠B：カエサル
+この機会に……創りかけだった[#我の公共広場:フ ォ ル ム ・ ユ リ ウ ム]を……[r]万倍の規模で……完成させるつもりであったのに……
+[k]
+
+＠B：カエサル
+敗北せる[#ビルダー]は勝者に従うが……[#製階戦争]の掟……[r]どうにでも……するがよい……この色男をな……[wt 1.2][charaRollMove B 0.15 10][charaMove B 325,50 0.15]ガクリ。
+[k]
+
+[branchMaterial lblMaterial]
+
+[branchQuestClear lblClear01 94136604]
+[branchQuestClear lblClear01 94136605]
+
+
+？1：（ビルダーって……？）
+？2：（製階戦争って何だろう……？）
+？！
+[branch lblConf01]
+
+[label lblClear01]
+
+[label lblConf01]
+
+[branch material_end]
+
+[label lblMaterial]
+？1：（ビルダーって……？）
+？2：（製階戦争って何だろう……？）
+？！
+
+[label material_end]
+
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_SEIHAI_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,1075 @@
+
+＄94-08-80-80-1-0
+
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 9013001 1 モリアーティ]
+[charaSet C 1009001 1 モードレッド]
+[charaSet D 1098274400 1 アルトリア・キャスター]
+[charaSet E 5046001 1 ミス・クレーン]
+[charaSet F 1098216200 1 ハベトロット]
+[charaSet G 7007001 1 ヴラド三世]
+
+[charaSet H 3002000 1 ディルムッド]
+[charaSet I 5035000 1 アナスタシア]
+[charaSet J 1052000 1 シャルルマーニュ]
+[charaSet K 10014000 1 徐福]
+
+[charaSet L 1098123600 1 邪霊1]
+[charaSet M 1098123600 1 邪霊2]
+[charaSet N 1098123600 1 邪霊3]
+
+
+[charaSet P 1009001 1 モードレッド]
+[charaFilter P silhouette 00000080]
+
+[sceneSet Q 142501 1 1]
+
+[charaSet S 5009000 1 エフェクト用ダミー1]
+[charaSet T 5009000 1 エフェクト用ダミー2]
+[charaSet U 5009000 1 エフェクト用ダミー3]
+[charaSet Y 5009000 1 エフェクト用ダミー]
+[sceneSet Z 10000 1 1]
+
+[charaTalk depthOff]
+[charaDepth L 2]
+[charaDepth M 4]
+[charaDepth N 1]
+
+[charaDepth C 2]
+[charaDepth P 4]
+
+[charaDepth S 9]
+[charaDepth T 9]
+[charaDepth U 9]
+
+[subCameraOn 2]
+
+[subCameraFilter #A maskEdge cut359_mask06 5 110,0,0,255]
+[charaLayer G sub #A]
+[charaLayer Q sub #A]
+[charaLayer Z sub #A]
+[charaLayer Y sub #A]
+[charaDepth G 4]
+[charaDepth Q 2]
+[charaScale G 1.15]
+[charaScale Q 1.15]
+[charaFace G 2]
+[charaFadein G 0.1 20,210]
+[charaFadein Q 0.1 0,-120]
+[charaDepth Y 3]
+[charaFadein Y 0.1 20,210]
+[subRenderScale #A 1.05]
+
+[charaEffect Y bit_talk_42_depth]
+
+[scene 142501]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_BATTLE_49 0.1]
+
+[charaTalk off]
+[charaFace L 0]
+[charaFace M 0]
+[charaFace N 0]
+[charaFadeinFSL L 0.4 0]
+[charaFadein M 0.4 1]
+[charaFadeinFSR N 0.4 2]
+[wt 0.4]
+
+＠邪霊たち
+オォォォォーーーーン！
+[k]
+
+[messageOff]
+[se ad73]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk G]
+[subRenderFadein #A 0.3 200,-300]
+[subRenderMove #A 0,-300 0.3]
+[charaMove G -20,210 5.5]
+[charaMove Q -40,-120 5.5]
+[wt 0.5]
+
+[seStop ad73 0.1]
+
+＠ヴラド三世
+[line 3]歌え、『カズィクル・ベイ』
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[subRenderFadeout #A 0.3]
+[subRenderMove #A -300,-300 0.3]
+[wt 0.3]
+[charaFadeout G 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout Y 0.1]
+[wt 0.1]
+[charaScale G 1.0]
+
+[charaEffectDestroy Y bit_talk_42_depth]
+
+
+[charaLayer G normal]
+[charaLayer Q normal]
+[charaLayer Z normal]
+[charaLayer Y normal]
+[subCameraOff]
+
+
+[charaMove G -50,0 0.3]
+[charaFadeout G 0.3]
+[wt 0.3]
+
+[se ad558]
+[charaEffect L bit_shot_01]
+[wt 0.1]
+[charaShake L 0.02 3 3 0.7]
+[wt 0.2]
+
+[se ad558]
+[charaEffect M bit_shot_01]
+[wt 0.1]
+[charaShake M 0.02 3 3 0.7]
+[wt 0.2]
+
+[se ad558]
+[charaEffect N bit_shot_01]
+[wt 0.1]
+[charaShake N 0.02 3 3 0.7]
+[wt 0.9]
+
+＠邪霊たち
+ギャァァァァーーーーッ！
+[k]
+
+[messageOff]
+[seStop ad558 0.4]
+[charaEffectDestroy L bit_shot_01]
+[charaEffectDestroy M bit_shot_01]
+[charaEffectDestroy N bit_shot_01]
+
+[se ad596]
+[seStop ad596 2.4]
+[charaSpecialEffect M erasure 1 1.0]
+[wt 0.2]
+[charaSpecialEffect L erasure 1 1.0]
+[wt 0.2]
+[charaSpecialEffect N erasure 1 1.0]
+[wt 2.2]
+
+[cueSe SE_21 21_ad1119]
+[seVolume 21_ad1119 0 0.8]
+[seStop 21_ad1119 1.2]
+[se ade422]
+[seStop ade422 1.4]
+[wt 0.5]
+
+[charaTalk off]
+[charaFace P 0]
+[charaFadein P 0.4 1]
+[wt 0.8]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[charaFadeout P 0.7]
+[wt 1.2]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaFace C 2]
+
+＠モードレッド
+ハ！　騎士級を瞬殺か！[r]『人類最高戦力』の称号は[#伊達:だ　て]じゃねぇってワケだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ヴラド三世
+闇の皇子モードレッドよ。[r]汝の断末魔を以て、永き夜の[#暁鶏:ぎょうけい]とせん。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[cueSe Battle bac56]
+
+＠モードレッド
+面白ぇ。オレの魔銃とあんたの聖銃。[r][#邪霊:デモンズ]と人間の頂上決戦と行こうじゃねぇか！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[flashin once 0.1 0.3 FFFFFFCF FFFFFF00]
+[se ad41]
+[wt 0.3]
+[flashin once 0.1 0.3 FFFFFFCF FFFFFF00]
+[se ad41]
+[wt 0.7]
+[flashin once 0.1 0.2 FFFFFFCF FFFFFF00]
+[se ad41]
+[wt 0.2]
+[flashin once 0.1 0.2 FFFFFFCF FFFFFF00]
+[se ad41]
+[wt 0.2]
+[flashin once 0.1 0.2 FFFFFFCF FFFFFF00]
+[se ad41]
+[wt 1.0]
+
+[se ade300]
+
+[bgmStop BGM_BATTLE_49 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+カァーーーット！[r]よーし、良い表情だった！
+[k]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠ヴラド三世
+それは何よりだ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠ミス・クレーン
+は……！[wt 0.5][charaFace E 12][charaShake E 0.03 3 3 1.2][r]あぁぁぁぁ～～～！　うぐっ！
+[k]
+
+[messageOff]
+
+[charaMove E 0,-20 0.4]
+[wt 0.2]
+[charaFadeout E 0.2]
+[wt 0.2]
+[se ad144]
+
+[subCameraOn 1]
+
+[subCameraFilter #A maskEdge cut359_mask17 5 255,255,255,255 0]
+[charaLayer E sub #A]
+[charaLayer Q sub #A]
+
+[subCameraRoll #A 20 0,0]
+[charaRoll E -20]
+[charaRoll Q -20]
+
+[charaTalk depthOff]
+[charaDepth E 4]
+[charaDepth Q 2]
+
+[charaFace E 7]
+[charaFadein E 0.1 -30,130]
+[charaFace Q 0]
+[charaFadein Q 0.1 -200,200]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 29]
+[charaFadein D 0.1 -150,0]
+
+＠アルトリア・キャスター
+うわっ、倒れた！？
+[k]
+
+[messageOff]
+[charaTalk E,D]
+[subRenderFadein #A 0.7 300,-500]
+[subRenderMove #A 380,-450 0.7]
+[wt 1.0]
+
+＠ミス・クレーン
+良い……情緒やべぇよ……。[r]これでは私、立つこともままなるまい。
+[k]
+
+[charaFace E 13]
+
+＠ミス・クレーン
+序盤のリハでこうなら、この先、私の身と心は[r]どうなってしまうのでしょう……どうなるんですかっ！
+[k]
+
+[charaTalk D]
+[charaFace D 9]
+
+＠アルトリア・キャスター
+どうなるって、それは[line 3]
+[k]
+
+[charaFace D 6]
+
+＠アルトリア・キャスター
+うん。詳細は省きますけど、[r]結論から言ってあなたは死にます。
+[k]
+
+[charaFace E 14]
+
+＠E：ミス・クレーン
+や[messageShake 0.05 5 5 1.0]ったーーー、やっぱりーーー！
+[k]
+
+[messageOff]
+[messageShakeStop]
+
+[subRenderFadeout #A 0.3]
+[charaFadeout D 0.3]
+[wt 0.3]
+
+[subCameraRoll #A 0 0,0]
+[charaRoll E 0]
+[charaRoll Q 0]
+
+[charaFadeout E 0.1]
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[charaLayer E normal]
+[charaLayer Q normal]
+[subCameraOff]
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+落ち着いてミス・クレーン！[r]大丈夫、（いつもの）よくある発作です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+そのまま転がしておけっ！[r]いずれ勝手に再起動する。もう慣れた。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠モードレッド
+ところで、この小芝居って必要？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+撮影モデルとしての訓練も受けていない者に、[r]ハイお願いしますで迫真の表情やポーズができるものか。
+[k]
+
+[charaFace B 1]
+
+＠モリアーティ
+だったら、真似事でも芝居をつけた方が気分も乗って、[r]それらしい表情ができるというものだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モードレッド
+はーん。[r]言われてみりゃそうかもな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠アルトリア・キャスター
+モーさんの悪党ロールは自然体ですよね。[r][#叛逆:はんぎゃく]の騎士であり悪の王子様。まさに配役の妙。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠モードレッド
+おいマネ子、そいつは褒めてんだよな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠アルトリア・キャスター
+うん、もちろん！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠モードレッド
+[line 3]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠怪物
+それに、やってると楽しいよ！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠アルトリア・キャスター
+喋った！？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth F 2]
+[charaDepth M 4]
+
+[charaTalk off]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+[wt 0.5]
+[se ad796]
+[seVolume ad796 0.0 0.7]
+[wt 0.1]
+[seStop ad796 0.7]
+
+[charaFadeout M 0.4]
+[wt 0.3]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 1]
+
+＠ハベトロット
+ボクだよ、ボク。[r]有り物で作った着ぐるみ！
+[k]
+
+？1：まるで映画の現場だね
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+物語性を突き詰めての結論だよ。[r]奥行きのある写真集にするためにね。
+[k]
+
+＠モリアーティ
+ほら、これが即興で仕上げた企画書だ。[r]一時間程度で書いたメモ書きみたいなものだがね。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad338]
+[seStop ad338 0.3]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠アルトリア・キャスター
+分厚い！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ええと……。
+[k]
+
+[se ade277]
+[seStop ade277 0.8]
+
+[charaFace A 13]
+
+＠マシュ
+写真集のタイトルは『EVER DARK -永夜戦線-』。[r]テーマはスタイリッシュ・オカルト・ガンアクション。
+[k]
+
+[se ade277]
+[seStop ade277 0.8]
+
+
+＠マシュ
+明けない夜に包まれた架空の未来ロンドンを舞台に、[r]人類と[#邪霊:デモンズ]が[#熾烈:し れ つ]な戦いを繰り広げる……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+王立対邪霊殲滅機関を率いる最強の戦士ヴラド。[r]人と邪霊の間に生まれた宿命の子モードレッド。
+[k]
+
+＠モリアーティ
+二人の主人公の相克と和解、そして真の敵を倒すための[r]立場を超えた共闘が物語の見どころとなるんだ。
+[k]
+
+[bgmStop BGM_EVENT_94 1.5]
+
+＠モリアーティ
+さて、のんびりしてられない。[wt 0.5][charaFace B 2][r]ミス・クレーン、正気になれっ！
+[k]
+
+[charaFace B 0]
+
+＠モリアーティ
+……いや逆か。狂気に飲まれよ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.3 0,-30]
+[charaMove E 0,0 0.3]
+[se ad7]
+[wt 0.3]
+
+＠ミス・クレーン
+はいっ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+外部協力スタッフは来ているか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠ミス・クレーン
+万全ですっ。[r]まずは、人間さんチーム！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_64 0.5 0.5]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_64 0.5 1.0]
+[wait wipe]
+
+[se ad95]
+[wt 0.15]
+[se ade422]
+[wt 0.35]
+
+[charaTalk depthOff]
+[charaDepth I 2]
+[charaDepth H 1]
+
+[charaTalk off]
+[charaFace H 0]
+[charaFadeinFSL H 0.4 -226,0]
+[charaMoveFSL H -256,0 0.4]
+[wt 0.1]
+
+[charaFace I 0]
+[charaFadeinFSR I 0.4 286,0]
+[charaMoveFSR I 256,0 0.4]
+[wt 0.5]
+
+[seStop ad95 0.2]
+[seStop ade422 0.2]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 1]
+
+＠ディルムッド
+人類戦士ディルムッド、見参！[r]真紅と黄金、我が二挺拳銃に撃ち貫けぬ物なし。
+[k]
+
+[charaTalk I]
+[charaFace I 5]
+
+＠アナスタシア
+……邪霊の罪は、[#私:わたくし]が裁くわ。[r]どこに隠れ潜もうと、[#私:わたくし]の魔眼は見逃さない。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ミス・クレーン
+そして、邪霊さんチーム！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_64 0.5 0.5]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_64 0.5 1.0]
+[wait wipe]
+
+[charaDepth K 2]
+[charaDepth J 1]
+
+[se ad95]
+[wt 0.15]
+[se ad60]
+[wt 0.25]
+
+[charaTalk off]
+[charaFace J 0]
+[charaFadeinFSR J 0.4 226,0]
+[charaMoveFSR J 256,0 0.4]
+[wt 0.1]
+[charaFace K 0]
+[charaFadeinFSL K 0.4 -286,0]
+[charaMoveFSL K -256,0 0.4]
+[wt 0.5]
+
+[seStop ad95 0.2]
+[seStop ad60 0.2]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk J]
+[charaFace J 1]
+
+＠シャルルマーニュ
+おう！　邪霊公爵シャルルマーニュのお出ましだ！[r]今日からガンガン、人間どもを滅ぼそうな、徐福！
+[k]
+
+[charaTalk K]
+[charaFace K 20]
+
+＠徐福
+『飲みに行こう』くらいのノリだ……。[wt 1.3][charaFace K 8][r]あー、こほん。ジョフーックック！　覚悟せよ人間めー。
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 19]
+[charaFadein D 0.1 1]
+
+＠アルトリア・キャスター
+豪華ですけど、なんとも脈絡のないチームですね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0.1 1]
+
+＠シャルルマーニュ
+ははは！　本番を楽しみにしてくれよな！
+[k]
+
+＠シャルルマーニュ
+ミス・クレーンたちが作ってくれた衣装を着れば、[r]バシィーッと統一感が出るんだよ！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠ディルムッド
+このような形で、衣装の恩返しができるとは。[r]ディルムッド・オディナ、全力で演じよう！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+ヴラド公がミス・クレーンたちの為にしてくれた配慮が、[r]こんな形で役立つとはね。
+[k]
+
+[charaFace B 0]
+
+＠モリアーティ
+さて、メインどころは揃ったか。[r]エキストラ諸君にも、到着次第、着付けを頼む。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠ミス・クレーン
+お任せあれ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ヴラドさんとモードレッドさん以外の方も[r]参加されるんですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+ああ。[r]リエナクト風にやってみようと思ってね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠マシュ
+リエナクト……。[r]それはなんでしょうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+歴史上の出来事を再現する遊び、[r]あるいは学術的検証、と言ったところかな。
+[k]
+
+＠モリアーティ
+例えば、『１９世紀初頭の出で立ちで[r]アウステルリッツの戦いを再現する』とかね。
+[k]
+
+[charaFace B 4]
+
+＠モリアーティ
+もっとも、ここで再現するのはフィクションの戦いだ。[r]リエナクトというよりＬＡＲＰに近いか……？
+[k]
+
+[charaFace B 0]
+
+＠モリアーティ
+いや、定義の問題は横に置こう。
+[k]
+
+＠モリアーティ
+手空きの者たちに声をかけ、[r]エキストラとして参加してもらうことにしたんだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠アルトリア・キャスター
+うわ～、なんか壮大。[r]まさしく合戦ですね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モードレッド
+おうよ、オレたちの戦だ。[r]景気よく騒いで、正常化委員会に叩きつけてやらぁ！
+[k]
+
+[charaFace C 1]
+
+＠モードレッド
+そうだ、マスター！　マシュ！　マネ子！[r]おまえらも参加してけよ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+わたしたちもですか！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モードレッド
+ああ。衣装は信じられねぇほどたくさんある！[r]クレーンとハベ公の手柄だ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+怪我の功名だな。[r]それではマスター、楽しんでくれたまえ。
+[k]
+
+＠モリアーティ
+何、弁当くらいは出すぞ。
+[k]
+
+[messageOff]
+[charaScale Q 1.2]
+[charaScale E 1.15]
+
+[charaTalk depthOff]
+[charaDepth E 3]
+[charaDepth Q 2]
+[charaDepth B 1]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.7 0,15]
+[charaFadein Q 0.7 0,-220]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+
+[se ad183]
+[charaMoveScale E 1.2 0.2]
+[charaMove E 0,20 0.2]
+[shake 0.05 2 2 0.2]
+[wt 0.5]
+
+[charaFace E 1]
+
+＠ミス・クレーン
+はーい、着付けはこちらにどうぞー。
+[k]
+
+？1：うわ～！？
+？！
+
+[messageOff]
+[se ad671]
+[seVolume ad671 0 0.4]
+[seStop ad671 1.5]
+[charaMove Q 50,-220 2.0]
+[wt 0.9]
+
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_64 1.0]
+[wait wipe]
+
+[charaScale E 1.0]
+[charaFadeout E 0.1]
+[charaFadeout Q 0.1]
+
+[charaTalk depthOn]
+
+[scene 10000]
+[wt 1.0]
+
+[wipein rightToLeft 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 142501]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+これで[#賑:にぎ]やかしを確保、と。
+[k]
+
+[bgm BGM_BATTLE_61 0.1]
+
+＠モリアーティ
+ああ、次は何だ？[r]シーン５－Ａと８全部、１２－Ｃはまとめて撮影だな。
+[k]
+
+[charaFace B 4]
+
+＠モリアーティ
+誌面レイアウトは、まだ洗練の余地がある。[r]……やることはまだまだ山積みだな！
+[k]
+
+＠モリアーティ
+そろそろ、モードレッドが新たな思いつきを[r]突っ込んで来る頃合いだろうし。
+[k]
+
+[charaFace B 2]
+
+＠モリアーティ
+しかし！　何が来ようと！[r]やってやろうじゃないか！
+[k]
+
+[charaFace B 6]
+
+＠モリアーティ
+笛を吹くだけでなく、自らも踊ってやるさ。[r]私はジェームズ・モリアーティなのだから！
+[k]
+
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_61 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+

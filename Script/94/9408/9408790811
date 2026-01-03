@@ -1,0 +1,341 @@
+
+
+＄94-08-79-08-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1098274400 1 アルトリア・キャスター]
+[charaSet B 1098276900 1 マシュ]
+[charaSet C 1098272000 1 ランスロット]
+[charaSet D 25012000 1 ヤラアーンドゥ]
+[charaSet E 1098275810 1 バーゲスト]
+[charaSet F 1098275810 1 バーゲスト_演出用]
+[charaScale F 1.3]
+
+[sceneSet G 10000 1]
+[charaScale G 1.1]
+[sceneSet H 197200 1]
+[charaScale H 1.2]
+[sceneSet I 197200 1]
+[charaScale I 1.4]
+[sceneSet J 197200 1]
+[charaScale J 1.4]
+[sceneSet K 197200 1]
+[charaScale K 1.4]
+
+[imageSet L cut495_mbgs05 1]
+[imageSet M cut495_mbgs05 1]
+[imageSet N cut495_mbgs05 1]
+[charaScale L 1.5]
+[charaScale M 1.5]
+[charaScale N 1.5]
+
+[charaSet O 1098181900 1 エフェクト]
+
+
+[scene 197200]
+
+[charaFadein H 0.1 -120,-200]
+[charaMove H -70,-200 10.0]
+
+[se ad11]
+[seVolume ad11 0 0]
+[seVolume ad11 1.5 0.3]
+[charaPut O 1]
+[charaEffect O bit_talk_fire_fs]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth G 1]
+[charaDepth O 2]
+[charaDepth A 3]
+[charaDepth B 3]
+[charaDepth C 3]
+[charaDepth D 3]
+
+[bgm BGM_EVENT_122 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.0]
+
+[bgm BGM_EVENT_122 0.6 0.5]
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[seVolume ad11 0.6 0.15]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_122 0.6 1.0]
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[seVolume ad11 0.6 0.3]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+＠アルトリア・キャスター
+何もしてないのに勝手に燃えてるーー！[r]鎮火鎮火！　ランスロットさん、[#鎮火:アロンダイト]して！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠ランスロット
+ノーダイト！　私の聖剣は『湖の乙女』から[r][#授:さず]かっただけで、水が出るわけではないのです！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠ヤラアーンドゥ
+アルトリア、あなた魔術師なんでしょう！？[r]水ぐらい出せないの！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠アルトリア・キャスター
+みみ、水を出す魔術は超高等技術だから、[r]こういう[#緊迫:きんぱく]した場面だと難しいかなぁ……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠マシュ
+火の手が広がるばかりです！[r]このままではたいへんな森林火災に、
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_122 1.0]
+
+＠？？？
+耳を[#塞:ふさ]いでかがめ、馬鹿ども！[r]吹き飛ばされたくなければな！
+[k]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+[charaFadeTime G 0.2 0.6]
+[charaPut G 0,-200]
+
+＠ランスロット
+（張り詰めながらも美しい声……！[r]　間違いなく絶世の美女の[#類:たぐい]……！）
+[k]
+
+[messageOff]
+
+[charaFadeout G 0.2]
+[charaFadeout C 0.1]
+[wt 0.7]
+
+？1：！（とっさにしゃがむ）
+
+？！
+
+[se ad478]
+[cameraMove 0.2 0,25 1.0]
+[wt 0.2]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[seVolume ad11 0.6 0.15]
+[wait wipe]
+
+[charaTalk depthOn]
+[cameraHome 0.1]
+[wait camera]
+
+[charaPut O 0,0]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[seVolume ad11 0.6 0.3]
+[wait wipe]
+[wt 0.4]
+
+[se ad979]
+[effect bit_talk_water_spread]
+[wt 0.5]
+[seStop ad11 0.5]
+[charaPut O 2000,2000]
+[se ad745]
+[se ad226]
+[shake 0.05 2 2 1.2]
+[fadeout white 1.0]
+[wait fade]
+
+[wt 1.2]
+
+[seStop ad745 3.0]
+[fadein white 2.0]
+[wait fade]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+す、すごい水流でした……[r]まるで消防車のポンプ放水のような。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[se ade158]
+
+[charaCrossFade C 1020300 0 0.4]
+[wait charaCrossFade]
+[wt 0.6]
+
+[charaFace C 2]
+
+＠ランスロット
+ああ。おかげで火の手はなくなった。[r]感謝させてほしい、そこの[#可憐:かれん]な[line 3]
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth I 2]
+[charaDepth L 3]
+[charaDepth J 4]
+[charaDepth M 5]
+[charaDepth K 6]
+[charaDepth N 7]
+
+[charaFadein I 1.0 0,-135]
+[charaFadein L 1.0 0,250]
+[charaMove I 0,-235 10.0]
+[charaMove L 0,100 10.0]
+
+[bgm BGM_MAP_23 1.0]
+[wt 3.0]
+
+[charaFadein J 1.5 100,-350]
+[charaFadein M 1.5 100,-170]
+[charaMove J 0,-350 10.0]
+[charaMove M -50,-170 10.0]
+[wt 2.0]
+
+[charaFadeout C 0.1]
+[charaFadeout I 0.1]
+[charaFadeout L 0.1]
+[wt 1.0]
+
+[charaFadein K 1.5 0,-350]
+[charaFadein N 1.5 0,-450]
+[charaMove K 0,-320 3.0]
+[charaMove N 0,-400 3.0]
+[wt 2.0]
+[charaFadeout J 0.1]
+[charaFadeout M 0.1]
+[wt 2.0]
+
+[charaFadeout K 0.7]
+[charaFadeout N 0.7]
+[wt 1.0]
+
+[charaDepth D 3]
+[charaDepth A 1]
+[charaDepth B 2]
+
+[charaFace A 10]
+[charaFace B 18]
+[charaFace D 13]
+[charaFadein A 0.1 1]
+[charaFadeinFSR B 0.1 320,0]
+[charaFadeinFSL D 0.1 -320,0]
+[wt 1.8]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ランスロット
+[line 3][#可憐:かれん]で、[#勇:いさ]ましい君。[r]名前を聞かせていただけるかな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠E：？？？
+……ふん。今後、同じような騒ぎを[r]起こされるのは迷惑だからな。名乗っておこう。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth J 2]
+[charaDepth F 3]
+
+[charaFace F 5]
+[charaFadein J 0.7 -30,-200]
+[charaFadein F 0.7 -30,0]
+[charaMove J 0,-200 5.0]
+[charaMove F 0,0 5.0]
+[wt 0.5]
+[charaTalk on]
+[charaTalk F]
+
+＠F：？？？
+ハワトリアの森を護るＵＤＫの団長、バーゲストだ。
+[k]
+
+＠F：バーゲスト
+また、感謝される謂れはない。[r]火災でのレスキューは当然の行為だからな。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStopEnd BGM_MAP_23 2.0]
+[wait fade]
+[soundStopAllEnd]
+[end]
+
+

@@ -1,0 +1,343 @@
+
+
+＄03-00-13-06-1-1
+
+
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098253200 1 Ｕ－オルガマリー]
+[charaSet B 98001000 1 マシュ]
+[charaSet C 1098254800 1 ネモ・マリーン]
+[charaSet D 1098257500 1 ラスプーチン]
+[charaSet E 1098255200 1 ハベトロット]
+[charaSet F 1098252940 1 テペウ]
+
+[imageSet H cut401_soccor 1]
+[sceneSet I 169700 1]
+[sceneSet J 169700 1]
+
+[scene 35010]
+
+[pictureFrame cut063_cinema]
+
+[se ade106]
+[seVolume ade106 0 0]
+[seVolume ade106 1.0 0.8]
+[fadein black 1.0]
+[wait fade]
+[seStop ade106 1.5]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+
+＠Ｕ－オルガマリー
+取るに足りん！[r]何が[#冠位:グランド]サーヴァントだ！
+[k]
+
+＠Ｕ－オルガマリー
+人類が自信を持ってお[#薦:すす]めする極限存在とやらが[r]この程度とは、[#片角:かたつの]痛いというものだ！
+[k]
+
+[charaFace A 4]
+＠Ｕ－オルガマリー
+[line 3]まあ、実際に左角は損傷した。[r]それは認めよう。無傷とはいかなかった。
+[k]
+
+[charaFace A 0]
+＠Ｕ－オルガマリー
+だが、結果はこの通り、私の完全勝利だ！
+[k]
+
+＠Ｕ－オルガマリー
+この戦いによって、[r]地球人類に我が統括の価値はないと判明した！
+[k]
+
+＠Ｕ－オルガマリー
+残存勢力を野放しにするのはここまでだ！[r]ストーム・ボーダーとやらを接収しに行く！
+[k]
+
+＠Ｕ－オルガマリー
+は[messageShake 0.04 3 2 0.3]はは！　[wt 0.5][messageShake 0.04 3 3 0.3]ははは！[wt 0.6][r]は[messageShake 0.05 4 3 0.6]はははははははははははははは！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[wipeout openEye 0 1.0]
+[bgmStop BGM_EVENT_72 0.1]
+[se ad7]
+[wait wipe]
+[charaFadeout A 0]
+[scene 170300]
+
+[wipein openEye 0.3 1.0]
+[wait wipe]
+[wt 0.7]
+
+＠Ｕ－オルガマリー
+ははははは[line 3]ハッ！？
+[k]
+
+＠Ｕ－オルガマリー
+え。なに？　今のなに？[r]ドコにいたの私？　……っていうか、
+[k]
+
+＠Ｕ－オルガマリー
+わかった、これが夢ってヤツだーーーー！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[pictureFrame]
+
+
+[scene 169700]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_77 0.1]
+
+？1：おはよー
+
+？！
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠マシュ
+おはようございます、先輩。[r]儀式への意気込みからか、今朝は皆さん早起きです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ネモ・マリーン
+太陽が第五層を通過したら始まるんだって！[r]初回が４試合、次が２試合、最後が決勝！
+[k]
+
+＠ネモ・マリーン
+だから、計７試合！　一日で３[#試合:ゲーム]とか、[r]スタミナ配分気をつけないとね！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠ラスプーチン
+もちろん、最後まで勝ち進めば、という話だが。[r]ちなみにトーナメント表ではこうだ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.25]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 2]
+[charaDepth H 3]
+[charaDepth I 4]
+[charaDepth J 4]
+[charaDepth E 5]
+[charaDepth F 5]
+
+[se adm40]
+[charaFadein H 0.4 0,-200]
+[wt 1.1]
+
+[subCameraOn 2]
+[charaLayer E sub #A]
+[charaLayer F sub #B]
+[charaLayer I sub #A]
+[charaLayer J sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask11 3 0,0,0,255 1]
+[subCameraFilter #B maskEdge cut359_mask12 3 0,0,0,255 1]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaScale E 1.1]
+[charaScale F 1.0]
+[charaScale I 1.1]
+[charaScale J 1.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 530,345]
+[charaFadein I 0.1 210,75]
+
+[charaFace F 6]
+[charaFadein F 0.1 -387,150]
+[charaFadein J 0.1 -200,-20]
+
+[subRenderFadeinFSSideR #A 0.3 -95,75]
+[subRenderMoveFSSideR #A -95,-140 0.4]
+
+[wt 0.6]
+
+[charaTalk on]
+＠ハベトロット
+マリーンとテペウの南米ノーチラスは端っこか。[r]うまくいけば決勝でボクたちと当たるじゃん。
+[k]
+
+[charaTalk F]
+[subRenderFadeinFSSideL #B 0.3 95,75]
+[subRenderMoveFSSideL #B 95,-140 0.4]
+＠テペウ
+どうでしょうか。[r]私たちのチームは、
+[k]
+
+＠テペウ
+皆さんがチーム結成できなかった時の保険として[r]用意した急造のものですから。
+[k]
+
+[se ad55]
+[seVolume ad55 0 0]
+[seVolume ad55 0.8 0.1]
+
+＠テペウ
+ハベトロットの期待に添えるかは分かりません。
+[k]
+
+[seVolume ad55 0.8 0.4]
+[charaTalk E]
+[charaFace E 9]
+＠ハベトロット
+またまた～。テペウは名コーチなんだろ～？[r]けっこういいチームに仕上げて[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[seVolume ad55 0.8 1.0]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[charaFadeout H 0.4]
+[wt 0.4]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[subCameraOff]
+
+[charaLayer E normal]
+[charaLayer F normal]
+[charaLayer I normal]
+[charaLayer J normal]
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaScale I 1.0]
+[charaScale J 1.0]
+[wt 0.2]
+
+[seStop ad55 0.1]
+[se ad533]
+[se ad728]
+[seVolume ad728 0 0.2]
+[shake 0.05 2 2 1.0]
+[wt 1.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.2 1]
+[wt 0.2]
+＠Ｕ－オルガマリー
+それ見なさい！　やっぱり私は人類の敵だったようね、[r][%1]！
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+？1：[line 3]？
+？2：[line 3]はい？
+
+？！
+
+[charaFace A 14]
+＠Ｕ－オルガマリー
+だから、私にできない事はないという事よ！
+[k]
+
+＠Ｕ－オルガマリー
+グランドサーヴァントっていうの？[r]ソイツら全滅させたのよ！　夢で！
+[k]
+
+＠Ｕ－オルガマリー
+いい夢だったわ！[r]体の調子も、今と違って夢のようだったし！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠マシュ
+そ、そうですか。[r]夢というのでしたら、確かに、はい。
+[k]
+
+？1：……そっか。それは、ホントに良かった
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠Ｕ－オルガマリー
+ええ、試してみるものね！[r]おかげで充実した朝になったわ！
+[k]
+
+？2：ええー、ほんとにぃ～？
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaShake A 0.05 2 2 0.4]
+[charaFaceFade A 11 0.2]
+＠Ｕ－オルガマリー
+コ、コイツ……！
+[k]
+
+[charaFace A 30]
+＠Ｕ－オルガマリー
+ホントよ、グランドサーヴァント倒したんだから！[r]地球でいちばんだったの、私！
+[k]
+
+？！
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

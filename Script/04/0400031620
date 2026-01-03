@@ -1,0 +1,1013 @@
+
+
+＄04-00-03-16-2-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 6050000 1 ハサン]
+[charaSet B 1098290600 1 平景清]
+[charaSet C 11006001 1 サリエリ]
+[charaSet D 11006001 1 サリエリ_シルエット]
+[charaFilter D silhouette 00000080]
+
+[charaSet E 98115000 1 エフェクト用]
+[charaScale E 1.2]
+
+[charaPut E 2000,2000]
+[charaEffect E bit_talk_noise_gr]
+
+[charaSet F 98115000 1 エフェクト用1]
+[charaPut F 2000,2000]
+[charaEffect F bit_talk_41_fs]
+
+[charaSet G 1098290600 1 景清1]
+[charaScale G 2.0]
+[sceneSet H 112402 1]
+[charaScale H 1.4]
+
+[charaSet I 98115000 1 エフェクト用2]
+[charaSet J 1098290600 1 景清2]
+
+[charaSet K 11006001 1 サリエリ1]
+[charaScale K 2.0]
+[sceneSet L 112402 1]
+[charaScale L 1.4]
+
+[sceneSet M 10000 1]
+[charaScale M 1.2]
+
+[subCameraOn 2]
+
+[charaLayer G sub #A]
+[charaLayer H sub #A]
+
+[charaLayer K sub #B]
+[charaLayer L sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask02 5 150,150,150,255 0]
+[subCameraFilter #B maskEdge cut359_mask03 5 150,150,150,255 0]
+
+[charaFace G 4]
+[charaFadein G 0.1 200,250]
+[charaFadein H 0.1 -150,-50]
+
+[charaFace K 5]
+[charaFadein K 0.1 -200,40]
+[charaFadein L 0.1 150,-300]
+
+[scene 211902]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[cueSe SE_24 24_ad1391]
+[seVolume 24_ad1391 0 0.1]
+[seVolume 24_ad1391 1.0 1.0]
+
+[wt 2.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[scene 212201]
+[wt 1.5]
+
+[se ad648]
+[seVolume ad648 0 0]
+[seVolume ad648 1.5 0.6]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.5]
+
+[seStop ad648 0.5]
+[wt 0.7]
+
+＠
+あなたは[line 3][bgm BGM_SHINYAMA_1 0.1]
+[k]
+
+[messageOff]
+
+[wt 0.5]
+
+＠
+あなたは、ベッドに横たわって。[r]はじめのうちは瞼を閉じようとしていたけれど、
+[k]
+
+＠
+目が冴えてしまって、[r]眠れない。
+[k]
+
+＠
+戦闘があったから？
+[k]
+
+
+＠
+彼女の呼び声に応じるように[#顕:あらわ]れた、[#赫:あか]。
+[k]
+
+＠
+血と臓物のような、[#赫:あか]い怪物。
+[k]
+
+＠
+それとも……
+[k]
+
+[messageOff]
+
+[se ad648]
+[seVolume ad648 0 0.6]
+
+[wt 2.0]
+
+[seStop ad648 0.5]
+
+＠
+[line 3]それとも、炎。
+[k]
+
+＠
+[line 6]胸の奥が熱いから？
+[k]
+
+[messageOff]
+
+[wt 0.5]
+
+＠
+胸の奥、内臓でも筋肉でも骨でもないどこかが、[r]燃えるように熱くて、
+[k]
+
+＠
+心臓のかわりに[r]炎が鼓動を打っているようで、
+[k]
+
+＠
+どこまでも熱く、熱く、[r]燃え盛って……
+[k]
+
+[messageOff]
+
+[wt 1.0]
+
+＠
+“殺せ”
+[k]
+
+＠
+“敵を”
+[k]
+
+＠
+“どこまでも追い詰めて”
+[k]
+
+＠
+“殺し尽くせ”
+[k]
+
+[messageOff]
+
+[wt 1.0]
+
+＠
+[line 3]そんな風に、叫び、呻くから？
+[k]
+
+[messageOff]
+
+[se ad648]
+[seVolume ad648 0 0.6]
+
+[wt 1.5]
+[bgmStop BGM_SHINYAMA_1 1.5]
+
+[seStop ad648 1.0]
+[wt 1.0]
+
+[charaFadeTime M 0.5 0.5]
+[wt 0.8]
+
+＠ジャンヌ・オルタ
+（起きてる？）
+[k]
+
+＠ジャンヌ・オルタ
+（いきなり念話でごめん。[r]　あと、長く待たせてしまって悪かったわ）
+[k]
+
+？1：大丈夫
+？2：眠ってはいないよ
+？！
+
+＠ジャンヌ・オルタ
+（そっか）
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠ジャンヌ・オルタ
+（実はね、サリ先[line 3][r]　サリエリと連絡が全然取れないのよ）
+[k]
+
+＠ジャンヌ・オルタ
+（もう１時間になるわ。[r]　さすがにちょっと[#拙:まず]い気がする）
+[k]
+
+＠ジャンヌ・オルタ
+（アンタ、念話で確認できない？[r]　どこにいるのかと、無事なのかどうか）
+[k]
+
+？1：やってみる
+？2：少し待って
+？！
+
+[bgm BGM_EVENT_81 1.0 0.5]
+
+[messageOff]
+[wt 0.5]
+
+？1：（サリエリとの念話を試みる）
+？！
+
+[se ad648]
+[seVolume ad648 0 0.3]
+
+[wt 2.0]
+
+[seStop ad648]
+
+[se ad31]
+[charaPut E 0,58]
+[wt 0.5]
+[seStop ad31]
+[charaPut E 2000,2000]
+
+[wt 1.0]
+
+[se ad31]
+[charaPut E 0,58]
+[wt 0.5]
+[seStop ad31]
+[charaPut E 2000,2000]
+
+[wt 1.5]
+
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 10000]
+
+[wt 1.5]
+[fadein black 1.0]
+[wait fade]
+
+＠サリエリ？
+（こ[line 3]）
+[k]
+
+＠サリエリ？
+（公園、に）
+[k]
+
+＠サリエリ？
+（公園、に、き）
+[k]
+
+＠サリエリ？
+（来て、く、れ）
+[k]
+
+＠サリエリ？
+（公園、に、来て、く、れ）
+[k]
+
+[messageOff]
+
+[se ad31]
+[charaPut E 0,58]
+[wt 0.5]
+[seStop ad31]
+[charaPut E 2000,2000]
+
+[wt 0.5]
+[fadeout black 0.1]
+[wait fade]
+
+[scene 212201]
+
+
+[wt 0.2]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_81 1.0 1.0]
+
+？1：今、声が届いた
+？2：公園[line 3]
+？！
+
+＠ジャンヌ・オルタ
+（公園？）
+[k]
+
+＠ジャンヌ・オルタ
+（えーっと、確か、[r]　そこから徒歩５分くらいにひとつあるわね）
+[k]
+
+＠ジャンヌ・オルタ
+（すぐ合流しましょう）
+[k]
+
+＠ジャンヌ・オルタ
+（適当に理由つけて外に出てきなさい。[r]　警護には、景清を付けるから）
+[k]
+
+？1：わかった
+
+？！
+
+[messageOff]
+[charaFadeout M 0.2]
+[wt 0.5]
+
+？1：ハサン
+？2：……叔母さんのこと、[&頼む:お願い]
+？！
+
+[charaPut A 0,0]
+[charaTalk A]
+[charaFace A 1]
+[se ad595]
+[charaSpecialEffect A appearance 1 1.0]
+[wait charaSpecialEffect A]
+[wt 0.5]
+
+＠ハサン
+ああ。
+[k]
+
+＠ハサン
+あの女はオレが守っておく。[r]おまえは行け。
+[k]
+
+[messageOff]
+
+[cameraMove 0.35 0,7 1.0]
+[wait camera]
+[cameraHome 0.35]
+[wait camera]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_81 1.5]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[scene 211902]
+
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[cueSe SE_24 24_ad1391]
+[seVolume 24_ad1391 0 0.1]
+[seVolume 24_ad1391 1.0 1.0]
+
+[wt 2.5]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠平景清
+来たな。
+[k]
+
+？1：景清
+？2：行こう
+？！
+
+[charaFace B 3]
+
+＠平景清
+公園だったな。[r]うむ、行ってやろう。
+[k]
+
+[charaFace B 11]
+
+＠平景清
+……。[r]……。
+[k]
+
+＠平景清
+……んー。
+[k]
+
+？1：景清
+？2：何を立ち止まって……
+？！
+
+[charaFace B 1]
+
+＠平景清
+いや、念のため尋ねた方がよいかと考えてな。[r]どうにも憑依というのは妙なもので、
+[k]
+
+＠平景清
+現在の我の[#霊基:在り方]は、[r][#我でありながら義経でもある]ようなのだ。
+[k]
+
+？1：……？
+
+[charaFace B 7]
+
+＠平景清
+分からぬか。
+[k]
+
+？2：景清は、いつもそうだよ
+
+[charaFace B 7]
+
+＠平景清
+……あー、そう見えるのか。
+[k]
+
+？！
+
+[charaFace B 1]
+
+
+＠平景清
+カルデアに在る時とは些か異なっているのだ。[r]恐らく、依代が在るせいなのだろうが、
+[k]
+
+
+＠平景清
+景清が精神の殆どを占めている状態とも、[r]義経が占めている状態とも、異なって……
+[k]
+
+＠平景清
+具体的に云うと、な。
+[k]
+
+
+＠平景清
+現在の我は、[r][#景清の人格でありながら義経の精神性を持つ]。
+[k]
+
+
+＠平景清
+故に、こう想うのだ。
+[k]
+
+＠平景清
+何をするにしても、まずは、まずは何より……
+[k]
+
+[charaFace B 7]
+
+
+＠平景清
+首を落とすところから始めよう。[r][line 3]とな。
+[k]
+
+？1：……確かに、それは
+？2：義経の考え方[&だ:だね]
+？！
+
+[charaFace B 1]
+
+＠平景清
+そうであろう？
+[k]
+
+＠平景清
+故に、尋ねた方がよいかと考えた。[r]公園でサリエリに会ったとして、
+[k]
+
+＠平景清
+まあ、何の根拠がある訳でもないが……
+[k]
+
+[charaFace B 0]
+
+＠平景清
+場合によっては、我は、[r]奴の首を[#疾:と]く落としにかかるが[line 3]構わぬか？
+[k]
+
+？1：[&駄目だ:駄目]
+？2：落とさないで欲しい
+
+？！
+
+[charaFace B 5]
+
+＠平景清
+うむ。[r]そういう反応か。
+[k]
+
+[charaFace B 7]
+
+＠平景清
+……まあ、気に留めてはおこう。[r]行くぞ。
+[k]
+
+[messageOff]
+
+[se ad60]
+[se ade422]
+[bgmStop BGM_EVENT_70 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[seStop ad60 1.5]
+[seStop ade422 1.5]
+
+[charaFadeout B 0.1]
+
+[wt 0.5]
+
+[scene 112402]
+
+[wt 2.0]
+
+[cameraMove 0.1 0,-20 1.03]
+[wt 0.5]
+
+[cameraHome 3.5]
+
+[se ad985]
+[seVolume ad985 0 0]
+[seVolume ad985 1.5 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 3.0]
+
+[seStop ad985 1.0]
+
+[wt 1.3]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠平景清
+オルタはまだか。[r]ふむ。
+[k]
+
+＠平景清
+サリエリの姿も見えぬ、が……
+[k]
+
+[charaFace B 0]
+
+＠平景清
+[#主:あるじ]。念のため、[r]我から離れずにおけよ。
+[k]
+
+？1：…………。
+？！
+
+[charaFace B 1]
+
+＠平景清
+警戒のしすぎと思うか？
+[k]
+
+＠平景清
+否、そうではない。[r]そうではないぞ。
+[k]
+
+＠平景清
+辺りを見るがいい。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[cameraMove 1.0 40,0 1.1]
+[wait camera]
+[wt 0.2]
+[cameraMove 1.5 -40,0 1.1]
+[wait camera]
+[wt 0.2]
+
+[cameraHome 1.0]
+
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠平景清
+辺りには人々の気配なく、人家もなし。
+[k]
+
+＠平景清
+開けている分、一見すれば[r]待ち伏せには不向きとも思えるが……
+[k]
+
+＠平景清
+これは宜しくないぞ。[r]何分、おまえを隠せない。
+[k]
+
+＠平景清
+ことサーヴァントにとって、[r][#主:あるじ]の存在こそ要であり弱み。
+[k]
+
+＠平景清
+故に、我は警戒を緩められぬ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.0]
+[wt 1.6]
+
+
+＠サリエリ
+…………景清、おまえの言葉は正しい。
+[k]
+
+[charaFace B 10]
+＠平景清
+！
+[k]
+
+？1：この声[line 3]
+？2：サリエリ
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[charaTalk off]
+
+[se ad60]
+[seVolume ad60 0 0]
+[seVolume ad60 2.0 1.0]
+
+[wt 2.0]
+
+[charaTalk depthOff]
+
+[charaDepth C 1]
+[charaDepth D 2]
+
+
+[charaFace D 6]
+[charaFadein D 0.4 1]
+[wt 0.5]
+[seStop ad60]
+
+
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[wt 0.4]
+[charaFadeout D 0.7]
+[wt 1.5]
+
+[bgm BGM_EVENT_71 0.1]
+
+＠サリエリ
+来たか、マスター。
+[k]
+
+[messageOff]
+
+[charaFace C 4]
+[charaMove C 0,-4 0.5]
+[wt 1.0]
+[charaMove C 0,0 0.3]
+
+[wt 0.8]
+
+[charaFace C 6]
+
+＠サリエリ
+ごく、個人的な感慨としては……
+[k]
+
+＠サリエリ
+今回ばかりは、おまえのその真っ直ぐな[r]気性を恨めしく感じるぞ。マスター。
+[k]
+
+[charaFace C 7]
+
+＠サリエリ
+だが感謝する。[r]よく[#景清を連れてきてくれた]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+＠平景清
+ふむ？
+[k]
+
+[charaFace B 11]
+＠平景清
+その物言い……[r]ああ、そうか。
+[k]
+
+[bgmStop BGM_EVENT_71 1.0]
+
+[charaFace B 4]
+＠平景清
+既に貴様、[#喇叭:らっぱ]ナシだな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠サリエリ
+……………………[wt 1.0][charaFaceFade C 14 0.3]ああ、そうとも。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_68 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠平景清
+……ッ！
+[k]
+
+[charaTalk depthOff]
+
+[charaDepth B 1]
+[charaDepth F 2]
+
+[charaDepth M 5]
+
+[messageOff]
+[charaFace B 9]
+[se ad678]
+[charaPut F 0,0]
+[charaMoveScaleEase B 1.2 0.2 easeOutQuint]
+[charaMoveEase B 0,20 0.2 easeOutQuint]
+[blur motion 5.0 2 10000 0.5 0.5 0.05 100]
+
+
+[charaFadeout B 0.2]
+[wt 0.2]
+[charaPut F 2000,2000]
+[blurOff motion 0.1]
+[charaEffectStop F bit_talk_41_fs]
+
+[wt 0.1]
+[charaScale B 1.0]
+
+
+[se ad171]
+[effect bit_talk_h_slash01_fs]
+[wt 0.4]
+
+[se ad1053]
+[effect bit_talk_quick_slash]
+[wt 0.8]
+
+[se ad170]
+[se ad1014]
+[fadeout white 0.1]
+[wait fade]
+
+
+[charaDepth C 3]
+[charaDepth J 4]
+
+[charaDepth H 1]
+[charaDepth G 2]
+
+[charaDepth L 1]
+[charaDepth K 2]
+
+[charaFace C 6]
+[charaFadein C 0.1 -200,0]
+[charaMoveEase C -150,0 0.2 easeInOutSine]
+
+[charaFace J 4]
+[charaFadein J 0.1 200,0]
+[charaMoveEase J 150,0 0.2 easeInOutSine]
+
+[wt 0.1]
+[fadein white 0.1]
+[effect bit_talk_14]
+[se ad1013]
+[wait fade]
+
+
+
+[charaShake J 0.07 2 2 1.5]
+[charaShake C 0.07 2 2 1.5]
+
+[charaShake G 0.07 2 2 1.5]
+[charaShake K 0.07 2 2 1.5]
+
+[wt 0.5]
+[se ad468]
+
+[subRenderFadein #A 0.2 500,-270]
+[subRenderFadein #B 0.2 -500,-275]
+
+[subRenderMove #A 0,-270 0.2]
+[subRenderMove #B 0,-275 0.2]
+
+[charaFadeout C 0.3]
+[charaFadeout J 0.3]
+
+
+[wt 1.5]
+
+[se ad678]
+[subRenderFadeout #A 0.2]
+[subRenderFadeout #B 0.2]
+[subRenderMove #A 500,-270 0.2]
+[subRenderMove #B -500,-275 0.2]
+[wt 0.3]
+
+[wt 0.1]
+[se ad496]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 -250,0]
+[charaMove B 0,0 0.3]
+
+[wt 1.0]
+
+[charaFace B 4]
+＠平景清
+チッ！
+[k]
+
+？1：景清！
+
+[charaFace B 9]
+
+＠平景清
+前に出るな！[r]逆らえばその脚、叩ッ斬るぞ！
+[k]
+
+
+
+
+
+？2：サリエリ！
+
+[charaFace B 9]
+
+＠平景清
+声を！　掛けるな！
+[k]
+
+？！
+
+[charaFace B 4]
+
+＠平景清
+[#喇叭:らっぱ]ナシ、ブーディカもどきを思い出せ！[r]あれのように戻るかは分からぬが[line 3]
+[k]
+
+[messageOff]
+[se ad690 0.4]
+[seVolume ad690 1.0 0.7]
+[charaEffect B bit_talk_charge_ppl02]
+[wt 1.0]
+
+[se ad574]
+[fadeout white 0.5]
+[wait fade]
+
+[charaEffectDestroy B bit_talk_charge_ppl02]
+[charaCrossFade B 11010001 0 0.1]
+[wait charaCrossFade]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.3]
+
+[charaFace B 2]
+＠平景清
+今は、敵だ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠サリエリ
+…………。
+[k]
+
+＠サリエリ
+…………我は、炎。[r]…………我は、闇。
+[k]
+
+[messageOff]
+
+[charaDepth C 1]
+[charaDepth I 2]
+
+
+[se ad632]
+[seVolume ad632 0 0.4]
+[se ad489]
+[se ade446]
+[seVolume ade446 0 0]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ade446 0.5 0.4]
+[seVolume ad556 0.5 0.3]
+[effect bit_talk_sparks_black]
+[fowardEffect bit_talk_blk_fire_aura 0,-350]
+[wt 1.5]
+
+[se ad574]
+[fadeout white 0.5]
+[seStop ade446 1.0]
+[seStop ad556 1.0]
+[wait fade]
+
+[charaChange C 11006000 0 normal 0.1]
+[wait charaChange C]
+[effectDestroy bit_talk_sparks_black]
+[fowardEffectDestroy bit_talk_blk_fire_aura]
+[wt 0.5]
+
+[seStop ad632 2.0]
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[charaFace C 2]
+
+
+＠サリエリ
+静粛に。静粛に。[r][line 6]さあ、終焉の音色を奏でろ。
+[k]
+
+[messageOff]
+
+[charaPut F 0,0]
+[charaEffect F bit_talk_41_fs]
+[se ad678]
+[charaMoveScaleEase C 1.2 0.4 easeOutQuint]
+[charaMoveEase C 0,25 0.4 easeOutQuint]
+[blur motion 0.4 4 200 0.5 0.6 0.02 200]
+
+[fadeout black 0.4]
+[bgmStopEnd BGM_BATTLE_68 0.4]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaPut F 2000,2000]
+[charaScale C 1.0]
+[blurOff motion 0.1]
+
+
+[soundStopAllEnd]
+[end]

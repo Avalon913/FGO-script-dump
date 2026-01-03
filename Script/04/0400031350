@@ -1,0 +1,542 @@
+
+
+＄04-00-03-13-5-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098290800 1 叔母]
+
+[masterImageSet B cut536_mirror_m01 cut536_mirror_w01 1]
+[masterImageSet C cut536_mirror_m02 cut536_mirror_w02 1]
+
+[sceneSet D 212201 1]
+
+[subCameraOn 2]
+[charaLayer B sub #A]
+[charaLayer C sub #B]
+[subCameraFilter #A through]
+[subCameraFilter #B through]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[charaFadein B 0.1 0,-220]
+[charaFadein C 0.1 0,-220]
+
+[scene 212100]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[cueSe SE_24 24_ad1386]
+[wait fade]
+
+
+[wt 2.0]
+[seStop 24_ad1386 1.5]
+
+[bgm BGM_EVENT_92 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠叔母
+取りあえず、テレビでも見ていろ。[r]夕食を用意してやるからな。
+[k]
+
+[charaFace A 3]
+＠叔母
+そうだな、ハンバーグでも作ってやろう。[r]カレーの方がいいか？
+[k]
+
+[messageOff]
+
+[cueSe SE_24 24_ad1418]
+[charaFadeout A 0.5]
+[wt 1.0]
+[cueSeStop 24_ad1418 0.8]
+[wt 0.5]
+
+＠叔母
+……とはいえ、私も不慣れでな。[r]普段は冷凍食品や外食で済ませてばかりと来る。
+[k]
+
+＠叔母
+だが、今日くらいはやろう。[r][#共同生活]の一日目の記念にもなる。
+[k]
+
+？1：共同生活？
+？2：ええと……
+？！
+
+[messageOff]
+
+[cueSe SE_24 24_ad1418 1.0 1.0]
+[wt 1.4]
+
+[cueSeStop 24_ad1418 0.4]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.5]
+
+＠叔母
+聞いていないか。
+[k]
+
+[charaFace A 1]
+
+＠叔母
+今日からは、私がおまえの保護者となる。
+[k]
+
+[charaFace A 2]
+
+＠叔母
+姉さんのようにはやれないが、[r]おまえが大人になるまでは面倒を見てやるとも。
+[k]
+
+？1：保護者
+？2：あなたが、[&オレ:わたし]の……
+？！
+
+＠叔母
+不満はあるまい？[r]姉さんと同じく美人で聡く[#強:したた]かな女だぞ。
+[k]
+
+[charaFace A 3]
+
+＠叔母
+おまえの手本にぴったりだろう。[r]特に、[#強:したた]かさで言えば私は姉さん以上と来る。
+[k]
+
+[charaFace A 18]
+
+＠叔母
+……まあ、何だ。
+[k]
+
+＠叔母
+おまえに不満があろうとも、だ。
+[k]
+
+[charaFace A 13]
+
+＠叔母
+私はここでおまえの保護者をやると決めた。[r]不服があろうと受け入れろ。
+[k]
+
+[charaFace A 2]
+
+＠叔母
+いいな？
+[k]
+
+？1：は、はい
+
+[branch select01]
+
+？2：（頷く）
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.9]
+
+[branch select02]
+
+？！
+
+[label select01]
+
+[charaFace A 3]
+
+＠叔母
+よし。
+[k]
+
+[branch select-end]
+
+
+
+[label select02]
+
+[charaFace A 5]
+
+＠叔母
+きちんと返事をしろ。
+[k]
+
+？1：は、はい
+
+[charaFace A 2]
+
+＠叔母
+よし。いい子だ。
+[k]
+
+？！
+
+[label select-end]
+
+[charaFace A 19]
+
+＠叔母
+……姉さんの代わりにはなれまいが、[r]そうあるように努めたい。
+[k]
+
+[charaFace A 20]
+
+＠叔母
+だからおまえも歩み寄れ。[r]すぐには、無理だろうが……
+[k]
+
+？1：……………………
+？！
+
+[messageOff]
+[wt 1.5]
+
+？1：……努力は、します
+
+[charaFace A 2]
+
+＠叔母
+そうか。
+[k]
+
+？2：……ありがとう
+
+[charaFace A 2]
+
+＠叔母
+礼はいい。[r]お互いの話だからな。
+[k]
+
+？！
+
+[messageOff]
+
+[charaFaceFade A 19 0.3]
+
+[wt 2.0]
+
+[charaFaceFade A 20 0.3]
+
+＠叔母
+[line 3]ん。少し、表情が柔らかくなったか。
+[k]
+
+＠叔母
+私が美人なせいか？[r]そうだな。そういうことにしておくといい。
+[k]
+
+？1：……叔母さんの顔が
+
+[charaFace A 1]
+
+＠叔母
+私の顔が何だ。[r]誰かに似ているのか。
+[k]
+
+＠叔母
+[#おまえの母:姉　　さ　　ん]以外の誰かにか？
+[k]
+
+？2：……知り合いに、よく似てるから
+
+[charaFace A 1]
+
+＠叔母
+ほう？[r][#おまえの母:姉　　さ　　ん]ではなくてか？
+[k]
+
+？！
+
+[charaFace A 2]
+
+＠叔母
+まあ驚く話ではないな。[r]似た人間は、この世に三人いるというぞ。
+[k]
+
+？1：人間……
+？2：…………。
+？！
+
+[charaFace A 15]
+
+＠叔母
+何？[r]人間では、ない、のか。
+[k]
+
+[charaFace A 13]
+
+＠叔母
+……そうか、犬だな。[r]猫より私は犬だろう。ハスキーあたりか？
+[k]
+
+？1：（少し笑う）
+？2：（素直に頷く）
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.9]
+
+？！
+
+[charaFace A 19]
+
+＠叔母
+ふふ。
+[k]
+
+[charaFace A 20]
+
+＠叔母
+さあ、お喋りはこれくらいにしておこう。[r]美味しい夕食を作ってやるぞ。
+[k]
+
+＠叔母
+テレビでも見て待っていろ。
+[k]
+
+[charaFace A 3]
+
+＠叔母
+[line 3]っと、これはもう言ったんだったな。[r]ふふふふ。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_92 1.5]
+[wait fade]
+
+[wt 0.5]
+
+[charaFadeout A 0.1]
+
+[scene 10000]
+
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+＠
+その後……
+[k]
+
+＠
+失敗したカレーは、[r]最終的には肉じゃがになってテーブルに並んだ。
+[k]
+
+＠
+“逆ならまだしも……”
+[k]
+
+＠
+“これは、なかなかの偉業なのではないか？”
+[k]
+
+＠
+叔母を名乗った彼女は、[r]そう言って笑った。
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[wait fade]
+
+[wt 1.5]
+
+[scene 212201]
+
+[wt 0.5]
+
+[se ad93]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[cameraMove 1.8 50,-15 1.15]
+[cueSe SE_24 24_ad1407 0 0.6]
+
+[wt 1.5]
+
+[seStop 24_ad1407 0.3]
+[wt 0.8]
+
+[blur lens 0.5 2 20]
+[subRenderFadein #A 0.5 0,0]
+
+[wt 1.5]
+[bgm BGM_EVENT_129 0.1]
+
+＠
+[align center]『それで？』[align]
+[k]
+
+＠
+[align center]『今度はスカサハに似た叔母さん[line 3]』[align]
+[k]
+
+＠
+[align center]『[&また死なせるのか？:また死なせるの？]』[align]
+[k]
+
+？1：…………。
+？2：もう死なせない
+？！
+
+＠
+[align center]『[&できるのか:できるの？]』[align]
+[k]
+
+＠
+[align center]『[&おまえに:あなたに]』[align]
+[k]
+
+？1：うるさい
+？2：[&だまれ:だまって]
+？！
+
+[messageOff]
+
+[subRenderFadein #B 0.4 0,0]
+
+[wt 2.0]
+[subRenderFadeout #A 0.1]
+[charaFadeout B 0.1]
+
+＠
+[align center]『誰かと話してる暇なんかない』[align]
+[k]
+
+＠
+[align center]『食卓を囲んでる暇なんかない』[align]
+[k]
+
+[messageOff]
+
+[wt 1.0]
+
+＠
+[align center]『殺せ』[align]
+[k]
+
+＠
+[align center]『殺せ。殺せ！』[align]
+[k]
+
+＠
+[align center]『炎のように燃え盛る心のまま、誰かを[line 3]』[align]
+[k]
+
+＠
+[align center]『殺して、殺して、殺し尽くして[line 3]』[align]
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_129 0.2]
+
+[blurOff lens 0.5]
+[subRenderFadeout #B 0.3]
+
+
+
+
+[se ad570]
+
+[wt 0.8]
+
+[charaFadeout C 0.1]
+[cameraMoveEase 0,0 0.7 easeOutSine 1.01]
+[seStop ad570]
+[wt 1.5]
+[subCameraOff]
+
+[se ad93]
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth A 2]
+[charaScale D 1.3]
+[charaScale A 1.3]
+
+[charaFadein D 0.4 100,-330]
+[charaMoveEase D 160,-330 1.2 easeOutSine]
+[wt 1.5]
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.4 1]
+[wt 1.5]
+
+[bgm BGM_EVENT_116 0.1]
+
+＠叔母
+[%1]。
+[k]
+
+＠叔母
+……何でもいい。
+[k]
+
+＠叔母
+何でも、気になることがあったら話してくれ。
+[k]
+
+[messageOff]
+
+[wt 1.0]
+
+[charaFace A 17]
+
+＠叔母
+おまえの……[r]話したいことを、話してほしい。
+[k]
+
+＠叔母
+それまでは何も言わない。[r]私からは。
+[k]
+
+？1：（無言）
+
+[charaFace A 16]
+
+＠叔母
+……。[r]……。
+[k]
+
+[charaFaceFade A 19 0.3]
+＠叔母
+……以上だ。[r]ちゃんと、風呂に入ってから寝ろよ。
+[k]
+
+？2：……おやすみなさい、叔母さん
+
+[charaFaceFade A 19 0.3]
+＠叔母
+…………ああ。おやすみ。
+[k]
+
+？！
+
+[messageOff]
+[wt 1.0]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_116 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

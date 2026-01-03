@@ -1,0 +1,1562 @@
+
+＄94-09-27-07-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257310 1 ダ・ヴィンチ]
+[charaSet B 4055000 1 アンドロメダ]
+[charaSet C 1098288110 1 カロン]
+[charaSet D 1098257910 1 マシュ]
+[charaSet E 6032000 1 セミラミス]
+
+[charaSet F 1098288110 1 カロン_演出用]
+[charaSet G 4055000 1 アンドロメダ_演出用]
+[charaSet H 1098257910 1 マシュ_演出用]
+[charaSet I 6032000 1 セミラミス_演出用]
+
+[sceneSet L 207601 1]
+[charaScale L 1.2]
+[sceneSet M 208300 1]
+[charaScale M 1.2]
+[sceneSet N 207500 1]
+[charaScale N 1.2]
+[sceneSet O 207601 1]
+[charaScale O 1.2]
+[sceneSet P 10000 1]
+[charaScale P 1.2]
+[sceneSet Q 207600 1]
+[charaScale Q 1.2]
+[sceneSet R 208301 1]
+[charaScale R 1.2]
+[sceneSet S 208301 1]
+[charaScale S 1.2]
+
+[sceneSet T 207301 1]
+[charaScale T 1.2]
+[sceneSet U 207200 1]
+[charaScale U 1.2]
+
+[charaSet V 98115000 1 通信エフェクト用]
+
+[sceneSet W 208300 1]
+
+[charaPut V 2500,2500]
+[charaEffect V bit_talk_10_LowLevel]
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth L 1]
+
+[subCameraOn 1]
+[charaLayer M sub #A]
+[charaLayer N sub #A]
+[subCameraFilter #A maskEdge cut359_mask09 4 110,0,0,255]
+[charaFadein L 0.1 100,-250]
+[charaFadein M 0.1 0,0]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[scene 207601]
+[fadein black 1.0]
+[wait fade]
+
+[charaScale F 1.1]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 -70,0]
+[bgm BGM_MAP_91 0.1]
+
+＠F：カロン
+そうだな。言ってしまえば、[r]俺は依頼者みてぇなモンなのかもしれん。
+[k]
+
+[messageOff]
+[charaMoveEase F -270,0 2.0 easeOutCubic]
+[charaMoveEase L -100,-250 2.0 easeOutCubic]
+[wt 1.2]
+[subRenderFadein #A 0.7 330,-240]
+[subRenderMoveEase #A 300,-180 0.7 easeOutQuart]
+[wt 0.7]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+＠F：カロン
+おそらく、特異点の核はこの穴だ。
+[k]
+
+＠F：カロン
+チョコレートの冥河に乗らずには辿り着けない、[r]新しく生まれつつある冥界の入り口。
+[k]
+
+[charaFaceFade F 0 0.3]
+
+＠F：カロン
+それを潰してもらいたい[line 3][r]利害は一致してるだろ？
+[k]
+
+[messageOff]
+[charaTalk F,D]
+[charaFadeout F 0.5]
+[charaFadeout L 0.5]
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+[charaFadeout M 0.1]
+[charaFadein N 0.1 100,0]
+
+＠マシュ
+それは……そうかもしれませんが。
+[k]
+
+＠マシュ
+いきなりのことすぎて理解が追いつかない、[r]というのが正直なところです。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠アンドロメダ
+冥界の渡し守さんなら、[r]冥界は潰したらマズイんじゃないの？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠カロン
+いや。さすがに『死んだチョコ』の概念を[r]軸にした冥界なんざ、正しいものとは言えねえ。
+[k]
+
+＠カロン
+渡し守の[#矜恃:きょうじ]として、俺は間違った冥界に[r]死者を案内するわけにゃいかねえのさ。
+[k]
+
+[charaFaceFade C 1 0.3]
+
+＠カロン
+……おまえさんたちは死者じゃねえからノーカンだ。
+[k]
+
+[charaFaceFade C 0 0.3]
+
+＠カロン
+だが、船で運んできた代金はきちんといただくぜ。
+[k]
+
+
+＠カロン
+１オボロスの銀貨とは言わん。[r]その代金が、この冥界の穴潰しだ。頼む。
+[k]
+
+？1：ダ・ヴィンチちゃん、どう？
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+うん。おそらくだけど、[r]あの穴の中に聖杯の反応がある。
+[k]
+
+＠ダ・ヴィンチ
+それが死んだチョコという概念を引き寄せて、[r]新しい冥界になろうとしている……ということかな。
+[k]
+
+[charaFace A 22]
+
+＠ダ・ヴィンチ
+誰かの意思が介在したわけじゃない、[r]自然災害に近いもの。
+[k]
+
+＠ダ・ヴィンチ
+それがこの特異点の正体なんだろう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut V 2500,2500]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+特異点の解消こそが我々のオーダーです。
+[k]
+
+＠マシュ
+カロンさんと目的は一致している、[r]と言ってもいいかと思いますが……。
+[k]
+
+＠マシュ
+なぜ最初から言ってくれなかったのですか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠カロン
+『穴が実際にあるか』の証明ができなかったし、[r]『どこにあるか』の答えも持っていなかったからだ。
+[k]
+
+[charaFaceFade C 5 0.3]
+
+＠カロン
+このチョコレートの川が冥河の属性を[r]持っていること、
+[k]
+
+＠カロン
+その行く先に新しい冥界が生まれつつある[r]のは感じたが、
+[k]
+
+＠カロン
+それが実際にどこにあるかは[r]辿り着いてみねぇとわからなかった。
+[k]
+
+[charaFaceFade C 7 0.3]
+
+＠カロン
+それに最初からなんでか疑われてたからな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠マシュ
+……。[r]……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カロン
+仮にその時点でわかってることだけを言ったとしても、[r]おまえさんたちが一番気になる部分に答えがなかった。
+[k]
+
+＠カロン
+てなると、先に喋っても俺がもっと疑われるだけ[r]だろうってのは容易に想像がついたさ。
+[k]
+
+[charaFaceFade C 3 0.3]
+
+＠カロン
+下手な言動をしてさらに疑いの目を[r]向けられるのは時間の無駄だろ？
+[k]
+
+＠カロン
+停滞した川のせいで満ちた、[r]チョコレート臭と混ざった『死の臭い』で、
+[k]
+
+＠カロン
+放っとけばこの世界がもっと[r]おかしなことになるのもわかったしよ。
+[k]
+
+[charaFaceFade C 8 0.3]
+
+＠カロン
+対症療法にしろ根本的な解決を目指すにしろ、
+[k]
+
+＠カロン
+とりあえず説明よりも、急いで川を[r]進めなきゃならんのだけは確かだったのさ。
+[k]
+
+[charaFaceFade C 0 0.3]
+
+＠カロン
+ここに辿り着いてから話そうって[r]最初から思ってたんだよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠アンドロメダ
+うん……嘘は、ついてない気がするかな。[r]勘だけど。
+[k]
+
+＠アンドロメダ
+ね、ついでにもう一個、聞いてもいい？
+[k]
+
+＠アンドロメダ
+この川が『会いたい誰かに会える川』ってことに[r]なってたのは[line 3]どうして？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+そうだ。そもそも川に誰かの属性を与える必要が[r]あったのもわからない。なんで？
+[k]
+
+[messageOff]
+[charaPut V 2500,2500]
+[charaTalk A,F]
+[charaFace F 0]
+[charaFadein F 0.7 -250,0]
+[charaFadein L 0.7 -50,-250]
+[charaMoveEase F -270,0 0.7 easeOutCubic]
+[charaMoveEase L -70,-250 0.7 easeOutCubic]
+[wt 0.7]
+[charaFadeout A 0.1]
+
+＠F：カロン
+ああ、それも俺は微妙に嘘をついたぜ。
+[k]
+
+[messageOff]
+[subRenderFadein #A 0.6 270,-120]
+[subRenderMoveEase #A 300,-180 0.6 easeOutSine]
+[wt 0.6]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠F：カロン
+川を進めるのに必要なのは属性じゃなくて、[r]導く『人の想い』のほうだ。
+[k]
+
+＠F：カロン
+そのせいで結果的に[r]川に属性が移っちまうってだけでな。
+[k]
+
+＠F：カロン
+会いたい誰かがいるという想い、[r]それこそが川を進める。
+[k]
+
+＠F：カロン
+聖杯は死んだチョコって概念と結びついて[r]冥界を作ろうとしたが、
+[k]
+
+[charaFaceFade F 1 0.3]
+
+＠F：カロン
+それだけじゃ進みは悪かった。[r]事実、停滞していた。
+[k]
+
+[charaFaceFade F 8 0.3]
+
+＠F：カロン
+だからより強く『人の抱く想い』って推進力を[r]チョコに与える必要があった。
+[k]
+
+[charaFaceFade F 0 0.3]
+
+＠F：カロン
+で、渡されなかったチョコに一番相性がいいのは、[r]『誰かに会いたいという想い』だ、
+[k]
+
+＠F：カロン
+ってことになったんだろうな。
+[k]
+
+＠F：カロン
+そのルールを住人たちが読み取って[r]言ってたんだろう。
+[k]
+
+[charaFaceFade F 5 0.3]
+
+＠F：カロン
+実際、間違いじゃあねぇ。
+[k]
+
+＠F：カロン
+冥界には死んだ奴らがいる。[r]そして人は誰しもが死ぬ。
+[k]
+
+＠F：カロン
+つまり冥界は、時系列を無視すれば、必ず[r]会いたい誰かに会える場所だ[line 3]ってことになる。
+[k]
+
+＠F：カロン
+チョコレートの川がそういう場所に繋がっているのは[r]事実だったからな。
+[k]
+
+[messageOff]
+[charaTalk F,B]
+[charaFadeout F 0.4]
+[charaFadeout L 0.4]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[charaFadeout N 0.1]
+[charaFadein M 0.1 100,0]
+
+＠アンドロメダ
+そっか。[r]そういう意味、なんだ。そっか……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut V 2500,2500]
+[charaScale F 1.0]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠F：カロン
+哀しそうな顔をしてるが、
+[k]
+
+
+
+＠F：カロン
+もしあの穴が完成して新しい冥界になれば、[r]会えるのは[#本当:　マ　ジ　]だと思うぜ。
+[k]
+
+＠F：カロン
+『会いたい誰かに会える川』が注ぎ込むことで[r]完成した冥界なら、
+[k]
+
+＠F：カロン
+実際にその性質を持つようになってもおかしくはない。[r]『会いたい誰かに会える冥界』の発生だ。
+[k]
+
+[bgmStop BGM_MAP_91 2.5]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠セミラミス
+それで[line 3]結局、どうするのだ？
+[k]
+
+[messageOff]
+[charaDepth A 3]
+[charaDepth V 4]
+[charaDepth D 5]
+[charaTalk E,A,D,B]
+[charaPut A -270,0]
+[charaMoveEase A -250,0 1.4 easeOutQuart]
+[charaPut D 230,0]
+[charaMoveEase D 250,0 1.4 easeOutQuart]
+[charaFadein L 0.7 -40,-250]
+[charaMoveEase L -80,-250 1.4 easeOutQuart]
+[wt 1.0]
+
+[charaPut V -250,0]
+[charaFace A 23]
+[charaFadeTime A 0.4 1.0]
+[charaFace D 6]
+[charaFadeTime D 0.4 1.0]
+
+[wt 1.7]
+[charaFadeout M 0.1]
+[charaFadeout E 0.1]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.8]
+[charaPut V 2500,2500]
+[charaFadeout A 0.7]
+[charaFadeout D 0.7]
+[charaFadeout L 0.7]
+[charaLayer M normal]
+[charaLayer N normal]
+[wt 1.2]
+
+＠アンドロメダ
+そりゃあさ、閉じないと駄目でしょ。[bgm BGM_MAP_64 0.1]
+[k]
+
+＠アンドロメダ
+あの穴をどうにかしないと特異点は消えないんだから、[r]当然だよね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カロン
+へえ。[r]おまえさんは、恋人に会いたいんじゃなかったのか？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+[wt 1.2]
+[charaFace B 22]
+
+＠アンドロメダ
+会いたい。会いたいよ。
+[k]
+
+[charaFace B 1]
+
+＠アンドロメダ
+それは確かだけど……ここで[#躊躇:た め ら]うのは、[r]さすがに違うってわかるよ。
+[k]
+
+[charaFace B 3]
+
+＠アンドロメダ
+あたしは[line 3]誰かを助けるために、[r]そういう英雄になるために、ここにいるんだから！
+[k]
+
+？1：……ありがとう
+
+[charaFace B 5]
+
+＠アンドロメダ
+えへへ、お礼を言われるようなことじゃないって。[r]トーゼントーゼン。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+よし、それじゃあ具体的な作戦を考えようか。
+[k]
+
+？2：それじゃ、作戦を考えよう！
+
+[charaFace B 3]
+
+＠アンドロメダ
+考えようー！
+[k]
+
+[charaFace B 23]
+
+＠アンドロメダ
+ちなみにあたしはノーアイデアです！　助けて！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+はいはい、お任せあれ！[r]ちょっと待ってね！
+[k]
+
+？！
+
+[messageOff]
+[wt 0.7]
+[bgmStop BGM_MAP_64 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaPut V 2500,2500]
+[charaFadeout A 0.1]
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_KYOSU_1 0.1]
+
+[charaPut V 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+サーチの結果、あの穴の中は[r]ほとんど異空間に近い構成だけど、
+[k]
+
+＠ダ・ヴィンチ
+一応は物理的な穴でもあるとわかった。
+[k]
+
+[charaFace A 1]
+
+＠ダ・ヴィンチ
+内部は凄く急角度な、[r]チョコの滝みたいになってると考えていい。
+[k]
+
+＠ダ・ヴィンチ
+そして表面から数十メートル下の地点に[r]聖杯の反応がある。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut V 2500,2500]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+地上からのサルベージは可能でしょうか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk A]
+[charaFace A 34]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+ここからでは三次元座標が確定できず、だいたいの[r]位置しかわからない。ちょっと無理そうだ。
+[k]
+
+[charaFace A 23]
+
+＠ダ・ヴィンチ
+つまり[line 3]まずは、実際に誰かが[r]穴の中に下りていく必要がある。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut V 2500,2500]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠アンドロメダ
+はいはーい！[r]あたし！　あたしやりまーす！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+いいのかい？　まぁ正直に言えば、今の装備で[r]遂行が可能そうなのはキミしかいないけれど。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut V 2500,2500]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠アンドロメダ
+ケトゥスに乗ってれば、滝みたいなチョコの[r]流れの上でも落ちずにいられると思うし。
+[k]
+
+[charaFace B 0]
+
+＠アンドロメダ
+フルパワーを出せば滝登りもできると思うから、[r]帰ってくるのも大丈夫！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠セミラミス
+自信はあるのだろうな、娘？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠アンドロメダ
+当然！　任せといてよ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk A]
+[charaFace A 34]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+危険ではあるんだけど……[r]実際、手はそれしかない気がする。
+[k]
+
+[charaFace A 22]
+
+＠ダ・ヴィンチ
+聖杯を中で回収できればそれでいいし、
+[k]
+
+＠ダ・ヴィンチ
+無理でも聖杯の位置にアンカーを[r]撃ち込んでもらえれば次の作戦が立てられる。
+[k]
+
+＠ダ・ヴィンチ
+お願いしていいかな。
+[k]
+
+[messageOff]
+[charaTalk A,B,D]
+[charaPut V 2500,2500]
+[charaDepth A 0]
+[charaDepth V 0]
+[charaDepth D 0]
+[charaDepth B 4]
+[charaScale B 1.2]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[charaFadein L 0.4 -40,-250]
+[wt 0.7]
+[charaFadeout A 0.1]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+[charaMoveReturn B 0,-10 0.5]
+[wt 1.3]
+
+[charaFadeout B 0.4]
+[charaFadeout L 0.4]
+[wt 0.4]
+[charaScale B 1.0]
+
+＠マシュ
+お手伝いができないのが心苦しいですが……[wt 1.0][charaFace D 6][r]せめて通信機を持っていってください。
+[k]
+
+＠マシュ
+管制官的なフォローはわたしも経験がありますので、[r]何か力になれることがあるかもしれません。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠アンドロメダ
+おっけー、ありがと！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+マスターからは何かございますか？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.7]
+
+？1：それじゃあ、一言だけ
+？！
+
+[messageOff]
+[se ad437]
+[bgm BGM_KYOSU_1 0.3 0.4]
+[fadeout white 0.3]
+[wait fade]
+
+[charaDepth T 5]
+[charaDepth U 4]
+
+[charaFadeout B 0.1]
+[pictureFrame cut063_cinema]
+[cameraFilter gray]
+[charaFadein T 0.1 -60,-250]
+[charaMove T -45,-250 2.5]
+[scene 207301]
+[wt 0.2]
+
+[fadein white 0.3]
+[wait fade]
+
+[wt 1.5]
+
+[se ad437]
+[fadeout white 0.3]
+[wait fade]
+
+[charaFadeout T 0.1]
+[charaFadein U 0.1 0,-230]
+[charaMove U 0,-250 2.5]
+[scene 207200]
+[wt 0.2]
+[fadein white 0.3]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout white 0.3]
+[wait fade]
+
+[pictureFrame]
+[cameraFilter normal]
+[charaFadeout U 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[scene 207601]
+[wt 0.2]
+
+[bgm BGM_KYOSU_1 0.3 0.7]
+[fadein white 0.3]
+[wait fade]
+[wt 0.7]
+
+？1：[#自己犠牲:じ こ ぎ せ い]は、やめてね
+？2：絶対に、帰ってきてね
+？！
+
+[charaFace B 11]
+[wt 1.5]
+[charaFace B 1]
+
+＠アンドロメダ
+……何かを視たのかな。仮とはいえラインが[r]繋がってたらそういうこともあるのかもだね。
+[k]
+
+[charaFace B 5]
+
+＠アンドロメダ
+ええと、とにかく、違うよ。
+[k]
+
+＠アンドロメダ
+あのときだって、死ぬつもりはなかったんだ。[r]それは本当。
+[k]
+
+[charaFace B 1]
+
+＠アンドロメダ
+信じてくれるかどうかはわかんないけど……
+[k]
+
+＠アンドロメダ
+あたしは、戦おうとしてたんだ。[r]戦い、たかったんだ。[wt 1.4][charaFace B 4]
+[k]
+
+[messageOff]
+[charaFace B 1]
+[wt 0.7]
+
+？1：……わかった
+？2：とにかく、気をつけてね
+？！
+
+[messageOff]
+[charaFace B 5]
+[charaMoveReturn B 0,-10 0.5]
+[wt 1.2]
+
+[bgmStop BGM_KYOSU_1 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout B 0.1]
+
+[subCameraOn 3]
+[charaLayer G sub #A]
+[charaLayer M sub #A]
+[charaLayer Q sub #A]
+[charaLayer H sub #B]
+[charaLayer L sub #B]
+[charaLayer F sub #B]
+[charaLayer O sub #C]
+[charaDepth G 3]
+[charaDepth M 2]
+[charaDepth Q 1]
+[charaDepth H 2]
+[charaDepth L 1]
+[charaDepth F 2]
+[charaDepth O 1]
+[charaScale G 1.4]
+[charaScale M 1.4]
+[charaScale Q 1.4]
+[charaScale H 1.2]
+[charaScale L 1.2]
+[charaScale F 1.2]
+[charaScale O 1.2]
+[subCameraFilter #A maskEdge cut359_mask07 4 108,53,36,255]
+[subCameraFilter #B maskEdge cut359_mask05 4 0,0,0,255]
+[subCameraFilter #C maskEdge cut359_mask12 4 255,255,255,255]
+
+[charaFace G 1]
+[charaFadein G 0.1 0,200]
+[charaFadein Q 0.1 0,0]
+[charaFadein H 0.1 -85,200]
+[charaFadein L 0.1 0,0]
+
+[charaFadein O 0.1 0,0]
+
+[wt 1.5]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_58 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アンドロメダ
+よーし、準備オッケー！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+最終確認だ。繰り返しになるけど、[r]これは調査第一弾。無理はしなくていい。
+[k]
+
+＠ダ・ヴィンチ
+何か危険を感じたら[r]すぐに戻ってきてくれて大丈夫だからね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut V 2500,2500]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠アンドロメダ
+りょうかいりょうかい～。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠セミラミス
+軽いな……。
+[k]
+
+[charaFace E 0]
+
+＠セミラミス
+ま、何があろうと死ぬのは我ではない。[r]我にできるのは、いざという時、
+[k]
+
+＠セミラミス
+せめて貴様が苦しまぬように[r]毒を投げ入れてやることくらいだ。
+[k]
+
+[charaFace E 12]
+
+＠セミラミス
+安心して行ってくるとよいぞ、娘。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠アンドロメダ
+相変わらずだなあ、女帝さま。[r]やっぱりお母さまとは少し違うかも。
+[k]
+
+[charaFace B 3]
+
+＠アンドロメダ
+とにかく[line 3][r]それじゃあ、行ってきます！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マシュ
+はい。お気をつけて！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad775]
+[charaTalk G]
+[charaFace G 2]
+[subRenderFadein #A 0.4 200,-120]
+[subRenderMoveEase #A 200,-180 0.4 easeOutBack]
+[wt 0.7]
+
+＠G：アンドロメダ
+ケトゥス、ごー！
+[k]
+
+[messageOff]
+
+[cueSe SE_24 24_ade1000]
+[wt 1.0]
+[cueSe SE_24 24_ade989]
+[cueSeStop 24_ade1000 0.5]
+[cueSe SE_23 23_ade871 0]
+[seVolume 23_ade871 1.4 1.0]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+[subRenderFadeout #A 0.1]
+[scene 208300]
+
+[charaScale W 1.1]
+[charaFadein W 0.1 0,-200]
+
+[wt 0.5]
+[charaMoveScale W 1.2 3.2]
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+
+
+[charaFace G 1]
+[wt 2.4]
+
+[subRenderFadein #A 0.2 200,-180]
+[wt 0.7]
+[seStop 23_ade871 1.5]
+
+＠G：アンドロメダ
+ケトゥスに乗ってチョコ川を進んでまーす！[r]もうすぐ穴に到達！
+[k]
+
+[messageOff]
+[charaTalk H]
+[charaFace H 6]
+[subRenderFadeinFSL #B 0.4 -250,-120]
+[subRenderMoveEaseFSL #B -250,-180 0.4 easeOutCubic]
+[wt 0.4]
+
+＠H：マシュ
+了解です。[r]最大限の警戒をしながら進んでください！
+[k]
+
+[messageOff]
+[charaMoveScale W 1.25 4.0]
+[charaShake W 0.03 1 1 0]
+[charaShake Q 0.03 3 3 0]
+[cueSe SE_23 23_ade871 0]
+[seVolume 23_ade871 0.7 0.7]
+[subRenderFadeout #B 0.4]
+[subRenderFadeout #A 0.4]
+[wt 1.4]
+[charaFadeout H 0.1]
+[charaFadein F 0.1 0,150]
+[charaFace G 0]
+[charaFadein M 1.5 0,0]
+[wt 2.5]
+[charaFadeout Q 0.1]
+
+[charaShakeStop W]
+[charaShakeStop Q]
+[seVolume 23_ade871 1.0 0.4]
+[charaTalk G]
+
+[subRenderFadein #A 0.4 200,-180]
+[wt 0.4]
+
+＠G：アンドロメダ
+オッケー。……着いた！
+[k]
+
+[charaFace G 8]
+
+＠G：アンドロメダ
+さあ、こっからが本番だね。
+[k]
+
+[charaFace G 2]
+
+＠G：アンドロメダ
+ケトゥス、滝に流されないように、[r]ゆっくりと下りていって！
+[k]
+
+[messageOff]
+[charaMoveScale W 1.3 3.0]
+[subRenderFadeout #A 0.4]
+[se ad746 0]
+[seVolume ad746 0.4 1.0]
+[seVolume 23_ade871 0.4 1.0]
+[wt 0.4]
+[seStop ad746 2.5]
+[seStop 23_ade871 2.5]
+[wt 1.2]
+
+[charaTalk F]
+[charaFace F 5]
+[subRenderFadeinFSL #B 0.4 -250,-180]
+[wt 0.4]
+
+＠F：カロン
+頼んだぜ、嬢ちゃん……。
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_58 2.0]
+[fadeout black 1.5]
+[wait fade]
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[charaFadeout G 0.1]
+[charaFadeout M 0.1]
+[charaFadeout H 0.1]
+[charaFadeout L 0.1]
+[charaFadeout F 0.1]
+[charaFadeout O 0.1]
+[charaFadeout W 0.1]
+[wt 0.5]
+[scene 10000]
+[charaLayer G normal]
+[charaLayer M normal]
+[charaLayer H normal]
+[charaLayer L normal]
+[charaLayer F normal]
+[charaLayer O normal]
+[charaScale B 1.0]
+[charaScale D 1.0]
+[charaScale C 1.0]
+[charaSet D 1098257930 1 マシュ]
+[charaEffectDestroy V bit_talk_10_LowLevel]
+[wt 0.5]
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[charaPut V 1]
+[charaEffect V bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_38 0.1]
+
+＠マシュ
+大丈夫ですか、アンドロメダさん？[r]通信機は動いていますか？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+[charaDepth D 2]
+[charaDepth V 4]
+[charaDepth A 3]
+[charaDepth B 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+
+
+＠アンドロメダ
+うん、感度は良好！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 0,0]
+
+＠ダ・ヴィンチ
+周囲はどんな感じ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠アンドロメダ
+とにかく暗いし、チョコ臭しかしないね～。[r]自分がチョコになったみたい。
+[k]
+
+[charaFace B 1]
+
+＠アンドロメダ
+よし、ちょっとは目が慣れてきたかな。
+[k]
+
+＠アンドロメダ
+教えてもらった、聖杯がありそうな[r]だいたいの方向に行ってみる。
+[k]
+
+＠アンドロメダ
+宙に浮いてるのかチョコに埋まってるのかは[r]わかんないけど、ま、行けばなんとか[line 3]
+[k]
+
+[messageOff]
+
+[charaFace B 24]
+
+＠アンドロメダ
+……ん？
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠マシュ
+どうかなさいましたか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut V 2500,2500]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+
+＠アンドロメダ
+いや、何だろ。視界に違和感っていうか。[r]まぁあんまり見えてもいないんだけど。
+[k]
+
+＠アンドロメダ
+周りのチョコの滝の流れが、[r]何か変だったような[line 3]
+[k]
+
+[charaFace B 12]
+
+[bgmStop BGM_EVENT_38 1.5]
+＠アンドロメダ
+！！！！
+[k]
+
+
+[messageOff]
+
+[se ad983 0]
+[seVolume ad983 0.4 0.5]
+[se adm11]
+[blur motion 1.0 4 100 0.5 0.7 0.03 100]
+[cameraMoveEase 0,-30 1.0 easeOutQuart 1.2]
+
+[wipeout moya 1.0 1]
+[wt 0.5]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+[wipein moya 0.1 1]
+[wait wipe]
+[wt 0.3]
+[charaFadeout B 0.1]
+[blurOff motion 0.1]
+[cameraHome 0.1]
+[charaSet D 1098257910 1 マシュ]
+[sceneSet L 207602 1]
+[charaScale L 1.2]
+[sceneSet O 207602 1]
+[charaScale O 1.2]
+[subCameraOn 2]
+[charaLayer H sub #B]
+[charaLayer I sub #B]
+[charaLayer L sub #B]
+[charaLayer C sub #A]
+[charaLayer O sub #A]
+[charaDepth H 2]
+[charaDepth I 2]
+[charaDepth L 1]
+[charaDepth C 2]
+[charaDepth O 1]
+[charaScale H 1.2]
+[charaScale I 1.2]
+[charaScale L 1.2]
+[charaScale C 1.2]
+[charaScale O 1.2]
+[subCameraFilter #A maskEdge cut359_mask15 4 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask16 4 255,255,255,255]
+[scene 207601]
+[wt 0.3]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.2]
+[fadein black 1.0]
+[wait fade]
+
+＠アンドロメダ
+なに、これ、チョコが、動いてっ……[r][line 3]きゃ、あ[line 3]！
+[k]
+
+[charaTalk D]
+[charaFace D 28]
+[charaFadein D 0.1 1]
+
+＠マシュ
+アンドロメダさん！[r]アンドロメダさーん！？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad31]
+[wt 1.5]
+[seStop ad31 0.7]
+
+[charaPut V 1]
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+何かあった……みたいだね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut V 2500,2500]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠セミラミス
+どうやらこちらも、な。
+[k]
+
+[messageOff]
+[charaFadeout E 0.2]
+[shake 0.03 3 3 2.0]
+[se ade535 0]
+[seVolume ade535 0.2 0.3]
+[cueSe SE_23 23_ade871 0]
+[seVolume 23_ade871 1.4 0.3]
+[wt 1.5]
+
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[shake 0.05 1 1 0]
+[charaDepth S 1]
+[charaDepth R 2]
+[charaFadein R 0.1 0,-150]
+[charaScale S 1.3]
+[charaFadein S 0.1 0,-250]
+[scene 208301]
+[wt 0.3]
+[seStop ade535 2.0]
+[seVolume 23_ade871 0.4 0.6]
+[cueSe SE_22 22_ade720 0]
+[seVolume 22_ade720 0.4 0.6]
+[charaShake R 0.03 4 3 4.0]
+[charaMove R 0,-300 5.0]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[bgm BGM_BATTLE_78 0.1]
+
+[wt 3.0]
+[charaShake S 0.03 4 3 3.5]
+[charaFadeout R 1.0]
+[charaMoveScale S 1.1 3.5]
+[charaMove S 0,-200 3.5]
+[wt 3.5]
+
+？1：大穴から、チョコが……！
+？2：まるで生き物みたいに！
+？！
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadeinFSL C 0.1 80,180]
+[charaFadein O 0.1 80,-70]
+
+[subRenderFadein #A 0.3 -495,-180]
+[wt 0.3]
+
+＠カロン
+俺たちがあれを塞ごうとしているのを[r]察知しやがったんだろう。
+[k]
+
+＠カロン
+あそこに流れ込んだチョコに[r]聖杯の力でさらに強く干渉して、
+[k]
+
+＠カロン
+手足として使ってる[line 3]って感じか。
+[k]
+
+[messageOff]
+[charaDepth H 5]
+[charaTalk H]
+[charaFace H 13]
+[charaFadeinFSR H 0.1 -180,170]
+[charaFadein L 0.1 -80,-70]
+
+[subRenderFadein #B 0.3 510,-180]
+[wt 0.3]
+
+＠H：マシュ
+つまり、あれは大穴の意思だと！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadeinFSR I 0.1 -110,170]
+
+＠I：セミラミス
+自己防衛本能、というやつか。
+[k]
+
+＠I：セミラミス
+穴にもあるとは驚きだが、[r]聖杯が絡んでいるのであれば不思議はあるまい。
+[k]
+
+[messageOff]
+[se ade535 0]
+[seVolume ade535 0.2 0.5]
+[shake 0.03 3 3 2.4]
+[wt 0.5]
+[seStop ade535 1.2]
+[wt 0.5]
+[scene 207602]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[charaFadeout S 0.3]
+[wt 0.3]
+[charaFadeout C 0.1]
+[charaFadeout O 0.1]
+[charaFadeout I 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaLayer C normal]
+[charaLayer O normal]
+[charaLayer H normal]
+[charaLayer I normal]
+[charaLayer L normal]
+[charaScale C 1.0]
+[charaScale H 1.0]
+[charaScale I 1.0]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 -40,0]
+[charaFadein O 0.4 80,-250]
+[seVolume 23_ade871 0.4 0.4]
+[seVolume 22_ade720 0.4 0.4]
+[wt 0.4]
+
+＠カロン
+クソッ！　俺はこの船が[r]転覆しねえようにするので精一杯だ！
+[k]
+
+＠カロン
+おまえらは[line 3]
+[k]
+
+[messageOff]
+[charaTalk C,D]
+[charaDepth D 5]
+[charaDepth L 4]
+[charaFace D 2]
+[charaFadein D 0.3 40,0]
+[charaFadein L 0.3 -80,-250]
+[wt 0.3]
+
+＠マシュ
+……“大穴”がチョコを操って襲ってきます！[r]マスター！
+[k]
+
+？1：全力で迎撃！
+？2：アンドロメダの帰ってくる場所を守る！
+？！
+
+
+[messageOff]
+[seStop 23_ade871 0.4]
+[cueSe SE_23 23_ade890]
+[seStop 23_ade890 0.4]
+[blur motion 0.5 4 100 0.5 0.5 0.03 100]
+[cameraMoveEase 0,-25 0.5 easeOutQuart 1.2]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_78 0.4]
+[seStop 22_ade720 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

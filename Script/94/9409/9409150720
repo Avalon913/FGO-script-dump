@@ -1,0 +1,223 @@
+
+
+＄94-09-15-07-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11018000 1 源頼光]
+[charaSet B 5054001 1 由井正雪]
+[charaSet C 1098284000 1 地右衛門]
+[charaSet D 1098284100 1 ジャンヌ]
+
+[charaSet H 98104300 1 ゴースト1]
+[charaSet I 98104300 1 ゴースト2]
+[charaSet J 98104300 1 ゴースト3]
+
+[imageSet K cut528_map01 1]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用2]
+
+
+[scene 205900]
+
+[pictureFrameTop cut063_cinema]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_181 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+
+＠源頼光
+[#主:あるじ]。カルデアに動きがありました。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠由井正雪
+うむ、今日は随分と大きく動く。[r]手勢を使って、探りを入れて来い。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+＠源頼光
+承知。
+[k]
+
+[messageOff]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect A erasureReverse 0,0 0.4]
+[wait charaSpecialEffect A]
+[wt 0.8]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_181 1.0 0.5]
+[wait fade]
+
+[scene 203200]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_181 1.0 1.0]
+[wait fade]
+
+[cueSe SE_21 21_ad1066]
+[wt 2.0]
+[cueSeStop 21_ad1066 0.4]
+[wt 1.0]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+
+＠地右衛門
+……毎度毎度、御苦労なこった。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠ジャンヌ
+打って出ますか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 0,-50]
+＠地右衛門
+……いや。
+[k]
+
+[charaFace C 5]
+＠地右衛門
+先に“種”を片付けておく。[r]今は連中に構っている気分じゃねえな。
+[k]
+
+[charaFace C 18]
+＠地右衛門
+だが……黙って見過ごすのも[r]それはそれで気に食わねえ。
+[k]
+
+[messageOff]
+[charaEffectEdgeBlur C 990033 990033 4 5]
+[wt 0.1]
+[se ad1009]
+[wt 1.1]
+[fowardEffect bit_talk_spell_r]
+[wt 2.2]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut C 2000,2500]
+[charaEffectEdgeBlurDestroy C]
+[fowardEffectDestroy bit_talk_spell_r]
+
+[charaTalk off]
+[charaDepth H 2]
+[charaDepth I 3]
+[charaDepth J 4]
+[charaDepth S 5]
+[charaDepth T 6]
+
+[se ad14]
+[seVolume ad14 0 0.3]
+[charaPut S 300,0]
+[charaPut T -300,0]
+[charaEffect S bit_talk_krm_aura]
+[charaEffect T bit_talk_krm_aura]
+[wt 1.1]
+
+[cueSe SE_24 24_ade964]
+
+[se ade472]
+[charaPutFSR H 300,-50]
+[charaPutFSL I -300,-50]
+[charaPut J 0,-50]
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaSpecialEffect H appearance 0,0 1.2]
+[charaSpecialEffect I appearance 0,0 1.2]
+[charaSpecialEffect J appearance 0,0 1.2]
+[seStop ad14 1.5]
+[wt 1.0]
+[charaEffectStop S bit_talk_krm_aura]
+[charaEffectStop T bit_talk_krm_aura]
+[wt 2.4]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaEffectDestroy S bit_talk_krm_aura]
+[charaEffectDestroy T bit_talk_krm_aura]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠地右衛門
+兵を差し向ける。[r]……嫌がらせくらいにはなるだろうさ。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgm BGM_EVENT_181 1.0 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[pictureFrameTop]
+
+[charaScale K 1.9]
+[charaFadein K 0.1 -290,190]
+[wt 1.5]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_181 1.0 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaMoveScaleEase K 2.2 1.5 easeInOutQuad]
+[charaMoveEase K -340,230 1.5 easeInOutQuad]
+[wt 1.5]
+
+[effect bit_talk_draw_circle01 20,0]
+[se ade174]
+[seStop ade174 0.7]
+[wt 2.2]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_181 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

@@ -1,0 +1,964 @@
+
+＄04-00-07-09-1-0
+
+
+
+
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[soundStopAll]
+
+[branchMaterial lblMaterial]
+
+[skip false]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[fowardEffect bit_queststart407]
+[wait fowardEffect]
+
+[fadeout black 0.5]
+[wait fade]
+[wt 1.0]
+
+[skip true]
+
+[branch lblConf]
+
+[label lblMaterial]
+
+[label lblConf]
+
+[charaSet A 1098330800 1 マシュ]
+[charaSet B 1098254400 1 デイビット]
+[charaSet C 1098254400 1 デイビット_演出用]
+
+[sceneSet D 274800 1]
+[sceneSet E 274800 1]
+
+[sceneSet F 277400 1]
+[sceneSet G 277401 1]
+[sceneSet H 277402 1]
+[sceneSet I 277403 1]
+
+[masterBranch _Male _Female]
+[label _Male]
+[sceneSet J 277500 1]
+[imageSet K back277500 1]
+[imageSet L back277500 1]
+[branch _branchEnd]
+
+[label _Female]
+[sceneSet J 277501 1]
+[imageSet K back277501 1]
+[imageSet L back277501 1]
+[branch _branchEnd]
+
+[label _branchEnd]
+
+[imageSet M back277400 1]
+[imageSet N back277401 1]
+[imageSet O back277402 1]
+
+[sceneSet P 277600 1]
+[sceneSet Q 277601 1]
+
+[imageSet R cut770_sb_at 1]
+[imageSet S cut770_sb_at 1]
+
+[charaSet Z 98115000 1 エフェクト用1]
+
+[cameraMove 0.1 0,0 1.01]
+
+[se ad951]
+[seVolume ad951 0 0]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth A 2]
+[charaDepth B 3]
+[charaDepth D 4]
+[charaDepth C 5]
+[charaDepth F 6]
+[charaDepth G 7]
+[charaDepth H 8]
+[charaDepth Z 9]
+[charaDepth J 10]
+
+[scene 274800]
+
+[wt 0.5]
+
+[seVolume ad951 1.0 0.2]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+
+
+？1：[line 3]はて？
+？！
+
+[messageOff]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.4 1]
+[wt 0.5]
+
+＠マシュ
+おや？
+[k]
+
+[messageOff]
+
+[seStop ad951 1.5]
+
+[charaScale D 1.4]
+[charaFadein D 0.5 0,-150]
+[wt 0.85]
+
+[se ad95]
+[charaScale C 1.3]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,230]
+[wt 0.4]
+[seStop ad95 0.2]
+[wt 0.7]
+
+[charaMoveEase C 0,-10 1.2 easeInOutSine]
+[charaMoveEase D 0,-390 1.2 easeInOutSine]
+[wt 1.85]
+
+[bgm BGM_EVENT_248 0.1]
+
+＠C：デイビット
+やあ。
+[k]
+
+？1：デイビット！？
+？！
+
+[messageOff]
+[charaTalk A,C]
+[charaFace A 24]
+[charaFadeout D 0.5]
+[charaFadeout C 0.5]
+[wt 0.6]
+
+＠マシュ
+デイビットさん！？[r]なぜ、いえ、どうしてここに！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠デイビット
+……両者とも意外な反応だな。[r]オレがいる事は[#了解:りょうかい]済みだと思ったが。
+[k]
+
+＠デイビット
+シャドウ・ボーダーに信号を送るために[r]ここにいた訳だが[line 3]
+[k]
+
+[charaFace B 8]
+
+＠デイビット
+重ねて言うが意外な反応だ。[r]人付き合いに[#疎:うと]いオレでも傷つきかねない。
+[k]
+
+？1：あ、いや、そうじゃなくて
+？2：いや誰だって驚くよ！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……そうでした。助けていただいたのに[r]失礼な反応をしてしまい、申し訳ありません。
+[k]
+
+[charaFace A 8]
+
+＠マシュ
+ですがあまりにも突然すぎて、[r]先輩とわたしが驚くのも無理はないというか……
+[k]
+
+＠マシュ
+経緯・場所・動機、まとめてまるっと[r]説明していただけると助かるのですが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠デイビット
+そういうものか。[r]必要というのなら簡潔に済まそう。
+[k]
+
+＠デイビット
+オレは白紙化地球上で、[r]テスカトリポカの冥界から戻ってきた。
+[k]
+
+＠デイビット
+つまり生者だ。おまえたちの後を追って[r]空想樹との戦いに参加しても良かったが、
+[k]
+
+＠デイビット
+最終的におまえたちには道しるべが必要だと考え、[r]地球に残った。
+[k]
+
+＠デイビット
+宇宙の果てにいるおまえたちに信号を送る為だ。[r]秘密だが、そういう場所とオレは交信できる。
+[k]
+
+？1：……（ミクトランでの戦いで知ってますよ……）
+？2：……（とは言いづらい雰囲気……）
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+では、やっぱりあの光は[r]デイビットさんだったのですね！
+[k]
+
+＠マシュ
+ありがとうございました！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠デイビット
+楽な役割だ。礼はテスカトリポカに言ってやれ。[r]ミクトランパの待遇はどうかと思うほど快適だった。
+[k]
+
+[charaFace B 0]
+
+＠デイビット
+経緯と動機はこれでいいな。[r]あとは場所か。
+[k]
+
+[messageOff]
+[charaFadein D 0.6 -100,-300]
+[charaMove D 100,-300 30.0]
+[wt 1.2]
+[charaScale E 1.01]
+[charaFadein E 0.1 0,-200]
+
+＠デイビット
+ここは最後の境界だ。[r]ゴルドルフたちとダ・ヴィンチはもう通り抜けた。
+[k]
+
+＠デイビット
+この向こうがおまえたちの世界だ。[r]危険はないが、入ればどうなるかは言うまでもない。
+[k]
+
+＠デイビット
+カルデアでの記憶は消える。[r]オレたちが名前を言い合えるのはこれが最後だ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.5]
+[wt 1.0]
+
+？1：…………。
+
+？！
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠マシュ
+…………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠デイビット
+気持ちは分かる。[r]オレもなかなか踏ん切りがつかなかった。
+[k]
+
+＠デイビット
+だがもうじき５分だ。先に行かせてもらう。[r]記憶できるうちに通り抜けたい。
+[k]
+
+
+[messageOff]
+[se ad95]
+[seStop ad95 1.0]
+[charaFadeout B 0.4]
+[wt 1.2]
+
+[cueSe SE_25 25_ade1158]
+[wt 0.05]
+[charaMoveScale E 1.05 0.4]
+[charaMove E 0,-220 0.4]
+[wt 0.2]
+[cueSeStop 25_ade1158 0.2]
+[wt 0.4]
+
+[charaSet B 1098124350 1 デイビット]
+[charaDepth B 3]
+[wt 0.2]
+
+？1：まっ[line 3]
+？2：…………（そんな……あっさり……）
+？！
+
+[messageOff]
+
+[se ad95]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+[seStop ad95 0.2]
+[wt 0.5]
+
+＠デイビット
+[%1]。キリエライト。
+[k]
+
+＠デイビット
+この話は以前にしているか記憶していない。[r]なのでここで話しておく。
+[k]
+
+＠デイビット
+オレは一日のうち５分[#分:ぶん]の出来事しか記憶できない。[r]そのかわり記憶したものは砂の一粒すら忘れない。
+[k]
+
+＠デイビット
+ある事件からそういう体質になったんだ。[r]ハイパーサイメシアと言えば分かるか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい。超記憶症候群とも言われています。
+[k]
+
+＠マシュ
+Ａチームにいた時に[r]気がつかなくて申し訳ありませんでした……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠デイビット
+そうじゃない。[r]オレが言いたいのは、つまり[line 3]
+[k]
+
+[charaFace B 8]
+
+＠デイビット
+オレにとって過去はあまりに短い。[r]次の瞬間には自分が『無かった事』になる感覚だ。
+[k]
+
+？1：それは……
+？2：いまの自分たちと同じ……
+？！
+
+[messageOff]
+[se ad951]
+[seVolume ad951 0 0]
+[fadeout white 0.6]
+[seVolume ad951 0.8 0.2]
+[wait fade]
+
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+
+＠デイビット
+すべては砂のようだった。[r]だが、それが無意味であった事はない。
+[k]
+
+＠デイビット
+オレの最小の一日は、どれもが輝かしいものだった。
+[k]
+
+
+＠デイビット
+時計塔にある、ある研究室の床に焼き付いた影の話を[r]知っているか。
+[k]
+
+＠デイビット
+その影は人間だったものの記録であり、[r]学院長[#曰:いわ]く、『宇宙が終わっても消えない』のだそうだ。
+[k]
+
+
+＠デイビット
+それとオレの体質は同じものだ。[r][#オレの記憶した５分間は]、[#何があろうと残り続ける]。
+[k]
+
+[bgmStop BGM_EVENT_248 2.0]
+[seStop ad951 2.0]
+
+＠デイビット
+つまり。
+[k]
+
+
+
+[messageOff]
+
+[charaDepth M 5]
+[charaScale M 4.5]
+[charaFadein M 0.1 725,-1875]
+[wt 0.5]
+
+[charaMoveScaleEase M 3.4 7.0 easeOutSine]
+[charaMoveEase M 675,-1350 7.0 easeOutSine]
+[wt 0.6]
+
+
+[fadein white 2.5]
+[wt 0.3]
+[bgm BGM_EVENT_254 1.0]
+
+[wait fade]
+[wt 0.5]
+
+[charaDepth F 4]
+[charaScale F 1.1]
+[charaFadein F 0.1 0,-265]
+[wt 1.0]
+
+[charaMoveScaleEase F 1.03 4.0 easeOutSine]
+[charaMoveEase F 0,-235 4.0 easeOutSine]
+[wt 0.2]
+
+[charaFadeout M 2.0]
+[wt 2.2]
+
+＠デイビット
+本当に、[#些細:ビ ッ ト]な事柄しか残らないが。[r]オレが、おまえたちの旅を覚えている。
+[k]
+
+＠デイビット
+誰に語る事はないとしても。[r]このグランドオーダーを、覚えている。
+[k]
+
+＠マシュ
+[line 6]。
+[k]
+
+＠デイビット
+気休めかもしれないが、何もかもが無くなる訳じゃない。
+[k]
+
+＠デイビット
+それだけは伝えておくべきだと感じた。[r]待っていたのはそれが理由だ。
+[k]
+
+？1：[line 3]そうか[line 3]そうなんだ[line 3]
+？2：ありがとう。デイビット・ゼム・ヴォイド
+？！
+
+[messageOff]
+[charaDepth G 5]
+[charaScale G 1.03]
+[charaFadein G 1.2 0,-235]
+[wt 1.4]
+
+[charaDepth N 6]
+[charaScale N 2.9]
+[charaFadein N 1.5 675,-1115]
+[charaMoveEase N 490,-1115 30.0 easeOutSine]
+[wt 1.9]
+
+＠デイビット
+礼を言うのはオレの方だ。[r]ゼム・ヴォイドというのは伝承科に行ってからの名前でね。
+[k]
+
+＠デイビット
+旧名はブルーブックと言う。
+[k]
+
+＠デイビット
+カルデアスによるシミュレーションだったが、[r]オレも人理焼却を解決した。
+[k]
+
+＠デイビット
+タイムはそちらより七ヶ月速い。[r]だがオレではカルデアの人間は誰も生き残れなかった。
+[k]
+
+＠デイビット
+キリシュタリアも同じだったろう。[r]解決はできても誰かが犠牲になっていた。
+[k]
+
+＠デイビット
+それは今回も同じだ。失った者はいるが、[r]真の意味で救えなかった者はいない。
+[k]
+
+＠デイビット
+何の見返りも、何の強制もないというのに、[r]人を助け、人を信じた。
+[k]
+
+＠デイビット
+[%1]。キリエライト。[r]君たちを尊敬している。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout N 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+
+[charaScale O 5.9]
+[charaRoll O 345]
+
+[charaFadein O 0.1 180,-2475]
+
+[wt 1.0]
+
+[charaMoveEase O 80,-2475 2.0 easeInOutSine]
+
+[cueSe SE_24 24_ade1008]
+[fadein black 0.4]
+[wait fade]
+
+[wt 1.0]
+
+[cueSeStop 24_ade1008 0.7]
+
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout O 0.1]
+[scene 10000]
+[wt 0.2]
+
+[fadein black 0.2]
+[wait fade]
+
+[charaScale O 4.15]
+[charaRoll O 0]
+[wt 0.4]
+
+＠デイビット
+人間は善を成そうとする生き物[line 3][wt 1.3][fadeout white 0.4][wait fade][charaFadein O 0 800,-1605][wt 0.2][charaMoveScaleEase O 4.0 3.5 easeOutSine][charaMoveEase O 825,-1565 3.5 easeOutSine][fadein white 1.0][wait fade][wt 1.0][r]父さんの言葉を守ってくれて、[wt 1.0]ありがとう。[wt 0.5]
+[k]
+
+
+[messageOff]
+
+[charaDepth O 2]
+[charaDepth N 3]
+
+[charaScale N 4.0]
+[charaRoll N 0]
+
+[charaFadein N 0.8 825,-1565]
+[wt 0.8]
+
+[charaFadeout O 0.1]
+[wt 0.8]
+
+[charaDepth G 2]
+[charaDepth I 1]
+
+[charaScale G 1.07]
+[charaScale I 1.07]
+
+[charaFadein G 0.5 0,-245]
+[charaFadein I 0.5 0,-245]
+
+[charaMoveScaleEase G 1.02 7.0 easeOutSine]
+[charaMoveScaleEase I 1.02 7.0 easeOutSine]
+[charaMoveEase G 0,-230 7.0 easeOutSine]
+[charaMoveEase I 0,-230 7.0 easeOutSine]
+
+[charaFadeout N 0.6]
+[wt 1.7]
+
+[se ade406]
+[charaFadeout G 1.5]
+[wt 1.3]
+
+
+[fadeout white 3.7]
+[wt 0.7]
+[se ad732]
+[wait fade]
+
+[charaFadeout I 0.1]
+
+[scene 10001]
+[wt 4.0]
+
+[scene 274800]
+
+
+[cueSe SE_21 21_ade588]
+[cueSeVolume 21_ade588 0 0]
+
+[charaPut Z 1]
+[charaEffect Z bit_talk_down_stardust_yl]
+
+？1：[line 3]行っちゃったね
+？！
+
+[cueSeVolume 21_ade588 1.0 0.05]
+[fadein white 1.0]
+[wait fade]
+
+
+＠マシュ
+はい。[wt 0.4]行ってしまわれました。
+[k]
+
+？1：もう[&オレ:わたし]たちだけだね
+？！
+
+＠マシュ
+はい。[wt 0.4]もうわたしたちだけです。
+[k]
+
+？1：[line 3]なんかもう、胸がいっぱいで
+？！
+
+＠マシュ
+はい。[wt 0.4]嬉しくて、誇らしくて、[wt 1.0][r]でもちょっとだけ寂しくて、いっぱいです。
+[k]
+
+？1：[line 3]一緒にゴールするだけで、いいんだなって
+？！
+
+＠マシュ
+[line 3]はい。[wt 0.4]はい[line 3]
+[k]
+
+＠マシュ
+思い描いていたゴールとは[r]ちょっと違ってしまいましたが。
+[k]
+
+＠マシュ
+ハッピーエンドなのは変わりません。
+[k]
+
+＠マシュ
+あ。[wt 0.4]でもひとつ[#お願い:オ ー ダ ー]が。[wt 0.8][r]最後は手を握っていて、いいですか？
+[k]
+
+？1：[line 3]うん。こちらこそ
+？！
+
+
+[messageOff]
+[wt 0.9]
+
+[cueSeStop 21_ade588 1.0]
+
+[fadeout white 0.8]
+[wt 0.5]
+[cueSe SE_24 24_ad1351]
+[wt 0.01]
+[cueSe SE_24 24_ade1016]
+[seVolume 24_ade1016 0 0.3]
+
+[seStop ad192 0.5]
+[cueSeStop 24_ad1351 0.5]
+[wait fade]
+
+[charaPut Z 2000,2500]
+[charaEffect Z bit_talk_down_stardust_yl]
+
+[scene 274801]
+
+[charaDepth K 5]
+[charaDepth L 4]
+
+[masterBranch _Male2 _Female2]
+
+[label _Male2]
+
+[charaScale K 6.0]
+
+[charaFadein K 0.1 -70,-1650]
+[wt 0.1]
+
+[charaMoveScaleEase K 5.5 4.0 easeOutQuad]
+[charaMoveEase K -70,-1515 4.0 easeOutQuad]
+
+[branch _branchEnd2]
+
+[label _Female2]
+
+[charaScale K 6.0]
+
+[charaFadein K 0.1 -70,-1615]
+[wt 0.1]
+
+[charaMoveScaleEase K 5.5 4.0 easeOutQuad]
+[charaMoveEase K -70,-1480 4.0 easeOutQuad]
+
+[branch _branchEnd2]
+
+[label _branchEnd2]
+
+[fadein white 1.2]
+[wait fade]
+[wt 0.5]
+
+[charaScale L 3.3]
+[charaFadein L 0.1 -50,-925]
+[wt 0.9]
+
+[charaMoveScaleEase L 2.7 20.0 easeOutQuad]
+[charaMoveEase L -50,-970 20.0 easeOutQuad]
+
+[charaFadeout K 1.8]
+[wt 3.2]
+
+＠
+この壁の向こうに未来がある。[wt 0.7][r]もう何の障害も、何の選択もない。
+[k]
+
+＠
+多くの出逢い。多くの別れ。[wt 0.7][r]たくさんの喜びと、たくさんの悲しみ。
+[k]
+
+＠
+そのすべてを失う事が恐いと思う自分と、
+[k]
+
+＠
+そのすべてがここまで連れてきてくれたと[r]嬉しくなる自分がいる。
+[k]
+
+＠
+いま、自分はこんな遠いところまで来た。[wt 0.85][r]なら次も同じように遠くまで行けるはずだ。
+[k]
+
+[messageOff]
+
+[charaDepth J 3]
+
+[charaScale J 1.3]
+
+[charaFadein J 0.1 -37,-330]
+
+[wt 0.4]
+
+
+[charaMoveScaleEase J 1.15 12.0 easeOutSine]
+[charaMoveEase J -37,-280 12.0 easeOutSine]
+
+[charaFadeout L 2.0]
+[wt 2.4]
+
+＠
+どこまでも広がる青空を思い出す。[wt 0.95][r]あの日と同じ、[wt 0.65]未知を信じる気持ちを思い出す。
+[k]
+
+＠
+あの日と同じ、[wt 0.65]握った手の感触がある。
+[k]
+
+[messageOff]
+[wt 0.8]
+
+[fadeout white 0.8]
+[wait fade]
+
+[charaFadeout J 0.1]
+
+[scene 277600]
+[wt 2.0]
+
+＠[%1]
+じゃあ行こうか。[wt 1.0][r]もう誰でもない、勇敢なきみ。
+[k]
+
+[messageOff]
+[wt 0.8]
+
+[charaScale P 1.07]
+[charaFadein P 0.1 0,-210]
+
+[charaMoveScaleEase P 1.0 3.5 easeOutSine]
+[charaMoveEase P 0,-195 3.5 easeOutSine]
+
+[fadein white 1.0]
+[wait fade]
+[wt 2.5]
+
+＠マシュ
+はい。[wt 0.65]もう出会う事のない、[wt 0.95][r]わたしの一番大切な[%1]。
+[k]
+
+
+[messageOff]
+[wt 1.2]
+
+[charaDepth P 2]
+[charaDepth Q 3]
+
+[charaScale Q 1.0]
+[charaFadein Q 1.5 0,-195]
+[wt 2.5]
+
+[charaMoveScale Q 0.95 8.0]
+[charaMove Q 0,-185 8.0]
+
+[fadeout white 3.0]
+[bgmStop BGM_EVENT_254 3.0]
+[wt 0.5]
+[cueSe SE_24 24_ad1397]
+[cueSeVolume 24_ad1397 0 0.4]
+[wt 0.15]
+[cueSeContinue SE_21 21_ade665 0 0.4 1]
+[wait fade]
+
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+
+[cueSeStop 24_ad1397 1.4]
+[cueSeContinueStop 21_ade665 1.4 1]
+
+[scene 10001]
+[cameraMove 0.1 0,0 1.01]
+[wt 4.0]
+
+[criMovie talk_mov376 bgmPlay false]
+
+[wt 0.45]
+
+[fadein white 1.2]
+[bgm BGM_EVENT_45 1.5]
+[wait fade]
+
+[wt 22.0]
+
+[fadeout white 0.2]
+[wait fade]
+
+
+[wt 2.0]
+
+[charaScale R 2.23]
+[charaFadein R 0.1 471,380]
+
+[charaMoveEase R 471,-85 8.0 easeOutSine]
+[fadein white 2.0]
+[wait fade]
+
+[wt 5.0]
+
+＠
+物語は終わった。
+[k]
+
+＠
+[&彼ら:彼女たち]の冒険は人類史から消失した。[r][&彼ら:彼女たち]の結末は風のように姿を消した。
+[k]
+
+＠
+けれど決して意味のないものではない。
+[k]
+
+＠
+多くの英雄、多くの歴史がそうであるように、[r]忘れ去られようとそのバトンは引き継がれていく。
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[charaDepth R 3]
+[charaDepth S 4]
+
+[charaScale S 2.23]
+[charaFadein S 2.5 471,-290]
+
+[charaMoveEase S 471,-805 12.0 easeOutSine]
+[wt 11.0]
+
+＠
+今は知る者のいない、星見の旅の記録。
+[k]
+
+＠
+[line 3]いつかまた、その続きがある事を願って。
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[fadeout white 4.5]
+[bgmStop BGM_EVENT_45 4.5]
+[wait fade]
+
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+
+[cameraMove 0.1 0,0 1.0]
+[scene 10000]
+[wt 2.0]
+
+[fadein white 4.5]
+[wait fade]
+
+
+
+
+
+
+
+
+
+
+
+
+
+[wt 1.0]
+[soundStopAll]
+[end]

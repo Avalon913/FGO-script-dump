@@ -1,0 +1,737 @@
+
+
+＄94-14-15-05-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1038000 1 謎の富豪]
+[charaSet B 7046000 1 謎の不動産業者]
+[charaSet C 2023001 1 謎のアラフィフ]
+[charaSet D 28010001 1 ダンテ]
+[charaSet E 1038000 1 イアソン（翻訳）]
+[charaSet F 7046000 1 ドゥリーヨダナ（翻訳）]
+[charaSet G 2023001 1 モリアーティ（翻訳）]
+
+[sceneSet K 10000 1 1]
+[charaScale K 1.1]
+
+[cameraMove 0 0,0 1.01]
+
+[charaDepth A 3]
+[charaDepth B 5]
+[charaDepth C 7]
+
+[charaDepth F 9]
+[charaDepth G 9]
+[charaDepth E 9]
+
+[imageSet L cut171_token 1]
+[imageSet M cut171_token 1]
+[imageSet N cut171_token 1]
+[charaFilter L silhouette 00000080]
+[charaFilter M silhouette 00000080]
+[charaFilter N silhouette 00000080]
+
+[charaDepth L 2]
+[charaDepth M 2]
+[charaDepth N 2]
+
+[charaScale L 0.2]
+[charaScale M 0.2]
+[charaScale N 0.2]
+
+
+
+
+[sceneSet S 243100 1]
+[charaScale S 1.2]
+[sceneSet T 243100 1]
+[charaScale T 1.2]
+[sceneSet U 243100 1]
+[charaScale U 1.2]
+
+[imageSet V back10000 1 1]
+[charaScale V 1.01]
+[imageSet W back10000 1 1]
+[charaScale W 1.01]
+
+[charaSet X 98115000 1 通信エフェクト用1]
+[charaSet Y 98115000 1 通信エフェクト用2]
+[charaSet Z 98115000 1 通信エフェクト用3]
+
+[charaPut X 2000,2500]
+[charaEffect X bit_talk_10_LowLevel]
+[charaPut Y 2000,2500]
+[charaEffect Y bit_talk_10_LowLevel]
+[charaPut Z 2000,2500]
+[charaEffect Z bit_talk_10_LowLevel]
+
+[charaTalk depthOff]
+[charaDepth D 2]
+[charaDepth U 3]
+[charaDepth A 4]
+
+[scene 243100]
+
+[charaScale A 1.2]
+[charaScale U 1.2]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 0,0]
+[charaFadein U 0.1 0,-260]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[fadein black 0.5]
+[wait fade]
+[wt 0.1]
+
+＠謎の富豪
+えっ、コイツは土地全然持ってないし、[r]コイツはただのアラフィフ！？
+[k]
+
+[messageOff]
+[subCameraOn 3]
+[charaLayer B sub #A]
+[charaLayer S sub #A]
+
+[charaLayer C sub #B]
+[charaLayer T sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask10 5 255,255,255,255]
+
+[charaDepth S 1]
+[charaDepth B 3]
+[charaDepth T 1]
+[charaDepth C 2]
+
+[charaScale B 1.2]
+[charaScale S 1.2]
+[charaScale C 1.2]
+[charaScale T 1.2]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0 0,225]
+[charaFadein S 0 -200,0]
+
+[charaFace C 3]
+[charaFadein C 0 0,225]
+[charaFadein T 0 200,0]
+
+[subRenderFadeinFSR #A 0.3 425,-150]
+[subRenderMoveEaseFSR #A 375,-250 0.3 easeOutSine]
+[wt 0.4]
+
+＠謎の不動産業者
+えっ、こいつは金を今から調達する気で、[r]こいつはただの有害なオジサン！？
+[k]
+
+[messageOff]
+[charaTalk C]
+[subRenderFadeinFSL #B 0.3 -425,-150]
+[subRenderMoveEaseFSL #B -375,-250 0.3 easeOutSine]
+[wt 0.3]
+
+[charaFace D 10]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+＠謎のアラフィフ
+えっ、コイツら二人とも[#素寒貧:す か ん ぴ ん]なの！？
+[k]
+
+[charaTalk off]
+[charaFace B 5]
+[charaFace C 2]
+[charaFace A 2]
+
+＠三人
+[f large]バカじゃないの！？
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.5]
+[subRenderFadeout #B 0.5]
+[charaFadeout A 0.5]
+[charaFadeout U 0.5]
+[wt 0.5]
+[charaFadeout B 0]
+[charaFadeout C 0]
+[charaFadeout S 0]
+[charaFadeout T 0]
+[wt 0.15]
+[subCameraOff]
+[charaLayer B normal]
+[charaLayer C normal]
+[charaLayer S normal]
+[charaLayer T normal]
+[charaScale B 1.0]
+[charaScale C 1.0]
+[charaScale S 1.0]
+[charaScale T 1.0]
+
+[charaTalk on]
+[charaTalk D]
+＠ダンテ
+フフ……残念ながら……三人とも……バカです……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠謎の富豪
+お、おい。客に向かってバカとはなんだバカとは！
+[k]
+
+[messageOff]
+[charaDepth T 1]
+
+[charaDepth C 3]
+[charaDepth B 4]
+[charaDepth A 5]
+[charaDepth S 6]
+[charaDepth D 7]
+
+[charaScale D 1.2]
+[charaScale S 1.2]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.3 300,0]
+[charaFadein S 0.3 0,-260]
+[charaMoveEase D 200,0 0.5 easeOutSine]
+[charaMoveEase S -100,-260 0.5 easeOutSine]
+[wt 0.3]
+
+[charaScale A 0.8]
+[charaScale B 0.8]
+[charaScale C 0.8]
+[charaScale T 1.0]
+
+[charaPut A 0,-150]
+
+[charaFace A 16]
+[charaFace C 3]
+[charaFadein C 0.1 -300,-150]
+[charaFace B 18]
+[charaFadein B 0.1 300,-150]
+
+[charaFilter T silhouette FFFFFF80]
+[charaFadein T 0.1 0,-200]
+
+[wt 0.4]
+
+＠ダンテ
+……ホテルの宿泊代、あります……？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout D 0.6]
+[charaFadeout S 0.6]
+[wt 0.9]
+
+[charaFace L 0]
+[charaFadein L 0.4 -200,150]
+[wt 0.8]
+[charaFace M 0]
+[charaFadein M 0.4 0,150]
+[wt 0.8]
+[charaFace N 0]
+[charaFadein N 0.4 200,150]
+[wt 1.5]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 10]
+
+＠謎の富豪
+集合、ちょっと集合。
+[k]
+
+
+[messageOff]
+[charaDepth S 6]
+[charaDepth K 7]
+[charaDepth F 8]
+[charaDepth G 9]
+[charaDepth E 10]
+
+[bgm BGM_EVENT_7 1.0 0.5]
+
+[charaScale S 1.4]
+[charaScale E 1.4]
+[charaScale F 1.4]
+[charaScale G 1.4]
+
+[charaTalk E,A]
+[charaPut K 1]
+[charaFadeTime K 0.4 0.5]
+[charaFace E 10]
+[charaFace G 0]
+[charaFace F 11]
+[charaFadein E 0.6 -25,-20]
+[charaFadein G 0.6 -250,-10]
+[charaFadein F 0.6 250,-20]
+[charaFadein S 0.6 0,-320]
+[wt 0.6]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout T 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFilter T normal]
+[wt 0.25]
+
+[charaMoveReturn E -25,-13 0.35]
+＠E：謎の富豪
+……[#奢:おご]り……期待……[wt 0.3][charaMoveReturn E -25,-13 0.35]手持ち……[r]少ない……。
+[k]
+
+[charaTalk F]
+[charaFace F 13]
+[charaMoveReturn F 250,-13 0.35]
+＠F：謎の不動産業者
+寄生……[wt 0.4][charaMoveReturn F 250,-13 0.35]かく言うわし様も……[r]これだけしか……。
+[k]
+
+[charaTalk G]
+[charaFace G 1]
+[charaMoveReturn G -250,-3 0.35]
+＠G：謎のアラフィフ
+バカ二人……[wt 0.4][charaMoveReturn G -250,-3 0.35]ちなみに私は……[r]ざっと……このくらい……。
+[k]
+
+[charaTalk E,F]
+[charaFace E 21]
+[charaFace F 9]
+[charaMove E -25,-27 0.45]
+[charaMove F 250,-27 0.45]
+＠二人=spot[F,E]
+……バカ……[wt 0.95][charaFace E 10][charaFace F 13][charaMove E -25,-20 0.25][charaMove F 250,-20 0.25]でもどうする……。
+[k]
+
+[charaTalk E]
+[charaFace E 12]
+[charaMoveReturn E -25,-13 0.35]
+＠E：謎の富豪
+……脅迫……[wt 0.4][charaMoveReturn E -25,-13 0.35]威嚇……
+[k]
+
+[charaTalk F]
+[charaFace F 2]
+[charaMoveReturn F 250,-13 0.35]
+
+＠F：謎の不動産業者
+ハッタリ……[wt 0.4][charaMoveReturn F 250,-13 0.35]ギャンブル……
+[k]
+
+[charaTalk G]
+[charaFace G 0]
+[charaMoveReturn G -250,-3 0.35]
+
+＠G：謎のアラフィフ
+弱み……[wt 0.4][charaMoveReturn G -250,-3 0.35]マフィア……
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+[charaTalk off]
+[charaFace G 1]
+[charaFace F 7]
+[charaFace E 23]
+
+＠三人
+……これだ。
+[k]
+
+[messageOff]
+[charaFadeout E 0.5]
+[charaFadeout F 0.5]
+[charaFadeout G 0.5]
+[charaFadeout S 0.5]
+[charaFadeout K 0.5]
+[wt 0.75]
+
+[charaDepth K 3]
+[charaDepth A 4]
+[charaDepth B 4]
+[charaDepth C 4]
+
+[charaScale A 1.0]
+[charaScale B 1.0]
+[charaScale C 1.0]
+
+[cueSe SE_23 23_ade895]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[wt 0.4]
+[cueSeStop 23_ade895 0.2]
+[wt 0.6]
+
+＠謎の富豪
+コンシェルジュ……。[r]我々を許してほしい……。
+[k]
+
+[messageOff]
+[charaPut K 1]
+[charaFadeTime K 0.4 0.7]
+[charaFaceFade A 13 0.4]
+[wt 0.6]
+
+[bgm BGM_EVENT_146 0.1]
+
+＠A：イアソン（翻訳）
+泣き落としでどうにかするしかない。
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[charaFadeout K 0.2]
+[wt 0.3]
+
+[cueSe SE_23 23_ade895]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.4 0,0]
+[wt 0.4]
+[cueSeStop 23_ade895 0.2]
+[wt 0.6]
+
+＠謎の不動産業者
+致し方ないことだが……。[r]どうか……我々は……半人前……。
+[k]
+
+＠謎の不動産業者
+いや……三分の一人前でしかないのだ……。
+[k]
+
+[messageOff]
+[charaPut K 1]
+[charaFadeTime K 0.4 0.7]
+[charaFaceFade B 2 0.4]
+[wt 0.6]
+
+＠B：ドゥリーヨダナ（翻訳）
+三人で一人分にまけてくれ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.2]
+[charaFadeout K 0.2]
+[wt 0.3]
+
+[cueSe SE_23 23_ade895]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 1]
+[wt 0.4]
+[cueSeStop 23_ade895 0.2]
+[wt 0.6]
+
+＠謎のアラフィフ
+分不相応の身だが……このホテルを……[r]愛しているンだヨー……。
+[k]
+
+[messageOff]
+[charaPut K 1]
+[charaFadeTime K 0.4 0.7]
+[charaFaceFade C 5 0.4]
+[wt 0.6]
+
+＠C：モリアーティ（翻訳）
+宿泊させて♡
+[k]
+
+[messageOff]
+[charaFadeout C 0.2]
+[charaFadeout K 0.2]
+[wt 0.3]
+
+[charaScale D 1.0]
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+……フフ……まあ、いいでしょう……。[r]ただし……。
+[k]
+
+[charaFace D 4]
+
+＠ダンテ
+こちらにも一つ条件が……あります……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth C 2]
+[charaDepth B 3]
+[charaDepth A 4]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFace B 3]
+[charaFace C 4]
+[charaFadein A 0.1 1]
+[charaFadeinFSR B 0.1 350,0]
+[charaFadeinFSL C 0.1 -350,0]
+
+＠謎の富豪
+やれることなら、やるぜ！
+[k]
+
+[charaTalk B]
+
+＠謎の不動産業者
+損にならないことなら、やるとも！
+[k]
+
+[charaTalk C]
+
+＠謎のアラフィフ
+仕方ないから、一応やるヨ。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+……アラフィフさんはモチベーションアップして……。[r]私を通報者にさせないで……。
+[k]
+
+[charaFace D 1]
+
+＠ダンテ
+それはともかく、何をして欲しいのかというと[line 3]
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgmStop BGM_EVENT_146 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[bgm BGM_KAZURA_1 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠謎の富豪
+え、そんだけ？[r]……別に構わんが……いいのか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+いいです……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠謎の不動産業者
+わし様たちが行って……嬉しいのか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+……それは不明……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠謎のアラフィフ
+加齢臭とかあっても……いいの！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+……洗って……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠謎の富豪
+よし、それじゃあ俺たちも喜んで加わるぞ！[wt 0.9][charaFace A 7][r]それで泊まれるなら……なあ！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B,C]
+[charaFace B 0]
+[charaFadeinFSR B 0.1 2]
+[charaFace C 1]
+[charaFadeinFSL C 0.1 0]
+[wt 0.5]
+[charaMoveReturnFSR B 256,-9 0.5]
+[wt 0.15]
+[charaMoveReturnFSL C -256,-7 0.4]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+では、後はよろしく……。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_KAZURA_1 1.0 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[scene 183900]
+
+
+[charaSet A 1098184600 1 イアソン]
+[charaSet B 1098323900 1 ドゥリーヨダナ]
+[charaSet C 1098207200 1 モリアーティ]
+[wt 0.5]
+
+[charaTalk off]
+[charaDepth A 4]
+[charaDepth B 3]
+[charaDepth C 2]
+[charaDepth X 9]
+[charaDepth Y 9]
+[charaDepth Z 9]
+
+[charaPut X 0,0]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaPutFSL Y -350,0]
+[charaFace C 0]
+[charaFadeinFSL C 0.1 -350,0]
+
+[charaPutFSR Z 350,0]
+[charaFace B 0]
+[charaFadeinFSR B 0.1 350,0]
+[wt 0.5]
+
+[fadein black 1.0]
+[bgm BGM_KAZURA_1 1.0 1.0]
+[wait fade]
+[wt 0.5]
+
+？1：三人ともありがとー！
+？！
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 8]
+
+＠イアソン
+おう。しかしロクなもんじゃなかったな……。
+[k]
+
+[charaTalk B]
+[charaFace B 13]
+
+＠ドゥリーヨダナ
+全くだ。[wt 0.7][charaFace B 7]ところで一ついい話があるんだが。
+[k]
+
+[charaTalk C]
+[charaFace C 1]
+
+＠モリアーティ
+ははは、それ詐欺だよ。[r]私が広めたヤツだもん。
+[k]
+
+[charaFace C 2]
+
+＠モリアーティ
+じゃ、またネー！
+[k]
+
+[messageOff]
+[se ad562]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Y 2000,2500]
+[wt 0.7]
+
+[charaTalk A,B]
+[charaFace A 2]
+[charaFace B 5]
+[wt 1.4]
+
+[fadeout black 2.0]
+[bgmStop BGM_KAZURA_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,765 @@
+
+＄94-03-35-74-7-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1054000 1 ガレス]
+[charaSet B 1098246700 1 アネト号]
+[equipSet C 9808600 1 バレンタイン礼装]
+[charaSet D 1054000 1 ガレス]
+
+[charaDepth A 3]
+[charaDepth B 2]
+
+
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[label lblClear01a]
+[sceneSet E 105500 1]
+[sceneSet F 105500 1]
+[scene 105500]
+[branch lblConf01]
+
+[label lblClear01b]
+[sceneSet E 104200 1]
+[sceneSet F 104200 1]
+[scene 104200]
+[branch lblConf01]
+
+[label lblClear01c]
+[sceneSet E 132800 1]
+[sceneSet F 132800 1]
+[scene 132800]
+
+[label lblConf01]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+[cueSe SE_22 22_ade791]
+[cueSeVolume 22_ade791 0.0 0.0]
+[cueSeVolume 22_ade791 1.5 1.0]
+[wt 1.5]
+[cueSe Servants_404800 m49528]
+[cueSeVolume m49528 0.0 0.0]
+[cueSeVolume m49528 0.5 1.0]
+[wt 0.5]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 1.0 -180,0]
+[wt 0.5]
+
+[cueSeStop m49528 0.5]
+[cueSeStop 22_ade791 0.5]
+[wt 1.0]
+
+[charaMoveReturn B -180,10 0.3]
+
+＠アネト号
+バ[se ad316][messageShake 0.05 4 4 0.3]ウ！
+[k]
+
+[messageOff]
+[cameraMove 1.0 60,20 1.1]
+[wt 1.5]
+
+？1：お、アネト号！
+？2：ということは近くに……？
+
+？！
+
+[cameraMove 1.0 -50,-20 1.1]
+[wt 1.2]
+[cameraMove 1.0 50,-20 1.1]
+[wt 1.5]
+
+＠A：？？？
+[tVoice ValVoice_105400 0_V010]
+おーい！[r]アネト号ー！[wait tVoice]
+[k]
+
+＠A：？？？
+[tVoice ValVoice_105400 0_V020]
+って、あ[line 3]マスター？[wait tVoice]
+[k]
+
+[messageOff]
+
+[se ad59]
+[seVolume ad59 0.0 0.0]
+[seVolume ad59 1.0 1.0]
+[wt 0.5]
+
+[cameraHome 1.0]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 1]
+[wt 0.3]
+[charaFadein A 1.0 2]
+[seStop ad59 0.8]
+[wt 1.0]
+
+＠ガレス
+[tVoice ValVoice_105400 0_V030]
+やっぱりマスターでしたね。[r]こんにちは！[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠ガレス
+[tVoice ValVoice_105400 0_V040]
+うん、よく見つけてくれたねアネト号！[wait tVoice]
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+[charaMoveReturn B -180,10 0.1]
+
+＠アネト号
+バ[se ad317]ウ！　[wt 0.2]バウ！[charaMoveReturn B -180,10 0.1]
+[k]
+
+[charaFace A 0]
+
+＠ガレス
+[tVoice ValVoice_105400 0_V050]
+はいはい、いい子いい子。[r]よしよし。よしよーし。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMove A 200,0 0.5]
+[wt 0.8]
+[se ade312]
+[charaMoveReturn A 190,0 0.35]
+[charaShake B 0.08 5 1 1.0]
+[wt 0.35]
+[charaMoveReturn A 190,0 0.35]
+[wt 0.15]
+[seStop ade312 0.5]
+[wt 0.9]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+
+＠アネト号
+ク[se ad315][charaMove B -180,10 0.3]～～～ン。[wt 0.4][seStop ad315 0.3][charaMove B -180,0 0.3]
+[k]
+
+[messageOff]
+
+？1：………………。
+？！
+
+[charaTalk off]
+[se ad315]
+[se ade312]
+[charaMoveReturn A 190,0 0.35]
+[charaShake B 0.08 5 1 1.0]
+[wt 0.35]
+[charaMoveReturn A 190,0 0.35]
+[wt 0.15]
+[seStop ade312 0.5]
+[wt 0.9]
+
+？1：[&自分:わたし]もよしよししていい？
+？！
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+
+＠ガレス
+[tVoice ValVoice_105400 0_V060]
+どうぞどうぞ！[r]顎の下あたりを撫でてあげると喜びますよ。[wait tVoice]
+[k]
+
+[charaFace A 10]
+
+＠ガレス
+[tVoice ValVoice_105400 0_V070]
+よかったね、アネト号。[r]マスターがよしよししてくれるよ。[wait tVoice]
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+
+＠アネト号
+ワ[cueSe SE_22 22_ade754]ウッ。
+[k]
+
+[messageOff]
+[charaMove A 280,0 1.0]
+[charaFadeout A 1.0]
+[cameraMove 1.0 60,20 1.1]
+[wt 1.0]
+
+？1：よしよし……
+？！
+
+[messageOff]
+[se ade312]
+[charaShake B 0.05 5 1 1.0]
+[wt 1.0]
+[seStop ade312 0.2]
+
+＠アネト号
+（無言）
+[k]
+
+？1：おや？
+
+[messageOff]
+[charaTalk B]
+[charaFace B 0]
+[charaMove B -220,0 0.3]
+
+＠アネト号
+（ぷいっ）
+[k]
+
+[subCameraOn]
+[subCameraFilter #A maskEdge cut359_mask05 3 256,256,256,256]
+[charaLayer A sub #A]
+[charaLayer E sub #A]
+
+[charaDepth A 3]
+[charaDepth E 2]
+
+[charaFace A 5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,150]
+[charaFadein E 0.1 -500,-30]
+[wt 0.1]
+
+[subRenderFadein #A 0.2 350,-160]
+[wt 0.2]
+
+＠ガレス
+[tVoice ValVoice_105400 0_V080]
+あっこら、人見知りして！[r]夏はそんなことなかったのに、もう。[wait tVoice]
+[k]
+
+
+？2：よしよし……
+
+
+[messageOff]
+[se ade312]
+[charaShake B 0.05 5 1 1.0]
+[wt 1.0]
+[seStop ade312 0.2]
+
+[charaTalk B]
+[charaFace B 0]
+
+＠アネト号
+（無言）
+[k]
+
+[messageOff]
+
+[subCameraOn]
+[subCameraFilter #A maskEdge cut359_mask05 3 256,256,256,256]
+[charaLayer A sub #A]
+[charaLayer E sub #A]
+
+[charaDepth A 3]
+[charaDepth E 2]
+
+[charaFace A 17]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,150]
+[charaFadein E 0.1 -500,-30]
+
+[subRenderFadein #A 0.2 350,-160]
+[wt 0.2]
+
+＠ガレス
+[tVoice ValVoice_105400 0_V090]
+アネト号、意地悪しないの。[r]夏はそんなことなかったのに、もう。[wait tVoice]
+[k]
+
+[messageOff]
+
+？！
+
+？1：いいよいいよ
+？！
+
+[messageOff]
+
+[subRenderFadeout #A 0.2]
+[charaFadeout B 0.2]
+[wt 0.2]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaLayer A main]
+[charaLayer E main]
+[subCameraOff]
+
+[bgmStop BGM_EVENT_77 1.0]
+[cameraHome 1.0]
+
+[charaDepth D 7]
+[charaDepth E 5]
+[charaScale D 1.2]
+[charaScale E 1.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein D 1.0 20,0]
+[charaFadein E 1.0 20,-300]
+[charaMove D 0,0 1.0]
+[charaMove E 0,-300 1.0]
+[wt 1.2]
+
+
+？1：ところでガレス
+？2：[&自分:わたし]を探してたみたいだけど[line 3]
+？！
+
+
+[messageOff]
+[charaFace D 6]
+
+[bgm BGM_EVENT_147 0.1]
+[wt 1.0]
+
+[charaFace D 13]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V100]
+あっ。[wait tVoice]
+[k]
+
+[charaFace D 11]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V110]
+そ、そうでした。[r]すみません、本題を忘れかけてしまっていました。[wait tVoice]
+[k]
+
+[charaFace D 1]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V120]
+そうなのです！[wait tVoice]
+[k]
+
+[charaFace D 0]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V130]
+バレンタインの季節ですよね。[r]不肖ガレスもどういった催しなのか記憶しました。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaFace D 7]
+[wt 1.5]
+
+[charaFace D 5]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V140]
+……そう、バレンタインデー。[wait tVoice]
+[k]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V150]
+その起源は古代の風習に始まり、[r]やがて聖ウァレンティヌスに紐付けられ……[wait tVoice]
+[k]
+
+[charaFace D 11]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V160]
+えっと、何がどうして南米由来のチョコレートが[r]関係するようになったかは分かりませんが！[wait tVoice]
+[k]
+
+
+[charaFace D 0]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V170]
+大勢のサーヴァントたちが集い、[r]沢山のチョコや贈り物を巡って[#一喜一憂:い っ き い ち ゆ う][line 3][wait tVoice]
+[k]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V180]
+その結果として、[r]マスターは大変な目に遭う！[wait tVoice]
+[k]
+
+[charaFace D 7]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V190]
+そういう催し！[r]ですよね！[wait tVoice]
+[k]
+
+？1：うん
+？2：だいたい　あってる　かな
+
+？！
+
+[charaFace D 0]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V200]
+贈り物をすること。[r]それはとても素敵で、尊ぶべきことです。[wait tVoice]
+[k]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V210]
+ガレスはそう思います。[wait tVoice]
+[k]
+
+[charaFace D 3]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V220]
+兄様たちからの贈り物、全部全部嬉しくて、[r]胸の奥がなんだかとても温かくなって、[wait tVoice]
+[k]
+
+[charaFace D 7]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V230]
+嬉しさのあまり外を走り回りたくなるんです[wait tVoice]。
+[k]
+
+[messageOff]
+
+[subCameraOn]
+[subCameraFilter #A maskEdge cut359_mask10 3 0,0,0,256]
+[charaLayer B sub #A]
+[charaLayer F sub #A]
+
+[charaTalk B]
+[charaDepth B 7]
+[charaDepth F 5]
+[charaFace E 0]
+[charaFadein B 0.1 120,80]
+[charaFadein F 0.1 566,-25]
+[wt 0.1]
+
+[charaFace B 0]
+
+[subRenderFadeinFSSideL #A 0.3 -550,-150]
+[subRenderMoveFSSideL #A -500,-150 0.3]
+[wt 0.5]
+
+＠アネト号
+ワ[se ad316][charaMoveReturn B 120,90 0.1]ウッ！
+[k]
+
+[charaTalk D]
+[charaFace D 1]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V240]
+アネト号も分かる？[r]うんうん、そうだよね。[wait tVoice]
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+
+＠アネト号
+ク[se ad315][charaMove B 130,80 0.4]ーン。[wt 0.5][seStop ad315 0.1][charaMove B 120,80 0.4]
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[wt 0.1]
+[subRenderMoveFSSideL #A -550,-150 0.3]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 0]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V250]
+想いを込めた贈り物にはすごい力があります。[r]間違いありません。[wait tVoice]
+[k]
+
+[charaFace D 3]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V260]
+だからこそ……[wait tVoice]
+[k]
+
+[charaFace D 0]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V270]
+マスターのように、[r]沢山の英霊と契約した方は……[wait tVoice]
+[k]
+
+[charaFace D 6]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V280]
+こう、なんと言えばいいのかな。[r]沢山の……[wait tVoice]
+[k]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V290]
+いろんなものを、[r]受け止めることになりますよね。[wait tVoice]
+[k]
+
+[charaFace D 9]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V300]
+ひとつひとつに嬉しさ爆発！[r]していくのは、それはそれできっと大変かもと、[wait tVoice]
+[k]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V310]
+そう、ガレスは考えて[line 3][wait tVoice]
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_147 1.0]
+
+[charaFace D 3]
+[charaMove D 0,10 0.5]
+[wt 0.5]
+
+[charaMove D 0,10 0.5]
+[wt 0.8]
+[charaMove D 0,0 0.3]
+[wt 0.5]
+
+[charaFace D 7]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V320]
+だから、はい！[r]今回のガレスからはこちらをお渡しします！[wait tVoice]
+[k]
+
+
+[messageOff]
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth C 9]
+
+[se ad79]
+[wt 0.1]
+
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[se bas2]
+[charaFace C 0]
+[charaFadein C 0.5 0,-70]
+[wt 3.0]
+
+[bgm BGM_EVENT_146 0.1]
+
+
+？1：凍らせたスポドリ……！
+？！
+
+？1：キンキンに凍ってる！
+？2：いいよねこれ……
+？！
+
+[charaFadeout C 0.4]
+[wt 0.7]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 1]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V330]
+はいっ。[r]キンキンに凍らせたスポーツドリンク、です！[wait tVoice]
+[k]
+
+[charaFace D 9]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V340]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFace D 11]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V350]
+あー、と……[r]あは。バレンタインらしく、ないですよね？[wait tVoice]
+[k]
+
+[charaFace D 16]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V360]
+ちょっと恥ずかしい……[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[charaFace D 5]
+[wt 1.5]
+
+[charaFace D 2]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V370]
+ですがっ。[r]お疲れの体にはやっぱり、コレが効きます！[wait tVoice]
+[k]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V380]
+水分補給！[r]体に吸収されやすいよう成分も気を付けてますっ！[wait tVoice]
+[k]
+
+[charaFace D 11]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V390]
+私からの今回の贈り物はこちらです。[r]い、一応、考えに考えたものでは、あります！[wait tVoice]
+[k]
+
+[charaFace D 16]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V400]
+空気読めていなかったらごめんなさいー！[wait tVoice]
+[k]
+
+？1：実際助かる！
+？2：ありがとう！
+
+？！
+
+[messageOff]
+[charaFace D 1]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaPut B 120,80]
+
+[subRenderFadeinFSSideL #A 0.3 -550,-150]
+[subRenderMoveFSSideL #A -500,-150 0.3]
+[wt 0.5]
+
+＠アネト号
+バ[se ad316][charaMoveReturn B 120,90 0.1]ウッ！
+[k]
+
+[messageOff]
+
+[subRenderFadeout #A 0.3]
+[wt 0.1]
+[subRenderMoveFSSideL #A -550,-150 0.3]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 7]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V410]
+よ、よかった～～～～～～。[wait tVoice]
+[k]
+
+[charaFace D 1]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V420]
+あれこれと言いましたが、[r]喜んでもらえてガレスは幸いです！[wait tVoice]
+[k]
+
+[charaFace D 0]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V430]
+バレンタインの諸事、[r]大変だとは思いますが頑張ってくださいね。[wait tVoice]
+[k]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V440]
+ガレスは応援しています！[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaTalk B]
+[charaFace B 0]
+[charaPut B 120,80]
+
+[subRenderFadeinFSSideL #A 0.3 -550,-150]
+[subRenderMoveFSSideL #A -500,-150 0.3]
+[wt 1.0]
+
+[charaMoveReturn B 120,90 0.1]
+
+＠アネト号
+バ[se ad317]ウバウ！[wt 0.2][charaMoveReturn B 120,90 0.1]
+[k]
+
+[messageOff]
+
+[subRenderFadeout #A 0.3]
+[wt 0.1]
+[subRenderMoveFSSideL #A -550,-150 0.3]
+[wt 0.5]
+
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaLayer B main]
+[charaLayer F main]
+[subCameraOff]
+
+[charaTalk D]
+[charaFace D 10]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V450]
+ふふ、アネト号も応援してるそうですよ。[wait tVoice]
+[k]
+
+[charaFace D 7]
+
+＠D：ガレス
+[tVoice ValVoice_105400 0_V460]
+ファイト！　です！[r]マスター！[wait tVoice]
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_146 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,493 @@
+
+
+
+
+
+
+＄94-15-00-09-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 4029300 1 ソニックマッハ・ジェッター]
+[charaSet B 3062000 1 エリザベート]
+[charaSet C 1098337710 1 フレッカス]
+[charaSet D 1098337710 1 フレッカス]
+[charaSet E 1098340700 1 メカエリチャンⅡ号機]
+[charaSet F 25010001 1 モレー]
+
+[charaSet G 1098338300 1 ハロウィンゴースト]
+[charaSet H 1098338300 1 ハロウィンゴースト]
+[charaSet I 1098338300 1 ハロウィンゴースト]
+
+[charaSet J 98115000 1 エフェクト用1]
+[charaSet K 98115000 1 エフェクト用1]
+[charaSet L 98115000 1 エフェクト用1]
+[charaSet M 98115000 1 エフェクト用1]
+
+[sceneSet N 10000 1]
+[charaScale N 1.1]
+
+[sceneSet O 266500 1]
+[charaScale O 1.5]
+
+
+[masterBranch _Male _Female]
+[label _Male]
+[sceneSet Z 268200 1]
+
+[branch _branchEnd]
+[label _Female]
+
+[sceneSet Z 268210 1]
+
+[branch _branchEnd]
+[label _branchEnd]
+
+[subCameraOn 1]
+
+[charaLayer E sub #B]
+[charaLayer Z sub #B]
+[charaLayer N sub #B]
+
+[subCameraFilter #B maskEdge cut359_mask14 3 192,192,192,255]
+
+[charaScale Z 0.55]
+[charaScale E 0.93]
+
+[charaFace E 7]
+[charaFadein E 0.1 460,192]
+[charaFadein Z 0 420,110]
+
+[charaTalk depthOff]
+
+[charaDepth O 16]
+[charaDepth B 15]
+[charaDepth N 14]
+[charaDepth E 13]
+[charaDepth Z 12]
+[charaDepth A 11]
+[charaDepth F 10]
+[charaDepth D 9]
+[charaDepth J 8]
+[charaDepth K 7]
+[charaDepth L 6]
+[charaDepth M 5]
+[charaDepth C 4]
+[charaDepth G 3]
+[charaDepth H 2]
+[charaDepth I 1]
+
+[scene 266500]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[charaFadein O 0.1 0,-300]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_MAP_34 0.1]
+[wt 0.5]
+[charaMoveEase O 0,-450 3.0 easeOutSine]
+[wt 3.8]
+[charaFadeout O 0.6]
+[wt 1.0]
+
+＠ソニックマッハ・ジェッター
+……何だこれ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠エリザベート
+何ってチェイテピラミッド姫路城だけど。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ソニックマッハ・ジェッター
+なっがいな……実に……縦に、なっがいな……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠フレッカス
+聖地巡礼。
+[k]
+
+[subRenderFadein #B 0.2 -150,-220]
+
+＠メカエリチャンⅡ号機
+乗り込んで最上階を目指します。[r]さあ、急いで！
+[k]
+
+[messageOff]
+
+[se ad59]
+[cueSe SE_25 25_ade1158 0.7 1.0]
+[wipeout leftToRight 0.5 1.0]
+[bgmStop BGM_MAP_34 1.0]
+[wait wipe]
+
+[subRenderFadeout #B 0.1]
+[charaFadeout C 0.1]
+
+[scene 134700]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadeinFSR G 0.1 200,0]
+[charaFadeinFSL H 0.1 -200,0]
+[wt 1.0]
+[charaPut J 0,0]
+
+[seStop ad59 0.5]
+[cueSeStop 25_ade1158 0.5]
+[wipein rightToLeft 0.5 1.0]
+[wait wipe]
+
+[bgm BGM_BATTLE_62 0.1]
+[wt 0.3]
+
+[charaEffect J bit_talk_quick_slash_bl 0,0 H]
+[se ad1053]
+[se ad1038]
+[wt 0.1]
+[seStop ad1038 0.9]
+[wt 0.3]
+[charaShake G 0.05 2 3 0.5]
+[se ad809]
+[wt 0.1]
+[charaShake H 0.05 2 3 0.5]
+[se ad32]
+[wt 0.5]
+
+[se ad42]
+[charaSpecialEffect G darkEnemyErasure 1 1.5]
+[wt 0.2]
+[charaSpecialEffect H darkEnemyErasure 1 1.5]
+[wt 1.3]
+[charaSpecialEffectStop G darkEnemyErasure]
+[wt 0.2]
+[charaSpecialEffectStop H darkEnemyErasure]
+[wt 0.3]
+
+[se ad59]
+[cueSe SE_25 25_ade1158 0.7 1.0]
+[wipeout leftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+
+[scene 136100]
+
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.5]
+
+[seStop ad59 0.5]
+[cueSeStop 25_ade1158 0.5]
+[wipein rightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[effect bit_talk_gram_slash_green]
+[se ad882]
+[se ad865]
+[wt 0.2]
+[charaShake I 0.05 2 3 0.5]
+[wt 0.8]
+[se ad42]
+
+[charaSpecialEffect I darkEnemyErasure 1 1.5]
+[wt 1.5]
+[charaSpecialEffectStop I darkEnemyErasure]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ソニックマッハ・ジェッター
+オラオラオラどけどけどけ！[r]露払いは任せてもらおうか！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠エリザベート
+援護するわ！　[wt 0.8][charaFace B 10][effect bit_talk_voice01 0,100][se ade529]Ｌａ～！
+[k]
+
+[messageOff]
+[seStop ade529 1.0]
+[wt 0.8]
+[effectStop bit_talk_voice01]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+
+[charaFace G 0]
+[charaFace H 0]
+[charaFace C 0]
+[charaFadein G 0.1 -50,0]
+[charaFadein H 0.1 300,0]
+[charaFadein C 0.1 -400,-100]
+[wt 0.15]
+
+
+[seContinue ad609 0 0.6 990]
+[wt 0.2]
+[seContinue ad609 0 0.8 991]
+[wt 0.2]
+[seContinue ad609 0 1.0 992]
+[charaPut J 1]
+[charaEffect J bit_talk_explosion_triple02]
+[charaShake G 0.05 3 3 0.3]
+[charaShake H 0.05 3 3 0.3]
+[wt 0.1]
+[charaFace C 10]
+[wt 0.2]
+
+[charaFace D 10]
+[charaFadein D 0.4 -400,-100]
+
+
+[se ad348]
+[seVolume ad348 0 1.0]
+[charaRollAxis D z 360 0.5 1 1]
+[charaMove D -1000,1000 1.0]
+
+[charaFadeout C 0.1]
+
+[charaRollAxisLoopStop D]
+[charaFadeout D 0.1]
+
+[charaEffectStop J bit_talk_explosion_triple02]
+
+[wt 1.2]
+
+[charaSpecialEffect G darkEnemyErasure 1 1.5]
+[charaSpecialEffect H darkEnemyErasure 1 1.5]
+[charaFadeout C 0.1]
+[se ad42]
+[wt 1.5]
+[charaSpecialEffectStop G darkEnemyErasure]
+[charaSpecialEffectStop H darkEnemyErasure]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ソニックマッハ・ジェッター
+スゲえ、大爆発だ！　さすがだな！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠エリザベート
+[#私:アタシ]はアナタのステータスアップのために[r]歌ったんだけど！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ソニックマッハ・ジェッター
+え、デバフではなく？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠エリザベート
+デバフではなく！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFadein C 0.2 0,-20]
+[charaMove C 0,0 0.6]
+[charaShake C 0.04 1 1 0.4]
+[cueSe SE_25 25_ade1291]
+[cueSeStop 25_ade1291 0.4]
+[wt 0.3]
+
+[charaFaceFade C 12 0.3]
+[wt 0.5]
+
+＠フレッカス
+いい、この痺れる衝撃……たまらん……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠エリザベート
+そしてフレッカスはわざわざ敵側に回り込まないでよ！[r]このバットでカチ殴るわよ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+？1：よいしょ、よいしょ
+？！
+
+[charaTalk E]
+[charaFace E 3]
+
+[subRenderFadein #B 0.2 -150,-220]
+
+＠メカエリチャンⅡ号機
+……ごめんなさいね、胴体なくて……。
+[k]
+
+？1：大丈夫、このくらいは……！
+？！
+
+[charaPut N 0,0]
+[charaFadeTime N 0 0.4]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠モレー
+まあまあ、辛くなったらあたしが運ぶから。[r]ヘイパス！
+[k]
+
+[charaFadeout N 0]
+[charaFace E 6]
+
+＠メカエリチャンⅡ号機
+バスケットボールみたいに扱ったら、呪うわよ。
+[k]
+
+[charaPut N 0,0]
+[charaFadeTime N 0 0.4]
+
+[charaTalk F]
+[charaFace F 6]
+
+＠モレー
+じゃあ……サッカーで。
+[k]
+
+[charaFadeout N 0]
+[charaFace E 7]
+
+＠メカエリチャンⅡ号機
+呪い３倍増しにしてやるわよ。[r]メカの呪いを舐めないでちょうだい。
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 27]
+[charaShake F 0.05 2 2 0.3]
+[charaFadeTime N 0 0.4]
+[wt 0.5]
+
+[se ad59]
+[cueSe SE_25 25_ade1158 0.7 1.0]
+[wipeout leftToRight 0.5 1.0]
+[bgmStop BGM_BATTLE_62 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[subRenderFadeout #B 0.1]
+
+[scene 136300]
+[wt 1.5]
+
+[cueSeStop 25_ade1158 0.8]
+[seStop ad59 0.8]
+[wipein rightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaTalk G,H,I]
+[charaFace G 0]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein G 0.4 1]
+[wt 0.2]
+[charaFadeinFSR H 0.4 250,0]
+[charaFadeinFSL I 0.4 -250,0]
+[wt 0.2]
+[se ad21]
+[wt 0.7]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 1.0]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ソニックマッハ・ジェッター
+よっしゃ、こいつらで最後だ。[r]一気に片付けるぞ、マスターさんよ。
+[k]
+
+？1：[&よし:うん]、速攻だ！
+？！
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+

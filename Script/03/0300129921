@@ -1,0 +1,646 @@
+
+
+＄03-00-12-99-2-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 1098235000 1 カドック]
+[charaSet B 1008001 1 ジークフリート]
+[charaSet C 1098234710 1 クラス・アサシン]
+
+[charaSet D 7032001 1 項羽]
+[charaSet E 6035002 1 虞美人]
+[charaSet F 1098123730 1 キリシュタリア_瀕死]
+[charaSet G 1098210910 1 ペペロンチーノ_瀕死]
+[charaSet H 1098212000 1 ベリル_瀕死]
+[charaSet I 5035002 1 ？？？]
+[charaSet J 1052000 1 シャルルマーニュ]
+
+[imageSet O back10000 1 1]
+[charaScale O 1.3]
+
+[sceneSet P 151300 1]
+[charaSet Q 5035002 1 アナスタシア演出用]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用2]
+[charaSet U 1098235000 1 カドック_演出用]
+
+[charaPut T 2000,2500]
+[charaEffect T bit_sepia01_fade_fs]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 151300]
+
+[bgm BGM_EVENT_81 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠カドック
+その頭のふらつきは、[r]自業自得だと思っておけよ。
+[k]
+
+[charaFace A 0]
+
+＠カドック
+……魔術師として振る舞いたかったら、[r]まず落ち着いて状況を把握しろ。
+[k]
+
+[charaFace A 5]
+＠カドック
+本格的な説教はまた今度だな。[r]よし、行くぞ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.1 1]
+＠シャルルマーニュ
+おっとヤバいな。[r]前からも後ろからも押し寄せてくるぞ！
+[k]
+
+＠シャルルマーニュ
+とりあえず前は俺が引き受ける！[r]ジークフリート、背後は[line 3]
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠ジークフリート
+！
+[k]
+
+＠ジークフリート
+マスター、カドック、[r]後ろだ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[cameraMove 0.1 0,0 1.1]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth S 7]
+[charaDepth C 4]
+
+[se ad73]
+[charaPut S 1]
+[charaEffect S bit_talk_quickmove]
+[wt 0.1]
+
+[charaPut C 1]
+[charaTalk C]
+[charaFace C 0]
+[charaSpecialEffect C appearanceReverse 0,0 0.3]
+[wt 0.8]
+
+＠クラス・アサシン
+お命……頂戴！
+[k]
+
+？1：ヤバ……！
+？！
+
+
+＠カドック
+チッ……！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaScale U 1.2]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth O 3]
+[charaDepth U 4]
+
+
+[se ad7]
+[seVolume ad7 0 0.5]
+
+[charaScale U 1.1]
+[charaTalk U]
+[charaFace U 8]
+[overlayFadein U 0.2 -200,10]
+[charaMove U -100,10 0.4]
+[seStop ad7 0.6]
+
+[wt 0.6]
+[se ade139]
+[shake 0.05 3 3 0.3]
+
+[se ad85]
+[effect bit_talk_h_slash02_fs 0,0 V]
+
+[fadeout white 0.6]
+[cameraMove 0.6 0,0 1.01]
+[wait fade]
+
+[charaFadeout U 0.1]
+[charaFadeout C 0.1]
+[charaFadeout O 0.2]
+[wt 0.1]
+
+[scene 10001]
+
+[wt 1.0]
+
+[fadein white 0.1]
+[wait fade]
+
+＠カドック
+（……ここまでかな）
+[k]
+
+
+[charaTalk depthOn]
+＠
+回想に浸る余裕などない。[bgm BGM_MAP_36 1.0][r]ただ目の前の死を想う。
+[k]
+
+＠
+そも、カドックの人生は[r]万事において退屈なものである。
+[k]
+
+＠
+歴史の浅い魔術師、[r]息切れしたように発展が停止した一族の魔術。
+[k]
+
+＠
+そこに生まれた[#麒麟児:き り ん じ]、[r]というほどでもない凡庸な才能。
+[k]
+
+＠
+カルデアに拾い上げられたのが、[r]何ともはや奇跡的である。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+＠
+そしてカルデアで死に、蘇り、[r]クリプターとなり、それから[line 3]
+[k]
+
+[charaScale A 1.0]
+＠カドック
+……まあ、潮時か。
+[k]
+
+[bgm BGM_MAP_36 1.5 0.8]
+
+
+
+
+＠
+記録を見た。[r][#異聞帯:ロストベルト]で戦った、[#クリプター:み 　　ん 　　な]の記録を見た。
+[k]
+
+[messageOff]
+[fadeout black 0.2]
+[wait fade]
+
+[scene 62603]
+
+[charaPut T 1]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+＠
+魔眼を捨て[#大令呪:シリウスライト]を行使し、[r][#終末の炎:ス　　ル　　ト]を封じたオフェリア・ファムルソローネ。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaDepth D 4]
+[charaDepth E 6]
+[charaDepth T 9]
+
+[scene 65801 1.0]
+
+[charaFace D 5]
+[charaFace E 5]
+[charaFadeinFSR D 1.0 2]
+[charaFadeinFSL E 1.0 0]
+[wt 1.1]
+
+＠
+愛する者に殉じようとした[#芥:アクタ]ヒナコ……虞美人。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[scene 93004 1.0]
+
+[charaFace F 3]
+[charaFadein F 1.0 1]
+[charaFadeout D 1.0]
+[charaFadeout E 1.0]
+[wt 1.1]
+
+＠
+全人類を神にしようとして、[r]ベリルに裏切られたキリシュタリア・ヴォーダイム。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[scene 121900 1.0]
+
+[charaFace G 2]
+[charaFadein G 1.0 1]
+[charaFadeout F 1.0]
+[wt 1.1]
+＠
+ベリルの力を道連れに、黄泉路へ旅立った[r]スカンジナビア・ペペロンチーノ。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[scene 119800 1.0]
+
+[charaFace H 2]
+[charaFadein H 1.0 1]
+[charaFadeout G 1.0]
+[wt 1.1]
+
+＠
+そして、本当に欲しかったモノを、[r]手に入れられなかったベリル・ガット。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+[charaPut T 2000,2500]
+
+[scene 10000]
+[wt 0.2]
+
+[fadein black 0.2]
+[wait fade]
+
+＠
+クリプターで残るはデイビットと自分だけ。
+[k]
+
+＠
+そして、自分は真っ先に敗北している。[r]なので実のところ[line 3]
+[k]
+
+[messageOff]
+[fadeout black 0.2]
+[wait fade]
+
+[scene 151300]
+
+[charaTalk depthOff]
+[charaDepth O 5]
+[charaDepth A 6]
+
+[cameraFilter gray]
+[wt 0.2]
+
+[bgm BGM_MAP_36 1.5 0.6]
+[fadein black 1.0]
+[wait fade]
+
+＠
+自分の命運は、とうの昔に尽きている。[r]そんな感覚がしている。
+[k]
+
+[charaPut O 1]
+[charaFadeTime O 0.2 0.5]
+＠カドック
+（まあ、しょうがないよな）
+[k]
+
+[charaFadeout O 0.1]
+＠
+しょうがない、しょうがない、しょうがない。[r]自分の人生は、そんな言葉ばっかりだった気もする。
+[k]
+
+＠
+でも、本当にしょうがない。[r]この振り下ろされる刃は回避しようがない。
+[k]
+
+＠
+まして、何故だか体が動いて[r][%1]を[#庇:かば]ってしまった。
+[k]
+
+＠
+敵ではあったが、嫌いでもあったが。
+[k]
+
+＠
+オフェリアが、ペペロンチーノが、[r]全てを捧げて繋いだ命であり。
+[k]
+
+＠
+正直、自分などよりよっぽど[r]可能性に満ちている。
+[k]
+
+＠
+だから、ここが良いゴール地点だろう。[r]……しょうがない、な。
+[k]
+
+[messageOff]
+[se ad733]
+[fadeout white 0.4]
+[wait fade]
+
+[cameraFilter normal]
+[bgmStop BGM_MAP_36 1.5]
+
+[fadein white 0.4]
+[wait fade]
+[seStop ad733 2.0]
+
+＠？？？
+もちろん、そんなこと許さないのだけど。
+[k]
+
+[messageOff]
+[wt 0.4]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.2 0,0]
+[wt 0.3]
+
+[se ad685]
+[seVolume ad685 0 0.4]
+[flashin once 0.3 0.8 FFFFFF80 FFFFFF00]
+
+[se ade63]
+[seVolume ade63 0 0.7]
+[se ad676]
+[seVolume ad676 0 0.7]
+[wt 1.2]
+
+[effect bit_talk_14]
+[charaShake C 0.05 2 2 1.0]
+[se ad676]
+[seVolume ad676 0 0.7]
+[se bac1765]
+[seVolume bac1765 0 0.7]
+[flashin once 0.2 0.2 FFFFFFF0 FFFFFF00]
+[wt 0.8]
+[charaMove C 0,-30 0.4]
+[wt 0.1]
+[charaFadeout C 0.4]
+[wt 0.3]
+[se ad144]
+[wt 0.8]
+
+[charaPut S 1]
+[charaEffect S bit_talk_frozen_cam_fs]
+[wt 0.4]
+[se ad541]
+[seVolume ad541 0 0.4]
+[wt 3.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠カドック
+[line 3]は？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[charaPut I 1]
+[charaTalk I]
+[charaFace I 0]
+[charaFadeTime I 0.8 0.7]
+[wt 2.0]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_123 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠カドック
+君、は……。[r]いや、違う。[#お前]、は……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk I]
+[charaFace I 0]
+[charaFadeTime I 0.1 0.7]
+＠？？？
+しょうがないよね。[r]頼まれたんだもの。
+[k]
+
+[charaFace I 1]
+＠？？？
+[#どうかカドックを守ってあげてって]。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠カドック
+……ッ！
+[k]
+
+[charaFace A 4]
+＠カドック
+ああ、クソ。[r]殉死を許さないって、まだダメなのかよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk I]
+[charaFace I 1]
+[charaFadeTime I 0.1 0.7]
+＠？？？
+それはそう。
+[k]
+
+＠？？？
+穏やかな老後とまではいかないけど、[r]もう少し全力で粘ってみて。
+[k]
+
+[messageOff]
+[charaScale P 1.5]
+[charaScale Q 1.3]
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth P 5]
+[charaDepth Q 6]
+[charaFace Q 1]
+[charaPut Q 100,0]
+[charaFadein P 1.0 0,-200]
+[charaFadeTime Q 1.0 0.7]
+[charaMove P -10,-200 10.0]
+[charaMove Q 110,0 10.0]
+[wt 1.5]
+[charaFadeout I 0.1]
+
+＠？？？
+それが、私の、[#私:わたくし]の、[r][#彼　女:アナスタシア]の[line 3]
+[k]
+
+[charaFace I 7]
+＠？？？
+そして[#ヴィイ:わ　た　し]のお願い。[r]もうちょっと、頑張ってみてね。
+[k]
+
+[charaFace I 6]
+＠？？？
+あなたなら、やれるわ。きっと。
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaFadeTime Q 0.4 0.3]
+[wt 0.7]
+[charaFadeTime Q 0.5 0.6]
+[wt 1.0]
+
+[charaEffectStop S bit_talk_frozen_cam_fs]
+[wt 0.1]
+[charaFadeout Q 1.0]
+[charaFadeout P 1.0]
+[wt 2.2]
+
+
+？1：今のは……
+？！
+
+[charaPut S 2000,2500]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+[wt 1.2]
+
+＠カドック
+僕の、奥の手ってことだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠
+涙を堪えた。嬉しかった。[r]そして悲しかった。
+[k]
+
+＠
+あれは、ただの精霊の[#残滓:ざんし]。
+[k]
+
+＠
+それがたまさか、主であるアナスタシアの[r]命令により、その姿を借りて助力しているに過ぎない。
+[k]
+
+＠
+結局、自分には英雄的な能力など何一つとしてない。[r]ないのだけど。
+[k]
+
+＠
+守られる自分が、本来は劣等感に襲われるはずの状況が、[r]何故だか妙に誇らしかった。
+[k]
+
+＠
+そうだ、アナスタシア。[r]君が僕の[#キャスター:サ  ー  ヴ  ァ  ン  ト]であってくれたように。
+[k]
+
+＠
+僕も、君のマスターなのだから。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠カドック
+[%1]、[r]活性アンプルを僕にもよこせ。
+[k]
+
+[charaFace A 7]
+＠カドック
+さっき、ちょっと見ただろ。
+[k]
+
+＠カドック
+サーヴァントって訳じゃないが、[r]ヴィイの力が少しだけ残っている。
+[k]
+
+[charaFace A 5]
+＠カドック
+要するに、少しはお前をフォロー可能ってことだ。[r]理解したか？
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[cameraMove 0.4 0,10 1.01]
+[wt 0.5]
+
+[cameraMove 0.4 0,0 1.01]
+[wt 0.9]
+
+[charaFace A 2]
+＠カドック
+よし、ならさっさと行くぞ。[r]氷が溶けない内に、全力だ！
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_123 2.0]
+[wait fade]
+[soundStopAll]
+[end]

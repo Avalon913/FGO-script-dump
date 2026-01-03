@@ -1,0 +1,259 @@
+
+
+
+
+
+
+
+＄94-15-00-01-1-0
+
+
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[soundStopAll]
+
+[charaSet A 10005000 1 メカエリチャンⅡ号機]
+[charaSet B 10005000 1 メカエリチャンⅡ号機_演出用]
+[charaSet C 1098337700 1 ？？？]
+
+[sceneSet D 265311 1]
+[sceneSet E 265300 1]
+[sceneSet F 265300 1]
+
+[subCameraOn 2]
+
+[charaLayer B sub #A]
+[charaLayer F sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask116 5 255,255,255,255]
+
+[charaDepth B 2]
+[charaDepth F 1]
+
+[charaFace B 0]
+[charaFadein B 0.1 520,240]
+[charaFadein F 0.1 150,50]
+
+[scene 265310]
+
+[fadein black 1.0]
+[se ad173]
+[cueSe SE_23 23_ad1303]
+[wait fade]
+[seStop ad173 1.0]
+[seStop 23_ad1303 1.0]
+[wt 1.5]
+
+[bgm BGM_EVENT_104 0.1]
+
+[wt 0.5]
+
+
+？1：置いていって大丈夫かな……？
+？！
+
+
+[cameraMove 1.0 70,-30 1.2]
+[wait camera]
+[wt 0.5]
+
+[se ade452]
+
+[charaFadein D 0.2 0,-200]
+[wt 1.5]
+
+[charaFadeout D 0.2]
+[cameraMove 1.0 0,0 1.0]
+[wait camera]
+[wt 0.5]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠メカエリチャンⅡ号機
+マズいかもしれないけど、こんな胡散臭い……[r]いえ、[#豪奢:ごうしゃ]な建物に手を出す輩はそう多くないでしょう。
+[k]
+
+＠メカエリチャンⅡ号機
+侵入したところで、何か珍しいものがある訳でもなし。[r]……刑部姫の部屋はマズいかしら？
+[k]
+
+？1：大事なものは全部運び終わってたはず
+？！
+
+＠メカエリチャンⅡ号機
+そ。なら問題はないわ。[r]出発しましょう。
+[k]
+
+
+[se ad173]
+[cueSe SE_23 23_ad1303]
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_104 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 265300]
+
+[wt 1.0]
+[seStop ad173 1.0]
+[seStop 23_ad1303 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.4]
+
+[bgm BGM_EVENT_147 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠メカエリチャンⅡ号機
+それにしても[line 3]
+[k]
+
+
+[messageOff]
+[charaDepth E 3]
+[charaDepth A 2]
+
+[charaScale E 1.4]
+[charaFadein E 0.4 150,-240]
+[charaMove E 250,-240 10.0]
+[wt 4.0]
+
+[charaFadeout E 0.7]
+[wt 1.0]
+
+[charaTalk A]
+
+＠メカエリチャンⅡ号機
+ところどころにカボチャらしき遺物があって、[r]まるでハロウィンだったみたいね。
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.0]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.0]
+[wt 0.9]
+
+＠メカエリチャンⅡ号機
+それなら住んでいる人間も、[r]ハロウィンのように陽気で明るい者たちでしょう。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_147 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[cueSe SE_25 25_ade1291 0 0.1]
+[cueSeVolume 25_ade1291 1.0 1.0]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.5 1]
+[wt 0.2]
+[cueSeStop 25_ade1291 0.2]
+[wt 0.5]
+
+＠？？？
+そこのアンタたち。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠メカエリチャンⅡ号機
+ええ、何か？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+[cueSe SE_23 23_ade911]
+[cueSeVolume 23_ade911 0 0.5]
+[charaMoveReturn C 0,-3 0.2]
+[wt 0.5]
+
+[bgm BGM_BATTLE_62 0.1]
+
+[charaFace C 1]
+＠？？？
+ひ[messageShake 0.05 3 3 0.2]ゃっほう、身ぐるみ置いていきな！[r]あ、そこのお嬢さんはパーツ全部置いていきな！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠メカエリチャンⅡ号機
+陽気で明るい盗賊が出てきたわね……。[r]いいでしょう、肩慣らしです。
+[k]
+
+＠メカエリチャンⅡ号機
+マスター、指示を。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠？？？
+[line 3]ん？　メカのアンタ、どこかで見たツラ……。
+[k]
+
+[charaFace C 2]
+
+＠？？？
+まあいいか、後で考えよう！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 0.2]
+[charaFaceFade A 2 0.2]
+[cueSe SE_25 25_ade1194]
+[cueSeStop 25_ade1194 1.0]
+[wt 0.9]
+
+＠メカエリチャンⅡ号機
+殲滅モード、オン。[r]皆殺しよ、[#水棲:すいせい]生物のような[#貧愚:ピッグ]ども。
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_62 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

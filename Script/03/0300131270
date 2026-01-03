@@ -1,0 +1,491 @@
+
+＄03-00-13-12-7-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 1098252920 1 テペウ]
+[charaSet D 1098253200 1 Ｕ－オルガマリー]
+[charaSet E 1098257300 1 ダ・ヴィンチ]
+
+[charaSet F 1098253200 1 Ｕ－オルガマリー_演出用]
+
+[sceneSet M 10000 1]
+[sceneSet N 169501 1]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaEffect S bit_sepia01_depth_fs]
+[charaPut S 2000,2000]
+
+[scene 170302]
+
+[fadein black 1.0]
+[wait fade]
+[wt 2.0]
+
+[scene 170301 1.5]
+[wt 3.0]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 169701]
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_161 0.1]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+ただいま戻りました、テペウさん。[r]オルガマリーさん、お帰りになっていますか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠テペウ
+Ｕ－オルガマリーですか？[r]まだ戻ってきてはいないようです。
+[k]
+
+＠テペウ
+さきほど大通りで見かけました。[r]祭壇に向かっているようでした。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ではすれ違ったのですね。[r]わたし、迎えに行ってきます。
+[k]
+
+？1：いや、[&自分:わたし]がいくよ
+
+[charaFace A 1]
+
+＠マシュ
+そうですか？[r]では、お言葉に甘えますね。
+[k]
+
+？2：マシュはトウモロコシをマッシュしていてほしい
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth M 1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠テペウ
+私もそれを望みます。マシュの盾で潰された[r]トウモロコシは原形を留めないほど滑らか。
+[k]
+
+＠テペウ
+何処に出しても一流のマッシュコーンです。[r]次はその盾でカカオ豆を挽いていただきたい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠マシュ
+は、はい、お褒めに[#与:あずか]り光栄です。[r]……[wt 0.4][charaPut M 1][charaFadeTime M 0.2 0.5]（円卓の皆さんに叱られてしまいそうですが……）
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_161 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout M 0.1]
+
+[scene 169501]
+
+[charaDepth F 2]
+[charaDepth N 1]
+
+[charaScale F 1.1]
+[charaScale N 1.1]
+[wt 1.0]
+
+[se ad60]
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+[seStop ad60 0.5]
+[wt 1.0]
+
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 1.0 180,0]
+[charaFadein N 1.0 -50,-220]
+
+[charaMove F 150,0 0.8]
+[charaMove N -80,-220 0.8]
+[wt 1.4]
+
+[charaFace F 10]
+[wt 1.0]
+
+[se bac375]
+[charaMove F 100,0 0.6]
+[charaFadeout F 0.6]
+[wt 1.0]
+
+[charaFadeout N 0.6]
+[charaScale F 1.0]
+[wt 1.0]
+
+？1：Ｕ－オルガマリー！
+？2：所長！
+
+？！
+
+[cueSe SE_21 21_ade580]
+[seVolume 21_ade580 0 0.6]
+[seVolume 21_ade580 1.0 1.0]
+[wt 1.0]
+[seStop 21_ade580 0.5]
+
+[charaTalk off]
+[charaFace F 20]
+[charaFadein F 0.7 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠Ｕ－オルガマリー
+……なによ。[r]別に、気まずくて逃げた訳じゃないわ。
+[k]
+
+＠Ｕ－オルガマリー
+ちょっと旋回したくなっただけよ。[r]あるでしょ、そういうこと。空飛んでると。
+[k]
+
+？1：うーん、空は飛べないからなぁ
+
+[charaFace F 23]
+
+＠Ｕ－オルガマリー
+ふん。そうだったわね。[r]ディノスもヒト型人類もそこは同じってコト。
+[k]
+
+？2：インメルマンターン？
+
+[charaFace F 1]
+
+＠Ｕ－オルガマリー
+それは上昇でしょ。撃墜王インメルマンの得意技。[r]映像記録で学習したから知ってるわ。
+[k]
+
+？！
+
+[messageOff]
+
+[charaDepth D 3]
+[charaDepth N 2]
+[charaDepth F 1]
+
+[charaScale D 1.2]
+[charaScale N 1.2]
+
+[charaFace D 17]
+[charaFadein D 1.5 0,10]
+[charaFadein N 1.5 0,-210]
+[wt 2.0]
+
+[charaFadeout F 0.1]
+
+＠Ｕ－オルガマリー
+………………。
+[k]
+
+[charaFaceFade D 16 0.2]
+
+＠Ｕ－オルガマリー
+………………。
+[k]
+
+[charaFaceFade D 17 0.2]
+
+＠Ｕ－オルガマリー
+………………。
+[k]
+
+[charaFaceFade D 20 0.2]
+
+＠Ｕ－オルガマリー
+それで、なに？[r]呼び止めたってコトは、用があるのよね？
+[k]
+
+？1：ここのところ話してなかったから
+
+[charaFaceFade D 1 0.2]
+
+＠Ｕ－オルガマリー
+[f small]……そりゃそうよ。[r][f small]避けてたんだから。
+[k]
+
+？2：一緒にテペウの家に戻ろう
+
+[charaFaceFade D 17 0.2]
+
+＠Ｕ－オルガマリー
+一緒に？[r][%1]と？
+[k]
+
+？！
+
+[charaFaceFade D 13 0.2]
+
+＠Ｕ－オルガマリー
+……そう、秘書官として出迎えにきたってワケ。[r]殊勝な心がけね。中々です。
+[k]
+
+[charaFace D 23]
+
+＠Ｕ－オルガマリー
+そういう事なら、視察を切り上げて戻ります。[r]チチェン・イツァーの構造は完全に把握したし。
+[k]
+
+[charaFace D 1]
+
+＠Ｕ－オルガマリー
+オセロトルがいつ攻め込んできても対応できる。[r]まあ、私がこの街を守る理由はないのだけど。
+[k]
+
+？1：守るのは大統領としての信念、[&だろ:でしょ]？
+
+？！
+
+[messageOff]
+[charaFace D 24]
+[wt 1.2]
+
+[charaFaceFade D 8 0.3]
+[wt 0.6]
+
+＠Ｕ－オルガマリー
+そっちの調子はどう？[r]ストーム・ボーダーの修理、どのくらい進んだの？
+[k]
+
+＠Ｕ－オルガマリー
+日に日にディノスたちがボーダーに集まって、[r]汎人類史の技術を学んでいるようだけど。
+[k]
+
+＠Ｕ－オルガマリー
+友好関係を結ぶの、得意よねアナタたち。[r]私の時もそうだったけど。
+[k]
+
+？1：実は明日から作戦再開なんだ
+？2：朝イチで管制室に集まるんだ
+
+？！
+
+[charaFace D 22]
+
+＠Ｕ－オルガマリー
+ああ、一度だけ入ったあのブリッジ！[r]電源、入るようになったんだ！
+[k]
+
+＠Ｕ－オルガマリー
+ゴルドルフとかいう男の顔は見たくないけど、[r]動いているところは見たいわね！
+[k]
+
+＠Ｕ－オルガマリー
+明日の朝？[r]作戦再開って、次は何をするのかしら！
+[k]
+
+？1：[line 3]
+
+？！
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[fadeout white 1.0]
+[bgm BGM_EVENT_11 1.5 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout N 0.1]
+
+[charaScale D 1.0]
+
+[charaDepth S 2]
+[charaDepth E 1]
+
+[scene 169902]
+
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+
+[charaPut S 1]
+[wt 0.1]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+だけどストーム・ボーダーへの乗艦は[r]半数以上が反対している。私もそのひとりだ。
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.04]
+
+[charaFadeout E 0.1]
+[charaPut S 2000,2000]
+
+[bgmStop BGM_EVENT_11 2.0]
+[scene 169501]
+
+[charaTalk D]
+[charaFace D 22]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[cameraMove 2.5 0,0 1.0]
+[fadein white 1.0]
+[wait fade]
+[wt 1.8]
+
+[charaFaceFade D 33 0.2]
+[wt 0.8]
+
+＠Ｕ－オルガマリー
+……[%1]？
+[k]
+
+[charaFace D 1]
+
+＠Ｕ－オルガマリー
+……聞くけど。[r]それ、私も一緒に行っていいの？
+[k]
+
+？1：[line 3]もちろん
+
+[messageOff]
+[charaShake D 0.05 0 1 0.3]
+[charaFace D 29]
+[wt 1.8]
+
+？2：………………
+
+[charaFace D 23]
+
+＠Ｕ－オルガマリー
+……まあ、そうよね。[r]そういうものよね。分かってたわ。
+[k]
+
+？！
+
+[bgm BGM_EVENT_95 0.1]
+
+[charaFaceFade D 4 0.2]
+
+＠Ｕ－オルガマリー
+[line 3]いい。気が変わった。[r]別にどうでもいいわ、アナタたちの[#艦:ふね]なんて。
+[k]
+
+[charaFace D 13]
+
+＠Ｕ－オルガマリー
+そもそも私、アナタと違ってひとりで飛べるし。[r]約束は、アナタがカルデアに合流するまでだったし。
+[k]
+
+[charaFace D 23]
+
+＠Ｕ－オルガマリー
+もう少し街を見ているから、先に戻って。[r]トウモロコシのパン、残しておいて。アレ好き。
+[k]
+
+？1：……うん。……ごめん
+
+？！
+
+[charaFace D 16]
+
+＠Ｕ－オルガマリー
+………………。
+[k]
+
+[charaFace D 17]
+＠Ｕ－オルガマリー
+……[%1]が[r][#謝:あやま]る意味とか、分からないけど。
+[k]
+
+＠Ｕ－オルガマリー
+精神的負債があるなら、[r]質問するから、それで払って。
+[k]
+
+[charaFace D 33]
+＠Ｕ－オルガマリー
+ねえ。[r]私に、何か[#訊:き]く事はない？
+[k]
+
+？1：[#訊:き]く事って？
+？2：[line 3]今は、とくにないよ
+
+？！
+
+[charaFace D 23]
+
+＠Ｕ－オルガマリー
+そう。ならいいわ。[r]実際のところ、[#訊:き]かれても分からないし。
+[k]
+
+[charaFace D 17]
+
+＠Ｕ－オルガマリー
+それと、もしワクチャンに会ったら[line 3][wt 1.0][r]……いえ。なんでもない。
+[k]
+
+[charaFace D 13]
+
+＠Ｕ－オルガマリー
+おやすみなさい。明日は早いんでしょ？[r]速やかに機能停止して、夢とやらを楽しむ事ね。
+[k]
+
+
+[messageOff]
+[se bac375]
+[seVolume bac375 0 0.5]
+[charaFadeout D 0.7]
+[wt 3.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_95 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

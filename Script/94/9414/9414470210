@@ -1,0 +1,1327 @@
+
+
+＄94-14-47-02-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 28011001 1 テュフォン・エフェメロス]
+[charaSet B 4032000 1 ライネス]
+[charaSet C 6039000 1 グレイ]
+[charaSet D 1098325400 1 イプシロン]
+[charaSet E 1098257310 1 ダ・ヴィンチ]
+[charaSet F 28002000 1 ヘファイスティオン]
+[charaSet G 1098257310 1 ダ・ヴィンチ_演出用]
+[charaSet H 28002000 1 ヘファイスティオン_演出用]
+[charaScale H 1.2]
+[charaSet I 28011001 1 テュフォン・エフェメロス_演出用]
+[charaScale I 1.2]
+[charaSet J 4032000 1 ライネス_演出用]
+
+[charaSet K 98006200 1 雑魚エネミー煙状]
+[charaSet L 98006200 1 雑魚エネミー煙状]
+
+[sceneSet M 10000 1]
+[charaScale M 1.1]
+
+[charaSet N 4032000 1 ライネス_演出用2]
+[charaScale N 1.25]
+
+[sceneSet O 109600 1]
+[charaScale O 1.2]
+[sceneSet P 109600 1]
+[charaScale P 1.0]
+[sceneSet Q 251203 1]
+[charaScale Q 1.2]
+[sceneSet R 251203 1]
+[charaScale R 1.2]
+[sceneSet S 251300 1]
+[charaScale S 1.3]
+
+[sceneSet T 252103 1]
+[charaScale T 1.2]
+
+[imageSet V cut106_trans 1]
+[charaFilter V silhouette 68ecaa80]
+[charaScale V 2.8]
+
+[charaSet W 98115000 1 エフェクト用ダミー]
+[charaSet X 98115000 1 エフェクト用ダミー]
+[charaSet Y 98115000 1 エフェクト用ダミー]
+
+[charaPut Y 2000,2500]
+[charaEffect Y bit_sepia01_depth_fs]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 109600]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth D 1]
+[charaDepth C 1]
+[charaDepth E 2]
+[charaDepth W 3]
+[charaDepth O 4]
+[charaDepth M 5]
+[charaFadein O 0.1 -20,-250]
+[charaMove O 20,-250 5.0]
+
+[subCameraOn 1]
+
+[subCameraFilter #A normal]
+
+[subRenderScale #A 1.01]
+
+[charaLayer P sub #A]
+[charaLayer G sub #A]
+
+[charaDepth P 1]
+[charaDepth G 2]
+[charaDepth X 3]
+
+[se ad218]
+[seVolume ad218 0 0]
+[wt 0.1]
+
+[fadein black 1.0]
+[seVolume ad218 1.0 1.0]
+[wait fade]
+
+[wt 2.5]
+
+[charaFadeout O 1.0]
+[seStop ad218 0.8]
+
+[wt 1.4]
+
+[se ad173]
+[seVolume ad173 0 0.6]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+[seStop ad173 0.2]
+[wt 0.4]
+[bgm BGM_MAP_61 0.1]
+
+＠ライネス
+さて……と。
+[k]
+
+
+＠ライネス
+地形情報だと、おそらくこの島になる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠グレイ
+テュフォンの動力と同様の魔力反応、ですよね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+＠イプシロン
+あっちのエフェメロスはテュフォンの[r]チェックをするとか言って、来ませんでしたからね。
+[k]
+
+[charaFace D 3]
+
+＠イプシロン
+その点、私は違います！[r]健気ですので！
+[k]
+
+[messageOff]
+[charaMoveReturn D 0,7 0.3]
+[wt 1.3]
+
+[charaFace D 4]
+
+＠イプシロン
+あ、そうだ！　仮契約も済ませちゃいましょう！[r]いいですか、英霊使いの[&お兄さん:お姉さん]！
+[k]
+
+？1：いいの？
+？2：君がいいのなら
+？！
+
+[charaFace D 16]
+
+＠イプシロン
+もちろんです！
+[k]
+
+
+[messageOff]
+[wt 0.4]
+[se bas16]
+
+[masterBranch lblmst01a lblmst01b]
+[label lblmst01a]
+[effect bit_talk_CommandMantra_01 0,64]
+
+[branch lblmst01]
+[label lblmst01b]
+[effect bit_talk_CommandMantra_02 0,64]
+
+[label lblmst01]
+
+[wt 2.5]
+
+[charaFace D 13]
+
+＠イプシロン
+あったかい魔力……！
+[k]
+
+[charaFace D 3]
+
+＠イプシロン
+えへへ、これで[r]マスターの[&お兄さん:お姉さん]って呼べますね！
+[k]
+
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad13]
+[wt 0.1]
+[charaPut W 0,0]
+[charaEffect W bit_talk_10_LowLevel_depth]
+[wt 0.2]
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+何度も言うが、[r]探索中は充分に警戒してくれたまえ。
+[k]
+
+＠ダ・ヴィンチ
+特異点自体はもちろんだが、[r]あの竜[line 3]テュフォン・ネオスとの遭遇が一番危険だ。
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[wt 0.1]
+[fadeout white 0.7]
+[bgm BGM_MAP_61 0.7 0.4]
+[wait fade]
+
+[charaPut W 2000,2000]
+[charaFadeout E 0.1]
+
+[charaDepth Y 10]
+
+[charaPut Y 1]
+
+[charaScale T 1.5]
+[charaFadeinFSSideL T 0.1 495,-300]
+
+[scene 252103]
+[wt 0.4]
+
+[fadein white 0.7]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout white 0.7]
+[wait fade]
+
+[charaFadeout T 0.1]
+[charaPut Y 2000,2500]
+
+[scene 109600]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.4]
+
+[fadein white 0.7]
+[bgm BGM_MAP_61 0.7 1.0]
+[wait fade]
+[wt 0.2]
+
+＠グレイ
+テュフォン・ネオス？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut W 0,0]
+
+[charaTalk E]
+[charaFace E 22]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+あの新しいテュフォンについて、[r]ひとまず、そう呼称することにした。
+[k]
+
+[charaFace E 32]
+
+＠ダ・ヴィンチ
+いささか、そのまますぎるネーミングだがね。
+[k]
+
+[charaPut W 2000,2000]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ライネス
+まあ名前は必要だからな。[r]ネーミングセンスは問うまいさ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 33]
+[charaFadein D 0.1 1]
+
+＠イプシロン
+えー、もったいないぐらいの、[r]格好いい名前だと思いますけど！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut W 0,0]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+それはありがとう。
+[k]
+
+[charaFace E 0]
+
+＠ダ・ヴィンチ
+ヘファイスティオンにはエフェメロスと一緒に[r]拠点を見張ってもらってる。
+[k]
+
+＠ダ・ヴィンチ
+何かあったら、[r]あの戦車で飛んできてもらうつもりだからね。
+[k]
+
+[messageOff]
+[bgm BGM_MAP_61 0.8 0.5]
+[charaTalk E,B]
+[charaDepth B 6]
+[charaScale B 1.25]
+[charaPut M 0,0]
+[charaFadeTime M 0.6 0.5]
+[charaFadein O 0.6 -100,-270]
+[charaFace B 4]
+[charaFadein B 0.6 -100,20]
+[charaMove O 0,-270 30.0]
+[charaMove B 0,20 30.0]
+[charaPut W 2000,2000]
+[wt 0.6]
+[charaFadeout E 0.1]
+[wt 0.3]
+
+＠ライネス
+（……まあ、今回は身内の警戒も必要だからな）
+[k]
+
+＠ライネス
+（テュフォン・エフェメロスもイプシロンも[r]　正直信用できたものじゃない）
+[k]
+
+[charaFace B 0]
+
+＠ライネス
+（戦力は分散したくないが、フェイカーには[r]　エフェメロスを見張ってもらうしかなかった）
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_MAP_61 1.0]
+[wait fade]
+
+[charaFadeout O 0.1]
+[charaFadeout M 0.1]
+[charaFadeout B 0.1]
+[charaScale B 1.0]
+[charaEffectDestroy W]
+
+[charaDepth M 1]
+[charaDepth A 3]
+[charaDepth F 2]
+[charaDepth Q 4]
+[charaDepth H 5]
+[charaDepth R 6]
+[charaDepth I 7]
+
+[scene 251203]
+
+[pictureFrameTop cut063_cinema]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk off]
+[charaFadein Q 0.6 50,-270]
+[charaFace H 0]
+[charaFadein H 0.6 250,-30]
+[charaMove Q 30,-270 10.0]
+[charaMove H 230,-30 10.0]
+[wt 1.2]
+
+＠ヘファイスティオン
+…………。
+[k]
+
+[messageOff]
+[charaFadein R 0.6 -50,-270]
+[charaFace I 18]
+[charaFadein I 0.6 -250,-30]
+[charaMove R -30,-270 10.0]
+[charaMove I -230,-30 10.0]
+[wt 1.0]
+
+[charaFadeout Q 0.1]
+[charaFadeout H 0.1]
+
+[charaSet H 28002000 1 ヘファイスティオン_演出用]
+[charaScale H 1.2]
+[sceneSet Q 251203 1]
+[charaScale Q 1.2]
+[charaDepth Q 4]
+[charaDepth H 5]
+[wt 0.2]
+
+＠テュフォン・エフェメロス
+…………。
+[k]
+
+
+[messageOff]
+[charaFace I 10]
+[wt 1.0]
+
+[charaFace I 7]
+
+[charaFadein Q 0.1 50,-270]
+[charaFace H 0]
+[charaFadein H 0.1 250,-30]
+[wt 1.0]
+
+[charaFadeout R 0.6]
+[charaFadeout I 0.6]
+[charaMove Q 30,-270 10.0]
+[charaMove H 230,-30 10.0]
+[wt 0.8]
+
+[charaFace F 0]
+[charaFadeinFSR F 0.1 250,-50]
+[charaFace A 6]
+[charaFadeinFSL A 0.1 -250,-50]
+
+[charaFadeout R 0.1]
+[charaFadeout I 0.1]
+
+＠ヘファイスティオン
+…………。
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaTalk H,A]
+[charaFadeout Q 0.6]
+[charaFadeout H 0.6]
+[wt 0.9]
+
+[charaTalk A]
+[bgm BGM_EVENT_5 0.1]
+
+
+＠テュフォン・エフェメロス
+……何よ。あんた。[r]ずっとこっちを見て、何のつもり？
+[k]
+
+[charaTalk F]
+[charaFace F 0]
+
+＠ヘファイスティオン
+別に。何の意図もない。
+[k]
+
+[charaTalk A]
+[charaFace A 7]
+
+＠テュフォン・エフェメロス
+本当に？　ずいぶん熱心だから、[r]ろくでもない学者の類かと思ったわよ。
+[k]
+
+[charaFace A 1]
+
+＠テュフォン・エフェメロス
+神代の果実と竜の混じり物だなんて、[r]さぞあいつらの興味を掻き立てるでしょうし。
+[k]
+
+[charaTalk F]
+[charaFace F 12]
+
+＠ヘファイスティオン
+ああ、そういうヤツもいるだろうな。[r]私にも何人か心当たりがいるよ。
+[k]
+
+＠ヘファイスティオン
+そういう[#輩:やから]に被害に遭わされたなら、[r]同情しよう。
+[k]
+
+[charaFace F 0]
+＠ヘファイスティオン
+だが、私にはあまり関係ない。
+[k]
+
+[charaFace F 7]
+
+＠ヘファイスティオン
+そもそも、混じり物という意味では[r]私も同じ立場だからな。
+[k]
+
+[charaTalk A]
+[charaFace A 5]
+
+＠テュフォン・エフェメロス
+一[messageShake 0.05 1 2 0.5]緒にしないでよ！
+[k]
+
+[messageShakeStop]
+[charaFace F 0]
+[charaFace A 14]
+
+＠テュフォン・エフェメロス
+あんたは歴史に埋もれた名無しと[r]よく分からない魔術の何かが合わさっただけでしょ。
+[k]
+
+
+[charaFace A 19]
+
+＠テュフォン・エフェメロス
+私は、神話にも名高き太祖竜テュフォンと[#無常の実:エ フ ェ メ ロ ス]。[r]格の違いなんて説明するまでもないはずよ。
+[k]
+
+[charaTalk F]
+[charaFace F 0]
+
+＠ヘファイスティオン
+ことさら、否定する気は起きないな。[r]言ってる通り、おまえは偉大な存在だろうとも。
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 26]
+[wt 1.0]
+
+[charaFace A 23]
+
+＠テュフォン・エフェメロス
+……む、ううー。
+[k]
+
+[charaFace A 10]
+[charaPut M 0,0]
+[charaFadeTime M 0.2 0.5]
+
+＠テュフォン・エフェメロス
+（これだから神代の魔術師はやりにくいったら）
+[k]
+
+[charaFace A 30]
+
+＠テュフォン・エフェメロス
+（神とか竜とかの相手に慣れすぎてる……！）
+[k]
+
+[messageOff]
+
+[branchQuestClear lblClear01b 94086921]
+
+[branch lblClear01a]
+
+
+[label lblClear01b]
+
+[charaDepth M 2]
+[charaDepth A 3]
+[charaDepth Q 4]
+[charaDepth H 6]
+[charaDepth R 7]
+[charaDepth I 8]
+
+[charaScale H 1.2]
+[charaScale Q 1.2]
+
+[charaTalk H,A]
+
+[charaFace H 0]
+[charaFadeinFSR H 0.7 200,-30]
+[charaFadein Q 0.7 -120,-270]
+[wt 0.7]
+
+[charaFadeout M 0.2]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 0.4]
+[bgmStop BGM_EVENT_5 1.5]
+
+＠H：ヘファイスティオン
+ただおまえ、[%1]について[r]何か思うところがあるのか？
+[k]
+
+[messageOff]
+
+
+[charaScale I 1.2]
+[charaScale R 1.2]
+
+[charaTalk H,I]
+
+[charaFace I 6]
+[charaFadeinFSL I 0.5 -200,-30]
+[charaFadein R 0.5 120,-270]
+[wt 1.2]
+[bgm BGM_MAP_127 0.1]
+
+[charaFaceFade I 1 0.2]
+[wt 1.1]
+
+[charaFace I 21]
+
+
+＠I：テュフォン・エフェメロス
+な、何よ！[r]別にないわよそんなの！
+[k]
+
+[messageOff]
+[charaTalk H,I]
+[charaFace H 1]
+
+[charaFadeTime I 0.4 0]
+[charaFadeTime R 0.4 0]
+[wt 0.5]
+
+＠H：ヘファイスティオン
+そうか。私はあるぞ。カルデアにある限りは[r]運命を分かち難くなってしまったからな。
+[k]
+
+
+
+[messageOff]
+[charaTalk I,H]
+[charaFace I 26]
+[charaFadeTime I 0.4 1.0]
+[charaFadeTime R 0.4 1.0]
+[wt 1.2]
+
+[charaFaceFade I 23 0.2]
+[wt 1.0]
+
+[charaFace I 27]
+
+＠I：テュフォン・エフェメロス
+は[messageShake 0.05 2 3 0.6]ああああああ！　[wt 0.8][messageShake 0.05 2 3 0.3]何それ！[wt 0.6][messageShake 0.05 2 3 0.3]　何それ！[wt 0.6][messageShake 0.05 2 3 0.4][r]破廉恥じゃないの！
+[k]
+
+[messageOff]
+[charaTalk H,I]
+[charaFace H 7]
+
+[charaFadeout I 0.4]
+[charaFadeout R 0.4]
+[wt 0.4]
+
+[charaFace A 30]
+[charaFadein A 0.1 0,-50]
+
+[wt 0.1]
+
+＠H：ヘファイスティオン
+一体、何を妄想してる？[r]戦友ならば当然だろう。
+[k]
+
+[charaDepth M 5]
+
+[charaPut M 0,0]
+[charaFadeTime M 0.2 0.5]
+
+[charaFace H 0]
+
+＠H：ヘファイスティオン
+（テュフォン・エフェメロス……[r]　太祖竜テュフォンが喰らった無常の実か）
+[k]
+
+＠H：ヘファイスティオン
+（運命の女神たちが作った、願いが叶わなくなる実。[r]　ある種の反聖杯、反願望機）
+[k]
+
+＠H：ヘファイスティオン
+（英霊複合体であるハイ・サーヴァントと考えても[r]　相当特異かつ上位の個体ではあるだろう）
+[k]
+
+
+
+
+[branch lblConf01]
+
+
+[label lblClear01a]
+[bgmStop BGM_EVENT_5 1.0]
+
+[charaDepth M 2]
+[charaDepth A 3]
+[charaDepth Q 4]
+[charaDepth H 6]
+[charaDepth R 7]
+[charaDepth I 8]
+
+[charaScale H 1.2]
+[charaScale Q 1.2]
+
+[charaTalk H,A]
+
+[charaFace H 0]
+[charaFadeinFSR H 0.7 200,-30]
+[charaFadein Q 0.7 -120,-270]
+[wt 0.7]
+
+[charaFadeout M 0.2]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 0.4]
+
+＠H：ヘファイスティオン
+ただ、おまえ、[r]ライネスやグレイとは何か縁があったのか？
+[k]
+
+
+[messageOff]
+[charaScale I 1.2]
+[charaScale R 1.2]
+
+[charaTalk H,I]
+
+[charaFace I 9]
+[charaFadeinFSL I 0.5 -200,-30]
+[charaFadein R 0.5 120,-270]
+[wt 1.3]
+
+[charaFace I 22]
+
+[bgm BGM_SHINYAMA_1 0.1]
+
+＠I：テュフォン・エフェメロス
+そのことなら、私だけど、私じゃないわ。[r]テュフォンの[#視点]だと、そういう可能性も見えただけ。
+[k]
+
+[messageOff]
+[charaDepth M 5]
+
+[charaTalk H,I]
+[charaFace H 0]
+
+[charaPut M 0,0]
+[charaFadeTime M 0.4 0.5]
+
+[charaFadeout I 0.4]
+[charaFadeout R 0.4]
+[wt 0.5]
+
+＠H：ヘファイスティオン
+（……太祖竜テュフォンといえば、[r]　主神ゼウスの権能を強奪していたな）
+[k]
+
+＠H：ヘファイスティオン
+（だったら、別の世界の出来事でも[r]　閲覧している可能性があるか）
+[k]
+
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[wt 0.1]
+[fadeout white 0.7]
+[bgm BGM_SHINYAMA_1 0.7 0.4]
+[wait fade]
+
+[charaFadeout M 0.1]
+[charaFadeout H 0.1]
+[charaFadeout Q 0.1]
+
+[charaDepth Y 10]
+
+[charaPut Y 1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+[wt 0.4]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.2]
+
+＠グレイ
+テュフォン・エフェメロスさんは、太祖竜テュフォンが[r]喰らった[#無常の実:エ フ ェ メ ロ ス]が元になった方です。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠ライネス
+無常の実。もしくは無常の果実。[r]運命の女神たちが作り上げた呪物だね。
+[k]
+
+＠ライネス
+絶対に願いが叶わなくなる果実。[r]ある意味の反聖杯、反願望機だ。
+[k]
+
+
+[messageOff]
+[fadeout white 0.7]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[charaPut Y 2000,2500]
+[charaEffectDestroy Y bit_sepia01_depth_fs]
+
+[charaPut M 0,0]
+[charaFadeTime M 0 0.5]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadeinFSR H 0.1 200,-30]
+[charaFadein Q 0.1 -120,-270]
+
+[charaFace A 30]
+[charaFadein A 0.1 0,-50]
+
+[wt 0.4]
+
+[fadein white 0.7]
+[bgm BGM_SHINYAMA_1 0.7 1.0]
+[wait fade]
+[wt 0.2]
+
+＠H：ヘファイスティオン
+（グレイたちの話とも、だいたい一致する）
+[k]
+
+＠H：ヘファイスティオン
+（英霊複合体であるハイ・サーヴァントとしても[r]　相当特異かつ上位の個体ではあるだろう）
+[k]
+
+
+
+[label lblConf01]
+
+[messageOff]
+[charaTalk A,H]
+
+[charaFadeout M 0.7]
+[charaFadeout H 0.7]
+[charaFadeout Q 0.7]
+
+[wt 1.0]
+[charaMoveReturn A 0,-54 0.9]
+[wt 1.6]
+
+[charaFace A 0]
+
+＠テュフォン・エフェメロス
+まあいいわ。[r]あんたと言い合うようなことじゃないし。
+[k]
+
+[charaFace A 1]
+
+＠テュフォン・エフェメロス
+だけど、そんなことより、[r]もっと大事なことがあるんじゃないの？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+＠ヘファイスティオン
+イプシロンのことか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_SHINYAMA_1 1.5]
+[bgmStop BGM_MAP_127 1.5]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 0,-50]
+
+＠テュフォン・エフェメロス
+それもあるけどね……
+[k]
+
+
+[messageOff]
+[charaDepth A 2]
+[charaDepth R 3]
+[charaDepth I 4]
+[charaDepth F 2]
+
+[charaTalk A,I]
+[charaFace I 10]
+[charaFadein I 1.0 -30,-30]
+[charaFadein R 1.0 -30,-270]
+
+[charaMove I 0,-30 10.0]
+[charaMove R 0,-270 10.0]
+
+[wt 1.0]
+
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+[charaFadeout A 0.1]
+[wt 0.6]
+
+[bgm BGM_MAP_10 0.1]
+
+＠I：テュフォン・エフェメロス
+……罪なるかな。[wt 0.8][#咎:とが]なるかな。[wt 0.8]悪なるかな。
+[k]
+
+[messageOff]
+[charaTalk I,F]
+[charaFadeout R 0.6]
+[charaFadeout I 0.6]
+[wt 0.8]
+
+＠ヘファイスティオン
+なんだ、それは？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 0,-50]
+
+＠テュフォン・エフェメロス
+願いの本質よ。[r]おまえたちの願いなんて、みんな等価。
+[k]
+
+[charaFace A 7]
+
+＠テュフォン・エフェメロス
+等しく罪で、[#咎:とが]で、悪の源泉そのものよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+
+＠ヘファイスティオン
+…………。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_MAP_10 1.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[pictureFrameTop]
+
+[charaDepth B 1]
+[charaDepth J 2]
+[charaDepth W 3]
+[charaDepth X 4]
+
+[scene 109600]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_221 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠ライネス
+やれやれ、小島といってもそこそこ広いな！
+[k]
+
+＠ライネス
+しらみ潰しにあたってたら、[r]夜までかかりかねん。
+[k]
+
+[charaFace B 0]
+
+＠ライネス
+イプシロンは飛んで、[r]空から探すわけにはいかないか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠イプシロン
+うーん、できますけど、オススメしませんよ。[r]テュフォン・ネオスに見つかったら、終わりでしょう？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠ライネス
+状況判断が正しいのが嫌だな！
+[k]
+
+[charaFace B 5]
+
+＠ライネス
+仕方ない。[r]こいつを使ってみるか。
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[charaScale J 1.15]
+[cameraMoveEase 0,-20 1.0 easeOutSine 1.2]
+[bgm BGM_EVENT_221 1.2 0]
+[wt 1.2]
+
+[charaDepth B 2]
+[charaDepth J 3]
+[charaDepth W 4]
+[charaDepth X 5]
+
+
+[charaPut W 3,115]
+[charaEffect W bit_talk_ranmaru_eye1]
+[charaPut X -46,106]
+[charaEffect X bit_talk_ranmaru_eye1]
+[wt 0.1]
+
+[cueSe SE_25 25_ade1196]
+[wt 0.1]
+
+[charaFace B 15]
+
+[charaFace J 15]
+[charaPut J 0,25]
+[charaFadeTime J 0 0.8]
+[charaFadeout J 0.6]
+[wt 2.1]
+
+？1：魔眼……！
+？！
+
+[bgm BGM_REQUIEM 0.1]
+
+＠ライネス
+それこそ、両儀式の魔眼などと違って、[r]魔力を追う程度の、平凡な代物だがね。
+[k]
+
+＠ライネス
+疑似サーヴァントになった今でも頭痛を伴うんだが、[r]これでそこそこ便利なのさ。
+[k]
+
+[messageOff]
+[charaFaceFade B 20 0.2]
+[wt 0.6]
+
+
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_REQUIEM 0.7 0.5]
+[wait wipe]
+
+[cameraHome 0]
+[charaFadeout B 0.1]
+[pictureFrameTop cut063_cinema]
+[subCameraOn 1]
+[subCameraFilter #A inversion]
+[subRenderScale #A 1.01]
+[charaLayer O sub #A]
+[charaLayer P sub #A]
+[charaLayer V sub #A]
+[charaLayer W sub #A]
+[charaLayer X sub #A]
+[charaDepth O 1]
+[charaDepth P 2]
+[charaDepth V 3]
+[charaDepth W 4]
+[charaDepth X 5]
+[charaScale P 1.6]
+[charaFadein O 0.1 -80,-280]
+[charaFadein V 0.1 0,-580]
+[subRenderFadein #A 0.1 0,0]
+[charaMove O 0,-280 5.0]
+[wt 0.5]
+
+[wipein openEye 0.8 1.0]
+[se ad805]
+[seVolume ad805 0 0]
+[seVolume ad805 0.8 0.1]
+[wait wipe]
+
+[wt 2.5]
+[charaFadein P 0.6 -352,-375]
+[charaMove P -400,-375 3.0]
+[wt 3.4]
+[charaPut W 0,0]
+[charaEffect W bit_talk_light_sphere2]
+[subRenderMoveScale #A 1.1 4.0]
+[wt 3.0]
+
+[wipeout openEye 0.8 1]
+[seStop ad805 0.8]
+[wait wipe]
+
+[pictureFrameTop]
+[subRenderFadeout #A 0.1]
+[charaTalk B]
+[charaFace B 20]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_REQUIEM 0.7 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+＠ライネス
+ああ、見える。[r]確かにテュフォンと似た波動だ。
+[k]
+
+[charaFace B 19]
+
+＠ライネス
+うっすらとだが、[r]丘の方に痕跡が続いてるな。
+[k]
+
+？1：よし、行こう！
+？！
+
+
+[messageOff]
+[cueSe SE_21 21_ad1065]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_REQUIEM 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaDepth C 1]
+[charaDepth B 1]
+[charaDepth D 1]
+[charaDepth S 2]
+[charaDepth K 3]
+[charaDepth L 4]
+[charaDepth X 5]
+
+
+[scene 251300]
+
+[wt 0.5]
+[cueSeStop 21_ad1065 1.0]
+[wt 2.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[bgm BGM_EVENT_141 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠ライネス
+結構、歩くなこれは……[r]道も狭いし、気をつけたまえよ、我が弟子。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠グレイ
+……師匠だと、あっという間にへばりそうです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ライネス
+おっと、実感のこもった言葉だ！
+[k]
+
+[charaFace B 0]
+
+＠ライネス
+いくら兄上でも、疑似サーヴァントになった今なら、[r]『強化』の魔術ぐらいまともに使えると思うが……
+[k]
+
+＠ライネス
+ああいや、こういうのは[r]肉体の感覚に引っ張られがちだからな。
+[k]
+
+[charaFace B 8]
+
+＠ライネス
+フィールドワークがトラウマになってれば、[r]今の兄上でも醜態を晒してくれるかもしれん。
+[k]
+
+[messageOff]
+[charaFaceFade B 14 0.2]
+[wt 0.6]
+
+＠B：司馬懿
+ほう、孔明の器の醜態か、[r]それは、俺もぜひ見たいな。
+[k]
+
+[messageOff]
+[charaFaceFade B 0 0.2]
+[wt 0.6]
+
+＠ライネス
+趣味が合いますねえ、[#司馬懿:し　ば　い]どの！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_141 1.5]
+
+[charaTalk off]
+[charaFadein S 0.4 -100,-300]
+[charaMoveEase S 0,-300 0.5 easeOutSine]
+[wt 0.7]
+[charaFace K 0]
+[charaFadein K 0.4 -250,0]
+[se ade255]
+[wt 0.3]
+[charaFace L 0]
+[charaFadein L 0.4 250,0]
+[wt 0.6]
+[se ad1027]
+[cueSe SE_24 24_ad1395]
+[cueSeVolume 24_ad1395 0 0.5]
+[shake 0.05 1 2 0.4]
+[wt 0.6]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[shake 0.05 1 2 0.4]
+[charaPut X 0,0]
+[charaEffect X bit_talk_41_fs 0,0]
+[charaMoveScale K 1.5 0.3]
+[charaMoveScale L 1.5 0.3]
+[charaMove K -250,50 0.3]
+[charaMove L 250,50 0.3]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaFadeout K 0.3]
+[charaFadeout L 0.3]
+[wt 0.4]
+[charaPut X 2500,2500]
+[charaEffectStop X bit_talk_41_fs]
+[blurOff motion 0.1]
+[charaFace B 2]
+[wt 0.1]
+[charaFadeout S 0.4]
+[charaFadeout K 0.4]
+[charaFadeout L 0.4]
+[seStop ad1027 0.4]
+[cueSeStop 24_ad1395 0.4]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk B]
+[bgm BGM_EVENT_80 0.1]
+
+＠ライネス
+おっと、話してる場合じゃなくなった！[r]周囲に[#棲息:せいそく]した怪物か？！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 50]
+[charaFadein D 0.1 1]
+
+＠イプシロン
+私に任せてください！[r]マスターの[&お兄さん:お姉さん]！
+[k]
+
+[charaFace D 51]
+
+＠イプシロン
+このぐらいの魔物、[r]バーンと蹴散らしちゃいます！
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

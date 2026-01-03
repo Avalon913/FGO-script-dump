@@ -1,0 +1,1530 @@
+
+
+＄94-14-15-05-3-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 28010001 1 ダンテ]
+[charaSet B 1008300 1 セレブな客Ｂ]
+[charaSet C 1098239320 1 カドック]
+[charaSet D 1098257800 1 マシュ]
+[charaSet E 1098257310 1 ダ・ヴィンチ]
+[charaSet F 1098211400 1 客]
+
+[charaSet G 7013000 1 清姫]
+[charaSet H 2001000 1 エミヤ]
+[charaSet I 1019001 1 ラーマ]
+
+[charaSet J 1098224300 1 岡田以蔵]
+[charaSet K 1057000 1 セタンタ]
+[charaSet L 1098255110 1 ゴルドルフ]
+[charaSet M 1038000 1 謎の富豪]
+[charaSet N 7046000 1 謎の不動産業者]
+[charaSet O 2023001 1 謎のアラフィフ]
+
+[charaSet P 1038000 1 イアソン]
+[charaSet Q 7046000 1 ドゥリーヨダナ]
+[charaSet R 2023001 1 モリアーティ]
+[charaScale R 1.2]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用2]
+
+[sceneSet U 10000 1]
+[charaScale U 1.1]
+
+[sceneSet V 243000 1]
+[charaScale V 1.1]
+[sceneSet W 132900 1]
+[charaScale W 1.1]
+
+[charaPut T 2000,2500]
+[charaEffect T bit_talk_skip_noise02]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 243000]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_221 0.1]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠ダンテ
+よし、時間が遅くなったけどＶＩＰについて[r]説得しに行こう……。
+[k]
+
+？1：じゃあテニスコートへ！
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_221 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+
+[scene 243401]
+
+[charaTalk depthOff]
+[charaDepth T 8]
+[charaDepth U 7]
+
+[charaDepth B 2]
+[charaDepth A 2]
+
+[charaPut T 1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+[wt 1.5]
+
+[bgm BGM_MAP_42 1.0]
+[fadein black 1.0]
+[se ad234]
+[wait fade]
+
+[wt 0.8]
+[seStop ad234 0.2]
+[wt 0.3]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+[se ad235]
+[wt 1.0]
+[seStop ad235 0.2]
+[wt 0.5]
+
+[charaFadein U 0.5 1]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+
+
+[branchRouteSelect battle_select_khm 94141503 1000]
+[branchRouteSelect battle_select_emy 94141503 2000]
+[branchRouteSelect battle_select_rma 94141503 3000]
+
+
+[label battle_select_khm]
+
+[charaTalk G]
+[charaPutFSR G 256,-50]
+[charaFace G 0]
+[charaFadeTime G 0.1 0.7]
+[charaFace B 4]
+[charaFadeinFSL B 0.1 -256,-50]
+[wt 0.5]
+
+[charaFadeout U 0.5]
+[wt 0.7]
+
+[se ad235]
+[wt 1.0]
+[seStop ad235 0.2]
+[wt 0.35]
+
+[charaFace G 5]
+[se ad235]
+[wt 0.7]
+[seStop ad235 0.2]
+[wt 0.35]
+
+[charaFace G 2]
+[se ad235]
+[wt 0.7]
+[seStop ad235 0.2]
+[wt 0.35]
+
+[charaTalk B]
+[charaFace B 0]
+[se ad234]
+[wt 1.0]
+[seStop ad234 0.2]
+[wt 0.5]
+
+[branch lblConf01]
+
+[label battle_select_emy]
+
+[charaTalk H]
+[charaPutFSR H 256,-50]
+[charaFace H 6]
+[charaFadeTime H 0.1 0.7]
+[charaFace B 4]
+[charaFadeinFSL B 0.1 -256,-50]
+[wt 0.5]
+
+[charaFadeout U 0.5]
+[wt 0.7]
+
+[se ad234]
+[wt 1.0]
+[seStop ad234 0.2]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[se ad234]
+[wt 0.7]
+[seStop ad234 0.2]
+[wt 0.35]
+
+[charaFace B 4]
+[se ad234]
+[wt 0.7]
+[seStop ad234 0.2]
+[wt 0.35]
+
+[charaTalk H]
+[charaFace H 1]
+[se ad234]
+[wt 1.0]
+[seStop ad234 0.2]
+[wt 0.5]
+
+[branch lblConf01]
+
+[label battle_select_rma]
+
+[charaTalk I]
+[charaPutFSR I 256,-50]
+[charaFace I 0]
+[charaFadeTime I 0.1 0.7]
+[charaFace B 4]
+[charaFadeinFSL B 0.1 -256,-50]
+[wt 0.5]
+
+[charaFadeout U 0.5]
+[wt 0.7]
+
+[se ad235]
+[wt 0.7]
+[seStop ad235 0.2]
+[wt 0.35]
+
+[charaFace I 1]
+[se ad235]
+[wt 0.7]
+[seStop ad235 0.2]
+[wt 0.35]
+
+[charaTalk B]
+[charaFace B 1]
+[se ad234]
+[wt 1.0]
+[seStop ad234 0.2]
+[wt 0.5]
+
+[charaTalk I]
+[charaFace I 2]
+[se ad235]
+[wt 1.0]
+[seStop ad235 0.2]
+[wt 0.5]
+
+[branch lblConf01]
+
+[label lblConf01]
+
+
+[fadeout black 1.0]
+[bgm BGM_MAP_42 1.0 0.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+
+[charaPut T 2000,2500]
+[charaEffectDestroy T bit_talk_skip_noise02]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_MAP_42 1.0 1.0]
+[wait fade]
+
+＠ダンテ
+[line 3]そういう訳で、我々からの助言は以上です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ジークフリート
+ありがとう、非常にためになった。[r]これから、妻と話し合おうと思う。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ダンテ
+愛とはまず、人を信じるところから始めないと[r]いけませんからね……フフ……ご武運を……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ジークフリート
+ああ！
+[k]
+
+？1：すみません、ちょっと待ってください
+？！
+
+[charaFace B 0]
+
+＠ジークフリート
+うん？
+[k]
+
+？1：実は……
+？！
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_MAP_42 1.0 0.5]
+[wait wipe]
+
+[charaFace B 1]
+[wt 1.0]
+
+[wipein rollLeft 1.0 1.0]
+[bgm BGM_MAP_42 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠ジークフリート
+なるほど。もちろん大丈夫だ、問題ない。
+[k]
+
+[charaFace B 4]
+
+＠ジークフリート
+もっとも……俺のような無骨な人間では、[r]華にもならないだろうが[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ダンテ
+……フフ、そこはほら……。[r]あなたの奥様がいらっしゃいますから……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ジークフリート
+ああ、なるほど。[r]……無論、クリームヒルトと一緒に行くよ。
+[k]
+
+
+[messageOff]
+[se ad60]
+[charaFadeout B 0.4]
+[seStop ad60 1.2]
+[wt 1.8]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ダンテ
+フフ……これであの二人も多分よし、と……。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.0]
+[bgmStop BGM_MAP_42 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 132900]
+
+[pictureFrameTop cut063_cinema]
+[wt 1.5]
+
+[charaScale C 1.1]
+[charaScale D 1.1]
+
+[charaDepth C 3]
+[charaDepth D 3]
+[charaDepth W 2]
+[charaTalk off]
+[charaFace C 13]
+[charaFadeinFSL C 0.1 -50,-50]
+[charaFadein W 0.1 50,-240]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_SENGOKU_1 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 13]
+
+＠カドック
+……。[r]……。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaMoveEaseFSL C -156,-50 1.0 easeOutSine]
+[charaMoveEase W -56,-240 1.0 easeOutSine]
+[charaFace D 0]
+[charaFadeinFSR D 0.7 362,-50]
+[charaMoveEaseFSR D 256,-50 1.0 easeOutSine]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 11]
+
+＠マシュ
+カドックさん、どうしました？
+[k]
+
+
+[charaTalk C]
+[charaFace C 0]
+
+＠カドック
+ああ、マシュか。丁度いい。[r]手伝ってくれないか。
+[k]
+
+
+[charaTalk D]
+[charaFace D 5]
+
+＠マシュ
+[FFFFFF]？[-]
+[k]
+
+[charaFace D 0]
+
+＠マシュ
+あの……ジニーを倒した時のですか？
+[k]
+
+
+[charaTalk C]
+[charaFace C 1]
+
+＠カドック
+ああ、直後に爆発が起きて混乱してるだろ。[r]その時の音声を解析しておきたいんだ。
+[k]
+
+＠カドック
+色々な事態が一斉に[#雪崩:な　だ]れ込んでいたからな。[r]また、何かあるかもしれないし……。
+[k]
+
+
+[charaTalk D]
+[charaFace D 6]
+
+＠マシュ
+わかりました。では、ご一緒させていただきますね！
+[k]
+
+
+[charaTalk C]
+[charaFace C 0]
+
+＠カドック
+ああ、頼む。
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_SENGOKU_1 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout W 0.1]
+
+[charaScale C 1.0]
+[charaScale D 1.0]
+
+
+[pictureFrame]
+
+[scene 243000]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_AMAZONES 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠ダンテ
+フフ……後は詐欺師とペテン師だったか……。[r]彼らとはあまり交流していなかったな……。
+[k]
+
+＠ダンテ
+あの二人が上手くやってくれていれば、[r]万事解決なんだが……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaPut S 1]
+[charaEffect S bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ダ・ヴィンチ
+あ、[%1][&君:ちゃん]にダンテ、[r]いいかい？
+[k]
+
+[charaFace E 31]
+＠ダ・ヴィンチ
+以蔵とセタンタ、やっぱり苦労してるみたいだ。[r]行ってみてあげて！
+[k]
+
+？1：はい！
+？！
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠ダンテ
+やはり苦戦していたか……。[wt 0.75][charaFace A 1][r]よし、行こうじゃないか……。
+[k]
+
+
+
+
+
+
+
+
+
+
+[messageOff]
+[se ade423]
+[se ade427]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_AMAZONES 1.0]
+[seStop ade423 1.5]
+[seStop ade427 1.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[charaSet G 1038000 1 謎の富豪]
+[charaSet H 7046000 1 謎の不動産業者]
+[charaSet I 2023001 1 謎のアラフィフ]
+
+[sceneSet V 243100 1]
+[charaScale V 1.3]
+[sceneSet W 243100 1]
+[charaScale W 1.3]
+[sceneSet X 243100 1]
+[charaScale X 1.3]
+[sceneSet Y 243100 1]
+[charaScale Y 1.3]
+
+[scene 243100]
+[wt 0.5]
+
+[subCameraOn 2]
+[charaLayer R sub #A]
+[charaLayer W sub #A]
+
+[charaLayer Q sub #B]
+[charaLayer X sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask10 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask16 5 255,255,255,255]
+
+[charaDepth W 1]
+[charaDepth R 3]
+[charaDepth X 1]
+[charaDepth Q 2]
+
+[charaScale R 1.2]
+[charaScale W 1.2]
+[charaScale Q 1.2]
+[charaScale X 1.2]
+
+[charaFace R 2]
+[charaFadein R 0.1 -25,225]
+[charaFadein W 0.1 150,0]
+
+[charaFace Q 5]
+[charaFadein Q 0.1 0,225]
+[charaFadein X 0.1 -150,0]
+
+[charaDepth V 4]
+[charaDepth P 5]
+
+[wt 0.5]
+
+[se ad93]
+[wt 0.5]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaScale P 1.2]
+[charaScale V 1.2]
+[charaTalk P]
+[charaFace P 2]
+[charaFadein P 0.3 0,-15]
+[charaFadein V 0.3 0,-275]
+[wt 0.4]
+
+[bgm BGM_EVENT_49 0.1]
+
+＠P：謎の富豪
+だから！　これは詐欺だろうがよ！
+[k]
+
+[messageOff]
+[charaTalk Q]
+[subRenderFadeinFSR #B 0.3 425,-150]
+[subRenderMoveEaseFSR #B 375,-250 0.3 easeOutSine]
+[wt 0.4]
+
+＠Q：謎の不動産業者
+はー！？[r]わし様の提案は健全そのものなんですけどー！？
+[k]
+
+[messageOff]
+[charaTalk R]
+[subRenderFadeinFSL #A 0.3 -425,-150]
+[subRenderMoveEaseFSL #A -375,-250 0.3 easeOutSine]
+[wt 0.3]
+
+[charaDepth K 2]
+[charaDepth J 3]
+[charaFace J 5]
+[charaFace K 4]
+[charaFadeinFSR J 0.1 2]
+[charaFadeinFSL K 0.1 0]
+[wt 0.1]
+
+＠R：謎のアラフィフ
+詐欺とは失敬な！　ホラちゃんと許可証もある！
+[k]
+
+[messageOff]
+[charaTalk R,J]
+[subRenderFadeout #A 0.5]
+[subRenderFadeout #B 0.5]
+[charaFadeout V 0.5]
+[charaFadeout P 0.5]
+[wt 0.5]
+
+[charaFadeout Q 0]
+[wt 0.15]
+[charaLayer Q normal]
+
+＠岡田以蔵
+斬ったらえい！　三人まとめて、斬り捨てちゃるき！
+[k]
+
+[charaFace K 12]
+
+＠セタンタ
+落ち着け以蔵兄！
+[k]
+
+[charaFace K 2]
+
+＠セタンタ
+とは言ってもオレも全っ然駄目だわこういうの！[r]マスター！　頼むーーー！
+[k]
+
+？1：お待たせ！　コンシェルジュです！
+？！
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaDepth I 2]
+[charaDepth H 3]
+[charaDepth G 4]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFace H 6]
+[charaFace I 4]
+[charaFadein G 0.1 1]
+[charaFadeinFSR H 0.1 350,0]
+[charaFadeinFSL I 0.1 -350,0]
+
+＠謎の富豪
+何だ。コンシェルジュの三人目かよ！[r]役立たずばっかり増えていくもんだな！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace J 9]
+[charaFace K 2]
+[charaFadeinFSR J 0.1 2]
+[charaFadeinFSL K 0.1 0]
+
+＠セタンタ
+何だとコラ！　以蔵兄はともかく、オレもか！！
+[k]
+
+[charaTalk J]
+
+＠岡田以蔵
+ほうじゃ！[r]……[wt 0.8][charaFace J 4]ん、わしはともかく？
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaDepth V 5]
+[charaDepth M 6]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFace H 6]
+[charaFace I 4]
+[charaFadein G 0.1 1]
+[charaFadeinFSR H 0.1 350,0]
+[charaFadeinFSL I 0.1 -350,0]
+[wt 0.6]
+
+？1：ひとまず話を聞かせてください
+？！
+
+[charaFace G 1]
+
+＠謎の富豪
+ああ、構わんとも！
+[k]
+
+[charaFace G 6]
+＠謎の富豪
+幸い、レストランの食事が良かったので、[r]腹は膨れている！
+[k]
+
+[charaFace G 23]
+＠謎の富豪
+慈悲深い俺様が、的確な説明をしてやろう！
+[k]
+
+[messageOff]
+[charaTalk G,M]
+
+[charaFace M 24]
+[charaScale M 1.2]
+[charaScale V 1.2]
+
+[charaFadein M 0.7 -180,-20]
+[charaFadein V 0.7 -100,-260]
+[charaMove M -80,-20 30.0]
+[charaMove V 0,-260 30.0]
+[wt 0.7]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.2]
+
+[charaTalk off]
+＠謎の富豪
+いいか、まず俺は[line 3]金持ちだ！
+[k]
+
+＠謎の富豪
+俺はミダス王も目じゃないレベルで稼いだ、[r]ウルトラスーパーリッチマンだ！
+[k]
+
+[charaFace M 6]
+
+＠謎の富豪
+で、そんな俺が閃いた。[r]この国にカジノを作れば……。
+[k]
+
+[charaFace M 7]
+
+＠謎の富豪
+世界に名高いカジノ立国になるんじゃないか、ってな。[r]最近じゃアメリカの……ベガスだっけか？
+[k]
+
+＠謎の富豪
+そんなとこも名を売り始めてるが、[r]今なら資本差で勝てる。
+[k]
+
+[charaFace M 12]
+
+＠謎の富豪
+……という訳で、土地が欲しくてな。[r]その取引先がペテン師のコイツだったって訳だ。
+[k]
+
+[messageOff]
+[charaDepth Y 7]
+[charaDepth Q 8]
+
+[charaScale Q 1.2]
+[charaScale Y 1.2]
+
+[charaFace Q 6]
+[charaFadein Q 0.7 180,-20]
+[charaFadein Y 0.7 100,-260]
+[charaMove Q 80,-20 30.0]
+[charaMove Y 0,-260 30.0]
+[wt 0.7]
+
+[charaFadeout M 0.1]
+[charaScale G 1.0]
+[charaDepth G 1]
+
+[charaDepth V 1]
+[charaDepth H 2]
+[charaDepth G 3]
+[charaFace H 13]
+[charaFace G 5]
+[charaFadeinFSR H 0 175,0]
+[charaFadeinFSL G 0 -175,0]
+[charaFadein V 0 -90,-260]
+[wt 0.2]
+
+＠謎の不動産業者
+誰がペテン師だ誰が。[r]わし様、これでも名うての不動産業者よ？
+[k]
+
+[charaFace Q 7]
+
+＠謎の不動産業者
+今回はこの国挙げてのビッグプロジェクトだ。[r]わし様も気合いを入れて臨んでいる……。
+[k]
+
+[charaFace Q 15]
+
+＠謎の不動産業者
+なーのーにー、目の前のリッチマンときたらさ！[r]カジノの建設計画がフワッフワなのよ！
+[k]
+
+[messageOff]
+[charaTalk Q,G]
+[charaFadeout Q 0.5]
+[charaFadeout Y 0.5]
+[wt 0.65]
+
+[charaTalk on]
+＠謎の富豪
+何だとコラ。
+[k]
+
+[charaFace G 2]
+＠謎の富豪
+おまえの方こそ持ってる土地の広さが、[r]曖昧なんだよ！
+[k]
+
+[charaFace G 10]
+＠謎の富豪
+土地の所有者との話し合いはついてんのか？[r]土壌の硬さは？
+[k]
+
+[messageOff]
+[charaTalk I]
+[charaFace I 1]
+[charaFadeinFSL I 0.3 -525,0]
+[charaMoveEaseFSL I -350,0 0.5 easeOutSine]
+[charaMoveEaseFSL G 0,0 0.5 easeOutSine]
+[charaMoveEaseFSR H 350,0 0.5 easeOutSine]
+[charaMoveEase V 90,-260 0.5 easeOutSine]
+[wt 0.7]
+
+＠謎のアラフィフ
+まあまあ二人とも。[r]ここは一つ私に免じてサ。
+[k]
+
+[charaTalk G,H]
+[charaFace H 5]
+[charaFace G 2]
+
+＠二人=spot[G,H]
+[messageShake 0.05 5 4 0.5]
+おまえが一番怪しい！[wt 0.4][charaFace I 3]
+[k]
+
+[charaFace G 12]
+
+＠謎の富豪
+この国の[#篤志家:と く し か]？[r]本当かよ。ちょっと慈善事業やってるツラじゃねえぞ。
+[k]
+
+[charaFace H 15]
+
+＠謎の不動産業者
+色々な組織に繋がってるようだが、[r]わし様、そういうのに関わりたくないんですけど？
+[k]
+
+[charaTalk I]
+[charaFace I 1]
+
+＠謎のアラフィフ
+ははは……まァまァ、まァまァ。
+[k]
+
+[charaFace I 5]
+
+＠謎のアラフィフ
+でも、カジノやるんだったらどっちみち[r]繋がりは必要でショ？
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace K 4]
+[charaFace J 15]
+[charaFadeinFSR J 0.1 2]
+[charaFadeinFSL K 0.1 0]
+
+＠岡田以蔵
+……な？[r]訳の分からん話じゃろが？
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaDepth L 3]
+[charaPut S 1]
+[charaTalk L]
+[charaFace L 9]
+[charaFadein L 0.1 1]
+
+＠ゴルドルフ
+いやまぁ、これは……アレだね……。[r]欲望とそれに群がる欲深い人間の織り成すドラマ……。
+[k]
+
+[charaFadeout L 0.1]
+[charaPut S 2000,2500]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 8]
+[charaFadeinFSR J 0.1 2]
+[charaFadeinFSL K 0.1 0]
+
+＠セタンタ
+どうする？　まとめて成敗するか？[r]以蔵兄の言う通りにするのは[#癪:しゃく]だけどさー。
+[k]
+
+[charaTalk J]
+[charaFace J 9]
+
+＠岡田以蔵
+こんガキ……。
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_49 1.5]
+
+[charaDepth E 2]
+[charaDepth S 9]
+[charaPut S 1]
+[charaTalk E]
+[charaFace E 36]
+[charaFadein E 0.1 1]
+[wt 0.55]
+
+？1：呼び出して欲しいサーヴァントがいるんですが
+？！
+
+[charaFace E 24]
+＠ダ・ヴィンチ
+アドバイスってこと？　わかった、誰だい？
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+[charaFadeout V 0.1]
+[charaPut S 2000,2500]
+
+[charaSet L 1098255100 1 ゴルドルフ]
+
+[scene 132900]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[se ad95]
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.4 1]
+[wt 0.4]
+[seStop ad95 0.2]
+[wt 0.4]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+＠G：イアソン
+は？　何だ？
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.15]
+
+[se ade74]
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.4 1]
+[wt 0.4]
+[seStop ade74 0.2]
+[wt 0.4]
+
+＠H：ドゥリーヨダナ
+わし様に似た感じの人間？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.15]
+
+[se ade422]
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.4 1]
+[wt 0.4]
+[seStop ade422 0.2]
+[wt 0.4]
+
+＠I：モリアーティ
+……ふむふむ。
+[k]
+
+＠I：モリアーティ
+特異点でたまにあるパターンだネ？[r]サーヴァントに似た感じの人間が出てくる現象。
+[k]
+
+[charaFace I 0]
+
+＠I：モリアーティ
+昔、私も見たような見てないような……。[r]今回は私がそれになったのか。
+[k]
+
+[charaFace I 4]
+
+＠I：モリアーティ
+しかし何故我々が集められたのか……。[r]……あー、もしかして。
+[k]
+
+＠I：モリアーティ
+マスター君、トレースして欲しいのカイ？[r]あ、やっぱりか。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠G：イアソン
+トレース？　おーい教授。[r]説明しろ説明。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠I：モリアーティ
+簡単な話サ。見ての通り、言い争っているのは、[r]我々に似た性質を持つ三人だ。
+[k]
+
+[charaFace I 0]
+
+＠I：モリアーティ
+で、あれば。
+[k]
+
+＠I：モリアーティ
+我々ならば[#実はこう言っている]という部分も[r]見極められるのではないカナ？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 18]
+[charaFadein G 0.1 1]
+
+＠G：イアソン
+いやいや、そりゃ無茶ってモンだろ。[r]赤の他人だぞ、一応。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠I：モリアーティ
+じゃ、いま何を言ってるか適当に言ってみてくんない？
+[k]
+
+[messageOff]
+[wipeout circleIn 1.0 1.0]
+[bgm BGM_HALLOWEEN_2021_1 1.0 0.5]
+[wait wipe]
+
+[charaFadeout R 0.1]
+[charaFadeout Q 0.1]
+
+[charaFadeout I 0.1]
+
+[scene 10000]
+[wt 0.2]
+
+[wipein circleIn 0.2 1.0]
+[wait wipe]
+
+[fadeout black 0.2]
+[wait fade]
+
+[sceneSet W 132900 1]
+[charaScale W 1.3]
+[sceneSet X 132900 1]
+[charaScale X 1.3]
+
+[subRenderScale #A 0.8]
+
+[subCameraFilter #A maskEdge cut359_mask33 5 255,255,255,255]
+
+[charaLayer M sub #A]
+[charaLayer W sub #A]
+
+
+[charaDepth M 5]
+[charaDepth W 2]
+
+[charaScale M 1.2]
+[charaScale W 1.2]
+
+[charaFace M 24]
+[charaFadein M 0.1 350,80]
+[charaFadein W 0.1 0,-175]
+
+
+[scene 243100]
+[wt 0.2]
+
+[fadein black 1.0]
+[bgm BGM_HALLOWEEN_2021_1 1.0 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaDepth K 1]
+[charaDepth G 4]
+[charaDepth U 3]
+[charaDepth V 2]
+
+[charaTalk off]
+[charaScale G 1.2]
+[charaScale V 1.2]
+
+[charaFace G 2]
+[charaFadein G 0.5 -230,-20]
+[charaFadein V 0.5 -50,-240]
+[charaMove G -180,-20 0.5]
+[charaMove V 0,-240 0.5]
+[wt 0.5]
+
+[charaFace K 6]
+[charaFadein K 0.1 1]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+＠謎の富豪
+だーかーらーなー！　カネはもう準備してるんだよ！[r]とっくに動いてんだから、そちらの保証が欲しいんだよ！
+[k]
+
+[messageOff]
+
+[charaPut U 1]
+[charaFadeTime U 0.4 0.7]
+[charaFaceFade G 24 0.4]
+[wt 0.5]
+
+＠G：イアソン（翻訳）
+カネは準備できてないけど、[r]保証があれば頑張って動かしたいなあ。
+[k]
+
+[messageOff]
+[charaTalk M]
+[charaFace M 22]
+[subRenderFadein #A 0.4 -75,-75]
+[subRenderMove #A -25,-75 0.4]
+[wt 0.5]
+
+＠M：イアソン
+……うわ、なんか普通に理解できたわ。
+[k]
+
+[messageOff]
+[charaTalk K,M]
+[subRenderFadeout #A 0.5]
+[charaFadeout V 0.5]
+[charaFadeout G 0.5]
+[charaFadeout U 0.5]
+[wt 0.5]
+[charaScale G 1.0]
+[wt 0.1]
+
+＠セタンタ
+わはは、しょうもねー。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠謎の富豪
+おい、何か言ったか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 10]
+[charaFadein K 0.1 1]
+
+＠セタンタ
+いえいえ、何でもないっす。なんでも。
+[k]
+
+[messageOff]
+[charaDepth H 7]
+[charaDepth U 6]
+[charaDepth V 5]
+
+[charaScale H 1.2]
+[charaScale V 1.2]
+
+[charaTalk H,K]
+[charaFace H 5]
+[charaFadein H 0.5 330,-20]
+[charaFadein V 0.5 50,-250]
+[charaMove H 280,-20 0.5]
+[charaMove V 0,-250 0.5]
+[wt 0.5]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+＠謎の不動産業者
+で、だ。せめて見せ金用意しろよっつーの！[r]こっちも土地は奮発するからさ！
+[k]
+
+[messageOff]
+
+[charaPut U 1]
+[charaFadeTime U 0.4 0.7]
+[charaFaceFade H 2 0.4]
+[wt 0.4]
+
+[charaDepth I 4]
+[charaDepth Y 2]
+
+[charaScale I 1.2]
+[charaScale Y 1.2]
+
+[charaFace I 1]
+[charaFadein I 0.1 -230,0]
+[charaFadein Y 0.1 -50,-240]
+[wt 0.1]
+
+＠H：ドゥリーヨダナ（翻訳）
+懐事情は苦しいし、土地はまだ取得できてないけど、[r]とにかくこいつを巻き込まないと。
+[k]
+
+[messageOff]
+[charaTalk I,H]
+
+[charaMove I -180,0 0.5]
+[charaMove Y 0,-240 0.5]
+[charaFadeout V 0.5]
+[charaFadeout H 0.5]
+[charaFadeout U 0.5]
+[wt 0.5]
+
+[charaScale H 1.0]
+[wt 0.1]
+
+＠謎のアラフィフ
+フフフ……。いずれにせよ、私の力は必要だヨ？[r]私の繋がりは広いからネ……。
+[k]
+
+[messageOff]
+[charaDepth U 3]
+[charaPut U 1]
+[charaFadeTime U 0.4 0.7]
+[charaFaceFade I 5 0.4]
+[wt 0.5]
+
+＠I：モリアーティ（翻訳）
+実は繋がりそんなにないけどハッタリでいけるかァ。[r]いけるよネ。うんいける。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_HALLOWEEN_2021_1 1.0]
+[wait fade]
+
+[charaFadeout I 0.1]
+[charaFadeout U 0.1]
+[charaFadeout Y 0.1]
+
+[charaFadeout M 0.1]
+[charaFadeout W 0.1]
+[subCameraOff]
+[charaLayer M normal]
+[charaLayer W normal]
+[charaScale M 1.0]
+[charaScale W 1.0]
+
+[scene 10000]
+[wt 0.2]
+
+[fadein black 0.2]
+[wait fade]
+
+[wipeout circleIn 0.2 1.0]
+[wait wipe]
+
+[scene 132900]
+
+[charaTalk off]
+[charaDepth H 2]
+[charaDepth G 3]
+
+[charaDepth H 1]
+[charaDepth G 1]
+[charaFace G 2]
+[charaFace H 4]
+[charaFadeinFSR H 0.1 2]
+[charaFadeinFSL G 0.1 0]
+[wt 0.2]
+
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_146 0.1]
+
+＠二人
+[messageShake 0.05 4 3 0.6]
+ただの胡散臭いアラフィフじゃねえか！！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaScale I 1.0]
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠I：モリアーティ
+失敬な！　君たちも似たようなもんじゃないかネ！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 6]
+[charaFadein L 0.1 1]
+
+＠ゴルドルフ
+つまり……三人のペテン師が、自分が得しようとして[r]一文にもならないことを喋っている……？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠I：モリアーティ
+平たく言うとそういう事になる……カナ……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠カドック
+駄目だろ……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠I：モリアーティ
+うん……。
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_146 1.0 0.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+
+[scene 243100]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_146 1.0 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaPut S 1]
+[charaTalk E]
+[charaFace E 30]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+以上がカルデアの見解だよ。
+[k]
+
+
+？1：ひどい、ひどすぎる
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠ダンテ
+……え、この三人滅茶苦茶陰謀振りまいているお顔で……[r]誰一人として……金持ってないの……？
+[k]
+
+[charaFace A 18]
+＠ダンテ
+……。[r]……。
+[k]
+
+[charaFace A 10]
+
+＠ダンテ
+とりあえず……殴って説得しよう……。[r]不毛すぎる……。
+[k]
+
+？1：悲しい争いは止めよう……！
+？！
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_146 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

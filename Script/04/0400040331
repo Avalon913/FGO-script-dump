@@ -1,0 +1,116 @@
+
+
+
+
+＄04-00-04-03-3-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098276910 1 マシュ]
+[charaSet B 33002001 1 アンキ]
+
+[sceneSet I 225800 1]
+
+[scene 223810]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_explosion_triple02]
+[effect bit_talk_impactlanding]
+[effect bit_talk_sand_geyser]
+
+[shake 0.02 5 5 1.5]
+[se ad864 0.4]
+[cueSe SE_24 24_ad1425]
+[se ad135 0]
+[seVolume ad135 1.0 0.1]
+[wt 1.5]
+[shake 0.03 2 2 2.5]
+[effectStop bit_talk_sand_geyser]
+[wt 2.0]
+
+[seVolume 24_ad1425 1.0 0.4]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[scene 223800]
+[wt 0.3]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[cueSeStop 24_ad1425 3.0]
+[seStop ad135 3.0]
+[wt 1.0]
+
+？1：はぁ[line 3]はぁ[line 3]はぁ[line 3]
+？2：（簡易召喚が、複数できた[line 3]？）
+
+？！
+
+[bgm BGM_MAP_63 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠マシュ
+敵大型兵器、沈黙しました。[r]……でも……
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1]
+[wait wipe]
+[charaTalk depthOff]
+[charaDepth B 4]
+[charaDepth I 3]
+[charaDepth A 1]
+
+[charaScale B 1.3]
+[charaScale I 1.3]
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 0,20]
+[charaFadein I 0.1 0,-320]
+[wt 0.3]
+[wipein rectangleStripDownToUp 0.4 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+＠アンキ・エレシュキガル
+ふん。やればできるじゃない。[r]人間にしては、だけど。
+[k]
+
+＠アンキ・エレシュキガル
+今の戦いに免じてこの場は見逃してやる。[r]しばらくの間、生き延びてあがくがいい。
+[k]
+
+＠アンキ・エレシュキガル
+[line 3]じゃあね。[r]この状況じゃ再会する事は、まあ、ないでしょうけど。
+[k]
+
+[messageOff]
+[effect bit_talk_mgn_light02 0,100]
+[se ad856 0.7]
+[cueSe SE_21 21_ade546]
+[cueSe SE_21 21_ade576]
+[seStop 21_ade576 2.0]
+[charaFadeout B 0.2]
+[wt 2.7]
+
+？1：……エレシュキガル……
+？2：……なんてこと[&だ:]……（務まるの[&だろうか:かな]……）
+
+？！
+
+[wt 0.2]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_63 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

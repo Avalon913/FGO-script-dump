@@ -1,0 +1,510 @@
+
+
+
+＄94-08-88-09-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 25013001 1 ワンジナ]
+[charaSet B 1098278400 1 カレン]
+[charaSet C 25005000 1 ボイジャー]
+[charaSet D 6031001 1 刑部姫]
+[charaSet E 7042000 1 クリームヒルト]
+[charaSet F 2022000 1 アルテラサンタ]
+[charaSet G 1098243000 1 エリセ]
+[charaSet I 98110000 1 柳生但馬守]
+[charaSet J 25013000 1 ワンジナ_第一]
+
+[sceneSet H 114600 1]
+[charaScale H 1.6]
+[sceneSet K 114600 1]
+[charaScale K 1.6]
+
+[imageSet L cut490_kar_txt 1]
+[imageSet M cut490_kar_txt 1]
+
+[charaSet O 2022000 1 アルテラサンタ1]
+
+[scene 136300]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.6]
+
+[se ade248]
+[seVolume ade248 0 0]
+[seVolume ade248 1.0 1.0]
+[se ad799]
+[seVolume ad799 0 0]
+[seVolume ad799 1.0 1.0]
+[cueSe SE_22 22_ad1182]
+[seVolume 22_ad1182 0 0]
+[seVolume 22_ad1182 1.0 0.5]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+[wt 1.5]
+
+[seStop ade248 1.0]
+[seStop ad799 1.0]
+[seStop 22_ad1182 1.0]
+
+
+[scene 114600]
+
+[charaTalk depthOff]
+
+[charaDepth H 1]
+[charaDepth K 2]
+
+[charaFadein H 0.1 -250,-350]
+[wt 1.5]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+[se ade242]
+
+[wt 1.2]
+
+[charaFadein K 0.7 0,-200]
+[wt 0.7]
+[se ade242]
+
+[charaFadeout H 0.1]
+[wt 0.7]
+
+[charaFadeout K 0.7]
+[wt 0.7]
+[se ad186]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_146 0.1]
+
+[charaTalk G]
+[charaFace G 23]
+[charaFadein G 0.1 1]
+
+＠エリセ
+階段を上ると[line 3][r]そこは、異世界だった……？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠刑部姫
+クリームヒルトさん。[r]ツッコミお願いします。
+[k]
+
+＠刑部姫
+[#姫:わたし]は不貞寝するので……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠クリームヒルト
+他人にツッコミを任せるなんて、[r]サーヴァント失格よ。まあやるけど。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠ボイジャー
+てきびしいなあ。[r]でも、やるんだ。
+[k]
+
+[messageOff]
+[charaDepth C 1]
+[charaDepth H 2]
+[charaDepth E 3]
+
+[charaScale H 1.3]
+[charaScale E 1.3]
+
+[charaTalk off]
+[charaFace E 2]
+[charaFadein E 0.2 1]
+[charaFadein H 0.2 0,-250]
+
+[effect bit_talk_41_fs]
+
+[charaFace C 8]
+＠クリームヒルト
+[f large]変わりすぎでしょ！
+[k]
+
+[messageOff]
+
+[effectDestroy bit_talk_41_fs]
+[charaFadeout E 0.3]
+[charaFadeout H 0.3]
+[wt 0.4]
+
+＠ボイジャー
+ほんとうにやったね。ゆうしゃだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_146 1.3]
+
+[charaScale E 1.0]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠クリームヒルト
+請け負った責任は果たす女よ。
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut F 256,0]
+[charaFace F 13]
+
+[charaPut A -256,0]
+[charaFace A 4]
+
+[se ad598]
+[charaSpecialEffect F wipeTimeRe 1 1.5]
+[charaSpecialEffect A wipeTimeRe 1 1.5]
+
+[wait charaSpecialEffect F]
+[wait charaSpecialEffect A]
+
+[charaFadein F 0 256,0]
+[charaFadein A 0 -256,0]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk on]
+＠アルテラサンタ
+フォッフォッフォッ。[r]次の相手は私とワンジナだ。
+[k]
+
+＠ワンジナ
+こんにちは！　よろしくね！
+[k]
+
+？1：よーし、次は何かな！
+？！
+
+[charaFace F 0]
+＠アルテラサンタ
+うん。
+[k]
+
+＠アルテラサンタ
+次は、カルデアの子供たちに教えてもらった[r]過激なるデスゲームだ。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠柳生但馬守
+ですげえむ。ほう。
+[k]
+
+？1：死ぬのはちょっと……
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠アルテラサンタ
+死なないぞ。[r]ん？　それではデスゲームじゃないな……。
+[k]
+
+[charaFace F 6]
+
+＠アルテラサンタ
+デスないゲームだ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠クリームヒルト
+まぁ、いいけど……。[r]それでルールは？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaDepth F 1]
+[charaDepth H 2]
+[charaDepth O 3]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠アルテラサンタ
+うん。
+[k]
+
+[charaScale O 1.3]
+[charaScale H 1.3]
+
+[charaFace O 0]
+[charaFadein O 0.5 -20,0]
+[charaFadein H 0.5 -20,-250]
+[charaMove O 0,0 5.0]
+[charaMove H 0,-250 5.0]
+
+＠アルテラサンタ
+おそるべきゲームの名は、[r]エネミーロシアンルーレット。
+[k]
+
+[charaFadeout F 0.1]
+[charaFace O 1]
+
+＠アルテラサンタ
+エネミーを倒すと、ご馳走が出てくる。[r]食べる。
+[k]
+
+[charaFace O 5]
+
+＠アルテラサンタ
+でも、どれか一つは恐ろしいことに、[r]激辛入りなんだ。
+[k]
+
+[subCameraOn]
+
+[charaLayer K sub]
+[charaLayer G sub]
+
+[subCameraFilter maskEdge cut359_mask05 3 255,255,255,0]
+
+[charaScale G 1.3]
+[charaScale K 1.3]
+
+[charaTalk on]
+[charaTalk depthOff]
+[charaDepth K 1]
+[charaDepth G 2]
+
+[charaTalk G]
+[charaFace G 37]
+[charaFadein G 0.1 0,250]
+[charaFadein K 0.1 -100,-50]
+
+[charaMove G 0,200 0.3]
+[charaMove K -100,-100 0.3]
+
+[subRenderFadein 0.2 -350,-200]
+＠エリセ
+[line 3]ほう？
+[k]
+
+[messageOff]
+[charaMove G 0,150 0.3]
+[charaMove K -100,-150 0.3]
+
+[subRenderFadeout 0.3]
+[charaFadeout H 0.3]
+[charaFadeout O 0.3]
+[wt 0.4]
+
+[charaFadeout G 0.1]
+[charaScale G 1.0]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+＠ボイジャー
+ああ……はんのうしてしまった。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaLayer G normal]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠アルテラサンタ
+このおそるべきゲームに挑戦する者はいるか。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 37]
+[charaFadein G 0.1 1]
+
+＠エリセ
+[f large]はい。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠アルテラサンタ
+即答。[r]ではこちらからも、ワンジナを出す。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠ワンジナ
+がんばるよ！[r]ところで激辛って何？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth G 2]
+[charaDepth B 1]
+[charaDepth L 3]
+[charaDepth M 4]
+
+[charaTalk G]
+[charaFace G 34]
+[charaFadein G 0.1 1]
+
+＠エリセ
+激辛とは、とおっしゃいますか……。
+[k]
+
+[messageOff]
+
+
+[charaTalk off]
+[charaFace B 16]
+[charaPut B 300,90]
+[charaFadeTime B 0.5 0.7]
+
+[charaFace G 36]
+＠エリセ
+私の先生のお言葉を拝借するなら、[r]それは[line 3]“人生”じゃないかな。
+[k]
+
+[messageOff]
+
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein L 0.3 320,-110]
+[charaMoveEase L 360,-110 2.0 easeOutQuart]
+[wt 1.0]
+
+[charaFadein M 0.3 270,-160]
+[charaMoveEase M 310,-160 2.0 easeOutQuart]
+
+[wt 2.0]
+
+[charaFadeout L 0.3]
+[charaFadeout M 0.3]
+[wt 0.5]
+
+[subCameraOn]
+
+[charaLayer H sub]
+[charaLayer C sub]
+
+[subCameraFilter maskEdge cut359_mask05 3 255,255,255,0]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth C 2]
+
+[charaScale C 1.3]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 0,250]
+[charaFadein H 0.1 430,-100]
+
+[charaMove C 0,200 0.3]
+[charaMove H 430,-150 0.3]
+
+
+[subRenderFadein 0.2 -350,-200]
+
+＠ボイジャー
+おくがふかいんだなあ。
+[k]
+
+[messageOff]
+
+[charaMove C 0,150 0.3]
+[charaMove H 430,-200 0.3]
+
+[subRenderFadeout 0.3]
+[wt 0.4]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[wt 0.8]
+
+[subCameraOff]
+
+[charaFadeout B 0.5]
+[charaFadeout G 0.5]
+[wt 0.9]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠アルテラサンタ
+それではおそるべきデスないゲーム、[r]開始だ！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

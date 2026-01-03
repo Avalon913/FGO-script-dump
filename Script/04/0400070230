@@ -1,0 +1,584 @@
+
+＄04-00-07-02-3-0
+
+
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[soundStopAll]
+
+[charaSet Z 98115000 1 エフェクト用]
+[charaDepth Z 26]
+[charaEffect Z bit_sepia01_depth_fs_02]
+
+[charaSet A 8001000 1 マシュ]
+[charaSet B 98005000 1 オルガマリー]
+[charaSet C 98003004 1 Dr.ロマン]
+[charaSet D 1098344200 1 ？？？]
+[charaSet E 5021002 1 キャスター]
+[charaSet F 4001001 1 メドゥーサ]
+[charaShadow F true]
+
+[charaSet G 98115000 1 エフェクト用]
+[charaPut G 2000,2000]
+[charaEffect G bit_talk_10]
+
+[imageSet H back10000 1]
+[charaFilter H silhouette 1e90ff80]
+[charaScale H 1.05]
+[sceneSet I 10000 1]
+[charaScale I 1.1]
+
+
+[scene 269400]
+
+[charaPutFSL G -240,0]
+[charaFace C 0]
+[charaFadeinFSL C 0.1 -240,-151]
+[charaFadeinFSR B 0.1 240,0]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠Dr.ロマン
+了解です。健闘を祈ります、所長。
+[k]
+
+＠Dr.ロマン
+これからは短時間ですが通信も可能ですよ。[r]緊急事態になったら遠慮なく連絡を。
+[k]
+
+[charaFace B 3]
+
+＠オルガマリー
+……ふん。[r]ＳＯＳを送ったところで、誰も助けてくれないクセに。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_11 1.0 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaPut G 2000,2000]
+[charaEffectDestroy G bit_talk_10]
+
+[charaPut B 1]
+[charaFace B 0]
+[wt 0.6]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_11 1.0 1.0]
+[wait fade]
+
+＠オルガマリー
+どこまで行っても焼け野原……[r]住人の痕跡もないし、一体なにがあったのかしら……
+[k]
+
+[charaFace B 3]
+
+＠オルガマリー
+そもそもカルデアスを灰色にする異変って何なのよ……[r]未来が見えなくなるって事は人類が消えるという事……
+[k]
+
+＠オルガマリー
+もしかして……特異点では抑止力が働かない？[r]じゃあやっぱりボルトみたいなものなんだ、ここ……
+[k]
+
+＠オルガマリー
+人類史に点在する致命的な滅亡の選択……[r]それを悪い方に間違えちゃったのがこの結果とか……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-151]
+
+＠Dr.ロマン
+おや、所長の独り言が始まったね。[r]そうなると彼女は長いよ。
+[k]
+
+＠Dr.ロマン
+[%1][&君:ちゃん]。[r]あたりは安全そうだし、少しは休んだらどうだい？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 2000,2000]
+[charaEffectStop G bit_talk_10]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ドクターに賛成です。[r]先輩、レーション食べますか？
+[k]
+
+？1：ありがとう。マシュは疲れてないか？
+？2：いただきます。マシュこそ体は問題ないのか？
+
+？！
+
+[charaFace A 6]
+
+＠マシュ
+体、疲れ……もしかして、サーヴァントになって[r]問題はないのか、という質問ですか？
+[k]
+
+[charaFace A 3]
+
+＠マシュ
+……それは、なんとか。[r]戦うのが怖いぐらいで、体は万全です。
+[k]
+
+？1：というか、自分がマスターでいいのか？
+
+[charaFace A 1]
+
+＠マシュ
+もちろんです。わたしに不満はありません。[r]先輩はこの春ＮＯ．１のベストマスターではないかと。
+[k]
+
+？2：サーヴァントになって不満はない？
+
+[charaFace A 3]
+
+＠マシュ
+……それは……うまく言えません。[r]自分が戦闘機になったら……と想像してもらえれば。
+[k]
+
+[charaFace A 7]
+
+＠マシュ
+空を飛ぶ事ができるようになっても、[r]メンテナンスは自分の手では行えない。
+[k]
+
+＠マシュ
+どれほど強い力を有しても『存在する』という[r]根本的な活動にマスターが必要なんです。
+[k]
+
+[charaFace A 8]
+
+＠マシュ
+……リスクとリターンは合っていますが、[r]先輩に負担をかけているかと思うと、気持ちが曇ります。
+[k]
+
+？！
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgm BGM_EVENT_11 1.0 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-151]
+[wt 0.6]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_11 1.0 1.0]
+[wait fade]
+
+＠Dr.ロマン
+ごめん、話はあと！[r]すぐにそこから逃げるんだ三人とも！
+[k]
+
+＠Dr.ロマン
+まだ反応が残っている！[r]しかもこれは[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 2000,2000]
+
+[charaShadow F true]
+[charaDepth F 1]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 1.5]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+[charaShadow F false]
+
+[charaPutFSL G -240,0]
+[charaTalk B]
+[charaFace C 0]
+[charaFace B 4]
+[charaFadeinFSL C 0.1 -240,-151]
+[charaFadeinFSR B 0.1 240,0]
+
+＠オルガマリー
+な[line 3]まさか、あれって！？
+[k]
+
+[charaFace C 2]
+
+＠Dr.ロマン
+そこにいるのはサーヴァントだ！
+[k]
+
+＠Dr.ロマン
+戦うな[%1]、マシュ！[r]君たちにサーヴァント戦はまだ早い……！
+[k]
+
+[charaFace B 1]
+
+＠オルガマリー
+そんなこと言っても逃げられないわよ！
+[k]
+
+＠オルガマリー
+マシュ、戦いなさい！[r]同じサーヴァントよ、なんとかなるでしょう！？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 2000,2000]
+[charaEffectStop G bit_talk_10]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠マシュ
+…………はい。[r]最善を尽くします……！
+[k]
+
+[messageOff]
+
+[wipeout circleIn 1.5 1]
+[bgmStop BGM_EVENT_11 1.5]
+[wait wipe]
+
+[charaEffectDestroy Z bit_sepia01_depth_fs_02]
+[charaFadeout A 0.1]
+
+[charaSet A 8001900 1 マシュ]
+[charaSet B 1098341100 1 オルガマリー]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[wipein circleIn 1.5 1]
+[wait wipe]
+
+＠オルガマリー
+…………。
+[k]
+
+[bgm BGM_MAP_57 0.1]
+
+？1：何かありました？
+？2：オルガマリー所長？
+
+？！
+
+[charaFaceFade B 14 0.15]
+
+＠オルガマリー
+別に、まだ何もないわ。[r]ちょっと考え事をしていただけ。
+[k]
+
+[charaFaceFade B 2 0.15]
+
+＠オルガマリー
+それより調子はどう、ふたりとも？[r]次こそ立派に成長したところを見せてくれるのよね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい、それはもう！[r]カルデア代表として100点満点を取りに行きます！
+[k]
+
+[charaFace A 8]
+
+＠マシュ
+……と気合いは充分なのですが、[r]先ほどのサーヴァントの強さを考慮すると、
+[k]
+
+＠マシュ
+若干の不安があるわたしです……。[r]残る６騎のサーヴァントも強大な相手なのでしょうか……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠オルガマリー
+そう[#構:かま]えておくべきでしょう。[r]ほんと、なんでこんな事になっているんだか。
+[k]
+
+[charaCrossFade B 1098341110 2 0.3]
+[cueSe SE_24 24_ade988]
+[seVolume 24_ade988 0 0.2]
+[seStop 24_ade988 0.3]
+
+＠オルガマリー
+ま、[#敵:かな]わないと判断したら撤退しましょ。[r]別に無理に戦う必要はないんだから。[wait charaCrossFade B]
+[k]
+
+＠オルガマリー
+助っ人を見つけ次第、地下空洞に向かえばいい。[r]ほら、言ってる[#傍:そば]から[line 3][bgmStop BGM_MAP_57 1.5]
+[k]
+
+[messageOff]
+[charaFadeout B 0.2]
+
+[se ad267]
+[seVolume ad267 0 0]
+[seVolume ad267 1.0 0.3]
+[cueSe SE_25 25_ade1151]
+[seVolume 25_ade1151 0 0.3]
+[wt 1.0]
+[se ad170]
+[seVolume ad170 0 0.3]
+[wt 0.5]
+[se ad32]
+[seVolume ad32 0 0.5]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wt 0.3]
+[se ad471]
+[seVolume ad471 0 0.3]
+[wait wipe]
+
+[pictureFrame cut063_cinema]
+
+[charaSet B 1098341100 1 オルガマリー]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.3]
+
+[seStop ad471 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaPut G 0,-50]
+[charaEffect G bit_talk_14]
+[wt 0.1]
+[se ad32]
+[shake 0.03 3 3 0.4]
+
+[charaScale D 1.4]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.3 0,0]
+[charaMoveScaleEase D 1.0 0.4 easeOutExpo]
+[charaMoveEase D 0,-50 0.4 easeOutExpo]
+[wt 0.7]
+
+[bgm BGM_BATTLE_184 0.1]
+
+＠？？？
+ドウシタ大英雄。自慢ノ槍ハ[#質:シチ]ニデモ入レラレタカ？[r]繊細サヲ欠クドコロ　ノ　話デハ　ナイデハナイカ。
+[k]
+
+＠？？？
+技ノキレ無シ、秘策無シ。勝算モ無シ味方モ無シ。[r]アゲクノ果テニ魔力ギレ！
+[k]
+
+＠？？？
+進退[#窮:キワ]マル　トハ[#正:マサ]ニコノ事！[r][#大口:オオグチ]ノ代償ダ、酷ク赤ク無様ニ死ネェイ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 0,-50]
+[se ad984]
+[wt 0.4]
+
+＠キャスター
+ああうるせえ、黙って死ねねぇのかテメエは！[r]チンケな暗殺者らしく、こいつで死んどけ！
+[k]
+
+[messageOff]
+[charaDepth H 3]
+[charaDepth E 2]
+[charaPut H 1]
+[charaFadeTime H 0.1 0.4]
+[cueSe Servants_502100 m45007]
+[seVolume m45007 0 0.5]
+[wt 0.1]
+[charaFadeout H 0.2]
+[wt 0.4]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaDepth D 2]
+[charaDepth G 3]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+[cueSe Servants_502100 m45010 0 0.5]
+[wt 0.3]
+[charaPut Z 0,0]
+[charaEffect Z bit_talk_fire_wall]
+[cueSe Servants_502100 m45015 0 0.8]
+[se ad963]
+[seVolume ad963 0 0.8]
+[wt 1.0]
+[charaEffect Z bit_talk_sparks_fs]
+[se ad969]
+[seVolume ad963 1.0 0.5]
+
+[wt 1.0]
+
+[charaEffect D bit_talk_charge_fire_red]
+[se ad267]
+[wt 0.8]
+
+[se ad574]
+[cueSe SE_24 24_ad1414]
+[fadeout white 1.0]
+[wait fade]
+
+[charaCrossFade D 1098272600 0 0.1]
+[wait charaCrossFade D]
+[charaEffectDestroy D bit_talk_charge_fire_red]
+[wt 0.5]
+
+[charaEffectStop Z bit_talk_sparks_fs]
+[fadein white 1.0]
+[wait fade]
+[wt 0.8]
+
+＠？？？
+ギ[messageShake 0.05 5 5 0.5]。ギハ。ギハハハハハハハハハハ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[messageShakeStop]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-50]
+
+＠キャスター
+マジかよまた化けやがった。[r]なに？　百の[#貌:かお]から百の魔物にノリ変えたのか、テメエ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠？？？
+イカニモ。[r]我ガ技ハコノ罪業ノ地ニテ、更ナル境地ヲ得タ。
+[k]
+
+＠？？？
+今ノ私ナラバ　晩鐘ノ音ナド恐ルルニ足リヌト、[r][#声高:コワダカ]ニ宣言シテモ許サレヨウ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth I 1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+[charaPut I 0,-200]
+[charaFadeTime I 0.2 0.5]
+
+＠キャスター
+（こりゃもう手遅れだな。付ける薬がねえ。[r]　天運どころか世界味方につけてやがる）
+[k]
+
+＠キャスター
+（オレ[#単騎:ひとり]じゃよくて相討ちか。[r]　ブッ殺してブッ殺されるならそれもいいが、）
+[k]
+
+＠キャスター
+（なんとなくまだ『やる事』がありそうなんだよなぁ。[r]　さぁて、どうしたもんかねぇ[line 3]）
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_BATTLE_184 1.0 0.5]
+[wait wipe]
+
+[pictureFrame]
+
+[charaFadeout E 0.1]
+[charaFadeout I 0.1]
+[wt 0.3]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_BATTLE_184 1.0 1.0]
+[wait wipe]
+
+？1：マシュ！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい！　救援に入ります！
+[k]
+
+？2：所長！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠オルガマリー
+言うまでもないわ、行きなさい！[r]危なそうだったら撤退の声をかけます！
+[k]
+
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_184 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

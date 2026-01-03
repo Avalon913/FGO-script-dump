@@ -1,0 +1,134 @@
+
+＄94-13-66-17-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098306900 1 マンドリカルド]
+[charaSet B 25006002 1 ゴッホ_第三]
+[charaSet C 3056000 1 ゴッホ]
+
+[sceneSet D 129704 1]
+
+[charaSet E 98115000 1 エフェクト用]
+
+[subCameraOn 1]
+[charaLayer E sub #A]
+[charaLayer D sub #A]
+[subCameraFilter #A normal]
+
+[subRenderScale #A 1.01]
+
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth D 1]
+[charaScale D 1.2]
+[charaFadein D 0.1 -90,-200]
+[charaPut E 30,0]
+[charaEffect E bit_talk_glowing_sphere_g 0,50]
+
+[scene 129704]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+[wt 0.3]
+
+[se ade462]
+[fadeout white 0.7]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[seStop ade462 1.4]
+[fadein white 1.0]
+[wait fade]
+[wt 0.4]
+
+[bgm BGM_EVENT_146 0.1]
+
+＠ゴッホ
+ハアハアハア……す、すみません、[r]ちょっと我を忘れてしまいました、エヘヘ……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マンドリカルド
+いや……まあなんか、大丈夫っす。[r]俺なんかよりずっと深い闇を見て気分変わったっす。
+[k]
+
+[charaFace A 0]
+
+＠マンドリカルド
+はあ、なるほどな。[r]近代随一の画家の作品なわけっすね、この光景。
+[k]
+
+＠マンドリカルド
+ただ明るいからじゃない、[r]人間ってもんへの洞察や葛藤、達観を経ての輝き……
+[k]
+
+[charaFace A 1]
+
+＠マンドリカルド
+だから俺でも、過去に向き合えるのかもな。[r]……もうちょい、ここで見てていいっすか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 1]
+
+＠ゴッホ
+え、それはまあ、ゴッホは全然かまいませんが……[r]エヘヘ、力作だから、ちょっとうれしい……
+[k]
+
+[messageOff]
+[subRenderFadein #A 0.7 0,0]
+[charaMoveEase D -120,-200 1.0 easeOutSine]
+[charaMoveEase E 0,0 1.0 easeOutSine]
+[wt 1.2]
+[charaMoveScaleEase E 1.6 0.8 easeOutSine]
+[charaMoveEase E 0,100 0.8 easeOutSine]
+[wt 1.0]
+[charaFadeout C 0.1]
+
+＠『神父』の使い魔
+マスターどの。[#汝:みまし]の知るマンドリカルドどのと比べ、[r]彼の様子はいかがにござりまするか。
+[k]
+
+？1：カルデアの彼は、もっと達観してる
+？2：ここまでくよくよはしてないかも？
+？！
+
+
+＠『神父』の使い魔
+……承知にて。
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_146 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

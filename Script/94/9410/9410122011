@@ -1,0 +1,591 @@
+
+＄94-10-12-20-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 10018000 1 カズラドロップ]
+[charaSet B 1098272300 1 オベロン]
+[charaSet C 1098239320 1 カドック]
+[charaSet D 1098255100 1 ゴルドルフ]
+
+[charaSet F 10018000 1 カズラドロップ_演出用2]
+[charaSet G 1098239320 1 カドック_演出用]
+[charaSet H 1098255100 1 ゴルドルフ_演出用]
+[charaSet I 1098272410 1 オベロン_演出用]
+
+[sceneSet M 229903 1]
+[sceneSet N 229903 1]
+[sceneSet O 229903 1]
+
+[charaSet P 98115000 1 エフェクト用1]
+[charaSet Q 98115000 1 エフェクト用2]
+[charaSet R 98115000 1 エフェクト用3]
+[imageSet S cut049_frame03 1 1]
+
+[sceneSet T 235300 1]
+[sceneSet U 235301 1]
+
+[sceneSet W 10001 1]
+[charaScale W 1.1]
+
+[sceneSet V 231003 1]
+[charaScale V 1.0]
+
+[scene 229903]
+
+[subCameraOn 4]
+[subCameraFilter #A maskEdge cut359_mask05 3 255,255,255,255]
+[subRenderScale #A 1.1]
+
+[subCameraFilter #B normal]
+[subRenderScale #B 1.01]
+
+[subCameraFilter #C through]
+[subRenderScale #C 1.2]
+
+[subCameraFilter #D normal]
+[subRenderScale #D 1.2]
+
+[subRenderDepth #A 2]
+[subRenderDepth #B 1]
+[subRenderDepth #C 4]
+[subRenderDepth #D 3]
+
+[charaLayer G sub #A]
+[charaLayer H sub #A]
+[charaLayer N sub #A]
+[charaLayer F sub #B]
+[charaLayer O sub #B]
+[charaLayer R sub #B]
+
+[charaScale G 1.0]
+[charaScale H 1.0]
+[charaScale N 1.1]
+[charaDepth H 3]
+[charaDepth G 2]
+[charaDepth N 1]
+[charaFace H 11]
+[charaFadein H 0.1 0,120]
+[charaFadein N 0.1 -200,-50]
+
+[charaScale F 1.2]
+[charaScale O 1.2]
+[charaDepth R 3]
+[charaDepth F 2]
+[charaDepth O 1]
+[charaFace F 7]
+[charaFadein F 0.1 0,10]
+[charaFadein O 0.1 -2,-279]
+
+
+
+[charaScale T 1.2]
+[charaScale U 1.2]
+[charaDepth U 2]
+[charaDepth T 1]
+
+[charaDepth W 5]
+[charaDepth Q 4]
+[charaDepth P 3]
+[charaDepth A 2]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[charaPut P 1]
+[charaEffect P bit_talk_secret_garden03]
+[cueSe SE_23 23_ade869]
+[cueSeVolume 23_ade869 0 0]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[fadein black 1.0]
+[cueSeVolume 23_ade869 1.0 0.5]
+[wait fade]
+[wt 1.5]
+[cueSeStop 23_ade869 1.0]
+
+
+[cueSe SE_23 23_ade870]
+[charaPut Q 1]
+[charaEffect Q bit_talk_secret_garden02]
+[cameraMove 3.5 0,-10 1.1]
+[wt 1.0]
+[cueSeStop 23_ade870 2.5]
+[overlayFadein W 2.0 0,-200]
+[wt 2.0]
+
+[cameraHome 0.1]
+[charaFadeout A 0.1]
+[charaPut P 2000,2000]
+[charaEffectDestroy P bit_talk_secret_garden03]
+[charaPut Q 2000,2000]
+[charaEffectDestroy Q bit_talk_secret_garden02]
+[scene 10000]
+
+[criMovie talk_mov275 bgmPlay false]
+[wt 0.5]
+[charaFadeout W 1.0]
+[wt 15.0]
+[overlayFadein V 0.5 0,-200]
+[wt 1.0]
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+[charaFadeout V 0.5]
+
+[scene 229903 0.5]
+[charaFadein A 0.5 1]
+[wt 0.5]
+
+[bgm BGM_MYROOM_6 0.1]
+
+＠カズラドロップ
+ああ……あ……。
+[k]
+
+[messageOff]
+[wt 1.2]
+
+？1：５００点取れたから
+？2：外に出してもらっていいかな
+？！
+
+[charaTalk A,F]
+[subRenderFadein #B 0.6 0,20]
+[wt 2.0]
+[charaFadeout A 0.1]
+
+[charaFace F 6]
+
+＠F：カズラドロップ
+……だめです。
+[k]
+
+[messageOff]
+[charaTalk H]
+[subRenderFadeinFSR #A 0.4 300,-150]
+[subRenderMoveFSR #A 300,-180 0.4]
+[wt 0.4]
+
+＠H：ゴルドルフ
+何ィ！？[r]約束が違うだろう！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,120]
+
+＠G：カドック
+しっ。ここは[%1]に[r]任せておこう。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+
+[charaTalk off]
+[charaFace F 16]
+
+＠カズラドロップ
+……だめです。[r]この採点システムは、採点基準は、バグでした。
+[k]
+
+＠カズラドロップ
+それは、単に私を理解した、[r]というだけのことです。
+[k]
+
+[charaFace F 7]
+
+＠カズラドロップ
+人類が目指すべき完璧じゃ、ない。[r]私のためだけの私的な完璧にすぎません。
+[k]
+
+？1：でも、約束だから
+？2：出してほしい
+？！
+
+[charaFace F 16]
+
+＠カズラドロップ
+……人類として完璧には、[r]まだなっていませんよ。
+[k]
+
+？1：そうだね。それでも[line 3]
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：人類として完璧でなくても、
+？2：外でやらなくちゃいけないことがあるから
+？！
+
+[messageOff]
+[wt 1.2]
+
+＠カズラドロップ
+やっぱり[line 3][wt 0.8][charaFace F 3][messageShake 0.01 4 4 0.5][r]やっぱり、人間なんて嫌いです！
+[k]
+
+＠カズラドロップ
+不完全で、完璧なんてほど遠いのが[r]自分でもわかってるはずなのに、
+[k]
+
+＠カズラドロップ
+完璧になろうとしない！[r]胸を張れる存在になってくれない！
+[k]
+
+[charaFace F 13]
+
+＠カズラドロップ
+き[messageShake 0.01 4 4 0.5]らいきらい、だいっきらい！
+[k]
+
+[messageOff]
+[bgmStop BGM_MYROOM_6 2.0]
+[wt 0.2]
+[charaFaceFade F 7 0.3]
+[wt 1.0]
+
+＠カズラドロップ
+……でも……
+[k]
+
+[messageOff]
+[wt 1.2]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+[charaFaceFade F 9 0.2]
+
+＠カズラドロップ
+好きです。
+[k]
+
+[bgm BGM_EVENT_123 0.1]
+[charaFace F 9]
+
+＠カズラドロップ
+見つめて笑いかけてくれるところが、[r]好きです。
+[k]
+
+＠カズラドロップ
+弱い私を護ろうとしてくれるところが、[r]好きです。
+[k]
+
+＠カズラドロップ
+静かに話を聞いてくれるところが、[r]好きです。
+[k]
+
+＠カズラドロップ
+思い出したように頑張ってしまうところが、[r]好きです。
+[k]
+
+[charaFaceFade F 10 0.5]
+
+＠カズラドロップ
+ほかにも、たくさん、たくさん。
+[k]
+
+＠カズラドロップ
+だから私は。
+[k]
+
+＠カズラドロップ
+[&アナタ:貴女]たちを、心の底から、[r]愛してしまうのです[line 3]
+[k]
+
+[messageOff]
+[charaPut R 0,-30]
+[charaEffect R bit_talk_06]
+[wt 3.0]
+
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+
+＠ゴルドルフ
+あの様子は……[r]退去しようとしている、のか！？
+[k]
+
+[messageOff]
+[charaFace F 10]
+[subRenderFadein #B 0.4 0,20]
+[wt 0.4]
+[charaFadeout D 0.1]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠カズラドロップ
+ふふ。私というバグがあるなら、[r]それを消すのがバグチェッカーである私の役目です。
+[k]
+
+＠カズラドロップ
+最後に残った聖杯の力を使って、[r]契約を解除しちゃいましょう。
+[k]
+
+[charaFaceFade F 11 0.2]
+
+＠カズラドロップ
+別にいいですよね？
+[k]
+
+＠カズラドロップ
+だって私は、愛してしまう[#対象:も　の]が大嫌いで、そんな[r]自分も大嫌いな、矛盾だらけのＡＩなんですから。
+[k]
+
+？1：待って待って
+？2：そんなことは望んでないよ
+？！
+
+[messageOff]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+
+＠カドック
+アイツが消えれば、僕たちは[r]この世界から脱出できるだろうが[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+う、うむむ！　結末としてあまり[r]スッキリしたものにはならん気がするぞ！
+[k]
+
+[charaFace D 18]
+＠ゴルドルフ
+いや私は冷酷無比で[#沈着冷静:ちんちゃくれいせい]なカルデア所長で[r]あるからして[#無罪放免:むざいほうめん]とする気もないが、
+[k]
+
+[charaFace D 5]
+
+＠ゴルドルフ
+だからと言って消えてほしいわけでもなく、[r]その、貴重な戦力だしね！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace F 10]
+[subRenderFadein #B 0.4 0,20]
+[wt 1.2]
+
+？1：せっかく理解したんだから
+？2：まだキミと一緒にいたいと思う！
+？！
+
+[wt 1.5]
+[charaFadeout D 0.1]
+[charaDepth D 7]
+[charaDepth C 6]
+[charaDepth M 5]
+[charaDepth P 3]
+[charaDepth A 2]
+[charaDepth B 1]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[charaPut P 2000,2000]
+[charaEffect P bit_talk_06]
+
+？1：[line 3]オベロン！
+？2：なんとかできない！？
+？！
+
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+
+[wt 1.2]
+
+[cueSe SE_21 21_ade689]
+[charaCrossFade B 1098272340 11 0.3]
+[wait charaCrossFade B]
+[wt 0.4]
+
+＠オベロン
+できるとも。[r]最終的に帳尻は合わせる、と言っただろ。
+[k]
+
+[charaTalk on]
+
+＠オベロン
+ただし君たちには旨味がない。[r]これまでの努力が無駄になる。
+[k]
+
+[bgmStop BGM_EVENT_123 1.5]
+
+＠オベロン
+それでいいかい？
+[k]
+
+？1：なんでもいいからお願い！
+？！
+
+[bgm BGM_BATTLE_170 0.1]
+
+[charaFace B 18]
+＠オベロン
+いいだろう！[r]では、望まれぬ[#黄昏:たそがれ]の空を呼ぼう！
+[k]
+
+[charaFaceFade B 7 0.2]
+
+＠オベロン
+なーんて、別に声をあげる程の事じゃない。[r]気負わず楽にしていてくれ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale C 1.0]
+[charaScale D 1.0]
+[charaScale M 1.1]
+[charaFace C 0]
+[charaFadein C 0.6 -200,0]
+[charaFace D 5]
+[charaFadein D 0.6 300,0]
+[charaFadein M 0.6 50,-220]
+[charaMoveEase C -250,0 1.0 easeOutSine]
+[charaMoveEase D 250,0 1.0 easeOutSine]
+[charaMoveEase M 0,-220 1.0 easeOutSine]
+[wt 1.0]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[subRenderScale #B 1.2]
+[subRenderFadein #B 0.6 0,-20]
+[wt 1.0]
+[charaFadeout M 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk on]
+
+＠オベロン
+夢の支配者が、[r]その権利を放棄するのなら[line 3]
+[k]
+
+[messageOff]
+[charaScale T 1.44]
+[charaFadein T 0.1 -2,-355]
+[charaTalk off]
+[bgmStop BGM_BATTLE_170 1.0]
+[wt 1.0]
+[subRenderFadeout #B 1.5]
+[wt 2.5]
+
+[charaDepth T 1]
+[charaDepth U 2]
+[charaDepth S 8]
+[charaDepth I 9]
+
+[charaScale S 1.584]
+[charaFadein S 2.0 0,-430]
+[charaMoveScaleEase T 1.2 2.0 easeOutSine]
+[charaMoveEase T -2,-320 2.0 easeOutSine]
+[charaMoveEase S 0,-360 2.0 easeOutSine]
+[charaMoveScaleEase S 1.32 2.0 easeOutSine]
+[wt 3.5]
+
+[subRenderFadeout #B 0.1]
+[charaPut R 2000,2000]
+[charaEffectDestroy R bit_talk_06]
+
+
+[charaFace I 1]
+[charaFadeinFSSideL I 0.4 -400,0]
+[wt 0.4]
+
+[bgm BGM_MAP_41 0.1]
+＠オベロン
+空っぽの夢は、[r]他の虫の寝床にされるだけだ。
+[k]
+
+＠オベロン
+俺は真実を語らない嘘つきだからな。
+[k]
+
+＠オベロン
+この夢を引き取った時点で、[r]『このゲーム全てが本当の夢だった』事になる。
+[k]
+
+[messageOff]
+[charaFadein U 1.0 -2,-320]
+[wt 1.5]
+
+[charaFaceFade I 12 0.2]
+
+＠オベロン
+……さて。
+[k]
+
+[charaFaceFade I 1 0.2]
+
+＠オベロン
+今回のこれは本当に夢になった。[r]始まってもいないし終わってもいない。
+[k]
+
+＠オベロン
+カズラドロップの理想も、願いも……[r]当然ながら、夢だから叶わない。
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[charaFaceFade I 3 0.2]
+
+＠オベロン
+だが[line 3]その代わりに。
+[k]
+
+＠オベロン
+カズラドロップ。[r]おまえの夢は誰にも[#曝:あば]かれていない。
+[k]
+
+＠オベロン
+『ゲームの終わりは夢の終わり』[r]良かったな。そのルールはご破算だよ。
+[k]
+
+＠オベロン
+そのエゴから救われる事はないが、[r]その代わりにおまえはまだ夢を見続けられる。
+[k]
+
+[charaFaceFade I 4 0.2]
+
+＠オベロン
+ま、そもそも悩む必要すらないと思うけどね。[r]単純なものより複雑なものを好むヤツだっているんだし。
+[k]
+
+＠オベロン
+捨てる必要はないでしょ。[r]何を言っても嘘になるヤツよりはマシだ。
+[k]
+
+[charaFaceFade I 3 0.2]
+
+＠オベロン
+だいたいさ。
+[k]
+
+[charaFace I 3]
+
+＠オベロン
+人間全てが嫌いなんて、[r]そんなに特別な話でもないでしょ？
+[k]
+
+[messageOff]
+[wt 2.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_MAP_41 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

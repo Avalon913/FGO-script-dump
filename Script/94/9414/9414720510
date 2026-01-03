@@ -1,0 +1,694 @@
+
+
+
+
+＄94-14-72-05-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1038000 1 イアソン]
+[charaSet B 7052000 1 呼延灼]
+[charaSet C 5038000 1 ジーク]
+[charaSet D 6024000 1 スカサハ]
+[charaSet E 2003300 1 ロビンフッド]
+[charaSet F 5007001 1 シェイクスピア]
+[charaSet G 4058000 1 クリームヒルト]
+[charaSet H 1098298800 1 パッションリップ]
+[charaSet I 1098331600 1 キレーちゃん]
+
+[charaSet J 98115000 1 エフェクト用]
+[charaSet K 5009000 1 エフェクト用2]
+
+[sceneSet L 257800 1]
+[charaScale L 1.01]
+
+[sceneSet M 257800 1]
+[sceneSet N 257900 1]
+[sceneSet O 257901 1]
+
+[scene 257800]
+
+[charaDepth J 3]
+[charaDepth L 2]
+
+[charaEffect J bit_talk_41_r]
+[shake 0.02 1 1 0]
+[charaFadein L 0.1 0,-200]
+[charaPut J 0,0]
+
+[se ad55]
+[seVolume ad55 0 0]
+[se ad1023]
+[seVolume ad1023 0 0]
+[seVolume ad55 0.5 1.0]
+[seVolume ad1023 0.5 1.0]
+[charaMove L 0,-250 2.6]
+[charaMove J 0,-50 2.6]
+[charaMoveScale L 1.2 2.6]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.7]
+
+[wipeout leftToRight 0.5 1.0]
+[seStop ad55 1.0]
+[seStop ad1023 1.0]
+[wait wipe]
+
+[shakeStop]
+[charaPut J 2000,2000]
+[charaEffectDestroy J bit_talk_41_r]
+[charaFadeout L 0.1]
+[wt 0.8]
+
+[wipein rightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠イアソン
+ん？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad127]
+[seVolume ad127 0 0.5]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 350,0]
+[charaMoveEase B 0,0 0.4 easeOutExpo]
+[wt 0.4]
+[seStop ad127 0.4]
+[wt 0.4]
+
+[bgm BGM_MIZUGI_2017 0.1]
+
+＠呼延灼
+[f large]発[messageShake 0.04 3 3 0.4]見ーーー！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠イアソン
+何だ何だ敵襲か！？[r]おのれ、このイアソンが迎え撃ってくれる！
+[k]
+
+？1：まあまあ落ち着いて
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ジーク
+ああ、率直に問うが。[r]あなたは悪役令嬢の婚約者だろうか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠イアソン
+ん？　婚約者？
+[k]
+
+[charaFace A 18]
+
+＠イアソン
+……。
+[k]
+
+＠イアソン
+……そういや、オレは……悪役令嬢の婚約者だった、[r]ような……？
+[k]
+
+[charaFace A 2]
+
+＠イアソン
+いや、確かにそうだ！　間違いない！[r]オレは令嬢の婚約者だ！
+[k]
+
+[charaFace A 1]
+
+＠イアソン
+よーし、早速婚約破棄しなきゃな！
+[k]
+
+＠イアソン
+よっしゃ、令嬢はどこだ！？[r]ははは、罪を着せて追放してやる！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠ジーク
+ああ、悪辣な婚約者だとこういう風に悪役令嬢を、[r][#冤罪:えんざい]を添えて追放、あるいは処刑したりするんだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠呼延灼
+わっる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠イアソン
+何だとぅ、このオレに逆らうのか！[r]よし、さては貴様ら悪役令嬢だな[line 3]
+[k]
+
+[messageOff]
+[subCameraOn 1]
+
+[charaLayer D sub #A]
+[charaLayer M sub #A]
+[charaLayer K sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask05 5 204,0,153,255]
+
+[charaTalk depthOff]
+[charaDepth K 3]
+[charaDepth D 2]
+[charaDepth M 1]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 0,265]
+[charaFadein M 0.1 -320,120]
+
+[subRenderFadeinFSR #A 0.3 350,-220]
+[subRenderMoveFSR #A 350,-280 0.3]
+[wt 0.3]
+
+＠スカサハ
+ルーン。
+[k]
+
+[messageOff]
+[charaPut K 0,265]
+[charaEffect K bit_talk_runeslight_ppl]
+[cueSe Servants_1001100 m47904]
+[wt 0.8]
+
+[charaTalk depthOn]
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+[charaFadeout D 0]
+[charaFadeout M 0]
+
+[charaLayer D normal]
+[charaLayer M normal]
+
+[subCameraOff]
+
+[charaTalk A]
+[fowardEffect bit_talk_14 -40,220]
+[cueSe SE_24 24_ade1054]
+[wt 0.3]
+[charaShake A 0.04 3 3 0.4]
+[charaFace A 15]
+[wt 0.4]
+
+＠イアソン
+突然頭部に衝撃！
+[k]
+
+[messageOff]
+[charaMove A 0,-30 0.3]
+[charaFadeout A 0.3]
+[wt 0.3]
+[se ad144]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.3 0,-30]
+[charaMove A 0,0 0.3]
+[se ad7]
+[wt 0.7]
+
+＠イアソン
+……あ。[r]婚約者だけど婚約者じゃなかったわ。
+[k]
+
+[charaFace A 0]
+
+＠イアソン
+というかマスター、何でまたここに？[r]オレはどうしてここに？
+[k]
+
+[charaFace A 14]
+
+＠イアソン
+そして、なんでオレは婚約者なんだ！？
+[k]
+
+[messageOff]
+[wt 0.3]
+[wipeout rollRight 1.0 1.0]
+[bgmStop BGM_MIZUGI_2017 1.0]
+[wait wipe]
+
+[charaFace A 19]
+[wt 1.3]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[bgm BGM_EVENT_109 0.1]
+
+＠イアソン
+そうか、なるほど。
+[k]
+
+＠イアソン
+つまりオレは大統領から軽い洗脳を受けていて、[r]このエリアで婚約者の役回りを任せられ[line 3]
+[k]
+
+＠イアソン
+だがどっちが悪役令嬢かで揉めているせいで、[r]オレは何もできていない。
+[k]
+
+[charaFace A 13]
+
+＠イアソン
+……イカレてるのか！？[r]主にその二人！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ジーク
+大丈夫、正気だ。[r]多分正気、じゃないかな？　うん。まあまあ正気だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠イアソン
+なお悪いわ！[r]ともかくアレだ。とっとと決めさせるぞ。
+[k]
+
+？1：どうやって？
+？！
+
+[charaFace A 0]
+
+＠イアソン
+そりゃもう、ここまで来たからには戦いで[r]白黒つけるしかないだろ！
+[k]
+
+＠イアソン
+サメ騎士とサメ兵士たちもいるんだし、[r]ソイツらが戦えば……。
+[k]
+
+＠イアソン
+倒した方が悪役令嬢として主役に。[r]倒された方は男爵令嬢として悪役に。
+[k]
+
+＠イアソン
+それでいいだろう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠呼延灼
+遺恨が残りそうですね……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+敗北して首を晒されるよりはマシだろう。[r]うん、死して屍拾うものなし。
+[k]
+
+[charaFace D 4]
+
+＠スカサハ
+……は可哀想だから止めておこう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ジーク
+うーん、俺も色々と考えてみたんだが。[r]何しろクリームヒルトとパッションリップ。
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[subCameraOn 2]
+
+[charaLayer G sub #A]
+[charaLayer N sub #A]
+
+[charaLayer H sub #B]
+[charaLayer O sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask25 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask25 5 255,255,255,255]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaDepth G 3]
+[charaDepth N 2]
+
+[charaFace G 0]
+[charaFadeinFSL G 0.1 -10,265]
+[charaFadein N 0.1 -100,90]
+
+[charaDepth H 5]
+[charaDepth O 4]
+
+[charaFace H 0]
+[charaFadeinFSR H 0.1 -440,265]
+[charaFadein O 0.1 -340,90]
+
+[subRenderFadein #A 0.6 -220,-300]
+[subRenderFadein #B 0.6 667,-260]
+[subRenderMove #A -220,-280 20.0]
+[subRenderMove #B 667,-280 20.0]
+[wt 0.8]
+
+＠ジーク
+方向性こそ違うが、なんというか……。
+[k]
+
+＠ジーク
+我を通すことに関しては、[r]かなり妥協しないタイプだと思うんだ。
+[k]
+
+＠ジーク
+だから仮に戦わせて結果が出たとしても……。
+[k]
+
+＠ジーク
+恐らく二人とも納得しない上に、[r]最後まで暴れ回るか、逃げて抵抗を続けるか。
+[k]
+
+＠ジーク
+その二択になりそうな気がしてならない。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E,G,H]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[messageOff]
+[subRenderFadeout #A 0.5]
+[subRenderFadeout #B 0.5]
+[wt 0.6]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaLayer G normal]
+[charaLayer H normal]
+[charaLayer N normal]
+[charaLayer O normal]
+
+[subCameraOff]
+
+
+＠ロビンフッド
+同感だ。パッションリップはああ見えて[r]しつこいししぶといしへこたれない。
+[k]
+
+[charaFace E 4]
+
+＠ロビンフッド
+一度怨みを買ったら死ぬまでネチネチ責めてくるからな……。[r]よほど納得のいく結果じゃねえと諦めねぇぞ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ジーク
+こちらのお嬢様もそうだ。[r][#納得のいく理由]が欲しいだろうと思う。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠呼延灼
+つまり……なんというか、物語でしょうか。
+[k]
+
+？1：物語？
+？！
+
+[charaFace B 1]
+
+＠呼延灼
+はい。結局のところ、お二人は物語を演じているのです。[r]ですから、その物語が納得できるものであれば[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+承諾する、という訳か。
+[k]
+
+？1：じゃあこちらで物語を考えてみよう！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠呼延灼
+こちらで……ですか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠スカサハ
+なるほど。こちらで物語を考えて、[r]それを二人に提示、納得させるという算段か。
+[k]
+
+[charaFace D 0]
+
+＠スカサハ
+だが、誰が考えるんだ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ジーク
+はい。[r]シェイクスピアは止めた方がいいと思います。
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth C 3]
+[charaDepth F 2]
+
+[charaTalk F]
+[charaFace F 2]
+
+[charaFadein F 0.4 -340,0]
+[charaFadeTime F 0.4 0.7]
+[wt 0.4]
+
+＠シェイクスピア
+あっれェ！？[r]こういう時こそ吾輩ではーーー！？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace C 6]
+[charaFace F 1]
+
+＠ジーク
+よ[se ad173][seStop ad173 0.3][charaShake F 0.05 1 1 0.3][charaMove C -50,0 0.2][charaMove F -410,0 0.2]いしょ、[wt 0.8]よ[se ad173][seStop ad173 0.3][charaShake F 0.05 1 1 0.3][charaMove C -100,0 0.2][charaMove F -460,0 0.2][charaFadeout F 0.2]いしょ。
+[k]
+
+[charaTalk on]
+[charaFace C 1]
+
+＠ジーク
+何というか、少なくとも悪役令嬢には[#問答無用:も ん ど う む よ う]の[r]ハッピーエンドが欲しいし……。
+[k]
+
+＠ジーク
+義姉上お嬢様が男爵令嬢になった場合でも、[r]一抹の救いが欲しいと思う俺だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ロビンフッド
+まあ、男爵令嬢になった側を納得させる方が[r]難しいだろうしなぁ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠呼延灼
+[#問答無用:も ん ど う む よ う]のハッピーエンドですか……。
+[k]
+
+＠呼延灼
+その上でシチュエーションに幾つかの条件が[r]必要だと考えると……うーん……。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_109 1.0]
+[wait fade]
+
+[scene 257801]
+
+[charaFadeout B 0.1]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_238 0.1]
+
+[cueSe SE_25 25_ade1249]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+[effect bit_talk_41_fs]
+
+＠キレーちゃん
+どうも！　秘密警察キレーちゃんです。
+[k]
+
+[effectDestroy bit_talk_41_fs]
+
+＠キレーちゃん
+そこのお客様たち、こんな場所で立ち止まって[r]物騒な話とか、キレーちゃん的に見逃せません。
+[k]
+
+＠キレーちゃん
+捕縛！[wt 0.4]　拷問！[wt 0.4]　処刑！[wt 0.4][r]以上の三連コンボです、対戦よろしくお願いします。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ジーク
+うん、こちらこそよろしく。[r]抵抗、暗殺、隠匿の三連コンボで迎撃させてもらう。
+[k]
+
+？1：お互い物騒だなぁ！
+？！
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_238 0.5]
+[wait fade]
+[soundStopAllEnd]
+[end]

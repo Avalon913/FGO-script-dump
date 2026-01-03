@@ -1,0 +1,748 @@
+
+
+＄91-10-53-01-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1053910 1 徴弐]
+[charaSet B 1053900 1 徴側]
+[charaSet C 10010000 1 蘆屋道満]
+[charaSet D 98006200 1 雑魚エネミー煙状]
+
+[charaSet E 1053910 1 徴弐_演出用]
+[charaSet F 1053900 1 徴側_演出用]
+
+[imageSet G cut106_trans 1]
+[charaScale G 2.0]
+
+[charaSet H 1098240400 1 エフェクト用ダミー]
+[charaSet I 1098240400 1 エフェクト用ダミー]
+
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+[sceneSet Q 10000 1]
+[charaScale Q 1.1]
+
+
+[branchQuestClear lblClear01b 94064915]
+[branchQuestClear lblClear01b 3001101]
+
+[label lblClear01a]
+
+[scene 104200]
+
+[sceneSet R 104200 1]
+
+[branch lblConf01]
+[label lblClear01b]
+
+[scene 203800]
+
+[sceneSet R 203800 1]
+
+[label lblConf01]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 1]
+[charaDepth R 2]
+[charaDepth E 3]
+[charaDepth F 4]
+
+[charaScale F 1.05]
+[charaScale E 1.05]
+[charaScale R 1.25]
+
+[charaFadein R 0.1 -130,-350]
+[charaMove R -110,-350 5.0]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_147 0.1]
+
+
+
+
+
+[charaFace E 7]
+[charaFadein E 0.4 -150,0]
+
+[charaMove E -185,0 0.5]
+[se ade422]
+[wt 0.1]
+[seStop ade422 0.1]
+[wt 1.3]
+[charaMove E -200,0 0.3]
+[se ade422]
+[wt 0.3]
+[seStop ade422 0.1]
+[wt 0.1]
+[charaMove E -215,0 0.3]
+[se ade422]
+[wt 0.1]
+[seStop ade422 0.1]
+[wt 0.8]
+[charaMove E -245,0 0.5]
+[se ade422]
+[wt 0.8]
+[seStop ade422 0.1]
+[se ade37]
+[wt 0.1]
+[charaMoveEase E -240,0 0.5 easeOutElastic]
+[wt 0.7]
+[charaMove E -240,-10 0.3]
+[charaShake E 0.05 2 2 0.3]
+[wt 0.3]
+
+[charaTalk E]
+
+＠E：徴弐
+うそだ……そんな……何かの間違い……[r]恋の……おまもり……？　なんて……（ぶつぶつ）
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[charaMoveEase E 20,-10 1.0 easeInOutSine]
+[charaMoveEase R 150,-350 1.0 easeInOutSine]
+[wt 1.3]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.4 1]
+[se ade422]
+[wt 0.1]
+[seStop ade422 0.1]
+[wt 0.3]
+
+＠F：徴側
+弐っちゃん、どうして柱に引っかかってるの！？[r]ちゃんと前見て歩こう？
+[k]
+
+[messageOff]
+[charaTalk E]
+[charaFace E 9]
+[se ade422]
+[wt 0.1]
+[charaMove E 10,0 0.1]
+[seStop ade422 0.1]
+[wt 0.3]
+
+[charaFace B 11]
+[charaFadein B 0.1 176,0]
+
+＠E：徴弐
+ああうん、大丈夫、大丈夫だよ？
+[k]
+
+＠E：徴弐
+私は元気。凄く元気。誰かを殺したいくらい元気。[r]あはは。あはははは。
+[k]
+
+[messageOff]
+[charaTalk E,B]
+[charaFadeout E 0.5]
+[charaFadeout F 0.5]
+[charaFadeout R 0.5]
+[wt 0.8]
+
+[charaTalk B]
+
+[se ade422]
+[seVolume ade422 0.1 0.6]
+[wt 0.2]
+[se ad60]
+[seVolume ad60 0.1 0.5]
+[wt 0.5]
+[seVolume ade422 1.0 0.3]
+[seVolume ad60 1.0 0.2]
+[wt 0.5]
+
+[charaFace B 4]
+
+＠徴側
+弐っちゃんったら、[r]どうしちゃったのかしら？
+[k]
+
+＠徴側
+さっき一瞬、顔色が石みたいになってた気もするし……[r]体調でも悪いのかな？
+[k]
+
+？1：たまにはマーダーフェイスな気分のときもあるよ
+？2：体調というか想像力の問題かな……
+？！
+
+[charaFace B 0]
+
+＠徴側
+[FFFFFF]？[-][r]今は普通だし、まあいっか……。
+[k]
+
+[charaFace B 1]
+
+＠徴側
+とにかく、マスターさんにも[r]ついてきてもらって助かりました。
+[k]
+
+＠徴側
+やっぱりわたしだけじゃ、ここで誰かを探すときの[r]勝手もわからなかったから。
+[k]
+
+？1：たまたま最近噂を聞いてたからね
+？2：勝手に工房みたいなのを作ってる、って
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 -196,0]
+
+＠徴弐
+そうだった！　具体的に誰のとこに行くつもりなのか[r]まだ聞いてない！
+[k]
+
+？1：（ショックでずっと混乱してたから）
+？2：（耳に届いてなかったというのが正しいけど）
+？！
+
+[charaFace A 5]
+
+＠徴弐
+工房ってことは、キャスターの誰か？
+[k]
+
+[charaFace A 4]
+
+＠徴弐
+あっちも罠とか仕掛けるの得意そうだから[r]相性はあまり……
+[k]
+
+[charaFace A 5]
+
+＠徴弐
+でも大丈夫、任せて。[r]ちゃんと[#亡:な]き者にできるよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 176,0]
+
+＠徴側
+亡き者にはしないよ！？[r]話聞いてた？
+[k]
+
+＠徴側
+その人の髪の毛が欲しいだけなの。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 -196,0]
+
+＠徴弐
+……うん、そうだね、そうだった。
+[k]
+
+[charaFace A 8]
+
+＠徴弐
+で、誰？
+[k]
+
+？1：ちょうど着いたよ
+？！
+
+[messageOff]
+
+[seStop ade422 0.1]
+[seStop ad60 0.1]
+[bgmStop BGM_EVENT_147 1.0]
+[wt 1.0]
+
+[charaFace A 4]
+
+＠徴弐
+うっ。あからさまに怪しげな雰囲気を漂わせる扉。[r]そこにこれ見よがしに描かれた[#五芒星]。まさか……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 176,0]
+
+＠徴側
+うん。弐っちゃんが想像してる通りの人だと思うな。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaFadein A 0.1 -196,0]
+[wt 0.2]
+[charaFace C 0]
+[charaPut C -280,0]
+[charaFadeTime C 0.4 0.5]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFace E 0]
+
+＠徴弐
+……。[r]……。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 1]
+[charaDepth R 2]
+[charaDepth F 3]
+[charaDepth E 4]
+
+[charaScale F 1.25]
+[charaScale E 1.25]
+[charaScale R 1.25]
+
+[charaFace A 0]
+[charaFadein E 0.3 -250,0]
+[charaFadein R 0.3 -50,-350]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[charaFadeTime C 0.1 0]
+
+[charaFace E 10]
+
+[bgm BGM_EVENT_49 0.1]
+
+＠徴弐
+[f large]うそだーーーーー！！[messageShake 0.03 4 5 1.0][wt 1.0]
+[k]
+
+[messageOff]
+[charaMoveEase E 50,0 0.5 easeInOutSine]
+[charaMoveEase R 150,-350 0.5 easeInOutSine]
+[wt 0.4]
+[charaFace F 1]
+[charaFadein F 0.1 0,0]
+[wt 0.3]
+[charaMove E -20,0 0.1]
+[wt 0.1]
+[charaShake F 0.05 2 2 0.2]
+[se ad7]
+[wt 0.2]
+[charaFace F 3]
+
+[charaTalk on]
+[charaTalk E]
+
+＠E：徴弐
+ていうか嘘であって！　ね、お願いだから！[r]止めようお姉ちゃん、あれだけは止めよう！
+[k]
+
+[messageOff]
+
+
+[charaTalk E,F]
+[charaShake E 0.03 3 2 1.0]
+[charaShake F 0.03 3 2 1.0]
+[se ade190]
+[seVolume ade190 0 0.6]
+[wt 0.9]
+[seStop ade190 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+
+＠F：徴側
+あわわわ、なになにー？[r]揺さぶらないでー！？
+[k]
+
+[charaFace F 3]
+
+＠F：徴側
+そ、そんなに動揺するコトかな？
+[k]
+
+[charaTalk E]
+[charaFace E 2]
+
+＠E：徴弐
+するでしょ！[r]誰だってするでしょ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[bgmStop BGM_EVENT_49 0.6]
+[charaFadeout F 0.6]
+[charaFadeout E 0.6]
+[charaFadeout R 0.6]
+[wt 0.8]
+[se ad870]
+[wt 3.0]
+
+？1：ところで、ノックしても誰も出てこないけど
+？2：留守なんじゃないかな
+？！
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 176,0]
+[bgm BGM_EVENT_141 0.1]
+
+＠徴側
+それならそれで好都合です。
+[k]
+
+[charaFace B 5]
+
+＠徴側
+髪の毛というのは、呪いにも使える、[r]特別な意味を持つもの。
+[k]
+
+＠徴側
+それをわかっている相手であるなら、欲しいと言っても[r]簡単にもらえるものではないと思います。
+[k]
+
+[charaFace B 9]
+
+＠徴側
+なので[line 3]あんまりよくないことですけど、[r]こっそり床に落ちているものでもいただこうかな、と。
+[k]
+
+＠徴側
+最初から想定済みでした。
+[k]
+
+[charaFace B 0]
+
+＠徴側
+ああ、もちろんサーヴァントですから、魔力の[#残滓:ざんし]……[r]みたいな意味合いになりますよ、正確には。
+[k]
+
+[charaFace B 1]
+
+＠徴側
+で、紫式部さんからはそのために、[r]使い捨ての解錠の呪符をいただいてきました。
+[k]
+
+＠徴側
+道満さんの拠点にはきっと……[r]侵入禁止の術式がかけられているだろうから、
+[k]
+
+＠徴側
+それを一時的に誤魔化せるもの、ということです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 -196,0]
+
+＠徴弐
+ガチじゃん、本気じゃん。[r]やめようよ、姉さん……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 176,0]
+
+＠徴側
+……弐っちゃん……。
+[k]
+
+[charaFace B 11]
+
+＠徴側
+気持ちはわかるわ。[r]危ないし、倫理的にどうかと思うわよね。
+[k]
+
+[charaFace B 5]
+
+＠徴側
+でも[line 3]やめるわけにはいかないの。[r]もう決めてしまったから。
+[k]
+
+＠徴側
+どうしても、わたしにはあの人の髪の毛が必要なのよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth P 1]
+[charaDepth A 2]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 -196,0]
+
+＠徴弐
+……！[wt 1.0][charaPut P 0,-200][charaFadeTime P 0.2 0.5][r]（本気の目、だ。お姉ちゃん……）
+[k]
+
+[charaFadeout P 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 176,0]
+[bgmStop BGM_EVENT_141 0.8]
+
+＠徴側
+それじゃあ、本人が帰ってこないうちに。
+[k]
+
+[messageOff]
+
+
+[fowardEffect bit_talk_pentagram_03]
+[se ad598]
+[wt 3.5]
+[se ade251]
+[fowardEffectStop bit_talk_pentagram_03]
+[wt 1.6]
+
+
+[se ad8]
+[wt 2.0]
+[charaMoveReturn B 176,-3 0.5]
+[charaFace B 9]
+[wt 1.2]
+[wipeout leftToRight 0.7 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+
+[scene 205901]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth H 2]
+[charaDepth I 3]
+[charaDepth G 4]
+[charaFadein G 0.1 0,-410]
+
+[cameraMove 0.1 0,0 1.2]
+
+[wt 1.0]
+
+[wipein rightToLeft 0.7 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_81 0.1]
+
+[wt 0.2]
+[cameraMoveEase 0,0 2.0 easeInOutQuad 1.0]
+[wt 2.0]
+
+[subCameraOn 1]
+[subCameraFilter #A maskEdge cut359_mask05 3 255,255,255,255 0]
+[charaLayer P sub #A]
+[charaLayer B sub #A]
+[charaLayer A sub #A]
+[charaDepth P 1]
+[charaDepth A 2]
+[charaDepth B 3]
+[charaFadein P 0.1 0,0]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 176,130]
+[wt 0.1]
+
+[subRenderFadeinFSR #A 0.6 300,-150]
+[wt 0.7]
+
+＠徴側
+お邪魔しまーす……。
+[k]
+
+？1：ホントに勝手にこんな改造してるとは
+？！
+
+[charaFace B 7]
+
+＠徴側
+噂には聞いてたけど[r]存在を確認できてよかった……ですか。
+[k]
+
+[charaFace B 0]
+
+＠徴側
+次の会議の議題に挙げて、[r]キャスター陣に片付けてもらう？
+[k]
+
+[charaFace B 11]
+
+＠徴側
+まあ、なんとなく納得です。
+[k]
+
+＠徴側
+あの方にこういう自由に使える場があると、[r]ええ……
+[k]
+
+[charaFace B 6]
+
+＠徴側
+あまりよろしくない事態に[r]繋がりそうな気がしますので。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 -196,130]
+
+＠徴弐
+もしかしてお姉ちゃん、そういう[r]危険でアナーキーなところに惹かれ……
+[k]
+
+[charaFace A 5]
+
+＠徴弐
+ふ、ふん。私も危険でアナーキーだけど？[r]そこらにトラップ仕掛けておこうかな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 176,130]
+
+＠徴側
+よし、それじゃあ髪の毛を探しますね。[r]すぐ見つかるとは思いますけど。
+[k]
+
+[charaFace B 4]
+[bgmStop BGM_EVENT_81 0.8]
+
+＠徴側
+おや？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+
+[charaTalk off]
+
+[charaEffect H bit_talk_ppl_fog02]
+[se ade153]
+[wt 1.5]
+[charaEffect I bit_talk_ppl_fog03]
+[wt 2.0]
+[charaFadein D 0.4 1]
+[charaEffectStop H bit_talk_ppl_fog02]
+[charaEffectStop I bit_talk_ppl_fog03]
+[se ad42]
+[wt 1.0]
+
+[subCameraOn 2]
+[subCameraFilter #B maskEdge cut359_mask16 4 111,158,255,255 0]
+[subCameraFilter #C maskEdge cut359_mask10 4 231,87,90,255 0]
+[charaLayer A sub #B]
+[charaLayer P sub #B]
+[charaDepth A 2]
+[charaDepth P 1]
+[charaFace A 2]
+[charaFadein P 0.1 0,0]
+[charaFadein A 0.1 -216,220]
+[charaLayer B sub #C]
+[charaLayer Q sub #C]
+[charaDepth B 2]
+[charaDepth Q 1]
+[charaFace B 2]
+[charaFadein Q 0.1 0,0]
+[charaFadein B 0.1 196,220]
+
+[wt 0.1]
+[subRenderFadeinFSSideR #B 0.3 500,-250]
+[subRenderMoveEaseFSSideR #B 400,-250 0.3 easeOutSine]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk A]
+[bgm BGM_EVENT_80 0.1]
+
+＠徴弐
+危ない！[r]姉さん、下がって！
+[k]
+
+[messageOff]
+
+[charaTalk B]
+[subRenderFadeinFSSideL #C 0.3 -500,-250]
+[subRenderMoveEaseFSSideL #C -400,-250 0.3 easeOutSine]
+[wt 0.5]
+
+＠徴側
+これは……式神？[r]警備用に仕掛けていたんでしょうか？
+[k]
+
+？1：部屋の掃除用式神のオマケ機能かもだけど
+？2：[line 3]何にしても、襲ってくる！
+？！
+
+[charaTalk A]
+
+＠徴弐
+いろいろ頭の中はぐちゃぐちゃだけど、[r]とにかく姉さんに手は出させない！
+[k]
+
+[charaTalk B]
+[charaFace B 5]
+
+＠徴側
+わたしも[line 3]ここで逃げ出すわけにはいきません。[r]必要なものを、わたしはまだ手に入れていない。
+[k]
+
+[charaFace B 2]
+
+＠徴側
+ごめんなさい、ひとまず機能停止させてもらいます！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+

@@ -1,0 +1,854 @@
+
+
+
+＄94-08-50-05-1-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 1098267100 1 メドゥーサ]
+[charaSet C 1098124510 1 ダ・ヴィンチ]
+[charaSet D 6005001 1 ジャック]
+[charaSet E 25001000 1 アビゲイル]
+[charaSet F 7028000 1 バニヤン]
+[charaSet G 3027001 1 ランサー]
+[charaSet H 1098267800 1 ランサー花冠_演出用]
+
+[sceneSet I 188100 1]
+[charaScale I 1.1]
+[sceneSet J 10000 1]
+[charaScale J 1.05]
+[imageSet K back10000 1]
+[imageSet L back10000 1]
+[charaScale K 1.01]
+[charaScale L 1.01]
+
+[charaSet T 98115000 1 エフェクト用]
+
+[scene 188001]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[cueSe SE_23 23_ad1318]
+[seVolume 23_ad1318 0 0.1]
+[seVolume 23_ad1318 1.0 1.0]
+[shake 0.1 4 4 3.0]
+[wt 1.0]
+
+[scene 188000 1.0]
+[wt 1.0]
+[seStop 23_ad1318 1.8]
+[wt 2.0]
+
+[se ad799]
+[seVolume ad799 0 0.1]
+[seVolume ad799 2.5 1.0]
+[cueSe SE_21 21_ad1066]
+[seVolume 21_ad1066 0 0.1]
+[seVolume 21_ad1066 2.5 1.0]
+[wt 1.0]
+[scene 10000 1.0]
+[seStop ad799 2.0]
+[seStop 21_ad1066 2.0]
+[wt 2.5]
+
+[fadeout white 1.5]
+[wait fade]
+
+[cameraHome 0.1]
+
+[scene 188100]
+[charaFadein I 0.1 70,-210]
+[wt 1.0]
+[charaMove I -70,-210 15.0]
+
+[fadein white 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_25 0.1]
+[wt 3.0]
+
+[charaFadeout I 1.0]
+[wt 1.0]
+
+[sceneSet I 188100 1]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth E 3]
+[charaDepth D 2]
+[charaDepth F 1]
+
+[charaTalk off]
+[charaFace D 1]
+[charaFadeinFSL D 0.4 -320,0]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+[charaFace F 8]
+[charaFadeinFSR F 0.4 320,0]
+[wt 0.8]
+
+[charaTalk on]
+
+＠ジャック
+花冠ができたよー！[r]みんなで力を合わせた結果だね！
+[k]
+
+＠アビゲイル
+まあ、とっても綺麗だわ！[r]すてきな出来映えね！
+[k]
+
+＠バニヤン
+前におっきなジャンヌに教えてもらったんだー！[r]覚えててよかった！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠メドゥーサ（ランサー）
+わ……わぁい？[r]（様子を[#窺:うかが]うように）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠バニヤン
+もう、もっと喜んでいいんだよ。あなただって[r]お花を集めるのを手伝ってくれたんだし。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠アビゲイル
+ええ！　みんなの手で編みあげた花冠だわ？[r]特にいっぱいお花を集めてくれたのが、あなた。
+[k]
+
+＠アビゲイル
+だからまずは、あなたが頭に[#戴:いただ]くべきね。[r]さあ、どうぞ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ランサー
+いえ、私は、用事があってここにいるだけで。
+[k]
+
+＠ランサー
+断りきれなくて手伝ってしまいましたが、[r]それは、アナタたちがかぶって[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ジャック
+え、嫌だった？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠バニヤン
+ひょっとして……花冠も、嫌いだったとか？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+[wt 1.0]
+
+[charaFace G 1]
+
+＠ランサー
+[line 3]いいえ。[r]そんなことは、けっしてありません。
+[k]
+
+＠ランサー
+むしろ……好き、です。
+[k]
+
+＠ランサー
+それは、とても大切な[line 3][r]心があったかくなる、嬉しくなる、もの……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ジャック
+そうなんだ！[r]だったらいいよね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠アビゲイル
+うんうん、とっても似合うと思うの！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠ランサー
+えっ、えっ？
+[k]
+
+＠ランサー
+でも、これを私が今かぶっていいかどうかは、[r]別の話で。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠バニヤン
+知らなーい！[r]あげるから、かぶってー！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ジャック
+かぶってー！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[backEffect bit_talk_valentine_brilliant_fs]
+[cueSe SE_21 21_ade588]
+[seStop 21_ade588 2.0]
+
+[charaTalk depthOff]
+[charaDepth E 9]
+[charaDepth D 8]
+[charaDepth F 7]
+
+[charaTalk off]
+[charaFace D 1]
+[charaFadeinFSL D 0.1 -320,0]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+[charaFace F 1]
+[charaFadeinFSR F 0.1 320,0]
+
+＠三人
+（きらきらした目）
+[k]
+
+[seStop 21_ade588 0.3]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[backEffectDestroy bit_talk_valentine_brilliant_fs]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠ランサー
+ううっ……わ、わかりました。
+[k]
+
+[messageOff]
+[cueSe SE_23 23_ad1321]
+[seVolume 23_ad1321 0 1.4]
+[charaCrossFade G 1098267800 5 0.4]
+[wait charaCrossFade G]
+[wt 0.7]
+
+[charaTalk G,H]
+
+[charaScale I 1.2]
+[charaScale H 1.2]
+
+[charaDepth H 9]
+[charaDepth I 8]
+[charaDepth G 1]
+
+[charaFace H 5]
+[charaFadein H 1.0 0,70]
+[charaFadein I 1.0 0,-180]
+[charaMove H 0,20 5.0]
+[charaMove I 0,-230 5.0]
+[wt 1.5]
+[charaFadeout G 0.1]
+[wt 1.7]
+
+[charaFadeout H 1.0]
+[charaFadeout I 1.0]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠アビゲイル
+可愛いわ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠バニヤン
+かわいー！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ジャック
+くるって回ってー！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠ランサー
+は、はぁ……。
+[k]
+
+[messageOff]
+[charaMove G -10,0 0.7]
+[se ad527]
+[seVolume ad527 0 0.5]
+[seStop ad527 1.4]
+[wt 0.6]
+[charaMove G 0,0 0.7]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠バニヤン
+うしろにいるマスターたちにも挨拶してー！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_25 1.0]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠ランサー
+はぁ……はぁっ？
+[k]
+
+？1：やあ
+？2：ごめん、声かけるタイミングを[#窺:うかが]ってた
+？！
+
+[messageOff]
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_10_LowLevel]
+
+[charaScale I 1.25]
+[charaScale H 1.1]
+[charaScale B 1.1]
+
+[charaTalk depthOff]
+[charaDepth T 7]
+[charaDepth C 6]
+[charaDepth A 5]
+[charaDepth B 4]
+[charaDepth H 3]
+[charaDepth I 2]
+[charaDepth G 1]
+
+[charaTalk off]
+[charaFace H 6]
+[charaFadein H 0.5 -50,10]
+[charaFadein I 0.5 20,-240]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠ランサー
+（停止）
+[k]
+
+[messageOff]
+[charaMove H -290,10 1.2]
+[charaMove I -130,-240 1.2]
+[wt 1.4]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.5 270,0]
+[wt 0.6]
+
+＠メドゥーサ
+……。[r]……。
+[k]
+
+[messageOff]
+[wt 1.5]
+
+[charaMove B 350,0 1.0]
+[se ad527]
+[seStop ad527 1.5]
+[wt 0.5]
+[charaFadeout B 0.4]
+[wt 1.0]
+
+[charaFadeout H 1.0]
+[charaFadeout I 1.0]
+[wt 1.0]
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+メドゥーサさん、険しい顔で、どこへ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut T 0,0]
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+隅っこの壁に向かって、手をメガホンにして、[r]小さな木の[#洞:うろ]にくっつけて……？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[overlayFadein K 0.1 0,-800]
+[overlayFadein L 0.1 0,800]
+[charaMove K 0,-736 0.5]
+[charaMove L 0,736 0.5]
+[wt 0.5]
+
+[charaScale B 1.2]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.4 0,-30]
+[wt 0.4]
+
+＠メドゥーサ
+すぅ[line 3]
+[k]
+
+[effect bit_talk_41_fs]
+[se ad186]
+[charaFace B 15]
+
+＠メドゥーサ
+あ[messageShake 0.05 4 4 0.4]れは誰ーーーーー！
+[k]
+
+＠メドゥーサ
+可[messageShake 0.05 4 4 0.4]愛いんだけどーーーーー！？
+[k]
+
+[messageOff]
+[effectDestroy bit_talk_41_fs]
+[charaFadeout B 0.5]
+
+[charaMove K 0,-800 0.5]
+[charaMove L 0,800 0.5]
+[wt 0.4]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[wt 1.0]
+
+[charaScale B 1.0]
+
+？1：…………（アナタです）
+？2：（聞こえちゃってます）
+？！
+
+[messageOff]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 300,0]
+[charaMove B 256,0 1.0]
+[se ad527]
+[seStop ad527 1.5]
+[wt 2.0]
+
+[charaPut T -256,0]
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 -256,0]
+
+＠ダ・ヴィンチ
+えーと、たまらずのロバの耳ってことだね？
+[k]
+
+[charaFace B 7]
+
+＠メドゥーサ
+何のこと？
+[k]
+
+＠メドゥーサ
+木の[#洞:うろ]の空気を吸うのは[#精神統一:せいしんとういつ]に最適。[r]知らなかった？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+[charaEffectDestroy T bit_talk_10_LowLevel]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠マシュ
+[line 3]と、ともあれ、です。
+[k]
+
+[bgmStop BGM_EVENT_7 2.0]
+
+[charaFace A 0]
+
+＠マシュ
+もしかしてランサーのメドゥーサさんも、[r]わたしたちの足止めのために……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠ランサー
+……そうなりますね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+なぜ、と聞いても答えてはくれないのでしょうね、[r]小さな私。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ランサー
+はい。しなくてはならないというだけです。
+[k]
+
+＠ランサー
+これは単純に[#あちらの事情]というだけであって、
+[k]
+
+＠ランサー
+しなくていいのであれば[r]私たちもこのようなことはしません。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 5]
+[charaDepth J 1]
+
+[charaPut J 1]
+[charaFadeTime J 0.2 0.5]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+（あちら、とは……？）
+[k]
+
+[charaFadeout J 0.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠バニヤン
+マスターたちも来たんだね！　賑やか！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠ランサー
+ええと……ごめんなさい。
+[k]
+
+＠ランサー
+今から少しマスターたちと運動をしますから、[r]離れていたほうが。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_134 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠バニヤン
+運動？　遊ぶの？[r]私たちも遊ぶー！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ランサー
+いえ。これは……少し、悪いことなのです。[r]良い子は参加してはいけません。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ジャック
+じゃあ、やっちゃダメって言われてる解体遊び？[r]悪い遊びってことはそうだよね？（きらきら）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠アビゲイル
+私は時々、悪い子になってしまうのだけれど。
+[k]
+
+[charaFace E 0]
+
+＠アビゲイル
+それでも構わない、一緒に遊ぼう。[r]そう言ってくださる方たちもいるわ。
+[k]
+
+[charaFace E 1]
+
+＠アビゲイル
+多分、マスターだってそうだと思うの！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ちびっこさん達も予想外の参戦の気配です。[r]これは困りました！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+文字通りに、怪我をさせない程度に[r]遊んであげるしかないでしょうね。
+[k]
+
+[bgm BGM_BATTLE_134 1.0 0.6]
+
+[charaFace B 0]
+
+＠メドゥーサ
+……ところで、貴女。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ランサー
+何でしょうか。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+それ、外したほうがよくない？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+[wt 1.0]
+
+[cueSe SE_23 23_ad1321]
+[seVolume 23_ad1321 0 1.4]
+[charaCrossFade G 3027001 3 0.4]
+[wait charaCrossFade G]
+[wt 0.5]
+
+＠ランサー
+流れ弾が飛んで来なそうなところに置いてきます。[r]少々お待ちを。
+[k]
+
+[messageOff]
+[se ad527]
+[seStop ad527 1.5]
+[charaMove G -50,0 1.0]
+[wt 0.5]
+[charaFadeout G 0.4]
+[wt 1.5]
+
+[bgm BGM_BATTLE_134 1.0 1.0]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+＠メドゥーサ
+……くっ。私ももう一回、[r]木の[#洞:うろ]で[#精神統一:せいしんとういつ]したくなってきた。
+[k]
+
+＠メドゥーサ
+何なのよアレ、歩幅小さくて卑怯じゃない……！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_134 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

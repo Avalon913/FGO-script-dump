@@ -1,0 +1,1209 @@
+
+
+
+＄94-14-47-06-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4032000 1 ライネス]
+[charaSet B 6039000 1 グレイ]
+[charaSet C 4038001 1 オデュッセウス]
+[charaSet D 1098325400 1 イプシロン]
+[charaSet E 1098257310 1 ダ・ヴィンチ]
+[charaSet F 1098255110 1 ゴルドルフ]
+[charaSet G 28002000 1 ヘファイスティオン]
+[charaSet H 1098123010 1 ムニエル]
+[charaSet I 28011001 1 テュフォン・エフェメロス]
+[charaSet J 1098257810 1 マシュ]
+[charaSet K 1098326510 1 オデュッセウス・オルタ]
+[charaSet L 28002000 1 ヘファイスティオン]
+[charaScale L 1.2]
+
+[charaSet M 1098325660 1 テュフォン]
+[charaScale M 1.4]
+[charaSet N 28011001 1 テュフォン・エフェメロス]
+[charaSet X 28011001 1 テュフォン・エフェメロス]
+
+[sceneSet O 251206 1]
+[charaScale O 1.4]
+[sceneSet P 251206 1]
+[charaScale P 1.6]
+[sceneSet Q 251206 1]
+[sceneSet R 10000 1]
+
+[sceneSet Y 109700 1]
+[charaScale Y 1.6]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+
+[imageSet V back10000 1 1]
+[charaScale V 1.01]
+[imageSet W back10000 1 1]
+[charaScale W 1.01]
+
+[charaPut S 1200,1200]
+[charaEffect S bit_talk_10_LowLevel_depth]
+
+[charaTalk depthOff]
+[charaDepth S 9]
+[charaDepth D 3]
+[charaDepth B 3]
+[charaDepth C 3]
+[charaDepth A 3]
+[charaDepth E 3]
+[charaDepth F 3]
+[charaDepth O 2]
+
+[scene 251206]
+
+[charaScale O 1.0]
+[charaFadein O 0 0,-200]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+
+[branchQuestClear lblClear04 94144804]
+
+[branch NotlblConf04]
+
+[label lblClear04]
+
+[branchQuestClear lblClear01 94144801]
+
+[branch NotlblConf01]
+
+[label lblClear01]
+
+[branchQuestClear lblClear02 94144802]
+
+[branch NotlblConf02]
+
+[label lblClear02]
+
+[branchQuestClear lblClear03 94144803]
+
+[branch NotlblConf03]
+
+[label NotlblConf04]
+
+＠ライネス
+無事に、機能を三つとも修復か。[r]順調は順調だね。
+[k]
+
+[branch lblConf01]
+
+
+[label NotlblConf01]
+[label NotlblConf02]
+[label NotlblConf03]
+
+＠ライネス
+機能をふたつ修復、おまけに速度も強化か。[r]順調は順調だね。
+[k]
+
+[branch lblConf01]
+
+
+
+[label lblClear03]
+
+＠ライネス
+無事に、機能を三つ修復、さらに速度まで強化か！[r]ずいぶん頑張ったねえ。こいつは順調だ！
+[k]
+
+
+[label lblConf01]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠グレイ
+このまま行ってくれればいいのですが……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠オデュッセウス
+だが、こういうときの俺の勘から言うと……
+[k]
+
+
+[messageOff]
+[charaTalk D]
+[bgmStop BGM_EVENT_77 1.5]
+[cueSe SE_22 22_ade799]
+[wt 0.35]
+
+[charaFace C 5]
+[wt 0.5]
+
+[cueSeStop 22_ade799 0.6]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_49 0.1]
+
+[charaFace D 18]
+[charaFadein D 0.1 1]
+
+＠イプシロン
+あ！
+[k]
+
+＠イプシロン
+センサーに感あり！[r]来ちゃいます、あいつ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠ライネス
+やっぱり、そう簡単にはいかないか！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+テュフォンとの連携戦闘だ。[r]キミの負担は相当大きくなるけれど……
+[k]
+
+？1：それでもやらないと
+？2：逃げられないから
+？！
+
+[charaFace E 22]
+
+＠ダ・ヴィンチ
+わかった。だったら、キミに任せる。[r]ただし、絶対に無理はしないこと。
+[k]
+
+＠ダ・ヴィンチ
+戦闘規模からして、いつもより慎重な行動が望まれる。[r]撤退の判断は早めに！
+[k]
+
+[bgmStop BGM_EVENT_49 1.5]
+
+？1：わかりました！
+？2：任せてください！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_190 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+よし、それではただいまから、[r]テュフォン・ネオス撃退作戦を開始する！
+[k]
+
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk off]
+[charaDepth D 7]
+[charaDepth A 6]
+[charaDepth G 5]
+[charaDepth C 3]
+[charaDepth B 4]
+
+[charaFace G 0]
+[charaFace D 0]
+[charaFace A 0]
+[charaFace C 0]
+[charaFace B 0]
+[charaFadein D 0.1 1]
+[charaFadeinFSL A 0.1 -200,0]
+[charaFadeinFSL G 0.1 -400,0]
+[charaFadeinFSR B 0.1 200,0]
+[charaFadeinFSR C 0.1 400,0]
+[wt 0.5]
+
+[charaMoveReturnFSR C 400,-6 0.5]
+[charaMoveReturnFSL A -200,-6 0.5]
+[wt 0.05]
+[charaMoveReturn D 0,-6 0.5]
+[wt 0.05]
+[charaMoveReturnFSL G -400,-6 0.5]
+[wt 0.05]
+[charaMoveReturnFSR B 200,-6 0.5]
+
+[wt 1.3]
+
+[charaFace G 4]
+
+[bgmStop BGM_BATTLE_190 1.5]
+
+[charaTalk on]
+
+＠ヘファイスティオン
+む？
+[k]
+
+[messageOff]
+[charaFadeout D 0.2]
+[charaFadeout C 0.2]
+[charaFadeout G 0.2]
+[charaFadeout B 0.2]
+[charaFadeout A 0.2]
+[wt 0.4]
+
+[charaMoveScaleEase O 1.4 1.2 easeOutSine]
+[charaMoveEase O -150,-250 1.2 easeOutSine]
+[wt 1.4]
+
+[subCameraOn 4]
+[charaLayer Q sub #A]
+[charaLayer D sub #A]
+[charaLayer E sub #A]
+[charaLayer H sub #A]
+[charaLayer F sub #A]
+[charaLayer T sub #A]
+
+[charaLayer R sub #B]
+[charaLayer I sub #B]
+
+[charaLayer P sub #C]
+[charaLayer L sub #C]
+
+[charaLayer V sub #D]
+[charaLayer W sub #D]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 255,255,255,255 0]
+[subCameraFilter #B maskEdge cut359_mask05 5 255,255,255,255 0]
+[subCameraFilter #C maskEdge cut359_mask05 4 255,255,255,255 0]
+[subCameraFilter #D through]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+[subRenderDepth #D 4]
+
+[charaScale Q 1.2]
+[charaDepth Q 1]
+[charaDepth H 2]
+[charaDepth E 2]
+[charaDepth F 2]
+[charaDepth D 2]
+[charaDepth T 3]
+[charaFace H 0]
+[charaFadein H 0 -20,300]
+[charaPut T 0,300]
+[charaFadein Q 0 -400,75]
+[charaEffect T bit_talk_10_LowLevel_depth]
+
+
+[charaScale I 1.2]
+[charaScale R 1.4]
+[charaDepth R 1]
+[charaDepth I 2]
+[charaFadein R 0 -200,50]
+[charaFadein I 0 0,300]
+
+[charaScale L 1.2]
+[charaScale P 1.2]
+
+[charaDepth L 5]
+[charaDepth P 3]
+
+[charaTalk L]
+[charaFace L 12]
+[charaFadein L 0 0,225]
+[charaFadein P 0 400,0]
+
+[subRenderFadeinFSSideL #C 0.3 -250,-250]
+[wt 0.4]
+
+＠L：ヘファイスティオン
+テュフォンの竜体がない……？
+[k]
+
+[messageOff]
+[se ad14]
+[seVolume ad14 0 0.5]
+[se ade393]
+[seVolume ade393 0 0.1]
+[shake 0.03 1 1 0]
+[wt 0.8]
+[charaFace L 10]
+[wt 1.0]
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaFadeout O 0.1]
+[subRenderFadeout #C 0.1]
+[charaFadeout L 0.1]
+[charaFadeout P 0.1]
+
+[shakeStop]
+
+[charaDepth M 3]
+[charaDepth Y 2]
+[charaFadein Y 0.1 0,-360]
+
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.1]
+
+[seStop ad14 1.0]
+[seStop ade393 1.0]
+
+[se ad815]
+[seVolume ad815 0 0.7]
+[se ad914]
+[seVolume ad914 0 0.2]
+[cueSe SE_22 22_ade778]
+[cueSeVolume 22_ade778 0 0.7]
+[cueSe SE_24 24_ad1425]
+[cueSeVolume 24_ad1425 0 0.7]
+[se ad907]
+[seVolume ad907 0 0]
+
+[wt 0.1]
+[se ad718]
+[seVolume ad718 0 0.3]
+[seVolume ad907 1.5 0.2]
+
+[charaScale M 0.85]
+
+[charaShake M 0.04 2 3 0]
+[charaTalk M]
+[charaFadein M 0.6 0,-110]
+[charaMove M 0,-75 2.0]
+
+[wt 0.5]
+[cueSeStop 22_ade778 1.5]
+[cueSeStop 24_ad1425 1.5]
+[wt 1.5]
+
+[charaShake M 0.02 1 1 0]
+
+[seVolume ad14 1.0 0.4]
+[seVolume ade393 1.0 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[subRenderFadeinFSSideR #A 0.4 375,-380]
+[subRenderMoveEaseFSSideR #A 400,-330 0.4 easeOutCubic]
+[wt 0.5]
+
+[bgm BGM_EVENT_122 0.1]
+
+[charaTalk on]
+＠ムニエル
+大変です！　テュフォンが単独で発進しています！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 -20,300]
+
+＠ゴルドルフ
+なんだってえ！
+[k]
+
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 25]
+[charaFadein E 0.1 -20,300]
+
+＠ダ・ヴィンチ
+どういうことだい、テュフォン・エフェメロス！
+[k]
+
+[messageOff]
+[charaTalk I,M]
+[charaFace I 6]
+[subRenderFadeinFSSideL #B 0.4 -350,-230]
+[subRenderMoveEaseFSSideL #B -350,-330 0.4 easeOutCubic]
+[wt 0.4]
+
+＠I：テュフォン・エフェメロス=spot[I,M]
+黙れ！
+[k]
+
+[charaFace I 16]
+
+＠I：テュフォン・エフェメロス=spot[I,M]
+ここまで直れば充分だ！[r]私とテュフォンがあいつを潰す！
+[k]
+
+[charaFace I 8]
+
+＠I：テュフォン・エフェメロス=spot[I,M]
+カルデアの助けなんかいらない！[r]いつだって、私だけで充分だ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk D]
+[charaFace D 35]
+[charaFadein D 0.1 -20,300]
+
+＠イプシロン
+ちょっとちょっとお！[r]何、勝手なことしてるんですか！
+[k]
+
+[charaTalk I]
+[charaFace I 9]
+
+＠テュフォン・エフェメロス=spot[I,M]
+イプシロン……
+[k]
+
+[messageOff]
+[charaFace I 10]
+[wt 1.0]
+[charaFace I 16]
+
+＠I：テュフォン・エフェメロス=spot[I,M]
+今言った通りだ！[r]私がひとりで！　全部終わらせる！
+[k]
+
+？1：テュフォン・エフェメロス！
+？！
+
+＠I：テュフォン・エフェメロス=spot[I,M]
+おまえも聞いただろう！　私が決着をつけてやる！[r]弱者は弱者らしく、地上で見守ってろ！
+[k]
+
+[messageOff]
+[charaTalk M,I]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+
+[seVolume ad907 1.4 0.6]
+[wt 0.4]
+
+
+[charaShake M 0.03 3 2 1.5]
+[se ade343]
+[wt 0.5]
+[charaMove M 0,-50 1.0]
+[wt 0.8]
+
+[se ad147]
+[se ade345]
+[fadeout white 0.1]
+[seStop ade343 2.5]
+[seStop ad14 2.5]
+[seStop ade393 2.5]
+[seStop ad718 2.5]
+[seStop ad907 2.5]
+[wait fade]
+
+[charaPut U 0,-325]
+[charaEffect U bit_talk_impactlanding 275,0]
+[charaEffect U bit_talk_impactlanding -275,0]
+
+[charaFadeout M 0]
+
+[fadein white 0.1]
+[wait fade]
+[seStop ade345 2.5]
+[wt 2.7]
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[bgm BGM_EVENT_122 0.5 0.5]
+[wait wipe]
+
+[charaFadeout Y 0.1]
+[charaPut U 2000,2500]
+[charaEffectDestroy U bit_talk_impactlanding]
+
+[charaLayer D normal]
+[charaLayer E normal]
+[charaLayer H normal]
+[charaLayer F normal]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout D 0.1]
+[charaFadeout H 0.1]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[charaFadeout I 0.1]
+
+[scene 251206]
+
+[charaPut S 0,0]
+[charaTalk J]
+[charaFace J 13]
+[charaFadein J 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[bgm BGM_EVENT_122 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠マシュ
+テュフォン……[r]エフェメロスさんと一緒に、行ってしまいました……！
+[k]
+
+？1：そんな……！
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+
+＠ムニエル
+計算上、あと七分四十秒で、テュフォンと[r]テュフォン・ネオスが接触します。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut S 200,2500]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠イプシロン
+テュフォンを遠隔コントロールしようとしたけれど、[r]こっちの通信も切られちゃってる……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠グレイ
+どうしたら……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠ヘファイスティオン
+なんだ？[r]そんなに、難しく考えるところか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+フェイカー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ヘファイスティオン
+どうせ[%1]は[r]あのまま放っておくつもりはないんだろう？
+[k]
+
+[bgmStop BGM_EVENT_122 1.5]
+
+[charaFace G 7]
+
+＠ヘファイスティオン
+だったら、追えばいい。簡単な話じゃないか。[r]私の戦車ならできるとも。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk D,B,A]
+[charaFace D 33]
+[charaFace A 6]
+[charaFace B 4]
+[charaDepth A 2]
+[charaDepth B 3]
+[charaDepth D 4]
+[charaFadeinFSL A 0.1 0]
+[charaFadein D 0.1 1]
+[charaFadeinFSR B 0.1 2]
+[wt 1.0]
+[charaFaceFade D 3 0.2]
+[charaFaceFade A 1 0.2]
+[charaFaceFade B 1 0.2]
+[wt 1.4]
+
+[bgm BGM_SEIHAI_4 0.1]
+
+？1：うん！
+？2：行こう！
+
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠オデュッセウス
+残念ながら、ヘファイスティオンの戦車だと[r]全員は乗れまいな。
+[k]
+
+[charaFace C 0]
+
+＠オデュッセウス
+いざというときの後詰めも必要だ。[r]俺がここに残っていよう。
+[k]
+
+＠オデュッセウス
+俺の[#異霊:オルタ]の相手ができないのは業腹だが、[r]ここはマスターやグレイたちに任せよう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠グレイ
+ありがとうございます。オデュッセウスさん。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠ヘファイスティオン
+さて。悪いが、あのテュフォンに追いつくとなると、[r]運転は少々荒くなるぞ。覚悟しておけ！
+[k]
+
+[messageOff]
+[wt 0.6]
+[bgmStop BGM_SEIHAI_4 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout G 0.1]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[subRenderFadeout #C 0.1]
+[subRenderFadeout #D 0.1]
+
+[charaFadeout Q 0]
+[charaFadeout D 0]
+[charaFadeout E 0]
+[charaFadeout H 0]
+[charaFadeout F 0]
+[charaFadeout T 0]
+[charaEffectDestroy S bit_talk_10_LowLevel_depth]
+[charaEffectDestroy T bit_talk_10_LowLevel_depth]
+
+[charaFadeout R 0]
+[charaFadeout I 0]
+[charaFadeout P 0]
+[charaFadeout G 0]
+
+[charaFadeout V 0]
+[charaFadeout W 0]
+
+[subCameraOff]
+[charaLayer Q normal]
+[charaLayer D normal]
+[charaLayer E normal]
+[charaLayer H normal]
+[charaLayer F normal]
+[charaLayer T normal]
+[charaLayer R normal]
+[charaLayer I normal]
+[charaLayer P normal]
+[charaLayer G normal]
+[charaLayer V normal]
+[charaLayer W normal]
+
+
+[charaSet A 1098325820 1 テュフォン・ネオス_胸部装甲]
+[charaSet B 1098325660 1 テュフォン（演出用）]
+[charaScale B 1.4]
+
+[charaSet K 1098326500 1 オデュッセウス・オルタ]
+
+[scene 109700]
+
+[pictureFrameTop cut063_cinema]
+
+[sceneSet O 109700 1]
+[charaScale O 1.2]
+
+[sceneSet P 109700 1]
+[charaScale P 1.4]
+
+[sceneSet Q 10000 1]
+[sceneSet R 10000 1]
+[sceneSet C 10000 1]
+
+[sceneSet Y 109700 1]
+[charaScale Y 1.6]
+
+[charaDepth Y 1]
+[charaDepth M 2]
+
+[charaDepth O 3]
+[charaDepth M 4]
+
+[subCameraOn 4]
+
+[charaLayer Q sub #A]
+[charaLayer N sub #A]
+
+[charaLayer T sub #B]
+[charaLayer A sub #B]
+[charaLayer P sub #B]
+
+[charaLayer K sub #C]
+[charaLayer R sub #C]
+
+[charaLayer X sub #D]
+[charaLayer C sub #D]
+
+[subCameraFilter #A maskEdge cut359_mask05 4 255,255,255,255 0]
+[subCameraFilter #B normal]
+[subCameraFilter #C maskEdge cut359_mask05 5 0,0,0,255 0]
+[subCameraFilter #D maskEdge cut359_mask05 6 255,255,255,255 0]
+
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.0]
+[subRenderScale #C 1.0]
+[subRenderScale #D 1.0]
+
+[subRenderDepth #A 4]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+
+[charaScale Q 1.2]
+[charaDepth Q 1]
+
+[charaScale N 1.2]
+[charaDepth N 2]
+
+[charaFadein N 0.1 0,200]
+[charaFadein Q 0.1 0,225]
+
+[charaDepth P 4]
+[charaDepth A 5]
+[charaDepth T 6]
+
+[charaPut T 0,0]
+[charaEffect T bit_talk_gust01]
+
+[charaFadein P 0.1 100,-260]
+
+[charaDepth R 1]
+[charaDepth K 2]
+
+[charaScale K 1.2]
+[charaScale R 1.4]
+
+[charaFadein K 0.1 0,200]
+[charaFadein R 0.1 0,225]
+
+[charaScale C 1.4]
+[charaDepth C 1]
+
+[charaScale X 1.2]
+[charaDepth X 2]
+
+[charaFace X 5]
+[charaFadein X 0.1 0,200]
+[charaFadein C 0.1 0,225]
+
+
+[charaDepth O 2]
+[charaDepth M 3]
+[charaDepth U 4]
+
+[charaDepth Y 8]
+[charaDepth B 9]
+[charaDepth S 10]
+
+[charaScale O 1.4]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 0,-100]
+[charaFadein O 0.1 0,-320]
+
+[charaPut S 1]
+[charaEffect S bit_talk_gust01]
+[charaPut U 1]
+[charaEffect U bit_talk_gust01]
+
+[se ade343]
+[seVolume ade343 0 0]
+[se ad907]
+[seVolume ad907 0 0]
+[wt 1.5]
+
+[seVolume ade343 1.0 0.7]
+[seVolume ad907 1.0 0.4]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.1]
+
+[seVolume ade343 1.0 0.4]
+[seVolume ad907 1.0 0.2]
+
+[charaTalk N,M]
+[charaFace N 5]
+[subRenderFadeinFSSideR #A 0.4 300,-250]
+[wt 0.5]
+
+[bgm BGM_MAP_56 0.1]
+
+＠N：テュフォン・エフェメロス=spot[N,M]
+行け……行け……！
+[k]
+
+＠N：テュフォン・エフェメロス=spot[N,M]
+行け、テュフォン……！
+[k]
+
+[charaFace N 10]
+
+＠N：テュフォン・エフェメロス=spot[N,M]
+地上なんて見るな。[r]もう見るな。
+[k]
+
+＠N：テュフォン・エフェメロス=spot[N,M]
+残したものなんて、何もない。
+[k]
+
+[charaFace N 5]
+
+＠N：テュフォン・エフェメロス=spot[N,M]
+私はずっとひとりだった。これからもそうだ。[r]何も、失っていない。何も、この手から零れていない。
+[k]
+
+[messageOff]
+
+[charaTalk K]
+
+[cueSe SE_22 22_ade799]
+[wt 0.35]
+
+[charaFace N 25]
+[wt 0.5]
+
+[cueSeStop 22_ade799 0.4]
+[wt 0.9]
+
+[charaTalk N,M]
+[charaFace N 6]
+
+＠N：テュフォン・エフェメロス=spot[N,M]
+来たわね。テュフォン・ネオス[line 3]！
+[k]
+
+
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[seVolume ade343 0.7 0.2]
+[seVolume ad907 0.7 0.1]
+
+[se ade208]
+[seVolume ade208 0 0]
+[wait wipe]
+
+
+[subRenderFadeout #A 0.1]
+[wt 0.4]
+
+[charaScale A 0.65]
+[subRenderFadein #B 0 0,0]
+[wt 0.3]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[seVolume ade343 0.7 0.4]
+[seVolume ad907 0.7 0.2]
+[wt 0.1]
+[seVolume ade208 0.7 1.0]
+[wait wipe]
+
+[wt 0.8]
+
+[se ad1038]
+[cueSe SE_24 24_ad1415]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 -100,-120]
+
+[charaMoveScaleEase A 0.85 0.8 easeOutSine]
+[charaMoveEase A 0,-100 0.8 easeOutSine]
+[wt 0.3]
+[seStop ade208 0.8]
+[seStop ad1038 0.8]
+[cueSeStop 24_ad1415 0.8]
+[wt 1.0]
+
+[se ad1]
+[wt 0.1]
+
+[charaTalk K,A]
+[subRenderFadeinFSSideL #C 0.4 -300,-250]
+
+[wt 1.2]
+
+＠K：オデュッセウス・オルタ=spot[K,A]
+ほう。センサーの間違いかと思ったんだがな。[r]どうやら、本当にテュフォンとおまえだけか？
+[k]
+
+＠K：オデュッセウス・オルタ=spot[K,A]
+てっきり、カルデアのヤツらは[r]一緒だと思っていたが。
+[k]
+
+[messageOff]
+[charaTalk N]
+[charaFace N 18]
+[subRenderFadeinFSSideR #A 0.4 300,-250]
+[wt 0.5]
+
+＠N：テュフォン・エフェメロス
+もう、充分働いてもらったんだもの。[r]これ以上は、あんな愚者どもに任せられないわ。
+[k]
+
+[charaFace N 19]
+
+＠N：テュフォン・エフェメロス
+おまえは、私が直接ぶっ潰してあげる。[r]そうしないと気が済まないの。
+[k]
+
+[charaFace N 1]
+
+＠N：テュフォン・エフェメロス
+罪なるかな。[#咎:とが]なるかな。悪なるかな。
+[k]
+
+[charaFace N 20]
+
+＠N：テュフォン・エフェメロス
+おまえの願いを聞いてやってもいいのよ？[r]もちろん、全部、叶わなくなるのだけれど。
+[k]
+
+＠オデュッセウス・オルタ=spot[K,A]
+ずいぶん、おかしな言い方だな。
+[k]
+
+[charaFace N 5]
+
+＠N：テュフォン・エフェメロス
+は？　なんのこと？
+[k]
+
+＠オデュッセウス・オルタ=spot[K,A]
+どうにも、俺にはカルデアのヤツらを[r]巻き込みたくないって言ってるように聞こえるんだ。
+[k]
+
+[messageOff]
+[charaTalk N]
+[charaFace N 26]
+[wt 1.0]
+
+[charaFaceFade N 10 0.2]
+[wt 1.0]
+
+[charaFaceFade N 28 0.2]
+
+＠N：テュフォン・エフェメロス
+あはははは！　鎧の中身、よっぽど[#耄碌:もうろく]してるのね！[r]実はおじいちゃんなんじゃないの！
+[k]
+
+＠K：オデュッセウス・オルタ=spot[K,A]
+そうかもな。どの道サーヴァントなんて、[r]みんな同じようなものだろうが。
+[k]
+
+＠K：オデュッセウス・オルタ=spot[K,A]
+俺は、俺の願いのためにやるべきことをやるし、[r]聖杯なんぞに釣られるヤツらも一緒だ。
+[k]
+
+＠K：オデュッセウス・オルタ=spot[K,A]
+そちらのテュフォンを潰さなきゃならないのも、[r]俺の勝手な事情だとも。
+[k]
+
+＠K：オデュッセウス・オルタ=spot[K,A]
+だが、おまえはどうにもすわりが悪い。[r]もちろん反願望機ではあるんだろうが……
+[k]
+
+＠K：オデュッセウス・オルタ=spot[K,A]
+だとしても、[#他人の願いを叶えられなくする]ってのは、[r]本当におまえの欲望なのか？
+[k]
+
+[charaFace N 10]
+
+＠N：テュフォン・エフェメロス
+…………。
+[k]
+
+＠K：オデュッセウス・オルタ=spot[K,A]
+勝手な言い草だし、[r]これから殺し合う相手の余計な勘繰りだがな。
+[k]
+
+＠K：オデュッセウス・オルタ=spot[K,A]
+おまえ、結構な無理をしてないか？
+[k]
+
+＠K：オデュッセウス・オルタ=spot[K,A]
+たとえば……[r]おまえこそが、願いに囚われているんじゃ？
+[k]
+
+[charaFace N 6]
+
+＠N：テュフォン・エフェメロス
+おまえなんかに、言われる筋合いはないでしょ！
+[k]
+
+[bgmStop BGM_MAP_56 2.0]
+[seStop ade343 2.0]
+[seStop ad907 2.0]
+
+＠K：オデュッセウス・オルタ=spot[K,A]
+筋合いがない、ね。[r]そうだろうとも。
+[k]
+
+＠K：オデュッセウス・オルタ=spot[K,A]
+じゃあ、ここからはあるべき関係に戻すか。[r]余計な横槍が入る前にな。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaTalk B,K]
+
+[charaPut S 1]
+[charaEffect S bit_talk_gust01]
+[charaEffectStop U bit_talk_gust01]
+
+[charaScale B 0.85]
+[charaFace B 0]
+[charaFadein B 0.75 0,-100]
+[charaFadein Y 0.75 0,-400]
+
+[subRenderFadeout #A 0.75]
+[subRenderFadeout #B 0.75]
+[subRenderFadeout #C 0.75]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[cueSe SE_25 25_ade1192]
+[charaEffect B bit_talk_eye_tpn]
+[wt 1.2]
+
+[cueSe SE_23 23_ade918]
+[wt 0.2]
+[charaEffect B bit_talk_voice02 0,175]
+[wt 0.2]
+[shake 0.02 2 2 2.2]
+[wt 2.4]
+
+[cueSeStop 23_ade918 0.6]
+[wt 0.2]
+
+[charaTalk B,X]
+[subRenderFadeinFSSideR #D 0.4 300,-250]
+[wt 0.8]
+
+[bgm BGM_BATTLE_80 0.1]
+
+＠X：テュフォン・エフェメロス=spot[B,X]
+ええ、そうしましょう。
+[k]
+
+[charaFace X 10]
+
+＠X：テュフォン・エフェメロス=spot[B,X]
+何もいらない。何も欲しくない。[r]願ったことなんて、一度もない。
+[k]
+
+[charaFace X 17]
+
+＠X：テュフォン・エフェメロス=spot[B,X]
+私はただ、私とテュフォンの誇りのために、[r]テュフォン・ネオスを駆るおまえを潰す！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_80 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

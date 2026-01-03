@@ -1,0 +1,1502 @@
+
+
+＄03-00-13-01-3-0
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 8001400 1 マシュ]
+[charaSet B 1098239320 1 カドック]
+[charaSet C 1098257400 1 シオン]
+[charaSet D 1098255100 1 ゴルドルフ]
+[charaSet E 1098158330 1 ネモ]
+[sceneSet F 171300 1]
+[charaSet G 1098257310 1 ダ・ヴィンチ]
+[charaSet H 98115000 1 エフェクト用]
+[sceneSet I 171301 1]
+[sceneSet J 179406 1]
+[charaSet K 1098255200 1 ハベトロット]
+[charaSet L 1098123000 1 ムニエル]
+[charaSet M 1098254800 1 ネモ・マリーン]
+[imageSet N back10000 1 1]
+[charaScale N 1.3]
+[sceneSet P 122608 1]
+[charaScale P 1.01]
+[charaSet Q 1098182110 1 ネモ・プロフェッサー]
+[charaSet R 1098182200 1 ネモ・エンジン]
+[sceneSet S 179404 1]
+[sceneSet T 179410 1]
+[sceneSet U 158000 1]
+[sceneSet V 179402 1]
+[sceneSet W 179407 1]
+[sceneSet X 171400 1]
+[charaSet Y 1098255300 1 ニトクリス]
+[sceneSet Z 168500 1]
+[charaScale Z 1.2]
+
+[scene 122608]
+[subCameraOn 3]
+
+[charaLayer J sub #A]
+[charaLayer S sub #A]
+[charaLayer T sub #A]
+
+[subCameraFilter #A mask cut359_mask08 3]
+
+[charaTalk depthOff]
+[charaDepth P 0]
+[charaDepth Z 4]
+[charaDepth A 3]
+[charaDepth H 2]
+[charaFadein P 0.1 0,-200]
+
+[charaDepth J 3]
+[charaDepth S 2]
+[charaDepth T 1]
+
+[charaScale J 1.05]
+[charaScale S 1.05]
+[charaScale T 1.05]
+
+[charaFadein J 0.1 0,-25]
+[charaFadein S 0.1 0,-25]
+[charaFadein T 0.1 0,-25]
+
+[subRenderFadein #A 0.1 0,-270]
+
+[fadein black 1.0]
+[bgm BGM_BATTLE_168 0.1]
+[wait fade]
+
+
+
+＠Ｕ－オルガマリー
+は、ははははははは！
+[k]
+
+＠Ｕ－オルガマリー
+まったく傷はないが、[r]この、外部から押される感じはいいな！
+[k]
+
+[messageOff]
+[charaFadeout J 0.4]
+[wt 0.5]
+
+＠Ｕ－オルガマリー
+やるではないか。[#技術:スキル]、というの？[r]私も、貴様たちに合わせて学習した甲斐がある！
+[k]
+
+[messageOff]
+[charaFadeout S 0.4]
+[wt 0.5]
+
+＠Ｕ－オルガマリー
+では待望の大技だ、心して受けるがいい。[r]我が重力圏、『油断大敵』をな！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[wt 0.5]
+
+[se ade358]
+[effect bit_talk_31 0,250]
+[fadeout white 0.5]
+[wait fade]
+
+[se ad241]
+[cueSe SE_22 22_ad1194]
+[seVolume 22_ad1194 0 0.3]
+[effectStop bit_talk_31]
+[shake 0.05 3 3 0]
+[charaPut H 1]
+[charaEffect H bit_talk_blackhole]
+
+[fadein white 0.5]
+[wait fade]
+
+
+[wt 3.5]
+
+[charaTalk A]
+[charaFace A 2]
+[overlayFadein A 0.2 1]
+
+＠マシュ
+させません！[r]その規模なら、わたしだけでもいけるはず……！
+[k]
+
+
+[messageOff]
+[se ad39]
+[fowardEffect bit_talk_36]
+[wt 2.5]
+[fowardEffectStop bit_talk_36]
+[cueSe NoblePhantasm_800100 NP_800100_24]
+[wt 0.3]
+[fowardEffect bit_talk_shield_mash]
+[se ad718]
+[se ad556]
+[se ad14]
+[wt 1.0]
+
+＠マシュ
+白亜の盾よ、罪なき者のみ通すがいい……！[r]『[#いまは脆き夢想の城:モ　ー　ル　ド　・　キ　ャ　メ　ロ　ッ　ト]』……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[fowardEffectDestroy bit_talk_shield_mash]
+[se ad85]
+[seStop 22_ad1194 2.0]
+[seStop ad718 0.5]
+[seStop ad556 0.5]
+[seStop ad14 0.5]
+[cueSeStop NP_800100_24 0.5]
+[fowardEffect bit_talk_gram_slash_03_fs]
+[wt 0.2]
+
+[flashin once 0.1 0.2 FFFFFF80 FFFFFF00]
+[wt 0.1]
+
+[se ad897]
+[se ad32]
+[fowardEffect bit_talk_14]
+[seStop ad241 0.5]
+[se ad246]
+[charaEffectStop H bit_talk_blackhole]
+[wt 1.0]
+[seStop ad246 2.0]
+
+[charaSet A 8001400 1 マシュ]
+[charaDepth A 3]
+[wt 0.1]
+[shakeStop]
+[wt 1.0]
+
+[charaFadein Z 1.0 0,-250]
+[charaMove Z 0,-310 1.0]
+[wt 1.2]
+
+＠Ｕ－オルガマリー
+な、球のように返してきただと！？[r]これは……テニス！　テニスだな、記録で見た！
+[k]
+
+[fowardEffectDestroy bit_talk_14]
+＠Ｕ－オルガマリー
+貴様、テニスの英霊だったかーーーー！
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+
+[charaFadeout Z 0.5]
+[wt 0.7]
+
+＠マシュ
+違うのですがウィンブルドンには憧れています！[r]管制室、今です！
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1]
+[bgm BGM_BATTLE_168 0.5 0.5]
+[wait wipe]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaFadeout J 0.1]
+[charaFadeout S 0.1]
+[charaFadeout T 0.1]
+[charaLayer J normal]
+[charaLayer S normal]
+[charaLayer T normal]
+
+[charaFadeout P 0.1]
+[charaFadeout A 0.1]
+[sceneSet P 132900 1]
+
+[wt 0.5]
+[scene 132900]
+
+[wipein rectangleStripUpToDown 0.5 1]
+[bgm BGM_BATTLE_168 0.5 1.0]
+[wait wipe]
+
+[charaTalk M]
+[charaFace M 3]
+[charaFadein M 0.1 1]
+
+＠ネモ・マリーン
+『異星の神』、[#自分:マシュ]の攻撃を食らって移動！[r]現在、艦首先端に位置！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠ネモ
+推進機構、逆噴射だ！　全速で[#後退:バック]！[r]同時に主砲展開！　ダ・ヴィンチ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 14]
+[charaFadein G 0.1 1]
+
+＠ダ・ヴィンチ
+任せて、発射シークエンスはほぼ終了している！
+[k]
+
+＠ダ・ヴィンチ
+[%1][&君:ちゃん]が[r]時間を稼いでくれたおかげだ！
+[k]
+
+[charaFace G 17]
+
+＠ダ・ヴィンチ
+ストーム・ボーダー、抜刀形態への変形、完了！[r]抗脅威反応弁、開放！　魔力循環を開始！
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_168 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[sceneSet J 171000 1]
+[charaScale J 1.0]
+
+[charaFadeout G 0.1]
+[charaPut H 2000,2000]
+[charaEffectStop H bit_talk_10_LowLevel]
+
+[scene 10000]
+[wt 0.5]
+
+[charaLayer U sub #B]
+[charaLayer R sub #B]
+[charaLayer P sub #C]
+[charaLayer Q sub #C]
+[charaLayer G sub #C]
+[charaLayer H sub #C]
+[charaLayer E sub #C]
+
+[fadein black 1.0]
+[wait fade]
+[criMovie talk_mov149 bgmPlay false]
+[wt 5.5]
+[bgm BGM_BATTLE_174 1.0]
+[wt 20.5]
+[overlayFadein J 1.0 0,-200]
+
+
+
+
+[charaScale U 1.5]
+[charaEffect H bit_talk_10_LowLevel_depth]
+
+[charaTalk depthOff]
+[charaDepth U 1]
+[charaDepth R 2]
+[charaFadein U 0.1 -200,-50]
+[charaTalk R]
+
+[charaFace R 2]
+[charaFadein R 0.1 -510,300]
+
+[subCameraFilter #B mask cut359_mask12 3]
+[subCameraFilter #C mask cut359_mask11 3]
+[subRenderFadeinFSSideL #B 0.3 95,200]
+[subRenderMoveFSSideL #B 95,-200 0.3]
+[wt 0.6]
+
+＠ネモ・エンジン
+トリトンエンジン仮想五号、六号、正常に稼働！[r]虚数空間からの電力提供、最大値を維持！
+[k]
+
+[charaFace R 1]
+
+＠ネモ・エンジン
+いけるぜキャプテン、[r]値が崩れる前にブッぱなせー！
+[k]
+
+[messageOff]
+[charaScale P 1.5]
+[charaDepth P 1]
+[charaDepth Q 2]
+[charaDepth G 3]
+[charaDepth E 4]
+[charaDepth H 5]
+
+[subRenderMoveFSSideL #B -105,-400 0.6]
+[subRenderFadeout #B 0.3]
+[wt 0.3]
+[charaFadeout R 0.1]
+[charaFadeout U 0.1]
+[wt 0.2]
+
+？1：すごい！　けど……
+？2：どういう事[&なんだ:なのかな]！？
+
+？！
+
+[charaTalk Q]
+[charaFadein P 0.1 200,50]
+[charaFace Q 5]
+[charaPut H 520,260]
+[charaFadein Q 0.1 520,260]
+[subRenderFadeinFSSideR #C 0.3 -95,200]
+[subRenderMoveFSSideR #C -95,-200 0.3]
+[wt 0.5]
+
+＠ネモ・プロフェッサー
+え～、これはですね～、[r]ブラックバレルの応用というか～。
+[k]
+
+＠ネモ・プロフェッサー
+ブラックバレルは相手の『寿命』を測定して、[r]その寿命をエネルギーに倒置変換して弾丸にします。
+[k]
+
+＠ネモ・プロフェッサー
+一方、聖剣兵装は『人類史への脅威』を測定して、[r]そのレベルに応じて地球の防衛力……
+[k]
+
+＠ネモ・プロフェッサー
+アレです、自浄作用ですね。白血球といいますか。[r]そんな感じで地球内核からエネルギーが供給されます。
+[k]
+
+[charaFaceFade Q 1 0.2]
+
+＠ネモ・プロフェッサー
+どちらも、攻撃力や使用熱量は我々からではなく、[r]『より大きな存在』から吸い上げる兵器なんです～。
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 17]
+[charaFadein G 0.1 510,250]
+
+＠ダ・ヴィンチ
+そう。だからストーム・ボーダー自体の消費魔力は[r]そこまで多くない。
+[k]
+
+＠ダ・ヴィンチ
+このまま飛行する事に何の支障もないんだ。[r]後は[line 3]キャプテン！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+[charaEffectStop H bit_talk_10_LowLevel_depth]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 540,280]
+
+＠ネモ
+砲撃手、照準合わせ！[r]確実に当てろ！　こんな機会は二度とないぞ！
+[k]
+
+[messageOff]
+[subRenderMoveFSSideR #C 105,-400 0.6]
+[subRenderFadeout #C 0.3]
+[wt 0.5]
+
+＠ネモ・マリーン
+だいじょうぶ、人間大の標的とか小さすぎるけど、[r]主砲の放射範囲がすっっっごいから！
+[k]
+
+＠ネモ・マリーン
+誤差角補正、シバからの命中セーフティ解除を確認！
+[k]
+
+＠ネモ・マリーン
+主砲弾倉、ヒュームバレルに換装！[r][line 3]レイプルーフ、撃っちまーーーーす！
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_174 1.0]
+[scene 10000]
+[criMovie talk_mov150 bgmPlay false]
+[wt 1.0]
+[charaFadeout J 1.0]
+[wt 26.0]
+[bgm BGM_BATTLE_139 0.1]
+[wt 10.0]
+
+[fadeout black 1.0]
+[bgm BGM_BATTLE_139 1.0 0.4]
+[wait fade]
+
+[charaFadeout J 0.1]
+[charaEffect H bit_talk_10_LowLevel]
+[charaFadeout E 0.1]
+[charaFadeout P 0.1]
+[charaLayer P normal]
+[charaLayer U normal]
+[charaLayer R normal]
+[charaLayer Q normal]
+[charaLayer G normal]
+[charaLayer E normal]
+[charaLayer H normal]
+[scene 132900]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_BATTLE_139 1.0 1.0]
+[wait fade]
+
+
+[charaTalk M]
+[charaFace M 6]
+[charaFadein M 0.1 1]
+
+＠ネモ・マリーン
+敵『異星の神』、依然健在でーす！[r]むしろパワーアップしてまーす！
+[k]
+
+＠ネモ・マリーン
+主砲の衝撃、みんなエネルギー変換されて[r]吸収されちゃいましたーーー！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ネモ
+[line 3]は？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+なんで！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk Q]
+[charaFace Q 6]
+[charaFadein Q 0.1 1]
+
+＠ネモ・プロフェッサー
+はいチート～。[r]あの角、そういう能力があるんじゃないでしょうか～。
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠シオン
+……いえ。[r]その能力も想定してのレイプルーフでしたが……
+[k]
+
+[charaTalk depthOff]
+[charaDepth N 4]
+[charaDepth C 6]
+
+[charaPut N 1]
+[charaFadeTime N 0.2 0.5]
+＠シオン
+（……発射の直前、主砲の出力は想定値を大きく[r]　下回っていましたね……という事は……）
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout N 0.2]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+ええい、呆けている場合か、あの顔を見ろ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1]
+[bgm BGM_BATTLE_139 0.5 0.5]
+[wait wipe]
+
+[charaLayer V sub #A]
+[charaLayer W sub #A]
+[charaScale V 1.05]
+[charaScale W 1.05]
+[charaDepth V 2]
+[charaDepth W 1]
+
+[charaFadein V 0.1 0,-25]
+[charaFadein W 0.1 0,-25]
+
+[subRenderFadein #A 0.1 0,-270]
+[charaFadeout D 0.1]
+[scene 122608]
+
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1]
+[bgm BGM_BATTLE_139 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+[charaFadeout V 0.3]
+[wt 1.2]
+
+[wipeout rectangleStripDownToUp 0.5 1]
+[bgm BGM_BATTLE_139 0.5 0.5]
+[wait wipe]
+
+[charaFadeout W 0.1]
+[charaLayer W normal]
+[charaLayer V normal]
+[subRenderFadeout #A 0.1]
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+[wt 0.5]
+[scene 132900]
+
+[wipein rectangleStripUpToDown 0.5 1]
+[bgm BGM_BATTLE_139 0.5 1.0]
+[wait wipe]
+
+＠ゴルドルフ
+ヤツ自身、なぜ耐えきったか分かっていないが、[r]あの納得のいかない顔、私には分かる！
+[k]
+
+＠ゴルドルフ
+本気の[#八つ当たりがくるぞ]！[r]彷徨海を潰した、あの重力圏が！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 14]
+[charaFadein G 0.1 1]
+
+＠ダ・ヴィンチ
+！　第二射、急いで！
+[k]
+
+＠ダ・ヴィンチ
+次は設定を変える！[r]光子反応弾から甲錬金弾にすれば、
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+[charaEffectStop H bit_talk_10_LowLevel]
+
+[se ade393]
+[seVolume ade393 0 0]
+[seVolume ade393 1.0 0.3]
+
+[bgmStop BGM_BATTLE_139 2.0]
+＠ネモ・マリーンＡ
+待って待って、地表に異常確認～～！[r]大規模な地殻の崩落でーーーす！
+[k]
+
+[charaEffect H bit_talk_10_LowLevel_depth]
+
+＠ネモ・マリーンＢ
+大陸地下に巨大空洞を確認！[r]すごい、何キロメートルあるんだこれ！？
+[k]
+
+[se ad935]
+[seVolume ad935 0 0]
+＠ネモ・マリーンＣ
+地下空洞から[#超々:ちょうちょう]高温度熱源、接近！[r]うわぁ、当艦の真下だよ～～～！（涙）
+[k]
+
+[messageOff]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth H 2]
+[charaDepth C 4]
+[charaDepth L 3]
+[charaDepth D 5]
+
+[charaFace G 14]
+[charaFace C 9]
+[charaFace D 5]
+[charaFace L 8]
+[charaPutFSR H 115,0]
+[charaFadeinFSR G 0.1 115,0]
+[charaFadeinFSSideL C 0.1 -350,0]
+[charaFadeinFSSideR D 0.1 350,0]
+[charaFadeinFSL L 0.1 -120,0]
+[wt 2.0]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaDepth Q 1]
+[charaDepth Y 2]
+[charaDepth B 3]
+[charaDepth E 4]
+
+[charaFace E 8]
+[charaFace B 3]
+[charaFace Y 5]
+[charaFace Q 2]
+[charaPutFSR H 120,0]
+[charaFadeinFSL E 0.1 -80,0]
+[charaFadeinFSSideL Y 0.1 -350,0]
+[charaFadeinFSSideR B 0.1 350,0]
+[charaFadeinFSR Q 0.1 120,0]
+[wt 2.0]
+
+[se ad791]
+[cueSe SE_22 22_ad1195]
+[cueSeVolume 22_ad1195 0 0]
+[cueSeVolume 22_ad1195 1.0 1.0]
+[fadeout white 2.0]
+[wait fade]
+
+[charaPut H 2000,2000]
+[charaEffectStop H bit_talk_10_LowLevel_depth]
+[charaScale F 1.4]
+[charaFadein F 0.1 -200,-135]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[charaFadeout Y 0.1]
+[charaFadeout Q 0.1]
+
+[charaTalk depthOn]
+[scene 171300]
+[wt 1.0]
+
+[seVolume ade393 1.0 1.0]
+[seVolume ad935 1.0 0.5]
+
+[fadein white 1.0]
+[charaShake F 0.05 2 2 4.4]
+[charaMove F -260,-420 5.4]
+[wait fade]
+
+[charaEffect H bit_talk_10_LowLevel]
+[wt 3.0]
+
+[cueSeVolume 22_ad1195 1.4 0.3]
+[seVolume ade393 1.4 0.3]
+[seVolume ad935 1.4 0.1]
+[bgm BGM_BATTLE_78 0.1]
+
+[shake 0.04 1 1 0]
+[charaFadeout F 1.4]
+[wt 2.4]
+
+
+
+＠ゴルドルフ
+なんだねアレは！？[r]『異星の神』の新しい攻撃か！？
+[k]
+
+＠シオン
+いえ、これは別のものです！[r][#人理定礎:じ ん り て い そ]値がマイナスを示しました！
+[k]
+
+＠シオン
+あれは異聞帯からやって来たものです！
+[k]
+
+＠シオン
+内部気圧2000億、温度1600万度、[r]密度は水の160倍[line 3]どう見ても太陽です！
+[k]
+
+[messageOff]
+[fadeout black 0.7]
+[cueSeVolume 22_ad1195 0.7 0.1]
+[seVolume ade393 0.7 0.1]
+[seVolume ad935 0.7 0.05]
+[wait fade]
+
+[shakeStop]
+
+[scene 132900]
+[wt 0.6]
+[charaSet A 1098257920 1 マシュ]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 25]
+[charaFadein G 0.1 1]
+
+＠ダ・ヴィンチ
+！[r]ムニエル、甲板の状況は！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+＠ムニエル
+『異星の神』とあの柱が向き合ってる！
+[k]
+
+＠ムニエル
+マシュはどっちにも対応できるよう待機している！[r]正直、頑張りすぎだ！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ネモ
+マシュ、艦内に戻って良し！[r]シャドウ・ボーダー格納庫で待機して！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+了解、マシュ・キリエライト、[r]１番[#格納庫:ハ　ッ　チ]まで後退します！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠ネモ
+キミたちもだ、[r][%1]、カドック、ムニエル！
+[k]
+
+＠ネモ
+ほかカルデアスタッフも[r]シャドウ・ボーダー格納庫に急げ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+それは退避する、という事かね！？[r]しかし私は！？　シオン・エルトナムは！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠ネモ
+司令官が退避するのはまだ早い。[r]シオンは僕を維持するために必要だ。
+[k]
+
+＠ネモ
+ダ・ヴィンチは可能なかぎりの速度で[r]電算室から出て、格納庫に向かってくれ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+こ、ここに残る人間のスタッフは私だけか！[r]しし司令官といっても人の子なのだがね！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk Y]
+[charaFace Y 5]
+[charaFadein Y 0.1 1]
+
+＠ニトクリス
+うろたえてどうするのです！[r]私が護衛につきます、安心なさい！
+[k]
+
+[messageOff]
+[charaFadeout Y 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+[wt 1.2]
+
+[charaFadeout D 0.1]
+[wt 0.4]
+
+？1：でも、ネモたちは……？
+
+？！
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠カドック
+ストーム・ボーダーそのものであるネモが[r]危機を感じてるんだ、言う通りにしろ！
+[k]
+
+＠カドック
+僕たちがマシュと合流すれば、ネモもそれだけ[r]自由に行動できる！　そうだろ！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠ネモ
+その通りだカドック。[r]さあ、みんな早く格納庫へ。
+[k]
+
+＠ネモ
+マリーンをひとり付けるよ。[r]何かあったら、マリーン越しに僕に伝えて。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠ネモ・マリーン
+アイアイサー！[r]連絡役なら任せて、キャプテン！
+[k]
+
+[messageOff]
+[se ad771]
+[seStop ad771 1.2]
+[charaFadeout M 0.4]
+[wt 1.5]
+
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[wt 0.5]
+[scene 171300]
+
+[cueSeVolume 22_ad1195 0.6 0.3]
+[seVolume ade393 0.6 0.3]
+[seVolume ad935 0.6 0.1]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+
+[wt 1.2]
+
+[charaLayer V sub #A]
+[charaLayer W sub #A]
+
+[charaScale V 1.05]
+[charaScale W 1.05]
+[charaDepth V 2]
+[charaDepth W 1]
+
+[charaFadein V 0.1 0,-25]
+[charaFadein W 0.1 0,-25]
+
+[charaTalk V]
+[subRenderFadein #A 0.4 0,-270]
+[wt 0.4]
+
+
+＠Ｕ－オルガマリー
+[line 3]なんだ、この光は。[r][#あの地底世界]に、こんなものはどこにも[line 3]
+[k]
+
+[messageOff]
+[charaFadeout V 0.4]
+[wt 0.5]
+
+＠Ｕ－オルガマリー
+[FFFFFF]！？[-]
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+[cueSeVolume 22_ad1195 0.7 1.0]
+[seVolume ade393 0.7 1.0]
+[seVolume ad935 0.7 0.8]
+[wt 1.2]
+
+[cueSe SE_22 22_ad1196]
+[se ad875]
+[seVolume ad875 0 0.8]
+[fadeout white 0.5]
+[cueSeStop 22_ad1195 0.3]
+[seStop ade393 0.3]
+[seStop ad935 0.3]
+[wait fade]
+
+[scene 171301]
+[wt 0.5]
+
+[charaFadeout W 0.1]
+[charaLayer W normal]
+[charaLayer V normal]
+[wt 1.5]
+
+[cueSe SE_22 22_ade783]
+[cueSeVolume 22_ade783 0 0]
+[cueSe SE_22 22_adm89]
+[cueSeVolume 22_adm89 0 0]
+[cueSeVolume 22_ade783 1.5 1.0]
+[cueSeVolume 22_adm89 1.5 0.1]
+
+[charaScale I 1.4]
+[charaFadein I 0.1 -260,-135]
+[charaMove I -260,-425 6.2]
+[fadein white 1.5]
+[wait fade]
+[wt 3.5]
+
+[charaFadeout I 1.2]
+[wt 1.6]
+
+＠Ｕ－オルガマリー
+何をするつもりだ、貴様！？
+[k]
+
+＠Ｕ－オルガマリー
+この[#艦:ふね]は私の獲物だ、[r]手を出すというのなら[line 3]！
+[k]
+
+[bgmStop BGM_BATTLE_78 1.0]
+
+[messageOff]
+[cueSe SE_22 22_ad1197 0 1.0]
+[cueSe SE_22 22_ade778]
+[se ad477]
+[seVolume ad477 0 0.7]
+[se ad875]
+[se ade393]
+[seVolume ade393 0 1.0]
+[cueSeVolume 22_adm89 1.0 0.3]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[blur motion 0.1 4 100 0.5 0.6 0.03 100]
+[wt 0.1]
+
+[charaScale X 1.7]
+[charaFadein X 0 460,-460]
+[charaShake X 0.04 3 3 3.4]
+[scene 171400]
+[wt 0.8]
+[cueSeStop 22_ade778 1.0]
+
+[wt 2.6]
+
+[blurOff motion 1.2]
+[charaFadeout X 1.2]
+[shake 0.04 1 1 0]
+[wt 1.6]
+
+
+＠Ｕ－オルガマリー
+この感触、光でも炎でもない[line 3][r]植物と鉱物の融合体、だと……！？
+[k]
+
+＠Ｕ－オルガマリー
+太陽でありながら植物であり、[r]炎でありながら鉱物[line 3]
+[k]
+
+＠Ｕ－オルガマリー
+そんな物質が、いったい、どこに[line 3]！
+[k]
+
+＠Ｕ－オルガマリー
+防ぎきれない……！[r]この私が、出力で[#劣:おと]るというのかーーーー！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[cueSeStop 22_ad1197 1.0]
+[cueSeStop 22_adm89 1.0]
+[cueSeStop 22_ade783 1.0]
+[wait fade]
+
+[shakeStop]
+
+[backEffect bit_talk_light_window]
+[scene 168600]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 1.0]
+
+
+[se ad771]
+[seVolume ad771 0 0]
+[seVolume ad771 1.0 1.0]
+
+[cueSe SE_22 22_ad1197]
+[cueSe SE_22 22_ad1197 0 0]
+[cueSe SE_22 22_ade783]
+[cueSeVolume 22_ade783 0 0]
+[cueSe SE_22 22_adm89]
+[cueSeVolume 22_adm89 0 0]
+[cueSeVolume 22_ad1197 1.0 0.4]
+[cueSeVolume 22_ade783 1.0 0.4]
+[cueSeVolume 22_adm89 1.0 0.1]
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[seStop ad771 0.3]
+
+[charaTalk L]
+[charaFace L 8]
+[charaFadein L 0.1 1]
+
+＠ムニエル
+うおっ、なんだこの音と熱！[r]外、やばい事になってないか！？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠カドック
+見ている暇があるなら走れ！
+[k]
+
+＠カドック
+ネモが格納庫に行け、と言ったのは、[r]シャドウ・ボーダーに乗れ、って事だ！
+[k]
+
+＠カドック
+墜落の危険があるとネモは判断した！[r]そうだろ、[%1]！
+[k]
+
+？1：……[&ああ:うん]、そう[&だ:だよ]
+
+？2：え？
+
+[charaFace B 4]
+
+＠カドック
+え、じゃない！　何度かやってるんだろ、[r]シャドウ・ボーダーを落下傘で着地させるヤツ！
+[k]
+
+＠カドック
+こんなに早く体験する事になるなんて、[r]僕も思わなかったけどな！
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 6]
+[charaFadein M 0.1 1]
+
+＠ネモ・マリーン
+えー、そうなのーーー！？[r]キャプテン、判断がクールすぎるーーー！
+[k]
+
+＠ネモ・マリーン
+ボクたちそういうの担当じゃないんですけどぉ！[r]物資運搬と清掃と報告が本業だよ～～！
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1198]
+[charaFadeout M 0.1]
+[cueSeStop 22_ad1197 0.3]
+[cueSeStop 22_ade783 0.3]
+[cueSeStop 22_adm89 0.3]
+[wt 0.8]
+[se ad1015]
+[se ad882]
+[cueSe SE_22 22_ad1199]
+
+[cameraMove 0.02 0,0 1.5]
+[shake 0.02 100 100 1.5]
+[wt 0.5]
+
+[se ade393]
+[seVolume ade393 0 0.4]
+[se ad898]
+[se ad815]
+[seVolume ad898 0 0.4]
+[se ad608]
+[fadeout white 0.9]
+[wait fade]
+
+[seStop ad776 0.8]
+[seStop ad815 0.8]
+[scene 168601]
+[backEffectStop bit_talk_light_window]
+[cameraMove 0.1 0,0 1.01]
+[wt 1.6]
+
+[se ad135]
+[seVolume ad135 0 0]
+[se ad556]
+[seVolume ad556 0 0]
+[cueSe SE_22 22_ad1151]
+[cueSeVolume 22_ad1151 0 0]
+
+[seVolume ad135 1.0 0.2]
+[seVolume ad556 1.0 0.6]
+[cueSeVolume 22_ad1151 1.0 1.0]
+
+[shake 0.05 4 4 2.5]
+[fadein white 3.0]
+[wait fade]
+[wt 0.6]
+
+？1：[line 3]あ
+
+？！
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠カドック
+待て、おい[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 8]
+[charaFadein L 0.1 1]
+
+＠ムニエル
+うそだろ？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 5]
+[charaFadein M 0.1 1]
+
+＠ネモ・マリーン
+……！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMove M 0,10 0.2]
+[charaMoveScale M 1.1 0.2]
+[charaFadeout M 0.2]
+[wt 0.5]
+
+[se ad876]
+[se ad728]
+[shake 0.05 4 4 1.0]
+[fadeout white 0.3]
+[wait fade]
+
+[scene 168602 0.5]
+
+[fadein white 0.3]
+[wait fade]
+
+[wt 1.0]
+[se ade338]
+[cameraMove 0.6 0,0 1.2]
+[fadeout black 0.6]
+[seStop ad135 0.6]
+[seStop ad556 0.6]
+[cueSeStop 22_ad1151 0.6]
+[wt 0.5]
+[seStop ade338 1.0]
+[wait fade]
+
+[cameraHome 0.1]
+[wt 0.5]
+
+[masterBranch _Male _Female]
+[label _Male]
+[sceneSet F 171500 1]
+
+[scene 171500]
+[branch _branchEnd]
+[label _Female]
+[sceneSet F 171501 1]
+[scene 171501]
+[branch _branchEnd]
+[label _branchEnd]
+
+[wt 1.5]
+
+[charaScale F 1.4]
+[charaFadein F 0.1 0,-425]
+[charaMove F 0,-250 5.7]
+[seStop ade393 6.0]
+[fadein black 1.5]
+[wait fade]
+[wt 3.0]
+
+[charaFadeout F 1.2]
+[wt 1.8]
+
+
+？1：[line 3]これは、死んだ
+？2：[line 3]みんな、ごめん
+
+？！
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 3.0]
+[wait fade]
+
+[scene 132900]
+[charaSet E 1098158320 1 ネモ]
+[imageSet A black_fade_re 1]
+[imageSet B black_fade_re 1]
+[sceneSet C 10000 1]
+[charaFilter C silhouette FF000080]
+[charaScale A 2.0]
+[charaScale B 2.0]
+[charaScale P 1.2]
+[charaScale E 1.2]
+
+[charaTalk depthOff]
+[charaDepth A 9]
+[charaDepth B 8]
+[charaDepth C 4]
+[charaDepth E 5]
+[charaDepth P 1]
+
+[charaFadein A 0 0,-1000]
+[charaFadein B 0 0,200]
+[charaFadein P 0.1 0,-130]
+
+[charaScale C 2.0]
+[charaPut C 0,-200]
+[charaFadeTime C 0.1 0.4]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,220]
+[wt 1.5]
+
+[se ad813]
+[seVolume ad833 0 0.5]
+[se ad632]
+[seVolume ad632 0 0.1]
+[fadein black 1.0]
+[wt 0.5]
+[se ad833]
+[seVolume ad833 0 0.5]
+[charaMove P 0,-190 4.0]
+[charaMove E 0,160 4.0]
+[wait fade]
+[wt 1.0]
+[se ad61]
+[seVolume ad61 0 0.7]
+[seStop ad61 1.0]
+[wt 1.0]
+[se ad813]
+[seVolume ad833 0 0.5]
+[seStop ad632 3.5]
+[wt 1.0]
+[se ad833]
+[seVolume ad833 0 0.6]
+[wt 1.0]
+
+
+
+＠ネモ
+……はあ……はあ……
+[k]
+
+[messageOff]
+[charaMove B 0,250 4.0]
+[charaMove A 0,-1050 4.0]
+[charaMove P 0,-300 4.0]
+[charaMove E 0,50 4.0]
+[wt 4.0]
+[se ade302]
+[se ad874]
+[seVolume ad874 0 0]
+[seVolume ad874 0.5 0.4]
+[wt 0.5]
+[seStop ad874 1.2]
+[charaFace E 3]
+
+
+＠ネモ
+……退避中のスタッフに伝達。[r]当艦は敵勢力の攻撃により大破。航行は不可能。
+[k]
+
+＠ネモ
+これより地表……いや、地表に空いた空間に向かい、[r]胴体着陸を敢行する。衝撃に[#備:そな]えよ。
+[k]
+
+[charaFace E 5]
+
+＠ネモ
+また、残った魔力リソースは航行ではなく、[r]英霊召喚に使用した。
+[k]
+
+＠ネモ
+予定していた残り３騎の召喚を完了。[r]マスター・[%1]の助けになるだろう。
+[k]
+
+[charaFace E 2]
+[charaShake E 0.05 2 2 0.3]
+
+＠ネモ
+……っ……[r]すまない、報告は以上とする。
+[k]
+
+[charaFace E 4]
+
+＠ネモ
+キャプテン・ネモに残った魔力はすべて、[r]着陸成功のために使用する。
+[k]
+
+＠ネモ
+[line 3]なんとしても、スタッフの命は守る。[r]着陸後の、キミたちの健闘を祈る。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[se ad920]
+[fowardEffect bit_talk_switch_off]
+[wt 0.6]
+
+[fadeout black 0.2]
+[wait fade]
+
+[charaFadeout P 0.1]
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[scene 10000]
+[fowardEffectDestroy bit_talk_switch_off]
+[skip false]
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+
+[charaPut H 2000,2000]
+[effectDestroy bit_talk_31]
+[fowardEffectDestroy bit_talk_36]
+[charaEffectDestroy H bit_talk_blackhole]
+[charaEffectDestroy H bit_talk_10_LowLevel]
+[charaEffectDestroy H bit_talk_10_LowLevel_depth]
+[backEffectDestroy bit_talk_light_window]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[charaFadeout Y 0.1]
+[charaFadeout N 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[charaFadeout P 0.1]
+[charaFadeout U 0.1]
+[charaFadeout F 0.1]
+[charaFadeout I 0.1]
+[charaFadeout X 0.1]
+[charaFadeout Z 0.1]
+[charaFadeout S 0.1]
+[charaFadeout T 0.1]
+[charaFadeout V 0.1]
+[charaFadeout W 0.1]
+[charaFadeout C 0.1]
+
+[charaFadeout J 0.1]
+[subCameraOff]
+
+[shakeStop]
+[scene 10000]
+[wt 0.4]
+
+[maskin black 1.0]
+[wait mask]
+
+[label selectBranch]
+[wt 0.5]
+
+[fowardEffect bit_chapterstart311]
+[wait fowardEffect]
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,299 @@
+
+
+
+
+
+
+
+
+
+＄04-00-05-27-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098321400 1 モリアーティ]
+[charaSet B 28010001 1 ダンテ]
+[charaSet C 1098257500 1 言峰綺礼]
+[charaSet D 9019002 1 裁判長]
+
+[charaSet E 28010001 1 ダンテ]
+[charaScale E 1.1]
+[charaSet F 1098257500 1 言峰綺礼_演出用]
+[charaSet G 9019002 1 裁判長]
+[charaScale G 1.3]
+
+[sceneSet N 245400 1]
+[charaScale N 1.4]
+[sceneSet M 245500 1]
+[charaScale M 1.4]
+
+[sceneSet O 245400 1]
+[charaScale O 1.3]
+[sceneSet P 245500 1]
+[sceneSet Q 251000 1]
+[sceneSet R 251000 1]
+
+[sceneSet U 10000 1]
+[charaScale U 1.1]
+
+[charaTalk depthOff]
+[charaDepth N 2]
+[charaDepth M 2]
+[charaDepth E 4]
+[charaDepth A 1]
+[charaDepth G 5]
+
+[subCameraOn 4]
+[charaLayer D sub #A]
+[charaLayer O sub #A]
+[charaLayer C sub #C]
+[charaLayer Q sub #C]
+
+[subCameraFilter #A maskEdge cut359_mask05 5 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask16 5 0,0,0,255 0]
+[subCameraFilter #C maskEdge cut359_mask15 5 0,0,0,255 0]
+
+[subRenderDepth #A 3]
+[subRenderDepth #B 2]
+[subRenderDepth #C 1]
+[subRenderDepth #D 4]
+
+[charaDepth O 1]
+[charaDepth D 2]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0 0,320]
+[charaFadein O 0 0,10]
+
+[charaDepth Q 1]
+[charaDepth C 2]
+[charaFace C 0]
+[charaFadeinFSL C 0 -100,250]
+[charaFadein Q 0 -200,100]
+
+
+[charaFadein E 0.1 0,50]
+[charaFadein M 0.1 -250,-200]
+[charaMove M -250,-250 10.0]
+[charaMove E 0,0 10.0]
+[wt 0.1]
+
+[scene 245500]
+
+[charaTalk off]
+[charaFace E 1]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_MAP_132 0.1]
+
+＠ダンテ
+モリアーティの言葉を……もう一度繰り返します。[r]カルデア側は……何も知らなかったのです。
+[k]
+
+[charaFace E 9]
+
+＠ダンテ
+ただ一方的に奇襲を受けて、[r]慌てて逃げ延びる他なかった……。
+[k]
+
+[charaFace E 0]
+
+＠ダンテ
+そして異聞帯同士の殺し合い。[r]即ち、聖杯戦争に巻き込まれたことを自覚した。
+[k]
+
+[charaFace E 7]
+
+＠ダンテ
+そこから先は全て不可避と見なしていいはず。[r]敵は全て強大だった。
+[k]
+
+＠ダンテ
+カルデアの勝ち目など、万に一つ。[r]その万に一つを、その意志で引き寄せたのです！
+[k]
+
+＠ダンテ
+……『勝って当然』という訳ではなく、[r]常に必死だったはず……！
+[k]
+
+[charaFace E 18]
+
+＠ダンテ
+……それは[&彼:彼女]らの旅の間、[r]ずっと付き[#纏:まと]っていた問題でしょう。
+[k]
+
+[charaFace E 0]
+
+＠ダンテ
+何しろ、この[&彼:彼女]らには……バックがいない……。
+[k]
+
+＠ダンテ
+……強大な組織も、惑星規模の援助も、何もかも……。[r][&彼:彼女]らが異聞帯を攻略できたのは[line 3]
+[k]
+
+[charaFace E 7]
+
+＠ダンテ
+ただただ、[#偏:ひとえ]に懸命だっただけです！[r]賢明ではなく懸命だった……！
+[k]
+
+＠ダンテ
+このダンテ・アリギエーリ、お願い申し上げます。[r][&彼:彼女]らに、無罪を。
+[k]
+
+[messageOff]
+[charaMoveEase M 100,-250 1.0 easeOutQuad]
+[charaMoveEase E 350,0 1.0 easeOutQuad]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[subRenderFadein #A 0.3 0,-280]
+[wt 0.3]
+[charaTalk on]
+
+＠裁判長
+言峰検事。
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 0]
+[subRenderFadein #C 0.4 -242,-280]
+[subRenderMove #C -212,-280 0.4]
+[wt 0.5]
+
+＠言峰綺礼
+では、私から。
+[k]
+
+＠言峰綺礼
+[line 3]君たちの汎人類史が巻き込まれた災害、[r]地球白紙化現象について。
+[k]
+
+[charaFace C 7]
+
+＠言峰綺礼
+弁護側は少々誤魔化していたようなので、[r]私から指摘しよう。
+[k]
+
+＠言峰綺礼
+地球白紙化現象そのものは、異聞帯や[r]クリプターの責任ではない。
+[k]
+
+[charaFace C 1]
+
+＠言峰綺礼
+『異星の神』[line 3]そう呼称される存在によるものだ。
+[k]
+
+＠言峰綺礼
+従って各異聞帯はこの点に[#於:お]いては無罪と言える。[r]裁判長におきましては、その点を熟慮していただきたい。
+[k]
+
+[charaFace C 8]
+
+＠言峰綺礼
+異聞帯とは、誤ったと断ぜられた歴史の帯。[r]しかし、そこに優劣は存在しない。
+[k]
+
+＠言峰綺礼
+彼らの歴史には全て価値があり、[r]万物の生命にも等しく生きる権利があった。
+[k]
+
+＠言峰綺礼
+その点を踏まえなくては、彼らの罪の重さを[r]推し量ることはできません。
+[k]
+
+[charaFace C 0]
+[charaFace A 0]
+[charaFadeinFSR A 0.1 2]
+[charaFadeinFSL B 0.1 0]
+
+＠言峰綺礼
+どうか、正しい裁きを。
+[k]
+
+[messageOff]
+[charaTalk A,C]
+[charaFadeout M 0.4]
+[charaFadeout E 0.4]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[subRenderFadeout #C 0.4]
+[wt 0.6]
+
+＠モリアーティ
+（……ダンテ）
+[k]
+
+[charaTalk B]
+[charaFace B 10]
+
+＠ダンテ
+（フム……印象としては互角……いや、少し不利かな……）
+[k]
+
+[charaTalk A]
+[charaFace A 11]
+
+＠モリアーティ
+（だが、裁判長は公平な状態だ……。[r]　最悪の事態は逃れられると信じたいがな……）
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_132 3.0]
+[charaTalk G,A]
+[charaFace G 7]
+[charaFadein G 0.7 0,100]
+[charaFadein N 0.7 0,-200]
+[charaMoveEase N 0,-250 2.0 easeInOutSine]
+[charaMoveEase G 0,50 2.0 easeInOutSine]
+[wt 3.0]
+[charaTalk off]
+
+[charaFace G 0]
+
+＠裁判長
+[line 3]最終弁論が終わりました。
+[k]
+
+[scene 245400]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+
+＠裁判長
+最後に、私から被告に質問させてください。[r][%1]。
+[k]
+
+？1：……はい
+？！
+
+[charaFace G 12]
+
+＠裁判長
+カドック・ゼムルプスが倒れた今、[r]今の[&貴方:貴女]こそが[#人類の代表]です。
+[k]
+
+＠裁判長
+それに相応しい答えを、私は期待します。
+[k]
+
+[messageOff]
+[charaFadeout N 0.4]
+[charaFadeout G 0.4]
+[wt 1.0]
+[se ad231]
+[wt 1.4]
+[se ad231]
+
+[fadeout black 2.0]
+[wt 1.4]
+[se ad231]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

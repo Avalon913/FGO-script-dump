@@ -1,0 +1,1948 @@
+
+
+
+
+
+
+＄94-15-00-06-1-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 3062000 1 エリザベート]
+[charaSet B 1098340700 1 メカエリチャンⅡ号機]
+[charaSet C 25010001 1 モレー]
+[charaSet D 1098337710 1 フレッカス]
+[sceneSet E 203900 1]
+[charaScale E 1.2]
+[charaSet F 4022000 1 スペース・サンタさん]
+[charaSet G 3062000 1 エリザベート_サブレイヤー用]
+[charaSet H 4022000 1 スペース・サンタさん_拡大用]
+
+[charaSet I 1098337710 1 フレッカス]
+[charaSet J 3062000 1 エリザベート]
+[charaSet K 25010001 1 モレー]
+[sceneSet L 10000 1]
+[charaScale L 1.1]
+
+[charaSet M 1098340700 1 メカエリチャン_二号機_首のみ]
+[sceneSet P 203900 1]
+[charaScale P 1.2]
+
+[sceneSet Y 10000 1]
+[charaScale Y 1.1]
+
+[charaSet Z 98115000 1 エフェクト用]
+
+[masterBranch _Male _Female]
+[label _Male]
+[sceneSet S 268200 1]
+
+[branch _branchEnd]
+[label _Female]
+[sceneSet S 268210 1]
+
+[branch _branchEnd]
+[label _branchEnd]
+
+[subCameraOn 4]
+
+[charaLayer B sub #A]
+[charaLayer L sub #A]
+[charaLayer S sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask14 3 192,192,192,255]
+[subRenderScale #A 1.0]
+
+[charaScale S 0.55]
+[charaScale B 0.93]
+[charaDepth S 1]
+[charaDepth B 2]
+[charaDepth L 3]
+
+
+[charaFace B 6]
+[charaFadein B 0.1 460,192]
+[charaFadein S 0 420,110]
+
+[charaLayer G sub #B]
+[charaLayer E sub #B]
+
+[subCameraFilter #B maskEdge cut359_mask16 5 0,0,0,255 0]
+
+[charaScale G 1.1]
+
+[charaDepth E 1]
+[charaDepth G 2]
+
+[charaFadeinFSR G 0.1 0,250]
+[charaFadein E 0.1 1]
+
+
+[charaTalk depthOff]
+
+[charaDepth C 2]
+[charaDepth P 3]
+[charaDepth H 4]
+[charaDepth Z 5]
+
+[charaDepth J 6]
+[charaDepth A 2]
+
+[scene 203900]
+
+[charaScale F 1.2]
+
+[wt 0.2]
+[fadein black 0.5]
+[wait fade]
+[fowardEffect bit_talk_blow02]
+[se ad687]
+[wt 0.3]
+
+[se ad671]
+[charaFadein F 0.4 0,50]
+[charaShake F 0.02 3 3 0.9]
+[charaMoveScaleEase F 1.0 0.4 easeOutCubic]
+[charaMoveEase F 0,0 0.4 easeOutCubic]
+[wt 1.0]
+
+＠スペース・サンタさん
+無念。
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠スペース・サンタさん
+このカボチャだらけの星を真っ白い雪に染めるのが、[r]私の野望だったが……。
+[k]
+
+[charaFace F 0]
+
+＠スペース・サンタさん
+ここは一つ、退くとしよう。[r][#蒼輝銀河:ユ ニ ヴ ァ ー ス]には文明のある星が沢山あるからな。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠モレー
+地球とかどう？
+[k]
+
+[messageOff]
+[charaScale H 1.2]
+
+[charaFace H 2]
+[charaFadein H 0.3 1]
+[charaFadein P 0.3 125,-250]
+[wt 0.2]
+
+[charaFadeout C 0.1]
+
+＠H：スペース・サンタさん
+始[messageShake 0.05 2 2 0.3]祖の星に足を踏み入れろというのか！？[r]なんと恐れ多い！　さてはおまえたち[line 3]
+[k]
+
+[messageOff]
+
+[charaTalk G,H]
+[charaMoveEase P -125,-250 0.8 easeOutCubic]
+[charaMoveEase H -250,0 0.8 easeOutCubic]
+[subRenderFadein #B 0.4 450,-250]
+[subRenderMoveEase #B 200,-250 0.8 easeOutCubic]
+[wt 0.8]
+
+＠G：エリザベート
+[FFFFFF]？[-]
+[k]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 5]
+
+＠H：スペース・サンタさん
+ヴィランか？　それともヒーローか？
+[k]
+
+[charaTalk J]
+
+＠G：エリザベート
+え。アイドルだけど。
+[k]
+
+[messageOff]
+
+[se ad119]
+[charaTalk H]
+[charaFace H 2]
+[charaShake H 0.02 3 3 1.5]
+[wt 2.0]
+
+[subRenderMoveEase #B 600,-250 1.0 easeOutCubic]
+[charaMoveEase P 100,-250 1.0 easeOutCubic]
+[charaMoveEase H 0,0 1.0 easeOutCubic]
+[wt 0.5]
+[subRenderFadeout #B 0.4]
+[wt 0.6]
+
+＠H：スペース・サンタさん
+そうか[line 3]てっきりＥＸヴィランかと。
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ade674]
+[charaFace H 4]
+[charaMove H 0,-5 0.4]
+[wt 0.8]
+[seStop 21_ade674 0.4]
+[se ad73]
+[charaPut Z 0,0]
+[charaEffect Z bit_talk_quickmove]
+[charaSpecialEffect H erasureReverse 1 0.3]
+[charaMove H 0,0 0.4]
+[wt 0.6]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[se ade525]
+[wt 1.0]
+[seStop ade525 1.0]
+[wt 1.0]
+
+[charaTalk A]
+[charaFadeout P 0.4]
+[wt 0.4]
+
+
+＠エリザベート
+何よあれ。[#私:アタシ]なんて可憐な少女が、[r]アイドル以外の何だっていうのよ。
+[k]
+
+[charaFace A 1]
+
+＠エリザベート
+ねえ、[&子イヌ:子ジカ]？
+[k]
+
+？1：うん、そうだね
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+
+＠モレー
+[#躊躇:ためら]いのない肯定。
+[k]
+
+[charaFace G 3]
+
+[charaTalk B]
+[charaFace B 0]
+[subRenderFadein #A 0.2 -150,-220]
+[wt 0.2]
+
+＠B：メカエリチャンⅡ号機
+下手に言葉を濁すとめんどくさいでしょうからね。
+[k]
+
+＠B：メカエリチャンⅡ号機
+さすがエリザベートの取り扱いにかけては、[r]随一というところかしら。
+[k]
+
+[charaFadeout C 0.1]
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+何めんどくさいって！？
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_EVENT_7 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[charaLayer G normal]
+[charaLayer E normal]
+
+[charaSet G 4029300 1 ソニックマッハ・ジェッター]
+[charaSet H 1098182900 1 ユニヴァース・アポロン]
+[charaSet E 1098337900 1 オリュンポス山の村人]
+[sceneSet Q 266000 1]
+[charaScale Q 1.2]
+[sceneSet R 266400 1]
+[charaScale R 1.4]
+[sceneSet T 266000 1]
+[charaScale T 1.2]
+[sceneSet U 266400 1]
+[charaScale U 1.2]
+[sceneSet V 266400 1]
+[charaScale V 1.2]
+
+[charaDepth G 1]
+
+[scene 266100]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_122 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠オリュンポス山の村人
+おお、あのクリスマサーを追い出していただけましたか。[r]感謝します。はい通っていいですよ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+おざなり感あるわ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠フレッカス
+まあ通してくれるならいいだろ、出発するぞー。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[messageOff]
+[se ade330]
+[wt 1.0]
+
+[cueSe SE_25 25_ade1293]
+[wt 0.5]
+
+
+[bgm BGM_MAP_122 1.0 0.5]
+[fadeout black 1.0]
+[wait fade]
+
+[cueSeStop 25_ade1293 1.0]
+
+[imageSet F cut768_car 1]
+
+[charaLayer I sub #B]
+[charaLayer T sub #B]
+[charaLayer F sub #B]
+[charaLayer J sub #B]
+[charaLayer C sub #B]
+
+[subCameraFilter #B maskEdge cut359_mask20 3 0,0,0,255]
+[subRenderScale #B 1.05]
+
+[charaScale T 1.1]
+[charaScale F 1.6]
+[charaScale C 1.2]
+[charaScale J 1.2]
+
+[charaDepth I 3]
+[charaDepth F 2]
+[charaDepth T 1]
+[charaDepth J 4]
+[charaDepth C 5]
+
+[charaFadein I 0 30,170]
+[charaFadein F 0 0,80]
+[charaFadein T 0.1 1]
+
+[charaDepth H 7]
+[charaDepth R 6]
+[charaDepth G 5]
+[charaDepth D 4]
+
+[charaDepth C 3]
+[charaDepth Q 2]
+[charaDepth A 1]
+
+[scene 266000]
+
+[charaScale Q 1.1]
+[charaFadein Q 0.1 0,-240]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 1.0]
+[fadein black 1.0]
+[bgm BGM_MAP_122 1.0 1.0]
+[wait fade]
+
+
+[charaTalk I]
+[charaFace I 0]
+[subRenderFadein #B 0.3 -170,-200]
+[subRenderMoveEase #B -170,-180 0.5 easeOutQuart]
+[wt 0.6]
+
+＠I：フレッカス
+ところでクリスマスって何だ？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 10,200]
+
+＠J：エリザベート
+この星には必要のない祭事よ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,200]
+
+＠モレー
+あたし的には必要だと思うのだけど。[r]宗派的に関わりのある大イベントだし。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 10,200]
+
+＠J：エリザベート
+この星みたいにクリスマスプラネットを[r]作ればいいんじゃないかしら！
+[k]
+
+？1：いいかも！
+？！
+
+[charaTalk B]
+[charaFace B 8]
+[subRenderFadein #A 0.2 -150,-220]
+[wt 0.2]
+
+＠メカエリチャンⅡ号機
+なら、惑星じゃないけどタイタンあたりがお薦めかしらね。[r]メタンの雪が降るらしいから。
+[k]
+
+[charaFace J 9]
+
+＠J：エリザベート
+素敵！　ロマンチックね……。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 0,200]
+
+＠モレー
+そうかな……そうかも……。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[subRenderMoveEase #B -170,-200 0.5 easeOutQuart]
+[wt 0.5]
+
+
+[cueSe SE_25 25_ade1293]
+[charaMove Q 0,-250 2.0]
+[charaMoveScale Q 1.15 2.0]
+[wt 1.5]
+
+[cueSeStop 25_ade1293 1.0]
+
+[charaFadeout C 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0 25,200]
+
+[wt 0.5]
+
+[subRenderFadein #B 0.3 170,-180]
+[wt 0.5]
+
+＠I：フレッカス
+あ、行き止まりだ。ここから先は歩いて行けってことだな。
+[k]
+
+？1：フレッカスはどうする？
+？！
+
+[charaFace I 9]
+
+＠I：フレッカス
+折角ここまで来たんだし、観光してみるかー。
+[k]
+
+[messageOff]
+[charaTalk D,I]
+[cueSe SE_23 23_ade934]
+[wait cueSe 23_ade934]
+[wt 0.2]
+
+[se ad737]
+[charaMove I -50,200 0.3]
+[charaFadeout I 0.3]
+[wt 0.4]
+
+[charaLayer J normal]
+[charaLayer C normal]
+
+[cueSe SE_25 25_ade1291]
+[cueSeStop 25_ade1291 0.5]
+[charaFadein D 0.3 -100,20]
+[charaMove D -200,0 0.5]
+[wt 0.4]
+[subRenderFadeout #B 0.5]
+[wt 1.0]
+
+[charaTalk A,D]
+[charaFadeout D 0.4]
+[charaFadeout Q 0.4]
+[wt 0.4]
+[charaFadeout T 0]
+
+＠エリザベート
+え、ここアンタの地元でしょ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠フレッカス
+地元だからこそ観光しないって場所、あるでしょ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠モレー
+あー、あるある。
+[k]
+
+[charaFace C 12]
+＠モレー
+[#風光明媚:ふうこうめいび]さが売りとか言われても、[r]所詮は地元だもんねー。
+[k]
+
+[messageOff]
+[se ad184]
+[cueSe SE_25 25_ade1291]
+[cueSeVolume 25_ade1291 0 0.5]
+[bgm BGM_MAP_122 1.5 0.5]
+[fadeout black 1.5]
+[wait fade]
+[wt 0.5]
+
+[charaFadeout C 0.1]
+
+[charaFadeout I 0.1]
+[charaFadeout T 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaLayer I normal]
+[charaLayer T normal]
+[charaLayer F normal]
+
+
+[sceneSet D 266400 1]
+[charaScale D 1.2]
+[charaSet N 4029300 1 ソニックマッハ・ジェッター]
+[charaSet O 1098182900 1 ユニヴァース・アポロン]
+[sceneSet W 10001 1]
+[charaScale W 1.2]
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet M 1098337710 1 フレッカス]
+
+
+[masterBranch _Male1 _Female1]
+[label _Male1]
+
+[sceneSet E 268200 1]
+
+[branch _branchEnd1]
+[label _Female1]
+[sceneSet E 268210 1]
+
+[branch _branchEnd1]
+[label _branchEnd1]
+
+[cameraMove 0 0,0 1.05]
+
+[charaDepth Q 2]
+[charaDepth C 3]
+[charaDepth A 4]
+[charaDepth M 5]
+
+
+[charaFadein Q 0.1 150,-450]
+[charaScale Q 2.3]
+[charaMove Q 150,-470 2.0]
+[charaMoveScale Q 2.4 2.0]
+
+[se ad184]
+[seVolume ad184 0 0]
+[seVolume ad184 0.5 1.0]
+
+[bgm BGM_MAP_122 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+[seStop ad184 1.0]
+[cueSeStop 25_ade1291 1.0]
+[wt 1.0]
+
+
+？1：（だいぶ歩いたかな……？）
+？！
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠モレー
+マスター、大丈夫？[r]息苦しかったりしない？
+[k]
+
+[messageOff]
+
+[cameraMove 0.4 10,0 1.05]
+[wt 0.3]
+[cameraMove 0.4 0,0 1.05]
+[wt 0.3]
+[cameraMove 0.4 -10,0 1.05]
+[wt 0.3]
+[cameraMove 0.4 0,0 1.05]
+[wt 0.7]
+
+？1：問題ないよ
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠エリザベート
+[#私:アタシ]はそろそろ限界よ！[r]足が棒になるー！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 3]
+[charaFadein M 0.1 1]
+＠M：フレッカス
+俺の脚も力が入らない……。
+[k]
+
+[charaTalk B]
+[charaFace B 8]
+[subRenderFadein #A 0.1 -150,-220]
+
+＠メカエリチャンⅡ号機
+それは……よく揉みしだかれて、[r]美味しそうになっているわね……。
+[k]
+
+[charaFace M 5]
+
+＠M：フレッカス
+やめて！
+[k]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_122 1.0]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠モレー
+はいはーい。お疲れ様でした、皆。[r]という訳で到着したよ、オリュンポス山のてっぺん！
+[k]
+
+＠M：全員
+おおー！
+[k]
+
+
+[messageOff]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout Q 0.1]
+[wt 0.5]
+
+[sceneSet P 265900 1]
+[charaScale P 1.3]
+[sceneSet Q 265900 1]
+
+[charaSet F 1098338500 1 メカエリチャン_二号機_首のみ]
+[sceneSet R 265900 1]
+
+[charaDepth P 2]
+
+[scene 266400]
+
+[charaLayer C sub #C]
+[charaLayer Q sub #C]
+
+[subCameraFilter #C maskEdge cut359_mask12 5 255,255,255,255]
+[subRenderScale #C 1.0]
+
+[charaScale C 1.1]
+
+[charaDepth Q 1]
+[charaDepth C 2]
+
+[charaFace C 8]
+[charaFadein C 0.1 -500,250]
+[charaFadein Q 0 -420,80]
+
+[charaLayer F sub #D]
+[charaLayer R sub #D]
+
+[subCameraFilter #D maskEdge cut359_mask11 5 255,255,255,255]
+[subRenderScale #D 1.0]
+
+[charaScale R 1.0]
+[charaScale F 1.1]
+
+[charaDepth R 1]
+[charaDepth F 2]
+
+[charaFace F 8]
+[charaFadein F 0.1 500,410]
+[charaFadein R 0 200,120]
+
+[charaFadein P 0.1 -180,-320]
+[charaMove P 150,-320 20.0]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_167 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.5]
+
+[charaTalk C]
+[subRenderFadeinFSSideL #C 0.3 100,-200]
+[wt 0.3]
+
+
+＠モレー
+[#Quel panorama !:ケ　 ル　 ・　 パ　 ノ　 ラ　 マ]　絶景かな！
+[k]
+
+
+[charaTalk F]
+[subRenderFadeinFSSideR #D 0.3 -100,-200]
+[wt 0.3]
+
+＠F：メカエリチャンⅡ号機
+さすがエベレストの２．５倍の高さを誇る山。[r]神々の[#山嶺:さんれい]ですね。
+[k]
+
+[messageOff]
+
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_167 1.0 0.5]
+[wait fade]
+
+[subRenderFadeout #C 0.1]
+[subRenderFadeout #D 0.1]
+
+[charaFadeout P 0.1]
+[charaFadeout C 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout F 0.1]
+[charaFadeout R 0.1]
+
+[charaLayer F normal]
+[charaLayer Q normal]
+[charaLayer R normal]
+[charaLayer C normal]
+
+[sceneSet F 266400 1]
+[charaScale F 1.2]
+[sceneSet R 266400 1]
+[charaScale R 1.4]
+
+
+[scene 266400]
+
+[charaLayer E sub #A]
+[charaLayer B sub #A]
+[charaLayer L sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask14 3 192,192,192,255]
+[subRenderScale #A 1.0]
+
+[charaScale B 0.93]
+[charaScale E 0.55]
+
+[charaDepth E 1]
+[charaDepth B 2]
+
+[charaFace B 8]
+[charaFadein B 0.1 460,192]
+[charaFadein E 0 420,110]
+
+[charaLayer K sub #B]
+[charaLayer V sub #B]
+[charaLayer W sub #B]
+
+[subCameraFilter #B maskEdge cut359_mask05 4 255,255,255,255 0]
+
+[subRenderScale #B 1.1]
+
+[charaDepth W 8]
+[charaDepth K 2]
+[charaDepth V 1]
+
+[charaScale K 1.2]
+[charaFace K 25]
+[charaFadein K 0.1 -10,150]
+[charaFadein V 0.1 0,-150]
+
+[charaLayer I sub #C]
+[charaLayer U sub #C]
+[charaLayer Y sub #C]
+
+[subCameraFilter #C maskEdge cut359_mask05 4 255,255,255,255 0]
+
+[subRenderScale #C 1.1]
+
+[charaFace I 0]
+[charaFadein I 0.1 20,100]
+[charaFadein U 0.1 0,-150]
+[charaLayer N sub #D]
+[charaLayer F sub #D]
+[charaLayer Z sub #D]
+
+[subCameraFilter #D normal]
+[subRenderScale #D 1.1]
+
+[charaScale N 1.1]
+[charaScale F 1.1]
+
+[charaDepth Z 9]
+[charaDepth N 2]
+[charaDepth F 1]
+
+[charaFadein F 0.1 100,-300]
+
+[subRenderDepth #C 1]
+[subRenderDepth #A 2]
+
+[charaScale I 0.7]
+
+[charaDepth Y 9]
+[charaDepth J 5]
+[charaDepth K 4]
+[charaDepth I 3]
+[charaDepth U 1]
+
+[charaDepth R 8]
+[charaDepth A 6]
+[charaDepth C 5]
+[charaDepth H 4]
+[charaDepth D 3]
+[charaDepth G 1]
+[charaDepth M 9]
+[charaScale C 1.0]
+
+
+[charaScale R 1.2]
+[wt 0.5]
+
+[bgm BGM_EVENT_167 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+で、ここまで来たはいいけどどうするの？
+[k]
+
+[charaTalk B]
+[charaFace B 6]
+[subRenderFadein #A 0.1 -150,-220]
+
+＠メカエリチャンⅡ号機
+もちろん、呼びますよ。アポロンを。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[charaFadeout A 0.2]
+[wt 0.5]
+
+？1：アポローーーン！
+？！
+
+[cueSe SE_23 23_ade872]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.3 0,-150]
+[charaMoveEase H 0,-250 1.0 easeOutCubic]
+[wt 1.0]
+[cueSeStop 23_ade872 0.2]
+＠ユニヴァース・アポロン
+あれ。こんなところまでどうしたの。
+[k]
+
+[charaTalk B]
+[charaFace B 6]
+[subRenderFadein #A 0.1 -150,-220]
+
+＠B：メカエリチャンⅡ号機
+今、槍を強化中なのだけど。[r]残り一山というところで、[#頓挫:とんざ]しかかってるわ。
+[k]
+
+＠B：メカエリチャンⅡ号機
+教団は最大戦力を投じてくるでしょうし。[r]正面突破は難しいのよ。
+[k]
+
+[subRenderFadeout #A 0.2]
+[wt 0.1]
+
+＠ユニヴァース・アポロン
+ああ、なるほど。手伝って欲しい感じ？
+[k]
+
+？1：そんな感じ
+？！
+
+＠ユニヴァース・アポロン
+[line 3]いいよ。ただ、私は役に立たないから、[r]役に立ちそうな人間を紹介しよう。
+[k]
+
+＠ユニヴァース・アポロン
+アキレウス。来なさいな。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadein R 0.8 50,-280]
+[charaMove R 100,-280 0.8]
+[wt 2.8]
+
+[bgmStop BGM_EVENT_167 1.0]
+[charaFadeout H 0]
+[charaFadeout D 0]
+[wt 0.1]
+
+[charaScale A 1.0]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[subRenderFadein #B 0.8 -380,-250]
+[subRenderFadein #C 0.8 380,-150]
+[subRenderMove #B -380,-200 0.6]
+[subRenderMove #C 380,-200 0.6]
+[wt 3.5]
+[charaFace K 24]
+[charaFace I 4]
+[wt 1.0]
+
+[subRenderFadeout #B 0.5]
+[subRenderFadeout #C 0.5]
+[wt 0.5]
+
+[charaFadeout O 0]
+[charaFadeout V 0]
+[charaFadeout W 0]
+
+[charaLayer O normal]
+[charaLayer V normal]
+[charaLayer W normal]
+
+[charaFadeout J 0]
+[charaFadeout K 0]
+[charaFadeout I 0]
+[charaFadeout U 0]
+[charaFadeout Y 0]
+
+[charaLayer J normal]
+[charaLayer K normal]
+[charaLayer I normal]
+[charaLayer U normal]
+[charaLayer Y normal]
+
+[subRenderDepth #C 2]
+[subRenderDepth #D 1]
+
+[charaLayer O sub #B]
+[charaLayer W sub #B]
+
+[subCameraFilter #B through]
+[subRenderScale #B 1.0]
+
+[charaScale O 1.7]
+
+[charaDepth W 8]
+[charaDepth O 2]
+
+[charaFadein O 0.1 0,-220]
+
+[charaLayer K sub #C]
+[charaLayer J sub #C]
+[charaLayer U sub #C]
+[charaLayer Y sub #C]
+
+[subCameraFilter #C maskEdge cut359_mask16 4 255,255,255,255 0]
+
+[subRenderScale #C 1.0]
+
+[charaScale K 1.2]
+
+[charaDepth Y 9]
+[charaDepth J 5]
+[charaDepth K 4]
+[charaDepth U 1]
+
+[charaFace K 2]
+[charaFadeinFSR K 0.1 -30,200]
+[charaFadein U 0.1 0,0]
+
+
+[charaDepth D 8]
+[charaDepth H 5]
+[charaDepth G 4]
+[charaDepth R 3]
+[charaDepth A 2]
+[charaDepth C 1]
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFadeout R 0.6]
+[wt 0.6]
+
+＠エリザベート
+……来ないわよ。
+[k]
+
+[messageOff]
+[se adm76]
+[seVolume adm76 0 0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-250]
+[wt 1.5]
+
+＠ユニヴァース・アポロン
+[font small]あ、ヘクトール。
+[k]
+
+[messageOff]
+[se ade156]
+[se adm76]
+[seVolume adm76 0 0]
+[seVolume ade156 0 0]
+[seVolume adm76 2.5 1.0]
+[seVolume ade156 2.5 0.5]
+[wt 1.0]
+[subRenderFadein #D 0.4 0,50]
+[wt 1.0]
+[charaFadeout H 0.1]
+[charaFadeout D 0.1]
+
+[charaFace A 3]
+[charaFadein A 0 1]
+
+[se ad678]
+[seStop adm76 0.3]
+[seStop ade156 0.3]
+[wt 0.8]
+
+[charaTalk N]
+[charaFace N 2]
+[charaFadein N 0.3 -300,-50]
+[se ad496]
+[charaMove N 0,-50 0.3]
+[shake 0.05 1 1 0]
+[fowardEffect bit_talk_gale]
+[wt 1.0]
+[shakeStop]
+[fowardEffectDestroy bit_talk_gale]
+[wt 0.5]
+
+[bgm BGM_EVENT_160 0.1]
+
+＠N：？？？
+[#疾風怒濤:し っ ぷ う ど と う]が我がモットー、[r]ソニックマッハ・ジェッター、参上！
+[k]
+
+[messageOff]
+[se ade226]
+[charaPut Z 0,0]
+[charaEffect Z bit_talk_41_remake 0,100]
+[subRenderMoveEase #D 0,-5 0.5 easeInOutExpo]
+[subRenderMoveScaleEase #D 1.3 0.5 easeInOutExpo]
+[wt 0.3]
+
+＠N：ソニックマッハ・ジェッター
+[f large]いざ尋常に！　勝負！！
+[k]
+
+[messageOff]
+[charaTalk N,A]
+[charaEffectDestroy Z bit_talk_41_remake]
+[subRenderFadeout #D 0.4]
+[wt 0.4]
+[charaFadeout N 0]
+[charaMove F 0,-300 0]
+
+＠エリザベート
+ビックリしたー！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+？1：あなたが……アキレウス？
+？！
+
+[charaFace G 1]
+
+＠ソニックマッハ・ジェッター
+おっと、そいつぁ遠い昔の名前だな。
+[k]
+
+＠ソニックマッハ・ジェッター
+今の俺は速度重視のサーヴァント、[r]ソニックマッハ・ジェッターだ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 1]
+
+＠モレー
+さすが天下に名高きアキレウス。[r]ヘクトールの名を聞いたら即参上かぁ……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠ソニックマッハ・ジェッター
+あ。何だ。おい、アポロン神。[r]ヘクトールは？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-250]
+
+＠ユニヴァース・アポロン
+もちろん嘘なのだけど。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ソニックマッハ・ジェッター
+つ[messageShake 0.05 2 2 0.3]くなよ！？
+[k]
+
+[charaFace G 5]
+
+＠ソニックマッハ・ジェッター
+ま、それなら用はない。[r]じゃあな！
+[k]
+
+[bgm BGM_EVENT_160 0.5 0]
+
+[messageOff]
+[se ad678]
+[cueSe SE_21 21_ade546]
+[seStop 21_ade546 1.0]
+[se ad859]
+[seStop ad859 1.0]
+[se ad2]
+[seVolume ad2 0 0.7]
+[seStop ad2 1.5]
+[fowardEffect bit_talk_mgn_light02]
+[wt 0.4]
+[shake 0.05 1 1 0]
+[charaFadeout G 0.1]
+[wt 0.4]
+[shakeStop]
+[wt 1.0]
+
+？1：一瞬で居なくなりましたが……
+？！
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-250]
+
+＠ユニヴァース・アポロン
+何という直線番長……。[r]しょうがない。[wt 1.2]やあヘクトール、何か用かい？
+[k]
+
+[messageOff]
+[subRenderScale #D 1.05]
+[subRenderFadein #D 0.3 10,50]
+[wt 0.3]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_160 0.5 1.0]
+
+[se ad223]
+[charaTalk N]
+[charaFace N 2]
+[charaPut N 0,-80]
+[charaEffect N bit_talk_quickmove 0,50]
+[charaSpecialEffect N appearance 1 0.2]
+[wt 0.4]
+
+＠N：ソニックマッハ・ジェッター
+よしヘクトール！[wt 0.5][r]いないか！[wt 0.8]　いないな！[wt 0.8]　じゃあ帰
+[k]
+
+[messageOff]
+[charaTalk K]
+[subRenderFadeinFSR #C 0.4 500,-200]
+[subRenderMoveEaseFSR #C 200,-200 0.4 easeOutQuart]
+[subRenderMoveEase #D -300,50 0.4 easeOutQuart]
+[wt 0.3]
+
+＠K：モレー
+[f large]ス[messageShake 0.05 3 3 0.3]タァップ！
+[k]
+
+[bgmStop BGM_EVENT_160 1.0]
+
+[charaTalk N]
+[charaFace N 0]
+
+＠N：ソニックマッハ・ジェッター
+お、何だ？
+[k]
+
+[messageOff]
+[charaTalk A,N]
+[subRenderFadeout #C 0.4]
+[subRenderFadeout #D 0.4]
+[wt 0.4]
+[charaFadeout K 0]
+[charaFadeout N 0]
+[charaLayer N sub #C]
+[charaFace N 5]
+[charaFadein N 0.1 -70,135]
+
+＠エリザベート
+やっと止まったわ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_127 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-250]
+
+＠ユニヴァース・アポロン
+悪いんだけど君、ちょっと[&彼ら:彼女たち]に[r]ついていってくれない？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ソニックマッハ・ジェッター
+あ、何でだよ？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-250]
+
+＠ユニヴァース・アポロン
+この星を救うためだよ。[r]そういうの、好きでしょ？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠ソニックマッハ・ジェッター
+おう、大好きだ！[r]そうかそうか、星を救うか。いいねぇ。
+[k]
+
+[charaFace G 5]
+
+＠ソニックマッハ・ジェッター
+まあちと気に食わないのが、テメェからの[r]提案ってあたりだが。
+[k]
+
+＠ソニックマッハ・ジェッター
+[line 3]何か企んでないか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace H 0]
+[charaFadein H 0.1 0,-250]
+
+＠ユニヴァース・アポロン
+そんな……。この私の眼球を見てみなさい。[r]何か企んでいるように見えるかい？
+[k]
+
+[bgm BGM_MAP_127 0.5 0.4]
+
+[messageOff]
+[charaScale O 1.6]
+[charaScale D 1.5]
+[subRenderFadein #B 0.4 0,0]
+[charaFadein D 0.4 150,-250]
+[wt 0.4]
+[charaMoveScale O 1.7 1.0]
+[blur lens 1.0 4 4]
+[wt 2.0]
+[charaFadein R 0 125,-250]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+[charaFace N 0]
+[subRenderFadeinFSSideR #C 0.3 470,-180]
+[subRenderMoveFSSideR #C 450,-200 0.3]
+[wt 0.3]
+
+[charaTalk on]
+
+＠N：ソニックマッハ・ジェッター
+見える。すっごく見える。
+[k]
+
+[bgmStop BGM_MAP_127 0.5]
+
+[charaTalk O]
+
+＠O：ユニヴァース・アポロン
+……アポロンフラッシュ。
+[k]
+
+[messageOff]
+[charaFadeout F 0]
+[charaLayer W sub #D]
+[subCameraFilter #D through]
+[subRenderDepth #B 1]
+[subRenderDepth #C 3]
+[subRenderDepth #D 2]
+[subRenderFadein #D 0 0,0]
+[charaTalk O]
+[se ad851]
+[seVolume ad851 0 0.3]
+[blurOff lens 1.0]
+
+[se ad852]
+[cueSe SE_24 24_ade1060]
+[fowardEffect bit_talk_sunlight01 -10,-170]
+[charaPut Y -500,-550]
+[charaEffect Y bit_talk_sunlight01]
+[charaPut W 1]
+[charaFadeTime W 1.0 0.9]
+[wt 0.3]
+[charaFace N 2]
+[wt 1.2]
+
+＠O：ユニヴァース・アポロン
+見えるかい？
+[k]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+[charaTalk O]
+[charaFace N 2]
+
+＠N：ソニックマッハ・ジェッター
+見[messageShake 0.05 3 3 0.3]えないよ！
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 5]
+[charaFadein J 0.1 -70,180]
+
+＠J：エリザベート
+[#眩:まぶ]しいんですけど！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 20]
+[charaFadein K 0.1 -80,180]
+
+＠K：モレー
+あたしみたいなキャラにこの光は辛い。[r]浄化されちゃうぅ……。
+[k]
+
+[messageOff]
+[charaTalk O,K]
+
+[subRenderFadeout #C 0.4]
+[charaFadeTime W 0.7 0]
+[seStop ad852 0.7]
+[cueSeStop 24_ade1060 0.7]
+[charaEffectStop Y bit_talk_sunlight01]
+[fowardEffectStop bit_talk_sunlight01]
+[wait fowardEffect]
+[wt 0.7]
+[charaFadeout W 0]
+[subRenderFadeout #D 0]
+[wt 0.3]
+
+＠O：ユニヴァース・アポロン
+[line 3]まあそれはともかく。ついていって損はないよ。
+[k]
+
+？1：今の光の意味は！？
+？！
+
+[messageOff]
+[charaTalk H,O]
+[charaFadeout D 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+
+＠ユニヴァース・アポロン
+たまには太陽神であるところをアピールしたいかなって。[r]ただの羊じゃないんだよ。
+[k]
+
+[messageOff]
+[charaTalk G,H]
+[charaFace G 5]
+[charaPut G 500,0]
+[charaMoveEase H -250,-250 1.0 easeInOutSine]
+[charaMoveEase R -125,-250 1.0 easeInOutSine]
+[charaMoveEase G 250,0 1.0 easeInOutSine]
+[wt 0.6]
+[charaFadeTime G 0.4 1.0]
+[wt 0.4]
+
+＠ソニックマッハ・ジェッター
+安心しろ。アポロンだってことを片時も[r]忘れたことはねえよ。
+[k]
+
+＠ユニヴァース・アポロン
+そんなに私のことが好きなの？[r]困るな。私はともかくパリスちゃんが君のこと嫌いだし。
+[k]
+
+＠ソニックマッハ・ジェッター
+警戒しているだけだよ。
+[k]
+
+＠ユニヴァース・アポロン
+……そんなに私のことが好きなのか、困るな。
+[k]
+
+[messageOff]
+[charaTalk C,H]
+[charaFadeout H 0.4]
+[charaFadeout G 0.4]
+[charaFadeout R 0.4]
+[wt 0.4]
+
+＠モレー
+『はい』を選択するまで[r]会話を終わらせてくれないタイプの人かな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠ソニックマッハ・ジェッター
+そもそもの話、[r]どうしてこいつらと同行しなきゃいけないんだ？
+[k]
+
+＠ソニックマッハ・ジェッター
+事情話してくれよ、そこのアンタ。
+[k]
+
+？1：かくかくしかじか……
+？！
+
+[messageOff]
+[bgm BGM_HALLOWEEN_2021_1 1.0 0.5]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout O 0.1]
+[charaFadeout K 0.1]
+[charaFadeout U 0.1]
+[charaFadeout V 0.1]
+[charaFadeout F 0.1]
+
+[charaLayer O normal]
+[charaLayer W normal]
+[charaLayer V normal]
+
+[charaLayer Y normal]
+[charaLayer Z normal]
+[charaLayer U normal]
+[charaLayer F normal]
+
+[charaFace G 1]
+
+[wt 1.0]
+[bgm BGM_HALLOWEEN_2021_1 1.0 1.0]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+
+＠ソニックマッハ・ジェッター
+なるほどな。[r]確かにその槍、俺の槍に勝るとも劣らない立派なモンだ。
+[k]
+
+[charaFace G 0]
+
+＠ソニックマッハ・ジェッター
+それで星を救えるなら、まあ納得だが……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-250]
+
+＠ユニヴァース・アポロン
+神様らしいでしょ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ソニックマッハ・ジェッター
+[line 3]フン。ま、いいさ。
+[k]
+
+＠ソニックマッハ・ジェッター
+直感がこいつらについていった方がいい、[r]と言っている。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-250]
+
+＠ユニヴァース・アポロン
+それは英雄としての？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠ソニックマッハ・ジェッター
+俺個人の直感だよ。[r]では……我が名はソニックマッハ・ジェッター！
+[k]
+
+＠ソニックマッハ・ジェッター
+よろしく頼む！
+[k]
+
+？1：こちらこそ！
+？！
+
+[charaTalk B]
+[charaFace B 6]
+[subRenderFadein #A 0.1 -150,-220]
+＠B：メカエリチャンⅡ号機
+これで、正面突破できるだけの戦力になったわね。
+[k]
+
+[subRenderFadeout #A 0.2]
+[wt 0.1]
+
+＠ソニックマッハ・ジェッター
+おっと、そうだ。アポロン、伝言頼む。
+[k]
+
+[charaFace G 1]
+＠ソニックマッハ・ジェッター
+パリスが戻ってきたら、サシの勝負はまた今度って[r]言っておいてくれ！
+[k]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-250]
+
+＠ユニヴァース・アポロン
+言わないよ。パリスちゃんボロボロに負けるもん。
+[k]
+
+[messageOff]
+[bgmStop BGM_HALLOWEEN_2021_1 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[charaLayer B normal]
+[charaLayer E normal]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+
+[charaSet I 1098337710 1 フレッカス]
+[charaSet N 4029300 1 ソニックマッハ・ジェッター]
+[charaSet K 25010001 1 モレー]
+[charaSet J 3062000 1 エリザベート]
+
+[sceneSet U 266000 1]
+[charaScale U 1.2]
+[sceneSet V 266000 1]
+[charaScale V 1.2]
+
+[imageSet E cut768_car 1]
+[imageSet F cut768_car 1]
+
+[charaScale I 1.0]
+[charaScale N 1.2]
+[charaScale J 1.2]
+[charaScale K 1.2]
+[charaScale E 1.6]
+[charaScale F 1.6]
+
+
+[charaLayer I sub #A]
+[charaLayer U sub #A]
+[charaLayer E sub #A]
+
+[charaDepth U 1]
+[charaDepth E 2]
+[charaDepth I 3]
+
+[charaFadein E 0.1 0,80]
+[charaFace I 3]
+[charaFadein I 0.1 30,170]
+[charaFadein U 0.1 1]
+
+[subCameraFilter #A maskEdge cut359_mask20 3 0,0,0,0 0]
+[subRenderScale #A 1.0]
+
+[charaLayer V sub #C]
+[charaLayer J sub #C]
+[charaLayer K sub #C]
+[charaLayer F sub #C]
+[charaLayer N sub #C]
+
+[subCameraFilter #C maskEdge cut359_mask20 3 0,0,0,0 0]
+
+[subRenderScale #C 1.0]
+
+[charaDepth V 1]
+[charaDepth F 2]
+[charaDepth N 3]
+[charaDepth J 4]
+[charaDepth K 5]
+
+[charaFadein F 0 0,80]
+[charaFace N 5]
+[charaFadein N 0.1 20,200]
+[charaFadein V 0.1 1]
+
+[scene 266000]
+[wt 1.5]
+
+[cameraMove 0 0,0 1.05]
+
+[cueSe SE_25 25_ade1293]
+[cueSeVolume 25_ade1293 0 0]
+[cueSeVolume 25_ade1293 1.0 0.7]
+
+[wt 1.0]
+[shake 0.03 1 1 2.4]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[cueSeStop 25_ade1293 1.0]
+[wt 1.2]
+
+[bgm BGM_EVENT_146 0.1]
+
+[charaTalk I]
+[subRenderFadein #A 0.3 0,-200]
+[wt 0.3]
+
+＠I：フレッカス
+なんか……物騒な人が一名増えたな……。
+[k]
+
+[messageOff]
+[subRenderMove #A -50,-200 0.3]
+[subRenderFadeout #A 0.3]
+[wt 0.4]
+
+[charaTalk N]
+[subRenderFadein #C 0.3 50,-200]
+[subRenderMoveEase #C 0,-200 0.5 easeOutQuad]
+[wt 0.5]
+
+＠N：ソニックマッハ・ジェッター
+遅いな、遅い、遅いぞ。[r]俺の戦車使うか？
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 4]
+[charaFadein K 0.1 0,200]
+
+＠K：モレー
+や。それだと全員乗れないし。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 20,200]
+
+＠N：ソニックマッハ・ジェッター
+俺がアンタを担ぐだろ、[r]アンタがこっちのエリなんとかを担ぐだろ、
+[k]
+
+＠N：ソニックマッハ・ジェッター
+エリなんとかがマスターを担いで……。
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0.1 10,200]
+
+＠J：エリザベート
+イ[messageShake 0.05 2 3 0.3]ヤよ！！
+[k]
+
+？1：死ぬ死ぬ！
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 3]
+[charaFadein N 0.1 20,200]
+
+＠N：ソニックマッハ・ジェッター
+そりゃそうか！[r]さすがの俺も落とさない自信はないな！
+[k]
+
+[charaFace N 1]
+
+＠N：ソニックマッハ・ジェッター
+ま、俺はソニックマッハ。[r]見ての通り、素早いことにかけちゃ定評がある。
+[k]
+
+＠N：ソニックマッハ・ジェッター
+安心して、大船に乗ったつもりでいな！
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 7]
+[charaFadein J 0.1 10,200]
+
+＠J：エリザベート
+[&子イヌ:子ジカ]、この人なんか苦手～。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 25]
+[charaFadein K 0.1 -10,200]
+
+＠K：モレー
+[#太陽:アポロン]と対立しているのに、[r]太陽のような人柄だね……。
+[k]
+
+＠K：モレー
+闇とか、夜とか、縁なさそう。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 5]
+[charaFadein J 0.1 10,200]
+
+＠J：エリザベート
+戦うことに全振りした感じ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 4]
+[charaFadein N 0.1 20,200]
+
+＠N：ソニックマッハ・ジェッター
+何か偏見が飛び交っている気がする。[r]俺だって闇とかあるからな！
+[k]
+
+＠A：全員
+えー。
+[k]
+
+＠N：ソニックマッハ・ジェッター
+うーん、まったく信用されていない。[r]本当だって！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_146 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

@@ -1,0 +1,420 @@
+
+
+
+＄04-00-04-19-4-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098276900 1 マシュ]
+[charaSet B 1098307900 1 岸波白野]
+[charaSet C 1098301840 1 ＢＢコスモ]
+[charaSet D 4034300 1 バーソロミュー]
+[charaSet E 11019000 1 徐福]
+[charaSet F 10003002 1 魔性菩薩]
+[charaScale F 1.5]
+
+[sceneSet I 225420 1]
+[charaScale I 1.2]
+
+[sceneSet J 225800 1]
+[charaScale J 1.2]
+
+[sceneSet K 225420 1]
+[charaScale K 1.2]
+
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+
+[sceneSet Q 10001 1]
+[charaScale Q 1.1]
+
+[charaSet Z 98115000 1 エフェクト用]
+
+[scene 225420]
+[charaFadein I 0 0,-180]
+
+[charaTalk depthOff]
+[charaDepth I 1]
+
+[bgm BGM_BATTLE_277 0.1]
+
+[fadein black 0.5]
+[wait fade]
+[wt 0.5]
+
+？1：なんかもう色々デタラメだー！
+
+[charaDepth E 2]
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠徐福
+だから言ったじゃん、すぐ逃げようって！[r]こんなの孫悟空ＶＳお[#釈迦:しゃか]様だろ～！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？2：あの建物、ホテルじゃなくて蛇口だったんだ！
+
+[charaDepth A 3]
+[charaDepth C 4]
+
+[charaTalk off]
+[charaFace C 7]
+[charaFadein C 0.1 0]
+[charaFace A 18]
+[charaFadein A 0.1 2]
+
+＠マシュ＆ＢＢコスモ
+！[r]（いま気づいた、という顔）
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+？！
+
+[charaDepth B 5]
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠岸波白野
+何にせよ予想外すぎる！
+[k]
+
+＠岸波白野
+視界も悪い、足場も悪い、[r]ダメージを与えても意味がない！
+[k]
+
+＠岸波白野
+勝ち目はおろか逃げる方向さえ分からない！[r]このままじゃ全滅[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.5]
+[charaMoveEase B 0,-150 1.3 easeOutQuad]
+[charaMoveEase I 0,-320 1.3 easeOutQuad]
+
+[wt 1.5]
+
+[subCameraOn 4]
+[charaLayer F sub #A]
+[charaLayer J sub #A]
+
+[charaLayer C sub #B]
+[charaLayer K sub #B]
+
+[charaLayer B sub #B]
+[charaLayer E sub #B]
+[charaLayer P sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask06 3 255,105,180,255]
+[subCameraFilter #B maskEdge cut359_mask16 5 255,255,255,255]
+
+[subRenderScale #A 1.2]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+
+[charaDepth F 9]
+[charaDepth J 8]
+
+[charaTalk F,B]
+[charaFace F 8]
+[charaFadein F 0.1 -100,280]
+[charaFadein J 0.1 0,0]
+
+[charaDepth K 3]
+[charaDepth C 4]
+[charaFace C 2]
+[charaFadeinFSR C 0.1 -90,220]
+[charaFadein K 0.1 -300,0]
+
+
+[subRenderFadein #A 0.4 0,-300]
+[wt 0.5]
+
+＠魔性菩薩
+いいえ。[r]全滅、なんて野暮な事はいたしませんわ。
+[k]
+
+[charaFace F 7]
+
+＠魔性菩薩
+[#浴槽:よくそう]に入ってきた虫とはいえ[#儚:はかな]い命。[r]無益な殺生はいたしません。
+[k]
+
+[charaFace F 0]
+
+＠魔性菩薩
+充分に身の程を思い知ったでしょう？[r]そうであれば、わざわざ手を伸ばすのも億劫というもの。
+[k]
+
+＠魔性菩薩
+皆様の命など、[#私:わたくし]にとっては一寸の虫。
+[k]
+
+[charaFace F 9]
+
+＠魔性菩薩
+逃げ出すのなら[#咎:とが]めはいたしません。[r]こうして遙か上空から、寛大な心で見逃してあげましょう。
+[k]
+
+[messageOff]
+
+[charaTalk C]
+[subRenderFadeinFSR #B 0.4 340,-300]
+[subRenderMoveEaseFSR #B 350,-250 0.5 easeOutSine]
+
+[wt 0.5]
+
+＠ＢＢコスモ
+調子に乗ってますね。ここまで言われて逃げ出すとか、[r]ロビンさんの小言くらい納得いきませんが……
+[k]
+
+[charaFace C 3]
+
+＠ＢＢコスモ
+ロビンさんなら、まあ、そういうの抜きにして[r]撤退しますよね……
+[k]
+
+？1：悔しいけど今は逃げよう
+？2：（必ず、弱点があるはず[&だ:]）
+
+？！
+
+[messageOff]
+
+[charaTalk F,C]
+[charaFaceFade F 1 0.3]
+[subRenderMoveEaseFSR #B 340,-300 0.5 easeOutSine]
+[subRenderFadeout #B 0.5]
+
+[wt 0.5]
+
+[charaFadeout C 0.1]
+
+＠魔性菩薩
+まあ。ふふふ、[#物の道理:も  の  わ  か  り]がよろしいこと。[r]頭のいい方は嫌いではありません。話が早いですから。
+[k]
+
+[charaFace F 8]
+
+＠魔性菩薩
+とはいえ、何の教訓も無し、とは参りません。[r]無条件では都合が良すぎますでしょう？
+[k]
+
+[charaFace B 2]
+[charaFadeinFSR B 0.1 -30,220]
+
+＠魔性菩薩
+『ひとり、大切な仲間を置いていくこと』[r]それが皆様の助かる条件です。
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth B 5]
+
+[charaTalk B,F]
+[subRenderFadeinFSR #B 0.4 340,-300]
+[subRenderMoveEaseFSR #B 350,-250 0.5 easeOutSine]
+
+[wt 0.5]
+
+＠岸波白野
+ひとりを犠牲にしろ、という事か。[r]そうすれば必ず俺たちは助けに戻ってくると。
+[k]
+
+＠岸波白野
+ある意味[#感服:かんぷく]するよ。どんなに強くなっても無駄が多い。[r]楽しければいいだけの、気分屋なのは変わらない。
+[k]
+
+[charaFace F 3]
+
+＠魔性菩薩
+そんな……照れてしまいます。[r]正面から[#私:わたくし]を批評してくださるなんて……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth E 7]
+[charaDepth P 6]
+
+[charaPut P 0,0]
+[charaTalk E]
+[charaFace E 31]
+[charaFadeinFSR E 0.1 -40,220]
+[charaFadeTime P 0.2 0.5]
+
+＠徐福
+（嫌味を言ってもいい方に取るんだあの女！[r]　無敵か！）
+[k]
+
+[messageOff]
+
+[subRenderMoveEase #A 0,-160 1.3 easeOutQuad]
+[subRenderFadeout #A 0.5]
+[subRenderFadeout #B 0.5]
+[charaMoveEase I 0,-180 1.3 easeOutQuad]
+
+[wt 1.8]
+
+？1：（ひとりが犠牲に……）
+？2：（殺生院は殺生はしないと言った……）
+
+？！
+
+[charaFadeout P 0.5]
+[charaFadeout E 0.5]
+[charaFadeout K 0.5]
+
+[wt 0.5]
+[charaLayer B normal]
+[charaLayer E normal]
+[charaLayer C normal]
+[charaLayer K normal]
+[charaLayer P normal]
+
+[subCameraFilter #C through]
+
+[charaLayer Z sub #C]
+[charaLayer Q sub #C]
+
+[subCameraFilter #C normal]
+[subRenderScale #C 1.01]
+
+[charaDepth Z 6]
+[charaDepth Q 5]
+
+[subRenderDepth #A 1]
+[subRenderDepth #C 3]
+
+[charaPut Q 0,0]
+[charaFadein Q 0 0,-200]
+
+[charaEffect Z bit_talk_pink_fog01]
+[charaEffect Z bit_talk_pink_fog02]
+[charaEffect Z bit_talk_bubbling_bubbles]
+
+[charaFace F 9]
+
+[charaTalk depthOn]
+
+？1：それなら……
+
+？！
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠バーソロミュー
+いや、残るのは君じゃないマスター。[r]適任なのは私だ。
+[k]
+
+＠バーソロミュー
+戦力として大きな数値じゃないからね。[r]はじめからマイナスだ。どう転ぼうと問題ない。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+そんな事はありません！[r]バーソロミューさんが残るくらいなら、わたしが……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠バーソロミュー
+ヒュウ。前言撤回、いきなりプラスになった。[wt 1.0][charaFace D 19][r]今の言葉だけでおつりがくる。
+[k]
+
+[charaFace D 0]
+
+＠バーソロミュー
+殺生院キアラ。残るのは私だ。[r]パーム・ジュメイラに連れて行ってくれ。
+[k]
+
+＠バーソロミュー
+それとも戦力外の私では不服かな？
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.5]
+[charaMoveEase D 0,-150 1.3 easeOutQuad]
+[charaMoveEase I 0,-320 1.3 easeOutQuad]
+
+[charaFace F 9]
+
+[wt 1.5]
+
+[charaTalk off]
+[subRenderFadein #A 0.4 0,-300]
+[wt 0.5]
+
+＠魔性菩薩
+いいえ、最善の選択です。[r]初見から貴方はこちら側だと感じていました。
+[k]
+
+[charaFace F 1]
+
+＠魔性菩薩
+では皆様、安全なホームにお帰りを。[r]またの挑戦、楽しみにしております。
+[k]
+
+[charaFace F 9]
+
+＠魔性菩薩
+もっとも、時間はそうありませんが。[r][#私:わたくし]の支持率は上がる一方。
+[k]
+
+＠魔性菩薩
+あと数時間でムーン・ドバイは[#私:わたくし]のもの。[r]死した星とはいえ月も天体の一つ。
+[k]
+
+＠魔性菩薩
+その[#核:なか]に[#融:と]け込み、星の内海を飲み干し、[r]もう一度、獣の座に昇らせていただきますね？
+[k]
+
+
+[messageOff]
+
+[subRenderFadein #C 1.7 0,0]
+
+[cueSe SE_22 23_ade871]
+[seVolume 23_ade871 0 0.1]
+[seVolume 23_ade871 1.0 0.5]
+[cueSe SE_22 22_ade709]
+[wt 2.5]
+
+[fadeout black 2.0]
+[seStop 23_ade871 2.0]
+[seStop 22_ade709 2.0]
+[bgmStop BGM_BATTLE_277 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

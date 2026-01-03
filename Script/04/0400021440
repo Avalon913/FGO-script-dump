@@ -1,0 +1,1508 @@
+
+
+
+＄04-00-02-14-4-0
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 7046001 1 ドゥリーヨダナ]
+[charaSet B 1098270000 1 シオン]
+[charaSet C 1098270200 1 カーマ]
+[charaSet D 1098267000 1 ドゥルガー]
+[charaSet E 1098267000 1 ドゥルガー2]
+[charaSet F 3054002 1 ビーマ]
+[charaSet G 1098269300 1 セレシェイラ]
+[charaSet H 1098269200 1 オシリスの塵]
+[charaSet I 1098270300 1 アーユス]
+[charaSet J 1098270500 1 ラニ＝Ｄ1]
+[charaSet K 1098270500 1 ラニ＝Ｄ2]
+[charaSet L 1098270540 1 サイレンロボ1]
+[charaSet M 1098270540 1 サイレンロボ2]
+
+[sceneSet N 189601 1]
+[sceneSet O 189601 1]
+[sceneSet P 189601 1]
+[sceneSet Q 189601 1]
+
+[charaSet R 5009000 1 エフェクト用1]
+[charaSet S 5009000 1 エフェクト用2]
+[charaSet T 5009000 1 エフェクト用3]
+
+[scene 189601]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_137 0.1]
+
+[charaTalk D]
+[charaFace D 25]
+[charaFadein D 0.1 1]
+
+＠ドゥルガー
+っ……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 11]
+[charaFadein H 0.1 1]
+
+＠オシリスの塵
+演算結果、不一致。[#解:げ]せぬ。[r]何故だ[line 3]！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠カーマ
+あーもー、しんどーい！
+[k]
+
+[charaFace C 1]
+
+＠カーマ
+ですけど、そっちのほうが[r]もっとしんどそうですねぇ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠シオン
+戦況は優勢。[r]このまま押し切りましょう！
+[k]
+
+？1：いける……！
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+
+[subCameraOn 2]
+[charaLayer O sub #A]
+[charaLayer F sub #A]
+[charaLayer R sub #A]
+[charaLayer P sub #B]
+[charaLayer A sub #B]
+[charaLayer S sub #B]
+
+[charaTalk depthOff]
+[charaDepth O 1]
+[charaDepth P 1]
+[charaDepth N 1]
+[charaDepth F 2]
+[charaDepth A 2]
+[charaDepth E 2]
+[charaDepth R 3]
+[charaDepth S 3]
+[charaDepth T 3]
+
+[charaScale F 1.15]
+[charaScale O 1.2]
+[charaScale P 1.2]
+
+[charaFace F 2]
+[charaFace A 5]
+[charaFadein O 0.1 -130,0]
+[charaFadein P 0.1 130,0]
+[charaFadeinFSR F 0.1 310,180]
+[charaFadeinFSL A 0.1 -310,180]
+[wt 0.1]
+
+[charaTalk F]
+[subCameraFilter #A maskEdge cut359_mask02 4 135,83,209,255 0]
+[subCameraFilter #B maskEdge cut359_mask13 4 231,41,45,255 0]
+[subRenderFadein #A 0.3 100,-320]
+[subRenderMove #A 0,-320 0.3]
+[wt 0.3]
+
+＠ビーマ
+オラァっ！
+[k]
+
+[messageOff]
+[se ad158]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut R 0,300]
+[charaEffect R bit_talk_42 0,0 H]
+[charaMoveFSR F 110,180 0.2]
+[charaFadeout F 0.2]
+[wt 0.5]
+[seStop ad158 0.1]
+[charaPut R 2000,2000]
+[charaEffectStop R bit_talk_42]
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 25]
+[charaFadein D 0.1 1]
+[wt 0.2]
+[se ad85]
+[effect bit_talk_gram_slash_01_fs]
+[wt 0.5]
+[se ad170]
+[effect bit_talk_14]
+[wt 0.2]
+[charaFace D 22]
+[charaShake D 0.03 2 2 0.5]
+[wt 1.0]
+
+[charaScale A 1.15]
+[charaTalk A]
+[subRenderFadein #B 0.3 -100,-320]
+[subRenderMove #B 0,-320 0.3]
+[wt 0.3]
+
+＠ドゥリーヨダナ
+死ねぇっ！
+[k]
+
+[messageOff]
+[se ad158]
+[se ad859]
+[seVolume ad859 0 0.7]
+[charaPut S 0,300]
+[charaEffect S bit_talk_42]
+[charaMoveFSL A -110,180 0.2]
+[charaFadeout A 0.2]
+[wt 0.5]
+[seStop ad859 0.3]
+[seStop ad158 0.1]
+[charaPut S 2000,2000]
+[charaEffectStop S bit_talk_42]
+[subRenderFadeout #B 0.1]
+[wt 0.1]
+[charaTalk D]
+[wt 0.1]
+[se ad237]
+[wt 0.1]
+[effect bit_talk_strike_02 0,0 H]
+[wt 0.1]
+[se ad1014]
+[wt 0.1]
+[seStop ad237 0.4]
+[effect bit_talk_14]
+[wt 0.2]
+[charaFace D 23]
+[charaShake D 0.03 2 2 0.7]
+
+[charaTalk off]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaScale O 1.44]
+[charaScale P 1.44]
+[charaScale N 1.44]
+[charaScale F 1.2]
+[charaScale A 1.2]
+[charaScale E 1.2]
+[subCameraFilter #A maskEdge cut359_mask16 4 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask10 4 0,0,0,255 0]
+[charaFace F 2]
+[charaFace A 5]
+[charaFadeinFSR F 0.1 80,300]
+[charaFadeinFSL A 0.1 -60,300]
+[charaFadein O 0.1 -250,-70]
+[charaFadein P 0.1 250,-70]
+[wt 0.5]
+
+[se ad774]
+[seVolume ad774 0 0.6]
+[se ade446]
+[seVolume ade446 0 0]
+[seVolume ade446 0.6 0.3]
+
+[charaFace E 23]
+[charaFadein N 0.4 0,-250]
+[charaFadein E 0.4 0,75]
+[subRenderFadein #A 0.4 350,-300]
+[subRenderFadein #B 0.4 -350,-300]
+[charaMove N 0,-300 0.4]
+[charaMove E 1 0.4]
+[charaMove O -300,-70 0.4]
+[charaMoveFSR F 30,300 0.4]
+[charaMove P 300,-70 0.4]
+[charaMoveFSL A -10,300 0.4]
+[charaPut R -500,300]
+[charaPut S 500,300]
+[charaPut T 1]
+[charaEffect R bit_talk_lightning_01r_fs]
+[charaEffect S bit_talk_lightning_01r_fs]
+[charaEffect T bit_talk_lightning_01r_fs]
+[wt 0.6]
+
+[charaShake E 0.03 2 2 1.5]
+[charaShake F 0.01 1 1 1.5]
+[charaShake A 0.01 1 1 1.5]
+[wt 1.0]
+[seStop ad774 0.5]
+[wt 0.5]
+[charaFadeout D 0.1]
+[seVolume ade446 1.0 0.2]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 12]
+
+＠ビーマ
+なんだか、殺気が、[r]こっちにも来てる気がすんなぁ……！？
+[k]
+
+[charaTalk A]
+[charaFace A 7]
+
+＠ドゥリーヨダナ
+はん。わし様のパワーは凄いゆえ、ついでに[r]逆側の貴様も吹っ飛ばし殺す可能性は大、だ！
+[k]
+
+[charaTalk E]
+[charaFaceFade E 27 0.2]
+
+＠E：ドゥルガー
+神務遂行の障害[line 3][#煩:わずら]わしい！
+[k]
+
+[messageOff]
+[charaTalk off]
+[seStop ade446 0.2]
+[se ad1013]
+[se ad875]
+[seVolume ad875 0 0.5]
+[charaEffect T bit_talk_blow02]
+[cameraMove 0.2 0,0 1.05]
+[wt 0.2]
+[cameraMove 0.3 0,0 1.01]
+[shake 0.05 2 2 1.0]
+[flashin once 0.1 0.2 FFFFFFFA FFFFFF50]
+[charaFace F 6]
+[charaFace A 6]
+[charaEffectStop R bit_talk_lightning_01r_fs]
+[charaEffectStop S bit_talk_lightning_01r_fs]
+[charaEffectStop T bit_talk_lightning_01r_fs]
+[subRenderMove #A 750,-300 0.3]
+[subRenderMove #B -750,-300 0.3]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[wt 0.3]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+[wt 0.2]
+[seStop ad875 1.0]
+[charaScale F 1.0]
+[charaScale A 1.0]
+[charaLayer O normal]
+[charaLayer F normal]
+[charaLayer R normal]
+[charaLayer P normal]
+[charaLayer A normal]
+[charaLayer S normal]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+[wt 1.0]
+[subCameraOff]
+
+[charaFadeout N 0.5]
+[charaFadeout E 0.5]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk H]
+
+＠オシリスの塵
+不可解。不合理。[r]私の計算の正しさがなぜわからない？
+[k]
+
+？1：たとえ戦力的な計算としては正しくても
+？2：アルターエゴの量産なんて、[#歪:ゆが]んでいる
+？！
+
+[charaFace H 9]
+
+＠オシリスの塵
+重ねて不可解。重ねて不合理。
+[k]
+
+[charaFace H 0]
+
+＠オシリスの塵
+[#歪:ゆが]みというなら、[r][#それはおまえたちの中に既にある]。
+[k]
+
+＠オシリスの塵
+おまえたちは既に無数のアルターエゴを使役している。[r]戦力として扱うことを良しとしている。
+[k]
+
+＠オシリスの塵
+一を[#良:りょう]とし、百を認めない理由は何か。[r]十を許容し、千を糾弾する理由は何か。
+[k]
+
+＠オシリスの塵
+答えがないのであれば、それこそが[#歪:ゆが]み。[r]ただ一騎のアルターエゴであっても同じだ。
+[k]
+
+＠オシリスの塵
+アルターエゴという存在自体に対する[#歪:ゆが]みを、
+[k]
+
+＠オシリスの塵
+おまえたちは理由なく[r]受け入れているということになる。
+[k]
+
+＠オシリスの塵
+それは無計算を感情にて補填し合理を騙す、[r]人という種族の悪癖である。
+[k]
+
+？1：（っ…………！）
+？2：（それは、確かに……）
+？！
+
+[messageOff]
+[wt 1.5]
+
+？1：（……でも……）
+？！
+
+？1：（カルデアのアルターエゴは、みんな……！）
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 25]
+[charaFadein D 0.1 1]
+＠ドゥルガー
+マスターよ。提案します。[r]我が使命のために、全ての資源を注ぐべし。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠オシリスの塵
+同解が導出されている。[r]もはや出し惜しみする道理はない。
+[k]
+
+＠オシリスの塵
+敗北の回避。[r]それが現状の最優先タスクである。
+[k]
+
+＠オシリスの塵
+我らは失われる弱きものではなく、[r]生き残る優れたものにならねばならない。
+[k]
+
+[charaFace H 1]
+
+＠オシリスの塵
+仮想検証、再実行。[line 3]結論到達。[r]消費であり[#殺戮:さつりく]が発生する。
+[k]
+
+[charaFaceFade H 10 0.2]
+
+＠オシリスの塵
+……許容。なぜならここにいるのは[#殺戮:さつりく]の女神。[r]戦いという過程ではなく、殲滅という結果を祝う者。
+[k]
+
+＠オシリスの塵
+ならばこそ。
+[k]
+
+＠オシリスの塵
+昇華の雲は[#螺旋:らせん]を描き、[r]黄金の[#尾長鶏:おながどり]が暁を告げる[line 3]
+[k]
+
+[messageOff]
+[se ad146]
+[charaPut R 1]
+[charaEffect R bit_talk_36_sl01]
+[wt 3.5]
+
+[seStop ad146 1.0]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut R 2000,2000]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+
+＠カーマ
+っ……まずそうです。何か奥の手でも[r]使ってくるつもりですよ、アレ……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[subCameraOn 1]
+[charaLayer O sub #A]
+[charaLayer H sub #A]
+[charaLayer R sub #A]
+
+[charaTalk depthOff]
+[charaDepth O 1]
+[charaDepth H 2]
+[charaDepth R 3]
+
+[charaScale O 1.2]
+[charaFace H 10]
+[charaFadein O 0.1 130,0]
+[charaFadeinFSL H 0.1 -310,180]
+[charaPutFSL R -310,180]
+
+[charaTalk I]
+[charaFace I 8]
+[charaFadein I 0.1 1]
+
+＠アーユス
+まだそんなものを残してたの！？[r]いったい、どんな……？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠セレシェイラ
+何でもいいよ。[r]ランサー！　その前にぶっ飛ばして……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠ビーマ
+そのつもりだッ！
+[k]
+
+[messageOff]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut S 1]
+[charaEffect S bit_talk_41_fs]
+[charaMoveScale F 1.2 0.3]
+[charaMove F 0,20 0.3]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaFadeout F 0.3]
+[wt 0.4]
+[charaPut S 2500,2500]
+[charaEffectStop S bit_talk_41_fs]
+[charaScale F 1.0]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[blur lens 0.3 2 20]
+[charaTalk H]
+[subCameraFilter #A maskEdge cut359_mask13 4 187,143,105,255 0]
+[subRenderFadein #A 0.3 -100,-320]
+[subRenderMove #A 0,-320 0.3]
+[wt 0.3]
+
+＠オシリスの塵
+令呪をもって命ずる。
+[k]
+
+＠オシリスの塵
+サーヴァント・ドゥルガーに[r][#警防部:ディフェンド]筆頭ＡＩの権限を再接続。
+[k]
+
+＠オシリスの塵
+並びにアクセス権を認可された総合統括ＡＩとして[r]権限を代理行使する。
+[k]
+
+＠オシリスの塵
+[#管理下にある全警防部ＡＩより]、[r][#ラニメントの強制徴収を行う][line 3]
+[k]
+
+[bgmStop BGM_BATTLE_137 1.0]
+
+[messageOff]
+[blurOff lens 0.1]
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+[charaPut R 2000,2000]
+[charaEffectStop R bit_talk_36_sl01]
+[charaEffectEdgeBlurDestroy H]
+[charaFadeout O 0.1]
+[charaFadeout H 0.1]
+
+[charaDepth D 1]
+[charaDepth T 2]
+
+[charaTalk D]
+[charaFace D 25]
+[charaFadein D 0.1 1]
+[wt 0.2]
+[se ad789]
+[se ade467]
+[seVolume ade467 0 0.7]
+[se ad842]
+[seVolume ad842 0 0.6]
+[charaPut T 1]
+[charaEffect T bit_talk_mgn_light_U]
+[wt 1.2]
+[charaLayer O normal]
+[charaLayer H normal]
+[charaLayer R normal]
+[subCameraOff]
+
+[fadeout white 0.1]
+[seStop ad789 1.5]
+[seStop ade467 1.5]
+[seStop ad842 1.5]
+[wait fade]
+
+[charaEffectDestroy T bit_talk_mgn_light_U]
+[charaFadeout D 0]
+
+[fadein white 0.1]
+
+[fowardEffect bit_talk_14]
+[wt 0.2]
+[effect bit_talk_lightning_01g_fs]
+[cueSe Battle bac10]
+[wt 0.1]
+[charaScale F 1.3]
+[charaTalk F]
+[charaFace F 6]
+[charaShake F 0.03 2 2 0.5]
+[charaFadein F 0.4 0,30]
+[charaShake F 0.05 2 2 0.4]
+[se ad543]
+[seVolume ad543 0 0.5]
+[se ad671]
+[seStop ad671 0.7]
+[seStop ad543 0.7]
+[charaMoveScale F 1.0 0.5]
+[charaMove F 0,0 0.5]
+[wt 0.5]
+[effectStop bit_talk_lightning_01g_fs]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOn]
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+[bgm BGM_EVENT_72 0.1]
+
+＠アーユス
+そんな……ウソでしょ……？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+
+＠カーマ
+今まではラニメントに頼らず、[r]自前と聖杯の魔力をリソースとしていた。
+[k]
+
+＠カーマ
+けれど……あれは元々、[r][#警防部:ディフェンド]筆頭ＡＩのガワをかぶっていたもの。
+[k]
+
+＠カーマ
+もう一度繋がれば、さらにラニメントも燃料として[r]使うことができる、ってわけですか……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠シオン
+しかも、なりふり構わない強制徴収です。
+[k]
+
+[charaFace B 8]
+＠シオン
+おそらくキャスターが[#構築部のＡＩ:タ　　イ　　プ　　Ｂ]に対して[r]やっていたのと同じようなことを、
+[k]
+
+＠シオン
+本当の意味で、根こそぎ行った……！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_72 0.5 0.5]
+[wait wipe]
+
+[charaFace D 25]
+[charaFadein D 0.1 2000,2000]
+[charaEffectEdgeBlur D FFF9A5 FFF9A5 4 1.5]
+
+[charaFadeout B 0.1]
+[cameraHome 0.1]
+[pictureFrame cut063_cinema]
+
+[charaTalk off]
+[charaFace J 6]
+[charaFace K 6]
+[charaFace L 1]
+[charaFace M 1]
+[charaFadeinFSR J 0.1 160,-50]
+[charaFadeinFSR L 0.1 330,-50]
+[charaFadeinFSL K 0.1 -250,-50]
+[charaFadeinFSL M 0.1 -80,-50]
+[wt 0.5]
+
+[se ad95]
+[seStop ad95 0.5]
+[charaShake J 0.03 2 2 0.5]
+[charaShake L 0.03 2 2 0.5]
+[charaMoveFSR J 180,-50 0.5]
+[charaMoveFSR L 350,-50 0.5]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_72 0.5 1.0]
+[wait wipe]
+
+[wt 0.3]
+[se ad95]
+[seStop ad95 0.5]
+[charaShake K 0.05 2 2 0.5]
+[charaShake M 0.05 2 2 0.5]
+[charaMoveFSL K -230,-50 0.5]
+[charaMoveFSL M -60,-50 0.5]
+[wt 1.0]
+[charaFadeout J 0.4]
+[charaFadeout L 0.4]
+[charaMoveFSR J 180,-90 0.4]
+[charaMoveFSR L 350,-90 0.4]
+[wt 0.5]
+[se ad144]
+[charaFadeout K 0.4]
+[charaFadeout M 0.4]
+[charaMoveFSL K -230,-90 0.4]
+[charaMoveFSL M -60,-90 0.4]
+[wt 0.5]
+[se ad144]
+[wt 0.5]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_72 0.5 0.5]
+[wait wipe]
+
+[scene 189500]
+
+[charaFace J 6]
+[charaFace K 6]
+[charaFace L 1]
+[charaFace M 1]
+[charaFadeinFSR J 0.1 250,-50]
+[charaFadeinFSR L 0.1 420,-50]
+[charaFadeinFSL K 0.1 -180,-50]
+[charaFadeinFSL M 0.1 -10,-50]
+[wt 0.5]
+
+[se ad95]
+[seStop ad95 0.5]
+[charaShake K 0.05 2 2 0.5]
+[charaShake M 0.05 2 2 0.5]
+[charaMoveFSL K -200,-50 0.5]
+[charaMoveFSL M -30,-50 0.5]
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_72 0.5 1.0]
+[wait wipe]
+
+[wt 0.2]
+[se ad95]
+[seStop ad95 0.5]
+[charaShake J 0.03 2 2 0.5]
+[charaShake L 0.03 2 2 0.5]
+[charaMoveFSR J 220,-50 0.5]
+[charaMoveFSR L 390,-50 0.5]
+[wt 0.7]
+[charaFadeout J 0.4]
+[charaFadeout L 0.4]
+[charaMoveFSR J 220,-90 0.4]
+[charaMoveFSR L 390,-90 0.4]
+[wt 0.5]
+[se ad144]
+[charaFadeout K 0.4]
+[charaFadeout M 0.4]
+[charaMoveFSL K -200,-90 0.4]
+[charaMoveFSL M -30,-90 0.4]
+[wt 0.5]
+[se ad144]
+[wt 0.5]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_72 0.5 0.5]
+[wait wipe]
+
+[pictureFrame]
+[scene 189601]
+[charaPut R 1]
+[charaEffect R bit_talk_lightning_02r]
+[charaPut D 1]
+[cameraMove 0.1 0,-10 1.05]
+[wt 0.5]
+
+[se ad626]
+[seVolume ad626 0 0]
+[seVolume ad626 0.5 0.4]
+[cameraHome 2.5]
+[cueSe SE_21 21_ad1110 0.5 0.5]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_72 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[seVolume ad626 0.5 0.2]
+[charaEffectStop R bit_talk_lightning_02r]
+[wt 1.0]
+[seVolume ad626 0.5 0.5]
+[charaEffect R bit_talk_lightning_02r]
+[wt 0.8]
+[cueSeStop 21_ad1110 2.0]
+[seStop ad626 1.0]
+[charaEffectStop R bit_talk_lightning_02r]
+[wt 1.5]
+
+[charaPut D 2000,2000]
+[charaPut R 2000,2000]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠アーユス
+待って……ダメよ、それは。[r]駄目……。
+[k]
+
+＠アーユス
+結局、あなたも同じなの？　総合統括なのに。[r]みんなを家族として見るような、立場なのに。
+[k]
+
+＠アーユス
+[#ＡＩ:みんな]を、資源としてしか見てない……！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠オシリスの塵
+そう[#思わない]という[#設定:プロパティ]の根幹は、おまえが[r]アルターエゴ人格という皮を被っているからに過ぎない。
+[k]
+
+＠オシリスの塵
+そもそもＡＩとは[line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+
+＠アーユス
+黙って！　あなたは……本当に……！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 23]
+[charaPut R 1]
+[charaPut D 1]
+＠ドゥルガー
+マスター。さらに力を求めます。当女神は[r]あと７％で目的の達成に必要な資源を確保するでしょう。
+[k]
+
+[charaPut D 2000,2000]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠オシリスの塵
+認める。最終予備令呪も追加起動。[r]私を通して補給経路を作成。
+[k]
+
+＠オシリスの塵
+私の直轄管理するラニメントの大半も、[r]ドゥルガーへ[line 3]
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaPut R 1]
+[charaPut S 0,-150]
+[charaPut D 1]
+[wt 0.2]
+[se ad626]
+[seVolume ad626 0 0]
+[seVolume ad626 0.6 0.6]
+[cueSe SE_22 22_ad1180 1.0 0.7]
+[cueSe SE_22 22_ad1181 1.0 0.5]
+[charaEffect R bit_talk_lightning_02r]
+[charaEffect S bit_talk_light_range]
+[wt 0.7]
+[seVolume ad626 0.5 0.2]
+[charaEffectStop R bit_talk_lightning_02r]
+[wt 0.8]
+[seVolume ad626 0.5 0.6]
+[charaEffect R bit_talk_lightning_02r]
+[wt 1.5]
+[seStop ad626 1.8]
+[cueSeStop 22_ad1180 1.8]
+[cueSeStop 22_ad1181 1.8]
+[charaEffectStop R bit_talk_lightning_02r]
+[wt 2.0]
+
+[charaPut D 2000,2000]
+[charaPut S 2000,2000]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠ビーマ
+チッ。コイツは……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaPut D 1]
+[charaPut S 0,-150]
+＠ドゥルガー
+目標値に到達。[r]使命を完遂可能。
+[k]
+
+[charaPut D 2000,2000]
+[charaPut S 2000,2000]
+[wt 0.1]
+
+[subCameraOn 1]
+[charaLayer O sub #A]
+[charaLayer E sub #A]
+[charaLayer R sub #A]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth N 2]
+[charaDepth H 3]
+[charaDepth O 4]
+[charaDepth E 5]
+[charaDepth R 6]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+
+＠オシリスの塵
+善き星が示されている。[r]後はその方向へ進むのみ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaFace E 23]
+[charaPut R 120,195]
+[charaFadein O 0.1 -310,60]
+[charaFadein E 0.1 120,345]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠ドゥリーヨダナ
+ああ。無理だ。さすがにわかるぞ。
+[k]
+
+[charaScale N 1.2]
+[charaScale H 1.2]
+[charaScale O 1.2]
+[charaScale E 1.2]
+[charaEffectEdgeBlur E FFF9A5 FFF9A5 4 1.5]
+[charaEffect R bit_talk_light_range]
+
+[charaFace A 4]
+
+＠ドゥリーヨダナ
+……勝てん。あれだけの力を持つ神に、[r]我らが勝てるはずがない……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaPut D 1]
+[charaPut S 0,-150]
+
+＠ドゥルガー
+……。[r]……。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaPut D 2000,2000]
+[charaPut S 2000,2000]
+[subCameraFilter #A maskEdge cut359_mask16 4 0,0,0,255 0]
+[subRenderFadein #A 1.0 190,-300]
+[charaFace H 10]
+[charaFadein N 1.0 100,-300]
+[charaFadein H 1.0 -286,-45]
+[charaMove N 100,-270 6.0]
+[charaMove H -286,0 6.0]
+[charaMove O -310,30 6.0]
+[charaMove E 120,300 6.0]
+[charaMove R 120,150 6.0]
+[wt 3.5]
+[cueSe SE_22 22_ad1178]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_72 0.1]
+
+[messageOff]
+[fadeout black 0]
+[wait fade]
+
+[charaFadeout N 0.1]
+[charaFadeout H 0.1]
+[charaFadeout O 0.1]
+[charaLayer O normal]
+[subRenderFadeout #A 0.1]
+[subCameraFilter #A through]
+[scene 10000]
+[wt 2.0]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ade280]
+[seVolume ade280 0 0]
+[seVolume ade280 0.8 0.3]
+
+＠
+[bb8f69]さあ[line 3][r][bb8f69]終わり、そして始まるときだ。
+[k]
+
+＠
+[bb8f69]全てはアルターエゴの無限生産。[r][bb8f69]世界の滅亡の回避のために。
+[k]
+
+[messageOff]
+[charaTalk on]
+
+[charaScale H 1.1]
+[charaScale E 1.1]
+[charaFace E 25]
+[charaPut E 1]
+[charaPut R 0,-150]
+
+[seVolume ade280 0.8 0.5]
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 1.5 1]
+[cameraMove 10.0 0,-20 1.1]
+[wt 3.5]
+
+[seStop ade280 0.1]
+[se ad438]
+[fowardEffect bit_talk_noise_gr 0,8]
+[wt 0.2]
+[charaFadeout H 0]
+[wt 0.6]
+[fowardEffectStop bit_talk_noise_gr]
+[wt 1.0]
+[cameraHome 0.1]
+
+
+[cueSe SE_22 22_ad1169 0.5 0.3]
+
+[bgm BGM_EVENT_129 0.1]
+＠
+[image npc_language_37][wt 0.03][image npc_language_38][wt 0.03][image npc_language_39][wt 0.03][r][image npc_language_40][wt 0.03][image npc_language_41][wt 0.03][image npc_language_42][wt 0.03][image npc_language_43][wt 0.03][image npc_language_44][wt 0.03][image npc_language_45][wt 0.03][image npc_language_46][wt 0.03][image npc_language_47][wt 0.03][image npc_language_48][wt 0.03][image npc_language_49][wt 0.03][image npc_language_50][wt 0.03][image npc_language_51][wt 0.03][image npc_language_52][wt 0.03][image npc_language_53]
+[k]
+
+＠
+[image npc_language_54][wt 0.03][image npc_language_46][wt 0.03][image npc_language_55][wt 0.03][image npc_language_53]
+[k]
+
+[cueSeVolume 22_ad1169 1.0 0.5]
+[subRenderFadein #A 1.0 0,0]
+[subCameraMove #A 10.0 0,-20 1.1]
+
+＠
+[image npc_language_56][wt 0.03][image npc_language_57][wt 0.03][image npc_language_43][wt 0.03][image npc_language_58][wt 0.03][image npc_language_59][wt 0.03][image npc_language_60][wt 0.03][image npc_language_61][wt 0.03][image npc_language_62][wt 0.03][image npc_language_53]
+[k]
+
+
+
+[messageOff]
+[wt 1.5]
+
+[fadeout black 0.7]
+[cueSeStop 22_ad1169 0.7]
+[wait fade]
+
+[subCameraHome #A 0.1]
+[charaScale H 1.0]
+[charaScale E 1.0]
+[charaFadeout E 0.1]
+[subRenderFadeout #A 0.1]
+[charaLayer E normal]
+[charaLayer R normal]
+[charaEffectEdgeBlurDestroy E]
+[charaEffectDestroy R bit_talk_light_range]
+[subCameraOff]
+
+[effect bit_talk_marblebg_fs]
+[wt 1.0]
+
+[fadein black 0.7]
+[wait fade]
+
+＠
+[#自分は]、[#何者か]。
+[k]
+
+＠
+自分は、怒りである。[r]怒りより生まれ、今もなお、怒りの中にある。
+[k]
+
+＠
+愛する者に会えないという怒り。
+[k]
+
+＠
+それを自覚している[line 3][r]ただその解消だけに執着している[line 3]
+[k]
+
+＠
+[#愛執のアルターエゴ]。[r]それが、自分だ。
+[k]
+
+[messageOff]
+[fadeout black 0.7]
+[bgm BGM_EVENT_129 0.7 0.5]
+[wait fade]
+
+[effectDestroy bit_talk_marblebg_fs]
+[scene 189601]
+
+[charaTalk D]
+[charaFace D 25]
+[charaPut D 1]
+[charaPut S 0,-150]
+[wt 1.0]
+
+[fadein black 0.7]
+[bgm BGM_EVENT_129 0.7 1.0]
+[wait fade]
+
+＠ドゥルガー
+……過ちがあったとすれば、それは。[r]この[#歪:いびつ]な世界において、
+[k]
+
+＠ドゥルガー
+[#最初に喚ばれた私がアルターエゴである可能性]を[r]考えなかったということです。マスター。
+[k]
+
+[charaPut D 2000,2000]
+[charaPut S 2000,2000]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+
+＠オシリスの塵
+……？　ドゥルガー。過ちとは？[r]その発言の意図が、不明だ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 26]
+[charaPut D 1]
+[charaPut S 0,-150]
+＠ドゥルガー
+目的の達成に必要な力は揃った。[r]私は請願する。[bgmStop BGM_EVENT_129 2.0]
+[k]
+
+[charaFaceFade D 23 0.2]
+
+＠ドゥルガー
+愛すべき者[line 3]我が夫。[r][#シヴァとの再会を]、[#請願する]。
+[k]
+
+＠ドゥルガー
+この力をもって。
+[k]
+
+
+
+[messageOff]
+[wt 0.2]
+[se ad285]
+[seVolume ad285 0 0.6]
+[se ad791]
+[seVolume ad791 0 0.6]
+[fowardEffect bit_talk_mgn_light02_U]
+[wt 0.3]
+
+[fadeout white 0.2]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaEffectDestroy S bit_talk_light_range]
+[fowardEffectDestroy bit_talk_mgn_light02_U]
+[charaEffectEdgeBlurDestroy D]
+
+[wt 0.1]
+[charaSet D 1098267020 1 カーリー]
+[charaSet E 1098267020 1 カーリー2]
+[charaSet J 1098267020 1 カーリー3]
+[charaSet K 1098267020 1 カーリー4]
+[charaSet L 5009000 1 エフェクト用4]
+[scene 10001]
+
+[subCameraOn 3]
+[charaLayer O sub #A]
+[charaLayer E sub #A]
+[charaLayer P sub #B]
+[charaLayer J sub #B]
+[charaLayer Q sub #C]
+[charaLayer K sub #C]
+
+[subCameraFilter #A mask cut359_mask05]
+[subCameraFilter #B mask cut359_mask05]
+[subCameraFilter #C mask cut359_mask05]
+
+[charaTalk off]
+[charaDepth O 1]
+[charaDepth E 2]
+[charaDepth P 1]
+[charaDepth J 2]
+[charaDepth Q 1]
+[charaDepth K 2]
+
+[charaScale O 1.3]
+[charaScale P 1.3]
+[charaScale Q 1.3]
+[charaScale E 1.2]
+[charaScale J 1.2]
+[charaScale K 1.2]
+[charaFace E 0]
+[charaFace J 0]
+[charaFace K 0]
+[charaFadein O 0.1 500,180]
+[charaFadein P 0.1 -450,180]
+[charaFadein Q 0.1 0,180]
+[charaFadein E 0.1 470,500]
+[charaFadein J 0.1 -400,500]
+[charaFadein K 0.1 20,500]
+[wt 2.0]
+
+[fadein white 1.5]
+[seStop ad285 2.5]
+[seStop ad791 2.5]
+[wait fade]
+
+[wt 0.5]
+[bgm BGM_BATTLE_169 0.1]
+
+[charaMove O 400,-20 8.0]
+[charaMove E 320,200 8.0]
+[subRenderFadeinFSL #A 1.0 -300,-330]
+[wt 3.0]
+
+[subRenderFadeout #A 1.0]
+[charaMove P -350,-20 8.0]
+[charaMove J -250,200 8.0]
+[subRenderFadeinFSR #B 0.3 300,-330]
+[wt 3.0]
+
+[subRenderFadeout #B 1.0]
+[charaMove Q 0,-20 8.0]
+[charaMove K 20,200 8.0]
+[subRenderFadein #C 0.3 0,-330]
+[wt 3.0]
+
+[fadeout white 1.0]
+[wait fade]
+
+[charaScale O 1.0]
+[charaScale P 1.0]
+[charaScale Q 1.0]
+[charaScale E 1.0]
+[charaScale J 1.0]
+[charaScale K 1.0]
+
+[subRenderFadeout #C 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout E 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaLayer O normal]
+[charaLayer E normal]
+[charaLayer P normal]
+[charaLayer J normal]
+[charaLayer Q normal]
+[charaLayer K normal]
+[cameraMove 0.1 0,-40 1.2]
+[scene 189601]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[cameraHome 2.5]
+[fadein white 2.0]
+[wait fade]
+[wt 1.5]
+
+
+？1：な…………！？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth H 1]
+[charaDepth D 1]
+[charaDepth R 2]
+[charaDepth S 3]
+[charaDepth T 4]
+[charaDepth L 5]
+
+[charaPut R 1]
+[charaPut S 1]
+[charaTalk H]
+[charaFace H 11]
+[charaFadein H 0.1 1]
+[se ade280]
+[seVolume ade280 0 0]
+[seVolume ade280 0.2 0.5]
+[cueSe SE_23 23_ad1282 0.2 0.7]
+[charaEffect R bit_talk_debuff_loop]
+[wt 0.2]
+[charaShake H 0.03 2 2 0.5]
+[wt 1.0]
+
+＠オシリスの塵
+ぐっ……か、はっ……ドゥルガー。[r]おまえは、もしや、最初から……それが、狙いで……！
+[k]
+
+[messageOff]
+[cueSeVolume 23_ad1282 0.5 1.0]
+[se ad193]
+[se ad900]
+[seVolume ad900 0 0.6]
+[fowardEffect bit_talk_debuff]
+[charaEffect S bit_talk_36_sl02]
+[wt 0.5]
+[charaFace H 12]
+[charaShake H 0.03 3 3 1.0]
+[wt 0.5]
+
+＠オシリスの塵
+っ、ああぁぁぁ！
+[k]
+
+[messageOff]
+[seStop ade280 1.0]
+[cueSeStop 23_ad1282 1.0]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut R 2000,2000]
+[charaPut S 2000,2000]
+[charaEffectDestroy R bit_talk_debuff_loop]
+[charaEffectDestroy S bit_talk_36_sl02]
+
+[charaPut T 1]
+[charaPut L 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.2]
+[se ad146]
+[charaPut T 1]
+[charaPut L 1]
+[charaEffect T bit_talk_36_sl01]
+[wt 2.0]
+[se ad556]
+[seVolume ad556 0 0]
+[se ad626]
+[seVolume ad626 0 0]
+[seVolume ad556 0.3 0.5]
+[seVolume ad626 0.3 0.5]
+[charaEffect L bit_talk_charge_blu]
+[wt 2.0]
+[seStop ad900 2.0]
+[seStop ad146 2.0]
+[charaEffectStop T bit_talk_36_sl01]
+[wt 2.0]
+
+[seVolume ad556 0.3 0.2]
+[seVolume ad626 0.3 0.2]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut L 2000,2000]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カーマ
+どうやら……あっちはあっちで、[r]仲良しこよしの一枚岩ではなかったみたいですね。
+[k]
+
+[charaFace C 19]
+
+＠カーマ
+状況が良くなっている気が[r]全然しないのが困りものですけど。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠シオン
+ドゥルガーがあの凄まじい力で、[r]さらに自らの霊基を組み替えたのです。
+[k]
+
+＠シオン
+となると、あれは[line 3]！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout B 0.1]
+
+[subCameraOn 1]
+[charaLayer N sub #A]
+[charaLayer D sub #A]
+[charaLayer L sub #A]
+[subCameraFilter #A through]
+
+[charaDepth N 1]
+[charaDepth D 2]
+[charaDepth L 4]
+
+[charaScale N 1.2]
+[charaScale D 1.2]
+[charaScale L 1.2]
+[charaFace D 0]
+[charaFadein N 0.1 0,-270]
+[charaFadein D 0.1 0,45]
+[charaPut L 0,45]
+[wt 0.1]
+
+[seVolume ad556 1.0 0.5]
+[seVolume ad626 1.0 0.5]
+[charaMove N 0,-300 3.0]
+[charaMove D 1 3.0]
+[charaMove L 1 3.0]
+[subRenderFadein #A 1.0 0,0]
+[wt 2.5]
+
+[se ad960]
+[fadeout white 0.5]
+[wait fade]
+
+[cueSeStop ad556 2.5]
+[cueSeStop ad626 2.0]
+[cueSeStop ad960 3.0]
+[charaEffectStop L bit_talk_charge_blu]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+[cueSe Battle bac375]
+[charaCrossFade D 1098267010 7 1.0]
+[wait charaCrossFade D]
+[wt 0.5]
+[charaTalk on]
+[charaTalk D]
+
+＠D：？？？
+[#女神:わ　れ]は、カーリー。[r]怒りの女神の、怒りより生まれし者。
+[k]
+
+＠カーリー
+[#女神:わ　れ]は、ただシヴァとの再会のため、[r]ここに在る。
+[k]
+
+[charaFace D 17]
+＠カーリー
+邪魔する者はこの刃にて首を[#刎:は]ね、[r]その血を[#啜:すす]るのみ！
+[k]
+
+[charaCrossFade D 1098267010 26 0.2]
+[wait charaCrossFade D]
+＠カーリー
+下がれ、下がれ、シヴァならぬ者たちよ！[r]はは、くははははははは！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStopEnd BGM_BATTLE_169 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

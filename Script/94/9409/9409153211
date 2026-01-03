@@ -1,0 +1,599 @@
+
+＄94-09-15-32-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1057000 1 セタンタ]
+[charaSet B 1060000 1 宮本伊織]
+[charaSet C 1059000 1 ヤマトタケル]
+[charaSet D 1098284200 1 紅玉の書]
+
+[charaSet E 1057000 1 セタンタ_演出用]
+[charaSet F 1060000 1 宮本伊織_演出用１]
+[charaSet G 1060000 1 宮本伊織_演出用２]
+
+[sceneSet O 205701 1]
+[charaScale O 1.4]
+[sceneSet P 205701 1]
+[charaScale P 1.4]
+[sceneSet Q 205701 1]
+[charaScale Q 1.4]
+
+[sceneSet R 10000 1]
+[charaScale R 1.01]
+[sceneSet S 10000 1]
+[charaScale S 1.01]
+
+[subCameraOn 3]
+[subCameraFilter #A maskEdge cut359_mask02 3 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask13 3 255,255,255,255]
+[subCameraFilter #C maskEdge cut359_mask06 3 255,255,255,255]
+[subRenderScale #C 1.05]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+[charaLayer E sub #A]
+[charaLayer O sub #A]
+[charaLayer F sub #B]
+[charaLayer P sub #B]
+[charaLayer Q sub #C]
+[charaLayer R sub #C]
+[charaLayer G sub #C]
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth O 1]
+[charaDepth E 2]
+[charaScale E 1.3]
+[charaScale O 1.4]
+[charaFace E 3]
+[charaFadein E 0.1 200,260]
+[charaFadein O 0.1 -200,20]
+[charaDepth P 1]
+[charaDepth F 2]
+[charaScale F 1.3]
+[charaScale P 1.4]
+[charaFace F 0]
+[charaFadein F 0.1 -200,260]
+[charaFadein P 0.1 250,-20]
+[charaDepth Q 1]
+[charaDepth R 2]
+[charaDepth G 3]
+[charaScale G 1.5]
+[charaScale Q 1.4]
+[charaFace G 0]
+[charaFadein G 0.1 0,390]
+[charaFadein Q 0.1 0,-60]
+[charaPut R 0,190]
+[charaFadeTime R 0.1 0.5]
+
+[scene 205701]
+
+[bgm BGM_BATTLE_246 0.1]
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_kengekiall02_fs]
+[se ad1032]
+[wt 0.3]
+[se ad687]
+[wt 0.1]
+[se ad1031]
+[wt 0.7]
+
+[effect bit_talk_gold_slash_01]
+[wt 0.2]
+
+[se ad1032]
+[flashin once 0.3 0.3 FFFFFFFF FFFFFF00]
+[wt 0.2]
+
+[blur lens 0.5 2 20]
+[se ad468]
+[seVolume ad468 0 0.4]
+[se ad632]
+[seVolume ad632 0 0.2]
+[subRenderFadein #A 0.1 0,-220]
+[subRenderFadein #B 0.1 0,-460]
+[charaShake F 0.02 3 3 1.0]
+[charaShake E 0.02 3 3 1.0]
+[wt 0.4]
+
+[seStop ad468 1.0]
+[seStop ad632 1.0]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 1]
+
+＠E：セタンタ
+……やるな、兄ちゃん。[r]あんた、並の剣士じゃねえな。
+[k]
+
+[charaFace E 0]
+
+＠E：セタンタ
+さすがに多勢に無勢は無謀だったかな、っと！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace F 6]
+[se ad467]
+[fowardEffect bit_talk_blow]
+[fowardEffect bit_talk_14]
+[wt 0.3]
+[blurOff lens 0.5]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[subRenderMove #A 1500,-220 0.2]
+[subRenderMove #B -1500,-460 0.2]
+[wt 0.6]
+
+[se ad1053]
+[fowardEffect bit_talk_quick_slash 0,0 H]
+[wt 1.0]
+
+[charaScale B 1.4]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.3 0,40]
+[charaMoveEase B 0,0 0.4 easeOutQuart]
+[charaMoveScaleEase B 1.0 0.4 easeOutQuart]
+[se ad671]
+[seStop ad671 1.0]
+[wt 0.6]
+
+[charaFace B 0]
+
+＠宮本伊織
+それはこちらの言の葉だ。[r]サーヴァント数騎を相手しての、その大立ち回り。
+[k]
+
+＠宮本伊織
+どれほどの[#戦場:いくさば]を駆け抜け、[r]どれほどの死地をくぐり抜けてきたのか。
+[k]
+
+＠宮本伊織
+つくづく英霊とは凄まじきものだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠セタンタ
+[#戦:いくさ]ってのはそう云うもんだろ？
+[k]
+
+＠セタンタ
+だいたいあんた、[#解ってる側]じゃねえか。[r]なに猫かぶってやがる。
+[k]
+
+[charaFace A 3]
+
+＠セタンタ
+ま、何にせよだ……[r]こりゃ思った以上に楽しめそうだ！
+[k]
+
+[messageOff]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[fowardEffect bit_talk_41_fs]
+[charaMoveScale A 1.4 0.3]
+[charaMove A 0,40 0.3]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaFadeout A 0.3]
+[wt 0.4]
+[fowardEffectDestroy bit_talk_41_fs]
+[charaScale A 1.0]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[charaMove B 0,-5 0.2]
+[se ade321]
+[wt 0.2]
+[charaFace B 7]
+
+＠宮本伊織
+ああ[line 3]同感だ！
+[k]
+
+[messageOff]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[fowardEffect bit_talk_41_fs]
+[charaMoveScale B 1.4 0.3]
+[charaMove B 0,35 0.3]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaFadeout B 0.3]
+[wt 0.4]
+
+[fowardEffectDestroy bit_talk_41_fs]
+[charaScale B 1.0]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[effect bit_talk_guard_eighthit02]
+[cueSe Servants_104100 bac1387 0 0.7]
+[wt 0.1]
+[cueSe Servants_104200 bac1651 0 0.7]
+[wt 0.12]
+[cueSe Servants_104100 bac1388 0 0.7]
+[wt 0.1]
+[cueSe Servants_104200 bac1653 0 0.7]
+[wt 0.13]
+[cueSe Servants_104100 bac1389 0 0.7]
+[wt 0.1]
+[cueSe Servants_104200 bac1655 0 0.7]
+[wt 0.11]
+[cueSe Servants_404900 m51940 0 0.7]
+[wt 0.7]
+
+[cueSe SE_24 24_ade970]
+[effect bit_talk_slash_dual]
+[effect bit_talk_14 -100,100]
+[wt 0.2]
+[se ad1013]
+[wt 0.7]
+[se ad32]
+[effect bit_talk_14 100,-200]
+[wt 0.5]
+[se ad1032]
+[effect bit_talk_14 -100,-200]
+[wt 0.6]
+[effect bit_talk_14 -50,100]
+[wt 0.6]
+[effect bit_talk_14]
+[wt 0.5]
+
+[charaTalk off]
+[blur lens 0.5 2 20]
+[subRenderFadein #C 0.4 -5,-300]
+[subRenderMove #C 5,-300 2.0]
+[wt 1.0]
+
+＠宮本伊織
+（……あの剣に至ったからか）
+[k]
+
+＠宮本伊織
+（渡り合えている。[r]　英霊相手に、退くことなく）
+[k]
+
+[messageOff]
+[charaFace G 7]
+[charaFadeout R 0.2]
+[charaMove G 0,270 0.2]
+[charaMove Q 0,-180 0.2]
+[wt 0.3]
+
+＠宮本伊織
+これならば……！
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_41_fs]
+[se ad1006]
+[wt 0.1]
+[blurOff lens 0.3]
+[subRenderMoveScale #C 1.4 0.3]
+[subRenderMove #C 5,-450 0.3]
+[subRenderFadeout #C 0.3]
+[flashin once 0.4 0.3 FFFFFFFF FFFFFF00]
+[wt 0.5]
+[fowardEffectDestroy bit_talk_41_fs]
+
+[se ad85]
+[effect bit_talk_v_slash01]
+[wt 0.4]
+
+[fowardEffect bit_talk_blow02]
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.2 0,20]
+[wt 0.2]
+[se ad471]
+[charaMoveScale A 1.0 0.2]
+[charaMove A 0,0 0.2]
+[charaShake A 0.02 2 2 0.4]
+[wt 0.5]
+
+＠セタンタ
+…………ッ！[wt 0.6][charaFace A 6][r]ハハッ、いいねえ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth C 2]
+[charaDepth S 1]
+
+[charaPut S 1]
+[charaFadeTime S 0.2 0.5]
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠ヤマトタケル
+（……イオリめ。[r]　妙に[#昂:たかぶ]っているな）
+[k]
+
+[charaFadeout S 0.2]
+[charaFace C 4]
+
+＠ヤマトタケル
+……こんなところで、[r]かかずらっている[#暇:いとま]はない。
+[k]
+
+[charaFace C 3]
+
+＠ヤマトタケル
+一気にいくぞ、カルデアのマスター！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_BATTLE_246 1.0]
+[wait fade]
+
+[subCameraOff]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[subCameraOff]
+[charaLayer E normal]
+[charaLayer F normal]
+[charaLayer G normal]
+[charaLayer O normal]
+[charaLayer P normal]
+[charaLayer Q normal]
+[charaLayer R normal]
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaScale G 1.0]
+[charaScale O 1.0]
+[charaScale P 1.0]
+[charaScale Q 1.0]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaFadeout C 0.1]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[charaShake A 0.03 1 1 0.4]
+[se ad60]
+[seStop ad60 0.5]
+[charaMove A 0,-8 0.4]
+[wt 0.4]
+
+＠セタンタ
+[line 9]。
+[k]
+
+[bgm BGM_SAMURAICP_1 0.1 1.0]
+
+[charaFace A 5]
+
+＠セタンタ
+は[messageShake 0.05 4 4 0.5]はっ……！[r]あはははははは！
+[k]
+
+＠セタンタ
+いやあー！[r]負けた、負けた！
+[k]
+
+[messageOff]
+[charaMove A 0,-40 0.6]
+[wt 0.2]
+[charaFadeout A 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠紅玉の書
+……ようやく止まりおったか。
+[k]
+
+[charaFace D 6]
+
+＠紅玉の書
+まったく……[r][#狂戦士:バーサーカー]にも劣らぬ、暴れっぷりじゃわい。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad984]
+[seVolume ad984 0 0.6]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.2 0,-20]
+[charaMove A 1 0.3]
+[wt 0.6]
+
+＠セタンタ
+負けた以上はジタバタしねえよ。[r]さあ、煮るなり焼くなり好きにしな！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 2]
+[charaDepth R 1]
+
+[charaPut R 1]
+[charaFadeTime R 0.2 0.5]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠宮本伊織
+（あれだけ戦いながら、[r]　まだ余裕がありそうだな……）
+[k]
+
+[charaFadeout R 0.1]
+[charaFace B 0]
+
+＠宮本伊織
+いや……先にも云いかけたが、[r]我らに貴殿を討つ意志は無い。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ヤマトタケル
+とは云え、[#此処:こ　こ]の霊地を確保する必要はあるぞ。[r]……構うまいな？
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠セタンタ
+ああ、勝ったのはあんたらだ。[r]異存はねえよ。
+[k]
+
+＠セタンタ
+この霊地は、あんたらの[#領土:シ　マ]さ。
+[k]
+
+？1：ありがとう、セタンタ
+？2：押しかけたのにごめんね
+
+？！
+
+[charaFace A 8]
+
+＠セタンタ
+ふーん。[r]あんた、ちゃんとマスターなんだな。
+[k]
+
+[charaFace A 4]
+
+＠セタンタ
+てことは、真面目に[r]聖杯戦争する気があるんだ？
+[k]
+
+[charaFace A 1]
+
+＠セタンタ
+こんな出来損ないの儀式で、[r]ま、ご苦労なこった。
+[k]
+
+
+[charaFace A 6]
+
+＠セタンタ
+……いいぜ。[r]敗者は勝者に[#降:くだ]るのが道理。
+[k]
+
+＠セタンタ
+つまり、あんたがオレのオヤカタサマ？[r]……ってなわけだ！
+[k]
+
+[charaFace A 0]
+
+＠セタンタ
+手を借りたかったら、いつでも呼んでくれ。[r]これからもよろしくな！
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[bgmStop BGM_SAMURAICP_1 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 206400]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_SAMURAI_1 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠紅玉の書
+……とまあ、こんな感じじゃな。
+[k]
+
+[charaFace D 7]
+
+＠紅玉の書
+[#逸:はぐ]れの縄張りに近づけば、このように[r]望まぬ戦いに巻き込まれることもある。
+[k]
+
+＠紅玉の書
+じゃが、[#逸:はぐ]れと[#友誼:ゆ う ぎ]を結ぶことができたのなら、[r]心強い味方となってくれるじゃろう。
+[k]
+
+[charaFace D 9]
+
+＠紅玉の書
+盈月の儀は陣取り合戦。[r]同盟相手は多いに越したことはなかろうて。
+[k]
+
+＠紅玉の書
+その辺の[#塩梅:あんばい]は[%1]、[r]おまえ次第じゃ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠ヤマトタケル
+ふう、思わぬ足止めを食らってしまったな。[wt 1.2][charaFace C 0][r]先を急ぐぞ、カルデアのマスター。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_SAMURAI_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

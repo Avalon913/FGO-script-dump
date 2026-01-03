@@ -1,0 +1,783 @@
+
+
+＄04-00-07-54-1-1
+
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[soundStopAll]
+
+[charaSet A 23003001 1 ジナコ]
+[charaSet B 3004001 1 カルナ]
+[charaSet C 7046001 1 ドゥリーヨダナ]
+[charaSet D 1019001 1 ラーマ]
+[charaSet E 3030001 1 パールヴァティー]
+[charaSet F 1039001 1 ラクシュミー]
+[charaSet G 3058000 1 アショカ王]
+[charaSet H 2048001 1 ドゥルガー]
+[charaSet I 3046001 1 ヴリトラ]
+[charaSet J 1098270200 1 カーマ]
+[charaSet K 3054000 1 ビーマ]
+[charaSet L 1098328700 1 インドラ]
+[charaSet M 1098166400 1 哪吒]
+[charaSet N 2034000 1 テル]
+[charaSet O 5043000 1 アスクレピオス]
+[charaSet P 2033000 1 アシュヴァッターマン]
+[charaSet Q 7033002 1 アルジュナ]
+[charaSet R 1098328000 1 ヴァジュラ_女]
+[charaSet S 1098328100 1 ヴァジュラ_男]
+
+[sceneSet T 274003 1]
+[sceneSet U 274003 1]
+[sceneSet V 274003 1]
+[sceneSet W 274003 1]
+[sceneSet X 274003 1]
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaDepth T 1]
+[charaDepth U 2]
+[charaDepth V 3]
+[charaDepth W 4]
+[charaDepth X 5]
+
+[charaDepth A 6]
+[charaDepth B 7]
+[charaDepth D 8]
+[charaDepth C 9]
+[charaDepth E 10]
+[charaDepth G 11]
+[charaDepth F 12]
+[charaDepth I 13]
+[charaDepth J 14]
+[charaDepth H 15]
+[charaDepth L 16]
+[charaDepth R 17]
+[charaDepth S 18]
+[charaDepth N 19]
+[charaDepth M 20]
+[charaDepth Y 21]
+[charaDepth P 22]
+[charaDepth O 23]
+[charaDepth Z 24]
+
+[subCameraOn 4]
+[charaLayer T sub #A]
+[charaLayer D sub #A]
+[charaLayer C sub #A]
+[charaLayer M sub #A]
+[charaLayer N sub #A]
+
+[charaLayer U sub #B]
+[charaLayer E sub #B]
+[charaLayer F sub #B]
+[charaLayer G sub #B]
+[charaLayer P sub #B]
+[charaLayer O sub #B]
+
+[charaLayer V sub #C]
+[charaLayer I sub #C]
+[charaLayer W sub #D]
+[charaLayer J sub #D]
+
+
+[subCameraFilter #A maskEdge cut359_mask02 4 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask02 4 0,0,0,255 0]
+[subCameraFilter #C maskEdge cut359_mask10 4 0,0,0,255 0]
+[subCameraFilter #D maskEdge cut359_mask16 4 0,0,0,255 0]
+
+[charaScale T 1.4]
+
+[charaFace C 5]
+[charaFace D 2]
+[charaFadein D 0.1 -320,170]
+[charaFadein C 0.1 320,160]
+[charaFadein T 0.1 200,-200]
+
+[charaFace E 2]
+[charaFace F 2]
+[charaFadein E 0.1 -320,220]
+[charaFadein F 0.1 320,220]
+[charaFadein U 0.1 -200,-200]
+[charaScale U 1.4]
+
+
+[charaScale V 1.4]
+[charaFace I 9]
+
+[charaScale I 1.1]
+[charaFadein I 0.1 0,280]
+[charaFadein V 0.1 200,0]
+
+[charaScale J 1.1]
+[charaScale W 1.4]
+[charaFace J 12]
+[charaFadein J 0.1 0,280]
+[charaFadein W 0.1 200,0]
+
+[scene 274003]
+
+[bgm BGM_BATTLE_174 0.1]
+[fadein black 1.0]
+[wait fade]
+
+
+
+[cueSe SE_22 22_ad1179]
+
+[charaScale X 1.2]
+[charaFace B 2]
+[charaFace A 5]
+[charaFadein B 0.3 -400,-150]
+[charaFadein A 0.3 200,-120]
+[charaFadein X 0.3 -100,-240]
+[charaMove X 0,-240 0.3]
+[charaMove B -300,-150 0.3]
+[charaMove A 300,-120 0.3]
+[subRenderFadein #A 0.3 100,-140]
+[subRenderMove #A 0,-140 0.3]
+[subRenderFadein #B 0.3 100,-580]
+[subRenderMove #B 0,-580 0.3]
+[wt 1.4]
+[cueSeStop 22_ad1179 0.7]
+[messageOff]
+
+[fowardEffect bit_talk_flame_slash_01]
+[cueSe SE_24 24_ade969]
+[wt 0.2]
+[fowardEffect bit_talk_gram_slash_oko 0,0 H]
+[cueSe SE_21 21_ad1091]
+[wt 0.1]
+[fowardEffect bit_talk_beam_slash_01]
+[se ad961]
+[fadeout white 0.8]
+[wait fade]
+
+[charaFadeout X 0.1]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[seStop ad961 0.5]
+[wt 0.2]
+
+[charaScale X 1.4]
+[charaScale H 1.3]
+[charaFace H 16]
+[charaFadein X 0.6 0,-220]
+[charaFadein H 0.6 0,50]
+[charaMove X 0,-270 3.0]
+[charaMove H 0,0 3.0]
+[charaEffect H bit_talk_charge_red]
+[charaEffect J bit_talk_charge_blu]
+[charaEffect I bit_talk_charge_blu]
+[fadein white 0.8]
+[se adm31]
+[wait fade]
+[wt 1.0]
+[cueSe SE_23 23_ade951]
+[charaEffect H bit_talk_thunderbolt_fs_r 0,50]
+
+
+[wt 2.0]
+[cueSe SE_25 25_ade12831]
+[cueSe SE_23 23_ad1339]
+[fowardEffect bit_talk_shelling_pink02]
+[charaFace H 27]
+[wt 0.6]
+[subRenderFadeinFSL #C 0.3 -550,-330]
+[subRenderMoveFSL #C -400,-330 0.3]
+[subRenderFadeinFSR #D 0.3 550,-330]
+[subRenderMoveFSR #D 400,-330 0.3]
+
+[wt 1.0]
+[se ad1051]
+[cueSe SE_24 24_ad1414]
+[fowardEffect bit_talk_flame_slash_blue]
+[fowardEffect bit_talk_flame_slash_blue 0,0 H]
+[fadeout white 0.5]
+[cueSeStop 23_ade951 0.5]
+[wait fade]
+[charaEffectDestroy H]
+[charaEffectDestroy J]
+[charaEffectDestroy I]
+[fowardEffectDestroy bit_talk_flame_slash_blue]
+[charaFadeout X 0.1]
+[charaFadeout H 0.1]
+[subRenderFadeout #C 0.1]
+[subRenderFadeout #D 0.1]
+
+[charaFace K 6]
+[charaPut K 0,0]
+[charaPut Y 0,0]
+[wt 0.2]
+
+[fadein white 0.5]
+[wait fade]
+
+[cueSe SE_23 23_ade930]
+[fowardEffect bit_talk_guard_eighthit02]
+[se ad1028]
+[se ad102]
+[wt 0.1]
+[se ad1015]
+[wt 0.2]
+[se ad914]
+
+[wt 1.0]
+[charaEffect Y bit_talk_quickmove]
+[charaSpecialEffect K appearanceReverse 1 0.25]
+[charaMoveReturn K 0,-5 0.4]
+[wt 1.0]
+[charaFace K 12]
+[cameraMoveEase 0,-50 1.0 easeOutQuad 1.2]
+[wt 0.4]
+[se ad876]
+[cueSe SE_23 23_ad1341]
+[effect bit_talk_impactlanding]
+[wt 0.2]
+[fadeout white 0.3]
+[wait fade]
+[charaFadeout K 0.1]
+[effectDestroy bit_talk_impactlanding]
+[cameraHome 0.1]
+[wt 0.5]
+
+[charaScale X 1.4]
+[charaScale L 1.5]
+[charaScale R 1.5]
+[charaScale S 1.5]
+[charaFace L 0]
+[charaFadein X 0.6 0,-250]
+[charaFadein L 0.6 0,50]
+[charaMove X 0,-300 1.0]
+[charaMove L 0,0 1.0]
+
+[fowardEffect bit_talk_thunder_03]
+[se ad627]
+[fadein white 0.3]
+[wait fade]
+
+[wt 1.0]
+[fowardEffect bit_talk_thunder_03]
+[se ad627]
+[wt 0.5]
+[charaFace R 9]
+[charaFadein R 0.6 400,-50]
+[wt 0.3]
+[charaFace S 2]
+[charaFadein S 0.6 -400,-50]
+[wt 1.0]
+[charaFace L 3]
+[wt 0.3]
+[messageOff]
+[fowardEffect bit_talk_thunder_03]
+[se ad1062]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout X 0.1]
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+[charaFadeout L 0.1]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[charaFace M 5]
+[charaFace N 5]
+[charaFadein M 0.1 -300,190]
+[charaFadein N 0.1 200,190]
+
+[subCameraFilter #B maskEdge cut359_mask13 4 0,0,0,255 0]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFace O 0]
+[charaFace P 6]
+[charaFadein P 0.1 -250,180]
+[charaFadein O 0.1 300,220]
+
+[charaScale X 1.0]
+[charaFadein X 0.1 0,-200]
+[wt 0.8]
+
+[fadein white 0.5]
+[wait fade]
+[se ad73]
+[subRenderFadein #A 0.3 100,-280]
+[subRenderMoveEase #A 0,-280 0.3 easeOutCubic]
+[wt 0.7]
+[subRenderMoveEase #A -100,-280 0.3 easeOutCubic]
+[subRenderFadeout #A 0.3]
+
+[se ad1053]
+[charaPut Y 0,0]
+[charaEffect Y bit_talk_aerial_wave]
+[wt 0.6]
+[cameraMoveEase 0,10 0.4 easeOutCubic 1.1]
+[wt 0.6]
+
+[se ad1006]
+[subRenderFadein #B 0.3 -100,-450]
+[subRenderMoveEase #B 0,-450 0.3 easeOutCubic]
+[wt 0.7]
+[subRenderMoveEase #B 100,-450 0.3 easeOutCubic]
+[subRenderFadeout #B 0.3]
+
+[charaPut Z 0,0]
+[se ade285]
+[charaEffect Z bit_talk_shelling_blue01]
+[cameraMoveEase 0,20 0.4 easeOutCubic 1.2]
+[wt 0.4]
+[shake 0.05 5 4 0.5]
+[cueSe SE_23 23_ad1338]
+[cueSe SE_25 25_ade1284]
+[charaEffect Z bit_talk_29v]
+
+[wt 1.0]
+
+[fadeout white 0.5]
+[wait fade]
+[cameraHome 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout P 0.1]
+[charaFadeout O 0.1]
+[charaFadeout X 0.1]
+
+[charaFace Q 4]
+[charaFadein Q 0.1 1]
+[charaEffect Q bit_talk_charge_ppl]
+[wt 1.0]
+
+[charaLayer M normal]
+[charaLayer N normal]
+[charaLayer P normal]
+[charaLayer O normal]
+
+[fadein white 0.5]
+[se ad751]
+[se ad1061]
+[wait fade]
+
+[cameraMoveEase 0,-50 1.3 easeInOutSine 1.2]
+
+[wt 2.0]
+[charaFace Q 7]
+[wt 0.2]
+[messageOff]
+[fowardEffect bit_talk_gram_slash_violet_01]
+[se ad734]
+[cueSe SE_21 21_ad1134]
+
+[fadeout white 0.5]
+[wait fade]
+
+[bgmStop BGM_BATTLE_174 3.0]
+[charaEffectDestroy Q]
+[cameraHome 0.1]
+[charaFadeout Q 0.1]
+[wt 1.0]
+[seStop ad751 1.0]
+[seStop ad734 1.0]
+[wt 2.0]
+
+[scene 274007]
+
+[sceneSet A 274007 1]
+[charaSet B 1098330700 1 アルジュナ_演出用]
+[sceneSet X 274007 1]
+[charaDepth X 5]
+[charaDepth A 6]
+
+[cueSe SE_24 24_ade1109]
+[se ad645]
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+[wt 2.0]
+
+[bgm BGM_GOGH_1 0.1]
+？1：勝った、けど……
+？2：気になったんだけど
+？！
+
+？1：アルジュナはいないの？
+？！
+
+
+[charaTalk P]
+[charaFace P 4]
+[charaFadein P 0.1 1]
+
+＠アシュヴァッターマン
+なに言ってやがる。いただろう。[r]ここで誰よりも苛烈に戦っていた。
+[k]
+
+[messageOff]
+[charaTalk off]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_GOGH_1 0.7 0.5]
+[wait wipe]
+
+[charaFadeout P 0.1]
+[charaFace Q 4]
+[charaFadein Q 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_GOGH_1 0.7 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+？1：でも、あれは[line 3]
+？2：そう言えば、姿が違う……
+？！
+
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_GOGH_1 0.7 0.5]
+[wait wipe]
+
+[charaFadeout Q 0.1]
+[charaFadein P 0.1 1]
+[wt 0.5]
+
+[charaFace P 0]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[bgm BGM_GOGH_1 0.7 1.0]
+[wait wipe]
+
+[charaTalk on]
+[charaTalk P]
+
+＠アシュヴァッターマン
+ああ。『神たるアルジュナ』は、[r]ここにはいない。
+[k]
+
+＠アシュヴァッターマン
+ヤツは自分のやるべきことをやるだけだ。[r]それはこの空想樹から現れても変わらない。
+[k]
+
+＠アシュヴァッターマン
+今まで戦っていたあいつは、[#神将:ローカパーラ]だ。[r]テルやアスクレピオスたちと同じに、
+[k]
+
+＠アシュヴァッターマン
+『[#神たるアルジュナ]』[#という神]の一部を[r]この場で一時的に受け取っただけのアルジュナだ[line 3]
+[k]
+
+[messageOff]
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaScale Q 1.0]
+[charaTalk Q]
+[charaFace Q 0]
+[charaFadein Q 0.1 1]
+[wt 0.8]
+
+[messageOff]
+[se ad574]
+[fadeout white 0.5]
+[wait fade]
+
+[charaCrossFade Q 1098330700 0 0.1]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+＠アルジュナ
+空想樹が消えれば異聞も消える、か。[r]すなわち、私のこの力も。
+[k]
+
+[charaFace Q 4]
+
+＠アルジュナ
+あちらの本体には、僅かな猶予が[r]残っているかもしれないが……
+[k]
+
+[charaFace Q 7]
+
+＠アルジュナ
+……。[r]……。
+[k]
+
+[charaFace Q 0]
+
+＠アルジュナ
+アシュヴァッターマン。[#神将:ローカパーラ]。[r]おまえたちは、奴の[line 3]
+[k]
+
+＠アルジュナ
+あの不完全な神の指示でこの場に立ち、戦った。[r]奴の行いに、何か思うところはないのか。
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 1]
+[charaFadein N 0.1 1]
+
+＠テル
+ま、わしらという存在に色々な[#歪:ゆが]みがあるのは[r]理解しちゃあいるがね。
+[k]
+
+＠テル
+このために[#喚:よ]ばれたのであれば[r]わざわざ拒否することもない、というだけさ。
+[k]
+
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠哪吒
+右に／同じ。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 0]
+[charaFadein O 0.1 1]
+
+＠アスクレピオス
+僕は自らのすべき医療行為をしたまでだ。
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 0]
+[charaFadein P 0.1 1]
+
+＠アシュヴァッターマン
+今の俺たちは、[r]別に神たるアルジュナの手下ってワケじゃねえ。
+[k]
+
+＠アシュヴァッターマン
+ヤツの滅茶苦茶な世界運営が成功する可能性が、元々[r]高かったのか低かったのかもわかんねえ。
+[k]
+
+[charaFace P 4]
+
+＠アシュヴァッターマン
+だがよ。その可能性を確定的に０にした『性急さ』の要因が[r]目の前にあったクソ樹だったことは、
+[k]
+
+＠アシュヴァッターマン
+ここに来てわかっちまったし……
+[k]
+
+[charaFace P 1]
+
+＠アシュヴァッターマン
+ま、ヤツの中にも[r]理解できる部分はあったからな。
+[k]
+
+[bgmStop BGM_GOGH_1 1.5]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk Q]
+[charaFace Q 0]
+[charaFadein Q 0.1 1]
+
+＠アルジュナ
+……それは？
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaDepth Q 1]
+[charaDepth X 5]
+[charaDepth P 6]
+[charaDepth A 7]
+[charaDepth B 8]
+
+[charaScale P 1.2]
+[charaScale B 1.2]
+[charaScale X 1.2]
+[charaScale A 1.2]
+
+[charaFace P 0]
+[charaFadein P 0.6 50,10]
+[charaFadein X 0.6 50,-280]
+[charaMove P 0,10 30.0]
+[charaMove X 0,-280 30.0]
+[wt 0.8]
+
+[charaFadeout Q 0.1]
+
+[charaTalk on]
+[charaTalk P]
+
+[bgm BGM_MAP_124 0.1]
+
+＠アシュヴァッターマン
+不出来なものを削除していたってことは、
+[k]
+
+
+＠アシュヴァッターマン
+最後に残るのがそれより『良いもの』なんだと[r]信じていたってことだ。
+[k]
+
+＠アシュヴァッターマン
+[#外側:ガ　ワ]だけを残して中身を捨てる……なんてのが[r]具体的に何を意味するのかはともかく、
+[k]
+
+＠アシュヴァッターマン
+それは確実に『最後に残るはずの良いものを捨てる』[r]という意味を含んでいるだろう。
+[k]
+
+[charaFaceFade P 1 0.2]
+
+＠アシュヴァッターマン
+ヤツはそれを良しとはしない。[r]けっしてな。
+[k]
+
+＠アシュヴァッターマン
+世界に一柱だけだったあの神は、だからこそ、[r]人を、世界を救うために動くぜ。
+[k]
+
+＠アシュヴァッターマン
+まだ形のないものかもしれないが、ヤツの目指した理想に[r]確かに含まれていたはずの『良いもの』を。
+[k]
+
+＠アシュヴァッターマン
+その輪廻を、守るために。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace B 7]
+[charaFadein B 0.6 -50,10]
+[charaFadein A 0.6 -50,-280]
+[charaMove B 0,10 30.0]
+[charaMove A 0,-280 30.0]
+[wt 0.8]
+[charaPut P 0,10]
+[charaPut X 0,-280]
+
+[charaTalk on]
+[charaTalk B]
+
+＠B：アルジュナ
+……。[r]……。
+[k]
+
+[charaFaceFade B 0 0.2]
+
+＠B：アルジュナ
+ああ。そうだろう。
+[k]
+
+＠B：アルジュナ
+たとえ完全なる世界がそこにあるのだとしても[line 3][r]中身のない完全なる世界だけは認めないだろう。
+[k]
+
+[charaFaceFade B 1 0.2]
+
+＠B：アルジュナ
+わかるさ。[r]あれもまた、私の果てだからな。
+[k]
+
+[charaFaceFade B 4 0.2]
+
+＠B：アルジュナ
+まったく。それでも、この世界に対する愛着や[r]意地があるなら、自分でやってほしかったものだが……
+[k]
+
+[charaFaceFade B 7 0.2]
+
+＠B：アルジュナ
+誰に任せるかといえば自分自身が一番なのも、[r]理解はしよう。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace P 1]
+[charaFadeout B 0.6]
+[charaFadeout A 0.6]
+[wt 0.8]
+
+＠アシュヴァッターマン
+だから、そこの。
+[k]
+
+＠アシュヴァッターマン
+あいつにどこかで会うことがあれば[r]俺の怒りを伝えといてくれよな！
+[k]
+
+[charaFaceFade P 0 0.2]
+
+＠アシュヴァッターマン
+おまえは誰よりも苛烈に切り捨ててきた。[r]誰よりも苛烈に残し続けてきた。
+[k]
+
+＠アシュヴァッターマン
+誰よりも、残す中身に意味があると[r]信じていたのがおまえだ。
+[k]
+
+[charaFaceFade P 6 0.2]
+
+＠アシュヴァッターマン
+最後まで間違った神らしくやりやがれ[line 3][r]ってな！
+[k]
+
+[charaFaceFade P 1 0.2]
+
+＠アシュヴァッターマン
+なあに、ビビるこたねぇ。間違った神だって、[r]正しいことをしないってワケじゃねぇだろう！
+[k]
+
+？1：よくわからないけど
+？2：もし会ったら伝えとくよ
+？！
+
+[charaEffect P bit_talk_06]
+[charaFaceFade P 0 0.2]
+
+＠アシュヴァッターマン
+おう。この世界はここで終わりだが、[r]この異聞帯の全てが[line 3]
+[k]
+
+＠アシュヴァッターマン
+削ぎ落とされた中に残った最後の正しさが、[r]きっと、おまえと同じ方向を向いてる。
+[k]
+
+[charaFaceFade P 1 0.2]
+
+＠アシュヴァッターマン
+行ってきやがれ！
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaSpecialEffect P flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect P]
+[charaEffectStop P bit_talk_06]
+[wt 2.2]
+
+[fadeout black 2.0]
+[bgmStop BGM_MAP_124 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

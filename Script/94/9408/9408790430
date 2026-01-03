@@ -1,0 +1,517 @@
+
+＄94-08-79-04-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1098272300 1 オベロン]
+[charaSet B 1098276900 1 マシュ]
+[charaSet C 1020300 1 ランスロット]
+[charaSet D 1098274400 1 アルトリア・キャスター]
+[charaSet G 1098272300 1 オベロン]
+[charaFilter G silhouette 00000080]
+
+[sceneSet U 106300 1]
+[sceneSet V 106300 1]
+
+[scene 106300]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[effect bit_talk_kengekiall02_fs]
+[wt 0.1]
+[se ad32]
+[wt 0.2]
+[se ad170]
+[wt 0.3]
+[se ad686]
+[wt 0.3]
+[effect bit_talk_noble_light]
+[wt 0.2]
+[cueSe NoblePhantasm_102000 NP_102000_2 0]
+[seVolume NP_102000_2 0.6 1.0]
+[wt 0.6]
+[seStop NP_102000_2 0.7]
+[wt 0.4]
+[cueSe NoblePhantasm_102000 NP_102000_5]
+[effect bit_talk_gram_slash_04_fs]
+[wt 0.7]
+[effectDestroy bit_talk_noble_light]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.2 1]
+[charaShake A 0.04 2 2 0.5]
+[effect bit_talk_06]
+[wt 0.7]
+
+＠オベロン
+なんてことだ、ミネウチをしてくれないなんて……[r]これが冗談の通じない仕事人の戦いか……
+[k]
+
+[charaFaceFade A 13 0.2]
+
+＠オベロン
+でも仕方ない、これが運命だったのさ……[r]花の命は短いってね……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.0]
+[charaSpecialEffect A flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect A]
+[effectStop bit_talk_06]
+[wt 1.5]
+
+[bgm BGM_EVENT_146 0.1]
+
+[charaDepth B 4]
+[charaDepth C 3]
+[charaDepth U 2]
+[charaDepth V 1]
+[charaScale B 1.2]
+[charaScale C 1.2]
+[charaScale U 1.2]
+[charaScale V 1.3]
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.4 250,0]
+[charaFadein U 0.4 -30,-250]
+[charaMove B 230,0 0.4]
+[charaMove U -50,-250 0.4]
+[wt 0.4]
+[charaFadein V 0.1 80,-300]
+
+＠マシュ
+オオ、オベロンさんの霊基反応、[r]消滅してしまいました……！
+[k]
+
+[branchRouteSelect battle_rss 94087904 1000]
+[branch lblConf01]
+
+[label battle_rss]
+
+＠マシュ
+ランスロットさんが宝具で[r]バシューって、バシューって！　このお父さん！
+[k]
+
+[branch lblConf01]
+
+[label lblConf01]
+
+[messageOff]
+[charaMove B 280,0 0.4]
+[charaMove U 0,-250 0.4]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.4 -250,0]
+[wt 0.4]
+
+＠ランスロット
+いや、加減はした筈なんだが！？[r]落ち着こう諸君、この戦闘は見なかった事に！
+[k]
+
+？1：だいじょうぶ
+？2：心配ない
+
+？！
+
+＠あわてるふたり
+[FFFFFF]？
+[k]
+
+？1：オベロンのドッキリだよ
+？2：[FF0000]それで逃げられると思ったか
+
+？！
+
+[bgmStop BGM_EVENT_146 1.5]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+[charaFadeout U 0.4]
+[charaMove V 100,-300 1.5]
+[wt 0.7]
+[charaScale B 1.0]
+[charaScale C 1.0]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth A 3]
+[charaDepth G 4]
+[charaFace A 3]
+[charaFadein G 0.8 -200,0]
+[charaMove G -180,0 0.8]
+[wt 1.2]
+[charaFadein A 0.1 -180,0]
+[wt 0.1]
+[charaFadeout G 0.5]
+[wt 1.0]
+[charaDepth B 0]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+[bgm BGM_MIZUGIKENGOU 0.1]
+
+＠オベロン
+あ、バレちゃった？[r]カルデアのマスターは遊び心がないなあ。
+[k]
+
+[charaFaceFade A 2 0.2]
+
+＠オベロン
+ごめんごめん、冗談だよマシュ、ランスロット君。[r]この通り僕は無事だ。手加減してくれてありがとう。
+[k]
+
+[charaFaceFade A 18 0.2]
+
+＠オベロン
+でもマシュはちょっと真面目すぎるかもだ。[r]これから悪い妖精に[#騙:だま]されないよう、気をつけて。
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaFadeout V 0.4]
+[wt 0.4]
+
+＠マシュ
+そ、それはどうも……[r]以後、注意します。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[charaFace C 0]
+
+
+＠ランスロット
+ふむ。悪い妖精というと、[r]街を襲った妖精たちの事かな？
+[k]
+
+＠ランスロット
+ケット・クー・ミコケルと名乗っていたが。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠オベロン
+ああ、いま悪い妖精と言えばそっちになるのか。[r]たとえ話で妖精を持ち出したんだけど。
+[k]
+
+[charaFaceFade A 8 0.2]
+
+＠オベロン
+まあ、そっちの方は別の問題だ。[r]いま困っているのはサバフェスに出す物だろ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい。皆さん、慣れないジャンルなので[r]執筆は難しい、と。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠オベロン
+難しくなんかないさ。[r]マシュ同様、みんな真剣に考えすぎだ。
+[k]
+
+
+＠オベロン
+コードは『ブリテンの王・アーサー』じゃなくて[r]『アルトリア』なんだろう？
+[k]
+
+＠オベロン
+ならその可能性を追求すればいいだけだ。[r]たくさんのイフを考えればいい。
+[k]
+
+
+＠オベロン
+王にならず騎士見習いのままだった彼女もいれば、[r]現代に転生して魔術師になった彼女がいてもいい。
+[k]
+
+
+＠オベロン
+『楽しい』と思った事を『アルトリア』で[r]やってみればいいだけだ。
+[k]
+
+＠オベロン
+いま僕が声をかけた妖精たちみたいにね。[r]何も『アルトリア』の真実を深掘りする必要はない。
+[k]
+
+[charaFaceFade A 10 0.2]
+
+＠オベロン
+もちろん、中にはそういった研究の方が好き、[r]というサークルもあるだろうから止める理由はない。
+[k]
+
+[charaFaceFade A 7 0.2]
+
+＠オベロン
+なんにせよ創作活動は自由であるべきだ。[r]それが謂れのない[#誹謗中傷:ひぼうちゅうしょう]でないかぎりはね。
+[k]
+
+[charaFaceFade A 2 0.2]
+
+＠オベロン
+ああ、でもシェイクスピアだけは出禁かな。[r]ジャンヌ・ダルクでまた[#一悶着:ひともんちゃく]おこしそうだ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+なるほど……オリジナルではなく[r]アンソロジーと考えればいいのですね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ランスロット
+…………。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.7]
+[cueSe SE_21 21_ade689]
+[charaCrossFade A 1098272340 2 0.3]
+[wait charaCrossFade A]
+[wt 0.2]
+
+＠オベロン
+その方向でサークルのみんなを説得すればいい。[r]ああ、なんなら僕が引き受けようか？
+[k]
+
+？1：それはこっちでやるんだけど
+
+？！
+
+[messageOff]
+[wt 0.4]
+
+？1：オベロンはサバフェスをどう思って[&るんだ:るの]？
+
+？！
+
+[charaFaceFade A 8 0.2]
+
+＠オベロン
+不思議なことを[#訊:き]くんだね。[r]それ、いま必要なこと？
+[k]
+
+[charaFaceFade A 7 0.2]
+
+＠オベロン
+でも君らしい質問だ。[r]斬り込まれたからには答えようか。
+[k]
+
+[charaFaceFade A 13 0.2]
+
+＠オベロン
+『終わった物語のその後を創造する』[r]『叶わなかった願いを別のカタチで成就させる』
+[k]
+
+＠オベロン
+まさにネバーエンドだ。歓迎しない筈がない。[r][#眩:まぶ]しすぎて、僕はちょっと近づけないけどね。
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_MIZUGIKENGOU 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+
+[sceneSet U 63600 1]
+[sceneSet V 63600 1]
+
+[scene 63600]
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_MAP_61 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠アルトリア・キャスター
+ただいまー！[r]特に収穫はありませんでした！
+[k]
+
+[charaFace D 5]
+
+＠アルトリア・キャスター
+おや？　何かありました？[r]マシュは前向き、ランスロットさんは戸惑い、
+[k]
+
+＠アルトリア・キャスター
+[%1]にいたっては[r]めっちゃ複雑な顔してるけど？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠マシュ
+いえ、たまたま出会った親切な方のおかげで[r]突破口が見えたところなのです。
+[k]
+
+＠マシュ
+実はさっき、こんな提案をされて。
+[k]
+
+[messageOff]
+[bgm BGM_MAP_61 1.0 0.4]
+[wipeout rollRight 1.0 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[bgm BGM_MAP_61 1.0 1.0]
+[wipein rollLeft 1.0 1]
+[wait wipe]
+
+＠アルトリア・キャスター
+そっか、『アーサー王』に縛られるんじゃなくて、[r]アルトリアが出てればなんでもいいんだ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい。なんでもいい、というワケではありませんが、[r]挑戦しがいのあるお話かと。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ランスロット
+そう。たとえば『カジノオーナーでありながら[r]騎士王でありセレブな貴婦人』という
+[k]
+
+＠ランスロット
+我が王がいてもいい、という話です。[r]まあ実際いるのですが。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+＠アルトリア・キャスター
+そ、そうなんだ……[r]いるんだ、セレブアルトリア……
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth B 2]
+[charaDepth U 1]
+[charaScale B 1.2]
+[charaScale U 1.2]
+[charaFace B 6]
+[charaFadein B 0.3 0,10]
+[charaFadein U 0.3 0,-250]
+[wt 0.3]
+[se ad186]
+[fowardEffect bit_talk_41_fs 0,100]
+[charaFace D 10]
+[wt 0.1]
+
+＠マシュ
+機は熟しました。[r]今こそ『同盟、まさに立つべし！』です！
+[k]
+
+＠マシュ
+早速ちゅんちゅん亭に行きましょう！
+[k]
+
+＠マシュ
+この方針を皆さんに提案して、たくさんの[r]素敵なアルトリア本を世に送り出す時です！
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaFadeout U 0.4]
+[fowardEffectStop bit_talk_41_fs]
+[wt 0.4]
+[fowardEffectDestroy bit_talk_41_fs]
+
+[charaTalk on]
+
+＠アルトリア・キャスター
+え、そういう話？[r]っていうかマシュってこういうキャラ？
+[k]
+
+？1：うん……マシュはわりと……
+？2：強火の円卓大好きっ娘だから……
+
+？！
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStopEnd BGM_MAP_61 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

@@ -1,0 +1,774 @@
+
+＄94-13-93-19-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1010000 1 エリザベート]
+[charaSet B 4001000 1 メドゥーサ]
+[charaSet C 5043000 1 アスクレピオス]
+[charaSet D 3057001 1 ビショーネ]
+
+[charaSet E 1098257810 1 マシュ]
+[charaSet F 1098257310 1 ダ・ヴィンチ]
+[charaSet G 1098257310 1 ダ・ヴィンチ（演出用）]
+[charaSet H 1062001 1 黒姫]
+
+[ifClear 60139328]
+[charaSet I 1098314100 1 蛇竜人]
+[charaSet J 1098312900 1 蛇竜人]
+
+[ifClear 60139329]
+[charaSet I 1098314110 1 蛇竜人]
+[charaSet J 1098312910 1 蛇竜人]
+
+[ifClear 60139330]
+[charaSet I 1098314120 1 蛇竜人]
+[charaSet J 1098312920 1 蛇竜人]
+
+[else]
+[charaSet I 1098314100 1 蛇竜人]
+[charaSet J 1098312900 1 蛇竜人]
+
+[endIf]
+
+
+[charaSet K 1098313100 1 黒蛇馬]
+[charaSet L 1098313100 1 黒蛇馬2]
+[charaSet M 1098313100 1 黒蛇馬3]
+[charaRollAxis K y 180 0 0]
+[charaRollAxis L y 180 0 0]
+[charaRollAxis M y 180 0 0]
+
+[sceneSet N 10000 1]
+[charaScale N 1.1]
+
+[sceneSet O 240000 1]
+[sceneSet P 240001 1]
+[sceneSet Q 240002 1]
+[sceneSet R 240003 1]
+[sceneSet S 239001 1]
+[sceneSet T 239001 1]
+
+[charaSet V 98115000 1 エフェクト用1]
+[charaSet W 98115000 1 エフェクト用2]
+[charaSet X 98115000 1 エフェクト用3]
+
+[charaPut V 2000,2500]
+[charaPut W 2000,2500]
+[charaEffect V bit_talk_10_LowLevel]
+[charaEffect W bit_talk_10_LowLevel]
+
+
+[cameraMove 0 0,0 1.01]
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[se ad1053]
+[se ad347]
+[seVolume ad347 0 0.6]
+[effect bit_talk_quick_slash]
+[wt 0.7]
+[effect bit_talk_quick_slash 0,0 H]
+[wt 0.3]
+
+
+[seStop ad1053 0.3]
+[seStop ad347 0.3]
+[se ad715]
+[wt 0.2]
+[fowardEffect bit_talk_h_slash01_fs]
+
+[wt 0.35]
+
+[se ad818]
+[seVolume ad818 0 0.5]
+[se ad878]
+[seVolume ad878 0 0.5]
+[fadeout white 0.1]
+[seStop ad715 0.3]
+[bgmStop BGM_EVENT_80 1.5]
+[wait fade]
+
+[fowardEffectDestroy bit_talk_h_slash01_fs]
+[effectDestroy bit_talk_quick_slash]
+
+[scene 239001]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth K 2]
+[charaDepth L 4]
+[charaDepth M 3]
+
+[charaFace K 0]
+[charaFace L 0]
+[charaFace M 0]
+[charaFadeinFSR K 0 200,0]
+[charaFadein L 0 -135,0]
+[charaFadeinFSL M 0 -480,0]
+
+[charaShake K 0.01 3 2 0.9]
+[charaShake L 0.02 2 3 0.9]
+[charaShake M 0.02 4 2 0.9]
+
+[fadein white 0.1]
+[wait fade]
+[seStop ad818 1.0]
+[seStop ad878 1.0]
+[wt 1.05]
+
+[se ad42]
+[charaSpecialEffect K enemyErasure 0,0 1.2]
+[charaSpecialEffect L enemyErasure 0,0 1.2]
+[charaSpecialEffect M enemyErasure 0,0 1.2]
+[wait charaSpecialEffect K]
+[wt 1.5]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+
+＠黒姫
+……。[r]……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+捕食竜ほどではありませんでしたが、[r]なかなかの力を持つ魔性でした。
+[k]
+
+＠メドゥーサ
+これらが群れをなして襲ってきたのだとしたら、[r]この地に住まう蛇たちに抵抗できたかどうか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+[line 3]む。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[cueSe SE_22 22_ad1162]
+[seVolume 22_ad1162 0 0.6]
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.4 -50,0]
+[charaMove I 1 0.4]
+[wt 0.4]
+[seStop 22_ad1162 0.4]
+[wt 0.4]
+
+＠蛇竜人
+あ、あんたら[line 3]長老も一緒か？
+[k]
+
+[charaFace I 0]
+＠蛇竜人
+そいつらを倒してくれたのか。[r]ありがとよ、助かったぜ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+いったい何があったの？[r]こいつらは何？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠蛇竜人
+わかんねえよ。
+[k]
+
+＠蛇竜人
+こいつらが現れたのは、[r]さっきの大きな地震が起こるちょっと前だ。
+[k]
+
+[charaFace I 5]
+＠蛇竜人
+どこかから現れて、俺らを手当たり次第に襲い始めて……[r]蛇とは違う見た目なのに、蛇みたいに丸呑みにしてた。
+[k]
+
+＠蛇竜人
+ドラゴンセンスで対抗しようとしたヤツもいたけど、[r]多勢に無勢だ。だいたい喰われちまった。
+[k]
+
+＠蛇竜人
+こんなの初めてだ、恐ろしい……。
+[k]
+
+[charaFace I 3]
+＠蛇竜人
+まだ気配がするだろ。[r]他にもいると思う。
+[k]
+
+[charaFace I 7]
+＠蛇竜人
+俺は逃げるぜ。[r]長老も！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+
+[clear]
+
+＠J：蛇竜人
+あ、ああ。[r]しかしどこに逃げたらいいものかな……。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+
+[clear]
+
+
+＠蛇竜人
+わかんねーっすよ。なんとなくだが、[r]下層の地域にもこいつらの気配がある気がする。
+[k]
+
+＠蛇竜人
+下層に住んでるヤツらは[r]俺たちみたいなドラゴンセンスは使えないって話だろ？
+[k]
+
+[charaFace I 5]
+＠蛇竜人
+もし同じようなのが出てるんだとしたら、[r]俺たち以上に喰われちまってるんじゃねえかな。
+[k]
+
+[charaFace I 7]
+＠蛇竜人
+いや話してる場合じゃねえ、[r]とにかく町を離れましょう！
+[k]
+
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+
+[clear]
+
+＠J：蛇竜人
+ああ、うん。[wt 0.7][charaFace J 5][r]貴様らも達者でな！
+[k]
+
+[messageOff]
+[se ad60]
+[charaMove J 50,0 0.4]
+[charaFadeout J 0.4]
+[seStop ad60 1.2]
+[wt 1.7]
+
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+[wt 0.5]
+
+[charaMoveReturn I 0,-7 0.5]
+[wt 0.9]
+
+[cueSe SE_22 22_ad1162]
+[seVolume 22_ad1162 0 0.6]
+[charaMove I 50,0 0.4]
+[charaFadeout I 0.4]
+[wt 1.0]
+[cueSeStop 22_ad1162 1.2]
+[wt 1.0]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+捕食竜とは違う、新しい捕食の手駒……[r]ということでしょうか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+今の彼が話していた時系列によると、[r]突然町にあの蛇馬のようなものが現れ、
+[k]
+
+＠メドゥーサ
+民たちを喰って回った。そしてその直後、[r]今までにない大地震、大地の蛇の動きが起こった。
+[k]
+
+＠メドゥーサ
+この二つを繋げて考えれば。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+捕食でエネルギーが溜まり、それによって[r]大地の蛇が動いた、とも解釈できるな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+
+＠黒姫
+はい。蛇王が贄を求めていた理由は、[r]生存のためだけではなかったのかもしれません。
+[k]
+
+＠黒姫
+その力を用いた、[r]何か別の目的があったのかも[line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠マシュ
+観測終了。[r]大地の姿、出ます。
+[k]
+
+[bgmStop BGM_EVENT_81 1.5]
+
+[charaFace E 5]
+
+＠マシュ
+[line 3]！？[r]ダ・ヴィンチちゃん、これは！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+あっ！[r]ひょっとして……そういうこと？
+[k]
+
+＠ダ・ヴィンチ
+[#寸前]になって初めてわかったかもだ！
+[k]
+
+？1：何かわかった！？
+？！
+
+[bgm BGM_MAP_57 0.1]
+
+[charaFace F 22]
+＠ダ・ヴィンチ
+待って。[r]今、キミたちにも見えるようにする。
+[k]
+
+＠ダ・ヴィンチ
+最初から見せたほうがわかりやすいかな。[r]レイシフト当初の姿から見せるよ。
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.65]
+
+[se ad1]
+[fadeout black 0.8]
+[bgm BGM_MAP_57 0.8 0.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaPut V 2000,2500]
+
+[scene 240000]
+
+[charaPut X 1]
+[wt 0.8]
+
+[fadein black 0.8]
+[bgm BGM_MAP_57 0.8 1.0]
+[wait fade]
+[wt 0.15]
+
+[subCameraOn 2]
+[charaLayer V sub #A]
+[charaLayer F sub #A]
+[charaLayer E sub #A]
+[charaLayer S sub #A]
+
+[charaLayer C sub #B]
+[charaLayer D sub #B]
+[charaLayer T sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask11 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask12 5 255,255,255,255]
+
+[charaTalk depthOff]
+[charaDepth S 2]
+[charaDepth F 3]
+[charaDepth E 3]
+[charaDepth V 4]
+
+[charaScale V 1.0]
+[charaScale E 0.95]
+[charaScale F 1.0]
+[charaScale S 1.2]
+
+[charaPut V 485,235]
+[charaTalk F]
+[charaFace F 23]
+[charaFadein F 0.1 485,235]
+[charaFadein S 0.1 200,-50]
+
+[charaDepth T 2]
+[charaDepth D 3]
+[charaDepth C 3]
+
+[charaScale D 1.0]
+[charaScale C 0.9]
+[charaScale T 1.2]
+
+[charaFace D 18]
+[charaFadein D 0.1 -470,240]
+[charaFadein T 0.1 -200,-50]
+
+[subRenderFadeinFSSideR #A 0.4 -80,-150]
+[subRenderMoveEaseFSSideR #A -60,-170 0.5 easeOutSine]
+[wt 0.5]
+
+
+＠ダ・ヴィンチ
+いいかい。これが最初に観測した大地の姿。[r]大きくうねっているような感じだね。
+[k]
+
+＠ダ・ヴィンチ
+そして次はこんな姿。
+[k]
+
+[messageOff]
+[charaTalk V]
+[scene 240001 1.2]
+[wt 1.6]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 480,220]
+
+
+＠マシュ
+さらに次はこうなります。
+[k]
+
+＠マシュ
+ずっとこの形が厳密に[r]維持されていたわけではないのですが、
+[k]
+
+＠マシュ
+平均的な話として、先程の大地震の直前までは[r]このような形状になっていることが多かった、
+[k]
+
+＠マシュ
+という意味です。
+[k]
+
+
+[messageOff]
+[charaTalk V]
+[scene 240002 1.2]
+[wt 1.6]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 35]
+[charaFadein F 0.1 485,235]
+
+＠ダ・ヴィンチ
+ここまでは何のヒントもなかった。[r]大地の蛇がなぜ動いているのか。
+[k]
+
+＠ダ・ヴィンチ
+どういう意図があって動いているのか、[r]ただの生物としての身じろぎというだけなのか。
+[k]
+
+＠ダ・ヴィンチ
+実際、観測タイミングによっては[r]最初みたいな形に戻っていたりもしたしね。
+[k]
+
+[charaFace F 23]
+
+
+＠ダ・ヴィンチ
+総合的には、じわじわと全体形状を変えようとする方向性が[r]ひょっとしたら存在するのかもしれない……
+[k]
+
+＠ダ・ヴィンチ
+ぐらいの考察を持つのが精一杯で、[r]はっきりしたものは何もなかった。
+[k]
+
+
+[charaFace F 22]
+
+＠ダ・ヴィンチ
+でも、ここに来て[line 3][r]その動きには何かの意図があったのだと判断できる。
+[k]
+
+＠ダ・ヴィンチ
+明らかに、今現在の蛇の姿は、[r]その意図を感じ取れるような姿だからだ。
+[k]
+
+＠ダ・ヴィンチ
+これがそうだよ。
+[k]
+
+[messageOff]
+[charaTalk V]
+[scene 240003 1.2]
+[wt 1.6]
+
+
+[charaTalk D]
+[subRenderFadeinFSSideL #B 0.4 80,-150]
+[subRenderMoveEaseFSSideL #B 60,-170 0.5 easeOutSine]
+[wt 0.5]
+
+＠ビショーネ
+輪っかみたいに、曲がってます……ね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 -470,230]
+
+＠アスクレピオス
+待て。見たことがあるぞ。
+[k]
+
+＠アスクレピオス
+今現在の話ではなく、[r]このまま行けば、の話だが。
+[k]
+
+[messageOff]
+[charaTalk V]
+[wt 0.2]
+
+？1：ひょっとして、この蛇は
+？！
+
+？1：[#自分の尻尾を咥えようとしている][line 3]？
+？！
+
+[messageOff]
+[wt 1.0]
+[se ad1]
+[fadeout black 0.8]
+[bgm BGM_MAP_57 0.8 0.5]
+[wait fade]
+
+[charaPut X 2000,2500]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[charaPut V 2000,2500]
+[charaFadeout S 0]
+[charaFadeout T 0]
+[charaFadeout F 0]
+[charaFadeout E 0]
+[charaFadeout D 0]
+[charaFadeout C 0]
+[subCameraOff]
+[charaLayer V normal]
+[charaLayer S normal]
+[charaLayer T normal]
+[charaLayer F normal]
+[charaLayer E normal]
+[charaLayer D normal]
+[charaLayer C normal]
+[charaScale V 1.0]
+[charaScale S 1.0]
+[charaScale T 1.0]
+[charaScale F 1.0]
+[charaScale E 1.0]
+[charaScale D 1.0]
+[charaScale C 1.0]
+[wt 0.2]
+
+[scene 239001]
+
+[charaPut V 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.5]
+
+[fadein black 0.8]
+[bgm BGM_MAP_57 0.8 1.0]
+[wait fade]
+[wt 0.2]
+
+
+＠ダ・ヴィンチ
+その通り。[r]私たちもそう推定している。
+[k]
+
+＠ダ・ヴィンチ
+これは明らかにその意図を感じさせる動き、[r]目的を持った形態の変化だからだ。
+[k]
+
+[charaFace F 23]
+
+＠ダ・ヴィンチ
+自らの尾を咥えた蛇。それは無限の力、完全性、[r]永遠性などを象徴している強力な魔術的シンボルでもある。
+[k]
+
+[charaFace F 22]
+
+＠ダ・ヴィンチ
+[line 3]円環の蛇、[#ウロボロス]。
+[k]
+
+？1：ウロボロス……
+
+[charaFace F 23]
+
+＠ダ・ヴィンチ
+そう、確かにこの形はウロボロスのものだ。[r]蛇王ザッハークはウロボロスを成そうとしてる。
+[k]
+
+？2：それは竜？　蛇？
+
+[charaFace F 34]
+
+＠ダ・ヴィンチ
+蛇か竜かは定かではないというか[line 3]
+[k]
+
+[charaFace F 23]
+
+＠ダ・ヴィンチ
+私の知るウロボロスは、[r]単なる哲学的シンボルにすぎない。
+[k]
+
+＠ダ・ヴィンチ
+少なくとも竜種としてのウロボロスの存在は[r]確認されていない、と思う。
+[k]
+
+[charaFace F 22]
+
+＠ダ・ヴィンチ
+でも、確かにこの形はウロボロスのものだ。[r]蛇王ザッハークはウロボロスを成そうとしてる。
+[k]
+
+？！
+
+[bgmStop BGM_MAP_57 2.0]
+
+[charaFace F 35]
+＠ダ・ヴィンチ
+……。[r]……。
+[k]
+
+[charaFace F 23]
+＠ダ・ヴィンチ
+……あくまで仮定だけど、[r]蛇王は、ウロボロスを魔術式として成立させて……
+[k]
+
+[messageOff]
+[subCameraOn 1]
+[charaLayer W sub #A]
+[charaLayer G sub #A]
+[charaLayer S sub #A]
+
+[subCameraFilter #A normal]
+
+[subRenderScale #A 1.01]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth S 2]
+[charaDepth G 3]
+[charaDepth W 4]
+
+[charaScale W 1.2]
+[charaScale G 1.2]
+[charaScale S 1.2]
+
+[charaPut W 1]
+[charaFace G 14]
+[charaFadein G 0 0,15]
+[charaFadein S 0 0,-260]
+
+[subRenderFadein #A 0.7 0,0]
+[wt 0.85]
+
+＠ダ・ヴィンチ
+この特異点で[r][#疑似的な無限]を手に入れようとしてるのかも[line 3]！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

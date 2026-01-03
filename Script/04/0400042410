@@ -1,0 +1,1030 @@
+
+
+
+＄04-00-04-24-1-0
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257910 1 マシュ]
+[charaSet B 1098307900 1 岸波白野]
+[charaSet C 23006001 1 ＢＢコスモ]
+[charaSet D 33002002 1 スペースエレシュキガル]
+[charaSet E 33002002 1 スペースエレシュキガル（演出用）]
+[charaSet F 23009001 1 シエル]
+[charaSet G 1098299740 1 ＢＢドバイ]
+[charaSet H 1098299740 1 ＢＢドバイ（演出用）]
+[charaSet I 1098307100 1 白い礼服の少女]
+
+[sceneSet J 10000 1]
+[charaFilter J silhouette 33FFFF80]
+[sceneSet K 10001 1]
+[sceneSet L 10001 1]
+
+[imageSet M back10000 1 1]
+[charaScale M 1.05]
+[imageSet N back10000 1 1]
+[charaScale N 1.05]
+
+[sceneSet O 225610 1]
+[sceneSet P 225610 1]
+[sceneSet Q 221630 1]
+[sceneSet R 221630 1]
+[sceneSet S 221630 1]
+[sceneSet T 221630 1]
+[sceneSet U 226910 1]
+
+[charaSet V 98115000 1 エフェクト用1]
+[charaSet W 98115000 1 エフェクト用2]
+
+[cameraMove 0 0,0 1.01]
+
+[subCameraOn 4]
+
+[charaLayer A sub #A]
+[charaLayer B sub #A]
+[charaLayer Q sub #A]
+
+[charaLayer F sub #B]
+[charaLayer I sub #B]
+[charaLayer R sub #B]
+
+[charaLayer M sub #C]
+[charaLayer N sub #C]
+
+[charaLayer P sub #D]
+
+[subCameraFilter #A maskEdge cut359_mask05 5 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask05 5 0,0,0,255]
+[subCameraFilter #C through]
+[subCameraFilter #D normal]
+[subRenderScale #C 1.01]
+[subRenderScale #D 1.01]
+[subRenderDepth #C 3]
+[subRenderDepth #A 4]
+[subRenderDepth #B 4]
+[subRenderDepth #D 2]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth Q 2]
+[charaDepth R 2]
+[charaDepth A 3]
+[charaDepth F 3]
+[charaDepth B 3]
+[charaDepth I 3]
+
+[charaDepth M 3]
+[charaDepth N 3]
+[charaDepth P 4]
+
+[charaScale Q 1.2]
+[charaScale A 1.2]
+[charaFace A 28]
+[charaFadein A 0 -90,215]
+[charaFadein Q 0 -100,0]
+[charaScale B 1.2]
+
+[charaScale R 1.2]
+[charaScale F 1.2]
+[charaFace F 6]
+[charaFadein F 0 0,215]
+[charaFadein R 0 100,0]
+[charaScale I 1.2]
+
+[charaFadein M 0 0,-756]
+[charaFadein N 0 0,756]
+
+[charaScale P 1.2]
+[charaFadein P 0 60,-280]
+
+[subRenderFadein #C 0 0,0]
+[subRenderFadein #D 0 0,0]
+
+[scene 225610]
+
+[charaMove P -60,-280 5.5]
+[fadein black 1.5]
+[wait fade]
+[wt 3.0]
+
+[subRenderFadeout #D 1.0]
+[wt 1.5]
+
+[wt 0.4]
+
+[bgm BGM_MAP_126 0.1]
+
+？1：[line 3]え？
+？2：何がどうなった[&:の]！？
+？！
+
+
+[charaTalk on]
+[charaTalk A]
+[subRenderFadeinFSR #A 0.3 350,-125]
+[subRenderMoveEaseFSR #A 350,-225 0.4 easeOutCubic]
+[wt 0.4]
+
+＠マシュ
+シバによる観測、停止！[r]年代計測、西暦2999年に逆行しました！
+[k]
+
+[charaFace A 34]
+＠マシュ
+月面全域にこれは[line 3]固有結界？[r]物質が霊子に変換され……変換され、て……
+[k]
+
+＠マシュ
+……ええっと……なんだっけ……[r]何か……やらなくちゃ、いけない事が……
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[wt 0.15]
+
+[se ad650]
+[blur lens 1.0 4 10]
+[wt 1.2]
+
+[seStop ad650 1.2]
+[blurOff lens 1.0]
+[wt 1.4]
+
+[charaTalk F]
+[subRenderFadeinFSL #B 0.3 -350,-125]
+[subRenderMoveEaseFSL #B -350,-225 0.4 easeOutCubic]
+[wt 0.4]
+
+＠シエル
+[#事象収納:じしょうしゅうのう]です！[r]テクスチャが[#剥:は]がされています！
+[k]
+
+＠シエル
+いえ、収納というよりこれは……軽減？[r]この空間における情報量を極限まで……
+[k]
+
+[charaFace F 3]
+＠シエル
+軽くして、簡単に、壊せる……のかな？[r]１のダメージが１億になる……？
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.2]
+[wt 0.15]
+
+[se ad440]
+[seVolume ad440 0 0]
+[se ad650]
+[seVolume ad440 1.0 0.3]
+[blur lens 1.0 4 10]
+[wt 1.2]
+
+[seStop ad440 1.4]
+[seStop ad650 1.2]
+[blurOff lens 1.0]
+[wt 1.2]
+
+[charaFace B 10]
+[charaFadein B 0 -5,215]
+[charaFace I 3]
+[charaFadein I 0 -15,215]
+[charaFadeout A 0]
+[charaFadeout F 0]
+[wt 0.2]
+
+
+[charaTalk B]
+[subRenderFadeinFSR #A 0.3 350,-325]
+[subRenderMoveEaseFSR #A 350,-225 0.4 easeOutCubic]
+
+[subRenderFadeinFSL #B 0.3 -350,-125]
+[subRenderMoveEaseFSL #B -350,-225 0.4 easeOutCubic]
+[wt 0.4]
+
+＠岸波白野
+くそ、そういう事か……！[r]みんな、しっかり！　やる気を出して！
+[k]
+
+＠B：岸波白野
+少しでも気を緩めるとそこから[#解:ほど]ける！[r]意識が、存在そのものが、
+[k]
+
+[charaFace B 3]
+＠B：岸波白野
+[#繊維:せんい]みたいに……バラけて……[r]いや……いいか……死ぬわけじゃないし……
+[k]
+
+[charaFace I 3]
+＠白い礼服の少女
+また私はそんな気楽な……気楽もポジティヴな感情か……[r]それもひとつの、やる気だよね……
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[subRenderFadeout #B 0.2]
+[wt 0.15]
+
+[cueSe SE_21 21_ad1122]
+[cueSeVolume 21_ad1122 0 0]
+[se ad440]
+[seVolume ad440 0 0]
+[se ad650]
+[cueSeVolume 21_ad1122 1.0 0.3]
+[seVolume ad440 1.0 0.3]
+[blur lens 1.0 4 10]
+[wt 1.2]
+
+[cueSeStop 21_ad1122 1.4]
+[seStop ad440 1.4]
+[seStop ad650 1.2]
+[wt 1.2]
+
+
+？1：……まずい……こわい……なんだこれ……
+？2：……いつもなら……すぐに……うごくのに……
+？！
+
+[messageOff]
+[wt 0.6]
+
+？1：……考えることが……よくわからない……
+？！
+
+[messageOff]
+[charaTalk off]
+[subRenderFadeout #C 0.6]
+[blurOff lens 0.6]
+
+[scene 221630 0.6]
+[charaFace D 8]
+[charaFadein D 0.6 1]
+[wt 0.6]
+
+[charaFadeout B 0]
+[charaFadeout I 0]
+[charaFadeout P 0]
+[charaFadeout Q 0]
+[charaFadeout R 0]
+[charaFadeout M 0]
+[charaFadeout N 0]
+[wt 0.2]
+[subCameraOff]
+[charaLayer A normal]
+[charaLayer F normal]
+[charaLayer B normal]
+[charaLayer I normal]
+[charaLayer P normal]
+[charaLayer Q normal]
+[charaLayer R normal]
+[charaLayer M normal]
+[charaLayer N normal]
+[charaScale A 1.0]
+[charaScale F 1.0]
+[charaScale B 1.0]
+[charaScale I 1.0]
+[charaScale P 1.0]
+[charaScale Q 1.0]
+[charaScale R 1.0]
+[charaScale M 1.0]
+[charaScale N 1.0]
+
+
+[charaTalk on]
+＠スペース・エレシュキガル
+みんなどうしたの！？　眠いの？　だるいの？[r]肩を[#揺:ゆ]らす！？　平手でパシッてやっていいの！？
+[k]
+
+[messageOff]
+[se ade423]
+[charaMoveScale D 1.2 0.3]
+[charaMove D 0,10 0.3]
+[wt 0.3]
+[seStop ade423 0.2]
+[wt 0.15]
+
+[se ad77]
+[charaMoveReturn D 0,0 0.35]
+[wt 0.1]
+[shake 0.02 2 2 0.8]
+[wt 0.25]
+[charaMoveReturn D 0,0 0.35]
+[wt 0.95]
+
+[charaFace D 9]
+＠スペース・エレシュキガル
+って、意識レベルがどんどん下がってない！？[r]眠ってもいないのに！？　呪い！？　遠距離魔術！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠ＢＢコスモ
+いえ、こちらは何の攻撃も、妨害も受けていません！[r]今の環境に合わせた人類になりつつあるんです！
+[k]
+
+＠ＢＢコスモ
+思考能力が初期の自動計算機と同等か、それ以下の！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠D：スペース・エレシュキガル
+バカになってるってコト！？[r]どんな精神攻撃なのよそれ！？
+[k]
+
+[charaFace D 3]
+＠D：スペース・エレシュキガル
+いえ。待って。私はいたってクールのままよ。[r]アナタもそう。という事は……
+[k]
+
+[charaFace D 1]
+＠D：スペース・エレシュキガル
+これは地球人類のみ対象にした[#変換:コンバート]ね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 1]
+＠ＢＢコスモ
+そのようです。何の干渉もなく変換されている以上、[r]防ぎようがありません。
+[k]
+
+＠ＢＢコスモ
+今のこの世界において、思考低下は当然のルール。[r]人類から知能がなくなるのが『常識』なのです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠D：スペース・エレシュキガル
+どうするのそれ！？　[%1]！[r]しっかり[%1]！
+[k]
+
+＠D：スペース・エレシュキガル
+冥界で私に告、[wt 0.6][charaFace D 7]じゃなくて、[wt 0.7][charaFace D 8]私を[#叱:しか]った時の[r][#凜々:り　り]しさを思い出してくれませんか！？
+[k]
+
+？1：……告……なに……？
+？2：……分かってる……分かって、いるんだけど……
+？！
+
+[messageOff]
+[wt 0.9]
+
+？1：あの……輪が……呼んで、いて……
+？！
+
+[charaFace D 8]
+＠D：スペース・エレシュキガル
+輪！？　輪ってなに、どこにあるの！？[wt 1.1][charaFace D 10][r][line 3][messageShake 0.03 3 3 0.3]アレか！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[scene 10000]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 226910]
+
+
+[subCameraOn 3]
+[charaLayer V sub #A]
+[charaLayer J sub #A]
+[charaLayer K sub #A]
+[charaLayer D sub #A]
+[charaLayer E sub #A]
+[charaLayer Q sub #A]
+
+[charaLayer H sub #B]
+[charaLayer R sub #B]
+
+[charaLayer M sub #C]
+[charaLayer N sub #C]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 28,140,140,255]
+[subCameraFilter #B maskEdge cut359_mask10 5 230,180,34,255]
+[subCameraFilter #C through]
+
+[subRenderScale #C 1.01]
+
+[subRenderDepth #C 3]
+[subRenderDepth #A 4]
+[subRenderDepth #B 4]
+
+[charaTalk off]
+[charaDepth Q 2]
+[charaDepth R 2]
+[charaDepth D 3]
+[charaDepth E 4]
+[charaDepth H 3]
+[charaDepth J 5]
+[charaDepth V 7]
+[charaDepth K 10]
+
+[charaDepth M 3]
+[charaDepth N 3]
+
+[charaScale Q 1.2]
+[charaScale D 1.2]
+[charaScale E 1.2]
+[charaFace D 11]
+[charaFadein D 0 0,215]
+[charaFadein Q 0 -100,0]
+
+[charaPut E 2000,2500]
+[charaEffectEdgeBlur E 33FFFF 33FFFF]
+
+[charaScale R 1.2]
+[charaScale H 1.2]
+[charaFace H 3]
+[charaFadein H 0 0,215]
+[charaFadein R 0 100,0]
+
+[charaScale M 1.05]
+[charaScale N 1.05]
+[charaFadein M 0 0,-756]
+[charaFadein N 0 0,756]
+
+[subRenderFadein #C 0 0,0]
+
+[cueSe SE_22 22_ad1188]
+[cueSeVolume 22_ad1188 0 0]
+
+[charaScale U 1.5]
+[charaFadein U 0.1 -30,-290]
+[wt 0.5]
+
+[cueSeVolume 22_ad1188 3.0 0.9]
+[charaMoveScale U 1.8 7.0]
+[charaMove U -45,-350 7.0]
+[fadein black 2.0]
+[wait fade]
+[wt 3.0]
+
+[cueSeStop 22_ad1188 1.5]
+[charaFadeout U 1.0]
+[wt 1.5]
+
+
+[charaTalk D]
+[subRenderFadeinFSR #A 0.3 425,-125]
+[subRenderMoveEaseFSR #A 375,-225 0.4 easeOutCubic]
+[wt 0.5]
+
+＠スペース・エレシュキガル
+[line 3]潰す！[r][#骨喰み:ズ 　ィ]、[#落烈:キリカ]！
+[k]
+
+[messageOff]
+[cueSe Servants_3300200 m61026]
+
+[charaScale J 1.2]
+[charaFadein J 0.4 0,215]
+[wt 0.4]
+[charaPut E 0,215]
+[charaFadeout J 0.55]
+[wt 0.75]
+
+[cueSe Servants_3300200 m61027]
+[cueSeVolume m61027 0 0.4]
+[wt 0.1]
+[charaPut V 0,140]
+[charaEffect V bit_talk_29_blue02]
+[wt 0.9]
+
+[cueSeStop m61027 0.3]
+[cueSe SE_23 23_ade907]
+[cueSe SE_23 23_ade929]
+[cueSeVolume 23_ade929 0 0.7]
+[charaScale K 1.2]
+[charaFadein K 0.1 0,215]
+[wt 0.1]
+[charaPut V 2000,2500]
+[charaEffectDestroy V bit_talk_29_blue02]
+[charaEffectEdgeBlurDestroy E]
+[charaFace D 8]
+[charaFadeout K 0.9]
+[cueSeStop 23_ade929 0.9]
+[cueSeStop 23_ade907 0.9]
+[wt 1.4]
+
+＠スペース・エレシュキガル
+届かない！？[r]いえ、私のビーストフラッシュが発動しない！？
+[k]
+
+[messageOff]
+[charaTalk H]
+[subRenderFadeinFSL #B 0.3 -425,-125]
+[subRenderMoveEaseFSL #B -375,-225 0.4 easeOutCubic]
+[wt 0.5]
+
+＠H：ＢＢドバイ
+無駄です。あれはそう見えているだけのもの。[r]触れる事はできません。干渉はできないのです。
+[k]
+
+＠H：ＢＢドバイ
+だから私でも倒す事はできなかった。[r]アレが現れてしまったら、もう打つ手はありません。
+[k]
+
+
+[messageOff]
+[charaDepth S 3]
+[charaDepth G 4]
+[charaDepth D 4]
+[charaDepth C 4]
+
+[charaTalk H,G]
+[charaFace G 3]
+[charaFadein G 0.7 1]
+[charaFadein S 0.7 0,-200]
+[subRenderFadeout #A 0.7]
+[subRenderFadeout #B 0.7]
+[subRenderFadeout #C 0.7]
+[scene 221630 0.7]
+[wt 0.7]
+
+[charaFadeout D 0]
+[charaFadeout H 0]
+[charaFadeout Q 0]
+[charaFadeout R 0]
+[charaFadeout M 0]
+[charaFadeout N 0]
+[wt 0.2]
+[subCameraOff]
+[charaLayer D normal]
+[charaLayer J normal]
+[charaLayer K normal]
+[charaLayer V normal]
+[charaLayer H normal]
+[charaLayer Q normal]
+[charaLayer R normal]
+[charaLayer M normal]
+[charaLayer N normal]
+[charaScale D 1.0]
+[charaScale J 1.0]
+[charaScale K 1.0]
+[charaScale V 1.0]
+[charaScale H 1.0]
+[charaScale Q 1.0]
+[charaScale R 1.0]
+[charaScale M 1.0]
+[charaScale N 1.0]
+[wt 0.8]
+
+？1：……どう……い……
+？2：…………、………………
+？！
+
+[charaFaceFade G 5 0.3]
+[wt 0.7]
+
+＠ＢＢドバイ
+……2800年。衰退の止まらない人類は[r]この現象が起こる事を予測し、
+[k]
+
+＠ＢＢドバイ
+あれをムーン・キャンサーと呼称していました。
+[k]
+
+＠ＢＢドバイ
+人類の集合的無意識が[#澱:よど]み、あふれ出したもの。[r]人類には[#抗:あらが]えない同調意識……。
+[k]
+
+＠ＢＢドバイ
+『永遠に霊長でありたい』『頂点のままであるべき』[r]という理念。
+[k]
+
+＠ＢＢドバイ
+科学が発達すればするほど、[r]人間が賢くなればなるほど、
+[k]
+
+＠ＢＢドバイ
+ムーン・キャンサーは強大になる。[r]人類では振り払えない『後ろから[#掴:つか]む手』になる。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠スペース・エレシュキガル
+どういう事！？　分かりやすく！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 1]
+＠ＢＢコスモ
+先頭を行く者を妨害する行為、です。
+[k]
+
+＠ＢＢコスモ
+……ＢＢドバイの語った人類の美しさの対岸にあるもの。[r]人類の欠点、知性体の持つ攻撃性の究極です。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠スペース・エレシュキガル
+気に食わないから[#一位:せんとう]の足を引っ張るってコト！？
+[k]
+
+[messageOff]
+[wt 0.6]
+
+？1：　　　　　、　　　　　
+？2：　　　　　　　　　　[line 6]
+？！
+
+[charaFace D 9]
+＠スペース・エレシュキガル
+も[messageShake 0.05 4 3 0.7]う言葉も消えかけてるーーー！？[r]しっかりするのだわーーー！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠ＢＢドバイ
+……申し訳ありません……。[r]私が……貴方たちを、倒せなかったばかりに……
+[k]
+
+[charaMoveScale G 1.2 45.0]
+[charaMoveScale S 1.2 45.0]
+[charaMove G 0,10 45.0]
+[charaMove S 0,-280 45.0]
+
+＠ＢＢドバイ
+ムーン・キャンサーには段階があります。
+[k]
+
+＠ＢＢドバイ
+いまだ霊長の座である事を[#誇示:こ　じ]する世界の変異。[r]テクスチャの簡易化。地球航海図。
+[k]
+
+＠ＢＢドバイ
+地球航海図上にいる人類の思考停止、知能低下。
+[k]
+
+[charaFace G 5]
+＠ＢＢドバイ
+そして[line 3][#全人類のムーンキャンサー化]。
+[k]
+
+＠ＢＢドバイ
+もう市民たちのムーンキャンサー化は始まっています。[r]現在、17パーセント。
+[k]
+
+＠ＢＢドバイ
+ムーンキャンサーが半数を超えた時、彼らは[r]ブルジュ・ハリファを倒壊させるでしょう。
+[k]
+
+＠ＢＢドバイ
+彼らが認めまいとする新しい霊長。[r]アーキタイプを、[#宙:ソラ]に飛ばさないために。
+[k]
+
+[messageOff]
+[wt 0.6]
+
+[charaDepth D 2]
+[charaDepth S 3]
+[charaDepth G 4]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+[wt 0.2]
+
+？1：　　　　　　　　　　　　　　　
+？2：　　　　　　　　　　　　　　　
+？！
+
+[messageOff]
+[charaTalk D,G]
+[charaFadeout G 0.4]
+[charaFadeout S 0.4]
+[wt 0.4]
+
+[charaSet G 1098299740 1 ＢＢドバイ]
+[sceneSet S 221630 1]
+[wt 0.2]
+
+＠スペース・エレシュキガル
+アーキタイプがあるの！？　このタワーに！？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth D 2]
+[charaDepth Q 3]
+[charaDepth G 4]
+[charaDepth R 5]
+[charaDepth C 6]
+
+[charaScale Q 1.2]
+[charaScale G 1.2]
+[charaFace G 5]
+[charaFadeinFSL G 0.5 -250,0]
+[charaFadein Q 0.5 100,-260]
+[wt 0.5]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+＠ＢＢドバイ
+アーキタイプは直径0.8ミリメートルの[r]高次情報結晶体。砂粒ほどの光です。
+[k]
+
+＠ＢＢドバイ
+ブルジュ・ハリファはアーキタイプが目覚め次第、[r]宙の彼方を目指す[#宇宙船:ロ ケ ッ ト]として建造されました。
+[k]
+
+＠ＢＢドバイ
+このタワーがムーン・ドバイ市民たちに破壊されれば[r]アーキタイプは消滅するでしょう。
+[k]
+
+＠ＢＢドバイ
+自分は求められていない子供である、と認識して。
+[k]
+
+[messageOff]
+[charaScale R 1.2]
+[charaScale C 1.2]
+[charaFace C 23]
+[charaFadeinFSR C 0.5 170,0]
+[charaFadein R 0.5 -100,-260]
+[wt 0.5]
+[charaFadeout G 0.1]
+[charaFadeout Q 0.1]
+[wt 0.2]
+
+＠ＢＢコスモ
+[line 3]ムーン・ドバイ市民たちは戦闘には向いていない[r]だけで、極めて高性能の個体です。
+[k]
+
+＠ＢＢコスモ
+彼らがすべてムーンキャンサーに変わって[r]攻撃してくるなら防ぎようがありません。
+[k]
+
+＠ＢＢコスモ
+……これが貴女が直面した滅亡だったのですね、[r]ＢＢドバイ。
+[k]
+
+＠ＢＢコスモ
+確かにわたしたちではどうしようもありません。[r]スペース・エレシュキガルであっても同じです。
+[k]
+
+＠ＢＢコスモ
+これは人類の手で克服しなければならない試練、[r]オーディール・コール。
+[k]
+
+＠ＢＢコスモ
+ですがそのコードが狂っている。[r]この現象は人類が望んで引き起こしたもの。
+[k]
+
+＠ＢＢコスモ
+いわば勝たせる気のない人類悪。[r]ムーン・キャンサーは人類に対して強力すぎる。
+[k]
+
+[messageOff]
+[charaFadeout C 0.6]
+[charaFadeout R 0.6]
+[wt 1.4]
+
+？1：　　　　　　あ
+？2：　　なにか　　　が　　　　くる
+？！
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠スペース・エレシュキガル
+マスター！？
+[k]
+
+[messageOff]
+[charaFadeout D 0.7]
+[cueSe SE_21 21_ad1122]
+[cueSeVolume 21_ad1122 0 0]
+[se ad440]
+[seVolume ad440 0 0]
+[se ad650]
+[cueSeVolume 21_ad1122 1.0 0.3]
+[seVolume ad440 1.0 0.3]
+[blur lens 0.3 2 20]
+[wt 0.5]
+[blurOff lens 1.5]
+[wt 1.0]
+
+[cueSeStop 21_ad1122 1.4]
+[seStop ad440 1.4]
+[seStop ad650 1.2]
+
+[charaDepth W 3]
+[charaDepth K 6]
+
+[charaScale K 1.2]
+[charaPut K 0,-220]
+[charaFadeTime K 3.0 0.5]
+
+[cueSe SE_23 23_ade908]
+[seVolume 23_ade908 0 0]
+[cueSeVolume 23_ade908 2.0 0.6]
+[bgmStop BGM_MAP_126 1.5]
+[wt 1.0]
+
+[cueSeVolume 23_ade908 1.3 0.3]
+
+[se ad555]
+[seVolume ad555 0 0]
+[cueSe SE_23 23_ade890]
+[cueSeVolume 23_ade890 0 0]
+[seVolume ad555 1.3 0.5]
+[cueSeVolume 23_ade890 1.3 0.2]
+[wt 1.0]
+
+[seStop ad555 1.0]
+[cueSeStop 23_ade890 1.0]
+[cueSeStop 23_ade908 1.0]
+
+[cueSe SE_24 24_ad1453]
+[seVolume 24_ad1453 0 0]
+
+[seVolume 24_ad1453 1.0 0.7]
+[wt 2.5]
+
+[se ad980]
+[wt 0.2]
+[charaPut W 1]
+[charaEffect W bit_talk_moon_cancer_tentacle]
+[wt 0.65]
+
+[se ad216]
+[seStop ad216 0.8]
+[wt 0.05]
+[fadeout C0C0C0 0.05]
+[seStop ad980 0.3]
+[seVolume 24_ad1453 0.3 0]
+[wait fade]
+
+[cameraFilter gray]
+
+[cameraMove 60.0 0,0 1.1]
+
+[fadein C0C0C0 0.05]
+[wait fade]
+[wt 1.2]
+
+
+？1：[line 3]ああ[line 3]あ[line 3]
+？2：自分が[line 3]自分で[line 3]なくな[line 3]
+
+？！
+
+[messageOff]
+[wt 0.1]
+
+[fadeout C0C0C0 0.05]
+[wait fade]
+
+[cameraFilter normal]
+
+[cameraMove 0 0,0 1.01]
+
+[seVolume 24_ad1453 0.3 0.5]
+
+[fadein C0C0C0 0.05]
+[wait fade]
+[wt 0.6]
+
+[cueSe SE_23 23_ad1247]
+[cueSeVolume 23_ad1247 0 0.6]
+[charaEffectStop W bit_talk_moon_cancer_tentacle]
+[wt 0.5]
+
+[seStop 24_ad1453 1.5]
+[wt 0.5]
+
+[cueSeStop 23_ad1247 1.5]
+[fadeout white 1.0]
+[wait fade]
+
+[charaEffectDestroy W bit_talk_moon_cancer_tentacle]
+[scene 10001]
+[charaFadeout K 0.1]
+
+[wt 0.4]
+[fadein white 0.2]
+[wait fade]
+
+[se ade36]
+[se ad813]
+[cueSe SE_21 21_ade645]
+[wt 0.05]
+[fadeout 424242 0.1]
+[wait fade]
+
+[cueSeStop 21_ade645 0.4]
+[scene 10001]
+
+[fadein 424242 0.1]
+[wait fade]
+
+[wt 0.5]
+
+[fadeout white 0.1]
+[wait fade]
+
+[scene 221630]
+[wt 1.0]
+
+[cameraMove 0 0,0 1.01]
+[wt 0.5]
+
+[fadein white 2.0]
+[wait fade]
+
+[wt 0.6]
+
+？1：思考が戻った！
+？2：でもなんで！？
+？！
+
+[charaScale G 1.0]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ＢＢドバイ
+[line 3]え？
+[k]
+
+＠ＢＢドバイ
+うそ……どうして？[r]どうしてこんな事が[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth G 2]
+[charaDepth Q 3]
+[charaDepth H 4]
+
+[charaScale H 1.4]
+[charaScale Q 1.3]
+[charaFace H 0]
+[charaFadein H 1.0 1]
+[charaFadein Q 1.0 0,-360]
+[wt 1.4]
+＠ＢＢドバイ
+守られてる……[r]ブルジュ・ハリファのまわりに集まって、彼らが[line 3]
+[k]
+
+＠ＢＢドバイ
+ムーン・ドバイの市民のみんなが、[r]私たちを守っている！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

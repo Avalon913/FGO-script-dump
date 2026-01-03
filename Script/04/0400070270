@@ -1,0 +1,781 @@
+
+＄04-00-07-02-7-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 1098341100 1 オルガマリー]
+[charaSet B 5021002 1 キャスター]
+[charaSet C 8001900 1 マシュ]
+[charaSet D 1098344400 1 セイバーオルタ]
+
+[masterSet E 1098259460 1098259470 1]
+
+[charaSet F 8001900 1 マシュ_演出用]
+[charaSet G 1098344400 1 セイバーオルタ_演出用]
+[charaSet H 1098344400 1 セイバーオルタ_演出用]
+[charaSet I 1098341100 1 オルガマリー_演出用]
+[charaSet J 5021002 1 キャスター_演出用]
+
+[sceneSet K 107400 1]
+[sceneSet L 107400 1]
+[sceneSet M 107400 1]
+[sceneSet N 107400 1]
+[sceneSet O 107400 1]
+
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth C 2]
+[charaDepth B 3]
+[charaDepth A 4]
+[charaDepth E 5]
+[charaDepth D 6]
+[charaDepth K 7]
+[charaDepth L 8]
+[charaDepth G 9]
+[charaDepth H 10]
+[charaDepth N 11]
+[charaDepth F 12]
+[charaDepth O 13]
+[charaDepth I 14]
+[charaDepth J 15]
+
+[scene 269200]
+[cameraMove 0.1 260,-65 1.65]
+[charaTalk A]
+[charaFace A 16]
+[charaPut A 1]
+[charaFadeTime A 0 0]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[bgm BGM_MAP_115 0.1]
+[cameraMoveEase 0,0 1.5 easeOutSine 1.0]
+[wt 1.1]
+[charaFadeTime A 0.4 1.0]
+[wt 0.6]
+
+＠オルガマリー
+よし、到着。入り口も崩れていない。[r]問題なく地下空洞に入れるわ。
+[k]
+
+[charaFace A 0]
+
+＠オルガマリー
+貴方たちも知っていると思うけど、[#一応:いちおう]確認ね。
+[k]
+
+＠オルガマリー
+ここから天然の洞穴を下っていって、[r]洞穴の終わりにある広場を抜けた先に大聖杯[line 3]
+[k]
+
+＠オルガマリー
+聖杯戦争を起こす為に作られた魔術炉心がある。[r]カルデアスに繋がっている座標はそこよ。
+[k]
+
+＠オルガマリー
+中に入ったらもう休みは無しで[r]大聖杯まで駆け抜ける事になる。
+[k]
+
+＠オルガマリー
+準備はいい？
+[k]
+
+？1：もちろん！
+
+？2：……[&オレ:わたし]たちの旅が始まった場所、ですね
+
+[charaFace A 11]
+
+＠オルガマリー
+……そうね。地球はなぜこうなったか。[r]その原因となった場所よ。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠キャスター
+なんにせよもう邪魔者はいねえんだ。[r]休みをとって気力も充分。負ける要素はねえ。
+[k]
+
+＠キャスター
+行くぞ。最速で地下空洞に駆け込んで、[r]全力でクソ監督役をブチのめす！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C,E,A]
+[charaFace C 7]
+[charaFace E 0]
+[charaFace A 0]
+[charaFadein E 0.1 1]
+[charaFadeinFSL A 0.1 -300,0]
+[charaFadeinFSR C 0.1 300,0]
+[wt 0.3]
+
+[charaMoveReturn E 0,-4 0.5]
+[wt 0.1]
+[charaMoveReturnFSR C 300,-4 0.5]
+[wt 0.1]
+[charaMoveReturnFSL A -300,-4 0.5]
+[wt 1.5]
+
+[wipeout leftToRight 0.7 1.0]
+[bgmStop BGM_MAP_115 1.0]
+[wait wipe]
+
+[charaFadeout E 0]
+[charaFadeout C 0]
+[charaFadeout A 0]
+
+[subCameraOn 4]
+[charaLayer L sub #A]
+[subCameraFilter #A through]
+
+[charaLayer M sub #B]
+[charaLayer B sub #B]
+[charaLayer C sub #B]
+[charaLayer A sub #B]
+[subCameraFilter #B maskEdge cut359_mask08 4 125,125,125,255 0]
+
+[charaScale C 1.1]
+[charaScale A 1.1]
+[charaScale B 1.21]
+[charaFace C 12]
+[charaFace A 4]
+[charaFace B 5]
+[charaFadein A 0.1 100,210]
+[charaFadeinFSR C 0.1 356,225]
+[charaFadeinFSL B 0.1 -156,235]
+[charaScale M 1.3]
+[charaFadein M 0.1 10,0]
+
+[charaLayer N sub #C]
+[charaLayer F sub #C]
+[subCameraFilter #C normal]
+
+[charaScale N 1.01]
+[charaFadein N 0.1 0,-200]
+[subRenderFadein #C 0.1 0,0]
+
+[charaLayer O sub #D]
+[charaLayer I sub #D]
+[subCameraFilter #D normal]
+
+[charaScale O 1.2]
+[charaScale I 1.1]
+[charaFadein O 0.1 0,-300]
+[charaFace I 16]
+[charaFadein I 0.1 1]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+[subRenderDepth #D 4]
+
+[scene 107400]
+[wt 0.5]
+
+[se ad769 0.5 1.0]
+[cueSe SE_25 25_ad1459 0.5 0.5]
+[charaScale K 1.4]
+[charaFadein K 0.1 150,-150]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[charaScale G 1.25]
+[charaFace G 4]
+[charaFadein G 0.1 0,200]
+[wt 3.0]
+
+[wipein rightToLeft 0.7 1.0]
+[wait wipe]
+[wt 0.5]
+
+[seStop ad769 0.5]
+[cueSeStop 25_ad1459 0.5]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.3 320,0]
+[charaMove F 250,0 0.3]
+[wt 0.3]
+
+＠F：マシュ
+！　皆さん、止まって！[r]広場の中央にサーヴァント反応です！
+[k]
+
+＠F：マシュ
+あれは[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+[subCameraMove #C 1.2 80,-20 1.3]
+[wt 0.4]
+
+[subRenderFadeout #C 0.6]
+[wt 0.6]
+[bgm BGM_EVENT_5 0.1]
+[wt 0.7]
+
+[charaScale F 1.25]
+[charaScale N 1.4]
+[charaPut N -220,-300]
+[charaPut F 100,0]
+[subCameraMove #C 0.1 0,0 1.0]
+
+[charaMoveEase G 0,20 0.8 easeInOutQuad]
+[charaMoveEase K 150,-330 0.8 easeInOutQuad]
+[wt 1.3]
+
+＠セイバー
+…………。
+[k]
+
+[messageOff]
+[blur lens 0.3 4 1]
+[subRenderFadein #B 0.3 0,-310]
+[charaMoveEaseFSR C 256,225 0.3 easeOutQuad]
+[charaMoveEase A 0,210 0.3 easeOutQuad]
+[charaMoveEaseFSL B -256,235 0.3 easeOutQuad]
+[charaMoveEase M -90,0 0.3 easeOutQuad]
+[wt 1.8]
+[blurOff lens 0.3]
+[subRenderFadeout #B 0.3]
+[charaMoveEaseFSR C 156,225 0.3 easeOutQuad]
+[charaMoveEase A -100,210 0.3 easeOutQuad]
+[charaMoveEaseFSL B -350,235 0.3 easeOutQuad]
+[charaMoveEase M -190,0 0.3 easeOutQuad]
+[wt 0.8]
+[charaScale C 1.0]
+[charaScale A 1.0]
+[charaScale B 1.0]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[charaFadeout M 0.1]
+[wt 0.4]
+
+？1：あの時のセイバー……！
+？2：今ならわかる、オルタのセイバー……！
+
+？！
+
+[charaLayer M normal]
+[charaLayer B normal]
+[charaLayer C normal]
+[charaLayer A normal]
+[blurOff lens 0.5]
+[charaFadeout K 0.5]
+[charaFadeout G 0.5]
+[wt 0.7]
+
+[charaLayer G sub #A]
+[charaScale L 1.4]
+[charaFadein L 0.1 250,-50]
+[charaFace G 0]
+[charaFadein G 0.1 -70,200]
+[subCameraFilter #A maskEdge cut359_mask10 4 56,45,65,255 0]
+
+[charaTalk on]
+[charaTalk D]
+[charaFaceFade D 0 0.2]
+
+＠セイバーオルタ
+なぜ[#驚:おどろ]く。この特異点の再現であれば、[r]私がいる事は自明の理のはず。
+[k]
+
+＠セイバーオルタ
+それとも、そこの無礼者が[r]つまらぬ予想でも披露したか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠キャスター
+おう。テメエはさっさとやられちまったに[r]違いないと偉そうに[#吹聴:ふいちょう]したぜ。
+[k]
+
+＠キャスター
+だが間違いでもねえだろ。[r]テメエ、もうほとんど消えかけてるじゃねえか。
+[k]
+
+＠キャスター
+監督役とやりあって負けた、ってのは[r]ハズレてねえだろ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠セイバーオルタ
+……否定はしない。私の霊核は破壊された。[r]サーヴァントとして十全に戦う事はできない。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠キャスター
+そうかい。[r]ってことは冥土の土産に話す気になったのか？
+[k]
+
+＠キャスター
+テメエが[#大聖杯]に陣取っていた理由[line 3][r]なぜこの特異点を護っていたのか、ってヤツ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠セイバーオルタ
+なぜこの特異点を護っていたか、だと？
+[k]
+
+[charaFace D 0]
+
+＠セイバーオルタ
+語るまでもない。[r][#この証拠をカルデアに消させない為だ]。
+[k]
+
+＠セイバーオルタ
+あのアーチャーがそう感じたように、[r]私もまた、この特異点が崩壊の基点だと察した。
+[k]
+
+＠セイバーオルタ
+いや、そもそも特異点、などという事象が[r]発生した事がおかしい。
+[k]
+
+＠セイバーオルタ
+特異点……人類史の流れから隔絶された時空など、[r]この時点までは存在しなかった。
+[k]
+
+＠セイバーオルタ
+『2004年の聖杯戦争』は何者かの意志で[#歪:ゆが]み、[r]その結果、この座標は不確かな観測不能域[line 3]
+[k]
+
+＠セイバーオルタ
+[#人類史において最初の特異点]になった。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+待ってください、それじゃあ[line 3]
+[k]
+
+＠マシュ
+それまで……この特異点が発生するまで、[r]他に特異点は発生していなかった、のですか……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠セイバーオルタ
+そうだ。並行世界移動による微細な干渉はあっても、[r]一度[#刻:きざ]まれた人理定礎は変動しない。
+[k]
+
+＠セイバーオルタ
+だが特異点は違う。[r]実際に人理定礎を変えてしまう。
+[k]
+
+＠セイバーオルタ
+我が宝具、[#聖剣の鞘:ア  ヴ  ァ  ロ  ン]は[r][#時空間:じくうかん]干渉をも[#防:ふせ]ぐ楽園の守り。
+[k]
+
+＠セイバーオルタ
+それ故に、この座標そのものを破壊……いや、[r]消去しようとする第三者の意図を感じ取った。
+[k]
+
+＠セイバーオルタ
+この特異点を作り出したものは、[r]この特異点を消したがっている。
+[k]
+
+＠セイバーオルタ
+この矛盾について、アーチャーはこう語った。[r]『殺人事件だ』と。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠キャスター
+アーチャーに意見求めたのかよ。[r]そこは[#知恵者:キャスター]に求めろよ、キャスターに！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠セイバーオルタ
+貴様がキャスターでは話す気になれん。
+[k]
+
+[charaFace D 4]
+
+＠セイバーオルタ
+ヤツは言った。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale H 1.25]
+[charaFace H 4]
+[charaFadein H 0.6 -100,0]
+[charaFadein K 0.6 0,-340]
+[charaMove H 0,0 40.0]
+[charaMove K 100,-340 40.0]
+[wt 0.8]
+
+＠セイバーオルタ
+『殺人事件において完全犯罪が成立しないのは[r]　被害者である『死体』があるからだ』
+[k]
+
+＠セイバーオルタ
+『凶器は隠せる。アリバイも作れる。[r]　だが死体だけは隠せない』
+[k]
+
+＠セイバーオルタ
+『隠した時点で殺人事件として認知されない。[r]　世間にとっては“何も起きていない”事だ』
+[k]
+
+＠セイバーオルタ
+『犯人の目的はそれだ』
+[k]
+
+＠セイバーオルタ
+『この[#歪:ゆが]みを犯罪だと知られないまま、[r]　善意の第三者の手で消去させる』
+[k]
+
+＠セイバーオルタ
+『それなら犯人に手が伸びる事も、[r]　そもそも犯罪があったという痕跡さえなくなる』
+[k]
+
+＠セイバーオルタ
+『完璧な[#証拠隠滅:しょうこいんめつ]だ。[r]　凶器も死体もないのなら、どんな名探偵にも[#暴:あば]けない』
+[k]
+
+[bgmStop BGM_EVENT_5 1.8]
+
+[messageOff]
+[charaFace F 13]
+[subRenderFadein #C 0.5 0,0]
+[wt 0.5]
+[charaMove K 100,-250 0.1]
+[charaFadeout K 0.1]
+[charaFadeout H 0.1]
+
+＠マシュ
+では……最初のレイシフト実験……[r]特異点Ｘの発生ははじめから[line 3]
+[k]
+
+[messageOff]
+[subRenderFadein #D 0.5 0,0]
+[subCameraMove #D 30.0 0,-20 1.1]
+[wt 0.7]
+[subRenderFadeout #C 0.1]
+
+[bgm BGM_EVENT_199 0.1 0.8]
+
+＠オルガマリー
+……そう。はじめから予定にあった出来レース。
+[k]
+
+＠オルガマリー
+Ａチームの準備とレイシフトが可能になった時点で[r]特異点Ｘをシバに発見させるよう仕組まれていた。
+[k]
+
+＠オルガマリー
+それを知っていたのは[r]マリスビリー・アニムスフィアだけ。
+[k]
+
+＠オルガマリー
+カルデアスの完成……いえ、この冬木の聖杯戦争で[r]お父様が聖杯を手にした時点で、
+[k]
+
+＠オルガマリー
+特異点Ｘの発見も、その修復も、[r]異星カルデアスによる地球侵略も、
+[k]
+
+＠オルガマリー
+何の問題もなく実行されるはずだった。[r][line 3]貴方とレフがいなければ。
+[k]
+
+[messageOff]
+[subRenderFadeout #D 0.5]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk D]
+[wt 0.8]
+
+[charaFaceFade D 0 0.2]
+
+＠セイバーオルタ
+……マリスビリーの計画は特異点Ｘには[r]Ａチームが現れ、すみやかに消去するものだった。
+[k]
+
+＠セイバーオルタ
+だが実際は違う。
+[k]
+
+＠セイバーオルタ
+『2017年から先の未来はない』[r]そう見通した魔術王の介入によってＡチームは殺害され、
+[k]
+
+＠セイバーオルタ
+私は聖杯を守り、特異点の消去を[#阻:はば]んだ。
+[k]
+
+＠セイバーオルタ
+[#この証拠]を、最後の希望を消させないために。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠キャスター
+そうかい。あん時はおとなしく退去したと思ったが、[r]テメエ、こっそり残ってやがったな？
+[k]
+
+＠キャスター
+ひとり残って特異点を護り続けた。[r]まさに人理の[#防人:さきもり]だ。
+[k]
+
+[charaFace B 0]
+
+＠キャスター
+それで消耗しきって監督役に倒されたワケか。[r]ご苦労サン、とは言っておくぜ。
+[k]
+
+＠キャスター
+じゃ、そういう事で。
+[k]
+
+[bgmStop BGM_EVENT_199 1.8]
+
+[messageOff]
+[charaTalk off]
+[se ad452]
+[charaFadeout B 0.4]
+[wt 0.8]
+[charaScale K 1.4]
+[charaScale J 1.25]
+[charaFace J 0]
+[charaFadeinFSR J 0.4 320,0]
+[charaFadein K 0.4 -260,-300]
+[charaMove K -190,-300 1.3]
+[charaMoveFSR J 250,0 1.3]
+[wt 1.0]
+[seStop ad452 0.3]
+[charaFace G 0]
+[subRenderFadein #A 0.3 -232,-190]
+[subRenderMoveEase #A -212,-220 0.3 easeOutCubic]
+[wt 0.3]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[charaTalk G]
+[charaFace G 5]
+[se ad51]
+[charaTalk on]
+[charaTalk D]
+
+＠G：セイバーオルタ
+待て。
+[k]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+
+＠J：キャスター
+おいおい。言いたい事は言ったんだろ。[r]こっちはこれから大勝負だ。[#野暮:や　ぼ]は御免だぜ。
+[k]
+
+[charaTalk G]
+[charaFace G 0]
+
+＠G：セイバーオルタ
+貴様に用はない。[r]あるのはシールダーとそのマスターだ。
+[k]
+
+？1：[&オレ:わたし]たち……？
+
+[messageOff]
+[charaTalk D,G]
+[charaFadeout K 0.4]
+[charaFadeout J 0.4]
+[subRenderFadeout #A 0.4]
+[wt 0.6]
+
+？2：…………もしかして…………リベンジ？
+
+[charaFaceFade G 6 0.2]
+[charaFaceFade D 6 0.2]
+
+＠G：セイバーオルタ
+[line 6]。
+[k]
+
+[messageOff]
+[charaTalk D,G]
+[charaFadeout K 0.4]
+[charaFadeout J 0.4]
+[subRenderFadeout #A 0.4]
+[wt 0.8]
+
+[charaFaceFade D 0 0.2]
+
+？！
+
+＠セイバーオルタ
+[#腕試:うでだめ]しだ。やっていけ。
+[k]
+
+＠セイバーオルタ
+前回は最後の最後で力を緩めた。[r]私らしくもない。
+[k]
+
+[charaFaceFade D 4 0.15]
+
+＠セイバーオルタ
+あれで勝負がついたと思われるのは心外だ。
+[k]
+
+[charaFaceFade D 5 0.15]
+
+＠セイバーオルタ
+[line 3]盾を取れ、シールダー。[r]聖剣の使い方というものを、その体に教えてやろう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+
+＠マシュ
+あ、あの、それは予想外というか、[r]こちらも戦力の[#温存:おんぞん]がテーマというか、
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠セイバーオルタ
+使えぬままでいるのは温存とは言うまい。[r]それとも、円卓の騎士の[#稽古:けいこ]は不服か？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_71 1.5]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+
+[charaFaceFade C 7 0.2]
+
+＠マシュ
+との事です！[r]いかがでしょう、マスター！
+[k]
+
+？1：もちろん！
+？2：全力で！
+
+？！
+
+[bgm BGM_BATTLE_301 0.1]
+
+[charaFace C 1]
+
+＠マシュ
+はい！　マスター・[%1]、[r]シールダー・パラディーン、マシュ・キリエライト！
+[k]
+
+＠マシュ
+これまでの旅の成果を、ここで、あなたにぶつけます！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠セイバーオルタ
+[line 3]いい威勢だ。[r]それでこそ、待ち続けた甲斐がある！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_301 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

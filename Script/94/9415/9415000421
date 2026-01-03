@@ -1,0 +1,458 @@
+
+
+
+
+
+
+＄94-15-00-04-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3062000 1 エリザベート]
+[charaSet B 25010001 1 モレー]
+[charaSet C 1098337710 1 フレッカス]
+[charaSet E 1098337800 1 信徒]
+[charaRollAxis E y 180 0 0]
+
+[sceneSet F 10000 1]
+[charaScale F 1.1]
+
+[charaSet G 1098340700 1 メカエリチャンⅡ号機]
+
+[sceneSet H 265400 1]
+[sceneSet I 265400 1]
+[sceneSet J 265400 1]
+[sceneSet K 265400 1]
+[charaScale K 1.3]
+
+[charaSet L 98115000 1 エフェクト用]
+
+[imageSet Q cut758_warehouse 1]
+[charaScale Q 1.35]
+
+[charaSet R 1098339700 1 パーフェクトエリザベート_第三_槍]
+
+[imageSet U cut759_warehouse_destruction 1]
+[charaScale U 1.35]
+
+[masterBranch _Male _Female]
+[label _Male]
+[sceneSet T 268200 1]
+
+[branch _branchEnd]
+[label _Female]
+[sceneSet T 268210 1]
+
+[branch _branchEnd]
+[label _branchEnd]
+
+[charaTalk depthOff]
+[subCameraOn 1]
+
+[charaLayer F sub #A]
+[charaLayer R sub #A]
+[charaLayer L sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask20 5 255,51,204,255 0]
+
+[charaScale R 1.4]
+[charaScale F 1.1]
+
+[charaDepth F 2]
+[charaDepth R 4]
+[charaDepth L 5]
+
+[charaRoll R -117 50,300]
+
+[charaPut L 0,0]
+[charaEffect L bit_talk_rising_particles]
+
+[charaFadein R 0 -20,200]
+[charaFadein F 0 0,0]
+
+[cameraMove 0.1 0,0 1.01]
+
+[scene 265400]
+
+[subRenderFadein #A 0.1 -230,-200]
+
+[charaDepth K 1]
+[charaDepth A 2]
+
+[charaScale A 1.3]
+
+[charaTalk off]
+[charaFace A 3]
+[charaFadein A 0.1 250,20]
+[charaFadein K 0.1 -200,-280]
+
+[charaEffectEdgeBlur R FF66CC ff0000 4 4]
+[wt 1.5]
+
+[charaMove R -20,-30 10.0]
+
+[cueSe SE_21 21_ad1108]
+[cueSeVolume 21_ad1108 0 0]
+[cueSe SE_22 22_ad1180]
+[cueSeVolume 22_ad1180 0 0]
+[cueSe SE_22 22_ad1197]
+[cueSeVolume 22_ad1197 0 0]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSeVolume 21_ad1108 1.0 0.3]
+[cueSeVolume 22_ad1180 1.0 0.3]
+[cueSeVolume 22_ad1197 1.0 0.2]
+
+[bgm BGM_BATTLE_109 0.1]
+
+[wt 1.0]
+
+＠エリザベート
+え、え、え、槍が……輝いて……？
+[k]
+
+
+[messageOff]
+
+[cueSe SE_21 21_ad1134]
+[wt 0.5]
+
+[cueSeStop 21_ad1108 0.1]
+[cueSeStop 22_ad1180 0.1]
+[cueSeStop 22_ad1197 0.1]
+[fadeout FF66CC 0.1]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+
+[charaFadeout F 0.1]
+[charaFadeout R 0.1]
+[charaEffectEdgeBlurDestroy R]
+[charaFadeout A 0.1]
+[charaFadeout K 0.1]
+
+[charaLayer R normal]
+[charaLayer F normal]
+[charaLayer L normal]
+
+[charaEffectDestroy L bit_talk_rising_particles]
+
+[charaScale A 1.0]
+
+[charaDepth C 2]
+[charaDepth B 3]
+[charaDepth E 4]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.1 -350,0]
+
+[charaFace B 26]
+[charaFadein B 0.1 1]
+
+[charaFace C 5]
+[charaFadein C 0.1 370,0]
+
+[wt 0.2]
+
+[se ade216]
+
+[fadein FF66CC 0.2]
+[wait fade]
+[wt 0.2]
+
+[charaTalk on]
+＠信徒
+[f large]ぬ[messageShake 0.05 2 2 0.5]わー！？
+[k]
+
+＠モレー
+[f large]ひ[messageShake 0.05 2 2 0.5]ゃー！？
+[k]
+
+＠フレッカス
+[f large]う[messageShake 0.05 2 2 0.5]びゃー！？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+な[messageShake 0.05 3 3 0.5]になになにー！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[bgm BGM_BATTLE_109 0.4 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+
+[charaLayer H normal]
+[charaLayer I normal]
+[charaLayer J normal]
+[charaLayer C normal]
+[charaLayer B normal]
+[charaLayer E normal]
+
+[charaScale H 1.0]
+[charaScale I 1.0]
+[charaScale J 1.0]
+[charaScale E 1.0]
+[charaScale B 1.0]
+[charaScale C 1.0]
+
+[scene 10000]
+
+[wt 0.2]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[se ade467]
+[se ad477]
+[se ad363]
+
+[effect bit_talk_arrow01_pink]
+
+[wt 2.5]
+
+[seStop ad477 0.5]
+[seStop ad363 0.5]
+[seStop ade467 0.5]
+[wt 0.2]
+
+[bgmStop BGM_BATTLE_109 0.5]
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[scene 10000]
+
+
+[charaDepth Q 2]
+[charaDepth U 3]
+
+
+[charaFadein Q 0.1 0,-400]
+
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[se ad864]
+[effect bit_talk_explosion 0,100]
+[shake 0.01 5 4 2.5]
+[wt 0.5]
+[charaFadein U 0.1 0,-400]
+
+[wt 4.0]
+
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[charaFadeout U 0.1]
+[charaFadeout Q 0.1]
+[effectDestroy bit_talk_explosion]
+
+[scene 265400]
+
+
+[charaLayer T sub #A]
+[charaLayer G sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask14 3 192,192,192,255]
+
+[subRenderScale #A 1.0]
+
+[charaScale T 0.55]
+[charaScale G 0.93]
+
+[charaDepth T 2]
+[charaDepth G 4]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 460,192]
+[charaFadein T 0 420,110]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 -300,0]
+
+[charaFace C 10]
+[charaFadein C 0.1 300,0]
+
+[wt 0.5]
+
+[effect bit_talk_rubble]
+
+[se ad228]
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[wt 1.5]
+
+[seStop ad228 0.5]
+[effectStop bit_talk_rubble]
+
+＠信徒
+……。[r]……。
+[k]
+
+[messageOff]
+
+[charaMove E -300,-60 0.3]
+[charaFadeout E 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.5]
+
+[charaTalk C]
+＠フレッカス
+きゅぅ……。
+[k]
+
+[messageOff]
+
+[charaMove C 300,-60 0.3]
+[charaFadeout C 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+[charaShake A 0.05 3 1 0.4]
+
+＠エリザベート
+あわ……あわわわわ……。[r]こ、この槍って……この槍って……！
+[k]
+
+？1：と、とんでもない[&な:ね]……！？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[subRenderFadein #A 0.2 -150,-220]
+
+＠メカエリチャンⅡ号機
+[line 3]さて。[r]色々とあったけど、一つやるべきことがあります。
+[k]
+
+[charaFace G 6]
+
+＠メカエリチャンⅡ号機
+逃げるわ、全力で。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+
+[charaTalk off]
+[charaDepth C 2]
+[charaDepth K 3]
+[charaDepth B 4]
+[charaDepth A 5]
+
+[charaScale B 1.3]
+[charaScale A 1.3]
+[charaFace B 6]
+[charaFadein B 0.4 300,0]
+[charaFace A 0]
+[charaFadein A 0.4 -300,0]
+[charaFadein K 0.4 0,-250]
+[wt 0.7]
+
+[charaFace C 10]
+[charaFadein C 0.1 0,-20]
+[charaMoveReturn B 300,-5 0.4]
+[charaMoveReturn A -300,-5 0.4]
+[wt 1.0]
+
+[charaFadeout K 0.4]
+[charaFadeout A 0.4]
+[charaFadeout B 0.4]
+[wt 1.0]
+
+[charaScale B 1.0]
+[charaScale A 1.0]
+[charaDepth B 3]
+[charaDepth A 4]
+[charaDepth C 5]
+
+？1：ほらフレッカス！
+？！
+
+[charaFace C 7]
+
+＠フレッカス
+お、おー……？
+[k]
+
+[messageOff]
+[charaFace B 6]
+[charaFadein B 0.3 370,0]
+[charaFace A 0]
+[charaFadein A 0.3 -370,0]
+[charaMove B 350,0 0.3]
+[charaMove A -350,0 0.3]
+[wt 0.6]
+[charaMoveReturn B 350,-20 0.8]
+[charaMoveReturn A -350,-20 0.8]
+[wt 0.5]
+[se ad183]
+[charaShake C 0.03 1 1 0.4]
+[charaMove C 0,0 0.4]
+[wt 1.1]
+
+[se ad344 0.4]
+[cueSe SE_23 23_ad1292]
+[charaShake C 0.03 2 1 1.0]
+[charaMove B 500,0 0.6]
+[charaMove A -200,0 0.6]
+[charaMove C 150,0 0.6]
+[wt 0.2]
+[seStop ad344 2.0]
+[cueSeStop 23_ad1292 2.0]
+[charaFadeout C 0.4]
+[charaFadeout A 0.4]
+[charaFadeout B 0.4]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

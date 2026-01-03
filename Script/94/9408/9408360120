@@ -1,0 +1,1474 @@
+
+＄94-08-36-01-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 5028001 1 イリヤ]
+[charaSet B 5041001 1 美遊]
+[charaSet C 5028001 1 演出用_イリヤ１]
+[charaSet D 5028001 1 演出用_イリヤ２]
+[charaSet E 5028001 1 演出用_イリヤ３]
+[charaSet F 1098267300 1 シャドウサーヴァント]
+
+[charaSet G 1098159200 1 絡繰人形]
+[charaSet H 1098159200 1 絡繰人形]
+[charaSet I 1098159200 1 絡繰人形]
+[charaFilter G silhouette 00000080]
+[charaFilter H silhouette 00000080]
+[charaFilter I silhouette 00000080]
+
+[sceneSet J 110100 1]
+[sceneSet K 110100 1]
+[sceneSet L 110100 1]
+
+[charaSet M 98115000 1 エフェクト用]
+[charaSet N 98115000 1 エフェクト用]
+[charaSet O 98115000 1 エフェクト用]
+[charaSet P 98115000 1 エフェクト用]
+
+[imageSet Q back10001 1 1]
+[charaScale Q 1.01]
+[charaDepth Q 9]
+
+[scene 107801]
+
+[subCameraOn 2]
+[subCameraFilter #A maskEdge cut359_mask18 3 255,105,180,0]
+[subCameraFilter #B maskEdge cut359_mask18 3 255,105,180,0]
+[subRenderScale #A 1.2]
+[subRenderScale #B 1.2]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[charaLayer C sub #A]
+[charaLayer J sub #A]
+[charaLayer M sub #A]
+[charaLayer D sub #B]
+[charaLayer K sub #B]
+[charaLayer N sub #B]
+
+[charaTalk depthOff]
+[charaDepth C 3]
+[charaDepth D 3]
+[charaDepth E 3]
+[charaDepth M 2]
+[charaDepth N 2]
+[charaDepth O 2]
+[charaDepth J 1]
+[charaDepth K 1]
+[charaDepth L 1]
+
+[charaScale C 1.1]
+[charaScale M 1.0]
+[charaScale J 1.2]
+[charaFace C 2]
+[charaFadein C 0.1 0,260]
+[charaPut M -100,200]
+[charaEffect M bit_talk_42]
+[charaFadein J 0.1 0,80]
+[charaScale D 1.1]
+[charaScale N 1.0]
+[charaScale K 1.2]
+[charaFace D 2]
+[charaFadein D 0.1 200,140]
+[charaPut N 100,200]
+[charaEffect N bit_talk_42 0,0 H]
+[charaFadein K 0.1 100,-50]
+
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[fadein black 1.0]
+[bgm BGM_BATTLE_107 0.1]
+[wait fade]
+
+
+
+[se ad66]
+[seVolume ad66 0 0.5]
+[cueSe SE_21 21_ad1066]
+[cueSeVolume 21_ad1066 0 0.8]
+[se ad1021]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.3]
+[charaFace H 0]
+[charaFadeinFSR H 0.4 2]
+[wt 0.3]
+[se ad1021]
+[charaFace I 0]
+[charaFadeinFSL I 0.4 0]
+[wt 0.6]
+
+[charaMove G 0,5 1.0]
+[charaMoveScale G 1.1 0.3]
+[wt 0.2]
+[charaMoveFSR H 246,5 1.0]
+[charaMoveScale H 1.1 0.3]
+[wt 0.2]
+[seStop ad66 0.2]
+[cueSeStop 21_ad1066 0.2]
+[charaMove I -246,5 1.0]
+[charaMoveScale I 1.1 0.3]
+[wt 0.2]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[charaMove A 0,-10 0.3]
+[wt 0.4]
+
+[cueSe NoblePhantasm_502800 NP_502800_4]
+[cueSeVolume NP_502800_4 0 0.5]
+[cueSe Servants_2501100 m52516]
+[cueSeVolume m52516 0 0.5]
+[charaFace A 2]
+[charaMove A 0,100 0.4]
+[charaSpecialEffect A erasureReverse 1 0.3]
+[wt 0.2]
+[charaRoll P 90 0,350]
+[charaEffect P bit_talk_gale 0,0 H]
+[wt 0.5]
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[bgm BGM_BATTLE_107 0.4 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaEffectDestroy P bit_talk_gale]
+
+[scene 110100]
+
+[charaTalk off]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[bgm BGM_BATTLE_107 0.4 1.0]
+[wait wipe]
+
+
+[cueSe Servants_303500 bac857]
+[subRenderFadeinFSSideR #B 0.3 30,-150]
+[subRenderMoveFSSideR #B 0,-150 0.3]
+[wt 0.5]
+
+[cueSe Servants_604700 m52702]
+[effect bit_talk_14 -300,-50]
+[wt 0.4]
+[effect bit_talk_14 -100,-150]
+[cueSeStop m52702 0.5]
+[wt 0.3]
+
+[subRenderMoveFSSideR #B -30,-150 0.3]
+[subRenderFadeout #B 0.2]
+[wt 0.2]
+
+
+[cueSe Servants_303500 bac857]
+[subRenderFadeinFSSideL #A 0.3 -230,-520]
+[subRenderMoveFSSideL #A -200,-520 0.3]
+[wt 0.5]
+
+[cueSe Servants_604700 m52701]
+[cueSe Servants_604700 m52716]
+[effect bit_talk_14 50,100]
+[wt 0.4]
+[cueSeStop m52716 0.5]
+[effect bit_talk_14 300,50]
+[wt 0.3]
+
+[subRenderMoveFSSideL #A -170,-520 0.3]
+[subRenderFadeout #A 0.2]
+[wt 0.4]
+
+
+[charaDepth P 2]
+[charaDepth E 1]
+[charaScale P 1.1]
+[charaScale E 1.0]
+[charaFace E 2]
+[charaPut E 0,20]
+[charaSpecialEffect E appearance 1 0.25]
+[se ad73]
+[charaPut P 0,100]
+[charaEffect P bit_talk_quickmove]
+[wt 0.5]
+
+[cueSe Servants_603400 bac780]
+[charaMove E 0,0 0.4]
+[charaMoveScale E 1.1 0.4]
+[backEffect bit_talk_41_back]
+[cameraMove 0.4 0,-20 1.2]
+[wait camera]
+[cueSeStop bac780 0.4]
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[bgm BGM_BATTLE_107 0.4 0.4]
+[wait wipe]
+
+[charaEffectDestroy M bit_talk_42]
+[charaEffectDestroy N bit_talk_42]
+[backEffectDestroy bit_talk_41_back]
+[charaEffectDestroy P bit_talk_gale]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaLayer C normal]
+[charaLayer D normal]
+[charaLayer E normal]
+[charaLayer M normal]
+[charaLayer N normal]
+[charaLayer O normal]
+[charaLayer J normal]
+[charaLayer K normal]
+
+[subCameraOff]
+
+[charaSet C 1098267400 1 段蔵]
+[charaSet D 6019001 1 風魔小太郎]
+[charaSet E 2027000 1 クロエ]
+[sceneSet J 107801 1]
+[sceneSet K 107801 1]
+[sceneSet L 107801 1]
+
+[charaScale C 1.0]
+
+[charaDepth A 4]
+[charaDepth B 3]
+[charaDepth N 2]
+[charaDepth M 1]
+
+[scene 107801]
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[bgm BGM_BATTLE_107 0.4 1.0]
+[cueSe Servants_604300 m50403]
+[wait wipe]
+
+[charaScale A 1.2]
+[charaFace A 5]
+[charaFadein A 0.3 250,50]
+[charaMove A 250,10 0.3]
+[wt 0.3]
+[se ad223]
+[charaMoveReturn A 250,5 0.3]
+[wt 0.4]
+
+[charaScale B 1.2]
+[charaFace B 5]
+[charaFadein B 0.4 -280,10]
+[charaMove B -250,10 0.4]
+[wt 0.6]
+
+[charaMoveReturn A 250,5 0.3]
+[charaMoveReturn B -250,5 0.3]
+[wt 0.4]
+
+[cueSe Servants_502800 bac988]
+[cueSeVolume bac988 0 0.1]
+[cueSeVolume bac988 1.0 0.5]
+[cueSe Servants_504100 bac981]
+[cueSeVolume bac981 0 0.1]
+[cueSeVolume bac981 1.0 0.5]
+
+[charaPut M 200,0]
+[charaPut N -280,0]
+[charaEffect M bit_talk_charge_aura_02]
+[charaEffect N bit_talk_charge_aura_03]
+[wt 1.0]
+
+[charaFace A 2]
+[charaFace B 2]
+
+＠２人
+[f large]シュート！[cameraMove 0.2 0,-20 1.1]
+[k]
+
+[messageOff]
+[cueSeStop bac988 0.2]
+[cueSeStop bac981 0.2]
+[wt 0.5]
+
+[effect bit_talk_shelling_pink02 250,-20]
+[effect bit_talk_shelling_blue02 -250,-20]
+[wt 0.4]
+[cueSe Servants_502800 bac993]
+[cueSe Servants_504100 bac982]
+[wt 0.5]
+
+[charaDepth Q 9]
+[charaFadein Q 0.2 0,-200]
+[wt 0.2]
+
+[charaPut M 2000,2000]
+[charaPut N 2000,2000]
+[charaEffectDestroy M bit_talk_charge_aura_02]
+[charaEffectDestroy N bit_talk_charge_aura_03]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+
+[charaFace G 0]
+[charaFadein G 0.1 0,5]
+[charaFace H 0]
+[charaFadeinFSR H 0.1 246,5]
+[charaFace I 0]
+[charaFadeinFSL I 0.1 -246,5]
+[wt 0.2]
+
+[cueSeStop bac993 0.6]
+[cueSeStop bac982 0.6]
+
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+[wt 0.6]
+
+[charaFadeout Q 0.2]
+[wt 0.2]
+
+[effect bit_talk_shelling_pink01 250,-20]
+[effect bit_talk_shelling_blue01 -250,-20]
+[wt 0.5]
+
+[cueSe Servants_2800300 m51234]
+[charaFadein Q 0.2 0,-200]
+[wt 0.2]
+
+[charaShake G 0.02 3 3 0.8]
+[charaShake H 0.02 3 3 0.8]
+[charaShake I 0.02 3 3 0.8]
+[charaFadeout Q 0.2]
+[wt 0.8]
+
+[se ad66]
+[seVolume ad66 0 0]
+[seVolume ad66 0.6 0.6]
+[charaMove G 0,-20 0.6]
+[wt 0.2]
+[charaFadeout G 0.4]
+[se ad49]
+[seVolume ad49 0 0.4]
+[charaMoveFSR H 246,-20 0.6]
+[wt 0.2]
+[charaFadeout H 0.4]
+[cueSe Battle bac205]
+[charaMoveFSL I -246,-20 0.6]
+[wt 0.2]
+[charaFadeout I 0.4]
+[wt 0.6]
+[seStop ad66 1.0]
+[wt 1.0]
+
+[charaDepth O 7]
+[charaDepth E 6]
+[charaDepth N 5]
+[charaDepth D 4]
+[charaDepth J 3]
+[charaDepth F 2]
+[charaDepth M 1]
+
+[charaScale M 1.0]
+[charaPut M 0,50]
+[charaEffect M bit_talk_shadow_aura03]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.6 1]
+[wt 0.8]
+
+＠シャドウサーヴァント
+…………………………。
+[k]
+
+[messageOff]
+[charaScale E 1.4]
+[charaScale J 1.2]
+[charaFace E 5]
+[charaFadein E 0.7 200,60]
+[charaMove E 250,60 0.7]
+[charaFadein J 0.7 0,-250]
+[charaMove J 50,-250 0.7]
+[wt 0.9]
+
+[charaFadeout F 0.1]
+[charaPut M 2000,2000]
+
+[charaScale D 1.0]
+[charaScale N 1.0]
+[charaFace D 0]
+[charaPut N -200,0]
+[charaPut D -200,-75]
+[se ad73]
+[charaEffect N bit_talk_quickmove]
+[charaSpecialEffect D appearance 1 0.25]
+[wt 0.2]
+[charaMove D -200,-70 0.2]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 2]
+
+＠風魔小太郎
+クロエ殿！
+[k]
+
+[charaFace E 2]
+
+＠クロエ
+はいはい！
+[k]
+
+[messageOff]
+[se ad73]
+[charaPut N -200,0]
+[charaScale O 1.2]
+[charaPut O 250,55]
+[charaEffect N bit_talk_quickmove]
+[charaEffect O bit_talk_quickmove]
+[charaSpecialEffect D erasureReverse 1 0.2]
+[charaSpecialEffect E erasureReverse 1 0.2]
+[charaMove D -200,-60 0.4]
+[charaMove E 250,50 0.4]
+[wt 0.4]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[bgm BGM_BATTLE_107 0.4 0.4]
+[charaMove J 80,-250 0.5]
+[wait wipe]
+
+[charaTalk depthOn]
+[charaEffectDestroy N bit_talk_quickmove]
+[charaEffectDestroy O bit_talk_quickmove]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaSet G 6019001 1 演出用_風魔小太郎]
+[charaSet H 2027000 1 演出用_クロエ]
+[charaSet I 5041001 1 サファイア]
+[charaFilter G nnormal]
+[charaFilter H nnormal]
+[charaFilter I nnormal]
+[charaSet O 5028001 1 ルビー]
+[sceneSet P 107801 1]
+
+[charaScale A 1.0]
+[charaScale B 1.0]
+[charaScale D 1.0]
+[charaScale E 1.0]
+
+[subCameraOn 4]
+[subCameraFilter #A maskEdge cut359_mask13 3 179,66,74,0]
+[subCameraFilter #B maskEdge cut359_mask02 3 220,20,60,0]
+[subCameraFilter #C maskEdge cut359_mask05 3 0,191,255,0]
+[subCameraFilter #D maskEdge cut359_mask05 3 255,105,180,0]
+[subRenderScale #A 1.1]
+[subRenderScale #B 1.1]
+[subRenderScale #C 1.0]
+[subRenderScale #D 1.0]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+[subRenderDepth #D 4]
+[charaLayer G sub #A]
+[charaLayer J sub #A]
+[charaLayer H sub #B]
+[charaLayer K sub #B]
+[charaLayer I sub #C]
+[charaLayer L sub #C]
+[charaLayer O sub #D]
+[charaLayer P sub #D]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 2]
+[charaDepth G 2]
+[charaDepth I 2]
+[charaDepth O 2]
+[charaDepth J 1]
+[charaDepth K 1]
+[charaDepth L 1]
+[charaDepth P 1]
+[charaDepth F 2]
+[charaDepth M 1]
+
+[charaScale G 1.1]
+[charaScale J 1.2]
+[charaFace G 18]
+[charaFadein G 0.1 -200,230]
+[charaFadein J 0.1 100,-100]
+[charaScale H 1.1]
+[charaScale K 1.2]
+[charaFace H 2]
+[charaFadein H 0.1 200,280]
+[charaFadein K 0.1 -100,-100]
+[charaScale I 1.4]
+[charaScale L 1.2]
+[charaFace I 0]
+[charaFadein I 0.1 360,320]
+[charaFadein L 0.1 200,-50]
+[charaScale O 1.4]
+[charaScale P 1.2]
+[charaFace O 0]
+[charaFadein O 0.1 230,140]
+[charaFadein P 0.1 -200,-50]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaPut M 0,50]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[bgm BGM_BATTLE_107 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[subRenderFadein #A 0.4 -60,-520]
+[subRenderMove #A 0,-520 0.3]
+[subRenderFadein #B 0.4 60,-260]
+[subRenderMove #B 0,-260 0.3]
+[wt 0.4]
+[cueSe Servants_105200 m48730]
+[cueSe NoblePhantasm_202700 NP_202700_2]
+[wt 0.8]
+
+[subRenderMove #A 60,-520 0.3]
+[subRenderFadeout #A 0.3]
+[subRenderMove #B -60,-260 0.3]
+[subRenderFadeout #B 0.3]
+[wt 0.4]
+
+[se ad1053]
+[cueSe NoblePhantasm_202700 NP_202700_10]
+[effect bit_talk_quick_slash]
+[effect bit_talk_quick_slash_bl 0,0 H]
+[wt 0.1]
+[charaShake F 0.02 3 3 1.2]
+[wt 1.8]
+
+[bgmStop BGM_BATTLE_107 2.0]
+
+[charaEffectStop M bit_talk_shadow_aura03]
+[se ad596]
+[charaSpecialEffect F erasure 1 2.0]
+[wait charaSpecialEffect F]
+[wt 1.0]
+[charaEffectDestroy M bit_talk_shadow_aura03]
+
+[charaTalk on]
+[charaTalk I]
+[subRenderFadeinFSL #C 0.4 -200,-150]
+[subRenderMoveFSL #C -200,-180 0.4]
+[wt 0.4]
+
+＠サファイア
+魔力の消滅を確認しました。[r]エネミー、すべて撃退できたようです。
+[k]
+
+[messageOff]
+[subRenderMoveFSL #C -200,-210 0.4]
+[subRenderFadeout #C 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_2 0.1]
+
+？1：みんなお疲れさま
+？！
+
+？1：にしても……
+？！
+
+？1：知らないエネミーだったような
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠風魔小太郎
+はい。[r]そして、それを率いるのは[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth E 2]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠クロエ
+シャドウサーヴァントね。[r]あの女、カルデアのデータベースで見たことないわよ？
+[k]
+
+？2：知らないシャドウサーヴァントだった[line 3]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠クロエ
+どっかの英霊のシャドウのはずよね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠美遊
+そういうことに……[r]なるのかな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth E 2]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠クロエ
+んー。でもあの女、[r]カルデアのデータベースで見たことないわよ？
+[k]
+
+？！
+
+[messageOff]
+[charaTalk A,E]
+[charaFace A 3]
+[charaFadein A 0.4 -330,0]
+[charaMove A -300,0 0.4]
+[wt 0.4]
+
+＠イリヤ
+ク、クロ、データとか見てるの？[r]そういうことしてもいいの？
+[k]
+
+[charaFace E 1]
+[charaMoveReturn E 0,5 0.3]
+
+＠クロエ
+さあ。
+[k]
+
+[charaFace A 7]
+[charaShake A 0.02 3 3 0.5]
+
+＠イリヤ
+さあって！？
+[k]
+
+[charaFace E 0]
+
+＠クロエ
+確認してないだけ。[r]ちゃんと聞けば許してくれるんじゃない？
+[k]
+
+[charaFace A 4]
+
+＠イリヤ
+それはそうかもだけど、[r]でも、勝手にそういうの見たらいけないと思う……
+[k]
+
+[charaFace E 4]
+
+＠クロエ
+はー。小学校じゃないんだから、[r]いい子ちゃんでいる意味なくない？
+[k]
+
+[charaFace A 3]
+
+＠イリヤ
+[messageShake 0.05 5 5 0.5]
+う、うるさいなあ！[wt 0.8][charaFace A 2][r]クロが悪い子すぎなんじゃない！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_2 0.7 0.4]
+[wait wipe]
+
+[charaTalk depthOn]
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaLayer H normal]
+[charaLayer G normal]
+[charaLayer J normal]
+[charaLayer K normal]
+
+[charaSet F 1098267400 1 演出用_段蔵]
+[charaSet G 99502600 1 マシュ]
+
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth J 1]
+
+[charaScale C 0.9]
+[charaScale J 1.01]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 150,-40]
+[charaFadein J 0.1 0,-180]
+
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_2 0.7 1.0]
+[wait wipe]
+[wt 1.0]
+
+
+＠段蔵
+……。[r]……。
+[k]
+
+＠段蔵
+…………………………。
+[k]
+
+[messageOff]
+[se ad527]
+[charaMoveScale C 1.0 1.5]
+[charaMove C 100,-20 1.5]
+[charaMoveScale J 1.1 1.5]
+[charaMove J -65,-200 1.5]
+[wt 1.2]
+[seStop ad527 0.4]
+[wt 0.4]
+
+？1：段蔵さん？
+？！
+
+[charaFace C 0]
+
+＠段蔵
+……は。[charaMoveReturn C 100,-17 0.3]い、いえ。
+[k]
+
+[charaFace C 3]
+
+＠段蔵
+……。[r]……。
+[k]
+
+[messageOff]
+[charaFadeout C 0.6]
+[charaFadeout J 0.6]
+[wt 0.6]
+
+[se ad452]
+[wt 0.6]
+[seStop ad452 0.4]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+
+＠風魔小太郎
+[line 3]段蔵殿？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 3]
+[charaDepth J 2]
+[charaDepth C 1]
+
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠段蔵
+小太郎殿……
+[k]
+
+[charaFace C 2]
+
+＠段蔵
+………………マスター。[r]黙っていようかとも思いましたが、申し上げます。[bgmStop BGM_EVENT_2 1.5]
+[k]
+
+？1：（頷く）
+？！
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 1.2]
+
+[charaTalk off]
+[charaScale F 1.3]
+[charaScale J 1.2]
+[charaFace F 3]
+[charaFadein F 0.6 100,40]
+[charaFadein J 0.6 -100,-260]
+[charaMove F 100,0 8.0]
+[charaMove J -100,-300 8.0]
+[wt 1.0]
+[bgm BGM_EVENT_5 0.1]
+
+[charaFadeout C 0.1]
+
+
+＠段蔵
+ワタシの記録回路は……[r]完全なモノ、ではなく……
+[k]
+
+＠段蔵
+今も、壊れかけのままです。[r]英霊は全盛期の姿で[#顕:あらわ]れるのだと言いますが[line 3]
+[k]
+
+[charaFaceFade F 2 0.2]
+
+＠段蔵
+人理は、段蔵の全盛期を、[r]この壊れかけの晩年にこそ在りと定めました。
+[k]
+
+＠段蔵
+故に、己が[#記憶]に確信が持てません。
+[k]
+
+[charaFaceFade F 3 0.2]
+
+＠段蔵
+ですが……
+[k]
+
+[messageOff]
+
+？1：さっきのシャドウサーヴァント
+？2：段蔵さんの、知ってる人かもしれない？
+？！
+
+＠段蔵
+……はい。
+[k]
+
+＠段蔵
+ひどく、曖昧な……[r][#朧気:おぼろげ]な幻であるかの如く、回路の奥に……
+[k]
+
+[charaFaceFade F 0 0.2]
+
+＠段蔵
+お姿が、揺らめいているのです。
+[k]
+
+＠段蔵
+[#紅:くれない]の[#左瞳:ひだりめ]。[r][#碧:みどり]の[#右瞳:み ぎ め]。
+[k]
+
+＠段蔵
+段蔵は、何処かで……[r]あの御方に……
+[k]
+
+[charaFaceFade F 3 0.2]
+
+＠段蔵
+会ったことが、ある、のかも[line 3]
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaTalk O]
+[subRenderFadeinFSR #D 0.4 300,-150]
+[subRenderMoveFSR #D 300,-180 0.4]
+[wt 0.4]
+
+＠ルビー
+んー。手がかりになるのかならないのか、[r]なんともフワフワした話ですねえ。
+[k]
+
+[messageOff]
+[charaTalk I]
+[subRenderFadeinFSL #C 0.4 -300,-150]
+[subRenderMoveFSL #C -300,-180 0.4]
+[wt 0.4]
+
+＠サファイア
+そうですね。
+[k]
+
+[messageOff]
+[subRenderFadeout #C 0.4]
+[subRenderFadeout #D 0.4]
+[charaFadeout F 0.4]
+[charaFadeout J 0.4]
+[wt 0.4]
+
+[charaDepth E 6]
+[charaDepth A 5]
+[charaDepth B 4]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[charaFace B 5]
+[charaFadeinFSL B 0.1 -300,0]
+[charaFace E 4]
+[charaFadeinFSR E 0.1 300,0]
+
+＠イリヤ
+ルビー！
+[k]
+
+＠美遊
+サファイアも言葉を選んで。
+[k]
+
+[messageOff]
+[charaTalk I]
+[subRenderFadeinFSL #C 0.4 -250,-180]
+[wt 0.4]
+
+＠サファイア
+これは失礼を。
+[k]
+
+[messageOff]
+[subRenderFadeout #C 0.4]
+[wt 0.4]
+
+[charaFace E 5]
+
+＠クロエ
+とりあえず、管制室に通信繋ぐわよ？[bgmStop BGM_EVENT_5 1.5][r]カルデアのシステムに攻撃が仕掛けられてる、とか、
+[k]
+
+＠クロエ
+そういう話かもしれないんだし。
+[k]
+
+[messageOff]
+[se ade357]
+[charaMoveReturnFSR E 300,-3 0.3]
+[wt 0.3]
+[charaMoveReturnFSR E 300,-3 0.3]
+[wt 0.5]
+[seStop ade357 0.2]
+
+[charaFace A 3]
+
+[bgm BGM_EVENT_7 0.1]
+＠イリヤ
+う、うそ……[r]クロ、いつの間にそーゆーの詳しく……
+[k]
+
+[charaFace E 1]
+
+＠クロエ
+これぐらい普通でしょ？[r]ねえミユ？
+[k]
+
+[charaFace A 7]
+[charaShake A 0.02 3 3 0.4]
+
+＠イリヤ
+！？
+[k]
+
+[charaFace B 4]
+
+＠美遊
+……別に、今まで触れる必要性を感じなかったのなら、[r]できなくてもおかしくはないと思う……。
+[k]
+
+[charaFace A 6]
+
+＠イリヤ
+むー。[r]なんだか気を遣われた気がする……。
+[k]
+
+[charaFace E 0]
+
+＠クロエ
+えーっと、これをこう。
+[k]
+
+[messageOff]
+[se ade357]
+[charaMoveReturnFSR E 300,-3 0.3]
+[wt 0.3]
+[charaMoveReturnFSR E 300,-3 0.3]
+[wt 0.5]
+[seStop ade357 0.2]
+[wt 0.3]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[charaScale G 1.0]
+[charaScale M 1.0]
+
+[charaPut M 1]
+[charaEffect M bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠マシュ
+はい、こちら管制室です。[r]森林行軍シミュレーション、経過はいかがですか？
+[k]
+
+[bgmStop BGM_EVENT_7 1.5]
+[messageOff]
+[wt 0.8]
+[fadeout black 1.5]
+[wait fade]
+
+[charaSet O 98103600 1 ルビー]
+[charaScale O 1.4]
+
+[subCameraFilter #D maskEdge cut359_mask04 3 255,105,180,0]
+[subRenderScale #D 1.0]
+[charaLayer O sub #D]
+[charaLayer P sub #D]
+[charaDepth O 2]
+[charaDepth P 1]
+[charaScale O 0.8]
+[charaScale P 1.2]
+[charaFace O 0]
+[charaFadein O 0.1 -200,255]
+[charaFadein P 0.1 80,0]
+
+[charaFace G 12]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+[bgm BGM_EVENT_77 0.1]
+
+＠マシュ
+……そうですか。[r]不明のエネミーにシャドウサーヴァント……。
+[k]
+
+＠マシュ
+こちらからは、[r]異常は観測できていませんね……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut M 2000,2000]
+[charaEffectStop M bit_talk_10_LowLevel]
+[charaEffectDestroy M bit_talk_10_LowLevel]
+
+[charaTalk E]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaFace B 0]
+[charaFadeinFSL B 0.1 -300,0]
+[charaFace E 4]
+[charaFadeinFSR E 0.1 300,0]
+
+＠クロエ
+つまり、バグはバグでも、[r]仕様の範囲内の動作ってこと？
+[k]
+
+＠クロエ
+そういうこともまあ、[r]システムである以上は有り得るのかしら。
+[k]
+
+？1：それはそうかも
+
+＠クロエ
+うーん。
+[k]
+
+？2：どうだろうね
+
+＠クロエ
+さあ？
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠風魔小太郎
+どうされますか、主殿。[r]大事をとって行軍を中止するという手もありますが……。
+[k]
+
+[charaTalk O]
+[subRenderFadein #D 0.4 30,-350]
+[subRenderMove #D 0,-350 0.4]
+[wt 0.4]
+
+＠O：ルビー
+中止ですかぁ？
+[k]
+
+＠O：ルビー
+せっかくここまで来たんですし、[r]予定通り森の外まで行ってみませんか？
+[k]
+
+[messageOff]
+[charaTalk O,D]
+[subRenderFadeout #D 0.4]
+[subRenderMove #D -30,-350 0.4]
+[wt 0.4]
+
+
+？1：確かに
+？2：いつだって、予定外のことは起きるものだしね
+？！
+
+[messageOff]
+
+？1：とりあえずゴール地点まで進もう！
+？！
+
+
+[charaFace D 1]
+[charaMoveReturn D 0,-5 0.5]
+[wt 0.7]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 0.6]
+[charaMoveReturn C 0,-5 0.5]
+[wt 0.7]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A,E,B]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[charaFace B 1]
+[charaFadeinFSL B 0.1 -300,0]
+[charaFace E 1]
+[charaFadeinFSR E 0.1 300,0]
+
+＠３人
+はーい！
+[k]
+
+[bgmStop BGM_EVENT_77 2.0]
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaTalk depthOn]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[subCameraOff]
+[charaFadeout I 0.1]
+[charaFadeout O 0.1]
+[charaFadeout L 0.1]
+[charaFadeout P 0.1]
+[charaLayer I normal]
+[charaLayer O normal]
+[charaLayer L normal]
+[charaLayer P normal]
+[wt 0.1]
+
+[sceneSet J 192300 1]
+[charaScale J 1.01]
+[sceneSet K 186800 1]
+[charaScale K 1.9]
+[sceneSet L 186800 1]
+[charaScale L 1.9]
+[charaScale M 1.2]
+[imageSet O back10000 1 1]
+[charaScale O 1.05]
+[wt 1.0]
+
+[charaFadein O 0.1 0,-200]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_147 0.1]
+＠
+そして[line 3]
+[k]
+
+[messageOff]
+[wt 0.5]
+
+＠
+一行は森林地帯を進んでいった。
+[k]
+
+＠
+やがて、ゴール地点として定められた座標に到着。
+[k]
+
+＠
+そこは森の終着地点であり、[r]なだらかな丘陵地帯が見えるはずだった。
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_147 1.5]
+
+＠
+の、だが。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+[line 3]そこには！[r][line 3]有り得べからざる光景が広がっていた！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout O 0.1]
+
+[scene 186800]
+
+[charaTalk depthOff]
+[charaDepth M 5]
+[charaDepth P 4]
+[charaDepth L 3]
+[charaDepth K 2]
+[charaDepth J 1]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_MAP_43 0.1]
+
+
+[wt 2.0]
+[charaFadein J 0.6 0,-200]
+[wt 0.8]
+
+[charaPut M 0,0]
+[charaEffect M bit_talk_41_fs]
+[charaMoveScale J 1.1 0.2]
+[charaMove J 0,-230 0.2]
+
+[se adm22]
+[wt 0.7]
+[se adm54]
+[wt 0.5]
+
+＠
+[line 3]謎の！　西洋式の城！
+[k]
+
+[messageOff]
+[charaPut M 2000,2000]
+
+[charaFadein K 0.6 -520,-470]
+[wt 0.8]
+[charaFadeout J 0.1]
+
+[se adm54]
+[charaPut M 0,0]
+[cameraMove 0.2 0,-10 1.1]
+[wait camera]
+[wt 0.3]
+
+＠
+[line 3]そして城への行く手を遮らんとする！[r][line 3]日本式の城っぽいもの！
+[k]
+
+[messageOff]
+[charaPut M 2000,2000]
+
+[charaFadein L 0.6 150,-300]
+[wt 0.8]
+[charaFadeout K 0.1]
+
+[se adm54]
+[charaPut M 0,0]
+[charaEffect M bit_talk_41_fs]
+[cameraMove 0.2 0,-25 1.2]
+[wait camera]
+[wt 0.3]
+
+＠
+[line 3]ならびに難所の！　数々！！
+[k]
+
+
+[messageOff]
+[charaPut M 2000,2000]
+[charaEffectDestroy M bit_talk_41_fs]
+[wt 0.5]
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_MAP_43 1.0 0.4]
+[wait fade]
+
+[charaFadeout L 0.1]
+
+[sceneSet J 186900 1]
+[charaScale J 1.2]
+[wt 0.1]
+
+[subCameraOn 1]
+[subCameraFilter #A maskEdge cut359_mask07 3 255,105,180,0]
+[subRenderScale #A 1.1]
+[charaLayer A sub #A]
+[charaLayer J sub #A]
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth J 1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,80]
+[charaFadein J 0.1 -400,-180]
+
+[cameraHome 0.1]
+[wait camera]
+
+[scene 187000]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_MAP_43 1.0 1.0]
+[wait fade]
+[wt 1.0]
+
+？1：あーこれは……
+？2：新しいお祭りの予感！
+？！
+
+[charaTalk A]
+[subRenderFadeinFSSideL #A 0.3 -200,-130]
+[subRenderMoveFSSideL #A -200,-160 0.3]
+[wt 0.3]
+[charaShake A 0.02 2 2 0]
+
+＠イリヤ
+こ、これって、なんなのー！？
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_MAP_43 1.5]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[charaLayer A normal]
+[charaLayer J normal]
+
+[subCameraOff]
+
+[charaShakeStop A]
+[charaFadeout A 0.1]
+[charaFadeout J 0.1]
+[charaTalk depthOn]
+[charaTalk on]
+[cameraMove 0.1 0,0 1.01]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+
+[charaPut M 2000,2000]
+[charaEffectDestroy M bit_talk_10_LowLevel]
+[charaEffectDestroy M bit_talk_shadow_aura03]
+[charaPut N 2000,2000]
+[charaEffectDestroy N bit_talk_quickmove]
+
+[scene 10000]
+
+[charaSet A 5028001 1 イリヤ]
+[charaSet B 5041001 1 美遊]
+[charaSet C 1098267400 1 段蔵]
+[charaSet D 6019001 1 風魔小太郎]
+[charaSet E 2027000 1 クロエ]
+[charaSet F 6030000 1 演出用_段蔵]
+[charaSet G 99502600 1 マシュ]
+[charaSet H 2027000 1 演出用_クロエ]
+[charaSet I 5041001 1 サファイア]
+[sceneSet J 186900 1]
+[sceneSet K 186800 1]
+[sceneSet L 186800 1]
+[charaSet M 98115000 1 エフェクト用]
+[charaSet N 98115000 1 エフェクト用]
+[imageSet O back10000 1 1]
+[sceneSet P 107801 1]
+[imageSet Q back10001 1 1]
+
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+
+[label selectBranch]
+
+[skip false]
+[wt 0.5]
+
+[fowardEffect bit_queststart80429]
+[wait fowardEffect]
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

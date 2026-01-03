@@ -1,0 +1,121 @@
+
+
+＄91-25-06-02-2-0
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 25002000 1 葛飾北斎]
+[charaDepth A 5]
+[charaSet B 4019001 1 マルタ]
+[charaSet C 99502600 1 マシュ]
+[charaDepth C 4]
+[imageSet D cut397_sunflower 1]
+[charaDepth D 3]
+[charaSet E 98115000 1 通信用ノイズ1]
+[imageSet F back10000 1]
+[charaScale F 1.1]
+[charaDepth F 2]
+
+[charaPut E 1200,1200]
+[charaEffect E bit_talk_10_LowLevel]
+
+[scene 108700]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+[wt 0.7]
+
+？1：何事もなかった
+？2：さあ進もう
+？！
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠マルタ
+いやいやちょっと待ちなさいよ！[r]さすがに『喋る絵筆』は無視できないでしょ！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠葛飾北斎
+でもまァ、当人？　がそうしろってんだから……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-190]
+
+＠ゴッホの絵筆？
+ああ、僕などカンバスの裏で潰れている[#虫]みたいなもの。[r][#無視]でやり過ごし、[#無私]の任務を優先したまえよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠マルタ
+……気のせいかしら、重いゴッホジョークを３発くらい[r]どてっ腹にもらった気分なんだけど。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-190]
+
+＠ゴッホの絵筆？
+もちろん気のせいだ、[#高潔]なる聖女様。[r]さあ任務に戻られよ。[#こう]、[#ケツ]をぎゅっと引き締めて。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.4]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+＠マルタ
+[f x-large][#神罰:ア　ウ　ト]。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaScale D 0.8]
+[charaFace D 0]
+[charaFadein D 0.1 0,-190]
+[charaFace A 26]
+[charaFadeinFSL A 0.1 -340,0]
+[charaPutFSR E 340,0]
+[charaFace C 14]
+[charaFadeinFSR C 0.1 340,0]
+[bgm BGM_BATTLE_107 0.1]
+[wt 1.7]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_107 0.4]
+[wait fade]
+[soundStopAll]
+[end]

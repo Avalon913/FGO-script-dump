@@ -1,0 +1,252 @@
+
+
+＄94-09-15-87-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5054000 1 由井正雪]
+[charaSet B 1059000 1 ヤマトタケル]
+[charaSet C 1057000 1 セタンタ]
+[charaDepth A 2]
+[charaDepth C 0]
+
+[charaSet D 5054000 1 由井正雪_第一]
+[charaSet E 5054001 1 由井正雪_第二]
+
+[charaSet F 1059000 1 ヤマトタケル_サブレイヤー]
+[charaScale F 1.2]
+
+[charaSet G 1057000 1 セタンタ_サブレイヤー]
+[charaScale G 1.2]
+
+[sceneSet H 205400 1]
+[charaScale H 1.2]
+[sceneSet I 205400 1]
+[charaScale I 1.2]
+
+[sceneSet S 205400 1]
+[charaScale S 1.2]
+[charaDepth S 1]
+
+[imageSet U cut516_tree02 1]
+[charaScale U 1.6]
+[charaDepth U 10]
+
+[subCameraOn 2]
+[charaLayer F sub #A]
+[charaLayer H sub #A]
+
+[charaLayer G sub #B]
+[charaLayer I sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask04 3 128,128,128,0 0]
+[subCameraFilter #B maskEdge cut359_mask04 3 25,85,255,0 0]
+
+[charaFace F 4]
+[charaFadein F 0.1 200,270]
+[charaFadein H 0.1 -110,0]
+
+[charaFace G 13]
+[charaFadein G 0.1 -200,280]
+[charaFadein I 0.1 110,0]
+
+[charaTalk depthOff]
+
+[charaDepth D 3]
+[charaDepth E 4]
+
+[charaDepth F 4]
+[charaDepth H 3]
+
+[charaDepth I 3]
+[charaDepth G 4]
+
+[pictureFrameTop cut063_cinema]
+[charaFadein S 0.1 -125,-250]
+[wt 0.1]
+
+[scene 205400]
+[fadein black 1.0]
+[bgm BGM_BATTLE_255 0.1]
+[wait fade]
+
+
+[charaTalk off]
+[charaFace D 11]
+[charaFadein D 0.1 350,-50]
+
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+[charaFace A 11]
+[charaFadein A 0.1 -350,-50]
+
+[wt 0.5]
+
+[subRenderFadein #A 0.3 550,-300]
+[subRenderMoveEase #A 0,-300 1.0 easeOutExpo]
+
+[subRenderFadein #B 0.3 -500,-500]
+[subRenderMoveEase #B 0,-500 1.0 easeOutExpo]
+
+[wt 1.5]
+
+[subRenderFadeout #A 0.5]
+[subRenderMoveEase #A -550,-300 2.0 easeOutExpo]
+
+[subRenderFadeout #B 0.5]
+[subRenderMoveEase #B 500,-500 2.0 easeOutExpo]
+[wt 0.5]
+
+[se ad923]
+[se ad1051]
+[effect bit_talk_quick_slash_bl]
+[wt 0.1]
+[flashin once 0.1 0.3 66FF66AF 66FF6600]
+[charaFace A 4]
+[charaFace E 4]
+[charaFace D 4]
+[charaShake A 0.05 2 2 0.5]
+[charaShake D 0.05 2 2 0.5]
+[charaShake E 0.05 2 2 0.5]
+[wt 0.9]
+
+[effect bit_talk_h_slash01_fs]
+[se ad715]
+[se ad979]
+[seStop ad979 0.7]
+[wt 0.5]
+[charaShake A 0.05 2 2 0.5]
+[charaShake D 0.05 2 2 0.5]
+[charaShake E 0.05 2 2 0.5]
+[bgmStop BGM_BATTLE_255 1.0]
+
+[wt 0.8]
+
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+
+
+[charaSpecialEffect D flashErasure 1 1.7]
+[se ad52]
+[wt 0.3]
+
+[charaSpecialEffect E flashErasure 1 1.7]
+[wait charaSpecialEffect E]
+[wait charaSpecialEffect D]
+
+[charaMoveEase S 125,-250 2.0 easeOutSine]
+[charaMoveEase A 0,-50 2.0 easeOutSine]
+
+[wt 2.5]
+
+
+[charaLayer F normal]
+[charaLayer H normal]
+[charaLayer G normal]
+[charaLayer I normal]
+
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+
+[bgm BGM_EVENT_188 0.1]
+
+＠由井正雪
+……私は……見誤った……
+[k]
+
+＠由井正雪
+真白く……澄み渡る月光……[r]その内に潜む……ひどく……純粋な……
+[k]
+
+[messageOff]
+[charaTalk A,C]
+[wt 0.4]
+[charaSpecialEffect A flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect A]
+[wt 1.2]
+[charaFadeout S 0.4]
+[wt 0.4]
+
+＠セタンタ
+こっちは片付いたな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,-50]
+
+＠ヤマトタケル
+………………。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 0,-50]
+
+＠セタンタ
+ん？　どうした？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 0,-50]
+
+＠ヤマトタケル
+……ユイ。[r]私たちは、きっと同じ[#結末:も　の]を見届けた。
+[k]
+
+＠ヤマトタケル
+だと云うのに、きみはまだ盈月に……[r]あの夜に囚われたままなのだな。
+[k]
+
+[messageOff]
+[charaDepth B 0]
+[wt 0.4]
+[charaFadein U 1.0 0,-250]
+[charaMove U 50,-350 4.0]
+[wt 4.0]
+
+[charaLayer S sub #A]
+[charaLayer B sub #A]
+[charaDepth S 1]
+[charaDepth B 2]
+[charaScale S 1.2]
+[charaScale B 1.2]
+[charaFadein S 0.1 -400,-50]
+[charaFace B 0]
+[charaFadein B 0.1 -20,200]
+[subCameraFilter #A maskEdge cut359_mask05 4 128,128,128,0 0]
+[wt 0.4]
+[subRenderFadeinFSR #A 0.4 370,-280]
+[subRenderMoveFSR #A 370,-250 0.4]
+[wt 1.6]
+
+＠ヤマトタケル
+ユイ。[r]私は、そんなきみを[line 3]
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_188 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

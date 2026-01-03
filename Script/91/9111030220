@@ -1,0 +1,1820 @@
+
+
+＄91-11-03-02-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11003001 1 ジャンヌ・オルタ]
+[charaDepth A 1]
+
+[branchQuestClear lblClear00b_dvn 3000303]
+[label lblClear00a_dvn]
+[charaSet C 98111500 1 ダ・ヴィンチ]
+[flag FLG_DVN 0]
+[branch lblConf00_dvn]
+[label lblClear00b_dvn]
+[charaSet C 1098124510 1 ダ・ヴィンチ]
+[flag FLG_DVN 1]
+[label lblConf00_dvn]
+[charaDepth C 1]
+
+[charaSet D 1043000 1 ローラン]
+[charaDepth D 3]
+[charaSet E 5043002 1 アスクレピオス]
+[charaSet F 7016001 1 タマモキャット]
+[charaSet G 9001001 1 ジャンヌ]
+[charaDepth G 4]
+
+[charaSet H 1098227500 1 ソウルイーター1]
+[charaSet I 1098227500 1 ソウルイーター2]
+[charaSet J 1098227500 1 ソウルイーター3]
+[charaDepth H 3]
+[charaDepth I 2]
+[charaDepth J 1]
+
+[charaSet K 98025000 1 シャドウサーヴァント1]
+[charaSet L 98025000 1 シャドウサーヴァント2]
+[charaSet M 98025000 1 シャドウサーヴァント3]
+[charaDepth K 3]
+[charaDepth L 2]
+[charaDepth M 1]
+
+[charaSet N 98115000 1 通信用ノイズ1]
+[imageSet O back10000 1]
+[charaScale O 1.1]
+[charaDepth O 9]
+[charaFilter O silhouette FF000080]
+[sceneSet P 10000 1]
+[charaScale P 1.01]
+[sceneSet Q 10000 1]
+[charaScale Q 1.01]
+[charaDepth P 3]
+[charaDepth Q 4]
+[sceneSet R 43701 1]
+[charaScale R 1.2]
+[charaDepth R 2]
+[sceneSet S 43701 1]
+[charaScale S 1.2]
+[charaDepth S 3]
+
+[charaPut N 1200,1200]
+[charaEffect N bit_talk_10_LowLevel]
+[cameraMove 0.1 0,0 1.01]
+[scene 109601]
+[wt 0.1]
+[fadein black 1.5]
+[wait fade]
+
+[charaPut N 1]
+[charaTalk C]
+[branch lblClear01b_dvn FLG_DVN 1]
+[label lblClear01a_dvn]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+[branch lblConf01_dvn]
+[label lblClear01b_dvn]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[label lblConf01_dvn]
+[wt 0.1]
+[bgm BGM_MIZUGI_2021_1 0.1]
+
+＠ダ・ヴィンチ
+オッケー、そろそろ限界だ。[r]海は楽しめたかな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+私は楽しかったけど……。[r]アンタは？
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,7 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.7]
+
+＠ジャンヌ・オルタ
+そ。[r]なら、いいわ。
+[k]
+
+[messageOff]
+[bgmStop BGM_MIZUGI_2021_1 1.5]
+[fadeout black 1.5]
+[wait fade]
+[wt 2.0]
+
+＠
+[line 3]そして、しばらく月日が流れて。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadein R 0.1 -100,-250]
+[effect bit_talk_sparks_fs]
+[charaFace A 5]
+[scene 43701]
+[wt 1.5]
+[charaMove R -50,-250 10.0]
+[fadein black 1.5]
+[wt 0.5]
+[cueSe SE_21 21_ad1114 0]
+[seVolume 21_ad1114 1.0 0.3]
+[se ad1048 0]
+[seVolume ad1048 1.0 0.05]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[wt 1.0]
+[fowardEffect bit_talk_14 70,80]
+[se bac142]
+[wt 0.2]
+[fowardEffect bit_talk_14 -40,-120]
+[se bac143]
+[wt 0.6]
+[charaRoll M 20 512,220]
+[charaEffect M bit_talk_Slash_white_01_L]
+[se bac137]
+[wt 1.8]
+[charaFadein S 1.0 100,-150]
+[charaMove S 50,-150 10.0]
+[wt 0.7]
+[se bac143 0.3]
+[wt 0.2]
+[se bac142 0.3]
+[wt 0.4]
+[fowardEffect bit_talk_h_slash01_fs]
+[wt 0.2]
+[se bac210 0.8]
+[wt 1.0]
+[fowardEffect bit_talk_impactlanding]
+[cueSe Servants_1000900 bac1040]
+[se ad789]
+[shake 0.04 3 3 0.8]
+[wt 2.0]
+[charaFadeout R 0.1]
+[se ad882]
+[wt 1.5]
+[seStop ad1048 2.0]
+[charaFadeout S 1.0]
+[seVolume 21_ad1114 1.0 0.1]
+[wt 2.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk depthOff]
+[charaTalk on]
+[charaRoll M 0 0,0]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+燃えろ燃えろ、[#疾:と]く燃えろ！[r]焦げた[#屍:かばね]を無様に[#晒:さら]せ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[wt 0.3]
+
+[fowardEffect bit_talk_fire_wall]
+[se ad249]
+[wt 1.5]
+[se bac27]
+[se ad429]
+[seStop ad429 2.0]
+[seStop ad249 2.0]
+[shake 0.04 3 3 1.0]
+[fadeout white 1.0]
+[wait fade]
+[fowardEffectStop bit_talk_fire_wall]
+[wt 0.7]
+[shake 0.04 3 3 0.4]
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.2]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.2 1]
+[wt 0.7]
+
+？1：ジャンヌ・オルタ！　もう少し後ろ！
+？！
+
+[charaFace A 5]
+
+＠ジャンヌ・オルタ
+チッ……了解！
+[k]
+
+[messageOff]
+[se bac1]
+[charaFadeout A 0.2]
+[charaMove A 50,0 0.2]
+[wt 1.0]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFadein R 0.3 100,-250]
+[charaMove R 150,-250 0.6]
+[wt 0.3]
+[charaScale D 1.1]
+[charaFace D 1]
+[charaFadein D 0.3 -25,0]
+[charaMove D -0,0 0.3]
+[wt 0.3]
+[se ad51]
+[wt 0.2]
+
+＠ローラン
+よっしゃ！[r]交代で前に出るぜ無敵だからね俺！
+[k]
+
+[messageOff]
+[charaFadeout D 0.2]
+[charaFadeout R 0.2]
+[wt 0.4]
+
+[charaTalk off]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[charaFace I 0]
+[charaFadeinFSL I 0.4 -320,-7]
+[charaFace J 0]
+[charaFadeinFSR J 0.4 320,-7]
+[wt 0.4]
+[se ad772]
+[se ad564]
+[wt 1.4]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ローラン
+……多っ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaDepth A 3]
+[charaScale A 1.1]
+[charaFace A 2]
+[charaFadein R 0.3 0,-200]
+[charaMove R -100,-200 0.6]
+[wt 0.3]
+[se ad671]
+[seStop ad671 1.0]
+[charaFadein A 0.3 150,-10]
+[charaMove A 200,-15 0.3]
+[wt 0.2]
+[charaShake A 0.04 2 2 0.2]
+[wt 0.1]
+
+＠ジャンヌ・オルタ
+マスター、回復いける！？
+[k]
+
+[messageOff]
+[charaEffect A bit_talk_cure]
+[se bas3]
+[wt 1.2]
+[charaFace A 0]
+[charaMove A 200,0 0.3]
+[wt 0.5]
+[se ad442]
+[wt 0.7]
+
+＠ジャンヌ・オルタ
+もう一度行ってくるわ。[wt 1.0][charaFace A 5][r]……何よその目。
+[k]
+
+？1：あまり無茶なことは……
+？！
+
+＠ジャンヌ・オルタ
+分かってるわよ。
+[k]
+
+＠ジャンヌ・オルタ
+でも、ここは無茶を通さないとヤバいって[r]分かるでしょ、アンタも。
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,7 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.7]
+
+＠ジャンヌ・オルタ
+私の肩か背中、ちょっと叩きなさい。[r]気合いの入れ直しするから。
+[k]
+
+[messageOff]
+[se ad660]
+[wt 0.1]
+[charaShake A 0.04 3 3 0.2]
+[wt 0.3]
+[seStop ad660]
+[wt 0.6]
+[charaFadeout A 0.4]
+[charaFadeout R 0.4]
+[wt 0.7]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠ジャンヌ・オルタ
+よーし、行ってくるわ！
+[k]
+
+＠ジャンヌ・オルタ
+ローラン、巻き込むわ悪いわね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ローラン
+せめて心の準備させてくんねえかなぁ！？[r]まあいいけどさあ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+まあいいならいいでしょ！[r]それなら問答無用でいくわよ。
+[k]
+
+[messageOff]
+[se ad39]
+[charaEffect A bit_talk_36]
+[wt 0.7]
+
+＠ジャンヌ・オルタ
+憎悪によって磨かれた我が咆哮。[r]猛々しきは罪人の業。灼熱の地獄へ、馳せ参じなさい。
+[k]
+
+[charaFace A 2]
+
+＠ジャンヌ・オルタ
+[line 3]『[#吼え立てよ、我が憤怒:ラ・グロンドメント・デュ・ヘイン]』！
+[k]
+
+[messageOff]
+[cueSe NoblePhantasm_1100300 NP_1100300_2 0.7]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+[charaTalk on]
+[charaTalk depthOff]
+[charaEffectStop A bit_talk_36]
+[charaFadeTime O 0.7 0.5]
+[wt 1.0]
+[seStop NP_1100300_2 2.5]
+
+[overlayFadein P 0.1 0,-800]
+[overlayFadein Q 0.1 0,800]
+[charaMove P 0,-745 0.5]
+[charaMove Q 0,745 0.5]
+[bgm BGM_EVENT_80 1.0 0.6]
+[wt 1.0]
+
+＠
+煮え[#滾:たぎ]る風景。[r]燃え尽きていく建築物。
+[k]
+
+＠
+暴れ狂う炎は、[r]何とも暴力的で[#冒涜:ぼうとく]的。
+[k]
+
+＠
+私の地獄、私の炎。
+[k]
+
+＠
+この宝具を使う度、どこぞの聖女サマの顔が[r]微かに強張るのが分かる。
+[k]
+
+＠
+どんなに綺麗事を紡いだところで、[r]死の光景を拭い去ることはできるはずがない。
+[k]
+
+＠
+そう、そうなの、その通りなの。[r]だから、私はこの炎が好きなのだ……！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_80 1.0 1.0]
+[charaMove P 0,-800 0.5]
+[charaMove Q 0,800 0.5]
+[wt 0.5]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ローラン
+おうい、ちと抑えてくれないか！[r]さすがに視界が塞がりすぎだ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+うっさいわねいいからとっとと[line 3][wt 0.7][charaFace A 2][bgmStop BGM_EVENT_80 0.5][seStop 21_ad1114 0.5][r]マスター！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad772 0.7]
+[seStop ad772 2.0]
+[se ad564 0.7]
+[seStop ad564 2.0]
+[charaFace H 0]
+[charaFadein H 0.2 1]
+[wt 0.7]
+
+？1：しまっ……！
+？！
+
+[blur motion 0.2 4 10000 0.5 0.7 0.05 100]
+[charaMoveScale H 1.2 0.4]
+[charaMove H 0,20 0.4]
+[charaFadeout H 0.2]
+[wt 0.2]
+
+[se bac139 0.8]
+[se bac211 0.6]
+[fadeout white 0.2]
+[wait fade]
+[charaFadeout O 0.1]
+[charaFadeout H 0.1]
+[effectDestroy bit_talk_sparks_fs]
+[charaTalk depthOn]
+[scene 10000]
+[blurOff]
+[wt 0.7]
+[fadein white 1.0]
+[wait fade]
+
+[fadeout black 0.2]
+[wait fade]
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[label lblClear01a]
+[scene 106000]
+[sceneSet R 106000 1]
+[charaScale R 1.2]
+[charaDepth R 2]
+[branch lblConf01]
+
+[label lblClear01b]
+[scene 105800]
+[sceneSet R 105800 1]
+[charaScale R 1.2]
+[charaDepth R 2]
+[branch lblConf01]
+
+[label lblClear01c]
+[scene 157900]
+[sceneSet R 157900 1]
+[charaScale R 1.2]
+[charaDepth R 2]
+[label lblConf01]
+[wt 2.5]
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.4]
+
+？1：はぁ～……
+？！
+
+[se ad870]
+[wt 1.8]
+
+[se ad8]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠ジャンヌ・オルタ
+……。[r]……。
+[k]
+
+[bgm BGM_EVENT_147 0.1]
+
+？1：おつかれー
+？！
+
+
+[charaFace A 5]
+
+＠ジャンヌ・オルタ
+……無事なようで何よりね、ホント。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アスクレピオス
+無事も何も、[#掠:かす]り傷一つとてない。[r]おまえが[#庇:かば]ったお陰だろう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+フン、当然でしょ。
+[k]
+
+＠ジャンヌ・オルタ
+死ねば終わり、コンティニューなしの[r]ブラック作業なんだから。
+[k]
+
+＠ジャンヌ・オルタ
+それに痛みはなくても、[r]恐怖は残るでしょ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アスクレピオス
+それは否定しないが。[r]本人は平気らしいぞ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+信用するの？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠アスクレピオス
+信用するさ。[r]僕のマスターなんだからな。
+[k]
+
+？1：ありがとう
+？！
+
+[charaFace E 1]
+
+＠アスクレピオス
+当然のことをしたまでだ。[r]ではな。
+[k]
+
+[messageOff]
+[charaFadeout E 0.4]
+[se ad311]
+[seStop ad311 1.0]
+[wt 0.7]
+[se ad8]
+[wt 1.7]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+ちっ。藪医者め。
+[k]
+
+＠アスクレピオス
+聞こえているぞ。
+[k]
+
+＠ジャンヌ・オルタ
+聞こえるように言ったのよ。
+[k]
+
+？1：喧嘩ストップ
+？！
+
+[charaFace A 0]
+
+＠ジャンヌ・オルタ
+はいはい。悪うございました。
+[k]
+
+[messageOff]
+[charaMove A 0,-7 0.4]
+[charaFadeout A 0.4]
+[wt 0.4]
+[se ad775 0.6]
+[wt 0.7]
+
+[charaScale A 1.1]
+[charaTalk off]
+[charaFace A 5]
+[charaFadein R 0.4 0,-250]
+[charaFadein A 0.4 0,-10]
+[wt 0.8]
+
+＠ジャンヌ・オルタ
+……今回は私のミスだったわ。
+[k]
+
+＠ジャンヌ・オルタ
+マスターから離れすぎていたし、[r]炎のせいでアンタが敵を見失ってしまった。
+[k]
+
+？1：いや、それは[line 3]
+？！
+
+＠ジャンヌ・オルタ
+おだまり。[r]反省するの、しておきたいのよ。
+[k]
+
+＠ジャンヌ・オルタ
+どうフォローしてもらったところで、[r]あれは間違いだったんだから。
+[k]
+
+＠ジャンヌ・オルタ
+今後は離れすぎないようにするわ。[r]あと、炎を全方位に[#撒:ま]き散らすのも止めておく。
+[k]
+
+？1：[&自分:わたし]も見えない時はちゃんと言う
+？！
+
+[charaFace A 0]
+
+＠ジャンヌ・オルタ
+……そうね、ありがと。
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ad1069]
+[wt 0.2]
+[seStop 21_ad1069 0.1]
+[wt 0.1]
+[charaFadeout R 0.7]
+[charaFadeout A 0.7]
+[wt 1.0]
+
+[charaScale A 1.0]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 0,-7]
+[charaMove A 0,0 0.4]
+[wt 0.4]
+
+＠ジャンヌ・オルタ
+はい、反省終わり。
+[k]
+
+＠ジャンヌ・オルタ
+バイタルチェックは問題なかったのよね？
+[k]
+
+？1：問題なーし
+？！
+
+＠ジャンヌ・オルタ
+そ。[r]食事済ませた？
+[k]
+
+[messageOff]
+[cameraMove 0.2 -7,0 1.01]
+[wt 0.2]
+[cameraMove 0.4 7,0 1.01]
+[wt 0.4]
+[cameraMove 0.2 0,0 1.01]
+[wt 0.7]
+
+＠ジャンヌ・オルタ
+ならついてきなさい。[r]今日は[#タマキャ:タマモキャット]のカツ丼よ。
+[k]
+
+？1：待ってました！
+？！
+
+＠ジャンヌ・オルタ
+ま、私はハンバーガーで済ますけど。[r]箸が苦手なのよね。
+[k]
+
+[charaFace A 5]
+
+＠ジャンヌ・オルタ
+……いや、あえて挑戦しておくか。[r]マスターちゃん。
+[k]
+
+[charaFace A 0]
+
+＠ジャンヌ・オルタ
+お箸の国でしょ、教えなさいよ。
+[k]
+
+？1：了解！
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[branchQuestClear lblClear02c 94064915]
+[branchQuestClear lblClear02c 3001101]
+[branchQuestClear lblClear02b 3000303]
+
+[label lblClear02a]
+[scene 105600]
+[branch lblConf02]
+
+[label lblClear02b]
+[scene 105900]
+[branch lblConf02]
+
+[label lblClear02c]
+[scene 158100]
+[label lblConf02]
+[wt 1.5]
+[fadein black 1.0]
+[wait fade]
+
+[bgmStop BGM_EVENT_147 2.0]
+[se ade146 0.4]
+[seStop ade146 0.7]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.7 -96,0]
+[charaMove F 0,0 0.7]
+[wt 1.0]
+[charaMoveReturn F 0,-7 0.4]
+[wt 0.4]
+[charaFace F 1]
+[se adm40]
+[wt 0.5]
+[charaFadeout F 0.7]
+[charaMove F 96,0 0.7]
+[se ade146 0.4]
+[seStop ade146 1.0]
+[wt 1.0]
+
+[wt 0.7]
+
+[bgm BGM_EVENT_92 0.1 0.8]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+で、どうするの？
+[k]
+
+？1：まず持ち方は[line 3]
+？！
+
+＠ジャンヌ・オルタ
+……こうね。[wt 0.7][charaFace A 5][r]何よ、おかしいの？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+[bgm BGM_EVENT_92 1.0 0.5]
+[overlayFadein P 0.1 0,-800]
+[overlayFadein Q 0.1 0,800]
+[charaMove P 0,-745 0.5]
+[charaMove Q 0,745 0.5]
+[wt 0.7]
+
+＠
+ふむ。[r]まあ、下らないといえば下らない。
+[k]
+
+＠
+箸など無くても食事はできる。[r]箸を習う時間など、不要といえば不要だ。
+[k]
+
+＠
+マスターに、無駄な時間を使わせている。[r]そう考えられなくもない。
+[k]
+
+＠
+だけど。[r]私にはその無駄こそが、愛おしくて楽しい。
+[k]
+
+＠
+[&彼:彼女]の時間を無為に消費するのが、[r]楽しくて楽しくて仕方がない。
+[k]
+
+＠
+全てを効率的に動かすのであれば、[r]こんな行為は不要なのだろうけど。
+[k]
+
+＠
+今の私は、その不要さ、下らなさこそに[r]価値を見出している。
+[k]
+
+＠
+束の間にしかない、無駄な時間。[r]虚無ではないけれど、有益でもないもの。
+[k]
+
+＠
+[line 3]ああ。[r]これは、まさに。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_92 1.0]
+[wipeout openEye 1.0 1]
+[wait wipe]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[sceneSet R 115900 1]
+[charaScale R 1.2]
+[charaDepth R 2]
+[charaScale A 1.0]
+[charaScale G 1.0]
+[charaTalk depthOff]
+[scene 115900]
+[charaFadein R 0.1 0,-300]
+[wt 2.0]
+[wipein openEye 1.0 1]
+[wait wipe]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 150,0]
+
+＠ジャンヌ・オルタ
+[line 3]と。[r]ごめん、ちょっとボケてたわ。
+[k]
+
+[messageOff]
+[charaMove R 100,-300 0.8]
+[charaMove A 300,0 0.8]
+[wt 0.4]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 -350,0]
+[charaMove G -300,0 0.4]
+[wt 0.4]
+
+＠ジャンヌ
+大丈夫ですか？
+[k]
+
+[charaFace A 5]
+
+＠ジャンヌ・オルタ
+……まさかアンタとレイシフトするとはね。[r]ボケるのも無理はないか。
+[k]
+
+[charaFace G 0]
+
+＠ジャンヌ
+ふふ。[r]私は全く問題ありませんよ。
+[k]
+
+＠ジャンヌ
+良いじゃないですか、共闘作業。
+[k]
+
+[charaFace A 0]
+
+＠ジャンヌ・オルタ
+共闘じゃなくて競争の方がいいけどね、[r]私としては。
+[k]
+
+＠ジャンヌ
+[#攻撃:オフェンス]と[#守備:ディフェンス]の配分、[r]どうしますか？
+[k]
+
+[charaFace A 0]
+
+＠ジャンヌ・オルタ
+……私は守るってガラじゃないから、[r]アンタに任せるわよ。
+[k]
+
+[charaFace G 5]
+
+＠ジャンヌ
+……。[r]……いえ、逆にしましょう。
+[k]
+
+＠ジャンヌ
+私がアタッカーを務めます。[r]貴女が守備です。
+[k]
+
+[charaFace A 3]
+
+＠ジャンヌ・オルタ
+はぁ？
+[k]
+
+[charaFace G 0]
+
+＠ジャンヌ
+別にいいでしょう？[r]何か問題でもありますか？
+[k]
+
+[charaFace A 5]
+
+＠ジャンヌ・オルタ
+……まあ、人間要塞とか突撃鋼鉄ゴリラとか[r]呼ばれるアンタなら、アタッカーでも問題ないか……。
+[k]
+
+＠ジャンヌ
+ふふふ、ありがとうございます。
+[k]
+
+[charaFace G 1]
+
+＠ジャンヌ
+ところでどこのどなた様が、[r]その愉快なニックネームを編み出したのですか？
+[k]
+
+[charaFace A 0]
+
+＠ジャンヌ・オルタ
+モードレッドだけど？
+[k]
+
+[charaFace G 1]
+
+＠ジャンヌ
+そうですか。
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+[charaFace G 5]
+
+＠ジャンヌ
+カルデアに帰還次第、[r]ゆっくりお話しした方がよさそうですね！
+[k]
+
+[messageOff]
+[charaFadeout R 0.4]
+[charaFadeout A 0.4]
+[charaFadeout G 0.4]
+[wt 0.7]
+
+[bgm BGM_EVENT_49 0.1]
+
+[charaScale A 1.0]
+[charaScale G 1.0]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠ジャンヌ
+では、私が先頭で。[r]オルタ、後ろは任せましたよ！
+[k]
+
+[messageOff]
+[charaFadeout G 0.4]
+[se ade427]
+[seStop ade427 1.5]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+はいはい、いってらっしゃーい。
+[k]
+
+[messageOff]
+[se ad789]
+[se ad1048 0.1]
+[seStop ad1048 2.5]
+[wt 1.0]
+[charaFace A 3]
+
+＠ジャンヌ・オルタ
+うわ、魔獣が吹っ飛んでるわ。[r]やっぱ鋼鉄ゴリラね。
+[k]
+
+？1：それにしても珍しい組み合わせだね
+？！
+
+[charaFace A 5]
+
+＠ジャンヌ・オルタ
+そうね、まったく。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk C]
+[branch lblClear02b_dvn FLG_DVN 1]
+[label lblClear02a_dvn]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+[branch lblConf02_dvn]
+[label lblClear02b_dvn]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+[label lblConf02_dvn]
+
+＠ダ・ヴィンチ
+差し出がましいようだけど、[r]意外に反発しないものだね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+してるわよ。[r]今回は抑えてるだけ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk C]
+[branch lblClear03b_dvn FLG_DVN 1]
+[label lblClear03a_dvn]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+[branch lblConf03_dvn]
+[label lblClear03b_dvn]
+[charaFace C 25]
+[charaFadein C 0.1 1]
+[label lblConf03_dvn]
+
+＠ダ・ヴィンチ
+ああ、前回の反省？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+素直に『その通りです』と言ってやるわ。[r]反省が出来るサーヴァントなの、私は。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk C]
+[branch lblClear04b_dvn FLG_DVN 1]
+[label lblClear04a_dvn]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+[branch lblConf04_dvn]
+[label lblClear04b_dvn]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+[label lblConf04_dvn]
+
+＠ダ・ヴィンチ
+ふむ、どちらにせよありがたい。
+[k]
+
+＠ダ・ヴィンチ
+ジャンヌもキミも、強力なサーヴァントであることに[r]変わりはないからね。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 -64,0]
+[charaMove G 0,0 0.4]
+[se ade427]
+[seStop ade427 0.7]
+[wt 0.4]
+
+＠ジャンヌ
+マスター！　オルタ！[r]そろそろ前に進みましょう！
+[k]
+
+＠ジャンヌ
+敵の本拠地まで、[r]もう少しのようですよ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk C]
+[branch lblClear05b_dvn FLG_DVN 1]
+[label lblClear05a_dvn]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+[branch lblConf05_dvn]
+[label lblClear05b_dvn]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+[label lblConf05_dvn]
+
+＠ダ・ヴィンチ
+そうだね。[r]その先にある塔に首魁がいる。
+[k]
+
+[branch lblClear06b_dvn FLG_DVN 1]
+[label lblClear06a_dvn]
+[charaFace C 4]
+[branch lblConf06_dvn]
+[label lblClear06b_dvn]
+[label lblConf06_dvn]
+
+＠ダ・ヴィンチ
+んー、不完全なサーヴァントの反応もある。[r]シャドウサーヴァントの群れがいるのかな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+あっそ。[r]なら、問答無用で蹴散らすだけね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠ジャンヌ
+オルタ。油断しないように。
+[k]
+
+＠ジャンヌ
+シャドウサーヴァントは、[r]我々の残滓でしかありませんが[line 3]
+[k]
+
+＠ジャンヌ
+同時に、[r]それでもサーヴァントなのですから。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+はいはい、分かってますよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠ジャンヌ
+もう。[r]本当に分かっていますか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+私はマスターちゃんを守る。[r]アンタが突撃する。
+[k]
+
+＠ジャンヌ・オルタ
+先ほどと同じように、変わりなく。[r]そんな感じよね？
+[k]
+
+[charaFace A 0]
+
+＠ジャンヌ・オルタ
+だったら、私は守り通すわよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠ジャンヌ
+……むぅ。
+[k]
+
+＠ジャンヌ
+我が妹……いえ妹ではないのですが……。
+[k]
+
+[charaFace G 5]
+
+＠ジャンヌ
+妹のような存在が、[r]ここまで立派に成長していたとは。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+はいはい。[r]とっとと行くわよ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[se ade428]
+[seStop ade428 1.5]
+[wt 1.5]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠ジャンヌ
+ふむ。[r][line 3]何かありましたか？
+[k]
+
+？1：何かってほどじゃないけど……
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_49 1.0]
+[wipeout rollRight 1.0 1]
+[wait wipe]
+[wt 1.0]
+[wipein rollLeft 1.0 1]
+[wait wipe]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaFace G 5]
+
+＠ジャンヌ
+なるほど、危うく負傷を……。
+[k]
+
+＠ジャンヌ
+それは切っ掛けではあるでしょうが、[r]変化の理由ではないでしょうね。
+[k]
+
+＠ジャンヌ
+……前から思っていたのです。
+[k]
+
+＠ジャンヌ
+私のような、普通の英霊には[r]確固たる人生があります。
+[k]
+
+＠ジャンヌ
+英雄譚であれ、悲嘆の[#御伽噺:おとぎばなし]であれ、[r]英雄とはそれらを基盤として成立するのです。
+[k]
+
+＠ジャンヌ
+彼女にはそれがない。[r]人間であるなら、誰もが持っているお話。
+[k]
+
+＠ジャンヌ
+ジャンヌ・ダルク・オルタであるという事実を除くと、[r]人生という名の物語がないのです。
+[k]
+
+＠ジャンヌ
+人からはどれほど平凡に見えようとも、[r]あるいは悲惨に見えようとも。
+[k]
+
+＠ジャンヌ
+そういう、かけがえのないモノがないのです。[r]ですから[line 3]
+[k]
+
+[messageOff]
+[charaFadeout G 0.2]
+[wt 0.3]
+
+[charaTalk off]
+[charaScale A 1.0]
+[charaScale G 1.0]
+[charaFace A 5]
+[charaFadein R 0.4 -50,-250]
+[charaMove R -100,-250 0.8]
+[wt 0.4]
+[charaFadein A 0.4 225,-0]
+[charaMove A 200,-0 0.4]
+[wt 0.4]
+
+＠ジャンヌ・オルタ
+ちょっと。
+[k]
+
+＠ジャンヌ・オルタ
+余計かつ的外れなこと言わないでくれるかしら、[r]聖女サマ。
+[k]
+
+[messageOff]
+[charaMove R 50,-250 0.8]
+[charaMove A 300,0 0.8]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 -350,-0]
+[charaMove G -300,-0 0.4]
+[wt 0.4]
+
+＠ジャンヌ
+おや、違いましたか？
+[k]
+
+[charaFace A 0]
+
+＠ジャンヌ・オルタ
+そうよ。[r]私は、物語なんてどうでもいい。
+[k]
+
+[charaFace G 4]
+
+＠ジャンヌ
+昔は、それなりに[#拘:こだわ]っていた、[r]と思ったのですが……。
+[k]
+
+＠ジャンヌ・オルタ
+かもしれないわね。[r]でも、いいのよ。
+[k]
+
+[messageOff]
+[charaFadeout R 0.4]
+[charaFadeout A 0.4]
+[charaFadeout G 0.4]
+[wt 0.5]
+
+[charaScale A 1.0]
+[charaScale G 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 0,0]
+[wt 0.4]
+
+＠ジャンヌ・オルタ
+それよりモタモタしないの。[r]マスターちゃん、とっとと行くわよ。
+[k]
+
+？1：あ、うん
+？！
+
+[messageOff]
+[charaFadeout A 0.4]
+[se ade428]
+[seStop ade428 1.5]
+[wt 1.5]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠ジャンヌ
+……。[r]……驚きました。
+[k]
+
+[messageOff]
+[charaFadeout G 0.2]
+[wt 0.4]
+
+[bgm BGM_EVENT_70 1.0 0.5]
+[overlayFadein P 0.1 0,-800]
+[overlayFadein Q 0.1 0,800]
+[charaMove P 0,-745 0.5]
+[charaMove Q 0,745 0.5]
+[wt 1.0]
+
+＠
+今回の共闘で、少し案じていたことがあった。[r][#彼女:オルタ]の競争心。
+[k]
+
+＠
+即ち、自分は[#ジャンヌ:わ　　た　　し]より[r]優れているのだという証明。
+[k]
+
+＠
+そこにこだわり過ぎて、[r]何かを失敗するのではないか、と。
+[k]
+
+＠
+全くそんなことはなかった。
+[k]
+
+＠
+彼女の精神性、彼女の協調性は、[r]今までに見たことがないほどの安定を保っている。
+[k]
+
+＠
+何故だろう、と私は思いながら。[r]先を行く二人を追っていく。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[wt 2.0]
+
+[bgm BGM_EVENT_11 0.1 0.7]
+
+＠
+私の[#根元:ねもと]にあるものは。
+[k]
+
+＠
+復讐でもなく、応報でもなく、[r]報復でもなく、懲罰でもなく。
+[k]
+
+＠
+恋でもなく、愛でもなく、[r]情欲でもなく、情動でもなく。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_11 1.0 0.4]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 2.0]
+[bgm BGM_EVENT_11 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+
+＠ジャンヌ・オルタ
+何なのかしらね。
+[k]
+
+？1：何なのって、何が？
+？！
+
+[charaFace A 3]
+
+＠ジャンヌ・オルタ
+……別に、何でもないわ。
+[k]
+
+[bgmStop BGM_EVENT_11 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ジャンヌ
+お待たせしました。[r]準備完了です。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+そう。[r]なら、やり口はさっきの通り。
+[k]
+
+＠ジャンヌ・オルタ
+第一に、人間要塞の大突貫よ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ジャンヌ
+……まあ、その人間要塞は一つ置いておきましょう。[r]フォローは頼めますか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+第二がそれ。
+[k]
+
+＠ジャンヌ・オルタ
+アンタにほどよく注目が集まった時点で、[r]私と[#コイツ:マ ス タ ー]で突撃して[line 3]
+[k]
+
+＠ジャンヌ・オルタ
+[#首魁:ボスキャラ]を速やかにブッ殺す。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ジャンヌ
+なるほど、良い判断です。[r]では、精々大立ち回りを演じましょう。
+[k]
+
+[charaFace G 2]
+
+＠ジャンヌ
+……行きます！
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_41_fs]
+[se bac169]
+[se ad708 0.5]
+[seStop ad708 1.0]
+[charaFadeout G 0.4]
+[wt 0.4]
+[fowardEffectStop bit_talk_41_fs]
+[wt 0.3]
+[fowardEffectDestroy bit_talk_41_fs]
+
+[se ad882]
+[wt 0.4]
+[se ad789 0.7]
+[wt 0.5]
+[se ad635 0.4]
+[wt 0.5]
+[se ad882 0.4]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+大立ち回りを演じるとは言ってたけど、[r]ちょっとした台風になってないかしら。
+[k]
+
+？1：と、とりあえずこちらも行こう！
+？！
+
+[charaFace A 0]
+
+＠ジャンヌ・オルタ
+そうね。
+[k]
+
+＠ジャンヌ・オルタ
+私が前に立つから、[r]アンタしっかりと私を追いなさい。
+[k]
+
+＠ジャンヌ・オルタ
+私の背中を追って、くっつく勢いでね。
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,7 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.7]
+[charaFace A 2]
+
+＠ジャンヌ・オルタ
+行くわ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[se ade427]
+[seStop ade427 1.5]
+[se ad59]
+[seStop ad59 1.5]
+[bgmStop BGM_EVENT_62 1.5]
+[fadeout black 1.5]
+[wait fade]
+[scene 79700]
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ジャンヌ
+はぁぁぁぁ！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.2]
+
+[charaTalk off]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[charaFace L 0]
+[charaFadeinFSL L 0.1 -320,0]
+[charaFace M 0]
+[charaFadeinFSR M 0.1 320,0]
+[wt 0.4]
+[fowardEffect bit_talk_x_slash01]
+[se bac141]
+[wt 0.1]
+[charaShake K 0.04 3 3 0.4]
+[charaShake L 0.04 3 3 0.4]
+[charaShake M 0.04 3 3 0.4]
+[wt 0.2]
+[fowardEffect bit_talk_x_slash02]
+[se bac139]
+[wt 0.1]
+[charaShake K 0.04 3 3 0.4]
+[charaShake L 0.04 3 3 0.4]
+[charaShake M 0.04 3 3 0.4]
+[wt 0.8]
+
+[se ad42]
+[charaSpecialEffect K enemyErasure 1 1.0]
+[wt 0.2]
+[charaSpecialEffect L enemyErasure 1 1.0]
+[wt 0.2]
+[charaSpecialEffect M enemyErasure 1 1.0]
+[wt 2.0]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ジャンヌ
+さあ、英霊の誇りを未だその身に宿すならば、[r]私に立ち向かいなさい！
+[k]
+
+＠ジャンヌ
+我が名はジャンヌ・ダルク。[r]貴方がたを討つべく、ここに居る者！
+[k]
+
+[messageOff]
+[charaFadeout G 0.2]
+[wt 0.2]
+
+[se ad1048 0.2]
+[wt 0.7]
+[seVolume ad1048 0.7 0.05]
+[wt 0.7]
+
+？1：（想像以上に数が多い……！）
+？！
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+（[line 3]よし、走り抜けるわよ！[r]　戦闘は極力回避で！）
+[k]
+
+[messageOff]
+[seStop ad1048 1.0]
+[se ade427]
+[seStop ade427 1.0]
+[se ad59]
+[seVolume ad59 1.0 0.4]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.3]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+[seStop ade427 0.1]
+[seStop ad59 0.1]
+
+[charaTalk off]
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.2 1]
+[wt 0.2]
+
+＠シャドウサーヴァント
+！？
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+ちっ、気付かれたか。[r]コイツだけは倒すわ、迅速にね！
+[k]
+
+？1：了解！
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

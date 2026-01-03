@@ -1,0 +1,667 @@
+
+＄94-08-25-07-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 3029002 1 水着頼光]
+[charaSet B 7031000 1 水着ジャンヌオルタ]
+[charaSet C 6028002 1 水着ニトクリス]
+[charaSet D 2026002 1 水着アルトリア]
+[charaSet E 1057000 1 セタンタ]
+[charaSet F 6048001 1 ロクスタ]
+[charaSet G 1098261000 1 ドラコー]
+[charaSet H 1040000 1 水着北斎]
+[charaSet I 25003002 1 ヒロインXX]
+[charaSet K 1034001 1 水着メイヴ]
+[charaSet L 4027001 1 水着メイドオルタ]
+[charaSet M 1098181100 1 水着ジャンヌ]
+[charaSet N 3044000 1 水着虞美人]
+[charaSet O 3024000 1 水着玉藻]
+[charaSet P 1098178700 1 サメ]
+[charaSet Q 1098261000 1 ドラコー_演出用]
+[sceneSet R 183800 1]
+[charaSet S 183800 1 背景_ホテルのベランダ2]
+[charaSet T 28003001 1 レディ・アヴァロン]
+
+[sceneSet U 106300 1]
+[charaScale U 1.2]
+
+[charaSet Z 98115000 1 エフェクト用]
+
+[scene 106300]
+
+
+
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth U 1]
+[charaDepth A 2]
+[charaDepth B 4]
+[charaDepth C 3]
+[charaFadein U 0.1 -50,-200]
+[charaFace A 1]
+[charaFadein A 0.1 -450,0]
+[charaFace B 1]
+[charaFadein B 0.1 -50,0]
+[charaFace C 1]
+[charaFadein C 0.1 350,0]
+
+[effect bit_talk_yume01 0,0 H]
+[wt 0.1]
+
+[fadein black 1.0]
+[se adm19]
+[seVolume adm19 0 0]
+[se ad37]
+[seVolume ad37 0 0]
+[seVolume adm19 1.0 1.0]
+[seVolume ad37 1.0 1.0]
+[charaMove U 50,-200 4.5]
+[charaMove A -350,0 4.5]
+[charaMove B 50,0 4.5]
+[charaMove C 450,0 4.5]
+[wait fade]
+
+
+[wt 2.0]
+[seStop adm19 2.0]
+[seStop ad37 2.0]
+[wt 1.0]
+
+[bgm BGM_BATTLE_89 0.7 0.4]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout U 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[effectDestroy bit_talk_yume01]
+[wt 0.5]
+
+[bgm BGM_BATTLE_89 0.7 1.0]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[bgm BGM_BATTLE_89 0.1]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[charaFace D 2]
+[wt 0.5]
+[se bac183]
+[flashin once 0.1 0.2 a3d8f680 a3d8f600]
+[wt 0.1]
+[wt 0.2]
+[se bac183]
+[flashin once 0.1 0.2 a3d8f680 a3d8f600]
+[wt 0.1]
+[wt 0.5]
+
+[se bac184]
+[fadeout a3d8f6 0.1]
+[wait fade]
+[wt 0.1]
+
+[fadein a3d8f6 0.1]
+[wait fade]
+[wt 0.2]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace E 12]
+[charaFadein E 0.1 1]
+[wt 0.3]
+[se bac196]
+[effect bit_talk_water_splash]
+[charaShake E 0.05 3 3 0.5]
+[wt 1.0]
+
+[charaFace E 4]
+[charaMove E 0,-50 0.4]
+[charaFadeout E 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.5]
+[charaFace F 20]
+[fowardEffect bit_talk_poison_mushroom_attack]
+[cueSe Servants_204000 bac1546 0.6]
+[charaMoveReturn F 0,10 0.18]
+[wt 0.2]
+[charaMoveReturn F 0,10 0.18]
+[wt 0.2]
+[charaMoveReturn F 0,10 0.18]
+[wt 0.2]
+[charaMoveReturn F 0,10 0.18]
+[wt 0.2]
+[charaMoveReturn F 0,10 0.18]
+[wt 0.2]
+[seStop bac1546 1.0]
+[wt 0.2]
+[wt 0.2]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaFace D 6]
+[charaFadein D 0.1 1]
+[wt 0.5]
+[fowardEffectStop bit_talk_poison_mushroom_attack]
+[se adm34]
+[charaMoveReturn D 0,5 0.3]
+[wt 0.4]
+[se adm34]
+[charaMoveReturn D 0,5 0.3]
+[wt 0.6]
+[charaFace D 0]
+[se bas3]
+[effect bit_talk_cure]
+[wt 1.6]
+[charaFadeout D 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_cure]
+
+[charaDepth F 6]
+[charaDepth E 5]
+
+[charaFace F 23]
+[charaFace E 12]
+[charaFadeinFSL E 0.1 0]
+[charaFadeinFSR F 0.1 2]
+[wt 1.5]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaFace G 3]
+[charaFadein G 0.1 1]
+[wt 1.2]
+
+[bgm BGM_BATTLE_89 1.0 0.4]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[charaTalk on]
+[charaFadeout G 0.1]
+[sceneSet U 181500 1]
+[charaScale U 1.2]
+[wt 0.5]
+
+
+[charaTalk H]
+[charaScale H 1.2]
+[charaDepth U 1]
+[charaDepth H 3]
+[charaDepth G 2]
+[charaFace H 26]
+[charaFace G 3]
+
+[scene 181500]
+
+[bgm BGM_BATTLE_89 1.0 1.0]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaFadein H 0.2 150,0]
+[charaFadein U 0.2 -100,-200]
+
+[effect bit_talk_41_fs 100,0]
+[se ade211]
+[wt 1.5]
+[effectDestroy bit_talk_41_fs]
+[charaMove U 0,-200 1.5]
+[charaMove H 250,0 1.5]
+[charaMoveScale H 1.05 1.5]
+[charaMoveScale U 1.05 1.5]
+[wt 1.5]
+
+[charaTalk G]
+[charaFadeinFSL G 0.4 0]
+[wt 1.0]
+[charaFace G 5]
+[wt 1.5]
+
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout U 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaScale F 1.1]
+[charaScale I 1.1]
+[charaScale U 1.2]
+[charaDepth U 1]
+[charaDepth F 2]
+[charaDepth I 4]
+[charaFadein U 0.1 50,-200]
+[charaFace F 3]
+[charaFadein F 0.1 -200,0]
+[charaFace I 1]
+[charaFadein I 0.1 300,0]
+
+[effect bit_talk_yume01]
+[wt 0.5]
+
+[charaMove U -50,-200 4.5]
+[charaMove F -300,0 4.5]
+[charaMove I 200,0 4.5]
+[se adm19]
+[seVolume adm19 0 0]
+[seVolume adm19 1.0 1.0]
+[seVolume ad37 1.0 1.0]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[wt 2.3]
+[seStop adm19 2.0]
+[wt 1.0]
+
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[effectDestroy bit_talk_yume01]
+[charaFadeout U 0.1]
+[charaFadeout I 0.1]
+[charaFadeout F 0.1]
+[charaScale F 1.0]
+
+[charaDepth K 6]
+
+[charaFace K 6]
+[charaFadein K 0.1 2]
+
+[charaFace E 8]
+[charaFadein E 0.1 0]
+[wt 0.5]
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[wt 0.5]
+[charaMove K 200,0 1.0]
+[wt 0.5]
+[charaMove E -276,0 0.3]
+[wt 0.5]
+[charaMove E -296,0 0.3]
+[wt 0.3]
+[charaShake E 0.05 3 3 0.5]
+[wt 0.5]
+
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaFadeout K 0.1]
+[charaFadeout E 0.1]
+[charaDepth T 3]
+[charaDepth Z 2]
+[charaDepth L 1]
+[charaFace T 1]
+[charaFadein T 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+
+[wt 0.5]
+[charaMoveReturn T 0,-5 0.3]
+[wt 0.4]
+[charaMoveReturn T 0,-5 0.3]
+[wt 0.4]
+[charaFace T 6]
+[wt 0.5]
+
+[charaFace L 7]
+[charaFadein L 0.4 340,0]
+[wt 0.6]
+[se bac206]
+[wt 0.4]
+[se bac36]
+[charaPut Z 100,0]
+[charaEffect Z bit_talk_explosion]
+[charaShake T 0.05 2 2 0.8]
+[charaFace T 2]
+[wt 1.2]
+[charaFace T 4]
+[charaFadeout T 0.4]
+[charaMove T 0,-50 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.3]
+[charaFace L 0]
+[charaMoveReturn L 340,-5 0.3]
+[wt 1.0]
+
+
+
+[bgm BGM_BATTLE_89 1.0 0.4]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout L 0.1]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+[wt 0.5]
+[scene 109600]
+
+[bgm BGM_BATTLE_89 1.0 1.0]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+
+[charaFace N 2]
+
+[wt 0.5]
+[charaFace N 5]
+[wt 0.5]
+[charaFace N 3]
+[wt 0.5]
+[charaFace N 4]
+[wt 0.5]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+[charaDepth G 2]
+[charaDepth O 1]
+[charaFace G 4]
+[charaFace O 5]
+[charaFadeinFSL G 0.1 0]
+[charaFadeinFSR O 0.1 2]
+[wt 1.5]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout O 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaFace E 12]
+[charaFace F 26]
+[charaFadeinFSL E 0.1 0]
+[charaFadeinFSR F 0.1 2]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[wt 1.2]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaFace M 11]
+[charaFadein M 0.1 1]
+[wt 1.0]
+[charaFace M 6]
+[effect bit_talk_heart_beam]
+[wt 0.3]
+[se ade317]
+[seVolume ade317 0 0]
+[seVolume ade317 0.8 0.4]
+[wt 3.0]
+[seStop ade317 0.4]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[se ad414]
+[charaFace P 0]
+[effect bit_talk_water_splash]
+[charaFadein P 0.4 0,-50]
+[charaMove P 0,0 0.3]
+[wt 0.5]
+[seStop ad414 0.2]
+[wt 0.8]
+[se ad1006]
+[blur motion 0.2 4 10 0.5 0.6 0.05 100]
+[charaMoveScale P 1.1 0.2]
+[charaMove P 0,10 0.2]
+[charaFadeout P 0.2]
+[wt 0.2]
+[blurOff motion 0.1]
+
+[cameraMove 0.5 0,0 1.2]
+[charaDepth Z 9]
+[charaScale Z 1.5]
+[charaPut Z 1]
+[charaFace E 12]
+[charaFace F 24]
+[charaFadeinFSL E 0.1 0]
+[charaFadeinFSR F 0.1 2]
+[wt 0.2]
+[wipeout circleIn 0.3 0.5]
+[wait wipe]
+
+[cueSe Servants_703700 bac1709 0.4]
+[cueSe SE_22 22_ade818]
+[fowardEffect bit_talk_fangtrap]
+
+
+[cameraHome 0.1]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[effectDestroy bit_talk_fang_02]
+[scene 10000]
+[wt 0.1]
+[wipein circleIn 1.0 0.1]
+[wait wipe]
+
+
+
+
+
+
+
+
+[fadeout black 0.1]
+[bgmStop BGM_BATTLE_89 1.0]
+[wait fade]
+
+[scene 183800]
+[wt 1.0]
+
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_157 0.1]
+
+[charaTalk on]
+[charaTalk T]
+[charaFace T 0]
+[charaFadein T 0.1 1]
+
+＠レディ・アヴァロン
+はい、みんなお疲れさま。[r]これで王様からのミッションクリアだ！
+[k]
+
+＠レディ・アヴァロン
+では……乾杯！
+[k]
+
+[messageOff]
+[charaFadeout T 0.1]
+[wt 0.1]
+[cueSe SE_23 23_ade850]
+[cueSe SE_21 21_ad1149]
+[wt 2.0]
+
+？1：かんぱーい！
+？2：未成年多いからジュースだけど
+
+？！
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠セタンタ
+……やけに疲れた気がする。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠ロクスタ
+大丈夫？　毒キノコキメとく？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠セタンタ
+おまえ、オレのこと嫌いなの？[r]オレはおまえのこと嫌いだけど。
+[k]
+
+[messageOff]
+[charaTalk T]
+[charaDepth F 1]
+[charaDepth E 1]
+[charaDepth Q 2]
+[charaDepth R 3]
+[charaDepth T 4]
+[charaDepth G 5]
+[charaScale R 1.3]
+[charaFadein R 0.5 -100,-200]
+[charaFace T 0]
+[charaFadein T 0.5 50,0]
+[charaFadeout E 0.1]
+
+＠レディ・アヴァロン
+どうだい、ドラコー？[r]どんちゃん騒ぎも悪くはないだろう？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_157 1.5]
+[charaMove R 100,-200 1.8]
+[charaMove T 250,0 1.8]
+[wt 1.0]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 1.0 -400,0]
+[charaMove G -300,0 0.8]
+[wt 1.4]
+
+
+＠ドラコー
+……無駄は好まぬ。[r]それは余の欲するところではない。[bgm BGM_EVENT_38 0.1]
+[k]
+
+[charaFace T 4]
+
+＠レディ・アヴァロン
+キミって子は、まったく。[r]堕落の獣だっていうのに、やけに生真面目というか。
+[k]
+
+[charaFace G 0]
+＠ドラコー
+貴様とは相容れぬと言ったはずだ。[r]そもそも致命的なまでに趣味が合わぬ。
+[k]
+
+[charaFace T 0]
+
+＠レディ・アヴァロン
+そうだね。私は、夢のような時間が[r]ずっと続けばいいと思っているからね。
+[k]
+
+[charaFace G 6]
+
+＠ドラコー
+怠惰な夢だ。[r]余は好まぬ。
+[k]
+
+＠ドラコー
+とうに劇場の幕は下り、客席には誰もいない[line 3]
+[k]
+
+＠ドラコー
+それでも舞台を去らぬ役者がいたとしたら、[r]こんなにもみじめなことはない。
+[k]
+
+[charaFace G 5]
+
+＠ドラコー
+挙げ句、[#神の手による幕引き:デ　ウ　ス　・　エ　ク　ス　・　マ　キ　ナ]にすがるなど、[r]三文芝居にも程があろうに。
+[k]
+
+[charaFace T 4]
+
+＠レディ・アヴァロン
+キミは、本当に[line 3]
+[k]
+
+[charaFace T 0]
+
+＠レディ・アヴァロン
+ま、そういう側面なんだから仕方ないか。[r]うん。
+[k]
+
+[charaFace G 0]
+
+＠ドラコー
+……貴様は余を討つ側であろう。このまま[r][%1]を見殺しにする気か？
+[k]
+
+＠レディ・アヴァロン
+私は傍観者だって言っただろう？[r]ただ、この物語の行く先を見守りたいだけさ。
+[k]
+
+[charaScale Q 1.2]
+[charaFace Q 0]
+[charaFadein Q 0.1 1]
+
+＠レディ・アヴァロン
+キミはキミの欲するままに進むといい。[r]螺旋の先が、望む結末に続いていることを願っているよ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout R 1.0]
+[charaFadeout G 1.0]
+[charaFadeout T 1.0]
+[wt 1.2]
+
+＠ドラコー
+ふん、くだらぬ。[r]……[%1]。
+[k]
+
+[charaFace Q 3]
+
+＠ドラコー
+浮かれるのも程々にしろ。[r]ようやくフロア・ガーディアンとの対決だ。
+[k]
+
+[charaFace Q 4]
+
+＠ドラコー
+ゴージャスＰめ。このふざけた都市ごと、[r]海の底に沈めてくれる……！
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_38 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

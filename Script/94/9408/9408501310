@@ -1,0 +1,1244 @@
+
+
+
+＄94-08-50-13-1-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 1098267100 1 メドゥーサ]
+[charaSet C 1098124510 1 ダ・ヴィンチ]
+[charaSet D 98002000 1 フォウ]
+[charaSet E 1098268100 1 ミス・ブーツライン]
+[charaSet F 7013000 1 清姫]
+[charaSet G 4009100 1 メアリー]
+[charaSet H 4009200 1 アン]
+[charaSet I 6027000 1 武則天]
+[charaSet J 25006000 1 ゴッホ]
+
+[sceneSet L 188700 1]
+[sceneSet M 188700 1]
+[sceneSet N 188700 1]
+[sceneSet O 188700 1]
+[charaScale L 1.1]
+[charaScale M 1.1]
+[charaScale N 1.1]
+[charaScale O 1.1]
+
+[charaSet P 1098274000 1 フォウ_左右反転]
+
+[sceneSet X 188400 1]
+[charaScale X 1.2]
+
+[sceneSet Y 10000 1]
+[charaScale Y 1.05]
+
+[charaSet Z 98115000 1 エフェクト用]
+[charaPut Z 2000,2000]
+[charaEffect Z bit_talk_10_LowLevel]
+
+[scene 188400]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+おや？　この廊下は、ひょっとして[line 3]
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_77 1.0 0.5]
+[se ad666]
+[seVolume ad666 0 0.6]
+[seStop ad666 2.5]
+[wt 0.2]
+[se ade422]
+[seStop ade422 2.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 7]
+[charaDepth D 6]
+[charaDepth P 5]
+[charaDepth C 4]
+[charaDepth B 3]
+[charaDepth Y 2]
+[charaDepth X 1]
+[wt 0.5]
+
+[wipein rightToLeft 1.0 1.0]
+[bgm BGM_EVENT_77 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaFadein X 0.7 100,-200]
+[wt 1.2]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+やっぱりでした。[r]ここは先輩のお部屋の前です！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[subCameraOn 2]
+[charaLayer D sub #A]
+[charaLayer P sub #B]
+[subCameraFilter #A through]
+[subCameraFilter #B through]
+[subRenderDepth #A 4]
+[subRenderDepth #B 5]
+[subRenderFadein #A 0 60,0]
+[subRenderFadein #B 0 60,0]
+
+[charaRollMoveEx D 0 -20 0,512]
+[charaRollMoveEx P 0 20 0,512]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFadein D 0.2 -50,20]
+[charaMove D -100,0 0.5]
+[se adm21]
+[seStop adm21 0.9]
+[wt 0.8]
+[charaFadein P 0.2 -110,0]
+[charaMove P -115,-5 0.2]
+[charaFadeout D 0.2]
+[cueSe SE_21 21_ade621]
+[seStop 21_ade621 0.3]
+[wt 0.4]
+[charaFadein D 0.2 -100,20]
+[charaMove P -95,15 0.2]
+[charaFadeout P 0.2]
+[cueSe SE_21 21_ade621]
+[seStop 21_ade621 0.25]
+[wt 0.4]
+[charaFadein P 0.2 -110,0]
+[charaMove P -115,-5 0.2]
+[charaFadeout D 0.2]
+[cueSe SE_21 21_ade621]
+[seStop 21_ade621 0.25]
+[wt 0.4]
+[charaFadein D 0.2 -100,20]
+[charaMove P -95,15 0.2]
+[charaFadeout P 0.2]
+[cueSe SE_21 21_ade621]
+[seStop 21_ade621 0.3]
+[wt 0.4]
+
+＠フォウ
+フォウ、フォウー♪
+[k]
+
+[messageOff]
+[charaMove D -200,50 0.6]
+[se adm21]
+[wt 0.3]
+[charaFadeout D 0.3]
+[wt 0.5]
+[charaRollMoveEx D 0 0 0,512]
+
+[subRenderFadeout #A 0]
+[subRenderFadeout #B 0]
+[subCameraOff]
+[charaLayer D normal]
+[charaLayer P normal]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠マシュ
+フォウさんも小躍りして嬉しそうですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+なに、この動き。
+[k]
+
+[charaPut Y 1]
+[charaFadeTime Y 0.2 0.5]
+
+[charaFace B 8]
+
+＠メドゥーサ
+（……可愛いじゃない）
+[k]
+
+[charaFadeout Y 0.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+歓喜のトルネード・フォウさんステップです！[r]やはり慣れた場所が一番、ということでしょうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+初めての居住区発見だ。[r]せっかくだし休んでいってもいいよ？
+[k]
+
+？1：それならみんなで休もう
+？2：みんなを憩いのマイルームにご招待いたしましょう
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Z 1200,1200]
+
+[charaMoveScale X 1.3 0.7]
+[charaMove X 170,-220 0.7]
+[se ade422]
+[seStop ade422 1.2]
+[wt 1.5]
+
+[se ad8]
+[wt 1.0]
+
+？1：ただいま、愛しの我が家！
+？！
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait wipe]
+
+[charaFadeout X 0.1]
+
+[charaTalk depthOn]
+
+[subCameraOn 4]
+
+[charaLayer L sub #A]
+[charaLayer M sub #B]
+[charaLayer N sub #C]
+[charaLayer O sub #D]
+[charaLayer D sub #D]
+
+[subCameraFilter #A maskEdge cut359_mask18 3 0,0,0,0]
+[subCameraFilter #B maskEdge cut359_mask17 3 0,0,0,0]
+[subCameraFilter #C maskEdge cut359_mask05 3 0,0,0,0]
+[subCameraFilter #D maskEdge cut359_mask06 3 0,0,0,0]
+
+[subRenderScale #A 1.05]
+[subRenderScale #B 1.05]
+[subRenderScale #C 1.05]
+[subRenderScale #D 1.05]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+[subRenderDepth #D 4]
+
+[charaFadein L 0.1 0,150]
+[charaFadein M 0.1 0,-100]
+[charaFadein N 0.1 450,100]
+[charaFadein O 0.1 0,300]
+[charaPut D 0,200]
+
+[scene 188700]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.2]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+[bgm BGM_EVENT_80 0.1]
+
+[subRenderFadein #A 0.2 -100,-330]
+[subRenderMove #A 0,-370 0.2]
+[wt 0.2]
+[charaEffect L bit_talk_29 0,200]
+[charaEffect L bit_talk_sparks_fs 0,200]
+[se ad267]
+[wt 1.5]
+
+[subRenderFadein #B 0.2 100,-130]
+[subRenderMove #B 0,-170 0.2]
+[wt 0.2]
+[charaEffect M bit_talk_14 -50,650]
+[se ad558]
+[wt 1.0]
+
+[subRenderFadein #C 0.2 270,-330]
+[subRenderMove #C 270,-370 0.2]
+[wt 0.2]
+[charaShake N 0.05 3 3 1.5]
+[charaEffect N bit_talk_kengekiall01_fs -350,450]
+[cueSe Servants_2500600 m40113]
+[seVolume m40113 0 0.5]
+[seStop m40113 1.5]
+[wt 1.5]
+
+[subRenderFadein #D 0.2 -100,-450]
+[subRenderMove #D 0,-450 0.2]
+[wt 0.2]
+[charaEffect D bit_talk_gagemist_Purple 0,300]
+[se ade153]
+[wt 2.0]
+
+
+[subRenderMove #A 100,-400 0.2]
+[subRenderFadeout #A 0.2]
+[subRenderMove #B -100,-200 0.2]
+[subRenderFadeout #B 0.2]
+[subRenderMove #C 270,-400 0.2]
+[subRenderFadeout #C 0.2]
+[subRenderMove #D 100,-450 0.2]
+[subRenderFadeout #D 0.2]
+[wt 0.5]
+
+[charaEffectDestroy L bit_talk_29]
+[charaEffectDestroy L bit_talk_sparks_fs]
+[charaEffectDestroy M bit_talk_14]
+[charaEffectDestroy N bit_talk_kengekiall01_fs]
+[charaEffectDestroy D bit_talk_gagemist_Purple]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[wt 0.2]
+
+[subCameraOff]
+[charaLayer L normal]
+[charaLayer M normal]
+[charaLayer N normal]
+[charaLayer O normal]
+[charaLayer D normal]
+[wt 0.5]
+
+？1：……。
+？！
+
+[shake 0.02 3 3 2.0]
+[se ade364]
+[cueSe Servants_2500600 m40113]
+[seVolume m40113 0 0.2]
+[seStop m40113 1.5]
+[wt 1.0]
+[se ade46]
+[se ad267]
+[wt 2.2]
+
+？1：…………。
+？！
+
+[shake 0.02 4 4 3.5]
+[se ade48]
+[seStop ade48 1.5]
+[se ad610]
+[wt 0.5]
+[cueSe Servants_2500600 m40113]
+[seVolume m40113 0 0.2]
+[se ade46]
+[wt 0.5]
+[seStop m40113 1.5]
+[se ade364]
+[se ad876]
+[seVolume ad876 0 0.5]
+[seStop ad876 1.5]
+[wt 0.7]
+[se ad610]
+[se ad891]
+[seStop ad891 1.0]
+[se ad608]
+[wt 1.5]
+[seStop ad608 1.0]
+[wt 1.5]
+
+？1：…………なにごと？
+？！
+
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠清姫
+ええ、ええ！　今まで我慢してまいりましたが、[r]さすがに堪忍袋の緒が切れました！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth G 2]
+[charaDepth H 1]
+
+[charaTalk G,H]
+[charaFace G 2]
+[charaFadein G 0.4 150,0]
+[charaFace H 2]
+[charaFadein H 0.4 -100,0]
+[wt 0.4]
+
+＠アン＆メアリー
+こっちのセリフ（ですわ）！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.4 1]
+[wt 0.4]
+
+＠武則天
+貴様らは世の秩序を乱す悪である！[r][#妾:わらわ]が成敗してやるゆえ、そこになおれ！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.4 1]
+[wt 0.4]
+
+＠ゴッホ
+ウフフ……影が薄いのを利用して……[r]最後に立ってさえいれば、ウフフ……。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_80 0.5 0.5]
+[wait wipe]
+
+[charaFadeout J 0.1]
+[scene 188400]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_80 0.5 1.0]
+[wait wipe]
+[wt 0.1]
+
+＠メドゥーサ
+何だか揉めてるみたい。
+[k]
+
+？1：揉めてるというか
+？2：フェイタルバトル中というか？
+？！
+
+＠メドゥーサ
+まず、真ん中のあれは何？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ベッドから移動させた先輩のお布団、でしょうか。[r]他にも謎めいたものが見えます。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠ミス・ブーツライン
+お部屋を縦横に区切るように、[r]床の上に渡されている二本の紐……
+[k]
+
+＠ミス・ブーツライン
+それがお布団の中心で十字に交差している。[r]はて、いかなる儀式なのでしょうか……？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+いや、これはアレだね？[r]アレだよね？　面子からしてもそうだし。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_80 0.5 0.5]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaPut Z 1200,1200]
+[scene 188700]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 0.2]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_80 0.5 1.0]
+[wait wipe]
+[wt 0.1]
+
+＠清姫
+まあ、なんと！
+[k]
+
+＠清姫
+まったく、なんと[#不埒:ふらち]な泥棒猫なのでしょう！[r]わたくしの正妻アイは誤魔化せません。
+[k]
+
+[charaFace F 5]
+
+＠清姫
+今のどさくさに紛れて、また[line 3]
+[k]
+
+＠清姫
+わたくし側の貴重なますたぁ資源、すなわち[r]ますたぁの布団の手触りや匂いや残存粒子を
+[k]
+
+＠清姫
+さりげなく指の第二関節ぶんほど侵食して[r]強奪いたしましたわね！？
+[k]
+
+＠清姫
+こちら側はわたくしだけの領地。
+[k]
+
+＠清姫
+互いの領地は侵さないという[r]不可侵条約を制定していたはず！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth G 2]
+[charaDepth H 1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 150,0]
+[charaFace H 0]
+[charaFadein H 0.1 -100,0]
+
+＠メアリー
+海賊の暮らしは共同生活。慣れてるし、[r]たいていのことは我慢してやろうと思ってたけど……
+[k]
+
+＠メアリー
+細かすぎるんだよ！
+[k]
+
+＠アン
+というか、こちらは二人いるんですもの。[r]二倍の領地を要求してもよいのでは？
+[k]
+
+[charaFace H 2]
+
+＠アン
+具体的にはどさくさ紛れに割譲された[r]シャワーブースの完全支配権も要求します！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠武則天
+たわけたことをぬかすでない！
+[k]
+
+[charaFace I 0]
+
+＠武則天
+……いや、民が多ければ多いほど[r]広き国土が必要なのはわかる。
+[k]
+
+[charaFace I 2]
+
+＠武則天
+ではこちらは酷吏たちのぶんも含めねばならんな！[r]今こそ天下統一の時！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.2]
+
+[shake 0.02 4 4 2.5]
+[cueSe Servants_2500600 m40113]
+[seVolume m40113 0 0.5]
+[se ad267]
+[wt 0.2]
+[seStop m40113 1.5]
+[se ad610]
+[wt 0.3]
+[se ad610]
+[se ade46]
+[se ade48]
+[seStop ade48 1.5]
+[wt 0.5]
+[se ade364]
+[se ad876]
+[seVolume ad876 0 0.5]
+[seStop ad876 1.5]
+[se ad891]
+[seStop ad891 1.0]
+[se ad608]
+[seStop ad608 1.0]
+[wt 2.0]
+
+[subCameraOn 1]
+
+[charaLayer A sub #A]
+[charaLayer B sub #A]
+[charaLayer X sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 0,0,0,0]
+
+[charaScale A 1.1]
+[charaScale B 1.1]
+[charaScale X 1.1]
+
+[charaTalk depthOff]
+[charaDepth A 7]
+[charaDepth B 6]
+[charaDepth X 1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 -10,180]
+[charaFadein X 0.1 0,0]
+[wt 0.1]
+
+[subRenderFadeinFSSideR #A 0.2 350,-190]
+[subRenderMoveFSSideR #A 300,-190 0.3]
+[wt 0.3]
+
+＠メドゥーサ
+どうするの、これ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 -60,180]
+
+＠マシュ
+すみませんが、手は一つしかないかと。[r]マスター、お願いします……！
+[k]
+
+[messageOff]
+[subRenderMoveFSSideR #A 350,-190 0.3]
+[subRenderFadeout #A 0.2]
+[wt 0.5]
+
+？1：（すう、と大きく息を吸って[line 3]）
+？2：（黄飛虎パパのことを思い出しながら[line 3]）
+？！
+
+[wt 0.5]
+
+？1：いい加減にしなさーい！
+？！
+
+[wipeout rollRight 1.0 0.5]
+[bgmStop BGM_EVENT_80 1.4]
+[wait wipe]
+
+[charaFadeout A 0]
+[charaFadeout X 0]
+[charaScale A 1.0]
+[charaScale B 1.0]
+
+[subCameraOff]
+[charaLayer A normal]
+[charaLayer B normal]
+[charaLayer X normal]
+
+[charaTalk depthOn]
+
+[imageSet K cut464_4cut_khm01 1]
+[imageSet L cut464_4cut_khm02 1]
+[imageSet M cut464_4cut_mean01 1]
+[imageSet N cut464_4cut_mean02 1]
+[imageSet O cut464_4cut_mean03 1]
+[imageSet P cut464_4cut_mean04 1]
+[imageSet Q cut464_4cut_gho01 1]
+[imageSet R cut464_4cut_gho02 1]
+[imageSet S cut464_4cut_bst01 1]
+[imageSet T cut464_4cut_bst02 1]
+[imageSet U cut464_4cut_bst03 1]
+[imageSet V cut464_4cut_bst04 1]
+[imageSet W cut464_4cut_bst05 1]
+[wt 1.2]
+
+[wipein rollLeft 1.0 0.5]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+なるほど。異常空間と化したボーダーを[#彷徨:さまよ]っていた[r]ところ、五人が同時にこの部屋に辿り着いたと。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_31 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠清姫
+ええ。緊急避難的にここを我々のキャンプ地とする、[r]と決めたはいいのですが、
+[k]
+
+＠清姫
+誰もが疲労回復と精神安定のために求める[r]ますたぁのお布団は一つだけ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠武則天
+ひとしきり健康で文化的な最低限度の[#交渉:ころしあい]が[r]行われたが、なかなか決着がつかんかったのでな……。
+[k]
+
+[charaFace I 0]
+
+＠武則天
+仕方なく部屋と布団をまとめて分割統治することになった。[r]天下四分の計である。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠清姫
+そう！　それが現状です。
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_31 0.6]
+[fadeout white 0.3]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[charaTalk depthOff]
+[charaDepth W 6]
+[charaDepth Q 5]
+[charaDepth R 4]
+[charaDepth M 3]
+[charaDepth K 2]
+[charaDepth L 1]
+
+
+[charaScale K 1.01]
+[charaScale L 1.01]
+[charaScale M 1.01]
+[charaScale N 1.01]
+[charaScale O 1.01]
+[charaScale P 1.01]
+[charaScale Q 1.01]
+[charaScale R 1.01]
+[charaScale S 1.01]
+[charaScale T 1.01]
+[charaScale U 1.01]
+[charaScale V 1.01]
+[charaScale W 1.01]
+
+[charaFadein K 0.1 -160,-200]
+[charaFadein L 0.1 -160,-200]
+[charaFadein M 0.1 160,-200]
+[charaFadein Q 0.1 -160,-200]
+[charaFadein R 0.1 -160,-200]
+[charaFadein W 0.1 160,-200]
+
+[effect bit_talk_thunder_04]
+[wt 0.1]
+
+[se ad842]
+[seVolume ad842 0 0.4]
+[fadein white 0.5]
+[wait fade]
+[seStop ad842 1.8]
+[wt 1.0]
+
+[cameraMove 0.5 20,110 1.4]
+[wt 0.5]
+
+[bgm BGM_BATTLE_113 0.1]
+
+＠清姫
+ますたぁのお布団は海賊領・画家領・女帝領・正妻領の[r]四つに分かれ混迷を極めていた……！
+[k]
+
+[charaFadeout K 0.2]
+
+＠清姫
+いえ勿論、本来は正統なる妻のもとに[r]統一されるべきというのはわかっています。
+[k]
+
+[charaFadein K 0.2 -160,-200]
+
+＠清姫
+[#忸怩:じくじ]たる思いです。わたくしの力不足により[r]統一できず申し訳ありません！
+[k]
+
+[cameraMove 0.5 -170,75 1.4]
+
+＠メアリー
+誰が正妻だって？[r]マスターは僕たちの獲物だ！
+[k]
+
+[cameraMove 0.5 170,0 1.4]
+
+＠ゴッホ
+エヘヘ……天下とかはどうでもいいんで、とりあえず[r]マスターさまの布団だけいただいておきますね……。
+[k]
+
+[charaFadeout Q 0.2]
+
+＠ゴッホ
+面積的にはほんのちょっとしたものなので、[r]他の床とかはどうぞみなさまで、ええ、
+[k]
+
+＠ゴッホ
+舐めるなりなんなりしていただいても、[r]ゴッホ的にはまったく問題なし……。
+[k]
+
+[cameraMove 0.5 -20,-110 1.4]
+
+＠武則天
+駄目に決まっとるじゃろ！[r]それこそが天下でありメインコンテンツである！
+[k]
+
+＠武則天
+国家を象徴する城のようなものじゃ！
+[k]
+
+[cameraMove 0.5 -170,75 1.4]
+
+[charaDepth N 4]
+[charaFadein N 0.2 160,-200]
+
+＠アン
+でも、皇帝様には布団より国土なのでは？
+[k]
+
+＠アン
+布団を譲っていただけたら[r]床の面積は譲歩してさしあげなくもないですわ。
+[k]
+
+[charaFadeout M 0]
+
+[charaDepth N 3]
+[charaDepth O 4]
+[charaFadein O 0.2 160,-200]
+
+＠アン
+まるで、何か個人的な理由があってマスターの[r]布団に固執しているようにも見受けられますけどぉ……。
+[k]
+
+＠アン
+私たちのような一般人でもあるまいし、[r]まさかそんなことはないですよねー？
+[k]
+
+[cameraMove 0.5 -20,-110 1.4]
+
+＠武則天
+ぐっ……ちが、違う。
+[k]
+
+＠武則天
+よいか、正妻だの海賊の獲物だの[r]何だのはどうでもよい！
+[k]
+
+[charaDepth S 7]
+[charaFadein S 0.2 160,-200]
+
+＠武則天
+このボーダーという国土が使えなくなったとき、[r]残った一番良い土地は誰のものか？
+[k]
+
+＠武則天
+無論、皇帝のものである。
+[k]
+
+＠武則天
+故に[#妾:わらわ]は最も居住性の高く居心地の良い[r]この空間を接収しておるだけであって……。
+[k]
+
+[charaFadeout S 0.2]
+
+＠武則天
+そう、この布団が誰のものかは関係ない。
+[k]
+
+＠武則天
+この場の最高の部分は[#妾:わらわ]のものになって当然。
+[k]
+
+[charaDepth T 8]
+[charaFadein T 0.2 160,-200]
+
+＠武則天
+獲れる領地は全て確保しておくべきという、[r]ただそれだけなのじゃー！
+[k]
+
+[cameraMove 0.5 20,110 1.4]
+
+＠清姫
+ピーン！　嘘ですね！[r]わたくしの[#感覚:せんさぁ]は誤魔化せません！
+[k]
+
+[cameraMove 0.5 -20,-110 1.4]
+
+[charaDepth V 9]
+[charaFadein V 0.2 160,-200]
+
+＠武則天
+むぐっ。
+[k]
+
+[charaDepth W 8]
+[charaDepth T 7]
+
+[charaFadeout V 0.2]
+
+＠武則天
+……あーそうじゃ嘘じゃ、いくら獲っても[r]安定統治できん土地に用はないからの！
+[k]
+
+[charaDepth U 9]
+[charaFadein U 0.2 160,-200]
+
+＠武則天
+ふ、ふふん。皇帝の統治学に意見を述べられるとは、[r]貴様、なかなかやるではないか。
+[k]
+
+＠武則天
+そう、[#妾:わらわ]はあえて隙のある意見を[r]言うことによって、才能ある者を[#炙:あぶ]り出し[line 3]
+[k]
+
+[cameraMove 0.5 20,110 1.4]
+
+[charaDepth K 1]
+[charaDepth L 2]
+
+[charaFadein L 0.2 -160,-200]
+
+＠清姫
+あ。それも嘘ですね。
+[k]
+
+[cameraMove 0.5 -20,-110 1.4]
+
+[charaDepth T 9]
+[charaFadein T 0.2 160,-200]
+
+＠武則天
+むがー！　黙れ黙れ黙れ！
+[k]
+
+[cameraMove 0.5 -170,75 1.4]
+
+[charaDepth O 3]
+[charaDepth P 4]
+
+[charaFadein P 0.2 160,-200]
+
+＠メアリー
+アン、大変だ。画家が抜け駆けした。[r]ヒマワリが布団の中から飛び出てる！
+[k]
+
+[charaDepth M 5]
+
+[charaFadein M 0.2 160,-200]
+
+＠アン
+まあ！[r]左右から挟み込んで始末しましょう！
+[k]
+
+＠メアリー
+駄目だ、潰したら汚れがつく。[r]ひっくり返して追いだそう！
+[k]
+
+[messageOff]
+[cameraHome 0.5]
+[se ad626 0]
+[seVolume ad626 0.5 0.7]
+[cueSe Servants_201100 m03124 0]
+[seVolume m03124 0.5 0.7]
+[effect bit_talk_lightning_01r_fs]
+[wt 2.5]
+[seStop ad626 1.0]
+[seStop m03124 1.0]
+
+[sceneSet X 188700 1]
+
+[subCameraOn 1]
+
+[charaLayer A sub #A]
+[charaLayer B sub #A]
+[charaLayer X sub #A]
+
+[subCameraFilter #A through]
+
+[charaScale X 1.01]
+
+[charaDepth B 4]
+[charaDepth A 3]
+[charaDepth Y 2]
+[charaDepth X 1]
+
+[subRenderFadein #A 0 0,0]
+[charaFadein X 1.0 0,-200]
+[wt 1.0]
+[effectDestroy bit_talk_lightning_01r_fs]
+
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout T 0.1]
+[charaFadeout U 0.1]
+[charaFadeout W 0.1]
+[charaFadeout R 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+
+[wt 0.5]
+
+？1：落ち着いてくれたのは一瞬だけだった……
+？！
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……安静にしてもらいたい……休むべき……[r]幸運にも無事だった先輩のお部屋で、
+[k]
+
+＠マシュ
+こんなにドタバタと……。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace A 7]
+[charaMoveReturn A 0,2 0.4]
+[wt 0.7]
+
+＠マシュ
+メドゥーサさん。これは石化の魔眼をお使いになっても[r]許されるタイミングかもしれません。
+[k]
+
+＠マシュ
+石＝静か。[r]静か＝みんなハッピー。
+[k]
+
+＠マシュ
+そういうコトです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+……そうなの？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[subRenderMoveScale #A 1.2 0.2]
+[subRenderMove #A 0,-15 0.2]
+[fowardEffect bit_talk_41_fs]
+[se ade242]
+
+＠マシュ
+先輩の！　安寧のためなのです！
+[k]
+
+[fowardEffectDestroy bit_talk_41_fs]
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+[charaFadeout A 0]
+[charaFadeout X 0]
+
+[subCameraOff]
+[charaLayer A normal]
+[charaLayer B normal]
+[charaLayer X normal]
+
+[charaPut Y 1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+そ、そう。[wt 0.8][charaFadeTime Y 0.2 0.5][r]（この子も意外と熱くなるタイプなのね……）
+[k]
+
+[charaFadeout Y 0.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠フォウ
+フォウウ～。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+それでは、先輩のお部屋の沈静化作戦を開始します！
+[k]
+
+[charaFace A 2]
+[se ade200]
+
+＠マシュ
+ピピー！　レッドカードです皆さん！
+[k]
+
+＠マシュ
+そしてご存じないかもですが、マスターのお布団には[r]古来より独占禁止法が制定されていまーす！
+[k]
+
+[messageOff]
+[se ad667]
+[seStop ad667 1.0]
+[charaFadeout A 0.4]
+[wt 1.5]
+
+？1：盾を振り回しながら飛び込んでいってしまった……
+？！
+
+[charaPut Z 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+しょうがない。落ち着かせなきゃいけないのは確かだし、[r]実力行使といこう。
+[k]
+
+＠ダ・ヴィンチ
+ついでにカメラで靴のデータも取りながらね！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Z 1200,1200]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ミス・ブーツライン
+はい、それも大事ですよ。[r]よろしくお願いしますね！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_113 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+
+
+

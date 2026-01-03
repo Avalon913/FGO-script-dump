@@ -1,0 +1,299 @@
+
+
+＄04-00-03-25-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11002002 1 巌窟王]
+[charaSet B 11002002 1 巌窟王2]
+[charaScale B 1.1]
+[charaSet C 11002002 1 巌窟王3]
+[charaScale C 1.2]
+[charaSet D 1098289100 1 モンテクリスト伯1]
+[charaScale D 1.2]
+[charaSet E 1098289100 1 モンテクリスト伯2]
+[charaScale E 1.2]
+
+[sceneSet F 214905 1]
+[charaScale F 1.01]
+[sceneSet G 213600 1]
+[charaScale G 1.1]
+
+[sceneSet H 213600 1]
+[charaScale H 1.2]
+[sceneSet I 213600 1]
+[charaScale I 1.2]
+
+[charaSet T 5009000 1 エフェクト用1]
+
+[subCameraOn 4]
+[charaLayer G sub #A]
+[charaLayer B sub #A]
+[charaLayer D sub #B]
+[charaLayer H sub #C]
+[charaLayer C sub #C]
+[charaLayer I sub #D]
+[charaLayer E sub #D]
+[subCameraFilter #A normal]
+[subCameraFilter #B through]
+[subCameraFilter #C maskEdge cut359_mask05 4 74,103,85,255 0]
+[subCameraFilter #D maskEdge cut359_mask05 4 0,0,0,255 0]
+
+[subRenderMoveScaleEase #A 1.1 0.1 easeOutSine]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth B 2]
+[charaDepth D 3]
+[charaFace B 5]
+[charaFadein G 0.1 -50,-170]
+[charaFadein B 0.1 0,-60]
+
+[charaFace D 0]
+[charaFadein D 0.1 -150,-200]
+
+[charaDepth H 1]
+[charaDepth C 2]
+[charaDepth I 1]
+[charaDepth E 2]
+[charaFace C 2]
+[charaFadein H 0.1 -120,0]
+[charaFadein C 0.1 0,250]
+[charaFace E 2]
+[charaFadein I 0.1 120,0]
+[charaFadein E 0.1 0,250]
+
+[scene 214904]
+
+
+[fadein black 1.5]
+[bgm BGM_BATTLE_197 0.1]
+[wait fade]
+
+＠カリオストロ・ヘッド
+…………………………！
+[k]
+
+＠カリオストロ・ヘッド
+再生が追いつかぬ！？[r]なぜだ！
+[k]
+
+＠カリオストロ・ヘッド
+こ、ここ、こ、この[#小宇宙:ミクロコスモス]は[#私:わたくし]が掌握して、[r]した、している、筈……[line 4]
+[k]
+
+[scene 214905 0.3]
+
+＠カリオストロ・ヘッド
+ハッ！
+[k]
+
+＠カリオストロ・ヘッド
+そ、そうか……
+[k]
+
+＠カリオストロ・ヘッド
+真の……この[#小宇宙:ミクロコスモス]の所有者、であれば……[r][#我が無限に並び得る]！？
+[k]
+
+＠カリオストロ・ヘッド
+[#莫迦:ば　か]な！[r][#莫迦:ば　か]な！
+[k]
+
+＠カリオストロ・ヘッド
+自己の魔術回路を完全掌握する芸当など、[r]未熟な、[#カルデアのマスター:魔　術　師　も　ど　き]なぞにできる訳が[line 3]
+[k]
+
+？1：普段はどうか知らないけど
+？2：今は、すごく調子がいいん[&だ:だよ]！
+？！
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+[effect bit_talk_CommandMantra_bluesky_03 0,32]
+[cueSe Battle bas16]
+[wt 2.3]
+
+[branch _branchEnd]
+
+[label _Female]
+[effect bit_talk_CommandMantra_bluesky_04 0,32]
+[cueSe Battle bas16]
+[wt 2.3]
+
+[branch _branchEnd]
+
+[label _branchEnd]
+
+[fadeout black 0.5]
+[wait fade]
+
+[effectDestroy bit_talk_CommandMantra_bluesky_03]
+[effectDestroy bit_talk_CommandMantra_bluesky_04]
+
+[charaDepth A 1]
+[charaDepth F 2]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaFadein F 0.1 0,-200]
+[scene 213600]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+[wt 0.3]
+
+＠カリオストロ・ヘッド
+！！！！！！
+[k]
+
+[messageOff]
+[charaFadeout F 0.5]
+[wt 0.7]
+
+＠巌窟王
+仕上げだ！[r]征くぞ。
+[k]
+
+[messageOff]
+[cueSe Battle bac375]
+[charaMoveEase A 0,-60 0.5 easeOutSine]
+[wt 1.0]
+
+＠
+[line 3][#徐:おもむろ]に、彼が右手を地中へ突き入れる。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadein #A 0.6 0,0]
+[wt 0.6]
+[se ad343]
+[seVolume ad343 0 0.7]
+[fowardEffect bit_talk_06_b3]
+[wt 0.5]
+[charaFadeout A 0.1]
+
+＠
+地中。違う。影。[r]手は、彼自身の足元の影へ。
+[k]
+
+＠
+[#一度はひとつの霊基として合わさったもの]を。[r]疑似東京であなたがやったのと同じに……
+[k]
+
+＠
+引きずり出す。[r]無理矢理に！
+[k]
+
+[messageOff]
+[se ad396]
+[seVolume ad396 0 0.4]
+[se ad596]
+[seVolume ad596 0 0.6]
+[subRenderMoveScaleEase #A 1.0 2.0 easeOutSine]
+[subRenderFadein #B 0.6 0,0]
+[charaMoveEase G 0,-315 2.0 easeOutSine]
+[charaMoveEase B 50,-10 2.0 easeOutSine]
+[charaMoveEase D -150,0 2.0 easeOutSine]
+[wt 2.5]
+[seStop ad343 1.5]
+[seStop ad396 1.5]
+[seStop ad596 1.5]
+[fowardEffectStop bit_talk_06_b3]
+[wt 1.5]
+
+
+
+？1：巌窟王がふたり！
+？2：ダブル巌窟王！？
+？！
+
+
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+
+[se ad429]
+[seVolume ad429 0 0]
+[seVolume ad429 0.6 1.0]
+[se ad961]
+[seVolume ad961 0 0]
+[seVolume ad961 0.7 0.3]
+[fowardEffect bit_talk_sparks_blue]
+[subRenderFadeinFSR #C 0.2 250,-320]
+[subRenderMoveFSR #C 250,-270 0.2]
+[subRenderFadeinFSL #D 0.2 -250,-230]
+[subRenderMoveFSL #D -250,-270 0.2]
+[wt 0.2]
+
+＠二人の巌窟王
+クク[line 3][r]ク[messageShake 0.03 5 5 0.7]クハハハハハハハハハハハハハハハハハハ！！
+[k]
+
+[seStop ad961 3.0]
+
+＠二人の巌窟王
+[f large]仕上げだ！
+[k]
+
+＠二人の巌窟王
+[f large][#此処:こ　こ]で、すべてを灼き尽くす！
+[k]
+
+[messageOff]
+[se ad961]
+[seStop ad429 0.5]
+[fowardEffect bit_talk_29_black]
+[wt 1.0]
+[cueSe SE_23 23_ade925]
+[fowardEffect bit_talk_fire_blue]
+[fowardEffect bit_talk_fire_kma]
+[fowardEffect bit_talk_fire_wall_bl]
+[wt 2.0]
+[cueSe SE_23 23_ade890]
+[seStop 23_ade890 0.4]
+[wt 0.2]
+
+
+[fadeout white 0.5]
+[bgmStopEnd BGM_BATTLE_197 0.4]
+[wait fade]
+
+[subRenderFadeout #C 0.1]
+[subRenderFadeout #D 0.1]
+[scene 10000]
+[fowardEffectDestroy bit_talk_sparks_blue]
+[fowardEffectDestroy bit_talk_fire_blue]
+[fowardEffectDestroy bit_talk_fire_kma]
+[fowardEffectDestroy bit_talk_fire_wall_bl]
+[charaFadeout H 0.1]
+[charaFadeout C 0.1]
+[charaFadeout I 0.1]
+[charaFadeout E 0.1]
+[subCameraOff]
+[wt 0.8]
+
+[seStop 23_ade925 1.0]
+[fadein white 1.0]
+[wait fade]
+[soundStopAllEnd]
+[end]
