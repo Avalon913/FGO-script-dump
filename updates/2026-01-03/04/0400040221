@@ -1,0 +1,650 @@
+
+
+
+
+＄04-00-04-02-2-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1041000 1 アストルフォ]
+[charaSet B 4034300 1 バーソロミュー]
+[charaSet C 1098276910 1 マシュ]
+[charaSet E 33002001 1 エレシュキガル]
+[charaSet F 1043002 1 ローラン]
+[charaSet G 1098301500 1 アンソニー]
+[charaSet H 1098301700 1 騎士団員フィアレス]
+[charaSet I 1098301700 1 騎士団員ハピネス]
+[charaSet J 1098301700 1 騎士団員マッドネス]
+
+[sceneSet K 10000 1]
+[charaScale K 1.05]
+
+[sceneSet L 226600 1]
+
+[sceneSet O 223400 1]
+[sceneSet P 223400 1]
+
+[charaSet Q 98115000 1 エフェクト用ダミー1]
+[charaSet R 98115000 1 エフェクト用ダミー1]
+
+[scene 223400]
+
+[bgm BGM_BATTLE_113 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+くっはぁ！？[r]ちょっと待って、強い、強いよこの旧人類～！（涙）
+[k]
+
+[messageOff]
+[subCameraOn 2]
+[charaLayer B sub #A]
+[charaLayer O sub #A]
+[charaLayer C sub #B]
+[charaLayer P sub #B]
+[subCameraFilter #A maskEdge cut359_mask10 5 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask16 5 0,0,0,255]
+
+[charaScale C 1.1]
+[charaScale B 1.1]
+[charaScale O 1.2]
+[charaScale P 1.2]
+
+[charaTalk depthOff]
+[charaDepth C 4]
+[charaDepth B 3]
+[charaDepth L 2]
+[charaDepth P 1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0 0,270]
+[charaFadein O 0 250,-20]
+
+[charaFace C 14]
+[charaFadein C 0 0,270]
+[charaFadein P 0 -250,-20]
+
+[subRenderFadeinFSL #A 0.2 -400,-230]
+[subRenderMoveFSL #A -390,-270 0.2]
+[wt 0.2]
+
+＠バーソロミュー
+いけるぞマシュ、このまま押し切れる！[r]捕まえて情報を聞き出そう！
+[k]
+
+[charaTalk C]
+[subRenderFadeinFSR #B 0.2 400,-230]
+[subRenderMoveFSR #B 390,-270 0.2]
+
+＠マシュ
+はい！　アストルフォさんなら[r]話せばきっと分かってくれます！
+[k]
+
+＠マシュ
+武器を取り上げた後、[r]問い詰めましょう！
+[k]
+
+[messageOff]
+[charaTalk B,C,A]
+[cameraMoveEase 0,-10 0.5 easeOutQuint 1.05]
+
+[subRenderMoveEaseFSL #A -350,-285 0.5 easeOutQuint]
+[subRenderMoveEaseFSR #B 350,-285 0.5 easeOutQuint]
+[subRenderMoveScaleEase #A 1.05 0.5 easeOutQuint]
+[subRenderMoveScaleEase #B 1.05 0.5 easeOutQuint]
+[wt 0.5]
+
+[charaFace A 25]
+
+＠アストルフォ
+はわわわ～～！　やだやだ、[r]お説教なんて聞いたら理性が戻っちゃう～～～（涙）
+[k]
+
+＠アストルフォ
+たすけてローラーーーン！[r]強すぎるローラーーーン！
+[k]
+
+[messageOff]
+[charaDepth F 9]
+[charaDepth A 8]
+
+[charaTalk F]
+[charaFace F 2]
+[charaPut F 0,10]
+[charaMove F 0,-10 0.3]
+[charaEffect F bit_talk_quickmove 0,0 V]
+[charaSpecialEffect F appearance 1 0.25]
+[se ad73]
+[se ad222]
+[wt 0.2]
+[charaMove F 0,0 0.4]
+[effect bit_talk_impactlanding]
+[wt 0.2]
+[wait charaSpecialEffect F]
+[wt 0.4]
+[effect bit_talk_14]
+[cueSe SE_23 23_ad1341]
+
+[charaTalk B,C,F]
+[charaFace C 23]
+[charaFace B 6]
+[wt 0.3]
+[cameraMoveEase 0,0 0.5 easeOutQuint 1.0]
+[subRenderMoveEaseFSL #A -750,-270 0.8 easeOutQuint]
+[subRenderMoveEaseFSR #B 750,-270 0.8 easeOutQuint]
+[subRenderFadeout #A 0.8]
+[subRenderFadeout #B 0.8]
+[wt 0.5]
+
+＠C：マシュ＆バーソロミュー
+うわぁーーー！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[wt 0.1]
+[charaScale C 1.0]
+[charaScale B 1.0]
+[effectDestroy bit_talk_impactlanding]
+
+[subCameraOff]
+[charaLayer C normal]
+[charaLayer B normal]
+[charaLayer O normal]
+[charaLayer P normal]
+
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 1]
+
+＠エレシュキガル
+派手に飛んだわね。[r]まあ当然か。魔力量が段違いだもの。
+[k]
+
+[charaFace E 0]
+
+＠エレシュキガル
+[%1]、あのローランって騎士、有名？[r]地球で一番強くて、地球で一番頼もしい？
+[k]
+
+？1：有名だけど、そこまでかは……
+
+＠エレシュキガル
+そう。じゃあそう信じているヤツがいるのね。[r]あの騎士は月で一番強いんだって。
+[k]
+
+[charaFadeout E 0.1]
+
+？2：[&ああ:うん]。[&オレ:わたし]の中ではそう
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠ローラン
+そうだったのか！？[r]なんてこった、こんなところにも俺のファンが！
+[k]
+
+[charaFace F 1]
+
+＠ローラン
+光栄だ、見知らぬ魔術師よ！[r][#竹馬:ちくば]の友でもそこまで俺を信じていない！
+[k]
+
+[charaFace F 3]
+
+＠ローラン
+今すぐにでも友の誓いを立て、[r]世界の終わりまで飲み明かしたいところだが……
+[k]
+
+[charaFadeout F 0.1]
+
+？！
+
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+ちがーう、一番じゃないでーす！[r]ローランは無敵だけど二番！　いや三番ね！
+[k]
+
+[charaFace A 26]
+
+＠アストルフォ
+でも『今までで一番強い』ローランなのは[r]本当だから！　ボクのローランは最強なんだ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth R 4]
+[charaDepth F 3]
+[charaDepth Q 2]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaPut R 1]
+[charaEffect R bit_talk_lightning_07b]
+[se ad950]
+[wt 1.5]
+[seStop ad950 2.0]
+
+[charaFace F 3]
+
+＠ローラン
+[line 3]フッ。やめろよ人前で本当の事を言うのは。[r]照れるじゃあないか。
+[k]
+
+[charaFace F 1]
+
+＠ローラン
+まあ確かに？　地元じゃ陛下を除けば俺が[r]さいつよだし？　人気も知名度もスター級ですけど？
+[k]
+
+[messageOff]
+[effect bit_talk_CommandMantra_asts]
+[cueSe SE_24 24_ad1434]
+[wt 2.1]
+
+[charaPut Q 1]
+[effect bit_talk_release]
+[charaEffect Q bit_talk_charge_blu]
+[se adm20]
+[se ad950]
+[wt 1.0]
+[se ad1061]
+[wt 1.0]
+[seStop ad1061 2.5]
+[seStop ad950 2.5]
+[wt 0.5]
+
+？1：！　いまの魔力支援、まさか！？
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut Q 2000,2000]
+[charaPut R 2000,2000]
+[charaPut F 2000,2000]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.4 0,-20]
+[charaMove C 0,0 0.6]
+[charaShake C 0.1 3 3 0.6]
+[wt 0.8]
+[charaFaceFade C 14 0.2]
+
+＠マシュ
+はい、マスター……！[r]今の魔術式は令呪と同等のものです……！
+[k]
+
+？2：うーん。どこかで見たような？
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut Q 2000,2000]
+[charaPut R 2000,2000]
+[charaPut F 2000,2000]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.4 0,-20]
+[charaMove C 0,0 0.6]
+[charaShake C 0.1 3 3 0.6]
+[wt 0.6]
+
+＠マシュ
+すみません、マスター……。[r]右手をご覧ください……見覚え……ありますよね？
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 0,-20]
+[charaMove B 0,0 0.6]
+[charaShake B 0.1 3 3 0.6]
+[wt 0.6]
+
+＠バーソロミュー
+そのようだね……令呪そのものではないようだが、[r]同じ効果のものがローランにかかっている。
+[k]
+
+[charaFaceFade B 16 0.2]
+
+＠バーソロミュー
+あれはおそらく[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+見たかー！[r]ローランがいるかぎりボクたちは誰にも負けない！
+[k]
+
+[charaFace A 1]
+
+＠アストルフォ
+月笑騎士団、集合～～！[r]遊びはここまで、いよいよ獲物を公開処刑だ～～！
+[k]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth G 2]
+[charaDepth H 3]
+[charaDepth I 4]
+[charaDepth Q 5]
+[charaDepth F 6]
+[charaDepth R 7]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.2 -340,0]
+[charaMove G -320,0 0.2]
+[se ad7]
+
+＠アンソニー
+いえ、ですから捕縛してください！[r]捕まえるだけでいいんですよ聞いてますか[wt 1.1][charaFace G 2][charaTalk H,I,G][charaFadeinFSL H 0.2 -330,0][charaFadeinFSR I 0.2 330,0][charaMoveFSL H -350,0 0.25][charaMoveFSR I 350,0 0.25][cueSe SE_23 23_ade824][wt 0.1]うわぁぁあ！[seStop 23_ade824 0.4][cueSe SE_23 23_ad1324][charaMove G -400,0 0.25][charaFadeout G 0.2]
+[k]
+
+[messageOff]
+
+[charaScale F 1.05]
+[charaTalk F]
+[charaFace F 0]
+[charaPut F 0,5]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect F appearance 1 0.25]
+[wt 0.2]
+[charaPut Q 1]
+[charaPut R 1]
+[wt 0.2]
+[wait charaSpecialEffect F]
+
+＠ローラン
+そういう事だ。アンソニーの意見が正しいのは分かる。[r]だが俺を最強だと信じる友の望みだ。
+[k]
+
+＠ローラン
+悪いがその首をもらう。[r]なに。どうせここは未来の世界だ。
+[k]
+
+＠ローラン
+アンタが死のうと、[r]人類が滅びた歴史に変化はないさ。
+[k]
+
+[messageOff]
+[charaMoveEase F 0,20 1.5 easeOutExpo]
+[charaMoveScaleEase F 1.2 1.5 easeOutExpo]
+[se ad984]
+
+[charaFadeout A 0.6]
+[charaFadeout H 0.6]
+[charaFadeout I 0.6]
+[wt 1.7]
+
+[charaDepth K 10]
+[charaPut K 0,0]
+[charaFadeTime K 0.7 0.4]
+[se ad241]
+[seVolume ad241 0 0.1]
+[seVolume ad241 0.5 0.5]
+[wt 0.5]
+[seStop ad241 1.7]
+[wt 1.5]
+
+[subCameraOn 1]
+[charaLayer C sub #A]
+[charaLayer P sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 3 255,255,255,255]
+
+[charaScale C 1.1]
+[charaScale P 1.2]
+
+[charaDepth C 4]
+[charaDepth P 1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0 0,270]
+[charaFadein P 0 -250,-20]
+
+[subRenderFadeinFSR #A 0.2 360,-230]
+[subRenderMoveFSR #A 360,-270 0.2]
+[wt 0.2]
+
+＠マシュ
+！　待ってくださいローランさん！[r]ストップ、ストップ！
+[k]
+
+[subRenderFadeout #A 0.2]
+
+[charaFace F 4]
+
+＠ローラン
+いや、だから悪いって。
+[k]
+
+[charaFace F 0]
+
+＠ローラン
+ごめんなー、俺だって不本意ではあるけど[r]これもサーヴァントとして召喚された責任っていうか[r]他のラスボス候補よりうちのバカの方がまだマシっていうか
+[k]
+
+[messageOff]
+[wt 0.6]
+[fowardEffect bit_talk_prt_attackex]
+[se ad628]
+[se ad882]
+[se ad242]
+[seStop ad242 1.0]
+[wt 0.2]
+[charaMove F 0,-80 0.1]
+
+[bgmStop BGM_BATTLE_113 0.6]
+[fadeout white 0.8]
+[seStop ad628 1.4]
+[seStop ad882 1.4]
+[cueSe SE_21 21_ad1140]
+[shake 0.05 3 3 1.0]
+[charaFadeout F 0.1]
+[wait fade]
+
+[charaPut Q 2000,2000]
+[charaPut R 2000,2000]
+[charaEffectDestroy Q bit_talk_lightning_07b]
+[charaEffectDestroy R bit_talk_charge_blu]
+[charaFadeout K 0.1]
+[charaFadeout P 0.1]
+[charaFadeout C 0.1]
+[wt 2.5]
+[subCameraOff]
+[charaLayer C normal]
+[charaLayer P normal]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+うわあああローーーラーーーン！？[messageShake 0.05 4 4 0.2]
+[k]
+
+[messageOff]
+[bgm BGM_BATTLE_62 0.1]
+
+[charaScale O 1.1]
+
+[charaDepth H 5]
+[charaDepth I 4]
+[charaDepth J 3]
+[charaDepth O 2]
+[charaDepth A 1]
+
+[charaTalk H,I,J,A]
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFadein H 0.5 -40,0]
+[charaFadeinFSL I 0.5 -360,0]
+[charaFadeinFSR J 0.5 280,0]
+[charaFadein O 0.5 -40,-250]
+
+[charaMoveEase H 0,0 0.7 easeOutExpo]
+[charaMoveEaseFSL I -320,0 0.7 easeOutExpo]
+[charaMoveEaseFSR J 320,0 0.7 easeOutExpo]
+[charaMoveEase O 0,-250 0.7 easeOutExpo]
+[wt 0.6]
+
+[charaFadeout A 0.1]
+
+＠騎士団員フィアレス
+うわああああ[#交通事故:こ う つ う じ こ]だーーー！[messageShake 0.05 4 4 0.2][r]ローランの旦那がぺしゃんこにぃぃい！
+[k]
+
+＠騎士団員ハピネス
+うっわ生きてるだろうけどあれはひどい。[r]さすがに一日は動けない。
+[k]
+
+＠騎士団員マッドネス
+つーかこの圧倒的な暴力……[r]遠慮も加減もない残酷さ……
+[k]
+
+＠騎士団員マッドネス
+もしかして……もしかして……
+[k]
+
+＠騎士団員マッドネス
+うわぁあああああ！[messageShake 0.05 4 4 0.8][r]やっぱりアイツが来てるぅぅうーーー！
+[k]
+
+[messageOff]
+[effect bit_talk_prt_mowdown]
+[fowardEffect bit_talk_sand_dust_fast]
+[cueSe SE_24 24_ad1433]
+[se ad628]
+[se ad882]
+[wt 0.3]
+[shake 0.05 3 3 1.0]
+[charaMove H -600,0 0.5]
+[charaMoveFSL I -920,0 0.5]
+[charaMoveFSR J -280,0 0.5]
+[charaFadeout H 0.4]
+[charaFadeout I 0.4]
+[charaFadeout J 0.4]
+[wt 0.1]
+
+[seStop ad882 1.2]
+[seStop ad628 1.2]
+[fadeout white 0.6]
+[wait fade]
+
+[charaFadeout O 0.1]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.3]
+
+[charaTalk H,I]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadeinFSL H 0.5 -190,0]
+[charaFadeinFSR I 0.5 270,0]
+[charaFadein O 0.5 40,-250]
+[charaMoveEaseFSL H -230,0 0.7 easeOutExpo]
+[charaMoveEaseFSR I 230,0 0.7 easeOutExpo]
+[charaMoveEase O 0,-250 0.7 easeOutExpo]
+[wt 1.0]
+
+[effect bit_talk_prt_mowdown 0,0 H]
+[fowardEffect bit_talk_sand_dust_fast 0,0 H]
+[cueSe SE_24 24_ad1433]
+[se ad628]
+[se ad882]
+[wt 0.3]
+[shake 0.05 3 3 1.0]
+[charaMoveFSL H 370,0 0.5]
+[charaMoveFSR I 990,0 0.5]
+[charaFadeout H 0.4]
+[charaFadeout I 0.4]
+[wt 0.1]
+
+[seStop ad882 1.2]
+[seStop ad628 1.2]
+[fadeout white 0.6]
+[wait fade]
+
+[charaFadeout O 0.1]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+＠？？？
+見間違いじゃないですよね？[r]いま、皆さんを殺そうとしましたね？
+[k]
+
+＠？？？
+なら掃除しちゃっていいですよね？[r]悪いひとたちは、ひとり残らずお仕置きです。
+[k]
+
+[messageOff]
+[charaScale L 1.3]
+
+[charaFadein L 1.0 0,-300]
+[charaMove L 0,-350 5.0]
+[wt 3.0]
+
+＠月笑騎士団たち
+ひぃぃい、怪獣だーーー！[messageShake 0.05 4 4 0.8][r]キングプロテアがやって来た～～～！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_BATTLE_62 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

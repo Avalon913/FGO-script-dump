@@ -1,0 +1,1059 @@
+
+
+
+
+＄94-08-69-07-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 2050000 1 プトレマイオス]
+[charaSet B 2051001 1 杉谷善住坊]
+[charaSet C 1098257310 1 ダ・ヴィンチ]
+[charaSet D 1098257810 1 マシュ]
+[charaSet E 4043001 1 太公望]
+[charaSet F 4043001 1 太公望（シルエット）]
+[charaFilter F silhouette 00000080]
+[charaSet G 1098272800 1 巨人]
+
+[charaSet H 1098255110 1 ゴルドルフ]
+
+[charaSet I 4043001 1 太公望（演出用）]
+
+[imageSet J black_fade 1 1]
+[charaScale J 2.0]
+[imageSet K black_fade 1 1]
+[charaScale K 2.0]
+
+[imageSet O cut472_grail 1]
+[imageSet P cut473_amulet 1]
+
+[sceneSet Q 193100 1]
+[charaScale Q 1.4]
+
+[sceneSet R 194601 1]
+[charaScale R 1.4]
+[sceneSet S 194604 1]
+[charaScale S 1.4]
+[sceneSet T 193100 1]
+[charaScale T 1.4]
+[sceneSet U 193100 1]
+[charaScale U 1.4]
+
+
+[imageSet V back10001_fs 1 1]
+[charaScale V 2.5]
+
+
+[charaSet W 98115000 1 エフェクト用]
+[charaSet X 98115000 1 エフェクト用2]
+[charaSet Y 98115000 1 エフェクト用3]
+[charaSet Z 98115000 1 エフェクト用3]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 193100]
+
+[charaTalk depthOff]
+[charaDepth Q 1]
+[charaDepth G 2]
+[charaDepth A 2]
+[charaDepth B 2]
+[charaDepth C 2]
+[charaDepth D 2]
+
+[charaDepth W 3]
+[charaDepth Y 4]
+[charaDepth X 5]
+[charaDepth Z 6]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[charaScale Q 1.01]
+[charaFadein Q 0.1 0,-200]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaShake G 0.04 2 3 0.7]
+[charaMove G 0,-65 0.7]
+[charaFadeout G 0.7]
+[wt 0.6]
+
+[charaPut X 500,0]
+[charaPut Y -700,0]
+[charaEffect X bit_talk_sand_dust_front_fs]
+[charaEffect Y bit_talk_sand_dust_back_fs]
+[wt 0.1]
+
+[shake 0.01 2 2 2.4]
+
+[se ade79]
+[se ad875]
+[seStop ad875 2.5]
+[se ad228]
+[seVolume ad228 0 0.5]
+[charaPut W 0,-200]
+[charaEffect W bit_talk_impactlanding]
+
+[wt 0.7]
+[seStop ade79 0.2]
+[wt 1.5]
+[charaEffectStop X bit_talk_sand_dust_front_fs]
+[charaEffectStop Y bit_talk_sand_dust_back_fs]
+[wt 1.0]
+[seStop ad228 0.4]
+[wt 0.5]
+
+？1：巨人を……
+？2：倒した……？
+？！
+
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+[#迂闊:うかつ]に近づくなよ、マスター。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠杉谷善住坊
+影の騎士たちも出なくなったな……
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaMoveReturn B 0,-4 0.7]
+[wt 0.01]
+[se ade191]
+[wt 0.2]
+[seStop ade191 0.4]
+[wt 1.1]
+
+[charaEffectDestroy W bit_talk_impactlanding]
+[charaEffectDestroy X bit_talk_sand_dust_front_fs]
+[charaEffectDestroy Y bit_talk_sand_dust_back_fs]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+じゃあ、[#吾:あ]の後ろからついてきてくれ。[r]ゆっくりとだぞ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.15]
+
+[se ad60]
+[seVolume ad60 0 0.6]
+[charaMoveScale Q 1.1 2.4]
+[charaMove Q 0,-240 2.4]
+[wt 0.4]
+[seStop ad60 0.2]
+[wt 0.8]
+[se ad60]
+[seVolume ad60 0 0.6]
+[wt 0.4]
+[seStop ad60 0.2]
+[wt 1.2]
+
+[se ade404]
+[seVolume ade404 0 0]
+[charaScale X 1.1]
+[charaPut X 1]
+[charaEffect X bit_talk_light_throne01]
+[wt 0.1]
+[seVolume ade404 1.0 0.1]
+[wt 2.0]
+
+[subCameraOn 2]
+[charaLayer A sub #A]
+[charaLayer T sub #A]
+[charaLayer D sub #B]
+[charaLayer W sub #B]
+[charaLayer C sub #B]
+[charaLayer U sub #B]
+[subCameraFilter #A maskEdge cut359_mask16 4 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask10 4 0,0,0,255]
+[charaTalk on]
+[charaTalk depthOff]
+[charaDepth T 1]
+[charaDepth U 1]
+[charaDepth A 2]
+[charaDepth D 2]
+[charaDepth C 2]
+[charaDepth W 3]
+[charaScale A 1.0]
+[charaScale D 1.0]
+[charaScale C 1.0]
+[charaScale T 1.4]
+[charaScale U 1.4]
+[charaFace A 1]
+[charaFace C 17]
+[charaFadein A 0.1 -35,225]
+[charaFadein C 0.1 50,225]
+[charaFadein T 0.1 -820,0]
+[charaFadein U 0.1 820,0]
+[charaPut W 50,225]
+[charaEffect W bit_talk_10_LowLevel]
+
+[charaTalk A]
+[subRenderFadeinFSSideR #A 0.4 450,-380]
+[subRenderMoveFSSideR #A 450,-250 0.4]
+[wt 0.55]
+＠プトレマイオス
+こいつは……マスターに反応してるのか？[r]どうだ？　対応できるか？
+[k]
+
+？1：多分
+？2：ダ・ヴィンチちゃんお願いできる？
+？！
+
+[messageOff]
+[charaTalk C]
+[subRenderFadeinFSSideL #B 0.4 -450,-380]
+[subRenderMoveFSSideL #B -450,-250 0.4]
+[wt 0.6]
+＠ダ・ヴィンチ
+任せて。そちらの礼装から聖杯に干渉する！[r]これだけはっきりしてれば問題ない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 50,225]
+＠マシュ
+魔力の波長解析終了。同調完了。[r]摘出を開始します……
+[k]
+
+[messageOff]
+[charaTalk X]
+[wt 0.2]
+[charaEffectStop X bit_talk_light_throne01]
+[wt 0.5]
+
+[charaPut Z 1]
+[charaEffect Z bit_talk_20_remake]
+[wt 0.2]
+[cueSe SE_23 23_ade914]
+[cueSeVolume 23_ade914 0 0.7]
+[wt 1.7]
+
+[se adm20]
+[fadeout white 1.0]
+[seStop ade404 1.2]
+[wait fade]
+
+[charaPut Z 2000,2500]
+[charaEffectStop Z bit_talk_20_remake]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout T 0.1]
+[charaFadeout U 0.1]
+[charaPut W 2000,2500]
+[wt 0.2]
+[subCameraOff]
+[charaLayer A normal]
+[charaLayer C normal]
+[charaLayer D normal]
+[charaLayer T normal]
+[charaLayer U normal]
+[charaLayer W normal]
+[charaScale C 1.0]
+[charaScale A 1.0]
+[charaScale D 1.0]
+[charaScale W 1.0]
+[charaScale T 1.0]
+[charaScale U 1.0]
+[wt 0.1]
+
+[charaFadeout Q 0.1]
+
+[charaPut X 2000,2500]
+
+[charaScale O 0.5]
+[charaTalk O]
+[charaFace O 0]
+[charaFadein O 0.4 0,-60]
+[charaEffectEdgeBlur O FEFF7F FEFF7F 4 2.5]
+[wt 2.0]
+
+[fadein white 1.2]
+[wait fade]
+[wt 1.0]
+
+
+？1：聖杯の……
+？2：雫……？
+？！
+
+[charaFadeout O 0.1]
+[wt 0.05]
+[charaPut O 2000,2500]
+[wt 0.05]
+[charaEffectEdgeBlurStop O]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+何？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.5]
+
+[cueSe SE_23 23_ade911]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠杉谷善住坊
+[line 3]そこかッ！
+[k]
+
+[messageOff]
+[wt 0.05]
+
+[cueSe Battle bac341]
+[fadeout white 0.1]
+[wait fade]
+
+[charaFadeout B 0]
+
+[effect bit_talk_blow -250,50]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.6]
+
+[cueSe SE_21 21_ade549]
+[wt 1.8]
+
+
+？1：杉谷さん！？
+？2：窓際に、カラス？
+？！
+
+
+[messageOff]
+[cueSe SE_21 21_ade603]
+[charaScale X 1.0]
+[charaPut X 1]
+[charaEffect X bit_talk_smoke_pon]
+[wt 0.7]
+
+[charaTalk P]
+[charaFace P 0]
+[charaFadein P 0.4 0,-80]
+[charaMoveEase P 0,-180 1.2 easeOutElastic]
+[wt 2.2]
+＠E：？？？
+おやおや、こっそり見ているはずが。[r]霊符を撃ち抜かれるとは。
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠杉谷善住坊
+妖術は苦手だが、そのぶん臭いには敏感でね。[r]姿を現しやがれッ[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.4]
+[se ade251]
+[wt 0.05]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.7 1]
+[wt 2.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+おまえは……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth F 3]
+[charaDepth E 2]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.5]
+
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+[charaFadeout F 0.7]
+[wt 1.4]
+
+[bgm BGM_EVENT_97 0.1]
+
+？1：太公望！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠杉谷善住坊
+太公望？[r]まさか、太公望・呂尚か！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+ダ・ヴィンチが言ってた名前だナ。[r]大陸の東の、伝説的な軍師だっけか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠太公望
+あっはっは、伝説的なんて言われると面はゆい。[r]まあ、それほどのことはあるんですがね？
+[k]
+
+？1：どうして太公望が[line 3]
+？2：最初のときから何を[line 3]
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut W 1]
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 1]
+＠ダ・ヴィンチ
+違うよ、[%1][&君:ちゃん]。[r]多分彼はカルデアの太公望じゃない。
+[k]
+
+＠ダ・ヴィンチ
+この特異点で、[r]別に召喚されたサーヴァント・太公望だよ。
+[k]
+
+[charaFace C 22]
+＠ダ・ヴィンチ
+……そうだよね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut W 2000,2500]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠太公望
+まあ、そんなところで。[r]以後お見知りおきを。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+＠杉谷善住坊
+……その太公望が、何をしていた？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠太公望
+いえ、中央の城で戦っている気配があったので、[r]ちょっと道術で使い魔を飛ばしてみたんです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+中央の城……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠太公望
+あれ、ご存知ない？[r]ということは、中央の近くで召喚されましたか。
+[k]
+
+[charaFace E 1]
+＠太公望
+そこの窓をご覧ください。[r]あなたが城主となったなら、霧が晴れるはずです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+……見てもらえるか、マスター。
+[k]
+
+？1：分かった
+？！
+
+[messageOff]
+[wt 0.1]
+[se ad60]
+[cameraMove 3.0 85,-25 1.25]
+[charaMoveScale A 1.05 0.6]
+[charaMove A 35,7 0.6]
+[charaFadeout A 0.6]
+[wt 1.5]
+
+[charaCutin V circleIn 1.5 0.5]
+[seStop ad60 1.5]
+[wt 1.5]
+
+[fadeout white 0.1]
+[wait fade]
+
+[charaCutout V 0.1]
+[charaFadeout A 0.1]
+[charaCutStop V]
+
+[cameraMove 0 0,0 1.01]
+[scene 10001]
+[wt 0.6]
+
+[criMovie talk_mov192 bgmPlay false]
+[wt 1.2]
+
+[fadein white 0.8]
+[wait fade]
+
+[wt 12.5]
+
+
+[fadeout white 0.8]
+[wait fade]
+
+[imageSet V back10000 1 1]
+[charaScale V 1.3]
+
+[scene 193100]
+
+[cameraMove 0 0,0 1.01]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_97 1.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+？1：他に、ふたつの城が……
+？2：つまり、ここは……
+
+？！
+
+[bgm BGM_EVENT_122 0.1]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+この城は、連なった三つの城の、[r]ひとつに過ぎなかったということか！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠太公望
+ご名答。[r]僕は、北の城主の太公望ということになる。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth E 1]
+[charaDepth R 2]
+[charaDepth S 3]
+[charaDepth I 4]
+
+[charaScale R 1.01]
+[charaFadein R 1.0 0,-200]
+[wt 1.4]
+
+[cueSe Battle bac41]
+[cueSeVolume bac41 0 0.7]
+[wt 0.1]
+[charaScale S 1.01]
+[charaFadein S 0.3 0,-200]
+[wt 0.3]
+[charaFadeout R 0.1]
+[wt 0.9]
+
+
+[subCameraOn 2]
+[charaLayer H sub #A]
+[charaLayer Z sub #A]
+[charaLayer U sub #A]
+[charaLayer I sub #B]
+[charaLayer T sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask11 4 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask12 4 0,0,0,255]
+
+[charaTalk on]
+[charaTalk depthOff]
+[charaDepth T 1]
+[charaDepth U 1]
+[charaDepth I 2]
+[charaDepth H 2]
+[charaDepth Z 3]
+
+[charaScale I 0.95]
+[charaScale H 0.95]
+[charaScale T 1.2]
+[charaScale U 1.2]
+[charaFace I 0]
+[charaFace H 11]
+[charaFadein I 0.1 -400,270]
+[charaFadein H 0.1 425,265]
+[charaFadein T 0.1 150,150]
+[charaFadein U 0.1 -150,150]
+
+[charaPut Z 440,290]
+[charaEffect Z bit_talk_10_LowLevel]
+
+[charaTalk I]
+[subRenderFadeinFSSideL #B 0.35 60,-150]
+[subRenderMoveFSSideL #B 10,-250 0.35]
+[wt 0.5]
+＠I：太公望
+それぞれの城に、城主たるサーヴァントがいて、[r]それぞれの玉座に聖杯の雫[line 3]カケラがあります。
+[k]
+
+＠I：太公望
+ここまで言えば、この特異点がどういう趣向かは[r]充分お分かりいただけるのでは？
+[k]
+
+＠I：太公望
+サーヴァントが願望機たる聖杯を求め争う儀式を、[r]あなたたちは知っているでしょう。
+[k]
+
+[messageOff]
+[charaTalk H]
+[subRenderFadeinFSSideR #A 0.35 -60,-150]
+[subRenderMoveFSSideR #A -10,-250 0.35]
+[wt 0.5]
+＠ゴルドルフ
+ぐ、む。そ、それは……
+[k]
+
+？1：聖杯戦争……！
+？！
+
+[messageOff]
+[charaTalk H,E]
+[subRenderFadeout #A 0.8]
+[subRenderFadeout #B 0.8]
+
+[charaFadeout S 0.8]
+[wt 0.8]
+
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[charaFadeout T 0.1]
+[charaFadeout U 0.1]
+[charaPut Z 2000,2500]
+[charaEffectDestroy Z bit_talk_10_LowLevel]
+[wt 0.2]
+
+[subCameraOff]
+[charaLayer I normal]
+[charaLayer H normal]
+[charaLayer T normal]
+[charaLayer U normal]
+[charaLayer Z normal]
+[charaScale I 1.0]
+[charaScale H 1.0]
+[charaScale Z 1.0]
+[charaScale T 1.0]
+[charaScale U 1.0]
+[wt 0.25]
+
+[charaTalk on]
+[charaFace E 1]
+＠太公望
+はい。[r]この場合、聖杯戦線とでも呼びましょうか！
+[k]
+
+[charaFace E 0]
+＠太公望
+誰もが前線から逃れられない、[r]そういう戦いです。
+[k]
+
+＠太公望
+この中央だけはまだ城主のサーヴァントがおらず、[r]他から隔離されていたんですが……
+[k]
+
+[messageOff]
+[charaFace E 4]
+[wt 1.0]
+
+[charaFace E 0]
+＠太公望
+あなたたちが来たことで、[r]やっと解放されたようです。
+[k]
+
+＠太公望
+これで[line 3][#正しく争える]。
+[k]
+
+
+＠太公望
+王や軍師と呼ばれたサーヴァントにとっては、[r]まさに、ふさわしい召喚と言えるでしょう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+……ふさわしい召喚、か。[r]は。なるほど。否定はできないナ。
+[k]
+
+？1：でも、戦わなくても！
+？2：協力することだって……
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+[wt 1.0]
+[charaFace E 4]
+[wt 1.0]
+
+
+[charaFace E 0]
+＠太公望
+……そうですね。
+[k]
+
+＠太公望
+その言葉と想いは尊ぶべきモノですが、[r]この特異点では難しい。
+[k]
+
+＠太公望
+しばしば、サーヴァントは願いを有して現界します。
+[k]
+
+＠太公望
+まあ、僕のように、[r]達観した者もいることがありますが……
+[k]
+
+[cueSe SE_23 23_ade905]
+[cueSeVolume 23_ade905 0 0]
+
+[charaFace E 4]
+＠太公望
+ここの英霊たちの多くは、そうではない。
+[k]
+
+＠太公望
+複数の願いがぶつかってしまう以上、[r]残念ですが、闘争は避けられません。
+[k]
+
+＠太公望
+僕もまあ、僕個人はともかく、[r]部下に願いを放棄しろとは言えませんし[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaFadeTime V 0.2 0.5]
+
+[charaPut W 1]
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 1]
+＠ダ・ヴィンチ
+（部下って言った？）
+[k]
+
+＠ダ・ヴィンチ
+（さっきの影の騎士だけじゃなくて、[r]　他の城主には、サーヴァントの部下がいる？）
+[k]
+
+[charaFace C 26]
+＠ダ・ヴィンチ
+（だとしたら、相当厄介かも……！）
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout V 0.2]
+[wt 0.1]
+[charaPut W 2000,2500]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.4]
+
+[cueSeVolume 23_ade905 0.3 0.9]
+[charaFadeTime E 0.3 0.6]
+[wt 0.4]
+[charaFadeTime E 0.3 1.0]
+[wt 0.4]
+
+[charaFadeTime E 0.3 0.6]
+[wt 0.3]
+[cueSeStop 23_ade905 0.6]
+[wt 0.1]
+[charaFadeTime E 0.3 1.0]
+[wt 0.9]
+
+[bgmStop BGM_EVENT_122 2.0]
+
+＠太公望
+おっと。
+[k]
+
+＠太公望
+ふむ、魔力中継用の使い魔を撃ち抜かれては、[r]もう幻体は維持できませんね。
+[k]
+
+＠太公望
+挨拶ということで、ひとまずこれにて！[r]同じ城主同士、どうぞよろしく。
+[k]
+
+[charaFaceFade E 8 0.2]
+＠太公望
+僕と、[#聖杯を争ってください]。
+[k]
+
+？1：[line 6]！
+？！
+
+[messageOff]
+[se ad598]
+[charaSpecialEffect E erasure 0,0 1.2]
+[wt 2.4]
+
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaPut W 1]
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠マシュ
+まさか……こんな形で太公望さんが敵に……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+…………。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut W 2000,2500]
+[charaEffectStop W bit_talk_10_LowLevel]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠プトレマイオス
+……何、憂うことばかりじゃないサ。
+[k]
+
+[charaFace A 0]
+＠プトレマイオス
+少なくとも、この城を手に入れたのは間違いない。[r][#吾:あ]とマスターにとっては一歩前進だろう。
+[k]
+
+＠プトレマイオス
+それに、あの太公望のせいで、[r][#やることは嫌でも決まった]からナ。
+[k]
+
+？1：やること……？
+？！
+
+＠プトレマイオス
+ああ。後で説明する。[r]まずは拠点を作るから、少し休め。
+[k]
+
+[charaFace A 2]
+＠プトレマイオス
+どうやら、思ったより長丁場になりそうだからナ。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+
+[charaScale A 0.85]
+[charaFace A 0]
+[charaPut A 0,-55]
+
+[subCameraOn 1]
+[charaLayer J sub #A]
+[charaLayer K sub #A]
+
+[subCameraFilter #A through]
+[subRenderFadein #A 0 0,0]
+[subRenderScale #A 1.01]
+
+[overlayFadein J 0.1 0,-140]
+[overlayFadein K 0.1 0,-660]
+
+[charaPut V 1]
+[charaFadeTime V 0.1 0.4]
+
+[charaTalk depthOff]
+[charaDepth W 9]
+[charaDepth V 6]
+[charaDepth A 5]
+
+[blur lens 0 4 30]
+[wt 2.0]
+
+[se ad437]
+[seVolume ad437 0 0.7]
+[charaScale W 1.01]
+[charaPut W 1]
+[charaEffect W bit_talk_noise_gr]
+[fadein 8F8F8F 0.15]
+[wt 0.1]
+[se ad31]
+[seVolume ad31 0 0.2]
+[wait fade]
+[wt 1.5]
+
+[se ad437]
+[fadein 8F8F8F 0.15]
+[wt 0.1]
+[seStop ad31]
+[charaPut W 2000,2500]
+[wait fade]
+[wt 1.4]
+
+＠？？？
+三つの城の主が揃った。[r]三つの城の戦いが始まる。
+[k]
+
+＠？？？
+……でも、誰も、[#黄昏:たそがれ]までは来られない。
+[k]
+
+
+[messageOff]
+[fadeout black 0.7]
+[wait fade]
+
+[charaFadeout V 0.1]
+
+[subRenderFadeout #A 0.1]
+
+[blurOff lens 0.1]
+[charaFadeout A 0.1]
+[charaPut W 2000,2500]
+[charaEffectDestroy W bit_talk_noise_gr]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad867]
+[seVolume ad867 0 0.3]
+[effect bit_talk_mud_splash]
+[wt 1.0]
+
+
+[fadeout black 1.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

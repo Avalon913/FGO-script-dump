@@ -1,0 +1,1308 @@
+
+
+
+
+
+
+
+
+
+＄04-00-05-07-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098320600 1 マシュ]
+[charaSet B 1098324400 1 アイリーン]
+[charaSet C 3058000 1 アショカ王]
+[charaSet D 1098320700 1 カドック]
+[charaSet E 1098323000 1 罪人]
+[charaSet F 1098322700 1 天使]
+[charaSet G 1098322801 1 天使_八階梯]
+[charaSet H 1098322901 1 天使_九階梯]
+
+[charaSet I 1098257800 1 マシュ_カットイン用]
+[sceneSet J 246400 1]
+[sceneSet K 246400 1]
+[charaScale K 1.1]
+[sceneSet L 245800 1]
+[charaScale L 1.1]
+
+[sceneSet M 10000 1]
+[charaScale M 1.1]
+
+[sceneSet N 246804 1]
+[charaScale N 1.2]
+
+[charaSet O 1098320600 1 マシュ_パジャマ]
+[charaScale O 1.2]
+
+[charaTalk depthOff]
+[charaDepth L 1]
+[charaDepth K 2]
+[charaDepth F 2]
+[charaDepth M 3]
+[charaDepth B 4]
+[charaDepth C 5]
+[charaDepth D 6]
+[charaDepth A 7]
+[charaDepth F 6]
+[charaDepth G 5]
+[charaDepth H 4]
+
+
+[masterScene 246806 246804 0.1]
+
+[blur lens 0.1 4 1]
+[wipeout openEye 0.1 1]
+[wait wipe]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipein openEye 0.4 1]
+[wait wipe]
+[wt 0.1]
+[wipeout openEye 0.4 1]
+[wait wipe]
+
+[blurOff lens 0.1]
+[wt 0.5]
+
+[wipein openEye 1.0 1]
+[wait wipe]
+[wt 0.8]
+
+[masterBranch lblmsta lblmstb]
+[label lblmsta]
+
+[bgm BGM_EVENT_194 0.1]
+
+？1：おはよー！
+？！
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠カドック
+……朝か……。[r]くそ、何なんだまったく。
+[k]
+
+？1：どうしたの？
+？！
+
+[charaFace D 2]
+
+＠カドック
+ああ、いや。……夢を見ただけだ。[r]ジャンル的には悪夢の類いのな。
+[k]
+
+＠カドック
+おまえは大丈夫だったか？
+[k]
+
+？1：見たかもしれないけど……忘れた
+？！
+
+[charaFace D 8]
+
+＠カドック
+そうか、ならいいさ。[r]悪夢なんて思い出すものでもないしな。
+[k]
+
+[branch lblmst]
+
+[label lblmstb]
+
+[bgm BGM_EVENT_194 0.1]
+
+[charaDepth O 5]
+[charaDepth N 4]
+[charaDepth A 3]
+
+[charaTalk O]
+[charaFace O 4]
+[charaFadein O 0.5 -100,0]
+[charaFadein N 0.5 20,-250]
+[charaMove O -120,0 1.2]
+[charaMove N 0,-250 1.2]
+[wt 2.2]
+
+
+？1：おはよー！
+？！
+
+[charaFaceFade O 5 0.2]
+[wt 0.5]
+
+[charaTalk A,O]
+[charaFace A 1]
+[charaFadein A 0 1]
+
+[charaFadeout O 0.7]
+[charaFadeout N 0.7]
+[wt 0.7]
+
+
+＠マシュ
+わ、びっくりしました。[r]先輩、おはようございます。
+[k]
+
+[charaFace A 0]
+
+＠マシュ
+え？　わたしの顔色が少し悪い、ですか？
+[k]
+
+[charaFace A 4]
+
+＠マシュ
+そうですね、昨日ちょっと考えることがあったのと、[r]変な夢を見てしまいまして……。
+[k]
+
+[charaFace A 1]
+
+＠マシュ
+いえ、大したことではありません。[r]それでは、本日も張り切っていきましょう！
+[k]
+
+[label lblmst]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_194 1.0 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+
+[charaSet A 1098257800 1 マシュ]
+
+[scene 246400]
+
+[subCameraOn 1]
+[charaLayer J sub #A]
+[charaLayer I sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 3 255,255,255,255]
+
+[charaDepth J 1]
+[charaDepth I 2]
+[charaScale J 1.2]
+[charaScale I 1.2]
+[charaFace I 6]
+[charaFadein I 0.1 0,250]
+[charaFadein J 0.1 -350,0]
+
+[charaFadein K 0.1 50,-250]
+[wt 1.5]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_194 1.0 1.0]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠アイリーン
+おはよー、みんなー！
+[k]
+
+[messageOff]
+[charaTalk I]
+[subRenderFadeinFSR #A 0.3 370,-200]
+[subRenderMoveEaseFSR #A 370,-250 1.0 easeOutQuint]
+[wt 1.8]
+[subRenderMoveEaseFSR #A 370,-300 1.0 easeOutQuint]
+[subRenderFadeout #A 0.5]
+[wt 0.7]
+
+[charaFadeout B 0.2]
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠カドック
+おはよう。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+？1：おはよう、アイリーン
+？！
+
+＠アイリーン
+お、[%1]は[r]元気そうだねぇ。残り二人は冴えないけど。
+[k]
+
+[messageOff]
+[charaMoveEase K -50,-250 1.0 easeOutQuad]
+[charaMoveEase B -300,0 1.0 easeOutQuad]
+[wt 1.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.3 250,0]
+[wt 0.5]
+
+＠カドック
+悪かったな。
+[k]
+
+[charaFace B 2]
+＠アイリーン
+あはは、冗談冗談。[r]何、夢見でも悪かった？
+[k]
+
+[charaFace D 9]
+＠カドック
+……まあな。
+[k]
+
+
+[charaFace B 9]
+＠アイリーン
+あれ？　あの二人組……モリダンは？
+[k]
+
+？1：帰ってきてないみたい
+？！
+
+[charaFace B 0]
+
+＠アイリーン
+んー……地獄にでも行ったのかな。
+[k]
+
+[charaFace D 0]
+＠カドック
+帰ってこられないほど、地獄は遠いのか？
+[k]
+
+[charaFace B 0]
+＠アイリーン
+地獄を巡るならそれなりにね？[r]あと、弁護士は引く手[#数多:あまた]だし。
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ad1418]
+[charaFadeout D 0.5]
+[charaFadeout B 0.5]
+[charaFadeout K 0.5]
+[wt 1.0]
+
+[cueSeStop 24_ad1418 0.5]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.6]
+
+＠アショカ王
+この特異点では[line 3]
+[k]
+
+＠アショカ王
+[#煉獄:れんごく]において、罪が浄化されるのだという。[r]だが……
+[k]
+
+
+[charaFace C 2]
+
+＠アショカ王
+地獄において、罪が許されることはない。[r]ただ[#永劫:えいごう]の苦しみだけがある。
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アイリーン
+永遠に地獄で暮らすなら、永遠に苦しむことを[r]考えなければいけないのよねー。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠アショカ王
+……うむ。
+[k]
+
+[charaFace C 1]
+
+＠アショカ王
+たとえ地獄と呼ばれようと、[r]所詮は特異点。命ある以上は生きねばならん。
+[k]
+
+＠アショカ王
+生きる限りは、互いに相争うこともある。
+[k]
+
+＠アショカ王
+故にここでは、争いに際して、[r]調停者を立てることが許されている。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠カドック
+……それで弁護士……か？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠アイリーン
+弁護士による、時に物理行使を伴う調停！[r]地獄の管理者も、弁護士の有用性は認めてるからねー。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+地獄の管理者とは……[r]どのような方々なのでしょう？
+[k]
+
+[messageOff]
+[charaDepth A 0]
+[charaDepth B 0]
+[charaDepth C 5]
+[charaDepth K 2]
+[charaScale C 1.2]
+[charaScale K 1.2]
+[charaTalk A,C,B]
+[charaFace C 2]
+[charaFadein C 0.4 -10,0]
+[charaFadein K 0.4 60,-270]
+[charaMove C 10,0 4.0]
+[charaMove K 80,-270 4.0]
+[wt 1.4]
+
+[charaFadeout A 0.1]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[charaFadeout C 0.4]
+[charaFadeout K 0.4]
+[wt 0.4]
+[charaDepth A 7]
+[charaDepth B 4]
+[charaScale C 1.0]
+[charaMove C -10,0 0.1]
+[charaMove K -80,-270 0.1]
+
+＠アイリーン
+そこは自分で調べなきゃ。[r]ズルっこはダメだよー。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ダメですか……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠アイリーン
+まー、いっこだけ。連中は各々の差配で、[r]それぞれ地獄を管理しているんだけど。
+[k]
+
+＠アイリーン
+その大本はとーぜん、[r]裁判長のメタトロン・ジャンヌなわけ。
+[k]
+
+[charaFace B 0]
+
+＠アイリーン
+積極的にちょっかいかけてくるか知らんけど、[r]少なくとも味方じゃないのは確かだからね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠カドック
+そうか……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アイリーン
+まあまあ、カドック。
+[k]
+
+＠アイリーン
+地獄の管理者は、少なくとも裁判長よりは[r]話が通じると思うぜー。
+[k]
+
+＠アイリーン
+ただ、どっちにしろ用もないのに会うべき[r]サーヴァントじゃないから。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠カドック
+サーヴァント……なのか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アイリーン
+じゃなきゃ、[r]地獄なんて管理できないじゃーん。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アショカ王
+……いずれにせよ、道案内は要るだろう。
+[k]
+
+＠アショカ王
+ダンテ・アリギエーリを待て。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠アイリーン
+そうそう。[r]手に入れたんでしょ、『聖杯の短剣』？
+[k]
+
+＠アイリーン
+ルーラー権限が譲渡されてるはずだから、[r]活動にも支障ないよね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠カドック
+それは……そうなんだが。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠アイリーン
+探偵なんでしょ？　なら、探偵らしく何でもやりなよ。[wt 1.2][charaFace B 1][r]……あ、そうだ。
+[k]
+
+＠アイリーン
+フレンチトースト作るけど手伝ってくれない、探偵さん？
+[k]
+
+？1：喜んでー！
+？！
+
+[charaFace B 2]
+
+＠アイリーン
+返事の勢いが凄いね！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_194 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[charaDepth B 1]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_167 0.1]
+
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+
+＠アイリーン
+おーい、名探偵[%1]。[r]ちょっと頼みたいことがあるんだけどー。
+[k]
+
+？1：何ー？
+
+[charaFace B 15]
+
+＠アイリーン
+名探偵と言われて[#躊躇:ためら]いなく返事したなコイツ……。
+[k]
+
+？2：名探偵って……
+
+[charaFace B 1]
+
+＠アイリーン
+探偵事務所なんだから、なっちゃいなよ名探偵にー。
+[k]
+
+？！
+
+[charaFace B 0]
+
+＠アイリーン
+ま、それはともかく。[r]アテシから探偵諸君に依頼があるのだよ。
+[k]
+
+？1：依頼！
+？！
+
+[charaFace B 1]
+
+＠アイリーン
+天使たちってさ、たまに『聖杯の雫』[r]持ってるの知ってる？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠マシュ
+それは知りませんでした。[r]あの天使たちが生み出したものなのですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠アイリーン
+違う違う。煉獄の罪人が生み出したものを、[r]奪い取っていくんだよ。
+[k]
+
+＠アイリーン
+まあ、魔力リソースの塊みたいなものだから、[r]強奪したくなる気持ちはよくわかるけどね。
+[k]
+
+[charaFace B 0]
+
+＠アイリーン
+で、天使たちはそれを各々の強化に使っている。[r]裁判長的には特に止める必要もないし無視してるのね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠カドック
+ああ……なるほど。[r]天国には永遠に至れないんだから、当然か。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠アイリーン
+そ。『聖杯の雫』が散らばってると、[r][#悪いコト考えちゃう]ヤツが出てくるかもでしょ？
+[k]
+
+＠アイリーン
+それこそ、アンタたちみたいに。
+[k]
+
+？1：悪いコトなんて考えてもないよ
+
+[charaFace B 8]
+
+＠アイリーン
+さらっと断言したなぁ！[r]しかも感情全く動いてない棒読みで！
+[k]
+
+？2：（困った感じで笑う）
+
+[charaFace B 15]
+
+＠アイリーン
+おうおう、悪いコト考えてるヤツの[r]笑い方だぞ、それはー。
+[k]
+
+？！
+
+[charaFace B 14]
+
+＠アイリーン
+まあ、そんな悪いヤツに頼み込む[r]アテシもアテシだが。
+[k]
+
+[charaFace B 1]
+
+＠アイリーン
+つまり、天使たちが集めてる『聖杯の雫』を、[r]使用されるまでに奪い取ってくんない？
+[k]
+
+＠アイリーン
+で、アテシにくれろ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠カドック
+……それはいいんだが、何に使うんだ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠アイリーン
+アテシも権限拡張したくてねぇ。[r]とか言ったら絶対に渡してくれなそう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……。[r]……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠アイリーン
+ほら、キリエライトなんて絶対に渡すもんか、[r]みたいな表情になってるし。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……え！？[r]そ、そんな表情になっていましたか？
+[k]
+
+？1：なってなかったよ
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠アイリーン
+バラすなよー。
+[k]
+
+[charaFace B 14]
+
+＠アイリーン
+でもまあ、強くなりたいっていうのはホンネ。
+[k]
+
+＠アイリーン
+アテシ、今だとせいぜい第五[#階梯:かいてい]の天使と[r]タメ張るくらいの霊基数値だし。
+[k]
+
+[charaFace B 0]
+
+＠アイリーン
+まあ、クラスがバーサーカーだからねー。
+[k]
+
+？1：[#階梯:かいてい]についてもうちょっと詳しく
+？！
+
+＠アイリーン
+天使の強さの基準、みたいな？
+[k]
+
+[charaFace B 1]
+
+＠アイリーン
+第九から第一まであって、[r]第一が[#一番:いっちゃん]強い感じー。
+[k]
+
+＠アイリーン
+まあ、第一とかは法廷付近にいて[r]滅多に[#煉獄:こちら]へは出向かないけど。
+[k]
+
+[charaFace B 0]
+
+＠アイリーン
+で、それと遭遇したりするとアテシでも[r]フツーに死ぬから。
+[k]
+
+[charaFace B 12]
+
+＠アイリーン
+それくらいは防いでおきたいよね、ってコト。[r]これなら、いいでしょ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠カドック
+……わかった、その依頼受けるよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠アイリーン
+サンキュー。
+[k]
+
+？1：アイリーンは来る？
+？！
+
+[charaFace B 0]
+
+＠アイリーン
+んー……アテシが行ってもなぁ……。
+[k]
+
+[charaFace B 1]
+
+＠アイリーン
+報酬はちゃんと豪華素材で支払うから、[r]勘弁してくれない？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+わかりました。では、アイリーンさんは[r]『グラナート』でお待ちください。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠アイリーン
+お、話がわかるねぇ。[r]じゃ、ここで期待して待ってるからねー！
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_167 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[charaSet A 1098257910 1 マシュ]
+[charaSet D 1098239320 1 カドック]
+
+[charaDepth M 1]
+[charaDepth D 2]
+
+[scene 245800]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_SENGOKU_1 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠カドック
+『聖杯の雫』を持つ天使か……。
+[k]
+
+＠カドック
+下位の天使が自らを強化するため、[r]煉獄の住人から結晶を奪う。
+[k]
+
+
+＠カドック
+天使たちがそれを取り込む前に、襲撃して[r]奪い取るってのが今回の依頼だな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠マシュ
+つまり……張り込みですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠カドック
+あ、ああ。[r]……嬉しそうだな……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+いえ、張り込みに気分の浮き沈みは無用です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+[charaPut M 0,-200]
+[charaFadeTime M 0.2 0.5]
+
+＠カドック
+（そうじゃなくて）
+[k]
+
+[messageOff]
+[charaFadeout M 0.2]
+[wt 0.5]
+
+？1：あんぱんと牛乳が欲しいよね
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい、さすがマスター。[r]日本の張り込みにおける最重要物資ですね。
+[k]
+
+？2：どこで張り込もう？
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠マシュ
+建物の陰、でしょうか。[r]車があれば、車の中でいいと思いますが……。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠カドック
+あー……その前に、もっと手っ取り早い方法があるだろ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+と仰いますと？
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgm BGM_SENGOKU_1 1.0 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_SENGOKU_1 1.0 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠罪人
+ああ……『祈りの結晶』なら、ついさっき渡したよ。
+[k]
+
+＠罪人
+罪の浄化をする度に生み落とされるものだが、[r]あんなモノ使い道がなくてね。
+[k]
+
+＠罪人
+天使に回収されるなら、[r]まあ、それでもいいかなと。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[charaPut M 0,-200]
+[charaFadeTime M 0.2 0.5]
+
+＠カドック
+（雫とはいえ、魔力リソースの塊があんなモノ、か）
+[k]
+
+＠カドック
+（彼らにとって、この煉獄はひたすら罪を[#雪:そそ]ぐ場。[r]　確かに不要なんだろうが……）
+[k]
+
+[charaFace D 0]
+
+＠カドック
+（人間らしくないのか、人間らしいと言うべきか）
+[k]
+
+[charaFace D 0]
+[charaFadeout M 0.2]
+
+＠カドック
+……礼を言うよ、ありがとう。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.3]
+[charaMoveReturn E 0,-4 0.4]
+[wt 0.6]
+
+[se ad60]
+[charaFadeout E 0.4]
+[wt 0.5]
+[seStop ad60 1.5]
+[wt 2.0]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠カドック
+って訳で、張り込む必要はなさそうだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠カドック
+ガッカリするな。[r]その内、どっかで張り込めるさ。
+[k]
+
+[charaFace D 2]
+
+＠カドック
+……張り込めるさって何だろうな。
+[k]
+
+？1：カドックがボケに回ると厳しいんだけど
+？！
+
+[charaFace D 4]
+
+＠カドック
+僕はどちらの役割も御免[#蒙:こうむ]りたいんだが……！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_SENGOKU_1 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[charaFadein L 0.1 0,-250]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaMove L 50,-250 1.2]
+[wt 1.3]
+[charaMove L -50,-250 1.7]
+[wt 2.2]
+[charaMove L 100,-280 1.5]
+[charaMoveScale L 1.2 1.5]
+[wt 2.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[bgm BGM_EVENT_81 0.1]
+[wt 1.2]
+
+[charaTalk A,F]
+[charaFadeout L 0.7]
+[charaFadeout F 0.7]
+[wt 1.0]
+
+＠マシュ
+[line 3]見つけました。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠カドック
+奪った『聖杯の雫』はまだ取り込んでなかったか。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.5]
+
+？1：すみませーーーん！！
+？！
+
+
+[bgmStop BGM_EVENT_81 1.0]
+
+＠天使
+……！
+[k]
+
+[messageOff]
+[cueSe SE_25 25_ad1492]
+[wt 2.0]
+[seStop 25_ad1492 0.6]
+[cueSe SE_25 25_ad1484]
+[charaCrossFade F 1098322701 0 0.3]
+[wt 1.5]
+
+[bgm BGM_BATTLE_137 0.1]
+
+[cueSe SE_25 25_ad1488 0 0.5]
+[charaTalk off]
+[charaFace G 0]
+[charaFadeinFSR G 0.4 360,0]
+[charaMoveEase G 330,0 0.5 easeOutQuad]
+[wt 0.2]
+
+[charaFace H 0]
+[charaFadeinFSL H 0.4 -360,0]
+[charaMoveEase H -330,0 0.5 easeOutQuad]
+[wt 0.2]
+[seStop 25_ad1488 0.3]
+[wt 1.3]
+
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠カドック
+これが取り込みを防ぐ一番手っ取り早い方法だな。[r]もちろん、当然のように襲いかかってくるが……。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[charaCrossFade A 1098257900 6 0.3]
+[se ad658]
+[wait charaCrossFade A]
+[wt 0.2]
+
+＠マシュ
+はい、ここで迎え撃ちましょう！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠カドック
+僕は増援が来ないか見張っている。[r]来たら合図する。それまでに倒せよ！
+[k]
+
+？1：了解！
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_137 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

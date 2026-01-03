@@ -1,0 +1,829 @@
+
+＄94-08-80-50-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098199300 1 マシュ]
+[charaSet B 1098276000 1 クロエ]
+[charaSet C 1098275300 1 鈴鹿]
+[charaSet D 1098274400 1 アルトリア・キャスター]
+
+[charaSet E 1045000 1 巴御前]
+[charaSet F 6034000 1 牛若丸]
+[charaSet G 3034001 1 茨木童子]
+[charaSet H 6045000 1 スルーズ]
+[charaSet I 6044000 1 ヒルド]
+[charaSet J 6043000 1 オルトリンデ]
+[charaSet K 6045300 1 リンド]
+[charaSet L 6044300 1 エルン]
+[charaSet M 6043300 1 イルス]
+
+[charaSet N 98110000 1 柳生但馬守]
+
+[charaSet O 11010001 1 平景清]
+
+
+[charaSet S 5009000 1 エフェクト用ダミー]
+
+[sceneSet X 115800 1 1]
+[charaSet Y 5009000 1 エフェクト用ダミー]
+[sceneSet Z 10000 1]
+
+[charaPut S 2000,2500]
+[charaEffect S bit_sepia01_depth_fs]
+
+[scene 115800]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_4 0.1]
+
+＠巴御前
+お陰様をもちまして、[r]一冊目は実に良い御本となりました！
+[k]
+
+[charaFace E 0]
+＠巴御前
+そして……
+[k]
+
+[charaFace E 2]
+＠巴御前
+二冊目は遂に！[r]お題の縛りはありません！
+[k]
+
+[charaFace E 1]
+＠巴御前
+一冊目の製作も楽しいものではありましたが[line 3]
+[k]
+
+＠巴御前
+縛りのなくなった二冊目にこそ、[r]我ら、反サバフェス同盟の真価が問われます！
+[k]
+
+[charaFace E 2]
+＠巴御前
+頑張りましょうー！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[subCameraOn 1]
+[subCameraFilter #A maskEdge cut359_mask08 4 255,255,255,255 0]
+
+[charaLayer H sub #A]
+[charaLayer I sub #A]
+[charaLayer J sub #A]
+[charaLayer X sub #A]
+
+[charaScale H 0.85]
+[charaScale I 0.85]
+[charaScale J 0.85]
+
+[charaDepth X 2]
+
+[charaDepth H 5]
+[charaDepth I 4]
+[charaDepth J 3]
+
+[charaScale X 1.3]
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFadeinFSL H 0.1 -306,200]
+[charaFadein I 0.1 0,200]
+[charaFadeinFSR J 0.1 306,200]
+[charaFace X 0]
+[charaFadein X 0.1 -40,50]
+
+[blur lens 0.4 2 2]
+[subRenderFadein #A 0.4 50,-285]
+[subRenderMove #A 0,-285 0.4]
+[wt 1.8]
+
+
+[charaMove I 50,200 0.4]
+[charaMoveFSR J 356,200 0.4]
+[charaMoveFSL H -256,200 0.4]
+[charaMove X 40,50 1.0]
+[charaFadeout H 0.4]
+[charaFadeout I 0.4]
+[charaFadeout J 0.4]
+[wt 0.5]
+
+[charaLayer M sub #A]
+[charaLayer L sub #A]
+[charaLayer K sub #A]
+[wt 0.1]
+
+[charaScale M 0.85]
+[charaScale L 0.85]
+[charaScale K 0.85]
+
+[charaDepth M 5]
+[charaDepth L 4]
+[charaDepth K 3]
+[charaFace M 0]
+[charaFace L 0]
+[charaFace K 0]
+[charaFadeinFSL M 0.4 -356,200]
+[charaFadein L 0.4 -50,200]
+[charaFadeinFSR K 0.4 256,200]
+[charaMoveFSL M -306,200 0.4]
+[charaMove L 0,200 0.4]
+[charaMoveFSR K 306,200 0.4]
+[wt 2.0]
+
+
+[charaMove L -50,200 0.4]
+[charaMoveFSL M -356,200 0.4]
+[charaMoveFSR K 256,200 0.4]
+[charaMove X -40,50 1.0]
+[charaFadeout M 0.4]
+[charaFadeout L 0.4]
+[charaFadeout K 0.4]
+[wt 0.5]
+
+[charaLayer F sub #A]
+[charaLayer O sub #A]
+[charaLayer G sub #A]
+[wt 0.1]
+
+[charaScale F 0.85]
+[charaScale O 0.85]
+[charaScale G 0.85]
+
+[charaDepth O 4]
+[charaDepth F 4]
+[charaDepth G 4]
+
+[charaFace O 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadeinFSL O 0.4 -256,200]
+[charaFadein F 0.4 50,200]
+[charaFadeinFSR G 0.4 356,200]
+[charaMoveFSL O -300,200 0.4]
+[charaMove F 0,200 0.4]
+[charaMoveFSR G 300,200 0.4]
+[wt 2.0]
+
+[blurOff lens 0.4]
+[subRenderFadeout #A 0.4]
+[wt 0.6]
+
+＠カルデアゲーム部一同
+[f large][messageShake 0.05 4 3 0.3]おー！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_4 2.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaFadeout O 0.1]
+[charaFadeout G 0.1]
+[charaFadeout X 0.1]
+[wt 0.2]
+
+[subCameraOff]
+[charaLayer H main]
+[charaLayer O main]
+[charaLayer I main]
+[charaLayer J main]
+[charaLayer M main]
+[charaLayer L main]
+[charaLayer K main]
+[charaLayer F main]
+[charaLayer G main]
+[charaScale H 1.0]
+[charaScale I 1.0]
+[charaScale J 1.0]
+[charaScale M 1.0]
+[charaScale L 1.0]
+[charaScale K 1.0]
+[charaScale F 1.0]
+[charaScale G 1.0]
+[charaScale O 1.0]
+
+
+[scene 147900]
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠鈴鹿御前
+そんで？
+[k]
+
+[charaFace C 10]
+＠鈴鹿御前
+みんなで仲良く二冊目の同人誌を作り上げました。[r]めでたしめでたしってお話……。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace C 0]
+＠鈴鹿御前
+……って事なら、そんな顔してないよねえ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠巴御前
+はい……。
+[k]
+
+＠巴御前
+そうなのです。[r]何を書いてもよい……。
+[k]
+
+[charaFace E 5]
+＠巴御前
+それはとても喜ばしいことの筈なのです！[wt 1.0][charaFace E 0][r]なのですが、まさかの事態が訪れてしまいました。
+[k]
+
+[messageOff]
+[wipeout circleIn 1.0 1.0]
+[bgm BGM_HALLOWEEN_2021_1 1.0 0.5]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+
+[scene 115800]
+
+
+[pictureFrame cut063_cinema]
+
+[charaTalk depthOff]
+[charaDepth S 9]
+[charaDepth E 2]
+[charaDepth F 2]
+[charaDepth I 2]
+[charaDepth G 2]
+[charaDepth H 3]
+
+[charaDepth K 2]
+[charaDepth L 3]
+[charaDepth M 4]
+
+[charaPut S 1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+[wt 1.5]
+
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠巴御前
+という訳で皆様、[r]何を書いてもよいのですよ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 0,-50]
+＠スルーズ
+そう、ですか。[r]何を書いてもいい……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+＠牛若丸
+つまり、どんなゲームを題材とするかは[r]自由ということですか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠巴御前
+そうなりますね。[r]皆様のお好きなげえむを題材にされるとよいかと。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+＠牛若丸
+……ふむ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 0,-50]
+＠ヒルド
+んーそうなんだ？[r]そっかそっか、そっかー。
+[k]
+
+[charaFace I 9]
+＠ヒルド
+好きなゲームかぁ。[r]あたしはアクションゲームが好きではある、けど。
+[k]
+
+[charaFace I 4]
+＠ヒルド
+ん～…………。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 0,-50]
+
+＠茨木童子
+そうかそうか、何をやっても構わぬと！[r]ま、[#吾:われ]は鬼ゆえ常に思うがまま振る舞っておるのだが！
+[k]
+
+[charaFace G 4]
+＠茨木童子
+……んー？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace M 10]
+[charaFace L 9]
+[charaFace K 8]
+[charaFadeinFSL M 0.1 -350,-50]
+[charaFadein L 0.1 0,-50]
+[charaFadeinFSR K 0.1 350,-50]
+＠三人
+…………。（何かを考えている）
+[k]
+
+[charaFadeout M 0.1]
+[charaFadeout L 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+＠巴御前
+み、皆様どうされたのです。[r]委員会による[#題材:じゃんる]の縛りはないのですよ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+
+＠オルトリンデ
+……巴。
+[k]
+
+＠オルトリンデ
+前に言っていましたよね。[r]題材の縛りは、むしろ大まかな指標になってくれるって。
+[k]
+
+＠オルトリンデ
+本当にその通りだったんだな、と思います。[r]こうして何もかもが自由、と聞いて……
+[k]
+
+[bgmStop BGM_HALLOWEEN_2021_1 1.5]
+
+[charaFace J 4]
+＠オルトリンデ
+私たち[line 3]きっと、迷っているんです。
+[k]
+
+[charaFace J 8]
+＠オルトリンデ
+自分の“好き”だけでページを埋めてしまって、[r]本当にいいのかな、と。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_41 0.1 0.4]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+＠巴御前
+！[messageShake 0.05 4 3 0.3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+
+＠オルトリンデ
+一冊目の時は……[r]手に取る人は、みんな、題材を理解していたはずです。
+[k]
+
+＠オルトリンデ
+何かしらアルトリアさんに関係したゲーム、[r]それについて書かれている同人誌に違いないと。
+[k]
+
+＠オルトリンデ
+最低限の期待には、[r]応えられていた筈なんです。
+[k]
+
+[charaFace J 4]
+＠オルトリンデ
+でも、今回は違います。
+[k]
+
+＠オルトリンデ
+私たちの“好き”でページを埋めた同人誌は、[r]誰かの期待に応えられるのでしょうか？
+[k]
+
+＠オルトリンデ
+それが分からなくて……。[r]本当に、自分の“好き”のままでいいのか……。
+[k]
+
+[charaFace J 8]
+＠オルトリンデ
+……迷っているんです。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFace I 10]
+[charaFadeinFSL H 0.1 -256,-50]
+[charaFadeinFSR I 0.1 256,-50]
+＠スルーズ
+……私もまさに、オルトリンデの言う通りです。
+[k]
+
+＠ヒルド
+うん。そうだね。[r]ちょっぴり怖いんだよ。
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace M 8]
+[charaFace L 10]
+[charaFace K 9]
+[charaFadeinFSL M 0.1 -356,-50]
+[charaFadein L 0.1 0,-50]
+[charaFadeinFSR K 0.1 356,-50]
+
+＠三人
+（頷く）[charaMoveReturnFSL M -356,-55 0.5][charaMoveReturn L 0,-55 0.5][charaMoveReturnFSR K 356,-55 0.5]
+[k]
+
+[charaFadeout M 0.1]
+[charaFadeout L 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+＠牛若丸
+漠然とした不安[line 3][r]そうか、これはそういうことなのですね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 0,-50]
+
+＠茨木童子
+わ、[#吾:われ]はそのようなことはないぞ。[r]ふん！
+[k]
+
+[charaFace G 2]
+＠茨木童子
+やりたいモノが多すぎて、[r]ちょっぴり迷ってしまっただけに過ぎぬからな！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+＠巴御前
+皆様……。
+[k]
+
+[messageOff]
+[wt 1.0]
+[wipeout circleIn 1.0 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[charaPut S 2000,2500]
+[charaEffectStop S bit_sepia01_depth_fs]
+
+[pictureFrame]
+
+[scene 147900]
+[wt 1.0]
+
+[wipein circleIn 1.0 1.0]
+[bgm BGM_MAP_41 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠アルトリア・キャスター
+つまり……[r]何を書いたらいいか分からない、という事ですか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠巴御前
+そうなのです。[r]委員会からの縛りがなくなってしまったが故に、
+[k]
+
+＠巴御前
+無限の迷いを得てしまったのです。[r]何をしてもよいが故に、何もかもに迷う。
+[k]
+
+[charaFace E 0]
+＠巴御前
+自由というモノが持つ、魔性の側面かもしれません。
+[k]
+
+？1：何でもできるは何もできない、か……
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+はい。聞いたことがあります。
+[k]
+
+＠マシュ
+何をしてもよい、と提示された時に[r]自分から進んで動ける人はあまり多くないと。
+[k]
+
+＠マシュ
+むしろ選択肢を提示されてこそ人は動き、[r]『自分で選んだ』とも感じるそうです。
+[k]
+
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠鈴鹿御前
+人間、本質的には支配されたがってっからねー。[r]……ンな風に言ったの誰だったかな、父上？　[#大嶽丸:おおたけまる]？
+[k]
+
+[charaFace C 17]
+＠鈴鹿御前
+悪路王だっけ？
+[k]
+
+
+？2：魔境だね
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠クロエ
+何？　急に禅マインド？
+[k]
+
+[charaTalk off]
+[charaDepth N 2]
+[charaDepth B 4]
+
+[charaPut N 250,0]
+[charaFace N 1]
+[charaFadeTime N 0.6 0.5]
+＠クロエ
+やめといた方がいいわよ。[r]どっかのお爺ちゃんが上機嫌でやって来そう。
+[k]
+
+
+？！
+
+[bgmStop BGM_MAP_41 1.5]
+
+？1：ガイドがなくて困ってるなら……
+
+[charaFadeout B 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠鈴鹿御前
+なら、ガイドを新しく用意でもしてみちゃう？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：ガイドをこっちで用意してみる？
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠アルトリア・キャスター
+あ、それいいかも！[bgm BGM_MAP_2 0.1]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+はい。自由……[r]無制限の選択肢に迷っているようであれば、
+[k]
+
+＠マシュ
+こちらで選択肢を絞って提示するのは、上策かと！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠クロエ
+前回の同人誌で一役買ってるから、[r]ある程度は信用もあるだろうし。いいんじゃない？
+[k]
+
+[charaFace B 3]
+＠クロエ
+あれよね。[r]作文書けない子に、素直な感想を書かせるやつ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠鈴鹿御前
+あー、あれね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+そう……なのですか？
+[k]
+
+？1：うんうん
+？2：だいたいあってるかな
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アルトリア・キャスター
+で、具体的にはどうするの？[r][%1]が何かする？
+[k]
+
+？1：基本的には……
+
+？！
+
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.4]
+
+？1：自分の好きなものでいいよ、って伝えたい
+？！
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠クロエ
+ま、同人誌ってそういうモノだろうしね。
+[k]
+
+[charaFace B 1]
+＠クロエ
+言葉で伝える？[r]それで済むならラクだけど、どうかしら。
+[k]
+
+？1：うん、言葉じゃ足りないと思う
+？2：だから……
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+？1：物理で、自分たちの“好き”を思い出させよう！
+？！
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+はい！
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStopEnd BGM_MAP_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

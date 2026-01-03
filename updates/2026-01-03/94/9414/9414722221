@@ -1,0 +1,146 @@
+
+
+
+
+＄94-14-72-22-2-1
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 2054001 1 ティアマト]
+[charaSet B 5019001 1 先生]
+[charaSet C 2003001 1 常連客の猟師]
+[sceneSet O 203201 1]
+[charaScale O 1.4]
+
+[charaTalk depthOff]
+[charaDepth O 2]
+[charaDepth C 1]
+
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+[scene 203201]
+[charaFadein O 0.1 0,-220]
+[charaMove O 0,-250 4.0]
+
+[fadein black 1.0]
+[wt 0.2]
+[se ad117]
+[wait fade]
+
+[wt 2.0]
+
+[charaFadeout O 0.7]
+[wt 1.0]
+[bgm BGM_EVENT_146 0.1]
+
+＠常連客の猟師
+いやー、邪神でしたわ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠先生
+………………。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠常連客の猟師
+ま、先生が関わると[r]だいたいオカルト沙汰になりますからねえ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠先生
+……民俗学者だからと言って、[r]オカルトを認めるわけではないのだが。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠常連客の猟師
+でも邪神すよ、邪神。[r]言い逃れできないっていうか。
+[k]
+
+？1：めっちゃ物理で存在してた
+？2：エネミー名にはっきり書いてた
+？！
+
+[messageOff]
+[charaTalk C,A]
+[charaScale A 1.15]
+[charaScale O 1.4]
+[charaDepth O 2]
+[charaDepth A 3]
+[charaFace A 24]
+[charaFadein O 0.6 120,-290]
+[charaFadein A 0.6 -180,-20]
+[charaMoveEase O 150,-290 1.0 easeOutSine]
+[charaMoveEase A -150,-20 1.0 easeOutSine]
+[wt 1.6]
+
+＠ティアマト
+……………………。
+[k]
+
+
+[messageOff]
+[charaMoveScaleEase A 1.3 0.6 easeOutSine]
+[charaMoveEase A -130,0 0.6 easeOutSine]
+[wt 0.4]
+[se ad183]
+[shake 0.05 3 2 0.3]
+[wt 1.0]
+
+？1：……ティアマト？
+？2：どうしたの？
+？！
+
+[charaFaceFade A 23 0.2]
+
+＠ティアマト
+[%1]……[r]今晩は、いっしょに寝ましょう。
+[k]
+
+？1：[&それはマズイのでは……？:ま、いいけど……]
+？2：もしかして、こわかった？
+？！
+
+[charaFaceFade A 45 0.2]
+
+＠ティアマト
+……ひとりでおトイレ行けない。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_146 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+
+

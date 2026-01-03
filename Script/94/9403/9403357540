@@ -1,0 +1,618 @@
+
+＄94-03-35-75-4-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 6043000 1 オルトリンデ]
+[charaSet B 6043300 1 イルス]
+
+[equipSet C 9808570 1 バレンタイン礼装]
+[charaDepth C 9]
+
+[charaSet E 6043000 1 オルトリンデ1]
+[charaScale E 1.2]
+[charaSet F 6043300 1 イルス1]
+[charaScale F 1.2]
+
+
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[label lblClear01a]
+[scene 105600]
+
+[sceneSet D 105600 1]
+[charaScale D 1.2]
+
+[branch lblConf01]
+
+[label lblClear01b]
+[scene 105900]
+
+[sceneSet D 105900 1]
+[charaScale D 1.2]
+
+[branch lblConf01]
+[label lblClear01c]
+[scene 158100]
+
+[sceneSet D 158100 1]
+[charaScale D 1.2]
+
+[label lblConf01]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[seStop ad95 0.3]
+[wt 0.3]
+
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V010]
+マスター、こんにちは。[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V020]
+お忙しいところ呼び止めてしまってごめんなさい。[r]実は、その[line 3][wait tVoice]
+[k]
+
+？1：オルトリンデ？
+？2：どうしたの？
+？！
+
+[charaFace A 0]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V030]
+はい。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaTalk depthOff]
+[charaTalk off]
+
+[charaDepth B 1]
+[charaDepth A 2]
+
+[charaDepth D 3]
+[charaDepth F 4]
+[charaDepth E 5]
+
+[charaFadein D 0.8 100,-300]
+[charaFace E 0]
+[charaFadein E 0.8 -250,0]
+[wt 1.3]
+
+[se ad95]
+[seStop ad95 0.5]
+[charaFace F 6]
+[charaFadein F 0.4 220,0]
+[charaMove F 260,0 0.4]
+[wt 0.7]
+
+[charaFace A 0]
+[charaFadeinFSL A 0.1 -250,0]
+[charaFace B 6]
+[charaFadeinFSR B 0.1 250,0]
+
+[charaTalk on]
+＠F：イルス
+[tVoice ValVoice_604300 0_V040]
+やあ、イルスだよ。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaTalk F,B]
+
+[charaFadeout D 0.6]
+[charaFadeout F 0.6]
+[charaFadeout E 0.6]
+
+[wt 1.0]
+
+[charaFace A 9]
+[charaTalk on]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V050]
+イルス。まだ私が対話の途中で……[wait tVoice]
+[k]
+
+[charaFace B 11]
+＠イルス
+[tVoice ValVoice_604300 0_V060]
+うん。分かってるよ。[r]でもね、オルトリンデは丁寧すぎるんだ。[wait tVoice]
+[k]
+
+＠イルス
+[tVoice ValVoice_604300 0_V070]
+今日がバレンタインだからとか、[r]今回は水着霊基で普段と違うとか、[wait tVoice]
+[k]
+
+＠イルス
+[tVoice ValVoice_604300 0_V080]
+あれこれ言うつもりだったろう。[wait tVoice]
+[k]
+
+[charaFace A 8]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V090]
+それは、はい。[r]マスターに仔細を伝達するのは当然で……[wait tVoice]
+[k]
+
+[charaFace B 0]
+＠イルス
+[tVoice ValVoice_604300 0_V100]
+いらないよ、そういうのは。[r]こうする方が効率的さ。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaFace F 6]
+
+[charaFadein D 0.8 100,-300]
+[charaFadein F 0.8 1]
+[wt 1.5]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+＠イルス
+[tVoice ValVoice_604300 0_V110]
+……マスター！[wait tVoice]
+[k]
+
+？1：うん？
+？！
+
+[messageOff]
+
+[charaFace F 1]
+＠イルス
+[tVoice ValVoice_604300 0_V120]
+はい！[r]チョコレートだよ！[wait tVoice]
+[k]
+
+[messageOff]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+[se bas2]
+
+[charaFace C 0]
+[charaFadein C 0.5 0,-70]
+
+[wt 3.0]
+
+？1：これは……！
+
+？！
+
+[messageOff]
+[charaFace A 1]
+[charaFadeinFSL A 0.1 -250,0]
+[charaFace B 1]
+[charaFadeinFSR B 0.1 250,0]
+
+[wt 0.5]
+
+？1：ミサイル！
+？2：戦闘の時に使ってる、ソウェルミサイル！
+？！
+
+[charaFadeout F 0.4]
+[charaFadeout D 0.4]
+[charaFadeout C 0.4]
+[wt 1.0]
+
+[charaScale F 1.0]
+
+[charaTalk on]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V130]
+はい。[r]ソウェルミサイルを模したチョコレートです。[wait tVoice]
+[k]
+
+？1：ありがとう！
+？2：パワー系チョコレート、いいね！
+？！
+
+[charaFace B 4]
+＠イルス
+[tVoice ValVoice_604300 0_V140]
+パワー系……かな？[twt 3.0][charaFace B 6][r]まあ、喜んでもらえたならそれでいいよ。[wait tVoice]
+[k]
+
+
+[charaFace A 0]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V150]
+私たち二騎で何を贈るか考えて決めました。[r]その間だけは、スルーズたちと同期を切って……[wait tVoice]
+[k]
+
+[charaFace B 6]
+＠イルス
+[tVoice ValVoice_604300 0_V160]
+そうそう。[r]同期の切り方うまいよね、オルトリンデ。[wait tVoice]
+[k]
+
+[charaFace A 9]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V170]
+いえ、そんなことはない……ですよ。[wait tVoice]
+[k]
+
+[charaFace B 0]
+＠イルス
+[tVoice ValVoice_604300 0_V180]
+そうかい？[wait tVoice]
+[k]
+
+[charaFace A 9]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V190]
+はい。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_77 1.5]
+
+？1：（ん……？）
+？2：（ちょっと二人の雰囲気が……？）
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：二人とも何かあった？
+？！
+
+[charaFadeout B 0.4]
+[charaFadeout A 0.4]
+[wt 0.8]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.2 1]
+[wt 0.3]
+
+＠イルス
+[tVoice ValVoice_604300 0_V200]
+んー、そう見える？[wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V210]
+イ、イルス。[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_92 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠イルス
+[tVoice ValVoice_604300 0_V220]
+勿論、仲が悪いわけじゃないよ？[r]ボクたちはワルキューレ、本質的には皆同じモノだ。[wait tVoice]
+[k]
+
+[charaFace B 4]
+＠イルス
+[tVoice ValVoice_604300 0_V230]
+自分と自分だから、[r]本気で喧嘩することはちょっと難しい。[wait tVoice]
+[k]
+
+[charaFace B 0]
+＠イルス
+[tVoice ValVoice_604300 0_V240]
+でもね、同一の目的に対して、[r]どういったアプローチを試みるか[line 3][wait tVoice]
+[k]
+
+＠イルス
+[tVoice ValVoice_604300 0_V250]
+そういう話題となると、[r][#各個体:それぞれ]に傾向みたいなものはあって、[wait tVoice]
+[k]
+
+＠イルス
+[tVoice ValVoice_604300 0_V260]
+自分の得意とする傾向を取ろうとするし、[r]或いは、自分が苦手な傾向は避けようともする。[wait tVoice]
+[k]
+
+＠イルス
+[tVoice ValVoice_604300 0_V270]
+分かるかい？[wait tVoice]
+[k]
+
+？1：つまり……
+？2：喧嘩しちゃった、ってことかな？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V280]
+それは、その……。[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+＠イルス
+[tVoice ValVoice_604300 0_V290]
+まあ端的に言うとそう！[twt 3.0][charaFace B 0][r]ね、ここは正直にいこうじゃないかオルトリンデ。[wait tVoice]
+[k]
+
+[charaFace B 6]
+＠イルス
+[tVoice ValVoice_604300 0_V300]
+それでいいさ。[r]相手はマスターなんだから。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+？1：……………………。
+？！
+
+？1：（考えるポーズ）
+？！
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V310]
+マスター？[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠イルス
+[tVoice ValVoice_604300 0_V320]
+急に考え込んだけど、どうしたのかな。[r]いや。考えるくらいでボクたちのことが分かるかい？[wait tVoice]
+[k]
+
+＠イルス
+[tVoice ValVoice_604300 0_V330]
+別に、マスターを軽んじるつもりはないよ。[r]それでもあなたはどこまでも人間だ。[wait tVoice]
+[k]
+
+＠イルス
+[tVoice ValVoice_604300 0_V340]
+神代の存在であり、[r]大神オーディンの創造物であるボクたちのことを、[wait tVoice]
+[k]
+
+＠イルス
+[tVoice ValVoice_604300 0_V350]
+理解できるかもなんて考えることからして、[r]そもそも[line 3][wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_92 1.5]
+
+？1：……もしかして
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：どちらかが、何かにこだわったりした。とか？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V360]
+！[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠イルス
+[tVoice ValVoice_604300 0_V370]
+…………え？[wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V380]
+え、ええと……[r]そうです。その通りですマスター。[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_98 0.1]
+
+[charaFace A 0]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V390]
+私たちの武器を模したチョコレートにしよう、[r]ということ自体は私たち六騎の共通認識で……[wait tVoice]
+[k]
+
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V400]
+そこから先はそれぞれの霊基の組ごとに[r]同期を切って考えようということになったんです。[wait tVoice]
+[k]
+
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V410]
+ソウェルミサイルがいいかも、[r]まではすぐに決まって……[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠イルス
+[tVoice ValVoice_604300 0_V420]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFace B 3]
+＠イルス
+[tVoice ValVoice_604300 0_V430]
+……ふうん。[wait tVoice]
+[k]
+
+＠イルス
+[tVoice ValVoice_604300 0_V440]
+そっか。分かるんだ。[r]すごいな、マスターっていうモノは。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaFace B 1]
+
+[wt 1.5]
+
+[charaFace B 6]
+＠イルス
+[tVoice ValVoice_604300 0_V450]
+そう。ソウェルミサイル型のチョコまでは[r]すぐに決まったのさ。でもね？[wait tVoice]
+[k]
+
+＠イルス
+[tVoice ValVoice_604300 0_V460]
+オルトリンデがね、言い出したんだよ。[wait tVoice]
+[k]
+
+＠イルス
+[tVoice ValVoice_604300 0_V470]
+もっと可愛いものにしたい、[r]なんて言い出して[line 3][wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V480]
+イルス！[wait tVoice]
+[k]
+
+[charaFace A 9]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V490]
+あ、あの、いえ、べつにそのっ。[r]他意は、なく……[wait tVoice]
+[k]
+
+？1：これ、ちゃんとかわいいよ？
+？！
+
+[charaFace A 7]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V500]
+……！[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V510]
+あ、ありがとうございます。[r]そう言ってもらえると嬉しい、です……。[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠イルス
+[tVoice ValVoice_604300 0_V520]
+……う。[wait tVoice]
+[k]
+
+＠イルス
+[tVoice ValVoice_604300 0_V530]
+ボクも嬉しいな。[r]定時同期までまだ時間があるのに、おかしいぞ。[wait tVoice]
+[k]
+
+[charaFace B 1]
+＠イルス
+[tVoice ValVoice_604300 0_V540]
+[line 3]いや。おかしくはないか。[r]まったく、やっぱり面白い人だよマスター。[wait tVoice]
+[k]
+
+[charaFace B 6]
+＠イルス
+[tVoice ValVoice_604300 0_V550]
+これからもよろしくね。[wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V560]
+お忙しいところ、ありがとうございました。[r]バレンタイン頑張ってください。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠オルトリンデ
+[tVoice ValVoice_604300 0_V570]
+……それでは、また！[wait tVoice]
+[k]
+
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_98 2.0]
+[wait fade]
+[soundStopAll]
+[end]

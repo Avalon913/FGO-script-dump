@@ -1,0 +1,1010 @@
+
+
+
+
+＄04-00-04-01-2-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 3047300 1 パーシヴァル]
+[charaSet B 1098297900 1 カルナ]
+[charaSet C 11019000 1 徐福]
+[charaSet D 1098298800 1 パッションリップ]
+[charaSet E 23006000 1 ＢＢドバイ]
+[charaSet F 1098300410 1 カズラドロップ]
+[charaSet G 1098276910 1 マシュ]
+[charaSet H 4034300 1 バーソロミュー]
+
+[charaSet I 98115000 1 エフェクト用ダミー1]
+[charaSet J 1098298120 1 エレシュキガル]
+
+[charaSet K 98115000 1 エフェクト用ダミー2]
+[charaSet L 98115000 1 エフェクト用ダミー3]
+[charaSet M 98115000 1 エフェクト用ダミー4]
+
+[sceneSet N 221600 1]
+[sceneSet O 221600 1]
+
+[charaSet P 1098300410 1 カズラドロップ演出用シルエット]
+[charaFilter P silhouette 00000080]
+
+[charaSet Q 3047300 1 パーシヴァル2]
+[charaSet R 1098297900 1 カルナ2]
+[charaSet S 23006000 1 ＢＢドバイ2]
+
+[charaSet T 98115000 1 エフェクト用]
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_06]
+[charaSet U 98115000 1 エフェクト用2]
+[sceneSet V 10001 1]
+[charaScale V 1.05]
+[sceneSet W 221600 1]
+
+[sceneSet X 221600 1]
+[sceneSet Y 221600 1]
+[sceneSet Z 221600 1]
+[charaScale X 1.3]
+[charaScale Y 1.3]
+[charaScale Z 1.3]
+[scene 221600]
+
+[effect bit_talk_06]
+
+[subCameraOn 3]
+[charaLayer X sub #A]
+[charaLayer K sub #A]
+[charaLayer Y sub #B]
+[charaLayer L sub #B]
+[charaLayer Z sub #C]
+[charaLayer M sub #C]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+[subCameraFilter #A maskEdge cut359_mask20 4 255,255,255,255 0]
+[subCameraFilter #B maskEdge cut359_mask20 4 255,255,255,255 0]
+[subCameraFilter #C maskEdge cut359_mask20 4 255,255,255,255 0]
+
+[charaTalk depthOff]
+[charaDepth X 1]
+[charaDepth K 1]
+[charaDepth Y 1]
+[charaDepth L 2]
+[charaDepth Z 1]
+[charaDepth M 2]
+
+[charaPut K 0,300]
+[charaPut L 25,300]
+[charaPut M 40,300]
+[charaFadein X 0.1 -500,0]
+[charaFadein Y 0.1 500,0]
+[charaFadein Z 0.1 1]
+
+[charaEffect K bit_talk_06]
+[charaEffect L bit_talk_06]
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_BATTLE_95 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠パーシヴァル
+っ、なんという硬さ、重さ……！[r]見た目通りの相手ではないぞ、アレは！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠カルナ
+オレの槍だけでなく、[r]パーシヴァルの槍までも門前払いか。
+[k]
+
+＠カルナ
+[line 3]認めがたい事だが。[r]この都市そのものに槍を突き立てたかのようだ。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+？1：みんな、いったん下がって！
+
+？！
+
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth I 1]
+[charaDepth O 2]
+[charaDepth C 3]
+[charaScale O 1.2]
+[charaScale C 1.2]
+
+[charaFace C 9]
+[charaFadein O 0.4 50,-300]
+[charaFadein C 0.4 50,0]
+[charaMoveEase O 0,-300 0.5 easeOutQuad]
+[charaMoveEase C 0,0 0.5 easeOutQuad]
+[wt 0.6]
+[charaFadeout B 0.1]
+
+＠徐福
+そうしたいのは山々だけど、なんか体がぎゅ～～っと[r]して[line 3][wt 0.7][charaFace C 24]うきゃああああああ！？
+[k]
+
+[messageOff]
+[charaFadeout O 0.4]
+[charaFadeout C 0.4]
+[wt 0.3]
+[charaPut I 1]
+[charaEffect I bit_talk_bbd_codec02]
+[wt 0.1]
+[cueSe SE_24 24_ad1438]
+[wt 2.3]
+
+[charaEffect M bit_talk_bbd_codec05]
+[charaEffect K bit_talk_bbd_codec03]
+[charaEffect L bit_talk_bbd_codec04]
+[wt 0.1]
+[subRenderFadein #A 0.3 -350,-280]
+[subRenderMove #A -350,-330 0.3]
+[subRenderFadein #B 0.3 350,-280]
+[subRenderMove #B 350,-330 0.3]
+[subRenderFadein #C 0.3 0,-380]
+[subRenderMove #C 0,-330 0.3]
+[cueSe SE_24 24_ad1438]
+[wt 0.4]
+[effectStop bit_talk_06]
+[charaPut I 2000,-500]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[cueSe SE_24 24_ad1438]
+[wt 2.5]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[subRenderFadeout #C 0.3]
+[wt 0.4]
+[charaFadeout X 0.1]
+[charaFadeout Y 0.1]
+[charaFadeout Z 0.1]
+[charaPut K 2000,500]
+[charaPut L -2000,-500]
+[charaPut M -2000,500]
+[charaLayer K normal]
+[charaLayer L normal]
+[charaLayer M normal]
+[charaEffectDestroy K bit_talk_06]
+[charaEffectDestroy L bit_talk_06]
+[charaEffectDestroy M bit_talk_06]
+[wt 0.1]
+[se ad598]
+[charaMoveEase I 80,0 0.8 easeOutSine]
+[charaMoveEase K 160,0 0.8 easeOutSine]
+[charaMoveEase L 0,0 0.8 easeOutSine]
+[charaMoveEase M -80,0 0.8 easeOutSine]
+[wt 1.5]
+[charaEffectStop I bit_talk_bbd_codec02]
+[charaEffectStop K bit_talk_bbd_codec03]
+[charaEffectStop L bit_talk_bbd_codec04]
+[charaEffectStop M bit_talk_bbd_codec05]
+[charaMove I 60,0 0.5]
+[charaMove K 60,0 0.5]
+[charaMove L 60,0 0.5]
+[charaMove M 60,0 0.5]
+[wt 1.8]
+[charaLayer X normal]
+[charaLayer Y normal]
+[charaLayer Z normal]
+[subCameraOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠パッションリップ
+今のは退去じゃなくてコーディックでした……！[r]みんなをどうするつもりなの、ＢＢ！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ＢＢドバイ
+造形が気に入ったのでコレクションにするだけですよ。[r]インテリアとして悪くなさそうでしたので。
+[k]
+
+[charaFace E 8]
+
+＠ＢＢドバイ
+ですが……妙ですね。
+[k]
+
+＠ＢＢドバイ
+そのサーヴァントはなぜ[r]自動退去が実行されないのです？
+[k]
+
+[messageOff]
+[subCameraOn 1]
+[charaLayer N sub #A]
+[charaLayer J sub #A]
+[subCameraFilter #A maskEdge cut359_mask20 3 0,0,0,255]
+
+[charaScale J 1.3]
+[charaScale N 1.15]
+
+[charaDepth J 7]
+[charaDepth N 5]
+
+[charaRollMoveEx J 0 -10 0,0]
+[charaTalk J]
+[charaFace J 38]
+[charaFadein J 0 70,250]
+[charaFadein N 0 -300,100]
+
+[subRenderFadeinFSR #A 0.2 320,-300]
+[subRenderMoveFSR #A 320,-270 0.3]
+[wt 1.8]
+
+[subRenderMoveFSR #A 320,-300 0.3]
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+[charaFadeout J 0]
+[charaFadeout N 0]
+
+[subCameraOff]
+[charaLayer J normal]
+[charaLayer N normal]
+
+
+＠ＢＢドバイ
+意識がないのなら退去にも抵抗できないはず。[r]そもそもなぜ倒れているんです？
+[k]
+
+＠ＢＢドバイ
+何か悪いものでも摂取しましたか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut T 0,0]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠パーシヴァル
+心底、[#怪訝:けげん]そうな顔をしているが……。
+[k]
+
+＠パーシヴァル
+ＢＢドバイ。エレシュキガルのビースト化は[r]そちらの仕業ではないのか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+[charaEffectDestroy T bit_talk_06]
+[charaEffect T bit_talk_06_02_fs]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠ＢＢドバイ
+はい？
+[k]
+
+＠ＢＢドバイ
+私には関係のない事です。[r]そもそも[#人類悪なんて]、[#まだ地球に残ってたんですか]？
+[k]
+
+？1：エレシュキガルの変化はＢＢの仕業じゃない？
+
+？！
+
+[charaFaceFade E 3 0.2]
+
+＠ＢＢドバイ
+当然です。ビーストに関わるなんて、[r]人類の継続管理ＡＩである私の仕事ではありません。
+[k]
+
+[charaFaceFade E 17 0.2]
+
+＠ＢＢドバイ
+ですが知らない、というのも良くありません。
+[k]
+
+＠ＢＢドバイ
+報告にミスがあったようですね、[r][#カズラドロップ]。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth E 1]
+[charaDepth W 2]
+[charaDepth P 4]
+[charaDepth F 3]
+
+[charaScale W 1.3]
+[charaFadein W 0.4 100,-200]
+[charaMoveEase W 190,-200 1.0 easeOutSine]
+[wt 1.2]
+
+
+
+[charaTalk F,P]
+[charaFace P 0]
+[charaFadein P 0.4 -100,0]
+[wt 0.7]
+
+[charaFace F 16]
+[charaFadein F 0.1 -100,0]
+[wt 0.1]
+
+[charaFadeout P 0.7]
+[wt 1.2]
+
+＠カズラドロップ
+失礼ながら、私のミスではありません。
+[k]
+
+＠カズラドロップ
+エレシュキガルさんの霊基の変調は[r]外見には表れていませんでした。
+[k]
+
+＠カズラドロップ
+遠くからの監視だけでは
+[k]
+
+[charaFaceFade F 6 0.2]
+
+＠カズラドロップ
+『どこか[#挙動不審:オ　ド　オ　ド]してますね……。[r]　まあいつも[#挙動不審:オ　ド　オ　ド]してますか……』
+[k]
+
+[charaFaceFade F 16 0.2]
+
+＠カズラドロップ
+くらいの感想です。
+[k]
+
+＠カズラドロップ
+貴女の計画通り、私がガイド役に徹してさえいれば[r]正しく報告はできましたが、
+[k]
+
+＠カズラドロップ
+パッションリップが現れたため、[r]私は隠れざるをえませんでした。
+[k]
+
+[charaFace E 8]
+
+＠カズラドロップ
+『カルデアのＢＢ』からのガイド役の存在を[r]見落としていた貴女のミスです、ＢＢドバイ。
+[k]
+
+[messageOff]
+[charaFadeout W 0.4]
+[charaFadeout F 0.4]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk E]
+
+＠ＢＢドバイ
+[line 3]いいでしょう。[r]この件は不問とします。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+＠マシュ
+あれは……ＢＢリリィ、さん……？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠パッションリップ
+……！？　ち、違います、違います！[r]あの[#娘:こ]はカズラドロップ！
+[k]
+
+[charaFace D 5]
+
+＠パッションリップ
+わたしやメルトと同じ、ＢＢから生まれた[r]サクラファイブの一騎です！
+[k]
+
+＠パッションリップ
+戦闘力だとバーソロミューさん以下の、[r]とても人前に出せない貧弱サクラシリーズ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠カズラドロップ
+あいかわらずですね、パッションリップ。[r]感情でしか動けない貴女らしい。
+[k]
+
+＠カズラドロップ
+[#今は無駄なお喋りをする場合ではない]と[r]分かりませんか？
+[k]
+
+＠カズラドロップ
+もっと理論的に、[r]合理的に思考を組んでください。
+[k]
+
+＠カズラドロップ
+そんなだから、[r]いつまでも自分の目的を持てないんです。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠パッションリップ
+えっ……もしかして……カズラのくせに、[r]わたしのこと心配してくれてるの？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+[wt 1.4]
+[charaFace F 12]
+
+＠カズラドロップ
+まっさかぁ☆　他のサクラファイブの末路なんて、[r]これっぽっちも興味はありません☆
+[k]
+
+[charaFace F 2]
+
+＠カズラドロップ
+それよりいいんですかぁ、マスターさん？[r]そろそろ時間切れですよ？
+[k]
+
+＠カズラドロップ
+頼れるサーヴァントの皆さんがいるうちに、[r]やることあるんじゃないかなぁ？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut U 2000,2000]
+[charaEffect U bit_talk_06_02_fs]
+[charaEffect U bit_talk_summon_o]
+
+[charaDepth A 1]
+[charaDepth H 2]
+[charaDepth B 3]
+
+[charaTalk H,B,A]
+[charaFace H 14]
+[charaFace B 8]
+[charaFace A 25]
+[charaFadeinFSR H 0.1 350,0]
+[charaFadeinFSL B 0.1 -350,0]
+[charaFadein A 0.1 -30,0]
+[charaPut T 0,0]
+[charaEffect T bit_talk_06_02_fs]
+[wt 0.6]
+[charaEffect T bit_talk_summon_o]
+[wt 1.2]
+
+＠バーソロミュー
+まずいぞ、退去が止まらない！[r]みんな、ここはひとまず撤退して、
+[k]
+
+[charaFace B 2]
+
+＠カルナ
+いや。それでは事態は好転しない。[r]退去が止まらない以上、その前に危険を排除する。
+[k]
+
+[charaFace A 7]
+
+＠A：パーシヴァル
+同感だ。マスター、令呪を！[r]我々が消える前にＢＢドバイを撃破する！
+[k]
+
+？1：了解、やって[&くれ:]！
+？2：でもバーソロミューの意見も[line 3]
+
+？！
+
+[messageOff]
+[subCameraOn 2]
+[charaLayer S sub #A]
+[charaLayer N sub #A]
+[charaLayer R sub #B]
+[charaLayer Q sub #B]
+[charaLayer O sub #B]
+[charaLayer U sub #B]
+[subCameraFilter #A maskEdge cut359_mask10 5 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask09 5 0,0,0,255]
+
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.0]
+
+[charaScale S 1.8]
+[charaScale R 1.10]
+[charaScale Q 1.15]
+[charaScale N 1.2]
+[charaScale O 1.2]
+
+[charaDepth S 9]
+[charaDepth N 8]
+[charaDepth R 3]
+[charaDepth Q 2]
+[charaDepth O 1]
+
+[charaTalk E,S,R,Q]
+[charaFace S 1]
+[charaFadeinFSL S 0 10,350]
+[charaFadein N 0 320,20]
+
+[charaFace R 2]
+[charaFadeinFSR R 0 -40,305]
+[charaFace Q 7]
+[charaFadeinFSR Q 0 300,305]
+[charaFadein O 0 320,20]
+[charaPut U 0,245]
+
+[subRenderFadein #A 0.4 -390,-350]
+[subRenderMove #A -400,-320 0.4]
+[subRenderFadein #B 0.4 20,-290]
+[subRenderMove #B 30,-320 0.4]
+[wt 1.0]
+
+[charaFaceFade S 5 0.2]
+
+[se ad442]
+[se ad984]
+[charaMoveFSR Q 300,300 0.2]
+[charaCrossFade R 3004500 2 0.2]
+[wait charaCrossFade B]
+[wt 0.5]
+
+
+[charaFace E 1]
+[charaFadein E 0 1]
+[charaFadeout H 0.1]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaEffectDestroy T bit_talk_06_02_fs]
+[charaEffectDestroy T bit_talk_summon_o]
+[wt 0.5]
+[charaFace E 5]
+
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.5]
+[charaFadeout N 0.1]
+[charaFadeout S 0.1]
+[charaFadeout O 0.1]
+[charaFadeout R 0.1]
+[charaFadeout Q 0.1]
+[charaEffectDestroy U bit_talk_06_02_fs]
+[charaEffectDestroy U bit_talk_summon_o]
+[wt 0.1]
+[charaScale R 1.0]
+[charaScale S 1.0]
+
+[charaLayer N normal]
+[charaLayer S normal]
+[charaLayer O normal]
+[charaLayer R normal]
+[charaLayer U normal]
+[charaLayer Q normal]
+[subCameraOff]
+
+＠ＢＢドバイ
+ええ、それでこそ旧時代の人間です。[r][#諦:あきら]めない、という姿勢がとてもいい。
+[k]
+
+[charaFaceFade E 13 0.2]
+
+＠ＢＢドバイ
+本当[line 3][r][#懐:なつ]かしくて手加減できそうにありません。
+[k]
+
+[bgmStop BGM_BATTLE_95 1.5]
+
+＠ＢＢドバイ
+無駄な死が好きなのでしょう？[r]なら、英霊の座の霊基情報ごと消してあげます。
+[k]
+
+
+[messageOff]
+[charaEffect E bit_talk_bbd_spell]
+[cueSe SE_24 24_ad1436]
+[wt 2.4]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 2000,2000]
+
+[bgm BGM_EVENT_195 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠パッションリップ
+！　だめ、逃げて！[r]みんな逃げて、あれはムーンセルの[#観測光:かんそくこう][line 3]
+[k]
+
+＠パッションリップ
+霊基を上書きする、事象確定の特殊処理です！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+
+＠ＢＢドバイ
+安心してください。[r][%1]さんに手は出しません。
+[k]
+
+＠ＢＢドバイ
+不要なのはサーヴァントだけ。
+[k]
+
+＠ＢＢドバイ
+[line 3]そこの半端な英霊である、[r]マシュ・キリエライトも含めてね？
+[k]
+
+[messageOff]
+[charaEffectStop E bit_talk_bbd_spell]
+[se ad946]
+[fadeout white 1.5]
+[bgmStop BGM_EVENT_195 1.5]
+[wait fade]
+[seStop ad946 0.7]
+[charaFadeout E 0.1]
+
+[charaSet K 1098276910 1 マシュ]
+[charaScale K 1.2]
+
+[subCameraOn 1]
+[charaLayer X sub #A]
+[charaLayer K sub #A]
+[charaLayer L sub #A]
+[charaDepth X 1]
+[charaDepth K 2]
+[charaDepth L 3]
+[subCameraFilter #A normal]
+
+[charaFace K 14]
+[charaFadein K 0.4 50,0]
+[charaFadein X 0.1 170,-350]
+
+[scene 10000]
+[overlayFadein V 0.1 0,-200]
+[wt 1.0]
+
+[fadein white 0.4]
+[wait fade]
+
+[criMovie talk_mov260 bgmPlay false]
+[wt 0.4]
+[charaFadeout V 0.2]
+[wt 7.0]
+
+[fadeout white 0.5]
+[wait fade]
+
+
+[scene 221600]
+[wt 3.0]
+
+[fadein white 1.5]
+[wait fade]
+
+[wt 1.5]
+
+？1：あれ……生きてる……？
+？2：みんなは！？
+
+？！
+
+[messageOff]
+[charaScale E 1.2]
+[charaScale F 1.2]
+[charaScale J 1.2]
+[charaScale H 1.2]
+[charaScale N 1.2]
+[charaScale O 1.2]
+
+[charaDepth E 3]
+[charaDepth F 2]
+[charaDepth N 1]
+[charaDepth H 8]
+[charaDepth J 7]
+[charaDepth O 6]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFace F 16]
+[charaFadein F 0.5 -320,0]
+[charaFadein E 0.5 20,0]
+[charaFadein N 0.5 50,-290]
+[charaMove F -360,0 4.0]
+[charaMove E -20,0 4.0]
+[charaMove N 10,-290 4.0]
+[wt 2.0]
+
+[charaFace J 38]
+[charaFace H 16]
+[charaFadein J 0.5 -40,-50]
+[charaFadein H 0.5 330,0]
+[charaFadein O 0.5 -50,-270]
+[charaMove J 0,-50 4.0]
+[charaMove H 370,0 4.0]
+[charaMove O -10,-270 4.0]
+[wt 1.0]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout N 0.1]
+[wt 1.0]
+
+[charaFadeout J 0.5]
+[charaFadeout H 0.5]
+[charaFadeout O 0.5]
+[wt 1.0]
+
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaScale J 1.0]
+[charaScale H 1.0]
+
+？1：マシュは！？
+
+？！
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 14]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠マシュ
+は、はい、ここに！[r]無事です、マスター！
+[k]
+
+＠マシュ
+特にダメージはありませんでした。[r]ただ、[#眩:まぶ]しくて状況が分からなかったというか……
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaPut L 1]
+[charaEffect L bit_talk_sakura04]
+[wt 0.5]
+[charaMoveEase X 120,-350 1.0 easeOutSine]
+[charaMoveEase K 0,0 1.0 easeOutSine]
+[subRenderFadein #A 0.6 0,0]
+[se ad112]
+[seVolume ad112 0 0]
+[seVolume ad112 0.5 1.0]
+[wt 1.5]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaFadeout G 0.1]
+[seStop ad112 1.0]
+[wt 0.5]
+
+[charaFace K 1]
+
+＠マシュ
+[line 3]リップさん？
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.5]
+[wt 0.7]
+
+[bgm BGM_EVENT_156 0.1]
+
+[charaFadeout X 0.1]
+[charaFadeout K 0.1]
+[charaEffectDestroy L bit_talk_sakura04]
+[charaTalk on]
+[charaTalk E]
+
+＠ＢＢドバイ
+パッションリップは消滅しました。[r]貴方を守るためにムーンセルの観測光の盾になって。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaLayer X normal]
+[charaLayer K normal]
+[charaLayer L normal]
+[subCameraOff]
+
+[charaTalk G]
+[charaFace G 28]
+[charaFadein G 0.1 1]
+
+＠マシュ
+[line 6]。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 1.0]
+
+？1：な[line 3]
+？2：それでもＢＢか！？
+
+？！
+
+[charaFace E 8]
+
+＠ＢＢドバイ
+おかしな[#罵倒:ばとう]ですが、意図は分かります。
+[k]
+
+＠ＢＢドバイ
+自ら生みだしたアルターエゴを消滅させて[r]良心は痛まないか、という質問ですね？
+[k]
+
+＠ＢＢドバイ
+もちろん痛みません。
+[k]
+
+＠ＢＢドバイ
+サクラファイブはＢＢの悪性を切り離したもの。[r]もとから不要なものでした。
+[k]
+
+[charaFace E 0]
+
+＠ＢＢドバイ
+そうでしょう、マスター？
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[imageSet A black_fade_re 1]
+[imageSet B black_fade_re 1]
+[imageSet C cut592_knhf_full_00 1]
+[imageSet D cut592_knhf_full_00 1]
+[sceneSet E 221600 1]
+[charaSet I 1098307100 1 ？？？]
+
+[charaScale A 2.0]
+[charaScale B 2.0]
+[overlayFadein A 0.3 0,-930]
+[overlayFadein B 0.3 0,280]
+
+[charaDepth C 3]
+[charaDepth N 2]
+
+[charaScale C 1.8]
+[charaScale N 2.5]
+[charaFadein C 0.1 50,900]
+[charaFadein N 0.1 50,180]
+[wt 0.1]
+
+[cueSe SE_24 24_ad1351]
+[seVolume 24_ad1351 0 0.1]
+[seVolume 24_ad1351 0.5 1.0]
+[fadein black 0.5]
+[wt 0.5]
+[charaMove C -50,900 30.0]
+[charaMove N -50,180 30.0]
+[wt 1.0]
+[seStop 24_ad1351 0.4]
+[wait fade]
+
+＠？？？
+不要というより余分、かな。[r]趣味とか[#嗜好:しこう]の分類。
+[k]
+
+[messageOff]
+[charaDepth D 5]
+[charaDepth O 4]
+
+[charaScale D 1.8]
+[charaScale O 2.5]
+[charaFadein D 0.5 -50,140]
+[charaFadein O 0.5 -50,-380]
+[charaMove D 50,140 30.0]
+[charaMove O 50,-380 30.0]
+[cueSe SE_24 24_ad1351]
+[wt 0.5]
+[seStop 24_ad1351 0.8]
+
+[charaFadeout C 0.1]
+[charaFadeout N 0.1]
+
+＠？？？
+叶えたい目的があるなら、そういうのは[r]真っ先に切り捨てておくのがいい。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[charaFadeout O 0.1]
+
+[charaDepth I 9]
+[charaDepth E 8]
+
+[charaScale I 1.2]
+[charaScale E 1.2]
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 0,150]
+[charaFadein E 0.1 0,-190]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaMoveEase I 0,0 2.4 easeOutSine]
+[charaMoveEase E 0,-290 2.4 easeOutSine]
+[cueSe SE_24 24_ad1351]
+[seStop 24_ad1351 0.8]
+[wt 2.5]
+
+＠白い礼服の少女
+こんにちは、最後の人間の方たち。[r]ドバイ観光は楽しかった？
+[k]
+
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_156 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

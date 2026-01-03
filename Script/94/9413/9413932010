@@ -1,0 +1,980 @@
+
+＄94-13-93-20-1-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[ifClear 60139307]
+[charaSet A 1098315100 1 チビーネ]
+[charaSet C 1098315100 1 チビーネ_演出用]
+[flag rbody_1 true]
+
+[ifClear 60139308]
+[charaSet A 1098315000 1 チビーネ]
+[charaSet C 1098315000 1 チビーネ_演出用]
+[flag rbody_2 true]
+
+[ifClear 60139309]
+[charaSet A 1098314900 1 チビーネ]
+[charaSet C 1098314900 1 チビーネ_演出用]
+[flag rbody_3 true]
+
+[ifClear 60139310]
+[charaSet A 1098316600 1 チビーネ]
+[charaSet C 1098316600 1 チビーネ_演出用]
+[flag bbody_1 true]
+
+[ifClear 60139311]
+[charaSet A 1098316700 1 チビーネ]
+[charaSet C 1098316700 1 チビーネ_演出用]
+[flag bbody_2 true]
+
+[ifClear 60139312]
+[charaSet A 1098316800 1 チビーネ]
+[charaSet C 1098316800 1 チビーネ_演出用]
+[flag bbody_3 true]
+
+[ifClear 60139313]
+[charaSet A 1098317000 1 チビーネ]
+[charaSet C 1098317000 1 チビーネ_演出用]
+[flag gbody_1 true]
+
+[ifClear 60139314]
+[charaSet A 1098317100 1 チビーネ]
+[charaSet C 1098317100 1 チビーネ_演出用]
+[flag gbody_2 true]
+
+[ifClear 60139315]
+[charaSet A 1098317200 1 チビーネ]
+[charaSet C 1098317200 1 チビーネ_演出用]
+[flag gbody_3 true]
+
+[else]
+[charaSet A 1098315100 1 チビーネ]
+[charaSet C 1098315100 1 チビーネ_演出用]
+[flag rbody_1 true]
+
+[endIf]
+[ifClear 60139328]
+[charaSet B 1098238800 1 無角]
+[charaSet D 1098238800 1 無角]
+[flag horn_00 true]
+
+
+[ifClear 60139331]
+[charaSet B 1098317300 1 重_一角]
+[charaSet D 1098317300 1 重_一角]
+[flag horn_11 true]
+
+[ifClear 60139332]
+[charaSet B 1098317310 1 重_二角]
+[charaSet D 1098317310 1 重_二角]
+[flag horn_12 true]
+
+[ifClear 60139333]
+[charaSet B 1098317400 1 中_一角]
+[charaSet D 1098317400 1 中_一角]
+[flag horn_21 true]
+
+[ifClear 60139334]
+[charaSet B 1098317410 1 中_二角]
+[charaSet D 1098317410 1 中_二角]
+[flag horn_22 true]
+
+[ifClear 60139335]
+[charaSet B 1098317500 1 軽_一角]
+[charaSet D 1098317500 1 軽_一角]
+[flag horn_31 true]
+
+[ifClear 60139336]
+[charaSet B 1098317510 1 軽_二角]
+[charaSet D 1098317510 1 軽_二角]
+[flag horn_32 true]
+
+[else]
+[charaSet B 1098238800 1 無角]
+[charaSet D 1098238800 1 無角]
+[flag horn_00 true]
+
+[endIf]
+
+[charaSet E 1062001 1 黒姫]
+[charaSet F 3057001 1 ビショーネ]
+[charaSet G 1098314200 1 おみぃさん]
+[charaSet H 4001000 1 メドゥーサ]
+[charaSet I 1010000 1 エリザベート]
+[charaSet J 1098257810 1 マシュ]
+[charaSet K 1098257310 1 ダ・ヴィンチ]
+[charaSet L 5043000 1 アスクレピオス]
+[sceneSet M 239300 1]
+[sceneSet N 239301 1]
+[sceneSet O 239301 1]
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+[charaSet Q 98115000 1 エフェクト用]
+[sceneSet R 239700 1]
+[charaScale R 1.3]
+[charaSet S 98115000 1 エフェクト用]
+[charaPut S 2000,2000]
+[charaEffect S bit_talk_10_LowLevel_depth]
+[sceneSet T 238700 1]
+[charaScale T 1.3]
+
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth P 2]
+
+[charaDepth N 2]
+[charaDepth O 2]
+
+[charaDepth A 3]
+[charaDepth B 4]
+
+[charaDepth I 5]
+[charaDepth F 6]
+[charaDepth G 7]
+
+[charaDepth J 8]
+[charaDepth K 9]
+[charaDepth S 10]
+
+[charaDepth L 11]
+[charaDepth H 12]
+[charaDepth E 13]
+
+
+[scene 239300]
+
+[subCameraOn 3]
+
+[charaFadein M 0.1 0,-200]
+[cameraMove 0.1 0,0 1.1]
+[wt 0.1]
+
+[cameraMove 3.1 0,0 1.01]
+
+[bgm BGM_BATTLE_116 0.1]
+[fadein black 1.0]
+[wait fade]
+[wt 2.5]
+
+[charaTalk off]
+[charaFace F 6]
+[charaFadein F 0.2 1]
+[wt 0.6]
+[charaMoveReturn F 0,-6 0.6]
+[wt 1.2]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[branch lblHorn0 horn_00 true]
+
+[branch lblHorn01 horn_11 true]
+[branch lblHorn01 horn_21 true]
+[branch lblHorn01 horn_31 true]
+
+[branch lblHorn02 horn_12 true]
+[branch lblHorn02 horn_22 true]
+[branch lblHorn02 horn_32 true]
+
+[label lblHorn0]
+
+[charaLayer A sub #A]
+[subCameraFilter #A through]
+[charaFace A 0]
+[charaFadein A 0 1]
+[subRenderFadein #A 0.1 0,0]
+[wt 0.5]
+[charaMoveReturn A 0,-6 0.6]
+[wt 1.2]
+[charaFace A 1]
+
+[cueSe SE_22 22_ad1221]
+[seStop 22_ad1221 2.5]
+[subBlur #A lens 1.0 4 5 1.0 subBlur]
+[wt 1.0]
+[charaFadeout A 1.0]
+[charaFadeout A 1.0]
+[wt 1.5]
+[se ad1006]
+[blur motion 0.25 4 10000 0.5 0.6 0.05 100]
+[charaMoveScale M 1.3 0.4]
+[charaMove M 0,-240 0.4]
+[wt 0.6]
+[cueSe Servants_9941810 bac1039]
+[shake 0.05 2 2 1.0]
+[fadeout white 0.3]
+[wait fade]
+
+[subBlurOff #A lens 0.1 normal]
+[blurOff motion 0.1]
+[charaFadeout M 0.1]
+[charaLayer A normal]
+[charaFadeout A 0.1]
+[subRenderFadeout #A 0.1]
+
+[wt 1.0]
+
+[shake 0.05 2 2 1.0]
+[fadein white 1.5]
+[wait fade]
+
+[wt 1.0]
+[branch lblBrConf01]
+
+[label lblHorn01]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[charaMoveReturn A 0,-6 0.6]
+[charaMoveReturn B 0,-6 0.6]
+[wt 1.2]
+[charaFace A 9]
+[charaFadeTime P 0.5 0.5]
+[wt 0.6]
+
+[se ad733]
+[flashin once 0.4 1.0 FFFFFF80 FFFFFF00]
+[wt 1.0]
+[seStop ad733 2.0]
+[wt 0.5]
+[charaFadeout A 0.3]
+[charaFadeout B 0.3]
+[charaFadeout P 0.3]
+[charaFadeout M 0.3]
+[wt 1.0]
+[branch lblBrConf01]
+
+[label lblHorn02]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[charaMoveReturn A 0,-6 0.6]
+[charaMoveReturn B 0,-6 0.6]
+[wt 1.2]
+[charaFace A 1]
+
+[cueSe SE_22 22_adm89 0.2]
+[charaPut Q 0,50]
+[charaDepth Q 8]
+[charaEffect Q bit_talk_dragon_thunder]
+[wt 0.7]
+
+[seStop 22_adm89 1.0]
+[charaEffectStop Q bit_talk_dragon_thunder]
+[wt 0.8]
+[se ad63]
+[charaPut Q -350,0]
+[wt 1.5]
+
+[charaFadeout A 0.3]
+[charaFadeout B 0.3]
+[charaFadeout M 0.3]
+[wt 1.0]
+[branch lblBrConf01]
+
+[label lblBrConf01]
+[wt 1.0]
+
+[se ad241]
+[effect bit_talk_sand_dust_back_fs 0,-100]
+[effect bit_talk_sand_dust_front_fs 0,-100]
+[shake 0.03 1 1 2.5]
+[wt 1.0]
+
+[scene 239301 1.5]
+[effectStop bit_talk_sand_dust_back_fs]
+[effectStop bit_talk_sand_dust_front_fs]
+[wt 1.5]
+[seStop ad241 2.0]
+[wt 2.5]
+
+[charaTalk off]
+
+[charaFace I 1]
+[charaFadein I 0.2 -350,0]
+
+[charaFace F 2]
+[charaFadein F 0.2 0,0]
+
+[charaFace G 7]
+[charaFadein G 0.2 350,0]
+[wt 2.0]
+[charaFadeout I 0.2]
+[charaFadeout F 0.2]
+[charaFadeout G 0.2]
+[wt 0.3]
+
+
+[charaFace H 4]
+[charaFadein H 0.2 -350,0]
+
+[charaFace E 3]
+[charaFadein E 0.2 0,0]
+
+[charaFace L 0]
+[charaFadein L 0.2 350,0]
+[wt 1.0]
+[charaMoveReturn E 0,-6 0.6]
+[wt 1.5]
+
+[messageOff]
+[bgmStop BGM_BATTLE_116 1.5]
+[se ad769]
+[fadeout black 1.5]
+[wait fade]
+
+[charaDepth Q 1]
+[charaFadeout H 0.2]
+[charaFadeout E 0.2]
+[charaFadeout L 0.2]
+[wt 0.1]
+
+[charaDepth A 3]
+[charaDepth B 4]
+
+[scene 238700]
+[wt 1.5]
+
+[seStop ad769 1.5]
+[fadein black 1.5]
+[wait fade]
+[wt 0.3]
+
+[se ad984]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.2 1]
+[wt 0.2]
+
+＠黒姫
+見えました。[r]あれです。
+[k]
+
+？1：あれが……！
+？！
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_199 0.1]
+[charaFadein R 0.7 100,-200]
+[charaMove R 100,-320 5.0]
+[wt 2.0]
+[scene 239700]
+[wt 4.0]
+
+[subCameraOn 1]
+[charaLayer F sub #A]
+[charaLayer A sub #A]
+[charaLayer B sub #A]
+[charaLayer G sub #A]
+[charaLayer E sub #A]
+[charaLayer H sub #A]
+[charaLayer I sub #A]
+[charaLayer J sub #A]
+[charaLayer S sub #A]
+[charaLayer K sub #A]
+[charaLayer L sub #A]
+[charaLayer T sub #A]
+[subCameraFilter #A maskEdge cut359_mask20 3 0,0,0,255 0]
+[charaDepth T 1]
+[charaDepth F 2]
+[charaDepth A 3]
+[charaDepth B 4]
+[charaDepth G 2]
+[charaDepth E 2]
+[charaDepth H 2]
+[charaDepth I 2]
+[charaDepth J 2]
+[charaDepth S 3]
+[charaDepth K 2]
+[charaDepth L 2]
+[charaScale T 1.2]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0 0,250]
+[charaFadein T 0 0,-50]
+[subRenderFadeinFSR #A 0.5 200,-250]
+[wt 1.0]
+
+
+＠ビショーネ
+蛇王ザッハークの、城……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A,B]
+[charaFace A 3]
+[charaFadein A 0.1 50,250]
+[charaFadein B 0.1 50,250]
+
+＠チビーネ
+きゅぴ……。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,250]
+
+＠おみぃさん
+へーえ、けっこう大きいじゃないのさ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 0,250]
+
+＠黒姫
+外観はそうですが、中はそれほど[r]身が詰まっている感じでもございません。
+[k]
+
+＠黒姫
+華美で[#絢爛:けんらん]ではありますが、同時に、[r]どことなく空虚さがあるような[line 3]
+[k]
+
+[charaFace E 14]
+
+＠黒姫
+いえ。百聞は一見に如かず、[r]と申しますね。説明は不要でしょう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 13]
+[charaFadein H 0.1 0,250]
+
+＠メドゥーサ
+我々がここにいることに、[r]ザッハークは気付いていると思いますか？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 0,250]
+
+＠黒姫
+……わかりません。
+[k]
+
+[charaFace E 3]
+
+＠黒姫
+ですがどうあれ、本人が動くことはないでしょう。[r]玉座にて待ち構えているはずです。
+[k]
+
+[charaFace E 4]
+
+＠黒姫
+あの王の性格は……[r]量りかねる部分がほとんどでしたが、
+[k]
+
+＠黒姫
+少なくとも、積極的に自ら働くのを[r]良しとするものではないかと。
+[k]
+
+＠黒姫
+怠惰なる無慈悲。[r]苛烈なる無気力。
+[k]
+
+＠黒姫
+私の印象としては、そのようなものでした。
+[k]
+
+？1：なるほど……
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,250]
+
+＠エリザベート
+相手の出方なんか考えすぎても仕方ないわよ。[r]ようやく魔王の城に辿り着いたんだから、
+[k]
+
+＠エリザベート
+勇者的にはもうバーン！　って[r]真正面から乗り込むしかないんじゃない？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 0,250]
+
+＠黒姫
+さすがに正門前には、門番のような役割を与えられた[r]強き蛇が配置されていたような気はするのですが……。
+[k]
+
+＠黒姫
+手っ取り早いのは確かかもしれません。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 0,250]
+
+＠メドゥーサ
+危険性があるなら、もっと慎重な手を[r]考えたほうがいいのではないでしょうか。
+[k]
+
+＠メドゥーサ
+行くしかないのは確かですが、[r]馬鹿正直に真正面から行く必要はないかと。
+[k]
+
+[charaFace H 0]
+
+＠メドゥーサ
+目立たない場所から城に侵入する方法など[r]知っていませんか？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 0,250]
+
+＠黒姫
+一つ心当たりはあります。
+[k]
+
+＠黒姫
+あの城は見ての通り、[r]頭の先端部、崖際に建てられています。
+[k]
+
+＠黒姫
+その崖側から接近すれば、いささか足場は悪いですが、[r]城の下部にあたる場所から侵入は可能かと。
+[k]
+
+[charaFace E 15]
+
+＠黒姫
+……実績はあります。[r]一度、私が城を抜け出すときに使いました。
+[k]
+
+＠黒姫
+無許可で町に行くことにしたので、『脈』を使うのも[r]さすがに少しは城を離れてからがよかろう、と。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 0,250]
+
+＠おみぃさん
+みゃはは。[r]アタシに会いに来てくれたときだね？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 0,250]
+
+＠黒姫
+おみぃさまに会いに行ったというか、[r][#櫛:くし]を捜しに行ったのですが……そのぅ……はい。
+[k]
+
+[charaFace E 3]
+
+＠黒姫
+で、ですがその道筋は[r]おそらく蛇王も既知のはず。
+[k]
+
+＠黒姫
+新しく番兵などが配備されていたとしても[r]不思議はありません。ご注意を。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut S 0,250]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0,250]
+
+＠マシュ
+あの城には、蛇王以外の人間……[r]蛇竜人がいるのでしょうか？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut S 2000,2000]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,250]
+
+＠黒姫
+……いえ、いないと思います。
+[k]
+
+＠黒姫
+ですので、番兵と言ってもそれはやはり[#眷属:けんぞく]の竜蛇や、[r]先程の黒き馬のようなものでしょう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut S 0,250]
+[charaTalk K]
+[charaFace K 23]
+[charaFadein K 0.1 0,250]
+
+＠ダ・ヴィンチ
+ふーむ。ウロボロスの完成を防ぐため、[r]今は一刻も早くザッハークの元に急ぎたい状況だ。
+[k]
+
+＠ダ・ヴィンチ
+正面から行けば時間的には早いかもだけど、[r]まず間違いなく強敵が待っている。
+[k]
+
+＠ダ・ヴィンチ
+危険だし、あるいはその対処で時間が[r]逆に取られるということもあるかもしれない。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0,250]
+
+＠マシュ
+もう一つの手はメドゥーサさんの裏口から侵入作戦。[r]敵はいても衛兵レベルだという話ですが、
+[k]
+
+＠マシュ
+侵入自体の難易度があります。[r]隠密性にも気をつけねばならないでしょうから、
+[k]
+
+＠マシュ
+辿り着くまでの時間はまっすぐ行くより[r]かかってしまうかもしれません。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut S 2000,2000]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,250]
+
+＠エリザベート
+ここはやっぱり、[r][&子イヌ:子ジカ]が決めていいんじゃない？
+[k]
+
+？1：じゃあ[line 3]
+？！
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 1.5]
+
+[input selectBranch]
+[messageOff]
+
+[bgmStop BGM_BATTLE_116 0.4]
+
+[seStop ad769 0.4]
+[seStop ad1006 0.4]
+[seStop 22_ad1221 0.4]
+[seStop ad733 0.4]
+[seStop ad241 0.4]
+[seStop ad63 0.4]
+[seStop ad984 0.4]
+[seStop 22_adm89 0.4]
+
+[blurOff motion 0.4]
+
+[cameraMove 0.1 0,0 1.01]
+[shakeStop]
+
+[charaEffectDestroy Q bit_talk_dragon_thunder]
+[effectDestroy bit_talk_sand_dust_back_fs]
+[effectDestroy bit_talk_sand_dust_front_fs]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+
+[charaSet E 1062001 1 黒姫]
+[charaSet F 3057001 1 ビショーネ]
+[charaSet G 1098314200 1 おみぃさん]
+[charaSet H 4001000 1 メドゥーサ]
+[charaSet I 1010000 1 エリザベート]
+[charaSet J 1098257810 1 マシュ]
+[charaSet K 1098257310 1 ダ・ヴィンチ]
+[charaSet L 5043000 1 アスクレピオス]
+[sceneSet M 239300 1]
+[sceneSet N 239301 1]
+[sceneSet O 239301 1]
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+[charaSet Q 98115000 1 エフェクト用]
+[sceneSet R 239700 1]
+[charaScale R 1.3]
+[charaSet S 98115000 1 エフェクト用]
+[charaPut S 2000,2000]
+[charaEffect S bit_talk_10_LowLevel_depth]
+[sceneSet T 238700 1]
+[charaScale T 1.2]
+
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth P 2]
+
+[charaDepth N 2]
+[charaDepth O 2]
+
+[charaDepth A 3]
+[charaDepth B 4]
+
+[charaDepth I 5]
+[charaDepth F 6]
+[charaDepth G 7]
+
+[charaDepth J 8]
+[charaDepth K 9]
+[charaDepth S 10]
+
+[charaDepth L 11]
+[charaDepth H 12]
+[charaDepth E 13]
+
+[subCameraOn 1]
+[charaLayer F sub #A]
+[charaLayer A sub #A]
+[charaLayer B sub #A]
+[charaLayer G sub #A]
+[charaLayer E sub #A]
+[charaLayer H sub #A]
+[charaLayer I sub #A]
+[charaLayer J sub #A]
+[charaLayer S sub #A]
+[charaLayer K sub #A]
+[charaLayer L sub #A]
+[charaLayer T sub #A]
+[subCameraFilter #A maskEdge cut359_mask20 3 0,0,0,255 0]
+[charaDepth T 1]
+[charaDepth F 2]
+[charaDepth A 3]
+[charaDepth B 4]
+[charaDepth G 2]
+[charaDepth E 2]
+[charaDepth H 2]
+[charaDepth I 2]
+[charaDepth J 2]
+[charaDepth S 3]
+[charaDepth K 2]
+[charaDepth L 2]
+[charaScale T 1.2]
+[charaFadein T 0 0,-50]
+[subRenderFadeinFSR #A 0.5 200,-250]
+[charaFadein R 0.1 100,-320]
+[wt 1.0]
+
+[bgm BGM_EVENT_199 1.0]
+[scene 239301]
+[wt 0.2]
+
+[maskin black 1.0]
+[wait mask]
+
+[label selectBranch]
+
+？1,5000：正面から行こう
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 0,250]
+
+＠アスクレピオス
+緊急手術をせねばならない状況だ。[r]回り道をしている場合ではない、というわけだな。
+[k]
+
+＠アスクレピオス
+いいだろう。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+？2,6000：裏口から侵入作戦で行こう
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,250]
+
+＠黒姫
+急がば回れ、と申しますね。[r]了解いたしました。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？！
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_1]
+
+[branch select01_end]
+
+[label INPUT_SELECT_BRANCH_2]
+
+[label select01_end]
+
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 0,250]
+
+＠エリザベート
+ま、何が出てこようがこの勇者の剣でスパーンよ。[r]安心しなさい？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A,B]
+[charaFace A 0]
+[charaFadein A 0.1 50,250]
+[charaFadein B 0.1 50,250]
+
+＠チビーネ=spot[A,B]
+きゅぴ！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 0,250]
+
+＠ビショーネ
+[#チビーネ:わ　た　し]のブレスやドラゴンセンスも、[r]あります……！
+[k]
+
+[charaFace F 9]
+
+＠ビショーネ
+新人ながら全力で頑張りますので、[r]よろしくお願いします！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 0,250]
+
+＠おみぃさん
+おっと、元気いっぱいだ。[r]頼りにしてるよ！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 0,250]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_199 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout F 0.1]
+[charaFadeout T 0.1]
+[charaFadeout R 0.1]
+[wt 0.5]
+[charaLayer F normal]
+[charaLayer A normal]
+[charaLayer B normal]
+[charaLayer G normal]
+[charaLayer E normal]
+[charaLayer H normal]
+[charaLayer I normal]
+[charaLayer J normal]
+[charaLayer S normal]
+[charaLayer K normal]
+[charaLayer T normal]
+[subCameraOff]
+[wt 1.0]
+
+[wt 0.1]
+
+[scene 10000]
+
+[fadein black 0.5]
+[wait fade]
+
+＠
+でも。
+[k]
+
+＠
+全力で頑張って、頑張って。[r]それで、結局どうなりたいかというのは[line 3]
+[k]
+
+＠
+やっぱり、このときだって、[r]わかってなくて。
+[k]
+
+＠
+[line 3]だから。
+[k]
+
+＠
+こうなっちゃったんだろうなあ。
+[k]
+
+
+[messageOff]
+[wt 0.8]
+[cueSe SE_21 21_ad1118]
+[effect bit_talk_blood_stay]
+[wt 3.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

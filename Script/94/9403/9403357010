@@ -1,0 +1,453 @@
+
+＄94-03-35-70-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+
+
+[charaSet A 5046001 1 ミス・クレーン]
+[charaSet B 1098230000 1 Ｘ・オルタ]
+[charaSet C 98115000 1 エフェクト用]
+
+[charaSet G 98115000 1 エフェクト用]
+[equipSet H 9808040 1 バレンタイン礼装]
+
+[charaPut C 2000,2500]
+[charaEffect C bit_sepia01_fade_fs]
+
+
+[scene 113300]
+[pictureFrame cut063_cinema]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+[bgm BGM_EVENT_128 0.1]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V010]
+とんとん、[charaMoveReturn A 0,-45 0.5][twt 0.6][charaMoveReturn A 0,-45 0.5][twt 0.5]しゃー　[twt 1.5]とんとん、[charaMoveReturn A 0,-45 0.5][twt 0.6][charaMoveReturn A 0,-45 0.5][twt 0.5]しゃー[twt 2.0][r]紡いで、織って、整えて。[wait tVoice]
+[k]
+
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V020]
+日々の恩義は限りなく。[r]僅かなりとも報いるために、せめてせめての恩返し。[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V030]
+ふふっ、我ながら良い出来映え。[r]これならきっと、あの人に温もりを[line 3][wait tVoice]
+[k]
+
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V040]
+あ。[charaMoveReturn A 0,-45 0.3][charaFace A 10][r]いけない、肝心のもうひとつが手つかずでした。[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V050]
+どうしましょう、どうしましょう。[wait tVoice]
+[k]
+
+[messageOff]
+[se ade12]
+[charaFace A 10]
+[wt 2.0]
+
+[charaFace A 6]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V060]
+はーい、どなた様ですか？[wait tVoice]
+[k]
+
+[messageOff]
+[se ad8]
+[wt 2.2]
+
+[charaFace A 8]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V070]
+あら、アナタは……！[twt 2.6][charaFace A 3][r]ええ、ええ、よくぞおいでくださいました！[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_128 1.5]
+[wait fade]
+
+[charaFadeout A 0.4]
+[pictureFrame]
+[branchQuestNotClear lblNotClear 3000303]
+[scene 105800]
+[branch lblConf]
+[label lblNotClear]
+[scene 106000]
+[label lblConf]
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+[bgm BGM_EVENT_77 0.1]
+
+[se ad8]
+[wt 2.2]
+
+[se ade422]
+[seVolume ad422 0 0.1]
+[seVolume ad422 1.0 1.0]
+[wt 2.0]
+[seStop ade422]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V080]
+ごめんくださいまし。[r]日頃、お世話になっている鶴でございます。[wait tVoice]
+[k]
+
+？1：やあ、ミス・クレーン
+？！
+
+[charaFace A 3]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V090]
+…………。[wait tVoice]
+[k]
+
+？1：どうかした？
+？！
+
+[bgmStop BGM_EVENT_77 1.0]
+[charaFace A 12]
+[charaShake A 0.03 4 4 0.4]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V100]
+へあっ！[wait tVoice]
+[k]
+
+[messageOff]
+[charaMove A 0,-50 0.4]
+[charaFadeout A 0.4]
+[wt 0.4]
+
+[se ad144]
+[wt 0.5]
+
+？1：何もしてないのに倒れた！？
+？！
+
+[bgm BGM_EVENT_7 0.1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.4 0,-30]
+[charaMove A 0,0 0.6]
+[charaShake A 0.02 3 3 0.6]
+[wt 0.8]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V110]
+ううっ、尊過ぎます……すべてが……。[r]覚悟をキメていましたのに、[twt 6.2][charaFace A 13][messageShake 0.04 3 3 0.6]無理無理無理、反則級！[wait tVoice]
+[k]
+
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V120]
+ああ、ああ、こんなにも愛のご[#相伴:しょうばん]に[#与:あずか]るなんて。[r]鶴はもうお腹いっぱい、果報者にございます。[wait tVoice]
+[k]
+
+[charaPut G 0,0]
+[charaEffect G bit_talk_06]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V130]
+もはや、心残りはございません……。[wait tVoice]
+[k]
+[messageOff]
+
+？1：待って待って待って！
+？2：いきなり消えないでください
+？！
+
+[wt 0.4]
+[charaFace A 10]
+[charaMoveReturn A 0,10 0.3]
+[charaEffectStop G bit_talk_06]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_7 1.0]
+[charaFace A 9]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V140]
+パルドン！　失礼いたしました！[r]私としたことが我を失ってしまうとは。[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V150]
+ええと、簡単に説明いたしますと[line 3][wait tVoice]
+[k]
+
+[bgm BGM_EVENT_136 0.1]
+[charaFace A 0]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V160]
+今日は素敵なバレンタインデー。[wait tVoice]
+[k]
+
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V170]
+どこもかしこも激推し胸熱、誰もが浮かれるカーニバル、[r]甘く、香ばしく、ほろ苦く、切ない気配で満ちています。[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V180]
+『特別な日』故に、マスＰさんを取り巻く敬慕の情。[r]それを感じ取り、私の心は千千に乱れてしまいました。[wait tVoice]
+[k]
+
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V190]
+たとえるなら、超トップアイドルのライブ会場が如き[r]『強さ』といったところでしょうか。[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V200]
+アムール！[r]愛されていますね。素晴らしいことです。[wait tVoice]
+[k]
+
+？1：なる　ほど？
+？！
+
+[charaFace A 0]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V210]
+そして、こうして伺ったのは[r]私もまた、アナタに思いを捧げるため。[wait tVoice]
+[k]
+
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V220]
+こちらが、その心尽くしの品でございます。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+
+？1：お菓子と、ブランケット？
+？！
+
+[charaFadeout H 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V230]
+ええ、ええ。[r]どちらもミス・クレーンの最新作です。[wait tVoice]
+[k]
+
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V240]
+ブランケットは、薄く、軽く、柔らかく。[r]けれど[#靭:つよ]く、暖かく。[wait tVoice]
+[k]
+
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V250]
+普段使いはもちろん、旅のお供にもどうぞ。[wait tVoice]
+[k]
+
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V260]
+寒風や雨風にアナタの温もりを奪われぬようにと、[r]精魂込めて織り上げました。[wait tVoice]
+[k]
+
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V270]
+そして、メインのお菓子はもちろん甘いショコラ！[r]……なのですが。[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V280]
+ブランケットにかかりきりだった私は、[r]肝心のショコラ作りを失念しておりました。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V290]
+そこへ[#颯爽:さっそう]と現れたのが……[twt 3.6][charaFace A 3]嗚呼、私のアイドル。[r]そう、えっちゃんです！[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout circleIn 1.5 1]
+[bgmStop BGM_EVENT_136 1.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[charaPut C 1]
+
+[scene 113300]
+
+[pictureFrame cut063_cinema]
+[wt 1.0]
+
+[wipein circleIn 1.5 1]
+[wait wipe]
+
+[bgm BGM_EVENT_138 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 0,-50]
+[wt 0.4]
+＠Ｘ・オルタ
+[tVoice ValVoice_504600 0_V300]
+夜分にすみません、小腹を空かせたアイドルです。[r]ギブミーお菓子。売店が開くまで待てません。[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout circleIn 1.5 1]
+[wait wipe]
+
+[charaPut C 2000,2500]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 105800]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 106000]
+[label lblConf2]
+
+[pictureFrame]
+[charaFadeout B 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 1.0]
+
+[wipein circleIn 1.5 1]
+[wait wipe]
+
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V310]
+そう言って上がりこんだ彼女は、今日はチョコ気分、[r]でも和風もいいですね、と的確な助言をくれたんです。[wait tVoice]
+[k]
+
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V320]
+そう言われますと、私も俄然、[r]やる気が湧き上がってくるもので。[wait tVoice]
+[k]
+
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V330]
+作っては食べ、食べては作る、[r]私と彼女のショコラなディスコ。[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V340]
+あれはもはや、一夜のレイヴと申せましょう。[wait tVoice]
+[k]
+
+？1：……たかられただけでは？
+？！
+
+[charaFace A 1]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V350]
+ふふふ。[r]求められるというのは、私にとってなによりのこと。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V360]
+そうして出来上がったのが、[r]この新作和菓子、抹茶生ショコラ大福。[wait tVoice]
+[k]
+
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V370]
+えっちゃんも太鼓判を押してくれた自信作です。[r]ブランケットと合わせ、どうぞお納めくださいまし。[wait tVoice]
+[k]
+
+？1：ありがとう！
+？！
+
+[bgmStop BGM_EVENT_138 2.0]
+[charaFace A 1]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V380]
+感謝のお言葉、謹んで頂戴いたします。[r]これからも、なにとぞよろしくお願いしますね。[wait tVoice]
+[k]
+
+[charaFace A 6]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V390]
+…………。[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_128 0.1]
+[charaFace A 8]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V400]
+ねぇ、マスＰさん。[wait tVoice]
+[k]
+
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V410]
+『渡り』の旅は、長く、苦しいもの。[r]アナタの万分の一にも及びませんが、私も存じています。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V420]
+ですが、どうか、どうか。[wait tVoice]
+[k]
+
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V430]
+アナタの旅の果てに、多くの愛と温もりと思い出が、[r]鶴には想像もつかぬ希望があることを、祈ります。[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V440]
+いえ……。[r]『きっとそうだ』と[line 3][wait tVoice]
+[k]
+
+＠ミス・クレーン
+[tVoice ValVoice_504600 0_V450]
+信じます。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_128 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

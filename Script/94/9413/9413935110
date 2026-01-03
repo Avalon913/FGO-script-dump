@@ -1,0 +1,355 @@
+
+＄94-13-93-51-1-0
+
+
+
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1010000 1 エリザベート]
+[charaSet B 4001000 1 メドゥーサ]
+[charaSet C 5043000 1 アスクレピオス]
+[charaSet D 3057000 1 ビショーネ]
+[charaSet E 1098314800 1 チビドラゴン]
+[charaSet F 1098313900 1 蛇竜人A]
+[charaSet G 1098312800 1 蛇竜人B]
+[charaSet H 1098312800 1 蛇竜人C]
+
+[charaDepth F 2]
+[charaDepth G 4]
+[charaDepth H 2]
+
+[charaSet I 3057000 1 ビショーネ2]
+[charaScale I 1.4]
+[charaSet J 5043000 1 アスクレピオス2]
+
+[sceneSet K 106600 1]
+[charaScale K 1.4]
+[sceneSet L 106600 1]
+[charaScale L 1.2]
+
+[charaSet M 98115000 1 エフェクト用1]
+
+[subCameraOn 1]
+[charaLayer J sub #A]
+[charaLayer L sub #A]
+
+[charaScale J 1.2]
+[charaScale L 1.2]
+
+[charaDepth J 3]
+[charaDepth L 2]
+
+[subCameraFilter #A maskEdge cut359_mask09 5 255,255,255,255 0]
+
+[charaTalk J,E]
+[charaFace J 0]
+[charaFadein J 0.1 -80,320]
+[charaFadein L 0.1 0,30]
+
+[scene 106600]
+
+[charaFadein K 0.1 -100,-240]
+[charaMove K 100,-240 20.0]
+
+[fadein black 1.0]
+[cueSe SE_23 23_ade922 1.0 0.5]
+[wait fade]
+
+[cueSeStop 23_ade922 4.0]
+[wt 3.0]
+[bgm BGM_MIZUGI_2024_1 0.1]
+[charaFadeout K 1.0]
+
+[wt 1.5]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+そうですよね、やっぱり情熱の赤！[r]ですよね！
+[k]
+
+[charaFace D 2]
+
+＠ビショーネ
+なんかパワフルになれそうですし……[r]エリちゃん先輩の色ですし！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+聞いた、[&子イヌ:子ジカ]？
+[k]
+
+＠エリザベート
+未だかつてこんなストレートに[r]リスペクトされることってあったかしら？
+[k]
+
+[charaFace A 0]
+
+＠エリザベート
+みんな[#私:アタシ]が最強のアイドルだからって[r]シャイになりすぎなのよ、ビショーネを見習うべきね！
+[k]
+
+[charaFace A 1]
+
+＠エリザベート
+ああ、この嬉しい気持ちを歌にしたいわ。
+[k]
+
+？1：後のお楽しみにとっておこうよ
+？2：溶岩洞窟は音響が悪いかもよ
+？！
+
+[charaFace A 0]
+
+＠エリザベート
+それもそうね？
+[k]
+
+＠エリザベート
+とりあえず今回の主役はビショーネだし、[r]それを食っちゃうのもよくないか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth G 1]
+[charaDepth H 3]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadeinFSL G 0.1 -220,0]
+[charaFadein F 0.1 0,0]
+[charaFadeinFSR H 0.1 380,0]
+
+＠F：蛇竜人
+つまり……姐さんが、[r]姐さんの先輩さんみたいな姿に？
+[k]
+
+[clear]
+
+[charaTalk G]
+[charaFace G 0]
+
+＠G：蛇竜人
+あの鎧着てくれる？
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+き、着ません！[r]あくまで色です色！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+[cueSe Battle bac32]
+[charaEffect C bit_talk_easy_spell_r]
+[wt 2.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaEffectDestroy C bit_talk_easy_spell_r]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.5]
+[cueSe SE_22 22_ad1179]
+[seVolume 22_ad1179 0 0.1]
+[charaEffectEdgeBlur E ADE0EE ADE0EE 4 5]
+[wt 2.0]
+
+[subRenderFadeinFSSideR #A 0.3 480,-330]
+[subRenderMoveFSSideR #A 450,-330 0.3]
+[wt 0.3]
+
+[charaFace J 0]
+
+＠アスクレピオス=spot[J,E]
+間に合わせだが、熱自体は防ぎ、魔力パターンの吸収は[r]妨げないような魔術フィルターを作った。
+[k]
+
+[messageOff]
+[seStop 22_ad1179 0.5]
+[subRenderFadeout #A 0.2]
+[charaFadeout E 0.2]
+[charaEffectEdgeBlurStop E]
+[wt 0.2]
+[charaEffectEdgeBlurDestroy E]
+[charaTalk on]
+[charaTalk D]
+[charaFace D 19]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+うわぁ、いたれりつくせりです！[r]ありがとうございます！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠チビドラゴン
+きゅぴー！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+礼を言うのは早い。[r]問題が二つある。
+[k]
+
+[charaFace C 0]
+
+＠アスクレピオス
+これはあくまで間に合わせのものだ。[r]術式維持のための魔力は都度補給する必要がある。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+それは私たちが手伝えばいいでしょう。[r]二つ目の問題は？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+魔力パターンを吸収しようとする以上、[r]フィードバックがおまえにも来ることが予想される。
+[k]
+
+＠アスクレピオス
+痛みや苦しみがあるかもしれんが、耐えろ。
+[k]
+
+[charaFace C 1]
+
+＠アスクレピオス
+……もし何かあれば僕が治してやる。[r]それだけは保証しよう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+大丈夫です、やれます！[r]これだけお膳立てしてもらったんですから。
+[k]
+
+[charaFace D 9]
+
+＠ビショーネ
+わたしは今、[r]かつてなく気合いが入っています！
+[k]
+
+？1：みんなでフォローするから
+？2：無理しすぎない感じで頑張って！
+？！
+
+[charaFace D 1]
+[bgmStop BGM_MIZUGI_2024_1 1.0]
+
+＠ビショーネ
+はい！[r]それでは[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth I 6]
+[charaDepth K 5]
+[charaDepth D 4]
+[charaDepth E 3]
+
+[charaFace I 9]
+[charaFadein I 0.4 0,20]
+[charaFadein K 0.4 0,-300]
+[wt 0.4]
+[charaFadeout D 0.1]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+[fowardEffect bit_talk_41_fs 0,0]
+[bgm BGM_BATTLE_113 0.1]
+＠ビショーネ
+わたしが立派なドラゴンになるための第一歩！[r]行きます！
+[k]
+
+[messageOff]
+[charaFadeout I 0.4]
+[charaFadeout K 0.4]
+[fowardEffectDestroy bit_talk_41_fs]
+[wt 0.5]
+
+＠チビドラゴン
+きゅぴー！
+[k]
+
+[messageOff]
+[se adm21]
+[charaMoveEase E 0,30 0.5 easeOutCubic]
+[wt 0.4]
+[charaMove E 0,-200 0.4]
+[charaFadeout E 0.4]
+
+
+
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_113 0.4]
+[wait fade]
+[se ad130]
+[wt 1.5]
+
+[soundStopAllEnd]
+[end]
+

@@ -1,0 +1,1138 @@
+
+＄91-50-30-02-1-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 5030001 1 シェヘラザード]
+[charaSet B 5004001 1 ナーサリー・ライム]
+[charaSet C 5042000 1 紫式部]
+[charaSet D 98006200 1 雑魚エネミー煙状]
+
+
+[charaSet F 98115000 1 エフェクト用ダミー]
+[imageSet G back10000 1 1]
+[charaScale G 1.05]
+
+[sceneSet H 109100 1 1]
+[charaScale H 1.4]
+
+[charaSet I 98115000 1 エフェクト用ダミー2]
+
+
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad12]
+[effect bit_talk_07_fs]
+[wt 4.5]
+
+[fadeout white 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_07_fs]
+[wt 1.3]
+
+
+[scene 163100]
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+[scene 163200]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+[wt 1.5]
+
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+[scene 143100]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+[wt 1.5]
+
+
+[bgm BGM_MAP_6 0.1]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[charaSet E 1098124510 1 ダ・ヴィンチ]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+さて、とりあえず目的地の地下には辿り着けたね。
+[k]
+
+＠ダ・ヴィンチ
+ここで改めて今回のミッションのおさらいを[r]しておこうか。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠ナーサリー・ライム
+はーい！
+[k]
+
+？1：お願いしまーす！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+そこはヨーロッパのとある街に発生した、[r]微小も微小な特異点。
+[k]
+
+＠ダ・ヴィンチ
+聖杯の欠片レベルのものが原因となって[r]奇跡的に維持されている。
+[k]
+
+[charaFace E 8]
+
+＠ダ・ヴィンチ
+調査の結果、その所有者はこの地にいた[r]唯一の魔術師だと判明した。
+[k]
+
+＠ダ・ヴィンチ
+だけどビックリ、その魔術師は少し前に[r]病死しているらしいので[line 3]
+[k]
+
+＠ダ・ヴィンチ
+おそらく、その魔術師の遺した思念や[r]代替人形が遺志を引き継いで動いているんだろう。
+[k]
+
+＠ダ・ヴィンチ
+よって我々がすべきは、[r]その主不在の魔術師の工房に潜入し、
+[k]
+
+＠ダ・ヴィンチ
+すみやかに聖杯の欠片的なものを回収すること、[r]というわけさ！
+[k]
+
+[charaFace E 16]
+
+＠ダ・ヴィンチ
+まあ、この規模の[#歪:ゆが]みなら[r]ほぼ確実に自然消滅するんだけど……
+[k]
+
+＠ダ・ヴィンチ
+念には念を入れて、だ。[r]幸い、今は手が空いていることだしね。[bgmStop BGM_MAP_6 1.3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+＠シェヘラザード
+念には念を入れる……いい言葉です。
+[k]
+
+
+＠シェヘラザード
+万一を考えての安全対策は、[r]いくらしてもしすぎるという事はありません。
+[k]
+
+＠シェヘラザード
+たとえばお掃除の際には必ずガスマスクを。
+[k]
+
+[charaFace A 4]
+
+＠シェヘラザード
+自分の知らない数分前に、
+[k]
+
+＠シェヘラザード
+他の方がまぜるな危険の別の洗剤で[r]そこを掃除していらっしゃるかもしれませんので。
+[k]
+
+[charaFace A 6]
+
+＠シェヘラザード
+お料理の際には全身鎧がベストです。包丁の刃先が[r]折れて跳ね飛べば、それはもはや致命の[#鏃:やじり]と同じ。
+[k]
+
+＠シェヘラザード
+紅閻魔先生にもお料理教室の講習内容に[r]入れておいてほしいものです。
+[k]
+
+[charaFace A 2]
+
+＠シェヘラザード
+何かが起こっては……[r]死んでしまうのかもしれないのですから……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+シェヘラザードは心配性ね。
+[k]
+
+＠ナーサリー・ライム
+コマドリみたいにならないように、[r]コマドリみたいに怯えてる。
+[k]
+
+＠ナーサリー・ライム
+いつものことだけれど。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠紫式部
+ですが、安全対策は大切です。
+[k]
+
+＠紫式部
+少しの手間暇で確実性が手に入るのですから、[r]面倒がらずにやっておくべきでしょう。
+[k]
+
+[charaFace C 4]
+
+＠紫式部
+全身鎧などは、その……[r]いささかやりすぎかと思いますが……
+[k]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaFace C 0]
+
+＠紫式部
+ところで、今回の同行サーヴァントを[r]なぜ私たちに？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_147 0.1]
+
+[charaPut F 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+うん。ここの元凶の魔術師はどうも『書物』や[r]『物語』に関係する研究が専門だったらしくてね。
+[k]
+
+＠ダ・ヴィンチ
+それならキミたちが適任だろう？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+
+[charaTalk off]
+
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+物語の作り手にしてうちでは大図書館の主、[r]紫式部。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+物語、童謡の概念が形となった子供たちの英雄、[r]ナーサリー・ライム。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+そして夜話の語り手、千一夜を乗り越えた[r]シェヘラザード。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaPut F 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+今回の規模の特異点修復には[r]やりすぎなくらいさ。
+[k]
+
+＠ダ・ヴィンチ
+三騎ともが、[r]書物や物語のプロフェッショナルだからね。
+[k]
+
+？1：頼りにしています
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+はい、選ばれた以上は[r]頑張らせていただくつもりですが……。
+[k]
+
+[charaFace A 4]
+
+＠シェヘラザード
+大丈夫なのでしょうか。
+[k]
+
+＠シェヘラザード
+もっと前衛を張ることのできる方が[r]いらっしゃったほうがいいのでは……。
+[k]
+
+？2：（キャスターばかりだけど平気かな）
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+今、キャスターばかりだけど平気かな、と[r]お思いになりましたねマスター！
+[k]
+
+[charaFace A 6]
+
+＠シェヘラザード
+わかります。[r]なぜなら私もそう思うからです。
+[k]
+
+[charaFace A 2]
+
+＠シェヘラザード
+たとえば汗だくの筋肉系が猛然と突進してきたら、[r]私たちはもう、なんというか、もう！
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+懸念はわかるけど、ここにいる脅威は[r]せいぜいが魔本の類だと思われる。
+[k]
+
+＠ダ・ヴィンチ
+剣や槍みたいな物理的攻撃はないだろうし、
+[k]
+
+＠ダ・ヴィンチ
+仮にあってもそこはシェヘラザードのジンなどで[r]対抗できるレベルのはずさ。
+[k]
+
+[branch lblConf]
+[label lblNotClear]
+[charaSet E 98111500 1 ダ・ヴィンチ]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-90]
+
+＠ダ・ヴィンチ
+さて、とりあえず目的地の地下には辿り着けたね。
+[k]
+
+＠ダ・ヴィンチ
+ここで改めて今回のミッションのおさらいを[r]しておこうか。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠ナーサリー・ライム
+はーい！
+[k]
+
+？1：お願いしまーす！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-90]
+
+＠ダ・ヴィンチ
+そこはヨーロッパのとある街に発生した、[r]微小も微小な特異点。
+[k]
+
+＠ダ・ヴィンチ
+聖杯の欠片レベルのものが原因となって[r]奇跡的に維持されている。
+[k]
+
+[charaFace E 0]
+
+＠ダ・ヴィンチ
+調査の結果、その所有者はこの地にいた[r]唯一の魔術師だと判明した。
+[k]
+
+＠ダ・ヴィンチ
+だけどビックリ、その魔術師は少し前に[r]病死しているらしいので[line 3]
+[k]
+
+＠ダ・ヴィンチ
+おそらく、その魔術師の遺した思念や[r]代替人形が遺志を引き継いで動いているんだろう。
+[k]
+
+＠ダ・ヴィンチ
+よって我々がすべきは、[r]その主不在の魔術師の工房に潜入し、
+[k]
+
+＠ダ・ヴィンチ
+すみやかに聖杯の欠片的なものを回収すること、[r]というわけさ！
+[k]
+
+[charaFace E 1]
+
+＠ダ・ヴィンチ
+まあ、この規模の[#歪:ゆが]みなら[r]ほぼ確実に自然消滅するんだけど……
+[k]
+
+＠ダ・ヴィンチ
+念には念を入れて、だ。[r]幸い、今は手が空いていることだしね。[bgmStop BGM_MAP_6 1.3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+＠シェヘラザード
+念には念を入れる……いい言葉です。
+[k]
+
+
+＠シェヘラザード
+万一を考えての安全対策は、[r]いくらしてもしすぎるという事はありません。
+[k]
+
+＠シェヘラザード
+たとえばお掃除の際には必ずガスマスクを。
+[k]
+
+[charaFace A 4]
+
+＠シェヘラザード
+自分の知らない数分前に、
+[k]
+
+＠シェヘラザード
+他の方がまぜるな危険の別の洗剤で[r]そこを掃除していらっしゃるかもしれませんので。
+[k]
+
+[charaFace A 6]
+
+＠シェヘラザード
+お料理の際には全身鎧がベストです。包丁の刃先が[r]折れて跳ね飛べば、それはもはや致命の[#鏃:やじり]と同じ。
+[k]
+
+＠シェヘラザード
+紅閻魔先生にもお料理教室の講習内容に[r]入れておいてほしいものです。
+[k]
+
+[charaFace A 2]
+
+＠シェヘラザード
+何かが起こっては……[r]死んでしまうのかもしれないのですから……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+シェヘラザードは心配性ね。
+[k]
+
+＠ナーサリー・ライム
+コマドリみたいにならないように、[r]コマドリみたいに怯えてる。
+[k]
+
+＠ナーサリー・ライム
+いつものことだけれど。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠紫式部
+ですが、安全対策は大切です。
+[k]
+
+＠紫式部
+少しの手間暇で確実性が手に入るのですから、[r]面倒がらずにやっておくべきでしょう。
+[k]
+
+[charaFace C 4]
+
+＠紫式部
+全身鎧などは、その……[r]いささかやりすぎかと思いますが……
+[k]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaFace C 0]
+
+＠紫式部
+ところで、今回の同行サーヴァントを[r]なぜ私たちに？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_147 0.1]
+
+[charaPut F 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-90]
+
+＠ダ・ヴィンチ
+うん。ここの元凶の魔術師はどうも『書物』や[r]『物語』に関係する研究が専門だったらしくてね。
+[k]
+
+＠ダ・ヴィンチ
+それならキミたちが適任だろう？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+
+[charaTalk off]
+
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+物語の作り手にしてうちでは大図書館の主、[r]紫式部。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+物語、童謡の概念が形となった子供たちの英雄、[r]ナーサリー・ライム。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+そして夜話の語り手、千一夜を乗り越えた[r]シェヘラザード。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaPut F 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-90]
+
+＠ダ・ヴィンチ
+今回の規模の特異点修復には[r]やりすぎなくらいさ。
+[k]
+
+＠ダ・ヴィンチ
+三騎ともが、[r]書物や物語のプロフェッショナルだからね。
+[k]
+
+？1：頼りにしています
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+はい、選ばれた以上は[r]頑張らせていただくつもりですが……。
+[k]
+
+[charaFace A 4]
+
+＠シェヘラザード
+大丈夫なのでしょうか。
+[k]
+
+＠シェヘラザード
+もっと前衛を張ることのできる方が[r]いらっしゃったほうがいいのでは……。
+[k]
+
+？2：（キャスターばかりだけど平気かな）
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+今、キャスターばかりだけど平気かな、と[r]お思いになりましたねマスター！
+[k]
+
+[charaFace A 6]
+
+＠シェヘラザード
+わかります。[r]なぜなら私もそう思うからです。
+[k]
+
+[charaFace A 2]
+
+＠シェヘラザード
+たとえば汗だくの筋肉系が猛然と突進してきたら、[r]私たちはもう、なんというか、もう！
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-90]
+
+＠ダ・ヴィンチ
+懸念はわかるけど、ここにいる脅威は[r]せいぜいが魔本の類だと思われる。
+[k]
+
+＠ダ・ヴィンチ
+剣や槍みたいな物理的攻撃はないだろうし、
+[k]
+
+＠ダ・ヴィンチ
+仮にあってもそこはシェヘラザードのジンなどで[r]対抗できるレベルのはずさ。
+[k]
+
+[label lblConf]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+そう、あなたはたくさんの[#物語:おはなし]を形にできるのだもの。
+[k]
+
+＠ナーサリー・ライム
+わくわく始まる朗読会に、ぷるぷる震える子供はいない。[r]何も怖ろしいことなんてないと思うわ。
+[k]
+
+＠ナーサリー・ライム
+それに、わたしだっているのだし。[r]結構頑丈なのよ、わたし。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+まあ。ナーサリーさんを盾になどする気は[r]さすがにありませんが……。
+[k]
+
+＠シェヘラザード
+そのお気持ちは、ありがたく。
+[k]
+
+[charaFace A 0]
+
+＠シェヘラザード
+そうですね。大丈夫だと判断されたからこその、[r]この三人なのでしょうし。
+[k]
+
+＠シェヘラザード
+おふたりのことは信頼いたしております。
+[k]
+
+＠シェヘラザード
+ナーサリーさんがめくる[#頁:ページ]は[r]素敵で不思議で頼りがいのあるシーンばかり。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+紫式部さんの源氏物語も、[r]勿論読ませていただきました。
+[k]
+
+＠シェヘラザード
+素晴らしいお話です。心理描写が非常に巧みで、[r]とても感情移入してしまって……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠紫式部
+あ、ありがとうございます。[r]あわわわ……。
+[k]
+
+＠紫式部
+ええと、こちらこそ、シェヘラザード様の[r]千夜一夜物語は何度も読み返しております。
+[k]
+
+＠紫式部
+カルデアでの読み聞かせ会も、[r]いつも楽しみで……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+私の、というのは少し語弊があるのですが……[r]ありがとうございます。
+[k]
+
+？1：とにかく、みんなで力を合わせて頑張ろう！
+？！
+
+＠シェヘラザード
+そうですね。粛々と任務をこなしていきましょう。[r]そしてできるだけ早く帰りましょう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠紫式部
+ええと、順路はこちらのようですね。[r]扉を開けますよ。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_147 1.5]
+[wipeout leftToRight 1.0 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 1.0]
+
+[se ad91]
+
+[scene 109100]
+[charaFadein H 0.1 100,-200]
+[wt 1.5]
+
+[charaMove H -100,-200 8.0]
+[wt 0.5]
+
+[wipein rightToLeft 1.0 1]
+[seStop ad91 1.0]
+[wait wipe]
+
+[wt 3.0]
+
+[charaFadeout H 1.5]
+[wt 2.0]
+[bgm BGM_MAP_57 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+まあ、こんなところに立派な図書室が。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠紫式部
+なかなか興味深い蔵書ですね。[r]ただ……。
+[k]
+
+[charaFace C 4]
+
+＠紫式部
+先程までの、水たまりやコケが目立つ通路に[r]嫌な予感を覚えます。
+[k]
+
+[charaFace C 5]
+
+＠紫式部
+対策は大丈夫でしょうか？[r]湿気、カビ、虫食い、ネズミ……
+[k]
+
+＠紫式部
+本には、とかく危険がいっぱいですので！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+確かに嫌ね、とっても嫌ね。[r]そんな言葉、聞くだけで背筋がぞくぞく震えちゃう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+書の研究をしていた魔術師と言いますから、さすがに[r]そのあたりは対策しているのではないでしょうか……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠紫式部
+あっ！　いいえ、駄目です！
+[k]
+
+[charaFace C 5]
+
+＠紫式部
+あそこの床に[#罅:ひび]割れがありますし、[r]何やら書架がひしゃげたように[#歪:ゆが]んでいる部分も。
+[k]
+
+＠紫式部
+それだけでなく、[r]あっちの天井からは水がぽたぽたと……。
+[k]
+
+＠紫式部
+日々の手入れの不足……。[r]書庫としての有り様は不完全なようです。
+[k]
+
+＠紫式部
+いけません、実にいけません。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+いけないわ、実にいけないのだわ。
+[k]
+
+＠ナーサリー・ライム
+こんなところでお茶会なんて、ハートの女王もおかんむり。[r]素敵なお客も逃げ出しちゃう！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth G 1]
+
+[charaPut G 1]
+[charaFadeTime G 0.2 0.5]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+（……気のせいでしょうか）
+[k]
+
+＠シェヘラザード
+（天井の水漏れも、床の傷も。手入れ不足というよりは、[bgmStop BGM_MAP_57 1.5][r]　どこか新しいもののように見えなくも……）
+[k]
+
+[charaFadeout G 0.2]
+[wt 0.2]
+
+[charaTalk depthOn]
+[charaFace A 2]
+
+＠シェヘラザード
+っ！？[r]マスター、下がって……！
+[k]
+
+＠シェヘラザード
+ランプのジン！[bgm BGM_EVENT_80 0.1]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaPut I 0,0]
+[charaEffect I bit_talk_smoke_lamp 0,0]
+[se ade310]
+[wt 2.0]
+
+[se bac31]
+[effect bit_talk_magicbullet]
+[wt 0.7]
+[se bac26]
+[effect bit_talk_14]
+[wt 0.3]
+[flashin once 0.2 0.1 FFFFFFAF FFFFFF00]
+[wt 1.5]
+[charaPutFSR I 2000,2000]
+[charaEffectStop I bit_talk_smoke_lamp]
+[wt 0.1]
+
+[se ade166]
+[charaTalk D]
+[charaFace D 0]
+[charaFadeinFSL D 0.4 -80,0]
+[wt 0.1]
+[charaMove D 0,0 1.0]
+[seStop ade166 1.0]
+[wt 1.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠紫式部
+エネミー……魔本！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+ごめんなさい、反応が遅れてしまったわ。
+[k]
+
+[charaFace B 1]
+
+＠ナーサリー・ライム
+シェヘラザード、やっぱり頼りになるのね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+いいえ、奇襲は作戦中に死にやすいポイント[r]堂々のランキング第１位。
+[k]
+
+＠シェヘラザード
+自分のために気を張っていたというだけです。
+[k]
+
+[charaFace A 5]
+
+＠シェヘラザード
+ともあれ、この魔本たちは……[r]ここの魔術師が遺していたものでしょうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠紫式部
+そのようですね。[r]書棚に並ぶ普通の本だけでなく、
+[k]
+
+＠紫式部
+魔本の管理も怠っていたようです。
+[k]
+
+？1：代わりに片付けてあげるしかないね
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+無制御状態で暴走している模様です。[r]襲ってくるのであれば、仕方ありませんね。
+[k]
+
+[charaFace A 2]
+
+＠シェヘラザード
+……死なない程度に、頑張りましょう！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

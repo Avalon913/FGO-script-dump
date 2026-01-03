@@ -1,0 +1,157 @@
+
+＄94-08-25-15-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 6048001 1 ロクスタ]
+[charaSet B 1057000 1 セタンタ]
+[charaSet C 1098261000 1 ドラコー]
+
+[charaSet D 98104300 1 子供1]
+[charaSet E 98104300 1 子供2]
+[charaSet F 98104300 1 子供3]
+
+[charaSet L 33001001 1 エフェクト用]
+[charaScale L 1.8]
+
+[effect bit_talk_white_fog01 0,-300]
+
+[charaTalk depthOff]
+
+[charaDepth D 6]
+[charaDepth E 5]
+[charaDepth F 4]
+
+[scene 184500]
+[bgm BGM_EVENT_80 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaFace E 0]
+[charaFadeinFSL E 0.1 -320,0]
+[charaFace F 0]
+[charaFadeinFSR F 0.1 320,0]
+[wt 0.4]
+[se ad42]
+[charaSpecialEffect D erasure 1 1.0]
+[charaSpecialEffect E erasure 1 1.0]
+[charaSpecialEffect F erasure 1 1.0]
+[wt 1.0]
+[bgmStop BGM_EVENT_80 1.5]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ドラコー
+[line 3]不快だ。消えろ。
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+
+＠ロクスタ
+ひぃぃ……何だったんです？[r]今のサドっ子が呪って怨みますみたいなのは？
+[k]
+
+？1：……ジャックの仕業だ
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+……ジャック・ザ・リッパー。[r]今のが、か。
+[k]
+
+[charaFace B 8]
+
+＠セタンタ
+……そっか。[r]カルデアじゃないのはあんな感じなんだな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ドラコー
+いずれ本体も襲いかかってくるぞ。[r]だが……これは……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut L 0,0]
+[charaEffect L bit_talk_debuff]
+[se bas13]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 27]
+[charaFadein A 0.1 1]
+
+＠ロクスタ
+うぅ……この状況で襲われるのは……[r]ヤバ過ぎるですぅ……
+[k]
+
+？1：……建物の中なら
+？2：霧は入ってこないかも
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ドラコー
+……元の第四特異点ならば、そのとおりだが。[r]今回もそうであると願いたいな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+安全を確保しながら、[r]速攻で地下のアングルボダを目指す[line 3]
+[k]
+
+＠セタンタ
+こんなとこか。[wt 0.5][charaFace B 1][r]まったく……苦難続きで飽きない旅だぜ！
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_5 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

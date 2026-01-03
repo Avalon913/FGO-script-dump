@@ -1,0 +1,249 @@
+
+＄94-08-79-12-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1007400 1 ガウェイン]
+[charaSet B 4050001 1 鈴鹿御前]
+[charaSet C 1054001 1 ガレス]
+
+[charaSet S 1054001 1 エフェクト用]
+[sceneSet T 10000 1]
+[charaScale T 1.1]
+[sceneSet U 110100 1]
+[sceneSet V 197700 1]
+
+[scene 197600]
+[bgm BGM_MIZUGIKENGOU 1.5 0.7]
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.5]
+[wipeout leftToRight 1.0 1]
+[wait wipe]
+[scene 110100]
+[charaScale U 1.2]
+[charaFadein U 0.1 -20,-250]
+[charaEffect S bit_talk_lens_flare_fs 0,0]
+[wt 0.5]
+[fadeout black 0.1]
+[wait fade]
+[wipein rightToLeft 0.1 1]
+[wait wipe]
+[charaMove U 20,-250 6.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 4.0]
+[wipeout rectangleStripDownToUp 0.7 1]
+[wait wipe]
+[charaFadeout U 0.1]
+[charaScale V 1.2]
+[charaFadein V 0.1 20,-200]
+[charaEffectDestroy S bit_talk_lens_flare_fs]
+[scene 197700 1.0]
+[wt 0.7]
+[charaMove V -20,-200 6.0]
+[bgm BGM_MIZUGIKENGOU 1.0 1.0]
+[se ad218 0]
+[seVolume ad218 0.7 0.4]
+[wipein rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[wt 3.0]
+[charaFadeout V 1.0]
+[seStop ad218 3.5]
+[wt 1.5]
+
+？1：すごい高級ホテル
+？2：真のプライベートビーチを見た
+
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ガウェイン
+そうでしたね。ワイキキのホテルは都市部にあるので、[r]ビーチには様々な方が[#訪:おとず]れます。
+[k]
+
+＠ガウェイン
+ですがブリスティンはこのように、[r]都市部から独立したホテル。
+[k]
+
+＠ガウェイン
+ビーチは完全に宿泊客用の[r]プライベートビーチになっています。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠鈴鹿御前
+その宿泊客もマックスで50人しか受け入れないん[r]だから、贅沢な話だよねー！
+[k]
+
+[charaFace B 11]
+
+＠鈴鹿御前
+人の集まるワイキキのビーチもいいけど、[r]こういう会員制のビーチもいいわ～。
+[k]
+
+＠鈴鹿御前
+シミュレーターの疑似体験も大したものだけど、[r]この全方位リアルな開放感はマネできないっしょ。
+[k]
+
+[charaFace B 32]
+
+＠鈴鹿御前
+誰が建てたか知らないけど感謝しかないわ～。[r]私、夏は毎年ここに来るわ～。
+[k]
+
+？1：？　誰が建てたか知らないんだ？
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠ガウェイン
+いえ、それは、
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[wt 0.1]
+
+[se ad133 0.1]
+[seVolume ad133 0.7 1.0]
+[wt 1.2]
+
+[seStop ad133 0.4]
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠ガレス
+あー！　マスターだ！[r]こんにちは、ガレスです！
+[k]
+
+[charaFace C 0]
+
+＠ガレス
+ところでいま、ホテルの話していました？[r]誰が建てたのかって。
+[k]
+
+＠ガレス
+それ、私も気になっていたんです。
+[k]
+
+[charaFace C 6]
+
+＠ガレス
+レイシフトする前にモードレッドと一緒に招待状を[r]もらったんですけど、誰からなのか分からなくて。
+[k]
+
+＠ガレス
+こんなに素敵なホテルを使わせてもらっているのに、[r]まだお礼を言えていないんです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth A 2]
+[charaDepth T 1]
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+[charaFadeTime T 0.2 0.5]
+
+＠ガウェイン
+（……気づいていなかったのか。[r]　まあ、ガレスらしいと言えばらしいか……）
+[k]
+
+＠ガウェイン
+（ここは言わぬが花ですね。ガヘリスばかりか[r]　アグラヴェインまでいたら隠しようがありませんが）
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[charaFadeout T 0.2]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.7]
+
+？1：こんにちは、ガレス！
+
+[charaFace C 7]
+
+＠ガレス
+元気いっぱいの挨拶、ありがとうございます。
+[k]
+
+＠ガレス
+やっぱり、ここのビーチ素敵すぎて[r]テンションあがっちゃいますよね！
+[k]
+
+？2：モードレッドは断ったんだ
+
+[charaFace C 1]
+
+＠ガレス
+はい。ジキル殿ひとりに任せられるかって、[r]ワイキキのホテルに向かいました。
+[k]
+
+？！
+
+[bgmStop BGM_MIZUGIKENGOU 1.5]
+
+[charaFace C 5]
+
+＠ガレス
+と、すみません、今は緊急事態なのでした！[r]皆様、手伝っていただけますか？
+[k]
+
+＠ガレス
+浜辺に今まで見た事のない、[r]大量の野獣が押し寄せてきているんです！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_89 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠鈴鹿御前
+大量の野獣～～？[r]ルルハワ名物、ジャイアントチキンじゃなくて？
+[k]
+
+[charaFace B 6]
+
+＠鈴鹿御前
+ま、いっか、ちゃちゃっと片付けるっしょ！[r]ガウェち、ガレス、ランサー系はよろしくぅ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_89 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

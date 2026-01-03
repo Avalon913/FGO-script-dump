@@ -1,0 +1,995 @@
+
+＄94-13-93-16-1-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098313600 1 ？？？]
+[charaFilter A silhouette 00000080]
+[charaSet B 1062001 1 黒姫]
+[charaSet C 1062001 1 黒姫（シルエット）]
+[charaFilter C silhouette 00000080]
+[charaSet D 1062002 1 黒姫_第三（シルエット）]
+[charaFilter D silhouette 00000080]
+[charaSet E 1062000 1 黒姫_第一（シルエット）]
+[charaFilter E silhouette 00000080]
+[charaSet F 1098314200 1 おみぃさん]
+[charaSet G 5043000 1 アスクレピオス]
+[charaSet H 4001000 1 メドゥーサ]
+[charaSet I 3057001 1 ビショーネ]
+
+[ifClear 60139307]
+[charaSet K 1098315100 1 チビーネ]
+[flag rbody_1 true]
+
+[ifClear 60139308]
+[charaSet K 1098315000 1 チビーネ]
+[flag rbody_2 true]
+
+[ifClear 60139309]
+[charaSet K 1098314900 1 チビーネ]
+[flag rbody_3 true]
+
+[ifClear 60139310]
+[charaSet K 1098316600 1 チビーネ]
+[flag bbody_1 true]
+
+[ifClear 60139311]
+[charaSet K 1098316700 1 チビーネ]
+[flag bbody_2 true]
+
+[ifClear 60139312]
+[charaSet K 1098316800 1 チビーネ]
+[flag bbody_3 true]
+
+[ifClear 60139313]
+[charaSet K 1098317000 1 チビーネ]
+[flag gbody_1 true]
+
+[ifClear 60139314]
+[charaSet K 1098317100 1 チビーネ]
+[flag gbody_2 true]
+
+[ifClear 60139315]
+[charaSet K 1098317200 1 チビーネ]
+[flag gbody_3 true]
+
+[else]
+[charaSet K 1098315100 1 チビーネ]
+[flag rbody_1 true]
+
+[endIf]
+[ifClear 60139319]
+[charaSet J 1098317600 1 ブレス_炎_重]
+[flag breath_f1 true]
+
+[ifClear 60139320]
+[charaSet J 1098317610 1 ブレス_炎_中]
+[flag breath_f2 true]
+
+[ifClear 60139321]
+[charaSet J 1098317620 1 ブレス_炎_軽]
+[flag breath_f3 true]
+
+
+[ifClear 60139322]
+[charaSet J 1098317700 1 ブレス_氷_重]
+[flag breath_i1 true]
+
+[ifClear 60139323]
+[charaSet J 1098317710 1 ブレス_氷_中]
+[flag breath_i2 true]
+
+[ifClear 60139324]
+[charaSet J 1098317720 1 ブレス_氷_軽]
+[flag breath_i3 true]
+
+
+[ifClear 60139325]
+[charaSet J 1098317800 1 ブレス_毒_重]
+[flag breath_p1 true]
+
+[ifClear 60139326]
+[charaSet J 1098317810 1 ブレス_毒_中]
+[flag breath_p2 true]
+
+[ifClear 60139327]
+[charaSet J 1098317820 1 ブレス_毒_軽]
+[flag breath_p3 true]
+
+
+[else]
+[charaSet J 1098317600 1 ブレス_炎_重]
+[flag breath_f1 true]
+
+[endIf]
+
+[charaSet L 1098314020 1 蛇竜人]
+[charaSet M 1010000 1 エリザベート]
+
+[sceneSet N 10000 1]
+[charaScale N 1.05]
+[sceneSet O 203200 1]
+[sceneSet P 240800 1]
+[sceneSet Q 106200 1]
+
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用2]
+[charaSet U 98115000 1 エフェクト用3]
+[charaSet V 98115000 1 エフェクト用4]
+[charaSet W 98115000 1 エフェクト用5]
+
+[imageSet X back10000 1 1]
+[charaScale X 1.05]
+[imageSet Y back10000 1 1]
+[charaScale Y 1.05]
+
+[cameraMove 0 0,0 1.01]
+
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+[charaEffect S bit_sepia01_depth_fs]
+[charaEffect T bit_sepia01_depth_fs]
+
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_142 0.1]
+
+[charaTalk off]
+＠
+私は蛇を愛しています。[r]私は蛇を憎んでいます。
+[k]
+
+＠
+[#私はどちらでもある私です]。
+[k]
+
+[messageOff]
+[fadeout black 0.2]
+[wait fade]
+
+[scene 240700]
+
+[charaPut S 1]
+
+[subCameraOn 3]
+[charaLayer T sub #A]
+[charaLayer D sub #A]
+[charaLayer O sub #A]
+
+[charaLayer U sub #B]
+[charaLayer A sub #B]
+[charaLayer N sub #B]
+
+[charaLayer X sub #C]
+[charaLayer Y sub #C]
+
+[subCameraFilter #A maskEdge cut359_mask25 5 136,90,16,255]
+[subCameraFilter #B normal]
+[subCameraFilter #C through]
+
+[subRenderScale #C 1.01]
+
+[subRenderDepth #A 2]
+[subRenderDepth #B 3]
+[subRenderDepth #C 4]
+
+[charaTalk depthOff]
+[charaDepth O 2]
+[charaDepth D 3]
+[charaDepth T 4]
+
+[charaPut T -250,225]
+[charaFadein O 0 -250,50]
+
+[charaDepth N 2]
+[charaDepth U 3]
+[charaDepth A 4]
+[subRenderScale #B 1.02]
+
+[charaPut U 1]
+[charaEffect U bit_talk_suspicious_moya]
+
+[charaFace A 0]
+[charaFadein A 0 0,-50]
+[charaFadein N 0 0,0]
+
+[charaFadein X 0.1 0,756]
+[charaFadein Y 0.1 0,-756]
+
+[subRenderFadein #C 0 0,0]
+
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.2]
+
+[charaFace C 0]
+[charaFadein C 0.4 0,-50]
+[wt 0.7]
+
+＠
+真摯な求婚を受けたことを、覚えています。[r]見目麗しい[#体躯:たいく]。嘘偽りのない瞳。
+[k]
+
+＠
+けれど父は[#無理難題:   む り  な ん だ い]を出して、[r]彼はそれを懸命に乗り越えて。
+[k]
+
+＠
+それでも父はその約束を[#反故:ほ　ご]にして、[r]彼は怒って地震と洪水をもたらしました。
+[k]
+
+
+
+[messageOff]
+[subRenderFadein #A 1.0 675,-225]
+[scene 10000 1.0]
+[charaFadeout C 1.0]
+[wt 1.4]
+
+[charaFace D 0]
+[charaFadeinFSR D 0.4 -410,175]
+[wt 0.8]
+
+＠
+私が城を捨てて彼のところに行くのに、[r]迷いはありませんでした。
+[k]
+
+＠
+父の非道に対する償いであるのはそうでしたが。[r]それ以上に、そうしたかった、のです。
+[k]
+
+＠
+真摯な[#彼:蛇]に、[r]嫁ぎたかったのです。
+[k]
+
+＠
+[line 3]でも。
+[k]
+
+＠
+恐ろしい求婚を受けたことも、覚えています。
+[k]
+
+
+[messageOff]
+[charaDepth P 2]
+[charaDepth Q 3]
+[charaDepth E 4]
+[charaDepth S 9]
+
+[charaFadeinFSL P 1.0 -256,-200]
+[wt 1.4]
+
+＠
+夜な夜な城に忍び込もうとするあやしき影。[r]おそろしき息遣い。情欲に濡れた瞳。
+[k]
+
+＠
+父が宝刀で追い払っても、[r]城下には次々と不幸が訪れました。
+[k]
+
+＠
+黒姫を差し出さぬ限りおまえたちに未来はない、[r]と蛇はのたまいました。
+[k]
+
+[messageOff]
+[charaFace E 0]
+[charaFadeinFSL E 0.4 -256,-50]
+[wt 1.6]
+
+[messageOff]
+[charaFadeinFSL Q 1.0 -256,-200]
+[wt 1.4]
+
+＠
+私が宝刀を携えて蛇退治の旅に出ることに、[r]迷いはありませんでした。
+[k]
+
+＠
+権現様のお導きがあったのは確かでしたが、[r]それ以上に、そうしたかった、のです。
+[k]
+
+＠
+土地を治める武家の娘として、[r]民を脅かす蛇を許すわけにはいかなかったのです。
+[k]
+
+[messageOff]
+[se ad932]
+[fadeout white 0.1]
+[wait fade]
+
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+
+[cameraFilter gray]
+[subCameraFilter #A maskEdge&gray cut359_mask25 5 136,90,16,255]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.8]
+[seStop ad932 0.1]
+
+＠
+[line 3]ああ。[r][line 3]ああ。
+[k]
+
+＠
+それはどちらも私。
+[k]
+
+＠
+いかなる上も下も、大も小も、優も劣も、[r]正も誤も、善も悪もなく。
+[k]
+
+＠
+真に[#どちらでもある]のが、[r]ここにいる黒姫という[#存在:も　の]。
+[k]
+
+＠
+私は蛇を[#愛:害]する。[r]私は蛇を[#害:愛]する。
+[k]
+
+＠
+ああ。
+[k]
+
+[bgmStop BGM_EVENT_142 1.5]
+
+＠
+[line 3]蛇よ！[r]いと[#愛しき:恐 ろ し き]ものよ！
+[k]
+
+[messageOff]
+[subRenderFadein #B 1.2 0,0]
+[wt 1.8]
+
+[bgm BGM_EVENT_129 0.1]
+
+＠？？？
+興味深い。聖杯は、[r]おまえのようなものも、[#喚:よ]ぶ、か。
+[k]
+
+＠
+貴方は、誰？
+[k]
+
+
+＠？？？
+王だ。[r]そして、蛇でもある。
+[k]
+
+＠
+蛇。[r]私が[#愛:倒]すモノ。
+[k]
+
+＠？？？
+おまえは、麗しい。[r]王がおまえを使ってやろう。
+[k]
+
+＠？？？
+だが[line 3]愛すべき蛇は。[r]余、一人でよい。
+[k]
+
+＠？？？
+故に。[r]我が宣言書に、署名をせよ。
+[k]
+
+＠？？？
+己が愛するは王一人のみ、と。[r]王を害してはならぬ。
+[k]
+
+＠？？？
+他の蛇は、害することしか許さぬ。[r]贄として見ることしか許さぬ。
+[k]
+
+＠？？？
+愛することは、けっして、許さぬ。
+[k]
+
+＠
+……無理です。[r]私は[line 3]
+[k]
+
+＠？？？
+いいや。署名をすれば、そうなる。
+[k]
+
+＠？？？
+墨は、余の蛇毒だ。
+[k]
+
+＠？？？
+これが[#何時:い　つ][#如何:い　か]なるときも、おまえの血の中から、[r]王の宣言書を[#朗誦:ろうしょう]するだろう。
+[k]
+
+＠？？？
+墨が薄れようと、[r]蛇毒はいくらでも追加できる。
+[k]
+
+[messageOff]
+[wt 0.05]
+[cueSe SE_22 22_adm90]
+[wt 1.2]
+
+＠
+ああ。やめて……[r]やめてください……
+[k]
+
+＠？？？
+曖昧なるおまえを、矛盾するおまえを、[r]単一にしてやろうというのだ。喜べ。
+[k]
+
+＠？？？
+ここにいるおまえは、蛇王を愛する者。[r]なればこそ、この蛇の世界に存在を許される。
+[k]
+
+＠？？？
+忘れるな。
+[k]
+
+＠？？？
+もし、おまえが余以外の蛇に、[r]愛おしさを見たとき。
+[k]
+
+＠？？？
+おまえの中の[#蛇毒:署　名]は、必ずや、[r]その命を奪うだろう[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_129 1.5]
+[wait fade]
+
+[charaFadeout C 0]
+[charaFadeout E 0]
+[charaFadeout P 0]
+[charaFadeout Q 0]
+
+[charaPut U 2000,2500]
+[charaEffectDestroy U bit_talk_suspicious_moya]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[subRenderFadeout #C 0.1]
+[charaEffectDestroy S bit_sepia01_depth_fs]
+[charaEffectDestroy T bit_sepia01_depth_fs]
+
+[charaFadeout O 0]
+[charaFadeout D 0]
+[charaFadeout N 0]
+[charaFadeout A 0]
+[charaFadeout X 0]
+[charaFadeout Y 0]
+[subCameraOff]
+[charaLayer T normal]
+[charaLayer D normal]
+[charaLayer O normal]
+[charaLayer N normal]
+[charaLayer A normal]
+[charaLayer U normal]
+[charaLayer X normal]
+[charaLayer Y normal]
+[charaScale D 1.0]
+[charaScale A 1.0]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[cueSe SE_25 25_ade1167]
+[fadeout AC232F 0.1]
+[wait fade]
+
+[wt 0.5]
+
+[fadein AC232F 0.1]
+[wait fade]
+[wt 0.7]
+
+[cueSe SE_21 21_ad1101]
+[wt 1.5]
+
+[fadeout black 0.1]
+[wait fade]
+
+[sceneSet O 238801 1]
+[sceneSet P 238801 1]
+[sceneSet Q 238801 1]
+
+[scene 238801]
+
+[cameraFilter normal]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.1]
+
+[se ad7]
+[wt 0.1]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+[charaMove B 1 0.2]
+
+＠黒姫
+[line 3]っ、ああっ！
+[k]
+
+
+[charaFace B 7]
+＠黒姫
+は[charaMoveReturn B 0,-6 0.4]あ、[wt 0.65][charaMoveReturn B 0,-6 0.4]はあっ……。
+[k]
+
+＠黒姫
+こ……ここは……？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.15]
+
+[se ad60]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 15]
+[charaFadein F 0.4 1]
+[wt 0.3]
+[seStop ad60 0.2]
+[wt 0.5]
+
+[bgm BGM_EVENT_194 0.1]
+
+＠おみぃさん
+心配しなさんな。[r]さっきまでいたのと同じ町さね。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+？1：具合はどう？
+？！
+
+＠黒姫
+具合……？
+[k]
+
+[messageOff]
+[charaFace B 9]
+[charaShake B 0.02 2 2 0.3]
+[wt 1.0]
+
+＠黒姫
+この、胸のつかえが取れたかのような感覚は。[r]もしや[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠アスクレピオス
+おまえの身体を冒していた毒なら、[r]僕が血清を作って無害化したぞ。
+[k]
+
+＠アスクレピオス
+ブラックボックスの部分はブラックボックスのまま、[r]という医学の進歩的には歯噛みしたい気分だが、
+[k]
+
+＠アスクレピオス
+治療の成功は成功だ。[r]ひとまず良しとしておくしかあるまい。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠黒姫
+…[messageShake 0.05 4 3 0.3]…！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠メドゥーサ
+無論、この医者が言うブラックボックスとは、[r]毒に紐付いていた[#契約:ギアス]のようなもののことです。
+[k]
+
+＠メドゥーサ
+それも解毒に伴って無効化されていると思います。[r]つまり……
+[k]
+
+[charaFace H 0]
+
+＠メドゥーサ
+貴女は、自由です。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠ビショーネ
+なんとなくわかります。
+[k]
+
+＠ビショーネ
+その契約みたいなもので、あなたは……[r]生贄集めの監督官みたいなことをやらされてた。
+[k]
+
+＠ビショーネ
+本当はやりたくなかったのに……です、よね？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 5]
+[charaFadein K 0.1 1]
+
+＠チビーネ
+き[charaMove K 0,-10 0.6]ゅぴー……。
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_194 2.0]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠黒姫
+……。[r]……。
+[k]
+
+[charaFace B 15]
+
+＠黒姫
+いいえ……いいえ。
+[k]
+
+[charaFace B 3]
+
+[bgm BGM_EVENT_75 0.1]
+＠黒姫
+今更何を言おうが、[r]無意味な弁解に過ぎませぬ。
+[k]
+
+＠黒姫
+私の意志など、感情など。[r]考えるまでもない[#瑣末事:さまつじ]。
+[k]
+
+＠黒姫
+語るは見苦しく、浅ましきものです。[r]在るのはただ、為した非道と、その結果のみ。
+[k]
+
+[charaFace B 5]
+
+＠黒姫
+ここで救われたとて、私は[#喪:うしな]われた方々に、[r]何も……何も[line 3]！
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaDepth B 2]
+[charaDepth O 3]
+[charaDepth L 4]
+[charaDepth T 9]
+
+[bgmStop BGM_EVENT_75 1.5]
+[charaScale O 1.2]
+[charaFadein O 0.4 0,-260]
+[charaMoveEase O 100,-260 0.6 easeOutSine]
+[wt 0.9]
+
+[se ad228]
+[wt 0.2]
+
+[charaPut T 2500,2500]
+[charaEffect T bit_talk_impactlanding]
+[wt 0.3]
+[charaPut T 0,-300]
+[wt 0.3]
+
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.4 0,-50]
+[charaMove L 0,0 0.8]
+[charaShake L 0.05 3 3 0.8]
+[wt 0.3]
+[seStop ad228 0.8]
+[wt 1.2]
+
+＠蛇竜人
+ふぃー、危なかったぁ……。
+[k]
+
+＠蛇竜人
+隠れてた家が崩れてきたときには[r]どうなることかと思ったよ。
+[k]
+
+[charaFace L 6]
+＠蛇竜人
+短くなっても毛がクッションになってくれたのかな、[r]助かったぜ……[wt 0.8][charaFace L 8]おや？
+[k]
+
+[messageOff]
+[charaFace B 9]
+[charaFadeout L 0.6]
+[charaFadeout O 0.6]
+[wt 0.9]
+
+＠黒姫
+あ……ああ[line 3]
+[k]
+
+[messageOff]
+[cueSe SE_25 25_ade1158]
+[charaMove B -250,0 0.4]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaEffectDestroy T bit_talk_impactlanding]
+
+[charaDepth O 2]
+[charaDepth K 4]
+[charaDepth J 5]
+[charaDepth I 3]
+[charaDepth M 5]
+[charaDepth P 6]
+[charaDepth L 7]
+[charaDepth B 8]
+[charaDepth S 9]
+
+[charaScale P 1.2]
+[charaScale L 1.2]
+[charaScale B 1.2]
+[charaFace L 8]
+[charaFadein L 0.1 -160,0]
+[charaFadein P 0.1 100,-260]
+
+[charaScale O 1.0]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+[charaFadein O 0.1 0,-200]
+[wt 0.35]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.1]
+
+[charaFace B 7]
+[charaFadein B 0.4 250,0]
+[charaMove B 160,0 0.4]
+[wt 0.35]
+
+[cueSeStop 25_ade1158 0.3]
+[se ad183]
+[charaFace L 4]
+[charaShake L 0.03 2 2 0.4]
+[charaShake B 0.02 2 2 0.4]
+[wt 1.2]
+
+[bgm BGM_EVENT_161 0.1]
+
+[charaTalk on]
+＠黒姫
+ごめん、なさい。
+[k]
+
+＠黒姫
+ごめんなさい、ごめんなさい、ごめんなさい、[r]ごめんなさい……！
+[k]
+
+[charaFace B 13]
+＠黒姫
+……生きていてくれて、よかった……！
+[k]
+
+[charaTalk L]
+[charaFace L 0]
+＠蛇竜人
+？？？
+
+[k]
+
+[messageOff]
+[charaTalk I,B,L]
+[wt 0.8]
+
+？1：今更何を言っても無意味[line 3]
+？2：なんてことは、全然ないと思うよ
+？！
+
+[charaFadeout B 0.8]
+[charaFadeout L 0.8]
+[charaFadeout P 0.8]
+[wt 1.1]
+
+＠ビショーネ
+はい。
+[k]
+
+＠ビショーネ
+素直な感情を出せるようになるのは、[r]とっても大事なことだと思います。
+[k]
+
+[charaFace I 20]
+
+＠ビショーネ
+わたしは、いろんな部分がまだ未熟で、[r]何もわかってない新人で[line 3]
+[k]
+
+[charaFace I 1]
+
+＠ビショーネ
+だからこそ、感情は素直に見せるべきかも、[r]なんて思ったりします。
+[k]
+
+＠ビショーネ
+わからないことはわからない。[r]怖いことは怖い。嬉しいことは嬉しい、って。
+[k]
+
+[charaFace I 2]
+
+＠ビショーネ
+そうしないと、周りにいるヒトだって、
+[k]
+
+＠ビショーネ
+入ったばかりの新人が何を考えてるのかなんて[r]わかんないと思うし。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠エリザベート
+そうね。助けてほしいときには[r]助けてほしいって言ってほしいわよね。
+[k]
+
+＠エリザベート
+もうビショーネはだいぶ慣れてきたからいいけど、
+[k]
+
+＠エリザベート
+よく知らない相手だったら、[r]フォローが必要なのかどうかもわかんないもの。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠ビショーネ
+はい！
+[k]
+
+＠ビショーネ
+だから[line 3]黒姫さんも。
+[k]
+
+＠ビショーネ
+いろいろ、教えてください。[r]いろいろ、喋ってください。
+[k]
+
+[charaFace I 2]
+
+＠ビショーネ
+きっと、それがやり直しの第一歩です。
+[k]
+
+＠ビショーネ
+たとえ失敗しちゃってても、挽回のチャンスが[r]もらえるかもしれません。
+[k]
+
+[charaFace I 9]
+
+＠ビショーネ
+そう、それが！[r]社会人にとって絶対必須のスーパー真理！
+[k]
+
+[charaPut S 1]
+[charaEffect S bit_talk_41_fs]
+[charaMoveScaleEase I 1.2 0.25 easeOutCubic]
+[charaMoveScaleEase O 1.2 0.25 easeOutCubic]
+[charaMoveEase I 0,15 0.25 easeOutCubic]
+[charaMoveEase O 0,-275 0.25 easeOutCubic]
+
+＠ビショーネ
+報・連・相、なんです！
+[k]
+
+[messageOff]
+[charaMoveEase I 175,15 0.5 easeOutSine]
+[charaMoveEase O 100,-275 0.5 easeOutSine]
+[wt 0.6]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFadein K 0.2 -175,-50]
+
+＠チビーネ
+き[charaMoveReturn K -175,-43 0.3]ゅっぴーー！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[subCameraOn 1]
+[charaLayer M sub #A]
+[charaLayer G sub #A]
+[charaLayer H sub #A]
+[charaLayer P sub #A]
+
+[subCameraFilter #A normal]
+
+[subRenderScale #A 1.01]
+
+[charaDepth P 1]
+[charaDepth M 2]
+[charaDepth G 3]
+[charaDepth H 4]
+
+[charaScale G 0.9]
+[charaFace G 1]
+[charaFace H 1]
+[charaFace M 0]
+[charaFadein G 0 0,-5]
+[charaFadein H 0 -350,0]
+[charaFadein M 0 350,0]
+[charaFadein P 0 0,-200]
+
+[subRenderFadein #A 0.6 0,0]
+[wt 2.1]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_161 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

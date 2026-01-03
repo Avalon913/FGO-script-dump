@@ -1,0 +1,467 @@
+
+
+＄94-07-36-07-4-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098243400 1 ガレス]
+[charaSet B 6026300 1 燕青]
+[charaSet C 6043000 1 オルトリンデ]
+[charaSet D 1098118700 1 悪霊剣士]
+[charaSet E 1098246700 1 アネト号]
+
+[sceneSet O 10000 1]
+[charaScale O 1.01]
+
+[charaSet P 5009000 1 エフェクト用ダミー1]
+[charaSet Q 5009000 1 エフェクト用ダミー2]
+[charaSet R 5009000 1 エフェクト用ダミー3]
+[charaSet S 5009000 1 エフェクト用ダミー4]
+[charaSet T 5009000 1 エフェクト用ダミー5]
+
+[charaPut P 1]
+[charaEffect P bit_talk_evil_spirits01]
+[charaPut Q 2000,2000]
+[charaEffect Q bit_talk_evil_spirits02]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth P 1]
+[charaDepth Q 2]
+[charaDepth R 3]
+[charaDepth S 4]
+[charaDepth T 5]
+
+[scene 160500]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+[wt 0.3]
+[se ad346]
+[charaMoveReturn C 0,-10 0.3]
+[wt 0.3]
+[charaMoveReturn C 0,-10 0.3]
+[wt 0.3]
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[cueSe SE_21 21_ade654]
+[fowardEffect bit_shot_01 400,0]
+[wt 0.3]
+[charaPut R 150,0]
+[charaEffect R bit_shot_01]
+[wt 0.3]
+[charaPut S -150,0]
+[charaEffect S bit_shot_01]
+[wt 0.3]
+[charaPut T -400,0]
+[charaEffect T bit_shot_01]
+[wt 0.2]
+[cueSeStop 21_ade654 0.2]
+
+[fowardEffectDestroy bit_shot_01]
+[charaEffectDestroy R bit_shot_01]
+[charaEffectDestroy S bit_shot_01]
+[charaEffectDestroy T bit_shot_01]
+[wt 0.6]
+[cueSe SE_22 22_ade706]
+[cueSeVolume 22_ade706 0 0.5]
+[cueSe SE_21 21_ade582]
+[cueSeVolume 21_ade582 0 0.5]
+
+[charaPut Q 1]
+[charaEffectStop P bit_talk_evil_spirits01]
+[charaEffectStop Q bit_talk_evil_spirits02]
+[wt 1.0]
+[cueSeStop 22_ade706 1.0]
+[cueSeStop 21_ade582 1.0]
+[wt 1.7]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+
+＠ガレス
+オルトリンデ！　後ろ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.3]
+
+[charaFadeout D 0.1]
+[cueSe Servants_102800 bac658]
+[fowardEffect bit_talk_h_slash01_fs 0,0 H]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[se ad32]
+[charaShake A 0.05 2 2 0.3]
+[fowardEffect bit_talk_14]
+[wt 0.3]
+
+＠ガレス
+……ッ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaScale C 1.3]
+[charaFadein C 0.1 0,30]
+[se ad543]
+[seVolume ad543 0 0.5]
+[se ad671]
+[charaShake C 0.05 2 2 0.4]
+[seStop ad671 0.5]
+[seStop ad543 0.5]
+[charaMoveScale C 1.0 0.4]
+[charaMove C 0,0 0.4]
+
+[wt 0.8]
+
+[charaFace C 2]
+
+＠オルトリンデ
+ありがとうございます！[r]スルーズに霊基変更すべきでした[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ガレス
+いえ、ここは私にお任せを。[r]下がってください。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[wt 1.3]
+
+[bgmStop BGM_EVENT_24 1.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ガレス
+…………？
+[k]
+
+[charaTalk depthOff]
+[charaDepth O 1]
+[charaDepth A 2]
+[charaPut O 0,-200]
+[charaFadeTime O 0.2 0.5]
+
+＠ガレス
+（この悪霊。私の剣を、見てる？）
+[k]
+
+[charaFadeout O 0.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠悪霊剣士
+……。[r]……。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaFace A 5]
+
+＠ガレス
+この、感じ……まさか……。
+[k]
+
+＠ガレス
+イロンシッド卿？
+[k]
+
+[charaFace A 4]
+
+＠ガレス
+いえ、でもそんな……あなたは……[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 5]
+[se ad223]
+[fowardEffect bit_talk_quickmove 50,0]
+[charaSpecialEffect B appearance 1 0.25]
+[wt 0.4]
+
+＠燕青
+どうしたガレスちゃん。[r]呼吸が乱れてるな。
+[k]
+
+
+＠燕青
+……もしかして、因縁の相手か？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：ガレス！
+？2：[line 3]もし知ってる相手なら、鎮めてあげよう！
+？！
+
+[bgmStop BGM_EVENT_5 1.0]
+[charaFace A 13]
+
+＠ガレス
+！
+[k]
+
+
+[charaFace A 9]
+
+＠ガレス
+…………ありがとうございます。[bgm BGM_EVENT_82 0.1][r]燕青さん、マスター。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[cueSe SE_21 21_ade556 0 0.8]
+
+＠アネト号
+バウッ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ガレス
+もちろん、アネト号も。
+[k]
+
+[charaFace A 5]
+[charaMoveReturn A 0,-10 0.3]
+[se ade321]
+[wt 0.3]
+
+＠ガレス
+それに、ここにはいないけど道満さんも。[r]ありがとう！　ございます！
+[k]
+
+＠ガレス
+これがいわゆる、縁というモノ！
+[k]
+
+＠ガレス
+連鎖召喚という事象があると聞いてはいました。[r]まさか、私が遭遇するとは。
+[k]
+
+＠ガレス
+……でも、はい。
+[k]
+
+[charaFace A 2]
+
+
+＠ガレス
+出逢ったからには！[r]このガレス、真正面から受け止めましょう！
+[k]
+
+[bgmStop BGM_EVENT_82 1.5]
+
+[messageOff]
+[charaFace A 5]
+[wt 1.5]
+
+[charaFace A 8]
+
+＠ガレス
+[line 3]赤い騎士、イロンシッド！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.2]
+[charaMoveReturn D 0,-20 0.3]
+[se ad51]
+[wt 0.3]
+
+＠悪霊剣士
+……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_91 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+
+＠ガレス
+かつて赤の国より遣わされた強き騎士。[r]かつて私と刃を交わした、好敵手よ。
+[k]
+
+[charaFace A 2]
+
+＠ガレス
+この魔剣こそは、貴公の魔剣！[r]貴公を[#斃:たお]した私が継いだ、私の宝具です！
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth P 1]
+[charaDepth A 2]
+[charaDepth Q 3]
+
+[charaPut P 1]
+[charaPut Q 1]
+[charaEffect Q bit_talk_lightning_02r]
+[se ade446]
+[seVolume ade446 0 0.5]
+[wt 2.0]
+
+
+＠ガレス
+この時、この場に迷い出た貴公！[r]御照覧あれ！
+[k]
+
+＠ガレス
+我が魔剣イロンシッドにて[line 3]鎮めてみせる！
+[k]
+
+[messageOff]
+[charaEffect A bit_talk_charge_red]
+[se ad39]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 0.3 0.7]
+[wt 2.0]
+[charaEffect P bit_talk_lightning_04r]
+[wt 0.3]
+
+[messageOff]
+[fadeout white 0.2]
+[seStop ade446 0.5]
+[seStop ad556 0.5]
+[wait fade]
+
+[charaChange A 1054002 5 normal 0.1]
+[charaPut P 2000,2000]
+[charaPut Q 2000,2000]
+[charaEffectStop A bit_talk_charge_red]
+[charaEffectStop P bit_talk_lightning_04r]
+[charaEffectStop Q bit_talk_lightning_02r]
+[se ad63]
+[se ad64]
+[wt 2.5]
+
+[fadein white 1.5]
+[wait fade]
+
+[wt 0.5]
+[charaFace A 2]
+
+＠ガレス
+[f large]覚悟！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.3]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut R 1]
+[charaEffect R bit_talk_41_fs]
+[charaMoveScale D 1.1 0.3]
+[charaMove D 0,10 0.3]
+[blur motion 0.3 4 100 0.5 0.6 0.03 100]
+[charaFadeout D 0.3]
+[wt 0.4]
+[charaPut R 2000,2000]
+[charaEffectStop R bit_talk_41_fs]
+[charaScale D 1.0]
+[blurOff motion 0.1]
+[wt 0.2]
+
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_91 0.4]
+[wait fade]
+[soundStopAll]
+[end]

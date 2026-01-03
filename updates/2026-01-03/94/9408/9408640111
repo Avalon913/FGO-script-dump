@@ -1,0 +1,657 @@
+
+
+＄94-08-64-01-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257910 1 マシュ]
+[charaSet B 1098257310 1 ダ・ヴィンチ]
+[charaSet C 1098239320 1 カドック]
+[charaSet D 1098273900 1 Ｅ－オルガマリー]
+
+[charaSet E 1098273900 1 演出用_Ｅ－オルガマリー]
+[charaSet F 1098257910 1 演出用_マシュ]
+[charaSet G 1098257910 1 演出用_マシュ]
+
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 98115000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+[charaSet K 98115000 1 エフェクト用]
+
+[sceneSet M 192100 1]
+[sceneSet N 192100 1]
+[sceneSet O 192100 1]
+
+[charaSet Q 98115000 1 エフェクト用]
+[charaSet R 98115000 1 エフェクト用]
+[charaSet S 98115000 1 エフェクト用]
+
+[scene 192100]
+
+[subCameraOn 4]
+[subCameraFilter #A maskEdge cut359_mask05 2 255,255,255,255]
+[subCameraFilter #B through]
+[subCameraFilter #C maskEdge cut359_mask05 2 0,0,0,0]
+[subCameraFilter #D maskEdge cut359_mask05 2 0,0,0,0]
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.15]
+[subRenderScale #C 0.9]
+[subRenderScale #D 0.9]
+[charaLayer F sub #A]
+[charaLayer N sub #A]
+[charaLayer H sub #A]
+[charaLayer G sub #B]
+[charaLayer O sub #B]
+[charaLayer S sub #B]
+[charaLayer I sub #B]
+[charaLayer E sub #B]
+[charaLayer J sub #C]
+[charaLayer K sub #D]
+
+[charaDepth F 2]
+[charaDepth N 1]
+[charaDepth E 2]
+[charaDepth H 1]
+[charaScale F 1.1]
+[charaScale H 1.4]
+[charaScale E 1.1]
+[charaFace F 24]
+[charaFadein F 0.1 -80,140]
+[charaFadein N 0.1 -50,50]
+[charaDepth S 3]
+[charaDepth G 2]
+[charaDepth O 1]
+[charaScale G 1.1]
+[charaScale O 1.1]
+[charaScale I 1.4]
+[charaFadein O 0.1 120,-240]
+[charaPut S -50,0]
+[charaEffect S bit_talk_fire_elements_light]
+[charaScale J 1.4]
+[charaPut J -170,300]
+[charaEffect J bit_talk_4elements_light]
+[charaScale K 1.4]
+[charaPut K -510,300]
+[charaEffect K bit_talk_4elements_light]
+
+[charaTalk depthOff]
+[charaDepth M 9]
+[charaDepth Q 2]
+[charaDepth C 1]
+[charaDepth B 1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[shake 0.03 3 3 1.0]
+
+[fadein black 1.0]
+[cueSe Servants_9944510 m93119]
+[wait fade]
+
+[cueSe Servants_104700 m41906]
+[cueSeStop m41906 0.6]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[shake 0.03 3 3 0.4]
+[wt 0.6]
+
+[cueSe Servants_104700 m41906]
+[charaShake D 0.02 2 2 0.6]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[shake 0.03 3 3 0.4]
+[wt 0.8]
+
+[cueSeStop m41906 1.2]
+[se ad52]
+[seVolume ad52 0 0.5]
+[charaSpecialEffect D flashErasure 1 1.7]
+[wait charaSpecialEffect D]
+
+[se ad39]
+[wt 0.5]
+[seStop ad39 1.0]
+[wt 0.7]
+
+[cueSe Servants_9944140 m90911]
+[effect bit_talk_fire_elements_light]
+[wt 2.0]
+
+[charaTalk F]
+[subRenderFadeinFSR #A 0.4 300,-150]
+[subRenderMoveFSR #A 300,-180 0.4]
+[wt 0.4]
+
+＠F：マシュ
+火の『[#遺分體:エ レ メ ン ツ]』、消滅確認しました！[r]魔力反応、回収します！
+[k]
+
+[messageOff]
+[subRenderMoveFSR #A 300,-210 0.4]
+[subRenderFadeout #A 0.4]
+[wt 0.5]
+
+[se ad667]
+[subRenderFadein #B 0.8 -50,-20]
+[wt 0.8]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.5 300,0]
+[charaMove G 200,0 0.8]
+[seStop ad667 0.8]
+[wt 1.2]
+[effectDestroy bit_talk_fire_elements_light]
+
+[se ad656]
+[wt 1.0]
+
+[charaMoveReturn G 200,-5 0.6]
+[charaEffectStop S bit_talk_fire_elements_light]
+[wt 1.6]
+[subRenderFadeout #B 0.8]
+[wt 1.2]
+
+[subCameraFilter #A maskEdge cut359_mask05 2 0,0,0,0]
+[subCameraFilter #B maskEdge cut359_mask05 2 0,0,0,0]
+[subRenderScale #A 0.9]
+[subRenderScale #B 0.9]
+[charaPut H 510,300]
+[charaEffect H bit_talk_4elements_light]
+[charaFadeout F 0.1]
+[charaFadeout N 0.1]
+[charaPut I 170,300]
+[charaEffect I bit_talk_4elements_light]
+[charaFadeout G 0.1]
+[charaFadeout O 0.1]
+
+[bgm BGM_MAP_91 0.1]
+
+＠伯爵
+[line 3]おや、これはこれは。[r]幸先の良いスタート、おめでとうございます。
+[k]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カドック
+余裕ぶってる場合か？[r]企みは潰えたんだ。いいかげん姿を現せ。
+[k]
+
+＠A：伯爵
+はい？
+[k]
+
+＠A：伯爵
+ああ、すみません。[r]まさか、これで終わりとでも思っておいでで……？
+[k]
+
+[charaFace C 1]
+
+＠カドック
+何？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut Q 1]
+[charaEffect Q bit_talk_10_LowLevel_depth]
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+いや、カドック。[r]彼の発言を思い出すんだ。
+[k]
+
+？1：……
+
+＠ダ・ヴィンチ
+伯爵は『[#遺分體:エ レ メ ン ツ]』のことを紹介した際に、[r]彼女[#たち]と言った。
+[k]
+
+＠ダ・ヴィンチ
+加えて、人理定礎を揺らがせるためには、[r]複数の攻撃を加えることが重要だ。
+[k]
+
+＠ダ・ヴィンチ
+つまり……
+[k]
+
+？2：彼女[#たち]……
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut Q 2000,2000]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠カドック
+……そうか。確かに言っていたな。[r]おまけに火なんて属性もつけてる。
+[k]
+
+＠カドック
+つまり……『[#遺分體:エ レ メ ン ツ]』は、[r]複数体存在するってことか！
+[k]
+
+？！
+
+[messageOff]
+[charaScale M 1.2]
+[charaFadein M 0.7 80,-300]
+[charaMove M -80,-300 30.0]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaPut Q 2000,2000]
+
+＠伯爵
+ご明察。ゲームは始まったばかりです。
+[k]
+
+＠伯爵
+『[#遺分體:エ レ メ ン ツ]』はそのどれもが[r]超級の破壊兵器にして大統領特異点。
+[k]
+
+＠伯爵
+起動した時点で重力変動を起こし、[r]汎人類史の歯車を狂わせていく。
+[k]
+
+＠伯爵
+真の『異星の神』……[r]カルデアスを目指す貴方たちは、
+[k]
+
+＠伯爵
+これを放置する事はできません。
+[k]
+
+＠伯爵
+そして、一戦目は貴方たちの勝利となった。[r]これは私としても実に喜ばしい。
+[k]
+
+＠伯爵
+なにしろ、このゲームには出来るかぎり[r]趣向を凝らしたのです。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout M 0.8]
+[wt 1.0]
+
+[subRenderFadeinFSSideL #A 0.4 -370,-120]
+[subRenderMoveFSSideL #A -370,-160 0.5]
+[wt 0.2]
+[subRenderFadeinFSL #B 0.4 -120,-120]
+[subRenderMoveFSL #B -120,-160 0.5]
+[wt 0.2]
+[subRenderFadeinFSR #C 0.4 120,-120]
+[subRenderMoveFSR #C 120,-160 0.5]
+[wt 0.2]
+[subRenderFadeinFSSideR #D 0.4 370,-120]
+[subRenderMoveFSSideR #D 370,-160 0.5]
+[wt 1.2]
+
+＠伯爵
+一[charaFace E 0][charaFadein E 0.8 10,120]体目は初見のインパクトと、[charaEffectDestroy I bit_talk_4elements_light][r]それなりの難易度を。
+[k]
+
+＠伯爵
+二体目には充分な戦闘準備をした[r]カルデアを上回る鬼畜さを。
+[k]
+
+＠伯爵
+三体目にはマンネリズムを破壊する、[r]圧倒的な衝撃を。
+[k]
+
+＠伯爵
+そして最後の四体目には私でさえ予測できない、[r]攻略不可能な調整を。
+[k]
+
+＠伯爵
+どうか心ゆくまでお楽しみいただければ。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.6]
+[subRenderFadeout #B 0.6]
+[subRenderFadeout #C 0.6]
+[subRenderFadeout #D 0.6]
+[wt 1.0]
+
+＠伯爵
+それでは失礼。[r]我ら使徒、多忙を極めておりますので[line 3]
+[k]
+
+[messageOff]
+[wt 0.2]
+[se ad95]
+[wt 1.5]
+
+[fadeout black 2.0]
+[seStop ad95 2.0]
+[bgmStop BGM_MAP_91 2.0]
+[wait fade]
+
+[charaEffectDestroy H bit_talk_4elements_light]
+[charaEffectDestroy I bit_talk_4elements_light]
+[charaEffectDestroy J bit_talk_4elements_light]
+[charaEffectDestroy K bit_talk_4elements_light]
+
+[charaLayer F normal]
+[charaLayer G normal]
+[charaLayer E normal]
+[charaLayer H normal]
+[charaLayer I normal]
+[charaLayer J normal]
+[charaLayer K normal]
+[charaLayer N normal]
+[charaLayer O normal]
+[charaLayer S normal]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaFadeout S 0.1]
+[subCameraOff]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+
+
+
+
+
+
+[scene 122605]
+[wt 1.0]
+
+[se ad291]
+[seVolume ad291 0 0]
+[se ad241]
+[seVolume ad241 0 0]
+
+[fadein black 1.0]
+[seVolume ad291 1.0 0.5]
+[seVolume ad241 1.0 0.5]
+[wait fade]
+
+[wt 2.5]
+
+[fadeout black 1.5]
+[seStop ad291 1.5]
+[seStop ad241 1.5]
+[wait fade]
+
+[charaSet A 1098257800 1 マシュ]
+[charaSet B 1098257300 1 ダ・ヴィンチ]
+[charaSet E 1098255100 1 ゴルドルフ]
+[charaSet F 1098257400 1 シオン]
+[charaSet G 1098158330 1 ネモ]
+[charaSet H 1098254800 1 ネモ・マリーン]
+[sceneSet M 132900 1]
+[sceneSet N 132900 1]
+
+[scene 132900]
+
+[charaTalk B]
+[charaFace B 34]
+[charaFadein B 0.1 1]
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠ダ・ヴィンチ
+ふう……みんな、おつかれさま。[r]という訳で、火の『[#遺分體:エ レ メ ン ツ]』……。
+[k]
+
+[charaFace B 23]
+
+＠ダ・ヴィンチ
+オルガマリーの残存魔力から作られた[r]生体兵器はどうにか撃破できた。
+[k]
+
+＠ダ・ヴィンチ
+重力変動現象、縮小状態に移行。[r]オリュンポスの大地もすぐに消えるだろう。
+[k]
+
+[charaFace B 8]
+
+＠ダ・ヴィンチ
+だが安心はできない。[r]伯爵の口ぶりでは複数体いることが明白だ。
+[k]
+
+＠ダ・ヴィンチ
+そもそも、伯爵自体も新しい異星の使徒だ。[r]難敵であることに違いはない。
+[k]
+
+＠ダ・ヴィンチ
+今後、我々の作戦を邪魔するかたちで[r]何度も『[#遺分體:エ レ メ ン ツ]』は現れるはずだ。
+[k]
+
+＠ダ・ヴィンチ
+強力な相手だが、これを回避する事はできない。
+[k]
+
+＠ダ・ヴィンチ
+かの……Ｅ－オルガマリーが特異点である以上、[r]放置すれば人類史の土台が崩れてしまうからね。
+[k]
+
+？1：…………。
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 2.3]
+[charaTalk depthOff]
+[charaDepth A 3]
+[charaDepth H 2]
+[charaDepth G 1]
+
+[charaTalk A,H,G]
+[charaFace A 4]
+[charaFadeinFSR A 0.1 280,0]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+[charaFace G 5]
+[charaFadeinFSL G 0.1 -280,0]
+[wt 1.4]
+
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+…………。
+[k]
+
+
+[bgm BGM_KYOSU_1 0.1]
+[charaFace E 14]
+
+＠ゴルドルフ
+うむ、その通りだ！
+[k]
+
+
+＠ゴルドルフ
+たとえ敵がどのような姿であろうと、[r]これも避けて通れない戦いである！
+[k]
+
+＠ゴルドルフ
+今後はストーム・ボーダーの索敵機能をより[r]広域に拡げ、重力変動圏を発見次第、急行する！
+[k]
+
+＠ゴルドルフ
+オーディール・コールという一大作戦中に[r]そこまでするのか！？　なぜか！　と思うだろう！
+[k]
+
+＠ゴルドルフ
+だが、その理由は言うまでもない！
+[k]
+
+[charaFace E 12]
+
+＠ゴルドルフ
+これはカルデアの名誉の問題だからだ！
+[k]
+
+＠ゴルドルフ
+仮にも前所長のそっくりさんが[r]地球破壊事件の犯人になってみろ！
+[k]
+
+＠ゴルドルフ
+現所長の私の立つ瀬がない！[r]また[#冤罪:えんざい]という名の余罪が増えてしまう！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 4]
+[charaDepth B 3]
+[charaDepth F 2]
+[charaDepth C 1]
+
+[charaTalk A,C,F,B]
+[charaFace A 6]
+[charaFadeinFSSideR A 0.1 390,0]
+[charaFace B 22]
+[charaFadeinFSR B 0.1 170,0]
+[charaFace C 3]
+[charaFadeinFSL C 0.1 -60,0]
+[charaFace F 13]
+[charaFadeinFSSideL F 0.1 -350,0]
+[wt 1.4]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+なので！　諸君には全力で事に当たってほしい！[r]私の時計塔での出世のために！
+[k]
+
+[charaFace E 16]
+
+＠ゴルドルフ
+……まあその、なんだ。
+[k]
+
+＠ゴルドルフ
+ついでではあるが、オルガマリー・アニムスフィアの[r]名誉を守る事にも繋がるだろう。
+[k]
+
+＠ゴルドルフ
+君たちは気にせず戦いなさい。[r]仮に、オルガマリーの亡霊が現れたら……
+[k]
+
+[charaFace E 1]
+
+＠ゴルドルフ
+その時はまず私の枕元に立つだろうからな。[r]たっぷり恨み言を聞いてやるさ。
+[k]
+
+？1：[line 3]はい！
+？2：その時は真っ先に呼んでください！
+
+？！
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth A 9]
+[charaDepth B 8]
+[charaDepth C 7]
+[charaDepth N 6]
+
+[charaDepth H 5]
+[charaDepth G 4]
+[charaDepth F 3]
+
+[charaDepth M 2]
+[charaDepth E 1]
+
+[charaScale A 1.2]
+[charaScale B 1.2]
+[charaScale C 1.2]
+[charaScale F 1.2]
+[charaScale G 1.2]
+[charaScale H 1.2]
+[charaScale N 1.2]
+[charaScale M 1.2]
+
+[charaFace F 8]
+[charaFadein F 1.0 -320,0]
+[charaFace H 2]
+[charaFadein H 1.0 340,0]
+[charaFace G 2]
+[charaFadein G 1.0 20,0]
+[charaFadein M 1.0 80,-280]
+
+[charaMove F -300,0 1.0]
+[charaMove G 40,0 1.0]
+[charaMove H 360,0 1.0]
+[charaMove M 100,-280 1.0]
+[wt 2.4]
+
+[charaFadeout E 0.1]
+
+[charaFace C 8]
+[charaFadein C 1.0 -290,0]
+[charaFace A 30]
+[charaFadein A 1.0 380,0]
+[charaFace B 4]
+[charaFadein B 1.0 60,0]
+[charaFadein N 1.0 -80,-280]
+
+[charaMove C -310,0 1.0]
+[charaMove A 360,0 1.0]
+[charaMove B 40,0 1.0]
+[charaMove N -100,-280 1.0]
+[wt 2.2]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_KYOSU_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

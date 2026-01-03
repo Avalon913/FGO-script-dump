@@ -1,0 +1,460 @@
+
+
+＄94-14-15-96-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1008300 1 ジークフリート]
+[charaSet B 1008300 1 ジークフリート（演出用）]
+[charaSet C 28010001 1 ダンテ]
+[charaSet D 7013000 1 清姫]
+[charaSet E 7013000 1 清姫（演出用）]
+[charaSet F 2001000 1 エミヤ]
+[charaSet G 2001000 1 エミヤ（演出用）]
+[charaSet H 1098241810 1 エミヤ（通信）]
+[charaSet I 1098257310 1 ダ・ヴィンチ]
+[charaSet J 1019001 1 ラーマ]
+[charaSet K 1019001 1 ラーマ（演出用）]
+[charaSet L 1098319200 1 カドック]
+[charaSet M 1098255110 1 ゴルドルフ]
+
+[sceneSet Q 243401 1]
+[charaScale Q 1.2]
+[sceneSet R 243401 1]
+[charaScale R 1.2]
+
+[sceneSet S 243300 1]
+[charaScale S 1.2]
+[sceneSet T 132900 1]
+[charaScale T 1.2]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用2]
+
+[charaPut S 2000,2500]
+[charaEffect S bit_talk_10_LowLevel]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 243401]
+
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジークフリート
+……む。コンシェルジュか。[r]先ほどの相談だが……。
+[k]
+
+？1：意見が……まとまりました！
+？！
+
+[charaFace A 4]
+＠ジークフリート
+う、うむ。[r]……意見がまとまった？
+[k]
+
+[charaFace A 0]
+＠ジークフリート
+ああ、電話で意見を送ってくれるということか。[r]電話機器が見当たらないが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+フフ……そこは深く考えなくていいところです……。[r]では、よろしく……。
+[k]
+
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.55]
+
+？1：では今から、有識者の代行で喋ります
+？！
+
+[charaFace A 4]
+＠ジークフリート
+あ、ああ。
+[k]
+
+
+
+
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.5]
+
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth A 2]
+[charaDepth Q 3]
+[charaDepth B 4]
+[charaDepth F 5]
+[charaDepth R 6]
+[charaDepth G 7]
+
+[charaScale Q 1.2]
+
+[charaTalk A,B]
+[charaFace B 4]
+[charaFadeinFSL B 0.7 0]
+[charaFadein Q 0.7 0,-260]
+[wt 0.7]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[se ad598]
+[wt 0.1]
+[charaTalk F]
+[charaPutFSR F 2]
+[charaFace F 0]
+[charaFadeTime F 0.7 0.7]
+[seStop ad598 1.0]
+[wt 1.4]
+
+
+＠エミヤ
+初めに断っておく。[r]私は別に愛の専門家ではない。
+[k]
+
+[charaTalk B]
+[charaFace B 4]
+＠B：ジークフリート
+[#開口一番:かいこういちばん]、不安が募るのだが……。
+[k]
+
+[charaTalk F]
+[charaFace F 0]
+
+＠エミヤ
+とはいえ、なぜかその手の問題に縁があるのも事実だ。[r]その経験を生かして助言させていただく。
+[k]
+
+[messageOff]
+[charaScale G 1.4]
+[charaScale R 1.4]
+
+[charaTalk G,F]
+[charaPut G 250,0]
+[charaFace G 0]
+[charaFadeTime G 0.8 0.7]
+[charaFadein R 0.8 -150,-320]
+[charaMove G 150,0 45.0]
+[charaMove R -250,-320 45.0]
+[wt 0.8]
+
+[charaDepth A 4]
+[charaScale A 1.4]
+[charaScale Q 1.4]
+[charaFadein A 0.1 -225,0]
+
+[charaPut Q 175,-320]
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[bgm BGM_EVENT_92 0.1]
+
+＠G：エミヤ
+ジークフリート、君が感じている引け目は、[r]思ったよりも底が浅いものだ。
+[k]
+
+[charaFace G 4]
+＠G：エミヤ
+君の愛した女性は、君が培ってきたものを[r]野暮にするほど粗野な人格か？
+[k]
+
+＠G：エミヤ
+彼女が言いたいのは、つまるところ[line 3]時と場所、[r]状況に応じた振る舞いをしろ、ということだろう。
+[k]
+
+[charaFace G 0]
+＠G：エミヤ
+[#上流階級:ハイソサエティー]の言うマナーとは、[r]突き詰めるとこれ以外にない。
+[k]
+
+[charaFace G 5]
+＠G：エミヤ
+戦争時にフルコースのマナーで振る舞う愚かしさと、[r]平常時にフルコースのマナーを守れない野蛮さ。
+[k]
+
+＠G：エミヤ
+彼らにとって、これは等価なのだ。[r]だが何。君が一方的に歩み寄る必要はない。
+[k]
+
+[charaFace G 1]
+＠G：エミヤ
+彼女に[#君が]これまでの人生で培ってきた[r]マナーをぶつけてみるべきだ。
+[k]
+
+[messageOff]
+[charaTalk A,G]
+[charaFace A 4]
+[charaFadeTime G 0.5 0]
+[charaFadeTime R 0.5 0]
+[charaMove A -150,30 30.0]
+[charaMove Q 250,-320 30.0]
+[wt 0.6]
+
+＠ジークフリート
+マナー、と言われても……。
+[k]
+
+[messageOff]
+[charaTalk G,A]
+[charaFace G 3]
+[charaFadeTime G 0.5 0.7]
+[charaFadeTime R 0.5 1.0]
+[wt 0.5]
+
+[charaScale A 1.0]
+[charaPutFSL A 0]
+[charaPutFSR F 2]
+[charaFace F 6]
+[charaFadeTime F 0 0.7]
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+＠G：エミヤ
+ああ、マナーという言い方が悪かったかな。[r]要は……君の生き方をきちんと説明するべきだ。
+[k]
+
+＠G：エミヤ
+なぜシャンパンではなく、ビールがいいのか。[r]まずはそこからだ。
+[k]
+
+[charaFace G 0]
+＠G：エミヤ
+そしてもし彼女が君の説明を受け入れ、[r]理解を示したのなら[line 3]
+[k]
+
+[charaFace G 1]
+＠G：エミヤ
+次は君が理解を示す番だ。
+[k]
+
+[charaFace G 6]
+＠G：エミヤ
+シャンパンが死ぬほど嫌い、という訳でもないのだろう？
+[k]
+
+[messageOff]
+[charaTalk A,G]
+[charaFace A 0]
+[charaFadeout G 0.7]
+[charaFadeout R 0.7]
+[wt 0.9]
+
+＠ジークフリート
+……なるほど。そうか、そうだな。[r]俺は嘆き、謝罪するばかりで……。
+[k]
+
+[charaFace A 4]
+＠ジークフリート
+彼女に自分の想いを伝えることを[r]封じていた気がする。
+[k]
+
+[charaTalk F]
+[charaFace F 1]
+＠エミヤ
+ああ。自分にとっての常識を、襟を正して恋人に[r]伝えるのは気恥ずかしいものだがね。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠ダ・ヴィンチ
+さすがカルデアのドン・ファン。[r]上手くまとめてくれて助かった。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠H：エミヤ
+不当な扱いに抗議文をしたためてもいいかな？
+[k]
+
+
+
+
+
+[messageOff]
+[wt 0.5]
+[wipeout rollRight 1.0 1.0]
+[bgmStop BGM_EVENT_92 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[charaPut S 2000,2500]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[bgm BGM_SABERWARS2 0.1]
+
+＠ジークフリート
+……ありがとう。有識者の助言、[r]つくづく身に沁みた。
+[k]
+
+＠ジークフリート
+これから少し、クリームヒルトと話し合ってくる。
+[k]
+
+＠ジークフリート
+俺が俺であるために必要だった過去も、[r]きっと愛してくれると……そう、信じることにする。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+愛とはまず、人を信じるところから始めないと[r]いけませんからね……フフ……ご武運を……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ジークフリート
+ああ！
+[k]
+
+[messageOff]
+[se ad60]
+[charaFadeout A 0.4]
+[seStop ad60 1.2]
+[wt 1.8]
+
+[charaPut S 1]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠カドック
+……どうやらジークフリート夫妻の悩みは[r]解決に至ったようだな。
+[k]
+
+[charaFace L 2]
+＠カドック
+……ただ、まあ……聖杯探索には、[r]全く関係のない事案だったな……。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+……。[r]……フフ、果たしてそうかな……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠カドック
+……何かあるのか？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+フフ……言ってみただけ……。
+[k]
+
+[charaFace C 2]
+＠ダンテ
+言ってみただけだけど……現地で働いている[r]自分的には……もしかすると、という……。
+[k]
+
+＠ダンテ
+そんな想いがあったりする……。[r][%1]はどうかな……？
+[k]
+
+？1：あるような……
+？2：ないような……
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk M]
+[charaFace M 16]
+[charaFadein M 0.1 1]
+
+＠ゴルドルフ
+はいはい。ひとまずこの話は終了。
+[k]
+
+＠ゴルドルフ
+例の誕生日パーティーに遅れないよう、[r]他の仕事をやっておきなさい。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_SABERWARS2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,238 @@
+
+
+＄03-00-13-02-3-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 1098254800 1 ネモ・マリーン]
+[charaSet B 1098253200 1 Ｕ－オルガマリー]
+[charaSet C 1098252700 1 どう見ても恐竜]
+[charaSet D 1098181610 1 カルデアの者]
+
+[charaSet H 98115000 1 エフェクト用]
+[sceneSet I 169100 1]
+
+[charaTalk depthOff]
+[charaDepth I 3]
+[charaDepth D 4]
+
+[charaScale I 1.4]
+[charaScale D 1.3]
+
+[scene 169100]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+[se ade215]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[shake 0.05 2 2 1.5]
+＠どう見ても恐竜
+[i npc_language_33][line 3]！
+[k]
+
+[seStop ade215 0.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+[shakeStop]
+
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+＠Ｕ－オルガマリー
+き[messageShake 0.05 4 3 0.3]ゃああああああああ！[r]これ苦手、なんかダメ！　てったい、てったーい！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠ネモ・マリーン
+うそ、爬虫類ダメな大統領だったんだ～～！（涙）[r]ボク支持者やめますぅ～～！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+＠Ｕ－オルガマリー
+っ、誰だって苦手なものはあるでしょう！？[r][%1]！
+[k]
+
+＠Ｕ－オルガマリー
+こっち来てなんとかして！[r]切り札とか持ってるんでしょう！？
+[k]
+
+？1：そうしたいのは山々なんだけど……！
+？2：（令呪も使えない、召喚もできない……）
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[cueSe SE_22 22_ad1206]
+[shake 0.05 2 2 1.5]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.4]
+
+[se ad7]
+[seVolume ad7 0 0.6]
+[se ad1006]
+[seVolume ad1006 0 0.6]
+[charaMoveScale C 1.15 0.3]
+[charaMove C 0,20 0.3]
+[blur motion 0.3 4 100 0.5 0.6 0.03 100]
+[charaFadeout C 0.3]
+
+[cameraMove 0.3 0,-15 1.1]
+[wipeout circleIn 0.3 1.0]
+[seStop ad7 0.3]
+[seStop ad1006 0.3]
+[cueSeStop 22_ad1206 1.0]
+[bgmStop BGM_EVENT_80 1.0]
+[wait wipe]
+
+[cameraHome 0.1]
+[charaScale C 1.0]
+[blurOff motion 0.1]
+[scene 10000]
+[wt 0.2]
+
+[wipein circleIn 0.2 1.0]
+[wait wipe]
+[wt 0.2]
+
+[se bac6]
+[se bac5]
+[se bac4]
+[effect bit_talk_aerial_wave]
+[se ad974]
+[seVolume ad974 0 0.7]
+[wt 1.1]
+
+[seStop ad974 0.8]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[effectDestroy bit_talk_aerial_wave]
+
+[scene 169100]
+
+[cameraHome 0.3]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0 1]
+[charaShake C 0.03 3 4 0.5]
+[wt 0.8]
+
+[cueSe SE_22 22_ad1205]
+＠どう見ても恐竜
+[i npc_language_34][messageShake 0.05 4 3 0.3][line 3]！
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1219]
+
+[charaFadeout C 0.7]
+[cueSeStop 22_ad1219 1.6]
+[wt 2.2]
+
+
+[cueSe SE_21 21_ade580]
+
+[charaTalk off]
+
+[charaFace D 0]
+[charaFadein D 0.7 0,70]
+[charaFadein I 0.7 0,-250]
+[charaMove D 0,-30 2.8]
+[charaMove I 0,-300 2.8]
+
+[wt 0.4]
+[seStop 21_ade580 1.0]
+[wt 0.2]
+[wt 2.2]
+
+[bgm BGM_EVENT_79 0.1]
+
+＠カルデアの者
+初[#遭遇:そうぐう]とはいえ、無知性化したディノス数匹も[r]撃退できないとはな。
+[k]
+
+＠カルデアの者
+仮にも『人類最後のマスター』だろうに、ひどい醜態だ。
+[k]
+
+＠カルデアの者
+それとも[line 3]
+[k]
+
+[charaTalk D]
+[charaCrossFade D 1098181620 1 0.4]
+＠カルデアの者
+六つの異聞帯を切除した事で増長したか？[r]常に失敗を重ねる、人間らしい愚かさだが。[wait charaCrossFade D]
+[k]
+
+[messageOff]
+[charaFadeout D 1.0]
+[charaFadeout I 1.0]
+[wt 1.2]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+＠Ｕ－オルガマリー
+[line 3]オマエは[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ネモ・マリーン
+ん、誰？[r]知ってるひと、[%1]？
+[k]
+
+[charaScale I 1.0]
+[charaScale D 1.0]
+
+？1：[&ああ:うん]。ロマニ・アーキマン[line 3]
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.15]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 0.9]
+
+？1：……を名乗る、誰か、[&だ:だよ]
+？！
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_79 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

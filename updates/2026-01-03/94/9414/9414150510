@@ -1,0 +1,783 @@
+
+
+＄94-14-15-05-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 28010001 1 ダンテ]
+[charaSet B 28010001 1 ダンテ（演出用）]
+[charaSet C 1057000 1 セタンタ]
+[charaSet D 1057000 1 セタンタ（演出用）]
+[charaSet E 1098224300 1 岡田以蔵]
+[charaSet F 1098224300 1 岡田以蔵（演出用）]
+[charaSet G 1098255110 1 ゴルドルフ]
+[charaSet H 1098255100 1 ゴルドルフ（演出用）]
+[charaSet I 1098257310 1 ダ・ヴィンチ]
+[charaSet J 1098257300 1 ダ・ヴィンチ（演出用）]
+[charaSet K 1098319200 1 カドック]
+[charaSet L 1098239320 1 カドック（演出用）]
+[charaSet M 1098257810 1 マシュ]
+[charaSet N 1098319000 1 ホテルスタッフ]
+
+[charaSet O 1098275510 1 鶏1]
+[charaSet P 1098275510 1 鶏2]
+[charaSet Q 1098275510 1 鶏3]
+
+[sceneSet R 243300 1]
+[sceneSet S 243300 1]
+[sceneSet T 132900 1]
+[charaScale T 1.2]
+
+[charaSet U 1098257800 1 マシュ（演出用）]
+
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用2]
+[charaSet X 98115000 1 エフェクト用3]
+[charaSet Y 98115000 1 エフェクト用4]
+
+[charaPut V 2000,2500]
+[charaEffect V bit_talk_10_LowLevel]
+
+[cameraMove 0.1 0,0 1.01]
+
+[scene 243300]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+
+[se ade413]
+
+[scene 200300 0.1]
+[wt 0.1]
+
+[wt 1.3]
+
+[subCameraOn 2]
+[charaLayer C sub #A]
+[charaLayer E sub #A]
+[charaLayer R sub #A]
+
+[charaLayer U sub #B]
+[charaLayer H sub #B]
+[charaLayer L sub #B]
+[charaLayer J sub #B]
+[charaLayer T sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask08 5 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask08 5 0,0,0,255]
+
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaScale C 1.1]
+[charaScale E 1.1]
+[charaScale R 1.2]
+
+[charaTalk depthOff]
+[charaDepth R 2]
+[charaDepth C 3]
+[charaDepth E 4]
+
+[charaTalk off]
+
+
+[charaFace E 8]
+[charaFace C 1]
+[charaFadein E 0 256,225]
+[charaFadeinFSL C 0 -256,225]
+[charaFadein R 0 -25,0]
+
+[charaScale U 1.1]
+[charaScale H 1.1]
+[charaScale L 1.1]
+[charaScale J 1.1]
+[charaScale T 1.2]
+
+[charaDepth T 2]
+[charaDepth J 3]
+[charaDepth H 4]
+[charaDepth L 5]
+[charaDepth U 3]
+
+[charaFace U 6]
+[charaFace J 8]
+[charaFace H 0]
+[charaFace L 1]
+[charaFadeinFSL J 0 -420,235]
+[charaFadeinFSL L 0 -160,235]
+[charaFadeinFSR H 0 175,215]
+[charaFadeinFSR U 0 450,225]
+[charaFadein T 0 25,0]
+
+[subRenderFadein #A 0.5 0,-250]
+[charaMove E 306,225 4.0]
+[charaMoveFSL C -206,225 4.0]
+[charaMove R 25,0 4.0]
+
+[wt 2.1]
+
+[subRenderFadein #B 0.5 0,-440]
+[subRenderFadeout #A 0.5]
+[charaMoveFSL J -470,235 4.0]
+[charaMoveFSL L -210,235 4.0]
+[charaMoveFSR H 125,215 4.0]
+[charaMoveFSR U 400,225 4.0]
+[charaMove T -25,0 4.0]
+
+[wt 2.1]
+
+[subRenderFadeout #B 0.5]
+[wt 0.5]
+[charaFadeout U 0]
+[charaFadeout E 0]
+[charaFadeout C 0]
+[charaFadeout J 0]
+[charaFadeout H 0]
+[charaFadeout L 0]
+[charaFadeout R 0]
+[charaFadeout T 0]
+[wt 0.15]
+[subCameraOff]
+[charaLayer E normal]
+[charaLayer C normal]
+[charaLayer U normal]
+[charaLayer J normal]
+[charaLayer H normal]
+[charaLayer L normal]
+[charaLayer R normal]
+[charaLayer T normal]
+[charaScale E 1.0]
+[charaScale C 1.0]
+[charaScale U 1.0]
+[charaScale J 1.0]
+[charaScale H 1.0]
+[charaScale L 1.0]
+[charaScale R 1.0]
+[charaScale T 1.0]
+[wt 0.05]
+
+[subCameraOn 1]
+[charaLayer A sub #A]
+[charaLayer R sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask11 5 0,0,0,255]
+
+[subRenderScale #A 1.0]
+
+[subRenderDepth #A 1]
+
+[charaScale A 0.9]
+[charaScale R 1.2]
+
+[charaDepth R 2]
+[charaDepth A 3]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0 455,205]
+[charaFadein R 0 0,75]
+
+[subRenderFadeinFSSideR #A 0.4 -55,-145]
+[subRenderMoveFSSideR #A -25,-175 0.4]
+[wt 0.7]
+
+[bgm BGM_REQUIEM 0.1]
+
+＠ダンテ
+……説明しよう……！[r]現状、ホテルの問題は大きく四つ。
+[k]
+
+[charaFace A 15]
+
+[scene 243700 0.5]
+
+＠ダンテ
+一つ目、レストランの食材不足。[wt 1.0][scene 243701 0.5][r]二つ目、仏像盗難問題。
+[k]
+
+[scene 243702 0.5]
+
+＠ダンテ
+三つ目、ＶＩＰ客の夫婦問題。[wt 1.0][scene 243703 0.5][r]四つ目、詐欺師の暗躍問題。
+[k]
+
+[charaFace A 18]
+
+＠ダンテ
+これまで……私たちは、一つ解決してリセットしたり、[r]あるいは解決せずに流したりを続けたが……。
+[k]
+
+[scene 243704 0.5]
+[charaFace A 0]
+＠ダンテ
+今回は、これを全て解決する。[r]そしてその代わり、報酬を要求する。
+[k]
+
+[messageOff]
+[charaTalk C,A]
+[charaFace C 8]
+[charaFadein C 0.6 1]
+[subRenderFadeout #A 0.6]
+[scene 243300 0.6]
+[wt 0.6]
+
+[charaFadeout A 0]
+[charaFadeout R 0]
+[wt 0.15]
+[subCameraOff]
+[charaLayer A normal]
+[charaLayer R normal]
+[charaScale A 1.0]
+[charaScale R 1.0]
+[wt 0.05]
+
+＠セタンタ
+報酬？　や、別にそんなもの貰っても[r]しょーがねーだろ。
+[k]
+
+？1：もしかして[line 3]
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ダンテ
+……フフ……。
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_REQUIEM 1.0 0.5]
+[wait wipe]
+
+[scene 243300]
+
+[charaTalk A]
+[charaFace A 4]
+[wt 1.0]
+
+[wipein rollLeft 1.0 1.0]
+[bgm BGM_REQUIEM 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠ダンテ
+……という訳だが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+
+＠岡田以蔵
+……まあ、そんなら頭数は集まるが……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠セタンタ
+でも、こんなんでエレノア喜んでくれるか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠ダンテ
+……フフ……それは……わからない……。[r]ウザったいだけかもしれない……。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[bgmStop BGM_REQUIEM 1.5]
+
+＠ダンテ
+だが……今回のターンだけは……。[r]彼女に一生に一度の奇跡を見せてやりたい……。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth A 2]
+[charaDepth R 3]
+[charaDepth B 4]
+[charaScale B 1.4]
+[charaScale R 1.4]
+
+[charaFace B 9]
+[charaFadeinFSR B 0.7 200,50]
+[charaFadein R 0.7 -100,-225]
+[charaMoveFSR B 200,-50 25.0]
+[charaMove R -100,-325 25.0]
+[wt 0.9]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠ダンテ
+世界は……愚か者か罪人ばかりだ……。[r]それは私がいた時代も、そしてこの時代も……。
+[k]
+
+＠ダンテ
+恐らく、さほど変わらない……。[r]国が違っても、時代が違っていても……。
+[k]
+
+[charaFace B 3]
+
+＠ダンテ
+でも……だからこそ……子供の願いくらい……。[r]叶えられる世界でいたいじゃないか……。
+[k]
+
+＠ダンテ
+我々は……折角の……英霊なのだし……。
+[k]
+
+[messageOff]
+[charaFace A 16]
+[charaFadeout B 0.6]
+[charaFadeout R 0.6]
+[wt 0.8]
+
+[charaTalk on]
+＠ダンテ
+だからその……聖杯は……ひとまず……[r]置いておくとして……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+＠ゴルドルフ
+こらこら、置くな置くな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠ダンテ
+……フフ……ごめんなさい……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk I]
+[charaFace I 22]
+[charaFadein I 0.1 1]
+
+＠ダ・ヴィンチ
+でもゴルドルフくん。正直、手詰まり感も甚だしい状況だ。[r]現場の判断で動いてもらった方が良くないかい？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 16]
+[charaFadein G 0.1 1]
+
+＠ゴルドルフ
+……そうだな。いいだろう。
+[k]
+
+[charaFace G 14]
+
+＠ゴルドルフ
+だが聖杯顕現の予兆があったら、[r]直ちにそちらを優先するように！
+[k]
+
+[bgmStop BGM_EVENT_11 1.5]
+
+？1：はい！
+？！
+
+[messageOff]
+[charaPut V 2000,2500]
+[charaDepth G 2]
+[charaDepth R 3]
+[charaDepth A 4]
+
+[charaScale A 1.2]
+[charaScale R 1.2]
+[charaTalk A,G]
+[charaFace A 0]
+[charaFadein A 0.4 170,0]
+[charaFadein R 0.4 -10,-260]
+[charaMove A 150,0 0.4]
+[charaMove R -30,-260 0.4]
+[wt 0.4]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠ダンテ
+では、やることを二つに分けよう……。[r]私は……盗難防止と……ＶＩＰに……。
+[k]
+
+[messageOff]
+[charaDepth S 5]
+[charaDepth C 6]
+[charaDepth E 7]
+
+[charaScale E 1.2]
+[charaScale C 1.2]
+[charaScale S 1.2]
+[charaTalk E]
+[charaFace E 16]
+[charaFace C 1]
+[charaFadein E 0.4 -70,0]
+[charaFadein C 0.4 -270,0]
+[charaFadein S 0.4 10,-260]
+[charaMove E -50,0 0.4]
+[charaMove C -250,0 0.4]
+[charaMove S 30,-260 0.4]
+[wt 0.4]
+
+[charaDepth K 2]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[charaFadeout A 0.1]
+[charaFadeout R 0.1]
+[wt 0.1]
+
+＠岡田以蔵
+わしとセタンタは食材と詐欺師に行くつもりやき。[r]マスターはダンテについちょってくれ。
+[k]
+
+？1：了解！
+？！
+
+[messageOff]
+[charaTalk K,E]
+[charaPut V 1]
+[charaFadeout E 0.4]
+[charaFadeout C 0.4]
+[charaFadeout S 0.4]
+[wt 0.5]
+
+
+＠カドック
+僕たちは両方モニターする。
+[k]
+
+＠カドック
+で、何かトラブルがあったらもう片方に知らせて、[r]状況によっては向かってもらう。
+[k]
+
+[charaFace K 1]
+
+＠カドック
+それから……タイムリミットは夕方までだ。
+[k]
+
+＠カドック
+エレノアがジニーを召喚してしまう前に、[r]何としてでも……いいな？
+[k]
+
+？1：オッケー、やってみる！
+？！
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠ダ・ヴィンチ
+うんうん、頼もしいね。[wt 0.6][charaFace I 17][r]それじゃ、四人とも[line 3]任せたよ！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+
+[charaTalk off]
+[charaDepth C 2]
+[charaDepth E 3]
+[charaDepth A 4]
+
+[charaScale A 1.0]
+[charaScale E 1.0]
+[charaScale C 1.0]
+
+[charaFace A 3]
+[charaFadein A 0.1 1]
+[charaFace C 1]
+[charaFadeinFSL C 0.1 -350,0]
+[charaFace E 16]
+[charaFadeinFSR E 0.1 350,0]
+[wt 0.6]
+
+[charaMoveReturn A 0,-6 0.5]
+[wt 0.05]
+[charaMoveReturnFSL C -350,-7 0.4]
+[charaMoveReturnFSR E 350,-4 0.3]
+[wt 1.6]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_62 1.0]
+[wait fade]
+
+[charaFadeout E 0.4]
+[charaFadeout C 0.4]
+[charaFadeout A 0.4]
+
+[sceneSet R 243000 1]
+[sceneSet S 243000 1]
+[sceneSet T 202800 1]
+
+[subCameraOn 1]
+
+[charaLayer X sub #A]
+[charaLayer F sub #A]
+[charaLayer S sub #A]
+
+[charaDepth X 9]
+[charaDepth F 4]
+[charaDepth S 2]
+
+[charaScale F 1.05]
+[charaScale S 1.2]
+
+[subCameraFilter #A maskEdge cut359_mask12 4 255,255,255,255 0]
+
+[charaPut X 0,225]
+[charaEffect X bit_talk_42 0,0 H]
+
+[charaFace F 0]
+[charaFadein F 0.1 -460,250]
+[charaFace S 0]
+[charaFadein S 0.1 140,0]
+
+[scene 243000]
+
+[pictureFrameTop cut063_cinema]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaScale E 1.0]
+[charaScale R 1.0]
+
+[charaDepth R 3]
+[charaDepth E 4]
+[charaDepth W 5]
+
+[se ad186]
+[charaPut W 1]
+[charaEffect W bit_talk_41_fs]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.2 0,-50]
+[charaFadein R 0.2 0,-200]
+
+[charaMoveScaleEase E 1.2 0.25 easeOutSine]
+[charaMoveScaleEase R 1.2 0.25 easeOutSine]
+[charaMoveEase E 0,-50 0.25 easeOutSine]
+[charaMoveEase R 0,-280 0.25 easeOutSine]
+
+＠岡田以蔵
+わしが[#こんしぇるじゅ]の以蔵じゃぁ！
+[k]
+
+[messageOff]
+[se ad7]
+[charaEffectStop W bit_talk_41_fs]
+[charaMoveEase E -225,-50 0.4 easeOutSine]
+[charaFadeout E 0.3]
+[wt 0.5]
+
+[charaPut W 2000,2500]
+
+[charaDepth C 1]
+[charaDepth N 2]
+[charaFace C 3]
+[charaFace N 1]
+[charaFadein C 0.1 0,-50]
+[charaFadein N 0.1 275,-50]
+[wt 0.4]
+
+[charaTalk C]
+[charaFadeout R 0.5]
+[wt 0.65]
+
+＠セタンタ
+セタンタだ。よし、食材だな。[r]集める食材もわかってる。皆まで言うなって！
+[k]
+
+[messageOff]
+[se ade427]
+[charaTalk F]
+[charaFace F 5]
+[subRenderFadeinFSSideL #A 0.3 100,-220]
+[subRenderMoveEaseFSSideL #A 50,-270 0.3 easeOutSine]
+[wt 0.4]
+
+
+＠F：岡田以蔵
+何しゆう、セタンタ！[r]置いてくぜよ！
+[k]
+
+[messageOff]
+[seStop ade427 0.3]
+[subRenderFadeout #A 0.3]
+[subRenderMoveEaseFSSideL #A 0,-320 0.3 easeOutSine]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 12]
+
+＠セタンタ
+あんたが急ぎすぎなんだよ、スカタン！[r]兄貴ぶるなら兄貴らしく、どっしり構えてろ！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.8 1.0]
+[bgm BGM_EVENT_94 0.8 0.5]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout N 0.1]
+
+[charaScale E 1.0]
+[charaScale R 1.0]
+
+[charaPut X 2000,2500]
+[charaEffectDestroy X bit_talk_42]
+[charaFadeout F 0.1]
+[charaFadeout S 0.1]
+[charaLayer X main]
+[charaLayer F main]
+[charaLayer S main]
+[subCameraOff]
+
+[charaDepth O 5]
+[charaDepth P 4]
+[charaDepth Q 3]
+[charaDepth T 2]
+
+[charaScale O 1.2]
+[charaScale P 1.2]
+[charaScale Q 1.2]
+[charaScale T 1.2]
+
+[scene 202800]
+
+[wt 0.8]
+
+[wipein rightToLeft 0.8 1.0]
+[bgm BGM_EVENT_94 0.8 1.0]
+[wait wipe]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth O 5]
+[charaDepth P 3]
+[charaDepth Q 4]
+
+[charaScale O 1.2]
+[charaScale P 1.2]
+[charaScale Q 1.2]
+
+[effect bit_talk_41_fs 0,0]
+[cueSe SE_23 23_ad1314]
+[charaFace O 0]
+[charaFadein O 0.2 10,40]
+[wt 0.2]
+[charaRollAxis Q y 180 0 0]
+[charaFace Q 0]
+[charaFadeinFSL Q 0.2 -335,20]
+[wt 0.2]
+[charaFace P 0]
+[charaFadeinFSR P 0.2 330,20]
+[wt 0.2]
+[se ade207]
+[wt 2.0]
+
+[effectStop bit_talk_41_fs]
+[wt 0.2]
+
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.4 30,-50]
+[charaMove E 0,-50 0.4]
+[wt 0.4]
+[seStop ad444 0.2]
+＠岡田以蔵
+よしよし、相変わらず暴れゆう。[r]斬れば大人しゅうなるじゃろ。[se ad976]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 12]
+[charaPut C 0,-50]
+[se ad223]
+[fowardEffect bit_talk_quickmove 0,-50]
+[charaSpecialEffect C appearance 1 0.25]
+[wt 0.9]
+
+＠セタンタ
+斬るのはいいけどな……食肉だってこと、[r]忘れるなよ！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_94 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

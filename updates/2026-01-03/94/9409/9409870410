@@ -1,0 +1,579 @@
+
+＄94-09-87-04-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098297200 1 海幸彦]
+[charaSet B 1098296720 1 日比乃ひびき]
+[charaSet C 10017910 1 桂木千鍵]
+[charaSet D 5019002 1 エルメロイⅡ世]
+[charaSet E 2040001 1 清少納言]
+[charaSet F 1098297010 1 シーボルト]
+
+[charaSet N 1098297200 1 海幸彦（演出用）]
+
+[sceneSet O 218603 1]
+[charaScale O 1.2]
+[sceneSet P 218603 1]
+[charaScale P 1.2]
+
+[imageSet Q back10000 1]
+[charaDepth Q 2]
+[charaScale Q 1.1]
+
+[charaSet X 98115000 1 エフェクト用]
+[charaSet Y 98115000 1 エフェクト用2]
+
+[charaTalk depthOff]
+[charaDepth N 6]
+[charaDepth A 5]
+[charaDepth O 1]
+[charaDepth C 2]
+[charaDepth P 4]
+
+[pictureFrame cut063_cinema]
+[effect bit_sepia01_depth_fs]
+[cameraFilter gray]
+[scene 156600]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_95 0.1]
+
+
+
+＠
+昔むかし、あるところに[line 3]
+[k]
+
+＠
+漁が得意な兄と、[r]狩りが得意な弟がいたと云う。
+[k]
+
+＠
+ある日、兄の釣り針を失くして怒りを買った弟は、[r]海神に知恵を借りるべく海底の宮殿へと赴いた。
+[k]
+
+[messageOff]
+[scene 161300 0.7]
+[wt 1.0]
+
+＠
+海神の娘に見初められた弟は宮殿に留まる事となり、[r]夢のような日々を過ごしていたが……
+[k]
+
+＠
+やはり気がかりなのは兄の事。[r]海神の協力を得て、ついに釣り針を取り戻す。
+[k]
+
+[messageOff]
+[scene 109600 0.7]
+[wt 1.0]
+
+＠
+海神から授かった二つの宝玉と、釣り針を手に、[r]娘に見送られながら、弟は地上へと帰還する。
+[k]
+
+＠
+だが、ようやく持ち帰った釣り針を返しても、[r]兄の怒りはおさまる様子もない。
+[k]
+
+[messageOff]
+[scene 185100 0.7]
+[wt 1.0]
+
+＠
+そこで弟は『[#潮満珠:しおみつたま]』から海水を呼び、[r]怒れる兄を溺れさせてしまう。
+[k]
+
+＠
+兄が助けを求めれば、今度は『[#潮干珠:しおひるたま]』を持ち、[r]海水を消し去ってこれを救い出す。
+[k]
+
+[messageOff]
+[scene 147202 0.7]
+[wt 1.0]
+
+＠
+もはや敵わぬと悟った兄は観念し、[r]弟への服従を誓う事となった。
+[k]
+
+＠
+その弟の名は[#山幸彦:やまさちひこ]。[r]兄の名は[#海幸彦:うみさちひこ]と云う[line 3]。
+[k]
+
+[messageOff]
+[wt 1.2]
+[bgmStop BGM_MAP_95 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[effectDestroy bit_sepia01_depth_fs]
+[pictureFrame]
+[cameraFilter normal]
+
+[subCameraOn 1]
+[charaLayer B sub #A]
+[charaLayer O sub #A]
+[charaLayer C sub #A]
+[subCameraFilter #A normal]
+
+[charaDepth P 2]
+[charaDepth X 3]
+[charaDepth A 4]
+
+[charaScale A 1.2]
+[charaScale X 1.2]
+[charaPut X 0,-100]
+[charaEffect X bit_talk_charge_aura_05]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaFadein P 0.1 80,-280]
+
+[charaFace C 23]
+[charaFadein C 0.1 0,-30]
+[charaFadein O 0.1 -80,-280]
+[scene 218603]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.6]
+
+[charaEffectStop X bit_talk_charge_aura_05]
+[bgm BGM_EVENT_114 0.1]
+
+＠海幸彦
+神霊[line 3][#海幸彦]。
+[k]
+
+？1：海幸彦って……
+？2：たしか、日本神話の……！？
+？！
+
+[messageOff]
+[charaTalk A,C]
+[subRenderFadein #A 0.4 0,0]
+[wt 0.4]
+[charaFadeout A 0.1]
+[charaFadeout P 0.1]
+[charaPut X 2500,2500]
+[charaEffectDestroy X bit_talk_charge_aura_05]
+[wt 0.1]
+
+＠桂木千鍵
+な、なんか……すごいの出て来たんだが！？
+[k]
+
+[messageOff]
+[charaMoveScaleEase C 0.95 0.7 easeOutSine]
+[charaMoveScaleEase O 1.15 0.7 easeOutSine]
+
+[charaMoveEase C 120,-35 0.7 easeOutSine]
+[charaMoveEase O 45,-260 0.7 easeOutSine]
+[wt 0.85]
+
+[se ad984]
+[charaDepth B 3]
+[charaScale B 1.3]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.4 -180,20]
+[charaMove B -140,20 0.4]
+[wt 0.4]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 0.25]
+
+＠日比乃ひびき
+チカちゃん、下がって。
+[k]
+
+[charaFace B 4]
+＠日比乃ひびき
+あれは、きっとすごく……[r][#よくないものだよ]。
+[k]
+
+[messageOff]
+[charaTalk B,D]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+＠エルメロイⅡ世
+くそっ！[r]ここにきて、神霊サーヴァントだって！？
+[k]
+
+[charaLayer B normal]
+[charaLayer C normal]
+[charaLayer O normal]
+[subCameraOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠清少納言
+いいや……。
+[k]
+
+＠清少納言
+[#意外と大した事なさそうだぜ]、あの神様。
+[k]
+
+[charaFace E 1]
+＠清少納言
+なにせ、存在を気付かないほどの魔力量だもんね！[r]これならおとひーの方がよっぽど強かったじゃん！
+[k]
+
+＠清少納言
+それに向こうは一人で、こっちは二人……[r]数なら断然こっちのが有利ですぜ、先生！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠エルメロイⅡ世
+次々とフラグみたいなこと言うのやめろよ！？
+[k]
+
+[charaFace D 5]
+＠エルメロイⅡ世
+でも、確かに……こいつからは神霊特有の、[r]あの圧倒的な魔力が感じ取れない。
+[k]
+
+＠エルメロイⅡ世
+召喚可能なレベルにまで格を落とした神霊……[r]それならば、まだ戦いようはあるけれど……！
+[k]
+
+[charaDepth D 3]
+[charaDepth Q 2]
+[charaPut Q 1]
+[charaFadeTime Q 0.2 0.5]
+＠エルメロイⅡ世
+（なんだろう……何か、嫌な予感がする……）
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_114 0.4 0.4]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout Q 0.1]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_114 0.4 0.7]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[wt 0.2]
+
+＠海幸彦
+鬼道……いや、[r]大陸の[#呪:まじな]い師に、異国の女か。
+[k]
+
+[messageOff]
+[subCameraOn 1]
+[charaTalk E]
+[charaLayer E sub #A]
+[charaLayer O sub #A]
+[subCameraFilter #A maskEdge cut359_mask23 4 255,255,255,255 0]
+[subRenderScale #A 0.55]
+[charaScale E 2.0]
+[charaScale O 1.2]
+[charaDepth E 2]
+[charaDepth O 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0 370,180]
+[charaFadein O 0 -150,-300]
+[subRenderFadein #A 0.15 150,0]
+[wt 0.2]
+
+＠清少納言
+バリバリの日本人ですが！？[subRenderShake #A 0.05 6 6 0.4]
+[k]
+
+[subRenderFadeout #A 0.15]
+[wt 0.15]
+[charaFadeout E 0]
+[charaFadeout O 0]
+[wt 0.05]
+
+[charaTalk A]
+[charaFace A 1]
+＠海幸彦
+兵としては随分と若そうだが。[r]サーヴァントというのは、こういうものか。
+[k]
+
+[charaLayer E normal]
+[charaLayer O normal]
+[charaScale E 1.0]
+[subCameraOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠シーボルト
+海幸サン。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠海幸彦
+おお、主殿はそこで見ているといい。[r]特等席というやつだ。
+[k]
+
+＠海幸彦
+人ではないモノ同士の『決闘』……。[r]せいぜい見逃さんようにな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠シーボルト
+……いいでしょう。
+[k]
+
+＠シーボルト
+こちらから余計な手出しはしません。[r]アナタにお任せしますよ、海幸サン。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_114 0.4 0.4]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[charaTalk off]
+[charaDepth E 2]
+[charaDepth D 3]
+[charaDepth P 4]
+[charaDepth A 5]
+
+[charaFace E 5]
+[charaFadein E 0.1 -256,0]
+[charaFace D 5]
+[charaFadein D 0.1 256,0]
+[wt 0.4]
+
+[bgm BGM_EVENT_114 0.4 1.0]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[wt 0.1]
+
+[cueSe Servants_1001500 m53226]
+[cueSe Servants_204000 bac1544]
+[charaMoveEase E -256,-10 0.3 easeOutQuart]
+[charaMoveEase D 256,-6 0.3 easeOutSine]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk D]
+＠エルメロイⅡ世
+ッ……！！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_114 0.4 0.4]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[charaScale P 1.2]
+[charaFadein P 0.3 125,-280]
+[wt 0.4]
+
+[bgm BGM_EVENT_114 0.4 1.0]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[cueSe SE_24 24_ade1034]
+[wt 0.1]
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 0,10]
+[wt 0.4]
+[seStop 24_ade1034 0.4]
+[wt 0.2]
+
+＠海幸彦
+フフ……。
+[k]
+
+[charaFace A 0]
+＠海幸彦
+かつての神が、人の仔に従うか。[r]この落ちぶれた姿を晒したくはなかったがな。
+[k]
+
+[bgmStop BGM_EVENT_114 1.5]
+＠海幸彦
+なに、冥府への土産話には悪くなかろう。
+[k]
+
+[charaFace A 3]
+＠海幸彦
+遠慮はいらぬ、[r]持って行くがいい[line 3]！！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad875]
+[effect bit_talk_pressure_fs]
+[wt 1.4]
+
+[subCameraOn 1]
+[charaLayer D sub #A]
+[charaLayer O sub #A]
+[subCameraFilter #A through]
+[charaTalk depthOff]
+[charaDepth O 1]
+[charaDepth D 2]
+
+[charaScale O 1.0]
+[charaScale D 1.0]
+
+[charaFace D 5]
+[charaFadein D 0.1 0,0]
+[charaFadein O 0.1 0,-200]
+[wt 1.0]
+
+[subRenderFadein #A 0.4 0,0]
+[wt 0.4]
+
+[charaFadeout A 0.1]
+[charaFadeout P 0.1]
+[effectDestroy bit_talk_pressure_fs]
+[wt 0.2]
+
+[bgm BGM_EVENT_24 0.1]
+[charaTalk on]
+＠エルメロイⅡ世
+く……。[r]やっぱり、違う……！
+[k]
+
+＠エルメロイⅡ世
+こいつが並のサーヴァントなわけがない……！[r]どうする、ここは一旦退くべきか！？
+[k]
+
+＠エルメロイⅡ世
+対策もなしに、正面から神霊を相手にするなんて、[r]あまりにも無謀すぎる……！
+[k]
+
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠清少納言
+ビビってる場合じゃねえぞ、先生！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[subRenderFadein #A 0.1 0,0]
+＠エルメロイⅡ世
+！！
+[k]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠清少納言
+[#潮干珠:しおひるたま]どころか、[r]本命の聖杯とラスボスが目の前にいるんだろ！
+[k]
+
+＠清少納言
+ここで退いて、龍宮城に逃げられたら[line 3][r]また振り出しに戻っちゃうぜ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaLayer D normal]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠エルメロイⅡ世
+オマエ、わかってて……。
+[k]
+
+[charaFace D 2]
+＠エルメロイⅡ世
+くそっ……仕方ない！[r]ここでやるぞ、マスター！
+[k]
+
+＠エルメロイⅡ世
+相手は何を仕掛けてくるかわからない！[r]探りながらの戦いになる、いいな！
+[k]
+
+？1：了解……！
+？2：二人とも、気をつけて！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠清少納言
+うおおおおーーーーーッ！！[r][#先手必勝:せんてひっしょう]じゃあーーーッ！！
+[k]
+
+
+[messageOff]
+[fowardEffect bit_talk_41_fs 0,35]
+[se ad1006 0.5]
+[blur motion 0.5 4 10000 0.5 0.6 0.05 100]
+[cueSe SE_22 22_ad1187 0.4]
+[seStop 22_ad1187 0.4]
+[charaMoveEase E 0,5 0.5 easeOutQuart]
+[charaMoveScaleEase E 1.2 0.5 easeOutQuart]
+[cameraMoveEase 0,-15 0.5 easeOutQuart 1.2]
+[wt 0.3]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

@@ -1,0 +1,1181 @@
+
+
+
+
+
+
+
+
+
+＄04-00-05-10-4-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098239320 1 カドック]
+[charaSet B 1098257900 1 マシュ]
+[charaSet C 28010001 1 ダンテ]
+[charaSet D 1098321000 1 メタトロン・ジャンヌ]
+[charaSet E 1098321900 1 スタルジオ]
+[charaSet F 1098322000 1 セリエナ]
+[charaSet G 3058000 1 アショカ王]
+[charaSet H 1098321500 1 天草四郎]
+[charaSet I 1098324400 1 リリス]
+[charaSet J 98115000 1 エフェクト用]
+[imageSet K cut677_sword 1]
+[sceneSet L 10000 1]
+
+[charaSet M 1098322501 1 天使_第五階梯]
+[charaSet N 1098324700 1 天使_第六階梯_演出用(横幅が短い)]
+[charaSet O 1098322601 1 天使_第六階梯2]
+
+[sceneSet P 245901 1]
+[charaScale P 1.4]
+
+[charaSet Q 1098239320 1 カドック_サブレイヤー用]
+[charaSet R 1098257900 1 マシュ_サブレイヤー用]
+[charaSet S 28010001 1 ダンテ_サブレイヤー用]
+[charaSet T 98115000 1 エフェクト_サブレイヤー用]
+
+[sceneSet U 245901 1]
+[charaScale U 1.4]
+
+[sceneSet V 246104 1]
+[charaScale V 1.2]
+
+[charaSet X 8001000 1 マシュ_シールダー第一]
+[imageSet Y cut691_frame_left 1]
+
+[subCameraOn 2]
+[charaLayer Q sub #A]
+[charaLayer R sub #A]
+[charaLayer S sub #A]
+[charaLayer T sub #A]
+[charaLayer U sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask11 4 255,255,255,255 0]
+
+[charaPut J 1]
+[charaEffect J bit_talk_rain_gr]
+
+[charaPut T 1]
+[charaEffect T bit_talk_rain_gr]
+
+
+[cameraMove 0 0,0 1.01]
+
+[charaTalk depthOff]
+[charaDepth J 7]
+[charaDepth P 9]
+[charaDepth K 8]
+[charaDepth L 7]
+
+[charaDepth U 1]
+[charaDepth T 9]
+[charaDepth R 2]
+[charaDepth Q 3]
+[charaDepth S 4]
+
+[charaFadein U 0.1 0,100]
+[charaFadein Q 0.1 420,330]
+
+[scene 245901]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[se ade307]
+[seVolume ade307 0 0]
+[seVolume ade307 0.5 0.4]
+[fadein black 0.5]
+[bgm BGM_EVENT_24 0.5]
+[wait fade]
+
+＠カドック
+ゲホッ、ゲホッ……！[r]くそ、天使は倒したが……この雨はキツいな！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠マシュ
+どこかへ避難しましょう！[r]雨宿りができないと……！
+[k]
+
+[messageOff]
+[seVolume ade307 1.5 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[cueSe SE_25 25_ad1489]
+[seVolume 25_ad1489 0 0.6]
+[cueSe SE_25 25_ad1488]
+[wt 2.0]
+[seStop 25_ad1488 1.0]
+[seStop 25_ad1489 1.0]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠カドック
+……こんな時に限って、増援が来るのかよ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠マシュ
+もう一戦はわたしたちも保ちません。[r]それに……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0]
+[charaFace F 6]
+[charaFadein F 0.1 2]
+
+＠スタルジオ
+うう……。
+[k]
+
+＠セリエナ
+けほっ、けほっ……。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠マシュ
+お二人もかなり辛そうです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠カドック
+逃げるしかないか。
+[k]
+
+＠カドック
+ダンテ、スタルジオとセリエナ、[r][%1]を頼む！
+[k]
+
+[charaFace A 7]
+
+＠カドック
+僕とマシュは[#殿:しんがり]を担当する。[r]行け！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+……しかし、それでは……！
+[k]
+
+？1：待って、短剣がある！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠カドック
+地獄で休みたくなったなら、[r]使えとは言っていたが……。
+[k]
+
+？1：よし、使う！
+？！
+
+[charaFace A 4]
+
+＠カドック
+おい、ちょっとは考えさせ[line 3][r]判断が早いのはいいことだけどな！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_24 1.0 0.4]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad7]
+[seVolume ad7 0 0.5]
+[charaPut L 1]
+[charaFadeTime L 0.2 0.5]
+[charaFadein K 0.2 0,-200]
+[wt 0.8]
+
+[charaEffectEdgeBlur K ffffff ffffff 4 5]
+[wt 0.5]
+[cueSe SE_24 24_ade1060]
+[wt 1.0]
+[se adm20]
+[wt 2.5]
+[seStop 24_ade1060 0.6]
+[charaFadein P 0.5 50,-200]
+[charaMoveEase P 150,-200 1.0 easeOutSine]
+[wt 0.5]
+[charaDepth J 10]
+
+[charaFadeout L 0.1]
+[charaFadeout K 0.1]
+[charaEffectEdgeBlurDestroy K]
+[wt 0.8]
+
+
+[charaTalk off]
+[charaDepth M 4]
+[charaDepth N 5]
+[charaDepth O 3]
+[charaDepth P 2]
+[charaDepth B 1]
+
+[cueSe SE_25 25_ad1489]
+[seVolume 25_ad1489 0 0.6]
+[cueSe SE_25 25_ad1488]
+[charaFace M 0]
+[charaFadeinFSR M 0.4 -100,0]
+[charaMoveEaseFSR M 300,0 1.0 easeOutSine]
+[wt 0.1]
+[charaFace N 1]
+[charaFadeinFSL N 0.4 -700,0]
+[charaMoveEaseFSL N -300,0 1.0 easeOutSine]
+[wt 1.5]
+[seStop 25_ad1488 1.0]
+[seStop 25_ad1489 1.0]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+[wt 1.5]
+[charaFadeout P 0.6]
+[charaFadeout M 0.6]
+[charaFadeout N 0.6]
+[charaFadeout O 0.6]
+[wt 1.0]
+
+＠マシュ
+天使増援、来ます……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.0]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[se ad241]
+[shake 0.05 1 3 2.5]
+[wt 3.0]
+[seStop ad241 1.0]
+
+？1：……地震？
+？！
+
+
+[se ad542]
+[se ad789]
+[se ad477]
+[se ad322]
+[se ad295]
+[se ad640]
+[se ad214]
+[fowardEffect bit_talk_impactlanding 0,-100]
+[wt 0.1]
+[shake 0.05 1 4 1.0]
+[effect bit_talk_dust_cloud]
+[wt 3.0]
+[seStop ad295 2.5]
+[seStop ad640 2.5]
+[seStop ad477 1.0]
+[wt 2.0]
+
+[charaTalk on]
+[charaTalk Q]
+[charaFace Q 4]
+[subRenderFadeinFSSideR #A 0.2 -20,-280]
+[subRenderMoveEaseFSSideR #A 0,-300 0.4 easeOutSine]
+
+＠Q：カドック
+……は？
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[charaTalk R]
+[charaFace R 20]
+[charaFadein R 0.1 360,330]
+
+＠R：マシュ
+え？
+[k]
+
+[charaFadeout R 0.1]
+[wt 0.1]
+
+[charaTalk S]
+[charaFace S 14]
+[charaFadein S 0.1 420,330]
+
+＠S：ダンテ
+……どういう……理屈だ……？
+[k]
+
+？1：なんで[line 3]
+？！
+
+[messageOff]
+[scene 246104 1.0]
+[charaFadein V 1.0 0,-220]
+[subRenderMoveEaseFSSideR #A 20,-320 0.4 easeOutSine]
+[subRenderFadeout #A 0.4]
+
+[effectStop bit_talk_dust_cloud]
+[wt 3.0]
+[seStop ad214 2.0]
+[charaFadeout S 0.1]
+[charaMoveScaleEase V 1.0 3.5 easeOutSine]
+[wt 4.5]
+
+[charaDepth V 1]
+[charaDepth B 2]
+[charaDepth A 3]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadeinFSR B 0.1 250,0]
+[wt 0.5]
+[se ad658]
+[charaCrossFade B 1098257910 6 0.3]
+[wait charaCrossFade B]
+
+＠マシュ
+ここに『グラナート』が……！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadeinFSL A 0.1 -250,0]
+
+＠カドック
+と、ともかく入るぞ！[r]幻覚じゃないよな……！
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[se ad667]
+[seVolume ad667 0 0.3]
+[cueSe SE_23 23_ade873]
+[charaMoveScale V 1.2 2.0]
+[wt 1.5]
+[seStop ad667 0.5]
+[seStop 23_ade873 0.5]
+[seStop ade307 0.5]
+[fadeout black 0.5]
+[wait fade]
+
+[scene 246300]
+
+[charaPut J 3000,3000]
+[charaEffectStop J bit_talk_rain_gr]
+
+[charaPut T 3000,3000]
+[charaEffectStop T bit_talk_rain_gr]
+
+[sceneSet P 245800 1]
+[charaScale P 1.2]
+
+[sceneSet U 246300 1]
+[charaScale U 1.4]
+[charaLayer U sub #A]
+[sceneSet V 246300 1]
+[charaScale V 1.0]
+
+[cueSe SE_24 24_ade1071]
+[charaFadeout V 0.1]
+
+[charaDepth V 1]
+[charaDepth B 2]
+[charaDepth A 3]
+[charaDepth D 4]
+[charaDepth H 5]
+[charaDepth E 6]
+[charaDepth F 7]
+[charaDepth C 8]
+[charaDepth J 9]
+
+[charaFadein V 0.1 0,-200]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 1.5]
+
+[cueSe SE_24 24_ade1072]
+[fadein black 0.6]
+[wait fade]
+
+[bgm BGM_EVENT_194 0.1]
+
+＠メタトロン・ジャンヌ
+おー、おかえりー。
+[k]
+
+？1：ただ……いま……？
+？！
+
+[charaFace D 14]
+
+＠メタトロン・ジャンヌ
+うん、出来るかどうかわからなかったけど、[r]我ながら、奇跡に近い所業と言わざるを得ない！
+[k]
+
+[charaFace D 18]
+
+＠メタトロン・ジャンヌ
+……不遜かな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+不遜だね……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠メタトロン・ジャンヌ
+[#懺悔:ざんげ]。[#驕:おご]りました。
+[k]
+
+？1：一体これどういうこと……？
+？！
+
+[charaFace D 28]
+
+＠メタトロン・ジャンヌ
+え、マスターってば、わからない？[r]鈍いぞ、キミ。
+[k]
+
+＠メタトロン・ジャンヌ
+汎人類史絶対救うマスターなら、[r]閃きだって大事だろー。
+[k]
+
+？1：まさかとは思うけど……
+？2：家ごと運んできた？
+？！
+
+[charaFace D 15]
+
+＠メタトロン・ジャンヌ
+なんだ、ちゃんと理解してんじゃん。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠カドック
+……そんな[#無茶苦茶:む ち ゃ く ち ゃ]な……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠メタトロン・ジャンヌ
+でも、これなら家を出ずに旅についていけるし……。
+[k]
+
+[charaFace D 14]
+
+＠メタトロン・ジャンヌ
+旅行で一番辛いのって、[r]自室に帰れないことだと思わない？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……と、ともかく。[r]今日はここで休みましょう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ダンテ
+スタルジオ、セリエナ。[r]君たちは……私の事務所で休むといい……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFace F 1]
+[charaFadein E 0.1 0]
+[charaFadein F 0.1 2]
+
+＠スタルジオ
+ありがとうございます。[r]お世話になります……。
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[wt 0.5]
+[cueSe SE_24 24_ad1354]
+[se ade247]
+[seVolume ade247 0 0.7]
+[charaMove E -306,0 0.4]
+[charaMove F 206,0 0.4]
+[charaFadeout E 0.4]
+[charaFadeout F 0.4]
+[wt 0.6]
+[seStop 24_ad1354 1.4]
+[seStop ade247 1.4]
+[wt 1.6]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠カドック
+僕たちもひとまず休むか。
+[k]
+
+＠カドック
+……で、ちょっと思ったんだが。[r]メタトロン、残りの……アショカ王とかリリスは？
+[k]
+
+？1：天草四郎も……
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe SE_24 24_ad1354]
+[wt 1.0]
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.4 1]
+[wt 0.4]
+[seStop 24_ad1354 0.2]
+
+＠天草四郎
+……ふぅ。[#厭:いや]な夢を見ました……。
+[k]
+
+＠天草四郎
+『グラナート』が空を飛び、[r]地獄の第三圏に着地する夢です……。
+[k]
+
+[charaFace H 3]
+
+＠天草四郎
+……まあ、夢じゃないんでしょうけど……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠メタトロン・ジャンヌ
+おう、夢じゃないぞ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠天草四郎
+やりやがったなこの野郎。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaRollAxis J y 180 0 0]
+[charaPut J -465,-200]
+[charaEffect J bit_talk_comic_noisily]
+[se ad330]
+[wt 3.0]
+
+[charaTalk D]
+[charaFace D 25]
+[charaFadein D 0.1 1]
+
+＠メタトロン・ジャンヌ
+ん？　電話だ。[r]マスター、出てー。
+[k]
+
+？1：なんで[&自分:わたし]が……
+？！
+
+[messageOff]
+[charaMoveScale J 1.2 1.0]
+[charaMove J -460,-160 1.0]
+[charaMove V 100,-220 1.0]
+[charaMoveScale V 1.2 1.0]
+[se ade247]
+[charaFadeout D 0.4]
+[charaMoveScale D 1.06 0.4]
+[charaMove D 50,25 0.4]
+[wt 1.0]
+[charaEffectStop J bit_talk_comic_noisily]
+[seStop ade247 0.2]
+[wt 0.5]
+[seStop ad330]
+[se ad331]
+[charaTalk Q]
+[charaFace Q 2]
+[charaFadein Q 0.1 -60,100]
+[charaFadein U 0.1 -150,-100]
+[wt 1.0]
+
+[charaScale D 1.0]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 255,255,255,255 0]
+[subRenderFadeinFSSideR #A 0.4 440,-150]
+[subRenderMoveEaseFSSideR #A 400,-150 0.4 easeOutSine]
+[wt 0.4]
+
+＠Q：カドック
+と言いつつ素直に出るのが、[r][%1]らしいな……実に。
+[k]
+
+[messageOff]
+[subRenderMoveEaseFSSideR #A 440,-150 0.4 easeOutSine]
+[subRenderFadeout #A 0.4]
+[wt 0.6]
+
+[charaLayer G sub #A]
+[charaLayer I sub #A]
+[charaLayer P sub #A]
+[charaDepth P 1]
+[charaDepth I 2]
+[charaDepth G 3]
+[charaDepth Y 9]
+[charaScale Y 1.32]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 -420,180]
+[charaFadein P 0.1 0,0]
+[subCameraFilter #A mask cut359_mask36]
+
+？1：はいもしもし、『グラナート』です
+？！
+
+
+[charaFadeinFSSideL Y 0.2 168,-206]
+[subRenderFadeinFSSideL #A 0.2 160,-200]
+
+＠アショカ王
+[%1]か。
+[k]
+
+[charaFace G 4]
+
+＠アショカ王
+『グラナート』がないのだが……。[r]どこに行ったかな。
+[k]
+
+？1：地獄の第三圏です
+？！
+
+[charaFace G 2]
+
+＠アショカ王
+暴食圏か。[r]であれば無理もなし[line 3]
+[k]
+
+[messageOff]
+[cueSe SE_25 25_ad1471]
+[charaFadeout Y 0.2]
+[subRenderFadeout #A 0.2]
+[wt 0.5]
+[charaFadeout G 0.1]
+[charaFadein P 0.1 0,50]
+[charaFadein I 0.1 -490,180]
+
+
+[se ad332]
+[wt 1.4]
+[seStop ad332 0.5]
+[wt 1.0]
+
+[charaEffect J bit_talk_comic_noisily]
+[se ad330]
+[wt 2.0]
+[seStop ad330]
+[se ad331]
+[charaPut J 3000,3000]
+
+[wt 0.5]
+？1：ウチは出前やってませんよー
+？！
+
+
+[charaTalk I]
+[charaFace I 8]
+[charaFadeinFSSideL Y 0.2 168,-206]
+[subRenderFadeinFSSideL #A 0.2 160,-200]
+＠リリス
+誰も出前頼んでないよ！？
+[k]
+
+[charaFace I 3]
+
+＠リリス
+それはともかくとして、[r]アテシたちの『グラナート』がないんだけど！？
+[k]
+
+？1：今は地獄の第三圏に……
+？！
+
+[charaFace I 13]
+
+＠リリス
+あー、クソ雨が降ってるあそこー。[r]ってことは、キミが呼んだ感じか。
+[k]
+
+[charaFace I 5]
+＠リリス
+緊急避難的なヤツか。[r]だったらしょうがないか……うーん。
+[k]
+
+＠リリス
+そうかー。[r]どうしようかな……野宿もいいけど……。
+[k]
+
+[charaFace I 18]
+
+＠リリス
+アテシみたいな美少女が野宿とか、[r]危険だと思わない？
+[k]
+
+？1：思う
+[branch select01]
+
+？2：いや全然思わない、平気平気
+[branch select02]
+
+？！
+[label select01]
+
+[charaFace I 9]
+
+＠リリス
+お、おう。思ったよりストレートに返されて、[r]ちょっと困惑するアテシ。
+[k]
+
+[charaFace I 6]
+
+＠リリス
+……なんか恥ずかしいけど、[r]とりあえずそっちに行くね。
+[k]
+
+[branch select_end]
+
+[label select02]
+
+[charaFace I 8]
+
+＠リリス
+あんだとこんにゃろう。
+[k]
+
+[charaFace I 18]
+＠リリス
+確かにアテシは本気になれば、[r]天使（上位除く）も魔獣も即ブッ殺しだが。
+[k]
+
+[charaFace I 3]
+
+＠リリス
+それはそれとして、[r]お清楚派を気取りたいので野宿はやだ！
+[k]
+
+？1：気取りたいんだ……
+？！
+
+
+
+[charaFace I 2]
+
+＠リリス
+という訳で今からそっちに行くわ。[r]待っててねー。
+[k]
+
+[branch select_end]
+[label select_end]
+
+[charaFace I 1]
+
+＠リリス
+あ、そうだ。大事なこと忘れてた。[r]夕飯食べてくから要らないって言っておいてー。
+[k]
+
+[messageOff]
+[cueSe SE_25 25_ad1471]
+[charaFadeout Y 0.2]
+[subRenderFadeout #A 0.2]
+[wt 0.5]
+[charaDepth V 2]
+[charaDepth H 1]
+[charaTalk off]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+[se ad332]
+[wt 1.5]
+[seStop ad332 1.0]
+[wt 1.0]
+[charaFadeout V 0.6]
+[wt 1.0]
+
+＠天草四郎
+……思春期の娘が夕飯を要らないと言った時の、[r]一抹の寂しさがあるような一言でしたね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 26]
+[charaFadein D 0.1 1]
+
+＠メタトロン・ジャンヌ
+何を言ってんねん。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+
+＠天草四郎
+失礼。我ながら愚かな発言でした。
+[k]
+
+[charaFace H 0]
+
+＠天草四郎
+それはともかく……地獄の第三圏であれば、[r]次に出るときは、傘を持っていってはいかがです？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠カドック
+そうだな。傘があれば……。[wt 1.0][charaFace A 2][r]傘、どこだ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+
+＠天草四郎
+……ありませんね……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 26]
+[charaFadein D 0.1 1]
+
+＠メタトロン・ジャンヌ
+そりゃないよ。[r]今まで、煉獄で雨降ったことなかったし。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+
+＠天草四郎
+もっとも、生半可な材料だと雨に含まれた[r][#呪毒:じゅどく]を弾けませんね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠カドック
+僕は対策してあるし、マシュはサーヴァント、[r][%1]も耐性がある。
+[k]
+
+[charaFace A 1]
+[bgmStop BGM_EVENT_194 1.0]
+
+＠カドック
+……とはいえ、雨に打たれること自体が[r]かなりの厄ネタだな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠天草四郎
+さて、ここでクイズです。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠マシュ
+天草さん？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠天草四郎
+本来は天界みたいなところにいる神霊級の存在……。
+[k]
+
+＠天草四郎
+神の代行者とか天使の書記みたいな異名を持つ、[r]超弩級のサーヴァントがいます。
+[k]
+
+＠天草四郎
+それは、誰でしょう？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠メタトロン・ジャンヌ
+……。[r]……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠天草四郎
+もちろん色々あって力は[#多少]減少していますが、[r]それでもＡ級サーヴァントに入る少女は、誰でしょう？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+
+＠メタトロン・ジャンヌ
+……。[r]……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠天草四郎
+そして、呪毒なんて物の数にもならない、[r]鼻歌交じりで掻き消すことができるのは……。
+[k]
+
+？1：誰だろうねー？
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+
+＠メタトロン・ジャンヌ
+【怠惰】でありたいんだけどな……。
+[k]
+
+？1：お願い
+？！
+
+[charaFace D 19]
+
+＠メタトロン・ジャンヌ
+……しょうがない。
+[k]
+
+[charaFace D 22]
+
+＠メタトロン・ジャンヌ
+第三圏を抜けるまでだったら、[r]手伝っても、いい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ありがとうございます！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 19]
+[charaFadein D 0.1 1]
+
+＠メタトロン・ジャンヌ
+【怠惰】でありたいんだけどなぁ……。[r]【怠惰】ビーム撃っていい？
+[k]
+
+？1：この依頼が終わったらねー
+？！
+
+＠メタトロン・ジャンヌ
+……ふぅん。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠カドック
+とりあえず、共用風呂で雨を洗い流して、[r]それから食事にするか。
+[k]
+
+＠カドック
+滅茶苦茶なやり方だが……。
+[k]
+
+
+＠カドック
+ここへすぐに帰還できるのは、[r]本当にありがたい。
+[k]
+
+＠カドック
+今日はさっさと休んで、明日に備えよう。
+[k]
+
+[messageOff]
+[wt 0.2]
+[cameraMove 0.5 0,5 1.01]
+[wt 0.5]
+[cameraMove 0.5 0,0 1.01]
+[wt 1.5]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_94 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

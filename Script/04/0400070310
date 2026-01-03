@@ -1,0 +1,865 @@
+
+＄04-00-07-03-1-0
+
+
+
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[soundStopAll]
+
+[charaSet A 1098330800 1 マシュ]
+[charaSet B 1098255100 1 ゴルドルフ]
+[charaSet C 1098158330 1 ネモ]
+[charaSet D 1098257410 1 シオン]
+[charaSet E 1098257300 1 ダ・ヴィンチ]
+[charaSet G 1098123000 1 ムニエル]
+[charaSet H 28012000 1 ソロモン]
+[charaSet I 98002000 1 フォウ]
+[charaSet J 28012000 1 ソロモン_演出用]
+[charaSet K 1098257300 1 ダ・ヴィンチ_演出用]
+[charaSet L 1098158330 1 ネモ_演出用]
+[charaSet M 1098330800 1 マシュ_演出用]
+
+
+[sceneSet Q 132900 1]
+[sceneSet R 132900 1]
+[sceneSet S 132900 1]
+[sceneSet T 270002 1]
+[sceneSet U 270002 1]
+
+[charaSet X 98115000 1 エフェクト用1]
+[charaSet Y 98115000 1 エフェクト用2]
+
+[charaTalk depthOff]
+[charaDepth X 25]
+[charaDepth Y 25]
+
+[charaDepth M 24]
+[charaDepth L 23]
+[charaDepth K 22]
+[charaDepth I 21]
+[charaDepth J 20]
+[charaDepth G 11]
+[charaDepth E 10]
+[charaDepth D 9]
+[charaDepth A 6]
+[charaDepth B 4]
+[charaDepth C 3]
+[charaDepth H 1]
+
+[charaDepth Q 5]
+[charaDepth R 15]
+[charaDepth S 2]
+[charaDepth T 16]
+[charaDepth U 17]
+
+[scene 132900]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_GOGH_1 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+おお、戻ってきたな！[r]任務達成、よくやってくれた！
+[k]
+
+？1：助けてくれたみんなのおかげです！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠シオン
+それは現地でマシュさんの他にも仲間がいた、[r]という事ですね。
+[k]
+
+＠シオン
+こちらではモニターできなかったので[r]詳しく話を聞きたいところですが……
+[k]
+
+[charaFace D 1]
+
+＠シオン
+今はこちらの映像を見ていただくのが先でしょう！[r]皆さんの作戦の成果、どうぞ！
+[k]
+
+？2：外はどうなってますか！？
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ネモ
+それは見てもらった方が早いね。[r]マリーン、映像に出して。
+[k]
+
+？！
+
+[messageOff]
+[bgmStop BGM_GOGH_1 1.1]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[subCameraOn 3]
+[charaLayer M sub #A]
+[charaLayer L sub #A]
+[charaLayer R sub #A]
+[charaLayer K sub #B]
+[charaLayer Q sub #B]
+[charaLayer X sub #C]
+[charaLayer T sub #C]
+[charaLayer U sub #C]
+[subCameraFilter #A maskEdge cut359_mask11 4 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask12 4 0,0,0,255 0]
+[subCameraFilter #C normal]
+[subRenderDepth #A 3]
+[subRenderDepth #B 2]
+[subRenderDepth #C 1]
+[charaScale M 1.2]
+[charaScale R 1.2]
+[charaTalk M]
+[charaFace M 6]
+[charaFadein M 0 530,250]
+[charaFadein R 0 200,-50]
+[charaScale K 1.2]
+[charaScale Q 1.2]
+[charaFace K 23]
+[charaFadein K 0 -530,270]
+[charaFadein Q 0 -200,-50]
+[charaPut X 1]
+[charaEffect X bit_talk_security_depth]
+[charaScale T 1.4]
+[charaScale U 1.4]
+[charaFadein T 0 -100,-180]
+
+[subRenderFadein #C 0.1 0,0]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 0.4]
+
+[charaMove T -50,-180 5.0]
+[se ad556 0 0]
+[seVolume ad556 1.0 0.1]
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+[wt 2.5]
+[charaFadein U 0.5 50,-360]
+[charaMove U 100,-360 5.0]
+[wt 0.5]
+[charaScale T 1.1]
+[charaMove T 0,-240 0.1]
+[wt 2.5]
+[charaMoveScale T 1.0 15.0]
+[charaMove T 0,-200 15.0]
+[charaFadeout U 0.5]
+[seStop ad556 1.5]
+[wt 1.5]
+
+[subRenderFadeinFSSideR #A 0.4 -140,-220]
+[subRenderMoveEaseFSSideR #A -150,-200 0.4 easeOutSine]
+[wt 0.4]
+
+[bgm BGM_MAP_57 0.1]
+
+＠M：マシュ
+上空に[#転移孔:ゲ　ー　ト]……！[r]ではあれがカルデアス、なのですか！？
+[k]
+
+[messageOff]
+[charaTalk K]
+[subRenderFadeinFSSideL #B 0.4 140,-220]
+[subRenderMoveEaseFSSideL #B 150,-200 0.4 easeOutSine]
+[wt 0.4]
+
+＠K：ダ・ヴィンチ
+ああ、私たちが管制室で見ていた[r]カルデアスとはカタチが違うが、
+[k]
+
+＠K：ダ・ヴィンチ
+シバによる観測結果は一致している。[r]間違いなく疑似地球環境モデル、カルデアスだ。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaScale L 1.2]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 560,250]
+
+＠L：ネモ
+空想樹にとってカルデアスは非攻撃対象なんだろう。[r][#転移孔:ゲ　ー　ト]が出現してから空想樹からの攻撃は停止した。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+[charaTalk L,C]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[subRenderFadeout #C 0.4]
+[wt 0.4]
+[charaFadeout M 0.1]
+[charaFadeout L 0.1]
+[charaFadeout R 0.1]
+[charaFadeout K 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout T 0.1]
+[charaFadeout U 0.1]
+[charaEffectDestroy X bit_talk_security_depth]
+[charaPut X 2500,2500]
+[wt 0.1]
+[charaLayer M normal]
+[charaLayer L normal]
+[charaLayer R normal]
+[charaLayer K normal]
+[charaLayer Q normal]
+[charaLayer X normal]
+[charaLayer T normal]
+[charaLayer U normal]
+[subCameraOff]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+＠ネモ
+とはいえ、いつまでもこの状態が続く保証はない。
+[k]
+
+＠ネモ
+現在、電算室のスタッフ総動員で[r][#転移孔:ゲ　ー　ト]通過時の進路を算出している。
+[k]
+
+＠ネモ
+衝撃に耐えうるだけの時空泡の形成、[r]航行の安全性を確保でき次第、当艦は[#転移孔:ゲ　ー　ト]に突入する。
+[k]
+
+[charaFace C 2]
+
+＠ネモ
+10分あるかないかの時間だが休憩には違いない。
+[k]
+
+＠ネモ
+席について体を休めるように、[r][%1]、マシュ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+う、うむ、そうだな、ゴージャスな食事を[r]摂りながら一息いれ……られる状況ではないな。
+[k]
+
+[charaFace B 1]
+
+＠ゴルドルフ
+だが紅茶ぐらいは許されよう。どれ。[r]マリーンたちも忙しいようだし、ここは私が、
+[k]
+
+[messageOff]
+[charaScale Q 1.2]
+[charaScale G 1.2]
+[charaTalk B,G]
+[charaFace G 0]
+[charaFadein G 0.5 -50,0]
+[charaFadein Q 0.5 50,-290]
+[charaMoveEase G 0,0 0.5 easeOutSine]
+[charaMoveEase Q 100,-290 0.5 easeOutSine]
+[wt 0.5]
+[charaScale C 1.0]
+[charaScale B 1.1]
+[charaScale H 1.0]
+[charaScale S 1.2]
+[charaFace C 8]
+[charaFadein C 0.1 -300,-20]
+[charaFadein S 0.1 -20,-270]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ムニエル
+すみませんね司令官、その暇はなさそうッスよ。[r]プロフェッサーから報告です。
+[k]
+
+＠ムニエル
+[#転移孔:ゲ　ー　ト]への突入準備、完了したとの事です。
+[k]
+
+[messageOff]
+[charaTalk G,B]
+[charaFace B 5]
+[charaFadeout G 0.4]
+[charaFadeout Q 0.4]
+[wt 0.4]
+[charaScale G 1.0]
+
+＠ゴルドルフ
+なんと、[#転移孔:ゲ　ー　ト]出現から３分も経っていないぞ！？[r]早すぎないかね！？
+[k]
+
+[messageOff]
+[charaTalk C,H]
+[charaFace C 8]
+[charaMoveReturn C -300,-25 0.4]
+[wt 0.4]
+[charaMoveReturn C -300,-25 0.4]
+[wt 1.2]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+[charaFadeout S 0.4]
+[wt 0.4]
+[charaScale C 1.0]
+[charaScale B 1.0]
+
+＠ソロモン
+当然だ。[r]あの[#転移孔:ゲ　ー　ト]は全能であった時の魔術王が空けたもの。
+[k]
+
+＠ソロモン
+おまえたちのレイシフトなどとはものが違う。[r][#転移孔:ゲ　ー　ト]を通過する際の負荷も、まあ、常識的な範囲だ。
+[k]
+
+＠ソロモン
+ストーム・ボーダーの電算チームであれば[r]準備など数分で整う。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 28]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+おやおや。ソロモン王ともあろう者が[r]ずいぶんと私たちを買ってくれているじゃないか。
+[k]
+
+＠ダ・ヴィンチ
+ところであの[#転移孔:ゲ　ー　ト]クラスの術式は[r]今のキミでは作れない、という事でいいのかな？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+
+＠ソロモン
+フン。痛いところをついたつもりか。[r]できない事はないが、やる必要性を感じない。
+[k]
+
+＠ソロモン
+今の私では大偉業は多用できない。[r]切り札の出しどころはこの目で決める、という事だ。
+[k]
+
+[charaFace H 3]
+
+＠ソロモン
+……とはいえ。[#転移孔:ゲ　ー　ト]を特異点から通常空間に[r]移した事で、時空連結が乱れているな。
+[k]
+
+＠ソロモン
+あるいは既に誤差を対処されたか……。[r]マリスビリーめ、抜け目のない男だ。
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_57 3.0]
+[charaTalk H,I]
+[charaScale I 1.0]
+[charaScale R 1.4]
+[charaFadein R 0.4 0,-140]
+[wt 0.5]
+[charaTalk I,H]
+[charaFace I 0]
+[charaFadein I 0.4 306,-60]
+[charaMoveEase I 256,-60 0.6 easeOutCubic]
+[cueSe SE_21 21_ade621]
+[cueSeStop 21_ade621 0.7]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.8]
+[se adm21]
+[charaFadeout I 0.4]
+[charaMoveEase I 236,100 0.4 easeOutCubic]
+[wt 0.4]
+[charaFadeout R 0.4]
+[wt 0.8]
+
+[subCameraOn 3]
+[charaLayer J sub #A]
+[charaLayer R sub #A]
+[charaLayer B sub #B]
+[charaLayer S sub #B]
+[charaLayer K sub #C]
+[charaLayer M sub #C]
+[charaLayer Q sub #C]
+[subCameraFilter #A maskEdge cut359_mask05 4 255,255,255,255 0]
+[subCameraFilter #B maskEdge cut359_mask15 5 255,255,255,255 0]
+[subCameraFilter #C maskEdge cut359_mask09 5 255,255,255,255 0]
+[subRenderScale #A 1.1]
+[charaScale I 0.45]
+[charaScale J 1.6]
+[charaScale R 1.6]
+[charaFace J 0]
+[charaFadein J 0 -180,250]
+[charaFadein R 0 0,-180]
+[charaScale B 1.2]
+[charaScale S 1.2]
+[charaFace B 5]
+[charaFadein B 0 80,200]
+[charaFadein S 0 300,-70]
+[charaScale K 1.2]
+[charaScale Q 1.2]
+[charaFace K 29]
+[charaFadein K 0 -80,200]
+[charaFadein Q 0 -300,-70]
+
+[charaSet I 1098341630 1 フォウ]
+[charaDepth I 21]
+[charaFace I 0]
+[charaFadein I 0.4 0,0]
+[cueSe SE_24 24_ade988 0 0.2]
+[cueSeStop 24_ade988 0.6]
+[wt 1.4]
+
+[charaTalk I,K,B,H]
+[subRenderFadeinFSSideL #B 0.4 -490,-250]
+[subRenderFadeinFSSideR #C 0.4 490,-250]
+[subRenderMoveEaseFSSideL #B -480,-200 0.4 easeOutExpo]
+[subRenderMoveEaseFSSideR #C 480,-200 0.4 easeOutExpo]
+[wt 1.6]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+[bgm BGM_EVENT_94 0.1]
+
+[charaScale M 1.2]
+[charaTalk on]
+[charaTalk M]
+[charaFace M 24]
+[charaFadein M 0.1 -100,200]
+
+＠M：マシュ
+フォ、フォウさん！？
+[k]
+
+？1：いけない、フォウくん！
+
+[charaFaceFade M 3 0.15]
+
+＠M：マシュ
+そ、そうなのです、そちらの方はソロモン王と言って、[r]とても気位の高い方なので……！
+[k]
+
+？2：フォウくん、やってやれ！
+
+[charaFace M 19]
+[charaShake M 0.03 3 3 0.2]
+
+＠M：マシュ
+先輩！？
+[k]
+
+？！
+
+＠フォウ
+フォウ、フォーウ！
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.4]
+[subRenderFadeout #C 0.4]
+[wt 0.4]
+[charaFadeout J 0]
+[charaFadeout B 0]
+[charaFadeout K 0]
+[charaFadeout M 0]
+[charaFadeout Q 0]
+[charaFadeout R 0]
+[charaFadeout S 0]
+[charaLayer I normal]
+[charaLayer J normal]
+[charaLayer B normal]
+[charaLayer K normal]
+[charaLayer M normal]
+[charaLayer Q normal]
+[charaLayer R normal]
+[charaLayer S normal]
+[subCameraOff]
+[charaScale B 1.0]
+
+[charaTalk off]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+
+＠ソロモン
+……はあ。おとなしく消えていればいいものを。[r]貴様にはほとほと失望した。
+[k]
+
+[bgmStop BGM_EVENT_94 2.0]
+
+＠ソロモン
+まあいい。それより急げ。[r]あの[#転移孔:ゲ　ー　ト]はそう長くは保たん。
+[k]
+
+＠ソロモン
+特異点から通常空間に移した時点で[r]世界からの修正を受けるからな。
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 24]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+おっと、そうだった。[r]いかに神代の魔術王の[#業:わざ]といっても限度がある。
+[k]
+
+[messageOff]
+[charaScale K 1.2]
+[charaScale R 1.2]
+[charaTalk E,K]
+[charaFace K 14]
+[charaFadein K 0.3 1]
+[charaFadein R 0.3 0,-270]
+[wt 0.3]
+[charaFadeout E 0.1]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+[charaSet H 1098341620 1 ソロモン]
+
+[bgm BGM_MAP_100 0.1]
+
+＠K：ダ・ヴィンチ
+キャプテン、作戦再開だ！[r]みんな、席について！
+[k]
+
+
+＠K：ダ・ヴィンチ
+言うまでもなくカルデアスは極小の地球だが、[r]それは我々の空間ではそう見えているだけだ。
+[k]
+
+＠K：ダ・ヴィンチ
+カルデアスの宙域に入れば地球と同じ大きさになる。[r]驚かないようにね。
+[k]
+
+
+
+[messageOff]
+[charaTalk K,B]
+[charaFace B 9]
+[charaFadeout K 0.4]
+[charaFadeout R 0.4]
+[wt 0.4]
+
+＠ゴルドルフ
+ふむ。つまりどういう事かな。[r]我々も極小になる、という事かね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠シオン
+いえ、カルデアスが私たちにとって極小だったのは[r]あくまで見え方の話です。遠くのものは小さく見える。
+[k]
+
+＠シオン
+望遠鏡で遠くの[#惑星:も　の]を見ていたのと同じです。
+[k]
+
+＠シオン
+空に浮かぶ惑星は小さく見えますが、[r]その惑星自体が小さいわけではないでしょう？
+[k]
+
+＠シオン
+実際に惑星に辿り着けば本来の大きさを[r]知覚できる。
+[k]
+
+＠シオン
+あの[#転移孔:ゲ　ー　ト]は文字通りワープゲートなんです。
+[k]
+
+＠シオン
+魔神王ゲーティアが編み出した、46億年前の宇宙に[r]跳ぶ術式のごくごく小規模なものですよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ソロモン
+能書きはそこまでだ。[r][#転移孔:ゲ　ー　ト]の移動に危険はないと私が保証する。
+[k]
+
+＠ソロモン
+ただし、カルデアスに着いてからの事象は[r]私にも予想はできていない。
+[k]
+
+＠ソロモン
+[#転移孔:ゲ　ー　ト]を抜けた後の対処は貴様の役割だ、英霊ネモ。[r]せいぜい舵取りに気を遣え。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠ネモ
+いいだろう、各員に通達！
+[k]
+
+＠ネモ
+これまでの解析が正しければ、カルデアス地球は[r]『我々の知る地球』になっている。
+[k]
+
+＠ネモ
+ストーム・ボーダーは魔術神秘の結晶だ。[r]おいそれと都市部の上を飛行させる事は避けたい。
+[k]
+
+＠ネモ
+降下ポイントは南極圏ではなく[r]到達不能極の一つであるポイント・ネモとする。
+[k]
+
+[charaFace C 0]
+
+＠ネモ
+司令官、何か意見は？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+うむ、異論はない！　盗まれたものとはいえ、[r]ようやくの青い地球への帰還だ！
+[k]
+
+＠ゴルドルフ
+モニターは可能なかぎりオープンにしておくように！
+[k]
+
+＠ゴルドルフ
+我々が取り戻さねばならん本来の姿を、[r]よーーーーっく目に焼き付けてくれ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ネモ
+それはいい考えだ。士気があがる。
+[k]
+
+[messageOff]
+[charaScale L 1.2]
+[charaScale R 1.2]
+[charaTalk C,L]
+[charaFace L 8]
+[charaFadein L 0.4 1]
+[charaFadein R 0.4 0,-270]
+[wt 0.4]
+[charaFadeout C 0.1]
+
+＠L：ネモ
+よし！[r]ではストーム・ボーダー、全速前進！
+[k]
+
+＠L：ネモ
+これよりカルデアス地球への突入、[r]ならびにカルデアス制圧作戦を開始する！
+[k]
+
+
+[messageOff]
+[wt 0.4]
+[bgmStop BGM_MAP_100 1.0]
+[fadeout black 1.0]
+[wait fade]
+[sceneSet R 10001 1]
+[charaScale R 1.05]
+[charaFadeout L 0.1]
+[scene 10000]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.2]
+[fadein black 0.2]
+[wait fade]
+
+[criMovie talk_mov356 bgmPlay false]
+[wt 34.0]
+
+[overlayFadein R 1.0 0,-200]
+[wt 1.0]
+
+[fadeout white 0.1]
+[wait fade]
+[charaFadeout R 0]
+
+[sceneSet R 274900 1]
+[sceneSet S 274900 1]
+[sceneSet T 255900 1]
+[sceneSet U 255900 1]
+[charaDepth R 2]
+[charaDepth S 3]
+[charaDepth T 4]
+[charaDepth U 5]
+[scene 132900]
+[cameraHome 0.1]
+[wt 1.0]
+[fadein white 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠マシュ
+[#転移孔:ゲ　ー　ト]を経由して、[r]無事カルデアス地球に到着しました。
+[k]
+
+＠マシュ
+ですが[line 3]この光景は[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+[subCameraOn 1]
+[charaLayer D sub #A]
+[charaLayer B sub #A]
+[charaLayer E sub #A]
+[charaLayer C sub #A]
+[charaLayer Q sub #A]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+[charaDepth A 1]
+[charaDepth Q 2]
+[charaDepth D 3]
+[charaDepth B 4]
+[charaDepth E 5]
+[charaDepth C 6]
+[charaScale E 1.0]
+[charaScale C 1.0]
+[charaScale B 1.0]
+[charaScale D 1.0]
+[charaScale Q 1.2]
+[charaFace B 5]
+[charaFace C 4]
+[charaFace E 9]
+[charaFace D 13]
+[charaFadein E 0 420,0]
+[charaFadein C 0 -140,0]
+[charaFadein B 0 140,0]
+[charaFadein D 0 -420,0]
+[charaFadein Q 0 0,-270]
+[subRenderFadein #A 0.4 -10,0]
+[subRenderMove #A 10,0 5.0]
+[wt 2.4]
+[charaFadeout A 0.1]
+
+[wipeout rectangleStripDownToUp 0.4 1]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout Q 0.1]
+[charaLayer E normal]
+[charaLayer D normal]
+[charaLayer B normal]
+[charaLayer C normal]
+[charaLayer Q normal]
+[subCameraOff]
+
+[scene 274900]
+[charaScale R 1.5]
+[charaFadein R 0.4 0,-480]
+[wt 0.4]
+
+[charaMove R 0,-420 5.0]
+[wipein rectangleStripUpToDown 0.4 1]
+[wait wipe]
+
+[wt 0.4]
+[bgm BGM_MAP_118 0.1]
+
+[wt 3.1]
+
+[charaScale S 1.8]
+[charaFadein S 0.5 -30,-620]
+[charaMove S 30,-620 5.0]
+[wt 0.5]
+[charaScale R 1.03]
+[charaMove R 0,-215 0.1]
+[wt 3.5]
+
+[charaMoveScaleEase R 1.0 2.0 easeInOutQuad]
+[charaMoveEase R 0,-200 2.0 easeInOutQuad]
+[charaFadeout S 1.0]
+[wt 2.5]
+
+？1：[line 3]そんな
+
+？！
+
+[wt 0.2]
+[charaScale T 1.2]
+[charaFadein T 0.5 0,-270]
+[charaMove T 0,-250 15.0]
+[wt 2.5]
+
+？1：[line 3]どういう事？
+
+？！
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_118 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

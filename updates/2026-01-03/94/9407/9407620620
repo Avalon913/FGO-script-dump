@@ -1,0 +1,489 @@
+
+
+
+＄94-07-62-06-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4049001 1 黄飛虎]
+[charaSet B 3035001 1 秦良玉]
+[charaSet C 1098233600 1 盗賊]
+[charaSet D 2045000 1 ゼノビア]
+[charaSet E 2003001 1 ロビンフッド]
+[charaSet F 9002001 1 天草四郎]
+[charaSet G 28004000 1 九紋竜エリザ]
+[charaSet H 6011001 1 荊軻]
+[charaSet I 4039000 1 マンドリカルド]
+[charaSet J 25010000 1 モレー]
+[charaSet K 98110000 1 柳生但馬守]
+[charaSet L 6026001 1 燕青]
+
+[imageSet O cut372_cut_back02_line 1]
+
+[sceneSet P 155900 1]
+[charaScale P 1.3]
+[sceneSet Q 167000 1]
+[sceneSet R 167000 1]
+[charaScale R 1.01]
+[charaSet T 5009000 1 エフェクト用]
+
+[pictureFrameTop cut063_cinema]
+
+[charaFadein P 0.1 -125,-300]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[cueSe Servants_201300 m40406 0 0.7]
+[effect bit_talk_38l]
+[wt 1.0]
+[effectStop bit_talk_38l]
+[wt 1.0]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth C 1]
+[charaDepth D 1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+[charaShake E 0.05 3 3 0.5]
+
+＠ロビンフッド
+うお！？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMove E 250,-50 0.6]
+[charaMove P 125,-300 0.6]
+
+[subCameraOn 1]
+
+[charaLayer Q sub #A]
+[charaLayer B sub #A]
+
+[charaDepth Q 3]
+[charaDepth B 4]
+[charaDepth O 5]
+
+[charaFace B 2]
+[charaFadein B 0.1 -100,100]
+[charaFadein Q 0.1 240,-55]
+
+[subCameraFilter #A mask cut359_mask10]
+
+[subRenderFadein #A 0.5 -600,-150]
+[subRenderMove #A -250,-150 0.6]
+[charaFadein O 0.1 -346,-200]
+[charaMove O 4,-200 0.6]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk B]
+
+＠秦良玉
+射て射て射て！[r]矢を惜しむな！　ここの射手を釘付けにしろ！
+[k]
+
+[charaTalk E]
+
+＠ロビンフッド
+ええい、ウッゼえ！
+[k]
+
+[messageOff]
+[charaFace E 5]
+[charaMoveReturn E 220,-50 0.2]
+[cueSe Battle bac19]
+[wt 0.2]
+[cueSe Battle bac19]
+[wt 0.5]
+
+[charaFadeout O 0.2]
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+[charaFadeout Q 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[subCameraOff]
+
+[charaLayer Q normal]
+[charaLayer B normal]
+
+[charaMove E 0,-50 0.6]
+[charaMove P -125,-300 0.6]
+[wt 0.8]
+
+[charaFace E 2]
+
+＠ロビンフッド
+おーい、オレ以外の誰か射ち返せーーー！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+
+＠盗賊
+無茶言わんでください！[r]頭を出したら矢が飛んでくるんですよー！
+[k]
+
+＠盗賊
+アンタとは違うんです！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠ロビンフッド
+そりゃそうか、悪かった……！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+[charaPut D 0,-50]
+[charaSpecialEffect D appearance 1 0.25]
+[wt 0.4]
+
+＠ゼノビア
+天草四郎から言われて駆けつけた。[r]私も手伝おう！
+[k]
+
+[charaFace D 6]
+
+＠ゼノビア
+……と言っても、焼け石に水か……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-50]
+
+＠ロビンフッド
+向こうの様子はどうだ！？
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.5 1.0]
+[bgm BGM_EVENT_80 0.5 0.5]
+[wait wipe]
+
+[charaDepth R 1]
+[charaDepth I 2]
+[charaDepth T 3]
+[charaDepth H 4]
+[charaDepth A 6]
+
+[charaFadeout E 0.1]
+[charaFadeout P 0.1]
+[charaFadein R 0.1 0,-200]
+[wt 0.5]
+
+[wipein leftToRight 0.5 1.0]
+[bgm BGM_EVENT_80 0.5 1.0]
+[wait wipe]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 0,-50]
+
+＠マンドリカルド
+そっりゃあ！
+[k]
+
+[messageOff]
+[se ad158]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut T 0,-50]
+[charaEffect T bit_talk_42_depth 0,0 H]
+[charaMove I -200,-50 0.2]
+[charaFadeout I 0.2]
+[wt 0.5]
+[seStop ad158 0.1]
+[charaPut T 1200,1200]
+[charaEffectDestroy T bit_talk_42_depth]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+＠黄飛虎
+ふんっ！
+[k]
+
+[messageOff]
+[charaDepth T 5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[effect bit_talk_kengekiall01_fs]
+[se ad33]
+[wt 1.7]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+＠黄飛虎
+奇襲を受けるほど柔ではない。
+[k]
+
+[messageOff]
+[se ad73]
+[charaPut T 0,-50]
+[charaEffect T bit_talk_42_depth]
+[wt 0.1]
+[charaMoveScale A 1.2 0.4]
+[charaMoveScale R 1.2 0.4]
+[charaMove R -130,-210 0.4]
+[charaMove A -130,-60 0.4]
+[wt 0.2]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 100,-60]
+[charaMove H 170,-60 0.2]
+[wt 0.2]
+[charaPut T 1200,1200]
+[charaEffectStop T bit_talk_42]
+
+＠荊軻
+[line 3]よっと。
+[k]
+
+
+[messageOff]
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[se adm15]
+[wt 0.1]
+[fowardEffect bit_talk_x_slash03 0,-50]
+[wt 0.2]
+[se ad1013]
+[effect bit_talk_14]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+[charaMoveScale R 1.01 0.3]
+[charaMove R 0,-200 0.3]
+[wt 0.5]
+
+[charaTalk depthOn]
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠黄飛虎
+二段攻撃も計算尽くよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 0,-50]
+
+＠マンドリカルド
+ヒエー……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 0,-50]
+
+＠荊軻
+これは参ったな……。[r]よし、私は撤退する。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠黄飛虎
+ああ、逃げるがいい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,-50]
+
+＠荊軻
+と見せかけてかーらーのー！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[wt 0.1]
+
+[cueSe Battle bac41]
+[cueSeVolume bac41 0 0.3]
+[se ad598]
+[seStop ad598 1.0]
+[charaSpecialEffect A wipeTime 0,-50 0.3]
+[wt 0.1]
+[se adm15]
+[effect bit_talk_x_slash01]
+[wait charaSpecialEffect A]
+[wt 0.7]
+[se ad598]
+[charaSpecialEffect A wipeTimeRe 0,-50 0.3]
+[wait charaSpecialEffect A]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 0,-50]
+
+＠柳生但馬守
+……これも[#躱:かわ]すか。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠黄飛虎
+いや、今のは[#某:それがし]の実力ではない。[wt 0.7][charaFace A 1][r]さすがと言えような、我らがマスターは！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_80 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout R 0.1]
+[pictureFrame]
+[scene 167000]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_124 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠九紋竜エリザ
+……って言われたらちいわ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠モレー
+あー……やっぱ向こうにいるのかー……。[r]例の[#カボチャ頭:パ ン プ キ ン ヘ ッ ド]マスター。
+[k]
+
+？1：や、ややこしいことになってきた……！
+？！
+
+[charaFace J 23]
+
+＠モレー
+でも、ということは向こうのマスターは、[r]恐らく呼延灼ともマスター契約を交わしたんだ。
+[k]
+
+＠モレー
+ふーむ。[wt 0.5][charaFace J 25][r]あ、いっけね。
+[k]
+
+[charaFace J 6]
+
+＠モレー
+ともかく戦うよー、全員シャッキリ！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠九紋竜エリザ
+よちきた！　のだわ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad86]
+[wt 0.1]
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+
+＠燕青
+いよーし、片っ端から殴り倒す！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠天草四郎
+苦戦は免れないですが、[r]何とか踏ん張りましょう……！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_124 0.4]
+[wait fade]
+[soundStopAll]
+[end]

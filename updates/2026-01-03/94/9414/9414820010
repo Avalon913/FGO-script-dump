@@ -1,0 +1,805 @@
+
+＄94-14-82-00-1-0
+
+
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[soundStopAll]
+
+[charaSet A 5033000 1 キルケー]
+[charaSet B 1037001 1 紅閻魔]
+[charaSet C 7050002 1 ロウヒ]
+[charaSet D 4043001 1 太公望]
+[charaSet E 1098214000 1 四不相]
+[charaRollAxis E y 180 0]
+[charaRollAxis E z 60 0]
+[charaSet F 1098330100 1 ドーヴ]
+[charaSet G 1098330200 1 レイヴン]
+[charaSet H 98115000 1 エフェクト用]
+
+[sceneSet I 255102 1]
+[charaScale I 1.4]
+
+[sceneSet J 168501 1]
+[charaScale J 1.4]
+
+[charaSet K 98115000 1 エフェクト用]
+
+[sceneSet L 255101 1]
+[charaScale L 1.5]
+
+[charaSet M 1098330400 1 巨人のシルエット]
+
+[sceneSet N 254000 1]
+[charaScale N 1.2]
+
+[sceneSet O 254000 1]
+[charaScale O 1.4]
+
+[charaSet P 98115000 1 エフェクト用]
+[charaSet Q 98115000 1 エフェクト用]
+[charaRollAxis Q z 90 0]
+[charaPut H 3000,3000]
+[charaEffect H bit_talk_rain01]
+
+[charaSet R 98115000 1 エフェクト用]
+
+[sceneSet S 255101 1]
+[charaScale S 1.5]
+[charaSet T 98115000 1 エフェクト用]
+
+[scene 255102]
+[charaFadein I 0 -50,-200]
+
+[subCameraOn 2]
+[subCameraFilter #B maskEdge cut359_mask20 3 0,0,0,255 0]
+[charaLayer M sub #B]
+[charaLayer N sub #B]
+[charaLayer P sub #B]
+[charaLayer T sub #B]
+
+[charaTalk depthOff]
+[charaDepth K 11]
+[charaDepth I 10]
+[charaDepth H 9]
+[charaDepth J 1]
+[charaDepth R 12]
+[charaDepth A 3]
+[charaDepth B 4]
+[charaDepth C 5]
+[charaDepth D 6]
+[charaDepth E 7]
+[charaDepth F 8]
+[charaDepth G 9]
+
+[charaDepth N 1]
+[charaDepth M 2]
+[charaDepth P 3]
+[charaDepth T 4]
+[charaPut T 0,0]
+[charaEffect T bit_talk_rain01]
+
+[charaFadein N 0.1 0,-100]
+[charaFadein M 0.1 0,100]
+[charaPut P 0,100]
+
+[fadein black 1.0]
+[se ad507]
+[seVolume ad507 0 0]
+[seVolume ad507 1.0 1.0]
+[charaMove I 50,-250 6.0]
+[wait fade]
+
+
+[wt 4.0]
+[charaFadeout I 1.0]
+[wt 2.0]
+
+
+
+
+[wipeout rectangleStripUpToDown 0.7 1]
+[wait wipe]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,50]
+[charaFadein J 0.1 0,-200]
+[charaPut H 1]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.6 1]
+[charaMoveEase A 0,0 0.6 easeOutSine]
+[charaMoveEase J 0,-250 0.6 easeOutSine]
+[wait wipe]
+
+
+[seVolume ad507 1.0 0.3]
+[bgm BGM_MAP_6 0.1]
+
+＠キルケー
+うえあぁぁ～～～。
+[k]
+
+＠キルケー
+あー！　あーーー！　もーっ！
+[k]
+
+＠キルケー
+天の[#水瓶:みずがめ]をひっくりかえしたみたいな[r]ひっどい土砂降りだ！！
+[k]
+
+[charaFace A 6]
+
+＠キルケー
+髪も服もぐしゃぐしゃなんだけど！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠紅閻魔
+そんなに怒鳴り立てるまでもなく、[r]あちきたち全員、すっかり濡れスズメでちよ。
+[k]
+
+[charaFace B 5]
+
+＠紅閻魔
+文句を垂れるより前に、[r]はやくあの木造船の入り口を探すのでち！
+[k]
+
+＠紅閻魔
+ロウヒはともかく、その背にしがみついている[r]マスターが凍えてしまうでち！
+[k]
+
+[messageOff]
+[se ad131]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[seStop ad131 1.0]
+
+＠キルケー
+はいはい、わかってるって[line 3][wt 0.8][se ad63][flashin once 0.1 0.1 e0f3f880 e0f3f880][fowardEffect bit_talk_lightning_03t 180,0][wt 0.2][charaShake A 0.05 3 3 0.3][charaFace A 2][r]うっひ！
+[k]
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe SE_24 24_ade1140]
+[wt 3.0]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.4 1]
+[seStop 24_ade1140 0.4]
+[wt 0.4]
+
+＠ロウヒ
+ヴォイ……[#雷神:ウッコ]め。[r]いや、[#雷神:ウッコ]はこんなところにはいない。
+[k]
+
+[charaFace C 0]
+
+＠ロウヒ
+いいよ、ムッコ。[r]こんな上も下もわからなくなるような黒雨だ。
+[k]
+
+[charaFace C 6]
+
+＠ロウヒ
+いっそ気絶でもしてたほうが[r]ラクってもんだぁよ！　ハハハハ！
+[k]
+
+？1：まだ平気[line 3]って、いや気絶とかしてられない[&！:から]
+？！
+
+[charaFace C 1]
+＠ロウヒ
+ふふん。あの図体ばかりでかい木造船のそばへ[r]ボーダーをもっと寄せられたらよかったんだろうがね。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[cueSe SE_23 23_ade872]
+[charaTalk off]
+[charaScale E 1.2]
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein D 0.4 200,0]
+[charaFadein E 0.4 -50,-110]
+[charaMoveEase D 50,0 1.2 easeOutSine]
+[charaMoveEase E -200,-110 1.2 easeOutSine]
+[wt 1.5]
+[seStop 23_ade872 0.5]
+[charaFace D 6]
+[charaFace E 5]
+[charaShake E 0.05 3 3 0.5]
+[charaMoveReturn E -200,-120 0.5]
+[wt 0.1]
+[charaShake D 0.05 3 3 0.5]
+[charaMoveReturn D 50,-10 0.5]
+
+[wt 0.5]
+[charaFace E 0]
+[charaTalk on]
+
+＠太公望
+……うわっと！
+[k]
+
+[charaFace D 0]
+
+＠太公望
+で、ですが、今やそのボーダーまでもが[r]海面に不時着して漂流状態ですから！
+[k]
+
+[charaFace D 2]
+
+＠太公望
+この大波で、あの巨船と衝突でもしたら[r]無事では済みませんので！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠紅閻魔
+とはいえ……マスターの運びかたにしても、[r]もうすこしマシな方法はなかったんでちか？
+[k]
+
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[wt 1.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein D 0.1 50,0]
+[charaFadein E 0.1 -200,-130]
+
+＠太公望
+ボーダーの不時着しかり、[r]キャプテンたるべきネモの[#前後不覚:ぜ ん ご ふ か く]しかり。
+[k]
+
+＠太公望
+我々サーヴァントの身では掌握しきれない[r]何かが、あの船にはあるということです！
+[k]
+
+＠太公望
+あの、“[#方舟:はこぶね]”に[line 3]。
+[k]
+
+？1：“方舟”[line 3]
+？！
+
+[messageOff]
+[bgmStop BGM_MAP_6 1.7]
+[wipeout rectangleStripDownToUp 0.7 1]
+[wait wipe]
+
+[charaFadeout J 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaDepth L 1]
+[charaDepth S 2]
+[charaFadein L 0.1 -200,-475]
+[wt 0.5]
+[charaLayer J sub #A]
+[charaLayer A sub #A]
+[charaLayer D sub #A]
+[charaLayer B sub #A]
+[charaLayer E sub #A]
+[charaLayer C sub #A]
+[charaLayer R sub #A]
+
+[charaPut R -560,180]
+[charaEffect R bit_talk_rain01]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 -560,180]
+[charaFadein J 0.1 0,-200]
+[subCameraFilter #A maskEdge cut359_mask12 3 0,0,0,255 0]
+[charaPut H 3000,3000]
+
+[scene 255101]
+[wt 0.5]
+
+[se ad37]
+[seVolume ad37 0 0]
+[seVolume ad37 1.0 1.0]
+[seVolume ad507 0.7 1.0]
+[charaMove L -300,-475 30.0]
+[wipein rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[wt 3.0]
+[seVolume ad507 1.0 0.5]
+[seVolume ad37 1.0 0.5]
+[bgm BGM_MAP_41 0.1]
+
+[subRenderScale #A 1.1]
+[subRenderFadeinFSSideL #A 0.4 230,-180]
+[subRenderMoveFSSideL #A 210,-200 0.4]
+[wt 0.4]
+
+＠キルケー
+“[#方舟:ラルナクス]”……ね。
+[k]
+
+＠キルケー
+そういうきみも……[wt 0.6][charaFace A 4]ええとなんだっけ？
+[k]
+
+＠キルケー
+いっつも書庫にこもってるか～、[r]ＶＲ釣りゲーのハイスコアを独占してる～……
+[k]
+
+[charaFace A 2]
+＠キルケー
+ああ、そうそう、[#太公望:タイコーボー]！？
+[k]
+
+[charaFace A 6]
+＠キルケー
+その太公望ともあろう道士が、
+[k]
+
+＠キルケー
+やっとのことでその、バクくん？　に[r]しがみついてるのも関係ありそうだ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 -545,180]
+
+＠太公望
+この神の怒りを体現するかのような嵐の下では、[r]僕の[#土遁:どとん]の[#方術:ほうじゅつ]の効き目もさだかではなく[line 3]
+[k]
+
+[charaFace D 7]
+
+＠太公望
+こうして[#四不相:し ふ そ う]くんの力を借りている次第です。[r]ええ、ライダーですからね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 -575,180]
+
+＠紅閻魔
+飛べたんでちね。その[#貘:バク]様は。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaScale E 1.2]
+[charaRollAxis E y 180 0]
+[charaRollAxis E z 120 0]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 -700,250]
+
+＠四不相
+モッ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 -560,180]
+＠キルケー
+私もいろんな船を見てきたけれど、[r]あんなに[#厳:おごそ]かな気配をまとった船は初めてだ。
+[k]
+
+＠キルケー
+一見、ただ丸木を寄せ集めただけの船なのに。
+[k]
+
+＠キルケー
+あの船の中だけは、嵐からも守られている、[r]安全だと感じる……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 -545,180]
+
+＠太公望
+………………ええ。ともすれば[r]この世でもっとも聖なる船かもしれません。
+[k]
+
+[messageOff]
+[charaScale S 1.8]
+[charaFadein S 1.0 -520,-630]
+[subRenderFadeout #A 0.4]
+[bgmStop BGM_MAP_41 2.0]
+[charaFadeout D 0.1]
+[wt 1.0]
+[charaFadeout L 0.1]
+
+
+[charaPut K 350,80]
+[charaEffect K bit_talk_light_loop_warm]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 -700,250]
+[wt 4.0]
+[subRenderFadeinFSSideL #A 0.4 210,-200]
+[wt 0.4]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠四不相
+モッ……！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 -575,180]
+
+＠紅閻魔
+船の上で何か光っているでち！
+[k]
+
+？1：甲板で……誰かが[#灯:あか]りを……？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 -540,180]
+
+＠ロウヒ
+……ちっちゃいのが二人いるね。[r]どうやらこっちにランタンを振っているんだぁよ。
+[k]
+
+？1：向かってみよう！
+？2：みんな気をつけて！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 -545,180]
+＠太公望
+はい、行きましょう！[r][#四不相:し ふ そ う]くん、よろしく！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 -700,250]
+
+＠四不相
+モモモ。
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ade1140]
+[bgm BGM_EVENT_81 1.0 0.4]
+[wipeout rectangleStripDownToUp 0.7 1]
+[wait wipe]
+[charaFadeout S 0.1]
+[seStop 24_ade1140 1.0]
+[scene 10000]
+[charaPut K 3000,3000]
+[charaEffectStop K bit_talk_light_loop_warm]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout E 0.1]
+[charaFadeout L 0.1]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaLayer J normal]
+[charaLayer A normal]
+[charaLayer D normal]
+[charaLayer B normal]
+[charaLayer E normal]
+[charaLayer C normal]
+
+[wipein rectangleStripUpToDown 0.1 1]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+
+[charaDepth O 1]
+[charaDepth F 3]
+[charaDepth G 2]
+
+
+[scene 254000]
+[charaPut H 1]
+[charaTalk off]
+[pictureFrame cut063_cinema]
+
+[charaFadein O 0.1 10,-200]
+[charaScale F 1.5]
+[charaScale G 1.5]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein F 0.1 -236,230]
+[charaFadein G 0.1 276,210]
+[wt 2.0]
+
+[charaMove O -10,-200 2.0]
+[charaMove F -256,230 2.0]
+[charaMove G 256,210 2.0]
+[fadein black 1.0]
+[wait fade]
+[wt 2.0]
+
+＠？？？
+……………………。
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[pictureFrame]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout O 0.1]
+[charaPut H 3000,3000]
+[wt 0.1]
+[scene 10000]
+
+[wipein rectangleStripDownToUp 0.1 1]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaPut H 1]
+[scene 168501]
+[charaTalk C]
+[charaFace C 31]
+[charaFadein C 0.1 1]
+[wt 2.0]
+
+[bgm BGM_EVENT_81 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+＠ロウヒ
+…………ミタ……？　吹き荒れる甲板に、[r]娘……？　が二人、必死にしがみついて[line 3]
+[k]
+
+＠ロウヒ
+ただの子供たちじゃあないね。[r]何者だぁよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.0]
+[se ad746]
+[seVolume ad746 0 0]
+[seVolume ad746 2.0 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠キルケー
+……！？　ちょ、ちょっと待つんだ！
+[k]
+
+＠キルケー
+海中から、何か大きなものがせりあがって……[r]……これは、巨人！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠太公望
+ええっ？　じゃあ罠ですか！？
+[k]
+
+
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[seStop ad746 1.0]
+[se ad745]
+[se adm11]
+[charaEffect T bit_talk_water_splash]
+[subRenderFadein #B 0.3 -250,-200]
+[subRenderMove #B -250,-150 0.3]
+[wt 0.5]
+[seStop adm11 1.0]
+[seStop ad745 1.0]
+[wt 1.0]
+[se ad885]
+[seVolume ad885 0 0]
+[seVolume ad885 0.5 1.0]
+[charaPut P 60,250]
+[charaEffect P bit_talk_voice02]
+[wt 2.4]
+[seStop ad885 1.0]
+[charaEffectStop P bit_talk_voice02]
+[wt 0.6]
+
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+[bgm BGM_BATTLE_137 0.1]
+
+[se ad239]
+[wt 3.0]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠ロウヒ
+[line 3]ヴォォイ！？[r]デッカい斧をブン投げてきたんだよ！
+[k]
+
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[seStop ad239 0.5]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[cueSe SE_25 25_ade1244]
+[effect bit_talk_v_slash01 100,0 H]
+[charaMoveReturn A -50,0 0.3]
+
+＠キルケー
+ほいっと。
+[k]
+
+[charaFace A 5]
+
+＠キルケー
+おいおいおい、歓迎って態度じゃあないな。[r]まだまだ他にいるぞう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠太公望
+向こう側の[#船縁:ふなべり]からも[r]顔を出しています！
+[k]
+
+＠太公望
+彼らは……この方舟を、守っている……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠紅閻魔
+いずれにせよ[r][#怪:け]しからんでち……。
+[k]
+
+[charaFace B 2]
+
+＠紅閻魔
+大雨の中やってきた客人の出迎えではありまちぇん！[r]その無作法、ここで改めさせてもらうでち！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaRollAxis E y 180 0]
+[charaRollAxis E z 120 0]
+
+[charaTalk off]
+[charaFace A 5]
+[charaFace D 5]
+[charaFace E 0]
+[charaFadein A 0.1 -300,0]
+[charaFadein D 0.1 350,0]
+[charaFadein E 0.1 100,-130]
+[wt 1.4]
+[charaTalk on]
+[charaFace A 2]
+
+＠キルケー
+ああ、まかせろ！[r]このままじゃ甲板にも取り付けない！
+[k]
+
+＠キルケー
+マスターは上空から指示を！
+[k]
+
+？1：わかった！　頼む[&:ね]、ロウヒ
+？！
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+[wt 0.5]
+[charaMove C 0,-10 0.3]
+[wt 0.5]
+[cueSe SE_24 24_ade1140]
+[charaMove C 0,30 0.3]
+[charaEffect C bit_talk_quickmove]
+[charaSpecialEffect C erasureReverse 1 0.3]
+[wt 0.2]
+[charaPut Q 1]
+[charaEffect Q bit_talk_gale]
+[wt 1.0]
+[seStop 24_ade1140 0.4]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_137 0.4]
+[seStop ad507 0.4]
+[seStop ad37 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

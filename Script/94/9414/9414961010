@@ -1,0 +1,482 @@
+
+＄94-14-96-10-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 6051001 1 メイドイン彦斎]
+[charaSet B 2024000 1 織田信長]
+[charaSet C 3061000 1 原田左之助]
+[charaSet D 1098333800 1 松永弾正]
+[charaSet E 1098334200 1 黒の剣士]
+[charaSet F 11021001 1 謎の少年]
+
+[charaSet G 1098333800 1 松永弾正‗演出用]
+[charaSet H 2024000 1 織田信長‗演出用]
+[charaSet I 6051001 1 メイドイン彦斎‗演出用]
+[charaSet J 1098333800 1 松永弾正‗演出用]
+
+[sceneSet K 264401 1]
+[sceneSet L 264401 1]
+[sceneSet M 264401 1]
+[sceneSet N 264401 1]
+
+[charaTalk depthOff]
+[charaDepth L 2]
+[charaDepth I 4]
+[charaDepth M 3]
+[charaDepth H 5]
+[charaDepth N 6]
+[charaDepth J 7]
+[charaDepth C 8]
+[charaDepth A 9]
+[charaDepth K 10]
+[charaDepth D 11]
+[charaDepth E 12]
+[charaDepth F 13]
+
+[subCameraOn 3]
+[charaLayer L sub #A]
+[subCameraFilter #A maskEdge cut359_mask10 5 0,0,0,255 0]
+
+[charaScale L 1.1]
+[charaFadein L 0.1 300,50]
+
+[charaLayer M sub #B]
+[charaLayer H sub #B]
+[subCameraFilter #B maskEdge cut359_mask16 5 0,0,0,255 0]
+[charaLayer I sub #B]
+
+[charaFace I 6]
+[charaFadein I 0.1 -20,270]
+
+[charaScale M 1.1]
+[charaFace H 0]
+[charaFadein M 0.1 -300,50]
+
+[charaLayer N sub #C]
+[charaLayer J sub #C]
+[subCameraFilter #C normal]
+[charaScale J 1.0]
+[charaScale N 1.27]
+[charaFace J 6]
+[charaFadein J 0.1 1]
+[charaFadein N 0.1 0,-200]
+
+[scene 264300]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_124 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠メイドイン彦斎
+ここに最後のマガツヒノカミが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠織田信長
+ところでおまえ最後までその[#恰好:かっこう]なの？
+[k]
+
+＠織田信長
+ビジュアルが締まらないんじゃけど。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠メイドイン彦斎
+やると言ったら必ずやるのがわたし。[r]マスターのメイドとしてやり遂げてみせる。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠織田信長
+あ、言ってもわかんない系ね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠原田左之助
+それじゃあ、扉開けますよ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad91]
+[wt 1.5]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_124 1.0]
+[wait wipe]
+
+[seStop ad91 1.0]
+
+[scene 264401]
+[wt 1.5]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 1.0]
+
+[charaScale K 1.5]
+[charaScale D 1.1]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.6 0,-50]
+[charaFadein K 0.6 0,-280]
+[charaMoveEase D 0,0 2.0 easeOutQuad]
+[charaMoveEase K 0,-230 2.0 easeOutQuad]
+[wt 2.0]
+
+[bgm BGM_EVENT_97 0.1]
+
+[charaFace D 13]
+
+＠松永弾正
+ちっ、結局みんなぶっ壊して来たってわけ？
+[k]
+
+[messageOff]
+[charaTalk I]
+[charaFace A 6]
+[subRenderFadeinFSSideR #B 0.3 390,-270]
+[subRenderMoveEaseFSSideR #B 370,-320 0.4 easeOutSine]
+[wt 0.4]
+
+＠I：メイドイン彦斎
+手間をかけさせてくれたけど、[r]さすがに年貢の納め時かしらね。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFadein H 0.1 -10,270]
+
+＠H：織田信長
+ま、そういう事じゃな。これで分かったか？
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+
+＠松永弾正
+はあ？　終わってないうちに偉そうにすんな。[r]そんなんだから本能寺で乙るんだよ。
+[k]
+
+[charaTalk H]
+[charaFace H 7]
+
+＠H：織田信長
+じゃが、おまえひとりでわしらの相手を出来るとでも？
+[k]
+
+[charaTalk D]
+[charaFace D 7]
+
+＠松永弾正
+ま、そりゃそうかも。
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.3]
+[wt 0.3]
+[charaFace D 14]
+
+＠松永弾正
+あーあ、あと少しで大爆発だったのになー。[r]カルデアのマスターだっけ？
+[k]
+
+[charaFace D 5]
+
+＠松永弾正
+おまえ盛り上げたいなら空気読んで少し手を抜けって、[r]はたから見ても頑張りすぎなんよなー。
+[k]
+
+？1：じゃあこれで終わりですね
+
+？2：爆発オチはちょっと……
+
+？！
+
+[bgmStop BGM_EVENT_97 1.5]
+
+[messageOff]
+[charaMoveEase K -120,-160 1.2 easeInOutSine]
+[charaMoveEase D -120,-20 1.2 easeInOutSine]
+[charaMoveScaleEase K 1.227 1.2 easeInOutSine]
+[charaMoveScaleEase D 0.9 1.2 easeInOutSine]
+[wt 1.2]
+[se ad452 0.5 1.0]
+[wt 0.5]
+[charaFadeout H 0.1]
+[charaFadein I 0.1 -20,270]
+
+[seStop ad452 0.4]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 150,0]
+[charaMove E 120,0 0.5]
+[wt 0.5]
+
+＠黒の剣士
+……そうでもないぞ。
+[k]
+
+[charaTalk D]
+[charaFace D 3]
+
+＠松永弾正
+は？　おまえ……。
+[k]
+
+[bgm BGM_BATTLE_128 0.1]
+
+[charaTalk E]
+
+＠黒の剣士
+カルデアのマスター、悪いが弾正に加勢させてもらう。
+[k]
+
+[charaTalk I]
+[charaFace I 9]
+[subRenderFadeinFSSideR #B 0.3 370,-320]
+[wt 0.3]
+
+＠I：メイドイン彦斎
+……どういうこと？
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.3]
+[wt 0.3]
+[charaFadeout I 0.1]
+[charaFadein H 0.1 -40,270]
+
+[charaTalk D]
+[charaFace D 10]
+
+＠松永弾正
+こっちの台詞だっつーの！[r]勇ちゃん、じゃねえ、近藤！　今更どういうつもりだ！
+[k]
+
+[charaTalk E]
+
+＠黒の剣士
+今の俺は近藤ではない、黒の剣士だ。
+[k]
+
+[charaTalk D]
+[charaFace D 13]
+
+＠松永弾正
+バカかてめぇ……。
+[k]
+
+[charaTalk E]
+[charaFace E 5]
+
+＠黒の剣士
+ああ、それとバカはもう一人いる。
+[k]
+
+[messageOff]
+[charaMoveEase K 0,-160 0.8 easeOutQuad]
+[charaMoveEase D 0,-20 0.8 easeOutQuad]
+[charaMoveEase E 240,0 0.8 easeOutQuad]
+[wt 0.8]
+
+[charaTalk F]
+[charaFace F 0]
+[se ad223]
+[charaPut F -240,0]
+[fowardEffect bit_talk_quickmove -240,0]
+[charaSpecialEffect F appearance 1 0.25]
+[wt 0.4]
+
+[charaFace C 11]
+[charaFadein C 0 1]
+
+＠謎の少年
+そういうこと。僕達が相手になるよ、カルデア。
+[k]
+
+[messageOff]
+[charaTalk C,F]
+[charaFadeout K 0.4]
+[charaFadeout F 0.4]
+[charaFadeout E 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+
+＠原田左之助
+局長に平助……、どういう風の吹きまわしなんです？
+[k]
+
+[messageOff]
+[charaTalk E,C]
+[charaFace D 13]
+[charaFadein D 0.4 0,-20]
+[charaFace F 0]
+[charaFadein F 0.4 -240,0]
+[charaFace E 0]
+[charaFadein E 0.4 240,0]
+[charaFadein K 0.4 0,-160]
+[wt 0.4]
+[charaFadeout C 0.1]
+
+＠黒の剣士
+見た通りだ。俺たちは弾正に加勢する。
+[k]
+
+[charaTalk D]
+[charaFace D 3]
+
+＠松永弾正
+……何考えてやがる。
+[k]
+
+＠黒の剣士
+どちらにせよおまえだけでは分が悪いだろう。
+[k]
+
+[charaFace E 1]
+
+＠黒の剣士
+この際だ、乱世の[#梟雄:きょうゆう]らしく、[r]裏切者の俺たちを使ってみせるがいい。
+[k]
+
+[charaTalk F]
+[charaFace F 6]
+
+＠謎の少年
+裏切り、裏切られが乱世の習いって言ってただろ。
+[k]
+
+[charaTalk H]
+[charaFace H 1]
+[subRenderFadeinFSSideR #B 0.3 390,-320]
+[wt 0.3]
+
+＠H：織田信長
+うははははははは！　言われとるぞ、弾正。[r]裏切り上等の貴様には似合いの手駒よの。
+[k]
+
+[subRenderFadeout #B 0.2]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 11]
+
+[charaFace A 6]
+[charaFadeinFSR A 0 2]
+[charaFace C 0]
+[charaFadeinFSL C 0 0]
+
+＠松永弾正
+……良い度胸だ、そんじゃせいぜいこき使って[r]やるから覚悟しろよ！
+[k]
+
+[messageOff]
+[charaTalk A,D]
+[charaFadeout K 0.4]
+[charaFadeout F 0.4]
+[charaFadeout E 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+
+＠メイドイン彦斎
+なにか事情がありそうだけど、邪魔をするなら容赦はしない。
+[k]
+
+[charaTalk C]
+
+＠原田左之助
+カルデアの大将、あの二人の事です。[r]きっとなにか理由が……、
+[k]
+
+？1：わかってる
+
+[charaTalk A]
+[charaFace A 1]
+
+＠メイドイン彦斎
+いい顔、わたしが剣を預けるマスターは[r]こうじゃないと。
+[k]
+
+[messageOff]
+[charaTalk J,A]
+
+？2：大丈夫、誠を信じてるから
+
+[charaTalk C]
+[charaFace C 1]
+
+＠原田左之助
+……すんません、恩に着ます。
+[k]
+
+[messageOff]
+[charaTalk J,C]
+
+？！
+
+[subRenderFadein #C 0.4 0,0]
+[wt 0.6]
+
+＠J：松永弾正
+けっ！　なーにをわかったような顔してやがる！
+[k]
+
+[charaFace D 10]
+
+＠J：松永弾正
+見せてもらおうじゃないの、カルデアのマスター、[r]アンタの器とやらをね！
+[k]
+
+[messageOff]
+[subCameraMoveEase #C 0,-50 0.6 easeOutCubic 1.2]
+[wt 0.6]
+[charaFace J 16]
+
+[fowardEffect bit_talk_41_fs]
+
+＠J：松永弾正
+レッツ！　ファイナル・バック・[wt 0.5]DAN・[wt 0.5][charaMoveReturn J 0,7 0.3]ジョー！！
+[k]
+
+[messageOff]
+[maskout black 0.5]
+[bgmStopEnd BGM_BATTLE_128 0.4]
+[wait mask]
+[soundStopAllEnd]
+[end]
+

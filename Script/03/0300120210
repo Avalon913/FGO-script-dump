@@ -1,0 +1,1070 @@
+
+
+＄03-00-12-02-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 9005001 1 ホームズ]
+[charaSet B 1098235000 1 カドック]
+[charaSet C 7007001 1 ヴラド三世]
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+[charaSet E 99502600 1 マシュ]
+[charaSet F 1098234710 1 クラス・アサシン]
+[charaSet G 1098234710 1 クラス・アサシン]
+[charaSet H 1098234710 1 クラス・アサシン]
+
+[imageSet I back10000 1 1]
+[charaScale I 1.3]
+
+[imageSet O cut348_map01 1 1]
+[imageSet P cut348_map02 1 1]
+[imageSet Q cut348_map03 1 1]
+
+[sceneSet R 155101 1]
+
+[charaSet S 1098124510 1 エフェクト用]
+[charaSet T 1098124510 1 エフェクト用2]
+
+[charaPut S 2000,2500]
+[charaEffect S bit_talk_10_LowLevel]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 114901]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠ホームズ
+さて。[r]まず、紅茶が欲しいところだが[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠カドック
+安心しろ。酒場には酒しかない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ヴラド三世
+余にとって、[r]ここは[#葡萄酒:ワ 　イ 　ン]を[#嗜:たしな]む雰囲気ではないな。
+[k]
+
+＠ヴラド三世
+残念ではあるが、またの機会にするか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ホームズ
+では二人とも、話してくれたまえ。[r]どんなに細かいことでも構わないからね。
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ホームズ
+……ふむ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk D]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+なるほど。
+[k]
+
+＠ダ・ヴィンチ
+サーヴァントの軍団か……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ヴラド三世
+余も一度は夢見た戯れ言だな。[r]戯れ言が具現化するとは思わなかったが。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear 94023309]
+[branch clear1]
+[label clear1]
+
+[charaPut S 1]
+[charaTalk D]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+データベースによる記録では、[r]サーヴァント同士の戦闘は七対七が最高記録だ。
+[k]
+
+[charaFace D 25]
+
+[branch lblConf]
+[label lblNotClear]
+[branchQuestNotClear lblNotClear2 94047009]
+[branch clear1]
+[label lblNotClear2]
+
+[charaPut S 1]
+[charaTalk D]
+[charaFace D 25]
+[charaFadein D 0.1 1]
+
+[label lblConf]
+
+＠ダ・ヴィンチ
+複数のサーヴァントの戦いになると、[r]終局特異点のような例外はあるけど……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ホームズ
+あれは最早、奇跡の類いさ。[r]人理を守るための決戦という点を差し引いてもね。
+[k]
+
+＠ホームズ
+先ほどのように陣取り合戦で[r]サーヴァントたちが殺し合う様は前代未聞だろう。
+[k]
+
+[charaFace A 8]
+＠ホームズ
+なるほど、実に興味深くはある……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠カドック
+ぱっと見た感じ、百年戦争あたりの弓術の使い手がいた。[r]長弓兵ってヤツだな。
+[k]
+
+＠カドック
+それから、極東の侍の類い。[r]甲冑からすると戦国時代の武将だろうな。
+[k]
+
+＠カドック
+種子島を持ったヤツもいたし、[r]アメリカのカウボーイらしきヤツもいた。
+[k]
+
+[charaFace B 5]
+＠カドック
+キャスターは……ほとんどが顔を隠すか、[r]認識を阻害させてたな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠ホームズ
+いわゆる七クラスがほぼ満遍なく存在しており、[r]更には地域分布も幅広い[line 3]か。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠カドック
+恐らく。[r]後は……英霊級と幻霊級って単語だ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ホームズ
+霊基のランク付けかな。[r]サーヴァントが二百騎以上。
+[k]
+
+＠ホームズ
+全てが汎人類史に名を刻んだ英雄という[r]訳ではない。
+[k]
+
+[charaFace A 5]
+＠ホームズ
+カドック君の話を聞く限り……。
+[k]
+
+＠ホームズ
+とある有名な戦いに参戦した騎士の一人、[r]というような[line 3]
+[k]
+
+＠ホームズ
+通常、サーヴァントとして召喚されることがまずない、[r]無名の人間も召喚されているのだろう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk D]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+とはいえ、それでも間違いなく[r]サーヴァントなのだけどね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ホームズ
+そうか……。
+[k]
+
+？1：ホームズが念押しで確認していたのはどうして？
+？！
+
+[charaFace A 0]
+＠ホームズ
+ああ、サーヴァントクラスの魔獣と、[r]サーヴァントそのものでは大きく違いがあるからね。
+[k]
+
+＠ホームズ
+やや大雑把な言い方だが、サーヴァントとは[r]『マスターが存在する英霊』という括りが正しい。
+[k]
+
+＠ホームズ
+無論、かなり広義の意味となる。
+[k]
+
+＠ホームズ
+この場合、はぐれサーヴァントについては[r]土地を仮初めのマスターとしている英霊、
+[k]
+
+＠ホームズ
+と仮定することになるが……今は話を戻そう。[r]どれほど弱くとも、あるいは強くとも。
+[k]
+
+＠ホームズ
+基本的にマスターが存在しなければ、[r]サーヴァントとしては成立できないのだよ。
+[k]
+
+？1：じゃあ、あのサーヴァントたちは……
+？！
+
+[charaFace A 4]
+＠ホームズ
+大いに謎だ。[r]果たして誰がマスターなのか。
+[k]
+
+＠ホームズ
+あるいは……マスターが存在しなくともよい、[r]例外的な何かがあるのか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠カドック
+まだ分からない、か。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ホームズ
+ああ、もう少し探らなければね。
+[k]
+
+？1：それから復讐と復権と王道
+
+[charaFace A 7]
+＠ホームズ
+実に強い命題が込められた言葉だ。[r]サーヴァントも気になるが、劣らず重要そうだね。
+[k]
+
+？2：それに界域って単語が出てきた
+
+＠ホームズ
+恐らく、国家や領土を意味する言葉だろう。
+[k]
+
+？！
+
+[charaFace A 8]
+＠ホームズ
+[line 3]復讐界域、復権界域、王道界域。
+[k]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+[charaFace A 0]
+＠ホームズ
+これらは各陣営の特色を表しているのだろう。[r]更にキミたちが聞いた名称から考察すると……。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth A 3]
+[charaDepth R 4]
+[charaDepth O 5]
+[charaDepth P 6]
+[charaDepth Q 7]
+
+[charaFadein R 1.0 0,-200]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaFadein O 0.5 0,-350]
+[wt 0.6]
+
+[bgm BGM_MAP_36 1.0 0.8]
+
+＠ホームズ
+復讐界域、そしてクリームヒルトという名。
+[k]
+
+＠ホームズ
+まず間違いなく、ジークフリート伝説に登場する[r]クリームヒルトだろう。
+[k]
+
+＠ホームズ
+推測されるクラスはセイバーかバーサーカー。[r]アヴェンジャー、という可能性もある。
+[k]
+
+＠ホームズ
+英霊を軍として成立させているあたり、[r]かなり理知的なのか、優れた副官がいると考えられる。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaFadein P 0.5 0,-350]
+[wt 0.6]
+
+＠ホームズ
+復権界域……コンスタンティノス。
+[k]
+
+＠ホームズ
+コンスタンティノスは複数存在するが、[r]私は１１世であろうと推理する。
+[k]
+
+＠ホームズ
+コンスタンティノス１１世。[r]東ローマ帝国における最後の皇帝とされている。
+[k]
+
+＠ホームズ
+復権、という名称が実に興味深いが、[r]今はまだ不明としておこう。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaFadein Q 0.5 0,-350]
+[wt 0.6]
+
+＠ホームズ
+最後に王道、カール大帝。
+[k]
+
+＠ホームズ
+……何ともビッグネームが出てきたものだ。[r]もし本当にカール大帝なのだとしたら、圧倒的だ。
+[k]
+
+＠ホームズ
+この戦いは間違いなくカール大帝が勝つ、[r]と言い切れる程にね。
+[k]
+
+
+＠ヴラド三世
+余もその意見に賛同しよう。
+[k]
+
+＠ヴラド三世
+クリームヒルトもコンスタンティノスも、[r]彼に比肩しうる存在ではない。
+[k]
+
+？1：カール大帝って、そんなに偉いの？
+
+[messageOff]
+[wt 0.1]
+
+[charaFadeout R 1.0]
+[charaFadeout O 1.0]
+[charaFadeout P 1.0]
+[charaFadeout Q 1.0]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠カドック
+ちゃんと勉強しろ、勉強。
+[k]
+
+＠カドック
+ヨーロッパ史に名前が出ないことはない、[r]恐らく世界有数の知名度だぞ。
+[k]
+
+[charaFace B 0]
+＠カドック
+フランク王国の王にして、[r]古代ローマの名を継いだ初代神聖ローマ皇帝。
+[k]
+
+＠カドック
+言わばヨーロッパの祖の一人だ。
+[k]
+
+＠カドック
+サーヴァントの強さは個々人の素質だけでなく、[r]知名度や神秘の深さにもよるけど……。
+[k]
+
+＠カドック
+それを踏まえてもカール大帝はトップランクの[r]サーヴァントだろうな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：（無言で続きを聞く）
+
+[messageOff]
+[wt 0.1]
+
+[charaFadeout R 1.0]
+[charaFadeout O 1.0]
+[charaFadeout P 1.0]
+[charaFadeout Q 1.0]
+[wt 1.3]
+
+[charaTalk on]
+
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ホームズ
+ただ、私としては気に掛かることもある。[r]戦い方であるとか。
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ヴラド三世
+戦い方？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ホームズ
+王道界域の軍の動きです。
+[k]
+
+＠ホームズ
+漁夫の利を狙い、そして兵の損耗を回避するために[r]適度なところで引き上げた。
+[k]
+
+＠ホームズ
+ヴラド公、これは戦術として適切ですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ヴラド三世
+適切ではあるな。[r]……ふむ、ただ……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk D]
+[charaFace D 23]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+ただ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ヴラド三世
+中規模部隊同士の激突だ。[r]おまけに戦闘はかなり一方的。
+[k]
+
+＠ヴラド三世
+となれば、介入のタイミング次第で[r][#纏:まと]めて[#たいらげる]こともできたはず。
+[k]
+
+＠ヴラド三世
+余であれば、もう少し深みに嵌まってから[r]戦場に参陣したな。
+[k]
+
+＠ヴラド三世
+押していた復権界域の軍は、挟撃を回避するために[r]全力で復讐界域の軍を叩いただろう。
+[k]
+
+＠ヴラド三世
+そして王道界域側は、[r]疲弊した復権界域を容赦なく滅ぼせたはずだ。
+[k]
+
+＠ヴラド三世
+復讐界域を放置して、[r]王道界域側に対抗しようとしても[line 3]
+[k]
+
+＠ヴラド三世
+敵陣営に深入りしすぎていた。
+[k]
+
+＠ヴラド三世
+あれでは、アーチャーやキャスターの[r]雑な攻撃だけでも相当な被害が見込まれる。
+[k]
+
+＠ヴラド三世
+汝らの話を聞く限りでは、[r]やはりタイミングが拙速だったな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ホームズ
+……。[r]……[#拙速ではない]としたら。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ヴラド三世
+何と？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ホームズ
+……いえ、拙速ではないとすれば。[r]幾つかの可能性が考えられます。
+[k]
+
+＠ホームズ
+とはいえ、現時点では、[r]確定できるものではありません。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠カドック
+ああ……いわゆるアレか。
+[k]
+
+[bgmStop BGM_MAP_36 1.5]
+
+？1：今はまだ、語るべき時ではない！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠ホームズ
+ははは、先を越されてしまったね。[wt 1.2][bgm BGM_EVENT_48 1.0 0.8][charaFace A 0][r]さて、それから彼らの目的だが……。
+[k]
+
+＠ホームズ
+特異点の源である聖杯によって召喚された[r]はぐれサーヴァントの多くは、基本的にではあるが、
+[k]
+
+＠ホームズ
+人理のために動くことが多かった。[r]過去の事例ではね。
+[k]
+
+＠ホームズ
+聖杯戦争のような儀式で召喚される英霊も、[r]基本的には人理側の存在だ。
+[k]
+
+[charaFace A 5]
+＠ホームズ
+けれど、一口に英霊と言っても[r]その性質は様々だ。
+[k]
+
+＠ホームズ
+マスターがいる場合は、その人物次第で、[r]その性格も変質する。
+[k]
+
+＠ホームズ
+高潔さを持つ英雄、[r]あるいは残忍さを露わにした怪物。
+[k]
+
+＠ホームズ
+どちらもその人間の本質であり、[r]記録されたものであることに変わりはない。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠カドック
+……さっきから基礎知識みたいなこと[r]ばかりだな、ホームズ。
+[k]
+
+＠カドック
+少し回りくどくないか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠ホームズ
+はっはっは、申し訳ない。
+[k]
+
+[charaFace A 0]
+＠ホームズ
+うん、つまり[line 3][r][#本来は有り得ないんだ]、[#この状況は]。
+[k]
+
+＠ホームズ
+善であれ悪であれ、[r]サーヴァントたちが軍として組織され、行動する。
+[k]
+
+＠ホームズ
+地域や国家、思想や信仰、出自等々、[r]恐らくそれらの全てを棚上げした状態でね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ヴラド三世
+ある意味理想の世界ではあるな。[r]とはいえ、三国……三界域と呼ぶべきか？
+[k]
+
+＠ヴラド三世
+それらで争っている以上、[r]何かが異なるのだろうが……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠カドック
+で、こいつらは敵なのか？[r]それとも味方なのか？
+[k]
+
+＠カドック
+あるいは僕みたいに、[r]一時的なら協力体制を敷くことは？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ホームズ
+この三界域のどれか一つが、[r]我々の味方であることを祈りたいね。
+[k]
+
+[charaFace A 5]
+＠ホームズ
+だがアプローチは慎重にしたい。
+[k]
+
+＠ホームズ
+何しろ組織立ったサーヴァントの軍隊という、[r]未体験の戦場だからね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ヴラド三世
+余もホームズも、手の届く範囲には限度がある。
+[k]
+
+[charaFace C 4]
+＠ヴラド三世
+先ほどの中規模部隊、[r]どの界域と戦っても壊滅したであろうな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk D]
+[charaFace D 25]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+いくら何でも人数が違いすぎるからね。[r]おまけに宝具という切り札もある。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[bgmStop BGM_EVENT_48 1.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ヴラド三世
+……。[r]……。
+[k]
+
+＠ヴラド三世
+マスター、構えよ。[r]敵である。
+[k]
+
+？1：！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠カドック
+は、敵？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[se ad728]
+[se ad608]
+[se ad228]
+[seVolume ad228 0 0.5]
+[wt 0.1]
+[shake 0.02 2 3 1.6]
+[wt 1.5]
+[seStop ad228 0.5]
+[wt 1.1]
+
+[se ad984]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠クラス・アサシン
+その首、貰い受ける！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se bac166]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ヴラド三世
+断る。
+[k]
+
+[messageOff]
+[se bac167]
+
+[charaPut T 1]
+[charaEffect T bit_talk_v_slash02 0,0 V]
+[wt 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[fowardEffect bit_talk_35]
+[charaShake F 0.03 4 4 0.8]
+[wt 0.2]
+[cueSe SE_21 21_ad1118]
+[wt 0.6]
+
+＠クラス・アサシン
+ガ、ハ……！？
+[k]
+
+[messageOff]
+[charaMove F 0,-50 0.4]
+[charaFadeout F 0.4]
+[wt 0.3]
+[se ad144]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ヴラド三世
+アサシンか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠マシュ
+て、敵サーヴァントです！[r]申し訳ありませんマスター！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+[charaEffectStop S bit_talk_10_LowLevel]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ホームズ
+『気配遮断』！[r]いやはや、厄介なものだ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth I 4]
+[charaDepth B 6]
+
+[charaPut I 1]
+[charaFadeTime I 0.2 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠カドック
+（ヴラド三世が気付いたのは……。[wt 0.7][charaFace B 7][r]　ああ、血の臭いに敏感なのか）
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout I 0.2]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ヴラド三世
+案ずるな、打って出るぞ。[r]マスター、いいな？
+[k]
+
+？1：了解！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠カドック
+あー……ここで引っ込んでおく。[r]身を危険に晒す必要性もないしな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ホームズ
+ああ、そうしたまえ。
+[k]
+
+[messageOff]
+[se ad678]
+[wipeout leftToRight 0.5 1.0]
+[bgm BGM_EVENT_80 0.5 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 150500]
+[wt 0.6]
+
+[bgm BGM_EVENT_80 0.5 1.0]
+[wipein rightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.6]
+
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaPut C 1]
+[charaSpecialEffect C appearanceReverse 1 0.2]
+[se ad73]
+[wt 0.4]
+
+＠ヴラド三世
+さて……。[r]残党狩りのようなものか。
+[k]
+
+[charaFace C 5]
+＠ヴラド三世
+一応聞いておこう。[r]汝らはどの界域だ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth F 6]
+[charaDepth G 5]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaFadeinFSR F 0.1 2]
+[charaFadeinFSL G 0.1 0]
+＠クラス・アサシン
+……。[r]……。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ヴラド三世
+沈黙か。[r]いずれにせよ、余の敵であることに違いはない。
+[k]
+
+＠ヴラド三世
+ならば容赦なく狩るのみ、だ。
+[k]
+
+
+[charaFace C 5]
+＠ヴラド三世
+[line 3]行くぞ。[r]悔恨と悲嘆の杭、その身で受けるがいい。
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

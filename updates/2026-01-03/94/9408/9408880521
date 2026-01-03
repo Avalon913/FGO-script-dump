@@ -1,0 +1,996 @@
+
+
+
+＄94-08-88-05-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 25013000 1 ワンジナ]
+[charaSet B 1098257910 1 マシュ]
+[charaSet C 10012000 1 太歳星君]
+[charaSet D 25005000 1 ボイジャー]
+[charaSet E 98110000 1 柳生但馬守]
+[charaSet F 2022000 1 アルテラサンタ]
+[charaSet H 7042000 1 クリームヒルト]
+[charaSet I 4039002 1 マンドリカルド]
+[charaSet J 1098257310 1 ダ・ヴィンチ]
+[charaSet K 1098257420 1 シオン]
+
+[charaSet L 98115000 1 エフェクト用]
+
+[charaSet M 98115000 1 エフェクト用1]
+[sceneSet N 169100 1]
+
+[charaSet O 98115000 1 エフェクト用2]
+[charaSet P 1098277610 1 聖杯]
+
+[sceneSet Q 110100 1]
+[charaSet R 98115000 1 エフェクト用3]
+[charaSet S 98115000 1 エフェクト用4]
+[charaSet G 98115000 1 エフェクト用5]
+[charaSet T 98115000 1 エフェクト用6]
+
+[charaSet U 1098277610 1 聖杯1]
+[charaPut U 2000,2000]
+[charaFadeTime U 0.1 0]
+
+[charaPut O 2000,2000]
+[charaEffect O bit_sepia01_depth_fs]
+
+[subCameraOn 4]
+
+[charaLayer B sub #A]
+[charaLayer N sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask05 3 255,255,255,255]
+
+[charaScale Q 1.3]
+[charaScale N 1.3]
+[charaScale B 1.3]
+
+[charaTalk depthOff]
+
+[charaDepth N 1]
+[charaDepth B 3]
+
+[charaFadein N 0.1 0,150]
+
+[scene 169100]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_48 0.1]
+
+[charaTalk P]
+[charaFace P 0]
+[charaFadein P 0.1 1]
+
+[wt 0.5]
+
+[se adm11]
+[charaPut M 0,-210]
+[charaEffect M bit_talk_jet_injection]
+[wt 0.5]
+
+[seStop adm11]
+[se ade90]
+
+[charaMove P 0,800 0.4]
+[charaMove M 0,800 0.4]
+[charaFadeout P 0.2]
+[charaFadeout M 0.2]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 -100,300]
+[charaPut M 2000,2000]
+
+[wt 0.5]
+
+[subRenderFadein #A 0.2 250,-220]
+[charaMove B -100,200 0.3]
+[charaMove N 0,50 0.3]
+[wt 0.3]
+
+＠マシュ
+聖杯、飛翔開始しました。
+[k]
+
+[messageOff]
+
+[charaMove B -100,-100 0.3]
+[charaMove N 0,-150 0.3]
+[subRenderFadeout #A 0.3]
+
+[wt 0.5]
+
+？1：アルテラ、お願い！
+？！
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaFadeout N 0.1]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[charaLayer B normal]
+[charaScale B 1.0]
+
+
+[charaScale F 1.3]
+
+[charaDepth Q 1]
+[charaDepth F 2]
+
+[charaFadein Q 0.1 -120,-250]
+
+[scene 110100]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.4 50,10]
+[charaEffect F bit_talk_36]
+[charaMove F 75,10 6.0]
+[charaMove Q -100,-250 6.0]
+[se ad39]
+
+＠アルテラサンタ
+上昇速度では負けられない。[r]夢の羊は夜空を駆ける。
+[k]
+
+[charaFace F 2]
+＠アルテラサンタ
+『[#聖夜の虹、軍神の剣:キ ャ ン デ ィ ス タ ー ・ フ ォ ト ン ・ レ イ]』！
+[k]
+
+[messageOff]
+
+[seStop ad39 0.2]
+[se ad300]
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[charaEffectStop F bit_talk_36]
+[charaFadeout Q 0.1]
+[charaFadeout F 0.1]
+
+[charaSet F 2022000 1 アルテラサンタ]
+[charaScale F 1.0]
+
+[scene 169100]
+
+[charaDepth M 1]
+[charaDepth P 2]
+
+[effect bit_talk_ereshki02]
+[wt 0.7]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[wt 0.5]
+[se ade289]
+
+[wt 2.0]
+[seStop ade289 2.0]
+
+
+[charaTalk P]
+[charaFace P 0]
+[charaFadein P 0.1 800,-350]
+[charaRollMove M 0 90]
+[charaRollMove P 0 90]
+[charaPut M 1000,-350]
+
+[charaMove P -1800,-350 0.9]
+[charaMove M -1610,-350 0.9]
+[se ade90]
+
+[wt 1.5]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[effect bit_talk_42 0,0 H]
+[effectDestroy bit_talk_ereshki02]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk P]
+[charaFace P 0]
+[charaFadein P 0.1 800,-350]
+[charaRollMove M 0 90]
+[charaRollMove P 0 90]
+[charaPut M 1000,-350]
+
+[charaMove P -1800,-350 0.9]
+[charaMove M -1610,-350 0.9]
+[se ade90]
+
+[wt 1.5]
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaFadeout P 0.1]
+[effectDestroy bit_talk_42]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+[wt 0.5]
+
+[scene 110100]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+＠アルテラサンタ
+うん、そこまでは読んでいる。[r]後は任せたぞ、三人とも。
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[wt 0.5]
+
+[sceneSet R 169100 1]
+[sceneSet E 169100 1]
+[sceneSet I 169100 1]
+
+[subCameraFilter #A maskEdge cut359_mask05 3 255,255,255,0]
+[subCameraFilter #B maskEdge cut359_mask10 5 255,255,255,0]
+[subCameraFilter #C maskEdge cut359_mask16 5 255,255,255,0]
+
+[charaLayer C sub #B]
+[charaLayer E sub #B]
+
+[charaLayer D sub #C]
+[charaLayer I sub #C]
+
+[charaScale C 1.3]
+[charaScale A 1.4]
+[charaScale D 1.3]
+[charaScale E 1.3]
+[charaScale I 1.3]
+[charaScale R 1.3]
+
+[charaDepth R 1]
+[charaDepth E 1]
+[charaDepth I 1]
+
+[charaDepth A 2]
+[charaDepth D 2]
+[charaDepth C 2]
+
+[scene 169100]
+
+[charaFadein R 0.1 0,-200]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 20,200]
+[charaFadein E 0.1 400,-150]
+
+[subRenderFadein #B 0.3 -400,-200]
+[wt 0.3]
+
+＠太歳星君
+任されたー！
+[k]
+
+[messageOff]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 -20,150]
+[charaFadein I 0.1 -400,-150]
+
+[subRenderFadein #C 0.3 400,-200]
+[wt 0.3]
+
+＠ボイジャー
+やろう！
+[k]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.3 0,0]
+[charaFadein R 0.3 0,-150]
+[wt 0.3]
+
+＠ワンジナ
+聖杯、取っちゃうよー！
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[fadeout white 0.3]
+[bgm BGM_BATTLE_48 0.3 0.5]
+[wait fade]
+[wt 0.5]
+
+[subRenderFadeout #B 0.1]
+[subRenderFadeout #C 0.1]
+
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout R 0.1]
+[charaFadeout E 0.1]
+[charaFadeout I 0.1]
+
+[charaLayer D normal]
+[charaLayer C normal]
+[charaLayer E normal]
+[charaLayer I normal]
+
+
+[charaScale C 1.0]
+[charaScale A 1.0]
+[charaScale D 1.0]
+[charaScale R 1.0]
+[charaScale E 1.0]
+[charaScale I 1.0]
+
+[charaDepth D 1]
+[charaDepth A 2]
+[charaDepth C 3]
+
+[charaDepth K 3]
+
+[charaDepth L 4]
+[charaDepth O 5]
+
+[charaSet E 98110000 1 柳生但馬守]
+[charaSet I 4039002 1 マンドリカルド]
+[charaSet R 98115000 1 エフェクト用3]
+
+[charaPut L 2000,2000]
+[charaEffect L bit_talk_10_LowLevel]
+
+[charaPut O 0,0]
+
+[wt 0.5]
+[fadein white 0.3]
+[wait fade]
+
+[charaTalk K]
+[charaFace K 9]
+[charaFadein K 0.1 1]
+[charaPut L 0,0]
+
+＠シオン
+[line 3]さて、結論から言うとです。
+[k]
+
+[charaFace K 4]
+＠シオン
+あの聖杯は捕まえるというよりは、[r]触れるだけでいいでしょう。
+[k]
+
+[charaFace K 11]
+＠シオン
+結局のところ、[r]聖杯は高魔力のリソース体です。
+[k]
+
+＠シオン
+もちろん、叶えられるのはあの聖杯が[r]保有する魔力の限界までですが……。
+[k]
+
+[charaFace K 12]
+＠シオン
+足が生えて逃げるにしても、[r]そこは願望機の悲しさ。
+[k]
+
+＠シオン
+手に取った者の願いを叶えるため、[r]触れられただけで停止せざるを得ないはず。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+[charaPut L 2000,2000]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠アルテラサンタ
+それなら何とかなりそうだ。[r]三人が力を合わせてくれるなら、たぶん。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaScale A 1.15]
+
+[charaTalk off]
+[charaFace C 10]
+[charaFadeinFSL C 0.1 -300,0]
+
+[charaFace A 4]
+[charaFadein A 0.1 0,0]
+
+[charaFace D 1]
+[charaFadeinFSR D 0.1 300,0]
+
+＠三人
+おー！
+[k]
+
+[messageOff]
+
+[fadeout white 0.3]
+[bgm BGM_BATTLE_48 0.3 1.0]
+[wait fade]
+
+[charaPut O 2000,2000]
+[charaEffectStop O bit_sepia01_depth_fs]
+
+[charaScale A 1.0]
+[charaScale S 1.3]
+[charaScale A 1.3]
+[charaScale D 1.3]
+[charaScale N 1.3]
+[charaScale P 0.8]
+[charaScale M 0.8]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+
+
+[charaDepth N 1]
+[charaDepth A 2]
+[charaDepth D 2]
+[charaDepth S 2]
+[charaDepth M 3]
+[charaDepth P 4]
+[charaDepth R 5]
+[charaDepth G 5]
+[charaDepth T 5]
+
+[charaLayer P sub #C]
+[charaLayer M sub #C]
+[charaLayer S sub #C]
+[charaLayer R sub #C]
+[charaLayer G sub #C]
+[charaLayer T sub #C]
+
+[charaLayer A sub #D]
+[charaLayer D sub #D]
+[charaLayer N sub #D]
+
+[subRenderDepth #C 1]
+[subRenderDepth #D 2]
+
+[subCameraFilter #C maskEdge cut359_mask08 3 255,255,255,0]
+[subCameraFilter #D maskEdge cut359_mask05 3 255,255,255,0]
+
+[charaRollMove S 0 -180]
+
+[charaPut S 0,-200]
+[charaEffect S bit_talk_back_splash_bl]
+
+[charaFace P 0]
+[charaFadein P 0.1 -460,50]
+[charaPut M -300,50]
+[charaRollMove P 0 90]
+
+
+[subRenderFadein #C 0.2 0,-300]
+
+[charaFace A 1]
+[charaFadein A 0.1 0,300]
+[charaFadein N 0.1 0,-50]
+
+[fadein white 0.3]
+[wait fade]
+[wt 0.5]
+
+[subRenderFadeinFSR #D 0.2 300,-200]
+[charaMove A 0,200 0.3]
+[charaMove N 0,-100 0.3]
+[wt 0.5]
+[charaMove A 0,100 0.3]
+[charaMove N 0,-200 0.3]
+[subRenderFadeout #D 0.2]
+
+[charaMoveScale P 0.7 0.3]
+[charaMoveScale M 0.7 0.3]
+[charaMove P -400,100 0.3]
+[charaMove M -255,100 0.3]
+[se ade90]
+
+[se ad979]
+[charaPut G 500,100]
+[charaEffect G bit_talk_water_spread]
+[wt 1.8]
+
+[charaFadeout A 0.1]
+
+[charaMoveScale P 0.8 0.3]
+[charaMoveScale M 0.8 0.3]
+[charaMove P -460,50 0.3]
+[charaMove M -300,50 0.3]
+[wt 1.0]
+
+[charaFace D 2]
+[charaFadein D 0.1 0,300]
+[charaFadein N 0.1 0,100]
+
+[subRenderFadeinFSR #D 0.2 300,-200]
+[charaMove D 0,200 0.3]
+[charaMove N 0,0 0.25]
+[wt 0.5]
+[charaMove D 0,100 0.3]
+[charaMove N 0,-100 0.3]
+[subRenderFadeout #D 0.2]
+
+[wt 0.3]
+[charaMove P -1400,50 0.3]
+[charaMove M -1200,50 0.3]
+[se ade90]
+[wt 0.2]
+
+[cueSe Servants_2500500 bac1732]
+[charaPut R 0,500]
+[charaEffect R bit_talk_aerial_wave]
+[wt 1.5]
+[seStop bac1732 1.2]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[subRenderFadeout #C 0.1]
+
+[charaPut M 2000,2000]
+
+[charaLayer P sub #B]
+[charaLayer U sub #B]
+[charaLayer M sub #B]
+[charaLayer S sub #B]
+
+[subCameraFilter #B maskEdge cut359_mask16 5 255,255,255,0]
+
+[charaRollMove S 0 -180]
+
+[charaPut S 0,-450]
+[charaEffect S bit_talk_back_splash_bl]
+
+[charaScale P 0.8]
+[charaScale U 0.8]
+[charaScale M 0.8]
+
+[charaDepth S 2]
+[charaDepth M 3]
+[charaDepth P 4]
+[charaDepth U 5]
+
+[subRenderDepth #B 1]
+[subRenderDepth #A 2]
+
+[charaFace P 0]
+[charaFadein P 0.1 -220,-50]
+[charaPut M -60,-50]
+[charaRollMove P 0 90]
+[charaRollMove U 0 90]
+
+[subRenderFadein #B 0.2 200,-250]
+
+[charaFace C 2]
+[charaFadein C 0.4 -300,0]
+
+[wt 0.2]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+＠太歳星君
+よーし、取れるぞー！
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_48 1.0]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[charaLayer E sub #A]
+[charaLayer N sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask05 3 255,255,255,0]
+
+[charaScale N 1.3]
+[charaScale E 1.3]
+
+[charaDepth N 1]
+[charaDepth E 3]
+
+[charaFadein N 0.1 0,-150]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,160]
+
+[subRenderFadeinFSSideR #A 0.2 400,-200]
+
+
+＠柳生但馬守
+[line 3]さて。如何なものか。
+[k]
+
+[messageOff]
+
+[charaTalk P]
+[subRenderFadeout #A 0.2]
+[wt 0.5]
+
+[charaLayer A normal]
+[charaScale A 1.0]
+[charaLayer D normal]
+[charaScale D 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[se adm20]
+[charaEffectEdgeBlur U afeeee afeeee 6 2.0]
+[wt 0.25]
+[charaFace U 0]
+[charaPut U -220,-50]
+
+[wt 0.5]
+[charaEffectEdgeBlurStop U]
+[wt 2.7]
+
+[se ad595]
+[charaFadeout U 0.1]
+[charaSpecialEffect P wipeTime 0,0 1.0]
+[wt 0.7]
+[charaEffectStop M bit_talk_jet_injection]
+
+[wt 1.2]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[subRenderFadeout #B 0.2]
+
+[charaFadeout C 0.1]
+
+[sceneSet Q 169100 1]
+[charaScale Q 1.3]
+
+[sceneSet R 169100 1]
+[charaScale R 1.1]
+
+[charaDepth R 1]
+[charaDepth Q 2]
+[charaDepth B 3]
+[charaDepth D 3]
+[charaDepth J 3]
+[charaDepth L 4]
+[charaDepth C 3]
+[charaDepth A 4]
+[charaDepth H 3]
+[charaDepth I 3]
+
+[charaFadein Q 0.1 -100,-250]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……え？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠ボイジャー
+……せいはい、きえてしまったね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 25]
+[charaFadein J 0.1 1]
+[charaPut L 0,0]
+
+＠ダ・ヴィンチ
+聖杯消失……あれ？[r]太歳星君、今触れた？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut L 2000,2000]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠太歳星君
+まだだったけど……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠ワンジナ
+あれ？　あれれ？[r]聖杯が……遠くに……いったような……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 25]
+[charaFadein J 0.1 1]
+[charaPut L 0,0]
+
+＠ダ・ヴィンチ
+えーと、聖杯を地図で確認。[r]そこから三百キロ先……つまり……。
+[k]
+
+[charaFace J 7]
+＠ダ・ヴィンチ
+うっそだろ瞬間移動してるー！？[r]何だこのオモシロ聖杯ー！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut L 2000,2000]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠マシュ
+瞬間移動ですか……。[r]ま、まさかそんな事までできるなんて……。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[se ad56]
+[wt 0.7]
+[seStop ad56 0.2]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+
+[wt 0.5]
+
+＠クリームヒルト
+マスター、どうだった？
+[k]
+
+？1：ダメだった……
+？！
+
+[charaFace H 12]
+＠クリームヒルト
+……そう。[r]ま、仕方ないわね。
+[k]
+
+[charaFace H 0]
+＠クリームヒルト
+切り替えていきましょう。[r]ワンジナ、いける？
+[k]
+
+[messageOff]
+
+[charaMove H 200,0 1.2]
+[charaMove Q 100,-250 1.2]
+
+[charaScale A 1.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.4 -500,0]
+[charaMove A -300,0 1.2]
+
+[wt 1.5]
+
+＠ワンジナ
+……。[r]……。
+[k]
+
+[charaFace H 4]
+＠クリームヒルト
+ワンジナ？
+[k]
+
+[bgm BGM_MAP_56 0.1]
+
+[charaFace A 0]
+＠ワンジナ
+え、あ、うん！[r]大丈夫、いけるいける！
+[k]
+
+[charaFace A 3]
+＠ワンジナ
+でも……もう人数的にはいっぱいいっぱいかも。
+[k]
+
+[messageOff]
+
+[charaFadeout H 0.3]
+[charaFadeout Q 0.3]
+[charaFadeout A 0.3]
+[wt 0.4]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠マンドリカルド
+ああ、それなら無断レイシフトの俺は[r]遠慮するっす。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[charaPut L 0,0]
+
+＠ダ・ヴィンチ
+そうだね。最初にシバが適切だと判断した[r]サーヴァントを優先させてもらおう。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut L 2000,2000]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠マンドリカルド
+いってらっしゃいっす！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaDepth B 1]
+[charaDepth H 2]
+[charaDepth A 3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaFace B 0]
+[charaFadein B 0.1 -400,0]
+
+[charaFace H 0]
+[charaFadein H 0.1 300,0]
+
+＠ワンジナ
+よーし、飛ぶよー！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[se ad598]
+[wt 0.1]
+[charaMoveEase A 0,10 1.0 easeInOutBack]
+[charaMoveEase B -400,10 1.0 easeInOutBack]
+[charaMoveEase H 300,10 1.0 easeInOutBack]
+[wt 1.2]
+
+
+[se ad306]
+[cameraMove 0.4 0,-50 1.0]
+[charaMove A 0,100 0.3]
+[charaMove H 300,100 0.3]
+[charaMove B -400,100 0.3]
+
+[charaFadeout A 0.3]
+[charaFadeout H 0.3]
+[charaFadeout B 0.3]
+
+[bgm BGM_MAP_56 0.5 0.5]
+[wipeout rectangleStripUpToDown 0.2 1.0]
+[wait wipe]
+
+[cameraMove 0.1 0,0 1.0]
+[pictureFrame cut063_cinema]
+
+[scene 10000]
+[wt 1.5]
+
+[wipein rectangleStripUpToDown 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 169100]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+＠マンドリカルド
+おお、凄い勢いで飛んでいった……。
+[k]
+
+
+[charaFace I 6]
+
+＠マンドリカルド
+……。[r]……。
+[k]
+
+[charaFace I 4]
+
+＠マンドリカルド
+……やっぱり、何か違和感あるんだよな……。[r]気のせいだといいけど……。
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+[bgmStopEnd BGM_MAP_56 2.0]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAllEnd]
+[end]

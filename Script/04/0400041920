@@ -1,0 +1,1651 @@
+
+
+
+
+＄04-00-04-19-2-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098276900 1 マシュ]
+[charaSet B 1098307900 1 岸波白野]
+[charaSet C 1098301840 1 ＢＢコスモ]
+[charaSet D 4034300 1 バーソロミュー]
+[charaSet E 11019000 1 徐福]
+[charaSet F 23004000 1 殺生院キアラ]
+[charaSet G 1098297900 1 カルナ]
+
+[charaSet H 1098301100 1 チャッカリム]
+[charaSet I 98115000 1 船内ガイド]
+
+[charaSet J 1098299100 1 口を開けているＡＩ]
+[charaSet K 1098299010 1 うつろな目のＡＩ]
+[charaSet L 1098299000 1 耳をたてているＡＩ]
+[charaSet M 1098299020 1 手足が透けだしているＡＩ]
+[charaSet N 23004000 1 殺生院キアラ]
+
+
+[imageSet V back10000 1 1]
+[charaScale V 1.01]
+[imageSet W back10000 1 1]
+[charaScale W 1.01]
+
+
+[sceneSet S 224010 1]
+[sceneSet T 224010 1]
+
+[imageSet R cut603_anger 1]
+[charaSet Z 5009000 1 エフェクト用1]
+
+[subCameraOn 3]
+
+[charaLayer A sub #A]
+[charaLayer S sub #A]
+[charaLayer B sub #B]
+[charaLayer T sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask10 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask16 5 255,255,255,255]
+
+[charaTalk depthOff]
+[charaDepth S 1]
+[charaDepth A 2]
+[charaDepth T 1]
+[charaDepth B 2]
+
+[charaScale A 1.2]
+[charaScale B 1.2]
+[charaScale S 1.3]
+[charaScale T 1.3]
+
+[charaFace A 14]
+[charaFadein A 0.1 45,220]
+[charaFadein S 0.1 350,50]
+[charaFace B 0]
+[charaFadein B 0.1 -20,220]
+[charaFadein T 0.1 -600,-10]
+
+[scene 224010]
+
+[fadein black 1.5]
+[bgm BGM_EVENT_49 0.1]
+[wait fade]
+
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠ＢＢコスモ
+バーソロミューさんが[#港:みなと]でスタンバイしています！[r]調査団の皆さん、急いで向かってください！
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadeinFSSideL #A 0.3 -375,-225]
+[subRenderMoveEaseFSSideL #A -350,-250 0.3 easeOutSine]
+
+[subRenderFadeinFSSideR #B 0.3 375,-225]
+[subRenderMoveEaseFSSideR #B 350,-250 0.3 easeOutSine]
+[wt 0.5]
+
+[charaMoveReturn A 45,215 0.4]
+[charaMoveReturn B -20,215 0.4]
+
+[wt 1.0]
+[cueSe SE_23 23_ad1292]
+[charaFadeout A 0.4]
+[charaFadeout B 0.4]
+
+[subRenderFadeout #A 0.4]
+[subRenderMoveEaseFSSideL #A -450,-250 0.5 easeOutSine]
+[subRenderFadeout #B 0.4]
+[subRenderMoveEaseFSSideR #B 450,-250 0.5 easeOutSine]
+[wt 1.0]
+[cueSeStop 23_ad1292 1.0]
+[wt 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_49 1.2 0.6]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠チャッカリム
+待って[%1]。[r]他のエリアに行く？　行くでしょ？
+[k]
+
+？1：[&なにかあった:どうしたの]、チャッカリム？
+
+？！
+
+＠チャッカリム
+アンソニーから伝言、[#預:あず]かってる。[r]アンソニー、昨日、出て行った。
+[k]
+
+＠チャッカリム
+[%1]たちに[r]挨拶できなくてゴメン、言ってた。
+[k]
+
+[bgmStop BGM_EVENT_49 1.5]
+＠チャッカリム
+あとはこう。
+[k]
+
+
+＠チャッカリム
+『2400年の記録を調べてください』[r]『博物館にならまだ残っている筈です』
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_57 0.1]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠ＢＢコスモ
+2400年……消去されている過去の情報ですね。
+[k]
+
+＠ＢＢコスモ
+ですが博物館……ムーン・ドバイに[r]そういったものはありませんが……
+[k]
+
+[charaFace C 19]
+
+＠ＢＢコスモ
+いえ、気になりますが今はエリアＡです！[r]伝言ありがとうございます、チャッカリムさん！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠チャッカリム
+みんなも気をつけて。[r]エリアＡに行ったＡＩ、ひとりも戻ってこない。
+[k]
+
+＠チャッカリム
+ハサラもいなくなって、アンソニーもいなくなった。[r]みんなもいなくなったら、チャッカリムも悲しい。
+[k]
+
+？1：だいじょうぶ、戻ってくるよ
+？2：チャッカリムこそここにいてね
+
+？！
+
+＠チャッカリム
+うん。ここにいる。[r]エリアＩの発電所が止まった時、みんな止まった。
+[k]
+
+＠チャッカリム
+いま稼働している第二世代のＡＩは、[r]もうチャッカリムと彼女しか、残っていない、から。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠ＢＢコスモ
+ああ、第二世代はデータサーバーに[r]本体がある訳ではないんですね。
+[k]
+
+＠ＢＢコスモ
+マテリアルフレームでの活動は電力を消費しますから、[r]自己保存のためにスリープ状態になっている、と。
+[k]
+
+[charaFace C 20]
+
+＠ＢＢコスモ
+チャッカリムさんは……おや、予想以上に高性能です。[r]バッテリー、100年単位で持つのですね。
+[k]
+
+[charaFace C 8]
+
+＠ＢＢコスモ
+ところでもうひとりの彼女、とは？[r]オールド・ドバイにいるのですか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠チャッカリム
+それが、よく知らない。[r]チャッカリムも第二世代の仲間に聞いただけ。
+[k]
+
+＠チャッカリム
+なんでも、2600年に作られた最後の第二世代で、[r]エーテル炉を持つ永久機関。
+[k]
+
+＠チャッカリム
+想定された稼働年数は10万年。[r]だからきっと、今もどこかで稼働しているはず。
+[k]
+
+＠チャッカリム
+付けられた名前が、ラストスロット。
+[k]
+
+＠チャッカリム
+[#不老不死:ふ  ろ  う  ふ  し]になった人類の、[r]健康を管理するために作られた量子学習型ＡＩ。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_MAP_57 1.5]
+[wait fade]
+
+[charaLayer A normal]
+[charaLayer S normal]
+[charaLayer B normal]
+[charaLayer T normal]
+
+[charaScale A 1.0]
+[charaScale B 1.0]
+
+[charaFadeout H 0.1]
+[charaFadeout S 0.1]
+[charaFadeout T 0.1]
+
+[wt 2.0]
+
+[scene 223710]
+
+[fadein black 1.0]
+[se ad746]
+[seVolume ad746 0 0]
+[seVolume ad746 1.0 0.3]
+[wait fade]
+
+[bgm BGM_MAP_41 0.1]
+
+
+＠船内ガイド
+乗客の皆さまにお知らせします。
+[k]
+
+＠船内ガイド
+当船は河からではなく、[r]ムーン・ドバイに新設された海を進みます。
+[k]
+
+＠船内ガイド
+なにぶん初めての事なので、[r]船内の揺れも大きくなると予想されます。
+[k]
+
+＠船内ガイド
+気持ちを静める各種オプションも用意していますが、[r]酔い止めが必要な方は今のうちにお飲みください。
+[k]
+
+？1：ありがとう、ガイドさん
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+
+？2：なんか前より落ち着いてません？
+
+＠船内ガイド
+メンタルケアの件ですね。
+[k]
+
+＠船内ガイド
+はい。その節はパッションリップさまに[r]不要な注意などしてしまいました。反省しています。
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠バーソロミュー
+おや、冷静なガイド君にしては珍しい。[r]そんな事があったのか。
+[k]
+
+＠I：船内ガイド
+エリアＧに皆さまをお送りした時です。[r]エリアＦでMr.ロバーツは消滅したと聞きました。
+[k]
+
+[messageOff]
+
+[charaTalk D]
+[charaFace D 5]
+[wt 1.0]
+
+[charaFace D 19]
+
+＠バーソロミュー
+それはすまない。心配をかけたかな。
+[k]
+
+＠I：船内ガイド
+そういうところです。問題ありません。
+[k]
+
+[charaTalk D]
+[charaFace D 16]
+
+？！
+
+＠バーソロミュー
+しかし、前に来た時から感じていたはいたが[r]気持ちの悪い海だ。
+[k]
+
+＠バーソロミュー
+以前はその理由が分からなかったが、[r]こうして海上に出てはっきりしたよ。
+[k]
+
+[charaFace D 15]
+
+＠バーソロミュー
+この海には魚がいない。[r]海というよりプールだ。
+[k]
+
+＠バーソロミュー
+ガイド君のはじめての海がこんな模造品であるのは[r]申し訳な……[wt 1.5][charaFace D 16]うん？
+[k]
+
+[charaFace D 5]
+
+＠バーソロミュー
+あれは街か？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい。海上に街が出来ています。[r]ドバイにあったパーム・ジュメイラのような……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+
+
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 1]
+
+＠ＢＢコスモ
+大量のＡＩの反応があります。[r]支持者が集まっているのは間違いありません。
+[k]
+
+[charaFace C 7]
+
+＠ＢＢコスモ
+バーソロミューさん、上陸準備を！
+[k]
+
+＠ＢＢコスモ
+どうせろくでもない街に決まっています！[r]敵性反応がもうはちきれんばかりですから！
+[k]
+
+＠ＢＢコスモ
+すぐに戦闘になりますから、[r]皆さん、気合いを入れてくださいね！
+[k]
+
+[messageOff]
+[seStop ad746 1.0]
+[bgmStop BGM_MAP_41 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[sceneSet O 225300 1]
+[charaScale O 1.3]
+[sceneSet P 225300 1]
+[charaScale P 1.2]
+
+[sceneSet S 225300 1]
+
+[charaFadeout C 0.1]
+
+[charaFadein O 0.6 120,-280]
+
+[charaLayer D sub #A]
+[charaLayer A sub #A]
+[charaLayer B sub #A]
+[charaLayer S sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask08 3 255,255,255,255]
+
+[charaDepth D 2]
+[charaDepth B 3]
+[charaDepth A 4]
+[charaDepth S 1]
+[charaDepth O 2]
+
+[charaScale D 0.85]
+[charaScale A 0.85]
+[charaScale B 0.85]
+[charaScale S 1.2]
+
+[charaFadein A 0.1 0,200]
+[charaFace A 27]
+[charaFadeinFSR D 0.1 250,200]
+[charaFace D 20]
+[charaFadeinFSL B 0.1 -260,200]
+[charaFace B 4]
+[charaFadein S 0.1 0,50]
+
+[wt 1.0]
+
+[scene 225300]
+[effect bit_talk_glitter]
+[effect bit_talk_valentine_brilliant_fs]
+[charaMove O 20,-280 8.0]
+[fadein black 1.0]
+[se adm19]
+[wait fade]
+
+[bgm BGM_MIZUGI_2022_1 0.1]
+
+[wt 2.0]
+
+[charaTalk D,B,A]
+[subRenderFadein #A 0.4 0,-340]
+[wt 2.0]
+
+[subRenderFadeout #A 0.4]
+
+[charaFace C 21]
+[charaFadein C 0.1 1]
+
+[effectStop bit_talk_glitter]
+[effectStop bit_talk_valentine_brilliant_fs]
+[wt 0.5]
+
+？1：ル、ルルハワなみの解放感！
+？2：一目で分かる高級リゾートだよこれ
+
+？！
+
+[charaTalk C]
+
+[effectDestroy bit_talk_glitter]
+[effectDestroy bit_talk_valentine_brilliant_fs]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout O 0.4]
+
+[wt 0.5]
+
+[charaLayer A normal]
+[charaLayer D normal]
+[charaLayer B normal]
+[charaScale A 1.0]
+[charaScale B 1.0]
+[charaScale D 1.0]
+
+＠ＢＢコスモ
+はい、風は良好、気温は快適、日射しはサンサン！[r]文句なく[#五:いつ]つ星の楽園です！
+[k]
+
+[charaFace C 24]
+
+＠ＢＢコスモ
+いえ、そうではなくですね！？
+[k]
+
+[charaFace C 6]
+
+＠ＢＢコスモ
+おっかしいなぁ……ほんと敵性反応がバッチバチで、
+[k]
+
+＠ＢＢコスモ
+ＢＢちゃん特製、マスターの健康安全センサーも[r]真っ赤なんですけどぉ……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……そうでした。シバの未来観測でも[r]『安全・危険・ともに観測できず』判定でした……。
+[k]
+
+[charaFace A 11]
+
+＠マシュ
+つまり『よく分からない』という状態です。[r]見た目通りの場所ではない、という事でしょうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠バーソロミュー
+なに、街に入ってみれば分かるさ。[r]あそこに見えるのはカジノかな？
+[k]
+
+＠バーソロミュー
+ここの歓楽施設はどれも最上級のものだ。[r]海賊の勘、いや経験が言っている！
+[k]
+
+？1：[&よし:うん]、バーソロミューがそう言うなら
+
+？！
+
+[messageOff]
+[charaFace D 1]
+[wt 1.0]
+
+？1：ちょっと様子を見よう
+
+？！
+
+[charaFace D 6]
+
+＠バーソロミュー
+ダメなのか！[r]確かに海賊の勘なんてろくでもないが！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 25]
+[charaFadein A 0.1 1]
+
+＠マシュ
+あ。あちらのパークに何人かいらっしゃいますね。[r]気持ち良さそうに日光浴をしています。
+[k]
+
+＠マシュ
+話しかけてみますか、マスター？
+[k]
+
+？1：そうしよう
+
+[messageOff]
+[bgmStop BGM_MIZUGI_2022_1 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：ごめんバーソロミュー、カジノは後でね
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠バーソロミュー
+なに、気にしなくていいとも。[r]さっきのは半分冗談だ。場を[#和:なご]ませようと思ってね。
+[k]
+
+[messageOff]
+[bgmStop BGM_MIZUGI_2022_1 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+？！
+
+[overlayFadein V 1.0 0,-738]
+[overlayFadein W 1.0 0,738]
+
+[sceneSet T 225300 1]
+
+[charaLayer A sub #A]
+[charaLayer S sub #A]
+[charaLayer T sub #B]
+[charaLayer N sub #B]
+
+
+[subCameraFilter #A maskEdge cut359_mask16 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask04 3]
+
+[subRenderScale #B 1.1]
+
+[charaDepth S 1]
+[charaDepth A 2]
+[charaDepth T 1]
+[charaDepth N 2]
+
+[charaScale A 1.3]
+[charaScale S 1.3]
+
+[charaFace A 0]
+[charaFadein A 0.1 -20,250]
+[charaFadein S 0.1 350,50]
+[charaFadein T 0.1 0,120]
+
+[charaScale N 1.3]
+[charaFace N 0]
+[charaFadein N 0.1 0,370]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_129 0.1]
+[charaDepth J 3]
+[charaDepth K 2]
+[charaDepth L 4]
+[charaDepth M 1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadeinFSL J 0.4 -80,-50]
+[wt 0.5]
+
+
+＠口を開けているＡＩ
+ああ……あああ……ああああ……[r]きりがない……はてがない……終わらない……
+[k]
+
+＠口を開けているＡＩ
+いつまでも　いつまでも、[r]次の楽しみがやってくる……
+[k]
+
+[messageOff]
+[charaTalk K]
+[charaFace K 1]
+[charaFadeinFSR K 0.4 300,-50]
+[wt 0.5]
+
+＠うつろな目のＡＩ
+最高だ……幸せだ……[r]生命はこのために進化したんだ……そうなんだ……
+[k]
+
+＠うつろな目のＡＩ
+何を苦しんでいたのか思い出せない……[r]これ以上の贅沢はどこにもない……
+[k]
+
+[messageOff]
+[charaTalk L]
+[charaFace L 1]
+[charaFadeinFSR L 0.4 80,-50]
+[wt 0.5]
+
+＠耳をたてているＡＩ
+なにを言う、私の方が幸せだ……[r]この音色……この声……この息づかい……
+[k]
+
+＠耳をたてているＡＩ
+今まで味わったあらゆる瞑想アプリに[#勝:まさ]る……[r]いや、この響きに比べればあんなものは騒音だ……
+[k]
+
+[messageOff]
+[charaTalk M]
+[charaFace M 1]
+[charaFadeinFSL M 0.4 -300,-50]
+[wt 0.5]
+
+＠手足が透けだしているＡＩ
+何処にも行かない……[r]俺はもう何処にも行かないぞ……
+[k]
+
+＠手足が透けだしているＡＩ
+ここで良かった……ここで良かったんだ……[r]やり残しなんて、俺たちには無かったんだ……
+[k]
+
+＠手足が透けだしているＡＩ
+ここで愛されているだけでいい……[r]あのひとに愛されるためだけにあったんだ……
+[k]
+
+[charaTalk off]
+
+＠公園に集まったＡＩたち
+ああ、早く、早く、早く、[r]早く解放してください、早く飲み干してください……
+[k]
+
+＠公園に集まったＡＩたち
+真なるムーンキャンサー[line 3][r]星の[#内海:うちうみ]を飲み干す偉大な救世主[line 3]
+[k]
+
+[bgmStop BGM_EVENT_129 2.0]
+
+＠公園に集まったＡＩたち
+[line 3][#殺生院:せっしょういん]、キアラ様[line 3]
+[k]
+
+[messageOff]
+
+[charaMove V 0,-850 1.0]
+[charaMove W 0,850 1.0]
+[wt 1.0]
+
+[charaFadeout V 0.1]
+[charaFadeout W 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+？1：まさか、[#殺生院:せっしょういん]キアラ……！？
+
+？！
+
+[charaDepth D 2]
+[charaDepth E 8]
+[charaDepth O 5]
+[charaScale E 1.2]
+[charaFace E 8]
+[charaFadein O 0.4 70,-250]
+[charaFadein E 0.4 -150,0]
+[charaMoveEase O 120,-250 1.0 easeOutSine]
+[charaMoveEase E -100,0 1.0 easeOutSine]
+[wt 1.0]
+
+＠徐福
+おーい、そこの割り込みのＡＩ集団～。[r]どいてどいて～。ちゃんと並んで～。
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+
+＠徐福
+もうすぐキアラ様が来るからね～。[r]新入りは[#楼閣:ろうかく]１号館で手続きを受けてね～。
+[k]
+
+[charaTalk on]
+[charaFace E 27]
+
+＠徐福
+ってほんと言うこと聞いて。聞けよ～？[r][#後:あと]で私がキアラ様に[#阿鼻叫喚:グ チ ャ グ チ ャ]にされるんだからな～？
+[k]
+
+？1：そして、[#呼込員:よびこみいん]ジョフク……！？
+
+？！
+
+[charaFace E 25]
+
+＠徐福
+て。え。
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 9]
+[subRenderFadeinFSSideR #A 0.3 375,-225]
+[subRenderMoveEaseFSSideR #A 350,-250 0.3 easeOutSine]
+[wt 0.5]
+
+＠マシュ
+徐福さん！？
+[k]
+
+[charaFace E 29]
+[charaShake E 0.05 3 3 0.3]
+
+＠徐福
+うぎゃあ！！　マスターさんにマシュちゃん……！？[r]ななななんでこんなところに！？
+[k]
+
+[charaFace D 16]
+[charaFadein D 0.1 1]
+
+＠徐福
+いやそっか貝の[#檻:フタ]が開いたからかぁ……！[r]こんなところ見られて最悪すぎるぅ～！
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadeout #A 0.4]
+[charaFadeout E 0.4]
+[charaFadeout O 0.4]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk D]
+
+＠バーソロミュー
+落ち着け徐福。私たちも来たばかりなんだ。[r]ここで働いているようだが、詳しい話を聞かせてくれ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaScale E 1.0]
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+
+＠徐福
+お、バーソロ。カルデア側のＢＢもいる。[r]そっちの男は……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠岸波白野
+岸波白野です。はじめまして徐福さん。[r]高名な道士にお会いできて光栄です。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 18]
+[charaFadein E 0.1 1]
+
+＠徐福
+ほほう。礼節を[#弁:わきま]えてるね。いいじゃんいいじゃん。[r]おかげで自分が偉い道士であるのを思い出した。
+[k]
+
+？1：徐福ちゃんは今まで何を？
+
+[charaFace E 24]
+
+＠徐福
+な、なにって、別に？[r]何も見てないし、何もしてません、けど？
+[k]
+
+？2：いま殺生院キアラって……
+
+[charaFace E 25]
+
+＠徐福
+うわあぁあああやめろやめてその単語禁止～～！[r]あの[#地獄耳:じごくみみ]、ぜったい聞きつけてやってくるからぁ！
+[k]
+
+？！
+
+[charaFace E 19]
+
+＠徐福
+でもこれはチャンス。[r]マスターさん、ここまで何で来た？　船？
+[k]
+
+[charaFace E 20]
+[se ad7]
+[charaFace E 13]
+[charaMoveScale E 1.15 0.2]
+[charaMove E 0,15 0.2]
+[wt 0.2]
+
+
+＠徐福
+あ、あそこに停めてある船！　あれか。よし。[r]もう乗る。すぐ乗る。そして出す。
+[k]
+
+[charaDepth E 4]
+[charaDepth K 2]
+
+＠徐福
+とにかく一刻も早く逃げよう。[r]詳しい話はその後で、
+[k]
+
+[messageOff]
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.4 0]
+[wt 0.4]
+
+＠K：うつろな目のＡＩ
+お嬢さん……私の番はまだですか……[r]もうずいぶんとキアラ様にメモリを[#捧:ささ]げているのに……
+[k]
+
+＠K：うつろな目のＡＩ
+私の魂……そのすべてを……
+[k]
+
+[charaTalk E]
+[charaFace E 25]
+
+＠徐福
+だからここで待ってれば来るって！[r]えーと名札は……リュウダイ、か？
+[k]
+
+[charaFace E 26]
+
+＠徐福
+悪いけど私じゃ救えない。あんな[#妖怪:ようかい]手に負えない。[r]甘い言葉に[#溺:おぼ]れたあなたの自己責任だから。
+[k]
+
+？1：リュウダイって、たしか
+？2：エリアＡのマスター！　ムーン・ドバイ元市長！
+
+？！
+
+[charaFace E 25]
+
+＠徐福
+うぇ、そんな大物なんだ、この抜け殻！？[r]もう[#霊基:たましい]すっからかんだけど！
+[k]
+
+[messageOff]
+[charaTalk N]
+[subRenderFadein #B 0.3 0,-370]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_81 2.0]
+
+＠N：？？？
+徐福さん？[r]何やら騒がしいようですが、トラブルでも？
+[k]
+
+＠N：？？？
+貴女の仕事は市民の皆様の[#介護:かいご]と、[r][#私:わたくし]の住まいの清掃。
+[k]
+
+＠N：？？？
+少しでも[#滞:とどこお]るようなら[line 3]分かりますね？
+[k]
+
+[messageOff]
+[charaTalk N,E]
+[subRenderFadeout #B 0.3]
+[wt 0.3]
+
+[charaFace E 25]
+
+＠徐福
+ひ[messageShake 0.05 3 3 0.4]ゃあああすぐそこに居たぁぁぁーーー！[r]やっぱり逃げられないんだぁぁ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaLayer A normal]
+[charaLayer N normal]
+
+[charaScale A 1.0]
+[charaScale N 1.2]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[charaFadeout K 0.1]
+[charaFadeout N 0.1]
+
+[charaDepth B 1]
+[charaDepth O 2]
+[charaDepth N 3]
+
+[charaFadein O 0.1 0,-200]
+[charaTalk off]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaFace N 0]
+[charaFadein N 0.4 0,140]
+[wt 0.5]
+[bgm BGM_MAP_27 0.1]
+[charaMoveEase O 0,-350 1.5 easeOutSine]
+[charaMoveEase N 0,-10 1.5 easeOutSine]
+
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+[wt 3.5]
+
+[messageOff]
+[charaFadeout N 0.4]
+[charaFadeout O 0.4]
+[wt 2.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠殺生院キアラ
+まあ……逃げられない、なんて人聞きの悪い。[r][#何人:なんぴと]たりとも、そのような不自由は与えませんのに……。
+[k]
+
+[charaFace F 1]
+[charaTalk on]
+
+＠殺生院キアラ
+徐福さんがこの桃源郷に[#留:とど]まっていたのは[r]本人の意志によるもの。
+[k]
+
+＠殺生院キアラ
+『日本には人魚の肉を食べて[#不老不死:ふ  ろ  う  ふ  し]になった者がいる。[r]　なぜか徐福さんは見過ごしたようですが』
+[k]
+
+＠殺生院キアラ
+そう、英霊の座におわす[#始皇帝:しこうてい]陛下に、[r]この身を以て[#奏上:そうじょう]してもよいものか……
+[k]
+
+[charaFace F 24]
+
+＠殺生院キアラ
+[#私:わたくし]、そう徐福さんに相談しただけですよね？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaScale E 1.0]
+[charaTalk E]
+[charaFace E 28]
+[charaFadein E 0.1 1]
+
+＠徐福
+鬼！　悪魔！　殺生院！[r]そんなん[#脅迫:きょうはく]以外のなにものでもないだろー！
+[k]
+
+＠徐福
+そんな事されたらマジで[#未来永劫:み ら い え い ご う]、[r]始皇帝に[#叱:しか]られるじゃんかー！　ヤダー！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠殺生院キアラ
+ふふふ。では始皇帝様を思う[#私:わたくし]の良心が[r]なくなるまで、[#仕:つか]えていただくしかありませんね♡
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 31]
+[charaFadein E 0.1 1]
+
+＠徐福
+なにが良心だ、[r]人魚どころか[#蜃:しん]まで食べて腹[#真:ま]っ[#黒:くろ]のくせに！
+[k]
+
+[charaFace E 22]
+
+＠徐福
+マスターさん！　アイツやっつけてよ～！[r]そしたら私も自由になってなんでもかんでも手伝うから！
+[k]
+
+？1：ほほう、なんでも手伝うと……？
+
+[charaFace E 25]
+
+＠徐福
+やっば言い過ぎた。[r]えーと、それなり！　それなりに手伝う！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？2：まあ、相手が相手だから……
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠マシュ
+[FFFFFF]？[-]？　殺生院さんはたいへん頼りになる聖職者[r]ですが、もしや悪い方なのですか……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+＠バーソロミュー
+[%1]。彼女がエリアＡの[r]ムーンキャンサーであるなら戦う他ない。
+[k]
+
+＠バーソロミュー
+だが本当に、その、彼女は敵なのか？[r]殺意がないどころか、その[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 4]
+[charaDepth Z 1]
+[charaDepth D 3]
+
+[charaPut Z 0,0]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaEffect Z bit_talk_ghost_fog]
+[se ade153]
+[wt 2.2]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFadein D 0.1 1]
+[charaEffectStop Z bit_talk_ghost_fog]
+[wt 1.8]
+
+[charaFace D 3]
+
+＠バーソロミュー
+……なんともいえない魅力がある。[r]今までのムーンキャンサーとは違うというか……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaEffectDestroy Z bit_talk_ghost_fog]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ＢＢコスモ
+ストップ、まともに見てはいけません！
+[k]
+
+＠ＢＢコスモ
+あの女は[#人心:じんしん]を[#融:と]かす[#物:もの]の[#怪:け]、[r]話せば話すほど取り込まれます！
+[k]
+
+＠ＢＢコスモ
+いかにも[#人畜無害:じんちくむがい]なあの姿は[r]皆さん全員を[#誑:たぶら]かすためです！
+[k]
+
+[charaFace C 7]
+
+＠ＢＢコスモ
+そうでしょう殺生院キアラ！[r]いったい何をしに現れたんですか、この色情魔！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth C 1]
+[charaDepth O 2]
+[charaDepth N 3]
+[charaFace N 10]
+[charaFadein O 0.6 0,-200]
+[charaFadein N 0.6 -100,-10]
+[charaMove O 100,-200 15.0]
+[charaMove N 0,-10 15.0]
+[wt 1.0]
+
+[bgmStop BGM_MAP_27 2.5]
+
+＠殺生院キアラ
+なに、と言われましても困ります。[r][#私:わたくし]も困っていたのです。
+[k]
+
+[charaFadeout C 0.1]
+[charaFace N 4]
+
+＠殺生院キアラ
+気がつけばこの都市にひとり放り出され、[r]右も左も分からぬまま放浪し……
+[k]
+
+＠殺生院キアラ
+[#心細:こころぼそ]さで倒れそうになる体を[#懸命:けんめい]に[#支:ささ]え、[r]自分なりにムーン・ドバイの在り方を学びました。
+[k]
+
+＠殺生院キアラ
+……本当に悲しい話です。
+[k]
+
+[bgm BGM_MAP_25 0.1]
+
+＠殺生院キアラ
+地球に住んでいた旧人類は絶滅し、[r]月に[#遷:うつ]った人々はＡＩになってまで生き延びた。
+[k]
+
+＠殺生院キアラ
+まさに[#末法:まっぽう]の世でございましょう。[r][#私:わたくし]にできる事など小さきもの、と悲観しておりました。
+[k]
+
+＠殺生院キアラ
+ですが[line 3]
+[k]
+
+[charaFace N 1]
+
+＠殺生院キアラ
+そんな時、たまたまこのエリアの[r]マスターと出会ったのです。
+[k]
+
+[charaFace N 6]
+
+＠殺生院キアラ
+その方を通じて様々な仕組みを知りました。[r]ＢＢドバイさんともお話をし、理解を深めました。
+[k]
+
+[charaFace N 7]
+
+＠殺生院キアラ
+いいですわよね、『人類滅亡ラスボス決定戦』！[r][#私:わたくし]、とても興奮してしまって[line 3]
+[k]
+
+[messageOff]
+[charaDepth C 3]
+[charaDepth O 2]
+[charaDepth N 4]
+[charaDepth E 1]
+[charaMoveEase O -120,-260 1.0 easeOutQuad]
+[charaMoveScaleEase O 1.3 1.0 easeOutQuad]
+[charaMoveEase N -160,-10 1.0 easeOutQuad]
+[charaMoveScaleEase N 1.3 1.0 easeOutQuad]
+[charaFadeout N 0.7]
+[charaScale C 0.9]
+[wt 0.9]
+[charaFace C 2]
+[charaFadein C 0.7 300,-70]
+
+[wt 3.0]
+[charaFadeout C 0.5]
+[charaMoveEase C 420,-85 1.0 easeOutQuad]
+[charaMoveScaleEase C 0.8 1.0 easeOutQuad]
+
+[charaFace N 24]
+[charaMoveEase O 0,-230 1.0 easeOutQuad]
+[charaMoveEase N 0,-10 1.0 easeOutQuad]
+[charaMoveScaleEase O 1.2 1.0 easeOutQuad]
+[charaMoveScaleEase N 1.2 1.0 easeOutQuad]
+[wt 0.4]
+[charaFadeTime N 0.6 1.0]
+[wt 0.6]
+
+＠殺生院キアラ
+海の大天使さん、でしたっけ？[r]まずは協力して彼女を座に戻してさしあげました。
+[k]
+
+＠殺生院キアラ
+その後はこのエリアを水で満たし、[r]至上の[#桃源郷:とうげんきょう]を築いたのです。
+[k]
+
+＠殺生院キアラ
+すべては[#罪業:ざいごう]に苦しむムーン・ドバイの皆様から[r]苦しみを取り除くため。
+[k]
+
+＠殺生院キアラ
+『人類と呼ばれたものは[#須:すべから]く、[r]　[#弥:ひろ]く山の如き[#菩薩:ぼさつ]の手で[#掬:すく]われるべし』
+[k]
+
+[charaFace N 25]
+
+＠殺生院キアラ
+それが[#私:わたくし]の[#主義運動:ス  ロ  ー  ガ  ン]。[r]すべては世のため、人のため。
+[k]
+
+＠殺生院キアラ
+ムーン・ドバイを終わらせる、[r]新しい[#誓願:せいがん]とさせていただきましたわ。
+[k]
+
+
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+？1：ＢＢドバイ側のムーンキャンサー！
+？2：それなら容赦はしない[&ぞ:からね]！
+
+？！
+
+[messageOff]
+[charaFadeout N 0.4]
+[charaFadeout O 0.4]
+[wt 0.5]
+
+＠徐福
+そうだ、何が世のため人のため、だ！[r]誰かひとりでも[#救:すく]った事あるのか、[#貝殻:かいがら]悪魔！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+よ、よく分かりませんが、[r]今のキアラさんが危険な方である事は分かりました！
+[k]
+
+＠マシュ
+ＢＢドバイさん側についたのでしたら、[r][#正々堂々:せいせいどうどう]戦わせていただきます！
+[k]
+
+＠マシュ
+ですよね、バーソロミューさん！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠バーソロミュー
+あ、ああ。[r]気は乗らないが、その通りだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 1]
+
+＠ＢＢコスモ
+この通り、[%1]さんたちは[r]強い結束で結ばれているのです。
+[k]
+
+＠ＢＢコスモ
+貴女の邪悪な精神[#干渉:かんしょう]なんて通じません！[r]ここで容赦なく倒させていただきます！
+[k]
+
+＠ＢＢコスモ
+積年の恨み、たまってますので！[r]そうですよね、白野さん！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[charaScale B 1.2]
+[charaScale O 1.4]
+[charaDepth B 2]
+[charaDepth O 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadeinFSL B 0.1 -250,-10]
+[charaFadein O 0.1 100,-200]
+
+[charaSet J 1098301840 1 ＢＢコスモ1]
+[charaScale J 1.2]
+
+[sceneSet K 225300 1]
+[charaScale K 1.2]
+
+[charaLayer C sub #A]
+[charaLayer F sub #B]
+
+[charaLayer J sub #C]
+[charaLayer K sub #C]
+
+[subCameraFilter #A maskEdge cut359_mask11 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask09 5 255,255,255,255]
+[subCameraFilter #C through]
+
+[charaDepth K 1]
+[charaDepth J 2]
+
+[charaFace J 27]
+[charaFadein J 0.1 50,0]
+[charaFadein K 0.1 100,-250]
+
+[charaDepth F 2]
+[charaScale F 1.15]
+[charaScale C 1.2]
+
+[charaFadein C 0.1 470,240]
+[charaFadein S 0.1 200,-50]
+
+[charaFadeinFSR F 0.1 0,220]
+[charaFadein T 0.1 -250,0]
+
+[wt 1.0]
+
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[wt 1.0]
+
+？1：なんか楽しそうですね？
+
+[messageOff]
+[charaTalk C]
+[charaFace C 6]
+[subRenderFadeinFSSideR #A 0.4 -170,-170]
+[subRenderMoveFSSideR #A -140,-200 0.4]
+
+＠ＢＢコスモ
+なんか楽しそうじゃないですかー！？
+[k]
+
+？2：なんで笑ってるんですか！？
+
+[messageOff]
+[charaTalk C]
+[charaFace C 6]
+[subRenderFadeinFSSideR #A 0.4 -170,-170]
+[subRenderMoveFSSideR #A -140,-200 0.4]
+
+＠ＢＢコスモ
+なんで笑ってるんですかーー！？
+[k]
+
+？！
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+
+[charaFace B 1]
+
+＠岸波白野
+ああいや、つい。[r]ビースト、アーキタイプ、ときて、次はキアラさんだろ。
+[k]
+
+[charaFace B 4]
+
+＠岸波白野
+こんなハチャメチャな展開、[r]夢にも思わなかったからなんか楽しくて。
+[k]
+
+[charaFace B 0]
+＠岸波白野
+緊張感がなくてゴメン、[%1]。[r]ちゃんと本気だから安心して。
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 5]
+[subRenderFadeinFSR #B 0.3 300,-250]
+[subRenderMoveFSR #B 200,-250 0.3]
+[wt 0.4]
+
+＠殺生院キアラ
+[line 6]岸波白野？[r]SE.RA.PHの[#私:わたくし]を[#調伏:ちょうぶく]した、あの？
+[k]
+
+＠殺生院キアラ
+あなた、あの事件の事を覚えているというのですか？
+[k]
+
+[charaTalk B]
+[charaFace B 2]
+
+＠B：岸波白野
+長生きの結果だよ殺生院。[r]今回、戦力はこちらが上だ。ここで退場してもらう。
+[k]
+
+[messageOff]
+
+[subRenderDepth #B 1]
+[subRenderDepth #C 3]
+
+
+[charaTalk J,B]
+[subRenderFadein #C 0.7 0,0]
+
+[wt 1.6]
+
+
+[charaTalk F,J]
+[charaFace F 6]
+[wt 0.5]
+
+[subRenderFadeout #C 0.7]
+
+[wt 1.0]
+
+＠殺生院キアラ
+まあ[line 3]殺生院キアラの記憶にあるあなた様とは[r]思えぬ[#胆力:たんりょく]、気迫ですのね。
+[k]
+
+＠殺生院キアラ
+ふふ……[#逞:たくま]しく成長されて、[#嬉:うれ]しいやら[#怖:こわ]いやら。
+[k]
+
+＠殺生院キアラ
+[%1]様だけでなく[r]月のマスターまで味わえるなんて。
+[k]
+
+＠殺生院キアラ
+[#私:わたくし]、期待で胸が張り裂けそう。[r]ですが[line 3]
+[k]
+
+[charaFace F 25]
+
+[charaDepth O 2]
+[charaDepth G 3]
+[charaDepth B 4]
+[charaDepth P 1]
+[charaFadein P 0.1 -100,-200]
+
+＠殺生院キアラ
+この方を見て、同じ事が言えるかしら？
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ad1418]
+[bgmStop BGM_MAP_25 1.5]
+[charaFadeout B 0.4]
+[charaFadeout O 0.4]
+[subRenderFadeout #B 0.4]
+[wt 1.5]
+[cueSeStop 24_ad1418 0.4]
+[charaFadeout F 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.4 1]
+[wt 1.0]
+
+[charaCrossFade G 3004500 2 0.4]
+[se ad442]
+[wt 1.0]
+[bgm BGM_BATTLE_112 0.1]
+
+＠カルナ
+運命とは非情なもの。[r]共に守るモノのある戦士であれば言うまでもない。
+[k]
+
+[charaLayer F normal]
+
+＠カルナ
+今さら自己紹介は必要ないが、[r]あえて名乗らせてもらおう。
+[k]
+
+＠カルナ
+オレの名はカルナＳＰ。殺生院キアラの[r]ボディガードとして雇われた、エリアＡを照らす太陽。
+[k]
+
+＠カルナ
+御託は不要。[r]殺生院を倒したくば、まずオレを倒す事だ。
+[k]
+
+？1：カルナさんまで、なんで……！
+？2：（また律儀に約束を守ってるんだろうな……）
+
+？！
+
+＠カルナ
+たとえ殺生院が[#汚泥:おでい]の如きカルマの大海、[r][#他化自在天:た  け  じ  ざ  い  て  ん]の化身であろうと、
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale F 1.0]
+[charaFace F 8]
+[charaFadein F 0.4 -400,0]
+[charaMoveEase P 100,-200 1.0 easeOutSine]
+[charaMoveEase G 200,0 1.0 easeOutSine]
+[charaMoveEase F -200,0 1.0 easeOutSine]
+[wt 1.0]
+
+[cueSe SE_22 22_ade725]
+[charaDepth R 8]
+[charaFadein R 0.3 -230,0]
+[charaShake R 0.02 3 3 0.6]
+[wt 1.5]
+
+[charaFadeout R 0.3]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+
+＠カルナ
+[#双方合意:そうほうごうい]で交わした契約は守らねばならん。[r]か弱き婦人の身を守るのも、戦士の務めだ。
+[k]
+
+[charaFace F 0]
+
+＠殺生院キアラ
+それでこそ太陽神の御子、施しの英雄です。
+[k]
+
+[charaFace F 1]
+
+＠殺生院キアラ
+どうか遠慮、手加減のなきように。
+[k]
+
+＠殺生院キアラ
+[#悲喜:ひ　き]のこもった友人同士の戦い、[r]じっくりと鑑賞させていただきますわ。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_112 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+
+

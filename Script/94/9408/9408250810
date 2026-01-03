@@ -1,0 +1,1043 @@
+
+＄94-08-25-08-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 1098261000 1 ドラコー]
+[charaSet B 1057000 1 セタンタ]
+[charaSet C 6048001 1 ロクスタ]
+[charaSet D 5018300 1 ギルガメッシュ]
+[charaSet E 28003001 1 レディ・アヴァロン]
+[charaSet F 10016000 1 ティアマト]
+[charaSet G 1098266400 1 バビロン兵1]
+
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 1098266400 1 バビロン兵2]
+[charaSet J 1098266400 1 バビロン兵3]
+
+[charaSet K 98025100 1 シャドウサーヴァント]
+[charaSet L 98013100 1 ドラゴン]
+
+[charaSet M 1098261000 1 サブレイヤー用ドラコ―]
+[charaSet N 5018300 1 サブレイヤー用ギルガメッシュ]
+[sceneSet O 134200 1]
+[sceneSet P 134200 1]
+
+[charaSet Q 98115000 1 エフェクト用2]
+
+[imageSet R cut457_gic02 1]
+[imageSet S cut457_drc03 1]
+[charaScale R 1.01]
+[charaScale S 1.01]
+[charaSet T 10016000 1 ティアマト_演出用]
+[charaScale T 1.35]
+[imageSet U cut457_drc08 1]
+[charaScale U 1.01]
+
+
+
+[scene 183900]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_61 0.1]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth G 3]
+[charaDepth I 2]
+[charaDepth J 1]
+
+[charaFace G 0]
+[charaFace I 0]
+[charaFace J 0]
+[cueSe SE_21 21_ad1120]
+[charaFadein G 0.2 1]
+[wt 0.1]
+[charaFadeinFSR I 0.2 2]
+[wt 0.1]
+[charaFadeinFSL J 0.2 0]
+[seStop 21_ad1120 0.5]
+[wt 1.0]
+
+[effect bit_bolg_01 -100,0]
+[wt 0.1]
+[se bac210]
+[charaShake I 0.05 3 3 0.6]
+[wt 0.3]
+[cueSe Servants_101200 m08610]
+[charaShake J 0.05 3 3 0.6]
+[effect bit_bolg_02 100,0]
+[wt 0.6]
+
+[cueSe Servants_301300 m03412]
+[effect bit_bolg_03]
+[charaShake G 0.05 3 3 0.6]
+[wt 0.2]
+[flashin once 0.2 0.2 FFFFFF80 FFFFFF00]
+[wt 0.6]
+
+[charaMove G 0,-50 0.4]
+[wt 0.1]
+[charaMoveFSR I 256,-50 0.4]
+[charaMoveFSL J -256,-50 0.4]
+[charaFadeout G 0.4]
+[charaFadeout I 0.4]
+[charaFadeout J 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+[se ad771]
+[seVolume ad771 0 0.5]
+[se ad59]
+[wipeout rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[scene 184000]
+[wt 0.5]
+
+[seStop ad59 0.7]
+[seStop ad771 0.7]
+[wipein rectangleStripDownToUp 0.7 1]
+[wait wipe]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[wt 0.8]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[se ad1006]
+[charaFace A 4]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,25 0.2]
+[blur motion 5.0 2 10000 0.5 0.5 0.05 100]
+[charaFadeout A 0.2]
+[wt 0.2]
+[charaScale A 1.0]
+[blurOff motion 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[wt 0.2]
+[se ad1051]
+[se bac389]
+[effect bit_talk_claw_red02]
+[charaShake K 0.05 3 3 0.5]
+[wt 0.6]
+
+[charaSpecialEffect K darkEnemyErasure 1 1.0]
+[cueSe Battle ba6]
+[wt 1.5]
+
+[se ad771]
+[seVolume ad771 0 0.5]
+[se ad59]
+[wipeout rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[charaPut K 2000,2000]
+
+[scene 184100]
+[wt 0.5]
+
+[seStop ad59 0.7]
+[seStop ad771 0.7]
+[wipein rectangleStripDownToUp 0.7 1]
+[wait wipe]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 300,0]
+[charaFadein C 0.1 -300,0]
+[wt 0.5]
+[se ad1006]
+[se ad85]
+[effect bit_talk_poison_mushroom_attack]
+[effect bit_talk_h_slash01_fs 0,0 V]
+[blur motion 5.0 2 10000 0.5 0.5 0.05 100]
+[charaMove B 250,30 0.2]
+[charaMove C -250,30 0.2]
+[charaMoveScale B 1.2 0.2]
+[charaMoveScale C 1.2 0.2]
+[charaFadeout B 0.2]
+[charaFadeout C 0.2]
+[wt 0.2]
+[cueSe Servants_204000 bac1546 0.4]
+[cueSe SE_22 22_ade709]
+[effect bit_talk_windstorm]
+[effectStop bit_talk_poison_mushroom_attack]
+[blurOff motion 0.1]
+[charaScale B 1.0]
+[charaScale C 1.0]
+[seStop bac1546 1.0]
+[wt 0.2]
+[se ad871 0.7]
+[wt 0.3]
+
+[se ade215]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[effectStop bit_talk_windstorm]
+[wt 1.0]
+[se ad63]
+
+[shake 0.05 2 2 0.5]
+[flashin once 0.2 0.1 FF000080 FF000000]
+[wt 0.6]
+[se ade346]
+[shake 0.05 2 2 1.0]
+[flashin once 0.2 0.1 FF000080 FF000000]
+[wt 0.4]
+
+[se ad241]
+[charaSpecialEffect L darkEnemyErasure 1 1.0]
+[cueSe Battle ba6]
+[wt 1.5]
+[seStop ad241 0.5]
+
+[bgmStop BGM_BATTLE_61 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaPut L 2000,2000]
+[cameraMove 0.1 0,0 1.01]
+[scene 134200]
+[wt 1.0]
+
+[se ad771]
+[seVolume ad771 0 0.5]
+[se ad59]
+[fadein black 1.0]
+[seStop ad771 1.5]
+[seStop ad59 1.5]
+[wait fade]
+[wt 0.8]
+
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_40 0.1]
+
+＠ギルガメッシュ
+ふはは、よくぞホテル・ジグラット全９９階を制覇し、[r][#我:オレ]の下にたどり着いた！　褒めてつかわす！
+[k]
+
+？1：ぜぇー、ぜぇー
+？2：階段で９９階はちょっと……
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+余計な仕事増やしやがって……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠レディ・アヴァロン
+あはは……私も肉体労働は専門外かな……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠ロクスタ
+ひ、疲労回復の毒キノコを……ど、どうぞ……[r]コイツをキメれば……エッジの向こう側だぜ……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ギルガメッシュ
+道化の代わりとしては、悪くはなかったぞ。[r]褒美だ。[#我:オレ]が直に裁定を下してくれる。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ドラコー
+……いよいよもって舐められたもの。
+[k]
+
+[messageOff]
+[se ade280]
+[cueSe SE_22 22_ade807]
+[seVolume 22_ade807 0 0.5]
+[cueSe SE_22 22_ad1213]
+
+[charaPut H 0,-50]
+[charaEffect H bit_talk_blood_aura_fs]
+[charaEffect H bit_talk_blood_aura_back_fs]
+[wt 2.5]
+
+＠ドラコー
+痛みに叫び、赦しを乞え。[r]絶望に呻き、死による救済を願え。
+[k]
+
+[seStop ade280 0.5]
+[seStop 22_ade807 0.5]
+[seStop 22_ad1213 0.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ギルガメッシュ
+ふん。当ホテル、心尽くしのもてなしを理解できぬとは、[r]どこまでも見下げたケダモノよ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.3]
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth R 2]
+[charaDepth S 4]
+[charaDepth Q 3]
+[charaDepth U 5]
+[charaFadein R 0.3 150,-150]
+[charaMove R 150,-200 0.3]
+
+[wt 0.3]
+
+＠ギルガメッシュ
+[#我:オレ]が手ずから調教してやろう。[r]かかってこい！
+[k]
+
+[messageOff]
+[charaFadein S 0.3 -175,-250]
+[charaMove S -175,-200 0.3]
+[wt 0.3]
+
+＠ドラコー
+[line 6]！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_40 1.0]
+[charaFadeout A 0.1]
+[wt 1.5]
+[charaPut H 1200,1200]
+
+[se ad609]
+[charaPut Q 300,100]
+[fadeout white 0.1]
+[wt 0.1]
+
+[charaEffect Q bit_talk_explosion]
+[charaEffectStop Q bit_talk_explosion]
+[charaMove R 400,-200 0.3]
+[charaFadeout R 0.3]
+[wt 0.1]
+[fadein black 0.3]
+[charaFadein U 0.1 -175,-200]
+
+＠ギルガメッシュ
+なにィィィィィィィィ[line 6]！？
+[k]
+
+[messageOff]
+[charaFadeout S 0]
+[charaFadeout U 0.5]
+[wt 0.5]
+
+？1：今度は何なのー！？
+
+？！
+
+
+[se ad186]
+[effect bit_talk_41_fs]
+[charaScale F 1.2]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 0,20]
+
+＠ティアマト
+[f large]母です！
+[k]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠ティアマト
+ようやく追いついた！[r]さあ観念するのです、ビーストⅥ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_41_fs]
+[charaScale F 1.0]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+ティアマト！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ティアマト
+セタンタ！　ビーストⅥといっしょになって、[r]いったい何をしてるのです！
+[k]
+
+＠ティアマト
+あとでちゃんと説明してもらいます！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaShake D 0.05 3 3 0.5]
+[charaFadein D 0.4 0,-50]
+[charaMove D 0,0 0.6]
+[wt 1.0]
+
+＠ギルガメッシュ
+……待てい。[r]そこのやたら縮んだティアマト神よ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ティアマト
+あ。[r]ギルガメッシュ２．５世。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠ロクスタ
+２．５世？
+[k]
+
+？1：２．５世？
+？2：何それ？
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+あー……[r]ちょっとややこしいっていうか……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠レディ・アヴァロン
+確か……第七特異点でネブカドネザルⅡ世が[r]ギルガメッシュⅡ世を名乗っていたんだけど。
+[k]
+
+＠レディ・アヴァロン
+正体はギルガメッシュのクローンで。[r]後継者じゃないからⅡ世じゃなくて[line 3]
+[k]
+
+[charaFace E 1]
+
+＠レディ・アヴァロン
+あはは！[r]本当にややこしいね！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ギルガメッシュ
+ティアマト神め！[r]さてはわざとやっているな！
+[k]
+
+[charaFace D 3]
+
+＠ギルガメッシュ
+まあ、良い……[r]いや、待て。少しも良くはないな。
+[k]
+
+[charaFace D 5]
+
+＠ギルガメッシュ
+だが、ひとまずは置いておく。
+[k]
+
+＠ギルガメッシュ
+ティアマト神よ、これは如何なる仕儀か。[r][#斯様:かよう]な戯れ事になぜ御身が首を突っ込む？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ティアマト
+[FFFFFF]？[-][r]母は、我が子を獣から救いたいだけ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ギルガメッシュ
+……呆れたな。[r]よもやこれが本当にカルデアの危機になるとでも？
+[k]
+
+＠ギルガメッシュ
+いくら茶番にしても限度というものがあろう。[r]ここまで極まってしまっては笑いにもならん。
+[k]
+
+＠ギルガメッシュ
+興醒めだ。[r]後は貴様たちの好きにしろ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠ティアマト
+[FFFFFF]？？？[-][r]ありがとう？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ドラコー
+ギルガメッシュ！　ティアマト！[r]貴様ら……！[bgmStop BGM_EVENT_94 2.0]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 22]
+[charaFadein F 0.1 1]
+
+[wt 0.5]
+[se ade172]
+[charaMoveScale F 1.1 0.4]
+[charaMove F 0,20 0.4]
+[wt 0.4]
+[seStop ade172]
+
+＠ティアマト
+さあ、[%1]！[r]今度こそ、母のところに！
+[k]
+
+＠ティアマト
+だいじょうぶ、何も心配しなくていい。[r]ぎゅってしてあげるから。
+[k]
+
+
+？1：……ティアマト
+？2：ありがとう、助けようとしてくれて
+
+？！
+
+[bgm BGM_EVENT_11 0.1]
+[charaFace F 5]
+＠ティアマト
+どういたしまして？
+[k]
+
+？1：でも[&自分:わたし]は[line 3]
+？2：ドラコーについていく
+
+？！
+
+[charaFace F 3]
+
+＠ティアマト
+……！？
+[k]
+
+＠ティアマト
+ど、どうして……
+[k]
+
+？1：たとえ最後は敵になるとしても[line 3]
+
+？！
+
+[messageOff]
+[wt 0.4]
+
+？1：見届けなきゃいけない気がする
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaScale F 1.0]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠レディ・アヴァロン
+………………。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ドラコー
+[line 6]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+ま、そういうことなんだよ、ティアマト。[r]こっちのマスターも頑固で仕方ねえ。
+[k]
+
+[charaFace B 1]
+
+＠セタンタ
+とりあえずこの場は退いてくれ。[r]こいつのことは、オレがちゃんと守るから。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 2.0]
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠ティアマト
+…………………………。
+[k]
+
+＠ティアマト
+…………………………………………[wt 1.2][charaFaceFade F 2 0.2]うぅっ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+……ティアマト？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth F 2]
+[charaDepth O 1]
+[charaScale F 1.2]
+[charaScale O 1.2]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.4 1]
+[charaFadein O 0.4 0,-300]
+[wt 0.7]
+
+＠ティアマト
+[f large]うわあああああああん！[messageShake 0.03 4 4 0.8]
+[k]
+
+[bgm BGM_EVENT_49 0.1]
+
+[messageOff]
+[se ad875]
+[se ad216]
+[shake 0.05 2 2 1.5]
+[effect bit_talk_voice01]
+[wt 1.5]
+
+[charaFadeout F 0.4]
+[charaFadeout O 0.4]
+[wt 0.2]
+[effectDestroy bit_talk_voice01]
+[wt 0.2]
+[charaScale F 1.0]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+なっ……！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+
+＠ロクスタ
+うぎゃあっ！？
+[k]
+
+[seStop ad216 0.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠ティアマト
+うわああああああああああああん！[r]我が子が不良になったあああああああ！
+[k]
+
+＠ティアマト
+うえええええええええええええええええええん！
+[k]
+
+[messageOff]
+[se ade529]
+[se ad242]
+[se ad216]
+
+[shake 0.05 2 2 4.0]
+[effect bit_talk_voice01]
+[wt 1.5]
+[seStop ade529 1.0]
+
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_voice01]
+
+[se ad914]
+[effect bit_talk_rubble]
+
+[wt 2.5]
+[seStop ad914 1.0]
+[effectStop bit_talk_rubble]
+[seStop ad242 0.5]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠レディ・アヴァロン
+あははは！[r]大変なことになったねえ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ギルガメッシュ
+ええい！　鎮まらんか、たわけ！
+[k]
+
+＠ギルガメッシュ
+これだから神というものは手に負えぬ！[r]赤子の[#癇癪:かんしゃく]と何ら変わらぬわ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠ティアマト
+わるい獣にたぶらかされたぁぁぁぁぁぁ！[r]う゛え゛え゛え゛え゛え゛え゛え゛え゛え゛！
+[k]
+
+[charaFace F 36]
+
+＠ティアマト
+ひっく……ひっく……う゛え゛……[r]うううううううう…………！
+[k]
+
+
+？1：お、おちついて……？
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+あーもー……どーすんだよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠ロクスタ
+マスターさま、責任取って。
+[k]
+
+？1：えー……
+？2：[&自分:わたし]のせいなのか……
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠ティアマト
+はは　は　つらい　です[r]のうが　こなごなに　なる
+[k]
+
+＠ティアマト
+我が子によってくる、わるい獣……わるい虫？は、[r]ぜんぶやっつける……！
+[k]
+
+[bgmStop BGM_EVENT_49 1.5]
+
+[messageOff]
+[charaTalk off]
+[se ad231]
+[cameraFilter gray]
+[charaFace T 9]
+[charaPut T 0,50]
+[charaFadeTime T 0.3 0.5]
+[flashin once 0.2 0.2 FFFFFF80 FFFFFF00]
+[wt 0.2]
+[charaFadeout T 0.2]
+[cameraFilter normal]
+[wt 0.6]
+[shake 0.05 2 2 3.0]
+[se ade393]
+[seVolume ade393 0 0]
+[seVolume ade393 0.5 0.5]
+[se ad556]
+[seVolume ad556 0 0.0]
+[seVolume ad556 0.5 0.2]
+[wt 0.5]
+
+[se ad952]
+[effect bit_talk_charge_blu]
+[effect bit_talk_17_bl_03]
+[wt 1.5]
+[se ade391]
+[se ade462]
+[se ad841]
+[seVolume ad841 0 0.4]
+[fadeout white 0.4]
+[seStop 22_ad1169 1.0]
+[effectStop bit_talk_charge_blu]
+[effectStop bit_talk_17_bl_03]
+[wait fade]
+[cameraMove 0.1 0,-45 1.25]
+[charaCrossFade F 10016001 9 0.1]
+[wait charaCrossFade]
+[seStop ad952 2.0]
+[wt 0.5]
+[se ad574]
+[wt 1.5]
+[fadein white 3.0]
+[wait fade]
+[wt 0.5]
+[charaFaceFade F 28 0.2]
+[wt 0.2]
+[seStop ade393 3.0]
+[seStop ad556 3.0]
+[cameraMove 2.0 0,0 1.01]
+[bgm BGM_BATTLE_166 0.1]
+[wt 3.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠レディ・アヴァロン
+うーん。これはいったん落ち着かせないと[r]話にならないかなあ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+そうなると思ったんだよなあ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ギルガメッシュ
+おのれ、こんなものは契約外の仕事ではないか！[r]後で追加料金を請求するぞ、覚悟しておけ！
+[k]
+
+
+？1：とにかく止めよう！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 1]
+
+＠ロクスタ
+うおおー神よー！[r]鎮まりたまいやがれー！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+？2：ドラコーもお願い！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ドラコー
+……わかっている。[r]あまり叫ぶな。頭に響く。
+[k]
+
+？！
+
+＠ドラコー
+……何故だ。[r]何故こうなる？
+[k]
+
+[charaFace A 5]
+
+＠ドラコー
+[line 3]余は何を間違えた？
+[k]
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_166 0.4]
+[wait fade]
+[soundStopAll]
+[end]

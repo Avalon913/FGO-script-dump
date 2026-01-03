@@ -1,0 +1,336 @@
+
+
+
+
+
+
+
+
+
+＄04-00-05-23-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1098324200 1 マシュ]
+[charaSet B 9019000 1 メタトロン・ジャンヌ]
+[charaSet C 98005000 1 オルガマリー]
+
+[imageSet D cut692_book1 1]
+[imageSet E cut704_msh_shield_mini 1]
+[charaFilter E silhouette FFFFFF80]
+
+[sceneSet F 148300 1]
+[charaScale F 1.2]
+
+[sceneSet G 10206 1 1]
+[charaScale G 1.4]
+[sceneSet H 10215 1 1]
+[charaScale H 1.2]
+
+[imageSet I back10000 1]
+[imageSet J back10000 1]
+[charaScale I 1.01]
+[charaScale J 1.01]
+[overlayFadein I 0.1 0,-736]
+[overlayFadein J 0.1 0,736]
+
+[subCameraOn 2]
+[charaLayer D sub #A]
+[charaLayer G sub #B]
+[charaLayer H sub #B]
+[charaLayer C sub #B]
+[subCameraFilter #A through]
+[subCameraFilter #B maskEdge cut359_mask20 30 0,0,0,255 1]
+
+[charaFadein D 0.1 0,-200]
+
+[charaTalk depthOff]
+[charaDepth C 10]
+[charaDepth H 9]
+[charaFadein G 0.1 -120,80]
+
+[scene 148300]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.6]
+
+[charaMove I 0,-800 1.2]
+[charaMove J 0,800 1.2]
+[wt 1.2]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.5]
+
+[charaFadein F 0.6 130,-160]
+[charaMove F 30,-160 30.0]
+[wt 0.8]
+
+[bgm BGM_EVENT_142 0.1]
+
+＠
+走る。[r]焦燥感で胸が灼き尽くされそうになる。
+[k]
+
+＠
+わたしの過去、わたしの記憶、[r]わたしが乗り越えてきたもの。
+[k]
+
+＠
+それらを全て掻き集めて、[r]ハベトロットさんを救わなければ。
+[k]
+
+＠
+……どうやって？
+[k]
+
+
+[messageOff]
+[fadeout white 0.7]
+[cueSe SE_22 22_ad1177]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[effect bit_sepia01_depth_fs]
+[scene 109000]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.3]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.1]
+
+＠メタトロン・ジャンヌ
+私が奪った貴女の情動は、この図書館に保管されています。[r]記憶を再確認することで、取り戻しなさい。
+[k]
+
+＠メタトロン・ジャンヌ
+そして最初の疑問に立ち返るのです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+疑問……ですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠メタトロン・ジャンヌ
+[#なぜ貴女は盾を持ったのか]。
+[k]
+
+
+[charaFace B 3]
+
+＠メタトロン・ジャンヌ
+辛いことがあったはずです。苦しいと、そう思ったことも。[r]希望を上回る絶望があったはずです。
+[k]
+
+[charaFace B 9]
+
+＠メタトロン・ジャンヌ
+なのに何故、貴女はその盾を手放さなかったのか。[r]錆びついても、重くなっても。
+[k]
+
+[charaFace B 15]
+
+＠メタトロン・ジャンヌ
+……外のメタトロンには申し訳ありませんが。[r]私としては、貴女がこの疑問に答えを出すことを望みます。
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[effectDestroy bit_sepia01_depth_fs]
+
+[effect bit_talk_spotlight]
+[charaFadein E 0.1 0,10]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[wt 0.8]
+
+＠
+わたしは、どうしてこの盾を手放さなかったのか[line 3]
+[k]
+
+[messageOff]
+[effectStop bit_talk_spotlight]
+[charaFadeout E 0.8]
+
+[scene 148300 0.8]
+[wt 1.4]
+[blur lens 0.4 2 20]
+[subRenderFadein #A 0.4 0,0]
+[cueSe SE_24 24_ade981]
+[wt 0.4]
+[cueSeStop 24_ade981 0.5]
+＠
+書庫の一つに入り、本を手に取る。[r]途端、色鮮やかに記憶が[#蘇:よみがえ]る。
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[cueSe SE_22 22_ad1177]
+[wait fade]
+
+[blurOff]
+[subRenderFadeout #A 0.1]
+[charaFadeout D 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[charaMove G -120,0 20.0]
+[fadein white 0.5]
+[wait fade]
+
+[subRenderFadein #B 0.4 300,-250]
+[wt 0.4]
+
+＠
+最初の記憶。[r]炎。
+[k]
+
+＠
+潰れた肉体。流れる血。[r]痛みを通り越した、あまりに強い衝撃。
+[k]
+
+＠
+一秒ごとに死が迫る、そんな時。[r]わたしの手は震える手に握られていた。
+[k]
+
+＠
+これが最初の記憶。[r]わたしは、この時[line 3]何を想ったか。
+[k]
+
+＠
+[line 3]どうか、せめて、この優しい先輩だけは、[r]助けて欲しい。
+[k]
+
+＠
+……何かに対する祈りだった、と思う。
+[k]
+
+＠
+そう、そうだ。あの時、わたしは。[r]願いが叶うはずもないと理解しつつ祈って。
+[k]
+
+＠
+[#どうしてわたしは無力なのか]と、[#微:かす]かな怒りがあった。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout white 0.7]
+[cueSe SE_22 22_ad1177]
+[wait fade]
+
+[subRenderFadeout #B 0.1]
+[charaFadeout G 0.1]
+
+[charaScale C 1.2]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,190]
+[charaFadein H 0.1 -250,0]
+[wt 0.1]
+
+[fadein white 0.7]
+[wait fade]
+
+[charaMove C 0,270 20.0]
+[charaMove H -250,80 20.0]
+[subRenderFadein #B 0.4 -300,-250]
+[wt 0.4]
+
+＠
+この時も怒りがあり……。[r]同時に、失ったことへの悲しみがあった。
+[k]
+
+＠
+そうだ。怒りと悲しみ。[r]この時のわたしには、確かにそれがあった。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_142 2.0]
+[wait fade]
+
+[subRenderFadeout #B 0.1]
+[charaFadeout H 0.1]
+[charaFadeout C 0.1]
+
+[charaLayer D normal]
+[charaLayer G normal]
+[charaLayer H normal]
+[charaLayer C normal]
+[subCameraOff]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+[scene 148300]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.6]
+
+＠マシュ
+……！[charaFaceFade A 6 0.2]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_189 0.1]
+
+＠
+そうだ……あの、体の内側が熱くなるような激情。[r]あれこそが怒りだった。
+[k]
+
+＠
+体の内側が締め付けられるような感覚。[r]あれこそが悲しみだった。
+[k]
+
+＠
+……先へ進もう。感情を……あの時感じたものを、[r]取り戻さなければ。
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_189 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

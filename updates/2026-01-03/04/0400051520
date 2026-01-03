@@ -1,0 +1,1137 @@
+
+
+
+
+
+
+
+
+
+＄04-00-05-15-2-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098321000 1 メタトロン・ジャンヌ]
+[charaSet B 28010001 1 ダンテ]
+[charaSet C 1098239320 1 カドック]
+[charaSet D 1098321400 1 モリアーティ]
+[charaSet E 1098234900 1 ヨハンナ]
+[charaSet F 98014000 1 罪兵士]
+[charaSet G 1098322301 1 天使_第三階梯]
+
+[charaSet I 98115000 1 エフェクト用]
+
+[charaSet J 1098234900 1 ヨハンナ_拡大用]
+[charaScale J 1.4]
+[sceneSet K 247200 1]
+[charaScale K 1.4]
+
+[sceneSet L 247200 1]
+[charaScale L 1.2]
+[charaSet M 1098239320 1 カドック_サブレイヤー]
+[charaSet N 1098321400 1 モリアーティ_サブレイヤー]
+
+[charaSet O 1098323000 1 罪人1]
+[charaSet P 1098323110 1 罪人2]
+[charaSet Q 1098323100 1 罪人3]
+[charaSet R 1098323010 1 罪人4]
+
+[sceneSet S 247500 1]
+[charaScale S 1.2]
+[sceneSet T 247500 1]
+[charaScale T 1.2]
+
+[charaSet U 98115000 1 エフェクト用]
+[charaSet V 98115000 1 エフェクト用]
+
+[imageSet X cut681_certificate_01 1]
+[sceneSet Y 10000 1]
+[charaScale Y 1.2]
+[charaSet Z 1098257910 1 マシュ]
+
+[subCameraOn 3]
+
+[charaLayer S sub #A]
+[charaLayer O sub #A]
+[charaLayer P sub #A]
+[charaLayer U sub #A]
+
+[charaTalk depthOff]
+[charaDepth S 1]
+[charaDepth O 2]
+[charaDepth P 3]
+[charaDepth U 4]
+
+[charaLayer T sub #B]
+[charaLayer Q sub #B]
+[charaLayer R sub #B]
+[charaLayer V sub #B]
+[charaDepth T 1]
+[charaDepth Q 2]
+[charaDepth R 3]
+[charaDepth V 4]
+
+[charaLayer L sub #C]
+[charaLayer N sub #C]
+[charaLayer M sub #C]
+
+[charaDepth L 1]
+[charaDepth N 2]
+[charaDepth M 3]
+
+[charaDepth I 2]
+[charaDepth G 1]
+[charaDepth D 3]
+[charaDepth C 4]
+[charaDepth A 5]
+[charaDepth B 6]
+[charaDepth E 7]
+[charaDepth Y 8]
+[charaDepth X 9]
+
+[charaPut I 1]
+[charaPut U 1]
+[charaPut V 1]
+
+[charaEffect I bit_talk_rain_gr]
+[charaEffect U bit_talk_rain_gr]
+[charaEffect V bit_talk_rain_gr]
+
+[charaFadein S 0.1 130,100]
+[charaFadein T 0.1 -130,100]
+
+[subCameraFilter #A maskEdge cut359_mask06 3 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask06 3 0,0,0,255 0]
+
+[scene 247500]
+[cameraMove 0.1 0,0 1.01]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[se ade307]
+[seVolume ade307 0 0]
+[bgm BGM_EVENT_80 0.5]
+[seVolume ade307 0.5 0.1]
+[fadein black 0.5]
+[wait fade]
+
+＠メタトロン・ジャンヌ
+こ、のっ……それは！　私の！　じゃないけど！[r]偉い方の！　玉座だぞこのヤロー！
+[k]
+
+[messageOff]
+[se ad1006]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaMoveScaleEase A 1.2 0.3 easeOutQuint]
+[charaMoveEase A 0,30 0.3 easeOutQuint]
+[charaFadeout A 0.3]
+[wt 0.3]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.1]
+[effect bit_talk_blow02]
+[wt 0.1]
+[se bac332]
+[cueSe Servants_404800 m49517]
+[charaShake G 0.05 3 3 0.5]
+[blurOff motion 0.6]
+[wt 1.2]
+
+[bgmStop BGM_EVENT_80 1.0]
+[fowardEffect bit_talk_atomization_gra02]
+[fowardEffect bit_talk_atomization_gra02 450,0]
+[fowardEffect bit_talk_atomization_gra02 -450,0]
+[cueSe SE_21 21_ade598 0]
+[seVolume 21_ade598 0.2 1.0]
+[charaEffect G bit_talk_atomization_gra02]
+[charaSpecialEffect G erasure 1 3.0]
+[wait charaSpecialEffect G]
+[seStop 21_ade598 1.5]
+[wt 1.8]
+
+[fowardEffectDestroy bit_talk_atomization_gra02]
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠ダンテ
+ウム……メタトロン殿。[r]……第三[#階梯:かいてい]の天使とは、相性が悪いようで……。
+[k]
+
+[charaFace B 9]
+
+＠ダンテ
+……いえ、攻撃は効いていましたから、[r]相性は良すぎたのか……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠メタトロン・ジャンヌ
+玉座に関連する天使同士ってことなのかなぁ。[r]ま、とりあえず勝てたからいいけど……。
+[k]
+
+[charaFace A 19]
+
+＠メタトロン・ジャンヌ
+今後、第三[#階梯:かいてい]と戦う時は気を付けてよ。[r]マスター。
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 1.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠カドック
+……げ。
+[k]
+
+[bgm BGM_EVENT_223 0.1]
+[charaFace C 2]
+
+＠カドック
+おい、[%1]。[r]周り、マズいことになってるぞ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[subRenderFadein #A 0.4 -50,-250]
+[subRenderMove #A 0,-250 0.4]
+[wt 1.0]
+[charaTalk off]
+[se ad173]
+[seStop ad173 1.0]
+[cueSe SE_21 21_ad1065]
+[se adm74]
+[charaFace O 2]
+[charaFadein O 0.4 -280,230]
+[charaMove O -250,230 0.4]
+[wt 0.4]
+[seStop adm74 1.0]
+[seStop 21_ad1065 1.0]
+[charaScale P 0.7]
+[charaFace P 6]
+[charaFadein P 0.4 100,180]
+[wt 1.5]
+
+[subRenderFadein #B 0.4 50,-500]
+[subRenderMove #B 0,-500 0.4]
+[wt 1.0]
+[se ad173]
+[seStop ad173 1.0]
+[cueSe SE_21 21_ad1065]
+[se adm74]
+[charaFace Q 5]
+[charaFadein Q 0.4 250,230]
+[wt 0.4]
+[seStop adm74 1.0]
+[seStop 21_ad1065 1.0]
+[charaScale R 0.7]
+[charaFace R 3]
+[charaFadein R 0.4 -100,180]
+[charaMove R -120,180 0.4]
+[wt 1.5]
+
+
+？1：……あっという間に集まってる……
+？！
+
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠モリアーティ
+戦っている間に、集まったようだネ。
+[k]
+
+[charaFace D 10]
+
+＠モリアーティ
+正直、大パニックになりそうな予感が[r]してならないので、とっとと立ち去ることにしよう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+
+＠メタトロン・ジャンヌ
+その方がよさげー。
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[subRenderFadein #A 0.4 0,-250]
+[subRenderFadein #B 0.4 0,-500]
+[wt 1.0]
+
+[cueSe SE_23 23_ade873]
+[seVolume 23_ade828 0 0.5]
+[cueSe SE_23 23_ade828]
+[charaMove O -250,250 1.0]
+[charaMoveScale O 1.2 1.0]
+[charaMove Q 250,250 1.0]
+[charaMoveScale Q 1.2 1.0]
+[wt 0.1]
+[charaMove P 100,200 1.0]
+[charaMoveScale P 0.8 1.0]
+[wt 0.1]
+[charaMove R -120,200 1.0]
+[charaMoveScale R 0.8 1.0]
+[wt 0.6]
+[seStop 23_ade828 1.0]
+[seStop 23_ade873 1.0]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠カドック
+マズい、逃げるぞ！
+[k]
+
+
+[messageOff]
+[cueSe SE_23 23_ade828]
+[seVolume 23_ade828 0 0.5]
+[seVolume ade307 0.7 0]
+[cueSe SE_23 23_ade873]
+[bgmStop BGM_EVENT_223 0.7]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[charaFadeout C 0.1]
+
+[charaPut U 3000,3000]
+[charaPut V 3000,3000]
+[charaEffectStop U bit_talk_rain_gr]
+[charaEffectStop V bit_talk_rain_gr]
+
+[scene 250701]
+[wt 1.0]
+
+[seStop 23_ade828 0.7]
+[seStop 23_ade873 0.7]
+[seVolume ade307 0.7 0.1]
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+[bgm BGM_EVENT_70 0.1]
+
+？1：怖かった……！
+？！
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠モリアーティ
+ケルベロスより人間の方が怖かった、[r]とか言うと教訓的ではあるな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠ダンテ
+フフ……飢えていただろうからね……。
+[k]
+
+＠ダンテ
+ヨハンナも、恐らく私たちが来るまで、[r]罪人の飢えを放置していたはずだ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠カドック
+それはひどくないか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠ダンテ
+……かもしれないが、本来地獄とはそういうもの……。
+[k]
+
+＠ダンテ
+『飢えを少しでも解消する果実』などというものは、[r]存在しなかった……。
+[k]
+
+[charaFace B 0]
+
+＠ダンテ
+[line 3]彼女たちは甘い。
+[k]
+
+＠ダンテ
+地獄で後悔し続けるような、[r]正当な罰を受けて欲しい。
+[k]
+
+[charaFace B 9]
+
+＠ダンテ
+……そう願ったはずだからな、私は……。
+[k]
+
+？1：『神曲』のこと？
+？！
+
+[charaFace B 18]
+
+＠ダンテ
+……うん。[r]余裕が出来た時にでも、話そうか……。
+[k]
+
+[messageOff]
+[wt 1.0]
+[seStop ade307 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaPut I 3000,3000]
+[charaFadeout B 0.1]
+[wt 1.0]
+[scene 247200]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_141 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ヨハンナ
+どうやら、きちんと仕留められたようですね。[r]おめでとうございます。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠モリアーティ
+天使は心配するな、との御言葉だったが、[r]あの天使は何だったのかね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠ヨハンナ
+あー…………アレは、[r]私の管理下にあった天使じゃないですね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+
+＠カドック
+メタトロンの配下ってことか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠ヨハンナ
+はい。各圏の管理者には天使たちを指揮する[r]権限が与えられますが[line 3]
+[k]
+
+＠ヨハンナ
+メタトロンが天使を送り込んでくることも、[r]たまにあります。
+[k]
+
+＠ヨハンナ
+第三[#階梯:かいてい]から上は、基本的にメタトロンの[r]命令のみに従うと思ってください。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ダンテ
+……あの第三[#階梯:かいてい]の天使は、[r]虚ろの実の木を守っていたようだが。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠ヨハンナ
+ええ。守ってましたね。
+[k]
+
+＠ヨハンナ
+多分、メタトロン的には【暴食】の罪人に[r]果実を提供することが罪なのかもしれません。
+[k]
+
+[charaFace E 8]
+
+＠ヨハンナ
+でも、それでは罪人ほぼ全てがハヤ・ラアに[r]成り果ててしまう。
+[k]
+
+[charaFace E 14]
+
+＠ヨハンナ
+メタトロンとしては、[r]恐らくそれでも構わないのでしょう。
+[k]
+
+＠ヨハンナ
+彼女は人類を救おうとは思っていないので。
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_141 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+[charaFadeout T 0.1]
+
+[charaDepth C 1]
+[charaDepth K 2]
+[charaDepth J 3]
+
+[charaFace J 8]
+[charaFadein K 0.1 -100,-250]
+[charaFadein J 0.1 -150,0]
+[wt 1.0]
+
+[charaLayer O normal]
+[charaLayer P normal]
+[charaLayer Q normal]
+[charaLayer R normal]
+[charaLayer S normal]
+[charaLayer T normal]
+
+[charaFadein L 0.1 -100,0]
+[charaFace N 7]
+[charaFadein N 0.1 -80,230]
+[charaFace M 4]
+[charaFadein M 0.1 100,230]
+
+[subCameraFilter #C maskEdge cut359_mask16 3 255,255,255,255 0]
+
+[charaMove K 0,-250 60.0]
+[charaMove J -50,0 60.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_164 0.1]
+
+＠J：ヨハンナ
+『[line 3]人間は間違った。間違った結果が白紙化だ。[r]　だから、人間はこのまま滅び去るべき』
+[k]
+
+＠J：ヨハンナ
+『そして新しい霊長が……次の知性体と[r]　呼ぶべき誰かが、この[#惑星:ほ　し]に生まれるのを待とう』
+[k]
+
+＠J：ヨハンナ
+『たとえ、何億年掛かろうとも構わない。[r]　それが我々旧人類としての責務であり、[#贖:あがな]いなのだから』
+[k]
+
+[charaFace J 14]
+
+＠J：ヨハンナ
+……ここが私と彼女の、決定的で致命的に[r]相容れない点です。
+[k]
+
+[charaFace J 13]
+
+＠J：ヨハンナ
+私は[line 3]私を創り出した人間を許すことは[r]できませんけれど。
+[k]
+
+[charaFace J 10]
+
+＠J：ヨハンナ
+もし出会えたら二、三発ボコりますけれど。[r]アームロック沙汰間違いなしですけれど。
+[k]
+
+[messageOff]
+[charaTalk N,M]
+[subRenderFadeinFSSideR #C 0.4 310,-300]
+[subRenderMoveEaseFSSideR #C 280,-300 0.4 easeOutSine]
+[wt 2.0]
+[subRenderFadeout #C 0.4]
+[subRenderMoveEaseFSSideR #C 310,-300 0.4 easeOutSine]
+[wt 0.4]
+[charaFace J 0]
+
+＠J：ヨハンナ
+私は、人類そのものに見切りをつけた訳では[r]ないのです。
+[k]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠J：ヨハンナ
+【暴食】にいる彼らは確かに罪人です。[r]人一倍欲張り、貪欲なまでに食を追求した。
+[k]
+
+＠J：ヨハンナ
+そのために、誰かを傷つけることも[r][#厭:いと]わなかったでしょう。
+[k]
+
+＠J：ヨハンナ
+飢えに苦しむ罪を背負うのも、[r]無理からぬこと。
+[k]
+
+[charaFace J 4]
+
+＠J：ヨハンナ
+でも……我ながら上手く言えないのですが、[r]人類史が続く前提で罪を背負わせるのと、
+[k]
+
+＠J：ヨハンナ
+人類史が終わるのに罪を背負わせるのでは、[r]少し地獄の意味合いが違うと思うのです。
+[k]
+
+[messageOff]
+[charaTalk J,C]
+[charaFadeout J 0.4]
+[charaFadeout K 0.4]
+[wt 0.6]
+
+＠カドック
+メタトロンは人類が滅んだとしても、[r]地獄で罪を背負わせる気……ってことか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ヨハンナ
+ええ。[r]それが、私と彼女のズレです。
+[k]
+
+＠ヨハンナ
+例の虚ろの実の収穫を許そうとしなかったのも、[r]その一環でしょうね。
+[k]
+
+＠ヨハンナ
+罪人に救いがあってはいけませんから。
+[k]
+
+[charaFace E 8]
+
+＠ヨハンナ
+……おっと、すみません。[r]辛気臭い話になりました、失敬。
+[k]
+
+[messageOff]
+[charaFadeout E 0.4]
+[charaPut Y 0,-200]
+[charaFadeTime Y 0.4 0.5]
+[charaFadein X 0.4 0,-200]
+[se ad1008]
+[seStop ad1008 0.6]
+[wt 3.0]
+
+
+[sceneSet S 247200 1]
+[charaScale S 1.2]
+[sceneSet T 247200 1]
+[charaScale T 1.2]
+[charaLayer S sub #A]
+[charaLayer J sub #A]
+
+[charaScale J 1.0]
+[charaDepth S 1]
+[charaDepth J 2]
+
+[charaFadein S 0.1 0,100]
+[charaScale J 1.3]
+[charaFadein J 0.1 -100,280]
+
+[charaLayer T sub #B]
+[charaLayer C sub #B]
+[charaLayer Z sub #B]
+[charaLayer D sub #B]
+[charaLayer B sub #B]
+[charaLayer A sub #B]
+
+[charaLayer U normal]
+[charaLayer V normal]
+
+[subCameraFilter #A maskEdge cut359_mask04 3 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask08 3 0,0,0,255 0]
+
+[charaDepth T 1]
+[charaDepth Z 2]
+[charaDepth B 3]
+[charaDepth D 4]
+[charaDepth C 5]
+[charaDepth A 6]
+
+[charaFace Z 13]
+[charaFace B 7]
+[charaFace D 2]
+[charaFace C 3]
+[charaFace A 2]
+[charaFace J 7]
+
+[charaFadein T 0.1 0,100]
+[charaFadeinFSR Z 0.1 380,230]
+[charaFadeinFSR C 0.1 220,230]
+[charaFadein A 0.1 0,230]
+[charaFadeinFSL B 0.1 -380,230]
+[charaFadeinFSL D 0.1 -180,230]
+
+[charaFadeout Y 0.4]
+[charaFadeout X 0.4]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.6]
+
+
+＠ヨハンナ
+どうぞ。第三圏の天秤証書です。
+[k]
+
+？1：ありがとう
+？！
+
+＠ヨハンナ
+正当な取引ですので、礼には及びません。[r]さ、行って下さ[line 3][bgmStop BGM_EVENT_164 1.0]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad533]
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠罪兵士
+ヨ、ヨハンナ様！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠ヨハンナ
+どうしました？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠罪兵士
+て、天使……天使が……攻め込んできました……！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk off]
+
+[subRenderFadein #A 0.2 50,-200]
+[subRenderMoveEase #A 0,-200 0.4 easeOutSine]
+[subRenderFadein #B 0.2 -50,-420]
+[subRenderMoveEase #B 0,-420 0.4 easeOutSine]
+[wt 0.4]
+
+＠全員
+！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+
+[sceneSet K 250701 1]
+[charaScale K 1.4]
+
+
+[charaFadeout C 0.1]
+[charaFadeout T 0.1]
+[charaFadeout Z 0.1]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout J 0.1]
+[charaFadeout S 0.1]
+
+[sceneSet K 250701 1]
+[charaScale K 1.2]
+
+[sceneSet L 250701 1]
+[charaScale L 1.2]
+
+
+[charaDepth U 1]
+[charaDepth O 2]
+[charaDepth P 3]
+[charaDepth Q 4]
+[charaDepth R 5]
+[charaDepth V 6]
+[charaDepth I 15]
+
+[charaScale O 1.3]
+[charaScale P 0.9]
+[charaScale Q 0.8]
+[charaScale R 1.0]
+
+[cameraMove 0.1 50,0 1.3]
+[wt 1.0]
+
+[charaSet A 98014000 1 罪兵士2]
+[charaSet B 98014000 1 罪兵士3]
+[charaSet C 98014000 1 罪兵士4]
+[charaSet D 98014000 1 罪兵士5]
+
+[charaSet E 98014000 1 罪兵士3]
+[charaSet M 98014000 1 罪兵士4]
+[charaSet N 98014000 1 罪兵士5]
+
+[charaLayer T normal]
+[charaLayer Z normal]
+
+[charaLayer E sub #A]
+[charaLayer M sub #A]
+[charaLayer N sub #A]
+
+[charaDepth K 1]
+[charaDepth E 4]
+[charaDepth M 3]
+[charaDepth N 2]
+
+
+[scene 250701]
+
+[charaPut I 1]
+
+
+[se ad726]
+[seVolume ad726 0 0]
+[seVolume ad726 1.0 0.4]
+
+[se ade376]
+[seVolume ade376 0 0]
+[seVolume ade376 1.0 0.3]
+[se ad162]
+[seVolume ad162 0 0]
+[seVolume ad162 1.0 0.5]
+[se ade307]
+[seVolume ade307 0 0]
+[seVolume ade307 1.0 0.1]
+[fadein black 1.0]
+[bgm BGM_EVENT_126 1.0]
+[se ad226]
+[seVolume ad226 0 0.4]
+[se ad14]
+[wait fade]
+
+[se bac234]
+[seVolume bac234 0 0.4]
+[shake 0.05 2 2 0.8]
+[charaPut U -100,-100]
+[charaEffect U bit_talk_impactlanding]
+
+[se ad132]
+[charaFace Q 4]
+[charaFadein Q 0.4 0,-100]
+[charaMove Q -150,-100 2.0]
+[wt 1.2]
+[seStop ad14 0.4]
+[charaFadeout Q 0.4]
+[cameraMoveEase -50,0 3.0 easeOutCubic 1.2]
+[wt 0.6]
+[cueSe Servants_104800 m42617]
+[se ad841]
+[seStop ad841 1.0]
+[wt 0.4]
+[cueSe SE_23 23_ade828]
+[seVolume 23_ade828 0 0.4]
+[charaRollAxis P y 180 0]
+[charaFace P 7]
+[charaFadein P 0.4 100,-60]
+[charaMove P 240,-60 2.0]
+[wt 0.4]
+[wt 0.4]
+[se bac234]
+[seVolume bac234 0 0.4]
+[shake 0.05 2 2 0.8]
+[charaPut V 400,-100]
+[charaEffect U bit_talk_impactlanding]
+[wt 0.4]
+[se bac234]
+[seVolume bac234 0 0.4]
+[shake 0.05 2 2 0.8]
+[wt 0.4]
+[seStop 23_ade828 0.4]
+[charaFadeout P 0.4]
+[wt 0.4]
+[cameraMoveEase 0,0 3.0 easeOutCubic 1.01]
+[wt 0.4]
+
+[se ad226]
+[seVolume ad226 0 0.4]
+[se ad14]
+[wt 0.4]
+[seStop ad14 1.0]
+
+[se bac234]
+[seVolume bac234 0 0.4]
+[shake 0.05 2 2 0.8]
+[charaPut V -200,-100]
+[charaEffect U bit_talk_impactlanding]
+
+[cueSe SE_23 23_ade828]
+[se ad132]
+[charaFace O 2]
+[charaFadein O 0.4 -80,0]
+[charaMove O -200,0 2.0]
+[wt 0.3]
+[se bac234]
+[seVolume bac234 0 0.4]
+[shake 0.05 2 2 0.8]
+[charaPut U 300,0]
+[charaEffect U bit_talk_impactlanding]
+[wt 1.3]
+[charaFadeout O 0.4]
+[seStop 23_ade828 0.4]
+[wt 0.4]
+
+[wt 1.0]
+[seStop ad726 1.0]
+[seStop ad162 1.0]
+[wt 1.0]
+
+[scene 245002 0.5]
+[wt 0.7]
+
+[se ade216]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 0,60]
+[charaMoveEase G 0,0 1.5 easeOutBack]
+[wt 1.5]
+[cueSe SE_25 25_ad1490]
+[seStop 25_ad1490 1.0]
+[wt 1.0]
+
+＠天使
+[line 6]。[r][line 6]。
+[k]
+
+[messageOff]
+[charaDepth G 1]
+[charaDepth K 2]
+[charaDepth Q 3]
+[charaDepth L 4]
+[charaDepth O 5]
+
+[charaTalk off]
+[charaFace Q 7]
+[charaScale Q 1.0]
+[charaFadein K 0.5 0,-250]
+[charaFadein Q 0.5 -250,0]
+[charaMoveEase K 100,-250 1.0 easeOutSine]
+[charaMoveEase Q -150,0 1.0 easeOutSine]
+[wt 1.2]
+
+[scene 250701]
+
+[charaFadeout G 0.1]
+
+
+
+
+
+
+＠罪人
+ゆ、赦しを……どうか、赦しを……！
+[k]
+
+[messageOff]
+[effect bit_talk_angel_beam_weak01 -150,450]
+[cueSe SE_25 25_ad1507 0.3]
+[se ad943]
+[seStop ad943 2.1]
+[wt 1.5]
+[effect bit_talk_atomization -150,0]
+[se ad42]
+[wt 0.7]
+[seStop ad42 1.5]
+[charaFadeout Q 1.5]
+[wt 2.0]
+
+[charaScale O 1.0]
+
+[charaTalk O]
+[charaFace O 7]
+[charaFadein L 0.5 0,-250]
+[charaFadein O 0.5 250,0]
+[charaMoveEase L -100,-250 1.0 easeOutSine]
+[charaMoveEase O 150,0 1.0 easeOutSine]
+[wt 1.2]
+
+＠罪人
+に、逃げろ！　逃げろ！[r]逃げなくては……！
+[k]
+
+[charaFadeout K 0.1]
+
+＠罪人
+あれは魂の消滅！　罰ではない！[r][#塵:ちり]になってしまえば、最早我々に救いはない……！
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_angel_beam_weak02 150,450]
+[cueSe SE_25 25_ad1507 0.2]
+[se ad943]
+[seStop ad943 2.1]
+[wt 2.5]
+[effect bit_talk_atomization 150,0]
+[se ad42]
+[wt 0.7]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+[seStop ad42 1.5]
+[charaFadeout O 1.5]
+[wt 2.0]
+
+[charaFadeout L 0.6]
+[wt 0.8]
+
+[charaDepth F 5]
+[charaDepth A 4]
+[charaDepth B 3]
+[charaDepth C 2]
+[charaDepth D 1]
+
+＠罪兵士
+や、やむを得ん……！[r]迎撃用意！　第三圏を守るぞ！
+[k]
+
+[messageOff]
+[cueSe SE_25 25_ad1469]
+[se ad769]
+[charaFace A 0]
+[charaFace B 5]
+[charaFadeinFSR A 0.4 180,0]
+[charaFadeinFSL B 0.4 -180,0]
+[wt 0.2]
+[charaFace C 2]
+[charaFace D 2]
+[charaFadeinFSR C 0.4 400,0]
+[charaFadeinFSL D 0.4 -400,0]
+[wt 0.4]
+[seStop 25_ad1469 0.4]
+[seStop ad769 0.4]
+[wt 0.6]
+
+
+[charaFace F 2]
+
+＠罪兵士
+倒せええええ！
+[k]
+
+
+
+[messageOff]
+[seStop NP_300400_11 0.5]
+[seStop NP_300400_12 0.5]
+[bgmStopEnd BGM_EVENT_126 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAllEnd]
+[end]
+

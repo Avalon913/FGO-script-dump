@@ -1,0 +1,1266 @@
+
+
+＄94-13-89-04-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 28009000 1 ファンタズムーン]
+[charaSet B 1010000 1 エリザベート（ブレイブ）]
+[charaSet C 1010000 1 エリザベート・ブレイブ_シルエット]
+[charaFilter C silhouette 00000080]
+[charaSet D 7007001 1 ヴラド三世]
+[charaSet E 23009000 1 謎の代行者C.I.E.L]
+[charaSet F 23009000 1 謎の代行者C.I.E.L（演出用）]
+[charaSet G 1098257300 1 ダ・ヴィンチ]
+
+[sceneSet H 203800 1]
+[charaScale H 1.3]
+[sceneSet I 140200 1]
+[charaScale I 1.2]
+[sceneSet J 203901 1]
+[charaScale J 1.1]
+[sceneSet K 10000 1]
+[charaScale K 1.1]
+[sceneSet L 132900 1]
+[charaScale L 1.2]
+
+[imageSet M black_fade 1]
+[imageSet N black_fade 1]
+[imageSet O back10000 1 1]
+[charaScale O 1.01]
+[imageSet P back10000 1 1]
+[charaScale P 1.01]
+[imageSet Q cut628_pre_mic 1]
+
+[charaSet R 98115000 1 エフェクト用1]
+[charaSet S 98115000 1 エフェクト用2]
+[charaSet T 98115000 1 エフェクト用3]
+
+[charaPut R 2000,2500]
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+[charaEffect R bit_talk_fire_blue]
+[charaEffect S bit_talk_charge_blu]
+[charaEffect T bit_talk_fire_kma]
+
+[subCameraOn 4]
+[charaLayer H sub #A]
+[subCameraFilter #A normal]
+[charaLayer A sub #B]
+[subCameraFilter #B through]
+[charaLayer D sub #C]
+[charaLayer C sub #C]
+[subCameraFilter #C through]
+[charaLayer B sub #D]
+[subCameraFilter #D through]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+[subRenderDepth #D 4]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth A 2]
+[charaFadein H 0.1 120,-300]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 -150,-60]
+
+[charaDepth D 1]
+[charaDepth B 3]
+[charaDepth C 2]
+
+[charaScale C 1.1]
+[charaFace D 0]
+[charaFace C 0]
+[charaFadein D 0.1 150,-50]
+[charaFadein C 0.1 500,-90]
+
+[charaScale B 1.1]
+[charaFace B 0]
+[charaFadein B 0.1 300,-90]
+
+[subCameraMove #A 0.1 0,0 1.2]
+[subCameraMove #C 0.1 20,0 1.2]
+
+[scene 203800]
+
+[pictureFrameTop cut063_cinema]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[se ad95]
+[subRenderFadein #A 0.7 0,0]
+[subRenderFadein #B 0.7 0,0]
+[charaMove H 100,-300 2.0]
+[subCameraMove #A 2.0 0,0 1.0]
+[subCameraMove #C 2.0 0,0 1.0]
+[charaMoveReturnEase A -150,-63 0.7 easeOutSine easeOutSine]
+[wt 0.7]
+[charaMoveReturnEase A -150,-63 0.7 easeOutSine easeOutSine]
+[wt 0.4]
+[subRenderFadein #C 0.6 0,0]
+[wt 0.3]
+[seStop ad95 0.3]
+[charaMoveReturnEase A -150,-62 0.4 easeOutSine easeOutSine]
+[wt 0.8]
+
+＠ファンタズムーン
+おっはよー、二人とも！[charaMoveEase H -50,-300 1.0 easeOutSine][charaMoveEase A -350,-60 1.0 easeOutSine][charaMoveEase D -50,-50 1.0 easeOutSine][charaMoveEase C 300,-90 1.0 easeOutSine][wt 1.0][charaFace A 0][r]……あれ？　またなんか霊基変わってる？
+[k]
+
+[messageOff]
+[charaTalk B]
+[subRenderFadein #D 0.7 0,0]
+[wt 0.7]
+[charaFadeout C 0]
+[wt 0.2]
+
+[bgm BGM_HALLOWEEN_1 0.1]
+
+＠エリザベート（ブレイブ）
+ふふ、そうね。今度は[#私:アタシ]の出番……。[r]エリザベート・ブレイブよ！
+[k]
+
+[charaTalk D]
+
+＠ヴラド三世
+安心してほしい。特に変わりがある訳ではない。
+[k]
+
+[charaTalk A]
+[charaFace A 4]
+
+＠ファンタズムーン
+寒くない？
+[k]
+
+[charaTalk B]
+[charaFace B 1]
+
+＠エリザベート（ブレイブ）
+……大丈夫、大丈夫よ。[r][#私:アタシ]の正義の心は、いつだって熱く輝いているから！
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+
+＠ファンタズムーン
+そ、そう。それならいいんだけど。[wt 0.9][charaFace A 5][r]……本当のところは？
+[k]
+
+[charaTalk B]
+[charaFace B 2]
+
+＠エリザベート（ブレイブ）
+寒いのでさっさと終わらせたいわ！[r]行きましょう！
+[k]
+
+[charaTalk A]
+[charaFace A 12]
+
+＠ファンタズムーン
+正直だ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_HALLOWEEN_1 1.0]
+[wait fade]
+
+[subCameraMove #A 0.0 0,0 1.0]
+[subCameraMove #C 0.0 0,0 1.0]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout H 0.1]
+[charaLayer H normal]
+[charaLayer A normal]
+[charaLayer D normal]
+[charaLayer C normal]
+[charaLayer B normal]
+[subCameraOff]
+[charaScale B 1.0]
+[wt 0.1]
+
+[subCameraOn 1]
+[charaLayer L sub #A]
+[charaLayer F sub #A]
+[subCameraFilter #A maskEdge cut359_mask09 5 255,255,255,255 0]
+
+[charaDepth L 1]
+[charaDepth F 2]
+
+[charaScale F 1.2]
+[charaFace F 12]
+[charaFadein F 0.1 0,375]
+[charaFadein L 0.1 0,75]
+
+[pictureFrameTop]
+
+[scene 132900]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk G]
+[charaFace G 23]
+[charaFadein G 0.1 1]
+
+＠ダ・ヴィンチ
+ふたりに残念なお知らせだ。[r]今朝もプレゼント消失の被害届があったよ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+＠謎の代行者C.I.E.L
+そうですか……申し訳ありません……。
+[k]
+
+＠謎の代行者C.I.E.L
+一日カルデアじゅうを警備していたのですが、[r]これといって怪しい点は見つからなく……。
+[k]
+
+？1：面目ない……
+？2：監視カメラもずっと見張ってたんだけど……
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+いや、キミたちが謝る事じゃない。[r]原因を究明できないのはこっちも同じなんだから。
+[k]
+
+[charaFace G 1]
+＠ダ・ヴィンチ
+とりあえず、被害にあったサーヴァントたちには[r]もう一度プレゼントを配ってもらう事になったよ。
+[k]
+
+＠ダ・ヴィンチ
+ノルマを終えたサンタサーヴァントたちに[r]再出動をお願いしてね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠謎の代行者C.I.E.L
+対症療法、というわけですか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 23]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+そう。ただ、これはこれで問題がある。[r]最初に配ったプレゼントの魔力分が不足している。
+[k]
+
+＠ダ・ヴィンチ
+これ以上の魔力消費はカルデアの基本運営に[r]影響が出てしまうだろう。
+[k]
+
+[charaFace G 36]
+＠ダ・ヴィンチ
+そこで、シエルに相談があるんだけど……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠謎の代行者C.I.E.L
+みなまでいわずとも結構。[r]魔力提供ですね？
+[k]
+
+＠謎の代行者C.I.E.L
+もちろん問題ありません。[r]今日はプレゼント作りを手伝わせていただきます。
+[k]
+
+？1：さすが『人間魔力工場』……！
+
+[charaFace E 15]
+＠謎の代行者C.I.E.L
+その名称はどうかと……[r]いえ、間違いではないのですが……。
+[k]
+
+？2：膨大な魔力生成量、というヤツですね！
+
+[charaFace E 5]
+＠謎の代行者C.I.E.L
+そんな、膨大と言われる程では。[r]事実ではあるのですが！
+[k]
+
+？！
+
+
+[charaFace E 4]
+＠謎の代行者C.I.E.L
+という訳でマスター。
+[k]
+
+＠謎の代行者C.I.E.L
+今回は……そうですね、ファンタズムーンに[r]ついていって貰えませんか？
+[k]
+
+[charaFace E 0]
+＠謎の代行者C.I.E.L
+何かの手がかりになるかもしれませんから。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 24]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+む。するとキミは彼女を疑っているのかい？
+[k]
+
+[charaFace G 23]
+＠ダ・ヴィンチ
+彼女の霊基数値も特に乱れはないし、[r]魔力を取り込んでいる様子もないけど……。
+[k]
+
+＠ダ・ヴィンチ
+通常、そういう状況なら魔力の乱れが[r]計測されると思うからね。
+[k]
+
+[charaFace G 34]
+
+＠ダ・ヴィンチ
+もちろん、彼女が何かを企んでいて、[r]こっそり陰謀を[#謀:はか]っているなら……。
+[k]
+
+＠ダ・ヴィンチ
+それを見破るのは、難しいかもしれないけど。[r]サーヴァントとしての実力があるからね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+＠謎の代行者C.I.E.L
+確かにそうですね。
+[k]
+
+＠謎の代行者C.I.E.L
+そういう意味では、彼女はこの上なく[r]隠し事に向いていません。
+[k]
+
+[messageOff]
+[charaTalk E,F]
+[charaScale A 1.2]
+[charaFace A 0]
+[charaFadein H 0.4 190,-350]
+[charaFadein A 0.4 -280,-75]
+[subRenderFadein #A 0.4 232,-300]
+[charaMove L 20,0 0.5]
+[charaMove F 20,300 0.5]
+[charaMove H 170,-275 0.5]
+[charaMove A -300,0 0.5]
+[wt 0.7]
+[charaFace F 9]
+
+＠謎の代行者C.I.E.L=spot[E,F]
+その上で、彼女が関わっていると考えます。[r][line 3]長年の宿敵としての直感です。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+[charaFadeout L 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+[charaLayer L normal]
+[charaLayer F normal]
+[subCameraOff]
+[charaScale A 1.0]
+
+[scene 203800]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_147 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠ファンタズムーン
+あれ。カルデア[&くん:さん]、どうしたの？
+[k]
+
+？1：今日は同行させてもらおうと思って
+？！
+
+[charaFace A 9]
+＠ファンタズムーン
+わ、そうなんだ。嬉しいな！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠ヴラド三世
+おお、そうかそうか。[r]ならばマスターは余とエリザベートで運ぶとしよう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠エリザベート（ブレイブ）
+[&子イヌ:子ジカ]、しっかり掴まりなさいよ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠ファンタズムーン
+よーし、それじゃあ今日もプレゼントを運びまーす！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+？1：楽しそうだね
+？！
+
+[charaFace A 9]
+＠ファンタズムーン
+うん！　最近、毎日が楽しい！
+[k]
+
+[charaFace A 8]
+
+＠ファンタズムーン
+こうしてプレゼントを配って、みんなに喜んでもらって。[r]終わった後は[line 3]
+[k]
+
+？1：？
+？！
+
+[charaFace A 3]
+
+＠ファンタズムーン
+あ、何でもない何でもない。[r]えーと、今日[#配:くば]るのは……。
+[k]
+
+[charaFace A 0]
+
+＠ファンタズムーン
+……あれ？　今日はボーダー内のシミュレーターだ。[r]名前は……。
+[k]
+
+＠ファンタズムーン
+刑部姫？
+[k]
+
+？1：おっきー？
+？！
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_147 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaSet E 6031001 1 刑部姫]
+[charaSet F 7013000 1 清姫]
+
+[scene 140200]
+[overlayFadein O 0.1 0,-736]
+[overlayFadein P 0.1 0,736]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFace F 0]
+[charaFadein F 0.4 250,-50]
+[charaFadein E 0.4 -250,-50]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠刑部姫
+楽しい楽しいクリスマス♪[r]原稿も終わったし♪
+[k]
+
+[charaTalk F]
+[charaFace F 2]
+
+＠清姫
+……そんな、まさか……！[r]おっきー、嘘ついてません！
+[k]
+
+[charaTalk E]
+[charaFace E 7]
+
+＠刑部姫
+へっへー！　今回は原稿の[#調子:ノ　リ]が良くてね。[r]サクリと終わったのさー。
+[k]
+
+[charaTalk F]
+[charaFace F 1]
+
+＠清姫
+ふふふ、それならのんびり[r]お茶でも飲んで過ごしましょうか。
+[k]
+
+[charaFace F 4]
+＠清姫
+ますたぁはサンタ業務でお忙しいようですし、[r]さすがにご迷惑をおかけする訳にもいきませんから。
+[k]
+
+[charaTalk E]
+[charaFace E 6]
+
+＠刑部姫
+そうだねー。クリスマス週間だし、[r]そろそろプレゼントが届く頃かなー。
+[k]
+
+[charaTalk F]
+[charaFace F 0]
+
+＠清姫
+まあ、プレゼントを頼んだのですか？
+[k]
+
+[charaTalk E]
+
+＠刑部姫
+貰えるモノは貰っておきたいでしょー。[r]それに、買いにくいものもあったから。
+[k]
+
+[charaTalk F]
+[charaFace F 4]
+
+＠清姫
+あら……原稿に関係するものではなく？
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+
+＠刑部姫
+それなら普通に調達できるでしょ。[r][#姫:わたし]が頼んだのは[line 3][bgmStop BGM_EVENT_77 1.5]
+[k]
+
+[messageOff]
+[charaMove O 0,-850 1.2]
+[charaMove P 0,850 1.2]
+[se ade398]
+[charaDepth E 1]
+[charaDepth F 2]
+[charaDepth I 3]
+[charaDepth A 4]
+
+[charaFadein I 0.4 -50,-260]
+[charaMoveEase I -120,-260 1.0 easeOutSine]
+[wt 1.2]
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.4 230,0]
+[charaMove A 200,0 0.4]
+[wt 0.4]
+[bgm BGM_BATTLE_115 0.1]
+[charaFadeout F 0.1]
+[charaPut E 1]
+[charaFace E 8]
+
+＠ファンタズムーン
+良い子のみんな、こんふぁんたー！[r]サンタクロースでーす！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout I 0.4]
+[charaFadeout A 0.4]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk E]
+＠刑部姫
+ヌ[messageShake 0.05 4 3 0.3]ギャ！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠清姫
+あら、いらっしゃいませ……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ヴラド三世
+相変わらず完璧な再現度だ、[r]チェイテピラミッド姫路城。
+[k]
+
+[charaFace D 0]
+＠ヴラド三世
+いや、むしろ刑部姫の持つ神秘特性を[#讃:たた]えるべきか。[r]一時とはいえ自らの居城を再現するのだから。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠エリザベート（ブレイブ）
+いつもいつも思うのだけど！
+[k]
+
+＠エリザベート（ブレイブ）
+なんで！　ねぇ、なんで[#私:アタシ]のお城が[r]土台になっているのかしら！？
+[k]
+
+[charaFace B 8]
+＠エリザベート（ブレイブ）
+普通の姫路城でいいじゃない、刑部姫も！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠刑部姫
+いや、その……[#姫:わたし]もそうしたいのは[r]山々だったんだけど……。
+[k]
+
+＠刑部姫
+なんか姫路城[#だけ]を再現するのが[r]難しくなっちゃって……
+[k]
+
+[charaFace E 3]
+＠刑部姫
+チェイテ城とピラミッドの上に[r]乗っかったまま、お過ごしくださいと……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠ファンタズムーン
+あはははは。もしかすると、わたしの千年城が[r]さらにこの上に乗っかっちゃったりして。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠刑部姫
+それもう真っ当な人間はそこに居られないから！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠エリザベート（ブレイブ）
+うう、[#私:アタシ]のチェイテ城……。
+[k]
+
+[charaFace B 0]
+＠エリザベート（ブレイブ）
+いえ、ここは仮初めとはいえチェイテ城の[r]再現度の高さを喜ぶべきなのかしら……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠刑部姫
+それはともかく……もしやプレゼントを[r]持ってきてくれた感じ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠ファンタズムーン
+うん、その通り！[r]ええと、あなたが願ったプレゼントは……。
+[k]
+
+[charaFace A 9]
+＠ファンタズムーン
+はい、これ！[r]高音質のマイクだよね？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.15]
+
+[charaDepth K 1]
+[charaDepth Q 2]
+
+[cueSe Battle bas2]
+[charaFadein Q 0.4 0,-200]
+[charaPut K 0,-200]
+[charaFadeTime K 0.4 0.5]
+[wt 1.5]
+[wait touch]
+
+[charaFadeout K 0.2]
+[charaFadeout Q 0.2]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠刑部姫
+うん、それそれ！[r]やった、ありがとー！
+[k]
+
+＠刑部姫
+これでASMR配信ができるー！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠ファンタズムーン
+……えーえすえむあーる？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠清姫
+ああ……おっきーが最近嵌まってるアレですね。[r]でも珍しいですね。
+[k]
+
+[charaFace F 4]
+＠清姫
+基本、配信では友達スタンスを崩さない方針だったのでは？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaDepth A 2]
+[charaPut K 1]
+[charaFadeTime K 0.2 0.5]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠ファンタズムーン
+（配信！）
+[k]
+
+[charaFadeout A 0.2]
+[charaFadeout K 0.2]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠刑部姫
+もちろんそうだよー。[r]だからこれは、マーちゃん用なのさ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_115 1.5 0.7]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠清姫
+…………ほう。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠刑部姫
+いやー、色んな経験しているマーちゃんも、[r]さすがに耳元で[#囁:ささや]かれるのは未体験っぽいじゃん？
+[k]
+
+[charaFace E 3]
+＠刑部姫
+だったら[#姫:わたし]が先陣を切って、[r]後陣は塞いでおこうかなーって！
+[k]
+
+？1：[#囁:ささや]かれるのはちょっと……
+
+＠刑部姫
+だ、大丈夫大丈夫。とっても気持ちいい感じだから。[r]夢見心地になるから！
+[k]
+
+？2：面白そう！
+
+[charaFace E 1]
+＠刑部姫
+さ、さすがマーちゃん。[r]その臆せぬ勇気、おっきー感心。
+[k]
+
+？！
+
+[bgmStop BGM_BATTLE_115 1.2]
+
+[charaFace E 9]
+＠刑部姫
+……ところで許してくれるカナ？
+[k]
+
+[messageOff]
+[charaDepth A 2]
+[charaDepth E 2]
+[charaDepth I 3]
+[charaDepth F 4]
+
+[se ad186]
+[charaScale F 1.1]
+[charaScale I 1.1]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.2 1]
+[charaFadein I 0.2 0,-240]
+
+[charaMoveScaleEase F 1.3 0.3 easeOutSine]
+[charaMoveScaleEase I 1.3 0.3 easeOutSine]
+[charaMoveEase F 0,25 0.3 easeOutSine]
+[charaMoveEase I 0,-310 0.3 easeOutSine]
+[wt 0.2]
+
+[charaFace A 0]
+[charaFadein A 0 1]
+[charaFadeout E 0]
+
+＠清姫
+許しません♡
+[k]
+
+[bgm BGM_EVENT_62 0.1]
+
+[messageOff]
+[charaTalk F,A]
+[charaFadeout F 0.4]
+[charaFadeout I 0.4]
+[wt 0.6]
+
+＠ファンタズムーン
+あ、戦うんだ。[r]でも、ここじゃちょっと狭くない？
+[k]
+
+[charaFace A 8]
+＠ファンタズムーン
+大切なグッズが壊れちゃうのもよくないし。[r]プレゼントは大切にしてほしいしね！
+[k]
+
+[charaFace A 9]
+＠ファンタズムーン
+そういうワケで外に出て戦いましょう！[r]そーれ、マジカル力技ーー！
+[k]
+
+[bgm BGM_EVENT_62 1.0 0.5]
+
+[messageOff]
+[cueSe SE_22 22_ad1180 0.5 0.3]
+[cueSe SE_23 23_ad1295 0.2 0.3]
+[effect bit_talk_noble_light]
+[charaEffectEdgeBlur A FFFFFF FFFFFF 2 1.5]
+[wt 2.4]
+
+[cueSeStop 22_ad1180 1.0]
+[cueSeStop 23_ad1295 1.0]
+[charaFadeout A 0.1]
+[wt 0.05]
+[charaEffectEdgeBlurDestroy A]
+[wt 0.05]
+[effectDestroy bit_talk_noble_light]
+
+[charaTalk off]
+[subCameraOn 1]
+[charaLayer E sub #A]
+[charaLayer F sub #A]
+[charaLayer B sub #A]
+[charaLayer D sub #A]
+
+[subCameraFilter #A through]
+
+[subRenderDepth #A 1]
+
+[subRenderScale #A 1.01]
+
+[subRenderFadein #A 0 0,0]
+
+[charaDepth B 3]
+[charaDepth E 4]
+[charaDepth F 5]
+[charaDepth D 6]
+
+[charaScale E 0.95]
+[charaScale F 1.0]
+[charaScale D 1.0]
+[charaScale B 0.98]
+
+[charaFace E 0]
+[charaFace F 0]
+[charaFace B 0]
+[charaFace D 0]
+[charaFadein E 0.1 -150,-35]
+[charaFadein F 0.1 -400,0]
+[charaFadein B 0.1 125,-30]
+[charaFadein D 0.1 350,0]
+[wt 0.6]
+
+[se ade338]
+[cueSe SE_23 23_ade915]
+[effect bit_talk_42_depth]
+[subRenderShake #A 0.05 2 2 0]
+[shake 0.02 2 2 0]
+[blur lens 0.4 1 20]
+[wt 0.25]
+
+[charaFace D 2]
+[charaFace E 8]
+[charaFace B 2]
+[charaFace F 2]
+
+[charaScale M 9.0]
+[charaFadein M 0.2 -2250,-1500]
+[charaMove M -3900,-1500 0.4]
+
+[scene 203901]
+
+[charaScale N 9.0]
+[charaFadein N 0 3900,-1500]
+[charaFadeout M 0]
+[wt 1.2]
+
+[charaMove N 2250,-1500 0.4]
+[wt 0.2]
+[blurOff lens 0.4]
+[effectStop bit_talk_42_depth]
+[wt 0.2]
+
+[subRenderShakeStop #A]
+[shakeStop]
+[wt 0.9]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[subRenderFadeout #A 0]
+[charaLayer E normal]
+[charaLayer F normal]
+[charaLayer D normal]
+[charaLayer B normal]
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaScale D 1.0]
+[charaScale B 1.0]
+
+[bgm BGM_EVENT_62 1.0 1.0]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠刑部姫
+ギ[messageShake 0.05 4 3 0.7]ャー！　見えない手で外に連れ出されたー！[r]今の念動！？　この数をひとりで！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[subCameraOff]
+
+[charaDepth R 2]
+[charaDepth S 3]
+[charaDepth T 4]
+[charaDepth F 5]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠清姫
+魔力や呪力の類いではありませんでした。[r]高名なお坊様に匹敵する法力ですわね……。
+[k]
+
+[charaFace F 2]
+＠清姫
+ですが、この広さなら[r]遠慮なく燃え上がれるというもの！
+[k]
+
+＠清姫
+このきよひー、容赦しません。[r]いきますよー！
+[k]
+
+[messageOff]
+[se ad961]
+[flashin once 0.1 0.6 CCFFFFFA CCFFFF50]
+[wt 0.1]
+[charaPut R 1]
+[charaPut S 1]
+[charaPut T 1]
+[se ad429]
+[seVolume ad429 0 0.5]
+[wt 2.6]
+
+[seStop ad961 0.7]
+[seVolume ad429 0.7 0.4]
+[subCameraOn 1]
+[charaLayer D sub #A]
+[charaLayer B sub #A]
+[charaLayer A sub #A]
+[charaLayer J sub #A]
+
+[subCameraFilter #A normal]
+
+[subRenderDepth #A 1]
+
+[subRenderScale #A 1.01]
+
+[charaDepth J 2]
+[charaDepth A 3]
+[charaDepth B 3]
+[charaDepth D 3]
+
+[charaScale D 1.0]
+[charaScale J 1.2]
+
+[charaTalk F,D]
+[charaFace D 4]
+[charaFadein D 0 100,0]
+[charaFadein J 0 0,-260]
+
+[subRenderFadein #A 0.3 0,0]
+[charaMoveEase D 0,0 0.5 easeOutSine]
+[charaMoveEase J -100,-260 0.5 easeOutSine]
+[wt 0.3]
+
+[charaPut R 2000,2500]
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+[charaShake E 0.02 2 2 0]
+[charaFadeout F 0.1]
+[wt 0.4]
+
+＠ヴラド三世
+おう、これは哀れな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠エリザベート（ブレイブ）
+そうね。[r]……ファンタズムーン、一ついいかしら？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ファンタズムーン
+うん？　なにー？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠エリザベート（ブレイブ）
+刑部姫はね、基本的に引き籠もり上等の人間、[r]じゃなくて妖怪なのよ。
+[k]
+
+＠エリザベート（ブレイブ）
+なので、そんな彼女をいきなり[r]城の外へ放り出すと[line 3]
+[k]
+
+[messageOff]
+[charaTalk E,B]
+[subRenderFadeout #A 0.6]
+[wt 0.6]
+[charaFadeout J 0]
+[charaFadeout B 0]
+[charaFadeout D 0]
+[charaFadeout A 0]
+[wt 0.1]
+[subCameraOff]
+[charaLayer J normal]
+[charaLayer A normal]
+[charaLayer D normal]
+[charaLayer B normal]
+[charaScale J 1.0]
+[charaScale A 1.0]
+[charaScale D 1.0]
+[charaScale B 1.0]
+[wt 0.25]
+
+＠刑部姫
+あばばばばば。[r][#姫:わたし]の城、[#姫:わたし]の城～！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaShakeStop E]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠エリザベート（ブレイブ）
+ああして、確実に錯乱するわ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[seVolume ad429 0.3 0.8]
+
+[charaPut R 1]
+[charaPut S 1]
+[charaPut T 1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠清姫
+ねーーたーーまーーしーーいーー！
+[k]
+
+[seVolume ad429 0.5 0.4]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut R 2000,2500]
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+[charaEffectDestroy R bit_talk_fire_blue]
+[charaEffectDestroy S bit_talk_charge_blu]
+[charaEffectDestroy T bit_talk_fire_kma]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ヴラド三世
+うむ、そしてこちらの少女も妬みの炎で[r]猛っているな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠ファンタズムーン
+えーと……カルデア[&くん:さん]！[r]どうしよっかこれー！？
+[k]
+
+？1：しょうがない、二人とも落ち着かせよう！
+？！
+
+[charaFace A 16]
+
+＠ファンタズムーン
+うん！　何だかマッチポンプ感が凄いけど、[r]ごめんねいま殴り倒すから！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad429 0.4]
+[bgmStopEnd BGM_EVENT_62 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

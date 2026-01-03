@@ -1,0 +1,552 @@
+
+
+＄94-09-15-07-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1060000 1 宮本伊織]
+[charaSet B 1098284200 1 紅玉の書]
+[charaSet C 1098257810 1 マシュ]
+[charaSet D 1098257310 1 ダ・ヴィンチ]
+[charaSet E 1098255110 1 ゴルドルフ]
+[charaSet F 1059000 1 ヤマトタケル]
+
+[charaSet G 1098284200 1 紅玉の書1]
+
+[imageSet J cut528_map01 1]
+
+[sceneSet O 205100 1]
+[charaScale O 1.4]
+[sceneSet P 205100 1]
+[charaScale P 1.4]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用2]
+[charaPut S 2000,2000]
+[charaEffect S bit_talk_10_LowLevel]
+
+[cameraMove 0.1 0,50 1.2]
+
+[scene 205001]
+
+[se ad985]
+[seVolume ad985 0 0]
+
+[subCameraOn 3]
+[charaLayer A sub #A]
+[charaLayer O sub #A]
+[charaLayer B sub #B]
+[charaLayer P sub #B]
+[charaLayer T sub #C]
+
+[subCameraFilter #A maskEdge cut359_mask11 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask12 5 255,255,255,255]
+[subCameraFilter #C through]
+
+[charaTalk depthOff]
+[charaDepth O 1]
+[charaDepth P 1]
+[charaDepth A 2]
+[charaDepth B 2]
+[charaDepth T 3]
+[charaDepth J 1]
+
+[charaScale A 1.0]
+[charaScale B 0.6]
+[charaScale O 1.2]
+[charaScale P 1.2]
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0.1 425,290]
+[charaFadein B 0.1 -425,280]
+[charaFadein O 0.1 -150,50]
+[charaFadein P 0.1 150,50]
+
+[subRenderFadein #C 0.1 0,0]
+[wt 0.1]
+
+[seVolume ad985 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[cameraMoveEase 0,-60 3.5 easeInOutQuad 1.2]
+[wt 4.0]
+
+[fadeout black 1.0]
+[seStop ad985 1.0]
+[wait fade]
+
+[scene 205000]
+[wt 1.5]
+
+[se ade207]
+[cameraMoveEase 0,50 3.0 easeInOutQuad 1.2]
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.5]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[cameraMoveEase 0,0 0.1 easeInOutQuad 1.01]
+
+
+[charaScale J 2.0]
+[charaFadein J 0.7 -100,735]
+[scene 205100]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[bgm BGM_EVENT_190 0.1]
+
+[charaPut T 1]
+[charaEffect T bit_talk_draw_circle01]
+[se ade174]
+[seStop ade174 0.7]
+[wt 1.0]
+
+[charaTalk A]
+[subRenderFadeinFSSideR #A 0.35 -60,-150]
+[subRenderMoveFSSideR #A -10,-250 0.35]
+[wt 0.5]
+
+＠宮本伊織
+……横須賀か。
+[k]
+
+[messageOff]
+[charaTalk B]
+[subRenderFadeinFSSideL #B 0.35 60,-150]
+[subRenderMoveFSSideL #B 10,-250 0.35]
+[wt 0.5]
+
+＠紅玉の書
+うむ。アサシンのマスター、[r]ドロテア・コイエットの本拠地じゃ。
+[k]
+
+[charaFaceFade B 6 0.2]
+＠紅玉の書
+ドロテアは正統な魔術師であり貴族じゃ。
+[k]
+
+＠紅玉の書
+時計塔の魔術師としては、[r]至極真っ当な[#女人:にょにん]と云えよう。
+[k]
+
+[charaFace A 0]
+＠宮本伊織
+……時計塔。
+[k]
+
+[charaFaceFade B 0 0.2]
+＠紅玉の書
+南蛮の魔術師どもの総本山じゃな。
+[k]
+
+＠紅玉の書
+魔術師としての技量で語るならば、[r]由井正雪にも引けを取らぬぞい。
+[k]
+
+[messageOff]
+
+[charaFadeout J 0.6]
+[subRenderFadeout #A 0.6]
+[subRenderFadeout #B 0.6]
+[subRenderFadeout #C 0.6]
+
+[wt 0.6]
+[charaEffectDestroy T bit_talk_draw_circle01]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[wt 0.2]
+
+[subCameraOff]
+[charaLayer A normal]
+[charaLayer B normal]
+[charaLayer O normal]
+[charaLayer P normal]
+[charaLayer T normal]
+[charaScale A 1.0]
+[charaScale B 1.0]
+[charaScale O 1.0]
+[charaScale P 1.0]
+
+[charaSet B 1098284210 1 紅玉の書]
+
+[charaPut S 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マシュ
+横須賀ですか……[r]浅草からはかなり遠いですね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 23]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+でも特異点の範囲が向こうまで広がっている以上、[r]無視することも難しいかな。
+[k]
+
+[charaFace D 34]
+＠ダ・ヴィンチ
+気がかりなのは……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠紅玉の書
+……うむ。[r]遠出となると、霊脈を繋ぐのも一苦労じゃ。
+[k]
+
+[charaFaceFade B 2 0.2]
+＠紅玉の書
+そして正雪や地右衛門が[r]この隙を逃す[#筈:はず]もあるまいて。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+……うむ、なるほど。[r]要するに[#兵站:へいたん]の話か。
+[k]
+
+＠ゴルドルフ
+補給線が延びるほど、[r]戦線の維持は難しくなるからな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 34]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+背後から霊脈を断たれれば、魔力の供給が[r]不足したまま、前線で孤立してしまう……
+[k]
+
+[charaFace D 10]
+＠ダ・ヴィンチ
+陣取り合戦とはよく云ったものだね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：紅玉の書
+つまり儂らは横須賀まで霊脈を繋ぎつつ、[r]確保した霊地への襲撃にも備えねばならんのじゃ。
+[k]
+
+
+？1：正雪と地右衛門、両方を相手に？
+？2：難易度高くない？
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+＠ヤマトタケル
+一度押さえた霊脈の上ならば、[r]私は風の如く駆けられるが……
+[k]
+
+[charaFace F 11]
+＠ヤマトタケル
+限度と云うものがある。[r]私一人では、全ての霊地を守りきれまい。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：紅玉の書
+[#故:ゆえ]にこそ盈月の儀においては、[r]各陣営が同盟を結ぶことが多かった。
+[k]
+
+＠G：紅玉の書
+実際に儂らも状況に合わせて、[r]様々な陣営と共闘したものじゃ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk D]
+[charaFace D 22]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+うん。盈月の儀では、通常の聖杯戦争以上に[r]同盟関係が重要になるだろうね。
+[k]
+
+[charaFace D 10]
+＠ダ・ヴィンチ
+霊地を奪い合う戦いといい、[r]イレギュラーである[#逸:はぐ]れといい……
+[k]
+
+＠ダ・ヴィンチ
+盈月の儀は、聖杯戦争としては[r]かなり特殊みたいだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠宮本伊織
+……とは云え、どうするべきか。
+[k]
+
+＠宮本伊織
+正雪に、地右衛門。[r]いずれの陣営も共闘するのは難しい。
+[k]
+
+[charaFace A 0]
+
+＠宮本伊織
+姿を見せていない他のマスターにいたっては、[r]共闘する以前の問題だ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+＠ヤマトタケル
+となれば、残るは……
+[k]
+
+[bgmStop BGM_EVENT_190 1.0]
+
+？1：[#逸:はぐ]れのサーヴァントかな？
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_183 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+＠G：紅玉の書
+うむ！　これまでに[#友誼:ゆ う ぎ]を結んだ[r][#逸:はぐ]れの英霊たちに守りを任せる[line 3]
+[k]
+
+＠G：紅玉の書
+これが最も確実な手段じゃ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠マシュ
+吉原のスパルタクスさん、増上寺のセタンタさん、[r]上野のタマモキャットさん……
+[k]
+
+＠マシュ
+それに李書文さんも[r]協力を約束してくれました。
+[k]
+
+＠マシュ
+他にも仲間になってくれる[r][#逸:はぐ]れの方がいらっしゃれば良いのですが……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+[charaEffectStop S bit_talk_10_LowLevel]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：紅玉の書
+こちらから[#逸:はぐ]れに[r]接触してみるのも有りじゃ。
+[k]
+
+[charaCrossFade G 1098284210 3 0.2]
+＠G：紅玉の書
+もちろん面倒事に巻き込まれる[r]可能性も高いがのう。[wait charaCrossFade G]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠宮本伊織
+[#逸:はぐ]れが拠点を築くとしたら大霊地だ。
+[k]
+
+＠宮本伊織
+霊脈を繋げる時は、[r]そのことも念頭に置いておくべきだろう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠ヤマトタケル
+頼りにしているぞ、カルデアのマスター。
+[k]
+
+[charaFace F 19]
+＠ヤマトタケル
+何たってきみは、[r]サーヴァントのセンモンカだからな！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_183 1.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+
+[charaScale J 1.7]
+[charaFadein J 0.1 -100,-550]
+
+[charaSet B 1098284200 1 紅玉の書]
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_BATTLE_244 0.1]
+
+[subCameraOn 2]
+[charaLayer A sub #A]
+[charaLayer O sub #A]
+[charaLayer B sub #B]
+[charaLayer P sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask11 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask12 5 255,255,255,255]
+
+[charaDepth O 1]
+[charaDepth P 1]
+[charaDepth A 2]
+[charaDepth B 2]
+
+[charaScale A 1.0]
+[charaScale B 0.6]
+[charaScale O 1.2]
+[charaScale P 1.2]
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0.1 425,290]
+[charaFadein B 0.1 -425,280]
+[charaFadein O 0.1 -150,50]
+[charaFadein P 0.1 150,50]
+
+[charaTalk B]
+[subRenderFadeinFSSideL #B 0.35 60,-150]
+[subRenderMoveFSSideL #B 10,-250 0.35]
+[wt 0.5]
+
+＠紅玉の書
+では、眠らせておいた霊地を[r]活性化させるぞい。
+[k]
+
+[charaFaceFade B 6 0.2]
+＠紅玉の書
+霊地に接続すれば、正雪と地右衛門にも[r]こちらの動きが知れよう。
+[k]
+
+[charaFaceFade B 0 0.2]
+＠紅玉の書
+準備は良いな？[wt 0.7][charaFaceFade B 2 0.2][r]では……出陣じゃ！
+[k]
+
+
+[messageOff]
+[se ad60]
+[charaTalk A]
+[subRenderFadeinFSSideR #A 0.35 -60,-150]
+[subRenderMoveFSSideR #A -10,-250 0.35]
+[wt 0.3]
+[seStop ad60 0.2]
+[wt 0.8]
+
+[fadeout white 1.0]
+[se ad980]
+[seVolume ad980 0 0.7]
+[cueSe SE_21 21_ade546 0 0.7]
+[bgmStop BGM_BATTLE_244 1.5]
+[wait fade]
+
+[charaFadeout J 0.1]
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[wt 0.2]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[wt 0.2]
+
+[subCameraOff]
+[charaLayer A normal]
+[charaLayer B normal]
+[charaLayer O normal]
+[charaLayer P normal]
+[charaScale A 1.0]
+[charaScale B 1.0]
+[charaScale O 1.0]
+[charaScale P 1.0]
+
+[scene 10000]
+[wt 1.7]
+
+[fadein white 2.0]
+[seStop ad980 2.0]
+[cueSeStop 21_ade546 2.0]
+[wait fade]
+
+[fadeout black 0.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

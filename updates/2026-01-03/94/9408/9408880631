@@ -1,0 +1,587 @@
+
+
+
+＄94-08-88-06-3-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 25013000 1 ワンジナ]
+[charaSet B 1098257910 1 マシュ]
+[charaSet C 6008000 1 クレオパトラ]
+
+[charaSet D 2022000 1 アルテラサンタ]
+[charaSet E 4012000 1 オジマンディアス]
+[charaSet F 6028001 1 ニトクリス]
+[charaSet G 2005001 1 アタランテ]
+[charaSet H 5036001 1 アヴィケブロン]
+
+[charaSet I 1098277610 1 聖杯]
+
+[sceneSet J 143500 1]
+[sceneSet K 143500 1]
+
+
+[scene 143500]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_BATTLE_61 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.3]
+
+[se adm20]
+
+[charaEffectEdgeBlur I afeeee afeeee 6 2.0]
+
+[wt 0.5]
+[charaEffectEdgeBlurStop I]
+[wt 2.45]
+
+[charaSpecialEffect I wipeTime 0,0 1.0]
+[wt 0.6]
+[se ad595]
+[wait charaSpecialEffect I]
+[wt 1.2]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[effect bit_talk_41_fs]
+[charaScale A 1.5]
+
+[subCameraOn 2]
+
+[charaLayer D sub #A]
+[charaLayer J sub #A]
+
+
+[subCameraFilter #A maskEdge cut359_mask05 3 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask16 5 255,255,255,255]
+
+[charaScale K 1.3]
+[charaScale J 1.3]
+[charaScale D 1.3]
+[charaScale B 1.3]
+[charaScale D 1.3]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth K 1]
+
+[charaDepth B 3]
+[charaDepth D 3]
+[charaDepth A 3]
+
+[wt 0.5]
+
+[cueSe SE_22 22_ade746]
+[seVolume 22_ade746 0 0.3]
+
+[charaFace D 1]
+[charaFadein D 0.1 0,200]
+[charaFadein J 0.1 200,-50]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[charaShake A 0.05 0 3 0]
+
+＠ワンジナ
+転移した……！[r]でも近い！
+[k]
+
+[charaTalk D]
+[charaMove D 0,150 0.3]
+[charaMove J 200,-100 0.3]
+
+[subRenderFadeinFSR #A 0.2 330,-170]
+[wt 0.2]
+
+＠アルテラサンタ
+よし、見つけた。[r]これなら[line 3]む。[wt 0.5][charaFace D 0]
+[k]
+
+[messageOff]
+
+[seStop 22_ade746 0.4]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaLayer A sub #B]
+[charaLayer B sub #B]
+[charaLayer K sub #B]
+
+[subRenderFadeout #A 0.3]
+
+[effectDestroy bit_talk_41_fs]
+
+[charaShakeStop A]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+
+[charaScale B 1.1]
+[charaScale A 1.2]
+[charaScale I 0.6]
+
+[pictureFrame cut063_cinema]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.1 150,-50]
+
+[charaFace I 0]
+[charaFadein I 0.1 -250,-150]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+
+＠オジマンディアス
+……。[r]……。
+[k]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 -190,90]
+[charaFadein K 0.1 -300,-130]
+
+[subRenderFadeinFSR #B 0.2 400,-260]
+[subRenderMoveFSR #B 450,-120 0.3]
+
+[wt 0.6]
+
+＠マシュ
+オジマンディアス王が、聖杯の前に……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 -100,80]
+＠ワンジナ
+ど、どうしようマスター。[r]聖杯が……。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_BATTLE_61 1.0]
+
+[charaTalk E,A]
+[subRenderMoveFSR #B 500,0 0.5]
+[subRenderFadeout #B 0.2]
+
+[wt 1.0]
+
+[charaFace E 1]
+＠オジマンディアス
+……。[r]……フッ。
+[k]
+
+＠オジマンディアス
+是にて余の勝利は確定せり！[r]ならば良い。[#疾:と]く消え失せよ！
+[k]
+
+[messageOff]
+
+[charaTalk I]
+[se adm20]
+[charaEffectEdgeBlur I afeeee afeeee 6 2.0]
+
+[wt 0.5]
+[charaEffectEdgeBlurStop I]
+[wt 2.45]
+
+[seStop ad476 0.5]
+
+[charaSpecialEffect I wipeTime 0,0 1.0]
+[wt 0.6]
+[se ad595]
+[wait charaSpecialEffect I]
+[wt 1.2]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[pictureFrame]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+
+[charaLayer A normal]
+[charaLayer B normal]
+[charaLayer D normal]
+
+[charaScale B 1.0]
+[charaScale A 1.0]
+[charaScale D 1.0]
+
+[charaFadeout E 0.1]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ワンジナ
+って、えーーー！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠マシュ
+み、見逃した……のでしょうか？[r]オジマンディアス王、何もしませんでした。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_39 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠オジマンディアス
+なんだ、貴様たち。[r]何を呆けている。
+[k]
+
+？1：え、聖杯……見逃したの……？
+？！
+
+[charaFace E 2]
+
+＠オジマンディアス
+[f large]見ての通り！
+[k]
+
+＠オジマンディアス
+呆けている暇があるならば！[r]早々に聖杯追跡を再開するがいい、凡骨ども！
+[k]
+
+＠オジマンディアス
+王の中の王オジマンディアス、[r]元より聖杯なぞに興味はない。フッ、分からいでか！
+[k]
+
+＠オジマンディアス
+迷うな！　進め！
+[k]
+
+＠オジマンディアス
+そら[line 3]次の土地へ向かうがいい！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠ワンジナ
+！？
+[k]
+
+[charaFace A 10]
+＠ワンジナ
+よくわからないけど、[r]な、なんだか偉そうなこと言ってる！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠オジマンディアス
+余はファラオである。[r]であれば、地上に在るあらゆるモノの上に立つ。
+[k]
+
+[charaFace E 0]
+＠オジマンディアス
+貴様とて例外ではないぞ、大精霊。
+[k]
+
+＠オジマンディアス
+求めるならば、動け。進め。[r]せいぜい人のように[#じたばた]と足掻いてみせよ。
+[k]
+
+[messageOff]
+
+[charaFaceFade E 1 0.3]
+
+[wt 1.3]
+
+[charaFace E 2]
+＠オジマンディアス
+……よい！　[#此度:こたび]のすべて！[r]ファラオ・オジマンディアスの威光がすべてを許す！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠ワンジナ
+！
+[k]
+
+[charaFace A 9]
+＠ワンジナ
+よく……よくわかんないけど、[r]聖杯追いかけていいの？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠オジマンディアス
+許すと言った！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ワンジナさん。
+[k]
+
+＠マシュ
+オジマンディアス王もああ言っていますし、[r]皆さんと合流して追いかけましょう！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ワンジナ
+うん！[r]偉そうな人、ありがとー！
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_39 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[pictureFrame cut063_cinema]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_92 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+
+＠ニトクリス
+ファラオ・オジマンディアス！[r]今のは一体……？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+
+＠オジマンディアス
+無論、見逃してやったまでのこと。
+[k]
+
+＠オジマンディアス
+我らにとって、雨と風は恵みそのもの。[r]で、あるならばそれを司る大精霊というなら[line 3]
+[k]
+
+＠オジマンディアス
+[#聖杯で少しばかり遊ぶくらい]、[r][#大目に見てやるべきであろうよ]。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-50]
+
+＠ニトクリス
+……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠オジマンディアス
+さて、後は[line 3][r]そこな特別参加の英霊二騎！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 0,-50]
+
+＠アタランテ
+なんだ、ファラオ。[r]私はあっさり取り逃がしてふて腐れ気味なのだが。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+
+＠アヴィケブロン
+しょんぼり。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+
+＠オジマンディアス
+くく、残念だったな。[r]しかしその健闘には余が敬意を表してやろう。
+[k]
+
+＠オジマンディアス
+クレオパトラ！　歓待してやれ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠クレオパトラ
+承りました、ファラオ・オジマンディアス。[r]さて、アタランテ様。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠アタランテ
+ん？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+
+＠クレオパトラ
+エステに興味はおありですか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠アタランテ
+普通にないが。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠クレオパトラ
+まあまあまあ、ここは一つ。[r]まあまあまあ……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+
+＠アヴィケブロン
+閃いた。[r]アロマキャンドルで作ってみよう、ゴーレム。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+
+＠ニトクリス
+贅沢なゴーレムですね！？
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStopEnd BGM_EVENT_92 2.0]
+[wait fade]
+[soundStopAllEnd]
+[end]

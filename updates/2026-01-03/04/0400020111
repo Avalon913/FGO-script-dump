@@ -1,0 +1,359 @@
+
+
+＄04-00-02-01-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1098270100 1 カーマ]
+[charaSet B 1098270000 1 シオン]
+[charaSet C 1098270900 1 ラニ＝Ｒ]
+
+[sceneSet D 10000 1]
+[charaScale D 1.05]
+[sceneSet E 189300 1]
+
+[scene 189300]
+
+[subCameraOn 1]
+[charaLayer E sub #A]
+[subCameraFilter #A through]
+[subRenderScale #A 1.02]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaFadein E 0 0,-200]
+
+[fadein black 1.0]
+[wait fade]
+
+[subRenderFadein #A 0.4 0,0]
+
+[blur lens 0.1 2 2]
+[se ad231]
+[wt 0.5]
+
+[subRenderFadeout #A 0.5]
+[blurOff lens 1.0]
+[wt 0.5]
+
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[subCameraOff]
+[charaLayer E normal]
+[wt 0.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠カーマ
+はいはい、カーマちゃん大勝利～（棒読み）。
+[k]
+
+[charaFace A 19]
+
+＠カーマ
+……は、別にいいんですけど。[r]んんー？
+[k]
+
+？1：どうかした？
+？！
+
+[charaFace A 7]
+
+＠カーマ
+何かこう……魔力の流れ方とか身体の感覚が、[r]いつもと違うような、そうでもないような……。
+[k]
+
+[charaFace A 3]
+
+＠カーマ
+まあどうでもいっか、不快害虫は潰せたし。[r]どうします、踏みにじったりとかしておきます？
+[k]
+
+＠カーマ
+残虐非道なマスターであるアピールができますよ？[r]すごーい、かっこいいー。
+[k]
+
+？1：しません！
+？！
+
+[charaFace A 14]
+
+＠カーマ
+ちぇー。
+[k]
+
+[charaFace A 6]
+
+＠カーマ
+白眼視、孤立、からの堕落……頼れるのは私だけ……[r]そういう黄金ルートの可能性も……（ぶつぶつ）
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+？1：それよりシオン、戦闘中に何かした？
+？！
+
+＠シオン
+軽い準備運動のようなものです。お気になさらず。[r]今は、それよりも[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠C：？？？
+[&貴方:貴女]がたは……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠シオン
+少なくとも敵ではありません。
+[k]
+
+＠シオン
+敵性存在に襲われていた貴女を助ける程度の[r]知性と善性を持つということはご理解ください。
+[k]
+
+＠シオン
+そちらの怪我は？　……深くはなさそうですね。[r]治療が必要でしょうか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：？？？
+いいえ、不要です。[r]リソースと時間があれば自ら行えます。
+[k]
+
+＠C：？？？
+[#私たちは治療を第一定義とするＡＩですから]。
+[k]
+
+？1：ＡＩ……？
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.5]
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth B 2]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+[charaPut D 0,-200]
+[charaFadeTime D 0.2 0.5]
+
+＠シオン
+（やはり……）
+[k]
+
+[charaFadeout D 0.2]
+[charaFadeout B 0.2]
+[wt 0.2]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カーマ
+人工知能、って意味でしたっけ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[bgm BGM_SENGOKU_1 0.1]
+
+＠C：？？？
+はい。自ら思考し、行動し、会話する[#被造物:プログラム]。[r]それが私たちです。
+[k]
+
+＠C：？？？
+設定名称Ｒ.Ａ.Ｎ.Ｉシリーズ、タイプ[#Ｒｅｐａｉｒ:Ｒ]。[r]個体名は存在しません。
+[k]
+
+＠C：？？？
+識別番号でしたらお教えできますが、[r]その必要性はないかと推測します。
+[k]
+
+？1：Ｒ.Ａ.Ｎ.Ｉ……ラニ……？
+？！
+
+[charaFace C 5]
+
+＠ラニ＝Ｒ
+頭文字を繋げて発音し、名称とする。[r]合理的です。
+[k]
+
+＠ラニ＝Ｒ
+ゆえに我々も口語的には[r]その呼び方を使用する場合があります。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠シオン
+ＡＩとは基本的に役割のために生み出されるもの。
+[k]
+
+＠シオン
+どうやら貴女は治療がその役割のようですが、[r]治療対象は何を想定しているのですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠ラニ＝Ｒ
+それは無論、別のタイプを含めた、[r]この場にいる全てのＡＩです。
+[k]
+
+＠ラニ＝Ｒ
+皆が万全の状態で働けるよう、損傷したＡＩを[r]回復させるのが我々の使命です。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠シオン
+その、ＡＩたち全体としての目的は？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠ラニ＝Ｒ
+それも、無論、と言わせていただきます。
+[k]
+
+＠ラニ＝Ｒ
+[line 3]この世界の円滑な運営、です。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 1]
+
+＠カーマ
+……世界？[r]なんだか大きく出ましたね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠シオン
+やはり、そうですか。[r]最初から違和感はありました。
+[k]
+
+＠シオン
+明確な結論を出すには要素が足りないと[r]保留していたのですが、
+[k]
+
+＠シオン
+貴女が世界を運営するＡＩだというのなら、[r]ある程度は正解の近似値を出せそうです。
+[k]
+
+[charaFace B 6]
+
+＠シオン
+ここは[line 3]ある種の仮想世界、[r]または概念世界である。
+[k]
+
+＠シオン
+そうですね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ラニ＝Ｒ
+はい。我々がこの世界について知っていることは[r]そう多くはありませんが、
+[k]
+
+＠ラニ＝Ｒ
+ここが『外』でどう呼ばれているのか、は[r]基本情報としてインストールされています。
+[k]
+
+[bgmStop BGM_SENGOKU_1 1.5]
+
+[messageOff]
+[cameraMove 1.0 0,-10 1.05]
+[wt 1.5]
+[charaFace C 0]
+
+＠ラニ＝Ｒ
+[#ペーパームーン]。
+[k]
+
+＠ラニ＝Ｒ
+それが、私たちＡＩが運営しているシステム、[r]すなわちこの世界の名称です[line 3]
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

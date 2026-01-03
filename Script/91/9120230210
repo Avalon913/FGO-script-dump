@@ -1,0 +1,1413 @@
+
+
+＄91-20-23-02-1-0
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 2023001 1 モリアーティ]
+[charaSet B 98001000 1 マシュ]
+[charaSet C 9005001 1 ホームズ]
+
+[charaSet D 2023001 1 モリアーティ_上レイヤー]
+[charaSet E 98002000 1 フォウ]
+[charaSet F 1098123200 1 ゴルドルフ]
+
+[sceneSet G 153200 1]
+[charaScale G 1.2]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[sceneSet I 154800 1]
+[charaScale I 1.4]
+[sceneSet J 154800 1]
+[charaScale J 1.2]
+
+[charaSet K 2023001 1 モリアーティ_アップ用]
+
+[scene 10000]
+
+[subCameraOn]
+[charaLayer D sub]
+[subCameraFilter #A through]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_91 0.1]
+
+＠
+ふむ、死んだか。
+[k]
+
+＠
+最初に浮かび上がったのは、[r]何ともありきたりの感想だった。
+[k]
+
+＠
+大悪党を自認する私にとっては、[r]全くもって[#しまり]のない話である。
+[k]
+
+＠
+[line 3]ただし。[r]場所はよりにもよってあの滝。
+[k]
+
+＠
+しかも落下しながらで、[r]死んだ瞬間を誰も確認できていない。
+[k]
+
+＠
+……と、なれば。[r]ふむ。
+[k]
+
+＠
+カルデアの[&彼:彼女]らの表情が、[r]希望に満ちているのも当然だろう。
+[k]
+
+＠
+何しろ、一度は生き延びた滝だ。[r]私はあそこで死んだんだけどネ！
+[k]
+
+＠
+とはいえ、楽観的すぎるのも良くはない。[r][&彼:彼女]らはまだまだ未熟。釘を刺しておくべきか[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_91 1.0]
+
+[wt 2.0]
+
+[cueSe SE_21 21_ade581]
+[effect bit_talk_spotlight -40,0]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 1.5]
+[bgm BGM_EVENT_71 0.1]
+
+
+＠モリアーティ
+という訳で、まずは序幕だよ諸君。[r]題名は『わるわる教授の大誤認』あたりか。
+[k]
+
+[charaFace A 3]
+
+＠モリアーティ
+え？[r]わるわる教授って？
+[k]
+
+[charaFace A 4]
+
+＠モリアーティ
+……いや、マシュ君がそう言うものだからネ……。[r]若い私、どんだけやらかしたのサ。
+[k]
+
+[charaFace A 0]
+
+＠モリアーティ
+さてさて。[r]今からお目に掛けますお話は[line 3]
+[k]
+
+＠モリアーティ
+とある爺さんが調子こいてカウンターを[r]お喰らいになるというモノでございます。
+[k]
+
+[charaFace A 1]
+
+＠モリアーティ
+老害が一杯食わされるとか、[r]そういうのお好きでしょ？
+[k]
+
+[charaFace A 2]
+
+＠モリアーティ
+だって私も好きだからネ！
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_EVENT_71 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_spotlight]
+
+[charaFadeout A 0.1]
+[scene 153200]
+
+[charaTalk depthOff]
+[charaDepth H 5]
+[charaDepth C 3]
+[charaDepth B 4]
+[charaDepth A 2]
+[charaDepth G 1]
+[charaFadein G 0.1 -100,-200]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade284]
+[wt 1.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+？1：ここにいるのー？
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 100,0]
+[wt 0.4]
+
+＠マシュ
+シミュレーター内でお話がある、[r]とのことでしたが……。
+[k]
+
+[charaFace B 6]
+
+＠マシュ
+あ……！
+[k]
+
+[messageOff]
+[charaMove B 250,0 0.8]
+[charaMove G 50,-200 0.8]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadeinFSL C 0.4 0]
+[wt 0.4]
+
+＠ホームズ
+こんにちは！[r]地獄の底から蘇ったよ！
+[k]
+
+[charaFace B 24]
+
+＠マシュ
+……。[r]……。
+[k]
+
+
+？1：教授ー
+？！
+
+[charaFace B 7]
+
+＠マシュ
+……モリアーティ教授。[r]さすがにそれは悪趣味かと。
+[k]
+
+[messageOff]
+[se ad236]
+[charaPutFSL H 0]
+[charaEffect H bit_talk_smoke_pon]
+[wt 0.3]
+[charaFadeout C 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadeinFSL A 0.1 0]
+[wt 1.0]
+
+＠モリアーティ
+そうかネ？
+[k]
+
+[charaFace A 5]
+
+＠モリアーティ
+今から私の言う話よりは、[r]まだまだ健全だと思うがネ？
+[k]
+
+[charaFace B 6]
+
+＠マシュ
+……？
+[k]
+
+[bgmStop BGM_EVENT_77 0.2]
+[messageOff]
+[se ad793]
+[charaTalk D]
+[cameraFilter gray]
+[wt 1.0]
+[charaScale D 0.8]
+[charaFace D 2]
+[charaFadeinFSSideL D 0.1 -300,-150]
+[subRenderFadein 0.1 0,0]
+
+
+
+＠D：モリアーティ
+はい、ここの私でストップ！[r]見て欲しい、このドヤ顔を。ドヤニヤケヅラを。
+[k]
+
+[charaFace D 4]
+
+＠D：モリアーティ
+えー、このアラフィフが何をやろうと[r]しているのかと言うと……。
+[k]
+
+＠D：モリアーティ
+今明かされる衝撃の真実、[r]みたいなネタをワクワクと開帳するところだヨ。
+[k]
+
+[charaFace D 2]
+
+＠D：モリアーティ
+さあ、この後のみっともない私を見て、[r]一同大爆笑しよう！
+[k]
+
+[messageOff]
+[se ad793]
+[subRenderFadeout 0.2]
+[wt 0.5]
+[cameraFilter normal]
+[bgm BGM_EVENT_48 0.1]
+
+[charaFace A 0]
+
+＠モリアーティ
+[line 3]シャーロック・ホームズについての話だヨ。
+[k]
+
+＠モリアーティ
+確かにあの名探偵は、かつてライヘンバッハの滝で[r]私と戦い、落下して死んだことになり[line 3]
+[k]
+
+
+＠モリアーティ
+ところがどっこい、[r]実は生きていたと[#宣:のたま]って帰還した。
+[k]
+
+＠モリアーティ
+そう、だから今回も生きて帰ってくるに違いない。[r]何故なら彼はライヘンバッハの滝から落ちたからだ。
+[k]
+
+[charaFace A 5]
+
+＠モリアーティ
+……甘くないかネ？
+[k]
+
+？1：……！
+？！
+
+＠マシュ
+モリアーティ教授……。
+[k]
+
+＠モリアーティ
+ライヘンバッハで彼は何故生き残ったか？[r]技術か、あるいは人々がそう望んだからか。
+[k]
+
+＠モリアーティ
+いずれにせよ、それは奇跡だ。[r]何度も起こり得る事象ではない。
+[k]
+
+＠モリアーティ
+[line 3]それを、分かっているのかナ？
+[k]
+
+[messageOff]
+[se ad793]
+[charaTalk D]
+[cameraFilter gray]
+[wt 0.5]
+[charaFace D 0]
+[subRenderFadein 0.1 0,0]
+
+＠D：モリアーティ
+はい一時停止。[r]凄いですネ、この眼光。
+[k]
+
+＠D：モリアーティ
+あたかも
+[k]
+
+[charaFace D 1]
+
+＠D：モリアーティ
+『自分は全てお見通しだゼ？』[r]とか言いたそうですネ！
+[k]
+
+[charaFace D 2]
+
+＠D：モリアーティ
+はい！[r]言いたかったんＤＥＡＴＨ！！
+[k]
+
+[charaFace D 4]
+
+＠D：モリアーティ
+……死にたいけど、ひとまず戻るね。
+[k]
+
+[messageOff]
+[se ad793]
+[subRenderFadeout 0.2]
+[wt 0.5]
+[cameraFilter normal]
+
+？1：[line 3]もちろん、分かっているよ
+？！
+
+＠モリアーティ
+だろう？
+[k]
+
+[bgmStop BGM_EVENT_48 0.5]
+[charaFace A 3]
+
+＠モリアーティ
+……。[r]……えっ。
+[k]
+
+[charaFace B 0]
+
+＠マシュ
+はい。
+[k]
+
+＠マシュ
+それに関しましては、[r]ゴルドルフ新所長からもきっちりと。
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+
+[fadeout white 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+
+[scene 132900]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_123 0.1]
+
+＠ゴルドルフ
+あー……経営顧問についてなのだが。
+[k]
+
+[charaFace F 10]
+
+＠ゴルドルフ
+無論、我々は彼の生存を信じ、[r]あくまで未帰還の状態だと認識している。
+[k]
+
+[charaFace F 12]
+
+＠ゴルドルフ
+……とはいえ、ライヘンバッハの滝から[r]落下して生還する。
+[k]
+
+＠ゴルドルフ
+あれは、経営顧問にとっても[r]ただ一度きりの奇跡だったのかもしれない。
+[k]
+
+[charaFace F 4]
+
+＠ゴルドルフ
+もしかすると、もしかすると[line 3]
+[k]
+
+＠ゴルドルフ
+未帰還のまま、ということも[r]有り得るだろう。
+[k]
+
+[charaFace F 15]
+
+＠ゴルドルフ
+だが、我々にできることは無い。[r]精々、経営顧問を信じることだけだ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……はい！
+[k]
+
+？1：もちろん！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+うむ。
+[k]
+
+[charaFace F 11]
+
+＠ゴルドルフ
+帰還の暁には、[r]勲章でも授与すべきかな……？
+[k]
+
+？1：派手にパレードしましょう
+
+[charaFace F 2]
+
+＠ゴルドルフ
+ははは、それはいい。[r]さしもの経営顧問も面食らうこと請け合いだ！
+[k]
+
+？2：美味しい料理でも
+
+[charaFace F 1]
+
+＠ゴルドルフ
+なるほど料理。[r]それ、誰が作るの？　もしや私？
+[k]
+
+？！
+
+[charaFace F 10]
+
+＠ゴルドルフ
+……コホン。
+[k]
+
+[charaFace F 0]
+
+＠ゴルドルフ
+まあ、ともかく。[r]そういう訳だ。
+[k]
+
+＠ゴルドルフ
+経営顧問がいないからといって、[r]羽目を外すんじゃあないですよ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠二人
+はい！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_123 1.0]
+[cueSe SE_22 22_ad1178]
+[seVolume 22_ad1178 0 0.6]
+[fadeout white 1.0]
+[wait fade]
+[scene 153200]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFace B 7]
+[charaFadeinFSL A 0.1 0]
+[charaFadeinFSR B 0.1 2]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+＠モリアーティ
+……。[r]……。
+[k]
+
+？1：[line 3]という訳で
+？！
+
+[bgm BGM_EVENT_7 0.1]
+[charaFace B 17]
+
+＠マシュ
+わたしも先輩も、[r]その辺はしっかりと注意されていまして……。
+[k]
+
+[charaFace B 13]
+
+＠マシュ
+でも、モリアーティ教授の助言も[r]正しいですね。
+[k]
+
+[charaFace B 1]
+
+＠マシュ
+わたしたちも、ホームズさんの帰還を信じつつ、[r]がんばろうと思います！
+[k]
+
+？1：アドバイスありがとう！
+？！
+
+[messageOff]
+[se ad793]
+[charaTalk D]
+[cameraFilter gray]
+[wt 0.5]
+[charaFace D 4]
+[subRenderFadein 0.1 0,0]
+
+＠D：モリアーティ
+はいココ。[r]ココでトドメを刺されたの、私。
+[k]
+
+？1：いやその……なんで……？
+？！
+
+[charaFace D 0]
+
+＠D：モリアーティ
+理由は三つ。
+[k]
+
+＠D：モリアーティ
+『冷徹で[#賢:さか]しい老人として忠告したつもりが、[r]　出遅れだったことが発覚した』
+[k]
+
+＠D：モリアーティ
+『ホームズが死亡したという情報について、[r]　私自身が納得してないことを理解した』
+[k]
+
+[charaFace D 4]
+
+＠D：モリアーティ
+『というか、もう言うことが無くなった』
+[k]
+
+[charaFace D 2]
+
+＠D：モリアーティ
+以上！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[cameraFilter normal]
+[subRenderFadeout 0.1]
+[wt 1.0]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[scene 145900]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_TEITO 0.1]
+
+＠モリアーティ
+という訳さ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+なるほど……。
+[k]
+
+[charaFace B 0]
+
+＠マシュ
+それで、あの時モリアーティ教授は、
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[scene 153200]
+
+[fadein white 1.0]
+[wait fade]
+＠モリアーティ
+フ……フフフ……。
+[k]
+
+[messageOff]
+[charaMove A 100,0 0.6]
+[charaFadeout A 0.6]
+[wt 1.2]
+
+[cueSe SE_22 22_ad1178]
+[seVolume 22_ad1178 0 0.6]
+[fadeout white 0.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+[scene 145900]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+
+＠マシュ
+このように謎の笑いを浮かべつつ、[r]すーっと消えていったのですね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠モリアーティ
+ホッホッホ。[r]マシュ君は人の心を抉るのが上手くなったねぇ。
+[k]
+
+[charaFace A 4]
+
+＠モリアーティ
+（しんみりしている）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+す、すみません！[r]そのつもりはなかったのですが……。
+[k]
+
+？1：ここは笑ってあげるべきだ
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠モリアーティ
+そうだね！
+[k]
+
+[charaFace A 2]
+
+＠モリアーティ
+もう思い切り受けを取らないと[r]やってられないんだヨ！
+[k]
+
+[charaFace A 0]
+
+？2：モリアーティ、大丈夫？
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠モリアーティ
+平気。
+[k]
+
+＠モリアーティ
+落ち込んだりもするけれど、[r]私はとても元気です？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォーウ……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+？！
+
+＠モリアーティ
+[line 3]さて、と。[r]まあ、切り替えていくとして。
+[k]
+
+＠モリアーティ
+なぜ私が、先ほどの序幕のような[r]恥ずかしい小芝居を打ったのかというと、だ。
+[k]
+
+[bgmStop BGM_TEITO 1.0]
+
+＠モリアーティ
+……。[r]……。
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgm BGM_EVENT_155 0.1]
+[charaFace A 4]
+
+＠モリアーティ
+……やはり衝撃だったのかねェ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……。[r]……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：モリアーティは知ってたの？
+？！
+
+[charaFace A 0]
+
+＠モリアーティ
+彼が『異星の神』の使徒だった、[r]ということなら答えはイエスでありノーだ。
+[k]
+
+＠モリアーティ
+……恐らく、間違いなく、そうだという論理と、[r]違うはずだという確信。
+[k]
+
+＠モリアーティ
+確信は論理に容易く敗北するが、[r]人は時に論理より確信を取る。
+[k]
+
+[charaFace A 1]
+
+＠モリアーティ
+いやあ、私も中々どうして[r]人間らしいと思わないカイ？
+[k]
+
+？1：思う
+[branch select01]
+
+？2：思わない……かなぁ……
+[branch select02]
+
+？！
+
+[label select01]
+
+＠モリアーティ
+そりゃドーモ！
+[k]
+
+[charaFace A 2]
+
+＠モリアーティ
+ああ、恥ずかしい[#厭:いと]わしい。[r]これが歳を取るってことだヨ。
+[k]
+
+
+？1：教授は確信より論理を取ると思ってた
+？！
+
+[charaFace A 1]
+
+＠モリアーティ
+私はほぼ全て。
+[k]
+
+＠モリアーティ
+自己も含めて[#ほぼ]あらゆる事柄を、[r]論理で認識しているとも。
+[k]
+
+[charaFace A 0]
+
+＠モリアーティ
+……シャーロック・ホームズ以外はネ。
+[k]
+
+[bgmStop BGM_EVENT_155 1.0]
+[branch select_end]
+
+
+[label select02]
+
+[charaFace A 4]
+
+＠モリアーティ
+ひっどーい。[r]マシュ君。どう思うかネ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+教授は良くも悪くも教授です。
+[k]
+
+＠マシュ
+わたしにはそれ以上のことは、[r]量りかねます。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠モリアーティ
+うーん、マシュ君らしい回答だ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい……申し訳ありません。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠モリアーティ
+ああ、いや。[r][#揶揄:からか]っただけなので気にせず気にせず。
+[k]
+
+[bgmStop BGM_EVENT_155 1.0]
+[branch select_end]
+
+[label select_end]
+
+
+＠モリアーティ
+[line 3]さて。
+[k]
+
+＠モリアーティ
+という訳で序幕が終わったので、[r]そろそろ次の幕に行きたいのだが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+次……ですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠モリアーティ
+うむ。
+[k]
+
+＠モリアーティ
+序幕ではみっともないところを見せたが、[r]次幕では良いところを見せたいと思うココロ。
+[k]
+
+？1：何かするの？
+？！
+
+[charaFace A 1]
+
+＠モリアーティ
+シミュレーター、背景切り替え。[r][line 3]ライヘンバッハ、よろしくゥ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_155 1.0]
+[cueSe SE_22 22_adm96]
+[wipeout circleIn 0.8 1.0]
+[wait wipe]
+
+
+[charaFadeout A 0.1]
+[cameraMove 0.1 0,0 1.01]
+
+[scene 10000]
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+[scene 154800]
+[charaFadein I 0.1 40,-430]
+[wt 1.5]
+
+
+[fadein black 1.0]
+[cueSe SE_22 22_ad1176]
+[seVolume 22_ad1176 0 0]
+[seVolume 22_ad1176 1.0 0.3]
+[charaMove I -40,-430 5.0]
+[wait fade]
+[wt 3.0]
+[charaFadeout I 1.0]
+[seStop 22_ad1176 1.0]
+[wt 1.5]
+
+[bgm BGM_MAP_91 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠モリアーティ
+うーん、滝の音を聞いているだけで、[r]ちょっとくらくらするネ……。
+[k]
+
+？1：歳なんだから無茶せず……
+
+[charaFace A 2]
+
+＠モリアーティ
+まだ若い！[wt 0.8][charaFace A 4][r]……すみません年寄りです。
+[k]
+
+？2：トラウマ？
+
+[charaFace A 4]
+
+＠モリアーティ
+かなりのね。[r]何しろ死に場所だからナー。
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠モリアーティ
+しかし……
+[k]
+
+＠モリアーティ
+ここに来て、[#若い私:モリアーティ]が[r]この場所を決戦地に決めたのもよく理解できた。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+と仰いますと……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠モリアーティ
+どうも話を聞く限り、若い私とこの私は、[r]時系列が連続している感覚がない。
+[k]
+
+＠モリアーティ
+ホラ、よくあるだろう？
+[k]
+
+＠モリアーティ
+召喚されたサーヴァントには、かつて特異点や異聞帯で[r]遭遇した際の記憶がとんとないってコト。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい。[r]人によってまちまちですが……。
+[k]
+
+[charaFace B 7]
+
+＠マシュ
+『本棚の本で自分の行為を知るような感覚』[r]『知らない自分が出ている映像を見ている感覚』
+[k]
+
+＠マシュ
+あるいは、本当にまったく欠落している方も。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠モリアーティ
+それと同じで、若い私には年寄りの私という概念が。[r]私には[#若い私という概念]が、消えている。
+[k]
+
+[charaFace A 2]
+
+＠モリアーティ
+なんなら、私は老人で生まれたとすら[r]考えていたとも！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠マシュ
+さすがにそれは……。[r]子供の頃の記憶とか、ないのでしょうか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠モリアーティ
+ないない。[r]不要だしなァ、サーヴァントにそんなの……。
+[k]
+
+
+[charaFace A 0]
+
+＠モリアーティ
+もっとも、これは私個人の感覚だ。[r]他のサーヴァントはまた違うのかもしれない。
+[k]
+
+＠モリアーティ
+[line 3]さて。[r]第二幕だが、もう少し論理について語ろうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+論理……。
+[k]
+
+[messageOff]
+[charaScale K 1.2]
+[charaScale J 1.2]
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaDepth J 3]
+[charaDepth K 4]
+[charaDepth I 5]
+
+[charaTalk off]
+[charaFace K 0]
+[charaFadein K 0.6 -150,0]
+[charaFadein J 0.6 100,-250]
+[charaMove K -130,0 1.0]
+[charaMove J 120,-250 1.0]
+[wt 1.2]
+
+＠モリアーティ
+そう。
+[k]
+
+＠モリアーティ
+この一連の地球白紙化事件、[r]謎が数多く残っている。
+[k]
+
+＠モリアーティ
+……それはいい。[r]今回、その謎について考える訳ではない。
+[k]
+
+＠モリアーティ
+[#謎があるから名探偵は帰ってくる]。[r]そう言っていたネ、君たちは。
+[k]
+
+[messageOff]
+[charaFace B 6]
+[wt 0.2]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.8]
+
+＠モリアーティ
+では、この可能性を考えたことは？[r][#従って次に召喚されるのは違う名探偵だ]。
+[k]
+
+[messageOff]
+[charaFadeout K 0.4]
+[charaFadeout J 0.4]
+[wt 0.5]
+
+
+＠マシュ
+……！
+[k]
+
+[messageOff]
+[charaFadein K 0.4 -130,0]
+[charaFadein J 0.4 120,-250]
+
+＠モリアーティ
+神父なり、老人なり、思考する機械なり、[r]あるいはホームズより[#旧:ふる]いオランウータンのアイツなり。
+[k]
+
+＠モリアーティ
+現実においても、フランスにはヴィドックがいる。[r]アメリカならピンカートン……。
+[k]
+
+＠モリアーティ
+召喚されない可能性は、ないとは言えない。[r]だろう？
+[k]
+
+＠モリアーティ
+仮にホームズが[#消滅したとして]、[r]彼らが召喚されたなら[line 3]
+[k]
+
+＠モリアーティ
+さて、ホームズ生還の可能性は減った、[r]あるいは消えたと呼べるのかな？
+[k]
+
+[messageOff]
+[charaFace B 15]
+[charaFadeout K 0.4]
+[charaFadeout J 0.4]
+[wt 0.5]
+
+＠マシュ
+それは[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：そうじゃない……と思う
+？！
+
+[charaFace A 2]
+
+＠モリアーティ
+はいせいかーい！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+そ、そうなのですか？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFace K 1]
+[charaFadein K 0.4 -130,0]
+[charaFadein J 0.4 120,-250]
+[charaMove K -80,0 20.0]
+[charaMove J 170,-250 20,0]
+
+＠モリアーティ
+そう。[r]当たり前のことをさらりと確認しよう。
+[k]
+
+[charaFace K 0]
+
+＠モリアーティ
+ホームズには名探偵とは別にもう一つの、[r]非常に重要な側面が存在する。
+[k]
+
+＠モリアーティ
+[#証人]だ。
+[k]
+
+＠モリアーティ
+彼は『異星の神』の使徒である以上、[r]何らかの形で、それと関わった。
+[k]
+
+＠モリアーティ
+そして、『異星の神』がどんな存在であっても、[r]論理的な思考が備わっていることは確実だ。
+[k]
+
+＠モリアーティ
+ホームズより優れた名探偵が存在する、[r]と仮定したとしても[line 3]
+[k]
+
+＠モリアーティ
+[#彼が当事者であることに変わりはない]。
+[k]
+
+＠モリアーティ
+ならば、ホームズは探偵であると同時に[r]証人でなければならないのだ。
+[k]
+
+＠モリアーティ
+つまり、いずれにしてもホームズの役割は[r]終わってなどいない。
+[k]
+
+[charaFace K 1]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠モリアーティ
+謎解きを他所の探偵なり誰なりがやったところで、[r]彼の重要性が失われることはないのサ。
+[k]
+
+[messageOff]
+[charaFadeout K 0.4]
+[charaFadeout J 0.4]
+[wt 0.5]
+
+＠マシュ
+なるほど……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠モリアーティ
+[line 3]ふぅ。
+[k]
+
+＠モリアーティ
+ようやく序幕の失態から、[r]抜け出せたようだ……。
+[k]
+
+[charaFace A 0]
+
+＠モリアーティ
+まあ、君たちもいずれこの疑問に突き当たり、[r]自己解決もできただろうが……。
+[k]
+
+[charaFace A 1]
+
+＠モリアーティ
+その疑問に突き当たるのが、[r]敵と相対している時とかだと困るからネ。
+[k]
+
+＠モリアーティ
+ここで乗り越えておいても、[r]まあ問題はないだろう。
+[k]
+
+[messageOff]
+[bgm BGM_MAP_91 1.0 0.4]
+[charaFadein I 1.0 0,-380]
+[cueSe SE_22 22_ad1176]
+[seVolume 22_ad1176 0 0]
+[seVolume 22_ad1176 1.0 0.3]
+[charaMove I 0,-430 6.0]
+[wt 1.0]
+[charaFace K 0]
+[charaFadein K 0.1 0,0]
+[charaFadein J 0.1 0,-250]
+[wt 4.0]
+[seStop 22_ad1176 1.0]
+[charaFadeout I 1.0]
+[bgm BGM_MAP_91 1.2 1.0]
+[wt 1.2]
+[cameraMove 10.0 0,0 1.07]
+
+＠モリアーティ
+さて、問題はここからだ。[r]つまりは終幕。
+[k]
+
+＠モリアーティ
+シャーロック・ホームズについての話が終わったのなら、[r]当然[line 3]残る私の話となる。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_91 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

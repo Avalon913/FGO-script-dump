@@ -1,0 +1,674 @@
+
+
+＄94-09-33-05-4-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3051911 1 サンチョ]
+[charaSet B 1098287200 1 シラノ]
+[charaSet C 1052000 1 シャルルマーニュ]
+[charaSet D 4004001 1 アストルフォ]
+[charaSet E 5025001 1 エジソン]
+[charaSet F 3051901 1 ドン・キホーテ]
+[charaFilter F silhouette 00000080]
+[charaSet G 25004000 1 楊貴妃]
+[charaSet H 1098234300 1 クラス・アーチャー]
+[charaSet I 1098234300 1 クラス・アーチャー（演出用）]
+[charaSet J 3036001 1 ブラダマンテ]
+[charaSet K 1043000 1 ローラン]
+
+[sceneSet O 210001 1]
+[charaScale O 1.4]
+[sceneSet P 209700 1]
+[charaScale P 1.4]
+[sceneSet Q 10000 1]
+[charaScale Q 1.4]
+[sceneSet S 209800 1]
+[charaScale S 1.4]
+[sceneSet T 209800 1]
+[charaScale T 1.4]
+
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用2]
+[charaSet X 98115000 1 エフェクト用3]
+
+[charaPut V 1]
+[charaEffect V bit_sepia01_depth_fs]
+
+[scene 210001]
+
+
+[subCameraOn 1]
+[charaLayer W sub #A]
+[charaLayer X sub #A]
+[charaLayer Q sub #A]
+
+[subCameraFilter #A normal]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth Q 1]
+[charaDepth W 2]
+[charaDepth X 3]
+
+[charaScale W 1.0]
+[charaScale X 1.0]
+[charaPut W 1]
+[charaEffect W bit_talk_20_remake]
+[charaPut X 1]
+[charaEffect X bit_sepia01_depth_fs]
+
+[charaScale Q 1.2]
+[charaFadein Q 0.1 0,-260]
+
+
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth O 2]
+[charaDepth P 3]
+[charaDepth F 4]
+
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[charaScale O 1.2]
+[charaFadein O 0.1 50,-260]
+
+[charaMove O -50,-260 40.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_MAP_10 0.1]
+
+＠
+[line 3]ふと。[#シラノ]は、幸福だったのだろうかと思う。
+[k]
+
+＠
+愛に生き、愛に苦しみ、愛を求めた。
+[k]
+
+＠
+その癖、自分の容姿に苦しんでロクサーヌに[r]愛を告白できなかった。
+[k]
+
+＠
+女には愛されなかった、母親にも愛されなかった。[r]だが[line 3]
+[k]
+
+＠
+[charaFace F 2]
+[charaFadein F 1.0 -50,0]
+[charaFadein P 1.0 -50,-260]
+[charaMove F 50,0 40.0]
+[charaMove P 50,-260 40.0]
+それでも、シラノは最後に『心意気だ！』と[r]叫んで崩れ落ちた。
+[k]
+
+＠
+観客は彼の激動たる運命に喝采する。[r]涙する。
+[k]
+
+＠
+ああ、でも。俺は……。[r]幸福な姿を見てみたい。
+[k]
+
+＠
+そう思ったんだよ。何しろ俺のことだからな。[r]だから、聖杯に願おうとした。
+[k]
+
+[subRenderFadein #A 1.0 0,0]
+[subCameraMove #A 40.0 0,0 1.2]
+
+＠
+でも、そこで踏み[#止:とど]まってしまった。
+[k]
+
+＠
+直前になって、いやそれは図々しいかもな。[r]……とか考えてしまった。
+[k]
+
+＠
+だって、シラノという男は悲劇であるが故に、[r]人の心を打った。
+[k]
+
+＠
+だとしたら、俺という人間が[r]幸福な結末を望むのは筋違いじゃないか？
+[k]
+
+[charaFadeout O 0.1]
+[charaFadeout F 0.1]
+[charaFadeout P 0.1]
+＠
+[line 3]そんなことを考えていたせいで、[r]俺は最悪の選択肢を選んだ。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.8]
+[wt 1.2]
+
+＠B：？？？
+『俺が納得のいく[line 3][r]　シラノ・ド・ベルジュラックの幸福な結末が欲しい』
+[k]
+
+[messageOff]
+[wt 0.7]
+
+＠
+ああ、まったく。最悪の願いだ。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_MAP_10 2.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaPut V 2000,2500]
+[charaEffectDestroy V bit_sepia01_depth_fs]
+[charaFadeout Q 0.1]
+[charaPut W 2000,2500]
+[charaEffectDestroy W bit_talk_20_remake]
+[charaPut X 2000,2500]
+[charaEffectDestroy X bit_sepia01_depth_fs]
+[subCameraOff]
+[charaLayer W normal]
+[charaLayer X normal]
+[charaLayer Q normal]
+[charaScale W 1.0]
+[charaScale X 1.0]
+[charaScale Q 1.0]
+
+[scene 209800]
+
+[charaSet B 1098287240 1 シラノ]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+[bgm BGM_EVENT_5 0.1]
+
+？1：最悪の……願い？
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠サンチョ
+……。[r]……。
+[k]
+
+＠サンチョ
+もしかして、ですが。
+[k]
+
+[charaFace A 5]
+＠サンチョ
+この聖杯はシラノ様の納得がいかなければ、[r][#芝居を元の流れに戻そうとするのですか]？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠シラノ
+そうだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠サンチョ
+つまりそれが、先ほどの敵という訳ですね。
+[k]
+
+＠サンチョ
+シラノ様は先ほどの脚本に納得がいかなかった。[r]だから、聖杯は[#願いを叶えるためにやり直した]、と。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠シラノ
+はい……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠シャルルマーニュ
+なるほど。[r]それで俺が生き返ったのも説明がつくな。
+[k]
+
+＠シャルルマーニュ
+アレが殺害したのは、あくまで脚本なんだ。[r]だから、全てやり直し。
+[k]
+
+＠シャルルマーニュ
+聖杯は願いを叶えたんじゃなくて、[r]叶えようとして失敗している……という感じか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アストルフォ
+でもさー、どうして願いを変更した訳？[r]だって、シラノって[#あの]シラノなんでしょ？
+[k]
+
+[charaFace D 4]
+＠アストルフォ
+だったら死んじゃう未来を変更したい、って[r]普通は思うよね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaSet B 1098287200 1 シラノ]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠シラノ
+……俺は、違うんだよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アストルフォ
+シラノじゃないの？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠シラノ
+いや、シラノだ。シラノだが[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.5]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠シャルルマーニュ
+……もしかして、だが。
+[k]
+
+＠シャルルマーニュ
+アンタは『シラノ・ド・ベルジュラック』の[r]シラノじゃなくて……。
+[k]
+
+＠シャルルマーニュ
+[#本人か]？
+[k]
+
+？1：本人？
+
+[bgm BGM_MAP_41 0.1]
+
+[charaFace C 5]
+＠シャルルマーニュ
+『シラノ・ド・ベルジュラック』に出てくるシラノは、[r]同名のモデルがいるって話、最初にしただろ？
+[k]
+
+＠シャルルマーニュ
+鼻の大きさ以外は[line 3]もしかしたら、[r]鼻の大きさすらも……と思わせる人間が、だ。
+[k]
+
+？2：もしかして……
+
+[bgm BGM_MAP_41 0.1]
+
+[charaFace C 0]
+＠シャルルマーニュ
+そう。演劇『シラノ・ド・ベルジュラック』の[r]主人公のモデルとなったシラノ・ド・ベルジュラック。
+[k]
+
+＠シャルルマーニュ
+それが、アンタの[#真名:しょうたい]か。
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠アストルフォ
+[FFFFFF]？　？　？[-][r]シラノとシラノは違うの？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaSet B 1098287210 1 シラノ]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠シラノ
+そりゃあ違うとも！
+[k]
+
+[charaCrossFade B 1098287270 0 0.3]
+＠シラノ
+世界中に愛された勇ましく、愚かしく、[r]悲劇的な『シラノ・ド・ベルジュラック』の彼と！[wait charaCrossFade]
+[k]
+
+[charaCrossFade B 1098287260 0 0.3]
+＠シラノ
+ありふれた作家だった俺とでは、[r]想像と現実の垣根を越えて、格が違う！[wait charaCrossFade]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンチョ
+『[#日月両世界旅行記:じつげつりょうせかいりょこうき]』は、広く親しまれているのでは？[r]他にも私が知る限り、沢山の本を執筆されています。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet B 1098287240 1 シラノ]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠シラノ
+今となっちゃあ、読む人間も少ないさ。[r]古典のＳＦ小説程度の扱いだ。
+[k]
+
+[charaCrossFade B 1098287200 0 0.3]
+＠シラノ
+第一、『シラノ・ド・ベルジュラック』の鼻の大きな[r]シラノが実在してたって、知ってた奴はいたか？[wait charaCrossFade]
+[k]
+
+＠シラノ
+そんなのよりも、『シラノ・ド・ベルジュラック』[r]っていう物語の方が遙かに人気だろう？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠シャルルマーニュ
+想像上の物語の方が、現実よりも遙かに格上、か。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaSet B 1098287210 1 シラノ]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠シラノ
+そういうこと！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠エジソン
+しかし！　それでは、君が納得する結末とは、[r]一体どういうものなのかね！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet B 1098287200 1 シラノ]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠シラノ
+つまり[line 3]
+[k]
+
+[charaCrossFade B 1098287220 0 0.3]
+＠シラノ
+『俺が認めるほどに論理的』『俺が認めるほどに幸福的』[r]『俺が認めるほどに驚異的』[wait charaCrossFade]
+[k]
+
+＠シラノ
+そんな結末だ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠エジソン
+[f large]無[messageShake 0.05 4 3 0.3]理だ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaFilter F normal]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠ドン・キホーテ
+……シラノ殿。ワシが思うに、それは難しい。
+[k]
+
+＠ドン・キホーテ
+長きに渡って愛され、親しまれてきた作品の結末を[r]変えて、なおかつそれを認めるなど[line 3]
+[k]
+
+[charaFace F 0]
+＠ドン・キホーテ
+論理も、感情も、認めることはできますまいよ。[r]まして、貴公がモデルなのですから。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaSet B 1098287240 1 シラノ]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠シラノ
+……そうだよなあ。そうなんだよなあ。[r]どうして願っちまったんだろうなあ。
+[k]
+
+[charaCrossFade B 1098287230 0 0.3]
+＠シラノ
+という訳で、俺はどうしたらいいのかわからない。[r]俺の願いのせいで、人類史が[#歪:ゆが]んでしまうなど……！[wait charaCrossFade]
+[k]
+
+＠シラノ
+何度も繰り返し繰り返し、『シラノ・ド・ベルジュラック』[r]を演じていれば、何か変わるかと思ったが[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠シャルルマーニュ
+聖杯の顕現兆候は見られていたからな。[r]やり方は間違ってはいなかったが……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaSet B 1098287230 1 シラノ]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠シラノ
+でも、そこで止まっている。[r]ああ、もうお手上げだ！　すまない！　俺は役立たずだ！
+[k]
+
+[charaCrossFade B 1098287260 0 0.3]
+＠シラノ
+うわああああん俺のバカーーー！[wait charaCrossFade]
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_41 2.0]
+[wt 0.5]
+
+[se ad595]
+[wt 0.1]
+
+[charaSpecialEffect B erasure 0,0 1.0]
+[wt 2.1]
+
+[charaTalk G]
+[charaFace G 23]
+[charaFadein G 0.1 1]
+＠楊貴妃
+あっ！？[r]シラノさん！？　シラノさーん！　こらー！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠シャルルマーニュ
+……逃げたー！？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.55]
+
+？1：ど
+？！
+
+
+
+[charaTalk off]
+[subCameraOn 2]
+[charaLayer F sub #A]
+[charaLayer A sub #A]
+[charaLayer G sub #A]
+[charaLayer E sub #A]
+[charaLayer S sub #A]
+
+[charaLayer D sub #B]
+[charaLayer K sub #B]
+[charaLayer J sub #B]
+[charaLayer C sub #B]
+[charaLayer T sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask06 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask06 5 255,255,255,255]
+
+[charaTalk depthOff]
+[charaDepth S 1]
+[charaDepth T 1]
+
+[charaDepth F 4]
+[charaDepth A 5]
+[charaDepth E 2]
+[charaDepth G 3]
+
+[charaDepth K 5]
+[charaDepth D 4]
+[charaDepth C 5]
+[charaDepth J 2]
+
+[charaScale F 0.8]
+[charaScale G 0.8]
+[charaScale E 0.8]
+[charaScale A 0.8]
+[charaScale K 0.8]
+[charaScale D 0.8]
+[charaScale C 0.8]
+[charaScale J 0.8]
+
+[charaScale S 1.2]
+[charaScale T 1.2]
+
+[charaFace F 4]
+[charaFace A 4]
+[charaFace E 4]
+[charaFace G 4]
+[charaFadein F 0.1 -125,275]
+[charaFadein A 0.1 125,225]
+[charaFadein E 0.1 -435,200]
+[charaFadein G 0.1 425,225]
+
+[charaFace D 4]
+[charaFace J 4]
+[charaFace K 4]
+[charaFace C 4]
+[charaFadein D 0.1 125,225]
+[charaFadein K 0.1 415,225]
+[charaFadein J 0.1 -435,225]
+[charaFadein C 0.1 -175,225]
+[charaFadein S 0.1 -125,50]
+[charaFadein T 0.1 125,50]
+
+[subRenderFadein #B 0.4 -100,-415]
+[subRenderMoveEase #B 0,-415 0.4 easeOutQuint]
+
+[subRenderFadein #A 0.4 100,-200]
+[subRenderMoveEase #A 0,-200 0.4 easeOutQuint]
+
+[blur lens 0.4 4 1]
+[wt 0.6]
+
+＠全員
+どうしよう……！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,527 @@
+
+
+＄94-09-15-09-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257810 1 マシュ]
+[charaSet B 1098284200 1 紅玉の書]
+[charaSet C 1060000 1 宮本伊織]
+[charaSet D 1098257310 1 ダ・ヴィンチ]
+[charaSet E 1059000 1 ヤマトタケル]
+
+[charaSet F 98075000 1 鬼1]
+[charaSet G 98075000 1 鬼2]
+[charaSet H 98075000 1 鬼3]
+[charaSet I 98075000 1 鬼4]
+[charaSet J 98075000 1 鬼5]
+[charaSet K 98075000 1 鬼6]
+[charaDepth F 6]
+[charaDepth G 5]
+[charaDepth H 4]
+[charaDepth I 3]
+[charaDepth J 2]
+[charaDepth K 1]
+
+[sceneSet L 205100 1]
+[sceneSet M 205100 1]
+[sceneSet N 205000 1]
+[sceneSet O 205000 1]
+
+[charaSet P 11018000 1 源頼光]
+[sceneSet Q 10000 1]
+[charaScale Q 1.1]
+[charaSet R 1098284210 1 紅玉の書_哀]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaPut S 2000,2500]
+[charaEffect S bit_talk_10_LowLevel]
+
+[scene 205001]
+
+[cameraMove 0.1 0,50 1.2]
+[se ad985]
+[seVolume ad985 0 0]
+[wt 0.1]
+[seVolume ad985 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[cameraMoveEase 0,-60 3.5 easeInOutQuad 1.2]
+[wt 4.0]
+
+[fadeout black 1.0]
+[seStop ad985 1.0]
+[wait fade]
+
+[scene 205000 1.0]
+[wt 1.5]
+
+[se ade207]
+[cameraMoveEase 0,50 3.0 easeInOutQuad 1.2]
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[cameraMoveEase 0,0 0.1 easeInOutQuad 1.0]
+
+[scene 205100]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_SAMURAICP_1 0.1]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……結局、他のマスターは[r]見つかりませんでしたね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk R]
+[charaFace R 7]
+[charaFadein R 0.1 1]
+
+＠R：紅玉の書
+高尾太夫。鄭成功。ドロテア・コイエット……[r]すべて外れであったか、むむぅ。
+[k]
+
+[charaFadeout R 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠宮本伊織
+……かと云って、代わるマスターが[r]見つかったわけでもない。
+[k]
+
+[charaFace C 0]
+
+＠宮本伊織
+盈月の儀とは七人七騎の争いなのだろう？[r]これでは儀が成立すまい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk D]
+[charaFace D 23]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+やはりこの特異点においては、[r]儀そのものが[#歪:ゆが]められていると考えるべきだね。
+[k]
+
+[charaFace D 22]
+
+＠ダ・ヴィンチ
+さらに昨日の報告にあった、[r][#玖賀耳之御笠:く  が  み  み  の  み  か  さ]の件[line 3]
+[k]
+
+[branchQuestNotClear lblNotClear01 94086401]
+
+
+[charaPut P -300,0]
+[charaFace P 0]
+[charaFadeTime P 0.4 0.5]
+[charaMove P -325,0 15.0]
+
+＠ダ・ヴィンチ
+丑御前が伯爵[line 3]異星の使徒と[r]通じていることが明らかになった。
+[k]
+
+＠ダ・ヴィンチ
+この特異点は、伯爵が我々に向けて[r]仕掛けた罠である可能性が極めて高い。
+[k]
+
+[branch lblConf01]
+
+
+[label lblNotClear01]
+[charaPut P -300,0]
+[charaFace P 0]
+[charaFadeTime P 0.4 0.6]
+[charaMove P -325,0 15.0]
+
+＠ダ・ヴィンチ
+丑御前が『異星の神』の側についていることが[r]明らかになった。
+[k]
+
+＠ダ・ヴィンチ
+この特異点は、我々に仕向けられた罠である[r]可能性が極めて高い。
+[k]
+
+[branch lblConf01]
+
+[label lblConf01]
+
+[charaFadeout P 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠宮本伊織
+……それがカルデアの敵か。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ヤマトタケル
+よく[#解:わか]らぬ。[r]だが、やることは[#解:わか]るぞ。
+[k]
+
+[charaFace E 4]
+
+＠ヤマトタケル
+どうあれ儀を止めなければならぬ[line 3][r]そうだな？
+[k]
+
+＠ヤマトタケル
+ライダーが黒幕と繋がっているのだ。[r]もはや、ユイとの対決は避けられまい。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠紅玉の書
+これまでに確保した霊地から、[r]我らはかなりの霊地力を得ておる。
+[k]
+
+＠紅玉の書
+正雪を相手にしたとしても、[r]そう簡単には後れを取らんはずじゃ。
+[k]
+
+[charaFace B 4]
+
+＠紅玉の書
+セイバーの云う通り、[r]ここらで攻勢に乗り出すべきやもしれんの。
+[k]
+
+＠紅玉の書
+無論、地右衛門が黙っているとは思えぬ。[r]さて次なる一手、如何にして打つべきか……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_SAMURAICP_1 0.4]
+[se ad875]
+[se ad825 0]
+[seVolume ad825 0.5 0.4]
+[blur motion 0.4 4 200 0.5 0.5 0.02 200]
+[fadeMove 8b008b 0.4 0.5]
+[wait fade]
+
+[wt 0.3]
+
+[seStop ad825 0.4]
+[blurOff motion 0.4]
+[fadeMove 8b008b 0.4 0.0]
+[wait fade]
+
+[subCameraOn 2]
+[charaLayer L sub #A]
+[charaLayer E sub #A]
+[charaLayer M sub #B]
+[charaLayer C sub #B]
+[subCameraFilter #A maskEdge cut359_mask04 4 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask04 4 0,0,0,255 0]
+[charaDepth L 0]
+[charaDepth E 1]
+[charaScale L 1.4]
+[charaScale E 1.4]
+[charaFadein L 0.1 250,-150]
+[charaFace E 3]
+[charaFadein E 0.1 -250,300]
+[subRenderFadein #A 0.2 -300,-210]
+[subRenderMoveEase #A 0,-210 0.2 easeOutExpo]
+
+＠ヤマトタケル
+……ッ！？　イオリ！
+[k]
+
+[charaDepth M 0]
+[charaDepth C 1]
+[charaScale M 1.4]
+[charaScale C 1.4]
+[charaFadein M 0.1 -250,-200]
+[charaFace C 7]
+[charaFadein C 0.1 250,290]
+[subRenderFadein #B 0.2 300,-390]
+[subRenderMoveEase #B 0,-390 0.2 easeOutExpo]
+
+＠宮本伊織
+[line 3]ああ。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[subRenderFadeout #B 0.2]
+
+[se ad443 0.5]
+[seStop ad443 1.0]
+[se ad59 0.4]
+[seStop ad59 1.4]
+[wt 0.5]
+[charaFadeout L 0.1]
+[charaFadeout E 0.1]
+[charaFadeout M 0.1]
+[charaFadeout C 0.1]
+[wt 0.5]
+[charaLayer L normal]
+[charaLayer E normal]
+[charaLayer M normal]
+[charaLayer C normal]
+[charaScale E 1.0]
+[charaScale C 1.0]
+[subCameraOff]
+[wt 0.5]
+
+？1：どうしたの！？
+？2：もしかして敵襲！？
+
+？！
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[bgm BGM_BATTLE_246 0.1]
+
+＠マシュ
+……はい！　周囲に多数の敵性反応！[r]囲まれています！
+[k]
+
+[messageOff]
+[bgm BGM_BATTLE_246 1.0 0.3]
+[se ad59 0.7]
+[seStop ad59 1.4]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaPut S 2000,2500]
+[charaFadeout A 0.1]
+
+[subCameraOn 2]
+[charaLayer N sub #A]
+[charaLayer F sub #A]
+[charaLayer G sub #A]
+[charaLayer H sub #A]
+[charaLayer O sub #B]
+[charaLayer I sub #B]
+[charaLayer J sub #B]
+[charaLayer K sub #B]
+[subCameraFilter #A maskEdge cut359_mask15 4 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask09 4 0,0,0,255 0]
+[charaScale N 1.2]
+[charaScale F 1.2]
+[charaScale G 1.2]
+[charaScale H 1.2]
+[charaScale O 1.2]
+[charaScale I 1.2]
+[charaScale J 1.2]
+[charaScale K 1.2]
+[charaFadein N 0.1 -250,-50]
+[charaFadein O 0.1 250,-50]
+[charaTalk off]
+
+[scene 205000]
+[wt 0.4]
+[bgm BGM_BATTLE_246 1.0 0.6]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+[subRenderFadeinFSSideL #A 0.3 -450,-300]
+[subRenderMoveFSSideL #A -400,-250 0.3]
+[wt 0.4]
+[se ad1025 0.2]
+[charaFace G 0]
+[charaFadein G 0.4 -20,300]
+[charaMove G 0,300 0.4]
+[wt 0.2]
+[charaFace F 0]
+[charaFadein F 0.4 -120,200]
+[charaMove F -100,200 0.4]
+[wt 0.2]
+[charaFace H 0]
+[charaFadein H 0.4 80,400]
+[charaMove H 100,400 0.4]
+[seStop ad1025 0.8]
+[wt 0.5]
+
+[subRenderFadeinFSSideR #B 0.3 350,-200]
+[subRenderMoveFSSideR #B 400,-250 0.3]
+[wt 0.4]
+[se ad1025 0.2]
+[charaFace J 0]
+[charaFadein J 0.4 -100,250]
+[charaMove J -120,250 0.4]
+[wt 0.2]
+[charaFace K 0]
+[charaFadein K 0.4 -20,150]
+[charaMove K -40,150 0.4]
+[wt 0.2]
+[charaFace I 0]
+[charaFadein I 0.4 -180,350]
+[charaMove I -200,350 0.4]
+[seStop ad1025 0.8]
+[wt 1.0]
+
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[charaFadeout Q 0.4]
+[wt 0.4]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[wt 0.2]
+[charaLayer F normal]
+[charaLayer G normal]
+[charaLayer H normal]
+[charaLayer I normal]
+[charaLayer J normal]
+[charaLayer K normal]
+[charaLayer N normal]
+[charaLayer O normal]
+[subCameraOff]
+[bgm BGM_BATTLE_246 1.0 1.0]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ヤマトタケル
+ユイか？[r]それともチエモンか？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaScale F 1.0]
+[charaScale G 1.0]
+[charaScale H 1.0]
+[charaScale I 1.0]
+[charaScale J 1.0]
+[charaScale N 1.2]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[charaFace G 0]
+[charaFadein G 0.4 -250,0]
+[charaFace H 0]
+[charaFadein H 0.4 250,0]
+[charaFace I 0]
+[charaFadein I 0.4 -500,0]
+[charaFace J 0]
+[charaFadein J 0.4 500,0]
+[charaFadein N 0.4 0,-250]
+[wt 0.4]
+
+[se ad564 0.8]
+[seStop ad564 1.4]
+[se ad25 1.0]
+[charaMoveReturn F 0,7 0.2]
+[wt 0.2]
+[charaMoveReturn F 0,7 0.2]
+[wt 0.2]
+[charaShake I 0.05 5 5 1.0]
+[charaMoveEase H 245,0 0.8 easeInOutExpo]
+[wt 0.2]
+[charaMoveEase J 500,-10 0.4 easeOutQuart]
+[wt 0.2]
+[charaMoveEase G -245,0 0.6 easeOutQuad]
+[wt 0.2]
+[charaMoveEase J 500,0 0.4 easeInOutExpo]
+[wt 0.2]
+[charaMoveEase H 250,0 0.4 easeOutQuart]
+[wt 0.2]
+[charaMoveEase G -250,0 0.4 easeOutQuad]
+[wt 0.6]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠宮本伊織
+いや……おそらくどちらでもない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠紅玉の書
+儀に引き寄せられた怪異じゃろうな。[r]魔力に[#中:あ]てられ、暴れておるのじゃろう。
+[k]
+
+[charaFace B 15]
+
+＠紅玉の書
+それにしても突然じゃな。[r]嫌な予感がするのう……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠ヤマトタケル
+話は後だ！[r]ひとまず片付けるぞ！
+[k]
+
+
+
+
+[messageOff]
+[bgmStopEnd BGM_BATTLE_246 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAllEnd]
+[end]

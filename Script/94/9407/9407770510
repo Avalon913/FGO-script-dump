@@ -1,0 +1,1690 @@
+
+＄94-07-77-05-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3053001 1 ブリトマート]
+[charaSet B 8001400 1 マシュ]
+[charaSet C 9008001 1 アストライア]
+[charaSet D 5019001 1 エルメロイⅡ世]
+[charaSet E 1098164800 1 グレイ]
+
+[charaScale B 1.2]
+[charaScale E 1.2]
+
+[charaSet F 1050000 1 バーゲスト]
+[charaSet G 1098231110 1 メリュジーヌ]
+[charaSet H 2043000 1 バーヴァン・シー]
+
+[charaScale A 1.2]
+[charaScale C 1.1]
+[charaScale G 1.2]
+
+[charaSet I 9008001 1 演出用_アストライア]
+[charaSet J 1098231110 1 演出用_メリュジーヌ]
+[charaSet K 2043000 1 バーヴァン・シー_演出用]
+[charaSet L 3053001 1 ブリトマート_演出用]
+
+[charaScale I 1.3]
+[charaScale J 1.3]
+[charaScale K 1.3]
+[charaScale L 1.3]
+
+[sceneSet M 110101 1]
+[sceneSet N 110101 1]
+[sceneSet O 110101 1]
+
+[charaScale M 1.3]
+[charaScale N 1.3]
+[charaScale O 1.3]
+
+[charaSet P 98115000 1 エフェクト用]
+[charaSet Q 98115000 1 エフェクト用]
+[charaSet R 98115000 1 エフェクト用]
+[charaSet S 98115000 1 エフェクト用]
+
+[charaScale P 1.2]
+
+[imageSet T back10000 1 1]
+[charaScale T 1.05]
+
+[imageSet Z cut404_line_vs 1]
+[charaScale Z 1.6]
+
+[cameraMove 0.1 0,0 1.01]
+
+[scene 172901]
+
+[charaPut P 1]
+[charaEffect P bit_talk_sparks_fs]
+
+[fadein black 1.0]
+[se ad647]
+[seVolume ad647 0 0]
+[seVolume ad647 1.0 1.0]
+[se ad889]
+[seVolume ad889 0 0]
+[seVolume ad889 1.0 1.0]
+[wait fade]
+
+
+[wt 2.0]
+
+[bgm BGM_BATTLE_137 0.1]
+
+[seStop ad647 3.0]
+[seStop ad889 3.0]
+
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 0.2]
+
+[cueSe Servants_204600 m44108]
+[effect bit_talk_41_fs]
+
+[charaMoveScale F 1.1 0.2]
+[charaMove F 0,10 0.2]
+[wt 0.3]
+
+[cueSe Servants_100700 m06501]
+[effect bit_talk_flame_slash_01]
+[charaFadeout F 0.1]
+[wt 0.4]
+[cueSeStop m06501 0.6]
+
+[charaPut P 2000,2000]
+[charaEffectDestroy P bit_talk_sparks_fs]
+[effectDestroy bit_talk_41_fs]
+
+[charaTalk depthOff]
+[charaDepth Q 3]
+[charaDepth E 2]
+[charaDepth B 1]
+
+[charaTalk B,E]
+
+[charaFace B 15]
+[charaFadeinFSR B 0.1 256,10]
+
+[charaFace E 5]
+[charaFadeinFSL E 0.1 -256,10]
+
+[effect bit_talk_14]
+[shake 0.05 4 4 0.4]
+[se ad32]
+[se ad170]
+[wt 0.4]
+
+[cueSe SE_21 21_ade607]
+[cueSeStop 21_ade607 0.5]
+[effectDestroy bit_talk_14]
+[charaMoveScale B 1.0 0.3]
+[charaMoveScale E 1.0 0.3]
+[charaMoveFSR B 256,0 0.3]
+[charaMoveFSL E -256,0 0.3]
+[charaShake B 0.02 3 3 0.5]
+[charaShake E 0.02 3 3 0.5]
+
+[wt 0.2]
+
+[charaTalk B]
+
+＠マシュ
+！
+[k]
+
+＠グレイ
+すべての、打撃が……重い！
+[k]
+
+[messageOff]
+[charaTalk B,E]
+[charaPut Q 0,0]
+[charaEffect Q bit_talk_noble_light]
+[se bas9]
+[wt 1.8]
+
+[charaPut Q 2000,2000]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エルメロイⅡ世
+防御性能を上げておこう。[r]だが、あれが相手では長くは保たんぞ。レディ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut Q 0,0]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠グレイ
+はい！
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[bgm BGM_BATTLE_137 0.4 0.4]
+[wait wipe]
+
+[charaPut Q 2000,2000]
+[charaEffectDestroy Q bit_talk_noble_light]
+[charaFadeout E 0.1]
+
+[charaTalk off]
+
+[subCameraOn 2]
+
+[charaLayer J sub #A]
+[charaLayer M sub #A]
+[charaLayer I sub #B]
+[charaLayer N sub #B]
+
+[charaDepth I 4]
+[charaDepth N 3]
+[charaDepth J 2]
+[charaDepth M 1]
+
+[charaFace J 1]
+[charaFadein J 0.1 -50,300]
+[charaFadein M 0.1 0,150]
+
+[charaFace I 5]
+[charaFadein I 0.1 -50,250]
+[charaFadein N 0.1 0,150]
+
+[scene 110101]
+[wt 0.6]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[bgm BGM_BATTLE_137 0.4 1.0]
+[wait wipe]
+
+[subCameraFilter #A maskEdge cut359_mask13 3 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask02 3 255,255,255,255]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[subRenderScale #A 1.1]
+[subRenderFadeinFSL #A 0.3 -150,-300]
+[subRenderMove #A 0,-300 0.3]
+[wt 0.6]
+
+[subRenderMove #A 150,-300 0.3]
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+
+[se ad923]
+[shake 0.05 5 5 0.8]
+[effect bit_talk_aerial_wave]
+[wt 1.0]
+
+[shake 0.05 5 5 0.5]
+[cueSe Servants_304800 m44418]
+[effect bit_talk_gram_slash_04]
+[wt 1.0]
+
+[shakeStop]
+
+[subRenderScale #B 1.1]
+[subRenderFadeinFSR #B 0.3 150,-480]
+[subRenderMove #B 0,-480 0.3]
+[wt 0.6]
+
+[subRenderMove #B -150,-480 0.3]
+[subRenderFadeout #B 0.3]
+[wt 0.3]
+
+[cueSe Servants_304800 m44421]
+[effect bit_talk_barrier_iyo]
+[wt 0.7]
+
+[shake 0.05 5 5 1.0]
+[se ad1013]
+[effect bit_talk_14 240,0]
+[wt 0.3]
+[se ad32]
+[effect bit_talk_14 -150,50]
+[wt 0.4]
+[se ad471]
+[effect bit_talk_14 0,-100]
+[wt 1.0]
+
+[shakeStop]
+
+[subCameraOff]
+
+[charaDepth R 5]
+[charaDepth G 4]
+[charaDepth P 3]
+[charaDepth C 2]
+[charaDepth O 1]
+
+[charaFace G 0]
+[charaFadein G 0.7 -150,0]
+[charaFadein O 0.7 -50,-150]
+[charaMove G -100,0 0.7]
+[charaMove O 0,-150 0.7]
+[wt 1.0]
+
+[charaFace G 6]
+[charaFace C 0]
+[charaPut P 190,90]
+[charaPut C 190,0]
+[se ad73]
+[charaEffect P bit_talk_quickmove]
+[charaSpecialEffect C appearance 1 0.25]
+[wt 1.3]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 1]
+
+＠メリュジーヌ
+へえ、わりと速いんだね。
+[k]
+
+[charaFace C 1]
+
+＠アストライア
+やっと背中を取らせていただきましたので、[r]このまま落とさせていただきますわ！
+[k]
+
+[charaFace G 8]
+
+＠メリュジーヌ
+面白そう。でも無理。
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[se ad678]
+[seStop ad906 1.0]
+[se ade7]
+[seVolume ade7 0 0.6]
+
+[charaScale R 0.5]
+[charaPut R -100,-50]
+[charaEffect R bit_talk_mgn_light02]
+[wt 0.2]
+
+[charaMove G -100,30 0.2]
+[charaFadeout G 0.1]
+
+[cueSe SE_21 21_ad1097]
+[wt 0.6]
+[seStop ade7 0.5]
+[cueSeStop 21_ad1097 0.5]
+
+[charaFace C 5]
+[wt 0.4]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[bgm BGM_BATTLE_137 0.4 0.4]
+[wait wipe]
+
+[charaEffectDestroy R bit_talk_mgn_light02]
+[charaPut R 2000,2000]
+[charaFadeout C 0.1]
+[charaFadeout O 0.1]
+
+[charaScale G 1.0]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[bgm BGM_BATTLE_137 0.4 1.0]
+[wait wipe]
+
+[effect bit_talk_mgn_light]
+[se ad696]
+[seVolume ad696 0 0.6]
+[se ade393]
+[seVolume ade393 0 0.3]
+[wt 0.8]
+[seStop ad696 1.0]
+[seStop ade393 1.0]
+[wt 0.5]
+[charaFace G 0]
+[charaFadein G 0.3 1]
+[wt 0.8]
+
+[charaFace G 2]
+[effect bit_talk_41_fs]
+[cueSe Servants_304800 m44413]
+[charaMoveScale G 1.2 0.2]
+[charaMove G 0,20 0.2]
+[wt 0.3]
+[effectDestroy bit_talk_41_fs]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[shake 0.05 5 5 0.8]
+[cueSe Servants_304800 m44410]
+[effect bit_talk_quick_slash_bl]
+[wt 0.9]
+
+[shake 0.05 5 5 0.5]
+[cueSe Servants_304800 m44418]
+[effect bit_talk_x_slash_bl_01]
+[effect bit_talk_x_slash_bl_02]
+[wt 0.8]
+
+[shakeStop]
+
+[charaScale C 1.2]
+[charaFace C 5]
+[charaFadein C 0.1 0,10]
+[se ad467]
+[effect bit_talk_barrier_iyo]
+
+[charaMoveScale C 1.0 0.4]
+[charaMove C 0,-10 0.4]
+[charaShake C 0.02 3 3 0.6]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk C]
+
+＠アストライア
+……ッ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaScale G 1.0]
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠メリュジーヌ
+え。僕のネイルに耐えるとか、どれほど？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth T 1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アストライア
+神霊を舐めていらっしゃる？
+[k]
+
+[charaFace C 5]
+
+[charaPut T 1]
+[charaFadeTime T 0.2 0.5]
+
+＠アストライア
+（とはいえ流石に想定外かつ規格外！[r]　これ以上はあまり保ちませんわよ、エルメロイⅡ世！）
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[bgm BGM_BATTLE_137 0.4 0.4]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout T 0.1]
+
+[charaTalk depthOn]
+
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaLayer J normal]
+[charaLayer I normal]
+[charaLayer M normal]
+[charaLayer N normal]
+[wt 0.1]
+
+[sceneSet M 172901 1]
+[sceneSet N 172901 1]
+[sceneSet O 172901 1]
+
+[charaScale M 1.3]
+[charaScale N 1.3]
+[charaScale O 1.35]
+
+[subCameraOn 3]
+
+[charaLayer K sub #A]
+[charaLayer M sub #A]
+
+[charaLayer L sub #B]
+[charaLayer N sub #B]
+
+[charaLayer Z sub #C]
+
+[charaFace K 11]
+[charaFadein K 0.1 -120,330]
+[charaFadein M 0.1 340,-50]
+
+[charaFace L 7]
+[charaFadein L 0.1 120,330]
+[charaFadein N 0.1 -400,-40]
+
+[charaRoll Z 358 0 0]
+[charaFadein Z 0.1 -262,-390]
+
+[scene 172901]
+[effect bit_talk_41_fs]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[bgm BGM_BATTLE_137 0.4 1.0]
+[wait wipe]
+
+[se ad59]
+[wt 1.2]
+
+[seStop ad59 0.5]
+[effectDestroy bit_talk_41_fs]
+
+
+[charaTalk off]
+[se ad73]
+[charaFace H 3]
+[charaEffect H bit_talk_quickmove]
+[charaSpecialEffect H appearance 1 0.25]
+[wt 0.5]
+
+[charaFace H 11]
+[wt 0.6]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[cueSe Servants_204300 m44710]
+[shake 0.05 4 4 1.5]
+[effect bit_talk_arrow_enemy_l]
+[wt 1.2]
+[effectStop bit_talk_arrow_enemy_l]
+[cueSeStop m44710 0.5]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth Z 7]
+[charaDepth P 6]
+[charaDepth K 5]
+[charaDepth M 4]
+[charaDepth L 3]
+[charaDepth N 2]
+[charaDepth A 1]
+
+[charaFace A 6]
+[charaFadein A 0.1 0,5]
+[charaShake A 0.02 2 2 0.8]
+
+[se ad467]
+[effect bit_talk_14 300,50]
+[wt 0.3]
+[se ad602]
+[effect bit_talk_14 -300,-50]
+[wt 0.4]
+[se ad471]
+[effect bit_talk_14 200,50]
+[charaFace A 7]
+[charaMoveReturn A 0,15 0.3]
+[wt 0.4]
+
+[cueSe SE_21 21_ade607]
+[cueSeStop 21_ade607 0.6]
+[charaMoveScale A 1.0 0.3]
+[charaMove A 0,0 0.3]
+[wt 0.6]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[subCameraFilter #A mask cut359_mask10]
+[subCameraFilter #B mask cut359_mask09]
+[subCameraFilter #C through]
+
+[subRenderDepth #C 3]
+[subRenderDepth #A 2]
+[subRenderDepth #B 1]
+
+[subRenderScale #A 1.0]
+[subRenderFadeinFSSideL #A 0.1 -1100,-320]
+[subRenderMove #A -150,-320 0.4]
+
+[subRenderScale #B 1.0]
+[subRenderFadeinFSSideR #B 0.1 1100,-320]
+[subRenderMove #B 240,-320 0.4]
+[wt 0.3]
+
+[subRenderScale #C 1.0]
+[subRenderFadein #C 0.1 245,200]
+[wt 0.8]
+
+[charaTalk on]
+[charaFace L 9]
+
+＠L：ブリトマート
+……くうっ！[r]速い上に、強い！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaFace L 16]
+
+＠L：ブリトマート
+というか何といいますか、[r]あなた本当に強すぎません！？
+[k]
+
+[charaFace K 14]
+
+＠K：バーヴァン・シー
+あったり前でしょ、お母様が見てるんだから！[r]妖精騎士を着任するってコト、舐めてんじゃねえ！
+[k]
+
+[messageOff]
+[subRenderMove #A -1100,-320 0.4]
+[subRenderFadeout #A 0.4]
+
+[subRenderMove #B 1100,-320 0.4]
+[subRenderFadeout #B 0.4]
+
+[subRenderMove #C -1105,200 0.4]
+[subRenderFadeout #C 0.2]
+
+[wt 0.5]
+
+
+[charaTalk depthOn]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+[wt 0.2]
+
+[cueSe Servants_204600 m44108]
+[effect bit_talk_41_fs]
+
+[charaMoveScale H 1.1 0.2]
+[charaMove H 0,10 0.2]
+[wt 0.2]
+
+[cueSe Servants_102000 m08705]
+[effect bit_talk_gram_slash_02]
+[wt 0.4]
+[fadeout white 0.1]
+[wait fade]
+
+[effectDestroy bit_talk_41_fs]
+[charaFadeout H 0.1]
+
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout Z 0.1]
+[charaLayer K normal]
+[charaLayer L normal]
+[charaLayer M normal]
+[charaLayer N normal]
+[charaLayer Z normal]
+
+[subCameraOff]
+
+[charaScale A 1.0]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[wt 0.2]
+
+[fadein white 0.1]
+[charaShake A 0.02 2 2 0.4]
+[effect bit_talk_14]
+[se ad170]
+[wait fade]
+
+＠ブリトマート
+むううううっ！
+[k]
+
+？1：流石、妖精騎士三騎！
+？2：強い！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale H 1.0]
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+
+＠バーヴァン・シー
+汎人類史のお嬢様がさぁ！[r]妖精騎士を、名乗るんじゃねえっての！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ブリトマート
+！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk H]
+[charaFace H 11]
+[charaFadein H 0.1 1]
+[wt 0.2]
+
+[se ad73]
+[charaEffect H bit_talk_quickmove]
+[charaSpecialEffect H erasureReverse 1 0.2]
+[charaMove H 0,6 0.4]
+[wt 0.6]
+
+[cueSe Servants_204300 m44701]
+[wt 0.8]
+
+[se ad1053]
+[effect bit_talk_quick_slash]
+[wt 0.7]
+
+[charaScale A 1.3]
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+[se ad32]
+[effect bit_talk_14 -100,-50]
+
+[charaShake A 0.02 2 2 0.3]
+[charaMoveScale A 1.0 0.3]
+[wt 0.2]
+
+[se ad170]
+[effect bit_talk_14 200,100]
+
+＠ブリトマート
+くううっ……！
+[k]
+
+[messageOff]
+[se ad592]
+[fadeout white 0.5]
+[bgm BGM_BATTLE_137 0.5 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 	113400]
+
+[effect bit_sepia01]
+[wt 0.1]
+
+[fadein white 0.5]
+[wait fade]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エルメロイⅡ世
+奥の手をひとつだけ伝えておく。
+[k]
+
+[charaFace D 1]
+
+＠エルメロイⅡ世
+勝ちそうになった瞬間でもいい。[r]負けそうになった瞬間でもいい。
+[k]
+
+＠エルメロイⅡ世
+ここが最後だと感じた瞬間、即座に[#切り替えろ]。
+[k]
+
+[charaFace D 0]
+
+＠エルメロイⅡ世
+最後の瞬間に貴女は『騎士の戦い』を捨てて、[r]『アスレチックの攻略に挑む一選手』の自覚と共に跳べ。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace D 1]
+
+＠エルメロイⅡ世
+具体的にどうすればいいか？[r]そうだな。
+[k]
+
+＠エルメロイⅡ世
+[#槍を捨てて]、走って、跳べ。
+[k]
+
+＠エルメロイⅡ世
+貴女がその直前まで、[r]本当に騎士としてのみ戦っていたなら、
+[k]
+
+＠エルメロイⅡ世
+そう、勝率が少しは上がるはずだ。
+[k]
+
+[messageOff]
+[shake 0.05 3 3 0.5]
+[wt 0.5]
+
+[charaFace D 4]
+
+＠エルメロイⅡ世
+……怒るな怒るな。[r]奇策なんてものは所詮そんなものさ。
+[k]
+
+[charaFace D 0]
+
+＠エルメロイⅡ世
+何せ相手はあの妖精騎士三騎。[r]真正面から戦ったとして、勝率は高くない。
+[k]
+
+＠エルメロイⅡ世
+だから奇策を用意する。[r]少しだけ勝率を上げるために。
+[k]
+
+[charaFace D 1]
+
+＠エルメロイⅡ世
+少しの勝率も、そうバカにしたものじゃない。
+[k]
+
+＠エルメロイⅡ世
+なにせ[line 3][r]あと一度だけ勝てば、優勝だ。
+[k]
+
+＠エルメロイⅡ世
+たとえ１％であろうと、[r]積み上げきった方が勝つ。
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[se ad592]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[cameraHome 0.1]
+
+[effectDestroy bit_sepia01]
+
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaLayer K normal]
+[charaLayer L normal]
+[charaLayer M normal]
+[charaLayer N normal]
+[wt 0.1]
+
+[sceneSet N 110101 1]
+
+[subCameraOn]
+
+[charaLayer C sub]
+[charaLayer N sub]
+
+[charaFace C 11]
+[charaFadein C 0.1 30,330]
+[charaFadein N 0.1 0,150]
+
+[scene 172901]
+
+[charaScale C 1.1]
+
+[charaTalk depthOff]
+[charaDepth C 6]
+[charaDepth N 5]
+[charaDepth H 4]
+[charaDepth T 3]
+[charaDepth M 2]
+[charaDepth A 1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fadein white 0.5]
+[bgm BGM_BATTLE_137 0.5 1.0]
+[wait fade]
+
+[wt 1.0]
+[bgmStop BGM_BATTLE_137 0.5]
+
+[charaFace A 11]
+
+＠ブリトマート
+[f large]うわああああああああああ！
+[k]
+
+
+[messageOff]
+[cueSe SE_21 21_adm82]
+[wt 0.2]
+[charaCrossFade A 1098252100 11 0.8]
+[wait charaCrossFade A]
+[wt 1.1]
+
+
+[charaScale H 1.3]
+[charaTalk H]
+[charaFace H 16]
+[charaFadein H 0.6 -100,0]
+[charaMove H -200,0 0.6]
+
+[charaFadein M 0.6 50,-200]
+[charaMove M -50,-200 0.6]
+[wt 0.7]
+
+[charaFadeout A 0.1]
+
+＠バーヴァン・シー
+！？
+[k]
+
+[charaFace H 11]
+
+[charaPut T 1]
+[charaFadeTime T 0.2 0.5]
+
+＠バーヴァン・シー
+（奥の手！　何よ[line 3]魔術、それとも自爆？）
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFadeout T 0.2]
+
+[subCameraFilter mask cut359_mask07]
+
+[bgm BGM_BATTLE_123 0.1]
+[subRenderScale 1.0]
+[subRenderFadeinFSR 0.3 250,-250]
+[subRenderMoveFSR 250,-350 0.3]
+[wt 0.5]
+
+＠アストライア
+勝機！
+[k]
+
+＠アストライア
+跳びなさい、ブリトマート！
+[k]
+
+[messageOff]
+[charaTalk C,H]
+[subRenderMoveFSR 250,-250 0.3]
+[subRenderFadeout 0.2]
+[wt 0.5]
+
+[subCameraOff]
+
+[charaTalk H]
+[charaFace H 12]
+[wt 1.2]
+
+[charaFace H 17]
+
+＠バーヴァン・シー
+…………！！
+[k]
+
+[messageOff]
+[charaFadeout H 0.4]
+[charaFadeout M 0.4]
+[wt 0.5]
+
+[charaTalk depthOn]
+
+＠ブリトマート
+走って！[r]跳びます！
+[k]
+
+[messageOff]
+[se ad59]
+[shake 0.05 3 3 2.5]
+[effect bit_talk_41_fs]
+[wt 1.2]
+
+
+[messageOff]
+[fadeout white 1.0]
+[seStop ad59 1.0]
+[bgm BGM_BATTLE_123 1.0 0.4]
+[wait fade]
+
+[cueSe Servants_1001000 m42001]
+[wt 0.1]
+[cueSe Servants_104800 m42604]
+[wt 0.5]
+
+[effectDestroy bit_talk_41_fs]
+[shakeStop]
+
+[scene 173000]
+
+[imageSet N cut405_brt 1]
+[imageSet O cut405_brt 1]
+
+[charaScale N 2.0]
+[charaScale O 1.5]
+
+[charaTalk depthOff]
+[charaDepth N 2]
+[charaDepth O 1]
+
+[charaFadein O 0.1 -50,140]
+[charaMove O -50,-80 7.0]
+[wt 0.1]
+
+[fadein white 1.0]
+[bgm BGM_BATTLE_123 1.0 1.0]
+[wait fade]
+
+[wt 1.5]
+
+＠
+走って[line 3]
+[k]
+
+＠
+跳んだ[line 3]
+[k]
+
+[messageOff]
+[charaFadein N 0.7 -350,-480]
+[charaMove N 10,-480 22.0]
+[wt 2.0]
+[charaFadeout O 0.1]
+
+＠ブリトマート
+[messageShake 0.05 4 4 0.4]
+えええええええええええーーーーーい！！
+[k]
+
+[messageOff]
+[wt 1.5]
+
+＠
+とてつもない恐怖だった。[r]信じられないほど、指は槍の柄に食い込むようだった。
+[k]
+
+＠
+目の前の妖精騎士は、どこか悲しげな瞳の奥に[r]火のように灯る意思を持った彼女は、あまりに熱くて、
+[k]
+
+＠
+このひとを前に、[r]槍から手を離すなんて絶対にできないと思った。
+[k]
+
+＠
+それでも。[r]離した。
+[k]
+
+＠
+槍を強く掴むこの指のすべて、[r]ここで折れてしまっても構わない。
+[k]
+
+＠
+それぐらいの意気込みで槍から指を引き剥がして、
+[k]
+
+＠
+格好悪くガクガク笑ってしまいそうな膝を、[r]脚を、動かしながら、前へ。
+[k]
+
+[messageOff]
+[charaFadeout N 0.7]
+[wt 1.0]
+
+＠
+そして[line 3]跳んだ。
+[k]
+
+＠
+高く、高く、[r]きっと今までで一番高く跳んでいた。
+[k]
+
+[messageOff]
+[wt 1.5]
+[cameraMove 20.0 -20,-60 1.3]
+
+＠ブリトマート
+[messageShake 0.05 5 5 0.4]
+届けーーーーーーーーーー！！
+[k]
+
+[messageOff]
+[wt 1.5]
+
+＠
+目指すのはただひとつ。[r]あそこで輝く、黄金のトロフィー！
+[k]
+
+＠
+どうか……[r]どうか母上様父上様、妖精女王グロリアーナ陛下！
+[k]
+
+＠
+親切にしてくれた皆様！[r]グレイさん、Ⅱ世さん、お祖母様っぽい人！
+[k]
+
+＠
+マシュさん！[r]カルデアのマスター！
+[k]
+
+＠
+どうか見ていてください！[r]ブリトマートは[line 3]やってみせます！
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[fadeout white 1.5]
+[bgmStop BGM_BATTLE_123 1.5]
+[wait fade]
+
+
+[wt 0.5]
+[se ad215]
+[se ade124]
+[se ad590]
+[seStop ad590 0.4]
+[wt 0.7]
+
+[cueSe Battle bas2]
+[cueSe Servants_1001300 m48502]
+[wt 0.5]
+
+[cameraHome 0.1]
+
+[charaSet A 1098252100 1 ブリトマート]
+[charaSet B 8001500 1 マシュ]
+[charaSet C 9008001 1 アストライア]
+[charaSet D 5019001 1 エルメロイⅡ世]
+[charaSet E 1098164800 1 グレイ]
+[charaSet F 1050000 1 バーゲスト]
+[charaSet G 3048000 1 メリュジーヌ]
+[charaSet H 2043000 1 バーヴァン・シー]
+[charaSet I 7040002 1 モルガン]
+[imageSet J cut402_trophy 1]
+[charaSet K 4043001 1 太公望]
+[charaSet L 1098252100 1 ブリトマート_演出用]
+[sceneSet M 110101 1]
+[imageSet N black_fade_re 1]
+[imageSet O black_fade_re 1]
+
+[charaScale A 1.0]
+[charaScale B 1.0]
+[charaScale C 1.0]
+[charaScale D 1.0]
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaScale G 1.0]
+[charaScale H 1.0]
+[charaScale I 1.0]
+[charaScale K 0.7]
+[charaScale J 1.0]
+[charaScale L 1.3]
+[charaScale M 1.01]
+[charaScale N 2.0]
+[charaScale O 2.0]
+
+[scene 172901]
+
+[subCameraOn]
+
+[charaLayer K sub]
+[charaLayer M sub]
+
+[charaDepth K 9]
+[charaDepth M 8]
+
+[charaFace K 1]
+[charaFadein K 0.1 470,10]
+[charaFadein M 0.1 200,0]
+
+[subCameraFilter maskEdge cut359_mask14 5 255,255,255,255]
+
+[subRenderScale 1.0]
+
+[charaTalk K]
+[subRenderFadeinFSSideR 0.4 -150,-220]
+
+[wt 1.0]
+
+
+[fadein white 1.0]
+[se ad647]
+[seVolume ad647 0 0.6]
+[se ad889]
+[seVolume ad889 0 0.6]
+[wait fade]
+
+[seVolume ad647 1.0 1.0]
+[seVolume ad889 1.0 1.0]
+
+[bgm BGM_SEIHAI_2 0.1]
+
+[charaFace K 7]
+
+＠太公望（実況）
+決着～～～～～～～～～～ッ！！
+[k]
+
+[messageOff]
+[seStop ad647 2.0]
+[seStop ad889 2.0]
+[wt 1.0]
+
+[charaFace K 1]
+
+＠太公望（実況）
+勝者、ブリトマート殿！[r]ブリトマート殿とマスターたちのチームの勝利です！
+[k]
+
+＠太公望（実況）
+いやーこれはいい勝負でした。[r]ラストは、タッチの差であったと言えるでしょう。
+[k]
+
+[charaFace K 7]
+
+＠太公望（実況）
+ブリトマート殿の突然の切り替えに対して、[r]バーヴァン・シー殿は瞬時に対応！
+[k]
+
+＠太公望（実況）
+あわや追いつかれるかと思われましたが、[r]ブリトマート殿の最後の跳躍が一拍早かった！
+[k]
+
+[messageOff]
+[subRenderMoveFSSideR -100,-220 0.4]
+[subRenderFadeout 0.4]
+
+[se ad647]
+[se ad889]
+[wt 1.0]
+
+[subCameraOff]
+
+[charaTalk depthOn]
+
+[seStop ad647 4.0]
+[seStop ad889 4.0]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+
+＠モルガン
+……見事な奮闘でした。
+[k]
+
+＠モルガン
+なぜ自分たちが勝つことができたのか。[r]無論、自覚していますね？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エルメロイⅡ世
+ああ。
+[k]
+
+？1：みんなで頑張ったからね
+
+＠エルメロイⅡ世
+それもそうではあるが[line 3]
+[k]
+
+？2：これは、殺し合いじゃないからね
+
+[messageOff]
+[charaFace D 1]
+[wt 1.0]
+
+[charaFace D 0]
+
+＠エルメロイⅡ世
+その通り。
+[k]
+
+？！
+
+＠エルメロイⅡ世
+これは、競争であって殺し合いじゃない。
+[k]
+
+＠エルメロイⅡ世
+しかしバーヴァン・シーは殺し合いが得意に過ぎた。[r]圧倒的なまでの戦闘性能だ、当然だろう。
+[k]
+
+＠エルメロイⅡ世
+故に、得意分野で[r]勝負をつけにかかったが……
+[k]
+
+＠エルメロイⅡ世
+こちらのブリトマートには、[r]最後の最後で競技に全振りしろと伝えておいた。
+[k]
+
+[charaFace D 1]
+
+＠エルメロイⅡ世
+あとはご覧の通りだ。
+[k]
+
+[charaFace D 0]
+
+＠エルメロイⅡ世
+バーゲストとメリュジーヌについては、[r]英霊三騎と神霊一騎でぎりぎり何とか抑えて……
+[k]
+
+[charaFace D 4]
+
+＠エルメロイⅡ世
+本当にぎりぎり、何とか[line 3]
+[k]
+
+？1：ブリトマートの跳躍に懸けた
+？！
+
+[messageOff]
+[charaFace D 0]
+[charaMoveReturn D 0,-5 0.5]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠モルガン
+二代目ブリトマート。[r]そして、マスターをはじめとする面々。
+[k]
+
+＠モルガン
+我が修練場、[#明日霊血古:ア　ス　レ　チ　ッ　ク・][#圏:ゾーン]をよくぞ乗り越え、[r]勝利の栄光を手にしましたね。
+[k]
+
+[charaFace I 1]
+
+＠モルガン
+おめでとう。[r]貴方たちが勝者です。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠ブリトマート
+………………！
+[k]
+
+[charaFace A 13]
+
+＠ブリトマート
+モ、モ、モ、モ……
+[k]
+
+[charaFace A 12]
+
+＠ブリトマート
+モルガン陛下！　ありがたき、お言葉……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠モルガン
+ブリトマート。貴方には約束通り、[r]外征妖精騎士の称号を与えます。
+[k]
+
+＠モルガン
+二代目ブリトマート。[r]貴方は今日この時より、二つの主君に仕えるのです。
+[k]
+
+＠モルガン
+妖精女王グロリアーナの妖精騎士でありながら、[r]妖精女王モルガンの外征妖精騎士となるのです。
+[k]
+
+[charaFace I 8]
+
+＠モルガン
+貴方が望んだ道ではありますが[line 3]
+[k]
+
+[charaFace I 0]
+
+＠モルガン
+覚悟はありますか。[r]ブリトマートとアーティガルの子よ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[charaMoveReturn A 0,5 0.3]
+
+＠ブリトマート
+は、はい！
+[k]
+
+＠ブリトマート
+はい！　覚悟を以てお受けいたします！[r]モルガン陛下！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+[wt 1.6]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 1.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth B 1]
+
+[charaTalk B,E]
+[charaFace B 1]
+[charaFadeinFSR B 0.1 2]
+[charaFace E 1]
+[charaFadeinFSL E 0.1 0]
+[wt 1.2]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 1.2]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk F,G]
+[charaFace F 1]
+[charaFadeinFSR F 0.1 2]
+[charaFace G 1]
+[charaFadeinFSL G 0.1 0]
+[wt 1.2]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠バーヴァン・シー
+………………。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ブリトマート
+ありがとうございます、妖精騎士トリスタン。[r]戦いではあなたの勝ちでした。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠バーヴァン・シー
+嫌味？　殺しきれなかった時点で勝ちじゃねえだろ。[r][line 3]ったく、クソ度胸見せやがって。
+[k]
+
+[charaFace H 9]
+
+＠バーヴァン・シー
+モルガン様が公の場で任命したんだ。[r]私に文句を言える機会はなくなった。っていうか……
+[k]
+
+[charaFace H 8]
+
+＠バーヴァン・シー
+ここで妖精騎士なんてなってもいいコトないのにね？[r]物好きなヤツがひとり、ふたり、増えたってだけ。
+[k]
+
+[charaFace H 7]
+
+＠バーヴァン・シー
+好きにしたら？　根性だけは桁違いだし。[r]荷物持ちぐらいには使ってやるよ。
+[k]
+
+[charaFace H 6]
+
+＠バーヴァン・シー
+じゃあ、これ。[r]重いからさっさと持って行って。
+[k]
+
+[charaFace H 1]
+
+＠バーヴァン・シー
+[line 3]優勝の記念。[r]せいぜい、なくさないように。
+[k]
+
+[messageOff]
+[charaFace H 10]
+[se ade422]
+[seStop ade422 1.2]
+[charaMoveScale H 1.1 1.2]
+[charaMove H 0,7 1.2]
+[wt 1.4]
+
+[charaMoveReturn H 0,2 0.7]
+[wt 1.0]
+
+[charaFadeout H 0.4]
+
+[charaFadein J 0.8 0,-200]
+[cueSe SE_21 21_ade588]
+[wt 2.4]
+[cueSeStop 21_ade588 0.5]
+
+？1：優勝おめでとう！
+？2：外征妖精騎士、おめでとう！！
+？！
+
+[messageOff]
+[charaFadeout J 0.4]
+[wt 0.5]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth N 5]
+[charaDepth O 4]
+[charaDepth L 3]
+[charaDepth M 2]
+[charaDepth A 1]
+
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+[wt 1.2]
+
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_SEIHAI_2 1.0 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[sceneSet M 172901 1]
+
+[charaScale L 1.4]
+[charaScale M 1.4]
+
+[charaFadein N 0 0,-950]
+[charaFadein O 0 0,135]
+
+[charaFace L 13]
+[charaFadein L 0.1 100,-15]
+[charaFadein M 0.1 100,-400]
+
+[wt 0.1]
+
+[fadein black 1.0]
+[bgm BGM_SEIHAI_2 1.0 1.0]
+[charaMove L 0,-15 10.0]
+[charaMove M 0,-400 10.0]
+[wait fade]
+
+
+＠
+……魔力はすっかり切れていて。
+[k]
+
+＠
+汗まみれで、息切れもひどくて。
+[k]
+
+＠
+目もかすんで、[r]目の前にいる誰が誰なのかも分からない状態で。
+[k]
+
+＠
+でも、ひとつだけ分かったことがある。[r]誰かが手を差し伸べてくれて、
+[k]
+
+＠
+足元が[#覚束:おぼつか]なくてふらつく私の手を、[r]ぎゅうっと握ってくれたということ。
+[k]
+
+＠
+それで、私は、
+[k]
+
+[messageOff]
+[charaFaceFade L 5 0.5]
+[wt 1.2]
+
+[cameraMove 10.0 0,-10 1.1]
+[charaMove N 0,-1200 2.0]
+[charaMove O 0,400 2.0]
+[charaFaceFade L 4 0.5]
+[wt 0.5]
+
+[charaFadeout N 1.0]
+[charaFadeout O 1.0]
+[wt 1.0]
+
+＠ブリトマート
+……ありがとうございます！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+精一杯の、[r]満面の笑みを浮かべる[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+そのつもり、だったのだけど。
+[k]
+
+＠
+もしかして、[r]ひょっとしたら。
+[k]
+
+＠
+泣き笑いみたいな、[r]変な表情になってしまったかもしれない。
+[k]
+
+＠
+ああもう、いいところなのに！
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_SEIHAI_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+
+
+

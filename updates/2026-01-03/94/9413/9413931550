@@ -1,0 +1,1280 @@
+
+＄94-13-93-15-5-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[ifClear 60139307]
+[charaSet G 1098315100 1 チビーネ]
+[flag rbody_1 true]
+
+[ifClear 60139308]
+[charaSet G 1098315000 1 チビーネ]
+[flag rbody_2 true]
+
+[ifClear 60139309]
+[charaSet G 1098314900 1 チビーネ]
+[flag rbody_3 true]
+
+[ifClear 60139310]
+[charaSet G 1098316600 1 チビーネ]
+[flag bbody_1 true]
+
+[ifClear 60139311]
+[charaSet G 1098316700 1 チビーネ]
+[flag bbody_2 true]
+
+[ifClear 60139312]
+[charaSet G 1098316800 1 チビーネ]
+[flag bbody_3 true]
+
+[ifClear 60139313]
+[charaSet G 1098317000 1 チビーネ]
+[flag gbody_1 true]
+
+[ifClear 60139314]
+[charaSet G 1098317100 1 チビーネ]
+[flag gbody_2 true]
+
+[ifClear 60139315]
+[charaSet G 1098317200 1 チビーネ]
+[flag gbody_3 true]
+
+[else]
+[charaSet G 1098315100 1 チビーネ]
+[flag rbody_1 true]
+
+[endIf]
+[ifClear 60139319]
+[charaSet M 1098317600 1 ブレス_炎_重]
+[flag breath_f1 true]
+
+[ifClear 60139320]
+[charaSet M 1098317610 1 ブレス_炎_中]
+[flag breath_f2 true]
+
+[ifClear 60139321]
+[charaSet M 1098317620 1 ブレス_炎_軽]
+[flag breath_f3 true]
+
+
+[ifClear 60139322]
+[charaSet M 1098317700 1 ブレス_氷_重]
+[flag breath_i1 true]
+
+[ifClear 60139323]
+[charaSet M 1098317710 1 ブレス_氷_中]
+[flag breath_i2 true]
+
+[ifClear 60139324]
+[charaSet M 1098317720 1 ブレス_氷_軽]
+[flag breath_i3 true]
+
+
+[ifClear 60139325]
+[charaSet M 1098317800 1 ブレス_毒_重]
+[flag breath_p1 true]
+
+[ifClear 60139326]
+[charaSet M 1098317810 1 ブレス_毒_中]
+[flag breath_p2 true]
+
+[ifClear 60139327]
+[charaSet M 1098317820 1 ブレス_毒_軽]
+[flag breath_p3 true]
+
+
+[else]
+[charaSet M 1098317600 1 ブレス_炎_重]
+[flag breath_f1 true]
+
+[endIf]
+
+[charaSet A 1010000 1 エリザベート]
+[charaSet B 4001000 1 メドゥーサ]
+[charaSet C 5043000 1 アスクレピオス]
+[charaSet D 3057001 1 ビショーネ]
+[charaSet E 1098257810 1 マシュ]
+[charaSet F 1098257310 1 ダ・ヴィンチ]
+
+[charaSet H 1098314200 1 おみぃさん]
+[charaSet I 1062001 1 黒姫]
+
+[charaSet J 1098313000 1 捕食竜]
+[charaPut J 2000,2000]
+[charaEffect J bit_talk_charge_aura_05]
+
+[charaSet K 5043000 1 アスクレピオス_演出用]
+[charaSet L 1098314200 1 おみぃさん_演出用]
+
+[sceneSet P 10000 1]
+[charaScale P 1.05]
+
+[sceneSet Q 238801 1]
+[sceneSet R 238801 1]
+[sceneSet S 238801 1]
+
+[imageSet T black_fade_re 1]
+[imageSet U black_fade_re 1]
+
+[charaSet Y 98115000 1 エフェクト用]
+
+[charaSet Z 98115000 1 通信エフェクト用]
+[charaPut Z 2000,2000]
+[charaEffect Z bit_talk_10_LowLevel]
+
+[scene 238801]
+[cameraMove 0.1 0,0 1.01]
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_195 0.1]
+
+＠黒姫
+く[line 3]あ[line 3]
+[k]
+
+[messageOff]
+[charaMove I 0,-10 1.0]
+[charaFadeout I 0.4]
+[wt 0.4]
+[cueSe Servants_104800 m42604]
+[wt 1.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 1.5]
+
+[subCameraOn 3]
+
+[charaLayer B sub #A]
+[charaLayer Q sub #A]
+
+[charaLayer C sub #B]
+[charaLayer G sub #B]
+[charaLayer M sub #B]
+[charaLayer R sub #B]
+
+[charaLayer D sub #C]
+[charaLayer A sub #C]
+[charaLayer S sub #C]
+
+[subCameraFilter #A maskEdge cut359_mask16 3 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask13 3 0,0,0,255]
+[subCameraFilter #C maskEdge cut359_mask02 3 0,0,0,255]
+
+[subRenderScale #B 1.05]
+[subRenderScale #C 1.05]
+
+[charaScale B 1.1]
+[charaScale Q 1.2]
+
+[charaDepth B 6]
+[charaDepth Q 5]
+
+[charaFace B 2]
+[charaFadeinFSR B 0 -100,160]
+[charaFadein Q 0 -250,-140]
+
+[charaScale C 1.1]
+[charaScale G 1.1]
+[charaScale M 1.1]
+[charaScale R 1.2]
+
+[charaDepth M 8]
+[charaDepth G 7]
+[charaDepth C 6]
+[charaDepth R 5]
+
+[charaFace C 5]
+[charaFadeinFSL C 0 -100,270]
+[charaFadein R 0 0,20]
+
+[charaScale D 1.1]
+[charaScale A 1.1]
+[charaScale S 1.2]
+
+[charaDepth D 7]
+[charaDepth A 6]
+[charaDepth S 5]
+
+[charaFace D 9]
+[charaFadeinFSR D 0 100,270]
+[charaFadein S 0 0,20]
+
+
+[charaTalk B]
+[subRenderFadeinFSSideR #A 0.3 380,-140]
+[subRenderMoveEaseFSSideR #A 360,-170 0.4 easeOutSine]
+[wt 0.4]
+
+＠メドゥーサ
+動きが止まりました！[r]今です！
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+[subRenderFadein #B 0.2 -50,-270]
+[subRenderMoveEase #B 0,-270 0.2 easeOutCirc]
+[wt 0.7]
+
+[subRenderMoveEase #B 50,-270 0.2 easeInCirc]
+[wt 0.2]
+[subRenderFadeout #B 0.2]
+
+[effect bit_talk_shelling_blue01]
+[se bac25]
+[wt 0.5]
+[flashin once 0.2 0.2 FFFFFFFF FFFFFF00]
+[charaShake J 0.05 3 3 0.7]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[charaFace G 1]
+[charaFadeinFSL G 0 -100,270]
+[charaFadeinFSL M 0 -100,270]
+
+[subRenderFadein #C 0.2 50,-370]
+[subRenderMoveEase #C 0,-370 0.2 easeOutCirc]
+[wt 0.7]
+
+[subRenderMoveEase #C -50,-370 0.2 easeInCirc]
+[wt 0.2]
+[subRenderFadeout #C 0.2]
+
+[effect bit_talk_blow02]
+[se ad859]
+[wt 0.3]
+[charaShake J 0.05 3 3 0.7]
+[wt 1.2]
+
+[charaFadeout D 0.1]
+[charaFace A 2]
+[charaFadeinFSR A 0 100,270]
+
+[branch lblBreath02f_1 breath_f1 true]
+[branch lblBreath02f_1 breath_f2 true]
+[branch lblBreath02f_1 breath_f3 true]
+
+[branch lblBreath02i_1 breath_i1 true]
+[branch lblBreath02i_1 breath_i2 true]
+[branch lblBreath02i_1 breath_i3 true]
+
+[branch lblBreath02p_1 breath_p1 true]
+[branch lblBreath02p_1 breath_p2 true]
+[branch lblBreath02p_1 breath_p3 true]
+
+[label lblBreath02f_1]
+[cueSe SE_25 25_ade1151]
+
+[branch lblConf03]
+[label lblBreath02i_1]
+[cueSe SE_25 25_ade1152]
+
+[branch lblConf03]
+[label lblBreath02p_1]
+[cueSe SE_25 25_ade1153]
+
+[label lblConf03]
+
+[subRenderFadein #B 0.2 -50,-270]
+[subRenderMoveEase #B 0,-270 0.2 easeOutCirc]
+[wt 0.7]
+
+[subRenderMoveEase #B 50,-270 0.2 easeInCirc]
+[wt 0.2]
+[subRenderFadeout #B 0.2]
+
+[branch lblBreath02f breath_f1 true]
+[branch lblBreath02f breath_f2 true]
+[branch lblBreath02f breath_f3 true]
+
+[branch lblBreath02i breath_i1 true]
+[branch lblBreath02i breath_i2 true]
+[branch lblBreath02i breath_i3 true]
+
+[branch lblBreath02p breath_p1 true]
+[branch lblBreath02p breath_p2 true]
+[branch lblBreath02p breath_p3 true]
+[label lblBreath02f]
+
+[effect bit_talk_29 0,-100]
+[se bac27]
+[wt 0.3]
+[charaShake J 0.05 3 3 0.7]
+[wt 1.2]
+
+[branch lblConf02]
+[label lblBreath02i]
+
+[effect bit_talk_ice_tidal_wave 0,0 H]
+[se ad685]
+[wt 0.3]
+[charaShake J 0.05 3 3 0.7]
+[wt 1.5]
+
+[branch lblConf02]
+[label lblBreath02p]
+
+[effect bit_talk_barrier_ppl_once]
+[cueSe SE_23 23_ade909]
+[wt 0.3]
+[seStop 23_ade909 1.2]
+[charaShake J 0.05 3 3 0.7]
+[wt 1.2]
+
+[label lblConf02]
+
+[subRenderFadein #C 0.2 50,-320]
+[subRenderMoveEase #C 0,-320 0.2 easeOutCirc]
+[wt 0.7]
+
+[subRenderMoveEase #C -50,-320 0.2 easeInCirc]
+[wt 0.2]
+[subRenderFadeout #C 0.2]
+
+[effect bit_talk_h_slash01_fs]
+[cueSe Servants_102800 bac658]
+[wt 0.2]
+[charaShake J 0.05 3 3 0.7]
+
+[charaFadeout G 0.1]
+[charaFadeout M 0.1]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+[wt 1.3]
+[charaScale B 1.0]
+[charaScale C 1.0]
+[charaScale G 1.0]
+[charaScale M 1.0]
+[charaScale D 1.0]
+[charaScale A 1.0]
+
+[subCameraOff]
+[charaLayer B normal]
+[charaLayer C normal]
+[charaLayer G normal]
+[charaLayer M normal]
+[charaLayer D normal]
+[charaLayer A normal]
+[charaLayer Q normal]
+[charaLayer R normal]
+[charaLayer S normal]
+
+[bgmStop BGM_BATTLE_195 1.5]
+
+[charaEffectStop J bit_talk_charge_aura_05]
+[wt 0.5]
+[charaShake J 0.1 3 3 0.7]
+[charaMove J 0,-50 1.0]
+[charaFadeout J 0.7]
+[wt 1.0]
+[shake 0.02 2 4 0.7]
+[cueSe SE_25 25_ade1157]
+[wt 4.0]
+
+[bgm BGM_MAP_55 0.1]
+
+[charaTalk on]
+
+[charaPut Z 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠マシュ
+眼前、捕食竜の脅威反応、消失……！[r]皆さんの勝利です！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+やったわ！[r]エクセレントに[#私:アタシ]の勝ちね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 19]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+やりましたー！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠チビーネ
+きゅぴっふー！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+よーし、おめでとう！　ついに[r]ザッハークの手足たる捕食竜を打ち破ったぞ！
+[k]
+
+[bgmStop BGM_MAP_55 1.5]
+
+[charaFace F 23]
+
+＠ダ・ヴィンチ
+これは大いなる前進……の、はずなんだけど、[r]まだ片付けるべきコトが残っているね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+
+＠おみぃさん
+アンタ、お医者さんだったろ？[r]ちょいと来てくれ！　絶対におかしいから！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+[line 3]ああ。[#診:み]よう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 15]
+[charaFadein I 0.1 1]
+
+＠黒姫
+くっ……う……。[r]ああっ……！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+
+＠おみぃさん
+さっきからずっとこうなんだよ。[r]目を閉じて[#呻:うめ]くばかり。
+[k]
+
+＠おみぃさん
+いや、戦って倒れる前からこんな感じではあったんだ。[r]何かに苦しんでるっていうかさ。
+[k]
+
+[charaFace H 11]
+
+＠おみぃさん
+見た限りで言えば……[r]どんどん顔色が悪くなっていってる。
+[k]
+
+＠おみぃさん
+正直、今にも死んじゃいそうじゃないか。
+[k]
+
+[charaFace H 12]
+
+＠おみぃさん
+何とか助けてあげられないかい？[r]……頼むよ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+こいつは蛇王ザッハークの[r]腹心とでもいうべき存在だろう。
+[k]
+
+＠アスクレピオス
+僕たちの敵として現れ、幾度となく戦い、[r]そして結果としてこうなっている。
+[k]
+
+[charaFace C 0]
+
+＠アスクレピオス
+その関係性は、[r]おまえだってわかっているはずだが。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 11]
+[charaFadein H 0.1 1]
+
+＠おみぃさん
+だから……治せない？
+[k]
+
+？1：まさか。アスクレピオス先生は[line 3]
+？2：医者の中の医者ですよ
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+その通りだ。
+[k]
+
+＠アスクレピオス
+医者であれば、助けられる患者を[r]助けないという選択肢はない。
+[k]
+
+＠アスクレピオス
+助けられない患者であっても、[r]助けようと試みないことはない。
+[k]
+
+＠アスクレピオス
+その繰り返しが、今まで助けられなかったものを[r]助けられるようになるという、
+[k]
+
+＠アスクレピオス
+僕が求める医術の発展へと[r]繋がっていくんだからな。
+[k]
+
+[charaFace C 5]
+
+＠アスクレピオス
+診察に入るぞ。[r]どいてろ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠おみぃさん
+う、うん！　あんがとね！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_57 0.1]
+
+[charaTalk depthOff]
+[charaDepth K 3]
+[charaDepth H 2]
+[charaDepth Q 1]
+
+[charaScale K 1.2]
+[charaScale Q 1.2]
+
+[charaTalk off]
+[charaFace K 7]
+[charaFadein K 0.5 130,0]
+[charaFadein Q 0.5 -120,-270]
+[charaMove K 150,0 0.5]
+[charaMove Q -100,-270 0.5]
+[wt 0.5]
+
+＠アスクレピオス
+ふぅむ……これは……。
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaTalk H]
+[charaFace H 11]
+[charaFadein H 0.2 -150,-10]
+[charaMove H -170,-10 0.4]
+[wt 0.4]
+[charaMoveReturn H -160,-10 0.8]
+
+＠おみぃさん
+（そわそわ）
+[k]
+
+[messageOff]
+[charaDepth C 6]
+[charaDepth L 5]
+[charaDepth R 4]
+
+[charaScale C 1.2]
+[charaScale R 1.2]
+
+[charaTalk C,H]
+[charaFace C 0]
+[charaFadein C 0.5 -130,0]
+[charaFadein R 0.5 120,-270]
+[charaMove C -150,0 0.5]
+[charaMove R 100,-270 0.5]
+[wt 0.5]
+
+[charaFadeout H 0.1]
+
+＠アスクレピオス
+なるほど。[r]であれば、可能性としては……。
+[k]
+
+[messageOff]
+[charaTalk L]
+[charaFace L 14]
+[charaFadein L 0.2 190,-10]
+[charaMove L 210,-10 0.4]
+[wt 0.4]
+[charaMoveReturn L 220,-5 0.8]
+
+[charaFadeout K 0.1]
+[charaFadeout Q 0.1]
+
+[charaFace H 3]
+[charaFadein H 0.1 1]
+
+＠L：おみぃさん
+（のぞきのぞき）[wt 0.7][charaMoveReturn L 220,-5 0.8][wt 0.8]
+[k]
+
+[charaFace C 2]
+[charaFace L 10]
+
+＠アスクレピオス
+ええい、邪魔だ！　大人しくしていろ！[messageShake 0.05 4 4 0.4][r]おまえは愚患者の保護者、愚保護者か？
+[k]
+
+[messageOff]
+[charaTalk H,C]
+[charaFadeout C 0.5]
+[charaFadeout L 0.5]
+[charaFadeout R 0.5]
+[wt 0.5]
+
+[charaTalk depthOn]
+
+＠おみぃさん
+いやごめんごめん、気になっちゃってさ。
+[k]
+
+[charaFace H 12]
+
+＠おみぃさん
+……で、どう？[r]何かわかった？　治る？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+僕を誰だと思っている。
+[k]
+
+[bgmStop BGM_MAP_57 1.5]
+
+[charaFace C 4]
+
+＠アスクレピオス
+まず間違いはないだろう。[r][#こいつは毒に冒されている]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 13]
+[charaFadein H 0.1 1]
+
+＠おみぃさん
+……！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_91 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+昨日今日の話ではないぞ。[r]全身に回って馴染みきっている。
+[k]
+
+＠アスクレピオス
+少なくとも我々が初めて会ったときから。[r]最初から、そうだったのだろう。
+[k]
+
+？1：何の毒？
+？！
+
+[charaFace C 1]
+
+＠アスクレピオス
+この状況だぞ。[r]わかりきっているだろう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+……蛇の毒、ですね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+そうだ。そして詳細はわからんが、[r]この毒は魔術的な要素とも結びついている。
+[k]
+
+＠アスクレピオス
+継続的であり、遅効性であり……[r]そう、何かの[#契約:ギアス]に近い。
+[k]
+
+＠アスクレピオス
+契約呪毒、とでも言うか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠マシュ
+我々は看護師や病理医ではありませんが、[r]分析のお手伝いはできるかもしれません。
+[k]
+
+＠マシュ
+データ共有をお願いできますか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+いいだろう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad15]
+[charaPut Z 1]
+[charaTalk F]
+[charaFace F 23]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+ふんふん。なるほど。
+[k]
+
+＠ダ・ヴィンチ
+確かにこれはギアスに近いものだ。[r]内容まではわからないけど。
+[k]
+
+＠ダ・ヴィンチ
+何かを強いられていて、それを破ると……[r]このように、死に至るという……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk D]
+[charaFace D 21]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+死！？　た、たいへんじゃないですか。
+[k]
+
+[charaFace D 0]
+
+＠ビショーネ
+な、何とかなります……よね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+……。[r]……。
+[k]
+
+[charaFace C 0]
+
+＠アスクレピオス
+なる。[r]というより、これしか手はあるまい。
+[k]
+
+＠アスクレピオス
+契約や術式の内容がわからなくとも、[r]蛇の毒であるなら、わからないまま治せる。
+[k]
+
+＠アスクレピオス
+[#血清]だ。
+[k]
+
+？1：聞いたことある！
+？2：蛇の毒と言えば、のやつ！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+でもさ、それって噛まれた蛇から作るヤツじゃ[r]なかったかしら？
+[k]
+
+＠エリザベート
+コイツが何の蛇に噛まれて[r]こうなってるかなんて知ってるの？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+知らんが、推測はできる。
+[k]
+
+＠アスクレピオス
+契約を強いられているというなら、[r]その相手は一人だけだろう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+……ザッハーク……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+クク。そして好都合なことに、[r]僕たちの目の前には、
+[k]
+
+＠アスクレピオス
+[#そいつの手足と同じである]、[r]という触れ込みの蛇の[#死体:残　滓]があるわけだ。
+[k]
+
+＠アスクレピオス
+本質としては同じ蛇で、[r]同じ毒の因子を持っているに違いない。
+[k]
+
+[charaFace C 1]
+
+＠アスクレピオス
+よって、理論的には[line 3][r]血清の作成は、可能だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠おみぃさん
+ほんとかい？　やったね。[r]んじゃ、早くやっとくれよ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+理論的には、と言ったぞ。[r]現実には越えなくてはならない障害がある。
+[k]
+
+＠アスクレピオス
+分析と、実際の血清作成のための魔力リソースだ。
+[k]
+
+[charaFace C 7]
+
+＠アスクレピオス
+突貫工事をせねばならんだろうから、[r]工程を幾つか無理矢理に省く必要もある。
+[k]
+
+＠アスクレピオス
+それも術式で誤魔化すことになるだろう。[r]その経費も必要だな。
+[k]
+
+？1：わかった、令呪でいいかな？
+？！
+
+[charaFace C 0]
+
+＠アスクレピオス
+医療物資の提供に[#躊躇:ためら]いがないのはいいが、[r]いささか不適だ。
+[k]
+
+＠アスクレピオス
+初めての血清作成だから、[r]さすがの僕も手探りで進めるしかない。
+[k]
+
+＠アスクレピオス
+いつどれだけ必要になるか読めない、[r]というか[line 3]
+[k]
+
+＠アスクレピオス
+必要なのは瞬間的なロケットエンジンではなく、[r]継続的な発電機のようなものだ。
+[k]
+
+[charaFace C 1]
+
+＠アスクレピオス
+令呪一画ぶんを、長くじわりと[#使い続ける]、[r]というようなことはできないだろう？
+[k]
+
+？1：それは……難しいかも……
+？2：でも、やるしかないなら、試しに……！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_91 1.5]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠おみぃさん
+ああ、待った待った。よくわかんないけど、[r][&坊ちゃん:嬢ちゃん]がヘソクリみたいなの出そうとしてんでしょ？
+[k]
+
+[charaFace H 15]
+
+＠おみぃさん
+その必要はないさね。
+[k]
+
+＠おみぃさん
+アタシが最初に助けてって言ったんだし、[r]アタシが出すよ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 5]
+[charaDepth P 1]
+
+[charaPut P 1]
+[charaFadeTime P 0.2 0.5]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+（髪で隠れた、右目のあたりに手を入れて……？）
+[k]
+
+[messageOff]
+[subCameraOn 1]
+
+[charaLayer L sub #A]
+[charaLayer R sub #A]
+[charaLayer T sub #A]
+[charaLayer U sub #A]
+[charaLayer Y sub #A]
+
+[subCameraFilter #A normal]
+[subRenderScale #A 1.02]
+[charaScale T 2.0]
+[charaScale U 2.0]
+[charaScale L 2.5]
+[charaScale R 2.0]
+[charaScale Y 1.5]
+
+[charaDepth T 9]
+[charaDepth U 8]
+[charaDepth Y 7]
+[charaDepth L 6]
+[charaDepth R 1]
+
+[charaFadein T 0.1 0,-950]
+[charaFadein U 0.1 0,250]
+
+[charaTalk off]
+[charaFace L 1]
+[charaFadein L 0.1 0,140]
+[charaFadein R 0.1 -150,-480]
+[wt 0.1]
+
+[subRenderFadein #A 0.5 0,0]
+[cueSe SE_23 23_ad1304]
+[seStop 23_ad1304 2.5]
+[wt 0.2]
+[charaMoveEase L 0,210 2.2 easeOutQuad]
+[charaMoveEase R -150,-410 2.2 easeOutQuad]
+
+[charaPut Y -100,220]
+[charaEffect Y bit_talk_eyelight_small]
+[wt 0.2]
+[charaMoveEase Y -100,-20 2.5 easeOutQuad]
+[wt 0.8]
+
+[charaFadeout P 0.1]
+[charaFadeout D 0.1]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaEffect H bit_talk_eyelight_small -30,-30]
+[wt 2.0]
+
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+[charaFadeout L 0.1]
+[charaFadeout R 0.1]
+[charaFadeout T 0.1]
+[charaFadeout U 0.1]
+
+[bgm BGM_TOU_1 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+＠おみぃさん
+実はさ、こないだの甘酒に使ったのは『右目の半分』。[r]アタシが渡せる力の全部じゃない……
+[k]
+
+[charaFace H 1]
+
+＠おみぃさん
+まあそれでも、右目は見えなくなったし、
+[k]
+
+＠おみぃさん
+他人から見たら[r]眼球が濁った感じになってたんだろうけどね。
+[k]
+
+[charaFace H 15]
+
+＠おみぃさん
+これはその右目ぶんの残りさ。[r]余り物で悪いけど、パワーとしては充分だろ？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+
+[charaPut Z 1]
+[charaTalk F]
+[charaFace F 25]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+こっから観測してるだけでもわかる。[r]すんごいリソースな気がする……！
+[k]
+
+＠ダ・ヴィンチ
+令呪より総量は多いかも！[r]しかも安定してその場に残ってる！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠マシュ
+ここで、先程ダ・ヴィンチちゃんが話しかけていた[r]伝承的情報について補足させていただきます。
+[k]
+
+＠マシュ
+蛇女房は、見るなと言っていたにもかかわらず[r]出産を覗かれたため、蛇であることがばれて、
+[k]
+
+＠マシュ
+人界を立ち去らざるをえなくなる。[r]ですがその際、子供のためのお乳の代わりに、
+[k]
+
+＠マシュ
+これをしゃぶらせるようにと[r][#眼球を残していった]。
+[k]
+
+＠マシュ
+子供はそれを舐めることで[r]すくすくと健康に成長していった[line 3]
+[k]
+
+＠マシュ
+というのが、蛇女房というカテゴリで[r]語られる民話の基本的な流れですね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+
+＠おみぃさん
+みゃはは。ヒトの恥ずかしいところを覗くのって[r]どうかと思うよねぇ？
+[k]
+
+[charaFace H 15]
+
+＠おみぃさん
+とにかく、これは少なくとも[r]『子供が立派に育つ』程度の力はあるはずだよ。
+[k]
+
+＠おみぃさん
+まあ捕食竜に好まれる、[r]みたいなデメリットもあるっていうか、
+[k]
+
+＠おみぃさん
+それでアンタたちに迷惑をかけた気もするけど。[r]倒したあとならまあいいでしょ。
+[k]
+
+[charaFace H 7]
+
+＠おみぃさん
+余ったら好きにしていいしさ。[r]さ、遠慮なく使っておくれ。
+[k]
+
+？1：でも、それは[line 3]
+？！
+
+[charaFace H 15]
+
+＠おみぃさん
+いいのいいの。アタシが使ってほしいんだ。[r]どうせ右目は見えなくなってたしね。
+[k]
+
+＠おみぃさん
+ほら早く、時間ないんだろ？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+医者としては、輸血も臓器移植も[r]患者が助かるなら使うしかない。
+[k]
+
+＠アスクレピオス
+これもその[#類:たぐい]か。
+[k]
+
+[charaFace C 2]
+
+＠アスクレピオス
+確かに問答している暇はない。[r]おまえの眼球、使わせてもらうぞ！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_TOU_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

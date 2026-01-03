@@ -1,0 +1,1777 @@
+
+
+＄91-50-30-02-2-0
+
+[enableFullScreen]
+[soundStopAll]
+
+
+[charaSet A 5030001 1 シェヘラザード]
+[charaSet B 5004001 1 ナーサリー・ライム]
+
+[charaSet C 5030001 1 シェヘラザード2]
+[charaScale C 1.1]
+[charaSet D 5004001 1 ナーサリー・ライム2]
+[charaScale D 1.1]
+
+[charaSet E 5012001 1 ニトクリス]
+
+[charaSet G 98006200 1 エネミー（魔本）1]
+[charaSet H 98006200 1 エネミー（魔本）2]
+[charaSet J 98006200 1 エネミー（魔本）3]
+
+[charaSet M 1098227500 1 物語喰い]
+
+[equipSet N 9301720 2 絆礼装]
+
+[charaSet P 98115000 1 エフェクト用ダミー]
+[imageSet Q back10000 1 1]
+[charaScale Q 1.1]
+[imageSet R back10000 1 1]
+[charaScale R 1.1]
+
+[sceneSet T 134000 1]
+
+[sceneSet U 134001 1]
+
+[charaDepth G 2]
+[charaDepth H 3]
+[charaDepth J 4]
+
+[charaDepth N 1]
+[charaDepth T 6]
+
+[charaDepth Q 2]
+[charaDepth P 3]
+[charaDepth B 4]
+[charaDepth A 5]
+
+[charaDepth R 10]
+
+[charaScale T 1.2]
+
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad913]
+
+[fadeout black 1.0]
+[wait fade]
+[seStop ad913 1.5]
+[wt 1.5]
+
+
+[scene 134000]
+
+[charaPut Q 1]
+[charaFadeTime Q 0.1 0.3]
+
+[fadein black 1.5]
+[wait fade]
+
+
+
+[se ad892]
+[effect bit_talk_rubble 0,0]
+[wt 2.0]
+[effectStop bit_talk_rubble]
+[wt 2.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠シェヘラザード
+ここは……天然の洞窟、でしょうか。[r]かなり滑り落ちてしまったようですね……。
+[k]
+
+[messageOff]
+[wt 0.8]
+
+[charaFace A 2]
+
+＠シェヘラザード
+[line 3]あの子は！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠ナーサリー・ライム
+ううん……。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+ショックで気絶したようになられていますが、[r]こうして見るかぎり……無事、でしょうか。
+[k]
+
+[charaFace A 4]
+
+＠シェヘラザード
+けれど、実際のところはわかりません。
+[k]
+
+＠シェヘラザード
+神秘が関与するかたちであれば、我々とて[r]地形のダメージだけでも致命傷になりえます。
+[k]
+
+＠シェヘラザード
+なんと怖ろしい。[r]やはりこの世は危険がいっぱいです……。
+[k]
+
+[messageOff]
+
+[wipeout circleIn 1.0 1.0]
+[bgm BGM_EVENT_5 1.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaPutFSR Q 2000,2000]
+[wt 0.1]
+
+
+[branchQuestClear lblClear2 94064915]
+[branchQuestClear lblClear2 3001101]
+
+[branchQuestClear lblClear1 3000303]
+
+[label lblNotClear1]
+
+[scene 105600]
+[branch lblConf]
+
+[label lblClear1]
+
+[scene 105900]
+[branch lblConf]
+
+[label lblClear2]
+
+[scene 158100]
+
+[label lblConf]
+
+[cameraFilter gray]
+[pictureFrame cut063_cinema]
+
+[wipein circleOut 1.0 1.0]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+[wt 0.5]
+[charaMoveReturn E 0,-55 0.5]
+[wt 1.0]
+
+[charaFace E 1]
+[wt 1.0]
+
+[wipeout circleOut 1.0 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut Q 1]
+[scene 134000]
+
+[cameraFilter normal]
+[pictureFrame]
+
+[wipein circleIn 1.0 1.0]
+[bgm BGM_EVENT_5 1.0 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+…………。
+[k]
+
+[messageOff]
+
+[se ad77]
+[seVolume ad77 0.0 0.5]
+[charaMove A 0,-10 0.5]
+[wait charaMove]
+
+[charaMoveReturn A -2,-10 0.2]
+[wait charaMoveReturn]
+[charaMoveReturn A 2,-10 0.3]
+[wait charaMoveReturn]
+[wt 0.2]
+
+[charaMove A 0,0 0.5]
+[wait charaMove]
+
+[bgmStop BGM_EVENT_5 1.0]
+[wt 0.5]
+[seStop ad77 0.1]
+[wt 0.5]
+
+＠ナーサリー・ライム
+う、ん……？
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 1.5 0,-50]
+[se ad77]
+[seVolume ad77 0.0 0.5]
+[wt 0.1]
+[charaMove B 0,0 1.0]
+[wt 0.5]
+[seStop ad77 0.1]
+[wt 0.5]
+
+＠ナーサリー・ライム
+ふわぁ。[r]寝ていたの、わたし？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+ああ。[r]無事……のようですね、よかった。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[wipein rollLeft 1.0 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+ごめんなさい、思い出したわ。[r]わたしのせいね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+いいえ、貴女のせいではありません。
+[k]
+
+＠シェヘラザード
+元々ダメージがあって抜けかけていた床に、[r]戦闘行為で我々がとどめを刺してしまったのでしょう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+床が抜けたのはそうでも、[r]あなたまで巻き込んでしまったのは謝りたいわ。
+[k]
+
+[charaFace B 3]
+
+＠ナーサリー・ライム
+でも……崩れたところに一緒に飛び込んで、[r]わたしを助けようとしてくれたのね。
+[k]
+
+＠ナーサリー・ライム
+とても危なかったでしょうに。[r]どうして？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+なぜ、でしょうね……？[r]身体が勝手に動いた、としか言いようがありません。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+……そう。
+[k]
+
+＠ナーサリー・ライム
+とにかく、言っておくわ。[r]ありがとう、シェヘラザード。
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[charaMoveReturn A 0,-10 0.5]
+[wt 1.0]
+
+[charaDepth R 10]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaPut R 0,0]
+[charaFadein T 1.0 100,-200]
+[charaFadeTime R 1.0 0.3]
+[wt 0.1]
+
+[charaMove T -100,-200 10.0]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 3.0]
+
+[charaFadeout R 1.0]
+[charaFadeout T 1.0]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+ここはあの図書室の地下よね？
+[k]
+
+＠ナーサリー・ライム
+ロンドン橋は落っこちて、わたしたちは[r]戻れないハンプティ・ダンプティ。
+[k]
+
+＠ナーサリー・ライム
+でも、王様の馬と家来なんかより[r]ずっと頼りにできるものがあるわ。
+[k]
+
+＠ナーサリー・ライム
+マスターとの連絡は取れているのかしら？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+いいえ……試してはみたのですが、[r]通信装置も術式も繋がりません。
+[k]
+
+[charaFace A 6]
+
+＠シェヘラザード
+何らかの阻害結界が張られているのか、[r]天然の立地としてそういう性質のある場所なのか……
+[k]
+
+[charaFace A 5]
+
+＠シェヘラザード
+どちらにせよ、ここも[#件:くだん]の魔術師が管理していた[r]工房の一部分ではあるのでしょう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+そう……。
+[k]
+
+＠ナーサリー・ライム
+困ったわね。地上への道もわからないし。[r]どうしようかしら？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+このような場合は、このままここで[r]待機しておくのがセオリーでしょうね。
+[k]
+
+＠シェヘラザード
+現場からあまり動かないほうがいいと聞きます。
+[k]
+
+＠シェヘラザード
+マスターとのパス自体は問題なく通っていますし、[r]いずれ向こうのほうから見つけていただけるでしょう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+そうね、そうするしかないかしら。
+[k]
+
+[messageOff]
+
+[wipeout rollRight 1.0 1.0]
+[bgmStop BGM_EVENT_2 1.5]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[charaShake B 0.03 3 3 0.3]
+
+＠ナーサリー・ライム
+気分的なものかもしれないけど。[r]ここ、少し寒いわね……？
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+
+[charaFace A 7]
+
+＠シェヘラザード
+……それでは、『アラジンと魔法のランプ』[bgm BGM_EVENT_139 1.0][r]のおはなしから。
+[k]
+
+＠シェヘラザード
+怪しげなマグリブ人の妖術師は、[r]アラジンをとある谷に連れていくと、
+[k]
+
+＠シェヘラザード
+たくさんの枯れた木切れを集めさせ、[r]それに火を点けたのでした……。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_139 1.0 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[scene 134001]
+[charaFadein Q 0.1 1]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ade505]
+[charaPut P 0,-215]
+[charaEffect P bit_talk_27]
+[wt 2.0]
+[charaEffectStop P]
+
+[se ade24]
+[seVolume ade24 0.0 0.0]
+[seVolume ade24 1.0 1.0]
+
+[charaFadeout Q 0.5]
+[wt 1.0]
+[charaPutFSR P 2000,2000]
+
+[bgm BGM_EVENT_139 1.0 1.0]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 2]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+
+＠ナーサリー・ライム
+わあ。ゆらゆら揺れて、ぱちぱち弾けて。[r]いつのまにか素敵な焚火が出てきたわ。
+[k]
+
+[charaPut Q 1]
+[charaFadeTime Q 0.2 0.5]
+[seStop ade24 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+
+＠シェヘラザード
+（まだ少し、不安そうですね。[r]　それならば[line 3]他にすることもないですし）
+[k]
+
+[messageOff]
+[charaFadeout Q 0.2]
+[wt 0.2]
+
+＠シェヘラザード
+このまま、お話でもしましょうか。
+[k]
+
+＠シェヘラザード
+アラジンの話の続きでも、[r]他の物語でも構いませんよ。
+[k]
+
+[charaTalk B]
+[charaFace B 1]
+
+＠ナーサリー・ライム
+せっかくだから続きをお願いしたいわ。[r]だいたいのところは知っていても、
+[k]
+
+＠ナーサリー・ライム
+本物のアラジンを一からシェヘラザードに[r]語ってもらえるなんて贅沢だもの。
+[k]
+
+[charaTalk A]
+[charaFace A 3]
+
+＠シェヘラザード
+わかりました。[r]それでは続けましょう[line 3]
+[k]
+
+[messageOff]
+
+[fadeout black 2.0]
+[bgm BGM_EVENT_139 2.0 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[fadein black 2.0]
+[bgmStop BGM_EVENT_139 2.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+[line 3]そして彼らは、[r]末永く幸せに暮らしたのでした……。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[se ade52]
+[wt 1.0]
+[seStop ade52 0.1]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut Q 1]
+[charaFadeTime Q 0.2 0.5]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+（よかった、少しは元気が出たようです。[r]　孤独な暗闇が怖いのは、誰でも同じですから）
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[charaFadeout Q 0.2]
+[wt 0.2]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+ねえ、次はあなたのお話を聞きたいわ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+私の……というと？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+[#シェヘラザードというあなた]のお話。[r]これもさっきのアラジンと一緒かしら。
+[k]
+
+＠ナーサリー・ライム
+だいたいのところは知っていても、[r]本当の意味では知らないことばかり。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+……。[r]……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+……駄目、かしら？[r]だったらいいのよ、全然いいのよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+いいえ、構いませんよ。
+[k]
+
+＠シェヘラザード
+そうですね。私のことを語るには、[r]ある王の話から始めなくてはなりません。
+[k]
+
+＠シェヘラザード
+主な登場人物はその王と、[r]王に仕えていた大臣の娘と、その妹です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+その娘があなたね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+はい。そして妹の名は[r]ドニアザード、と言います……。
+[k]
+
+[messageOff]
+
+[fadeout black 2.0]
+[bgm BGM_EVENT_11 2.0 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[fadein black 2.0]
+[bgm BGM_EVENT_11 2.0 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+それにしても、よくそんなに[r]毎日お話を語ることができたわね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+それについては、[r]父に感謝しなくてはなりません。
+[k]
+
+＠シェヘラザード
+小さなころから、[r]父が書物をたくさん読ませてくれたおかげです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+お話を読むのが好きだったのね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+そうですね、性に合っていたのでしょう。[r]物語、歴史、学問……
+[k]
+
+＠シェヘラザード
+どれも楽しく、家の書庫にあった本は[r]全て読んだと思います。
+[k]
+
+[charaFace A 0]
+
+＠シェヘラザード
+王に語ったお話には、[r]そうして読んだ物語の中にあったものもあれば、
+[k]
+
+＠シェヘラザード
+知識を繋ぎ合わせて自分で[r]どうにか組み立てたものもあります。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+やっぱり、シェヘラザードも[r]自分で物語を考えられる人だったのね。
+[k]
+
+＠ナーサリー・ライム
+式部みたいに本を書けばいいのに。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+いいえ、私など、紫式部さんや他の作家様とは[r]比べられるだけで恥ずかしいです。
+[k]
+
+＠シェヘラザード
+本当に、その場[#凌:しの]ぎで喋りながら伝える[r]物語の形ですので……
+[k]
+
+[charaFace A 3]
+
+＠シェヘラザード
+ですから、意外と無茶苦茶なのですよ。
+[k]
+
+＠シェヘラザード
+千夜一夜物語は、とんでもない入れ子構造に[r]なってしまっている部分もありますし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+入れ子構造？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+はい。物語の登場人物が『こういう話があります』と、[r]さらに別の物語を語り始めるのです。
+[k]
+
+＠シェヘラザード
+ご存じかもしれませんが、[r]たとえば『シンドバッドの冒険』は、
+[k]
+
+＠シェヘラザード
+シンドバッドという老人が、[r]同じシンドバッドという名前の若者に、
+[k]
+
+＠シェヘラザード
+過去に体験した七つの航海について[r]一夜ずつ語ったものです。
+[k]
+
+＠シェヘラザード
+『海のシンドバッド』が『陸のシンドバッド』に[r]語ったという感じですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+ややこしいわ、ややこしいわ。
+[k]
+
+[charaFace B 1]
+
+＠ナーサリー・ライム
+でもわたしは知ってるわ、[r]トゥイードルダムとトゥイードルディー。
+[k]
+
+＠ナーサリー・ライム
+どちらがどっち、何をしたの？[r]ややこしいということ自体が面白いのよね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+他にも、話の登場人物である仕立屋が出会った床屋が、[r]その床屋の六人の兄たちについて一つずつ話をする……
+[k]
+
+＠シェヘラザード
+というようなエピソードもあります。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+うふふ、うふふ！　どうして[r]そんなにややこしくしちゃったのかしら？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+それは、ふふ、どうしてでしょう。
+[k]
+
+＠シェヘラザード
+尺を稼ぐというか、エピソードを増やすのに[r]必死だった……のかも、しれませんね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+おかげで、ひどい王様だけじゃなくて[r]わたしたちもたくさんお話を聞けるのだわ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut Q 1]
+[charaFadeTime Q 0.2 0.5]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+（[line 3]そう、必死だった。私は……）
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_11 1.5]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout Q 0.1]
+[wt 1.0]
+
+[charaFace N 0]
+[charaScale N 6.5]
+[charaFadein N 0.5 350,1550]
+
+[blur lens 1.0 4 100]
+
+[wipeFilter circleIn 0.65 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+[bgm BGM_EVENT_75 0.1]
+
+＠シェヘラザード
+（ただ、死にたくなくて。朝日が見たくて）
+[k]
+
+＠シェヘラザード
+（休みなく訪れる次の夜、そのまた次の夜……）
+[k]
+
+＠シェヘラザード
+（永遠とも思える[line 3]死に怯えるだけの[line 3]）
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_75 1.0 0.5]
+[wait fade]
+
+[charaFadeout N 0.1]
+[wt 1.0]
+
+[blurOff]
+
+[wipeOff]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_75 1.0 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+シェヘラザード！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+あ……申し訳、ありません。[r]少し、ぼうっと……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+ごめんなさいね、許してね。
+[k]
+
+＠ナーサリー・ライム
+[#それ]があなたにとって怖い記憶でもあることは[r]知っていたのに、忘れてしまっていたわ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+そんな……ことは。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+でもね、大丈夫よ、シェヘラザード。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_75 1.5]
+
+
+
+[charaScale C 1.2]
+[charaScale D 1.2]
+[charaScale U 1.2]
+
+[charaDepth U 5]
+[charaDepth D 7]
+[charaDepth C 6]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaFadein U 1.0 0,-200]
+[wt 0.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaFace D 1]
+[charaFadein D 0.1 140,-50]
+[charaMove D 120,-50 0.8]
+[wt 0.6]
+[charaFace C 4]
+[charaFadein C 0.4 -130,-5]
+[charaMove C -120,-20 0.4]
+[wt 0.3]
+[se ad183]
+[wt 0.05]
+[charaShake C 0.01 1 2 0.3]
+[charaFace C 0]
+[wt 1.0]
+
+[bgm BGM_EVENT_136 0.1 0.8]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 1]
+
+[charaFace C 3]
+
+
+＠D：ナーサリー・ライム
+思い出すのが怖いなら、わたしがいるわ。
+[k]
+
+[charaFace D 0]
+
+＠D：ナーサリー・ライム
+暗い夜のこどもたち、寒い夜のあなたたち。[r]お父さんに叱られて、お母さんはどこかしら。
+[k]
+
+＠D：ナーサリー・ライム
+窓の外の唸り声、かみなり、それともこわーい獣？[r]家の中の祈り声、とどいて、それでも食べられちゃう？
+[k]
+
+[charaFace D 1]
+
+＠D：ナーサリー・ライム
+……怖いもの、不安なもの、[r]考えたくないもの、思い出したくないもの。
+[k]
+
+＠D：ナーサリー・ライム
+それを[#一時:ひととき]忘れさせるのがわたし、おかしな[#話:うた]、[r]愉快な[#話:うた]、小気味良い[#話:うた]、不思議な[#話:うた]。
+[k]
+
+＠D：ナーサリー・ライム
+ナーサリー・ライムよ。
+[k]
+
+[charaFace D 3]
+
+＠D：ナーサリー・ライム
+ねえ、嫌なことを思い出してしまったのなら、[r]次はわたしが[#謡:うた]う番かしら？
+[k]
+
+[charaPut Q 1]
+[charaFadeTime Q 0.2 0.5]
+
+[charaTalk C]
+[charaFace C 6]
+
+＠C：シェヘラザード
+（ああ……私は[line 3]）
+[k]
+
+[charaFace C 3]
+
+＠C：シェヘラザード
+（……あったかい……）
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFadeout Q 0.2]
+[bgmStop BGM_EVENT_136 0.5]
+[se ade303]
+[wt 0.5]
+
+[charaFace C 2]
+
+＠C：シェヘラザード
+[line 3]っ！？
+[k]
+
+[messageOff]
+[charaFadeout C 0.5]
+[charaFadeout D 0.5]
+[charaFadeout U 0.5]
+[wt 1.0]
+
+
+[se ade166]
+[charaTalk off]
+[charaTalk depthOn]
+[charaFace G 0]
+[charaFadeinFSL G 1.0 -306,0]
+[charaMoveFSL G -256,0 1.0]
+[charaFace H 0]
+[charaFadein H 1.0 -50,0]
+[charaMove H 0,0 1.0]
+[charaFace J 0]
+[charaFadeinFSR J 1.0 206,0]
+[charaMoveFSR J 256,0 1.0]
+[wt 2.0]
+[seStop ade166 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+また魔本だわ！？[r]こんなにたくさん！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+下がってくださいナーサリーさん、[r]私が[line 3]
+[k]
+
+＠シェヘラザード
+…………？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade166]
+[seStop ade166 1.2]
+[charaTalk off]
+[charaFace G 0]
+[charaFadeinFSL G 0.1 -256,0]
+[charaFace H 0]
+[charaFadein H 0.1 0,0]
+[charaFace J 0]
+[charaFadeinFSR J 0.1 256,0]
+[wt 0.1]
+[charaMoveFSL G -156,0 1.0]
+[charaMove H 100,0 1.0]
+[charaMoveFSR J 356,0 1.0]
+[wt 0.5]
+[bgmStop BGM_EVENT_80 1.5]
+[charaFadeout G 0.3]
+[charaFadeout H 0.3]
+[charaFadeout J 0.3]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadeinFSL A 0.1 0]
+[charaFace B 0]
+[charaFadeinFSR B 0.1 2]
+
+
+＠ナーサリー・ライム
+あれ？　絶対わたしたちに気付いてたはずなのに、[r]前を通り過ぎていったわね。いったい[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.5]
+
+
+[cameraFilter gray]
+
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth C 4]
+[charaDepth B 2]
+[charaDepth D 4]
+[wt 0.3]
+
+[se ad231]
+
+[charaFace C 0]
+[charaFadeinFSL C 0.1 -256,15]
+[charaFace D 0]
+[charaFadeinFSR D 0.1 256,15]
+
+[charaFadeTime C 0.1 0.3]
+[charaMoveScale C 1.3 0.3]
+[charaMoveFSL C -256,60 0.3]
+
+[charaFadeTime D 0.1 0.3]
+[charaMoveScale D 1.3 0.3]
+[charaMoveFSR D 256,60 0.3]
+
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.4]
+[charaShake A 0.05 2 2 0.5]
+[charaShake B 0.05 2 2 0.5]
+
+[cameraFilter normal]
+[wt 1.0]
+
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaFace A 2]
+[bgm BGM_EVENT_122 0.1]
+
+＠シェヘラザード
+っ、これ、は……！？
+[k]
+
+[charaFace B 4]
+
+＠ナーサリー・ライム
+ああ、ああ。何か来るわ、来てしまうわ……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+
+[charaScale G 0.9]
+[charaScale H 0.9]
+[charaScale J 0.9]
+[se ade166]
+[seStop ade166 1.2]
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+[charaFace H 0]
+[charaFadeinFSR H 0.1 128,-50]
+[charaFace J 0]
+[charaFadeinFSR J 0.1 384,-50]
+[wt 0.1]
+[charaMoveFSR H 256,-50 1.0]
+[charaMoveFSR J 512,-50 1.0]
+[wt 0.3]
+[charaMoveFSR G 128,-50 1.0]
+[wt 0.3]
+[charaFadeout H 0.3]
+[charaFadeout J 0.3]
+[wt 0.5]
+[charaShake G 0.05 5 5 0.5]
+[wt 0.5]
+
+[charaScale M 1.15]
+[se ad19]
+[charaFace M 0]
+[charaFadeinFSL M 0.5 -356,-50]
+[charaMove M 0,-80 0.5]
+[wt 0.7]
+[seStop ad19 0.1]
+
+[se ad191]
+[charaEffect G bit_talk_fangtrap]
+[wt 0.5]
+[se ad22]
+[flashin once 0.2 0.1 FFFFFFAF FFFFFF00]
+[fadeout white 0.1]
+[wait fade]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[fadein white 0.1]
+[wait fade]
+
+[wt 1.0]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+別の魔物が……魔本たちを、食べている……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+……。[charaShake B 0.05 2 2 0.5][r]……。
+[k]
+
+[messageOff]
+[charaMove B 0,-80 0.5]
+[wt 0.3]
+[se ad775]
+[wt 0.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[charaFace A 5]
+
+＠シェヘラザード
+まさか……上の図書室の真新しい傷に、[r]魔本たちの様子のおかしさ。
+[k]
+
+＠シェヘラザード
+魔本たちは、[#これ]から逃げようとしていた……！？
+[k]
+
+＠シェヘラザード
+あるいは、元凶の魔術師が死んだというのも、[r]病死ではなくこれのせいでは[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-80]
+
+＠ナーサリー・ライム
+だめ、だめだわ。シェヘラザード。[r]わかるの。理由なく、わたしだから、わかるの。
+[k]
+
+＠ナーサリー・ライム
+あれは、[#物語を喰らうもの]、だわ……！
+[k]
+
+＠ナーサリー・ライム
+書物の天敵、物語られるものへの劇毒。[r]そういう『性質』を持つもの[line 3]！
+[k]
+
+＠ナーサリー・ライム
+……足が、動かないの。
+[k]
+
+＠ナーサリー・ライム
+あなただけでも逃げて。[r]逃げてマスターたちを呼んできて。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+[line 3]ですが……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-80]
+[wt 1.0]
+
+[charaFace B 5]
+
+[charaMove B 0,0 0.3]
+[se ad7]
+[wt 0.5]
+
+＠ナーサリー・ライム
+駄目よ、あなただってわかってるでしょう！
+[k]
+
+＠ナーサリー・ライム
+あなたも無関係ではいられない、[r]あの怪物の『物語を殺す』劇毒はあなたにも届く！
+[k]
+
+＠ナーサリー・ライム
+あなただって、[#シェヘラザードという物語]の[r]一部かもしれないのよ！
+[k]
+
+[charaFace B 2]
+
+＠ナーサリー・ライム
+[line 3]死んでしまう、死んでしまうわ！
+[k]
+
+＠ナーサリー・ライム
+それは絶対に駄目よ、いつも言っているでしょう、[r]死にたくないんでしょう、あなた！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+……はい。そうですね。
+[k]
+
+＠シェヘラザード
+そう、です。私は、死にたくありません。[r]あの夜と何も変わってはいません。
+[k]
+
+
+＠シェヘラザード
+けれど。[bgmStop BGM_EVENT_122 1.5]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+[charaFace A 5]
+
+[bgm BGM_EVENT_123 0.1]
+＠シェヘラザード
+今の私は、どうしてか、知っているのです。
+[k]
+
+＠シェヘラザード
+すべきことをしないまま、間違った方法で、[r]私だけが生き残っても[line 3]
+[k]
+
+＠シェヘラザード
+それは結局、死んでいるのと同じことなのだと。
+[k]
+
+[charaFace A 0]
+
+＠シェヘラザード
+私は欲深くなりました。
+[k]
+
+＠シェヘラザード
+私は、私の周りの全てと朝を迎えたくなった。
+[k]
+
+＠シェヘラザード
+ああ、でも[line 3]
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_123 1.0 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[charaFace N 0]
+[charaScale N 6.5]
+[charaFadein N 0.5 350,1550]
+
+[blur lens 1.0 4 100]
+
+[wipeFilter circleIn 0.65 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+＠シェヘラザード
+（本当は、変わっていなくて。[r]　思い出した、だけなのかもしれません）
+[k]
+
+[messageOff]
+
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[blurOff]
+
+[wipeOff]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadeTime B 0.5 0.7]
+[wt 1.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 134001]
+
+[charaFace N 0]
+[charaScale N 6.5]
+[charaFadein N 0.5 350,1550]
+
+[blur lens 1.0 4 100]
+
+[wipeFilter circleIn 0.65 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+＠シェヘラザード
+（だってあそこにも、同じように温かな誰かがいた。[r]　守りたい、守らねばと思う誰かがいた）
+[k]
+
+＠シェヘラザード
+（……ドニアザード）
+[k]
+
+＠シェヘラザード
+（私にお話をねだって、よく変わる表情で驚いたり[r]　喜んだりしてくれた、愛しい小さな妹）
+[k]
+
+＠シェヘラザード
+（そう、あのときも……[r]　私は、自分の命を守るためだけでなく）
+[k]
+
+＠シェヘラザード
+（あの子を守るためにも、[r]　物語っていたのかもしれない[line 3]）
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_123 2.0 1.0]
+[wait fade]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[blurOff]
+
+[wipeOff]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+ならば、同じです。あのときも、今も。[r]私がすべきことは、全く同じ。
+[k]
+
+＠シェヘラザード
+当たり前に、私は、私のすべきことをします。[r]それだけなのです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_123 1.5]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+シェヘラザード……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[bgm BGM_MAP_64 0.1]
+
+＠シェヘラザード
+物語を喰らうというのなら、いいでしょう。[r]喰らいなさい。
+[k]
+
+＠シェヘラザード
+私はそれ以上に生まれ出づる物語を以て、[r]貴方を迎え撃つだけです。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaScale M 1.15]
+[se ad19]
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 0,-20]
+[wt 1.0]
+
+[seStop ad19 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠シェヘラザード
+来なさい、物語喰い。
+[k]
+
+＠シェヘラザード
+たとえ貴方が、王のように物語を喰い尽くす[r]死と貪食の怪物であろうと。
+[k]
+
+＠シェヘラザード
+私の物語は、千と一の夜を越えても[line 3]
+[k]
+
+[charaFace A 2]
+
+＠シェヘラザード
+守りたいものがある限り、[r]けっして尽きることはありません……！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_MAP_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]

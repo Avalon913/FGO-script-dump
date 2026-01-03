@@ -1,0 +1,622 @@
+
+
+＄94-10-12-01-2-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 10018000 1 カズラドロップ]
+[charaSet B 1098255100 1 ゴルドルフ]
+[charaSet C 1098239320 1 カドック]
+[charaSet D 1098272340 1 オベロン]
+[charaSet E 98101600 1 ミニ魔猪シルエット1]
+[charaSet F 98101600 1 ミニ魔猪シルエット2]
+[charaFilter E silhouette 00000080]
+[charaFilter F silhouette 00000080]
+
+[charaSet G 98101600 1 ミニ魔猪1]
+[charaSet H 98101600 1 ミニ魔猪2]
+
+[charaSet I 98115000 1 エフェクト用]
+
+[charaSet J 10018000 1 カズラドロップ_拡大用]
+[charaScale J 1.2]
+[sceneSet K 230000 1]
+[charaScale K 1.2]
+
+[sceneSet L 229300 1]
+[charaScale L 1.2]
+
+[charaSet M 98115000 1 エフェクト用]
+[charaSet N 98115000 1 エフェクト用]
+
+[sceneSet O 229300 1]
+[charaScale O 1.2]
+
+[sceneSet P 10000 1]
+[charaScale P 1.2]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth K 2]
+[charaDepth J 3]
+
+[scene 230000]
+
+[charaFadein K 0.1 0,-200]
+[charaTalk off]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+[subCameraOn 1]
+[charaLayer I sub #A]
+[charaLayer E sub #A]
+[charaLayer F sub #A]
+[charaLayer L sub #A]
+[subCameraFilter #A maskEdge cut359_mask08 3 0,0,0,255 0]
+[subRenderScale #A 1.01]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_KAZURA_1 0.1]
+
+＠カズラドロップ
+ここで行われるパパチェックは、[r]ズバリ[line 3]
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ade1099]
+[cameraMove 3.0 0,0 1.15]
+[wt 2.8]
+[seStop 24_ade1099 0.2]
+[wt 0.2]
+[cueSe SE_24 24_ade1100]
+[cameraMove 0.2 0,0 1.01]
+[effect bit_talk_41_fs]
+[charaFace J 11]
+
+＠カズラドロップ
+料理チェック、です！
+[k]
+
+[effectStop bit_talk_41_fs]
+
+＠カズラドロップ
+完璧なパパは、[r]お休みの日に料理を作ってくれるのです！
+[k]
+
+？1：なる、ほど……？
+？2：（パパらしい……のかなあ……？）
+？！
+
+[messageOff]
+[charaFadeout J 0.4]
+[charaFadeout K 0.4]
+[wt 0.6]
+[charaTalk on]
+
+＠ゴルドルフ
+うーん。
+[k]
+
+＠ゴルドルフ
+正しい父親の動きと言われればそうかもしれんが、[r]別に必須要件ではなさそうというか。
+[k]
+
+＠ゴルドルフ
+１発目に持ってくるようなものなのだろうか？
+[k]
+
+＠ゴルドルフ
+それに外はメルヘン感のある屋敷っぽいのに、[r]ここは妙に近代的だし……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠カズラドロップ
+うるさいですねー。
+[k]
+
+＠カズラドロップ
+ここは休日のパパ感を出すのが[r]一番の要件なんですから。
+[k]
+
+＠カズラドロップ
+そのために作った虫空間内の小部屋です。[r]文句を言わないでください。
+[k]
+
+[charaFace A 0]
+
+＠カズラドロップ
+ともあれ[line 3][&アナタ:貴女]たちがどれだけ[r]完璧なパパかをチェックするために、
+[k]
+
+＠カズラドロップ
+ここで料理を作ってもらいます。
+[k]
+
+＠カズラドロップ
+基本的な調味料や食材はそこの冷蔵庫に入っていますが、[r]あくまでも基本的なものだけなので、
+[k]
+
+＠カズラドロップ
+生鮮食品など他に必要なものがあれば、[r]外に出て自分たちの手で仕入れてくださいね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+外に出て仕入れる？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠カズラドロップ
+このあたりは『キッチンの森』という設定なので、[r]森っぽい動物を一応配置してありますから。
+[k]
+
+＠カズラドロップ
+シンクの泉、みたいな場所を見つけられれば[r][#水棲:すいせい]生物もいるかもですよ。
+[k]
+
+＠カズラドロップ
+そういう食材確保能力も[r]完璧なパパの能力の一つ、です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カドック
+いろいろ言いたいことはあるが……
+[k]
+
+＠カドック
+まずは作戦会議からか。[r]どうする？
+[k]
+
+？1：パパっぽい料理はあんまり自信ないかも
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.7]
+[charaCrossFade D 1098272300 18 0.3]
+[wt 0.1]
+[se ade158]
+[wait charaCrossFade D]
+[wt 0.5]
+
+＠オベロン
+問われる前に答えておこう！
+[k]
+
+＠オベロン
+[#古今東西:こ こ ん と う ざ い]、王子様が料理をする物語があるだろうか[r]いやない！
+[k]
+
+[charaFaceFade D 10 0.2]
+
+＠オベロン
+……いや、できなくもないけど、[r]求められてないでしょ、そういう家庭的なのは。
+[k]
+
+[charaFaceFade D 13 0.2]
+
+＠オベロン
+なので僕は役に立たない。すまないね。[r]味見だけ任されよう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠カドック
+ま、作れなくもない。[r]パパっぽい、というので引っ掛かりそうだが。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+[bgmStop BGM_KAZURA_1 1.5]
+
+＠ゴルドルフ
+フフ……フフフフフ？
+[k]
+
+？1：自信ありげな含み笑い！
+？2：新所長は頼れる気がしてました！
+？！
+
+[charaFace B 1]
+[bgm BGM_EVENT_94 0.1]
+＠ゴルドルフ
+ウム！[r]食と言えば私、私と言えば食だ。
+[k]
+
+＠ゴルドルフ
+なんたってそういう魔術も[r]いくつか開発しているくらいだからな。
+[k]
+
+[charaFace B 3]
+
+＠ゴルドルフ
+仕方ない、ここは私が音頭を取って[r]おまえたちを導いてやろうではないか。
+[k]
+
+[charaFace B 0]
+
+＠ゴルドルフ
+パパっぽい料理というのも[line 3]実感としては[r]わからんが、知識としての想像はできている。
+[k]
+
+＠ゴルドルフ
+任せておけ。
+[k]
+
+＠ゴルドルフ
+さて、まずは食材確認だ。
+[k]
+
+[messageOff]
+[se ad311]
+[charaMove B -100,0 0.4]
+[charaFadeout B 0.4]
+[wt 0.6]
+[seStop ad311 0.5]
+[wt 0.5]
+
+[cueSe SE_24 24_ade1012]
+[wt 1.0]
+[se ad77]
+[wt 2.0]
+[se ade330]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.2 0,0]
+
+＠ゴルドルフ
+ざっと見たところ、[r]調味料以外は全然ダメだな。
+[k]
+
+＠ゴルドルフ
+外に出て仕入れてくるしかあるまい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カドック
+獣をどうにかするつもりなら[r]僕も力になれるな。
+[k]
+
+＠カドック
+何しろ獣への対抗魔術だ。[r]回避も誘引もお手のものだよ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：たのもしい……それじゃあ、行ってきます！
+？2：ちょっと待っててね！
+？！
+
+[charaFace A 1]
+
+＠カズラドロップ
+はーい、行ってらっしゃい、虫さんたち……[r]じゃなくて、ここはやっぱりこうですか。
+[k]
+
+[charaFace A 12]
+
+＠カズラドロップ
+行ってらっしゃい、パパ！
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_EVENT_94 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+[scene 229300]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_147 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠オベロン
+さて。移動したはいいけど、大丈夫かな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠ゴルドルフ
+なに、心配は無用だ。
+[k]
+
+＠ゴルドルフ
+どんな肉であっても、私の魔術にかかれば[r]だいたい何でも美味しい霜降りに。
+[k]
+
+＠ゴルドルフ
+そしてチョチョイとさらに手を加えれば[r]美味しいベーコンになる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠オベロン
+いや、そっちの心配じゃなくてね。
+[k]
+
+＠オベロン
+どれだけ可愛らしい場所であっても、[r]森と名の付く場所は優しくはないって事。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠カドック
+同感だな。
+[k]
+
+[charaFace C 0]
+
+＠カドック
+一歩足を踏み入れただけで何が起こるか[r]わからないのが、森という場所[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_147 1.0]
+[charaFace C 7]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+
+＠オベロン
+[%1]！
+[k]
+
+[messageOff]
+[charaMove D 0,20 0.2]
+[charaMoveScale D 1.1 0.2]
+[wt 0.2]
+[se ad7]
+[shake 0.05 2 2 0.2]
+[cameraMove 0.2 0,-20 1.1]
+[wt 0.2]
+
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaPut I 1]
+[charaEffect I bit_talk_43h_fs]
+[subRenderFadein #A 0.1 0,-250]
+[charaFadein L 0.1 0,0]
+[charaFadeout D 0.1]
+[charaScale D 1.0]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.4]
+[se ad75]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+
+[charaDepth L 1]
+[charaDepth E 2]
+[charaDepth F 3]
+
+[seStop ad75 0.4]
+[charaFadeinFSL E 0.1 -260,300]
+[charaMoveFSL E -260,-200 0.2]
+[wt 0.1]
+[charaFadeinFSR F 0.1 260,300]
+[charaMoveFSR F 260,-200 0.2]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[se ad222]
+[charaPutFSL M -260,0]
+[shake 0.02 5 5 0.7]
+[se ad226]
+[seVolume ad226 0 0.6]
+[charaEffect M bit_talk_impactlanding]
+[wt 0.1]
+[charaPutFSR N 260,0]
+[charaEffect N bit_talk_impactlanding]
+[se ad226]
+[seVolume ad226 0 0.6]
+[wt 1.0]
+[seStop ad226 1.0]
+[wt 1.5]
+
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[subRenderFadeout #A 0.1]
+
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[wt 0.5]
+
+？1：いきなり引っ張られて何事かと思った……
+？2：あ、ありがとう！
+？！
+
+[charaFaceFade D 16 0.2]
+
+＠オベロン
+いつにも増して緊張感がない。[r]妖精領域の怖さを知らない訳じゃないだろう。
+[k]
+
+＠オベロン
+そろそろ頭を切り替え[&たまえ:るんだね]。[r]僕の手もそう長い訳じゃない。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[charaDepth P 1]
+[charaDepth D 2]
+[charaDepth O 3]
+[charaDepth G 4]
+[charaDepth H 5]
+
+[charaScale G 1.2]
+[charaScale H 1.2]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadeinFSR G 0.4 300,130]
+[charaFadeinFSL H 0.4 -300,130]
+[charaFadein O 0.4 0,-200]
+[charaMoveEaseFSR G 300,30 2.0 easeInSine]
+[charaMoveEaseFSL H -300,30 2.0 easeInSine]
+[charaMoveEase O 0,-300 2.0 easeInSine]
+
+[wt 0.5]
+
+[charaFace D 5]
+[se ad526]
+[wt 3.5]
+[charaFadeout O 0.4]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[wt 0.6]
+
+＠オベロン
+ほら見ろ。さっそく物騒なのがやってきた。[r]遊び気分はここまでだよ。
+[k]
+
+[charaFadeTime P 0.2 0.5]
+
+＠オベロン
+（……にしても、大きさはこちら合わせだな。[r]　これならなんとかなりそうだ）
+[k]
+
+＠オベロン
+（虫空間ではカズラドロップ以外の生物は[r]　均等に小さくなる、という事だね）
+[k]
+
+[charaFadeout P 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+ぶつくさ言っとる場合かー！
+[k]
+
+＠ゴルドルフ
+私も援護はしてやる、[r]ベーコンのためにも頑張りなさいね！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カドック
+狩りをするのは予定通りだからな。[r]僕も[#攪乱:かくらん]を手伝おう。
+[k]
+
+＠カドック
+主力は[%1]の簡易召喚と[r]オベロンだ。仕留めるのは任せたぞ。
+[k]
+
+？1：なんだか新鮮な布陣だけど[line 3]
+？2：了解！　食材確保、頑張ろう！
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

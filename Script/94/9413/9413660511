@@ -1,0 +1,87 @@
+
+
+＄94-13-66-05-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3031000 1 哪吒]
+
+[sceneSet O 232100 1]
+
+[scene 232100]
+
+[fadein black 0.5]
+[wait fade]
+[wt 0.1]
+
+[se ad987]
+[seStop ad987 0.5]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 0,-30]
+[charaMove A 1 0.5]
+[charaShake A 0.03 2 2 0.5]
+[wt 0.95]
+
+[bgm BGM_EVENT_96 0.1]
+
+＠哪吒
+やはり　不本意。[r]霊基容量　過少。継戦能力　過少。勝率　超過少。
+[k]
+
+＠哪吒
+ボクは、たたかいたかった。
+[k]
+
+[messageOff]
+[charaMove A 0,-50 0.4]
+[charaFadeout A 0.4]
+[wt 0.4]
+
+[se ad144]
+[se ad44]
+[seVolume ad44 0 0.4]
+[wt 1.2]
+
+
+[subCameraOn 1]
+
+[charaLayer A sub #A]
+[charaLayer O sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask23 5 255,255,255,255]
+
+[subCameraRoll #A -10 0,0]
+
+[subRenderScale #A 0.6]
+
+[charaDepth O 2]
+[charaDepth A 3]
+[charaScale O 1.2]
+[charaScale A 1.4]
+[charaRoll O 10]
+[charaRoll A 5]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0 415,110]
+[charaFadein O 0 350,50]
+
+[subRenderFadein #A 0.4 -300,-100]
+[wt 0.6]
+
+
+＠哪吒
+約定履行　おまえに服従。[r]ただし　[#一寸:ちょっとだけ]　休憩希望……
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_96 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

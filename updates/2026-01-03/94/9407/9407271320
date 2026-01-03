@@ -1,0 +1,439 @@
+
+
+＄94-07-27-13-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 6033000 1 岡田以蔵]
+[charaSet C 25002000 1 葛飾北斎]
+
+[sceneSet D 10000 1]
+[charaScale D 1.05]
+[sceneSet E 10000 1]
+[charaScale E 1.05]
+
+[charaSet J 1098244300 1 人型エネミー（化け猫）]
+
+[charaSet G 98115000 1 通信用ノイズ1]
+[sceneSet H 157400 1]
+[sceneSet I 157400 1]
+[charaScale H 1.1]
+[charaScale I 1.2]
+[charaDepth H 2]
+[charaDepth I 1]
+[charaDepth B 3]
+[charaDepth C 4]
+[charaDepth J 5]
+
+[charaSet K 1098125600 1 葛飾北斎_とと様なし]
+[charaDepth K 6]
+
+[charaSet S 98115000 1 通信用ノイズ1]
+[charaSet T 98115000 1 通信用ノイズ1]
+
+[charaEffect G bit_talk_10_LowLevel]
+[charaPut G 2000,2000]
+
+[scene 157400]
+[charaFadein H 0.1 70,-180]
+[charaFadein I 0.1 0,-250]
+[overlayFadein D 0.1 0,-760]
+[overlayFadein E 0.1 0,760]
+[wt 0.1]
+
+[charaMove H -70,-180 3.5]
+[fadein black 1.5]
+[wait fade]
+
+
+[wt 1.5]
+[charaFadeout H 0.5]
+[charaFadeout D 0.5]
+[charaFadeout E 0.5]
+[wt 0.5]
+
+[wt 0.7]
+[se ad73]
+[charaMove I 0,-300 0.5]
+[charaFadeout I 0.4]
+[wt 0.2]
+
+[charaTalk off]
+[charaDepth B 2]
+[charaDepth C 2]
+[charaDepth S 3]
+[charaDepth T 3]
+
+[charaFace B 0]
+[charaFadeinFSL B 0.5 -256,30]
+[charaMoveFSL B -256,-5 0.3]
+[wt 0.05]
+[charaPutFSL S 0]
+[charaEffect S bit_talk_quickmove]
+[wt 0.15]
+[se ade503]
+[seStop ade503 0.4]
+
+[charaPutFSR T 2]
+[charaEffect T bit_talk_quickmove]
+[charaFace C 0]
+[charaFadeinFSR C 0.5 256,30]
+[charaMoveFSR C 256,-5 0.3]
+[wt 0.05]
+[wt 0.25]
+
+[charaMoveFSL B -256,0 0.3]
+[wt 0.2]
+[charaMoveFSR C 256,0 0.3]
+[wt 0.3]
+[charaPutFSL S 2000,2500]
+[charaPutFSR T 2000,2500]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+
+＠岡田以蔵
+ふっ。
+[k]
+
+[charaTalk C]
+[charaFace C 0]
+
+＠葛飾北斎
+……っと。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut G 0,0]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,0]
+
+＠マシュ
+以蔵さんが先輩を抱えて障害をクリア。[r]難なく忍び込めたようですね。
+[k]
+
+？1：うん。何か探知できたらすぐに教えて
+？！
+
+[charaFace A 7]
+＠マシュ
+了解です。
+[k]
+
+＠マシュ
+城内の構造も解析しています。[r]おおまかであれば、案内も可能です。
+[k]
+
+[charaFadeout A 0.1]
+[charaPut G 2000,2000]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,0]
+
+＠葛飾北斎
+もう外が騒がしいね。[r]ばあげすと殿たち、おっ始めてくれたようだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,0]
+
+＠岡田以蔵
+今のうちじゃ。先へ向かうき。[r]マスターはわしの背について来るがか。
+[k]
+
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_70 1.0 0.4]
+[cueSe SE_22 22_ade745]
+[cueSeVolume 22_ade745 0.0 0.5]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 157500]
+[wt 0.5]
+
+[bgm BGM_EVENT_70 1.0 1.0]
+[wipein rightToLeft 1.0 1.0]
+[cueSeStop 22_ade745 1.0]
+[wait wipe]
+
+[bgmStop BGM_EVENT_70 2.0]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 0,0]
+
+＠岡田以蔵
+……のう、北斎。[r]ひとつ聞かせてや。
+[k]
+
+＠岡田以蔵
+ソウハクとは[#何:なん]な？[r]ジジイが口にしよったけんど。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 0,0]
+
+＠葛飾北斎
+アア、[#宗伯:そうはく]かい。
+[k]
+
+[charaFace C 0]
+
+＠葛飾北斎
+馬琴の旦那には、[r]特に目をかけた[#跡取:あとと]り息子がいたのサ。
+[k]
+
+＠葛飾北斎
+一人きりの男子で、[r]その長子の名が[#宗伯:そうはく]だ。
+[k]
+
+[charaFace C 9]
+
+＠葛飾北斎
+お[#路:みっ]ちゃんの旦那てぇわけだな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 0,0]
+
+＠岡田以蔵
+あの女、[#輿入:こしい]れしちょったがか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 0,0]
+
+＠葛飾北斎
+そりゃ、当然でい！？[r]義理の娘だって言ったろうヨ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 0,0]
+
+＠岡田以蔵
+ほう～、ほ、ほう……ほうかえ。
+[k]
+
+[charaFace B 0]
+
+＠岡田以蔵
+あのうるさいジジイのことじゃ。[r]その息子は英才教育で、しごきにしごかれたんじゃろ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 0,0]
+
+＠葛飾北斎
+そりゃあ、まあナ。[r]一人前の医者にさせようと随分と張り切ってたサ。
+[k]
+
+[charaFace C 0]
+
+＠葛飾北斎
+……ただなァ、[#宗伯:そうはく]は生まれついての病弱でな。
+[k]
+
+＠葛飾北斎
+お[#路:みっ]ちゃんが[#嫁:とつ]いで七、八年ほどたった頃には[r]すっかり寝たきりで、そのまま亡くなったのサ。
+[k]
+
+[charaFace C 4]
+＠葛飾北斎
+お[#路:みっ]ちゃんは、それ以来、[r][#後家:ご　け]さんとして家を切り盛りした。
+[k]
+
+[charaFace C 15]
+
+＠葛飾北斎
+おれなんかはてっきり[r]すぐに実家に引っ返すものと思っていたが[line 3]
+[k]
+
+[charaFace C 0]
+
+＠葛飾北斎
+あの[#娘:こ]はずっと、義理の父親を手伝いながら[r]独りで家を守って頑張ったのサ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 0,0]
+
+＠岡田以蔵
+………………。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,0]
+
+＠葛飾北斎
+そのうちに馬琴の旦那は[r]戯作で酷使しすぎた目が、両方とも不自由になってね。
+[k]
+
+＠葛飾北斎
+あの[#娘:こ]は、[#義父:おとっさん]の目の代わりになって、[r]なあんでもしたんだ。
+[k]
+
+[charaFace C 0]
+
+＠葛飾北斎
+途中だった『南総里見八犬伝』も、馬琴の旦那の口述を[r]お[#路:みっ]ちゃんが書き留めて、ようやく完成したんだ。
+[k]
+
+[messageOff]
+[wt 0.4]
+
+？1：……お[#路:みち]さん……
+？！
+
+？1：そういう時代だった、と言ったらそれまでだけど
+？2：でもやっぱり……お[#路:みち]さんはえらいね
+？！
+
+[charaFace C 9]
+
+＠葛飾北斎
+……アア！
+[k]
+
+[charaFace C 13]
+
+＠葛飾北斎
+娘としても、女としても、[r]おれにはとてもかなわねえや。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 2.5]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 0,0]
+
+＠岡田以蔵
+…………。
+[k]
+
+[charaFace B 9]
+
+＠岡田以蔵
+炊事に洗濯、寝たきりの亭主の看病に、[r]盲目の[#舅:しゅうと]の面倒までかえ。
+[k]
+
+[charaFace B 8]
+
+＠岡田以蔵
+ハッ、[r]楽しいことの一個も無い生涯じゃのう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 14]
+[charaFace K 14]
+[charaFadein C 0.1 0,0]
+[charaFadein K 0.1 0,0]
+
+＠葛飾北斎
+……ふふっ。[r]言われちまったナア、とと様ヨウ？
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaFace J 0]
+[charaFadeinFSL J 0.5 -276,0]
+[charaMoveFSL J -256,0 0.3]
+
+[charaTalk on]
+[charaTalk J]
+[charaFace J 1]
+[se ad504]
+＠
+[charaTalk J]
+[line 6]！！[bgm BGM_EVENT_80 0.1]
+[k]
+
+[se ade503]
+[seVolume ade503 0.7 0.5]
+[charaTalk C,K]
+[charaFace C 2]
+[charaFace K 2]
+[charaMove C 256,0 0.3]
+[charaMove K 256,0 0.3]
+[wt 0.5]
+[seStop ade503 0.1]
+
+＠葛飾北斎=spot[C,K]
+……っ……しまった！！[r]こんな物陰に隠れてやがったか！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,0]
+
+＠岡田以蔵
+わしに任せるぜよ。[r]仲間を呼ぶ前に片付けちゃるき！[se ad976]
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,1315 @@
+
+
+
+
+
+
+
+
+
+＄04-00-05-19-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098324200 1 マシュ]
+[charaSet B 1098324200 1 マシュ（演出用）]
+[charaSet C 1098323500 1 ハベトロット]
+[charaSet D 1098323500 1 ハベトロット（演出用）]
+[charaSet E 1098321000 1 メタトロン・ジャンヌ]
+[charaSet L 1098321000 1 メタトロン・ジャンヌ（演出用）]
+[charaSet F 1098324400 1 リリス]
+[charaSet G 1098324400 1 リリス（演出用）]
+[charaSet H 1098239320 1 カドック]
+[charaSet I 9019002 1 裁判長]
+[charaSet J 9019002 1 裁判長（演出用）]
+[charaSet K 1098321400 1 モリアーティ]
+
+[imageSet M back10000 1 1]
+[charaScale M 1.01]
+[imageSet N back10000 1 1]
+[charaScale N 1.01]
+
+[sceneSet O 248300 1]
+[charaScale O 1.2]
+[sceneSet P 248300 1]
+[charaScale P 1.2]
+[sceneSet Q 248300 1]
+[charaScale Q 1.2]
+[sceneSet R 248300 1]
+[charaScale R 1.2]
+
+
+[charaSet W 98115000 1 エフェクト用1]
+[charaSet X 98115000 1 エフェクト用2]
+[charaSet Y 98115000 1 エフェクト用3]
+[charaSet Z 98115000 1 エフェクト用4]
+
+
+[charaTalk depthOff]
+
+[charaPut W 2000,2500]
+[charaEffect W bit_talk_barrier_gld_powerful]
+[wt 0.5]
+
+[bgm BGM_BATTLE_137 0.1]
+
+[pictureFrameTop cut063_cinema]
+[fadein black 0.5]
+[wait fade]
+
+[cueSe SE_23 23_ade930]
+[effect bit_talk_guard_eighthit]
+
+[charaPut X -350,50]
+[charaEffect X bit_talk_blow02]
+[wt 0.3]
+
+[se ad170]
+[charaPut Y 350,-50]
+[charaEffect Y bit_talk_blow02]
+[wt 0.3]
+
+[cueSe SE_24 24_ade1019]
+[charaPut X 150,-150]
+[charaEffect Y bit_talk_blow02]
+[wt 0.3]
+
+[cueSe SE_24 24_ade1020]
+[charaPut Y -150,150]
+[charaEffect Y bit_talk_blow02]
+[wt 0.5]
+
+[se ad706]
+[se ad147]
+[se ad368]
+[se ad398]
+[seVolume ad398 0 0.5]
+[wt 0.05]
+[effect bit_talk_gram_slash_03_fs]
+[wt 0.4]
+
+[seStop ad706 0.3]
+[seStop ad147 0.3]
+[seStop ad368 0.3]
+[seStop ad398 0.3]
+[se ad633]
+[fadeout white 0.1]
+[se ad240]
+[cueSe SE_21 21_ad1118]
+[cueSeVolume 21_ad1118 0 0.4]
+[fowardEffect bit_talk_35]
+[wait fade]
+
+[effectDestroy bit_talk_guard_eighthit]
+
+[charaPut X 2000,2500]
+[charaPut Y 2000,2500]
+[charaEffectDestroy X bit_talk_blow02]
+[charaEffectDestroy Y bit_talk_blow02]
+
+[effectDestroy bit_talk_gram_slash_03_fs]
+
+[charaPut X 2000,2500]
+[charaPut Y 2000,2500]
+[charaEffect X bit_talk_barrier_gld_powerful]
+[charaEffect Y bit_talk_barrier_gld_powerful]
+
+[scene 248300]
+
+[se ad671]
+
+[charaDepth W 2]
+[charaDepth C 3]
+[charaDepth A 4]
+
+[charaPut W 1]
+
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0 0,-35]
+
+[charaShake A 0.03 3 3 0.8]
+
+[charaMoveScaleEase A 1.0 0.3 easeOutCubic]
+[charaMoveEase A 0,-50 0.3 easeOutCubic]
+
+[seStop ad671 0.7]
+
+[fadein white 0.1]
+[wait fade]
+[wt 1.0]
+
+＠マシュ
+くっ……！
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 300,-50]
+[wt 0.4]
+
+＠ハベトロット
+マシュ！
+[k]
+
+[charaTalk A]
+[charaFace A 30]
+
+＠マシュ
+だ、いじょうぶ……です……！
+[k]
+
+[messageOff]
+
+
+[subCameraOn 2]
+[charaLayer J sub #A]
+[charaLayer X sub #A]
+[charaLayer O sub #A]
+
+[charaLayer Z sub #B]
+[charaLayer D sub #B]
+[charaLayer B sub #B]
+[charaLayer Y sub #B]
+[charaLayer P sub #B]
+
+[subCameraFilter #A normal]
+[subCameraFilter #B normal]
+
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+
+[subRenderDepth #A 2]
+[subRenderDepth #B 3]
+
+[charaDepth O 2]
+[charaDepth X 3]
+[charaDepth J 4]
+
+[charaScale J 1.2]
+[charaScale X 1.2]
+[charaScale O 1.2]
+
+[charaPut X 20,0]
+
+[charaFadein O 0 20,-260]
+
+[charaDepth P 2]
+[charaDepth Y 3]
+[charaDepth D 4]
+[charaDepth B 5]
+[charaDepth Z 6]
+
+[charaScale P 1.2]
+[charaScale Y 1.2]
+[charaScale B 1.2]
+[charaScale D 1.2]
+
+[charaPut Y -120,0]
+
+[charaFace B 5]
+[charaFace D 12]
+[charaFadein B 0 125,-30]
+[charaFadein D 0 440,0]
+[charaFadein P 0 -120,-260]
+
+[subRenderFadein #A 0.4 0,0]
+[charaMoveEase X 120,0 0.6 easeOutSine]
+[charaMoveEase O 120,-260 0.6 easeOutSine]
+[wt 0.6]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[se ad984]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.4 -200,-30]
+[wt 0.4]
+[seStop ade428 0.2]
+[wt 0.6]
+
+＠J：裁判長
+では、マシュ・キリエライト。[r]貴女に[#贖罪:しょくざい]の機会を与え、その命を救いましょう。
+[k]
+
+[messageOff]
+[charaTalk B,J]
+[subRenderFadein #B 0.5 0,0]
+[wt 0.5]
+
+[charaDepth I 3]
+[charaDepth A 4]
+[charaFace I 7]
+[charaFadeinFSL I 0.1 -256,-50]
+[charaFace A 5]
+[charaFadeinFSR A 0.1 256,-50]
+
+[subRenderFadeout #A 0.1]
+[wt 0.4]
+
+
+
+
+＠B：マシュ
+[FFFFFF]？[-]
+[k]
+
+＠D：ハベトロット
+命を……救う……？
+[k]
+
+[messageOff]
+[charaTalk I,D]
+[subRenderFadeout #B 0.5]
+[wt 0.5]
+
+[charaPut X 1]
+[charaPut J 2000,2500]
+[charaEffectEdgeBlur J ffffff ffffff 3 3]
+[charaPut O 0,-260]
+
+[charaPut Y 1]
+[charaPut B 0,-50]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+＠I：裁判長
+慈愛を持ち、節制し、高い倫理を持ちなさい。[r]正義の力を行使し、思慮深く[line 3]全てを公平に。
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+＠マシュ
+それは……！
+[k]
+
+[charaTalk I]
+[charaFace I 0]
+
+＠I：裁判長
+[#新しい裁定者]、マシュ・キリエライト。[r]貴女を歓迎します。
+[k]
+
+[se ad927]
+[charaEffectEdgeBlur I ffffff ffffff 3 3]
+
+＠I：裁判長
+それまで、私の[#胎内:は　ら]でゆるりと過ごしなさい。[r]考えも変わるでしょう。
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+
+＠マシュ
+な……何、を……！？
+[k]
+
+[messageOff]
+[charaTalk J,A]
+[charaFace J 2]
+[charaPut J 0,-30]
+[subRenderFadein #A 0.8 0,0]
+[wt 0.8]
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[charaPut I 2000,2500]
+[charaEffectEdgeBlurDestroy I]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[subRenderDepth #A 3]
+[subRenderDepth #B 2]
+[subRenderFadein #B 0.1 0,0]
+[charaPut P -120,-220]
+
+＠J：裁判長
+クラスがルーラーに変わった頃、また会いましょう。[r]その時には、錆びついた盾も戻っているはず。
+[k]
+
+[bgmStop BGM_BATTLE_137 1.5]
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[wt 0.6]
+
+[cueSe SE_25 25_ad1501]
+[charaPut Z 0,40]
+[charaEffect Z bit_talk_restraint_jeanne]
+[wt 3.0]
+[charaMoveEase Z 0,-40 0.7 easeOutQuad]
+[charaMoveEase P -120,-300 0.7 easeOutQuad]
+[wt 4.0]
+
+[se ad169]
+[seVolume ad169 0 0]
+[seVolume ad169 0.5 0.5]
+[charaMoveEase Z -600,-20 1.0 easeOutSine]
+[wt 0.6]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[subRenderDepth #A 2]
+[subRenderDepth #B 3]
+
+[charaPut Z 600,-25]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+[charaEffectEdgeBlurDestroy J]
+
+[subRenderFadeout #B 0.1]
+
+[charaFadeout D 0]
+[charaFadeout J 0]
+[charaFadeout O 0]
+[charaFadeout P 0]
+[charaPut X 2000,2500]
+[charaPut Y 2000,2500]
+
+[subCameraOff]
+[charaLayer B normal]
+[charaLayer D normal]
+[charaLayer J normal]
+[charaLayer O normal]
+[charaLayer P normal]
+[charaLayer X normal]
+[charaLayer Y normal]
+[charaLayer Z normal]
+[charaScale B 1.0]
+[charaScale D 1.0]
+[charaScale J 1.0]
+[charaScale O 1.0]
+[charaScale P 1.0]
+[charaScale X 1.0]
+[charaScale Y 1.0]
+[wt 0.5]
+
+[charaMoveEase Z -30,-25 1.0 easeOutCubic]
+[seStop ad169 1.5]
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 1.3]
+
+[se ad1045]
+[seVolume ad1045 0 0.6]
+[charaEffectStop Z bit_talk_restraint_jeanne]
+[wt 1.5]
+[seStop ad1045 0.5]
+[charaFadeout I 0.1]
+[wt 0.5]
+
+[charaDepth F 4]
+[se ad60]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 30,-50]
+[charaMove F 0,-50 0.4]
+[wt 0.4]
+[seStop ad60 0.2]
+[wt 0.8]
+
+[bgm BGM_EVENT_71 0.1]
+
+＠リリス
+[line 3]裁判長。ちょっといい？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+
+＠I：裁判長
+リリス？
+[k]
+
+[charaFace I 11]
+
+＠I：裁判長
+……この結界の中に踏み込んでくるとは。[r]時間の停止を嗅ぎ取って、相殺したのですね。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 0,-50]
+
+＠リリス
+アテシなりに頑張ったのさ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 0,-50]
+
+＠I：裁判長
+頑張った程度でできる芸当ではありませんよ。[r]祈りの結晶……『聖杯の雫』を使いましたか。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-50]
+
+＠リリス
+結構溜め込んだからね。[r]ここらで出血大セールってやつ。それよりさー。
+[k]
+
+[charaFace F 10]
+
+＠リリス
+今、何をしたの？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 0,-50]
+
+＠I：裁判長
+私の幾つかある宝具で、私の[#胎内:な　か]に閉じ込めました。
+[k]
+
+＠I：裁判長
+マシュ・キリエライトには[#裁定者:ル ー ラ ー]として[r]生まれ変わってもらいます。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 0,-50]
+
+＠リリス
+……ふーん。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 11]
+[charaFadein I 0.1 0,-50]
+
+＠I：裁判長
+何か不満でも？[r]貴女も望んでいたことでしょうに。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 0,-50]
+
+＠リリス
+アテシは別に望んでないよ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+
+＠I：裁判長
+そうなのですか。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 0,-50]
+
+＠リリス
+あー、でも。良かったら手伝わせてくれない？
+[k]
+
+[messageOff]
+[subCameraOn 2]
+[charaLayer J sub #A]
+[charaLayer X sub #A]
+[charaLayer O sub #A]
+
+[charaLayer G sub #B]
+[charaLayer Y sub #B]
+[charaLayer P sub #B]
+
+[subCameraFilter #A normal]
+[subCameraFilter #B normal]
+
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+
+[subRenderDepth #A 2]
+[subRenderDepth #B 3]
+
+[charaDepth O 2]
+[charaDepth X 3]
+[charaDepth J 4]
+
+[charaScale J 1.2]
+[charaScale X 1.2]
+[charaScale O 1.2]
+
+[charaPut X 90,0]
+
+[charaTalk J,F]
+[charaFace J 11]
+[charaFadein J 0 -230,-30]
+[charaFadein O 0 90,-260]
+
+[charaDepth P 2]
+[charaDepth Y 3]
+[charaDepth G 4]
+
+[charaScale P 1.2]
+[charaScale Y 1.2]
+[charaScale G 1.2]
+
+[charaPut Y -90,0]
+
+[charaFace G 12]
+[charaFadein G 0 230,-50]
+[charaFadein P 0 -90,-260]
+
+[subRenderFadein #A 0.5 0,0]
+[charaMove X 120,0 0.5]
+[charaMove J -200,-30 0.5]
+[charaMove O 120,-260 0.5]
+[wt 0.5]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+＠J：裁判長
+……何を企んでいるのですか？
+[k]
+
+[messageOff]
+[charaTalk G,J]
+[subRenderFadein #B 0.5 0,0]
+[charaMove Y -120,0 0.5]
+[charaMove G 200,-50 0.5]
+[charaMove P -120,-260 0.5]
+[wt 0.7]
+
+＠G：リリス
+悪巧みだけど？
+[k]
+
+[messageOff]
+[charaTalk J,G]
+[charaFace I 21]
+[subRenderFadeout #B 0.5]
+[wt 0.6]
+
+＠J：裁判長
+お断りします。[r]貴女ではマシュ・キリエライトに勝てないでしょう？
+[k]
+
+[messageOff]
+[charaTalk G,J]
+[charaFace G 3]
+[subRenderFadein #B 0.5 0,0]
+[wt 0.5]
+
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+＠G：リリス
+……は？
+[k]
+
+[messageOff]
+[charaTalk I,G]
+[subRenderFadeout #B 0.6]
+[wt 0.6]
+[charaFadeout G 0.1]
+[wt 0.2]
+
+＠I：裁判長
+貴女は所詮、メソポタミアの悪霊。
+[k]
+
+[charaFace I 11]
+＠I：裁判長
+如何に神代の出自といえども、[r]鉄壁の盾を持つ彼女に比肩しうる存在ではない。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+
+＠リリス
+……うわー、言いたい放題。[r]傷つくなー。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 9]
+[charaFadein I 0.1 0,-50]
+
+＠I：裁判長
+事実ですが。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 15]
+[charaFadein F 0.1 0,-50]
+
+＠リリス
+いやいや、いやいやいや。[r]アテシにもちゃんとあるから、切り札とか。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+
+＠I：裁判長
+どうでもいいことです。[r]立ち去りなさい、慈悲を籠めて見逃しましょう。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+＠リリス
+……ま、見逃してくれるならそうするけど。[wt 1.0][charaFace F 2][r]じゃねー。
+[k]
+
+[messageOff]
+[se ad60]
+[charaMove F -30,-50 0.4]
+[charaFadeout F 0.4]
+[seStop ad60 1.2]
+[wt 2.1]
+
+[bgm BGM_EVENT_71 1.0 0.5]
+
+[charaPut Y 90,0]
+[charaPut P 90,-260]
+[subRenderFadein #B 0.5 0,0]
+[charaMove Y 120,0 0.5]
+[charaMove P 120,-260 0.5]
+[wt 0.9]
+
+[se ad60]
+[charaTalk G]
+[charaFace G 15]
+[charaFadein G 0.4 0,-50]
+[charaMove G -50,-50 0.4]
+[wt 0.4]
+[seStop ad60 0.2]
+[wt 0.6]
+
+＠G：リリス
+あー……どうしたものかなぁ。[r]胎内に隠すとか反則でしょ！
+[k]
+
+[charaFace G 5]
+＠G：リリス
+……。[r]……。
+[k]
+
+[charaFace G 0]
+＠G：リリス
+胎内かぁ……胎内なら……。[r]む、そうか。
+[k]
+
+[bgmStop BGM_EVENT_71 2.0]
+[charaFace G 1]
+＠G：リリス
+[#子供ならイケるじゃん]！[r]アテシってば、賢者か何かか？
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.4]
+[wt 0.7]
+
+[se ad60]
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.4 -30,-50]
+[charaMove F 0,-50 0.4]
+[wt 0.4]
+[seStop ad60 0.2]
+
+＠リリス
+ねぇメタトロン。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 0,-50]
+
+＠裁判長
+まだいたのですか。今は忙しいと[line 3]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 0,-50]
+
+＠リリス
+ちょっと耳寄りな話があるんですけどー？
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+[subRenderFadeout #B 0.1]
+[charaFadeout J 0]
+[charaFadeout O 0]
+[charaFadeout G 0]
+[charaFadeout P 0]
+[charaPut X 2000,2500]
+[charaPut Y 2000,2500]
+[charaEffectDestroy X bit_talk_barrier_gld_powerful]
+[charaEffectDestroy Y bit_talk_barrier_gld_powerful]
+[subCameraOff]
+[charaLayer J normal]
+[charaLayer O normal]
+[charaLayer G normal]
+[charaLayer P normal]
+[charaLayer X normal]
+[charaLayer Y normal]
+[charaScale J 1.0]
+[charaScale O 1.0]
+[charaScale G 1.0]
+[charaScale P 1.0]
+[charaScale X 1.0]
+[charaScale Y 1.0]
+
+[pictureFrameTop]
+[wt 0.5]
+
+[overlayFadein M 0.1 0,738]
+[overlayFadein N 0.1 0,-738]
+
+[charaDepth O 3]
+[charaDepth I 4]
+[charaDepth H 5]
+[charaDepth W 9]
+
+[charaScale O 1.2]
+[charaFadein O 0.1 100,-260]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.2]
+
+[se adm31]
+[cueSe Battle bac320]
+[charaPut W 1]
+[charaEffectStop W bit_talk_barrier_gld_powerful]
+[wt 1.2]
+
+[seStop adm31 0.6]
+[cueSeStop bac320 0.6]
+[wt 1.2]
+
+[charaEffectDestroy W bit_talk_barrier_gld_powerful]
+
+
+[cueSe SE_23 23_ade873]
+[seVolume 23_ade873 0 0]
+[wt 0.1]
+[seVolume 23_ade873 0.8 1.0]
+
+[shake 0.01 1 1 1.8]
+[wt 0.4]
+[charaMove M 0,835 1.4]
+[charaMove N 0,-838 1.4]
+[wt 1.4]
+
+[seStop 23_ade873 0.2]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.7]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠I：裁判長
+結界を解除できましたか。[r]……図書館管理者の仕業ですね。
+[k]
+
+？1：マシュに何をした……！？
+？！
+
+[charaFace I 7]
+＠I：裁判長
+彼女は選出されました。[r]万物万人を公平に、秩序を掲げ正義を行使する[line 3]
+[k]
+
+[charaFace I 11]
+＠I：裁判長
+裁定者のクラスに。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+
+＠カドック
+な[line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 11]
+[charaFadein I 0.1 1]
+
+＠I：裁判長
+その多大なる功績を以て、[r]彼女は[#座に昇格されるでしょう]。
+[k]
+
+＠I：裁判長
+[line 3][#一時:ひととき]の死など、恐れる必要もありません。
+[k]
+
+？1：……！
+？！
+
+[messageOff]
+[subCameraOn 1]
+
+[charaLayer H sub #A]
+
+[subCameraFilter #A through]
+
+[subRenderDepth #A 1]
+
+[subRenderFadein #A 0 0,0]
+
+[se ad7]
+[charaMoveScaleEase I 1.2 0.3 easeOutSine]
+[charaMoveScaleEase O 1.4 0.3 easeOutSine]
+[charaMoveEase I 0,15 0.3 easeOutSine]
+[charaMoveEase O 120,-340 0.3 easeOutSine]
+[wt 0.15]
+
+[blur lens 0.25 4 5]
+
+[charaScale H 1.4]
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.25 300,15]
+[charaMoveEase H 200,15 0.3 easeOutSine]
+[wt 0.05]
+
+[seStop ad7 0.3]
+[se ad977]
+[wt 0.1]
+[shake 0.02 2 2 0.4]
+[wt 0.05]
+[charaMoveEase I -50,15 0.15 easeOutSine]
+[charaMoveEase O 70,-340 0.15 easeOutSine]
+[wt 0.8]
+
+＠カドック
+[%1]！
+[k]
+
+
+＠カドック
+落ち着け！[r]おまえが立ち向かってどうする……！？
+[k]
+
+？1：わかってる、けど……！
+？！
+
+[messageOff]
+[blurOff lens 0.6]
+[charaMoveEase I -250,15 0.6 easeOutSine]
+[charaMoveEase O -110,-340 0.6 easeOutSine]
+[charaMoveEase H 250,15 0.6 easeOutSine]
+[wt 0.9]
+
+[charaDepth E 2]
+[charaFace E 21]
+[charaFadein E 0.1 1]
+[wt 0.2]
+
+[charaFace H 10]
+＠カドック
+それで。僕たちを追跡してきたってことは、[r]処刑の時間ってことか？
+[k]
+
+[charaTalk I]
+[charaFace I 9]
+
+＠裁判長
+[line 3]ええ、そうです。
+[k]
+
+[charaTalk H]
+[charaFace H 13]
+
+＠カドック
+だが、ここは地獄の最下層だ。[r]これ以上、どこにもいけはしないぞ。
+[k]
+
+[charaTalk I]
+[charaFace I 7]
+
+＠裁判長
+[line 3]追放であるなら、いずれにせよ安住の地を[r]定めてはなりません。
+[k]
+
+[charaFace I 11]
+＠裁判長
+[&貴方:貴女]たちが[#煉獄:れんごく]にて、定住していたのは明白な事実。[r]ならば、極刑もやむを得ないでしょう。
+[k]
+
+[messageOff]
+[charaTalk E,I]
+[subRenderFadeout #A 0.6]
+[charaFadeout I 0.6]
+[charaFadeout O 0.6]
+[wt 0.6]
+[charaFadeout H 0]
+[wt 0.15]
+[subCameraOff]
+[charaLayer H normal]
+[charaScale H 1.0]
+[wt 0.05]
+
+＠メタトロン・ジャンヌ
+……強引だなぁ。[r]さすがにそれは、理がなさすぎじゃない？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaScale I 1.0]
+[charaTalk I]
+[charaFace I 9]
+[charaFadein I 0.1 1]
+＠裁判長
+[&貴方:貴女]たちを粛清するのは前提なので、[r]理はあります。断固として。
+[k]
+
+[charaFace I 0]
+＠裁判長
+何か問題がありますか？
+[k]
+
+＠裁判長
+私の理に反論があるのならば、[r]さらに厳密、かつ綿密な理を求めますが。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 26]
+[charaFadein E 0.1 1]
+
+＠メタトロン・ジャンヌ
+めんどくさい女……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠裁判長
+何がめんどくさいのでしょうか。
+[k]
+
+＠裁判長
+【怠惰】としての要素を切り捨てた私に、[r]めんどくささというのは有り得ませんが。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 21]
+[charaFadein E 0.1 1]
+
+＠メタトロン・ジャンヌ
+そういう意味合いじゃなくて……。[r]いや、まあ、いいか。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth E 2]
+[charaDepth O 3]
+[charaDepth L 4]
+[charaDepth P 5]
+[charaDepth J 6]
+
+[charaScale L 1.2]
+[charaScale O 1.2]
+
+[charaFace L 0]
+[charaFadein L 0.8 250,20]
+[charaFadein O 0.8 -90,-260]
+[charaMove L 200,20 30.0]
+[charaMove O -120,-260 30.0]
+[wt 1.1]
+
+＠メタトロン・ジャンヌ
+ともかく、ここにいる皆を殺しに来たのは理解した。[r]ちなみに問うけど、[&彼:彼女]らの協力者も？
+[k]
+
+[messageOff]
+[charaScale J 1.2]
+[charaScale P 1.2]
+
+[charaFace J 0]
+[charaFadein J 0.8 -250,20]
+[charaFadein P 0.8 90,-260]
+[charaMove J -200,20 30.0]
+[charaMove P 120,-260 30.0]
+[wt 1.0]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+＠裁判長
+無論です。[r]カルデアの協力者である以上、罪を背負っている。
+[k]
+
+[messageOff]
+[charaFace L 20]
+[charaFadeTime J 0.5 0]
+[charaFadeTime P 0.5 0]
+[wt 0.65]
+
+＠メタトロン・ジャンヌ
+私も？
+[k]
+
+[messageOff]
+[charaFace J 0]
+[charaFadeTime J 0.5 1.0]
+[charaFadeTime P 0.5 1.0]
+[wt 0.65]
+
+＠裁判長
+貴女を殺す訳にはいかない。[r]それは承知のはずですね。
+[k]
+
+[charaFace J 11]
+＠裁判長
+そしてその上で、貴女は私に敵わないでしょう。[r]ただ【怠惰】であることを望まれる貴女には。
+[k]
+
+[messageOff]
+[charaFace L 7]
+[charaFadeTime J 0.5 0]
+[charaFadeTime P 0.5 0]
+[wt 0.65]
+
+＠メタトロン・ジャンヌ
+んー、まあ。そうかもね。
+[k]
+
+[messageOff]
+[charaFace J 11]
+[charaFadeTime J 0.5 1.0]
+[charaFadeTime P 0.5 1.0]
+[wt 0.5]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaFadeout L 0.1]
+[charaFadeout O 0.1]
+[wt 0.15]
+
+＠裁判長
+だから、貴女に私は止められないのです。[r]従って戦う必要はありません。
+[k]
+
+[messageOff]
+[charaFadeout J 0.6]
+[charaFadeout P 0.6]
+[wt 0.6]
+
+[charaSet L 1098321000 1 メタトロン・ジャンヌ（演出用）]
+[charaSet J 9019002 1 裁判長（演出用）]
+[sceneSet O 248300 1]
+[charaScale O 1.2]
+[sceneSet P 248300 1]
+[charaScale P 1.2]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk E]
+＠メタトロン・ジャンヌ
+うーん、ぐうの音も出ない。まさに正論。[r]戦うと負ける。負けるから戦う必要はない。
+[k]
+
+[charaFace E 1]
+＠メタトロン・ジャンヌ
+でも、勝てないけど負けもしない。[r]そういう状況だってあると思わない？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠裁判長
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+＠メタトロン・ジャンヌ
+第一、戦闘なんてめんどくさい。
+[k]
+
+＠メタトロン・ジャンヌ
+そんなことしなくても、[r]私はただ怠惰なまま[line 3]
+[k]
+
+[bgmStop BGM_EVENT_90 1.5]
+
+[charaFace E 14]
+＠メタトロン・ジャンヌ
+貴女と、話ができればそれで良かった。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 26]
+[charaFadein I 0.1 1]
+[wt 1.3]
+
+
+[charaFaceFade I 25 0.2]
+
+＠裁判長
+まさか。
+[k]
+
+[messageOff]
+
+[se ad533]
+[charaTalk W]
+[wt 1.2]
+
+[charaDepth I 2]
+[charaDepth O 3]
+[charaDepth K 4]
+
+[charaScale O 1.2]
+
+[charaFadein O 0.3 -20,-260]
+[charaMoveEase O -120,-260 0.5 easeOutSine]
+[wt 0.3]
+[charaFadeout I 0.1]
+[wt 0.3]
+
+[se ad60]
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.4 50,0]
+[charaMove K 0,0 0.4]
+[wt 0.4]
+[seStop ad60 0.2]
+[wt 0.6]
+
+[bgm BGM_EVENT_113 0.1]
+
+＠モリアーティ
+そうだ、そうだよ、その通りだメタトロン！
+[k]
+
+＠モリアーティ
+たった今、僕とダンテはこの特異点における[r]法律書を読み終えた！
+[k]
+
+[charaFace K 3]
+
+
+＠モリアーティ
+よって！　今から、我らは[r][#正式な弁護人として][&[#彼]:[#彼女]][#らの傍に立つ]！
+[k]
+
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_113 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

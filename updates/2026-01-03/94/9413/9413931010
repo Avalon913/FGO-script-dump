@@ -1,0 +1,753 @@
+
+＄94-13-93-10-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1010000 1 エリザベート]
+[charaSet B 4001000 1 メドゥーサ]
+[charaSet C 5043000 1 アスクレピオス]
+[charaSet D 3057000 1 ビショーネ]
+
+[ifClear 60139307]
+[charaSet E 1098315100 1 チビーネ]
+[flag rbody_1 true]
+
+[ifClear 60139308]
+[charaSet E 1098315000 1 チビーネ]
+[flag rbody_2 true]
+
+[ifClear 60139309]
+[charaSet E 1098314900 1 チビーネ]
+[flag rbody_3 true]
+
+[ifClear 60139310]
+[charaSet E 1098316600 1 チビーネ]
+[flag bbody_1 true]
+
+[ifClear 60139311]
+[charaSet E 1098316700 1 チビーネ]
+[flag bbody_2 true]
+
+[ifClear 60139312]
+[charaSet E 1098316800 1 チビーネ]
+[flag bbody_3 true]
+
+[ifClear 60139313]
+[charaSet E 1098317000 1 チビーネ]
+[flag gbody_1 true]
+
+[ifClear 60139314]
+[charaSet E 1098317100 1 チビーネ]
+[flag gbody_2 true]
+
+[ifClear 60139315]
+[charaSet E 1098317200 1 チビーネ]
+[flag gbody_3 true]
+
+[else]
+[charaSet E 1098315100 1 チビーネ]
+[flag rbody_1 true]
+
+[endIf]
+
+[charaSet F 1062001 1 黒姫]
+
+[charaSet H 1098314000 1 毛の生えた蛇竜人]
+[charaSet I 1098312700 1 蛇竜人_基本Ａ]
+[charaSet J 1098313800 1 蛇竜人_基本B]
+[charaSet K 1098313700 1 蛇竜人_軽]
+[charaSet L 1098314100 1 蛇竜人_重]
+[charaSet M 1098313000 1 捕食竜]
+[charaSet N 1098313000 1 捕食竜（演出用）]
+
+[imageSet O back10000 1 1]
+[charaScale O 1.05]
+[imageSet P back10000 1 1]
+[charaScale P 1.05]
+
+[sceneSet Q 239100 1]
+[sceneSet R 239100 1]
+[sceneSet S 238900 1]
+[sceneSet T 238900 1]
+
+[sceneSet U 10000 1]
+[charaScale U 1.05]
+
+[imageSet V black_fade_re 1]
+
+[charaSet W 98115000 1 エフェクト用]
+[charaSet X 98115000 1 エフェクト用2]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_129 0.1]
+
+＠
+空腹を覚えている。[r]／空腹を、覚えている。
+[k]
+
+＠
+直結するは、死だ。[r]／痛苦だ。
+[k]
+
+＠
+[#奸邪:かんじゃ]なる霊の[#祝福:口づけ]が与えられた[r]両肩の上、鱗の[#軋:きし]みが声なく叫ぶ。
+[k]
+
+＠
+喰わせろ。[r]喰わせろ。
+[k]
+
+＠
+脳味噌を、喰わせろ。
+[k]
+
+＠
+供される皿は王の[#矜恃:きょうじ]。[r]されど料理の様は覚えていない。
+[k]
+
+＠
+千年の、毎日。[r]飽くには充分すぎる時間。
+[k]
+
+＠
+覚えているのは、味だけだ。
+[k]
+
+＠
+蛇の舌と蛇の喉にて感じる、[r]忘れえぬ[#嚥下:えんげ]。
+[k]
+
+＠
+ああ、その味は、あまりにも甘美で[line 3][r]／■■■■■■■■[line 3]
+[k]
+
+
+[messageOff]
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 10000]
+
+[pictureFrame cut063_cinema]
+
+[blur lens 0.1 4 10]
+
+[charaTalk depthOff]
+[charaDepth Q 0]
+[charaScale Q 1.2]
+[charaPut Q 0,-240]
+[charaFadeTime Q 0.1 0.2]
+
+[subCameraOn 2]
+
+[charaLayer U sub #A]
+[charaLayer F sub #A]
+[charaLayer R sub #A]
+
+[charaLayer V sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask07 20 0,0,0,255 1]
+[subCameraFilter #B through]
+
+[subRenderDepth #A 3]
+[subRenderDepth #B 2]
+
+[charaDepth U 7]
+[charaDepth F 6]
+[charaDepth R 5]
+
+[charaPut U 1]
+[charaFadeTime U 0.1 0.7]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 0,270]
+[charaFadein R 0.1 -200,0]
+
+[charaScale V 1.4]
+[charaFadein V 0.1 0,-200]
+
+[wt 0.5]
+
+[wipein openEye 1.0 1.0]
+[wait wipe]
+[wt 0.4]
+
+＠
+……目を開く。
+[k]
+
+[messageOff]
+[subRenderScale #A 1.15]
+[subRenderFadeinFSR #A 0.5 200,-360]
+[subRenderFadeinFSR #B 0.5 400,0]
+[wt 0.7]
+
+＠
+眼前。シャフルナーズとアルナワーズ、[r]ジャムシード王の二姫にも劣らぬ美しき姫が、
+[k]
+
+＠
+蛇の[#贄使:にえづかい]として[r]こちらを見つめている。
+[k]
+
+＠
+死。痛苦。味。
+[k]
+
+＠
+逃れられぬ、しかし逃れねばならぬ[r]全てのものが[line 3]
+[k]
+
+＠
+口を開く、理由であった。
+[k]
+
+＠W：？？？
+余は、空腹である。
+[k]
+
+[messageOff]
+[charaTalk F]
+[wt 0.6]
+
+[charaFaceFade F 15 0.3]
+[wt 0.9]
+
+[charaMoveReturn F 0,264 0.5]
+[wt 1.3]
+
+[wt 0.1]
+[wipeout upToDown 0.6 1.0]
+[bgmStop BGM_MAP_129 1.5]
+[wt 0.5]
+[cueSeStop 24_ad1409 0.8]
+[wait wipe]
+
+
+[charaFadeout Q 0]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[charaFadeout U 0]
+[charaFadeout F 0]
+[charaFadeout R 0]
+[charaFadeout V 0]
+[subCameraOff]
+[charaLayer U normal]
+[charaLayer F normal]
+[charaLayer R normal]
+[charaLayer V normal]
+[charaScale U 1.0]
+[charaScale F 1.0]
+[charaScale R 1.0]
+[charaScale V 1.0]
+
+[pictureFrame]
+
+[blurOff lens 0.1]
+
+[scene 10000]
+[wt 0.8]
+
+[wipein downToUp 1.0 1.0]
+[wait wipe]
+
+＠
+[line 3]贄をもて。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[sceneSet Q 238900 1]
+[sceneSet R 238900 1]
+
+[scene 238900]
+[wt 0.5]
+
+[subCameraOn 2]
+
+[charaLayer F sub #A]
+[charaLayer N sub #A]
+[charaLayer R sub #A]
+
+[charaLayer O sub #B]
+[charaLayer P sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask05 5 0,0,0,255]
+[subCameraFilter #B through]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[subRenderScale #B 1.01]
+
+[charaDepth R 2]
+[charaDepth N 3]
+[charaDepth F 4]
+[charaScale R 1.2]
+[charaScale F 1.1]
+[charaScale N 2.5]
+
+[charaFace F 3]
+[charaFace N 0]
+[charaFadein F 0 0,225]
+[charaFadein N 0 -75,-350]
+[charaFadein R 0 0,-75]
+
+[charaFadein O 0.1 0,756]
+[charaFadein P 0.1 0,-756]
+
+[subRenderFadein #B 0 0,0]
+
+[se ad754]
+[seVolume ad754 0 0]
+
+[charaTalk off]
+[charaScale Q 1.0]
+[charaFadein Q 0.1 0,-200]
+[wt 0.5]
+
+
+[fadein black 1.0]
+[seVolume ad754 1.0 0.6]
+[bgm BGM_MAP_63 1.0]
+[wait fade]
+[wt 0.4]
+
+
+[charaMoveScaleEase Q 1.2 0.6 easeOutSine]
+[charaMoveEase Q -120,-240 0.6 easeOutSine]
+[wt 0.8]
+
+[charaDepth Q 3]
+[charaDepth J 4]
+[charaDepth H 5]
+
+[charaScale H 0.95]
+[charaFace H 4]
+[charaFadein H 0.4 100,-20]
+[charaMove H -300,-20 1.2]
+[charaShake H 0.06 3 1 1.2]
+[wt 0.6]
+
+[charaScale J 0.8]
+[charaFace J 4]
+[charaFadein J 0.4 0,-75]
+[charaMove J 400,-75 1.2]
+[charaShake J 0.07 3 1 1.2]
+[wt 0.2]
+
+[charaFadeout H 0.4]
+[wt 0.6]
+
+[charaFadeout J 0.4]
+[wt 0.55]
+
+[charaMoveScaleEase Q 1.4 0.6 easeOutSine]
+[charaMoveEase Q 120,-290 0.6 easeOutSine]
+[wt 0.8]
+
+[charaDepth K 7]
+[charaDepth L 8]
+[charaDepth I 6]
+
+[charaScale K 0.8]
+[charaFace K 4]
+[charaFadein K 0.4 -50,-55]
+[charaMove K -400,-55 1.2]
+[charaShake K 0.06 3 2 1.2]
+[wt 0.5]
+
+[charaScale L 0.9]
+[charaFace L 4]
+[charaFadein L 0.4 100,-20]
+[charaMove L 550,-20 1.2]
+[charaShake L 0.07 3 2 1.2]
+[wt 0.3]
+
+[charaFadeout K 0.4]
+[wt 0.3]
+
+[charaScale I 0.65]
+[charaFace I 4]
+[charaFadein I 0.4 150,-110]
+[charaMove I -275,-110 1.2]
+[charaShake I 0.07 3 2 1.2]
+[wt 0.2]
+
+[charaFadeout L 0.4]
+[wt 0.6]
+
+[charaFadeout I 0.4]
+[wt 0.6]
+
+[charaDepth S 1]
+[charaDepth M 2]
+
+[charaScale S 1.2]
+[charaFadein S 0.1 125,-300]
+[wt 0.2]
+
+[charaFadeout Q 0.8]
+[seStop ad754 0.8]
+[wt 1.2]
+
+[se ad1049]
+[cueSe SE_22 22_ade804]
+[cueSe SE_24 24_ade1093]
+[wt 0.2]
+[charaScale M 1.2]
+[charaFace M 0]
+[charaFadein M 0.4 -150,-50]
+[charaMove M -100,-50 0.4]
+[wt 0.2]
+[seStop ad1049 0.6]
+[cueSeStop 22_ade804 0.6]
+[cueSeStop 24_ade1093 0.6]
+[wt 0.9]
+
+[charaTalk on]
+[charaTalk F]
+[subRenderFadeinFSL #A 0.4 -350,-150]
+[subRenderMoveEaseFSL #A -350,-250 0.5 easeOutCubic]
+[wt 0.7]
+
+＠黒姫
+[#此度:こたび]、アルナワーズはこの町にて[r]贄が供されることを望んだ。
+[k]
+
+[messageOff]
+[charaFace F 7]
+[wt 1.0]
+
+[charaFace F 4]
+＠黒姫
+蛇王様へ、捧げよ。
+[k]
+
+[bgmStop BGM_MAP_63 1.5]
+
+？1：[line 3]そこまで！
+？！
+
+[messageOff]
+[charaMove O 0,850 1.2]
+[charaMove P 0,-850 1.2]
+[subRenderFadeout #B 0.6]
+[wt 0.5]
+
+[se ad184]
+[subRenderFadeout #A 0.4]
+[subRenderMoveEaseFSL #A -450,-250 0.6 easeOutSine]
+[charaMoveEase M -200,-50 0.6 easeOutSine]
+[charaMoveEase S 25,-300 0.6 easeOutSine]
+[charaFadeout M 0.4]
+[charaFadeout S 0.4]
+[wt 0.6]
+
+[charaFadeout O 0]
+[charaFadeout P 0]
+[wt 0.2]
+
+[charaTalk off]
+[charaDepth A 2]
+[charaDepth B 3]
+[charaDepth C 4]
+[charaDepth D 6]
+[charaDepth E 5]
+[bgm BGM_BATTLE_185 0.1]
+
+[charaScale E 0.9]
+[charaScale B 0.95]
+[charaScale C 0.9]
+[charaFace A 8]
+[charaFace B 12]
+[charaFace C 0]
+[charaFace D 6]
+[charaFace E 3]
+[charaFadein A 0.4 -400,-15]
+[wt 0.15]
+[charaFadein B 0.4 225,-30]
+[wt 0.15]
+[charaFadein C 0.4 450,-10]
+[wt 0.15]
+[charaFadein E 0.4 -190,-50]
+[wt 0.15]
+[charaFadein D 0.4 -25,0]
+[wt 0.2]
+[seStop ad184 0.4]
+[wt 1.4]
+
+[charaPut F 0,275]
+[charaPut N -75,-300]
+[charaPut R 0,-25]
+
+[charaTalk on]
+[charaTalk F,A,B,C,D,E]
+[charaFace F 4]
+[subRenderFadeinFSL #A 0.4 -380,-250]
+[subRenderMoveFSL #A -350,-250 0.4]
+
+[charaDepth S 7]
+[charaDepth M 8]
+
+[charaScale S 1.2]
+[charaFace M 0]
+[charaFadein M 0.4 -130,0]
+[charaFadein S 0.4 95,-250]
+[charaMove M -100,0 0.4]
+[charaMove S 125,-250 0.4]
+[wt 0.4]
+
+[charaScale E 1.0]
+[charaScale B 1.0]
+[charaScale C 1.0]
+[charaPut B 1]
+[charaFace B 4]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.3]
+
+＠黒姫
+……貴方たちですか。
+[k]
+
+[charaFace F 14]
+＠黒姫
+また邪魔をなさるおつもりで？
+[k]
+
+＠黒姫
+これは、[#理:ことわり]。[r]蛇王様が作ったこの世の[#掟:おきて]。
+[k]
+
+[charaFace F 4]
+＠黒姫
+[#蔑:ないがし]ろにしては成り立たぬものです。
+[k]
+
+[messageOff]
+[charaTalk F,B]
+[subRenderFadeout #A 0.4]
+[charaFadeout M 0.4]
+[charaFadeout S 0.4]
+[wt 0.5]
+
+＠メドゥーサ
+[#弱肉強食:じゃくにくきょうしょく]のような[#理:ことわり]を否定はしません。
+[k]
+
+＠メドゥーサ
+ですが。[r]ただシンプルに、我がマスターは[line 3]
+[k]
+
+[charaFace B 1]
+
+＠メドゥーサ
+それを目の前でやられると、[r]手を出したくなってしまうタチなのです。
+[k]
+
+＠メドゥーサ
+困りましたね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+そうだな。これ以上お人好しが過ぎれば、[r]何かの疾病を疑わねばならなくなるかもしれん。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+[#私:アタシ]はただシンプルに、[r]勇者だから悪をブッ倒すだけよ！
+[k]
+
+＠エリザベート
+黒姫、なんて悪の幹部っぽい名前にも[r][#程:ほど]があるわ！（偏見）
+[k]
+
+[messageOff]
+[charaTalk A,F]
+[charaFace F 14]
+[subRenderFadeinFSL #A 0.4 -350,-250]
+[charaFace M 0]
+[charaFadein M 0.4 -100,0]
+[charaFadein S 0.4 125,-250]
+[wt 0.4]
+
+[charaDepth E 2]
+[charaDepth D 3]
+[charaFace D 9]
+[charaFace E 3]
+[charaFadein D 0.1 150,0]
+[charaFadein E 0.1 -150,-50]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠黒姫
+……。[r]……。
+[k]
+
+[charaFace F 4]
+
+＠黒姫
+以前が[#如何様:い か よ う]な仕儀と相成ったか、[r]忘れたわけでもないでしょうに。
+[k]
+
+＠黒姫
+蛇王様の手に等しいこのアルナワーズには、[r]勝てぬでしょう。前と同じことです。
+[k]
+
+[messageOff]
+[charaTalk F,D]
+[subRenderFadeout #A 0.4]
+[charaFadeout M 0.4]
+[charaFadeout S 0.4]
+[wt 0.5]
+
+＠ビショーネ
+お、同じじゃありません！[r]ちょっとは変わりました！
+[k]
+
+[charaTalk E]
+[charaFace E 1]
+＠チビーネ
+き[charaMoveReturn E -150,-43 0.3]ゅふぴー！
+[k]
+
+[messageOff]
+[charaTalk E,F]
+[charaFace F 8]
+[subRenderFadeinFSL #A 0.4 -350,-250]
+[charaFace M 0]
+[charaFadein M 0.4 -100,0]
+[charaFadein S 0.4 125,-250]
+[wt 0.4]
+
+[charaFace D 11]
+[charaFace E 3]
+[wt 0.15]
+
+＠黒姫
+……？[r]蛇が、大きく……？
+[k]
+
+[messageOff]
+[charaFace F 15]
+[wt 1.0]
+
+[charaFace F 4]
+＠黒姫
+いえ。些細なこと。
+[k]
+
+＠黒姫
+それで何かが変わったというのであれば、[r]試してみるがいいでしょう。
+[k]
+
+[messageOff]
+[charaTalk F,D]
+[subRenderFadeout #A 0.4]
+[charaFadeout M 0.4]
+[charaFadeout S 0.4]
+[wt 0.5]
+
+＠ビショーネ
+ううっ。確かに、具体的に何ができるかは、[r]ちょっとわかりませんけど……。
+[k]
+
+？1：できることを精一杯やればいいんだよ
+？！
+
+[charaFace D 4]
+
+＠ビショーネ
+……！　そう、ですね！[r]さすがはボスです！
+[k]
+
+＠ビショーネ
+精一杯、頑張ってみます！
+[k]
+
+[charaTalk E]
+[charaFace E 2]
+＠チビーネ
+きゅ！
+[k]
+
+[messageOff]
+[charaTalk E,M]
+[charaFace M 0]
+[charaFadein M 0.3 -300,0]
+[charaFadein S 0.3 -25,-250]
+[charaMoveEase M -200,0 0.5 easeOutSine]
+[charaMoveEase S 75,-250 0.5 easeOutSine]
+[wt 0.5]
+
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[cueSe SE_25 25_ade1155]
+[wt 0.05]
+[shake 0.05 2 2 2.0]
+[charaPut W -60,50]
+[charaEffect W bit_talk_voice02]
+[charaMoveScaleEase M 1.35 0.25 easeOutSine]
+[charaMoveScaleEase S 1.35 0.25 easeOutSine]
+[charaMoveEase M -220,25 0.25 easeOutSine]
+[charaMoveEase S 88,-290 0.25 easeOutSine]
+[wt 1.8]
+
+[subCameraFilter #B normal]
+[charaLayer C sub #B]
+[charaLayer T sub #B]
+
+[charaDepth T 2]
+[charaDepth C 3]
+[charaScale T 1.1]
+[charaScale C 1.1]
+
+[charaTalk M,C]
+[charaFace C 2]
+[charaFadein C 0 300,0]
+[charaFadein T 0 50,-220]
+
+[subRenderFadein #B 0.3 0,0]
+[charaMoveEase C 200,0 0.4 easeOutSine]
+[charaMoveEase T -50,-220 0.4 easeOutSine]
+[wt 0.5]
+
+＠アスクレピオス
+来るぞ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_185 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+

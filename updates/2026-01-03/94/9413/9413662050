@@ -1,0 +1,427 @@
+
+
+＄94-13-66-20-5-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3056000 1 ゴッホ]
+[charaSet B 2053000 1 ツタンカーメン]
+[charaSet C 2053000 1 ツタンカーメン（演出用）]
+[charaSet D 1098305900 1 ナウクラテー]
+[charaSet E 1098257310 1 ダ・ヴィンチ]
+
+[sceneSet L 231601 1]
+[sceneSet M 231601 1]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用]
+
+[charaPut S 2000,2500]
+[charaEffect S bit_talk_10_LowLevel]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 231601]
+
+[charaTalk depthOff]
+[charaDepth L 2]
+[charaDepth M 3]
+[charaDepth B 4]
+[charaDepth C 4]
+[charaDepth A 4]
+[charaDepth D 4]
+[charaDepth T 8]
+
+[charaScale L 1.1]
+[charaFadein L 0 0,-210]
+
+[charaScale M 1.4]
+[charaFadein M 0 0,-180]
+[wt 0.1]
+
+[charaMove M 0,-200 5.5]
+[charaMoveScale M 1.2 5.5]
+[fadein black 1.0]
+[wait fade]
+[wt 3.0]
+
+[charaFadeout M 1.0]
+[wt 1.4]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk A]
+[charaFace A 27]
+[charaFadein A 0.1 1]
+
+＠ゴッホ
+ハゥッ！？　な、なんですかこの、[r]なりふり構わない拒絶の表現物は！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+[se ad1045]
+[charaPut T 1]
+[charaEffect T bit_talk_ttn_spell]
+[wt 2.1]
+
+[charaFace B 4]
+＠ツタンカーメン
+……これは……どうやらこの中に、[r]記憶の断片があるようなれど……
+[k]
+
+＠ツタンカーメン
+これは……突破は困難やも……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠ゴッホ
+いえいえ、こんなの渾身のゴッホピッカーで[line 3]！！
+[k]
+
+[messageOff]
+[se ad171]
+[charaMoveScaleEase A 1.2 0.4 easeOutCubic]
+[charaMoveEase A 0,15 0.4 easeOutCubic]
+[charaCrossFade A 1098305400 8 0.05]
+[wt 0.3]
+[wait charaCrossFade A]
+
+[se ad881]
+[seStop ad171 0.3]
+[fadeout white 0.1]
+
+[charaCrossFade A 3056000 33 0]
+[wait fade]
+[wait charaCrossFade A]
+[wt 0.1]
+
+[charaShake A 0.02 3 3 0.3]
+[charaMoveEase A 0,0 0.25 easeOutCubic]
+[charaMoveScaleEase A 1.0 0.25 easeOutCubic]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.75]
+
+＠ゴッホ
+ハゥ[line 6]！？　じ[line 6]んときました！[r]巨大な鐘をついたような感覚！　[#寺院:じいん]だけに！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[subCameraOn 1]
+[charaLayer B sub #A]
+
+[subCameraFilter #A through]
+
+[subRenderScale #A 1.01]
+
+[charaFace B 0]
+[charaFadein B 0 2000,2500]
+
+[subRenderFadein #A 0 0,0]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[se ad1045]
+[charaPut T 1]
+[charaEffect T bit_talk_ttn_spell]
+
+[charaPut C 1]
+[charaEffectEdgeBlur C ffffcc ffffcc]
+[wt 2.1]
+
+＠C：ツタンカーメン
+未知の合金により[#十重二十重:と　え　は　た　え]に固められ、[r]さらに未知の構造により衝撃もほぼ無効化される……
+[k]
+
+[charaEffectEdgeBlurStop C]
+
+[charaFace C 4]
+＠C：ツタンカーメン
+……名工による、鉄壁の純粋物理封印にござりまする。[r]現生人類には突破できぬ代物やも……
+[k]
+
+
+？1：そんなに……
+
+[charaFace C 9]
+[charaFace B 9]
+＠C：ツタンカーメン
+……ちと言い過ぎましてござりまするか。[r]今すぐには、解くめどが立たぬのみにて。
+[k]
+
+？2：時間かければいけないかな
+
+[charaFace C 1]
+[charaFace B 1]
+＠C：ツタンカーメン
+それは否定しませぬが、[#一朝一夕:いっちょういっせき]にはまず不可能な[r]難題にて。あるいは何らかの、きわめて強力な……
+[k]
+
+？！
+
+[messageOff]
+[charaTalk B,C]
+[charaPut B 1]
+[charaPut C 2000,2500]
+[wt 0.05]
+[charaMoveScaleEase B 1.1 1.0 easeOutSine]
+[charaMoveEase B 175,15 1.0 easeOutSine]
+
+[charaMoveScaleEase L 1.2 1.0 easeOutSine]
+[charaMoveEase L 120,-240 1.0 easeOutSine]
+
+[subBlur #A lens 0.8 4 5 1.0 subBlur]
+[wt 1.2]
+
+[charaScale D 0.9]
+[charaTalk D]
+[charaFace D 0]
+[charaFadeinFSSideL D 0.4 -525,-50]
+[charaMoveFSSideL D -475,-50 0.4]
+[wt 1.2]
+
+[charaDepth A 1]
+[charaTalk A,D]
+[charaFace A 29]
+[charaFadein A 0.1 1]
+[wt 0.6]
+
+[charaFadeout B 0.4]
+[charaFadeout D 0.4]
+[charaFadeout L 0.4]
+[wt 0.4]
+
+[subRenderFadeout #A 0]
+[wt 0.05]
+[charaPut B 2000,2500]
+[charaFadeout B 0]
+[subBlurOff #A lens 0 normal]
+[wt 0.05]
+[subCameraOff]
+[charaLayer B normal]
+[charaScale B 1.0]
+
+＠ゴッホ
+[line 3]ハゥッ！　見てます見てます！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ad95]
+[charaScale D 1.0]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+[wt 0.4]
+[seStop ad95 0.2]
+[wt 0.6]
+
+＠ナウクラテー
+[#僭越:せんえつ]ながら、デバガメくそくそ集団を監視していました。
+[k]
+
+？1：デバガメくそくそ集団ではないです……
+？2：純粋に特異点の謎を解きたいんですが……
+？！
+
+
+[charaFace D 1]
+＠ナウクラテー
+ならばここはスルーでよいでしょう。[r]解放されている秘密はあと一つ。とっとと回るべきです。
+[k]
+
+[charaFace D 0]
+＠ナウクラテー
+夫婦のプライベートを覗いてるヒマに、[r]はやく死ぬか、最奥にたどり着きなさい。じゃーね。
+[k]
+
+[bgmStop BGM_EVENT_71 1.5]
+
+[messageOff]
+[se ade198]
+[wt 0.1]
+[charaMove D -400,0 0.8]
+[wt 0.3]
+[charaFadeout D 0.4]
+[wt 2.1]
+
+[bgm BGM_SENGOKU_1 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠ゴッホ
+……ゴッホが言うのもなんですが、[r]ダイダロス本人に劣らずすごく変ですね、あいつ……
+[k]
+
+＠ゴッホ
+言い分もおかしいです。解放してるとか言ってましたが、[r]ガチガチに防衛してたでしょうに。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+＠ツタンカーメン
+……でも確かに、このような不可侵の防護はあらずにて。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk E]
+[charaFace E 34]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+うんうん……その上相手はダイダロス……
+[k]
+
+[charaFace E 23]
+＠ダ・ヴィンチ
+……対策を、重ねておく。キミたちはとにかく、[r]最後の秘密を暴いてくれ。
+[k]
+
+[messageOff]
+[se ad562]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+[wt 1.2]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠ゴッホ
+ウフフ……ダ・ヴィンチめ、どんどん口を重くして……[r]めちゃ不安なのですが何考えてるんですかねえ……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ツタンカーメン
+……[#己:うぬ]にも全ては分かりませぬ。されど、[r]マスターどのの益にならぬことはされぬ方かと。
+[k]
+
+？1：ダ・ヴィンチちゃんは信じて大丈夫
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠ゴッホ
+ハゥッ、嫉妬！[r]いや、ここは気をび[#しっと]引き締めて[line 3][wt 0.7][charaFace A 27]あっ、
+[k]
+
+
+？2：さあ、ラストを回ろう
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+＠ゴッホ
+承知です！[r]景気よく敵陣を荒[#らすと]いたしましょう[line 3][wt 0.7][charaFace A 27]あっ、
+[k]
+
+？！
+
+[messageOff]
+[charaTalk off]
+[charaDepth A 2]
+[charaDepth L 3]
+[charaDepth B 4]
+
+[charaScale B 1.2]
+[charaScale L 1.2]
+
+[charaFace B 6]
+[charaFadein B 0.4 -350,15]
+[charaFadein L 0.4 0,-260]
+[charaMoveEase B -250,15 0.6 easeOutSine]
+[charaMoveEase L 100,-260 0.6 easeOutSine]
+[wt 0.4]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[se ad854]
+[fowardEffect bit_talk_explosion_triple02 -250,0]
+[wt 0.1]
+[shake 0.02 2 2 1.4]
+[wt 1.0]
+[charaFace B 13]
+[wt 1.9]
+
+＠ツタンカーメン
+[f large]慣れはじめてござりまする！
+[k]
+
+
+[messageOff]
+[subCameraOn 1]
+[charaLayer A sub #A]
+[charaLayer M sub #A]
+[subCameraFilter #A maskEdge cut359_mask16 5 255,255,255,255]
+[charaDepth M 2]
+[charaDepth A 3]
+
+[charaScale M 1.2]
+[charaScale A 1.2]
+
+[charaRoll A 0]
+[charaTalk A]
+[charaFace A 28]
+[charaFadein A 0 0,250]
+[charaFadein M 0 -250,0]
+
+[subRenderFadeinFSR #A 0.3 400,-150]
+[subRenderMoveEaseFSR #A 350,-250 0.4 easeOutSine]
+[wt 0.6]
+[charaShake A 0.02 3 3 0.4]
+[wt 1.8]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_SENGOKU_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

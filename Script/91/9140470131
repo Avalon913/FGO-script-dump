@@ -1,0 +1,611 @@
+
+＄91-40-47-01-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4047001 1 コンスタンティノス]
+[charaSet B 1047000 1 渡辺綱]
+[charaSet C 1098257310 1 ダ・ヴィンチ]
+[charaSet E 4047001 1 コンスタンティノス]
+[charaScale E 1.2]
+[sceneSet F 152200 1]
+[charaScale F 1.3]
+[sceneSet G 113700 1]
+[charaScale G 1.25]
+[sceneSet H 131200 1]
+[charaScale H 1.4]
+[sceneSet I 106800 1]
+[charaScale I 1.3]
+[sceneSet K 122605 1]
+[charaScale K 1.3]
+
+[sceneSet L 131200 1]
+[charaScale L 1.4]
+
+[charaSet N 1098260500 1 コンスタンティノープル]
+[charaScale N 1.2]
+
+[charaSet J 1098260500 1 コンスタンティノープル]
+[sceneSet P 131200 1]
+[charaSet S 5009000 1 エフェクト用1]
+[charaSet T 3019001 1 エフェクト用2]
+[charaSet U 3019001 1 エフェクト用3]
+
+[imageSet V back10000 1 1]
+[charaScale V 1.01]
+[imageSet W back10000 1 1]
+[charaScale W 1.01]
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth G 3]
+[charaDepth H 4]
+[charaDepth K 2]
+[charaDepth E 5]
+[charaDepth L 2]
+[charaDepth N 3]
+[charaDepth T 3]
+
+[charaPut T 1200,1200]
+
+[charaEffect T bit_talk_10_LowLevel_depth]
+
+
+[charaPut S 0,50]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[scene 131200]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+
+
+[charaTalk off]
+[bgm BGM_BATTLE_137 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[shake 0.05 3 2 3.0]
+[charaPut U 1]
+[charaEffect U bit_talk_voice01]
+[se ad1027]
+[se ad960]
+[wt 1.0]
+[se ade315]
+[fowardEffect bit_talk_blow -300,-200]
+[backEffect bit_talk_smoke_pon -300,0]
+[fowardEffect bit_talk_smoke_pon -300,-500]
+[shake 0.03 3 4 0.8]
+
+[wt 1.0]
+
+[se ad728]
+[fowardEffect bit_talk_blow 400,-100]
+[backEffect bit_talk_smoke_pon 400,0]
+[fowardEffect bit_talk_smoke_pon 400,-600]
+[shake 0.03 7 9 1.2]
+
+[wt 0.5]
+
+[fadeout white 0.5]
+[wait fade]
+
+[charaPut U 1200,1200]
+[charaFadeout J 0.1]
+[charaFadein H 0.1 200,-300]
+
+[wt 0.1]
+
+[fadein white 0.5]
+[wait fade]
+
+
+[charaFace E 5]
+[charaFadein E 0.4 0,0]
+[charaMoveEase E 200,0 0.6 easeOutQuad]
+
+[se ad671]
+[wt 0.4]
+[seStop ad671 0.8]
+[wt 0.5]
+
+[se ad51]
+
+[wt 1.0]
+[charaFace E 2]
+[cameraMoveEase -100,-50 0.7 easeOutCubic 1.2]
+[se ad85]
+[wt 0.1]
+[effect bit_talk_gold_slash_01 0,0]
+[wt 0.2]
+
+[fadeout white 0.3]
+[wait fade]
+[cameraHome 0.1]
+
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+[wt 0.1]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+
+[fadein white 0.2]
+[effect bit_talk_x_slash_gl_01]
+[effect bit_talk_14]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF00]
+[se ad473]
+[shake 0.05 4 5 1.5]
+[wait fade]
+
+[wt 1.5]
+
+[charaMoveEase J 0,-30 0.6 easeOutQuad]
+[se ade311]
+[bgmStop BGM_BATTLE_137 2.5]
+[wt 2.5]
+[charaTalk off]
+
+
+＠コンスタンティノープル
+どうして？
+[k]
+[bgm BGM_EVENT_75 0.1]
+
+＠コンスタンティノープル
+これが貴方の望みなのに。[r]これが貴方の願いだったはずなのに。
+[k]
+
+＠コンスタンティノープル
+どうして……どうして……どうし、て……。
+[k]
+
+[messageOff]
+[charaFace E 7]
+[charaFadein H 0.6 200,-200]
+[charaFadein E 0.6 200,-10]
+[wt 0.6]
+
+[charaFadein L 0.1 -0,-200]
+[charaFace N 0]
+[charaFadein N 0.1 -50,-10]
+
+＠コンスタンティノス
+その望みは……捨てた望みだった。[r]それだけだよ。
+[k]
+
+[messageOff]
+[charaFadeout E 0.6]
+[charaFadeout H 0.6]
+
+[wt 1.0]
+
+[charaFadeout J 0.1]
+
+＠コンスタンティノープル
+[line 3][wt 1.0]うそつき。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_75 2.0]
+
+[wt 1.0]
+
+[cueSe Battle ba6]
+[charaEffect N bit_talk_atomization_gra]
+[charaSpecialEffect N enemyErasure 1 2.0]
+[wait charaSpecialEffect N]
+[wt 0.5]
+
+[charaFace E 4]
+[charaFadein H 0.6 200,-200]
+[charaFadein E 0.6 150,-10]
+[charaMoveEase H 100,-200 2.0 easeOutQuad]
+[charaMoveEase E 50,-10 2.0 easeOutQuad]
+
+[charaFadeout N 0.4]
+[charaFadeout L 0.4]
+[wt 3.0]
+
+[charaPut T 1]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[charaFadeout E 0.4]
+[charaFadeout H 0.4]
+
+[wt 0.4]
+
+＠ダ・ヴィンチ
+……よし！　修正完了だ。[r]帰還準備をするから、少し待っててね。
+[k]
+
+[charaFadeout C 0.1]
+[charaPut T 1200,1200]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠渡辺綱
+この方々はどうしたものか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠コンスタンティノス
+大丈夫。死んだ訳でもないし、[r]すぐに意識も戻るだろう。
+[k]
+
+＠コンスタンティノス
+そうすれば、各々で街に戻るはずさ。[r]自分の故郷、本来の帰るべき場所に[line 3]
+[k]
+
+[charaFace A 1]
+
+＠コンスタンティノス
+これで仕事は終わったよマスター。[r]さあ、ストーム・ボーダーに帰るとしよう。
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+
+[wt 1.5]
+[bgmStop BGM_EVENT_11 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[scene 122605]
+
+[cameraHome 0.1]
+[charaFadeout A 0.1]
+
+[charaFadein K 0.6 0,-250]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[wt 1.5]
+[charaMove K 0,-220 5.0]
+[charaMoveScale K 1.1 5.0]
+
+[fadein black 2.0]
+[wait fade]
+
+[se ad207]
+[wt 2.0]
+
+[charaFadeout K 0.6]
+[wt 1.0]
+
+
+＠コンスタンティノス
+……。[r]……。
+[k]
+
+？1：コンスタンティノス、ちょっといい？
+？！
+
+[charaFace A 1]
+
+＠コンスタンティノス
+おや、マスターか。
+[k]
+
+＠コンスタンティノス
+どうしたのかな、レポートの手伝いなら、[r]喜んでやるが[line 3]
+[k]
+
+？1：さっきの特異点の話だけど
+？！
+
+[charaFace A 0]
+
+＠コンスタンティノス
+ああ。
+[k]
+
+？1：嘘をつかなかった？
+？！
+
+[charaFace A 4]
+
+＠コンスタンティノス
+ははは。[r]……うーん、参ったな。
+[k]
+
+
+[messageOff]
+[seStop ad207 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadein F 0.1 50,-250]
+[charaFadeout A 0.1]
+
+[wt 1.0]
+
+[charaMove F 50,-300 19.0]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_123 0.1]
+
+＠コンスタンティノス
+そうだな、[r]いま思い返せば、あれは嘘だった。
+[k]
+
+＠コンスタンティノス
+あの都市はまさしく私の理想だった。
+[k]
+
+[messageOff]
+[charaFadein G 0.6 10,-250]
+[charaMoveScale G 1.15 20.0]
+[wt 1.0]
+
+＠コンスタンティノス
+幸福に満ち[#溢:あふ]れた人々が、[r]穏やかに暮らし続ける……。
+[k]
+
+＠コンスタンティノス
+どうしたって、それが悪いことであるはずはない。
+[k]
+
+[messageOff]
+[charaFadein H 0.6 50,-200]
+[charaMove H -50,-200 10.5]
+[wt 1.0]
+
+＠コンスタンティノス
+手を伸ばしたくなった。[r]夢に浸りたくもなったさ。
+[k]
+
+＠コンスタンティノス
+願いが、間違っていることを理解していても……。[r]願いの叶え方が、ねじ曲がっていてもなお、ね。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_123 1.0 0.5]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_123 1.0 1.0]
+[wait fade]
+
+＠コンスタンティノス
+もちろん、あの都市は早々に破綻する。[r]そんな未来は目に見えていた。
+[k]
+
+＠コンスタンティノス
+でも、失ったはずのものが現れた時、[r]私はそんな未来を考えられなかった。
+[k]
+
+[charaFace A 4]
+
+＠コンスタンティノス
+マスター、もし君との繋がりがなければ……。[r]私は手を伸ばして、そのままだったろうね。
+[k]
+
+[charaFace A 1]
+
+＠コンスタンティノス
+君との縁が、[r]かろうじて理性を呼び起こしてくれた。
+[k]
+
+[charaFace A 7]
+
+＠コンスタンティノス
+ただ[line 3]それでも、[r][#彼女]は私の願いを叶えようとした。
+[k]
+
+＠コンスタンティノス
+たとえそれが、[r]明白な過ちだったとしても。
+[k]
+
+[charaFace A 4]
+
+
+＠コンスタンティノス
+……少々、感傷的になっているようだ。
+[k]
+
+？1：ちょっと待ってて
+？！
+
+＠コンスタンティノス
+[FFFFFF]？[-]
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_123 2.0]
+[fadeout black 1.0]
+[wait fade]
+
+[wt 1.0]
+[charaFace A 0]
+[charaMove F 50,-300 25.0]
+
+[fadein black 1.0]
+[wait fade]
+
+＠コンスタンティノス
+これは……ワインか。
+[k]
+
+？1：今はアルコールが必要かなって
+？！
+
+[bgm BGM_EVENT_45 0.1]
+[charaFace A 1]
+
+＠コンスタンティノス
+ははは、まだ飲める年齢ではないだろう？[r]とはいえ、感謝する。
+[k]
+
+[messageOff]
+
+[se ad505]
+[wt 2.0]
+
+[charaFace A 7]
+
+＠コンスタンティノス
+[line 3]我が愛すべき都市、コンスタンティノープルに。
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 1.0 1.0]
+[bgm BGM_EVENT_45 1.0 0.5]
+[wait wipe]
+
+[charaFadein I 0.1 50,-150]
+[charaFadeout A 0.1]
+
+[overlayFadein V 0.1 0,-738]
+[overlayFadein W 0.1 0,738]
+[wt 1.0]
+[charaMove I 50,-300 25.0]
+
+[wipein rectangleStripDownToUp 1.0 1.0]
+[bgm BGM_EVENT_45 1.0 1.0]
+[wait wipe]
+
+
+＠
+乾杯。
+[k]
+
+＠
+皇帝は高々と[#杯:さかずき]を掲げ、[r]都市の魂が鎮まることを願う。
+[k]
+
+＠
+愛した都市、愛した国民。[r]それを、守れなかった[#皇帝:わたし]。
+[k]
+
+＠
+その後悔は、この身に意識がある限り永遠に続く。[r]けれど、後悔がなければ愛はどこへいくのだろう。
+[k]
+
+＠
+だから、この身と魂を[#苛:さいな]む愛も、[r]私は抱え続けて生きるしかない。
+[k]
+
+＠
+コンスタンティノープル。[r]我が愛しき都。
+[k]
+
+＠
+どうか、安らかな眠りを。[r]そして、君を裏切ったことを許して欲しい。
+[k]
+
+＠
+死した[#都市:きみ]は生者の意志がない限り、[r][#蘇:よみがえ]ってはならないのだ。
+[k]
+
+＠
+……死者が還ってはならないように。
+[k]
+
+[messageOff]
+[wt 0.2]
+
+？1：大丈夫？
+？！
+
+[messageOff]
+[wipeout rectangleStripDownToUp 1.0 1.0]
+[bgm BGM_EVENT_45 1.0 0.5]
+[wait wipe]
+
+[charaFadeout I 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+[wt 1.0]
+
+[wipein rectangleStripUpToDown 1.0 1.0]
+[bgm BGM_EVENT_45 1.0 1.0]
+[wait wipe]
+
+
+＠
+ああ、でも[line 3]
+[k]
+
+＠
+君との縁がある限り、[r]この未練は未練のままであり続けるだろう。
+[k]
+
+[messageOff]
+[charaFace E 1]
+[charaFadein K 0.6 0,-250]
+[charaFadein E 0.6 0,-30]
+[wt 1.5]
+
+[charaFaceFade E 6 0.3]
+[wt 0.3]
+
+＠コンスタンティノス
+もちろん、大丈夫だとも。[r]いや、何[line 3]
+[k]
+
+＠コンスタンティノス
+耐えるのには、慣れているのさ。
+[k]
+
+＠
+私はそう言って、案ずる[&彼:彼女]に微笑んだ。
+[k]
+
+[messageOff]
+[charaMove V 0,-850 2.0]
+[charaMove W 0,850 2.0]
+[wt 2.0]
+
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_45 2.0]
+[wait fade]
+[pictureFrame]
+[soundStopAll]
+[end]
+

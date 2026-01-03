@@ -1,0 +1,255 @@
+
+＄94-13-93-06-2-1
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1010000 1 エリザベート]
+[charaSet B 4001000 1 メドゥーサ]
+[charaSet C 5043000 1 アスクレピオス]
+[charaSet D 3057000 1 ビショーネ]
+
+[charaSet F 1098257810 1 マシュ]
+[charaSet G 1098257310 1 ダ・ヴィンチ]
+
+[charaSet Z 98115000 1 通信エフェクト用]
+[charaPut Z 2000,2000]
+[charaEffect Z bit_talk_10_LowLevel]
+
+[ifClear 60139301]
+[charaSet K 1098316400 1 チビーネ]
+[flag color_r true]
+
+[ifClear 60139302]
+[charaSet K 1098316500 1 チビーネ]
+[flag color_b true]
+
+[ifClear 60139303]
+[charaSet K 1098316900 1 チビーネ]
+[flag color_g true]
+
+[else]
+[charaSet K 1098316400 1 チビーネ]
+[flag color_r true]
+
+[endIf]
+
+[scene 238700]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_147 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+ぜいはあ。[r]意外と疲れたわ……！？
+[k]
+
+[charaFace A 0]
+
+＠エリザベート
+でも、ふふふ。勇者パーティに[r]お助けキャラが加わったみたいね。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.1 1]
+[wt 0.7]
+
+？1：手伝ってくれてありがとね！
+？！
+
+[charaFace K 2]
+
+＠チビーネ
+きゅっぴー！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+チョコチョコ動いて敵の注意を引く、[r]ぐらいの働きでしたけど……
+[k]
+
+＠ビショーネ
+こ、効果はありましたかね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[ifClear 60139301]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+こっちにもバフの効果があったわ。
+[k]
+
+＠エリザベート
+やはり赤は勇者の色。[r]見ているだけで[#勇気:パワー]が湧いてくるものよね！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[flag color_r true]
+
+[ifClear 60139302]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+こちらにも薬効は働いていた。
+[k]
+
+＠アスクレピオス
+青という色には精神を落ち着かせる効能があるという。[r]いつもより冷静に動けていた気がするぞ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[flag color_b true]
+
+[ifClear 60139303]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+[#攪乱:かくらん]のような効果がありました。[r]おかげでこちらも動きやすかったですよ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[flag color_g true]
+
+[else]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+こっちにもバフの効果があったわ。
+[k]
+
+＠エリザベート
+やはり赤は勇者の色。[r]見ているだけで[#勇気:パワー]が湧いてくるものよね！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[flag color_r true]
+
+[endIf]
+
+[charaTalk K,D]
+[charaFace K 6]
+[charaFadein K 0.1 -150,-50]
+[charaFace D 19]
+[charaFadein D 0.1 150,0]
+[wt 2.0]
+[charaFadeout K 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ダ・ヴィンチ
+総合的に見て脅威度は高まったのかもしれないけど、[r]こちらも可愛く頼もしい味方が増えた。
+[k]
+
+＠ダ・ヴィンチ
+引き続き、警戒しつつ進んでいこう[line 3][r]と、いうところで。
+[k]
+
+[se ade158]
+[charaFaceFade G 20 0.2]
+
+＠ダ・ヴィンチ
+しばらくウォーキングが続きそうだ。
+[k]
+
+＠ダ・ヴィンチ
+今のうちに、マシュと一緒にライブラリから集めた[r]情報について少し話をしていいかい？
+[k]
+
+＠ダ・ヴィンチ
+マシュのドラゴンこばなしも[r]面白くて興味深かったけれど、それとは別口だ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠マシュ
+き、聞かれていましたか……。
+[k]
+
+[charaFace F 6]
+
+＠マシュ
+おほん。あれはあくまで私的なレポートの[r]ようなものでしたので、
+[k]
+
+＠マシュ
+コラム的なおまけ情報でしかありませんでしたが。[r]こちらはそれよりも真面目で現実的な話となります。
+[k]
+
+？1：もちろんＯＫですけど
+？2：どんな情報？
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 20]
+[charaFadein G 0.1 1]
+
+＠ダ・ヴィンチ
+うん。[r]それは勿論、少し前に出会った彼女。
+[k]
+
+＠ダ・ヴィンチ
+蛇王ザッハークの手、臣下のように働いていた、[r]黒姫という存在についての情報さ[line 3]
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_147 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,936 @@
+
+
+＄04-00-03-05-3-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11006001 1 サリエリ先生]
+[charaSet B 1098289900 1 折田さん]
+[charaSet C 1098288500 1 キリエ]
+
+[charaSet D 1098255000 1 黒い影]
+[charaSet E 1098292500 1 ジャンヌ・オルタ_シルエット]
+[charaFilter E silhouette 00000080]
+[charaSet L 1098255000 1 黒い影]
+[charaFilter L silhouette 00000080]
+[charaSet M 11006001 1 サリエリ先生_演出用]
+
+[charaSet F 1098291500 1 死霊騎士]
+[charaSet G 1098291500 1 死霊騎士]
+[charaSet H 1098291500 1 死霊騎士]
+[charaSet I 1098291500 1 死霊騎士]
+[charaSet J 1098291500 1 死霊騎士]
+[charaSet K 1098291500 1 死霊騎士]
+
+[sceneSet S 210701 1]
+[charaScale S 1.2]
+[sceneSet T 212900 1]
+[charaScale T 1.2]
+[sceneSet U 212900 1]
+[charaScale U 1.2]
+
+[imageSet W back10000 1 1]
+[charaScale W 1.01]
+[imageSet X back10000 1 1]
+[charaScale X 1.01]
+[charaDepth W 10]
+[charaDepth X 10]
+[charaSet Y 98115000 1 通信エフェクト用]
+[charaPut Y 2500,2500]
+
+[charaDepth S 1]
+[charaDepth T 1]
+[charaDepth F 4]
+[charaDepth G 3]
+[charaDepth H 2]
+[charaDepth U 5]
+[charaDepth I 8]
+[charaDepth J 7]
+[charaDepth K 6]
+[charaDepth Y 10]
+
+[charaTalk depthOff]
+[cameraMove 0.1 0,0 1.05]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaFace G 0]
+[charaFadeinFSL G 0.1 -350,0]
+[charaFace H 0]
+[charaFadeinFSR H 0.1 350,0]
+[charaFadein S 0.1 0,-220]
+
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[scene 210701]
+
+[bgm BGM_BATTLE_107 0.1]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[se ad471]
+[se ad1013]
+[fowardEffect bit_talk_h_slash01_fs 0,0 H]
+[wt 0.2]
+
+[charaShake F 0.03 4 4 0.7]
+[wt 0.1]
+[charaShake G 0.03 4 4 0.6]
+[wt 0.1]
+[charaShake H 0.03 4 4 0.5]
+[wt 0.7]
+
+[se ad42]
+[charaSpecialEffect F enemyErasure 1 1.2]
+[wt 0.1]
+[charaSpecialEffect G enemyErasure 1 1.2]
+[wt 0.1]
+[charaSpecialEffect H enemyErasure 1 1.2]
+[wait charaSpecialEffect H]
+[bgmStop BGM_BATTLE_107 2.5]
+[wt 1.5]
+
+？1：敵の数が、多い[line 3]
+？2：[#あのサーヴァント:ブ リ ト マ ー ト ・ オ ル タ]程じゃないけど、硬い！
+？！
+
+？1：召喚の負荷もまだきつい……
+？！
+
+[charaTalk A]
+[charaFadeout S 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠サリエリ先生
+……今、何をした？
+[k]
+
+＠サリエリ先生
+青黒い炎と鎧どもを薙ぎ払っていった、人影。[r]きみが指示を出しているように見えた。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠折田さん
+わーっ、きゃーっ！[r]こっち来るなああああって[line 3][wt 1.0][charaFace B 10]あれ？
+[k]
+
+＠折田さん
+鎧は？[r]炎は？
+[k]
+
+＠折田さん
+さっきまでそこに……え？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠キリエ
+先輩……[r]やっぱり、見間違えじゃない。
+[k]
+
+＠キリエ
+丸の内口のあたりでも、[r]同じようにしていました……よね……？
+[k]
+
+？1：先生
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠サリエリ先生
+……何だ。
+[k]
+
+？2：ごめん、キリエ
+
+[charaFace C 8]
+
+＠キリエ
+先輩……
+[k]
+
+？！
+
+？1：詳しいことは後で話すから
+？2：今は、ここからなるべく遠くに逃げて
+？！
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠折田さん
+は？　アンタ、なに言ってるの。[r]逃げるなら一緒に逃げなさいよ、死ぬわよ！
+[k]
+
+[charaFace B 5]
+
+＠折田さん
+見たでしょうが！[r]でかい武器もったでかい鎧と、なんか燃えてる奴！
+[k]
+
+＠折田さん
+死ぬ気か！[r]アンタは！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠サリエリ先生
+……。[r]……。
+[k]
+
+[charaFace A 6]
+
+＠サリエリ先生
+…………教師としては首肯し[#難:がた]い。[r]だが、一個人として、きみの発言に説得力を感じている。
+[k]
+
+＠サリエリ先生
+きみは、この事態に対して、[r]ある程度の対処が叶う特殊な背景があるようだ。
+[k]
+
+＠サリエリ先生
+常識の中にある限りには、[r]決して、きみの発言を認めはしないが[line 3]
+[k]
+
+[messageOff]
+[se ad661 0.7]
+[seStop ad661 0.7]
+[wt 0.2]
+[se ad7 0.3]
+[wt 0.7]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠折田さん
+な、何で携帯なんて取り出してんのサリ先。[r]さっき、ネットも電話も繋がらないって確認して……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠サリエリ先生
+現在時刻、17時26分。
+[k]
+
+＠サリエリ先生
+……銀座で管楽器の音が響いた瞬間から、[r]時計は進んでいない。
+[k]
+
+[messageOff]
+[charaFaceFade A 4 0.2]
+[cueSe SE_24 24_ad1372]
+[wt 1.5]
+
+＠サリエリ先生
+機械式の懐中時計で確認しても、[r]やはり、17時26分。
+[k]
+
+＠サリエリ先生
+[#八重洲:や　え　す]口近く、株価ボードの表示もそうだった。[r]17時26分。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠キリエ
+……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠折田さん
+嘘、でしょ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠サリエリ先生
+人々の消失、不気味な鎧と炎の[#跋扈:ばっこ]。[r]そして恐らくだが……あらゆる時計類の一斉不調。
+[k]
+
+＠サリエリ先生
+明らかなまでの異常事態だ。[r]であれば私は、今に限り、きみの発言を信じる。
+[k]
+
+[messageOff]
+[wt 0.4]
+
+？1：はい
+？2：さすが、サリエリ先生[&だ:]
+？！
+
+[wt 0.1]
+
+？1：[&自分:わたし]が[#囮:おとり]になるから
+？2：三人は今度こそ、全力でここから逃げて！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠キリエ
+囮[line 3]
+[k]
+
+[charaFace C 15]
+
+＠キリエ
+先輩、だめ！[r]それはだめです、絶対！
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[cameraMove 0.31 10,0 1.05]
+[wt 0.3]
+[cameraMove 0.61 -10,0 1.05]
+[wt 0.6]
+[cameraMove 0.3 0,0 1.05]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠折田さん
+なに覚悟決めた顔してんの！？[r]ふざっけんじゃ……ないわよ、[%1]！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.7]
+
+？1：先生、後を頼みます！
+？！
+
+＠サリエリ先生
+…………ああ。
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.05]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.05]
+[wt 1.4]
+
+[bgmStop BGM_EVENT_48 1.0]
+
+[se ad59]
+[seStop ad59 1.5]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[cameraMove 0.1 0,0 1.01]
+[charaTalk off]
+
+[scene 212900]
+[wt 1.2]
+
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+[wt 0.4]
+
+[bgm BGM_BATTLE_68 0.1]
+
+[charaScale I 1.2]
+[charaScale J 1.2]
+[charaScale K 1.2]
+[charaDepth T 5]
+[cueSe SE_21 21_ad1119 0]
+[seVolume 21_ad1119 1.0 1.0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFace K 0]
+[charaFadein I 0.4 -120,0]
+[charaFadeinFSL J 0.4 -470,0]
+[charaFadeinFSR K 0.4 230,0]
+[charaFadein T 0.4 -120,-250]
+[charaMove I -20,0 25.0]
+[charaMoveFSL J -370,0 25.0]
+[charaMoveFSR K 330,0 25.0]
+[charaMove T -20,-250 25.0]
+[wt 1.0]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 1.5]
+[charaScale F 1.2]
+[charaScale G 1.2]
+[charaScale H 1.2]
+[charaDepth T 1]
+[charaDepth F 8]
+[charaDepth G 7]
+[charaDepth H 6]
+[charaDepth U 5]
+[charaDepth I 4]
+[charaDepth J 3]
+[charaDepth K 2]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein F 0.4 120,0]
+[charaFadeinFSL G 0.4 -230,0]
+[charaFadeinFSR H 0.4 470,0]
+[charaFadein U 0.4 120,-250]
+[charaMove F 20,0 25.0]
+[charaMoveFSL G -330,0 25.0]
+[charaMoveFSR H 370,0 25.0]
+[charaMove U 20,-250 25.0]
+[wt 1.5]
+[seVolume 21_ad1119 1.0 0.3]
+[wt 1.0]
+
+？1：サーヴァントはいない、けど
+？2：鎧の群れは沢山いる……！
+？！
+
+
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout T 0.1]
+[charaMove I -50,0 0.1]
+[charaMoveFSL J -400,0 0.1]
+[charaMoveFSR K 300,0 0.1]
+[charaMove T -50,-250 0.1]
+
+[seStop 21_ad1119 1.4]
+[overlayFadein W 0.1 0,-850]
+[overlayFadein X 0.1 0,849]
+[charaMove W 0,-736 0.7]
+[charaMove X 0,735 0.7]
+[bgm BGM_BATTLE_68 0.7 0.7]
+[wt 0.7]
+
+＠
+数多の死霊の騎士たち。[r][line 3]それは、視界を埋め尽くす程の死の群れ。
+[k]
+
+＠
+あなたの簡易召喚でどれ程戦えるか。[r]二秒、であれば保つかもしれない。
+[k]
+
+＠
+けれど[#長時間戦闘:一　〇　分　以　上]は、どう？[r]そこまで保てば、あの三人は逃げ切れる？
+[k]
+
+＠
+わからない。[r]あなた／わたしには、わからない。
+[k]
+
+＠
+わかるのは、なるべく、[r]傷を負わず、一秒でも長く召喚を維持して、戦って、
+[k]
+
+＠
+時間を作ること。[r]囮として機能すること。
+[k]
+
+＠
+今は。[line 3]まず、初撃を生き延びる！
+[k]
+
+[messageOff]
+[bgm BGM_BATTLE_68 0.7 1.0]
+[charaMove W 0,-850 0.7]
+[charaMove X 0,849 0.7]
+
+[charaFadeout F 0.7]
+[charaFadeout G 0.7]
+[charaFadeout H 0.7]
+[charaFadeout U 0.7]
+[wt 1.2]
+[charaScale F 1.0]
+[charaScale G 1.0]
+[charaScale H 1.0]
+[charaScale I 1.0]
+[charaScale J 1.0]
+[charaScale K 1.0]
+[charaMove F 50,0 0.1]
+[charaMoveFSL G -300,0 0.1]
+[charaMoveFSR H 400,0 0.1]
+[charaMove U 50,-250 0.1]
+
+[charaDepth T 5]
+[charaDepth B 6]
+[charaDepth U 7]
+[charaDepth A 8]
+[charaFace I 0]
+[charaFace J 0]
+[charaFace K 0]
+[charaFadein I 0.4 0,0]
+[charaFadeinFSL J 0.4 -350,0]
+[charaFadeinFSR K 0.4 350,0]
+[se ad1007]
+[seStop ad1007 0.4]
+[charaMoveScale I 1.05 0.4]
+[charaMove I 0,10 0.4]
+[charaMoveScale J 1.05 0.4]
+[charaMoveFSL J -350,10 0.4]
+[charaMoveScale K 1.05 0.4]
+[charaMoveFSR K 350,10 0.4]
+[wt 0.5]
+[se ad694]
+[wt 0.2]
+
+＠J：死霊騎士
+目標１名、発見。[r][#殺戮:さつりく]を開始する。
+[k]
+
+[clear]
+＠K：死霊騎士
+殺す。
+[k]
+
+？1：[&いいや、死なない:ううん、死なないよ]！
+？2：来い！
+？！
+
+[messageOff]
+[charaTalk off]
+[se ad31 0.7]
+[se ad539 0.6]
+[fowardEffect bit_talk_noise_gr]
+[wt 0.4]
+[seStop ad539 0.4]
+[wt 0.2]
+[seStop ad31 0.4]
+[wt 0.2]
+[charaTalk on]
+[charaFadein T 0.2 0,-290]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.2 20,0]
+[charaMove B 0,0 0.2]
+[se ad59]
+[seStop ad59 0.4]
+[wt 0.2]
+[fowardEffectDestroy bit_talk_noise_gr]
+
+＠[image berserker_language_1]
+[%1]！
+[k]
+
+[messageOff]
+[se ad31 0.7]
+[se ad539 0.6]
+[fowardEffect bit_talk_noise_gr]
+[wt 0.4]
+[seStop ad539 0.4]
+[wt 0.2]
+[seStop ad31 0.4]
+[wt 0.2]
+[charaFadein U 0.2 0,-290]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.2 0,0]
+[wt 0.2]
+[charaFadeout T 0.1]
+[charaFadeout B 0.1]
+[fowardEffectDestroy bit_talk_noise_gr]
+
+＠[image berserker_language_2]
+戻れ！　折田君！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad31 0.7]
+[se ad539 0.6]
+[fowardEffect bit_talk_noise_gr]
+[wt 0.4]
+[seStop ad539 0.4]
+[wt 0.2]
+[seStop ad31 0.4]
+[wt 0.2]
+[charaFadeout U 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+[charaTalk on]
+[charaTalk I]
+[fowardEffectDestroy bit_talk_noise_gr]
+
+＠I：死霊騎士
+非武装民間人２名を目視にて確認。[r]照会済み[line 3]殺す。
+[k]
+
+[messageOff]
+[se ad31 0.7]
+[se ad539 0.6]
+[fowardEffect bit_talk_noise_gr]
+[wt 0.4]
+[seStop ad539 0.4]
+[wt 0.2]
+[seStop ad31 0.4]
+[wt 0.2]
+[charaFadein T 0.2 0,-290]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.2 0,0]
+[wt 0.2]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[fowardEffectDestroy bit_talk_noise_gr]
+
+＠[image berserker_language_1]
+……！
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_68 1.5]
+
+
+
+
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout T 0.1]
+[charaFadeout B 0.1]
+[scene 10000]
+[wt 0.2]
+
+[fadein black 0.1]
+[wait fade]
+
+[criMovie talk_mov245 bgmPlay true]
+
+[fadeout black 0.1]
+[wait fade]
+
+[cameraMoveEase 0,0 0.1 easeOutQuad 1.1]
+[blur lens 0.4 2 2]
+[charaScale Y 1.0]
+[charaPut Y 0,-30]
+[charaEffect Y bit_talk_shadow_small]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 0,0]
+
+[scene 212900]
+[wt 0.2]
+
+[fadein black 0.5]
+[wait fade]
+
+＠[image berserker_language_1]
+え……[line 3]
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_29_black]
+[charaEffectDestroy Y bit_talk_shadow_small]
+[cueSe SE_23 23_ad1338]
+[cueSe Battle bac27]
+
+[fadeout white 1.0]
+[wait fade]
+[blurOff lens 0.1]
+[cameraMove 0.1 0,0 1.01]
+[charaSet B 1098292500 1 ジャンヌ・オルタ]
+[charaDepth E 2]
+[charaDepth B 1]
+[charaFace E 27]
+[charaFace B 27]
+[charaFadein E 0.1 1]
+[charaFadein B 0.1 1]
+[wt 3.5]
+[fadein white 1.5]
+[wait fade]
+
+[wt 1.5]
+
+？1：折田さん！
+
+？！
+
+[charaFadeout E 0.4]
+[wt 1.5]
+[charaFace B 7]
+
+[bgm BGM_EVENT_82 0.1]
+
+＠B：折田さん？
+あービックリしたぁ！[r]今ちょっと熱かった気がしたわよこの野郎！
+[k]
+
+？1：あれ？
+
+[charaFace B 19]
+
+＠ジャンヌ・オルタ
+何が、あれ？　よ。[r]ふう！　やーっと現界できたわ！
+[k]
+
+？2：うそ、ジャンヌ・オルタ[line 3]
+
+[charaFace B 24]
+
+＠ジャンヌ・オルタ
+嘘じゃないです。[r]ふう！　やっと現界できたっての！
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠A：サリエリ先生？
+そのようだ。[r]……成る程、同位体のようなものに憑依した形か。
+[k]
+
+＠A：サリエリ先生？
+カルデアとは通信不能。[r]まあ、これは予想の範疇ではある。
+[k]
+
+[charaFaceFade A 6 0.1]
+
+＠A：サリエリ
+私たちが分かるか。[r][#マスター]。
+[k]
+
+？1：先生だけど先生じゃない方のサリエリ！
+？2：二人とも、来てくれたの！？
+？！
+
+[messageOff]
+[charaTalk off]
+[charaScale B 1.2]
+[charaScale M 1.2]
+[charaDepth A 4]
+[charaDepth T 5]
+[charaDepth B 6]
+[charaDepth M 7]
+[charaFace B 24]
+[charaFadein B 0.4 -280,0]
+[charaFace M 0]
+[charaFadein M 0.4 280,0]
+[charaFadein T 0.4 0,-290]
+[wt 0.4]
+[charaFadeout A 0.1]
+[wt 1.5]
+
+[charaMoveEase T -100,-290 0.7 easeOutCubic]
+[charaMoveEase B -450,0 0.7 easeOutCubic]
+[charaMoveEase M 150,0 0.7 easeOutCubic]
+[charaFadeout B 0.4]
+[wt 0.7]
+
+＠サリエリ
+私は見た目ではそう変わりないが、[r]そうとも。来たぞ。
+[k]
+
+[charaFace M 6]
+
+＠サリエリ
+マシュ・キリエライト……[r]いや、キリエには路地裏で隠れるよう言ってある。
+[k]
+
+＠サリエリ
+おまえと我々で連中の相手をしている間は、[r]彼女の安全を保てる筈だ。
+[k]
+
+？1：ありがとう
+？2：詳しい事情についてだけど[line 3]
+？！
+
+[messageOff]
+[charaFadeout M 0.4]
+[charaMoveEase T 100,-290 1.0 easeOutCubic]
+[charaMoveEase M 450,0 1.0 easeOutCubic]
+[charaFace B 27]
+[charaFadein B 0.7 -450,0]
+[charaMoveEase B -150,0 1.0 easeOutCubic]
+[wt 0.7]
+
+＠ジャンヌ・オルタ
+……平気。記憶とか諸々、[r]この子……折田のものを共有できてるみたい。
+[k]
+
+[charaFace B 1]
+
+＠ジャンヌ・オルタ
+大体わかってます。多分ここ二十一世紀の東京で、[r]あれもこれも敵、っていうかここらの奴は全部敵！
+[k]
+
+[charaFace B 1]
+
+＠ジャンヌ・オルタ
+つまり、皆殺し確定！
+[k]
+
+[messageOff]
+[se ad664 0]
+[seVolume ad664 1.0 0.7]
+[se ad350]
+[cueSe SE_22 22_ad1173 0]
+[seVolume 22_ad1173 1.0 0.7]
+[charaEffect B bit_talk_charge_ppl02]
+[wt 1.5]
+[seStop ad664 1.2]
+[seStop ad350 1.2]
+[seStop 22_ad1173 1.2]
+[charaFadeout B 0.4]
+[charaFadeout T 0.4]
+[wt 0.1]
+[charaEffectDestroy B bit_talk_charge_ppl02]
+[wt 0.3]
+[charaPut B 2500,2500]
+
+
+[charaFadein F 0.1 1]
+[se ad960]
+[se ad249]
+[charaEffect F bit_talk_29_black_red]
+[charaShake F 0.04 3 3 0.6]
+[wt 1.0]
+[seStop ad960 1.0]
+[seStop ad249 1.0]
+[wt 0.5]
+[charaSpecialEffect F enemyErasure 1 1.4]
+[se ad42]
+[wait charaSpecialEffect F]
+[wt 0.8]
+
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.2 1]
+
+＠ジャンヌ・オルタ
+絶好調！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠サリエリ
+[line 3][#慟哭:どうこく]外装、起動。
+[k]
+
+[messageOff]
+[se ad489]
+[se ade446]
+[seVolume ade446 0 0]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ade446 0.5 0.4]
+[seVolume ad556 0.5 0.3]
+[effect bit_talk_sparks_black]
+[fowardEffect bit_talk_blk_fire_aura 0,-350]
+[wt 1.5]
+
+[se ad574]
+[fadeout white 0.5]
+[seStop ade446 1.0]
+[seStop ad556 1.0]
+[wait fade]
+
+[charaCrossFade A 11006000 0 0.1]
+
+[effectDestroy bit_talk_sparks_black]
+[fowardEffectDestroy bit_talk_blk_fire_aura]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.3]
+
+＠サリエリ
+やるぞ、マスター！[r]ここまでは防戦に徹していたようだが……
+[k]
+
+？1：[&ああ！:うん！]
+？2：反撃開始だ！
+？！
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_82 1.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

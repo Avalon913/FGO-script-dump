@@ -1,0 +1,150 @@
+
+
+＄94-14-48-01-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 28002000 1 ヘファイスティオン]
+[charaSet B 1098325400 1 イプシロン]
+[charaSet C 28002000 1 ヘファイスティオン_演出用]
+
+[sceneSet D 251301 1]
+[sceneSet E 251301 1]
+
+[charaSet F 98115000 1 エフェクト用1]
+[charaSet G 98115000 1 エフェクト用2]
+[charaSet H 98115000 1 エフェクト用3]
+
+[sceneSet I 10001 1]
+
+[subCameraOn 1]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.1]
+[charaLayer A sub #A]
+[charaLayer G sub #A]
+[charaLayer H sub #A]
+[charaLayer I sub #A]
+[charaLayer D sub #A]
+[charaScale G 1.2]
+[charaScale H 1.1]
+[charaScale A 1.2]
+[charaScale D 1.2]
+[charaScale I 1.01]
+[charaDepth I 9]
+[charaDepth H 4]
+[charaDepth G 3]
+[charaDepth A 2]
+[charaDepth D 1]
+[charaFace A 0]
+[charaFadein A 0.1 -50,10]
+[charaFadein D 0.1 -50,-290]
+[charaPut G 180,160]
+[charaEffect G bit_talk_lightning_02g]
+[charaPut H 2000,2000]
+[charaEffect H bit_talk_raniment01]
+
+[charaTalk depthOff]
+[charaTalk off]
+
+[charaDepth F 3]
+[charaDepth C 2]
+
+[charaScale A 1.2]
+[charaScale D 1.2]
+
+[scene 251301]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaPut F 180,160]
+[charaEffect F bit_talk_lightning_02g]
+
+[se ade446]
+[seVolume ade446 0 0]
+
+[fadein black 1.0]
+[seVolume ade446 1.0 1.0]
+[wait fade]
+[wt 1.4]
+
+[subRenderFadein #A 0.5 0,-40]
+[seVolume ade446 0.4 0.5]
+[wt 0.5]
+
+[charaPut F 2000,2000]
+[charaEffectDestroy F bit_talk_lightning_02g]
+[charaFadeout C 0.1]
+[bgm BGM_MAP_41 0.1]
+
+[charaFaceFade A 1 0.2]
+
+＠ヘファイスティオン
+よし、雷の[#精髄:エッセンス]は確かに捕まえた。[r]これでいけるか？
+[k]
+
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+？1：回収します！
+？！
+
+[messageOff]
+[seStop ade446 1.0]
+[cueSe Battle bas6]
+[charaFadein I 0.7 0,-200]
+[wt 0.8]
+[charaPut G 2000,2000]
+[charaEffectDestroy G bit_talk_lightning_02g]
+[charaPut H 180,210]
+[wt 0.1]
+
+[charaFadeout I 1.0]
+[wt 0.8]
+[cueSe SE_23 23_ad1305]
+[charaEffectStop H bit_talk_raniment01]
+[wt 2.0]
+
+[charaTalk off]
+[subRenderFadeout #A 0.4]
+[wt 0.5]
+
+＠イプシロン
+うん、バッチリ！[r]なかなかできるじゃない！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ヘファイスティオン
+こういう無茶は、よく我が王に言われたものだからな。
+[k]
+
+[charaFace C 4]
+
+＠ヘファイスティオン
+やれ怪物に会わせろだの、試しに戦わせてくれだの、[r]年がら年中、ろくでもないことばかり頼まれたもんだ。
+[k]
+
+？1：ううん、ブラック職場感……
+？！
+
+[charaFace C 1]
+
+＠ヘファイスティオン
+口には気をつけろ。[r]もっとも、実態には即していると思うがな。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_41 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

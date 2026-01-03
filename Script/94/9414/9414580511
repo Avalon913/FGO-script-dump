@@ -1,0 +1,299 @@
+
+＄94-14-58-05-1-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1019001 1 ラーマ]
+[charaSet B 2015001 1 アルジュナ]
+[charaSet C 1098328400 1 ヴリトラ]
+[charaSet D 1098328720 1 インドラ]
+[charaSet E 1098328000 1 ヴァジュラ]
+[charaSet F 1098328100 1 ヴァジュラ]
+[charaSet G 28005000 1 トラロック]
+[charaSet H 1098330600 1 源頼光]
+
+[charaSet I 3029002 1 頼光演出用]
+[charaFilter I silhouette 00000080]
+[charaSet J 1019001 1 ラーマ演出用]
+[charaSet K 2015001 1 アルジュナ演出用]
+[charaSet L 28005000 1 トラロック演出用]
+
+[imageSet M black_fade_re 1]
+[imageSet N black_fade_re 1]
+
+[sceneSet O 28010 1]
+[sceneSet P 28010 1]
+[sceneSet Q 28010 1]
+
+[charaTalk depthOff]
+[charaDepth O 1]
+[charaDepth H 2]
+[charaDepth I 3]
+[charaDepth E 4]
+[charaDepth F 5]
+
+[subCameraOn 3]
+[charaLayer M sub #A]
+[charaLayer N sub #A]
+[subCameraFilter #A through]
+[charaScale M 1.5]
+[charaScale N 1.5]
+[charaFadein M 0.1 -800,-250]
+[charaFadein N 0.1 800,-250]
+
+[charaLayer P sub #B]
+[charaLayer L sub #B]
+[charaLayer K sub #B]
+[subCameraFilter #B maskEdge cut359_mask05 4 0,0,0,255 0]
+
+[charaDepth P 1]
+[charaDepth L 2]
+[charaDepth K 3]
+
+[charaScale P 1.2]
+[charaFace L 7]
+[charaFadein L 0.1 0,300]
+[charaFadein P 0.1 -500,170]
+
+[charaLayer Q sub #C]
+[charaLayer J sub #C]
+[subCameraFilter #C maskEdge cut359_mask05 4 0,0,0,255 0]
+[charaDepth Q 1]
+[charaDepth J 2]
+
+[charaScale Q 1.2]
+[charaFace J 5]
+[charaFadein J 0.1 0,300]
+[charaFadein Q 0.1 500,170]
+
+[scene 10001]
+
+[fadein black 0.5]
+[wait fade]
+
+[fadeout white 0.1]
+[wait fade]
+
+
+[scene 28010]
+[cameraMove 0.1 0,-20 1.1]
+
+[se ad131]
+[seVolume ad131 0 0]
+[seVolume ad131 0.5 1.0]
+[se ad627 0.8]
+[wt 0.8]
+[se ade346 0.6]
+[wt 0.5]
+[seVolume ad131 4.0 0]
+[wt 1.0]
+[se ad63 0.4]
+[wt 1.5]
+[se ade347 0.2]
+[wt 1.0]
+[se ad627 0.1]
+[seStop ade347 2.5]
+[seStop ad63 2.5]
+[seStop ad627 2.5]
+[wt 2.0]
+[seStop ad131]
+
+[cameraMoveEase 0,0 2.5 easeOutSine 1.0]
+[fadein white 1.5]
+[wait fade]
+[wt 1.5]
+
+[bgm BGM_EVENT_124 0.1]
+
+？1：やっと頂上に着いた……！
+？！
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠トラロック
+空は相変わらずの雷模様ですが……
+[k]
+
+＠トラロック
+この場では、少なくとも[#雨霰:あめあられ]のように降ってくる、[r]という感じでもなさそうです。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アルジュナ
+油断はできません。マスターは[r]避雷傘をまだ手放さないほうがいいでしょう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_124 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ラーマ
+さて、このあたりに雷の試練の守護者がいると[r]思うのだが[line 3][wt 0.6][charaFace A 5]むっ。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[subRenderFadein #A 0.1 0,0]
+
+[cameraMove 0.1 0,-40 1.15]
+[charaScale O 1.2]
+[charaFadein O 0.1 0,-140]
+[wt 1.0]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaTalk off]
+[se ad984]
+[charaFace I 0]
+[charaFadein I 0.4 0,110]
+[wt 2.0]
+[charaFace H 14]
+[charaFadein H 0 0,110]
+[charaMoveEase H 0,-10 1.8 easeOutQuad]
+[charaMoveEase I 0,-10 1.8 easeOutQuad]
+[charaMoveEase O 0,-260 1.8 easeOutQuad]
+[charaMoveEase M -1200,-250 1.8 easeOutQuad]
+[charaMoveEase N 1200,-260 1.8 easeOutQuad]
+[charaFadeout M 1.3]
+[charaFadeout N 1.3]
+[charaFadeout I 1.0]
+[wt 2.5]
+
+[bgm BGM_MAP_92 0.1]
+
+？1：なんとなくそんな気はしてたけど
+？2：やっぱり雷と言えば頼光さん！
+？！
+
+[charaTalk on]
+[charaTalk L]
+[subRenderFadeinFSR #B 0.3 300,-380]
+[subRenderMoveFSR #B 300,-330 0.3]
+[wt 0.3]
+
+＠L：トラロック
+ですが、何か様子が[r]おかしくはありませんか、ね？
+[k]
+
+[charaTalk J]
+[subRenderFadeinFSL #C 0.3 -300,-380]
+[subRenderMoveFSL #C -300,-330 0.3]
+[wt 0.3]
+
+＠J：ラーマ
+うむ。余の背筋も震えかけるほどの[line 3][r][#純然たる殺気]だぞ、これは。
+[k]
+
+[subRenderFadeout #B 0.3]
+[subRenderFadeout #C 0.3]
+[wt 0.3]
+[charaFadeout L 0.1]
+[charaFace K 5]
+[charaFadein K 0.1 0,300]
+
+[charaTalk H]
+
+＠源頼光
+……来ましたね。[r]空を[#穢:けが]せし邪竜。
+[k]
+
+＠源頼光
+その本性こそは魔にして悪、秩序の敵なれば[line 3]
+[k]
+
+[messageOff]
+[charaFaceFade H 15 0.3]
+[wt 1.5]
+
+[se ad442]
+[charaFaceFade H 16 0.2]
+[charaMove H 0,-15 0.2]
+
+＠源頼光
+[#誅戮:ちゅうりく]あるのみ。
+[k]
+
+[charaTalk K]
+[subRenderFadeinFSR #B 0.3 300,-330]
+[wt 0.3]
+
+＠K：アルジュナ
+明らかに敵を見る目です。[r]そして、彼女の隣にいるあれは[line 3]！
+[k]
+
+[charaFace E 5]
+[charaPut E 2]
+[charaFadeTime E 0 0]
+[charaFace F 0]
+[charaPut F 0]
+[charaFadeTime F 0 0]
+
+[charaTalk K,E,F]
+
+？1：どうなってる[&んだ:の]……？
+？！
+
+[messageOff]
+[subRenderFadeout #B 0.3]
+[cameraMoveEase 0,0 1.5 easeOutQuad 1.0]
+[charaFadeout H 0.3]
+[wt 1.0]
+[charaFadeTime E 0.4 1.0]
+[charaFadeTime F 0.4 1.0]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk E]
+
+＠E：ヴァジュラ
+そーそー。あれは邪竜ヴリトラ、[#人類:みんな]の敵！[r]コドモの姿に騙されちゃダメだぞぉ～？
+[k]
+
+[clear]
+
+[charaTalk F]
+
+＠F：ヴァジュラ
+[#劣悪千万:どうしようもなく]、[#邪悪千万:た ち が わ る い]。[r]それ以外の性質を考える価値すらもない相手です。
+[k]
+
+[charaFace F 2]
+
+＠F：ヴァジュラ
+故にこそ[line 3][r]殺すべきなのです。
+[k]
+
+＠F：ヴァジュラ
+今、ここで。
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 1.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_MAP_92 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

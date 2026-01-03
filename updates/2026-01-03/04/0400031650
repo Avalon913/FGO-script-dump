@@ -1,0 +1,1114 @@
+
+
+＄04-00-03-16-5-0
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098290600 1 平景清]
+[charaSet B 1098289900 1 ジャンヌ・オルタ]
+[charaSet C 1098291400 1 怒りの凝集]
+[charaSet D 1098291400 1 怒りの凝集_シルエット]
+[charaFilter D silhouette 00000080]
+
+[sceneSet E 211201 1]
+[charaScale E 1.3]
+[charaSet F 98115000 1 エフェクト用]
+
+[sceneSet G 211201 1]
+[charaScale G 1.2]
+
+[charaSet I 1098290600 1 平景清_サブレイヤー用]
+[charaSet J 1098289900 1 ジャンヌ・オルタ_サブレイヤー用]
+
+[sceneSet L 10000 1]
+[charaFilter L silhouette FF000080]
+[charaScale L 1.2]
+
+[subCameraOn 2]
+
+
+[label restart]
+
+[scene 211201]
+
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_57 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠平景清
+さて、何処へ向かうか。
+[k]
+
+
+？1：屋上
+[branch select03]
+
+？2：校舎裏
+[branch select04]
+
+？3：自分のクラス
+[branch select02]
+
+？4：サリエリの担任クラス
+[branch select01]
+
+？！
+
+[label select01]
+
+[messageOff]
+[bgm BGM_MAP_57 1.0 0.5]
+[fadeout black 1.0]
+[wait fade]
+[subRenderFadeout #A 0.1]
+
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+
+[charaFadeout A 0.1]
+
+[scene 211400]
+
+[sceneSet H 211400 1]
+[charaScale H 1.1]
+[charaFadein H 0.1 0,-250]
+
+[sceneSet K 211400 1]
+[charaScale K 1.2]
+[charaScale B 1.2]
+[charaScale I 1.2]
+
+[charaTalk depthOff]
+
+[charaDepth K 1]
+[charaDepth B 2]
+[charaDepth I 2]
+
+[charaLayer B sub #A]
+[charaLayer K sub #A]
+[charaLayer I sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 255,255,255,255 255]
+
+[charaFace B 0]
+[charaFadeinFSR B 0.1 -50,180]
+[charaFadein K 0.1 -500,-100]
+[wt 1.0]
+
+[bgm BGM_MAP_57 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+？1：黒板
+
+[charaMoveEase H -190,-300 1.5 easeOutSine]
+[charaMoveScaleEase H 1.3 1.5 easeOutSine]
+[wt 2.0]
+
+[charaTalk B]
+[subRenderFadein #A 0.3 500,-200]
+[subRenderMove #A 400,-200 0.5]
+[wt 1.0]
+
+＠ジャンヌ・オルタ
+日直は、[#作馬:さくま]と[#錫木:すずき]……[r]ってこれ今日の消し忘れよね。
+[k]
+
+[charaFace B 14]
+
+＠ジャンヌ・オルタ
+そんぐらいかしら。[r]サリ先に関係ありそうなものはナシ。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+
+
+
+
+
+[branch select01]
+
+？2：教壇
+
+[charaMoveEase H -190,-250 1.5 easeOutSine]
+[charaMoveScaleEase H 1.3 1.5 easeOutSine]
+[wt 2.0]
+
+[charaTalk B]
+[subRenderFadein #A 0.3 500,-200]
+[subRenderMove #A 400,-200 0.5]
+[wt 1.0]
+
+＠ジャンヌ・オルタ
+ん？
+[k]
+
+＠ジャンヌ・オルタ
+待って、教壇の中……[r]出席簿が入ってる。
+[k]
+
+[branch select-end]
+
+？3：ロッカー
+
+[charaMoveEase H 120,-300 1.5 easeOutSine]
+[charaMoveScaleEase H 1.3 1.5 easeOutSine]
+
+[charaFadeout B 0.1]
+
+[charaFace I 1]
+[charaFadeinFSR I 0.1 -50,180]
+
+[wt 2.0]
+
+[charaTalk I]
+[subRenderFadein #A 0.3 500,-200]
+[subRenderMove #A 400,-200 0.5]
+[wt 1.0]
+
+＠I：平景清
+生徒用のロッカーだな。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadeinFSR B 0.1 -50,180]
+
+＠ジャンヌ・オルタ
+ここは流石に何もなさそうね。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+
+
+
+
+
+[branch select01]
+
+？4：（別の場所へ行く）
+
+[messageOff]
+[bgm BGM_MAP_57 1.0 0.5]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout H 0.1]
+[branch restart]
+
+
+？！
+
+
+[label select02]
+
+[messageOff]
+[bgm BGM_MAP_57 1.0 0.5]
+[fadeout black 1.0]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[charaFadeout H 0.1]
+
+[charaFadeout A 0.1]
+
+[scene 211301]
+
+[sceneSet H 211301 1]
+[charaScale H 1.1]
+[charaFadein H 0.1 0,-250]
+
+[sceneSet K 211301 1]
+[charaScale K 1.2]
+[charaScale B 1.2]
+[charaScale I 1.2]
+
+[charaTalk depthOff]
+
+[charaDepth K 1]
+[charaDepth B 2]
+[charaDepth I 3]
+
+[charaLayer B sub #A]
+[charaLayer K sub #A]
+[charaLayer I sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 255,255,255,255 255]
+
+[charaFace B 0]
+[charaFadeinFSR B 0.1 -50,180]
+[charaFadein K 0.1 -500,-100]
+[wt 1.0]
+
+[bgm BGM_MAP_57 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+
+？1：黒板
+
+[charaMoveEase H -190,-300 1.5 easeOutSine]
+[charaMoveScaleEase H 1.3 1.5 easeOutSine]
+
+[charaFace B 10]
+
+[wt 2.0]
+
+[charaTalk B]
+[subRenderFadein #A 0.3 500,-200]
+[subRenderMove #A 400,-200 0.5]
+[wt 1.0]
+＠ジャンヌ・オルタ
+……げ。[r]明日の日直、私じゃない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadeinFSR I 0.1 -50,180]
+
+＠I：平景清
+ははは。ご苦労。
+[k]
+
+？2：教壇
+
+[charaMoveEase H -190,-250 1.5 easeOutSine]
+[charaMoveScaleEase H 1.3 1.5 easeOutSine]
+
+[charaFace B 1]
+
+[wt 2.0]
+
+[charaTalk B]
+[subRenderFadein #A 0.3 500,-200]
+[subRenderMove #A 400,-200 0.5]
+[wt 1.0]
+
+＠ジャンヌ・オルタ
+何もないわね。[r]フーカ先生、ちゃんと出席簿持っていってるし。
+[k]
+
+？3：ロッカー
+
+[charaMoveEase H 120,-300 1.5 easeOutSine]
+[charaMoveScaleEase H 1.3 1.5 easeOutSine]
+
+[charaFadeout B 0.1]
+
+[charaFace I 7]
+[charaFadeinFSR I 0.1 -50,180]
+
+[wt 2.0]
+
+[charaTalk I]
+[subRenderFadein #A 0.3 500,-200]
+[subRenderMove #A 400,-200 0.5]
+[wt 1.0]
+
+＠I：平景清
+生徒用のロッカーというのは、[r]小さいな。これでは竹刀の一本も入らん。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadeinFSR B 0.1 -50,180]
+
+＠ジャンヌ・オルタ
+入れんでいい！
+[k]
+
+？4：（別の場所へ行く）
+
+[messageOff]
+[bgm BGM_MAP_57 1.0 0.5]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout H 0.1]
+[branch restart]
+
+？！
+
+[messageOff]
+[wt 0.5]
+
+
+
+
+
+[branch select02]
+
+
+[label select03]
+
+[messageOff]
+[bgm BGM_MAP_57 1.0 0.5]
+[fadeout black 1.0]
+[wait fade]
+[subRenderFadeout #A 0.1]
+
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+
+[charaFadeout A 0.1]
+
+[scene 211601]
+
+[sceneSet H 211601 1]
+[charaScale H 1.1]
+[charaFadein H 0.1 0,-250]
+
+[sceneSet K 211601 1]
+[charaScale K 1.2]
+[charaScale B 1.2]
+[charaScale I 1.2]
+
+[charaTalk depthOff]
+
+[charaDepth K 1]
+[charaDepth B 2]
+[charaDepth I 2]
+
+[charaLayer B sub #A]
+[charaLayer K sub #A]
+[charaLayer I sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 255,255,255,255 255]
+
+[charaFace B 0]
+[charaFadeinFSR B 0.1 -50,180]
+[charaFadein K 0.1 -500,-100]
+[wt 1.5]
+
+[bgm BGM_MAP_57 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+
+？1：フェンス
+
+[charaMoveEase H -120,-300 1.5 easeOutSine]
+[charaMoveScaleEase H 1.3 1.5 easeOutSine]
+
+[charaFace B 1]
+
+[wt 2.0]
+
+[charaTalk B]
+[subRenderFadein #A 0.3 500,-200]
+[subRenderMove #A 400,-200 0.5]
+[wt 1.0]
+＠ジャンヌ・オルタ
+……フェンスに寄りかかると危ないわよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 11]
+[charaFadeinFSR I 0.1 -50,180]
+
+＠I：平景清
+よじ登るのは容易いが、[r]特にサリエリの手がかりはないな。
+[k]
+
+？2：貯水タンク
+
+[charaMoveEase H 120,-340 1.5 easeOutSine]
+[charaMoveScaleEase H 1.3 1.5 easeOutSine]
+
+[charaFadeout B 0.1]
+
+[charaFace I 10]
+[charaFadeinFSR I 0.1 -50,180]
+
+[wt 2.0]
+
+[charaTalk I]
+[subRenderFadein #A 0.3 500,-200]
+[subRenderMove #A 400,-200 0.5]
+[wt 1.0]
+
+＠I：平景清
+何だあのタンクは？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadeinFSR B 0.1 -50,180]
+
+＠ジャンヌ・オルタ
+貯水タンクじゃないの？[r]……流石に、中に手がかりはないでしょ。
+[k]
+
+？3：落ちている菓子パン
+
+[charaMoveEase H 120,-200 1.5 easeOutSine]
+[charaMoveScaleEase H 1.3 1.5 easeOutSine]
+
+[charaFace B 3]
+[wt 2.0]
+
+[charaTalk B]
+[subRenderFadein #A 0.3 500,-200]
+[subRenderMove #A 400,-200 0.5]
+[wt 1.0]
+
+＠ジャンヌ・オルタ
+誰よ、菓子パン落としてそのまんまにしてる奴は！[r]食い物を粗末にすんな！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadeinFSR I 0.1 -50,180]
+
+＠I：平景清
+けしからん。
+[k]
+
+？4：（別の場所へ行く）
+
+[messageOff]
+[bgm BGM_MAP_57 1.0 0.5]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout H 0.1]
+[branch restart]
+
+？！
+
+[messageOff]
+[wt 0.5]
+
+
+
+
+
+
+[branch select03]
+
+
+
+[label select04]
+
+[messageOff]
+[bgm BGM_MAP_57 1.0 0.5]
+[fadeout black 1.0]
+[wait fade]
+[subRenderFadeout #A 0.1]
+
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[charaFadeout H 0.1]
+
+[charaFadeout A 0.1]
+
+[scene 211701]
+
+[sceneSet H 211701 1]
+[charaScale H 1.1]
+[charaFadein H 0.1 0,-250]
+
+[sceneSet K 211701 1]
+[charaScale K 1.2]
+[charaScale B 1.2]
+[charaScale I 1.2]
+
+[charaTalk depthOff]
+
+[charaDepth K 1]
+[charaDepth B 2]
+[charaDepth I 3]
+
+[charaLayer B sub #A]
+[charaLayer K sub #A]
+[charaLayer I sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 255,255,255,255 255]
+
+[charaFace B 0]
+[charaFadeinFSR B 0.1 -50,180]
+[charaFadein K 0.1 -500,-100]
+[wt 1.0]
+
+[bgm BGM_MAP_57 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+
+？1：壁
+
+[charaMoveEase H -140,-280 1.5 easeOutSine]
+[charaMoveScaleEase H 1.3 1.5 easeOutSine]
+
+[wt 2.0]
+
+[charaTalk B]
+[subRenderFadein #A 0.3 500,-200]
+[subRenderMove #A 400,-200 0.5]
+[wt 1.0]
+
+＠ジャンヌ・オルタ
+壁に何か書いてあるわね。[r]どれどれ……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadeinFSR I 0.1 -50,180]
+
+＠I：平景清
+これは、歌の類か？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadeinFSR B 0.1 -50,180]
+
+＠ジャンヌ・オルタ
+詩じゃないかしら。[r]青春のポエム。
+[k]
+
+＠ジャンヌ・オルタ
+Ｓ・50ってあるから昭和の頃かな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadeinFSR I 0.1 -50,180]
+
+＠I：平景清
+否、[#承安:しょうあん]かもしれぬ。[r]（※1171～1175年の元号）
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 27]
+[charaFadeinFSR B 0.1 -50,180]
+
+＠ジャンヌ・オルタ
+そうだったら歴史の重みを感じさせるわね……。[wt 1.0][charaFace B 3][r]アホか。
+[k]
+
+？2：木々
+
+[charaMoveEase H 150,-230 1.5 easeOutSine]
+[charaMoveScaleEase H 1.4 1.5 easeOutSine]
+
+[charaFadeout B 0.1]
+
+[charaFace I 11]
+[charaFadeinFSR I 0.1 -50,180]
+[wt 2.0]
+
+[charaTalk I]
+[subRenderFadein #A 0.3 500,-200]
+[subRenderMove #A 400,-200 0.5]
+[wt 1.0]
+
+＠I：平景清
+このあたりに潜んでいる、[r]ということはない[line 3]か。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadeinFSR B 0.1 -50,180]
+
+＠ジャンヌ・オルタ
+そのへんにサリエリが隠れてるって？[r]……ないわね。
+[k]
+
+[charaFace B 12]
+
+＠ジャンヌ・オルタ
+でも、その絵ヅラ……[r]ちょっと見たいわね……
+[k]
+
+？3：壊れた物置
+
+[charaMoveEase H 140,-250 1.5 easeOutSine]
+[charaMoveScaleEase H 1.3 1.5 easeOutSine]
+
+[wt 2.0]
+
+[charaTalk B]
+[subRenderFadein #A 0.3 500,-200]
+[subRenderMove #A 400,-200 0.5]
+[wt 1.0]
+
+＠ジャンヌ・オルタ
+これ、廃棄するやつよね。[r]すっかり錆びてるわ。
+[k]
+
+[messageOff]
+
+[se adm68]
+
+[wt 2.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadeinFSR I 0.1 -50,180]
+
+＠I：平景清
+特に、見るべきものはなさそうだ。
+[k]
+
+？4：（別の場所へ行く）
+
+[messageOff]
+[bgm BGM_MAP_57 1.0 0.5]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout H 0.1]
+[branch restart]
+
+
+？！
+
+[messageOff]
+[wt 0.5]
+
+
+
+
+
+
+[branch select04]
+
+
+
+[label select-end]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_MAP_57 1.0]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+
+[charaFadeout H 0.1]
+[charaFadeout B 0.1]
+[charaFadeout K 0.1]
+[charaFadeout I 0.1]
+
+[charaScale B 1.0]
+[charaScale I 1.0]
+
+[charaLayer B normal]
+[charaLayer K normal]
+[charaLayer I normal]
+[wt 0.5]
+[cameraMove 0.1 0,0 1.01]
+
+[scene 211201]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_124 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ジャンヌ・オルタ
+…………こういうのって普通、[r]教師が持っていくもんじゃないのかしら。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠平景清
+知らん。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠ジャンヌ・オルタ
+そこは知っときなさいよ。[r]アンタの依代、ホントに現代人な訳……？
+[k]
+
+[charaFace B 0]
+
+＠ジャンヌ・オルタ
+ともかく少し気になるわ。[r]中、開いてみるわよ。
+[k]
+
+[messageOff]
+
+[charaFace B 27]
+
+[se ade277]
+[wt 1.5]
+[se ade277]
+
+[wt 1.5]
+
+＠ジャンヌ・オルタ
+……。[r]……。
+[k]
+
+[charaFace B 21]
+
+＠ジャンヌ・オルタ
+……ああ、これ。ビンゴだわ。[r]マスター。
+[k]
+
+？1：（受け取って、開く）
+？！
+
+[messageOff]
+
+[charaMove B 0,10 0.5]
+[charaMoveScale B 1.1 0.5]
+
+[wt 0.7]
+
+[bgmStop BGM_EVENT_124 1.0]
+
+[se ad420]
+[seVolume ad420 0 0.6]
+
+[charaMoveReturn B 0,5 0.5]
+[wt 1.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade277]
+[wt 1.5]
+[se ade277]
+
+[wt 1.5]
+
+[charaMoveScale B 1.0 0.1]
+
+＠
+出席簿、とあるページの端に[line 3]
+[k]
+
+＠
+生徒の出欠チェックとはまるで無関係な、[r]震える筆致の走り書き。
+[k]
+
+＠
+あなた／わたしは、[r]それを黙読する。
+[k]
+
+[messageOff]
+
+[bgm BGM_EVENT_129 0.1]
+
+[charaFadein G 0.7 100,-250]
+[charaMove G -100,-250 50.0]
+
+[wt 1.5]
+
+
+＠
+『王妃の言葉が耳から離れない』
+[k]
+
+＠
+『ごく短時間で、私の自我は、ひび割れて』
+[k]
+
+[messageOff]
+
+[wt 1.5]
+
+＠
+『私は誰だ』
+[k]
+
+＠
+『私は死だ』
+[k]
+
+＠
+『私は、神の愛し子を……』
+[k]
+
+[messageOff]
+
+[wt 1.0]
+
+＠
+『否。[r]　否。否否否否否否否否否否否否否否否否否否否否否』
+[k]
+
+[messageOff]
+
+[wt 1.0]
+
+＠
+『[line 3]音楽だけが自分を制御する[line 3]』
+[k]
+
+＠
+『私だけでは、最早、耐え切れそうにない』
+[k]
+
+＠
+『だから、今は』
+[k]
+
+[charaTalk depthOff]
+
+[charaDepth G 8]
+[charaDepth E 1]
+[charaDepth B 2]
+[charaDepth A 2]
+
+
+＠
+『音楽室に……』
+[k]
+
+[messageOff]
+
+[charaFadeout G 0.7]
+[wt 1.5]
+
+？1：音楽室へ行こう
+？2：きっとそこにサリエリはいる
+？！
+
+[messageOff]
+
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+
+＠ジャンヌ・オルタ
+自分を抑えるために音楽室へ籠もるか、[r]無視してにせアマを追うか[line 3]
+[k]
+
+＠ジャンヌ・オルタ
+……前者だと思う訳よね、アンタは。
+[k]
+
+[messageOff]
+[charaFaceFade B 14 0.2]
+[wt 1.8]
+[charaFaceFade B 0 0.2]
+[wt 0.4]
+
+＠ジャンヌ・オルタ
+私も同意。[r]異論はないわ。
+[k]
+
+＠ジャンヌ・オルタ
+音楽室は、下の階の一番奥だったかしら？
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.9]
+
+[charaFace B 12]
+
+＠ジャンヌ・オルタ
+懸念があるとすればそうね、[r]にせアマが[#うっかり]音楽室に行ったり……
+[k]
+
+[bgmStop BGM_EVENT_129 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+
+＠平景清
+[line 6]待て！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[cueSe SE_23 23_ad1240]
+
+[wt 2.0]
+
+[charaScale G 1.1]
+
+[charaDepth G 2]
+[charaDepth B 3]
+[charaDepth A 3]
+[charaDepth F 3]
+[charaDepth E 4]
+[charaDepth L 5]
+[charaDepth C 6]
+[charaDepth D 7]
+
+[charaFadein E 0.7 0,-170]
+[charaMove E 0,-150 2.0]
+[charaFadeTime L 2.0 0.3]
+[wt 0.5]
+[cueSe SE_23 23_ade916 1.6 0.4]
+[cueSe SE_23 23_ade909 1.6 0.2]
+[wt 0.8]
+
+[charaTalk off]
+[charaFadein G 0.1 -50,-200]
+[charaFace D 0]
+[charaFadein D 0.7 0,-100]
+[charaMoveEase D 0,0 1.5 easeOutCirc]
+[wt 1.3]
+[seStop 23_ad1240 0.4]
+[wt 0.4]
+[seStop 23_ade916 2.5]
+[seStop 23_ade909 1.5]
+[se ade103]
+[seVolume ade103 0 0]
+[seVolume ade103 0.6 1.0]
+[charaFace C 0]
+
+[charaFadein C 0.1 1]
+[wt 0.1]
+[charaFadeout D 0.4]
+
+[wt 2.5]
+[seStop ade103 0.8]
+[bgm BGM_BATTLE_107 0.1]
+
+[charaFadeout E 0.4]
+[charaFadeout L 0.4]
+[charaFadeout C 0.4]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+
+＠ジャンヌ・オルタ
+げえっ、気持ち悪い血みどろのモツ！[r]こういうの趣味じゃないっての！
+[k]
+
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[cueSe SE_24 24_ad1389]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[fowardEffect bit_talk_voice02]
+
+[wt 2.7]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ジャンヌ・オルタ
+うるさい！[r]燃やすわよ[line 3]マスター！
+[k]
+
+？1：切り抜けよう
+？2：撃破して、音楽室へ！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠平景清
+承知。景清が、[#鏖殺:おうさつ]してしんぜよう！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_107 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+

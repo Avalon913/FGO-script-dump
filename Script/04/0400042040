@@ -1,0 +1,541 @@
+
+
+
+
+＄04-00-04-20-4-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098301840 1 ＢＢコスモ]
+[charaSet B 1098307900 1 岸波白野]
+[charaSet C 11019000 1 徐福]
+[charaSet D 1098307300 1 アンデルセン]
+[charaSet E 23010002 1 テノチティトラン・バニー]
+[charaSet F 1098307300 1 アンデルセン（演出用）]
+
+[masterBranch _Male _Female]
+[label _Male]
+[charaSet G 1098283700 1 主人公（男）]
+[charaFace G 9]
+[branch _branchEnd]
+[label _Female]
+[charaSet G 1098283710 1 主人公（女）]
+[charaFace G 11]
+[branch _branchEnd]
+[label _branchEnd]
+
+[sceneSet O 224700 1]
+
+[charaSet S 98115000 1 エフェクト用1]
+[charaSet T 98115000 1 エフェクト用2]
+[charaSet U 98115000 1 エフェクト用3]
+
+[scene 10000]
+
+[bgm BGM_BATTLE_206 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth S 5]
+[charaDepth T 6]
+[charaDepth U 7]
+
+[cueSe Battle bac25]
+[charaPut S 200,150]
+[charaEffect S bit_talk_shelling_blue01]
+[wt 0.3]
+[cueSe Battle bac25]
+[charaPut T -200,-150]
+[charaEffect T bit_talk_shelling_blue01]
+[wt 0.65]
+
+[se ad85]
+[wt 0.15]
+[charaPut U 1]
+[charaEffect U bit_talk_gram_slash_green_02]
+[wt 0.5]
+
+[cueSe Battle bac150]
+[cueSe SE_23 23_ad1341]
+[cueSeVolume 23_ad1341 0 0.5]
+[fadeout white 0.1]
+[cueSeStop bac25 0.3]
+[seStop ade509 0.3]
+[seStop ad85 0.3]
+[wait fade]
+
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+[charaPut U 2000,2500]
+[charaEffectDestroy S bit_talk_shelling_pink01]
+[charaEffectDestroy T bit_talk_strike_02]
+[charaEffectDestroy U bit_talk_v_slash01]
+[charaScale T 1.0]
+
+[scene 224700]
+
+[charaScale E 1.2]
+[charaTalk on]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0 0,50]
+[charaShake E 0.02 3 3 0.8]
+
+[fadein white 0.1]
+[se ad671]
+[cueSeStop 23_ad1341 0.6]
+[effect bit_talk_blow02]
+[wait fade]
+[charaMoveEase E 0,0 0.3 easeOutQuint]
+[charaMoveScaleEase E 1.0 0.3 easeOutQuint]
+[wt 1.0]
+
+[bgmStop BGM_BATTLE_206 1.5]
+
+＠テノチティトラン・バニー
+つあ！
+[k]
+
+[messageOff]
+[charaMove E 0,-50 0.4]
+[charaFadeout E 0.4]
+[wt 0.45]
+[se ad775]
+[seVolume ad775 0 0.6]
+
+[wt 1.4]
+
+？1：勝った。勝ちすぎた
+？2：勝者として[&の願いだ:お願い]。戻ってきて[&くれ:よ]、テノチ
+？！
+
+？1：（……怒っていた理由は分からないけど……）
+？！
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.6 0,-30]
+[charaShake E 0.05 3 3 0.7]
+[charaMove E 0,0 0.6]
+[wt 0.3]
+[se ade422]
+[wt 0.4]
+[seStop ade422 0.2]
+[wt 0.75]
+
+[bgm BGM_MIZUGI_2024_1 0.1]
+[charaFace E 4]
+
+＠テノチティトラン・バニー
+……勝者として、ですか。[r]そこまで言われては仕方ありません、ね。
+[k]
+
+[charaFace E 10]
+＠テノチティトラン・バニー
+いいでしょう。ＢＢドバイとの同盟は[r]いったん白紙に戻します。
+[k]
+
+＠テノチティトラン・バニー
+アレの件も水路に流します。[r]いえ、途中で止めますけど。
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad1026]
+[seVolume ad1026 0 0.8]
+[wt 0.1]
+[fadeout white 0.7]
+[wait fade]
+
+[charaCrossFade E 1098298500 10 0.1]
+[wait charaCrossFade E]
+[wt 0.2]
+[seStop ad1026 1.0]
+[wt 0.5]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.45]
+
+[charaFace E 2]
+＠E：テノチティトラン
+……皆さんがムーン・ドバイを守った事は[r]私も知っています。ですので[line 3]
+[k]
+
+＠E：テノチティトラン
+水の都の精霊、テノチティトラン。[r]改めてアナタに力を貸しましょう、トラマカスキ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+＠ＢＢコスモ
+はい、いい雰囲気ですがそこまでです。[r]時間がありません。
+[k]
+
+＠ＢＢコスモ
+外でマシュさんたちと合流して、[r]急いでエリアＡに向かいます！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アンデルセン
+無策でか？　テノチティトランが加わったところで[r]どうにかなる相手ではないと思うがね。
+[k]
+
+？1：アンデルセンには考えがあるの？
+？2：やっぱり監督役[&です:だ]よね？
+？！
+
+[charaFace D 7]
+＠アンデルセン
+後になって文句を言われても面倒だからな。[r]多少のアドバイスはしてやる。
+[k]
+
+＠アンデルセン
+その代わり俺はここから動かん。[r]調伏はおまえたちだけでやれ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MIZUGI_2024_1 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠岸波白野
+分かりました。[r]お願いします、ハンス先生。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アンデルセン
+おまえたちの話によると脅威なのは[bgm BGM_EVENT_124 0.1][r]浴槽の温度による思考[#鈍化:どんか]と、
+[k]
+
+＠アンデルセン
+致命傷を受けても元に戻る不思議、だったな。[r]浴槽の件はテノチティトランがいれば解決するだろう。
+[k]
+
+[messageOff]
+[charaDepth D 4]
+[charaDepth E 2]
+
+[charaTalk E]
+[charaFace E 20]
+[charaFadein E 0.4 -280,0]
+[wt 1.4]
+
+[charaFadeout E 0.4]
+[wt 0.5]
+
+[charaFace D 0]
+＠アンデルセン
+なので『致命傷を受けても元に戻る』についてだ。
+[k]
+
+＠アンデルセン
+いつぞやの夏、ヤツは[r]『人魚の肉を食べて[#不老不死:ふ  ろ  う  ふ  し]になった』とほざいた。
+[k]
+
+＠アンデルセン
+戦いでもそのように見えたが実際は[#夢幻:ゆめまぼろし]、[r][#蜃気楼:しんきろう]による視覚妨害だった。
+[k]
+
+＠アンデルセン
+今回も同じだ。[#不老不死:ふ  ろ  う  ふ  し]の命なんぞ、[r]そう名乗っている時点で限界がある。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠ＢＢコスモ
+まあそうですね。不死なんて結局のところ[r]『殺したら生き返った』程度の話ですから。
+[k]
+
+＠ＢＢコスモ
+『殺せる』段階で、不死である事を否定しています。
+[k]
+
+＠ＢＢコスモ
+真の不死とは不滅である事。[r]つまり傷を負わない事です。
+[k]
+
+[charaFace A 3]
+＠ＢＢコスモ
+まあ、今回のキアラさんの事ですけど。
+[k]
+
+[charaFace A 22]
+＠ＢＢコスモ
+夏のホラー事件の時は[#広範囲:こうはんい]攻撃による力技で[r]押し切ったそうですが、今回それはありません。
+[k]
+
+＠ＢＢコスモ
+あの浴槽の全域をスキャンしながら戦いました。[r]霊基反応はあのキアラさんだけ。
+[k]
+
+＠ＢＢコスモ
+どこかに隠れている、という事はありません。
+[k]
+
+[charaFace A 2]
+＠ＢＢコスモ
+あの女、ノーリスク・ノータイムで[r]霊基の状態が戻るんです。
+[k]
+
+＠ＢＢコスモ
+わたしの[#事象:じしょう][#巻:ま]き[#戻:もど]し反則スキル『十の王冠』だって[r]膨大な魔力を消費するのに。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠アンデルセン
+ああ。聞いたかぎりでは[r]傷を負ってから発動する現象ではなく、
+[k]
+
+＠アンデルセン
+傷を負う前から発動している現象だろう。[r]その浴槽にいる時点でキアラは無敵になっている。
+[k]
+
+[charaFace D 0]
+＠アンデルセン
+つまり夢だ。夢を見ている。[r]だから何をしてもあやふやになって元に戻る。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠岸波白野
+俺たちは浴槽エリアにいるだけで[r]幻術にかかる、という事ですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠アンデルセン
+いや。見ているのはおまえたちではない。[r][#キアラが夢状態なのだ]。
+[k]
+
+＠アンデルセン
+極度の瞑想状態に近い。[r]あの女は自身を[#妄想:もうそう]化する事で[#不滅:ふめつ]の[#境地:きょうち]に至ったのだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠岸波白野
+えっと……つまり、悪夢であっても良夢であっても、[r][#自分を夢だと思っているうちは現実ではない]……
+[k]
+
+
+[charaFace B 16]
+＠岸波白野
+外部を無視した完全なまでの一人遊び……[r]みたいな事ですか？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth A 4]
+[charaDepth G 2]
+[charaDepth E 3]
+
+[charaFace A 25]
+[charaFadeinFSL A 0.1 -410,0]
+[charaFadeinFSR G 0.1 350,0]
+[charaScale E 1.05]
+[charaFace E 9]
+[charaFadein E 0.1 10,0]
+[wt 1.6]
+
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaScale E 1.0]
+
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠アンデルセン
+そんな目で見るな。俺も言っていて馬鹿らしい。[r]だがあの女はそれくらいやる。
+[k]
+
+＠アンデルセン
+なので起こせ。話はそれからだ。
+[k]
+
+？1：でもどうやって？
+？2：何をしても効果はなかったのに？
+？！
+
+[charaFace D 0]
+
+＠アンデルセン
+まあな。おそらく何をしようとヤツには[r]『また虫どもが[#足掻:あ　が]いている』としか感じまい。
+[k]
+
+＠アンデルセン
+眠っている時に[#虱:しらみ]が体を這っていても[r]目は覚めない道理だな。
+[k]
+
+[charaFace D 1]
+＠アンデルセン
+だが人間である事が最大の欠点だ。
+[k]
+
+＠アンデルセン
+人間が目を覚ます理由の第一位はなんだ？[r]そう、[#忌:い]まわしい事に『仕事』があるからだ。
+[k]
+
+＠アンデルセン
+あの女にとって仕事とは修行。[r]なので修行のはじまりを再現すればいい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠E：テノチティトラン
+修行のはじまり、というのは？[r]やはり朝日の訪れですか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アンデルセン
+坊主の朝は早い。朝日など[#拝:おが]まん。[r]ヤツらにとって修行のはじまりは鈴の音だ。
+[k]
+
+＠アンデルセン
+[#振鈴:しんれい]と言ってな。[r]持ち手になる棒の先に鈴がついたものだ。
+[k]
+
+＠アンデルセン
+幸い俺はかたちを知っている。[wt 1.0][charaFace D 3][r][f small]　　　　　　　　　　いつかこんな事もあろうと思ってな。
+[k]
+
+[messageOff]
+[charaFace D 0]
+[wt 0.35]
+
+[charaDepth S 8]
+
+[cueSe Battle bac32]
+[charaPut S 1]
+[charaEffect S bit_talk_easy_spell_r]
+[wt 2.4]
+
+[charaFace D 1]
+＠アンデルセン
+そら、持っていけ。ヤツが隙を見せた時、[r]それを鳴らせば効果てきめんだ。
+[k]
+
+＠アンデルセン
+[#尻:しり]を叩く気持ちでじゃんじゃん鳴らせ。[r]むしろ尻を叩いてやれ。
+[k]
+
+？1：そんなことでいいんですか！？
+？！
+
+[charaFace D 6]
+＠アンデルセン
+[#永:なが]い夢から覚める、なんて時は[r]そんな事でいいんだよ。
+[k]
+
+＠アンデルセン
+[#劇的:げきてき]に起こしても待つのは悲劇だけだ。[r]繰り返した習慣だけが、夢を夢のように目覚めさせる。
+[k]
+
+[bgm BGM_EVENT_124 1.8 0.7]
+
+[charaFace D 0]
+＠アンデルセン
+それともう一つ。[r]これはアドバイスではなく警告だ。
+[k]
+
+＠アンデルセン
+あの女は無駄な事ばかりするが、[r]手に入れたものは無駄にはしない。
+[k]
+
+＠アンデルセン
+きちんと、[#効果的に使い捨てる]。[r][#奪:うば]われた側が、より多くを失うようにな。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth D 2]
+[charaDepth O 3]
+[charaDepth F 4]
+
+[bgmStop BGM_EVENT_124 2.0]
+
+[charaScale F 1.2]
+[charaScale O 1.2]
+[charaFace F 0]
+[charaFadein F 0.8 20,30]
+[charaFadein O 0.8 0,-260]
+[wt 0.8]
+[charaFadeout D 0.1]
+[wt 0.4]
+
+＠アンデルセン
+ひとり残れと条件を付けたのは[#企:たくら]みがあっての事だ。[r]バーソロミューは[#諦:あきら]めろ。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,932 @@
+
+
+＄94-13-66-06-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 2053000 1 ツタンカーメン]
+[charaSet B 2053000 1 ツタンカーメン（演出用）]
+[charaSet C 3056000 1 ゴッホ]
+[charaSet D 3056000 1 ゴッホ（演出用）]
+[charaSet E 1098257310 1 ダ・ヴィンチ]
+[charaSet F 1098157410 1 カエサル]
+[charaSet G 1098196510 1 織田信長]
+[charaSet H 3053001 1 ブリトマート]
+[charaSet I 7028000 1 バニヤン]
+[charaSet J 3031000 1 哪吒]
+[charaSet K 1098187100 1 エルメロイⅡ世]
+[charaSet L 1098257810 1 マシュ]
+[charaSet M 1098306900 1 マンドリカルド]
+
+[imageSet O cut601_ksr 1]
+[imageSet P cut601_nat 1]
+[imageSet Q cut601_brt 1]
+[imageSet R cut601_nob 1]
+[imageSet S cut601_mdd 1]
+[imageSet T cut601_pby 1]
+
+[sceneSet U 231400 1]
+[sceneSet V 231400 1]
+[sceneSet W 232900 1]
+[sceneSet X 232900 1]
+
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaPut Y 2000,2500]
+[charaEffect Y bit_talk_10_LowLevel]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 231400]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+[fadein black 0.5]
+[wait fade]
+[wt 0.5]
+
+？1：ツタン、[&キミ:あなた]の宝具……
+？2：あれ、使っていいもの！？
+？！
+
+[charaFace A 20]
+＠ツタンカーメン
+ふふ……少々、扱いづらい宝具にて……[r]あまり使わぬべきなれど……今は使いどころかと……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad815]
+[seVolume ad815 0 0.6]
+[se ad628]
+[seVolume ad628 0 0.6]
+[shake 0.03 3 3 2.0]
+[wt 1.0]
+[seStop ad815 1.5]
+[seStop ad628 1.5]
+[wt 1.3]
+
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠ゴッホ
+ダ・ヴィンチ！　ツタンちゃんに無理をかけちゃう！[r]何が起きてるんですか！？　この揺れはいったい！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut Y 1]
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+＠ダ・ヴィンチ
+いま説明する！　いいかい諸君、どうやらこの特異点、[r][#増築を止めていると崩壊する]らしい！
+[k]
+
+[charaFace E 8]
+＠ダ・ヴィンチ
+つまり……圧死したくなければ、[r]ひたすら増築を続けるしかない！
+[k]
+
+[messageOff]
+[subCameraOn 2]
+
+[charaLayer C sub #A]
+[charaLayer A sub #A]
+[charaLayer M sub #A]
+[charaLayer J sub #A]
+[charaLayer U sub #A]
+
+[charaLayer F sub #B]
+[charaLayer H sub #B]
+[charaLayer G sub #B]
+[charaLayer I sub #B]
+[charaLayer V sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask06 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask06 5 255,255,255,255]
+
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+
+[charaTalk depthOff]
+[charaDepth U 2]
+[charaDepth C 5]
+[charaDepth A 4]
+[charaDepth M 3]
+[charaDepth J 6]
+
+[charaScale U 1.2]
+
+[charaTalk C,A,J,M,F,H,I,G]
+[charaFace C 27]
+[charaFace A 12]
+[charaFace J 5]
+[charaFace M 5]
+[charaFadein C 0 140,250]
+[charaFadein A 0 -160,250]
+[charaFadein J 0 450,225]
+[charaFadein M 0 -380,225]
+[charaFadein U 0 -100,0]
+
+[charaDepth V 2]
+[charaDepth F 3]
+[charaDepth G 4]
+[charaDepth H 5]
+[charaDepth I 6]
+
+[charaScale V 1.2]
+
+[charaFace F 2]
+[charaFace G 5]
+[charaFace H 18]
+[charaFace I 0]
+[charaFadein F 0 150,210]
+[charaFadein G 0 -450,230]
+[charaFadein H 0 430,210]
+[charaFadein I 0 -140,210]
+[charaFadein V 0 100,0]
+
+
+[subRenderFadein #A 0.3 200,-250]
+[subRenderMoveEase #A 0,-250 0.3 easeOutSine]
+
+[subRenderFadein #B 0.3 -200,-460]
+[subRenderMoveEase #B 0,-460 0.3 easeOutSine]
+[wt 1.4]
+
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[subRenderMoveEase #A -200,-250 0.3 easeOutSine]
+[subRenderMoveEase #B 200,-460 0.3 easeOutSine]
+[wt 0.3]
+[charaFadeout U 0]
+[charaFadeout V 0]
+[charaFadeout M 0]
+[charaFadeout J 0]
+[charaFadeout I 0]
+[charaFadeout G 0]
+[charaFadeout F 0]
+[charaFadeout H 0]
+[charaFadeout C 0]
+[charaFadeout A 0]
+[wt 0.1]
+[subCameraOff]
+[charaLayer U normal]
+[charaLayer V normal]
+[charaLayer J normal]
+[charaLayer M normal]
+[charaLayer I normal]
+[charaLayer F normal]
+[charaLayer H normal]
+[charaLayer G normal]
+[charaLayer C normal]
+[charaLayer A normal]
+[charaScale U 1.0]
+[charaScale V 1.0]
+[charaScale J 1.0]
+[charaScale M 1.0]
+[charaScale I 1.0]
+[charaScale G 1.0]
+[charaScale H 1.0]
+[charaScale F 1.0]
+[charaScale C 1.0]
+[charaScale A 1.0]
+
+
+[charaFace E 14]
+＠ダ・ヴィンチ
+そんなわけで[line 3]ビルダーたち！[r][#いますぐに増築を再開してくれ]！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut Y 2000,2500]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠カエサル
+おおう、望むところだとも！[r]さあ出でよ、我がフォルム・ユリウム！！
+[k]
+
+[messageOff]
+[wt 0.8]
+
+[se ad815]
+[seVolume ad815 0 0.6]
+[se ad628]
+[seVolume ad628 0 0.6]
+[shake 0.03 3 3 2.0]
+[wt 0.7]
+[charaFace F 4]
+[wt 0.3]
+[seStop ad815 1.5]
+[seStop ad628 1.5]
+[wt 1.3]
+
+＠カエサル
+おや？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+＠織田信長
+なんも出とらんぞ色男！　[wt 0.8][charaFace G 12]ってわしも出とらんな！？[r]じじいの立小便か！　なーんてうっはっはっはっはぁ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 17]
+[charaFadein H 0.1 1]
+＠ブリトマート
+お下品すぎて集中できない[line 3]せいではありませんね！[r]さっき死霊を蹴散らしたせいでしょうか！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 9]
+[charaFadein I 0.1 1]
+＠バニヤン
+やだもー！　ふつうの霊基だったら自力で創るのにー！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 20]
+[charaFadein A 0.1 1]
+＠ツタンカーメン
+成る程に……ビルダーどのらは……あくまで設計者……[r]死霊の助けがなくば……増築はできぬと……
+[k]
+
+＠ツタンカーメン
+ゴッホどの……
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_80 1.0 0.5]
+
+[subCameraOn 1]
+
+[charaLayer D sub #A]
+[charaLayer B sub #A]
+[charaLayer U sub #A]
+
+[subCameraFilter #A normal]
+
+[subRenderScale #A 1.01]
+
+[charaDepth U 2]
+[charaDepth B 3]
+[charaDepth D 4]
+
+[charaScale U 1.2]
+[charaScale D 1.2]
+[charaScale B 1.2]
+
+[charaTalk A,B]
+[charaFace D 7]
+[charaFace B 20]
+[charaFadein D 0 150,15]
+[charaFadein B 0 -150,15]
+[charaFadein U 0 0,-260]
+
+[subRenderFadein #A 0.6 0,0]
+[wt 0.6]
+
+[charaPut Y 1]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+[charaFadeout A 0]
+[wt 0.3]
+
+[charaMove B -100,15 0.6]
+[wt 0.2]
+[se ad95]
+[wt 0.4]
+[seStop ad95 0.2]
+[wt 0.3]
+
+[charaMoveReturn B -100,5 0.4]
+[wt 0.4]
+[charaMoveReturn B -100,5 0.4]
+[wt 0.8]
+
+[charaTalk D]
+＠D：ゴッホ
+え？[wt 0.6][r][line 3]ほうほう、[wt 0.7][charaFace D 33]は[messageShake 0.05 4 3 0.4]ああ、へええええええ！？
+[k]
+
+[charaFace D 8]
+＠D：ゴッホ
+……わ、わっかりました！！[r]ダ・ヴィンチ！　ゴッホ、宝具を使います！
+[k]
+
+[messageOff]
+[charaTalk D,E]
+[bgm BGM_EVENT_80 0.6 1.0]
+[subRenderFadeout #A 0.6]
+[wt 0.6]
+[charaFadeout U 0]
+[charaFadeout D 0]
+[charaFadeout B 0]
+[wt 0.1]
+[subCameraOff]
+[charaLayer U normal]
+[charaLayer D normal]
+[charaLayer B normal]
+[charaScale U 1.0]
+[charaScale D 1.0]
+[charaScale B 1.0]
+
+＠ダ・ヴィンチ
+いやダメだって！　キミの宝具は対地形宝具！[r]特異点が崩壊しかけてる現在、ダメ押しになりかねない！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut Y 2000,2500]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠ゴッホ
+[#否:ネーン]！　わが宝具は、地形を作品世界に作り変えるもの！[r][#熱情:リビドー]、[#熱量:カロリー]、[#破壊と創造:クラッシュ＆クラフト]の虚数美術的爆発！
+[k]
+
+＠ゴッホ
+壊すだけが能じゃない！　創ることだってできます！[r]やろうと思えば、他人のリクエストだって！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaPut Y 1]
+[charaTalk E]
+[charaFace E 25]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+うそだろ、まさか[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut Y 2000,2500]
+
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+[bgm BGM_SEIHAI_4 0.1]
+
+＠ゴッホ
+はい！　[#わたしが全増築を施工します]！[r]マスターさま、宝具解放の許可を！
+[k]
+
+？1：許可する！
+？2：特異点の崩壊を止め[&ろ:て]、ゴッホちゃん！
+？！
+
+[messageOff]
+[se ad39]
+[charaPut Z 35,-10]
+[charaEffect Z bit_talk_36]
+[wt 2.4]
+
+[charaEffectStop Z bit_talk_36]
+
+[charaFace C 35]
+＠ゴッホ
+[line 3]虚数美術、着工！[r]夜空の星、[#団居:まどい]の街、人の夢さえ[#象:かたど]るチカラ！
+[k]
+
+[se ad7]
+[cameraMoveEase 0,-30 0.2 easeOutCubic 1.3]
+[blur motion 0.2 4 10000 0.5 0.6 0.05 100]
+
+＠ゴッホ
+『[#夜のカフェテラス:カ ッ フ ェ ー テ ラ ス ・ ベ イ ・ ナ フ ト]』[r]うなれ即興合作バージョン！！
+[k]
+
+[messageOff]
+[se ade390]
+[seVolume ade390 0 0.7]
+[fadeout white 0.8]
+[bgmStop BGM_SEIHAI_4 2.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout U 0.1]
+
+[charaEffectDestroy Y bit_talk_10_LowLevel]
+
+[cameraMove 0 0,0 1.01]
+[blurOff motion 0]
+
+[scene 232900]
+
+[charaScale W 1.2]
+[charaFadein W 0 20,-260]
+[wt 2.5]
+
+[charaMove W -20,-260 5.0]
+[fadein white 1.5]
+[wait fade]
+[wt 2.5]
+
+[charaFadeout W 1.0]
+[wt 1.4]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠カエサル
+おお！　フォルム・ユリウムができているではないか！[r]素晴らしきかな[#鉱員:フォッソル]！　否、[#工神:ウルカヌス]の化身と呼ぶべきか！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠ゴッホ
+いやあ、血縁は[#海神:オケアノス]で因縁は[#美術神:ム　ー　サ]ですが……[wt 0.9][charaFace C 8][r]いやそれより、ダ・ヴィンチ、崩壊は！？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut Y 1]
+[charaEffect Y bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+止まった！　よくやったヴァン・ゴッホ！[r]おそらくこれでしばらく、崩壊は防げるだろう！
+[k]
+
+[charaFace E 5]
+＠ダ・ヴィンチ
+その間に栄養補給と、作戦検討を行う！[r]ここからは[#増築しながら解体方法を探る]段になるぞ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut Y 2000,2500]
+
+[charaTalk C]
+[charaFace C 27]
+[charaFadein C 0.1 1]
+
+＠ゴッホ
+な、なんですかその、自転車操業みたいな……！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk E]
+[charaFace E 18]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+我々[#芸術家:ひとでなし]には慣れっこだろ！[r]いいから急いだ急いだ！
+[k]
+
+？1：ビルダーのみんなもお願い！
+？2：カルデアに力を貸して！
+？！
+
+[messageOff]
+[subCameraOn 1]
+
+[charaLayer H sub #A]
+[charaLayer J sub #A]
+[charaLayer G sub #A]
+[charaLayer W sub #A]
+
+[charaLayer M sub #A]
+[charaLayer F sub #A]
+[charaLayer I sub #A]
+[charaLayer X sub #A]
+
+[subCameraFilter #A normal]
+
+[subRenderScale #A 1.01]
+
+[charaDepth W 2]
+[charaDepth G 3]
+[charaDepth H 4]
+[charaDepth J 5]
+[charaDepth X 6]
+[charaDepth M 7]
+[charaDepth F 8]
+[charaDepth I 9]
+
+[charaScale W 1.2]
+[charaScale G 1.0]
+[charaScale H 1.0]
+[charaScale J 1.0]
+
+[charaTalk E,H]
+[charaFace H 3]
+[charaFace J 1]
+[charaFace G 12]
+[charaFadein H 0 1]
+[charaFadein J 0 350,0]
+[charaFadein G 0 -350,0]
+[charaFadein W 0 -120,-260]
+
+[subRenderFadein #A 0.6 0,0]
+[wt 0.6]
+
+[charaFadeout E 0.1]
+[charaPut Y 2000,2500]
+[wt 0.2]
+
+
+＠ブリトマート
+善き目的を持つ方々に恩返しできるなら、願ったりです！
+[k]
+
+＠哪吒
+元より　敗北者。[r]是非も……無し？
+[k]
+
+＠織田信長
+ネ。よかろう、せっかくの現界、[#足掻:あ　が]かねばの！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad184]
+[charaFadeout H 0.4]
+[wt 0.3]
+[charaFadeout J 0.4]
+[wt 0.3]
+[charaFadeout G 0.4]
+[seStop ad184 1.0]
+[seStop ad769 1.0]
+[wt 1.4]
+
+[charaScale X 1.2]
+[charaScale M 1.0]
+[charaScale F 1.0]
+[charaScale I 1.0]
+
+[charaFace M 1]
+[charaFace F 0]
+[charaFace I 1]
+[charaFadein M 0.6 350,0]
+[charaFadein I 0.6 0,-30]
+[charaFadein F 0.6 -350,0]
+[charaFadein X 0.6 120,-260]
+[wt 1.2]
+
+[se ad184]
+[charaFadeout M 0.4]
+[wt 0.3]
+[charaFadeout F 0.4]
+[wt 0.3]
+[charaFadeout I 0.4]
+[seStop ad184 1.0]
+[seStop ad769 1.0]
+[wt 1.4]
+
+[se ad60]
+[charaMoveScale X 1.3 1.2]
+[charaMove X 130,-290 1.2]
+[wt 1.0]
+[seStop ad60 0.2]
+
+[bgmStop BGM_EVENT_4 1.5]
+
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ツタンカーメン
+マスターどの、しばし。
+[k]
+
+
+[messageOff]
+[charaTalk A]
+[subRenderFadeout #A 0.6]
+[wt 0.6]
+[charaFadeout W 0]
+[charaFadeout X 0]
+[wt 0.1]
+[subCameraOff]
+[charaLayer W normal]
+[charaLayer X normal]
+[charaScale W 1.0]
+[charaScale X 1.0]
+[wt 0.1]
+
+
+＠ツタンカーメン
+……ひとつ、おかしなことに気付きましてござりまする。[r]マスターどのは、いかに。
+[k]
+
+？1：気づいてる
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+＠エルメロイⅡ世
+頼もしいな。[r]私も気づいているから、もし強がりでも支障はないぞ。
+[k]
+
+？2：気づいてない
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+＠エルメロイⅡ世
+無理もない。そもそも最初から奇妙なことばかりだ。[r]が、私も気づいた。これは確かに、おかしいだろう。
+[k]
+
+？！
+
+[bgm BGM_MAP_57 0.1]
+
+＠エルメロイⅡ世
+増築を止めると凶事が起きる。これはいい。[r]ビルダーを全員捕縛すると増築が止まる。これもいい。
+[k]
+
+＠エルメロイⅡ世
+だが……ビルダーが増築を再開できなかった。[r]ここが問題だ。何が原因だと思う？
+[k]
+
+？1：ゴーストを蹴散らしたから
+
+[charaFace K 4]
+＠エルメロイⅡ世
+不正解だ。[r]君は神秘における基本的な[#誤謬:ごびゅう]を犯している。
+[k]
+
+？2：増築者がいなくなったから
+
+[charaFace K 1]
+＠エルメロイⅡ世
+ああ、正解だ。今日は随分冴えているな？
+[k]
+
+？！
+
+[charaFace K 0]
+＠エルメロイⅡ世
+一般的に、死霊とは、何らかの神秘の影響で[r]この世に残留した、生物の生前の痕跡のことを指す。
+[k]
+
+＠エルメロイⅡ世
+多くの場合、雑多な力の淀みに過ぎない。[r]吹けば飛ぶような、とても貧弱な存在だ。
+[k]
+
+＠エルメロイⅡ世
+憑依に成功した場合を除けば……[r]１体ごとの物理的な干渉能力は皆無に等しい。
+[k]
+
+＠エルメロイⅡ世
+相当数いても、ケチな[#騒霊現象:ポルターガイスト]を起こすのが関の山だ。[r]本来、労働力の代わりになるようなものじゃない。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 11]
+[charaFadein L 0.1 1]
+＠マシュ
+し、しかし、ビルダーの皆さんは、ゴーストを使役して[r]製階戦争をしていると仰っていましたが……
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut Y 2000,2500]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ツタンカーメン
+はいい、マシュどの。ゆえ、[#それはウソ]と分かりまする。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+＠マシュ
+えっ……
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+＠エルメロイⅡ世
+初歩的な魔術知識があれば一発でバレるウソ。[r]それをあえて言う理由はひとつ。あの『記述』だ。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 6]
+[charaFadein L 0.1 1]
+＠マシュ
+あっ……あの、[r]“『[#棟梁:とうりょう]』について一切を[#洩:も]らせない”という！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut Y 2000,2500]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠ツタンカーメン
+そう。ゆえ、逆説的にござりまするが、[r][#増築を担うのは棟梁その人だ]、と推測できまする。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+[wt 1.2]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.1 1]
+＠エルメロイⅡ世
+正解だ。“労働者は死霊だ”が『[#棟梁:とうりょう]』の絡むウソなら、[r]“労働者は『[#棟梁:とうりょう]』だ”が解となるだろう。
+[k]
+
+[charaFace K 0]
+＠エルメロイⅡ世
+さて、そうなると、霊を蹴散らしたから増築が止まった、[r]は成立しない。考えられる最も合理的な真相は？
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[wt 0.1]
+[charaPut Y 2000,2500]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[charaFace A 2]
+＠ツタンカーメン
+[#棟梁:とうりょう]が、身動き取れぬようになられたかと。[r]なぜなら、[#己:うぬ]らに拘束されたゆえ[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_57 1.5]
+[charaTalk off]
+[charaDepth A 1]
+[charaDepth W 2]
+[charaDepth B 3]
+
+[charaScale W 1.4]
+[charaScale B 1.4]
+
+[charaFace B 3]
+[charaFadein B 0.8 0,50]
+[charaFadein W 0.8 0,-300]
+[wt 0.8]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+＠ツタンカーメン
+[line 3]つまり、６騎のビルダーどののどなたかが、[r]『[#棟梁:とうりょう]』その人であると、推し量れるのでありまする……
+[k]
+
+[messageOff]
+[charaDepth O 6]
+[charaDepth P 4]
+[charaDepth Q 4]
+[charaDepth R 4]
+[charaDepth S 4]
+[charaDepth T 4]
+
+[cueSe SE_24 24_ade1121]
+
+[charaFadein O 0.1 0,-200]
+[wt 0.25]
+[charaFadein P 0.1 160,-200]
+[wt 0.25]
+[charaFadein Q 0.1 -160,-200]
+[wt 0.25]
+[charaFadein R 0.1 0,-200]
+[wt 0.25]
+[charaFadein S 0.1 160,-200]
+[wt 0.25]
+[charaFadein T 0.1 -160,-200]
+[wt 1.1]
+
+＠マシュ
+この中に、『[#棟梁:とうりょう]』がいると……！？
+[k]
+
+[messageOff]
+
+[imageSet I cut601_nat 1]
+[charaFilter I silhouette 00000080]
+[imageSet J cut601_brt 1]
+[charaFilter J silhouette 00000080]
+[imageSet K cut601_nob 1]
+[charaFilter K silhouette 00000080]
+[imageSet L cut601_mdd 1]
+[charaFilter L silhouette 00000080]
+[imageSet M cut601_pby 1]
+[charaFilter M silhouette 00000080]
+[charaDepth I 5]
+[charaDepth J 5]
+[charaDepth K 5]
+[charaDepth L 5]
+[charaDepth M 5]
+
+[charaPut I 160,-200]
+[charaPut J -160,-200]
+[charaPut K 0,-200]
+[charaPut L 160,-200]
+[charaPut M -160,-200]
+[charaFadeTime I 0.4 0.5]
+[charaFadeTime J 0.4 0.5]
+[charaFadeTime K 0.4 0.5]
+[charaFadeTime L 0.4 0.5]
+[charaFadeTime M 0.4 0.5]
+[wt 1.2]
+
+？1：（めちゃくちゃ怪しい顔がいるけど……）
+？2：（言っちゃダメかなあ……）
+？！
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

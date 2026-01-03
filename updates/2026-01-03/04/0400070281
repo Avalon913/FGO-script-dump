@@ -1,0 +1,795 @@
+
+＄04-00-07-02-8-1
+
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[soundStopAll]
+
+[charaSet A 8001900 1 マシュ]
+[charaSet B 1098341100 1 オルガマリー]
+[charaSet C 5021002 1 キャスター]
+[charaSet D 10015002 1 言峰綺礼]
+[charaSet E 99355300 1 ソロモン]
+
+[sceneSet F 269100 1]
+[sceneSet G 269100 1]
+[sceneSet K 269100 1]
+
+[charaSet H 1098345100 1 マシュ背面]
+[charaSet I 1098345700 1 キャスター背面]
+[charaScale H 2.0]
+[charaScale I 2.0]
+[charaRollAxis I y -180 0 0]
+
+[charaSet J 1098345200 1 言峰綺礼_全身]
+[charaSet X 98115000 1 エフェクト用]
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth G 2]
+[charaDepth A 3]
+[charaDepth C 4]
+[charaDepth J 5]
+[charaDepth B 6]
+[charaDepth I 9]
+[charaDepth H 10]
+[charaDepth K 11]
+[charaDepth D 12]
+[charaDepth X 24]
+[charaDepth Y 25]
+[charaDepth Z 26]
+
+[subCameraOn 3]
+[charaLayer A sub #A]
+[charaLayer F sub #A]
+[charaLayer C sub #B]
+[charaLayer G sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask04 3 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask04 3 0,0,0,255 0]
+
+[subRenderScale #A 1.1]
+[subRenderScale #B 1.1]
+
+[charaScale F 1.2]
+[charaScale G 1.2]
+[charaFadein F 0.1 -100,-100]
+[charaFadein G 0.1 100,-100]
+
+[charaScale A 1.8]
+[charaScale C 1.8]
+[charaFace A 7]
+[charaFadein A 0.1 200,340]
+[charaFace C 2]
+[charaFadein C 0.1 -200,260]
+
+[fadein black 0.1]
+[wait fade]
+
+[bgm BGM_BATTLE_195 0.1]
+
+[se ad1013]
+[charaPut X -300,120]
+[charaEffect X bit_talk_14]
+[wt 0.4]
+[se ad32]
+[charaPut X 0,-240]
+[charaEffect X bit_talk_14]
+[wt 0.2]
+[se ad1014]
+[charaPut X 400,120]
+[charaEffect X bit_talk_14]
+[wt 0.5]
+
+[se ad85]
+[effect bit_talk_v_slash01]
+[wt 0.5]
+[fadeout black 0.2]
+[wait fade]
+
+[scene 269100]
+
+
+[charaScale D 1.5]
+[charaTalk D]
+[charaFace D 17]
+
+[fowardEffect bit_talk_blow02]
+[wt 0.1]
+[fadein black 0.5]
+[wt 0.1]
+[se ad1015]
+[se ad1014]
+[se ad170]
+[wt 0.2]
+[se ad671]
+[wait fade]
+[charaFadein D 0.4 0,100]
+[charaMoveEase D 0,0 0.8 easeOutQuint]
+[charaMoveScaleEase D 1.0 0.8 easeOutQuint]
+[wt 1.5]
+
+？1：どうだ……！
+？2：まだ立ちあがるか……！？
+
+？！
+
+
+[wt 0.5]
+[se ad1006]
+[charaMoveEase D 0,40 0.2 easeOutQuint]
+[charaMoveScaleEase D 1.4 0.2 easeOutQuint]
+[charaFadeout D 0.2]
+[wt 0.2]
+
+[charaScale D 1.0]
+
+[charaTalk off]
+[subRenderFadein #A 0.2 50,-250]
+[subRenderFadein #B 0.2 -50,-500]
+[subRenderMoveEase #A 0,-250 0.4 easeOutCubic]
+[subRenderMoveEase #B 0,-500 0.4 easeOutCubic]
+[wt 1.0]
+
+[subRenderMoveEase #A -50,-250 0.4 easeOutCubic]
+[subRenderMoveEase #B 50,-500 0.4 easeOutCubic]
+[subRenderFadeout #A 0.2]
+[subRenderFadeout #B 0.2]
+[wt 0.2]
+
+
+[se ade210]
+[seStop ade210 0.5]
+[se ad527]
+[seStop ad527 0.5]
+[cueSe SE_24 24_ade1137]
+[seStop 24_ade1137 0.5]
+[charaFace J 8]
+[charaScale J 0.8]
+[charaFadein J 0.2 0,0]
+[charaFadeinFSSideR H 0.2 543,-65]
+[charaFadeinFSSideL I 0.2 -350,0]
+[charaMoveFSR H 493,-65 0.4]
+[charaMoveFSL I -300,0 0.4]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaScale A 1.0]
+[charaScale C 1.0]
+[charaLayer A normal]
+[charaLayer C normal]
+
+[bgmStop BGM_BATTLE_195 2.0]
+[wt 1.0]
+[charaFace J 4]
+[wt 1.0]
+[charaFadein K 0.4 0,-200]
+[charaMoveScaleEase K 1.2 0.8 easeOutSine]
+[charaMoveEase K 0,-280 0.8 easeOutSine]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+[charaMoveScaleEase D 1.2 0.8 easeOutSine]
+[wt 1.8]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+
+＠言峰綺礼
+[line 3]いや。ここまでだ。[r]君たちの勝利だよ、[%1]。
+[k]
+
+[bgm BGM_MAP_41 0.1]
+
+＠言峰綺礼
+もう何も残っていない。[r][#霊基:からだ]を動かす魔力が尽きたのでは話にならない。
+[k]
+
+＠言峰綺礼
+血は流れていないものでね。[r]魔力が尽きれば、元の死体に戻るだけだ。
+[k]
+
+
+[messageOff]
+[cueSe SE_25 25_ad1522]
+[charaCrossFade D 1098343600 4 0.4]
+[wait charaCrossFade D]
+[wt 0.6]
+
+[charaFace D 14]
+
+＠言峰綺礼
+新しい宇宙。新しい神の誕生に[r]立ち会えない事は、あまりにも無念だが[line 3]
+[k]
+
+[charaFace D 15]
+
+＠言峰綺礼
+そもそもが不可能な話だったな。[r]不道徳者に神の姿は直視できまい。
+[k]
+
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaFace D 4]
+
+＠言峰綺礼
+罰は下った。[r]死してなお、私の願いは届かなかったという事だ。
+[k]
+
+
+[messageOff]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[cueSe SE_25 25_ad1523]
+[charaScale Z 1.2]
+[charaPut Z 1]
+[charaEffect Z bit_talk_kmk_break]
+[wt 0.1]
+[charaFadeout D 0]
+[wt 1.6]
+
+[bgmStop BGM_MAP_41 2.0]
+
+[se ad299 0.1]
+[cueSe SE_22 22_ad1221]
+[charaEffectStop Z bit_talk_kmk_break]
+[wt 3.5]
+[seStop ad299 2.0]
+[wt 3.0]
+[charaFadeout K 0.4]
+[wt 1.2]
+
+＠キャスター
+……バカヤロウが。
+[k]
+
+＠キャスター
+主とやらが本当におわすんなら、[r]テメエのようなヤツを世に送り出さねえよ……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_57 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……『異星の神』の使徒、[r]言峰綺礼の活動停止を確認しました。
+[k]
+
+＠マシュ
+周囲に敵性反応はありません。[r]これで[#転移孔:ゲ　ー　ト]を調査する事はできますが……
+[k]
+
+[charaFace A 24]
+
+＠マシュ
+すみません、魔術式があまりにも高度すぎて……[r]あの、どうすればよいのでしょう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠キャスター
+ああ、そっちはオレに任せな。[r]カルデアの通信端末あるだろ。ちょい使ってみな。
+[k]
+
+？1：通信は繋がらないけど……
+？2：作動ぐらいはできるかな？
+
+？！
+
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ad13]
+[wt 1.2]
+
+＠E：ソロモン
+こちらソロモン。通信を受け取った。[r]そちらの状況は把握している。
+[k]
+
+＠E：ソロモン
+[#転移孔:ゲ　ー　ト]付近にいるな？[r]では受け入れ準備を開始する。
+[k]
+
+＠E：ソロモン
+おまえたちのレイシフト帰還に合わせて[r][#転移孔:ゲ　ー　ト]をこちらに引き上げる。
+[k]
+
+＠E：ソロモン
+キャスター、[#転移孔:ゲ　ー　ト]を周囲の空間から切り離せ。[r]その後は転移の土台作りだ。できるな？
+[k]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠キャスター
+はいはい、仰せのままに。[wt 1.2][charaFace C 4][r]えーと、こうか？　それともこうか？
+[k]
+
+[bgm BGM_MAP_57 0.5 0.6]
+
+[messageOff]
+[charaMove C 0,-50 0.4]
+[charaFadeout C 0.4]
+[se ade385]
+[seStop ade385 0.8]
+[wt 0.8]
+[cueSe SE_24 24_ade1124]
+[wt 2.5]
+[seStop 24_ade1124 0.4]
+[wt 0.5]
+
+[charaPut Z 3000,3000]
+[charaEffect Z bit_sepia01_depth]
+
+[effect bit_talk_magi_line]
+[se ad1045]
+[cueSe SE_24 24_ad1436 0 0.4]
+[wt 1.5]
+[cueSeStop 24_ad1436 1.3]
+[wt 1.5]
+
+[bgm BGM_MAP_57 0.5 1.0]
+＠ソロモン
+雑な切り口ではあるが分離を確認した。[r]転移時の衝撃を吸収する土台もそれなりの出来だ。
+[k]
+
+＠ソロモン
+いいだろう。そこから動くな。[r]まだ最後の役目が残っている。
+[k]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠キャスター
+偉そうな事この上ねえぞアイツ。[r]以前のナビゲーター……あー、ロマニ、だっけか。
+[k]
+
+＠キャスター
+似たような気配してやがるのになぁ。[r]性格は真逆だったか。
+[k]
+
+[charaFace C 1]
+
+＠キャスター
+まあいい、これでオレもお役御免だ。[r]後はあっちが転移魔術を発動させれば[line 3]
+[k]
+
+[bgmStop BGM_MAP_57 2.0]
+[messageOff]
+[cueSe SE_22 22_ad1180 0.5 0.6]
+[charaPut Y 1]
+[charaEffect Y bit_talk_noble_light]
+[wt 2.0]
+
+[charaFace C 2]
+
+＠キャスター
+って、合図もなしに始めるか普通！？[r]おおーい、[%1]、マシュ！
+[k]
+
+[seVolume 22_ad1180 1.5 0.4]
+[bgm BGM_MAP_63 0.1]
+
+＠キャスター
+荷物を[#纏:まと]めろ！　もうレイシフトが始まるぞ！
+[k]
+
+？1：ええ！？
+？2：って、言ってる[#傍:そば]から！？
+
+？！
+
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad153]
+[seVolume ad153 0 0.2]
+[charaPut X 1]
+[charaEffect X bit_talk_summon_fs]
+[wt 2.5]
+
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+＠マシュ
+レイシフト、始まっています！[r]帰還時のシフトは安全なので問題はありませんが、
+[k]
+
+＠マシュ
+コフィンは二人分だけです！[r]オルガマリー所長はどうすれば[line 3]！
+[k]
+
+？1：そうだった！
+？2：所長、手を！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠オルガマリー
+なに言ってるの。[r]帰るのは貴方たちだけ。わたしは残るわ。
+[k]
+
+＠オルガマリー
+というより、初めに教えたでしょう。[r]わたしはこの特異点にしかいられない幻だって。
+[k]
+
+＠オルガマリー
+自分たちだけ帰る、とか、置いていく、とか[r]そんな事じゃないから。気にせず帰還なさい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+
+＠マシュ
+それはそうでしたが、[r]所長はいま目の前にいらっしゃいます！
+[k]
+
+＠マシュ
+わたしたちと接触していれば、[r]予備のコフィンを受け皿にして帰還できる可能性が！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠オルガマリー
+ごめん、わたしはみんなに触れられないの。[r][%1]は知ってるでしょ？
+[k]
+
+[messageOff]
+[seVolume 22_ad1180 0.5 0]
+[seVolume ad153 0.5 0]
+[cueSe SE_22 22_ad1177]
+[fadeout white 0.5]
+[wait fade]
+
+[charaPut Z 0,10]
+[charaPut X 3000,3000]
+[charaPut Y 3000,3000]
+[charaFadeout B 0.1]
+[masterBranch _Male _Female]
+[label _Male]
+[scene 270300]
+[branch _branchEnd]
+[label _Female]
+[scene 270301]
+[label _branchEnd]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[wt 2.0]
+
+[fadeout white 0.5]
+[wait fade]
+
+[charaPut Z 3000,3000]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+[charaPut X 1]
+[charaPut Y 1]
+[scene 269100]
+[wt 0.5]
+
+[fadein white 0.5]
+[seVolume ad153 0.5 0.2]
+[seVolume 22_ad1180 0.5 0.4]
+[wait fade]
+[wt 1.0]
+
+
+？1：あの時の……
+？2：（やっぱりそうだったんだ……）
+
+？！
+
+[charaFace B 2]
+
+＠オルガマリー
+おかしな顔しないの。[r]こんなの、わたしにとってはいつもの事なんだから。
+[k]
+
+＠オルガマリー
+貴方たちが帰った後、またここで目を[line 3]あ。[r]そっか。これで消えるのね、この特異点。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+え[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠オルガマリー
+特異点を維持していたのはセイバーだし、[r]時空を乱していた[#転移孔:ゲ　ー　ト]も無くなるんだし。
+[k]
+
+＠オルガマリー
+ふたりがレイシフトした時点で、[r]何もかも消えるんでしょ、ソロモン？
+[k]
+
+＠E：ソロモン
+[line 3]そうだ。[r]不服や不満、あるいは抗議はあるかね、オルガマリー。
+[k]
+
+[charaFace B 2]
+
+＠オルガマリー
+ないわ。もう充分繰り返したし。[r]そもそもこんな風に話す事はできなかったし。
+[k]
+
+＠オルガマリー
+これが最後のリトライだったとしても、[r]いい夢を見せてもらったわ。
+[k]
+
+＠E：ソロモン
+[line 3]そうか。[r]協力に、感謝する。
+[k]
+
+＠E：ソロモン
+[%1]、マシュ。レイシフトを開始する。
+[k]
+
+＠E：ソロモン
+そのオルガマリー・アニムスフィアには干渉するな。[r]こちらに転移させる事はできない。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFaceFade A 26 0.15]
+[bgmStop BGM_MAP_63 2.0]
+
+＠マシュ
+ですが……ですが！
+[k]
+
+？1：試してみるぐらい！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[bgm BGM_SEIHAI_3 0.1]
+
+＠オルガマリー
+情けない事を言わない！[r]そんなのでカルデアスを止められると思ってるの！
+[k]
+
+＠オルガマリー
+貴方たちは古いカルデアを正す、[r]新しいカルデアのスタッフでしょう！
+[k]
+
+＠オルガマリー
+胸を張って、顔をあげて、堂々とやりとげなさい！
+[k]
+
+＠オルガマリー
+誰ひとり欠ける事なく人類の敵、[r]マリスビリーをやっつけるの！
+[k]
+
+＠オルガマリー
+いいわね！　はい、復唱！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+？1：[line 3]はい、やりとげます！
+？2：[line 3]はい、やっつけます！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……はい！　はい！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[charaMoveReturn B 0,-5 0.6]
+[wt 1.0]
+[cameraMoveEase 0,-20 1.2 easeOutSine 1.1]
+[wt 1.2]
+[charaFaceFade B 2 0.2]
+
+＠オルガマリー
+うん。じゃあこれで終わりね。[r]ありがとう、[%1]、マシュ。
+[k]
+
+＠オルガマリー
+本当に楽しかった。[r]終わらない悪夢も、一度ぐらいはいい夢に変わるのね。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[seVolume ad153 1.5 0.8]
+[seVolume 22_ad1180 1.5 1.0]
+[charaEffectStop X bit_talk_summon_fs]
+[fadeout white 1.5]
+[wait fade]
+
+[cameraHome 0.1]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[scene 10000]
+[seStop ad153 1.0]
+[seStop 22_ad1180 1.0]
+[charaPut X 3000,3000]
+[charaEffectDestroy X bit_talk_summon_fs]
+
+[charaLayer C sub #C]
+[charaLayer B sub #C]
+[charaLayer F sub #C]
+[charaLayer Y sub #C]
+[subCameraFilter #C maskEdge cut359_mask07 10 0,0,0,255 1]
+
+[charaTalk off]
+[charaScale C 0.9]
+[charaScale B 0.9]
+[charaPut Y 1]
+[charaFace C 2]
+[charaFadein C 0.1 -130,120]
+[charaFace B 0]
+[charaFadein B 0.1 130,120]
+[charaFadein F 0.1 0,-150]
+[wt 1.0]
+
+[fadein white 1.5]
+[bgm BGM_SEIHAI_3 1.5 0.6]
+[wait fade]
+[wt 0.5]
+[subRenderFadein #C 1.0 -50,-150]
+[subRenderMoveEase #C -100,-150 1.0 easeOutSine]
+[wt 1.2]
+[charaTalk on]
+[charaTalk C]
+
+＠キャスター
+って、オレは[#転移孔:ゲ　ー　ト]を飛ばすための促進剤かぁ！？[r]魔力、魔力ぜんぶ吸われてんだけど！
+[k]
+
+＠キャスター
+退去する前に完全消滅すんぞこれ！？[r]手伝え、何でもいいから手伝ってくれませんかねぇ！？
+[k]
+
+[charaTalk B]
+[charaFace B 5]
+
+＠オルガマリー
+ああもう、いい感じで締めたかったのに台無し！[r]わたしは何もできないって言ったでしょ！？
+[k]
+
+＠オルガマリー
+死ぬ気で、いえ死んでも頑張りなさい！[r][#転移孔:ゲ　ー　ト]が消えたら死んでいいから！
+[k]
+
+[charaTalk C]
+[charaFace C 2]
+
+＠キャスター
+ぐわああああ！[r]最後の最後にひでぇ仕事を押しつけられた！
+[k]
+
+[charaFace C 0]
+
+＠キャスター
+じゃあな、[%1]、マシュ！[r]おまえさんたちの勝利を信じてるぜ！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_SEIHAI_3 2.5]
+[wait fade]
+
+[pictureFrame]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaPut Y 3000,3000]
+[subRenderFadeout #C 0.1]
+[scene 10000]
+[wt 1.0]
+
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_07_02_fs]
+[se ad12]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+[wt 2.5]
+[soundStopAll]
+[end white]
+

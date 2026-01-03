@@ -1,0 +1,390 @@
+
+＄94-08-79-12-7-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4050001 1 鈴鹿御前]
+[charaSet B 1007400 1 ガウェイン]
+[charaSet C 4050001 1 鈴鹿御前_演出用]
+
+[sceneSet T 183900 1]
+[sceneSet U 197500 1]
+
+[scene 197500]
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.8]
+
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+[se ad59 0]
+[seVolume ad59 1.0 0.7]
+[se ade427]
+[seVolume ade427 1.0 0.7]
+[scene 10000]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[seStop ad59 0.4]
+[seStop ade427 0.4]
+[subCameraOn]
+[charaLayer A sub #A]
+[charaLayer T sub #A]
+[subCameraFilter maskEdge cut359_mask05 4 255,255,255,0]
+[charaDepth A 2]
+[charaDepth T 1]
+[charaScale A 1.2]
+[charaScale T 1.2]
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 0,200]
+[charaFadein T 0.1 0,100]
+[subRenderFadein #A 0.3 0,0]
+[subRenderMove #A 0,-200 0.3]
+[wt 0.3]
+[bgm BGM_EVENT_80 0.1]
+
+＠鈴鹿御前
+おっりゃあーーーー！
+[k]
+
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+[charaFadeout A 0.1]
+[charaFadeout T 0.1]
+[se ad473]
+[seVolume ad473 0 0.5]
+[effect bit_talk_flame_slash_01 0,0 H]
+[effect bit_talk_h_slash01_fs]
+[wt 0.4]
+[charaLayer A normal]
+[charaLayer T normal]
+[subCameraOff]
+[se ade388]
+[seVolume ade388 0 0.5]
+[charaPut B -150,-50]
+[charaScale B 2.0]
+[charaEffect B bit_talk_gram_slash_05]
+[se ade245]
+[se ad608]
+[shake 0.05 3 3 1.8]
+[scene 197500 1.5]
+[wt 1.9]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 28]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠鈴鹿御前
+あちち、あちち！[r]ガウェち、聖剣の出力強すぎぃ！
+[k]
+
+[charaFace A 22]
+
+＠鈴鹿御前
+って、そんな場合じゃなかった、マスター、無事！？[r]給仕長に教えてもらって助けに来たし！
+[k]
+
+？1：鈴鹿御前、ガウェイン！
+？2：頭フットーしそうだったけど無事！
+
+？！
+
+[charaFace A 31]
+
+＠鈴鹿御前
+え、ぜんぜんフツーじゃん。[r]てっきり氷漬けにされてるかと思ったのに。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠ガウェイン
+円卓の騎士の知る彼女ならともかく、[r]異聞帯の彼女はそのような無体はしないでしょう。
+[k]
+
+[charaFace B 2]
+
+＠ガウェイン
+とはいえ、軟禁されていたのは事実です。
+[k]
+
+＠ガウェイン
+ホテルに招待された恩義はありますが、[r]これを見過ごす事はできません。
+[k]
+
+[charaFace B 4]
+
+＠ガウェイン
+よって扉ごと破壊させていただきました。[r]スズカの神々しき霊力あってのものですが。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 32]
+[charaFadein A 0.1 1]
+
+＠鈴鹿御前
+え～、そんなに神ってた～？[r]ガウェち、褒めるの上手すぎっしょ～☆
+[k]
+
+[charaFace A 0]
+
+＠鈴鹿御前
+よし。じゃ、ササッと東部に戻ろっか！[r]マスターも無事だった事だし！
+[k]
+
+[bgmStop BGM_EVENT_80 2.5]
+
+？1：……それなんだけど……
+
+？！
+
+[charaFace A 1]
+
+＠鈴鹿御前
+[FFFFFF]？
+[k]
+
+？1：鈴鹿が『協力しない』と言った理由、やっと分かった
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ガウェイン
+！　あの発言については私も[#不可思議:ふ　か　し　ぎ]だったのですが……[r]理由が分かったのですか？
+[k]
+
+[messageOff]
+[charaFadeout B 0.2]
+[wt 0.7]
+
+？1：任務ばかりで、本心を押し殺してたけど……
+？2：カルデアの任務も、マスターの責務も大切だけど……
+
+？！
+
+？1：夏はやっぱり、自分のために楽しまなくっちゃね！
+
+？！
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+[wt 1.4]
+[charaFace A 9]
+
+[bgm BGM_BATTLE_23 0.1]
+
+＠鈴鹿御前
+あったりまえっしょ！[r]ま、仕事も少しはしなくちゃだけどさ！
+[k]
+
+＠鈴鹿御前
+ハワイじゃ１日４時間働いて、[r]あとは飲んで騒いで笑い合うのがジョーシキだし！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+
+＠ガウェイン
+なるほど……そのハワイ情報の真偽はともかく、[r]『マスター本人の気持ち』を考えていませんでした。
+[k]
+
+[charaFace B 13]
+
+＠ガウェイン
+ＢＢからの依頼はあくまでサブミッション。[r]メインミッションは『最高の夏休み』であるべきです！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.7]
+
+？1：だから、このホテルでの４日間は楽しかった
+？2：ありがとう、鈴鹿
+
+？！
+
+[charaFace A 10]
+
+＠鈴鹿御前
+[line 3]そっか。[r]私の勝手な押しつけでなくて、良かった。
+[k]
+
+[charaFace A 9]
+
+＠鈴鹿御前
+おっし、それじゃ何しよっかマスター！
+[k]
+
+[charaFace A 8]
+
+＠鈴鹿御前
+やられっぱなしで出て行くタマじゃないもんね～。[r]モルガンの部屋に悪戯でもしていっちゃう？
+[k]
+
+[messageOff]
+[wt 0.4]
+
+？1：[&いや:ううん]、もっと楽しいことをしないと！
+
+？！
+
+[wt 0.2]
+
+？1：アースマンレースに出場して、優勝する！
+
+？！
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth B 7]
+[charaDepth C 6]
+[charaDepth U 5]
+[charaScale B 1.1]
+[charaScale C 1.1]
+[charaScale U 1.2]
+[charaFace B 11]
+[charaFadein B 0.4 -300,0]
+[charaFace C 31]
+[charaFadein C 0.4 300,0]
+[charaFadein U 0.4 0,-250]
+[wt 1.4]
+[charaFadeout A 0.1]
+[charaTalk on]
+[charaFace C 9]
+
+＠C：鈴鹿御前
+サイッコ～～～～じゃーーーん！
+[k]
+
+[charaFace C 6]
+
+＠C：鈴鹿御前
+レースは『乗り物』と『操者』なら[r]ペアでもＯＫだしね！
+[k]
+
+＠C：鈴鹿御前
+私がマスターの足になって、[r]ふたりでチェッカーフラッグぶち抜こうじゃん！
+[k]
+
+[messageOff]
+[charaTalk B]
+[wt 0.4]
+[charaFaceFade B 12 0.1]
+[wt 1.2]
+[charaFace B 8]
+
+＠ガウェイン
+……いえ、お待ちください。
+[k]
+
+[charaFace B 2]
+
+＠ガウェイン
+素晴らしい友情に水を差したくはありませんが、[r]忠言をするのも騎士の務め。
+[k]
+
+＠ガウェイン
+モルガンの名代はあのメリュジーヌです。[r]彼女とスズカの速度はほぼ互角ですが、
+[k]
+
+＠ガウェイン
+マスターを乗せる分、[#重量:ウエイト]の差がでます。[r]この形式では勝機は薄いかと。
+[k]
+
+[charaTalk C]
+[charaFace C 17]
+
+＠C：鈴鹿御前
+あ、そっか。[r]痛いところ突くし、ガウェち！
+[k]
+
+？1：それなら大丈夫
+？2：メリュジーヌには悪いけど、対策はバッチリ
+
+？！
+
+[charaFace C 31]
+
+＠C：鈴鹿御前
+ほんと！？[r]あのナマイキ最速ドラ[#娘:こ]をどうやって！？
+[k]
+
+[messageOff]
+[bgm BGM_BATTLE_23 0.4 0.8]
+[charaFadeout C 0.4]
+[charaFadeout B 0.4]
+[charaFadeout U 0.4]
+[wt 0.4]
+[se ade394]
+[wt 1.5]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.2 1]
+
+＠ガウェイン
+マスターが何かを書いていますが……[r]それは意見書……ですか？
+[k]
+
+？1：これをモルガンに渡してほしい
+？2：優勝賞品扱いの交換条件、と言えば聞くはず
+
+？！
+
+[messageOff]
+[se adm28 0.7]
+[seStop adm28 0.7]
+[wt 1.2]
+[charaFace B 10]
+[wt 0.4]
+
+＠ガウェイン
+！　確かに、この形式であれば勝機あり、です！
+[k]
+
+＠ガウェイン
+このガウェイン、異聞帯のモルガン公は[r]正直苦手ですが、必ずや届けてみせましょう！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStopEnd BGM_BATTLE_23 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]
+

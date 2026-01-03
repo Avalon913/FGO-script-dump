@@ -1,0 +1,556 @@
+
+
+＄04-00-03-16-4-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11006002 1 サリエリ]
+[charaSet B 11010001 1 平景清]
+[charaSet C 1098292500 1 ジャンヌ・オルタ]
+[charaSet D 1098290110 1 マリー]
+[charaSet E 1098289530 1 教頭]
+
+[charaSet F 98115000 1 エフェクト用]
+[charaScale F 1.2]
+[charaPut F 2000,2000]
+[charaEffect F bit_talk_noise_gr]
+
+[charaSet G 1098289900 1 ジャンヌ・オルタ_制服]
+
+[masterImageSet H cut536_mirror_m02 cut536_mirror_w02 1]
+
+[charaSet I 11006002 1 サリエリ_サブレイヤー用]
+[charaScale I 1.2]
+
+[charaSet J 11010001 1 平景清_サブレイヤー用]
+[charaScale J 1.5]
+
+[sceneSet K 211201 1]
+[charaScale K 1.2]
+
+[sceneSet L 211201 1]
+[charaScale L 1.2]
+
+[sceneSet N 211201 1]
+
+[charaSet O 1098280400 1 エフェクト用1]
+[charaSet P 1098280400 1 エフェクト用2]
+
+[charaTalk depthOff]
+
+[charaDepth K 1]
+[charaDepth I 2]
+[charaDepth P 3]
+
+[charaDepth L 1]
+[charaDepth O 3]
+[charaDepth J 2]
+
+[charaDepth N 1]
+
+[charaDepth E 1]
+[charaDepth D 2]
+[charaDepth H 2]
+[charaDepth B 2]
+
+[charaDepth F 8]
+
+[scene 10000]
+
+[subCameraOn 3]
+
+[charaLayer K sub #A]
+[charaLayer P sub #A]
+[charaLayer J sub #A]
+
+[charaLayer I sub #B]
+[charaLayer L sub #B]
+[charaLayer O sub #B]
+
+[charaLayer H sub #C]
+
+[subCameraFilter #A maskEdge cut359_mask15 6 0,0,0,0 255]
+[subCameraFilter #B maskEdge cut359_mask16 6 0,0,0,0 255]
+[subCameraFilter #C through]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaFace J 5]
+[charaFadein J 0.1 -50,180]
+[charaFadein K 0.1 340,0]
+
+[charaFace I 1]
+[charaFadein I 0.1 200,180]
+[charaFadein L 0.1 -300,0]
+
+[charaPut O 2000,2000]
+[charaPut P 2000,2000]
+[charaEffect O bit_talk_beam_shot03]
+[charaEffect P bit_talk_beam_shot03]
+
+[charaFadein H 0.1 0,-220]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_BATTLE_137 0.1]
+
+
+
+[effect bit_talk_kengekiall02_fs]
+[se bac528]
+[wt 0.3]
+[se ad467]
+[wt 0.4]
+
+[se ad386]
+[effect bit_talk_v_slash01]
+[wt 0.3]
+
+[cueSe SE_24 24_ad1408]
+[fadeout white 0.2]
+[wait fade]
+
+[scene 211201]
+
+[subRenderFadein #A 0.1 -210,-220]
+[subRenderFadein #B 0.1 210,-220]
+
+[charaPut O -230,200]
+[charaPut P 190,200]
+
+[charaShake I 0.07 2 2 0]
+[charaShake J 0.07 2 2 0]
+
+[wt 0.1]
+
+[se ad468]
+[fadein white 0.2]
+[wait fade]
+
+[cueSeVolume 24_ad1408 1.0 0.5]
+[wt 1.5]
+
+＠I：サリエリ
+ウ、ウ、ウォォアア……！[r]ウオオオアアアアアアアアアアアアアアアア！
+[k]
+
+[messageOff]
+[seStop ad468 0.5]
+[cueSeStop 24_ad1408 0.5]
+[bgm BGM_BATTLE_137 1.0 0.3]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaPut O 2000,2000]
+[charaEffectDestroy M bit_talk_beam_shot03]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+
+[charaPut O 2000,2000]
+[charaPut P 2000,2000]
+
+[charaEffectDestroy O bit_talk_beam_shot03]
+[charaEffectDestroy P bit_talk_beam_shot03]
+
+[charaLayer O normal]
+[charaLayer P normal]
+
+[charaLayer K normal]
+[charaLayer L normal]
+[charaLayer I normal]
+[charaLayer J normal]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[blur lens 0.3 2 10]
+[charaPut N 0,-220]
+[charaFadeTime N 0.2 0.4]
+[charaMoveScale N 1.05 0.2]
+[se ad231]
+[wt 0.2]
+[blurOff lens 0.3]
+[charaMove N 0,-220 0.2]
+[charaMoveScale N 1.0 0.2]
+[charaFadeout N 0.2]
+
+[wt 1.0]
+
+[se ad31]
+[se ad437]
+[charaPut F 0,58]
+[wt 0.3]
+
+[seStop ad31]
+[charaPut F 2000,2000]
+[wt 0.5]
+
+[cueSe SE_22 22_ad1177]
+[fadeout white 0.3]
+[wait fade]
+
+[scene 211801]
+
+[charaFadeout A 0.1]
+
+[cameraFilter gray]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFadein D 0.1 150,-30]
+
+[charaFace E 0]
+[charaFadein E 0.1 -100,0]
+
+[wt 0.2]
+
+[fadein white 0.3]
+[wait fade]
+
+[wt 1.0]
+
+[se ad31]
+[se ad437]
+[charaPut F 0,58]
+[wt 0.3]
+[seStop ad31]
+[charaPut F 2000,2000]
+
+[wt 0.3]
+
+[fadeout white 0.3]
+[wait fade]
+
+[scene 211201]
+
+[cameraFilter normal]
+
+[charaTalk on]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+
+[wt 0.2]
+
+[fadein white 0.3]
+[wait fade]
+
+[wt 0.7]
+
+
+？1：マリー？
+？2：今のは……
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サリエリ
+近寄るな……！[r]私に！　我に……ウ[messageShake 0.05 3 3 0.3]オオァアアアアアア……！！
+[k]
+
+[bgmStop BGM_BATTLE_137 1.5]
+[messageOff]
+
+[charaEffect A bit_talk_quickmove]
+[charaSpecialEffect A erasureReverse 1 0.3]
+[se ad846]
+
+[wt 1.0]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ジャンヌ・オルタ
+ああっ、クソ！　逃げられた！[r]って[line 3]
+[k]
+
+
+
+＠ジャンヌ・オルタ
+多分[#拙:まず]いわよこれ。[r]にせアマ、じゃなくて天塚先輩の姿が見えない！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[se ad596]
+[fadeout white 0.5]
+[wait fade]
+[charaCrossFade B 1098290600 0 0.1]
+[wait charaCrossFade B]
+[charaPut O 2000,2000]
+[charaEffectStop O bit_talk_charge_ppl02]
+[wt 0.5]
+[fadein white 0.7]
+[wait fade]
+
+[wt 1.0]
+[bgm BGM_EVENT_175 0.1]
+
+
+
+
+
+
+
+
+＠平景清
+……天塚とやらを追って行った、か。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 27]
+[charaFadein C 0.1 1]
+[wt 0.4]
+
+[se ad596]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[charaTalk G]
+[charaFace G 15]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.5]
+
+[charaFace G 18]
+
+＠G：ジャンヌ・オルタ
+うええー、そうよねやっぱり。[#拙:まず]い[#拙:まず]い！[r]アイツ、天塚先輩をアマデウス呼ばわりしてたわよね。
+[k]
+
+？1：（後を追う）
+？！
+
+[messageOff]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_175 1.0 0.6]
+
+[se ad231]
+[wt 1.5]
+
+[se ad31]
+[se ad437]
+[charaPut F 0,58]
+[fadeout white 0.4]
+[seStop ad31 0.4]
+[wait fade]
+[scene 210500]
+[wt 0.3]
+
+[charaPut F 2000,2000]
+
+
+[fadein white 0.2]
+[seStop ad31 0.2]
+[wait fade]
+
+[wt 1.0]
+
+[se ad31]
+[se ad437]
+[charaPut F 0,58]
+[fadeout white 0.4]
+[seStop ad31 0.4]
+[wait fade]
+[scene 210501]
+[charaPut F 2000,2000]
+
+[wt 0.3]
+[fadein white 0.2]
+
+[wait fade]
+
+[wt 1.0]
+
+[se ad31]
+[se ad437]
+[charaPut F 0,58]
+[fadeout white 0.4]
+[seStop ad31 0.4]
+[wait fade]
+[scene 212201]
+
+[charaPut F 2000,2000]
+
+[blur lens 0.1 2 20]
+[subRenderFadein #C 0.1 0,0]
+[cameraMove 0.1 50,-15 1.15]
+
+[wt 0.3]
+[fadein white 0.2]
+[seStop ad31 0.2]
+[wait fade]
+
+[wt 1.0]
+
+[se ad31]
+[se ad437]
+[fowardEffect bit_talk_noise_gr -50,15]
+[fadeout white 0.4]
+[seStop ad31 0.4]
+[wait fade]
+
+[cameraHome 0.1]
+[blurOff]
+[subRenderFadeout #C 0.1]
+[charaFadeout H 0.1]
+[charaScale N 1.2]
+[scene 211201]
+[charaFadein N 0 0,-250]
+[fowardEffectDestroy bit_talk_noise_gr]
+[wt 0.5]
+
+[fadein white 0.2]
+[seStop ad31 0.2]
+[wait fade]
+
+
+[bgm BGM_EVENT_175 1.0 0.8]
+[wt 1.0]
+
+[se ad59]
+[seVolume ad59 0 0.3]
+[seStop ad59 0.3]
+[charaMoveEase N 5,-250 2.0 easeOutSine]
+[blur lens 1.0 2 10]
+[wt 0.2]
+[seStop ad59 0.2]
+[wt 1.4]
+
+[se ad59]
+[seVolume ad59 0 0.3]
+[charaMoveEase N -5,-250 2.0 easeOutSine]
+[blurOff lens 2.0]
+[seStop ad59 0.2]
+
+[wt 1.7]
+
+＠
+[line 3][#昏:くら]き炎が、ちらついて。
+[k]
+
+[messageOff]
+
+[se ad59]
+[seVolume ad59 0 0.3]
+[seStop ad59 0.3]
+[charaMoveEase N 6,-250 2.0 easeOutSine]
+[blur lens 0.5 2 10]
+[wt 0.5]
+
+[wt 1.4]
+
+＠
+視界が揺れる。[r]姿勢が揺らぐ。
+[k]
+
+＠
+視線の先、[r]窓ガラスに映り込むあなたが僅かに[line 3]
+[k]
+
+[messageOff]
+
+[charaMove N 10,-200 0.2]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.2 1]
+
+[charaMove B 0,-5 0.3]
+[charaMoveScale B 1.1 0.3]
+[wt 0.2]
+[se ad775]
+
+[blurOff lens 2.0]
+
+[wt 2.5]
+[charaFace B 0]
+
+[se ad77]
+[charaMove B 0,0 1.0]
+[charaMove N 10,-250 1.0]
+
+＠平景清
+……倒れるぞ。呆けるな。
+[k]
+
+[charaFace B 1]
+
+＠平景清
+ん。貴様。[r]その目、何を見ている？
+[k]
+
+？1：……何でもない
+？2：行こう
+？！
+
+[messageOff]
+
+[bgm BGM_EVENT_175 1.0 1.0]
+
+[charaFadeout B 0.7]
+[charaFadeout N 0.7]
+[wt 1.3]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠G：ジャンヌ・オルタ
+[#目眩:めまい]でもした？[r]魔力不足、とかじゃないわよね。
+[k]
+
+[charaFace G 0]
+
+＠G：ジャンヌ・オルタ
+何かの魔術効果かしら？[r]景清、注意しておいて。
+[k]
+
+[charaFace G 3]
+
+＠G：ジャンヌ・オルタ
+[line 3]さっさと行くわよ。[r]アイツが[#よく似た別人:に　せ　ア　マ　デ　ウ　ス]で本懐遂げる前に、止める！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_175 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+
+

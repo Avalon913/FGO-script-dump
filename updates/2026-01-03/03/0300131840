@@ -1,0 +1,182 @@
+
+
+＄03-00-13-18-4-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098252410 1 ククルカン]
+[charaSet B 1098255300 1 ニトクリス]
+[charaSet C 1098231510 1 マシュ]
+[charaSet D 1098257300 1 ダ・ヴィンチ]
+[charaSet E 1098255200 1 ハベトロット]
+
+[scene 169400]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[shake 0.02 2 2 0]
+[cameraMove 6.0 0,-50 1.3]
+[effect bit_talk_41_r]
+
+[se ad769]
+[seVolume ad769 0 0]
+[seVolume ad769 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[wt 2.5]
+
+[wipeout rightToLeft 1.0 1.0]
+[seVolume ad769 1.0 0.3]
+[wait wipe]
+
+[shakeStop]
+[effectDestroy bit_talk_41_r]
+[cameraHome 0.1]
+[scene 169104]
+[wt 1.0]
+
+[shake 0.02 2 2 1.0]
+[seVolume ad769 1.0 1.0]
+[wipein leftToRight 1.0 1.0]
+[wait wipe]
+
+[seStop ad769 0.5]
+[wt 0.5]
+
+[bgm BGM_BATTLE_107 0.1]
+
+？1：見えた！　チチェン・イツァーだ！
+？2：（……硝煙の匂いがここまで……）
+
+？！
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠ククルカン
+………………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠ニトクリス
+城壁が爆破されています！[r]街のまわりにオセロトルの姿はありません！
+[k]
+
+＠ニトクリス
+全員、都市内に侵攻したのでしょう！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 35]
+[charaFadein C 0.1 1]
+
+＠マシュ
+チチェン・イツァー内の敵性反応、でました！[r]都市内のオセロトル、1200……いえ、1080に減少！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+減少しているならディノスたちも[r]やられっぱなしじゃないって事だ！
+[k]
+
+＠ダ・ヴィンチ
+我々が守らないといけないのはボーダーと、[r]ディノスを統べる恐竜王の安全！
+[k]
+
+＠ダ・ヴィンチ
+どうする、[%1][&君:ちゃん]！？
+[k]
+
+？1：二手に分かれよう！
+？2：ニトクリス、ダ・ヴィンチちゃんはボーダーに！
+
+？！
+
+[charaFace D 17]
+
+＠ダ・ヴィンチ
+了解だ、私とニトクリスはボーダーに向かう！[r]キミとマシュ、ククルカンは祭壇に向かってくれ！
+[k]
+
+＠ダ・ヴィンチ
+ハベトロット、ふたりをよろしくね！
+[k]
+
+[charaFace D 14]
+
+＠ダ・ヴィンチ
+都市部の戦闘だけど、状況によっては[r]ブラックバレルの使用も[#已:や]む無しだ！
+[k]
+
+＠ダ・ヴィンチ
+人的被害が出ないと判断できたら、[r]害敵に対して使っていい！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠ハベトロット
+すっごいヤバいヤツには使えってことだな！[r]任せるんだわ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad15]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[wt 0.6]
+
+[cueSe SE_21 21_adm82]
+[seVolume 21_adm82 0 0.5]
+[se ad879]
+[seVolume ad879 0 0.8]
+[fadeout white 0.5]
+[wait fade]
+
+[charaCrossFade C 8001500 7 0.4]
+[wait charaCrossFade C]
+
+[fadein white 0.5]
+[wait fade]
+[wt 0.5]
+
+[se bac170]
+[charaMove C 0,-10 0.2]
+
+＠マシュ
+都市内に突入します！[r]マスター、戦闘準備を！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_107 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,211 @@
+
+
+＄94-08-79-16-1-0
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098276000 1 クロエ]
+[charaSet B 1098274400 1 アルトリア・キャスター]
+[charaSet C 25012000 1 ヤラアーンドゥ]
+[charaScale C 1.2]
+[charaSet D 7031000 1 ジャンヌ・オルタ]
+[charaScale D 1.1]
+[charaSet E 7031000 1 ジャンヌ・オルタ]
+
+[charaSet F 1098154700 1 暴徒]
+[charaSet G 1098154700 1 暴徒]
+[charaSet H 1098154700 1 暴徒]
+
+[sceneSet R 196900 1]
+[charaScale R 1.4]
+
+[charaDepth D 4]
+[charaDepth R 2]
+[charaDepth A 3]
+[charaDepth C 3]
+[charaDepth B 1]
+[charaDepth E 1]
+
+
+
+
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+＠
+　　　[align center]－　サバフェス　ＤＡＹ６　－[align]
+[k]
+
+[messageOff]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 196900]
+
+[fadein black 1.5]
+[wait fade]
+
+？1：また同盟サークルが脱稿したぞー！
+
+？！
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaFace D 7]
+[charaFadein R 0.6 200,-200]
+[charaFadeinFSL D 0.6 -50,-10]
+
+＠ジャンヌ・オルタ
+ええ、自分たちでも信じられないわ。
+[k]
+
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ジャンヌ・オルタ
+クロエを元に戻す、なんておもしろ目的の[r]後押しがあったからかしら。
+[k]
+
+[messageOff]
+[subCameraOn]
+
+[charaLayer D sub #A]
+
+[subCameraFilter #A through]
+
+[subRenderFadein #A 0 0,0]
+
+[subBlur #A lens 1.0 2 10 1.0 subBlur]
+
+[charaFace A 13]
+[charaMove R 0,-200 1.0]
+[charaMoveFSL D -250,-10 1.0]
+[charaFadeinFSR A 0.4 500,0]
+[charaMoveFSR A 300,0 1.0]
+
+[wt 3.0]
+
+
+
+[messageOff]
+[charaFadeout R 0.6]
+[charaFadeout A 0.6]
+[charaFadeout D 0.6]
+[wt 0.6]
+
+＠アルトリア・キャスター
+で、どう委員長？[r]ここにある見本誌、ぜんぶ読んでくれたけど。
+[k]
+
+
+[messageOff]
+[charaFace C 12]
+[charaFadein R 0.6 -150,-220]
+[charaFadein C 0.6 130,-10]
+[charaMove R -200,-220 1.0]
+[charaMove C 80,-10 1.0]
+[wt 1.2]
+
+＠ヤラアーンドゥ
+……まったく。[#揃:そろ]いも揃って、[r]よくもまあ堂々とやってくれちゃって。
+[k]
+
+[charaFadeout B 0.1]
+[charaFace C 11]
+
+＠ヤラアーンドゥ
+私から出せる規制はないわ。[r]……[#規程外:き て い が い]だけど、美しい本でした。
+[k]
+
+[charaFace C 0]
+
+＠ヤラアーンドゥ
+これなら私が上にかけあってもいい。
+[k]
+
+＠ヤラアーンドゥ
+『ジャンル・アルトリア限定令』、[r]なんとしても廃止させましょう。
+[k]
+
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+？1：！
+？2：ありがとう、委員長！
+
+？！
+
+[charaFace C 4]
+
+＠ヤラアーンドゥ
+委員長じゃなくてノク……でもなくて、[r]ヤラアーンドゥよ。いいかげん名前で呼んで。
+[k]
+
+[messageOff]
+[charaFadeout R 0.6]
+[charaFadeout C 0.6]
+[wt 0.6]
+
+＠ジャンヌ・オルタ
+よーし、今夜は飲むわよー！
+[k]
+
+＠ジャンヌ・オルタ
+ヤラアーンドゥのお墨付きももらったし、[r]明日こそ本当のサーヴァント・サマー・フェスティバルが、
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_94 1.0]
+[shake 0.05 5 5 0.5]
+[se ade187]
+[charaFace E 8]
+[wt 2.0]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[subBlurOff #A lens 0.1 normal]
+[subCameraOff]
+[charaLayer D normal]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFace F 1]
+[charaFace G 1]
+[charaFace H 1]
+[charaFadein F 0.1 1]
+[charaFadein G 0.1 300,0]
+[charaFadein H 0.1 -300,0]
+
+
+[cueSe SE_23 23_ade824]
+[wt 1.0]
+[wipein rectangleStripRightToLeft 0.5 1]
+[seStop 23_ade824 0.5]
+[wait wipe]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠暴徒たち
+うおお、ここにまだアルポンドがあるぞー！[r]奪え奪えー！
+[k]
+
+＠暴徒たち
+アルポンドがなきゃグッズも買えねぇ！[r]恨むなら今日かぎりの限定品を恨むんだな！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+

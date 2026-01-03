@@ -1,0 +1,716 @@
+
+
+＄94-14-15-02-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 28010001 1 ダンテ]
+[charaSet B 1057000 1 セタンタ]
+[charaSet C 1098224300 1 岡田以蔵]
+[charaSet D 1098255110 1 ゴルドルフ]
+[charaSet E 1098257810 1 マシュ]
+[charaSet F 1098318800 1 イフリータ（？）]
+[charaSet G 1098318810 1 ？？？]
+
+[charaSet H 7042001 1 セレブな客Ａ]
+[charaSet I 1008300 1 セレブな客Ｂ]
+
+[imageSet M back10000 1 1]
+[charaScale M 1.01]
+[imageSet N back10000 1 1]
+[charaScale N 1.01]
+
+[sceneSet O 243503 1]
+[charaScale O 1.2]
+[sceneSet P 243503 1]
+[charaScale P 1.3]
+
+[sceneSet Q 110100 1]
+[charaScale Q 1.4]
+[sceneSet R 110102 1]
+[charaScale R 1.4]
+[sceneSet S 183900 1]
+
+[charaSet T 98115000 1 通信エフェクト用]
+[charaSet U 98115000 1 エフェクト用1]
+[charaSet V 98115000 1 エフェクト用2]
+[charaSet X 98115000 1 エフェクト用3]
+[charaSet Y 98115000 1 エフェクト用4]
+
+[charaPut T 2500,2500]
+[charaEffect T bit_talk_10_LowLevel]
+[charaPut U 2000,2000]
+[charaEffect U bit_talk_yuge_fs]
+[charaPut V 2000,2000]
+[charaEffect V bit_talk_fire_fs]
+[charaPut X 2000,2500]
+[charaEffect X bit_talk_sparks_fs]
+[charaPut Y 2000,2500]
+[charaEffect Y bit_talk_fire_fs]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 110102]
+
+[charaFace Q 0]
+[charaFadein Q 0.1 0,-200]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+
+[charaFace R 0]
+[charaFadein R 1.2 0,-200]
+[charaFadeout Q 1.2]
+[wt 2.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout R 0.1]
+[wt 1.0]
+
+[pictureFrameTop cut063_cinema]
+
+[scene 183900]
+
+[subCameraOn 1]
+[charaLayer H sub #A]
+[charaLayer I sub #A]
+[charaLayer S sub #A]
+[charaTalk depthOff]
+[charaDepth H 4]
+[charaDepth I 5]
+[charaDepth S 2]
+[charaScale I 1.1]
+[charaScale H 1.1]
+[charaScale S 1.1]
+
+[subCameraFilter #A maskEdge cut359_mask07 5 255,255,255,255 0]
+[subRenderScale #A 1.1]
+
+[charaFace I 0]
+[charaFadein I 0.1 -150,200]
+[charaFace H 5]
+[charaFadein H 0.1 100,200]
+[charaFadein S 0.1 -200,0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_147 0.1]
+
+[subRenderFadein #A 1.0 -200,-360]
+[wt 1.0]
+
+[charaMove H 90,200 0.4]
+[wt 0.1]
+[charaMove I -160,200 0.4]
+[wt 0.5]
+[charaFace H 2]
+[charaMoveReturn H 90,210 0.2]
+[wt 0.2]
+[charaMoveReturn H 90,210 0.2]
+[wt 0.5]
+[charaFaceFade I 5 0.2]
+[charaFace H 5]
+[charaMove I -150,200 0.4]
+[wt 0.5]
+[charaFace H 12]
+[charaShake H 0.03 3 1 0.6]
+[wt 1.0]
+[charaFace I 4]
+[charaFace H 2]
+[charaMove H 80,200 0.4]
+[wt 0.1]
+[charaMove I -155,200 0.4]
+[wt 0.5]
+[charaMove H 70,200 0.4]
+[wt 0.1]
+[charaMove I -160,200 0.4]
+[wt 0.5]
+[charaFace I 0]
+[charaMoveReturn I -160,195 0.7]
+[wt 0.5]
+[charaFace H 5]
+[charaShake H 0.03 3 1 1.0]
+[wt 0.2]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_147 1.0 0.5]
+[wait fade]
+
+[pictureFrameTop]
+
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout S 0.1]
+[wt 0.1]
+
+[charaLayer H main]
+[charaLayer I main]
+[charaLayer S main]
+[subCameraOff]
+[wt 0.8]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_147 1.0 1.0]
+[wait fade]
+[wt 0.3]
+
+？1：セレブな人たちが言い争ってたみたい
+？！
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠ダンテ
+フム……前回もあった出来事なのか……。[r]もし無かったとすれば……。
+[k]
+
+＠ダンテ
+我々がテニスコートを準備できなくて、[r]フラストレーションが溜まったせいかな……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+うーん、若干罪悪感がある。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠岡田以蔵
+気にしちょってもしょうがないろう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+あの二人には申し訳ないが、[r]世界を救えるかどうかが懸かっているからね……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠ダンテ
+……我々が関与すれば、あの二人は[r]喧嘩をしなかった……か……。
+[k]
+
+？1：……？
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_147 1.5]
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠マシュ
+マスター！　ダンテさん！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ダンテ
+……どうしたね？[wt 0.7][charaFace A 7][r]いや、何か出現したか……！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+[se ad172]
+[wt 0.5]
+
+[seStop ad172 0.1]
+[wt 0.3]
+
+[se ad15]
+[wt 1.0]
+
+[bgm BGM_EVENT_122 0.1]
+
+[charaFace E 5]
+＠マシュ
+聖杯が顕現した！？[r]これは……誰かが願い事を叶えたものと！
+[k]
+
+？1：ここは関係なかったってこと！？
+？！
+
+[charaFace E 4]
+
+＠マシュ
+は、はい。[wt 0.5][charaFace E 6][r]……いえ、すみません。そちらに何かが！
+[k]
+
+[messageOff]
+[charaTalk T]
+[se ade501]
+[seVolume ade501 0 0.4]
+[wt 1.0]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_122 1.0 0.5]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[charaPut T 2000,2500]
+[wt 1.0]
+
+[charaScale S 1.2]
+[charaScale G 1.2]
+[charaDepth S 3]
+[charaDepth G 4]
+[charaDepth F 4]
+[charaDepth X 8]
+
+[charaFace S 0]
+[charaFadein S 0.4 -150,-250]
+[charaMove S -100,-250 1.0]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_122 1.0 1.0]
+[wait wipe]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 -50,0]
+[charaMove G 0,0 0.4]
+[wt 0.6]
+
+＠？？？
+[line 3]。[r][line 3]。
+[k]
+
+？1：イフリータ……！
+？！
+
+[charaShake G 0.02 2 2 0.35]
+＠？？？
+……！
+[k]
+
+[messageOff]
+
+[se ad138]
+[seVolume ad138 0 0.6]
+[se ad267]
+[seVolume ad267 0 0.5]
+[se ad450]
+[seVolume ad450 0 0.5]
+[wt 0.1]
+
+[fadeout FF4300 0.2]
+[wait fade]
+
+[charaPut X 0,-350]
+[charaScale F 1.2]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0 1]
+[charaFadeout G 0]
+
+[fadein FF4300 0.2]
+[wait fade]
+[wt 0.8]
+
+[cueSe SE_24 24_ade1065]
+[wt 0.1]
+[charaMoveScaleEase F 1.0 0.35 easeOutSine]
+[charaMoveEase F 180,-19 0.35 easeOutSine]
+[charaFadeout F 0.35]
+[cueSeStop 24_ade1065 0.8]
+[wt 0.8]
+
+[wipeout rightToLeft 0.6 1.0]
+[bgm BGM_EVENT_122 0.8 0.5]
+[seStop ad450 0.6]
+[wait wipe]
+
+[charaPut X 2000,2500]
+[charaFadeout S 0.4]
+[wt 0.3]
+
+[sceneSet Q 243502 1]
+[charaScale Q 1.2]
+[sceneSet R 243503 1]
+[charaScale R 1.2]
+[sceneSet S 243500 1]
+[charaScale S 1.2]
+
+[scene 243500]
+
+[overlayFadein M 0.1 0,738]
+[overlayFadein N 0.1 0,-738]
+
+[charaDepth S 2]
+[charaDepth Q 3]
+[charaDepth R 4]
+[charaDepth F 6]
+
+[charaScale S 1.0]
+[charaFace S 0]
+[charaFadein S 0.1 0,-200]
+[wt 0.3]
+
+[wipein leftToRight 0.6 1.0]
+[wait wipe]
+
+[charaScale F 1.0]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 -50,-50]
+[charaMoveEase F 0,-50 0.4 easeOutSine]
+[wt 0.4]
+[charaEffectEdgeBlur F FD3C2F FD3C2F 3 3]
+[wt 0.2]
+
+[se ad354]
+[seVolume ad354 0 0.7]
+[wt 0.65]
+
+[effect bit_talk_fire_wall]
+[wt 0.65]
+
+[seStop ad354 0.3]
+[se ad138]
+[se ad450]
+[seVolume ad450 0 0.5]
+[se ad267]
+[seVolume ad267 0 0.7]
+[cueSe SE_21 21_ad1114]
+[cueSeVolume 21_ad1114 0 0.3]
+[charaFilter O silhouette FF430080]
+
+[charaDepth O 10]
+[charaDepth Y 9]
+[charaFadein O 0.2 0,-200]
+[wt 0.2]
+
+[effectDestroy bit_talk_fire_wall]
+[charaEffectEdgeBlurDestroy F]
+
+[scene 243502]
+
+[charaPut X 0,-350]
+[charaPut Y 0,-350]
+
+[charaScale Q 1.0]
+[charaFace Q 0]
+[charaFadein Q 0 0,-200]
+[charaFadeout S 0]
+
+[charaFadeout O 0.2]
+[wt 1.6]
+
+[cueSe SE_21 21_ade645]
+[cueSe SE_23 23_ade842]
+[charaScale R 1.0]
+[charaFace R 0]
+[charaFadein R 0.2 0,-200]
+[wt 0.2]
+[charaFadeout R 0.2]
+[cueSeStop 21_ade645 0.2]
+[wt 0.5]
+
+[cueSe SE_21 21_ade645]
+[cueSe SE_23 23_ade842]
+[charaFace R 0]
+[charaFadein R 0.25 0,-200]
+[wt 0.25]
+[cueSeStop 21_ade645 0.2]
+
+[scene 243503]
+[charaFadeout Q 0.1]
+[wt 0.7]
+
+[cueSe SE_24 24_ade1065]
+[wt 0.1]
+[charaMoveEase F 150,-50 0.35 easeOutSine]
+[charaFadeout F 0.35]
+[cueSeStop 24_ade1065 0.8]
+[wt 1.4]
+
+
+[cueSe SE_25 25_ade1183 0.8 1.0]
+
+[wt 0.2]
+
+[bgm BGM_EVENT_122 1.0 1.0]
+[charaMove M 0,835 1.4]
+[charaMove N 0,-838 1.4]
+[wt 1.2]
+[cueSeStop 25_ade1183 0.2]
+[wt 0.2]
+
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.3]
+
+[charaDepth R 2]
+[charaDepth B 3]
+[charaDepth C 4]
+[charaTalk C]
+[charaFace C 5]
+[charaFace B 12]
+[charaFadeinFSR C 0.1 2]
+[charaFadeinFSL B 0.1 0]
+
+＠岡田以蔵
+おんしゃあ、待たんか！
+[k]
+
+[charaTalk B]
+
+＠セタンタ
+くそ、逃げ足速いなあいつ！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth A 3]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ダンテ
+くっ……まず炎を消さないと……！
+[k]
+
+？1：バケツバケツ……！
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.15]
+
+[seStop ad267 0.6]
+[seStop ad450 0.6]
+[cueSeStop 21_ad1114 0.6]
+[cueSe Servants_9943830 m89003]
+
+
+[fowardEffect bit_talk_underwater_bombing 0,25 V]
+[blur motion 0.25 4 10000 0.5 0.6 0.05 100]
+[cameraMoveEase 0,10 0.25 easeOutCubic 1.2]
+[wt 0.3]
+[fadeout white 0.3]
+[wait fade]
+
+[charaPut Y 2000,2500]
+[blurOff motion 0.1]
+[fowardEffectDestroy bit_talk_underwater_bombing]
+[charaScale O 1.2]
+[charaFadein O 0.1 -120,-200]
+[cameraMoveEase 0,0 0.1 easeOutCubic 1.01]
+[wt 0.3]
+
+[charaDepth O 7]
+[charaDepth P 7]
+[charaDepth U 8]
+[charaDepth V 9]
+
+[charaPut V 0,-350]
+[charaPut X 0,-350]
+
+[charaFilter O normal]
+
+
+[charaMoveEase O 80,-200 0.4 easeOutQuart]
+[fadein white 0.4]
+[wait fade]
+
+[se ad826]
+[seVolume ad826 0 0]
+[cueSe Servants_9943830 m89003]
+[fowardEffect bit_talk_underwater_bombing 0,25 V]
+
+[charaPut U 1]
+[charaMove V 0,-350 0.6]
+[charaMove X 0,-350 0.6]
+
+[wt 0.6]
+
+[fadeout white 0.3]
+[wait fade]
+
+[charaFadeout O 0.1]
+[fowardEffectDestroy bit_talk_underwater_bombing]
+[charaScale P 1.2]
+[charaFadein P 0.1 190,-250]
+[wt 0.3]
+
+[charaPut V 0,-350]
+[charaPut X 0,-350]
+
+[charaMoveEase P -10,-250 0.4 easeOutQuart]
+[fadein white 0.4]
+[wait fade]
+
+[cueSe Servants_9943830 m89003]
+[fowardEffect bit_talk_underwater_bombing 0,25 V]
+
+[charaPut U 1]
+[charaMove V 0,-350 0.6]
+[charaMove X 0,-350 0.6]
+[wt 0.6]
+
+
+[fadeout white 0.3]
+[wait fade]
+
+[charaPut V 2000,2000]
+[charaPut X 2000,2000]
+
+[charaFadeout R 0.1]
+[charaFadeout P 0.1]
+[fowardEffectDestroy bit_talk_underwater_bombing]
+
+[scene 243504]
+
+[seVolume ad826 0.5 0.5]
+[wt 1.8]
+
+[seStop ad826 2.0]
+[fadein white 1.0]
+[wait fade]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ダンテ
+……よし、大丈夫。[wt 0.7][charaFace A 7][r]追いかけるとしよう……！
+[k]
+
+[messageOff]
+[cueSe SE_23 23_ad1292]
+[charaFadeout A 0.4]
+[wipeout rightToLeft 0.6 1.0]
+[bgmStop BGM_EVENT_122 1.5]
+[cueSeStop 23_ad1292 1.5]
+[wait wipe]
+
+[charaPut U 2000,2000]
+[charaFadeout A 0.1]
+[charaFadeout R 0.1]
+
+[scene 243201]
+
+[charaPut V 0,-350]
+[charaPut X 0,-350]
+
+[se ad267]
+[seVolume ad267 0 0]
+[cueSe SE_21 21_ad1114]
+[cueSeVolume 21_ad1114 0 0]
+[wt 1.5]
+
+[wipein leftToRight 0.6 1.0]
+[seVolume ad267 0.6 0.5]
+[cueSeVolume 21_ad1114 0.6 0.2]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_BATTLE_62 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠イフリータ（？）
+！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ダンテ
+くっ……止まれ……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+
+＠イフリータ（？）
+……。[wt 0.8][r]……仕方ないか。
+[k]
+
+[messageOff]
+[se ad678]
+[blur motion 0.1 4 10000 0.5 0.6 0.05 100]
+[charaMoveScaleEase F 1.4 0.35 easeOutQuint]
+[charaMoveEase F 0,45 0.35 easeOutQuint]
+[effect bit_talk_41_fs]
+[wt 0.3]
+
+
+
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_62 0.4]
+[seStop ad267 0.4]
+[cueSeStop 21_ad1114 0.4]
+[wait fade]
+[blurOff motion 0.1]
+[soundStopAllEnd]
+[end]

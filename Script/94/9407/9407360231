@@ -1,0 +1,609 @@
+
+＄94-07-36-02-3-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098243300 1 スカサハ＝スカディ]
+
+[charaSet C 99502600 1 マシュ]
+[charaSet D 98002000 1 フォウ]
+[charaSet E 10010300 1 蘆屋道満]
+[charaSet F 6026300 1 燕青]
+[charaSet G 5043300 1 アスクレピオス]
+[charaSet H 1098243400 1 ガレス]
+
+[charaSet I 6043000 1 オルトリンデ]
+[charaSet J 6044000 1 ヒルド]
+[charaSet K 6045000 1 スルーズ]
+[charaSet L 1098243700 1 アークティックフィッシュＡ]
+[charaSet M 28003000 1 レディ・アヴァロン]
+
+[charaSet P 98115000 1 エフェクト用ダミー]
+[charaSet Q 98115000 1 エフェクト用ダミー]
+[charaSet R 98115000 1 エフェクト用ダミー]
+[charaSet S 98115000 1 エフェクト用ダミー]
+
+[charaPut S 2000,2000]
+[charaEffect S bit_talk_10_LowLevel]
+
+[imageSet T back10000 1 1]
+[charaScale T 1.4]
+
+[charaDepth F 5]
+[charaDepth T 1]
+
+[scene 159800]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFadein K 0.1 1]
+[wt 0.5]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaPut P 20,-50]
+[charaPutFSR Q 306,0]
+[charaEffect P bit_talk_shot_02]
+[se ad96]
+[wt 0.2]
+[effect bit_talk_shot_02 0,0 V]
+[wt 0.6]
+[seStop ad96 0.1]
+[effectDestroy]
+[charaEffectDestroy P bit_talk_shot_02]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+[wt 0.3]
+[charaMoveScale H 1.1 0.2]
+[charaMove H 0,10 0.2]
+[blurOff motion 0.2]
+[charaFadeout H 0.2]
+
+[fowardEffect bit_talk_h_slash01_fs]
+[se ad85]
+[wt 0.6]
+[charaScale H 1.0]
+
+[seStop ad85 0.1]
+[cueSe Servants_900200 m06317]
+[flashin once 0.1 0.1 00bfff80 00bfff50]
+[wt 0.1]
+[effectDestroy bit_talk_h_slash01_fs]
+[wt 0.8]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[wt 0.1]
+
+[charaShake L 0.03 7 6 0.6]
+[se ad22]
+[wt 1.0]
+
+[charaSpecialEffect L erasure 1 1.2]
+[se ad42]
+[wt 1.7]
+[seStop ad42 0.3]
+
+[charaDepth K 3]
+[charaDepth J 2]
+[charaDepth I 4]
+[charaTalk depthOff]
+
+[charaTalk K]
+[charaFace K 5]
+[charaFadein K 0.1 1]
+[wt 0.5]
+
+[cueSe SE_21 21_ad1108]
+[se bac398]
+[wt 0.05]
+[fadeout white 0.4]
+[wait fade]
+
+[charaTalk off]
+
+[charaFace J 5]
+[charaFadeinFSR J 0.1 386,0]
+
+[charaFace I 5]
+[charaFadeinFSL I 0.1 -386,0]
+
+[cueSeStop 21_ad1108 0.7]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 8]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+＠オルトリンデ
+……撃破。[r]対象の消滅を、確認しました。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.5]
+[charaCrossFade H 1054000 0 0.7]
+[se ad51]
+[wait charaCrossFade H]
+[wt 0.5]
+
+[charaFace H 6]
+[bgm BGM_EVENT_77 0.1]
+
+＠ガレス
+空飛ぶお魚でしたね。[r]氷のお魚？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 8]
+[charaFadein I 0.1 1]
+
+＠オルトリンデ
+はい。そのように見えました。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠ガレス
+ですよね！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 8]
+[charaFadein I 0.1 1]
+[wt 0.5]
+[charaMoveReturn I 0,-7 0.5]
+[wt 1.3]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 9]
+[charaFadein J 0.1 1]
+
+＠ヒルド
+氷の魚……[r]あれって、もしかして……？
+[k]
+
+？1：ヒルド、心当たりあるの？
+？2：氷の魚、どこかで見たことある？
+？！
+
+[bgmStop BGM_EVENT_77 1.0]
+
+＠ヒルド
+うん。あれってば多分[line 3]
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[se ad13]
+[charaPut R 0,0]
+[charaEffect R bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+
+＠スカサハ＝スカディ
+フフフ。[r]楽しんでいるようだな？
+[k]
+
+[charaPut R 2000,2000]
+[charaFadeout A 0.1]
+[wt 0.1]
+[bgm BGM_REQUIEM 0.1]
+[charaTalk M]
+[charaFace M 1]
+[charaFadein M 0.1 1]
+
+＠レディ・アヴァロン
+おお、極北女王！[r]ひさしぶり……でもないか。やあやあ！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaPut R 0,0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠スカサハ＝スカディ
+レディ・アヴァロンか。[r]エリア担当ご苦労。
+[k]
+
+？1：スカディ！
+？2：えっ、カルデア式の通信？
+？！
+
+＠スカサハ＝スカディ
+うん、遠隔から像と声を届けている。[r]私自身は極北魔氷城にいる。
+[k]
+
+[charaPut R 2000,2000]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[charaFadeTime T 0.2 0.5]
+
+＠燕青
+（本当にアレ極北魔氷城っていうのか……）
+[k]
+
+＠燕青
+（ダサ……[r]　いや格好いい、か……いやどうなの？）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout T 0.2]
+[wt 0.1]
+
+[charaPut R 0,0]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠スカサハ＝スカディ
+よく目にしていたからな、[r]カルデア式の通信技術というモノを模してみた。
+[k]
+
+[charaFace A 0]
+
+＠スカサハ＝スカディ
+いや、そんなことより。[r]どうだ？
+[k]
+
+？1：どうだ、とは……？
+？！
+
+[charaFace A 11]
+
+＠スカサハ＝スカディ
+楽しんでいるか？[r]予期せぬアクシデントにびっくりしたか。
+[k]
+
+[charaPut R 2000,2000]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaPut S 0,0]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠マシュ
+予期しないアクシデントというのは、[r]先ほどの氷の魚でしょうか？
+[k]
+
+[charaPut S 2000,2000]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[charaPut R 0,0]
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠スカサハ＝スカディ
+ふふふふふ。
+[k]
+
+[charaPut R 2000,2000]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠燕青
+ははは。[r]笑ってちゃ分からないぜ、女王様。
+[k]
+
+[charaFadeTime T 0.2 0.5]
+[charaFace F 5]
+
+＠燕青
+（あるいは、意図的かねぇ？）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout T 0.2]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 11]
+[charaFadein J 0.1 1]
+
+＠ヒルド
+やっぱり、あの氷の魚！[r]水着霊基になったスカディ様が[#侍:はべ]らせてるやつ！
+[k]
+
+[charaFace J 2]
+
+＠ヒルド
+……って、霊基再臨してる？[r]魚でっかくなってる！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[bgm BGM_REQUIEM 1.0 0.5]
+[charaPut R 0,0]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠スカサハ＝スカディ
+え？
+[k]
+
+[charaPut R 2000,2000]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠ガレス
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.2]
+
+[charaPut S 0,0]
+[charaTalk C]
+[charaFace C 06]
+[charaFadein C 0.1 1]
+
+＠マシュ
+[FFFFFF]？？[-]
+[k]
+
+[charaPut S 2000,2000]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[charaPut R 0,0]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠スカサハ＝スカディ
+あっ……[r]い、いやこれは違う、違うのだ！
+[k]
+
+[charaFace A 2]
+
+＠スカサハ＝スカディ
+ちょっと待て！
+[k]
+
+[messageOff]
+[wt 0.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaEffectStop R bit_talk_10_LowLevel]
+[se ad562]
+[wt 0.5]
+[charaEffectDestroy R bit_talk_10_LowLevel]
+[wt 1.0]
+
+[se ad13]
+[charaPut R 0,0]
+[charaEffect R bit_talk_10_LowLevel]
+[wt 0.2]
+[bgm BGM_REQUIEM 1.5 1.0]
+[charaPut A 0,0]
+[charaChange A 1098243200 3 normal 0.4]
+[wait charaChange A]
+[wt 1.4]
+
+＠スカサハ＝スカディ
+……ま、待たせたな。[r]改めて、極北女王スカサハ＝スカディである。
+[k]
+
+[charaPut R 2000,2000]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[charaFadeTime T 0.2 0.5]
+
+＠燕青
+（お色直ししてきた！？）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout T 0.2]
+[wt 0.1]
+
+[charaPut R 0,0]
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠スカサハ＝スカディ
+フフ……[r]せいぜい楽しんでいくとよいぞ。
+[k]
+
+＠スカサハ＝スカディ
+ではな。
+[k]
+
+？1：ちょっと待って！
+？2：どうしてスカディ、北極圏に特異点を？
+？！
+
+＠スカサハ＝スカディ
+………………。
+[k]
+
+？1：永遠の夏どうこうって、本気？
+？！
+
+＠スカサハ＝スカディ
+……。[r]……。
+[k]
+
+＠スカサハ＝スカディ
+……フフ。[r]私は逃げも隠れもせぬ、極北魔氷城にて待つ。
+[k]
+
+[charaFace A 9]
+
+＠スカサハ＝スカディ
+せいぜい永遠の夏を楽しむがいい。[r]美味しいモノとか、沢山食べるとよいぞ。
+[k]
+
+[messageOff]
+[bgmStop BGM_REQUIEM 1.5]
+[wt 0.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaEffectStop R bit_talk_10_LowLevel]
+[se ad562]
+[wt 0.5]
+[charaEffectDestroy R bit_talk_10_LowLevel]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠蘆屋道満
+おや。通信、切れてしまいましたな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠マシュ
+通信途絶[line 3][r]はい、チャンネル開きません。
+[k]
+
+[charaPut S 2000,2000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 16]
+[charaFadein H 0.1 1]
+
+＠ガレス
+何だったんでしょう？[r]私たちの邪魔、でしょうか？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+
+＠燕青
+特異点解決のために進む俺たちを、[r]聖杯所持者が邪魔してきた。そのへんが筋かね。
+[k]
+
+[charaFace F 4]
+
+＠燕青
+ま、分かりやすい筋だけど、[r]なーんか引っかかるなあ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+＠蘆屋道満
+ンンンンどうでしょうねえ！[r]聖杯に魅入られるは、およそ人の業でありましょうや。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠燕青
+人の業ね。[r]じゃあ、神様の場合はなんて言うんだ？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+[wt 0.5]
+[charaFaceFade E 18 0.3]
+[wt 1.3]
+
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

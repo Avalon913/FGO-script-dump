@@ -1,0 +1,164 @@
+
+
+＄94-09-15-85-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5054000 1 由井正雪]
+[charaSet B 1098257810 1 マシュ]
+[charaSet C 1098181800 1 オデュッセウス]
+[charaSet D 7016000 1 タマモキャット]
+[charaSet E 1098257310 1 ダ・ヴィンチ]
+
+[sceneSet S 205400 1]
+[charaScale S 1.2]
+
+[imageSet U cut516_tree02 1]
+[charaScale U 1.4]
+
+[charaSet V 98115000 1 エフェクト用]
+[charaPut V 2000,2500]
+[charaEffect V bit_talk_10_LowLevel_depth]
+
+[charaTalk depthOff]
+[charaDepth V 1]
+[charaDepth S 2]
+[charaDepth A 3]
+[charaDepth U 10]
+
+[charaFadein S 0.1 50,-250]
+[wt 0.1]
+
+[scene 205400]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_255 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[cueSe Servants_403800 bac1594 0.4]
+[effect bit_talk_beam_shot01]
+[wt 0.3]
+[charaShake A 0.03 2 2 1.0]
+[wt 1.2]
+[seStop bac1594 0.7]
+[effectDestroy bit_talk_beam_shot01]
+[charaMoveScaleEase A 1.2 0.2 easeOutQuart]
+[charaMoveScaleEase S 1.4 0.2 easeOutQuart]
+[charaMoveEase A 0,30 0.2 easeOutQuart]
+[charaMoveEase S 50,-290 0.2 easeOutQuart]
+[wt 0.1]
+[cueSe Servants_701600 bac947 0.7]
+[effect bit_talk_claw_red]
+[wt 0.2]
+[charaShake A 0.03 4 4 0.4]
+[wt 1.3]
+
+＠由井正雪
+[line 9]。
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_255 3.5]
+[wt 0.4]
+[charaSpecialEffect A flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect A]
+[wt 0.7]
+[charaFadeout S 0.4]
+[wt 0.4]
+
+[charaPut V 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+大霊脈、空想樹より分断しました！[r]田安門、攻略完了です！
+[k]
+
+？1：やった……けど
+？2：でも、これって……
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.4]
+[se ad658]
+[cueSe Servants_403800 bac1574]
+[fadeMove b9ffff 0.2 0.8]
+[wait fade]
+[charaCrossFade C 4038001 0 0.2]
+[fadeMove b9ffff 0.4 0.0]
+[wait charaCrossFade C]
+[wait fade]
+[wt 0.4]
+
+＠オデュッセウス
+ああ……見えているな。[r][%1]。
+[k]
+
+[messageOff]
+[wt 0.4]
+[bgm BGM_EVENT_185 0.1]
+[charaFadein U 1.0 0,50]
+[charaMoveScale U 1.5 8.0]
+[charaMove U 0,0 8.0]
+[wt 2.4]
+
+[charaFadeout C 0.1]
+[charaPut V 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 2.6]
+
+[charaFadeout U 1.0]
+[wt 1.2]
+
+＠マシュ
+これは……空想樹の正体は……[r]こんな……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠オデュッセウス
+皆まで云わずともいい。[r]その怒り、最後まで取っておけ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠タマモキャット
+今はしっかり休むがよいぞ。[r]本番はこれからゆえな！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_185 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

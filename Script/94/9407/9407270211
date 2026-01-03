@@ -1,0 +1,510 @@
+
+
+＄94-07-27-02-1-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098124500 1 ダ・ヴィンチ]
+[charaSet B 2038000 1 オリオン]
+[charaSet C 1098182010 1 ネモ・ナース]
+[charaSet D 1098182210 1 ネモ・エンジン]
+[charaSet E 1098182110 1 ネモ・プロフェッサー]
+[charaSet F 1098181910 1 ネモ・マリーン]
+[charaSet G 1098181910 1 ネモ・マリーン]
+[charaSet H 1098181910 1 ネモ・マリーン]
+[charaSet I 1098158310 1 キャプテン]
+
+[imageSet K cut361_radar01_2 1]
+[imageSet L cut361_radar01_3 1]
+
+[charaSet N 98115000 1 通信用ノイズ1]
+[charaSet M 5009000 1 エフェクト用ダミー]
+[sceneSet O 157300 1]
+[charaScale O 1.2]
+[imageSet P back10000_fs 1]
+[charaScale P 1.5]
+[charaFilter P silhouette FFFFFF80]
+[sceneSet Q 10000 1]
+[charaScale Q 1.05]
+[sceneSet R 10000 1]
+[charaScale R 1.05]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+
+
+
+[scene 157300]
+
+[fadein black 1.0]
+[bgm BGM_MAP_17 0.5]
+[wait fade]
+
+[charaTalk off]
+[charaDepth T 4]
+[charaDepth B 4]
+[charaDepth S 5]
+
+[se ad632]
+[seVolume ad632 0 0.5]
+[se ad820]
+[seVolume ad820 0 0.5]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+[charaPut S 0,0]
+[charaEffect S bit_talk_lightning_07b]
+[charaPut T 0,-300]
+[charaEffect T bit_talk_charge_blu]
+
+[wt 2.4]
+
+[charaFace B 2]
+[wt 0.1]
+
+[se ad678]
+[wt 0.05]
+[charaMoveScale B 1.1 0.2]
+[charaMove B 0,15 0.2]
+[charaFadeout B 0.2]
+[blur motion 0.2 4 10 0.5 0.6 0.05 100]
+[wt 0.2]
+[seStop ad632 0.2]
+[seStop ad820 0.2]
+[charaEffect S 2000,2500]
+[charaEffect T 2000,2500]
+[charaEffectDestroy S bit_talk_lightning_07b]
+[charaEffectDestroy T bit_talk_charge_blu]
+[charaScale B 1.0]
+[blurOff motion 0.1]
+
+[wipeout circleIn 0.4 1.0]
+[wait wipe]
+
+[scene 10000]
+[wt 0.2]
+
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 157300]
+[wt 0.2]
+[charaFadein O 0.1 30,-240]
+[charaMove O -30,-200 10.0]
+[effectDestroy bit_talk_36]
+[fadein black 0.4]
+[wait fade]
+
+
+[se ade372]
+[wt 0.2]
+
+[effect bit_talk_arrow01br_fs 100,0]
+[wt 1.55]
+
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaFadein O 0.1 -30,-260]
+[charaMove O 30,-300 10.0]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[se ade106]
+[wt 0.4]
+[seStop ade106 0.7]
+[se ade346]
+[charaPut M 0,50]
+[charaEffect M bit_talk_rush_red_fs 0,0 H]
+[charaRollMove M 0.1 330]
+
+[wt 1.3]
+
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaPut M 2000,2500]
+[charaFadeout O 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[wt 0.1]
+
+[shake 0.05 3 3 3.5]
+[effect bit_talk_shock_wave 0,100]
+[wt 0.5]
+
+[se ad828]
+[fadeout white 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_shock_wave]
+[seStop ad828 2.0]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.3]
+
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaPut B 1]
+[charaSpecialEffect B appearanceReverse 1 0.2]
+[se ad223]
+[wt 0.8]
+
+[charaTalk on]
+[charaFace B 2]
+＠オリオン
+[f large]どぉぉぉうだぁぁぁぁぁ！！！
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_17 1.5]
+[effect bit_talk_noble_light 0,-250]
+[wt 1.5]
+
+[charaFace B 4]
+＠オリオン
+おおぅ、魔力切れ。
+[k]
+
+
+[messageOff]
+[wt 0.4]
+
+[se ad606]
+[se ad732]
+[seVolume ad732 0 0.4]
+[effect bit_talk_22]
+[charaSpecialEffect B erasureReverse 1 2.0]
+[wt 0.8]
+[seStop ad732 1.0]
+[wt 0.2]
+[effectDestroy bit_talk_noble_light]
+[effectStop bit_talk_22]
+[wt 1.4]
+
+[fadeout black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[branchQuestClear lblClear01 94064915]
+[branchQuestClear lblClear01 3001101]
+
+[label lblNotClear01]
+[scene 104100]
+[branch lblConf01]
+
+[label lblClear01]
+[scene 132900]
+
+[label lblConf01]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[se ad1]
+[charaFadein K 0.3 0,-200]
+[wt 2.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠ダ・ヴィンチ
+………………これは……！？
+[k]
+
+[messageOff]
+[charaFadeout K 0.2]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.2 1]
+[wt 0.2]
+
+＠ダ・ヴィンチ
+命中した……[r]はずだ……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad13]
+[charaPut N 0,0]
+[charaEffect N bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.2 1]
+[wt 0.4]
+＠ネモ・ナース
+オリオン霊基、ポッドへの再格納を確認。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ネモ・プロフェッサー
+はいお疲れ様～。[r]回帰軌道へ、ポッド[#遷移:せんい]開始します。
+[k]
+
+[charaFace E 4]
+＠ネモ・プロフェッサー
+……あわあ。これはえぐい……。[r]高エネルギー粒子がそこいらじゅうに。
+[k]
+
+＠ネモ・プロフェッサー
+心配ですぅー。[r]マスターたち大丈夫でしょうか……。
+[k]
+
+[charaFace E 0]
+＠ネモ・プロフェッサー
+あ、マシュ氏にも通達しなければですね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[branchQuestClear lblClear10 3000421]
+
+[label lblNotClear10]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+＠キャプテン
+……ダ・ヴィンチ？
+[k]
+
+[branch lblConf10]
+
+[label lblClear10]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+＠I：ネモ
+……ダ・ヴィンチ？
+[k]
+
+[label lblConf10]
+
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut N 2000,2000]
+
+
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+おかしい……確かに撃破した、はずだ。[r]オリオンの矢は、精確に光束の重心を砕いた。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ad1]
+[charaFadein K 0.3 0,-200]
+[wt 1.3]
+
+＠ダ・ヴィンチ
+消滅には至らないまでも、[r]的確に方向を逸らしたはず、なのに……
+[k]
+
+[messageOff]
+[wt 0.5]
+[cueSe SE_22 22_ade799 0.5]
+[charaDepth K 1]
+[charaDepth L 2]
+[charaFadein L 0.4 0,-200]
+[wt 0.7]
+[charaFadeout K 0.7]
+[wt 1.0]
+[seVolume 22_ade799 1.5 0.2]
+
+＠ダ・ヴィンチ
+光束が……変質した……！？
+[k]
+
+[messageOff]
+[seStop 22_ade799 0.2]
+[charaFadeout L 0.2]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+
+
+＠ダ・ヴィンチ
+まるで生物組織が、無数の要素に分解され、[r]再び結い上げられるように……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branchQuestClear lblClear11 3000421]
+
+[label lblNotClear11]
+
+[charaPut N 0,0]
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+＠キャプテン
+ダ・ヴィンチ！？[r]このまま射出プロセスを続けていいのか！？
+[k]
+
+＠キャプテン
+戦闘はこのまま継続か、判断を！
+[k]
+
+[branch lblConf11]
+
+[label lblClear11]
+
+[charaPut N 0,0]
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+＠I：ネモ
+ダ・ヴィンチ！？[r]このまま射出プロセスを続けていいのか！？
+[k]
+
+＠I：ネモ
+戦闘はこのまま継続か、判断を！
+[k]
+
+[label lblConf11]
+
+
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut N 2000,2000]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+[wt 1.5]
+
+[charaFace A 5]
+＠ダ・ヴィンチ
+……そうだ！　やるしかない！[bgm BGM_MAP_23 0.1][r]ありったけの霊基ポッドが要る！
+[k]
+
+
+[charaFace A 2]
+＠ダ・ヴィンチ
+まったく終わっちゃいない。[r]これは始まったばかりだ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branchQuestClear lblClear12 3000421]
+
+[label lblNotClear12]
+
+[charaPut N 0,0]
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+＠キャプテン
+了解した、状況を継続する。[r]第３クラスター、ポッド装填準備！
+[k]
+
+[branch lblConf12]
+
+[label lblClear12]
+
+[charaPut N 0,0]
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+＠I：ネモ
+了解した、状況を継続する。[r]第３クラスター、ポッド装填準備！
+[k]
+
+[label lblConf12]
+
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk depthOff]
+
+[charaDepth H 1]
+[charaDepth F 2]
+[charaDepth G 3]
+[charaDepth D 4]
+[charaDepth N 5]
+
+[charaTalk off]
+
+[charaFace F 2]
+[charaFadein F 0.1 -120,-7]
+
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+[charaFace H 2]
+[charaFadein H 0.1 120,-7]
+
+＠ネモ・マリーン
+アイアーイ！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ネモ・エンジン
+ノイズがひどい！[r]第２クラスター弾体誘導、精度確保いそげっ！
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_23 2.0]
+[wait fade]
+[soundStopAll]
+[end]

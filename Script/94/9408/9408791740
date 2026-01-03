@@ -1,0 +1,371 @@
+
+
+＄94-08-79-17-4-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 7031000 1 ジャンヌ・オルタ]
+[charaSet B 1098155400 1 黒髭]
+[charaSet C 1098275300 1 鈴鹿御前]
+[charaSet D 1098276000 1 クロエ]
+[charaSet E 1098272410 1 オベロン]
+[charaSet F 1098199300 1 マシュ]
+[charaSet G 1098274400 1 アルトリア・キャスター]
+[charaSet H 2008300 1 トリスタン]
+[charaSet I 1020300 1 ランスロット]
+[charaSet J 1007400 1 ガウェイン]
+
+[sceneSet K 147900 1]
+
+[charaSet X 98115000 1 エフェクト用]
+
+[scene 196900]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_124 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+……事情は分かったわ。
+[k]
+
+＠ジャンヌ・オルタ
+なんかもういい加減にしろっていうくらい[r]込み入った状況だったのね。
+[k]
+
+[charaFace A 0]
+
+＠ジャンヌ・オルタ
+でもこれ、どうするの？
+[k]
+
+＠ジャンヌ・オルタ
+大気の精霊とか地球規模の話だし、[r]そもそも『みんな仲良く』なんて無理な話よ？
+[k]
+
+＠ジャンヌ・オルタ
+それこそ、[r]地球上じゃ誰も成しえた事がないんだから。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠黒髭
+うーん、拙者の海賊船なら達成してますがなあ。[r]30人くらいの気の合う仲間たちですから！
+[k]
+
+[charaFace B 6]
+
+＠黒髭
+まあ気を抜いたヤツには[r]不意に銃で脚撃ちますけどね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+
+＠鈴鹿御前
+ワンジナが『大気の精霊』で[r]あるのがネックなのよね……。
+[k]
+
+＠鈴鹿御前
+視点が高すぎるから『みんな仲良く』の対象が[r]地球全土になっちゃってる。
+[k]
+
+＠鈴鹿御前
+どこの神霊だって、範囲に入れるのは[r]自分の[#世界:テクスチャ]だけだっていうのにさ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠クロエ
+ワンジナから見たらわたしの競争意識も[r]『争い』になっちゃうっぽいし……
+[k]
+
+＠クロエ
+『みんな仲良く』っていう条件、[r]どうやって達成すればいいんだろ。
+[k]
+
+？1：（……そうだ、オベロンは確か……）
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_124 1.0]
+[cueSe SE_22 22_ad1177]
+[seVolume 22_ad1177 0 0.5]
+[fadeout white 0.6]
+[wait fade]
+
+
+[cameraFilter gray]
+[charaFadeout D 0.1]
+
+[subCameraOn 1]
+[charaLayer E sub #A]
+[charaLayer K sub #A]
+
+[subCameraFilter #A maskEdge&gray cut359_mask05 3 0,0,0,255 0]
+
+[charaTalk depthOff]
+[charaDepth K 1]
+[charaDepth E 2]
+
+[charaScale K 2.0]
+[charaScale E 1.4]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 -20,130]
+[charaFadein K 0.1 -1215,-370]
+[subRenderFadein #A 0.1 200,-150]
+
+[scene 	147900]
+[wt 0.5]
+
+[fadein white 0.6]
+[wait fade]
+[wt 0.2]
+
+＠オベロン
+[#これは解決できない問題だからな]。[r]必要なのは解決じゃない。希望を示す事だ。
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[wait fade]
+
+[charaFadeout K 0.1]
+[charaFadeout E 0.1]
+[subRenderFadeout #A 0.1]
+[charaLayer K normal]
+[charaLayer E normal]
+[subCameraOff]
+[cameraFilter normal]
+[scene 196900]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+
+
+？1：[line 3]そうか。やるべき事が違うんだ！
+
+？！
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠マシュ
+先輩？[r]何か思いついたのですか？
+[k]
+
+？1：[&ああ:うん]、これしかない！
+
+？2：みんなで、一つの作品を作[&るんだ:ろう]！
+
+？！
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[bgm BGM_MAP_104 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth D 2]
+[charaFace G 14]
+[charaFace D 1]
+[charaFadeinFSL G 0.1 0]
+[charaFadeinFSR D 0.1 2]
+
+＠アルトリア・キャスター＆クロエ
+！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠マシュ
+サークルの皆さんによる共同作業[line 3][r]合同誌ですね！
+[k]
+
+＠マシュ
+確かに、それなら『みんな仲良く』の結晶です！[r]もしそれをワンジナさんに届ける事ができれば[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠アルトリア・キャスター
+『自分の願いは忘れられていない。[r]　ちゃんとみんな、今もそう思っている』
+[k]
+
+＠アルトリア・キャスター
+そう伝わるってコトだ！
+[k]
+
+＠アルトリア・キャスター
+人間から争いはなくせない。それでも、[r]『仲良くなりたい』っていう気持ちは伝えられる！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+でもワンジナには言葉は通じないのよ？
+[k]
+
+＠ジャンヌ・オルタ
+合同誌を作っても『意味が分からない』で[r]終わるんじゃ……
+[k]
+
+？1：分かる方法が一つだけある[&:よ]。壁画だ[&:よ]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠トリスタン
+洞窟にあった壁画ですね。[r]確かに、あれだけがワンジナの存在証明です。
+[k]
+
+＠トリスタン
+ランスロット卿。ガウェイン卿。[r]至急、大きく見栄えのする岩盤を用意しましょう。
+[k]
+
+＠トリスタン
+あの洞窟に置ける程度で、[r]誰もが寄せ書きのできる、ボードの如き岩盤を。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠ランスロット
+それは力仕事になるな。[r]我々向きのクエストだ。そうだろう、ガウェイン卿？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠ガウェイン
+無論。私が岩盤を砕き、運び、[r]ランスロット卿のアロンダイトで研磨する。
+[k]
+
+＠ガウェイン
+完璧な仕事をお見せしますとも。[r]ところでトリスタン卿は？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+
+＠トリスタン
+彫刻に必要な素材を集めてきます。[r]描き手によっては[#顔料:がんりょう]も必須です……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+[line 3]いいじゃない。乗ったわ。[r]岩盤に寄せ書きなんて、そうそうできる事じゃない！
+[k]
+
+[charaFace A 1]
+
+＠ジャンヌ・オルタ
+黒髭！　できるだけ多くのサーヴァントに[r]声をかけにいくわよ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠黒髭
+ラジャー！　こんなビッグイベント、[r]参加しなきゃ海賊の名折れってもんだ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠アルトリア・キャスター
+となると、後は作業場の確保だね。[r]ワンジナの壁画があったのはあそこだから[line 3]
+[k]
+
+[charaFace G 2]
+
+＠アルトリア・キャスター
+みんなで盛大に押しかけよっか！[r]バーヴァン・シー、どんな顔するか楽しみ！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStopEnd BGM_MAP_104 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

@@ -1,0 +1,483 @@
+
+
+＄94-09-95-11-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098298120 1 エレシュキガル]
+[charaSet B 1098276910 1 マシュ]
+[charaSet C 3055000 1 ニキチッチ]
+[charaSet D 1098297910 1 カルナ]
+[charaSet E 1098298510 1 テノチティトラン]
+[charaSet F 7046000 1 ドゥリーヨダナ]
+[charaSet G 2033000 1 アシュヴァッターマン]
+[charaSet H 9011000 1 カレン]
+[charaSet I 1098297911 1 カルナ（演出用）]
+
+[sceneSet U 10000 1]
+[charaSet V 2033000 1 エフェクト用]
+[sceneSet W 27700 1]
+[sceneSet X 221400 1]
+[sceneSet Y 168200 1]
+[sceneSet Z 221400 1]
+
+[cameraMove 0.1 0,0 1.01]
+[charaTalk depthOff]
+[charaDepth X 1]
+[charaDepth Y 2]
+[charaDepth Z 4]
+[charaDepth W 5]
+[charaDepth V 3]
+[charaDepth U 5]
+[charaDepth G 9]
+[charaScale X 1.2]
+[charaScale Y 1.2]
+[charaScale Z 1.2]
+[charaScale W 1.2]
+[charaScale G 1.2]
+[charaScale U 1.2]
+
+[charaFadein X 0.1 -50,-200]
+
+[subCameraOn 1]
+[charaLayer H sub #A]
+[charaLayer Z sub #A]
+[subCameraFilter #A maskEdge cut359_mask16 4 255,255,255,255 0]
+[charaDepth H 2]
+[charaDepth Z 1]
+[charaScale H 1.2]
+[charaScale Z 1.2]
+[charaFace H 0]
+[charaFadein H 0 0,150]
+[charaFadein Z 0 0,-100]
+
+[scene 221400]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_113 0.1]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 0,-25]
+[wt 0.2]
+[charaShake G 0.03 1 1 1.5]
+[charaMove G 0,-28 1.5]
+[wt 2.1]
+[charaFace G 2]
+[charaMoveReturn G 0,-31 0.3]
+[wt 0.2]
+[cueSe SE_24 24_ade1087 0.4]
+[wt 0.2]
+[charaFaceFade G 5 0.2]
+[wt 0.2]
+[seStop 24_ade1087 0.3]
+[wt 0.4]
+[se ad864]
+[seVolume ad864 0 0.5]
+[seStop ad864 2.0]
+[se ad299]
+[charaFadein Y 0.3 0,-280]
+[charaShake G 0.04 2 2 3.0]
+[charaShake Y 0.04 2 2 3.0]
+[charaEffect V bit_talk_explosion_triple02_bk]
+[wt 1.0]
+[se ad640]
+[seStop ad640 2.5]
+[seStop ad299 2.5]
+[wt 2.4]
+[charaFadeout Y 0.7]
+[wt 0.7]
+
+＠アシュヴァッターマン
+っ、ハァッ……！
+[k]
+
+[messageOff]
+[charaFace G 2]
+[charaMoveReturn G 0,-31 0.3]
+[cueSe SE_24 24_ade1087 0.4]
+[wt 0.2]
+[cueSe SE_24 24_ade1087 0.4]
+[wt 0.2]
+[charaFaceFade G 5 0.2]
+[wt 0.2]
+[seStop 24_ade1087 0.3]
+[wt 0.4]
+[charaMoveEase G 0,-40 2.6 easeOutCubic]
+[charaEffect V bit_talk_marblebg_fs]
+[se ad418 0]
+[seVolume ad418 1.0 1.0]
+[wt 2.0]
+[charaFadeout X 0.1]
+[wt 0.6]
+[seStop ad418 1.5]
+[charaDepth X 4]
+[charaFadein X 0.4 -50,-200]
+[wt 0.7]
+[charaPut V 2500,2500]
+[charaEffectDestroy V bit_talk_marblebg_fs]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠アシュヴァッターマン
+……ゴフッ！　ッ、ハーーーーッ～～！[charaFaceFade G 2 0.2][se ad7 0.7][charaMoveEase G 0,-25 0.3 easeOutExpo][charaShake G 0.04 3 3 0.3][wt 0.2][r]舐めんなよ、クソ、がっ……！
+[k]
+
+[messageOff]
+[charaTalk G,F]
+[charaFadeout G 0.4]
+[charaFadeout X 0.4]
+[wt 0.4]
+
+＠ドゥリーヨダナ
+うおお、いけるぞアシュヴァッターマン！
+[k]
+
+＠ドゥリーヨダナ
+踏ん張れ！　できる、おまえならできる！[r]おまえは強いヤツだ！　わし様は知っとるぞ！
+[k]
+
+[messageOff]
+[charaTalk F,G]
+[charaFace G 7]
+[charaFadein G 0.3 -100,-25]
+[charaFadein X 0.3 -50,-200]
+[wt 0.3]
+[charaFadeout F 0.1]
+
+＠アシュヴァッターマン
+ぐっ、こう、なりゃ[line 3]！
+[k]
+
+[charaFace G 0]
+
+＠アシュヴァッターマン
+なあ、店主よぅ。[r]ちっと立ち上がっても構わねえか？
+[k]
+
+＠アシュヴァッターマン
+辛いものを食えば身体を[r]動かしたくなっちまうことだってあるだろ？
+[k]
+
+[messageOff]
+[charaTalk H]
+[subRenderFadeinFSR #A 0.4 480,-150]
+[subRenderMoveFSR #A 380,-150 0.4]
+[wt 0.4]
+
+＠カレン
+理解します。[r]皿を手放さなければよしとしましょう。
+[k]
+
+[messageOff]
+[charaTalk G]
+[subRenderMoveFSR #A 480,-150 0.4]
+[subRenderFadeout #A 0.3]
+
+[charaPut U 0,0]
+[charaFace G 1]
+[charaFadeTime U 0.2 0.5]
+
+＠アシュヴァッターマン
+（よし、[#言質:げんち]は取った）
+[k]
+
+[messageOff]
+[charaFadeout U 0.2]
+[wt 0.1]
+
+[charaFadeout H 0.1]
+[charaFadeout Z 0.1]
+[charaLayer H normal]
+[charaLayer Z normal]
+[subCameraOff]
+
+[se ad7]
+[charaMoveEase G -100,0 0.4 easeOutSine]
+[charaMoveEase X -50,-250 0.4 easeOutSine]
+[wt 0.4]
+[charaFaceFade G 0 0.1]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠アシュヴァッターマン
+……旦那、マスター。[r]頼みがある。
+[k]
+
+＠アシュヴァッターマン
+こいつはなかなかの強敵だ。[r]だが負ける気はねぇ。
+[k]
+
+[charaFace G 2]
+
+＠アシュヴァッターマン
+もっと熱く、もっともっと熱く、[r]俺はこの身に流れる怒りを[#滾:たぎ]らせて対抗する！
+[k]
+
+[charaFace G 6]
+
+＠アシュヴァッターマン
+だから[line 3][#俺に攻撃をしかけろ]！
+[k]
+
+＠アシュヴァッターマン
+戦闘状態の高揚をもって、[r]俺はこの強敵を討ち果たすだろう！
+[k]
+
+[messageOff]
+[charaTalk G,A]
+[charaFadeout G 0.4]
+[charaFadeout X 0.4]
+[wt 0.4]
+
+＠エレシュキガル
+本気？　そこまでするの？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ニキチッチ
+あれは本気の顔だぞ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠ドゥリーヨダナ
+アシュヴァッターマンは[#猪突猛進:ちょとつもうしん]だけが[r]取り柄の破壊者ではない。
+[k]
+
+＠ドゥリーヨダナ
+知略にも長けた一流の軍事巧者だ。[r]その奴が言うのであれば[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠カルナ
+それは本当に必要なことなのだろう。
+[k]
+
+[charaFace D 2]
+
+＠カルナ
+わかった。[r]いくぞ。
+[k]
+
+[messageOff]
+[charaTalk D,I]
+[se ad442]
+[charaPut I 0,0]
+[charaFace I 2]
+[charaFadeTime I 0.2 1.0]
+[charaMove D 0,-5 0.2]
+[charaMove I 0,-5 0.2]
+[wt 1.0]
+
+？1：判断が早い……！
+？2：でも、それが絶対に必要なら……
+？！
+
+[charaFadeout D 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ドゥリーヨダナ
+足りなければわし様も手伝ってやらんでもないが、[r]ま、大丈夫だろ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ニキチッチ
+任せておけ、オレもやろう！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠テノチティトラン
+……なんだかおかしな話になりましたが、[r]必要なら仕方がありません、ね。
+[k]
+
+＠テノチティトラン
+自らを傷つけて鼓舞する、というのも[r]分からないでもないし。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[subCameraOn 1]
+[charaLayer I sub #A]
+[charaLayer Z sub #A]
+[subCameraFilter #A maskEdge cut359_mask20 5 227,48,55,255 0]
+[charaDepth I 2]
+[charaDepth Z 1]
+[charaScale I 1.3]
+[charaScale Z 1.3]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0 -30,250]
+[charaFadein Z 0 0,-30]
+[subRenderFadein #A 0.2 0,-190]
+[subRenderMove #A 0,-240 0.2]
+[wt 1.0]
+
+[se ad1006 0.5]
+[charaFace I 5]
+[charaMoveScaleEase I 1.8 0.4 easeOutCubic]
+[charaMoveEase I -50,300 0.4 easeOutCubic]
+[subRenderFadeout #A 0.3]
+[charaDepth U 10]
+[charaFadein U 0.3 0,-200]
+[wt 0.3]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.3 50,0]
+[charaFadein X 0.3 -50,-280]
+
+[se ad865]
+[effect bit_talk_beam_slash_01]
+[wt 0.7]
+[charaFadeout U 0.2]
+[charaMoveEase G 0,0 0.4 easeOutCubic]
+[se ad671]
+[seStop ad671 1.0]
+[wt 0.5]
+[charaFadeout I 0.1]
+[charaFadeout Z 0.1]
+
+＠アシュヴァッターマン
+へっ、さすがカルナだ、鋭いぜ！[r]だが、それこそが！
+[k]
+
+[bgmStop BGM_BATTLE_113 1.0]
+[charaFace G 2]
+
+＠アシュヴァッターマン
+うおお、いただきます！
+[k]
+
+[messageOff]
+
+[cueSe SE_23 23_ad1348]
+[charaMoveReturn G 0,-8 0.3]
+[wt 0.3]
+[charaMoveReturn G 0,-8 0.3]
+[wt 0.3]
+[charaMoveReturn G 0,-8 0.3]
+[wt 0.3]
+[charaMoveReturn G 0,-8 0.3]
+[wt 0.3]
+[se ade393 0]
+[seVolume ade393 0.6 1.0]
+[charaFadein W 0.6 -50,-280]
+[charaPut V 0,-500]
+[charaDepth V 6]
+[charaBackEffect V bit_talk_haboob_03]
+[charaMoveReturn G 0,-8 0.3]
+[wt 0.3]
+[charaMoveReturn G 0,-8 0.3]
+[wt 0.3]
+[charaMoveReturn G 0,-8 0.3]
+[wt 0.3]
+[charaMoveReturn G 0,-8 0.3]
+[wt 0.3]
+[charaMoveReturn G 0,-8 0.3]
+[wt 0.3]
+[charaMoveReturn G 0,-8 0.3]
+[wt 0.3]
+
+[bgm BGM_EVENT_63 0.1]
+[subCameraOn 1]
+[charaLayer B sub #A]
+[charaLayer Z sub #A]
+[subCameraFilter #A maskEdge cut359_mask16 4 255,255,255,255 0]
+[charaDepth B 2]
+[charaDepth Z 1]
+[charaScale B 1.2]
+[charaScale Z 1.2]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0 -30,150]
+[charaFadein Z 0 0,-100]
+[subRenderFadeinFSR #A 0.4 480,-150]
+[subRenderMoveFSR #A 380,-150 0.4]
+[wt 0.8]
+
+＠マシュ
+信じられません！[r]スプーンが進んでいます……！
+[k]
+
+[messageOff]
+[charaTalk G]
+[cameraMoveEase 0,-55 0.3 easeOutQuart 1.2]
+[subRenderMoveEaseFSR #A 1000,-150 0.8 easeOutQuart]
+[subRenderFadeout #A 0.3]
+[se ad14 0]
+[seVolume ad14 0.3 0.8]
+[wt 0.3]
+[charaFadeout B 0.1]
+[charaFadeout Z 0.1]
+
+[charaFace G 5]
+
+＠アシュヴァッターマン
+まだまだ、[r]どんどん来い！
+[k]
+
+[charaFace G 6]
+
+＠アシュヴァッターマン
+大丈夫だ、ちっと当たったところで死にゃしねぇ！
+[k]
+
+[charaFace G 2]
+
+
+＠アシュヴァッターマン
+この戦い[line 3]勝つぞ！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_63 0.4]
+[seStop ade393 0.4]
+[seStop ad14 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

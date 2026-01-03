@@ -1,0 +1,496 @@
+
+＄94-06-88-04-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1098124510 1 ダ・ヴィンチ]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 6027000 1 武則天]
+[charaSet D 3032000 1 エレシュキガル]
+[charaSet E 3040001 1 ラムダ]
+[charaSet F 1053900 1 徴側]
+[charaSet G 1053910 1 徴弐]
+
+[ifClear 60068831]
+[charaSet H 1098237800 1 コン]
+[charaSet I 1098237800 1 コン]
+[charaSet J 1098237800 1 コン]
+[flag Seisaku_B 1]
+
+[ifClear 60068832]
+[charaSet H 1098237810 1 コン]
+[charaSet I 1098237810 1 コン]
+[charaSet J 1098237810 1 コン]
+[flag Seisaku_B 2]
+
+[ifClear 60068833]
+[charaSet H 1098237820 1 コン]
+[charaSet I 1098237820 1 コン]
+[charaSet J 1098237820 1 コン]
+[flag Seisaku_B 3]
+
+[else]
+[charaSet H 1098237800 1 コン]
+[charaSet I 1098237800 1 コン]
+[charaSet J 1098237800 1 コン]
+[flag Seisaku_B 1]
+
+[endIf]
+
+[charaSet K 1098229500 1 ヤドカリ]
+[charaSet L 3006001 1 弁慶]
+[charaSet M 3014001 1 胤舜]
+
+[charaSet N 1098231700 1 コン]
+[charaSet O 1098231700 1 コン]
+
+[charaSet P 98115000 1 エフェクト用ダミー]
+[charaSet Q 98115000 1 エフェクト用ダミー]
+[charaSet R 98115000 1 エフェクト用ダミー]
+[charaSet S 98115000 1 エフェクト用ダミー]
+
+[charaPut S 2000,2000]
+[charaEffect S bit_talk_10_LowLevel]
+
+[charaDepth R 8]
+[charaDepth K 7]
+[charaDepth N 5]
+[charaDepth O 4]
+
+[charaDepth F 5]
+[charaDepth G 4]
+
+[scene 147400]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk off]
+
+[charaFace H 5]
+[charaFadein H 0.1 1]
+[charaFace I 5]
+[charaFadeinFSR I 0.1 2]
+[charaFace J 5]
+[charaFadeinFSL J 0.1 0]
+[wt 1.0]
+
+[charaMove H 0,15 0.2]
+[charaMoveScale H 1.1 0.2]
+[charaMoveFSR I 236,15 0.2]
+[charaMoveScale I 1.1 0.2]
+[charaMoveFSL J -236,15 0.2]
+[charaMoveScale J 1.1 0.2]
+[se bac1]
+
+[charaFadeout H 0.2]
+[charaFadeout I 0.2]
+[charaFadeout J 0.2]
+[wt 0.2]
+
+[charaScale H 1.0]
+[charaScale I 1.0]
+[charaScale J 1.0]
+
+[branch lblClear_B3 Seisaku_B 3]
+
+[effect bit_talk_kengekiall02_fs]
+[wt 0.2]
+[se ad1013]
+[se ad1015]
+[wt 0.3]
+[se ad687]
+[wt 0.1]
+[se bac139]
+[effect bit_talk_14]
+[shake 0.05 2 2 0.4]
+[wt 1.2]
+
+[branch lblConf]
+
+
+[label lblClear_B3]
+
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF50]
+[charaPut R -256,-20]
+[charaEffect R bit_talk_13]
+[wt 0.1]
+[cueSe Battle bac15]
+[wt 0.1]
+
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF50]
+[charaPut P 256,20]
+[charaEffect P bit_talk_13]
+[wt 0.1]
+[cueSe Battle bac16]
+[wt 0.2]
+
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF50]
+[charaPut Q 1]
+[charaEffect Q bit_talk_13]
+[cueSe Servants_301400 bac507 0.7]
+[shake 0.05 2 2 0.4]
+[wt 1.2]
+
+[branch lblConf]
+
+[label lblConf]
+
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[wt 0.5]
+[se ad952]
+[charaPut R 0,0]
+[charaEffect R bit_talk_kira_lp]
+[wt 0.3]
+[charaShake K 0.03 4 4 0.3]
+[wt 1.0]
+[seStop ad952 0.5]
+
+[cueSe SE_22 22_ade699]
+
+[charaFadeout K 0.5]
+
+[charaFace N 0]
+[charaFadein N 0.2 1]
+[charaFace O 0]
+[charaFadein O 0.2 1]
+[charaMove N 126,0 0.3]
+[charaMove O -126,0 0.3]
+[wt 1.8]
+
+[charaEffectStop R bit_talk_kira_lp]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[wt 0.2]
+
+[charaEffectDestroy R bit_talk_kira_lp]
+
+[charaPut S 0,0]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_3 1.5]
+
+＠ダ・ヴィンチ
+喰われていたコンの解放確認！[r]どうやら最後の一匹を始末できたみたいだ。
+[k]
+
+[charaFadeout A 0.1]
+[charaPut S 2000,2000]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaFace I 0]
+[charaFadeinFSR I 0.1 2]
+[charaFace J 0]
+[charaFadeinFSL J 0.1 0]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠I：コン
+かった？
+[k]
+
+[clear]
+
+[charaTalk J]
+[charaFace J 1]
+
+＠J：コン
+わはー！　だいしょうり！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠徴側
+勝っ、た……？
+[k]
+
+[charaFace F 6]
+
+＠徴側
+ふう……よかった……。
+[k]
+
+[charaTalk G]
+[charaFace G 9]
+
+＠徴弐
+そうだよ、勝ったんだよ姉さん！[r]この場所は取り戻せたんだ！
+[k]
+
+[charaTalk F]
+[charaFace F 1]
+
+＠徴側
+……うん！
+[k]
+
+？1：お疲れ様！
+？2：やったね！
+？！
+
+[charaFace F 0]
+[charaFace G 1]
+
+＠徴側
+皆さんには何とお礼を言えばいいのか。
+[k]
+
+＠徴側
+ここにいた水怪の正体に、武器作り……[r]頼ってばかりでした。
+[k]
+
+＠徴側
+皆さんがいなければ、とてもこうはいかなかったでしょう。[r]ありがとうございました！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠武則天
+くっふっふー！　素直でよい！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル
+冥界の女神がわざわざ地上に上がってまで[r]協力してあげているのです。
+[k]
+
+＠エレシュキガル
+失敗などあり得ません。というか、[r]もともと国造り、土地耕しは得意技です。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠ラムダ
+フフ。もうそろそろ、
+[k]
+
+＠ラムダ
+リヴァイアサンとコンたちがバックスケーターとして[r]共に踊り狂う夢のステージの構想が完成しそう。
+[k]
+
+＠ラムダ
+どう？　楽しみになってきたんじゃない？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 1]
+[charaFadein M 0.1 1]
+
+＠胤舜
+助っ人の我々も役目を果たせたようで何よりだ。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠弁慶
+ええ。しかし、蟹坊主の亜種とは……[r]ここは日本の近海なのですかな？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+さて、どうだろう。[r]相変わらず座標情報は不明瞭なんだ。
+[k]
+
+＠ダ・ヴィンチ
+夜になっても空には薄い霧がかかって星は出ないし、[r]地理的なヒントはまるでなし。
+[k]
+
+[charaFace A 0]
+
+＠ダ・ヴィンチ
+ま、おいおいわかってくるとは思うけどね。
+[k]
+
+[charaFace A 26]
+
+＠ダ・ヴィンチ
+何せこれは最初の一歩。[r]まだ戦いは続くんだ。
+[k]
+
+[charaFadeout A 0.1]
+[charaPut S 2000,2000]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠徴側
+……その通りです。今回の勝利は、[r]この島の一部分が取り返せただけにすぎません。
+[k]
+
+＠徴側
+まだ大部分が水怪たちに奪われたままです。
+[k]
+
+＠徴側
+すぐにとはいかないでしょうが、この地域を足がかりに、[r]また次の戦端を開かねばならないと思います。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル
+倒さなければならない、[r]また別の水怪たちがいるというわけね。
+[k]
+
+＠エレシュキガル
+でも問題はないでしょう。今回の戦いで、あのヤドカリに[r]食べられていたコンたちは戻ってきたのだし？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠徴弐
+……うん。多分、コンがとどめを刺さないと[r]駄目なルールは変わらない。
+[k]
+
+＠徴弐
+コンの数が増えたなら、それだけ有利になる……[wt 0.7][charaFace G 7][r]かも、しれない。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+コン自体は、やっぱり戦力と数えられるような[r]レベルじゃないからね。
+[k]
+
+＠ダ・ヴィンチ
+あくまでとどめが楽になるって話。
+[k]
+
+＠ダ・ヴィンチ
+引き続き、まずは我々が[r][#矢面:やおもて]に立って頑張っていこう！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+新しい地域を解放したことで、[r]新しい採集ゾーンを発見できるかもしれません。
+[k]
+
+＠マシュ
+カルデアからの助っ人さんたちも[r]送り込む準備は続けています。
+[k]
+
+＠マシュ
+しっかりと足場を固めつつ、[r]次のエリアを攻略する準備を進めていきましょう！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaPut S 2000,2000]
+
+
+[scene 10000]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_129 0.1]
+
+＠
+想定外事象、発生。[r]されど。
+[k]
+
+＠
+餌も、それを喰らう者らも。[r]絶えることはない。
+[k]
+
+＠
+[line 3]養殖は、続く。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_129 2.0]
+[wait fade]
+[soundStopAll]
+[end]

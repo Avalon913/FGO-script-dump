@@ -1,0 +1,964 @@
+
+＄94-07-36-02-4-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet C 99502600 1 マシュ]
+[charaSet D 98002000 1 フォウ]
+[charaSet E 10010300 1 蘆屋道満]
+[charaSet F 6026300 1 燕青]
+[charaSet G 5043300 1 アスクレピオス]
+[charaSet H 1054000 1 ガレス]
+[charaSet I 6043000 1 オルトリンデ]
+[charaSet J 6044000 1 ヒルド]
+[charaSet K 6045000 1 スルーズ]
+[charaSet M 28003000 1 レディ・アヴァロン]
+
+[charaSet A 3001000 1 クー・フーリン]
+[charaSet B 3003001 1 ヴラド三世]
+[charaSet L 3002000 1 ディルムッド]
+[charaSet N 3004000 1 カルナ]
+[charaSet O 10011000 1 バゼット]
+
+[charaSet P 98115000 1 エフェクト用ダミー]
+[charaSet Q 98115000 1 エフェクト用ダミー]
+[charaSet S 98115000 1 エフェクト用ダミー]
+
+[imageSet T back10000 1 1]
+[charaScale T 1.4]
+
+
+[charaDepth T 1]
+
+[charaPut S 2000,2000]
+
+[charaSet U 98115000 1 エフェクト用ダミー]
+[charaSet V 98115000 1 エフェクト用ダミー]
+[charaSet W 98115000 1 エフェクト用ダミー]
+[charaPut U 1200,1200]
+[charaPut V 1200,1200]
+[charaPut W 1200,1200]
+
+[scene 159900]
+[charaEffect U bit_talk_presage]
+[charaEffect V bit_talk_presage]
+[charaEffect W bit_talk_presage]
+[wt 1.0]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaPut U 1]
+[charaPut V 350,0]
+[charaPut W -350,0]
+[shake 0.05 0 2 2.0]
+
+[se ad14]
+[seVolume ad14 0 0.6]
+[wt 1.0]
+[se bac255]
+[wt 1.0]
+
+[se ade409]
+[wt 1.0]
+[seStop bac255 1.0]
+[seStop ad14 1.0]
+[wt 1.0]
+[charaPut U 1200,1200]
+[charaPut V 1200,1200]
+[charaPut W 1200,1200]
+
+[charaTalk M]
+[charaFace M 5]
+[charaFadein M 0.1 1]
+[se ad476]
+[charaPut S 76,-35]
+[charaEffect S bit_talk_lance_light]
+[wt 2.0]
+[seStop ad476 0.4]
+[charaFace M 2]
+[wt 0.2]
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaPut S 1200,1200]
+[charaEffectStop S bit_talk_lance_light]
+[charaEffect S bit_talk_10_LowLevel]
+[wt 0.2]
+
+[effect bit_talk_throwing]
+[se bac311]
+[wt 0.2]
+[fowardEffect bit_talk_throwing 0,0 H]
+[se bac311]
+[wt 0.3]
+[charaPut P 0,0]
+[charaEffect P bit_talk_14]
+[se bac310]
+[wt 0.3]
+
+[cueSe SE_22 22_ade777]
+[charaPut U 1]
+[charaPut V 350,0]
+[charaPut W -350,0]
+[wt 0.4]
+[fadeout white 0.4]
+[wait fade]
+[charaEffectStop U bit_talk_presage]
+[charaEffectStop V bit_talk_presage]
+[charaEffectStop W bit_talk_presage]
+[fadein white 1.0]
+[wait fade]
+[wt 0.6]
+
+[charaTalk M]
+[charaFace M 5]
+[charaFadein M 0.1 1]
+
+[charaPut Q 0,0]
+[charaEffect Q bit_talk_magic_circle]
+[cueSe SE_21 21_ad1108]
+[seVolume 21_ad1108 0 0.6]
+[wt 1.0]
+[charaFace M 2]
+
+＠レディ・アヴァロン
+ごめん！[r]ごめんねお花さんたち！
+[k]
+
+＠レディ・アヴァロン
+球根にまで一度戻すけど、[r]またどこかで植えてあげるから[line 3]さよなら！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.8]
+[cueSeStop 21_ad1108 0.5]
+[charaEffectStop Q bit_talk_magic_circle]
+[wt 0.3]
+
+[fadeout white 0.3]
+[se bac231]
+[wait fade]
+
+[charaEffectDestroy Q bit_talk_magic_circle]
+[wt 0.3]
+
+[fadein white 0.5]
+[wait fade]
+
+[wt 0.4]
+
+？1：さよなら……
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠ガレス
+さよなら！！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+？2：本当に花、咲くの……？
+
+[charaFace M 4]
+
+＠レディ・アヴァロン
+う、うん。そのはずなんだけどね？
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠燕青
+どうせあれでしょ？[r]動物の血を吸って咲く花、とかじゃないの？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠レディ・アヴァロン
+（そういえばそうかもという顔）
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠燕青
+（マジかよという顔）
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[se ad442]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+[charaFace A 0]
+
+＠クー・フーリン
+……なんだ、アンタ球根に戻せちまうのか。
+[k]
+
+＠クー・フーリン
+となると流石に徒労だな。[r]どうする？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ヴラド三世
+花が咲かなかったのは残念だが、[r]まあ仕方あるまい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 4]
+[charaFadein O 0.1 1]
+
+＠バゼット
+依頼人が手ずから取りやめてしまった以上、[r]続ける道理はないですね。
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 4]
+[charaFadein N 0.1 1]
+
+＠カルナ
+……そうだな。
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠クー・フーリン
+でもバイト代はしっかりいただくぜ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 1]
+[charaFadein M 0.1 1]
+
+＠レディ・アヴァロン
+は～～い！[r]ちゃんと[#ＱＰ:お給金]は払うとも、ごめんね！
+[k]
+
+＠レディ・アヴァロン
+カルデアのマスターと、みんなも！[r]ありがとうアンドお騒がせしちゃってごめん！
+[k]
+
+？1：これで何とかなるのかな？
+？2：事態解決かな！
+
+？！
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠マシュ
+そうですね。[r]これでエリアを荒らす要因は消えたはずです！
+[k]
+
+＠マシュ
+様子を見てみるのはどうでしょう？
+[k]
+
+[charaPut S 2000,2000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠ヒルド
+賛成～！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+＠スルーズ
+上空からも観察しておきましょうか？
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠燕青
+いいんじゃねえ？
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[wt 1.5]
+
+＠
+[line 3]フラワーパーク。
+[k]
+
+＠
+氷の花、幻の花、そして本物の植物から成る園。[r]元々、完成度の高い美しいエリアではある。
+[k]
+
+＠
+なので、危険さえなくなれば……
+[k]
+
+[messageOff]
+
+[charaSet N 1098243800 1 ホッキョクグマ（親）]
+[charaSet O 1098243900 1 ホッキョクグマ（子）]
+[charaSet P 1098244000 1 ハシブトウミガラス]
+[charaSet Q 1098244000 1 ハシブトウミガラス]
+[charaSet R 1098244000 1 ハシブトウミガラス]
+[charaSet A 1098244000 1 ハシブトウミガラス]
+[charaSet B 1098244000 1 ハシブトウミガラス]
+
+
+[scene 159800]
+[wt 1.5]
+
+[fadein black 1.0]
+
+
+[cueSe SE_21 21_ad1079]
+[seVolume 21_ad1079 0 0]
+[seVolume 21_ad1079 1.0 0.6]
+[wait fade]
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth N 3]
+[charaDepth O 4]
+[charaDepth P 6]
+[charaDepth Q 7]
+[charaDepth R 8]
+[charaDepth A 4]
+[charaDepth B 3]
+
+[charaFace N 0]
+[charaFadein N 0.4 150,0]
+[charaFace O 0]
+[charaFadein O 0.4 350,0]
+[charaMove N 100,0 0.5]
+[charaMove O 300,0 0.5]
+[wt 1.0]
+[bgm BGM_EVENT_157 0.1]
+[charaMoveReturn N 100,-10 0.5]
+[wt 1.0]
+[charaFace O 1]
+[wt 1.0]
+[charaMove N 50,0 0.5]
+[charaMove O 250,0 0.5]
+[wt 0.2]
+[charaFadeout N 0.4]
+[charaFadeout O 0.4]
+[wt 1.0]
+
+[charaFace B 0]
+[charaFadein B 0.1 800,0]
+[charaFace A 0]
+[charaFadein A 0.1 600,0]
+[charaFace P 0]
+[charaFadein P 0.1 400,0]
+[charaFace Q 0]
+[charaFadein Q 0.1 200,0]
+[charaFace R 0]
+[charaFadein R 0.1 0,0]
+
+[charaMove B 400,0 2.0]
+[charaMove A 200,0 2.0]
+[charaMove P 0,0 2.0]
+[charaMove Q -200,0 2.0]
+[charaMove R -400,0 2.0]
+[charaShake A 0.3 1 2 2.0]
+[charaShake B 0.3 1 2 2.0]
+[charaShake P 0.3 1 2 2.0]
+[charaShake Q 0.3 1 2 2.0]
+[charaShake R 0.3 1 2 2.0]
+[wt 1.6]
+[charaFadeout B 0.4]
+[charaFadeout A 0.4]
+[charaFadeout P 0.4]
+[charaFadeout Q 0.4]
+[charaFadeout R 0.4]
+[wt 0.8]
+
+[seStop 21_ad1079 1.0]
+
+
+[charaTalk on]
+[charaPut S 0,0]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+これは[line 3]
+[k]
+
+[charaPut S 2000,2000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠ヒルド
+やったね、お客さん戻ってきてくれてる！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠ガレス
+露店にもどんどんお客さんが寄ってます！[r]やりましたね、マスター！
+[k]
+
+？1：……よし！
+？2：これはいけるのでは！
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 1]
+[charaFadein M 0.1 1]
+
+＠レディ・アヴァロン
+うんうん、いけるよ！[r]みんな[line 3]本当にありがとうね！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_157 1.5]
+[wait fade]
+
+[charaFadeout M 0.1]
+
+[charaSet B 1098154800 1 ゴルドルフ]
+[charaSet L 11002300 1 巌窟王]
+
+[charaSet N 11002300 1 巌窟王_シルエット]
+[charaFilter N silhouette 00000080]
+
+[charaDepth B 5]
+
+
+[scene 159701]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠アスクレピオス
+なるほど。[r]無事、売り上げ目標とやらを達成できたか。
+[k]
+
+[charaFace G 1]
+
+＠アスクレピオス
+それは何よりだ。[r]では、今夜は充分な休息を取るように。
+[k]
+
+
+？1：了解！
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+作戦成功、ご苦労だった。
+[k]
+
+＠ゴルドルフ
+順調に運んだようで何よりだ。[r]このまま次のエリアも、と言いたいところだが。
+[k]
+
+[charaFace B 10]
+
+＠ゴルドルフ
+……日が暮れてきたか。[r]ふむ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+
+＠蘆屋道満
+星明かりは望めますまいし、[r]夜間航行は止めておくがよいでしょう。
+[k]
+
+＠蘆屋道満
+今夜はこの場に停泊して、[r]夜が明け次第次のえりあへ参る、というのは如何です？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+
+＠ガレス
+ガレスは賛成です！
+[k]
+
+[charaFace H 0]
+
+
+＠ガレス
+アスクレピオス先生の仰っていた通り、[r]マスターには休息が必要です。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠オルトリンデ
+（うんうんと頷いている）[charaMoveReturn I 0,-7 0.3][wt 0.4][charaMoveReturn I 0,-7 0.3]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+そうですね。[r]わたしからも休息をお勧めします、先輩。
+[k]
+
+？1：みんなが早めに寝ろという……
+？！
+
+[charaPut S 2000,2000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth M 2]
+[charaDepth K 3]
+[charaDepth J 3]
+[charaDepth F 4]
+[charaDepth E 5]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠蘆屋道満
+何やかやで結構歩きましたからな、[r]マイマスター。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠燕青
+まったくもってまっとうなんだけど……
+[k]
+
+[charaFace M 0]
+[charaFadeinFSSideR M 0.1 560,0]
+[charaMoveFSSideR M 510,0 0.5]
+
+＠燕青
+こー、あまりに真っ当なコトを[r]道満の旦那に言われると背中に悪寒が……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠蘆屋道満
+ンンソンンまあそう言わず。[r]きゃびんに中国茶などご用意いたしましたぞ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠燕青
+気が利くのも怖え～。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠蘆屋道満
+ンン～？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 8]
+[charaFadein K 0.1 1]
+
+＠スルーズ
+（……あの、マスター。ＬＡがあそこに）
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 5]
+[charaFadein J 0.1 1]
+
+＠ヒルド
+（よしつかまえよう！）
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 7]
+[charaFadein K 0.1 1]
+
+[bgmStop BGM_EVENT_2 0.7]
+
+＠スルーズ
+（あっ）
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 5]
+[charaFadein J 0.1 1]
+[wt 0.5]
+
+[charaMove J 120,0 0.5]
+[wt 0.5]
+
+[charaFace J 2]
+
+＠ヒルド
+つかまえた！[se ad7][charaShake M 0.03 4 4 0.3]
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad344]
+[seVolume ad344 0 0.2]
+[charaMoveFSSideL J -200,0 1.6]
+[charaMove M 150,0 1.6]
+[wt 2.0]
+[charaFadeout J 0.6]
+[cameraMove 1.0 -50,-15 1.1]
+[wt 1.4]
+
+[charaTalk on]
+[charaTalk M]
+[charaFace M 3]
+
+[bgm BGM_EVENT_116 0.1]
+
+＠レディ・アヴァロン
+……つかまっちゃった。
+[k]
+
+
+？1：レディ・アヴァロン、どうしたの？
+？！
+
+＠レディ・アヴァロン
+えーっと、さ。[r]キミたちの旅に、私もついてっていい？
+[k]
+
+[charaFace M 0]
+
+＠レディ・アヴァロン
+売り上げ達成したら、[r]あとは自由って契約なんだよね。
+[k]
+
+＠レディ・アヴァロン
+露店は他のスタッフに任せて、[r]キミたちに付いて行く方が愉しそうかな～って！
+[k]
+
+？1：同行してもらっても大丈夫だと思う
+？2：この船はかなり広いし[line 3]
+？！
+
+[messageOff]
+[charaFadeout M 0.1]
+[wt 0.1]
+[cameraHome 1.0]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+？1：大丈夫ですよね、新所長？
+？！
+
+[charaFace B 7]
+
+＠ゴルドルフ
+えっ、私？
+[k]
+
+[charaFace B 11]
+
+＠ゴルドルフ
+英霊だな？[r]まあ、戦力が増えるに越したことはなかろう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 6]
+[charaFadein M 0.1 1]
+
+＠レディ・アヴァロン
+じゃあ決まり！[r]これからよろしくね！
+[k]
+
+[charaFace M 1]
+
+＠レディ・アヴァロン
+お姉さん、[r]張り切って色々お手伝いするぞ～！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+……。[r]……。
+[k]
+
+[charaFadeTime T 0.2 0.5]
+[charaFace B 4]
+
+＠ゴルドルフ
+（…………しかしこの英霊、誰？）
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_116 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout T 0.1]
+
+[pictureFrame cut063_cinema]
+
+[scene 159702]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth N 2]
+[charaDepth L 1]
+
+[effect bit_talk_06_b3]
+[se ade153]
+[wt 1.5]
+[charaFace N 0]
+[charaFadein N 0.4 0,-50]
+[wt 0.4]
+[seStop ade153 0.4]
+[effectStop bit_talk_06_b3]
+[wt 1.0]
+[charaFace L 5]
+[charaFadein L 0.1 0,-50]
+[charaFadeout N 0.8]
+[wt 1.6]
+
+[bgm BGM_EVENT_129 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+＠巌窟王
+……………………。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠巌窟王
+……[#此度:こたび]の夏、俺の出る幕ではなかろうが。
+[k]
+
+[charaFace L 4]
+
+
+＠巌窟王
+瞬く間に北極圏にて成り立った異郷の神域。[r]極寒はなく、巨大なる太陽が中天に座す。
+[k]
+
+＠巌窟王
+聖杯は、氷の城か？
+[k]
+
+＠巌窟王
+或いは、[#陽を掲げるかの如き]氷の塔か。
+[k]
+
+
+[charaFace L 0]
+
+＠巌窟王
+……ひとつ確かめてみるか。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth N 2]
+[charaDepth L 1]
+
+[wt 0.5]
+[effect bit_talk_06_b3]
+[se ade153]
+[wt 1.5]
+[charaFace N 0]
+[charaFadein N 0.8 0,-50]
+[wt 0.2]
+[charaFadeout L 0.2]
+[wt 2.0]
+
+[se ad343]
+[charaMove N 0,-100 0.3]
+[charaFadeout N 0.4]
+[seStop ade153 0.4]
+[wt 0.5]
+[seStop ad343 1.2]
+[effectStop bit_talk_06_b3]
+[wt 1.8]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_129 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

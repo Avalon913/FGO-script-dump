@@ -1,0 +1,509 @@
+
+
+
+
+
+
+
+
+
+＄04-00-05-02-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098324400 1 アイリーン]
+[charaSet B 1098239320 1 カドック]
+[charaSet C 1098257910 1 マシュ]
+[charaSet D 1098324400 1 アイリーン_演出用]
+
+[charaSet E 98115000 1 エフェクト用1]
+
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+
+[sceneSet Q 245800 1]
+[charaScale Q 1.2]
+[sceneSet R 245600 1]
+[charaScale R 1.2]
+
+
+[scene 245800]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth Q 2]
+[charaTalk A]
+[charaFadein Q 0.1 -10,-200]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaMove Q 10,-200 4.0]
+
+[se ad60]
+[seVolume ad60 0 0]
+[wt 0.2]
+[seVolume ad60 1.0 0.6]
+[se ad666]
+[seVolume ad666 0 0]
+[seVolume ad666 1.0 0.6]
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.0]
+[charaFadeout Q 0.6]
+[seStop ad60 0.8]
+[seStop ad666 0.8]
+[wt 1.0]
+
+[bgm BGM_SENGOKU_1 0.1]
+
+？1：姫、こちらブドウでございます
+？！
+
+[charaMoveReturn A 0,-3 0.4]
+[se ade161]
+[seStop ade161 0.5]
+[wt 1.0]
+[charaFace A 1]
+
+＠アイリーン
+おー、美味美味。[r]偉いぞマスター君。褒美をあげよう。ほい。
+[k]
+
+[messageOff]
+
+[charaMoveScale A 1.02 0.3]
+[charaMove A 0,2 0.3]
+[wt 0.3]
+[se ade21]
+[wt 0.8]
+[charaMoveScale A 1.0 0.3]
+[charaMove A 0,0 0.3]
+[wt 0.5]
+
+？1：1QP……
+？！
+
+[charaFace A 3]
+
+＠アイリーン
+何なの文句でもあんのかー。
+[k]
+
+？1：文句ありませんよ、姫。
+？！
+
+[charaFace A 9]
+
+＠アイリーン
+あ、しまった。アテシ……じゃない、[r]アタクシってば姫だった。
+[k]
+
+[charaFace A 2]
+
+＠アイリーン
+偉いですわ、マスター。[r]ご褒美を差し上げますのー、ノッノッノッ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠カドック
+何だそれ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠アイリーン
+お姫様笑い声ー。
+[k]
+
+？1：……そっかー
+？！
+
+[charaFace A 15]
+
+＠アイリーン
+なんかバカにされてる。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[subCameraOn 2]
+[subCameraFilter #A maskEdge cut359_mask15 5 255,255,255,255 0]
+[subCameraFilter #B normal]
+[subRenderScale #B 1.2]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[charaLayer R sub #A]
+[charaFadein R 0.1 -100,0]
+[charaMove R 100,0 50.0]
+[wt 0.1]
+
+[subRenderFadein #A 0.6 -350,-250]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadeinFSR C 0.1 120,0]
+
+＠マシュ
+それにしても……。[r]妙な建物がまた増えてきました。
+[k]
+
+＠マシュ
+どなたか住んでいるのでしょうか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadeinFSR A 0.1 120,0]
+
+＠アイリーン
+一応住んでるよ？　趣味悪いけど、見に行く？[r]趣味悪いけど。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadeinFSR C 0.1 120,0]
+
+＠マシュ
+い、いえ。ご迷惑になりそうですから。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadeinFSR A 0.1 120,0]
+
+＠アイリーン
+だよねー。
+[k]
+
+[charaFace A 17]
+
+＠アイリーン
+それにあそこに住んでるのは、[r]大抵つまんない連中だし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadeinFSR B 0.1 120,0]
+
+＠カドック
+もしかして祈ってるようなヤツか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadeinFSR A 0.1 120,0]
+
+＠アイリーン
+あ、会ったんだ。[r]そうそう、日がな一日ずっと祈ってるの。
+[k]
+
+＠アイリーン
+食事もせず水も飲まず眠りもせず。[r]ただずーーーーーーーっと。
+[k]
+
+？1：幽霊か何か？
+？！
+
+[charaFace A 0]
+
+＠アイリーン
+生きてる人間よ、ごくごく普通の、当たり前の。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadeinFSR B 0.1 120,0]
+
+＠カドック
+おい、食事も水も摂らず眠りもせず、[r]は人間じゃないだろ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadeinFSR A 0.1 120,0]
+[wt 1.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadeinFSR B 0.1 120,0]
+
+＠カドック
+……お食事もお水も摂らずお眠りもしないのは、[r]お人間とは思えませんおプリンセス。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_SENGOKU_1 1.2]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFace D 13]
+[charaFadeinFSR A 0.1 120,0]
+
+＠アイリーン
+テキトーだなー！[r]ま、いいや。
+[k]
+
+[messageOff]
+[charaLayer D sub #B]
+[charaLayer Q sub #B]
+[charaDepth Q 1]
+[charaDepth D 2]
+[charaFadein Q 0.1 0,-290]
+[charaFace D 13]
+[charaFadein D 0.1 0,-50]
+[wt 0.1]
+
+[charaTalk off]
+[subRenderFadein #B 0.6 -50,0]
+[subRenderMove #B 50,0 50.0]
+[wt 0.8]
+[charaFace D 0]
+[subRenderFadeout #A 0.1]
+[charaFadeout A 0.1]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_175 0.1]
+
+＠アイリーン
+さっき身を以て知ったっしょ？[r]この特異点には、[#ルール]があるの。
+[k]
+
+＠アイリーン
+ルールには範囲があり、深度があり、強度がある。
+[k]
+
+[charaFace D 10]
+
+＠アイリーン
+フツーの世界なら、ビルから飛び降りるとどうなる？[r]落ちるよね？
+[k]
+
+[charaFace D 14]
+
+＠アイリーン
+でも、この特異点ではそうはならない。
+[k]
+
+＠アイリーン
+もしルールを定めた人間が、[r]『この世界に引力はない』と定義した場合[line 3]
+[k]
+
+[charaFace D 1]
+
+＠アイリーン
+ビルから飛び降りても、浮かんだままになる。[r]面白くない？
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.6]
+[wt 0.8]
+[subCameraOff]
+
+[charaTalk on]
+[charaTalk B]
+
+＠カドック
+清算特異点……クラス・ルーラーの清算。[r]なるほど。
+[k]
+
+[charaFace B 0]
+
+＠カドック
+逆説的に言えば、[#ルールが全て]ってことか。
+[k]
+
+[charaFace B 1]
+
+＠カドック
+万有引力の法則よりも、[r]個人が定めたルールの方が上と。
+[k]
+
+？1：違うルールがぶつかった時は？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠アイリーン
+違うルールがぶつかった時なんて、[r]いつの時代も一緒でしょ？
+[k]
+
+[charaFace A 2]
+
+＠アイリーン
+殺し合って決めるのよ。[r]イヤハヤ、実に人間らしい！
+[k]
+
+[bgmStop BGM_EVENT_175 1.0]
+
+[messageOff]
+[charaTalk E]
+[se ad564]
+[wt 2.0]
+[charaTalk A]
+[charaFace A 9]
+[bgm BGM_EVENT_80 0.1]
+
+＠アイリーン
+お。[r]天使……じゃなくて、魔獣か。
+[k]
+
+＠アイリーン
+さすがに地区を外れると、[r]こういうのも出てくるなー。
+[k]
+
+[charaFace A 1]
+
+＠アイリーン
+さあて、我が[#騎士:ナイト]、我が[#王子:プリンス]！[r]せいぜい姫を接待してちょうだいな。
+[k]
+
+[messageOff]
+[input selectBranch]
+
+[bgmStop BGM_SENGOKU_1 0.4]
+[bgmStop BGM_EVENT_175 0.4]
+[cueSeStop 21_ad1066 0.4]
+[seStop ad666 0.4]
+[seStop ade161 0.4]
+[seStop ade21 0.4]
+[seStop ad564 0.4]
+[seStop ad60 0.4]
+
+[charaSet A 1098324400 1 アイリーン]
+[charaSet B 1098239320 1 カドック]
+[charaSet C 1098257910 1 マシュ]
+[charaSet D 1098324400 1 アイリーン_演出用]
+[charaSet E 98115000 1 エフェクト用1]
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+[sceneSet Q 245800 1]
+[charaScale Q 1.2]
+[sceneSet R 245600 1]
+[charaScale R 1.2]
+
+[scene 245800]
+
+[charaTalk depthOff]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_80 1.0]
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+
+[label selectBranch]
+[wt 0.5]
+
+？1：畏まりました、姫！
+
+
+？2：姫はお戦いにならないので？
+
+
+？！
+
+[branch INPUT_SELECT_BRANCH_01b INPUT_SELECT_BRANCH 1]
+[label INPUT_SELECT_BRANCH_01a]
+
+[charaFace A 2]
+
+＠アイリーン
+うんうん、言ってくれると思った！
+[k]
+
+
+[branch lblConf01]
+
+
+[label INPUT_SELECT_BRANCH_01b]
+
+[charaFace A 15]
+
+＠アイリーン
+えー、姫はこういう時『戦いはいけませんわー』[r]とか言って守られるべきじゃないのー？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠カドック
+最近はそうでもない……ですぞ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠アイリーン
+しゃーねーな。姫も戦うかー！
+[k]
+
+
+[branch lblConf01]
+[label lblConf01]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+

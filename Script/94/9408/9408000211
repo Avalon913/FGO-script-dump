@@ -1,0 +1,324 @@
+
+＄94-08-00-02-1-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098234900 1 ヨハンナ]
+[charaSet B 8001500 1 マシュ]
+[charaSet C 3026000 1 ジャンヌ・オルタ・サンタ・リリィ]
+[charaSet D 5004001 1 ナーサリー]
+[charaSet E 1019001 1 ラーマ]
+[charaSet K 1098234500 1 魔術師]
+
+[charaSet L 1098238800 1 エフェクト用ダミー]
+[charaSet M 1098238800 1 エフェクト用ダミー]
+
+[sceneSet O 107500 1]
+[charaScale O 1.3]
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaPut M 1]
+[charaEffect M bit_talk_kengekiall02_fs]
+[effect bit_talk_14 250,150]
+[shake 0.05 2 2 0.9]
+[se ad170]
+[wt 0.1]
+[se ad809]
+[wt 0.2]
+[se ad618]
+[effect bit_talk_14 -250,-150]
+[wt 0.7]
+
+[scene 107500 0.3]
+[wt 0.4]
+
+[charaScale K 1.2]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 0,15]
+[charaMoveScale K 1.0 0.2]
+[charaMove K 0,0 0.2]
+[charaShake K 0.03 3 3 0.2]
+[se ad671]
+[seStop ad671 1.8]
+[wt 1.5]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+
+＠ヨハンナ
+神の[#恩寵:おんちょう]、知恵のフクロウ、[r]羽ばたいて！
+[k]
+
+[messageOff]
+[charaPut L 220,80]
+[charaEffect L bit_talk_light_loop02]
+[se bac35]
+[se ad386]
+[wt 0.8]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[effect bit_talk_blow02]
+[se bac18]
+[wt 0.6]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[charaShake K 0.03 4 4 0.3]
+[wt 0.3]
+
+＠魔術師
+ぐっ……！
+[k]
+
+[messageOff]
+[charaMove K 0,-10 0.3]
+[wt 0.2]
+[se ad54]
+[seVolume ad54 0 0.4]
+[wt 0.9]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+戦闘行動不能と判断します、マスター。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+
+＠ラーマ
+ああ。[r]聖杯の助力があったとしても、指一本動かせまいよ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[bgm BGM_EVENT_5 0.1]
+
+＠魔術師
+フ……フフフ……。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 7]
+[charaDepth E 6]
+[charaDepth A 5]
+[charaDepth C 3]
+[charaDepth B 2]
+
+[charaFace E 5]
+[charaFadeinFSSideL E 0.1 -426,0]
+[charaFace D 5]
+[charaFadeinFSL D 0.1 -220,0]
+[charaFace A 7]
+[charaFadein A 0.1 0,0]
+[charaFace C 2]
+[charaFadeinFSR C 0.1 220,0]
+[charaFace B 15]
+[charaFadeinFSSideR B 0.1 356,0]
+
+＠全員
+……！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+
+＠魔術師
+その通り……。
+[k]
+
+＠魔術師
+指一本動かせず……[r]魔術の発動も難しいだろう……。
+[k]
+
+＠魔術師
+だが……しかし……。[r]願うことなら……できる……！[bgmStop BGM_EVENT_5 1.5]
+[k]
+
+[messageOff]
+[se ad388]
+[se ad396]
+[charaEffect K bit_talk_06b2]
+[wt 2.0]
+[bgm BGM_EVENT_126 0.1]
+
+[subCameraOn 1]
+
+[charaDepth A 5]
+[charaDepth O 3]
+
+[charaLayer A sub #A]
+[charaLayer O sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask02 3 0,0,0,255 1]
+[subRenderDepth #A 1]
+
+[charaScale A 1.5]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,280]
+[charaFadein O 0.1 0,-130]
+
+[subRenderFadein #A 0.4 1500,-275]
+[subRenderMove #A 0,-275 0.4]
+[wt 0.8]
+[seStop ad388 1.0]
+[seStop ad396 0.2]
+
+＠ヨハンナ
+……！[r]いけない！
+[k]
+
+[messageOff]
+[se ad59]
+
+[subRenderFadeout #A 0.4]
+[subRenderMove #A -1500,-275 0.4]
+[charaFadeout A 0.5]
+[charaFadeout O 0.5]
+[wt 0.5]
+
+[charaLayer A normal]
+[charaLayer O normal]
+
+[subCameraOff]
+
+[charaScale A 1.0]
+[seVolume ad59 1.0 0]
+
+？1：ヨハンナ！
+？！
+
+＠魔術師
+我が、願い、は[line 3]！
+[k]
+
+[messageOff]
+[charaEffectStop K bit_talk_06b2]
+[charaEffectDestroy K bit_talk_06b2]
+[charaFadeout K 0.1]
+[wt 0.1]
+[charaPut L 0,0]
+[charaEffect L bit_talk_20]
+[cueSe Battle bas2]
+[wt 1.0]
+
+[seVolume ad59 1.0 1.0]
+[wt 1.0]
+
+[charaEffectStop L bit_talk_20]
+[charaEffectDestroy L bit_talk_20]
+[wt 0.2]
+
+[charaDepth L 3]
+[charaPut L 2000,2000]
+[charaEffect L bit_talk_20re]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.2 50,0]
+[charaMove A 0,0 0.3]
+[wt 0.4]
+[seStop ad59 0.3]
+
+
+＠ヨハンナ
+させません！
+[k]
+
+[messageOff]
+
+[se ad7]
+[effect bit_talk_41_fs]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,7 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+
+[charaPut L 0,0]
+
+[cameraMove 0.3 0,0 1.1]
+[wt 0.2]
+[effectDestroy]
+
+[bgmStop BGM_EVENT_126 1.5]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[se ad685]
+[cameraFilter gray]
+[wt 1.0]
+
+[charaPut M 0,0]
+[charaEffect M bit_talk_34]
+[se ad39]
+[se ad343]
+[charaEffectStop M bit_talk_34]
+[charaEffectStop L bit_talk_20re]
+[wt 2.0]
+[cueSe SE_21 21_ad1110]
+[seVolume 21_ad1110 0 0.5]
+[wt 1.0]
+[fadeout white 1.0]
+[wait fade]
+
+[charaEffectDestroy L bit_talk_20re]
+[charaEffectDestroy M bit_talk_34]
+
+[scene 10001]
+[wt 1.0]
+
+[fadein white 1.5]
+[cueSeStop 21_ad1110 1.5]
+[seStop ad343 1.5]
+[wait fade]
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

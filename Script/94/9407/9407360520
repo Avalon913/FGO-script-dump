@@ -1,0 +1,1282 @@
+
+＄94-07-36-05-2-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[sceneSet A 160300 1]
+[charaScale A 1.4]
+
+[charaSet B 1098154800 1 ゴルドルフ]
+[charaSet C 99502600 1 マシュ]
+
+[sceneSet D 160300 1]
+[charaScale D 1.4]
+
+[charaSet E 10010300 1 蘆屋道満]
+[charaSet F 6026300 1 燕青]
+[charaSet G 5043300 1 アスクレピオス]
+[charaSet H 1054000 1 ガレス]
+[charaSet I 6043000 1 オルトリンデ]
+[charaSet J 6044000 1 ヒルド]
+[charaSet K 6045000 1 スルーズ]
+[charaSet L 5008001 1 マーリン]
+[charaSet M 28003000 1 レディ・アヴァロン]
+[charaSet N 1098243000 1 エリセ]
+[charaSet O 98115000 1 エフェクト用ダミー]
+
+[charaSet P 1098247300 1 スカサハ＝スカディ]
+[charaSet Q 1098247300 1 スカサハ＝スカディ_シルエット]
+[charaFilter Q silhouette 00000080]
+
+[charaSet R 6045300 1 リンド]
+[charaSet S 6044300 1 エルン]
+[charaSet U 6043300 1 イルス]
+[charaSet V 4045001 1 カイニス]
+[charaSet W 5021001 1 クー・フーリン]
+[charaSet X 5021001 1 クー・フーリン（術）_シルエット]
+[charaFilter X silhouette 00000080]
+
+[imageSet T back10000 1 1]
+[charaScale T 1.4]
+
+[cameraMove 0.1 0,0 1.01]
+
+
+[scene 160300]
+
+[charaTalk depthOff]
+
+[charaDepth T 1]
+[charaDepth A 2]
+[charaDepth D 3]
+
+[charaDepth I 4]
+[charaDepth J 5]
+[charaDepth K 6]
+
+[charaDepth U 6]
+[charaDepth R 5]
+[charaDepth S 4]
+
+[charaDepth W 5]
+[charaDepth X 6]
+
+[charaDepth G 4]
+[charaDepth H 4]
+[charaDepth F 5]
+[charaDepth B 6]
+[charaDepth M 7]
+[charaDepth P 6]
+[charaDepth Q 7]
+
+[charaFadein A 0.1 -250,-400]
+[wt 0.1]
+[charaMove A -250,-200 4.5]
+[fadein black 1.5]
+[bgm BGM_EVENT_92 1.5]
+[wait fade]
+[wt 1.5]
+
+[charaFadein D 1.0 250,-200]
+[charaMove D 250,-400 4.5]
+[wt 1.0]
+[charaFadeout A 0.1]
+[wt 1.5]
+[charaFadeout D 1.0]
+[wt 2.0]
+
+[charaScale A 1.3]
+[charaScale D 1.3]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+
+＠ガレス
+お城のエリアに！　来ましたー！
+[k]
+
+[charaFace H 0]
+
+＠ガレス
+正確には……[r]城門前の広場でしょうか？
+[k]
+
+[charaFace H 1]
+
+＠ガレス
+お城の近くまで船が着けられてよかったです。[r]長距離の行軍をしないで済みました。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠燕青
+俺たちはともかく、マスターや所長に[r]そいつは酷だしなあ。
+[k]
+
+？1：歩くのは慣れてるけどね
+
+[charaFace F 1]
+
+＠燕青
+お、さっすが我がマスター。
+[k]
+
+＠燕青
+でも楽できる時はとことん楽するのが、[r]人生を楽しむコツだぜ。
+[k]
+
+？2：気を遣ってくれてありがとう[&:ね]
+
+[charaFace F 0]
+
+＠燕青
+わざわざ礼を言われる程じゃないさ。[r]そっちこそ、気遣い無用ってことで。
+[k]
+
+？！
+
+[bgmStop BGM_EVENT_92 1.5]
+
+[charaFace F 5]
+
+＠燕青
+それで[line 3]そろそろ、お出迎えかね？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut O 0,0]
+[charaEffect O bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+はい。前方、魔力反応です！
+[k]
+
+＠マシュ
+敵性体かどうかは断定できません。[r]おそらく、ワルキューレ新三姉妹の皆さん……
+[k]
+
+[charaFace C 2]
+
+＠マシュ
+いえ、さらに高魔力反応あり！[r]先輩！
+[k]
+
+？1：（頷く）
+？！
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 1.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut O 2000,2000]
+
+[effect bit_talk_bubble_pop]
+[cueSe SE_22 22_ade768]
+[wt 2.0]
+[seStop 22_ade784 1.0]
+[cueSe SE_22 22_ade776]
+[flashin once 0.2 0.4 FFFFFF80 00000000]
+[wt 0.4]
+
+[charaTalk off]
+
+[charaFace Q 0]
+[charaFadein Q 0.7 1]
+[wt 1.0]
+[charaFace P 16]
+[charaFadein P 0.7 1]
+[wt 1.0]
+[charaFadeout Q 1.0]
+[wt 1.2]
+
+[bgm BGM_MAP_41 0.1]
+
+＠スカサハ＝スカディ
+…………よく来たな。
+[k]
+
+[charaFace P 17]
+
+＠スカサハ＝スカディ
+まったく、何故そのように急ぐ。[r]あまりに早いぞ。
+[k]
+
+＠スカサハ＝スカディ
+もっと……もっと、じっくり夏を進めばよいものを。
+[k]
+
+[charaFace P 15]
+
+＠スカサハ＝スカディ
+エリアひとつにつき一週間、[r]いいや一ヶ月くらいかけても良いものを。
+[k]
+
+＠スカサハ＝スカディ
+まったく。
+[k]
+
+[charaFace P 0]
+
+＠スカサハ＝スカディ
+……だが、これを予想しなかった訳ではない。[r]おまえたちはすぐに特異点を消そうとするだろうしな。
+[k]
+
+＠スカサハ＝スカディ
+故にこそ、封印を施した。[r]最低でも三つのエリアを巡らねば……
+[k]
+
+＠スカサハ＝スカディ
+我が極北魔氷城には辿り着けぬ、とな？
+[k]
+
+[charaFace P 11]
+
+＠スカサハ＝スカディ
+フフ。どうだ？[r]エリアを巡ってみた感想は。
+[k]
+
+＠スカサハ＝スカディ
+[line 3]存分に[#楽しめた]か、[r][%1]？
+[k]
+
+？1：スカディ
+？！
+
+[messageOff]
+
+？1：一体どうしてこんなことを？
+？2：ここは、自然には消えない特異点ですよね？
+？！
+
+[charaFace P 4]
+
+＠スカサハ＝スカディ
+……………………。
+[k]
+
+[charaFace P 5]
+
+＠スカサハ＝スカディ
+……永遠の夏だ。[r]永遠の夏をここに作ると、そう決まったのだ。
+[k]
+
+＠スカサハ＝スカディ
+決められたのだ。
+[k]
+
+[messageOff]
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 1.4]
+
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+[charaFadeTime T 0.2 0.5]
+
+＠アスクレピオス
+（そう決まった……決められた？）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠燕青
+（妙に引っかかる言い方だな……？）
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout T 0.2]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth I 3]
+[charaDepth K 2]
+[charaDepth J 1]
+[charaFace I 5]
+[charaFace K 8]
+[charaFace J 10]
+[charaFadein K 0.1 1]
+[charaFadeinFSR J 0.1 380,0]
+[charaFadeinFSL I 0.1 -380,0]
+[wt 1.0]
+[charaTalk on]
+
+
+
+＠スルーズ
+スカディ様。[r]お気持ちは変わっていないのですね。
+[k]
+
+
+
+
+＠ヒルド
+うん。どうしてもって言うなら……
+[k]
+
+
+
+＠オルトリンデ
+その、不本意ではありますが……[r]実力行使に移るしかありません。
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+
+[charaTalk P]
+[charaFace P 11]
+[charaFadein P 0.1 1]
+＠スカサハ＝スカディ
+待て待て。[r]そう、あまり怖い顔をするな。
+[k]
+
+＠スカサハ＝スカディ
+おまえたちの出方次第ではあるが、[r]私としては荒事を望まんよ。
+[k]
+
+[charaFace P 0]
+
+＠スカサハ＝スカディ
+ここは、永遠の夏の楽園でなくてはならない。
+[k]
+
+＠スカサハ＝スカディ
+それにな。わざわざ三つの封印を解いてまで、[r]我が城に訪れてくれたのだ。
+[k]
+
+＠スカサハ＝スカディ
+できるなら、我が魔力の多くを費やしてでも、[r]もてなしてやりたいのだが[line 3]
+[k]
+
+[messageOff]
+[charaFace P 8]
+[wt 1.2]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠アスクレピオス
+表情が曇ったな。[r]どうした？
+[k]
+
+＠アスクレピオス
+もしかして、魔力が足りないのか。[r]僕たちをもてなすだけの魔力は、もうないと？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠ガレス
+え。でも、スカディさんはほら、[r]聖杯を持っていますよね？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 23]
+[charaFadein N 0.1 1]
+
+＠エリセ
+そのはずですよね。[r]聖杯がないと、特異点は作れないって話[line 3]
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 14]
+[charaFadein P 0.1 1]
+
+＠スカサハ＝スカディ
+！
+[k]
+
+[charaFace P 17]
+
+＠スカサハ＝スカディ
+わ、私は忙しい。[r]忙しいのだ。
+[k]
+
+[charaFace P 16]
+
+＠スカサハ＝スカディ
+すまぬな皆の者。マスターも悪いな。[r]暫く、他のエリアでも回って過ごすがよい。
+[k]
+
+＠スカサハ＝スカディ
+この場は下がれ。
+[k]
+
+？1：下がらない
+？2：まだ、ちゃんと話せてない
+
+？！
+
+[messageOff]
+[charaFace P 14]
+[se ad984]
+[cameraMove 0.6 0,-15 1.1]
+[bgmStop BGM_MAP_41 1.5]
+[wt 1.0]
+
+[charaFace P 5]
+
+＠スカサハ＝スカディ
+む[line 3]
+[k]
+
+？1：スカサハ＝スカディ！
+？！
+
+[messageOff]
+[cameraMove 0.6 0,-30 1.2]
+[se ad984]
+[wt 1.0]
+
+＠スカサハ＝スカディ
+むむ、[wt 0.6][charaFace P 4][wt 0.6][charaFace P 5]むむむむむむむむむむむむむむ。[wt 0.6][charaFace P 4]
+[k]
+
+[charaFace P 7]
+
+＠スカサハ＝スカディ
+あ、あのだな。[r]あまりそのように見つめるな。
+[k]
+
+？1：？？
+
+？！
+
+[charaShake P 0.05 2 2 0.6]
+[charaFace P 7]
+
+＠スカサハ＝スカディ
+む、むううう！[wt 0.9][charaFace P 5][r][line 3]来い。ワルキューレたちよ！
+[k]
+
+[messageOff]
+[charaFadeout P 0.7]
+[cameraMove 1.0 0,0 1.0]
+[wt 0.6]
+
+[se ad678]
+[seVolume ad678 0 0.5]
+[wt 0.8]
+
+
+[charaPut S 1]
+[fowardEffect bit_talk_quickmove 0,0 V]
+[wt 0.1]
+[se ad223]
+[charaTalk R]
+[charaFace R 9]
+[charaFadein R 0.4 0,10]
+[charaMove R 0,0 0.1]
+[wt 0.6]
+
+[bgm BGM_EVENT_63 0.1]
+
+
+＠リンド
+[line 3]戦闘同期開始。
+[k]
+
+[messageOff]
+[charaFadeout R 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaPutFSR S 2]
+[charaPutFSL U 0]
+
+[charaEffect S bit_talk_quickmove 0,0 V]
+[charaEffect U bit_talk_quickmove 0,0 V]
+
+[wt 0.1]
+[se ad223]
+[charaFace S 10]
+[charaFadeinFSR S 0.4 256,10]
+[charaMoveFSR S 256,0 0.1]
+
+[charaFace U 8]
+[charaFadeinFSL U 0.4 -256,10]
+[charaMoveFSL U -256,0 0.1]
+[wt 0.8]
+
+＠二人
+了解、戦闘同期開始。
+[k]
+
+[charaFadeout S 0.1]
+[charaFadeout U 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk R]
+[charaFace R 12]
+[charaFadein R 0.1 1]
+
+＠リンド
+感覚連結、空間把握強化。[r]高機動戦闘、展開準備よし。
+[k]
+
+[charaFadeout R 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠燕青
+おおっと、来るか！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠アスクレピオス
+敵対の意思はない。[r]エリセのエリアでそう言ったのは嘘か？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk U]
+[charaDepth R 2]
+[charaDepth U 3]
+[charaDepth S 1]
+[charaFace R 0]
+[charaFace U 5]
+[charaFace S 11]
+[charaFadein R 0.1 1]
+[charaFadeinFSL U 0.1 -380,0]
+[charaFadeinFSR S 0.1 380,0]
+
+
+
+＠イルス
+スカディ様のピンチだからね！[r]本気を出さざるを得ないってところだよ。
+[k]
+
+
+
+＠リンド
+ケルトのスカサハ様とは違い、[r]広面積の露出にスカサハ＝スカディ様は不慣れだ。
+[k]
+
+＠リンド
+第一段階の霊基の姿でいることは、[r]スカディ様にとってはかなりの負担だからね。
+[k]
+
+
+
+＠エルン
+でも現代風の水着は着てみたい[line 3][r]着てみたいけど、どうにもまだ恥ずかしい！
+[k]
+
+[charaFace S 12]
+
+＠エルン
+そんな[#二律背反:に り つ は い は ん]の中、詰問までされてしまって、[r]スカディ様はいっぱいいっぱいです！
+[k]
+
+[charaFace S 1]
+
+＠エルン
+なのでわたしたちの出番です！[r]最高の火力で、しっかりお守りして……
+[k]
+
+＠エルン
+お役に立ちます！
+[k]
+
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+[charaFadeout U 0.1]
+[wt 0.1]
+
+
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠燕青
+そういう理由でガチの戦闘態勢ってことありなの？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk S]
+[charaFace S 7]
+[charaFadein S 0.1 1]
+
+＠エルン
+ありますね！
+[k]
+
+[charaFadeout S 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠燕青
+そうかー、じゃあ仕方ないかなー。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 17]
+[charaFadein P 0.1 1]
+
+＠スカサハ＝スカディ
+リンド、エルン！[r]よ、よ、余計なことは言わずともよい！
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[charaFadeTime T 0.2 0.5]
+
+＠燕青
+（あ。マジ話なのか）
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout T 0.2]
+[wt 0.1]
+
+[bgm BGM_EVENT_63 1.5 0.5]
+
+[charaTalk P]
+[charaFace P 17]
+[charaFadein P 0.1 1]
+[wt 0.6]
+
+？1：……水着霊基、ちゃんと似合っているよ！
+？！
+
+[charaFace P 7]
+
+＠スカサハ＝スカディ
+！？
+[k]
+
+＠スカサハ＝スカディ
+そ、そう、か。[r]そうか……
+[k]
+
+[charaFace P 3]
+
+＠スカサハ＝スカディ
+な、何と返答すればよいか分からぬな。[r]すまぬ、か？　違うな。ええと、その。何だ。
+[k]
+
+[charaFace P 7]
+
+＠スカサハ＝スカディ
+そのぅ……
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠アスクレピオス
+何だその反応は。[r]最低でも数千年を生きた神ともあろうモノが。
+[k]
+
+[charaFace G 1]
+
+＠アスクレピオス
+フン、まるで[#幼子:おさなご]のようだな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad119]
+[charaTalk P]
+[charaFace P 2]
+[charaFadein P 0.1 1]
+[charaShake P 0.05 2 2 0.6]
+
+＠スカサハ＝スカディ
+[line 14]！
+[k]
+
+[messageOff]
+[charaFaceFade P 15 0.2]
+[charaMove P 0,-10 0.4]
+[wt 0.3]
+[se ad775]
+[seVolume ad775 0 0.5]
+[wt 0.8]
+
+[charaShake P 0.05 1 1 0.8]
+[charaMove P 0,0 0.8]
+[wt 1.0]
+
+[bgm BGM_EVENT_63 1.5 1.0]
+
+＠スカサハ＝スカディ
+リンド、エルン、イルス。[r]極北女王が命ずる。
+[k]
+
+[charaFaceFade P 2 0.2]
+
+＠スカサハ＝スカディ
+戦闘性能の解放を許可する。[r]こやつら全員、ただちに城の前から叩き出せ！
+[k]
+
+[messageOff]
+[charaFadeout P 0.1]
+[wt 0.1]
+
+
+
+
+
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth R 2]
+[charaDepth U 3]
+[charaDepth S 1]
+[charaFace R 0]
+[charaFace U 0]
+[charaFace S 1]
+[charaFadein R 0.1 1]
+[charaFadeinFSL U 0.1 -380,0]
+[charaFadeinFSR S 0.1 380,0]
+
+＠新三姉妹
+了解！
+[k]
+
+？1：……新三姉妹が来る！
+？！
+
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+[charaFadeout U 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠アスクレピオス
+これは興味深いな。[r]ワルキューレ、新三姉妹と旧三姉妹の戦いという訳か。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 10]
+[charaFadein K 0.1 1]
+
+＠スルーズ
+せ、せっかくマスターが言わなかったのに、[r]旧とか言わないでください！
+[k]
+
+＠スルーズ
+皆同型機です！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 9]
+[charaFadein J 0.1 1]
+
+＠ヒルド
+でも製造順はあるよね？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFadein K 0.1 1]
+
+＠スルーズ
+ヒルド、混ぜっ返さない！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_63 1.5]
+
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+待てーーい！
+[k]
+
+＠ゴルドルフ
+よく分からん理由で戦闘をするんじゃあない！[r]スカサハ＝スカディよ！
+[k]
+
+[charaFace B 5]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠ゴルドルフ
+貴様はまだ、[%1]の[r]質問に答えていないぞ！
+[k]
+
+＠ゴルドルフ
+……百歩譲って微小特異点の作成まではよい。[wt 1.0][charaFace B 4][r]いやよくはないが。
+[k]
+
+[charaFace B 5]
+
+＠ゴルドルフ
+ともかくだぞ。放っておいても消えん特異点とか、[r]そんなものは[#洒落:しゃれ]になるまい！
+[k]
+
+＠ゴルドルフ
+何故こんなことをする！？
+[k]
+
+[charaFace B 6]
+
+＠ゴルドルフ
+本当に狂ったのか？[r]いや、私にはそうは思えん。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 4]
+[charaFadein P 0.1 1]
+
+＠スカサハ＝スカディ
+……。[r]……。
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+よもや、よもやではあるが[line 3]
+[k]
+
+[charaFace B 11]
+
+＠ゴルドルフ
+何となく涼しげな場所でプールに入りたいなと[r]思っていたところに、聖杯が転がってきてつい、[wt 1.0][charaFace B 6]とか！
+[k]
+
+＠ゴルドルフ
+そういうアレなのかね？[r]聖杯ごはん系列の事件だったりするのかね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 32]
+[charaFadein N 0.1 1]
+
+＠エリセ
+聖杯ごはん……系列……。
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+まだ間に合う。間に合うぞ。[r]もうこのあたりで終わらせておけ！
+[k]
+
+＠ゴルドルフ
+永遠に閉じない特異点なぞあっては、[r]人理を取り戻したところで何が起きたものか、だ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 15]
+[charaFadein P 0.1 1]
+
+＠スカサハ＝スカディ
+……………………。
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 23]
+[charaFadein N 0.1 1]
+
+＠エリセ
+……？
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠ガレス
+スカディさん、なんだか[line 3]
+[k]
+
+？1：（顔色が悪い……？）
+？！
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 15]
+[charaFadein P 0.1 1]
+[wt 1.2]
+[charaFaceFade P 11 0.2]
+
+＠スカサハ＝スカディ
+…………ふ。
+[k]
+
+＠スカサハ＝スカディ
+ふふ、ふふふふふふふふふ。
+[k]
+
+[charaFace P 2]
+
+＠スカサハ＝スカディ
+わ、私は夏の極北女王だ。[r]その通り、永遠の夏を約束するモノなのだ！
+[k]
+
+＠スカサハ＝スカディ
+そのように定められたのだ！
+[k]
+
+[charaFace P 11]
+
+＠スカサハ＝スカディ
+故にカルデア所長、残念だが無駄足である。[r]おまえたちに何を言われても私の役目は変わらぬよ。
+[k]
+
+＠スカサハ＝スカディ
+私は、此処に君臨し続けよう。
+[k]
+
+[bgmStop BGM_EVENT_81 1.5]
+
+[charaFace P 2]
+
+＠スカサハ＝スカディ
+[line 3]ワルキューレたち！
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+
+＠オルトリンデ
+は、はい！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 15]
+[charaFadein P 0.1 1]
+
+＠スカサハ＝スカディ
+うむ。い、いやおまえたちではなく……
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk U]
+[charaFace U 11]
+[charaFadein U 0.1 1]
+
+＠イルス
+ボクたちだよボクたち。
+[k]
+
+[charaFadeout U 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 5]
+[charaFadein P 0.1 1]
+
+＠スカサハ＝スカディ
+うむ。[r][line 3]侵入者を撃退せよ！
+[k]
+
+[messageOff]
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+
+
+
+
+
+
+
+[charaFace R 9]
+[charaFace U 8]
+[charaFace S 10]
+[charaFadein R 0.1 1]
+[charaFadeinFSL U 0.1 -380,0]
+[charaFadeinFSR S 0.1 380,0]
+
+＠新三姉妹
+了解。
+[k]
+
+[messageOff]
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+[charaFadeout U 0.1]
+[wt 0.6]
+[se ad60]
+[wt 1.2]
+[seStop ad60 0.5]
+
+＠？？？
+極北女王ねえ。
+[k]
+
+＠？？？
+テメェ、北欧の女王サマって話じゃなかったか？[r]オレはそう覚えてんだがな。
+[k]
+
+？1：その声は！
+？！
+
+[messageOff]
+[wt 0.3]
+[charaTalk V]
+[charaFace V 13]
+[charaFadein V 0.4 1]
+[wt 1.4]
+[charaFaceFade V 1 0.2]
+
+
+[bgm BGM_EVENT_82 0.1]
+
+＠カイニス
+よう！
+[k]
+
+[charaFadeout V 0.1]
+[wt 0.1]
+
+[charaPut O 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+カイニスさん！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut O 2000,2000]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+し、神霊カイニスだとぅ！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk V]
+[charaFace V 12]
+[charaFadein V 0.1 1]
+
+＠カイニス
+ようムジークの男。[r]今回も貧乏くじ引いてるみたいじゃねえか！
+[k]
+
+＠カイニス
+観光ついでにオレたちも助太刀してやるよ。[r]なあ、ルーン使い！
+[k]
+
+[messageOff]
+[charaFadeout V 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[se ad60]
+[wt 0.8]
+
+[charaFace X 0]
+[charaFadein X 0.7 1]
+[wt 0.3]
+[seStop ad60 0.5]
+[wt 0.8]
+
+[charaFace W 0]
+[charaFadein W 0.1 1]
+[wt 0.3]
+[charaFadeout X 1.0]
+[wt 1.4]
+[charaFaceFade W 4 0.2]
+[wt 0.4]
+
+＠クー・フーリン
+……誰がルーン使いだ。
+[k]
+
+？1：キャスター霊基のクー・フーリン！
+？！
+
+[charaFadeout W 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 5]
+[charaFadein P 0.1 1]
+
+＠スカサハ＝スカディ
+……！
+[k]
+
+[charaFace P 2]
+
+＠スカサハ＝スカディ
+だ、誰が来ようと私の役目は同じ！[r]邪魔をするというのなら！
+[k]
+
+[messageOff]
+[se ad900]
+[seVolume ad900 0 0.4]
+[se ad574]
+[seVolume ad574 0 0.4]
+[se ad556]
+[seVolume ad556 0 0.2]
+[se ad632]
+[seVolume ad632 0 0.1]
+[charaEffect P bit_talk_lightning_07b]
+[wt 1.0]
+[seStop ad574 1.0]
+[seStop ad900 1.0]
+[wt 2.0]
+
+＠スカサハ＝スカディ
+それなりのもてなしを以て応えるまでだ！[r][line 3]ゆくぞ！
+[k]
+
+
+[messageOff]
+[seStop ad632 0.5]
+[seStop ad556 0.5]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_82 0.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,666 @@
+
+＄94-13-93-15-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1010000 1 エリザベート]
+[charaSet B 4001000 1 メドゥーサ]
+[charaSet C 5043000 1 アスクレピオス]
+[charaSet D 3057001 1 ビショーネ]
+
+[charaSet E 1098257810 1 マシュ]
+[charaSet F 1098257310 1 ダ・ヴィンチ]
+[charaSet H 1098314200 1 おみぃさん]
+[charaSet I 1062001 1 黒姫]
+
+[charaSet M 1098313000 1 捕食竜1]
+[charaPut M 2000,2000]
+[charaEffect M bit_talk_charge_aura_05]
+
+[ifClear 60139307]
+[charaSet G 1098315100 1 チビーネ]
+[flag rbody_1 true]
+
+[ifClear 60139308]
+[charaSet G 1098315000 1 チビーネ]
+[flag rbody_2 true]
+
+[ifClear 60139309]
+[charaSet G 1098314900 1 チビーネ]
+[flag rbody_3 true]
+
+[ifClear 60139310]
+[charaSet G 1098316600 1 チビーネ]
+[flag bbody_1 true]
+
+[ifClear 60139311]
+[charaSet G 1098316700 1 チビーネ]
+[flag bbody_2 true]
+
+[ifClear 60139312]
+[charaSet G 1098316800 1 チビーネ]
+[flag bbody_3 true]
+
+[ifClear 60139313]
+[charaSet G 1098317000 1 チビーネ]
+[flag gbody_1 true]
+
+[ifClear 60139314]
+[charaSet G 1098317100 1 チビーネ]
+[flag gbody_2 true]
+
+[ifClear 60139315]
+[charaSet G 1098317200 1 チビーネ]
+[flag gbody_3 true]
+
+[else]
+[charaSet G 1098315100 1 チビーネ]
+[flag rbody_1 true]
+
+[endIf]
+
+[sceneSet Q 238801 1]
+[sceneSet R 238801 1]
+[charaSet Y 98115000 1 通信エフェクト用]
+[charaSet Z 98115000 1 通信エフェクト用]
+[charaPut Z 2000,2000]
+[charaEffect Z bit_talk_10_LowLevel]
+
+[scene 238801]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_116 0.1]
+
+[charaDepth Y 8]
+[charaDepth H 7]
+[charaDepth Q 6]
+[charaDepth I 5]
+
+[charaScale H 1.2]
+[charaScale Q 1.2]
+
+[charaTalk off]
+[charaFace H 13]
+[charaFadeinFSR H 0.5 280,0]
+[charaFadeinFSR Q 0.5 20,-290]
+[charaMoveEaseFSR H 260,0 1.2 easeOutExpo]
+[charaMoveEaseFSR Q 0,-290 1.2 easeOutExpo]
+[wt 1.0]
+
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+[subCameraOn 1]
+
+[subCameraFilter #A maskEdge cut359_mask10 5 0,0,0,255]
+
+[charaLayer M sub #A]
+[charaLayer R sub #A]
+
+[charaDepth M 5]
+[charaDepth R 4]
+
+[charaFace M 0]
+[charaFadein M 0.1 -100,150]
+[charaFadein R 0.1 0,-50]
+
+[cueSe SE_25 25_ade1156]
+
+[subRenderFadein #A 0.5 -260,-150]
+[subRenderMoveEase #A -220,-150 1.2 easeOutExpo]
+[wt 1.4]
+
+[charaMoveScaleEase M 1.1 2.0 easeOutQuart]
+[charaMoveEase M -100,170 2.0 easeOutQuart]
+[se ade311]
+[cueSe SE_23 23_ad1294]
+[seVolume 23_ad1294 0 0.1]
+[seVolume 23_ad1294 0.5 1.0]
+[wt 0.5]
+[seStop 23_ad1294 1.0]
+[wt 1.6]
+
+[subRenderFadeout #A 0.4]
+[charaFadeout H 0.4]
+[charaFadeout Q 0.4]
+[wt 0.4]
+[charaScale H 1.0]
+
+[charaFadeout R 0]
+[charaFadeout M 0]
+[charaPut M 2000,2000]
+[charaScale M 1.0]
+[subCameraOff]
+[charaLayer M normal]
+[charaLayer R normal]
+
+[charaTalk on]
+
+＠黒姫
+貴方は[line 3]！？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 13]
+[charaFadein H 0.1 1]
+[wt 0.5]
+
+？1：おみぃさん！
+？！
+
+[charaFace H 7]
+
+＠おみぃさん
+みゃはは、どうもー。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+あ、危ないですよおみぃさん！[r]早く逃げてください！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠チビーネ
+きゅぴー！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 15]
+[charaFadein H 0.1 1]
+
+＠おみぃさん
+ま、危ないのはいっつもそうさね。
+[k]
+
+＠おみぃさん
+どうやらアタシは[line 3]アタシの力は、[r]捕食竜にとっちゃご馳走みたいだし。
+[k]
+
+＠おみぃさん
+美味しそうな匂いがありゃあ寄ってくる。
+[k]
+
+＠おみぃさん
+ここまで目の前にいて近けりゃ、[r]さすがにこっちのほうを食べたくなるだろうさ。
+[k]
+
+[charaFace H 8]
+
+＠おみぃさん
+あ、心配しなくても食べられる気はないさね。[r]なんとか逃げて時間を稼ぐよ。
+[k]
+
+[charaFace H 15]
+
+＠おみぃさん
+だからアンタらは、その間に[line 3]まあ、[r]なんでもやりたいことをやんなさい。
+[k]
+
+＠おみぃさん
+逃げるなり戦うなり、ね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+[#囮:おとり]になる気か？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+予想は[#大凡:おおよそ]正しかった気はしますが……
+[k]
+
+＠メドゥーサ
+しかし貴女のその行動は予想外です。
+[k]
+
+＠メドゥーサ
+どうして、そこまでして[r]我々を助けようとするのです？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 11]
+[charaFadein H 0.1 1]
+[wt 1.2]
+
+＠おみぃさん
+[line 3]責任、かね。
+[k]
+
+＠おみぃさん
+よかれと思ってアンタたちに食べさせたアレのせいで、[r]力の半分がアンタたちに移った。
+[k]
+
+＠おみぃさん
+狙われる理由の半分がアンタたちに移っちまった。[r]その責任は取らなくちゃ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠マシュ
+アレというのは、以前に皆さんがパワーアップした[r]甘酒のことでしょうか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk H]
+[charaFace H 15]
+[charaFadein H 0.1 1]
+
+＠おみぃさん
+そ。アレはね、アタシが二つ持ってる大事なものの[r]一つを溶かして作ったのさ。
+[k]
+
+[charaFace H 1]
+
+＠おみぃさん
+戦う力のないアタシでも一応持ってた、宝具？[r]みたいなやつなのかねぇ。
+[k]
+
+＠おみぃさん
+ここじゃ所詮は使い捨ての、あんまり大声じゃ[r]言えないものかもしれないんだけど。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+わかっています。
+[k]
+
+[charaFace B 0]
+
+＠メドゥーサ
+[#眼ですね]。
+[k]
+
+＠メドゥーサ
+つまり、その言葉から考えると、貴女は、[r][#眼球の一つを犠牲にしてあれを作った][line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠おみぃさん
+みゃっははは！[r]そこまでわかってるんなら、もういいか。
+[k]
+
+[charaFace H 8]
+
+＠おみぃさん
+ちゃんとした名前はないんだけど、[r]改めて名乗っておこうかね。
+[k]
+
+[messageOff]
+[cameraMoveEase 0,-15 1.0 easeOutQuart 1.1]
+[charaFace H 13]
+[wt 1.2]
+
+＠おみぃさん
+アタシは[#蛇女房][line 3]またの名を、[r]誰が呼んだかミセス・スネーク！
+[k]
+
+＠おみぃさん
+子供一人を育てるのにも難儀した、[r]なっさけない母親ってだけの蛇さ！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 1.0]
+[bgmStop BGM_BATTLE_116 1.0]
+[wait fade]
+
+[cameraHome 0.1]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_SEIHAI_5 0.1]
+[wt 0.5]
+
+？1：蛇女房……！？
+？2：ミセス・スネーク……！？
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk F]
+[charaFace F 22]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+聞いたことがあるかもだ。[r]日本各地に伝わる民話だね。
+[k]
+
+＠ダ・ヴィンチ
+[#異類婚姻譚:いるいこんいんたん]、『見るなの禁』に分類される物語で、[r]人間に化けていた蛇が子供を産むんだけど[line 3]
+[k]
+
+[bgmStop BGM_SEIHAI_5 1.5]
+
+[charaFace F 14]
+
+＠ダ・ヴィンチ
+いや、今は解説している場合じゃない！[r]脅威に集中！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+[wt 0.1]
+[bgm BGM_BATTLE_107 0.1]
+[wt 0.1]
+
+[charaMoveScaleEase M 1.1 2.0 easeOutQuart]
+[charaMoveEase M 0,20 2.0 easeOutQuart]
+[se ade311]
+[cueSe SE_23 23_ad1294]
+[seVolume 23_ad1294 0 0.1]
+[seVolume 23_ad1294 0.5 1.0]
+[wt 0.5]
+[seStop 23_ad1294 1.0]
+[wt 1.6]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaPut M 2000,2000]
+[wt 0.1]
+
+[se ad854]
+[se ad238]
+[se ad14 0.2]
+[effect bit_talk_sand_dust_fast 0,0 H]
+[effect bit_talk_impactlanding]
+[shake 0.03 3 3 1.2]
+[wt 2.5]
+[seStop ad14 0.6]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaTalk H]
+[charaFace H 10]
+[charaPut H 1]
+[charaSpecialEffect H appearanceReverse 1 0.25]
+[wt 0.7]
+
+＠おみぃさん
+おっと！？　[wt 0.7][charaFace H 13]とにかく、アタシは[r]頑張ってこいつを引きつけて逃げるから。
+[k]
+
+＠おみぃさん
+アンタらはアンタらで頑張んな！
+[k]
+
+？1：止め[&ろ:て]と言える状況じゃない……！
+？2：この状況、なんとか逆転に繋げないと[line 3]！
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 15]
+[charaFadein I 0.1 1]
+
+＠黒姫
+……。[r]……。
+[k]
+
+[charaFace I 3]
+
+＠黒姫
+顔見知りになったとて。[r]加減は、できませぬ。
+[k]
+
+＠黒姫
+どうあれ、この捕食竜が食べたいと願うものを[r]食べさせるのが、私の役目なのですから[line 3]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 15]
+[charaFadein H 0.1 1]
+
+＠おみぃさん
+へーぇ。役目ね。[r]じゃあ……[#アンタの願いは]？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠黒姫
+っ……！
+[k]
+
+[messageOff]
+[charaDepth H 8]
+[charaDepth Q 7]
+[charaDepth I 6]
+
+[charaScale M 1.0]
+[charaScale H 1.2]
+[charaScale Q 1.2]
+
+[subCameraOn 1]
+
+[subCameraFilter #A maskEdge cut359_mask10 5 0,0,0,255]
+
+[charaLayer M sub #A]
+[charaLayer R sub #A]
+
+[charaDepth M 6]
+[charaDepth R 5]
+
+[charaFace M 0]
+[charaFadein M 0.1 -100,150]
+[charaFadein R 0.1 0,-20]
+
+[charaTalk off]
+[charaFace H 15]
+[charaFadeinFSR H 0.3 260,0]
+[charaFadeinFSR Q 0.3 0,-290]
+[cueSe SE_25 25_ade1154]
+[subRenderFadein #A 0.2 -220,-150]
+[wt 0.5]
+
+[charaFadeout I 0.1]
+[wt 1.0]
+
+[charaMoveScaleEase M 1.1 2.0 easeOutQuart]
+[charaMoveEase M -100,170 2.0 easeOutQuart]
+[se ade311]
+[cueSe SE_23 23_ad1294]
+[seVolume 23_ad1294 0 0.1]
+[seVolume 23_ad1294 0.5 1.0]
+[wt 0.5]
+[seStop 23_ad1294 1.0]
+[wt 0.5]
+
+[se ad73]
+[effect bit_talk_quickmove 300,0]
+[charaSpecialEffect H enemyErasure 1 0.25]
+
+[se ad854]
+[se ad238]
+[se ad14 0.2]
+[effect bit_talk_sand_dust_fast 0,0 H]
+[effect bit_talk_impactlanding]
+[shake 0.03 3 3 1.2]
+[wt 2.5]
+[seStop ad14 0.6]
+[charaFace H 10]
+[charaPutFSR H 270,0]
+[se ad223]
+[charaPut Y 300,0]
+[charaEffect Y bit_talk_quickmove]
+[charaSpecialEffect H appearanceReverse 1 0.25]
+[wt 0.7]
+
+[charaTalk on]
+
+＠おみぃさん
+危ないねぇ！？[wt 1.0][charaFace H 9][r]ひゃー、こりゃキッツいわ……。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[charaFadeout H 0.4]
+[charaFadeout Q 0.4]
+[wt 0.4]
+[charaScale H 1.0]
+
+[charaFadeout R 0]
+[charaFadeout M 0]
+[charaPut M 2000,2000]
+[charaScale M 1.0]
+[subCameraOff]
+[charaLayer M normal]
+[charaLayer R normal]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+[&子イヌ:子ジカ]！[r]あのデカいのは完全におみぃを狙ってるわ。
+[k]
+
+＠エリザベート
+今なら背中を狙い放題よ！[r]文字通りのバックアタックだわ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ビショーネ
+わたしは新人なので、方針に口を出せる[r]立場じゃないんですけど……
+[k]
+
+＠ビショーネ
+に、逃げたりは、しませんよね？
+[k]
+
+？1：[line 3]当然！
+？2：全力で攻撃しておみぃさんを助ける！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+マグロの目玉は栄養価が高いと聞く。
+[k]
+
+[charaFace C 1]
+
+＠アスクレピオス
+蛇の目玉もそうなのか、だから我々に力が宿ったのか、[r]医学的にも興味は尽きん。助けて話を聞かねばな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠メドゥーサ
+敵方の可能性すら考えていたのです。[r]さすがの私もいささか心苦しいですね。
+[k]
+
+＠メドゥーサ
+この気分を晴らすためにも、[r]彼女には無事でいてもらわなくてはなりません。
+[k]
+
+[charaFace B 2]
+
+＠メドゥーサ
+行きます、マスター！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_107 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+
+
+

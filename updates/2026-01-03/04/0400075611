@@ -1,0 +1,963 @@
+
+＄04-00-07-56-1-1
+
+
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[soundStopAll]
+
+[charaSet A 3047002 1 パーシヴァル]
+[charaSet B 3011002 1 フィン・マックール]
+[charaSet C 3002002 1 ディルムッド]
+
+[charaSet D 1050002 1 バーゲスト]
+[charaSet E 1007002 1 ガウェイン]
+[charaSet F 3048000 1 メリュジーヌ]
+[charaSet G 1020002 1 ランスロット]
+[charaSet H 2043001 1 バーヴァン・シー]
+[charaSet I 2008002 1 トリスタン]
+[charaSet J 3053002 1 ブリトマート]
+[charaSet K 3039002 1 ガレス]
+
+[charaSet L 1098213600 1 モルガン]
+[charaSet M 3019001 1 アルトリア・オルタ]
+
+[charaSet N 1098213600 1 モルガン_演出用]
+[charaSet O 2043001 1 バーヴァン・シー_演出用]
+[charaSet P 3048000 1 メリュジーヌ_演出用]
+[charaSet Q 1050002 1 バーゲスト_演出用]
+
+[charaSet R 98115000 1 エフェクト用1]
+[charaSet S 98115000 1 エフェクト用2]
+[charaSet T 98115000 1 エフェクト用3]
+
+
+[sceneSet U 274009 1]
+[sceneSet V 274009 1]
+[sceneSet W 274009 1]
+[sceneSet X 274009 1]
+
+[imageSet Y black_fade_re 1]
+[imageSet Z black_fade_re 1]
+
+[charaTalk depthOff]
+[charaDepth R 22]
+[charaDepth S 23]
+[charaDepth T 21]
+
+[charaDepth A 4]
+[charaDepth B 5]
+[charaDepth C 6]
+
+[charaDepth D 7]
+[charaDepth E 8]
+[charaDepth F 9]
+[charaDepth G 10]
+[charaDepth H 11]
+[charaDepth I 12]
+[charaDepth J 13]
+[charaDepth K 14]
+
+[charaDepth L 15]
+[charaDepth M 16]
+
+[charaDepth N 17]
+[charaDepth O 18]
+[charaDepth P 19]
+[charaDepth Q 20]
+
+[charaDepth U 3]
+[charaDepth V 3]
+[charaDepth W 3]
+[charaDepth X 3]
+
+[scene 274009]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_302 0.1]
+
+
+[subCameraOn 4]
+[charaLayer U sub #A]
+[charaLayer V sub #B]
+[charaLayer W sub #C]
+[charaLayer X sub #D]
+[charaScale U 1.2]
+[charaScale V 1.2]
+[charaScale W 1.2]
+[charaScale X 1.2]
+
+[charaLayer C sub #A]
+[charaLayer B sub #B]
+[charaLayer A sub #C]
+[subCameraFilter #A maskEdge cut359_mask09 5 255,255,255,255 0]
+[subCameraFilter #B maskEdge cut359_mask15 5 255,255,255,255 0]
+[subCameraFilter #C normal]
+[subRenderDepth #A 2]
+[subRenderDepth #B 3]
+[subRenderDepth #C 1]
+[charaScale A 1.2]
+[charaScale B 1.2]
+[charaScale C 1.2]
+[charaFace C 2]
+[charaFadeinFSR C 0 -90,200]
+[charaFadein U 0 -100,-70]
+[charaFace B 5]
+[charaFadeinFSL B 0 55,200]
+[charaFadein V 0 100,-70]
+[charaFace A 2]
+[charaFadein A 0 0,0]
+[charaFadein W 0 0,-270]
+[subRenderFadeinFSR #A 0.4 450,-250]
+[subRenderFadeinFSL #B 0.4 -450,-250]
+[subRenderFadein #C 0.4 0,50]
+[subRenderMoveEaseFSR #A 430,-200 0.4 easeOutQuint]
+[subRenderMoveEaseFSL #B -430,-200 0.4 easeOutQuint]
+[subRenderMoveEase #C 0,0 0.4 easeOutQuint]
+[blur lens 0.4 2 1]
+[wt 1.5]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[subRenderFadeout #C 0.3]
+[blurOff lens 0.3]
+[wt 0.3]
+
+[fowardEffect bit_talk_kengekiall02_fs]
+[wt 0.1]
+[se ad618]
+[wt 0.2]
+[shake 0.03 3 3 0.6]
+[se bac388]
+[wt 0.4]
+[charaPut R -300,0]
+[charaEffect R bit_bolg_01]
+[se ad715]
+[se ad897]
+[wt 0.2]
+[charaPut S 300,0]
+[charaEffect S bit_bolg_02y]
+[se ad865]
+[cueSe SE_23 23_ad1341]
+[cueSeStop 23_ad1341 1.5]
+[wt 0.1]
+[shake 0.03 3 3 0.2]
+[wt 0.3]
+[fowardEffect bit_talk_14]
+[se ad865]
+[shake 0.04 3 3 0.6]
+[fadeout white 0.2]
+[wait fade]
+[fadein white 0.4]
+[wait fade]
+[wt 0.4]
+[charaEffectStop R bit_bolg_01]
+[charaEffectStop S bit_bolg_02y]
+
+[charaFadeout A 0.1]
+[charaFadeout U 0.1]
+[charaFadeout B 0.1]
+[charaFadeout V 0.1]
+[charaFadeout C 0.1]
+[charaFadeout W 0.1]
+[wt 0.1]
+
+[charaLayer D sub #A]
+[charaLayer E sub #A]
+[charaLayer F sub #B]
+[charaLayer G sub #B]
+[charaLayer H sub #C]
+[charaLayer I sub #C]
+[charaLayer J sub #D]
+[charaLayer K sub #D]
+[subCameraFilter #A maskEdge cut359_mask05 4 208,169,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask05 4 138,119,183,255 0]
+[subCameraFilter #C maskEdge cut359_mask05 4 237,26,61,255 0]
+[subCameraFilter #D maskEdge cut359_mask05 4 255,255,255,255 0]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+[subRenderDepth #D 4]
+[charaScale D 1.2]
+[charaScale E 1.2]
+[charaScale F 1.2]
+[charaScale G 1.2]
+[charaScale H 1.2]
+[charaScale I 1.2]
+[charaScale J 1.2]
+[charaScale K 1.2]
+[charaFace D 2]
+[charaFace E 2]
+[charaFadein D 0 -30,200]
+[charaFadein E 0 15,-50]
+[charaFadein U 0 0,-70]
+[charaFace F 2]
+[charaFace G 2]
+[charaFadein F 0 50,280]
+[charaFadein G 0 -20,-50]
+[charaFadein V 0 0,-70]
+[charaFace H 14]
+[charaFace I 5]
+[charaFadein H 0 50,200]
+[charaFadein I 0 -30,-50]
+[charaFadein W 0 0,-70]
+[charaFace J 10]
+[charaFace K 2]
+[charaFadein J 0 -20,200]
+[charaFadein K 0 75,-50]
+[charaFadein X 0 0,-70]
+[subRenderFadein #C 0.4 -420,-150]
+[subRenderMoveEase #C -420,-200 0.4 easeOutQuint]
+[blur lens 0.4 2 1]
+[wt 0.2]
+[subRenderFadein #A 0.4 -140,-250]
+[subRenderMoveEase #A -140,-200 0.4 easeOutQuint]
+[wt 0.2]
+[subRenderFadein #B 0.4 140,-150]
+[subRenderMoveEase #B 140,-200 0.4 easeOutQuint]
+[wt 0.2]
+[subRenderFadein #D 0.4 420,-250]
+[subRenderMoveEase #D 420,-200 0.4 easeOutQuint]
+[wt 1.2]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[subRenderFadeout #C 0.3]
+[subRenderFadeout #D 0.3]
+[blurOff lens 0.3]
+[wt 0.3]
+
+[charaPut R 1]
+[charaPut S 1]
+[charaEffect S bit_talk_kengekiall04]
+[wt 0.1]
+[se ad171]
+[wt 0.1]
+[se bac136]
+[wt 0.1]
+[cueSe Battle bac221]
+[wt 0.1]
+[cueSe Battle bac263]
+[wt 0.1]
+[charaEffect R bit_talk_gram_slash_04_fs]
+[wt 0.2]
+[cueSe Servants_102800 bac658]
+[shake 0.04 4 4 0.4]
+[wt 0.5]
+[se ad1053]
+[charaEffect R bit_talk_quick_slash_bl]
+[wt 0.5]
+[se ad818]
+[charaEffect S bit_talk_x_slash_bl_01]
+[charaEffect S bit_talk_x_slash_bl_02]
+[wt 0.2]
+[shake 0.04 4 4 0.4]
+[wt 0.4]
+[charaPut T 1]
+[charaEffect T bit_talk_sparks_fs]
+[cueSe Servants_100700 m06501]
+[wt 0.2]
+[seStop ad818 0.4]
+[charaPut R 1]
+[charaPut S 1]
+[wt 0.8]
+[charaEffect R bit_talk_beam_slash_02]
+[se ade388]
+[wt 0.1]
+[charaEffect S bit_talk_beam_slash_01]
+[wt 0.2]
+[shake 0.04 3 3 1.0]
+[wt 0.4]
+[charaEffectStop T bit_talk_sparks_fs]
+[charaPut R -250,0]
+[charaPut S 250,0]
+[charaEffect R bit_talk_red_string02]
+[charaEffect S bit_talk_white_string02]
+[wt 0.3]
+[cueSe Servants_200800 m07612 0 0.7]
+[cueSe Servants_204300 m44701 0 0.7]
+[wt 1.2]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout U 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout V 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout W 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout X 0.1]
+[wt 0.1]
+
+[charaLayer L sub #A]
+[charaLayer M sub #B]
+[subCameraFilter #A maskEdge cut359_mask15 5 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask16 5 0,0,0,255 0]
+[charaScale L 1.2]
+[charaScale M 1.2]
+[charaFace L 2]
+[charaFadeinFSL L 0 -80,200]
+[charaFadein U 0 0,-70]
+[charaFace M 2]
+[charaFadeinFSR M 0 -220,200]
+[charaFadein V 0 0,-70]
+[subRenderFadein #A 0.4 -192,-150]
+[subRenderFadein #B 0.4 192,-250]
+[subRenderMoveEase #A -212,-200 0.4 easeOutQuint]
+[subRenderMoveEase #B 212,-200 0.4 easeOutQuint]
+[wt 0.5]
+[charaEffectDestroy R bit_talk_red_string02]
+[charaEffectDestroy S bit_talk_white_string02]
+[charaPut R 1]
+[charaPut S 1]
+[cueSe SE_22 22_ad1179]
+[charaEffect L bit_talk_36]
+[charaEffect M bit_talk_36 220,0]
+[wt 2.1]
+[cueSeStop 22_ad1179 0.6]
+[charaEffectStop L bit_talk_36]
+[charaEffectStop M bit_talk_36]
+[effect bit_talk_ereshki03]
+[wt 0.3]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[blurOff lens 0.3]
+[wt 0.3]
+
+[charaFadeout L 0.1]
+[charaFadeout U 0.1]
+[charaFadeout M 0.1]
+[charaFadeout V 0.1]
+[wt 0.1]
+
+[charaLayer U normal]
+[charaLayer V normal]
+[charaLayer W normal]
+[charaLayer X normal]
+[charaLayer A normal]
+[charaLayer B normal]
+[charaLayer C normal]
+[charaLayer D normal]
+[charaLayer E normal]
+[charaLayer F normal]
+[charaLayer G normal]
+[charaLayer H normal]
+[charaLayer I normal]
+[charaLayer J normal]
+[charaLayer K normal]
+[charaLayer L normal]
+[charaLayer M normal]
+[subCameraOff]
+[charaScale A 1.0]
+[charaScale B 1.0]
+[charaScale C 1.0]
+[charaScale D 1.0]
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaScale G 1.0]
+[charaScale H 1.0]
+[charaScale I 1.0]
+[charaScale J 1.0]
+[charaScale K 1.0]
+[charaScale L 1.0]
+[charaScale M 1.0]
+
+[wt 0.3]
+[cueSe NoblePhantasm_704000 NP_704000_4]
+[wt 1.2]
+[effect bit_talk_strongwind01_bk]
+[cueSe NoblePhantasm_301900 NP_301900_3]
+[shake 0.04 3 3 2.2]
+[wt 1.2]
+[cueSe NoblePhantasm_704000 NP_704000_6]
+[wt 0.8]
+[fadeout white 1.5]
+[wait fade]
+[effectDestroy bit_talk_ereshki03]
+[effectDestroy bit_talk_strongwind01_bk]
+[scene 274007]
+[sceneSet V 274007 1]
+[sceneSet W 274007 1]
+[sceneSet X 274007 1]
+[charaDepth V 3]
+[charaDepth W 3]
+[charaDepth X 3]
+[wt 1.0]
+[cueSe SE_24 24_ade1109]
+[wt 1.0]
+[fadein white 1.5]
+[wait fade]
+[bgmStop BGM_BATTLE_302 4.0]
+[wt 2.0]
+
+？1：……終わった……
+？2：これで、この空想樹の異聞帯は……
+
+？！
+
+[charaTalk L]
+[charaFace L 8]
+[charaFadein L 0.2 1]
+
+＠モルガン
+ブリテン異聞帯が消えてしまう、という顔ですね。[r]それは間違いです、カルデアのマスター。
+[k]
+
+[messageOff]
+[subCameraOn 2]
+[charaLayer N sub #A]
+[charaLayer O sub #A]
+[charaLayer P sub #A]
+[charaLayer Q sub #A]
+[charaLayer S sub #A]
+[charaLayer V sub #A]
+[charaLayer W sub #B]
+[subCameraFilter #A normal]
+[subCameraFilter #B maskEdge cut359_mask15 5 255,255,255,255 0]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[charaScale V 1.2]
+[charaScale W 1.2]
+[charaScale N 1.2]
+[charaScale O 1.2]
+[charaScale P 1.2]
+[charaScale Q 1.2]
+[charaTalk off]
+[charaFace N 8]
+[charaFadein N 0 1]
+[charaFadein V 0 0,-270]
+[subRenderFadein #A 0.5 0,0]
+[wt 0.5]
+[bgm BGM_MAP_73 0.1]
+[charaFadeout L 0.1]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠モルガン
+妖精國はあの時に幕を下ろしました。[r]もう滅びているのです。
+[k]
+
+＠モルガン
+空想樹と異聞帯は二つで一つ、ではありません。[r]それぞれが別のもの。
+[k]
+
+＠モルガン
+異聞帯で起きた歴史を情報として[r]保存し続けていたのが空想樹であり、
+[k]
+
+＠モルガン
+今ここにいる私たちは、[r]その情報から一時的に霊基を得た幻のようなもの。
+[k]
+
+＠モルガン
+『英霊の座』からサーヴァントが召喚されるように、[r]空想樹から私たちは実体化した。
+[k]
+
+＠モルガン
+あくまで自分たちの意志による顕現として。[r]なので貴方が気に病む必要はありません。
+[k]
+
+＠モルガン
+私たちは私たちの意志で空想樹を切除した。
+[k]
+
+＠モルガン
+たとえ死した歴史であってもブリテンは私たちの世界。[r]それを天球如きに使われるなんて屈辱でしょう？
+[k]
+
+[messageOff]
+[charaTalk N,H]
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+[charaFadeout N 0.1]
+
+
+＠バーヴァン・シー
+お母様の言う通りよ。[r]アナタたちの為に戦ったんじゃないから。
+[k]
+
+＠バーヴァン・シー
+これは世界に殺された私の復讐。[r]汎人類史と異聞帯、私はどっちも嫌いだし。
+[k]
+
+[charaFace H 7]
+
+＠バーヴァン・シー
+……まあ。もしアナタたちに[#喚:よ]ばれた私が[r]いたとしたら、その私は違うだろうけど。
+[k]
+
+[messageOff]
+[charaPut S 1]
+[charaEffect S bit_talk_06]
+[charaFace O 7]
+[charaFadein O 0 0,0]
+[subRenderFadein #A 0.5 0,0]
+[wt 1.0]
+[charaFadeout H 0.1]
+[charaFaceFade O 0 0.3]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠バーヴァン・シー
+私は妖精國のバーヴァン・シー。[r]妖精みんなの嫌われもの。残酷で残虐な女王の娘。
+[k]
+
+＠バーヴァン・シー
+むかつくヤツは切除したし、[r]気持ちも晴れたし、疲れたし。
+[k]
+
+[charaFace O 2]
+
+＠バーヴァン・シー
+悪役らしく綺麗さっぱり消えてやるよ。
+[k]
+
+＠バーヴァン・シー
+じゃあな、命知らずのクソ人間。[r]さようなら、優しくて素敵なお母様。
+[k]
+
+[messageOff]
+[charaTalk O,F]
+[wt 0.7]
+[charaSpecialEffect O flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect O]
+[charaEffectStop S bit_talk_06]
+[wt 1.2]
+[subRenderFadeout #A 0.6]
+[wt 0.8]
+
+[charaPut R 0,-70]
+[charaEffect R bit_talk_06]
+[charaPut S 0,-70]
+[charaEffect S bit_talk_06]
+[wt 1.0]
+[charaFace F 6]
+
+＠メリュジーヌ
+あれ、次は私？[r]別に消えなくて済むけど、ま、いっか。
+[k]
+
+[messageOff]
+[charaFace P 1]
+[charaFadein P 0 0,30]
+[subRenderFadein #A 0.5 0,0]
+[wt 0.5]
+[charaEffectDestroy R bit_talk_06]
+[charaFadeout F 0.1]
+
+＠メリュジーヌ
+一緒に戦えて楽しかったよ、カルデアのマスター。[r]君とはきっと相性がいいんだろうね。
+[k]
+
+＠メリュジーヌ
+からっぽの[#心臓:む　ね]に[#灯:ひ]が[#灯:とも]ったようだった。[r]私、もともと汎人類史側の最強種だし、
+[k]
+
+[charaFaceFade P 13 0.15]
+
+＠メリュジーヌ
+このまま付いていってあげたい気持ちが[r]少しだけあるんだけど、ほら。
+[k]
+
+
+[messageOff]
+[charaLayer N sub #B]
+[charaScale N 1.2]
+[charaScale W 1.2]
+[charaTalk on]
+[charaTalk N]
+[charaFace N 9]
+[charaFadein N 0 0,200]
+[charaFadein W 0 0,-70]
+[subRenderFadeinFSL #B 0.5 -600,-200]
+[charaMoveEase P 200,30 0.6 easeOutSine]
+[charaMoveEase V 200,-270 0.6 easeOutSine]
+[charaMoveEase S 200,-70 0.6 easeOutSine]
+[subRenderMoveEaseFSL #B -400,-200 0.6 easeOutSine]
+[wt 0.6]
+
+＠N：モルガン
+メリュジーヌ。
+[k]
+
+[messageOff]
+[charaMoveEase P 0,30 0.6 easeOutSine]
+[charaMoveEase V 0,-270 0.6 easeOutSine]
+[charaMoveEase S 0,-70 0.6 easeOutSine]
+[subRenderMoveEaseFSL #B -600,-200 0.6 easeOutSine]
+[subRenderFadeout #B 0.5]
+[wt 0.6]
+[charaFadeout N 0.1]
+[charaFadeout W 0.1]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+[charaTalk off]
+[charaTalk P]
+[charaFace P 15]
+
+＠メリュジーヌ
+陛下が行儀良くしろってうるさいから。[r]おとなしく座に帰る。
+[k]
+
+[charaFace P 1]
+
+＠メリュジーヌ
+それにやっぱり、[r]ここにいる僕は妖精國のメリュジーヌだから。
+[k]
+
+＠メリュジーヌ
+翼があるうちは極光を目指して飛び続けるよ。[r][line 3]それじゃあ、またいつか。おいおいね。
+[k]
+
+[messageOff]
+[wt 0.7]
+[charaSpecialEffect P flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect P]
+[charaEffectStop S bit_talk_06]
+[wt 1.2]
+[subRenderFadeout #A 0.6]
+[wt 0.8]
+
+[charaTalk D]
+
+＠バーゲスト
+…………。
+[k]
+
+[charaFace D 9]
+
+＠バーゲスト
+…………。
+[k]
+
+[charaFaceFade D 3 0.15]
+
+＠バーゲスト
+……その、なんだ。[r]なぜ私だけ変わっているのか、という事だな。
+[k]
+
+＠バーゲスト
+私とて、ガウェイン卿との共闘という奇跡の機会に[r]黒犬公の姿になるのは避けたかった。
+[k]
+
+＠バーゲスト
+だが、しかし……この場所の空気にあてられてな。[r]ビーストの本性が抑えられなかったのだ。
+[k]
+
+？1：え
+？2：待って。ビーストって言った？
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut R 2500,2500]
+
+[charaTalk L]
+[charaFace L 8]
+[charaFadein L 0.1 1]
+
+＠モルガン
+そうか。はっきりと言っていなかったな。
+[k]
+
+[charaFace L 0]
+
+＠モルガン
+人類悪とはその世界の人類が克服しなければならない[r]悪性であり、本来、人類では倒せない最強の存在だ。
+[k]
+
+＠モルガン
+妖精國において、魔力を食い物にする[r]エレメンタル・イーターである魔犬は最強の存在。
+[k]
+
+＠モルガン
+本来なら妖精どもの恐怖心によって[r]バーゲストは人類悪になっていただろう。
+[k]
+
+[charaFace L 8]
+
+＠モルガン
+しかし、妖精國には人類悪の他にもう一種、[r]最強をほしいままにしていた竜がいた。
+[k]
+
+？1：つよつよメリュジーヌ……か
+？2：アルビオンの竜……！
+
+？！
+
+[charaFace L 0]
+
+＠モルガン
+そうだ。メリュジーヌがいた事で[r]人類悪は発生しなかった。
+[k]
+
+＠モルガン
+『獣の厄災』、ブラックドッグ・バーゲスト。[r]そら。きちんと『獣』と予言されている。
+[k]
+
+[charaFace L 9]
+
+＠モルガン
+あの[#悪虫:あくちゅう]めが周到に[r]手を回していた理由がわかったか？
+[k]
+
+[messageOff]
+[charaDepth L 2]
+[charaScale D 1.2]
+[charaScale X 1.2]
+[charaPut R 1]
+[charaTalk L,D]
+[charaFace D 4]
+[charaFadein D 0.4 200,0]
+[charaFadein X 0.4 -70,-270]
+[charaMoveEase D 150,0 0.6 easeOutSine]
+[charaMoveEase X -120,-270 0.6 easeOutSine]
+[wt 0.6]
+
+＠バーゲスト
+……陛下。お楽しみのところたいへん言いづらいのですが、[r]私も自分なりの別れをしたいので……。
+[k]
+
+[messageOff]
+[charaTalk D,L]
+[charaFace L 8]
+[charaFadeout D 0.4]
+[charaFadeout X 0.4]
+[wt 0.4]
+[charaScale D 1.0]
+[charaDepth L 15]
+[charaPut R 2500,2500]
+
+＠モルガン
+そうだったな。井戸端の雑談など久しくてな、[r]つい熱が入った。許すがよい。
+[k]
+
+[messageOff]
+[charaTalk L,Q]
+[charaFace Q 0]
+[charaFadein Q 0 1]
+[subRenderFadein #A 0.5 0,0]
+[wt 0.5]
+[charaPut R 1]
+[charaEffect R bit_talk_06]
+[charaPut S 1]
+[charaEffect S bit_talk_06]
+[charaFadeout L 0.1]
+[charaPut R 1]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+[wt 1.1]
+
+＠バーゲスト
+…………。[r]改めて礼を言う、カルデアのマスター。
+[k]
+
+＠バーゲスト
+獣に[#堕:お]ちた私を倒しただけではない。[r]我々のブリテンの最期を看取ってくれた事……
+[k]
+
+＠バーゲスト
+今も我々の歴史を[#偲:しの]んでくれている事を、[r]心から感謝する。
+[k]
+
+＠バーゲスト
+私たちの[#異聞:せかい]は終わった。
+[k]
+
+＠バーゲスト
+だが君たちが……いや、誰かが覚えているかぎり、[r]私たちのいた意味はある。
+[k]
+
+[charaFace Q 2]
+
+＠バーゲスト
+君たちにとっては怖ろしい世界だっただろうがな。[r]まあ、それは我々も同じ事だ。
+[k]
+
+＠バーゲスト
+人間の世界は複雑で、怖ろしくて、そして[line 3][r]生き残るに足る、新しい可能性に満ちている。
+[k]
+
+＠バーゲスト
+その輝かしさを可能なかぎり保っていてくれ。
+[k]
+
+＠バーゲスト
+いつか、私たちのような生き物が、[r]君たちに追いつく日のために。
+[k]
+
+？1：[line 3]うん
+？2：……うん
+
+？！
+
+[charaFace Q 0]
+
+＠バーゲスト
+さらばだ。[r]このまま迷いなく空想樹の呪いを断ち切れ。
+[k]
+
+＠バーゲスト
+それによって異聞は消え、戻らない者もいるだろう。[r]ここに来る事のできなかった者たちもいるだろう。
+[k]
+
+＠バーゲスト
+だが必ず、異聞帯の者は君たちに力を貸す。[r]姿は見えずとも、必ず。
+[k]
+
+[messageOff]
+[charaFace D 11]
+[subRenderFadeout #A 0.6]
+[wt 0.6]
+[charaFadeout Q 0.1]
+[charaEffectDestroy S bit_talk_06]
+
+＠バーゲスト
+それでは先に失礼します、陛下。
+[k]
+
+＠バーゲスト
+二千年もの間ブリテンを守っていただき、[r]誠にありがとうございました。
+[k]
+
+[messageOff]
+[charaMove D 0,-10 0.4]
+[cueSe SE_25 25_ad1466]
+[cueSeStop 25_ad1466 0.6]
+[wt 1.1]
+[charaSpecialEffect D flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect D]
+[charaEffectStop R bit_talk_06]
+[wt 1.5]
+
+[charaTalk L]
+[charaFace L 8]
+[charaFadein L 0.2 1]
+[wt 0.7]
+
+＠モルガン
+……よく働いてくれたな、バーゲスト。[r]最後の200年はおまえあっての統治だった。
+[k]
+
+
+[messageOff]
+
+[charaLayer N sub #A]
+[charaTalk L,N]
+[charaFace N 8]
+[charaFadein N 0 1]
+[subRenderFadein #A 0.5 0,0]
+
+[charaSet Z 1098213620 1 モルガン]
+[charaLayer Z sub #A]
+[charaDepth Z 20]
+[charaScale Z 1.2]
+[charaPut Z 2000,2000]
+[charaFadeTime Z 0.1 0]
+[wt 0.6]
+
+＠モルガン
+[line 3]。[r]一つ[#訊:たず]ねます、カルデアのマスター。
+[k]
+
+[charaFace N 0]
+
+＠モルガン
+貴方たちの世界に……いえ、貴方のカルデアに、[r]異聞帯の者は存在していますか？
+[k]
+
+＠モルガン
+私たちという異分子を、隣人として見てくれていますか？
+[k]
+
+？1：[line 3]もちろん
+？2：[line 3]いつも頼りにしています
+
+？！
+
+＠モルガン
+[line 3]そう。[r]それなら良かった。
+[k]
+
+[messageOff]
+[charaMoveReturn N 0,-3 1.0]
+[cueSe SE_24 24_ade981]
+[charaCrossFade N 1098213620 1 0.6]
+[wait charaCrossFade N]
+[charaSet L 1098213620 1 モルガン]
+[charaDepth L 15]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+[wt 0.8]
+
+＠モルガン
+妖精國を治めていた時の私ですら、[r]あの天球を倒すという道は選べなかった。
+[k]
+
+＠モルガン
+その道を選んだ貴方に、惜しみのない称賛と祝福を。[r]どうか納得のいく終わりに辿り着けますように。
+[k]
+
+[messageOff]
+[cueSe SE_23 23_ad1304 0 0]
+[cueSeVolume 23_ad1304 1.0 1.0]
+[charaEffectEdgeBlur Z ffffff ffffff 4 1]
+[wt 0.25]
+[charaPut Z 0,0]
+[wt 1.25]
+[fadeout white 1.5]
+[wt 1.0]
+[fowardEffect bit_talk_light_particles_scatter]
+[wait fade]
+[charaEffectEdgeBlurDestroy Z]
+[fowardEffect bit_talk_light_particles_scatter]
+[charaFadeout Z 0]
+[wt 0.5]
+[cueSeStop 23_ad1304 2.0]
+[fadein white 1.5]
+[wait fade]
+[wt 1.0]
+
+？1：……ありがとうございます
+？2：……妖精國のみんなも
+
+？！
+
+[charaFace L 0]
+[subRenderFadeout #A 0.6]
+[wt 0.8]
+[charaPut R 1]
+[charaEffect R bit_talk_06]
+
+＠モルガン
+では、私もここで。[r]行きなさい、星見の旅人。
+[k]
+
+＠モルガン
+妖精國ブリテン、第六異聞帯で起きた全ては[r]貴方たちを応援します。
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaSpecialEffect L flashErasure 1 2.4]
+[wt 0.2]
+[se ad52]
+[wait charaSpecialEffect L]
+[charaEffectStop R bit_talk_06]
+[wt 2.2]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_MAP_73 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

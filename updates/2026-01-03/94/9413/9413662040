@@ -1,0 +1,224 @@
+
+
+＄94-13-66-20-4-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 2053000 1 ツタンカーメン]
+[charaSet B 3056000 1 ゴッホ]
+
+[charaSet E 1098306700 1 ダイダロスメカ]
+[charaSet F 1098306700 1 ダイダロスメカ]
+[charaSet G 1098306700 1 ダイダロスメカ]
+[charaSet H 1098306700 1 ダイダロスメカ]
+[charaSet I 1098306700 1 ダイダロスメカ]
+
+[sceneSet L 231600 1]
+[sceneSet M 231600 1]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用]
+
+[charaPut S 2000,2500]
+[charaEffect S bit_talk_10_LowLevel]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 231600]
+
+[charaTalk depthOff]
+[charaDepth E 5]
+[charaDepth F 4]
+[charaDepth G 3]
+
+[charaDepth A 2]
+[charaDepth T 8]
+
+[bgm BGM_BATTLE_119 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[se ad710]
+[wt 0.1]
+[shake 0.02 2 3 0.9]
+[wt 0.4]
+
+[se ad270]
+[se ad68]
+[seVolume ad68 0 0.6]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein E 0.4 30,10]
+[charaMove E 0,10 0.4]
+[wt 0.15]
+[charaFadein F 0.4 380,-10]
+[charaMove F 350,-10 0.4]
+[wt 0.15]
+[charaFadein G 0.4 -380,-10]
+[charaMove G -350,-10 0.4]
+[wt 0.2]
+[seStop ad710 0.2]
+[wt 0.3]
+[seStop ad270 0.3]
+[seStop ad68 0.3]
+[wt 0.3]
+
+[blur motion 0.3 4 10000 0.5 0.5 0.05 100]
+[se ad678]
+[se ad208]
+[seVolume ad208 0 0.6]
+[charaMoveScaleEase E 1.2 0.3 easeOutCubic]
+[charaMoveScaleEase F 1.2 0.3 easeOutCubic]
+[charaMoveScaleEase G 1.2 0.3 easeOutCubic]
+[charaMoveEase E 0,30 0.3 easeOutCubic]
+[charaMoveEase F 350,10 0.3 easeOutCubic]
+[charaMoveEase G -350,10 0.3 easeOutCubic]
+[charaFadeout E 0.3]
+[charaFadeout F 0.3]
+[charaFadeout G 0.3]
+[wt 0.3]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[cueSe SE_23 23_ade930]
+[effect bit_talk_guard_eighthit]
+[wt 1.0]
+
+[se ad715]
+[fowardEffect bit_talk_v_slash01]
+[wt 0.4]
+[charaEffect T bit_talk_blow02]
+[wt 0.1]
+
+[effectDestroy bit_talk_guard_eighthit]
+[seStop ad715 0.3]
+[se ad170]
+[cueSe SE_24 24_ade1019]
+[cueSe SE_24 24_ade1020]
+[charaPut T 1]
+[charaEffect T bit_talk_impactlanding 0,-200]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.2]
+
+[se ad322]
+[seVolume ad322 0 0.5]
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,15]
+
+[charaShake A 0.02 3 3 0.6]
+[charaMoveEase A 0,0 0.3 easeOutSine]
+[charaMoveScaleEase A 1.0 0.3 easeOutSine]
+[wt 1.0]
+
+＠ツタンカーメン
+これは、すごい猛攻にて！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut T 2000,2500]
+
+[charaTalk B]
+[charaFace B 28]
+[charaFadein B 0.1 1]
+＠ゴッホ
+ウフフ、脳筋がすぎませんかダイダロス！！[r]脳とかあるのか知りませんが！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠ツタンカーメン
+……
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaDepth A 2]
+[charaDepth V 7]
+
+[se ad854]
+[charaPut V 1]
+[charaEffect V bit_talk_explosion_triple02]
+[wt 0.2]
+[shake 0.02 2 2 2.0]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.6]
+
+[subCameraOn 2]
+
+[charaLayer B sub #A]
+[charaLayer L sub #A]
+
+[charaLayer A sub #B]
+[charaLayer M sub #B]
+
+[subCameraFilter #A normal]
+[subCameraFilter #B maskEdge cut359_mask15 5 255,255,255,255]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaDepth L 2]
+[charaDepth M 2]
+[charaDepth B 3]
+[charaDepth A 3]
+
+[charaScale L 1.2]
+[charaScale B 1.2]
+[charaTalk B]
+[charaFace B 27]
+[charaFadeinFSR B 0 350,0]
+[charaFadein L 0 0,-260]
+
+[charaScale M 1.2]
+[charaScale A 1.2]
+[charaFace A 15]
+[charaFadeinFSL A 0 -50,250]
+[charaFadein M 0 300,0]
+
+[subRenderFadein #A 0.4 0,0]
+[charaMoveEaseFSR B 250,0 0.5 easeOutSine]
+[charaMoveEase L -100,-260 0.5 easeOutSine]
+[wt 0.6]
+＠ゴッホ
+ええええ！？　今なんか面白かったですか！？
+[k]
+
+[messageOff]
+[charaTalk A]
+[subRenderFadein #B 0.3 -275,-350]
+[subRenderMoveEase #B -225,-250 0.4 easeOutSine]
+[wt 0.5]
+＠ツタンカーメン
+ふふ……くくく……す……すみませぬ……[r]ゴッホ[#採鉱:サイコー]の思い出し笑いが……
+[k]
+
+[charaFace B 33]
+＠ゴッホ
+ぜ[messageShake 0.05 4 3 0.5]んッぜん関係ない昔のネタ！！[r]ゴッホが言うなですが、しっかりしてツタンちゃん！！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_119 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

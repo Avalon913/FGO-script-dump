@@ -1,0 +1,2055 @@
+
+＄94-07-45-01-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11007000 1 ノッブ]
+[charaSet B 1027000 1 沖田総司]
+[charaSet C 10007001 1 沖田オルタ]
+
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+[charaSet E 99502600 1 マシュ]
+[charaSet F 1098249700 1 卑弥呼]
+[charaSet G 1098249800 1 織田信勝]
+[charaSet H 1098250000 1 茶々]
+
+[charaSet I 1098248650 1 ？？？]
+[charaScale I 1.2]
+
+[charaSet J 1098248700 1 子供]
+
+[charaSet K 9015000 1 壱与]
+
+[charaSet L 1098248800 1 獣頭の男]
+
+[sceneSet M 163600 1 1]
+[charaScale M 1.4]
+
+[charaSet O 1098248650 1 ？？？シルエット]
+[charaFilter O silhouette 00000080]
+[charaScale O 1.2]
+
+[sceneSet P 139900 1]
+[charaScale P 1.3]
+
+[imageSet Q back10000 1 1]
+[charaScale Q 1.05]
+
+[charaSet U 1098248900 1 獣人2]
+
+[imageSet X back10000 1 1]
+[charaScale X 1.05]
+[charaSet Y 98115000 1 エフェクト用ダミー]
+[charaSet Z 98115000 1 エフェクト用ダミー2]
+
+
+[charaTalk depthOff]
+[charaDepth X 1]
+[charaDepth Y 4]
+[charaDepth P 5]
+[charaDepth Q 6]
+[charaDepth I 7]
+[charaDepth O 8]
+
+[scene 139900]
+[cameraMove 0.1 0,-25 1.2]
+[wt 0.1]
+
+[cameraMove 4.0 0,0 1.0]
+
+[fadein black 3.5]
+[bgm BGM_MAP_60 2.0]
+[wait fade]
+[wt 1.0]
+[charaFadeTime X 0.8 0.6]
+
+[charaPut Y 0,0]
+[charaEffect Y bit_talk_miko2]
+[se ade454]
+[seStop ade454 2.2]
+[wt 2.5]
+
+＠？？？
+はーい、皆さんこちらですよ～。[r]安心してくださいね、何も心配はいりませんから。
+[k]
+
+＠？？？
+あの光に向かってゆけば大丈夫です。[r]なにしろ先輩の残した光の道しるべですから。
+[k]
+
+＠？？？
+……それにしても、魂の道案内って意外と大変ですね。
+[k]
+
+＠？？？
+邪馬台国なき後、今も[#彷徨:さまよ]い続ける魂を導き、[r]光の先へと……。
+[k]
+
+＠？？？
+ある程度、いえ若干、というかほんのちょっと[r]自業自得気味とはいえ、流石に飽きてき……。
+[k]
+
+＠？？？
+これも邪馬台国二代女王の責任とはいえ、[r]アフターサポートにも限度ってものが……。
+[k]
+
+[messageOff]
+[wt 0.2]
+[charaMove Y 0,-15 1.0]
+[wt 0.7]
+
+＠？？？
+……はぁ。
+[k]
+
+＠？？？
+まあ、一人でぶつぶつ言っても仕方ありませんね。
+[k]
+
+[messageOff]
+[charaMove Y 0,0 0.3]
+[wt 0.8]
+
+＠？？？
+さっさと片づけて楽しいプレミアムフライデーと[r]いきましょう。今日は思いっきり飲むぞー！
+[k]
+
+＠？？？
+一人で！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠？？？
+……虚しいですぅ。
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_60 2.0]
+[se ade393]
+[seVolume ade393 0 0]
+[seVolume ade393 1.0 0.2]
+[wt 1.5]
+
+＠？？？
+……って、あれ？　なんでしょうこの感じ。[r]小さな光と……、それに……。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.1]
+[charaPutFSR Y 2000,2000]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[effect bit_talk_blight_01]
+[cueSe SE_21 21_ade588]
+[seVolume 21_ade588 0 0.1]
+[seVolume 21_ade588 1.0 0.4]
+[seStop 21_ade588 1.5]
+[wt 0.7]
+
+
+[se ad327]
+[seVolume ad327 0 0]
+[seVolume ad327 1.2 0.4]
+[effect bit_talk_suspicious 0,0]
+[wt 1.5]
+[seStop ad327 3.0]
+[seStop ade393 3.0]
+[wt 0.5]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[effectStop bit_talk_suspicious]
+[effectStop bit_talk_blight_01]
+[effectDestroy bit_talk_blight_01]
+[effectDestroy bit_talk_suspicious]
+[wt 0.1]
+[charaPut Y 0,0]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_129 0.1]
+
+＠？？？
+嘘？　この気配は……、[#凶つ闇:まがつやみ]！？[r]そんな、まつろわぬ民の魂はあの時すべて光に……。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadein P 1.0 0,-200]
+[charaFadeTime Q 0.9 0.6]
+[charaMove P -50,-200 2.0]
+[wt 1.0]
+
+[se ad999]
+[seVolume ad999 0 0.3]
+[wt 1.0]
+[seStop ad999 0.5]
+
+[charaFace O 26]
+[charaFadein O 0.7 120,0]
+[charaMove O 110,0 0.7]
+[wt 1.4]
+
+[charaFace I 26]
+[charaFadein I 0.1 110,0]
+[wt 0.1]
+[charaFadeout O 0.6]
+[wt 0.8]
+
+
+＠？？？
+どうやら、そういうわけでもないようですよ。
+[k]
+
+[messageOff]
+[charaFadeout I 0.6]
+[charaFadeout Q 0.6]
+[charaFadeout P 0.6]
+[wt 0.7]
+
+＠？？？
+え？　あ、あなたは……！？
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFadein P 0.7 -50,-200]
+[charaFadeTime Q 0.7 0.6]
+
+[charaTalk I]
+[charaFace I 26]
+[charaFadein I 0.7 110,0]
+[wt 1.0]
+
+[charaCrossFade I 1098248640 26 0.7]
+[wait charaCrossFade I]
+[wt 0.6]
+
+＠山南敬助
+お初にお目にかかります。
+[k]
+
+＠山南敬助
+[line 3]邪馬台国二代女王、壱与様。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_129 2.0]
+[wait fade]
+
+[effectDestroy bit_talk_suspicious 0,0]
+
+[charaPut Y 2000,2000]
+[charaEffectStop Y bit_talk_miko2]
+
+[charaFadeout I 0.1]
+[charaFadeout X 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+
+[sceneSet P 163600 1]
+[charaScale P 1.3]
+
+[sceneSet Q 163600 1]
+[charaScale Q 1.2]
+
+[charaSet R 11007000 1 サブレイヤー_ノッブ]
+[charaSet S 10007001 1 サブレイヤー_沖田オルタ]
+[charaSet T 1098248700 1 サブレイヤー_沖田オルタ]
+
+[charaTalk depthOff]
+[charaDepth P 1]
+[charaDepth Q 2]
+[charaDepth U 2]
+[charaDepth A 3]
+[charaDepth J 4]
+[charaDepth R 5]
+[charaDepth S 6]
+[charaDepth T 7]
+[charaDepth B 8]
+[charaDepth L 9]
+
+[scene 163600]
+[charaFadein M 0.1 100,-200]
+[wt 2.0]
+
+[charaMove M -100,-200 8.0]
+[wt 0.5]
+
+[fadein black 2.0]
+[se ad462]
+[seVolume ad462 0.0 0.0]
+[seVolume ad462 2.0 1.0]
+[wait fade]
+[wt 3.0]
+
+[charaFadeout M 1.5]
+[seStop ad462 1.5]
+[wt 1.0]
+[cueSe SE_22 22_ade803]
+[wt 1.2]
+
+[bgm BGM_EVENT_66 0.1]
+
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠ノッブ
+で、どこなんじゃここは？[r]妙に風情があるところじゃが。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠沖田総司
+復活した邪馬なんとか……、じゃないんです？
+[k]
+
+？1：なにがどうなっているのかな？
+
+？2：ぐだぐだしてきました？
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[charaPut Z 1]
+[charaEffect Z bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+とりあえず、うまくレイシフトできたようだね。
+[k]
+
+[charaFace D 1]
+
+＠ダ・ヴィンチ
+それじゃあ、あとはよろしく。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+毎度投げやりすぎるじゃろ！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk D]
+[charaFace D 33]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+私に言われても困る。
+[k]
+
+[charaFace D 0]
+
+＠ダ・ヴィンチ
+とにかく座標的にはそこが例のＳＯＳの発信源で[r]あることは間違いないんだ。
+[k]
+
+[charaFace D 10]
+
+＠ダ・ヴィンチ
+あ、そろそろお茶の時間だし、[r]失礼してもいいかな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+だめじゃこの天才、絶妙にやる気がない。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠沖田オルタ
+しまった、確かにおやつを食べてから[r]出発すればよかった。悲しみ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+ええい、わしの金平糖でも食っておれ。
+[k]
+
+＠ノッブ
+おい、邪馬台国女王！[r]どういうことじゃこれは！？
+[k]
+
+[charaFace A 16]
+
+＠ノッブ
+どう見ても以前に来た邪馬台国とやらではないぞ！
+[k]
+
+[charaFace A 13]
+
+＠ノッブ
+なんかそこはかとなく現代にも通じる[r]悠久の風情があるんじゃが！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠卑弥呼
+ごめーん、あたしもよくわかんない。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+おまえが滅んだはずの邪馬台国から[r]ＳＯＳが来てるとか抜かすから、
+[k]
+
+＠ノッブ
+わざわざわしらが出向いたんじゃろが！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠沖田総司
+はいはい、ノッブはセミの抜け殻でも[r]見ててくださいね。
+[k]
+
+[charaFace B 12]
+
+＠沖田総司
+で、そのＳＯＳとやらはまだ出てるんですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠卑弥呼
+それがいまいち反応がぼやけてて……、[r]もう少し気合い入れて探ってみるから待ってて。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 25]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+何かわかったらまた知らせるから、[r]いったん通信を切るよ。
+[k]
+
+＠ダ・ヴィンチ
+いつものことだけど、どうも通信が安定しない。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠マシュ
+先輩、お気をつけて！
+[k]
+
+＠マシュ
+メンバー選定のくじに外れたのは残念ですが、[r]次回は当選目指して頑張ります！
+[k]
+
+[charaFace E 2]
+
+＠マシュ
+マシュ・キリエライト、マシュ・キリエライトを[r]よろしくお願い致します！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠織田信勝
+姉上！　どうかお気をつけて！
+[k]
+
+[charaFace G 2]
+
+＠織田信勝
+顔色悪い人斬り、何かの時は姉上の盾になれよ！[r]いや、何かでなくてもなれ！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+＠茶々
+沖田ちゃん、持たせたお弁当の卵焼き、[r]甘いやつだから楽しみにしてるといいし！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_66 2.0]
+
+[wt 0.5]
+[charaFadeout H 0.1]
+[wt 0.1]
+[se ad1]
+[charaEffectStop Z bit_talk_10_LowLevel]
+[wt 0.2]
+[charaPut Z 2000,2000]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+マシュのテンションおかしくなかった？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠沖田総司
+くじ引きに外れたのが残念そうでしたからねぇ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+はぁ……、しかし、なんでわしがこんな小間使い[r]みたいなことをさせられとんじゃ。
+[k]
+
+[charaFace A 17]
+
+＠ノッブ
+こう見えても正一位じゃぞ、わし。死後じゃが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠沖田総司
+くじ引きの結果なんで仕方ないでしょ。
+[k]
+
+[charaFace B 15]
+
+＠沖田総司
+というか、メンバー選定がくじ引きって、[r]これでいいんですかね、カルデア。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+しかも、わしと貴様とオルタ、三騎しか送り込めんとは[r]カルデアのリソースもたいしたことないのう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠沖田総司
+だいぶ変な特異点らしくて、これでも精一杯って[r]言ってたんだから文句言わないでくださいよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+やれやれ、とにかくさっさと片づけて[r]豪勢な[#夕餉:ゆうげ]でも用意してもらうとするか。
+[k]
+
+[charaFace A 16]
+
+＠ノッブ
+わしったら、[r]キンカンみたいな接待は許さんのじゃからね！
+[k]
+
+[charaFace A 13]
+
+＠ノッブ
+気に入らんかったら助走つけて頭に[#盃:さかずき]ぶつけんぞ！
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaMoveReturn A -6,0 0.3]
+[se ad77]
+[seStop ad77 0.4]
+[wt 0.7]
+[charaMoveReturn A -6,0 0.3]
+[se ad77]
+[seStop ad77 0.4]
+[wt 1.0]
+
+[charaFace A 11]
+
+＠ノッブ
+なんじゃ？　なんぞ用か、オルタ。[r]マントを引っ張るでないわ。
+[k]
+
+[charaFace A 16]
+
+＠ノッブ
+わしのチャーミングポイントが伸びるじゃろ。[r]金平糖はもうないぞ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠沖田オルタ
+金平糖はもうないのか、残念。[r]だが私は引っ張ってないぞ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+じゃあ沖田か？
+[k]
+
+[charaFace A 11]
+
+＠ノッブ
+いくらわしが頼りになりすぎる大名じゃからって[r]顔に似合わんことするでないわ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠沖田総司
+え……、キモ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+マジレスやめい。[r]ええい、じゃあ[%1]か！
+[k]
+
+＠ノッブ
+急に甘えん坊属性とかつけても蘭丸でもない限り[r]なんとも思わないんじゃからね、わし！
+[k]
+
+？1：自分でもないです
+
+[charaFace A 16]
+
+＠ノッブ
+じゃあ、いったい誰が……、
+[k]
+
+？2：なんでちょっとかわいく言ったの
+
+[charaFace A 14]
+
+＠ノッブ
+えっ……元祖戦国萌え系大名の魅力を[r]思い出してほしいっていうか……
+[k]
+
+？！
+
+[messageOff]
+[wt 0.2]
+
+
+[charaMoveReturn A -6,0 0.3]
+[se ad77]
+[seStop ad77 0.4]
+[wt 0.7]
+[charaMoveReturn A -6,0 0.3]
+[se ad77]
+[seStop ad77 0.4]
+[wt 1.0]
+
+[charaFace A 13]
+
+＠ノッブ
+だ[messageShake 0.05 5 5 0.3]からやめんか！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk J]
+[charaFace J 15]
+[charaFadein J 0.1 1]
+
+[charaMoveReturn J 0,7 0.3]
+
+＠J：？？？
+ひゃっ……！？
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+…………。
+[k]
+
+[charaFace A 13]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠ノッブ
+誰[messageShake 0.05 5 5 0.7]じゃ貴様ああああああああ！！！！？？？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 12]
+[charaFadein J 0.1 1]
+[charaShake J 0.03 3 3 0.5]
+
+＠子供
+……あうぅ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠沖田総司
+子供ですか……？　それにその体……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠沖田オルタ
+おい、やめろ第六なんとか、おびえているじゃないか。[r]大丈夫だぞ、おなかでも減っているのか？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale J 1.1]
+[charaScale A 1.1]
+
+[charaTalk off]
+[charaFadein P 0.6 100,-250]
+
+[charaFace J 12]
+[charaFadein J 0.6 -240,0]
+
+[charaFace A 11]
+[charaFadein A 0.6 240,0]
+
+[charaTalk on]
+[charaTalk J]
+
+＠子供
+……減ってるけど、違うもん。
+[k]
+
+[bgmStop BGM_EVENT_94 1.5]
+
+[charaFace J 11]
+
+＠子供
+……こっち、来て。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMove J -250,0 0.2]
+[charaMove A 230,0 0.4]
+[charaShake A 0.05 2 2 0.4]
+[se ad77]
+[seStop ad77 0.4]
+[wt 0.2]
+[charaMove J -247,0 0.2]
+[wt 0.7]
+[charaMove J -260,0 0.2]
+[charaMove A 220,0 0.4]
+[charaShake A 0.05 2 2 0.4]
+[se ad77]
+[seStop ad77 0.4]
+[wt 0.2]
+[charaMove J -257,0 0.2]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 13]
+
+＠ノッブ
+だから、わしのマントを引っ張るでないわ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.5]
+[charaFadeout J 0.5]
+[charaFadeout P 0.5]
+[wt 0.6]
+
+[charaScale J 1.0]
+[charaScale A 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠沖田総司
+よく見たらこの子、傷だらけじゃないですか。[r]マスター、ここは！
+[k]
+
+？1：行こう！
+
+[charaFace B 1]
+
+＠沖田総司
+はい！
+[k]
+
+[charaFace B 10]
+
+？2：いいかな？
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[subCameraOn]
+[charaLayer A sub]
+[charaLayer P sub]
+
+[subCameraFilter mask cut359_mask05]
+
+[charaScale A 1.3]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 0,300]
+[charaFadein P 0.1 0,150]
+
+[subRenderFadein 0.3 0,-800]
+[subRenderMove 0,-300 0.3]
+[wt 0.4]
+
+
+＠ノッブ
+とにかくわしからひっぺがせ！[r]動きにくいんじゃ！
+[k]
+
+[messageOff]
+
+[subRenderMove 0,800 0.3]
+[subRenderFadeout 0.3]
+[charaFadeout A 0.3]
+[charaFadeout P 0.3]
+[wt 0.3]
+
+[subCameraOff]
+[charaLayer A normal]
+[charaLayer P normal]
+[charaScale A 1.0]
+
+[charaFadeout J 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+？！
+
+＠沖田総司
+さあ、私が背負いますからこっちに。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 12]
+[charaFadein J 0.1 1]
+
+＠子供
+…[charaShake J 0.03 3 3 0.5]…あうぅ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠沖田総司
+え？　お、沖田さん全然怖くないですよ。[r][#壬生村:み ぶ む ら]でも子供たちには大人気だったんですから。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth J 4]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 -30,0]
+
+＠沖田オルタ
+私がおんぶしよう、さあ、こっちだ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMove C -30,-15 0.6]
+[se ad77]
+[seStop ad77 1.2]
+[wt 1.4]
+
+[charaFace J 12]
+[charaFadein J 0.4 260,0]
+[charaMove J 230,0 1.0]
+[se ad988]
+[seStop ad988 0.8]
+[wt 1.0]
+
+[charaTalk on]
+
+＠子供
+……ううぅ。
+[k]
+
+[messageOff]
+[charaMove J 215,0 0.6]
+[wt 0.6]
+[charaMoveReturn J 215,-2 0.3]
+[se ad183]
+[seVolume ad183 0 0.5]
+[wt 0.4]
+[charaMoveReturn J 215,-2 0.3]
+[wt 1.0]
+
+[charaFace J 2]
+
+＠子供
+……！　……いい匂い。おねちゃん好き。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace C 9]
+[wt 1.0]
+
+[se ad77]
+[charaMove C -30,0 0.5]
+[charaMove J 215,15 0.5]
+[wt 0.5]
+
+[charaTalk on]
+
+＠沖田オルタ
+よしよし、じゃあこの子はまじんさんに任せろ。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠沖田総司
+そ、そんな、私オルタのほうが私より[r]お子さん人気があるなんて……！？
+[k]
+
+[charaFace B 6]
+
+＠沖田総司
+刀が長くて長髪だから！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 11]
+[charaFadein J 0.1 215,15]
+[charaFace C 1]
+[charaFadein C 0.1 -30,0]
+
+＠子供
+……あっちだもん、はやく。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠沖田総司
+ちょっと釈然としませんが、とにかく行きましょう！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+あーあ、わしのマント、びろびろではないか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace J 11]
+[charaFadein J 0.1 215,15]
+[charaFace C 0]
+[charaFadein C 0.1 -30,0]
+
+＠沖田オルタ
+走るぞ、しっかりつかまってろ！
+[k]
+
+[charaTalk J]
+[charaFace J 11]
+
+＠子供
+……うん！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad443]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_81 1.5]
+[seStop ad443 1.5]
+[wait fade]
+
+[charaTalk on]
+
+[charaFadeout C 0.1]
+[charaFadeout J 0.1]
+
+[wt 1.0]
+
+[charaSet D 1098248900 1 獣人]
+[charaSet E 1098248910 1 黒い獣人1]
+[charaSet F 1098248910 1 黒い獣人2]
+[charaSet G 1098248910 1 黒い獣人3]
+
+[scene 163600]
+
+[charaScale K 1.2]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_kengekiall02]
+[wt 0.1]
+[se ad32]
+[wt 0.2]
+[se ad1014]
+[wt 0.3]
+[se ad1013]
+[wt 0.2]
+[effectStop bit_talk_kengekiall02]
+[wt 0.4]
+
+[se ad170]
+[effect bit_talk_14]
+[wt 0.2]
+
+[se ad671]
+[seVolume ad671 0 0.7]
+[charaTalk K]
+[charaFace K 9]
+[charaFadein K 0.4 0,15]
+
+[charaMoveScale K 1.0 0.4]
+[charaMove K 0,0 0.4]
+[charaShake K 0.05 2 2 0.7]
+[wt 0.5]
+[seStop ad671 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_80 0.1]
+
+
+＠K：？？？
+……デスクワーク続きで[r]体がなまってたとはいえ不甲斐ないです。
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaPut L 0,0]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect L appearanceReverse 1 0.25]
+[charaMoveReturn L 0,-5 0.4]
+[wt 0.4]
+
+
+＠獣頭の男
+所詮貴様はこの程度の女なのだ、壱与。[r]吾に勝てる道理などあるわけがなかろう。
+[k]
+
+＠獣頭の男
+貴様は卑弥呼なき邪馬台国のお飾りに過ぎん。
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaScale K 1.0]
+[charaTalk K]
+[charaFace K 3]
+[charaFadein K 0.1 1]
+
+＠壱与
+気にしてることをずけずけと言ってくれますね。
+[k]
+
+[charaFace K 6]
+
+＠壱与
+ですが、たとえその通りだとしてもここは通せません！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠獣頭の男
+相も変わらず愚かな女だ。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[se ad51]
+
+[charaTalk K]
+[charaFace K 9]
+[charaFadein K 0.1 1]
+
+＠壱与
+あの子、うまく逃げてくれるといいのですが……。[r]いえ、それより今は自分の心配でしょうか。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+＠獣頭の男
+滅びの巫女よ。吾がこの手で引導を渡してくれるわ。
+[k]
+
+[messageOff]
+
+[subCameraOn]
+[charaLayer A sub]
+[charaLayer M sub]
+
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth A 2]
+[wt 0.1]
+
+[subCameraFilter mask cut359_mask03]
+
+[charaScale A 1.4]
+[charaTalk off]
+[charaFace A 11]
+[charaFadein A 0.1 0,150]
+[charaFadein M 0.1 0,150]
+[se bac56]
+[subRenderFadein 0.3 -1500,-100]
+[subRenderMove 0,-100 0.3]
+[wt 0.6]
+
+[subRenderFadeout 0.2]
+[charaFadeout A 0.2]
+[charaFadeout M 0.2]
+[wt 0.2]
+
+[subCameraOff]
+[charaLayer A normal]
+[charaLayer M normal]
+[charaScale A 1.0]
+
+[charaTalk L]
+[charaFace L 5]
+
+[se ad563]
+[seVolume ad563 0.0 0.5]
+[effect bit_shot_01]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[se ad170]
+[effect bit_talk_14]
+[charaShake L 0.05 3 3 0.5]
+[wt 0.7]
+[effectDestroy bit_shot_01]
+
+[charaFace L 0]
+
+＠獣頭の男
+っ！？　これは……！
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[se ad346]
+[seStop ad346 0.5]
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+ん？　外したか？　わしアーチャーの時も[r]狙撃苦手じゃったからなぁ。
+[k]
+
+[charaFace A 12]
+
+＠ノッブ
+ま、適当に叩き込めば当たるじゃろ。[r]三段撃ちってそういうことなんじゃよね。
+[k]
+
+[charaFace A 13]
+
+＠ノッブ
+では派手にばらまくかの！　[se ad39][charaPut Y 0,0][charaEffect Y bit_talk_charge_red]これが魔王の三段う……、
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaFace B 15]
+[charaFadeinFSR B 0.3 500,0]
+[wt 0.1]
+[charaMoveFSR B 256,0 0.2]
+[bgm BGM_EVENT_80 0.5 0.5]
+[wt 0.2]
+
+[flashin once 0.2 0.1 FFFFFFAF FFFFFF00]
+[se ade37]
+[seStop ad39 0.1]
+[charaShake A 0.03 3 3 0.5]
+[charaMoveFSL A -30,0 0.4]
+[charaPut Y 2000,2000]
+[charaEffectStop Y]
+[wt 0.5]
+
+[charaTalk on]
+[charaFace A 16]
+
+＠ノッブ
+あたっ！？
+[k]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+
+＠沖田総司
+ちょっと待ってください、あそこで襲われてるのが[r]あなたのお仲間ですか？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 11]
+[charaFadein J 0.1 215,0]
+[charaFace C 0]
+[charaFadein C 0.1 -150,0]
+
+＠子供
+そう……、おねがいだもん。
+[k]
+
+[charaFace C 0]
+
+＠沖田オルタ
+わかった、私が先行しよう。[r]マスター、この子を頼む。
+[k]
+
+？1：任せて
+
+？2：おんぶする？
+
+？！
+
+[messageOff]
+[se ad987]
+[charaMove C -150,-8 0.4]
+[wt 0.4]
+[seStop ad987 0.1]
+[wt 0.2]
+
+[charaFace C 5]
+
+[charaEffect C bit_talk_charge_ppl]
+[se ad1061]
+[wt 0.5]
+[charaEffectStop C bit_talk_charge_ppl]
+[seStop ad1061 1.5]
+
+＠沖田オルタ
+よし！　……飛ぶぞ！
+[k]
+
+[charaFace J 11]
+
+＠子供
+シュシャも……、いく……！[charaMove J 100,0 0.4][se ad7]
+[k]
+
+
+[subCameraOn]
+[charaLayer B sub]
+[charaLayer P sub]
+
+[subCameraFilter mask cut359_mask05]
+
+[charaScale B 1.3]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0,300]
+[charaFadein P 0.1 0,80]
+
+[subRenderFadein 0.3 0,-800]
+[subRenderMove 0,-300 0.3]
+[wt 0.4]
+
+＠沖田総司
+えっ！？　ちょっと待ってください私オルタ！
+[k]
+
+[messageOff]
+[subRenderMove 0,800 0.3]
+[subRenderFadeout 0.3]
+[charaFadeout B 0.3]
+[charaFadeout P 0.3]
+[wt 0.3]
+
+[subCameraOff]
+[charaLayer B normal]
+[charaLayer P normal]
+[charaScale B 1.0]
+
+[charaFace C 7]
+
+＠沖田オルタ
+しまった、もう止まれないぞ。
+[k]
+
+[messageOff]
+[charaMove C -150,10 0.1]
+[charaMove J 100,20 0.1]
+[effect bit_talk_mgn_light_p -150,0]
+[se ad1057]
+[seVolume ad1057 0 0.7]
+[se ad959]
+[seStop ad959 1.0]
+[charaFadeout J 0.1]
+[charaFadeout C 0.1]
+[wt 1.2]
+[seStop ad1057 0.5]
+[wt 1.0]
+
+[bgm BGM_EVENT_80 1.0 1.0]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠沖田総司
+マスター、あの子が私オルタにくっついて！[r]ノッブ、私たちも！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+ええい、ガキまでくっついて行ってしもうたら、[r]適当に撃ち込めんじゃろうが！
+[k]
+
+＠ノッブ
+しかたない。行くぞ、マスター！
+[k]
+
+[messageOff]
+[wipeout rightToLeft 1.0 1.0]
+[se ad769]
+[seStop ad769 2.0]
+[bgmStop BGM_EVENT_80 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.8]
+
+[wipein leftToRight 1.0 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_24 0.1]
+
+[effect bit_talk_quickmove 0,0]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[se ad73]
+[charaFace C 0]
+[charaFadein C 0.3 -150,10]
+[charaFace J 0]
+[charaFadein J 0.3 100,10]
+[wt 0.1]
+[charaMove C -150,0 0.2]
+[charaFace J 11]
+[charaMove J 100,0 0.2]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+
+＠沖田オルタ
+大丈夫か、知らない奴。[r]それと背中のおまえ。
+[k]
+
+[charaTalk J]
+[charaFace J 0]
+
+＠子供
+凄く速かったけど……、大丈夫だもん。
+[k]
+
+[charaTalk C]
+[charaFace C 1]
+
+＠沖田オルタ
+うん、勇気があるのはいいことだぞ。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk K]
+[charaFace K 8]
+[charaFadein K 0.1 1]
+
+＠壱与
+あなたは！？　せっかく逃がしたのに[r]なぜ戻ってきたのですか？
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 11]
+[charaFadein J 0.1 1]
+
+＠子供
+イヨ……、助けなきゃ……。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 8]
+[charaFadein K 0.1 1]
+
+＠壱与
+……！
+[k]
+
+[charaFace K 2]
+
+＠壱与
+ありがとう。
+[k]
+
+[charaFace K 1]
+
+＠壱与
+それにあなたはあの時の……。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠沖田オルタ
+通りすがりのまじんさんだ、[r]おまえは知らない奴だが助けに来たぞ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠獣頭の男
+面倒なことになってきたな。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠沖田オルタ
+[line 3]ゆくぞ！
+[k]
+
+[messageOff]
+[se ad1006]
+[blur motion 0.2 4 10 0.5 0.6 0.05 100]
+[charaMove C 0,15 0.2]
+[charaMoveScale C 1.1 0.2]
+[charaFadeout C 0.2]
+[wt 0.2]
+[blurOff motion 0.1]
+[fadeout black 0.1]
+[wait fade]
+
+[charaScale C 1.0]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad473]
+[effect bit_talk_gold_slash_01]
+[wt 0.5]
+[flashin once 0.2 0.1 FFFFFFAF FFFFFF00]
+[effectDestroy bit_talk_gold_slash_01]
+[wt 0.2]
+[cameraMove 0.2 0,-25 1.1]
+[scene 163600]
+[effect bit_talk_14]
+[se ad1032]
+[se ad881]
+[se ad774]
+[seVolume ad774 0 0.3]
+[se ad880]
+[se ad632]
+[seVolume ad632 0 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 4]
+[charaDepth L 5]
+
+[se ad471]
+[charaTalk off]
+[charaFace C 2]
+[charaFadeinFSR C 0.3 300,0]
+[charaFace L 0]
+[charaFadeinFSL L 0.3 -300,0]
+[charaMoveFSL L -240,0 0.1]
+[charaMoveFSR C 240,0 0.1]
+[charaShake C 0.05 2 2 1.4]
+[charaShake L 0.05 2 2 1.4]
+[wt 1.0]
+[seStop ad774 0.5]
+[charaShake C 0.07 2 2 0]
+[charaShake L 0.07 2 2 0]
+
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 5]
+
+＠沖田オルタ
+おまえの剣……、なんだか変な感じだな。[r]すごく良くない感じがするぞ。
+[k]
+
+[charaTalk L]
+[charaFace L 0]
+
+＠獣頭の男
+……ほう、勘が良いな。
+[k]
+
+[messageOff]
+[effect bit_talk_14]
+[se ad881]
+[se ad618]
+
+[cameraMove 0.3 0,0 1.01]
+
+[charaMoveFSL L -340,0 0.2]
+[charaMoveFSR C 340,0 0.2]
+
+[seStop ad632 0.5]
+[seStop ad1012 0.5]
+[wt 0.1]
+
+[charaShakeStop L]
+[charaShakeStop C]
+
+[charaFadeout L 0.2]
+[charaFadeout C 0.2]
+[wt 0.2]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout L 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 -250,0]
+[charaMove C -20,0 0.2]
+[se ad671]
+[seStop ad671 0.6]
+[wt 0.2]
+[charaMove C 0,0 0.2]
+[wt 0.6]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth A 6]
+[charaDepth B 7]
+
+[charaTalk off]
+
+[charaFace A 11]
+[charaPutFSL A -256,0]
+[se ad73]
+[charaEffect A bit_talk_quickmove]
+[charaSpecialEffect A appearanceReverse 1 0.25]
+[charaMoveReturnFSL A -256,-5 0.4]
+
+[charaFace B 5]
+[charaPutFSR B 256,0]
+[se ad73]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect B appearanceReverse 1 0.25]
+[charaMoveReturnFSR B 256,-5 0.4]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 13]
+
+＠ノッブ
+待たせたの！　って、なんじゃこのワンワンマンは？
+[k]
+
+[charaTalk B]
+[charaFace B 14]
+
+＠沖田総司
+いやいや、ワンワンマンて……、
+[k]
+
+[charaFace B 8]
+
+＠沖田総司
+確かにワンワンマンですね。
+[k]
+
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk L]
+[charaFace L 6]
+[charaFadein L 0.1 1]
+
+＠獣頭の男
+貴様らは……。
+[k]
+
+[charaFace L 0]
+
+＠獣頭の男
+おまえ達、こやつらの相手をしておけ。[r]吾は壱与を仕留める。
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaTalk off]
+
+[se ade210]
+[wt 0.5]
+
+[charaFace D 0]
+[charaFadeinFSR D 0.4 300,0]
+[charaFace U 0]
+[charaFadeinFSL U 0.4 -300,0]
+[seStop ade210 0.6]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk D]
+
+＠獣人
+はっ！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout U 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+壱与？　はて、どっかで……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFadein K 0.1 1]
+
+＠壱与
+第六天魔王様、その節は大変お世話になりました。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+その声……、ああ貴様、あの時の！[r]ていうか、体あったんかおまえ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth E 4]
+[charaDepth F 5]
+[charaDepth G 3]
+
+
+[charaTalk off]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadeinFSL E 0.1 0]
+[charaFadein F 0.1 1]
+[charaFadeinFSR G 0.1 2]
+
+[se ad19]
+
+＠黒い獣人達
+ヴォアアアアアア！！！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[seStop ad19 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk K]
+[charaFace K 6]
+[charaFadein K 0.1 1]
+
+＠壱与
+詳しい話は後程、今は彼らを！
+[k]
+
+？1：わかった！
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠沖田総司
+承知！　私オルタ、速攻で決めますよ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠沖田オルタ
+任せろ、私ノーマル！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：みんな、お願い！
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠ノッブ
+ところで、獣人に襲われるって[r]普通に考えたら割とえらいことよな。
+[k]
+
+[charaFace A 15]
+
+＠ノッブ
+カルデアにおると麻痺しとるが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk K]
+[charaFace K 6]
+[charaFadein K 0.1 1]
+
+＠壱与
+気を付けてください、ただの獣人ではありません！[r]彼らの[#纏:まと]う黒い泥に直に触れぬよう、お気を付けを！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠沖田オルタ
+確かに嫌な感じを[#纏:まと]っているな。[r]ベタベタしそうだし触らないように気を付けよう。
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+[soundStopAll]
+[end]

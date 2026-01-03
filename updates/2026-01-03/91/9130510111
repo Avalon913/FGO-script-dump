@@ -1,0 +1,1041 @@
+
+＄91-30-51-01-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3051901 1 ドン・キホーテ]
+[charaSet B 3051911 1 サンチョ]
+[charaSet D 1098255100 1 通信用ノイズ]
+[charaSet E 98006200 1 ゴースト]
+[charaSet F 98115000 1 エフェクト用]
+
+[charaSet G 3051911 1 サンチョ_カットイン用]
+[charaScale G 1.3]
+[sceneSet H 130000 1]
+[charaScale H 2.2]
+[charaSet I 98115000 1 エフェクト用]
+[imageSet J back10000 1]
+[charaScale J 1.01]
+[imageSet K back10000 1]
+[charaScale K 1.01]
+[sceneSet L 130000 1]
+[charaScale L 1.2]
+
+[sceneSet O 147202 1]
+[charaSet P 98115000 1 エフェクト用]
+[charaScale P 0.6]
+
+[charaDepth E 2]
+[charaDepth F 3]
+
+[charaPut D 1200,1200]
+[charaEffect D bit_talk_10_LowLevel]
+
+[branchQuestClear lblClear01b 3000303]
+
+[label lblConf01a]
+
+[charaSet C 98111500 1 ダ・ヴィンチ]
+[charaMove C 0,-90 0.1]
+
+[branch lblConf01end]
+[label lblClear01b]
+
+[charaSet C 1098124510 1 ダ・ヴィンチ]
+
+[label lblConf01end]
+
+[scene 107200]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+
+[bgm BGM_EVENT_63 0.1]
+[fadein black 0.5]
+[wait fade]
+[wt 0.2]
+
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut F 1]
+[charaEffect F bit_talk_41_fs]
+[charaMoveScaleEase A 1.2 0.2 easeOutQuint]
+[charaMoveEase A 0,40 0.2 easeOutQuint]
+[blur motion 0.2 4 200 0.5 0.6 0.02 200]
+[charaFadeout A 0.2]
+[wt 0.3]
+[charaPut F 2500,2500]
+[charaEffectDestroy F bit_talk_41_fs]
+[charaScale A 1.0]
+[blurOff motion 0.1]
+[wt 0.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaPut F 1]
+[wt 0.2]
+[cueSe SE_21 21_ad1091]
+[se ad618]
+[charaEffect F bit_talk_h_slash01_fs]
+[wt 0.2]
+[charaShake E 0.05 3 3 0.4]
+[wt 0.6]
+[se ad42]
+[effect bit_talk_atomization]
+[charaSpecialEffect E erasure 1 1.0]
+[wt 0.3]
+
+[wt 2.9]
+[effectDestroy bit_talk_atomization]
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth B 1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ドン・キホーテ
+敵幽霊、討ち取ったりぃ！
+[k]
+
+？1：やった！
+？！
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.2 240,0]
+
+＠サンチョ
+はい。お二人とも、お疲れ様でございました。
+[k]
+
+[charaFace A 1]
+
+＠ドン・キホーテ
+ハッハッハ、何のこれしき！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 0,0]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1]
+
+＠ダ・ヴィンチ
+助かった！　後は修正が告知され次第、[r]帰還作業を開始するよ。
+[k]
+
+？1：お疲れ様ー！
+？！
+
+[messageOff]
+[effect bit_sepia01_fade_fs]
+
+[wt 1.5]
+[se ade84]
+[bgmStop BGM_EVENT_63 1.0]
+[wipeout circleIn 1.0 1.0]
+[wait wipe]
+[effectDestroy bit_sepia01_fade_fs]
+[charaFadeout C 0.1]
+[charaPut D 1200,1200]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFace B 0]
+[charaFadein B 0.1 120,0]
+[charaFadein A 0.1 -120,0]
+
+[wt 1.0]
+[seStop ade84 1.5]
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_92 0.1]
+
+
+＠ドン・キホーテ
+こんな感じでしたな。幽霊海賊たちは、[r]意外に歯応えがなかった。
+[k]
+
+
+＠サンチョ
+はい。敵と呼ぶにはあまりに弱々しいものでした。[r]……考えてみると、それも変ですよね。
+[k]
+
+＠サンチョ
+その程度の幽霊が集まったところで、[r]特異点になるはずもありませんが……。
+[k]
+
+？1：船、調べ直してみない？
+？！
+
+[charaFace A 0]
+
+＠ドン・キホーテ
+そうですな。
+[k]
+
+＠ドン・キホーテ
+幽霊はいなくなったはずですが、[r]まだ何かあるやもしれません。
+[k]
+
+[charaFace B 1]
+
+＠サンチョ
+賛成です。[r]それでは早速、探索と参りましょう。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_92 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[scene 130000]
+
+[wt 2.0]
+
+[fadein black 1.5]
+[se ad93]
+[wait fade]
+[wt 0.5]
+
+
+
+[bgm BGM_EVENT_141 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein B 0.1 120,0]
+[charaFadein A 0.1 -120,0]
+
+＠ドン・キホーテ
+ここが船長室ですな。[r]ふむ、なるほど立派だ。
+[k]
+
+[charaFace A 2]
+＠ドン・キホーテ
+それ故にけしからん、弱き者を糧にして、[r]こんな豪華な部屋を作るなど！
+[k]
+
+＠ドン・キホーテ
+[#打:ぶ]ち壊してしまいましょう、すぐに！
+[k]
+
+？1：まあそれはちょっと待って
+？！
+
+＠サンチョ
+そうですね、旦那様。[r]ここに手がかりがあるかもしれません。
+[k]
+
+[charaFace B 1]
+＠サンチョ
+それを調べて、何もないとわかってから、[r][#打:ぶ]ち壊しましょう。
+[k]
+
+[charaFace A 1]
+
+＠ドン・キホーテ
+ウム！
+[k]
+
+[charaFace A 0]
+＠ドン・キホーテ
+では、手がかりを探してみましょう。[r]はてさて、何が出るやら……。
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 0]
+[se ad77]
+[se ade46]
+[charaMoveReturn B 128,0 0.5]
+[wt 0.5]
+[charaMoveReturn B 128,0 0.5]
+
+[wt 1.0]
+
+＠サンチョ
+これは……お酒ですね。[r]かなり上等です。取っておきましょう。
+[k]
+
+[charaFace A 3]
+
+＠ドン・キホーテ
+いる？
+[k]
+
+[charaFace B 0]
+
+＠サンチョ
+気付けの一杯が必要になるかもですし。
+[k]
+
+[charaFace A 4]
+
+＠ドン・キホーテ
+まあ、ワシは成人しておるから大丈夫だが……。[r]おや、この絵画は？
+[k]
+
+？1：家族の絵……かな？
+？！
+
+[charaFace A 0]
+＠ドン・キホーテ
+そのようですな。この船の持ち主かと。[r]絵の後ろにサインもあります。
+[k]
+
+＠ドン・キホーテ
+『フエンテ・デ・エスペランサ号船長。[r]　ミゲル・エルナンデス・デ・ソト』
+[k]
+
+[charaFace A 4]
+＠ドン・キホーテ
+そして走り書きは……[r]『最愛の家族と共に』
+[k]
+
+＠ドン・キホーテ
+……ですな。
+[k]
+
+[charaFace B 4]
+
+＠サンチョ
+ゴーストたちの正体はこれだった、[r]ということでしょうか？
+[k]
+
+？1：でも、海賊らしきゴーストばかりだったような？
+？！
+
+[charaFace A 0]
+
+＠ドン・キホーテ
+確かに。サンチョ、おまえの見立てではどうだ？
+[k]
+
+[charaFace B 0]
+
+＠サンチョ
+そうですね……弱々しい感じでしたが、[r]敵対的ではありました。
+[k]
+
+＠サンチョ
+幾人かは、明らかに元々海賊だったと[r][#思:おぼ]しき姿でしたし。
+[k]
+
+[charaFace A 4]
+
+＠ドン・キホーテ
+だのう。いくらワシが[#耄碌:もうろく]してても、[r]それくらいの判別はついた。
+[k]
+
+[messageOff]
+[charaFace B 4]
+
+[subCameraOn 1]
+
+[charaLayer G sub #A]
+[charaLayer I sub #A]
+[charaLayer K sub #A]
+[charaLayer H sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask02 4 91,86,165,255]
+[subRenderScale #A 1.01]
+
+[charaDepth G 7]
+[charaDepth I 6]
+[charaDepth K 4]
+[charaDepth H 3]
+
+[charaScale G 2.0]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 150,350]
+[charaFadein H 0.1 -100,0]
+
+[bgmStop BGM_EVENT_141 1.5]
+[subRenderFadein #A 0.2 50,-270]
+[subRenderMove #A 0,-270 0.2]
+[wt 0.4]
+
+[charaFace B 0]
+[charaFace G 0]
+
+[se ade116]
+[charaFadeTime K 0.2 0.5]
+[charaFadeTime J 0.2 0.5]
+[wt 0.1]
+[charaPut I 340,355]
+[charaEffect I bit_talk_37 0,0]
+[wt 0.8]
+
+[cueSeStop 21_ade565 0.4]
+
+[subRenderFadeout #A 0.4]
+[charaFadeout J 0.4]
+[wt 0.4]
+
+[charaFadeout G 0.1]
+[charaFadeout K 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+＠サンチョ
+……閃きました。
+[k]
+
+[subCameraOff]
+[charaLayer H normal]
+[charaLayer G normal]
+[charaLayer I normal]
+
+[charaFace A 2]
+
+＠ドン・キホーテ
+急に！？
+[k]
+
+[bgm BGM_REQUIEM 0.1]
+[charaFace B 1]
+
+＠サンチョ
+旦那様を見ていて閃きました。[r]さすが旦那様。立ってるだけで偉大です。
+[k]
+
+[charaFace A 4]
+
+＠ドン・キホーテ
+その褒め言葉、虚無に近くない？
+[k]
+
+？1：それはそうと何を閃いたの？
+？！
+
+[charaTalk B]
+[charaFace B 1]
+
+＠サンチョ
+[#航海日誌]です。
+[k]
+
+＠サンチョ
+こちらの船長は真面目そうな方ですから、[r]航海日誌などをつけているやもしれません。
+[k]
+
+[se ad77]
+[charaFace B 0]
+＠サンチョ
+その手のものなら、机にあるのではないか、と。[r]……はい、ありました。
+[k]
+
+？1：なるほど……
+？！
+
+＠サンチョ
+読める言語で書かれているようです。[r]執筆したのは、先ほどの船長ですね。
+[k]
+
+[charaFace B 5]
+＠サンチョ
+……ただ、執筆されたのはかなり昔のようです。
+[k]
+
+＠サンチョ
+レイシフトしてきたこの時代から、[r]さらに二百年ほど前というところでしょうか。
+[k]
+
+[charaFace A 2]
+
+＠ドン・キホーテ
+それはまた年代物だなあ！
+[k]
+
+[charaFace A 4]
+＠ドン・キホーテ
+……む。待てよ。となると、これは二百年前の船か？[r]その割には……。
+[k]
+
+[charaFace B 5]
+
+＠サンチョ
+はい。二百年前の船の割には、何もかもが[r]新しすぎます。
+[k]
+
+？1：幽霊船……？
+？！
+
+[bgmStop BGM_REQUIEM 1.0]
+
+[charaFace B 1]
+＠サンチョ
+ともかく、日誌を読み上げさせていただきます。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth G 5]
+[charaDepth L 4]
+[charaDepth A 3]
+[charaDepth B 2]
+
+[charaScale L 1.4]
+[charaFadein L 0.6 100,-240]
+[charaMove L -100,-240 30.0]
+[wt 0.6]
+[bgm BGM_EVENT_79 0.1]
+
+＠サンチョ
+『１０月１１日　微風・晴れ[r]　航海は極めて順調……』
+[k]
+
+＠サンチョ
+『１０月１３日　強風・雨[r]　雨が降り注いだ。樽に溜めておく』
+[k]
+
+[charaFace B 0]
+＠サンチョ
+『１０月２１日　無風・曇り[r]　取引は成功。これより帰還する』
+[k]
+
+＠サンチョ
+『妻と息子に会うのが楽しみだ。[r]　一年ぶりだから、大きく成長しているだろうな』
+[k]
+
+[charaFace B 3]
+＠サンチョ
+航海はしばらく順調だったようです。[r]少し飛ばしますね。
+[k]
+
+[messageOff]
+[se ade277]
+
+[charaFace B 1]
+[charaFadein B 0.1 120,0]
+[charaFace A 0]
+[charaFadein A 0.1 -120,0]
+
+[wt 1.5]
+
+＠サンチョ
+……ここから字が乱れていますね。[r]日付も天気も記録されていません。
+[k]
+
+＠サンチョ
+『海賊に襲撃された。船員たちは殺された。[r]　もうすぐ私も殺されるだろう』
+[k]
+
+＠サンチョ
+『だが、私はただでは死なないぞ。この船は私のものだ。[r]　だからもし、この船を奪われるのなら[line 3]』
+[k]
+
+＠サンチョ
+『大いなる呪いをもって、この船を誰にも奪わせない。[r]　我が命を代償とする秘伝の術式を使う』
+[k]
+
+＠サンチョ
+『この船は、[#未来永劫:みらいえいごう]私のものだ』
+[k]
+
+＠サンチョ
+それから、最後に血で図形が描かれています。
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaTalk A]
+[charaFadeout L 0.5]
+[wt 0.5]
+
+＠ドン・キホーテ
+図形？　どらどら……。[r]ううむ、これは何なのかのう。
+[k]
+
+？1：予想はつくけど……
+
+[charaFace B 1]
+
+＠サンチョ
+さすがでございますね。
+[k]
+
+[charaFace A 4]
+
+＠ドン・キホーテ
+むぅ、サッパリだ。[r]教えてくれないか、サンチョ。
+[k]
+
+？2：うーん、わからない……
+
+[charaFace B 1]
+
+＠サンチョ
+ああ、これなら私がわかります。[r]と言いましても専門ではないのですが……。
+[k]
+
+[charaFace A 3]
+
+＠ドン・キホーテ
+してサンチョ。[r]この図形は、いかなるものだ？
+[k]
+
+？！
+
+[messageOff]
+
+[charaTalk G,A]
+[charaDepth A 2]
+[charaDepth B 1]
+[charaDepth L 3]
+[charaDepth G 4]
+[charaFace G 1]
+[charaScale G 1.4]
+[charaScale L 1.4]
+[charaFadein G 0.4 120,-100]
+[charaFadein L 0.4 -120,-300]
+[charaMove G 120,0 20.0]
+[charaMove L -120,-200 20.0]
+[wt 0.6]
+
+＠G：サンチョ
+この図形は魔術式の一種ですね。
+[k]
+
+＠G：サンチョ
+ミゲル・エルナンデス船長は魔術師ではなくとも、[r]魔術の心得が多少あったようです。
+[k]
+
+[charaFace G 4]
+＠G：サンチョ
+そして彼は己が命を代償として、[r]一つの術式を完成させた。
+[k]
+
+＠G：サンチョ
+……この日誌に書かれた術式が具体的に、[r]どのようなものなのか。
+[k]
+
+＠G：サンチョ
+それは残念ながら、知識の足らぬ私には不明ですが。[r]予想はつきます。
+[k]
+
+[charaFace G 5]
+＠G：サンチョ
+ミゲル・エルナンデス船長は、[r]この船を大いなる呪いに[#変換し:か　　え]た。
+[k]
+
+＠G：サンチョ
+あの幽霊たちは間違いなく海賊でしたから。
+[k]
+
+＠G：サンチョ
+つまり……この船を手に入れようとした海賊は、[r]船長の呪いに感染したのでしょう。
+[k]
+
+＠G：サンチョ
+彼らは死後も感染したまま、[r]海上をさまようことになった[line 3]
+[k]
+
+[charaFace G 4]
+＠G：サンチョ
+そして恐らく、私たちも呪いに巻き込まれました。
+[k]
+
+＠G：サンチョ
+私たちは死ぬまで……いえ、[r]死後も呪いで拘束されてしまうのです。
+[k]
+
+[messageOff]
+[charaFace B 4]
+[charaTalk A,G]
+[charaFadeout G 0.5]
+[charaFadeout L 0.5]
+
+
+[charaFace A 5]
+[se ade238]
+[seStop ade238 1.5]
+[charaShake A 0.05 3 2 1.0]
+
+＠ドン・キホーテ
+あわわわわ……。[se ade238][seStop ade238 1.5][charaShake A 0.05 3 2 1.0][r]マスター殿、ワシはこういう展開ちと苦手でして。
+[k]
+
+？1：[&自分:わたし]もあまり得意じゃない[&な:よ]
+？！
+
+[bgmStop BGM_EVENT_79 1.0]
+
+
+
+＠サンチョ
+困りましたね、どうやらホラーな流れのようです。[r]ですが、これでやるべきことは見えました。
+[k]
+
+？1：その術式を破壊する
+？！
+
+[bgm BGM_SEIHAI_1 1.0]
+
+[charaFace B 1]
+＠サンチョ
+はい、左様でございます。
+[k]
+
+[charaFace A 1]
+
+＠ドン・キホーテ
+うむ。やるべきことが見えてきたなら、[r]後はそれに向かって突き進むべし、であるな！
+[k]
+
+[charaFace B 0]
+
+＠サンチョ
+この船もそれほど大きくありません。[r]日誌の図形と同じものは、すぐに見つかるでしょう。
+[k]
+
+[charaFace A 4]
+
+＠ドン・キホーテ
+いやいや、サンチョ。それは違うぞ。
+[k]
+
+[charaFace B 0]
+
+＠サンチョ
+[FFFFFF]？[-]
+[k]
+
+[charaFace A 5]
+
+＠ドン・キホーテ
+予感がする！　これはかの魔法使いフレストンとの[r]激戦もかくやという予感が！
+[k]
+
+[charaFace A 1]
+＠ドン・キホーテ
+さあ、サンチョ、マスター殿。[r]行きますぞ、我が騎士道をご照覧あれ！
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_SEIHAI_1 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFace B 4]
+[charaFadein B 0.1 120,0]
+[charaFadein A 0.1 -120,0]
+
+＠ドン・キホーテ
+[f large]見つからナーーーイ！
+[k]
+
+
+？1：た、確かに見つからない……
+？！
+
+[charaFace B 4]
+
+＠サンチョ
+おかしいですね。[r]船倉からあらゆる場所を調べました。
+[k]
+
+＠サンチョ
+これで見つからないはずはないのですが……。
+[k]
+
+[charaFace A 4]
+
+＠ドン・キホーテ
+見つかったのは、このどこか切なげでちょっと[r]呪われてそうな程度に不吉さが漂う人形です。
+[k]
+
+[charaFace A 3]
+
+＠ドン・キホーテ
+……要ります？
+[k]
+
+？1：いりません……
+？！
+
+[charaFace B 0]
+
+＠サンチョ
+あら、それではこの人形、[r]私が預からせていただきます。
+[k]
+
+[charaFace B 5]
+＠サンチョ
+少々気になることもございますし……。
+[k]
+
+？1：はい、どうぞ
+？！
+
+[charaFace B 1]
+＠サンチョ
+ありがとうございます。[r]さて、後はどこを探すべきでしょうか。
+[k]
+
+[charaFace A 5]
+
+＠ドン・キホーテ
+うーーーむ。[r]となると…………そうか、わかったぞ！
+[k]
+
+[charaFace B 0]
+
+＠サンチョ
+旦那様、それは？
+[k]
+
+[charaFace A 1]
+
+＠ドン・キホーテ
+船の中にないのなら、外であろう。[r]即ち、船底だ！
+[k]
+
+[charaFace B 0]
+
+＠サンチョ
+その可能性は低いと思いますが……。[r]一応、船の外板など確認いたしますか？
+[k]
+
+？1：うん、とりあえず見てみよう
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[cameraMove 0.1 0,0 1.01]
+[scene 107200]
+[sceneSet L 107200 1]
+[charaScale L 1.5]
+[charaDepth L 3]
+[charaDepth B 1]
+[charaDepth A 4]
+[charaFadein L 0.1 -150,-200]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk off]
+[charaFace A 4]
+[charaFadein A 0.1 -50,0]
+[charaMoveReturn A -50,10 0.4]
+[bgm BGM_EVENT_5 0.1]
+
+＠ドン・キホーテ
+ふーむ。ふーむ。ふーーーむ。[wt 0.5][charaMoveReturn A -50,10 0.4]
+[k]
+
+[messageOff]
+[charaFace B 0]
+[charaFadein B 0.1 120,0]
+[wt 0.1]
+
+[charaFadeout L 0.5]
+[charaFadeout A 0.5]
+[wt 0.1]
+
+＠サンチョ
+旦那様、そのように身を乗り出しては危険です。[r]落ちてしまえば、助けられませんよー。
+[k]
+
+？1：さすがに外側は見えにくいなー
+？！
+
+[charaTalk on]
+[charaFace B 0]
+＠サンチョ
+そうですね……しかも外板なら、[r]むしろ第三者に術式が目立ってしまいます。
+[k]
+
+＠サンチョ
+そう考えると可能性は低いですね。
+[k]
+
+[charaFace B 4]
+＠サンチョ
+……うーん、つまりこの船にはない……？
+[k]
+
+？1：でも、船長の日誌だと……
+？！
+
+[charaFace B 5]
+＠サンチョ
+そこでございますね。[r]船長は船長室に立て籠もるほどに追い詰められていた。
+[k]
+
+＠サンチョ
+その状況で他所に出て行く余裕などないはずです。[r]というか、それなら逃げれば済む話ですし……。
+[k]
+
+[se ade428]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.2 -120,0]
+
+＠ドン・キホーテ
+見て回りました！　……残念ですが、[seStop ade428 0.5][r]それらしいものは皆無でしたな。
+[k]
+
+[charaFace B 4]
+
+＠サンチョ
+これで船のあらゆる場所、備品を調べましたが……。[r]術式の痕跡は見当たりません。
+[k]
+
+＠サンチョ
+一体どうしたものでしょうか……。
+[k]
+
+[charaFace B 0]
+＠サンチョ
+残っているのは……旦那様が仰ったように、[r]船底でしょうか。
+[k]
+
+[charaFace A 2]
+
+＠ドン・キホーテ
+そこになければ、もうこの船にはありませんな！
+[k]
+
+[charaFace B 4]
+＠サンチョ
+旦那様の仰る通り、[r]この船にはないとしか考えられませんね。
+[k]
+
+
+？1：そうなるとお手上げだー！
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.5]
+[scene 147202]
+
+[wipein rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+
+
+
+[cueSe Servants_9942580 m83608 0 0.8]
+[se ad416 0 0.4]
+[messageOff]
+[charaPut P 0,50]
+[charaEffect P bit_talk_water_splash]
+[wt 2.5]
+
+
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFace B 0]
+[charaFadein A 0.1 -120,0]
+[charaFadein B 0.1 120,0]
+[wt 0.5]
+[scene 107200]
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+
+＠ドン・キホーテ
+おお、先ほどの鯨ですな。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.0]
+[charaTalk off]
+
+[se ad37]
+
+[wt 2.0]
+
+[seStop ad37 1.0]
+[wt 1.0]
+
+[charaTalk on]
+[charaFace B 2]
+
+[bgm BGM_BATTLE_62 0.1]
+
+＠サンチョ
+[f large]あー！！
+[k]
+
+？1：サンチョ！？
+？！
+
+[charaFace A 2]
+
+＠ドン・キホーテ
+サ、サンチョやどうしたの！？
+[k]
+
+＠サンチョ
+鯨。
+[k]
+
+[charaFace A 0]
+
+＠A：二人
+[FFFFFF]？[-]
+[k]
+
+[charaFace B 2]
+
+＠サンチョ
+[#鯨に術式の図形が彫り込まれていました]。[r]……あの鯨が、この船の呪いの[#要:かなめ]です！
+[k]
+
+？1：何それーーー！？
+？！
+
+[messageOff]
+[bgmStop BGM_BATTLE_62 2.0]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

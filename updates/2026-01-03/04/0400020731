@@ -1,0 +1,287 @@
+
+
+＄04-00-02-07-3-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098269000 1 ＤＸ]
+[charaSet B 1098270200 1 カーマ]
+[charaSet C 1098270000 1 シオン]
+[charaSet D 1098270300 1 アーユス]
+[charaSet E 7046001 1 ドゥリーヨダナ]
+[charaSet F 98006200 1 悪性データ1]
+[charaSet G 98006200 1 悪性データ2]
+
+[imageSet R back10000 1 1]
+[charaScale R 1.3]
+
+[charaSet R 98115000 1 エフェクト用ダミー]
+[charaSet S 98115000 1 エフェクト用ダミー]
+[charaSet T 98115000 1 エフェクト用ダミー]
+
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSe Battle bac148]
+[charaPut R 300,-50]
+[charaEffect R bit_talk_blow]
+[wt 0.35]
+
+[cueSe Battle bac149]
+[charaPut S -300,50]
+[charaEffect S bit_talk_blow]
+[wt 0.35]
+
+[cueSe Battle bac18]
+[cueSe Battle bac150]
+[charaPut T 1]
+[charaEffect T bit_talk_14]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+
+[scene 189500]
+
+[charaTalk off]
+[charaDepth F 3]
+[charaDepth G 4]
+[charaDepth T 9]
+[charaFadeinFSR F 0 2]
+[charaFadeinFSL G 0 0]
+[charaShake F 0.02 3 4 0.5]
+[charaShake G 0.03 2 3 0.5]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaSpecialEffect F enemyErasure 0,0 1.5]
+[charaSpecialEffect G enemyErasure 0,0 1.5]
+[wt 0.2]
+[se ad52]
+[wait charaSpecialEffect F]
+[wt 0.7]
+[charaPut R 2000,2500]
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+[wt 0.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ＤＸ
+状況、終了。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+＠カーマ
+うーん、弱っ。[r]私たちが手伝うまでもなかったんじゃないですか？
+[k]
+
+？1：まあ、安全第一ということで
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+[se ad15]
+[charaFace A 1]
+[wt 1.4]
+
+[charaFace A 0]
+＠ＤＸ
+失礼。また別の箇所での脅威発生報告。[r][#生産部:グ　ロ　ウ]エリア寄りの場所である。
+[k]
+
+＠ＤＸ
+当機は引き続き対処に向かうつもりだが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠シオン
+付き合いましょう。[r]行きがけの駄賃というものです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ＤＸ
+繰り返し、感謝。[r]では案内する[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.15]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 6]
+[charaDepth E 5]
+
+[se ade422]
+[wt 0.1]
+[se ade421]
+[wt 0.4]
+
+[charaFace D 0]
+[charaFace E 0]
+[charaFadeinFSR D 0.4 2]
+[charaFadeinFSL E 0.4 0]
+[wt 0.3]
+[seStop ade421 0.4]
+[wt 0.1]
+[seStop ade422 0.4]
+[wt 0.6]
+
+[charaTalk on]
+＠アーユス
+待って待ってー。[r]どこ行くの？
+[k]
+
+？1：あれ、お仕事は落ち着いたの？
+？！
+
+＠アーユス
+うん、ちょっとはね。
+[k]
+
+[charaFace D 4]
+＠アーユス
+でも考えたら、損傷したＡＩの子が[r]みんなここにいるわけじゃないって気付いたの。
+[k]
+
+[charaFace D 3]
+＠アーユス
+[#生産部:グ　ロ　ウ]のほうに逃げていった子たちもいるでしょうから、[r]一応そっちも確認しなきゃって思って。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠シオン
+丁度いいですね。今から[#生産部:グ　ロ　ウ]のほうの[r]害虫駆除に向かおうとしていたところです。
+[k]
+
+[charaSet D 1098270330 1 アーユス]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 6]
+[charaTalk D]
+[charaFace D 0]
+[charaFace E 0]
+[charaFadeinFSR D 0.1 2]
+[charaFadeinFSL E 0.1 0]
+＠アーユス
+だったらばっちりね。[r]私たちも一緒に行かせてもらうわ！
+[k]
+
+[charaFace D 1]
+＠アーユス
+やっぱり真面目にお仕事が一番よ。[r]変な契約とか駄目なんだから！
+[k]
+
+[charaFace E 2]
+＠ドゥリーヨダナ
+へいへーい。[r]もう反論するのも疲れたわい。
+[k]
+
+？1：（捕まってこってり絞られたらしい……）
+？！
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_76 0.1]
+
+
+＠
+[a1b6df]流れに問題はなく、好ましい。[-]
+[k]
+
+＠
+[a1b6df]今しばらくの時間が必要だ。[-]
+[k]
+
+＠
+[a1b6df]あれが馴染むまで。[-][r][a1b6df]新たなる人格として動き出すまで。[-]
+[k]
+
+＠
+[a1b6df]そうすれば、程なく。[-]
+[k]
+
+＠
+[a1b6df]聖杯戦争は再開される。[-][r][a1b6df]されねばならない。[-]
+[k]
+
+＠
+[a1b6df]その果てにある、ただ一つ求める光。[-][r][a1b6df]聖杯戦争を利用する理由。[-]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+[a1b6df][line 3]我が、愛のために。[-]
+[k]
+
+
+
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStopEnd BGM_EVENT_76 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

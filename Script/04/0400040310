@@ -1,0 +1,980 @@
+
+
+
+
+＄04-00-04-03-1-0
+
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098276910 1 マシュ]
+[charaSet B 4034300 1 バーソロミュー]
+[charaSet C 33002001 1 エレシュキガル]
+[charaSet D 23006000 1 ＢＢドバイ]
+
+[sceneSet H 225800 1]
+[sceneSet I 223900 1]
+
+[imageSet L cut585_bbc_mini01 1]
+[imageSet M cut585_bbc_mini02 1]
+[imageSet N cut583_bbd_logo 1]
+[imageSet O cut587_text01 1]
+
+[charaSet P 1098276910 1 エフェクト用]
+[charaSet Q 1098276910 1 エフェクト用]
+
+[sceneSet R 223810 1]
+[imageSet S cut584_sandboat_deck 1]
+[charaScale S 1.35]
+[sceneSet T 223810 1]
+
+[sceneSet F 227000 1]
+[charaScale F 1.2]
+
+[sceneSet W 10000 1]
+[charaTalk depthOff]
+
+[sceneSet X 223810 1]
+[imageSet Y cut584_sandboat_deck 1]
+[charaScale Y 1.35]
+
+[cameraMove 0.1 0,0 1.01]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[se ad1]
+[wt 1.2]
+
+＠案内ロボット
+砂上船のご利用ですか？[r]では以下の設定を行ってください。
+[k]
+
+[se ade357]
+[seVolume ade357 0 0.6]
+
+＠案内ロボット
+搭乗者数：４名[r]自動操縦機能：あり
+[k]
+
+[seStop ade357 1.0]
+
+＠案内ロボット
+船の性能：Ａランク[r]コース：フリー
+[k]
+
+[cueSe SE_22 22_adm97]
+
+＠案内ロボット
+確認しました。[r]４番ドック　Ｅ－Ⅵ号に　お乗りください。
+[k]
+
+＠案内ロボット
+当サービスはムーン・ドバイ法に基づき、[r]使用にはどのような対価も責任も生じません。
+[k]
+
+＠案内ロボット
+破損された場合は修理ドックに入れ、[r]所有される場合は船のガイドに従ってください。
+[k]
+
+＠案内ロボット
+ではよい船旅を、人類の皆さま。[r]第一世代ＡＩを代表して、ご利用に感謝いたします。
+[k]
+
+[messageOff]
+[cueSe SE_23 23_ad1329 0]
+[cueSeVolume 23_ad1329 1.0 1.0]
+[wt 0.5]
+[se ad776 0]
+[seVolume ad776 1.5 0.4]
+[wt 0.5]
+
+[cueSe SE_24 24_ad1427 0]
+[cueSeVolume 24_ad1427 1.0 0.8]
+[wt 1.0]
+[wt 0.5]
+[seStop ad776 1.5]
+[cueSeStop 24_ad1427 2.0]
+[wt 0.5]
+[seStop 23_ad1329 2.0]
+[wt 0.5]
+
+[cueSe SE_24 24_ad1428 0]
+[cueSeVolume 24_ad1428 3.5 1.0]
+
+[subCameraOn 1]
+[charaLayer I sub #A]
+[charaLayer Q sub #A]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+[subRenderDepth #A 1]
+[charaDepth Q 3]
+[charaScale I 1.2]
+[charaFadein I 0 0,-320]
+
+[charaDepth X 0]
+[charaDepth Y 3]
+
+[charaDepth H 1]
+[charaDepth P 2]
+[charaDepth I 2]
+[charaDepth B 4]
+[charaDepth A 5]
+[charaDepth C 6]
+[charaScale H 1.2]
+[charaFadein H 1.5 -30,-280]
+[charaMove H 30,-280 5.0]
+
+[charaPut P -30,0]
+[charaEffect P bit_talk_lens_flare_fs]
+[charaMove P 30,0 5.0]
+[charaPut Q 0,40]
+[charaEffect Q bit_talk_lens_flare_fs]
+[wt 3.5]
+[charaEffectStop P bit_talk_lens_flare_fs]
+
+[subRenderFadein #A 1.0 0,0]
+[charaMove I 0,-280 5.0]
+[charaMove Q 0,0 5.0]
+[wt 1.5]
+[charaFadeout H 0.1]
+[charaEffectDestroy P bit_talk_lens_flare_fs]
+[seStop ad135 2.5]
+[charaScale X 1.2]
+[charaScale Y 1.574]
+[charaFadein X 0 0,-240]
+[charaFadein Y 0 0,-679]
+[wt 1.5]
+
+[cueSeStop 24_ad1428 2.5]
+[scene 223800]
+[subRenderFadeout #A 1.0]
+[charaMoveScaleEase X 1.01 2.0 easeOutSine]
+[charaMoveEase X 0,-200 2.0 easeOutSine]
+[charaMoveScaleEase Y 1.374 2.0 easeOutSine]
+[charaMoveEase Y 0,-589 2.0 easeOutSine]
+[wt 1.3]
+[charaFadeout I 0.1]
+[charaEffectDestroy Q bit_talk_lens_flare_fs]
+[wt 1.0]
+[charaLayer I normal]
+[charaLayer Q normal]
+[subCameraOff]
+[bgm BGM_SABERWARS2 0.1]
+
+[wt 0.2]
+
+？1：うっわあーーー！
+？2：ほんとに砂漠を行く船だーーー！
+
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠バーソロミュー
+ああ。揺れは海上とそう変わらない。[r]ずいぶんきめ細かい砂なんだろう。
+[k]
+
+＠バーソロミュー
+ガイドによると緊急時は電磁障壁で[r]船体を防御するらしい。
+[k]
+
+[charaFace B 13]
+
+＠バーソロミュー
+大型の削岩装置との衝突に備えてのもの……[r]との事だが、こちらは何の事か分からなかった。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エレシュキガル
+船の操縦はいいの？
+[k]
+
+＠エレシュキガル
+自信満々……いえ、[r]操舵したくてたまらない顔をしていたけど。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠バーソロミュー
+自動操縦があってね。今はそちらに任せている。
+[k]
+
+＠バーソロミュー
+ただ自動では決められたコースしか走らない。[r]目的地が決まり次第、手動に切り替えさせてもらうよ。
+[k]
+
+＠バーソロミュー
+しかし、これだけの船をノータイムで、[r]料金も無しで提供されるとはね。
+[k]
+
+[charaFace B 4]
+
+＠バーソロミュー
+海賊らしく強奪する気に[#溢:あふ]れていたんだが、[r]拍子抜けもいいところだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい。ムーン・ドバイじゅうで[r]カルデアを敵視しているようなので、
+[k]
+
+＠マシュ
+公共施設の使用には制限があるものと思っていました。[r]でもそんな事はなくて……
+[k]
+
+？1：都合が良すぎて少し怖い？
+？2：（でも水とか食べ物はないんだよ[&な:ね]、この船……）
+
+？！
+
+[messageOff]
+[charaFadeout A 0.2]
+[wt 0.3]
+
+[charaDepth L 2]
+[charaDepth M 1]
+[charaScale L 0.7]
+[charaScale M 0.7]
+[charaShake L 0.1 1 1 0]
+[charaShake M 0.1 1 1 0]
+[charaPutFSSideR L 500,-150]
+[charaPutFSSideR M 500,-150]
+[charaFadeTime L 0.5 1.0]
+[charaMoveEaseFSSideR L 470,-150 1.8 easeOutSine]
+[charaMoveEaseFSSideR M 470,-150 1.8 easeOutSine]
+[wt 0.2]
+[charaFadeout L 0.2]
+[charaFadeTime M 0.2 1.0]
+[wt 0.4]
+[charaFadeout M 0.4]
+[charaFadeTime L 0.4 1.0]
+[wt 0.4]
+[charaFadeout L 0.25]
+[charaFadeTime M 0.25 1.0]
+[wt 1.0]
+
+[charaMoveEaseFSSideR L 440,-147 1.2 easeOutSine]
+[charaMoveEaseFSSideR M 440,-147 1.2 easeOutSine]
+[charaFadeout M 0.4]
+[charaFadeTime L 0.4 1.0]
+[wt 0.4]
+[charaFadeout L 0.25]
+[charaFadeTime M 0.25 1.0]
+[wt 1.0]
+
+[charaMoveEaseFSSideR L 410,-144 1.2 easeOutSine]
+[charaMoveEaseFSSideR M 410,-144 1.2 easeOutSine]
+[charaFadeout M 0.4]
+[charaFadeTime L 0.4 1.0]
+[wt 0.4]
+[charaFadeout L 0.25]
+[charaFadeTime M 0.25 1.0]
+[wt 1.0]
+
+[charaMoveEaseFSSideR L 380,-141 1.2 easeOutSine]
+[charaMoveEaseFSSideR M 380,-141 1.2 easeOutSine]
+[charaFadeout M 0.4]
+[charaFadeTime L 0.4 1.0]
+[wt 0.4]
+[charaFadeout L 0.25]
+[charaFadeTime M 0.25 1.0]
+
+[wt 0.8]
+[charaShake L 0.07 3 3 0]
+[charaShake M 0.07 3 3 0]
+[wt 1.0]
+
+[charaShake L 0.1 2 2 0]
+[charaShake M 0.1 2 2 0]
+[charaMoveEaseFSSideR L 500,-150 1.2 easeInOutSine]
+[charaMoveEaseFSSideR M 500,-150 1.2 easeInOutSine]
+[wt 0.5]
+[charaFadeout L 0.9]
+[charaFadeout M 0.9]
+[bgm BGM_SABERWARS2 1.3 0.7]
+[wt 1.3]
+[charaShakeStop L]
+[charaShakeStop M]
+
+[se ade39]
+[wt 1.5]
+
+＠船内ガイド
+おくつろぎのところ失礼します。[r]ブルジュ・ハリファからの選挙放送です。
+[k]
+
+＠船内ガイド
+ムーン・ドバイにいる人類は市民にかぎらず、[r]この放送を視聴する義務があります。
+[k]
+
+＠船内ガイド
+モニターをご覧ください。
+[k]
+
+[charaTalk off]
+[charaFace A 9]
+[charaFadein A 0.1 260,0]
+
+[charaFace B 5]
+[charaFadein B 0.1 -260,0]
+
+＠マシュ＆バーソロミュー
+[FFFFFF]？[-]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_SABERWARS2 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[charaFadeout X 0.1]
+[charaFadeout Y 0.1]
+[scene 227009]
+[effect bit_talk_noise_gold]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadeinFSL D 0.1 -350,0]
+[wt 0.8]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.1]
+
+[bgm BGM_BATTLE_90 0.1]
+＠ＢＢドバイ
+ムーン・ドバイの皆さん、こんにちは。[r]皆さんの永遠の管理者、ＢＢドバイです。
+[k]
+
+＠ＢＢドバイ
+今日も合理的、かつ独創的な人類滅亡の筋書きを[r]想像していますか？　いますね？　正常です♡
+[k]
+
+[charaCrossFade D 1098299700 0 0.3]
+
+＠ＢＢドバイ
+いよいよ人類滅亡ラスボス決定戦の投票が始まりました。[r]皆さんの票は一度きりのものではなく流動的なもの。[wait charaCrossFade D]
+[k]
+
+[charaCrossFade D 23006000 4 0.3]
+
+＠ＢＢドバイ
+『せっかくだからこっちを選ぶぜ！』[r]となった後、他の候補者の活躍に心が動いて、[wait charaCrossFade D]
+[k]
+
+[charaFace D 3]
+
+＠ＢＢドバイ
+『ごめんやっぱりそっちを選ぶぜ！』[r]となっても問題はありません。
+[k]
+
+[charaFace D 0]
+
+＠ＢＢドバイ
+事は『人類の滅亡』ですからね。[r]充分に悩み、うわつき、悔いを残してください。
+[k]
+
+[charaFace D 5]
+
+＠ＢＢドバイ
+さて。では現時点での支持率を発表します。
+[k]
+
+＠ＢＢドバイ
+どこかで盗み見ているネズミがいるでしょうし、[r]レトロな方法で公開しましょう。
+[k]
+
+[messageOff]
+[charaDepth D 1]
+[charaDepth F 2]
+
+[charaFadein F 0.6 -50,-195]
+[charaMove F 50,-195 3.5]
+[wt 5.0]
+[scene 227000]
+[charaFace D 8]
+[charaFadeout F 0.8]
+[wt 1.0]
+
+＠ＢＢドバイ
+おや。やはりエリアＥがトップですか。[r]皆さん、あんな退屈な滅亡が好みなんですねぇ。
+[k]
+
+[charaFace D 1]
+
+＠ＢＢドバイ
+まあいいでしょう。[#人類:貴　方]たちが選ぶ事です。[r]私の考えとは違って当然です☆
+[k]
+
+＠ＢＢドバイ
+ムーンキャンサーは全部で七人。[r]人類滅亡のプランも七通り。
+[k]
+
+[charaFace D 7]
+
+＠ＢＢドバイ
+西暦3000年から企画を立ち上げ、準備期間に17年。[r]候補者の皆さんが出そろったのはほんの５日前ですが、
+[k]
+
+＠ＢＢドバイ
+その方針だけは事前に告知されていました。[r]ですのでスタートダッシュも大いにアリ！
+[k]
+
+[charaFace D 0]
+
+＠ＢＢドバイ
+重要な事なので繰り返しますが、[r]支持率が70パーセントを超えた時点で、
+[k]
+
+＠ＢＢドバイ
+そのエリアの候補者が勝者となります。
+[k]
+
+＠ＢＢドバイ
+エリアＥの候補者は[line 3][r]ムーンキャンサー、タマモヴィッチ・コヤンスカヤ。
+[k]
+
+[charaFace D 5]
+
+＠ＢＢドバイ
+彼女の[#爛:ただ]れた思想が人類滅亡の事実になるまで[r]あとほんの少しですよ、[%1]さん♡
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaDepth W 9]
+[charaDepth N 10]
+[charaScale N 0.8]
+[charaFadein W 1.0 1]
+[bgmStop BGM_BATTLE_90 2.0]
+[wt 1.0]
+[charaFadein N 0.5 0,-160]
+[wt 3.0]
+
+[fowardEffect bit_talk_switch_off]
+[se ad920]
+
+[fadeout black 1.0]
+[wait fade]
+
+[fowardEffectDestroy bit_talk_switch_off]
+[charaFadeout W 0.1]
+[charaFadeout D 0.1]
+[charaFadeout N 0.1]
+
+[charaFadein X 0 0,-200]
+[charaFadein Y 0 0,-589]
+[scene 223810]
+[effectDestroy bit_talk_noise_gold]
+[wt 0.7]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+？1：タ[line 3]
+？2：タマモヴィッチ・コヤンスカヤぁ！？
+
+？！
+
+[bgm BGM_EVENT_175 0.1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+確かにそう仰っていました！
+[k]
+
+＠マシュ
+コヤンスカヤさんがラスボス決定戦の候補者で、[r]ムーンキャンサーであると！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠バーソロミュー
+懲りていなかったのかな？[r]まあ、確かにラスボス候補に相応しくはある。
+[k]
+
+＠バーソロミュー
+なにしろ元ビーストだ。[r]人類を滅ぼすプランも理由も山ほど、
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+
+＠エレシュキガル
+…………。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠バーソロミュー
+いや、失礼。謝罪する。[r]短絡的な発言だった。
+[k]
+
+＠バーソロミュー
+朝から予想だにしなかった展開ばかりでね。[r]私も頭が回らなくなっている。
+[k]
+
+＠バーソロミュー
+こうしてようやく落ち着ける状況になっても[r]次の目的地すら考えつかない。
+[k]
+
+？1：確かに分からない事だらけだ
+？2：……こんな時、ＢＢがいてくれたら……
+
+？！
+
+[messageOff]
+[charaFadeout B 0.2]
+[wt 0.2]
+
+
+[charaDepth O 8]
+[charaDepth L 2]
+[charaDepth M 1]
+[charaScale L 0.7]
+[charaScale M 0.7]
+[charaShake L 0.1 1 1 0]
+[charaShake M 0.1 1 1 0]
+[charaPutFSSideR L 450,-150]
+[charaPutFSSideR M 450,-150]
+[charaFadeTime M 0.4 1.0]
+[charaMoveEaseFSSideR L 400,-145 1.5 easeOutSine]
+[charaMoveEaseFSSideR M 400,-145 1.5 easeOutSine]
+[charaFadeout M 0.3]
+[charaFadeTime L 0.3 1.0]
+[wt 0.4]
+[charaFadeout L 0.3]
+[charaFadeTime M 0.3 1.0]
+[wt 1.2]
+
+[charaFadeinFSSideR O 0.3 350,-110]
+[charaMoveEaseFSSideR O 350,-80 2.0 easeOutExpo]
+[wt 1.8]
+[charaFadeout O 0.3]
+[wt 0.3]
+
+[charaMoveEaseFSSideR M 450,-150 1.5 easeInOutSine]
+[wt 0.5]
+[charaFadeout M 0.9]
+[wt 1.1]
+[charaShakeStop L]
+[charaShakeStop M]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エレシュキガル
+ＢＢが必要なの？[r]なら行き先はブルジュ・ハリファね。
+[k]
+
+＠エレシュキガル
+あの高いタワーにいるんでしょう？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 25]
+[charaFadein A 0.1 1]
+
+＠マシュ
+あ。そういえばエレシュキガルさんは[r]眠っていたのでご存じではありませんでしたね。
+[k]
+
+＠マシュ
+現在、ＢＢさんはふたりいるのです。[r]カルデアのＢＢさんとムーン・ドバイのＢＢさん。
+[k]
+
+[charaFace A 0]
+
+
+＠マシュ
+はじめはＢＢさんがドバイに合わせて[r]『ＢＢドバイ』と改名されたのかと思いましたが、
+[k]
+
+＠マシュ
+実際はそれぞれ別のＢＢさんだった……[r]と考えられます。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エレシュキガル
+へえ。じゃあカルデアのＢＢは何処にいるの？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠バーソロミュー
+これが、あっさりＢＢドバイに消されてね。[r]彼女もＢＢドバイの存在を知らない[#素振:そ　ぶ]りだった。
+[k]
+
+[charaFace B 3]
+
+＠バーソロミュー
+……ふむ。このムーン・ドバイについても、[r]ラスボス決定戦とやらも放っておけないが、
+[k]
+
+＠バーソロミュー
+ＢＢドバイについての考察も必須のようだ。
+[k]
+
+＠バーソロミュー
+なあなあになってしまったが、[r]我々の目的はカルデアに帰還する事だった。
+[k]
+
+＠バーソロミュー
+その方法を知っている……いや、可能なのは[r]ＢＢドバイだけ、と見るのが自然だ。
+[k]
+
+？1：でもいま向かっても返り討ちだ
+？2：こんな時、ＢＢがいてくれたら……！
+
+？！
+
+[messageOff]
+[charaFadeout B 0.2]
+[wt 0.2]
+
+[cameraMoveEase -100,0 1.0 easeOutSine 1.21]
+[wt 1.0]
+
+[charaDepth L 2]
+[charaDepth M 1]
+[charaScale L 0.8]
+[charaScale M 0.8]
+[charaShake L 0.1 1 1 0]
+[charaShake M 0.1 1 1 0]
+[charaPutFSSideR L 450,-170]
+[charaPutFSSideR M 450,-170]
+[charaFadeTime M 0.5 1.0]
+[charaMoveEaseFSSideR L 400,-170 1.6 easeInOutQuad]
+[charaMoveEaseFSSideR M 400,-170 1.6 easeInOutQuad]
+[wt 0.4]
+[charaFadeout M 0.4]
+[charaFadeTime L 0.4 1.0]
+[wt 0.4]
+[charaFadeout L 0.25]
+[charaFadeTime M 0.25 1.0]
+[wt 1.0]
+
+[charaMoveEaseFSSideR L 350,-165 1.2 easeInOutQuad]
+[charaMoveEaseFSSideR M 350,-165 1.2 easeInOutQuad]
+[charaFadeout M 0.4]
+[charaFadeTime L 0.4 1.0]
+[wt 0.4]
+[charaFadeout L 0.25]
+[charaFadeTime M 0.25 1.0]
+[wt 1.0]
+
+[charaShake L 0.07 3 3 0]
+[charaShake M 0.07 3 3 0]
+[wt 1.0]
+
+[charaShake L 0.1 2 2 0]
+[charaShake M 0.1 2 2 0]
+[charaMoveEaseFSSideR L 450,-170 1.5 easeInOutSine]
+[charaMoveEaseFSSideR M 450,-170 1.5 easeInOutSine]
+[wt 0.5]
+[charaFadeout M 0.9]
+[cameraMoveEase 0,0 0.9 easeOutSine 1.01]
+[wt 1.1]
+[charaShakeStop L]
+[charaShakeStop M]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……ＢＢドバイさんの力は[r]ＢＢさんを上回るものでした。
+[k]
+
+＠マシュ
+それにもうひとり、[r]マスターと思われる女性がいらっしゃいました。
+[k]
+
+[charaFace A 14]
+
+＠マシュ
+あの方が何者なのかも[r]調べなくてはいけない気がします。
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[wt 0.1]
+[bgmStop BGM_EVENT_175 1.0]
+
+[se ad854 0.5]
+[se ad876 0.5]
+[shake 0.04 4 4 1.0]
+[wt 2.0]
+
+[wt 0.4]
+[bgm BGM_EVENT_80 0.1]
+[cueSe SE_22 22_ade799 0.7]
+
+＠船内ガイド
+船内の使用者に警告します。[r]外部からの攻撃を受けています。[cueSeStop 22_ade799 0.4]
+[k]
+
+＠船内ガイド
+アルバトロン社の月面探査用エアバイクを４機、[r]クレーター整地用の高機動重機を２機確認しました。
+[k]
+
+＠船内ガイド
+ムーンキャンサーによる上位権限コードで[r]停船を求められています。
+[k]
+
+＠船内ガイド
+皆さまの安全を第一としているため[r]停船を拒否していますが、如何いたしますか？
+[k]
+
+？1：停船したら安全じゃないって[&事か:こと]！？
+
+＠船内ガイド
+砂漠におけるアルバトロン社のこれまでの活動と、[r]彼らの装備内容から推測しました。
+[k]
+
+＠船内ガイド
+停船した場合、皆さまの生命活動を保証できません。
+[k]
+
+？2：スピードをあげて逃げられない[&か:]！？
+
+＠船内ガイド
+スピードはこちらが[#勝:まさ]っていますが、[r]ドーム東地区の砂漠では引き離す事はできません。
+[k]
+
+＠船内ガイド
+都市遺跡が残るドーム西地区であれば余裕をもって[r]勝利できるのですが。まことに遺憾です。
+[k]
+
+？！
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠バーソロミュー
+迎撃するしかないという事だな。[r]いいとも、腕の見せどころだ。
+[k]
+
+[charaFace B 16]
+
+＠バーソロミュー
+ガイド君、悪いが手動に切り替えさせてもらう。[r][#隙:すき]を見て旋回して、船首から追っ手にぶつける。
+[k]
+
+＠バーソロミュー
+マスターとマシュは甲板で[r]機械化兵たちを痛い目に合わせてくれ。
+[k]
+
+＠バーソロミュー
+エレシュキガル。[r]君もそろそろ戦ってくれるかな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エレシュキガル
+[line 6]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠バーソロミュー
+ダメか。[r]困ったな、何かお気に召さない事があるらしい。
+[k]
+
+？1：エレシュキガルは目覚めたばかりだから
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 20]
+[charaFadein C 0.1 1]
+
+＠エレシュキガル
+ええ。そういう事。アナタたちと同じよ。[r]この世界を正確に把握しないと動けない。
+[k]
+
+＠エレシュキガル
+どちらが私にとって悪なのか、見極めないと。
+[k]
+
+？2：理由があるんでしょ？　大丈夫、任せて
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠エレシュキガル
+……さっきからずっと、なんとなく、まさかなー、[r]なんて思っていたけど。
+[k]
+
+[charaFace C 12]
+
+＠エレシュキガル
+私に甘いのね、アナタ。[r]まあ、そういう事ならお願いするわ。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad854]
+[se ad876]
+[shake 0.04 4 4 1.5]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠バーソロミュー
+私は船の操縦に専念する！[r]戦闘はふたりに任せるが、気をつけて！
+[k]
+
+[messageOff]
+[charaFadeout B 0.7]
+[cueSe SE_24 24_ade990]
+[cueSeStop 24_ade990 1.0]
+[wt 1.2]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+機械化兵が４機、大型の機動兵器が２機でしたね。[r]苦しい戦いになりますが、勝算はあります！
+[k]
+
+＠マシュ
+マスター、可能なかぎり広範囲の攻撃手段を持つ[r]サーヴァントの簡易召喚をお願いします！
+[k]
+
+[messageOff]
+[subCameraOn 1]
+[charaLayer S sub #A]
+[charaLayer T sub #A]
+[subCameraFilter #A maskEdge cut359_mask08 3 255,255,255,255 0]
+[subRenderScale #A 1.01]
+[charaDepth S 2]
+[charaDepth T 1]
+[charaScale S 1.35]
+[charaScale T 1.2]
+[charaFadein S 0 0,-100]
+[charaFadein T 0 0,200]
+
+[charaDepth R 9]
+[charaScale R 1.2]
+[charaFadein R 0.5 0,-200]
+[subRenderFadein #A 0.5 0,-350]
+[wt 0.7]
+
+[cueSe SE_24 24_ad1429]
+[effect bit_talk_42_depth 0,0 H]
+[shake 0.03 1 1 0]
+[wt 1.0]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaFadeout Y 0.1]
+[effectDestroy bit_talk_42_depth]
+[effect bit_talk_41_fs]
+[charaFadeout A 0.1]
+[cueSe SE_23 23_ade890 0]
+[cueSeVolume 23_ade890 1.0 0.7]
+[shake 0.03 2 2 0]
+[cueSeStop 24_ad1429 1.5]
+[wt 0.3]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+[se ade338 0]
+[seVolume ade338 1.0 1.0]
+[shake 0.03 4 4 0]
+[cameraMoveEase 0,0 2.0 easeOutQuart 1.4]
+[blur motion 1.0 4 10000 0.5 0.5 0.05 100]
+[wt 1.0]
+
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_80 0.4]
+[seStop ade338 0.4]
+[cueSeStop 23_ade890 0.4]
+[wait fade]
+[shakeStop]
+[soundStopAllEnd]
+[end]
+
+

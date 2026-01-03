@@ -1,0 +1,891 @@
+
+＄94-06-88-01-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098124510 1 ダ・ヴィンチ]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 6027000 1 武則天]
+[charaSet D 3032000 1 エレシュキガル]
+[charaSet E 3040000 1 ラムダ]
+
+[charaSet F 3032000 1 エレシュキガル1]
+[charaSet G 6027000 1 武則天1]
+[charaSet H 3040000 1 ラムダ1]
+[charaSet I 98115200 1 酷吏]
+[charaSet J 98115200 1 酷吏]
+
+
+[charaSet K 98115000 1 エフェクト用ダミー]
+[charaSet L 98115000 1 エフェクト用ダミー]
+
+[sceneSet M 147100 1]
+[charaScale M 1.3]
+
+[imageSet T back10000 1 1]
+[charaScale T 1.02]
+
+[charaDepth D 7]
+[charaDepth C 6]
+[charaDepth I 5]
+[charaDepth J 4]
+[charaDepth T 2]
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad12]
+[effect bit_talk_07_fs]
+[wt 4.5]
+
+[fadeout white 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_07_fs]
+[wt 1.3]
+
+[scene 147100]
+[se ad37 1.0]
+[seVolume ad37 0 0.2]
+[wt 1.5]
+
+[fadein white 1.5]
+[seVolume ad37 1.5 1.0]
+[charaFadein M 0.4 -100,-300]
+[charaMove M 100,-300 6.0]
+[wait fade]
+
+[wt 3.0]
+[charaFadeout M 1.5]
+[wt 1.5]
+[seStop ad37 1.0]
+[seVolume ad37 1.0 0.2]
+[wt 1.0]
+
+[se ad13]
+[charaPut K 0,0]
+[charaEffect K bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_MAP_2 0.1]
+
+＠ダ・ヴィンチ
+よーし、レイシフト完了！
+[k]
+
+＠ダ・ヴィンチ
+今回は少しばかりリスクを含んだレイシフトだったから、[r]まずは真面目に状況確認だ。
+[k]
+
+＠ダ・ヴィンチ
+無事かい、[r][%1][&君:ちゃん]？
+[k]
+
+？1：問題なしです！
+？2：いつも通り、完璧なレイシフト！
+？！
+
+[charaFace A 0]
+
+＠ダ・ヴィンチ
+そっか、それならよかった。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠マシュ
+こちらでもマスターのバイタルは良好と出ています。
+[k]
+
+＠マシュ
+わたしは装備調整中のため管制室詰めとなりますが、[r]そのぶん、情報処理に努めさせていただきますね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+うん、頼りにしてるよー。
+[k]
+
+＠ダ・ヴィンチ
+なにせ状況が状況だからね。[r]管制室の目は多ければ多いほどいい。
+[k]
+
+[charaFace A 14]
+
+＠ダ・ヴィンチ
+そう……相変わらず、[r]今回のレイシフトの特殊性は変わらないままだ。
+[k]
+
+[charaFace A 7]
+
+＠ダ・ヴィンチ
+[#そこがどこか分からない]。
+[k]
+
+＠ダ・ヴィンチ
+レイシフトに必要な座標データは確かに存在していて、[r]地球上のどこかであるのは間違いないけれど[line 3]
+[k]
+
+＠ダ・ヴィンチ
+たとえば機器の表示だけが文字化けしているように、[r]我々には『特定化できない』ようになっている。
+[k]
+
+[charaFace A 14]
+
+＠ダ・ヴィンチ
+でも特異点なのは変わらないから、[r]安全性を二重三重に確保したうえで、
+[k]
+
+＠ダ・ヴィンチ
+その不明座標をそのまま組み込んで[r]レイシフトしてもらったわけなんだけど。
+[k]
+
+[charaFace A 0]
+
+＠ダ・ヴィンチ
+どうだろう？[r]場所の手がかりになりそうなものは見えるかな？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaPut K 2500,2500]
+[wt 0.1]
+
+[cameraMove 1.0 50,0 1.1]
+[wt 1.5]
+[cameraMove 2.0 -50,0 1.1]
+[wt 2.5]
+[cameraMove 1.0 0,0 1.0]
+[wt 1.5]
+
+？1：南国っぽい海辺、という事くらいしか……
+？！
+
+[charaPut K 0,0]
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+ふーむ。こちらからの探査も手応えが微妙だ。[r]曖昧にしか数値が返ってこないというか……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+雲の形、体感温度、風の匂い……そういったアナログな[r]要素が何かのヒントになったりはしないでしょうか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+ああ。となると、[r]次に確かめたいのは彼女たちの感想だ。
+[k]
+
+＠ダ・ヴィンチ
+そこは場所が不明な特異点のわりに[r]レイシフト適性の間口は広そうなんだけど、
+[k]
+
+＠ダ・ヴィンチ
+とりあえず適性値が高いと思われるサーヴァントから[r]第１弾としてキミに同行してもらっている。
+[k]
+
+？1：ええと……
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaPut K 2500,2500]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth M 4]
+[charaDepth F 5]
+[charaDepth D 2]
+
+[charaScale M 2.0]
+[charaScale F 1.4]
+
+[charaTalk off]
+[charaFadein M 1.0 0,-350]
+[charaFace F 0]
+[charaFadein F 1.0 -100,0]
+[charaMove M 20,-350 5.0]
+[charaMove F -120,0 5.0]
+[wt 1.5]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 1.0]
+
+[charaFadeout M 0.5]
+[charaFadeout F 0.5]
+[wt 1.0]
+[charaTalk on]
+
+＠エレシュキガル
+悪いのだけれど、[r]こんな場所に心当たりはありません。
+[k]
+
+＠エレシュキガル
+私は冥界の支配者。[r]リゾート感あふれる場所に縁はありません。
+[k]
+
+[charaFace D 22]
+
+＠エレシュキガル
+また、念のために言っておきますが[r]冥界の気配もしません。
+[k]
+
+＠エレシュキガル
+地下は……そうね。[r]空洞とはまた違った、スカスカな感じがします。
+[k]
+
+[charaFace D 1]
+
+＠エレシュキガル
+とは言え、です。選ばれた以上は[r]役割があるということでしょう。
+[k]
+
+[charaFace D 15]
+
+＠エレシュキガル
+ずいぶん久しぶりに頼られたような気もするし、
+[k]
+
+＠エレシュキガル
+手伝ってほしいことがあったら[r]何でも言うといいのだわ！
+[k]
+
+？1：うん、頼りにしてるよ！
+？！
+
+[messageOff]
+[charaFace D 25]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth G 5]
+[charaDepth C 2]
+[charaScale M 2.0]
+[charaScale G 1.4]
+
+[charaTalk off]
+[charaFadein M 1.0 0,-350]
+[charaFace G 0]
+[charaFadein G 1.0 100,25]
+[charaMove M -20,-350 5.0]
+[charaMove G 120,25 5.0]
+[wt 1.5]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+[charaFadeout M 0.5]
+[charaFadeout G 0.5]
+[wt 1.0]
+
+[charaTalk on]
+
+＠武則天
+[#妾:わらわ]も知らん場所じゃのー。[r]わかるのはただ田舎というだけじゃ。
+[k]
+
+＠武則天
+ま、あの[#絢爛豪華:けんらんごうか]な[#妾:わらわ]の[#洛陽:みやこ]と比べれば、[r]どこもそう言ってよかろうが。
+[k]
+
+[charaFace C 5]
+
+＠武則天
+ところでそこな冥界の女主人よ、[r][#妾:わらわ]に霊は近付けるでないぞ！　絶対じゃぞ！
+[k]
+
+＠武則天
+ゼンゼン怖くはないが、そう、[r]不意に後ろにいられるとビックリするからの！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth M 4]
+[charaDepth E 2]
+[charaDepth H 5]
+[charaScale M 2.0]
+[charaScale H 1.4]
+
+[charaTalk off]
+[charaFadein M 1.0 0,-350]
+[charaFace H 14]
+[charaFadein H 1.0 -100,0]
+[charaMove M 20,-350 5.0]
+[charaMove H -120,0 5.0]
+[wt 1.5]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+[wt 1.0]
+
+[charaFadeout M 0.5]
+[charaFadeout H 0.5]
+[wt 1.0]
+
+[charaTalk on]
+
+＠ラムダ
+華やかなスタァを迎える舞台にしては、[r]殺風景にも程があるわね。
+[k]
+
+[charaFace E 16]
+
+＠ラムダ
+というか暑いわ。饅頭じゃあるまいし、[r]蒸すにも程があるでしょう。
+[k]
+
+＠ラムダ
+本当に私が適任？　こんなところで私の力が[r]必要になると思っているのかしら！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠マシュ
+皆さん、場所の心当たりはないようですね……。
+[k]
+
+[charaFace B 13]
+
+＠マシュ
+それにしても、珍しい組み合わせのような気がします。
+[k]
+
+＠マシュ
+あまり接点がないお三方のようにも思われますが、[r]なぜでしょう？
+[k]
+
+[charaFace B 12]
+
+＠マシュ
+いえ、サーヴァントの皆さんのレイシフト適性は[r]様々な要因から導き出されるものなので、
+[k]
+
+[bgmStop BGM_MAP_2 1.5]
+
+＠マシュ
+特に直接的な関連性がないということも[r]充分にありうるのですが。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut K 2500,2500]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠武則天
+知らんが、そうじゃな……。
+[k]
+
+[charaFace C 1]
+[bgm BGM_EVENT_147 0.1]
+
+＠武則天
+この[#妾:わらわ]を筆頭として、怖ろしくも[#艶:あで]やかな美女、[r]という共通点はあるかもしれんな？　くっふっふー！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace I 0]
+[charaFadein I 0.4 206,0]
+[charaFace J 0]
+[charaFadein J 0.4 -206,0]
+
+[charaMove I 256,0 0.5]
+[charaMove J -256,0 0.5]
+[wt 1.5]
+
+[charaTalk on]
+[charaFace C 5]
+
+＠武則天
+……む、こら、ぼさっとするな酷吏たち。
+[k]
+
+＠武則天
+そこの葉っぱでも組んで、[r]日除けの天蓋つき安楽椅子を作らんか。
+[k]
+
+[charaFace C 2]
+
+＠武則天
+早くせんと、この玉のお肌が日に焼けてしまうぞ！[r]おまえは葉っぱ[#団扇:うちわ]で[#扇:あお]ぐ係じゃ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se adm38 0.2]
+[se ad661 0.2]
+[seStop ad661 1.5]
+[charaShake I 0.03 3 3 0.2]
+[charaShake J 0.03 3 3 0.2]
+[wt 0.3]
+[charaMoveReturn I 256,-7 0.3]
+[charaMoveReturn J -256,-7 0.3]
+[wt 0.8]
+
+[charaMove I 206,0 0.5]
+[charaMove J -306,0 0.5]
+[charaFadeout I 0.4]
+[charaFadeout J 0.4]
+[wt 0.8]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+＠ラムダ
+観客を沸かせるスタァが美しいのは当然として。[r]アナタは国の、私は水上の、彼女は冥界の。
+[k]
+
+＠ラムダ
+それぞれのナンバーワン……[r]支配者という共通点もありそうね？
+[k]
+
+[se ade158]
+[charaFaceFade E 0 0.2]
+
+＠ラムダ
+あっ、こら、待ちなさいリヴァイアサンたち。
+[k]
+
+＠ラムダ
+勝手に海に入らない！　ステイ！[r]まだ安全かどうかも分かっていないのに。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[effect bit_talk_ghost2]
+[wt 0.5]
+[cueSe SE_22 22_ade706 0]
+[seVolume 22_ade706 1.0 0.25]
+[wt 0.5]
+[seStop 22_ade706 2.5]
+
+[effectForceStop bit_talk_ghost2]
+[wt 0.7]
+[charaEffect D bit_talk_ghost -20,0]
+[wt 2.0]
+
+＠エレシュキガル
+海の中はともかく、霊たちを動かして[r]周囲の警戒はもう始めています。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace C 2]
+[charaFadeinFSSideR C 0.2 506,0]
+[charaMoveFSSideR C 456,0 0.4]
+[wt 0.5]
+
+[charaMoveReturnFSSideR C 456,7 0.2]
+[wt 0.4]
+[se ade97]
+[seStop ade97 1.2]
+[wt 0.2]
+[charaMoveFSSideR C 506,0 0.3]
+[charaFadeout C 0.5]
+[wt 1.0]
+
+[charaTalk on]
+
+[charaFace D 20]
+[charaFadeTime T 0.2 0.5]
+
+＠エレシュキガル
+（ホントに久々の同行要請なんだから……[r]　嬉しいけど、浮かれすぎないように注意しないと）
+[k]
+
+＠エレシュキガル
+（シュメルの神霊を代表して、[r]　有能な女神である事を示すのだわ！）
+[k]
+
+[messageOff]
+[charaFadeout T 0.2]
+[wt 0.6]
+
+？1：うーん……共通点……
+？2：子分みたいなのがたくさんいる系……？
+？！
+
+[charaFace D 6]
+
+＠エレシュキガル
+あれっ、ちょっと待って？[r]いきなりだけど、何か見つかった気がします。
+[k]
+
+？1：さすがエレちゃん、頼りになる！
+
+[charaFace D 12]
+
+＠エレシュキガル
+そ、そう？　ストレートな賛辞だけど、[r]そのフランクな呼び方も中々ね？
+[k]
+
+[charaFace D 0]
+
+＠エレシュキガル
+こほん。
+[k]
+
+＠エレシュキガル
+浮かれてないで、今はガルラ霊の報告を[r]もう少し詳細に[line 3]ふんふん、あっちに何かが？
+[k]
+
+？2：どこどこ、何が？
+
+[charaFace D 2]
+
+＠エレシュキガル
+ガルラ霊の報告によると[line 3][r]あっちなのだわ！
+[k]
+
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[bgmStop BGM_EVENT_147 0.5]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaEffectStop D bit_talk_ghost]
+[charaEffectDestroy D bit_talk_ghost]
+
+[pictureFrame cut063_cinema]
+
+[charaSet F 1098231700 1 コン]
+[charaSet G 1098229200 1 半漁人]
+
+[wt 0.3]
+
+[wipein rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[wt 0.4]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 550,-50]
+[charaMove F -550,-50 0.7]
+[se adm59]
+[seVolume adm59 1.0 0.3]
+[wt 0.6]
+
+[charaFadeout F 0.2]
+[seStop adm59 0.5]
+[wt 0.7]
+
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[pictureFrame]
+
+
+[wt 0.3]
+
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaPut K 0,0]
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+
+[bgm BGM_MAP_31 0.1]
+
+＠ダ・ヴィンチ
+………………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+いま、何かが……。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut K 2500,2500]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠武則天
+貴様の[#企鹅:ちぃーうーぁ]か？[r]あんな色のものまでおるとはのう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠ラムダ
+まさか。[r]私のリヴァイアサンたちと一緒にしないで。
+[k]
+
+[charaFace E 3]
+
+＠ラムダ
+……まあ、今のも多少は[r]可愛かったような気はするけど。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル
+ちらっとしか見えなかったけど、[r]この地の原生生物……の、ようなものかしら？
+[k]
+
+＠エレシュキガル
+この特異点についての情報が得られるかもしれない。[r]とりあえず追いかけてみましょう。
+[k]
+
+？1：同感！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠武則天
+正しい意見は受け入れてこその女帝じゃ。[r]よーし、酷吏ズ、[#輿:こし]を持て！　ゆけゆけーい！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ラムダ
+いつのまにかシダの葉を組んで椅子みたいに。[r]仕事が早いわね……。
+[k]
+
+[messageOff]
+[se ad132]
+[seStop ad132 1.0]
+[se ad443 0.4]
+[seStop ad443 1.0]
+[wipeout leftToRight 0.7 1]
+[bgm BGM_MAP_31 0.7 0.5]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[wt 0.5]
+
+[wipein rightToLeft 0.7 1]
+[bgm BGM_MAP_31 0.7 1.0]
+[wait wipe]
+
+[wt 0.4]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.4 550,0]
+[charaMove F -550,0 0.7]
+[se adm59]
+[seVolume adm59 0.7 0.3]
+[wt 0.6]
+
+[charaFadeout F 0.2]
+[seStop adm59 0.5]
+[wt 0.7]
+
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠ラムダ
+いたわ、さっきの！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[bgmStop BGM_MAP_31 1.0]
+
+＠武則天
+むむ？　しかし待て、あれは[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 550,0]
+[charaMove G -550,0 0.7]
+[se ad132]
+[seVolume ad132 1.0 0.3]
+[wt 0.6]
+
+[charaFadeout G 0.2]
+[seStop ad132 0.5]
+[wt 0.7]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠エレシュキガル
+何かに追われているのだわ！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠武則天
+ふむ。どうするかの、マスター？
+[k]
+
+？1：助けよう！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ラムダ
+芸はないけど、迷いのない言葉ね。
+[k]
+
+[charaFace E 0]
+
+＠ラムダ
+いいでしょう。座組に不満があろうと、[r]観客がいるのなら全力を尽くすのが星というもの。
+[k]
+
+[charaDepth L 7]
+[charaDepth E 4]
+[charaPut L 0,0]
+
+[messageOff]
+[charaEffect L bit_talk_radiallight01]
+[se ad39]
+[wt 1.0]
+
+[fadeout white 1.0]
+[seStop ad39 1.0]
+[wait fade]
+
+[charaEffectStop L bit_talk_radiallight01]
+
+[charaCrossFade E 3040001 0 0.3]
+[se ade126]
+[seStop ade126 1.2]
+[wait charaCrossFade E]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[wt 0.5]
+
+[charaFace E 11]
+
+＠ラムダ
+盛り上げなさい、リヴァイアサンたち。[r]第一幕の開演よ！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

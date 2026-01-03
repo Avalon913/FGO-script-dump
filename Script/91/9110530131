@@ -1,0 +1,316 @@
+
+
+＄91-10-53-01-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1053900 1 徴側]
+[charaSet B 4025000 1 コロンブス]
+[charaSet C 1053910 1 徴弐]
+
+[charaSet D 4025000 1 コロンブス_演出用]
+[charaScale D 1.1]
+[charaSet E 1053900 1 徴側_演出用]
+[charaScale E 1.1]
+
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+
+[imageSet Q back10000 1 1]
+[charaScale Q 1.02]
+[imageSet R back10000 1 1]
+[charaScale R 1.02]
+
+[branchQuestClear lblClear01b 94064915]
+[branchQuestClear lblClear01b 3001101]
+
+[label lblClear01a]
+
+[scene 104200]
+
+[sceneSet S 104200 1]
+[sceneSet T 104200 1]
+
+[branch lblConf01]
+[label lblClear01b]
+
+[scene 203800]
+
+[sceneSet S 203800 1]
+[sceneSet T 203800 1]
+
+[label lblConf01]
+
+[cameraMove 0 0,0 1.01]
+[charaTalk depthOff]
+[charaDepth S 1]
+[charaDepth P 2]
+[charaDepth B 3]
+[charaDepth C 4]
+[charaDepth A 4]
+[charaDepth Q 5]
+[charaDepth R 5]
+[charaScale S 1.2]
+[charaFadein S 0.1 100,-250]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_96 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 176,0]
+
+＠徴側
+こんなところですね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠コロンブス
+へっ、しょうがねえな。
+[k]
+
+[charaFace B 0]
+
+[charaPut P 0,-200]
+[charaFadeTime P 0.2 0.5]
+
+＠コロンブス
+（やれやれ。世間知らずの田舎の甘ちゃんだと[r]　思ってたが……なかなかどうして）
+[k]
+
+＠コロンブス
+（ほんわかした笑顔の裏にゃ、[r]　びっくりするような胆力がありやがる）
+[k]
+
+＠コロンブス
+（そういう仮面をかぶらなきゃやってられなかった、[r]　って感じなのかねぇ……？）
+[k]
+
+[messageOff]
+
+
+[charaTalk off]
+[charaFadeTime P 0.2 0]
+
+[subCameraOn 3]
+[charaLayer B sub #A]
+[subCameraFilter #A through]
+[subRenderScale #A 1.01]
+[subRenderFadein #A 0 0,0]
+[charaLayer C sub #B]
+[subCameraFilter #B through]
+[subRenderScale #B 1.01]
+[subRenderFadein #B 0 0,0]
+
+[subRenderDepth #A 2]
+[subRenderDepth #B 1]
+[subRenderDepth #C 3]
+[wt 0.1]
+
+[subBlur #A lens 1.0 2 3 1.5 subBlur]
+[charaFace C 8]
+[charaScale C 0.8]
+[charaFadein C 0.4 -196,-70]
+[subRenderMoveEase #A 210,0 1.5 easeInOutSine]
+[subRenderMoveEase #B -130,0 1.5 easeInOutSine]
+[charaMoveEase S 40,-250 1.5 easeInOutSine]
+[wt 2.5]
+
+[charaTalk on]
+[charaTalk B]
+
+[subBlurOff #A lens 0.1 normal]
+[subBlur #B lens 0.1 2 3 1.5 subBlur]
+[charaFace B 4]
+[charaFadeTime P 0.2 0.5]
+
+＠コロンブス
+（あと妹がマジで怖ぇし。[r]　気配を殺して背中に回んじゃねえよ……）
+[k]
+
+[bgmStop BGM_MAP_96 1.0]
+[messageOff]
+[charaFadeout P 0.2]
+[wt 0.2]
+
+[subRenderMoveEase #A 0,0 1.5 easeInOutSine]
+[subRenderMoveEase #B 0,0 1.5 easeInOutSine]
+[charaMoveEase S 0,-250 1.5 easeInOutSine]
+[wt 1.1]
+[charaFadeout C 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_109 0.1]
+
+[charaFace B 1]
+
+＠コロンブス
+ま、どうあれ損はしてねぇ。
+[k]
+
+[charaFace B 0]
+
+＠コロンブス
+持ってけ……[wt 0.5][charaMove B 0,-5 0.3][charaShake B 0.05 1 2 0.3][cueSe SE_24 24_adm102][wt 0.2][charaMove B 0,0 0.3][charaFace B 4][r]イテッ。
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[subCameraFilter #C mask cut359_mask22]
+[charaLayer D sub #C]
+[charaLayer E sub #C]
+[charaLayer T sub #C]
+[charaScale T 1.25]
+[charaDepth T 1]
+[charaDepth E 2]
+[charaDepth D 3]
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein T 0.1 0,-50]
+
+[charaFadein D 0.1 350,200]
+[charaFadein E 0.1 -100,200]
+[wt 0.1]
+[subRenderFadein #C 0.6 0,-200]
+[wt 1.0]
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[wt 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaLayer B normal]
+[charaLayer C normal]
+[charaScale C 1.0]
+
+[charaFace C 0]
+[charaFadein C 0.1 -196,0]
+[charaMove D 300,200 1.0]
+[wt 1.2]
+[charaMoveReturn D 300,195 0.5]
+[cueSe SE_23 23_ad1321]
+[wt 0.8]
+
+
+
+[cueSe SE_21 21_ade626]
+[charaFace E 1]
+[charaFace D 1]
+[wt 2.0]
+[subRenderFadeout #C 0.6]
+[wt 0.6]
+
+
+[charaTalk on]
+[charaTalk C]
+[cueSe SE_21 21_ade600]
+[wt 0.3]
+[charaMoveReturn C -196,-10 0.8]
+[se adm15]
+[wt 1.0]
+
+＠徴弐
+言ってくれれば根元から切ったのに。[r]一本だけとはいかなかったかもだけど。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠コロンブス
+それが怖ぇからだよ。[r]まったく。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 176,0]
+
+＠徴側
+とにかく、ありがとうございます！
+[k]
+
+[charaFace A 0]
+
+＠徴側
+これで必要なものは揃いました。[r]マスターさん、モルガンさんのところに戻りましょう！
+[k]
+
+[messageOff]
+
+
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.9]
+
+[charaFadeout A 0.4]
+[se ade422]
+[wt 0.2]
+[se ad60]
+[wt 0.1]
+[bgmStop BGM_EVENT_109 1.5]
+[seStop ade422 1.5]
+[seStop ad60 1.5]
+[wt 2.6]
+[charaFadeout S 0.6]
+[wt 0.6]
+
+
+[charaTalk off]
+[charaFadein Q 0.1 0,1000]
+[charaFadein R 0.1 0,-1000]
+[charaMoveEase Q 0,730 1.5 easeOutSine]
+[charaMoveEase R 0,-730 1.5 easeOutSine]
+[wt 1.8]
+
+[charaFace B 0]
+[charaFadeinFSR B 0.1 110,-50]
+
+＠コロンブス
+しっかし……幸運な男であるこの俺のヒゲが、[r]幸運のおまもりの材料に、ねぇ……？
+[k]
+
+[messageOff]
+
+
+[wt 0.5]
+[charaFaceFade B 11 0.3]
+
+＠コロンブス
+あの妖精女王も認めた幸運グッズ、[r]ということにすりゃあ……
+[k]
+
+[charaFaceFade B 9 0.3]
+
+[bgm BGM_EVENT_27 0.1]
+
+＠コロンブス
+全然ウソはついてねぇし……ハッハァ、[r]ビッグなビジネスチャンスの予感だぜェ……！
+[k]
+
+＠コロンブス
+……ヒゲが足りるかな？
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_27 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,675 @@
+
+
+＄94-07-36-07-5-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 7043001 1 伊吹童子]
+[charaSet B 98002000 1 フォウ]
+[charaSet C 6026300 1 燕青]
+[charaSet D 1054002 1 ガレス]
+[charaSet E 1098247200 1 酒呑童子]
+[charaSet F 1098247500 1 武則天]
+[charaSet G 28003000 1 レディ・アヴァロン]
+[charaSet H 6043000 1 オルトリンデ]
+[charaSet I 6045300 1 リンド]
+[charaSet J 1098246700 1 アネト号]
+[charaSet K 7043001 1 ダミー]
+[charaFilter K silhouette F8F8FFFF]
+[charaSet L 1098118700 1 悪霊剣士]
+
+[charaSet O 98115000 1 エフェクト用ダミー]
+[charaSet P 98115000 1 エフェクト用ダミー]
+[charaSet Q 98115000 1 エフェクト用ダミー]
+[charaSet R 98115000 1 エフェクト用ダミー]
+
+[charaSet S 98115000 1 エフェクト用ダミー]
+[charaSet T 98115000 1 エフェクト用ダミー]
+[charaSet U 98115000 1 エフェクト用ダミー]
+
+[scene 160500]
+
+[charaPut O 1]
+[charaEffect O bit_talk_evil_spirits01]
+[charaPut P 2000,2000]
+[charaEffect P bit_talk_evil_spirits02]
+[wt 0.5]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[wt 0.3]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut Q 1]
+[charaEffect Q bit_talk_41_fs]
+[charaMoveScale L 1.1 0.3]
+[charaMove L 0,10 0.3]
+[blur motion 0.3 4 100 0.5 0.6 0.03 100]
+[charaFadeout L 0.3]
+[wt 0.4]
+[charaPut Q 2000,2000]
+[charaEffectStop Q bit_talk_41_fs]
+[charaScale L 1.0]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 0.2]
+[se adm14]
+[fowardEffect bit_talk_x_slash01]
+[wt 0.1]
+[se ad32]
+[charaShake D 0.05 2 2 0.3]
+[effect bit_talk_14]
+[wt 0.3]
+[se adm15]
+[fowardEffect bit_talk_x_slash02]
+[wt 0.1]
+[se ad170]
+[charaShake D 0.05 2 2 0.3]
+[effect bit_talk_14]
+[wt 0.5]
+[charaFace D 2]
+
+＠ガレス
+さらば！　イロンシッド卿！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[wt 0.2]
+[se adm15]
+[cueSe Battle bac139 0 0.8]
+[cueSe Battle bac137 0 0.8]
+[fowardEffect bit_talk_h_slash01_fs 0,0]
+[wt 0.2]
+[charaShake L 0.05 3 3 0.5]
+[wt 0.4]
+
+＠悪霊剣士
+…………！
+[k]
+
+[messageOff]
+[charaSpecialEffect L enemyErasure 1 1.0]
+[se ad42]
+[wait charaSpecialEffect L]
+[seStop ad42 0.5]
+[wt 0.5]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth O 2]
+[charaDepth P 5]
+[charaDepth Q 4]
+[charaDepth R 3]
+
+[charaDepth S 6]
+[charaDepth T 7]
+[charaDepth U 8]
+
+
+[cueSe SE_21 21_ade654]
+[fowardEffect bit_shot_01 400,0]
+[wt 0.3]
+[charaPut S 150,0]
+[charaEffect S bit_shot_01]
+[wt 0.3]
+[charaPut T -150,0]
+[charaEffect T bit_shot_01]
+[wt 0.3]
+[charaPut U -400,0]
+[charaEffect U bit_shot_01]
+[wt 0.2]
+[cueSeStop 21_ade654 0.2]
+[wt 0.3]
+
+[cueSe Battle bac136]
+[fowardEffect bit_talk_x_slash_gl_02]
+[wt 0.5]
+
+[cueSe Servants_102800 bac658]
+[fowardEffect bit_talk_h_slash01_fs 0,0 H]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_3 1.5]
+
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[fowardEffectDestroy bit_shot_01]
+[charaEffectDestroy S bit_shot_01]
+[charaEffectDestroy T bit_shot_01]
+[charaEffectDestroy U bit_shot_01]
+[fowardEffectDestroy bit_talk_x_slash_gl_02]
+[fowardEffectDestroy bit_talk_h_slash01_fs]
+[wt 0.6]
+
+
+[cueSe SE_22 22_ade706]
+[cueSeVolume 22_ade706 0 0.5]
+[cueSe SE_21 21_ade582]
+[cueSeVolume 21_ade582 0 0.5]
+
+[charaPut P 1]
+[charaEffectStop O bit_talk_evil_spirits01]
+[charaEffectStop P bit_talk_evil_spirits02]
+[wt 1.0]
+[cueSeStop 22_ade706 1.0]
+[cueSeStop 21_ade582 1.0]
+[wt 1.7]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaScale A 1.35]
+[charaScale K 1.35]
+
+[charaDepth A 8]
+[charaDepth K 9]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[cueSe SE_22 22_ade800]
+[charaMoveReturn A 0,20 0.3]
+
+[charaMoveReturn A 0,20 0.3]
+
+＠伊吹童子
+ナーイス！　ＷＡ～！[wt 0.3][charaMoveReturn A 0,20 0.3]
+[k]
+
+[charaFace A 3]
+
+＠伊吹童子
+やったね！[r][line 3]それじゃあ、戦闘モード解除！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad476]
+[charaFace K 0]
+[charaFadein K 0.7 1]
+[wt 0.3]
+
+[charaMoveScale A 1.0 2.5]
+[charaMoveScale K 1.0 2.5]
+[charaFadeout A 0.3]
+[wt 1.0]
+
+[fadeout white 1.0]
+[wait fade]
+
+[seStop ad476 1.0]
+[charaFadeout K 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.2]
+
+[cueSe SE_22 22_ade800]
+[charaFace A 4]
+[charaMoveReturn A 0,20 0.3]
+
+＠伊吹童子
+ＷＡ～！[wt 0.3][charaMoveReturn A 0,20 0.3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[se adm21]
+[charaMoveReturn B 0,20 0.6]
+＠フォウ
+フォーウ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠燕青
+フォウっちのテンションがやばいな……[r]神代の魔力とか好物だったりするのかね？
+[k]
+
+[charaFace C 1]
+＠燕青
+あるいは、単なる趣味だったり？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ガレス
+ふう、勝ちました！
+[k]
+
+[messageOff]
+
+[se ad39]
+[fadeout white 0.5]
+[wait fade]
+
+[charaChange D 1054000 0 fade 0.1]
+[wait charaChange D]
+
+[wt 0.5]
+
+[seStop ad39 1.0]
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.2]
+
+[charaFace D 12]
+
+＠ガレス
+あ、戻っちゃった。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠オルトリンデ
+戦闘終了。目に見える範囲の霊たちは[r]排除できたようですね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ガレス
+このままバックヤードまでなだれ込みましょう！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠燕青
+同感だ。行くぜ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠伊吹童子
+ファイ、おー！
+[k]
+
+？1：それは体育会系の部活動！
+？2：ちょっとチアから逸れた感！
+？！
+
+[messageOff]
+[se ad769]
+[se ad788]
+[se ade427]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_94 1.0]
+[seStop ad769 1.5]
+[seStop ad788 1.5]
+[seStop ade427 1.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 10000]
+[wt 0.2]
+
+[wipein rightToLeft 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 161400]
+
+[pictureFrame cut063_cinema]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠酒呑童子
+……あらまあ。
+[k]
+
+＠酒呑童子
+せっかく喚びだした霊、減っとるんちゃう？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+＠武則天
+ならば追加で喚べばよい。[r]国の繁栄というのはだいたい民の数で決まるものじゃ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 0,-50]
+＠酒呑童子
+ふふ。[#鄙:ひな]びた御山もええけど、[r]人も宝も酒も多い都がいちばん[#滾:たぎ]るわぁ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-50]
+＠武則天
+霊を制御する術式が必要であれば[r][#妾:わらわ]も手伝ってくれよう。
+[k]
+
+[charaFace F 1]
+＠武則天
+今の[#妾:わらわ]はぱーふぇくと美女皇帝道士であるからな！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+＠酒呑童子
+ほなありがたく……[wt 0.7][bgmStop BGM_EVENT_7 1.5][charaFace E 4]ん？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[pictureFrame]
+[wt 0.6]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+？1：そこまで！
+？！
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠ガレス
+怖すぎるお化け屋敷は身体に毒！[r]これ以上はいけません！
+[k]
+
+＠ガレス
+いえ今までのも、ちょっとアレでしたけども！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠レディ・アヴァロン
+お化け屋敷というモノについて、[r]私はあんまり実感できていないのだけれど……
+[k]
+
+[charaFace G 0]
+＠レディ・アヴァロン
+やりすぎがよくないって話なんだよね？[r]それならぎりぎりわかるとも。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠燕青
+ぎりぎり、なの？[r]ま、まあこっちの味方ならそれでいいさ。
+[k]
+
+[charaFace C 0]
+＠燕青
+現状、経営改善どうこう以前の問題だ。[r]いったん落ち着こうぜ皇帝陛下。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠伊吹童子
+ふふふふふふふ。[r]こっちに付いて良かったわぁ、なんだか楽しい！
+[k]
+
+[cueSe SE_22 22_ade800]
+[charaMoveReturn A 0,20 0.3]
+[charaFace A 4]
+＠伊吹童子
+フレー、フレー！[wt 0.1][charaMoveReturn A 0,20 0.3][r]ファイト！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠酒呑童子
+……？
+[k]
+
+＠酒呑童子
+なんやようわからんけど、[r][#靄:もや]がふざけた感じで揺れとる気がするわぁ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠伊吹童子
+ＹＡ～！
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth O 2]
+
+[charaPut O 1]
+[charaEffect O bit_talk_glitter]
+[wt 0.4]
+[cueSe SE_21 21_ade588]
+[wt 2.0]
+[cueSeStop 21_ade588 1.0]
+[wt 1.0]
+
+？1：応援パワーも効いてることだし
+？2：ここで止める！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut O 2000,2000]
+[charaEffectStop O bit_talk_glitter]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠武則天
+邪魔するでない、マスター。
+[k]
+
+＠武則天
+たとえ悪い流れが見えていようとも、[r]運営を止めるわけにはいかぬのが国というもの。
+[k]
+
+＠武則天
+生き物と同じよ。調子が悪いからといって[r]眠らせてしまえば二度と目覚めぬこともある。
+[k]
+
+＠武則天
+手持ちの材料でなんとか誤魔化しながら[r]自らの理想を信じてやりくりする、
+[k]
+
+[charaFace F 6]
+＠武則天
+それが支配者の腕の見せ所というものじゃ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth I 6]
+[charaDepth H 4]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFace I 5]
+[charaFadeinFSR H 0.1 2]
+[charaFadeinFSL I 0.1 0]
+＠オルトリンデ
+……やる気のようですね。[r]迎撃準備を推奨します。
+[k]
+
+＠リンド
+そうだね、戦闘同期開始[line 3]
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFace J 0]
+[charaFadeinFSR D 0.1 2]
+[charaFadeinFSL J 0.1 0]
+＠ガレス
+行くよ、アネト号！
+[k]
+
+[messageOff]
+[charaTalk off]
+[cueSe SE_21 21_ade557 0 0.8]
+[charaMoveReturnFSL J -256,10 0.3]
+[wt 0.8]
+[charaFadeout D 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+[wt 0.4]
+
+＠オルトリンデ
+こちらは本格戦闘用に、霊基をスルーズに変更します。
+[k]
+
+
+[messageOff]
+[wt 0.5]
+
+[cueSe SE_21 21_ad1108]
+[se bac398]
+[wt 0.05]
+[fadeout white 0.4]
+[wait fade]
+
+[charaChange H 6045000 5 fade 0.1]
+[wait charaChange H]
+[wt 0.3]
+
+[cueSeStop 21_ad1108 0.7]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+[wt 0.6]
+
+[charaFace H 2]
+
+＠H：スルーズ
+[line 3]いきます！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,1346 @@
+
+
+＄94-14-15-02-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257310 1 ダ・ヴィンチ]
+[charaSet B 1098255110 1 ゴルドルフ]
+[charaSet C 1098319200 1 カドック]
+[charaSet D 28010001 1 ダンテ]
+[charaSet E 28010001 1 ダンテ（演出用）]
+[charaSet F 1098257810 1 マシュ]
+[charaSet G 1098121510 1 メディア]
+[charaSet H 1098121510 1 メディア（演出用）]
+[charaSet I 1098319000 1 ホテルスタッフ]
+[charaSet J 1098224300 1 岡田以蔵]
+[charaSet K 1057000 1 セタンタ]
+
+[imageSet M cut662_reset_button 1]
+
+[sceneSet N 10000 1]
+[charaScale N 1.1]
+
+[sceneSet O 243300 1]
+[charaScale O 1.2]
+[sceneSet P 202800 1]
+[charaScale P 1.2]
+
+
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用2]
+
+
+[charaPut W 2000,2500]
+[charaEffect W bit_talk_10_LowLevel]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 242900]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut V 1]
+[charaEffect V bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk A]
+[charaFace A 25]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_76 0.1]
+
+＠ダ・ヴィンチ
+こちらカルデア！[r]……一体何がどうなってるんだい！？
+[k]
+
+＠ダ・ヴィンチ
+強い魔力反応の後、[r]計測していた時間軸が乱れた！
+[k]
+
+[charaFace A 26]
+＠ダ・ヴィンチ
+もしかしてそちら、夜から朝になってないかい！？
+[k]
+
+？1：なりました……
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+[wt 0.15]
+
+[charaTalk depthOff]
+[charaDepth N 2]
+[charaDepth M 3]
+
+[charaPut N 1]
+[charaFadeTime N 0.4 0.5]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.4 0,-200]
+
+[wt 2.0]
+
+
+[charaFadeout M 0.4]
+[charaFadeout N 0.4]
+[wt 0.6]
+
+
+[charaPut V 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+火災が起きて崩落したはずのホテルも、[r]完全に戻っている。
+[k]
+
+＠ゴルドルフ
+これは……一体……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠カドック
+何が起きたんだ……？[wt 0.6][charaFace C 3][r]……いや待て。[%1]。
+[k]
+
+＠カドック
+おまえ、何を持ってるんだ？
+[k]
+
+？1：これ……
+？！
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgmStop BGM_EVENT_76 1.0]
+[wait wipe]
+
+[charaFace C 1]
+[wt 1.0]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠カドック
+ボタンを押して、という声に思わず押したら、[r]こうなった……と。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+フフ、なるほど……。[r]文字通りのリセットボタンという訳か……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠マシュ
+そんな現象が起きるなんて……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+今、急いで詳細を解析中だけど……。
+[k]
+
+[charaFace A 22]
+＠ダ・ヴィンチ
+一種の魔術礼装……それも時間を巻き戻すとしたら、[r]大したものじゃないか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠カドック
+[line 3]時間の遡行って、[r]とんでもない代物じゃなかったっけ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+法政科が駆けつけてくるレベルかな……。
+[k]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+＠G：？？？
+呼ばれたのだけど？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+ああ、来た来た。[r]キミなら、シバ越しでも何とかなるかと思うんだ。
+[k]
+
+[charaFace A 1]
+＠ダ・ヴィンチ
+すまない。このスイッチの解析をお願いしたい。[r]特異点現地で発見されたものだ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.5 1]
+[wt 1.1]
+
+[bgm BGM_KAZURA_1 0.1]
+
+？1：メディア先生ー！
+
+？！
+
+[charaFace G 4]
+＠メディア
+はいはい。がんばってるようで何よりね。[r]んー……ちょっと見えにくいけど、何とかなるわ。
+[k]
+
+[charaFace G 1]
+＠メディア
+その魔術礼装、言うなれば回帰装置ね。
+[k]
+
+＠メディア
+特異点のホテルにいる人間及び全ての構造物の[r]時間をリセット……巻き戻している……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠カドック
+そりゃ凄いな……。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+[wt 1.0]
+
+[charaFace G 4]
+＠メディア
+……訳じゃなさそうね。[r]二、三確認しておきたいのだけど。
+[k]
+
+＠メディア
+リセットした時の場所とレイシフトしてきた時の場所、[r]同じじゃなかった？　あと、時間帯も。
+[k]
+
+？1：[&オレ:わたし]がレイシフトしてきた時の場所だね
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+その通り。[r]戻った時間もまさしくその瞬間だった。
+[k]
+
+[charaFace A 22]
+＠ダ・ヴィンチ
+ええと……８時１３分だね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠メディア
+[%1]。[r]レイシフトしてから今に至るまでの記憶はあるのね？
+[k]
+
+[charaFace G 0]
+＠メディア
+コンシェルジュになった辺りとか。
+[k]
+
+[messageOff]
+[cameraMove 0.35 0,7 1.01]
+[wt 0.5]
+[cameraMove 0.35 0,0 1.01]
+[wt 0.8]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カドック
+ダンテ。アンタはどうだ？[r]記憶はあるか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+フフ……もちろん……。
+[k]
+
+[charaFace D 3]
+＠ダンテ
+たった一日だが、[&彼:彼女]と共に行った[r][#眩:まぶ]しくも輝かしいコンシェルジュ業務……。
+[k]
+
+＠ダンテ
+全てちゃんと覚えてるよ……。[wt 1.0][charaFace D 9][r]あ、もしかしてあれ全部やり直し？
+[k]
+
+？1：……え？
+？！
+
+[charaFace D 0]
+＠ダンテ
+……他の人の様子を見てみよう。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_KAZURA_1 1.0 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[scene 243000]
+
+[se ad518]
+[seVolume ad518 0 0]
+[cueSe SE_21 21_ad1079]
+[cueSeVolume 21_ad1079 0 0]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_KAZURA_1 1.0 1.0]
+[seVolume ad518 1.0 0.2]
+[cueSeVolume 21_ad1079 1.0 0.2]
+[wait fade]
+[wt 0.2]
+
+[se ad95]
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.4 1]
+[wt 0.4]
+[seStop ad95 0.2]
+[wt 0.4]
+
+＠ホテルスタッフ
+おーい、コンシェルジュ。[r]悪いが仕事を頼むよ。
+[k]
+
+[charaFace I 0]
+＠ホテルスタッフ
+あれ？　そいつらは？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+……新しいコンシェルジュ見習いです。[r]将来有望なので雇いました……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠ホテルスタッフ
+そうか。ま、猫の手でも借りたいくらいだ。[r]おまえがいいなら、それで頼むわ。
+[k]
+
+＠ホテルスタッフ
+あと、レストランから材料調達の要望が[r]入ってるぞ。
+[k]
+
+＠ホテルスタッフ
+鶏肉と野菜、あと魚な。[r]これも頼む。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+……はい……。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_KAZURA_1 1.0 0.5]
+[seStop ad518 1.0]
+[cueSeStop 21_ad1079 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[scene 243300]
+
+[subCameraOn 1]
+[charaLayer W sub #A]
+[charaLayer H sub #A]
+[charaLayer O sub #A]
+
+[subCameraFilter #A normal]
+
+[subRenderScale #A 1.01]
+
+[charaDepth O 2]
+[charaDepth H 3]
+[charaDepth W 8]
+
+[charaScale O 1.2]
+[charaScale H 1.2]
+[charaScale W 1.2]
+
+[charaPut W 100,0]
+[charaFace H 1]
+[charaFadein H 0.1 100,0]
+[charaFadein O 0 -100,-280]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_KAZURA_1 1.0 1.0]
+[wait fade]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+＠ダンテ
+はい、予想通りだったけど……。
+[k]
+
+？1：他の人は何も覚えてなかったね……
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠メディア
+ふむ。これで決定的ね。[r]先のスイッチ……回帰礼装（仮）だけど。
+[k]
+
+＠メディア
+あれは、ホテルとその周囲のみを戻しているわ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+……それ、特異点外の時間とズレが生じない？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠メディア
+生じないわ。[r]時間軸はそのままよ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace H 0]
+[subRenderFadein #A 0.7 0,0]
+[charaMove W 200,0 60.0]
+[charaMove H 200,0 60.0]
+[charaMove O 0,-280 60.0]
+[wt 1.0]
+
+＠メディア
+そうね……たとえば、今が３月１日としましょう。
+[k]
+
+＠メディア
+３月２日になってから、[r]リセットスイッチを押したとする。
+[k]
+
+
+＠メディア
+その時点でホテルと周囲の人間、全てが朝８時１３分、[r]かつ３月１日のその時点に居た場所に[#揃えられるわ]。
+[k]
+
+＠メディア
+どこで何をしていようと、[#問答無用:もんどうむよう]にね。
+[k]
+
+＠メディア
+一日が戻ったのではなく、二日目を前の一日と[r]同じモノにした、というとわかりやすいかしら？
+[k]
+
+[charaFace G 1]
+[charaFace H 1]
+＠メディア
+そして３月１日と同じ行動を取る。[r]日付が進んだことを自覚できていない。
+[k]
+
+＠メディア
+同じことを繰り返している、という実感が、[r]人間にもホテルにもなければ[line 3]
+[k]
+
+[charaFace G 0]
+[charaFace H 0]
+＠メディア
+それはもう、リセットと呼ぶしかないでしょう？
+[k]
+
+？1：そうか……今日はつまり、二日目でもあるんだ
+？！
+
+[messageOff]
+[subRenderFadeout #A 0.7]
+[wt 0.7]
+[charaPut W 2000,2500]
+[charaEffectDestroy W bit_talk_10_LowLevel]
+[charaFadeout H 0]
+[charaFadeout O 0]
+[wt 0.15]
+[subCameraOff]
+[charaLayer W normal]
+[charaLayer H normal]
+[charaLayer O normal]
+[charaScale W 1.0]
+[charaScale H 1.0]
+[charaScale O 1.0]
+
+[charaTalk on]
+＠メディア
+そういうことね。もちろん、領域外の時間は普通に[r]進んでいくから[line 3]
+[k]
+
+[charaFace G 1]
+＠メディア
+使い過ぎれば、致命的な破綻を招く可能性があるわ。[r]それだけは気を付けなさいね。
+[k]
+
+？1：わかった！
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[bgmStop BGM_KAZURA_1 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+よし。[r]落ち着いたところで、少しまとめようじゃないか……。
+[k]
+
+[bgm BGM_EVENT_124 0.1]
+
+[charaFace D 1]
+＠ダンテ
+まず、君たちの目的は聖杯を手に入れて、[r]特異点を修正すること……それは変わりないね……？
+[k]
+
+？1：ダンテは？
+？！
+
+[charaFace D 3]
+＠ダンテ
+……フフ、もちろん私もそれに変わりはない。[r]疑われる前に言っておくと……。
+[k]
+
+[charaFace D 10]
+＠ダンテ
+この特異点の聖杯では、[r]私の目的は達成できないからね……。
+[k]
+
+[charaFace D 17]
+＠ダンテ
+その目的については、プライベート的な事情もあり、[r]言うつもりはないが……。
+[k]
+
+[charaFace D 4]
+＠ダンテ
+ともかく……目的を達成できない以上、[r]争うつもりもない……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth K 2]
+[charaDepth J 3]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFace K 8]
+[charaFadeinFSR J 0.1 2]
+[charaFadeinFSL K 0.1 0]
+
+＠岡田以蔵
+ほうか。
+[k]
+
+[charaTalk K]
+＠セタンタ
+達成できないから、か……。
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+そして……昨日……いや正確には今日一日の[r]出来事として……。
+[k]
+
+[charaFace D 0]
+＠ダンテ
+一番聖杯として怪しいのは……。
+[k]
+
+？1：このリセットボタンだね
+
+[charaFace D 9]
+＠ダンテ
+……確かにこれも怪しい、怪しいが……。[r]解析はどうなっている？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+聖杯そのものかどうかと問われるなら……。[r]答えはほぼ間違いなく『ノー』かな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+つまり、残るは……あの仏像ということになる……。
+[k]
+
+？2：あの仏像だね
+
+[charaFace D 18]
+＠ダンテ
+うん、佐々木仮面が盗んでいった[r]あの仏像だ……。
+[k]
+
+？！
+
+[charaFace D 1]
+＠ダンテ
+だから、まずは佐々木仮面を押さえる……。[r]そして仏像を手に入れて、調べてみる……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カドック
+ああ、その方針が一番正しい。[r]逃げるより先に押さえられれば……。
+[k]
+
+？1：それから……
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+フフ……わかるよ……言いたいことは……。
+[k]
+
+[charaFace D 4]
+＠ダンテ
+それから……ホテルの火災も、可能なら[r]防いでおきたい……。
+[k]
+
+[messageOff]
+[cameraMove 0.35 0,7 1.01]
+[wt 0.5]
+[cameraMove 0.35 0,0 1.01]
+[wt 0.8]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 11]
+[charaFadein J 0.1 1]
+
+＠岡田以蔵
+ほうじゃな。[r]火事なんぞ、わざわざ見たいもんでもないきに。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+待ちたまえ。あの火災、防げるものか？[r]つまり修正力というか……。
+[k]
+
+[charaFace B 8]
+＠ゴルドルフ
+あの火災は歴史上、起こることが必然で……。[r]防いでしまった方が害になる。
+[k]
+
+＠ゴルドルフ
+そういう可能性もあるのでは？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カドック
+……ああ、その点は僕も気になった。[r]だから調べてみたんだが……。
+[k]
+
+[charaFace C 1]
+＠カドック
+1938年3月において、そのホテルが火災にあったかどうか、[r]ライブラリのデータはエラーを吐き出している。
+[k]
+
+[charaFace C 5]
+＠カドック
+[#本当に火災が起きたのかわからない]、という感じだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠マシュ
+……それは……もしかしてリセットボタンのせいですか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠カドック
+もしかすると。さっきのリセットボタンのせいで、[r]歴史が確立できてないのかもしれない。
+[k]
+
+[charaFace C 0]
+＠カドック
+何しろ、リセットすると日付がずれていくからな。[r]少なくとも昨日の日付では火災が起きなかったことになる。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+うーむ……だったら、火災が起きるよりは[r]起きない方がいいのか……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠カドック
+本当は起きる、っていうんならなるべく[r]起こした方がいいんだろうけどな……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+フフ……とりあえず、火災は防ぐ方向で動くとしよう……。
+[k]
+
+？1：テニスコートやレストランはどうしよう
+？！
+
+[charaFace D 9]
+＠ダンテ
+テニスコートの修繕と、レストランの材料か……。[r]すまないが、それは違う従業員に任せよう。
+[k]
+
+[charaFace D 1]
+＠ダンテ
+仏像と火災防止を最優先で動くとしよう。[r]……三人とも、いいね？
+[k]
+
+？1：了解！
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaFace J 8]
+[charaFace K 1]
+[charaFadeinFSR J 0.1 2]
+[charaFadeinFSL K 0.1 0]
+[wt 0.55]
+
+[charaMoveReturnFSR J 256,-7 0.4]
+[charaMoveReturnFSL K -256,-7 0.4]
+[wt 1.25]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_124 1.5]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠ダンテ
+とはいえ、火災防止はまずどうすればいいのか……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+
+＠岡田以蔵
+そうじゃ。そもそもあの火事は何で起きたがじゃ？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgm BGM_REQUIEM 0.1]
+
+[charaPut V 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠マシュ
+わたしはその直前に、マスターとダンテさんが遭遇した[r]エネミーが気になります。
+[k]
+
+＠マシュ
+炎と関わりのある魔性のようでしたし。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠カドック
+だよな。アイツらを生み出した本体……本体、[r]って言うべきなのかわからないが……。
+[k]
+
+[charaFace C 5]
+＠カドック
+ともかく、そういうヤツが召喚されて、[r]ホテルを丸ごと焼き払った。
+[k]
+
+[charaFace C 1]
+＠カドック
+……ということか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ダンテ
+確かにここは老朽化したホテルで、いつ『何か』が[r]起きてもおかしくはないが……。
+[k]
+
+[charaFace D 18]
+＠ダンテ
+火災を起こす必要は……なかったはずだ……。
+[k]
+
+[charaFace D 9]
+＠ダンテ
+……。[r]……。
+[k]
+
+？1：ダンテ？
+？！
+
+[charaFace D 10]
+＠ダンテ
+……フフ……私としたことが……熱くなったようだ……。[r]頭冷やしてきます……。
+[k]
+
+[messageOff]
+[cueSe SE_23 23_ade895]
+[charaFadeout D 0.4]
+[cueSeStop 23_ade895 1.2]
+[wt 1.5]
+
+[cueSe SE_24 24_ade1072]
+[wt 1.0]
+
+[charaPut V 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カドック
+ダンテのやつ、関係者って訳でもなさそうだが、[r]ホテルに結構思い入れがあるのかね……。
+[k]
+
+[charaFace C 5]
+＠カドック
+まあ、ひとまず置いておこう。[r]まずは謎のエネミーへの対処法だ。
+[k]
+
+[charaFace C 1]
+＠カドック
+そもそもアレが何なのか、だ。
+[k]
+
+[charaFace C 12]
+＠カドック
+炎の……何らかの形での具象化というか、[r]恐らく精霊の一種なのは間違いないが……。
+[k]
+
+＠カドック
+[#なぜここに現れた]？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 34]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+そこだよねえ。
+[k]
+
+[charaFace A 23]
+＠ダ・ヴィンチ
+例えば火山の傍なら、炎に適応する存在として、[r]精霊種が出現するのは道理だ。
+[k]
+
+[charaFace A 22]
+＠ダ・ヴィンチ
+もちろん、魔力の有無が関わってくるけど……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カドック
+だが、ここはおおよそ炎の精霊とは縁の無い、[r]人間の作った建築物だ。
+[k]
+
+[charaFace C 2]
+＠カドック
+おまけに歴史も浅すぎる。[r]100年も経過してない、近代の建築物だぞ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+うむ……100年を超えた建物、あるいは最初から何らかの[r]形で呪術的なものを含んだ場所なら……。
+[k]
+
+[charaFace B 8]
+＠ゴルドルフ
+魔性が召喚される可能性もあるが、そうではない。[r]何度調べても、ただの古びたホテルでしかなかったからな。
+[k]
+
+[charaFace B 16]
+＠ゴルドルフ
+そして聖杯と関連している、というならば……。[r]聖杯と[#どう]関連しているのかが問題だ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠マシュ
+あの炎の精霊……イフリータは、便宜上は[r]アラビアの伝承にあたります。
+[k]
+
+＠マシュ
+召喚した人間と関係あるのでは？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk K]
+[charaFace K 8]
+[charaFadein K 0.1 1]
+
+＠セタンタ
+あー、でも意外と関係のない場所にも[r]出てくるのがあいつらだよなあ。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠マシュ
+それは確かに……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カドック
+ともかく、あれが聖杯と関わっているのは確かだ。
+[k]
+
+[charaFace C 1]
+＠カドック
+逆に言えば、倒したりすることで聖杯への[r]アプローチ手段が見つけられるかもしれない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+うむ、そうだな。次は是非とも仕留めよう。[wt 1.0][charaFace B 9][r]それから…………ダンテが遅いな。
+[k]
+
+？1：呼びに行ってきまーす
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_REQUIEM 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaPut V 2000,2500]
+
+[scene 243000]
+
+[se ad518]
+[seVolume ad518 0 0]
+[cueSe SE_21 21_ad1079]
+[cueSeVolume 21_ad1079 0 0]
+[wt 1.5]
+
+[seVolume ad518 1.0 0.2]
+[cueSeVolume 21_ad1079 1.0 0.2]
+[fadein black 1.0]
+[wait fade]
+[wt 1.2]
+
+[se ad95]
+[wipeout leftToRight 1.0 1.0]
+[seStop ad518 1.2]
+[cueSeStop 21_ad1079 1.2]
+[seStop ad95 1.2]
+[wait wipe]
+
+[scene 202800]
+
+[charaDepth D 2]
+[charaDepth P 3]
+[charaDepth E 4]
+
+[charaScale P 1.0]
+[charaFadein P 0.1 0,-200]
+
+[charaFace D 3]
+[charaFadein D 0.1 1]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaMoveScaleEase P 1.2 0.8 easeOutSine]
+[charaMoveEase P 100,-260 0.8 easeOutSine]
+[wt 1.0]
+
+[charaScale E 1.2]
+[charaTalk E]
+[charaFace E 18]
+[charaFadein E 0.4 -200,0]
+[wt 1.0]
+
+＠E：ダンテ
+……。[r]……。
+[k]
+
+？1：ダンテー！
+？！
+
+[messageOff]
+[charaFaceFade E 16 0.2]
+[wt 1.2]
+
+[charaTalk E,D]
+[charaFadeout E 0.6]
+[charaFadeout P 0.6]
+[wt 0.9]
+
+[bgm BGM_EVENT_92 0.1]
+
+＠ダンテ
+フフ……君か……。すまない、物思いに[#耽:ふけ]っている内に[r]時間が経ってしまったようだ……。
+[k]
+
+？1：何か気になることでも？
+？！
+
+[charaFace D 17]
+＠ダンテ
+いや……そうではない。
+[k]
+
+[charaFace D 18]
+＠ダンテ
+……。[r]……君たちは幾つもの特異点を修正したのだから……。
+[k]
+
+[charaFace D 9]
+＠ダンテ
+恐らく、災害のようなものの跡地も[r]経験したことはあるだろう。
+[k]
+
+[charaFace D 10]
+＠ダンテ
+……フフ……私はね、あれが苦手というか[r]なんというか……。
+[k]
+
+[charaFace D 5]
+＠ダンテ
+有り体に言って……ド凹む……。
+[k]
+
+？1：ド凹む？
+？！
+
+[charaFace D 3]
+＠ダンテ
+……フフ……だってさ……。
+[k]
+
+＠ダンテ
+人間が色々努力して、培ってきたもの、[r]あるいはそこに在り続けることで得た思い出……。
+[k]
+
+[charaFace D 0]
+＠ダンテ
+万人の記憶に残るものではなく、[r]そこに居ることで獲得した、他の誰にもないもの……。
+[k]
+
+[charaFace D 18]
+＠ダンテ
+そういうものを、根こそぎ破壊される……。[r]あれは……辛いものがある……。
+[k]
+
+？1：そうだね……
+？！
+
+[charaFace D 17]
+＠ダンテ
+フ……別に私とて、歴史的なそういうものに[r]立ち会った訳ではないが……。
+[k]
+
+[charaFace D 10]
+＠ダンテ
+ただ……そういうのが苦手なんだ、私は……。
+[k]
+
+？1：よし、じゃあ頑張って止めよう
+？！
+
+[messageOff]
+[charaFaceFade D 3 0.2]
+[wt 1.2]
+
+[charaFace D 4]
+＠ダンテ
+そうしよう……。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_92 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

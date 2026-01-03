@@ -1,0 +1,53 @@
+
+＄94-99-99-02-6-0
+
+[soundStopAll]
+[enableFullScreen]
+[bgm BGM_EVENT_77 0.1]
+
+[charaSet A 11012000 1 アナウンス]
+[charaSet I 5009000 1 エフェクト用ダミー]
+
+[scene 110101]
+
+[fadein black 0.5]
+[wait fade]
+
+＠アナウンス
+テスト開始します。[r]以下の手順でテストを行います。
+[k]
+
+＠アナウンス
+①実際のスクリプトで使用予定の例を再生[r]②その他の例を再生（今回はありません）
+[k]
+
+＠アナウンス
+まず①「飛んでくる紫の光」の、スクリプトにて[r]使用予定の例で再生を開始します。
+[k]
+
+＠アナウンス
+立ち絵はなしで、[r]「bit_talk_purple_arrow」は通常エフェクト。
+[k]
+
+＠アナウンス
+各工程の前にタッチ待ちを入れておりますので、[r]次に進みたい場合はタッチしてください。
+[k]
+
+[messageOff]
+
+[effect bit_talk_purple_arrow]
+[wt 8.0]
+
+[wait touch]
+
+＠アナウンス
+テストを終了します。[r]お疲れ様でした。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+[soundStopAll]
+[end]
+

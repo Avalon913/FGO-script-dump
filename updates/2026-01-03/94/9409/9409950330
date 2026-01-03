@@ -1,0 +1,2022 @@
+
+
+＄94-09-95-03-3-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098298800 1 パッションリップ]
+[charaSet B 1098276900 1 マシュ]
+[charaSet C 3055000 1 ニキチッチ]
+[charaSet D 33002000 1 エレシュキガル]
+[charaSet E 1098298500 1 テノチティトラン]
+[charaSet F 1098298000 1 パーシヴァル]
+[charaSet G 1098298800 1 パッションリップ_演出用]
+[charaSet H 1098276900 1 マシュ_演出用]
+
+[imageSet J cut573_passion 1 1]
+
+[sceneSet M 220000 1]
+[sceneSet N 220000 1]
+[sceneSet O 220000 1]
+[sceneSet P 220000 1]
+[sceneSet Q 10000 1]
+[charaScale Q 1.01]
+
+[charaSet R 98115000 1 エフェクト用]
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+
+[charaPut R 2000,2000]
+[charaEffect R bit_talk_diremond_dust02]
+
+[scene 220000]
+
+[charaTalk depthOff]
+[charaDepth R 8]
+[charaDepth J 7]
+[charaDepth B 6]
+[charaDepth A 5]
+[charaDepth N 4]
+[charaDepth C 3]
+[charaDepth M 2]
+[charaDepth H 1]
+
+[effect bit_talk_lens_flare_fs]
+
+[fadein black 1.0]
+[bgm BGM_MAP_24 0.1]
+[wait fade]
+
+
+[wt 2.5]
+
+
+[fadeout white 1.2]
+[wait fade]
+
+[effectDestroy bit_talk_lens_flare_fs]
+[charaPut R 1]
+
+[charaScale J 2.0]
+[charaFadein J 0.1 80,490]
+[charaMove J -80,490 5.0]
+[wt 0.3]
+
+[fadein white 0.7]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout white 0.7]
+[wait fade]
+
+[charaScale J 2.0]
+[charaFadein J 0.1 -80,-110]
+[charaMove J 80,-110 5.0]
+[wt 0.3]
+
+[fadein white 0.7]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout white 0.7]
+[wait fade]
+
+[charaScale J 2.0]
+[charaFadein J 0.1 50,-470]
+
+[charaScale M 1.4]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[charaFadein M 0.1 250,-400]
+
+[charaMoveEase J 50,-250 3.5 easeOutQuad]
+[charaMoveScaleEase J 1.615 3.5 easeOutQuad]
+[wt 0.3]
+
+[fadein white 0.7]
+[wait fade]
+[wt 3.5]
+
+[charaFadeout J 0.7]
+[charaEffectStop R bit_talk_diremond_dust02]
+[wt 1.2]
+
+[se ade151]
+[seStop ade151 2.0]
+[charaMoveReturn A 0,-10 0.3]
+[wait charaMove A]
+[cueSeStop 24_ade1095 1.6]
+
+[charaScale R 1.2]
+[charaScale S 1.2]
+[charaPut R 150,200]
+[charaEffect R bit_talk_water_splash]
+[charaMove R 550,-600 0.4]
+[charaPut S -150,-200]
+[charaEffect S bit_talk_water_splash]
+[charaMove S -550,-600 0.4]
+
+＠パッションリップ
+えーい！[r]あははは！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaEffectDestroy R bit_talk_water_splash]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠マシュ
+やりますね、リップさん！[r]それでは、わたしも！
+[k]
+
+[messageOff]
+[se ade151]
+[seStop ade151 2.0]
+[charaMoveReturn B 0,-10 0.3]
+[wait charaMove B]
+
+[charaScale R 1.2]
+[charaPut R 0,-200]
+[charaEffect R bit_talk_water_splash]
+[charaMove R -500,-800 0.4]
+[wt 0.8]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaEffectDestroy R bit_talk_water_splash]
+
+[charaScale B 1.2]
+[charaScale A 1.2]
+[charaScale N 1.2]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠ニキチッチ
+ははは、水辺のオレの力を見せねばなるまいな！[wt 1.0][charaFace C 12][charaMoveReturn C 0,10 0.3][r]とーう！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se adm11]
+[wt 0.4]
+
+[charaFace B 9]
+[charaFadein B 0.4 400,-10]
+[charaFace A 11]
+[charaFadein A 0.4 -80,-10]
+[charaFadein N 0.4 120,-240]
+[charaMove B 280,-10 0.4]
+[charaMove A -200,-10 0.4]
+[charaMove N 0,-240 0.4]
+
+[charaScale R 1.0]
+[charaPut R 0,-500]
+[charaMove R 0,-300 0.5]
+[charaEffect R bit_talk_underwater_bombing 0,0 V]
+[wt 0.4]
+[seStop adm11 1.2]
+[charaMove R 0,-2000 0.6]
+
+[wt 0.8]
+[charaFadeout C 0.1]
+[charaFadeout M 0.1]
+[charaFace H 21]
+[charaFadein H 0.1 1]
+
+[charaFace B 21]
+[charaFace A 1]
+
+＠二人
+きゃあー！
+[k]
+
+[messageOff]
+[charaTalk B,H,A]
+[charaEffectDestroy R bit_talk_underwater_bombing]
+[charaFadeout B 0.6]
+[charaFadeout A 0.6]
+[charaFadeout N 0.6]
+[wt 0.7]
+[charaScale B 1.0]
+[charaScale A 1.0]
+
+[charaFace H 2]
+
+＠マシュ
+どうですか、リップさん？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠パッションリップ
+うん、楽しい！
+[k]
+
+[charaFace A 4]
+
+＠パッションリップ
+陸上ではいろいろ重くてどんくさいわたしも、
+[k]
+
+＠パッションリップ
+水中ならそれなりに軽い、ような気が、[r]しなくもなかったりするから！
+[k]
+
+[charaFace A 1]
+
+＠パッションリップ
+[%1]さん、[r]早く休憩から戻ってこないかな～～～♪
+[k]
+
+[messageOff]
+[charaFace A 3]
+[wt 1.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル
+こーら。恨めしそうに見てもダメよ。
+[k]
+
+[charaFace D 31]
+
+＠エレシュキガル
+休憩中のマスターの世話はパーシヴァルに[r]任せるって決めたでしょ？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠テノチティトラン
+ちっ。甲斐甲斐しいお世話でアピールした結果、[r]隙をついて手を取り合い、二人きりで軽やかに離脱……
+[k]
+
+[charaFace E 17]
+
+＠テノチティトラン
+という作戦が見抜かれています、ね。[r]せっかく泳げる水着に着替えたのに。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_MAP_24 1.0 0.4]
+[wait fade]
+
+[imageSet J cut565_counter2 1]
+
+[charaTalk depthOn]
+[charaFadeout E 0.1]
+
+[charaDepth J 5]
+[charaDepth Q 2]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_MAP_24 1.0 1.0]
+[wait fade]
+
+
+？1：（リップ、喜んでくれたようでよかった……）
+？2：（そう言えば……）
+？！
+
+[charaFadein J 0.4 0,-200]
+[charaPut Q 0,-200]
+[charaFadeTime Q 0.2 0.5]
+[wt 2.0]
+[charaFadeout J 0.4]
+[charaFadeout Q 0.4]
+
+[se ad173]
+[wt 1.4]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+[seStop ad173 0.4]
+[wt 0.4]
+
+＠パーシヴァル
+マスター、冷たい飲み物を買ってきたよ。[r]飲むといい。
+[k]
+
+？1：ありがとう！
+？！
+
+[charaFace F 0]
+
+＠パーシヴァル
+見ているそれは……[r]ＢＢから受け取った幸せカウンターだね。
+[k]
+
+？1：いつのまにかこんなに上がってて
+？！
+
+[charaFace F 3]
+
+＠パーシヴァル
+言うまでもないことだけど、良い買い物だった。[r]彼女のあの笑顔を見れば間違いはない。
+[k]
+
+＠パーシヴァル
+その笑みを生み出したのは貴方だ。[r]幸福を感じていても不思議はないと思う。
+[k]
+
+？1：せっかくの夏休みなんだから
+？2：みんなでいっぱい幸せを感じたい
+？！
+
+[charaFace F 0]
+
+＠パーシヴァル
+心より同感だね。[r]私も実際に体験できるものは貪欲に体験し、
+[k]
+
+＠パーシヴァル
+このドバイの文化と風土を[r]心ゆくまで味わうつもりだ。
+[k]
+
+[charaFace F 5]
+
+＠パーシヴァル
+マスターの護衛に全力を尽くしたうえで、[r]同時に観光にも全力を尽くす。
+[k]
+
+＠パーシヴァル
+それがこの夏の私だと思ってほしい。
+[k]
+
+？1：（仕事も遊びも大真面目[line 3]）
+？2：（うん、それがパーシヴァルだよね！）
+？！
+
+[bgmStop BGM_MAP_24 1.5]
+[charaFace F 21]
+
+＠パーシヴァル
+……おや、何やら海のほうが騒がしいな。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[sceneSet G 10001 1]
+[charaSet H 4024000 1 モードレッド]
+[charaSet J 4045001 1 カイニス]
+[sceneSet Q 220000 1]
+
+[subCameraOn 4]
+[subCameraFilter #A maskEdge cut359_mask22 3 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask22 3 255,255,255,255]
+[subCameraFilter #C maskEdge cut359_mask16 3 255,255,255,255]
+[subCameraFilter #D maskEdge cut359_mask10 3 255,255,255,255]
+[subRenderScale #A 0.7]
+[subRenderScale #B 0.7]
+[subRenderScale #C 1.0]
+[subRenderScale #D 1.0]
+[subRenderDepth #A 3]
+[subRenderDepth #B 2]
+[subRenderDepth #C 4]
+[subRenderDepth #D 1]
+[charaLayer H sub #A]
+[charaLayer R sub #A]
+[charaLayer T sub #A]
+[charaLayer O sub #A]
+[charaLayer J sub #B]
+[charaLayer S sub #B]
+[charaLayer U sub #B]
+[charaLayer P sub #B]
+[charaLayer B sub #C]
+[charaLayer E sub #C]
+[charaLayer C sub #C]
+[charaLayer D sub #C]
+[charaLayer N sub #C]
+[charaLayer G sub #D]
+[charaScale H 1.6]
+[charaScale O 1.6]
+[charaDepth R 3]
+[charaDepth H 2]
+[charaDepth O 1]
+[charaRoll H 340 0,0]
+[charaRoll O 340 0,0]
+[charaRoll R 340 0,0]
+[charaFace H 1]
+[charaFadein H 0.1 340,60]
+[charaFadein O 0.1 -400,-150]
+[charaPut R 0,120]
+[charaEffect R bit_talk_42 0,0]
+[charaPut T 0,70]
+[charaEffect T bit_talk_surfing 0,0 H]
+[charaScale J 1.55]
+[charaScale P 1.5]
+[charaDepth S 3]
+[charaDepth J 2]
+[charaDepth P 1]
+[charaRoll J 340 0,0]
+[charaRoll P 340 0,0]
+[charaRoll S 340 0,0]
+[charaFace J 11]
+[charaFadein J 0.1 540,360]
+[charaFadein P 0.1 0,250]
+[charaPut S 150,600]
+[charaEffect S bit_talk_42 0,0]
+[charaPut U 100,300]
+[charaEffect U bit_talk_surfing 0,100 H]
+[charaScale B 1.1]
+[charaScale E 1.1]
+[charaScale C 1.1]
+[charaScale D 1.1]
+[charaScale N 1.1]
+[charaDepth B 5]
+[charaDepth E 4]
+[charaDepth C 3]
+[charaDepth D 2]
+[charaDepth N 1]
+[charaFace B 6]
+[charaFadein B 0.1 0,250]
+[charaFadein N 0.1 -100,50]
+[charaFadein G 0.1 0,100]
+
+[charaTalk depthOff]
+[charaDepth M 3]
+[charaDepth A 2]
+[charaDepth Q 1]
+[wt 0.7]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[cueSe SE_24 24_ade1091]
+[cueSeVolume 24_ade1091 0 0.1]
+[cueSe SE_24 24_ade1090]
+[cueSeVolume 24_ade1090 0 0.1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠パッションリップ
+……ん？[r]何この音？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSeVolume 24_ade1091 2.0 0.7]
+[cueSeVolume 24_ade1090 2.0 0.7]
+[wt 2.0]
+
+＠？？？
+どけどけどけー！
+[k]
+
+[messageOff]
+[charaTalk off]
+[cueSeVolume 24_ade1091 0.5 1.0]
+[cueSeVolume 24_ade1090 0.5 1.0]
+[charaScale M 1.4]
+[charaFadein M 0.4 250,-400]
+[wt 0.4]
+
+[subCameraRoll #A 20 0,0]
+[subRenderFadein #A 0.3 -770,250]
+[subRenderMove #A -470,190 0.3]
+[subCameraRoll #B 20 0,0]
+[subRenderFadein #B 0.3 -770,-285]
+[subRenderMove #B -470,-345 0.3]
+[subCameraRoll #D 1.2 0,0]
+[subRenderFadein #D 0.4 -503,-250]
+[subRenderMove #D -203,-250 0.3]
+[wt 2.0]
+
+[charaFace A 11]
+[charaFadein A 0.1 1]
+[charaScale Q 1.6]
+[charaFadein Q 0.4 380,-400]
+
+[subRenderMove #A -770,250 0.3]
+[subRenderMove #B -770,-285 0.3]
+[subRenderMove #D -508,-250 0.3]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[subRenderFadeout #D 0.3]
+
+[charaTalk on]
+[charaTalk B]
+[charaFadeout M 0.4]
+[subRenderFadeinFSR #C 0.4 340,-260]
+[wt 0.4]
+
+＠マシュ
+危ない、リップさん！
+[k]
+
+[messageOff]
+[charaTalk B,A]
+[charaFace A 6]
+[subRenderFadeout #C 0.3]
+
+＠パッションリップ
+き[charaShake A 0.02 3 3 0.6]ゃっ？
+[k]
+
+[messageOff]
+[se ad745]
+[wt 0.05]
+[cueSe SE_23 23_ade871]
+[cueSeVolume 23_ade871 0 0]
+[cueSeVolume 23_ade871 0.5 0.7]
+[effect bit_talk_water_spread2]
+[wt 0.2]
+[charaShake A 0.1 3 3 1.0]
+[charaMoveEase A 50,-70 0.7 easeOutQuad]
+[charaMoveScaleEase A 0.85 0.7 easeOutQuad]
+[wt 1.1]
+[se ad36]
+[cueSe SE_23 23_ad1320]
+[charaMoveEase A 50,-100 0.3 easeOutCubic]
+[charaFadeout A 0.4]
+[wt 1.0]
+[charaFadeout Q 0.4]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+[charaFace D 0]
+[charaFadein D 0.1 0,250]
+
+[cueSeStop 24_ade1091 2.0]
+[cueSeStop 24_ade1090 2.0]
+[cueSeStop 23_ade871 2.0]
+
+[charaTalk D]
+[subRenderFadeinFSR #C 0.4 340,-260]
+[wt 0.4]
+
+[bgm BGM_BATTLE_62 0.1]
+
+＠エレシュキガル
+何あれ。水上バイクのカイニスと、[r]モードレッドは……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,250]
+
+＠テノチティトラン
+サーフボードのようなものから、[r]水を噴出させて。[#飛んで]います、ね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,250]
+
+＠ニキチッチ
+ぬう。[r]見たこともない乗り物だが[line 3]
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[bgm BGM_BATTLE_62 0.6 0.4]
+[wait wipe]
+
+[charaTalk depthOn]
+
+[subRenderFadeout #C 0.1]
+[charaLayer H normal]
+[charaLayer R normal]
+[charaLayer T normal]
+[charaLayer O normal]
+[charaLayer J normal]
+[charaLayer S normal]
+[charaLayer U normal]
+[charaLayer P normal]
+[charaLayer B normal]
+[charaLayer E normal]
+[charaLayer C normal]
+[charaLayer D normal]
+[charaLayer N normal]
+[charaLayer G normal]
+[charaFadeout H 0.1]
+[charaFadeout R 0.1]
+[charaFadeout O 0.1]
+[charaFadeout J 0.1]
+[charaFadeout S 0.1]
+[charaFadeout P 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout N 0.1]
+[charaFadeout G 0.1]
+[charaScale H 1.0]
+[charaScale J 1.0]
+[charaScale B 1.0]
+[charaScale E 1.0]
+[charaScale C 1.0]
+[charaScale D 1.0]
+[subCameraOff]
+
+[charaRoll H 0 0,0]
+[charaRoll O 0 0,0]
+[charaRoll R 0 0,0]
+[charaRoll J 0 0,0]
+[charaRoll P 0 0,0]
+[charaRoll S 0 0,0]
+[charaEffectDestroy R bit_talk_42]
+[charaEffectDestroy S bit_talk_42]
+[charaEffectDestroy T bit_talk_surfing]
+[charaEffectDestroy U bit_talk_surfing]
+[wt 0.4]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[bgm BGM_BATTLE_62 0.6 1.0]
+[wait wipe]
+
+？1：飛んでるー！　何あれ！？
+
+[branch select01]
+
+？2：アクアボードってやつかも！
+
+[branch select02]
+
+？！
+
+[label select01]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+[wt 0.3]
+[charaCrossFade F 1098298010 3 0.3]
+[cueSe SE_21 21_ade689]
+[wait charaCrossFade F]
+[wt 0.4]
+[fowardEffect bit_talk_starshine -19,142]
+[se ade395]
+[wt 1.0]
+
+＠パーシヴァル
+あれは[line 3]『ドバイのアクティビティ』の[r]データで見たことがある。
+[k]
+
+[charaFace F 23]
+
+＠パーシヴァル
+水上バイクに繋がったホースから取り込んだ水を、[r]ボードから噴射し……その反動で空を飛ぶ、
+[k]
+
+＠パーシヴァル
+新しいマリンスポーツ。[r]名は確か、アクアボード、とか。
+[k]
+
+？1：さすがはパーシヴァル、物知り……！
+？！
+
+[messageOff]
+[charaFace F 3]
+[fowardEffect bit_talk_starshine -19,142]
+[se ade395]
+[wt 1.0]
+
+＠パーシヴァル
+フフ。[r]予習してきたからね。
+[k]
+
+[branch select-end]
+
+
+[label select02]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+[wt 0.3]
+[charaCrossFade F 1098298010 3 0.3]
+[cueSe SE_21 21_ade689]
+[wait charaCrossFade F]
+[wt 0.4]
+[fowardEffect bit_talk_starshine -19,142]
+[se ade395]
+[wt 1.0]
+
+＠パーシヴァル
+うん。水上バイクに繋がったホースから[r]取り込んだ水を、ボードから噴射し……
+[k]
+
+＠パーシヴァル
+その反動で空を飛ぶ新しいマリンスポーツ。
+[k]
+
+[charaFace F 0]
+
+＠パーシヴァル
+私は事前にドバイのアクティビティについて[r]調べていたからだけど、
+[k]
+
+[charaFace F 3]
+
+＠パーシヴァル
+マスターは元から知っていたのかな。[r]さすがはマスター、博識だね。
+[k]
+
+[label select-end]
+
+[charaCrossFade F 1098298000 21 0.3]
+[se ade158]
+[wait charaCrossFade F]
+
+＠パーシヴァル
+しかし、どうあれ[line 3]
+[k]
+
+[charaFace F 5]
+
+＠パーシヴァル
+あれはよくないな。[r]水遊びをしている人たちとの距離が近すぎる。
+[k]
+
+[charaFace F 7]
+
+＠パーシヴァル
+注意せねば！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_BATTLE_62 0.5 0.4]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[sceneSet M 147202 1]
+
+[subCameraOn 1]
+[subCameraFilter #A maskEdge cut359_mask16 3 255,255,255,255]
+[charaLayer F sub #A]
+[charaLayer O sub #A]
+[charaScale F 1.1]
+[charaScale O 1.1]
+[charaDepth F 2]
+[charaDepth O 1]
+[charaFace F 7]
+[charaFadein F 0.1 0,200]
+[charaFadein O 0.1 50,0]
+
+[charaTalk depthOff]
+[charaDepth R 4]
+[charaDepth J 3]
+[charaDepth H 2]
+[charaDepth M 1]
+
+[charaScale J 1.15]
+[charaScale H 1.2]
+
+[charaPut R -80,-2000]
+[charaEffect R bit_talk_surfing 0,0 H]
+
+[charaScale M 1.3]
+[charaFadein M 0.4 150,-220]
+[cueSe SE_24 24_ade1091]
+[cueSeVolume 24_ade1091 0 0]
+[wt 0.3]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[cueSeVolume 24_ade1091 0.5 0.6]
+[bgm BGM_BATTLE_62 0.5 1.0]
+[wait wipe]
+
+[charaTalk J,H]
+[charaFace J 1]
+[charaFadein J 0.4 -80,-40]
+[charaMoveEase J -20,-40 0.4 easeOutQuart]
+[charaMove R -100,-200 0.4]
+[wt 0.2]
+[se ad979]
+[se ad36]
+[charaFace H 0]
+[charaFadein H 0.4 -480,140]
+[charaMoveEase H -340,-50 0.6 easeOutQuart]
+[wt 0.5]
+[charaMoveEase H -340,-40 0.3 easeOutQuart]
+[wt 0.3]
+
+[charaFace H 1]
+
+＠モードレッド
+うっひょー！
+[k]
+
+[charaTalk F]
+[subRenderFadeinFSR #A 0.3 390,-210]
+[subRenderMoveEaseFSR #A 340,-260 0.3 easeOutSine]
+[wt 0.4]
+
+＠パーシヴァル
+いけない、モードレッド！[r]危ないぞ！
+[k]
+
+[charaFace H 2]
+
+＠モードレッド
+げ、パー公！[r]あいつもいたのか。
+[k]
+
+[charaFace H 1]
+
+＠モードレッド
+でも[line 3]危なくなんてねえよなあ！？
+[k]
+
+[charaFace H 5]
+
+＠モードレッド
+せっかくスピードに乗ったところなんだ、[r]ここで興醒めな真似できるかよ！
+[k]
+
+[charaFace H 2]
+
+＠モードレッド
+飛ばそうぜ、カイニス！
+[k]
+
+[charaFace J 8]
+
+＠カイニス
+おう！　いっくぜえ！
+[k]
+
+[charaFace F 7]
+
+＠パーシヴァル
+っ、さらにスピードを上げるとは！
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderMoveEaseFSR #A 600,-260 0.3 easeOutSine]
+[subRenderFadeout #A 0.3]
+
+[charaFace J 12]
+[cameraMoveEase 0,-20 0.6 easeOutQuart 1.15]
+[wt 0.6]
+
+[charaTalk on]
+
+＠カイニス
+心配すんなって！　今のオレはライダー霊基、[r]間違っても事故なんて起こしゃしねえよ！
+[k]
+
+[messageOff]
+[cueSeStop 24_ade1091 0.8]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_BATTLE_62 0.5 0.4]
+[wait wipe]
+
+[charaTalk depthOn]
+[charaFadeout J 0.1]
+[charaFadeout H 0.1]
+[charaFadeout M 0.1]
+[charaPut R -2000,-2000]
+[charaEffectDestroy R bit_talk_surfing]
+
+[charaLayer F normal]
+[charaLayer O normal]
+[charaFadeout F 0.1]
+[charaFadeout O 0.1]
+[subCameraOff]
+[wt 0.1]
+
+[cameraHome 0.1]
+[wait camera]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_BATTLE_62 0.5 1.0]
+[wait wipe]
+
+[charaScale F 1.0]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+いや、それは筋が違う。
+[k]
+
+＠パーシヴァル
+万が一の出来事は誰にでもあり得るものだ。[r]それに、考えてもみなさい。問題は危険性だけではなく、
+[k]
+
+＠パーシヴァル
+騒音や威圧感だけでも人の迷惑に[line 3][wt 0.8][charaFace F 15][r]聞いていないな！
+[k]
+
+？1：新しいゾクもきたみたいだよ
+？！
+
+[charaFace F 21]
+
+＠パーシヴァル
+何だって？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_BATTLE_62 0.5 0.4]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[charaSet B 98115000 1 エフェクト用]
+[charaSet E 3031001 1 哪吒]
+[wt 0.1]
+
+[subCameraOn 4]
+[subCameraFilter #A maskEdge cut359_mask22 3 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask22 3 255,255,255,255]
+[subCameraFilter #C maskEdge cut359_mask09 4 255,255,255,255]
+[subCameraFilter #D maskEdge cut359_mask10 3 255,255,255,255]
+[subRenderScale #A 0.7]
+[subRenderScale #B 0.7]
+[subRenderScale #C 1.0]
+[subRenderScale #D 1.0]
+[subRenderDepth #A 3]
+[subRenderDepth #B 2]
+[subRenderDepth #C 4]
+[subRenderDepth #D 1]
+[charaLayer H sub #A]
+[charaLayer R sub #A]
+[charaLayer U sub #A]
+[charaLayer O sub #A]
+[charaLayer J sub #B]
+[charaLayer S sub #B]
+[charaLayer B sub #B]
+[charaLayer P sub #B]
+[charaLayer T sub #C]
+[charaLayer E sub #C]
+[charaLayer Q sub #C]
+[charaLayer G sub #D]
+[charaScale R 1.0]
+[charaScale H 1.6]
+[charaScale O 1.6]
+[charaDepth U 4]
+[charaDepth R 3]
+[charaDepth H 2]
+[charaDepth O 1]
+[charaRoll H 340 0,0]
+[charaRoll O 340 0,0]
+[charaRoll R 340 0,0]
+[charaRoll U 340 0,0]
+[charaFace H 5]
+[charaFadein H 0.1 340,60]
+[charaFadein O 0.1 -400,-150]
+[charaPut R -50,100]
+[charaEffect R bit_talk_surfing 0,0 H]
+[charaScale S 1.0]
+[charaScale J 1.55]
+[charaScale P 1.5]
+[charaDepth B 4]
+[charaDepth S 3]
+[charaDepth J 2]
+[charaDepth P 1]
+[charaRoll J 340 0,0]
+[charaRoll P 340 0,0]
+[charaRoll S 340 0,0]
+[charaRoll B 340 0,0]
+[charaFace J 5]
+[charaFadein J 0.1 540,360]
+[charaFadein P 0.1 0,250]
+[charaPut S 600,100]
+[charaEffect S bit_talk_surfing 0,0 H]
+[charaScale T 1.4]
+[charaScale E 1.1]
+[charaScale Q 1.1]
+[charaDepth T 3]
+[charaDepth E 2]
+[charaDepth Q 1]
+[charaRoll E 359 0,0]
+[charaRoll Q 359 0,0]
+[charaFadein Q 0.1 -150,-80]
+[charaFadein G 0.1 0,100]
+
+[charaTalk depthOff]
+[cueSe SE_24 24_ade1091]
+[cueSeVolume 24_ade1091 0 0]
+[cueSe SE_24 24_ade1090]
+[cueSeVolume 24_ade1090 0 0]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.4 1.0]
+
+[wt 0.4]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_BATTLE_62 0.5 1.0]
+[wait wipe]
+[wt 1.0]
+[seStop ad556 1.0]
+[wt 0.5]
+
+[cueSe SE_21 21_ade546]
+[cueSeVolume 21_ade546 0 0.2]
+[cueSeVolume 21_ade546 0.8 1.0]
+[cueSe SE_23 23_ade843]
+[cueSeVolume 23_ade843 0 0]
+[cueSeVolume 23_ade843 0.8 0.4]
+[subCameraRoll #C 1 0,0]
+[subRenderFadein #C 0.4 195,-150]
+[subRenderMove #C 195,-180 0.4]
+[wt 0.5]
+[charaScale T 1.0]
+[charaRoll T 269 0,0]
+[charaPut T 450,300]
+[charaEffect T bit_talk_gale 0,0 H]
+[cueSeStop 23_ade843 0.4]
+[wt 0.4]
+[charaTalk E]
+[charaFace E 0]
+[charaPut E 100,180]
+[charaSpecialEffect E appearance 1 0.3]
+[wt 0.4]
+
+＠哪吒
+類似　飛行存在　発見。
+[k]
+
+[charaEffectDestroy T bit_talk_gale]
+
+＠哪吒
+疑問[line 3]勝負　挑戦？
+[k]
+
+[messageOff]
+[charaTalk H]
+[subCameraRoll #A 20 0,0]
+[subRenderFadein #A 0.3 -770,250]
+[subRenderMove #A -470,190 0.3]
+[subCameraRoll #B 20 0,0]
+[subRenderFadein #B 0.3 -770,-285]
+[subRenderMove #B -470,-345 0.3]
+[subCameraRoll #D 1.2 0,0]
+[subRenderFadein #D 0.4 -503,-250]
+[subRenderMove #D -203,-250 0.3]
+[cueSeVolume 24_ade1091 0.5 0.5]
+[cueSeVolume 24_ade1090 0.5 0.5]
+[wt 0.4]
+
+＠モードレッド
+おっ？
+[k]
+
+[charaFace H 1]
+[charaFace J 1]
+
+＠モードレッド
+へっ、おもしれえ！
+[k]
+
+＠モードレッド
+答えは勿論、イエスだ！[r]スピード勝負といこうじゃねえか！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[cueSeVolume 24_ade1091 0.4 1.0]
+[cueSeVolume 24_ade1090 0.4 1.0]
+
+[charaPut U 0,70]
+[charaEffect U bit_talk_42 0,0]
+[charaPut B 150,600]
+[charaEffect B bit_talk_42 0,0]
+[wt 0.4]
+
+[cueSe SE_23 23_ade843]
+[cueSeVolume 23_ade843 0 0.6]
+[charaScale T 1.4]
+[charaRoll T 359 0,0]
+[charaPut T 100,290]
+[charaEffect T bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[wt 0.2]
+[cueSeStop 23_ade843 1.0]
+[cueSeStop 24_ade1091 1.0]
+[cueSeStop 24_ade1090 1.0]
+
+[subRenderMove #A -770,250 0.3]
+[subRenderMove #B -770,-285 0.3]
+[subRenderMove #D -508,-250 0.3]
+[subRenderFadeout #A 0.2]
+[subRenderFadeout #B 0.2]
+[subRenderFadeout #D 0.2]
+[subRenderMoveEaseFSR #C 250,-150 0.5 easeOutExpo]
+[subRenderFadeout #C 0.3]
+[wt 1.4]
+
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgmStop BGM_BATTLE_62 1.0]
+[wait wipe]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaLayer H normal]
+[charaLayer R normal]
+[charaLayer O normal]
+[charaLayer J normal]
+[charaLayer S normal]
+[charaLayer P normal]
+[charaLayer T normal]
+[charaLayer E normal]
+[charaLayer Q normal]
+[charaLayer G normal]
+[charaFadeout H 0.1]
+[charaFadeout R 0.1]
+[charaFadeout O 0.1]
+[charaFadeout J 0.1]
+[charaFadeout S 0.1]
+[charaFadeout P 0.1]
+[charaFadeout T 0.1]
+[charaFadeout E 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout G 0.1]
+[subCameraOff]
+
+[charaRoll H 0 0,0]
+[charaRoll O 0 0,0]
+[charaRoll R 0 0,0]
+[charaRoll J 0 0,0]
+[charaRoll P 0 0,0]
+[charaRoll S 0 0,0]
+[charaRoll E 0 0,0]
+[charaRoll T 0 0,0]
+[charaRoll Q 0 0,0]
+[charaEffectDestroy U bit_talk_42]
+[charaEffectDestroy B bit_talk_42]
+[charaEffectDestroy R bit_talk_surfing]
+[charaEffectDestroy S bit_talk_surfing]
+[wt 0.1]
+
+[charaSet A 1098298800 1 パッションリップ]
+[charaSet B 1098276900 1 マシュ]
+[charaSet C 3055000 1 ニキチッチ]
+[charaSet E 1098298500 1 テノチティトラン]
+[charaSet G 9009001 1 アルトリア・ルーラー]
+[sceneSet M 220000 1]
+[sceneSet Q 10000 1]
+[wt 0.4]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+くっ、凄い勢いで飛んでいってしまった。[r]あれではもう声も届かないか……。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 3]
+[charaDepth M 2]
+[charaDepth E 1]
+[charaScale M 1.2]
+[charaScale A 1.2]
+
+
+[se ad173]
+[cueSe SE_21 21_ad1119]
+[cueSeVolume 21_ad1119 0 0.3]
+[charaFadein M 0.6 -40,-240]
+[charaMove M -80,-240 0.6]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.4 1]
+[seStop ad173 0.4]
+[cueSeStop 21_ad1119 0.4]
+[wt 0.4]
+
+[bgm BGM_MIZUGI_2020_1 0.1]
+
+＠パッションリップ
+あうー、ずぶ濡れです……。
+[k]
+
+？1：おかえり。はいタオル
+？！
+
+[charaFace A 4]
+
+＠パッションリップ
+あ、ありがとうございます……。
+[k]
+
+[charaFace A 2]
+[charaMoveReturn A 0,10 0.3]
+
+＠パッションリップ
+じゃなくて、[r]なんですかあの人たち！
+[k]
+
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+[charaFace A 5]
+
+＠パッションリップ
+あの人たちのせいで、皆さんと一緒に[r]まだまだ水遊びする予定が狂っちゃいました。
+[k]
+
+[messageOff]
+[charaTalk E,A]
+[charaFadeout A 0.4]
+[charaFadeout M 0.4]
+[wt 0.4]
+[charaScale A 1.0]
+
+＠テノチティトラン
+何かを忘れていたような気がしたけれど。[r]あれのことでした、ね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠マシュ
+素晴らしいこの高級ビーチに存在する問題。[r]それがあの暴走族である可能性は……
+[k]
+
+＠マシュ
+いえ、これは古い資料での呼称でした。
+[k]
+
+＠マシュ
+地上を走っているわけでもないですし、[r]呼称として的確かどうかは疑問ですね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+ああ。何と呼ぶか、難しい問題だな。[r]……キャメロットではよく見た光景だが。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 22]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル
+真面目に呼称なんて考えなくてもいいのだわ。
+[k]
+
+[charaFace D 1]
+
+＠エレシュキガル
+とにかく問題っぽいものを見つけたのだから、[r]いったん彼女に報告すべきでしょう。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[subCameraOn 1]
+[subCameraFilter #A maskEdge cut359_mask08 3 255,255,255,255]
+[subRenderScale #A 1.0]
+[charaLayer B sub #A]
+[charaLayer A sub #A]
+[charaLayer E sub #A]
+[charaLayer C sub #A]
+[charaLayer F sub #A]
+[charaLayer M sub #A]
+[charaTalk depthOff]
+[charaDepth B 6]
+[charaDepth A 5]
+[charaDepth E 4]
+[charaDepth C 3]
+[charaDepth F 2]
+[charaDepth M 1]
+[charaScale B 0.9]
+[charaScale E 0.9]
+[charaScale F 0.9]
+[charaScale A 0.9]
+[charaScale C 0.9]
+[charaScale M 1.1]
+[charaFace A 2]
+[charaFadein A 0.4 390,220]
+[charaFace B 14]
+[charaFadein B 0.4 0,220]
+[charaFace E 1]
+[charaFadein E 0.4 -350,220]
+[charaFace C 2]
+[charaFadein C 0.4 190,220]
+[charaFace F 5]
+[charaFadein F 0.4 -180,220]
+[charaFadein M 0.4 0,40]
+[wt 0.1]
+
+
+[subRenderFadein #A 0.5 0,-340]
+[wt 0.8]
+
+[charaMoveReturn F -180,215 0.4]
+[charaMoveReturn B 0,215 0.4]
+[wt 0.05]
+[charaMoveReturn E -350,215 0.4]
+[charaMoveReturn C 190,215 0.4]
+[wt 0.04]
+[charaMoveReturn A 390,215 0.4]
+[wt 2.0]
+
+[fadeout black 1.0]
+[bgmStop BGM_MIZUGI_2020_1 2.0]
+[wait fade]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaLayer B normal]
+[charaLayer A normal]
+[charaLayer E normal]
+[charaLayer C normal]
+[charaLayer F normal]
+[charaLayer M normal]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout M 0.1]
+[charaScale B 1.0]
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaScale A 1.0]
+[charaScale C 1.0]
+[subCameraOff]
+
+[scene 220100]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+＠アルトリア・ルーラー
+この浜は全体的には素晴らしい。
+[k]
+
+＠アルトリア・ルーラー
+ただし、モードレッドたちが好き勝手に[r]遊んでいるのだけはいささか危ない[line 3]と。
+[k]
+
+[charaFace G 4]
+
+＠アルトリア・ルーラー
+なるほど。[r]やはりそういう結論になりましたか。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠テノチティトラン
+その反応。いえ、それ以前の態度からしても[r]目星はついていたようですね。
+[k]
+
+[charaFace E 13]
+
+＠テノチティトラン
+その上で規制も処罰も生贄にもしなかったとは……[r]親バカですか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠アルトリア・ルーラー
+水の精霊。[r]耳が痛い進言はそこまでに。
+[k]
+
+[charaFace G 0]
+
+＠アルトリア・ルーラー
+……ある程度は、というだけです。
+[k]
+
+＠アルトリア・ルーラー
+そもそも[line 3]このドバイという地の素晴らしさは[r]ルールの厳格さに[#由:よ]っている、
+[k]
+
+＠アルトリア・ルーラー
+と裁定者である私は認識しています。
+[k]
+
+＠アルトリア・ルーラー
+ＢＢが支配して変わった部分もあるかもしれませんが、[r]本質的な空気感の話です。
+[k]
+
+＠アルトリア・ルーラー
+そのような厳格さこそが、世界中から訪れる民が[r]安心して[#憩:いこ]える場を作り出している。
+[k]
+
+[charaFace G 4]
+
+＠アルトリア・ルーラー
+そう考えるなら……確かに、[r]あれを見過ごしては立ち行かないでしょう。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 21]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル
+でも、今まで放置していたのよね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠アルトリア・ルーラー
+無論、以前から注意はしようとしていましたが、[r]動きが速く[line 3]
+[k]
+
+＠アルトリア・ルーラー
+あれらを捕まえるには相当の労力が[r]必要になると判断したため、
+[k]
+
+＠アルトリア・ルーラー
+対応を後回しにせざるを得なかった、というわけです。[r]恥ずかしい話ですが。
+[k]
+
+＠アルトリア・ルーラー
+この[#海の家:エハングウェン]もただ建てれば[r]それで終わりというわけではなく、
+[k]
+
+＠アルトリア・ルーラー
+円卓に任せるべき仕事が多く存在していたので。
+[k]
+
+[bgmStop BGM_HALLOWEEN_2021_1 2.0]
+
+？1：だったら、今日は人手が増えたので
+？2：大丈夫かもしれませんね
+？！
+
+＠アルトリア・ルーラー
+……。[r]……。
+[k]
+
+＠アルトリア・ルーラー
+つまり[line 3]あれらを捕まえるところまで[r]マスターたちが手伝ってくれる、と？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠パッションリップ
+い、いい考えだと思います。
+[k]
+
+＠パッションリップ
+[%1]さんがやるなら、[r]わたしだって……！
+[k]
+
+＠パッションリップ
+あの人たちのせいで貴重な一日が台無しです！
+[k]
+
+[charaFace A 5]
+
+＠パッションリップ
+最高の水着を手に入れて運気も[r]気持ちも大きくなったわたしが、
+[k]
+
+＠パッションリップ
+しっかり捕まえて懲らしめてあげます……！[r]おまかせください！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル
+スイッチが入ったのはリップだけじゃないわ。
+[k]
+
+＠エレシュキガル
+まさに乗りかかった船、というのかしら。[r]当然、私たちも加わります。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+それでは、我が王よ。こちらは[r]具体的な対応に移ろうかと思いますが……
+[k]
+
+＠パーシヴァル
+そちらは、やはり？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠アルトリア・ルーラー
+ああ。見ての通り、[r]こちらとて猫の手も借りたい状況だ。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_62 0.7 0.4]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[pictureFrame cut063_cinema]
+
+[charaSet A 1054000 1 ガレス]
+[charaSet B 1098299020 1 ＡＩドバイ市民_人間]
+[charaSet C 1098299010 1 ＡＩドバイ市民_人間]
+[charaSet D 1098299000 1 ＡＩドバイ市民_人間]
+[charaSet E 1098299100 1 ＡＩドバイ市民_人間]
+[charaSet F 1098299120 1 ＡＩドバイ市民_人間]
+[charaSet H 1007400 1 ガウェイン]
+[charaSet J 1020300 1 ランスロット]
+[sceneSet M 220100 1]
+[sceneSet N 220100 1]
+[sceneSet O 220100 1]
+[sceneSet P 220100 1]
+[charaSet S 2008300 1 トリスタン]
+
+[subCameraOn 1]
+[subCameraFilter #A maskEdge cut359_mask20 3 255,255,255,255]
+[charaLayer G sub #A]
+[charaLayer M sub #A]
+[charaScale G 1.1]
+[charaScale M 1.1]
+[charaDepth G 2]
+[charaDepth M 1]
+[charaFace G 0]
+[charaFadein G 0.1 -10,140]
+[charaFadein M 0.1 -450,0]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 6]
+[charaDepth F 5]
+[charaDepth B 4]
+[charaDepth C 3]
+[charaDepth S 2]
+[charaDepth N 1]
+[charaScale N 1.1]
+[charaFace B 1]
+[charaFadein B 0.1 -350,-50]
+[charaFace C 1]
+[charaFadein C 0.1 -170,-50]
+[charaFadein N 0.1 60,-250]
+[wt 0.4]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_62 0.7 1.0]
+[wait wipe]
+
+[charaFace H 4]
+[charaFadein H 0.4 250,-50]
+[charaMove H 90,-50 0.7]
+[wt 0.9]
+[charaMoveReturn H 90,-55 0.4]
+[wait charaMove H]
+[wt 0.3]
+[charaMoveEase H -30,-50 1.0 easeOutQuad]
+[charaMoveEase B -470,-50 1.0 easeOutQuad]
+[charaMoveEase C -290,-50 1.0 easeOutQuad]
+[charaMoveEase N -60,-250 1.0 easeOutQuad]
+[charaFadeout H 0.8]
+[charaFadeout B 0.8]
+[charaFadeout C 0.8]
+[wt 1.1]
+
+[charaFace F 2]
+[charaFadein F 0.4 300,-50]
+[wt 0.4]
+[charaFace S 1]
+[charaFadein S 0.4 -220,-50]
+[wt 0.6]
+[charaMoveReturn S -220,-60 0.5]
+[wait charaMove S]
+[wt 0.6]
+
+[charaDepth E 9]
+[charaDepth D 9]
+[charaDepth J 7]
+[charaDepth A 6]
+[charaDepth O 5]
+[charaFace A 10]
+[charaFadein A 0.4 -120,-50]
+[charaFace J 11]
+[charaFadein J 0.4 -350,-50]
+[charaScale O 1.1]
+[charaFadein O 0.4 0,-250]
+[wt 0.4]
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+[charaFadeout S 0.1]
+[charaFadeout N 0.1]
+
+[charaMoveReturn A -120,-45 0.3]
+[wait charaMove A]
+[charaMoveReturn A -120,-45 0.3]
+[wait charaMove A]
+[charaFace D 1]
+[charaFadein D 0.4 300,-50]
+[charaMove D 150,-50 0.7]
+[wt 0.9]
+[charaMoveReturn D 150,-45 0.3]
+[wait charaMove D]
+[charaFace J 6]
+[charaMoveReturn J -350,-45 0.3]
+[wait charaMove J]
+[charaMove D 300,-50 0.7]
+[charaFadeout D 0.5]
+[wt 0.3]
+[charaFace E 1]
+[charaFadein E 0.4 300,-50]
+[charaMove E 150,-50 0.7]
+[wt 0.9]
+[charaMoveReturn E 150,-45 0.3]
+[wait charaMove E]
+[charaMoveReturn J -350,-45 0.3]
+[wait charaMove J]
+[wt 0.2]
+[charaFadeout A 0.6]
+[charaFadeout J 0.6]
+[charaFadeout E 0.6]
+[charaFadeout O 0.6]
+[wt 1.0]
+
+[subRenderFadeinFSR #A 0.4 320,-150]
+[subRenderMoveFSR #A 320,-180 0.4]
+[wt 0.4]
+
+＠アルトリア・ルーラー
+店番、品出し、クレーム対応、サーフボードなどの[r]レンタル対応、アクティビティ受付……
+[k]
+
+＠アルトリア・ルーラー
+やるべき仕事は多いうえに、[r]かき入れ時が来てしまったゆえ、円卓は動けぬ。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_62 0.7 0.4]
+[wait wipe]
+
+[charaTalk on]
+[pictureFrame]
+
+[charaLayer G normal]
+[charaLayer M normal]
+[charaFadeout G 0.1]
+[charaFadeout M 0.1]
+[subCameraOff]
+[wt 0.1]
+
+[charaSet A 1098298800 1 パッションリップ]
+[charaSet B 1098276900 1 マシュ]
+[charaSet C 3055000 1 ニキチッチ]
+[charaSet D 33002000 1 エレシュキガル]
+[charaSet E 1098298500 1 テノチティトラン]
+[charaSet F 1098298000 1 パーシヴァル]
+[charaSet H 9009001 1 アルトリア・ルーラー_演出用]
+
+[subCameraOn 1]
+[subCameraFilter #A maskEdge cut359_mask04 3 255,255,255,255]
+[charaLayer H sub #A]
+[charaLayer M sub #A]
+[charaScale H 1.5]
+[charaScale M 1.4]
+[charaDepth H 2]
+[charaDepth M 1]
+[charaFace H 2]
+[charaFadein H 0.1 250,280]
+[charaFadein M 0.1 250,-100]
+
+[charaScale G 1.0]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.3]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_62 0.7 1.0]
+[wait wipe]
+
+＠アルトリア・ルーラー
+だが……騎士パーシヴァル。
+[k]
+
+[messageOff]
+[charaDepth Q 10]
+[charaPut Q 1]
+[charaFadeTime Q 0.3 0.6]
+
+[charaTalk off]
+[subRenderFadein #A 0.3 0,-260]
+[charaMoveEase H 0,280 0.3 easeOutCubic]
+[charaMoveEase M 0,-100 0.3 easeOutCubic]
+[wt 1.5]
+
+[subRenderFadeout #A 0.3]
+[charaMoveEase H -250,280 0.3 easeOutCubic]
+[charaMoveEase M -250,-100 0.3 easeOutCubic]
+[charaFadeout Q 0.3]
+[wt 0.3]
+[charaTalk on]
+
+＠アルトリア・ルーラー
+最も動かぬ者も、[r]一度ならば動こう。
+[k]
+
+＠アルトリア・ルーラー
+故に、機を用意せよ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+[line 3]は。承知しました。
+[k]
+
+？1：…………？
+？！
+
+[charaFace F 5]
+
+＠パーシヴァル
+失礼、おそらくこれは最後の話だ。[r]まずは基本的な作戦を立てねばならないな。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠マシュ
+そうですね。見た限りでは、あのカイニスさんの[r]水上バイクとモードレッドさんのアクアボードは、
+[k]
+
+＠マシュ
+かなりの速度が出せるように思えました。
+[k]
+
+＠マシュ
+どう追いつき、そしてどう止めるか、[r]ということを考えなくてはならないかと。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠アルトリア・ルーラー
+……先に決めるべきことがある。
+[k]
+
+[bgmStop BGM_EVENT_62 2.0]
+
+
+？1：……それは？
+？！
+
+[messageOff]
+[charaFace G 0]
+[wt 1.0]
+
+＠アルトリア・ルーラー
+奴らの呼び名です。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠マシュ
+呼び名、ですか？
+[k]
+
+＠マシュ
+確かにわたしたちも、お二人を暴走族と呼んで[r]いいものか、というような話はしていましたが……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[bgm BGM_EVENT_111 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠アルトリア・ルーラー
+なまじ耳触りの良い名を付けてしまえば、[r]あれを真似てしまう幼子などもいずれ出てこよう。
+[k]
+
+＠アルトリア・ルーラー
+故に名を付けるべきである。[r]連中にとって耳触りの良くない、気の抜ける名……
+[k]
+
+[charaFace G 6]
+
+＠アルトリア・ルーラー
+……恥ずかし反抗期ズ、とかでどうでしょうか。[r]マスター。
+[k]
+
+？1：なるほど
+
+[charaFace G 1]
+
+＠アルトリア・ルーラー
+マスターは気に入ったようですね。
+[k]
+
+？2：なる、ほど？
+
+[charaFace G 7]
+
+＠アルトリア・ルーラー
+マスターはピンと来ていないようですが……
+[k]
+
+？！
+
+[charaFace G 0]
+
+＠アルトリア・ルーラー
+貴殿はどうか。[r]騎士パーシヴァル？
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 1.0]
+[charaFace F 1]
+
+＠パーシヴァル
+よき考えかと、我が王！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠アルトリア・ルーラー
+うむ。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaDepth D 4]
+[charaDepth Q 3]
+[charaDepth O 2]
+[charaDepth F 1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.5]
+[charaMove F 0,-10 0.2]
+[wt 0.4]
+[charaMove F 0,0 0.3]
+[wt 1.0]
+
+[charaScale D 1.2]
+[charaScale O 1.2]
+[charaTalk F,D]
+[charaFace D 24]
+[charaFadein D 0.6 80,-10]
+[charaPut Q 1]
+[charaFadeTime Q 0.6 0.5]
+[charaFadein O 0.6 -20,-220]
+[charaMove D 0,-10 0.6]
+[charaMove O -100,-220 0.6]
+[wt 1.0]
+[charaFadeout F 0.1]
+
+＠エレシュキガル
+（本心なのか気を遣ったのか全然わからないのだわ。[r]　これがプロの円卓ってことなのかしら……！）
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_111 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

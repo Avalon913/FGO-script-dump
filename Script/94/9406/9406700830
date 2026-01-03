@@ -1,0 +1,617 @@
+
+
+
+
+
+＄94-06-70-08-3-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4037300 1 ネモ]
+[charaSet B 3008300 1 エルキドゥ]
+[charaSet C 2041300 1 織田信勝]
+[charaSet D 7033400 1 アルジュナ・オルタ]
+[charaSet E 1098227400 1 コンスタンティノス]
+[charaSet F 1009400 1 モードレッド]
+[charaSet G 6012300 1 サンソン]
+[charaSet H 1098227500 1 ソウルイーター]
+[charaSet I 1098218800 1 シャンタク]
+[charaSet J 98115000 1 エフェクト用]
+[sceneSet K 145600 1]
+[sceneSet L 145600 1]
+[sceneSet M 10000 1]
+[charaSet O 2041300 1 織田信勝1]
+[charaSet P 1098232000 1 アルジュナ・オルタ1]
+
+[scene 145600]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_48 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth K 1]
+[charaDepth L 2]
+[charaDepth H 1]
+[charaDepth I 2]
+
+[branchRouteSelect select_answer_01 94067008 7000]
+[branchNotRouteSelect select_answer_02 94067008 7000]
+
+[label select_answer_01]
+
+[charaScale K 1.1]
+[charaScale L 1.1]
+[charaScale B 1.1]
+[charaScale G 1.1]
+[charaDepth B 3]
+[charaDepth G 3]
+
+[wt 0.4]
+[charaFadein K 0.4 -64,-200]
+[wt 0.2]
+[charaFace B 5]
+[charaFadein B 0.2 192,0]
+[wt 0.4]
+[charaMove B 192,-20 0.4]
+[wt 0.3]
+[se bac29]
+[fowardEffect bit_talk_light_range 192,-100]
+[wt 0.3]
+[se adm51 0.7]
+[wt 0.9]
+[charaFadeout B 0.1]
+[fowardEffectStop bit_talk_light_range]
+[wt 0.2]
+[fowardEffectDestroy bit_talk_light_range]
+[wt 0.1]
+
+[charaFadein L 0.4 64,-200]
+[wt 0.2]
+[charaFace G 5]
+[charaFadein G 0.2 -192,0]
+[wt 0.4]
+[se ade321]
+[wt 0.7]
+[fowardEffect bit_talk_41_fs]
+[se ad54]
+[charaMove G -92,8 0.2]
+[charaMoveScale G 1.2 0.2]
+[charaFadeout G 0.4]
+[wt 0.3]
+[fowardEffectDestroy bit_talk_41_fs]
+
+[charaFadeout K 0.4]
+[charaFadeout L 0.4]
+[wt 0.5]
+[charaScale B 1.0]
+[charaScale G 1.0]
+
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.2]
+
+[se bac167]
+[effect bit_talk_kushizashi01 0,0]
+[wt 0.1]
+[charaShake I 0.05 2 2 0.3]
+[wt 0.6]
+
+[effectStop bit_talk_kushizashi01]
+
+[effect bit_talk_kengekiall03_fs]
+[wt 0.2]
+[se bac142]
+[charaShake I 0.05 2 2 0.3]
+[wt 0.2]
+[se bac142]
+[charaShake I 0.05 2 2 0.3]
+[wt 0.2]
+[se bac143]
+[charaShake I 0.05 2 2 0.3]
+[wt 0.3]
+[charaRoll G 280 0,470]
+[charaEffect G bit_talk_x_slash_bk_03 0,0]
+[wt 0.1]
+[cueSe Battle bac528]
+[charaShake I 0.05 5 5 0.4]
+[wt 0.7]
+
+[se ad42]
+[charaSpecialEffect I enemyErasure 0,0 2.0]
+[wt 2.5]
+
+[charaDepth G 1]
+[charaDepth B 2]
+[charaRoll G 0 0,0]
+
+[charaFace G 0]
+[charaFadeinFSL G 0.1 0]
+
+[charaFace B 5]
+[charaFadeinFSR B 0.1 2]
+[wt 0.3]
+
+[se ad193]
+[charaEffect G bit_talk_debuff]
+[charaEffect B bit_talk_debuff]
+[wt 1.2]
+
+[seStop ad193 0.5]
+[wt 0.8]
+
+[charaFadeout G 0.1]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.2 1]
+＠エルキドゥ
+力を奪われたけど、[r]使いこなせないだろう、君には。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠サンソン
+なるほど。
+[k]
+
+＠サンソン
+『大地から際限なく魔力を吸い取り回復する能力』[r]『積み重ねられた人間の医療技術』
+[k]
+
+＠サンソン
+いきなり奪い取ったから、[r]心の準備……というか、脳の整理がついてないのか。
+[k]
+
+＠サンソン
+エルキドゥの[#それ]は、人の手の及ばぬもの。[r]僕の[#それ]は、人が研鑽を経て積み重ねたもの。
+[k]
+
+＠サンソン
+そんな二つを纏めて使用すれば[line 3]
+[k]
+
+[messageOff]
+
+[se ad266]
+[seStop ad266 1.5]
+[wt 1.0]
+
+[charaFace G 5]
+＠サンソン
+代謝暴走。[r]過剰な回復は毒になる。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠エルキドゥ
+……それでも、強くはなっている。[r]惜しいね、君たち。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠コンスタンティノス
+よし。[r]それじゃあラストだ。
+[k]
+
+＠コンスタンティノス
+この選択が正しいのか、[r]間違っているかもしれないのか。
+[k]
+
+
+？1：……行こうか、信勝君！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠織田信勝
+わ、わかってるよ！[r]やってやる！　って、大丈夫かホントに！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠モードレッド
+なあに、削るとこまではやってやるさ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アルジュナ・オルタ
+はい。[r]ですが、トドメはきっちり、あなたにお願いします。
+[k]
+
+[charaCrossFade D 1098232000 15 0.3]
+＠アルジュナ・オルタ
+[#帳尻は合うはずですから]。[wait charaCrossFade D]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠モードレッド
+プレッシャー掛けるつもりで言うが、[r][#テメエに全てが懸かっているぞ]！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠織田信勝
+ああもう！[r]二度と姉上抜きでレイシフトなんかやるもんかー！
+[k]
+
+[branch select_join]
+
+
+
+
+
+[label select_answer_02]
+
+
+[charaScale K 1.2]
+[charaScale L 1.1]
+[charaScale A 1.2]
+[charaScale F 1.1]
+[charaScale D 1.1]
+[charaDepth A 4]
+[charaDepth F 4]
+[charaDepth D 6]
+[charaScale M 1.1]
+[charaDepth M 5]
+
+[wt 0.4]
+[charaFadein K 0.4 0,-200]
+[wt 0.2]
+[charaFace A 5]
+[charaFadein A 0.2 0,0]
+[wt 0.4]
+[se ad746 0]
+[seVolume ad746 0.4 1.0]
+[se adm11 0]
+[seVolume adm11 0.7 0.4]
+[wt 0.4]
+[charaFace A 2]
+[charaMoveScale A 1.4 0.4]
+[charaMove A 0,20 0.2]
+[wt 0.2]
+[flashin once 0.2 0.5 A9CEECFF A9CEEC00]
+[wt 0.4]
+[charaFadeout A 0.4]
+[wt 0.4]
+[seStop ad746 0.7]
+[seStop adm11 0.7]
+[wt 0.4]
+
+[charaFadein L 0.4 -64,-200]
+[wt 0.2]
+[charaFace F 5]
+[charaFadein F 0.2 192,0]
+[wt 0.1]
+[se adm31 0.6]
+[seVolume adm31 0.4 1.0]
+[se ad61 0.3]
+[seVolume ad61 0.4 0.7]
+[fowardEffect bit_talk_charge_red 192,0]
+[wt 0.7]
+[charaFadeout K 0.1]
+[wt 0.2]
+[charaScale K 1.1]
+[charaDepth K 5]
+[wt 0.5]
+[charaFace F 2]
+[wt 0.2]
+[seStop adm31 0.7]
+[seStop ad61 0.7]
+[wt 0.2]
+[charaFadeout F 0.2]
+[wt 0.2]
+[fowardEffectDestroy bit_talk_charge_red]
+[wt 0.3]
+
+[charaFadein K 0.4 64,-260]
+[wt 0.4]
+[cueSe Servants_703300 bac1142 0.7]
+[wt 0.6]
+[charaFace D 5]
+[charaFadein D 0.2 -192,10]
+[wt 0.1]
+[se ade418 0]
+[wt 0.2]
+[charaEffect D bit_talk_17_bl 0,-60]
+[wt 0.2]
+[seVolume ade418 1.0 1.0]
+[se ad964]
+[wt 0.8]
+[seStop ad964 1.0]
+[seStop ade418 1.0]
+[wt 0.6]
+[charaFadeout D 0.2]
+[wt 0.2]
+[charaEffectDestroy D bit_talk_17_bl]
+[wt 0.4]
+
+[charaFadeout K 0.4]
+[charaFadeout L 0.4]
+[wt 0.5]
+[charaScale A 1.0]
+[charaScale F 1.0]
+[charaScale D 1.0]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.3]
+
+
+[flashin once 0.1 0.4 A9CEECFF A9CEEC00]
+[wt 0.1]
+[cueSe Servants_403700 m40305]
+[effect bit_talk_water_splash]
+[wt 0.5]
+[charaShake H 0.05 2 2 0.3]
+[wt 1.0]
+[seStop m40305 0.5]
+[wt 0.1]
+
+[se ad865]
+[effect bit_talk_gram_slash_01_fs]
+[effect bit_talk_lightning_01r_fs]
+[wt 0.5]
+[charaShake H 0.05 2 2 0.3]
+[wt 0.5]
+[effectDestroy bit_talk_lightning_01r_fs]
+[wt 0.1]
+
+[charaFadein M 0.2 1]
+[wt 0.2]
+[cueSe Servants_703300 bac1149]
+[effect bit_talk_rarrow01br -130,0]
+[wt 1.5]
+[charaFadeout M 0.4]
+[wt 0.4]
+
+[fadeout white 1.0]
+[shake 0.04 3 3 1.0]
+[cueSe Servants_703300 bac1150]
+[wt 1.5]
+
+[charaShake H 0.05 2 2 0.4]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[se ad42]
+[charaSpecialEffect H enemyErasure 0,0 2.0]
+[wt 2.5]
+
+[charaDepth A 3]
+[charaDepth D 1]
+[charaDepth F 2]
+
+[charaFace D 5]
+[charaFadeinFSL D 0.1 -350,0]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaFace F 5]
+[charaFadeinFSR F 0.1 350,0]
+[wt 0.5]
+
+[se ad193]
+[charaEffect F bit_talk_debuff]
+[charaEffect A bit_talk_debuff]
+[charaEffect D bit_talk_debuff]
+[wt 1.2]
+
+[seStop ad193 0.5]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[wt 0.2]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk P]
+[charaFace P 0]
+[charaFadein P 0.2 1]
+＠P：アルジュナ・オルタ
+有り余る[#膂力:りょりょく]、そして私の千里眼。
+[k]
+
+[charaFace P 4]
+＠P：アルジュナ・オルタ
+ですが、一度に与えられれば[r]最早毒です。
+[k]
+
+[charaFace P 5]
+＠P：アルジュナ・オルタ
+[#膂力:りょりょく]はあなたの飛ぶ技術を打ち消し、[r]千里眼は見えすぎて、見るべきものを見えなくさせる。
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ネモ
+そして旅立ちの祝福は……。[r]この戦いに勝って、初めて役立つものだしね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠モードレッド
+よーし、そんじゃオレたちもこれで弾切れだ！[r]後は任せたぞ、しくじるなよ弟野郎！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠織田信勝
+弟野郎って何だよ！[r]どうせなら姉上野郎にしてくれ！
+[k]
+
+[charaFace C 4]
+＠織田信勝
+ああもう、わかったわかった畜生！
+[k]
+
+[charaFace C 5]
+＠織田信勝
+姉上のマスター、とにかくフォローよろしく！[r]何しろ僕なんだからな！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠サンソン
+安心してくれ。[r]僕たちで君をフォローするよ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠エルキドゥ
+[line 3]いいとも。[r]そういうのは、嫌いじゃないからね。
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.7]
+
+？1：信勝君、せっかくだから気合い入れて一言
+？！
+
+[charaFace C 14]
+＠織田信勝
+唐突に無茶ぶりするな！？　くそっ！
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaDepth K 1]
+[charaDepth O 2]
+[charaScale O 1.3]
+[charaScale K 1.3]
+
+[charaFadeout C 0.4]
+[charaFadein K 0.4 0,-200]
+[wt 0.2]
+[charaFace O 5]
+[charaFadein O 0.2 0,0]
+[wt 0.8]
+
+[charaPut J 0,10]
+[charaEffect J bit_talk_41_fs]
+
+[se ad186]
+[charaFace O 2]
+＠織田信勝
+我が名は織田信勝！[r]第六天魔王、織田信長が弟なり！
+[k]
+
+＠織田信勝
+えーと……やるぞー！
+[k]
+
+[messageOff]
+
+[charaPut J 1200,1200]
+[charaFadeout O 0.4]
+[charaFadeout K 0.4]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠エルキドゥ
+幸先、ちょっと不安かな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠サンソン
+うーん、よく頑張ったと思うよ、僕は！
+[k]
+
+
+[branch select_join]
+
+[label select_join]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_48 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,922 @@
+
+
+
+
+＄94-08-69-60-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 2050002 1 プトレマイオス]
+[charaSet B 2051001 1 杉谷善住坊]
+[charaSet C 4043001 1 太公望]
+[charaSet D 4049001 1 黄飛虎]
+[charaSet E 25009001 1 コヤンスカヤ]
+[charaSet F 1098255110 1 ゴルドルフ]
+[charaSet G 1098272600 1 ドレッドノート]
+[charaSet H 1098272500 1 影の騎士1]
+[charaSet I 1098272510 1 影の騎士2]
+[charaSet J 1098272520 1 影の騎士3]
+[charaSet K 1098272530 1 影の騎士4]
+[charaSet L 1098272540 1 影の騎士5]
+[charaSet M 1098272550 1 影の騎士6]
+[charaSet N 1098272560 1 影の騎士7]
+
+[charaSet O 1098272530 1 影の騎士4s（演出用）]
+[charaSet P 1098272540 1 影の騎士5s（演出用）]
+[charaSet Q 1098272550 1 影の騎士6s（演出用）]
+[charaSet R 1098272560 1 影の騎士7s（演出用）]
+[charaSet S 4049001 1 黄飛虎（演出用）]
+
+[sceneSet V 193801 1]
+[charaScale V 1.4]
+[sceneSet W 193603 1]
+[charaScale W 1.4]
+[sceneSet X 193603 1]
+[charaScale X 1.4]
+
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用2]
+
+[charaPut Y 2000,2500]
+[charaEffect Y bit_talk_10_LowLevel]
+
+
+[scene 193703]
+
+[effect bit_talk_41_fs]
+[shake 0.02 1 1 0]
+[cameraMove 0.1 0,-10 1.01]
+[wait camera]
+
+[fadein black 1.0]
+[cueSe SE_23 23_ade873]
+[cueSeVolume 23_ade873 0 0]
+[cueSeVolume 23_ade873 1.0 1.0]
+[se ad59]
+[seVolume ad59 0 0]
+[seVolume ad59 1.0 1.0]
+[cameraMove 3.0 0,0 1.2]
+[wait fade]
+[wt 1.0]
+
+[fadeout black 1.0]
+[seStop ad59 1.0]
+[cueSeStop 23_ade873 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_41_fs]
+[shakeStop]
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[scene 193801]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+
+[subCameraOn 1]
+[charaLayer V sub #A]
+[subCameraFilter #A through]
+[subRenderScale #A 1.02]
+
+[charaDepth V 1]
+[charaScale V 1.0]
+[charaFadein V 0.1 0,-200]
+
+[se ad733]
+[wt 0.2]
+
+[subRenderFadein #A 0.4 0,0]
+[blur lens 0.1 2 2]
+[wt 0.6]
+
+[seStop ad733 0.8]
+[subRenderFadeout #A 0.5]
+[blurOff lens 1.0]
+[wt 1.0]
+
+[charaFadeout V 0.1]
+[wt 0.1]
+[subCameraOff]
+[charaLayer V normal]
+[charaScale V 1.0]
+[wt 0.4]
+
+
+？1：今のは……
+？2：なんだか空気が……
+？！
+
+[bgm BGM_MAP_41 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+どうやら、太公望の術らしい。[r]インドにも似たことをする妖術師がいたものだ。
+[k]
+
+[charaFace A 0]
+＠プトレマイオス
+土地柄からすると、どちらも思想魔術だろうが、[r]この重さは別格だ。太公望の噂に偽りなしか。
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠杉谷善住坊
+よ、妖術……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+ふふ、そう恐れなくてもよい。
+[k]
+
+[charaFace A 0]
+＠プトレマイオス
+用途までは判然としないが、この通路については[r]こちらを直接呪うような術じゃなさそうだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠杉谷善住坊
+そ、そうか。[r]それなら……
+[k]
+
+？1：ドレッドノートは……
+？2：太公望は無事ってこと？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+さて、どうだろうな。[r]術者が死んでも残る術だってあるが……。
+[k]
+
+[charaFace A 0]
+＠プトレマイオス
+あの狐の[#変化:へんげ]らしいのもすぐ撤退したし、[r]皆、戦の[#勘所:かんどころ]を心得ていると見た。
+[k]
+
+＠プトレマイオス
+これでは玉座を落とすのも、[r]一筋縄ではいくまいな。
+[k]
+
+？1：玉座？
+？！
+
+[charaFace A 10]
+＠プトレマイオス
+我らの城とこの城のつくりが同じなら、の話だ。
+[k]
+
+＠プトレマイオス
+その上で話すと、[#吾:あ]の見立てでは[r]どうやら玉座自体が城の中心となっているらしい。
+[k]
+
+[charaFace A 0]
+＠プトレマイオス
+城主を倒し、玉座の聖杯の雫を奪うことで[r]王権を塗り替えられる……といった仕組みだろう。
+[k]
+
+＠プトレマイオス
+王権を塗り替えれば、ドレッドノートを誘導したみたいに[r]城を作り替えたり、味方として影の騎士を召喚できる。
+[k]
+
+[charaFace A 10]
+＠プトレマイオス
+だから、この場での目的は……[wt 0.85][charaFace A 0][r]……おっと、もうついたか。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_MAP_41 2.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[scene 10000]
+
+[wipein rightToLeft 0.1 1.0]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 193603]
+[wt 1.4]
+
+[charaTalk off]
+[charaDepth W 1]
+[charaDepth X 2]
+
+[charaScale W 1.4]
+[charaFadein W 0.1 -260,-200]
+
+[charaMove W -160,-200 5.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 2.0]
+
+[charaScale X 1.4]
+[charaFadein X 1.0 260,-320]
+[charaMove X 260,-420 4.5]
+[wt 1.0]
+[charaFadeout W 0.1]
+[wt 2.5]
+
+[charaFadeout X 1.0]
+[wt 1.4]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+＠杉谷善住坊
+待て。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+やはり、な。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ad642]
+[wt 0.05]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+[seStop ad642 0.4]
+[wt 0.8]
+
+
+[se ad161]
+[se ad240]
+[se ad464]
+[fowardEffect bit_talk_35]
+[fowardEffect bit_talk_explosion_blood]
+[fowardEffect bit_talk_blood_stay]
+[wt 0.1]
+[charaShake G 0.04 4 4 0.9]
+[wt 1.6]
+
+[fowardEffectStop bit_talk_blood_stay]
+[wt 0.4]
+[charaMove G 0,-50 0.5]
+[charaFadeout G 0.5]
+[wt 0.4]
+
+[se ad623]
+[se ad1017]
+[se ade311]
+[wt 0.4]
+[seStop ad1017 0.2]
+[wt 0.4]
+[seStop ad623 0.2]
+[wt 1.2]
+
+[bgm BGM_EVENT_90 0.1]
+
+？1：ドレッドノート？
+？2：やられてる！？
+
+？！
+
+[messageOff]
+[wt 0.1]
+
+[se ad95]
+[wt 0.8]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.4]
+[seStop ad95 0.2]
+[wt 0.6]
+＠太公望
+いやあ、苦労しましたよ。[r]こういう力押しには弱いもので、ヒヤッとしました。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+……どの口が言う。
+[k]
+
+[charaFace A 0]
+＠プトレマイオス
+あのドレッドノートを逆に倒しておいて、[r]言うことじゃあるまい？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠太公望
+一応、準備をしていましたから。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth W 2]
+[charaDepth H 5]
+[charaDepth I 4]
+[charaDepth J 3]
+[charaDepth X 6]
+
+[charaScale W 1.4]
+[charaFadein W 0.7 -120,-260]
+[charaMove W -200,-260 0.7]
+[wt 0.95]
+
+
+[se ad51]
+[se ad442]
+[se ad166]
+[charaEffect H bit_talk_11 0,-100]
+[charaEffect I bit_talk_11 0,-100]
+[charaEffect J bit_talk_11 0,-100]
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFadein H 0.4 1]
+[charaFadeinFSR I 0.4 300,0]
+[charaFadeinFSL J 0.4 -300,0]
+[wt 0.4]
+[seStop ad166 0.4]
+[wt 1.1]
+
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout W 0.1]
+[charaEffectDestroy H bit_talk_11]
+[charaEffectDestroy I bit_talk_11]
+[charaEffectDestroy J bit_talk_11]
+
+[charaFadein X 0.1 200,-260]
+[wt 0.35]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaDepth W 1]
+[charaDepth H 2]
+[charaDepth I 2]
+[charaDepth J 2]
+[charaDepth O 2]
+[charaDepth P 2]
+[charaDepth Q 2]
+[charaDepth R 2]
+[charaDepth C 3]
+[charaDepth X 4]
+
+[charaDepth K 8]
+[charaDepth L 7]
+[charaDepth M 6]
+[charaDepth N 5]
+
+[se ad694]
+[seVolume ad694 0 0.5]
+[se ad977]
+[se ad166]
+[charaEffect K bit_talk_11 0,-100]
+[charaEffect L bit_talk_11 0,-100]
+[charaEffect M bit_talk_11 0,-100]
+[charaEffect N bit_talk_11 0,-100]
+[charaFace K 0]
+[charaFace L 0]
+[charaFace M 0]
+[charaFace N 0]
+[charaFadein K 0.4 150,0]
+[charaFadein L 0.4 -150,0]
+[charaFadeinFSR M 0.4 400,0]
+[charaFadeinFSL N 0.4 -400,0]
+[wt 0.4]
+[seStop ad166 0.4]
+[wt 1.4]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaEffectDestroy K bit_talk_11]
+[charaEffectDestroy L bit_talk_11]
+[charaEffectDestroy M bit_talk_11]
+[charaEffectDestroy N bit_talk_11]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout X 0.1]
+
+[charaEffect H bit_talk_11 0,-100]
+[charaEffect I bit_talk_11 0,-100]
+[charaEffect J bit_talk_11 0,-100]
+[charaEffect O bit_talk_11 0,-100]
+[charaEffect P bit_talk_11 0,-100]
+[charaEffect Q bit_talk_11 0,-100]
+[charaEffect R bit_talk_11 0,-100]
+
+[charaDepth H 8]
+[charaDepth I 7]
+[charaDepth J 6]
+[charaDepth O 5]
+[charaDepth P 4]
+[charaDepth Q 3]
+[charaDepth R 2]
+
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFace O 0]
+[charaFace P 0]
+[charaFace Q 0]
+[charaFace R 0]
+[charaFace C 0]
+[overlayFadein C 0.1 1]
+[charaFadein H 0.1 1]
+[charaFadein I 0.1 175,0]
+[charaFadein J 0.1 -175,0]
+[charaFadein O 0.1 350,0]
+[charaFadein P 0.1 -350,0]
+[charaFadein Q 0.1 525,0]
+[charaFadein R 0.1 -525,0]
+[charaScale W 1.2]
+[charaFadein W 0.1 0,-240]
+[wt 0.35]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk on]
+＠太公望
+こうして、皆さんに城に入っていただけると、[r]力を尽くせるというものです。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[wt 0.1]
+[charaPut H 2000,2500]
+[charaPut I 2000,2500]
+[charaPut J 2000,2500]
+[charaPut O 2000,2500]
+[charaPut P 2000,2500]
+[charaPut Q 2000,2500]
+[charaPut R 2000,2500]
+[charaEffectDestroy H bit_talk_11]
+[charaEffectDestroy I bit_talk_11]
+[charaEffectDestroy J bit_talk_11]
+[charaEffectDestroy O bit_talk_11]
+[charaEffectDestroy P bit_talk_11]
+[charaEffectDestroy Q bit_talk_11]
+[charaEffectDestroy R bit_talk_11]
+
+[charaDepth B 2]
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+＠杉谷善住坊
+[#調虎離山:ちょうこりざん]、ってわけかい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaSet C 4043001 1 太公望]
+
+[charaDepth C 3]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠太公望
+ああ、後の時代ではそんな風に言うのでしたっけ。[r][#調:はか]って虎を山から離す、ははあ、語呂もいい！
+[k]
+
+[charaFace C 0]
+＠太公望
+もっとも、虎がいるのはこちらの方ですが。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth C 3]
+[charaDepth D 2]
+[charaDepth W 1]
+
+[charaMove W -120,-240 1.1]
+[charaMove C -250,0 1.1]
+[wt 1.3]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove 250,0]
+[wt 0.2]
+[se ad223]
+[charaFace D 7]
+[charaFadein D 0.2 250,30]
+[charaMoveEase D 250,0 0.5 easeOutExpo]
+[wt 1.0]
+
+[charaTalk on]
+＠黄飛虎
+……なんと、人を虎扱いとは。[r]相変わらず[#丞相:じょうしょう]殿は口が悪い。
+[k]
+
+[charaFace C 1]
+＠太公望
+ほら、虎の十倍は[#あて]になるってことで！
+[k]
+
+？1：黄飛虎！
+？！
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth A 2]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+ほう、こっちもマスターの知り合いか。[r]東の国の大軍師に大将軍まで並ぶとはな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠太公望
+きみも、治癒の術は充分です？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.15]
+
+[charaDepth E 2]
+[se ade422]
+[charaTalk E]
+[charaFace E 25]
+[charaFadein E 0.4 1]
+[wt 0.4]
+[seStop ade422 0.2]
+[wt 0.4]
+
+＠コヤンスカヤ
+無論、肉体面は万全です。[r]仕事を始める時の最低限のマナーですので。
+[k]
+
+[charaFace E 24]
+＠コヤンスカヤ
+まあ、精神面についてはノーコメントですが。[r]休みもなし報酬もなしで連戦とは。
+[k]
+
+＠コヤンスカヤ
+獣づかいが荒いったらありません。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠太公望
+念には念をいれて、[r]この玉座の間には僕の陣も重ねてあります。
+[k]
+
+[charaFace C 1]
+＠太公望
+いかがでしょう皆さん。[r]矛を収めていただければ、それに越したことはない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+……やれやれ。
+[k]
+
+[charaFace A 0]
+＠プトレマイオス
+太公望とは[#吾:あ]より古い時代の人間だと聞いたが、[r]東の国にはこんな化け物がゴロゴロいたのか？
+[k]
+
+＠プトレマイオス
+ヘラクレスやアキレウスにも劣らない。[r]神話に残るような英雄じゃないか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠太公望
+充分驚かされましたよ。[r]玉座の間までは来られまいと判断していましたから。
+[k]
+
+[charaFace C 5]
+＠太公望
+だからこそ、ここで降伏を勧告します。
+[k]
+
+＠太公望
+あなたたちと矛を交えれば、[r]こちらも無傷とはいかないでしょう。
+[k]
+
+＠太公望
+ですが、それでは三つ目の城を落とすのに、[r]不足が生じてしまいます。
+[k]
+
+？1：三つ目の城……
+？2：西の城のこと……
+？！
+
+[charaFace C 0]
+＠太公望
+いかがです？　応じていただければ、[r]決して粗略には扱いません。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth F 2]
+[charaDepth Y 8]
+[charaPut Y 1]
+[charaTalk F]
+[charaFace F 15]
+[charaFadein F 0.1 1]
+＠ゴルドルフ
+あわわわわ、ど、どうするんだね。
+[k]
+
+＠ゴルドルフ
+これは相当詰んでないかね？[r][#四面楚歌:し  め  ん  そ  か]というヤツでは？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut Y 2000,2500]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+……ああ、やっと安心した。
+[k]
+
+[bgmStop BGM_EVENT_90 1.5]
+
+[charaFace A 0]
+＠プトレマイオス
+つまり、[#これでおまえの策も出し切ってるってことだろう]？[r]太公望。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠太公望
+…………どうでしょうね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+[bgm BGM_BATTLE_123 0.1]
+＠プトレマイオス
+さあ、マスター！[r]準備はいいか！
+[k]
+
+
+？1：ああ、やっぱり
+？2：全力で、だね
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠ゴルドルフ
+なんだとぅ！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut Y 2000,2500]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+東の軍師。どうも難しく考えるのが好きみたいだが、[r][#吾:あ]にとっての戦はそうじゃない。
+[k]
+
+[charaFace A 9]
+＠プトレマイオス
+知略の限りを尽くす。奇襲謀略も当然だとも。[r]陰謀なんてこれ以上ない大好物さ。
+[k]
+
+[charaFace A 0]
+＠プトレマイオス
+だが、最後はな。
+[k]
+
+[charaFace A 2]
+＠プトレマイオス
+[#運否天賦:う ん ぷ て ん ぷ]で楽しむものだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠黄飛虎
+なるほど。[r]そういう武将か、そなたは。
+[k]
+
+[charaFace D 0]
+＠黄飛虎
+悪くないな、まったくもって悪くない！
+[k]
+
+[messageOff]
+[wt 0.05]
+[se ad442]
+[charaFace D 6]
+[charaMove D 0,-8 0.15]
+[wt 1.05]
+
+[charaFace D 2]
+＠黄飛虎
+ならば、この開国武成王、[r]存分にお相手いたそうぞ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+＠コヤンスカヤ
+あらまあ。ふふふ。[r]気持ちのいい勝負勘、いえ、卓割りでございますねぇ。
+[k]
+
+＠コヤンスカヤ
+残念でしたわね、太公望。[r][#事態:こ　と]は貴方の嫌いな力勝負になるようです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠杉谷善住坊
+く、く、く、く。
+[k]
+
+[charaFace B 1]
+＠杉谷善住坊
+いいなあプトレマイオス！[r]やっとおまえのことが気に入ったぜ！
+[k]
+
+[charaFace B 0]
+＠杉谷善住坊
+どうにもこうにも七面倒なやり口ばかりで、[r]くさくさしてたんだ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠太公望
+[line 3]本気、なんですよね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠プトレマイオス
+本気以外で、こんなことは言わないとも。[r]それに軍師殿も見誤っている。
+[k]
+
+＠プトレマイオス
+[#吾:あ]の見立てじゃあ、決して悪くない勝負だぞ？[r]真正面からぶつかって後悔するのは、さてどちらだ。
+[k]
+
+＠プトレマイオス
+なにしろ、うちのマスターは[r]なかなかの傑物なんだ。
+[k]
+
+
+？1：信用されてる？
+？2：力不足かもだけど
+？！
+
+
+[charaFace A 11]
+＠プトレマイオス
+さあ胸を張れ、マスター！[r]敵手は名高き太公望ぞ！
+[k]
+
+＠プトレマイオス
+将軍は黄飛虎に、[#妲己:だっき]のまがいもの！[r]兵士は、城に巣くいし影の妖物！
+[k]
+
+＠プトレマイオス
+いずれも相手にとって不足なし！[r]ははは、これほど胸が躍る戦は、いつぶりだ！
+[k]
+
+[se ade226]
+[cameraMove 0.15 0,-20 1.1]
+[charaPut Z 0,100]
+[charaEffect Z bit_talk_41_fs]
+＠プトレマイオス
+サーヴァント・プトレマイオスとそのマスターが、[r]正面から打ち破ってみせようとも！
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[bgmStopEnd BGM_BATTLE_123 1.5]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

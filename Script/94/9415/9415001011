@@ -1,0 +1,4768 @@
+
+
+
+
+
+
+
+＄94-15-00-10-1-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+
+[charaSet A 3062002 1 パーフェクト・エリザベート]
+[charaSet B 4046000 1 エリザベート（シンデレラ）]
+[charaSet C 28004000 1 九紋竜エリザ]
+[charaSet D 10005000 1 メカエリチャンⅡ号機]
+[charaSet E 11022000 1 終わりのエリザベート]
+
+[charaSet F 1098182900 1 ユニヴァース・アポロン]
+[charaSet G 1098341300 1 キングエリザ]
+[charaScale G 1.335]
+
+[charaSet H 1098341400 1 エリザ・アルシア]
+[charaSet I 1098341400 1 エリザ・パヴォニス]
+[charaSet J 1098341400 1 エリザ・アスクレウス]
+[charaSet K 98115000 1 エフェクト用]
+
+[charaSet L 11022000 1 終わりのエリザベート（演出用）]
+[charaSet M 1098182900 1 ユニヴァース・アポロン（演出用）]
+
+[sceneSet O 265700 1]
+[sceneSet P 265700 1]
+[sceneSet Q 265700 1]
+[sceneSet R 265700 1]
+[sceneSet S 267600 1]
+
+[sceneSet N 141400 1]
+
+[sceneSet T 10000 1]
+[charaScale T 1.1]
+
+[sceneSet U 10000 1]
+[charaScale U 1.05]
+[sceneSet V 10000 1]
+[charaScale V 1.05]
+
+[charaSet X 98115000 1 エフェクト用]
+[charaSet Y 98115000 1 エフェクト用2]
+[charaSet Z 98115000 1 エフェクト用3]
+
+[cameraMove 0 0,0 1.01]
+
+[charaTalk depthOff]
+
+[subCameraOn 4]
+
+[charaLayer H sub #A]
+[charaLayer P sub #A]
+
+[charaLayer I sub #B]
+[charaLayer Q sub #B]
+
+[charaLayer J sub #C]
+[charaLayer R sub #C]
+
+[subCameraFilter #A maskEdge cut359_mask05 5 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask05 5 0,0,0,255]
+[subCameraFilter #C maskEdge cut359_mask05 5 0,0,0,255]
+
+[subRenderDepth #A 2]
+[subRenderDepth #B 3]
+[subRenderDepth #C 4]
+
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.0]
+[subRenderScale #C 1.0]
+
+[charaScale H 1.2]
+[charaScale P 1.8]
+
+[charaDepth P 2]
+[charaDepth H 3]
+
+[charaFace H 2]
+[charaFadein H 0 235,225]
+[charaFadein P 0 400,0]
+
+[charaScale I 1.2]
+[charaScale Q 1.8]
+
+[charaDepth Q 2]
+[charaDepth I 3]
+
+[charaFace I 0]
+[charaFadein I 0 0,225]
+[charaFadein Q 0 0,0]
+
+[charaScale J 1.2]
+[charaScale R 1.8]
+
+[charaDepth R 2]
+[charaDepth J 3]
+
+[charaFace J 2]
+[charaFadein J 0 -205,225]
+[charaFadein R 0 -400,-0]
+
+[scene 265700]
+
+[charaDepth O 2]
+[charaDepth G 3]
+[charaDepth K 4]
+
+[charaScale O 1.6]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 4,44]
+[charaFadein O 0.1 0,-450]
+
+[blur lens 0.1 4 10]
+
+[charaTalk H]
+[subRenderFadein #A 0.1 -280,-250]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_185 0.1]
+
+＠エリザ・アルシア
+ぐ、が……このっ……！
+[k]
+
+[messageOff]
+[charaTalk J]
+[subRenderFadein #C 0.3 280,-250]
+[wt 0.4]
+
+＠エリザ・アスクレウス
+耐性、が……追いつかない……！
+[k]
+
+[charaTalk H]
+[charaFace H 5]
+
+＠エリザ・アルシア
+死ね、死ね、死ねェェェェッ！
+[k]
+
+[messageOff]
+
+[blurOff lens 0.4]
+
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #C 0.4]
+[wt 0.5]
+
+[charaTalk G]
+[charaFace G 5]
+[cueSe SE_25 25_ade1297]
+[fowardEffect bit_talk_kerz_eye]
+
+[wt 0.7]
+
+[cueSe SE_25 25_ade1191]
+[se ad626]
+[seVolume ad626 0 0.6]
+[wt 0.6]
+
+[charaPut K 0,0]
+[charaEffect K bit_talk_thunder_breath_kerz]
+
+[wt 0.1]
+[charaFace G 5]
+[wt 1.8]
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[seVolume ad626 0.6 0.2]
+[cueSeVolume 25_ade1191 0.6 0.5]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout O 0.1]
+[charaEffectDestroy G bit_talk_thunder_breath_kerz]
+
+[scene 267600]
+
+[charaDepth X 10]
+[charaDepth C 3]
+[charaDepth B 3]
+[charaDepth S 2]
+
+[charaScale S 1.5]
+[charaFadein S 0.1 -300,-200]
+
+[se ad241]
+[seVolume ad241 0 0]
+[se ad297]
+[seVolume ad297 0 0]
+[wt 0.4]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[cueSeVolume 25_ade1191 0.6 1.0]
+[seVolume ad626 0.6 0.6]
+[seVolume ad241 0.6 1.0]
+[seVolume ad297 0.6 0.6]
+[wait wipe]
+
+[charaScale X 1.25]
+[charaRoll X 20]
+[charaPut X -100,0]
+[charaEffect X bit_talk_laser_beam_kerz]
+[charaEffect X bit_talk_laser_beam_kerz 50,0]
+[charaMove X 300,0 2.0]
+[fowardEffect bit_talk_sand_dust_fast 0,-200]
+[wt 0.6]
+[seStop ad626 1.0]
+[cueSeStop 25_ade1191 1.0]
+[seStop ad241 1.0]
+[seStop ad297 1.0]
+
+[se ad671]
+[charaTalk C]
+[charaFace C 20]
+[charaFadein C 0.3 -150,0]
+[charaMoveEase C 100,0 0.6 easeOutCubic]
+[charaShake C 0.02 3 3 0.4]
+[wt 0.2]
+[seStop ad671 0.7]
+[wt 0.8]
+
+[charaFace C 26]
+
+＠九紋竜エリザ
+あぶ、あぶなっ、いのっ、だわ！
+[k]
+
+[messageOff]
+[charaPut B -600,0]
+[charaFadeTime B 0 0]
+[charaMoveEase S 300,-200 0.8 easeOutSine]
+[charaMoveEase C 700,0 0.8 easeOutSine]
+[charaMoveEase B 0,0 0.8 easeOutSine]
+
+[charaFadeout C 0.4]
+[wt 0.4]
+
+[cueSe SE_25 25_ade1191]
+[cueSeVolume 25_ade1191 0 0]
+[se ad626]
+[seVolume ad626 0 0]
+[se ad241]
+[seVolume ad241 0 0]
+[se ad297]
+[seVolume ad297 0 0]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadeTime B 0.4 1.0]
+[wt 0.6]
+
+＠エリザベート（シンデレラ）
+華麗に～[#躱:かわ]すわ～♪
+[k]
+
+[messageOff]
+[seVolume ad626 0.4 0.6]
+[cueSeVolume 25_ade1191 0.4 1.0]
+[seVolume ad241 0.4 1.0]
+[seVolume ad297 0.4 0.6]
+[wt 0.1]
+
+[charaScale X 1.25]
+[charaRoll X -20]
+[charaPut X 100,0]
+[charaEffect X bit_talk_laser_beam_kerz 0,0 H]
+[charaEffect X bit_talk_laser_beam_kerz 50,0 H]
+[charaMove X -300,0 2.0]
+[fowardEffect bit_talk_sand_dust_fast 0,-200 H]
+[wt 0.5]
+
+[se ad266]
+[wt 0.1]
+[seStop ad626 1.0]
+[cueSeStop 25_ade1191 1.0]
+[seStop ad241 1.0]
+[seStop ad297 1.0]
+[charaFace B 2]
+[charaMoveEase B -200,0 0.6 easeOutCubic]
+[charaShake B 0.02 3 3 0.4]
+[wt 1.0]
+
+[charaFace B 17]
+
+＠エリザベート（シンデレラ）
+そうでもなかったわ～♪
+[k]
+
+[messageOff]
+
+[charaDepth S 2]
+[charaDepth B 3]
+[charaDepth O 4]
+[charaDepth G 5]
+
+[charaTalk I,B]
+[charaFace I 4]
+[subRenderFadein #B 0.4 0,-250]
+
+[charaFace G 1]
+[charaFadein G 0.4 4,44]
+[charaFadein O 0.4 0,-450]
+
+[blur lens 0.4 4 10]
+[wt 0.4]
+
+[scene 265700]
+
+[charaFadeout S 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠エリザ・パヴォニス
+あはははは！　凄いわね、アナタたち！[r]いえ、エリザベートが凄いのかしら！
+[k]
+
+[charaFace I 1]
+
+＠エリザ・パヴォニス
+[line 3]いいでしょう。殺し合いは私たちの敗北。[r]アルシア、アスクレウス。
+[k]
+
+[bgmStop BGM_BATTLE_185 1.5]
+
+[charaFace I 0]
+
+＠エリザ・パヴォニス
+[#遊びを再開するわ]。
+[k]
+
+[messageOff]
+[charaTalk H,J]
+[charaFace H 0]
+[charaFace J 0]
+[charaFace G 0]
+[subRenderFadein #A 0.4 -280,-250]
+[subRenderFadein #C 0.4 280,-250]
+[wt 0.5]
+
+＠エリザ・アルシア／エリザ・アスクレウス=spot[H,J]
+承りました。
+[k]
+
+？1：何をする気[&だ:]……！？
+？！
+
+[messageOff]
+[charaTalk off]
+[se ad626 0.5 0.2]
+[se ad556 0.5 0.4]
+[se ad900]
+[charaEffect G bit_talk_charge_blu 0,-300]
+[charaEffect H bit_talk_charge_blu 0,-300]
+[charaEffect I bit_talk_charge_blu 0,-300]
+[charaEffect J bit_talk_charge_blu 0,-300]
+
+[effect bit_talk_lightning_07b -300,0]
+[effect bit_talk_lightning_07b 300,0]
+[wt 2.8]
+
+[seStop ad900 1.2]
+
+[bgm BGM_BATTLE_261 0.1]
+
+
+[charaTalk on]
+[charaTalk H]
+
+＠エリザ・アルシア
+遊んであげる、[#嬲:なぶ]ってあげる、玩弄してあげる！[r]星は我が供物、我が玩具！
+[k]
+
+[charaTalk J]
+
+＠エリザ・アスクレウス
+エリザ粒子加速、[#閾値:いきち]突破。[r]回避及び防御行動無効化。重力崩壊、準備よし。
+[k]
+
+[charaTalk I]
+
+＠エリザ・パヴォニス
+[line 3]終焉よ、今ここに。[r]さようなら、さようなら、さようなら。
+[k]
+
+[messageOff]
+[charaTalk I,G]
+[blurOff lens 0.4]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[subRenderFadeout #C 0.4]
+[wt 0.6]
+[charaFace G 5]
+
+＠キングエリザ
+[f large]『[#呪詛竜の重力嵐:ア ー ト ク サ カ ー ニ ィ ・ グ ラ ヴ ィ ト ン ヴ ィ ハ ル]』！
+[k]
+
+
+[messageOff]
+[charaTalk G]
+[cueSe SE_22 22_ad1220]
+[wt 0.1]
+
+[seStop ad626 1.0]
+[seStop ad556 1.0]
+[cueSe SE_25 25_ade1191]
+[wt 0.6]
+
+[se ad875]
+[charaEffect G bit_talk_blue_breath_kerz]
+[wt 0.1]
+
+[effect bit_talk_pressure_fs]
+
+[wt 1.9]
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[cueSeVolume 25_ade1191 0.8 0]
+[cueSeStop 22_ad1220 0.8]
+[wait wipe]
+
+[effectDestroy bit_talk_lightning_07b]
+[charaPut G 2000,2500]
+[charaFadeout G 0.1]
+[charaFadeout O 0.1]
+[effectDestroy bit_talk_pressure_fs]
+[charaEffectDestroy G bit_talk_blue_breath_kerz]
+
+[charaPut H 2000,2500]
+[charaPut P 2000,2500]
+
+[scene 10000]
+
+[se ad14]
+[seVolume ad14 0 0]
+[se ade393]
+[seVolume ade393 0 0]
+[se ad298]
+[seVolume ad298 0 0]
+[cueSe SE_23 23_ad1293]
+[cueSeVolume 23_ad1293 0 0]
+[cueSe SE_24 24_ade975]
+[cueSeVolume 24_ade975 0 0]
+
+[charaLayer Y sub #A]
+[charaLayer Z sub #A]
+[charaLayer N sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask07 5 0,0,0,255]
+
+[subRenderDepth #A 4]
+
+[subRenderScale #A 1.2]
+
+[charaScale Y 0.8]
+[charaScale Z 1.0]
+
+[charaDepth N 2]
+[charaDepth Y 3]
+[charaDepth Z 4]
+
+[charaPut Y 0,150]
+[charaEffect Y bit_talk_down_beam]
+
+[charaPut Z 0,0]
+[charaEffect Z bit_talk_pressure_fs 0,250]
+
+[charaScale N 2.5]
+[charaRoll N 90]
+[charaFadein N 0 -40,50]
+[charaShake N 0.02 4 4 0]
+
+[subRenderFadein #A 0.1 0,-250]
+[wt 0.7]
+
+[seVolume ad14 0.6 0.5]
+[seVolume ade393 0.6 0.3]
+
+[seVolume ad298 0.6 0.8]
+[cueSeVolume 23_ad1293 0.6 0.5]
+[cueSeVolume 24_ade975 0.6 0.5]
+
+[cueSeVolume 25_ade1191 0.6 0.5]
+
+[charaEffect Z bit_talk_impactlanding 0,50]
+
+[subRenderMove #A 0,-450 5.0]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[wt 0.2]
+[charaEffect Z bit_talk_impactlanding 250,50]
+[wt 0.6]
+[charaEffect Z bit_talk_impactlanding -250,50]
+[wt 0.6]
+[charaEffect Z bit_talk_impactlanding 0,50]
+[wt 0.6]
+[charaEffect Z bit_talk_impactlanding 250,50]
+[wt 0.6]
+[charaEffect Z bit_talk_impactlanding -250,50]
+[wt 0.3]
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[seVolume ad14 0.6 0.2]
+[seVolume ade393 0.6 0.1]
+[seVolume ad298 0.6 0.3]
+[cueSeVolume 23_ad1293 0.6 0.2]
+[cueSeVolume 24_ade975 0.6 0.2]
+[cueSeVolume 25_ade1191 0.6 0.2]
+[wt 0.3]
+[charaEffect Z bit_talk_impactlanding 0,50]
+[wait wipe]
+
+[charaLayer D sub #D]
+[charaLayer S sub #D]
+
+[subCameraFilter #B maskEdge cut359_mask09 5 0,0,0,255]
+[subCameraFilter #C maskEdge cut359_mask16 5 0,0,0,255]
+[subCameraFilter #D normal]
+
+[subRenderDepth #B 3]
+[subRenderDepth #C 4]
+[subRenderDepth #D 5]
+
+[subRenderScale #B 1.0]
+[subRenderScale #C 1.0]
+[subRenderScale #D 1.01]
+
+[charaScale I 1.4]
+[charaScale Q 2.0]
+
+[charaDepth Q 2]
+[charaDepth I 3]
+
+[charaFace I 5]
+[charaFadein I 0 0,285]
+[charaFadein Q 0 0,60]
+
+[charaScale J 1.4]
+[charaScale R 2.0]
+
+[charaDepth R 2]
+[charaDepth J 3]
+
+[charaFace J 2]
+[charaFadeinFSR J 0 -345,175]
+[charaFadein R 0 -370,60]
+
+[charaScale D 1.0]
+[charaScale S 1.0]
+
+[charaDepth S 2]
+[charaDepth D 3]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0 0,0]
+[charaFadein S 0 0,-200]
+
+[subRenderFadein #D 0.1 0,0]
+
+[scene 267600]
+
+[subCameraFilter #A maskEdge cut359_mask10 5 0,0,0,255]
+[subRenderDepth #A 4]
+[subRenderScale #A 1.0]
+[charaScale H 1.4]
+[charaScale P 2.0]
+
+[charaDepth P 2]
+[charaDepth H 3]
+
+[charaFace H 2]
+[charaFadeinFSL H 0 345,175]
+[charaFadein P 0 370,60]
+
+[charaEffect H bit_talk_pressure_fs 0,50]
+[charaEffect I bit_talk_pressure_fs 0,50]
+[charaEffect J bit_talk_pressure_fs 0,50]
+
+[charaFadeout N 0]
+[charaPut Y 2000,2500]
+[charaEffectDestroy Y bit_talk_down_beam]
+[charaPut Z 2000,2500]
+[charaEffectDestroy Z bit_talk_pressure_fs]
+[charaEffectDestroy Z bit_talk_impactlanding]
+
+[charaLayer Y normal]
+[charaLayer Z normal]
+[charaLayer N normal]
+[charaScale Y 1.0]
+[charaScale Z 1.0]
+[charaScale N 1.0]
+[charaRoll N 0]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠メカエリチャンⅡ号機
+……キングエリザのブレスが地核に到達するわ。[r]急いで仕留めないと……！
+[k]
+
+[messageOff]
+[charaTalk H,I,J]
+[charaFace J 4]
+[charaFace H 4]
+[charaScale H 1.5]
+[charaScale I 1.5]
+[charaScale J 1.5]
+[subRenderFadein #A 0.3 -400,-250]
+[subRenderFadein #B 0.3 0,-250]
+[subRenderFadein #C 0.3 400,-250]
+
+[subRenderFadeout #D 0.3]
+
+[charaMoveEaseFSL H 345,235 0.4 easeOutCubic]
+[charaMoveEase I 0,225 0.4 easeOutCubic]
+[charaMoveEaseFSR J -315,235 0.4 easeOutCubic]
+
+[charaMoveEase P 400,0 0.4 easeOutCubic]
+[charaMoveEase Q 0,0 0.4 easeOutCubic]
+[charaMoveEase R -400,0 0.4 easeOutCubic]
+
+[wt 0.6]
+
+[charaTalk I]
+
+＠エリザ・パヴォニス
+もう遅いわ。[r]アスクレウス、耐性極大増幅！
+[k]
+
+[charaTalk J]
+
+＠エリザ・アスクレウス
+[line 3]ええ。どんな攻撃にも耐えきってみせる。[r]星が滅ぶ、その瞬間まで！
+[k]
+
+[charaTalk H]
+
+＠エリザ・アルシア
+あはははは！　終わり、終わりよ！[r]これで何もかも[line 3]綺麗に無くなれ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[seStop ad14 1.5]
+[seStop ade393 1.5]
+[cueSeStop 25_ade1191 1.5]
+[seStop ad298 1.5]
+[cueSeStop 23_ad1293 1.5]
+[cueSeStop 24_ade975 1.5]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[subRenderFadeout #C 0.1]
+[charaEffectStop G bit_talk_charge_blu]
+[charaEffectStop H bit_talk_charge_blu]
+[charaEffectStop I bit_talk_charge_blu]
+[charaEffectStop J bit_talk_charge_blu]
+
+[charaEffectDestroy H bit_talk_pressure_fs]
+[charaEffectDestroy I bit_talk_pressure_fs]
+[charaEffectDestroy J bit_talk_pressure_fs]
+
+[charaFadeout D 0]
+[charaFadeout S 0]
+
+[charaLayer D normal]
+[charaLayer S normal]
+[charaScale D 1.0]
+[charaScale S 1.0]
+
+[scene 267600]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.6 0,50]
+[charaMoveEase A 0,0 0.4 easeOutCubic]
+[cueSe SE_24 24_ade1140]
+[cueSeStop 24_ade1140 1.2]
+[wt 1.0]
+[charaFace A 3]
+
+＠パーフェクト・エリザベート
+……[&子イヌ:子ジカ]！　来て！
+[k]
+
+？1：何！？
+？！
+
+[charaFace A 7]
+
+＠パーフェクト・エリザベート
+宝具の最大出力じゃなきゃ、[r]あの耐性を貫通するのは無理。
+[k]
+
+[charaFace A 3]
+
+＠パーフェクト・エリザベート
+貫通させて母様を救うには、この槍じゃなきゃ、ダメなの！[r]だから[line 3]
+[k]
+
+[bgmStop BGM_BATTLE_261 1.5]
+
+？1：よし、令呪だね！
+？！
+
+[charaFace A 8]
+
+＠パーフェクト・エリザベート
+さっすが[&子イヌ:子ジカ]！　さあ、飛ぶわよ！[wt 0.7][charaFace A 9][r]ヘルメットは大丈夫ね？　よし！
+[k]
+
+[messageOff]
+[wt 0.05]
+
+[cameraMoveEase 0,-30 0.3 easeOutCubic 1.2]
+[wt 0.05]
+[se ad977]
+[wt 0.1]
+
+[shake 0.02 2 2 0.3]
+[wt 1.0]
+
+[charaFace A 11]
+[wt 0.2]
+
+[se ade90]
+[fowardEffect bit_talk_mgn_light02]
+[wt 0.4]
+[fowardEffect bit_talk_impactlanding 0,-50]
+[shake 0.02 2 3 0.7]
+[charaFadeout A 0.1]
+[wt 2.4]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[seStop ade90 0.7]
+[wait wipe]
+
+[fowardEffectDestroy bit_talk_mgn_light02_U]
+[wt 0.2]
+
+[scene 10000]
+
+[effect bit_talk_43h_fs]
+
+[se ad555]
+[seVolume ad555 0 0]
+[se ad556]
+[seVolume ad556 0 0]
+
+[wt 0.4]
+
+[seVolume ad555 0.7 0.8]
+[seVolume ad556 0.7 0.8]
+
+[shake 0.01 1 1 0]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[wt 2.0]
+
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[seStop ad555 0.7]
+[seStop ad556 0.7]
+[wait wipe]
+
+[effectDestroy bit_talk_43h_fs]
+[shakeStop]
+
+[sceneSet O 266600 1]
+[sceneSet P 266600 1]
+[sceneSet Q 266600 1]
+[sceneSet R 266600 1]
+[sceneSet S 266600 1]
+[wt 0.1]
+[scene 10000]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 266600]
+
+[cameraMove 0 0,0 1.01]
+
+[charaDepth A 2]
+[charaDepth O 3]
+
+[charaScale O 1.4]
+
+[charaFadein O 0.1 0,-250]
+
+[wt 0.4]
+
+
+[se ade338]
+[wt 0.1]
+
+[charaMoveEase O 0,-270 0.8 easeOutCubic]
+[charaMoveScaleEase O 1.2 0.8 easeOutCubic]
+
+[fadein black 0.4]
+[wait fade]
+[seStop ade338 1.1]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+[charaFadeout O 0.8]
+[wt 1.4]
+
+[bgm BGM_MAP_55 0.1]
+
+？1：一気に来ちゃった……宇宙！
+？！
+
+＠パーフェクト・エリザベート
+そうね。大丈夫、この槍は外さないわ。[r]呼吸は[&子イヌ:子ジカ]に合わせる。
+[k]
+
+[charaFace A 2]
+
+＠パーフェクト・エリザベート
+さあ、やっちゃいましょう！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+？1：令呪を以て命ずる！
+？2：ぶちかまして、エリちゃん！
+？！
+
+[messageOff]
+
+[cueSe Battle bas16]
+
+[masterBranch _Male01 _Female01]
+[label _Male01]
+
+[fowardEffect bit_talk_CommandMantra_07]
+
+[branch _branchEnd01]
+
+[label _Female01]
+
+[fowardEffect bit_talk_CommandMantra_10]
+
+[branch _branchEnd01]
+
+[label _branchEnd01]
+
+[wt 1.9]
+
+[bgmStop BGM_MAP_55 0.8]
+[fadeout black 0.8]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[masterBranch _Male02 _Female02]
+
+[label _Male02]
+[sceneSet O 267500 1]
+[sceneSet P 267501 1]
+[sceneSet Q 267502 1]
+[sceneSet R 267503 1]
+
+[scene 10000]
+[wt 0.15]
+
+[fadein black 0.2]
+[wait fade]
+
+[bgm BGM_BATTLE_312 0.1]
+[cueSe SE_22 22_ade726]
+[wt 0.1]
+[se ad830]
+[wt 0.05]
+[charaScale P 1.5]
+[charaFadein P 0.4 -200,-200]
+[charaMoveEase P 0,-470 1.1 easeOutCubic]
+[wt 0.4]
+
+[scene 267501]
+
+[branch _branchEnd02]
+
+[label _Female02]
+[sceneSet O 267510 1]
+[sceneSet P 267511 1]
+[sceneSet Q 267512 1]
+[sceneSet R 267513 1]
+
+[scene 10000]
+[wt 0.15]
+
+[fadein black 0.2]
+[wait fade]
+
+[bgm BGM_BATTLE_312 0.1]
+[cueSe SE_22 22_ade726]
+[wt 0.1]
+[se ad830]
+[wt 0.05]
+[charaScale P 1.5]
+[charaFadein P 0.4 -200,-200]
+[charaMoveEase P 0,-470 1.1 easeOutCubic]
+[wt 0.4]
+
+[scene 267511]
+
+[branch _branchEnd02]
+
+[label _branchEnd02]
+
+[wt 2.0]
+
+[charaFadeout P 0.8]
+[wt 1.4]
+
+
+＠パーフェクト・エリザベート
+『[#虚無統べる星の錨:ヴ 　ォ 　イ 　ド 　ア 　ン 　カ 　ー]』、起動。
+[k]
+
+＠パーフェクト・エリザベート
+エリザ粒子[line 3]集積。[wt 0.6][charaFadein R 0.3 0,-200][r]Ｌａ、Ｌａ、Ｌａ～♪
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ad1108]
+[cueSeVolume 21_ad1108 0 0.8]
+
+[charaScale X 1.0]
+[charaDepth X 10]
+[charaRoll X 0]
+[charaPut X 1]
+[charaEffect X bit_talk_light_range 0,-250]
+
+[charaDepth R 2]
+[charaDepth Q 3]
+
+[charaFadein Q 0.8 0,-200]
+[wt 0.8]
+[charaFadeout R 0.1]
+[wt 1.1]
+
+？1：カ星から……エリザ粒子が……！
+？！
+
+[messageOff]
+[charaDepth O 4]
+[charaFadein O 0.3 0,-200]
+[wt 0.3]
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+＠パーフェクト・エリザベート
+[#粒子筒:チ ャ ン バ ー]内、充填完了。[r]終焉の三つ首竜、キングエリザへ標的固定！
+[k]
+
+[messageOff]
+
+[se ad933]
+[seVolume ad933 0 0.8]
+
+[charaPut X 1]
+[charaEffect X bit_talk_rising_particles]
+[wt 2.8]
+
+＠パーフェクト・エリザベート
+星々を喰らう王よ！[r][#私:アタシ]の呼びかけに応えなさい！
+[k]
+
+＠パーフェクト・エリザベート
+宇宙の果ての果てまで見に行くの！[r]星を渡り、血を[#啜:すす]り、歌を歌え！
+[k]
+
+[messageOff]
+[charaDepth Q 5]
+[charaFadein Q 0.3 0,-200]
+[wt 0.3]
+[charaFadeout O 0.1]
+[wt 0.3]
+
+＠パーフェクト・エリザベート
+[f large]『[#完全なる血の惑星へ:ヴ   ェ   ー   ル   マ   ー   ル   シ   ュ   ・   エ   ル   ジ   ェ   ー   ベ   ト]』！
+[k]
+
+[messageOff]
+[seStop ad933 0.6]
+[cueSeStop 21_ad1108 0.6]
+
+[charaEffectDestroy X bit_talk_rising_particles]
+[charaEffectStop X bit_talk_light_range]
+[blur motion 0.2 4 200 0.5 0.65 0.03 200]
+[charaMoveScaleEase Q 1.3 0.25 easeOutCubic]
+[charaMoveEase Q 40,-370 0.25 easeOutCubic]
+
+＠パーフェクト・エリザベート
+いっけええええええええ！！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.3]
+[wait fade]
+
+[blurOff motion 0.1]
+[cameraHome 0.1]
+[charaFadeout A 0.1]
+[charaFadeout Q 0.1]
+[charaPut X 2000,2500]
+[charaEffectDestroy X bit_talk_light_range]
+[charaEffectDestroy X bit_talk_rising_particles]
+
+[cameraMove 0 0,0 1.0]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[criMovie talk_mov352 bgmPlay false]
+
+[wt 15.0]
+
+[bgmStop BGM_BATTLE_312 2.0]
+
+[wt 1.5]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[scene 10000]
+
+[cameraMove 0 0,0 1.01]
+
+[overlayFadein U 0.1 0,-757]
+[overlayFadein V 0.1 0,757]
+
+[charaDepth X 10]
+[charaPut X 0,-200]
+[charaEffect X bit_talk_06_blue]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 4,-6]
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[bgm BGM_SHINYAMA_1 0.1]
+
+＠キングエリザ
+……。[r]……行くのね。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.15]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 0,-50]
+[wt 0.8]
+＠終わりのエリザベート
+[line 3]ええ。
+[k]
+
+＠終わりのエリザベート
+最初、確かにあなたと私は同一だった。
+[k]
+
+＠終わりのエリザベート
+分体として動き、あなたのために尽くすことも、[r]当然として受け入れた。
+[k]
+
+[charaFace E 5]
+
+＠終わりのエリザベート
+でも、ずっと復活を考えている内に、[r]私とあなたは違うモノに変わっていった。
+[k]
+
+＠終わりのエリザベート
+元は同じだけど、ゆっくりと系統樹で[r]異なる枝へと分岐した。
+[k]
+
+[charaFaceFade E 4 0.2]
+
+＠終わりのエリザベート
+そして、精神構造も。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 4,-6]
+
+＠キングエリザ
+なんてくだらない。
+[k]
+
+＠キングエリザ
+たかだか三年の[#母娘:おやこ]ごっこで、[r]その気になってしまったのかしら？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠終わりのエリザベート
+……そうね。
+[k]
+
+[charaFaceFade E 1 0.2]
+
+＠終わりのエリザベート
+たかだか三年の、取り繕った[#母娘:おやこ]ごっこだけで、[r]あっさり[#靡:なび]いてしまったわ、私。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 4,-6]
+
+＠キングエリザ
+アナタの起源があるとしたら、[r]『チョロい』でしょうね。
+[k]
+
+[charaFace G 0]
+
+＠キングエリザ
+でも、いいのかしら。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠終わりのエリザベート
+……何が？
+[k]
+
+[messageOff]
+[charaDepth E 2]
+[charaDepth O 3]
+[charaDepth G 4]
+[charaDepth P 5]
+[charaDepth L 6]
+
+[charaScale G 1.635]
+[charaScale O 1.2]
+
+[charaFilter O silhouette 00000080]
+
+[charaTalk G,E]
+[charaFace G 0]
+[charaFadein G 0.7 -166,-6]
+[charaFadein O 0.7 0,-260]
+[charaMove G -116,-6 30.0]
+[wt 0.7]
+[charaFadeout E 0.1]
+[wt 0.3]
+
+＠キングエリザ
+エリザベートは、アナタを許してくれるの？
+[k]
+
+[messageOff]
+
+[charaScale L 1.2]
+[charaScale P 1.2]
+
+[charaFilter P silhouette 00000080]
+
+[charaTalk L,G]
+[charaFace L 1]
+[charaFadein L 0.7 200,-50]
+[charaFadein P 0.6 0,-260]
+[charaMove L 150,-50 30.0]
+[wt 0.9]
+
+＠L：終わりのエリザベート
+許してくれなくてもいいわ。[r]傍にいてくれなくてもいい。
+[k]
+
+[charaFace L 2]
+
+＠L：終わりのエリザベート
+ただ元気でいてくれれば、それでいい。[r]親なんて、そんな役回りで充分でしょ。
+[k]
+
+[messageOff]
+[charaTalk G,L]
+[charaFace G 2]
+[charaFadeTime L 0.5 0]
+[charaFadeTime P 0.5 0]
+[wt 0.6]
+
+＠キングエリザ
+あーあ。ムカつく。[r]一人だけ、さらっと生きていくのね。
+[k]
+
+[messageOff]
+[charaTalk L,G]
+[charaFace L 0]
+
+[charaFadeTime L 0.5 1.0]
+[charaFadeTime P 0.5 1.0]
+[wt 0.5]
+
+[charaScale G 1.335]
+[charaFace G 0]
+[charaMove G 4,-6 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+＠L：終わりのエリザベート
+あなたたちも死ぬ訳じゃないわ。[r]私が祈り続ける限り[line 3]
+[k]
+
+[charaFace L 1]
+
+＠L：終わりのエリザベート
+終わりまでには、まだもう少しの[#暇:いとま]があるの。
+[k]
+
+[messageOff]
+[charaTalk G,L]
+[charaFadeout L 0.6]
+[charaFadeout P 0.6]
+[wt 0.8]
+
+＠キングエリザ
+さようなら、[#長女:エルダー]。
+[k]
+
+＠キングエリザ
+この私たちのために弱体化した生命体になるのも辞さず、[r]真っ先に別たれた首よ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+
+＠終わりのエリザベート
+……そんなカッコ良いものでもないのだけどね。[wt 1.05][charaFaceFade E 3 0.2][r]さようなら、極悪な妹たち。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_SHINYAMA_1 1.0]
+[wait fade]
+
+[charaPut X 2000,2500]
+[charaEffectDestroy X bit_talk_06_blue]
+
+[charaFadeout E 0.1]
+[charaFilter O normal]
+[charaFilter P normal]
+[wt 0.2]
+
+[sceneSet O 265700 1]
+[sceneSet P 265700 1]
+[sceneSet Q 265700 1]
+[sceneSet R 265700 1]
+[sceneSet S 265700 1]
+[charaSet E 1098341300 1 キングエリザ_拡大用]
+[charaSet N 1098341300 1 キングエリザ_鉱物化用]
+
+[scene 265700]
+
+[charaLayer H sub #A]
+[charaLayer P sub #A]
+
+[charaLayer I sub #B]
+[charaLayer Q sub #B]
+
+[charaLayer J sub #C]
+[charaLayer R sub #C]
+
+[charaLayer U sub #D]
+[charaLayer V sub #D]
+
+[subCameraFilter #A maskEdge cut359_mask05 5 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask05 5 0,0,0,255]
+[subCameraFilter #C maskEdge cut359_mask05 5 0,0,0,255]
+[subCameraFilter #D through]
+
+[subRenderDepth #A 2]
+[subRenderDepth #B 3]
+[subRenderDepth #C 4]
+[subRenderDepth #D 5]
+
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.0]
+[subRenderScale #C 1.0]
+[subRenderScale #D 1.01]
+
+[charaScale H 1.2]
+[charaScale P 1.8]
+
+[charaDepth P 2]
+[charaDepth H 3]
+
+[charaFace H 2]
+[charaFadein H 0 235,225]
+[charaFadein P 0 400,0]
+
+[charaScale I 1.2]
+[charaScale Q 1.8]
+
+[charaDepth Q 2]
+[charaDepth I 3]
+
+[charaFace I 5]
+[charaFadein I 0 0,225]
+[charaFadein Q 0 0,0]
+
+[charaScale J 1.2]
+[charaScale R 1.8]
+
+[charaDepth R 2]
+[charaDepth J 3]
+
+[charaFace J 5]
+[charaFadein J 0 -205,225]
+[charaFadein R 0 -400,-0]
+
+[charaDepth U 10]
+[charaDepth V 10]
+
+[overlayFadein U 0.1 0,-757]
+[overlayFadein V 0.1 0,757]
+
+[subRenderFadein #D 0.1 0,0]
+[wt 0.8]
+
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaScale O 1.6]
+
+[charaTalk H]
+[charaFace G 2]
+[charaFadein G 0.6 4,-6]
+[charaFadein O 0.6 0,-450]
+
+[subRenderFadein #A 0.6 -280,-275]
+
+[blur lens 0.6 4 10]
+
+[wt 1.1]
+
+[bgm BGM_SEIHAI_3 0.1]
+
+＠エリザ・アルシア
+痛い！　痛い！　ああああ痛いぃぃぃぃ！
+[k]
+
+[messageOff]
+[charaTalk I]
+[subRenderFadein #B 0.4 0,-275]
+[wt 0.5]
+
+＠エリザ・パヴォニス
+アスクレウス！　耐性を！　耐性を獲得しなさい！
+[k]
+
+[messageOff]
+[charaTalk J]
+[subRenderFadein #C 0.4 280,-275]
+[wt 0.5]
+
+＠エリザ・アスクレウス
+で……[#できないわ]！
+[k]
+
+[charaTalk I]
+[charaFace I 2]
+
+＠エリザ・パヴォニス
+な[line 3]
+[k]
+
+[messageOff]
+[charaTalk G,I]
+[charaFace G 2]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[subRenderFadeout #C 0.4]
+
+[blurOff lens 0.4]
+[wt 0.4]
+
+[se ad933]
+[charaPut X 1]
+[charaEffect X bit_talk_rising_particles]
+[charaEffect H bit_talk_rising_particles]
+[charaEffect I bit_talk_rising_particles]
+[charaEffect J bit_talk_rising_particles]
+[wt 2.8]
+
+[seVolume ad933 0.6 0.3]
+[wt 0.3]
+
+[charaFace G 5]
+
+＠キングエリザ
+ぎ[messageShake 0.04 3 3 0.4]ゃああああああああああ！？
+[k]
+
+[charaFace G 2]
+
+＠キングエリザ
+あ、ぐ、ぎ……エネルギー……エリザ粒子が……[r]す、吸い上げ……！？
+[k]
+
+[messageOff]
+[charaFadeout G 0.4]
+[charaFadeout O 0.4]
+[wt 0.5]
+
+[cueSe SE_23 23_ade872]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 0,-280]
+[charaMoveEase F 0,-250 0.7 easeOutSine]
+[wt 0.7]
+[cueSeStop 23_ade872 0.4]
+[wt 0.4]
+
+＠ユニヴァース・アポロン
+はい、こんにちは。
+[k]
+
+[messageOff]
+[charaDepth F 2]
+[charaDepth O 3]
+[charaDepth G 4]
+
+[charaTalk I,F]
+[charaFace G 2]
+[charaFadein G 0.4 4,-6]
+[charaFadein O 0.4 0,-450]
+
+[subRenderFadein #B 0.4 0,-275]
+
+[blur lens 0.4 4 10]
+
+[wt 0.5]
+
+＠エリザ・パヴォニス
+アポロン！[r]この槍は……この槍は……。
+[k]
+
+[messageOff]
+[charaTalk F,I]
+[charaFace F 0]
+[subRenderFadeout #B 0.4]
+[charaFadeout G 0.4]
+[charaFadeout O 0.4]
+[blurOff lens 0.4]
+[wt 0.5]
+
+
+＠ユニヴァース・アポロン
+うん。槍だったり、[#錨:いかり]だったり、色々[r]言われてるけどね。
+[k]
+
+＠ユニヴァース・アポロン
+その武器の本質は、注射器だ。
+[k]
+
+＠ユニヴァース・アポロン
+だから[line 3]君の持つエリザ粒子を、[r]丸ごと吸い上げる。
+[k]
+
+[messageOff]
+
+[charaTalk H,F]
+[charaFace H 2]
+[charaFace G 2]
+[charaFadein G 0.4 4,-6]
+[charaFadein O 0.4 0,-450]
+
+[subRenderFadein #A 0.4 -280,-275]
+
+[blur lens 0.4 4 10]
+
+[wt 0.5]
+
+＠エリザ・アルシア
+あ、あ、あ……[#私:アタシ]たちの……エネルギーが……[r]エリザ粒子が……！
+[k]
+
+[messageOff]
+[charaTalk J]
+[charaFace J 2]
+[subRenderFadein #C 0.4 280,-275]
+[wt 0.5]
+
+＠エリザ・アスクレウス
+た、耐性が……できない！　吸い上げられるせいで、[r]これを抜くことも……！
+[k]
+
+[messageOff]
+[charaTalk I]
+[charaFace I 3]
+[subRenderFadein #B 0.4 0,-275]
+[wt 0.5]
+
+＠エリザ・パヴォニス
+……やってくれたわね……。
+[k]
+
+[messageOff]
+[charaTalk F,I]
+[charaFace F 0]
+
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[subRenderFadeout #C 0.4]
+[charaFadeout G 0.4]
+[charaFadeout O 0.4]
+[blurOff lens 0.4]
+
+[wt 0.5]
+
+
+＠ユニヴァース・アポロン
+[line 3]ああ、やったとも。[r]やらないはずがないだろう。
+[k]
+
+＠ユニヴァース・アポロン
+惑星最強の生命種。
+[k]
+
+＠ユニヴァース・アポロン
+あらゆる攻撃に耐性を持ち、[r]雷と毒の息を吐き出す大怪獣。
+[k]
+
+＠ユニヴァース・アポロン
+でもまあ、それは本質じゃない。
+[k]
+
+[messageOff]
+[charaDepth F 2]
+[charaDepth S 3]
+[charaDepth M 4]
+
+[charaScale S 1.2]
+[charaScale M 1.2]
+
+[charaTalk F,M]
+[charaFace M 0]
+[charaFadein M 0.7 150,-200]
+[charaFadein S 0.7 70,-240]
+[charaMove M 150,-250 8.0]
+[charaMove S 70,-290 8.0]
+[wt 0.7]
+
+[charaFadeout F 0.1]
+[wt 0.4]
+
+＠M：ユニヴァース・アポロン
+君のもっとも厄介な部分は、[r]あまりにも[#不滅]ということだ。
+[k]
+
+＠M：ユニヴァース・アポロン
+エリザ粒子を吸い取られた君は、[r]1000年くらいは大人しくしているだろう。
+[k]
+
+＠M：ユニヴァース・アポロン
+が、それで終わりだ。[r]君はいずれ、再び力を取り戻す。
+[k]
+
+[messageOff]
+[charaTalk I]
+[charaFace I 3]
+[subRenderFadein #B 0.4 -250,-275]
+[wt 0.5]
+
+＠エリザ・パヴォニス
+そこまで理解していて、どうして足掻くのです。[r]私たちは、この星を壊せればそれでいいというのに。
+[k]
+
+[charaTalk M]
+[charaFace M 0]
+
+＠M：ユニヴァース・アポロン
+駄目です。
+[k]
+
+＠M：ユニヴァース・アポロン
+[line 3]という訳で後は1000年後、恐らくは[r]何シーズンか後の[#主役:だれか]に任せるとしよう。
+[k]
+
+[charaTalk I]
+[charaFace I 3]
+
+＠エリザ・パヴォニス
+その主役とやらは、いつか私たちを[line 3]
+[k]
+
+[charaTalk M]
+[charaFace M 0]
+
+＠M：ユニヴァース・アポロン
+さてね。それは1000年後の私に問い合わせてくれ。
+[k]
+
+[messageOff]
+[charaTalk I]
+[wt 1.0]
+
+[charaFaceFade I 4 0.2]
+
+＠エリザ・パヴォニス
+あはははは！　そうね、楽しみに待つわ！[r]1000年後に、今度こそ星を滅ぼす！
+[k]
+
+[messageOff]
+[charaTalk G,I]
+[charaFace G 5]
+[charaFadein G 0.5 4,-6]
+[charaFadein O 0.5 0,-450]
+[charaFadeout M 0.5]
+[charaFadeout S 0.5]
+[subRenderFadeout #B 0.5]
+[wt 0.5]
+
+[charaFadeout H 0]
+[charaFadeout P 0]
+[charaFadeout I 0]
+[charaFadeout Q 0]
+[charaFadeout J 0]
+[charaFadeout R 0]
+[charaEffectDestroy H bit_talk_rising_particles]
+[charaEffectDestroy I bit_talk_rising_particles]
+[charaEffectDestroy J bit_talk_rising_particles]
+[wt 0.2]
+
+＠キングエリザ
+我ら星を喰らう者。再びの眠りに就かん！[r]されど[#永久:とこしえ]ではなく、我らはいつか必ず[line 3]
+[k]
+
+[charaLayer H normal]
+[charaLayer P normal]
+[charaLayer I normal]
+[charaLayer Q normal]
+[charaLayer J normal]
+[charaLayer R normal]
+[charaScale H 1.0]
+[charaScale P 1.0]
+[charaScale I 1.0]
+[charaScale Q 1.0]
+[charaScale J 1.0]
+[charaScale R 1.0]
+
+[charaFace G 4]
+
+＠キングエリザ
+その[#終焉:けつまつ]に、至るであろう！[r]あはははは！　ああ、何だっけ。これは、ええと[line 3]
+[k]
+
+[charaFace G 3]
+
+＠キングエリザ
+『[#原初:オリジン]』が言っていたのは確か……。
+[k]
+
+[messageOff]
+[seStop ad933 1.0]
+[bgmStop BGM_SEIHAI_3 1.0]
+
+[charaTalk off]
+[charaDepth O 2]
+[charaDepth G 3]
+[charaDepth P 4]
+[charaDepth E 5]
+[charaDepth N 6]
+
+[charaScale P 1.8]
+[charaScale E 1.635]
+
+[charaFace E 3]
+[charaFadein E 1.0 4,6]
+[charaFadein P 1.0 0,-500]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[charaFadeout O 0.1]
+[wt 0.4]
+
+[charaFaceFade E 1 0.2]
+
+＠キングエリザ
+そう。[r]まったくもって[#パンク]だわ！
+[k]
+
+
+[messageOff]
+[charaEffectStop X bit_talk_rising_particles]
+
+[se ad644]
+[wt 0.4]
+
+[charaFilter N silhouette FF66CC80]
+[charaScale N 1.635]
+[charaPut N 4,6]
+[charaFace N 1]
+[charaFadeTime N 1.8 0.7]
+[wt 3.2]
+
+[charaDepth Q 7]
+[charaDepth F 8]
+
+[charaScale F 1.2]
+[charaScale Q 1.2]
+[charaFace F 0]
+[charaFadein F 0.5 0,-250]
+[charaFadein Q 0.5 -100,-260]
+[wt 0.8]
+
+＠ユニヴァース・アポロン
+では、また会う[#火]まで。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout E 0.1]
+[charaFadeout N 0.1]
+[charaFadeout P 0.1]
+[charaFilter I normal]
+[wt 0.2]
+
+[charaSet E 11022000 1 終わりのエリザベート]
+[charaSet F 7042001 1 鮮血のウィドウヒルト]
+[charaSet G 1008001 1 絶対勝利のジークフリート]
+[charaSet N 1008001 1 絶対勝利のジークフリート（演出用）]
+[charaSet H 1047002 1 業炎のワタナベ]
+[charaSet I 4029300 1 ソニックマッハ・ジェッター]
+[charaSet J 7027300 1 アマゾネスＣＥＯ]
+
+[charaSet K 98114500 1 アマゾネス1]
+[charaSet L 98114510 1 アマゾネス2]
+[charaSet M 98114510 1 アマゾネス3]
+
+[sceneSet O 265300 1]
+[sceneSet P 265300 1]
+[sceneSet Q 265300 1]
+[sceneSet R 265300 1]
+[sceneSet S 265300 1]
+
+
+[wt 1.0]
+
+[scene 265300]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.4 0,-80]
+
+[charaShake H 0.04 1 1 0.6]
+[charaMove H 0,-50 0.6]
+[wt 0.3]
+
+[se ad984]
+[seVolume ad984 0 0.5]
+[wt 1.0]
+
+[charaFace H 0]
+
+[bgm BGM_DRAGONCASTLE_1 0.1]
+
+＠業炎のワタナベ
+生きてるか、二人とも。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+
+＠鮮血のウィドウヒルト
+かろうじて、ね。
+[k]
+
+[charaFace F 12]
+
+＠鮮血のウィドウヒルト
+結局、エリザベート一族（？）が世界を滅ぼしかけ、[r]そして救った……。
+[k]
+
+[charaFace F 11]
+
+＠鮮血のウィドウヒルト
+ある意味壮大なマッチポンプなのかしら、これ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 0,-50]
+
+＠絶対勝利のジークフリート
+[line 3]何、どちらでも平和であればいいさ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+
+＠業炎のワタナベ
+ああ。しかし、これから俺たちは何をする？[r]カ星での役割は終わったようだが。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠絶対勝利のジークフリート
+それはまあ、次の竜を探すべきだろうな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 0,-50]
+
+＠鮮血のウィドウヒルト
+はぁ……これだからワーカホリックは。[wt 0.9][charaFace F 0][r]一つ、[#喫緊:きっきん]でやるべきことがあるでしょう。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaDepth G 2]
+[charaDepth H 3]
+
+[charaTalk G,H]
+[charaFace H 0]
+[charaFace G 0]
+[charaFadeinFSL H 0.1 -256,-50]
+[charaFadeinFSR G 0.1 256,-50]
+
+＠二人=spot[G,H]
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 0,-50]
+
+＠鮮血のウィドウヒルト
+飲んで騒ぐわよ。[r]アポロンの奴も誘ってやりましょう。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+[wt 1.0]
+
+[charaFace G 1]
+
+＠絶対勝利のジークフリート
+……なるほど。まず最初にやるべきだな、それは。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth G 2]
+[charaDepth O 3]
+[charaDepth N 6]
+[charaDepth H 7]
+[charaDepth F 5]
+
+[charaScale O 1.2]
+
+[charaFace N 1]
+[charaFace F 1]
+[charaFace H 1]
+[charaFadein H 0.7 -390,-50]
+[charaFadein N 0.7 40,-50]
+[charaFadein F 0.7 350,-50]
+[charaFadein O 0.7 -10,-260]
+
+[charaMove H -370,-50 3.7]
+[charaMove N 60,-50 3.7]
+[charaMove F 370,-50 3.7]
+[charaMove O 10,-260 3.7]
+[wt 2.7]
+
+[fadeout black 1.0]
+[bgm BGM_DRAGONCASTLE_1 1.0 0.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaFadeout O 0.1]
+[charaFadeout N 0.1]
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_DRAGONCASTLE_1 1.0 1.0]
+[wait fade]
+
+[se ad228]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.4 0,-80]
+
+[charaShake I 0.04 1 1 0.6]
+[charaMove I 0,-50 0.6]
+[wt 0.6]
+
+[seStop ad228 0.8]
+[wt 0.8]
+
+＠ソニックマッハ・ジェッター
+あー、死ぬかと思った。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth T 2]
+[charaDepth K 5]
+[charaDepth L 4]
+[charaDepth M 3]
+
+[charaPut T 0,-50]
+[charaFadeTime T 0.2 0.5]
+[charaFace K 0]
+[charaFace L 0]
+[charaFace M 0]
+[charaFadein K 0.1 0,-50]
+[charaFadeinFSL L 0.1 -350,-50]
+[charaFadeinFSR M 0.1 350,-50]
+
+＠アマゾネス
+（むしろなんで生きてるんだろうこの人）
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout T 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+
+＠ソニックマッハ・ジェッター
+さて、ＣＥＯにはよろしく伝えておいてくれ。[r]今度顔を合わせたら殺し合いだろうからな。
+[k]
+
+[messageOff]
+[se ade232]
+[seVolume ade232 0 0.5]
+[wt 0.1]
+[charaMoveReturn I 0,-57 0.4]
+[wt 0.7]
+
+[cueSe SE_23 23_ad1333]
+[cueSeVolume 23_ad1333 0 0]
+[wt 0.2]
+
+[cueSeVolume 23_ad1333 0.6 0.2]
+[wt 1.3]
+
+[charaTalk I]
+[charaFace I 1]
+
+＠ソニックマッハ・ジェッター
+じゃあな！
+[k]
+
+[messageOff]
+[cueSeStop 23_ad1333 0.6]
+[se ad846]
+[wt 0.1]
+[charaMoveReturn I 0,-59 0.3]
+[wt 0.7]
+
+[se ad147]
+[se ad780]
+[seVolume ad780 0 0.6]
+[effect bit_talk_mgn_light02]
+[wt 0.3]
+[effect bit_talk_impactlanding 0,-200]
+[charaFadeout I 0.1]
+[wt 2.8]
+
+[effectDestroy bit_talk_impactlanding]
+
+[charaDepth O 6]
+[charaDepth J 7]
+
+[charaScale O 1.2]
+
+[charaFadein O 0.5 -70,-260]
+[charaMove O -100,-260 0.5]
+[wt 0.7]
+
+[charaScale J 1.2]
+
+[se ad60]
+[charaTalk J]
+[charaFace J 21]
+[charaFadein J 0.4 130,-30]
+[charaMove J 100,-30 0.4]
+[wt 0.4]
+[seStop ad60 0.2]
+
+[charaFace K 0]
+[charaFace L 0]
+[charaFace M 0]
+[charaFadein K 0.1 0,-50]
+[charaFadeinFSL L 0.1 -350,-50]
+[charaFadeinFSR M 0.1 350,-50]
+[wt 0.4]
+
+＠アマゾネスＣＥＯ
+さて、アキレウス！[r]お急ぎ便で発注していた戦車が今しがた届いたぞ！
+[k]
+
+[charaFace J 1]
+
+＠アマゾネスＣＥＯ
+これにてギャップは解消された！　今こそ[r]そちらの戦車諸共撃破してくれよう……。
+[k]
+
+[messageOff]
+[charaMoveEase J 300,-30 1.0 easeOutSine]
+[charaMoveEase O 100,-260 1.0 easeOutSine]
+[wt 1.7]
+[charaMoveEase J 100,-30 1.0 easeOutQuad]
+[charaMoveEase O -100,-260 1.0 easeOutQuad]
+[wt 1.0]
+
+[charaFace J 10]
+
+＠アマゾネスＣＥＯ
+どこ行った？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout J 0.5]
+[charaFadeout O 0.5]
+[wt 0.7]
+
+＠アマゾネス
+帰りました。
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaScale J 1.0]
+[charaTalk on]
+[charaTalk J]
+[charaFace J 7]
+[charaFadein J 0.1 0,-50]
+
+＠アマゾネスＣＥＯ
+[line 3]殺す！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_DRAGONCASTLE_1 1.0]
+[wait fade]
+
+[charaFadeout J 0.1]
+[wt 0.5]
+
+[charaSet A 3062002 1 エリザベート]
+[charaSet F 25010001 1 モレー]
+[charaSet G 5026000 1 エリザベート（キャスター）]
+[charaSet H 1010000 1 エリザベート（ブレイブ）]
+[charaSet I 6017001 1 カーミラ]
+[charaSet J 1098157500 1 エリザベートＪＡＰＡＮ]
+[charaSet K 10004000 1 メカエリチャン]
+[charaSet L 1098337710 1 フレッカス]
+
+[masterBranch _Male03 _Female03]
+
+[label _Male03]
+[charaSet M 1098338600 1 キャプテン・カルデア_マスター礼装_男]
+[branch _branchEnd03]
+
+[label _Female03]
+[charaSet M 1098338610 1 キャプテン・カルデア_マスター礼装_女]
+[branch _branchEnd03]
+
+[label _branchEnd03]
+
+[sceneSet O 267601 1]
+[sceneSet P 267601 1]
+[sceneSet Q 267601 1]
+[charaScale Q 1.4]
+
+
+[wt 1.0]
+
+[scene 267601]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_159 0.1]
+
+[charaTalk F]
+[charaFace F 25]
+[charaFadein F 0.1 0,-50]
+
+＠モレー
+……。[r]……終わった……？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 9]
+[charaFadein L 0.1 0,-50]
+
+＠フレッカス
+みたいだな！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 23]
+[charaFadein C 0.1 0,-50]
+
+＠九紋竜エリザ
+やったのだわー！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 0,-50]
+[charaEffect B bit_talk_sing_notes]
+
+＠エリザベート（シンデレラ）
+ラララ～ハッピーエンド～♪
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaEffectDestroy B bit_talk_sing_notes]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 0,-50]
+
+＠エリザベート（ハロウィン）
+パンプキンゴーストたちも[#雲散霧消:うんさんむしょう]したわ。[wt 0.8][charaFace G 0][r]あのでっかいのは[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+
+＠エリザベート（ブレイブ）
+見た感じ、鉱物になったみたいね。[r]魔力もエリザ粒子もまったく感じ取れない。
+[k]
+
+[charaFace H 1]
+
+＠エリザベート（ブレイブ）
+よくわかんないけど、現地の人間が[r]何とかするんじゃない？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 0,-50]
+
+[charaMoveReturn I 0,-56 0.5]
+
+＠カーミラ
+ぜぇ、[wt 0.8][charaMoveReturn I 0,-56 0.5]ぜぇ、[wt 0.8][charaMoveReturn I 0,-56 0.5]ぜぇ……[wt 0.9]何で私……[r]こんなところにいるのかしら……。
+[k]
+
+＠カーミラ
+ああ疲れた……カボチャ料理は当分見たくないわ……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 0,-50]
+
+＠エリザベートＪＡＰＡＮ
+ところで[#私:アタシ]たち、どうやって帰るの？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 23]
+[charaFadein F 0.1 0,-50]
+
+＠モレー
+んー、儀式を逆に打てば、普通に帰還できるはず。
+[k]
+
+[charaFace F 1]
+＠モレー
+[#召喚さ:よ　　ば]れた原因であるキングエリザも[r]もう封印したしね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+
+＠エリザベートＪＡＰＡＮ
+そう。つまりいつでも帰れるのね。[r]だったら観光でもしようかしら。
+[k]
+
+[charaFace J 1]
+
+＠エリザベートＪＡＰＡＮ
+違う星を見て回るなんて、[r]さすがになかなか無い経験よね！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 0,-50]
+
+＠メカエリチャン
+おや、エリザベートとマスターも[r]戻ってきたようですよ。
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+
+[charaDepth A 2]
+[charaDepth M 3]
+[charaMove U 0,-850 1.4]
+[charaMove V 0,850 1.4]
+[wt 0.5]
+[se ad223]
+[charaTalk A]
+[charaPut A 0,0]
+
+[charaFace A 1]
+
+[charaEffect A bit_talk_quickmove 0,15]
+
+[charaSpecialEffect A appearanceReverse 1 0.25]
+[wait charaSpecialEffect A]
+
+
+[wt 1.0]
+
+[subRenderFadeout #D 0.1]
+[wt 0.2]
+
+[charaFadeout U 0]
+[charaFadeout V 0]
+[wt 0.1]
+
+[subCameraOff]
+[charaLayer U normal]
+[charaLayer V normal]
+[charaScale U 1.0]
+[charaScale V 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠メカエリチャンⅡ号機
+お帰りなさい、二人とも。
+[k]
+
+？1：ただいま！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠A：パーフェクト・エリザベート
+ふ。ついに……ついに[#私:アタシ]は、[r][#完璧:パーフェクト]に至ってしまったわ……。
+[k]
+
+[charaFace A 0]
+
+＠A：パーフェクト・エリザベート
+……。[wt 0.6][charaFace A 7][charaShake A 0.02 2 2 0.25][r]……へくちょ！
+[k]
+
+[messageOff]
+[charaDepth A 2]
+[charaDepth X 3]
+
+[se ad236]
+[effect bit_talk_magical_pon 500,0]
+[effect bit_talk_magical_pon 275,0]
+[fowardEffect bit_talk_magical_pon 0,0]
+[effect bit_talk_magical_pon -275,0]
+[effect bit_talk_magical_pon -500,0]
+[wt 0.05]
+
+[charaChange A 3062000 0 fade 0.1]
+[wait charaChange A]
+[wt 1.1]
+
+[charaTalk A]
+[charaFace A 3]
+
+＠A：パーフェクト・エリザベート
+あれ、戻っちゃった！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠メカエリチャンⅡ号機
+確かにあの霊基は完璧かもしれませんが、[r]それをずっと保てるほどの力はない、ということですね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠終わりのエリザベート
+つまり、まだまだ修業の余地があるということです。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+[fowardEffect bit_talk_speaker_change_erz 5,1]
+
+[wt 0.95]
+[charaFaceFade A 7 0.2]
+
+[cueSe SE_25 25_ade1302]
+[wt 1.8]
+
+[charaFaceFade A 14 0.2]
+[wt 0.5]
+
+[backlogStart]
+＠パーフェクト・エリザベート
+か……母様！　ってあれ？　あれれ？
+[k]
+
+＠エリザベート
+そんなー！？
+[k]
+[backlogEnd]
+
+[wait touch]
+
+[fowardEffectStop bit_talk_speaker_change_erz]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaDepth Q 1]
+[charaDepth E 2]
+[charaDepth A 3]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 0,0]
+[charaFadein Q 0.4 -150,-220]
+[wt 0.4]
+
+＠終わりのエリザベート
+……まあ、今日のところはお説教は[r]控えましょう。
+[k]
+
+[charaFace E 0]
+
+＠終わりのエリザベート
+それよりも[line 3]
+[k]
+
+[charaFaceFade E 5 0.2]
+
+＠終わりのエリザベート
+エリザベート。私を赦すの？[r]私は貴女を騙したわ。
+[k]
+
+＠終わりのエリザベート
+貴女だけでなく、マスターも。[r]教団の信徒も。
+[k]
+
+[messageOff]
+[charaMoveEase Q 100,-220 1.0 easeOutSine]
+[charaMoveEase E 250,0 1.0 easeOutSine]
+[wt 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 -250,0]
+[wt 0.4]
+
+＠エリザベート
+あのね、母様。[r][#私:アタシ]には、誰かを赦すという資格なんてないのよ。
+[k]
+
+＠終わりのエリザベート
+[line 3]それは、
+[k]
+
+[charaFace A 1]
+
+＠エリザベート
+だから、結局大切なのは[#私:アタシ]の気持ち。[r][#私:アタシ]がそうしたいかどうか。
+[k]
+
+＠エリザベート
+[#私:アタシ]はもう少し、母様と一緒にいたいわ。[r]パンクも続けたいわ。賛歌はもう遠慮したいわ。
+[k]
+
+[charaFace A 2]
+
+＠エリザベート
+我が侭聞いて欲しいんだけど、ダメかしら？
+[k]
+
+[messageOff]
+
+
+[charaTalk E]
+[charaFace E 10]
+[wt 1.2]
+[charaFaceFade E 4 0.3]
+
+＠終わりのエリザベート
+……はぁ。[r]手の掛かる娘を持ってしまったものです。
+[k]
+
+[charaFace A 1]
+
+＠エリザベート
+！
+[k]
+
+[charaTalk E]
+[charaFaceFade E 3 0.2]
+
+＠終わりのエリザベート
+そうですね。貴女が望む限り、傍にいましょう。[wt 1.6][charaFace E 1][r]でもパンクは許さないわ。美しい賛歌を歌わせるわ。
+[k]
+
+[charaFace A 3]
+
+＠エリザベート
+なんでさー！？
+[k]
+
+[messageOff]
+[charaFadeout Q 0.5]
+[charaFadeout A 0.5]
+[charaFadeout E 0.5]
+[wt 0.8]
+
+[charaTalk L]
+[charaFace L 9]
+[charaFadein L 0.1 1]
+
+＠フレッカス
+お、いたいた。おーい、エリザベート！
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.15]
+
+[charaTalk off]
+[subCameraOn 2]
+
+[charaLayer K sub #A]
+[charaLayer D sub #A]
+[charaLayer A sub #A]
+[charaLayer E sub #A]
+[charaLayer I sub #A]
+[charaLayer O sub #A]
+
+[charaLayer C sub #B]
+[charaLayer B sub #B]
+[charaLayer G sub #B]
+[charaLayer H sub #B]
+[charaLayer J sub #B]
+[charaLayer P sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask04 3 255,206,229,255]
+[subCameraFilter #B maskEdge cut359_mask04 3 255,206,229,255]
+
+[subRenderDepth #A 2]
+[subRenderDepth #B 3]
+
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.0]
+
+[charaScale K 0.8]
+[charaScale D 0.8]
+[charaScale A 0.8]
+[charaScale E 0.8]
+[charaScale I 0.8]
+[charaScale O 1.2]
+
+[charaDepth O 2]
+[charaDepth K 3]
+[charaDepth D 4]
+[charaDepth A 6]
+[charaDepth E 5]
+[charaDepth I 4]
+
+[charaFace K 0]
+[charaFace D 0]
+[charaFace A 0]
+[charaFace E 0]
+[charaFace I 0]
+[charaFadein K 0 50,220]
+[charaFadein D 0 520,220]
+[charaFadein A 0 -180,225]
+[charaFadein E 0 275,220]
+[charaFadein I 0 -425,225]
+[charaFadein O 0 -50,0]
+
+[charaScale C 0.8]
+[charaScale B 0.8]
+[charaScale G 0.8]
+[charaScale H 0.8]
+[charaScale J 0.8]
+[charaScale P 1.2]
+
+[charaDepth P 2]
+[charaDepth C 5]
+[charaDepth B 7]
+[charaDepth G 4]
+[charaDepth H 6]
+[charaDepth J 3]
+
+[charaFace C 0]
+[charaFace B 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaFace J 0]
+[charaFadein C 0 -520,230]
+[charaFadein B 0 -50,220]
+[charaFadein G 0 -280,225]
+[charaFadein H 0 425,220]
+[charaFadein J 0 180,225]
+[charaFadein P 0 50,0]
+
+[subRenderFadein #A 0.4 0,-225]
+[subRenderFadein #B 0.4 0,-400]
+[charaMoveEase K 0,220 0.5 easeOutCubic]
+[charaMoveEase D 470,220 0.5 easeOutCubic]
+[charaMoveEase A -230,225 0.5 easeOutCubic]
+[charaMoveEase E 225,220 0.5 easeOutCubic]
+[charaMoveEase I -475,225 0.5 easeOutCubic]
+
+[charaMoveEase C -470,230 0.5 easeOutCubic]
+[charaMoveEase B 0,220 0.5 easeOutCubic]
+[charaMoveEase G -230,225 0.5 easeOutCubic]
+[charaMoveEase H 475,220 0.5 easeOutCubic]
+[charaMoveEase J 230,225 0.5 easeOutCubic]
+
+[charaMoveEase O -100,0 0.5 easeOutCubic]
+[charaMoveEase P 100,0 0.5 easeOutCubic]
+[wt 0.6]
+
+＠該当者
+[FFFFFF]？[-]
+[k]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[wt 0.1]
+
+[charaFadeout K 0]
+[charaFadeout D 0]
+[charaFadeout A 0]
+[charaFadeout E 0]
+[charaFadeout K 0]
+[charaFadeout D 0]
+[charaFadeout I 0]
+[charaFadeout C 0]
+[charaFadeout G 0]
+[charaFadeout B 0]
+[charaFadeout H 0]
+[charaFadeout J 0]
+[charaFadeout O 0]
+[charaFadeout P 0]
+
+[charaTalk on]
+[charaTalk L]
+[charaFace L 7]
+[charaFadein L 0.1 1]
+
+＠フレッカス
+怖い。何だか知らないがみんなこっちを向いた。
+[k]
+
+[subCameraOff]
+[charaLayer K normal]
+[charaLayer D normal]
+[charaLayer A normal]
+[charaLayer E normal]
+[charaLayer I normal]
+[charaLayer C normal]
+[charaLayer G normal]
+[charaLayer B normal]
+[charaLayer J normal]
+[charaLayer H normal]
+[charaLayer O normal]
+[charaLayer P normal]
+[charaScale K 1.0]
+[charaScale D 1.0]
+[charaScale A 1.0]
+[charaScale E 1.0]
+[charaScale I 1.0]
+[charaScale C 1.0]
+[charaScale G 1.0]
+[charaScale B 1.0]
+[charaScale J 1.0]
+[charaScale H 1.0]
+[charaScale U 1.0]
+[charaScale V 1.0]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+どうしたの、フレッカス？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 6]
+[charaFadein L 0.1 1]
+
+＠フレッカス
+あー、実はだな。
+[k]
+
+[charaFace L 3]
+
+＠フレッカス
+さっき時間を稼ぐ時に、[r]みんなに約束しちまったんだ。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+え、何を約束したのよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_159 1.0]
+
+[charaTalk L]
+[charaFace L 3]
+[charaFadein L 0.1 1]
+
+＠フレッカス
+アンコールライブ。エリザベートの。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠エリザベート（ハロウィン）
+ライブ！？　ライブと言ったかしら、今！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.1 1]
+
+＠エリザベートＪＡＰＡＮ
+それは……メタルね。実に実にメタルだわ！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+そう。[#私:アタシ]のライブを望む人がいるのね。[wt 0.8][charaFace A 2][r]……ちらり。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaDepth A 2]
+[charaDepth O 3]
+[charaDepth J 4]
+[charaDepth H 5]
+[charaDepth G 6]
+[charaDepth B 7]
+
+[charaScale B 0.85]
+[charaScale G 0.85]
+[charaScale H 0.85]
+[charaScale J 0.85]
+[charaScale O 1.2]
+
+[charaFace B 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaFace J 0]
+[charaFadein B 0.5 -220,-40]
+[charaFadein G 0.5 -490,-40]
+[charaFadein H 0.5 410,-50]
+[charaFadein J 0.5 120,-40]
+[charaFadein O 0.5 60,-260]
+[charaMoveEase B -180,-40 0.5 easeOutSine]
+[charaMoveEase G -450,-40 0.5 easeOutSine]
+[charaMoveEase H 450,-50 0.5 easeOutSine]
+[charaMoveEase J 160,-40 0.5 easeOutSine]
+[charaMoveEase O 100,-260 0.5 easeOutSine]
+[wt 0.7]
+
+＠エリザベートｓ
+じーっ。
+[k]
+
+[messageOff]
+[charaFace A 9]
+[charaFadeout B 0.4]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[charaFadeout J 0.4]
+[charaFadeout O 0.4]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk A]
+
+＠エリザベート
+フレッカス。そのライブ、[r]人数が多くなっても構わない？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 9]
+[charaFadein L 0.1 1]
+
+＠フレッカス
+いいに決まってるだろ、ヒャッホウ！
+[k]
+
+？1：ま、待った
+？2：もしかして[line 3]
+？！
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_94 1.0]
+[wait fade]
+
+[charaFadeout L 0.1]
+[wt 0.5]
+
+[charaSet M 1098337600 1 古代火星人1]
+[charaSet N 1098337600 1 古代火星人2]
+[charaSet O 1098337600 1 古代火星人3]
+[charaSet P 1098337600 1 古代火星人4]
+[charaSet Q 1098337600 1 古代火星人5]
+
+[imageSet R cut764_telop 1]
+
+[sceneSet S 265400 1]
+[sceneSet T 265400 1]
+[sceneSet U 265400 1]
+[sceneSet V 265400 1]
+[sceneSet W 265400 1]
+
+[sceneSet X 10000 1]
+[charaScale X 1.1]
+
+
+[scene 265400]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_13 0.1]
+
+[se ad5]
+[seVolume ad5 0 0]
+[se ad413]
+[seVolume ad413 0 0]
+[se ad940]
+[seVolume ad940 0 0]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+みんなー！　聞こえてるかしらーーー！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+
+[charaTalk off]
+[charaDepth M 6]
+[charaDepth N 3]
+[charaDepth O 2]
+[charaDepth P 5]
+[charaDepth Q 4]
+
+[charaFace M 1]
+[charaFace N 1]
+[charaFace O 1]
+[charaFace P 1]
+[charaFace Q 1]
+[charaFadein M 0.1 1]
+[charaFadeinFSR N 0.1 200,0]
+[charaFadeinFSL O 0.1 -200,0]
+[charaFadeinFSSideR P 0.1 425,0]
+[charaFadeinFSSideL Q 0.1 -425,0]
+
+[charaRelativeLoopMove M 2 0,6 0,0 0.3 0.4 0]
+[wt 0.1]
+[charaRelativeLoopMove N 2 0,5 0,0 0.4 0.3 0]
+[wt 0.1]
+[charaRelativeLoopMove O 2 0,6 0,0 0.3 0.3 0]
+[wt 0.1]
+[charaRelativeLoopMove P 2 0,5 0,0 0.4 0.4 0]
+[wt 0.1]
+[charaRelativeLoopMove Q 2 0,6 0,0 0.3 0.3 0]
+
+[seVolume ad5 0.6 0.5]
+[seVolume ad413 0.6 0.3]
+[seVolume ad940 0.6 0.3]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠古代火星人
+おおー！　エリちゃーーーん！[r]また殺人音波を聴かせてくれーーー！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[seVolume ad5 0.6 0.2]
+[seVolume ad413 0.6 0.1]
+[seVolume ad940 0.6 0.1]
+[wait wipe]
+
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaRelativeLoopMoveStop M]
+[charaRelativeLoopMoveStop N]
+[charaRelativeLoopMoveStop O]
+[charaRelativeLoopMoveStop P]
+[charaRelativeLoopMoveStop Q]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.1]
+
+＠エリザベート
+ちょ！　誰が殺人音波よ！[r]今からやるのはパンク！
+[k]
+
+[charaFace A 8]
+
+＠エリザベート
+アイドルポップとパンクの融合という、[r]斬新な歌だから！
+[k]
+
+[charaDepth A 2]
+[charaDepth R 3]
+
+[se ade178]
+[wt 0.1]
+[charaFadein R 0.4 -10,-90]
+[wt 2.2]
+[charaFadeout R 0.4]
+[wt 0.7]
+
+[charaFace A 9]
+
+＠エリザベート
+それから！　今日は最ッ高にスペシャルな[r]ゲストを用意したわ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth A 0]
+[charaDepth S 1]
+[charaDepth G 6]
+[charaDepth H 5]
+[charaDepth J 4]
+[charaDepth K 3]
+[charaDepth C 9]
+[charaDepth D 8]
+[charaDepth E 11]
+[charaDepth B 10]
+
+[charaScale G 1.0]
+[charaScale H 1.0]
+[charaScale J 1.0]
+[charaScale K 1.0]
+[charaScale C 1.0]
+[charaScale D 1.0]
+[charaScale E 1.0]
+[charaScale B 1.0]
+[charaScale S 1.8]
+[charaFace G 0]
+[charaFace H 0]
+[charaFace J 0]
+[charaFadein S 0.4 500,-260]
+[charaPut G -400,-40]
+[charaPut J 50,-40]
+[charaPut H 400,-50]
+[charaFadeTime G 0.4 1.0]
+[charaFadeTime J 0.4 1.0]
+[charaFadeTime H 0.4 1.0]
+
+[charaPut K 700,-50]
+[charaPut C 1000,-50]
+[charaPut D 1300,-50]
+[charaPut E 1700,-50]
+[charaPut B 2100,-50]
+[wt 1.2]
+[charaMoveEase G -2100,-40 3.0 easeOutCubic]
+[charaMoveEase J -1650,-40 3.0 easeOutCubic]
+[charaMoveEase H -1300,-50 3.0 easeOutCubic]
+[charaMoveEase K -1000,-50 3.0 easeOutCubic]
+[charaMoveEase C -700,-50 3.0 easeOutCubic]
+[charaMoveEase D -400,-50 3.0 easeOutCubic]
+[charaMoveEase E 0,-50 3.0 easeOutCubic]
+[charaMoveEase B 400,-50 3.0 easeOutCubic]
+
+[charaMoveEase S -500,-260 3.0 easeOutCubic]
+
+[charaFadeTime K 0.4 1.0]
+[charaFadeTime C 0.4 1.0]
+[charaFadeTime D 0.4 1.0]
+[charaFadeTime E 0.4 1.0]
+[charaFadeTime B 0.4 1.0]
+[wt 0.3]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[wt 0.6]
+[charaFadeout K 0.4]
+[wt 0.6]
+[charaFadeout C 0.4]
+[wt 2.4]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.4]
+[charaFadeout B 0.4]
+[charaTalk on]
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout J 0.1]
+[charaFadeout S 0.1]
+[wt 0.1]
+[charaDepth A 2]
+
+[charaDepth M 5]
+[charaDepth N 3]
+[charaDepth O 2]
+[charaDepth P 5]
+[charaDepth Q 4]
+
+[charaTalk M]
+[charaFace M 5]
+[charaFace N 1]
+[charaFace O 4]
+[charaFace P 10]
+[charaFace Q 8]
+[charaFadein M 0.1 1]
+[charaFadeinFSR N 0.1 200,0]
+[charaFadeinFSL O 0.1 -200,0]
+[charaFadeinFSSideR P 0.1 425,0]
+[charaFadeinFSSideL Q 0.1 -425,0]
+
+[wt 0.4]
+
+[seVolume ad5 0.6 0.5]
+[seVolume ad413 0.6 0.3]
+[seVolume ad940 0.6 0.3]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠M：古代火星人
+何ィ！　エリちゃんが一人、二人……。[r]うわあああエリちゃんが一杯だああああ！！
+[k]
+
+[charaTalk Q]
+[charaFace Q 2]
+
+＠Q：古代火星人=spot[Q]
+そうか！　エリちゃんは既に！
+[k]
+
+[charaTalk P]
+[charaFace P 2]
+
+＠P：古代火星人=spot[P]
+単性による生殖……自分のクローンを[r]生み出す技術を開発済みだったのかー！？
+[k]
+
+[charaTalk M]
+[charaFace M 2]
+
+＠M：古代火星人=spot[M]
+じゃあ、その内この[#宇宙:ユニヴァース]の全てが、[r]エリちゃんに置き換えられるかもしれないって……事か！？
+[k]
+
+[charaTalk off]
+[charaFace M 1]
+[charaFace N 1]
+[charaFace O 1]
+[charaFace P 1]
+[charaFace Q 1]
+[charaRelativeLoopMove M 2 0,6 0,0 0.2 0.3 0]
+
+＠古代火星人
+なんてこった、世紀末だーーーッ！[charaRelativeLoopMove N 2 0,5 0,0 0.3 0.2 0][wt 0.1][charaRelativeLoopMove O 2 0,6 0,0 0.2 0.2 0][wt 0.1][charaRelativeLoopMove P 2 0,5 0,0 0.3 0.3 0][wt 0.1][charaRelativeLoopMove Q 2 0,6 0,0 0.2 0.2 0][r]ヒャッホー楽しそーーーう！！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[seVolume ad5 0.6 0.2]
+[seVolume ad413 0.6 0.1]
+[seVolume ad940 0.6 0.1]
+[wait wipe]
+
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaRelativeLoopMoveStop M]
+[charaRelativeLoopMoveStop N]
+[charaRelativeLoopMoveStop O]
+[charaRelativeLoopMoveStop P]
+[charaRelativeLoopMoveStop Q]
+
+[charaTalk on]
+[charaDepth S 2]
+[charaDepth K 3]
+[charaDepth D 4]
+[charaDepth C 5]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFace K 9]
+[charaFace D 0]
+[charaFadein C 0.1 30,0]
+[charaFadein K 0.1 -370,0]
+[charaFadein D 0.1 350,0]
+
+[charaScale S 1.55]
+[charaFadein S 0.1 360,-300]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.1]
+
+＠九紋竜エリザ
+喜んでくれてうれちいのかしら！
+[k]
+
+[charaTalk K]
+
+＠メカエリチャン
+破滅的思考ですね。
+[k]
+
+[charaTalk D]
+
+＠メカエリチャンⅡ号機
+それにしても……私たちも歌うのね。
+[k]
+
+[charaTalk C]
+[charaFace C 6]
+
+＠九紋竜エリザ
+エリザベート全員集合だから、[r]ちかたないのだわ！
+[k]
+
+[charaFace C 0]
+
+＠九紋竜エリザ
+あたちもアイドルはしらないけど、[r]お歌を歌うのは大好きよ！
+[k]
+
+[charaTalk D]
+[charaFace D 1]
+
+＠メカエリチャンⅡ号機
+[line 3]では、仕方ありません。[r]歌うとしましょう。はい、そこのアナタも。
+[k]
+
+[messageOff]
+[charaDepth B 5]
+[charaDepth E 6]
+
+[charaScale B 1.0]
+
+[charaTalk E]
+[charaPut E 700,0]
+[charaPut B 1050,0]
+[charaFace E 5]
+[charaFace B 0]
+[charaFadeTime E 0 0]
+[charaFadeTime B 0 0]
+
+[charaMoveEase K -1070,0 1.0 easeInOutSine]
+[charaMoveEase C -670,0 1.0 easeInOutSine]
+[charaMoveEase D -350,0 1.0 easeInOutSine]
+[charaMoveEase S -340,-300 1.0 easeInOutSine]
+
+[charaMoveEase E 0,0 1.0 easeInOutSine]
+[charaMoveEase B 350,0 1.0 easeInOutSine]
+
+[charaFadeout K 0.4]
+[wt 0.2]
+[charaFadeout C 0.4]
+[wt 0.4]
+
+[charaFadeTime E 0.4 1.0]
+[charaFadeTime B 0.4 1.0]
+[wt 0.7]
+
+＠終わりのエリザベート
+……わ、私も？　歌なんて初めてなのですが……。[r]あ、宗教的な唱歌は別として。
+[k]
+
+[charaTalk B]
+[charaFace B 14]
+[charaEffect B bit_talk_sing_notes]
+
+＠エリザベート（シンデレラ）
+心の赴くままに～歌えば～大体大丈夫～♪[r]歌詞はこれね～♪
+[k]
+
+[messageOff]
+[charaEffectStop B bit_talk_sing_notes]
+[se ade96]
+[charaMoveReturn B 343,0 0.6]
+[wt 1.4]
+
+[charaTalk E]
+[charaFace E 5]
+
+＠終わりのエリザベート
+はぁ……。
+[k]
+
+[charaFace E 0]
+
+＠終わりのエリザベート
+……。[r]……。
+[k]
+
+[charaDepth X 6]
+[charaDepth E 7]
+
+[charaPut X 1]
+[charaFadeTime X 0.2 0.5]
+
+[charaFace E 10]
+
+＠終わりのエリザベート
+（歌詞が結構恥ずかしいのでは……？）
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[seStop ad5 0.7]
+[seStop ad413 0.7]
+[seStop ad940 0.7]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[charaFadeout X 0.1]
+[charaFadeout D 0.1]
+[charaFadeout S 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠モレー
+……さて、と。マスター、耳栓いる？
+[k]
+
+？1：……今日くらいはがっつり聴こうかなって
+？！
+
+[charaFace F 8]
+
+＠モレー
+さすが。[r]でも、一つだけ忠告いいかな？
+[k]
+
+[charaFace F 14]
+
+＠モレー
+今、エリちゃんって九人いるじゃない？[r]カーミラは除いてさ。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[subCameraOn 2]
+
+[charaLayer A sub #A]
+[charaLayer S sub #A]
+
+[charaLayer G sub #B]
+[charaLayer K sub #B]
+[charaLayer C sub #B]
+[charaLayer J sub #B]
+[charaLayer T sub #B]
+[charaLayer U sub #B]
+
+[subCameraFilter #A normal]
+[subCameraFilter #B maskEdge cut359_mask25 5 255,255,255,255]
+
+[subRenderDepth #A 3]
+[subRenderDepth #B 2]
+
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.0]
+
+[charaScale A 1.2]
+[charaScale S 1.2]
+
+[charaDepth S 2]
+[charaDepth A 3]
+
+[charaFace A 9]
+[charaFadein A 0 -15,0]
+[charaFadein S 0 -15,-260]
+
+[charaScale G 1.2]
+[charaScale K 1.2]
+[charaScale C 1.2]
+[charaScale J 1.2]
+[charaScale T 1.2]
+
+[charaDepth T 2]
+[charaDepth G 3]
+
+[charaFace G 0]
+[charaFadeinFSL G 0 -40,220]
+[charaFadein T 0 300,-5]
+
+[subRenderFadein #A 0.5 0,0]
+[charaMove A 15,0 4.5]
+[charaMove S 15,-260 4.5]
+[wt 0.5]
+
+[subRenderFadein #B 0.1 -210,-250]
+
+[charaDepth V 2]
+[charaDepth H 3]
+
+[charaScale V 1.2]
+[charaScale H 1.2]
+
+[charaFace H 0]
+[charaFadeinFSR H 0.1 280,5]
+[charaFadein V 0.1 -90,-255]
+[charaFadeout F 0.1]
+[wt 2.0]
+
+[subRenderFadeout #A 0.5]
+
+[charaMoveFSR H 280,-25 4.5]
+[charaMove V -90,-285 4.5]
+
+[charaMoveFSL G -40,250 4.5]
+[charaMove T 300,25 4.5]
+
+[wt 2.5]
+
+[charaDepth U 4]
+[charaDepth K 5]
+
+[charaScale U 1.2]
+[charaScale K 1.2]
+
+[charaFace K 6]
+[charaFadeinFSL K 0.5 -50,260]
+[charaFadein U 0.5 300,35]
+
+[charaDepth W 4]
+[charaDepth D 5]
+
+[charaScale W 1.2]
+[charaScale D 1.2]
+
+[charaFace D 1]
+[charaFadeinFSR D 0.5 280,-35]
+[charaFadein W 0.5 -90,-295]
+
+[charaMoveFSR D 280,-5 4.5]
+[charaMove W -90,-265 4.5]
+
+[charaMoveFSL K -50,230 4.5]
+[charaMove U 300,5 4.5]
+
+[wt 0.5]
+[charaFadeout G 0.1]
+[charaFadeout T 0.1]
+[charaFadeout H 0.1]
+[charaFadeout V 0.1]
+
+[wt 2.0]
+
+[charaDepth T 6]
+[charaDepth C 7]
+
+[charaScale T 1.2]
+[charaScale C 1.2]
+
+[charaFace C 0]
+[charaFadeinFSL C 0.5 0,210]
+[charaFadein T 0.5 300,-5]
+
+[charaDepth V 6]
+[charaDepth B 7]
+
+[charaScale V 1.2]
+[charaScale B 1.2]
+
+[charaFace B 0]
+[charaFadeinFSR B 0.5 260,5]
+[charaFadein V 0.5 -90,-255]
+
+[charaMoveFSR B 260,-25 4.5]
+[charaMove V -90,-285 4.5]
+
+[charaMoveFSL C 0,240 4.5]
+[charaMove T 300,25 4.5]
+
+[wt 0.5]
+
+[charaFadeout K 0.1]
+[charaFadeout U 0.1]
+[charaFadeout D 0.1]
+[charaFadeout W 0.1]
+
+[wt 2.0]
+
+[charaDepth U 8]
+[charaDepth J 9]
+
+[charaScale U 1.2]
+[charaScale J 1.2]
+
+[charaFace J 0]
+[charaFadeinFSL J 0.5 -60,260]
+[charaFadein U 0.5 300,35]
+
+[charaDepth W 8]
+[charaDepth E 9]
+
+[charaScale W 1.2]
+[charaScale E 1.2]
+
+[charaFace E 1]
+[charaFadeinFSR E 0.5 260,-35]
+[charaFadein W 0.5 -90,-295]
+
+[charaMoveFSL J -60,230 4.5]
+[charaMove U 300,5 4.5]
+
+[charaMoveFSR E 260,-5 4.5]
+[charaMove W -90,-265 4.5]
+
+[wt 0.5]
+
+[charaFadeout C 0.1]
+[charaFadeout T 0.1]
+[charaFadeout B 0.1]
+[charaFadeout V 0.1]
+
+[charaLayer F sub #A]
+
+[charaDepth S 2]
+[charaDepth F 3]
+
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+[charaScale S 1.0]
+[charaPut S 0,-200]
+[charaFadeout A 0.1]
+
+[wt 2.0]
+
+[subRenderFadein #A 0.5 0,0]
+[wt 0.5]
+
+[charaFadeout E 0]
+[charaFadeout W 0]
+
+[subRenderFadeout #B 0.1]
+
+[charaFadeout J 0]
+[charaFadeout U 0]
+[wt 0.15]
+
+[charaLayer G normal]
+[charaLayer K normal]
+[charaLayer C normal]
+[charaLayer J normal]
+[charaLayer T normal]
+[charaLayer U normal]
+
+[charaScale G 1.0]
+[charaScale K 1.0]
+[charaScale C 1.0]
+[charaScale J 1.0]
+[charaScale T 1.0]
+[charaScale U 1.0]
+[wt 0.05]
+
+[charaTalk on]
+
+＠モレー
+あの子が使う宝具の一つ、『[#竜鳴雷声:キレンツ・サカーニィ]』の[r]キレンツって『[#９]』の意味なんよ。
+[k]
+
+＠モレー
+一人で歌うときは声量を９の９倍に増幅すると[r]言われているそれが[line 3]
+[k]
+
+[charaFace F 10]
+
+＠モレー
+今、[#九人になったことで]９の９倍の９倍[r]ということになるでしょ？
+[k]
+
+＠モレー
+つまり[line 3][#ジャックポット]。
+[k]
+
+[charaFace F 14]
+
+＠モレー
+魔術的に[#意味]が生じる偶然じゃない、これ？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+
+[charaFadeout F 0]
+[charaFadeout A 0]
+[charaFadeout S 0]
+
+[subCameraOff]
+[charaLayer F normal]
+[charaLayer A normal]
+[charaLayer S normal]
+[charaScale F 1.0]
+[charaScale A 1.0]
+[charaScale S 1.0]
+[wt 0.2]
+
+[charaSet R 3062000 1 エリザベート（演出用）]
+
+[se ad5]
+[seVolume ad5 0 0]
+[se ad413]
+[seVolume ad413 0 0]
+[se ad940]
+[seVolume ad940 0 0]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+[seVolume ad5 0.6 0.5]
+[seVolume ad413 0.6 0.3]
+[seVolume ad940 0.6 0.3]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠エリザベート
+それじゃ、ブタども！　じゃなくてタコども！[r]まずは一曲行くわよ！
+[k]
+
+[messageOff]
+[charaDepth A 2]
+[charaDepth S 3]
+[charaDepth R 4]
+
+[charaScale R 1.2]
+[charaScale S 1.2]
+
+[charaTalk A,R]
+[charaFace R 10]
+[charaFadein R 0.5 0,0]
+[charaFadein S 0.5 0,-300]
+[wt 0.5]
+[charaFadeout A 0.1]
+[wt 0.15]
+
+＠R：エリザベート
+一曲目はもちろん[line 3]恋はドラクル・パンクver！
+[k]
+
+
+[messageOff]
+[se ad6]
+[seVolume ad6 0 0]
+[cueSe SE_24 24_ade1077]
+[cueSeVolume 24_ade1077 0 0]
+[wt 0.1]
+
+[seVolume ad6 0.3 0.8]
+[cueSeVolume 24_ade1077 0.3 0.8]
+[wt 2.0]
+
+[subCameraOn 1]
+
+[charaLayer F sub #A]
+[charaLayer T sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask05 4 255,255,255,255]
+
+[subRenderDepth #A 1]
+
+[subRenderScale #A 1.0]
+
+[charaScale F 1.4]
+[charaScale T 1.4]
+
+[charaDepth T 2]
+[charaDepth F 3]
+
+[charaTalk F]
+[charaFace F 27]
+[charaFadein F 0 -20,280]
+[charaFadein T 0 -200,30]
+
+[subRenderFadeinFSR #A 0.3 350,-250]
+[charaMoveEase F -20,250 0.4 easeOutCubic]
+[charaMoveEase T -200,0 0.4 easeOutCubic]
+[wt 0.5]
+
+＠モレー
+来る……！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[charaMoveEase F -20,220 0.4 easeOutCubic]
+[charaMoveEase T -200,-30 0.4 easeOutCubic]
+[wt 0.3]
+
+[charaFadeout F 0]
+[charaFadeout T 0]
+[wt 0.15]
+
+[subCameraOff]
+[charaLayer F normal]
+[charaLayer T normal]
+[charaScale F 1.0]
+[charaScale T 1.0]
+[wt 0.1]
+
+[charaTalk R]
+[se ad980]
+[wt 0.1]
+
+[seStop ad6 0.8]
+[cueSeStop 24_ade1077 0.8]
+[bgmStop BGM_EVENT_13 0.8]
+[seStop ad5 0.8]
+[seStop ad413 0.8]
+[seStop ad940 0.8]
+
+[blur motion 0.2 4 200 0.5 0.55 0.03 200]
+[charaMoveScaleEase R 1.45 0.3 easeOutCubic]
+[charaMoveScaleEase S 1.4 0.3 easeOutCubic]
+[charaMoveEase R 0,10 0.3 easeOutCubic]
+[charaMoveEase S 0,-400 0.3 easeOutCubic]
+
+[wt 1.0]
+
+[se ad805]
+[fowardEffect bit_talk_voice01]
+[fowardEffect bit_talk_voice02]
+[fowardEffect bit_talk_gust01]
+
+[wt 1.0]
+
+[messageOff]
+[fadeout white 0.6]
+[wait fade]
+
+[wt 2.5]
+[seStop ad805 2.0]
+
+[blurOff motion 0.1]
+[fowardEffectDestroy bit_talk_voice01]
+[fowardEffectDestroy bit_talk_voice02]
+[fowardEffectDestroy bit_talk_gust01]
+
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+[wt 2.0]
+
+[charaSet G 25010001 1 モレー（演出用）]
+[sceneSet T 10000 1]
+[charaScale T 1.05]
+[sceneSet U 10000 1]
+[charaScale U 1.05]
+[wt 0.5]
+
+[scene 10000]
+
+[subCameraOn 2]
+
+[charaLayer Y sub #A]
+[charaLayer G sub #A]
+[charaLayer X sub #A]
+
+[charaLayer T sub #A]
+[charaLayer U sub #A]
+
+[subCameraFilter #A normal]
+
+[subRenderDepth #A 1]
+
+[subRenderScale #A 1.01]
+
+[charaScale Y 1.0]
+[charaScale G 1.0]
+[charaScale X 1.2]
+
+[charaDepth X 2]
+[charaDepth G 3]
+[charaDepth Y 4]
+
+[charaPut Y 1]
+[charaEffect Y bit_talk_spotlight]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0 0,0]
+[charaFadein X 0 0,0]
+
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 1.0]
+
+＠
+[line 3]後にモレーは語る。
+[k]
+
+[messageOff]
+[subRenderFadein #A 0.7 0,0]
+[wt 1.1]
+
+＠G：モレー
+歌声で人が吹き飛ぶって有り得るんだね。[r]初めて見たわ。
+[k]
+
+[charaFace G 25]
+
+＠G：モレー
+あと、カ星を通り越して地球まで響いたのは、[r]まあそういう事もあるかなって思ったけど[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+
+[charaFadeout G 0]
+[charaFadeout X 0]
+[charaPut Y 2000,2500]
+[charaEffectDestroy Y bit_talk_spotlight]
+
+[charaLayer X normal]
+[charaLayer Y normal]
+[charaScale Y 1.0]
+[charaScale X 1.0]
+[wt 0.5]
+
+[charaSet E 1098337300 1 終わりのエリザベート]
+[charaSet H 1098257300 1 ダ・ヴィンチ]
+[charaSet I 1098255100 1 ゴルドルフ]
+[charaSet J 1005001 1 ネロ]
+[charaSet Z 1005001 1 ネロ（演出用）]
+[charaSet B 1098255100 1 ゴルドルフ（演出用）]
+
+[charaSet L 1098337610 1 古代火星人1]
+[charaSet M 1098337610 1 古代火星人2]
+[charaSet N 1098337610 1 古代火星人3]
+
+[sceneSet C 132900 1]
+
+[charaSet X 98115000 1 エフェクト用]
+
+[sceneSet O 10000 1]
+[charaScale O 1.1]
+
+
+[charaLayer B sub #B]
+[charaLayer C sub #B]
+[charaLayer T sub #A]
+[charaLayer U sub #A]
+
+[subCameraFilter #A through]
+[subCameraFilter #B gray]
+
+[subRenderDepth #A 2]
+[subRenderDepth #B 1]
+
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+
+[charaDepth T 2]
+[charaDepth U 2]
+[charaDepth G 3]
+
+[charaDepth B 2]
+[charaDepth C 1]
+[charaFace B 6]
+[charaFadein B 0 0,-57]
+[charaFadein C 0 0,-200]
+
+[charaFadein T 0.1 0,-757]
+[charaFadein U 0.1 0,757]
+
+
+[subRenderFadein #A 0.1 0,0]
+
+[charaPut X 2000,2500]
+[charaEffect X bit_sepia01_depth_fs]
+
+[wt 0.5]
+
+
+[scene 132900]
+
+[fadein black 1.0]
+[wait fade]
+
+？1：ただいま～
+？！
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.4 0,-50]
+[wt 0.4]
+
+＠ゴルドルフ
+……。[r]……。
+[k]
+
+[bgm BGM_EVENT_146 0.1]
+
+？1：えーーー！？
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaScale F 1.0]
+[charaTalk F]
+[charaFace F 27]
+[charaFadein F 0.1 0,-50]
+
+＠モレー
+ゴッフさーーーん？！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 0,-50]
+
+＠ゴルドルフ
+て、敵襲……。[r]我々が君たちを捜していると……。
+[k]
+
+[charaFace I 6]
+
+＠ゴルドルフ
+どこからともなく、とんでもない超音波が[r]届いて……全滅した……[wt 0.8][charaShake I 0.01 1 1 0.2][charaMoveEase I 0,-57 0.3 easeOutCubic]がくり。
+[k]
+
+[messageOff]
+[subRenderFadein #B 0.7 0,0]
+[wt 1.4]
+[charaScale G 0.8]
+[charaTalk G]
+[charaFace G 16]
+[charaFadeinFSSideR G 0.4 325,-175]
+[wt 0.6]
+
+＠G：モレー
+ストーム・ボーダーまで届くとか、[r]そんなのあり？
+[k]
+
+[charaFace G 4]
+＠G：モレー
+もちろんカ星のライブは大盛り上がりだったけど……。[r]タコと雀が舞い踊っていたけど……。
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[wt 0.1]
+[fadeout white 0.7]
+[bgm BGM_EVENT_146 0.7 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaLayer B normal]
+[charaLayer C normal]
+[subRenderFadeout #B 0.1]
+
+[charaFadeout I 0.1]
+[charaFadeout G 0.1]
+
+[se ad5]
+[seVolume ad5 0 0]
+[se ad413]
+[seVolume ad413 0 0]
+[se ad940]
+[seVolume ad940 0 0]
+[se ad162]
+[seVolume ad162 0 0]
+
+[wt 0.4]
+
+[charaSet P 1098161000 1 雀（都市）]
+[charaSet Q 1098161100 1 雀（変成）]
+[charaSet S 1098161300 1 雀（五官）]
+[charaSet K 1098161400 1 雀（初江）]
+
+[scene 265400]
+
+[charaDepth X 10]
+[charaPut X 1]
+
+
+[charaTalk off]
+[charaDepth L 2]
+[charaDepth M 3]
+[charaDepth N 4]
+[charaDepth P 5]
+[charaDepth Q 6]
+[charaDepth S 7]
+
+[charaFace L 1]
+[charaFadein L 0.1 -600,-1000]
+
+[charaFace M 10]
+[charaFadein M 0.1 1000,-300]
+
+[charaFace N 10]
+[charaFadein N 0.1 1000,140]
+
+[charaFace P 0]
+[charaFadein P 0.1 100,-700]
+
+[charaFace Q 0]
+[charaFadein Q 0.1 900,400]
+
+[charaFace S 0]
+[charaFadein S 0.1 -900,-400]
+
+[charaFace K 0]
+[charaFadein K 0.1 -400,700]
+
+[charaRollMoveEx P 300 32000 0,275]
+[charaRollMoveEx Q 300 -32000 0,275]
+[charaRollMoveEx S 300 32000 0,275]
+[charaRollMoveEx K 300 -32000 0,275]
+
+[charaScale L 0.7]
+[charaScale M 0.7]
+[charaScale N 0.7]
+[charaRelativeLoopMove L 3 500,1140 1500,-900 0,0 1.5 2.0 0.5 0]
+[charaRelativeLoopMove M 3 -500,100 -1000,-400 0,-100 0.5 0.5 0.5 0]
+[charaRelativeLoopMove N 3 -2000,-440 -1500,-700 0,0 2.0 0.5 1.5 0]
+[charaRollAxis L z 360 4 1 0]
+[charaRollAxis M z 360 4 1 0]
+[charaRollAxis N z 360 4 1 0]
+
+[charaRelativeLoopMove P 3 -200,1400 -900,700 0,0 1.4 1.4 1.0 0]
+[charaRelativeLoopMove Q 3 -200,-700 -1300,800 0,0 1.5 2.0 1.2 0]
+[charaRelativeLoopMove S 3 200,700 1300,-800 0,0 1.0 1.5 0.5 0]
+[charaRelativeLoopMove K 3 100,-1400 1000,-100 0,0 1.5 1.5 0.8 0]
+[wt 0.4]
+
+[seVolume ad5 0.6 0.3]
+[seVolume ad413 0.6 0.3]
+[seVolume ad940 0.6 0.3]
+[seVolume ad162 0.6 0.3]
+
+[fadein white 0.7]
+[wait fade]
+
+[wt 2.4]
+
+[seVolume ad5 0.6 0.1]
+[seVolume ad413 0.6 0.1]
+[seVolume ad940 0.6 0.1]
+[seVolume ad162 0.6 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 8]
+[charaFadeinFSSideR G 0.4 325,-175]
+[wt 0.6]
+
+＠G：モレー
+ま、済んだことは済んだこと。[r]前向きに行こう！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_146 1.0]
+
+[seStop ad5 1.0]
+[seStop ad413 1.0]
+[seStop ad940 1.0]
+[seStop ad162 1.0]
+
+[wait fade]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout S 0.1]
+[charaFadeout K 0.1]
+
+[charaRelativeLoopMoveStop L]
+[charaRelativeLoopMoveStop M]
+[charaRelativeLoopMoveStop N]
+[charaRelativeLoopMoveStop P]
+[charaRelativeLoopMoveStop Q]
+[charaRelativeLoopMoveStop S]
+[charaRelativeLoopMoveStop K]
+[charaRoll P 0]
+[charaRoll Q 0]
+[charaRoll S 0]
+[charaRoll K 0]
+
+[charaPut X 2000,2500]
+[charaEffectDestroy X bit_sepia01_depth_fs]
+
+
+[subRenderFadeout #A 0.1]
+
+[charaFadeout G 0]
+[charaFadeout T 0]
+[charaFadeout U 0]
+
+[subCameraOff]
+[charaLayer T normal]
+[charaLayer U normal]
+[charaLayer G normal]
+[charaScale T 1.0]
+[charaScale U 1.0]
+[charaScale G 1.0]
+[wt 0.5]
+
+[charaSet K 1098337310 1 終わりのエリザベート（演出用）]
+[sceneSet V 132900 1]
+[sceneSet W 132900 1]
+[sceneSet Y 132900 1]
+
+[scene 132900]
+
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+[wt 0.7]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_77 0.1]
+
+？1：という訳で報告は異常、いえ以上です
+？！
+
+[charaFace I 8]
+
+＠ゴルドルフ
+気持ちはわかるけど誤字。
+[k]
+
+＠ゴルドルフ
+そっかー……何だかよくわからないけど、[r]奮闘したんだな……うん……。
+[k]
+
+[charaFace I 9]
+
+＠ゴルドルフ
+……それでこちらが？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.15]
+
+[se ade422]
+
+[charaScale E 1.0]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+[seStop ade422 0.2]
+[wt 0.8]
+
+？1：こちら新しいエリちゃんです
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 25]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+また！？　またなの！？[r]もー、ライブラリの更新も大変なんだよー！
+[k]
+
+[charaFace H 34]
+
+＠ダ・ヴィンチ
+エリザベートは全部紐付けなきゃいけないしさー。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠終わりのエリザベート
+私のようなサーヴァントに何が務まるか[r]わかりませんが……。
+[k]
+
+[charaCrossFade E 1098337310 1 0.3]
+
+＠終わりのエリザベート
+よろしくお願いしますね、皆様。[wait charaCrossFade E]
+[k]
+
+[messageOff]
+[cueSe SE_25 25_ade1173]
+[wt 1.6]
+
+[cueSeStop 25_ade1173 0.6]
+[wt 0.8]
+
+？1：それじゃ終わりのエリザベート
+？2：改めてよろしく！
+？！
+
+[charaFace E 5]
+
+＠終わりのエリザベート
+はい。でも、あの……本当にいいんですか？
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,7 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 1.1]
+
+[charaFace E 2]
+[wt 1.0]
+
+[charaFace E 3]
+
+＠終わりのエリザベート
+……ありがとう！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠メカエリチャンⅡ号機
+では早速ストーム・ボーダーを案内するわ。[r]こちらへどうぞ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠終わりのエリザベート
+よ、よろしくお願いします……。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaDepth E 2]
+[charaDepth V 3]
+[charaDepth D 4]
+[charaDepth K 5]
+
+[charaScale V 1.2]
+[charaScale K 1.1]
+[charaScale D 1.1]
+
+[charaFace K 6]
+[charaFace D 1]
+[charaFadein K 0.5 -250,0]
+[charaFadein D 0.5 250,0]
+[charaFadein V 0.5 0,-260]
+[wt 0.5]
+
+[charaFadeout E 0.1]
+[wt 0.4]
+
+[se ade422]
+[wt 0.1]
+[cueSe SE_23 23_ad1303]
+
+[charaMove K -200,0 0.4]
+[charaMove D 300,0 0.4]
+[charaFadeout K 0.4]
+[charaFadeout D 0.4]
+[seStop ade422 1.0]
+[cueSeStop 23_ad1303 1.0]
+[wt 1.4]
+
+[se ad8]
+[wt 2.4]
+
+[bgmStop BGM_EVENT_77 1.5]
+
+[se ad59]
+[seVolume ad59 0 0]
+[wt 0.1]
+
+[seVolume ad59 0.8 1.0]
+[wt 1.2]
+
+[seStop ad59 0.6]
+[se ad671]
+
+[charaDepth J 4]
+[charaTalk J]
+[charaFace J 5]
+[charaFadein J 0.3 200,0]
+[charaMoveEase J 0,0 0.8 easeOutCubic]
+[charaShake J 0.02 2 2 0.6]
+[wt 0.3]
+[seStop ad671 0.6]
+[wt 0.6]
+
+[charaDepth I 2]
+[charaFace I 14]
+[charaFadein I 0.1 1]
+[wt 0.3]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+＠ネロ
+余、聞いたぞ！[r]エリザベートが遂に九人目に到達したそうだな！
+[k]
+
+[charaFace J 4]
+
+＠ネロ
+うぬぬぬぬ……またもや差が開いたではないか……。
+[k]
+
+＠ネロ
+いくら歌唱力で互角といっても、[r]人数差はいかんともしがたい……。
+[k]
+
+[charaFace J 1]
+
+＠ネロ
+そこで閃いたのだが。
+[k]
+
+？1：何を閃いたの？
+？！
+
+[se ad186]
+[charaMoveScaleEase J 1.2 0.25 easeOutCubic]
+[charaMoveScaleEase V 1.35 0.25 easeOutCubic]
+[charaMoveEase J 0,0 0.25 easeOutCubic]
+[charaMoveEase V 0,-335 0.25 easeOutCubic]
+
+[charaFace J 2]
+
+＠ネロ
+[f large]余も増えたい！
+[k]
+
+[messageOff]
+[charaTalk I,J]
+[charaFadeout J 0.4]
+[charaFadeout V 0.4]
+[wt 0.5]
+
+＠ゴルドルフ
+ダ[messageShake 0.03 3 3 0.3]メーーー！！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+ふっ。それでこそ我が[#好敵手:ラ イ バ ル]ね。[wt 0.7][charaFace A 8][r]いいわ、どんどん増えなさいネロ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale J 1.0]
+[charaTalk J]
+[charaFace J 8]
+[charaFadein J 0.1 1]
+
+＠ネロ
+うむ！　[wt 0.6][charaFace J 7]それでどうやれば増えるのだ！？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+え、それは知らないわよ。気付いたら増えるんだもの。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth A 2]
+[charaDepth J 3]
+[charaDepth X 4]
+[charaDepth V 5]
+[charaDepth Z 6]
+[charaDepth W 7]
+[charaDepth R 8]
+
+[charaScale Z 1.2]
+[charaScale V 1.2]
+
+[charaFace Z 0]
+[charaFadein Z 0.5 200,0]
+[charaFadein V 0.5 -50,-260]
+[charaMoveEase Z 150,0 0.5 easeOutSine]
+[charaMoveEase V -100,-260 0.5 easeOutSine]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.15]
+
+＠ネロ
+……。[wt 0.8][charaFace Z 2][r]……ずるいではないかーーー！
+[k]
+
+[messageOff]
+
+[charaScale R 1.2]
+[charaScale W 1.2]
+
+[charaFace R 11]
+[charaFadein R 0.5 -200,0]
+[charaFadein W 0.5 50,-260]
+[charaMoveEase R -150,0 0.5 easeOutSine]
+[charaMoveEase W 100,-260 0.5 easeOutSine]
+[wt 0.5]
+
+[cueSe SE_21 21_ade627]
+[cueSeVolume 21_ade627 0 0]
+[charaFace A 3]
+[charaFace J 5]
+[charaFadein A 0.1 -200,0]
+[charaFadein J 0.1 200,0]
+
+[charaFadeout Z 0.1]
+[charaFadeout V 0.1]
+[wt 0.15]
+
+＠エリザベート
+ずるくないわよーーー！？
+[k]
+
+[messageOff]
+
+[charaFadeTime R 0.4 0]
+[charaFadeTime W 0.4 0]
+
+[cueSeVolume 21_ade627 0.6 0.6]
+
+[charaPut X 1]
+[charaEffect X bit_talk_magical_pon]
+[charaMoveReturn A -185,0 0.35]
+[charaMoveReturn J 185,0 0.35]
+
+[wt 0.35]
+[charaEffect X bit_talk_magical_pon 75,-75]
+
+[charaMoveReturn A -185,0 0.35]
+[charaMoveReturn J 185,0 0.35]
+[wt 0.35]
+[charaPut X 1]
+[charaEffect X bit_talk_magical_pon]
+[wt 0.35]
+
+[charaEffect X bit_talk_magical_pon -75,75]
+[charaMoveReturn A -185,0 0.35]
+[charaMoveReturn J 185,0 0.35]
+[wt 0.35]
+[charaPut X 1]
+[charaEffect X bit_talk_magical_pon]
+
+[charaMoveReturn A -185,0 0.35]
+[charaMoveReturn J 185,0 0.35]
+[wt 0.35]
+[charaEffect X bit_talk_magical_pon -75,-75]
+[wt 0.35]
+
+[charaPut X 1]
+[charaEffect X bit_talk_magical_pon]
+[charaMoveReturn A -185,0 0.35]
+[charaMoveReturn J 185,0 0.35]
+[wt 0.35]
+[charaEffect X bit_talk_magical_pon 75,75]
+
+[charaMoveReturn A -185,0 0.35]
+[charaMoveReturn J 185,0 0.35]
+[wt 0.35]
+[charaPut X 1]
+[charaEffect X bit_talk_magical_pon]
+[wt 0.35]
+
+[charaEffect X bit_talk_magical_pon 75,-75]
+[charaMoveReturn A -185,0 0.35]
+[charaMoveReturn J 185,0 0.35]
+[wt 0.35]
+[charaPut X 1]
+[charaEffect X bit_talk_magical_pon]
+
+[charaMoveReturn A -185,0 0.35]
+[charaMoveReturn J 185,0 0.35]
+[wt 0.35]
+
+[charaEffect X bit_talk_magical_pon -75,75]
+[wt 0.35]
+
+[fadeout black 1.5]
+
+[cueSeStop 21_ade627 1.5]
+[bgmStop BGM_HALLOWEEN_2021_1 2.5]
+
+[charaPut X 1]
+[charaEffect X bit_talk_magical_pon]
+[charaMoveReturn A -185,0 0.35]
+[charaMoveReturn J 185,0 0.35]
+[wt 0.35]
+[charaEffect X bit_talk_magical_pon -75,-75]
+
+[charaMoveReturn A -185,0 0.35]
+[charaMoveReturn J 185,0 0.35]
+[wt 0.35]
+
+[charaPut X 1]
+[charaEffect X bit_talk_magical_pon]
+[wt 0.35]
+
+[charaEffect X bit_talk_magical_pon 75,75]
+[charaMoveReturn A -185,0 0.35]
+[charaMoveReturn J 185,0 0.35]
+[wt 0.35]
+
+[charaPut X 1]
+[charaEffect X bit_talk_magical_pon]
+
+[charaMoveReturn A -185,0 0.35]
+[charaMoveReturn J 185,0 0.35]
+
+[wait fade]
+
+[charaPut X 2000,2500]
+[charaEffectDestroy X bit_talk_magical_pon]
+
+[charaFadeout R 0.1]
+[charaFadeout W 0.1]
+[charaFadeout A 0.1]
+[charaFadeout J 0.1]
+[wt 0.5]
+
+[charaSet J 6031001 1 刑部姫]
+[imageSet U cut757_telop 1]
+[charaSet K 6031001 1 刑部姫]
+[sceneSet O 134500 1]
+[charaSet M 98115000 1 エフェクト用]
+[sceneSet P 265310 1]
+[sceneSet Q 265311 1]
+
+[charaSet A 98115000 1 エフェクト用]
+[imageSet B cut757_telop 1]
+
+[charaScale P 1.4]
+[charaScale Q 1.4]
+
+[charaDepth J 1]
+[charaDepth P 2]
+[charaDepth Q 3]
+
+[scene 134500]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk on]
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.4 1]
+[wt 0.6]
+[bgm BGM_EVENT_27 0.1 0.6]
+
+
+＠刑部姫
+……。[r]……。
+[k]
+
+[messageOff]
+
+[charaFadein P 0.5 130,-300]
+[wt 0.8]
+
+[charaFadeout J 0.1]
+
+[subCameraOn 2]
+
+[charaLayer J sub #A]
+[charaLayer O sub #A]
+[charaLayer A sub #A]
+[charaLayer B sub #A]
+
+[subCameraFilter #A mask cut359_mask16]
+
+[subRenderScale #A 1.0]
+
+[charaScale J 1.2]
+[charaScale O 1.2]
+
+[charaDepth O 2]
+[charaDepth J 3]
+[charaDepth A 4]
+[charaDepth B 5]
+
+[charaTalk J]
+[charaFace J 8]
+[charaFadein J 0 20,240]
+[charaFadein O 0 0,100]
+
+[wt 0.3]
+
+[cueSe SE_22 22_ade725]
+[charaFadein Q 0.5 130,-300]
+[wt 0.7]
+
+
+[subRenderFadeinFSR #A 0.3 400,-270]
+[subRenderMoveEase #A 300,-270 0.6 easeOutSine]
+[wt 0.8]
+
+＠刑部姫
+城[messageShake 0.03 2 2 0.2]！[wt 0.8][messageShake 0.03 2 2 0.7][r]どっかいっちゃったままなんですけどー！？
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_27 1.0]
+
+
+
+
+
+
+
+[charaScale M 1.0]
+[charaPut M 355,80]
+[charaEffect M bit_talk_irisout]
+
+[charaPut A 33,375]
+[charaEffect A bit_talk_irisout]
+
+[wt 0.3]
+[cueSe SE_21 21_ade637]
+[wt 1.7]
+
+
+
+
+
+[se ade178]
+[charaScale B 0.9]
+[overlayFadein B 0.4 -250,220]
+
+[wt 1.8]
+[charaEffectStop A bit_talk_irisout]
+
+[charaFadeout U 0.3]
+[cueSe SE_21 21_ade638]
+[wt 1.0]
+
+
+
+[fadeout black 0.5]
+[wait fade]
+[wt 2.5]
+[soundStopAll]
+[end]

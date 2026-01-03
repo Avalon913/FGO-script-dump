@@ -1,0 +1,976 @@
+
+＄94-13-89-00-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 23005001 1 アルクェイド]
+[charaSet B 23005001 1 アルクェイド演出用]
+[charaSet C 23009000 1 謎の代行者C.I.E.L]
+[charaSet D 23009000 1 謎の代行者C.I.E.L演出用]
+[charaSet E 23009000 1 謎の代行者C.I.E.L（シルエット）]
+[charaFilter E silhouette 00000080]
+[charaSet F 3026000 1 ジャンヌ・オルタ・サンタ・リリィ]
+[charaSet G 1098257300 1 ダ・ヴィンチ]
+
+[masterBranch _Male _Female]
+[label _Male]
+[charaSet H 1098259460 1 主人公（男）]
+[charaSet I 1098259460 1 主人公（男）シルエット]
+[charaFilter I silhouette 00000080]
+[branch master_end]
+[label _Female]
+[charaSet H 1098259470 1 主人公（女）]
+[charaSet I 1098259470 1 主人公（女）シルエット]
+[charaFilter I silhouette 00000080]
+[label master_end]
+[charaSet J 1098257800 1 マシュ]
+[charaSet K 1098257800 1 マシュ（シルエット）]
+[charaFilter K silhouette 00000080]
+
+[imageSet L back10000 1 1]
+[charaScale L 1.01]
+[imageSet M back10000 1 1]
+[charaScale M 1.01]
+
+[sceneSet N 10000 1]
+[charaScale N 1.1]
+[sceneSet O 10000 1]
+[charaScale O 1.1]
+[sceneSet P 203800 1]
+[charaScale P 1.1]
+[sceneSet Q 132900 1]
+[charaScale Q 1.3]
+[sceneSet R 132900 1]
+[charaScale R 1.5]
+[sceneSet S 68100 1]
+[charaScale S 1.5]
+[charaSet T 98115000 1 エフェクト用1]
+[charaSet U 98115000 1 エフェクト用2]
+
+[charaPut T 2000,2500]
+[charaEffect T bit_sepia01_fade_fs]
+
+[scene 203800]
+
+[pictureFrameTop cut063_cinema]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth P 1]
+[charaDepth A 2]
+
+[se ad95]
+[seVolume ad95 0 0]
+[seVolume ad95 0.7 1.0]
+[charaFadein P 0.8 50,-230]
+[charaMoveEase P 80,-255 1.8 easeOutSine]
+[charaMoveScaleEase P 1.2 1.8 easeOutSine]
+[wt 2.0]
+[seStop ad95 0.4]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.4 0,-50]
+[wt 0.8]
+
+
+
+＠アルクェイド
+んむむむむ……。[r]むむむむむ……。
+[k]
+
+[messageOff]
+[charaMove P -120,-255 1.4]
+[charaMove A -200,-50 1.4]
+[wt 0.8]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_147 2.0]
+[wait wipe]
+
+[charaFadeout P 0.1]
+[charaFadeout A 0.1]
+
+[pictureFrameTop]
+
+[scene 132900]
+
+[se ad413]
+[seVolume ad413 0 0]
+[wt 0.8]
+
+[seVolume ad413 1.0 0.6]
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.7]
+
+[charaTalk off]
+[charaDepth C 2]
+[charaDepth R 3]
+[charaDepth G 5]
+[charaDepth F 4]
+[charaDepth D 6]
+[charaDepth H 7]
+[charaDepth J 8]
+
+[charaScale R 1.1]
+[charaFadein R 0.8 20,-230]
+
+[charaScale D 1.1]
+[charaScale G 1.1]
+[charaScale J 1.1]
+[charaScale F 1.1]
+[charaScale H 1.1]
+[charaFace D 0]
+[charaFace G 0]
+[charaFace J 12]
+[charaFace F 6]
+[charaFace H 0]
+[charaFadein D 0.8 20,10]
+[charaFadeinFSL G 0.8 -160,10]
+[charaFadeinFSR J 0.8 220,10]
+[charaFadeinFSSideL F 0.8 -390,10]
+[charaFadeinFSSideR H 0.8 420,10]
+[charaMove D -20,10 4.5]
+[charaMoveFSL G -200,10 4.5]
+[charaMoveFSR J 180,10 4.5]
+[charaMoveFSSideL F -430,10 4.5]
+[charaMoveFSSideR H 380,10 4.5]
+[charaMove R -20,-230 4.5]
+[wt 1.0]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 2.5]
+
+[seStop ad413 0.8]
+[charaFadeout D 0.8]
+[charaFadeout G 0.8]
+[charaFadeout J 0.8]
+[charaFadeout H 0.8]
+[charaFadeout F 0.8]
+[charaFadeout R 0.8]
+[wt 1.3]
+
+[charaTalk on]
+
+＠謎の代行者C.I.E.L
+はい、そうです。プレゼントは５分前に[r]配達するサンタに渡されています。
+[k]
+
+[charaFace C 1]
+＠謎の代行者C.I.E.L
+プレゼントを間違えた？[r]大丈夫、そう暗い顔をなさらずとも結構です。
+[k]
+
+＠謎の代行者C.I.E.L
+悪いものが入っている訳ではありませんし、[r]すぐに本来の贈り物を届ければ二倍喜んでもらえますよ。
+[k]
+
+[charaFace C 7]
+＠謎の代行者C.I.E.L
+え？　届け先と品物に問題が？[r]送り先はメイヴさん、プレゼントは……
+[k]
+
+＠謎の代行者C.I.E.L
+チーズ……ケーキ？
+[k]
+
+[charaDepth N 2]
+[charaDepth C 3]
+[charaPut N 1]
+[charaFadeTime N 0.2 0.5]
+
+[charaFace C 19]
+
+＠謎の代行者C.I.E.L
+（カルデアにいる事で攻撃性が抑えられているとはいえ、[r]　メイヴさんは[#あの]女王メイヴ……）
+[k]
+
+＠謎の代行者C.I.E.L
+（[#宣戦布告:せんせんふこく]として捉えられる可能性大ですね……）
+[k]
+
+[charaFadeout N 0.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale F 1.0]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠ジャンヌ・オルタ・サンタ・リリィ
+うわーん、絶対に厄介な案件ですー！[r]あのメイヴさんと平和的な話し合いとかー！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaScale J 1.0]
+[charaTalk J]
+[charaFace J 11]
+[charaFadein J 0.1 1]
+＠マシュ
+すみません、[r]わたしも中身の確認が遅くなって……。
+[k]
+
+＠マシュ
+メイヴさんにはスカディさんとおそろいのコートを[r]用意していたのですが……
+[k]
+
+[charaFace J 7]
+
+＠マシュ
+メイヴさんにとってチーズはもっとも怖ろしく、[r]そしておぞましいもの。
+[k]
+
+[charaFace J 4]
+＠マシュ
+それがプレゼントとして贈られたら、[r]メイヴさんの性格上……
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaScale G 1.0]
+[charaTalk G]
+[charaFace G 36]
+[charaFadein G 0.1 1]
+
+＠ダ・ヴィンチ
+この上ない[#侮辱:ぶじょく]、そして挑発に取るだろうね……。[r]１時間後にはここに攻め込んできそうだ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠謎の代行者C.I.E.L
+問題ありませんよ、二人とも。[r]わたしとマスターとマシュさんでうまく事を収めてきます。
+[k]
+
+[charaFace C 0]
+＠謎の代行者C.I.E.L
+メイヴさんが好戦的なのは普段から『面白い事』を[r]求めているから。
+[k]
+
+＠謎の代行者C.I.E.L
+こういったトラブルも望んで争いの[#火種:ひだね]に[r]利用されるかもですが、その時はその時です。
+[k]
+
+[charaFace C 18]
+＠謎の代行者C.I.E.L
+正面からしっかりと話し合えば[r]満足してもらえるでしょう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠ジャンヌ・オルタ・サンタ・リリィ
+うう、さすが頼りになるお姉さん……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠謎の代行者C.I.E.L
+ふふふ、少々[#面映:おもは]ゆいですね。
+[k]
+
+[charaFace C 4]
+
+＠謎の代行者C.I.E.L
+では行きましょう、マスター、マシュさん！[r][#特殊:とくしゅ][#事案:じあん][#解決室:かいけつしつ]C.I.E.L、出発です！
+[k]
+
+[bgmStop BGM_EVENT_147 1.5]
+
+？1：はい！
+
+[messageOff]
+[charaEffectDestroy T bit_sepia01_fade_fs]
+
+？2：説明しよう。特殊事案解決室とは
+
+[messageOff]
+[charaTalk off]
+[subCameraOn 2]
+[charaLayer L sub #A]
+[charaLayer M sub #A]
+[charaLayer T sub #A]
+[charaLayer U sub #A]
+[charaLayer E sub #A]
+[charaLayer K sub #A]
+[charaLayer I sub #A]
+[charaLayer N sub #A]
+[charaLayer O sub #A]
+[charaLayer S sub #A]
+[charaLayer H sub #B]
+
+[subCameraFilter #A normal]
+[subCameraFilter #B through]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[subRenderScale #A 1.01]
+
+[charaDepth N 1]
+[charaDepth S 2]
+[charaDepth T 3]
+[charaDepth O 4]
+[charaDepth U 5]
+[charaDepth E 6]
+[charaDepth K 6]
+[charaDepth I 6]
+[charaDepth L 9]
+[charaDepth M 9]
+
+[overlayFadein L 0.1 0,738]
+[overlayFadein M 0.1 0,-738]
+
+[charaPut T 1]
+
+[charaScale S 1.2]
+[charaFadein S 0 0,-260]
+[charaFadein N 0 0,0]
+
+[charaScale H 0.8]
+[charaFace H 0]
+[charaFadeinFSSideR H 0 350,-150]
+
+[subRenderFadein #A 1.0 0,0]
+[subRenderFadein #B 1.0 0,0]
+
+[charaMoveScale S 1.0 30.0]
+[charaMove S 0,-200 30.0]
+[wt 1.2]
+
+[bgm BGM_REQUIEM 0.1]
+
+＠
+多様化する育成素材。[r]増え続けるサーヴァント。
+[k]
+
+＠
+時代、世界観、神話ごとのお約束。[r]それらの違いによって生じる私的闘争。
+[k]
+
+＠
+８周年を迎えたカルデアのクリスマスは[r]混迷を極めていた。
+[k]
+
+＠
+『ただプレゼントを配るだけなのに世界が崩壊しそう』[r]『今年もなんとかなった。だが来年はどうかな？』
+[k]
+
+[messageOff]
+[overlayFadein O 0.8 0,0]
+[wt 0.8]
+[charaEffectDestroy T bit_sepia01_fade_fs]
+[charaFadeout S 0.1]
+
+[charaScale I 0.9]
+[charaFace E 0]
+[charaFace K 0]
+[charaFace I 0]
+[charaFadein E 0.1 0,-50]
+[charaFadein K 0.1 -225,-50]
+[charaFadein I 0.1 225,-60]
+[wt 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+＠
+この事態を重く見た聖職者系サーヴァントたちは[r]泣く泣く自腹を切り、対策チームを結成した。
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ade581]
+[charaScale U 1.1]
+[charaPut U 0,25]
+[charaEffect U bit_talk_spotlight02]
+[wt 1.0]
+
+＠
+それがクリスマス特殊事案解決室。[r][#Christmas:聖 　　　夜 　　　の]　[#Incident:事　　　件　　　を]　[#Early:手っ取り早く]　[#Lessen:少 な く す る][line 3]C.I.E.Lである。
+[k]
+
+[bgmStop BGM_REQUIEM 2.0]
+
+[messageOff]
+[wt 0.5]
+[subRenderFadeout #A 1.0]
+[subRenderFadeout #B 1.0]
+[wt 1.0]
+[charaPut U 2000,2500]
+[charaEffectDestroy U bit_talk_spotlight02]
+[charaFadeout L 0]
+[charaFadeout M 0]
+[charaFadeout N 0]
+[charaFadeout S 0]
+[charaFadeout E 0]
+[charaFadeout K 0]
+[charaFadeout I 0]
+[charaFadeout H 0]
+[wt 0.1]
+[subCameraOff]
+[charaLayer T normal]
+[charaLayer U normal]
+[charaLayer L normal]
+[charaLayer M normal]
+[charaLayer N normal]
+[charaLayer S normal]
+[charaLayer E normal]
+[charaLayer K normal]
+[charaLayer I normal]
+[charaLayer H normal]
+[charaScale T 1.0]
+[charaScale U 1.0]
+[charaScale N 1.0]
+[charaScale S 1.0]
+[charaScale E 1.0]
+[charaScale K 1.0]
+[charaScale I 1.0]
+[charaScale H 1.0]
+[wt 0.5]
+
+[charaTalk on]
+
+？！
+
+[se ade423]
+[charaMove C -50,0 0.4]
+[charaFadeout C 0.4]
+[seStop ade423 1.2]
+[wt 1.6]
+
+[charaTalk J,H]
+[charaFace J 1]
+[charaFace H 8]
+[charaFadeinFSL J 0.1 0]
+[charaFadeinFSR H 0.1 2]
+[wt 0.6]
+
+[se ade422]
+[wt 0.1]
+[se ad95]
+[charaMoveFSL J -306,0 0.4]
+[charaMoveFSR H 206,0 0.4]
+[charaFadeout J 0.4]
+[charaFadeout H 0.4]
+[seStop ade422 1.2]
+[seStop ad95 1.2]
+[wt 1.2]
+
+[se ad8]
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[scene 203800]
+
+[charaDepth P 2]
+[charaDepth A 3]
+[charaDepth C 4]
+[charaScale P 1.2]
+[charaFadein P 0.1 -120,-265]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[bgm BGM_EVENT_63 0.1]
+
+[messageOff]
+[se ade423]
+[wt 0.2]
+[charaScale A 1.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 -240,0]
+[charaMove A -200,0 0.4]
+[wt 0.2]
+[seStop ade423 0.4]
+[wt 0.6]
+＠アルクェイド
+ちょっとシエル。[r]いつまでサーヴァント業してるのよ。
+[k]
+
+＠アルクェイド
+今日はほら、地球的にお休みの日でしょ。[r]わたしに何か話があるんじゃ、[wt 0.4]な、[wt 0.6][charaFace A 10]い[line 3]！？
+[k]
+
+[messageOff]
+[se ade423]
+[charaScale C 1.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 350,0]
+[charaMove C 200,0 0.6]
+[wt 0.4]
+[seStop ade423 0.4]
+[wt 0.6]
+＠謎の代行者C.I.E.L
+おおっと真祖ですかすみません話は後でお願いします！[r]具体的に言うと年内は無理ですね！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ade423]
+[charaMove P 80,-265 1.0]
+[charaMove A 1 1.0]
+[charaMove C 1 1.0]
+[wt 0.6]
+[se ade33]
+[seVolume ade33 0 0.4]
+[seStop ade423 1.0]
+[charaFadeout C 0.4]
+[charaShake A 0.03 3 4 0.5]
+[charaMoveScaleEase A 1.0 0.4 easeOutCubic]
+[wt 1.0]
+
+[charaPut T 2000,2500]
+[charaEffect T bit_sepia01_fade_fs]
+
+？1：ごめんなさい姫さま、また出動なので！
+？2：カワバンガ！
+？！
+
+[se ade422]
+[wt 0.1]
+[se ad95]
+[seStop ade422 2.0]
+[seStop ad95 2.0]
+[wt 1.5]
+
+[charaFace A 3]
+
+[bgmStop BGM_EVENT_63 2.0]
+
+＠アルクェイド
+な[line 3]
+[k]
+
+＠アルクェイド
+なーんか、面白くないんですけど！
+[k]
+
+[messageOff]
+[cameraMove 2.0 0,-20 1.1]
+[wt 1.0]
+[wipeout circleIn 1.0 1.0]
+[wait wipe]
+
+[charaFadeout P 0.1]
+[charaFadeout A 0.1]
+[cameraHome 0.1]
+
+[charaPut T 1]
+
+
+[scene 20504]
+
+[charaSet C 23009002 1 スターシエル]
+[charaSet D 23009002 1 スターシエル演出用]
+[sceneSet Q 20504 1]
+[charaScale Q 1.4]
+[sceneSet R 20504 1]
+[charaScale R 1.4]
+
+[pictureFrameTop cut063_cinema]
+[wt 1.0]
+
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaEffectStop T bit_sepia01_fade_fs]
+[wt 1.9]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+[bgm BGM_XMAS_2016 0.1]
+
+＠アルクェイド
+[#ふふふふふふ:は 　し 　れ 　わ 　た 　し]～♪[r][#ふふふふふふ:か 　ぜ 　の 　よ 　う 　に]～♪
+[k]
+
+＠アルクェイド
+[#ふふふふふふ:ほ 　し 　の 　う 　み 　を]～、[#ふふふふふふ:ダ 　イ 　ブ 　ダ 　イ 　ブ]～！
+[k]
+
+[charaFace A 19]
+＠アルクェイド
+なーんて！　のんびりしてたら[r]あっという間に年の瀬になったわね！
+[k]
+
+[branchQuestNotClear lblNotClear01 4000426]
+
+[charaFace A 9]
+＠アルクェイド
+なんか夏にちょっとだけ酷い目にあった気もするけど、[r]それは蚊に刺されたぐらいの運と流す事にして、
+[k]
+
+[label lblNotClear01]
+
+[charaFace A 0]
+＠アルクェイド
+カルデアにも冬休みがあるんだって。[r]シエルは何か予定、入ってる？
+[k]
+
+[messageOff]
+[charaDepth C 2]
+[charaDepth A 3]
+[charaDepth Q 4]
+[charaDepth D 5]
+
+[charaScale D 1.2]
+[charaScale Q 1.2]
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.5 180,-50]
+[charaFadein Q 0.5 -50,-260]
+[charaMove D 200,-50 0.5]
+[charaMove Q -70,-260 0.5]
+[wt 0.5]
+
+[charaFace A 14]
+[charaFace C 0]
+[charaFadeinFSL A 0.1 -200,-50]
+[charaFadeinFSR C 0.1 200,-50]
+[wt 0.25]
+
+＠D：スターシエル
+ああ、そういえば言い忘れていました。[r]年末はチャリティーに参加するので休みはありません。
+[k]
+
+[charaFace D 0]
+＠D：スターシエル
+戦うだけが代行者ではありませんから。[r]治安維持もわたしの仕事です。
+[k]
+
+＠D：スターシエル
+怪我人など出ないように、別働隊として陰ながら[r]サンタクロースの皆さんのお手伝いをします。
+[k]
+
+[messageOff]
+[charaTalk D,A]
+[charaFadeout D 0.4]
+[charaFadeout Q 0.4]
+[wt 0.5]
+
+[bgmStop BGM_XMAS_2016 2.0]
+
+[charaTalk A]
+＠A：アルクェイド
+！[messageShake 0.05 4 3 0.3]
+[k]
+
+[charaTalk C]
+[charaFace C 3]
+＠C：スターシエル
+……なんですかその反応。
+[k]
+
+[charaFace C 14]
+
+＠C：スターシエル
+とても[#厭:いや]な予感がするので無視したいところですが、[r]いちおう、貴方の関係者として聞いておきます。
+[k]
+
+[charaFace C 20]
+＠C：スターシエル
+[line 3]なにを考えているんです？
+[k]
+
+[bgm BGM_BATTLE_119 0.1]
+
+[charaTalk A]
+[charaFace A 19]
+＠A：アルクェイド
+もちろんクリスマスのこと！
+[k]
+
+＠A：アルクェイド
+サンタクロースって、夜になったらプレゼントを[r]届けにやってくる[#いい人:ヒ ー ロ ー]でしょう？
+[k]
+
+[charaFace A 22]
+＠A：アルクェイド
+前に少しだけ、クリスマスを味わったのよね、わたし。[r]すごく楽しかった。
+[k]
+
+[charaFace A 19]
+＠A：アルクェイド
+だからわたしもやってみようかなって！[r]シエルも手伝ってくれるんでしょ？
+[k]
+
+[charaTalk C]
+[charaFace C 10]
+＠C：スターシエル
+……はあ。ありえませんし、手伝いません。[r]馬鹿も休み休み言ってください。
+[k]
+
+[charaFace C 13]
+＠C：スターシエル
+世界で一番サンタクロースが似合わない存在。[r]それが貴方です。
+[k]
+
+[charaTalk A]
+[charaFace A 4]
+＠A：アルクェイド
+なんでよ。どのあたりが似合わないの。
+[k]
+
+[messageOff]
+[charaTalk A,D]
+[charaDepth Q 4]
+[charaDepth D 5]
+
+[charaScale D 1.4]
+[charaScale Q 1.4]
+[charaFace D 2]
+[charaFadeinFSR D 0.3 350,-40]
+[charaFadein Q 0.3 -90,-330]
+[charaMoveEaseFSR D 250,-40 0.5 easeOutSine]
+[charaMoveEase Q -190,-330 0.5 easeOutSine]
+[wt 0.3]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.4]
+
+＠D：スターシエル
+吸血鬼のサンタクロースなんて迷惑にも[r]程があるからです！
+[k]
+
+＠D：スターシエル
+深夜に、人間の部屋に忍びこんで、[r]こっそりプレゼントを置いていく！
+[k]
+
+＠D：スターシエル
+吸血鬼である貴方がこの前半部分を行うだけで[r]コンプラ的にアウト！　でしょうに！
+[k]
+
+[messageOff]
+[subCameraOn 2]
+
+[charaLayer A sub #A]
+[charaLayer R sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask10 5 255,255,255,255]
+
+[charaDepth R 2]
+[charaDepth A 3]
+[charaScale R 1.4]
+[charaScale A 1.4]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadeinFSL A 0 -50,200]
+[charaFadein R 0 400,-50]
+
+[subRenderFadein #A 0.3 -300,-125]
+[subRenderMoveEase #A -225,-250 0.5 easeOutCubic]
+[wt 0.6]
+＠A：アルクェイド
+…[messageShake 0.05 4 3 0.3]…！
+[k]
+
+[charaTalk D]
+[charaFace D 12]
+＠D：スターシエル
+貴方、聖ニコラウスは嫌いでしょう？[r]教会の聖人ですよ、サンタクロースは。
+[k]
+
+＠D：スターシエル
+そもそも人間の好みとか分かるんですか？[charaFace A 6]
+[k]
+
+[charaFace D 14]
+＠D：スターシエル
+真祖の空想具現化は万能の３Ｄプリンターですが、[r]作るべきものが分からなければ宝の持ち腐れ。
+[k]
+
+＠D：スターシエル
+吸血鬼かつ世間知らずの王族である貴方に[charaFace A 1][r]サンタクロースは向いていません。ミスキャストです。
+[k]
+
+＠D：スターシエル
+おとなしく部屋でケーキでも作っていてください。
+[k]
+
+[charaFace D 1]
+＠D：スターシエル
+ああ、それとも故郷に里帰りでもしますか？[charaFace A 13]
+[k]
+
+＠D：スターシエル
+お土産は結構ですので、[r]そのまま一世紀ほど[#寛:くつろ]いできてくださいね☆
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+[wipeout circleIn 1.0 1]
+[bgmStop BGM_BATTLE_119 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout Q 0.1]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout A 0]
+[charaLayer A normal]
+[charaScale A 1.0]
+[wt 0.1]
+
+[charaLayer C sub #A]
+[subCameraFilter #A maskEdge cut359_mask26 4 255,255,255,255 0]
+[charaLayer B sub #B]
+[subCameraFilter #B through]
+[subRenderFadein #B 0.1 0,0]
+[subRenderScale #A 0.4]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaTalk off]
+[charaDepth R 1]
+[charaDepth C 2]
+[charaPut R -350,-250]
+[charaScale R 1.5]
+[charaScale C 1.5]
+[charaFace C 1]
+[charaFadein C 0.1 0,150]
+
+[charaScale B 1.2]
+[charaFace B 13]
+[charaFadein B 0.1 0,-50]
+
+[scene 203800]
+
+[charaScale P 1.31]
+[charaDepth A 1]
+[charaDepth P 2]
+[charaFace A 18]
+[charaFadein P 0.1 60,-300]
+[charaFadein A 0.1 0,-50]
+[wt 1.0]
+
+[wipein circleIn 1.0 1]
+[wait wipe]
+
+[bgm BGM_EVENT_194 0.1]
+
+[charaShake B 0.02 1 1 0.5]
+
+＠アルクェイド
+なーにがミスキャストよ。[r]わたしだってサンタくらいできるんだから！
+[k]
+
+＠アルクェイド
+そもそもクリスマスが何の日か忘れてない！？[r]相性なら最高に決まってるじゃない！
+[k]
+
+[charaFace B 18]
+
+＠アルクェイド
+わたしよりも[#後:あと]に召喚されたのに、[r]いつのまにか『頼れる先輩』的なポジションだし、
+[k]
+
+[messageOff]
+[charaMoveEase P 190,-350 0.7 easeOutSine]
+[charaMoveEase B 130,-100 0.7 easeOutSine]
+[wt 0.7]
+[subRenderFadein #A 0.3 -180,0]
+[charaShake B 0.02 1 1 0.5]
+
+＠アルクェイド
+なによりセイントアイドルってなによ、[r]セイントアイドルって！
+[k]
+
+[charaMoveReturn B 130,-102 0.2]
+[wt 0.2]
+[charaMoveReturn B 130,-102 0.2]
+
+＠アルクェイド
+シエルっていっつもそう！
+[k]
+
+＠アルクェイド
+地味で真面目で優等生なキャラ作りのクセに、[r]一皮[#剥:む]くとゴッテゴテの重装備しちゃってさー！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.6]
+[subRenderFadeout #B 0.6]
+[charaFadeout P 0.4]
+[wt 0.8]
+[charaFadeout R 0.1]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.2]
+[charaLayer R normal]
+[charaLayer C normal]
+[charaLayer B normal]
+[subCameraOff]
+
+[charaFace A 6]
+＠アルクェイド
+……まあ、でも。
+[k]
+
+＠アルクェイド
+吸血鬼にサンタはできない、は正論よね……。[r]何とかするには……。
+[k]
+
+＠アルクェイド
+そもそも今の霊基[#筐体:フレーム]と、[r]サンタの相性が悪いんだから……。
+[k]
+
+[bgmStop BGM_EVENT_194 1.5]
+
+[messageOff]
+[wt 0.5]
+[charaDepth A 1]
+[charaDepth P 2]
+[charaDepth B 3]
+
+[charaScale B 1.3]
+[charaFace B 6]
+[charaFadein P 0.6 0,-350]
+[charaFadein B 0.6 0,-50]
+[wt 1.5]
+
+[charaFace B 11]
+
+＠アルクェイド
+……外装をまるっと変更すればいける？
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

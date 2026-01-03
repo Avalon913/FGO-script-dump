@@ -1,0 +1,910 @@
+
+
+＄94-06-90-11-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1053900 1 徴側]
+[charaSet B 1053910 1 徴弐]
+
+[charaSet C 99502600 1 マシュ]
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+[charaSet E 1098236700 1 始皇帝]
+[charaSet F 4011001 1 ブーディカ]
+[charaSet G 4031000 1 赤兎]
+[charaSet H 6027000 1 武則天]
+[charaSet I 3032000 1 エレシュキガル]
+[charaSet K 1098229100 1 長老]
+
+[charaSet L 1098229700 1 ヴォジャノーイ１]
+[charaSet M 1098229700 1 ヴォジャノーイ２]
+[charaSet N 1098229700 1 ヴォジャノーイ３]
+
+[charaSet P 98115000 1 通信用ノイズ]
+[charaSet Q 98115000 1 エフェクト用]
+
+[imageSet T back10000 1 1]
+[charaScale T 1.4]
+
+
+[ifClear 60068801]
+[charaSet X 1098237900 1 コン１]
+[charaSet Y 1098237900 1 コン２]
+[charaSet Z 1098237900 1 コン３]
+
+[ifClear 60068802]
+[charaSet X 1098237910 1 コン１]
+[charaSet Y 1098237910 1 コン２]
+[charaSet Z 1098237910 1 コン３]
+
+[ifClear 60068803]
+[charaSet X 1098237920 1 コン１]
+[charaSet Y 1098237920 1 コン２]
+[charaSet Z 1098237920 1 コン３]
+
+[ifClear 60068804]
+[charaSet X 1098238000 1 コン１]
+[charaSet Y 1098238000 1 コン２]
+[charaSet Z 1098238000 1 コン３]
+
+[ifClear 60068805]
+[charaSet X 1098238010 1 コン１]
+[charaSet Y 1098238010 1 コン２]
+[charaSet Z 1098238010 1 コン３]
+
+[ifClear 60068806]
+[charaSet X 1098238020 1 コン１]
+[charaSet Y 1098238020 1 コン２]
+[charaSet Z 1098238020 1 コン３]
+
+[ifClear 60068807]
+[charaSet X 1098238100 1 コン１]
+[charaSet Y 1098238100 1 コン２]
+[charaSet Z 1098238100 1 コン３]
+
+[ifClear 60068808]
+[charaSet X 1098238110 1 コン１]
+[charaSet Y 1098238110 1 コン２]
+[charaSet Z 1098238110 1 コン３]
+
+[ifClear 60068809]
+[charaSet X 1098238120 1 コン１]
+[charaSet Y 1098238120 1 コン２]
+[charaSet Z 1098238120 1 コン３]
+
+[else]
+[charaSet X 1098237900 1 コン１]
+[charaSet Y 1098237900 1 コン２]
+[charaSet Z 1098237900 1 コン３]
+
+
+[endIf]
+
+[charaDepth A 4]
+[charaDepth B 3]
+
+[charaDepth G 3]
+[charaDepth F 4]
+
+[charaDepth X 3]
+[charaDepth Y 4]
+[charaDepth G 2]
+[charaDepth T 2]
+
+[charaEffect P bit_talk_10_LowLevel]
+[charaPut P 2000,2000]
+
+[scene 150700]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_49 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFace B 0]
+[charaFadein A 0.1 0,0]
+[charaFadein B 0.1 0,0]
+
+＠徴側
+監視塔より連絡[line 3]
+[k]
+
+＠徴側
+作戦区画７のＢ付近にヴォジャノーイ上陸、[r]水門建設中の様子！
+[k]
+
+＠徴側
+『長城』を通って撃退に向かいましょう！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,0]
+[charaPut P 0,0]
+
+＠始皇帝
+うむ、佳く戦うがよい。[r]朕はここで静観しておる。
+[k]
+
+[charaPut P 2000,2000]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 20]
+[charaFadein I 0.1 0,0]
+
+＠エレシュキガル
+実際には指一本動かしていないのに、[r]『自分の手柄』感がハンパないわね……
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0.1 0,0]
+[charaFadein B 0.1 0,0]
+
+＠徴側
+ま、まあまあ。[r]おかげでスムーズに移動できますし、
+[k]
+
+＠徴側
+シンプルな防壁としての役目も果たしてくれてますし。[r]わたしとしては全然文句も疑問もありませんよ。
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadeTime T 0.2 0.5]
+
+＠徴弐
+（そもそもアレが始皇帝じゃない始皇帝だっていうのが[r]　意味わかんなくて疑問だらけだけど）
+[k]
+
+[charaFace B 6]
+
+＠徴弐
+（まあいいや、お姉ちゃんが気にしないんなら）
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_49 1.0]
+[wait fade]
+
+[charaPut Q 2000,2000]
+[charaBackEffect Q bit_talk_ppl_fog02]
+
+[charaFadeout T 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 147303]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 0,0]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠長老
+気をつけてのう。
+[k]
+
+＠長老
+ワシも昔は青き閃光のカメちゃんと呼ばれた[r]スピードスターじゃった気がするのじゃが。
+[k]
+
+＠長老
+今は……そう、免許を返納してしもうた、[r]のじゃったかな……？
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.4 0,0]
+[wt 0.4]
+
+＠ブーディカ
+おじいちゃんは泳ぐのに[r]多分免許とかいらないわよね……？
+[k]
+
+[charaFace F 1]
+
+＠ブーディカ
+とにかく戦車の準備はできてるさね！[r]長城の上を爆走するから、乗った乗った！
+[k]
+
+？1：よろしくお願いします！
+？！
+
+＠ブーディカ
+マスターの役に立てて嬉しいよ。[r]ま、これでもライダーの霊基だからね。
+[k]
+
+＠ブーディカ
+[#丁度いい戦車]を持っててよかったわ、[r]なんてね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,0]
+[charaPut P 0,0]
+
+＠ダ・ヴィンチ
+アキレウスとかイスカンダルのだと、
+[k]
+
+＠ダ・ヴィンチ
+『激しすぎて誰かを運ぶのに向いてない』、[r]『長城の上を走ると通路を壊しかねない』、
+[k]
+
+＠ダ・ヴィンチ
+『飛ぶと燃費がすこぶる良くない』……[r]なんて問題だらけだからさ。
+[k]
+
+＠ダ・ヴィンチ
+女王として軍を率いていた指導力も[r]今の状況には最適だ。よろしく頼むよ。
+[k]
+
+[charaPut P 2000,2000]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,0]
+
+＠ブーディカ
+オッケー。任せて！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFace B 0]
+[charaFadein A 0.1 0,0]
+[charaFadein B 0.1 0,0]
+
+＠徴側
+逃げ遅れたコンも少し被害に遭っているとのこと。[r]二、三人来てください！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk X]
+[charaFace X 0]
+[charaFace Y 0]
+[charaFace Z 0]
+[charaFadeinFSL X 0.1 -256,0]
+[charaFadein Y 0.1 0,0]
+[charaFadeinFSR Z 0.1 256,0]
+
+＠X：コン
+まかせまかせー。
+[k]
+
+[messageOff]
+[charaTalk Y]
+[charaFace Y 0]
+
+[cueSe SE_22 22_ade695]
+[charaMoveReturn Y 0,12 0.2]
+[wt 0.3]
+
+＠Y：コン
+ままみー！
+[k]
+
+[charaFadeout X 0.1]
+[charaFadeout Y 0.1]
+[charaFadeout Z 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,0]
+
+＠ブーディカ
+よーし、それじゃ行くよ！[r]しっかり掴まってて！
+[k]
+
+
+
+[messageOff]
+
+[se ad995 0]
+[seVolume ad995 0.7 0.7]
+[charaMove F -300,0 0.5]
+[wt 0.2]
+[charaFadeout F 0.3]
+
+
+[wipeout leftToRight 0.5 1.0]
+[seVolume ad995 0.5 0.5]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[charaPut Q 0,0]
+[scene 107300]
+
+[backEffect bit_talk_42_depth 0,0 H]
+[wt 0.3]
+
+[wipein rightToLeft 0.5 1.0]
+[seVolume ad995 0.5 0.7]
+[wait wipe]
+
+[wt 1.0]
+
+
+[wipeout leftToRight 0.5 1.0]
+[seVolume ad995 0.5 0.5]
+[wait wipe]
+
+[scene 147400]
+[wt 0.3]
+
+[wipein rightToLeft 0.5 1.0]
+[seVolume ad995 0.5 0.7]
+[wait wipe]
+
+[wt 1.0]
+
+
+[wipeout leftToRight 0.5 1.0]
+[seVolume ad995 0.5 0.5]
+[wait wipe]
+
+[scene 147500]
+[wt 0.3]
+
+[wipein rightToLeft 0.5 1.0]
+[seVolume ad995 0.5 0.7]
+[bgmStop BGM_EVENT_62 0.5]
+[wait wipe]
+
+
+[seStop ad995 2.0]
+[se ad646]
+[seVolume ad646 0.0 0.0]
+[seVolume ad646 3.0 1.0]
+[wt 2.0]
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaTalk G]
+[charaFadein G 1.0 80,0]
+[charaMove G 0,0 0.5]
+[wt 1.5]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[seStop ad646 1.0]
+
+[charaTalk B]
+[charaFace A 5]
+[charaFace B 10]
+[charaFadein A 0.1 0,0]
+[charaFadein B 0.1 0,0]
+
+＠徴弐
+わー！？
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+
+＠徴側
+何か変なのが併走してきましたが！？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,0]
+
+＠赤兎
+変なのとは失礼な。
+[k]
+
+[charaFace G 1]
+
+＠赤兎
+ですがこのあまりの肉体美のせいか、[r]初対面の方々には驚かれるのが常です。呂布です。
+[k]
+
+[charaFace G 2]
+
+＠赤兎
+ブヒヒン！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace A 5]
+[charaFace B 10]
+[charaFadein A 0.1 0,0]
+[charaFadein B 0.1 0,0]
+
+＠徴弐
+（[charaShake B 0.05 5 0 0.3]ビクッ）
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,0]
+
+＠ブーディカ
+こーら、若い子たちを驚かせない！
+[k]
+
+＠ブーディカ
+で、なに？[r]いま急いでるんだけど！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,0]
+
+＠赤兎
+承知の上です。[r]そちらを邪魔する気はありません。ただ……
+[k]
+
+＠赤兎
+この見覚えがあるようなないような長大な建造物、[r]そして、上部には走りやすそうな道。
+[k]
+
+＠赤兎
+本能が言っているのです。
+[k]
+
+[charaFace G 2]
+
+＠赤兎
+[line 3]走れ、と！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,0]
+
+＠ブーディカ
+えー？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 0,0]
+
+＠赤兎
+いかがでしょう？[r]戦車と呂布一人くらいならぎりぎり併走できます！
+[k]
+
+＠赤兎
+ああ、もちろんわかっていますよ。
+[k]
+
+＠赤兎
+誰かを運ぶという役目を放棄することも、[r]乗員の有無で差が出ることも避けたい。ですね？
+[k]
+
+[charaFace G 2]
+
+＠赤兎
+ならば[line 3]カモン！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk X]
+[charaFace X 6]
+[charaFace Y 0]
+[charaFadeinFSL X 0.1 -256,0]
+[charaFadeinFSR Y 0.1 256,0]
+
+＠X：コン
+わはー。
+[k]
+
+[messageOff]
+[charaMoveFSL X -300,50 0.5]
+[se adm21]
+[wt 0.2]
+[charaFadeout X 0.3]
+[wt 0.5]
+
+[charaTalk Y]
+[charaFace Y 0]
+
+＠Y：コン
+あっちも楽しそうー。
+[k]
+
+[messageOff]
+[charaMoveFSR Y 100,50 0.5]
+[se adm21]
+[wt 0.2]
+[charaFadeout Y 0.3]
+[wt 0.5]
+
+
+[charaTalk off]
+[charaFace G 1]
+[charaFadein G 0.1 0,0]
+
+[charaFace X 0]
+[charaFace Y 0]
+[charaFadeinFSR X 0.3 270,50]
+[wt 0.2]
+[charaMove X 170,0 0.5]
+[wt 0.3]
+[se ad223]
+[wt 0.2]
+[charaFadeinFSR Y 0.3 270,50]
+[wt 0.2]
+[charaMove Y 170,-100 0.5]
+[wt 0.3]
+[se ad223]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 1]
+
+＠赤兎
+これで五分の条件！
+[k]
+
+＠赤兎
+それでは、競走開始！[r]ヒヒーン！
+[k]
+
+[messageOff]
+
+[se ad646]
+[seStop ad646 1.5]
+[charaMoveFSL G -300,0 1.5]
+[charaMoveFSL X -130,0 1.5]
+[charaMoveFSL Y -130,-100 1.5]
+[wt 0.3]
+[charaFadeout G 0.5]
+[charaFadeout X 0.5]
+[charaFadeout Y 0.5]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,0]
+
+＠ブーディカ
+しょうがないなあ……
+[k]
+
+[charaFace F 1]
+
+＠ブーディカ
+ま、急がなきゃいけないのは確かだし、[r]ついでに付き合ってあげようか。
+[k]
+
+
+＠ブーディカ
+でもあたしだって戦車乗りの女王だ。[r]大人しく負けてあげる気はないからね！
+[k]
+
+[messageOff]
+[se ad845]
+[seVolume ad845 0.0 0.0]
+[seVolume ad845 1.0 0.8]
+[wt 1.0]
+[seStop ad845 0.3]
+[se ad860]
+[seVolume ad860 0.7 0.1]
+[charaMove F -800,0 0.5]
+[charaFadeout F 0.3]
+[wt 0.5]
+
+
+[wipeout leftToRight 1.0 1.0]
+[seStop ad860 1.0]
+[bgm BGM_EVENT_63 1.0 0.5]
+[wait wipe]
+
+[backEffectStop bit_talk_42_depth]
+[charaTalk depthOn]
+
+[charaPut Q 2000,2000]
+[charaBackEffectStop Q bit_talk_ppl_fog02]
+[scene 147104]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[bgm BGM_EVENT_63 1.0 0.7]
+[wait wipe]
+
+
+[charaTalk off]
+[charaFace G 0]
+[se ad127]
+[charaFadein G 1.0 -150,0]
+[charaMove G -256,0 0.5]
+[wt 0.8]
+
+[charaFace F 0]
+[se ad127]
+[charaFadein F 1.0 350,0]
+[charaMove F 256,0 0.5]
+[wt 1.5]
+
+[charaTalk depthOff]
+[charaTalk on]
+[charaTalk F]
+[charaFace F 3]
+
+＠ブーディカ
+ふう、負けた！
+[k]
+
+[charaTalk G]
+[charaFace G 2]
+
+＠赤兎
+勝利！
+[k]
+
+[charaFace G 1]
+
+＠赤兎
+うーん、草原を走るのもいいものですが、[r]走るために作られたこういう道もまたいいものです！
+[k]
+
+[charaFace G 0]
+
+＠赤兎
+しかし……告白しましょう、[r]レギュレーション違反です。
+[k]
+
+[messageOff]
+[charaFadeout G 0.3]
+[charaFadeout F 0.3]
+[wt 0.5]
+
+[charaRoll X 20]
+[charaRoll Y 40]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFace X 0]
+[charaFace Y 0]
+[charaFadein G 0.3 0,0]
+[charaFadeinFSR X 0.3 250,-180]
+[charaFadeinFSR Y 0.3 280,-320]
+[wt 0.3]
+
+＠赤兎
+私は走るのに夢中になるあまり、[r]背中の小さな乗員を途中で落としてしまった模様。
+[k]
+
+＠赤兎
+これはただ走るのではなく、いかに急いで[r]仲間をここに届けられるかというレース。
+[k]
+
+＠赤兎
+それが果たせていないのであれば……[r]私の負けです。
+[k]
+
+？1：（コンたちなら尻尾に掴まって）
+？2：（ぶらぶら楽しそうにしてるけど……まあいいか）
+？！
+
+[charaFace G 2]
+
+＠赤兎
+敗者らしく粛々と皆様の仕事をお手伝いしましょう！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout X 0.1]
+[charaFadeout Y 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 0,0]
+
+＠ブーディカ
+あはは。そんな話だったっけ？
+[k]
+
+[bgmStop BGM_EVENT_63 1.0]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,0]
+[charaPut P 0,0]
+
+＠マシュ
+競い合った成果か、[r]想定以上のスピードでここに辿り着けています。
+[k]
+
+＠マシュ
+あとは本来の目的を果たすだけかと！
+[k]
+
+[charaPut P 2000,2000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFace B 0]
+[charaFadein A 0.1 0,0]
+[charaFadein B 0.1 0,0]
+
+＠徴側
+ええと……。
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+[charaFace A 2]
+
+＠徴側
+っ！　あちらの川に、造りかけの水門と[r]ヴォジャノーイです！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_3 0.5 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[scene 147107]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_3 0.5 1.0]
+[wait wipe]
+
+[charaTalk off]
+[charaDepth M 7]
+[charaDepth L 6]
+[charaDepth N 5]
+
+[charaFace L 0]
+[charaFace M 0]
+[charaFace N 0]
+[charaFadeinFSL L 0.1 -306,0]
+[charaFadein M 0.1 0,0]
+[charaFadeinFSR N 0.1 306,0]
+[wt 0.2]
+[se ad25]
+[wt 1.0]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_3 0.5 0.5]
+[wait wipe]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+
+[charaTalk on]
+
+[scene 147104]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_3 0.5 1.0]
+[wait wipe]
+
+[charaTalk depthOff]
+
+[charaTalk B]
+[charaFace A 2]
+[charaFace B 2]
+[charaFadein A 0.1 0,0]
+[charaFadein B 0.1 0,0]
+
+＠徴弐
+まず水門をぶっ壊してから討伐する！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,0]
+
+＠エレシュキガル
+それがいいのだわ。[r]少しでも力を得ているかもしれないし。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 0,0]
+
+＠武則天
+くっふっふー！　この[#妾:わらわ]の前で[r]呑気に建設作業などできると思うたか！
+[k]
+
+[charaFace H 2]
+
+＠武則天
+先手必勝じゃ、潰せーい！
+[k]
+
+[messageOff]
+
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_3 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

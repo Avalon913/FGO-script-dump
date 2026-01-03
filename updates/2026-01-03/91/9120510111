@@ -1,0 +1,413 @@
+
+
+
+＄91-20-51-01-1-1
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 2051002 1 杉谷善住坊]
+[charaSet B 2010001 1 ビリー]
+[charaSet C 99200300 1 ロビンフッド]
+[charaSet D 98104300 1 ゴースト]
+[charaSet E 2051002 1 杉谷善住坊]
+[charaSet F 2051002 1 杉谷善住坊]
+[charaScale F 1.2]
+[charaSet G 2010001 1 ビリー]
+[charaSet H 1098257310 1 ダ・ヴィンチ]
+
+[sceneSet O 145300 1]
+[charaScale O 1.1]
+
+[sceneSet S 145200 1]
+[sceneSet T 145300 1]
+
+[charaSet Y 3019001 1 エフェクト用1]
+[charaDepth Y 8]
+[charaEffect Y bit_talk_10_LowLevel_depth]
+[charaPut Y 1200,1200]
+
+[charaSet Z 98115000 1 エフェクト用2]
+
+[charaDepth O 2]
+[charaDepth F 3]
+
+[scene 145200]
+[subCameraOn 2]
+
+[subCameraFilter #A maskEdge cut359_mask02 4 106,118,82,255]
+[subCameraFilter #B maskEdge cut359_mask12 3 0,0,0,255 0]
+
+[charaLayer E sub #A]
+[charaLayer S sub #A]
+[charaLayer T sub #B]
+[charaLayer G sub #B]
+
+[charaDepth E 5]
+[charaDepth S 2]
+[charaDepth G 2]
+[charaDepth T 1]
+
+[charaScale E 1.5]
+[charaScale G 1.2]
+[charaScale S 1.4]
+[charaScale T 1.2]
+
+[charaFace E 6]
+[charaFadein E 0.1 300,240]
+[charaFadein S 0.1 200,0]
+
+[charaFace G 0]
+[charaFadein G 0.1 -510,240]
+[charaFadein T 0.1 -200,-50]
+
+[charaTalk depthOff]
+
+[bgm BGM_BATTLE_62 0.1]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk E]
+[cueSe SE_23 23_ade911]
+[subRenderFadein #A 0.3 300,-300]
+[subRenderMoveEase #A 0,-300 0.3 easeOutQuint]
+[wt 0.4]
+
+＠E：杉谷善住坊
+そこだ！
+[k]
+
+[messageOff]
+[fadeout white 0.2]
+[cueSe SE_23 23_ade910]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[subRenderFadeout #A 0.1]
+
+[wt 0.1]
+
+[fadein white 0.2]
+[effect bit_talk_shot_01_once]
+[effect bit_talk_blow02]
+[charaShake D 0.05 4 5 1.0]
+[cueSe Battle bac22]
+[wait fade]
+
+[wt 1.0]
+[se ad22]
+
+[bgmStop BGM_BATTLE_62 2.0]
+[cueSe Battle ba6]
+[charaEffect D bit_talk_atomization_gra]
+[charaSpecialEffect D enemyErasure 1 1.3]
+[wait charaSpecialEffect D]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠杉谷善住坊
+よし。ここは仕留めた。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ビリー
+オールクリア。でも、このフロアには何もない。[r]もっと上に行こうか。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_81 1.0 0.5]
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+[se ade74]
+[wt 0.1]
+[se ade428]
+[wt 0.2]
+[se ade422]
+
+[charaFadeout B 0.1]
+[scene 145300]
+[charaFadein O 0.1 0,-220]
+
+[wt 1.5]
+[seStop ade74 0.5]
+[seStop ade428 0.5]
+[seStop ade422 0.5]
+[wt 1.5]
+
+[charaMove O -30,-250 3.5]
+[charaMoveScale O 1.3 3.5]
+[wipein rightToLeft 1.0 1.0]
+[se adm36]
+[wt 0.1]
+[se ad95]
+[wt 0.2]
+[cueSe SE_24 24_ad1405]
+[wait wipe]
+
+[wt 2.3]
+[seStop adm36 0.2]
+[seStop ad95 0.2]
+[cueSeStop 24_ad1405 0.2]
+[wt 0.2]
+[bgmStop BGM_EVENT_81 1.5]
+[se ad183]
+[charaTalk F]
+[charaFace F 17]
+[charaFadein F 0.4 250,-10]
+[charaMoveEase F 200,-10 0.4 easeOutCubic]
+[wt 0.4]
+
+＠F：杉谷善住坊
+……止まれ！
+[k]
+
+[messageOff]
+[charaTalk G]
+[charaFace G 5]
+[subRenderFadeinFSSideL #B 0.4 160,-170]
+[subRenderMoveFSSideL #B 130,-200 0.4]
+[wt 0.4]
+
+＠G：ビリー
+ん？
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+[charaTalk F]
+
+？1：どうしたの？
+？！
+
+[bgm BGM_EVENT_48 0.1]
+[charaTalk F,G]
+[wt 0.4]
+[se ade385]
+[charaMoveEase F 200,-60 1.5 easeOutExpo]
+[charaFace F 14]
+[wt 1.5]
+
+＠F：杉谷善住坊
+……。[r]……[wt 1.5][charaFace F 17]あった。罠だ。
+[k]
+
+＠F：杉谷善住坊
+本来は森に仕掛けるタイプの罠だな。[r]擬装が甘くて助かった。
+[k]
+
+[charaTalk G]
+[charaFace G 2]
+[subRenderFadeinFSSideL #B 0.2 130,-200]
+
+＠G：ビリー
+ブービートラップ？
+[k]
+
+[subRenderFadeout #B 0.2]
+[wt 0.2]
+
+[charaTalk F]
+[charaFace F 0]
+
+＠F：杉谷善住坊
+こっちじゃそう言うんだっけ？[r]ま、それだそれ。
+[k]
+
+[charaFace F 14]
+
+＠F：杉谷善住坊
+この紐にうっかり引っ掛かるとだな。
+[k]
+
+[messageOff]
+[charaMoveReturn F 200,-70 0.4]
+[se ade302]
+[wt 0.4]
+[cueSe Servants_204600 m44418]
+[charaFadeout F 0.2]
+[wt 0.2]
+[charaPut Z 0,0]
+[charaEffect Z bit_talk_blood_pile01]
+[wt 0.4]
+[shake 0.05 5 6 2.0]
+[cueSe Servants_1101900 m61731]
+
+[wt 2.5]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+？1：うわー……
+？！
+
+[messageOff]
+[charaEffectStop Z bit_talk_blood_pile01]
+[wt 0.6]
+[charaFadeout O 0.4]
+[wt 0.4]
+
+＠杉谷善住坊
+見ての通り、[r]鋭く尖った鉄棒が突き刺さることになる。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+
+[charaTalk H]
+[charaFace H 11]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+ありゃ。しかも魔力を帯びてるぞ。[r]サーヴァントでも負傷するんじゃないか、これ。
+[k]
+
+？1：シャドウサーヴァントの仕業かな？
+？！
+
+[charaFace H 1]
+
+＠ダ・ヴィンチ
+かもしれない。ともあれそのフロアは危険だ。[r]慎重に進もう。
+[k]
+
+[charaFadeout H 0.1]
+[charaPut Y 1200,1200]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+
+＠杉谷善住坊
+おう。罠は任せろ。[r]俺も狙撃手として、こういう仕掛けはよく作ったからな。
+[k]
+
+[charaFace A 0]
+
+＠杉谷善住坊
+仕事場と山とじゃあ、勝手が違うかもしれないが、[r]罠の思想……根本は同じだ。
+[k]
+
+＠杉谷善住坊
+つまり、いかに悪意を以て人を引っ掛けるかってこった。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ビリー
+ロビンがいたら悪そうなツラで賛同しそうだなぁ。[r]でも、僕もそれは理解できる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠杉谷善住坊
+ただ、歴史と土地の差異がこちらの推測を[r]ズラす可能性もあるな……。
+[k]
+
+[charaFace A 0]
+
+＠杉谷善住坊
+ダ・ヴィンチ、俺が気になった場所を指定したら、[r]綿密に解析してくれるか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_48 2.0]
+[charaPut Y 1]
+[charaTalk H]
+[charaFace H 17]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+いいともいいとも。たまたま専門のサーヴァントも[r]いたし、アドバイザーとして協力してもらうよ。
+[k]
+
+？1：アドバイザーというと……
+？！
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠ロビンフッド
+へいへい、オレですよ。[r]ビリー、おまえさんなぁ……。
+[k]
+
+[charaFadeout C 0.1]
+[charaPut Y 1200,1200]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ビリー
+あはは、聞かれてた！[r]ごめんごめん。でも悪そうなツラで賛同するだろ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ロビンフッド
+するけどな！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+よし、それじゃ進もうか。[r]もちろん、マスターの安全優先でね！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

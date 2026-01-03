@@ -1,0 +1,223 @@
+
+＄03-00-12-11-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1043000 1 ローラン]
+[charaSet B 7007001 1 ヴラド三世]
+[charaSet C 1098235300 1 ドン・キホーテ]
+[charaSet D 1098235300 1 サンチョ]
+[charaSet E 1098234230 1 クラス・セイバー]
+[charaSet F 1098234330 1 クラス・アーチャー]
+[charaSet G 1098234430 1 クラス・ランサー]
+[charaSet H 1098234630 1 クラス・ライダー]
+[charaSet I 1098234530 1 クラス・キャスター]
+[charaSet J 1098231810 1 徐福]
+
+[scene 153000]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace G 0]
+[charaFadeinFSR E 0.1 2]
+[charaFadeinFSL G 0.1 0]
+＠クラス・セイバー
+撤退！　撤退だ！
+[k]
+
+＠クラス・ランサー
+くそ、いい案だと思ったのにな！
+[k]
+
+＠クラス・セイバー
+こんな色物めいた連中に敗北するとは！[r]我が騎士団の名折れ……くぅっ！
+[k]
+
+＠クラス・ランサー
+まったくだ。どうしてこんなポンコツ部隊に……！
+[k]
+
+＠徐福
+どうしたこのヤロー！[r]今から殴りに行くからねこのヤロー！
+[k]
+
+＠クラス・セイバー
+も[messageShake 0.05 4 3 0.4]う嫌だ帰るーーー！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad769]
+[wt 0.1]
+[seStop ad769 1.1]
+[charaMoveFSR E 356,0 0.4]
+[charaMoveFSL G -156,0 0.4]
+[charaFadeout E 0.4]
+[charaFadeout G 0.4]
+[wt 1.6]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ローラン
+捨て台詞ご苦労様。[r]さて、俺たちの役割はここでおしまいっと。
+[k]
+
+
+[charaFace A 4]
+＠ローラン
+この様子じゃ、概ね予想通りだが……。[r]一応、ヴラド公を見に行ってみるとするか。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ヴラド三世
+[line 3]という訳で、余がこの軍の指揮を執る。[r]そして汝らを統率し、調練を施す。
+[k]
+
+＠ヴラド三世
+異論も反論もない、ということでいいか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace I 0]
+[charaFadeinFSR E 0.1 2]
+[charaFadeinFSL I 0.1 0]
+＠クラス・セイバー
+あり、ま、せん……。
+[k]
+
+＠クラス・キャスター
+鬼だ、鬼がいる……。
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFace F 0]
+[charaFadeinFSR H 0.1 2]
+[charaFadeinFSL F 0.1 0]
+＠クラス・ライダー
+マジで何なの……何やっても勝てる気しなかった……。
+[k]
+
+＠クラス・アーチャー
+こんな貧相な砦一つ壊せないとか……。[r]英雄の名が泣く……。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+[wt 0.2]
+
+[cueSe SE_21 21_ad1066]
+[wt 0.4]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth C 2]
+[charaFace D 0]
+[charaFace C 0]
+[charaFadein D 0.4 120,0]
+[charaFadein C 0.4 -120,0]
+[wt 0.4]
+[cueSeStop 21_ad1066 0.2]
+[wt 0.4]
+
+[charaTalk on]
+＠D：？？？
+予想通りでしたが、[r]実に凄かったですね。[wt 0.6]あ、サンチョです。
+[k]
+
+[clear]
+＠C：？？？
+怖……怖……。
+[k]
+
+？1：ふ、二人とも大丈夫？
+？！
+
+[messageOff]
+[charaTalk off]
+[wt 0.1]
+
+[cueSe SE_21 21_ade580]
+[wt 0.15]
+[charaCrossFade C 1098243510 4 0.5]
+[charaCrossFade D 1098243600 1 0.5]
+[wt 0.3]
+[cueSeStop 21_ade580 0.4]
+[wt 1.0]
+
+[charaTalk on]
+＠サンチョ
+大丈夫です。[r]城はほぼ無人ですので。
+[k]
+
+＠ドン・キホーテ
+統率された軍ほど怖いものはないと、[r]思い知らされましたワシ。
+[k]
+
+[charaFace D 0]
+＠サンチョ
+そうですね。[r]やはり救出できて良かった。
+[k]
+
+＠サンチョ
+軍事面はヴラド公にお任せすれば、[r]ひとまずは及第点まで持って行けそうです。
+[k]
+
+[charaFace C 0]
+＠ドン・キホーテ
+うむ。[r]……となると。
+[k]
+
+＠サンチョ
+はい、ここから先はヴラド公とも相談し、[r]積極的に動くことになるかと。
+[k]
+
+[charaFace D 1]
+＠サンチョ
+皆様、よろしくお願いいたします。
+[k]
+
+[messageOff]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

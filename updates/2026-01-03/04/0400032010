@@ -1,0 +1,521 @@
+
+
+＄04-00-03-20-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 1098288800 1 ハサン]
+[charaSet B 1098290800 1 叔母]
+
+[imageSet W back10000 1 1]
+[charaScale W 1.01]
+[imageSet X back10000 1 1]
+[charaScale X 1.01]
+[charaDepth W 10]
+[charaDepth X 10]
+
+[scene 211900]
+
+[cueSe SE_24 24_ad1359 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.5]
+[cueSeStop 24_ad1359 1.0]
+
+[scene 10000 1.0]
+[wt 2.0]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[cameraMove 0.1 0,15 1.01]
+[blur lens 0.1 2 20]
+
+[scene 212200]
+[wt 0.5]
+
+[cueSe SE_24 24_ad1359 1.0 0.2]
+[wipein openEye 1.0 1.0]
+[wait wipe]
+
+[wt 0.4]
+
+[wipeout openEye 0.8 1.0]
+[wait wipe]
+
+[wt 0.2]
+
+[wipein openEye 1.0 1.0]
+[blurOff lens 1.0]
+[wait wipe]
+
+[cueSeStop 24_ad1359 1.0]
+[wt 1.0]
+
+？1：（ベッドから出る）
+
+[se ad661]
+[wt 2.0]
+
+[cameraMove 0.7 0,0 1.01]
+[wt 1.2]
+[bgm BGM_EVENT_2 0.1]
+
+[branch lblConf01]
+
+？2：（瞼を閉じる）
+
+？！
+
+[wipeout openEye 0.8 1.0]
+[wait wipe]
+
+[scene 10000]
+[wt 0.1]
+
+[wipein openEye 0.1 1.0]
+[wait wipe]
+
+[wt 1.0]
+[bgm BGM_EVENT_2 0.1]
+
+
+＠ハサン
+……オレはおまえの目覚ましじゃないんだが。
+[k]
+
+＠ハサン
+二度寝するつもりなら、[r]残念ながら目覚まし代わりをやることになる。
+[k]
+
+＠ハサン
+具体的にどうするかと言うと、[r]強制的に寝床から叩き出す。
+[k]
+
+＠ハサン
+どうする？
+[k]
+
+？1：（瞼を開ける）
+
+？2：（声を無視する）
+
+＠ハサン
+……あー、そういう態度か。
+[k]
+
+＠ハサン
+やれやれ。[r]仕方ないな。
+[k]
+
+＠ハサン
+宣言通り、おまえを寝床から叩き出して、[r]寝間着を[#剥:は]ぎ取る。
+[k]
+
+＠ハサン
+まだ、朝に吐く息が白い頃合いだ。[r]寒いぞ。
+[k]
+
+＠ハサン
+どうする？
+[k]
+
+？！
+
+
+[messageOff]
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 212200]
+[wt 0.1]
+
+[cueSe SE_24 24_ad1359 1.0 0.2]
+[wipein openEye 1.0 1.0]
+[wait wipe]
+[wt 0.5]
+
+[se ad661]
+[wt 2.0]
+
+[cueSeStop 24_ad1359 0.7]
+[cameraMove 0.7 0,0 1.01]
+[wt 1.2]
+
+？！
+
+[branch lblConf01]
+
+[label lblConf01]
+
+
+？1：（鏡を見る）
+？！
+
+[overlayFadein W 0.1 0,-786]
+[overlayFadein X 0.1 0,796]
+[charaMove W 0,-696 1.5]
+[charaMove X 0,726 1.5]
+[cameraMove 1.5 0,0 1.15]
+[cameraMoveEase 0,-15 1.5 easeOutSine 1.15]
+[wt 1.7]
+
+＠
+姿見の鏡へ視線を送る、と[line 3]
+[k]
+
+＠
+あなた／わたしの視界には、[r]寝間着姿のあなたが映り込む。
+[k]
+
+[messageOff]
+[wt 1.2]
+
+＠
+一秒、二秒。
+[k]
+
+[messageOff]
+[wt 0.8]
+
+＠
+もう、大丈夫。[r]もう、誰も語りかけてきたりしない。
+[k]
+
+[messageOff]
+[charaMove W 0,-786 1.5]
+[charaMove X 0,796 1.5]
+[cameraMoveEase 0,0 1.5 easeOutSine 1.0]
+[wt 1.0]
+[charaFadeout W 0.5]
+[charaFadeout X 0.5]
+[wt 1.0]
+
+？1：ハサン
+
+
+[charaPut A 1]
+[se ad595]
+[charaTalk A]
+[charaFace A 0]
+[charaSpecialEffect A wipeTimeRe 0 1.5 0 0.5]
+[wt 2.0]
+[charaFadein A 0.1 1]
+
+＠ハサン
+何だ。
+[k]
+
+？2：おはよう、ハサン
+
+
+[charaPut A 1]
+[se ad595]
+[charaTalk A]
+[charaFace A 0]
+[charaSpecialEffect A wipeTimeRe 0 1.5 0 0.5]
+[wt 2.0]
+[charaFadein A 0.1 1]
+
+＠ハサン
+……ああ。朝だな。
+[k]
+
+？！
+
+？1：今日一日、叔母さんのことをお願い
+？！
+
+＠ハサン
+元よりそのつもりだぞ。[r]心配するな。
+[k]
+
+？1：ありがとう
+？！
+
+[charaFace A 1]
+
+＠ハサン
+……ん？
+[k]
+
+＠ハサン
+護衛任務の経験がない訳じゃない。[r]どうってことはないぞ。
+[k]
+
+[charaFace A 0]
+
+＠ハサン
+それに。前みたいなことがあれば、[r]おまえの[#性能:パフォーマンス]が落ちかねない。
+[k]
+
+＠ハサン
+仮契約もせず言うことじゃないが、[r]そんなことは望んじゃいない。
+[k]
+
+＠ハサン
+役目は果たすさ。
+[k]
+
+[messageOff]
+[charaFace A 14]
+[wt 1.5]
+[charaFace A 0]
+
+＠ハサン
+…………なあ。
+[k]
+
+＠ハサン
+気付いてるのか？[r]おまえ、眠っている時はいつも……[line 3]
+[k]
+
+＠ハサン
+……。[r]……。
+[k]
+
+？1：ハサン？
+？2：眠っている時の[&自分:わたし]が、何？
+
+？！
+
+[charaFace A 13]
+
+＠ハサン
+………………。
+[k]
+
+[charaFace A 14]
+
+＠ハサン
+……いや。いい。[r]多分オレの言うことじゃない。
+[k]
+
+[charaFace A 0]
+
+＠ハサン
+じゃあな。
+[k]
+
+[messageOff]
+[se ad595]
+[charaSpecialEffect A wipeTime 0 1.5 0 0.5]
+[wt 2.5]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.01]
+
+[scene 212100]
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_147 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠叔母
+[f large]フレンチトーストを！
+[k]
+
+＠叔母
+[f large]焼いてみたぞ！
+[k]
+
+[charaFace B 3]
+
+＠叔母
+ふふ。[r]すまんな、勢い強めに言ってしまった。
+[k]
+
+＠叔母
+姉さんの好物だったんだ。[r]確か、幼い頃のおまえも好きだったか。
+[k]
+
+？1：（曖昧に頷く）
+
+[messageOff]
+[cameraMove 0.8 0,10 1.01]
+[wt 0.8]
+[cameraMove 0.8 0,0 1.01]
+[wt 1.3]
+
+？2：（頷く）
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.9]
+
+？！
+
+[charaFace B 2]
+
+＠叔母
+私は、姉さんとは違って少し苦手でな。[r]甘すぎるのはあまり好まない子供だったんだ。
+[k]
+
+＠叔母
+だが、今は分かる。
+[k]
+
+[charaFace B 13]
+
+＠叔母
+甘いものはいい。[r]嗜好品と思っていたが、そんなことはない。
+[k]
+
+＠叔母
+立派な補給物資だ。[r]特に、疲れて帰ってから……
+[k]
+
+[charaFace B 2]
+
+＠叔母
+泥のように眠って、目を覚まして。[r]朝にいただくフレンチトーストの素晴らしさだ。
+[k]
+
+＠叔母
+何というか、[r]染み渡る[line 3]という実感がある。
+[k]
+
+[charaFace B 3]
+
+＠叔母
+ふふ。悪いな。[r]おまえくらいの時分ではまだ分からんな？
+[k]
+
+[charaFace B 2]
+
+＠叔母
+だが覚えておくといい。[r]疲れた体には、甘いものがいい。
+[k]
+
+＠叔母
+勿論、摂り過ぎには注意が要るが……
+[k]
+
+[bgmStop BGM_EVENT_147 1.2]
+
+[messageOff]
+[wt 0.5]
+
+？1：叔母さん
+？！
+
+[charaFace B 0]
+
+＠叔母
+うん？
+[k]
+
+？1：……ありがとう
+？！
+
+[charaFace B 8]
+
+＠叔母
+何だ、改まって。
+[k]
+
+[messageOff]
+[charaFaceFade B 18 0.2]
+[wt 1.5]
+
+[bgm BGM_EVENT_116 0.1]
+
+[charaFaceFade B 2 0.2]
+
+＠叔母
+だが悪い気分はしないな。[r]その言葉は素直に受け止めておくとしよう。
+[k]
+
+＠叔母
+……。[r]……。
+[k]
+
+[charaFace B 0]
+
+＠叔母
+ん……。[r]ちょっと、じっとしていろ。
+[k]
+
+[messageOff]
+[se ad337]
+[charaMoveScale B 1.15 0.7]
+[charaMove B 0,15 0.7]
+[wt 0.5]
+[seStop ad337 0.3]
+[wt 0.9]
+
+＠叔母
+顔をよく見せろ。[r]……うん。
+[k]
+
+＠叔母
+おまえ[line 3][r]今朝は、随分と精悍な顔つきをしているな？
+[k]
+
+＠叔母
+そんな顔ができるようになったのか。[r]つい、先日までは……
+[k]
+
+＠叔母
+あんなに小さかった、[&甥っ子:姪っ子]が。
+[k]
+
+[charaFace B 16]
+
+＠叔母
+そうか。おまえ……
+[k]
+
+＠叔母
+こんなに大きくなっていたんだな。
+[k]
+
+[messageOff]
+[se ad337]
+[charaMoveScale B 1.0 0.7]
+[charaMove B 1 0.7]
+[wt 0.5]
+[seStop ad337 0.2]
+[wt 0.9]
+
+[charaFace B 6]
+
+＠叔母
+……。[r]……。
+[k]
+
+[charaFace B 16]
+
+＠叔母
+…………フレンチトーストは食べていけ。[r]いいな？
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.9]
+
+[charaFaceFade B 19 0.2]
+[wt 2.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_116 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

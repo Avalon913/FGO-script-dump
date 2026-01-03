@@ -1,0 +1,896 @@
+
+
+＄94-03-35-80-5-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 25014001 1 蒼崎青子]
+[charaSet B 25014000 1 蒼崎青子]
+
+[charaSet C 25014001 1 蒼崎青子_演出用]
+[charaScale C 1.2]
+[charaSet D 25014000 1 蒼崎青子_演出用]
+[charaScale D 1.2]
+
+[charaSet E 98115000 1 エフェクト用]
+
+[sceneSet F 211300 1]
+[charaScale F 1.2]
+[sceneSet G 215700 1]
+[charaScale G 1.2]
+[sceneSet H 216005 1]
+[charaScale H 1.2]
+[sceneSet I 217200 1]
+[charaScale I 1.2]
+
+[sceneSet K 10000 1]
+[charaScale K 1.2]
+
+[sceneSet L 211300 1]
+[charaScale L 1.2]
+
+
+
+
+[scene 211300]
+
+[fadein black 1.0]
+[cueSe SE_24 24_ad1364 1.0 0.5]
+[wait fade]
+
+[wt 1.0]
+
+？1：いよいよ２月中旬……
+
+？2：宴もたけなわ、という事[&か:ね]……！
+
+？！
+
+[cueSe SE_24 24_ad1366]
+[wt 1.5]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[cueSeStop 24_ad1364 0.5]
+[wait wipe]
+
+[charaFadein K 0.1 0,-250]
+[subCameraOn 2]
+[subCameraFilter #A maskEdge cut359_mask05 30 0,0,0,255 1]
+[subCameraFilter #B maskEdge cut359_mask05 30 0,0,0,255 1]
+[subRenderScale #A 1.5]
+[subRenderScale #B 1.5]
+[charaLayer A sub #A]
+[charaLayer F sub #A]
+[charaDepth F 1]
+[charaDepth A 2]
+[charaFadein F 0.1 -600,-50]
+[charaFace A 0]
+[charaFadein A 0.1 150,250]
+[charaLayer C sub #B]
+[charaLayer L sub #B]
+[charaDepth L 1]
+[charaDepth C 2]
+[charaFadein L 0.1 -500,-70]
+[charaFace C 0]
+[charaFadein C 0.1 -200,350]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.1 1.0]
+[wait wipe]
+
+[charaTalk off]
+[se ade421]
+[seVolume ade421 0 0.5]
+[subRenderFadein #A 0.1 250,-150]
+[wt 0.4]
+[subRenderFadeout #A 0.1]
+[subRenderFadein #B 0.1 0,-150]
+[wt 0.1]
+[charaMove A 0,170 0.1]
+[wt 0.4]
+[subRenderFadeout #B 0.1]
+[subRenderFadein #A 0.1 -250,-150]
+[wt 0.1]
+[charaFadeout C 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaLayer C normal]
+[charaLayer L normal]
+[wt 0.4]
+
+[seStop ade421 0.1]
+[wt 0.3]
+
+＠蒼崎青子
+[tVoiceUser ValVoice_2501400 0_V010 ValVoice_2501400 0_V020]
+そうよ[%1][&君:さん]。[wait tVoice]
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaLayer A normal]
+[charaLayer F normal]
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth F 2]
+[charaDepth C 3]
+[charaDepth K 4]
+[charaFadein C 0.1 220,0]
+[charaMove C 40,0 60.0]
+[charaFadein F 0.6 50,-250]
+[charaMove F -50,-250 60.0]
+[wt 0.1]
+[charaFadeout K 0.6]
+[wt 0.6]
+[bgm BGM_MIZUGI_2022_1 0.1]
+
+＠蒼崎青子
+[tVoiceUser ValVoice_2501400 0_V030 ValVoice_2501400 0_V040]
+マンボウのように非戦主義者の[&君:貴女]にも[r]ここが戦場である事をようやく理解できたようね。[wait tVoice]
+[k]
+
+[charaFace C 23]
+
+＠蒼崎青子
+[tVoice ValVoice_2501400 0_V050]
+そう。人生の[#転機:ピンチ]は不意打ち気味に[r]やってくるものだけど、この時期だけは違うわ。[wait tVoice]
+[k]
+
+[masterBranch lblmst01a lblmst01b]
+
+
+[label lblmst01a]
+
+[charaFace C 12]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠蒼崎青子
+[tVoice ValVoice_2501400 0_V060]
+……だって、用意は３日前からできるから。[r]他の人より、私との時間の方が、いいでしょ？[wait tVoice]
+[k]
+
+？1：それは……まさか……
+？2：バレンタイン・デートのお誘い……！？
+
+？！
+
+[messageOff]
+[charaFadeout F 0.6]
+[charaFadeout C 0.6]
+[bgmStop BGM_MIZUGI_2022_1 0.6]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 14]
+
+＠A：蒼崎青子
+[tVoice ValVoice_2501400 0_V070]
+え。[wait tVoice]
+[k]
+
+？1：あれ、違った……？
+
+？！
+
+[charaFace A 16]
+[bgm BGM_EVENT_7 0.1]
+
+＠A：蒼崎青子
+[tVoice ValVoice_2501400 0_V080]
+違う！[r]うちの高校、15日から期末試験でしょうが！[wait tVoice]
+[k]
+
+[charaFace A 24]
+
+＠A：蒼崎青子
+[tVoice ValVoice_2501400 0_V090]
+君、二学期の試験さんざんだったでしょ。[r]冬休みも学校に来てたし。私もいたし。[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠A：蒼崎青子
+[tVoice ValVoice_2501400 0_V100]
+でも二度目はなしよ。[r]せっかくの春休みを補習なんかに使わせないわ。[wait tVoice]
+[k]
+
+[charaFace A 24]
+
+＠A：蒼崎青子
+[tVoice ValVoice_2501400 0_V110]
+予定がないなら今日から当日まで試験勉強しましょ。[r]安心して、場所ならいいところがあるから。[wait tVoice]
+[k]
+
+[branch lblmst01]
+
+
+[label lblmst01b]
+
+[charaFace C 03]
+[charaFace A 03]
+[charaFadein A 0.1 1]
+
+＠蒼崎青子
+[tVoice ValVoice_2501400 0_V120]
+だって対策は3日前からできるから。[r][#用意万端:よ う い ば ん た ん]、クラウチングの準備はＯＫ？[wait tVoice]
+[k]
+
+？1：……もちろん……
+
+？2：吟味に吟味を重ねたチョコが、[#鞄:かばん]にあるよ！
+
+？！
+
+[messageOff]
+[charaFadeout F 0.6]
+[charaFadeout C 0.6]
+[bgmStop BGM_MIZUGI_2022_1 0.6]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 15]
+
+＠A：蒼崎青子
+[tVoice ValVoice_2501400 0_V130]
+え。[wait tVoice]
+[k]
+
+？1：あれ、違うの？
+
+？！
+
+[charaFace A 26]
+[bgm BGM_EVENT_7 0.1]
+
+＠A：蒼崎青子
+[tVoice ValVoice_2501400 0_V140]
+へ、へぇ～、そう。[%1]ったら[r]贈る相手、いるんだ。へぇー。[wait tVoice]
+[k]
+
+[charaFace A 16]
+
+＠A：蒼崎青子
+[tVoice ValVoice_2501400 0_V160]
+じゃなくて！[r]15日から期末試験だって忘れているのかしらねぇ！？[wait tVoice]
+[k]
+
+[charaFace A 25]
+
+＠A：蒼崎青子
+[tVoice ValVoice_2501400 0_V170]
+[%1]、[r]二学期の成績赤信号ギリギリだったでしょ。[wait tVoice]
+[k]
+
+＠A：蒼崎青子
+[tVoice ValVoice_2501400 0_V180]
+友人としてほっとけないのよ。[r]っていうかその理由がいま分かったわよ。[wait tVoice]
+[k]
+
+[charaFace A 27]
+
+＠A：蒼崎青子
+[tVoice ValVoice_2501400 0_V190]
+チョコを渡すのは止めないけど、[r]その後の地獄は覚悟してもらうわ。[wait tVoice]
+[k]
+
+＠A：蒼崎青子
+[tVoice ValVoice_2501400 0_V200]
+安心して。そして任せて。[r]一夜漬けにいいお化け屋敷を知ってるから。[wait tVoice]
+[k]
+
+[label lblmst01]
+
+？1：そんなぁ～～！
+？2：（試験勉強、３日前からでいいんだ！？）
+
+？！
+
+
+[messageOff]
+[blur lens 1.0 4 1]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wipeout openEye 0.1 1]
+[wait wipe]
+
+[fadein black 0.1]
+[wait fade]
+
+
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[label lblClear01a]
+[scene 106000]
+[sceneSet J 106000 1]
+[charaScale J 1.3]
+[branch lblConf01]
+
+[label lblClear01b]
+[scene 105800]
+[sceneSet J 105800 1]
+[charaScale J 1.3]
+[branch lblConf01]
+
+[label lblClear01c]
+[scene 157900]
+[sceneSet J 157900 1]
+[charaScale J 1.3]
+[label lblConf01]
+
+[charaFadein J 0.1 0,-250]
+[wt 1.2]
+
+[wipein openEye 0.5 1.0]
+[charaMove J 0,-300 0.5]
+[se ad7]
+[wait wipe]
+
+[bgm BGM_EVENT_77 0.1]
+
+[blurOff lens 1.0]
+[wt 1.5]
+
+？1：現実味しかない夢だった
+？2：よし、顔を洗おう
+
+？！
+
+[messageOff]
+
+[charaFadeout J 0.6]
+[se ad77]
+[seVolume ad77 0 0.5]
+[wt 0.6]
+[seStop ad77 0.1]
+[wt 1.2]
+
+
+[se ade203]
+[seVolume ade203 0 0]
+[seVolume ade203 0.3 1.0]
+[wt 2.5]
+[seStop ade203 0.3]
+[wt 0.5]
+[se ade114]
+[wt 1.5]
+
+[masterBranch lblmst02a lblmst02b]
+[label lblmst02a]
+[branch lblmst02]
+
+[label lblmst02b]
+[cueSe SE_24 24_adm102 0 0]
+[wt 0.2]
+[cueSeVolume 24_adm102 0.1 0.5]
+[wt 0.8]
+[cueSe SE_21 21_ade600 0 0.4]
+[wt 1.0]
+[se adm74]
+[seVolume adm74 0 0.6]
+[wt 0.3]
+[seStop adm74 0.1]
+[wt 0.2]
+[se adm74]
+[seVolume adm74 0 0.6]
+[wt 0.3]
+[seStop adm74 0.1]
+[wt 0.8]
+[label lblmst02]
+
+[wt 0.2]
+
+
+[se ade12]
+[wt 1.8]
+
+＠蒼崎青子
+[tVoice ValVoice_2501400 0_V210]
+マスター、いる～？[r]蒼崎だけどー。[wait tVoice]
+[k]
+
+＠蒼崎青子
+[tVoice ValVoice_2501400 0_V220]
+アポなし朝イチでごめんね～。[r]取り込み中ならいったん帰るから言ってー。[wait tVoice]
+[k]
+
+？1：はーい、どうぞー
+
+？2：いいよー、おはようー
+
+？！
+
+[messageOff]
+[se ad8]
+[wt 2.0]
+
+[se ade422]
+[seVolume ade422 0 0.3]
+[seVolume ade422 1.0 1.0]
+[wt 0.6]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.4 1]
+[wt 0.4]
+[seStop ade422 0.1]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V230]
+はいおはよう～。[r]さっすが、休日でもちゃんと起きてる！[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V240]
+いつもカルデアのお仕事ご苦労様。[r]そんなマスターのために慰安旅行……[wait tVoice]
+[k]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V250]
+は無理だけど、半日だけ息抜き、してみない？[r]リラクゼーションってヤツ。[wait tVoice]
+[k]
+
+？1：というと、シミュレーションで？
+
+？！
+
+[charaFace B 18]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V260]
+あー、有珠が最近はまり気味のヤツね。[r]ん、あれも凄いけど今回はパス。[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V270]
+シミュレーションの観光旅行もいいけど、[r]やっぱり生の体験が一番っていうか……[wait tVoice]
+[k]
+
+[charaFace B 19]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V280]
+反則技はこういう時に使わないと。[r]朝イチの貸し切り温泉とか、リッチじゃない？[wait tVoice]
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[scene 10000]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[se ad12]
+[effect bit_talk_07_fs]
+[wt 4.0]
+
+[fadeout white 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_07_fs]
+
+
+[scene 215700]
+[charaFadein G 0.1 30,-250]
+[charaMove G -30,-250 6.0]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+[bgm BGM_YAMA 0.1]
+
+[wt 3.2]
+[charaFadeout G 0.6]
+[wt 0.8]
+
+[masterBranch lblmst03a lblmst03b]
+[label lblmst03a]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V290]
+というワケで、[#隈乃:くまの]温泉です！[r]旅館の主人に話は通してあるわ！[wait tVoice]
+[k]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V300]
+貸し切りだから他のお客さんはおりません！[r]ひとりでゆったり五つの秘湯を楽しんで！[wait tVoice]
+[k]
+
+[branch lblmst03]
+[label lblmst03b]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V310]
+というワケで、[#隈乃:くまの]温泉に到着～。[r]たまには広い浴槽でリラックスしないとね！[wait tVoice]
+[k]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V320]
+あ、もちろん[#豪腕:う　で]にものを[r]言わせての貸し切りだから安心して。[wait tVoice]
+[k]
+
+[charaFace B 9]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V330]
+いや～、いつか[%1]と一緒に[r]リベンジしたかったのよね、ここ。[wait tVoice]
+[k]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V340]
+今度はヘンな殺人事件も起きないし、[r]ゆっくり五つの秘湯を楽しみましょう！[wait tVoice]
+[k]
+
+[label lblmst03]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_YAMA 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth I 1]
+[charaDepth E 2]
+[charaFadein H 0.1 20,-160]
+[charaMove H -20,-160 5.5]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[se ad663]
+[seVolume ad663 0 0.4]
+
+[masterBranch lblmst04a lblmst04b]
+[label lblmst04a]
+[se ad1042]
+[seVolume ad1042 0 0.4]
+[wt 2.4]
+[seStop ad1042 0.1]
+[wt 0.1]
+[branch lblmst04]
+[label lblmst04b]
+[se ad1042]
+[seVolume ad1042 0 0.3]
+[wt 0.3]
+[cueSe SE_24 24_ade1037]
+[cueSeVolume 24_ade1037 0 0.3]
+[wt 2.1]
+[seStop ad1042 0.1]
+[cueSeStop 24_ade1037 0.1]
+[wt 0.1]
+
+[label lblmst04]
+
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[seVolume ad663 0.5 0.2]
+[wait wipe]
+[charaFadeout H 0.1]
+[charaFadein I 0.1 0,-200]
+[charaPut E 0,0]
+[charaEffect E bit_talk_yuge_fs]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[seVolume ad663 0.5 0.4]
+[wait wipe]
+
+[se ade151]
+[wt 3.5]
+
+[fadeout black 1.5]
+[seStop ad663 1.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+[charaEffectStop E]
+
+
+[scene 215700]
+[charaScale G 1.3]
+[charaFadein G 0.1 200,-160]
+[charaShake G 0.05 1 1 0]
+[wt 1.5]
+
+[fadein black 1.5]
+[se ade127]
+[seVolume ade127 0 0]
+[seVolume ade127 1.5 0.3]
+[wait fade]
+
+[bgm BGM_EVENT_94 0.1]
+
+？1：いやぁ……命の洗濯、最高……
+？2：湯上がりのマッサージ機がたまらない……
+
+？！
+
+[wt 0.3]
+[se ade499]
+[wt 0.4]
+[charaShakeStop G]
+[seStop ade127 0.1]
+[wt 0.4]
+[seStop ade499 0.3]
+[wt 1.2]
+[charaFadeout G 0.6]
+[wt 1.2]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V350]
+満喫できたようで良かった。[r]実のところ少しだけ不安だったのよね。[wait tVoice]
+[k]
+
+[charaFace B 24]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V360]
+もっと能動的な、それこそ遊園地みたいな[r]場所の方が良かったんじゃないかって。[wait tVoice]
+[k]
+
+＠B：蒼崎青子
+[tVoiceUser ValVoice_2501400 0_V370 ValVoice_2501400 0_V380]
+[%1][&君:さん]、10代なんだし。[r]温泉は地味じゃないかなって。[wait tVoice]
+[k]
+
+[charaFace B 11]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V390]
+ほら、富士山の近くだったら温泉の後に[r]遊園地に、なんてプランもできたけど、[wait tVoice]
+[k]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V400]
+私が縁のある温泉ってここしかなかったから……[wait tVoice]
+[k]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V410]
+この宿の主人の[#木乃:き　の]……[r][#隈乃院:く ま の い ん]さんのヤツ、派手好きのクセに[wait tVoice]
+[k]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V420]
+『保養地には温泉宿だけがあるべきなんですわ。[r]　郷土博物館と民芸教室もあると尚良し』[wait tVoice]
+[k]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V430]
+なんて信念があるみたいで……。[r]コラボとか真っ先に乗りそうなキャラのクセに……[wait tVoice]
+[k]
+
+？1：地元の博物館、楽しいですよ
+？2：民芸教室、ためになりますよ
+
+？！
+
+[charaFace B 8]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V440]
+そっか。なんにでも興味を持てるのはいい事ね！[r]でもここの資料室はお勧めしないわ！[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_94 1.5]
+[charaFace B 17]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V450]
+[line 3]さて。[r]それじゃあ身も心もほぐれたところで……[wait tVoice]
+[k]
+
+[charaFace B 1]
+[bgm BGM_VALENTINE_1 0.1]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V460]
+はいこれ、バレンタインのチョコレート。[r]今日はそういう日でしょ？[wait tVoice]
+[k]
+
+[messageOff]
+
+
+[se ad79]
+[wt 0.1]
+[fowardEffect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[charaFace B 1]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V470]
+温泉だけじゃさすがに渋すぎると思って、[r]甘いものも用意しておきました。[wait tVoice]
+[k]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V480]
+ガラじゃないけどみんながやってるから[r]私も[line 3][wait tVoice]
+[k]
+
+[charaFace B 35]
+[charaFace D 35]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V490]
+なんて理由じゃなくて、私があげたいからあげるの。[r]部屋に帰ったら開けてね。[wait tVoice]
+[k]
+
+？1：[line 3]ありがとう
+？2：でもなんでここまで？
+
+？！
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth G 2]
+[charaDepth D 3]
+
+[charaTalk off]
+[charaScale G 1.2]
+[charaFadein G 0.6 0,-270]
+[charaFadein D 0.6 0,20]
+[wt 1.2]
+
+[charaFace D 1]
+
+＠蒼崎青子
+[tVoice ValVoice_2501400 0_V500]
+なんでって、[r]そりゃあマスターの事が好きだからよ？[wait tVoice]
+[k]
+
+＠蒼崎青子
+[tVoice ValVoice_2501400 0_V510]
+好きな人が喜んでくれるの、心の栄養になるでしょ？[wait tVoice]
+[k]
+
+[charaFace D 9]
+
+＠蒼崎青子
+[tVoice ValVoice_2501400 0_V520]
+マスターも嬉しい私も楽しい、でWin-Winってね！[r]なので今回は魔法を私的使用させていただきました！[wait tVoice]
+[k]
+
+＠蒼崎青子
+[tVoice ValVoice_2501400 0_V530]
+第三者を連れて時間旅行なんてしたら[r]後で他の魔法使いに叱られるけど、[wait tVoice]
+[k]
+
+＠蒼崎青子
+[tVoice ValVoice_2501400 0_V540]
+今日という機会は二度とないんだし！[r]遊ぶ時は遊ぶ、ズルする時はズルをするの精神ね！[wait tVoice]
+[k]
+
+？1：なるほど、さすがは最新の魔法使い
+
+[charaFace B 19]
+[charaFace D 19]
+
+＠蒼崎青子
+[tVoice ValVoice_2501400 0_V550]
+ええ、お褒めに[#与:あずか]り光栄至極でございましてよ。[r]出し惜しみはしない主義って、もう知ってるでしょ？[wait tVoice]
+[k]
+
+？2：ちょっと草十郎[&:さん]の気持ち分かった
+
+[charaFace B 14]
+[charaFace D 14]
+
+＠蒼崎青子
+[tVoice ValVoice_2501400 0_V560]
+なんで草十郎？　っていうか、[r]アイツの考えてる事とか深海より謎じゃない？[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout G 0.6]
+[charaFadeout D 0.6]
+[wt 1.2]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 1]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V570]
+さて、そろそろ時間ね。[r]ゆっくり休めたし、カルデアに帰ろっか。[wait tVoice]
+[k]
+
+＠B：蒼崎青子
+[tVoiceUser ValVoice_2501400 0_V580 ValVoice_2501400 0_V590]
+次の機会があれば、その時は[&君:貴女]のリクエストで。[r]行きたい場所、考えておいてね。[wait tVoice]
+[k]
+
+？1：アクアリウムとかプラネタリウムとかいいですね
+
+[messageOff]
+[charaFaceFade B 35 0.3]
+[wt 1.0]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V600]
+[line 3]ええ。[r]それならとっておきの場所を覚えてる。[wait tVoice]
+[k]
+
+＠B：蒼崎青子
+[tVoiceUser ValVoice_2501400 0_V610 ValVoice_2501400 0_V620]
+[&君:貴女]がこの旅を終えた後、必ず、[r]笑顔で遊びに行きましょう。[wait tVoice]
+[k]
+
+[bgmStop BGM_VALENTINE_1 2.0]
+
+？2：夢のキッツィーランドがいい
+
+[messageOff]
+[bgmStop BGM_VALENTINE_1 0.1]
+[charaFace B 27]
+[charaShake B 0.05 2 3 0.3]
+[wt 0.8]
+[bgm BGM_EVENT_146 0.1]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V630]
+いい度胸ね、台無しだわ。[r]さては有珠に聞いたわね？[wait tVoice]
+[k]
+
+＠B：蒼崎青子
+[tVoice ValVoice_2501400 0_V640]
+廃遊園地だけはナシ。[r]五回死ぬぐらいじゃ済まないっつーの。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_146 2.0]
+
+？！
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

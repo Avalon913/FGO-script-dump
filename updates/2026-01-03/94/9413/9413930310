@@ -1,0 +1,829 @@
+
+＄94-13-93-03-1-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1062001 1 黒姫]
+[charaSet B 1010000 1 エリザベート]
+[charaSet C 3057000 1 ビショーネ]
+[charaSet D 1098314800 1 チビドラゴン]
+[charaSet E 1098257810 1 マシュ]
+[charaSet F 4001000 1 メドゥーサ]
+[charaSet G 5043000 1 アスクレピオス]
+[charaSet H 1098257310 1 ダ・ヴィンチ]
+[charaSet I 1098313900 1 蛇竜人A]
+[charaSet J 1098312800 1 蛇竜人B]
+[charaSet K 1098312800 1 蛇竜人C]
+
+[sceneSet L 239100 1]
+[sceneSet M 239100 1]
+
+[imageSet N cut634_snake 1]
+
+[charaSet T 98115000 1 エフェクト用]
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_10_LowLevel]
+
+[sceneSet U 10000 1]
+[charaScale U 1.05]
+
+[imageSet V black_fade_re 1]
+
+[charaSet Z 1098313680 1 ？？？]
+[charaFilter Z silhouette 00000080]
+
+
+[scene 10000]
+[pictureFrame cut063_cinema]
+
+[charaTalk depthOff]
+[charaDepth L 0]
+[charaScale L 1.2]
+[charaPut L 0,-240]
+[charaFadeTime L 0.1 0.2]
+
+[subCameraOn 3]
+
+[charaLayer A sub #A]
+[charaLayer M sub #A]
+
+[charaLayer N sub #B]
+
+[charaLayer V sub #C]
+
+[subCameraFilter #A maskEdge cut359_mask07 20 0,0,0,255 1]
+[subCameraFilter #B maskEdge cut359_mask04 20 0,0,0,255 1]
+[subCameraFilter #C through]
+
+[subRenderDepth #A 4]
+[subRenderDepth #B 1]
+[subRenderDepth #C 2]
+
+[subRenderScale #B 1.2]
+
+[charaDepth A 6]
+[charaDepth M 5]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,270]
+[charaFadein M 0.1 -200,0]
+
+[charaScale N 0.9]
+[charaRoll N 20]
+[charaPut N 0,630]
+[charaFadeTime N 0 0.6]
+
+[charaScale V 1.4]
+[charaFadein V 0.1 0,-200]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_129 0.1]
+[wt 0.5]
+
+[subRenderScale #A 1.15]
+[subRenderFadeinFSR #A 0.4 200,-360]
+[subRenderFadeinFSR #C 0.4 400,0]
+[wt 0.4]
+
+＠黒姫
+ご報告を。
+[k]
+
+＠黒姫
+非常に[#稀事:まれごと]ではありましょうが……[r]王の威に公然と刃向かうものが。
+[k]
+
+
+＠？？？
+知っている。
+[k]
+
+＠？？？
+かつての我が美姫の名を与えた捕食竜、[r]アルナワーズの目を通して、見た。
+[k]
+
+＠？？？
+あれがおそらく、余に[#仇為:あだな]すために現れた、[r]星見台の者らであろう。
+[k]
+
+[charaFace A 3]
+
+＠黒姫
+ご存じでしたか。[r]対応は、[#如何:い　か]に。
+[k]
+
+＠？？？
+……。[r]……。
+[k]
+
+＠？？？
+捨て置け。
+[k]
+
+＠？？？
+一人。[r]否、[#一蛇]、怪しき者はいるが。
+[k]
+
+＠？？？
+手出しせずとも、[r]自然、余の世界はいずれ完成に至る。
+[k]
+
+＠？？？
+時間の問題である。[r]ならば、偉大なる王は座して待つのみ。
+[k]
+
+＠？？？
+余は、毒虫にすら至らぬ[#蛹:さなぎ]を、[r]小心に潰して回るほどの、小物ではない。
+[k]
+
+[charaFace A 15]
+
+＠黒姫
+……承知いたしました。
+[k]
+
+＠？？？
+だが。
+[k]
+
+＠？？？
+再び汝の前にそれらが立ち、[r]我が食事を[#阻碍:そがい]するようであれば。
+[k]
+
+＠？？？
+贄とするのを避ける[#由:よし]もない。[r]殺して、喰らえ。
+[k]
+
+[charaFace A 3]
+
+＠黒姫
+[line 3]はい。
+[k]
+
+＠黒姫
+では、そのように。
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ad1352]
+[seStop 24_ad1352 0.8]
+[charaFadeout A 0.4]
+[wt 0.4]
+
+＠？？？
+待て。
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.2 0,270]
+[cueSe SE_24 24_ad1352]
+[seStop 24_ad1352 0.2]
+[wt 1.0]
+
+＠？？？
+余は贄の肉を、脳味噌を喰らい、[r]腹は満たしたが。
+[k]
+
+＠？？？
+喉を潤しては、おらぬ。
+[k]
+
+
+＠？？？
+この世界を、この[#理:ことわり]を完成させるは、[r]大地たる余の満足。
+[k]
+
+[charaFace A 7]
+
+＠黒姫
+……。[r]……。
+[k]
+
+＠？？？
+余の喉を潤すは、美しき血だ。
+[k]
+
+＠？？？
+かつての二姫にも負けぬ、[r]美しきおまえの血だ。
+[k]
+
+[messageOff]
+[wt 0.7]
+
+＠？？？
+寄れ。
+[k]
+
+[messageOff]
+[charaTalk A]
+[wt 0.5]
+[charaFaceFade A 3 0.2]
+
+＠黒姫
+[line 3]はい。
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ad1352]
+[seStop 24_ad1352 1.0]
+[subRenderFadeout #A 0.4]
+[charaFadeout A 0.4]
+[subRenderFadeout #C 0.4]
+[wt 0.6]
+[charaFadeout M 0]
+[charaLayer A normal]
+
+[subRenderFadein #B 0.4 0,-400]
+[wt 1.8]
+[subRenderFadeout #B 0.4]
+
+[wt 1.0]
+
+[charaDepth A 6]
+[charaDepth Z 5]
+
+[charaTalk Z]
+[charaFace A 3]
+[charaFace Z 0]
+[charaFadein A 0.4 150,-50]
+[charaFadein Z 0.4 -250,0]
+[wt 1.0]
+＠？？？
+[#蛇:余]が、怖いか？
+[k]
+
+[charaFace A 15]
+
+＠黒姫
+……まさか。
+[k]
+
+[messageOff]
+[charaFaceFade A 13 0.3]
+[wt 1.2]
+
+[charaFaceFade A 2 0.2]
+
+＠黒姫
+私は、蛇を愛するものです。[r]ご存じでしょうに。
+[k]
+
+＠？？？
+[line 3]愚問であった。
+[k]
+
+[messageOff]
+[se ad460]
+[wt 1.6]
+
+[fadeout black 1.0]
+[wt 0.3]
+[cueSe SE_25 25_ade1167]
+[wait fade]
+
+
+
+
+[charaTalk depthOn]
+[pictureFrame]
+[charaFadeout N 0.1]
+[subRenderFadeout #A 0.1]
+[charaFadeout A 0.1]
+[charaFadeout Z 0.1]
+[charaFadeout L 0.1]
+[wt 1.2]
+
+[subCameraOff]
+[charaLayer N normal]
+[charaLayer M normal]
+
+
+＠黒姫
+っ、あっ……んんっ……！[r][line 3]あ[line 3]
+[k]
+
+[messageOff]
+[wt 0.4]
+[bgmStop BGM_MAP_129 1.5]
+[cueSe SE_22 22_ade812]
+[seVolume 22_ade812 0 0.7]
+[wt 0.5]
+[seStop 22_ade812 0.3]
+[wt 0.7]
+[cueSe SE_22 22_ade812]
+[seVolume 22_ade812 0 0.3]
+[wt 0.5]
+[seStop 22_ade812 0.3]
+[wt 1.0]
+
+[scene 238700]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSe SE_22 22_ade815]
+[seVolume 22_ade815 0 0.3]
+[seVolume 22_ade815 1.0 1.0]
+[wt 1.3]
+[seStop 22_ade815 0.3]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[charaMoveReturn B 0,5 0.3]
+[wt 0.3]
+
+＠エリザベート
+ぷはー！　勇者の飲み物と言えばやっぱりコレ！[r]ポーションよね！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+
+＠ビショーネ
+こ、今度はエリちゃん先輩が、[r][#毒々しい:サ　イ　ケ　な]色の謎の液体を……！
+[k]
+
+[charaFace C 20]
+
+＠ビショーネ
+でも、今度は聞いたことがあります。
+[k]
+
+[charaFace C 7]
+
+＠ビショーネ
+栄養ドリンクは命を削ってでも働く[r]社会人のたしなみ。むしろ主食だと！
+[k]
+
+[charaFace C 11]
+
+＠ビショーネ
+わ、わたしも慣れないといけないんでしょうか……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠チビドラゴン
+きゅぴー！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ビショーネ
+この子も飲みたがってるみたいだし。
+[k]
+
+＠ビショーネ
+うーん、わたしは自分が思ってるよりも[r]食いしん坊だったのかな……。
+[k]
+
+？1：謎ポーションはエリちゃんだけに任せて
+？2：お水で充分だと思うよ、はい
+？！
+
+[charaFace C 2]
+
+＠ビショーネ
+あ、ありがとうございます、[r][%1]さん！
+[k]
+
+[charaMoveReturn C 0,3 0.3]
+[se ad217]
+[seVolume ad217 0 0.6]
+
+＠ビショーネ
+ごくごく……[wt 0.4][charaMoveReturn C 0,3 0.3][wt 0.5][seStop ad217 0.2][charaFace C 19]ぷはー、美味しい……。[r]あ、この子にもあげていいですか？
+[k]
+
+？1：もちろん！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_HALLOWEEN_2021_1 1.5]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[charaMoveReturn D 0,5 0.3]
+[cueSe SE_22 22_ade813]
+
+＠チビドラゴン
+ごっごっごっ。[wt 0.5][charaMoveReturn D 0,5 0.3][wt 0.7][charaMoveReturn D 0,5 0.3][r]（勢いよく水を飲む音）
+[k]
+[seStop 22_ade813 0.4]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_141 0.1]
+
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠マシュ
+道端で見つけられたのは偶然ですが、[r]飲用にも適した綺麗な湧き水があって助かりましたね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠メドゥーサ
+蛇の上の大地だというのに、水が湧き、植物が生え、[r]動物が暮らし、蛇人間たちが町を作っている……。
+[k]
+
+＠メドゥーサ
+考えれば考える程に[r][#不可思議:ふ　か　し　ぎ]すぎる特異点ですが……
+[k]
+
+＠メドゥーサ
+理屈は考えすぎないほうがよいのでしょう。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠アスクレピオス
+理屈はあるに越したことはないが、[r]ときには無視することも重要だ。
+[k]
+
+＠アスクレピオス
+でなければ、効くものは効く、[r]と割り切って薬を使うことなどできん。
+[k]
+
+[charaFace G 1]
+
+＠アスクレピオス
+……無論、副作用などには[r]充分に注意しなければならんがな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+その通り。無視していいものと[r]いけないものの区別はしっかりね。
+[k]
+
+＠ダ・ヴィンチ
+具体的には[r]危険なものは見過ごさないように。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠エリザベート
+危険なものと言っても、[r]今のところ呑気な旅路よ。
+[k]
+
+＠エリザベート
+殺風景なのは確かだけど、[r]別に毒沼とかがあるワケじゃないし。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠マシュ
+喜ばしいことです。
+[k]
+
+＠マシュ
+一本の蛇の上にある地面なので、[r]当然といえば当然なのですが、
+[k]
+
+＠マシュ
+これからも身体の上側に向かう経路は、[r]基本的には一本道のようですね。
+[k]
+
+？1：迷う可能性が少なくて助かるね
+？！
+
+[charaFace E 12]
+
+＠マシュ
+はい。[r]ですが、この先は少し傾斜があるようです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ビショーネ
+言われてみれば、[r]さっきから上り坂ですね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠メドゥーサ
+このまま行けば小山のような場所を乗り越えて[r]進むことになりそうです。
+[k]
+
+＠メドゥーサ
+蛇の身体がそもそも盛り上がっているのか、
+[k]
+
+＠メドゥーサ
+そこに積もった土が[r]盛り上がっているのかは定かではありません。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠アスクレピオス
+地震が起こった際の、[r]地盤の安定性に関係しそうだな。
+[k]
+
+＠アスクレピオス
+滑落事故は……たいていの場合、悲惨だぞ？[r]ククク。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 5]
+[charaDepth U 1]
+
+[charaPut U 1]
+[charaFadeTime U 0.2 0.5]
+
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+
+＠ビショーネ
+（どうして嬉しそうなんでしょう……）
+[k]
+
+[charaFadeout U 0.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaPut T 1]
+[charaTalk H]
+[charaFace H 36]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+その足元事情だけじゃなくて、ここからは[r]さらに気をつけて進んでいってほしい。
+[k]
+
+＠ダ・ヴィンチ
+地形が変わればそこに在るものも変わる。[r]他の脅威がいないとも限らないからね。
+[k]
+
+[charaFace H 34]
+
+＠ダ・ヴィンチ
+このまま問題なく行ければいいんだけど……。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_141 1.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+[charaPut T 2000,2000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[cueSe SE_24 24_ade1035]
+[wt 0.3]
+[charaTalk depthOff]
+[charaDepth I 2]
+[charaDepth J 1]
+[charaDepth K 3]
+
+[charaTalk I,J,K]
+[charaFace I 0]
+[charaFace J 0]
+[charaFace K 0]
+[charaFadeinFSL J 0.2 -200,0]
+[charaMoveFSL J -220,0 0.3]
+[wt 0.1]
+[charaFadein I 0.2 20,0]
+[charaMove I 00,0 0.3]
+[wt 0.1]
+[charaFadeinFSR K 0.2 400,0]
+[charaMoveFSR K 380,0 0.3]
+[seStop 24_ade1035 0.5]
+[wt 0.5]
+
+[bgm BGM_BATTLE_49 0.1]
+
+[charaFace I 7]
+
+＠蛇竜人=spot[I]
+ヒャアー！　こんなところに来るのは、[r]町から追い出された負け犬だけだよな！
+[k]
+
+[charaFace J 4]
+
+＠蛇竜人=spot[J]
+そうだね兄貴、俺たちみたいな家族も[r]仲間もいない寂しいやつらだけだ！
+[k]
+
+[charaFace K 3]
+
+＠蛇竜人=spot[K]
+食い物おいてけ！
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk H]
+[charaFace H 30]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+まあ、こういう奴らも[r]いないわけではないんだろうね。
+[k]
+
+？1：フラグを立てた人は反省してください
+？！
+
+[charaFace H 29]
+
+＠ダ・ヴィンチ
+えー、私のせいかなー？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠エリザベート
+うーん。腹ごなし？　喉ごなし？　にも[r]ならなそうね。
+[k]
+
+[charaFace B 0]
+
+＠エリザベート
+……そうだ、[#私:アタシ]の後輩に[r]自信をつけさせるのにはちょうどいいかも。
+[k]
+
+[charaFace B 1]
+
+＠エリザベート
+よーし、ここはアナタが一人でやりなさい、ビショーネ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠ビショーネ
+ええーっ？[r]唐突な単独案件！
+[k]
+
+＠ビショーネ
+新人にはまだ早かったりしませんか……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠エリザベート
+いつまでもそんなこと言ってたら[r]成長できないわよ。
+[k]
+
+＠エリザベート
+レベルアップしたくないの？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 20]
+[charaFadein C 0.1 1]
+
+＠ビショーネ
+成長……レベルアップ……。
+[k]
+
+[messageOff]
+[charaFace C 6]
+[charaMoveReturn C 0,6 0.4]
+[wt 1.2]
+
+[charaFace C 9]
+
+＠ビショーネ
+[line 3]成長、したいです、はい！
+[k]
+
+＠ビショーネ
+わたしは……ちゃんとしたわたし、[r]になりたいので！
+[k]
+
+[charaFaceFade C 13 0.2]
+
+＠ビショーネ
+具体的にそれが何なのかは[r]わかりませんけどぉ……。
+[k]
+
+？1：指示はするから
+？2：頑張ってね！
+？！
+
+[charaFaceFade C 1 0.2]
+
+＠ビショーネ
+は、はい！　会社の顔と名前に泥を塗らないよう、[r]新人ながら頑張らせていただきます！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_49 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

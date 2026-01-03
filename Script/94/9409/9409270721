@@ -1,0 +1,145 @@
+
+＄94-09-27-07-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098288110 1 カロン]
+[charaSet B 1098257900 1 マシュ]
+[charaSet C 6032000 1 セミラミス]
+[charaSet D 1098257310 1 ダ・ヴィンチ]
+
+[charaSet E 1098257910 1 マシュ_演出用]
+
+[sceneSet L 207602 1]
+[charaScale L 1.4]
+[sceneSet M 208301 1]
+[charaScale M 1.4]
+
+[charaSet V 98115000 1 通信エフェクト用]
+[charaSet W 98115000 1 エフェクト用]
+[charaSet X 98115000 1 エフェクト用2]
+
+[subCameraOn 1]
+[charaLayer M sub #A]
+[charaLayer X sub #A]
+[charaDepth M 1]
+[charaDepth X 4]
+[charaFadein M 0.1 0,-200]
+[charaPut X 0,200]
+[subCameraFilter #A maskEdge cut359_mask05 4 0,0,0,255]
+
+[charaTalk depthOff]
+[charaPut V 2500,2500]
+[charaEffect V bit_talk_10_LowLevel]
+
+[charaDepth A 2]
+[charaDepth L 1]
+[charaDepth E 2]
+[charaDepth W 3]
+[charaFadein L 0.1 80,-250]
+[charaScale A 1.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 -200,0]
+[wt 0.1]
+
+[scene 207602]
+[fadein black 0.5]
+[charaMoveEase A -80,0 0.8 easeOutSine]
+[charaMoveEase L 200,-250 0.8 easeOutSine]
+[bgm BGM_BATTLE_78 0.1]
+[wait fade]
+
+[wt 0.4]
+
+[charaFace B 6]
+[charaFadein B 0.1 100,0]
+
+＠カロン
+オイ！　こっちはまだ手が離せねえが、[r]そっちの状況はどうなってる？
+[k]
+
+[messageOff]
+[charaTalk A,B]
+[charaFadeout A 0.3]
+[charaFadeout L 0.3]
+[wt 0.3]
+
+＠マシュ
+なんとか一呼吸はつけるようになりました。[r]ですが、まだ油断はできません……！
+[k]
+
+[messageOff]
+
+[subRenderFadein #A 0.4 -300,-100]
+[subRenderMoveEase #A -300,-180 0.4 easeOutQuart]
+[wt 0.3]
+
+[se ad130]
+[cueSe SE_22 22_ade698]
+[charaEffect X bit_talk_mud_splash]
+[wt 1.0]
+[charaFace B 24]
+[se ad85]
+
+＠マシュ
+っ！
+[k]
+
+[messageOff]
+[se ad686]
+[effect bit_talk_blow02 -30,0]
+[wt 0.1]
+[charaFace B 13]
+[charaShake B 0.04 3 3 0.5]
+[fadeout white 0.1]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+[fadein white 0.3]
+[wait fade]
+
+[wt 0.8]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠セミラミス
+ええい、娘の状況はどうなっている！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+さっきから呼びかけてるんだけど、[r]反応なしだ！
+[k]
+
+＠ダ・ヴィンチ
+外側でこの防衛反応ってことは、[r]きっと内側も……まずいぞ……！
+[k]
+
+？1：……アンドロメダ……！
+？！
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_BATTLE_78 1.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

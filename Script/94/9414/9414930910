@@ -1,0 +1,2468 @@
+
+＄94-14-93-09-1-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 1098335700 1 藤堂平助]
+[charaSet B 1098338900 1 土方歳三]
+[charaSet C 3061300 1 原田左之助]
+[charaSet D 1098336902 1 近藤勇]
+[charaSet E 1098281100 1 御陵衛士１]
+[charaSet F 1098281110 1 御陵衛士２]
+[charaSet G 1098281200 1 隊士１]
+[charaSet H 1098281200 1 隊士２]
+[charaSet I 1098281200 1 隊士３]
+
+[sceneSet J 201700 1]
+[sceneSet K 201700 1]
+[sceneSet L 201700 1]
+[sceneSet M 201700 1]
+[sceneSet N 10000 1]
+[imageSet O cut738_text12 1]
+[imageSet P cut738_text13 1]
+
+[charaSet Q 1098335700 1 藤堂平助_演出用１]
+[charaSet R 1098335700 1 藤堂平助_演出用２]
+[charaSet S 3061300 1 原田左之助_演出用１]
+[charaSet T 3061300 1 原田左之助_演出用２]
+
+[charaSet U 98115000 1 エフェクト用]
+[charaSet V 98115000 1 エフェクト用]
+
+[imageSet W black_fade_re 1]
+[imageSet X black_fade_re 1]
+[charaScale W 2.0]
+[charaScale X 2.0]
+
+[charaSet Y 1098335710 1 藤堂平助_御陵衛士_負傷１]
+[charaSet Z 1098335710 1 藤堂平助_御陵衛士_負傷２]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaFadein O 1.0 0,-280]
+[wt 1.5]
+[wait touch]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout O 0.1]
+
+
+[scene 201700]
+[pictureFrameTop cut063_cinema]
+
+[subCameraOn 4]
+[subCameraFilter #A maskEdge cut359_mask09 5 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask10 5 0,0,0,255]
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.0]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[charaLayer Q sub #A]
+[charaLayer K sub #A]
+[charaLayer V sub #A]
+[charaLayer Y sub #A]
+[charaLayer S sub #B]
+[charaLayer L sub #B]
+[charaLayer Z sub #B]
+[charaScale Q 1.3]
+[charaScale K 1.3]
+[charaDepth V 4]
+[charaDepth Y 3]
+[charaDepth Q 2]
+[charaDepth K 1]
+[charaFace Q 20]
+[charaFadein Q 0.1 70,135]
+[charaFadein K 0.1 -350,-80]
+[charaScale S 1.3]
+[charaScale L 1.3]
+[charaDepth Z 3]
+[charaDepth S 2]
+[charaDepth L 1]
+[charaFace S 10]
+[charaFadein S 0.1 -20,140]
+[charaFadein L 0.1 350,-80]
+
+[charaTalk depthOff]
+[charaDepth U 20]
+[charaDepth R 8]
+[charaDepth F 7]
+[charaDepth M 6]
+[charaDepth G 5]
+
+[charaDepth A 4]
+[charaDepth C 3]
+[charaDepth J 2]
+[charaDepth F 1]
+[charaDepth E 1]
+[wt 0.5]
+
+[se ad347]
+[seVolume ad347 0 0.7]
+[se ad1048]
+[seVolume ad1048 0 0.5]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_195 0.1]
+
+[wt 1.3]
+[seStop ad347 0.2]
+[seStop ad1048 0.2]
+
+[se ad1014]
+[effect bit_talk_14]
+[wt 0.1]
+[charaScale E 1.3]
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.4 0,-30]
+[charaMove E 0,-50 0.4]
+[charaMoveScale E 1.0 0.4]
+[charaShake E 0.02 3 3 0.5]
+[wt 0.6]
+
+[charaFace E 2]
+
+＠御陵衛士
+藤堂君、ここは私たちが！　君は服部さんの加勢に！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+＠藤堂平助
+わかりました！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad452]
+[seVolume ad452 0 0.3]
+[seVolume ad452 1.0 1.0]
+[wt 1.0]
+[seStop ad452 0.4]
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+
+＠原田左之助
+どこ行こうってんだ、逃げ場はねーぞ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+
+＠御陵衛士
+おのれ新選組！　卑怯な真似を！
+[k]
+
+[messageOff]
+[charaTalk Q,E]
+[subRenderFadein #A 0.4 200,-180]
+[subRenderFadein #B 0.4 -225,-180]
+[wt 0.6]
+
+＠Q：藤堂平助
+原田さん……、[wt 0.8][charaFaceFade Q 4 0.2]何故ですか！[r]伊東先生は近藤さんのために……！
+[k]
+
+[charaTalk S]
+[charaFaceFade S 8 0.2]
+
+＠S：原田左之助
+……平助。
+[k]
+
+[messageOff]
+[charaTalk E,S]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+
+＠御陵衛士
+うおおおおおおお！
+[k]
+
+[messageOff]
+[se ad1006]
+[charaMoveScale E 1.2 0.2]
+[charaMove E 0,-20 0.2]
+[charaFadeout E 0.2]
+[wt 0.2]
+
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 0,-50]
+
+＠原田左之助
+ちっ！
+[k]
+
+[messageOff]
+[se ad678]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut U 1]
+[charaEffect U bit_talk_41_fs]
+[charaMoveScaleEase C 1.5 0.3 easeOutSine]
+[charaMoveEase C 0,0 0.3 easeOutSine]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaFadeout C 0.3]
+[wt 0.2]
+
+[fadeout black 0.3]
+[wait fade]
+
+[charaScale C 1.0]
+[charaFadeout C 0.1]
+
+[blurOff motion 0.1]
+[charaPut U 2500,2500]
+[charaEffectDestroy U bit_talk_41_fs]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[cueSe Servants_300700 m66458]
+[effect bit_talk_h_slash01_fs 0,0 H]
+[wt 0.5]
+
+[se ad863]
+[seVolume ad863 0 0.7]
+[effect bit_talk_blood_stay]
+[wt 1.2]
+
+[fadeout black 0.5]
+[wait fade]
+
+[effectDestroy bit_talk_blood_stay]
+[scene 201700]
+
+[charaScale E 1.0]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+[wt 0.1]
+
+[charaShake E 0.02 3 3 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaMoveEase E 0,-100 0.6 easeInSine]
+[wt 0.2]
+[charaFadeout E 0.4]
+[wt 0.4]
+[cueSe SE_21 21_ad1074]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 20]
+[charaFadein A 0.1 0,-50]
+
+＠藤堂平助
+う……、[wt 0.8]う[charaFace A 16][messageShake 0.05 5 5 0.5]ああああああ！
+[k]
+
+[messageOff]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut U 1]
+[charaEffect U bit_talk_41_fs]
+[charaMoveScaleEase A 1.3 0.3 easeOutSine]
+[charaMoveEase A 0,-20 0.3 easeOutSine]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaFadeout A 0.3]
+[wt 0.2]
+
+[fadeout black 0.3]
+[wait fade]
+
+[charaTalk on]
+[charaScale A 1.0]
+[charaFadeout A 0.1]
+[charaFadeout J 0.1]
+
+[blurOff motion 0.1]
+[charaPut U 2500,2500]
+[charaEffectDestroy U bit_talk_41_fs]
+[scene 10000]
+
+[subCameraFilter #A maskEdge cut359_mask04 10 0,0,0,255 1]
+[subCameraFilter #B maskEdge cut359_mask04 10 0,0,0,255 1]
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+[charaScale Q 2.0]
+[charaScale K 1.5]
+[charaDepth V 3]
+[charaDepth Q 2]
+[charaDepth K 1]
+[charaFace Q 16]
+[charaFadein Q 0.1 250,380]
+[charaFadein K 0.1 -100,0]
+[charaScale S 2.0]
+[charaScale L 1.3]
+[charaDepth S 2]
+[charaDepth L 1]
+[charaFace S 10]
+[charaFadein S 0.1 -150,300]
+[charaFadein L 0.1 200,0]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad1032]
+[effect bit_talk_blow03]
+[wt 0.6]
+
+[se ad468]
+[charaTalk Q,S]
+[subRenderFadein #A 1.0 0,-430]
+[subRenderFadein #B 1.0 0,-270]
+[subRenderShake #A 0.01 5 5 0.4]
+[subRenderShake #B 0.01 5 5 0.4]
+[wt 0.8]
+[subRenderShake #A 0.01 2 2 0.8]
+[subRenderShake #B 0.01 2 2 0.8]
+[wt 1.2]
+
+[charaFaceFade Q 5 0.2]
+
+
+＠Q：藤堂平助
+どうして……、どうして……！
+[k]
+
+[messageOff]
+[charaMoveEase S -150,430 1.0 easeOutSine]
+[charaMoveEase L 200,130 1.0 easeOutSine]
+[bgm BGM_EVENT_195 0.4 0.4]
+[charaTalk S]
+[wt 1.0]
+[charaFaceFade S 0 0.2]
+
+＠S：原田左之助
+[f small]……平助、おまえは逃げろ。
+[k]
+
+[charaTalk Q]
+[charaFaceFade Q 20 0.2]
+
+＠Q：藤堂平助
+……っ！？
+[k]
+
+[charaTalk S]
+[charaFaceFade S 2 0.2]
+
+＠S：原田左之助
+そういう事になってんだ、いいな。
+[k]
+
+[charaFaceFade S 5 0.2]
+
+＠S：原田左之助
+そらっ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ade37]
+[charaMove S -100,430 0.2]
+[charaPut V 50,380]
+[charaEffect V bit_talk_blow]
+[wt 0.1]
+[charaFaceFade Q 19 0.2]
+[charaMoveEase Q 450,380 0.3 easeOutQuad]
+[charaMoveEase K -300,0 0.3 easeOutQuad]
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+
+[fadeout black 0.3]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[charaPut V 2500,2500]
+[charaEffectDestroy V bit_talk_blow]
+
+[scene 201700]
+[wt 0.1]
+
+[fadein black 0.6]
+[bgm BGM_EVENT_195 0.6 1.0]
+[wait fade]
+
+[cueSe SE_21 21_ade607]
+[cueSeVolume 21_ade607 0 0.7]
+[cueSeStop 21_ade607 0.5]
+[charaScale A 1.5]
+[charaFace A 10]
+[charaFadein A 0.4 0,0]
+[charaMoveScaleEase A 1.0 0.4 easeOutExpo]
+[charaMoveEase A 0,-50 0.4 easeOutExpo]
+[charaShake A 0.02 3 3 0.3]
+[wt 0.5]
+
+＠藤堂平助
+…………。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe SE_25 25_ade1269]
+[cueSeVolume 25_ade1269 0 0.4]
+[cueSeVolume 25_ade1269 0.6 1.0]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.4 0,-50]
+[cueSeStop 25_ade1269 0.4]
+[wt 0.4]
+
+＠F：御陵衛士
+どういうことだ……、藤堂君……！
+[k]
+
+＠F：御陵衛士
+まさか、伊東先生の言っていたように……。
+[k]
+
+＠F：御陵衛士
+藤堂君っ、君はっ！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad347]
+[seVolume ad347 0 0.7]
+[se ad1048]
+[seVolume ad1048 0 0.5]
+[wt 1.5]
+
+[charaScale J 1.2]
+[charaFadein J 0.6 0,-260]
+[charaMoveEase J 180,-260 0.6 easeOutQuad]
+[wt 0.4]
+[seStop ad347 2.0]
+[seStop ad1048 2.0]
+[wt 0.2]
+
+[cueSe SE_22 22_ade804]
+[charaScale C 1.2]
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.3 200,-40]
+[charaMoveEase C -50,-40 0.3 easeOutCirc]
+[wt 0.4]
+
+[charaFace C 5]
+
+＠原田左之助
+何してんだ、さっさと行け！
+[k]
+
+[charaScale R 1.2]
+[charaScale M 1.2]
+
+[messageOff]
+[charaTalk C,R]
+[charaFace R 15]
+[charaFadein R 0.4 150,-40]
+[charaFadein M 0.4 -150,-260]
+[wt 0.6]
+[charaFadeout C 0.1]
+[charaFadeout J 0.1]
+
+＠R：藤堂平助
+僕は……、僕は……！
+[k]
+
+[bgmStop BGM_EVENT_195 1.0]
+[charaFace R 16]
+
+＠R：藤堂平助
+逃げない……！
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ad1380]
+[charaFace R 15]
+[charaMove R 150,-50 0.4]
+[wt 1.0]
+
+[cueSe SE_25 25_ade1269]
+[cueSeVolume 25_ade1269 0 0.5]
+[cueSeVolume 25_ade1269 1.0 1.0]
+[charaFadeout R 0.4]
+[charaFadeout M 0.4]
+[wt 1.0]
+
+
+[cueSeStop 25_ade1269 0.4]
+[charaScale G 1.0]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.4 0,-50]
+[wt 0.4]
+
+＠G：新選組隊士
+この裏切者があっ！
+[k]
+
+[messageOff]
+[se ad1006]
+[charaMove G 0,-30 0.2]
+[charaMoveScale G 1.2 0.2]
+[fadeout black 0.3]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaFadeout M 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ade71]
+[effect bit_talk_x_slash01 0,0 H]
+[wt 0.3]
+
+[fadeout black 0.1]
+[wait fade]
+
+[effectDestroy bit_talk_x_slash01]
+[scene 201700]
+
+[subCameraFilter #B maskEdge cut359_mask13 5 0,0,0,255]
+[subRenderScale #B 1.01]
+[charaScale S 1.35]
+[charaScale L 1.35]
+[charaDepth S 2]
+[charaDepth L 1]
+[charaFace S 5]
+[charaFadein S 0.1 -100,230]
+[charaFadein L 0.1 -100,-30]
+
+[charaDepth N 8]
+[charaDepth I 7]
+[charaDepth H 6]
+[charaDepth G 5]
+[charaDepth C 4]
+[charaDepth J 3]
+[charaDepth U 2]
+[charaDepth A 1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 0,-50]
+[wt 0.1]
+
+[se ad240]
+[fadein black 0.4]
+[effect bit_talk_35]
+[charaMove A 0,-60 0.4]
+[charaShake A 0.02 3 3 0.4]
+[wait fade]
+
+＠藤堂平助
+ぐあっ……！
+[k]
+
+[messageOff]
+[blur lens 0.3 2 1]
+[charaTalk S]
+[subRenderFadein #B 0.3 0,-340]
+[charaMoveEase S 0,230 0.3 easeOutSine]
+[charaMoveEase L 0,-30 0.3 easeOutSine]
+[wt 0.3]
+
+＠S：原田左之助
+なっ！？
+[k]
+
+[messageOff]
+[charaTalk A]
+[subRenderFadeout #B 0.3]
+[blurOff lens 0.3]
+[wt 0.3]
+
+[cueSe SE_24 24_ade1034]
+[charaShake A 0.02 2 1 0.3]
+[charaMove A -10,-65 0.3]
+[wt 0.4]
+[cueSeStop 24_ade1034 0.5]
+[charaShake A 0.02 3 2 0.4]
+[charaFaceFade A 15 0.2]
+[charaMove A 0,-70 0.3]
+
+＠藤堂平助
+ああっ……。
+[k]
+
+[charaFace A 16]
+
+＠藤堂平助
+あ……。
+[k]
+
+[bgm BGM_BATTLE_305 0.1]
+
+[se ad984]
+[se ade321]
+[charaFace A 17]
+[charaMove A 0,-60 0.3]
+[charaShake A 0.02 2 2 0.3]
+
+[blur motion 0.3 4 200 0.5 0.55 0.02 200]
+[charaPut U 1]
+[charaEffect U bit_talk_41_fs]
+
+＠藤堂平助
+う[messageShake 0.05 5 5 0.5]ああああああああああっ！
+[k]
+
+[messageOff]
+[charaPut U 2000,2000]
+[charaEffectDestroy U bit_talk_41_fs]
+[blurOff motion 0.3]
+
+[charaScale C 1.21]
+[charaScale J 1.21]
+[charaTalk C,A]
+[charaFace C 5]
+[charaFadein C 0.4 0,-60]
+[charaFadein J 0.4 0,-250]
+[wt 0.4]
+[charaFadeout A 0.1]
+
+＠原田左之助
+待て！　おまえら、平助は！
+[k]
+
+[messageOff]
+[charaMove C 0,-50 0.6]
+[charaMoveScale C 1.01 0.6]
+[charaMove J 0,-170 0.6]
+[charaMoveScale J 1.01 0.6]
+[cueSe SE_25 25_ade1271]
+[wt 0.6]
+
+[charaScale H 1.3]
+[charaScale I 1.3]
+
+[charaTalk H,I]
+[charaFace H 0]
+[charaFadein H 0.4 300,-40]
+[charaMove H 270,-40 0.4]
+[wt 0.3]
+
+[charaFace I 0]
+[charaFadein I 0.4 -300,-40]
+[charaMove I -270,-40 0.4]
+[cueSeStop 25_ade1271 0.4]
+[wt 0.5]
+
+[charaFace I 2]
+
+＠I：新選組隊士
+死ねえええっ！
+[k]
+
+[messageOff]
+[se ad1006]
+[charaTalk off]
+[charaMove I -270,-30 0.2]
+[charaMoveScale I 1.4 0.2]
+[charaFadeout I 0.2]
+[wt 0.2]
+[se ad678]
+[charaMove H 270,-30 0.2]
+[charaMoveScale H 1.4 0.2]
+[charaFadeout H 0.2]
+[wt 0.1]
+
+[messageOff]
+[fadeout black 0.3]
+[bgmStop BGM_BATTLE_305 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaDepth L 9]
+[charaDepth K 10]
+[charaLayer L normal]
+[charaLayer K normal]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad715]
+[cueSe SE_21 21_ad1091]
+[effect bit_talk_blood_splatter01]
+[wt 0.3]
+[cueSe Battle bac137]
+[effect bit_talk_blood_splatter02]
+[wt 1.6]
+
+[fadeout black 0.6]
+[wait fade]
+
+[effectDestroy bit_talk_blood_splatter01]
+[effectDestroy bit_talk_blood_splatter02]
+
+[scene 201700]
+
+[subCameraFilter #A through]
+[subCameraFilter #B through]
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.2]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[charaScale Y 1.6]
+[charaFace Y 14]
+[charaFadein Y 0.1 0,320]
+[charaFadeout Q 0.1]
+[charaScale Z 1.4]
+[charaDepth Z 2]
+[charaFace Z 16]
+[charaFadeout S 0.1]
+
+[charaScale C 1.0]
+[charaFace C 9]
+[charaFadein C 0.1 0,-50]
+
+[charaTalk on]
+[charaTalk Z]
+[subRenderFadein #B 0.1 0,-50]
+
+[charaScale L 2.5]
+[charaFadein L 0.1 -800,0]
+[charaFace Z 16]
+[charaFadein Z 0.1 -50,550]
+[blur lens 0.1 3 2]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+
+[charaShake Z 0.02 3 3 0.5]
+[wt 1.0]
+
+[charaMoveEase L -800,-350 5.0 easeOutSine]
+[subRenderMoveEase #B 0,-400 5.0 easeOutSine]
+[wt 1.0]
+[charaShake Z 0.02 3 3 0.6]
+
+＠Z：藤堂平助
+なんで……、[wt 1.2]なんで……。
+[k]
+
+[messageOff]
+[blurOff lens 0.6]
+[charaTalk Z,C]
+[charaFadeout L 0.6]
+[subRenderFadeout #B 0.6]
+[wt 0.6]
+
+＠原田左之助
+…………。
+[k]
+
+[messageOff]
+[charaTalk Y,C]
+[blur lens 0.6 3 2]
+[subRenderFadein #A 0.6 0,-320]
+[charaScale K 1.6]
+[charaFadein K 0.6 -380,-230]
+[wt 1.5]
+
+[charaFaceFade Y 17 0.2]
+
+＠Y：藤堂平助
+な[messageShake 0.05 5 5 0.6][charaShake Y 0.02 3 3 0.6]んでなんだよおおおおお！！！！
+[k]
+
+[messageOff]
+[wt 0.4]
+[charaShake Y 0.02 2 2 0.4]
+[wt 0.7]
+
+[charaMoveEase Y 0,260 2.0 easeOutQuad]
+[wt 0.2]
+[charaFadeout Y 0.7]
+[wt 0.8]
+[se ade75]
+[wt 1.4]
+
+[fadeout black 1.5]
+[wait fade]
+
+[blurOff]
+[charaFadeout C 0.1]
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+[charaFadeout Z 0.1]
+
+[imageSet Z cut769_tdh01 1]
+[charaScale Z 1.33]
+
+[subCameraFilter #A maskEdge cut359_mask08 20 0,0,0,255 1]
+[subRenderScale #A 1.01]
+[charaLayer K sub #A]
+[charaLayer N sub #A]
+[charaScale N 1.01]
+[charaScale Y 2.7]
+[charaScale K 2.4]
+[charaDepth Z 5]
+[charaDepth Y 4]
+[charaDepth V 2]
+[charaDepth K 1]
+[charaRoll Y 305 0,0]
+[charaRoll K 350 0,0]
+
+[charaDepth W 5]
+[charaDepth X 4]
+[charaDepth Z 3]
+[charaFadein W 0.1 0,280]
+[charaFadein X 0.1 0,-1090]
+[charaFadein Z 0.1 0,-260]
+
+[scene 10000]
+
+
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.5]
+
+
+＠Y：藤堂平助
+…………。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout W 0.1]
+[charaFadeout X 0.1]
+[charaFadeout Z 0.1]
+
+[subRenderFadeout #A 0.1]
+
+[charaRoll Y 0 0,0]
+[charaRoll K 0 0,0]
+[charaLayer Q normal]
+[charaLayer K normal]
+[charaLayer V normal]
+[charaLayer Y normal]
+[charaLayer S normal]
+[charaLayer L normal]
+[charaLayer N normal]
+[charaFadeout Q 0.1]
+[charaFadeout K 0.1]
+[charaFadeout V 0.1]
+[charaFadeout Y 0.1]
+[charaFadeout S 0.1]
+[charaFadeout L 0.1]
+[charaFadeout N 0.1]
+[subCameraOff]
+
+[scene 201700]
+
+[charaDepth D 3]
+[charaDepth B 2]
+[charaDepth J 1]
+
+[charaScale D 1.0]
+[charaScale B 1.0]
+[charaScale J 1.1]
+
+[charaTalk D,B]
+[charaFace D 13]
+[charaFadein D 0.1 256,-50]
+[charaFace B 14]
+[charaFadein B 0.1 -256,-50]
+[wt 1.0]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_MAP_129 0.1]
+
+＠近藤勇
+……歳、これが本当に必要な事なのか。
+[k]
+
+＠土方歳三
+…………。
+[k]
+
+[charaFace B 0]
+
+＠土方歳三
+近藤さん、こいつは俺の不始末だ。
+[k]
+
+[charaFace D 4]
+
+＠近藤勇
+おまえの……？
+[k]
+
+[charaFace B 13]
+
+＠土方歳三
+ああ……。
+[k]
+
+[charaFace D 13]
+
+＠近藤勇
+……違う。
+[k]
+
+
+＠近藤勇
+これは……、
+[k]
+
+[charaFace D 21]
+
+＠近藤勇
+新選組の罪だ……。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[bgmStop BGM_MAP_129 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout J 0.1]
+
+[scene 10000]
+[wt 1.5]
+
+[fadein black 0.1]
+[wait fade]
+
+[charaFadein O 1.0 0,-200]
+[wt 2.0]
+
+[charaFadein P 1.0 0,-200]
+[wt 1.5]
+[wait touch]
+
+[fadeout black 1.5]
+[wait fade]
+
+[pictureFrame]
+
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 0.1]
+[wait fade]
+
+[skip false]
+[wt 1.0]
+
+[input selectBranch]
+[messageOff]
+[skip false]
+
+[effectDestroy bit_talk_blood_splatter01]
+[effectDestroy bit_talk_blood_splatter02]
+[effectDestroy bit_talk_blood_stay]
+[charaEffectDestroy U bit_talk_41_fs]
+
+[soundStopAllFade 0.4]
+[subCameraOff]
+[blurOff]
+[subCameraOff]
+
+[charaSet A 1098335700 1 藤堂平助]
+[charaSet B 1098338900 1 土方歳三]
+[charaSet C 3061300 1 原田左之助]
+[charaSet D 1098336902 1 近藤勇]
+[charaSet E 1098281100 1 御陵衛士１]
+[charaSet F 1098281110 1 御陵衛士２]
+[charaSet G 1098281200 1 隊士１]
+[charaSet H 1098281200 1 隊士２]
+[charaSet I 1098281200 1 隊士３]
+[sceneSet J 201700 1]
+[sceneSet K 201700 1]
+[sceneSet L 201700 1]
+[sceneSet M 201700 1]
+[sceneSet N 10000 1]
+[imageSet O cut738_text12 1]
+[imageSet P cut738_text13 1]
+[charaSet Q 1098335700 1 藤堂平助_演出用１]
+[charaSet R 1098335700 1 藤堂平助_演出用２]
+[charaSet S 3061300 1 原田左之助_演出用１]
+[charaSet T 3061300 1 原田左之助_演出用２]
+[charaSet U 98115000 1 エフェクト用]
+[charaSet V 98115000 1 エフェクト用]
+[imageSet W black_fade_re 1]
+[imageSet X black_fade_re 1]
+[charaScale W 2.0]
+[charaScale X 2.0]
+[charaSet Y 1098335710 1 藤堂平助_御陵衛士_負傷１]
+[imageSet Z cut769_tdh01 1]
+
+[charaTalk on]
+[charaTalk depthOff]
+[scene 10000]
+[wt 0.4]
+
+[maskin black 1.0]
+[wait mask]
+
+[label selectBranch]
+[wt 0.5]
+
+[fowardEffect bit_queststart80576]
+[wait fowardEffect]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaSet A 1098335600 1 藤堂平助]
+[charaSet D 1098334500 1 黒の剣士]
+[charaSet E 1098335610 1 藤堂平助_第二_黒目_分割上]
+[charaSet F 1098335620 1 0]
+[charaSet G 1098333800 1 松永弾正]
+[charaSet H 1098333700 1 勝海舟]
+[charaSet I 2024001 1 織田信長]
+[sceneSet J 264400 1]
+[sceneSet K 264400 1]
+[sceneSet L 264400 1]
+[sceneSet M 264400 1]
+[charaSet Q 1098335600 1 藤堂平助_演出用]
+[charaSet R 1098333800 1 松永弾正_演出用]
+[imageSet W back10000 1 1]
+[imageSet X back10000 1 1]
+[charaScale W 1.01]
+[charaScale X 1.01]
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[scene 264400]
+[pictureFrameTop cut063_cinema]
+
+[subCameraOn 2]
+[subCameraFilter #A maskEdge cut359_mask05 5 0,0,0,255]
+[subCameraFilter #B normal]
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.01]
+[subRenderDepth #A 2]
+[subRenderDepth #B 1]
+[charaLayer R sub #A]
+[charaLayer K sub #A]
+[charaLayer A sub #B]
+[charaLayer E sub #B]
+[charaLayer F sub #B]
+[charaLayer G sub #B]
+[charaLayer L sub #B]
+[charaLayer U sub #B]
+[charaLayer V sub #B]
+[charaLayer Y sub #B]
+[charaScale R 1.2]
+[charaScale K 1.2]
+[charaDepth R 2]
+[charaDepth K 1]
+[charaFace R 0]
+[charaFadein R 0.1 0,140]
+[charaFadein K 0.1 200,-50]
+[charaScale A 1.2]
+[charaScale E 1.2]
+[charaScale F 1.2]
+[charaScale G 1.2]
+[charaScale L 1.2]
+[charaScale U 0.8]
+[charaScale V 1.0]
+[charaScale Y 1.2]
+[charaDepth V 8]
+[charaDepth Y 7]
+[charaDepth A 6]
+[charaDepth E 5]
+[charaDepth F 4]
+[charaDepth U 3]
+[charaDepth G 2]
+[charaDepth L 1]
+[charaFace E 15]
+[charaFadein E 0.1 80,-40]
+[charaFace F 0]
+[charaFadein F 0.1 100,-20]
+[charaFadein L 0.1 -100,-280]
+[charaPut Y 140,-50]
+[charaEffect Y bit_talk_feelweak_power_tdh]
+
+[cueSe SE_24 24_ad1415 0 0]
+[cueSe SE_22 22_ad1169 0 0]
+[wt 1.0]
+
+[skip true]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+[wt 1.0]
+
+[cueSe SE_21 21_ad1083]
+[cueSeVolume 21_ad1083 0 0.7]
+[charaTalk E,F]
+[subRenderFadein #B 0.6 0,180]
+[charaShake E 0.02 1 1 3.0]
+[wt 0.6]
+[charaMove E 85,-35 2.0]
+[wt 0.8]
+
+[cueSeVolume 24_ad1415 0.4 0.6]
+[cueSeVolume 22_ad1169 0.4 0.6]
+[charaEffectEdgeBlur E 460046 000000 4 5]
+[charaEffectEdgeBlur F 460046 000000 4 5]
+[charaPut U 100,-240]
+[charaEffect U bit_talk_blk_fire_aura]
+[subRenderMoveEase #B 0,0 1.2 easeOutQuad]
+[wt 1.2]
+[cueSeStop 21_ad1083 1.0]
+
+[charaFaceFade E 17 0.2]
+
+＠藤堂平助=spot[E,F]
+ぐ[messageShake 0.01 4 4 1.0]ああああああああっ！？
+[k]
+
+[messageOff]
+[charaTalk R]
+[subRenderFadeinFSL #A 0.4 -250,-150]
+[subRenderMoveFSL #A -250,-180 0.4]
+[wt 0.4]
+
+＠R：松永弾正
+我慢我慢、もうちょいでくっつくからさ。
+[k]
+
+[charaFace A 15]
+
+＠藤堂平助=spot[E,F]
+わ、わかってる……！　この程度……！
+[k]
+
+[charaFace R 2]
+
+＠R：松永弾正
+わお、ほんとに我慢してる。[r]アタシなら５回は死んでるかも、痛すぎて。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadeout #A 0.3]
+[wt 0.6]
+
+[cueSe SE_21 21_ad1083]
+[charaFace E 14]
+[charaShake E 0.02 1 1 1.2]
+[charaMoveEase E 100,-20 1.2 easeInCubic]
+[wt 0.8]
+[cueSeStop 21_ad1083 1.5]
+
+[se ad461]
+[cueSeStop 24_ad1415 1.0]
+[cueSeStop 22_ad1169 1.0]
+[charaEffectStop U bit_talk_blk_fire_aura]
+[charaEffectStop Y bit_talk_feelweak_power_tdh]
+[charaEffectEdgeBlurStop E]
+[charaEffectEdgeBlurStop F]
+[wt 0.4]
+
+[cueSe SE_25 25_ade1201]
+[charaPut V 200,-100]
+[charaEffect V bit_talk_29_black_red]
+[charaFace A 14]
+[charaFadein A 0.2 100,-20]
+[wt 0.2]
+[charaFadeout E 0.2]
+[charaFadeout F 0.2]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 16]
+
+＠藤堂平助
+ぐ[charaShake A 0.01 3 3 0.4]あっ……、[wt 0.4][se ad775][charaMove A 100,-40 0.3]はぁはぁ……。
+[k]
+
+[charaEffectEdgeBlurDestroy E]
+[charaEffectEdgeBlurDestroy F]
+
+[charaFace A 15]
+[charaMove A 100,-30 0.3]
+[charaShake A 0.01 3 3 0.3]
+
+＠藤堂平助
+お、終わったのか……。
+[k]
+
+[messageOff]
+[se ade198]
+[charaMoveEase A 250,-30 1.0 easeOutSine]
+[charaMoveEase L 50,-280 1.0 easeOutSine]
+[wt 1.1]
+
+[charaTalk G]
+[charaFace G 14]
+[charaFadein G 0.4 -280,-30]
+[charaMove G -250,-30 0.4]
+[wt 0.4]
+
+＠松永弾正
+どれどれ……、おー、やったじゃん、[r]ちゃんとくっついてるわよ。
+[k]
+
+[charaTalk A]
+[charaFace A 3]
+
+＠藤堂平助
+……マガツヒノカミの様子はどうだ。
+[k]
+
+[charaTalk G]
+[charaFace G 0]
+
+＠松永弾正
+例の場所へ順調に降りて来てるわよ、[r]さながら[#天孫降臨:てんそんこうりん]ってところかしら。
+[k]
+
+[charaFace G 7]
+
+＠松永弾正
+ただまあ、連中も気づいてると思うわよ。
+[k]
+
+＠松永弾正
+勇ちゃんがあっちに行っちゃったわけだし。
+[k]
+
+[charaTalk A]
+[charaFace A 13]
+
+＠藤堂平助
+いいさ……、最初から僕は一人だったんだ……。
+[k]
+
+[charaFace A 3]
+
+＠藤堂平助
+最後まで一人でやってやる……。
+[k]
+
+[charaTalk G]
+[charaFace G 1]
+
+＠松永弾正
+だよね～、やっぱ『王』ってのは[#天上天下:てんじょうてんげ]に[r]ただ一人ってわ～け。
+[k]
+
+[charaFace G 14]
+
+＠松永弾正
+とはいえ、ちょっと人手が足りないか。[r]勝の野郎が向こういっちまったしな。
+[k]
+
+[charaFace G 5]
+
+＠松永弾正
+でもま、戦力はあるから。
+[k]
+
+[charaTalk A]
+[charaFace A 10]
+
+＠藤堂平助
+なにか当てがあるのか？
+[k]
+
+[charaTalk G]
+[charaFace G 0]
+
+＠松永弾正
+任せといて、大丈夫、大丈夫。
+[k]
+
+[charaFace G 16]
+
+＠松永弾正
+ダイジョ・[wt 0.5]BU・[wt 0.5][charaMoveReturn G -250,-20 0.3]ダンジョー！　ってね。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+
+＠藤堂平助
+…………。
+[k]
+
+[charaTalk G]
+[charaFace G 13]
+
+＠松永弾正
+え、ノリ悪……。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[charaPut U 2000,2000]
+[charaPut V 2000,2000]
+[charaPut Y 2000,2000]
+[charaEffectDestroy U bit_talk_blk_fire_aura]
+[charaEffectDestroy V bit_talk_29_black_red]
+[charaEffectDestroy Y bit_talk_feelweak_power_tdh]
+
+[charaLayer R normal]
+[charaLayer K normal]
+[charaLayer A normal]
+[charaLayer E normal]
+[charaLayer F normal]
+[charaLayer G normal]
+[charaLayer L normal]
+[charaLayer U normal]
+[charaLayer V normal]
+[charaFadeout R 0.1]
+[charaFadeout K 0.1]
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout L 0.1]
+[charaFadeout U 0.1]
+[charaFadeout V 0.1]
+[subCameraOff]
+[wt 0.1]
+
+[pictureFrame]
+
+[charaSet C 3061000 1 原田左之助]
+[charaSet E 1098336900 1 黒の剣士_演出用１]
+[charaSet F 1098336900 1 黒の剣士_演出用２]
+[sceneSet J 263501 1]
+[sceneSet K 263801 1]
+[sceneSet L 263801 1]
+[sceneSet M 263801 1]
+[sceneSet N 263801 1]
+[sceneSet O 263801 1]
+[sceneSet P 263801 1]
+[charaSet Q 1098333700 1 勝海舟_演出用]
+[charaSet R 2024001 1 織田信長_演出用]
+[charaSet S 3061000 1 原田左之助_演出用１]
+[charaSet T 3061000 1 原田左之助_演出用２]
+
+[scene 263501]
+
+[charaDepth D 4]
+[charaDepth J 3]
+[charaDepth C 2]
+[charaDepth H 1]
+
+[charaScale D 1.3]
+[charaScale J 1.3]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 0,-20]
+[charaFace H 13]
+[charaFadein H 0.1 1]
+[charaFadein J 0.1 0,-330]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+＠黒の剣士
+私をもう一度……、
+[k]
+
+[charaFaceFade D 0 0.2]
+
+＠黒の剣士
+[line 3][#処刑:こ　ろ]していただきたい。
+[k]
+
+[bgm BGM_EVENT_11 0.1]
+
+[messageOff]
+[charaTalk D,H]
+[charaFadeout D 0.6]
+[charaFadeout J 0.6]
+[wt 0.6]
+
+＠勝海舟
+……その話さぁ。
+[k]
+
+＠勝海舟
+やっぱ僕に持ってこられても困るわけ。
+[k]
+
+[charaFace H 9]
+
+＠勝海舟
+もう恨みを買うのはこりごりなのよ。
+[k]
+
+[charaFace H 12]
+
+＠勝海舟
+それに悪いけどそういう事なら、[r]もっと適役がいるでしょ。
+[k]
+
+[charaFace H 0]
+
+＠勝海舟
+ほら、ここまでさんざん迷惑かけた[&彼:彼女]。[r]ねえ、カルデアのマスター君。
+[k]
+
+＠勝海舟
+[&彼:彼女]こそ、おまえさんを処刑するのにふさわしいと思わない？
+[k]
+
+？1：嫌です
+
+？2：ふさわしくないです
+
+？！
+
+[charaFace H 7]
+
+＠勝海舟
+え～、弱ったな、どうも。
+[k]
+
+[charaFace H 0]
+
+＠勝海舟
+ま、傷も深そうだし、とりあえず少し休みなよ。
+[k]
+
+＠勝海舟
+死ぬ死なないの話はそのあとにしようじゃないか。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠黒の剣士
+…………。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠原田左之助
+局長……。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_11 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[charaSet D 1098336900 1 黒の剣士]
+
+[scene 263801]
+
+[subCameraOn 2]
+[subCameraFilter #A maskEdge cut359_mask04 4 255,255,255,255 0]
+[subCameraFilter #B maskEdge cut359_mask05 4 255,255,255,255 0]
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.0]
+[charaLayer E sub #A]
+[charaLayer K sub #A]
+[subRenderScale #B 1.0]
+[charaLayer S sub #B]
+[charaLayer O sub #B]
+[charaScale E 1.4]
+[charaScale K 1.4]
+[charaDepth E 2]
+[charaDepth K 1]
+[charaFace E 0]
+[charaFadein E 0.1 -70,370]
+[charaFadein K 0.1 0,70]
+[charaScale S 1.2]
+[charaScale O 1.2]
+[charaDepth S 2]
+[charaDepth O 1]
+[charaFace S 3]
+[charaFadein S 0.1 0,170]
+[charaFadein O 0.1 300,-50]
+
+[charaDepth W 21]
+[charaDepth X 20]
+[charaDepth H 9]
+[charaDepth T 8]
+[charaDepth F 7]
+[charaDepth N 6]
+[charaDepth C 5]
+[charaDepth M 4]
+[charaDepth D 3]
+[charaDepth Q 2]
+[charaDepth L 1]
+
+[charaScale D 0.8]
+[charaScale C 1.2]
+[charaScale L 1.01]
+[charaScale M 1.3]
+
+[charaFace D 12]
+[charaFadein D 0.1 0,-50]
+[charaFadein L 0.1 0,-200]
+
+
+[charaScale W 1.01]
+[charaScale X 1.01]
+[charaFadein W 0.1 0,737]
+[charaFadein X 0.1 0,-737]
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_SHINYAMA_1 0.1]
+
+＠黒の剣士
+…………。
+[k]
+
+[se ad60]
+[messageOff]
+[blurOff lens 1.4]
+[charaMove W 0,837 1.4]
+[charaMove X 0,-837 1.4]
+
+[charaTalk D,E]
+[subRenderFadeout #A 0.7]
+[charaFadeout M 0.7]
+
+[charaMove D 0,0 2.2]
+[charaMoveScale D 1.0 2.2]
+[charaMove L 0,-228 2.2]
+[charaMoveScale L 1.11 2.2]
+[wt 2.2]
+[seStop ad60 0.4]
+[charaFadeout W 0.4]
+[charaFadeout X 0.4]
+[wt 0.8]
+
+
+？1：沖田さんに聞いてました
+
+[charaFace D 4]
+
+＠黒の剣士
+……総司に、か。
+[k]
+
+？2：新選組のみんなに聞いてました
+
+[charaFace D 0]
+
+＠黒の剣士
+……俺の事をか。
+[k]
+
+？！
+
+[charaFace D 4]
+
+＠黒の剣士
+……だろうな。
+[k]
+
+＠黒の剣士
+恨み言の一つや二つでは済まんだろうよ。
+[k]
+
+[charaFace D 22]
+
+＠黒の剣士
+…………。
+[k]
+
+＠黒の剣士
+……俺はあいつらに何もしてやれなかった。
+[k]
+
+＠黒の剣士
+この剣で国を守り、大名になるなどと夢物語をひけらかし、[r]江戸から京くんだりまで連れ出した。
+[k]
+
+[charaFace D 4]
+
+＠黒の剣士
+…………。
+[k]
+
+＠黒の剣士
+剣で国を守るなどと言いながら、[r]その剣で仲間を殺し続けた。
+[k]
+
+＠黒の剣士
+そうして……、あとには何も残らなかった。
+[k]
+
+[charaFaceFade D 12 0.2]
+
+＠黒の剣士
+…………。
+[k]
+
+[charaFace D 22]
+
+＠黒の剣士
+いや、残ったのは恨みだけだ。
+[k]
+
+＠黒の剣士
+…………。
+[k]
+
+[charaFace D 0]
+
+＠黒の剣士
+だが、恨みだけが残ったなら、まだましだ。[r]俺が死ねばそれで済む話だからな。
+[k]
+
+＠黒の剣士
+そうだ、あいつらは死んだ後も[r]サーヴァントなどという仕組みに囚われていた。
+[k]
+
+[charaFace D 4]
+
+＠黒の剣士
+いや、新選組という『呪い』に囚われてしまった。
+[k]
+
+[messageOff]
+[se ad60]
+[seVolume ad60 0 0.4]
+[seVolume ad60 1.0 1.0]
+[charaTalk D,C]
+[charaScale C 1.15]
+[charaScale M 1.4]
+[charaFadein M 0.6 230,-230]
+[charaMove M 260,-230 0.6]
+[wt 0.8]
+[charaFadeout L 0.1]
+
+[charaFace C 3]
+[charaFadein C 0.4 -120,10]
+[charaMove C -100,10 0.4]
+[seStop ad60 0.4]
+[wt 0.6]
+
+[charaFace D 0]
+
+＠原田左之助
+だからすべての根源を絶つために局長は……。
+[k]
+
+[messageOff]
+[charaTalk D,C]
+[charaFadeout C 0.4]
+[charaFadeout M 0.4]
+[wt 0.4]
+
+＠黒の剣士
+原田か……。
+[k]
+
+[charaFace D 4]
+
+＠黒の剣士
+俺はこの特異点に召喚されて、[r]弾正に新選組の行く末を見せられた。
+[k]
+
+＠黒の剣士
+そうして、あいつらがサーヴァントになってなお、[r]新選組の呪いに囚われていることを知った。
+[k]
+
+＠黒の剣士
+その呪いを、根源を絶つために……。
+[k]
+
+＠黒の剣士
+あいつらを解き放つために……、
+[k]
+
+[charaFace D 21]
+
+＠黒の剣士
+そうだ、そのためなら俺はどんなことをしても……。
+[k]
+
+＠黒の剣士
+…………。
+[k]
+
+[charaFace D 22]
+
+＠黒の剣士
+だが、結局出来なかった。
+[k]
+
+＠黒の剣士
+平助のいう通り、俺はただの卑怯者だ。
+[k]
+
+[charaFace D 4]
+
+＠黒の剣士
+道理を通せず、情を捨てれず、何もかも最後には投げ出す。
+[k]
+
+＠黒の剣士
+初めから人の上に立つような人間ではなかったんだ。
+[k]
+
+＠黒の剣士
+あいつらの願いを背負えるような男では[r]なかったんだ、俺は……。
+[k]
+
+？1：でも、誰もあなたを悪く言ってませんでしたよ
+
+[charaFace F 4]
+[charaFace D 4]
+
+＠黒の剣士
+そんなはずはない……。
+[k]
+
+？2：確かに芹沢さんは言ってたかも、でも……！
+
+[charaFace D 0]
+[charaFace F 0]
+
+＠黒の剣士
+なに……？　どういうことだ、それは。
+[k]
+
+？！
+
+[messageOff]
+[charaTalk D,T]
+[charaScale F 1.08]
+[charaScale T 1.08]
+[charaScale N 1.4]
+[charaFadein F 0.5 280,0]
+[charaFadein N 0.5 250,-340]
+
+[charaFace T 3]
+[charaFadein T 0.5 -280,0]
+[wt 0.7]
+
+＠T：原田左之助
+局長……、いえ、近藤さん。
+[k]
+
+＠T：原田左之助
+結局、俺たちは散り散りになりましたが、[r]誰も……、少なくとも、俺は恨んじゃいません。
+[k]
+
+[charaFace T 3]
+
+＠T：原田左之助
+幕府の手の者だった人間のいう事じゃないですが……。
+[k]
+
+[charaTalk F]
+[charaFace F 5]
+
+＠F：黒の剣士
+……そんな事は知っていたさ。
+[k]
+
+[charaTalk T]
+[charaFace T 8]
+
+＠T：原田左之助
+そりゃそうっすよね……。
+[k]
+
+[charaFace T 0]
+
+＠T：原田左之助
+だったらなんで、ずっとほうっておいたんですか。
+[k]
+
+[charaTalk F]
+[charaFace F 4]
+
+＠F：黒の剣士
+……人の事は言えん。
+[k]
+
+＠F：黒の剣士
+俺は何も決めれず、お飾りに甘んじることに[r]逃げていたからな。
+[k]
+
+[messageOff]
+[charaTalk F,D]
+[charaFace D 12]
+[charaFadeout F 0.6]
+[charaFadeout T 0.6]
+[charaFadeout N 0.6]
+[wt 0.8]
+
+＠黒の剣士
+……もういいだろう。
+[k]
+
+＠黒の剣士
+どちらにせよ新選組は終わったんだ。
+[k]
+
+[bgmStop BGM_SHINYAMA_1 1.5]
+
+[charaFaceFade D 0 0.2]
+
+＠黒の剣士
+[line 3]俺がこの手で終わらせた。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+？1：ここにあります
+
+？2：終わってないです
+
+？！
+
+[charaFace D 17]
+
+＠黒の剣士
+……なんだと。
+[k]
+
+？1：沖田さんが言ってました
+
+[bgm BGM_EVENT_116 0.1]
+
+＠黒の剣士
+総司の新選組が……、ここに……。
+[k]
+
+？2：土方さんはまだ戦ってます
+
+[bgm BGM_EVENT_116 0.1]
+
+＠黒の剣士
+歳が……、まだ戦っている……。
+[k]
+
+？！
+
+[messageOff]
+[charaTalk D,C]
+[charaScale C 1.25]
+[charaScale M 1.5]
+[charaFace C 7]
+[charaFadein C 0.6 -10,10]
+[charaFadein M 0.6 280,-360]
+[charaMove C 10,10 6.0]
+[charaMove M 300,-360 6.0]
+[wt 0.6]
+
+＠原田左之助
+バカみたいでしょう……。
+[k]
+
+[charaFace C 1]
+
+＠原田左之助
+副長と沖田先輩だけじゃない。
+[k]
+
+＠原田左之助
+斎藤さんも、山南さんも、新八も……、
+[k]
+
+＠原田左之助
+いきさつはどうあれ、どいつもこいつも[r]最後まで新選組を、あの旗を捨ててなかった。
+[k]
+
+[messageOff]
+[charaTalk D,C]
+[charaFace D 16]
+[charaFadeout C 0.6]
+[charaFadeout M 0.6]
+[wt 0.8]
+
+＠黒の剣士
+…………。
+[k]
+
+[charaFace D 12]
+
+＠黒の剣士
+……そうか。
+[k]
+
+[charaFace D 5]
+
+＠黒の剣士
+そうだな、バカばかりだ。
+[k]
+
+＠黒の剣士
+バカにはお似合いの局長というわけか。
+[k]
+
+[charaFace D 4]
+
+＠黒の剣士
+…………。
+[k]
+
+[charaFaceFade D 12 0.2]
+
+＠黒の剣士
+少し、時間をくれ……。
+[k]
+
+[messageOff]
+[se ad452]
+[charaFadeout D 0.6]
+[wt 0.6]
+[seStop ad452 1.5]
+[wt 2.5]
+
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠原田左之助
+局長……。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad60]
+[wt 1.0]
+[charaTalk off]
+[charaFace Q 0]
+[charaFadein Q 0.4 1]
+[seStop ad60 0.4]
+[wt 0.4]
+
+＠勝海舟
+どうだい？　情けない奴だろう、近藤勇って男は。
+[k]
+
+[charaFace Q 4]
+
+＠勝海舟
+武士として生きる、なんておためごかしを抜かして、[r]仲間を見殺しにしてきた、死んで当然のクズ野郎だ。
+[k]
+
+[charaFace Q 9]
+
+＠勝海舟
+挙句の果てに、死ぬ前に僕に言ったのさ。
+[k]
+
+[charaFace Q 0]
+
+＠勝海舟
+[line 3]私は誠を貫きたい。
+[k]
+
+＠勝海舟
+……だとさ。
+[k]
+
+？1：そうですね、情けないですね
+
+[charaFace Q 1]
+[charaFace H 1]
+
+＠勝海舟
+おいおい、君もなかなかいうなぁ。
+[k]
+
+？2：そのわりに気に入ってる風ですね
+
+[charaFace Q 4]
+[charaFace H 4]
+
+＠勝海舟
+……そう見えるかい？
+[k]
+
+？！
+
+[messageOff]
+[charaScale H 1.3]
+[charaScale N 1.3]
+[charaFadein H 0.6 120,0]
+[charaFadein N 0.6 -75,-300]
+[charaMove H 100,0 40.0]
+[charaMove N -95,-300 40.0]
+[wt 1.0]
+
+[charaFaceFade H 0 0.2]
+
+＠勝海舟
+だけどよ、当たり前なんだよ。
+[k]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 3]
+
+＠勝海舟
+本当に正義だの悪だのに向き合って、人は生きてはいけない。[r]人であるなら当たり前の話なんだ。
+[k]
+
+[charaFace H 9]
+
+＠勝海舟
+良いとか悪いとかじゃない。
+[k]
+
+＠勝海舟
+この世に絶対の正義や悪なんてのは[r]ありやしないんだから。
+[k]
+
+[charaFace H 0]
+
+＠勝海舟
+人はどこかで折り合いをつけなきゃならない。
+[k]
+
+＠勝海舟
+誰だってどこかで何かを諦める。
+[k]
+
+＠勝海舟
+…………。
+[k]
+
+[charaFace H 18]
+
+＠勝海舟
+だけどあの男は最後まで折り合いがつかなかったのさ。
+[k]
+
+＠勝海舟
+人が人である限り、絶対にありえない『誠』とやらと[r]死ぬまで折り合いがつかなかった。
+[k]
+
+[charaFace H 0]
+
+＠勝海舟
+…………。
+[k]
+
+[charaFace H 4]
+[charaFace Q 4]
+
+＠勝海舟
+ホント、バカみたいな男さ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout H 0.6]
+[charaFadeout N 0.6]
+[wt 0.6]
+[charaScale H 1.0]
+[charaFace Q 0]
+
+＠勝海舟
+…………。
+[k]
+
+
+＠勝海舟
+おっと、余計なこと言っちゃったねぇ。
+[k]
+
+？1：余計じゃなかったです
+
+？2：バカなことではないです
+
+？！
+
+[charaFace Q 15]
+
+＠勝海舟
+そうかい……。
+[k]
+
+＠勝海舟
+見たとこおまえさんも大概みたいだけどねぇ。
+[k]
+
+[bgmStop BGM_EVENT_116 2.0]
+
+[charaFace Q 18]
+
+＠勝海舟
+…………。
+[k]
+
+[charaFace Q 4]
+
+＠勝海舟
+さて、あとはどう転ぶかだけど、[r]僕らは僕らでやることをやるとしようや。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaTalk on]
+[charaFadeout Q 0.1]
+
+[charaLayer E normal]
+[charaLayer K normal]
+[charaLayer S normal]
+[charaLayer O normal]
+[charaFadeout E 0.1]
+[charaFadeout K 0.1]
+[charaFadeout S 0.1]
+[charaFadeout O 0.1]
+[subCameraOff]
+[wt 0.1]
+
+[scene 263501]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_124 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠織田信長
+というわけで新選組とかいう人斬りサークルは[r]どうでもいいから、わしを助けに行くぞ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 13]
+[charaFadein H 0.1 1]
+
+＠勝海舟
+いやその、そっちも大事だけど、[r]あっちも大変みたいだからさぁ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+
+＠織田信長
+知らんわ、そんな弱小人斬りサークルの内輪もめとか。[r]特異点的にはわしの方が大問題なんじゃからね。
+[k]
+
+[charaFace I 2]
+
+＠織田信長
+わかっとんのか、竹千代んとこの下っ端！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠勝海舟
+ごめんねぇ。でもこれ弾正君の案だから、[r]僕に当たるのやめてほしいなあ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+
+＠織田信長
+だいたい弾正は何がしたいんじゃ、
+[k]
+
+[charaFace I 4]
+
+＠織田信長
+わし捕まえて『わしと何かしないと出れん部屋』でも[r]やってるつもりか。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠勝海舟
+僕ら、というか近藤君は聖杯を使って、[r]新選組の根源を絶つのが目的だった。
+[k]
+
+＠勝海舟
+まあわかりやすく言えば池田屋事件の時の自分を殺して、[r]新選組とその後の歴史を絶ってしまおうってわけ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠織田信長
+なんでそこにわしが必要なの？
+[k]
+
+[charaFace I 5]
+
+＠織田信長
+別に人斬りサークルとか勝手に歴史から消えてくれて[r]構わないんじゃけど。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠勝海舟
+そこはほら、弾正君がこの特異点で力を振るうためだよ。
+[k]
+
+[charaFace H 0]
+
+＠勝海舟
+弾正君は聖杯を使ってこの特異点を作る時に、[r]織田信長と松永久秀の歴史を入れ替えたというわけさ。
+[k]
+
+[charaFace H 15]
+
+＠勝海舟
+本来君が受けるはずの補正を自分に集中させるためにね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠織田信長
+おい、ちょっと待て。
+[k]
+
+＠織田信長
+じゃあ、そもそもこの特異点は弾正が聖杯で[r]作り出したって事なのじゃ？
+[k]
+
+＠織田信長
+人斬りサークルのヘッドだかなんだかが[r]新選組殺しとやらがしたくて始めたんじゃないのか？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 15]
+[charaFadein H 0.1 1]
+
+＠勝海舟
+だから、新選組の根源を絶つために聖杯の儀式を行う[r]という条件で弾正君と協力したんだよ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠織田信長
+だったら弾正の目的は何なんじゃ。
+[k]
+
+＠織田信長
+いまんところ、ただ人斬りサークルのヘッドに[r]協力する為だけに、頑張ってるじゃん。
+[k]
+
+[charaFace I 7]
+
+＠織田信長
+そんなタマじゃないよ、あやつ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+
+＠勝海舟
+そりゃそうだ。
+[k]
+
+[charaFace H 0]
+
+＠勝海舟
+ただ、僕も弾正君に全てを聞かされてたわけじゃないんでね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠織田信長
+確かにおまえ裏切りそうな顔してるしの。[r]弾正に警戒されてもしょうがなさそう。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+
+＠勝海舟
+それ、昔もよく言われたんだよねぇ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠織田信長
+で、どうなの、マスター。
+[k]
+
+＠織田信長
+例の人斬りサークルのヘッドの様子は。[r]ちらっとみたら、なんか辛気臭い奴みたいだけど。
+[k]
+
+？1：わからないけど……
+
+[charaFace I 7]
+
+＠織田信長
+けど……、な。
+[k]
+
+？2：きっと大丈夫
+
+[charaFace I 4]
+
+＠織田信長
+ほーん……。
+[k]
+
+？！
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_124 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

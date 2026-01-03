@@ -1,0 +1,405 @@
+
+
+＄03-00-13-02-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098254800 1 ネモ・マリーン]
+[charaSet B 1098253200 1 Ｕ－オルガマリー]
+[charaSet C 1098252560 1 オセロトル]
+[charaSet D 1098259200 1 男]
+[sceneSet E 171600 1]
+[charaScale E 1.2]
+[sceneSet F 171700 1]
+[charaScale F 1.5]
+[sceneSet G 171700 1]
+[charaScale G 1.5]
+[sceneSet H 169100 1]
+[charaScale H 1.05]
+[sceneSet I 169100 1]
+[charaScale I 1.05]
+[sceneSet J 171700 1]
+[charaScale J 1.5]
+[charaSet K 1098254800 1 マリーン（演出用）]
+[charaSet L 98115000 1 エフェクト用]
+[charaSet M 98115000 1 エフェクト用]
+[charaSet N 98115000 1 エフェクト用]
+
+[charaSet Q 1098252540 1 オセロトル2]
+[charaSet S 1098252540 1 オセロトル3]
+
+[sceneSet T 171600 1]
+[charaScale T 1.5]
+[sceneSet U 171600 1]
+[charaScale U 1.2]
+
+[charaPut M 2000,2500]
+[charaEffect M bit_sepia01_depth_fs]
+[charaPut D 2000,2500]
+[charaEffect D bit_sepia01_depth_fs]
+
+[scene 171700]
+[charaFadein G 0.1 0,-375]
+
+[bgm BGM_CHOUSIMAI_1 1.5]
+[charaMove G 0,-475 7.3]
+[fadein black 1.5]
+[wait fade]
+[wt 4.8]
+[charaFadeout G 1.0]
+[wt 2.5]
+
+＠ネモ・マリーン
+すっっごい、むせかえる緑のにおーーーい！[r]これ、南米の密林だーー！
+[k]
+
+＠ネモ・マリーン
+空もあるし、風も吹いているし、太陽もある！[r]あっつーい！　人間だったら汗でちゃーーーう！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace A 2]
+[charaFadein A 1.0 1]
+[scene 169100 1.0]
+[wt 1.4]
+
+[charaTalk on]
+[charaTalk depthOn]
+＠ネモ・マリーン
+[%1]、こっち来て来て！[r]見た事ない花が咲いている！
+[k]
+
+＠ネモ・マリーン
+これなんだろう、竜舌蘭？　みたいな？[r]あはは、なんか面白ーーーい！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠Ｕ－オルガマリー
+………………。
+[k]
+
+？1：どうかした？
+？2：何か気になるものでも、大統領？
+
+？！
+
+[charaFace B 18]
+＠Ｕ－オルガマリー
+別に。『見た事のある』風景だと感じただけ。[r]私はこの景色を知ってたんでしょう。
+[k]
+
+＠Ｕ－オルガマリー
+そんな日常体験まで失われる程の不具合が[r]私にあったのか、と考えたの。道理でしょ。
+[k]
+
+[charaFace B 23]
+＠Ｕ－オルガマリー
+……まあいいわ。
+[k]
+
+＠Ｕ－オルガマリー
+『知っていた事』なら、[r]見れば『思い出せる』と分かったから。
+[k]
+
+＠Ｕ－オルガマリー
+これならすぐに私の機能は正常に戻ります。[r]……戻るはず、よ。きっと。元の『私』に。
+[k]
+
+[charaFace B 4]
+＠Ｕ－オルガマリー
+それより、アナタ、本当になってないわね。[r]そんな心構えでやっていけるの？
+[k]
+
+＠Ｕ－オルガマリー
+向こうから物騒な波長の生物が来てる。[r]アナタの敵？　[#獰猛:どうもう]な動物のようだけど。
+[k]
+
+[messageOff]
+[bgmStop BGM_CHOUSIMAI_1 1.5]
+[charaFadeout B 0.2]
+[wt 0.4]
+[se ade255]
+[wt 1.0]
+
+？1：！　マリーン、こっちに！
+？2：（サーヴァントを召喚して……！）
+
+？！
+
+[messageOff]
+[effect bit_talk_summon_failed]
+[wt 0.2]
+[se ad39]
+[wt 2.0]
+[se ad632]
+[seVolume ad632 0 0.3]
+[wt 0.25]
+[seStop ad39 0.3]
+[cueSe Battle bas13]
+[cueSeVolume bas13 0 0.3]
+[effectForceStop bit_talk_summon_failed]
+[wt 1.0]
+[seStop ad632 2.0]
+[wt 1.6]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠Ｕ－オルガマリー
+何、今の？　何も起きないけど。
+[k]
+
+？1：（そういえば……）
+
+？！
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[wt 0.1]
+[fadeout white 0.6]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 168801]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[subCameraOn 1]
+[charaLayer D sub #A]
+[subCameraFilter #A through]
+[subRenderDepth #A 1]
+[subRenderFadein #A 0 0,0]
+[charaScale D 1.0]
+
+[subBlur #A lens 0.1 3 40 1.0 subBlur]
+
+[charaPut M 1]
+[wt 0.6]
+
+[fadein white 0.6]
+[wait fade]
+[wt 1.2]
+
+[fadeout white 0.6]
+[wait fade]
+
+[charaPut M 2000,2500]
+[charaEffectStop M bit_sepia01_depth_fs]
+
+[subBlurOff #A lens 0.1 normal]
+[wt 0.2]
+
+[charaFadeout D 0.1]
+[charaPut D 2000,2500]
+[charaEffectStop D bit_sepia01_depth_fs]
+[wt 0.2]
+
+[subCameraOff]
+
+[charaLayer D normal]
+
+[scene 169100]
+
+[charaTalk depthOff]
+[charaDepth H 2]
+[charaDepth C 5]
+[charaDepth Q 4]
+[charaDepth S 3]
+[charaFadein H 0.1 -30,-210]
+[wt 0.2]
+
+[fadein white 0.6]
+[wait fade]
+[wt 0.4]
+
+？1：令呪が[line 3]ない
+？！
+
+[messageOff]
+[wt 0.1]
+
+[se ade255]
+
+
+[charaTalk off]
+
+[charaFace C 0]
+[charaFace Q 0]
+[charaFace S 0]
+[charaFadein C 0.4 1]
+[wt 0.2]
+[charaFadeinFSL Q 0.4 -300,0]
+[charaFadeinFSR S 0.4 300,0]
+[wt 0.85]
+[charaTalk on]
+
+[cueSe SE_22 22_ad1223]
+[seVolume 22_ad1223 0 0.7]
+＠？？？
+[i npc_language_17]
+[k]
+
+
+[messageOff]
+[cueSeStop 22_ad1223 0.5]
+[wt 0.1]
+
+[cameraMove 0.3 0,-10 1.03]
+[se ad346]
+[wt 0.35]
+[seStop ad346 0.2]
+[wt 0.6]
+
+
+[se ad610]
+[se ad563]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[fadeout black 0.1]
+[wait fade]
+
+[seStop ad610 0.3]
+
+[cameraHome 0.1]
+[charaFadeout C 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout S 0.1]
+[subCameraOn 1]
+
+[charaLayer K sub #A]
+
+[subCameraFilter #A through]
+
+[subRenderDepth #A 1]
+
+[charaScale I 1.4]
+[charaScale K 1.0]
+[charaFace K 11]
+[charaFadein K 0.1 1]
+[subRenderFadein #A 0.1 0,0]
+[charaFadein I 0.1 0,-200]
+[charaFadeout H 0]
+[charaFadeout C 0]
+[wt 0.1]
+
+[effect bit_talk_41_fs]
+[fadein black 0.5]
+[wait fade]
+
+[blur lens 0.4 2 10]
+
+[charaMove K 0,34 0.3]
+[cameraMove 0.3 0,-15 1.2]
+[charaMoveScale K 1.2 0.3]
+[wipeout circleIn 0.3 1.0]
+[wt 0.1]
+[charaFace K 6]
+[wait wipe]
+
+[cameraHome 0.1]
+
+[effectDestroy bit_talk_41_fs]
+[scene 10000]
+[charaFadeout I 0.1]
+[subRenderFadeout #A 0.1]
+[charaFadeout K 0.1]
+[blurOff lens 0.1]
+[wt 0.1]
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+[effect bit_talk_14]
+[se ad32]
+[se ad170]
+[seVolume ad170 0 0.8]
+[cueSe Battle bac179]
+[flashin once 0.1 0.3 FFFFFFFA FFFFFF50]
+[wt 0.5]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth B 2]
+[charaDepth A 3]
+
+[charaScale A 1.2]
+[charaScale I 1.5]
+[charaScale B 1.2]
+[charaFace B 6]
+[charaFace A 11]
+[charaFadein A 0 300,180]
+[charaFadein B 0 0,180]
+[charaFadein I 0 0,-230]
+
+[effect bit_talk_14]
+
+
+
+[subCameraOff]
+[charaLayer K normal]
+[se ad612]
+[seVolume ad612 0 0]
+[wt 1.2]
+[effectDestroy bit_talk_14]
+
+[seVolume ad612 0.2 0.5]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaMove A 300,0 2.0]
+[charaMove B 0,0 2.0]
+[charaMove I 0,-350 2.0]
+[bgm BGM_SEIHAI_4 0.1]
+[wt 3.0]
+
+[charaTalk on]
+＠ネモ・マリーン
+たた、助けてくれたの！？[wt 0.7][charaFace A 2][r]ありがとーー、かっこいー！　ちょっと好きーー！
+[k]
+
+[charaFace B 15]
+＠Ｕ－オルガマリー
+す、[wt 0.3][messageShake 0.05 4 3 0.3]好き、好き！？　かっこいい！？
+[k]
+
+[charaFace B 0]
+＠Ｕ－オルガマリー
+そ、そうか。ではサービスしてやろう！[r]この程度であれば私の敵ではない！
+[k]
+
+[charaFace B 7]
+＠Ｕ－オルガマリー
+どれほど異なる生命であろうと、[r]どれほど相容れない目的であろうと、
+[k]
+
+＠Ｕ－オルガマリー
+まずは言葉を交わすのが知性体の礼儀です！
+[k]
+
+＠Ｕ－オルガマリー
+アナタたちには教育が必要なようね！[r]遠慮は不要よ、[#全力:フルパワー]でかかってきなさい！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_SEIHAI_4 0.4]
+[wait fade]
+[soundStopAll]
+[end]

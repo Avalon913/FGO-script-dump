@@ -1,0 +1,1487 @@
+
+
+
+
+＄94-08-50-17-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5028001 1 イリヤ]
+[charaSet B 5041001 1 美遊]
+[charaSet C 2022000 1 アルテラサンタ]
+[charaSet F 3046001 1 ヴリトラ]
+
+[imageSet L cut465_jetgrg01 1]
+[imageSet M cut465_jetgrg02 1]
+[imageSet N cut465_jetgrg03 1]
+
+[sceneSet P 106800 1]
+[sceneSet Q 106800 1]
+[sceneSet R 188900 1]
+[sceneSet S 188900 1]
+[sceneSet T 106800 1]
+
+[sceneSet U 10001 1]
+[charaScale U 1.1]
+[charaSet V 1098268500 1 通信用]
+[charaPut V 1200,1200]
+[charaEffect V bit_talk_10_LowLevel]
+[charaSet X 5009000 1 エフェクト用1]
+[charaSet Y 5009000 1 エフェクト用2]
+
+[charaSet Z 4004000 1 アストルフォ_エフェクト用]
+
+[scene 106800]
+
+[charaPut X 2500,2500]
+[charaEffect X bit_talk_back_splash_bl 0,0 H]
+[wt 0.1]
+
+[bgm BGM_BATTLE_113 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[subCameraOn 2]
+[charaPut Y 2500,2500]
+[charaEffect Y bit_talk_42_depth 0,0 H]
+[charaLayer F sub #A]
+[charaLayer X sub #A]
+[charaLayer Y sub #B]
+[charaLayer A sub #B]
+[charaLayer B sub #B]
+[charaLayer T sub #B]
+[charaDepth F 2]
+[charaDepth X 1]
+[charaDepth A 4]
+[charaDepth B 3]
+[charaDepth Y 2]
+[charaDepth T 1]
+[charaScale F 1.2]
+[charaScale A 1.2]
+[charaScale B 1.2]
+[subCameraFilter #A maskEdge cut359_mask04 4 0,0,205,255]
+[subCameraFilter #B maskEdge cut359_mask04 4 255,165,186,255]
+[subRenderScale #A 1.2]
+[subRenderScale #B 1.2]
+[charaFace F 1]
+[charaFadein F 0.1 -50,270]
+[charaPut X 0,200]
+[charaFace A 5]
+[charaFadein A 0.1 50,320]
+[charaFadein T 0.1 0,0]
+[charaPut Y 0,200]
+[wt 0.1]
+
+[subRenderFadein #A 0.2 150,-310]
+[subRenderMove #A 0,-310 0.2]
+[cueSe SE_21 21_ade546]
+[wt 1.6]
+[subRenderMove #A -250,-310 0.2]
+[subRenderFadeout #A 0.2]
+[wt 1.0]
+
+[subRenderFadein #B 0.3 50,-530]
+[subRenderMove #B 0,-530 0.3]
+[se ad556 0]
+[seVolume ad556 1.0 0.1]
+[cueSe SE_21 21_ade576 0]
+[seVolume 21_ade576 1.0 0.08]
+[cueSe Servants_9942800 bac901]
+[wt 2.0]
+
+[charaTalk on]
+[charaTalk A]
+
+＠イリヤ
+信じる力でなんとか……[wt 0.7][charaFace A 7]ならなーい！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 50,320]
+
+＠美遊
+計算した。向こうは魔法少女の[r]最高時速を超えてる。
+[k]
+
+＠美遊
+理論上、勝利は難しいと言わざるをえない。
+[k]
+
+[messageOff]
+[seStop ad556 1.0]
+[seStop 21_ade576 1.0]
+[bgm BGM_BATTLE_113 1.0 0.4]
+[wipeout leftToRight 1.0 1]
+[wait wipe]
+[charaEffectDestroy X bit_talk_back_splash_bl]
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[charaLayer F normal]
+[charaLayer A normal]
+[charaLayer B normal]
+[charaLayer X normal]
+[subCameraFilter #B maskEdge cut359_mask04 4 203,58,45,255]
+[charaLayer C sub #B]
+[charaScale C 1.2]
+[charaDepth C 4]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 50,270]
+[charaScale F 1.0]
+[wt 0.7]
+[bgm BGM_BATTLE_113 1.0 1.0]
+[wipein rightToLeft 1.0 1]
+[wait wipe]
+
+[se ade220 0]
+[seVolume ade220 1.0 0.7]
+[subRenderFadein #B 0.3 50,-420]
+[subRenderMove #B 0,-420 0.3]
+[wt 2.0]
+
+[seStop ade220 1.0]
+[charaTalk C]
+[charaFace C 4]
+
+＠アルテラサンタ
+むう。この羊ではどうやらスピード不足のようだ。
+[k]
+
+＠アルテラサンタ
+プレゼントが重いのかもしれないな。[r]先に子供たちに配ってこよう。
+[k]
+
+[messageOff]
+[charaFadeout C 0.7]
+[se ade220 0.7]
+[seStop ade220 1.5]
+[wt 0.4]
+[charaEffectStop Y bit_talk_42_depth]
+[wt 0.8]
+[bgmStop BGM_BATTLE_113 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout T 0.1]
+[charaLayer C normal]
+[charaLayer Y normal]
+[charaEffectDestroy Y bit_talk_42_depth]
+[subRenderFadeout #B 0.1]
+[charaSet D 8001410 1 マシュ]
+[charaSet E 5023000 1 エレナ]
+[charaSet G 4004000 1 アストルフォ]
+[charaSet H 1098124510 1 ダ・ヴィンチ]
+[charaSet I 1098267100 1 メドゥーサ]
+[scene 188900]
+[wt 1.5]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.2]
+
+？1：普通に飛べる仲間たちでも
+？2：そう簡単にはいかないか……
+？！
+
+[bgm BGM_BATTLE_134 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠マシュ
+まだです、マスター。
+[k]
+
+＠マシュ
+こちらには[#普通以上]に飛べる皆さんもいるのです！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠エレナ
+よくわからないけど任せといて！
+[k]
+
+＠エレナ
+移動研究室の速度リミッターと反[image berserker_language_6]機構の[r]安全装置を解除して……ついでに[image berserker_language_5]機能もオン！
+[k]
+
+？1：なんて！？
+？2：今ちょっと聞こえにくかったけど！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠マシュ
+き、聞こえない方がよいことかもしれません！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠エレナ
+だいじょーぶ！[r]これで多分勝てると思うわ！
+[k]
+
+[messageOff]
+[bgm BGM_BATTLE_134 1.0 0.4]
+[wipeout rollRight 1.0 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[subCameraFilter #B maskEdge cut359_mask04 4 184,115,176,255]
+[charaLayer E sub #B]
+[charaScale E 1.2]
+[charaDepth E 4]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 50,295]
+[charaFadein T 0.1 0,0]
+[scene 106800]
+[wt 0.4]
+[bgm BGM_BATTLE_134 1.0 1.0]
+[wipein rollLeft 1.0 1]
+[wait wipe]
+
+[cueSe NoblePhantasm_202800 NP_202800_5]
+[wt 1.2]
+
+[charaDepth P 3]
+[charaScale P 1.1]
+[charaFadein P 0.2 -50,-200]
+[charaFadein E 0.1 300,295]
+[cueSe SE_23 23_ad1332]
+[seVolume 23_ad1332 0 0.6]
+[subRenderFadein #B 0.1 0,-530]
+[wt 0.2]
+[subRenderFadeout #B 0.2]
+[charaFadeout E 0.2]
+[wt 0.2]
+
+[charaDepth Q 4]
+[charaScale Q 1.2]
+[charaFadein Q 0.2 40,-200]
+[charaFadein E 0.1 -100,295]
+[cueSe SE_23 23_ad1332]
+[seVolume 23_ad1332 0 0.65]
+[subRenderFadein #B 0.2 0,-310]
+[wt 0.3]
+[subRenderFadeout #B 0.2]
+[charaFadeout E 0.2]
+[charaFadeout P 0.1]
+[wt 0.2]
+
+[charaDepth P 5]
+[charaScale P 1.3]
+[charaFadein P 0.2 -30,-200]
+[charaFadein E 0.1 200,295]
+[cueSe SE_23 23_ad1332]
+[seVolume 23_ad1332 0 0.7]
+[subRenderFadein #B 0.2 0,-365]
+[wt 0.3]
+[subRenderFadeout #B 0.2]
+[charaFadeout E 0.2]
+[charaFadeout Q 0.1]
+[wt 0.2]
+
+[charaDepth Q 6]
+[charaScale Q 1.4]
+[charaFadein Q 0.2 -30,-200]
+[charaFadein E 0.1 -300,295]
+[cueSe SE_23 23_ad1332]
+[seVolume 23_ad1332 0 0.75]
+[subRenderFadein #B 0.2 0,-585]
+[wt 0.3]
+[subRenderFadeout #B 0.2]
+[charaFadeout E 0.2]
+[charaFadeout P 0.1]
+[wt 0.2]
+
+[charaDepth P 7]
+[charaScale P 1.5]
+[charaFadein P 0.2 60,-200]
+[charaFadein E 0.1 0,295]
+[cueSe SE_23 23_ad1332]
+[seVolume 23_ad1332 0 0.8]
+[subRenderFadein #B 0.2 0,-420]
+[wt 0.8]
+[bgm BGM_BATTLE_134 1.0 0.4]
+[wipeout rollRight 1.0 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout T 0.1]
+[charaLayer E normal]
+[charaLayer T normal]
+[subCameraOff]
+[charaScale E 1.0]
+[scene 188900]
+[wt 0.6]
+[bgm BGM_BATTLE_134 1.0 1.0]
+[wipein rollLeft 1.0 1]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠エレナ
+やった！　どう、勝った？[r]勝ったんじゃない？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ヴリトラ
+確かにゴールには先に着いとったがの。
+[k]
+
+＠ヴリトラ
+貴様、チェックポイントのリングの半分を[r][#潜:くぐ]っておらんぞ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠エレナ
+ワープ中に別位相で[#潜:くぐ]ってたんだけど、[r]駄目かしら？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠ヴリトラ
+駄目に決まっとろうが……。
+[k]
+
+[messageOff]
+[bgm BGM_BATTLE_134 1.0 0.4]
+[wipeout leftToRight 1.0 1]
+[wait wipe]
+[charaFadeout F 0.1]
+[scene 188900]
+[wt 0.7]
+[bgm BGM_BATTLE_134 1.0 1.0]
+[wipein rightToLeft 1.0 1]
+[wait wipe]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠アストルフォ
+じゃあさじゃあさ、もっと小回りが利く[r]ボクのヒポグリフならいけるんじゃない？
+[k]
+
+[charaFace G 1]
+
+＠アストルフォ
+リングを[#潜:くぐ]るときだけ実体化させればいいんでしょ？[r]楽勝だよ！
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1]
+[wait wipe]
+[charaFadeout G 0.1]
+[scene 106800]
+
+[subCameraOn]
+[subCameraFilter #A maskEdge cut359_mask04 4 227,159,148,255]
+[charaLayer G sub #A]
+[charaLayer T sub #A]
+[charaLayer Y sub #A]
+[subRenderScale #A 1.2]
+[charaTalk off]
+[charaScale G 1.2]
+[charaScale T 1.2]
+[charaEffect Y bit_talk_41_fs 0,400]
+[charaScale Q 1.2]
+[charaDepth G 2]
+[charaDepth P 1]
+[charaDepth Q 3]
+[charaFadein G 0.1 0,260]
+[charaFadein T 0.1 0,0]
+
+[charaScale P 1.01]
+[charaFadein P 0.2 0,-200]
+[wt 0.4]
+[se ad556 0]
+[seVolume ad556 1.0 0.4]
+[wipein rollLeft 1.0 1]
+[wait wipe]
+[wt 0.3]
+
+
+[charaMoveScale P 1.05 0.2]
+[charaMove P -20,-200 0.2]
+
+[charaPut Y -50,0]
+[subRenderFadein #A 0.2 -100,-420]
+[se ade437]
+[wt 0.4]
+[subRenderFadeout #A 0.2]
+[wt 0.3]
+
+[charaMoveScale P 1.1 0.2]
+[charaMove P 20,-200 0.2]
+
+[charaPut Y -30,0]
+[subRenderFadein #A 0.2 80,-420]
+[se ade437]
+[wt 0.4]
+[subRenderFadeout #A 0.2]
+[wt 0.3]
+
+[charaMoveScale P 1.15 0.2]
+[charaMove P -10,-200 0.2]
+
+[charaPut Y -50,0]
+[subRenderFadein #A 0.2 -60,-420]
+[se ade437]
+[wt 0.4]
+[subRenderFadeout #A 0.2]
+[wt 0.3]
+
+[charaMoveScale P 1.2 0.2]
+[charaMove P 10,-200 0.2]
+
+[charaPut Y -20,0]
+[subRenderFadein #A 0.2 120,-420]
+[se ade437]
+[wt 0.4]
+[subRenderFadeout #A 0.2]
+[wt 0.3]
+[charaFadeout P 0.7]
+[wt 1.4]
+
+？1：速いし、ちゃんとリングも通ってる
+？2：いける……！
+？！
+
+[se ade216]
+[charaTalk G]
+[charaFace G 1]
+[charaPut Y -30,0]
+[subRenderFadein #A 0.2 25,-420]
+
+＠アストルフォ
+ぎゅーーーーん！[r]ゴール！
+[k]
+
+[messageOff]
+[cueSe SE_23 23_ad1238]
+[seStop 23_ad1238 1.0]
+[seStop ad556 0.7]
+[wipeout rectangleStripDownToUp 0.7 1]
+[wait wipe]
+[charaFadeout G 0.1]
+[charaScale G 1.0]
+[blurOff motion 0.1]
+[subRenderFadeout #A 0.1]
+[charaEffectDestroy Y bit_talk_41_fs]
+[charaLayer G normal]
+[charaLayer T sub #A]
+[charaLayer Y sub #A]
+[subCameraOff]
+[charaTalk on]
+[scene 188900]
+[wt 0.4]
+[wipein rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[wt 0.2]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.2 1]
+
+＠アストルフォ
+……やったー！[charaMoveReturn G 0,7 0.4][se ad7 0.4][r]これは勝ったでしょ、わーい！
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth Z 10]
+[charaDepth G 9]
+[charaEffectEdgeBlur Z ffffff ffffff 4 1.5]
+[se ad928 0.6]
+[seStop ad928 2.0]
+[wt 1.8]
+[charaPut Z 1200,1200]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaEffectEdgeBlur Z ffffff ffffff 1 0.75]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠ヴリトラ
+き、ひ、ひ。頑張ったのう。[r]しかし[line 3]よいのか？　残り時間は……
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 0.05]
+
+[charaPut Z 0,0]
+
+＠アストルフォ
+ん？　何だっけ、何かやることがあったような。
+[k]
+
+[charaPut Z 1200,1200]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaEffectEdgeBlurDestroy Z]
+
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠ヴリトラ
+……ゼロ、と。残念、わえの足の[r]シャッターチャンスは終了じゃ。
+[k]
+
+[charaFace F 6]
+
+＠ヴリトラ
+言ったであろう？　レースに勝ったときのみ[r]撮影妨害障壁が無効化できる[#祝福:バ　フ]を与える、と。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠アストルフォ
+えー！？
+[k]
+
+[messageOff]
+[charaFadeout G 0.2]
+[wt 0.1]
+
+[cueSe SE_23 23_ad1325]
+[flashin once 0.1 0.7 FFFFFFCF FFFFFF00]
+[wt 1.4]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.2 1]
+
+＠アストルフォ
+ホントだ、撮れてなーい！[r]せっかく勝ったのに！
+[k]
+
+[charaFace G 4]
+
+＠アストルフォ
+……あ、レースの頑張りと今の撮影で、魔力が……。
+[k]
+
+[messageOff]
+[charaShake G 0.04 1 1 0.5]
+[charaMove G -4,-3 0.2]
+[wt 0.2]
+[se ad110 0.5]
+[seStop ad110 1.2]
+[cueSe Servants_201300 m40402 0.3]
+[seStop m40402 0.4]
+[charaMove G 0,-6 0.2]
+[wt 1.0]
+[charaFadeout G 0.2]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠マシュ
+ちなみに、その無効化時間はどれくらい……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 15]
+[charaFadein F 0.1 1]
+
+＠ヴリトラ
+んむ。[r]３秒じゃ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk H]
+[charaFace H 21]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+短ーい！　そしてレースで全力を出すことも想定すると、[r]実質チャレンジ権は一人一回だ。
+[k]
+
+＠ダ・ヴィンチ
+予想より難易度が上がったぞ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠メドゥーサ
+スピードであいつの先を行かなくてはならないのに加えて、
+[k]
+
+＠メドゥーサ
+ゴールした瞬間に素早くカメラで撮る、[r]切り替えの技術も要求されるというわけね。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠マシュ
+それは……困りました。
+[k]
+
+＠マシュ
+スピードに特化した方々であれば[r]太刀打ちできることは証明されましたが、
+[k]
+
+＠マシュ
+ゴールした瞬間の撮影技術が必要となると……。
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_134 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout D 0.1]
+[charaSet A 6040001 1 オキタ・Ｊ・ソウジ]
+[charaSet B 4029002 1 アキレウス]
+[charaSet C 98002000 1 フォウ]
+[charaSet E 4001002 1 ライダー]
+[charaSet G 1098268100 1 ミス・ブーツライン]
+[charaSet J 1098267100 1 メドゥーサ_演出用]
+[charaSet K 4001002 1 ライダー_演出用]
+[subCameraOn]
+[subCameraFilter #A maskEdge cut359_mask04 4 132,192,255,255]
+[charaLayer A sub #A]
+[charaLayer T sub #A]
+[charaLayer Y sub #A]
+[subRenderScale #A 1.2]
+[charaTalk off]
+[charaScale A 1.2]
+[charaScale T 1.2]
+[charaScale Q 1.2]
+[charaDepth P 1]
+[charaDepth Q 3]
+[charaFadein T 0.1 0,0]
+[scene 106800]
+[wt 1.0]
+[se ade343 0]
+[seVolume ade343 1.0 0.4]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_199 0.1]
+
+[charaDepth A 6]
+[charaDepth Y 5]
+[charaDepth T 4]
+[charaEffect Y bit_talk_42_depth 0,300 H]
+
+[cueSe Servants_604000 bac506]
+[seStop bac506 1.5]
+[subRenderFadein #A 0.2 250,-420]
+[subRenderMove #A 0,-420 0.2]
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.4 0,230]
+[charaMove A 0,250 0.2]
+[wt 0.8]
+
+＠オキタ・Ｊ・ソウジ
+やはりジェット！[r]ジェットは全てを解決します！
+[k]
+
+[messageOff]
+[charaMove A 0,246 0.4]
+[cueSe Servants_604000 bac1293]
+[wt 1.0]
+[cueSe Servants_604000 bac1301]
+[subRenderFadeout #A 0.2]
+[subRenderMove #A -250,-420 0.2]
+[charaMove A 0,266 0.2]
+[charaFadeout A 0.4]
+[wt 0.2]
+
+[blur motion 0.7 2 10000 0.75 0.75 0.05 100]
+[cueSe NoblePhantasm_604000 NP_604000_8]
+[effect bit_talk_arrow01br_fs 14,29]
+[wt 0.8]
+[seStop NP_604000_8 0.4]
+[wt 0.4]
+[cueSe Servants_604000 bac1294]
+[wt 1.4]
+
+＠オキタ・Ｊ・ソウジ
+あっ、しかしその、[r]ジェットは急には止まれませんので！
+[k]
+
+＠オキタ・Ｊ・ソウジ
+何かクッションとか制動索とか[r]用意してもらえますか？
+[k]
+
+＠オキタ・Ｊ・ソウジ
+あるいは突いてもいいダーオカとか用意してくれたら[r]三段突きの反動で止まれるかもなんですけどー！
+[k]
+
+[messageOff]
+[cueSe Servants_604000 bac1296 0.5]
+[seStop bac1296 1.4]
+[seStop ade343 1.4]
+[wt 1.4]
+[se ade126 0.7]
+[effect bit_talk_starshine -350,200]
+[wt 1.0]
+[bgm BGM_BATTLE_199 1.0 0.4]
+[wipeout leftToRight 1.0 1]
+[wait wipe]
+[blurOff motion 0.1]
+[subRenderFadeout #A 0.1]
+[charaEffectDestroy Y bit_talk_42_depth]
+[charaLayer A normal]
+[charaLayer T normal]
+[charaLayer Y normal]
+[charaScale P 1.2]
+[charaFadein P 0.1 0,-250]
+[sceneSet T 159300 1]
+[charaLayer B sub #A]
+[charaLayer T sub #A]
+[charaLayer X sub #A]
+[charaEffect X bit_talk_back_splash_gr 0,0 H]
+[charaEffect Y bit_talk_42_depth 0,0 H]
+[wt 0.7]
+[se ad556 0]
+[seVolume ad556 1.0 0.5]
+[cueSe SE_23 23_ad1333 0]
+[seVolume 23_ad1333 1.0 0.5]
+[charaShake P 0.03 1 1 0]
+[bgm BGM_BATTLE_199 1.0 1.0]
+[wipein rightToLeft 1.0 1]
+[wait wipe]
+
+[wt 0.7]
+[subCameraOn]
+[subCameraFilter #A maskEdge cut359_mask04 4 168,218,119,0]
+[charaTalk off]
+[charaScale B 1.2]
+[charaScale T 1.1]
+[charaDepth B 2]
+[charaDepth T 1]
+[charaFace B 0]
+[charaFadein B 0.1 0,250]
+[charaFadein T 0.1 0,0]
+[subRenderScale #A 1.2]
+[subRenderFadein #A 0.2 150,-420]
+[subRenderMove #A 0,-420 0.2]
+[wt 0.8]
+[charaFace B 2]
+[cueSe Servants_402900 bac728 0.4]
+[wt 0.3]
+[subRenderFadeout #A 0.2]
+[subRenderMove #A -250,-420 0.2]
+
+[cueSe Servants_402900 bac731 0.5]
+[charaShake P 0.03 3 3 0]
+[wt 1.1]
+
+[seStop ad556 1.0]
+[seStop 23_ad1333 1.0]
+[seStop bac731 1.0]
+[bgm BGM_BATTLE_199 1.0 0.4]
+[wipeout rollRight 1.0 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaFadeout T 0.1]
+[charaFadeout P 0.1]
+[charaLayer B normal]
+[charaLayer T normal]
+[subCameraOff]
+[charaShakeStop P]
+[charaScale B 1.0]
+[charaEffectDestroy X bit_talk_back_splash_gr]
+[charaEffectDestroy Y bit_talk_42_depth]
+[scene 188900]
+[wt 0.4]
+[bgm BGM_BATTLE_199 1.0 1.0]
+[wipein rollLeft 1.0 1]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠アキレウス
+悪ぃ、勝ったが写真が撮れなかった。
+[k]
+
+＠アキレウス
+あんま速すぎると、ゴールしたときに[r]被写体が遠くにいることになる。
+[k]
+
+＠アキレウス
+こいつはなかなか難しいぜ。
+[k]
+
+[messageOff]
+[bgm BGM_BATTLE_199 1.0 0.4]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout B 0.1]
+[sceneSet T 146100 1]
+[scene 188900]
+[wt 1.0]
+[bgm BGM_BATTLE_199 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.4]
+
+？1：スピードスターたちでも苦戦するか……
+？2：何か上手い手はないかな……
+？！
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠マシュ
+カメラとスピード。[r]スピードとカメラ。
+[k]
+
+＠マシュ
+その二つを両立させるには……むむ……
+[k]
+
+[messageOff]
+[bgm BGM_BATTLE_199 1.0 0.6]
+[charaScale T 1.3]
+[charaScale L 1.2]
+[charaScale M 1.2]
+[charaScale N 1.4]
+
+[charaDepth D 7]
+[charaDepth U 9]
+[charaDepth L 4]
+[charaDepth M 3]
+[charaDepth N 5]
+
+[charaTalk off]
+[charaFace D 8]
+[charaFadein T 1.0 0,-200]
+[charaMoveScale D 0.8 2.0]
+[charaMove D 0,-170 2.0]
+[charaMoveScale T 1.2 2.0]
+[charaMove T 0,-160 2.0]
+[wt 2.5]
+
+
+[cueSe SE_21 21_ade545 0.8]
+[seStop 21_ade545 1.0]
+[charaFadein L 0.4 215,-300]
+[wt 1.1]
+
+[cueSe SE_21 21_ade545 0.8]
+[seStop 21_ade545 1.0]
+[charaFadein M 0.4 -180,-250]
+[wt 1.2]
+
+[charaMove L 160,-300 3.0]
+[charaMove M -125,-250 3.0]
+[wt 1.5]
+[charaFadein U 1.5 0,-250]
+[wt 1.5]
+
+[scene 188900]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeinFSSideR D 0.1 350,-250]
+[wt 0.1]
+
+[charaFadeout U 1.0]
+
+[cueSe SE_21 21_ade623]
+[charaFadein N 0.4 0,-360]
+[charaMove N 0,-400 10.0]
+
+[wt 0.4]
+[cueSe SE_21 21_ade677]
+[cueSe SE_21 21_ade620]
+[cueSe SE_21 21_ad1064 0.5]
+[wt 1.8]
+[charaTalk on]
+[charaFace D 15]
+[charaFadeout T 0.1]
+
+＠マシュ
+くっ、駄目です！
+[k]
+
+＠マシュ
+わたしの頭はいつのまにか『ジェットゲオルギウス先生』[r]というワードで占められてしまい……！
+[k]
+
+[charaDepth C 8]
+[charaScale C 0.6]
+[charaTalk C]
+[charaFace C 0]
+[charaFadeinFSSideR C 0.2 220,-240]
+
+＠フォウ
+フォウ、フォフォウフォウ～。
+[k]
+
+[messageOff]
+[charaFadeout D 0.4]
+[charaFadeout C 0.4]
+[charaFadeout N 0.4]
+[bgm BGM_BATTLE_199 1.0 1.0]
+[wt 1.0]
+[charaScale D 1.0]
+
+？1：……何か、ヒントが見えた気がする
+？！
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠マシュ
+ほ、本当ですかマスター！？[r]ジェットゲオルギウス先生に心当たりが！？
+[k]
+
+？1：そうじゃなくて
+？2：両立させるためのアイデアね！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠ヴリトラ
+ん～、駄目か～？[r]まだ諦めんよなあ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠メドゥーサ
+私も、なんとなくわかった。
+[k]
+
+＠メドゥーサ
+でも、それにふさわしい者がいる？[r][#撮るほうは私がやれる]けど。
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_199 1.5]
+[wt 0.7]
+[charaFadeout I 0.2]
+[wt 0.1]
+[se ad800 0.4]
+[seVolume ad800 1.6 1.0]
+[wt 1.0]
+[seStop ad800 0.2]
+[wt 0.5]
+
+＠？？？
+では、[#乗せるほうは私がやりましょう]。
+[k]
+
+[messageOff]
+[charaDepth K 3]
+[charaDepth E 2]
+[charaFilter K silhouette 00000080]
+[charaTalk off]
+[charaScale E 1.2]
+[charaScale K 1.2]
+[charaScale R 1.2]
+[charaFace E 0]
+[charaFadein K 0.4 0,150]
+[charaFadein R 0.4 0,-200]
+[charaMove K 0,0 1.6]
+[charaMove R 0,-300 1.6]
+[wt 2.0]
+[charaFadein E 0.1 0,0]
+
+[charaFadeout K 0.4]
+[charaTalk on]
+[charaTalk E]
+[wt 1.0]
+[bgm BGM_MAP_89 0.1]
+[wt 0.4]
+
+？1：ライダー！
+？2：メドゥーサ！
+？！
+
+[charaFadeout E 0.4]
+[charaFadeout R 0.4]
+[wt 0.4]
+[charaScale E 1.0]
+[charaScale K 1.0]
+[charaFilter K normal 00000080]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+
+＠メドゥーサ
+……どういうつもり？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ライダー
+言葉通りの意味ですが。
+[k]
+
+＠ライダー
+レース部分は私とペガサスが。[r]撮影部分は貴女がやればいい。
+[k]
+
+＠ライダー
+つまり、貴女と私の二人がペガサスの背に乗って[r]レースに挑めば問題は解決する。でしょう？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+おそらく[%1][&君:ちゃん]が[r]思いついた手と同じだろう。
+[k]
+
+＠ダ・ヴィンチ
+スピードと撮影を両立させたいのなら、[r]その二つを別々の者が担当すればいい。
+[k]
+
+＠ダ・ヴィンチ
+ヴリトラ、キミは一対一の勝負でなくては駄目、[r]というルールは設けていなかったはずだ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠ヴリトラ
+き、ひ、ひ。[r]確かにそうじゃのう？
+[k]
+
+[messageOff]
+[charaTalk off]
+[subCameraOn]
+[subCameraFilter #A maskEdge cut359_mask10 3 0,0,0,0]
+[charaLayer K sub #A]
+[charaLayer S sub #A]
+
+[charaTalk depthOff]
+[charaDepth J 4]
+[charaDepth R 3]
+[charaDepth K 6]
+[charaDepth S 5]
+[charaDepth F 2]
+[charaDepth G 1]
+
+[charaScale J 1.1]
+[charaScale R 1.1]
+[charaScale K 1.1]
+[charaScale S 1.1]
+
+[charaFace K 0]
+[charaFadeinFSL K 0.1 -50,140]
+[charaFadein S 0.1 70,-100]
+
+[charaFace J 3]
+[charaFadeinFSR J 0.7 250,0]
+[charaFadeinFSR R 0.7 -130,-250]
+[charaMoveFSR J 230,0 1.0]
+[charaMoveFSR R -150,-250 1.0]
+[wt 1.7]
+
+[subRenderFadeinFSL #A 0.4 -240,-150]
+[subRenderMoveFSL #A -230,-150 0.5]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[charaFace K 4]
+
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+[charaTalk on]
+
+＠K：ライダー
+わかっているでしょう？　私たちとて、貴女が[r]ここで足止めをくらったままでは困るのです。
+[k]
+
+[messageOff]
+[charaTalk K,G]
+[subRenderFadeout #A 0.4]
+[charaFadeout J 0.4]
+[charaFadeout R 0.4]
+[wt 0.4]
+[charaFadeout K 0.1]
+[charaFadeout S 0.1]
+
+＠ミス・ブーツライン
+そう、その通りなんですよ。
+[k]
+
+＠ミス・ブーツライン
+ヴリトラさんの趣味がこうも強固に[r]立ちはだかるのは予想外。
+[k]
+
+[charaFace G 8]
+
+＠ミス・ブーツライン
+お目付役としても、ここは全員の力を合わせて[r]突破してもらいたいところですね。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaLayer J normal]
+[charaLayer R normal]
+[subCameraOff]
+
+[charaTalk depthOn]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+[wt 1.2]
+
+[charaFace I 13]
+[charaMove I 0,-5 0.7]
+[wt 1.2]
+
+＠メドゥーサ
+……わかった。[r]やるならさっさと済ませましょう。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ライダー
+では。[wt 0.8][r][line 3]『[#騎英の手綱:ベ  ル  レ  フ  ォ  ー  ン]』。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[fowardEffectPause bit_talk_mgn_light]
+[cueSe NoblePhantasm_400100 NP_400100_2]
+[effect bit_talk_easy_spell_r]
+[wt 1.0]
+[charaFilter U silhouette ff47bf80]
+[charaFadeTime U 0.2 0.81]
+
+[se ad63]
+[wt 0.2]
+[charaFadeout U 0.7]
+[shake 0.03 2 2 0.7]
+[effectDestroy bit_talk_easy_spell_r]
+[fowardEffectStart]
+[wt 0.6]
+[cueSe SE_22 22_ad1212]
+[wt 0.2]
+
+[se ade216]
+[wt 1.0]
+[seStop NP_400100_4 2.0]
+
+[cueSe NoblePhantasm_400100 NP_400100_3]
+[wt 2.0]
+
+[charaTalk I]
+[charaFace I 8]
+[charaFadein I 0.2 1]
+
+＠メドゥーサ
+……少し、触っても？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ライダー
+触らなくては乗れませんよ。[r]ご自由に。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaScale I 1.2]
+[charaScale R 1.2]
+[charaTalk depthOff]
+[charaDepth I 4]
+[charaDepth R 3]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 160,0]
+[charaFadein R 0.4 0,-270]
+[charaMove I 140,0 0.7]
+[wt 1.4]
+[charaMoveReturn I 140,-7 0.8]
+[wt 0.4]
+[se ade145]
+[wt 1.0]
+
+[charaFace I 4]
+[wt 1.0]
+
+＠メドゥーサ
+……いい子。お願いね。
+[k]
+
+[messageOff]
+[se ade144]
+[wt 2.1]
+[charaFadeout I 0.5]
+[charaFadeout R 0.5]
+[wt 0.7]
+
+
+[subCameraOn 2]
+[subCameraFilter #A maskEdge cut359_mask07 3 75,10,52,0]
+[charaLayer J sub #A]
+[charaLayer K sub #A]
+[charaLayer R sub #A]
+[charaDepth J 3]
+[charaDepth K 4]
+[charaDepth R 2]
+[charaDepth S 1]
+[charaScale J 1.4]
+[charaScale K 1.4]
+[charaScale R 1.2]
+[charaScale S 1.2]
+[charaTalk off]
+[charaFace K 0]
+[charaFadein K 0.1 -120,80]
+[charaFadein R 0.1 0,0]
+[wt 0.1]
+[subRenderFadein #A 0.4 -0,-200]
+[blur lens 0.4 1 1]
+[wt 1.2]
+[charaFace J 0]
+[charaFadein J 0.4 140,250]
+[charaMove J 120,250 0.4]
+[wt 0.3]
+[se ad775]
+[wt 1.4]
+
+？1：夢のダブルメドゥーサ態勢[&だ:]……！
+？！
+
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[blurOff lens 0.4]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.2 1]
+
+＠マシュ
+はい！　そしてライダーさんのペガサスは、[r]セイバーのメドゥーサさんが持つ[#黄金剣:クリューサーオール]と同じ、
+[k]
+
+＠マシュ
+彼女の血から生まれたとされるもの[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+つまりある意味では、[r]あそこには二人の母と二人の子がいるわけだ。
+[k]
+
+＠ダ・ヴィンチ
+呼吸が合わないなんてコトはないだろう！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[subCameraFilter #A maskEdge cut359_mask02 3 75,10,52,0]
+[subCameraFilter #B maskEdge cut359_mask03 3 75,10,52,0]
+[charaLayer J sub #A]
+[charaLayer R sub #A]
+[charaLayer K sub #B]
+[charaLayer S sub #B]
+[charaPut R -100,-30]
+[charaFadein S 0.1 100,-200]
+
+[charaTalk J]
+[charaFace J 0]
+[charaPut J 280,230]
+[subRenderFadein #A 0.4 0,-180]
+[wt 0.4]
+
+＠J：メドゥーサ
+ゴールするまで暇だから、[r]運賃として魔力はこの子に送っておくわ。
+[k]
+
+[messageOff]
+[charaTalk K]
+[charaFace K 0]
+[charaPut K -280,10]
+[subRenderFadein #B 0.4 0,-200]
+[wt 0.4]
+
+＠K：ライダー
+それはどうも。[r]普段より元気に走ってくれそうです。
+[k]
+
+＠K：ライダー
+それでは[line 3]行きますよ、私。[r]振り落とされないように。
+[k]
+
+＠J：メドゥーサ
+冗談言ってる？[r]この子が私を振り落とすわけがない。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠ヴリトラ
+き、ひ、ひ！　持てる知恵を使い、持てる力を使い、[r]困難を乗り越えようとする！　そうこなくてはの！
+[k]
+
+[charaFace F 9]
+
+＠ヴリトラ
+さあさあ、かかってくるがよい！
+[k]
+
+
+[messageOff]
+[charaFadeout F 0.3]
+
+[wt 1.0]
+
+[cueSe NoblePhantasm_400100 NP_400100_3 0.7]
+[wt 1.0]
+[cueSe NoblePhantasm_400100 NP_400100_1]
+[wt 0.2]
+[effect bit_talk_41_fs]
+[blur motion 0.5 4 10000 0.5 0.7 0.05 100]
+[cameraMove 0.5 0,-80 2.0]
+[bgmStopEnd BGM_MAP_89 0.4]
+[fadeout black 0.5]
+[wait fade]
+[seStop NP_400100_1 0.1]
+[wt 0.1]
+[soundStopAllEnd]
+[end]

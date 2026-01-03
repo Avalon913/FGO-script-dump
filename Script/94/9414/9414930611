@@ -1,0 +1,647 @@
+
+＄94-14-93-06-1-1
+
+[enableWaitLoadAssetWhenResume]
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098334660 1 河上彦斎]
+[charaSet B 3061000 1 原田左之助]
+
+[charaSet C 1098334660 1 河上彦斎_演出用]
+[charaSet D 1098334660 1 河上彦斎_演出用]
+[charaSet E 3061000 1 原田左之助_演出用]
+[charaSet F 3061000 1 原田左之助_演出用]
+
+[sceneSet I 264200 1]
+[sceneSet J 264200 1]
+[sceneSet K 264200 1]
+[sceneSet L 264200 1]
+
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[subCameraOn 3]
+
+[charaLayer K sub #A]
+[charaLayer F sub #A]
+[subCameraFilter #A maskEdge cut359_mask15 5 0,0,0,255 0]
+
+[charaScale F 1.3]
+[charaScale K 1.3]
+[charaFace F 10]
+[charaFadein F 0 -65,265]
+[charaFadein K 0.1 300,0]
+
+[charaLayer L sub #B]
+[charaLayer D sub #B]
+[subCameraFilter #B maskEdge cut359_mask16 5 0,0,0,255 0]
+
+[charaScale L 1.3]
+[charaScale D 1.3]
+[charaFace D 6]
+[charaFadein D 0 65,280]
+[charaFadein L 0.1 -300,50]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaDepth I 3]
+[charaDepth E 4]
+[charaDepth J 5]
+[charaDepth C 6]
+[charaDepth K 7]
+[charaDepth F 8]
+[charaDepth L 10]
+[charaDepth D 11]
+
+[charaDepth Y 25]
+[charaDepth Z 26]
+
+[scene 264200]
+
+[bgm BGM_BATTLE_68 0.1]
+[fadein black 0.5]
+[wait fade]
+
+[effect bit_talk_kengekiall04_fs]
+[wt 0.3]
+[se ad1031]
+[effect bit_talk_14]
+[wt 0.2]
+[se ad1013]
+[wt 0.4]
+
+[effect bit_bolg_02]
+[fowardEffect bit_talk_blow03 -200,0]
+[wt 0.1]
+[se ad1014]
+[wt 0.3]
+
+[effect bit_bolg_02 0,0 V]
+[fowardEffect bit_talk_blow03 200,-85]
+[wt 0.1]
+[se ad1031]
+[wt 0.4]
+[seStop ad470 0.1]
+
+[se ad467]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+
+[se ad671]
+[effectDestroy bit_bolg_02]
+[charaTalk off]
+[charaScale E 1.3]
+[charaFace E 9]
+[charaFadein E 0.2 250,-30]
+[charaScale I 1.25]
+[charaFadein I 0.1 100,-250]
+[charaMoveEase E -150,-40 0.8 easeOutQuart]
+[charaMoveEase I 50,-250 0.8 easeOutQuart]
+[charaMoveScaleEase E 1.2 0.8 easeOutQuart]
+[wt 0.8]
+
+＠原田左之助
+ちいっ！　槍の有利も何も、あったもんじゃ……、
+[k]
+
+[se ad859]
+[blur motion 0.3 4 200 0.5 0.6 0.02 100]
+[charaFace E 5]
+[charaMoveEase E 0,0 0.4 easeOutQuart]
+[charaMoveScaleEase E 1.5 0.4 easeOutQuart]
+[charaMoveEase I 0,-250 0.4 easeOutQuart]
+[charaMoveScaleEase I 1.25 0.4 easeOutQuart]
+[charaPut Y 1]
+[charaEffect Y bit_talk_41_fs]
+[wt 0.3]
+
+＠原田左之助
+ねえなっ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.2 1.0]
+[wait wipe]
+
+[charaFadeout I 0.1]
+[charaFadeout E 0.1]
+[blurOff]
+[charaEffectDestroy Y bit_talk_41_fs]
+[charaPut Z 0,50]
+[charaEffect Z bit_talk_42_depth 0,0 H]
+
+[charaScale J 1.6]
+[charaScale Z 1.1]
+[charaScale C 1.3]
+[charaFace C 6]
+[charaFadein C 0 200,-20]
+[charaFadein J 0 -350,-350]
+[wt 0.2]
+
+[se ad980]
+[charaMoveEase J -200,-350 0.6 easeOutQuart]
+[charaMoveEase C 50,-20 0.6 easeOutQuart]
+[wipein rectangleStripLeftToRight 0.2 1.0]
+[wait wipe]
+[wt 0.2]
+[charaMoveEase J -150,-350 20.0 easeOutSine]
+[charaMoveEase C 0,-20 20.0 easeOutSine]
+
+＠河上彦斎
+……ぬるい！
+[k]
+
+[charaFace C 5]
+
+＠河上彦斎
+そこっ！
+[k]
+
+[bgmStop BGM_BATTLE_68 1.0]
+
+[messageOff]
+[se ad865]
+[se ad715]
+[fowardEffect bit_talk_h_slash01_fs]
+[wt 0.3]
+[fadeout white 0.2]
+[wait fade]
+
+[charaRoll I 0]
+[charaRoll E 0]
+[charaRoll J 0]
+[charaRoll Z 0]
+[charaRoll C 0]
+[charaEffectDestroy Z bit_talk_42_depth]
+[charaFadeout C 0]
+[charaFadeout J 0]
+[wt 1.0]
+
+[fadein white 2.0]
+[wait fade]
+
+[wt 0.8]
+
+[bgm BGM_MAP_91 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[subRenderFadein #A 0.4 -192,-250]
+[subRenderMoveEase #A -212,-300 0.4 easeOutCubic]
+[wt 0.4]
+
+＠F：原田左之助
+…………！
+[k]
+
+[messageOff]
+[charaTalk D]
+[charaFace D 6]
+[subRenderFadein #B 0.4 192,-350]
+[subRenderMoveEase #B 212,-300 0.4 easeOutCubic]
+[wt 0.4]
+
+＠D：河上彦斎
+…………。
+[k]
+
+[charaTalk F]
+
+＠F：原田左之助
+……なんで止めたんすか？
+[k]
+
+[charaTalk D]
+
+＠D：河上彦斎
+それを言うならおまえの槍も止まっているけど？
+[k]
+
+[messageOff]
+[charaTalk F]
+[wt 1.2]
+[charaFaceFade F 8 0.3]
+[wt 0.3]
+
+＠F：原田左之助
+はあ……。[wt 1.0][charaFace F 14]なにがヒラクチの彦斎だよ。
+[k]
+
+＠F：原田左之助
+全然話と違うじゃないすか、気に入らない奴はさっさと[r]斬るのが売りでしょう、あんた。
+[k]
+
+＠F：原田左之助
+ここはちゃんと斬ってもらえませんかね。
+[k]
+
+[charaTalk D]
+
+＠D：河上彦斎
+それは昔のわたし、今のわたしは斬るべきを斬るだけ。
+[k]
+
+[charaTalk F]
+[charaFace F 11]
+
+＠F：原田左之助
+…………。
+[k]
+
+[charaTalk D]
+
+＠D：河上彦斎
+…………。
+[k]
+
+[bgmStop BGM_MAP_91 1.5]
+
+[messageOff]
+[charaTalk off]
+[charaFaceFade F 8 0.3]
+[wt 1.0]
+[se ad442]
+[charaMoveEase F -65,285 0.7 easeOutSine]
+[wt 0.2]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk F]
+[charaFaceFade F 0 0.2]
+
+＠F：原田左之助
+いいすよ、通ってください。俺はここまでです。
+[k]
+
+[bgm BGM_EVENT_141 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+
+＠D：河上彦斎
+ここまで……？
+[k]
+
+[charaTalk F]
+
+＠F：原田左之助
+俺はもともと幕府の……、いえ、代々藩の抱える[r]密偵の家の出でして。
+[k]
+
+＠F：原田左之助
+最初から新選組の動向を監視するために送り込まれたんすよ。
+[k]
+
+[charaTalk D]
+
+＠D：河上彦斎
+ということは新選組の連中に気付かれずに、ずっと？
+[k]
+
+[charaTalk F]
+[charaFace F 7]
+
+＠F：原田左之助
+あからさまに密偵だとわかるようじゃ失格でして、[r]運よく最後までバレませんでした。
+[k]
+
+＠F：原田左之助
+近藤さん、土方さんあたりはどうだかわかりませんがね。
+[k]
+
+[charaFace F 3]
+
+＠F：原田左之助
+まあ、最後の方は、みんな散り散りで[r]バレるも何もなかったわけですけど。
+[k]
+
+[charaTalk D]
+
+＠D：河上彦斎
+明治のころまで生き延びたって聞いたけれど……。
+[k]
+
+[charaTalk F]
+
+＠F：原田左之助
+肝心の幕府も無くなっちまったもんで、[r]適当に流れ流れて、野垂れ死んだってわけです。
+[k]
+
+[charaFace F 8]
+
+＠F：原田左之助
+何もかもうんざりだったもんで。
+[k]
+
+[charaTalk D]
+[charaFace D 6]
+
+＠D：河上彦斎
+…………。
+[k]
+
+[charaTalk F]
+[charaFace F 0]
+
+＠F：原田左之助
+で、気が付いたら、またこんなところに流れ着いた。
+[k]
+
+[charaTalk D]
+
+＠D：河上彦斎
+…………。
+[k]
+
+[charaTalk F]
+[charaFace F 7]
+
+＠F：原田左之助
+そん時に決めてたんすよ。[r]幕府に義理立てするのもあと一度だけってね。
+[k]
+
+[charaFace F 1]
+
+＠F：原田左之助
+それが今終わったってわけです。
+[k]
+
+[charaTalk D]
+
+＠D：河上彦斎
+見かけによらず、律義な事ね……。
+[k]
+
+[charaTalk F]
+[charaFace F 1]
+
+＠F：原田左之助
+幕府……、いや、勝先生には筋は通したかったもんで。
+[k]
+
+[charaTalk D]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaMoveEase D 65,300 0.7 easeOutSine]
+[wt 0.2]
+
+＠D：河上彦斎
+それじゃあ、ここでお別れって事かしら。
+[k]
+
+[messageOff]
+[charaTalk D,B]
+[subRenderFadeout #A 0.5]
+[subRenderFadeout #B 0.5]
+[wt 0.7]
+
+＠原田左之助
+…………。
+[k]
+
+[charaFace B 8]
+
+＠原田左之助
+そうっすね、また大陸にでも行くとします。
+[k]
+
+[bgmStop BGM_EVENT_141 1.5]
+
+[messageOff]
+[wt 0.5]
+
+？1：よかったら一緒に行きません？
+
+
+[charaFace B 13]
+
+＠原田左之助
+一緒にって……、
+[k]
+
+？2：沖田さんたちを助けたいんです
+
+
+[charaFace B 13]
+
+＠原田左之助
+助けたいって……、
+[k]
+
+？！
+
+[bgm BGM_MEIJI 0.1]
+＠原田左之助
+正気っすか。
+[k]
+
+[charaFace B 12]
+
+＠原田左之助
+いまさらあいつらの前に出てったら、殺されちまいますよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠河上彦斎
+…………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠原田左之助
+でもま……、
+[k]
+
+＠原田左之助
+あいつらに斬られるのも、野垂れ死ぬのと[r]たいして変わんないですかね。
+[k]
+
+[charaFace B 0]
+
+＠原田左之助
+…………。
+[k]
+
+[charaFace B 10]
+
+＠原田左之助
+それまで、ご一緒させてもらっても？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠河上彦斎
+[&彼:彼女]がいいならわたしもそれで構わない。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠原田左之助
+すんませんね、こっちの都合ばっかりで。
+[k]
+
+＠原田左之助
+恩に着ますよ、カルデアのマスター。
+[k]
+
+＠原田左之助
+なんで沖田先輩があれほど信頼してたのか、[r]ようやくわかった気がします。
+[k]
+
+[charaFace B 0]
+
+＠原田左之助
+さ、それじゃあ案内しますよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠河上彦斎
+そうだった、急ぎましょう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠原田左之助
+あ、その前にひとついいすか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠河上彦斎
+なに？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠原田左之助
+なんでアサシンなのに、忍び込まずに正面切って[r]突っ込んできたんすか？
+[k]
+
+＠原田左之助
+気配遮断とかあるでしょう。それとも陽動かなにかの……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠河上彦斎
+わたしは気配遮断なんてできない。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠原田左之助
+は？　出来ない？　アサシンのクラススキルなのに？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠河上彦斎
+できない。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠原田左之助
+……そっすか。
+[k]
+
+＠原田左之助
+…………。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠河上彦斎
+…………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠原田左之助
+……なんかすんません。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_MEIJI 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,1773 @@
+
+
+
+＄04-00-03-02-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1098239320 1 カドック]
+[charaSet B 1098257400 1 シオン]
+[charaSet C 1098257800 1 マシュ]
+[charaSet D 1098255100 1 ゴルドルフ]
+[charaSet E 98002000 1 フォウ]
+[charaSet F 1098257300 1 ダ・ヴィンチ]
+[charaSet G 1098182210 1 ネモ・エンジン]
+[charaSet H 1098123000 1 ムニエル]
+[charaSet I 6050001 1 耀星のハサン]
+[charaSet J 11002002 1 巌窟王]
+[charaSet K 11002002 1 巌窟王_シルエット]
+[charaFilter K silhouette 00000080]
+[charaSet L 6050001 1 耀星のハサン_シルエット]
+[charaFilter L silhouette 00000080]
+
+[charaSet M 98115000 1 エフェクト用]
+
+[sceneSet N 10000 1]
+[charaScale N 1.01]
+
+[charaSet O 98115000 1 エフェクト用3]
+[charaScale O 1.8]
+[charaSet P 98115000 1 エフェクト用4]
+[charaPut P 2000,2000]
+[charaEffect P bit_talk_explosion_black]
+[charaScale P 1.8]
+
+[charaSet Q 6050001 1 耀星のハサン1]
+
+[sceneSet R 132900 1]
+[charaScale R 1.1]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaScale S 1.2]
+
+[charaPut S 2000,2000]
+[charaEffect S bit_talk_noise_gr]
+
+[sceneSet T 132900 1]
+[charaScale T 1.2]
+
+[scene 158100]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_41 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠カドック
+伯爵。
+[k]
+
+[charaFace A 1]
+
+＠カドック
+新手の異星の使徒か。[r]その話が、どうした。
+[k]
+
+[messageOff]
+
+[wt 1.6]
+
+[charaFace A 0]
+＠カドック
+[line 3]カリオストロ伯爵？[r]成る程、稀代の大詐欺師とも言われる人物だな。
+[k]
+
+＠カドック
+……。[r]……。
+[k]
+
+＠カドック
+………………。
+[k]
+
+＠カドック
+……[%1]。[r]避けているようなら、あえて口にするぞ。
+[k]
+
+[charaFace A 1]
+＠カドック
+伯爵と言えば、[#ここ:カルデア]で思い浮かぶのはあの英霊だ。
+[k]
+
+＠カドック
+巌窟王、エドモン・ダンテス。
+[k]
+
+＠カドック
+ホームズの例もある。いや、彼は正確には[r]裏切り者ではないだろうが[line 3]
+[k]
+
+
+？1：……巌窟王は違うと思う
+
+[branch select01]
+
+？2：口調も声も、巌窟王とは全然違っ[&た:たよ]
+
+[branch select02]
+
+？3：ホームズは裏切ってないよ
+
+[branch select03]
+
+？！
+
+[label select01]
+
+[charaFace A 5]
+
+＠カドック
+そうか。
+[k]
+
+[charaFace A 0]
+
+＠カドック
+おまえにとっては信頼に値する相手なんだな。[r]だがそれは、僕の目には油断として映る。
+[k]
+
+[charaFace A 1]
+
+＠カドック
+だからあえて言う。[r]たとえ、彼を信頼しているとしても……
+[k]
+
+[charaFace A 13]
+
+＠カドック
+盲目にはなるな。[r]彼を避けろとは言わないが、注意はしておけ。
+[k]
+
+[branch select-end]
+
+
+[label select02]
+
+[charaFace A 2]
+
+＠カドック
+そんなもの、魔術だろうと現代技術だろうと[r]どうとでもなるだろう。
+[k]
+
+[charaFace A 0]
+
+＠カドック
+確証とするには弱すぎる。[r]違うか？
+[k]
+
+？1：それは[line 3]
+？！
+
+[charaFace A 5]
+
+＠カドック
+……そんな顔をするな。[r]おまえを責めてる訳じゃない。
+[k]
+
+[charaFace A 0]
+
+＠カドック
+彼を信頼しているのだとしても、[r]盲目にはなるな。
+[k]
+
+＠カドック
+避けろとは言わないが、注意くらいはしておけ。[r]……心構えとしての話だ。
+[k]
+
+[branch select-end]
+
+
+[label select03]
+
+[charaFace A 5]
+
+＠カドック
+…………そうだな。
+[k]
+
+[charaFace A 1]
+
+＠カドック
+だが、あえて言うぞ。[r]たとえ、おまえが誰かを信頼しているとしても、
+[k]
+
+＠カドック
+盲目にはなるな。[r]彼を避けろとは言わないが、注意はしておけ。
+[k]
+
+＠カドック
+きっとホームズも同じことを言う。[r]僕の記憶の中のヤツならな。おまえはどうだ？
+[k]
+
+[label select-end]
+
+[messageOff]
+[wt 0.5]
+[cameraMove 0.6 0,6 1.0]
+[wait camera]
+[cameraHome 0.6]
+[wait camera]
+[wt 0.7]
+
+[charaFace A 5]
+
+＠カドック
+……まったく。[r]見るからに渋々頷いたな。まあいい。
+[k]
+
+[charaFace A 0]
+
+＠カドック
+僕はせいぜい小言を投げる役だ。[r]おまえがカルデア最後のマスターなんだ。
+[k]
+
+＠カドック
+どうするかは、おまえが決めろ。[r][%1]。
+[k]
+
+
+？1：ありがとう、カドック
+
+[charaFace A 2]
+
+＠カドック
+やめろ。[r]礼を言われるのは筋が違う。
+[k]
+
+？2：頼りにしてるよ、先輩
+
+[charaFace A 13]
+
+＠カドック
+……先輩はやめろ、先輩は。
+[k]
+
+？！
+
+[bgmStop BGM_MAP_41 0.58]
+[messageOff]
+
+
+[flashin loop 0.7 1 FF000080 FF000000]
+[se ad9]
+[seVolume ad9 1.0 0.8]
+[wt 0.7]
+
+[charaFace A 3]
+
+[wt 2.8]
+
+[seStop ad9 1.0]
+[wt 1.7]
+[flashOff]
+
+＠カドック
+！？
+[k]
+
+＠カドック
+緊急アラート！　何だ！？
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad13]
+[charaPut M 1]
+[charaEffect M bit_talk_10_LowLevel]
+[wt 0.8]
+
+＠シオン
+コードイエロー、準二級警戒です。[r]レッドアラートが鳴っているのはミスです、失礼！
+[k]
+
+＠シオン
+マスターは管制室へ！[r]なるべく急ぎでお願いします！
+[k]
+
+？1：了解
+？2：すぐ行[&く:くよ]！
+？！
+
+[messageOff]
+[se ad1]
+[charaPut M 2000,2000]
+[charaEffectStop M bit_talk_10_LowLevel]
+[wt 1.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カドック
+行くぞ！
+[k]
+
+[messageOff]
+[se ad59]
+[se ade427]
+
+[wipeout leftToRight 0.5 1.0]
+[wait wipe]
+
+[seStop ad59 1.5]
+[seStop ade427 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[scene 132900]
+[wt 1.5]
+
+[se ad8]
+
+[wt 0.8]
+
+[wipein rightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠マシュ
+先輩！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠ゴルドルフ
+来たか、[%1]！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se adm21]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 0,5]
+[charaMove E 0,-10 0.2]
+[charaMoveScale E 1.25 0.64]
+[wt 0.2]
+[charaMove E 0,60 0.4]
+＠フォウ
+フォーウ！
+[k]
+
+？1：わっ、フォウくん
+？2：キャッチ！
+？！
+
+[messageOff]
+[se ad183]
+[charaShake E 0.05 3 3 0.3]
+[wt 0.4]
+
+＠フォウ
+フォウゥ……
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠シオン
+通信終了からきっかり１分で到着ですね。[r]流石はカルデアのマスター、やることが早い。
+[k]
+
+[charaFace B 9]
+
+＠シオン
+現在、状況はグリーンへ移行。[r]戦闘が予測される警戒態勢でこそありませんが、
+[k]
+
+＠シオン
+状況は予断を許しません。[r]……ですね。技術顧問。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaMoveScale E 1.0 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+うん。まずは来てくれてありがとう、[r][%1][&君:ちゃん]、カドック。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠カドック
+アラートが鳴った以上、[r]管制室での待機が規定のスキームだろう。
+[k]
+
+＠カドック
+礼を言われることじゃない。
+[k]
+
+？1：ダ・ヴィンチちゃん、何があったの？
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 34]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+不測の事態ってやつさ。[r]流石の私も、ちょっぴり驚かされたよ。
+[k]
+
+[charaFace F 22]
+
+？2：右に同じ
+
+
+[charaFace A 0]
+＠カドック
+……。[r]……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 22]
+[charaFadein F 0.1 1]
+
+？！
+
+＠ダ・ヴィンチ
+実はね[line 3][r]ここの英霊召喚システムが[#ひとりでに稼動した]んだ。
+[k]
+
+？1：……ひとりでに？
+？2：勝手に、誰かが召喚されたってこと？
+？！
+
+＠ダ・ヴィンチ
+霊基グラフに登録されてた、とかじゃなくて[r]ボーダー内にしっかり現界してるんだ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠カドック
+そんなことが……有り得るのか？[r]英霊召喚には莫大な魔力が消費されるんだぞ。
+[k]
+
+[charaFace A 2]
+
+＠カドック
+ストーム・ボーダーには魔力炉にあたる[r]燃焼機関が四基あるとは聞くが……
+[k]
+
+＠カドック
+現状、霊基グラフにある英霊たちの維持だけでも[r]相当のコストを支払い続けている筈だ。
+[k]
+
+＠カドック
+ハベトロット現界の例があるにはある、[r]とはいえ……
+[k]
+
+[charaFace A 10]
+
+＠カドック
+召喚システムの起動制御はどうなってる？[r]まさか、ロックが掛かってないのか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+いえ、掛かっています。[r]電子式と物理式、加えて魔術式の防護が常に。
+[k]
+
+＠マシュ
+それぞれのロック解除には、[r]新所長とダ・ヴィンチちゃんの承認、それから、
+[k]
+
+＠マシュ
+サーヴァントと契約を行うマスターである[r]先輩によるシステム起動が必要となっています。
+[k]
+
+[charaFace C 11]
+
+＠マシュ
+なって、いる……[r]筈なのですが……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+訳がわからん！[r]どうなっているのかー！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+本来、ひとりでに起動する訳がない。[r]それこそシステムと魔力炉との接続だって必要なんだ。
+[k]
+
+[charaFace F 8]
+
+＠ダ・ヴィンチ
+となれば、うん。[r]機関部のネモたちが見過ごさないよ。
+[k]
+
+[charaFace F 14]
+
+＠ダ・ヴィンチ
+そこで[line 3]はい。[r]機関部～！
+[k]
+
+[messageOff]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad13]
+[wt 0.3]
+
+[charaPut M 1]
+[charaEffect M bit_talk_10_LowLevel]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ネモ・エンジン
+おう、こちら機関部。[r]さっきも言ったけど、改めて。
+[k]
+
+＠ネモ・エンジン
+普段、召喚する時は動力分配の要請を受けて[r]調整する訳だけどよ……
+[k]
+
+[charaFace G 5]
+
+＠ネモ・エンジン
+今回はこっちでの分配調整はしていない。[r][#勝手にそうなってやがった]。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut M 2000,2000]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+ヒッ。では何かね、機械が勝手に動いたと！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut M 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ネモ・エンジン
+勝手には動かないが、常に動いてもいるんだぜ。[r]休まずの長期運転なら“まさか”もあるだろ。
+[k]
+
+＠ネモ・エンジン
+不具合は絶対にない、とは言えねえ。
+[k]
+
+＠ネモ・エンジン
+プロフェッサーは故障箇所がないかを、[r]キャプテン野郎は原因を調査中だ。
+[k]
+
+[charaFace G 4]
+
+＠ネモ・エンジン
+自分の[#艦:からだ]の事なのに、[r]まるで把握できてねーって焦ってるぜ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut M 2000,2000]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+キャプテン・ネモさえ把握できない、[r]異常事態……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カドック
+自身の宝具が把握できていない、か。[r]考え[#難:にく]いな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 34]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+そうなんだよね。[r]もう少し、時間を掛けて調べる必要があるかもだ。
+[k]
+
+[charaFace F 22]
+
+＠ダ・ヴィンチ
+シオン。悪いけど、付き合ってくれる？[r]私は一度、接続して艦内を全走査するよ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠シオン
+勿論です、お任せを。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+……もしかしてアレかね？[r]ちょっとしたホラーみたいになってる？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カドック
+恐怖の多くは未知に対するものだ。[r]そういう意味じゃ、そうかもな。
+[k]
+
+[charaFace A 1]
+
+＠カドック
+大衆にとっての未知[line 3][r]神秘の担い手である魔術師が揃っていながら、
+[k]
+
+[charaFace A 5]
+
+＠カドック
+こうも未知の出来事に振り回される。[r]…………確かに、ホラーではあるか。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 4]
+[charaDepth E 5]
+
+[charaTalk off]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+[charaShake D 0.05 2 2 1.8]
+
+[wt 2.0]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.5 300,-90]
+[charaMoveReturn E 250,-70 0.3]
+[charaShake D 0.05 5 3 0.2]
+[se ad660]
+[seVolume ad660 0 0.6]
+＠フォウ
+フォウ、フォウ。[charaMoveReturn E 250,-70 0.3][charaShake D 0.05 5 3 0.2]
+[k]
+
+[charaFace D 12]
+＠ゴルドルフ
+いたっ、いたたた。[r]小刻みに脇腹へ突撃してくるんじゃあない！
+[k]
+
+？1：ところで
+？！
+
+[messageOff]
+[charaFadeout E 0.2]
+[charaFadeout D 0.2]
+[wt 0.2]
+
+[charaTalk depthOn]
+
+？1：召喚されたサーヴァントは、どこに？
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk F]
+[charaFace F 22]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+ああ、それは[line 3]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+？2：召喚された英霊って、どんな人？
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠マシュ
+はっ。
+[k]
+
+[charaFace C 6]
+
+＠マシュ
+す、すみません先輩。[r]肝心なことをお伝えしていませんでした！
+[k]
+
+＠マシュ
+今回召喚されたのは……[r]ある意味で、わたしたちには馴染みのある方です。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠カドック
+馴染み？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+はい。実は[line 3]
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+[se ad8]
+
+[wt 1.2]
+
+[se ade421]
+[wt 0.3]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.4 1]
+[wt 0.4]
+[seStop ade421 0.2]
+
+＠ムニエル
+あーすまん！[r]大人しくしてくれって言ったんだが、無理だった！
+[k]
+
+[charaFace H 3]
+
+＠ムニエル
+ずんずん歩いてここまで来ちまって……[wt 0.7][charaFace H 2][r]ああっ、おい！　止まれって！
+[k]
+
+[messageOff]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[cueSe SE_24 24_ad1351]
+[seVolume 24_ad1351 0 0]
+[seVolume 24_ad1351 1.0 2.0]
+[wt 0.8]
+[seStop 24_ad1351 1.7]
+
+[charaScale L 1.2]
+[charaScale Q 1.2]
+
+[charaDepth L 7]
+[charaDepth Q 6]
+[charaDepth T 5]
+
+[charaTalk off]
+[charaFace L 0]
+[charaFadein L 0.7 0,80]
+[charaFadein T 0.7 0,-190]
+[charaMove L 0,0 1.7]
+[charaMove T 0,-270 1.7]
+[wt 2.2]
+
+[charaFace Q 0]
+[charaPut Q 0,0]
+[charaFadeTime Q 0.1 1.0]
+[wt 0.1]
+[charaFadeout L 0.7]
+
+[wt 1.7]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠Q：？？？
+…………いた。
+[k]
+
+＠Q：？？？
+やっと、見つけた。
+[k]
+
+？1：あなたは……
+？2：その仮面、もしかして
+？！
+
+＠Q：？？？
+オレはハサン。[r]アサシン、[#耀星:ようせい]のハサンだ。
+[k]
+
+＠Q：耀星のハサン
+[#また会ったな]、[#マスター]。
+[k]
+
+[messageOff]
+[charaFadeout Q 0.5]
+[charaFadeout T 0.5]
+[wt 0.5]
+[charaScale Q 1.0]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠マシュ
+また……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カドック
+……何。また会った、と言ったのか？
+[k]
+
+[charaFace A 1]
+
+＠カドック
+珍しいな。過去の現界の記録を[r]引き継いでいるタイプのサーヴァントか。
+[k]
+
+？1：え？
+？2：会ったことはないと思うけど
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.2 1]
+[wt 0.7]
+
+[se ade407]
+[cueSe Servants_305100 bac1642]
+[charaCrossFade I 1098288900 1 0.4]
+[wait charaCrossFade]
+
+[wt 1.0]
+
+[charaFace I 0]
+
+＠耀星のハサン
+忘れたのか。[r]東京で一緒に戦っただろう。
+[k]
+
+＠耀星のハサン
+再会を約束してはいなかったが……[r][#所謂:いわゆる]、縁というやつが結ばれていたんだな。
+[k]
+
+[charaFace I 1]
+
+＠耀星のハサン
+おまえがいるってことは、[r]そうか。ここがカルデアか。
+[k]
+
+？1：東京？
+？2：新宿では、会ってないよね？
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+………………！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠マシュ
+これは、まさか[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 23]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+……英霊の座には、基底現実における[r]時間経過の概念が通用しないという説があるよね。
+[k]
+
+[charaFace F 22]
+
+＠ダ・ヴィンチ
+そういうことかもしれない。[r]彼は、耀星のハサンは……
+[k]
+
+？1：……ごめん、[&自分:わたし]の記憶にはない[&みたいだ:みたい]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠耀星のハサン
+……？
+[k]
+
+＠耀星のハサン
+記憶にない？[r]なんだ、そうなのか。
+[k]
+
+？2：新宿では絶対会ってないはず
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠耀星のハサン
+……？
+[k]
+
+[charaFace I 0]
+
+＠耀星のハサン
+新宿だけじゃない。[r]お台場でも戦っただろう。
+[k]
+
+＠耀星のハサン
+……いや。記憶にない、って顔だな。
+[k]
+
+？！
+
+[charaFace I 13]
+
+＠耀星のハサン
+……成る程。[r]オレの召喚が前のめりにズレてるのか。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_1 2.0]
+
+＠カドック
+！[r]おまえ[line 3]
+[k]
+
+
+＠カドック
+[#未来の特異点でコイツと会った]、ってことか！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_79 0.1]
+
+＠マシュ
+！？
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth B 2]
+[charaDepth F 3]
+[charaDepth D 4]
+
+[charaTalk off]
+
+[charaFace F 25]
+[charaFadeinFSR F 0.1 300,0]
+
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+[charaFace B 6]
+[charaFadeinFSL B 0.1 -300,0]
+
+[wt 1.5]
+
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaDepth K 2]
+[charaDepth J 1]
+
+[charaTalk off]
+
+[se ad343]
+[seVolume ad343 0 0.3]
+[effect bit_talk_06_b3]
+[wt 1.5]
+
+[se ad396]
+[seVolume ad396 0 0.4]
+[se ad596]
+[seVolume ad596 0 0.6]
+
+[charaFace K 0]
+[charaFadein K 0.7 0,-150]
+[charaMove K 0,0 1.0]
+[wt 1.0]
+
+[seStop ad343 1.5]
+[seStop ad396 1.5]
+[seStop ad596 1.5]
+[wt 0.5]
+
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[charaFadeout K 0.7]
+[wt 0.2]
+[effectStop bit_talk_06_b3]
+
+[wt 2.0]
+
+？1：巌窟王！
+？2：エドモン[line 3]
+？！
+
+[charaSet U 11002002 1 巌窟王_演出用]
+[sceneSet V 132900 1]
+[charaScale V 1.2]
+
+[charaScale U 1.05]
+[charaScale I 1.05]
+
+[charaDepth I 5]
+[charaDepth U 4]
+[charaDepth T 3]
+[charaDepth J 1]
+
+[charaFace U 0]
+[charaFadein U 0.5 -130,0]
+[charaMove U -150,0 0.5]
+
+[charaFadein T 0.5 20,-270]
+[charaMove T 0,-270 0.5]
+
+
+＠巌窟王
+おまえは、既に[#俺:オレ]と出逢っている。[r][line 6]そうだな？
+[k]
+
+[messageOff]
+[charaMoveEase U -330,0 1.0 easeOutSine]
+[charaMoveEase T -70,-270 1.0 easeOutSine]
+[wt 0.6]
+[charaFadeout J 0.1]
+
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 18]
+[charaFadein I 0.2 270,0]
+[wt 0.4]
+
+＠耀星のハサン
+……。[r]……。
+[k]
+
+＠耀星のハサン
+……………………どうかな。
+[k]
+
+[messageOff]
+
+[se ad714]
+[seVolume ad714 0 0.6]
+[charaMove I 270,-10 0.4]
+
+[wt 1.2]
+
+[subCameraOn 1]
+[charaLayer C sub #A]
+[charaLayer F sub #A]
+[charaLayer A sub #A]
+[charaLayer N sub #A]
+[charaLayer V sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 3 255,255,255,255]
+
+[charaScale C 1.1]
+[charaScale F 1.1]
+[charaScale A 1.1]
+[charaScale V 1.2]
+
+[charaTalk depthOff]
+[charaDepth A 8]
+[charaDepth C 7]
+[charaDepth F 6]
+[charaDepth N 5]
+[charaDepth V 4]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0 0,270]
+[charaFadein V 0 -470,0]
+
+[subRenderFadein #A 0.2 0,-230]
+[subRenderMove #A 0,-270 0.2]
+
+＠マシュ
+！[r]ハサンさん！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 23]
+[charaFadein F 0.1 0,270]
+
+[charaPut N 0,270]
+[charaFadeTime N 0.2 0.5]
+
+＠ダ・ヴィンチ
+（これは……[r]　巌窟王を警戒して刃に手を掛けてる？）
+[k]
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+[charaFadeout F 0]
+[charaFadeout N 0]
+
+[charaTalk I]
+[charaFace I 19]
+
+＠耀星のハサン
+おまえ[line 3]
+[k]
+
+？1：待って
+？！
+
+[messageOff]
+
+[se ad95]
+[seStop ad95 0.5]
+[cameraMove 0.3 0,-5 1.05]
+
+[charaTalk I,U]
+[charaFace I 0]
+[charaMove I 290,-10 0.35]
+[charaMove U -350,0 0.35]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0 0,270]
+[subRenderFadein #A 0.2 0,-270]
+
+＠マシュ
+先輩！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,270]
+
+＠カドック
+[#臨戦態勢:りんせんたいせい]に入った、英霊の！[r]前に出るんじゃあない！
+[k]
+
+[messageOff]
+[subRenderMove #A 0,-300 0.2]
+[subRenderFadeout #A 0.2]
+[wt 0.3]
+
+[charaDepth I 5]
+[charaDepth U 4]
+[charaDepth T 3]
+[charaDepth R 1]
+[charaFadein R 0.1 0,-230]
+
+[charaTalk I,U]
+[wt 0.5]
+
+？1：大丈夫
+？2：何かの勘違いだろうから、ちゃんと話そう
+？！
+
+[messageOff]
+[charaFadeout I 0.5]
+[charaFadeout U 0.5]
+[charaFadeout T 0.5]
+[wt 0.5]
+[charaFadeout A 0]
+[charaFadeout V 0]
+[charaScale A 1.0]
+[charaScale F 1.0]
+[charaScale C 1.0]
+[subCameraOff]
+[charaLayer C normal]
+[charaLayer F normal]
+[charaLayer A normal]
+[charaLayer V normal]
+
+[bgmStop BGM_EVENT_79 2.5]
+[wt 1.0]
+
+[blur lens 0.5 1 10]
+[wipeout openEye 0.5 0.5]
+[wait wipe]
+[blurOff lens 0.5]
+[wipein openEye 0.5 0.5]
+[wait wipe]
+
+[blur lens 0.5 2 10]
+[wipeout openEye 0.5 0.5]
+[wait wipe]
+
+[blurOff lens 1.2]
+[cameraRollMove 0.6 2]
+[cameraMove 1.2 -10,-10 1.1]
+[charaMoveEase R 10,-230 0.6 easeInOutSine]
+[wipein openEye 0.5 0.5]
+[wt 0.2]
+[se ad95]
+[wt 0.4]
+[seStop ad95 0.1]
+[cameraRollMove 0.6 3]
+[charaMove R -10,-230 0.6 easeInOutSine]
+[wt 0.8]
+
+[charaDepth A 9]
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カドック
+……[%1]。[r]どうした？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth C 9]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[wt 1.5]
+
+[charaFace C 2]
+＠マシュ
+レムレムの前兆です！[r][line 3]バイタル維持、準備お願いします！
+[k]
+
+[messageOff]
+[blur lens 0.5 1 10]
+[wipeout openEye 0.5 0.5]
+[wait wipe]
+[blurOff lens 0.5]
+[wipein openEye 0.5 0.5]
+[wait wipe]
+
+[blur lens 0.5 2 10]
+[wipeout openEye 0.5 0.5]
+[wait wipe]
+
+[blurOff lens 1.0]
+[cameraRollMove 0.6 1]
+[cameraMove 1.0 10,-15 1.15]
+[charaMoveEase C -10,0 0.6 easeInOutSine]
+[charaMoveEase R -20,-230 0.6 easeInOutSine]
+[wipein openEye 0.5 0.5]
+[wt 0.2]
+[se ade421]
+[wt 0.4]
+[seStop ade421 0.3]
+[cameraRollMove 0.4 0]
+[charaMoveEase C 10,0 0.4 easeInOutSine]
+[charaMoveEase R 0,-230 0.4 easeInOutSine]
+[wt 0.6]
+
+？1：ごめん、マシュ[line 3]
+？！
+
+[blur lens 0.5 2 10]
+[cameraRollMove 0.5 3]
+[cameraMove 1.0 -10,-20 1.2]
+[charaMoveEase C 30,0 0.5 easeInOutSine]
+[charaMoveEase R 20,-230 0.5 easeInOutSine]
+[wt 0.2]
+[se ad95]
+[wt 0.3]
+[seStop ad95 0.2]
+[blurOff lens 0.5]
+[cameraRollMove 0.5 5]
+[charaMoveEase C 0,0 0.5 easeInOutSine]
+[charaMoveEase R -10,-230 0.5 easeInOutSine]
+[wt 0.7]
+
+[blur lens 1.0 2 20]
+[cameraRollMove 0.6 2]
+[cameraMove 1.0 -10,-25 1.25]
+[charaMoveEase C -20,0 0.6 easeInOutSine]
+[charaMoveEase R -30,-230 0.6 easeInOutSine]
+[wt 0.2]
+[se ad95]
+[wt 0.3]
+[seStop ad95 0.2]
+[cameraRollMove 0.4 0]
+[charaMoveEase C 10,0 0.4 easeInOutSine]
+[charaMoveEase R 0,-230 0.4 easeInOutSine]
+[wt 0.9]
+[charaMoveEase C 10,100 1.5 easeInOutCubic]
+[charaMoveEase R 0,-130 1.5 easeInOutCubic]
+[wt 0.5]
+
+[wipeout openEye 0.7 0.5]
+[wt 0.5]
+[se ad775]
+[seStop ad775 1.5]
+[wait wipe]
+
+[blurOff lens 0.1]
+[charaFadeout C 0.1]
+[charaFadeout R 0.1]
+[cameraHome 0.1]
+[scene 10000]
+
+[wt 0.5]
+
+[wipein openEye 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[se ad31]
+[charaPut S 0,58]
+[wt 0.5]
+[seStop ad31]
+[charaPut S 2000,2000]
+[wt 0.5]
+
+[se ad31]
+[charaPut S 0,58]
+[wt 0.3]
+[seStop ad31]
+[charaPut S 2000,2000]
+[wt 0.3]
+
+[se ad31]
+[charaPut S 0,58]
+[wt 0.5]
+[seStop ad31]
+[charaPut S 2000,2000]
+[wt 0.5]
+
+
+
+[se ad31]
+[charaPut S 0,58]
+
+[wt 3.5]
+
+[seStop ad31 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaPut S 2000,2000]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_BATTLE_189 0.1]
+
+＠巌窟王
+[line 3]総じて、三つ。
+[k]
+
+＠巌窟王
+いや、[#残る歪みすべて]の解除。[r]或いは[#濾過:ろ　か]こそがおまえたちには必要だ。
+[k]
+
+[messageOff]
+
+[se ad31]
+[charaPut S 0,58]
+
+[wt 1.5]
+
+[seStop ad31]
+[charaPut S 2000,2000]
+
+＠巌窟王
+奴の受け売りだが聞け。[r][#歪:ゆが]みとは、特異点に程近いが……
+[k]
+
+＠巌窟王
+人類史の特異点ではない。[r]現状、危惧すべき特異点は『[#遺分體:エ レ メ ン ツ]』のみ。
+[k]
+
+＠巌窟王
+故にこそ。[r][#歪:ゆが]みの在処、いずれも規格外と知れ。
+[k]
+
+[messageOff]
+
+[se ad31]
+[charaPut S 0,58]
+[wt 0.5]
+[seStop ad31]
+[charaPut S 2000,2000]
+[wt 0.5]
+
+[se ad31]
+[charaPut S 0,58]
+[wt 0.3]
+[seStop ad31]
+[charaPut S 2000,2000]
+[wt 0.3]
+
+[se ad31]
+[charaPut S 0,58]
+[wt 1.5]
+[seStop ad31 1.5]
+
+
+[bgmStop BGM_BATTLE_189 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaPut S 2000,2000]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+
+
+
+[criMovie talk_mov223 bgmPlay true]
+
+[fadeout black 1.0]
+[wait fade]
+
+[wt 2.5]
+
+[scene 212400]
+
+[sceneSet B 212400 1]
+[charaScale B 1.3]
+
+[sceneSet D 212400 1]
+[charaScale D 1.3]
+
+[sceneSet G 212400 1]
+[charaScale G 1.5]
+
+[charaDepth B 1]
+[charaDepth D 2]
+[charaDepth G 3]
+
+[charaFadein B 0.1 -120,-250]
+
+[wt 1.5]
+
+[charaMove B -150,-250 5.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_156 0.1]
+
+[wt 2.5]
+
+[charaFadein D 0.7 120,-250]
+[charaMove D 150,-250 5.0]
+
+[wt 3.5]
+
+[charaFadeout B 0.1]
+
+[charaFadein G 0.7 0,-460]
+[charaMove G 0,-470 5.0]
+
+[wt 1.5]
+
+[charaFadeout D 0.1]
+
+
+
+
+＠
+灰色の空[line 3]
+[k]
+
+＠
+今にも落ちてきそうな程に低い、空が見える。
+[k]
+
+[messageOff]
+[charaFadeout G 1.0]
+[wt 1.2]
+
+＠
+空の下には街並があって、[r]そこに、今。
+[k]
+
+＠
+あなた／わたしは在る。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_156 1.5 0.5]
+[fadeout black 1.5]
+[wait fade]
+[wt 0.5]
+
+[scene 211000]
+
+[sceneSet E 211000 1]
+[charaScale E 1.2]
+
+[charaFadein E 0.1 100,-230]
+
+[wt 1.5]
+
+[charaMove E -100,-230 50.0]
+
+[bgm BGM_EVENT_156 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[wt 2.5]
+
+
+＠
+どこか……
+[k]
+
+＠
+どこかで、見たことのある光景。
+[k]
+
+＠
+記憶の何処かにあるもの。[r]懐かしさすら覚えるもの。
+[k]
+
+＠
+何の変哲もない、[r]閑静な住宅街。
+[k]
+
+＠
+日々、歩いた筈の場所に似ている。[r]日々、変わらない日常を過ごした筈の街に。
+[k]
+
+＠
+あなたは、そんな風に思っているかもしれない。
+[k]
+
+[messageOff]
+[charaFadeout E 1.0]
+[wt 1.5]
+
+＠
+まるで。[r]ここは……
+[k]
+
+？1：通学路？
+？！
+
+＠
+口に出してみる。[r]そう。見えている光景は、学校へ続く道。
+[k]
+
+＠
+自宅から学校へと続く道。
+[k]
+
+＠
+いつか見た道、[r]今や記憶の彼方に隠れかけていた光景の、ひとつ。
+[k]
+
+＠
+そこに、今、いる。
+[k]
+
+＠
+レイシフトを行って、[r]あなた／わたしはやって来た[line 3]
+[k]
+
+
+？1：来たというか、これは……
+？2：誰かに、呼ばれた？
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：[#東京に]？
+？！
+
+＠
+……。[r]……。
+[k]
+
+＠
+………………。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_156 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

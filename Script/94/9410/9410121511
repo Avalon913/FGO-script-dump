@@ -1,0 +1,506 @@
+
+
+＄94-10-12-15-1-1
+
+
+[enableFullScreen]
+[soundStopAll]
+[charaSet A 1098255100 1 ゴルドルフ]
+[charaSet B 1098239320 1 カドック]
+[charaSet C 1098272300 1 オベロン]
+[charaSet D 10018000 1 カズラドロップ]
+
+[charaSet E 1098255100 1 ゴルドルフ_演出用]
+[charaSet F 10018000 1 カズラドロップ_演出用]
+
+[sceneSet G 230000 1]
+[charaScale G 1.2]
+
+[sceneSet L 10000 1]
+[charaScale L 1.2]
+[imageSet K cut598_pancake02 1]
+
+[sceneSet P 230900 1]
+[charaScale P 1.0]
+
+[charaTalk depthOff]
+
+[charaFadein G 0.1 30,-250]
+[wt 0.1]
+
+[charaMove G -30,-250 10.0]
+[scene 230000]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_199 0.1]
+[wt 0.5]
+[se ade241]
+[wt 1.0]
+[seStop ade241 0.4]
+[se ade396 0.2]
+[wt 2.5]
+[seStop ade396 1.5]
+[wt 1.0]
+[charaFadeout G 0.7]
+[wt 1.0]
+
+[cueSe SE_24 24_ade1112]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.4 -30,0]
+[charaMove A 0,0 0.4]
+[wt 1.4]
+
+＠ゴルドルフ
+さあ、どうぞ。
+[k]
+
+[charaFace A 1]
+＠ゴルドルフ
+オホン、今回もまた自慢のヒゲをなでつけながら[r]言わせてもらおうかな。
+[k]
+
+[messageOff]
+[charaDepth A 0]
+[charaDepth G 1]
+[charaDepth E 2]
+[charaDepth D 0]
+[charaScale E 1.2]
+[charaScale G 1.2]
+[charaTalk A,E]
+[charaFace E 2]
+[charaFadein E 0.4 1]
+[charaFadein G 0.4 0,-280]
+[wt 0.5]
+[charaFadeout A 0.1]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+＠E：ゴルドルフ
+パパだよ。[r]召し上がれ！
+[k]
+
+[messageOff]
+[charaTalk E,D]
+[charaFadeout E 0.4]
+[charaFadeout G 0.4]
+[wt 0.4]
+
+＠カズラドロップ
+こ、これは……また、パンケーキ！？
+[k]
+
+[charaFace D 4]
+
+＠カズラドロップ
+２周目でも食べましたけど。[r]味に調整でも加えたんですか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ゴルドルフ
+いや。味はそれほど変えていない。[r]私的には完成しているからな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+
+＠カズラドロップ
+だったらどうして、また同じものを[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠カドック
+だが、それ以外の部分で工夫できる余地があると[r]今の僕たちは知っている。
+[k]
+
+＠カドック
+その部分は明確に[r]２周目で出したものとは違うはずだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠オベロン
+今までの君の発言や態度がヒントになっていた。
+[k]
+
+＠オベロン
+まず、シンプルに言うと。[r]君は『完璧』が好きだよね？
+[k]
+
+[messageOff]
+[charaDepth D 4]
+[charaDepth G 1]
+[charaScale D 1.1]
+[charaScale G 1.5]
+[charaTalk C,D]
+[charaFace D 16]
+[charaFadein D 0.4 1]
+[charaFadein G 0.4 100,-320]
+[wt 0.4]
+[charaFadeout C 0.1]
+
+＠カズラドロップ
+それは、まあ、はい。[r]隠すコトでもありません。
+[k]
+
+？1：だったらというわけで、味以外の部分を[line 3]
+？2：つまり『形』を完璧にしてみました！
+？！
+
+[charaFace D 13]
+
+＠カズラドロップ
+か、形……。
+[k]
+
+[messageOff]
+[charaMoveScaleEase D 0.8 1.2 easeOutSine]
+[charaMoveEaseFSSideR D 300,-200 1.2 easeOutSine]
+[charaMoveScaleEase G 1.2 1.2 easeOutSine]
+[charaMoveEase G -100,-250 1.2 easeOutSine]
+[wt 1.2]
+[se adm19]
+[effect bit_talk_small_brilliant]
+[charaDepth K 4]
+[charaDepth L 2]
+[charaDepth D 3]
+[charaFadein K 0.4 0,-200]
+[charaFadeTime L 0.4 0.5]
+[wt 4.0]
+[seStop adm19 0.4]
+[bgm BGM_BATTLE_199 0.5 1.0]
+[charaFadeout K 0.4]
+[charaFadeout L 0.4]
+[charaFadeout D 0.4]
+[charaFadeout G 0.4]
+[effectStop bit_talk_small_brilliant]
+[wt 0.4]
+[charaScale D 1.0]
+[charaScale G 1.2]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠オベロン
+よし、狙い通り、素晴らしい仕事だゴルドルフ！[r]パンケーキの形に釘付けだぞぅ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠ゴルドルフ
+このパンケーキはほぼ完全な真円だ。[r]カドックたちにも協力してもらって作製した、
+[k]
+
+＠ゴルドルフ
+魔術を用いて誤差を超精密工業製品レベルにまで[r]抑える特別な真円の型を使っている。
+[k]
+
+＠ゴルドルフ
+だからこれから作る全てが同じ完璧さで再現できるぞ。[r]類感魔術の分野においては間違いなく、
+[k]
+
+＠ゴルドルフ
+『完璧に同一のものである』と[#見做:み　な]されて[r]しかるべきシロモノだ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+？1：さあ、このパーフェクト真ん丸パンケーキ……
+？2：食べてみて！
+？！
+
+[charaFace D 15]
+＠カズラドロップ
+ううっ。この、一ミクロンの[#歪:ゆが]みもない[r]完璧な真円……どうしよう。凄く好き、です。
+[k]
+
+＠カズラドロップ
+壊したくないと思ってしまうほど。[r]だから、食べるなら一気に……！
+[k]
+
+[messageOff]
+[charaMoveReturn D 0,-6 0.4]
+[se adm57 0.3]
+[wt 0.1]
+[se ade161]
+[wt 0.3]
+[charaFaceFade D 14 0.3]
+[wt 0.4]
+[seStop ade161 0.3]
+[wt 0.3]
+
+＠カズラドロップ
+完璧なものが完璧なまま私のお腹に！[r]味だって前と一緒で悪くなくて、ううう！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠ゴルドルフ
+さらに！　私は気付いているぞ。
+[k]
+
+[charaFace A 12]
+
+＠ゴルドルフ
+おまえ、前の試食のときもそうだが、[r]『もっと食べたい』と思っていただろう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠カズラドロップ
+えっ？　そ、そんな……[r]はしたない、ことは、全然思ってなんか……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠ゴルドルフ
+誤魔化さずともよい。[r]というか誤魔化せるとでも思ったか！
+[k]
+
+＠ゴルドルフ
+うちのホムンクルスの、何か言いたいことがあるけど[r]黙っていたときの顔にそっくりだ！
+[k]
+
+[charaFace A 14]
+
+＠ゴルドルフ
+子供がそういうのを我慢するものではない！
+[k]
+
+＠ゴルドルフ
+パパとしてお代わりなんぞ[r]いくらでも作ってやる！
+[k]
+
+＠ゴルドルフ
+もちろん、寸分の狂いもない[r]真円パンケーキのままでな！
+[k]
+
+[messageOff]
+[se ad311]
+[charaMove A -100,0 0.4]
+[charaFadeout A 0.4]
+[wt 0.6]
+[seStop ad311 0.5]
+[wt 0.5]
+
+[se ade396 0.7]
+[seStop ade396 1.5]
+[wt 1.5]
+[cueSe SE_24 24_ade1113]
+[wt 1.5]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠カズラドロップ
+う、うわーん！[r]こんな完璧なパンケーキが山のように！
+[k]
+
+[charaFace D 24]
+
+＠カズラドロップ
+こんな、こんなの……[r]食べるしかないじゃないですか、もー！
+[k]
+
+？1：いっぱい食べてね！
+？2：子供は遠慮しないで！
+？！
+
+[messageOff]
+[charaMoveReturn D 0,-6 0.4]
+[se adm57 0.3]
+[wt 0.1]
+[se ade161]
+[wt 0.3]
+[charaFaceFade D 15 0.3]
+[wt 0.4]
+[seStop ade161 0.3]
+[wt 0.3]
+
+＠カズラドロップ
+ううう。（もぐもぐ）
+[k]
+
+＠カズラドロップ
+これは動いてしまう予感がします。[r]採点システムが、かつてなく！
+[k]
+
+＠カズラドロップ
+こんなことで、まさか[line 3]
+[k]
+
+[messageOff]
+[scene 230900 0.5]
+[bgmStop BGM_BATTLE_199 1.5]
+[charaFadeout D 0.5]
+[wt 1.2]
+[cueSe SE_24 24_ade1116]
+[fowardEffect bit_talk_point_10 -29,17]
+[wt 4.0]
+[charaTalk A]
+[charaFace A 2]
+[fowardEffectStop bit_talk_point_10]
+[scene 230000 0.5]
+[charaFadein A 0.5 1]
+[wt 0.8]
+
+[bgm BGM_BATTLE_215 0.1]
+
+＠ゴルドルフ
+よォし！
+[k]
+
+？1：やったー！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[charaMoveReturn B 0,-5 0.6]
+
+＠カドック
+……。（満足したように頷く）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠オベロン
+見事に第一関門を本当にクリアだ。[r]そう、文字通り『完璧に』ね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠カズラドロップ
+くぅぅ……。[r]ち、調子に乗らないでくださいね。
+[k]
+
+＠カズラドロップ
+まだ五つのチェックポイントの一つが[r]攻略されただけです。
+[k]
+
+[charaFace D 14]
+
+＠カズラドロップ
+完璧なパパになるための道のりは[r]まだまだ険しいんですから！
+[k]
+
+＠カズラドロップ
+次はこう簡単にはいきませんからね、[r]虫さんたちー！
+[k]
+
+[messageOff]
+[charaMove D -350,0 0.7]
+[se ade235]
+[wt 0.4]
+[seStop ade235 0.7]
+[wt 0.7]
+[charaFaceFade D 15 0.2]
+[wt 1.1]
+[charaTalk D,F]
+[charaDepth D 0]
+[charaDepth G 1]
+[charaDepth F 3]
+[charaScale F 1.3]
+[charaScale G 1.3]
+[charaFace F 15]
+[charaFadein F 0.6 -120,0]
+[charaFadein G 0.6 80,-280]
+[wt 1.4]
+[charaFadeout D 0.1]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠F：カズラドロップ
+ごちそうさまでした。[r]とっても美味しかったです……パパ。
+[k]
+
+[charaFace F 14]
+
+＠F：カズラドロップ
+～～～！[charaMove F -350,0 0.4][charaFadeout F 0.4][se ade235][seStop ade235 1.4][r]それでは！
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFadeout G 0.4]
+[wt 0.8]
+
+＠オベロン
+考え方が合っていた証明がされたのなら、[r]後はウィニングランのようなものさ。
+[k]
+
+＠オベロン
+この調子で走りきってしまおう！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_BATTLE_215 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

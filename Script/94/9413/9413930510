@@ -1,0 +1,1319 @@
+
+
+＄94-13-93-05-1-0
+
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 3057000 1 ビショーネ]
+[charaSet B 1010000 1 エリザベート]
+[charaSet C 5043000 1 アスクレピオス]
+[charaSet D 4001000 1 メドゥーサ]
+[charaSet E 1098257310 1 ダ・ヴィンチ]
+[charaSet F 1098257810 1 マシュ]
+
+[charaSet G 1098313900 1 蛇竜人]
+[charaSet H 1098312800 1 蛇竜人_左]
+[charaSet I 1098312800 1 蛇竜人_右]
+[charaSet J 1098312900 1 蛇竜人]
+[charaSet K 3057000 1 ビショーネ_演出用]
+[sceneSet S 239300 1]
+[sceneSet T 239301 1]
+
+[charaSet V 98115000 1 エフェクト用]
+
+[imageSet X back10000 1 1]
+[charaScale X 1.05]
+[imageSet Y back10000 1 1]
+[charaScale Y 1.05]
+[charaSet Z 98115000 1 エフェクト用]
+[charaPut Z 2500,2500]
+[charaEffect Z bit_talk_10_LowLevel]
+
+[ifClear 60139301]
+[charaSet L 1098316400 1 チビドラゴン]
+[charaSet M 1098316400 1 チビドラゴン_演出用]
+[sceneSet R 106600 1]
+[scene 106600]
+[flag color_r true]
+
+[ifClear 60139302]
+[charaSet L 1098316500 1 チビドラゴン]
+[charaSet M 1098316500 1 チビドラゴン_演出用]
+[sceneSet R 31901 1]
+[scene 31901]
+[flag color_b true]
+
+[ifClear 60139303]
+[charaSet L 1098316900 1 チビドラゴン]
+[charaSet M 1098316900 1 チビドラゴン_演出用]
+[sceneSet R 209600 1]
+[scene 209600]
+[flag color_g true]
+
+[else]
+[charaSet L 1098316400 1 チビドラゴン]
+[charaSet M 1098316400 1 チビドラゴン_演出用]
+[sceneSet R 106600 1]
+[scene 106600]
+[flag color_r true]
+
+[endIf]
+
+[cameraMove 0.1 0,0 1.01]
+[charaTalk depthOff]
+[charaTalk M,A,L]
+
+[charaDepth A 0]
+[charaDepth L 1]
+[charaDepth M 6]
+[charaDepth V 5]
+[charaDepth R 4]
+[charaScale M 1.0]
+[charaScale R 1.2]
+[charaFace M 0]
+[charaFadein M 0.1 20,0]
+[charaFadein R 0.1 20,-250]
+
+[charaFace A 19]
+[charaFace L 2]
+[charaFadein A 0.1 0,0]
+[charaFadein L 0.1 150,-50]
+[wt 0.1]
+
+[charaPut V 20,0]
+[charaEffect V bit_talk_valentine_brilliant_fs]
+[cueSe SE_24 24_ade1060 0]
+[seVolume 24_ade1060 1.0 1.0]
+[charaMove V -20,0 5.0]
+[charaMove M -20,0 5.0]
+[charaMove R -20,-250 5.0]
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_KAZURA_1 0.1]
+[wt 2.5]
+[charaTalk off]
+[charaEffectStop V bit_talk_valentine_brilliant_fs]
+[cueSeStop 24_ade1060 1.0]
+[charaFadeout M 0.5]
+[charaFadeout R 0.5]
+[wt 1.0]
+
+＠ビショーネ
+や……やったあ～～～～！
+[k]
+
+＠ビショーネ
+成長できました！
+[k]
+
+[charaFace A 4]
+
+＠ビショーネ
+ほらほら見てください、[r]鱗に立派な色がつきましたよ！　ね！
+[k]
+
+？1：うん、おめでとうー！
+？2：よく頑張りました！
+？！
+
+[messageOff]
+[charaFace L 6]
+[charaMoveReturn L 150,20 0.4]
+[cueSe SE_25 25_ade1144]
+[wt 0.4]
+
+＠チビドラゴン
+きゅっぴぴー！
+[k]
+
+[charaTalk A]
+[charaFace A 19]
+
+＠ビショーネ
+えへへ。やっぱり[%1]さんに[r]最後の一押しをもらえてよかったです。
+[k]
+
+＠ビショーネ
+とっても嬉しくて、ほっとしています！[r]我が選択に悔いなし、みたいな！
+[k]
+
+[charaFadeout L 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk on]
+
+[branch lblColor01r color_r true]
+[branch lblColor01b color_b true]
+[branch lblColor01g color_g true]
+
+[label lblColor01r]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠エリザベート
+うんうん、立派な勇者カラーね。[r]先輩勇者として[#私:アタシ]も鼻が高いわ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branch lblConf01]
+[label lblColor01b]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+鮮やかな青色だ。[r]まるで効き目の高い薬のようだな。
+[k]
+
+
+[charaFace C 5]
+
+＠アスクレピオス
+待て、とすると薬効があるかもしれない。[r]一応、鱗の欠片を採取して確かめさせて[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠メドゥーサ
+変態ですか貴方は。[r]いえ変態医者でしたね。
+[k]
+
+＠メドゥーサ
+私がブロックしておきますので[r]安心してください、ビショーネ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branch lblConf01]
+[label lblColor01g]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠メドゥーサ
+私に憧れて速度を追求した結果……[r]と思っておきましょう。
+[k]
+
+＠メドゥーサ
+ところで、なぜ交ざっていたのです？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth G 2]
+[charaDepth H 1]
+[charaDepth I 3]
+[charaTalk G]
+[charaFace G 2]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadeinFSL H 0.1 -220,0]
+[charaFadein G 0.1 0,0]
+[charaFadeinFSR I 0.1 380,0]
+
+＠蛇竜人=spot[G]
+いやー、草の根元ガサガサ遊びは楽しいんで！
+[k]
+
+[clear]
+
+[charaTalk H]
+[charaFace H 1]
+
+＠蛇竜人=spot[H]
+見てたらつい！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk E]
+[charaFace E 34]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+茂みから突然出てくる蛇って[r]すっごいびっくりするんだよねー。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[label lblConf01]
+[charaDepth G 2]
+[charaDepth H 1]
+[charaDepth I 3]
+
+[charaPut Z 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠マシュ
+一応お聞きしますが、ビショーネさん。[r]変わったのは体色だけですか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut Z 2500,2500]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ビショーネ
+ええと、そうみたいですね。
+[k]
+
+＠ビショーネ
+ひょっとしてブレスも吐けるようになったかな、と[r]わたしも思ったりしましたけど……。
+[k]
+
+＠ビショーネ
+変わらず、サーヴァント体のわたしが[r]元々の毒ブレスを吐けるだけですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠エリザベート
+ま、焦ることはないでしょ。[r]そのうち吐けるようになるわよブレスくらい。
+[k]
+
+[charaFace B 5]
+
+＠エリザベート
+でも[#私:アタシ]レベルのソニックブレスを[r]吐けるようになるには、
+[k]
+
+＠エリザベート
+たゆまぬボイトレが必要になるわ！[r]精進しなさい！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ビショーネ
+は、はい！[r]これからも油断せず頑張ります！
+[k]
+
+？1：それじゃあ、鱗門のところに戻って
+？2：通れるかどうか試してみよう！
+？！
+
+[messageOff]
+[charaTalk off]
+[charaDepth A 0]
+[charaDepth C 6]
+[charaDepth B 2]
+[charaDepth D 5]
+[charaDepth K 3]
+[charaDepth M 4]
+[charaDepth R 1]
+[charaFace C 0]
+[charaFace B 0]
+[charaFace D 1]
+[charaFace K 2]
+[charaFace M 1]
+[charaFadein C 0.4 -450,0]
+[charaFadein B 0.4 150,0]
+[charaFadein D 0.4 -150,0]
+[charaFadein K 0.4 400,0]
+[charaFadein M 0.4 500,-100]
+[charaFadein R 0.4 0,-250]
+[wt 0.4]
+[charaFadeout A 0.1]
+
+[charaMoveReturn B 150,-7 0.4]
+[charaMoveReturn C -450,-7 0.4]
+[wt 0.05]
+[charaMoveReturn K 400,-7 0.4]
+[charaMoveReturn M 500,-107 0.4]
+[charaMoveReturn D -150,-7 0.4]
+[wt 1.6]
+
+[bgmStop BGM_KAZURA_1 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaScale M 1.0]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[charaFadeout K 0.1]
+[charaFadeout M 0.1]
+[charaFadeout R 0.1]
+[charaTalk on]
+[scene 239300]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_194 0.1]
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠蛇竜人=spot[J]
+おお。[r]首尾良く成長できたみたいだの？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaScale L 1.0]
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+＠チビドラゴン
+きゅぴー！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadeinFSL H 0.1 -220,0]
+[charaFadein G 0.1 0,0]
+[charaFadeinFSR I 0.1 380,0]
+
+＠蛇竜人=spot[G]
+姐さんたちに話をしたヤツっていうのは[r]やっぱりあんたか。
+[k]
+
+[page]
+
+＠蛇竜人=spot[G]
+そりゃそうか、こんな[#辺鄙:へんぴ]なとこにいるのは[r]あんたぐらいだわな。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[clear]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠蛇竜人=spot[J]
+この悪ガキたちに襲われるどころか[r]手下にして帰ってくるとは。さすがだのう。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadeinFSL H 0.1 -220,0]
+[charaFadein G 0.1 0,0]
+[charaFadeinFSR I 0.1 380,0]
+
+＠蛇竜人=spot[G]
+手下！？[r]手下じゃ……いや、手下かな……。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠エリザベート
+とにかく、これで門を通れるはずよね？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[cameraMoveEase 100,-20 1.0 easeOutSine 1.21]
+[wt 1.5]
+[cameraMove 1.0 -100,-20 1.21]
+[wt 1.5]
+[cameraMoveEase 0,0 1.0 easeOutSine 1.01]
+[wt 1.5]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠チビドラゴン
+きゅー？
+[k]
+
+？1：何も……起こらない、けど
+？！
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠メドゥーサ
+嘘をつきましたか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0.1 1]
+
+＠蛇竜人=spot[J]
+いやいやそんなつもりは！？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠ビショーネ
+この門がまだわたしのことを[r]認識していないのかもしれませんね。
+[k]
+
+[bgmStop BGM_EVENT_194 1.5]
+[charaFace A 20]
+
+＠ビショーネ
+こうなったら……
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth A 0]
+[charaDepth S 1]
+[charaDepth K 2]
+[charaDepth M 3]
+[charaScale K 1.2]
+[charaScale M 1.2]
+[charaScale S 1.2]
+[charaFace K 9]
+[charaFadein K 0.3 0,30]
+[charaFadein S 0.3 120,-300]
+[wt 0.3]
+[charaFadeout A 0.1]
+
+＠ビショーネ
+仮新入社員の武器、無鉄砲な勇気を振り絞って！[r]体当たり営業、やらせてもらいます！
+[k]
+
+＠ビショーネ
+行こう、わたし！
+[k]
+
+[messageOff]
+[charaMoveEase K -150,30 0.4 easeOutSine]
+[charaMoveEase S -30,-300 0.4 easeOutSine]
+[wt 0.4]
+[charaTalk M]
+[charaFace M 3]
+[charaFadein M 0.4 100,0]
+[wt 0.5]
+
+＠M：チビドラゴン
+きゅーーー！
+[k]
+
+[messageOff]
+[charaTalk off]
+[cueSe SE_25 25_ade1146]
+[se adm76 0.1]
+[charaMoveScaleEase K 1.6 0.4 easeOutQuint]
+[charaMoveEase K -150,120 0.4 easeOutQuint]
+[charaMoveScaleEase M 1.6 0.4 easeOutQuint]
+[charaMoveEase M 100,90 0.4 easeOutQuint]
+[charaFadeout K 0.3]
+[charaFadeout M 0.3]
+[wt 0.4]
+[seStop 25_ade1146 0.7]
+[seStop adm76 0.7]
+[charaFadeout S 1.0]
+[wt 0.7]
+[se ad815]
+[shake 0.03 3 3 1.5]
+[wt 3.0]
+[se ad241]
+[effect bit_talk_sand_dust_back_fs 0,-100]
+[effect bit_talk_sand_dust_front_fs 0,-100]
+[shake 0.03 1 1 2.5]
+[wt 1.0]
+
+[scene 239301 1.5]
+[effectStop bit_talk_sand_dust_back_fs]
+[effectStop bit_talk_sand_dust_front_fs]
+[wt 1.5]
+[seStop ad241 2.0]
+[wt 2.5]
+
+？1：開いたー！！
+？！
+
+[bgm BGM_BATTLE_242 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,0]
+
+＠ビショーネ
+や、やりましたー！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 6]
+[charaFadein L 0.1 0,0]
+
+＠チビドラゴン
+きゅきゅー！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0.1 1]
+
+＠蛇竜人=spot[J]
+なんとも、まあ。[r]ホントに開いた。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[clear]
+
+[charaTalk H]
+[charaFace G 1]
+[charaFace H 2]
+[charaFace I 1]
+[charaFadeinFSL H 0.1 -220,0]
+[charaFadein G 0.1 0,0]
+[charaFadeinFSR I 0.1 380,0]
+
+＠蛇竜人=spot[H]
+すげえや姐さん！[r]さすが俺たちの姐さんだぜ！
+[k]
+
+[clear]
+
+＠蛇竜人=spot[I]
+さすが俺の姐さんだぜ！（独占欲）
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠エリザベート
+お手柄よ、ビショーネ！[r]それとちっこいビショーネ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+＠チビドラゴン
+きゅぴー！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠エリザベート
+ん……ちっこいビショーネとか小さいのとか[r]チビドラゴンとかみんな好き勝手に言ってるけど、
+[k]
+
+＠エリザベート
+いい加減ちゃんとしたほうがいいかもって[r]気になってきたわ。
+[k]
+
+[charaFace B 0]
+
+＠エリザベート
+ドラゴンの形をしたそっちのビショーネに、[r]何かわかりやすい名前をつけない？
+[k]
+
+[branch lblColor02r color_r true]
+[branch lblColor02b color_b true]
+[branch lblColor02g color_g true]
+
+[label lblColor02r]
+
+[charaFace B 0]
+
+＠エリザベート
+ちゃんと成長してレッドドラゴンになれたんだし。
+[k]
+
+[branch lblConf02]
+[label lblColor02b]
+
+[charaFace B 0]
+
+＠エリザベート
+ちゃんと成長してブルードラゴンになれたんだし。
+[k]
+
+[branch lblConf02]
+[label lblColor02g]
+
+[charaFace B 0]
+
+＠エリザベート
+ちゃんと成長してグリーンドラゴンになれたんだし。
+[k]
+
+[label lblConf02]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠ビショーネ
+ええっ、それはつまり、可愛い仮新入社員への……[r]チームの一員として与えられる、[#渾名:あだな]……！
+[k]
+
+？1：とても良いアイデアだと思う！
+？2：どんなのがいいかな？
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[subCameraOn 1]
+[charaLayer M sub #A]
+[charaLayer T sub #A]
+[subCameraFilter #A maskEdge cut359_mask20 3 255,255,255,255 0]
+[charaDepth M 2]
+[charaDepth T 1]
+[charaScale M 1.0]
+[charaScale T 1.3]
+[charaTalk off]
+[charaFace M 0]
+[charaFadein M 0 0,200]
+[charaFadein T 0 250,40]
+[subRenderFadein #A 0.4 -250,-150]
+[subRenderMove #A -250,-200 0.4]
+
+[charaFace B 8]
+[charaFadein B 0.1 250,0]
+[wt 0.6]
+
+＠エリザベート
+うーん。小さいから縮めてビショ……違うわね……[r]ビショーネ[#（ドラ）:かっこどら]……[#趣:おもむき]がないわ……
+[k]
+
+[charaFace B 5]
+
+＠エリザベート
+チビの……ビショーネ……だから……[r]うん、チビーネ！
+[k]
+
+[charaFace B 1]
+
+＠エリザベート
+よーしこれだわ、[r]アナタは今日からチビーネよ！
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaTalk M]
+[charaFace M 6]
+[charaMoveReturn M 0,230 0.4]
+[cueSe SE_25 25_ade1144]
+[wt 0.4]
+
+＠M：チビーネ
+きゅっぴー！
+[k]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+
+＠ビショーネ
+わあ！　ありがとうございます、[r]エリちゃん先輩！
+[k]
+
+＠ビショーネ
+とっても気に入りました！
+[k]
+
+[charaFadeout T 0.1]
+[charaFadeout M 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaLayer T normal]
+[charaLayer M normal]
+[subCameraOff]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠メドゥーサ
+ちょっと間抜けな響きではないですか？
+[k]
+
+＠メドゥーサ
+と異議を唱えようとしましたが、[r]既に気に入られた後でした。
+[k]
+
+[charaFace D 1]
+
+＠メドゥーサ
+……まあ、本人が喜んでいるのなら[r]それが一番でしょう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アスクレピオス
+薬に一般名と商品名があるようなものだな。[r]関連性が感じられるし、僕としては異論はない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+ともあれ、障害だった門が無事に開放できてよかった。[r]これで先に進めるね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut Z 2500,2500]
+
+[charaTalk J]
+[charaFace J 5]
+[charaFadein J 0.1 1]
+
+＠蛇竜人=spot[J]
+やっぱり行くのかい。[r]だったら気をつけてな。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[clear]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadeinFSL H 0.1 -220,0]
+[charaFadein G 0.1 0,0]
+[charaFadeinFSR I 0.1 380,0]
+
+＠蛇竜人=spot[G]
+そうだな。ここじゃ頭に近付くほど[r]強いものが生まれやすい、って言われてるんだ。
+[k]
+
+[clear]
+
+＠蛇竜人=spot[H]
+俺たちなんかとは比べ物にならない奴らがいるかもだぜ。
+[k]
+
+[clear]
+
+[charaFace I 2]
+
+＠蛇竜人=spot[I]
+でも大丈夫か、姐さんたちも[r]俺たちとは比べ物にならないくらい強いし！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠メドゥーサ
+一応の確認ですが。貴方たちは、[r]このままここに？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+
+＠蛇竜人=spot[J]
+それは、まあ、なあ。
+[k]
+
+[page]
+
+＠蛇竜人=spot[J]
+ずっと開かなかった門が開いたことに[r]興味はあれど。
+[k]
+
+[page]
+
+＠蛇竜人=spot[J]
+町を離れて、安心できる場所で[r]ひっそり暮らしたいからわしはここにおるんでな。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadeinFSL H 0.1 -220,0]
+[charaFadein G 0.1 0,0]
+[charaFadeinFSR I 0.1 380,0]
+
+＠蛇竜人=spot[G]
+俺たちも、姐さんについていきたくはあるけど……
+[k]
+
+[clear]
+
+[charaFace H 5]
+
+＠蛇竜人=spot[H]
+そうだな、やっぱり怖い、よなあ。
+[k]
+
+[clear]
+
+[charaFace I 6]
+
+＠蛇竜人=spot[I]
+このへんの動物とかを狩ってなんとか安全に[r]やっていくのが俺たちらしいよなあ、やっぱり。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 20]
+[charaFadein A 0.1 1]
+
+＠ビショーネ
+そう、ですね。安心と安全。[r]その気持ち、とってもよくわかります。
+[k]
+
+[charaFace A 1]
+
+＠ビショーネ
+[line 3]今まで、[r]いろいろありがとうございました！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadeinFSL H 0.1 -220,0]
+[charaFadein G 0.1 0,0]
+[charaFadeinFSR I 0.1 380,0]
+
+＠蛇竜人=spot[G]
+最後だから言いますけど、俺たち、[r]マジで姐さんのことリスペクトしてるんで。
+[k]
+
+[page]
+
+＠蛇竜人=spot[G]
+かっこいい背中見せてくれてマジ感謝です。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠ビショーネ
+か、かっこよかった……ですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadeinFSL H 0.1 -220,0]
+[charaFadein G 0.1 0,0]
+[charaFadeinFSR I 0.1 380,0]
+
+＠蛇竜人=spot[G]
+当然。なんつーか、俺たちは……
+[k]
+
+[page]
+
+＠蛇竜人=spot[G]
+このヒゲもだけど、『俺たちはこんなモンだろ』[r]とか思いながら生きてる。
+[k]
+
+[page]
+
+[charaFace G 0]
+
+＠蛇竜人=spot[G]
+なんかもう上限が見えてる気がするっていうかさ？[r]でも、姐さんは違った。
+[k]
+
+[page]
+
+＠蛇竜人=spot[G]
+あんなまっすぐに『成長したい』とか[r]言えるヤツ、初めて見た。
+[k]
+
+[clear]
+
+[charaFace H 2]
+
+＠蛇竜人=spot[H]
+そんで実際に成長しちゃうんだもんなー！[r]マジスゴイぜ！　一生語り継いでいきます！
+[k]
+
+[clear]
+
+[charaFace I 3]
+
+＠蛇竜人=spot[I]
+ううう。でも、正直寂しい……[r]よかったらまた戻ってきてくださいね！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ビショーネ
+ち、ちょっと大袈裟な評価かもですけど……[r]そうですね。
+[k]
+
+[charaFace A 2]
+
+＠ビショーネ
+機会があれば、また！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth G 2]
+[charaDepth H 4]
+[charaDepth I 3]
+[charaDepth J 5]
+[charaFace G 1]
+[charaFace H 1]
+[charaFace I 1]
+[charaFace J 1]
+[charaFadeinFSL J 0.1 -480,0]
+[charaFadeinFSL H 0.1 0,0]
+[charaFadeinFSR G 0.1 110,0]
+[charaFadeinFSSideR I 0.1 490,0]
+[wt 1.2]
+
+[cueSe SE_22 22_ad1210 0.5]
+[cueSeStop 22_ad1210 2.0]
+[cueSe SE_21 21_ad1065 0.5]
+[cueSeStop 21_ad1065 2.0]
+[charaFadeout H 0.7]
+[charaFadeout I 0.7]
+[wt 0.1]
+[charaFadeout G 0.7]
+[wt 0.1]
+[charaFadeout J 0.7]
+
+[bgmStop BGM_BATTLE_242 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaTalk on]
+[charaScale T 1.2]
+[charaFadein T 0.1 0,-270]
+[wt 1.5]
+[charaMove T 80,-270 5.0]
+[se ad60 0]
+[seVolume ad60 1.0 0.8]
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.5]
+[charaFadeout T 0.5]
+[wt 0.5]
+
+[seStop ad60 1.4]
+
+[bgm BGM_EVENT_77 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠ビショーネ
+成長、かぁ。ほんとにわたし、[r]成長できたんですかね……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠エリザベート
+ちゃんと鱗の色も決まったし、[r]成長してるじゃない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 20]
+[charaFadein A 0.1 1]
+
+＠ビショーネ
+それはそうなんですけど。
+[k]
+
+[charaFace A 11]
+
+＠ビショーネ
+まだ確信しきれないというか、[r]ふと不安になっちゃうというか……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠メドゥーサ
+成長しきったというわけでもないでしょうからね。[r]まだまだ伸びしろはあると思いますよ、私は。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠エリザベート
+意外に上昇志向が強い感じなのかしら。
+[k]
+
+[charaFace B 1]
+
+＠エリザベート
+まあでも、一歩進んだのは確かでしょ。[r]今はそれでヨシとしときなさい！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ビショーネ
+……そう、ですね。[r]そうします！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+さあ、思わぬ足止めを食っちゃったけど、[r]これから次のエリアだ。
+[k]
+
+＠ダ・ヴィンチ
+気を取り直して、蛇王がいるっていう頭部分[r]目指して進んでいこう！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout E 0.2]
+[charaPut Z 2500,2500]
+[overlayFadein X 0 0,757]
+[overlayFadein Y 0 0,-757]
+[charaScale T 1.2]
+[charaFadein T 1.0 40,-270]
+[wt 1.0]
+[charaMove T 120,-270 30.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠
+一歩進んだのは確か、だけど。
+[k]
+
+＠
+まだ少し不安なのは、きっと、[r]行く先がぼんやりしてるから。
+[k]
+
+＠
+最後のかたちが、まだ、見えてはいないから。
+[k]
+
+＠
+それは、わたしがわたしとして産まれてから[r]ずっとあった懸念。
+[k]
+
+＠
+ビショーネであると同時に、なぜかまっさらに[r]産まれ直されてしまった部分の自分が思う、
+[k]
+
+＠
+自分という存在の不確かさに対する疑問。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_11 2.0 0.4]
+[wt 1.0]
+
+＠
+卵からまた始まったってことは、きっと、[r]やり直せってこと。
+[k]
+
+＠
+新しい自分になれってこと。
+[k]
+
+＠
+でも[line 3]新しい自分って、なに？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 2.0]
+[wt 1.0]
+
+＠
+退治されたくないって[r]自分の願いだけはわかっているけれど、
+[k]
+
+＠
+それ以外は何にもわかっていない。
+[k]
+
+＠
+これから、[r]わたしはどうなるんだろう。
+[k]
+
+＠
+わたしはいったい[line 3][r]どんなモノになれば、いいんだろう？
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

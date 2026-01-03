@@ -1,0 +1,1109 @@
+
+＄94-08-18-08-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1098260200 1 第１６代将軍・徳川クロフネ]
+[charaSet B 1098260130 1 吉田松陰]
+[charaSet C 2047001 1 高杉晋作]
+[charaSet D 1098260310 1 ヘクトール]
+[charaSet E 1098260410 1 小次郎]
+[charaSet F 11007001 1 織田吉法師]
+[charaSet G 1098266700 1 エミヤ・オルタ]
+
+[charaSet J 98115000 1 エフェクト用]
+[charaSet K 98115000 1 エフェクト用]
+[charaSet L 98115000 1 エフェクト用]
+[charaSet M 98115000 1 エフェクト用]
+
+[sceneSet O 137622 1]
+[sceneSet P 137622 1]
+
+[scene 137622]
+
+[subCameraOn 3]
+[charaLayer C sub #A]
+[charaLayer O sub #A]
+[charaLayer B sub #B]
+[charaLayer M sub #B]
+[charaLayer A sub #C]
+[charaLayer P sub #C]
+
+[subCameraFilter #A maskEdge cut359_mask06 3 230,92,138,255]
+[subCameraFilter #B maskEdge cut359_mask06 3 255,255,255,255]
+[subCameraFilter #C maskEdge cut359_mask07 5 0,0,0,0]
+[subRenderScale #C 1.0]
+
+[charaScale C 1.3]
+[charaScale O 1.3]
+[charaScale B 1.3]
+[charaScale A 1.4]
+[charaScale P 1.4]
+
+[charaTalk depthOff]
+[charaDepth B 2]
+[charaDepth C 2]
+[charaDepth A 2]
+[charaDepth O 1]
+[charaDepth P 1]
+
+[charaFace C 12]
+[charaFadein C 0 0,250]
+[charaFadein O 0 0,-100]
+
+[charaFace B 17]
+[charaFadein B 0.1 0,240]
+
+[charaFace A 6]
+[charaFadein A 0.1 -250,180]
+[charaFadein P 0.1 250,-200]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_65 0.1]
+
+
+[charaTalk A]
+[subRenderFadein #C 0.2 0,-200]
+[wt 0.2]
+
+＠第１６代将軍・徳川クロフネ
+ば、馬鹿な……、クロフネが……、
+[k]
+
+＠第１６代将軍・徳川クロフネ
+我らの拠り所である幕府が……！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1]
+[bgm BGM_BATTLE_65 0.5 0.5]
+[wait wipe]
+
+[subRenderFadeout #C 0]
+
+[scene 180200]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.5 1]
+[bgm BGM_BATTLE_65 0.5 1.0]
+[wait wipe]
+
+[wt 0.2]
+
+[charaTalk B]
+[subRenderFadein #B 0.2 -200,-300]
+[subRenderMove #B 0,-300 0.2]
+[wt 0.2]
+
+＠吉田松陰
+……よいですか、一つ教えてあげましょう。
+[k]
+
+[charaTalk A]
+
+＠第１６代将軍・徳川クロフネ
+う、うああああ……！
+[k]
+
+[charaTalk B]
+[charaFace B 16]
+
+＠吉田松陰
+クズは、どこまで行っても！
+[k]
+
+[messageOff]
+
+[subRenderMove #B 200,-300 0.2]
+[subRenderFadeout #B 0.2]
+[wt 0.5]
+
+[charaTalk C]
+
+[subRenderFadein #A 0.2 200,-300]
+[subRenderMove #A 0,-300 0.2]
+[wt 0.2]
+
+＠高杉晋作
+クズなんだよ！！
+[k]
+
+[charaFace C 11]
+
+＠高杉晋作
+[f large][line 3]『[#超級維新:ち  ょ  う  き  ゅ  う  い  し  ん]・[#奇兵隊:き   へ   い   た   い]』！！！！
+[k]
+
+[messageOff]
+
+[se ad270]
+[wt 0.4]
+[se ad911]
+
+[subRenderMoveScale #A 1.3 0.2]
+[subRenderMove #A 0,-420 0.2]
+
+[fadeout white 0.2]
+[wait fade]
+
+[subRenderFadeout #A 0]
+[charaFadeout C 0]
+[charaFadeout O 0]
+[charaScale C 1.0]
+[charaScale O 1.0]
+[charaLayer C normal]
+[charaLayer O normal]
+
+[scene 137622]
+
+[fadein white 0.2]
+[wait fade]
+
+[charaPut J 0,0]
+[charaPut K 0,0]
+[charaPut L 0,0]
+[charaEffect J bit_talk_explosion -380,0]
+[wt 0.3]
+[shake 0.05 3 3 0.5]
+[se ad609]
+[wt 0.3]
+[charaEffect K bit_talk_explosion 0,0]
+[wt 0.3]
+[se ad609]
+[wt 0.4]
+[shake 0.05 3 3 0.5]
+[charaEffect J bit_talk_explosion 380,0]
+[wt 0.3]
+[se ad609]
+[wt 1.5]
+
+[charaScale K 1.2]
+[charaEffect K bit_talk_explosion_triple02 0,0]
+[wt 0.3]
+
+[shake 0.05 5 5 2.0]
+[fadeout white 1.5]
+[cueSe SE_23 23_ad1233]
+[se ad828]
+[se ad609]
+[wt 0.7]
+[wait fade]
+
+[charaEffectDestroy J bit_talk_explosion]
+[charaEffectDestroy K bit_talk_explosion]
+[charaEffectDestroy K bit_talk_explosion_triple02]
+[charaEffectDestroy L bit_talk_explosion]
+
+[charaScale K 1.0]
+
+[wt 2.0]
+[shake 0.05 3 3 2.0]
+
+[fadein white 2.0]
+[wait fade]
+
+[charaTalk A]
+[subRenderFadein #C 0.2 0,-200]
+[wt 0.2]
+
+＠第１６代将軍・徳川クロフネ
+ぬ[charaShake A 0.04 2 2 0.5]あああああああ！！？？
+[k]
+
+[se ad992]
+[se ad776]
+[seStop ad776 1.5]
+
+＠第１６代将軍・徳川クロフネ
+幕[charaShake A 0.04 2 2 1.5]府が……、我らの永遠の安楽が……。
+[k]
+
+[messageOff]
+
+[seStop ad992 0.2]
+[seStop ad776 0.2]
+
+[bgmStop BGM_BATTLE_65 1.0]
+
+[charaShake A 0.04 2 2 0.4]
+[subRenderFadeout #C 0.4]
+[subRenderMove #C 0,-250 0.4]
+[wt 0.4]
+
+[effect bit_talk_impactlanding]
+[se ad628]
+[seVolume ad628 2.5 0.0]
+[shake 0.05 1 4 2.0]
+[wt 1.0]
+[se ad640]
+[wt 4.0]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠高杉晋作
+……終わったか。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wipeout rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout P 0.1]
+[charaLayer A normal]
+[charaLayer P normal]
+[wt 0.1]
+
+[subCameraFilter #B maskEdge cut359_mask20 5 255,255,255,255]
+[charaScale B 1.3]
+[charaFace B 11]
+[charaFadein B 0.1 0,200]
+[charaPut M 1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth M 2]
+
+[scene 180200]
+
+[wipein rectangleStripDownToUp 0.7 1]
+[wait wipe]
+
+[wt 0.4]
+
+[subRenderFadeinFSR #B 0.4 250,-180]
+[wt 0.4]
+
+
+＠吉田松陰
+そのようですね、これで僕も……、
+[k]
+
+[charaFace B 15]
+
+＠吉田松陰
+ぐふっ……！[charaShake B 0.05 2 2 0.6][charaEffect M bit_talk_35][se ad240][charaCrossFade B 1098260180 16 0.2][wait charaCrossFade B]
+[k]
+
+[messageOff]
+
+[charaSpecialEffect B wipeTime 0,0 2.0]
+[wt 1.0]
+[se ad528]
+[wt 3.0]
+
+[wipeout rectangleStripDownToUp 0.7 1]
+[wait wipe]
+
+[subRenderFadeout #B 0]
+[charaFadeout B 0]
+[charaScale B 1.0]
+[charaLayer B normal]
+[charaLayer M normal]
+[subCameraOff]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[scene 137622]
+
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[wt 1.0]
+
+
+[charaTalk B]
+[charaFace B 11]
+[charaPut B 1]
+
+[se ad595]
+[charaSpecialEffect B appearanceReverse 1 1.0]
+[wait charaSpecialEffect B]
+[wt 0.1]
+
+[charaShake B 0.05 2 2 0.6]
+[wt 1.0]
+[charaMove B 0,-10 0.2]
+[se ad984]
+[wt 0.8]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaTalk depthOff]
+[charaDepth C 4]
+[charaDepth J 5]
+
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠高杉晋作
+松陰先生、大丈夫ですか！　[wt 0.4]ごふっ……！[charaPut J 1][charaEffect J bit_talk_35][charaShake C 0.05 1 1 0.6][se ad240][charaCrossFade C 1098260010 13 0.2][wait charaCrossFade C]
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 0,-10]
+[charaShake B 0.05 1 1 0.8]
+[charaMove B 0,0 0.8]
+[wt 1.0]
+
+[bgm BGM_EVENT_78 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_06]
+
+＠吉田松陰
+ははは、それはこちらの台詞ですよ。[r]君の方が苦しそうではないですか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1500,1500]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠高杉晋作
+……こいつは締まらないな。
+[k]
+
+[charaFace C 7]
+
+＠高杉晋作
+いえ、死して不朽の見込みあらば[r]いつでも死ぬべし、でしたね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+
+＠吉田松陰
+そう、生きて大業の見込みあらばいつでも生くべし。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1500,1500]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠高杉晋作
+……はい、松陰先生。
+[k]
+
+＠高杉晋作
+…………。
+[k]
+
+[charaFace C 0]
+
+＠高杉晋作
+……最後にもう一つだけ教えてください。
+[k]
+
+＠高杉晋作
+何故、先生が[#喚:よ]んだのは僕だったんですか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠吉田松陰
+おや、そこに気付いていないとはまだまだですね。
+[k]
+
+[charaFace B 21]
+
+＠吉田松陰
+それはもちろん、幕府と戦うなら……、
+[k]
+
+[charaFace B 26]
+
+＠吉田松陰
+[line 3]『高杉晋作』以外にない。
+[k]
+
+[charaFace B 17]
+
+＠吉田松陰
+そうでしょう？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1500,1500]
+
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+
+＠高杉晋作
+……！
+[k]
+
+[charaFace C 16]
+
+＠高杉晋作
+は……、ははっ！　そうですか、そうですね。
+[k]
+
+＠高杉晋作
+何も成さなかった僕ですが、[r]確かに幕府の奴らの鼻だけは明かしてやりましたよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+
+＠吉田松陰
+ふふ……。
+[k]
+
+[charaFace B 11]
+
+＠吉田松陰
+だいたい何も成していないなどというならば、[r]僕がその筆頭ではありませんか。
+[k]
+
+＠吉田松陰
+散々日の本の危機をわめきたて、[r][#軽挙妄動:けいきょもうどう]の極みな行動をした挙句、
+[k]
+
+＠吉田松陰
+ただ、何の意味もなく首を落とされた。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1500,1500]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠高杉晋作
+そんなことはありません！
+[k]
+
+[charaFace C 13]
+
+＠高杉晋作
+先生は長州の、いや俺達みんなに道を……、
+[k]
+
+[charaFace C 34]
+
+＠高杉晋作
+……っ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 26]
+[charaFadein B 0.1 1]
+
+＠吉田松陰
+そうです……、人は何を成したかではない、[r]己がどう生きたかです。
+[k]
+
+＠吉田松陰
+そして己の生きた道は決して消えることは無い。
+[k]
+
+＠吉田松陰
+己が信じた道を、その道をたどり、[r]さらなる先へと進んでいく者たち。
+[k]
+
+＠吉田松陰
+未来への道は人から人へと、次の者へのしるべとなる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1500,1500]
+
+[charaTalk C]
+[charaFace C 34]
+[charaFadein C 0.1 1]
+
+＠高杉晋作
+しるべに……、俺は……、[r]いや僕は先生の志もわからずに……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+
+＠吉田松陰
+ふふ、馬鹿な生徒を持つと教師は苦労するものです。
+[k]
+
+[charaFace B 0]
+
+＠吉田松陰
+ですが晋作、やはり君は僕の……、
+[k]
+
+[charaFace B 19]
+
+＠吉田松陰
+最高の生徒でしたよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1500,1500]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠高杉晋作
+…………！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 26]
+[charaFadein B 0.1 1]
+
+＠吉田松陰
+行きなさい、晋作。カルデアの若者、そして彼らと共に。
+[k]
+
+[charaFace B 15]
+
+＠吉田松陰
+英霊であろうと何であろうとそれはそれだ。
+[k]
+
+＠吉田松陰
+人の生き様、己の生き様だけは誰に[#誹:そし]られようとも、[r]己が信じていればそれでいい。
+[k]
+
+[charaFace B 16]
+
+＠吉田松陰
+そして己から生まれ[#出:い]でた真の道は、[r]きっと後に続く者の光となるのです。
+[k]
+
+＠吉田松陰
+誰のものでもない、己の、高杉晋作の道を歩みなさい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1500,1500]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠高杉晋作
+はい……、
+[k]
+
+＠高杉晋作
+松陰先生、僕は行きます。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth O 2]
+[charaDepth B 3]
+[charaDepth J 4]
+
+[charaScale B 1.3]
+[charaScale O 1.3]
+
+[charaPut J -20,-80]
+
+[charaFace B 21]
+[charaFadein B 1.2 -20,10]
+[charaFadein O 1.2 -100,-280]
+[charaMove B 0,10 1.2]
+[charaMove O -80,-280 1.2]
+[charaMove J 0,-80 1.2]
+[wt 1.6]
+
+＠吉田松陰
+身はたとひ、武蔵の野辺に朽ちぬとも、留め置かまし大和魂。
+[k]
+
+＠吉田松陰
+…………。
+[k]
+
+[charaFace B 12]
+
+＠吉田松陰
+僕の人生は挫折の人生でした。
+[k]
+
+＠吉田松陰
+何をはばかる事のない人生ではありましたが、[r]やはりそれだけは口惜しくもある。
+[k]
+
+[charaFace B 31]
+
+＠吉田松陰
+ですが、[#此度:こたび]の挫折は……、
+[k]
+
+[charaFace B 32]
+
+＠吉田松陰
+[line 3]実に楽しい挫折でした。
+[k]
+
+[messageOff]
+[charaSpecialEffect B flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect B]
+[charaEffectStop J bit_talk_06]
+[bgmStop BGM_EVENT_78 1.5]
+[wt 1.5]
+[charaFadeout O 1.0]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 39]
+[charaFadein C 0.1 1]
+
+＠高杉晋作
+松陰……、先生……！
+[k]
+
+？1：…………
+
+？2：高杉さん……
+
+？！
+
+＠高杉晋作
+…………。
+[k]
+
+[messageOff]
+[se ade312]
+[seStop ade312 0.7]
+[charaCrossFade C 2047001 14 0.7]
+[wait charaCrossFade C]
+[wt 1.5]
+
+[bgm BGM_EVENT_116 0.1]
+
+[charaFace C 8]
+
+＠高杉晋作
+……聞いての通りだ。悪いがまだ死ねなくなった。
+[k]
+
+＠高杉晋作
+なに、君と契約している限りはしつこく生き抜いてやるさ。
+[k]
+
+[charaFace C 5]
+
+＠高杉晋作
+それに先生の見たがっていたカルデア……、[r]代わりに僕に見せてくれ。
+[k]
+
+[charaFace C 16]
+＠高杉晋作
+そう……、新しい世界をな！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ヘクトール
+ふう……、それじゃあ引き上げるかい、マスター。[r]流石に働き過ぎたんでね、ゆっくり一服したいってもんだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠小次郎
+うむ。帰りに一杯、付き合ってもらう約束もあった。[r]よもや忘れてはいまい？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+
+＠高杉晋作
+おいおい、僕が酒の約束を忘れるわけがないだろう。[r]だが、そいつは新社長のおごりで頼むぞ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠織田吉法師
+うはははははは！　そりゃあいい！
+[k]
+
+[charaFace F 0]
+
+＠織田吉法師
+さて、これにて[#一件落着:いっけんらくちゃく]というところか。
+[k]
+
+[charaFace F 4]
+
+＠織田吉法師
+いや、違うな。
+[k]
+
+＠織田吉法師
+そうさな、やはりこれに尽きるか、そう、
+[k]
+
+[charaFace F 7]
+
+＠織田吉法師
+[line 3]是非もなし！　ってな！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_116 3.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaSet A 1098260220 1 第１６代将軍・徳川クロフネ]
+
+[scene 138811]
+
+[pictureFrame cut063_cinema]
+
+[wt 1.6]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad1049]
+[seVolume ad1049 0.0 0.5]
+[seVolume ad1049 3.0 1.0]
+[wt 2.3]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.7 0,-50]
+[charaShake A 0.05 1 1 0.7]
+[wt 0.4]
+[seStop ad1049 0.3]
+[wt 0.3]
+
+[bgm BGM_EVENT_90 0.1]
+
+＠第１６代将軍・徳川クロフネ
+ま、まだだ……、なに、何度でも待てばいい……、
+[k]
+
+＠第１６代将軍・徳川クロフネ
+我らはそうして幕府に、この国に、[r]民に喰らいついて来た……。
+[k]
+
+＠第１６代将軍・徳川クロフネ
+いつまでも、いつまでもな……！
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad60]
+[seVolume ad60 0.0 0.5]
+[seVolume ad60 1.5 1.0]
+[wt 1.5]
+[seStop ad60 0.4]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 0,-50]
+[wt 0.4]
+
+＠エミヤ・オルタ
+……手酷くやられたな。
+[k]
+
+＠エミヤ・オルタ
+にしても、クロフネの残骸で体を保つとは。[r]生き汚い、いや、死に汚いというべきか。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠第１６代将軍・徳川クロフネ
+おお……、そうだ、まだ貴様が居たではないか、[r]大福の効果で意のままに操れるおまえがな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠エミヤ・オルタ
+…………。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠第１６代将軍・徳川クロフネ
+そうだ、奴らを殺せ、疲れ切った今なら……、[r]貴様なら後ろから撃つのはお手の物だろう！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠エミヤ・オルタ
+それが最後の命令か。[r]了解した。
+[k]
+
+[bgmStop BGM_EVENT_90 0.5]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+
+[cueSe NoblePhantasm_201600 NP_201600_2]
+[effect bit_shot_01]
+[wt 0.2]
+[charaShake A 0.04 2 2 0.5]
+[wt 0.5]
+[effectDestroy bit_shot_01]
+
+＠第１６代将軍・徳川クロフネ
+うごっ！？　な、何を……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 0,-50]
+[bgm BGM_BATTLE_128 0.1]
+
+＠エミヤ・オルタ
+どうでもいい事だから言っていなかったが。
+[k]
+
+＠エミヤ・オルタ
+オレから味覚は失われている。[r]甘味欲しさで[#大福とやらを口にする理由がない]。
+[k]
+
+[charaFace G 0]
+
+＠エミヤ・オルタ
+大福の洗脳ははじめからない。[r]オレは聖杯と、あの男の目的を認めただけだ。
+[k]
+
+＠エミヤ・オルタ
+吉田松陰に受けた[#強制:ギアス]は[r]高杉重工と戦う事、それだけだ。
+[k]
+
+＠エミヤ・オルタ
+その高杉重工もなくなった。
+[k]
+
+[charaFace G 2]
+
+＠エミヤ・オルタ
+あとは聖杯に取り憑いた汚れを掃除する、[r]いつもの仕事を行うだけだ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+＠第１６代将軍・徳川クロフネ
+お、おのれ……、だがこんな弾如きで我らは……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 0,-50]
+
+＠エミヤ・オルタ
+『[#無限の剣製:アンリミテッド・ロストワークス]』
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth J 2]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+[charaPut J 0,-50]
+[charaEffect J bit_talk_emiya_alter_np 50,70]
+[cueSe SE_23 23_ade847]
+[charaShake A 0.04 2 2 1.0]
+
+[charaCrossFade A 1098260210 4 0.2]
+
+[wt 1.0]
+
+＠第１６代将軍・徳川クロフネ
+なっ！？　これは……、体の内から……！？
+[k]
+
+＠第１６代将軍・徳川クロフネ
+う[charaShake A 0.04 1 1 0.5]ご、ぐごご！！
+[k]
+
+＠第１６代将軍・徳川クロフネ
+ぐ[charaShake A 0.02 2 2 1.0]あああああああああ……！！！！
+[k]
+
+[messageOff]
+
+[charaShake A 0.02 3 3 2.5]
+[cueSe SE_23 23_ade848]
+[charaEffectStop J bit_talk_emiya_alter_np]
+[wt 2.5]
+
+[charaFadeout A 0.1]
+
+[wt 3.5]
+
+[charaTalk depthOn]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠エミヤ・オルタ
+[line 3]なんだ。[r]ちゃんと効くじゃないか、オレの宝具。
+[k]
+
+＠エミヤ・オルタ
+今回は相手が悪かったな。[r]佐々木小次郎と高杉晋作。
+[k]
+
+[messageOff]
+[charaFaceFade G 10 0.2]
+[wt 1.0]
+
+＠エミヤ・オルタ
+[line 3]まったく。どちらも食えない優男だよ。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_BATTLE_128 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

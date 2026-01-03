@@ -1,0 +1,506 @@
+
+
+＄94-14-15-04-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098319000 1 ホテルスタッフ]
+[charaSet B 28010001 1 ダンテ]
+[charaSet C 28010001 1 ダンテ（演出用）]
+[charaSet D 1098224300 1 岡田以蔵]
+[charaSet E 1057000 1 セタンタ]
+[charaSet F 1098255110 1 ゴルドルフ]
+[charaSet G 1098318700 1 エレノア]
+[charaSet H 1098318700 1 0]
+[charaSet I 1098318810 1 ジニー]
+[charaSet J 1098318800 1 ジニー（演出用）]
+[charaSet K 1098319200 1 カドック]
+
+[sceneSet O 243000 1]
+[charaScale O 1.2]
+[sceneSet P 242900 1]
+[charaScale P 1.2]
+[sceneSet Q 242902 1]
+[charaScale Q 1.2]
+[sceneSet R 243105 1]
+[charaScale R 1.2]
+[sceneSet S 243105 1]
+[charaScale S 1.2]
+
+
+[charaSet V 98115000 1 通信エフェクト用]
+[charaSet W 98115000 1 エフェクト用2]
+[charaSet X 98115000 1 エフェクト用3]
+
+[charaPut V 2000,2500]
+[charaEffect V bit_talk_10_LowLevel]
+
+[charaPut I 2000,2500]
+[charaEffectEdgeBlur I FD3C2F FD3C2F 3 3]
+
+[scene 243000]
+
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth O 3]
+
+[charaFace O 0]
+[charaFadein O 0.1 50,-260]
+[charaMove O -50,-260 10.0]
+
+[pictureFrameTop cut063_cinema]
+
+[se ad3]
+[seVolume ad3 0 0]
+[se ad877]
+[seVolume ad877 0 0]
+
+[fadein black 1.0]
+[seVolume ad3 1.0 0.5]
+[seVolume ad877 1.0 0.5]
+[wait fade]
+
+[charaScale A 1.0]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+[wt 1.7]
+
+[charaTalk A]
+[seVolume ad3 0.6 0.3]
+[seVolume ad877 0.6 0.3]
+[charaFadeout O 0.6]
+[wt 0.8]
+
+＠ホテルスタッフ
+コンシェルジューーー！　ダンテーーー！[r]どこに行ったんだよーーー！
+[k]
+
+[charaFace A 3]
+＠ホテルスタッフ
+はぁ……このホテルも、もう終わりかなぁ……。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[seStop ad3 1.0]
+[seStop ad877 1.0]
+[wait fade]
+
+[pictureFrameTop]
+
+[charaFadeout A 0.1]
+[charaFadeout O 0.1]
+
+[charaScale A 1.0]
+
+[scene 242902]
+[wt 1.0]
+
+[charaDepth P 4]
+[charaDepth Q 2]
+[charaScale P 1.2]
+[charaScale Q 1.2]
+
+[charaFadein P 0.1 0,-170]
+[charaFadein Q 0.1 0,-170]
+[charaMove P 0,-270 10.0]
+[charaMove Q 0,-270 10.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.2]
+
+[charaFadeout P 1.4]
+[wt 2.8]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout Q 0.1]
+
+[scene 183900]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+
+？1：嫌な時間だった……
+？！
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠ダンテ
+ウム……[#右往左往:う お う さ お う]する従業員……。[r]材料が足らないレストラン……。
+[k]
+
+＠ダンテ
+仏像が盗まれて落胆する日本人の客……。[r]全くギスギスが止まらない夫婦……。
+[k]
+
+[charaFace B 10]
+
+＠ダンテ
+そして……それら全てをガン無視して隠れる我々……。[r]フフ……痛むね……良心……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠岡田以蔵
+わしも、[#すとれす]ちゅうんが溜まっちゅう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠セタンタ
+う、動きたい……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+うむ……。[r]できることはしてあげるべきだったかもしれんな……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ダンテ
+でも、こうなったからにはやるしかない。[r]どんなに苦しくとも……。
+[k]
+
+[charaFace B 18]
+
+＠ダンテ
+たとえ、エレノアを泣かせることになろうとも……。[r]このホテルを……壊す訳には……。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_70 0.7 0.5]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 243105]
+
+[pictureFrameTop cut063_cinema]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadeinFSR G 0.1 250,-50]
+[wt 0.6]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.1]
+
+[se ade404]
+[seVolume ade404 0.0 0.0]
+[seVolume ade404 0.5 0.8]
+[charaPutFSL W -250,0]
+[charaEffect W bit_talk_radiallight01]
+[wt 1.3]
+
+[se ad732]
+[charaPutFSL W -250,0]
+[charaEffect W bit_talk_radiallight02]
+[wt 0.7]
+
+[fadeout white 0.7]
+[seStop ade404 0.7]
+[wait fade]
+
+[charaEffectDestroy W bit_talk_radiallight01]
+[charaEffectDestroy W bit_talk_radiallight02]
+
+[charaFadeout G 0.1]
+[scene 10001]
+[wt 0.15]
+
+[fadein white 0.1]
+[wait fade]
+
+[se ad267]
+[fadeout FD3C2F 0.1]
+[wait fade]
+
+[scene 243105]
+
+[charaFace G 1]
+[charaFadeinFSR G 0 250,-50]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadeinFSL I 0 -250,-50]
+
+[fadein FD3C2F 0.5]
+[seStop ad732 0.5]
+[wait fade]
+[wt 1.4]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[pictureFrameTop]
+
+[charaEffectEdgeBlurDestroy I]
+[charaFadeout I 0.1]
+[charaFadeout G 0.1]
+
+[scene 183900]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.6]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_70 0.7 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠ダンテ
+……出現したな。[r]よし、行こう……！
+[k]
+
+[charaFace B 1]
+＠ダンテ
+エレノアは私が抑えて、避難させる。[r]君は[line 3]ジニーを頼む。
+[k]
+
+？1：了解！
+？！
+
+[messageOff]
+[se ad93]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 243105]
+
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[bgm BGM_BATTLE_62 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠エレノア
+あれ？　あなたたち、誰……？
+[k]
+
+[messageOff]
+[charaDepth G 2]
+[charaDepth R 3]
+[charaDepth B 4]
+[charaDepth H 5]
+
+[charaScale B 1.2]
+[charaScale H 1.2]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace H 7]
+[charaFadein B 0.5 200,0]
+[charaFadein H 0.5 -200,-10]
+[charaFadein R 0.5 -75,-260]
+[wt 0.5]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠ダンテ
+コンシェルジュです。エレノア様、[r]少々失礼します！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[se ade491]
+[charaFace B 0]
+[charaMove B 100,0 0.4]
+[wt 0.4]
+[seStop ade491 0.2]
+[wt 0.25]
+
+[charaMoveReturn B 100,-12 0.45]
+[wt 0.1]
+[se ad977]
+[wt 0.15]
+[charaFace H 5]
+[charaMove H -200,2 0.25]
+[charaShake H 0.01 2 2 0.3]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk H]
+＠H：エレノア
+え、え、え……！？
+[k]
+
+[messageOff]
+[charaTalk B,H]
+[cueSe SE_25 25_ade1182]
+[charaMove B 300,0 0.4]
+[charaMove H 0,2 0.4]
+[charaFadeout H 0.4]
+[charaFadeout B 0.4]
+[cueSeStop 25_ade1182 1.2]
+[wt 0.6]
+
+[charaDepth I 2]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+[wt 0.6]
+
+[charaTalk I]
+[charaFadeout R 0.5]
+[wt 0.7]
+
+＠ジニー
+エレノア！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMoveEase I 200,0 0.4 easeOutSine]
+[charaFadeout I 0.3]
+[wt 0.8]
+
+？1：行かせない！
+？！
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_BATTLE_62 0.7 0.5]
+[wait wipe]
+
+[scene 183900]
+
+[charaDepth E 2]
+[charaDepth D 3]
+
+[charaTalk D,E]
+[charaFace D 8]
+[charaFace E 2]
+[charaFadeinFSR D 0.4 2]
+[charaFadeinFSL E 0.4 0]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_BATTLE_62 0.7 1.0]
+[wait wipe]
+[wt 0.2]
+
+[se ade321]
+[charaTalk D]
+[charaFace D 5]
+[charaMoveFSR D 256,-7 0.15]
+
+＠岡田以蔵
+止める！
+[k]
+
+[se ad442]
+[charaTalk E]
+[charaMoveFSL E -256,-7 0.15]
+
+＠セタンタ
+同じく！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+[wt 0.35]
+
+[se ad138]
+[se ad267]
+[seVolume ad267 0 0.5]
+
+[fadeout FF4300 0.2]
+[wait fade]
+
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0 1]
+[charaFadeout I 0]
+
+[fadein FF4300 0.2]
+[seStop ad138 1.3]
+[seStop ad267 1.3]
+[wait fade]
+[wt 0.5]
+
+＠J：ジニー
+邪魔……邪魔！[r]そこを、どいて！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk K]
+[charaFace K 10]
+[charaFadein K 0.1 1]
+
+＠カドック
+速攻で決着をつけろ！[r]ジニーが余計なことをしない内に、だ。
+[k]
+
+[charaFace K 7]
+＠カドック
+いいな！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_62 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

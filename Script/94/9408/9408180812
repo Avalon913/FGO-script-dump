@@ -1,0 +1,897 @@
+
+
+＄94-08-18-08-1-2
+
+
+[enableFullScreen]
+
+[scene 10000]
+
+[charaSet A 1098260130 1 吉田松陰]
+[charaSet C 1098260200 1 第１６代将軍・徳川クロフネ]
+[charaScale C 1.4]
+[charaSet D 11007001 1 織田吉法師]
+[charaSet E 1098260310 1 ヘクトール]
+[charaSet F 1098260410 1 小次郎]
+[charaSet G 2016000 1 エミヤオルタ]
+[charaSet H 2047001 1 高杉晋作]
+[charaSet I 1098260200 1 第１６代将軍・徳川クロフネ]
+[charaScale I 1.4]
+[charaSet J 98115000 1 エフェクト用]
+[charaSet K 98115000 1 エフェクト用]
+[charaSet L 98115000 1 エフェクト用]
+[imageSet P cut441_tsg_19 1 1]
+
+[sceneSet R 137621 1]
+[charaScale R 1.4]
+
+[scene 137621]
+
+[subCameraOn 1]
+[charaLayer I sub #A]
+[charaLayer R sub #A]
+
+[charaDepth I 2]
+[charaDepth R 1]
+
+[subCameraFilter #A maskEdge cut359_mask07 5 0,0,0,0]
+[subRenderScale #A 1.0]
+[charaFace I 0]
+[charaFadein I 0.1 -250,180]
+[charaFadein R 0.1 250,-220]
+
+[cameraMove 0.1 0,0 1.01]
+
+[charaTalk off]
+[charaFace I 4]
+[subRenderFadein #A 0.1 0,-200]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_107 0.1]
+
+＠第１６代将軍・徳川クロフネ
+そらそら、弾はいくらでもあるぞ。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[effect bit_talk_explosion -300,0]
+[wt 0.3]
+[shake 0.05 3 3 0.5]
+[se ad609]
+[wt 0.3]
+[shake 0.05 3 3 0.5]
+[effect bit_talk_explosion 300,0]
+[wt 0.3]
+[se ad609]
+[wt 1.0]
+[seStop ad609 1.0]
+
+[cueSe Servants_1100700 bac1181]
+[cueSeVolume bac1181 0 0.6]
+[wt 1.0]
+
+[se ad1048]
+[wt 1.0]
+
+[fadeout black 1.5]
+[bgm BGM_BATTLE_107 1.5 0.4]
+[cueSeVolume bac1181 1.5 0.4]
+[seVolume ad1048 1.5 0.4]
+[wait fade]
+
+[cueSeStop bac1181 1.0]
+[seStop ad1048 1.0]
+
+[effectDestroy bit_talk_explosion]
+
+[sceneSet B 137622 1]
+[charaScale B 1.2]
+[sceneSet G 137622 1]
+[sceneSet M 180200 1]
+[charaScale M 1.6]
+[sceneSet Q 137622 1]
+[charaScale Q 1.2]
+[sceneSet R 137622 1]
+[charaScale R 1.4]
+[charaSet S 2047001 1 演出用_高杉晋作２]
+[charaScale S 0.9]
+[charaSet T 2047001 1 演出用_高杉晋作３]
+[charaScale T 1.2]
+
+[charaLayer R sub #A]
+[charaFadein R 0.1 250,-220]
+
+[scene 137622]
+
+[charaScale D 1.1]
+[wt 2.0]
+
+[fadein black 1.0]
+[bgm BGM_BATTLE_107 1.0 1.0]
+[wait fade]
+[wt 1.0]
+
+[cueSe SE_21 21_ade607]
+[cueSeStop 21_ade607 0.6]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.6 0,-10]
+
+[charaMoveScale D 1.0 0.6]
+[charaMove D 0,0 0.6]
+[charaShake D 0.02 3 3 0.6]
+[wt 0.8]
+
+＠織田吉法師
+はあはあはあ……、夜が明けたか。[r]おい、まだかマスターたちは！
+[k]
+
+[charaFace D 2]
+
+＠織田吉法師
+いくら俺が若くて血気盛んな年ごろでも、[r]正直しんどいわ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace I 4]
+[subRenderFadein #A 0.2 0,-200]
+[wt 0.2]
+
+＠第１６代将軍・徳川クロフネ
+フフフ……！　かの戦国の覇王、織田信長もこの程度。
+[k]
+
+＠第１６代将軍・徳川クロフネ
+やはりこの力、新たな将軍である我らにこそ相応しい！
+[k]
+
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠ヘクトール
+守りの戦には自信があるけど、[r]そろそろ限界かな、オジサン。
+[k]
+
+＠ヘクトール
+魔力もスタミナもまだまだあるけどさー。[r]決め手に欠けてるせいで、そろそろ飽きて……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠小次郎
+……いや、来た。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk J]
+[se ad241]
+[shake 0.01 2 4 2.0]
+[wt 2.0]
+
+[shake 0.01 1 2 0]
+[seVolume ad241 0.5 0.4]
+
+[bgmStop BGM_BATTLE_107 1.0]
+
+[charaTalk off]
+[charaFace I 2]
+[subRenderFadein #A 0.2 0,-200]
+[wt 0.2]
+
+＠第１６代将軍・徳川クロフネ
+むう……、なんだこの地鳴りは？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[seStop ad241 0.5]
+[wait wipe]
+
+[shakeStop]
+
+[charaTalk on]
+[subRenderFadeout #A 0.1]
+[subCameraOff]
+[charaFadeout I 0.1]
+[charaFadeout R 0.1]
+[charaLayer I normal]
+[charaLayer R normal]
+[wt 0.4]
+
+[subCameraOn 4]
+[charaLayer I sub #A]
+[charaLayer B sub #A]
+[charaLayer A sub #B]
+[charaLayer D sub #C]
+[charaLayer Q sub #C]
+[charaLayer H sub #D]
+[charaLayer G sub #D]
+[subCameraFilter #A maskEdge cut359_mask06 5 0,0,0,0]
+[subCameraFilter #B maskEdge cut359_mask07 5 255,255,255,255]
+[subCameraFilter #C maskEdge cut359_mask07 5 255,255,255,255]
+[subCameraFilter #D maskEdge cut359_mask07 5 255,255,255,255]
+[subRenderScale #A 1.01]
+[subRenderScale #B 0.8]
+[subRenderScale #C 0.8]
+[subRenderScale #D 0.8]
+[subRenderDepth #B 1]
+[subRenderDepth #D 2]
+[subRenderDepth #C 3]
+[subRenderDepth #A 4]
+[charaFace I 0]
+[charaFadein I 0.1 -250,320]
+[charaScale B 1.6]
+[charaFadein B 0.1 360,-250]
+[charaScale A 1.6]
+[charaFace A 26]
+[charaFadein A 0.1 0,260]
+[charaScale D 1.4]
+[charaFace D 2]
+[charaFadein D 0.1 0,250]
+[charaFadein Q 0.1 1]
+[charaScale H 1.4]
+[charaScale G 2.2]
+[charaTalk H]
+[charaFace H 19]
+[charaFadein H 0.1 0,280]
+[charaFadein G 0.1 -50,-510]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth T 7]
+[charaDepth M 6]
+[charaDepth J 4]
+[charaDepth L 3]
+[charaDepth H 2]
+[charaDepth D 2]
+[charaDepth C 2]
+[charaDepth I 2]
+[charaDepth S 2]
+[charaDepth G 1]
+[charaDepth B 1]
+[charaDepth R 1]
+[charaDepth Q 1]
+
+[scene 180200]
+
+[cameraMove 0.1 -50,20 1.3]
+[wait camera]
+
+[se ad211]
+[wt 0.2]
+[se ad913]
+[wt 1.0]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[se ad241]
+[seVolume ad241 0 0]
+[seVolume ad241 0.5 1.0]
+[shake 0.02 2 3 2.0]
+[wait wipe]
+
+[wt 1.0]
+[seStop ad241 1.0]
+
+[shake 0.02 1 1 1.0]
+[cameraMove 2.0 -50,-80 1.3]
+[wait camera]
+[wt 1.0]
+
+[charaTalk H]
+[subRenderFadeinFSR #D 0.4 280,-170]
+[subRenderMoveFSR #D 280,-200 0.4]
+[wt 0.4]
+
+[bgm BGM_BATTLE_180 0.1]
+
+＠高杉晋作
+待たせたな、諸君！
+[k]
+
+[messageOff]
+[charaTalk D]
+[subRenderFadeinFSL #C 0.4 -280,-230]
+[subRenderMoveFSL #C -280,-200 0.4]
+[wt 0.4]
+
+＠織田吉法師
+な[messageShake 0.05 3 3 0.4]ーにが、待たせたなだ！[r]あとでたっぷり礼をしてもらうからな！
+[k]
+
+[charaTalk H]
+[charaFace H 16]
+
+＠高杉晋作
+はははははは！　そいつは期待しててくれ！
+[k]
+
+[subRenderMoveFSL #C -280,-230 0.4]
+[subRenderFadeout #C 0.4]
+
+[charaFace H 7]
+
+＠高杉晋作
+さて、それじゃあこの高杉晋作が……、
+[k]
+
+[charaFace H 21]
+＠高杉晋作
+君達を勝利に導くとしようじゃないか！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+[subRenderFadeout #D 0.1]
+[wt 0.1]
+
+[subCameraFilter #D maskEdge cut359_mask09 5 255,255,255,255]
+[subRenderScale #D 0.8]
+[charaScale H 1.4]
+[charaScale G 2.6]
+[charaTalk H]
+[charaFace H 21]
+[charaFadein H 0.1 30,280]
+[charaFadein G 0.1 -20,-720]
+
+[scene 137622]
+
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[subRenderFadeinFSR #D 0.4 200,-190]
+
+[charaScale C 1.2]
+[charaTalk C]
+[charaFace C 0]
+[charaFadeinFSL C 0.1 -350,-50]
+[charaScale R 1.6]
+[charaFadein R 0.1 320,-520]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+＠第１６代将軍・徳川クロフネ
+何かと思えば、[r]そんなガラクタをまた引っ張り出して来たか。
+[k]
+
+＠第１６代将軍・徳川クロフネ
+このクロフネに手も足も出なかったことを忘れたのか？
+[k]
+
+[charaFace H 25]
+
+＠高杉晋作
+忘れちゃいないさ。だけどあの時、僕は『ひとり』だった。
+[k]
+
+[charaFace H 15]
+
+＠高杉晋作
+なんでこんなことを忘れてたんだろうな、[r]僕が奇兵隊を作ったのは……、
+[k]
+
+[charaFace H 26]
+
+＠高杉晋作
+そう、志ある仲間達と国を救うため、[r]『ひとり』ではできないことを『仲間』と成し遂げるためだ！
+[k]
+
+[charaFace C 5]
+
+＠第１６代将軍・徳川クロフネ
+ふん、くだらんおためごかしをぬかしおって、[r]志で戦に勝てたら苦労などせぬ、死ねい！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout R 0.1]
+[wt 0.1]
+
+[subRenderFadeout #D 0.1]
+
+[sceneSet R 180200 1]
+[charaScale R 1.3]
+[wt 0.1]
+
+[scene 180200]
+
+[charaFadein R 0.1 0,-320]
+
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[effect bit_talk_explosion -380,0]
+[wt 0.3]
+[shake 0.05 3 3 0.5]
+[se ad609]
+[wt 0.3]
+[effect bit_talk_explosion_triple02 0,0]
+[wt 0.3]
+[se ad609]
+[wt 0.4]
+[shake 0.05 3 3 0.5]
+[effect bit_talk_explosion 380,0]
+[wt 0.3]
+[se ad609]
+[charaPut J 1]
+[charaEffect J bit_talk_fog_side_black]
+[wt 3.0]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadein #A 0.4 -30,-300]
+[subRenderMove #A 0,-300 0.4]
+[wt 0.4]
+
+＠第１６代将軍・徳川クロフネ
+……結局、圧倒的な力には主義も主張も無意味。[r]西洋世界に屈した我らがそうであったようにな。
+[k]
+
+[messageOff]
+[subRenderMove #A 30,-300 0.3]
+[subRenderFadeout #A 0.3]
+
+[effectDestroy bit_talk_explosion]
+[effectDestroy bit_talk_explosion_triple02]
+
+[wt 1.0]
+
+[subCameraFilter #A maskEdge cut359_mask10 5 255,255,255,255]
+[subRenderScale #A 0.8]
+[charaScale I 1.7]
+[charaScale B 1.8]
+[charaTalk I]
+[charaFace I 21]
+[charaFadein I 0.1 -400,380]
+[charaFadein B 0.1 480,-300]
+[wt 0.4]
+
+＠高杉晋作
+……やる前から気持ちで負けたら、[r]勝てるものも勝てないぞ。
+[k]
+
+＠高杉晋作
+まあ、腰抜けの幕臣には無理な話かもしれないが。
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1187]
+[cueSe Servants_9942940 m84914]
+[charaEffectStop J bit_talk_fog_side_black]
+
+[charaFace S 25]
+[charaFadein S 0.4 0,-120]
+[charaMoveScale R 1.1 3.4]
+[charaMove R 0,-240 3.4]
+[charaMoveScale S 0.7 3.4]
+[charaMove S 0,-150 3.4]
+[wt 4.0]
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 5]
+[subRenderFadeinFSL #A 0.6 -200,-190]
+
+[charaFace T 25]
+[charaFadeinFSR T 0.6 250,0]
+[charaFadein M 0.6 300,-150]
+[wt 0.6]
+
+＠I：第１６代将軍・徳川クロフネ
+な[messageShake 0.05 5 5 0.3]っ！？　直撃のはずだぞ！？
+[k]
+
+[charaTalk T]
+[charaFace T 28]
+[charaFadeout S 0.1]
+[charaFadeout R 0.1]
+[charaPut J 2000,2000]
+
+＠T：高杉晋作
+僕の奇神は神霊の霊基を炉心に取り込むことによって[r]本来の力を発揮する。
+[k]
+
+[subRenderMoveFSL #D -280,-230 0.3]
+[subRenderFadeout #D 0.3]
+
+[charaTalk I]
+[charaFaceFade I 6 0.5]
+
+＠I：第１６代将軍・徳川クロフネ
+神霊だと……？　そんなものがどこに……。
+[k]
+
+[charaTalk J]
+
+＠吉田松陰
+ここにいますよ。
+[k]
+
+[charaTalk I]
+
+＠I：第１６代将軍・徳川クロフネ
+そ、その声は、まさか松陰か！？
+[k]
+
+＠I：第１６代将軍・徳川クロフネ
+貴様、己の師を奇神の炉心にしたというのか！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.7 1.0]
+[bgm BGM_BATTLE_180 0.7 0.4]
+[wait wipe]
+
+[charaFadeout T 0.1]
+[charaFadeout M 0.1]
+
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+[scene 180200]
+
+[charaScale R 1.5]
+[charaFadein R 0.1 -150,-420]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.7 1.0]
+[bgm BGM_BATTLE_180 0.7 1.0]
+[charaMove R -150,-470 1.4]
+[wait wipe]
+[wt 1.0]
+
+
+[charaTalk A]
+[subRenderFadeinFSR #B 0.6 250,-180]
+[wt 0.8]
+
+＠吉田松陰
+いえ、これは僕が望んで行ったこと。
+[k]
+
+＠吉田松陰
+神霊とまではいきませんが、この松陰、[r]死して不朽の見込みあらばいつでも死ぬ覚悟。
+[k]
+
+[charaCrossFade A 1098260170 16 0.2]
+
+＠吉田松陰
+たとえ、この命燃え尽きるとて、[r]我が教え子の道を開くためならば本懐です！[wait charaCrossFade A]
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.7 1.0]
+[bgm BGM_BATTLE_180 0.7 0.4]
+[wait wipe]
+
+[subRenderFadeout #B 0.1]
+
+[scene 137622]
+
+[charaFace T 28]
+[charaFadeinFSR T 0.1 250,0]
+[charaFadein M 0.1 300,-150]
+
+[charaTalk I]
+[charaFace I 6]
+[subRenderFadeinFSL #A 0.1 -200,-190]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.7 1.0]
+[bgm BGM_BATTLE_180 0.7 1.0]
+[wait wipe]
+
+＠I：第１６代将軍・徳川クロフネ
+ば、馬鹿な……、なんだおまえらは！？[r]死ぬために戦うだと？　く、狂っておるのか！？
+[k]
+
+[charaTalk T]
+[charaFace T 26]
+
+＠T：高杉晋作
+はははははは！　松下村塾ではそれが当たり前だ！[r]諸君、狂いたまえってな！
+[k]
+
+[charaFace T 25]
+
+＠T：高杉晋作
+マスター君、それに気の置けないわが社の諸君！
+[k]
+
+＠T：高杉晋作
+僕も先生もここで死ぬかもしれんが、[r]とことん付き合ってもらうぞ！
+[k]
+
+[charaFace T 27]
+
+
+＠T：高杉晋作
+最後の強化だ、これより長州男児の肝っ玉、[r]お目にかけるとしよう！[bgmStop BGM_BATTLE_180 1.8]
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaTalk depthOn]
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+[charaFadeout C 0.1]
+[charaFadeout I 0.1]
+[charaFadeout T 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[charaFadeout B 0.1]
+[charaFadeout M 0.1]
+[charaFadeout D 0.1]
+[charaLayer A normal]
+[charaLayer I normal]
+[charaLayer Q normal]
+[charaLayer R normal]
+[charaLayer B normal]
+[charaLayer D normal]
+[charaScale D 1.0]
+[wt 0.1]
+
+[sceneSet B 137622 1]
+[charaScale B 1.3]
+[sceneSet G 180200 1]
+[charaScale G 1.2]
+[charaSet M 98115000 1 エフェクト用]
+[sceneSet Q 137622 1]
+[charaScale Q 1.4]
+[sceneSet R 137622 1]
+[charaScale R 1.4]
+
+[subCameraOn 3]
+[charaLayer E sub #A]
+[charaLayer Q sub #A]
+[charaLayer J sub #A]
+[charaLayer F sub #B]
+[charaLayer R sub #B]
+[charaLayer K sub #B]
+[charaLayer H sub #C]
+[charaLayer G sub #C]
+[charaLayer M sub #C]
+[subCameraFilter #A maskEdge cut359_mask10 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask16 5 255,255,255,255]
+[subCameraFilter #C through]
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.0]
+[subRenderScale #C 1.0]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth Q 1]
+[charaDepth E 2]
+[charaDepth J 3]
+[charaDepth R 4]
+[charaDepth F 5]
+[charaDepth K 6]
+[charaDepth B 7]
+[charaDepth D 8]
+[charaDepth L 9]
+
+[charaScale E 1.4]
+[charaFace E 0]
+[charaFadein E 0.1 20,250]
+[charaFadein Q 0.1 700,-80]
+[charaScale F 1.4]
+[charaFace F 0]
+[charaFadein F 0.1 -20,250]
+[charaFadein R 0.1 -700,-80]
+[charaScale H 1.2]
+[charaFace H 21]
+[charaFadein H 0.1 1]
+[charaFadein G 0.1 0,-180]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[bgm BGM_BATTLE_86 0.1]
+[charaFadein P 0.3 200,-350]
+[charaMove P 0,-350 0.3]
+[wt 0.3]
+
+[cueSe Battle ba23]
+[cueSe Battle bac261]
+
+＠高杉晋作
+[line 3]『[#奇兵隊超絶強化:オーバーブースト]』！！
+[k]
+
+[messageOff]
+
+[charaMove P -200,-350 0.3]
+[charaFadeout P 0.3]
+[wt 0.3]
+
+[charaScale D 1.4]
+[charaFace D 0]
+[charaFadein D 0.4 0,100]
+[charaFadein B 0.4 0,-150]
+[charaMove D 0,50 0.4]
+[charaMove B 0,-200 0.4]
+[subRenderFadeinFSSideL #A 0.4 -440,-280]
+[subRenderMoveFSSideL #A -390,-280 0.4]
+[subRenderFadeinFSSideR #B 0.4 440,-280]
+[subRenderMoveFSSideR #B 390,-280 0.4]
+[wt 0.4]
+
+[charaPut J 20,250]
+[charaPut K -20,250]
+[charaPut L 0,50]
+
+[charaEffect J bit_talk_attack_buf]
+[charaEffect K bit_talk_attack_buf]
+[charaEffect L bit_talk_attack_buf]
+[wt 0.3]
+
+[se ad386]
+[wt 1.0]
+
+[se ad1061]
+[charaEffect J bit_talk_charge_red]
+[charaEffect K bit_talk_charge_red]
+[charaEffect L bit_talk_charge_red]
+[wt 1.4]
+
+[charaTalk on]
+[charaFace D 1]
+
+＠織田吉法師
+わはははははは！　いい気迫だ！[r]なに、人間五十年下天の内をくらぶればってな！
+[k]
+
+[charaFace D 2]
+
+＠織田吉法師
+死んだらこの会社、俺が貰うから！
+[k]
+
+[charaFace E 1]
+
+＠ヘクトール
+うーん、馬鹿の集まりだなぁこの会社。[r]まあ、オジサンの言えることでもないですがね！
+[k]
+
+[charaFace F 11]
+
+＠小次郎
+いかな窮地であっても花を愛でる心を持つ。[r]愚かであっても、私はそのような者が好みだがな。
+[k]
+
+[charaFace E 5]
+
+＠ヘクトール
+違いない。オジサンもまだ若いって事か。[r]それなら久しぶりに本気で馬鹿やるとしますかね！
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadein #C 0.4 0,0]
+[wt 0.4]
+
+[charaDepth G 1]
+[charaDepth H 2]
+[charaDepth M 3]
+
+[charaPut J 2000,2000]
+[charaPut K 2000,2000]
+[charaPut L 2000,2000]
+
+＠高杉晋作
+さあ、おまえら、派手にぶち上げるぞ！
+[k]
+
+[charaEffect M bit_talk_41_fs]
+[subRenderMoveScale #C 1.1 0.2]
+[subRenderMove #C 0,-20 0.2]
+
+
+[charaFace H 19]
+＠高杉晋作
+[f large][line 3]維新回天の[#大戦:お  お  い  く  さ]をなぁっ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[subCameraOff]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[charaFadeout G 0.1]
+[charaLayer J normal]
+[charaLayer K normal]
+[charaLayer L normal]
+[charaLayer E normal]
+[charaLayer H normal]
+[charaLayer F normal]
+[charaLayer D normal]
+[charaLayer Q normal]
+[charaLayer R normal]
+[charaLayer B normal]
+[charaLayer G normal]
+[wt 0.5]
+
+[input selectBranch]
+[seStop ad609 0.4]
+[seStop ad1048 0.4]
+[seStop ad241 0.4]
+[seStop ad211 0.4]
+[seStop ad913 0.4]
+[seStop ad386 0.4]
+[seStop ad1061 0.4]
+[cueSeStop bac1181 0.4]
+[cueSeStop 21_ade607 0.4]
+[cueSeStop 22_ad1187 0.4]
+[cueSeStop m84914 0.4]
+[cueSeStop ba23 0.4]
+[cueSeStop bac261 0.4]
+
+[bgmStop BGM_BATTLE_107 0.4]
+[bgmStop BGM_BATTLE_180 0.4]
+
+[label selectBranch]
+
+[wt 0.5]
+
+[branchMaterial lblMaterial]
+
+[bgm BGM_BATTLE_86 0.1]
+
+[branch lblBranchMaterialEnd]
+
+[label lblMaterial]
+
+[bgmStop BGM_BATTLE_86 0.5]
+[wt 0.5]
+
+[label lblBranchMaterialEnd]
+
+[end]

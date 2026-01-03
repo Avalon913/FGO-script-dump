@@ -1,0 +1,986 @@
+
+
+
+＄04-00-02-05-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1098269800 1 キャスターのマスター]
+[charaSet B 1098269600 1 キャスター]
+[charaSet C 1098269700 1 青髭2]
+[charaSet D 1098268900 1 サクラ]
+[charaSet E 1098267110 1 セイバー]
+[charaSet F 1098270300 1 アーユス]
+[charaSet G 7046001 1 ドゥリーヨダナ]
+[charaSet H 1098270000 1 シオン]
+[charaSet I 1098270000 1 シオン2]
+[charaSet J 1098270200 1 カーマ]
+[charaSet K 98026000 1 ゾォルケン]
+[charaSet L 1098271000 1 蠢魔1]
+[charaSet M 1098271000 1 蠢魔2]
+
+[sceneSet N 10000 1]
+[charaScale N 1.05]
+[sceneSet O 190300 1]
+[charaScale O 1.2]
+[sceneSet P 190300 1]
+[charaScale P 1.2]
+[sceneSet Q 191500 1]
+[charaScale Q 1.5]
+[sceneSet R 191500 1]
+[charaScale R 1.5]
+[sceneSet S 191500 1]
+[charaScale S 1.2]
+[charaSet T 5009000 1 エフェクト用1]
+
+[scene 190300]
+
+[bgm BGM_BATTLE_107 0.1]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth L 1]
+[charaDepth M 2]
+[charaDepth T 3]
+
+[charaFace G 5]
+[charaFadein G 0.1 1]
+[wt 0.3]
+
+[se ad158]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut T 1]
+[charaEffect T bit_talk_42 0,0 H]
+[charaMove G -200,0 0.2]
+[charaFadeout G 0.2]
+[wt 0.5]
+[seStop ad158 0.1]
+[charaPut T 2000,2000]
+[charaEffectStop T bit_talk_42]
+
+[charaFace L 0]
+[charaFace M 0]
+[charaFadeinFSR L 0.1 2]
+[charaFadeinFSL M 0.1 0]
+[wt 0.1]
+
+[se ad237]
+[wt 0.1]
+[effect bit_talk_strike_02]
+[wt 0.3]
+[seStop ad237 0.4]
+[cueSe Battle bac10]
+[cueSe Battle bac151]
+[charaEffect L bit_talk_blow02]
+[charaEffect M bit_talk_blow02]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[charaShake L 0.02 3 4 0.6]
+[charaShake M 0.03 4 2 0.6]
+[wt 0.6]
+
+[se ad42]
+[charaSpecialEffect L enemyErasure 0,0 1.0]
+[charaSpecialEffect M enemyErasure 0,0 1.0]
+[wait charaSpecialEffect L]
+[wt 0.8]
+
+[charaFace J 4]
+[charaFadein J 0.1 1]
+[wt 0.3]
+
+[se ad73]
+[charaEffect J bit_talk_quickmove]
+[charaSpecialEffect J erasureReverse 1 0.3]
+[wt 0.7]
+
+[charaFace L 0]
+[charaFace M 0]
+[charaFadeinFSR L 0.1 2]
+[charaFadeinFSL M 0.1 0]
+[wt 0.1]
+
+[se ade440]
+[cameraMove 0.3 -40,-20 1.1]
+[wt 0.2]
+[charaEffect L bit_shot_01]
+[wt 0.3]
+[charaEffect L bit_talk_13]
+[charaShake L 0.02 3 4 0.6]
+[wt 0.3]
+[se ade440]
+[cameraMove 0.3 40,-40 1.2]
+[wt 0.2]
+[charaEffect M bit_shot_01]
+[wt 0.3]
+[charaEffect M bit_talk_13]
+[charaShake M 0.03 4 2 0.6]
+[wt 0.6]
+
+[se ad42]
+[charaSpecialEffect L enemyErasure 0,0 1.0]
+[charaSpecialEffect M enemyErasure 0,0 1.0]
+[wait charaSpecialEffect L]
+[wt 1.5]
+
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_BATTLE_107 1.0 0.4]
+[wait wipe]
+
+[cameraHome 0.1]
+[wt 1.0]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+[bgm BGM_BATTLE_107 1.5 0.7]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[se ad852]
+[seVolume ad852 0 0]
+[seVolume ad852 1.0 1.0]
+[fowardEffect bit_talk_light_range]
+[wt 3.0]
+
+[seStop ad852 1.2]
+[fowardEffectStop bit_talk_light_range]
+[wt 1.7]
+[charaFace F 0]
+
+＠アーユス
+……ふぅ。どう？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-20]
+
+＠サクラ
+……大丈夫そうです。[r]ありがとうございます、助かりました。
+[k]
+
+[messageOff]
+[se ad661]
+[seVolume ad661 0 0.6]
+[seStop ad661 0.8]
+[charaMove D 1 0.5]
+[wt 0.5]
+[charaShake D 0.03 2 2 0.5]
+[charaFace D 14]
+
+＠サクラ
+っ……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠アーユス
+あ、まだ無理しないで！
+[k]
+
+＠アーユス
+本当に応急処置、活動停止しないように[r]大事な部分を急いで繋げただけよ。
+[k]
+
+＠アーユス
+ＡＩ部分はともかく、マスターとしての領域には[r]私には手出しできない部分もあって[line 3]
+[k]
+
+＠アーユス
+ひょっとしたら[r]後遺症が残ったりするかもしれない。
+[k]
+
+[charaFace F 3]
+
+＠アーユス
+できれば後でまた[r]ゆっくり検診を受けてほしいけど……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠サクラ
+[line 3]いえ。[r]わたしは動ければ充分です。
+[k]
+
+[charaFace D 15]
+
+＠サクラ
+それよりは、他の怪我をしたＡＩたちの治療を[r]優先してください。お願いします。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠アーユス
+動ければ充分ってのはどうかと思うけど、[r]今は状況が状況だものね。わかったわ。
+[k]
+
+[charaFace F 8]
+
+＠アーユス
+でも、余裕ができたらホントに来てよね！[r]検診は大事なんだから！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+[wt 1.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠メドゥーサ
+無事なのね、サクラ。
+[k]
+
+[charaFace E 6]
+
+＠メドゥーサ
+……よかった。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠サクラ
+うん、この子のおかげで。[r]セイバー、状況は？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠メドゥーサ
+なんとか最低限の仕事はしてくれそう、[r]といったところね。別に嬉しくもないけど。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgmStop BGM_BATTLE_107 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+[bgm BGM_BATTLE_195 0.1]
+[wt 0.3]
+
+[cueSe Battle bac11]
+[effect bit_talk_14]
+[wt 0.2]
+
+[charaScale B 1.3]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.4 0,30]
+[charaShake B 0.05 2 2 0.4]
+[se ad543]
+[seVolume ad543 0 0.5]
+[se ad671]
+[seStop ad671 0.7]
+[seStop ad543 0.7]
+[charaMoveScale B 1.0 0.5]
+[charaMove B 0,0 0.5]
+[wt 0.5]
+
+＠キャスター
+ぐ、おっ……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+何故だ！？　私たちのほうが[r]確実に多くの力を蓄えていたはずだ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 13]
+[charaFadein J 0.1 1]
+
+＠カーマ
+ま、リソース量だけで言えば[r]そちらのほうが多そうですけどね。
+[k]
+
+＠カーマ
+結局は使い方です。出すときは出す、絞るときは絞る。[r]その工夫でなんとかなる部分もあったり？
+[k]
+
+＠カーマ
+[#溢:あふ]れる資金でザコをいくら増やしたって、[r]面倒ではありますがそれだけですよ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ドゥリーヨダナ
+燃費の良さも一流の戦士の条件だ。
+[k]
+
+＠ドゥリーヨダナ
+トーゼン、[r]わし様も一流であるのは言うまでもない。
+[k]
+
+[charaFace G 10]
+
+＠ドゥリーヨダナ
+……おい誰だサボり方が上手いだけとか[r]本当のことを言った奴は。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠キャスター
+セイバーとの戦闘で愉しみすぎたか。[r]美しき妻が多いのも、考えものだ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_195 1.5 0.7]
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠シオン
+[line 3]なるほど。
+[k]
+
+？1：シオン？
+？2：何かわかったの？
+？！
+
+
+＠シオン
+違和感は前からあったのですが、[r]今回の全力戦闘で確信を得ました。
+[k]
+
+＠シオン
+[#あれはジル]・[#ド]・[#レェではありません]。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk J]
+[charaFace J 25]
+[charaFadein J 0.1 1]
+
+＠カーマ
+は？　だって……
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠シオン
+なまじ姿、そして使い魔の雰囲気が一致していたために[r]起こっていた錯誤です。
+[k]
+
+＠シオン
+フランス元帥らしからぬ態度。彼がこだわっていたのは、[r]美しい女の悲鳴など、猟奇的なものばかり。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠カーマ
+そういう愛を持つ男でしょう、アレは？[r]キャスターのときは明確にそうでした。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠シオン
+加えて、『嫁』『部屋』『鍵』という言葉[line 3][r]それにより、さらに定義は絞り込めます。
+[k]
+
+＠シオン
+魔法の鍵を持ち、秘密の部屋を持ち、[r]その中を見た嫁を殺すという、純然たる殺人鬼。
+[k]
+
+＠シオン
+私はそれを知っています。[r]意識して記録していたわけではなく、
+[k]
+
+＠シオン
+ほんの十数キロバイト程度のデータが[r]私の中に残っていたので参照できたというだけですが。
+[k]
+
+＠シオン
+貴方もそれを知っているのではないですか、[r][%1][&くん:さん]？
+[k]
+
+？1：それは、ひょっとして[line 3]
+
+[charaFace H 10]
+[charaMoveReturn H 0,-5 0.4]
+
+＠シオン
+ええ。
+[k]
+
+？2：……？
+
+[charaFace H 10]
+
+＠シオン
+名前は知っていても、有名であるがゆえに具体的な[r]中身は知らないということもあるかもしれませんね。
+[k]
+
+＠シオン
+言えばわかるはずです。
+[k]
+
+？！
+
+[charaFace H 8]
+
+＠シオン
+[line 3][#青髭]。
+[k]
+
+＠シオン
+１７世紀の詩人ペローが書いた物語の登場人物、[r]ジル元帥をモデルとして描かれたと言われる怪人。
+[k]
+
+＠シオン
+それが、今そこにいるキャスターの真名でしょう。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 14]
+[charaFadein J 0.1 1]
+
+＠カーマ
+本当ですかあ？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+
+＠シオン
+それを証明するためには、[r]ここで一つの問いをすればいい。
+[k]
+
+＠シオン
+キャスター……
+[k]
+
+[bgmStop BGM_BATTLE_195 2.0]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth O 1]
+[charaDepth I 2]
+[charaDepth P 3]
+[charaDepth B 4]
+
+[charaScale I 1.2]
+[charaScale B 1.2]
+[charaFace I 8]
+[charaFadein O 1.0 120,-300]
+[charaFadeinFSR I 1.0 180,0]
+[charaMove O 100,-300 1.0]
+[charaMoveFSR I 150,0 1.0]
+[wt 1.5]
+
+＠シオン
+[#ジャンヌ]・[#ダルクについてどう思います]？
+[k]
+
+
+[messageOff]
+[charaFace B 0]
+[charaFadein P 1.0 -120,-300]
+[charaFadeinFSL B 1.0 -180,0]
+[charaMove P -100,-300 1.0]
+[charaMoveFSL B -150,0 1.0]
+[wt 2.5]
+[charaFadeout O 0.1]
+[charaFadeout I 0.1]
+
+
+＠キャスター
+[#誰だそれは]？
+[k]
+
+[bgm BGM_MAP_67 0.1]
+
+？1：…………！
+？！
+
+[messageOff]
+[charaFadeout P 0.5]
+[charaFadeout B 0.5]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠シオン
+[line 3]計算通り、です。
+[k]
+
+[charaFace H 6]
+
+＠シオン
+霊基の造りが似ている、[r]言わば共用部分があるのは確かなのでしょう。
+[k]
+
+＠シオン
+だから使い魔と禁忌の部屋が結びつき、
+[k]
+
+＠シオン
+恐怖の怪物が[#溢:あふ]れ出す部屋、それを開く魔法の鍵、[r]という宝具になったと推測します。
+[k]
+
+＠シオン
+言い換えればあれは、
+[k]
+
+＠シオン
+ジル・ド・レェの中に存在していた青髭という部分だけが[r]切り離された、一種のアルターエゴのような[line 3]
+[k]
+
+[messageOff]
+[charaFace H 2]
+[wt 1.0]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+さえずるな、黙れ、黙れ！[r]真名がわかったとして、それがどうした！
+[k]
+
+＠キャスターのマスター
+私は優れている。優れた私が負けるわけがない、[r]負けてはならない！
+[k]
+
+＠キャスターのマスター
+奥の手だ、例の奥の手を使うぞ、キャスター！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_67 1.5]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠キャスター
+おお、おおお。[r]よいのか、マスター。あれは[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_68 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠キャスターのマスター
+構うものか！　このような屈辱、ありえない。[r]私が何度も何度も敗走するなどありえない。
+[k]
+
+＠キャスターのマスター
+そして何より[line 3][r]これ以上、逃げることはありえない！
+[k]
+
+＠キャスターのマスター
+私は理想を目指す。[r]そのためにここにいる。
+[k]
+
+＠キャスターのマスター
+であれば、魔術師として正しき手段を[r]使うことに[#躊躇:た め ら]いはない。
+[k]
+
+＠キャスターのマスター
+否、そうであらねば、理想を目指す資格もない！
+[k]
+
+＠キャスターのマスター
+私を認めぬこの世界、愚鈍なＡＩども、[r]我が根源到達の道筋を阻む他の魔術師ども！
+[k]
+
+
+＠キャスターのマスター
+[#我が名はマキリ]・[#ゾォルケン]！[r]この名を頭に刻んで、死んでしまえ！
+[k]
+
+
+？1：（マキリ・ゾォルケン……？）
+？！
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[fadeout white 0.5]
+[bgm BGM_BATTLE_68 0.5 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaTalk depthOff]
+[charaDepth T 1]
+[charaPut T 1]
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+[effect bit_sepia01_depth_fs]
+[scene 185600]
+[wt 0.1]
+
+[fadein white 0.5]
+[wait fade]
+
+[se ad437]
+[charaEffect T bit_talk_noise_gr]
+[wt 0.5]
+[charaEffectDestroy T bit_talk_noise_gr]
+[wt 0.2]
+[se ad437]
+[charaEffect T bit_talk_noise_gr]
+[wt 0.6]
+[charaEffectDestroy T bit_talk_noise_gr]
+[wt 0.1]
+[se ad438]
+[charaEffect T bit_talk_noise_gr]
+[wt 0.8]
+
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout K 0.1]
+[charaEffectDestroy T bit_talk_noise_gr]
+[effectStop bit_sepia01_depth_fs]
+
+[scene 190300]
+[charaSet A 1098269800 1 マキリ]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fadein white 0.5]
+[bgm BGM_BATTLE_68 0.5 1.0]
+[wait fade]
+
+[wt 0.5]
+
+？1：（どこかで聞いたような気もするけど）
+？2：（はっきりとは思い出せない……！）
+？！
+
+[charaFace A 4]
+
+＠マキリ
+見るがいい、これこそが[#構築部:ビ　ル　ド]筆頭ＡＩの構成力で[r]組み上げる宝具構造体！
+[k]
+
+[charaFaceFade A 9 0.2]
+
+＠マキリ
+キャスター！　やれ！[r]そのおぞましき真名に誓って、奴らを殺せ！
+[k]
+
+[bgmStop BGM_BATTLE_68 1.4]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe SE_21 22_ad1178]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[cameraMove 0.7 0,-40 1.2]
+[wt 0.7]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth N 2]
+
+[charaFadein N 0 1]
+[wt 0.5]
+[cameraHome 0.1]
+[charaFadeout B 0.1]
+[scene 10000]
+[wt 0.5]
+[charaFadeout N 0.1]
+[wt 1.5]
+
+[bgm BGM_BATTLE_179 0.1]
+
+＠
+[b0209c][#自分は]、[#何者か]。
+[k]
+
+＠
+金は持てど大元帥でなく、信仰はあれど狂信者でなく、[r]剣は持てど騎士でなく。
+[k]
+
+＠
+自分はただ、数多の妻を殺す怪人。
+[k]
+
+＠
+魔法の鍵で秘密の小部屋を隠す、[r]名すらも持たぬ殺人鬼。
+[k]
+
+＠
+[line 3]青髭、なり！
+[k]
+
+[se ad574]
+
+[messageOff]
+[fadeout black 0.1]
+[wait fade]
+
+[charaSet B 1098269700 1 青髭]
+
+[subCameraOn 1]
+[charaLayer C sub #A]
+
+[subCameraFilter #A through]
+
+[charaScale C 1.2]
+[charaFace C 10]
+[charaFadein O 0.1 0,-250]
+[charaFadein C 0.1 0,60]
+
+[blur lens 0.1 2 20]
+[subRenderFadein #A 0.1 0,0]
+[scene 190300]
+[wt 2.5]
+
+[cueSe SE_21 21_ade580 2.0 0.4]
+[charaMove O 0,-300 7.5]
+[charaMove C 0,-15 7.5]
+[fadein black 2.0]
+[wait fade]
+
+[wt 2.8]
+[cueSeStop 21_ade580 0.5]
+[se ad921]
+[seVolume ad921 0 0.6]
+[blurOff lens 1.5]
+[charaFadeout O 1.5]
+[subRenderFadeout #A 1.5]
+[wt 1.5]
+[charaFadeout C 0.1]
+[wt 0.2]
+[subCameraOff]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠青髭
+おお、おおお！[r]小さな鍵が、さらなる禁忌の扉を開く！
+[k]
+
+＠青髭
+竜騎兵も近衛騎兵も何するものぞ！[r]我が７番目の妻よ８番目の妻よ、
+[k]
+
+＠青髭
+これから来たる未来の全ての妻よ！[r]どうか、どうか、どうか！
+[k]
+
+[charaFace B 7]
+
+＠青髭
+歓喜と共に、あの部屋の中！[r]殺させたまえェェェェェ！
+[k]
+
+[bgmStop BGM_BATTLE_179 2.0]
+
+[messageOff]
+[se ade446]
+[seVolume ade446 0 0.6]
+[effect bit_talk_lightning_01t_fs]
+[wt 0.5]
+
+[cueSe SE_22 22_ad1181 1.0 0.4]
+[charaEffectEdgeBlur B FFF9A5 FFF9A5 4 6]
+[wt 1.0]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ade446 0 1.0]
+[seVolume ad556 1.0 0.5]
+[cueSeVolume 22_ad1181 1.0 0.8]
+[backEffect bit_talk_avalon_light01]
+[wt 1.0]
+
+[se ad734]
+[wt 0.5]
+[backEffect bit_talk_avalon_light02]
+[effect bit_talk_under_light]
+[wt 0.5]
+
+[se ad791]
+[effectStop bit_talk_under_light]
+[wt 2.0]
+
+[cueSe SE_21 21_ade546]
+
+[shake 0.02 1 1 0]
+[fadeout white 1.0]
+[seStop ad734 1.0]
+[seStop ade446 1.0]
+[seStop ad556 1.0]
+[cueSeStop 22_ad1181 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaEffectEdgeBlurDestroy B]
+[backEffectDestroy bit_talk_avalon_light01]
+[backEffectDestroy bit_talk_avalon_light02]
+[effectDestroy bit_talk_lightning_01t_fs]
+[effectDestroy bit_talk_under_light]
+
+[charaDepth Q 1]
+[charaDepth R 2]
+[charaDepth S 3]
+[charaFadein Q 0.1 0,-120]
+[cameraMove 0.1 0,0 1.01]
+[wt 2.0]
+
+[bgm BGM_BATTLE_135 0.1]
+[se ade393]
+[seVolume ade393 0 0]
+[seVolume ade393 2.0 0.6]
+
+[cueSe SE_23 23_ad1294 2.0 1.0]
+[charaMove Q 0,-220 7.0]
+[fadein white 2.0]
+[wait fade]
+
+[wt 2.5]
+[charaFadein R 1.5 -100,-370]
+[charaMove R 0,-470 7.0]
+[wt 4.5]
+[charaFadeout Q 0.1]
+
+[charaFadein S 2.0 0,-300]
+[charaMove S 0,-200 3.5]
+[charaMoveScale S 1.01 3.5]
+[wt 5.5]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[cueSeStop 23_ad1294 2.0]
+[seStop ade393 2.0]
+[bgmStopEnd BGM_BATTLE_135 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAllEnd]
+[end]

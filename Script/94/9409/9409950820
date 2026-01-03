@@ -1,0 +1,576 @@
+
+
+＄94-09-95-08-2-0
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1098298000 1 パーシヴァル]
+[charaSet B 1098298120 1 エレシュキガル]
+[charaSet C 2049000 1 バーゲスト]
+[charaSet D 6033000 1 岡田以蔵]
+[charaSet E 25010001 1 モレー]
+[charaSet F 25010001 1 モレー_演出用]
+[charaSet G 25010001 1 モレー_シルエット]
+[charaFilter G silhouette 00000080]
+[charaSet H 3055000 1 ニキチッチ]
+[charaSet I 1098303610 1 ＸＸ・オルタ]
+[charaSet J 6033000 1 岡田以蔵]
+[charaScale J 1.2]
+[charaSet K 4034300 1 バーソロミュー]
+[charaSet L 2049000 1 バーゲスト]
+[charaSet M 1098276910 1 マシュ]
+
+[sceneSet O 104300 1]
+[charaScale O 1.4]
+[sceneSet P 104300 1]
+[charaScale P 1.3]
+
+[sceneSet S 104300 1]
+[sceneSet T 104300 1]
+
+[subCameraOn 2]
+[subCameraFilter #A maskEdge cut359_mask20 3 154,205,50,0]
+[subCameraFilter #B maskEdge cut359_mask02 3 255,255,255,255]
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.1]
+
+[charaLayer I sub #A]
+[charaLayer S sub #A]
+[charaDepth I 4]
+[charaDepth S 3]
+[charaScale I 1.1]
+[charaScale S 1.1]
+[charaFace I 19]
+[charaFadein I 0.1 0,140]
+[charaFadein S 0.1 -250,-50]
+
+[charaLayer L sub #B]
+[charaLayer T sub #B]
+[charaDepth T 2]
+[charaDepth L 3]
+[charaFace L 5]
+[charaFadein L 0.1 -100,150]
+[charaScale T 1.01]
+[charaFadein T 0.1 1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth O 2]
+[charaDepth F 3]
+[charaDepth G 4]
+[charaDepth P 5]
+[charaDepth J 6]
+
+[scene 104300]
+
+[se ad941]
+[seVolume ad941 0 0]
+[charaFadein O 0.1 50,-200]
+[charaMove O -50,-200 6.5]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[fadein black 1.0]
+[seVolume ad941 1.0 1.0]
+[wait fade]
+
+[wt 3.0]
+[charaFadeout O 1.0]
+[seStop ad941 1.5]
+[wt 1.2]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠バーゲスト
+相手はどうやら[r]この洞窟を根城にしているようだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 21]
+[charaFadein H 0.1 1]
+
+＠ニキチッチ
+おお……[r]いかにも悪党が何かを企んでいそうな場所だ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠パーシヴァル
+むっ？
+[k]
+
+[messageOff]
+[charaScale F 1.2]
+[charaScale G 1.2]
+[charaScale O 1.2]
+
+[charaFadein O 0.4 70,-160]
+[charaMove O 100,-160 1.5]
+[wt 1.5]
+[charaFadeout A 0.1]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 1.0 -180,70]
+[wt 1.0]
+[charaFace F 1]
+[charaFadein F 0.1 -180,70]
+[wt 0.2]
+[charaMoveEase F -180,-30 1.8 easeOutSine]
+[charaMoveEase G -180,-30 1.8 easeOutSine]
+[charaMoveEase O 100,-260 1.8 easeOutSine]
+[wt 2.0]
+[charaFadeout G 0.7]
+[wt 1.0]
+
+[charaFaceFade F 10 0.2]
+
+＠モレー
+[#Ｃｏｕｃｏｕ:ク　　ク　　ー]？　ずいぶん大所帯なお客さんじゃん？[r]いらっしゃーい。
+[k]
+
+？1：ジャック・ド・モレー……！
+？2：凄く悪だくみしてそうなヒトではある……！
+？！
+
+[charaFace F 14]
+
+＠モレー
+やーだなーマスター、何ですかーその目は？
+[k]
+
+[charaFace F 8]
+
+＠モレー
+まるであたしが全ての元凶じゃないかって[r]疑ってるような目だし。怖い怖ーい。
+[k]
+
+[messageOff]
+[charaTalk I]
+[subRenderFadeinFSR #A 0.4 260,-150]
+[subRenderMoveFSR #A 260,-180 0.4]
+[wt 0.4]
+
+＠I：ＸＸ・オルタ
+むむ。あなたは……？[r]惑星ゲイギャックスの[line 3]
+[k]
+
+[charaFace I 20]
+
+＠I：ＸＸ・オルタ
+銀河征服をもくろむテンプル[#黒騎士団:ノ ワ ー ル ナ イ ツ]総長、[r]デビルサマナー・ブラックゴート……！？
+[k]
+
+[charaFace F 2]
+
+＠F：モレー
+知らん知らん、そんなトンチキ設定は知らん！[wt 1.0][charaFace F 24][r]あとノワールとブラック被ってない？
+[k]
+
+[charaFace I 0]
+
+＠I：ＸＸ・オルタ
+……では、ないようですね。[r]よかったです。
+[k]
+
+[charaFace I 8]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠I：ＸＸ・オルタ
+惑星間合同黒ミサとかちょっと同じヴィランでも[r]引くくらいの所業なので。
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaTalk I,C]
+[subRenderFadeout #A 0.4]
+[charaFadeout O 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+＠バーゲスト
+質問させてもらおう。[r]ここで何をしている？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+
+＠モレー
+んー？　んー……。
+[k]
+
+[bgm BGM_MAP_57 0.1]
+
+[charaFace E 1]
+
+＠モレー
+やりたいことの中でやれることを[r]やりたいようにやってる、って感じ？
+[k]
+
+[charaFace E 0]
+
+＠モレー
+ただ、なんでも好き放題ってわけでもないけど。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠エレシュキガル
+もっと具体的に。[r]……邪悪な力で、英雄を変質させたりしている？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠モレー
+あらら、[#石榴石:ガ ー ネ ッ ト]みたいに真剣な瞳。[r]なんでかな～？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth O 2]
+[charaDepth E 3]
+[charaDepth P 4]
+[charaDepth D 5]
+
+[charaScale E 1.2]
+[charaScale O 1.2]
+
+[charaTalk B]
+[charaFace B 37]
+[charaFadein B 0.1 1]
+＠エレシュキガル
+[line 3]答えなさい。[r]遊びじゃないの。
+[k]
+
+[messageOff]
+[charaTalk B,E]
+[charaFace E 24]
+[charaFadein O 0.4 -80,-240]
+[charaMove O 20,-240 20.0]
+[charaFadein E 0.4 -50,-10]
+[charaMove E 50,-10 20.0]
+[wt 0.4]
+[charaFadeout B 0.1]
+
+＠モレー
+余裕がないねー、つまんないな。
+[k]
+
+＠モレー
+つまり[line 3][r]いつもみたいに？　あたしらしく？
+[k]
+
+＠モレー
+猟奇と[#淫猥:いんわい]に満ちた儀式で悪魔を召喚したりして[r]ヨロシクやってるんじゃないかって話でしょ？
+[k]
+
+[charaFace E 0]
+
+＠モレー
+なら答えは[#Ｎｏｎ:ノ　　ン]。
+[k]
+
+[charaFace E 11]
+
+＠モレー
+いや、正直に言えばさ、やろうとはした。[wt 1.0][charaFace E 17][r]だけど[line 3]
+[k]
+
+＠モレー
+[#ここ]だと全然上手くいかなくって。[r]手応えがないっていうか……なんでだろ？
+[k]
+
+？1：未来だから……とか？
+？！
+
+[charaFace E 0]
+
+＠モレー
+うーん、そうかな。そうかも？
+[k]
+
+[charaFace E 12]
+
+＠モレー
+だからさ、何にしてもあたしは[r]そんな悪魔召喚とかはしてないワケで、
+[k]
+
+[bgmStop BGM_MAP_57 1.5]
+
+＠モレー
+英雄を堕落とかも心当たりなんか[line 3]
+[k]
+
+[messageOff]
+[se ad533]
+[wt 0.05]
+[se ad546]
+[wt 0.45]
+[charaFace E 25]
+[wt 0.5]
+
+[se ad987]
+[charaScale P 1.2]
+[charaFadein P 0.4 0,-240]
+[charaMoveEase P -80,-240 0.8 easeOutCubic]
+[wt 1.0]
+[charaFadeout O 0.1]
+[charaFadeout E 0.1]
+
+[charaScale D 1.2]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 250,10]
+[charaMove D 200,10 0.4]
+[seStop ad987 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_146 0.1]
+
+＠岡田以蔵
+女、おるかえ！？　金じゃ金！　また都合してくれんかえ。[r]用立ててもろうた分じゃまるで足りんきに。
+[k]
+
+
+
+[charaFace D 0]
+
+＠岡田以蔵
+昨日もクラブでどんちゃん騒ぎしてしもうた。
+[k]
+
+
+＠岡田以蔵
+わしは気前がえいき、[r]パーっとみんなに[#奢:おご]ってやったががよ。
+[k]
+
+[charaFace D 7]
+
+＠岡田以蔵
+ドバイちゅうんは、遊び甲斐があるんはえいが、[r]おかげで金がかかってしょうがないぜよ……。
+[k]
+
+[charaScale E 1.0]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+
+[charaFace D 9]
+
+＠岡田以蔵
+……ん？
+[k]
+
+[messageOff]
+[charaTalk D,E]
+[charaFadeout D 0.4]
+[charaFadeout P 0.4]
+[wt 0.4]
+
+＠モレー
+[#Ｏｕｐｓ:あ　ち　ゃ　ー]。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠パーシヴァル
+悪魔は召喚していないが、[r]他のことをやっていたね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 5]
+[charaFadein K 0.1 1]
+
+＠バーソロミュー
+違法金貸しというか闇金融というか、[r]そんな感じかな。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 8]
+[charaFadein M 0.1 1]
+
+＠マシュ
+なるほど。それで……[r]英雄が堕落し破滅する、と……。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠岡田以蔵
+な、なんじゃあ。[r]みんなして溜め息をつきおって。
+[k]
+
+[charaFace D 5]
+
+＠岡田以蔵
+わしが何か悪いことをしたかえ！[r]借りた金で飲み食いしゆうだけじゃろうが！
+[k]
+
+？1：予想とは違ったけど
+？2：納得感がすごい
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+
+＠エレシュキガル
+はあ。求めていた情報とは[r]全然違っていたみたいなのだわ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth O 2]
+[charaDepth E 3]
+[charaDepth D 4]
+
+[charaScale D 1.1]
+[charaScale E 1.1]
+[charaScale O 1.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠バーゲスト
+とはいえ、目的に変更はない。[r]違法金貸しはこの砂漠に必要のない要素だ。
+[k]
+
+[bgmStop BGM_EVENT_146 1.0]
+[charaFace C 5]
+
+＠バーゲスト
+速やかに捕らえ、当局に連行する。
+[k]
+
+[messageOff]
+[charaTalk E]
+[charaFace D 13]
+[charaFace E 18]
+[charaFadein E 0.4 -280,10]
+[charaFadein D 0.4 220,10]
+[charaFadein O 0.4 50,-220]
+[wt 0.4]
+[charaFadeout C 0.1]
+
+＠モレー
+えー？　これくらいいいじゃん。[wt 1.0][charaFace E 11][r]ちょっとした夏休み中の趣味活動ってことで？
+[k]
+
+[messageOff]
+[charaTalk L]
+[subRenderFadein #B 0.2 0,-350]
+[wt 0.5]
+[se ad984]
+[charaMoveEase L -100,160 0.4 easeOutQuad]
+[charaMoveScaleEase L 1.1 0.4 easeOutQuad]
+[wt 0.8]
+[charaTalk L]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+
+[charaFace E 1]
+
+＠モレー
+ま、それで見逃してくれるほど甘くはないかぁ。
+[k]
+
+[bgm BGM_BATTLE_89 0.1]
+
+[charaFace E 8]
+[charaMove E -170,10 0.7]
+[se ad132]
+[seStop ad132 0.8]
+
+＠モレー
+さあさあタイミングの悪かった顧客くん、[r]いいところに来た、にリアクションを修正させて。
+[k]
+
+＠モレー
+あたしがこのまま捕まっちゃうと[r]追加融資どころじゃなくなるでしょ？
+[k]
+
+[messageOff]
+[se ad102]
+[seVolume ad102 0 0.5]
+[charaFace E 9]
+[charaMoveScale E 1.15 0.3]
+[charaMove E -170,20 0.3]
+[charaMoveScale D 1.15 0.3]
+[charaMove D 220,20 0.3]
+[charaShake D 0.02 1 2 0.3]
+[wt 0.4]
+[charaMoveScale E 1.1 0.3]
+[charaMove E -170,10 0.3]
+[wt 0.3]
+
+
+＠モレー
+楽しい晩酌のためにファイトファイト！[charaFace D 12][se ad102][seVolume ad102 0 0.5][charaMoveScale E 1.2 0.3][charaMove E -170,30 0.3][charaMoveScale D 1.2 0.3][charaMove D 220,30 0.3][charaShake D 0.02 1 2 0.3][wt 0.4][charaMoveScale E 1.05 0.3][charaMove E -170,5 0.3][r]（ぐいぐいどっしどっし）
+[k]
+
+[charaFace D 2]
+
+＠岡田以蔵
+ちっ、しゃあない、わしの優雅なドバイ暮らしのためじゃ、[r]礼金は弾んでもらうきにのう！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_89 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

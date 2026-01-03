@@ -1,0 +1,1261 @@
+
+＄94-08-69-00-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098257310 1 ダ・ヴィンチ]
+[charaSet B 4043001 1 太公望]
+[charaSet C 1098257810 1 マシュ]
+[charaSet D 23004000 1 水着キアラ]
+[charaSet E 1098255110 1 ゴルドルフ]
+[charaSet F 1098213900 1 四不相(シフソウ)]
+[charaSet G 1098200200 1 人影]
+
+[charaSet H 1098257310 1 ダ・ヴィンチ_演出用]
+[charaSet I 4043001 1 太公望_演出用]
+[charaSet J 1098257810 1 マシュ_演出用]
+[charaSet K 1098255110 1 ゴルドルフ_演出用]
+
+[sceneSet L 200210 1]
+[charaScale L 1.01]
+[sceneSet M 200220 1]
+[charaScale M 0.92]
+[sceneSet N 10000 1]
+[charaScale N 1.01]
+[sceneSet O 192400 1]
+[charaScale O 1.2]
+
+[charaSet P 98115000 1 通信エフェクト用]
+[charaSet Q 98115000 1 通信エフェクト用]
+[charaSet R 98115000 1 エフェクト用]
+[charaSet S 98115000 1 エフェクト用]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+＠
+[line 3]いつか、夢を見た。
+[k]
+
+[skip false]
+[messageOff]
+[bgm BGM_MAP_36 0.1]
+[wt 0.5]
+
+[criMovie talk_mov205 bgmPlay false]
+[wt 4.0]
+
+[overlayFadein L 1.0 0,-220]
+[wt 1.0]
+
+[skip true]
+
+＠
+ひどく他愛ない、[r]ただ無邪気に憧れただけの、透き通った夢だった。
+[k]
+
+＠
+空の青さに息を呑むような。[r]海の深さに見惚れてしまうような、そんな夢。
+[k]
+
+[messageOff]
+[criMovie talk_mov206 bgmPlay false]
+[wt 0.2]
+[charaFadeout L 1.0]
+[wt 4.8]
+
+[overlayFadein N 1.0 0,-200]
+[wt 1.0]
+
+＠
+[line 3]夢が叶った。
+[k]
+
+＠
+憧れた夢が、壮大な夢が、[r]美しい夢が、果てない夢が、叶った。
+[k]
+
+[skip false]
+[messageOff]
+[charaFadeout N 0.5]
+[wt 0.5]
+
+[criMovie talk_mov207 bgmPlay false]
+[wt 7.0]
+
+[overlayFadein M 1.0 0,-185]
+[wt 1.0]
+
+[skip true]
+
+＠
+叶った夢は、血に汚れていた。
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ad1118]
+[cueSeStop 21_ad1118 0.6]
+[fowardEffect bit_talk_blood_splatter01]
+[wt 1.6]
+[cueSe Servants_9943100 m85216]
+[cueSeStop m85216 0.6]
+[fowardEffect bit_talk_blood_splatter02]
+[wt 1.2]
+
+＠
+死んだ。死んだ。死んだ。
+[k]
+
+＠
+夢が叶ったせいで、[r]たくさんのたくさんの人の命が、散った。
+[k]
+
+[scene 10000]
+
+＠
+何の救いもなく、誇りは踏み[#躙:にじ]られ、[r]友情も愛情も裏切られ、幼子の命までが無惨に散った。
+[k]
+
+[messageOff]
+[charaFadeout M 1.1]
+[fowardEffectStop bit_talk_blood_splatter01]
+[fowardEffectStop bit_talk_blood_splatter02]
+[wt 2.0]
+
+＠
+[line 3]もしも、と思ったことがある。
+[k]
+
+＠
+もしも、この夢が叶わなかったのなら。
+[k]
+
+＠
+もっと、自分たちは幸福でいられたのではないか[line 3]
+[k]
+
+
+[messageOff]
+[bgmStop BGM_MAP_36 2.0]
+[wt 2.2]
+
+[fowardEffect bit_talk_07_fs]
+[se ad12]
+[wt 4.5]
+
+[fadeout white 1.0]
+[wait fade]
+
+[fowardEffectDestroy bit_talk_07_fs]
+[wt 0.2]
+
+[sceneSet L 168201 1]
+[charaScale L 1.2]
+[sceneSet M 168201 1]
+[charaScale M 1.2]
+[sceneSet N 168201 1]
+[charaScale N 1.2]
+[wt 0.2]
+
+[subCameraOn 2]
+[subCameraFilter #A maskEdge cut359_mask05 2 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask05 2 255,255,255,255]
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.0]
+[charaLayer J sub #A]
+[charaLayer K sub #A]
+[charaLayer H sub #A]
+[charaLayer Q sub #A]
+[charaLayer M sub #A]
+[charaLayer I sub #B]
+[charaLayer N sub #B]
+[charaDepth Q 4]
+[charaDepth H 3]
+[charaDepth K 3]
+[charaDepth J 3]
+[charaDepth M 1]
+[charaPut Q -10,170]
+[charaEffect Q bit_talk_10_LowLevel_depth]
+[charaFace H 1]
+[charaFadein H 0.1 0,250]
+[charaFadein M 0.1 80,0]
+[charaDepth I 2]
+[charaDepth N 1]
+[charaFace I 2]
+[charaFadein I 0.1 20,250]
+[charaFadein N 0.1 -80,0]
+
+[scene 192400]
+
+[charaTalk depthOff]
+[charaDepth O 6]
+[charaDepth B 5]
+[charaDepth L 4]
+
+[charaDepth P 3]
+[charaDepth A 2]
+[charaDepth E 2]
+[charaDepth C 2]
+[charaDepth D 1]
+
+[charaFadein O 0.1 -50,-300]
+[se ad951]
+[seVolume ad951 0 0]
+[wt 2.0]
+
+[seVolume ad951 1.0 1.0]
+
+[fadein white 1.0]
+[charaMove O -100,-300 9.0]
+[wait fade]
+[wt 4.0]
+[bgm BGM_MAP_6 1.0]
+
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[seStop ad951 0.8]
+[wait wipe]
+
+[charaFadeout O 0.1]
+
+[scene 168201]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+[wt 0.4]
+
+
+[charaPut P 1]
+[charaEffect P bit_talk_10_LowLevel_depth]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.8]
+
+
+[charaFace A 1]
+
+＠ダ・ヴィンチ
+どうだい？　通信は聞こえてるかい？
+[k]
+
+？1：今のところ
+？2：バッチリ安定！
+
+？！
+
+[charaFace A 0]
+
+＠ダ・ヴィンチ
+なら、よかった。多かれ少なかれ、[r]特異点は全て特殊なものだけれど、
+[k]
+
+[charaFace A 22]
+
+＠ダ・ヴィンチ
+どうにも、その特異点は[#きな臭い]。
+[k]
+
+＠ダ・ヴィンチ
+まず場所と年代が特定できない。
+[k]
+
+＠ダ・ヴィンチ
+カルデアから何度も演算し直したんだけど、[r]数値の一致する場所も時代も出てこないんだ。
+[k]
+
+[charaFace A 23]
+
+＠ダ・ヴィンチ
+あえて言えば、欧州の山地っぽいくらいか。
+[k]
+
+＠ダ・ヴィンチ
+特異点の源泉となった魔力も[r]大きいのか小さいのかすら分からない。
+[k]
+
+＠ダ・ヴィンチ
+まるで、消えたり現れたりを繰り返してる[r][#蜃気楼:し ん き ろ う]みたい。
+[k]
+
+＠ダ・ヴィンチ
+そっちから見える景色とかはどうだい？
+[k]
+
+[messageOff]
+[charaScale O 1.4]
+[charaFadein O 1.0 0,-300]
+[wt 1.8]
+
+[charaPut P 2000,2000]
+[charaFadeout A 0.1]
+[charaFadein L 0.1 -50,-300]
+
+？1：霧でぼんやりしてる……
+
+？！
+
+[charaFadeout O 1.0]
+[wt 1.2]
+
+[se ad987]
+[charaMove L -80,-300 0.8]
+[wt 0.8]
+
+[charaScale B 1.2]
+[charaTalk B]
+[charaFace B 6]
+[charaFadeinFSR B 0.6 100,0]
+[seStop ad987 0.4]
+[wt 0.7]
+
+＠太公望
+うーん、現場に来ても、[r]ぼんやりした感じは変わりませんねえ。
+[k]
+
+[charaTalk H]
+[subRenderFadeinFSL #A 0.4 -280,-240]
+[subRenderMoveFSL #A -280,-270 0.4]
+[wt 0.4]
+
+＠H：ダ・ヴィンチ
+調子はどうかな、太公望。
+[k]
+
+[charaFace B 0]
+
+＠太公望
+ダ・ヴィンチ殿の懸念は分かりますよ。[r][#蜃:みずち]がぶくぶく吹いてる泡の中にいるようだ。
+[k]
+
+[messageOff]
+[charaTalk B]
+[subRenderFadeout #A 0.6]
+[charaFadeout B 0.6]
+[charaFadeout L 0.6]
+[wt 0.6]
+
+[charaFadeout H 0.1]
+[charaFace K 4]
+[charaFadein K 0.1 0,250]
+
+[charaPut P 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠マシュ
+[#蜃気楼:し ん き ろ う]の語源ですね！[r][#蜃:みずち]の吐いた気が楼閣を作り出す……という。
+[k]
+
+[branchQuestClear lblClear01 94051422]
+[branchQuestClear lblClear01 94059122]
+
+[branch lblNotClear01]
+
+[label lblClear01]
+
+？1：楼閣……人魚……大魔海……うう、頭が……
+
+[messageOff]
+[charaTalk C,D]
+[charaFace D 7]
+[charaPut D -300,0]
+[charaFadeTime D 0.6 0.7]
+[wt 2.0]
+
+[charaFadeout D 0.6]
+[wt 0.6]
+
+？！
+
+[label lblNotClear01]
+
+[charaTalk C]
+[charaFace C 1]
+
+＠マシュ
+本によってハマグリだったり竜だったりしますけど、[r]太公望さんは見たことがあるんですか。
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut P 2000,2000]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠太公望
+さて、どうだったでしょう。[#竜吉公主:りゅうきつこうしゅ]や[r][#山嶺法廷:さんれいほうてい]の方々なら覚えているやもですが……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut P 1]
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠ゴルドルフ
+[#山嶺法廷:さんれいほうてい]……？　我ら欧州の魔術協会と異なる、[r]中華思想に根ざした魔術組織なら聞いたことがあるが。
+[k]
+
+＠ゴルドルフ
+あれは確か、[#螺旋館:ら せ ん か ん]ではなかったか？[r]なんでも十人の楼主が率いる博物館だとか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut P 2000,2000]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠太公望
+ははは、大陸にはいくつも魔術組織がありますから！[r][#山嶺法廷:さんれいほうてい]はなかでも最古のひとつです。
+[k]
+
+[charaFace B 0]
+
+＠太公望
+思想盤に特化した、よりテクスチャに依存しない組織が[r][#山嶺法廷:さんれいほうてい]だったわけですが[line 3]
+[k]
+
+＠太公望
+と、話が脱線しすぎた。
+[k]
+
+＠太公望
+まずは解析用の術を施しましょう。[r]カルデアと結果を同期するように調整しておきます。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut P 1]
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+へー、同期までそっちでできるんだ？[r]魔術の体系も違うのに。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut P 2000,2000]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠太公望
+あっはっは、いくらでも褒めてください。[r]なにしろ[#冠位:グランド]でもおかしくはない僕ですからね。
+[k]
+
+＠太公望
+今回の特異点、僕に適性があったことに、[r]皆さん感謝することになりますよ、きっと！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ade669]
+[effect bit_talk_sorcery_tik_02]
+[wt 3.0]
+
+[effectStop bit_talk_sorcery_tik_02]
+[wt 1.4]
+[bgmStop BGM_MAP_6 1.0]
+
+[cueSe Servants_703400 bac1224]
+[wt 1.5]
+
+[effectDestroy bit_talk_sorcery_tik_02]
+
+[charaScale B 1.2]
+[charaScale L 1.2]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 1]
+[charaFadein L 0.4 -80,-300]
+[wt 0.4]
+
+＠太公望
+……むむ？
+[k]
+
+
+？1：変化がない？
+？2：うまくいってない？
+
+？！
+
+＠太公望
+どうも解析が阻まれますね……[r]まるで、霧自体に意思があるかのようだ。
+[k]
+
+？1：霧に、意思が？
+？！
+
+
+[charaFace B 1]
+
+＠太公望
+例えです。おっと、離れないでください。[r]術式を組み替えます。
+[k]
+
+[messageOff]
+[charaPut R 0,-80]
+[charaEffect R bit_talk_noble_light_r]
+[wt 0.1]
+[bgm BGM_MAP_96 0.1]
+
+[charaFaceFade B 0 0.2]
+[cueSe SE_23 23_ad1305]
+[cueSeVolume 23_ad1305 0 0.5]
+[se ade251]
+[wt 2.2]
+
+＠太公望
+[line 3]思想鍵紋、励起。[r][line 3]第一種乾坤領域に接続。
+[k]
+
+
+＠太公望
+太微丹書、名曰開明。[r]致日上魂、来化某形……
+[k]
+
+[messageOff]
+[charaFadeout B 0.6]
+[charaFadeout L 0.6]
+[wt 0.3]
+[charaPut R 2000,2000]
+[wt 0.4]
+
+[charaEffectDestroy R bit_talk_noble_light_r]
+
+[cueSe SE_23 23_ade905]
+[effect bit_talk_sorcery_tik_01_purple]
+
+[wt 4.5]
+
+[charaTalk K]
+[subRenderFadeinFSSideL #A 0.4 -300,-240]
+[subRenderMoveFSSideL #A -300,-270 0.4]
+[wt 0.4]
+
+＠K：ゴルドルフ
+……おお、思想鍵紋。[r]時計塔の魔術の、魔術刻印に相当する代物か！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,250]
+
+＠H：ダ・ヴィンチ
+歴史としては思想鍵紋の方が古いんじゃない？[r]太公望が使ってる以上、神代からあるはずだし。
+[k]
+
+[messageOff]
+[subRenderMoveFSSideL #A -300,-300 0.4]
+[subRenderFadeout #A 0.4]
+[wt 1.0]
+
+[charaTalk I]
+[subRenderFadeinFSSideR #B 0.3 300,-220]
+[subRenderMoveFSSideR #B 300,-270 0.3]
+[wt 0.3]
+
+＠I：太公望
+庭飛華水、日根金精。[r]紫映流光、号曰五霊。急々如律令[line 3]！
+[k]
+
+[messageOff]
+[subRenderMoveFSSideR #B 300,-320 0.3]
+[subRenderFadeout #B 0.3]
+[cueSeStop 23_ade905 0.4]
+[wt 0.4]
+
+[cueSe SE_23 23_ade906]
+[effectStop bit_talk_sorcery_tik_01_purple]
+[wt 0.5]
+
+[fadeout white 1.5]
+[wait fade]
+
+[charaTalk depthOn]
+[charaFadeout B 0.1]
+
+[charaLayer J normal]
+[charaLayer K normal]
+[charaLayer H normal]
+[charaLayer Q normal]
+[charaLayer M normal]
+[charaLayer I normal]
+[charaLayer N normal]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout H 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout M 0.1]
+[charaFadeout I 0.1]
+[charaFadeout N 0.1]
+
+[subCameraOff]
+[wt 0.1]
+
+[charaSet D 98115000 1 エフェクト用]
+[charaSet E 98115000 1 エフェクト用]
+[sceneSet O 168201 1]
+[charaScale O 1.2]
+
+[subCameraOn 4]
+[subCameraFilter #A maskEdge cut359_mask05 2 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask02 2 255,255,255,255]
+[subCameraFilter #C maskEdge cut359_mask06 2 0,0,0,0]
+[subCameraFilter #D through]
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.0]
+[subRenderScale #C 1.05]
+[subRenderScale #D 1.01]
+[subRenderDepth #A 2]
+[subRenderDepth #B 1]
+[subRenderDepth #C 4]
+[subRenderDepth #D 3]
+[charaLayer J sub #A]
+[charaLayer K sub #A]
+[charaLayer H sub #A]
+[charaLayer Q sub #A]
+[charaLayer S sub #A]
+[charaLayer M sub #A]
+[charaLayer I sub #B]
+[charaLayer G sub #C]
+[charaLayer O sub #C]
+[charaDepth Q 4]
+[charaDepth J 3]
+[charaDepth H 3]
+[charaDepth S 2]
+[charaDepth M 1]
+[charaFadeout H 0.1]
+[charaFace J 5]
+[charaFadein J 0.1 0,250]
+[charaFadein M 0.1 80,0]
+[charaPut S 0,-200]
+[charaEffect S bit_talk_white_fog02]
+[charaDepth I 2]
+[charaScale I 1.2]
+[charaFace I 10]
+[charaFadein I 0.1 150,230]
+[charaEffectEdgeBlur I ffffff ffffff 3 3]
+[charaDepth G 2]
+[charaDepth O 1]
+[charaScale G 0.8]
+[charaScale O 1.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 -150,260]
+[charaFadein O 0.1 80,120]
+
+[scene 192400]
+
+[charaTalk depthOff]
+[charaDepth E 7]
+[charaDepth R 6]
+[charaDepth B 5]
+[charaDepth N 4]
+[charaDepth L 3]
+
+[fowardEffect bit_talk_fog_side]
+[fowardEffect bit_talk_white_fog02 0,-200]
+[wt 0.5]
+
+[fadein white 1.0]
+[cueSe SE_22 22_ad1187]
+[fowardEffectStop bit_talk_fog_side]
+[fowardEffectStop bit_talk_white_fog02 0,-200]
+[wait fade]
+[wt 1.5]
+
+[scene 192401 1.0]
+
+[charaTalk G]
+[subRenderFadein #C 1.0 0,-350]
+[wt 2.4]
+
+[subRenderFadeout #C 1.0]
+[wt 1.2]
+
+？1：今、何か？
+
+？！
+
+
+[fowardEffectDestroy bit_talk_white_fog02]
+
+[cueSe SE_23 23_ade907]
+
+[bgmStop BGM_MAP_96 2.0]
+[wt 2.0]
+
+[charaScale B 1.2]
+[charaScale L 1.2]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.6 40,0]
+[charaFadein L 0.6 -40,-300]
+[charaMove B 0,0 0.6]
+[charaMove L -80,-300 0.6]
+[effect bit_talk_white_fog02 0,-200]
+[wt 1.0]
+
+[charaFaceFade B 2 0.2]
+
+＠太公望
+しまった、この霧は[line 3]！
+[k]
+
+[se ade153]
+[charaPut E 0,-100]
+[charaEffect E bit_talk_incense_02]
+
+？1：太公望？
+
+？！
+
+[bgm BGM_BATTLE_97 0.1]
+
+[messageOff]
+[charaTalk B,J]
+
+[subRenderFadeinFSL #A 0.4 -300,-240]
+[subRenderMoveFSL #A -300,-270 0.4]
+[wt 0.4]
+
+＠J：マシュ
+霧が、また濃くなって……！
+[k]
+
+[messageOff]
+[charaTalk B,J]
+[subRenderMoveFSL #A -300,-300 0.4]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+
+[charaFadeout J 0.1]
+[charaFace H 33]
+[charaFadein H 0.1 0,250]
+
+[charaFaceFade B 10 0.2]
+[charaEffectEdgeBlur B ffffff ffffff 3 3]
+
+＠太公望
+[line 3]思想鍵紋、励起！[r][line 3]特権領域、最速接続！
+[k]
+
+＠太公望
+来たれ、『[#擬竜神獣:ぎりゅうしんじゅう]・[#四不相:し ふ そ う]』！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaEffectEdgeBlurDestroy B]
+
+[charaLayer Q normal]
+[charaEffectDestroy Q bit_talk_10_LowLevel_depth]
+[charaFadeout Q 0.1]
+[charaLayer G normal]
+[charaLayer O normal]
+[charaFadeout O 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaLayer N sub #B]
+[charaScale N 1.2]
+[charaDepth N 1]
+[charaFadein N 0.1 -80,0]
+
+[charaSet C 4043001 1 太公望_演出用２]
+[sceneSet O 10001 1]
+[charaScale O 1.01]
+[charaDepth O 9]
+
+[scene 168201]
+
+[subCameraFilter #C mask cut359_mask04]
+[charaLayer C sub #C]
+[charaScale C 1.8]
+[charaFace C 0]
+[charaFadein C 0.1 0,400]
+[charaEffectEdgeBlur C ffffff ffffff 2 2]
+
+[charaLayer O sub #D]
+[charaFadein O 0.1 0,-200]
+[wt 0.1]
+
+[charaPut E 0,-200]
+[charaFadein L 0.1 0,-200]
+
+[charaDepth O 9]
+[charaDepth D 8]
+[charaDepth F 5]
+[charaDepth L 4]
+[charaDepth Q 3]
+[charaDepth P 2]
+[charaDepth A 1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[cueSe Servants_102700 m23604]
+[se ad489]
+[charaScale D 1.4]
+[charaPut D 0,0]
+[charaEffect D bit_talk_tornado01_02]
+[charaPut E 0,-300]
+[effectDestroy bit_talk_white_fog02]
+[wait wipe]
+[wt 1.0]
+
+[cueSe SE_21 21_ade546]
+[charaTalk F]
+[charaScale R 1.5]
+[charaPut R 0,-300]
+[charaFace F 0]
+[charaRoll R 90 0,350]
+[charaEffect R bit_talk_gale 0,0 H]
+[wt 0.3]
+[charaSpecialEffect F appearanceReverse 1 0.25]
+[wt 0.4]
+[wait charaSpecialEffect F]
+[wt 0.8]
+
+[charaPut R 2000,2000]
+[charaEffectDestroy R bit_talk_gale]
+[charaPut D 2000,2000]
+[charaEffectDestroy D bit_talk_tornado01_02]
+
+[charaPut P 1]
+[charaFace A 33]
+[charaFadein A 0.1 1]
+
+[charaTalk I]
+[subRenderFadein #B 0.3 -80,-340]
+[subRenderMove #B 0,-340 0.3]
+[wt 0.3]
+
+＠I：太公望
+マスター、乗ってください！[r]四不相、[#僕のマスターを絶対に守れ]！
+[k]
+
+[messageOff]
+[charaTalk I,A]
+[subRenderFadeout #B 0.4]
+[charaFadeout F 0.4]
+[charaFadeout L 0.4]
+[effect bit_talk_white_fog02 0,-200]
+[wt 0.5]
+
+＠ダ・ヴィンチ
+太公望！　一体何が[line 3]
+[k]
+
+[messageOff]
+[charaPut Q 1]
+[charaEffect Q bit_talk_10]
+[charaPut P 2000,2000]
+[se ad539]
+[wt 1.1]
+[charaPut Q 2000,2000]
+
+[charaFadeout A 0.1]
+[wt 0.4]
+
+？1：ダ・ヴィンチちゃん！
+？！
+
+？1：太公望、これは一体！
+？！
+
+[charaTalk off]
+[charaFace I 10]
+[subRenderFadein #B 0.3 0,-340]
+[wt 0.3]
+
+＠太公望
+説明の時間がありません！
+[k]
+
+[charaFace I 13]
+
+＠太公望
+いえ、僕もほとんど分かってませんが……[r]多分今の術式で紐づいた僕だけが、この場に残される！
+[k]
+
+？1：紐づいた？
+？！
+
+＠太公望
+いいですか、マスター。[r]絶対に四不相から離れないでください。
+[k]
+
+[charaFace I 9]
+
+＠太公望
+僕のことは心配なさらずに。
+[k]
+
+[messageOff]
+[se ade153]
+[fowardEffect bit_talk_white_fog02]
+[wt 2.0]
+
+[charaFace I 5]
+
+＠太公望
+ああ、もうこんなに。
+[k]
+
+＠太公望
+霧の濃さとかの問題じゃない。[r]概念として、切り離されていってる。
+[k]
+
+[charaFace I 0]
+
+＠太公望
+たとえ指一本の近さでも[line 3]
+[k]
+
+[messageOff]
+[subRenderFadein #D 2.0 0,0]
+[wt 2.0]
+[fowardEffectStop bit_talk_white_fog02]
+
+？1：太公望、どこ？！
+？！
+
+[subRenderFadeout #B 0.1]
+[subRenderFadein #C 1.0 0,-400]
+[wt 1.0]
+
+
+[charaFaceFade C 1 0.2]
+
+＠太公望
+四不相、頼みましたよ。
+[k]
+
+
+[charaFaceFade C 13 0.2]
+
+＠太公望
+[line 3]ふっ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaPut Q 2000,2000]
+[charaEffectDestroy Q bit_talk_10]
+[effectStop bit_talk_white_fog02]
+[charaTalk depthOn]
+[subCameraOff]
+[charaLayer J normal]
+[charaLayer K normal]
+[charaLayer H normal]
+[charaLayer S normal]
+[charaLayer M normal]
+[charaLayer I normal]
+[charaLayer C normal]
+[charaLayer G normal]
+[charaLayer N normal]
+[charaLayer O normal]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout H 0.1]
+[charaFadeout M 0.1]
+[charaFadeout I 0.1]
+[charaEffectEdgeBlurDestroy I]
+[charaFadeout C 0.1]
+[charaEffectEdgeBlurDestroy C]
+[charaFadeout G 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+
+[charaPut S 2000,2000]
+[charaEffectDestroy S bit_talk_white_fog02]
+[charaPut E 2000,2000]
+[charaEffectDestroy E bit_talk_incense_02]
+
+[charaFadeout B 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[sceneSet A 10000 1]
+[charaScale A 1.01]
+[sceneSet K 10001 1]
+[wt 0.1]
+
+[subCameraOn 1]
+[subCameraFilter #A through]
+[subRenderScale #A 1.01]
+[charaLayer F sub #A]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaTalk depthOff]
+[charaDepth R 8]
+[charaDepth B 7]
+[charaDepth M 6]
+[charaDepth F 5]
+[charaDepth S 4]
+[charaDepth D 3]
+[charaDepth K 2]
+[charaDepth L 1]
+
+[charaScale B 1.2]
+[charaScale M 1.2]
+
+[charaTalk on]
+[charaTalk F]
+[subRenderFadein #A 0.1 0,0]
+[cameraMove 0.1 0,0 1.01]
+[charaScale L 1.1]
+[charaFadein L 0.1 0,-180]
+[charaPut D 0,100]
+[charaEffect D bit_talk_white_fog02 0,100]
+[charaPut K 0,-200]
+[charaFadeTime K 0.1 0.5]
+[wt 0.2]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaPut S 1]
+[charaEffect S bit_talk_barrier_atc]
+[se ad744]
+[wt 2.0]
+
+？1：え[line 3]！
+？2：結界[line 3]！？
+
+？！
+
+＠太公望
+僕の力作です。[r]四不相に乗ってる間はそれで大丈夫、なはず。
+[k]
+
+＠太公望
+さあ行け、四不相！
+[k]
+
+[messageOff]
+[charaTalk F]
+[cueSe Servants_404300 m45124]
+[wt 1.5]
+
+[se ad480]
+[charaMoveScale F 1.1 0.5]
+[charaMove F 0,-10 0.5]
+[wt 0.5]
+
+[charaMove F 0,0 0.5]
+[cameraMove 0.5 0,-20 1.01]
+[shake 0.05 3 4 0.5]
+[wt 0.8]
+
+[wipeout upToDown 0.4 1.0]
+[se ad678]
+[charaMove L 0,-250 0.4]
+[wait wipe]
+
+[charaFadeout K 0.1]
+[charaPut D 2000,2000]
+[charaEffectDestroy D bit_talk_white_fog02]
+[charaPut S 2000,2000]
+[charaEffectDestroy S bit_talk_barrier_atc]
+[charaFadeout L 0.1]
+[charaFadeout F 0.1]
+[charaLayer F normal]
+[subRenderFadeout #A 0.1]
+[subCameraOff]
+
+[sceneSet L 192400 1]
+[sceneSet M 192400 1]
+
+[scene 192400]
+
+[effect bit_talk_41_fs]
+[effect bit_talk_white_fog02 0,-200]
+[charaScale L 1.5]
+[charaFadein L 0.1 0,-400]
+[wt 0.1]
+
+[wipein downToUp 0.4 1.0]
+[charaMove L 0,-450 5.0]
+[charaMoveScale L 1.4 5.0]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.0 1.0]
+[wait wipe]
+[wt 2.0]
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[seVolume ad556 1.0 0.4]
+[wait wipe]
+
+[effectDestroy bit_talk_41_fs]
+[charaFadeout L 0.1]
+
+[charaScale B 1.05]
+[charaScale M 1.2]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,10]
+[charaFadein M 0.1 0,-180]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[charaMove B 0,-40 8.0]
+[charaMove M 0,-200 8.0]
+[charaMoveScale B 0.85 8.0]
+[charaMoveScale M 1.01 8.0]
+[wait wipe]
+[wt 0.2]
+
+[charaPut R 0,-150]
+[charaEffect R bit_talk_white_fog02]
+
+
+＠太公望
+どうぞご無事で、マスター！
+[k]
+
+
+[messageOff]
+[seStop ad556 1.5]
+[charaFadein O 1.5 0,-200]
+[wt 0.4]
+
+？1：太公望[line 3]！
+？！
+
+[fadeout black 1.5]
+[bgmStop BGM_BATTLE_97 1.5]
+[wait fade]
+
+[effectDestroy bit_talk_41_fs]
+[effectDestroy bit_talk_white_fog02]
+[charaPut R 2000,2000]
+[charaEffectDestroy R bit_talk_white_fog02]
+
+[charaFadeout B 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout O 0.1]
+
+[cameraHome 0.1]
+
+[scene 10000]
+[wt 0.4]
+
+[fadein black 0.1]
+[wait fade]
+
+[fowardEffect bit_talk_07_red]
+[cueSe SE_22 22_ad1184]
+[cueSeVolume 22_ad1184 0 0.5]
+[se ad434]
+[seVolume ad434 0 0.5]
+[wt 4.5]
+
+
+[fadeout white 1.0]
+[seStop ad434 2.0]
+[wait fade]
+
+
+[scene 10000]
+[fowardEffectDestroy bit_talk_07_red]
+[wt 1.5]
+
+[fadein white 1.5]
+[wait fade]
+
+[wt 0.6]
+[skip false]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[charaSet A 98115000 1 エフェクト用]
+[charaSet B 98115000 1 エフェクト用]
+[charaSet C 98115000 1 エフェクト用]
+[charaSet D 98115000 1 エフェクト用]
+[charaSet E 98115000 1 エフェクト用]
+[charaSet F 98115000 1 エフェクト用]
+[charaSet G 98115000 1 エフェクト用]
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 98115000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+[charaSet K 98115000 1 エフェクト用]
+[charaSet L 98115000 1 エフェクト用]
+[charaSet M 98115000 1 エフェクト用]
+[charaSet N 98115000 1 エフェクト用]
+[charaSet O 98115000 1 エフェクト用]
+[charaSet P 98115000 1 エフェクト用]
+[charaSet Q 98115000 1 エフェクト用]
+[charaSet R 98115000 1 エフェクト用]
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用]
+[charaSet X 98115000 1 エフェクト用]
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[cameraHome 0.1]
+
+
+[soundStopAllFade 0.4]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[wt 1.0]
+[criMovie talk_mov189 bgmPlay true]
+
+
+[wt 0.5]
+[soundStopAllEnd]
+[end]

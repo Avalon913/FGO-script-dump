@@ -1,0 +1,638 @@
+
+＄94-14-96-09-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 1098335800 1 マガツボンバノブノカミ]
+[charaSet B 9010000 1 卑弥呼]
+[charaSet C 9015300 1 壱与]
+[charaSet D 98111700 1 ちびノブ隊長]
+[charaSet E 1098282400 1 沖田総司]
+[charaSet F 7025000 1 土方歳三]
+[charaSet G 1044000 1 斎藤一]
+[charaSet H 7048001 1 永倉新八]
+[charaSet I 1055000 1 山南敬助]
+
+[charaSet J 1098333900 1 ボンバーノッブ]
+[charaSet K 1098333900 1 ボンバーノッブ]
+[charaScale K 0.9]
+[charaSet L 1098333900 1 ボンバーノッブ]
+[charaScale L 0.9]
+[charaSet M 1098333900 1 ボンバーノッブ]
+[charaScale M 0.9]
+[charaSet N 1098333900 1 ボンバーノッブ]
+[charaScale N 0.9]
+[charaSet O 1098333900 1 ボンバーノッブ]
+[charaSet P 1098333900 1 ボンバーノッブ]
+
+[charaSet Q 98111700 1 ちびノブ隊長_演出用]
+
+[sceneSet R 130400 1]
+[sceneSet S 130400 1]
+
+[charaSet T 98115000 1 エフェクト用（集中線）]
+[charaSet U 98115000 1 エフェクト用]
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用]
+[charaSet X 98115000 1 エフェクト用]
+
+[subCameraOn 1]
+[charaLayer S sub #A]
+[charaLayer Q sub #A]
+[charaLayer X sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask02 4 255,255,255,255 0]
+[charaScale Q 0.9]
+[charaScale S 1.3]
+[charaFace Q 0]
+[charaFadein Q 0.1 400,250]
+[charaFadein S 0.1 190,0]
+
+[charaTalk depthOff]
+[charaDepth X 15]
+[charaDepth Q 14]
+[charaDepth S 13]
+[charaDepth J 12]
+[charaDepth K 11]
+[charaDepth L 10]
+[charaDepth M 9]
+[charaDepth N 8]
+[charaDepth D 7]
+[charaDepth V 6]
+[charaDepth U 5]
+[charaDepth R 4]
+[charaDepth C 3]
+[charaDepth B 2]
+[charaDepth A 1]
+
+[scene 130400]
+
+[pictureFrameTop cut063_cinema]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_49 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+＠マガツボンバノブノカミ
+マガマガボンバーノーッブ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+
+＠卑弥呼
+どうしよう！？　食べ歩き観光をしてたら[r]偶然未発見の遺跡を見つけて、
+[k]
+
+＠卑弥呼
+なんとなく入ってみたら、大変なことになってる！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad1025]
+[charaFace J 0]
+[charaFadein J 0.4 0,-25]
+[wt 0.2]
+[charaFace K 0]
+[charaFadeinFSL K 0.4 -200,-50]
+[wt 0.2]
+[charaFace L 0]
+[charaFadeinFSR L 0.4 200,-50]
+[wt 0.2]
+[charaFace M 0]
+[charaFadeinFSSideL M 0.4 -400,-50]
+[wt 0.2]
+[charaFace N 0]
+[charaFadeinFSSideR N 0.4 400,-50]
+[seStop ad1025 0.3]
+[wt 0.2]
+
+＠ボンバーノッブ
+ボンバーノッブ！
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 0,-50]
+
+＠壱与
+だから入るのはやめようって言ったんですよ～。
+[k]
+
+＠壱与
+なんかよくないものと同化して、[r]どんどん増殖してますよ、この謎の生き物。
+[k]
+
+[charaFace C 14]
+
+＠壱与
+どうするんですか、これー！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+
+＠ボンバーノッブ
+ボンボンボン！　ボンバー！
+[k]
+
+[messageOff]
+[se ad1006]
+[seVolume ad1006 0 0.8]
+[charaPut T 1]
+[charaEffect T bit_talk_41_fs]
+[charaMoveScaleEase J 1.5 0.3 easeOutQuint]
+[charaMoveEase J 0,50 0.3 easeOutQuint]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaFadeout J 0.3]
+[wt 0.4]
+[charaScale J 1.0]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 0,-50]
+[wt 0.5]
+
+[blur lens 0.3 2 1]
+[charaTalk Q]
+[charaMoveEase Q 300,250 0.5 easeOutCubic]
+[charaMoveEase S 90,0 0.5 easeOutCubic]
+[subRenderFadein #A 0.3 0,-320]
+[wt 0.3]
+
+＠Q：ちびノブ隊長
+危ないニュブ！
+[k]
+
+[messageOff]
+[se ad73]
+[charaPut X 0,250]
+[charaEffect X bit_talk_42 0,0 H]
+[charaMove Q 0,250 0.2]
+[charaFadeout Q 0.2]
+[wt 0.4]
+[blurOff lens 0.2]
+[charaFadeout C 0.2]
+[charaPut T 2500,2500]
+[charaEffectStop T bit_talk_41_fs]
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+[charaPut X 2000,2000]
+[charaEffectStop X bit_talk_42]
+
+[bgmStop BGM_EVENT_49 0.5]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.1]
+[cueSe Battle bac139]
+[effect bit_talk_x_slash03 0,0 H]
+[wt 0.25]
+
+[charaFace J 4]
+[charaShake J 0.08 2 3 0.5]
+[charaMove J 0,-50 0.5]
+[charaMoveScale J 0.8 0.5]
+[wt 0.5]
+
+＠ボンバーノッブ
+ボノバッ！？
+[k]
+
+[messageOff]
+[charaShake J 0.05 2 3 0.6]
+[wt 0.3]
+[cueSe SE_25 25_ade1284]
+[fowardEffect bit_talk_explosion_continuous]
+[wt 1.0]
+
+[se ad42]
+[charaSpecialEffect J enemyErasure 1 1.5]
+[wait charaSpecialEffect J]
+[seStop ad42 0.5]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠卑弥呼
+え？　貴方は？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 0,-50]
+[charaMoveReturn D 0,-35 0.4]
+[wt 0.4]
+
+＠ちびノブ隊長
+京の町をまもるニュー新選組のちびノブ隊長ニュブ！
+[k]
+
+＠ちびノブ隊長
+休憩時間にぶらついてたら、[r]悲鳴が聞こえたから助けに来たニュブよ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 0,-50]
+
+＠壱与
+ど、どこのどなたか知りませんが、ありがとうございます。
+[k]
+
+[charaFace C 9]
+
+＠壱与
+でも数が多すぎて……！
+[k]
+
+[messageOff]
+[charaDepth J 9]
+[charaDepth K 8]
+[charaDepth L 7]
+[charaDepth M 6]
+[charaDepth N 5]
+[charaDepth O 4]
+[charaDepth P 3]
+[charaDepth R 2]
+[charaDepth D 1]
+[charaDepth C 1]
+
+[charaScale R 1.4]
+[charaFadein R 0.4 150,-250]
+[charaMove R 250,-250 0.4]
+[wt 0.4]
+[charaFadeout C 0]
+[charaFace D 0]
+[charaFadein D 0 0,-25]
+
+[charaTalk off]
+[se ad1025]
+[charaScale J 0.9]
+[charaFace J 0]
+[charaFadein J 0.4 0,-25]
+[wt 0.15]
+[charaScale K 0.8]
+[charaFace K 0]
+[charaFadein K 0.4 -160,-75]
+[wt 0.15]
+[charaScale L 0.8]
+[charaFace L 0]
+[charaFadein L 0.4 180,-75]
+[wt 0.15]
+[charaScale M 0.8]
+[charaFace M 0]
+[charaFadein M 0.4 -520,-75]
+[wt 0.15]
+[charaScale N 0.8]
+[charaFace N 0]
+[charaFadein N 0.4 520,-75]
+[wt 0.15]
+[charaScale O 0.75]
+[charaFace O 0]
+[charaFadein O 0.4 -330,-100]
+[wt 0.15]
+[charaScale P 0.75]
+[charaFace P 0]
+[charaFadein P 0.4 380,-100]
+[seStop ad1025 0.1]
+[wt 0.5]
+
+＠ボンバーノッブ
+ボンバー、ボンバー、ボンバーノッブ！
+[k]
+
+[messageOff]
+[charaFadeout J 0.4]
+[charaFadeout K 0.4]
+[charaFadeout L 0.4]
+[charaFadeout M 0.4]
+[charaFadeout N 0.4]
+[charaFadeout O 0.4]
+[charaFadeout P 0.4]
+[charaFadeout R 0.4]
+[wt 0.4]
+[charaDepth D 7]
+
+＠ちびノブ隊長
+大丈夫、諦めなければ必ず勝機は来るニュブ！
+[k]
+
+＠ちびノブ隊長
+そう！　ちびノブ隊長は諦めない！[r]それがみんなをまもる、ニュー新選組の覚悟ニュブ！
+[k]
+
+[messageOff]
+[charaEffectEdgeBlur D FFFFFF FFFFFF 4 1.5]
+[se ad851]
+[seVolume ad851 1.0 0.3]
+[charaPut U 5,-25]
+[charaEffect U bit_talk_radiallight02_big]
+[wt 2.5]
+
+[charaFadeout D 0]
+[charaPut U 1500,1500]
+[seStop adm30 0.1]
+[charaPut D 2000,2000]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 0,-50]
+
+＠卑弥呼
+この感じ……！　[wt 0.7][charaFace B 12]大丈夫、壱与ちゃん。
+[k]
+
+＠卑弥呼
+邪馬台国を救う光の戦士が現れるって啓示が！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠壱与
+そんな都合のいい戦士いましたっけ？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ade462]
+[charaPut U 5,-25]
+[charaFadein D 0.1 0,-25]
+[wt 1.0]
+[cueSe SE_22 22_ade699]
+[charaPut V 20,-200]
+[charaEffect V bit_talk_sunlight01]
+[charaEffectStop U bit_talk_radiallight02_big]
+[wt 2.5]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[bgm BGM_EVENT_4 0.4 0.5]
+[wait wipe]
+
+[seStop ad851]
+[seStop ade462 0.1]
+[charaEffectDestroy V bit_talk_sunlight01]
+[charaFadeout D 0.1]
+[charaEffectEdgeBlurDestroy D]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[bgm BGM_EVENT_4 0.4 1.0]
+[wait wipe]
+
+[se ad952]
+[cueSe SE_22 22_ade699]
+[charaPut W 0,-15]
+[charaEffect W bit_talk_radiallight02]
+[wt 2.5]
+
+[bgmStop BGM_EVENT_4 1.0]
+
+[se ade406]
+[effect bit_talk_light_through02]
+[wt 1.5]
+[fadeout white 1.0]
+[wait fade]
+
+[seStop ad952 0.1]
+[charaEffectDestroy W bit_talk_radiallight02]
+[effectDestroy bit_talk_light_through]
+
+[charaDepth E 9]
+[charaDepth F 8]
+[charaDepth I 7]
+[charaDepth G 6]
+[charaDepth H 5]
+[charaDepth R 4]
+[charaDepth D 3]
+[charaDepth C 2]
+[charaDepth B 1]
+
+[charaScale R 1.3]
+[charaFadein R 0.1 0,-200]
+
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+[charaScale E 1.18]
+[charaScale F 1.1]
+[charaScale I 1.05]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace I 0]
+[charaFace H 0]
+[charaFace G 0]
+[cueSe SE_21 21_ad1066]
+[cueSeStop 21_ad1066 0.7]
+[charaFadein E 0.4 0,120]
+[wt 0.1]
+[charaFadein F 0.4 -450,130]
+[wt 0.1]
+[charaFadein I 0.4 400,120]
+[wt 0.1]
+[charaFadein H 0.4 -180,130]
+[wt 0.1]
+[charaFadein G 0.4 140,120]
+[wt 1.5]
+
+[charaMoveEase E 0,-80 0.8 easeOutSine]
+[charaMoveEase F -450,-50 0.8 easeOutSine]
+[charaMoveEase I 400,-50 0.8 easeOutSine]
+[charaMoveEase H -180,-40 0.8 easeOutSine]
+[charaMoveEase G 140,-40 0.8 easeOutSine]
+[charaMoveEase R 0,-370 0.8 easeOutSine]
+[wt 1.5]
+
+[bgm BGM_BATTLE_203 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 8]
+
+＠沖田総司
+あれ？　ここどこですかね？
+[k]
+
+[charaFace E 0]
+
+＠沖田総司
+おや、そこにいるのは卑弥呼さんですか。
+[k]
+
+[messageOff]
+[charaTalk E,B]
+[charaFadeout E 0.4]
+[charaFadeout F 0.4]
+[charaFadeout I 0.4]
+[charaFadeout H 0.4]
+[charaFadeout G 0.4]
+[charaFadeout R 0.4]
+[wt 0.4]
+
+＠卑弥呼
+あっ！　そういうみんなは……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaScale F 1.0]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+＠土方歳三
+どうやら、戦の真っ最中のようだな。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 0,-50]
+
+＠壱与
+光の戦士ってもしかして……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace H 6]
+[charaFace G 6]
+[charaFadeinFSR G 0.1 200,-50]
+[charaFadeinFSL H 0.1 -200,-50]
+
+＠斎藤一
+この感じ、局長に[#喚:よ]び出されたようなそうでもないような。
+[k]
+
+＠永倉新八
+確かにな……。ああん、なんだこのちび助は？
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-25]
+
+＠ちびノブ隊長
+ちびノブ隊長はニュー新選組の隊長ニュブ！
+[k]
+
+＠ちびノブ隊長
+さてはおまえら、あの新入りの仲間ニュブね、[r]ちょうどいいから手を貸すニュブ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaScale I 1.0]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+
+
+＠山南敬助
+どうも何かの縁でここに[#喚:よ]び出されたようですね。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 0,-50]
+
+＠壱与
+なにかの縁って……、もしかして……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 0,-50]
+
+＠卑弥呼
+そう、邪馬台国といえば、
+[k]
+
+[charaFace B 1]
+
+＠卑弥呼
+[line 3]『新選組』よね！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_203 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+
+

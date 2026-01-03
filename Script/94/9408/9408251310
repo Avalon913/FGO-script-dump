@@ -1,0 +1,642 @@
+
+＄94-08-25-13-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098261000 1 ドラコー]
+[charaSet B 1057000 1 セタンタ]
+[charaSet C 6048001 1 ロクスタ]
+
+[charaSet D 98022000 1 レジスタンス兵1]
+[charaSet E 98022000 1 レジスタンス兵2]
+[charaSet F 98022000 1 レジスタンス兵3]
+
+[charaSet G 99360000 1 ケルト兵1]
+[charaSet H 99360000 1 ケルト兵2]
+[charaSet I 99360000 1 ケルト兵3]
+
+[charaSet J 7014001 1 ナイチンゲール]
+
+[sceneSet K 183100 1]
+[charaScale K 1.2]
+
+[charaSet L 33001001 1 エフェクト用]
+[charaPut L 2000,2000]
+[charaEffect L bit_talk_41_fs]
+
+[sceneSet M 183100 1]
+[charaSet N 7014001 1 ナイチンゲール1]
+[charaSet O 1098261000 1 ドラコー1]
+
+[scene 183100]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠ロクスタ
+ようやく町に着きましたぁ……でも……
+[k]
+
+[messageOff]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth K 2]
+
+[charaFadein K 0.7 50,-200]
+[charaMove K -40,-200 5.0]
+[wt 3.5]
+
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[charaFadeout K 1.0]
+[wt 1.5]
+
+？1：人がいないね……
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠ドラコー
+……いや。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠セタンタ
+ああ、そこら中に潜んでいやがる。
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+？2：なんだか嫌な予感が
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠セタンタ
+鋭いな、マスター。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ドラコー
+うむ、囲まれているな。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[bgm BGM_BATTLE_95 0.1]
+
+[wt 0.3]
+
+[se ad563]
+[effect bit_talk_shot_02 -250,0]
+[effectStop bit_talk_shot_02]
+[se ad563]
+[wt 0.2]
+
+[se ad563]
+[effect bit_talk_shot_02]
+[effectStop bit_talk_shot_02]
+[se ad563]
+[wt 0.2]
+
+[se ad563]
+[effect bit_talk_shot_02 250,0]
+[effectStop bit_talk_shot_02]
+[se ad563]
+[wt 0.5]
+
+[cueSe Servants_201300 m40406 0 0.7]
+[effect bit_talk_38l]
+[wt 1.0]
+[effectStop bit_talk_38l]
+[wt 0.7]
+[effectDestroy bit_talk_shot_02]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠ドラコー
+……鬱陶しい。
+[k]
+
+[effectDestroy bit_talk_38l]
+[messageOff]
+
+[se ad563]
+[wt 0.3]
+[se ad170]
+[effect bit_talk_14]
+[charaShake A 0.05 2 2 0.5]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠セタンタ
+……フッ！
+[k]
+
+[messageOff]
+
+[effect bit_talk_kengekiall01_fs]
+[wt 0.2]
+[se ad32]
+[wt 0.2]
+[charaMoveReturn B 5,0 0.1]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[charaMoveReturn B -5,0 0.2]
+[wt 0.5]
+
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth F 1]
+[charaDepth D 2]
+[charaDepth E 3]
+
+
+[se ad769]
+[wt 0.6]
+
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.3]
+
+[charaFace D 0]
+[charaFadeinFSL D 0.4 -320,0]
+[wt 0.3]
+
+[charaFace F 0]
+[charaFadeinFSR F 0.4 320,0]
+[wt 0.2]
+
+[seStop ad769 0.5]
+
+[wt 0.8]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth I 1]
+[charaDepth G 2]
+[charaDepth H 3]
+
+[se ad166]
+[wt 0.5]
+
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.2]
+
+[charaFace G 0]
+[charaFadeinFSL G 0.4 -320,0]
+[wt 0.2]
+
+[charaFace I 0]
+[charaFadeinFSR I 0.4 320,0]
+[seStop ad166 0.5]
+
+[wt 1.0]
+
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠セタンタ
+ケルトの戦士に[line 3]
+[k]
+
+
+？1：……レジスタンスもいる
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+＠ロクスタ
+……こいつら手ぇ組んでいやがりますか。
+[k]
+
+[bgmStop BGM_BATTLE_95 1.3]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠？？？
+はい。ここに集ったのは、[r]獣を討つための同胞たちです。
+[k]
+
+[messageOff]
+
+[charaTalk J]
+[charaFace J 6]
+[charaFadein J 0.4 1]
+
+[wt 1.0]
+
+？1：……ナイチンゲール
+？2：来るとは思ってたけど
+
+？！
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace J 0]
+＠ナイチンゲール
+どこかでお会いしていましたか？[r]それなら……
+[k]
+
+[charaFace J 6]
+＠ナイチンゲール
+どうか大人しく治療を受けてください。[r]私は貴方たちを救いたい。
+[k]
+
+＠ナイチンゲール
+貴方たちから獣という患部を摘出します。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠セタンタ
+一応[#訊:き]くけど、どうやって？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 6]
+[charaFadein J 0.1 1]
+＠ナイチンゲール
+ソドムズビースト幼体と獣の契約者。[r]それらを病原として、地上から完全滅菌します。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠ロクスタ
+ヤベえですよ！[r]キマってんぞ、コイツ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠セタンタ
+正しいけど、おまえが言うな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 6]
+[charaFadein J 0.1 1]
+＠ナイチンゲール
+……たとえ貴方たちを殺してでも、[r]私は必ず貴方たちを救ってみせる。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠ドラコー
+話にならんな。[r]来い、食らってやる。
+[k]
+
+＠ドラコー
+薬臭くてかなわんが……[r]薬膳と思って、我慢してやるとも。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 6]
+[charaFadein J 0.1 1]
+＠ナイチンゲール
+ソドムズビースト。貴方は苦しんでいます。[r]貴方を冒す獣の病に。
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth M 2]
+[charaDepth A 3]
+[charaDepth K 4]
+[charaDepth N 5]
+
+
+[charaScale A 1.2]
+[charaScale M 1.2]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.6 50,30]
+[charaFadein M 0.6 0,-200]
+
+[charaMove A 100,30 5.0]
+[charaMove M 50,-200 5.0]
+
+＠ドラコー
+獣とは、余の病ではない。[r]おまえたち人類を[#蝕:むしば]む[#宿痾:しゅくあ]よ。
+[k]
+
+[charaFadeout J 0.1]
+[charaFace A 3]
+
+＠ドラコー
+[line 3]治療法は、ない。
+[k]
+
+[messageOff]
+
+[charaScale N 1.2]
+[charaScale K 1.2]
+
+[charaTalk N]
+[charaFace N 6]
+[charaFadein N 0.6 -50,30]
+[charaFadein K 0.6 0,-200]
+
+[charaMove N -100,30 5.0]
+[charaMove K -50,-200 5.0]
+
+＠N：ナイチンゲール
+いいえ。いいえ。[r]貴方は理解しているはずです。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout M 0.1]
+[charaScale A 1.0]
+
+＠N：ナイチンゲール
+貴方を[#苛:さいな]むその頭痛。[r]その病因が何であるのかを[line 3]
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk off]
+[charaFadeout K 0.6]
+[charaFadeout N 0.6]
+[wt 1.0]
+[charaSet A 1098261000 1 ドラコー]
+
+[charaScale N 1.0]
+[charaDepth A 1]
+[charaDepth O 2]
+
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+[wt 0.5]
+
+[blur lens 0.3 1 10]
+[charaFace O 3]
+[charaFadeTime O 0.2 0.4]
+[charaMove O 0,20 0.2]
+[charaMoveScale O 1.1 0.2]
+[se ad231]
+[wt 0.2]
+
+[charaFadeout O 0.2]
+[blurOff lens 0.2]
+[wt 0.5]
+
+＠ドラコー
+……ッ！？
+[k]
+
+[charaTalk on]
+
+[charaFace A 4]
+[charaShake A 0.05 2 2 0.3]
+＠ドラコー
+うっ……ぐうっ……！
+[k]
+
+
+？1：……ドラコー？
+？2：顔が青いけど……
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+＠ロクスタ
+[line 9]。
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace C 6]
+＠ロクスタ
+[f large]おい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 6]
+[charaFadein J 0.1 1]
+＠ナイチンゲール
+はい？　何でしょう？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+＠ロクスタ
+卑しい[#端女:はしため]風情がネロさまの視界に[r]入ってるんじゃねえですよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠セタンタ
+……キノコ女？[r]どうしたんだよ、おまえ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_62 0.1]
+
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+＠ロクスタ
+死ね。毒飲んで死ね。[r]もがき苦しみながら、毒で溺れ死ね。
+[k]
+
+[charaFace C 20]
+＠ロクスタ
+おまえの死体は念入りに[#穢:けが]して、[r]菌の苗床にしてやるですよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk J]
+[charaFace J 7]
+[charaFadein J 0.1 1]
+＠ナイチンゲール
+毒！　[wt 0.4]毒！　[wt 0.4]毒！　[wt 0.4][#黴菌:ばいきん]！　[wt 0.4]疾病！[wt 0.4][r]駄目よ……駄目駄目駄目駄目！
+[k]
+
+[messageOff]
+
+[charaFace J 6]
+[se ad7]
+[charaMove J 0,-5 0.2]
+[wt 0.5]
+
+＠ナイチンゲール
+……我すべて毒あるもの、害あるものを絶ち、[r]悪しき薬を用いず、また勧めざるべし！
+[k]
+
+[charaFace J 7]
+＠ナイチンゲール
+我が生涯を清く過ごし、我が力の限り、[r]人々を幸福に導かん！
+[k]
+
+[messageOff]
+
+[se ad678]
+[charaPut L 0,0]
+[charaMove J 0,10 0.3]
+[charaMoveScale J 1.1 0.3]
+[charaFadeout J 0.2]
+[wt 0.2]
+[charaPut L 2000,2000]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 20]
+[charaFadein C 0.1 1]
+＠ロクスタ
+うるせー！　アポロもアスクレピオスも[r]サルースもパナケアも全員毒でくたばれ！
+[k]
+
+＠ロクスタ
+死[messageShake 0.05 3 3 0.3]ね死ね死ねぇぇぇぇぇぇ！
+[k]
+
+[messageOff]
+
+[se ad678]
+[charaPut L 0,0]
+[charaMove C 0,10 0.3]
+[charaMoveScale C 1.1 0.3]
+[charaFadeout C 0.2]
+[wt 0.2]
+[charaPut L 2000,2000]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠セタンタ
+あのバカ！[r]なに熱くなってやがる！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ドラコー
+ああ……煩わしい。[r]頭が割れそうだ。
+[k]
+
+[charaFace A 4]
+＠ドラコー
+……だが、ロクスタを放ってはおけぬ。[r][#有象無象:う ぞ う む ぞ う]どもを薙ぎ払うぞ！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_62 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

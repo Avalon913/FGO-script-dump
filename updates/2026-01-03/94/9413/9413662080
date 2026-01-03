@@ -1,0 +1,908 @@
+
+
+＄94-13-66-20-8-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3031000 1 哪吒]
+[charaSet B 3053001 1 ブリトマート]
+[charaSet C 1098306100 1 ナウクラテー]
+[charaSet D 1098306100 1 ナウクラテー（演出用）]
+[charaSet E 3056000 1 ゴッホ]
+[charaSet F 1098257310 1 ダ・ヴィンチ]
+[charaSet G 2053000 1 ツタンカーメン]
+[charaSet H 2053000 1 ツタンカーメン（演出用）]
+[charaSet I 7028000 1 バニヤン]
+[charaSet J 1098196510 1 織田信長]
+[charaSet K 1098306900 1 マンドリカルド]
+
+[sceneSet O 231604 1]
+[sceneSet P 231604 1]
+[sceneSet Q 231604 1]
+[sceneSet R 231601 1]
+[sceneSet S 231602 1]
+[sceneSet T 231603 1]
+
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用]
+[charaSet X 98115000 1 エフェクト用]
+[charaSet Y 98115000 1 エフェクト用]
+
+[charaPut V 2000,2500]
+[charaEffect V bit_talk_10_LowLevel]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 10000]
+[bgm BGM_EVENT_122 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[se ad897]
+[effect bit_talk_h_slash02_fs]
+[wt 0.6]
+
+[seStop ad897 0.3]
+[se ad930]
+[se ad170]
+[se ad671]
+[fadeout white 0.1]
+[wait fade]
+
+[scene 231604]
+
+[charaScale E 1.2]
+[charaTalk E]
+[charaFace E 32]
+[charaFadein E 0 0,25]
+
+[charaMoveScale E 1.0 0.25]
+[charaMove E 0,0 0.25]
+[charaShake E 0.02 3 3 0.8]
+
+[seStop ad671 0.6]
+[fadein white 0.1]
+[wait fade]
+[wt 1.3]
+
+
+？1：まずい……
+？2：全く歯が立たない……！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠哪吒
+くやしいが　ボクもだ……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠ブリトマート
+くっ、[wt 0.5][charaFace B 6]ビルダー一同、退避します！
+[k]
+
+[messageOff]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 0,0 0.3]
+[wt 1.0]
+
+[charaTalk off]
+[charaDepth J 2]
+[charaDepth K 3]
+[charaDepth A 4]
+[charaDepth I 5]
+
+[charaFace A 4]
+[charaFace J 15]
+[charaFace I 4]
+[charaFace K 4]
+[charaFadein A 0.1 440,0]
+[charaFadein J 0.1 -420,0]
+[charaFadein I 0.1 -120,0]
+[charaFadein K 0.1 200,0]
+[wt 0.5]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove 440,0]
+[fowardEffect bit_talk_quickmove -420,0]
+[fowardEffect bit_talk_quickmove -120,0]
+[fowardEffect bit_talk_quickmove 200,0]
+[charaSpecialEffect A erasureReverse 0,0 0.3]
+[charaSpecialEffect J erasureReverse 0,0 0.3]
+[charaSpecialEffect I erasureReverse 0,0 0.3]
+[charaSpecialEffect K erasureReverse 0,0 0.3]
+[wt 1.1]
+
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠ナウクラテー
+[#僭越:せんえつ]ながら、あたりまえです。
+[k]
+
+
+[charaFace C 0]
+＠ナウクラテー
+[#主:あるじ]は、自然科学の基盤たるギリシャ文明の技術全てを[r]手掛けたとさえいえる、人類最高の文化英雄が１騎。
+[k]
+
+＠ナウクラテー
+たかがちんぴらサーヴァントの１騎や２騎、[r]技術でもって跳ね返すことなど、わけないこと。
+[k]
+
+＠ナウクラテー
+ま、神秘の領域となると不得手な[#主:あるじ]ですが、[r]曰く、高度に発達した技術は神秘と区別がうんぬん。
+[k]
+
+＠ナウクラテー
+端的に申せば、[#主:あるじ]と[#私:わたくし]の機体は、[r][#英雄アキレウスに匹敵する耐久性能]を誇ります。
+[k]
+
+[messageOff]
+[se ad1003]
+[charaMove C 0,-7 0.4]
+[wt 0.6]
+
+[charaMoveReturn C -12,-7 0.25]
+[wt 0.9]
+
+[charaFace C 3]
+＠ナウクラテー
+ようするに、おまえらは死にます。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠ゴッホ
+[line 3]それは結構です、[wt 0.7][charaFace E 35][messageShake 0.05 4 3 0.3]ねえ！
+[k]
+
+[messageOff]
+[se ad678]
+[blur motion 0.3 4 10000 0.5 0.6 0.05 100]
+[charaMoveScaleEase E 1.2 0.3 easeOutCubic]
+[charaMoveEase E 0,30 0.3 easeOutCubic]
+[charaFadeout E 0.3]
+[wt 0.3]
+[blurOff motion 0.1]
+
+[se ad85]
+[effect bit_talk_gold_slash_02 0,0 H]
+[wt 0.2]
+
+[subCameraOn 1]
+
+[charaLayer W sub #A]
+[charaLayer V sub #A]
+[charaLayer F sub #A]
+[charaLayer E sub #A]
+[charaLayer O sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 0,0,0,255]
+
+[subRenderDepth #A 1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth O 2]
+[charaDepth F 3]
+[charaDepth E 3]
+[charaDepth V 8]
+[charaDepth W 10]
+
+[charaScale E 1.0]
+[charaScale O 1.2]
+[charaFace E 35]
+[charaFadein E 0 -200,225]
+[charaFadein O 0 -300,-10]
+[wt 0.2]
+
+[seStop ad85 0.2]
+[se ade41]
+[se ade157]
+[cueSe SE_23 23_ade848]
+[se ad686]
+[fadeout white 0.1]
+[wait fade]
+
+[effectDestroy bit_talk_gold_slash_02]
+
+[subRenderFadein #A 0 225,-250]
+
+[charaDepth P 2]
+[charaDepth C 3]
+
+[charaScale P 1.2]
+[charaFace C 3]
+[charaFadeinFSL C 0 -350,0]
+[charaFadein P 0 100,-260]
+
+
+[charaShake E 0.02 3 3 0.8]
+[charaShake C 0.03 3 3 0.8]
+[charaMoveEaseFSR E 0,225 0.3 easeOutCubic]
+[charaMoveEaseFSL C -500,0 0.3 easeOutCubic]
+
+[fadein white 0.1]
+[seStop ade41 0.8]
+[seStop ade157 0.8]
+[cueSeStop 23_ade848 0.8]
+[seStop ad686 0.8]
+[wait fade]
+[wt 1.4]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaPutFSR V 0,225]
+[charaTalk F]
+[charaFace F 30]
+[charaFadeinFSR F 0 0,225]
+＠ダ・ヴィンチ
+……アキレウス相当とはまた！[r][#大言壮語:たいげんそうご]にしても大きく出たものだ！
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 0]
+[wt 0.8]
+[se ad678]
+[blur motion 0.3 4 10000 0.3 0.5 0.05 100]
+[charaMoveScaleEase C 1.2 0.3 easeOutCubic]
+[charaMoveEaseFSL C -540,35 0.3 easeOutCubic]
+[charaFadeout C 0.3]
+[wt 0.3]
+[blurOff motion 0.1]
+
+[charaTalk F]
+[charaFace F 25]
+[wt 0.25]
+[seStop ad710 0.2]
+[wt 0.25]
+
+[se ad562]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+
+[se ad85]
+[charaPutFSR W 0,225]
+[charaEffect W bit_talk_v_slash02 0,0 H]
+[wt 0.4]
+
+[se ad914]
+[charaEffect W bit_talk_impactlanding 0,25]
+[wt 1.4]
+
+[charaDepth Q 1]
+[charaDepth G 2]
+[charaDepth E 3]
+[charaScale Q 1.2]
+[charaFadein Q 0 0,-260]
+
+[subRenderFadeout #A 0.6]
+[charaFadeout P 0.6]
+[wt 0.6]
+[fowardEffect bit_talk_quickmove 230,0]
+[fowardEffect bit_talk_quickmove -230,0]
+[charaPut W 2000,2500]
+[charaEffectDestroy W bit_talk_impactlanding]
+[charaEffectDestroy W bit_talk_v_slash02_fs]
+[charaFadeout F 0]
+[charaFadeout E 0]
+[charaFadeout O 0]
+[wt 0.1]
+[subCameraOff]
+[charaLayer O normal]
+[charaLayer F normal]
+[charaLayer E normal]
+[charaLayer V normal]
+[charaLayer W normal]
+[charaScale V 1.0]
+[charaScale W 1.0]
+[charaScale F 1.0]
+[charaScale E 1.0]
+[charaScale O 1.0]
+[wt 0.1]
+
+[charaScale C 1.0]
+[se ad208]
+[se ad222]
+[charaTalk C]
+[charaPut C 1]
+[charaFace C 0]
+[charaSpecialEffect C appearanceReverse 0,0 0.25]
+[wt 1.3]
+
+＠ナウクラテー
+[#僭越:せんえつ]ながら[line 3]少々盛りました。[r]貫いてごらんなさい。アキレウス未満のぺらぺら装甲を。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+[wt 1.0]
+
+＠ゴッホ
+……マスターさま、頭きたのでちょっと虚数海に寄って[r]漁獲した虚数ゲソとかぶつけてやっていいですか？
+[k]
+
+？1：それは……
+？2：最後の手段にしよう
+？！
+
+[messageOff]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 -500,0]
+[charaMoveEase G -250,0 0.6 easeOutSine]
+[charaMoveEase E 250,0 0.6 easeOutSine]
+[charaMoveEase Q 100,-260 0.6 easeOutSine]
+[wt 0.7]
+
+＠ツタンカーメン
+ふふ。最後の手段があるのは、良きことにて。[r][#己:うぬ]にも用意はござりまするが、さあどうしまするか。
+[k]
+
+[charaFace E 7]
+＠ゴッホ
+……ツタンちゃん、言っときますが、[r]あの得体の知れない宝具、使わせる気、ないですから。
+[k]
+
+[charaFace G 2]
+＠ツタンカーメン
+なぜそれを、[#汝:みまし]が縛れると？
+[k]
+
+[charaFace E 13]
+＠ゴッホ
+[line 3]
+[k]
+
+[messageOff]
+[subCameraOn 1]
+
+[charaLayer W sub #A]
+[charaLayer C sub #A]
+[charaLayer O sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask18 5 57,58,58,255]
+
+[subRenderScale #A 1.01]
+
+[subRenderDepth #A 1]
+
+[charaDepth O 2]
+[charaDepth C 3]
+[charaDepth W 5]
+
+[charaRoll W 339]
+[charaRoll C 327]
+[charaRoll O 339]
+[charaScale C 1.2]
+[charaScale O 1.2]
+
+[charaPut W 0,225]
+[charaEffect W bit_talk_42]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0 225,250]
+[charaFadein O 0 0,0]
+
+[se ad68]
+[se ad904]
+[subRenderFadein #A 0.3 -200,-175]
+[subRenderMoveEase #A 0,-250 0.4 easeOutCubic]
+[wt 0.5]
+
+[charaFace G 3]
+[charaFace E 8]
+[wt 0.5]
+
+[cueSe SE_23 23_ade846]
+[subRenderFadeout #A 0.3]
+[subRenderMoveEase #A 400,-400 0.5 easeOutCubic]
+[wt 0.3]
+
+[cueSeStop SE_23 23_ade846 0.3]
+[se ad897]
+[wt 0.1]
+[charaDepth X 8]
+[charaPut X 1]
+[charaEffect X bit_talk_v_slash02]
+[wt 0.4]
+
+[seStop ad897 0.3]
+[se ad854]
+[fowardEffect bit_talk_impactlanding 225,0]
+[fowardEffect bit_talk_impactlanding -225,0]
+[fowardEffect bit_talk_impactlanding 0,-150]
+[wt 0.1]
+[shake 0.02 3 3 0.6]
+[fadeout white 0.4]
+[wait fade]
+
+[charaPut X 2000,2500]
+[charaEffectDestroy X bit_talk_v_slash02]
+
+[charaFadeout E 0]
+[charaFadeout G 0]
+[charaFadeout Q 0]
+
+[subRenderFadeout #A 0]
+[charaFadeout C 0]
+[charaFadeout O 0]
+[charaPut W 2000,2500]
+[charaEffectDestroy W bit_talk_42]
+[subCameraOff]
+[charaLayer O normal]
+[charaLayer C normal]
+[charaLayer W normal]
+[charaScale O 1.0]
+[charaScale C 1.0]
+[charaScale W 1.0]
+[wt 0.1]
+
+
+
+[charaSet E 1098305400 1 ゴッホ]
+
+[subCameraOn 1]
+[charaLayer W sub #A]
+[charaLayer X sub #A]
+[charaLayer Y sub #A]
+[charaLayer C sub #A]
+[charaLayer D sub #A]
+[charaLayer E sub #A]
+[charaLayer O sub #A]
+[charaLayer Q sub #A]
+
+[subCameraFilter #A normal]
+
+[subRenderScale #A 1.0]
+
+[charaDepth O 2]
+[charaDepth X 3]
+[charaDepth E 4]
+[charaDepth C 5]
+[charaDepth Y 6]
+[charaDepth W 7]
+
+[charaPut W 1]
+[charaPut X 1]
+[charaEffect W bit_talk_sand_dust_front_blk]
+[charaEffect X bit_talk_sand_dust_back_blk]
+
+[charaPut Y 1]
+[charaEffect Y bit_talk_sparks_antagonistic]
+
+[charaRoll W 0]
+[charaRoll O 0]
+[charaRoll C 350]
+[charaRoll E 10]
+[charaScale O 1.4]
+[charaScale C 1.4]
+[charaScale E 1.4]
+[charaFace C 6]
+[charaFace E 32]
+[charaFadein C 0 -525,70]
+[charaFadein E 0 225,10]
+[charaFadein O 0 0,-320]
+
+[subRenderFadein #A 0 0,0]
+
+
+[charaDepth G 2]
+[charaDepth P 3]
+[charaDepth H 4]
+
+[charaScale P 1.2]
+[charaScale H 1.2]
+[charaFace H 4]
+[charaFadein H 0 250,15]
+[charaFadein P 0 -100,-260]
+
+[charaFace G 21]
+[charaFadein G 0 1]
+
+[cueSe SE_24 24_ad1408]
+[cueSeVolume 24_ad1408 0 0]
+[cueSe SE_22 22_ad1197]
+[cueSeVolume 22_ad1197 0 0]
+[wt 2.0]
+
+[cueSeVolume 24_ad1408 1.5 0.8]
+[cueSeVolume 22_ad1197 1.5 0.3]
+
+[charaShake C 0.04 2 3 0]
+[charaShake E 0.03 3 3 0]
+[fadein white 1.5]
+[wait fade]
+
+[charaEffectStop W bit_talk_sand_dust_front_blk]
+[charaEffectStop X bit_talk_sand_dust_back_blk]
+[wt 0.6]
+
+＠ナウクラテー
+ご歓談は、[#主:あるじ]の手になる墓石の下で。
+[k]
+
+
+＠ゴッホ
+ウフフ……ゴッホ……太陽っぽい方には弱いんです……[r]オジマンさまとの約束、[#反故:ほ　ご]にはさせません……！
+[k]
+
+[messageOff]
+[charaTalk E,H]
+[subRenderFadeout #A 1.0]
+[cueSeVolume 24_ad1408 1.0 0]
+[cueSeVolume 22_ad1197 1.0 0]
+[wt 1.0]
+
+[bgm BGM_EVENT_122 1.5 0.7]
+[wt 0.2]
+
+＠H：ツタンカーメン
+……
+[k]
+
+[charaFace H 21]
+＠H：ツタンカーメン
+それは確かに、ご迷惑はかけられませぬね。[r]では、[#べつの最後の手段]をば。
+[k]
+
+[messageOff]
+[charaTalk H,G]
+[charaFadeout H 0.6]
+[charaFadeout P 0.6]
+[wt 0.95]
+
+
+[charaFaceFade G 5 0.2]
+＠ツタンカーメン
+ダイダロスどの、ナウクラテーどの。[r]『ツタンカーメンの呪い』はご存じなりや？
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[subRenderFadein #A 0.4 0,0]
+[cueSeVolume 24_ad1408 0.4 0.6]
+[cueSeVolume 22_ad1197 0.4 0.2]
+[wt 0.8]
+
+[se ad809]
+[se ad930]
+[se ad1014]
+[fadeout white 0.1]
+[cueSeStop 24_ad1408 0.3]
+[cueSeStop 22_ad1197 0.3]
+[wait fade]
+
+[charaPut Y 2000,2500]
+[charaPut W 2000,2500]
+[charaPut X 2000,2500]
+[charaEffectDestroy Y bit_talk_sparks_antagonistic]
+[charaEffectDestroy W bit_talk_sand_dust_front_blk]
+[charaEffectDestroy X bit_talk_sand_dust_back_blk]
+
+[charaPut E 2000,2500]
+
+[charaScale O 1.2]
+[charaPut O 100,-260]
+
+[charaRoll C 0]
+[charaScale C 1.1]
+[charaFace C 0]
+[charaPut C -250,0]
+
+[se ad671]
+[charaShake C 0.03 4 4 0.8]
+[charaMoveEaseFSL C -550,0 0.5 easeOutSine]
+
+[fadein white 0.1]
+[seStop ad809 0.6]
+[seStop ad930 0.6]
+[seStop ad1014 0.6]
+[wait fade]
+
+[seStop ad671 0.8]
+[wt 1.2]
+
+[charaDepth O 3]
+[charaDepth C 4]
+[charaDepth D 5]
+[charaScale D 1.2]
+
+＠ナウクラテー
+[line 3]知りませんが、[wt 0.7][subCameraFilter #A inversion][se ad231][charaFadeinFSL D 0 -575,25][r]うっ。[charaFadeout D 0.9][wt 0.4][subCameraFilter #A normal]
+[k]
+
+[messageOff]
+
+[charaSet E 3056000 1 ゴッホ]
+[charaLayer E sub #A]
+
+[charaDepth Q 5]
+[charaDepth E 6]
+
+[charaScale Q 1.2]
+[charaFadein Q 0.4 -100,-260]
+[wt 0.5]
+
+
+[charaTalk on]
+[charaScale E 1.1]
+
+[se ad671]
+[charaTalk E]
+[charaFace E 27]
+[charaFadein E 0.3 -50,0]
+[charaShake E 0.03 4 4 0.8]
+[charaMoveEaseFSR E 250,0 0.5 easeOutSine]
+[wt 0.1]
+[seStop ad671 0.8]
+[wt 1.2]
+
+＠ゴッホ
+ハア、ハア……動きが、止まった？
+[k]
+
+[messageOff]
+[charaTalk C,E]
+[charaFace C 3]
+[charaFadeout E 0.4]
+[charaFadeout Q 0.4]
+[wt 0.5]
+
+＠ナウクラテー
+……[#主:あるじ]は、こう仰せです。[r]おまえ、何をした。
+[k]
+
+[messageOff]
+[charaTalk C,G]
+[charaFace G 5]
+[subRenderFadeout #A 0.6]
+[wt 0.6]
+[charaFadeout C 0]
+[charaFadeout E 0]
+[charaFadeout O 0]
+[charaFadeout Q 0]
+[charaPut W 2000,2500]
+[charaPut X 2000,2500]
+[charaPut Y 2000,2500]
+[charaEffectDestroy Y bit_talk_sparks_antagonistic]
+[charaEffectDestroy W bit_talk_sand_dust_front_blk]
+[charaEffectDestroy X bit_talk_sand_dust_back_blk]
+[wt 0.1]
+[subCameraOff]
+[charaLayer O normal]
+[charaLayer Q normal]
+[charaLayer C normal]
+[charaLayer D normal]
+[charaLayer E normal]
+[charaLayer W normal]
+[charaLayer X normal]
+[charaLayer Y normal]
+[charaScale O 1.0]
+[charaScale Q 1.0]
+[charaScale C 1.0]
+[charaScale E 1.0]
+[charaScale W 1.0]
+[charaScale X 1.0]
+[charaScale Y 1.0]
+[wt 0.1]
+
+
+＠ツタンカーメン
+[#問答無用:もんどうむよう]にて。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+
+
+[charaTalk C]
+[charaFace C 3]
+[charaFace D 3]
+[charaFadein C 0.4 -300,0]
+[charaMove C -250,0 0.5]
+[wt 0.1]
+[se ad95]
+[wt 0.4]
+[seStop ad95 0.2]
+[wt 0.5]
+
+＠ナウクラテー
+おまえ[line 3][wt 0.7][cameraFilter inversion][se ad231][charaFadein D 0 -300,45]うっ。[charaFadeout D 0.9][wt 0.4][cameraFilter normal]
+[k]
+
+[messageOff]
+[charaDepth R 7]
+[charaDepth S 8]
+[charaDepth T 9]
+
+
+[se ad437]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[charaPut C 2000,2500]
+[se ad874]
+[seVolume ad874 0 0.7]
+[cameraFilter inversion]
+[scene 231601]
+[charaScale R 1.5]
+[charaFadein R 0 95,-180]
+[wt 1.15]
+
+[se ad437]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[scene 231602]
+[charaScale S 1.5]
+[charaFadein S 0 95,-180]
+[wt 1.15]
+
+[se ad437]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[scene 231603]
+[charaScale T 1.5]
+[charaFadein T 0 95,-180]
+[wt 1.15]
+
+[seStop ad874 0.1]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[charaPut R 2000,2500]
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+[charaPut C -250,0]
+[cameraFilter normal]
+[scene 231604]
+[wt 0.85]
+
+[charaMove C -250,-15 0.4]
+[wt 0.3]
+
+[se ade401]
+[wt 0.05]
+[charaShake C 0.01 2 1 0.3]
+[wt 1.2]
+
+[charaFace C 6]
+＠ナウクラテー
+[line 3][#僭越:せんえつ]ながら、この、[#ど変態]！！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 26]
+[charaFadein E 0.1 1]
+[wt 1.0]
+
+[charaFadeout R 0]
+[charaFadeout S 0]
+[charaFadeout T 0]
+[wt 0.1]
+[wt 0.2]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 21]
+[charaFadein G 0.1 1]
+＠ツタンカーメン
+[#ご同類]に、手厳しい……うっ、
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_122 1.5]
+
+[se ad240]
+[fowardEffect bit_talk_35]
+[wt 0.1]
+[charaFaceFade G 22 0.2]
+[charaShake G 0.02 3 3 0.6]
+[wt 2.2]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_35_fs]
+
+[charaTalk E]
+[charaFace E 31]
+[charaFadein E 0.1 1]
+＠ゴッホ
+ツ[messageShake 0.05 4 3 0.4]タンちゃん！？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth E 2]
+[charaDepth O 3]
+[charaDepth G 4]
+
+[charaScale O 1.2]
+[charaScale G 1.2]
+[charaFace G 22]
+[charaFadein G 0.6 -250,15]
+[charaFadein O 0.6 100,-260]
+[wt 0.6]
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[bgm BGM_BATTLE_243 0.1]
+
+＠ツタンカーメン
+……今なら、敵どのは……[#心のほころび]の修復に[r]気をとられ……全力を出せぬはず……
+[k]
+
+＠ツタンカーメン
+ゴッホどの、マスターどの……さあ、今のうちに……！
+[k]
+
+[messageOff]
+[charaDepth P 5]
+[charaDepth E 6]
+
+[charaScale P 1.2]
+[charaScale E 1.2]
+[charaFace E 21]
+[charaFadein E 0.6 250,15]
+[charaFadein P 0.6 -100,-260]
+[wt 0.6]
+
+[charaFadeout G 0.1]
+[wt 1.0]
+
+[charaFaceFade E 35 0.2]
+＠ゴッホ
+[line 3]絶対に、やってみせます！[r]マスターさま、ご指示を！！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_243 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

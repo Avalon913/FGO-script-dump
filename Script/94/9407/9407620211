@@ -1,0 +1,680 @@
+
+
+
+＄94-07-62-02-1-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098233600 1 盗賊]
+[charaSet B 1098233600 1 盗賊]
+[charaSet C 2003001 1 ロビンフッド]
+[charaSet D 9002001 1 天草四郎]
+[charaSet E 4011001 1 ブーディカ]
+[charaSet F 28004000 1 ？？？]
+[charaSet G 6014001 1 マタ・ハリ]
+[charaSet H 25010000 1 モレー]
+[charaSet I 1098250400 1 ？？？]
+[charaScale I 1.2]
+
+[imageSet J back10000 1 1]
+[charaScale J 1.3]
+
+[sceneSet L 167400 1]
+[charaScale L 1.4]
+[sceneSet M 167100 1]
+[charaScale M 1.4]
+[charaSet N 28004000 1 九紋竜エリザ（演出用）]
+[charaScale N 1.4]
+
+[imageSet O back10000 1 1]
+[charaScale O 1.05]
+[imageSet P back10000 1 1]
+[charaScale P 1.05]
+
+
+[charaSet S 98115000 1 エフェクト用ダミー]
+
+[scene 10000]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSe Battle bac153]
+[effect bit_talk_x_slash02]
+[wt 0.3]
+
+[cueSe Battle bac154]
+[fowardEffect bit_talk_x_slash03]
+[wt 0.4]
+
+[cueSe Battle bac151]
+[cueSe Battle bac150]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+
+[scene 168200]
+
+[charaTalk off]
+[charaFace A 2]
+[charaFace B 2]
+[charaFadeinFSR A 0 2]
+[charaFadeinFSL B 0 0]
+[charaShake A 0.02 3 4 0.5]
+[charaShake B 0.03 4 2 0.5]
+[wt 0.8]
+
+[bgm BGM_EVENT_3 1.0 0.5]
+
+[charaTalk on]
+＠A：盗賊
+ぎ[messageShake 0.05 4 3 0.5]ゃああああ！　やーーらーーれーーたーー！
+[k]
+
+＠A：盗賊
+こ、こうなったらお頭だ！[r]お頭を呼べ！
+[k]
+
+[clear]
+＠B：盗賊
+お頭、お昼寝中です！
+[k]
+
+[bgmStop BGM_EVENT_3 1.0]
+[clear]
+＠A：盗賊
+そうか、だったら仕方ねえな！[r]降伏！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ロビンフッド
+降伏するのかよ！　判断早いな！[bgm BGM_EVENT_77 0.1]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 0]
+[charaFadeinFSR A 0.1 2]
+[charaFadeinFSL B 0.1 0]
+＠A：盗賊
+ウチのお頭、[r]寝起き悪いもん……。
+[k]
+
+[clear]
+＠B：盗賊
+起こしたら噛みつかれたことあるし……。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠天草四郎
+ふむ。
+[k]
+
+＠天草四郎
+そのお頭……とやらが、[r]恐らくは例のサーヴァントでしょう。
+[k]
+
+＠天草四郎
+まずは会ってみませんか？
+[k]
+
+[charaFace D 4]
+＠天草四郎
+特異点を作った原因かどうかは[r]不明ですが……。
+[k]
+
+＠天草四郎
+何かしらの関係は必ずあるでしょうし。[r]間違いなくあるでしょうし。
+[k]
+
+[charaFace D 1]
+＠天草四郎
+むしろ無かったらビックリです。
+[k]
+
+？1：そうだね
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFace B 1]
+[charaFadeinFSR A 0.1 2]
+[charaFadeinFSL B 0.1 0]
+＠A：盗賊
+じゃ、じゃあ案内しまーす！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[scene 167400]
+[wt 0.5]
+
+[charaFadein L 0.1 -200,-140]
+[wt 1.0]
+
+[bgm BGM_EVENT_96 1.0]
+[charaMove L -200,-240 5.0]
+[fadein black 1.0]
+[wait fade]
+[wt 2.5]
+
+[charaFadeout L 1.0]
+[wt 2.5]
+
+[wipeout rightToLeft 1.0 1.0]
+[wait wipe]
+
+[scene 167100]
+
+[charaFadein M 0.1 70,-275]
+[wt 1.0]
+
+[charaMove M -70,-275 5.0]
+[wipein leftToRight 1.0 1.0]
+[wait wipe]
+[wt 2.5]
+
+[charaFadeout M 1.0]
+[wt 1.4]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠天草四郎
+うーん、なかなかに風情のある……[r]と言えば聞こえはいいですが、ほぼ廃城ですね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠盗賊
+これでも一応掃除とかはしたんですが……。[r]あ、こちらです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+すやすや……すやすやすや……。
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠盗賊
+お頭はお昼寝中なので、[r]御用があれば起こしてください、では！
+[k]
+
+[messageOff]
+[se ade97]
+[wt 0.1]
+[charaMove A -250,0 0.4]
+[charaFadeout A 0.4]
+[wt 1.2]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠天草四郎
+おや、全力で逃げましたね。[wt 0.6][charaFace D 0][r]では、誰が起こすかですが。[bgmStop BGM_EVENT_96 2.0]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth C 2]
+[charaDepth E 6]
+[charaDepth H 5]
+[charaDepth G 3]
+
+[charaFace C 0]
+[charaFace E 0]
+[charaFace H 24]
+[charaFace G 0]
+[charaFadeinFSL C 0.1 -400,0]
+[charaFadein E 0.1 -150,0]
+[charaFadein H 0.1 150,0]
+[charaFadeinFSR G 0.1 400,0]
+＠全員
+……。[r]……。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+[charaTalk on]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠天草四郎
+マスターは除外するとして……。[r]最初はグー、でいきますか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ロビンフッド
+まったくもって公平だ。[r]んじゃまあ、最初は[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠全員
+[f large]グー！
+[k]
+
+＠全員
+[f large]じゃん[wt 0.4]・けん[wt 0.4]・ほい！！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait wipe]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_7 1.0 1.0]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ロビンフッド
+あー……[r]くそ、コイントスで決めるべきだったぜ……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠天草四郎
+しっかりお願いしますね～。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ロビンフッド
+へいへい、サボらねぇって。[wt 0.7][charaFace C 0][r]……おーい、起きろー。
+[k]
+
+[messageOff]
+[se ad661]
+[seStop ad661 1.1]
+[charaMove C 0,-20 0.4]
+[charaFadeout C 0.4]
+[wt 1.0]
+
+
+[subCameraOn 1]
+[charaLayer M sub #A]
+[charaLayer C sub #A]
+[charaLayer E sub #A]
+[charaLayer D sub #A]
+[charaLayer I sub #A]
+
+[charaTalk depthOff]
+[charaDepth M 2]
+[charaDepth C 4]
+[charaDepth I 5]
+[charaDepth E 7]
+[charaDepth D 6]
+[wt 0.1]
+
+[subCameraFilter #A mask cut359_mask08]
+
+[charaScale C 1.2]
+[charaFace C 0]
+[charaFadein C 0.1 -50,200]
+
+[charaFace I 0]
+[charaFadein I 0.1 -250,50]
+
+[charaFadein M 0.1 200,300]
+[wt 0.2]
+
+[subRenderFadein #A 0.5 0,-310]
+[subRenderMove #A 0,-280 0.5]
+[charaPut J 1]
+[charaFadeTime J 0.6 0.5]
+[wt 0.9]
+
+[se ad77]
+[charaMoveReturn C -50,190 0.35]
+＠ロビンフッド
+起きろー……起きろー……。[wt 0.35][charaMoveReturn C -50,190 0.35][wt 0.65][charaFace C 5][bgmStop BGM_EVENT_7 1.5][r]ええい、いいから起きろ！！
+[k]
+
+[cueSe SE_21 21_ade542]
+[charaShake I 0.01 2 3 0.4]
+＠I：？？？
+がぶんちょ！！
+[k]
+
+[bgm BGM_EVENT_146 0.1]
+
+[charaFace C 2]
+＠ロビンフッド
+ギ[messageShake 0.05 4 3 0.5]ャーーー！
+[k]
+
+[charaScale E 1.2]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.2 195,200]
+＠ブーディカ
+ありゃ、本当に噛みついた。
+[k]
+
+＠ロビンフッド
+やっべえしかもガッツリ食いついて[r]離れないんですけど！？
+[k]
+
+[charaScale D 1.2]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.2 400,200]
+＠天草四郎
+仕方ありません、引き剥がしますよ。[r]いっせーの……[wt 0.8][charaFace D 5]せ！
+[k]
+
+[messageOff]
+[se ad408]
+[charaShake I 0.03 3 4 0.4]
+[charaMove C 100,200 0.3]
+[charaMove E 345,200 0.3]
+[charaMove D 550,200 0.3]
+[charaFadeout C 0.3]
+[charaFadeout E 0.3]
+[charaFadeout D 0.3]
+[wt 0.8]
+
+[subRenderFadeout #A 0.4]
+[charaFadeout J 0.4]
+[wt 0.4]
+[charaFadeout I 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[subCameraOff]
+[charaLayer M normal]
+[charaLayer I normal]
+[charaLayer C normal]
+[charaLayer E normal]
+[charaLayer D normal]
+[charaScale M 1.0]
+[charaScale I 1.0]
+[charaScale C 1.0]
+[charaScale E 1.0]
+[charaScale D 1.0]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ロビンフッド
+く[messageShake 0.05 4 3 0.4]あぁああ、犬の噛みつきよりいてぇ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth E 3]
+[charaDepth M 4]
+[charaDepth N 5]
+[charaDepth I 6]
+
+[charaScale I 1.4]
+[charaScale M 1.4]
+
+[charaFadein M 1.0 100,-295]
+
+[charaFace I 2]
+[charaFadein I 1.0 -170,60]
+
+[charaMove M 120,-295 1.0]
+[charaMove I -130,60 1.0]
+[wt 2.0]
+
+[charaFace N 48]
+[charaFadein N 0 -130,60]
+[charaFadeout I 0.7]
+[wt 1.1]
+
+[charaFace N 49]
+[wt 0.2]
+[charaFace N 48]
+[wt 0.2]
+[charaFace N 49]
+[wt 0.8]
+
+[charaFace F 2]
+[charaFace E 0]
+[charaFadein F 0.1 -210,0]
+[charaFadein E 0.1 210,0]
+[wt 0.2]
+
+[charaTalk on]
+＠N：？？？
+うーん、むにゃむにゃ……。[wt 0.6][charaFace N 2][r]……ん？　んんん？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout N 1.0]
+[charaFadeout M 1.0]
+[wt 1.4]
+
+[charaTalk on]
+[charaFace F 3]
+＠F：？？？
+あんたたち、誰なのかちら！
+[k]
+
+[se ad661]
+[seStop ad661 1.0]
+[charaMove E 210,-50 0.6]
+＠ブーディカ
+よいしょ。[r]（目線を合わせる）
+[k]
+
+＠ブーディカ
+あたしたちはサーヴァント……[r]って、言ってわかるかな？
+[k]
+
+[charaFace E 1]
+＠ブーディカ
+あなたのことも教えて欲しいな。[r]真名は知っている気がするけど、一応ね。
+[k]
+
+[charaFace F 6]
+＠F：？？？
+……！[r]サーヴァント！　サーヴァントなのね！
+[k]
+
+＠F：？？？
+つまり、[#あたちの仲間]ってことなのね！[r]やったわ史進君！　とうとうやってきたのよ！
+[k]
+
+[charaFace F 0]
+＠F：？？？
+あ、いけないいけない。[r]自己紹介ね！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_146 1.5]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth G 2]
+[charaDepth D 3]
+[charaDepth C 4]
+[charaDepth H 5]
+[charaDepth E 6]
+[charaDepth S 7]
+[charaDepth M 8]
+[charaDepth N 9]
+
+[charaFadein M 1.0 100,-295]
+[charaFace N 0]
+[charaFadein N 1.0 -170,60]
+[charaMove M 120,-295 1.0]
+[charaMove N -130,60 1.0]
+[wt 1.2]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.2]
+[charaFace N 0]
+＠？？？
+あたちの名前はエリザ！[wt 0.7][charaFace N 6][r]人はあたちのことを、[#九紋竜エリザ]と呼ぶわ！
+[k]
+
+？1：く、九紋竜[line 3]
+？！
+
+[messageOff]
+[charaFadeout N 0.5]
+[charaFadeout M 0.5]
+[wt 0.8]
+
+[charaFace E 2]
+[charaFace G 2]
+[charaFace C 2]
+[charaFace D 2]
+[charaFace H 2]
+[charaFadein E 0.1 1]
+[charaFadeinFSR G 0.1 200,0]
+[charaFadeinFSL C 0.1 -220,0]
+[charaFadeinFSSideR D 0.1 400,0]
+[charaFadeinFSSideL H 0.1 -420,0]
+
+[se ade226]
+[charaPut S 1]
+[charaEffect S bit_talk_41_fs]
+
+＠全員
+エリザーーー！？[r]（知ってた）
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaPut S 2000,2500]
+[charaEffectStop S bit_talk_41_fs]
+[charaFadeout G 0.1]
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[charaFadeout H 0.1]
+[charaFadeout E 0.1]
+
+[scene 10000]
+[wt 0.2]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+
+[charaPut S 2000,2500]
+[charaEffectDestroy S bit_talk_41_fs]
+
+[charaSet A 98115000 1 初期化用ダミー]
+[charaSet B 98115000 1 初期化用ダミー]
+[charaSet C 98115000 1 初期化用ダミー]
+[charaSet D 98115000 1 初期化用ダミー]
+[charaSet E 98115000 1 初期化用ダミー]
+[charaSet F 98115000 1 初期化用ダミー]
+[charaSet G 98115000 1 初期化用ダミー]
+[charaSet H 98115000 1 初期化用ダミー]
+[charaSet I 98115000 1 初期化用ダミー]
+[charaSet J 98115000 1 初期化用ダミー]
+[charaSet L 98115000 1 初期化用ダミー]
+[charaSet M 98115000 1 初期化用ダミー]
+[charaSet N 98115000 1 初期化用ダミー]
+[charaSet O 98115000 1 初期化用ダミー]
+[charaSet P 98115000 1 初期化用ダミー]
+[charaSet S 98115000 1 初期化用ダミー]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+
+[wt 0.5]
+
+[fowardEffect bit_queststart80400]
+[wait fowardEffect]
+
+[wt 0.5]
+
+[fadeout black 1.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

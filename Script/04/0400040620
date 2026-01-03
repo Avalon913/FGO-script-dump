@@ -1,0 +1,322 @@
+
+
+
+
+
+
+＄04-00-04-06-2-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 23003001 1 ジナコ]
+[charaSet B 1098301400 1 ハサラ]
+[charaSet C 1098257800 1 マシュ]
+[charaSet D 4034300 1 バーソロミュー]
+[sceneSet E 224200 1]
+[charaSet F 98115000 1 エフェクト用]
+[charaPut F 2000,2000]
+[sceneSet G 224200 1]
+[sceneSet H 10000 1]
+[charaScale H 1.05]
+[charaSet I 23003001 1 ジナコ_演出用]
+
+[charaEffect F bit_talk_41_fs]
+
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth H 2]
+[charaDepth A 3]
+[charaDepth F 4]
+
+[charaDepth B 1]
+[charaDepth C 5]
+[charaDepth D 6]
+
+[charaScale E 1.2]
+[charaScale A 1.2]
+
+[scene 224200]
+
+
+
+[fadein black 1.5]
+[wait fade]
+
+[se ade413]
+
+[charaPut F 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.2 1]
+[charaFadein E 0.2 0,-320]
+[wt 0.2]
+[bgm BGM_EVENT_94 0.1]
+
+＠ジナコ
+ゴールド・スークの資源全部とられたぁあああ！[r]あのグラサンライオン[#度:ど]し[#難:がた]すぎるっス～～！
+[k]
+
+[charaEffectStop F bit_talk_41_fs]
+[charaFace A 7]
+
+＠ジナコ
+もう、ひどすぎて泣けてきた！[r]人が引きこもってると思ってやりたい放題！
+[k]
+
+＠ジナコ
+[%1]さんの手で[r]あのライオン[#頭:あたま]懲らしめてよ～～！
+[k]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+？1：わかってる。少し懲らしめないと
+？2：まさかエジソンまでオルタになるとは……
+
+？！
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaFadeout E 0.4]
+[wt 0.4]
+[charaScale A 1.0]
+
+[charaTalk on]
+[charaTalk B]
+
+
+＠ハサラ
+そうテンパるなジナコ。[r]ちょうど良かったじゃないか。
+[k]
+
+＠ハサラ
+どのみちエジソンのエリアＩには用があったんだ。[r][%1]たちも無関係じゃない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠マシュ
+無関係ではない、と言うと、エジソンさんが[#不良:ワ　ル]に[r]なってしまわれたのは先輩の影響……なのですか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ジナコ
+違う違う、エジソンは勝手にああなってるだけ。[r]みんなに関係あるのはリップの話。
+[k]
+
+[charaFace A 5]
+
+＠ジナコ
+前にパッションリップの彫像の話をしたでしょ。[r]あれ、エジソンに取られちゃったの。
+[k]
+
+＠ジナコ
+なんやかんや因縁つけて、こっちが止める間もなく[r]持っていかれてさ。
+[k]
+
+＠ジナコ
+リップさんはエジソンの工場で、[r]機械化兵のアイドルとして飾られちゃってるんだ。
+[k]
+
+？1：！　なんでそんな事を！？
+？2：あのグラサンライオン……！
+
+？！
+
+[messageOff]
+[charaTalk off]
+
+[charaScale E 1.4]
+[charaScale D 1.2]
+
+[charaScale G 1.4]
+[charaScale C 1.2]
+
+[charaDepth E 5]
+[charaDepth D 6]
+[charaDepth G 7]
+[charaDepth C 8]
+
+[charaFace D 0]
+[charaFadein D 0.3 -100,0]
+[charaFadein E 0.3 100,-350]
+[charaMoveEase D -80,0 0.5 easeInOutSine]
+[charaMove E 120,-350 0.5]
+[wt 0.5]
+
+＠バーソロミュー
+想像はつくよ。リップの両腕は機械化兵たちに[r]とって一級の兵器であり、美しい芸術品でもある。
+[k]
+
+＠バーソロミュー
+エジソンが兵士たちの士気をあげるため、[r][#女神:ヴィーナス]像として利用したのだろう。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_94 1.5]
+
+[charaFace C 6]
+[charaFadein C 0.5 100,0]
+[charaFadein G 0.5 -100,-350]
+[charaMoveEase C 80,0 0.6 easeInOutSine]
+[charaMove G -120,-350 0.6]
+[wt 0.5]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠マシュ
+オールド・ドバイへの一方的な搾取と[r]リップさんの不当な待遇。
+[k]
+
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth H 1]
+[charaDepth G 3]
+[charaDepth C 4]
+[charaFace A 4]
+[charaPut H 1]
+[charaFadeTime H 0.2 0.5]
+
+＠マシュ
+確かにエジソンさんにはお仕置きが必要です。[r]財産の６割を没収されても文句は言えないかと。
+[k]
+
+[messageOff]
+[charaFadeout C 0.4]
+[charaFadeout G 0.4]
+[wt 0.4]
+
+[charaTalk on]
+
+
+＠ジナコ
+（マシュさんはたまに怖いっス）
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout H 0.2]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠ハサラ
+オレたちもリップを取り戻す機会を狙っていた。[r]エリアＩへの侵入経路も確保してある。
+[k]
+
+＠ハサラ
+ただ、問題はリップの彫像の[#運搬:うんぱん]だ。[r]運ぶには重いし、さすがに機械化兵たちに見つかる。
+[k]
+
+[charaFace B 0]
+
+＠ハサラ
+だがマスターなら問題はない。[r]リップと契約すれば彫像状態は解ける。
+[k]
+
+＠ハサラ
+リップがサーヴァントとして十全に活動できれば[r]機械化兵は敵じゃない。
+[k]
+
+[charaFace B 10]
+
+＠ハサラ
+こちらの戦力を増強しつつエリアＩの戦力を削げる。[r]どうだ。この作戦に乗ってくれるか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠バーソロミュー
+それ以前にリップは私たちの仲間でね。[r]断る理由はない。そうだろ、マスター？
+[k]
+
+？1：[&ああ:うん]
+？2：詳しい話を聞かせて[&ほしい:]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ジナコ
+やったー！　受けてくれるって分かってたけど[r]ありがとう、[%1]！
+[k]
+
+＠ジナコ
+ハサラさん、侵入用のダミー・コンテナの準備、[r]急いで急いで～☆
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaScale E 1.4]
+[charaScale I 1.2]
+[charaDepth E 8]
+[charaDepth I 9]
+
+[charaFace I 1]
+[charaFadein I 0.7 0,-10]
+[charaFadein E 0.7 0,-300]
+[charaMove I 0,20 10.0]
+[charaMove E 0,-270 10.0]
+[wt 0.4]
+
+[charaFace I 0]
+
+＠ジナコ
+作戦はシンプルっス。
+[k]
+
+＠ジナコ
+エリアＩに運搬される定期便のコンテナに[r]潜り込んで、向こうに着いたらリップを解放！
+[k]
+
+＠ジナコ
+こっそりエリアＩの港に砂上船を回しておくんで、[r]あとはバーソロミューさんの[#技術:テ　ク]の見せどころ。
+[k]
+
+＠ジナコ
+向こうのセキュリティはボクがハッキングマウスの[r]ムシカくん（物理）を送って無効化するから安心して。
+[k]
+
+＠ジナコ
+エジソンがゴールド・スーク強奪で[r]調子に乗ってる隙に勝負をつけちゃおうぜ！
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_62 1.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,682 @@
+
+＄94-08-79-13-6-0
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 7047001 1 アルトリア・キャスター]
+[charaSet B 4050002 1 鈴鹿御前]
+[charaSet C 1054001 1 ガレス]
+[charaSet D 5053002 1 水妃モルガン]
+[charaSet E 4042000 1 ハベトロット]
+[charaSet F 9017001 1 メリュジーヌ]
+[charaSet G 4003002 1 ドレイク]
+[charaSet H 1007400 1 ガウェイン]
+[charaSet I 1098227200 1 レース仙人]
+
+[charaSet J 5009000 1 エフェクト用1]
+[charaSet K 5009000 1 エフェクト用2]
+
+[sceneSet L 130301 1]
+[charaScale L 1.25]
+[sceneSet M 147202 1]
+[charaScale M 1.2]
+[sceneSet N 182700 1]
+[charaScale N 1.2]
+[sceneSet O 182700 1]
+[charaScale O 1.2]
+[sceneSet P 147203 1]
+[charaScale P 1.2]
+[sceneSet Q 195800 1]
+[charaScale Q 1.01]
+
+[imageSet T back10000 1]
+[charaScale T 1.01]
+
+[scene 130301]
+
+[charaPut J 0,0]
+[charaEffect J bit_talk_41_r]
+[charaFadein L 0.1 0,-250]
+
+[cueSe SE_23 23_ade888]
+[cueSeVolume 23_ade888 0 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_63 0.1]
+
+[fadein black 0.5]
+[cueSeVolume 23_ade888 0.3 0.5]
+[wait fade]
+
+[se ad126]
+[wt 0.5]
+
+[cueSe SE_21 21_ade682]
+[se ad48]
+[seVolume ad48 0 0.8]
+[charaMoveScale L 1.4 0.3]
+[charaMove L 0,-390 0.3]
+[wt 0.2]
+
+[seStop 21_ade682 1.0]
+[wipeout rectangleStripUpToDown 0.3 1]
+[wait wipe]
+[se ad416]
+
+
+[charaFadeout L 0.1]
+
+[scene 147202]
+[wt 0.8]
+
+[wipein rectangleStripDownToUp 0.3 1]
+[wait wipe]
+
+[seStop ad416 0.5]
+
+？1：これで[line 3]
+？！
+
+？1：ゴールだーーー！
+？！
+
+[se ad416]
+[cameraMove 2.5 0,0 1.1]
+[effect bit_talk_run_on_water]
+[cueSeStop 23_ade888 3.0]
+[wt 3.0]
+
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_63 1.0]
+[wait fade]
+
+[pictureFrame cut063_cinema]
+[charaEffectStop J bit_talk_41_r]
+[effectDestroy]
+
+[scene 197800]
+
+[cameraMove 0.1 0,0 1.1]
+[charaEffect J bit_talk_kamifubuki]
+[wt 2.0]
+
+[fadein white 1.0]
+[cueSe SE_23 23_ade893]
+[wait fade]
+[wt 4.0]
+
+[bgm BGM_BATTLE_23 0.1]
+
+＠アナウンス
+ペア登録、スズカ＆[%1]、[r]いま堂々のゴールイン！
+[k]
+
+
+＠アナウンス
+チェッカーフラッグが振られました！[r]アースマンレース・ブリスティン杯、
+[k]
+
+＠アナウンス
+優勝はスズカ＆[%1]！[r]スズカ＆[%1]です！
+[k]
+
+[bgmStop BGM_BATTLE_23 1.5]
+
+[messageOff]
+
+[se ad6]
+[se ad889]
+[wt 1.5]
+[seStop ad6 1.0]
+[seStop ad889 1.0]
+
+[wt 1.0]
+
+[bgm BGM_MAP_23 0.1]
+
+[charaTalk on]
+[charaScale I 0.9]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-70]
+
+＠レース仙人
+ほっほっほ。見事じゃな若者よ。[r]ワシは[#大番狂:おおばんくる]わせなどとは思わんよ。
+[k]
+
+＠レース仙人
+やはり汝こそ『予言の子』。[r]このハワトリア島の……いや、
+[k]
+
+＠レース仙人
+オーストラリアの大地に眠る大精霊、[r]ワンジナの願いを[#叶:かな]えるグッド[&ガイ:ガール]じゃ。
+[k]
+
+＠レース仙人
+じゃがレースはこのままでは終わらん。[r]来るぞ……全てをなぎ払うタイフーンが！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaDepth C 5]
+[charaDepth T 2]
+
+[charaScale C 0.9]
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 0,-70]
+
+[charaFadeTime T 0.2 0.5]
+
+＠ガレス
+（突然やってきて語り出したこの方は[r]　なんなんでしょう？）
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[bgm BGM_MAP_23 0.6 0.5]
+
+[wait wipe]
+
+[charaFadeout T 0.1]
+[charaFadeout C 0.1]
+
+[cameraHome 0.1]
+[charaEffectStop J bit_talk_kamifubuki]
+[pictureFrame]
+[scene 147202]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[bgm BGM_MAP_23 0.6 1.0]
+[wait wipe]
+[wt 0.4]
+
+？1：楽しかったー！
+？2：おめでとう、鈴鹿御前！
+？！
+
+[charaFace B 9]
+
+＠鈴鹿御前
+違う違う、マスターと私、ふたりの勝利！[r]ドラ[#娘:むすめ]の[#鼻:はな]も明かしたし、これでワイキキに戻[line 3]
+[k]
+
+[messageOff]
+[se ad131]
+[charaFadeTime T 0.6 0.3]
+[bgmStop BGM_MAP_23 1.0]
+
+[charaFadeout B 0.4]
+[wt 1.5]
+[seStop ad131 0.4]
+[se ade347]
+[fowardEffect bit_talk_thunder_04]
+[wt 0.5]
+[fowardEffect bit_talk_thunder_03]
+[fadeout white 0.1]
+[wait fade]
+
+[charaFadeout T 0.1]
+[scene 147203]
+[wt 0.1]
+
+[fadein black 0.5]
+[se ad664]
+[seVolume ad664 0 0.6]
+[wait fade]
+[seVolume ad664 1.0 1.0]
+[wt 0.7]
+[se ad507]
+[wt 1.0]
+
+
+
+？1：！？　これは、まさか[line 3]
+？！
+
+[wt 1.0]
+[fadeout black 1.0]
+[seStop ad507 1.0]
+[seStop ad664 2.0]
+[wait fade]
+
+[pictureFrame cut063_cinema]
+
+[cameraMove 0.1 0,0 1.01]
+
+[scene 197500]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_143 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth E 2]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 0,-50]
+
+＠水妃モルガン
+……メリュジーヌ。[r]残骸とはいえ、アルビオンの左手が情けない。
+[k]
+
+[charaFace D 1]
+
+＠水妃モルガン
+こうなっては仕方がありません。[r]ウミヌンノス発生ボタンを押します。
+[k]
+
+[messageOff]
+[charaMove D -20,-50 0.5]
+[wt 0.15]
+[se ad1042]
+[seVolume ad1042 0 0.8]
+[wt 0.75]
+[charaMove D -40,-50 0.5]
+[wt 0.74]
+[charaMove D -60,-50 0.5]
+[wt 0.75]
+[seStop ad1042 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.4 400,-50]
+[wt 0.4]
+
+＠ハベトロット
+えぇええ！？　待った待った、[r]それはダメ、ダメだってモルガン！
+[k]
+
+[charaFace E 2]
+
+＠ハベトロット
+思い通りに行かなかったからって、[r]レースをメチャクチャにしてどうするのさ！
+[k]
+
+＠ハベトロット
+お嫁さんゲージ、[r]ゼロになるどころかマイナスなんだわ！
+[k]
+
+
+[charaFace D 6]
+
+＠水妃モルガン
+止めるなトトロット！[r]私は女王、[#屈辱:くつじょく]はその場で晴らす女！
+[k]
+
+＠水妃モルガン
+妖精國の[#沽券:こけん]にかけて、[r]妖精以外の１位を認める訳にはいかぬ！
+[k]
+
+[messageOff]
+[se ad1042]
+[seVolume ad1042 0 0.7]
+[charaMove D -120,-50 3.0]
+[wt 0.7]
+
+[charaFace E 2]
+
+＠ハベトロット
+！　友人としてそんな罪は[#犯:おか]させない！[r]飛びかかってでも止めてやるぞ、モルガン！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMove E 0,-30 0.2]
+[charaMove D -120,-50 0.3]
+[wt 0.2]
+[charaMove E -50,-30 10.0]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 11]
+[seStop ad1042 0.1]
+[bgmStop BGM_EVENT_143 1.5]
+
+＠水妃モルガン
+……とはいえ、[r]ゲージがマイナスになるのはよくありませんね。
+[k]
+
+
+＠水妃モルガン
+今回は貴方に[#免:めん]じて自重し[line 3]。
+[k]
+
+[messageOff]
+
+
+[charaTalk E]
+[se ad348]
+[charaFace E 15]
+[charaMoveFSSideL E -385,0 0.7]
+[wt 1.0]
+
+[seStop ad348 0.5]
+[se ad144]
+[seVolume ad144 0 0.4]
+[charaMoveFSSideL E -385,-100 0.2]
+[charaPut J 2000,2000]
+[shake 0.05 5 4 0.5]
+[charaEffectStop J bit_talk_42_depth]
+[wt 1.0]
+[se ade460]
+[charaFace E 13]
+[wt 1.0]
+[charaTalk off]
+[charaFace D 8]
+[wt 1.2]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[se ad664]
+[seVolume ad664 0 0]
+[se ad507]
+[seVolume ad507 0 0]
+[seVolume ad664 1.2 0.4]
+[seVolume ad507 1.2 0.4]
+[scene 197502 1.2]
+[wt 3.7]
+
+[fadeout black 1.0]
+[seVolume ad664 1.0 0]
+[seVolume ad507 1.0 0]
+[wait fade]
+[pictureFrame]
+
+[effectDestroy bit_sepia01_fade_fs]
+
+[cameraHome 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[criMovie talk_mov185 bgmPlay false]
+[wt 24.0]
+[overlayFadein Q 1.0 0,-200]
+[wt 1.3]
+[scene 147203]
+[wt 0.7]
+
+
+[bgm BGM_EVENT_122 0.1]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 28]
+[charaFadein B 0.5 1]
+[charaFadeout Q 0.5]
+[wt 1.0]
+
+＠鈴鹿御前
+やば、渦に巻き込まれる！[r]これもう離脱できないヤツ～～！
+[k]
+
+＠鈴鹿御前
+せっかく優勝したのに酷くない！？[r]これもモルガンの仕業ってコトぉ！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠メリュジーヌ
+うん。陛下はこういう事するね。[r]最後は遠くから、[#力技:ちからわざ]で解決したがるんだあのひと。
+[k]
+
+？1：万事休すか……！
+？2：確かに、覚えがありすぎる……！
+
+？！
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 29]
+[charaFadein B 0.1 1]
+[bgmStop BGM_EVENT_122 1.5]
+[wt 1.0]
+
+
+＠G：？？？
+なあに[#諦:あきら]めてんだい、情けない。[r]それでも今年のライダークラスの[#花形:トップ]かい？
+[k]
+
+＠G：？？？
+並みいるライバルたちを抜いてここにきたんだ。[r]あの程度の嵐、ぶちのめせなくてどうするのさ！
+[k]
+
+[charaFace B 31]
+
+＠鈴鹿御前
+え。うそ、アンタは[line 3]
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[seVolume ad664 0.7 0.2]
+[seVolume ad507 0.7 0.2]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 182700]
+[wt 0.5]
+
+[se ad36]
+[se adm11]
+[wipein rectangleStripRightToLeft 0.7 1]
+[seVolume ad664 0.7 0.3]
+[seVolume ad507 0.7 0.3]
+[wait wipe]
+[seStop adm11 0.5]
+
+[wt 0.4]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+[bgm BGM_BATTLE_185 0.1]
+
+＠ドレイク
+優勝おめでとさん！[r]遠くから見ていても気持ちの良い疾走だった！
+[k]
+
+＠ドレイク
+バイクで海を[#征:い]くのも悪くないねぇ。[r]人間の技術と希望の成果ってヤツだ！
+[k]
+
+？1：ドレイク船長！
+？2：もしかして沖にいたんですか！？
+
+？！
+
+[charaFace G 3]
+
+
+＠ドレイク
+ああ。アタシも参加したかったが、[r]さすがに[#黄金の鹿号:ゴールデンハインド]じゃ場違いだろ？
+[k]
+
+[charaFace G 0]
+
+
+＠ドレイク
+なんで、海上からレースを観戦してたのさ。[r]もっとも[line 3]
+[k]
+
+[charaFace G 5]
+
+＠ドレイク
+きっかけは黒髭のアホウだけどね。[r]『サークル活動で[#忙:いそが]しい自分の代わりに出張ってほしい』
+[k]
+
+＠ドレイク
+ったく。海で荒事の起きる予感があるなら[r]自分も来いってんだ。
+[k]
+
+[charaFace G 0]
+
+＠ドレイク
+ま、出番を[#譲:ゆず]るための方便なのはまる分かりだ、[r]これ以上の悪態は勘弁してやるか。
+[k]
+
+[charaFace G 1]
+
+＠ドレイク
+さあ、お嬢さんがた、注文通り到着したよ！[r]ぞんぶんに暴れてやんな！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠アルトリア・キャスター
+ありがとう、ドレイク船長！[r]やっぱりイギリス海軍は最強ですね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠ガウェイン
+身内の恥……とまでは言いませんが、[r]モルガン公のしでかした事を放置はできません。
+[k]
+
+[charaFace H 6]
+
+＠ガウェイン
+船上での戦闘ですが、後れを取る事はありません。[r]この台風、太陽の光で払ってみせましょう！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠メリュジーヌ
+もちろん僕も手伝おう。[r]モルガン陛下にも痛い目を見てもらわないとね。
+[k]
+
+？1：[line 3]よし、[&やるぞ:やろう]！
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+
+＠アルトリア・キャスター
+うん！　今こそみんなの心を一つに！[r]声、合わせていくよ！　せーのっ、
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[subCameraOn 2]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaLayer B sub #A]
+[charaLayer A sub #A]
+
+[charaLayer N sub #A]
+
+[charaLayer F sub #B]
+[charaLayer G sub #B]
+[charaLayer H sub #B]
+
+[charaLayer O sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask06 3 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask06 3 0,0,0,255]
+
+[charaScale A 1.3]
+[charaScale B 1.3]
+[charaScale H 1.3]
+[charaScale F 1.3]
+[charaScale G 1.3]
+
+[charaDepth N 1]
+[charaDepth A 5]
+[charaDepth B 3]
+
+[charaDepth O 1]
+[charaDepth F 5]
+[charaDepth H 4]
+[charaDepth G 3]
+
+[charaFadein N 0.1 130,-50]
+
+[charaFace A 22]
+[charaFadeinFSL A 0.1 -180,270]
+
+[charaFace B 22]
+[charaFadeinFSR B 0.1 150,310]
+
+[charaFadein O 0.1 -130,-50]
+
+[charaFace F 8]
+[charaFadeinFSR F 0.1 350,340]
+
+[charaFace H 14]
+[charaFadeinFSL H 0.1 -350,250]
+
+[charaFace G 2]
+[charaFadein G 0.1 10,270]
+
+[subRenderFadein #A 0.2 50,-190]
+[subRenderMove #A 0,-190 0.2]
+[subRenderFadein #B 0.2 -50,-400]
+[subRenderMove #B 0,-400 0.2]
+[wt 0.2]
+
+＠一同
+『お　の　れ　モ　ル　ガ　ン　！』
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad664 0.5]
+[seStop ad507 0.5]
+[bgmStopEnd BGM_BATTLE_185 0.5]
+[wait fade]
+[soundStopAllEnd]
+[end]

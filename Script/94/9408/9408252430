@@ -1,0 +1,833 @@
+
+＄94-08-25-24-3-0
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 6048001 1 ロクスタ]
+[charaSet B 1057000 1 セタンタ]
+[charaSet C 10016000 1 ティアマト]
+[charaSet D 28003000 1 レディ・アヴァロン]
+[charaSet E 1098261000 1 ドラコー]
+[charaSet F 1098261000 1 ドラコー_演出用]
+
+[sceneSet J 181203 1]
+
+
+[revivalBranch lblNormal lblRevival]
+[label lblNormal]
+[branchRouteSelect select_answer_01 94082524 1000]
+[branchNotRouteSelect select_answer_02 94082524 1000]
+
+[label lblRevival]
+[branchRouteSelect select_answer_01 94097624 1000]
+[branchNotRouteSelect select_answer_02 94097624 1000]
+
+[label select_answer_01]
+
+[sceneSet K 186700 1]
+[sceneSet L 186200 1]
+
+[branch select_join]
+
+[label select_answer_02]
+
+[sceneSet K 186701 1]
+[sceneSet L 186210 1]
+
+[branch select_join]
+
+[label select_join]
+
+
+[sceneSet M 186400 1]
+[sceneSet N 186500 1]
+[sceneSet O 186600 1]
+[sceneSet P 186400 1]
+
+[imageSet X back10000 1]
+[imageSet Y back10000 1]
+[charaScale X 1.01]
+[charaScale Y 1.01]
+
+[scene 181101]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠レディ・アヴァロン
+……ソラを見てごらん。
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.7 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 181203]
+
+[charaScale J 1.2]
+[charaFadein J 0.1 0,-170]
+[wt 0.5]
+[charaMove J 0,-230 5.0]
+
+[cueSe SE_23 23_ade860]
+[seVolume 23_ade860 0 0]
+[seVolume 23_ade860 1.5 0.5]
+
+[wipein rectangleStripDownToUp 0.7 1.0]
+[wait wipe]
+[wt 2.5]
+[charaFadeout J 1.0]
+[seStop 23_ade860 2.0]
+[wt 1.5]
+[bgm BGM_EVENT_159 0.1]
+
+？1：……トワイライト・ラダー
+
+？！
+
+＠ドラコー
+……そうだ。[r]旅の終わりだ。
+[k]
+
+[messageOff]
+
+[scene 181101 1.0]
+[wt 1.5]
+
+[sceneSet J 181101 1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠ドラコー
+あのラダーは螺旋証明世界を飛び立ち、[r]元の世界に帰還する。
+[k]
+
+＠ドラコー
+[%1]。[r]貴様との腐れ縁もここまでだな。
+[k]
+
+？1：あ、元のドラコーに戻ってる
+
+？！
+
+[charaFace E 19]
+
+＠ドラコー
+…………………………忘れろ。
+[k]
+
+？1：え？
+？2：何を？
+
+？！
+
+[charaFace E 18]
+
+＠ドラコー
+全て、忘れろ。[r]先ほどのアレは、余ではない。
+[k]
+
+
+？1：どういうこと？
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+単に素に戻って、さっきのテンションが[r]恥ずかしくなっただけだろ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠ドラコー
+よし。殺す。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+あぁん？[r]やんのか、コラ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ロクスタ
+大丈夫です！　大人のネロさまも[r]とんでもねーくらいお美しかったですっ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ドラコー
+[f large]口を慎め。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+[charaShake A 0.05 3 3 0.5]
+
+＠ロクスタ
+ヒィィィィィッ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+……裏切られてもキレなかったのに。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠ティアマト
+……ドラコー。[r]思春期でむずかしいおとしごろ？
+[k]
+
+[charaFace C 5]
+
+＠ティアマト
+だいじょうぶ？[r]不安なら、ぎゅってする？
+[k]
+
+[messageOff]
+
+[se ad555]
+[seVolume ad555 0 0]
+[seVolume ad555 0.3 0.7]
+[charaMove C -50,0 0.5]
+[charaFadeout C 0.4]
+[wt 0.7]
+[seStop ad555 0.5]
+
+[charaTalk depthOff]
+[charaDepth F 4]
+[charaDepth J 3]
+[charaDepth C 2]
+[charaDepth E 1]
+
+[charaTalk E,C]
+[charaFace E 4]
+[charaFadein E 0.2 -130,0]
+[wt 0.4]
+
+[charaFace C 5]
+[charaFadein C 0.4 280,0]
+[charaMove C 230,0 0.5]
+[wt 0.5]
+
+[se ad183]
+[seVolume ad183 0 0.7]
+[charaFace E 8]
+[charaShake E 0.05 3 3 0.3]
+[wt 1.2]
+
+？1：あ、こっちも戻ってる
+
+？！
+
+＠ドラコー
+こ[messageShake 0.05 4 4 0.2]の獣、以前よりもずっと[r]ウザくなってるんだが！？
+[k]
+
+＠ティアマト
+ドラコー。かわいい子。[r]お母さんに甘えていいんですよ？
+[k]
+
+＠ドラコー
+え[messageShake 0.05 4 4 0.2]えい、抱きつくな！[r]余は、他の獣と馴れ合うつもりはない！
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaFaceFade E 0 0.2]
+[wt 0.7]
+
+[charaScale F 1.2]
+[charaScale J 1.2]
+
+[charaTalk E,F]
+[charaFace F 0]
+[charaFadein F 1.0 15,25]
+[charaFadein J 1.0 0,-200]
+[wt 1.0]
+
+[scene 181303]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[charaTalk off]
+
+＠ドラコー
+何だ……[%1]。[r]生暖かい目をしよって。
+[k]
+
+[charaFace F 19]
+
+＠ドラコー
+不快だ。実に不愉快だ。[r]思わず噛み千切りたくなるぞ。
+[k]
+
+[messageOff]
+[charaFadeout F 1.0]
+[wt 0.5]
+
+[cueSe SE_23 23_ade860]
+[seVolume 23_ade860 0 0]
+[seVolume 23_ade860 1.5 1.0]
+[wt 2.0]
+[seStop 23_ade860 1.2]
+[wt 0.4]
+
+[charaFadeout J 1.2]
+[wt 1.0]
+[cueSe SE_23 23_ade858]
+[wt 2.0]
+
+[subCameraOn 1]
+
+[charaLayer F sub #A]
+[charaLayer J sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask20 3 255,255,255,255]
+
+[charaFace F 0]
+[charaFadein F 0.1 20,260]
+[charaFadein J 0.1 0,0]
+[wt 0.5]
+
+[subRenderFadeinFSL #A 0.5 -250,-270]
+[wt 0.5]
+
+＠ドラコー
+……ラダーも到着した。[r]貴様はカルデアに帰るがいい。
+[k]
+
+＠ドラコー
+貴様との契約は無事、破棄された。[r]そして余は、見事ビースト真体に返り咲いた。
+[k]
+
+[charaFace F 1]
+
+＠ドラコー
+蓋を開ければ、全て余の思惑通り。[r]完全勝利というヤツだな。ハッハッハッ！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 1.0]
+
+[scene 181101 1.0]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[subCameraOff]
+[charaLayer F normal]
+[charaLayer J normal]
+[wt 0.5]
+
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.4 1]
+[wt 0.6]
+
+＠ドラコー
+……[%1]よ。
+[k]
+
+＠ドラコー
+契約は破棄された[line 3]が、[r]貴様との縁は確かに結ばれた。
+[k]
+
+[charaFace E 2]
+
+＠ドラコー
+……いずれ、都市喰らいのドラコーは、[r]貴様の下に[#顕:あらわ]れよう。
+[k]
+
+＠ドラコー
+至上の美味[line 3]我が証明世界の原典たる、[r]貴様のカルデアを喰らい尽くすために。
+[k]
+
+[charaFace E 1]
+
+＠ドラコー
+貴様たちの末路[line 3][r]このドラコーが[#確:しか]と看取ってやるとも。
+[k]
+
+？1：じゃあ、その時は
+？2：一緒に戦ってくれる？
+
+？！
+
+[charaFace E 17]
+
+＠ドラコー
+……人の話を聞いておらぬな。[r]もうよい。
+[k]
+
+[charaFace E 0]
+
+＠ドラコー
+ほら、持っていけ。
+[k]
+
+[messageOff]
+[charaFadeout E 0.2]
+[wt 0.1]
+
+[se bas2]
+[effect bit_talk_20]
+[wt 1.8]
+[effectStop bit_talk_20]
+[wt 0.7]
+
+？1：……聖杯
+
+？！
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+……結局テメエが持ってたんじゃねえか。[r]さんざん人のこと振り回しやがって。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ドラコー
+嘘ではないぞ。事実、ロクスタの毒を注がれるまでは[r][#力:かたち]を失っていたからな。
+[k]
+
+＠ドラコー
+[#形:ちから]の無い器なぞ、[r]持っていないに等しいだろう？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+ケッ……。[r]今さらどうでもいいけどよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠ドラコー
+さあ、こいつを持ってさっさと帰れ。[wt 0.6][charaFace E 16][r]シッ[charaMoveReturn E 0,5 0.3][wt 0.3]シッ。[charaMoveReturn E 0,5 0.3][wt 0.3]
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaFaceFade E 2 0.3]
+[wt 0.5]
+
+＠ドラコー
+[line 3][%1]。[r]貴様は、貴様の落陽を超えてゆけ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[charaEffect A bit_talk_06]
+
+＠ロクスタ
+……ゲッ！　退去始まってる！？
+[k]
+
+[charaFace A 11]
+
+＠ロクスタ
+おのれー。もっともっとネロさまを[r]摂取したかったのですが……
+[k]
+
+[charaFace A 0]
+
+＠ロクスタ
+積もる話もございますが、ロクスタ、[r]この辺でドロンさせていただきます！
+[k]
+
+[charaFace A 20]
+
+＠ロクスタ
+最後に一言！[r]キノコを！　食べろ！
+[k]
+
+[messageOff]
+[charaSpecialEffect A flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect A]
+[charaEffectStop A bit_talk_06]
+[wt 1.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaEffect D bit_talk_06]
+
+＠レディ・アヴァロン
+さて、それじゃ、私もそろそろ[r]お[#暇:いとま]させていただくよ。
+[k]
+
+[charaFace D 6]
+
+＠レディ・アヴァロン
+今回の旅も良いものが見られた。[r]これだからキミたちは素晴らしい。
+[k]
+
+[charaFace D 7]
+
+＠レディ・アヴァロン
+カルデアのマスター。[r]キミの旅路に花の祝福があらんことを！
+[k]
+
+[messageOff]
+[charaSpecialEffect D flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect D]
+[charaEffectStop D bit_talk_06]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ティアマト
+なごりおしいけど、母もそろそろ帰ります。
+[k]
+
+＠ティアマト
+[%1]。[r]こまった時は、いつでも母を喚びなさい。
+[k]
+
+[charaFace C 1]
+
+＠ティアマト
+特に他の獣が暴れたら、[r]母がおしおきに駆けつけます。
+[k]
+
+[charaFace C 0]
+
+＠ティアマト
+そしてそのまま居座って、[r]我が子を甘やかし尽くす所存。
+[k]
+
+[charaFace C 7]
+
+＠ティアマト
+……我ながら、おそろしい計画。
+[k]
+
+[charaFace C 5]
+
+＠ティアマト
+それまでは、どうか元気でいてね。[r]……さあ、セタンタもはやく。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠セタンタ
+……ん？[r]ああ……わかってるって。
+[k]
+
+[charaFace B 3]
+
+＠セタンタ
+それじゃ、マスター。[r]またな。
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[se ad73]
+[wait charaSpecialEffect B]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.2]
+[charaEffectEdgeBlur C afeeee afeeee 10 2.0]
+[wt 0.5]
+
+[se ad300]
+[fadeout white 1.5]
+[wait fade]
+
+[sceneSet J 181203 1]
+
+[charaFadeout C 0.1]
+[charaEffectEdgeBlurDestroy C]
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+
+
+
+[cueSe SE_23 23_ade856]
+[wt 1.7]
+
+[se ad95]
+[seStop ad95 1.5]
+[wipeout rightToLeft 1.0 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[fadeout black 0.1]
+[wait fade]
+[wipein leftToRight 0.1 1.0]
+[wait wipe]
+
+[charaScale J 1.2]
+[charaFadein J 0.1 0,-220]
+[wt 1.0]
+
+[charaMove J 0,-180 5.0]
+[cueSe SE_23 23_ade860]
+[seVolume 23_ade860 0 0]
+[seVolume 23_ade860 1.5 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.5]
+[seStop 23_ade860 1.2]
+
+[charaFadeout J 1.0]
+[wt 1.5]
+
+[overlayFadein X 0.5 0,-800]
+[overlayFadein Y 0.5 0,800]
+[charaMove X 0,-736 1.0]
+[charaMove Y 0,736 1.0]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 0,-50]
+[wt 1.0]
+
+？1：ありがとう、ドラコー！
+？2：楽しかったよ！
+
+？！
+
+＠ドラコー
+……[%1]。[r]獣の騎手。我が契約者よ。
+[k]
+
+＠ドラコー
+[line 3]貴様の地獄に、万雷の喝采を。
+[k]
+
+[messageOff]
+[cueSe SE_23 23_ade860]
+[seVolume 23_ade860 0 0]
+[seVolume 23_ade860 1.5 0.5]
+
+[charaFadeout E 1.0]
+[charaMove X 0,-800 1.0]
+[charaMove Y 0,800 1.0]
+[wt 0.4]
+[charaFadeout X 0.5]
+[charaFadeout Y 0.5]
+[wt 1.5]
+
+[seStop 23_ade860 2.0]
+[bgmStop BGM_EVENT_159 3.0]
+
+[sceneSet J 109800 1]
+[wt 1.5]
+
+
+[charaScale J 1.2]
+[charaFadein J 1.0 0,-180]
+[charaMove J 0,-220 10.0]
+[wt 1.0]
+[scene 109800]
+[wt 2.0]
+
+[bgm BGM_EVENT_172 0.1]
+
+＠ドラコー
+[line 3]またひとり、か。
+[k]
+
+＠ドラコー
+我が師よ。本当に遠いところへ……[r]誰の手も届かぬ遠くまで来てしまったぞ。
+[k]
+
+＠ドラコー
+落陽はついに我を囚えず、[r]ただソラが何処までも広がるばかり。
+[k]
+
+[messageOff]
+[charaFadeout J 1.0]
+[wt 2.0]
+
+＠ドラコー
+さあ、ドラコー。[r][#余:わたし]はこれから、どんな物語を紡ごうか[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaDepth O 6]
+[charaDepth N 5]
+[charaDepth P 4]
+[charaDepth M 3]
+[charaDepth L 2]
+[charaDepth K 1]
+
+[charaScale K 1.1]
+[charaFadein K 1.5 -40,-270]
+[charaMove K -20,-270 7.0]
+[wt 4.5]
+
+[charaScale L 1.1]
+[charaFadein L 1.5 0,-190]
+[charaMove L 0,-230 7.0]
+[wt 5.5]
+
+[cueSe SE_21 21_ade580]
+[seStop 21_ade580 0.7]
+
+[charaScale M 1.3]
+[charaFadein M 1.0 -100,-140]
+[charaMove M 0,-140 1.5]
+[wt 0.5]
+[charaMove M 25,-140 2.8]
+[wt 0.3]
+
+[charaScale P 1.25]
+[charaFadein P 1.0 -100,-300]
+[charaMove P 0,-300 1.5]
+[wt 0.9]
+[charaMove P 50,-300 5.0]
+[wt 3.0]
+
+[charaScale M 1.01]
+[charaPut M 0,-200]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+
+[charaFadein N 1.5 0,-200]
+[wt 4.0]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+[charaFadeout N 1.5]
+[wt 2.8]
+
+[charaScale O 1.01]
+[charaFadein O 1.2 0,-200]
+[wt 4.2]
+
+
+
+[messageOff]
+[fadeout white 2.4]
+[bgmStop BGM_EVENT_172 3.9]
+[wait fade]
+
+[charaFadeout M 0.1]
+[charaFadeout O 0.1]
+[scene 10000]
+[wt 2.5]
+
+[fadein white 1.0]
+[wait fade]
+[fadeout black 0.1]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]
