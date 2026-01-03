@@ -1,7 +1,6 @@
 import requests
-import json
 
-URL = "https://raw.githubusercontent.com/atlasacademy/data/master/JP/Script.json"
+URL = "https://api.atlasacademy.io/export/JP/script.json"
 
 def main():
     resp = requests.get(URL, timeout=60)
@@ -9,7 +8,6 @@ def main():
 
     data = resp.json()
 
-    # Script.json 是一个列表
     ids = [str(item["id"]) for item in data]
 
     print(f"ScriptID 总数: {len(ids)}")
