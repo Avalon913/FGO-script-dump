@@ -1,17 +1,19 @@
 name: Auto Dump FGO Scripts
 
+permissions:
+  contents: write
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 3 * * *"   # 每天 UTC 03:00 自动跑
+    - cron: "0 3 * * *"
 
 jobs:
   dump:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout your repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Clone Atlas Academy game data
         run: |
