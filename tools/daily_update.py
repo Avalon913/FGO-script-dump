@@ -4,7 +4,7 @@ BASE_URL = "https://api.atlasacademy.io"
 REGION = "JP"
 
 def main():
-    url = f"{BASE_URL}/nice/{REGION}/script"
+    url = f"{BASE_URL}/nice/{REGION}/scripts"
     resp = requests.get(url, timeout=30)
     resp.raise_for_status()
 
