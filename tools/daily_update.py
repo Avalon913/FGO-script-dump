@@ -13,3 +13,9 @@ def main():
     ids = [str(item["id"]) for item in data]
 
     print(f"ScriptID 总数: {len(ids)}")
+    print("前 10 个 ScriptID：")
+    for sid in ids[:10]:
+        print(sid)
+
+if __name__ == "__main__":
+    main()
