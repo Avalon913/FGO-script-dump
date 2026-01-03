@@ -1,4 +1,4 @@
-name: Auto Dump FGO Scripts (no txt)
+name: Auto Dump FGO Scripts (no txt + dated updates, keep 15 days)
 
 permissions:
   contents: write
@@ -20,31 +20,59 @@ jobs:
         run: |
           git clone --depth 1 https://git.atlasacademy.io/atlasacademy/fgo-game-data.git atlas-data
 
-      - name: Sync Script folder (keep dirs, remove .txt, fix conflicts)
+      - name: Sync Script + Dated updates (keep dirs, remove .txt, incremental)
         run: |
-          mkdir -p Script
+          DATE="$(date +%F)"
+          KEEP_DAYS=15
 
-          # 如果历史里有同名文件，先删掉（避免 mkdir 冲突）
+          mkdir -p Script
+          mkdir -p "updates/$DATE"
+
+          # 修复：历史里若有同名文件 Script/ScriptFileList，会与目录冲突
           if [ -e "Script/ScriptFileList" ] && [ ! -d "Script/ScriptFileList" ]; then
             rm -f "Script/ScriptFileList"
           fi
 
+          # 同步：新增/变化 -> 覆盖 Script，并复制到 updates/DATE
           find atlas-data/ScriptActionEncrypt -type f -name "*.txt" | while read f; do
-            rel="${f#atlas-data/ScriptActionEncrypt/}"
-            out="Script/${rel%.txt}"
+            rel="${f#atlas-data/ScriptActionEncrypt/}"   # 01/0100000010.txt
+            out="Script/${rel%.txt}"                     # Script/01/0100000010
+            upd="updates/$DATE/${rel%.txt}"              # updates/DATE/01/0100000010
 
             mkdir -p "$(dirname "$out")"
+            mkdir -p "$(dirname "$upd")"
 
             if [ ! -f "$out" ] || ! cmp -s "$f" "$out"; then
               cp "$f" "$out"
+              cp "$f" "$upd"
             fi
           done
+
+          # 如果今天没有任何变化，删除空的 updates/DATE
+          if [ -z "$(find "updates/$DATE" -type f 2>/dev/null)" ]; then
+            rmdir "updates/$DATE" || true
+          fi
+
+          # ====== 只保留最近 KEEP_DAYS 天的 updates ======
+          if [ -d "updates" ]; then
+            find updates -mindepth 1 -maxdepth 1 -type d | sort | while read d; do
+              dir_date="$(basename "$d")"
+              # 只处理形如 YYYY-MM-DD 的目录
+              if date -d "$dir_date" >/dev/null 2>&1; then
+                cutoff="$(date -d "$KEEP_DAYS days ago" +%s)"
+                dts="$(date -d "$dir_date" +%s)"
+                if [ "$dts" -lt "$cutoff" ]; then
+                  rm -rf "$d"
+                fi
+              fi
+            done
+          fi
 
       - name: Commit and push (skip if no changes)
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add Script
+          git add Script updates
 
           if git diff --cached --quiet; then
             echo "No changes, skip commit."
