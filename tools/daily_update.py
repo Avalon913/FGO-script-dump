@@ -1,6 +1,6 @@
 import requests
 
-URL = "https://apps.atlasacademy.io/db/JP/script"
+URL = "https://apps.atlasacademy.io/db/JP/script.json"
 
 def main():
     resp = requests.get(URL, timeout=30)
