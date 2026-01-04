@@ -15,7 +15,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0  # 你原来这样也行（有完整历史）
 
       - name: Clone Atlas Academy game data
         run: |
@@ -66,6 +66,7 @@ jobs:
           find Script -type f -name "*.txt" -delete || true
 
       - name: Commit and push (skip if no changes)
+        id: commit_push
         shell: bash
         run: |
           set -euo pipefail
@@ -76,7 +77,46 @@ jobs:
 
           if git diff --cached --quiet; then
             echo "No changes, skip commit."
+            echo "committed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "auto: update scripts ($(date +%F))"
             git push
+            echo "committed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Notify Telegram (only when new files in updates/)
+        if: ${{ steps.commit_push.outputs.committed == 'true' }}
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          DATE="$(date +%F)"
+
+          # 只取“本次提交新增(A)”且位于 updates/DATE/ 下的文件
+          NEW_PATHS=$(git diff --name-status HEAD~1..HEAD \
+            | awk '$1=="A" {print $2}' \
+            | grep -E "^updates/${DATE}/" || true)
+
+          if [ -z "$NEW_PATHS" ]; then
+            echo "No new files under updates/${DATE}/, skip notify."
+            exit 0
+          fi
+
+          # 只显示文件名（去掉路径；不带后缀）
+          FILES=$(echo "$NEW_PATHS" \
+            | sed -E "s#^updates/${DATE}/##" \
+            | sed -E 's/\.[^.]+$//' \
+            | sort -u)
+
+          # 你要的推送格式
+          MSG="日服自动抓包%0A%0A📄 更新文件:%0A"
+          while IFS= read -r f; do
+            [ -n "$f" ] && MSG="${MSG}${f}%0A"
+          done <<< "$FILES"
+
+          curl -sS -X POST "https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage" \
+            -d "chat_id=${TG_CHAT_ID}" \
+            -d "text=${MSG}" \
+            -d "disable_web_page_preview=true"
