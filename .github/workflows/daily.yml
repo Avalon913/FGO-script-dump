@@ -6,7 +6,7 @@ permissions:
 on:
   workflow_dispatch:
   schedule:
-    - cron: "10,20 * * * *"  # UTC
+    - cron: "2,12 * * * *"   # UTC = 北京时间每小时 10 / 20 分
 
 jobs:
   dump:
@@ -15,7 +15,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # 你原来这样也行（有完整历史）
+          fetch-depth: 0
 
       - name: Clone Atlas Academy game data
         run: |
@@ -37,32 +37,30 @@ jobs:
             rm -f "Script/ScriptFileList"
           fi
 
-          # Walk all .txt files in upstream data (no directory assumptions)
           while IFS= read -r -d '' f; do
-            rel="${f#atlas-data/ScriptActionEncrypt/}"   # keep relative path
-            out="Script/${rel%.txt}"                    # Script cache (no .txt)
-            upd="updates/$DATE/${rel%.txt}"             # updates keeps relative path (no .txt)
+            rel="${f#atlas-data/ScriptActionEncrypt/}"
+            out="Script/${rel%.txt}"
+            upd="updates/$DATE/${rel%.txt}"
 
             mkdir -p "$(dirname "$out")"
             mkdir -p "$(dirname "$upd")"
 
-            # 1) NEW file (never existed in Script before) -> may go into updates
+            # NEW file
             if [ ! -f "$out" ]; then
-              # Update Script cache
               cp "$f" "$out"
 
-              # updates: only NEW story files
+              # only NEW story files go to updates
               if grep -a -q -E '^(＠|？[0-9]+：)' "$f"; then
                 cp "$f" "$upd"
               fi
 
-            # 2) Existing file changed -> update Script only (NEVER into updates)
+            # existing but changed
             elif ! cmp -s "$f" "$out"; then
               cp "$f" "$out"
             fi
           done < <(find atlas-data/ScriptActionEncrypt -type f -name "*.txt" -print0)
 
-          # Safety: remove any accidental .txt files under Script/ (shouldn't exist)
+          # Safety cleanup
           find Script -type f -name "*.txt" -delete || true
 
       - name: Commit and push (skip if no changes)
@@ -94,7 +92,6 @@ jobs:
           set -euo pipefail
           DATE="$(date +%F)"
 
-          # 只取“本次提交新增(A)”且位于 updates/DATE/ 下的文件
           NEW_PATHS=$(git diff --name-status HEAD~1..HEAD \
             | awk '$1=="A" {print $2}' \
             | grep -E "^updates/${DATE}/" || true)
@@ -104,13 +101,11 @@ jobs:
             exit 0
           fi
 
-          # 只显示文件名（去掉路径；不带后缀）
           FILES=$(echo "$NEW_PATHS" \
             | sed -E "s#^updates/${DATE}/##" \
             | sed -E 's/\.[^.]+$//' \
             | sort -u)
 
-          # 你要的推送格式
           MSG="日服自动抓包%0A%0A📄 更新文件:%0A"
           while IFS= read -r f; do
             [ -n "$f" ] && MSG="${MSG}${f}%0A"
