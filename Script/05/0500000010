@@ -1,0 +1,2394 @@
+
+＄05-00-00-00-1-0
+
+[skip false]
+
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[soundStopAll]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[fowardEffect bit_queststart500]
+[wait fowardEffect]
+
+[skip true]
+[fadeout black 1.0]
+[wait fade]
+
+[cameraMove 0 0,0 1.01]
+
+[charaSet A 1098330800 1 マシュ]
+[charaScale A 1.2]
+[charaSet B 1098123000 1 ムニエル]
+[charaSet C 1098269330 1 エルロン]
+[charaSet D 1098124500 1 ダ・ヴィンチ]
+[charaSet E 1098348700 1 オルガマリー]
+[charaSet G 1098348510 1 アズライール]
+
+[imageSet H cut770_sb_at 1]
+[charaScale H 2.3]
+
+[charaSet I 98115000 1 エフェクト用]
+
+[sceneSet K 277700 1]
+[charaScale K 1.0]
+
+[sceneSet L 277700 1]
+[charaScale L 1.2]
+
+[sceneSet M 277700 1]
+[charaScale M 1.2]
+
+[sceneSet N 277700 1]
+[charaScale N 1.0]
+
+[charaSet O 1098124500 1 ダ・ヴィンチ_シルエット]
+[charaFilter O silhouette 00000080]
+
+[charaSet P 1098347310 1 カルデアスタッフ（オクタヴィア）]
+[charaSet Q 1098122900 1 カルデアスタッフ（ダストン）]
+
+[charaSet R 1098123000 1 ムニエル_演出用]
+
+[charaSet S 1098123000 1 ムニエル_サブレイヤーA用]
+[charaSet T 1098269330 1 エルロン_サブレイヤーB用]
+
+[sceneSet U 277700 1]
+[charaScale U 1.4]
+
+[sceneSet V 277700 1]
+[charaScale V 1.4]
+
+[charaSet W 1098348510 1 アズライール_シルエット]
+[charaFilter W silhouette 00000080]
+
+[sceneSet Z 10000 1]
+[charaScale Z 1.2]
+
+[subCameraOn 4]
+[charaLayer U sub #A]
+[charaLayer S sub #A]
+[charaDepth U 1]
+[charaDepth S 2]
+
+[charaLayer V sub #B]
+[charaLayer T sub #B]
+[charaDepth V 1]
+[charaDepth T 2]
+[charaScale T 1.2]
+[charaScale S 1.2]
+
+[subCameraFilter #A maskEdge cut359_mask10 5 255,255,255,255 0]
+[subCameraFilter #B maskEdge cut359_mask16 5 255,255,255,255 0]
+
+[charaFace S 0]
+[charaFadein S 0.1 50,100]
+[charaFadein U 0.1 300,-250]
+
+[charaFace T 0]
+[charaFadein T 0.1 -70,100]
+[charaFadein V 0.1 -300,-250]
+
+[scene 10001]
+
+[charaFadein H 0 500,-350]
+[charaMove H 500,-700 15.0]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth A 3]
+[charaDepth Z 26]
+
+[fadein black 3.0]
+[wait fade]
+[wt 1.0]
+[bgm BGM_EVENT_161 1.0]
+[wt 0.5]
+
+
+
+＠
+物語は終わった。
+[k]
+
+＠
+[&彼ら:彼女たち]の冒険は人類史から消失した。[r][&彼ら:彼女たち]の結末は風のように姿を消した。
+[k]
+
+＠
+けれど決して意味のないものではない。
+[k]
+
+＠
+多くの英雄、多くの歴史がそうであるように、[r]変化しながらもしっかりバトンは回っていく。
+[k]
+
+＠
+めでたし、めでたし。
+[k]
+
+[messageOff]
+[wt 1.0]
+[effect bit_talk_lens_flare_fs]
+
+[wt 1.5]
+[bgmStop BGM_EVENT_161 2.0]
+[fadeout white 2.0]
+[wait fade]
+
+[effectDestroy bit_talk_lens_flare_fs]
+[charaFadeout H 0.1]
+[scene 10000]
+[wt 2.0]
+
+[fadein white 1.0]
+[wait fade]
+
+＠
+とはいえ、ただし。[r]おそらく、けだし。
+[k]
+
+＠
+地球を元に戻した程度で、[r]何もかも解決した、なんて話はないんじゃない？
+[k]
+
+[messageOff]
+[wt 1.0]
+[cueSe SE_23 23_ade891]
+[wt 3.0]
+[seStop 23_ade891 1.0]
+
+
+[se ad189]
+[wt 1.0]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[branchQuestClear lblClear01 94146201]
+
+[branch lblNotClear01]
+
+
+[label lblClear01]
+[scene 278500]
+[sceneSet J 278500 1]
+[charaScale J 1.3]
+
+[branch lblConf01]
+
+[label lblNotClear01]
+[scene 106000]
+[sceneSet J 106000 1]
+[charaScale J 1.3]
+
+[label lblConf01]
+
+[charaDepth J 2]
+[wt 0.5]
+
+[wipein openEye 0.6 1.0]
+[wait wipe]
+
+[wipeout openEye 0.6 1.0]
+[wait wipe]
+
+[wt 0.1]
+
+[wipein openEye 1.0 1.0]
+[wait wipe]
+
+[seStop ad189]
+[wt 1.0]
+
+＠
+　　西暦2019年　12月31日[r]　　西暦2020年　１月１日
+[k]
+
+＠
+　　カルデア南極基地　マスター専用マイルーム
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgm BGM_MYROOM_4 0.1]
+
+？1：[line 3][&むむ:あれ]？
+
+？！
+
+[wt 0.2]
+
+？1：[line 3][&むむむ:あれれ]？
+
+？！
+
+[wt 0.3]
+
+？1：[line 3][&むむむむ:あれれれ]？
+
+？！
+
+[messageOff]
+[se ad570]
+[wt 1.2]
+[charaFadein J 0.5 100,-230]
+[charaMoveEase J 150,-230 1.2 easeOutSine]
+[wt 1.2]
+
+[se ad8]
+[wt 1.0]
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.4 0,0]
+[wt 0.6]
+
+
+＠マシュ
+突然の来訪、失礼します！[r]怪しい者ではありません、マシュ・キリエライトです！
+[k]
+
+＠マシュ
+[#無礼:ぶれい]を承知で確認に参りました！[r]マスター・[%1]はご在宅でしょうかっ！
+[k]
+
+？1：はい、ご在宅だと思います！
+
+[charaFace A 27]
+
+＠マシュ
+そ、そうですね、見た通りですが良かったです。
+[k]
+
+＠マシュ
+スケジュールの予約、確認をせずに[r]お家を訪ねてしまい、まことに申し訳あり……いえ、
+[k]
+
+[charaFace A 23]
+＠マシュ
+ここは先輩のご自宅ではなく、[r]カルデアの[#先輩のお部屋:マ　イ　ル　ー　ム]でした……
+[k]
+
+＠マシュ
+すみません、[r]深呼吸をして落ち着かせていただきます。
+[k]
+
+[charaMove A 0,3 0.5]
+＠マシュ
+すー……[wt 0.5][charaMove A 0,0 0.5]はー……。[wt 1.0][charaMove A 0,3 0.5][r]すー……[wt 0.5][charaMove A 0,0 0.5]はー……。
+[k]
+
+[charaFace A 0]
+
+＠マシュ
+[line 3]冷静になりました。[r]改めて、カルデア職員のマシュ・キリエライトです。
+[k]
+
+？2：マシュ！？
+
+[charaFace A 1]
+＠マシュ
+はい、マシュ・キリエライトです！[r]さすがマスター、この状況でも既に冷静です！
+[k]
+
+？！
+
+[charaFace A 27]
+
+＠マシュ
+[line 3]と、名前の確認はこれでいいとして。
+[k]
+
+＠マシュ
+先輩の部屋のカレンダーを[r]見せてもらってよろしいでしょうか？
+[k]
+
+＠マシュ
+わたしの部屋では2019年と2020年の表示が[r][#忙:せわ]しなく行き来しているのですが……
+[k]
+
+？1：[&こっち:わたし]の部屋もそう
+
+？！
+
+[messageOff]
+[charaFace A 0]
+[wt 1.5]
+
+
+？1：そもそも、なんで
+
+？！
+
+？1：[&オレ:わたし]、カルデアのマイルームにいる[&んだ:の]？
+
+？！
+
+[messageOff]
+[charaMoveReturn A 0,-3 0.4]
+[wt 0.4]
+[charaMoveReturn A 0,-3 0.4]
+[wt 0.8]
+
+[charaFace A 7]
+
+＠マシュ
+その疑問に完全に同意します。
+[k]
+
+＠マシュ
+南極カルデア基地が残っている筈がありません。[r]いえ、こんな立派な規模で存在している筈がない。
+[k]
+
+＠マシュ
+アニムスフィアの[#冠位指定:グランドオーダー]……[r]ロストベルト・ナンバーゼロは終了しました。
+[k]
+
+＠マシュ
+人類史は2004年から正しいルートに戻り、[r]その結果、南極にカルデア基地は増築されない。
+[k]
+
+＠マシュ
+[%1]先輩がスカウトされて[r]カルデア基地を訪れる事も、
+[k]
+
+＠マシュ
+マスターとして[#縦横無尽:じゅうおうむじん]の大活躍をした事実も[r]無かった事になりました。ガッデムです。
+[k]
+
+？1：マシュ？
+？2：（なんか火力高いな？）
+
+？！
+
+[charaFace A 9]
+
+＠マシュ
+なのに、先輩はマスターとして[r]ご自分の[#部屋:マイルーム]で目を覚ましていて、
+[k]
+
+＠マシュ
+わたしも自分の部屋でパラディーンとして[r]目を覚ました、という状況です。
+[k]
+
+[charaFace A 7]
+
+＠マシュ
+わたしの認識……というか感覚では、[r]昨日まで『カルデアでの出来事』は知らず、
+[k]
+
+＠マシュ
+大学の研究生として暮らしていました。[r]でも今は『大学の研究生』としての出来事を知りません。
+[k]
+
+＠マシュ
+先輩も同じような状況でしょうか？
+[k]
+
+？1：うん、そうみたいだ
+？2：大学生活していた気はする
+
+？！
+
+[messageOff]
+[wt 0.3]
+
+？1：でも今は、マリス・カルデアスと戦った後の自分
+
+？！
+[messageOff]
+[charaFace A 7]
+[charaMoveReturn A 0,-3 0.4]
+[wt 0.4]
+[charaMoveReturn A 0,-3 0.4]
+[wt 0.8]
+[charaFace A 4]
+
+＠マシュ
+やはり。[r]息どころか状況もピッタリ一致です。
+[k]
+
+＠マシュ
+『ファーストサーヴァントは譲れない。』[r]そんな小説を執筆しかねないマシュ・キリエライトです。
+[k]
+
+[charaFace A 0]
+＠マシュ
+でも……年代が2019年……その年は、たしか……[r]東京の南極・北極科学館に行こうとして……
+[k]
+
+[charaFace A 11]
+
+＠マシュ
+東京駅でこの世の地獄を体験したような……
+[k]
+
+？1：もしかして、東京駅で案内を見ていた？
+？2：もしかして、はじめての日本観光だった？
+
+？！
+
+[charaFace A 1]
+
+＠マシュ
+はい、その通りです！[r]思い出せませんが、きっとそう、という気がします！
+[k]
+
+[charaFace A 10]
+
+＠マシュ
+『2019年の[#自分:わたし]』がどんな生活を送って、[r]どんな状況にあったのかは知る由もありませんが、
+[k]
+
+＠マシュ
+『とても充実していた』という実感はあります。[r]先輩もそういったお顔をされています。
+[k]
+
+＠マシュ
+どんな大学生活を送っていたのか、[r]曖昧なイメージだけでもお聞きしたいところですが……
+[k]
+
+[charaFace A 0]
+
+＠マシュ
+今は事態の究明が先ですね。[r]管制室に行きましょう。
+[k]
+
+＠マシュ
+仮にわたしたちしかいないとしても、[r]ここがカルデア基地なのは間違いありません。
+[k]
+
+＠マシュ
+管制室には詳しい[#記録:ロ　グ]があるはずです。[r]まずはそこで事態を把握しましょう。
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_MYROOM_4 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout J 0.1]
+[charaFadeout A 0.1]
+
+[sceneSet H 278700 1]
+[charaScale H 1.05]
+
+[charaDepth H 1]
+[charaDepth K 2]
+[charaDepth B 3]
+[charaDepth L 4]
+[charaDepth P 5]
+[charaDepth C 6]
+[charaDepth M 7]
+[charaDepth R 8]
+[charaDepth Q 9]
+
+[charaDepth O 8]
+[charaDepth D 7]
+
+[charaFadein K 0 0,-200]
+
+[charaScale K 1.0]
+[charaScale L 1.4]
+[charaScale M 1.4]
+[charaScale R 0.8]
+[charaScale C 0.8]
+[charaScale P 0.8]
+[charaScale Q 0.8]
+[charaFace P 0]
+[charaFadein P 0 100,-50]
+[charaFace C 24]
+[charaFadein C 0 400,-50]
+[charaFadein L 0 -50,-220]
+[wt 1.5]
+[charaScale A 1.0]
+
+
+
+
+[pictureFrameTop cut063_cinema]
+[scene 277700]
+
+[charaTalk off]
+
+[fadein black 1.5]
+[se ad518]
+[seVolume ad518 0 0]
+[seVolume ad518 1.0 0.2]
+[charaMoveEase C 350,-50 1.5 easeOutSine]
+[charaMoveEase P 50,-50 1.5 easeOutSine]
+[charaMoveEase L -100,-220 1.5 easeOutSine]
+[wait fade]
+[wt 0.5]
+[charaMoveReturn P 50,-52 0.3]
+[wt 0.3]
+[charaMoveReturn P 50,-52 0.3]
+[wt 1.0]
+
+[charaFace C 23]
+[charaMoveReturn C 350,-55 0.3]
+[wt 0.5]
+
+[se ad59]
+[seVolume ad59 0 0.4]
+[charaMove C 0,-50 1.0]
+[wt 0.6]
+[seStop ad59 1.0]
+[charaFadeout C 0.4]
+[wt 0.6]
+
+[charaFace Q 2]
+[charaFadein M 0.5 50,-220]
+[charaFadein Q 0.5 -400,-50]
+[charaMoveEase M 100,-220 1.0 easeOutSine]
+[charaMoveEase Q -350,-50 1.0 easeOutSine]
+[wt 1.5]
+
+[charaFadeout L 0]
+[charaFadeout P 0]
+[charaFace B 17]
+[charaFadein B 0.1 0,-50]
+
+[se ade235]
+[seVolume ade235 0 0.4]
+[charaFace R 2]
+[charaFadein R 0.4 100,-50]
+[charaMove R 0,-50 1.0]
+[wt 1.0]
+[seStop ade235]
+[wt 0.5]
+[charaFace R 3]
+[charaFace B 3]
+[charaMoveReturn R 0,-55 0.4]
+[wt 0.6]
+[charaMoveReturn R 0,-55 0.4]
+[wt 1.0]
+
+[seStop ad518 1.0]
+
+[charaFadeout M 0.6]
+[charaFadeout R 0.6]
+[charaFadeout Q 0.6]
+[wt 1.5]
+[charaScale C 1.0]
+
+[bgm BGM_EVENT_167 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 17]
+
+＠ムニエル
+カルデアだ！　間違いない、カルデア基地だ！[r]戻ってきた！？　戻ってきたのか俺たち！？
+[k]
+
+[charaFace B 4]
+
+＠ムニエル
+うおぉぉお嬉しーーーーい！[r]けど嬉しくなーーーい！
+[k]
+
+[charaFace B 16]
+
+＠ムニエル
+だって、[r]間違いなく厄介事がやってくるって事だからな！
+[k]
+
+[charaFace B 3]
+
+＠ムニエル
+というかこれ夢か？[r]夢だよな？　誰かそうだと言ってくれ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+
+＠エルロン
+夢の訳ないでしょ。[r]往生際が悪い。現実を受け入れたらムニエル。
+[k]
+
+[charaFace C 0]
+
+＠エルロン
+ほら、あれ見て。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout C 0.6]
+[charaMoveScaleEase K 1.2 2.0 easeOutSine]
+[charaMoveEase K 0,-300 2.0 easeOutSine]
+[charaMoveScaleEase C 1.2 2.0 easeOutSine]
+[charaMoveEase C 0,-80 2.0 easeOutSine]
+[wt 1.0]
+[charaFadein H 0 0,-200]
+[scene 278700]
+[wt 0.4]
+[charaFadeout K 0.6]
+[wt 1.6]
+[charaScale C 1.0]
+
+[subRenderFadeinFSSideR #B 0.4 400,-150]
+[wt 0.4]
+[charaTalk on]
+
+＠T：エルロン
+カルデアスは無いけど、壁面いっぱいのスパコン……[r]トリスメギストスがあるし。
+[k]
+
+＠T：エルロン
+スタッフの数は……シャドウ・ボーダーにいた[r]8人の他にも何人か集まってる。
+[k]
+
+＠T：エルロン
+設備的には人理焼却が終わった後の[r]カルデア基地に近いんじゃないかな。
+[k]
+
+[messageOff]
+[charaTalk S]
+[subRenderFadeinFSSideL #A 0.4 -400,-150]
+[wt 0.4]
+
+＠S：ムニエル
+新宿やアガルタに特異点が発見された時の話か……。[r]ゴルドルフのおっさんが来る前だよな。
+[k]
+
+[charaFace S 3]
+
+＠S：ムニエル
+でもそうなると……
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_EVENT_167 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+[charaFadeout U 0.1]
+[charaFadeout V 0.1]
+[charaFadeout S 0.1]
+[charaFadeout T 0.1]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[scene 277700]
+[pictureFrame]
+
+[imageSet P black_fade_re 1]
+[imageSet Q black_fade_re 1]
+[charaDepth P 24]
+[charaDepth Q 23]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[se ad8]
+[wait fade]
+[wt 1.0]
+
+
+？1：あれれー？
+？2：少ないけどカルデアのみんながいるぞ？
+
+？！
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ムニエル
+[%1]、マシュ！[r]良かった、おまえたちもいるんだな！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ムニエルさん！[r]それにエルロンさんも！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+[wt 1.5]
+[charaFadeout C 0.1]
+[wt 0.5]
+
+？1：みんなも気がついたらカルデアに？
+
+？！
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace C 0]
+[charaFadeinFSL B 0.1 0]
+[charaFadeinFSR C 0.1 2]
+＠ムニエル
+ああ。目覚まし時計？　みたいな音がしたんで[r]目を覚ましたらカルデアだった。
+[k]
+
+＠ムニエル
+その顔だとおまえたちも状況は把握できていないな。[r]俺たちも半分パニック状態なんだが……
+[k]
+
+＠ムニエル
+まあ正直な話、[r]あとの半分はパーティーに来た気分だ。
+[k]
+
+＠ムニエル
+目が覚めた瞬間、[#あの時]の自分に戻ったというか、[r]理解したというか。
+[k]
+
+＠ムニエル
+さっきまでロンドンの時計塔にいた2019年の自分が[r]カルデアの事を思い出したんじゃなくて、
+[k]
+
+＠ムニエル
+純粋に『あの後の続き』にいる気がするんだよ。
+[k]
+
+＠ムニエル
+カルデアスが起こした事件は[r]『無かった事になった』けど、
+[k]
+
+＠ムニエル
+『無かった事』と『いまある事』の中間……[r]その境界にいる、みたいな。
+[k]
+
+＠エルロン
+そうね。中間、というのは正しいかも。[r]カルデア基地の事を思い出したかわりに、
+[k]
+
+＠エルロン
+2019年の生活は思い出せない。
+[k]
+
+＠エルロン
+[#現在:さっき]までのあたしにとってカルデアは過去だけど、[r][#過去:い　ま]のあたしにとってカルデアは現在。
+[k]
+
+＠エルロン
+そして現在のあたしにとって未来はまだ[r]訪れていないものだから『記憶にない』。
+[k]
+
+[charaFace C 4]
+
+＠エルロン
+現在・過去・未来の認識が混線しているというか。[r]ちょっと気持ち悪いわね。
+[k]
+
+？1：[line 3]とにかく、今は『あの後』で、
+？2：見知ったカルデア基地って事[&ですね:だね]
+
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……あの後、というと……
+[k]
+
+＠マシュ
+こうして再会できるのは[r]ここにいる方たちだけ、なんですね……。
+[k]
+
+[bgmStop BGM_EVENT_2 2.0]
+
+＠マシュ
+ホームズさん、シオンさん、ネモさんたち……[r]ゴルドルフ司令官の姿も見当たりません……
+[k]
+
+＠マシュ
+フォウさんも、ダ・ヴィンチちゃんも、[r]ドクターも……
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe SE_24 24_ade1080]
+[wt 0.6]
+[charaTalk O]
+[charaFace O 0]
+[charaFadein O 0.4 1]
+[wt 0.4]
+[seStop 24_ade1080]
+[charaFace D 1]
+[charaFadein D 1.0 1]
+
+＠？？？
+ふっふっふ。パラディーンの名に恥じない、[r]正確な状況把握だ。けど今回はハズレちゃったね。
+[k]
+
+[messageOff]
+[charaFadeout O 1.0]
+[bgm BGM_DRAGONCASTLE_1 0.1]
+[wt 1.2]
+＠ダ・ヴィンチ
+じゃーーん！[r]私ならここにいるよー！
+[k]
+
+[charaFace D 26]
+
+＠ダ・ヴィンチ
+小さくても[#万能力:ばんのうりょく]と可愛さは宇宙一！[r]レオナルド・ダ・ヴィンチ、ここに健在だ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaSet D 1098257300 1 ダ・ヴィンチ]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+
+[wt 1.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+？1：ダ・ヴィンチちゃん！
+
+[charaFace D 0]
+
+＠ダ・ヴィンチ
+やあ。おはようふたりとも。[r]また会えて嬉しいよ。元気だったかい？
+[k]
+
+？2：いつのまに宇宙一に……いや初めから宇宙一か……
+
+[charaFace D 5]
+
+＠ダ・ヴィンチ
+うんうん。この切り返し、[r]間違いなく[%1][&君:ちゃん]だ！
+[k]
+
+[charaFace D 0]
+
+＠ダ・ヴィンチ
+マシュも喜んでくれてありがとう。[r]また会えて嬉しいよふたりとも。元気だったかい？
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 20]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい！　ダ・ヴィンチちゃんもお変わりなく！[r]皆さん同様、無事に地球に帰還されたのですね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_94 1.0]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+もちろん。事件が終わって、[r]みんながそれぞれの人生を過ごせた事を嬉しく思う。[bgmStop BGM_DRAGONCASTLE_1 1.5]
+[k]
+
+[charaFace D 0]
+
+[bgm BGM_MAP_57 0.1]
+
+＠ダ・ヴィンチ
+さて。積もる話はあるけど状況が状況だ。[r]カルデアとして真面目な話を先にしよう。
+[k]
+
+＠ダ・ヴィンチ
+ここは2019年のカルデア基地だ。[r]でも[#実際]の2019年のカルデア基地じゃない。
+[k]
+
+＠ダ・ヴィンチ
+アニムスフィアが所有していた南極の工房は[r]こんなに大きくない。
+[k]
+
+＠ダ・ヴィンチ
+マリスビリー所長が2004年の聖杯戦争に参加して[r]いないから、基地として増築されないからね。
+[k]
+
+[charaFace D 34]
+
+＠ダ・ヴィンチ
+ではこのカルデア基地はなんなのか？[r]そこについては仮説になってしまうんだけど……
+[k]
+
+[charaFace D 23]
+
+＠ダ・ヴィンチ
+ここはキミたちが取り戻した2019年ではなく、[r]それより以前の状態のカルデアだと思われる。
+[k]
+
+＠ダ・ヴィンチ
+我々にとっては既知の、[r]しかし未知の展開、と言っていい。
+[k]
+
+＠ダ・ヴィンチ
+場所も我々の知るカルデアとは異なるが、[r]まったく知らない場所、という訳でもない。
+[k]
+
+＠ダ・ヴィンチ
+先ほど、みんなが慌てている間に[r]摩耗前の状態に戻っているシバを発見してね。
+[k]
+
+＠ダ・ヴィンチ
+基地の外を観測してみた。[r]その結果がこれだ。
+[k]
+
+[messageOff]
+[bgm BGM_MAP_57 1.5 0.5]
+[se ad1]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[scene 278600]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_MAP_57 1.5 1.0]
+[wt 1.5]
+
+？1：これは[line 3]
+？2：人理焼却の時の、隔絶されたカルデア基地だ
+
+？！
+
+[messageOff]
+[scene 277700 0.6]
+[charaFace D 8]
+[charaFadein D 0.6 1]
+[wt 1.2]
+
+
+＠ダ・ヴィンチ
+そう。この基地はいま、外界と隔絶した時空にある。[r]ソロモン王……ゲーティアがいた時間神殿と同じだ。
+[k]
+
+＠ダ・ヴィンチ
+先ほどムニエルが『中間』と言っていたけど、[r]私たちは2019年と2020年の『間』にいる。
+[k]
+
+＠ダ・ヴィンチ
+目が覚める前の[%1][&君:ちゃん]は[r]2020年の[%1][&君:ちゃん]だけど、
+[k]
+
+＠ダ・ヴィンチ
+ここはまだ2019年の12月31日の状態。[r]そして[#この日付は動かない]。
+[k]
+
+＠ダ・ヴィンチ
+トリスメギストスの解析によると、このカルデアは[r]2019年における最後の１秒で止まっているそうなんだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+2019年が終わっていない……ではマリス・カルデアスの[r]停止が確定していない時空、という事ですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 23]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+いや、マリス・カルデアスは消滅している。[r]ただ『その後のゴール』に辿り着いたキミたちが、
+[k]
+
+＠ダ・ヴィンチ
+なんらかの影響で『ゴールの一歩前のマス』に[r]戻されたんだ。
+[k]
+
+[charaFace D 34]
+
+＠ダ・ヴィンチ
+時間が進んで2020年になればゴールのマスに入れる。[r]でもこの空間では時間……というか、
+[k]
+
+＠ダ・ヴィンチ
+人類が時間の経過を明確に知るための[r]『暦』が進まない。
+[k]
+
+[charaFace D 29]
+
+＠ダ・ヴィンチ
+というか、『過去』と『未来』が連動していない。[r]唯一確かな『現在』でさえ日付を進ませない。
+[k]
+
+＠ダ・ヴィンチ
+『おまえたちを先に行かせる事はできない』[r]と言わんばかりにね。
+[k]
+
+[charaFace D 34]
+
+＠ダ・ヴィンチ
+いわば『時間の物言い』だ。[r]特異点とも異聞帯とも違う[#隔離:かくり]領域[line 3]
+[k]
+
+＠ダ・ヴィンチ
+これをトリスメギストスは『P.P.P』と呼称した。
+[k]
+
+[charaFace D 13]
+
+＠ダ・ヴィンチ
+なんの頭文字なのかはトリスメギストスにも[r]不明だそうだよ。
+[k]
+
+＠ダ・ヴィンチ
+いつのまにかそんな単語がライブラリに[r]加わっていたそうだ。
+[k]
+
+＠ダ・ヴィンチ
+その時点で、今の状況は[r]『外部からの介入によるもの』だと言える。
+[k]
+
+[charaFace D 34]
+
+＠ダ・ヴィンチ
+それが悪意ある者でなければいいんだけど。
+[k]
+
+＠ダ・ヴィンチ
+こんな大がかりな事をしでかす者が、[r]善意で動いているとは思いづらいよねぇ……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+つまり、その『誰か』は……
+[k]
+
+？1：もう一度カルデアを[#激務状態:ハ チ ャ メ チ ャ]にしたい、と……？
+？2：今度こそカルデアを[#壊滅状態:メ チ ャ ク チ ャ]にしたい、と……？
+
+？！
+
+[messageOff]
+[charaFace A 6]
+
+[wt 1.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 36]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+うん。結局のところ、[r]我々はこの事態の真相を究明し、解決せざるを得ない。
+[k]
+
+＠ダ・ヴィンチ
+そうしなければキミたちは2020年に戻れないし、[r]なにより、私たちの仕事はまだ終わっていない。
+[k]
+
+[bgmStop BGM_MAP_57 1.5]
+
+＠ダ・ヴィンチ
+だって、このままだと人類は滅亡するからね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい？
+[k]
+
+？1：いまなんて？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk D]
+[charaFace D 31]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+いやあ。何を隠そう、シバで観測した『未来の地球』は[r]一面の荒野になっててさ～。
+[k]
+
+[charaFace D 32]
+
+＠ダ・ヴィンチ
+トリスメギストスに問い合わせたら、[r]これ、ビースト案件なんだって。
+[k]
+
+＠ダ・ヴィンチ
+残業というには大きすぎる問題だけど、[r]いつもの調子でなんとかするしかないって感じ☆
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ほ、ほんとうですか？
+[k]
+
+＠マシュ
+ビースト案件という事は、この時点で[r]ビースト霊基の反応が確認できると？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 36]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+うん、もちろん。いやあ、困ったなぁ。[r]またしても地球は大ピンチだ。
+[k]
+
+[charaFace D 29]
+
+＠ダ・ヴィンチ
+というか、これは明確な挑戦だ。
+[k]
+
+＠ダ・ヴィンチ
+わざわざカルデア基地にキミたちを呼び寄せて、[r]かつてのカルデアを再開させたんだ。
+[k]
+
+＠ダ・ヴィンチ
+あくまで人類を救済・保護対象として見ていた[r]ゲーティアともマリス・カルデアスとも違う。
+[k]
+
+＠ダ・ヴィンチ
+『おまえよりこっちのが強い』なんて、[r]幼稚な対抗意識に他ならない。
+[k]
+
+？1：なるほど
+
+[charaFace D 14]
+＠ダ・ヴィンチ
+そうだとも！[r]私には分かる！　だって同じセンスを感じるからね！
+[k]
+
+？2：なるほど？
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠ムニエル
+そうッスかねぇ。怒りとか義務感とか、[r]そういう理由もあるんじゃないですか？
+[k]
+
+＠ムニエル
+ほら、メタトロニオスの裁判長とか。[r]正義は我にあり、みたいな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+いいや違う！[r]私には分かる！　だって同じセンスを感じるからね！
+[k]
+
+？！
+
+[charaFace D 8]
+
+＠ダ・ヴィンチ
+相手が何者かは不明だが、[r]その脅威は並々ならぬものがある。
+[k]
+
+[charaFace D 5]
+
+＠ダ・ヴィンチ
+でも恐れる事はない。ここはカルデア基地、[r]スタッフもマスターも歴戦の強者だ！
+[k]
+
+[charaFace D 17]
+＠ダ・ヴィンチ
+カルデアのみんなの力を見せてやろうじゃないか。[r]伊達に二度も人類を救ってないんだ、って！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_94 1.5 0.5]
+[charaTalk D,C]
+[charaDepth D 1]
+[charaFadein K 0.5 -50,-200]
+[charaMoveEase K -100,-200 1.0 easeOutSine]
+[charaFace C 16]
+[charaFadein C 0.5 150,0]
+[charaMoveEase C 100,0 1.0 easeOutSine]
+[wt 1.0]
+[charaFadeout D 0.1]
+
+＠エルロン
+[line 6]。
+[k]
+
+[messageOff]
+[charaPut B -350,0]
+[charaMoveEase K 0,-200 0.8 easeOutSine]
+[charaMoveEase C 200,0 0.8 easeOutSine]
+[charaMoveEase B -250,0 0.8 easeOutSine]
+[wt 0.4]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.4]
+[wt 0.5]
+
+＠ムニエル
+なに笑ってんだよ。[r]今の話でおかしいところあったか？
+[k]
+
+＠エルロン
+ダ・ヴィンチがいつになく強気だから。[r]そんなに嬉しいんだなって。
+[k]
+
+[charaFace B 3]
+
+＠ムニエル
+だから、嬉しいって何が？
+[k]
+
+＠エルロン
+こうしてカルデアで再会できた事。[r]まるで、ずっとあたしたちを待ってたみたい。
+[k]
+
+
+[messageOff]
+[charaTalk B]
+[charaFace B 10]
+[wt 0.8]
+[charaFaceFade B 1 0.3]
+[wt 1.5]
+[bgmStop BGM_EVENT_94 1.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+
+[charaFadeout K 0.1]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+
+？1：話は（分からないけど）分かりました
+？2：とにかく原因を見つけるん[&ですね:だね]
+
+？！
+
+[bgm BGM_EVENT_124 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ビースト反応のある人類史の異常地帯……
+[k]
+
+＠マシュ
+どこかに発生しているであろう特異点を探して、[r]これを修復する、という事ですね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+その通り！
+[k]
+
+＠ダ・ヴィンチ
+カルデアスがなくともトリスメギストスと[r]シバがあればレイシフトは実行できるからね！
+[k]
+
+[charaFace D 9]
+＠ダ・ヴィンチ
+問題は『ビーストがいるであろう特異点』が[r]どこにあるかまったく分からない、という事だけど、
+[k]
+
+[charaFace D 36]
+
+＠ダ・ヴィンチ
+これは地道に調査していくしかない。[r]微小な時空の乱れを片っ端から精査していけば、
+[k]
+
+＠ダ・ヴィンチ
+いずれ『隠されている特異点』が明らかになる。[r]そうなればレイシフトで乗り込んで対決さ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+人理保障機関カルデアの平常運転、という事ですね。[r]ですが……
+[k]
+
+[charaFace A 8]
+
+＠マシュ
+人員が足りない、と言わざるを得ません。
+[k]
+
+＠マシュ
+技術顧問はダ・ヴィンチちゃん、[r]管制室にはムニエルさんたち、
+[k]
+
+＠マシュ
+現地調査員には先輩とわたし、が担当できますが、[r]他の役職……
+[k]
+
+＠マシュ
+とくにカルデア全体の指揮を執るリーダーが不在です。[r]これは他の職務と兼任できるものではありません。
+[k]
+
+＠マシュ
+ゴルドルフ司令官は『このカルデア』には[r]おられないようですし……。
+[k]
+
+？1：たしかに
+？2：リーダー……つまり……
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_124 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth D 2]
+[charaDepth T 3]
+[charaDepth S 4]
+[charaDepth A 5]
+
+[charaLayer V normal]
+
+[charaLayer D sub #A]
+[charaLayer A sub #A]
+[charaLayer T sub #A]
+
+[charaScale A 1.0]
+[charaScale D 1.0]
+[charaScale S 1.0]
+[charaScale T 1.0]
+
+[charaFace D 14]
+[charaFace A 18]
+[charaFace S 2]
+[charaFace T 15]
+
+[charaFadeinFSL S 0 -300,250]
+[charaFadein T 0 -100,250]
+[charaFadein A 0 200,250]
+[charaFadeinFSR D 0 400,250]
+[charaFadein U 0 50,-200]
+
+[subCameraFilter #A maskEdge cut359_mask08 3 255,255,255,255 0]
+[subRenderScale #A 1.01]
+[wt 0.5]
+
+＠？？？
+話は聞かせてもらったわ！
+[k]
+
+＠？？？
+どうやら、いえ、どう考えても[r]わたしの力が必要のようね！
+[k]
+
+[messageOff]
+[charaMoveEaseFSL S -350,250 0.4 easeOutSine]
+[charaMoveEase T -150,250 0.4 easeOutSine]
+[charaMoveEase A 150,250 0.4 easeOutSine]
+[charaMoveEaseFSR D 350,250 0.4 easeOutSine]
+[charaMoveEase U 0,-200 0.4 easeOutSine]
+[subRenderFadein #A 0.4 0,-300]
+
+[wt 2.4]
+
+[subRenderFadeout #A 0.4]
+[charaMoveEaseFSL S -400,250 0.4 easeOutSine]
+[charaMoveEase T -200,250 0.4 easeOutSine]
+[charaMoveEase A 100,250 0.4 easeOutSine]
+[charaMoveEaseFSR D 300,250 0.4 easeOutSine]
+[charaMoveEase U -50,-200 0.4 easeOutSine]
+[wt 0.6]
+
+[charaFadeout A 0]
+[charaFadeout D 0]
+[charaFadeout S 0]
+[charaFadeout T 0]
+[charaFadeout U 0]
+
+
+
+[cueSe SE_25 25_ade1262]
+[seVolume 25_ade1262 0 0.3]
+[charaDepth E 6]
+[charaDepth V 5]
+[charaDepth A 4]
+[charaScale E 1.4]
+[charaScale V 1.4]
+[charaTalk E]
+
+[charaFace E 13]
+[charaFadein E 0.4 0,30]
+[charaFadein V 0.4 0,-350]
+[charaMoveScaleEase E 1.2 1.0 easeOutCubic]
+[charaMoveScaleEase V 1.2 1.0 easeOutCubic]
+[charaMoveEase E 0,0 1.0 easeOutCubic]
+[charaMoveEase V 0,-290 1.0 easeOutCubic]
+[wt 3.0]
+[bgm BGM_CHALDEA_1 0.1]
+
+＠オルガマリー
+地球を救ったくらいでカルデアの不良債権が[r]処理できると思ったの？
+[k]
+
+[charaLayer D normal]
+[charaLayer A normal]
+[charaLayer T normal]
+[charaLayer S normal]
+[charaLayer U normal]
+[charaFace A 3]
+[charaFadein A 0 1]
+
+＠オルガマリー
+だとしたら一流のコメディアンね！[r]常に冷静なわたしを笑い殺すつもりかしら！
+[k]
+
+[messageOff]
+[charaTalk A,E]
+[charaFadeout E 0.4]
+[charaFadeout V 0.4]
+[wt 0.6]
+
+＠マシュ
+オ……オルガマリー所長！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale E 1.0]
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+[wt 1.0]
+
+？1：どどどどういうこと！？
+
+[charaFace E 8]
+
+＠オルガマリー
+そうそう。そういうリアクションでいいの。[r]こういう時は素直に驚きなさい。よくて？
+[k]
+
+？2：所長成分より大統領成分のが多そう！
+
+[charaFace E 10]
+
+＠オルガマリー
+常に冷静なわたし、と言ったでしょう！？[r]大統領なんて存在しなかった、いいわね！？
+[k]
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ムニエル
+マジでオルガマリー所長だ……！[r]生きてたんですか！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+[FFFFFF]？[-]　貴方、ムニエルじゃない。万年倉庫番の。[r]管制室は嫌いじゃなかったの？
+[k]
+
+[charaFace E 0]
+
+＠オルガマリー
+そういえば、[r]ロマニは『優秀な人材』だと言ってたわね。
+[k]
+
+＠オルガマリー
+見たところ[#管制室:こ　　こ]の配属になっているけど、[r]わたしが所長だった時はサボタージュしていたって事？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠ムニエル
+げ。いや、俺はたまたま通りかかっただけの[r]暇人で、優秀な人材とか縁がないっていうか……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エルロン
+追い詰められて本気だしたんです、そいつ。[r]今じゃ立派なレイシフトオペレーター。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+なんだ、それなら正式に[#配属:はいぞく]替えをしましょう。[r]これからは24時間体制でシバのモニターをするように。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠ムニエル
+うぇぇ一番[#就:つ]きたくないセクションだぁ！[r]それ、寝るなって事ですよね！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+工夫しなさい、と言っているの。[r]シバのモニターは今は二人だけでしょ。
+[k]
+
+
+＠オルガマリー
+だから人員を増やすの。[r]今は緊急事態、かつ異常事態なんだから。
+[k]
+
+＠オルガマリー
+レイシフトぐらいは万全の状態で、[r]マスターを安全に送り出してあげたいでしょう？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth E 1]
+[charaDepth K 2]
+[charaDepth B 3]
+[charaDepth C 4]
+[charaDepth A 5]
+[charaFadein K 0.4 50,-220]
+[charaFace C 15]
+[charaFace B 10]
+[charaFadein C 0.4 200,0]
+[charaFadein B 0.4 -300,0]
+[charaMoveEase K 100,-220 1.0 easeOutSine]
+[charaMoveEase C 250,0 1.0 easeOutSine]
+[charaMoveEase B -250,0 1.0 easeOutSine]
+[wt 2.6]
+[charaFadeout K 0.5]
+[charaFadeout C 0.5]
+[charaFadeout B 0.5]
+[wt 0.8]
+
+[charaFace E 17]
+
+＠オルガマリー
+さて。そこで固まっている二人にも[r]説明の必要があるわね。
+[k]
+
+[messageOff]
+[charaFadein K 0.4 -50,-220]
+[charaFace A 3]
+[charaFadein A 0.4 150,0]
+[charaMoveEase K -100,-220 1.0 easeOutSine]
+[charaMoveEase A 100,0 1.0 easeOutSine]
+[wt 1.5]
+
+？1：（全力でうんうん、と頷く）
+
+？！
+
+[messageOff]
+[cameraMove 0.2 0,5 1.01]
+[wt 0.2]
+[cameraMove 0.2 0,0 1.01]
+[wt 0.2]
+[cameraMove 0.2 0,5 1.01]
+[wt 0.2]
+[cameraMove 0.2 0,0 1.01]
+[wt 1.0]
+[charaFadeout A 0.6]
+[charaFadeout K 0.6]
+[wt 1.0]
+
+[charaFace E 0]
+＠オルガマリー
+次元孔に飲まれて完全に消滅したはずの[r]わたしがなぜ生きているのか。
+[k]
+
+＠オルガマリー
+わたしがいるのなら、同じく[#証明宇宙:あ　　そ　　こ]で消滅した[r]仲間たちも戻ってきていいのではないか。
+[k]
+
+[charaFace E 17]
+
+＠オルガマリー
+もっともな疑問、そして探究心よ。[r]カルデアのスタッフはそうでないと。
+[k]
+
+＠オルガマリー
+その向上心に[#免:めん]じて答えてあげる。[r]なぜわたしが生きているか、それは[line 3]
+[k]
+
+[bgmStop BGM_CHALDEA_1 1.5]
+
+＠オルガマリー
+それは[line 3][wt 1.5][charaFace E 18][r]えーと[line 3]
+[k]
+
+[bgm BGM_EVENT_237 0.1]
+
+[charaFace E 16]
+
+＠オルガマリー
+なぜなのかしらね！？[r]わたしにもぜんっぜん分からない！　なんか恐くない！？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+？1：分からない[&のかよ:んだ]ーーー！
+？2：たしかに恐怖案件ですけどーーー！？
+
+？！
+
+[charaFace A 27]
+
+＠マシュ
+ですが間違いなく本物のオルガマリー所長です！[r]いま確信が持てました！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+それどういう意味かしら？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_237 1.5]
+
+[charaTalk D]
+[charaFace D 22]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+ごめん、話の途中だけどいいかな。[r]失礼ながらスキャンさせてもらったよオルガマリー。
+[k]
+
+[bgm BGM_EVENT_71 0.1 0.8]
+
+＠ダ・ヴィンチ
+マシュの直感通り、彼女は本物の[r]オルガマリー・アニムスフィアだと判明した。
+[k]
+
+＠ダ・ヴィンチ
+ただしトリスメギストスはこう説明している。[r]彼女の生体反応は、
+[k]
+
+＠ダ・ヴィンチ
+2015年のオルガマリーであり、[r]2017年のオルガマリーでもある、と。
+[k]
+
+＠ダ・ヴィンチ
+つまりカルデアの所長だったキミと、[r][#その後]のキミが両立している状態だ。
+[k]
+
+＠ダ・ヴィンチ
+肉体についての言及は後にするとして。[r]キミの精神はどっちなのかな、オルガマリー。
+[k]
+
+＠ダ・ヴィンチ
+人類なのか。それとも地球人類を罰するために[r]現れたエイリアンなのか。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 1.0]
+[bgmStop BGM_EVENT_71 2.0]
+
+？1：……どっちなんですか？
+
+[charaFace E 17]
+
+＠オルガマリー
+…………。
+[k]
+
+？2：大統領なんですか？
+
+[charaFace E 11]
+
+＠オルガマリー
+…………。
+[k]
+
+？！
+
+[charaFace E 3]
+＠オルガマリー
+……はあ。[r]まったく、馬鹿な事を言わないで。[bgm BGM_TITLE_5 0.1]
+[k]
+
+[charaFace E 0]
+
+＠オルガマリー
+たとえどんな状態であろうと、[r]わたしはカルデアの所長です。
+[k]
+
+＠オルガマリー
+貴方たちが[#自:みずか]らの力で勝ち取ったゴールを[r]取り戻すために、
+[k]
+
+＠オルガマリー
+貴方たちにたいへんな仕事を押しつけてしまった[r]責任をとるために、
+[k]
+
+＠オルガマリー
+こうしてもう一度、目を覚ました。[r]わたしはそう考えています。
+[k]
+
+[charaFace E 3]
+
+＠オルガマリー
+……ええ。奇跡のような[r]都合のいい話だとは分かっているけど……
+[k]
+
+[charaFace E 0]
+
+＠オルガマリー
+カルデア所長として最善を尽くして、[r]貴方たちをこの隔離領域から解放する。
+[k]
+
+＠オルガマリー
+それが今のわたしの存在理由です。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠マシュ
+オルガマリー所長……
+[k]
+
+？1：そういう事なら
+？2：何も分からない同士、[&がんばりましょう:がんばろう]！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠オルガマリー
+ふっ。貴方ほどではないけどね。[r]わたしの知能を[#以:もっ]てすれば、すぐに原因は特定できるわ。
+[k]
+
+
+＠オルガマリー
+そのための新体制を整えましょう。[r]わたしが所長。ダ・ヴィンチは技術顧問。
+[k]
+
+＠オルガマリー
+管制室スタッフはエルロン、ムニエルを[r]セクションリーダーにして、
+[k]
+
+＠オルガマリー
+マスターは断然[%1]。[r]そのサポートは当然マシュ。
+[k]
+
+＠オルガマリー
+そして経営顧問は[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_TITLE_5 1.0]
+[charaFadeTime Z 0.4 0.7]
+[wt 1.0]
+[charaFace E 3]
+
+＠オルガマリー
+[FFFFFF]？[-]　照明の明るさ、落ちた？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[cueSe SE_24 24_ad1351]
+[seVolume 24_ad1351 0 0]
+[seVolume 24_ad1351 1.0 0.5]
+[wt 1.5]
+[seStop 24_ad1351 0.4]
+
+＠？？？
+[line 3]経営顧問が空いているのか。[r]では私が受け持とう。
+[k]
+
+＠？？？
+オルガマリー・アニムスフィア。[r]おまえの首を断つ機会を逃さないために。
+[k]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+！？　誰、ぶっそうな発言をしているのは！？[r][#脅:おど]かしっこはなしよ、[%1]！？
+[k]
+
+[messageOff]
+[charaScale G 1.3]
+[charaScale W 1.3]
+[charaTalk off]
+[charaDepth E 3]
+[charaDepth K 10]
+[charaDepth W 18]
+[charaDepth G 17]
+[charaFadein K 0.5 50,-250]
+[charaMoveEase K 100,-250 1.0 easeOutSine]
+
+[cueSe SE_24 24_ad1351]
+[wt 1.5]
+
+[charaFace A 18]
+[charaFace D 25]
+[charaFace C 24]
+[charaFace B 2]
+
+[charaFadeinFSR A 0 180,0]
+[charaFadeinFSR D 0 380,0]
+[charaFadeinFSL C 0 -220,0]
+[charaFadeinFSL B 0 -420,0]
+
+[charaFace W 0]
+[charaFadein W 0.4 1]
+[seStop 24_ad1351 0.4]
+[wt 1.0]
+[charaFace G 0]
+[charaFadein G 1.0 0,0]
+[wt 1.0]
+[charaFadeout Z 1.0]
+[charaFadeout W 1.0]
+[wt 1.2]
+
+[bgm BGM_BATTLE_313 0.1]
+
+＠G：？？？
+[%1]ではない。[r]今の[#宣告:せんこく]は[#我:わ]が口より発したもの。
+[k]
+
+＠G：？？？
+ビーストの[#兆:きざ]しを知り、地獄よりこの領域に到達した。[r]告死の剣、ハサン・サッバーハである。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout K 0.5]
+[charaFadeout G 0.5]
+[wt 2.0]
+
+[charaFadein K 0.4 0,-300]
+[charaFadein G 0.4 0,0]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+
+[charaFace E 16]
+
+？1：この独特の空気[line 3]山の翁だ！
+？2：でもなんか違うーーーー！？
+
+？！
+
+[charaFadeout K 0.4]
+[charaFadeout G 0.4]
+[wt 0.6]
+[charaScale G 1.0]
+
+＠オルガマリー
+[%1]の知り合い！？[r]ははは初めましてなのかしら！？
+[k]
+
+＠オルガマリー
+でも物騒だから帰ってもらって！[r]だって顔、顔がないじゃない！
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_313 2.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet W 1098348500 1 アズライール_演出用]
+[charaScale W 1.3]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 1.5]
+[cueSe SE_23 23_ade908]
+[seVolume 23_ade908 0 0]
+[seVolume 23_ade908 1.0 0.5]
+[charaCrossFade G 1098348500 3 0.5]
+[wait charaCrossFade G]
+[seStop 23_ade908 1.5]
+[wt 1.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+
+＠G：？？？
+……誤解を生んだようだ。言い直そう。[r]この身は『山の翁』には至っていない。
+[k]
+
+＠G：？？？
+ハサン・サッバーハの名も[r]地獄に身を置く今は忘れている。
+[k]
+
+＠G：？？？
+我が名はアズライール。
+[k]
+
+＠アズライール
+ビースト覚醒の兆しと、[r]カルデアの所業を見定めるため、
+[k]
+
+＠アズライール
+冠位を代表して監督として赴任した。[r]反対意見は口にしない方が[#首:み]のためと忠告する。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaDepth Z 2]
+[charaFadeTime Z 0.2 0.5]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+（勝手に人事を決めないで、[r]　とか言ったら死ぬわね、わたし！）
+[k]
+
+[charaFadeout Z 0.2]
+[charaFace E 6]
+
+＠オルガマリー
+[%1]！　マシュ！　ダ・ヴィンチ！
+[k]
+
+[charaFace E 16]
+
+＠オルガマリー
+あんな事いってるけど、どう思う！？[r]イヤなら反対していいのよ、全力で！
+[k]
+
+？1：勇気ある発言、サンクス！
+？2：でも全力で所長に譲ります！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+
+＠マシュ
+そ、そうですね、まずは[r]アズライールさんのお話をもっと聞きましょう！
+[k]
+
+＠マシュ
+なぜオルガマリー所長の[r]お首にご執心なのでしょうか！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠アズライール
+おまえたちの方が詳しいはずだが。
+[k]
+
+＠アズライール
+オルガマリー・アニムスフィアには[r]ビースト容疑がかけられている。
+[k]
+
+＠アズライール
+ビースト覚醒の兆しが見えた以上、[r]もっとも[#疑:うたが]わしいのはその首だ。
+[k]
+
+＠アズライール
+故に、その片鱗が見えた時点で断ち切る。
+[k]
+
+＠アズライール
+また、この事態の究明を止めた時点で、[r]おまえたち全員の首を断ち切る。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaFace D 26]
+[charaFace A 18]
+[charaFace E 9]
+[charaFadeinFSL E 0.1 0]
+[charaFadeinFSR D 0.1 2]
+[charaFadein A 0.1 1]
+[wt 2.0]
+
+
+？1：カルデアにいる全員の首を[line 3]！？
+？2：オルガマリー所長だけじゃなくて！？
+
+？！
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠アズライール
+……同情はする。[r]人理とは常に非情。だからこそ揺るがない。
+[k]
+
+＠アズライール
+『この事態を解決しようとしないこと』。[r]それはビースト覚醒に手を貸したと同義だからだ。
+[k]
+
+＠アズライール
+ここにいる者はみな人理を乱す容疑者。
+[k]
+
+＠アズライール
+身の潔白を証明したければ特異点を探し、[r]これを消去する他ない。
+[k]
+
+[charaFace G 4]
+
+＠アズライール
+……フッ。[r]そう首に手を置いて[#庇:かば]うな。
+[k]
+
+[messageOff]
+[charaDepth G 1]
+[charaDepth K 2]
+[charaDepth W 3]
+[charaFadein K 0.5 0,-300]
+[charaFace W 4]
+[charaFadein W 0.5 0,0]
+[wt 0.5]
+
+＠アズライール
+私の赴任期間はそう長くはない。[r]地獄を空けられるのは１年といったところだ。
+[k]
+
+[charaFadeout G 0.1]
+＠アズライール
+私が消えるまでにビーストを発見し、これを倒せ。[r]それだけの話だ。
+[k]
+
+＠アズライール
+できなければ私が[#ここで解決する]。
+[k]
+
+[charaFace W 1]
+
+＠アズライール
+まさしく、胸[#躍:おど]る展開だ。[r]冠位を受けてからこんなに楽しい事はない。
+[k]
+
+＠アズライール
+ようは今までと同じだ、カルデアの友たちよ。[r]私も経営顧問として尽力する。
+[k]
+
+＠アズライール
+一緒に手を取り合って、[r]ビースト候補を抹殺しよう。
+[k]
+
+[messageOff]
+[charaScale P 2.0]
+[charaScale Q 2.0]
+[cueSe SE_24 24_ade1139]
+[seVolume 24_ade1139 0 0.3]
+[seStop 24_ade1139 1.2]
+[charaMoveScaleEase K 1.5 0.6 easeOutQuint]
+[charaMoveScaleEase W 2.0 0.6 easeOutQuint]
+[charaMoveEase K 0,-400 0.6 easeOutQuint]
+[charaMoveEase W 0,100 0.6 easeOutQuint]
+[charaFadein P 0.5 0,400]
+[charaFadein Q 0.5 0,-890]
+[charaMoveEase P 0,300 0.6 easeOutQuint]
+[charaMoveEase Q 0,-790 0.6 easeOutQuint]
+[wt 0.8]
+
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaFadeout K 0.1]
+[charaFadeout W 0.1]
+[wt 0.1]
+
+[sceneSet P 10000 1]
+[sceneSet Q 10000 1]
+[charaDepth P 24]
+[charaDepth Q 23]
+
+[charaFadein P 0 0,730]
+[charaFadein Q 0 0,-730]
+[charaFace E 9]
+[charaFadein E 0.1 0,-20]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaShake E 0.05 3 3 0.5]
+[wt 1.2]
+
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout E 0.1]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[bgmStop BGM_EVENT_77 2.0]
+[wait wipe]
+
+＠アズライール
+抹殺しよう。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+なんでそこでわたしの首をマジマジと見つめるのよ！？
+[k]
+
+[charaFaceFade E 15 0.2]
+[bgm BGM_CHALDEA_2 0.1]
+
+＠オルガマリー
+ああもう、なんなのこれ！？[r]わたしの所長生活、どうなっちゃうのーーー！？
+[k]
+
+？1：本当にどうなっちゃうんでしょうね……
+？2：大丈夫！　所長の首は、[&オレ:わたし]たちが守る！
+
+？！
+
+[messageOff]
+[wt 2.0]
+[bgmStop BGM_CHALDEA_2 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+[scene 10000]
+[wt 1.0]
+[cueSe SE_23 23_ade891]
+
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.0]
+[seStop 23_ade891 1.0]
+
+＠
+かくして[&彼ら:彼女たち]の活動は再開された。
+[k]
+
+＠
+すべての課題が終わった後の放課後。[r]あるいは祭りの後の後夜祭。
+[k]
+
+＠
+言い方はなんでもいい。[r]重要なのは『まだ人理は安定していない』ということ。
+[k]
+
+＠
+用意できたのは僅かな時間。[r]『平和な未来』に踏み出してしまう最後の１秒。
+[k]
+
+＠
+この１秒に全てを賭けよう。[r]だって[line 3]
+[k]
+
+[messageOff]
+[wt 0.8]
+
+＠
+[#隙間:すきま]があればこじ開けたくなるのが、[r]愉快な人類の[#本性:サ　ガ]っていうものでしょう？
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
