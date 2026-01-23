@@ -1,0 +1,492 @@
+
+＄94-15-28-02-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 5059001 1 花咲翁]
+[charaSet B 10020000 1 フローラ]
+[charaSet C 1098342900 1 ツチノコ]
+[charaSet D 1098342900 1 ツチノコ_演出用1]
+[charaSet E 1098343000 1 ツチノコ]
+[charaSet F 1098343000 1 ツチノコ_演出用1]
+[charaSet G 1098343100 1 ツチノコ]
+[charaSet H 1098257310 1 ダ・ヴィンチ]
+[charaSet I 2003001 1 ロビンフッド]
+[charaSet J 1098345300 1 エレシュキガル・オルタ]
+[charaSet K 5051001 1 張角]
+[charaSet L 1098343200 1 怪奇植物_演出用1]
+[charaSet M 1098343200 1 怪奇植物_演出用2]
+[charaSet N 1098343200 1 怪奇植物_演出用3]
+
+[charaSet R 1098343300 1 光る巨大蛇]
+[charaSet S 1098343300 1 光る巨大蛇_演出用2]
+[charaScale S 1.4]
+
+[charaSet T 98115000 1 エフェクト用]
+[charaScale T 1.3]
+[charaSet U 98115000 1 エフェクト用]
+[charaScale U 2.0]
+
+[sceneSet V 270703 1]
+[charaScale V 1.2]
+[sceneSet W 271102 1]
+[charaScale W 1.4]
+[sceneSet X 271102 1]
+[charaScale X 1.4]
+[sceneSet Y 271102 1]
+[charaScale Y 1.5]
+
+[charaSet Z 98115000 1 通信エフェクト用]
+[charaPut Z 2500,2500]
+[charaEffect Z bit_talk_10_LowLevel]
+
+[charaTalk depthOff]
+[charaDepth V 1]
+[charaDepth B 2]
+[charaDepth C 3]
+[charaDepth W 4]
+[charaDepth X 5]
+[charaDepth D 6]
+[charaDepth E 7]
+[charaDepth F 8]
+[charaDepth G 9]
+[charaDepth H 10]
+[charaDepth I 11]
+[charaDepth J 12]
+[charaDepth K 13]
+[charaDepth N 14]
+[charaDepth M 15]
+[charaDepth L 16]
+[charaDepth R 17]
+[charaDepth T 18]
+[charaDepth Y 19]
+[charaDepth S 20]
+[charaDepth U 21]
+[charaDepth Z 11]
+
+[subCameraOn 3]
+[charaLayer E sub #A]
+[charaLayer D sub #A]
+[charaLayer W sub #A]
+
+[charaLayer G sub #B]
+[charaLayer F sub #B]
+[charaLayer X sub #B]
+
+[charaLayer S sub #C]
+[charaLayer Y sub #C]
+[charaLayer U sub #C]
+
+[subCameraFilter #A maskEdge cut359_mask06 4 125,125,125,255 0]
+[subCameraFilter #B maskEdge cut359_mask06 4 125,125,125,255 0]
+[subCameraFilter #C normal]
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+[charaTalk E,D]
+[charaFace E 3]
+[charaFace D 2]
+[charaFadein E 0 0,350]
+[charaFadein D 0 230,350]
+[charaFadein W 0 150,240]
+[charaFace G 3]
+[charaFace F 2]
+[charaFadein F 0 30,350]
+[charaFadein G 0 -200,350]
+[charaFadein X 0 -150,200]
+[charaFace S 0]
+[charaFadein S 0 0,300]
+[charaFadein Y 0 0,-120]
+
+[scene 270703]
+
+[pictureFrame cut063_cinema]
+
+[charaFadein V 0 -20,-380]
+[charaMove V 20,-380 7.0]
+[se ad510 1.0 0.4]
+[fadein black 1.0]
+[wait fade]
+
+[wt 4.5]
+
+[fadeout black 1.0]
+[seStop ad510 1.0]
+[wait fade]
+
+[pictureFrame]
+[charaFadeout V 0.1]
+[wt 1.0]
+
+[scene 271102]
+
+[bgm BGM_BATTLE_62 0.1]
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk off]
+[charaFadein L 0.1 1]
+[charaFadeinFSR M 0.1 256,0]
+[charaFadeinFSL N 0.1 -256,0]
+[wt 0.1]
+
+[se ade440]
+[charaEffect N bit_shot_01]
+[wt 0.2]
+[cueSe Battle bac145]
+[charaShake N 0.03 3 3 0.8]
+[charaEffect M bit_shot_01]
+[charaEffect N bit_talk_13]
+[wt 0.2]
+[cueSe Battle bac146]
+[charaShake M 0.03 3 3 0.8]
+[charaEffect L bit_shot_01]
+[charaEffect M bit_talk_13]
+[wt 0.2]
+[cueSe Battle bac147]
+[charaShake L 0.03 3 3 0.8]
+[charaEffect L bit_talk_13]
+[wt 0.8]
+[se bac31]
+[cueSe SE_21 21_ade661 0.5]
+[effect bit_talk_taoism]
+[wt 1.0]
+[se ad1038]
+[fowardEffect bit_talk_windstorm]
+[wt 0.5]
+[charaShake L 0.03 3 3 1.5]
+[charaShake M 0.03 3 3 1.5]
+[charaShake N 0.03 3 3 1.5]
+[wt 1.0]
+[cueSe SE_24 24_ad1451 0 0.6]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[effect bit_talk_14]
+[fowardEffectStop bit_talk_windstorm]
+[wt 1.1]
+
+[bgmStop BGM_BATTLE_62 2.0]
+
+[se ad42]
+[charaSpecialEffect N enemyErasure 1 1.5]
+[wt 0.2]
+[charaSpecialEffect M enemyErasure 1 1.5]
+[wt 0.2]
+[charaSpecialEffect L enemyErasure 1 1.5]
+[wait charaSpecialEffect L]
+[wt 1.5]
+
+[charaPut L 2000,2000]
+[charaPut M 2000,2000]
+[charaSet L 1098343200 1 怪奇植物_演出用1]
+[charaSet M 1098343200 1 怪奇植物_演出用3]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠花咲翁
+ふう。[r]今日はこんなものかな？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+
+＠フローラ
+いえ、待ってください。[r]何か……植物以外の、気配が……？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠ツチノコ
+……ちー？
+[k]
+
+[messageOff]
+[charaFace C 2]
+[charaEffect C bit_talk_comic_shock -10,-120]
+[cueSe SE_22 22_ade725]
+[wt 0.5]
+[charaEffectStop C bit_talk_comic_shock]
+[cueSeStop SE_22 22_ade725 0.2]
+[wt 0.2]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace C 3]
+
+＠ツチノコ
+ちちー！
+[k]
+
+[messageOff]
+[charaFadeout C 0.4]
+[se ade255 0.5]
+[cueSe SE_23 23_ad1314 0 0.5]
+[wt 0.5]
+
+[charaTalk off]
+[subRenderFadein #A 0.3 0,-500]
+[charaMoveEase E 100,350 0.3 easeOutSine]
+[charaMoveEase D 330,350 0.3 easeOutSine]
+[charaMoveEase W 250,240 0.3 easeOutSine]
+
+[subRenderFadein #B 0.3 0,-260]
+[charaMoveEase F -70,350 0.3 easeOutSine]
+[charaMoveEase G -300,350 0.3 easeOutSine]
+[charaMoveEase X -250,200 0.3 easeOutSine]
+[wt 1.0]
+
+[se ade255 0.5]
+[cueSe SE_23 23_ad1314 0 0.5]
+[charaFadeout E 0.4]
+[charaFadeout D 0.4]
+[charaFadeout F 0.4]
+[charaFadeout G 0.4]
+[charaMove F -220,350 0.4]
+[charaMove G -450,350 0.4]
+[charaMove E 250,350 0.4]
+[charaMove D 480,350 0.4]
+[wt 0.8]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_81 0.5 0.5]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[wt 1.0]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_81 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+？1：ツチノコたちが、急に……
+？2：ここから逃げ出してる……？
+？！
+
+[charaTalk on]
+[charaPut Z 1]
+[charaTalk H]
+[charaFace H 26]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+[line 3]っ！
+[k]
+
+[charaFace H 14]
+
+＠ダ・ヴィンチ
+警戒してくれ、みんな！[r]何かが近付いてくるぞ！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[wt 1.5]
+
+[cueSe SE_23 23_ad1314]
+[charaTalk off]
+[charaFadeinFSL L 0.4 -450,0]
+[charaFadeinFSR M 0.4 450,0]
+[charaMoveFSL L -400,0 0.5]
+[charaMoveFSR M 400,0 0.5]
+[wt 2.0]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+
+＠ロビンフッド
+あらら。[r]お代わりが来ちまったか。
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.1 1]
+
+＠エレシュキガル・オルタ
+……！？　それだけじゃないわ！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFadeinFSL L 0.1 -400,0]
+[charaFadeinFSR M 0.1 400,0]
+[wt 0.5]
+
+[charaPut T 0,100]
+[charaPut U 0,570]
+[charaEffect T bit_talk_under_light]
+[charaEffect U bit_talk_under_light]
+[cueSe SE_23 23_ad1285 0.5 0.3]
+[wt 2.5]
+
+[cameraMoveEase 0,30 1.0 easeOutCubic 1.3]
+[seStop ad14 1.0]
+[wt 0.5]
+
+[se ad190]
+[subRenderFadein #C 0.5 0,0]
+[wt 0.5]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaPut T -2000,-2000]
+
+[charaFace K 5]
+[charaFadein K 0.1 1]
+[cameraHome 0.1]
+[wt 1.0]
+
+[bgm BGM_MAP_116 0.1]
+
+[charaMoveEase S 0,-20 2.5 easeInOutQuart]
+[charaMoveEase Y 0,-440 2.5 easeInOutQuart]
+[charaMoveEase U 0,250 2.5 easeInOutQuart]
+[wt 1.0]
+[se ad460]
+[wt 3.0]
+
+[cueSeStop 23_ad1285 0.6]
+[subRenderFadeout #C 0.4]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk K]
+
+＠張角
+ぬぅっ、こやつは！？
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠花咲翁
+ふむ。遠くに何か別の気配を感じたことは、[r]今までにもあった気がするよ。
+[k]
+
+＠花咲翁
+[#見:まみ]えるのは初めてだけど、[r]その気配の正体がこれ、ということかな。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFadeinFSL L 0.1 -400,0]
+[charaFadeinFSR M 0.1 400,0]
+[charaFadein R 0.1 1]
+[charaPut T 0,100]
+
+[cueSe SE_23 23_ade874 0.1 1.0]
+[wt 1.5]
+[cueSeStop 23_ade874 0.3]
+[wt 1.0]
+
+？1：（身体だけじゃなくて……）
+？2：（周りの地面まで光ってる……？）
+？！
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout R 0.1]
+[charaPut T -2000,-2000]
+[charaPut U -2000,-2000]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+
+＠フローラ
+蛇は、花の根元の涼しい日陰で[#微睡:まどろ]んでくれる、[r]花園のお友達です。
+[k]
+
+＠フローラ
+ツチノコさんたちは、わたしの花畑を[r]好きでいてくれてるようですが……
+[k]
+
+[charaFace B 13]
+
+＠フローラ
+あちらの光る蛇は、どうやら、[r]あの[#昏:くら]い植物たちのほうがお好みのようですね。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFadeinFSL L 0.1 -400,0]
+[charaFadeinFSR M 0.1 400,0]
+[charaFadein R 0.1 1]
+[charaPut T 0,100]
+[charaPut U 0,-50]
+
+[cueSe SE_22 22_adm90]
+[wt 1.5]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout R 0.1]
+[charaPut T -2000,-2000]
+[charaPut U -2000,-2000]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠ロビンフッド
+来るぜ！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_MAP_116 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

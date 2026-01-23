@@ -1,0 +1,745 @@
+
+＄94-15-28-00-2-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 1098346800 1 マシュ]
+[charaSet B 1098346900 1 オルガマリー]
+[charaSet C 1098257310 1 ダ・ヴィンチ]
+[charaSet D 1098257220 1 エレシュキガル・オルタ]
+[charaSet E 2003001 1 ロビンフッド]
+[charaSet F 5051001 1 張角]
+[charaSet G 1098342900 1 ？？？]
+[charaSet H 1098343000 1 ？？？]
+[charaSet I 1098343200 1 怪奇植物]
+[charaSet J 1098343200 1 怪奇植物]
+[charaSet K 1098343200 1 怪奇植物]
+[charaSet L 1098343200 1 怪奇植物]
+[charaSet M 1098343200 1 怪奇植物]
+
+[charaSet N 2003001 1 ロビンフッド_演出用]
+[charaSet O 1098342910 1 ツチノコ_普_寝そべり]
+[charaSet P 1098343010 1 ツチノコ_胴_寝そべり]
+
+[sceneSet Q 270602 1]
+[sceneSet R 270602 1]
+[sceneSet S 270602 1]
+
+[charaSet T 98115000 1 通信エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth A 2]
+[charaDepth B 3]
+[charaDepth T 4]
+[charaDepth Q 5]
+[charaDepth R 6]
+[charaDepth D 7]
+[charaDepth F 8]
+[charaDepth E 9]
+[charaDepth S 10]
+[charaDepth N 11]
+[charaDepth M 12]
+[charaDepth L 13]
+[charaDepth K 14]
+[charaDepth J 15]
+[charaDepth I 16]
+[charaDepth H 17]
+[charaDepth G 18]
+[charaDepth P 19]
+[charaDepth O 20]
+
+[scene 10000]
+
+[fadein black 0.5]
+[wait fade]
+
+[effect bit_talk_07_fs]
+[se ad12]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+[wt 1.0]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein white 2.0]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 270602]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaPut T 1]
+[charaEffect T bit_talk_10_LowLevel_depth]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_MAP_95 0.1]
+
+＠マシュ
+レイシフト、無事に成功しました。[r]マスターのステータスもオールグリーン。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠オルガマリー
+当然ね。このわたしのカルデアのシステムなんだから[r]失敗するはずがないわ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+さて[%1][&君:ちゃん]、[r]そちらの状況はどうかな？
+[k]
+
+？1：ええと……
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+[wt 0.5]
+
+[messageOff]
+[cameraMoveEase -100,0 1.5 easeOutSine 1.2]
+[wt 2.0]
+[cameraMove 2.0 100,0 1.2]
+[wt 3.0]
+[cameraMoveEase 0,0 1.5 easeOutSine 1.0]
+[wt 2.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル・オルタ
+何の変哲もない、自然が多い場所ね。[r]人家の[#類:たぐい]は見えないわ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ロビンフッド
+植生からすると、少なくとも[r]西洋じゃなさそう……ですかねぇ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠張角
+ワシの故郷とも似てはいるが、違うのぅ。[r][#十中八九:じっちゅうはっく]、マスターの故郷であろう。
+[k]
+
+[charaFace F 6]
+
+＠張角
+[#兎:と]にも[#角:かく]にも、[#長閑:のどか]な盆地ではある。[r]しかし……？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D,E]
+[charaFace D 21]
+[charaFadein D 0.1 -250,-15]
+[charaFace E 0]
+[charaFadein E 0.1 230,0]
+
+＠ロビンフッド＆エレシュキガル・オルタ=spot[D,E]
+……。[r]……。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠オルガマリー
+しかし、何なの？[r]報告ははっきりとなさい。
+[k]
+
+？1：何か雰囲気がおかしい、ような……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ロビンフッド
+ああ。見たところ異常はない。[r]異常はないのに、何か嫌な気配がしやがる。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル・オルタ
+同感ね。下手に動かないで、[r]ひとまず周囲を警戒しましょう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠張角
+ほ。今気付いたが、[r]すぐ横の竹林に珍しいものが見えるのぅ。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_MAP_95 0.7 0.5]
+[wait wipe]
+
+[scene 270703]
+
+[charaFadeout F 0.1]
+
+[subCameraOn 2]
+
+[charaLayer D sub #A]
+[charaLayer Q sub #A]
+
+[charaLayer F sub #B]
+[charaLayer R sub #B]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[subCameraFilter #A maskEdge cut359_mask12 5 198,0,28,255]
+[subCameraFilter #B maskEdge cut359_mask11 5 253,210,0,255]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 -490,200]
+[charaFadein Q 0.1 -150,80]
+
+[charaFace F 1]
+[charaFadein F 0.1 490,230]
+[charaFadein R 0.1 450,80]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_MAP_95 0.7 1.0]
+[wait wipe]
+[wt 0.5]
+
+[subRenderFadeinFSSideL #A 0.3 120,-180]
+[subRenderMoveFSSideL #A 100,-200 0.3]
+[wt 0.3]
+
+[charaTalk D]
+
+＠エレシュキガル・オルタ
+あれが何か？[r]ただの花でしょ。
+[k]
+
+[charaTalk F]
+[subRenderFadeinFSSideR #B 0.3 -120,-180]
+[subRenderMoveFSSideR #B -100,-200 0.3]
+[wt 0.3]
+
+＠張角
+いいや。竹の花はな、実のところ、[r]百年に一度くらいしか咲かんのじゃよ。
+[k]
+
+＠張角
+[#故:ゆえ]に、マスターの国でもそうであろうとは思うが、[r]こう言われておる……
+[k]
+
+[charaFace F 7]
+
+＠張角
+[#竹の花が咲くのは不吉なことじゃ]、とな。[r]さて、これは偶然かのう？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_MAP_95 0.7 0.5]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[charaLayer D nomal]
+[charaLayer F nomal]
+[charaLayer Q nomal]
+[charaLayer R nomal]
+[subCameraOff]
+
+[scene 270602]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_MAP_95 0.7 1.0]
+[wait wipe]
+
+＠ロビンフッド
+偶然だろうがそうでなかろうが、嫌な気分を晴らすのに[r]まったく役に立たない情報ありがとよ、じいさん。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 17]
+[charaFadein F 0.1 1]
+
+＠張角
+ほっほ。[r]礼はいらんぞ、若いの。
+[k]
+
+[bgmStop BGM_MAP_95 1.0]
+
+[messageOff]
+[charaTalk G]
+
+[cueSe SE_24 24_ade1052]
+[wt 0.9]
+[cueSeStop 24_ade1052 0.3]
+[wt 0.8]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠ロビンフッド
+待った、この音……[r]茂みに何かいるぞ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル・オルタ
+あそこよ、出てくるわ！
+[k]
+
+[charaFace D 9]
+
+＠エレシュキガル・オルタ
+みんな、警戒……を……？
+[k]
+
+[messageOff]
+[charaScale S 1.3]
+[charaFadein S 0.5 0,-160]
+[charaMoveScale S 1.4 2.0]
+[charaMove S 0,-130 2.0]
+[wt 0.4]
+[cueSe SE_24 24_ade1052]
+[wt 1.0]
+[cueSe SE_23 23_ad1314]
+
+[charaFadeout D 0.1]
+
+[subCameraOn 3]
+
+[charaLayer E sub #A]
+[charaLayer Q sub #A]
+
+[charaLayer F sub #B]
+[charaLayer R sub #B]
+
+[charaLayer G sub #C]
+[charaLayer H sub #C]
+
+[subRenderDepth #A 3]
+[subRenderDepth #B 2]
+[subRenderDepth #C 1]
+
+[subCameraFilter #A maskEdge cut359_mask05 4 0,204,102,255]
+[subCameraFilter #B maskEdge cut359_mask05 4 253,210,0,255]
+[subCameraFilter #C through]
+
+[charaScale Q 1.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 -25,300]
+[charaFadein Q 0.1 350,80]
+
+[charaScale R 1.1]
+[charaFace F 0]
+[charaFadein F 0.1 -5,300]
+[charaFadein R 0.1 -150,80]
+
+[subRenderFadein #C 0 0,0]
+[wt 1.2]
+
+[charaTalk off]
+[charaFace G 6]
+[cueSe SE_25 25_ade1144]
+[charaFadein G 0.3 -120,0]
+[charaMoveReturn G -120,10 0.3]
+[wt 0.4]
+[charaFace H 6]
+[cueSe SE_25 25_ade1144]
+[charaFadein H 0.3 110,0]
+[charaMoveReturn H 110,10 0.3]
+[wt 1.0]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+[charaTalk on]
+[charaTalk G]
+
+＠G：？？？
+……ちー？
+[k]
+
+[clear]
+[charaTalk H]
+
+＠H：？？？
+ちちー？
+[k]
+
+[charaTalk E]
+[subRenderFadeinFSL #A 0.3 -360,-280]
+[subRenderMoveFSL #A -360,-330 0.3]
+[wt 0.3]
+
+＠ロビンフッド
+……ずいぶんちっこい、蛇……[r]ですかねぇ？
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[charaTalk F]
+[subRenderFadeinFSR #B 0.3 360,-280]
+[subRenderMoveFSR #B 360,-330 0.3]
+[wt 0.3]
+
+[charaPut T 1]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠張角
+蛇にしてはだいぶ[#寸胴:ずんどう]じゃのう。
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.3]
+[wt 0.3]
+[charaTalk off]
+[wt 1.0]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+
+？1：なんかツチノコみたい[&だ:だね]
+？！
+
+[messageOff]
+[subRenderFadeout #C 0.4]
+[charaFadeout S 0.4]
+[wt 0.5]
+[charaTalk on]
+[charaTalk C]
+[charaLayer E nomal]
+[charaLayer F nomal]
+[charaLayer Q nomal]
+[charaLayer R nomal]
+
+＠ダ・ヴィンチ
+ツチノコ！　聞いたことがあるぞ。[r]それはいわゆる[#未確認動物:Ｕ　　Ｍ　　Ａ]の一種だね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい。データベースによると、過去、
+[k]
+
+＠マシュ
+日本ではその存在やそれを見つけることが[r]社会現象になったこともあるとか……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠オルガマリー
+ＵＭＡだろうがＵＦＯだろうがどうでもいいわ。[r]今はそれより大事なことがあるでしょう。
+[k]
+
+[charaFace B 0]
+
+＠オルガマリー
+第一に、敵性反応は？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2500,2500]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル・オルタ
+あの暫定ツチノコたちにはないようね。[r]戸惑ったようにこっちを見てるだけ、というか……
+[k]
+
+[messageOff]
+[charaScale S 1.3]
+[charaScale N 1.3]
+[charaTalk N,D]
+[charaFace N 0]
+[charaFadein N 0.4 -30,0]
+[charaFadein S 0.4 -30,-350]
+[charaMove N 0,0 0.5]
+[charaMove S 0,-350 0.5]
+[wt 0.7]
+[charaFadeout D 0.1]
+
+[charaPut T 1]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠N：ロビンフッド
+狩人のオレから言わせてもらうと、[r]どうも、さっきのは[line 3]
+[k]
+
+[bgmStop BGM_HALLOWEEN_2021_1 1.3]
+
+＠N：ロビンフッド
+[#何かに追われて逃げてきた動き]、[r]に見えたんですがねぇ？
+[k]
+
+[messageOff]
+[charaTalk A,N]
+[charaFadeout S 0.4]
+[charaFadeout N 0.4]
+[wt 0.4]
+
+＠マシュ
+っ！　皆さん、[r]ツチノコたちの向こうに注意を！
+[k]
+
+＠マシュ
+こちらは明確に敵性反応があります！
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadein #C 0.4 0,0]
+[charaScale S 1.4]
+[charaFadein S 0.4 0,-130]
+[wt 0.8]
+[charaFadeout A 0.1]
+[charaPut T 2500,2500]
+
+[charaFace G 2]
+[charaFace H 3]
+
+[subBlur #C lens 0.3 1 10 1.3 subBlur]
+[charaMoveScaleEase S 1.5 1.3 easeInOutSine]
+[charaMoveScaleEase G 1.5 1.3 easeInOutSine]
+[charaMoveScaleEase H 1.5 1.3 easeInOutSine]
+[charaMoveEase S 0,-150 1.3 easeInOutSine]
+[charaMoveEase G -200,-30 1.3 easeInOutSine]
+[charaMoveEase H 190,-30 1.3 easeInOutSine]
+
+[cueSe SE_26 26_ade1315 1.5 1.0]
+[wt 0.1]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[wt 1.0]
+[cueSeStop 26_ade1315 1.0]
+[wt 1.0]
+
+[cueSe SE_26 26_ade1303]
+[charaFace I 0]
+[charaFace J 0]
+[charaFace K 0]
+[charaFace L 0]
+[charaFace M 0]
+[charaFadein I 0.3 0,-30]
+[wt 0.3]
+[charaFadein J 0.3 -450,0]
+[charaFadein K 0.3 450,0]
+[wt 0.3]
+[charaScale L 0.9]
+[charaFadein L 0.3 -230,-30]
+[charaScale M 0.9]
+[charaFadein M 0.3 230,-30]
+[cueSeStop 26_ade1303 1.2]
+[wt 1.8]
+
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+[charaFadeout I 0.4]
+[charaFadeout J 0.4]
+[charaFadeout K 0.4]
+[charaFadeout L 0.4]
+[charaFadeout M 0.4]
+[charaFadeout S 0.4]
+[wt 0.4]
+
+[bgm BGM_BATTLE_184 0.1]
+
+[charaTalk on]
+[charaTalk E]
+
+＠ロビンフッド
+やっぱりな！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル・オルタ
+これは、何？　植物？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠張角
+食人花、というやつかのう。[r]今狙っておるのは蛇のようじゃが。
+[k]
+
+＠張角
+どうするね、マスター？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_BATTLE_184 0.5 0.5]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[charaTalk off]
+[charaFace O 3]
+[charaFadein O 0.1 -120,-25]
+[charaFace P 3]
+[charaFadein P 0.1 110,-30]
+
+[charaScale S 1.4]
+[charaFadein S 0.1 0,-130]
+[wt 0.5]
+
+[charaShake O 0.05 1 1 5.0]
+[charaShake P 0.05 1 1 5.0]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[wt 2.0]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout S 0.1]
+[charaFadeout P 0.1]
+[charaFadeout O 0.1]
+
+[charaFace E 0]
+[charaFace D 0]
+[charaFace F 0]
+[charaFadein E 0.1 1]
+[charaFadeinFSL D 0.1 -320,-15]
+[charaFadeinFSR F 0.1 320,0]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_BATTLE_184 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+？1：[line 3]助けよう！
+？！
+
+[charaMoveReturn E 0,-5 0.4]
+[wt 0.1]
+[charaMoveReturnFSL D -320,-20 0.4]
+[wt 0.1]
+[charaMoveReturnFSR F 320,-5 0.4]
+[wt 1.5]
+
+
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_184 0.5]
+[wait fade]
+[soundStopAllEnd]
+[end]

@@ -1,0 +1,359 @@
+
+＄94-15-28-02-3-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 2003001 1 ロビンフッド]
+[charaSet B 5051001 1 張角]
+[charaSet C 5059001 1 花咲翁]
+[charaSet D 1098345300 1 エレシュキガル・オルタ]
+[charaSet E 1098257310 1 ダ・ヴィンチ]
+[charaSet F 1098346900 1 オルガマリー]
+[charaSet G 10020000 1 フローラ]
+[charaSet H 1098343300 1 光る巨大蛇]
+[charaSet I 1098343200 1 怪奇植物_演出用1]
+[charaSet J 1098343200 1 怪奇植物_演出用2]
+
+[charaSet K 98115000 1 通信エフェクト用]
+[charaSet L 98115000 1 エフェクト用]
+[charaScale L 1.3]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth I 1]
+[charaDepth J 2]
+[charaDepth H 3]
+[charaDepth L 4]
+[charaDepth K 2]
+[charaDepth E 1]
+[charaDepth F 1]
+
+[scene 271102]
+
+[charaPut L 2000,2000]
+[charaEffect L bit_talk_under_light]
+
+[charaPut K 2500,2500]
+[charaEffect K bit_talk_10_LowLevel]
+
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFadein H 0.1 1]
+[charaFadeinFSL I 0.1 -400,0]
+[charaFadeinFSR J 0.1 400,0]
+[charaPut L 0,100]
+[wt 0.1]
+
+[bgm BGM_BATTLE_107 0.1]
+[fadein black 0.5]
+[wait fade]
+[wt 0.3]
+
+[cueSe SE_22 22_adm90]
+
+[wt 1.5]
+
+？1：倒しきれない……！
+？！
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaPut L 2000,2000]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ロビンフッド
+見た目通りのタフさですねえ。
+[k]
+
+[bgmStop BGM_BATTLE_107 1.5]
+[charaFaceFade A 0 0.2]
+
+＠ロビンフッド
+……おや。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFadein H 0.1 1]
+[charaFadeinFSL I 0.1 -400,0]
+[charaFadeinFSR J 0.1 400,0]
+[charaPut L 0,100]
+[wt 1.0]
+
+[cueSe SE_26 26_ade1304 0.1 1.0]
+[charaCrossFade I 1098343210 0 0.7]
+[charaCrossFade J 1098343210 0 0.7]
+[wait charaCrossFade J]
+[cueSeStop 23_ad1284 0.3]
+[wt 1.0]
+
+
+[scene 271107 2.0]
+[wt 2.0]
+
+[cueSe SE_23 23_ad1284 0.6]
+[charaFadeout I 0.4]
+[charaMoveFSL I -400,-20 0.5]
+[charaFadeout J 0.4]
+[charaMoveFSR J 400,-20 0.5]
+[cueSeStop 23_ad1284 1.2]
+
+[wt 1.5]
+
+[charaFadeout H 0.4]
+[charaPut L 2000,2000]
+[se ad190]
+[se ad460]
+[wt 3.5]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[bgm BGM_EVENT_5 0.1]
+
+＠張角
+夜が明けたからか、[r]逃げていきおったの。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠花咲翁
+みたいだねぇ。[r]ひとまず、よかった。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル・オルタ
+あの蛇は……怪奇植物たちのボス、あるいは[r]植物たちを率いている将、みたいなものなのかしら？
+[k]
+
+＠エレシュキガル・オルタ
+それとも、一緒に襲ってきたというだけの、[r]別件の脅威？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut K 1]
+[charaTalk E]
+[charaFace E 34]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+どうかなー。少なくとも、明確に植物を[r]指揮しているような様子は見られなかったけど……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠オルガマリー
+あまりにもタイミングがよすぎるわ。[r]敵の植物たちと無関係じゃないのは確かでしょう。
+[k]
+
+＠オルガマリー
+念話でもなんでも、こちらには観測できない手段で[r]植物たちを操る方法なんていくらでもありそうだし。[bgmStop BGM_EVENT_5 1.5]
+[k]
+
+？1：うーん……
+？2：まだわかんないことが多いな……
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut K 2000,2000]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[bgm BGM_TOU_1 0.1]
+
+＠フローラ
+まあ、何にしても、です！
+[k]
+
+＠フローラ
+今日も無事お花畑を、[r]つまりは天願桜を守りきれました。
+[k]
+
+[charaFace G 3]
+
+＠フローラ
+気持ちいい朝をこうして迎えられて、[r]わたしはにっこりアサガオ気分です！
+[k]
+
+＠フローラ
+皆さんのおかげです、ありがとうございます！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠花咲翁
+うん。儂からも、ありがとう。
+[k]
+
+＠花咲翁
+二人だけで頑張っていた今までと比べたら、[r]ずいぶん楽をさせてもらったよ。
+[k]
+
+[charaFace C 5]
+
+＠花咲翁
+なんだか申し訳ないねぇ。
+[k]
+
+？1：全然大丈夫ですよ
+？2：今後もこの調子でいきましょう！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 16]
+[charaFadein G 0.1 1]
+
+＠フローラ
+うふふ。
+[k]
+
+＠フローラ
+今日は……帰って一眠りするなら、明日は、ですかね？[r]きっと皆さんのお花畑を作れると思います。
+[k]
+
+＠フローラ
+どんな色のお花畑にしたいかとか、[r]ゆっくり考えておくのもいいかもしれませんね。
+[k]
+
+[charaFace G 3]
+
+＠フローラ
+それじゃあ、わらしちゃんも待ってるでしょうし、[r][#庵:いおり]に帰りましょう！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_TOU_1 2.0]
+[wait fade]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_199 0.1]
+
+＠
+[line 3]衝動がある。
+[k]
+
+＠
+名付けることすら置き去りにされるほどの、[r]苛烈な衝動がある。
+[k]
+
+＠
+身の内から。あるいは、外の皮との隙間から、[r][#溢:あふ]れ続けている。
+[k]
+
+＠
+[#何かを捜さねばならない]。[r][#何かを追わなくてはならない]。
+[k]
+
+＠
+何かを。
+[k]
+
+＠
+[line 3]何を？
+[k]
+
+＠
+……わからない。
+[k]
+
+＠
+[line 3]何故？
+[k]
+
+＠
+……わからない。
+[k]
+
+＠
+だがきっと、[#身悶:み も だ]えするほどの理不尽が、[r]自らの激情が、理由の一つではあろう。
+[k]
+
+＠
+別れることしか許されなかった！[r]共にいることを許されなかった！
+[k]
+
+＠
+だから[line 3]！
+[k]
+
+＠
+……。[r]……。
+[k]
+
+＠
+だから。[r]どうあれ。
+[k]
+
+＠
+追い続けるのだ。[r]欲するものを。
+[k]
+
+＠
+足元の草地を[line 3][r]古き海原のように、悲憤の光で照らしながら。
+[k]
+
+[messageOff]
+[cueSe SE_25 25_ade1156]
+[wt 3.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_199 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

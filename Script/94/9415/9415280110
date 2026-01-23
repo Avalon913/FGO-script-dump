@@ -1,0 +1,1423 @@
+
+＄94-15-28-01-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 10020000 1 フローラ]
+[charaSet B 10020000 1 フローラ]
+[charaSet C 2003001 1 ロビンフッド]
+[charaSet D 1098342400 1 わらし]
+[charaSet E 1098346900 1 オルガマリー]
+[charaSet F 1098257310 1 ダ・ヴィンチ]
+[charaSet G 1098345300 1 エレシュキガル・オルタ]
+[charaSet H 5051001 1 張角]
+[charaSet I 5059001 1 花咲翁]
+[charaSet J 5059001 1 花咲翁]
+[charaSet K 1098342200 1 犬_第二]
+[charaSet L 1098342300 1 犬_単体]
+[charaSet M 1098346800 1 マシュ]
+[charaSet N 1098342900 1 ツチノコ_普]
+[charaSet O 1098343000 1 ツチノコ_胴]
+
+[charaSet P 1098342400 1 わらし]
+[charaSet Q 1098345300 1 エレシュキガル・オルタ]
+
+[sceneSet R 10000 1]
+[charaScale R 1.01]
+
+[sceneSet S 270800 1]
+[sceneSet T 270803 1]
+[sceneSet U 270803 1]
+
+[charaSet Z 98115000 1 通信エフェクト用]
+
+[charaPut Z 2000,2000]
+[charaEffect Z bit_talk_10_LowLevel_depth]
+
+[charaTalk depthOff]
+[charaDepth K 1]
+[charaDepth I 2]
+[charaDepth A 3]
+[charaDepth R 4]
+[charaDepth M 5]
+[charaDepth N 6]
+[charaDepth O 7]
+[charaDepth E 8]
+[charaDepth F 9]
+[charaDepth Z 10]
+[charaDepth S 11]
+[charaDepth T 12]
+[charaDepth U 13]
+[charaDepth D 14]
+[charaDepth P 15]
+[charaDepth G 16]
+
+[subCameraOn 4]
+[charaLayer T sub #A]
+[charaLayer D sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 4 255,159,72,255 0]
+
+[charaScale T 1.01]
+[charaFace D 2]
+[charaFadein D 0.1 -8,300]
+[charaFadein T 0.1 -8,100]
+
+[charaLayer U sub #B]
+[charaLayer P sub #B]
+[subCameraFilter #B normal]
+[charaScale U 1.01]
+[charaFadein U 0.1 0,-200]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[scene 10000]
+
+[cueSe SE_21 21_ad1066 0.5]
+[fadein black 0.1]
+[wait fade]
+
+[wipeout rightToLeft 0.1 1.0]
+[wait wipe]
+
+[charaScale S 1.3]
+[charaFadein S 0.1 -50,-300]
+[scene 270800]
+[wt 2.5]
+
+[cueSeStop 21_ad1066 1.0]
+[charaMoveEase S -100,-300 2.0 easeOutSine]
+[wipein leftToRight 1.0 1.0]
+[wait wipe]
+[wt 1.5]
+
+[charaFadeout S 0.8]
+[wt 1.0]
+
+[bgm BGM_EVENT_194 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠？？？
+到着です。ここが、わたしたちが拠点として[r]使っている場所になりますね。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk K,I]
+[charaFace K 1]
+[charaFace I 1]
+[charaFadein K 0.1 220,-110]
+[charaFadein I 0.1 -100,0]
+[wt 0.3]
+[charaMoveReturn K 220,-105 0.2]
+[cueSe SE_26 26_ade1328]
+[wt 0.2]
+[charaMoveReturn K 220,-105 0.2]
+[wt 0.7]
+
+[charaTalk I]
+
+＠I：？？？
+たいしたもてなしもできないけれど、[r]立ち話もあれだからね。
+[k]
+
+＠I：？？？
+中にどうぞ……[wt 0.7][charaFace I 3]おっと？
+[k]
+
+[messageOff]
+[se ade97]
+[subRenderFadein #B 0.4 0,0]
+[wt 0.5]
+[charaFadeout K 0.1]
+[charaPut I -256,0]
+[subRenderFadein #A 0.1 256,-330]
+
+[seStop ade97 1.3]
+[cueSe SE_25 25_ade1146]
+[wt 0.5]
+[cueSeStop 25_ade1146 0.5]
+[charaTalk P]
+[charaFace P 2]
+[charaScale P 0.95]
+[charaFadein P 0.4 1]
+[charaMoveScale P 1.0 0.3]
+[wt 0.7]
+
+＠P：？？？
+じいじ！　おはな！　おかえりー！
+[k]
+
+[messageOff]
+[charaTalk I,P]
+[charaFace I 11]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+
+＠I：？？？
+ははは、ただいま。
+[k]
+
+[messageOff]
+[charaTalk I,P]
+[subRenderFadein #B 0.6 0,0]
+[wt 1.5]
+[subRenderFadeout #A 0.1]
+[charaFadeout I 0.1]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+？1：すごく小さな、妖精みたいな子だ……
+？！
+
+[charaTalk C,P]
+[subRenderFadeout #B 0.5]
+[wt 0.7]
+
+＠ロビンフッド
+その子は？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠A：？？？
+ここに来て会った子で、実のところは、[r]わたしたちにもよくわかりません。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[clear]
+[charaTalk I]
+[charaFace I 0]
+[charaFace D 0]
+[charaFadein I 0.1 -256,0]
+[subRenderFadein #A 0.1 256,-330]
+
+＠I：？？？
+なぜか懐いてはくれているんだけどね。
+[k]
+
+＠I：？？？
+あまり難しい話はできないし、[r]なんとなく一緒にいるというだけさ。
+[k]
+
+[charaFace I 6]
+
+＠I：？？？
+名前もないようだから、[r]儂らはただ『わらし』と呼んでいるよ。
+[k]
+
+[charaTalk D]
+[charaFace D 8]
+
+＠わらし
+じいじ、きゃくー？
+[k]
+
+[charaTalk I]
+[charaFace I 1]
+
+＠I：？？？
+そう、お客さんだ。[r]だから、あまり失礼のないようにね。
+[k]
+
+[charaTalk D]
+[charaFace D 1]
+
+＠わらし
+わかったー！[r]しつれいしないー！
+[k]
+
+[charaFadeout I 0.1]
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+まったく、そっちの[r]危機管理意識はどうなってるのかしら。
+[k]
+
+＠オルガマリー
+よくもまあ、正体不明のものを正体不明のまま[r]放置しておけるものね……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 34]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+うーん。あんまり手応えのある分析は[r]できてないんだけど、
+[k]
+
+＠ダ・ヴィンチ
+少なくともサーヴァントではない、かな。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠A：？？？
+はい。この小さな蛇さんたちと同じように、元々[r]この特異点にいた子かなとは思うんですけど……。
+[k]
+
+[messageOff]
+[charaTalk off]
+[cueSe SE_22 22_ade695]
+[charaFace N 0]
+[charaScale N 0.7]
+[charaFadein N 0.1 -270,-90]
+[charaMoveEase N -270,-60 0.4 EaseOutBack]
+[wt 0.4]
+[cueSe SE_22 22_ade695]
+[charaFace O 0]
+[charaScale O 0.7]
+[charaFadein O 0.4 300,-90]
+[charaMoveEase O 300,-60 0.4 EaseOutBack]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+[charaScale N 1.0]
+[charaScale O 1.0]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ロビンフッド
+普通にツチノコたちもいますねぇ。[r]この特異点では珍しくもない存在、ってわけですかい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠A：？？？
+つちのこ？[r]ふふ、何だか可愛らしい響きです。
+[k]
+
+[charaFace A 3]
+
+＠A：？？？
+適当に蛇さんとか言ってたんですけど、呼びやすい名前が[r]あるならそちらのほうがよさそうですね。
+[k]
+
+[charaFace A 0]
+
+＠A：？？？
+そのツチノコさんたちのことも含めて、[r]中で落ち着いて話しましょう。どうぞ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+ええ、そうね。まずは情報共有。[r]知りたいことが多すぎるわ。
+[k]
+
+[messageOff]
+[charaScale S 1.2]
+[charaScale G 1.2]
+[charaTalk G,E]
+[charaFace G 3]
+[charaFadein G 0.6 -180,30]
+[charaMove G -160,30 0.6]
+[charaFadein S 0.6 100,-267]
+[charaMove S 120,-267 0.6]
+[wt 1.0]
+
+＠エレシュキガル・オルタ
+……。[r]……。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_194 1.0]
+[wait fade]
+
+[charaScale G 1.0]
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[charaFadeout S 0.1]
+[charaFadeout T 0.1]
+[charaFadeout U 0.1]
+[charaFadeout D 0.1]
+[charaFadeout P 0.1]
+[charaPut Z 2000,2000]
+[charaLayer T normal]
+[charaLayer D normal]
+[charaLayer U normal]
+[charaLayer P normal]
+[subCameraOff]
+[wt 0.1]
+
+[sceneSet S 270900 1]
+[sceneSet T 270900 1]
+[sceneSet U 270900 1]
+[sceneSet V 270900 1]
+[charaDepth C 8]
+[charaDepth G 9]
+[charaDepth H 10]
+[charaDepth S 11]
+[charaDepth T 12]
+[charaDepth U 13]
+[charaDepth D 14]
+[charaDepth B 15]
+[charaDepth K 16]
+[charaDepth L 17]
+[charaDepth J 18]
+[charaDepth V 19]
+[charaDepth Q 20]
+[charaDepth O 21]
+[charaDepth N 22]
+
+[subCameraOn 2]
+[charaLayer U sub #A]
+[charaLayer D sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 4 255,159,72,255 0]
+
+[charaScale U 1.6]
+[charaFace D 0]
+[charaFadein D 0.1 -8,300]
+[charaFadein U 0.1 0,220]
+
+[charaLayer V sub #B]
+[charaLayer Q sub #B]
+[subCameraFilter #B normal]
+
+[charaFace Q 7]
+[charaFadein Q 0.1 1]
+[charaFadein V 0.1 0,-200]
+[charaEffect Q bit_talk_41_remake]
+
+[scene 270900]
+
+[charaScale S 1.3]
+[charaFadein S 0.1 190,-150]
+[wt 1.0]
+
+[charaMove S 100,-150 8.0]
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_92 0.1]
+[wt 2.5]
+
+[charaScale T 1.3]
+[charaFadeinFSSideR T 0.6 -355,-300]
+[charaMoveFSSideR T -355,-350 6.0]
+[wt 1.0]
+[charaFadeout S 0]
+[charaMove S 100,-150 0.1]
+[wt 2.5]
+
+[charaFadeout T 0.8]
+[wt 1.0]
+[charaMoveFSSideR T -355,-350 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠張角
+ほう。[r]素朴で懐かしい感じがするのぅ。
+[k]
+
+＠張角
+ワシにとっては、煌びやかな王宮などより[r]よほど落ち着ける家じゃ。いや皮肉でなく、な。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.3]
+
+？1：なんだか花のいい匂いがするねえ
+？！
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：？？？
+えへへぇ。そうですか？[r]そう言っていただけると嬉しいです。
+[k]
+
+[charaFace A 16]
+
+＠A：？？？
+あ、適当に座ってくださいね！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale B 1.2]
+[charaScale S 1.2]
+[charaFace B 17]
+[charaFadein B 0.4 0,60]
+[charaFadein S 0.4 0,-237]
+[charaMoveEase B 0,30 0.6 easeOutSine]
+[charaMoveEase S 0,-267 0.6 easeOutSine]
+[wt 0.7]
+[charaFadeout A 0.1]
+[charaPut Z 1]
+[charaFace F 22]
+[charaFadein F 0.1 1]
+
+＠？？？
+さて、それでは[line 3]まずは自己紹介を。
+[k]
+
+[charaFace B 0]
+
+＠？？？
+はじめまして。[r]わたしはフローラ、花の女神です。
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaFadeout S 0.4]
+[wt 0.6]
+[charaTalk on]
+[charaTalk F]
+
+＠ダ・ヴィンチ
+花の女神フローラと言えば……[r]ローマ神話の？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut Z 2500,2500]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠フローラ
+そうですね。みなさんにとって一番[r]わかりやすい区分で言えばそうなると思います。
+[k]
+
+？1：（聞いたことはある）
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaPut Z 1]
+
+＠オルガマリー
+聞いたことはある、って顔ね。
+[k]
+
+＠オルガマリー
+でもそれ以上の詳しい情報は[r]知らない感じでしょう。
+[k]
+
+[charaFace E 17]
+
+＠オルガマリー
+それぐらい予想はできるわよ。
+[k]
+
+？2：（聞いたことない）
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaPut Z 1]
+
+＠オルガマリー
+聞いたことない、って顔ね。
+[k]
+
+＠オルガマリー
+さもありなん、というところかしら。
+[k]
+
+？！
+
+[charaFace E 7]
+
+＠オルガマリー
+本人を前にして言うのもアレだけど、フローラは[r]花の女神として名前が伝わっているというだけで、
+[k]
+
+＠オルガマリー
+単体で何か凄く有名な神話とか[r]エピソードとかがあるわけじゃないもの。
+[k]
+
+＠オルガマリー
+各種の花についての話に絡んで[r]出てくるぐらいね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠フローラ
+えへへぇ。[r]その通りで、お恥ずかしい……。
+[k]
+
+＠フローラ
+わたしは基本的にお花を育てることしか[r]できないマイナー女神なので……。
+[k]
+
+[charaFace A 14]
+
+＠フローラ
+あ、でも！[r]こちらのおじいさんは、神様じゃないですけど、
+[k]
+
+＠フローラ
+たとえば日本では……[r]わたしなんかよりよほど有名だと思います！
+[k]
+
+＠フローラ
+さあどうぞ、自己紹介を！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale S 1.2]
+[charaScale J 1.2]
+[charaFace J 21]
+[charaFadein J 0.5 -30,30]
+[charaFadein S 0.5 -30,-267]
+[charaMoveEase J 0,30 0.7 easeOutSine]
+[charaMoveEase S 0,-267 0.7 easeOutSine]
+[wt 0.7]
+[charaFadeout A 0.1]
+
+＠？？？
+有名なのかなあ？
+[k]
+
+[charaFace J 6]
+
+＠？？？
+そこのところは儂自身にはわからないし、[r]実際の名前すら思い出せないんだが……。
+[k]
+
+[charaFace J 22]
+
+＠？？？
+とりあえず、『花咲かじいさん』とか『[#花咲翁:はなさかのおきな]』と[r]呼ばれることが多いような気はするよ。
+[k]
+
+[messageOff]
+[charaScale K 1.2]
+[charaFace K 1]
+[charaFadein K 0.1 320,-80]
+[charaFace I 12]
+[charaFadein I 0.1 1]
+[wt 0.3]
+[cueSe SE_26 26_ade1328]
+[charaMoveReturn K 320,-75 0.2]
+[wt 0.2]
+[charaMoveReturn K 320,-75 0.2]
+[wt 1.0]
+
+？1：もしかしてと思ってたけど
+？2：やっぱり花咲かじいさんーーー！
+？！
+
+[wt 1.0]
+
+？1：……でも、おじいさん、ではないような……
+？！
+
+[messageOff]
+[charaFadeout K 0.4]
+[charaFadeout J 0.4]
+[charaFadeout S 0.4]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk I]
+
+＠花咲翁
+ははは。[r]言わんとしていることはわかるよ。
+[k]
+
+＠花咲翁
+何だか[#はいから]なこの[#恰好:かっこう]も含めて、[r]儂自身も不思議に思っているから。
+[k]
+
+[charaFace I 0]
+
+＠花咲翁
+しかしまあ、身体がいくら若い時分のものでも、[r]意識が年寄りだと操縦が難しくてね。
+[k]
+
+＠花咲翁
+いろいろのんびりしてしまうかもしれないが、[r]許しておくれ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠張角
+心も体も年寄りよりはマシじゃないかのー？
+[k]
+
+[charaFace H 2]
+
+＠張角
+いやワシはまだまだ若いつもりじゃが！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 15]
+[charaFadein I 0.1 1]
+
+＠花咲翁
+ああ、それと。言うまでもないかもだけど、[r]この子は儂の犬だ。
+[k]
+
+[charaFace I 6]
+
+＠花咲翁
+自分の名前と同じく、どう呼んでいたかも[r]あやふやではあるが……さあ、ご挨拶しなさい。
+[k]
+
+[messageOff]
+[charaTalk I,L]
+[charaScale S 1.3]
+[charaFace L 1]
+[charaFadein L 0.4 150,-100]
+[charaFadein S 0.4 -50,-200]
+[wt 0.5]
+[charaFadeout I 0.1]
+
+＠L：犬
+わ[cueSe SE_26 26_ade1325]ん！
+[k]
+
+[messageOff]
+[se ad661]
+[charaScale J 1.1]
+[charaTalk J]
+[charaFace J 11]
+[charaFadein J 0.1 -170,70]
+[charaMove J -160,50 0.5]
+[wt 0.5]
+
+＠J：花咲翁
+よーしよしよし、いい子だ。[seStop ad661 0.5]
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ade312 0.5]
+[cueSe SE_24 24_ade985]
+[cueSe SE_26 26_ade1334]
+[charaMove J -150,50 0.4]
+[wt 0.4]
+[charaShake L 0.04 3 0 1.0]
+[wt 0.5]
+[cueSeStop 24_ade985 1.0]
+[seStop ade312 0.5]
+[wt 1.0]
+
+？1：（わしゃわしゃ＆尻尾ふりふりで）
+？2：（仲良し感が伝わってくる……）
+？！
+
+[cueSe SE_25 25_ade1144]
+[subRenderFadein #A 0.3 0,-380]
+[subRenderMoveEase #A 0,-330 0.5 easeOutQuad]
+[charaMoveEase L 210,-100 0.5 easeOutQuad]
+[charaMoveEase J -220,50 0.5 easeOutQuad]
+[wt 0.7]
+
+[charaPut R 1]
+[charaPut Z 1]
+[charaFace M 1]
+[charaFadein M 0.1 1]
+[charaFadeTime R 0 0.5]
+
+[charaTalk on]
+[charaTalk D]
+
+＠わらし
+なでりー。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMoveReturn J -220,45 1.0]
+[se ade312 0.5]
+[cueSe SE_24 24_ade985]
+[cueSe SE_26 26_ade1334]
+[charaFace D 2]
+[charaShake D 0.05 2 0 1.0]
+[charaShake L 0.05 2 0 1.0]
+[wt 0.5]
+[wt 0.5]
+[cueSeStop 24_ade985 1.0]
+[seStop ade312 0.5]
+[wt 1.0]
+[charaFadeout J 0.5]
+[charaFadeout L 0.5]
+[charaFadeout S 0.5]
+[subRenderFadeout #A 0.5]
+[wt 0.7]
+[charaTalk on]
+[charaTalk M]
+
+＠マシュ
+（ついでにわらしさんも撫でられにいって……[r]　一緒くたにわしゃわしゃされて幸せそうです……！）
+[k]
+
+[charaFadeout R 0.2]
+[wt 0.2]
+
+[charaFace M 3]
+
+＠マシュ
+お、[charaMoveReturn M 0,-4 0.5]おほん。
+[k]
+
+[charaFace M 10]
+
+＠マシュ
+花咲かじいさん……日本の民話において、[r]最も有名な物語のひとつ、ですね。
+[k]
+
+＠マシュ
+わたしも絵本を読ませてもらったことがあります。[r]まさかその主役の方とお会いできるとは、光栄です。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_92 1.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+貴方たちについてはわかったわ。[r]それで？　どうしてそんな二人がここにいるの？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フローラ
+わたしたちはこの場に自動的に召喚されたものです。[r]特異点に対するカウンター、というものでしょうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠花咲翁
+儂とハナちゃんは、勿論、片や異国の女神様、[r]片やただの名も忘れたじじいだ。
+[k]
+
+[charaFace I 5]
+
+＠花咲翁
+その格は比べるべくもないが……植物に縁がある、[r]という共通点がなくもないからねぇ。
+[k]
+
+[charaFace I 1]
+
+＠花咲翁
+だからここに[#喚:よ]ばれたのかな、と思うよ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フローラ
+そうですね。この地はこのツチノコさんたち、そして[r]わらしちゃんが住まう地。
+[k]
+
+[charaFace A 9]
+
+＠フローラ
+そこに、夜な夜なあの怪奇なる植物たちが[r]現れるようになっていたのです。
+[k]
+
+[charaFace A 21]
+
+＠フローラ
+わたしも見たことのない、[r]生き物を喰らう、恐ろしくも[#昏:くら]い花たち。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠張角
+先程戦ったあやつらじゃな。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠エレシュキガル・オルタ
+……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠フローラ
+はい。怪奇植物はツチノコさんたちを襲い、[r]食べてしまいます。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 3]
+[charaFace O 3]
+[charaFadein N 0.1 -85,0]
+[charaFadein O 0.1 85,0]
+[charaShake N 0.03 1 1 0]
+[charaShake O 0.03 1 1 0]
+
+＠N：ツチノコ
+ちー……。
+[k]
+
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+[charaShakeStop N]
+[charaShakeStop O]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[charaSet O 1098343100 1 ツチノコ_長]
+[charaDepth O 21]
+
+＠ロビンフッド
+コイツらに対する捕食者ってわけですかい？[r]元々そういう生態系なんですかね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 1]
+
+＠フローラ
+おそらく違います。わたしが感じる限り、[r]怪奇植物たちは別のある目的のために動いていて[line 3]
+[k]
+
+＠フローラ
+ツチノコさんたちを食べているのは、きっと、[r]単純にそうやって動くための栄養補給です。
+[k]
+
+[charaFace A 0]
+
+＠フローラ
+なのでその目的を阻止するためにも、[r]わたしたちはツチノコさんたちを守りながら、
+[k]
+
+＠フローラ
+日々襲い来るあれを撃退して回っていた、[r]というわけです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+
+＠張角
+しかし今回は、蛇でなくそこの[#娘娘:にゃんにゃん]が[r]喰われてしまったというわけじゃな。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠エレシュキガル・オルタ
+その呼び方止めてくれる！？
+[k]
+
+＠エレシュキガル・オルタ
+そっちの言葉で女神を表す表現なのは知ってるけど、[r]何か響きがムカつくのだわ。特に今の状況では！
+[k]
+
+[charaFace G 17]
+
+＠エレシュキガル・オルタ
+ああもう[line 3]冷酷無慈悲な冥界の女主人として[r]今まで我慢してたけど、もう我慢できないわ。
+[k]
+
+[charaFace G 4]
+
+＠エレシュキガル・オルタ
+一回くらい叫んでも許されるでしょう！[r]いくわよ！[bgmStop BGM_EVENT_70 1.5]
+[k]
+
+[charaTalk off]
+
+[subRenderFadein #B 0.3 0,0]
+[subCameraMoveEase #B 0,-10 0.2 easeOutQuad 1.1]
+
+＠エレシュキガル・オルタ
+[line 3][se ade227]どうして・[wt 0.8][se ade227][subCameraMoveEase #B 0,-20 0.2 easeOutQuad 1.2]こう・[wt 0.6][se ade226][subCameraMoveEase #B 0,-35 0.3 easeOutQuad 1.35]なってるの！？
+[k]
+
+[charaFadeout G 0.1]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+？1：（こうなった直後も叫んでたけど）
+？2：（聞かなかったふりをしておこう……）
+？！
+
+[messageOff]
+[subRenderFadeout #B 0.4]
+[wt 0.5]
+[subCameraMoveEase #B 0,0 0.1 easeOutQuad 1.0]
+[charaEffectDestroy Q bit_talk_41_remake]
+[charaFadeout V 0.1]
+[charaFadeout Q 0.1]
+
+[charaTalk on]
+[charaTalk C]
+
+＠ロビンフッド
+食われどころが悪かったんですかねぇ。[r][#中途半端:ち ゅ う と は ん ぱ]に消化されちまった感じ？
+[k]
+
+[charaLayer V normal]
+[charaLayer Q normal]
+
+[charaFace C 0]
+
+＠ロビンフッド
+こういうの、よくあったりします？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 20]
+[charaFadein A 0.1 1]
+
+＠フローラ
+い、いえ。わたしも最初のころは戦いに慣れてなくて[r]同じように食べられそうになっちゃって、
+[k]
+
+＠フローラ
+なんとか翁さんに助けてもらったこともありましたが、[r]こういうふうに小さくはならなかったので……。
+[k]
+
+[charaFace A 22]
+
+＠フローラ
+ど、どうしてでしょうね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+落ち着いたようだから改めて聞かせなさい。[r]今はどんな状態なの？
+[k]
+
+＠オルガマリー
+こちらでも分析はしてるけど、[r]当人の感覚も聞きたいわ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠エレシュキガル・オルタ
+……霊基自体がダウンサイジングされてる、[r]みたいな感じね。
+[k]
+
+＠エレシュキガル・オルタ
+奇跡的に霊核は無傷だけど、出力が完全に低下してて、[r]今まであった力のほとんどが抜けてて[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠張角
+つまり？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 14]
+[charaFadein G 0.1 1]
+
+＠エレシュキガル・オルタ
+……この状態のままでは、戦闘に参加するのは[r]不可能でしょうね。宝具なんかもってのほか。
+[k]
+
+[messageOff]
+[wt 0.8]
+
+[charaFace G 5]
+
+＠エレシュキガル・オルタ
+ううう。完璧なリーダーとして活躍するはずだったのに、[r]どうしてこんなことにぃ……？
+[k]
+
+＠エレシュキガル・オルタ
+こんなんじゃ何もできないどころか、[r]ただの足手まといじゃないのよぅ……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaDepth K 1]
+[charaTalk I]
+[charaFace I 16]
+[charaFadein I 0.1 -100,0]
+[charaFace K 0]
+[charaFadein K 0.1 220,-110]
+
+＠花咲翁
+ああ、泣かないでおくれ、お嬢ちゃん。[r]儂も悲しくなってしまうよ。
+[k]
+
+[charaFace I 14]
+
+＠花咲翁
+この子を撫でるかい、落ち着くよ。
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠エレシュキガル・オルタ
+な、泣いてません！[r]あとお嬢ちゃんでもありません！
+[k]
+
+[charaFace G 4]
+[charaMoveReturn G 0,-5 1.0]
+[se ade312 0.5]
+
+＠エレシュキガル・オルタ
+でも犬は撫でます！[r]柔らかいわね！[seStop ade312 0.5]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠L：犬
+へっへっ。（ぱたぱた）
+[k]
+
+[messageOff]
+[charaTalk L,Q]
+[charaPut U 200,160]
+[charaScale V 1.2]
+[charaScale Q 1.2]
+[charaFace Q 0]
+[charaFace D 1]
+[charaFadein Q 0.4 50,30]
+[charaFadein V 0.4 50,-267]
+[charaMove Q 100,30 0.5]
+[charaMove V 100,-267 0.5]
+[wt 0.7]
+[charaTalk D]
+[cueSe SE_25 25_ade1144]
+[subRenderFadein #A 0.3 -200,-380]
+[subRenderMoveEase #A -200,-330 0.5 easeOutQuad]
+[wt 0.5]
+[charaFadeout L 0.1]
+
+＠わらし
+なでりー。
+[k]
+
+[charaTalk Q]
+[charaFace Q 12]
+
+＠Q：エレシュキガル・オルタ
+ついでにアナタも撫でます！[r]小さいわね！
+[k]
+
+[messageOff]
+[charaTalk Q,D]
+[charaMoveReturn Q 100,25 1.0]
+[se ade312 0.5]
+[charaShake D 0.05 2 0 1.0]
+[wt 1.0]
+[seStop ade312 0.5]
+
+[charaTalk D]
+[charaFace D 2]
+
+＠わらし
+なー。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[subRenderFadeout #A 0.4]
+[subRenderMoveEase #A -400,-330 1.0 easeOutQuad]
+[charaMoveEase Q -100,30 1.0 easeOutQuad]
+[charaMoveEase V -100,-267 1.0 easeOutQuad]
+[wt 1.0]
+[charaFadeout U 0.1]
+[charaFadeout D 0.1]
+
+[cueSe SE_26 26_ade1305]
+[charaFace N 0]
+[charaScale N 0.7]
+[charaFadein N 0.3 200,-120]
+[charaMove N 150,-120 0.5]
+[wt 0.3]
+[cueSeStop 26_ade1305 0.5]
+[charaFace O 0]
+[charaScale O 0.7]
+[charaFadein O 0.3 370,-120]
+[charaMove O 320,-120 0.5]
+[wt 0.5]
+[charaLayer U normal]
+[charaLayer D normal]
+
+[charaTalk on]
+[charaTalk N,O]
+
+＠ツチノコたち=spot[N,O]
+ちちちー？
+[k]
+
+[charaTalk Q]
+[charaFace Q 5]
+
+＠Q：エレシュキガル・オルタ
+ああもう、まとめて面倒見るわよ！
+[k]
+
+＠Q：エレシュキガル・オルタ
+まったく、[#寸胴:ずんどう]で[#愛嬌:あいきょう]のあるフォルムね！[r]質感はどうなってるのかしら！
+[k]
+
+[messageOff]
+[charaMoveReturn Q -100,25 1.0]
+[se ade312 0.5]
+[charaTalk off]
+[charaFace N 1]
+[charaFace O 1]
+[charaShake N 0.04 3 0 1.0]
+[charaShake O 0.04 3 0 1.0]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[seStop ade312 0.5]
+[wt 0.5]
+
+[bgmStop BGM_HALLOWEEN_2021_1 1.5]
+
+[charaFadeout V 0.5]
+[charaFadeout N 0.5]
+[charaFadeout O 0.5]
+[charaFadeout Q 0.5]
+[wt 0.5]
+[charaScale N 1.0]
+[charaScale O 1.0]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_167 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 16]
+
+＠フローラ
+大丈夫です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠エレシュキガル・オルタ
+……何が？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠フローラ
+あなたにも、できることはあります。[r]戦い以外で。
+[k]
+
+[charaFace A 0]
+
+＠フローラ
+そう[line 3]わたしたちには、[r]みなさんのお力を借りたいことがあったのです。
+[k]
+
+？1：それは？
+？！
+
+[charaFace A 21]
+
+＠フローラ
+それはですね。
+[k]
+
+[messageOff]
+[charaScale B 1.3]
+[charaScale U 1.3]
+[charaTalk off]
+[charaFace B 21]
+[charaFadein B 0.5 0,0]
+[charaFadein U 0.5 0,-280]
+[wt 1.5]
+
+[charaFace C 9]
+[charaFace G 10]
+[charaFace H 22]
+[charaFadeinFSL C 0.1 -340,0]
+[charaFadein G 0.1 1]
+[charaFadeinFSR H 0.1 340,0]
+[charaFadeout A 0.1]
+
+[charaFace B 4]
+
+＠フローラ
+[#みなさんに]、[r][#お花を育ててもらいたいのです]！
+[k]
+
+[messageOff]
+[charaFadeout U 0.4]
+[charaFadeout B 0.4]
+[wt 2.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_167 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

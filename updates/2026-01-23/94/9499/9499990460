@@ -1,0 +1,101 @@
+
+＄94-99-99-04-6-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 10020000 1 アナウンス]
+
+[charaSet B 5009000 1 エフェクト用ダミー]
+
+
+[charaTalk depthOff]
+
+[scene 10000]
+
+[fadein black 0.5]
+[wait fade]
+
+
+＠アナウンス
+テスト開始します。
+[k]
+
+＠アナウンス
+炎攻撃_青赤(bit_talk_flame_attack_blre)[r]エフェクトの各命令での見た目を確認いたします。
+[k]
+
+＠アナウンス
+上下左右各種反転での使用は[r]想定しておりませんので、省略します。
+[k]
+
+＠アナウンス
+各工程の前にタッチ待ちを入れておりますので、[r]次に進みたい場合はタッチしてください。
+[k]
+
+＠アナウンス
+エフェクトの表示確認用に立ち絵・背景無しで[r]通常エフェクトで再生します。
+[k]
+[messageOff]
+[wt 0.1]
+
+[effect bit_talk_flame_attack_blre]
+[wait touch]
+
+
+[scene 271003]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アナウンス
+立ち絵を立たせて「bit_talk_flame_attack_blre」を[r]キャラエフェクト最前にする設定で再生を行います。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaEffect B bit_talk_flame_attack_blre]
+[wait touch]
+
+
+＠アナウンス
+通常エフェクトで再生
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[effect bit_talk_flame_attack_blre]
+
+[wait touch]
+
+
+
+＠アナウンス
+前面エフェクトで再生
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[fowardEffect bit_talk_flame_attack_blre]
+[wait touch]
+
+
+
+
+
+[charaFace A 1]
+
+＠アナウンス
+テストを終了します。[r]お疲れ様でした。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
