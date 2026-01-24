@@ -1,0 +1,1575 @@
+
+
+＄94-15-28-04-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 5059001 1 花咲翁]
+[charaSet B 10020000 1 フローラ]
+[charaSet C 1098341700 1 フローラ_シルエット用]
+[charaFilter C silhouette 00000080]
+[charaSet D 1098345300 1 エレシュキガル・オルタ]
+[charaSet E 1098342400 1 わらし]
+[charaSet F 5051001 1 張角]
+[charaSet G 2003001 1 ロビンフッド]
+[charaSet H 1098346900 1 オルガマリー]
+[charaSet I 1098346800 1 マシュ]
+[charaSet J 1098257310 1 ダ・ヴィンチ]
+[charaSet K 1098342900 1 ツチノコ_普]
+[charaSet L 1098343100 1 ツチノコ_長]
+[charaSet M 1098342200 1 翁の犬]
+[charaSet N 1098342300 1 翁の犬_単体]
+[charaSet O 1098345300 1 エレシュキガル・オルタ]
+[charaSet P 1098342400 1 わらし]
+
+[imageSet R black_fade_re 1]
+[charaScale R 2.0]
+[imageSet S black_fade_re 1]
+[charaScale S 2.0]
+
+[sceneSet T 10000 1]
+
+[sceneSet U 270901 1]
+[sceneSet V 270901 1]
+[sceneSet W 270901 1]
+[sceneSet X 273000 1]
+
+[charaSet Y 98115000 1 通信エフェクト用]
+[charaSet Z 98115000 1 ノイズエフェクト用]
+[charaScale Z 1.2]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth Y 2]
+[charaDepth B 3]
+[charaDepth U 4]
+[charaDepth O 5]
+[charaDepth B 6]
+[charaDepth F 7]
+[charaDepth M 8]
+[charaDepth A 9]
+[charaDepth D 10]
+[charaDepth V 11]
+[charaDepth W 12]
+[charaDepth C 13]
+[charaDepth E 14]
+[charaDepth P 15]
+[charaDepth L 16]
+[charaDepth K 17]
+[charaDepth G 18]
+[charaDepth T 19]
+[charaDepth R 20]
+[charaDepth S 21]
+[charaDepth Z 22]
+[charaDepth N 23]
+[charaDepth I 1]
+[charaDepth H 1]
+
+[subCameraOn 2]
+[charaLayer O sub #A]
+[charaLayer P sub #A]
+[charaLayer U sub #A]
+[subCameraFilter #A maskEdge cut359_mask06 4 255,159,72,255]
+[charaScale O 1.8]
+[charaScale U 1.8]
+[charaFace O 0]
+[charaFadein O 0.1 0,1150]
+[charaFadein U 0.1 0,480]
+
+[charaLayer E sub #B]
+[charaLayer W sub #B]
+[subCameraFilter #B maskEdge cut359_mask05 4 255,159,72,255]
+
+[charaScale W 1.6]
+[charaFace E 15]
+[charaFadein E 0.1 -8,300]
+[charaFadein W 0.1 -450,220]
+
+[charaEffect Y bit_talk_10_LowLevel_depth]
+[charaPut Y 2000,2000]
+
+[charaEffect Z bit_talk_noise_gr]
+[charaPut Z 2000,2000]
+
+[scene 270802]
+
+[pictureFrameTop cut063_cinema]
+[effect bit_talk_rain01]
+[wt 0.5]
+
+[se ade307 1.0 0.3]
+[fadein black 1.0]
+[wait fade]
+
+[wt 4.0]
+
+[fadeout black 1.0]
+[seStop ade307 1.0]
+[wait fade]
+
+[pictureFrameTop]
+[effectDestroy bit_talk_rain01]
+
+
+[scene 270901]
+[wt 0.5]
+
+[cueSe SE_25 25_ad1458 1.0 0.4]
+[fadein black 1.5]
+[wait fade]
+
+[wt 2.5]
+
+？1：雨が降ってきちゃったねー
+？2：しばらく止みそうにないかな
+？！
+
+[cueSeStop 25_ad1458 2.0]
+[bgm BGM_BISCIONE_1 0.1]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠花咲翁
+ふふ、そんなにそわそわしなくてもいいさ。
+[k]
+
+＠花咲翁
+農作業というのはね、一日中ずっと働き続ければいい、[r]というものでもないよ。
+[k]
+
+＠花咲翁
+暑くなれば休んで、雲がかかって涼しくなれば働いて、[r]雨が降ればまた休んで。
+[k]
+
+＠花咲翁
+そんなふうに毎日こつこつ世話をしていれば、[r]いつのまにか育っている……そういうものだからね。
+[k]
+
+[messageOff]
+[charaTalk M,A]
+[charaFace M 1]
+[charaFadein M 0.1 320,-110]
+[wt 0.3]
+[cueSe SE_26 26_ade1327]
+[charaMoveReturn M 320,-105 0.2]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フローラ
+お花の生長はゆっくりですから。[r]じーっと見ていても早く伸びるわけではないですよ。
+[k]
+
+＠フローラ
+まあ中には、すごい勢いで生長しちゃう子たちも[r]いますけど……。
+[k]
+
+[charaFace B 17]
+
+＠フローラ
+お水のやりすぎとかお世話のしすぎが[r]問題を起こす可能性は、いつだってあります。
+[k]
+
+[charaFace B 16]
+
+＠フローラ
+成果を急ぎすぎず、[r]のんびりやるくらいがちょうどいいですよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル・オルタ
+そういうものかしら。
+[k]
+
+[charaFace D 3]
+
+＠エレシュキガル・オルタ
+言われたら納得するしかないけれど、[r]やきもきするというか、焦るわね……。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[blur lens 0.3 3 1]
+[charaTalk P,O]
+[subRenderFadein #A 0.3 0,-330]
+[wt 0.3]
+[cueSe SE_25 25_ade1146]
+[charaFace P 15]
+[charaFadein P 0.3 400,290]
+[charaMove P 180,290 0.6]
+[wt 0.6]
+[cueSeStop 25_ade1146 0.1]
+[se ad183 0.5]
+[charaShake P 0.03 1 1 0.3]
+[charaMoveEase P 190,290 0.3 easeOutSine]
+[wt 0.3]
+[charaTalk P]
+
+＠P：わらし
+えれおー！[r]あそぼー！
+[k]
+
+[messageOff]
+[blurOff lens 0.3]
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.2 0]
+[subRenderFadein #B 0.2 256,-330]
+[wt 0.2]
+
+＠エレシュキガル・オルタ
+遊ばないわよ、[r]雨が晴れるのを待ってるんだから。
+[k]
+
+[charaFace D 12]
+
+＠エレシュキガル・オルタ
+……ていうか『えれお』って私のこと？
+[k]
+
+[charaTalk E]
+[charaFace E 1]
+
+＠わらし
+えれおー！
+[k]
+
+？1：（エレシュキガル・オルタだから）
+？2：（間違ってはないかな……）
+？！
+
+[charaTalk D]
+[charaFace D 10]
+
+＠エレシュキガル・オルタ
+なんだかちょっと間抜けな響きだし、[r]男の子っぽさが出てるような気もするけど……。
+[k]
+
+[messageOff]
+[charaTalk E]
+[charaFace E 2]
+[wt 1.5]
+
+[charaTalk D]
+[charaFace D 8]
+
+＠エレシュキガル・オルタ
+……まあいいか。
+[k]
+
+[charaFace D 0]
+
+＠エレシュキガル・オルタ
+それより、アナタはずっと小さいままなの？
+[k]
+
+[charaTalk E]
+[charaFace E 8]
+
+＠わらし
+ん～？
+[k]
+
+[charaFadeout D 0.1]
+[subRenderFadeout #B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 22]
+[charaFadein F 0.1 1]
+
+＠張角
+そやつは成長するんかのう？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠花咲翁
+どうだろうね。儂たちがここで会ったときから、[r]背丈はまったく変わっていないように見えるけれど。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[subRenderFadein #B 0.1 256,-330]
+
+＠エレシュキガル・オルタ
+……大きくなりたい、とかは思わないの？[r]小さいままの自分に、不安になったりしないの？
+[k]
+
+[charaTalk E]
+[charaFace E 8]
+
+＠わらし
+んんん～？
+[k]
+
+[messageOff]
+[charaTalk D]
+[charaFace D 8]
+[wt 1.2]
+[charaFace D 23]
+
+＠エレシュキガル・オルタ
+[line 3]ごめんなさい。私とアナタは違うわよね。[r]気にしないで。
+[k]
+
+[charaFadeout D 0.1]
+[subRenderFadeout #B 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フローラ
+……何にしても、やっぱり、[r]焦ることはないと思いますよ。
+[k]
+
+＠フローラ
+しばらくお家の中でのんびりするのも[r]いいものです。
+[k]
+
+？1：そうだねー
+？！
+
+[bgm BGM_BISCIONE_1 0.6 0.5]
+
+[messageOff]
+[charaScale V 1.3]
+[charaFadein V 0.6 -50,-350]
+[charaMove V -100,-350 8.0]
+[cueSe SE_25 25_ad1458 1.0 0.5]
+[wt 4.5]
+
+[bgm BGM_BISCIONE_1 1.0 1.0]
+[charaFadeout V 0.8]
+[cueSeStop 25_ad1458 1.0]
+[wt 1.5]
+[charaMove V -100,-350 0.1]
+
+？1：木の壁の向こうから雨の音だけが聞こえて……
+？！
+
+？1：土とお花のいい香りが漂ってて……
+？！
+
+？1：すっごく素朴で、のんびりできるいい家だよ
+？！
+
+[charaFace B 16]
+
+＠フローラ
+そうですね。[r]わたしもこのお家、大好きです。
+[k]
+
+[charaFace B 17]
+
+＠フローラ
+わたしが信仰されていたような場所の様式とは[r]だいぶ違いますけど、
+[k]
+
+＠フローラ
+土の匂いがして、自然に溶け込んでるみたいな[r]感じもあって……とっても落ち着けますよねぇ。
+[k]
+
+[charaFace B 14]
+
+＠フローラ
+あ、あと畳とお布団。[r]ベッドとは全然違いますが、
+[k]
+
+＠フローラ
+あれは、草と綿毛の中に丸まって眠るような、[r]ふわふわタンポポ気分が味わえて最高だと思います！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 -100,0]
+[charaFace M 0]
+[charaFadein M 0.1 220,-110]
+
+＠花咲翁
+ふふ、儂が適当に木材を組み上げただけの[r]あばら屋だし、
+[k]
+
+＠花咲翁
+家具なんかもこの子の力で[r]なんとか掘り当てた間に合わせなんだけど……
+[k]
+
+[messageOff]
+[charaTalk M,A]
+[charaFace M 1]
+[cueSe SE_26 26_ade1325]
+[charaMoveReturn M 220,-105 0.3]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 11]
+
+＠花咲翁
+そう言ってくれると、嬉しい。
+[k]
+
+[charaFace A 2]
+
+＠花咲翁
+でも、基本的には儂がばあさんと一緒に暮らしていた[r]年寄りの家と似たようなものだから、
+[k]
+
+＠花咲翁
+若い子たちには退屈じゃないかな。
+[k]
+
+[charaFace A 13]
+
+＠花咲翁
+前にわらしに作ってやったコマや竹馬ぐらいしか[r]遊び道具はなかったような……。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein D 0.1 0]
+[subRenderFadein #B 0.1 256,-330]
+
+＠わらし
+そーだ！[r]えれお、たけうま！　のろう！
+[k]
+
+[charaTalk D]
+[charaFace D 10]
+
+＠エレシュキガル・オルタ
+それこそ外で乗るものでしょう？
+[k]
+
+＠エレシュキガル・オルタ
+アナタのサイズでも、[r]土間でやるにはさすがに狭すぎると思うわ。
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.5]
+[charaTalk D,G]
+[charaScale V 1.5]
+[charaFace G 0]
+[charaFadein G 0.5 -300,0]
+[charaFadein V 0.5 280,-350]
+[charaMove G -250,0 0.6]
+[charaMove V 330,-350 0.6]
+[wt 1.3]
+[charaFadeout D 0.1]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[charaScale E 1.0]
+[charaFadeout E 0.1]
+[charaFadeout P 0.1]
+[charaFadeout O 0.1]
+[charaFadeout U 0.1]
+[charaFadeout W 0.1]
+
+？1：ところでロビンはさっきから何やってるの？
+？！
+
+[charaLayer E normal]
+[charaLayer P normal]
+[charaLayer O normal]
+[charaLayer U normal]
+[charaLayer W normal]
+[subCameraOff]
+
+[charaTalk F,G]
+[charaFadeout V 0.5]
+[charaFadeout G 0.5]
+[wt 0.7]
+
+＠張角
+隅で何やら植物の葉を切ったり[r]潰したりしておるのう。
+[k]
+
+[messageOff]
+[charaTalk G,F]
+[charaFace G 0]
+[charaFadein G 0.4 -250,0]
+[charaFadein V 0.4 330,-350]
+[wt 0.4]
+[charaFadeout F 0.1]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+[cueSe SE_26 26_ade1311]
+[charaMoveReturn G -250,-5 0.7]
+[wt 1.0]
+[charaMoveReturn G -250,-5 0.7]
+[wt 0.3]
+[cueSeStop 24_ade1118 0.2]
+[wt 0.7]
+[charaFace G 1]
+
+＠ロビンフッド
+んー？[r]ま、家の中でできることをしてる、ですな。
+[k]
+
+＠ロビンフッド
+いくら森暮らしでも[r]雨が降りゃあ雨宿りするのは当たり前。
+[k]
+
+＠ロビンフッド
+木のうろの中でもどこでも、[r]やれることはいっぱいあるんでね。
+[k]
+
+[charaFace G 4]
+
+＠ロビンフッド
+いやはや、女神さまが植物の加工も人の営みだと[r]思ってくれるタイプで助かった。
+[k]
+
+[charaFace G 1]
+
+＠ロビンフッド
+まあつまり、いろんな薬とか毒の準備を[r]今のうちにしてるってわけ。
+[k]
+
+＠ロビンフッド
+ここは植物だけは手に入れやすいからな。[r]ちゃんと確認は取ったぜ？
+[k]
+
+[messageOff]
+[charaTalk B,G]
+[charaFadeout G 0.4]
+[charaFadeout V 0.4]
+[wt 0.4]
+
+＠フローラ
+はい。でも、目の前で綺麗なお花さんが[r]千切られたり潰されたりするのを見るのは、
+[k]
+
+＠フローラ
+やっぱりそれはそれで[r]複雑な気分になったりはしますよ……？
+[k]
+
+[messageOff]
+[charaTalk B,G]
+[charaFace G 4]
+[charaFadein G 0.4 -250,0]
+[charaFadein V 0.4 330,-350]
+[wt 0.4]
+[charaFadeout B 0.1]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠ロビンフッド
+だから家の隅でコソコソやってんの。[r]一応、気は遣ってるんすよ。
+[k]
+
+？1：なるほど……
+？！
+
+[messageOff]
+[charaTalk G,F]
+[charaFadeout G 0.4]
+[charaFadeout V 0.4]
+[wt 0.4]
+
+＠張角
+ワシも符を作ったり何だりとやることはあるがの。[r]今はこの茶があれば暇潰しには充分じゃ。
+[k]
+
+＠張角
+葉が新鮮なせいか、なかなか美味いのう。[r]（ずずー）[charaMoveReturn F 0,-3 0.8][se adm25][wt 0.5]
+[k]
+
+[seStop adm25 0.5]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠花咲翁
+ふふ、そう言ってもらえると嬉しいね。[r]お代わりはどうかな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠張角
+うむ、もらおうかの。
+[k]
+
+[charaFace F 0]
+
+＠張角
+翁よ、ジジイはジジイ同士、[r]茶飲み話に花を咲かせようではないか。
+[k]
+
+[charaFace F 1]
+
+＠張角
+しかしこうなってくると、[r]ちっと茶請けがほしいところじゃな。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フローラ
+そんなこともあろうかと、[r]さやえんどうさんに力になってもらうところでした。
+[k]
+
+[charaFace B 21]
+
+＠フローラ
+少し待ってください。[r]これから筋取りという大事な作業に入りますので。
+[k]
+
+[charaFace B 13]
+
+＠フローラ
+……そろーっ……[wt 1.0]ぴーっ……。[wt 1.0][r]（真剣）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠張角
+このお茶がなくなってしまう前に[r]欲しいところなんじゃがのー……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠わらし
+てつだうー！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠フローラ
+はい、これは手伝ってほしいです！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル・オルタ
+暇だから私も手伝います。[r]ここの筋を取ればいいのね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠フローラ
+あ、ありがとうございます。[r]えへへぇ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk H]
+[charaFace H 17]
+[charaFadein H 0.1 1]
+
+＠オルガマリー
+まったく、呑気なものね。
+[k]
+
+[charaFace H 4]
+
+＠オルガマリー
+まあ、休息が大事なのは理解するわ。
+[k]
+
+＠オルガマリー
+天候のせいで作業ができないというのなら、[r]そのぶんきちんと身体を休めておきなさい。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠マシュ
+そうですね。[r]防波堤となるお花畑を増やすことには成功しましたが、
+[k]
+
+＠マシュ
+怪奇植物たちの襲撃自体が[r]少なくなるわけではないと思います。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+
+＠ダ・ヴィンチ
+うん。きっと今夜も、その対処のために[r]動く必要はあるはずだ。
+[k]
+
+＠ダ・ヴィンチ
+今は英気を養っておくのがいいと思うよ。
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.0]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.0]
+[wt 1.0]
+
+？1：（それじゃあ、今のうちに）
+？2：（一眠りさせてもらおうかな……）
+？！
+
+[bgmStop BGM_BISCIONE_1 2.0]
+
+[messageOff]
+[charaScale U 1.3]
+[charaFadein U 1.0 0,-300]
+[wt 1.8]
+[charaFadeout J 0.1]
+[charaPut Y 2000,2000]
+
+[overlayFadein R 1.0 0,-1150]
+[overlayFadein S 1.0 0,350]
+[charaMove R 0,-1050 2.0]
+[charaMove S 0,250 2.0]
+[charaPut T 1]
+[charaFadeTime T 2.0 0.6]
+[blur lens 1.0 1 1]
+[wt 2.5]
+
+[se ad555 1.5 0.1]
+[cueSe SE_25 25_ad1458 1.5 0.8]
+[wt 0.5]
+[cueSe SE_26 26_ade1312]
+[wt 3.5]
+
+？1：（雨の音が強くなってきてる……）
+？2：（気にはなるけど、眠い……）
+？！
+
+
+[blur lens 1.5 3 1]
+[charaMove R 0,-1000 2.0]
+[charaMove S 0,200 2.0]
+[charaFadeTime T 2.0 0.9]
+[wt 2.8]
+
+[charaMove R 0,-970 1.5]
+[charaMove S 0,170 1.5]
+[fadeout black 1.5]
+[seStop ad555 1.5]
+[cueSeStop 26_ade1312 1.5]
+[cueSeStop 25_ad1458 1.5]
+[wait fade]
+
+[blurOff]
+[charaFadeout R 0.1]
+[charaFadeout S 0.1]
+[charaFadeout T 0.1]
+[charaFadeout U 0.1]
+
+[pictureFrameTop cut063_cinema]
+
+[scene 270902]
+[wt 2.0]
+
+[cueSe SE_26 26_ade1312]
+[se ad555 1.5 0.1]
+[cueSe SE_25 25_ad1458 1.5 0.8]
+[fadein black 1.5]
+[wait fade]
+
+
+[wt 3.0]
+
+[se ad661]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-70]
+[charaMove C 0,-50 0.5]
+[wt 0.5]
+[seStop ad661 0.3]
+[wt 0.5]
+
+[wt 1.5]
+
+[cueSe SE_24 24_ad1351]
+[charaMove C -100,-50 1.0]
+[wt 0.5]
+[charaFadeout C 0.4]
+[wt 0.4]
+[cueSeStop 24_ad1351 1.0]
+[wt 1.5]
+
+[wipeout leftToRight 1.0 1.0]
+[cueSeStop 25_ad1458 1.0]
+[cueSeStop 26_ade1312 1.0]
+[seStop ad555 1.0]
+[wait wipe]
+
+[scene 271103]
+[wt 1.0]
+
+[se ade307 1.0 0.2]
+[se ad555 1.0 0.3]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_38 0.1]
+
+
+＠
+[line 3]何かを、忘れているような気がする。
+[k]
+
+[messageOff]
+[wt 0.2]
+[se ad31]
+[charaPut Z 0,58]
+[wt 0.2]
+[scene 10000]
+[charaScale X 0.6]
+[charaFadein X 0 0,-130]
+[charaPut Z 2000,2000]
+[wt 0.2]
+[seStop ad31]
+[wt 0.3]
+
+[se ad31]
+[charaPut Z 0,58]
+[wt 0.2]
+[scene 271103]
+[charaFadeout X 0]
+[charaPut Z 2000,2000]
+[wt 0.2]
+[seStop ad31]
+[wt 0.3]
+
+＠
+それが何かは、思い出せない。
+[k]
+
+＠
+でも……だからこそ。
+[k]
+
+＠
+手の届く範囲にあるものは。
+[k]
+
+＠
+目の前にある、健気に、懸命に、全力で生きている[r]小さなものたちのことは[line 3]
+[k]
+
+＠
+全てを投げ打ってでも、[r]守ってあげたいと思うのだ。
+[k]
+
+＠
+……あるいは、それが。
+[k]
+
+＠
+思い出せない何かに対する、[r]逃避や贖罪に過ぎないのだとしても。
+[k]
+
+[messageOff]
+[se ad852 1.0 1.0]
+[effect bit_talk_noble_light]
+[wt 3.0]
+[seStop ad852 2.5]
+[effectForceStop bit_talk_noble_light]
+[wt 4.2]
+
+[messageOff]
+[fadeout black 2.0]
+[seStop ade307 2.0]
+[seStop ad555 2.0]
+[bgmStop BGM_EVENT_38 2.0]
+[wait fade]
+
+[pictureFrame]
+[effectDestroy bit_talk_noble_light]
+
+[charaSet B 1098341700 1 フローラ]
+[imageSet R back10000 1]
+[charaScale R 1.01]
+[imageSet S back10000 1]
+[charaScale S 1.01]
+[charaDepth R 20]
+[charaDepth S 21]
+
+[scene 270902]
+[overlayFadein R 0 0,-736]
+[overlayFadein S 0 0,736]
+[wt 2.0]
+
+[se ade486 1.5 0.1]
+[se ad555 1.5 0.1]
+[cueSe SE_25 25_ad1458 1.5 0.8]
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+[seStop ade486 3.0]
+[seStop ad555 3.0]
+[cueSeStop 25_ad1458 3.0]
+[wt 4.5]
+
+[charaTalk off]
+[cueSe SE_26 26_ade1351]
+[wt 2.0]
+
+[charaFadein C 0.4 -30,0]
+[charaMove C 0,0 1.0]
+
+＠？？？
+……そーっ……
+[k]
+
+[messageOff]
+[charaMove R 0,-836 0.7]
+[charaMove S 0,836 0.7]
+[wt 1.0]
+
+[se ade505]
+[scene 270901 0.2]
+[charaFace B 0]
+[charaFadein B 0 1]
+[charaFadeout C 0.2]
+[wt 0.5]
+[charaFilter C normal]
+[charaFace B 19]
+
+＠フローラ
+きゃあ？
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+
+[messageOff]
+[wt 0.5]
+
+？1：風が激しかったから
+？2：花は大丈夫かな、と思ってたんですけど
+？！
+
+[messageOff]
+[charaTalk on]
+[charaTalk B,C]
+[charaScale W 1.2]
+[charaScale C 1.2]
+[charaFace C 19]
+[charaFadein C 0.8 0,30]
+[charaFadein W 0.8 0,-267]
+[charaMoveScale C 1.3 2.0]
+[charaMoveScale W 1.3 2.0]
+[charaMove C 0,45 2.0]
+[charaMove W 0,-300 2.0]
+[wt 3.0]
+
+[charaFadeout B 0.1]
+
+[subCameraOn 2]
+[charaLayer E sub #A]
+[charaLayer U sub #A]
+[subCameraFilter #A maskEdge cut359_mask16 5 255,255,255,255 0]
+
+[charaScale U 1.6]
+[charaFace E 2]
+[charaFadein E 0.1 -30,300]
+[charaFadein U 0.1 -600,190]
+
+[charaLayer K sub #B]
+[charaLayer L sub #B]
+[charaLayer V sub #B]
+[subCameraFilter #B maskEdge cut359_mask10 5 255,255,255,255 0]
+
+[charaScale V 1.4]
+[charaFace L 2]
+[charaFace K 6]
+[charaFadein L 0.1 85,370]
+[charaFadein K 0.1 -35,300]
+[charaFadein V 0.1 350,170]
+
+[charaTalk E]
+[subRenderFadeinFSSideR #A 0.4 380,-350]
+[subRenderMoveFSSideR #A 400,-300 0.4]
+[wt 0.4]
+
+＠わらし
+おはな、かおにつち、ついてるー！[r]あはは！
+[k]
+
+[charaFace E 14]
+
+＠わらし
+……すぴー。
+[k]
+
+[messageOff]
+[charaTalk K,L]
+[subRenderFadeinFSSideL #B 0.4 -380,-350]
+[subRenderMoveFSSideL #B -400,-300 0.4]
+[wt 0.4]
+
+＠ツチノコたち=spot[K,L]
+ちちー……。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[subRenderFadeout #B 0.3]
+[wt 0.3]
+
+[charaTalk C]
+[charaFadeout E 0]
+[charaFadeout K 0]
+[charaFadeout L 0]
+[charaFadeout U 0]
+[charaFadeout V 0]
+[wt 0.5]
+
+？1：ひょっとして……
+？2：一人で、畑に……？
+？！
+
+[charaLayer E normal]
+[charaLayer K normal]
+[charaLayer L normal]
+[charaLayer U normal]
+[charaLayer V normal]
+[subCameraOff]
+
+[charaFace C 10]
+
+＠C：フローラ
+え、ええと、これはですね、そのぅ。
+[k]
+
+[charaDepth N 10]
+[charaFace A 24]
+[charaFadein A 0 -100,0]
+[charaFace N 16]
+[charaFadein N 0 180,-130]
+
+[messageOff]
+[charaTalk C,A]
+[charaFadeout C 0.4]
+[charaFadeout W 0.4]
+[wt 0.5]
+
+＠花咲翁
+いけないよ、ハナちゃん。
+[k]
+
+＠花咲翁
+そういうことが必要になったら儂にも声をかける、[r]と前に決めていただろう？
+[k]
+
+[messageOff]
+[charaTalk N,A]
+[charaFaceFade N 19 0.2]
+[cueSe SE_26 26_ade1338]
+[wt 1.4]
+
+[charaFadeout A 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠フローラ
+それは、そうですが。
+[k]
+
+[charaFace B 11]
+
+＠フローラ
+お花畑ができて最初の夜ですし、[r]来てた雨風もこう、
+[k]
+
+＠フローラ
+気をつけなくちゃいけないレベルマックスというよりは[r]レベル１、みたいな感じでしたし、
+[k]
+
+＠フローラ
+皆さんよくお休みみたいでしたし……[r]わたし一人で充分かな、と……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+
+＠ロビンフッド
+休んじゃあいましたけど当然気付きますよ、[r]サーヴァントなんですから。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル・オルタ
+察するに……花畑を雨風から守る仕事をしてたのね？[r]深夜なのに、私たちに黙って。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠フローラ
+ちょっと、その、土に力を分けたり、[r]飛ばされそうなお花さんを応援したりしただけですよ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠張角
+それ自体はひどく[#有:あ]り[#難:がた]いことではあるがのう。
+[k]
+
+[charaFaceFade F 7 0.2]
+
+＠張角
+しかしながら、我らがマスターは、[r]ちっとばかりご不満な部分があるようじゃ。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[subCameraOn 1]
+[charaLayer G sub #A]
+[charaLayer D sub #A]
+[charaLayer F sub #A]
+[charaLayer U sub #A]
+[subCameraFilter #A maskEdge cut359_mask08 4 255,255,255,255 0]
+[charaDepth U 1]
+[charaDepth G 2]
+[charaDepth D 3]
+[charaDepth F 4]
+
+[charaScale G 1.2]
+[charaScale D 1.2]
+[charaScale F 1.2]
+[charaScale U 1.2]
+[charaFace G 1]
+[charaFace D 8]
+[charaFace F 7]
+[charaFadeinFSL G 0.1 -340,250]
+[charaFadein D 0.1 0,250]
+[charaFadeinFSR F 0.1 340,250]
+[charaFadein U 0.1 0,-72]
+
+？1：今度からは、ちゃんと教えてくださいね
+？2：自分たちも手伝いますから
+？！
+
+[charaFace B 10]
+
+＠フローラ
+えっと、でも、わざわざ……。[r]迷惑になるというか、危ないこともありますし……。
+[k]
+
+？1：手伝いますから！
+？！
+
+[messageOff]
+[charaFace B 20]
+[wt 1.2]
+
+？1：こういうときに仲間にかける迷惑は
+？2：迷惑とは言わないのです
+？！
+
+？1：むしろ、仲間だから、迷惑をかけてほしい……
+？2：みたいな感じだったりします
+？！
+
+[messageOff]
+[blur lens 0.3 3 1]
+[charaTalk off]
+[subRenderFadein #A 0.3 0,-280]
+[wt 2.0]
+
+[blurOff lens 0.5]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[charaFadeout U 0.1]
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[charaScale G 1.0]
+[charaScale D 1.0]
+[charaScale F 1.0]
+[wt 0.2]
+[charaLayer G normal]
+[charaLayer D normal]
+[charaLayer F normal]
+[charaLayer U normal]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 16]
+[wt 1.2]
+[charaFace B 17]
+
+＠フローラ
+……ふふ、わかりました。[r]ごめんなさい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル・オルタ
+謝るようなことでもありません。
+[k]
+
+[charaFace D 2]
+
+＠エレシュキガル・オルタ
+はい、冷酷で公正な冥界の女主人として裁定します！
+[k]
+
+＠エレシュキガル・オルタ
+フローラは胸を張って、同じようなことがあったら[r]次は必ず私たちを頼ること。
+[k]
+
+＠エレシュキガル・オルタ
+頼る必要性がなくても使うこと。[r]あとついでに顔と手を洗ってくること！　以上！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠フローラ
+はぁい。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+[wt 0.7]
+[charaShake E 0.05 1 2 0.2]
+[charaFace E 12]
+
+＠わらし
+はっ。
+[k]
+
+[charaFace E 8]
+
+＠わらし
+……おはな、おこられた？[r]でも、わらってる？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠フローラ
+ふふ、怒られてはないですよ。
+[k]
+
+[charaFace B 17]
+
+＠フローラ
+逆に、ちょっと嬉しいことがあった、みたいな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFace L 1]
+[charaFace K 1]
+[charaFadein E 0.1 2]
+[charaFadein L 0.1 -100,0]
+[charaFadein K 0.1 -300,0]
+
+＠わらし
+[FFFFFF]？[-]？？
+[k]
+
+[charaTalk K]
+
+＠K：ツチノコ
+ちちっちちー！
+[k]
+
+[charaFadeout L 0.1]
+[charaFadeout K 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠花咲翁
+きみたちのような善い人が来てくれて、[r]本当に儂らは幸運だなあ。
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[charaFace A 4]
+
+＠花咲翁
+……おや？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 17]
+[charaFadein N 0.1 1]
+[wt 0.3]
+[cueSe SE_26 26_ade1335]
+[wt 2.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout N 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[criMovie talk_mov379 bgmPlay false]
+[wt 10.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 270901]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_141 0.1]
+
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+
+＠花咲翁
+例の気配だ。[r]また、来たかな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+
+＠フローラ
+雨が止んでからなのが不幸中の幸い、[r]といったところですかねぇ……。
+[k]
+
+[charaFace B 1]
+
+＠フローラ
+でもどうせ汚れると思うから、[r]手と顔は洗わなくてよくなったかな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル・オルタ
+そんなわけないでしょう。[r]少しは女神としての美的な威厳とか気にしなさい。
+[k]
+
+＠エレシュキガル・オルタ
+まったく、女神というよりは[r]花系バーサーカーみたいなところがある子ね……。
+[k]
+
+[charaFace D 6]
+
+＠エレシュキガル・オルタ
+これから戦闘があるんだから[r]魔力で姿を整えるような無駄遣いも禁止よ。
+[k]
+
+＠エレシュキガル・オルタ
+移動しながらでもいいから[r]少しは身だしなみを整えるように。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠花咲翁
+あちらの隅に[#鞄:かばん]が置いてあるだろう？
+[k]
+
+＠花咲翁
+今まで見つけた布はそこに入れてあるから、[r][#鞄:かばん]ごと持っていくといいよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠フローラ
+はぁいー……。
+[k]
+
+[messageOff]
+[cueSe SE_24 24_adm100]
+[charaMove B -100,0 1.0]
+[wt 0.3]
+[charaFadeout B 0.4]
+[wt 0.2]
+[cueSeStop 24_adm100 1.0]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+[wt 0.7]
+[charaFace E 1]
+[charaMove E -250,0 1.0]
+[cueSe SE_25 25_ade1146]
+[wt 0.3]
+[cueSeStop 25_ade1146 1.0]
+[charaFadeout E 0.4]
+[wt 1.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_141 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

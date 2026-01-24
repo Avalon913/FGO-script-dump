@@ -1,0 +1,1437 @@
+
+＄94-15-28-03-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 10020000 1 フローラ]
+[charaSet B 5059001 1 花咲翁]
+[charaSet C 1098342400 1 わらし]
+[charaSet D 5051001 1 張角]
+[charaSet E 2003001 1 ロビンフッド]
+[charaSet F 1098345300 1 エレシュキガル・オルタ]
+[charaSet G 1098346900 1 オルガマリー]
+[charaSet H 1098257310 1 ダ・ヴィンチ]
+[charaSet I 1098346800 1 マシュ]
+[charaSet J 1098220000 1 ネロ]
+[charaSet K 1098347000 1 デオン]
+[charaSet L 1098351200 1 葛飾北斎]
+[charaSet M 1098342900 1 ツチノコ_普]
+[charaSet N 1098343000 1 ツチノコ_胴]
+[charaSet O 1098343100 1 ツチノコ_長]
+[charaSet P 1098342200 1 翁の犬_第二]
+[charaSet Q 1098345300 1 エレシュキガル・オルタ（演出用）]
+[charaSet R 1098220000 1 ネロ（演出用）]
+[charaSet S 1098347000 1 デオン（演出用）]
+
+[sceneSet T 10000 1]
+[charaScale T 1.1]
+[sceneSet U 271200 1]
+[sceneSet V 271200 1]
+[sceneSet W 273000 1]
+
+[charaSet X 98115000 1 通信エフェクト用]
+[charaSet Y 98115000 1 通信エフェクト用]
+[charaSet Z 98115000 1 通信エフェクト用]
+
+[charaPut X 2000,2000]
+[charaEffect X bit_talk_10_LowLevel]
+[charaPut Y -1000,0]
+[charaEffect Y bit_talk_10_MiddleLevel]
+[charaPut Z 2000,2000]
+[charaEffect Z bit_talk_10_LowLevel]
+
+[scene 10000]
+
+[charaScale W 0.6]
+[charaFadein W 0.1 0,-90]
+[cameraMove 0.1 0,-20 1.2]
+[wt 0.1]
+
+[cameraMove 60.0 0,0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_156 0.1]
+[wt 0.8]
+
+＠
+何かを、忘れているような気がする。
+[k]
+
+＠
+大事な何かを。
+[k]
+
+＠
+忘れてはいけないはずの、何かを。
+[k]
+
+＠
+でも、それが何かがわからない。[r]すっぽりと、自分の中から抜け落ちている。
+[k]
+
+＠
+代わりに[#蟠:わだかま]るのは、[r]焦燥だ。不安だ。懸念だ。
+[k]
+
+[messageOff]
+[wt 1.2]
+
+＠
+この忘却された何かが、たとえば、[r]花にとっての水のようなものだとしたら。
+[k]
+
+＠
+それは、どれだけ、[r]罪深いことなのだろう[line 3]？
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_156 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout W 0.1]
+[cameraMove 0.1 0,0 1.0]
+
+[imageSet W cut772_flower1_1_rose 1]
+
+[charaTalk depthOff]
+[charaDepth P 1]
+[charaDepth B 2]
+[charaDepth T 3]
+[charaDepth W 4]
+[charaDepth F 5]
+[charaDepth A 6]
+[charaDepth C 7]
+[charaDepth O 8]
+[charaDepth N 9]
+[charaDepth M 10]
+[charaDepth G 11]
+[charaDepth X 12]
+[charaDepth U 13]
+[charaDepth D 14]
+[charaDepth E 15]
+[charaDepth Q 16]
+[charaDepth V 17]
+[charaDepth R 18]
+[charaDepth S 19]
+
+[charaDepth Y 25]
+[charaDepth Z 26]
+
+[charaDepth I 1]
+[charaDepth H 1]
+[charaDepth J 1]
+[charaDepth K 1]
+[charaDepth L 1]
+
+[scene 270800]
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_167 0.1]
+
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 1]
+
+＠フローラ
+むむむ。むむむむん……。
+[k]
+
+？1：（どきどき）
+？！
+
+[charaFace A 1]
+
+＠フローラ
+は[charaMoveReturn A 0,-3 0.3]い、ばっちりいただきました！[r]これで充分な量が溜まったと思います。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace P 0]
+[charaFadein B 0.1 -100,0]
+[charaFadein P 0.1 220,-110]
+
+＠花咲翁
+うん、よかった。
+[k]
+
+＠花咲翁
+これで、きみたちの花畑が作れるようになった、[r]ということだね。
+[k]
+
+[messageOff]
+[cueSe SE_26 26_ade1326]
+[charaMoveReturn P 220,-105 0.3]
+[charaTalk P,B]
+[charaFace B 11]
+[charaFace P 1]
+[wt 1.3]
+
+？1：やったー！
+？2：わくわくです！
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠わらし
+よ[charaMoveReturn C 0,5 0.5]ろこびー！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace M 1]
+[charaFace N 1]
+[charaFace O 1]
+[charaFadein M 0.1 -300,0]
+[charaFadein N 0.1 300,0]
+[charaFadein O 0.1 -25,0]
+[wt 0.2]
+[cueSeContinue SE_25 25_ade1144 1]
+[charaMoveReturn O -25,5 0.3]
+[wt 0.3]
+[cueSeContinue SE_25 25_ade1144 2]
+[charaMoveReturn N 300,5 0.5]
+[wt 0.15]
+[cueSeContinue SE_25 25_ade1144 3]
+[charaMoveReturn M -300,5 0.4]
+[wt 0.5]
+[cueSeContinue SE_25 25_ade1144 4]
+[charaMoveReturn O -25,5 0.3]
+[wt 1.0]
+
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フローラ
+さて、それじゃあ移動して[line 3]
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ad1066]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_167 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[cueSeStop 21_ad1066 1.0]
+[charaSet C 1098346400 1 わらし]
+[charaSet M 1098351200 1 葛飾北斎（演出用）]
+[charaDepth C 20]
+[charaDepth M 21]
+
+[scene 271200]
+[wt 1.5]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_MAP_122 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠フローラ
+みなさんのお花畑予定地に到着、です！
+[k]
+
+[charaFace A 3]
+
+＠フローラ
+どんなお花を植えるか決めましたか、[r][%1]さん？
+[k]
+
+＠フローラ
+こういう色がいい、とかの方向性だけでも[r]オッケーですよ。
+[k]
+
+[messageOff]
+[charaScale D 1.25]
+[charaScale U 1.3]
+[charaTalk D,A]
+[charaFace D 1]
+[charaFadein D 0.4 0,30]
+[charaFadein U 0.4 -190,-300]
+[wt 0.6]
+[charaPut A 220,0]
+[charaFace F 12]
+[charaFadein F 0.1 -220,0]
+
+＠張角
+確かに、一口に花と言ってもいろいろあるからのう。[r]赤い花、白い花、そして……な？
+[k]
+
+[charaFaceFade D 3 0.2]
+
+＠張角
+（一番最高なのは言う必要もないじゃろ、という顔）
+[k]
+
+？1：うーん、実はまだ……
+？2：決めきれてなくて……
+？！
+
+[messageOff]
+[charaFaceFade D 21 0.2]
+[wt 1.2]
+
+[charaTalk off]
+[charaScale E 1.2]
+[charaFace E 1]
+[charaPut E -210,20]
+[charaFadeTime E 0 0]
+[charaFadeout D 0.4]
+[charaMoveEase D 190,30 0.8 easeInOutSine]
+[charaMoveEase E -20,20 0.8 easeInOutSine]
+[charaMoveEase U 0,-300 0.8 easeInOutSine]
+[wt 0.5]
+[charaFadeTime E 0.3 1.0]
+[wt 0.5]
+
+＠ロビンフッド
+ま、選択肢が多すぎるとそうなりますよねぇ。
+[k]
+
+[charaFace E 1]
+
+＠ロビンフッド
+ちなみにオレは何でもいいんで、[r]マスターにお任せしますよ。
+[k]
+
+[messageOff]
+[charaScale Q 1.2]
+[charaFace Q 14]
+[charaPut Q -190,30]
+[charaFadeTime Q 0 0]
+[charaFadeout E 0.4]
+[charaMoveEase E 170,20 0.8 easeInOutSine]
+[charaMoveEase Q 0,30 0.8 easeInOutSine]
+[charaMoveEase U 190,-300 0.8 easeInOutSine]
+[wt 0.5]
+[charaFadeTime Q 0.3 1.0]
+[wt 0.5]
+
+＠Q：エレシュキガル・オルタ
+右に同じね。[r]花については詳しくないし。
+[k]
+
+[charaFace Q 12]
+
+＠Q：エレシュキガル・オルタ
+いろいろ勉強したいとは、思っているけど……。
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaTalk A,Q]
+[charaFadeout Q 0.4]
+[charaFadeout U 0.4]
+[wt 0.4]
+[charaScale E 1.0]
+[charaScale D 1.0]
+[charaScale Q 1.0]
+
+＠フローラ
+勉強したいんですか？[r]いいですね、素敵ですね！
+[k]
+
+[se ad984]
+[charaMoveEase A 80,0 0.5 easeOutCubic]
+[wt 0.2]
+
+＠フローラ
+何[charaFace F 13][charaShake F 0.05 3 3 0.3]でも聞いてください、いろいろ教えますから！
+[k]
+
+[charaTalk F]
+
+＠エレシュキガル・オルタ
+え、ええ、まあ、そのうちね？
+[k]
+
+[charaFace F 12]
+[charaPut T 0,-200]
+[charaFadeTime T 0.2 0.5]
+
+＠エレシュキガル・オルタ
+（花のことになるとやっぱりグイグイくるわね[r]　この子……）
+[k]
+
+[charaFadeout T 0.2]
+[charaFadeout F 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+
+[charaPut X 1]
+[charaTalk G]
+[charaFace G 17]
+[charaFadein G 0.1 1]
+
+＠オルガマリー
+花の種類なんて何でもいいでしょう。
+[k]
+
+[charaFace G 0]
+
+＠オルガマリー
+メリットとデメリットがあればそれを比較して決める。[r]その区別がないのならば適当に決める。それだけよ。
+[k]
+
+＠オルガマリー
+ランダムで何かが生えてくるようにしたって[r]別にいいと思うわ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 36]
+[charaFadein H 0.1 1]
+
+＠ダ・ヴィンチ
+合理的な考え方ではあると思うけど、[r]せっかくゼロから花畑を作れるんだよ？
+[k]
+
+[charaFace H 17]
+
+＠ダ・ヴィンチ
+そこに美の感情を[#誘起:ゆうき]する要素があるのなら、[r]それは一つの作品を作ろうとするのと一緒だと思うね。
+[k]
+
+[charaFace H 4]
+
+＠ダ・ヴィンチ
+芸術家としては、きちんと美的センスとか[r]意図が感じられるものがいいなー。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 10]
+[charaFadein I 0.1 1]
+
+＠マシュ
+はい。わたしとしても、その、
+[k]
+
+＠マシュ
+きちんとマスターの好みが反映された[r]お花畑が見てみたいな、という気分ではあります……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_122 1.5]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[charaPut T 0,0]
+
+＠オルガマリー
+別にそうできるならそれでいいけど、迷うくらいなら[r]それは時間の無駄だって話で[line 3][charaFadeTime T 0.2 0.6][wt 0.5][charaMoveEase Y 0,0 0.5 easeOutExpo][wt 0.2][se ad102][charaShake X 0.05 3 3 0.5][charaShake G 0.05 3 3 0.5][charaMoveEase X 2000,0 5.0 easeOutExpo][charaMoveEase G 2000,0 5.0 easeOutExpo][charaFace G 14]ぎ[messageShake 0.08 3 4 0.3][charaFadeTime T 0.5 0]ゃん！？[se ad348][seStop ad348 1.5]
+[k]
+
+
+[charaFadeout T 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠？？？
+ふっふっふ。[r]話は聞かせてもらったぞ！
+[k]
+
+[messageOff]
+[se ad539]
+[charaPut Y 2500,2500]
+[wt 0.1]
+[charaPut Y 1]
+[wt 0.1]
+[charaPut Y 2500,2500]
+[wt 0.1]
+[charaPut Y 1]
+[wt 0.1]
+[charaPut Y 2500,2500]
+[wt 0.1]
+[charaPut Y 1]
+[wt 0.1]
+[charaPut Y 2500,2500]
+[wt 0.1]
+[seStop ad539 0.1]
+[charaPut Z 1]
+[wt 0.7]
+[charaEffectDestroy Y bit_talk_10_MiddleLevel]
+
+[se ad1]
+[charaTalk J]
+[charaFace J 6]
+[charaFadein J 0.4 1]
+[wt 1.0]
+
+[bgm BGM_MAP_2 0.1]
+
+＠ネロ
+花の話というなら、[r]どうしてこの薔薇の皇帝を呼ばぬのか！
+[k]
+
+[charaFace J 7]
+
+＠ネロ
+ローマ皇帝ネロ・クラウディウス、
+[k]
+
+＠ネロ
+マスターに美しき花園のなんたるかを教えるべく[r]ここに見参、であーる！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut Z 2500,2500]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ロビンフッド
+うーわ、出たよ赤いのが。[r]あれはうるさいぜ～？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut X 1]
+[charaTalk J]
+[charaFace J 5]
+[charaFadein J 0.1 1]
+
+＠ネロ
+貴様こそうるさいぞ緑の。[r]花の[#雅:みやび]を[#解:かい]さぬ野卑な森人は黙っているがよい！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 19]
+[charaFadein G 0.1 1]
+
+＠オルガマリー
+ちょっと。なんで勝手に一介のサーヴァントが[r]ここに割り込んできてるのよ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 28]
+[charaFadein I 0.1 1]
+
+＠マシュ
+ええと。どうしてもマスターにアドバイスしたい、[r]とのことで……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠ネロ
+うむ。マスターよ、[r]花園に何を植えるか迷っておるとな？
+[k]
+
+[charaFace J 1]
+
+＠ネロ
+であれば、余がその答えを教えてやろう。[r][#完全無欠:か ん ぜ ん む け つ]に正解一択な真理を教えてやろう。
+[k]
+
+[charaFace J 6]
+
+＠ネロ
+それはもちろん[line 3]
+[k]
+
+[charaFace J 7]
+
+＠ネロ
+[f large]薔薇の花！　[wt 0.5]であーる！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut X 2500,2500]
+
+[subCameraOn 1]
+[charaLayer R sub #A]
+[charaLayer S sub #A]
+[charaLayer Z sub #A]
+[charaLayer V sub #A]
+[subCameraFilter #A through]
+
+[charaScale Z 0.8]
+[charaScale R 0.8]
+[charaTalk off]
+[charaFace R 8]
+[charaFadein R 0.1 -360,-180]
+[charaPut Z -360,-180]
+
+[charaPut T 0,-150]
+[charaFadeTime T 0.3 0.8]
+[charaFadein W 0.3 0,-170]
+[wt 1.0]
+[subRenderFadein #A 0.4 0,0]
+[wt 0.6]
+
+＠ネロ
+見よ、この情熱的な真紅の姿を！[r]まさにゴージャス、まさにラグジュアリー！
+[k]
+
+[charaFace R 6]
+
+＠ネロ
+想像してみるがよい。この美しき花が[r]地一杯に咲き乱れている光景を。
+[k]
+
+[charaFace R 7]
+
+＠ネロ
+皇帝と、そのマスターたる貴様にふさわしい花園と[r]いえば、薔薇の花園以外にないのであーる！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[charaFadeout W 0.4]
+[charaFadeout T 0.4]
+[wt 0.4]
+[charaPut Z 0,15]
+[charaPut R 0,15]
+[charaScale Z 1.1]
+[charaScale R 1.1]
+[charaScale V 1.1]
+[charaFadein V 0.1 0,-233]
+[subCameraFilter #A normal]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠フローラ
+いえ、さすがに今は地一杯までは[r]広げられないんですけど……
+[k]
+
+[charaFace A 0]
+
+＠フローラ
+でも、薔薇は勿論、[r]問題なく植えることができますよ。
+[k]
+
+＠フローラ
+棘には気をつけなくちゃいけませんけど、[r]確かにとっても綺麗なお花ですよね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut X 1]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠ネロ
+む。そしてそなたが噂に聞くフローラ神か。[r]そなたに言っておきたいことがある。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk A]
+[charaFace A 20]
+[charaFadein A 0.1 1]
+
+＠フローラ
+えっ。[r]な、なんでしょお……？
+[k]
+
+[imageSet W cut772_flower1_2_lily 1]
+[charaDepth W 4]
+
+[messageOff]
+[charaTalk off]
+[charaFace R 0]
+[subRenderFadein #A 0.4 0,0]
+[wt 1.5]
+
+＠ネロ
+余は。[r]余はな……
+[k]
+
+[messageOff]
+[subRenderMoveScaleEase #A 1.1 0.5 easeInOutQuint]
+[subRenderMoveEase #A 0,-20 0.5 easeInOutQuint]
+[wt 0.5]
+
+＠ネロ
+[f large][se ade242][charaFace R 7]余は！　[wt 0.8][se ade242]そなたのことが、[wt 0.7][se ad186][messageShake 0.05 2 3 0.8][fowardEffect bit_talk_41_remake]大好きだー！[wt 0.8]
+[k]
+
+[messageOff]
+[charaFace A 19]
+[fowardEffectStop bit_talk_41_remake]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[charaPut Z 0,30]
+[charaPut R 0,30]
+[charaPut V 0,-267]
+[charaScale Z 1.2]
+[charaScale R 1.2]
+[charaScale V 1.2]
+[subRenderMoveScaleEase #A 1.0 0.1 easeInOutQuint]
+
+＠フローラ
+はい！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 12]
+[charaFace P 1]
+[charaFadein B 0.1 -100,0]
+[charaFadein P 0.1 220,-110]
+
+＠花咲翁
+ははは。[r]人気だねえ、ハナちゃん。
+[k]
+
+[messageOff]
+[cueSe SE_26 26_ade1330]
+[charaTalk off]
+[charaMoveReturn P 220,-105 0.3]
+[wt 0.3]
+[charaMoveReturn P 220,-105 0.3]
+[wt 0.7]
+
+[charaFace R 1]
+[subRenderFadein #A 0.5 0,0]
+[charaMove X 0,-20 30.0]
+[charaMove R 0,-20 30.0]
+[charaMove V 0,-317 30.0]
+[wt 0.7]
+[charaFadeout B 0.1]
+[charaFadeout P 0.1]
+[charaPut X 1]
+[charaFace J 8]
+[charaFadein J 0.1 1]
+
+＠ネロ
+花の女神フローラ。
+[k]
+
+＠ネロ
+言うまでもなく花とは美であり、[r]そして余は美を[#解:かい]し花を愛する皇帝。
+[k]
+
+＠ネロ
+であるゆえ無論、フローラ神へは[r]余も心からの親愛と敬愛を捧げている。
+[k]
+
+[charaFace R 6]
+
+＠ネロ
+まあ余は[#芸術の神:ミ　ュ　ー　ズ]に格別の寵愛を[r]受けている身ではあるが、
+[k]
+
+＠ネロ
+かのミューズとて、花の女神と[r]仲良くするなとは[#決:け]して言うまい。
+[k]
+
+＠ネロ
+むしろそれを通じてもっと己を高めよと[r]語りかけてきている……[wt 0.5]ような気がする。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.5]
+[wt 0.7]
+[subCameraFilter #A through]
+[charaMove V 0,-317 0.1]
+[charaFadeout V 0.1]
+[charaFadeout R 0.1]
+[charaScale Z 1.0]
+[charaScale S 0.8]
+[charaFace S 1]
+[charaFadein S 0.1 -360,-180]
+[charaPut Z -360,-100]
+
+＠ネロ
+うむ、つまり！　花の女神よ、[r]余の信仰をありがたく受け取るがよい！
+[k]
+
+＠ネロ
+神殿が必要であれば[r]今すぐ臣下に命じて建てさせよう！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠フローラ
+お、お気持ちはありがたいですけど、[r]今は大丈夫ですかね。
+[k]
+
+＠フローラ
+近くのお花を愛でていただければ、[r]それで充分というか……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut X 1]
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠ネロ
+謙虚なり花の女神よ！[r]そして言わずもがなである！
+[k]
+
+[charaFace J 7]
+
+＠ネロ
+余は常に薔薇と共にある、[r]薔薇の皇帝であるからな！
+[k]
+
+＠ネロ
+とにかくそちらの花畑も、余とマスターにふさわしい[r]薔薇の園にすべきなのであーる！
+[k]
+
+？1：薔薇かあ、悪くないね
+？！
+
+[bgmStop BGM_MAP_2 1.5]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+[charaEffectDestroy X bit_talk_10_LowLevel]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[charaFaceFade D 3 0.2]
+
+＠張角
+まあ待て、マスターや。[r]すぐに決めるのは早い。
+[k]
+
+＠張角
+他にも候補はあるのではないかね？[r]そう、たとえば、色で言えば[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad1]
+[charaPut X 1]
+[charaEffect X bit_talk_10_LowLevel]
+[wt 0.4]
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_192 0.1]
+
+＠デオン
+ああ、白い花畑というのも[r]いいんじゃないかな。
+[k]
+
+＠デオン
+もちろん、そこに咲くのは[r]清純なる白の百合だ。
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[messageOff]
+[charaTalk off]
+[charaPut T 0,-200]
+[charaFadeTime T 0.3 0.8]
+[charaFadein W 0.3 0,-150]
+[wt 1.0]
+[subRenderFadein #A 0.4 0,0]
+[wt 0.6]
+
+＠デオン
+私の仕えるフランス王家の象徴、[r]というのを抜きにしても、
+[k]
+
+＠デオン
+清く正しく美しい、カルデアの花畑としては[r]これ以上ないセレクションではないかと思う。
+[k]
+
+[charaFace S 0]
+
+＠デオン
+その地に一面のフルール・ド・リスが咲き誇ることは、[r]皆の誇りと使命感を否応なく奮い立たせ、
+[k]
+
+＠デオン
+それはきっと特異点解決にも役立つ[r]精神的な支えになるだろう。
+[k]
+
+＠デオン
+マスターの選択、期待しているよ。
+[k]
+
+？1：白い百合かあ、それもいいね
+？！
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[charaFadeout W 0.4]
+[charaFadeout T 0.4]
+[wt 0.4]
+[charaFadeout S 0]
+
+[imageSet W cut772_flower1_3_hydrangea 1]
+[charaLayer M sub #A]
+[charaDepth W 4]
+[charaPut Y 2000,2000]
+[charaEffect Y bit_talk_10_LowLevel]
+
+[charaScale M 0.8]
+[charaFace M 14]
+[charaFadein M 0.1 -360,-180]
+
+[charaPut X 1]
+[charaTalk on]
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+＠オルガマリー
+また呼んでないのに来たわ。[r]どうなってるの？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 9]
+[charaFadein I 0.1 1]
+
+＠マシュ
+す、すみません。
+[k]
+
+[charaFace I 11]
+
+＠マシュ
+実のところ、お花に関して[#一家言:い っ か げ ん]あるサーヴァントの[r]皆さんも結構な数、いらっしゃると思いますので。
+[k]
+
+＠マシュ
+この特異点の状況を知れば、アドバイスを[r]したくなってしまうのも当然なのではないかと……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠オルガマリー
+ふん。[r]それは理解しなくもないけれど。
+[k]
+
+＠オルガマリー
+花が人間の文化や歴史と共にあったことは[r]否定できないもの。
+[k]
+
+[charaFace G 17]
+
+＠オルガマリー
+人類史に刻まれた英雄ともなれば、花の[r]エピソードの一つや二つ、持っていて当然だとは思うわ。
+[k]
+
+[charaFace G 2]
+
+＠オルガマリー
+だからって、このカルデア所長たるわたしを押し退けて[r]意見を主張していいかというのは別問題[line 3]
+[k]
+
+[bgmStop BGM_EVENT_192 0.5]
+
+[messageOff]
+[charaTalk L,G]
+[charaFace L 13]
+[charaPut Y 200,1000]
+[charaFadein L 0.1 200,1000]
+[charaMoveEase Y 0,0 1.0 easeOutExpo]
+[charaMoveEase L 0,0 1.0 easeOutExpo]
+[wt 0.25]
+[se ad102]
+[charaFace G 14]
+[charaShake G 0.05 3 3 0.5]
+[charaRollAxis X z 360 0.8 1 1 0]
+[charaRollAxis G z 360 0.8 1 1 0]
+[charaMoveEase X -400,-1000 1.0 easeOutExpo]
+[charaMoveEase G -400,-1000 1.0 easeOutExpo]
+[wt 0.3]
+[charaRollAxisLoopStop X]
+[charaRollAxisLoopStop G]
+[wait charaRollMoveEx X]
+[wait charaRollMoveEx G]
+[charaPut X 2000,2000]
+[charaFadeout G 0]
+
+[bgm BGM_MAP_71 0.1]
+
+＠葛飾北斎
+ますたあ殿、花畑を作るって？
+[k]
+
+[charaFace L 19]
+
+＠葛飾北斎
+ああ、いい、いいねぇ、[r]花ってのはたいてい面白い題材さァ！
+[k]
+
+＠葛飾北斎
+一本一本、ぱっと見同じようで全然違う。[r][#千差万別:せ ん さ ば ん べ つ]にして[#百花繚乱:ひゃっかりょうらん]、てなもんだ！
+[k]
+
+[charaFace L 23]
+
+＠葛飾北斎
+今回は何がいいかねぇ。
+[k]
+
+[charaFace L 15]
+
+＠葛飾北斎
+ああ、そう言えば昔、[r][#紫陽花:あ じ さ い]を描いたことがあったっけ。
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+[charaPut Y 2000,2000]
+
+[charaTalk off]
+[charaPut T 0,-200]
+[charaFadeTime T 0.3 0.8]
+[charaFadein W 0.3 50,-200]
+[wt 1.0]
+[subRenderFadein #A 0.4 0,0]
+[wt 0.6]
+
+＠葛飾北斎
+梅雨みたいなジメジメしたのは好きじゃないが、[r]あの花だけは別でい。
+[k]
+
+[charaFace M 9]
+
+＠葛飾北斎
+うん、久しぶりに描きたくなってきたかもだ。
+[k]
+
+＠葛飾北斎
+何を植えるか決まってないってんなら、[r]ぜひ[#紫陽花:あ じ さ い]にしてもらいたいねぇ！
+[k]
+
+？1：[#紫陽花:あ じ さ い]も風情があるね……
+？！
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[charaFadeout W 0.4]
+[charaFadeout T 0.4]
+[wt 0.4]
+[charaFadeout M 0]
+[charaPut Z 2000,2000]
+
+[charaSet M 1098346900 1 オルガマリー_演出用]
+[charaSet R 5051001 1 張角_演出用]
+[charaDepth M 22]
+[charaDepth R 23]
+
+[charaLayer M sub #A]
+[charaLayer R sub #A]
+[charaScale Z 1.1]
+[charaScale M 1.1]
+[charaScale V 1.1]
+[charaFace M 6]
+[charaFadein M 0.1 0,15]
+[charaFadein V 0.1 0,-233]
+[charaPut Z 0,15]
+[subCameraFilter #A normal]
+
+[charaTalk on]
+[charaPut X 1]
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+＠オルガマリー
+ああもう、きりがないわ。
+[k]
+
+[charaFace G 6]
+
+＠オルガマリー
+[%1]も[#優柔不断:ゆうじゅうふだん]はやめて、[r]さっさと[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[bgmStop BGM_MAP_71 0.5]
+
+[se ad326 0.7]
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠張角
+待て待てーい！
+[k]
+
+[bgm BGM_EVENT_160 0.1]
+
+[charaFaceFade D 13 0.2]
+
+＠張角
+言わずもがなであろうと黙っておったが、[r]大事なことを忘れてはおらんか？
+[k]
+
+[charaFace D 14]
+
+＠張角
+赤も白も紫もよいが、[r]他にも花の色の種類はあろう。
+[k]
+
+[charaFaceFade D 3 0.2]
+
+＠張角
+き・[wt 0.5]い・[wt 0.5]ろ、[wt 0.5]じゃよ？
+[k]
+
+＠張角
+うん、ワシは黄色が好きじゃなー。[r]種類はなんでもいいから黄色い花がいいなー。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut X 1]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠オルガマリー
+そうねぇ、黄色も悪くないかもね？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+[wt 0.2]
+[charaMoveReturn D 0,-4 0.4]
+
+＠張角
+（うむうむ、と頷く）[wt 0.4][charaMoveReturn D 0,-4 0.4][wt 0.4]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut X 1]
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+
+＠オルガマリー
+貴方の宝具とか術式にも関係してそうだし、[r]黄色い何かを媒介に色々と悪さもできそうだものね？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut X 2000,2000]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+[wt 0.2]
+[charaMoveReturn D 0,-4 0.4]
+
+＠張角
+（うむうむ、と頷く）[wt 0.4][charaMoveReturn D 0,-4 0.4][wt 0.4]
+[k]
+
+[bgmStop BGM_EVENT_160 1.0]
+
+[messageOff]
+[charaTalk M,D]
+[subRenderFadein #A 0.3 0,0]
+[subRenderMoveScaleEase #A 1.1 0.5 easeOutQuart]
+[subRenderMoveEase #A 0,-20 0.5 easeOutQuart]
+[wt 0.3]
+[se ad789]
+
+＠M：オルガマリー
+ハイ危険すぎるから所長権限で黄色いのだけは不許可よ！[r]キリがないし、今ある三つの中から選びなさい！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[se ad119]
+[seStop ad119 1.5]
+[charaScale R 1.1]
+[charaTalk R]
+[charaFace R 11]
+[charaFadein R 0.1 0,15]
+
+＠R：張角
+な[messageShake 0.05 5 5 0.5]んじゃとー！？[wait se ad119]
+[k]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+[charaFaceFade R 10 0.2]
+
+＠R：張角
+誘導尋問とはひどいのう。[r]老い先短い老人の趣味というだけなのにのう。
+[k]
+
+[charaFaceFade R 15 0.2]
+[charaFace B 24]
+[charaFace D 15]
+[charaFadein B 0.1 250,0]
+[charaFadein D 0.1 -150,0]
+
+＠R：張角
+悲しいのう、[r]先人に対する[#若人:わこうど]たちのこの仕打ち。
+[k]
+
+[messageOff]
+[charaTalk D,R]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[charaLayer C sub #A]
+[subCameraFilter #A maskEdge cut359_mask14 4 255,255,255,255 0]
+[subRenderMoveScaleEase #A 1.0 0.1 easeOutQuart]
+[charaFace C 12]
+[charaFace R 12]
+[charaFadein C 0.1 410,200]
+[charaScale R 1.4]
+[charaScale V 1.4]
+[charaPut R 500,10]
+[charaPut V 570,-385]
+
+＠張角
+翁よ、貴様になら気持ちがわかるじゃろ？[r]慰めておくれ。
+[k]
+
+[cueSe SE_24 24_ade1034 0.7]
+[charaShake D 0.08 2 2 1.2]
+[charaMove D -50,0 1.2]
+[wt 0.3]
+
+＠張角
+よよよ……[wt 0.5][cueSeStop 24_ade1034 0.4][wt 0.7][charaFaceFade D 8 0.2]（ちらり）。
+[k]
+
+[charaFace B 6]
+
+＠花咲翁
+わからないけど、慰めてはあげられるよ。[r]よ[cueSe SE_24 24_ade1008][charaFace D 12][charaMoveReturn B 250,-5 0.5]しよし。[wt 0.5][cueSeStop 24_ade1008 0.5][charaMoveReturn B 250,-5 0.5][wt 0.5]
+[k]
+
+[messageOff]
+[blur lens 0.3 3 1]
+[charaTalk C]
+[subRenderFadein #A 0.3 -780,-50]
+[wt 0.6]
+[cueSe SE_22 22_ade695]
+[charaMoveReturn C 410,195 0.5]
+
+＠わらし
+なくなー？[wt 0.5][cueSe SE_22 22_ade695][charaMoveReturn C 410,195 0.55][wt 0.5]
+[k]
+
+[messageOff]
+[blurOff lens 0.5]
+[subRenderFadeout #A 0.3]
+[charaFadeout B 0.3]
+[charaFadeout D 0.3]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠ロビンフッド
+張角の演技はいつものことだから[r]マスターたちも気にしてないし、
+[k]
+
+＠ロビンフッド
+わらしと花咲の爺さんはすがりついてきた張角の頭を[r]素直に撫でて慰めてるしで、
+[k]
+
+＠ロビンフッド
+なんかすげぇ面白い絵面になってんな……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+
+＠フローラ
+え、ええと……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠エレシュキガル・オルタ
+気にしないでいいわよ。張角だって[r]通ればラッキーと思って言ってるだけでしょうし。
+[k]
+
+[charaFace F 3]
+
+＠エレシュキガル・オルタ
+それより花咲翁、素直にも程があるわね。
+[k]
+
+＠エレシュキガル・オルタ
+見た目と中身の年齢感が合ってればあそこまで[r]シュールな光景にはならなかったかもだけど……
+[k]
+
+＠エレシュキガル・オルタ
+いや、そうでもないかしら……。
+[k]
+
+[bgmStop BGM_HALLOWEEN_2021_1 1.2]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：それじゃあ、三つの中から選ぶことにします！
+？！
+
+[bgm BGM_EPHEMEROS_1 0.1]
+
+＠フローラ
+あ、はい！[r]わたしはどれでも大丈夫ですので[line 3]
+[k]
+
+＠フローラ
+カラドンナ気分でまっすぐズバッとした[r]最終決定、お待ちしています。
+[k]
+
+[charaFace A 3]
+
+＠フローラ
+最高のお花畑を作っちゃいましょう！[r]楽しみですね！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace O 1]
+[charaFace N 1]
+[charaScale O 0.7]
+[charaScale N 0.7]
+[charaFadein O 0.1 -350,-100]
+[charaFadein N 0.1 350,-100]
+[cueSeContinue SE_25 25_ade1144 1]
+[charaMoveReturn N 350,-85 0.4]
+[wt 0.1]
+[charaMoveReturn O -350,-80 0.4]
+[wt 0.5]
+[cueSeContinue SE_25 25_ade1144 2]
+[charaMoveReturn N 350,-85 0.4]
+[wt 0.1]
+[charaMoveReturn O -350,-80 0.4]
+[wt 1.8]
+
+[fadeout black 2.0]
+[bgmStop BGM_EPHEMEROS_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
