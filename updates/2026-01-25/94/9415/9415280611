@@ -1,0 +1,570 @@
+
+＄94-15-28-06-1-1
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 1098342400 1 わらし]
+[charaSet B 1098342900 1 ツチノコ]
+[charaSet C 1098346900 1 オルガマリー]
+[charaSet D 10020000 1 フローラ]
+[charaSet E 5059001 1 花咲翁]
+[charaSet F 6052002 1 おみぃさん]
+[charaSet G 5051001 1 張角]
+[charaSet H 1098342200 1 犬]
+[charaSet I 5059001 1 花咲翁]
+[charaSet J 5051001 1 張角]
+[charaSet K 5059001 1 花咲翁]
+
+[sceneSet Q 270700 1]
+[charaScale Q 1.3]
+[sceneSet R 270700 1]
+[charaScale R 1.2]
+[sceneSet S 270700 1]
+
+[charaSet Y 98115000 1 エフェクト用1]
+[charaSet Z 98115000 1 通信エフェクト用]
+
+[charaDepth Z 2]
+
+
+[subCameraOn 1]
+[charaLayer Y sub #A]
+[charaLayer S sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask06 20 0,0,0,255 1]
+[charaScale S 1.5]
+[charaDepth Y 2]
+[charaDepth S 1]
+
+[charaFadein S 0.1 50,250]
+
+[charaTalk depthOff]
+[charaDepth K 22]
+[charaDepth J 21]
+
+[charaDepth R 20]
+[charaDepth I 13]
+[charaDepth F 12]
+[charaDepth H 11]
+
+[charaDepth Q 10]
+[charaDepth A 6]
+[charaDepth B 5]
+[charaDepth E 4]
+[charaDepth D 3]
+[charaDepth G 2]
+[charaDepth C 1]
+
+[scene 10000]
+
+[charaPut Z 2000,2000]
+[charaEffect Z bit_talk_10_LowLevel]
+
+[subRenderFadein #A 0.1 0,-350]
+[charaMove S 0,250 5.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad54]
+[wt 2.0]
+[se ad54]
+[wt 2.0]
+
+[cueSe SE_26 26_ade1324]
+[wt 1.2]
+
+[se ad416 0.7]
+[charaEffect Y bit_talk_water_splash]
+[wt 0.25]
+[charaEffect Y bit_talk_water_splash]
+[wt 0.25]
+[seStop ad416 2.0]
+[charaEffect Y bit_talk_water_splash]
+[wt 0.3]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[charaEffectDestroy Y bit_talk_water_splash]
+
+[scene 270700]
+
+[charaFadein Q 0.1 0,-250]
+[charaMove Q 0,-240 10.0]
+[charaMoveScale Q 1.2 10.0]
+
+[charaFadeinFSR A 0.1 150,0]
+[charaFadeinFSL B 0.1 -150,0]
+
+[fowardEffect bit_talk_rain01]
+[effect bit_talk_valentine_brilliant_fs]
+
+[wt 0.5]
+[se ade307]
+[seVolume ade307 0 0]
+[seVolume ade307 0.5 0.5]
+[cueSe SE_21 21_ade588 0.5 1.0]
+[fadein black 0.5]
+[wait fade]
+
+
+[wt 2.0]
+[seStop ade307 1.0]
+[cueSeStop 21_ade588 1.0]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFace B 1]
+[charaFadeout Q 0.4]
+[fowardEffectStop bit_talk_rain01]
+[effectDestroy bit_talk_valentine_brilliant_fs]
+[wt 0.4]
+
+[bgm BGM_MAP_122 0.1]
+＠わらし
+ひゃー！[charaMoveReturnFSR A 150,5 0.4]
+[k]
+
+＠ツチノコ
+ちちちー！[charaShake B 0.08 2 3 0.5]
+[k]
+
+？1：出たー！
+？2：つめたーい！
+？！
+
+[fowardEffectDestroy bit_talk_rain01]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠オルガマリー
+信じられないわ、[r]ホントに掘り当てたの？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠フローラ
+はい、本当ですよ！
+[k]
+
+＠フローラ
+ぺ[charaMoveReturn D 0,-5 0.3]ろっ……[wt 0.7][charaFace D 3]うん、水質もばっちりですね。[r]充分、お花たちを育てるのに使える水だと思います。
+[k]
+
+[messageOff]
+[se ad60]
+[seVolume ad60 0.5 1.0]
+[charaScale K 1.1]
+[charaTalk K,D]
+[charaFace K 13]
+[charaFadein R 0.6 100,-295]
+[charaMove R 125,-295 0.6]
+[wt 1.5]
+[seStop ad60 0.4]
+[charaTalk K]
+[charaFace K 13]
+[charaFadein K 0.4 -50,0]
+[wt 0.7]
+[charaMove K -50,-20 0.4]
+[wt 0.3]
+[se ad775]
+[wt 0.1]
+[charaFadeout D 0]
+[charaFadein F 0 -150,0]
+[charaFadein H 0 220,-120]
+
+＠K：花咲翁
+ふう、やれやれ。[r]少し休ませてもらおう……。
+[k]
+
+[charaFace K 11]
+
+＠K：花咲翁
+何にしても、水が出てよかった。[r]おみぃさんの鼻のおかげだね。ありがとうよ。
+[k]
+
+[messageOff]
+[charaTalk F,K]
+[charaFace F 5]
+[charaFadeout K 0.4]
+[charaFadeout R 0.4]
+[wt 0.4]
+
+＠おみぃさん
+いやいや、謙遜しなさんな。[r]アンタのワンちゃんと[#鍬:くわ]のおかげでもあるだろ？
+[k]
+
+＠おみぃさん
+アタシが探ったのはだいたいの場所だけ。
+[k]
+
+＠おみぃさん
+そこから実際に水源にまで辿り着けたのは[r]やっぱりアンタたちが頑張ってくれたからさ。
+[k]
+
+[charaFace F 6]
+
+＠おみぃさん
+あんがとねー。うりうり。
+[k]
+
+[messageOff]
+[charaTalk H,F]
+[charaFace H 1]
+
+[cueSe Servants_800190 m64913]
+[seVolume m64913 0 0.5]
+[cueSe SE_26 26_ade1334]
+[cueSe SE_24 24_ade985]
+[charaMoveReturn F -150,-5 0.3]
+[wt 0.1]
+[charaShake H 0.08 2 3 1.2]
+[wt 0.3]
+[charaMoveReturn F -150,-5 0.3]
+[wt 0.3]
+[charaMoveReturn F -150,-5 0.3]
+[cueSeStop 26_ade1334 0.5]
+[cueSeStop 24_ade985 0.5]
+[wt 0.7]
+
+[charaFadeout H 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠花咲翁
+本当に、儂は頑張ったつもりはないんだけどね……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠張角
+くくく。[r]二人ともが殊勲者、でええじゃろ。
+[k]
+
+[charaFace G 0]
+
+＠張角
+しかし、ワシが思うに、花咲よ。
+[k]
+
+＠張角
+さすがにおぬしは、もう少し自分を誇っても[r]よいのではないかと思うぞ。
+[k]
+
+＠張角
+困難を乗り越えて何かを手に入れたものは、[r]それを嬉しがり、報われたことを誇る権利があろう。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_122 1.5]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠花咲翁
+うーん、誇りかぁ……。
+[k]
+
+[charaFace E 13]
+
+＠花咲翁
+正直に言うと、よくわからないねぇ。
+[k]
+
+[messageOff]
+[charaScale I 1.3]
+[charaScale Q 1.3]
+[charaTalk E,I]
+[charaFace I 5]
+[charaFadein I 0.8 -120,0]
+[charaFadein Q 0.8 50,-290]
+[charaMove I -70,0 15.0]
+[charaMove Q 100,-290 15.0]
+[wt 0.8]
+[charaFadeout E 0]
+
+[bgm BGM_EVENT_25 0.1]
+
+＠I：花咲翁
+儂は……誰かが頼ってくれたことには、[r]できるだけ応えたい。
+[k]
+
+＠I：花咲翁
+人のためになることなら、なんでもやりたい。[r][line 3]善いことをしたい。
+[k]
+
+[charaFace I 1]
+
+＠I：花咲翁
+それだけなんだ。[r]本当に、それだけなんだよ。
+[k]
+
+[charaFace I 14]
+
+＠I：花咲翁
+だから、儂自身の辛さなんて二の次だし、
+[k]
+
+＠I：花咲翁
+それが報われたことに対する誇りなんかも、[r]特には感じないねぇ……。
+[k]
+
+[messageOff]
+[charaScale J 1.3]
+[charaTalk J,I]
+[charaFace J 6]
+[charaFadein J 0.6 140,0]
+[charaFadein R 0.6 -50,-295]
+[charaMove J 120,0 5.0]
+[charaMove R -70,-295 5.0]
+[wt 0.6]
+[charaMove I 0,0 0]
+[charaMove Q 50,-290 0]
+
+＠J：張角
+……。[r]……。
+[k]
+
+＠J：張角
+それは、基本的には、[r]素晴らしいことじゃろうな。
+[k]
+
+[charaFace J 4]
+
+＠J：張角
+しかし、まぁ……ワシの立場からすれば、[r]その素晴らしさは[#半分だけ]な気がするがの。
+[k]
+
+[messageOff]
+[charaScale I 1.0]
+[charaScale Q 1.2]
+[charaTalk I,J]
+[charaFace I 3]
+[charaFadeout J 0.4]
+[charaFadeout R 0.4]
+[wt 0.4]
+
+＠I：花咲翁
+……？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaScale J 1.0]
+[charaTalk J]
+[charaFace J 12]
+[charaFadein J 0.1 1]
+
+＠J：張角
+ははは。気にせずともよい、[r]別の生き方をしてきた年寄りの妄言じゃ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠おみぃさん
+うーん。自分で嬉しがれないなら、代わりに[r]アタシがいつも以上に褒めてあげるしかないね。
+[k]
+
+[charaFace F 12]
+
+＠おみぃさん
+じいさまでも関係ないよ。ここにいるアタシは[r]みんなのお母さん、てなもんだ！
+[k]
+
+[charaFace F 6]
+
+＠おみぃさん
+よく頑張った！　いい子！[r]偉い！　物理的ヨシヨシもいるかい？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠I：花咲翁
+ふふ。さすがにそれは恥ずかしいから、[r]代わりにその子にお願いするよ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠おみぃさん
+照れ屋さんだねえ。仕方ないか。
+[k]
+
+[messageOff]
+[charaPut H 370,-110]
+[charaFace F 8]
+[charaMoveEase F -150,0 0.6 easeInOutSine]
+[charaMoveEase H 220,-110 0.6 easeInOutSine]
+[charaMoveEase Q -100,-290 0.6 easeInOutSine]
+[charaFadeTime H 0.6 1.0]
+[wt 0.6]
+[charaFadein H 0 220,-110]
+
+＠おみぃさん
+それじゃ、こっちにアンタのぶんまで……[r]よーしよしよし！
+[k]
+
+[messageOff]
+[charaTalk H,F]
+[charaFace H 1]
+
+[cueSe Servants_800190 m64913]
+[seVolume m64913 0 0.5]
+
+[cueSe SE_26 26_ade1334]
+[cueSe SE_24 24_ade985]
+[charaMoveReturn F -150,-5 0.2]
+[charaShake H 0.08 2 3 1.0]
+[wt 0.2]
+[charaMoveReturn F -150,-5 0.2]
+[wt 0.2]
+[charaMoveReturn F -150,-5 0.2]
+[wt 0.2]
+[charaMoveReturn F -150,-5 0.2]
+[cueSeStop 26_ade1334 0.5]
+[cueSeStop 24_ade985 0.5]
+[wt 0.6]
+
+[cueSe SE_26 26_ade1328]
+[charaMoveReturn H 220,-105 0.2]
+[wt 0.2]
+[charaMoveReturn H 220,-105 0.2]
+[wt 1.0]
+
+[charaTalk A]
+[charaDepth A 21]
+[charaDepth B 22]
+[charaFace A 0]
+[charaFace B 0]
+[charaFadeinFSL A 0.3 -100,0]
+[charaFadeinFSL B 0.3 -300,0]
+[charaFadein R 0.3 50,-200]
+[charaMoveEaseFSL A -50,0 0.6 easeInOutSine]
+[charaMoveEaseFSL B -250,0 0.6 easeInOutSine]
+[charaMoveEase R 100,-200 0.6 easeInOutSine]
+[wt 0.6]
+[charaFadeout F 0]
+[charaFadeout H 0]
+[charaFadeout Q 0]
+[charaFadein G 0 1]
+
+＠わらし
+じいじ、きいろじいじー！[r]おみぃー！
+[k]
+
+[charaFace A 1]
+
+＠わらし
+みず、でた！[r]およごう！
+[k]
+
+＠ツチノコ
+ちちっちちー！[cueSeContinue SE_25 25_ade1144 0 1.0 001][charaMoveReturnFSL B -250,5 0.3][wt 0.3][cueSeContinue SE_25 25_ade1144 0 1.0 002][charaMoveReturnFSL B -250,5 0.3][wt 0.3]
+[k]
+
+[messageOff]
+[charaTalk G,B]
+[charaFace G 3]
+[charaFadeout B 0.4]
+[charaFadeout A 0.4]
+[charaFadeout R 0.4]
+[wt 0.4]
+
+＠張角
+ほっほ、さすがにここを泳げるのは[r]おまえたちだけじゃろうて。
+[k]
+
+[charaFace G 0]
+
+＠張角
+ワシらには仕事もあるしのー。
+[k]
+
+[bgmStop BGM_EVENT_25 1.0]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+＠フローラ
+はっ。そうでした、わらしちゃんたちの足場用に[r]大きな[#蓮:はす]の花を浮かべている場合ではありませんでした。
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace D 0]
+
+＠フローラ
+お[charaMoveReturn D 0,-5 0.3]ほん。[wt 0.5]この水場を上手く使えば、[r]第二お花畑も問題なく活用できると思います。
+[k]
+
+[charaFace D 16]
+
+＠フローラ
+あとは、何を植えるか、ですね。
+[k]
+
+[charaFace D 3]
+
+＠フローラ
+最初のお花畑と同じく、[r]自由に決めてしまってください！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

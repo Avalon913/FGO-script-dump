@@ -1,0 +1,438 @@
+
+＄94-15-28-07-2-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 5051001 1 張角]
+[charaSet B 2003001 1 ロビンフッド]
+[charaSet C 10020000 1 フローラ]
+[charaSet D 5059001 1 花咲翁]
+[charaSet E 6052002 1 おみぃさん]
+[charaSet F 1098345300 1 エレシュキガル・オルタ]
+[charaSet G 1098342400 1 わらし]
+[charaSet H 1098346900 1 オルガマリー]
+[charaSet I 1098346800 1 マシュ]
+[charaSet J 1098343200 1 怪奇植物]
+[charaSet K 1098343200 1 怪奇植物]
+[charaSet L 1098343200 1 怪奇植物]
+[charaSet M 1098343200 1 怪奇植物]
+[charaSet N 1098343200 1 怪奇植物]
+[charaSet O 5059001 1 花咲翁（演出用）]
+
+[sceneSet Q 271102 1]
+[sceneSet R 271102 1]
+
+[charaSet X 98115000 1 エフェクト用]
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth Z 26]
+[charaDepth X 25]
+[charaDepth Y 24]
+[charaDepth O 17]
+[charaDepth R 16]
+[charaDepth J 15]
+[charaDepth K 14]
+[charaDepth L 13]
+[charaDepth M 12]
+[charaDepth N 11]
+[charaDepth Q 10]
+[charaDepth D 9]
+[charaDepth E 8]
+[charaDepth A 7]
+[charaDepth B 6]
+[charaDepth I 5]
+[charaDepth H 4]
+[charaDepth F 3]
+[charaDepth G 2]
+[charaDepth C 1]
+
+[scene 271102]
+
+[charaPut Z 2000,2000]
+[charaEffect Z bit_talk_10_LowLevel]
+
+[charaTalk off]
+[charaScale J 1.1]
+[charaFace J 0]
+[charaFace K 0]
+[charaFace L 0]
+[charaFadein J 0.1 1]
+[charaFadein K 0.1 -350,0]
+[charaFadein L 0.1 350,0]
+[wt 0.1]
+
+[bgm BGM_BATTLE_184 0.1]
+[fadein black 0.5]
+[wait fade]
+
+[se bac31]
+[cueSe SE_22 22_ad1183]
+[effect bit_talk_taoism]
+[se ad1009]
+[wt 1.0]
+[seStop ad1009 1.5]
+[wt 0.5]
+
+[se ade409]
+[se adm12]
+[charaEffect J bit_talk_restriction01]
+[charaEffect K bit_talk_restriction01]
+[charaEffect L bit_talk_restriction01]
+[wt 0.3]
+[charaShake J 0.04 3 3 0.4]
+[charaShake K 0.04 3 3 0.4]
+[charaShake L 0.04 3 3 0.4]
+[wt 0.7]
+[charaEffectStop J bit_talk_restriction01]
+[charaEffectStop K bit_talk_restriction01]
+[charaEffectStop L bit_talk_restriction01]
+[wt 0.8]
+[cueSe SE_25 25_ade1287]
+[cueSe SE_25 25_ade1288]
+[charaEffect J bit_talk_explosion_small]
+[charaEffect K bit_talk_explosion_small]
+[charaEffect L bit_talk_explosion_small]
+[wt 0.15]
+[charaShake J 0.05 4 5 1.0]
+[wt 0.1]
+[charaShake K 0.05 4 3 1.0]
+[wt 0.1]
+[charaShake L 0.05 4 4 1.0]
+[wt 1.5]
+
+[se ad42]
+[charaSpecialEffect J enemyErasure 1 1.5]
+[wt 0.15]
+[charaSpecialEffect K enemyErasure 1 1.5]
+[wt 0.15]
+[charaSpecialEffect L enemyErasure 1 1.5]
+[wait charaSpecialEffect L]
+[seStop ad42 0.5]
+[wt 0.8]
+[charaFadeout J 0]
+[charaFadeout K 0]
+[charaFadeout L 0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠張角
+やれやれ、しんどいのう。[r]今、全体的にはどんな状況じゃ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ロビンフッド
+前に出れずに停滞してると言うのも、[r]なんとか押し止めてると言うのも自由だろうぜ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 21]
+[charaFadein C 0.1 1]
+
+＠フローラ
+大丈夫です。崩れていないということは[r]余裕があるということ。
+[k]
+
+＠フローラ
+このまま朝が来ればわたしたちの勝利です！
+[k]
+
+[messageOff]
+[charaScale Q 1.3]
+[charaScale O 1.3]
+[charaTalk O,C]
+[charaFace O 16]
+[charaFadein O 0.5 -50,20]
+[charaFadein Q 0.5 100,-325]
+[charaMove O 0,20 0.8]
+[charaMove Q 150,-325 0.8]
+[wt 1.0]
+[charaFadeout C 0]
+[charaFace E 0]
+[charaFace D 7]
+[charaFadein E 0 2]
+[charaFadein D 0 0]
+
+＠O：花咲翁
+余裕がある、か……。
+[k]
+
+[charaFace O 7]
+
+＠O：花咲翁
+……。[r]……。
+[k]
+
+[messageOff]
+[charaTalk O,D]
+[charaFadeout Q 0.4]
+[charaFadeout O 0.4]
+[wt 0.6]
+[charaFace D 0]
+
+＠花咲翁
+おみぃさん。
+[k]
+
+[charaTalk E]
+
+＠おみぃさん
+ん、どしたい？
+[k]
+
+[charaFace E 1]
+
+＠おみぃさん
+手が空いた？　なら今のうちに[r]ちっと休憩したらいいさね。
+[k]
+
+＠おみぃさん
+水筒持ってきてるから、水でも飲んで[line 3]
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+
+＠花咲翁
+きみは……わらしたちの顔を、[r]ハナちゃんたちが植えた花を、見たいよね？
+[k]
+
+[charaTalk E]
+[charaFace E 10]
+
+＠おみぃさん
+何だい、いきなり。
+[k]
+
+[charaFace E 3]
+
+＠おみぃさん
+そりゃまあ……正直に言えば、[r]見たいに決まってるけど。
+[k]
+
+[charaTalk E]
+[charaFace D 5]
+
+＠花咲翁
+うん。だったら、やっぱり、[r]儂はこうしたいね。
+[k]
+
+[charaFace D 0]
+
+＠花咲翁
+[line 3]人数が増えているから、[r]守りは大丈夫そうだ。
+[k]
+
+[bgmStop BGM_BATTLE_184 1.5]
+
+＠花咲翁
+だから儂は少し、前に行ってみるよ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad443]
+[charaMove D -500,0 0.4]
+[charaFadeout D 0.3]
+[wt 0.5]
+[seStop ad443 0.8]
+[charaFace E 10]
+[wt 1.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠エレシュキガル・オルタ
+前？[wt 0.7][charaFace F 2][bgm BGM_BATTLE_137 0.1][r]って、ちょっと！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+
+＠わらし
+じいじー！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_BATTLE_137 0.5 0.5]
+[wait wipe]
+
+[charaFadeout G 0.1]
+
+[subCameraOn 1]
+[charaLayer O sub #A]
+[charaLayer R sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 3 255,182,193,255 0]
+
+[charaScale R 1.5]
+[charaScale O 1.1]
+[charaFace O 24]
+[charaFadein O 0.1 10,320]
+[charaFadein R 0.1 0,10]
+[charaShake O 0.03 1 1 0]
+[charaShake R 0.03 1 1 0]
+
+[charaScale J 1.0]
+[charaScale M 0.9]
+[charaScale N 0.9]
+
+[charaTalk off]
+[charaFace J 0]
+[charaFace K 0]
+[charaFace L 0]
+[charaFace M 0]
+[charaFace N 0]
+[charaFadein J 0.1 0,0]
+[charaFadein K 0.1 -400,0]
+[charaFadein L 0.1 400,0]
+[charaFadein M 0.1 -200,-70]
+[charaFadein N 0.1 200,-70]
+
+[charaPut X 1]
+[charaEffect X bit_talk_41_remake]
+[blur motion 0.1 3 100 0.5 0.5 0.07 100]
+[wt 0.5]
+
+[se ad443 0.5 1.0]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_BATTLE_137 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[subRenderFadein #A 0.3 0,-380]
+[subRenderMoveEase #A 0,-330 0.3 easeOutQuad]
+[wt 1.3]
+
+[seStop ad443 0.5]
+[se ad1006 0.8]
+[charaFace O 10]
+[charaMoveScaleEase O 1.5 0.4 easeOutCubic]
+[charaMoveScaleEase R 1.1 0.4 easeOutCubic]
+[charaMoveEase O 0,370 0.4 easeOutCubic]
+[charaMoveEase R 0,60 0.4 easeOutCubic]
+[charaFadeout O 0.3]
+[wt 0.5]
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+
+[cameraMoveEase 0,-20 0.4 easeOutCubic 1.2]
+[wt 0.1]
+[cueSe Battle bac67]
+[charaEffectStop X bit_talk_41_remake]
+[charaPut Y 1]
+[charaEffect Y bit_talk_ash_stroke]
+[wt 0.2]
+[charaShake J 0.03 2 2 0.5]
+[wt 0.35]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_BATTLE_137 0.5 0.5]
+[wait wipe]
+
+[blurOff motion 0.1]
+[charaFadeout O 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout R 0.1]
+[cameraMoveEase 0,0 0.1 easeOutCubic 1.0]
+[charaLayer O normal]
+[charaLayer R normal]
+[subCameraOff]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_BATTLE_137 0.5 1.0]
+[wait wipe]
+
+[charaPut Z 1]
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠オルガマリー
+何をしてるの！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 12]
+[charaFadein I 0.1 1]
+
+＠マシュ
+花咲翁さん、怪奇植物たちの中に突っ込みました！[r]単騎で戦闘しつつ、なおも前進中！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ロビンフッド
+おい、じいさん！[r]無茶にも程があるっての！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠張角
+迷いのない速さじゃ、[r]今からではとても止められんぞ！
+[k]
+
+？1：せめて援護を、全力で！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale F 1.0]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠エレシュキガル・オルタ
+……それしかなさそうね。[r]翁が物量に押し潰されないようにするわよ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_137 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
