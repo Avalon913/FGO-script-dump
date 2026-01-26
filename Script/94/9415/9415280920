@@ -1,0 +1,527 @@
+
+＄94-15-28-09-2-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 10020000 1 フローラ]
+[charaSet B 5051001 1 張角]
+[charaSet C 5059001 1 花咲翁]
+[charaSet D 2003001 1 ロビンフッド]
+[charaSet E 6052001 1 おみぃさん]
+[charaSet F 1098346410 1 わらし]
+[charaSet G 1098345300 1 エレシュキガル・オルタ]
+[charaSet H 1098342200 1 翁の犬]
+
+[charaSet I 98115000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+
+[charaSet M 98115000 1 エフェクト用]
+[charaScale M 0.6]
+
+[sceneSet P 271103 1]
+[charaScale P 1.6]
+[sceneSet Q 271103 1]
+[charaScale Q 2.0]
+
+[charaTalk depthOff]
+[charaDepth P 1]
+[charaDepth D 2]
+[charaDepth G 3]
+[charaDepth H 4]
+[charaDepth C 5]
+[charaDepth F 6]
+[charaDepth E 7]
+[charaDepth B 8]
+[charaDepth A 9]
+[charaDepth Q 10]
+[charaDepth I 11]
+[charaDepth J 12]
+[charaDepth M 13]
+
+
+[scene 271103]
+[charaFadein P 0 0,-265]
+[charaFadein Q 0 100,-200]
+[charaEffect I bit_talk_rain_storm]
+[charaEffect J bit_talk_strongwind04_cl 0,0 V]
+[wt 1.5]
+[cueSe SE_23 23_ade904 1.5 0.6]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_MAP_6 0.1 1.0]
+[wt 2.0]
+[charaFadeout Q 0.7]
+[wt 1.5]
+
+？1：わかってたけど
+？2：凄い雨と風ー！
+？！
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ロビンフッド
+風で何かが飛んでくるかもしれねえ。
+[k]
+
+＠ロビンフッド
+叩き落とせるようにオレも警戒はしとくが、[r]そっちも気は抜かないようにな。
+[k]
+
+[charaFace D 5]
+
+＠ロビンフッド
+あとエレシュキガルは[r]自分が飛んでいかないようにな！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠エレシュキガル・オルタ
+バカにしてるのかしら。いくら今の私が小さいからって、[r]そんな危険は……。
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ade580]
+[charaFace G 16]
+[charaMove G 150,35 2.0]
+[charaRollMoveEx G 2.0 10 0,900]
+[charaShake G 0.04 1 1 0]
+[wt 2.2]
+[seStop 21_ade580 1.5]
+[charaFace G 19]
+[wt 0.3]
+[charaMove G 0,0 3.0]
+[charaRollMoveEx G 3.0 0 0,900]
+[charaShake G 0.04 1 1 0]
+[wt 3.0]
+[charaShakeStop G]
+[wt 0.2]
+[charaFace G 12]
+
+＠エレシュキガル・オルタ
+……ポケットに石でも詰めておこうかしら。[r]一応ね。安全のためにね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠花咲翁
+うん、それがいいと思うよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 19]
+[charaFadein E 0.1 1]
+
+＠おみぃさん
+しっかし、うわっぷ、凄い雨風だねぇ。[r]このシートを畑に被せればいいのかい？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠フローラ
+はい、お願いします！[r]飛ばされないように石で押さえる感じで！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 20]
+[charaFadein E 0.1 1]
+
+＠おみぃさん
+じゃあ石を探してくる必要もあるねぇ。[r]わかっちゃいたが、いろいろ大変そうだ。
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFadein F 0.1 140,-100]
+
+
+[charaMoveEase F 140,10 1.0 easeInOutQuart]
+[wt 0.3]
+[cueSe SE_25 25_ade1144]
+[wt 1.0]
+
+＠わらし
+てつだう？
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaFace E 15]
+[charaFadein E 0.1 1]
+[charaFace F 8]
+[charaMoveReturn E 0,-5 0.5]
+[charaMove F 140,-10 0.5]
+[cueSe SE_22 22_ade695]
+[wt 1.5]
+[charaTalk on]
+[charaTalk E]
+
+＠おみぃさん
+みんなが怪我なく上手くいくように祈っといて。[r]それがアンタの手伝いさね。
+[k]
+
+[charaFace F 1]
+
+＠わらし
+ほいー。[r]わかった！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFaceFade E 7 0.3]
+[wt 1.5]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ロビンフッド
+オレたちも畑の防風・防水シート張りを手伝うぜ。
+[k]
+
+＠ロビンフッド
+要所にゃ杭を打ったり排水溝を作ったりする必要も[r]あるだろうな。
+[k]
+
+＠ロビンフッド
+そういうのも手分けしてやるとして……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠エレシュキガル・オルタ
+正直、シートも突貫で作った間に合わせよ。
+[k]
+
+＠エレシュキガル・オルタ
+付与した魔術的効果が上手く働くか確かめる必要がある。[r]甘いところがあれば付与し直す。
+[k]
+
+[charaFace G 11]
+
+＠エレシュキガル・オルタ
+本来、こういうのはキャスターの役目なんだけど。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠張角
+うーむ。ワシには他に大事な役目がある、[r]というような目じゃなあ。
+[k]
+
+[charaFace B 26]
+
+＠張角
+おじいちゃん、嫌な予感。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠エレシュキガル・オルタ
+都合のいいときだけ老人ぶらないで。
+[k]
+
+＠エレシュキガル・オルタ
+よく知らないけれど、アナタ、[r]天候操作の術で知られている道士なんでしょう？
+[k]
+
+＠エレシュキガル・オルタ
+この嵐自体をどうにかできないの？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 -100,0]
+[charaFace H 0]
+[charaFadein H 0.1 220,-110]
+
+＠花咲翁
+そうなのかい？　この荒れた空自体を[r]どうにかできるなら、それが一番早くはあるね。
+[k]
+
+[messageOff]
+
+
+[charaTalk H]
+[cueSe SE_26 26_ade1329 0.1 1.0]
+[charaMoveReturn H 220,-100 0.2]
+[wt 0.2]
+[charaMoveReturn H 220,-100 0.2]
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠張角
+ふーむ。正直に言えば、[r]あれは幻術も混ぜ込んだ術であって、
+[k]
+
+＠張角
+純粋に天候を変えておるわけでは[r]なかったりするんじゃが……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠エレシュキガル・オルタ
+でも、そういう要素も[r]実際に含んではいるでしょう。
+[k]
+
+＠エレシュキガル・オルタ
+ダメで元々な気がするのだわ。[r]やってみなさい。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+
+＠張角
+[#皆:みな]が一体となって畑に向かい合っている中、
+[k]
+
+＠張角
+ワシだけ一人寂しく天に[r]ブツブツ言うのって寂しくないかのー。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠おみぃさん
+みゃはは、ごめんねぇ。
+[k]
+
+[charaFace E 6]
+
+＠おみぃさん
+でもさ、それだけアタシらが張角のじいさまを[r]頼りにしてるってことなんだよ。
+[k]
+
+＠おみぃさん
+アタシが渡せるぶんくらいの魔力リソースは渡しとくから、[r]なんとか頑張って！
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 140,-100]
+
+[charaMoveEase F 140,-10 0.5 easeInOutQuart]
+[wt 0.2]
+[cueSe SE_22 22_ade695]
+[wt 1.0]
+
+[charaTalk F]
+
+＠わらし
+がんばれー！
+[k]
+
+[messageOff]
+[charaFace F 0]
+[bgmStop BGM_MAP_6 1.0]
+
+
+[charaTalk off]
+[charaMove E -260,0 0.8]
+[charaMove F -120,-10 0.8]
+[charaMove P -260,-265 0.8]
+[charaFace B 4]
+[charaFadein B 0.4 510,0]
+[charaMove B 250,0 0.8]
+[wt 1.0]
+
+[charaPut M -260,-100]
+[se ad952]
+[charaEffect M bit_talk_blight_02lp]
+[wt 1.5]
+[charaMove M 250,-100 1.5]
+[wt 1.5]
+[charaEffectStop M bit_talk_blight_02lp]
+[seStop adm19 0.5]
+[wt 0.5]
+[se ad39]
+[wt 0.5]
+[charaFace B 1]
+[wt 1.5]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 7]
+
+＠おみぃさん
+残り物で悪いね。
+[k]
+
+[charaFace E 16]
+
+＠おみぃさん
+このスカスカの『目』の力なんかじゃないけど、[r]ないよりはマシだろ？
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠エレシュキガル・オルタ
+……。[r]……。
+[k]
+
+[charaFace G 14]
+[bgm BGM_MAP_23 0.1 1.0]
+
+＠エレシュキガル・オルタ
+守銭奴な天の女主人がいたら尻を蹴飛ばしてでも[r]雲を動かさせてるところなのだわ。
+[k]
+
+[charaFace G 16]
+
+＠エレシュキガル・オルタ
+ほら、私がその尻を蹴らないうちに、[r]さっさと動く！
+[k]
+
+？1：（うーん、これは良い警官と悪い警官……）
+？2：（うーん、これはアメとムチ……）
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+
+＠張角
+やれやれ、年寄り使いが荒いのう。
+[k]
+
+[charaFaceFade B 7 0.2]
+
+＠張角
+しかし頼りにされているというのは[r]悪い気分ではないな。
+[k]
+
+[charaFace B 6]
+
+＠張角
+特異点の空であれば、[r]尋常ではない部分もあろう。
+[k]
+
+＠張角
+だからこそワシでも動かせるかもしれんし、[r]動かせぬかもしれん。
+[k]
+
+[charaFace B 7]
+
+＠張角
+まさしくダメで元々じゃ、やってみるかの。
+[k]
+
+[messageOff]
+
+[charaFace B 6]
+[wt 0.8]
+[se bac31]
+[effect bit_talk_taoism]
+[se ad1009]
+[wt 1.0]
+[seStop ad1009 1.0]
+[cueSe SE_22 22_ad1181 0.1 1.0]
+[charaEffect B bit_talk_charge_red]
+[wt 3.0]
+[charaEffectStop B bit_talk_charge_red]
+[cueSeStop 22_ad1181 0.3]
+[wt 0.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ロビンフッド
+さて。どっちみちすぐには晴れないだろうから、[r]すべきことは変わらないぜ。
+[k]
+
+？1：よーし、それじゃ[line 3]
+？2：怪我に気をつけつつ、作業開始！
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[cueSeStop 23_ade904 0.4]
+[bgmStopEnd BGM_MAP_23 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+
