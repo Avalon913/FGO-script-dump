@@ -1,0 +1,457 @@
+
+＄94-15-28-62-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 10020000 1 フローラ]
+[charaSet B 1098235600 1 清少納言]
+[charaSet C 1098346800 1 マシュ]
+[charaSet D 1098345300 1 エレシュキガル・オルタ]
+[charaSet E 2003001 1 ロビンフッド]
+[charaSet F 5059001 1 花咲翁]
+[charaSet G 5051001 1 張角]
+[charaSet H 1098235600 1 清少納言_演出用]
+
+[sceneSet I 272400 1]
+[sceneSet J 272400 1]
+
+[charaSet X 98115000 1 エフェクト用]
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth A 2]
+[charaDepth B 3]
+[charaDepth C 4]
+[charaDepth D 5]
+[charaDepth E 6]
+[charaDepth C 7]
+[charaDepth F 8]
+[charaDepth G 9]
+[charaDepth J 10]
+[charaDepth H 11]
+[charaDepth X 24]
+[charaDepth Y 25]
+[charaDepth Z 26]
+
+[subCameraOn 2]
+[charaLayer I sub #A]
+[charaLayer X sub #A]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+[subRenderFadein #A 0.1 0,0]
+
+[charaScale I 1.5]
+[charaFadein I 0.1 -100,-150]
+[charaPut X 1]
+[charaEffect X bit_talk_valentine_brilliant_fs]
+
+[charaLayer J sub #B]
+[charaLayer H sub #B]
+[charaLayer Z sub #B]
+[subCameraFilter #B normal]
+
+[charaScale J 1.1]
+[charaScale H 1.1]
+[charaScale Z 1.1]
+[charaFace H 5]
+[charaFadein H 0.1 0,15]
+[charaFadein J 0.1 0,-234]
+[charaPut Z 1]
+[charaEffect Z bit_talk_10_LowLevel]
+
+[cameraMove 0.1 0,20 1.1]
+[charaPut Y 2000,2000]
+[charaEffect Y bit_talk_10_LowLevel]
+
+[scene 272400]
+[wt 0.5]
+
+[cueSe SE_21 21_ade588 1.0 1.0]
+[charaMove I 100,-150 10.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_DRAGONCASTLE_1 0.1]
+[wt 3.5]
+
+[cameraMoveEase 0,0 1.8 easeOutSine 1.0]
+[subRenderFadeout #A 0.8]
+[cueSeStop 21_ade588 1.8]
+[wt 2.3]
+[charaMove I 100,-150 0.1]
+[charaFadeout I 0]
+[charaEffectDestroy X bit_talk_valentine_brilliant_fs]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠フローラ
+素敵なナデシコのお花畑ができましたね！
+[k]
+
+＠フローラ
+近くで見るとわかる、独自性の強い尖ったスタイル……[r]そんな挑戦的なナデシコ気分になれちゃいます！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠清少納言
+うむ。[r]いとエモし。
+[k]
+
+＠清少納言
+本当は秋の花だけど、さすがは花の女神様だぜ。[r]季節関係なく花の園ができちゃうなんてさ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut Y 2000,2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フローラ
+ふふ、本当は自然の季節に合わせるのが[r]一番なんですけどね。
+[k]
+
+＠フローラ
+この特異点は平均的な気候ですから、
+[k]
+
+＠フローラ
+わたしが少しお手伝いするだけで[r]どんな季節のお花も元気に咲いてくれるのです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠マシュ
+ナデシコは秋の七草の一つにも数えられる、[r]日本人の皆さんが昔から親しんできた花ですね。
+[k]
+
+＠マシュ
+特徴的ですから、皆さんが[r]愛してこられたのもわかる気がします。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠清少納言
+歌の題材になったり『源氏物語』にも出てきたり……[r]『なでしこ合わせ』なんて遊びもあったんだけど。
+[k]
+
+[charaFace B 4]
+
+＠清少納言
+現代ではあんま見られなくなってるんだよねー。[r]すわ絶滅の危機、なんて言われちゃっててさ。
+[k]
+
+？1：だいたい整備されちゃってるからね……
+？2：近代化の弊害か……
+？！
+
+[charaFace B 8]
+
+＠清少納言
+ま、だからこそ、[r]こんな立派なナデシコ畑が見られてよかったよ。
+[k]
+
+[charaFace B 13]
+
+＠清少納言
+……。[r]……。
+[k]
+
+[charaFace B 17]
+
+＠清少納言
+[line 3]ほらほら、しんみりしてないで、[r]今は目の前の花の風情を楽しもうぜい！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut Y 2000,2000]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル・オルタ
+そうするしかないわね。
+[k]
+
+[charaFace D 0]
+
+＠エレシュキガル・オルタ
+ところでアナタ、何かこの花に[r]秘密があるみたいなこと言ってなかった？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ロビンフッド
+言ってた気がしますねぇ。
+[k]
+
+＠ロビンフッド
+さっきの、今ではあんまり見られなくなったって[r]悲報のことかい？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠清少納言
+フッ……甘く見るなよ、ロビ太くん。
+[k]
+
+[charaFace B 0]
+
+＠清少納言
+聞く？　聞いちゃう？[r]このカワラナデシコに秘められた、恐るべき秘密をさ！
+[k]
+
+＠清少納言
+こいつはきっと、花の女神ちゃんであっても[r]知らない秘密だと思うぜ……！
+[k]
+
+？1：聞かせてください
+？2：（ごくり）
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut Y 2000,2000]
+
+[bgmStop BGM_DRAGONCASTLE_1 1.5]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠フローラ
+ごくり。[r]わたしの知らない秘密……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠清少納言
+それは[line 3]！
+[k]
+
+[messageOff]
+[charaTalk H,B]
+[subRenderFadein #B 0.3 0,0]
+[subRenderMoveEase #B 0,-20 0.5 easeOutCubic]
+[subRenderMoveScaleEase #B 1.1 0.5 easeOutCubic]
+[wt 0.4]
+[charaFace H 10]
+[charaFace B 10]
+[fowardEffect bit_talk_41_remake]
+
+＠H：清少納言
+[f large]蘧。[se ad186]
+[k]
+
+[bgm BGM_EVENT_94 0.1]
+
+？1：難しい漢字が書かれた半紙を無言で突き付けてきた
+？2：その読めない字はいったい……？
+？！
+
+[fowardEffectStop bit_talk_41_remake]
+[charaFace H 15]
+
+
+＠H：清少納言
+そう、これこそが、[r]あたしちゃんの伝えたかった秘密[line 3]
+[k]
+
+[charaFace B 17]
+[charaFace H 17]
+
+＠H：清少納言
+なんとこれ一文字で『なでしこ』の意味らしいぜ！[r]いやー面白いよねー！
+[k]
+
+？1：それ
+？2：だけ
+？！
+
+[messageOff]
+[charaTalk H,B]
+[subRenderFadeout #B 0.5]
+[wt 0.8]
+
+＠清少納言
+……。[r]……。
+[k]
+
+[charaFace B 11]
+
+＠清少納言
+えーと……あたし『蘧』って書けるよ？　みたいな？[r]ちょっと自慢できそう感というか？
+[k]
+
+
+＠清少納言
+…………ダメか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut Y 2000,2000]
+
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+
+＠ロビンフッド
+まったく予想していなかった内容ではあるけどよ、
+[k]
+
+＠ロビンフッド
+明かされた秘密に対する[r]衝撃度自体についてはこう言わせてもらおう。
+[k]
+
+[messageOff]
+[cameraMoveEase 0,-40 0.6 easeOutQuad 1.2]
+[wt 1.0]
+
+[charaFace E 2]
+
+＠ロビンフッド
+そんなこったろうと思ったぜ！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_94 1.5]
+[wait fade]
+
+[cameraHome 0.1]
+[charaFadeout E 0.1]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_SABERWARS2 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠花咲翁
+うん。素敵な花畑もできたし、[r]今日の仕事はだいたい終わったかな。
+[k]
+
+[charaFace F 1]
+
+＠花咲翁
+というところで、少し、やってみたいことがあるんだ。[r]試してみてもいいかな？
+[k]
+
+[charaFace F 14]
+
+＠花咲翁
+いや、花畑とはまったく関係のない、[r]将棋のような単なる息抜きの話ではあるのだけど。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠張角
+ほう。暇さえあれば将棋の対局をせがんでくる[r]おぬしが、別の息抜きとな？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エレシュキガル・オルタ
+何にしても、黙って[#独断専行:どくだんせんこう]してた以前よりは、[r]事前に聞いてくるだけ進歩したのかしら。
+[k]
+
+？1：全然オッケーですけど
+？2：何を試すつもりなんですか？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠花咲翁
+ふふ。昨日、きみが言っていたことだよ。[r]お風呂から上がって、髪を拭いていたあたりで。
+[k]
+
+＠花咲翁
+五右衛門風呂もいいけれど、[r]みんなで温泉とかに入るのも楽しそうだよね[line 3]と。
+[k]
+
+？1：まさか……
+？！
+
+[charaFace F 22]
+
+＠花咲翁
+うん。畑用の水源をこの[#鍬:くわ]で掘れたのなら、[r]ひょっとして、なんてね？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_SABERWARS2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

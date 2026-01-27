@@ -1,0 +1,561 @@
+
+＄94-15-28-60-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 10020000 1 フローラ]
+[charaSet B 1098347800 1 虞美人]
+[charaSet C 1098197600 1 項羽]
+[charaSet D 2003001 1 ロビンフッド]
+[charaSet E 1098345300 1 エレシュキガル・オルタ]
+[charaSet F 1098346800 1 マシュ]
+[charaSet G 1098346900 1 オルガマリー]
+[charaSet H 5059001 1 花咲翁]
+[charaSet I 5051001 1 張角]
+[charaSet J 1098197600 1 項羽_演出用]
+
+[sceneSet K 272200 1]
+[sceneSet L 272200 1]
+[sceneSet M 272200 1]
+[sceneSet N 10000 1]
+[charaScale N 1.1]
+
+[charaSet X 98115000 1 エフェクト用]
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth K 1]
+[charaDepth L 2]
+[charaDepth N 3]
+[charaDepth A 4]
+[charaDepth B 5]
+[charaDepth C 6]
+[charaDepth D 7]
+[charaDepth E 8]
+[charaDepth F 9]
+[charaDepth G 10]
+[charaDepth H 11]
+[charaDepth I 12]
+[charaDepth J 13]
+[charaDepth Y 14]
+[charaDepth M 15]
+[charaDepth X 25]
+[charaDepth Z 26]
+
+[subCameraOn 2]
+[charaLayer K sub #A]
+[charaLayer X sub #A]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+[subRenderFadein #A 0.1 0,0]
+
+[charaScale K 1.5]
+[charaFadein K 0.1 -100,-150]
+[charaPut X 1]
+[charaEffect X bit_talk_valentine_brilliant_fs]
+
+[charaLayer L sub #B]
+[charaLayer J sub #B]
+[charaLayer Z sub #B]
+[subCameraFilter #B normal]
+
+[charaScale L 1.2]
+[charaScale J 1.2]
+[charaScale Z 1.2]
+[charaFace J 0]
+[charaFadein J 0.1 0,0]
+[charaFadein L 0.1 0,-267]
+[charaPut Z 1]
+[charaEffect Z bit_talk_10_LowLevel]
+
+[cameraMove 0.1 0,20 1.1]
+[charaPut Y 2000,2000]
+[charaEffect Y bit_talk_10_LowLevel_depth]
+
+[scene 272200]
+[wt 0.5]
+
+[cueSe SE_21 21_ade588 1.0 1.0]
+[charaMove K 100,-150 10.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_DRAGONCASTLE_1 0.1]
+[wt 3.5]
+
+[cameraMoveEase 0,0 1.8 easeOutSine 1.0]
+[subRenderFadeout #A 0.8]
+[cueSeStop 21_ade588 1.8]
+[wt 2.3]
+[charaMove K 100,-150 0.1]
+[charaFadeout K 0]
+[charaEffectDestroy X bit_talk_valentine_brilliant_fs]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠フローラ
+とっても素敵な雛芥子のお花畑ができましたね！
+[k]
+
+[charaFace A 0]
+
+＠フローラ
+迷いのない色で、悠然と、[r]誇らしげに大きく花を広げて……
+[k]
+
+[charaFace A 2]
+
+＠フローラ
+何があっても元気でいられそうな、[r]生命力に満ち溢れた雛芥子気分を味わっています！
+[k]
+
+[charaFace A 1]
+
+＠フローラ
+……生命力に溢れた印象は、[r]この色がもたらすところも多そうですね。
+[k]
+
+＠フローラ
+この瑞々しい赤さは、まるで[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠虞美人
+血のような、でしょう？[r]ふん。
+[k]
+
+＠虞美人
+人間どもが私の名で呼ぶようになったのも[r]わからなくはないわね。不本意ではあるけど。
+[k]
+
+？1：確かに、ちょっと恐ろしさを感じるくらい
+？2：真っ赤で綺麗だね……
+？！
+
+[bgmStop BGM_DRAGONCASTLE_1 2.5]
+
+[messageOff]
+[charaScale M 1.5]
+[charaFadein M 0.8 100,-150]
+[charaMove M 0,-150 6.0]
+[cueSe SE_25 25_ade1266 0.8 0.2]
+[wt 4.0]
+[cueSeStop 25_ade1266 1.5]
+[charaFadeout M 1.0]
+[wt 1.5]
+
+＠虞美人
+……。[r]……。
+[k]
+
+＠虞美人
+あの方も。[r]こんな光景を、見られたのかしら……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_96 0.1]
+
+＠項羽
+答えは、その人称代名詞が示すものが何か、[r]その正確な主体の定義による。
+[k]
+
+＠項羽
+それは現状では不明確である。[r]よって私には答えられない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠虞美人
+項羽様！？[r]なぜここに！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠項羽
+無論、演算にて。ここに来れば[r]この光景が見られることはわかっていた。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠虞美人
+ああ……ひょっとしたら来ていただけるかなーと[r]思ってはいたのですが、
+[k]
+
+＠虞美人
+まさか本当に……ふふ、うふふ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut Y 2000,2000]
+
+[charaTalk D]
+[charaFace D 4]
+[charaPut N 0,-200]
+[charaFadeTime N 0.2 0.5]
+[charaFadein D 0.1 1]
+
+＠ロビンフッド
+（ひょっとしたらも何も、そういう下心が[r]　スタート地点なのは丸見えだったわけだが……）
+[k]
+
+[messageOff]
+[charaFadeout N 0.2]
+[charaFadeout D 0.2]
+[wt 0.2]
+
+[charaPut Y 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠項羽
+雛芥子。[r]虞美人草の、花畑か。
+[k]
+
+＠項羽
+美しいものだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠虞美人
+……美しいと、お思いになりますか。[r]思って、いただけますか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠項羽
+ああ。
+[k]
+
+＠項羽
+ここにいる人理の影法師ならぬ、[r]遙かな過去に生きた項羽当人が思うのは、
+[k]
+
+＠項羽
+それだけではないのかもしれぬ。
+[k]
+
+[charaFace C 4]
+
+＠項羽
+あるいは、他の何らかの感情を、[r]美しさよりも強く感じるのやもしれぬ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠虞美人
+……。[r]……。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadein #B 0.6 0,0]
+[charaMove L 0,-317 20.0]
+[charaMove J 0,-50 20.0]
+[wt 1.0]
+
+[charaFace B 1]
+
+＠項羽
+だが[line 3][r]過去はともかく。
+[k]
+
+＠項羽
+ここにいる項羽と虞美人は、[r]並んで、この美しき雛芥子の花を見ている。
+[k]
+
+＠項羽
+共にこれを、美しいと思っている。
+[k]
+
+[charaFace J 1]
+
+＠項羽
+故に、それだけで良いように思う。
+[k]
+
+＠項羽
+少なくとも私は、他のいかなる要因があろうとも、[r]妻と共にこの[#花園:かえん]を見られる喜びが勝っている。
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.5]
+[wt 0.7]
+[charaTalk on]
+[charaTalk B]
+
+＠虞美人
+……はい。[r]はい！　私も、それで充分かと思います！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut Y 2000,2000]
+
+[bgmStop BGM_EVENT_96 2.0]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠エレシュキガル・オルタ
+やれやれ。夫婦の絆を強めるのに[r]一役買っただけという感じかしら。
+[k]
+
+＠エレシュキガル・オルタ
+綺麗な畑ができたのは確かだし、[r]こちらも別に損はしていないからいいのだけれど。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_122 0.1]
+
+[charaPut Y 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠虞美人
+こらそこ！[r]強めるも何も私たちの絆は常にマックスよ！
+[k]
+
+＠虞美人
+いえ際限なく高まっていくものではあるけれど、今まで[r]足りていなかった的な誤解を招く表現はしないように！
+[k]
+
+[charaFace B 0]
+
+＠虞美人
+……ちょっと何ぼーっとしてんの気が利かないわね。
+[k]
+
+＠虞美人
+本当ならあそこで手繋ぎデートとかしたいところだけど[r]行けないなら仕方がないわ。
+[k]
+
+[charaFace B 2]
+
+＠虞美人
+代わりにパノラマとか３Ｄとかのデータを取って[r]こっちのシアターで見られるようにしときなさい！
+[k]
+
+＠虞美人
+いつでも私たちがデートに使えるように！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠マシュ
+は、はい！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+＠オルガマリー
+待ちなさい。そんな余計なデータを保存していい、[r]なんて許可は出してないわよ？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠虞美人
+じゃあ今すぐ許可を出しなさいほら今すぐ！[r]何、申請書が必要？　そんなの知らないわ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠項羽
+我が妻よ、安心するがいい。演算済みである。[r]故にここに用意してある。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠オルガマリー
+なんで用意してあるのよ！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut Y 2000,2000]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠ロビンフッド
+良い話な気もしたのに余韻が台無しだあ……。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_MAP_122 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_SABERWARS2 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠花咲翁
+うん。素敵な花畑もできたし、[r]今日の仕事はだいたい終わったかな。
+[k]
+
+[charaFace H 1]
+
+＠花咲翁
+というところで、少し、やってみたいことがあるんだ。[r]試してみてもいいかな？
+[k]
+
+[charaFace H 14]
+
+＠花咲翁
+いや、花畑とはまったく関係のない、[r]将棋のような単なる息抜きの話ではあるのだけど。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+
+＠張角
+ほう。暇さえあれば将棋の対局をせがんでくる[r]おぬしが、別の息抜きとな？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠エレシュキガル・オルタ
+何にしても、黙って[#独断専行:どくだんせんこう]してた以前よりは、[r]事前に聞いてくるだけ進歩したのかしら。
+[k]
+
+？1：全然オッケーですけど
+？2：何を試すつもりなんですか？
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠花咲翁
+ふふ。昨日、きみが言っていたことだよ。[r]お風呂から上がって、髪を拭いていたあたりで。
+[k]
+
+＠花咲翁
+五右衛門風呂もいいけれど、[r]みんなで温泉とかに入るのも楽しそうだよね[line 3]と。
+[k]
+
+？1：まさか……
+？！
+
+[charaFace H 22]
+
+＠花咲翁
+うん。畑用の水源をこの[#鍬:くわ]で掘れたのなら、[r]ひょっとして、なんてね？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_SABERWARS2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,512 @@
+
+＄94-15-28-61-1-0
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 10020000 1 フローラ]
+[charaSet B 1098169200 1 シェイクスピア]
+[charaSet C 1098169300 1 アンデルセン]
+[charaSet D 5059001 1 花咲翁]
+[charaSet E 5051001 1 張角]
+[charaSet F 1098345300 1 エレシュキガル・オルタ]
+[charaSet G 10020000 1 フローラ_演出用]
+
+[sceneSet H 272300 1]
+[sceneSet I 272300 1]
+[sceneSet J 10000 1]
+[charaScale J 1.1]
+
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth J 2]
+[charaDepth A 3]
+[charaDepth B 4]
+[charaDepth C 5]
+[charaDepth D 6]
+[charaDepth E 7]
+[charaDepth F 8]
+[charaDepth Z 9]
+[charaDepth I 10]
+[charaDepth G 11]
+[charaDepth Y 26]
+
+[subCameraOn 1]
+[charaLayer H sub #A]
+[charaLayer Y sub #A]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+[subRenderFadein #A 0.1 0,0]
+
+[charaScale H 1.5]
+[charaFadein H 0.1 -100,-150]
+[charaPut Y 1]
+[charaEffect Y bit_talk_valentine_brilliant_fs]
+
+[cameraMove 0.1 0,20 1.1]
+[charaPut Z 2000,2000]
+[charaEffect Z bit_talk_10_LowLevel_depth]
+
+[scene 272300]
+[wt 0.5]
+
+[cueSe SE_21 21_ade588 1.0 1.0]
+[charaMove H 100,-150 10.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_DRAGONCASTLE_1 0.1]
+[wt 3.5]
+
+[cameraMoveEase 0,0 1.8 easeOutSine 1.0]
+[subRenderFadeout #A 0.8]
+[cueSeStop 21_ade588 1.8]
+[wt 2.3]
+[charaMove H 100,-150 0.1]
+[charaFadeout H 0]
+[charaEffectDestroy Y bit_talk_valentine_brilliant_fs]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠フローラ
+素敵なヒナギクのお花畑ができました！
+[k]
+
+[charaFace A 0]
+
+＠フローラ
+穏やかで素朴で、背伸びしないで慎ましやかに[r]頑張ろうってヒナギク気分になれちゃいます。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠シェイクスピア
+うーん、これは素晴らしい。
+[k]
+
+＠シェイクスピア
+どうですかな、このヒナギク畑の感想は？[r]インスピレーションとか溢れ出ませんか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アンデルセン
+言っただろう、そんなものはない。[r]好きにしろと言ったものが好きにされただけだ。
+[k]
+
+[bgmStop BGM_DRAGONCASTLE_1 2.0]
+
+＠アンデルセン
+しかし……いい機会かもしれん。[r]花の女神。一つ聞いてみたいことがある。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フローラ
+はい、なんでしょう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaPut Z 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠アンデルセン
+勝手に花の気持ちを想像し、愚にもつかない[r]台詞を語らせ、感情を描写する。
+[k]
+
+＠アンデルセン
+花は怒りも笑いもしないのに。
+[k]
+
+＠アンデルセン
+それは、おまえのような存在にとっては、[r]度し難い愚行に見えるのでは？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠フローラ
+[line 3]いいえ。
+[k]
+
+[charaFace A 16]
+
+＠フローラ
+まず何よりも、花だって怒りますし、笑いますよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アンデルセン
+ふん。ならば尚更だ。それを読み取れない人間が、[r]的外れな想像で身勝手な文章を書き連ねる。
+[k]
+
+＠アンデルセン
+なんとも不遜で愚か極まる。[r][#虫唾:むしず]が走るというものだ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠フローラ
+もう一度、いいえ、と言いましょう。
+[k]
+
+＠フローラ
+か弱い花は、人の言葉を持たぬ花は、ともすれば容易く[r]踏みにじられ、ただ消費されるものです。
+[k]
+
+[charaFace A 17]
+
+＠フローラ
+それを主人公に……[r]あるいは物語の登場人物にしてくれる作家さんは、
+[k]
+
+＠フローラ
+つまりあなたは、とてもいい人だと思います。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アンデルセン
+……たとえそれが、辛く悲しいだけだと[r]眉を[#顰:ひそ]められるような話だとしてもか？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale I 1.2]
+[charaScale G 1.2]
+[charaFace G 18]
+[charaFadein G 0.8 100,10]
+[charaFadein I 0.8 100,-287]
+[charaMove G 0,10 50.0]
+[charaMove I 0,-287 50.0]
+[wt 1.0]
+
+＠フローラ
+ええと……たとえば、ある人間が、[r]とても悲しい人生の終わりを迎えたとして。
+[k]
+
+[charaFace G 0]
+
+＠フローラ
+それを見ていた他人は、悲しいだけの人生だったと[r]思うのかもしれませんが、
+[k]
+
+＠フローラ
+その当人が悲しいだけの人生だったと[r]思っているかどうかは別問題ですよ。
+[k]
+
+[charaFace G 16]
+
+＠フローラ
+きっと、あのヒナギクだってそうだと思います。
+[k]
+
+[bgmStop BGM_EVENT_11 2.0]
+
+[messageOff]
+[charaFace C 4]
+[charaFadeout G 0.6]
+[charaFadeout I 0.6]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk C]
+
+＠アンデルセン
+……。[r]……。
+[k]
+
+[charaFace C 5]
+
+＠アンデルセン
+待て。その口ぶりからすると、もしや……[r]読んだのか？　俺のヒナギクを？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[bgm BGM_EVENT_94 0.1 1.0]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠フローラ
+はい。[%1]さんの端末に[r]届いていましたので、作業の休み時間に。
+[k]
+
+[charaFace A 3]
+
+＠フローラ
+わたしは好きですよ、あのお話。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠アンデルセン
+っ、マスター！
+[k]
+
+？1：だって送られてきたから！
+？2：だって名作だから！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠シェイクスピア
+ははは、それほど分量のある物語では[r]ありませんからな！
+[k]
+
+＠シェイクスピア
+マシュ殿にお願いして送ってもらったのですぞ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠アンデルセン
+それを先に言え！
+[k]
+
+[charaFace C 5]
+
+＠アンデルセン
+まるで読者に思わせぶりな言葉を発することで[r]間接的に感想を聞き出そうとするような、
+[k]
+
+＠アンデルセン
+ああ、実にみっともない姿を晒した作家に[r]なってしまったではないか！
+[k]
+
+[charaFace C 2]
+
+＠アンデルセン
+知らなかったとはいえ状況的には同じだ、[r]直接感想を求めるよりもなおタチが悪い！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠シェイクスピア
+そのようなことはないと思いますが。[r]で、インスピレーションは？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠アンデルセン
+知らん！
+[k]
+
+[charaFace C 0]
+
+＠アンデルセン
+まったく、締め切りが近いというのに……。
+[k]
+
+[messageOff]
+[se ad562]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+[wt 1.2]
+
+[charaPut Z 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaPut J 0,-200]
+[charaFadeTime J 0.2 0.5]
+
+＠シェイクスピア
+（それは締め切りが近いのに余計な時間を取られた、[r]　という意味か……）
+[k]
+
+[charaFace B 3]
+
+＠シェイクスピア
+（それとも、新しい構想を思いついてしまった、[r]　という意味ですかな？）
+[k]
+
+＠シェイクスピア
+（まあいいか、吾輩も何か書こーっと）
+[k]
+
+[messageOff]
+[charaFaceFade B 1 0.2]
+[charaFadeout J 0.2]
+[wt 2.0]
+
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_94 1.5]
+[wait fade]
+
+[charaPut Z 2000,2000]
+[charaFadeout B 0.1]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_SABERWARS2 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠花咲翁
+うん。素敵な花畑もできたし、[r]今日の仕事はだいたい終わったかな。
+[k]
+
+[charaFace D 1]
+
+＠花咲翁
+というところで、少し、やってみたいことがあるんだ。[r]試してみてもいいかな？
+[k]
+
+[charaFace D 14]
+
+＠花咲翁
+いや、花畑とはまったく関係のない、[r]将棋のような単なる息抜きの話ではあるのだけど。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠張角
+ほう。暇さえあれば将棋の対局をせがんでくる[r]おぬしが、別の息抜きとな？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠エレシュキガル・オルタ
+何にしても、黙って[#独断専行:どくだんせんこう]してた以前よりは、[r]事前に聞いてくるだけ進歩したのかしら。
+[k]
+
+？1：全然オッケーですけど
+？2：何を試すつもりなんですか？
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠花咲翁
+ふふ。昨日、きみが言っていたことだよ。[r]お風呂から上がって、髪を拭いていたあたりで。
+[k]
+
+＠花咲翁
+五右衛門風呂もいいけれど、[r]みんなで温泉とかに入るのも楽しそうだよね[line 3]と。
+[k]
+
+？1：まさか……
+？！
+
+[charaFace D 22]
+
+＠花咲翁
+うん。畑用の水源をこの[#鍬:くわ]で掘れたのなら、[r]ひょっとして、なんてね？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_SABERWARS2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
