@@ -1,0 +1,791 @@
+
+＄94-15-28-12-3-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 1098342410 1 わらし]
+[charaSet B 1098345300 1 エレシュキガル・オルタ]
+[charaSet C 6052000 1 おみぃさん]
+[charaSet D 2003001 1 ロビンフッド]
+[charaSet E 10020000 1 フローラ]
+[charaSet F 1098346410 1 わらし_マントあり_0.4倍]
+[charaSet G 1098342420 1 わらし_彼岸花（演出用）]
+[charaSet H 1098342420 1 わらし_彼岸花（演出用）]
+[charaSet I 6052000 1 おみぃさん（演出用）]
+[charaSet J 1098345300 1 エレシュキガル・オルタ（演出用）]
+[charaSet K 5051001 1 張角]
+[charaSet L 2003001 1 ロビンフッド（演出用）]
+[charaSet M 10020000 1 フローラ（演出用）]
+
+[sceneSet Q 271201 1]
+[charaScale Q 1.2]
+[sceneSet R 270605 1]
+[charaScale R 1.2]
+[sceneSet S 270605 1]
+[charaScale S 1.3]
+[sceneSet T 270605 1]
+[charaScale T 1.3]
+[sceneSet U 270605 1]
+[charaScale U 1.2]
+[sceneSet V 270605 1]
+[charaScale V 1.2]
+[sceneSet W 270605 1]
+[charaScale W 1.2]
+
+[imageSet Y cut778_lycoris 1]
+
+[charaSet Z 98115000 1 エフェクト用]
+
+[subCameraOn 3]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+
+[charaLayer Y sub #A]
+[charaLayer Z sub #A]
+[subCameraFilter #A maskEdge cut359_mask07 10 0,0,0,255 1]
+[charaScale Y 1.2]
+[charaScale Z 1.0]
+
+[charaFadein Y 0.1 0,150]
+[charaLayer H sub #B]
+
+[subCameraFilter #B through]
+[subRenderFadein #B 0 0,0]
+[charaLayer G sub #C]
+[charaLayer W sub #C]
+
+[subCameraFilter #C maskEdge cut359_mask05 4 255,159,72,255 0]
+[charaScale W 1.3]
+
+[charaDepth G 2]
+[charaDepth W 1]
+
+[charaFadein G 0.1 -20,300]
+[charaFadein W 0.1 100,80]
+
+[charaTalk depthOff]
+[charaDepth Z 24]
+[charaDepth H 22]
+
+[charaDepth T 20]
+[charaDepth J 11]
+
+[charaDepth S 10]
+[charaDepth E 7]
+[charaDepth I 6]
+[charaDepth Q 5]
+[charaDepth R 5]
+[charaDepth B 4]
+[charaDepth F 3]
+[charaDepth C 2]
+[charaDepth U 1]
+
+
+
+
+
+[scene 271201]
+
+[se ad450]
+[seVolume ad450 0 0]
+[cueSe SE_21 21_ad1114 0 0]
+
+[fowardEffect bit_talk_sparks_fs]
+[fowardEffect bit_talk_gouka_fs]
+
+[seVolume ad450 1.0 1.0]
+[cueSeVolume 21_ad1114 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_63 0.1]
+[wt 2.0]
+[subRenderFadein #A 0.5 -150,-330]
+[wt 1.5]
+[charaPut Z 0,150]
+[charaEffect Z bit_talk_charge_fire_red]
+[se ad267]
+[wt 2.5]
+[seVolume ad450 1.0 0.5]
+[cueSeVolume 21_ad1114 1.0 0.5]
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+[charaEffectDestroy Z bit_talk_charge_fire_red]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠わらし
+う、ううーっ！
+[k]
+
+？1：エレちゃんの彼岸花畑も……！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠エレシュキガル・オルタ
+っ……！
+[k]
+
+[messageOff]
+[se ad421]
+[seVolume ad421 0 0.3]
+[seStop ad421 1.0]
+[charaShake B 0.08 2 2 0.5]
+[wt 1.0]
+
+[charaFaceFade B 15 0.2]
+[wt 0.2]
+
+＠エレシュキガル・オルタ
+残念だけど……命あっての物種。[r]下がるしかないわ！
+[k]
+
+[charaFace B 16]
+
+＠エレシュキガル・オルタ
+わらしも！　何やってるの、早く！[r]火に飲み込まれるわよ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+[charaFace F 7]
+[charaFadein F 0.1 150,0]
+
+＠おみぃさん
+っ、マントに火が燃え移る！[r]脱ぎな！
+[k]
+
+[charaFace F 5]
+
+＠F：わらし
+や、やだ……。
+[k]
+
+[charaFace C 18]
+
+＠おみぃさん
+大丈夫さ、また今度、[r]いくらだって作ってあげるから！
+[k]
+
+
+[charaFace F 7]
+
+＠F：わらし
+う[messageShake 0.05 1 1 0.2]ーーー！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad77]
+[charaShake F 0.1 3 3 0.5]
+[charaShake C 0.1 3 3 0.5]
+[wt 0.3]
+[seStop ad77 0.5]
+[charaCrossFade F 1098346400 7 0.3]
+[wait charaCrossFade F]
+[wait fastPlayDraw 1.0]
+[wt 0.7]
+
+[messageOff]
+[cueSe SE_26 26_ade1322]
+[charaMove C 400,0 0.8]
+[charaMove F 550,0 0.8]
+[charaFadeout F 0.8]
+[charaFadeout C 0.8]
+
+[wt 0.2]
+[bgmStop BGM_MAP_63 1.0]
+[wipeout rightToLeft 0.5 1.0]
+[seStop ad450 1.0]
+[cueSeStop 21_ad1114 1.0]
+[cueSeStop 23_ad1292 1.0]
+[wait wipe]
+
+[fowardEffectDestroy bit_talk_sparks_fs]
+[fowardEffectDestroy bit_talk_gouka_fs]
+
+[charaSet A 1098342420 1 わらし]
+[charaSet F 1098346420 1 わらし_彼岸花]
+[charaDepth A 5]
+[charaDepth F 6]
+
+[charaFadeout A 0.1]
+
+[charaFadeout C 0.1]
+
+[charaFadeout Y 0.1]
+[charaLayer Y normal]
+
+[scene 270605]
+
+[wt 1.0]
+[cueSeStop 26_ade1322 1.0]
+[wt 1.0]
+[wipein leftToRight 0.5 1.0]
+[wait wipe]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ロビンフッド
+ここまでくりゃあ、さすがに、だろ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠おみぃさん
+代わりに、桜からは[r]だいぶ遠くなっちまったけどねぇ。
+[k]
+
+＠おみぃさん
+途中の花畑がみんな火の海に[r]なっちまったみたいな感じだ。
+[k]
+
+[charaFace C 12]
+
+＠おみぃさん
+また近付くのは難儀だよ。[r]火の海を乗り越える方法を考えなきゃ……
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaFace C 23]
+
+＠おみぃさん
+[line 3]ゴメン。
+[k]
+
+[charaFace C 24]
+
+＠おみぃさん
+手塩にかけて育ててた畑が燃えたってのに、もっと[r]アンタの気持ちを考えた言い方すればよかった。
+[k]
+
+[messageOff]
+[charaTalk C,J]
+[charaScale J 1.2]
+[charaFace J 3]
+[charaFadein J 0.6 -140,0]
+[charaFadein S 0.6 60,-250]
+[charaMoveEase J -100,0 0.6 easeOutSine]
+[charaMoveEase S 100,-250 0.6 easeOutSine]
+[wt 0.6]
+[charaFadeout C 0]
+
+＠J：エレシュキガル・オルタ
+……。[r]……。
+[k]
+
+＠J：エレシュキガル・オルタ
+別に……いいのだわ。[r]ただの、練習の畑だったし。
+[k]
+
+＠J：エレシュキガル・オルタ
+ショックなんて、そんな……[r]別に、悲しくも……[bgmStop BGM_EVENT_70 1.0]
+[k]
+
+[messageOff]
+[charaScale H 1.6]
+[charaScale T 1.7]
+[charaTalk H,J]
+[charaFace H 5]
+[charaFadein H 0.4 30,380]
+[charaFadein T 0.6 -20,-150]
+[charaMove H 0,380 0.6]
+[charaMove T -50,-150 0.6]
+[blur lens 0.6 2 1]
+[wt 1.0]
+[charaMoveEase H 0,130 1.5 easeInOutSine]
+[charaMoveEase T -50,-400 1.5 easeInOutSine]
+[wt 1.5]
+[charaFadeout I 0]
+[charaFadeout S 0]
+[charaFadeout J 0]
+[charaScale B 1.1]
+[charaScale F 1.1]
+[charaFace B 10]
+[charaFace F 5]
+[charaFadein B 0 -90,0]
+[charaFadein F 0 50,50]
+
+[bgm BGM_EVENT_123 0.1]
+
+＠H：わらし
+うう。ううう……
+[k]
+
+＠H：わらし
+わらしは、わらしは、かなしい！[r]かなしいよ！
+[k]
+
+＠H：わらし
+おみぃがつくってくれたふくも、[r]おはなばたけも、もえた！
+[k]
+
+[messageOff]
+[charaTalk J,H]
+[charaLayer J sub #A]
+[charaLayer U sub #A]
+[subCameraFilter #A maskEdge cut359_mask10 5 0,0,0,255 0]
+[subRenderDepth #A 2]
+[subRenderDepth #B 1]
+[charaScale J 1.2]
+[charaScale U 1.2]
+[charaFace J 3]
+[charaFadein J 0 50,200]
+[charaFadein U 0 0,-70]
+[subRenderFadeinFSSideL #A 0.4 -400,-200]
+[wt 0.4]
+
+
+＠J：エレシュキガル・オルタ
+アナタ……それ……[r]最後に、取ってきてくれたの……？
+[k]
+
+[charaFace H 17]
+
+＠H：わらし
+でも、これしか、ない。[r]いっぽんしか、ない。
+[k]
+
+[charaFaceFade H 5 0.2]
+
+＠H：わらし
+あんなにきれいだった、えれおの、はな。[r]なくなっちゃった……！
+[k]
+
+[charaFace J 18]
+[charaFace B 18]
+
+＠J：エレシュキガル・オルタ
+っ[messageShake 0.1 2 2 0.3]……。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadeout #A 0.4]
+[charaFadeout H 0.4]
+[charaFadeout T 0.4]
+[blurOff lens 0.3]
+[wt 0.4]
+[charaFadeout J 0.1]
+[charaFadeout U 0.1]
+[wt 0.7]
+[charaLayer U normal]
+[charaLayer H normal]
+[charaLayer J sub #B]
+
+[se ad183]
+[charaMove B -50,0 0.4]
+[charaShake F 0.1 1 2 0.4]
+[charaShake B 0.1 1 2 0.4]
+[cueSeStop 24_ade981 1.5]
+[wt 1.5]
+
+[blur lens 1.0 4 1]
+[wt 1.5]
+
+[blurOff lens 1.0]
+[wt 1.5]
+
+[charaDepth F 4]
+[charaDepth B 3]
+
+[charaFace E 21]
+[charaFadein E 0.4 0,0]
+[charaFadein R 0.4 0,-250]
+[wt 0.5]
+[charaFadeout F 0]
+[charaMove B -150,0 0]
+
+？1：ねぇ、フローラ
+？！
+
+[charaDepth B 4]
+[charaDepth F 6]
+
+[charaTalk on]
+[charaTalk E]
+
+＠フローラ
+……はい。
+[k]
+
+？1：冷静に考えたら、不思議なことかもしれない
+？！
+
+[messageOff]
+[wt 0.2]
+
+？1：どうして、人は[line 3]
+？2：育てた花が、駄目になっちゃっただけで
+？！
+
+？1：こんなにも、悲しい思いをするんだろう
+？2：涙が出ちゃったり、するんだろう
+？！
+
+[charaFaceFade E 18 0.2]
+[wt 1.5]
+
+[charaFaceFade E 21 0.3]
+[wt 0.3]
+
+＠フローラ
+それが、人というもので。
+[k]
+
+＠フローラ
+それが、花というものだから……[r]ですよ、きっと。
+[k]
+
+[messageOff]
+[charaTalk J,E]
+[charaFace J 28]
+[charaFadein J 0.5 -160,0]
+[charaFadein S 0.5 50,-250]
+[charaMove J -150,0 10.0]
+[charaMove S 60,-250 10.0]
+[wt 0.5]
+[charaFadeout E 0]
+[charaFadeout R 0]
+
+＠J：エレシュキガル・オルタ
+……ありがとう。[r]ありがとうね、わらし。
+[k]
+
+＠J：エレシュキガル・オルタ
+それは[line 3]アナタにあげるわ。[r]最後の一本を守ってくれた、アナタに。
+[k]
+
+[charaFace J 8]
+
+＠J：エレシュキガル・オルタ
+ふふ、死をイメージさせる、冥界の名前がついた[r]花なんて縁起が悪いかもしれないけれど。
+[k]
+
+[messageOff]
+[charaScale H 1.1]
+[charaScale T 1.3]
+[charaTalk H,J]
+[charaFadeout J 0.5]
+[charaFace H 5]
+[charaFadein H 0.5 150,0]
+[charaFadein T 0.5 -50,-250]
+[charaMove H 140,0 10.0]
+[charaMove T -60,-250 10.0]
+[wt 0.5]
+[charaPut S 0,-250]
+
+＠H：わらし
+……そんなことない。[r]ないよ！　わらし、すきだよ！
+[k]
+
+[messageOff]
+[charaScale J 1.5]
+[charaTalk J]
+[charaFace J 28]
+[charaFadein J 0.5 0,50]
+[charaFadeout H 0.5]
+[charaFadeout T 0.5]
+[blur lens 0.5 4 20]
+[wt 1.5]
+
+[se ade385]
+[cameraMoveEase 0,20 2.0 easeInOutSine 1.1]
+[subRenderMoveEase #B 0,20 2.0 easeInOutSine]
+[subRenderMoveScaleEase #B 1.1 2.0 easeInOutSine]
+[seStop ade385 1.5]
+
+[wipeout circleIn 1.5 1.0]
+[wait wipe]
+
+[blurOff]
+[cameraHome]
+
+[charaFadeout S 0.1]
+[charaFadeout F 0.1]
+[charaFadeout J 0.1]
+[charaFadeout B 0.1]
+[subRenderFadeout #B 0.1]
+
+[scene 10000]
+
+[wt 1.0]
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+＠
+自分の小さな身体が、抱えた花ごと、[r]彼女にそっと抱きしめられる。
+[k]
+
+＠
+優しく。慎重に。[r]どこか、力加減に怯えたように。
+[k]
+
+＠
+そうして[line 3]何か温かいものが、[r]一つだけ、頭の上に落ちてきた。
+[k]
+
+＠
+一粒の、雫のようなものが。
+[k]
+
+＠
+その雫と、彼女自身と、[r]胸に抱いた彼岸の花。
+[k]
+
+＠
+それら全てに、包まれる。[r]自分は包まれている。
+[k]
+
+＠
+温かな、死者の匂いのするものに。
+[k]
+
+＠わらし
+[line 3]あ。
+[k]
+
+＠
+その温もりで、思い出した。
+[k]
+
+[bgmStop BGM_EVENT_123 2.0]
+＠
+そこが、自分の還る場所なのだと。
+[k]
+
+
+[messageOff]
+[wipeout circleIn 0.1 1.0]
+[wait wipe]
+
+[charaLayer I sub #A]
+[charaLayer K sub #A]
+[charaLayer L sub #A]
+[charaLayer M sub #A]
+[charaLayer U sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask06 4 255,255,255,255 0]
+
+[charaDepth I 5]
+[charaDepth K 4]
+[charaDepth L 3]
+[charaDepth M 2]
+[charaDepth U 1]
+
+[charaScale I 1.1]
+[charaScale K 1.1]
+[charaScale L 1.1]
+[charaScale M 1.1]
+
+[charaFace I 10]
+[charaFace K 6]
+[charaFace L 14]
+[charaFace M 19]
+
+[charaFadein I 0.1 150,230]
+[charaFadein K 0.1 -150,240]
+[charaFadein L 0.1 350,220]
+[charaFadein M 0.1 -380,230]
+[charaFadein U 0.1 0,0]
+[charaLayer V sub #B]
+
+[subCameraFilter #B maskEdge cut359_mask06 4 198,0,28,255 0]
+[subRenderScale #B 1.0]
+
+[charaScale J 1.2]
+[charaScale V 1.2]
+
+[charaDepth J 2]
+[charaDepth V 1]
+
+[charaFace J 10]
+[charaFadein J 0.1 0,275]
+[charaFadein V 0.1 0,150]
+
+
+[scene 270605]
+
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+[charaFadein S 0.1 0,-250]
+
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+[wt 1.0]
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+
+
+＠H：わらし
+……ああ。[r]すこし、おもいだした。
+[k]
+
+[bgm BGM_BATTLE_127 0.1]
+[charaFace H 6]
+
+＠H：わらし
+だから[line 3]てつだうよ。
+[k]
+
+＠H：わらし
+うみをわたるの、てつだえるよ。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk off]
+[subRenderFadein #A 0.3 50,-240]
+[subRenderFadein #B 0.3 -50,-460]
+[subRenderMoveEase #A 0,-240 0.3 easeOutSine]
+[subRenderMoveEase #B 0,-460 0.3 easeOutSine]
+[wt 2.0]
+
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[charaFadeout H 0.4]
+[charaFadeout S 0.4]
+[wt 0.4]
+
+＠おみぃさん
+待った待った。[r]確認させてよ。
+[k]
+
+＠おみぃさん
+この燃えた花畑を……火の海を渡って、[r]もう一回あっちに行く方法があるってのかい？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ロビンフッド
+確かに、桜の樹の真下にゃ[r]少しスペースがあった。
+[k]
+
+＠ロビンフッド
+あそこまで突っ込むことができりゃあ、[r]あいつらと対峙することもできそうではあるが……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠エレシュキガル・オルタ
+本当に、いけるの？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠わらし
+うん。
+[k]
+
+＠わらし
+でも、そのために……[r]ひつような、はながある。
+[k]
+
+＠わらし
+それをうえて、ふやさないと、だめ。[r]たくさんはいらないけれど、それなりに、いる。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠おみぃさん
+ほうほう。そういう話なら、[r]まず意見を聞かなくちゃならないのは[line 3]
+[k]
+
+[messageOff]
+[charaDepth E 5]
+[charaDepth R 4]
+[charaDepth A 3]
+[charaDepth C 2]
+
+[charaTalk E,C]
+[charaFace E 18]
+[charaFadein E 0.6 -50,0]
+[charaFadein R 0.6 0,-250]
+[charaMoveEase E 0,0 0.6 easeInOutSine]
+[charaMoveEase R 50,-250 0.6 easeInOutSine]
+[wt 1.0]
+[charaFadeout C 0]
+[charaFace A 14]
+[charaFadein A 0 1]
+
+[charaFaceFade E 21 0.2]
+
+＠フローラ
+……やりましょう。[r]わたしはわらしちゃんを信じます。
+[k]
+
+？1：同感だね
+？2：必要なものがあるなら、何でも用意するよ！
+？！
+
+＠フローラ
+それで、何のお花を植えればいいんですか？
+[k]
+
+[charaTalk A,E]
+[charaFadeout E 0.4]
+[charaFadeout R 0.4]
+[wt 0.4]
+
+＠わらし
+うん。[r]それはね[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_BATTLE_127 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

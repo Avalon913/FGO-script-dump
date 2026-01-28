@@ -1,0 +1,838 @@
+
+＄94-15-28-12-2-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 2003001 1 ロビンフッド]
+[charaSet B 1098345300 1 エレシュキガル・オルタ]
+[charaSet C 5051001 1 張角]
+[charaSet D 10020000 1 フローラ]
+[charaSet E 1098257310 1 ダ・ヴィンチ]
+[charaSet F 1098346800 1 マシュ]
+[charaSet G 1098346900 1 オルガマリー]
+[charaSet H 6052000 1 おみぃさん]
+[charaSet I 1098342410 1 わらし]
+
+[charaSet N 1098343220 1 怪奇植物_炎_演出用1]
+[charaSet O 1098343220 1 怪奇植物_炎_演出用2]
+[charaSet P 1098343220 1 怪奇植物_炎_演出用3]
+[charaSet Q 1098343220 1 怪奇植物_炎_演出用4]
+
+[charaSet R 1098342410 1 わらし_演出用]
+[charaSet S 10020000 1 フローラ_演出用]
+[sceneSet T 271105 1]
+[sceneSet U 271105 1]
+[sceneSet V 271105 1]
+
+[charaSet W 98115000 1 通信エフェクト用]
+[charaSet X 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaTalk on]
+[charaDepth X 1]
+[charaDepth P 2]
+[charaDepth Q 3]
+[charaDepth O 4]
+[charaDepth N 5]
+[charaDepth A 6]
+[charaDepth B 7]
+[charaDepth C 8]
+[charaDepth D 9]
+[charaDepth E 10]
+[charaDepth F 11]
+[charaDepth G 12]
+[charaDepth H 13]
+[charaDepth I 15]
+[charaDepth U 14]
+[charaDepth R 16]
+[charaDepth V 17]
+[charaDepth S 18]
+
+[subCameraOn 2]
+[charaLayer U sub #A]
+[charaLayer R sub #A]
+[charaLayer V sub #B]
+[charaLayer S sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask05 5 255,159,72,255 0]
+[subCameraFilter #B normal]
+
+[charaScale R 1.0]
+[charaScale U 1.5]
+[charaFace R 4]
+[charaFadein R 0 0,235]
+[charaFadein U 0 100,120]
+
+[subRenderScale #B 1.2]
+[charaScale S 1.2]
+[charaScale V 1.2]
+[charaFace S 21]
+[charaFadein S 0 0,-30]
+[charaFadein V 0 0,-300]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+
+[scene 271105]
+
+[pictureFrameTop cut063_cinema]
+
+[charaPut W 2000,2000]
+[charaEffect W bit_talk_10_LowLevel]
+
+[charaScale T 1.2]
+[charaFadein T 0.1 0,-250]
+[charaShake T 0.03 1 2 0]
+[effect bit_talk_41_remake]
+[wt 0.1]
+
+[charaMove T 0,-370 5.0]
+[charaMoveScale T 1.8 5.0]
+[fadein black 1.0]
+[cueSe SE_26 26_ade1322 1.0 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[cueSeStop 26_ade1322 1.0]
+[seStop ad769 1.0]
+[wait wipe]
+
+[pictureFrameTop]
+
+[effectStop bit_talk_41_remake]
+[charaFadeout T 0.1]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[bgm BGM_GOGH_1 0.1 1.0]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠ロビンフッド
+ふぅ……なんとか抜けられはしたか。[r]炎の密度が薄いところがあって助かったぜ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠エレシュキガル・オルタ
+このあたりは……[r]私たちの個人畑のエリアみたいね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠張角
+ひょっとして、[r]ワシがヒマワリ兵を動かしたから、
+[k]
+
+＠張角
+元々それが生えてたところに[r]ちっとは隙間ができとったんじゃないかの？
+[k]
+
+[bgmStop BGM_GOGH_1 2.0]
+
+[charaFace C 3]
+
+＠張角
+さすがはワシじゃな、[r]天運も我に味方しておる。ほっほ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠フローラ
+……。[r]……。
+[k]
+
+？1：情報の整理を、しようか
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut W 1]
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+[bgm BGM_EVENT_175 0.1]
+
+＠ダ・ヴィンチ
+うん。正体は未だ不明ながら、[r]花咲翁の犬に擬態していた[line 3]
+[k]
+
+＠ダ・ヴィンチ
+あるいはその内部に潜んでいたと思われる、[r]敵の[#首魁:しゅかい]と推定される存在が姿を現した。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠マシュ
+そして花咲翁さん本人も、[r]その[#首魁:しゅかい]に……協力する様子で、
+[k]
+
+＠マシュ
+燃える属性を持っているような相手の植物たち、[r]その炎が桜を包むのを見守っていました。
+[k]
+
+[charaFace F 9]
+
+＠マシュ
+まだ[#蕾:つぼみ]の状態で、すぐに咲くというわけではないだろう、[r]という見込みではありますが……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 17]
+[charaFadein G 0.1 1]
+
+＠オルガマリー
+天願桜は敵の手に落ちた、[r]と言わざるを得ないわね。
+[k]
+
+[charaFace G 2]
+
+＠オルガマリー
+……この状況を打開する方法を考えなくてはならないわ。[r]今すぐに。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut W 2000,2000]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ロビンフッド
+さっきからずうっとその答えを[r]探し続けちゃあいるんですけどねぇ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+
+＠おみぃさん
+一つわかったのは、アタシをあんなふうにしてたのも[r]やっぱりアイツの仕業だった、ってコトかねぇ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut W 1]
+[charaTalk E]
+[charaFace E 34]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+[#吾:おれ]の知るモノの皮……[r]とか言ってたっけ。
+[k]
+
+＠ダ・ヴィンチ
+正直なところ、[#異類婚姻譚:い る い こ ん い ん た ん]や『見るなの禁』の[r]パターンにはかなりの数がある。
+[k]
+
+[charaFace E 22]
+
+＠ダ・ヴィンチ
+蛇女房や鶴女房のように、異形の正体を見られた存在が[r]ただ立ち去るだけでなく……
+[k]
+
+＠ダ・ヴィンチ
+伝承や神話の中には、覗いたことによって[r]結婚した相手の正体を知ってしまったものが、
+[k]
+
+＠ダ・ヴィンチ
+我を失った相手に襲われる[line 3][r]というパターンのものもあるんだ。
+[k]
+
+[charaFace E 23]
+
+＠ダ・ヴィンチ
+詳細はわからないが、そのような役割を術式として[r]被せられていた、ってことなんだろう。
+[k]
+
+＠ダ・ヴィンチ
+キミは様々な伝承の中にいる『蛇の[#女:はは]』の[r]集合体のようなものだ。
+[k]
+
+＠ダ・ヴィンチ
+そこに似たような、しかし少し違うだけの皮を[r]被せるのは楽なことだったんだろうと思うね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut W 2000,2000]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠おみぃさん
+まったく。暴れたい気持ちはわかるけど、[r]暴れてもどうにもならないじゃないか。
+[k]
+
+＠おみぃさん
+アタシをそんなヒステリー女扱いするなんて、[r]腹が立つねぇ、まったく。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut W 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠マシュ
+さらに提示された情報は、もう一つの眼の花です。
+[k]
+
+＠マシュ
+想定はしていたことでしたが、あれが[r]この地に満ちる怪奇植物を生む根源であるようです。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut W 2000,2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ロビンフッド
+草産みの眼花、とか言ってたっけな。[r]ありゃなんだ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut W 1]
+[charaTalk E]
+[charaFace E 22]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+口ぶりからすると、[r]例の[#首魁:しゅかい]本人の眼なんかではなく―――
+[k]
+
+＠ダ・ヴィンチ
+別の神性に起因するもので、奴が何らかの[r]繋がりで支配権を得ている道具……
+[k]
+
+＠ダ・ヴィンチ
+つまり、ある意味では宝具のようなものだと[r]推測できる。
+[k]
+
+[charaFace E 23]
+
+＠ダ・ヴィンチ
+具体的なところはまだわからないけれど、
+[k]
+
+＠ダ・ヴィンチ
+実のところ、死した神、あるいは[r]それに類するものの身体から作物が発生した……
+[k]
+
+＠ダ・ヴィンチ
+という神話は世界各地に存在する。[r]ハイヌウェレ型神話、と名付けられているものだね。
+[k]
+
+＠ダ・ヴィンチ
+きっとあれもそういう神話に紐付く、[r]植物を生む神性の眼球なんだろう。
+[k]
+
+？1：神様の眼……
+？2：魔眼、なのかな
+？！
+
+[charaFace E 36]
+
+＠ダ・ヴィンチ
+魔眼に分類できるかは怪しいかな？[r]できるとしても、相当の上位なのは間違いない。
+[k]
+
+[charaFace E 8]
+
+＠ダ・ヴィンチ
+……なにぶん神の遺体だからね。[r]魔術世界では[#神體:がんたい]と呼ばれる、超抜級の遺物だ。
+[k]
+
+＠ダ・ヴィンチ
+その価値と力は計り知れない！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut W 2000,2000]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠張角
+元々の神としての性質の一部であるというわけじゃな。[r]そりゃ強い草が出るはずじゃわい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠おみぃさん
+ふーむ。結局さ、そういう目玉を持ってる[r]アイツも、やっぱりどこかの神サマなのかね？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut W 1]
+[charaTalk E]
+[charaFace E 34]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+個人的には、可能性は非常に高い、[r]と言いたいところなんだけど……。
+[k]
+
+[bgmStop BGM_EVENT_175 2.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠マシュ
+はい。判断には、[r]もう少し材料が必要かもしれません。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut W 2000,2000]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠エレシュキガル・オルタ
+……一人、話を聞いてみたいものがいるわ。
+[k]
+
+[messageOff]
+[charaFace B 0]
+[charaMove B 0,-5 0.5]
+[cueSe SE_24 24_ade981]
+[wt 1.0]
+[charaMove B 0,0 0.5]
+[wt 1.0]
+
+[charaTalk R]
+
+[subRenderFadeinFSL #A 0.4 -350,-250]
+[wt 0.7]
+
+＠R：わらし
+あう……。
+[k]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[bgm BGM_EVENT_11 0.1 1.0]
+
+＠エレシュキガル・オルタ
+アナタは……あの敵から、草産みの眼から、[r]何かを感じ取っていたようだった。
+[k]
+
+＠エレシュキガル・オルタ
+この事態を打開する、[r]何かのヒントを持っていたりしない？
+[k]
+
+[messageOff]
+
+
+[charaTalk R]
+[charaMove R -5,235 0.4]
+[wt 0.4]
+[charaMove R 5,235 0.8]
+[wt 0.8]
+[charaMove R 0,235 0.4]
+[wt 0.4]
+
+＠R：わらし
+わから、ない……
+[k]
+
+＠R：わらし
+わらしは、わらしのことを、しらない。[r]おもいだせない。
+[k]
+
+＠R：わらし
+ただ、こわいのだけ、わかる……。
+[k]
+
+？1：嘘をついているようには見えないよ
+？！
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠エレシュキガル・オルタ
+……はぁ。
+[k]
+
+＠エレシュキガル・オルタ
+そうね。[r]それくらいは、私にだってわかります。
+[k]
+
+[charaFace B 10]
+
+＠エレシュキガル・オルタ
+でも。お願い。何か思い出せることはない？[r]今は何でもいいから材料が欲しいところなの。
+[k]
+
+[charaTalk R]
+[charaFace R 4]
+
+＠R：わらし
+わから、ない。[r]こわい……。
+[k]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠フローラ
+……。[r]……。
+[k]
+
+[charaFace D 21]
+＠フローラ
+……っ[line 3]。
+[k]
+
+[messageOff]
+
+
+[wt 0.7]
+[charaMove D 0,-20 0.6]
+[se ad60]
+[seVolume ad60 0 0]
+[seVolume ad60 0.5 1.0]
+[wt 0.4]
+[seStop ad60 0.4]
+[wt 0.8]
+[charaMoveReturn D 0,-25 0.5]
+[se ad775]
+[seVolume ad775 0 0.3]
+[seStop ad775 0.3]
+[wt 1.0]
+
+？1：（フローラが、わらしを）
+？2：（優しく、抱きしめて……）
+？！
+
+[charaFace D 16]
+
+＠フローラ
+……怖い、ですよね。
+[k]
+
+[charaFace D 9]
+
+＠フローラ
+わたしも、です。
+[k]
+
+[charaFace D 10]
+
+＠フローラ
+炎に包まれる花の光景が。[r]花咲翁さんが向こうに行ってしまったことが。
+[k]
+
+[charaFace D 11]
+
+＠フローラ
+とても、つらいです。
+[k]
+
+＠フローラ
+正直に言えば、何もかもなかったことにして、[r]目を閉じてしまいたいという気持ちもあります。
+[k]
+
+＠フローラ
+耳を塞いで、土の中の種のように丸くなって、[r]全部を忘れてしまえれば、とも思います。
+[k]
+
+[charaFace D 21]
+
+＠フローラ
+でも[line 3]声が、聞こえるんです。
+[k]
+
+[messageOff]
+
+
+
+＠R：わらし
+……？
+[k]
+
+[messageOff]
+[charaTalk S]
+[subRenderFadein #B 0.6 0,0]
+[wt 1.2]
+
+[charaFace S 21]
+
+＠S：フローラ
+……泣いているような、あの桜の声が。
+[k]
+
+＠S：フローラ
+そして、地面に植えた、みんなの声が。
+[k]
+
+[charaFace S 13]
+
+＠S：フローラ
+わたしは……たとえどれだけ非力でも、[r]その花の声を聞かないふりだけは、できません。
+[k]
+
+[charaFace S 21]
+
+＠S：フローラ
+わたしは花の女神。
+[k]
+
+＠S：フローラ
+小さくか弱き花々の声を届けるもの。[r]そう在りたいと願っているもの。
+[k]
+
+[charaFace S 9]
+
+＠S：フローラ
+だから……だから、お願いです。
+[k]
+
+＠S：フローラ
+具体的なことは何も言えなくて、すみません。[r]ただ[#縋:すが]るだけになって、すみません。
+[k]
+
+[charaFace S 18]
+＠S：フローラ
+でも、わたしは、それでも[line 3]
+[k]
+
+[charaFace S 21]
+[charaFace D 21]
+
+＠S：フローラ
+絶対に手放せない[#願い:想　い]があるなら。[r]最後まで、花を胸に抱いて、祈りたい。
+[k]
+
+[messageOff]
+[se ade385]
+[seStop ade385 1.0]
+[charaTalk S,D]
+[subRenderFadeout #B 0.6]
+[wt 1.2]
+
+[charaTalk D]
+[charaFace D 9]
+
+＠フローラ
+だから、お願い、わらしちゃん。
+[k]
+
+＠フローラ
+いつもみたいに、元気にわたしたちを手伝って、[r]くれませんか……？
+[k]
+
+[messageOff]
+[charaTalk R]
+[charaFace R 14]
+[subRenderFadeinFSL #A 0.4 -350,-250]
+[wt 0.4]
+
+＠R：わらし
+……。[r]……。
+[k]
+
+[charaFace R 12]
+[charaMoveReturn R 0,230 0.5]
+
+＠R：わらし
+うん。[r]てつだいたい。
+[k]
+
+[charaFace R 4]
+
+＠R：わらし
+わらしも、てつだいたいとおもってる……。
+[k]
+
+＠R：わらし
+でも、なにができる？[r]それが、わからない。
+[k]
+
+[charaFace R 14]
+
+＠R：わらし
+わらしは、ここにきて、なにかをわすれた。[r]おもいだせない。
+[k]
+
+[bgmStop BGM_EVENT_11 2.0]
+[charaFace R 4]
+
+＠R：わらし
+だから、わからない……[r]わらしに、なにが……。
+[k]
+
+[charaFace D 22]
+
+＠フローラ
+……わらしちゃん、も……？
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[charaFadeout D 0.2]
+[wt 0.2]
+
+[se ad960]
+[se ad961]
+[se ad969]
+[charaPut X 0,0]
+[charaEffect X bit_talk_fire_wall]
+[wt 1.2]
+[se ad963]
+[se ad882]
+[scene 271106 0.5]
+[fowardEffect bit_talk_sparks_fs]
+[se ade24]
+[seVolume ade24 0 0]
+[se ad429]
+[seVolume ad429 0 0]
+[seVolume ade24 1.5 0.4]
+[seVolume ad429 1.5 0.4]
+[wt 1.0]
+
+
+[charaTalk off]
+[seStop ad960 1.0]
+[seStop ad961 1.0]
+[seStop ad969 1.0]
+[seStop ad963 1.0]
+[seStop ad882 1.0]
+[cueSe SE_24 24_ad1456]
+
+[charaDepth O 6]
+[charaDepth P 2]
+[charaDepth Q 5]
+[charaDepth Q 4]
+
+[charaFadein O 0.4 -200,-30]
+[charaMoveEase O -200,0 0.5 easeOutCubic]
+[wt 0.1]
+[charaFadein P 0.4 450,-30]
+[charaMoveEase P 450,0 0.5 easeOutCubic]
+[wt 0.1]
+[charaFadein N 0.4 -450,-30]
+[charaMoveEase N -450,0 0.5 easeOutCubic]
+
+[charaFadein Q 0.4 200,-30]
+[charaMoveEase Q 200,0 0.5 easeOutCubic]
+[seStop 24_ad1456 1.0]
+[wt 1.2]
+
+[cueSe SE_26 26_ade1309]
+[wt 1.5]
+
+[charaEffectDestroy X bit_talk_fire_fs]
+[seStop 21_ad1114 0.3]
+[charaFadeout N 0.2]
+[charaFadeout O 0.2]
+[charaFadeout P 0.2]
+[charaFadeout Q 0.2]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[bgm BGM_BATTLE_137 0.1]
+
+＠ロビンフッド
+ちっ、ここも完全な安全地帯ってワケじゃなかったか！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠フローラ
+ああっ……ここのお花畑にも……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠張角
+ええい、気持ちはわかるが、どうにもならん！[r]交戦しながらさらに退却じゃ！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_137 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
