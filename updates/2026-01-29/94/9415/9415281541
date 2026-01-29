@@ -1,0 +1,496 @@
+
+＄94-15-28-15-4-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 1098257220 1 エレシュキガル・オルタ]
+[charaSet B 10021000 1 フローラ]
+[charaSet C 1098342700 1 灰纏い]
+[charaSet D 5059002 1 花咲翁]
+[charaSet E 5059002 1 花咲翁_演出用]
+
+[charaSet F 1098348600 1 ロビンフッド]
+[charaSet G 5051001 1 張角]
+[charaSet H 6052002 1 おみぃさん]
+[charaSet I 1098346440 1 わらし]
+
+[imageSet O back10000 1 1]
+[charaScale O 1.05]
+[imageSet P back10000 1 1]
+[charaScale P 1.05]
+
+[sceneSet R 271005 1]
+[sceneSet S 271005 1]
+[sceneSet T 271005 1]
+[sceneSet U 271005 1]
+
+[charaSet W 98115000 1 通信エフェクト用]
+[charaSet X 98115000 1 エフェクト用]
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+
+[charaDepth O 26]
+[charaDepth P 26]
+
+[charaDepth W 23]
+[charaDepth X 23]
+[charaDepth Y 22]
+[charaDepth Z 22]
+
+[charaDepth A 1]
+[charaDepth B 8]
+[charaDepth D 7]
+[charaDepth C 11]
+
+[charaDepth F 17]
+[charaDepth G 18]
+[charaDepth H 19]
+[charaDepth I 20]
+
+[charaDepth E 16]
+
+[charaDepth R 2]
+[charaDepth S 5]
+[charaDepth T 10]
+[charaDepth U 15]
+
+[subCameraOn 2]
+[charaLayer B sub #A]
+[charaLayer S sub #A]
+[charaLayer D sub #B]
+[charaLayer R sub #B]
+[subCameraFilter #A maskEdge cut359_mask02 4 207,215,223,255 0]
+[subCameraFilter #B maskEdge cut359_mask13 4 255,182,193,255 0]
+[subRenderScale #A 1.1]
+[subRenderScale #B 1.1]
+[charaScale B 1.2]
+[charaScale S 1.2]
+[charaFace B 13]
+[charaFadein B 0 200,250]
+[charaFadein S 0 0,-70]
+[charaScale D 1.2]
+[charaScale R 1.2]
+[charaFace D 18]
+[charaFadein D 0 -200,250]
+[charaFadein R 0 0,-70]
+
+[scene 271005]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[bgm BGM_BATTLE_302 0.1]
+[fadein black 0.5]
+[wait fade]
+[wt 0.3]
+
+[subRenderFadein #A 0.4 50,-250]
+[subRenderMoveEase #A 0,-250 0.4 easeOutQuart]
+[subRenderFadein #B 0.4 -50,-500]
+[subRenderMoveEase #B 0,-500 0.4 easeOutQuart]
+[wt 1.0]
+[subRenderFadeout #A 0.4]
+[subRenderMoveEase #A -50,-250 0.4 easeOutQuart]
+[subRenderFadeout #B 0.4]
+[subRenderMoveEase #B 50,-500 0.4 easeOutQuart]
+[wt 0.4]
+[charaFadeout B 0.1]
+[charaFadeout R 0.1]
+[charaFadeout D 0.1]
+[charaFadeout S 0.1]
+
+[charaScale C 1.2]
+[charaScale T 1.2]
+[charaTalk C,A]
+[charaFace C 2]
+[charaFadein C 0.3 1]
+[charaFadein T 0.3 0,-270]
+[wt 0.4]
+[charaLayer B normal]
+[charaLayer R normal]
+[charaLayer D normal]
+[charaLayer S normal]
+[subCameraOff]
+[charaScale B 1.0]
+[charaScale D 1.0]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[fowardEffect bit_talk_14]
+[fowardEffect bit_talk_secret_garden04]
+[se bac26]
+[wt 0.1]
+[charaShake C 0.04 3 3 0.4]
+[wt 0.6]
+[charaScale Y 1.2]
+[charaEffect Y bit_talk_ash_stroke 0,0 H]
+[se ad818]
+[wt 0.25]
+
+[charaShake C 0.04 3 3 1.0]
+[wt 0.7]
+[seStop ad818 0.6]
+[wt 1.0]
+
+[charaMove C 0,-30 0.6]
+[charaFadeout C 0.4]
+[wt 0.4]
+[shake 0.04 2 2 1.5]
+[se ad789]
+[se ad716]
+[wt 2.0]
+[charaFadeout T 0.4]
+[wt 0.4]
+
+＠エレシュキガル・オルタ
+やったわ！
+[k]
+
+[messageOff]
+[charaScale B 1.2]
+[charaScale D 1.2]
+[charaScale R 1.2]
+[charaTalk A,D]
+[charaFace B 13]
+[charaFadein B 0.4 -300,0]
+[charaFace D 18]
+[charaFadein D 0.4 300,0]
+[charaFadein R 0.4 0,-270]
+[wt 0.4]
+[charaFadeout A 0.1]
+
+＠花咲翁
+仕上げといこう、ハナちゃん。
+[k]
+
+[charaTalk B]
+[charaFace B 13]
+
+＠フローラ
+はい！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_BATTLE_302 1.0 0.5]
+[wait fade]
+
+[charaScale B 1.0]
+[charaScale D 1.0]
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[charaFadeout R 0.1]
+[scene 10000]
+[wt 0.5]
+
+[fadein black 0.5]
+[bgm BGM_BATTLE_302 0.5 1.0]
+[wait fade]
+
+
+
+
+
+[criMovie talk_mov384 bgmPlay false]
+[wt 29.5]
+[scene 10001]
+[wt 0.5]
+
+[fadeout white 1.0]
+[bgmStop BGM_BATTLE_302 1.0]
+[wait fade]
+
+[sceneSet R 271006 1]
+[sceneSet S 271006 1]
+[sceneSet U 271006 1]
+[charaDepth R 2]
+[charaDepth S 5]
+[charaDepth U 15]
+
+[subCameraOn 2]
+[charaLayer C sub #A]
+[charaLayer R sub #A]
+[charaLayer B sub #B]
+[charaLayer D sub #B]
+[charaLayer S sub #B]
+[subCameraFilter #A maskEdge cut359_mask15 4 0,0,0,255]
+[subCameraFilter #B normal]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderScale #B 1.01]
+[charaScale C 1.0]
+[charaScale R 1.6]
+[charaFace C 2]
+[charaFadeinFSL C 0 170,130]
+[charaFadein R 0 350,90]
+[charaScale B 1.0]
+[charaScale D 1.0]
+[charaScale S 1.0]
+[charaFace B 0]
+[charaFadein B 0 1]
+[charaFadein S 0 0,-200]
+
+[scene 271006]
+[charaScale U 1.2]
+[charaFadein U 0.1 0,-270]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_106 0.1]
+[wt 0.5]
+
+？1：残っていた炎も……
+？2：全部、花に、塗り替えられていく……
+？！
+
+[charaTalk C]
+[subRenderFadeinFSL #A 0.4 -340,-250]
+[subRenderMoveEaseFSL #A -320,-200 0.4 easeOutSine]
+[wt 0.4]
+
+＠灰纏い
+ああ、[#止:や]めろ……[r]それは、[#吾:おれ]の……
+[k]
+
+＠灰纏い
+[#吾:わ]が、遠き母を、[#喚:よ]ぶための……！[r][#吾:おれ]のための、花だ……！
+[k]
+
+[messageOff]
+[se ad452]
+[seStop ad452 0.5]
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.4 280,0]
+[charaMove E 250,0 0.4]
+[wt 0.6]
+
+＠E：花咲翁
+……。[r]……。
+[k]
+
+[charaTalk C]
+[charaFace C 3]
+
+＠灰纏い
+止めろ！　[#吾:わ]が母に繋がる花を！[r]貴様の力で、貴様のものとするな！
+[k]
+
+＠灰纏い
+その開花は、貴様だけのものではないはずだ！
+[k]
+
+[charaFaceFade C 4 0.15]
+
+＠灰纏い
+[#吾:おれ]にも[#寄越:よ　こ]せ、[#寄越:よ　こ]すがいい！[r]願いの成就を[line 3]花の幸福を！
+[k]
+
+[messageOff]
+[charaTalk C,B]
+[charaFace B 9]
+[subRenderFadein #B 0.4 0,0]
+[wt 0.4]
+[subRenderFadeout #A 0.1]
+[charaFadeout E 0.1]
+
+＠フローラ
+翁さん……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠花咲翁
+大丈夫だよ、ハナちゃん。
+[k]
+
+[messageOff]
+[wt 0.2]
+[cueSe SE_26 26_ade1332]
+[wt 1.3]
+
+[charaFace D 7]
+
+＠花咲翁
+[line 3]うん。[r]もう、決めてしまったから。
+[k]
+
+[charaFace D 4]
+
+＠花咲翁
+すまないね。
+[k]
+
+＠花咲翁
+今回ばかりは、儂の幸福を儂だけのものにすることを、[r]許しておくれ。
+[k]
+
+[charaFace D 6]
+
+＠花咲翁
+[#我儘:わがまま]に、儂とこの子のためだけの、[r]懐かしい桜を咲かせることを、許しておくれ……。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout U 0.1]
+[subRenderFadeout #B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout R 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[charaFadeout S 0.1]
+[charaLayer C normal]
+[charaLayer R normal]
+[charaLayer B normal]
+[charaLayer E normal]
+[charaLayer S normal]
+[subCameraOff]
+[scene 10000]
+
+[sceneSet R 271007 1]
+[sceneSet S 271007 1]
+[sceneSet U 271007 1]
+[charaDepth R 2]
+[charaDepth S 5]
+[charaDepth U 15]
+
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+
+
+[criMovie talk_mov385 bgmPlay false]
+[wt 20.0]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_106 1.0]
+[wait fade]
+
+[scene 271007]
+[charaScale R 1.4]
+[charaScale S 1.4]
+[charaFadein R 0.1 0,-320]
+[overlayFadein O 0 0,757]
+[overlayFadein P 0 0,-757]
+
+[charaTalk off]
+[subCameraOn 1]
+[charaLayer E sub #A]
+[charaLayer U sub #A]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+[charaScale E 1.3]
+[charaScale U 1.3]
+[charaFace E 17]
+[charaFadein E 0 0,0]
+[charaFadein U 0 0,-340]
+[wt 1.0]
+
+[charaMove R 0,-450 25.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_161 0.1]
+
+[wt 1.5]
+
+＠
+ああ、でも。
+[k]
+
+＠
+分け与えることができたら、[r]それが一番良かったのかもしれない。
+[k]
+
+＠
+かつて[#財物:ざいぶつ]を掘り当てたときも。[r]臼から宝が溢れ出したときも。
+[k]
+
+＠
+白か黒かを決めるような、[r][#二者択一:　に し ゃ た く い つ]の幸福論でなく。
+[k]
+
+＠
+皆が幸福になれる形があれば、[r]それが一番[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFadeout R 0.8]
+[charaMove O 0,828 1.2]
+[charaMove P 0,-828 1.2]
+[wt 2.0]
+
+？1：うわあ……
+？！
+
+？1：とっても綺麗に咲きましたね！
+？！
+
+[subRenderFadein #A 0.6 0,0]
+[wt 1.0]
+[charaScale S 1.4]
+[charaDepth A 16]
+[charaFace A 17]
+[charaFadein A 0.4 -425,-50]
+[charaFace H 1]
+[charaFadein H 0.4 -175,-50]
+[charaFace G 1]
+[charaFadein G 0.4 175,-50]
+[charaFace F 1]
+[charaFadein F 0.4 400,-50]
+[charaFace I 2]
+[charaFadein I 0.4 0,50]
+[charaFadein S 0.4 0,-370]
+[charaMove O 0,757 0.1]
+[charaMove P 0,-757 0.1]
+[wt 1.2]
+
+
+[subRenderFadeout #A 1.2]
+[charaMove A -425,-150 30.0]
+[charaMove H -175,-150 30.0]
+[charaMove G 175,-150 30.0]
+[charaMove F 400,-150 30.0]
+[charaMove I 0,-50 30.0]
+[charaMove S 0,-470 30.0]
+[wt 2.0]
+
+＠
+だけど、気付いたら。
+[k]
+
+＠
+皆が目を細めて、幸せそうに、[r]同じ桜を見上げてくれていたから。
+[k]
+
+[messageOff]
+[charaFace E 4]
+[subRenderFadein #A 0.6 0,0]
+[wt 1.2]
+
+＠
+これに関してだけは、自分だけの幸福というわけでも、[r]なかったのかもしれない。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_161 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

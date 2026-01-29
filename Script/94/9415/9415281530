@@ -1,0 +1,1715 @@
+
+＄94-15-28-15-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 6052002 1 おみぃさん]
+[charaSet B 1098342500 1 わらし]
+[charaSet C 10021000 1 フローラ]
+[charaSet D 1098348600 1 ロビンフッド]
+[charaSet E 5051001 1 張角]
+[charaSet F 1098257220 1 エレシュキガル・オルタ]
+[charaSet G 1098342700 1 灰纏い]
+[charaSet H 5059001 1 花咲翁]
+[charaSet I 6052002 1 おみぃさん_演出用]
+[charaSet J 1098257220 1 エレシュキガル・オルタ_演出用]
+[charaSet K 1098348600 1 ロビンフッド_演出用]
+[charaSet L 10021000 1 フローラ_演出用]
+[charaSet M 5059001 1 花咲翁_演出用]
+[charaSet N 5059001 1 花咲翁_演出用]
+
+[sceneSet R 271005 1]
+[sceneSet S 271005 1]
+[sceneSet T 271005 1]
+[sceneSet U 271005 1]
+
+[sceneSet V 10000 1]
+
+[charaSet W 98115000 1 通信エフェクト用]
+[charaSet X 98115000 1 エフェクト用]
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+
+[charaDepth W 23]
+[charaDepth X 23]
+[charaDepth Y 22]
+[charaDepth Z 22]
+
+[charaDepth A 6]
+[charaDepth B 7]
+
+[charaDepth F 3]
+[charaDepth C 4]
+[charaDepth D 8]
+[charaDepth E 11]
+[charaDepth G 12]
+[charaDepth H 13]
+
+[charaDepth I 16]
+[charaDepth J 17]
+[charaDepth K 14]
+[charaDepth L 18]
+[charaDepth M 14]
+[charaDepth N 20]
+
+[charaDepth V 24]
+
+[charaDepth R 2]
+[charaDepth S 5]
+[charaDepth T 10]
+[charaDepth U 15]
+
+[cameraMove 0.1 0,0 1.01]
+
+[charaPut W 2500,2500]
+
+[charaScale R 1.2]
+[charaFadein R 0.1 -40,-270]
+
+[scene 271005]
+[wt 0.1]
+[charaMove R -80,-270 2.5]
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.0]
+
+[charaScale I 1.4]
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.4 150,0]
+[wt 0.4]
+
+＠I：おみぃさん
+ううん……[wt 1.0][charaFace I 12][bgm BGM_MAP_115 0.1][r]はっ！？
+[k]
+
+[messageOff]
+[charaFadeout I 0.3]
+[charaFadeout R 0.3]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.3 0,-20]
+[charaMove A 0,0 0.3]
+[se ad7]
+[wt 0.7]
+
+[wt 0.3]
+
+[charaTalk B]
+[subCameraOn 1]
+[charaLayer B sub #A]
+[charaLayer S sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 4 255,159,72,255 0]
+[charaScale B 1.0]
+[charaScale S 1.6]
+[charaFadein S 0 -600,160]
+
+[se ad75 0 1.0]
+[seStop ad75 1.7]
+[subRenderFadein #A 0.4 -350,-280]
+[wt 0.7]
+
+[charaFace B 0]
+[charaFadein B 0.4 -8,340]
+[charaMoveEase B -8,300 0.4 easeOutBack]
+[wt 1.0]
+[charaFace B 2]
+
+＠わらし
+おみぃ、起きた！[r]よかった！
+[k]
+
+[charaTalk A]
+[charaFace A 9]
+
+＠おみぃさん
+おっと、アンタも無事で何よりさね！
+[k]
+
+[charaFace A 11]
+
+＠おみぃさん
+で、状況は？
+[k]
+
+[bgmStop BGM_MAP_115 1.8]
+[charaTalk B]
+[charaFace B 12]
+
+＠わらし
+みんな、頑張ってる。[r]けど……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 0.4]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[subRenderFadeout #A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout S 0.1]
+[charaLayer B normal]
+[charaLayer S normal]
+[subCameraOff]
+[wt 0.3]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[bgm BGM_BATTLE_302 0.1]
+
+
+[cueSe SE_21 21_ad1115 0 0.7]
+[charaEffect G bit_talk_voice02 0,0]
+[wt 1.5]
+[charaEffectDestroy G bit_talk_voice02]
+[charaTalk off]
+[charaScale X 1.5]
+[charaPut X 1]
+[charaEffect X bit_talk_flame_attack_blre 0,0 H]
+[charaEffect X bit_talk_flame_attack_blre 150,-10 H]
+[charaEffect X bit_talk_flame_attack_blre -150,10 H]
+[se ad1051]
+[wt 0.7]
+[fowardEffect bit_talk_14]
+[shake 0.03 3 3 0.4]
+[se ad1014]
+[wt 0.3]
+[charaScale G 1.2]
+[charaFace G 0]
+[charaFadein G 0.3 0,20]
+[charaShake G 0.03 1 1 0.4]
+[charaMoveScaleEase G 1.0 0.4 easeOutQuart]
+[charaMoveEase G 0,0 0.4 easeOutQuart]
+[se ad671]
+[seStop ad671 0.7]
+[wt 0.7]
+
+[subCameraOn 2]
+[charaLayer D sub #A]
+[charaLayer J sub #A]
+[charaLayer S sub #A]
+[charaLayer E sub #B]
+[charaLayer C sub #B]
+[charaLayer R sub #B]
+[subCameraFilter #A maskEdge cut359_mask02 4 0,204,102,255 0]
+[subCameraFilter #B maskEdge cut359_mask13 4 253,210,0,255 0]
+[subRenderScale #A 1.1]
+[subRenderScale #B 1.1]
+[charaScale D 1.2]
+[charaScale J 1.2]
+[charaScale S 1.2]
+[charaFace D 2]
+[charaFadein D 0 200,250]
+[charaFadein S 0 0,-70]
+[charaScale E 1.2]
+[charaScale C 1.2]
+[charaScale R 1.2]
+[charaFace E 2]
+[charaFadein E 0 -200,250]
+[charaFadein R 0 0,-70]
+
+[subRenderFadein #A 0.4 50,-250]
+[subRenderMoveEase #A 0,-250 0.4 easeOutQuart]
+[subRenderFadein #B 0.4 -50,-500]
+[subRenderMoveEase #B 0,-500 0.4 easeOutQuart]
+[wt 0.7]
+[subRenderFadeout #A 0.4]
+[subRenderMoveEase #A -50,-250 0.4 easeOutQuart]
+[subRenderFadeout #B 0.4]
+[subRenderMoveEase #B 50,-500 0.4 easeOutQuart]
+[wt 0.4]
+
+[se ade440]
+[charaScale X 1.0]
+[charaPut X 1]
+[charaEffect X bit_talk_shot_01_once 200,70]
+[wt 0.1]
+[charaEffect X bit_talk_shot_01_once 100,-50]
+[wt 0.1]
+[charaEffect X bit_talk_shot_01_once 300,10]
+[charaShake G 0.03 1 1 0.7]
+[wt 0.1]
+
+[charaScale Y 1.0]
+[charaPut Y 1]
+[cueSe Servants_505100 m46706]
+[charaEffect Y bit_talk_lightning_03g -50,-30]
+[wt 0.1]
+[charaEffect Y bit_talk_lightning_03g 150,-10]
+[wt 0.1]
+[charaEffect Y bit_talk_lightning_03g -250,10]
+[wt 0.7]
+
+[subCameraFilter #A maskEdge cut359_mask13 4 198,0,28,255 0]
+[subCameraFilter #B maskEdge cut359_mask02 4 207,215,223,255 0]
+[charaFadeout D 0]
+[charaFadeout E 0]
+[charaFace J 2]
+[charaFadein J 0 -200,250]
+[charaFace C 14]
+[charaFadein C 0 200,250]
+[wt 0.1]
+
+[subRenderFadein #A 0.4 -50,-250]
+[subRenderMoveEase #A 0,-250 0.4 easeOutQuart]
+[subRenderFadein #B 0.4 50,-500]
+[subRenderMoveEase #B 0,-500 0.4 easeOutQuart]
+[wt 0.7]
+[subRenderFadeout #A 0.4]
+[subRenderMoveEase #A 50,-250 0.4 easeOutQuart]
+[subRenderFadeout #B 0.4]
+[subRenderMoveEase #B -50,-500 0.4 easeOutQuart]
+[wt 0.4]
+
+[charaScale X 1.0]
+[charaPut X 1]
+[cueSe Servants_303200 bac584]
+[charaEffect X bit_talk_flash_kerz 250,0]
+[wt 0.2]
+[charaShake G 0.03 2 2 0.4]
+
+[fowardEffect bit_talk_14 -80,-50]
+[fowardEffect bit_talk_secret_garden04 -80,-50]
+[se bac26]
+[wt 0.85]
+
+[charaFadeout J 0]
+[charaFadeout C 0]
+[charaFadeout S 0]
+[charaFadeout R 0]
+
+[fowardEffect bit_talk_blow03]
+[se ad1014]
+[wt 0.3]
+[fadeout white 0.2]
+[wait fade]
+[charaShake G 0.03 2 2 0.4]
+[fadein white 0.2]
+[wait fade]
+
+[charaLayer D normal]
+[charaLayer E normal]
+[charaLayer J normal]
+[charaLayer C normal]
+[charaLayer S normal]
+[charaLayer R normal]
+[subCameraOff]
+[charaScale D 1.0]
+[charaScale E 1.0]
+[charaScale J 1.0]
+[charaScale C 1.0]
+[wt 0.5]
+
+[cueSe SE_23 23_ade925]
+[cueSeStop 23_ade925 2.5]
+[charaEffect G bit_talk_blre_fire_aura 0,-300]
+[charaBackEffect G bit_talk_blre_fire_aura]
+[wt 0.1]
+[charaFaceFade G 4 0.25]
+[wt 0.6]
+[charaEffectStop G bit_talk_blre_fire_aura]
+[charaBackEffectStop G bit_talk_blre_fire_aura]
+[wt 0.4]
+
+[charaMoveScaleEase G 1.4 0.4 easeOutQuart]
+[charaMoveEase G 0,60 0.4 easeOutQuart]
+[charaFadeout G 0.3]
+[cueSe Servants_9945080 m96501]
+[wt 0.3]
+[se ad865]
+[charaRoll X 90]
+[charaScale X 1.5]
+[charaPut X -300,-300]
+[charaEffect X bit_talk_flame_attack_blre 0,0]
+[wt 0.7]
+
+[charaScale C 1.4]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.3 0,40]
+[charaShake C 0.03 2 2 0.7]
+[charaMoveScaleEase C 1.0 0.7 easeOutQuart]
+[charaMoveEase C 0,0 0.7 easeOutQuart]
+[se ad671]
+[wt 1.0]
+
+＠フローラ
+はぁ、はぁっ……！
+[k]
+
+？1：こっちも全力でやってるのに……
+？2：全然押し切れない……！
+？！
+
+[messageOff]
+[charaScale D 1.2]
+[charaScale S 1.2]
+[charaTalk C,D]
+[charaFace D 5]
+[charaFadein D 0.3 150,0]
+[charaFadein S 0.3 -100,-270]
+[wt 0.3]
+[charaFadeout C 0.1]
+
+＠ロビンフッド
+マジでオレたちを殺せりゃ燃え尽きてもいいって[r]感じですねえ！
+[k]
+
+＠ロビンフッド
+後先考えない神の相手なんざ、[r]できれば御免[#蒙:こうむ]りたいがっ……！
+[k]
+
+
+[messageOff]
+[cueSe SE_25 25_ade1282]
+[charaScale X 1.5]
+[charaRoll X -70]
+[charaPut X 750,0]
+[charaEffect X bit_talk_flame_attack_blre 0,0 H]
+[wt 0.2]
+[charaFace D 7]
+[charaShake D 0.03 2 2 0.7]
+[charaMoveScaleEase D 1.0 0.7 easeOutQuart]
+[charaMoveEase D 150,0 0.7 easeOutQuart]
+[se ad671]
+[wt 1.0]
+
+[charaScale T 1.2]
+[charaTalk D,E]
+[charaFadein T 0.4 80,-270]
+[charaMoveEase T 100,-270 0.4 easeOutSine]
+[wt 0.4]
+[charaFadeout D 0.1]
+[charaFadeout S 0.1]
+[cueSe SE_25 25_ade1282]
+[charaScale Y 1.5]
+[charaRoll Y 30]
+[charaPut Y -300,0]
+[charaEffect Y bit_talk_flame_attack_blre 0,0 H]
+[wt 0.2]
+[charaScale E 1.2]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.4 -150,0]
+[charaShake E 0.03 2 2 0.7]
+[charaMoveScaleEase E 1.0 0.7 easeOutQuart]
+[charaMoveEase E -150,0 0.7 easeOutQuart]
+[se ad671]
+[wt 1.0]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠張角
+まったくじゃ。老い先短いジジイとはいえ、[r]まだ灰になりたくはないのう。
+[k]
+
+[messageOff]
+[charaTalk E,C]
+[charaFadeout E 0.4]
+[charaFadeout T 0.4]
+[wt 0.1]
+
+＠フローラ
+そん、な……冥界の花園の力を借りて、[r]エレシュキガルさんの力も取り戻して……
+[k]
+
+＠フローラ
+それでもなお、足りない、の……？
+[k]
+
+？1：何か、あと一手
+？2：あと一手を、探さないと……！
+？！
+
+[messageOff]
+[charaScale J 1.4]
+[charaScale U 1.4]
+[charaTalk C,J]
+[charaFace J 20]
+[charaFadein J 0.6 0,0]
+[charaFadein U 0.6 -200,-350]
+[charaMove J 0,-20 15.0]
+[charaMove U -200,-370 15.0]
+[wt 1.2]
+[charaScale C 1.2]
+[charaScale F 1.2]
+[charaScale R 1.2]
+[charaFace C 22]
+[charaFadein C 0.1 -256,0]
+[charaFace F 20]
+[charaFadein F 0.1 256,0]
+[charaFadein R 0.1 0,-270]
+[charaDepth D 1]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠J：エレシュキガル・オルタ
+……。[r]……。
+[k]
+
+＠J：エレシュキガル・オルタ
+どうも、妙なのよね。
+[k]
+
+[messageOff]
+[charaTalk J,C]
+[charaFace C 22]
+[charaFadeout J 0.4]
+[charaFadeout U 0.4]
+[wt 0.4]
+
+＠フローラ
+何がでしょう、[r]エレシュキガルさん？
+[k]
+
+[charaTalk F]
+[charaFace F 21]
+
+＠エレシュキガル・オルタ
+声が聞こえる気がするの。
+[k]
+
+[charaFace F 8]
+
+＠エレシュキガル・オルタ
+とても小さな、今にも消え去りそうな……[r]でも。
+[k]
+
+＠エレシュキガル・オルタ
+確かに、何かを訴えかけている、声が。
+[k]
+
+[charaTalk C]
+[charaFace C 20]
+
+＠フローラ
+わたしには、何も聞こえませんが……。
+[k]
+
+＠フローラ
+いえ、お花たちの声はずっと聞こえているんですが、[r]それとは別の……？
+[k]
+
+[charaTalk F]
+[charaFace F 0]
+
+＠エレシュキガル・オルタ
+別よ。冥界の女神としての力を[r]取り戻せたおかげでしょうね。
+[k]
+
+＠エレシュキガル・オルタ
+形のない、霊というか、魂というか……[r]そういったものの声。
+[k]
+
+[charaTalk C]
+[charaFace C 21]
+
+＠フローラ
+[line 3]それは、どこから？
+[k]
+
+[messageOff]
+[subCameraOn 1]
+[charaLayer G sub #A]
+[charaLayer S sub #A]
+[subCameraFilter #A maskEdge cut359_mask06 4 0,0,0,255 0]
+[subRenderScale #A 1.2]
+[charaScale G 1.0]
+[charaScale S 1.2]
+[charaFace G 0]
+[charaFadein G 0 0,320]
+[charaFadein S 0 0,150]
+[charaTalk G]
+[subRenderFadein #A 0.4 -50,-420]
+[subRenderMoveEase #A 0,-420 0.7 easeOutCubic]
+[blur lens 0.4 1 1]
+[wt 1.6]
+[subRenderFadeout #A 0.4]
+[subRenderMoveEase #A 50,-420 0.7 easeOutCubic]
+[blurOff lens 0.4]
+[wt 0.4]
+[charaFadeout G 0.1]
+[charaFadeout S 0.1]
+[charaTalk C]
+[wt 0.6]
+[charaLayer G normal]
+[charaLayer S normal]
+[subCameraOff]
+[charaScale G 1.0]
+[charaFaceFade C 18 0.4]
+[wt 1.8]
+[charaFaceFade C 21 0.2]
+[wt 0.2]
+
+＠フローラ
+……賭けてみますか？
+[k]
+
+[charaTalk F]
+[charaFace F 20]
+
+＠エレシュキガル・オルタ
+それしか手がなさそうであれば、[r]やってみるしかないわね。
+[k]
+
+＠エレシュキガル・オルタ
+今聞こえてる『声』を、[r]全力で表に引っ張り上げる。
+[k]
+
+[messageOff]
+[charaTalk F,D]
+[charaFace D 0]
+[charaFadeout C 0.4]
+[charaFadeout F 0.4]
+[charaFadeout R 0.4]
+[wt 0.4]
+[charaDepth D 8]
+
+＠ロビンフッド
+細かいことはわかんねーが、[r]何か手伝えることはあるかい？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 21]
+[charaFadein F 0.1 1]
+
+＠エレシュキガル・オルタ
+……呼び水が必要ね。[r]何かトリガーになるようなもの。
+[k]
+
+＠エレシュキガル・オルタ
+アイツの奥底に叩き込めるようなもの。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠フローラ
+[line 3]あそこに落ちているものでは、[r]どうですか？
+[k]
+
+[messageOff]
+[charaScale U 1.3]
+[charaFadein U 0.4 -40,-160]
+[charaMove U -20,-160 3.0]
+[wt 0.4]
+[charaFadeout C 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 1.6]
+[charaFadeout U 0.4]
+[wt 0.4]
+
+＠エレシュキガル・オルタ
+いけそうね。[r]いい、マスター？
+[k]
+
+？1：もちろん！
+？2：全力で支援するよ！
+？！
+
+[messageOff]
+[bgmStop BGM_BATTLE_302 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout F 0.1]
+[pictureFrame cut063_cinema]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_129 0.1]
+
+
+＠
+問題はなかった。
+[k]
+
+＠
+自らの灰炎の勢いが、内なる[#屍草:かばねぐさ]の蠢きが、[r]まだ、奴らの足掻きを上回っている。
+[k]
+
+[messageOff]
+[charaScale C 1.2]
+[charaScale E 1.2]
+[charaScale R 1.2]
+[charaFace C 21]
+[charaFadein C 0.4 -300,-50]
+[charaFace E 6]
+[charaFadein E 0.4 350,-50]
+[charaFadein R 0.4 0,-200]
+[cameraMoveEase 0,0 0.6 easeOutSine 1.06]
+[se ad581 0 0.7]
+[seStop ad581 0.7]
+[wt 0.7]
+[cueSeContinue SE_25 25_ade1282 0 0.4 1]
+[charaScale Y 1.2]
+[charaRoll Y 30]
+[charaPut Y -500,0]
+[charaEffect Y bit_talk_flame_attack_blre 0,0 H]
+[wt 0.1]
+[charaFace C 25]
+[charaShake C 0.03 2 2 0.7]
+[charaFadeout C 0.4]
+[wt 0.2]
+[cueSeContinue SE_25 25_ade1282 0 0.4 2]
+[charaScale X 1.2]
+[charaRoll X -70]
+[charaPut X 950,0]
+[charaEffect X bit_talk_flame_attack_blre 0,0 H]
+[wt 0.1]
+[charaFace E 5]
+[charaShake E 0.03 2 2 0.7]
+[charaFadeout E 0.4]
+[wt 1.0]
+
+[subCameraOn 2]
+[charaLayer D sub #A]
+[charaLayer S sub #A]
+[charaLayer K sub #B]
+[charaLayer T sub #B]
+[charaLayer J sub #B]
+[charaLayer U sub #B]
+[charaLayer X sub #B]
+[subCameraFilter #A maskEdge cut359_mask05 4 0,0,0,255 0]
+[subCameraFilter #B normal]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderScale #B 1.01]
+[charaScale D 1.2]
+[charaScale S 1.4]
+[charaFace D 0]
+[charaFadein D 0 -40,150]
+[charaFadein S 0 0,120]
+[charaScale K 1.2]
+[charaScale T 1.4]
+[charaFace K 0]
+[charaFadein K 0 -40,-50]
+[charaFadein T 0 -100,-200]
+[subRenderFadein #A 0.6 0,-180]
+[subRenderMoveEase #A 0,-200 0.6 easeOutSine]
+[wt 0.6]
+
+＠
+[charaTalk G]
+死角に入ろうとしていた弓使いに気付く。[r]どうということはない。
+[k]
+
+＠
+[charaTalk G]
+掴み[#拉:ひし]ぐまでもなく、[r]その矢ではこの灰炎の肉体を貫けはしまい。
+[k]
+
+＠
+[charaTalk G]
+だが、桜に近すぎることが、気に障った。[r]優先して襲う。
+[k]
+
+[messageOff]
+[charaTalk K]
+[blur motion 0.4 4 10000 0.5 0.5 0.05 100]
+[cameraMoveEase 0,20 0.4 easeOutQuint 1.26]
+[subCameraMoveEase #A 0,15 0.4 easeOutQuint 1.2]
+[cueSe Servants_9945080 m96501 0 0.5]
+[subRenderFadein #B 0.4 0,0]
+[wt 0.4]
+[blurOff motion 0.1]
+[cameraMoveEase 0,0 0.1 easeOutQuint 1.01]
+
+[charaScale X 1.2]
+[charaRoll X 0]
+[charaPut X 1]
+[charaEffect X bit_talk_flame_attack_blre 0,0 H]
+[charaEffect X bit_talk_flame_attack_blre 150,-10 H]
+[charaEffect X bit_talk_flame_attack_blre -150,10 H]
+[charaFace K 14]
+[charaMoveEase K 250,-50 0.7 easeOutQuart]
+[se ad671 0 0.7]
+[seStop ad671 1.0]
+[wt 1.0]
+[charaFaceFade K 7 0.2]
+[wt 0.4]
+[subCameraFilter #A normal]
+[subCameraMoveEase #A 0,0 0.1 easeOutQuint 1.01]
+[charaScale D 1.4]
+[charaScale S 1.4]
+[charaFace D 7]
+[charaPut D 170,160]
+[charaPut S -190,-10]
+[wt 0.5]
+[subRenderFadeout #B 0.6]
+[charaMove D 150,160 15.0]
+[charaMove S -210,-10 15.0]
+[wt 0.6]
+
+＠
+[charaTalk G][line 3]違和感。
+[k]
+
+＠
+[charaTalk G]
+今までならば、たとえ無駄でも弓使いは[r]矢を撃ってきていたはずだ。
+[k]
+
+＠
+[charaTalk G]
+仲間のための隙を作ろうとしていたはずだ。[r]だが今は不自然に、そうしなかった。
+[k]
+
+＠
+[charaTalk G]
+まるで、先刻の位置取りに、[r]別の狙いがあったかのように。
+[k]
+
+[messageOff]
+[charaTalk K]
+[charaFace K 2]
+[subRenderFadein #B 0.4 0,0]
+[wt 0.4]
+[subRenderFadeout #A 0.1]
+
+＠K：ロビンフッド
+[#拾えたぜ]！[r]受け取れ、エレシュキガル！
+[k]
+
+[messageOff]
+[se ad478]
+[charaScale J 1.2]
+[charaScale U 1.4]
+[charaTalk K,J]
+[charaFace J 16]
+[charaFadein J 0.4 -180,-50]
+[charaFadein U 0.4 120,-360]
+[charaMoveEase J -150,-50 0.4 easeOutQuint]
+[charaMoveEase U 150,-360 0.4 easeOutQuint]
+[wt 0.4]
+[cueSe SE_21 21_ad1070 0 0.7]
+[charaMoveReturn J -150,-55 0.4]
+[charaFadeout K 0.1]
+[wt 0.4]
+
+＠J：エレシュキガル・オルタ
+くらいなさい[line 3]！
+[k]
+
+[messageOff]
+[charaMoveScaleEase J 1.4 0.4 easeOutExpo]
+[charaMoveEase J -100,-30 0.4 easeOutExpo]
+[charaFadeout J 0.3]
+[wt 0.3]
+
+[cueSe SE_22 22_ade790]
+[cueSeStop 22_ade790 0.6]
+[shake 0.03 3 3 0.4]
+[wt 1.2]
+
+[charaScale T 1.4]
+[charaPut T 150,-180]
+[charaMove T 150,-160 15.0]
+[charaFadeout U 0.6]
+[wt 0.6]
+
+＠
+無謀にも突進してきた常世の女神が、[r][#何か]を自分の身体に突き入れてきた。
+[k]
+
+＠
+些細なるもの。[r]意に介する必要もないもの。
+[k]
+
+＠
+武器ですらない。[r]それは、ただの[line 3]
+[k]
+
+＠
+ただの、折れ落ちていた、[r]桜の樹の枝だった。
+[k]
+
+＠
+それは神の身にいかなる[#痛痒:つうよう]も与えない。[r]いかなる影響も及ぼさない。
+[k]
+
+＠
+当然だ。[r]それはただの枝でしかないのだから。
+[k]
+
+＠
+だが。
+[k]
+
+[messageOff]
+[bgm BGM_MAP_129 1.0 0.5]
+[subRenderFadeout #B 0.6]
+[wt 0.9]
+[charaFadeTime V 0.4 0.5]
+
+＠
+[line 3]。[cueSe SE_26 26_ade1332][r][line 3]。
+[k]
+
+
+＠
+身体の中で、[r]何かが小さく鳴く声がした。
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_129 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout V 0.1]
+[charaFadeout R 0.1]
+
+[charaFadeout D 0.1]
+[charaFadeout S 0.1]
+[charaFadeout K 0.1]
+[charaFadeout T 0.1]
+[charaFadeout J 0.1]
+[charaFadeout U 0.1]
+[charaFadeout X 0.1]
+[charaLayer D normal]
+[charaLayer S normal]
+[charaLayer K normal]
+[charaLayer T normal]
+[charaLayer J normal]
+[charaLayer U normal]
+[charaLayer X normal]
+[subCameraOff]
+[charaScale D 1.0]
+
+[charaTalk on]
+[scene 10000]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+＠
+ふと、暗闇の中、目が覚める。
+[k]
+
+＠
+全てを[line 3]本当に自分の全てを、[r]母を思う子である神に。
+[k]
+
+＠
+それが抱く善き願いに、[r]捧げていたはずなのに。
+[k]
+
+[bgm BGM_EVENT_156 0.1 0.7]
+
+＠
+……動き出した五感の最初は、[r]嗅覚だった。
+[k]
+
+＠
+どこからかふわりと漂ってきた、[r]懐かしい桜の匂い。
+[k]
+
+＠
+そして、次に[line 3]
+[k]
+
+[messageOff]
+[wt 0.2]
+[cueSe SE_26 26_ade1332]
+[wt 1.0]
+
+＠？？？
+………………！
+[k]
+
+＠
+聞き間違うはずがなかった。
+[k]
+
+＠
+それは。[r]本当の。
+[k]
+
+＠
+いや、今までのも神が中に潜んでいただけで、[r]本物ではあったのだろうが。
+[k]
+
+＠
+今呼びかけているこれは、より『そのもの』であり、[r]『中心である』ような[line 3]
+[k]
+
+[messageOff]
+[wt 0.2]
+[cueSe SE_26 26_ade1331]
+[wt 1.5]
+
+＠？？？
+おまえ……かい？
+[k]
+
+＠？？？
+いるのかい？[r]そこに、いるのかい？
+[k]
+
+＠？？？
+……ひょっとして、今までもずっと、[r]そこにいたのかい？
+[k]
+
+＠？？？
+ああ、いるのなら、出てきておくれ。
+[k]
+
+＠？？？
+儂とばあさんには、子供がいなかった。[r]おまえが、子供のようなものだったんだよ。
+[k]
+
+[messageOff]
+[wt 0.2]
+[charaPut X 0,0]
+[charaScale X 1.0]
+[charaEffect X bit_talk_blight_02lp]
+[wt 0.1]
+[se ad733 0 0.5]
+[seStop ad733 3.5]
+[wt 1.5]
+[cueSe SE_26 26_ade1327 0 0.8]
+[wt 1.5]
+
+＠？？？
+ああ……。
+[k]
+
+＠？？？
+やっぱり、おまえだ。[r]見えないけれど、わかるとも。
+[k]
+
+＠？？？
+……うん……？
+[k]
+
+[messageOff]
+[charaMoveEase X -180,-2 2.4 easeInOutSine]
+[wt 3.0]
+[cueSe SE_26 26_ade1330 0 0.8]
+[charaMoveReturn X -180,5 0.3]
+[wt 0.3]
+[charaMoveReturn X -180,5 0.3]
+[wt 1.5]
+
+＠？？？
+……ふふ。ここを掘れ、と言っているんだね。[r]わかったよ。
+[k]
+
+＠
+いつのまにか手に持っていた[line 3][r]持っているような気がする[line 3][#鍬:くわ]を、振るう。
+[k]
+
+[messageOff]
+[cueSe SE_26 26_ade1314 0 0.5]
+[wt 2.0]
+[cueSeVolume 26_ade1314 2.0 0.2]
+
+＠？？？
+さて、何が出てくるのかね。
+[k]
+
+＠？？？
+今度は……何が……。
+[k]
+
+＠
+あのときは[line 3]よくは覚えていないが。[r]とにかく、良い物だった気がする。
+[k]
+
+＠
+金銀か。大判小判か。ありがたい仏像か。[r]あるいは世にも稀な、言葉にもできないような[#宝物:ほうもつ]か。
+[k]
+
+＠
+ただ、隣の[#老爺:ろうや]が羨むようなものであったことだけは、[r]確かなのだろう。
+[k]
+
+＠
+一方、自分のほうは[line 3]嬉しかったのは、[r]喜んだのは、きっと真実だ。
+[k]
+
+＠
+……でも。
+[k]
+
+＠？？？
+それが欲しかったか、と言われると、[r]どうかなあ。
+[k]
+
+＠？？？
+……儂は、何かが欲しいわけではなかった。
+[k]
+
+＠？？？
+ばあさんと、おまえと、皆で共に笑い合えたら、[r]それでよかっただけだった。
+[k]
+
+＠？？？
+畑の世話をして、寒いときには囲炉裏を囲んで、[r]春になれば綺麗な桜を眺めて。
+[k]
+
+＠？？？
+日々、何気なく暮らしていければ、[r]それでよかった。
+[k]
+
+[messageOff]
+[cueSeVolume 26_ade1314 1.0 0.5]
+[wt 1.6]
+[cueSeStop 26_ade1314 0.7]
+[wt 1.0]
+
+＠？？？
+それが、あんなことになってしまうなんて。[r]儂が……『善さ』に流されたせいで。
+[k]
+
+＠
+『おまえばかりずるいぞ！[r]　俺にもその犬を貸せ！』
+[k]
+
+＠
+ああ。富を独占するのは、[r][#善いことではない]。
+[k]
+
+＠
+不必要にも思えていた富ならば、尚更だ。[r]隣人にも分け与えるのが、[#善いことだ]。
+[k]
+
+＠
+だから、請われるがままに犬を貸して[line 3][r]そして[line 3]
+[k]
+
+＠
+あの子は、二度と、帰ってこなかった。
+[k]
+
+＠
+[#自分が善いことを為そうとしたために]、[r]あの子は、死んでしまった。
+[k]
+
+＠
+いつのまにか、穴を掘る手が止まっていた。
+[k]
+
+[messageOff]
+[wt 0.2]
+[cueSe SE_26 26_ade1338 0 0.8]
+[wt 1.5]
+
+＠
+ずっと、胸につかえていたものがあった。
+[k]
+
+＠
+夢枕に立った犬に促されるまま、[r]墓に生えた木で臼を作って。
+[k]
+
+＠
+そこから再び財が溢れ出したときも。
+[k]
+
+＠
+再び隣人の[#老爺:ろうや]にそれを貸し、燃やされ、[r]その灰を掻き集めて[line 3]
+[k]
+
+＠
+枯れ木に花が咲いたときも。
+[k]
+
+＠
+善き人間としての笑顔、[r]その裏に貼り付いていた……心残り。
+[k]
+
+＠
+あの子にもう一度逢えたら、[r]したかったこと。
+[k]
+
+＠？？？
+……そうだ。[r]儂は……謝りたかったんだ。
+[k]
+
+＠？？？
+ずっと一緒にいてくれたおまえを、[r]どうして[#一時:いっとき]とはいえ、手放してしまったのか。
+[k]
+
+＠？？？
+すまない。
+[k]
+
+＠？？？
+本当に、すまなかった。[r]許しておくれ。
+[k]
+
+＠？？？
+おまえは何も悪くないのに……叩き殺されて、[r]痛かったろうねぇ、苦しかったろうねぇ。
+[k]
+
+[messageOff]
+[wt 0.2]
+[cueSe SE_26 26_ade1337 0 0.8]
+[wt 1.5]
+
+＠
+だが[line 3]謝ったところで、変わらない。[r]どこにも行けない。変われない。
+[k]
+
+＠
+どこまでも善い男でしかない自分に対する、これは、[r]この哀しみは、永遠の罰なのだろう。
+[k]
+
+＠
+だから受け入れるしかない。[r]諦めるしか、ない[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_156 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaEffectDestroy X bit_talk_blight_02lp]
+[pictureFrame]
+[scene 271005]
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+[wt 1.0]
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_BATTLE_239 0.1]
+
+＠灰纏い
+これ、は……ふざけるな[line 3]！
+[k]
+
+[messageOff]
+[charaFaceFade G 4 0.2]
+[charaEffect G bit_talk_voice02 -40,150]
+[cueSe SE_21 21_ad1115]
+[cueSeStop 21_ad1115 2.0]
+[wt 0.2]
+[shake 0.04 3 3 1.3]
+[wt 1.3]
+[charaEffectDestroy G bit_talk_voice02]
+[charaScale J 1.2]
+[charaScale U 1.4]
+[charaTalk G,J]
+[charaFace J 4]
+[charaFadein J 0.4 1]
+[charaFadein U 0.4 250,-320]
+[wt 0.4]
+[charaFadeout G 0.1]
+
+＠J：エレシュキガル・オルタ
+っ、力任せに、干渉が遮断されるっ……。
+[k]
+
+[messageOff]
+[charaScale L 1.2]
+[charaTalk J,L]
+[charaFace L 4]
+[charaPut L 500,0]
+[charaMoveEase J -250,0 1.0 easeInOutCubic]
+[charaMoveEase L 250,0 1.0 easeInOutCubic]
+[charaMoveEase U 0,-320 1.0 easeInOutCubic]
+[wt 0.6]
+[charaFadeTime L 0.4 1.0]
+[wt 0.4]
+
+＠L：フローラ
+わたしも手伝います！[r]エレシュキガルさんは、そのまま枝を！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace J 0]
+[charaMoveReturn J -250,-5 0.4]
+[wt 0.4]
+[cueSe SE_23 23_ad1304 0 0]
+[cueSeVolume 23_ad1304 0.7 0.3]
+[charaEffectEdgeBlur L ffffff ffffff 4 5]
+[wt 0.2]
+[wt 0.8]
+[charaEffectEdgeBlur J ffffff ffffff 4 5]
+[wt 1.6]
+[charaEffectEdgeBlurStop J]
+[wt 1.0]
+[cueSeStop 23_ad1304 3.0]
+[charaMoveEase J -500,0 1.0 easeInOutCubic]
+[charaMoveEase L 0,0 1.0 easeInOutCubic]
+[charaMoveEase U -250,-320 1.0 easeInOutCubic]
+[charaFadeout J 0.4]
+[wt 1.2]
+
+[cameraMove 60.0 0,-5 1.11]
+[charaFace L 13]
+[wt 0.3]
+
+＠フローラ
+翁さん。[r]聞こえていますか。
+[k]
+
+[charaFace L 9]
+
+＠フローラ
+わたしは……冥界の花畑のことを忘れていた間、[r]ずっと、不安でした。
+[k]
+
+＠フローラ
+正しい形になりたいと思っていたのに、[r]それができるかどうかわからなくて、怖かった。
+[k]
+
+[charaFace L 16]
+
+＠フローラ
+でも、あなたが言ってくれたのです。
+[k]
+
+[charaFace L 17]
+
+＠フローラ
+わたしは種で、だから、[r]当たり前のことなのだと。
+[k]
+
+[charaFace L 21]
+
+＠フローラ
+自分の目指す形がわからない。[r]わからなくて、怖い。
+[k]
+
+[charaFace L 16]
+
+＠フローラ
+それはきっと、わたしだけじゃありません。[r]どんな[#人間:花]も[line 3]そして、あなたも同じです。
+[k]
+
+[charaFace L 18]
+
+＠フローラ
+最初はみんな小さな種。[r]理想の自分の、正しい[#姿:かたち]に怯える種。
+[k]
+
+[charaFace L 16]
+
+＠フローラ
+でも、生長しない種なんてないから。[r]怖がらずに咲くしかないのです。
+[k]
+
+＠フローラ
+そしてもし、それが間違っていて、[r]自らの願いに添わないものだったとしても。
+[k]
+
+[charaFace L 17]
+
+＠フローラ
+いいんです。[r]花はまた次の種を生む。
+[k]
+
+＠フローラ
+育って、続いて、終わって、少しだけ変わる。[r]そしてまた育って、続く[line 3]
+[k]
+
+[charaFace L 16]
+
+＠フローラ
+花はそれを教えてくれます。[r]花ほどその姿を変えていくものはありません。
+[k]
+
+＠フローラ
+人は、いいえ、あなたは知っているはずです。
+[k]
+
+＠フローラ
+たとえ何か間違いを犯して、何かが足らなくて、[r]悲しく枯れてしまっても。
+[k]
+
+＠フローラ
+何回だって咲けばいい。[r]自分が目指す理想の花になれるまで。
+[k]
+
+[messageOff]
+[cameraMoveEase 0,-30 0.4 easeOutCubic 1.31]
+[wt 0.4]
+[charaFace L 4]
+
+＠フローラ
+だから[line 3]『自分は所詮こんなものだ』なんて、[r]諦めないで！
+[k]
+
+[charaFace L 13]
+
+＠フローラ
+あなたは、もっと、もっともっと[line 3][r]強く、立派に、咲けるはずです。
+[k]
+
+[charaFace L 14]
+
+＠フローラ
+わたしだけじゃない、わたしよりもっと近くで、[r]それを信じて望んでいる子が、いるんですから！
+[k]
+
+[messageOff]
+[wt 1.2]
+[bgmStop BGM_BATTLE_239 0.5]
+[fadeout black 0.5]
+[wait fade]
+[cameraMoveEase 0,0 0.1 easeOutQuint 1.01]
+[charaEffectEdgeBlurDestroy L]
+[charaFadeout L 0.1]
+[charaFadeout U 0.1]
+[charaTalk on]
+[scene 10000]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_164 0.1 0.7]
+
+＠
+[line 3]ふと、誰かに[#叱咤:しった]されたような気がして。
+[k]
+
+＠
+いつもの善なる諦念の中に、[r]違う『何か』が生まれた。
+[k]
+
+＠
+ああ。[r]今になって、初めて、思う。
+[k]
+
+＠
+もしもあのとき、『断る』ことができたら……[r]この子と、ずっと一緒にいられたのだろうか。
+[k]
+
+＠
+善いことなのだからと思考停止せず、[r]自分にとって本当に大事なもののことを考えていれば。
+[k]
+
+＠
+それは、あるいは、他人から見れば[r]悪しき独善と呼ばれていたものかもしれない。
+[k]
+
+＠
+でも、それでも。[r]選ぶべきだった。
+[k]
+
+＠
+選べなかった自分が、[#歯痒:はがゆ]い。[r]愛想を尽かされても当然だ。
+[k]
+
+＠
+ここでこうして一緒にいられていることが、[r]奇跡のように思えてくる。
+[k]
+
+＠
+ああ。もし。
+[k]
+
+＠
+もし、もう一度、同じようなことがあったとしたら。[r]次こそは[line 3]
+[k]
+
+[messageOff]
+[wt 0.2]
+[charaPut X 0,0]
+[charaScale X 1.0]
+[charaEffect X bit_talk_blight_02lp]
+[wt 1.0]
+
+＠
+止まっていた手に、ふと、何かの感触。
+[k]
+
+＠
+温かく柔らかな、いつもの……[r]懐かしい、舌の感触。
+[k]
+
+＠
+手の甲が舐められている。
+[k]
+
+＠
+かつての、幸せだったあのときと、[r]同じように。
+[k]
+
+＠？？？
+ああ……おまえ……いいの、かい。[r]許してくれるのかい。
+[k]
+
+＠？？？
+もう一度、思ってくれているのかい？[r]儂と一緒にいたいと。
+[k]
+
+[messageOff]
+[wt 0.2]
+[cueSe SE_26 26_ade1326 0 0.8]
+[wt 1.5]
+
+＠？？？
+っ……そうか……それなら……[r]頑張らないと、ね。
+[k]
+
+[messageOff]
+[cueSe SE_26 26_ade1314 0 0.5]
+[wt 2.0]
+[cueSeVolume 26_ade1314 2.0 0.2]
+
+＠
+もう一度、[#鍬:くわ]を振るい始める。
+[k]
+
+＠
+何かを掘り当てようとしているのか、[r]新しい種を[#蒔:ま]こうとしているのか。
+[k]
+
+＠
+自分でもわからなかったが、[r]そうするべきだと思ったのだ。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+彼らに言っていたことに、嘘はない。
+[k]
+
+＠
+きっとそれは自分という存在の根幹で、[r]いきなりそれが変わったりはしない。
+[k]
+
+＠
+自分は善き人間で、善き人間でしかない。[r]だから善きことしかできない。
+[k]
+
+＠
+だが、それでも。
+[k]
+
+＠
+世界を救うことよりも、母に逢いたいという[r]子の願いに流されてしまったように。
+[k]
+
+＠
+より身近で、実感が持てる『善きこと』に[r]寄り添うことはできる。
+[k]
+
+＠
+それが、今の自分にとっての[#正しい形:理　想　の　花]なのだと、[r]その在り方をより新しくすることはできる。
+[k]
+
+[messageOff]
+[cueSeStop 26_ade1314 0.4]
+[wt 0.7]
+[cueSe SE_26 26_ade1324]
+[wt 1.0]
+
+＠
+[#鍬:くわ]の先が、何処かに到達した。
+[k]
+
+＠
+それはたくさんの宝物がある場所だったかもしれない。[r]新しい種を植えるに最適な場所だったかもしれない。
+[k]
+
+＠
+どうあれ、今までよりも近く、今までよりも大きく、[r]それを喜ぶ誰かの声が聞こえ始める。
+[k]
+
+＠
+それが嬉しくて、[r]自分の頬までも綻んでくる。
+[k]
+
+[messageOff]
+[wt 0.2]
+[cueSe SE_26 26_ade1330 0 0.8]
+[wt 1.2]
+
+＠
+……たとえそれが、[r]悪しき独善のようなものだとしても。
+[k]
+
+＠
+今は、家族のような犬の鳴き声に[r]応えてやることこそが。
+[k]
+
+＠
+自分にとって最も身近な、最も自然な[line 3][r]この身から芽吹く、善の形だった。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_164 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaEffectDestroy X bit_talk_blight_02lp]
+[charaSet H 5059002 1 花咲翁]
+[charaSet M 5059002 1 花咲翁_演出用]
+[charaSet N 5059002 1 花咲翁_演出用]
+[charaDepth H 13]
+[charaDepth M 19]
+[charaDepth N 20]
+[charaFilter M silhouette FFFFFF80]
+[scene 271005]
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_239 0.1]
+
+＠灰纏い
+な[line 3]！？
+[k]
+
+[messageOff]
+[charaEffectEdgeBlur G ffffff ffffff 4 5]
+[se ad933]
+[wt 1.0]
+[charaPut X 1]
+[charaEffect X bit_talk_gift_break]
+[wt 1.5]
+[se ade458]
+[wt 0.5]
+[charaEffectEdgeBlurStop G]
+[charaMoveEase X 0,1500 0.7 easeInOutQuint]
+[seStop ad933 2.0]
+[wt 0.2]
+[charaScale Y 0.8]
+[charaRoll Y 90]
+[charaPut Y -310,560]
+[charaEffect Y bit_talk_gale]
+[fadeout white 0.6]
+[wait fade]
+[charaMoveEase X 0,1500 0.3 easeOutQuint]
+[charaFadeout G 0.1]
+[charaEffectEdgeBlurDestroy G]
+[wt 0.3]
+[charaEffectDestroy G bit_talk_21]
+[charaEffectDestroy X bit_talk_gift_break]
+[charaScale S 1.5]
+[charaFadein S 0.1 0,-150]
+[charaScale X 1.5]
+[charaPut X 0,550]
+[charaEffect X bit_talk_blight_02lp]
+[charaMoveEase X 0,100 0.7 easeOutCirc]
+[fadein white 0.7]
+[wait fade]
+[wt 1.0]
+
+？1：あれは……！
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[subCameraOn 1]
+[charaLayer F sub #A]
+[charaLayer R sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 4 198,0,28,255 0]
+[charaScale F 1.2]
+[charaScale R 1.2]
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0 10,200]
+[charaFadein R 0 250,-70]
+[subRenderFadein #A 0.4 -350,-200]
+[wt 0.4]
+
+＠エレシュキガル・オルタ
+……ふう。
+[k]
+
+[charaFaceFade F 18 0.1]
+＠エレシュキガル・オルタ
+声、ご主人様に届けられたみたいね。[r]よかったじゃない？[bgmStop BGM_BATTLE_239 2.0]
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[charaFadeout F 0.1]
+[charaFadeout R 0.1]
+
+
+[charaScale M 1.5]
+[charaScale H 1.5]
+[cueSe SE_23 23_ad1304 0 0]
+[cueSeVolume 23_ad1304 0.7 0.3]
+[wt 0.5]
+[charaLayer F normal]
+[charaLayer R normal]
+[subCameraOff]
+[wt 0.7]
+[charaTalk M,H]
+[charaFace M 9]
+[charaPut H 0,340]
+[charaPut M 0,340]
+[charaEffectEdgeBlur M ffffff ffffff 6 2]
+[charaFadeTime M 2.5 0.8]
+[wt 1.5]
+[bgm BGM_BATTLE_243 0.1]
+[charaMove H 0,240 15.0]
+[charaMove M 0,240 15.0]
+[charaMove X 0,0 15.0]
+[charaMove S 0,-250 15.0]
+[wt 1.0]
+[cueSe SE_24 24_ade1041]
+[cueSeStop 24_ade1041 3.0]
+[wt 0.5]
+[charaFace H 9]
+[charaFadeTime H 1.0 1.0]
+[wt 1.0]
+[charaFadeout M 1.0]
+[charaEffectEdgeBlurStop M]
+[charaEffectStop X bit_talk_blight_02lp]
+[cueSeStop 23_ad1304 3.0]
+[wt 3.0]
+
+＠花咲翁
+……すまないね、灰を[#纏:まと]う神よ。[r]きみを手伝うのはここまでだ。
+[k]
+
+[charaFace H 4]
+
+＠花咲翁
+儂はまた、[r]新しい願いに応えることにしたよ。
+[k]
+
+[messageOff]
+[charaTalk H,N]
+[charaScale N 1.5]
+[charaScale U 1.5]
+[charaFace N 7]
+[charaFadein N 0.7 0,40]
+[charaFadein U 0.7 0,-450]
+[wt 1.4]
+
+＠N：花咲翁
+[#一緒にいたい]、と[line 3][wt 0.5][charaFace N 0][r]我が子にも等しいものが、そう言ってくれたのだから。
+[k]
+
+[messageOff]
+[wt 2.5]
+[fadeout black 2.0]
+[bgmStop BGM_BATTLE_243 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

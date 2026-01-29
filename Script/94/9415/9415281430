@@ -1,0 +1,893 @@
+
+＄94-15-28-14-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 6052002 1 おみぃさん]
+[charaSet B 5051001 1 張角]
+[charaSet C 1098342800 1 灰纏い]
+[charaSet D 2003001 1 ロビンフッド]
+[charaSet E 1098345300 1 エレシュキガル・オルタ]
+[charaSet F 1098343410 1 ゲイザー草]
+[charaSet G 1098343220 1 怪奇植物（炎）]
+
+[charaSet H 6052002 1 おみぃさん_演出用]
+[charaSet I 5051001 1 張角_演出用]
+[charaSet J 5051001 1 張角_演出用]
+[charaSet K 5051001 1 張角_演出用]
+[charaSet L 2003001 1 ロビンフッド_演出用]
+[charaSet M 1098345300 1 エレシュキガル・オルタ_演出用]
+[charaSet N 1098343220 1 怪奇植物（炎）_演出用]
+[charaSet O 1098342800 1 灰纏い_演出用]
+[charaSet P 1098342102 1 おみぃさん_目隠し_演出用]
+
+[sceneSet Q 271003 1]
+[sceneSet R 271003 1]
+[sceneSet S 271003 1]
+[sceneSet T 271003 1]
+
+[charaSet U 98115000 1 エフェクト用1]
+[charaSet V 98115000 1 エフェクト用2]
+[charaSet W 98115000 1 エフェクト用3]
+[charaSet X 98115000 1 エフェクト用4]
+
+[charaTalk depthOff]
+[charaDepth Q 1]
+[charaDepth R 2]
+[charaDepth A 3]
+[charaDepth B 4]
+[charaDepth H 5]
+[charaDepth I 6]
+[charaDepth M 7]
+[charaDepth L 8]
+[charaDepth F 9]
+[charaDepth G 10]
+[charaDepth N 11]
+[charaDepth U 12]
+[charaDepth V 13]
+[charaDepth S 14]
+[charaDepth J 15]
+[charaDepth K 16]
+[charaDepth X 17]
+[charaDepth T 18]
+[charaDepth O 19]
+[charaDepth P 20]
+[charaDepth D 21]
+[charaDepth E 22]
+[charaDepth W 26]
+[charaDepth C 1]
+
+[subCameraOn 3]
+[charaLayer Q sub #A]
+[charaLayer L sub #A]
+[charaLayer M sub #A]
+[charaLayer U sub #A]
+
+[charaLayer R sub #B]
+[charaLayer H sub #B]
+[charaLayer I sub #B]
+[charaLayer V sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask15 5 0,0,0,255 0]
+
+[charaScale Q 1.4]
+[charaFace L 5]
+[charaFace M 2]
+[charaFadein L 0 -50,300]
+[charaFadein M 0 240,290]
+[charaFadein Q 0 -450,100]
+[charaPut U 0,200]
+[charaEffect U bit_talk_sparks_fs]
+
+[charaScale R 1.3]
+[charaFace I 6]
+[charaFace H 11]
+[charaFadein I 0 100,290]
+[charaFadein H 0 -180,300]
+[charaFadein R 0 -50,150]
+[charaPut V 0,200]
+[charaEffect V bit_talk_sparks_fs]
+
+[subRenderDepth #A 2]
+[subRenderDepth #B 1]
+
+[scene 271003]
+
+[charaPut W 1]
+[charaEffect W bit_talk_sparks_fs]
+[wt 1.0]
+
+[cueSe SE_21 21_ad1114 1.0 0.4]
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_BATTLE_184 0.1]
+
+[subRenderFadein #A 0.3 232,-200]
+[subRenderFadein #B 0.3 -270,-400]
+[subRenderMoveEase #A 192,-300 0.4 easeOutCubic]
+[subRenderMoveEase #B -230,-300 0.4 easeOutCubic]
+[wt 1.3]
+
+？1：なんとか、どちらも持ちこたえてはいるけど
+？！
+
+？1：どっちも決め手がない……！
+？！
+
+[cueSeStop 21_ad1114 2.5]
+
+[charaFace B 6]
+[charaFace A 11]
+[charaFadeinFSR B 0.1 256,0]
+[charaFadeinFSL A 0.1 -256,0]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.6]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+
+[charaTalk A]
+
+＠おみぃさん
+はぁ、[charaMoveReturnFSL A -256,-5 0.7][wt 0.9]はぁ……。[charaMoveReturnFSL A -256,-5 0.7][wt 0.8]
+[k]
+
+＠おみぃさん
+やれやれ。ラチがあかないねえ。[r]息が切れるばかりだよ。
+[k]
+
+[charaFace B 4]
+
+＠張角
+ううむ、老体にはきついのう。
+[k]
+
+＠張角
+自分ではもう少し身体が動くと[r]思っておったんじゃがなあ、情けない。
+[k]
+
+[charaFace A 2]
+
+＠おみぃさん
+結局、[%1]のフォローも[r]だいぶもらっちゃってるしね。
+[k]
+
+[charaFace A 9]
+
+＠おみぃさん
+しっかし、ちょっと意外だったよ。
+[k]
+
+＠おみぃさん
+不利な状況で、こんなに[#一生懸命:いっしょうけんめい]になって[r]頑張ってくれるタイプだとは思わなかった。
+[k]
+
+[charaFace B 7]
+
+＠張角
+は。確かにワシは計算高く、[r]賢く立ち回りたいとは思っておるがな。
+[k]
+
+＠張角
+そうもいかぬのが世の常よ。[r]本当に大事なもののためであれば、
+[k]
+
+＠張角
+利だの得だのというものを考えていては[r]立ちゆかぬときのほうが多い。
+[k]
+
+[charaFace B 4]
+
+＠張角
+今は[line 3]ふむ。[r]これは多分、意地じゃのう。
+[k]
+
+[charaFace A 2]
+
+＠おみぃさん
+意地？
+[k]
+
+[messageOff]
+[charaScale S 1.3]
+[charaScale J 1.2]
+[charaTalk J,A]
+[charaFace J 6]
+[charaFadein J 0.6 50,30]
+[charaFadein S 0.6 -150,-300]
+[charaMove J 0,30 30.0]
+[charaMove S -200,-300 30.0]
+[wt 0.8]
+
+＠J：張角
+花咲翁の善き在り方は……ちと、[r]ワシにとっては見苦しく思えるものなのでな。
+[k]
+
+＠J：張角
+[#天下太平:て ん か た い へ い]のためには、[r]ときには厳しい決断も下さねばならぬ。
+[k]
+
+＠J：張角
+間違っておるものは、[r]ときには力を用いてでも正さねばならぬ。
+[k]
+
+＠J：張角
+[#戦:いくさ]を起こしてでも、痛みを生んででも、[r]目を覚まさせてやるのが正しいときもある[line 3]
+[k]
+
+[charaFace J 7]
+
+＠J：張角
+ワシはそう考えて生きてきた爺よ。
+[k]
+
+[charaFace J 6]
+
+＠J：張角
+ヤツのように、全てを優しさと善さで受け流していては、[r]腐った世などけっして変えられはせぬ。
+[k]
+
+＠J：張角
+そのような、ワシにとっては甘えた善性に[r]流されておるだけの爺に、
+[k]
+
+＠J：張角
+同じ爺として負けるわけにはいかん、[r]という意地がある。
+[k]
+
+[charaFaceFade J 2 0.3]
+
+＠J：張角
+[line 3]のう、聞いておるか翁よ！
+[k]
+
+＠J：張角
+貴様は優しさの狂人じゃ、[r]善の物差し一つで全てを測る悪じゃ！
+[k]
+
+＠J：張角
+虫一匹殺せぬような無毒の善では、[r]けっして世の民を救うことなどできぬぞ！
+[k]
+
+[messageOff]
+[charaTalk O,J]
+[charaScale O 1.3]
+[charaScale T 1.5]
+[charaFace O 0]
+[charaFadein O 0.6 1]
+[charaFadein T 0.6 0,-350]
+[wt 1.0]
+[charaFadeout J 0.1]
+[charaFadeout S 0.1]
+[charaMove J 0,30 0.1]
+[charaMove S -200,-300 0.1]
+
+＠O：灰纏い
+……。[r]……。
+[k]
+
+[messageOff]
+[charaTalk B,O]
+[charaFace B 5]
+[charaFadeout O 0.4]
+[charaFadeout T 0.4]
+[wt 0.6]
+
+＠張角
+ち。届いておるのかおらぬのか。
+[k]
+
+＠張角
+今のでちっとは精神の動揺でも[r]誘えればよかったんじゃがのう。
+[k]
+
+[charaTalk A]
+[charaFace A 9]
+
+＠おみぃさん
+ま、いろんな手を[r]探ってみるのはいいコトさね。
+[k]
+
+[charaFace A 11]
+
+＠おみぃさん
+もう少しアタシたちだけで[r]ここを踏ん張れれば、
+[k]
+
+＠おみぃさん
+[%1]にも[r]あっちの支援に集中してもらえそうなんだけど……。
+[k]
+
+[charaFace A 2]
+
+＠おみぃさん
+じいさま、うまいことアタシを[r]パワーアップさせる手とかない？
+[k]
+
+[charaFace B 6]
+
+＠張角
+……。[r]……。
+[k]
+
+[charaFace B 0]
+
+＠張角
+それはまあ、あるが。
+[k]
+
+[charaFace A 10]
+
+＠おみぃさん
+あるのぉ！？[r]早く言ってよ！
+[k]
+
+[charaFace B 7]
+
+＠張角
+しかし、蛇女房よ。おぬし、[r]この爺に我が身を預けられるか？
+[k]
+
+＠張角
+そこまでワシを信頼できるか？
+[k]
+
+[charaFace A 5]
+
+＠おみぃさん
+みゃっははは。確かにアンタは[r]一癖も二癖もありそうなじいさまだけどさ。
+[k]
+
+＠おみぃさん
+さすがに今この場でアタシたちを[r]裏切りはしないと思ってるよ。
+[k]
+
+[charaFace A 8]
+
+＠おみぃさん
+だって裏切ったら自分だって一緒に[#磨:す]り潰されちまうって[r]わかってるはずだもんね？
+[k]
+
+[charaFace B 1]
+
+＠張角
+ははは、違いない。
+[k]
+
+[charaFace B 0]
+
+＠張角
+ということらしいが、よいかね、マスター？
+[k]
+
+[bgmStop BGM_BATTLE_184 2.0]
+
+[messageOff]
+[charaTalk B,A]
+[wt 1.5]
+
+？1：許可はするけどちょっと待って！
+？！
+
+[charaTalk B,A,J]
+[charaFace J 0]
+[charaFadein J 0.5 50,30]
+[charaFadein S 0.5 -150,-300]
+[charaMove J 0,30 0.5]
+[charaMove S -200,-300 0.5]
+[wt 0.8]
+
+[charaFadeout B 0.1]
+[charaPut A 1]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[cueSe Battle bas16]
+[effect bit_talk_CommandMantra_05 0,32]
+[wt 2.0]
+
+[branch _branchEnd]
+
+[label _Female]
+
+[cueSe Battle bas16]
+[effect bit_talk_CommandMantra_08 0,32]
+[wt 2.0]
+
+[branch _branchEnd]
+
+[label _branchEnd]
+
+[charaEffect J bit_talk_np_buf]
+[cueSe Battle bas7 0 0.7]
+[wt 2.0]
+
+？1：張角は、ちゃんと安全な方法で[line 3]
+？2：余計な精神汚染とかが絶対ない支援をすること！
+？！
+
+[bgm BGM_BATTLE_203 0.1]
+
+[charaFaceFade J 11 0.2]
+
+＠J：張角
+うわーお令呪？
+[k]
+
+[charaFaceFade J 4 0.2]
+
+＠J：張角
+何やら大袈裟すぎるというか[r]不必要に細かい注文があった気もするが……
+[k]
+
+[charaFace J 3]
+
+＠J：張角
+まあワシに対する信頼の証じゃな！[r]ちゃんと魔力ブーストも来たし！
+[k]
+
+[charaFace J 2]
+
+＠J：張角
+よし、これを巻けい！
+[k]
+
+[messageOff]
+[charaMoveReturn J 0,25 0.8]
+[cueSe SE_25 25_ad1537]
+[wt 1.0]
+[cueSeStop 25_ad1537 0.3]
+[wt 0.3]
+
+[charaTalk A,J]
+[charaFace A 1]
+[charaFadeout J 0.5]
+[charaFadeout S 0.5]
+[wt 1.0]
+
+＠おみぃさん
+はいよ。[r]ちょうどいいからこうしようかね。
+[k]
+
+[messageOff]
+[charaFace A 0]
+[charaMove A 0,-5 0.5]
+[se ad748]
+[wt 0.8]
+[se ad661]
+[wt 1.0]
+[charaCrossFade A 1098342102 0 0.7]
+[wait charaCrossFade A]
+[wt 0.1]
+[charaMove A 0,0 0.5]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠張角
+ようし！　今の貴様は蛇女房であり[r]我が黄巾の兵士じゃ！
+[k]
+
+＠張角
+身体強化の魔力補助を受け取れ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.3]
+[cueSe Battle bac31]
+[cueSe SE_21 21_ade661 0.5]
+[effect bit_talk_taoism]
+[wt 1.0]
+[se ad626 0.5 0.6]
+[se ad556 0.5 0.3]
+[charaEffect A bit_talk_charge_gld]
+[wt 2.0]
+[charaEffectStop A bit_talk_charge_gld]
+[seStop ad626 1.0]
+[seStop ad556 1.0]
+[wt 0.5]
+
+[charaLayer O sub #C]
+[charaLayer Q sub #C]
+[subCameraFilter #C maskEdge cut359_mask12 5 0,0,0,255]
+[subRenderDepth #C 3]
+[charaFace O 0]
+[charaScale O 1.0]
+[charaFadein O 0.1 -530,205]
+[charaFadein Q 0.1 -100,80]
+
+[charaTalk off]
+[subRenderFadeinFSSideL #C 0.3 120,-180]
+[subRenderMoveEaseFSSideL #C 100,-200 0.3 easeOutExpo]
+[wt 0.3]
+
+[se ad73]
+[charaEffect A bit_talk_quickmove]
+[charaSpecialEffect A erasureReverse 1 0.3]
+
+[cueSe Servants_9945080 m96501]
+[wt 0.3]
+[se ad865 0.7]
+[charaRoll X 90]
+[charaScale X 1.5]
+[charaPut X -300,-300]
+[charaEffect X bit_talk_flame_attack_blre 0,0]
+[wt 0.7]
+
+[subRenderFadeout #C 0.2]
+[wt 0.2]
+[charaFadeout O 0]
+[charaFadeout Q 0]
+[charaLayer O nomal]
+[charaLayer Q nomal]
+
+[charaScale T 1.4]
+[charaFadein T 0.4 160,-200]
+[charaMoveEase T 260,-200 0.5 easeOutCubic]
+[wt 0.6]
+
+[charaRoll X 0]
+[charaScale X 1.0]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+[se ad223]
+[charaTalk on]
+[charaTalk P]
+[charaFace P 0]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect P appearance 1 0.25]
+[wt 0.5]
+[charaFace P 10]
+
+＠P：おみぃさん
+おっとぉ？　操られてるってほどでもないが、[r]手足が勝手に動くような、妙な感じさね。
+[k]
+
+[charaFace P 9]
+
+＠P：おみぃさん
+アシストがあるって感じかな？
+[k]
+
+[charaFace P 7]
+
+＠P：おみぃさん
+うん、[#疲労困憊:ひ ろ う こ ん ぱ い]の今の状態なら、[r]こいつはありがたいかもね。
+[k]
+
+＠P：おみぃさん
+終わったあとにゃ筋肉痛で立つことすら[r]できなくなってそうだけど！
+[k]
+
+[messageOff]
+[charaTalk B,P]
+[charaFadeout T 0.4]
+[charaFadeout P 0.4]
+[wt 0.6]
+
+＠張角
+それは普段の貴様の鍛え方次第じゃなぁ。
+[k]
+
+[charaFace B 6]
+
+＠張角
+さて、ワシも小遣いを貰ったぶんは[r]頑張らねばの。
+[k]
+
+[charaFace B 2]
+
+＠張角
+[line 3][#水気:す い き]にて満ちよ、霧鏡！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth B 19]
+[charaScale J 1.0]
+[se ade153]
+[effect bit_talk_white_fog01]
+[wt 1.5]
+[seContinue ad598 1]
+[charaFace J 2]
+[charaPutFSSideR J 290,0]
+[charaMoveFSSideR J 300,0 0.7]
+[charaFadeTime J 0.4 0.7]
+[wt 0.3]
+[seContinue ad598 2]
+[charaFace K 2]
+[charaPutFSSideL K -290,0]
+[charaMoveFSSideL K -300,0 0.7]
+[charaFadeTime K 0.4 0.7]
+[seStop ad1026 1.0]
+[wt 1.5]
+
+[charaFace B 7]
+[charaFace J 7]
+[charaFace K 7]
+
+＠張角
+さて、官軍はこのような幻術に面白いように[r]戸惑ってくれたものじゃが、貴様はどうかな？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠灰纏い
+拙劣、余興、幼稚の[#言:ことば][line 3]児戯！[r][#悉:ことごと]に消えよ！
+[k]
+
+[messageOff]
+[se ad960]
+[effect bit_talk_kien_custom_blre02]
+[wt 2.0]
+[effectStop bit_talk_white_fog01]
+[cueSe SE_24 24_ad1415]
+[cueSe SE_21 21_ad1148]
+[wt 0.2]
+[seStop ad961 3.0]
+[fadeout white 0.2]
+[wait fade]
+
+[effectDestroy]
+[wt 0.1]
+
+[cueSeStop 24_ad1415 2.0]
+[cueSeStop 21_ad1148 2.5]
+[fadein white 0.5]
+[wait fade]
+[wt 1.8]
+
+[charaTalk C,P]
+[charaFace P 0]
+[charaFadein P 0.4 1]
+[charaFadein T 0.4 260,-200]
+[wt 0.8]
+[se ad1006 0.8]
+[charaDepth X 21]
+[charaPut X 1]
+[charaEffect X bit_talk_41_remake]
+[charaMoveScaleEase P 1.5 0.3 easeOutCubic]
+[charaMoveEase P 0,50 0.3 easeOutCubic]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaFadeout P 0.3]
+[wt 0.4]
+[charaPut X 2500,2500]
+[charaEffectStop X bit_talk_41_remake]
+[charaScale A 1.0]
+[blurOff motion 0.1]
+[wt 0.7]
+
+[fadeout black 1.0]
+[bgmStop BGM_BATTLE_203 1.0]
+[wait fade]
+
+[charaDepth X 17]
+
+[charaFadeout T 0.1]
+[charaFadeout C 0.1]
+[wt 1.5]
+
+[cueSe SE_21 21_ad1114 1.0 0.4]
+[fadein black 1.0]
+[wait fade]
+[wt 0.7]
+
+？1：二人が時間を稼いでくれると信じて[line 3]
+？2：今のうちに目玉のほうを何とか[line 3]
+？！
+
+[se ad443]
+[wipeout rightToLeft 0.7 1.0]
+[wait wipe]
+
+[charaTalk D,E]
+[charaFace E 6]
+[charaFace D 0]
+[charaPutFSR E 356,0]
+[charaPutFSL D -156,0]
+[charaFadeTime E 0 0]
+[charaFadeTime D 0 0]
+[charaFadein T 0.1 -160,-200]
+[wt 0.5]
+
+[charaMoveEaseFSL D -256,0 1.5 easeOutSine]
+[charaMoveEaseFSR E 256,0 1.5 easeOutSine]
+[charaMoveEase T -260,-200 1.5 easeOutSine]
+[seStop 21_ad1114 2.0]
+[seStop ad443 1.4]
+[wipein leftToRight 0.7 1.0]
+[wait wipe]
+[wt 0.3]
+[charaFadeTime D 0.4 1.0]
+[charaFadeTime E 0.4 1.0]
+[wt 1.0]
+
+[bgm BGM_MAP_23 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+
+＠ロビンフッド
+その顔。[r]勝負のかけどきだ、ってことですかい？
+[k]
+
+[charaTalk E]
+
+＠エレシュキガル・オルタ
+マスターが集中的に支援してくれるなら、[r]今までよりも思い切った手が打てるかもしれないわね。
+[k]
+
+＠エレシュキガル・オルタ
+ロビン、奥の手があるとか言ってなかった？[r]それを聞かせなさい。
+[k]
+
+[charaTalk D]
+[charaFace D 4]
+
+＠ロビンフッド
+あー、まあ、あるにはあるが……[r]リスクもあるぜ？
+[k]
+
+＠ロビンフッド
+実際にやるかどうかはよく考えて決めてくれ、[r]って感じでな。
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_MAP_23 1.0 0.5]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 1.5]
+
+[wipein rollLeft 1.0 1.0]
+[bgm BGM_MAP_23 1.0 1.0]
+[wait wipe]
+
+[charaTalk E]
+[charaFace D 0]
+[charaFace E 14]
+[charaFadeinFSL D 0.1 0]
+[charaFadeinFSR E 0.1 2]
+
+＠エレシュキガル・オルタ
+[line 3]わかったわ。[r]やりましょう。
+[k]
+
+[charaTalk D]
+
+＠ロビンフッド
+決断早ぇなオイ。[r]アンタが一番危険なんだが。
+[k]
+
+[charaTalk E]
+[charaFace E 6]
+
+＠エレシュキガル・オルタ
+私は冷酷で無慈悲な冥界の女主人。[r]つまり合理性の塊よ。
+[k]
+
+＠エレシュキガル・オルタ
+それが必要なことであるなら[r]感情による[#躊躇:ちゅうちょ]など無用。
+[k]
+
+＠エレシュキガル・オルタ
+マスターも、いいわね？
+[k]
+
+？1：本当は、少し心配だけど
+？2：それしか手がないのなら……
+？！
+
+[bgmStop BGM_MAP_23 1.3]
+
+[messageOff]
+[charaFadeout D 0.4]
+[charaFadeout E 0.4]
+[charaFadeout T 0.4]
+[wt 0.6]
+
+[charaTalk off]
+[charaScale F 0.92]
+[charaFadein F 0.1 0,-20]
+[wt 0.3]
+[cueSe SE_26 26_ade1315]
+[charaMoveScale F 1.0 0.7]
+[charaMove F 0,0 0.7]
+[wt 0.7]
+
+[cueSeStop 26_ade1315 0.5]
+[cueSe SE_26 26_ade1310]
+[charaFadein G 0.3 -400,-20]
+[charaMoveEase G -400,10 0.5 easeOutCubic]
+[wt 0.2]
+[charaFadein N 0.3 390,-20]
+[charaMoveEase N 390,10 0.5 easeOutCubic]
+[wt 0.3]
+[cueSeStop 26_ade1310 0.6]
+[wt 0.4]
+
+[se ade440]
+[charaEffect G bit_shot_01]
+[wt 0.2]
+[cueSe Battle bac145]
+[charaShake G 0.03 3 3 0.8]
+[charaEffect G bit_talk_13]
+[charaEffect N bit_shot_01]
+[wt 0.2]
+[cueSe Battle bac146]
+[charaShake N 0.03 3 3 0.8]
+[charaEffect N bit_talk_13]
+[wt 0.8]
+
+[se ad42]
+[charaSpecialEffect G enemyErasure 1 1.5]
+[wt 0.2]
+[charaSpecialEffect N enemyErasure 1 1.5]
+[wait charaSpecialEffect N]
+[wt 0.5]
+
+[bgm BGM_BATTLE_137 0.1]
+
+[charaTalk on]
+[charaTalk D,F]
+[charaFace D 5]
+[charaFace E 6]
+[charaFadeinFSL D 0.4 0]
+[charaFadeinFSR E 0.4 2]
+[charaFadein T 0.4 -260,-200]
+[wt 0.6]
+
+＠ロビンフッド
+何にしても、迷ってる暇はないぜ！
+[k]
+
+[charaTalk E]
+[charaFace E 4]
+
+＠エレシュキガル・オルタ
+始めるしかないわ！[r]マスター、援護お願い！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_137 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
