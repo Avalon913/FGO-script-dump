@@ -1,0 +1,1433 @@
+
+＄94-03-35-83-8-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 23011002 1 玉兎輝夜]
+[charaSet B 23011002 1 玉兎輝夜_演出用]
+
+[charaSet P 98115000 1 エフェクト用1]
+[charaSet Q 98115000 1 エフェクト用2]
+
+[equipSet R 9809700 1 バレンタイン礼装]
+[sceneSet S 10000 1]
+[charaScale S 1.1]
+[imageSet T cut775_mky_photo 1]
+
+[imageSet U back10000 1 1]
+[charaScale U 1.05]
+[imageSet V back10000 1 1]
+[charaScale V 1.05]
+
+[sceneSet W 22190 1]
+
+[charaTalk depthOff]
+[charaDepth W 4]
+[charaDepth A 3]
+[charaDepth B 5]
+
+[charaDepth S 15]
+[charaDepth T 16]
+
+[charaDepth P 24]
+[charaDepth Q 25]
+
+[charaDepth U 26]
+[charaDepth V 26]
+
+[scene 22190]
+[charaScale W 1.2]
+[charaFadein W 0.1 30,-220]
+[wt 0.1]
+[charaMove W -30,-220 10.0]
+[fadein black 1.0]
+[wait fade]
+
+[se ad216 2.0 0.5]
+[wt 2.0]
+[charaFadeout W 1.0]
+[wt 1.5]
+
+？1：このフワフワしていて
+？2：突拍子もない展開は……
+
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.6 1]
+[wt 1.0]
+
+[bgm BGM_VALENTINE_1 0.1]
+
+＠玉兎輝夜
+[tVoice ValVoice_2301100 0_V010]
+そう、夢の中の[#一時:ひととき]。[r]こんばんはマスター。いいバレンタインね。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠玉兎輝夜
+[tVoice ValVoice_2301100 0_V020]
+毎日充実しているかしら。している？[r]それは良かった。[wait tVoice]
+[k]
+
+＠玉兎輝夜
+[tVoice ValVoice_2301100 0_V030]
+お祭の時は忙しいくらいがちょうどいいわ。[r]日常の中の非日常、ですものね。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠玉兎輝夜
+[tVoice ValVoice_2301100 0_V040]
+さて。そんなあなたに質問があります。[r]街角アンケートならぬ月影アンケート。[wait tVoice]
+[k]
+
+＠玉兎輝夜
+[tVoice ValVoice_2301100 0_V050]
+ここに二つの選択肢があります。[r]バレンタインを過ごすならどんな時代がいい？[wait tVoice]
+[k]
+
+[input selectBranch]
+[messageOff]
+[seStop ad216 0.7]
+[charaFadeout W 0.1]
+
+[charaSet A 23011002 1 玉兎輝夜]
+[charaSet B 23011002 1 玉兎輝夜_演出用]
+[charaSet P 98115000 1 エフェクト用1]
+[charaSet Q 98115000 1 エフェクト用2]
+[equipSet R 9809700 1 バレンタイン礼装]
+[sceneSet S 10000 1]
+[charaScale S 1.1]
+[imageSet T cut775_mky_photo 1]
+[imageSet U back10000 1 1]
+[charaScale U 1.05]
+[imageSet V back10000 1 1]
+[charaScale V 1.05]
+[sceneSet W 22190 1]
+[charaScale W 1.2]
+
+[scene 22190]
+[charaTalk depthOff]
+[charaDepth W 4]
+[charaDepth A 3]
+[charaDepth B 5]
+[charaDepth S 15]
+[charaDepth T 16]
+[charaDepth P 24]
+[charaDepth Q 25]
+[charaDepth U 26]
+[charaDepth V 26]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.8]
+
+[bgm BGM_VALENTINE_1 1.0 1.0]
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+[label lblSelect00a]
+？1：ちょっと昔の両儀さん
+
+[flag SEL00 1]
+
+？2：ちょっと未来の両儀さん
+
+[rewardSwitch true]
+[flag SEL00 2]
+
+？3：いま目の前にいる両儀さん
+[flag SEL00 3]
+
+？！
+
+[branch lblSel00a SEL00 1]
+[branch lblSel00b SEL00 2]
+[branch lblSel00c SEL00 3]
+
+[label lblSel00c]
+
+[charaFace A 8]
+
+＠玉兎輝夜
+[tVoice ValVoice_2301100 0_V100]
+！[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale B 1.2]
+[charaScale W 1.2]
+[charaFace B 0]
+[charaFadein B 0.6 15,0]
+[charaFadein W 0.6 15,-270]
+[charaMove B -15,0 15.0]
+[charaMove W -15,-270 15.0]
+[wt 0.7]
+
+＠玉兎輝夜
+[tVoice ValVoice_2301100 0_V110]
+ごめんなさい。[r]今回、私の出番はここだけなの。[wait tVoice]
+[k]
+
+[charaFace B 10]
+
+＠玉兎輝夜
+[tVoice ValVoice_2301100 0_V120]
+自称とはいえ輝夜姫だもの。[r]贈り物をチョコレートにするのは[#憚:はばか]られます。[wait tVoice]
+[k]
+
+[charaFace A 0]
+[charaFace B 0]
+
+＠玉兎輝夜
+[tVoice ValVoice_2301100 0_V130]
+でも望んでくれてありがとう。[r]お礼にとびっきりの甘味を贈りましょう。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout B 0.6]
+[charaFadeout W 0.6]
+[wt 0.6]
+[charaTalk on]
+
+＠玉兎輝夜
+[tVoice ValVoice_2301100 0_V140]
+乞うご期待、という事で、[r]もう一度選んでもらえる？[wait tVoice]
+[k]
+
+[branch lblSelect00b]
+
+[input selectBranch]
+[messageOff]
+[branch lblRoute00end SEL00 1]
+[branch lblRoute00end SEL00 2]
+[charaFadeout W 0.1]
+[charaFadeout B 0.1]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.8]
+
+[bgm BGM_VALENTINE_1 1.0 1.0]
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+[label lblSelect00b]
+？1：ちょっと昔の両儀さん
+
+[flag SEL00 1]
+
+？2：ちょっと未来の両儀さん
+
+[rewardSwitch true]
+[flag SEL00 2]
+
+？！
+
+[branch lblSel00a SEL00 1]
+[branch lblSel00b SEL00 2]
+
+[label lblSel00a]
+
+[charaFace A 4]
+
+＠玉兎輝夜
+[tVoice ValVoice_2301100 0_V060]
+いつもの私ね？[r]年頃も同じだし、やっぱり気が合うのかしら。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠玉兎輝夜
+[tVoice ValVoice_2301100 0_V070]
+あの通り、人付き合いは大の苦手だから。[r]仲良くしてあげてね。[wait tVoice]
+[k]
+
+[branch lblConf00]
+
+[label lblSel00b]
+
+[charaFace A 1]
+
+＠玉兎輝夜
+[tVoice ValVoice_2301100 0_V080]
+お祭の縁日より、お屋敷の縁側が似合う私ね？[r]落ち着いた話ができそう。[wait tVoice]
+[k]
+
+＠玉兎輝夜
+[tVoice ValVoice_2301100 0_V090]
+もしかしたら私も知らない話が[r]ヤブから棒に飛び出すかも。兎だけに。[wait tVoice]
+[k]
+
+[branch lblConf00]
+
+[label lblConf00]
+
+[charaFace A 4]
+
+＠玉兎輝夜
+[tVoice ValVoice_2301100 0_V150]
+それでは良い一日を。[twt 3.7][charaFace A 12][r]周回、私も連れていってね。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout white 2.0]
+[bgmStop BGM_VALENTINE_1 2.0]
+[wait fade]
+[scene 10000]
+[charaFadeout A 0.1]
+[wt 1.0]
+[fadein white 1.0]
+[wait fade]
+
+[fadeout black 1.0]
+[wait fade]
+
+[branch lblSelectRoute00a SEL00 1]
+[branch lblSelectRoute00b SEL00 2]
+
+[label lblSelectRoute00a]
+[branchQuestClear lblClear01d 05000000]
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[label lblClear01a]
+[scene 106000]
+[branch lblConf01]
+
+[label lblClear01b]
+[scene 105800]
+[branch lblConf01]
+
+[label lblClear01c]
+[scene 157900]
+[branch lblConf01]
+
+[label lblClear01d]
+[scene 106000]
+
+[label lblConf01]
+[charaSet A 1098333300 1 玉兎]
+[charaSet B 1098333300 1 玉兎_演出用]
+[charaDepth A 5]
+[charaDepth B 8]
+[sceneSet X 106300 1]
+[sceneSet Y 106300 1]
+[sceneSet Z 106300 1]
+[charaDepth X 4]
+[charaDepth Y 7]
+[charaDepth Z 10]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_147 0.1]
+[wt 0.5]
+
+[se ad13]
+[wt 0.7]
+
+[subCameraOn 1]
+[charaLayer A sub #A]
+[charaLayer X sub #A]
+[subCameraFilter #A maskEdge cut359_mask12 5 112,92,106,255 0]
+[charaScale A 1.1]
+[charaScale X 1.2]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0 -480,310]
+[charaFadein X 0 -150,-20]
+[charaMoveEase A -530,260 0.4 easeOutQuad]
+[charaMoveEase X -200,-70 0.4 easeOutQuad]
+[subRenderFadeinFSSideL #A 0.4 120,-200]
+[wt 0.7]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V160]
+おまえ、いま暇？[r]特に急用がないならちょっといいか。[wait tVoice]
+[k]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V170]
+例の、ほら、プレジデント・アイランド？[r]呼延灼ランドじゃない方。[wait tVoice]
+[k]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V180]
+去年の夏、あんまり泳げなかっただろ。[r]あそこの浜辺にいるから遊ぼうぜ。[wait tVoice]
+[k]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V190]
+じゃ、待ってる。[wait tVoice]
+[k]
+
+[masterBranch _Male00 _Female00]
+[label _Female00]
+
+[charaFace A 6]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V200]
+……と、言うまでもないけど泳げる格好で来いよ！[r]オレだけだと馬鹿みたいだからな！[wait tVoice]
+[k]
+
+[label _Male00]
+
+[label _Conf00]
+[messageOff]
+[charaMoveEase A -580,210 0.4 easeOutSine]
+[charaMoveEase X -250,-120 0.4 easeOutSine]
+[subRenderFadeout #A 0.4]
+[wt 0.3]
+
+[se ad562]
+[wt 1.2]
+
+？1：これはまさか……
+？2：デートのお誘い、というヤツでは……！？
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_147 1.0]
+[wait fade]
+[scene 10000]
+[wt 0.2]
+[fadein black 0.2]
+[wait fade]
+
+[se ad12]
+[effect bit_talk_07_fs]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_07_fs]
+[charaFadeout A 0.1]
+[charaFadeout X 0.1]
+[charaLayer A normal]
+[charaLayer X normal]
+[subCameraOff]
+[charaSet A 23011300 1 玉兎]
+[charaSet C 1098350300 1 玉兎_演出用]
+[charaSet D 1098350300 1 玉兎_演出用]
+[charaSet E 1098350300 1 玉兎_演出用]
+[charaDepth A 3]
+[charaDepth C 5]
+[charaDepth D 8]
+[charaDepth E 11]
+[charaFilter X normal 00000080]
+
+[scene 106300]
+[charaScale X 1.2]
+[charaFadein X 0.1 -100,-270]
+[wt 1.3]
+
+[charaMove X -70,-270 5.0]
+[se ad218 1.0 1.0]
+[fadein white 1.0]
+[wait fade]
+
+[wt 3.0]
+
+[seStop ad218 1.0]
+[bgm BGM_MAP_94 0.1]
+
+[charaTalk off]
+[charaScale C 1.4]
+[charaScale D 1.4]
+[charaScale E 1.4]
+[charaScale Y 1.8]
+[charaScale Z 1.8]
+[charaFace E 0]
+[charaFadein E 0.6 0,1050]
+[charaFadein Z 0.6 -100,-100]
+[charaMove E -50,1050 5.0]
+[charaMove Z -150,-100 5.0]
+[wt 1.0]
+[charaScale X 1.8]
+[charaFace D 0]
+[charaFadein D 0.1 0,450]
+[charaFadein Y 0.1 100,-200]
+[charaFace C 0]
+[charaFadein C 0.1 25,-50]
+[charaFadein X 0.1 25,-625]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.5]
+[charaMove D 50,450 5.0]
+[charaMove Y 150,-200 5.0]
+[charaFadeout E 0.6]
+[charaFadeout Z 0.6]
+[wt 2.5]
+[charaMove C -25,-50 5.0]
+[charaMove X -25,-625 5.0]
+[charaFadeout D 0.6]
+[charaFadeout Y 0.6]
+[wt 2.5]
+[charaFadeout C 0.6]
+[charaFadeout X 0.6]
+[wt 1.0]
+[charaDepth A 5]
+
+？1：お待たせ！
+
+[masterBranch _Male01 _Female01]
+
+[label _Male01]
+
+[charaFace A 9]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V210]
+いや、そんなに待ってないし。[r]急いで来てくれてサンキュー。[wait tVoice]
+[k]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V220]
+ところで日焼け対策はしたか？[r]夏の海は男でもダメージ受けるぞ。[wait tVoice]
+[k]
+
+[branch _Conf01]
+
+[label _Female01]
+
+[charaFace A 7]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V230]
+よし。ちゃんと水着で来たな。[r]似合ってるじゃん。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V240]
+他に誰がいるわけでもないし、オレも身軽になろっと。[wait tVoice]
+[k]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V250]
+……あ。同年代の女友達と海に入るの、[r]もしかして初めてか？[wait tVoice]
+[k]
+
+[label _Conf01]
+
+？2：まだ変装中？
+
+[charaFace A 9]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V260]
+まあ、念のために。[r]待ち時間中にヘンなの寄ってきたら面倒だろ。[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V270]
+浅上のヤツは千里眼持ちだし。[r]見つかったら茶々入れに来るに決まってる。[wait tVoice]
+[k]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V280]
+とはいえ、だ。[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[cueSe SE_24 24_ade988 0 0.4]
+[cueSeStop 24_ade988 0.7]
+[charaCrossFade A 1098333300 1 0.6]
+[wait charaCrossFade A]
+[wt 0.6]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V290]
+いつもは迷惑な特異点もこういう時はありがたい。[r]外の季節と関係なく夏、だもんな。[wait tVoice]
+[k]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V300]
+まずは浅瀬で波を楽しんでから、[r]慣れたら沖まで泳ぎたいんだけど、いいか？[wait tVoice]
+[k]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V310]
+泳げないのなら今のうちに言ってくれ。[r]猫泳ぎでいいならコツを教えてやるよ。[wait tVoice]
+[k]
+
+？1：猫って泳げたの？
+
+[charaCrossFade A 23011000 7 0.2]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V320]
+泳げる泳げる、野生動物舐めんな。[r]トルコの猫とか面白いぞ。[wait charaCrossFade A][wait tVoice]
+[k]
+
+
+[charaCrossFade A 1098333300 1 0.2]
+
+？2：兎とは
+
+[charaCrossFade A 23011000 11 0.2]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V330]
+……訂正。[#兎かき:バニーパドル]、でいいなら。[r]兎ってわりと優雅に泳ぐんだっけ。[wait charaCrossFade A][wait tVoice]
+[k]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V340]
+猫より上手いんだよな、確か。[wait tVoice]
+[k]
+
+[charaCrossFade A 1098333300 1 0.2]
+
+？！
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V350]
+まあ、泳げなくても大丈夫。[r]浮き輪でもボートでも借りてくればいい。[wait charaCrossFade A][wait tVoice]
+[k]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V360]
+夏の海は足をつけるだけで気持ちが上がるからな。[r]浅瀬でパシャパシャするだけで１時間は経ってる。[wait tVoice]
+[k]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V370]
+オレも体験するまで知らなかったけど。[r]沖縄の海とか最高。レジャーの王様なだけはある。[wait tVoice]
+[k]
+
+[charaCrossFade A 23011000 9 0.2]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V380]
+って、オレの感想は余分だよな。[r]何が楽しいかは人それぞれだし。[wait charaCrossFade A][wait tVoice]
+[k]
+
+？1：そんなことない[&よ:ですよ]
+？2：できれば毎年、夏の海で泳ぎたい！
+
+？！
+
+[charaFace A 7]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V390]
+そう？　付き合いいいな、相変わらず。[r]ならお言葉に甘えて満足するまで遊んじゃうか。[wait tVoice]
+[k]
+
+[charaFace A 10]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V400]
+夕方までたっぷり時間はあるんだ。[r]この一日でやりたい事、ぜんぶやって帰ろうぜ。[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_MAP_94 1.0]
+[wait fade]
+
+[charaCrossFade A 23011000 7 0.2]
+[wait charaCrossFade A]
+[wt 0.3]
+[charaFadeout A 0.1]
+
+[scene 106301]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_104 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V410]
+いやあ、遊んだ遊んだ！[wait tVoice]
+[k]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V420]
+ジェットスキー、ダイビング、パラセーリング、[r]マリンスポーツはだいたい制覇したんじゃないか？[wait tVoice]
+[k]
+
+？1：ハチャメチャ楽しかった！
+？2：でもさすがに疲れた
+
+？！
+
+[charaCrossFade A 1098333300 1 0.2]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V430]
+だよな。後は丁寧にストレッチして、[r]カルデアに帰るだけ[line 3][wait charaCrossFade A][wait tVoice]
+[k]
+
+[charaFace A 12]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V440]
+じゃなかった。[r]なにしてんだオレ。[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V450]
+礼として誘ったのに、結局自分も楽しんじまった。[r]もっと気楽に、のんびりさせてやりたかったのに。[wait tVoice]
+[k]
+
+？1：礼？　バレンタインじゃなくて？
+？2：なんで？　楽しかったよ？
+
+？！
+
+[charaCrossFade A 23011000 17 0.2]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V460]
+いや、ほら……夏は迷惑をかけた……[r]いや、手を貸してもらっただろ。幹也と浅上の件で。[wait charaCrossFade A][wait tVoice]
+[k]
+
+[charaFace A 18]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V470]
+あれは思い出したくもない悪夢だけど、[r]悪夢で済んだのはおまえのおかげだ。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V480]
+だから礼をかねて接待してやろうって。[r]うまくいかなかったけど。[wait charaCrossFade A][wait tVoice]
+[k]
+
+[charaFace A 9]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V490]
+わるい。こんな事なら素直に[r]チョコレートを用意すれば良かった。[wait tVoice]
+[k]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V500]
+その方がいい記念になったよな？[wait tVoice]
+[k]
+
+？1：そんな[&ことはないです:コトはないよ]
+
+？！
+
+[messageOff]
+[wt 0.2]
+
+？1：[#玉兎:ぎょくと]さんと夏の海ではしゃげて良かった！
+
+？！
+
+[charaFace A 4]
+[wt 1.2]
+
+[charaFace A 7]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V510]
+それは良かった。[r]嘘のつけないマスターの言う事だもんな。[wait tVoice]
+[k]
+
+[masterBranch _Male02 _Female02]
+
+[label _Female02]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V520]
+これからも気楽によろしく。[r]夏の浜辺でも用心棒として悪い虫を斬り払うぜ。[wait tVoice]
+[k]
+
+[branch _Conf02]
+
+[label _Male02]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V530]
+オレも昔に戻ったみたいで楽しかった。[r]男同士……じゃない、悪ガキ同士で遊ぶのは最高だ。[wait tVoice]
+[k]
+
+[label _Conf02]
+
+？1：あれ。というコトは、バレンタインのチョコは……
+
+？！
+
+[charaCrossFade A 1098333300 1 0.2]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V540]
+そこは諦めて。[r]この時分のオレだとシャレたチョコは考えつかない。[wait charaCrossFade A][wait tVoice]
+[k]
+
+[charaFace A 13]
+
+＠玉兎
+[tVoice ValVoice_2301100 0_V550]
+そうそう。甘い物が食べたいんなら、[r]大人のオレに付き合うのがいいんじゃない？[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.7]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_104 2.0]
+[wait fade]
+[wt 0.5]
+[branch lblRoute00end]
+
+[label lblSelectRoute00b]
+[branchQuestClear lblClear02d 05000000]
+[branchQuestClear lblClear02c 94064915]
+[branchQuestClear lblClear02c 3001101]
+[branchQuestClear lblClear02b 3000303]
+
+[label lblClear02a]
+[scene 106000]
+[sceneSet W 106000 1]
+[branch lblConf02]
+
+[label lblClear02b]
+[scene 105800]
+[sceneSet W 105800 1]
+[branch lblConf02]
+
+[label lblClear02c]
+[scene 157900]
+[sceneSet W 157900 1]
+[branch lblConf02]
+
+[label lblClear02d]
+[scene 106000]
+[sceneSet W 106000 1]
+
+[label lblConf02]
+[charaSet A 23011001 1 両儀式]
+[charaSet B 23011001 1 両儀式_演出用]
+[charaDepth A 5]
+[charaDepth B 11]
+[sceneSet O 163200 1]
+[sceneSet X 258200 1]
+[sceneSet Y 217201 1]
+[sceneSet Z 258200 1]
+[charaDepth O 1]
+[charaDepth X 4]
+[charaDepth Y 7]
+[charaDepth Z 10]
+[charaDepth W 4]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_147 0.1]
+[wt 0.5]
+
+[se ad13]
+[wt 0.7]
+
+[subCameraOn 1]
+[charaLayer A sub #A]
+[charaLayer W sub #A]
+[subCameraFilter #A maskEdge cut359_mask12 5 84,83,79,255 0]
+[charaScale A 1.1]
+[charaScale W 1.2]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0 -480,310]
+[charaFadein W 0 -150,-20]
+[charaMoveEase A -530,260 0.4 easeOutQuad]
+[charaMoveEase X -200,-70 0.4 easeOutQuad]
+[subRenderFadeinFSSideL #A 0.4 120,-200]
+[wt 0.4]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V560]
+こんにちは。本日はお日柄もよく。[r]ご機嫌いかが、マスター。[wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V570]
+今日時間はある？[r]良かった。先約はなさそう。[wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V580]
+では正式に、改めて。[r]バレンタインのお誘い、いいかしら？[wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V590]
+因習村を覚えていて？[r]あの愉快な村で落ち合いましょう。[wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V600]
+大丈夫。何も恐い事はありません。[r]夏の思い出を振り返るにはちょうどいい場所でしょう？[wait tVoice]
+[k]
+
+[messageOff]
+[charaMoveEase A -580,210 0.4 easeOutSine]
+[charaMoveEase W -250,-120 0.4 easeOutSine]
+[subRenderFadeout #A 0.4]
+[wt 0.3]
+
+[se ad562]
+[wt 1.2]
+
+？1：これはやはり……
+？2：お茶会のお誘い、というヤツ[&か:だ]！
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_147 1.0]
+[wait fade]
+[scene 10000]
+[wt 0.2]
+[fadein black 0.2]
+[wait fade]
+
+[se ad12]
+[effect bit_talk_07_fs]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_07_fs]
+[charaFadeout A 0.1]
+[charaFadeout W 0.1]
+[charaLayer A normal]
+[charaLayer W normal]
+[subCameraOff]
+
+[scene 258200]
+[charaFilter W normal 00000080]
+[wt 1.3]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.4]
+[bgm BGM_KAGEKIYO_1 0.1]
+[wt 1.0]
+
+？1：でも素直に喜べない……この村……
+
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[se ad452]
+[seStop ad452 0.6]
+[wt 0.6]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V610]
+そこはそれ、夏の風物詩、という事で。[r]怪談、お好きでしょう？[wait tVoice]
+[k]
+
+[charaCrossFade A 1098336500 3 0.2]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V620]
+あ、今は夏じゃなくて冬、というのは言わない約束で。[r]風流、風流。[wait charaCrossFade A][wait tVoice]
+[k]
+
+[charaCrossFade A 23011001 12 0.2]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V630]
+この因習村、前から少しイベント内容が変わったの。[r]夜になると花火を上げてくれるのですって。[wait charaCrossFade A][wait tVoice]
+[k]
+
+[charaCrossFade A 1098336500 3 0.2]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V640]
+今の私にピッタリでしょう？[r]マスターと花火が見たかったの。[wait charaCrossFade A][wait tVoice]
+[k]
+
+？1：そういう事ならよろこんで！
+
+[charaFace A 0]
+
+？2：最後に燃えたりは……しませんよね？
+
+[charaCrossFade A 23011001 8 0.2]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V650]
+んー、どうかしら。[r]確かに可能性はあるかも。[wait charaCrossFade A][wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V660]
+最後にお屋敷が炎上して生死不明、も[r]因習村の定番ですものね？[wait tVoice]
+[k]
+
+[charaCrossFade A 1098336500 0 0.2]
+
+？！
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V670]
+とはいえ日が落ちるまでまだ間があるわ。[r]村の散歩がてらにお話をしましょう。[wait charaCrossFade A][wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V680]
+お題は……そうね。[r]あなたの因習村体験談、でどうかしら？[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.7]
+[fadeout black 1.0]
+[bgm BGM_KAGEKIYO_1 1.0 0.2]
+[wait fade]
+
+[overlayFadein U 0.1 0,620]
+[overlayFadein V 0.1 0,-620]
+[charaScale X 1.4]
+[charaFadein X 0.1 -200,-120]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[cueSe SE_26 26_ade1317 1.0 0.4]
+[charaMove X -100,-120 30.0]
+[fadein black 1.0]
+[bgm BGM_KAGEKIYO_1 1.0 0.5]
+[wait fade]
+[wt 2.0]
+
+？1：それは不死殺しの仮面と徐福伝説のリミックス
+？2：おまけに人魚伝説とドリームランズと書かない作家
+
+？！
+
+？1：……という事があったんです
+
+？！
+
+[cueSeStop 26_ade1317 1.0]
+[bgm BGM_KAGEKIYO_1 1.0 1.0]
+[charaFadeout X 0.6]
+[charaFadeout U 0.6]
+[charaFadeout V 0.6]
+[wt 1.0]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V690]
+湖の北と南で起きた叙述トリック[#殺戮:さつりく]劇……！[r]なんて面白そう！[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V700]
+あ。いえ、今の感想は不謹慎ですね……。[r]虞美人さんはお気の毒でした。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V710]
+でも事件は無事解決して、[r]しばらく後に徐福さんもカルデアにやって来た。[wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V720]
+終わり良ければ全て良し、のお手本のようなお話ね。[r]私も見習いたいわ。[wait tVoice]
+[k]
+
+？1：つまり、両儀さんも体験した事がある？
+
+？！
+
+[charaCrossFade A 23011001 4 0.2]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V730]
+あいにく、そういう話には縁がなくて。[r]平凡な人生で情けないわ。[wait charaCrossFade A][wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V740]
+前に山奥の温泉宿でそれらしい事件が[r]あったようだけど、私は[#蚊帳:か　や]の[#外:そと]だったし。[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V750]
+ああ、でも知り合いの体験談なら一つ。[wait tVoice]
+[k]
+
+[messageOff]
+[subCameraOn 2]
+[charaLayer O sub #A]
+[charaLayer B sub #B]
+[charaLayer Z sub #B]
+[subCameraFilter #A gray]
+[subCameraFilter #B maskEdge cut359_mask20 15 0,0,0,255 1]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[charaScale O 1.2]
+[charaFadein O 0 30,-200]
+[charaScale B 1.3]
+[charaScale Z 1.3]
+[charaFace B 7]
+[charaFadein B 0 0,200]
+[charaFadein Z 0 0,-120]
+[subRenderFadein #A 0.6 0,0]
+[charaMove O -30,-200 30.0]
+[wt 0.6]
+[charaScale A 1.2]
+[charaScale X 1.2]
+[charaFace A 0]
+[charaFadein A 0 1]
+[charaFadein X 0 0,-270]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V760]
+人里離れた高原にお屋敷を建てた高名な画家がいてね。[r]その人が亡くなった後、不思議な事件が起こったの。[wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V770]
+画家は資産家だったけれど結婚はしていなかった。[r]養子をひとりもらってはいたけれど。[wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V780]
+お葬式には画家の親族と[r]生前付き合いのあった人たちが集まって、[wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V790]
+遺言状の解釈で揉めに揉めたそうよ。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 7]
+[subRenderFadein #B 0.4 -300,-200]
+[wt 0.4]
+
+＠B：両儀式
+[tVoice ValVoice_2301100 0_V800]
+『この屋敷に『見たら死ぬ絵』が隠されている。[r]　発見したものに遺産の半分を譲るものとする』[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk A,B]
+[charaFace A 0]
+[subRenderFadeout #A 0.6]
+[subRenderFadeout #B 0.6]
+[wt 0.7]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V810]
+凄いでしょう。見たら死ぬ絵。[r]それが本当ならこれほど無意味な話もないわ。[wait tVoice]
+[k]
+
+？1：どうしてですか？
+
+？！
+
+[charaFace A 4]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V820]
+だって[#見たら]死んでしまうのよ？[r]死んでしまったらそもそも遺産は受け取れない。[wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V830]
+逆に、その絵を見つけても[#死なない]のなら、[r]それは条件に合っていないから遺言は無効。[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V840]
+集まった人たちはその矛盾にすぐに気づいて、[r]やれやれ、画家も困った方だ、と笑いあった。[wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V850]
+翌朝、参加者のひとりが屋敷の倉庫で遺体で[r]発見されるまではね。[wait tVoice]
+[k]
+
+？1：殺人事件ですか！？
+？2：『見たら死ぬ絵』が実在したから……？
+
+？！
+
+[charaFace A 12]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V860]
+どうかしらね。[r]実は私も詳しくは教えてもらっていないの。[wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V870]
+集まった人たちの中には[r]屋敷の建築に携わった建築家もいたんだけど、[wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V880]
+その他にも東京から来ていた探偵もいて、[r]探偵と建築家は画家のひとり[#養子:むすめ]に依頼されて[wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V890]
+事件の真相を暴くことになったそうよ。[r]いつかちゃんと話せる日がきたら、続きはその時に。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.7]
+[fadeout black 1.0]
+[bgmStop BGM_KAGEKIYO_1 1.0]
+[wait fade]
+
+[charaFadeout O 0.1]
+[charaFadeout B 0.1]
+[charaFadeout Z 0.1]
+[charaFadeout A 0.1]
+[charaFadeout X 0.1]
+[charaLayer O normal]
+[charaLayer B normal]
+[charaLayer Z normal]
+[subCameraOff]
+[charaScale A 1.0]
+[charaCrossFade A 1098350500 0 0.2]
+[wait charaCrossFade A]
+[wt 0.3]
+[charaFadeout A 0.1]
+[scene 258400]
+
+[sceneSet X 258400 1]
+[charaDepth X 4]
+[subCameraOn 1]
+[charaLayer X sub #A]
+[charaLayer A sub #A]
+[charaLayer S sub #A]
+[charaLayer T sub #A]
+[subCameraFilter #A normal]
+[charaScale X 1.0]
+[charaFadein X 0 0,-200]
+[subRenderFadein #A 0.1 0,0]
+[charaScale Y 1.0]
+[charaFadein Y 0.1 0,-200]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MIZUGI_2020_1 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V900]
+おつかれさま。[r]あとはここで花火を待ちましょうか。[wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V910]
+もし気に入ったら、次は別の人と来るといいわ。[r]花火は頼めば打ち上げてくれるそうだから。[wait tVoice]
+[k]
+
+？1：別の人……というと……
+？2：もしかして……今回のお誘いというのは……
+
+？！
+
+[charaFace A 3]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V920]
+そう。本命の前の予行演習。[wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V930]
+私にできる手伝いといったら[r]これくらいしか思いつかなくて。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V940]
+[%1]さん、いい人はいるんでしょう？[wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V950]
+夏の海もショッピングもいいけど、[r]こういう静かなデートも乙なものよ。参考にしてね。[wait tVoice]
+[k]
+
+？1：いい人……というと……
+
+[charaFace A 3]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V960]
+ふふ。思わず脳裏に浮かんだ、という顔ね。[r]末長くお幸せに。[wait tVoice]
+[k]
+
+？2：両儀さんにはいるんですか？
+
+[messageOff]
+[charaFaceFade A 5 0.1]
+[wt 1.5]
+[charaFaceFade A 0 0.2]
+[wt 0.2]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V970]
+もちろん。[r]見たい？　うちの旦那様。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.3]
+[wt 0.5]
+[cueSe SE_24 24_ade981]
+[charaFadein T 0.4 0,-200]
+[charaFadeTime S 0.4 0.5]
+[wt 3.0]
+[charaFadeout T 0.4]
+[charaFadeout S 0.4]
+[wt 0.6]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V980]
+ふふ、馬子にも衣装、かしらね。[r]結婚式のものだからちょっと若く見えて、困っちゃう。[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[charaScale P 1.1]
+[charaScale Q 1.1]
+[charaPut P 1]
+[charaPut Q 1]
+[seContinue ade194 0 0.5 1]
+[wt 0.5]
+[seContinue ade194 0 0.5 2]
+[wt 0.5]
+[seContinueStop ade194 1.0 1]
+[wt 0.5]
+[seContinueStop ade194 1.0 2]
+[subRenderFadeout #A 0.6 0,0]
+[wt 0.3]
+[charaEffect P bit_talk_fireworks -200,50]
+[seContinue ade194 0 1.0 3]
+[wt 0.6]
+[charaEffect Q bit_talk_fireworks02 200,0]
+[seContinue ade194 0 1.0 4]
+[wt 1.6]
+
+[charaCrossFade A 1098350400 3 0.2]
+[wait charaCrossFade A]
+[wt 1.4]
+[subRenderFadein #A 0.6 0,0]
+[wt 0.6]
+[charaFadeout Y 0.1]
+[wt 0.4]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V990]
+花火が上がりだしたみたい。[r]縁側に行きましょうか。[wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V1000]
+花火は一瞬、夏も一瞬。[r]でも人の縁はそれなりに。[wait tVoice]
+[k]
+
+＠両儀式
+[tVoice ValVoice_2301100 0_V1010]
+大切に扱えば扱うほど薄れないものだから。[wait tVoice]
+[k]
+
+＠両儀式
+[tVoiceUser ValVoice_2301100 0_V1020 ValVoice_2301100 0_V1030]
+今日みたいな出来事をたくさん積み重ねて、[r][&たくましい:たのもしい]大人になってね。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_MIZUGI_2020_1 2.0]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout X 0.1]
+[charaFadeout A 0.1]
+[charaLayer X normal]
+[charaLayer A normal]
+[subCameraOff]
+[scene 10000]
+[wt 0.2]
+
+[fadein black 0.2]
+[wait fade]
+[wt 0.5]
+
+[charaTalk R]
+[charaFadein R 0.4 0,-70]
+[charaFadeTime S 0.4 0.5]
+[se bas2]
+[wt 3.0]
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+
+[label lblRoute00end]
+[soundStopAll]
+[end]

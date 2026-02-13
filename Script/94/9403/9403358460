@@ -1,0 +1,2775 @@
+
+
+＄94-03-35-84-6-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[scene 263700]
+
+[se ad60 0 0]
+[seVolume ad60 1.3 0.7]
+[cameraMove 2.4 0,0 1.02]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+[seStop ad60 0.4]
+[wt 1.5]
+
+
+？1：この感じ……、白い方の近藤さん？
+[flag _SEL 1]
+
+？2：この匂い……、キセルの方の近藤さん？
+[flag _SEL 2]
+
+？3：この雰囲気……、黒の剣士の近藤さん？
+[flag _SEL 3]
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.0]
+[wt 0.1]
+
+[branch lblRootB _SEL 2]
+[branch lblRootC _SEL 3]
+
+[label lblRootA]
+
+[charaSet A 1098336933 1 近藤勇]
+[charaSet B 1098350600 1 近藤勇]
+[charaSet C 1098336933 1 近藤勇_演出用]
+
+[equipSet D 9809780 1 バレンタイン礼装]
+[charaSet E 98115000 1 エフェクト用1]
+
+[sceneSet L 262900 1]
+[sceneSet M 262900 1]
+[sceneSet N 106800 1]
+[sceneSet O 263700 1]
+[sceneSet P 263700 1]
+
+[imageSet S black_fade_re 1]
+[imageSet T black_fade_re 1]
+[charaScale S 2.0]
+[charaScale T 2.0]
+
+[imageSet X back10000 1 1]
+[charaScale X 1.05]
+[imageSet Y back10000 1 1]
+[charaScale Y 1.05]
+
+[sceneSet Z 10000 1]
+[charaScale Z 1.1]
+
+[charaTalk depthOff]
+[charaDepth L 4]
+[charaDepth A 5]
+[charaDepth B 6]
+[charaDepth M 7]
+[charaDepth O 7]
+[charaDepth C 8]
+[charaDepth N 11]
+[charaDepth P 11]
+[charaDepth Z 19]
+[charaDepth D 20]
+[charaDepth E 25]
+[charaDepth X 26]
+[charaDepth Y 26]
+[charaDepth S 26]
+[charaDepth T 26]
+
+[scene 262900]
+[charaScale M 1.2]
+[charaFadein M 0.1 15,-200]
+[cameraMove 0.1 0,0 1.01]
+[wt 1.0]
+
+[charaMove M -15,-200 5.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_50 0.1]
+
+[wt 0.5]
+[se ad171 0.5]
+[wt 1.0]
+[se ad171 0.5]
+[wt 1.5]
+[charaFadeout M 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V010]
+せい！　やあ！[wait tVoice]
+[k]
+
+[charaFace A 12]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V020]
+…………。[cueSe Servants_106400 m68586 0 0.1][charaBackEffect A bit_talk_charge_aura_03][wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V030]
+[line 3][messageShake 0.04 5 5 0.2]はあっ！[wait tVoice]
+[k]
+
+[messageOff]
+[cueSe Servants_106400 m68542]
+[wt 0.7]
+
+[charaMoveScaleEase A 1.6 0.3 easeOutCubic]
+[charaMoveEase A 0,80 0.3 easeOutCubic]
+[charaFadeout A 0.3]
+
+[se ad473]
+[effect bit_talk_gram_slash_04_fs]
+[wt 0.2]
+[shake 0.03 3 3 0.4]
+[fadeout white 0.3]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.0]
+[charaBackEffectDestroy A bit_talk_charge_aura_03]
+[effectDestroy bit_talk_gram_slash_04_fs]
+[charaFadeout A 0.1]
+[charaScale A 1.0]
+[wt 0.5]
+[fadein white 1.0]
+[wait fade]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V040]
+……ふう。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V050]
+ん……？[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V060]
+おや、誰かと思えばマスターではありませんか。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V070]
+稽古に夢中で気づかず、失礼いたしました。[wait tVoice]
+[k]
+
+？1：チョコレートです！
+
+？2：頑張ってる近藤さんにこれを
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 4.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+[effectDestroy]
+
+[charaFace A 16]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V080]
+これは……、西洋の菓子ですな。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V090]
+ありがたく頂戴いたし……、[twt 4.0][charaFace A 0]失礼ですがマスター、[r]もしやこれはバレンタインデーとやらの？[wait tVoice]
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.0]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.0]
+[wt 0.9]
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V100]
+やはりそうでしたか。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V110]
+先日、歳に聞いていたのを思い出しました。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V120]
+現代の男子の間では、バレンタインの[r]チョコレートをより多く貰う方が誉れだとかなんとか。[wait tVoice]
+[k]
+
+？1：そうです、バレンタインのチョコレートです
+
+[charaFace A 2]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V130]
+これはかたじけない。マスターのおかげで[r]どうやら私も誉れを得ることが出来そうです。[wait tVoice]
+[k]
+
+？2：土方さんそんな話をしてるんですね
+
+[charaFace A 5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V140]
+まあ、俺が貰う数には及ばんだろうがな、[r]などと軽口をたたいておりました。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V150]
+まったく、歳の悪い癖だ。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V160]
+とにかく、改めてお礼を言わせていただきます。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V170]
+ありがとうございます、マスター。[r]大切に頂きます。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V180]
+そうだ、お返しと言っては何ですが、[r]天然理心流を一手、お教えいたしましょう。[wait tVoice]
+[k]
+
+？1：お願いします！
+
+[charaFace A 18]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V190]
+うむ、よい返事です。[wait tVoice]
+[k]
+
+？2：今ですか？
+
+[charaFace A 18]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V200]
+さあさあ、遠慮なさらずに。[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[cueSe Servants_106400 m68585 0 0.6]
+[cueSeStop m68585 0.6]
+[charaMoveScale A 1.05 0.4]
+[charaMove A 0,5 0.4]
+[wt 0.4]
+[cueSe Servants_106400 m68538]
+[charaMoveReturn A 0,0 0.6]
+[wt 0.6]
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V210]
+木刀はこちらをお使いください。[r]少々重いかもしれませんが、大丈夫すぐ慣れます。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V220]
+まずは正中に刀を構えて、そう、目線は相手に。[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V230]
+それでは、ゆきますよ。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk A,C]
+[subCameraOn 2]
+[charaLayer C sub #A]
+[charaLayer M sub #A]
+[charaLayer E sub #A]
+[charaLayer S sub #B]
+[charaLayer T sub #B]
+[subCameraFilter #A normal]
+[subCameraFilter #B through]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[charaScale C 1.2]
+[charaScale M 1.2]
+[charaFace C 3]
+[charaFadein C 0 0,20]
+[charaFadein M 0 0,-275]
+[charaFadein S 0 950,-300]
+[charaFadein T 0 -950,-300]
+[subRenderFadein #A 0.8 0,0]
+[subRenderFadein #B 0.8 0,0]
+[wt 1.4]
+[charaFaceFade C 12 0.4]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V240]
+…………。[wait tVoice]
+[k]
+
+[messageOff]
+[subCameraMoveEase #A 0,-50 0.4 easeOutCubic 1.2]
+[wt 0.4]
+[charaPut E 0,150]
+[charaEffect E bit_talk_41_remake]
+[charaFace C 7]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V250]
+…[messageShake 0.04 5 5 0.2]…いざ！[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_50 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout Z 0.1]
+[charaFadeout C 0.1]
+[charaFadeout M 0.1]
+[charaEffectDestroy E bit_talk_41_remake]
+[subCameraMoveEase #A 0,0 0.1 easeOutQuad 1.0]
+[charaFadeout S 0.1]
+[charaFadeout T 0.1]
+[wt 1.0]
+[charaLayer C normal]
+[charaLayer M normal]
+[charaLayer E normal]
+[charaLayer S normal]
+[charaLayer T normal]
+[subCameraOff]
+
+[charaScale P 1.2]
+[charaFadein P 0.1 60,-200]
+
+[scene 263700]
+[wt 1.0]
+
+[charaMove P 100,-200 5.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.5]
+[charaFadeout P 1.0]
+[wt 1.7]
+
+[bgm BGM_TOU_1 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V260]
+ふう……、久々にいい汗を流せました。[wait tVoice]
+[k]
+
+？1：ありがとうございました
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V270]
+いえ、こちらこそ。マスターの筋が良いので、[r]つい私も熱が入ってしまいました。[wait tVoice]
+[k]
+
+？2：し、死ぬかと思った……
+
+[charaFace A 2]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V280]
+ははは、総司に比べれば私の稽古は[r]まだ優しい方ですよ。[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[charaScale N 1.3]
+[charaFadein N 0.8 190,-250]
+[charaMove N -190,-250 120.0]
+[wt 2.0]
+[charaTalk off]
+[subCameraOn 1]
+[subCameraFilter #A maskEdge cut359_mask05 4 255,255,255,255]
+[subRenderScale #A 1.1]
+[charaLayer C sub #A]
+[charaLayer O sub #A]
+[charaScale C 1.1]
+[charaScale O 1.0]
+[charaFace C 1]
+[charaFadein C 0 0,160]
+[charaFadein O 0 0,0]
+[subRenderFadeinFSL #A 0.6 -250,-220]
+[wt 0.6]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V290]
+昔、多摩にいた頃は、毎日、こうして剣を[r]振るっているだけで良かった。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V300]
+それだけで毎日が穏やかに過ぎて行く。[wait tVoice]
+[k]
+
+[charaFace C 5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V310]
+ですが、やがてそれも終わりを告げる。[wait tVoice]
+[k]
+
+[charaFace C 13]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V320]
+この国に幕末という動乱の時代がやって来ました。[wait tVoice]
+[k]
+
+[charaFace C 12]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V330]
+…………。[wait tVoice]
+[k]
+
+[charaFace C 0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V340]
+そうして、私は多摩を出て京へと上った。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V350]
+…………。[wait tVoice]
+[k]
+
+[charaFace C 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V360]
+どうして多摩を出たのか……、ですか？[wait tVoice]
+[k]
+
+[charaFace C 5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V370]
+あの時は私は世のため人のため何か正しい事、[r]誠という名の何かを成したかった……。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V380]
+いえ……、何かではない。[wait tVoice]
+[k]
+
+[charaFace C 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V390]
+初めはもっと、簡単な話だったのです。[wait tVoice]
+[k]
+
+？1：それは……？
+
+？2：もっと簡単な？
+
+？！
+
+[messageOff]
+[charaTalk on]
+[charaTalk C,A]
+[charaFace A 18]
+[charaFadeout N 0.6]
+[subRenderFadeout #A 0.6]
+[wt 0.6]
+[charaFadeout C 0]
+[charaFadeout O 0]
+[charaLayer C normal]
+[charaLayer O normal]
+[subCameraOff]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V400]
+そう、つまりはこういう事です。[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V410]
+……ふっ！[wait tVoice]
+[k]
+
+[messageOff]
+[se adm27]
+[charaCrossFade A 1098350600 0 0.4]
+[wait charaCrossFade A]
+[wt 1.0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V420]
+…………。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V430]
+いふぁふぁですか？[wait tVoice]
+[k]
+
+？1：ぷ……、あははははは！
+
+[charaFace A 2]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V440]
+ふぁふぁふぁふぁふぁ！[wait tVoice]
+[k]
+
+？2：ホントに口に手が入って……！
+
+[charaFace A 3]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V450]
+ふぇえ、ごあんととふぉりです。[wait tVoice]
+[k]
+
+？！
+
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V460]
+よっ、[charaCrossFade A 1098336933 1 0.4]と……。[wait tVoice][wait charaCrossFade A]
+[k]
+
+[charaFace A 2]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V470]
+これを見せると皆、笑ってくれたもので。[wait tVoice]
+[k]
+
+[charaFace A 18]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V480]
+はい、生来、人を笑わせるのが……、[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V490]
+人の笑い顔を見るのが好きなのです、私は。[wait tVoice]
+[k]
+
+[bgmStop BGM_TOU_1 1.2]
+
+[messageOff]
+[wt 0.5]
+[charaTalk A,C]
+[charaScale C 1.2]
+[charaScale O 1.2]
+[charaFace C 18]
+[charaFadein C 0.7 -50,0]
+[charaFadein O 0.7 -50,-297]
+[charaMove C 50,0 100.0]
+[charaMove O 50,-297 100.0]
+[wt 1.2]
+
+[bgm BGM_GUDAGUDA_2025_1 0.1]
+
+[charaFaceFade C 0 0.2]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V500]
+あの頃はこの先の世がどうなるのか、[r]この国はどうなってしまうのか。[wait tVoice]
+[k]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V510]
+皆、それぞれに怯え、憂い、何かを成さねばと、[r]掻き立てられるように駆けだした。[wait tVoice]
+[k]
+
+[charaFace C 12]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V520]
+私はそんな周りの人たちが笑い合えるような[r]世の中をと、剣を振るった……。[wait tVoice]
+[k]
+
+[charaFace C 13]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V530]
+ですが、振るえば振るうほどに、[r]皆、笑わなくなっていきました。[wait tVoice]
+[k]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V540]
+…………。[wait tVoice]
+[k]
+
+[charaFace C 4]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V550]
+そうして誰も、笑わなくなりました。[wait tVoice]
+[k]
+
+[charaFace C 12]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V560]
+…………。[wait tVoice]
+[k]
+
+[charaFace C 1]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V570]
+ですから、今、こうしてマスターの周りで[r]笑っている仲間たちを見ていると、本当に嬉しいのです。[wait tVoice]
+[k]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V580]
+だからこそ、マスターにも笑っていて欲しい。[wait tVoice]
+[k]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V590]
+そのために剣を振るうことが私にとっての[r]誠なのですから。[wait tVoice]
+[k]
+
+[charaFace A 5]
+[charaFace C 5]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V600]
+今の私には、ただ、それだけです。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk A,C]
+[charaFadeout C 0.6]
+[charaFadeout O 0.6]
+[wt 1.2]
+[charaMove O 0,-297 0.1]
+
+？1：お互い笑い合えるようにですね
+
+[charaFace A 17]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V610]
+……っ！[wait tVoice]
+[k]
+
+[charaFaceFade A 16 0.1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V620]
+お互いに……、[twt 2.0][charaFaceFade A 18 0.2]ええ、その通りです。[wait tVoice]
+[k]
+
+？2：楽しい方がいいですよね
+
+[charaFace A 17]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V630]
+ふ……、[twt 1.5][charaFaceFade A 18 0.2]その気の持ちよう、[r]やはりマスターの器は底が知れません。[wait tVoice]
+[k]
+
+？！
+
+[bgmStop BGM_GUDAGUDA_2025_1 2.0]
+
+[messageOff]
+[charaFadein O 0.8 25,-297]
+[charaMove O -25,-297 5.0]
+[se ad951 1.0 1.0]
+[wt 2.0]
+[seStop ad951 2.5]
+[wt 1.5]
+
+[charaFadeout O 0.8]
+[wt 1.2]
+
+[bgm BGM_EVENT_159 0.1]
+
+[charaFace A 16]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V640]
+おっと、失礼しました。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V650]
+マスターと話すのが楽しくて、[r]つい長話を……。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V660]
+まだまだ肌寒い日和です、体を冷やしてはいけません。[r]そろそろ引き上げますか。[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V670]
+あ、お待ちください。こちらを。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad79]
+[wt 0.1]
+[fowardEffect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFadein D 0.5 0,-70]
+[wt 3.0]
+
+[charaFadeout D 0.4]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.5]
+[charaTalk A]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V680]
+チョコレートのお返しが稽古だけと[r]いうのもなんですので、[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V690]
+この毛皮を私から贈らせていただきます。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V700]
+多摩を出るときに、故郷の者が良い毛並みのものを[r]いくつか見繕って持たせてくれた肩掛けです。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V710]
+いまどき毛皮の肩掛けなど、[r]マスターには少々田舎臭いやもしれませんが、[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V720]
+肩にかけるととても暖かいですよ。[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V730]
+それにほら、私とお揃いですので。[wait tVoice]
+[k]
+
+？1：嬉しいです
+
+[charaFace A 2]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V740]
+ははははは、そう言っていただければ幸いです。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V750]
+では、参りましょう、我が主よ。[wait tVoice]
+[k]
+
+？2：お揃いのふわもこ！
+
+[charaFace A 2]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V760]
+はははは、では揃いの支度で戻るとしますか。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V770]
+ええ、参りましょう、我が主よ。[wait tVoice]
+[k]
+
+？！
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V780]
+[line 3]人と人が笑い合える世へと。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.7]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_159 2.0]
+[wait fade]
+
+[branch select01]
+
+[label lblRootB]
+
+[charaSet A 1064001 1 近藤勇]
+[charaSet C 1064001 1 近藤勇_演出用]
+
+[equipSet D 9809780 1 バレンタイン礼装]
+[charaSet E 98115000 1 エフェクト用1]
+
+[sceneSet L 262900 1]
+[sceneSet M 262900 1]
+[sceneSet N 263700 1]
+
+[imageSet S black_fade_re 1]
+[imageSet T black_fade_re 1]
+[charaScale S 2.0]
+[charaScale T 2.0]
+
+[imageSet X back10000 1 1]
+[charaScale X 1.05]
+[imageSet Y back10000 1 1]
+[charaScale Y 1.05]
+
+[sceneSet Z 10000 1]
+[charaScale Z 1.1]
+
+[charaTalk depthOff]
+[charaDepth L 4]
+[charaDepth A 5]
+[charaDepth M 7]
+[charaDepth N 7]
+[charaDepth C 8]
+[charaDepth Z 19]
+[charaDepth D 20]
+[charaDepth E 25]
+[charaDepth X 26]
+[charaDepth Y 26]
+[charaDepth S 26]
+[charaDepth T 26]
+
+[scene 262900]
+
+[subCameraOn 1]
+[charaLayer C sub #A]
+[charaLayer M sub #A]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.2]
+[charaScale C 1.0]
+[charaScale M 1.0]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-40]
+[charaFadein M 0.1 0,-200]
+[subRenderFadein #A 0.1 -20,0]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[subRenderMove #A 0,0 3.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_50 0.1]
+
+[wt 0.6]
+
+[charaMoveReturn C 0,-45 0.6]
+[wt 0.7]
+[charaMoveReturn C 0,-45 0.6]
+[wt 1.2]
+
+[cueSe Servants_106400 m68579 0 0.5]
+[wt 1.2]
+
+[charaFace C 1]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V790]
+ふう……、これで良し。[wait tVoice]
+[k]
+
+[charaFace C 0]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V800]
+ん……？[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk C,A]
+[subRenderFadeout 0.6]
+[wt 0.6]
+[charaFadeout C 0]
+[charaFadeout M 0]
+[wt 0.6]
+[charaLayer C normal]
+[charaLayer M normal]
+[subCameraOff]
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V810]
+おや、誰かと思えばマスターではありませんか。[wait tVoice]
+[k]
+
+？1：なにをしてるんです？
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V820]
+ああ、刀の手入れをしておりました。[wait tVoice]
+[k]
+
+？2：刀の手入れ？
+
+[charaFace A 5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V830]
+はい、常日頃から手入れをしておかねば、[r]いざという時に困りますからな。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V840]
+刀は武士の魂と申しますが、[r]私にとっては何にも代えがたい大切な刀。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V850]
+この刀のおかげであの池田屋でも傷一つ負わずに、[r]戦い抜くことが出来た。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V860]
+それがこの虎徹という刀なのです。[wait tVoice]
+[k]
+
+[charaFace A 12]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V870]
+この時代には[#贋作:がんさく]などという話も伝わっている[r]ようですが、私にとっては[#真贋:しんがん]など、どうでもよい事。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V880]
+私が虎徹と信じ、そして虎徹は最後まで[r]そんな私に付き合ってくれた。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V890]
+それが全てなのですから。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V900]
+…………。[wait tVoice]
+[k]
+
+[messageOff]
+[charaScale C 1.2]
+[charaScale M 1.2]
+[charaTalk A,C]
+[charaFace C 0]
+[charaFadein C 0.6 1]
+[charaFadein M 0.6 0,-297]
+[wt 1.0]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V910]
+マスターもどうか自分の信じたものを大切にしてください。[wait tVoice]
+[k]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V920]
+さすれば、きっとそれは応えてくれるでしょう。[wait tVoice]
+[k]
+
+？1：近藤さんを信じてます
+
+[charaFace C 2]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V930]
+む……、自分で言っておいてなんですが、[r]そうまじまじと言われると、なかなかに[#面映:おもは]ゆいものですな。[wait tVoice]
+[k]
+
+[charaFace A 5]
+[charaFace C 5]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V940]
+虎徹もこんな心持ちだったのかもしれませんね。[wait tVoice]
+[k]
+
+？2：みんなを信じてます
+
+[charaFace C 1]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V950]
+はい、その在り方を忘れなければ、[r]きっと皆も力となってくれることでしょう。[wait tVoice]
+[k]
+
+[charaFace A 5]
+[charaFace C 5]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V960]
+この虎徹のように。[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[charaTalk A,C]
+[charaFadeout C 0.6]
+[charaFadeout M 0.6]
+[wt 0.8]
+
+[charaFace A 4]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V970]
+おっと……、刀の事になるとつい話し込んでしまい[r]申し訳ありません。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V980]
+私の悪い癖ですな。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_50 2.0]
+
+[charaFace A 0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V990]
+ところでマスター、なにか御用があったのでは？[wait tVoice]
+[k]
+
+？1：そうだ、チョコレートをどうぞ！
+
+？2：お茶菓子代わりにでも食べてください
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 4.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+[effectDestroy]
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1000]
+これは……、西洋のチョコレートというやつですな。[wait tVoice]
+[k]
+
+[charaFace A 18]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1010]
+実は甘いものには目がありませんので、[r]ありがたく頂戴いたします。[wait tVoice]
+[k]
+
+[charaFaceFade A 17 0.1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1020]
+いや……、確か今日はバレンタインデーだなんだと[r]総司が言っていたような……。[wait tVoice]
+[k]
+
+[charaFace A 16]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1030]
+つまり……！[wait tVoice]
+[k]
+
+[charaFaceFade A 5 0.1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1040]
+これはこれは、私のような者にまで気を遣っていただき[r]お心遣いかたじけなく。[wait tVoice]
+[k]
+
+？1：本命チョコですから！
+
+[charaFaceFade A 15 0.1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1050]
+なっ！　わ、私にですか？[wait tVoice]
+[k]
+
+[charaFaceFade A 6 0.1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1060]
+そ、それはまたなんと申しますか……。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+？2：いつもお世話になってますし
+
+[charaFace A 2]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1070]
+ははは、世話になっているのはこちらの方です。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+？！
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1080]
+ともかく、思いのこもった贈り物、[r]厚く御礼申し上げます、マスター。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1090]
+このチョコレート、[#徒:あだ]や疎かには致しません。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1100]
+そうだ、少々お待ちを。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1110]
+お返しと言っては何ですが、[r]私からも贈り物をさせていただきましょう。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1120]
+大したものではありませんが、[r]まだ肌寒さも残るこの季節にはちょうど良いでしょう。[wait tVoice]
+[k]
+
+[messageOff]
+[se ade247]
+[seStop ade247 2.0]
+[charaFadeout A 0.4]
+[wt 1.5]
+
+[bgm BGM_EVENT_25 1.0 0.5]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+[wt 1.5]
+[wipein rollLeft 1.0 1.0]
+[bgm BGM_EVENT_25 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[se ade247]
+[wt 0.6]
+[seStop ade247 0.4]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1130]
+お待たせいたしました。さあ、こちらを。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad79]
+[wt 0.1]
+[fowardEffect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFadein D 0.5 0,-70]
+[wt 3.0]
+
+[charaFadeout D 0.4]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1140]
+多摩を出るときに、故郷の者が持たせてくれた毛皮です。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1150]
+肩にかけるととても暖かいですよ。[wait tVoice]
+[k]
+
+？1：ありがとうございます！
+
+[charaFace A 5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1160]
+いえ……、それほど喜んでいただけるとは。[wait tVoice]
+[k]
+
+[charaFace A 18]
+
+？2：かっこいいですよね、これ
+
+[charaFaceFade A 17 0.1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1170]
+かっこいい……、ですか？[wait tVoice]
+[k]
+
+[charaFaceFade A 18 0.1]
+
+？！
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1180]
+ふふ……、これを羽織っていると芹沢さんに[r]田舎侍は獣臭くてかなわんと、よくからかわれたものです。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1190]
+言われるまでもなく、御覧の通りの田舎侍。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1200]
+うまい事を言うものだと私も笑っていたのですが、[r]歳が恐ろしい剣幕で食って掛かりましてな。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1210]
+危うく斬り合いになるところでした。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1220]
+はい、京に上り浪士組を始めた頃の話です。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1230]
+あの頃は皆で笑い、語り、実に楽しかった。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1240]
+…………。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1250]
+確か、以前に聞いたかと思うのですが、[r]マスターは芹沢さんと面識がおありとの事。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1260]
+良ければお話をお聞かせ願えませんか？[wait tVoice]
+[k]
+
+？1：どこから話そうかな、邪馬台国……？
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1270]
+その邪馬台国とやらの話、せっかくですし今日は[r]じっくり聞かせていただきましょう。[wait tVoice]
+[k]
+
+？2：伊東さんの話もします？
+
+[charaFaceFade A 17 0.1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1280]
+なんと、伊東さんとも面識が……。[wait tVoice]
+[k]
+
+[charaFaceFade A 1 0.1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1290]
+マスターと私たちの縁には、[r]やはり運命的なものを感じますな。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1300]
+それでは、マスターが歩んでこられた、[r]これまでのお話、お聞かせください。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_25 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaScale N 1.1]
+[charaFadein N 0 15,-150]
+[overlayFadein X 0 0,757]
+[overlayFadein Y 0 0,-757]
+[wt 2.0]
+
+[charaMove N -15,-150 5.0]
+[cueSe SE_24 24_ad1359 1.0 0.2]
+[fadein black 1.0]
+[wait fade]
+[wt 3.0]
+
+[cueSeStop 24_ad1359 0.8]
+[charaFadeout N 0.8]
+[charaFadeout X 0.8]
+[charaFadeout Y 0.8]
+[wt 1.3]
+
+[bgm BGM_TOU_1 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1310]
+なるほど……、邪馬台国の存亡をかけて芹沢さんと[r]無数の巨大[#埴輪:はにわ]を相手に……。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1320]
+そして今川の懐刀だった伊東さんとは[r][#超:スーパー][#五稜郭:ごりょうかく]が落ちてきた川中島で相対した、と。[wait tVoice]
+[k]
+
+[charaFaceFade A 5 0.1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1330]
+に、にわかには信じがたい話ですが、[r]それほどの戦いを潜り抜けて来たからこそ、[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1340]
+仲間たちもマスターの下に集ったのでしょうな。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1350]
+いえ、それだけではない。古今の英傑たちが今も[r]あなたの下に集っている。[wait tVoice]
+[k]
+
+[bgmStop BGM_TOU_1 1.3]
+
+[charaFace A 12]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1360]
+…………。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale C 1.2]
+[charaScale M 1.2]
+[charaFace C 12]
+[charaFadein C 0.6 0,10]
+[charaFadein M 0.6 0,-277]
+[charaMove C 0,-30 30.0]
+[charaMove M 0,-317 30.0]
+[wt 0.8]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaFaceFade C 0 0.3]
+[wt 0.4]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1370]
+マスターは重荷に感じたことは無いのですか？[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1380]
+信頼というのは心強いものですが、[r]時に重くのしかかってくることもある。[wait tVoice]
+[k]
+
+[charaFace C 4]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1390]
+……私は、そうでした。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1400]
+皆のためとしたことが、逆に皆を追い詰めてゆく。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1410]
+どうにもならない時代の流れに飲み込まれ、[r]全てが崩れ去ってゆく。[wait tVoice]
+[k]
+
+[charaFace C 13]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1420]
+いえ、それも言い訳です。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1430]
+己の器も顧みずに人の上に立った私を責めもせずに、[r]皆はただひたすらに支えてくれた。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1440]
+そうして皆、血を流し、死んでいった。[wait tVoice]
+[k]
+
+[charaFace C 4]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1450]
+…………。[wait tVoice]
+[k]
+
+[charaFaceFade C 21 0.1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1460]
+マスターにはそんな思いをして欲しくはない。[wait tVoice]
+[k]
+
+？1：わからないけど、きっと大丈夫
+
+？2：そうならないように頑張るから
+
+？！
+
+[bgmStop BGM_EVENT_11 1.2]
+
+[charaFaceFade C 16 0.1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1470]
+…………。[wait tVoice]
+[k]
+
+[charaFaceFade C 12 0.2]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1480]
+そうですか、マスターはそれほどの想いを胸に戦って……。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 0]
+[charaFadeout C 0.6]
+[charaFadeout M 0.6]
+[wt 1.0]
+
+[bgm BGM_EVENT_159 0.1]
+
+[charaTalk on]
+[charaTalk A]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1490]
+申し訳ありません、このような詮もない話をして。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1500]
+せっかくのマスターとのひと時だというのに、[r]どうにも気が利きませんな、私は。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1510]
+ましてやバレンタインデーだというのに。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1520]
+かくなる上は、せめていくらかは巻き返しませんと、[r]チョコレートのお礼になりません。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1530]
+如何です？　これから私と町にでも出かけるというのは。[wait tVoice]
+[k]
+
+[masterBranch _Male _Female]
+[label _Female]
+
+[charaFace A 11]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1540]
+そうですな、当世風に言うならデート……、という奴ですか。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1560]
+さあ、お手をどうぞ、我が主。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+[branch _branchEnd]
+
+[label _Male]
+
+[charaFace A 18]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1550]
+なに、たまには男同士で遊び歩くのも悪くはないでしょう。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1570]
+さあ、参りましょう、我が主。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+[branch _branchEnd]
+[label _branchEnd]
+
+
+
+＠近藤勇
+[tVoiceUser ValVoice_106400 0_V2380 ValVoice_106400 0_V1580]
+不肖、この私めがご案内を務めさせていただきます。[wait tVoice]
+[k]
+
+[charaFace A 12]
+
+＠近藤勇
+[tVoiceUser ValVoice_106400 0_V2390 ValVoice_106400 0_V1590]
+ええ……、この先の道を、[wait tVoice]
+[k]
+
+[charaFaceFade A 0 0.3]
+
+＠近藤勇
+[tVoiceUser ValVoice_106400 0_V2400 ValVoice_106400 0_V1600]
+[line 3]あなたの誠と共に。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_159 2.0]
+[wait fade]
+
+[branch select01]
+
+[label lblRootC]
+
+[charaSet A 1064000 1 近藤勇]
+[charaSet B 98006200 1 得体の知れないもの]
+[charaSet C 1064000 1 近藤勇]
+
+[equipSet D 9809780 1 バレンタイン礼装]
+[charaSet E 98115000 1 エフェクト用1]
+[charaSet F 98115000 1 エフェクト用1]
+
+[sceneSet L 262900 1]
+[sceneSet M 262900 1]
+[sceneSet N 265100 1]
+
+[imageSet S black_fade_re 1]
+[imageSet T black_fade_re 1]
+[charaScale S 2.0]
+[charaScale T 2.0]
+
+[imageSet X back10000 1 1]
+[charaScale X 1.05]
+[imageSet Y back10000 1 1]
+[charaScale Y 1.05]
+
+[sceneSet Z 10000 1]
+[charaScale Z 1.1]
+
+[charaTalk depthOff]
+[charaDepth L 4]
+[charaDepth N 4]
+[charaDepth A 5]
+[charaDepth B 6]
+[charaDepth M 7]
+[charaDepth C 8]
+[charaDepth Z 19]
+[charaDepth D 20]
+[charaDepth E 25]
+[charaDepth X 26]
+[charaDepth Y 26]
+[charaDepth S 26]
+[charaDepth T 26]
+
+[overlayFadein X 0 0,757]
+[overlayFadein Y 0 0,-757]
+
+[charaPut C 2500,2500]
+[charaBackEffect C bit_talk_blk_fire_aura]
+[charaEffect C bit_talk_krm_aura 0,-50]
+
+[scene 262900]
+[cameraMove 0.1 0,0 1.01]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_95 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+[cueSe SE_24 24_ad1415 0 0.8]
+[cueSe SE_22 22_ad1169 0.5 0.6]
+[charaBackEffect A bit_talk_blk_fire_aura]
+[charaEffect A bit_talk_krm_aura 0,-50]
+[wt 2.2]
+[charaFaceFade A 7 0.1]
+[cueSeVolume 24_ad1415 0.5 0.4]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1610]
+は[messageShake 0.04 5 5 0.2]ああああああああっ！[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1620]
+マガツヒよ……、唸れ！[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1630]
+はあっ！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad39]
+[charaEffect A bit_talk_36]
+[wt 2.0]
+[cueSeStop 24_ad1415 0.5]
+[cueSeStop 22_ad1169 0.5]
+[charaEffectStop A bit_talk_36]
+[wt 0.6]
+[se ade388]
+[effect bit_talk_29_black_red]
+[effect bit_talk_v_slash02]
+[wt 0.3]
+[shake 0.02 3 3 1.2]
+[fadeout black 0.1]
+[wait fade]
+
+[charaFadeout A 0]
+[charaFadeout X 0]
+[charaFadeout Y 0]
+[charaBackEffectDestroy A bit_talk_blk_fire_aura]
+[charaEffectDestroy A bit_talk_krm_aura]
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+？1：バレンタイ……！
+
+？2：あ……、終わった
+
+？！
+
+[charaTalk off]
+[subCameraOn 1]
+[charaLayer C sub #A]
+[charaLayer M sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 5 0,0,0,255]
+[charaScale C 1.2]
+[charaScale M 1.2]
+[charaFace C 17]
+[charaFadein C 0 0,180]
+[charaFadein M 0 0,-70]
+[subRenderFadein #A 0.4 0,-200]
+[wt 0.4]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1640]
+なっ！？　おまえ、急に何を……！[wait tVoice]
+[k]
+
+[charaFace C 21]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1650]
+ちいっ！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad1006 0.8]
+[charaMoveScaleEase C 1.8 0.3 easeOutCubic]
+[charaMoveEase C 0,260 0.3 easeOutCubic]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaFadeout C 0.3]
+[subRenderFadeout #A 0.3]
+[wt 0.4]
+
+[cueSe SE_24 24_ad1415]
+[se ad705]
+[effect bit_talk_fire_wall_black]
+[shake 0.05 5 4 0]
+[wt 1.7]
+
+[fadeout white 0.8]
+[cueSeStop 24_ad1415 1.0]
+[bgmStop BGM_BATTLE_95 0.8]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.0]
+[shakeStop]
+[blurOff motion 0.1]
+[charaBackEffectDestroy C bit_talk_blk_fire_aura]
+[charaEffectDestroy C bit_talk_krm_aura]
+
+[charaFadeout A 0.1]
+[charaFadeout M 0.1]
+[charaLayer C normal]
+[charaLayer M normal]
+[subCameraOff]
+
+[scene 10000]
+[wt 2.0]
+
+[fadein white 1.0]
+[wait fade]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[blur lens 0.1 4 1]
+[scene 265100]
+[wt 2.0]
+
+[wipein openEye 0.3 1.0]
+[wait wipe]
+[wipeout openEye 0.4 1.0]
+[wait wipe]
+[wipein openEye 0.3 1.0]
+[wait wipe]
+[wipeout openEye 0.4 1.0]
+[wait wipe]
+[wt 0.6]
+[blurOff lens 1.5]
+[wipein openEye 1.5 1]
+[wait wipe]
+[wt 0.8]
+
+？1：ここは……？
+
+？2：いったい何が……
+
+？！
+
+[bgm BGM_BATTLE_97 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+
+＠得体の知れないもの
+[tVoice ValVoice_106400 0_V1660]
+アアアアアア……！[wait tVoice]
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ad1453 0.3 0.5]
+[charaMoveScaleEase B 1.1 0.7 easeOutSine]
+[charaMoveEase B 0,15 0.7 easeOutSine]
+[wt 0.3]
+[cueSeStop 24_ad1453 2.5]
+[wt 0.4]
+
+＠得体の知れないもの
+[tVoice ValVoice_106400 0_V1670]
+アアアアアアア……！[wait tVoice]
+[k]
+
+？1：み、身動きがとれ……！
+
+？2：近藤さん……！
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaPut A 1]
+[charaEffect A bit_talk_quickmove]
+[charaFace A 7]
+[se ad73]
+[wt 0.1]
+[charaSpecialEffect A appearanceReverse 1 0.2]
+[wt 0.3]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1680]
+[line 3][messageShake 0.04 5 5 0.2][#虎徹・BLAAAAAAADE:コ     テ     ツ     ・     ブ     レ     ー     ー     ー     ド]！！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[effect bit_talk_flame_slash_kdi]
+[cueSe SE_25 25_ade1282]
+[se ad980]
+[cueSe Servants_704800 m58430]
+[wt 0.6]
+[fadeout white 0.4]
+[cueSe Servants_106400 m68598]
+[wait fade]
+[cueSe SE_24 24_ad1358]
+[charaShake B 0.04 5 5 1.0]
+[fadein white 0.5]
+[wait fade]
+[wt 0.3]
+
+＠得体の知れないもの
+[tVoice ValVoice_106400 0_V1690]
+アアッ、アアアアアアア……！？[wait tVoice]
+[k]
+
+[bgmStop BGM_BATTLE_97 2.0]
+
+[messageOff]
+[se ad42]
+[charaSpecialEffect B enemyErasure 1 1.5]
+[wait charaSpecialEffect B]
+[seStop ad42 0.5]
+[wt 1.2]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_156 0.1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1700]
+ふう……、間に合ったか……。[wait tVoice]
+[k]
+
+？1：これは……？
+
+[charaFace A 21]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1710]
+何をのんきなことを……。[wait tVoice]
+[k]
+
+？2：ありがとうございます
+
+[charaFace A 8]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1720]
+……死にかけておいてそれか。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1730]
+ここはマガツヒの中……、のようなものだ。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1740]
+知っての通り、俺はマガツヒノカミという[r]災厄の神の[#残滓:ざんし]を体に宿している。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1750]
+そしてマガツヒの魔力は常に[r]俺の体の中で渦巻いている。[wait tVoice]
+[k]
+
+[charaFace A 12]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1760]
+通常であれば抑え込んでいるのだが、[r]許容量を超えればある程度排出しなければならん。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1770]
+ようは強制的な魔力放出。[wait tVoice]
+[k]
+
+[charaFace A 21]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1780]
+それにおまえは巻き込まれたというわけだ。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1790]
+この場所自体は精神的なものだが、[r]マガツヒに取り込まれれば命も危うかったかもしれん。[wait tVoice]
+[k]
+
+？1：ごめんなさい、それはそれとしてチョ……
+
+[charaFace A 8]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1800]
+話はあとだ、ここから出るぞ。[wait tVoice]
+[k]
+
+？2：恐ろしい話ですね、ところで今日は……
+
+[charaFace A 8]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1810]
+無駄口をたたいている場合か、出るぞ。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1820]
+虎徹、頼むぞ。[wait tVoice]
+[k]
+
+[messageOff]
+
+
+[blur lens 0.4 2 2]
+[charaTalk C,A]
+[subCameraOn 1]
+[charaLayer C sub #A]
+[charaLayer N sub #A]
+[subCameraFilter #A maskEdge cut359_mask02 5 250,40,13,255]
+[charaScale C 1.6]
+[charaScale N 1.6]
+[charaRoll C -39]
+[charaFace C 0]
+[charaFadein C 0 1750,680]
+[charaFadein N 0 0,-70]
+[subRenderFadein #A 0.4 0,-350]
+[wt 0.4]
+[charaEffectEdgeBlur C ffffff ffffff 4 2]
+[wt 0.5]
+[cueSe Servants_106400 m68596]
+[wt 0.5]
+[cueSe Servants_106400 m68586 0 0]
+[cueSeVolume m68586 1.0 1.0]
+[wt 3.0]
+
+[blurOff lens 0.4]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[charaEffectEdgeBlurDestroy C]
+[charaFadeout C 0]
+[charaFadeout N 0]
+[charaLayer C normal]
+[charaLayer N normal]
+[subCameraOff]
+[charaRoll C 0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1830]
+……ここか。[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1840]
+ス[messageShake 0.04 5 5 0.2]ラッシュ！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0]
+[charaPut A 2500,2500]
+[wt 0.2]
+[backEffect bit_talk_white_gate]
+[cueSe SE_25 25_ade1282]
+[cueSe SE_25 25_ade1285]
+[se ad980]
+[wt 4.0]
+
+[subCameraOn 1]
+[charaLayer C sub #A]
+[subCameraFilter #A through]
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0 1]
+[subRenderFadein #A 0.2 0,0]
+[wt 0.2]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V1850]
+しっかりつかまっていろ。[wait tVoice]
+[k]
+
+[charaFace C 7]
+
+＠C：近藤勇
+[tVoice ValVoice_106400 0_V1860]
+はっ！[wait tVoice]
+[k]
+
+[messageOff]
+[cueSe SE_25 25_ade1208]
+[blur lens 1.5 4 2]
+[fadeout white 1.5]
+[bgmStop BGM_EVENT_156 1.5]
+[wait fade]
+
+[blurOff lens 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaLayer C normal]
+[subCameraOff]
+[backEffectDestroy bit_talk_white_gate]
+[scene 10000]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[branchQuestClear lblClear01d 05000000]
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[label lblClear01a]
+[scene 106000]
+[sceneSet O 106000 1]
+[sceneSet P 106000 1]
+[charaDepth O 7]
+[charaDepth P 11]
+[branch lblConf01]
+
+[label lblClear01b]
+[scene 105800]
+[sceneSet O 105800 1]
+[sceneSet P 105800 1]
+[charaDepth O 7]
+[charaDepth P 11]
+[branch lblConf01]
+
+[label lblClear01c]
+[scene 157900]
+[sceneSet O 157900 1]
+[sceneSet P 157900 1]
+[charaDepth O 7]
+[charaDepth P 11]
+[branch lblConf01]
+
+[label lblClear01d]
+[scene 106000]
+[sceneSet O 106000 1]
+[sceneSet P 106000 1]
+[charaDepth O 7]
+[charaDepth P 11]
+
+[label lblConf01]
+
+[imageSet X black_fade_re 1]
+[imageSet Y black_fade_re 1]
+[charaScale X 2.0]
+[charaScale Y 2.0]
+[charaDepth X 26]
+[charaDepth Y 26]
+
+[subCameraOn 1]
+[charaLayer A sub #A]
+[charaLayer P sub #A]
+[charaLayer E sub #A]
+[charaLayer F sub #A]
+[subCameraFilter #A normal]
+[charaDepth A 6]
+[charaDepth F 9]
+[charaScale A 0.84]
+[charaScale P 1.0]
+[charaTalk A]
+[charaFace A 0]
+[overlayFadein A 0 0,-46]
+[charaFadein P 0 0,-200]
+[subRenderFadein #A 0.1 0,0]
+[subCameraMoveEase #A 0,0 0.1 easeOutSine 1.2]
+[wt 3.0]
+
+[wipein openEye 1.0 1.0]
+[wait wipe]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1870]
+……気がついたか。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1880]
+安心しろ、死んではいない。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1890]
+マガツヒのせいでしばらくは気分が悪いかもしれんが、[r]いずれ元に戻るだろう。[wait tVoice]
+[k]
+
+[charaFace A 12]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1900]
+……ではな。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad452 0.6]
+[seStop ad452 1.5]
+
+[branchQuestClear lblClear02d 05000000]
+[branchQuestClear lblClear02c 94064915]
+[branchQuestClear lblClear02c 3001101]
+[branchQuestClear lblClear02b 3000303]
+
+[label lblClear02a]
+[label lblClear02c]
+[label lblClear02d]
+[charaMove A -100,-46 1.4]
+[wt 0.8]
+[subCameraMoveEase #A 100,0 0.6 easeOutCubic 1.2]
+[wt 0.8]
+[branch lblConf02]
+
+[label lblClear02b]
+[charaMove A 100,-46 1.4]
+[wt 0.8]
+[subCameraMoveEase #A -100,0 0.6 easeOutCubic 1.2]
+[wt 0.8]
+
+[label lblConf02]
+
+？1：あの、チョコレートどうぞ！
+
+[charaFace A 16]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1910]
+なに？　チョコレート……、だと。[wait tVoice]
+[k]
+
+？2：まって、バレンタインの贈り物
+
+[charaFace A 0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1920]
+バレンタイン……？　何の話だ。[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[fowardEffect bit_talk_valentinegift02]
+[charaBackEffect F bit_talk_valentine_brilliant_fs]
+[wt 4.0]
+[charaBackEffectStop F bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+[fowardEffectDestroy bit_talk_valentinegift02]
+
+[charaFace A 17]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1930]
+これは……。[wait tVoice]
+[k]
+
+[charaFace A 12]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1940]
+いや、確か皆が話していたな。[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1950]
+バレンタインデー。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1960]
+想い人にチョコレートを贈る[r]西洋の風習……、だったか。[wait tVoice]
+[k]
+
+[charaFace A 17]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1970]
+まさかこれを俺に……、だと？[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1980]
+おまえ、どういうつもりで……。[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V1990]
+いや、わざわざ俺のようなサーヴァントを使っているのだ。[r]趣味が悪いのも道理というわけか。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2000]
+……ああ、すまんな。嫌味を言ったつもりではない。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2010]
+おまえの物好きぶりに驚いていただけだ。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2020]
+…[bgmStop BGM_EVENT_77 1.0]………。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2030]
+少しいいか。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[branchQuestClear lblClear03d 05000000]
+[branchQuestClear lblClear03c 94064915]
+[branchQuestClear lblClear03c 3001101]
+[branchQuestClear lblClear03b 3000303]
+
+[label lblClear03a]
+[label lblClear03d]
+[se ad452 0.6]
+[seStop ad452 1.5]
+[charaFadeout A 0.4]
+[charaMoveScale A 0.89 0.6]
+[charaMove A -100,-39 0.6]
+[wt 1.5]
+[charaScale O 1.4]
+[charaFadein O 0 120,-300]
+[subRenderFadeout #A 0.6]
+[wt 0.6]
+[branch lblConf03]
+
+[label lblClear03c]
+[se ad452 0.6]
+[seStop ad452 1.5]
+[charaFadeout A 0.4]
+[charaMoveScale A 0.89 0.6]
+[charaMove A -100,-39 0.6]
+[wt 1.5]
+[charaScale O 1.4]
+[charaFadein O 0 -120,-300]
+[subRenderFadeout #A 0.6]
+[wt 0.6]
+[branch lblConf03]
+
+[label lblClear03b]
+[se ad452 0.6]
+[seStop ad452 1.5]
+[charaFadeout A 0.4]
+[charaMoveScale A 0.89 0.6]
+[charaMove A 100,-39 0.6]
+[wt 1.5]
+[charaScale O 1.4]
+[charaFadein O 0 120,-300]
+[subRenderFadeout #A 0.6]
+[wt 0.6]
+
+[label lblConf03]
+[charaFadeout A 0]
+[charaFadeout P 0]
+[charaLayer A normal]
+[charaLayer P normal]
+[charaLayer E normal]
+[charaLayer F normal]
+[subCameraOff]
+
+[charaScale C 1.3]
+[cueSe SE_24 24_ade982]
+[charaFace C 0]
+[charaFadein C 0.3 0,10]
+[charaMove C 0,0 0.6]
+[wt 1.8]
+
+[charaFace C 4]
+[bgm BGM_EVENT_161 0.1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2040]
+俺は本来の歴史の流れにはありえない存在。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2050]
+あの特異点でのみ成り立つ、[r]本来の近藤勇とは異なる別の可能性のはずだった。[wait tVoice]
+[k]
+
+[charaFace C 0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2060]
+それがおまえとの縁のおかげで、[r]こうしていまだに姿を保っている。[wait tVoice]
+[k]
+
+[charaFace C 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2070]
+そうだ、すべておまえのおかげだ。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2080]
+黒に堕ちた剣をおまえの為に振るえるのも、[r]仲間たちとまた同じ旗のもとで戦えるのも、[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2090]
+すべてな。[wait tVoice]
+[k]
+
+[charaFace C 5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2100]
+それがあの日、首を落とされた俺にとって[r]どれほどの奇跡か。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2110]
+…………。[wait tVoice]
+[k]
+
+[charaFace C 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2120]
+だから、それだけで充分だ。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2130]
+それ以上は大切な誰かの為にとっておけ。[wait tVoice]
+[k]
+
+[charaFace C 4]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2140]
+俺は、俺を好いてくれた奴らを皆、不幸にしてきた。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2150]
+そういう男だ。[wait tVoice]
+[k]
+
+[charaFace C 0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2160]
+だからやめておけ、こんな男に入れ込むのは。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2170]
+俺はおまえの大切なものを守る剣であればそれでいい。[wait tVoice]
+[k]
+
+？1：近藤さんも大切ですから
+
+[bgmStop BGM_EVENT_161 1.5]
+
+[charaFace C 17]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2180]
+…………。[wait tVoice]
+[k]
+
+[charaFace C 5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2190]
+そうか、欲張りな奴だな、おまえは。[wait tVoice]
+[k]
+
+？2：近藤さんが大切ですから
+
+[bgmStop BGM_EVENT_161 1.5]
+
+[charaFace C 17]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2200]
+…………。[wait tVoice]
+[k]
+
+[charaFace C 4]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2210]
+俺が……、か。[wait tVoice]
+[k]
+
+？！
+
+[charaFace C 12]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2220]
+…………。[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_159 0.1]
+
+[charaFace C 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2230]
+そこまで言うなら、もう何も言うまい。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2240]
+このチョコレート、ありがたくいただくとしよう。[wait tVoice]
+[k]
+
+[charaFace C 0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2250]
+…………。[wait tVoice]
+[k]
+
+[charaFace C 1]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2260]
+これは礼代わりだ、取っておけ。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad79]
+[wt 0.1]
+[charaDepth F 5]
+[charaScale E 1.3]
+[charaRoll E 0]
+[charaPut E 0,50]
+[charaEffect E bit_talk_valentinegift01]
+[charaBackEffect F bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[charaBackEffectStop F bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+[charaFadeout C 0.5]
+
+[se bas2]
+[charaFace D 0]
+[charaFadein D 0.5 0,-70]
+[wt 3.0]
+
+[charaFadeout D 0.4]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2270]
+まだ寒さの残る陽気だ、肩を冷やさんようにな。[wait tVoice]
+[k]
+
+？1：これは羽織の時につけている肩掛け
+
+[charaFace C 5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2280]
+ああ、昔、故郷の者が持たせてくれたものだ。[wait tVoice]
+[k]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2290]
+この霊基の時はあまり使う事もないのでな。[wait tVoice]
+[k]
+
+？2：黒い肩掛けは無いの？
+
+[charaFace C 2]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2300]
+ふ……、はははは、残念だが白だけだ。[wait tVoice]
+[k]
+
+[charaFace C 5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2310]
+しかし黒の肩掛けか……、それも悪くないかもな。[wait tVoice]
+[k]
+
+？！
+
+[charaFace C 4]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2320]
+俺の霊基はマガツヒに侵食され、[r]取り返しのつかん身体になってしまった。[wait tVoice]
+[k]
+
+[charaFace C 0]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2330]
+しかし、だからこそおまえに出会い、[r]今こうして、この黒の剣を振るえるのだ。[wait tVoice]
+[k]
+
+[charaFace C 5]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2340]
+ああ……、振るい続けよう。[wait tVoice]
+[k]
+
+[charaFace C 12]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2350]
+それが、あの時、俺をもう一度立ち上がらせてくれた[r]おまえとあいつに示せる俺の誠だ。[wait tVoice]
+[k]
+
+[charaFaceFade C 12 0.2]
+
+＠近藤勇
+[tVoice ValVoice_106400 0_V2360]
+なあ……、[wait tVoice]
+[k]
+
+[messageOff]
+[subCameraOn 1]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+[charaLayer P sub #A]
+[charaLayer A sub #A]
+[charaLayer X sub #A]
+[charaLayer Y sub #A]
+[charaDepth P 11]
+[charaDepth A 12]
+[charaScale P 1.6]
+[charaScale A 1.6]
+[charaFace A 12]
+[charaFadein A 0 -145,385]
+[charaFadein P 0 155,100]
+[overlayFadein X 0 0,520]
+[overlayFadein Y 0 0,-720]
+[subRenderFadein #A 0.7 0,-300]
+[charaMove A -150,385 2.0]
+[charaMove P 150,100 2.0]
+[wt 2.5]
+[charaFadeout O 0.1]
+[charaFadeout C 0.1]
+
+[charaFaceFade A 5 0.3]
+＠近藤勇
+[tVoice ValVoice_106400 0_V2370]
+[line 3]それでいいのだろう。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_159 2.0]
+[wait fade]
+
+
+[label select01]
+
+[wt 0.5]
+[soundStopAll]
+[end]
+

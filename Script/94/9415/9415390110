@@ -1,0 +1,1405 @@
+
+
+
+＄94-15-39-01-1-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 3064001 1 デメテル]
+[charaSet B 3064001 1 デメテル_シルエット]
+[charaFilter B silhouette 00000080]
+[charaSet C 1098189910 1 デメテル_NPC]
+
+[charaSet D 1098348700 1 オルガマリー]
+
+[charaSet E 1098330800 1 マシュ]
+[charaSet F 1098257300 1 ダ・ヴィンチ]
+[charaSet G 1098348500 1 アズライール]
+
+[sceneSet H 277700 1]
+[charaScale H 1.2]
+
+[sceneSet I 277700 1]
+[charaScale I 1.4]
+
+[charaSet J 1098348700 1 オルガマリー_サブレイヤー用]
+[charaScale J 1.6]
+
+[charaSet K 98115000 1 エフェクト用B]
+[charaPut K 2000,2000]
+[charaEffect K bit_talk_20_remake]
+
+[sceneSet L 277700 1]
+[charaScale L 1.05]
+
+[sceneSet M 134000 1]
+[charaScale M 1.2]
+
+[charaSet N 1098352500 1 フォウ]
+[charaSet O 1098352500 1 フォウ_シルエット]
+[charaFilter O silhouette 00000080]
+[sceneSet P 105500 1]
+[charaScale P 1.05]
+[charaSet Q 98115000 1 エフェクト用B]
+[charaPut Q 2000,2000]
+[charaEffect Q bit_sepia01_depth_fs]
+[charaScale Q 1.1]
+
+[subCameraOn 4]
+
+[charaLayer J sub #A]
+[charaLayer I sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask13 5 238,120,0,255 0]
+[pictureFrameTop cut063_cinema]
+
+[charaTalk depthOff]
+
+[charaDepth I 1]
+[charaDepth J 2]
+
+[charaFace J 6]
+[charaFadein J 0.1 0,270]
+[charaFadein I 0.1 0,-130]
+
+[charaDepth K 2]
+
+[scene 105500]
+
+[charaDepth P 1]
+[charaDepth N 2]
+[charaDepth O 3]
+[charaDepth Q 4]
+
+[charaFadein P 0.1 0,-220]
+[charaMove P -70,-240 3.6]
+[charaMoveScale P 1.15 3.6]
+[se ade422]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.3]
+[seStop ade422]
+[wt 0.3]
+
+[bgm BGM_EVENT_194 0.1]
+
+？1：ん？
+？！
+
+[wt 0.2]
+
+？1：（廊下の向こうに……）
+？2：（何かいる、ような？）
+？！
+
+[wt 0.5]
+
+[cueSe SE_21 21_ade621]
+[wt 0.5]
+[seStop 21_ade621 1.0]
+
+[wt 1.0]
+
+？1：（やっぱり何かいる）
+
+？2：（あまり大きく[&なさそうだ:なさそう]）
+？！
+
+[wt 0.2]
+
+？1：（小動物？）
+？！
+
+[se ad7]
+
+[charaTalk O]
+[charaFace O 0]
+[charaFadein O 0.3 0,-100]
+[charaMoveEase O 0,-50 0.4 easeOutQuad]
+
+[wt 1.0]
+
+？1：わっ！
+？2：このもふもふは！
+？！
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 0,-50]
+[charaFadeout O 0.5]
+
+[wt 1.0]
+
+＠フォウ
+フォーウ！
+[k]
+
+？1：フォウくん！
+？！
+
+＠フォウ
+…………。
+[k]
+
+？1：姿を見なかったけど
+？2：今まで、どこにいた[&んだろう:の]？
+？！
+
+＠フォウ
+フォウプイッ。
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ade621]
+
+[charaFadeout N 1.0]
+[cueSeStop 21_ade621 1.0]
+
+[wt 1.5]
+
+？1：あれ？
+？2：おーい
+？！
+
+[wt 1.5]
+
+？1：行っちゃった
+？！
+
+[wt 0.5]
+
+[bgmStop BGM_EVENT_194 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout P 0.1]
+
+[pictureFrame]
+[wt 1.5]
+
+[scene 277700]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.4 1]
+＠マシュ
+フォウさんが、いた[line 3]？
+[k]
+
+[charaFace E 1]
+
+＠マシュ
+情報共有ありがとうございます、先輩。[r]それは朗報ですね！
+[k]
+
+？1：そうだね
+？2：見たところ元気だったよ
+？！
+
+[messageOff]
+[wt 0.2]
+
+？1：基地のどこかにいると思うんだけど
+？2：マシュは見た？
+？！
+
+[charaFace E 9]
+
+＠マシュ
+いえ、わたしはまだ……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 0.3]
+
+[flashin loop 0.7 1 FF000080 FF000000]
+[se ad9 0 0.5]
+[wt 0.3]
+[charaFace E 7]
+
+[wt 4.0]
+
+[seStop ad9 0.2]
+
+[flashout 0.5]
+[wt 1.0]
+[flashOff]
+
+＠マシュ
+！
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[scene 278700]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.4]
+
+[flashin loop 0.7 1 FF000080 FF000000]
+[se ad9 0 0.5]
+
+[wt 4.3]
+
+[seStop ad9 0.2]
+
+[flashout 0.5]
+[wt 1.0]
+[flashOff]
+
+[bgm BGM_MAP_116 0.1]
+
+＠[51d4ff]アナウンス[-]
+[51d4ff]警告、警告。[-][r][51d4ff]職員及び関係者は至急退避してください。[-]
+[k]
+
+＠[51d4ff]アナウンス[-]
+[51d4ff]召喚システムに異常あり。[-][r][51d4ff]警戒レベルが自動的に引き上げられます。[-]
+[k]
+
+[messageOff]
+
+[flashin loop 0.7 1 FF000080 FF000000]
+[se ad9 0 0.5]
+
+[wt 4.3]
+
+[seStop ad9 0.2]
+[flashout 0.5]
+[wt 1.0]
+[flashOff]
+
+[se ad95]
+
+[wt 2.0]
+[seStop ad95]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.6 1]
+
+[wt 1.5]
+
+＠？？？
+……はじめにカオスありき。
+[k]
+
+＠？？？
+そして、[#大地:ガイア]がすべてを産み落としたのです。[r]すなわち。
+[k]
+
+＠？？？
+大地は母である。[r]それこそが摂理というものです。
+[k]
+
+[messageOff]
+
+[charaTalk A,B]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[charaFadeout B 0.5]
+
+[wt 0.8]
+
+＠A：？？？
+私はデメテル。[r]大地と豊穣の神、デメテル。
+[k]
+
+[charaFace A 1]
+
+＠デメテル
+[line 3]ガイアに連なる、ひとりの女神です。
+[k]
+
+[messageOff]
+
+
+[cueSe SE_22 22_ad1177]
+[bgm BGM_MAP_116 0.3 0.5]
+[fadeout white 0.3]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 91800]
+[charaPut Q 0,20]
+
+[wt 0.3]
+
+[charaDepth C 1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+[fadein white 0.3]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout white 0.3]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaEffectStop Q bit_sepia01_depth_fs]
+
+[scene 278700]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 0.3]
+
+[bgm BGM_MAP_116 0.3 1.0]
+[fadein white 0.3]
+[wait fade]
+[wt 0.8]
+
+[charaFace A 3]
+
+[wt 1.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 277700]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+[wt 0.4]
+
+＠マシュ
+神霊の召喚です！[r]異聞帯で遭遇した姿とは、違いますが……
+[k]
+
+[charaFace E 7]
+＠マシュ
+誤差０．２パーセントで霊基数値が一致！[r]あそこにいるのは、神霊デメテルです！
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠オルガマリー
+し[line 3]
+[k]
+
+＠オルガマリー
+神霊！？
+[k]
+
+＠オルガマリー
+な、何かの間違いじゃないの？[r]神霊が勝手に召喚されるなんて！
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 22]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+いや、システムは正常に稼動しているね。[r]異聞帯で結んだ縁を辿っての召喚、ってことかな？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+召喚に際しての[#魔力:リソース]は？
+[k]
+
+＠オルガマリー
+魔力炉心と召喚システム、[r]接続には所長の許可が必要だったはず。
+[k]
+
+＠オルガマリー
+魔力がなければ、[r]召喚システムは稼動しないわよね……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 36]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+それがあるんだよね、魔力。[r]微小聖杯が基地のどこかに発生してるみたいだよ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+[f large]！
+[k]
+
+[messageOff]
+[charaDepth D 1]
+[charaDepth M 2]
+[charaDepth K 3]
+[charaDepth H 4]
+[charaDepth L 5]
+
+[charaFadein H 0.5 100,-250]
+[charaMove H -100,-250 40.0]
+[wt 0.8]
+
+[charaFadeout D 0.1]
+
+＠オルガマリー
+神霊の現界と[line 3]
+[k]
+
+[messageOff]
+
+[scene 134000]
+
+[charaPut K -100,0]
+[charaFadeout H 0.5]
+[charaFadein M 0.5 -100,-250]
+[charaMove M 100,-250 40.0]
+[charaMove K 100,0 40.0]
+
+[wt 1.0]
+
+＠オルガマリー
+特異点が形成されない状況での、[r]微小聖杯の発生[line 3]
+[k]
+
+[messageOff]
+
+
+[charaDepth D 6]
+[charaDepth F 7]
+[charaDepth G 8]
+[charaDepth E 9]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.5 1]
+[charaFadein L 0.5 0,-220]
+[charaPut K 2000,2000]
+
+[wt 1.2]
+[charaFadeout M 0.1]
+
+[bgmStop BGM_MAP_116 1.0]
+
+＠オルガマリー
+とんでもない異常事態、と言うわけね。[r]わかりました。
+[k]
+
+[messageOff]
+
+[charaFace D 17]
+
+[wt 1.5]
+
+[blur lens 0.3 1 1]
+[cueSe SE_25 25_ad1468]
+[charaTalk J]
+[subRenderFadein #A 0.3 -100,-260]
+[subRenderMoveEase #A 0,-260 0.4 easeOutQuint]
+[wt 0.8]
+
+＠J：オルガマリー
+総員、第一種警戒態勢！
+[k]
+
+[messageOff]
+
+[charaTalk E,F,G,J]
+[charaFace E 29]
+[charaFadein E 0.5 1]
+[charaFadeout D 0.5]
+
+[charaFace F 24]
+[charaFadeinFSR F 0.5 2]
+
+[charaFace G 0]
+[charaFadeinFSL G 0.5 0]
+
+[subRenderFadeout #A 0.5]
+[blurOff lens 0.5]
+
+[wt 1.5]
+
+[charaFaceFade G 9 0.2]
+[wt 1.5]
+
+[charaTalk E,F,G,D]
+[charaFadeout G 0.3]
+[charaFadeout F 0.3]
+[charaFadeout E 0.3]
+
+[charaFace D 9]
+[charaFadein D 0.3 1]
+[wt 0.5]
+
+[bgm BGM_EVENT_146 0.1]
+
+＠オルガマリー
+ん？
+[k]
+
+＠オルガマリー
+き、気のせいかしら。[r]第一種警戒態勢ってわたしが言っているのに、
+[k]
+
+[charaFace D 3]
+
+＠オルガマリー
+なんだか反応が鈍い……[r]ような……？
+[k]
+
+＠オルガマリー
+経営顧問様におかれましては[r]気持ちリラックスしてるご様子で[line 3]
+[k]
+
+
+[messageOff]
+
+[charaFaceFade D 18 0.2]
+
+[wt 1.5]
+
+[charaFaceFade D 16 0.2]
+
+＠オルガマリー
+……そんなはずないわよ、ね？[r]神霊の召喚よ？
+[k]
+
+？1：そ
+？！
+
+[messageOff]
+[wt 0.2]
+
+？1：そう、ですね
+？2：それは、そう、なんですけど
+？！
+
+[charaFace D 7]
+
+＠オルガマリー
+歯切れ悪くない？
+[k]
+
+？1：（目を逸らす）
+
+[charaFace D 11]
+
+＠オルガマリー
+こっちを見なさい。[r]何なの？
+[k]
+
+？2：もにょもにょ……
+
+[charaFace D 7]
+
+＠オルガマリー
+口ごもっていないで、[r]ちゃんとこっちを見てものを言いなさい。
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠マシュ
+ええと、そのっ。
+[k]
+
+＠マシュ
+し、所長の仰る通り……[r]では……
+[k]
+
+[charaFace E 11]
+
+＠マシュ
+あるのですが、しかし……[line 3]
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_146 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+
+[charaLayer J normal]
+[charaLayer I normal]
+
+[charaSet H 3059000 1 インドラ]
+[charaScale H 1.3]
+[charaSet I 3030000 1 パールヴァティー]
+[charaScale I 1.3]
+[charaSet J 6037000 1 カーマ]
+[charaScale J 1.3]
+[charaSet K 2048002 1 カーリー]
+[charaScale K 1.3]
+[charaSet L 4018001 1 ケツァル・コアトル]
+[charaScale L 1.3]
+[charaSet M 6047000 1 テスカトリポカ]
+[charaScale M 1.3]
+
+[sceneSet N 109100 1]
+[charaScale N 1.3]
+
+[sceneSet O 109100 1]
+[charaScale O 1.3]
+[sceneSet P 109100 1]
+[charaScale P 1.3]
+
+[sceneSet Q 109100 1]
+[charaScale Q 1.3]
+
+[sceneSet R 109100 1]
+[charaScale R 1.3]
+
+[sceneSet S 109100 1]
+[charaScale S 1.3]
+
+[charaLayer J sub #A]
+[charaLayer O sub #A]
+
+[charaLayer I sub #B]
+[charaLayer P sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask15 5 255,255,255,255 0]
+[subCameraFilter #B maskEdge cut359_mask16 5 255,255,255,255 0]
+
+[charaTalk depthOff]
+
+[charaDepth P 1]
+[charaDepth I 2]
+
+[charaFace I 0]
+[charaFadeinFSR I 0.1 0,270]
+[charaFadein P 0.1 -100,-50]
+
+[charaDepth P 1]
+[charaDepth J 2]
+
+[charaFace J 13]
+[charaFadeinFSL J 0.1 0,270]
+[charaFadein O 0.1 100,-50]
+
+[charaDepth N 1]
+[charaDepth H 2]
+
+[charaDepth Q 3]
+[charaDepth K 4]
+
+[charaDepth R 5]
+[charaDepth L 6]
+
+[charaDepth S 7]
+[charaDepth M 8]
+
+[scene 109100]
+
+[wt 0.5]
+
+[charaTalk off]
+
+[charaFace H 0]
+[charaFadein H 0.1 0,70]
+[charaFadein N 0.1 0,-180]
+[charaMove N 0,-250 20.0]
+[charaMove H 0,0 20.0]
+
+
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_131 0.1]
+
+[wt 0.5]
+
+＠マシュ
+インド圏からは古き主神インドラ[line 3]
+[k]
+
+[messageOff]
+
+[subRenderFadein #A 0.3 -200,-220]
+[subRenderMoveEase #A -210,-250 10.0 easeOutQuad]
+
+[subRenderFadein #B 0.3 205,-280]
+[subRenderMoveEase #B 215,-250 10.0 easeOutQuad]
+
+[wt 0.6]
+
+[charaFadeout H 0.1]
+[charaFadeout N 0.1]
+
+＠マシュ
+女神パールヴァティーに愛の神カーマ、
+[k]
+
+[messageOff]
+
+[charaFace K 0]
+[charaFadein K 0.1 -100,0]
+[charaFadein Q 0.1 -100,-250]
+[charaMove K 0,0 20.0]
+[charaMove Q 0,-250 20.0]
+
+[subRenderFadeout #A 0.5]
+[subRenderFadeout #B 0.5]
+
+[wt 0.6]
+
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+
+＠マシュ
+破壊の神カーリー！
+[k]
+
+[messageOff]
+
+[charaFace L 1]
+[charaFadein L 0.4 100,0]
+[charaFadein R 0.4 100,-250]
+[charaMove L 0,0 20.0]
+[charaMove R 0,-250 20.0]
+[wt 0.6]
+
+[charaFadeout K 0.1]
+[charaFadeout Q 0.1]
+
+＠マシュ
+中南米圏からは主神ケツァル＝コアトル、
+[k]
+
+[messageOff]
+
+[charaFace M 0]
+[charaFadein M 0.4 0,50]
+[charaFadein S 0.4 0,-200]
+[charaMove M 0,0 15.0]
+[charaMove S 0,-250 15.0]
+
+[wt 0.1]
+
+[charaFadeout L 0.1]
+[charaFadeout R 0.1]
+
+＠マシュ
+そして、主神テスカトリポカ！
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+[charaFadeout M 0.1]
+[charaFadeout S 0.1]
+
+[charaFadeout J 0.1]
+[charaFadeout O 0.1]
+[charaFadeout I 0.1]
+[charaFadeout P 0.1]
+
+[charaLayer J normal]
+[charaLayer O normal]
+[charaLayer I normal]
+[charaLayer P normal]
+
+[charaSet N 5021001 1 クー・フーリン(術)]
+[charaScale N 1.3]
+
+[sceneSet T 105500 1]
+[charaScale T 1.3]
+
+[scene 105500]
+
+[charaDepth T 1]
+[charaDepth N 2]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 -100,0]
+[charaFadein T 0.1 -100,-250]
+[charaMove N 0,0 20.0]
+[charaMove T 0,-250 20.0]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+[wt 0.4]
+
+＠マシュ
+北欧圏からは大神オーディンの力を受けた[r]キャスタークラスのクー・フーリンさん[line 3]
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaFadeout N 0.1]
+[charaFadeout T 0.1]
+
+[charaSet O 3012001 1 ブリュンヒルデ]
+[charaScale O 1.3]
+[charaSet P 5039000 1 スカサハ＝スカディ]
+[charaScale P 1.3]
+[charaSet Q 1046001 1 伊吹童子]
+[charaScale Q 1.3]
+[charaSet R 1098284510 1 丑御前]
+[charaScale R 1.3]
+[charaSet S 7001001 1 ヘラクレス]
+[charaScale S 1.3]
+[charaSet T 2009001 1 オリオン＆アルテミス]
+[charaScale T 1.3]
+[charaSet U 10020000 1 フローラ]
+[charaScale U 1.3]
+
+[sceneSet H 105600 1]
+[charaScale H 1.3]
+[sceneSet I 105600 1]
+[charaScale I 1.3]
+
+[sceneSet J 105600 1]
+[charaScale J 1.3]
+[sceneSet K 105600 1]
+[charaScale K 1.3]
+
+[sceneSet L 105600 1]
+[charaScale L 1.3]
+
+[sceneSet M 105600 1]
+[charaScale M 1.3]
+
+[sceneSet N 105600 1]
+[charaScale N 1.3]
+
+[charaLayer Q sub #A]
+[charaLayer H sub #A]
+[charaLayer S sub #A]
+[charaLayer I sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask25 5 255,255,255,255 0]
+
+[charaTalk depthOff]
+
+[charaDepth H 1]
+[charaDepth Q 2]
+[charaDepth I 3]
+[charaDepth S 4]
+
+[charaFace Q 1]
+[charaFadein Q 0.1 -100,200]
+[charaFadein H 0.1 150,-100]
+
+[scene 105600]
+
+[charaDepth L 1]
+[charaDepth O 2]
+[charaDepth M 3]
+[charaDepth P 4]
+[charaDepth J 5]
+[charaDepth R 6]
+[charaDepth N 7]
+[charaDepth U 8]
+[charaDepth K 9]
+[charaDepth T 10]
+
+[wt 0.5]
+
+[charaFace O 1]
+[charaFadein O 0.1 100,0]
+[charaFadein L 0.1 100,-250]
+[charaMove O 0,0 20.0]
+[charaMove L 0,-250 20.0]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+[wt 0.4]
+
+
+＠マシュ
+戦乙女にして半神ブリュンヒルデ、
+[k]
+
+[messageOff]
+
+[charaFace P 1]
+[charaFadein P 0.4 -100,0]
+[charaFadein M 0.4 -100,-250]
+[charaMove P 0,0 20.0]
+[charaMove M 0,-250 20.0]
+[wt 0.5]
+[charaFadeout O 0.1]
+[charaFadeout L 0.1]
+
+＠マシュ
+異聞帯の習合神スカサハ＝スカディ！
+[k]
+
+[messageOff]
+
+[subRenderFadein #A 0.3 -210,-220]
+[charaFace R 2]
+[charaFadein R 0.3 250,50]
+[charaFadein J 0.3 -150,-200]
+[charaMove R 250,0 15.0]
+[charaMove J -150,-250 15.0]
+[charaMove Q -100,250 15.0]
+[charaMove H 150,-50 15.0]
+
+[wt 0.7]
+
+[charaFadeout P 0.1]
+[charaFadeout M 0.1]
+
+＠マシュ
+極東圏からは[#伊吹大明神:八　岐　大　蛇]の分霊・伊吹童子に、[r][#牛頭天王:ご ず て ん の う]の子たる丑御前、
+[k]
+
+[messageOff]
+
+[wt 0.1]
+
+[charaFace S 0]
+[charaFadeinFSL S 0.5 -50,250]
+[charaFace T 0]
+[charaFadeinFSR T 0.5 220,-50]
+[charaFadein K 0.3 -200,-280]
+[charaFadein I 0.3 200,-100]
+[charaMoveFSL S -50,200 12.0]
+[charaMoveFSR T 220,0 12.0]
+[charaMove K -200,-230 12.0]
+[charaMove I 200,-150 12.0]
+
+[wt 0.5]
+
+[charaFadeout R 0.1]
+[charaFadeout Q 0.1]
+
+＠マシュ
+ギリシャ神話からは最高存在ゼウスの子ヘラクレス、[r]特殊な霊基ですが女神アルテミス、
+[k]
+
+[messageOff]
+
+[charaFace U 0]
+[charaFadein U 0.1 0,100]
+[charaFadein N 0.1 0,-150]
+
+[charaMove U 0,0 10.0]
+[charaMove N 0,-250 10.3]
+
+[subRenderFadeout #A 0.5]
+[charaFadeout T 0.5]
+[charaFadeout K 0.5]
+
+[wt 0.5]
+
+[charaFadeout S 0.1]
+[charaFadeout I 0.1]
+
+＠マシュ
+ギリシャにおけるクローリス神に相当する、[r]ローマ神話の花神フローラ……
+[k]
+
+＠マシュ
+そして[line 3]
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaFadeout U 0.1]
+[charaFadeout N 0.1]
+[charaFadeout J 0.1]
+
+[charaFadeout Q 0.1]
+[charaFadeout H 0.1]
+[charaFadeout S 0.1]
+[charaFadeout I 0.1]
+
+[charaLayer Q normal]
+[charaLayer H normal]
+[charaLayer S normal]
+[charaLayer I normal]
+
+[charaSet V 3013001 1 スカサハ]
+[charaSet W 1059000 1 ヤマトタケル]
+[charaSet X 3011001 1 フィン・マックール]
+
+[scene 277700]
+[wt 1.5]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk V]
+[charaFace V 0]
+[charaFadein V 0.4 0]
+
+[charaFace W 19]
+[charaFadein W 0.4 2]
+[wt 0.5]
+
+＠スカサハ
+神か？[r]ん、殺せばいいのか？
+[k]
+
+＠ヤマトタケル
+おお、もしや強き神がいるのか。[r]腕が鳴るというもの！
+[k]
+
+？1：どうどう、どうどう
+？2：まずは様子を見て、それから会話！
+？！
+
+[messageOff]
+[charaTalk off]
+
+
+[charaFace V 4]
+[charaFace W 14]
+
+[wt 1.5]
+
+？1：目に見えてがっかりしない！
+？！
+
+[charaFadeout V 0.1]
+[charaFadeout W 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+……………………。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠マシュ
+[line 3]なんと言いますか、その、[r]カルデアには古き神々の[#残滓:ざんし]たる神霊のみならず、
+[k]
+
+＠マシュ
+神殺しの英霊の方々も[r]いらっしゃいますので……
+[k]
+
+[charaFace E 6]
+
+＠マシュ
+あ！[r]も、もちろん、通常であれば所長の仰る通りです！
+[k]
+
+[charaFace E 0]
+
+＠マシュ
+特異点内でもそうです。[r]リソースと召喚数の限られる状況では、
+[k]
+
+＠マシュ
+神霊の発生という状況は、[r]致命的な事態になり得ます！
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk X]
+[charaFace X 0]
+[charaFadein X 0.4 1]
+[wt 0.4]
+
+＠フィン・マックール
+まあ、しかし[#此処:こ　こ]はカルデアだ。[r]特異点ではなく、通常の外界でもない。
+[k]
+
+[charaFace X 1]
+
+＠フィン・マックール
+かつてであればともかく、[r]今さら神霊サーヴァントが一騎増えたところで！
+[k]
+
+＠フィン・マックール
+驚くには値しないということだとも！[r]あっはっはっはっは。
+[k]
+
+[charaFace X 0]
+
+＠フィン・マックール
+ちなみに女神デメテルと言ったかな？[r]……彼女、害意のある神霊ではないようだね。
+[k]
+
+＠フィン・マックール
+あの霊基は美しく、優しく、穏やかに在るようだ。[r]危険はないと私が保証しよう。[bgmStop BGM_EVENT_131 1.5]
+[k]
+
+[charaFadeout X 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+…………驚くには値しない、か。
+[k]
+
+
+[charaFace D 0]
+
+[bgm BGM_MAP_122 0.1]
+＠オルガマリー
+時計塔時代のわたしが聞いたら卒倒するかも。[r]でも正論ね。
+[k]
+
+＠オルガマリー
+加えて、知恵の英霊のお墨付きとくれば、[r]ここは納得すべきなんでしょうね。
+[k]
+
+[charaFace D 3]
+
+＠オルガマリー
+正直すんなり呑み込み難いけれど……[r]はー。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠マシュ
+わかります。
+[k]
+
+？1：うん
+？2：[&自分:わたし]たちも[&慣れた:慣れちゃった]だけで
+
+
+？！
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+[wt 0.5]
+
+？1：気持ちはわかります
+？！
+
+[charaFace D 17]
+
+＠オルガマリー
+……いいでしょう。[r]納得、いえ、了解できるよう頭を切り替えます。
+[k]
+
+[charaFace D 0]
+
+＠オルガマリー
+それじゃあ、アラートを消して。[r]召喚された神霊との[#意思疎通:い し そ つ う]に移行ね。
+[k]
+
+＠オルガマリー
+対象は女神デメテル。[r]オリュンポス十二神の一柱、そうよね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠マシュ
+はい。[r]大地母神ガイアの系譜にある豊穣の女神です。
+[k]
+
+＠マシュ
+娘ペルセポネを深く愛する、[r]母としての伝説が広く知られています。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+[#不死の食物:ア ン ブ ロ シ ア]の生産者、だったかしら。[r]魔術師としては興味深い存在だけど[line 3]
+[k]
+
+[charaFace D 0]
+
+＠オルガマリー
+ここは慣れている人間が適任でしょ。[r]対話は貴方たちに任せるわ。
+[k]
+
+？1：了解！
+？！
+
+[messageOff]
+
+[charaFace D 21]
+
+[wt 1.5]
+
+[fadeout black 1.5]
+[bgmStop BGM_MAP_122 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[scene 10000]
+
+
+[wt 1.5]
+
+[fadein black 0.1]
+[wait fade]
+
+[skip false]
+[wt 1.0]
+
+[input selectBranch]
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+[subCameraOff]
+[blurOff]
+[pictureFrame]
+
+[charaSet A 98115000 1 初期化用ダミー]
+[charaSet B 98115000 1 初期化用ダミー]
+[charaSet C 98115000 1 初期化用ダミー]
+[charaSet D 98115000 1 初期化用ダミー]
+[charaSet E 98115000 1 初期化用ダミー]
+[charaSet F 98115000 1 初期化用ダミー]
+[charaSet G 98115000 1 初期化用ダミー]
+[charaSet H 98115000 1 初期化用ダミー]
+[charaSet I 98115000 1 初期化用ダミー]
+[charaSet J 98115000 1 初期化用ダミー]
+[charaSet K 98115000 1 初期化用ダミー]
+[charaSet L 98115000 1 初期化用ダミー]
+[charaSet M 98115000 1 初期化用ダミー]
+[charaSet N 98115000 1 初期化用ダミー]
+[charaSet O 98115000 1 初期化用ダミー]
+[charaSet P 98115000 1 初期化用ダミー]
+[charaSet Q 98115000 1 初期化用ダミー]
+[charaSet R 98115000 1 初期化用ダミー]
+[charaSet S 98115000 1 初期化用ダミー]
+[charaSet T 98115000 1 初期化用ダミー]
+[charaSet U 98115000 1 初期化用ダミー]
+[charaSet V 98115000 1 初期化用ダミー]
+[charaSet W 98115000 1 初期化用ダミー]
+[charaSet X 98115000 1 初期化用ダミー]
+[charaSet Y 98115000 1 初期化用ダミー]
+[charaSet Z 98115000 1 初期化用ダミー]
+
+[charaTalk depthOff]
+
+[scene 10000]
+[wt 0.4]
+
+[maskin black 1.0]
+[wait mask]
+
+[label selectBranch]
+[wt 0.5]
+
+
+
+[fowardEffect bit_queststart80603]
+[wait fowardEffect]
+
+
+[wt 0.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[soundStopAll]
+[end]
+

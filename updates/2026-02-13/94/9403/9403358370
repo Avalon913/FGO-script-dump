@@ -1,0 +1,815 @@
+
+＄94-03-35-83-7-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 7052000 1 呼延灼]
+[charaScale A 1.2]
+[charaSet B 7052000 1 呼延灼2]
+[charaScale B 1.4]
+[charaSet C 7052000 1 呼延灼3]
+[sceneSet D 109600 1]
+[charaScale D 1.2]
+[sceneSet E 109600 1]
+[charaScale E 1.2]
+[sceneSet F 109600 1]
+[charaScale F 1.2]
+[imageSet G cut317_choco 1]
+[charaScale G 0.8]
+[charaSet H 98115000 1 エフェクト用1]
+[equipSet V 9809690 1 バレンタイン礼装]
+
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth A 2]
+[charaDepth E 3]
+[charaDepth G 4]
+[charaDepth D 5]
+[charaDepth B 7]
+[charaDepth V 9]
+
+[scene 109600]
+[charaTalk off]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 0,10]
+[charaFadein F 0.4 0,-300]
+[charaMoveScaleEase A 1.4 0.4 easeOutQuart]
+[charaMoveEase A 0,40 0.4 easeOutQuart]
+[charaMoveScaleEase F 1.4 0.4 easeOutQuart]
+[charaMoveEase F 0,-370 0.4 easeOutQuart]
+
+[se ade227]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V010]
+[f large]夏！！[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[charaFadein G 0.4 50,-150]
+[charaFadein E 0.4 -70,-270]
+[charaMoveEase G 0,-150 0.4 easeOutQuart]
+[charaMoveEase E -120,-270 0.4 easeOutQuart]
+[wt 0.4]
+
+[se ade227]
+
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V020]
+[f large]チョコ！！[wait tVoice]
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ade588 0 0.5]
+[effect bit_talk_lens_flare_fs 0,0]
+[charaFadein D 0.1 0,-250]
+[charaMoveEase D 0,-300 0.4 easeOutQuart]
+[wt 0.4]
+
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V030]
+[f large]溶ける！！[wait tVoice]
+[k]
+
+
+[messageOff]
+[cueSeStop 21_ade588 1.0]
+[se ad953]
+[seVolume ad953 0.0 0.0]
+[seVolume ad953 0.3 1.0]
+[wt 1.5]
+
+[fadeout black 1.5]
+[seStop ad953 1.5]
+[wait fade]
+
+[effectDestroy bit_talk_lens_flare_fs]
+[charaFadeout D 0.1]
+[wt 1.0]
+
+
+[charaScale A 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_146 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V040]
+……という訳でどうしましょう、マスター。[r]チョコを差し上げたいのですが、溶けるのです。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad173]
+[charaMoveScale A 1.05 0.3]
+[charaMove A 0,5 0.3]
+[wt 0.5]
+[seStop ad173 0.1]
+
+[charaFace A 8]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V050]
+ほら見てください。この……なんか……[r]黒い粘土みたいなものを……。[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V060]
+さすがにこれではどうしようもないので、[r]作り直したものをお渡ししたい。[wait tVoice]
+[k]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V070]
+それでご相談なのですが……。[twt 3.0][charaFace A 0][r]チョコを溶かさない方法を教えていただければ！[wait tVoice]
+[k]
+
+？1：それは簡単じゃない？
+？！
+
+[messageOff]
+[charaFace A 9]
+[wt 1.2]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_146 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+
+[branchQuestClear lblClear01d 05000000]
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[label lblClear01a]
+[scene 105600]
+[branch lblConf01]
+
+[label lblClear01b]
+[scene 105900]
+[branch lblConf01]
+
+[label lblClear01c]
+[scene 158100]
+[branch lblConf01]
+
+[label lblClear01d]
+[scene 105600]
+
+[label lblConf01]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_147 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V080]
+冷蔵庫で冷やす……。そうですね、[r]何故こんな簡単なことを思い付かなかったのか。[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_147 1.0 0.5]
+[wait wipe]
+
+[charaFace A 1]
+[wt 2.0]
+
+[wipein rollLeft 1.0 1.0]
+[bgm BGM_EVENT_147 1.0 1.0]
+[wait wipe]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V090]
+よし、一時間経過。[r]これだけ冷やせば、問題ないでしょう！[wait tVoice]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_147 1.0]
+[se ad79]
+[wt 0.1]
+[fowardEffect bit_talk_valentinegift01 0,0]
+[backEffect bit_talk_valentine_brilliant_fs 0,0]
+[wt 4.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V100]
+はい。これで冷え冷え……。[wait tVoice]
+[k]
+
+[messageOff]
+[se ade50]
+[wt 1.0]
+[seStop ade50 0.2]
+[wt 1.0]
+
+[se ad119]
+[charaFace A 9]
+[effect bit_talk_41_remake 0,0]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V110]
+[f large]ヒエー！？[charaShake A 0.01 3 2 0][wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[seStop ad119 1.0]
+[wait fade]
+[charaShakeStop A]
+[effectDestroy bit_talk_41_remake]
+
+[fowardEffectDestroy bit_talk_valentinegift01]
+[backEffectDestroy bit_talk_valentine_brilliant_fs]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branchQuestClear lblClear02d 05000000]
+[branchQuestClear lblClear02c 94064915]
+[branchQuestClear lblClear02c 3001101]
+[branchQuestClear lblClear02b 3000303]
+
+[label lblClear02a]
+[label lblClear02d]
+[scene 106000]
+[sceneSet I 106000 1]
+[branch lblConf02]
+
+[label lblClear02b]
+[scene 105800]
+[sceneSet I 105800 1]
+[branch lblConf02]
+
+[label lblClear02c]
+[scene 157900]
+[sceneSet I 157900 1]
+
+[label lblConf02]
+
+[sceneSet J 129600 1]
+[charaScale J 1.2]
+
+[charaScale B 1.1]
+[charaScale I 1.1]
+
+[charaDepth A 1]
+[charaDepth I 3]
+[charaDepth B 4]
+[charaDepth V 9]
+[wt 1.0]
+
+
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V120]
+……という訳で、どんなに冷やしても[r]私のチョコが溶ける謎現象が起きています。[wait tVoice]
+[k]
+
+[branchQuestClear lblClear03b 94147229]
+
+[label lblClear03a]
+[messageOff]
+[branch lblConf03]
+
+[label lblClear03b]
+
+[charaFace A 7]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V130]
+推測ですが……去年の夏、大統領のパワーボールを[r]取り込んで大暴れした後遺症かなって……。[wait tVoice]
+[k]
+
+[messageOff]
+[label lblConf03]
+
+[charaFace B 9]
+[charaFadein B 0.4 0,10]
+[charaFadein I 0.4 0,-230]
+[charaMoveScaleEase B 1.25 0.4 easeOutQuart]
+[charaMoveEase B 0,20 0.4 easeOutQuart]
+[charaMoveScaleEase I 1.25 0.4 easeOutQuart]
+[charaMoveEase I 0,-300 0.4 easeOutQuart]
+[wt 0.4]
+
+＠B：呼延灼
+[tVoice ValVoice_705200 0_V140]
+う[messageShake 0.03 4 2 2.0]わーーーーん！[twt 2.4][r]なんでーーーー！[messageShake 0.03 4 2 1.8][wait tVoice]
+[k]
+
+？1：はいどうどう、はいどうどう
+？！
+
+[charaTalk on]
+[charaTalk B]
+[charaFaceFade B 8 0.2]
+
+＠B：呼延灼
+[tVoice ValVoice_705200 0_V150]
+うう……ぐすっ……こんなダメダメなサーヴァントで[r]ごめんなさい……もうこうなれば……。[wait tVoice]
+[k]
+
+[charaFace B 2]
+
+＠B：呼延灼
+[tVoice ValVoice_705200 0_V160]
+この世全てのチョコを溶かし尽くし、[r]私はそれにダイブしてチョコと一体化するしか……。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.8]
+
+[charaFace B 0]
+
+＠B：呼延灼
+[tVoice ValVoice_705200 0_V170]
+え？　どういうコト、ですか？[wait tVoice]
+[k]
+
+[charaFace B 2]
+
+＠B：呼延灼
+[tVoice ValVoice_705200 0_V180]
+[line 3]だって、そうすれば私は溶けたチョコの[r]生命体として自由にチョコを支配できますよね？[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠B：呼延灼
+[tVoice ValVoice_705200 0_V190]
+そうしてマスターの手元に届くチョコを管理すれば、[r]私はチョコの女王となるのでは？[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk A,B]
+[charaFadeout B 0.4]
+[charaFadeout I 0.4]
+[wt 0.8]
+
+[bgmStop BGM_HALLOWEEN_2021_1 1.5]
+
+？1：（呼延灼ならやりかねないと思うので……）
+？2：とりあえず頭冷やしてー
+？！
+
+[messageOff]
+
+[masterBranch _Male01 _Female01]
+
+[label _Male01]
+
+[se bas16]
+[fowardEffect bit_talk_CommandMantra_05]
+[wt 2.2]
+
+[branch _branchEnd01]
+
+[label _Female01]
+
+[se bas16]
+[fowardEffect bit_talk_CommandMantra_08]
+[wt 2.2]
+
+[branch _branchEnd01]
+
+[label _branchEnd01]
+[wt 0.5]
+
+[charaFace A 9]
+[charaMoveReturn A 0,3 0.2]
+[wt 1.0]
+
+
+[charaFace A 8]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V200]
+……正気に戻りました、ごめんなさい！[wait tVoice]
+[k]
+
+？1：どういたしましてー
+？！
+
+
+[bgm BGM_AMAZONES 0.1]
+[charaFace A 3]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V210]
+でも、どうしましょう。[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V220]
+このままだといつまで経ってもチョコを[r]お渡しできないのですが……。[wait tVoice]
+[k]
+
+？1：確かに……どうしたもの[&だろう:かな]
+？！
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V230]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFaceFade A 0 0.2]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V240]
+あの、マスターちょっとよろしいですか？[r]その……こういう事態に陥ったら、普通は……。[wait tVoice]
+[k]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V250]
+『チョコはいらないよ』とか、[r]そう言われても不思議ではないかな、と……。[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V260]
+いえ、マスターは私のためを思って、[r]そう仰るかな、と……。[wait tVoice]
+[k]
+
+？1：でも、チョコを贈れないと悲しいでしょ？
+？！
+
+[charaFace A 0]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V270]
+それは[line 3][twt 1.5][charaMoveReturn A 0,-5 0.4]はい、とても。[wait tVoice]
+[k]
+
+？1：[&自分:わたし]も貰えないと悲しいし
+？2：だったらギリギリまで考えよう
+？！
+
+[messageOff]
+[charaFace A 9]
+＠呼延灼
+[tVoice ValVoice_705200 0_V280]
+～[charaShake A 0.03 3 2 2.0]～～ッ！[wait tVoice]
+[k]
+
+[charaShakeStop A]
+[charaFace A 6]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V290]
+その言葉だけで充分なほど、[r]私は満足してしまいましたが……。[wait tVoice]
+[k]
+
+[se ad7]
+[charaFace A 5]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,10 0.2]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V300]
+か、考えましょう！　だって、なんやかんやあって[r]最終的にチョコを贈れました、の方が……。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V310]
+ずっといいですもんね！[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.5]
+[bgmStop BGM_AMAZONES 1.5]
+[wait fade]
+
+[charaDepth C 4]
+
+[charaScale A 1.0]
+[wt 1.0]
+
+[charaFace A 8]
+[fadein black 1.5]
+[se ad648]
+[seVolume ad648 0.0 0.0]
+[seVolume ad648 1.5 1.0]
+[wait fade]
+[wt 1.0]
+
+[seStop ad648 1.0]
+[wt 0.5]
+
+[charaTalk A]
+[charaFaceFade A 8 0.1]
+[wt 1.0]
+
+[seStop ad648 0.3]
+[se ade178]
+[seVolume ade178 0.0 0.6]
+[charaFace A 5]
+[wt 1.5]
+
+[charaFace A 0]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V320]
+……閃きました。[r]マスター……私と一緒に、行って欲しい場所があります。[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V330]
+マスターには……大変ご迷惑をかけるかと、[r]思うのですが……！[wait tVoice]
+[k]
+
+？1：ど、どこ？
+？！
+
+[messageOff]
+[se ad8]
+
+[fadeout black 0.7]
+[wait fade]
+[wt 0.5]
+
+[se ade421]
+[se ade423]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[sceneSet J 135900 1]
+[charaScale J 1.3]
+
+[scene 135900]
+[wt 1.0]
+
+[charaPut Z 1]
+[charaEffect Z bit_talk_snow_heavy]
+
+[cameraMove 0.1 0,0 1.02]
+[seStop ade421 1.0]
+[seStop ade423 1.0]
+[wt 1.0]
+
+[charaDepth H 1]
+[charaDepth A 2]
+[charaDepth D 3]
+[charaDepth E 4]
+[charaDepth F 5]
+[charaDepth B 6]
+[charaDepth I 7]
+[charaDepth J 8]
+[charaDepth Z 9]
+[charaDepth V 10]
+
+
+[wt 1.0]
+
+[charaTalk off]
+[charaFadein J 0.1 80,-250]
+[charaMove J -80,-250 15.0]
+
+[fadein black 1.0]
+[se ad555]
+[seVolume ad555 0.0 0.0]
+[seVolume ad555 1.5 1.0]
+[wait fade]
+
+[seStop ad555 3.0]
+[wt 2.0]
+[charaFadeout J 1.0]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_27 0.1]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V340]
+あばばばば……さむい……！[charaShake A 0.03 3 2 3.0][wait tVoice]
+[k]
+
+？1：何でこんなところにー！？
+？！
+
+[charaFace A 5]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V350]
+ほ、ほら見てください！[r]チョコが溶けてないです！[wait tVoice]
+[k]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V360]
+た、大変みっともないですが！[r]あと寒いですが！[wait tVoice]
+[k]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V370]
+受け取って……いただけると！[wait tVoice]
+[k]
+
+？1：もちろん！
+？！
+
+[messageOff]
+[charaFace A 6]
+[se ad79]
+[wt 0.1]
+[fowardEffect bit_talk_valentinegift03 0,0]
+[backEffect bit_talk_valentine_brilliant_fs 0,0]
+[wt 1.5]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[charaFace A 6]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V380]
+ありがとうございました！[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V390]
+ここから出ると多分、溶けてしまうので、[r]早めに食べていただけると……！[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V400]
+う[charaShake A 0.03 5 2 3.0]う、さむい……！[twt 3.0][charaFace A 9][r]し、失礼しますマスター！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad586]
+[charaMoveScale A 1.4 0.4]
+[charaMove A 0,30 0.4]
+[wt 0.4]
+[se ad7]
+[seStop ad586 0.4]
+[shake 0.05 5 4 0.3]
+[wt 0.5]
+
+？1：ちょっとー！？
+？！
+
+[shake 0.03 3 5 1.0]
+[wt 0.1]
+[cueSe Servants_603900 bac1061]
+[wt 0.9]
+[cueSeStop bac1061 0.2]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V410]
+だだだだってさむいさむいさむい！[r]おねがいなのではやくたべてーー！[wait tVoice]
+[k]
+
+[messageOff]
+[cameraMove 0.2 0,8 1.02]
+[wt 0.2]
+[cameraMove 0.2 0,0 1.02]
+[wt 0.2]
+[cameraMove 0.2 0,8 1.02]
+[wt 0.2]
+[cameraMove 0.2 0,0 1.02]
+[wt 0.6]
+
+[charaTalk off]
+[cueSe SE_26 26_ade1339]
+[wt 0.5]
+[charaFadein V 0.4 0,-70]
+[wt 1.0]
+
+[charaFadeout V 0.2]
+[wt 0.2]
+[se ade27]
+[wt 1.5]
+
+？1：あ、美味しい！
+？！
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaMoveReturn A 0,40 0.3]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V420]
+やったー！[twt 0.3][charaMoveReturn A 0,40 0.3]　嬉しいです、嬉しいです！[r]ありがとうございますーーー！[twt 0.3][se ade115][charaMoveScale A 1.45 0.2][charaMove A 0,35 0.2][wait tVoice]
+[k]
+
+？1：あと少し……少しだけ……距離を……！
+？！
+
+[charaFace A 6]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V430]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFaceFade A 4 0.2]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V440]
+き、きこえませーん……。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V450]
+さ、そんなことよりマスター！[r]チョコ、どんどん食べてくださいねー！[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠呼延灼
+[tVoice ValVoice_705200 0_V460]
+ああ、呼延灼は果報者です！[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_27 2.0]
+[wait fade]
+
+[charaEffectDestroy Z bit_talk_snow_heavy]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bas2]
+[charaFadein V 0.5 0,-70]
+[wt 3.0]
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

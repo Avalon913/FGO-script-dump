@@ -1,0 +1,895 @@
+
+＄94-03-35-82-9-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+
+[charaSet A 9019000 1 メタトロン・ジャンヌ_第一]
+[charaSet B 1098321000 1 【怠惰】]
+[charaSet C 9019002 1 メタトロン・ジャンヌ]
+
+[sceneSet J 245400 1]
+[charaScale J 1.2]
+[sceneSet K 245400 1]
+[charaScale K 1.2]
+[sceneSet L 245400 1]
+[charaScale L 1.2]
+[sceneSet M 245400 1]
+[charaScale M 1.1]
+
+[charaSet N 98115000 1 エフェクト用1]
+[charaSet O 98115000 1 エフェクト用2]
+[charaSet P 98115000 1 エフェクト用3]
+
+[imageSet U cut772_mjn_chocolate 1]
+
+[equipSet V 9809610 1 メタトロンのチョコレート(チョコ3つ)]
+
+[subCameraOn 3]
+[charaLayer A sub #A]
+[charaLayer J sub #A]
+[charaLayer N sub #A]
+
+[charaDepth N 4]
+[charaDepth A 3]
+[charaDepth J 1]
+
+[charaScale N 0.5]
+
+[charaFace A 0]
+[charaFadein A 0.1 10,280]
+[charaFadein J 0.1 400,0]
+
+[subCameraFilter #A maskEdge cut359_mask10 4 255,255,255,255 0]
+
+[charaLayer B sub #B]
+[charaLayer K sub #B]
+[charaLayer O sub #B]
+
+[charaDepth O 4]
+[charaDepth B 3]
+[charaDepth K 1]
+
+[charaScale O 0.5]
+
+[charaFace B 0]
+[charaFadein B 0.1 -10,300]
+[charaFadein K 0.1 -400,0]
+
+[subCameraFilter #B maskEdge cut359_mask16 4 255,255,255,255 0]
+
+[charaLayer U sub #C]
+
+[charaScale U 0.8]
+[charaFadein U 0.1 0,-170]
+
+[subCameraFilter #C through]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth C 2]
+[charaDepth P 3]
+[charaDepth L 5]
+
+[scene 245400]
+
+[pictureFrameTop cut063_cinema]
+
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[charaFadein M 0.1 0,-300]
+[wt 0.1]
+
+[charaFadein L 0.1 0,-300]
+[charaMoveEase L 0,-350 10.0 easeOutSine]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_WHITE_1 0.1]
+[wt 3.0]
+
+[charaFadeout L 0.7]
+[wt 1.5]
+
+
+
+
+[charaTalk C]
+[charaFaceFade C 2 0.2]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V010]
+……。[r]……ここは……法廷ですね。[wait tVoice]
+[k]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V020]
+おかしいですね。私は普段通り、[r]魔力節約のために霊基を凍結していたのですが。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 0]
+[subRenderFadeinFSR #B 0.4 390,-280]
+[subRenderMoveEaseFSR #B 370,-330 0.5 easeOutCubic]
+[wt 0.4]
+
+＠【怠惰】
+[tVoice ValVoice_901900 0_V030]
+はーい、法廷ですよー。[r]そして私が裁判長ー。[wait tVoice]
+[k]
+
+[charaTalk C]
+[charaFace C 25]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V040]
+はい？[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 11]
+[subRenderFadeinFSL #A 0.4 -390,-280]
+[subRenderMoveEaseFSL #A -370,-330 0.5 easeOutCubic]
+[wt 0.4]
+
+＠A：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V050]
+そして私が検事です。[r]弁護はご自身でお願いします。[wait tVoice]
+[k]
+
+[clear]
+[charaTalk C]
+[charaFace C 11]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V060]
+話についていけないのですが。[r]何を弁護し、何を弾劾されるのです？[wait tVoice]
+[k]
+
+[bgmStop BGM_WHITE_1 1.5]
+
+[clear]
+[charaTalk A]
+[charaFace A 0]
+
+＠A：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V070]
+知れたことです。[r]第一回血で血を洗うバレンタインデー裁判です。[wait tVoice]
+[k]
+
+[clear]
+[charaTalk C]
+[charaFace C 5]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V080]
+……は？[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk A,B,C]
+[charaFace B 9]
+[cueSe SE_25 25_ad1493]
+[charaMoveReturn B -10,298 0.3]
+[wt 1.0]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaTalk off]
+[charaFace A 9]
+[charaFace B 15]
+[charaFace C 0]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_146 0.1]
+
+[charaTalk on]
+[charaTalk A]
+
+＠A：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V090]
+まあ血で血を洗う、はたった今思い付いた[r]適当な形容なので気にしないでください。[wait tVoice]
+[k]
+
+[clear]
+[charaTalk C]
+[charaFace C 0]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V100]
+バレンタインデーがどうしたというのです。[r]私……いえ、私たちには関係のないコトでは。[wait tVoice]
+[k]
+
+[charaTalk B]
+[charaFace B 25]
+
+＠【怠惰】
+[tVoice ValVoice_901900 0_V110]
+え。何言ってんの。[charaFace C 2][r]私はちゃんとチョコあげるつもりだよ。[wait tVoice]
+[k]
+
+[charaFace A 0]
+[charaFace B 15]
+
+＠【怠惰】
+[tVoice ValVoice_901900 0_V120]
+日頃お世話になってるし。[r]一緒にダラダラしてくれるし。[wait tVoice]
+[k]
+
+[clear]
+[charaTalk C]
+[charaFace C 7]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V130]
+一緒にダラダラするのはとても良くないことですが、[r]それは一旦脇に置きます。[wait tVoice]
+[k]
+
+[charaFace C 0]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V140]
+……チョコを贈与する、というのは[r]どういうことですか。[wait tVoice]
+[k]
+
+[charaFace C 2]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V150]
+私はルーラーですよ。[r]それは公平性を損なう振る舞いです。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk A,B,C]
+[charaFace B 0]
+
+[cueSe SE_25 25_ad1494]
+[charaMoveReturn B -10,298 0.3]
+[wt 0.5]
+[charaMoveReturn B -10,298 0.3]
+[wt 0.7]
+
+[charaFace B 9]
+
+＠【怠惰】
+[tVoice ValVoice_901900 0_V160]
+却下。[wait tVoice]
+[k]
+
+[charaTalk C]
+[charaFace C 5]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V170]
+理[messageShake 0.03 3 3 0.5]不尽な！？[wait tVoice]
+[k]
+
+[clear]
+[charaTalk A]
+[charaFace A 0]
+
+＠A：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V180]
+そう、そこが問題です最終フォームのメタトロン。[twt 0.3][r]……貴女、まさかチョコをあげないつもりですか？[wait tVoice]
+[k]
+
+[clear]
+[charaTalk C]
+[charaFace C 11]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V190]
+当然です。[wait tVoice]
+[k]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V200]
+公平であることを保つため、[r]私はいかなる贈賄からも身を引きます。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk A,B,C]
+[charaFace B 0]
+
+[cueSe SE_25 25_ad1494]
+[charaMoveReturn B -10,298 0.3]
+[wt 0.5]
+[charaMoveReturn B -10,298 0.3]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 21]
+
+＠【怠惰】
+[tVoice ValVoice_901900 0_V210]
+はい死刑。[wait tVoice]
+[k]
+
+[charaTalk C]
+[charaFace C 26]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V220]
+何でですか。[wait tVoice]
+[k]
+
+[clear]
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 0]
+
+＠A：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V230]
+そもそも公平である、というのであれば。[r]我々は既にして、マスターという不公平さを抱えています。[wait tVoice]
+[k]
+
+＠A：メタトロン・ジャンヌ
+[tVoiceUser ValVoice_901900 0_V240 ValVoice_901900 0_V250]
+そしてその上で、[&彼:彼女]は魔力を提供し、[r]我々はそれを享受している訳です。[wait tVoice]
+[k]
+
+[clear]
+[charaTalk C]
+[charaFace C 12]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V260]
+つまり[line 3][r]既に、公平ではないと？[wait tVoice]
+[k]
+
+[clear]
+[charaTalk A]
+[charaFace A 2]
+
+＠A：メタトロン・ジャンヌ
+[tVoiceUser ValVoice_901900 0_V270 ValVoice_901900 0_V280]
+はい。不公平です。[r][&彼:彼女]から、比類なき愛情を受けているのに。[wait tVoice]
+[k]
+
+[clear]
+[charaTalk C]
+[charaFace C 4]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V290]
+あ、[charaShake C 0.02 4 2 0.7]愛っ……！？[wait tVoice]
+[k]
+
+[clear]
+[charaTalk A]
+[charaFace A 15]
+
+＠A：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V300]
+まあ、この場合は普遍的な愛情ですが。[r]家族愛とか、仲間向けの。[wait tVoice]
+[k]
+
+[clear]
+[charaTalk C]
+[charaFace C 10]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V310]
+……紛らわしい言い方をしないように。[wait tVoice]
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+
+＠【怠惰】
+[tVoice ValVoice_901900 0_V320]
+検事に警告。[wait tVoice]
+[k]
+
+＠【怠惰】
+[tVoice ValVoice_901900 0_V330]
+この被告人は一番[#情緒:じょうちょ]が幼稚なので、[r]愛とか言われるとキョドります。[wait tVoice]
+[k]
+
+[charaFace B 9]
+
+＠【怠惰】
+[tVoice ValVoice_901900 0_V340]
+気を遣ってあげなさい。[wait tVoice]
+[k]
+
+[charaTalk A]
+[charaFace A 9]
+
+＠A：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V350]
+仕方ありませんね。気を付けます。[wait tVoice]
+[k]
+
+[clear]
+[charaTalk C]
+[charaFace C 24]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V360]
+待ちなさい、それは私のことですか？[wait tVoice]
+[k]
+
+[charaTalk A,B]
+[charaFace A 0]
+[charaFace B 0]
+[charaMoveReturn A 10,276 0.4]
+[wt 0.05]
+[charaMoveReturn B -10,296 0.5]
+
+＠二人=spot[A,B]
+[tVoice ValVoice_901900 0_V370]
+うん。[wait tVoice]
+[k]
+
+[se ad7]
+[charaTalk C]
+[charaFace C 5]
+[charaMoveScaleEase C 1.2 0.2 easeInCirc]
+[charaMoveScaleEase M 1.3 0.2 easeInCirc]
+[charaMoveEase C 0,0 0.2 easeInCirc]
+[charaMoveEase M 0,-350 0.2 easeInCirc]
+[subRenderMoveEaseFSL #A -450,-330 0.2 easeInCirc]
+[subRenderMoveEaseFSR #B 450,-330 0.2 easeInCirc]
+[charaScale P 0.6]
+[charaEffect P bit_talk_41_remake 0,-70]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V380]
+異議あり！[messageShake 0.03 4 4 0.5][twt 1.6][r]ふ、不[messageShake 0.03 4 4 0.7]服です！　断じて不服です！[wait tVoice]
+[k]
+
+[messageOff]
+[charaEffectStop P bit_talk_41_remake]
+[charaTalk B]
+[charaFace B 9]
+[charaMoveScaleEase C 1.0 0.3 easeOutCubic]
+[charaMoveScaleEase M 1.1 0.3 easeOutCubic]
+[charaMoveEase C 0,-50 0.3 easeOutCubic]
+[charaMoveEase M 0,-300 0.3 easeOutCubic]
+[subRenderMoveEaseFSR #B 370,-330 0.3 easeOutCubic]
+[subRenderMoveEaseFSL #A -370,-330 0.3 easeOutCubic]
+
+＠【怠惰】
+[tVoice ValVoice_901900 0_V390]
+却下。[wait tVoice]
+[k]
+
+[charaTalk A]
+[charaFace A 9]
+
+＠A：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V400]
+では。検事としては最終フォームである貴女から、[r]チョコを渡すことを要求します。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠A：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V410]
+ああ、もちろん私と彼女の分も合わせて三つです。[r]代表として、責任を持って渡してください。[wait tVoice]
+[k]
+
+[clear]
+[charaTalk C]
+[charaFace C 5]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V420]
+そもそも私はチョコを贈ると決めた訳では！[wait tVoice]
+[k]
+
+[charaFace A 5]
+[charaPut N 0,250]
+[charaFace B 5]
+[charaPut O 0,250]
+
+＠二人=spot[A,B]
+[tVoice ValVoice_901900 0_V430]
+そ[messageShake 0.04 7 7 0.5]ういうのいいから！[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_146 1.0]
+[wait fade]
+
+[charaEffectDestroy P bit_talk_41_remake]
+
+[charaTalk off]
+[charaFace A 2]
+[charaFace B 2]
+[charaFace C 8]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_194 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFaceFade C 22 0.2]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V440]
+……わかりました。マスターに対して礼を尽くすのは、[r]公平な気持ちである、と私も賛同します。[wait tVoice]
+[k]
+
+[charaTalk B]
+[charaFace B 24]
+
+＠【怠惰】
+[tVoice ValVoice_901900 0_V450]
+二時間話し合ってやっと理解しやがった……。[twt 4.5][charaFaceFade B 13 0.2][r]疲れた……。[wait tVoice]
+[k]
+
+[charaTalk A]
+[charaFaceFade A 26 0.2]
+
+＠A：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V460]
+史上稀に見る頑固者ですね、私……。[wait tVoice]
+[k]
+
+[clear]
+[charaTalk C]
+[charaFace C 0]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V470]
+ではチョコレートですが……。[wait tVoice]
+[k]
+
+[charaTalk B]
+[charaFace B 14]
+
+＠【怠惰】
+[tVoice ValVoice_901900 0_V480]
+私はこれ。[charaMoveReturn B -10,296 0.5][wait tVoice]
+[k]
+
+[charaTalk A]
+[charaFace A 15]
+
+＠A：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V490]
+私はこちらです。[charaMoveReturn A 10,276 0.5][wait tVoice]
+[k]
+
+
+[messageOff]
+[se bas2]
+[subRenderFadein #C 0.4 0,0]
+[charaFadeout C 0.4]
+[charaFadeout M 0.4]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[wt 2.5]
+
+[subRenderFadeout #C 0.4]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-50]
+[charaFadein M 0.4 0,-250]
+[charaFace A 15]
+[subRenderFadeinFSL #A 0.4 -370,-330]
+[charaFace B 14]
+[subRenderFadeinFSR #B 0.4 370,-330]
+[wt 0.4]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V500]
+……もう用意済みでしたか。[r]では私も……。[wait tVoice]
+[k]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V510]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFace C 22]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V520]
+チョコレートはどうすれば？[wait tVoice]
+[k]
+
+[charaTalk B]
+[charaFace B 11]
+
+＠【怠惰】
+[tVoice ValVoice_901900 0_V530]
+それは自分で考えなさい。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 23]
+[wt 1.2]
+
+[charaTalk B]
+[charaFace B 15]
+
+＠【怠惰】
+[tVoice ValVoice_901900 0_V540]
+手作りする必要はないですが、[r]心を籠めることは必要です。[wait tVoice]
+[k]
+
+[charaTalk A]
+[charaFace A 1]
+
+＠A：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V550]
+代表に相応しいチョコレートを贈るように。[wait tVoice]
+[k]
+
+[charaTalk B]
+[charaFace B 5]
+
+＠【怠惰】
+[tVoice ValVoice_901900 0_V560]
+はい、裁判終わり！[r]かいさーん！[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[cueSe SE_25 25_ad1493]
+[charaMoveReturn B -10,298 0.3]
+[wt 1.5]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_194 1.5]
+[wait fade]
+
+[pictureFrameTop]
+
+[charaFadeout C 0.1]
+[charaFadeout M 0.1]
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[wt 0.1]
+
+[branchQuestClear lblClear01d 05000000]
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[label lblClear01a]
+[label lblClear01d]
+[scene 106000]
+
+[branch lblConf01]
+
+[label lblClear01b]
+[scene 105800]
+
+[branch lblConf01]
+
+[label lblClear01c]
+[scene 157900]
+
+[label lblConf01]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 0,0]
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+[charaFace C 10]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V570]
+そんな訳で、こちらがチョコレートです。[r]どうぞ受け取ってください。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V580]
+一つ目は最初の私、二つ目は怠惰な私、[r]そして最後の三つ目は……。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFaceFade C 22 0.15]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V590]
+……いえ、何でもありません。[r]これで公平性は保たれました、では。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad598]
+[charaSpecialEffect C wipeTime 0,0 1.5]
+[wait charaSpecialEffect C]
+[wt 0.5]
+[seStop ad598 1.0]
+[wt 1.0]
+
+？1：いきなりまくし立てて帰っていった……
+？2：どういう訳かサッパリわからない……
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_HALLOWEEN_2021_1 1.0]
+[wait fade]
+
+[charaScale C 1.0]
+[charaScale M 1.1]
+
+[charaScale A 1.0]
+[charaScale B 1.0]
+[charaMove A 10,280 0.1]
+[charaMove B -10,300 0.1]
+
+[charaTalk off]
+
+[charaFace C 8]
+[charaFadein C 0.1 0,-50]
+[charaFadein M 0.1 0,-300]
+[charaFace A 11]
+[subRenderFadeinFSL #A 0.1 -370,-330]
+[charaFace B 2]
+[subRenderFadeinFSR #B 0.1 370,-330]
+
+[scene 245400]
+
+[pictureFrameTop cut063_cinema]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk B]
+
+＠【怠惰】
+[tVoice ValVoice_901900 0_V600]
+では第二回最終フォームの貴女、[twt 4.7][r]ちょっとヘタレすぎでは裁判を始めます。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[cueSe SE_25 25_ad1493]
+[charaMoveReturn B -10,298 0.3]
+[wt 1.0]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 5]
+
+＠【怠惰】
+[tVoice ValVoice_901900 0_V610]
+はい死刑！！[charaFace C 4][wait tVoice]
+[k]
+
+[charaTalk C]
+[charaFace C 23]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V620]
+理不尽では！　[twt 1.2]理不尽では！[wait tVoice]
+[k]
+
+[charaTalk B]
+[charaFace B 11]
+
+＠【怠惰】
+[tVoice ValVoice_901900 0_V630]
+では何故、渡す際に『いつもありがとう』とか、[r]言わなかったのですか。[wait tVoice]
+[k]
+
+[charaTalk C]
+[charaFace C 22]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V640]
+そ、それは[line 3][charaShake C 0.04 2 1 0.6][wait tVoice]
+[k]
+
+[clear]
+[charaTalk A]
+[charaFace A 11]
+
+＠A：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V650]
+それは？[wait tVoice]
+[k]
+
+[clear]
+[charaTalk C]
+[charaFace C 10]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V660]
+……私たちの好意はきちんと伝わっているかと。[r]言葉にする必要など、ないではありませんか。[wait tVoice]
+[k]
+
+[se ade413]
+[charaTalk B]
+[charaFace B 5]
+
+＠【怠惰】
+[tVoice ValVoice_901900 0_V670]
+ヘタレー！[messageShake 0.04 5 5 0.5][charaFace C 23][wait tVoice]
+[k]
+
+[se ade413]
+[charaTalk A]
+[charaFace A 5]
+
+＠A：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V680]
+この[#情緒:じょうちょ]小娘！[messageShake 0.04 5 5 0.5][wait tVoice]
+[k]
+
+[clear]
+[charaTalk C]
+[charaFace C 4]
+
+＠C：メタトロン・ジャンヌ
+[tVoice ValVoice_901900 0_V690]
+こ、小娘とな！？[wait tVoice]
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_27 2.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout M 0.1]
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bas2]
+[charaFadein V 0.5 0,-70]
+[wt 3.0]
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

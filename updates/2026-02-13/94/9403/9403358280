@@ -1,0 +1,707 @@
+
+＄94-03-35-82-8-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 28010002 1 ダンテ]
+[charaSet B 28010002 1 ダンテ]
+[charaScale B 1.3]
+[charaSet C 28010002 1 ダンテ]
+[charaScale C 1.3]
+[charaSet D 28010001 1 ダンテ（サブレイヤー用）]
+[charaScale D 1.3]
+[charaSet E 28010001 1 ダンテ]
+[charaScale E 1.2]
+
+[sceneSet K 168501 1]
+[charaScale K 1.1]
+[sceneSet L 279000 1]
+[charaScale L 1.3]
+[sceneSet M 129600 1]
+[charaScale M 1.2]
+[sceneSet N 145200 1]
+[charaScale N 1.2]
+[sceneSet O 145200 1]
+[charaScale O 1.3]
+
+[equipSet Q 9809600 1 バレンタイン礼装]
+
+[subCameraOn 1]
+[charaLayer D sub #A]
+[charaLayer O sub #A]
+[subCameraFilter #A normal]
+
+[charaDepth D 2]
+[charaDepth O 1]
+
+[charaFadein D 0.1 1]
+[charaFadein O 0.1 0,-345]
+
+
+[charaTalk depthOff]
+[charaDepth K 9]
+[charaDepth C 8]
+[charaDepth M 7]
+[charaDepth E 6]
+[charaDepth N 5]
+[charaDepth Q 4]
+[charaDepth B 3]
+[charaDepth L 2]
+[charaDepth A 1]
+
+[scene 279000]
+
+[charaFadein K 0.1 0,-200]
+[charaMove K 0,-250 10.0]
+
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaFadein L 0.1 0,-145]
+
+[fadein black 1.0]
+[bgm BGM_MAP_132 1.0 1.0]
+[se ade106 1.0 1.0]
+[wait fade]
+
+[wt 1.5]
+[se ad627]
+[flashin once 0.3 0.3 FFFFFFFF FFFFFF00]
+[fowardEffect bit_talk_thunder_06]
+[wt 2.5]
+
+[seStop ade106 1.0]
+
+[wipeout rectangleStripDownToUp 0.6 1.0]
+[wait wipe]
+
+[charaFadeout K 0.1]
+
+[cameraMove 0.1 0,0 1.01]
+
+[wt 0.5]
+[wipein rectangleStripUpToDown 0.6 1.0]
+[wait wipe]
+
+[se ad60]
+[seVolume ad60 0 0]
+[seVolume ad60 0.5 1.0]
+[wt 1.5]
+[seStop ad60 0.5]
+[charaTalk B]
+[charaFace B 17]
+[overlayFadein B 0.4 0,200]
+[wt 0.4]
+
+＠B：ダンテ
+[tVoice ValVoice_2801000 0_V010]
+フフ……。[wait tVoice]
+[k]
+
+[messageOff]
+[charaMoveEase B 0,0 1.5 easeInOutSine]
+[charaMoveEase L 0,-345 1.5 easeInOutSine]
+[wt 2.0]
+
+[charaFaceFade B 7 0.4]
+[wt 0.4]
+
+＠B：ダンテ
+[tVoice ValVoice_2801000 0_V020]
+[line 3]ウェルカム・トゥ・[#地獄:アンダーグラウンド]。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad627]
+[bgmStop BGM_MAP_132 1.5]
+[flashin once 0.1 0.3 FFFFFFFF FFFFFF00]
+[effect bit_talk_thunder_06]
+[charaFace C 7]
+[overlayFadein C 0 1]
+[wt 0.3]
+[charaFadeout C 0.7]
+[wt 1.3]
+[seStop ad627 1.0]
+[wt 1.4]
+[effectStop bit_talk_thunder_06]
+
+？1：帰っていい？
+？！
+
+[charaFace B 5]
+
+＠B：ダンテ
+[tVoice ValVoice_2801000 0_V030]
+フフ……タンマ、ちょっとタンマ……。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk A,B]
+[charaFadeout L 0.6]
+[charaFadeout B 0.6]
+[wt 1.0]
+[cueSe SE_21 21_ade581]
+[scene 129600 0.2]
+[wt 1.2]
+
+[bgm BGM_EVENT_146 0.1]
+
+[charaFace A 14]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V040]
+ひどいじゃないか、[charaMoveReturn A 0,-5 0.8][twt 1.5][charaMoveReturn A 0,-5 0.8]ひどいじゃないか。[twt 2.6][r]折角雰囲気作りに凝ってみたのに……。[wait tVoice]
+[k]
+
+[charaFace A 10]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V050]
+あ、もちろん用事はチョコレートなんだけど。[twt 5.6][charaFace A 5][r]では、こちらがお礼で[line 3][wait tVoice]
+[k]
+
+？1：待った待った
+？2：まだなーんにもあげてない
+？！
+
+[charaFace A 0]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V060]
+うん、それはそう。[twt 4.3][charaFace A 2][r]だがね、君はチョコをくれるだろう？[wait tVoice]
+[k]
+
+[charaFace A 9]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V070]
+もしくれなければ、私は恥を知って[r]ハラキリしようかと……。[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V080]
+極東の名物なんだろう？　ハラキリ。[r]フフ……私は異国の文化にも謙虚に詳しい……。[wait tVoice]
+[k]
+
+[charaFace A 15]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V090]
+ところでハラキリって何？[twt 4.0][charaFace A 16][r]腹を？[twt 2.0][charaFace A 19]　斬[twt 1.0]る？[wait tVoice]
+[k]
+
+[charaFace A 14]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V100]
+……さっきのはキャンセルで……。[wait tVoice]
+[k]
+
+？1：心配しなくてもあげるから
+？2：ハラキリは止めてね！
+？！
+
+[bgmStop BGM_EVENT_146 1.5]
+[charaFace A 2]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V110]
+フフ……もちろん……。[r]さて、改めてチョコレートのお礼なのだけど。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 17]
+[se ad77]
+[charaMoveReturn A 0,-3 0.4]
+[wt 0.4]
+[charaMoveReturn A 0,-3 0.4]
+[wt 1.0]
+
+[charaFace A 3]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V120]
+はい、こちらです。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[bgm BGM_EVENT_147 0.1]
+
+？1：ありがとう！　開けていい？
+？！
+
+[charaFace A 14]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V130]
+ぎくり、[twt 0.1][charaShake A 0.08 1 2 0.2][twt 2.3][charaFace A 7]もちろん。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ade11]
+[cameraMove 0.3 0,5 1.01]
+[wt 0.3]
+[cameraMove 0.3 0,0 1.01]
+[wt 0.3]
+[cameraMove 0.3 0,5 1.01]
+[wt 0.3]
+[cameraMove 0.3 0,0 1.01]
+[wt 1.5]
+
+？1：……『予約券』？
+？！
+
+[charaScale C 1.2]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.4 1]
+[charaFadein M 0.4 0,-295]
+[wt 0.4]
+
+＠C：ダンテ
+[tVoice ValVoice_2801000 0_V140]
+フフ……実のところ、お礼の品がサッパリ[r]思い付かなくてね……。[wait tVoice]
+[k]
+
+[charaFace C 2]
+
+＠C：ダンテ
+[tVoice ValVoice_2801000 0_V150]
+一緒に考えてくんない……？[wait tVoice]
+[k]
+
+？1：そう来たか……
+？！
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_147 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout M 0.1]
+
+[scene 145200]
+
+[charaFadein N 0.1 -50,-250]
+[charaMove N 50,-250 10.0]
+
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[wt 1.0]
+[fadein black 1.5]
+[bgm BGM_EVENT_194 0.1]
+[se ad95]
+[seVolume ad95 0 0]
+[se ade74]
+[seVolume ade74 0 0]
+[seVolume ad95 1.5 1.0]
+[seVolume ade74 1.5 0.8]
+[wait fade]
+
+[wt 1.0]
+[seStop ade74 0.5]
+[seStop ad95 0.5]
+[wt 0.5]
+
+[charaTalk A]
+[charaFadeout N 0.4]
+[wt 0.4]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V160]
+フフ……集中できないから引っ越し……。[wait tVoice]
+[k]
+
+？1：それでお礼の品だけど……
+？！
+
+[charaFace A 14]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V170]
+フフ……という訳で欲しいものを[r]教えてください……。[wait tVoice]
+[k]
+
+[charaFace A 19]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V180]
+え。特にない？[twt 3.3][charaFace A 14][r]それは困る、私があげられないじゃないか。[wait tVoice]
+[k]
+
+？1：お礼だから何でも嬉しいし……
+？！
+
+[charaFace A 7]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V190]
+フフ……何でも嬉しい、は何でも駄目なのと[r]同義……！[wait tVoice]
+[k]
+
+[charaFace A 17]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V200]
+『夕食は何にする？』[twt 3.2][charaFace A 8]に対する[twt 1.6][charaFace A 9]『何でもいいよ』[twt 1.8][charaFace A 7]は[r]禁忌の発言と覚えておきなさい……。[wait tVoice]
+[k]
+
+？1：そう言われてもお礼だから、
+？2：その気持ちが大事だし、嬉しいよ
+？！
+
+[charaFace A 18]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V210]
+……まあ、それはそうかもね……。[r]しかし参った……。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V220]
+では、提案していくから一番嬉しいものを[r]選んでくれたまえ……。[wait tVoice]
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.9]
+
+[bgmStop BGM_EVENT_194 1.5]
+
+
+[charaFace A 16]
+＠ダンテ
+[tVoice ValVoice_2801000 0_V230]
+まず……そうだね。[r]『著作権』ではどうだろう。[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_94 0.1]
+
+？1：いきなりトンデモ系の贈り物が来たな……
+？！
+
+[charaFace A 17]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V240]
+フフ……私の『神曲』の著作権……。[r]上手くすれば、大金持ちさ……。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V250]
+……どうやって著作権を行使するかは……。[r]各自で考えて欲しい……。[wait tVoice]
+[k]
+
+[charaFace A 14]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V260]
+駄目？　駄目かー……。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V270]
+では、こういうのはどうだろう。[r]『肩たたき券』……。[wait tVoice]
+[k]
+
+？1：嬉しいは嬉しいけど……
+？！
+
+[charaFace A 10]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V280]
+それほど肩凝りはない、と……。[r]フフ……まだ若いもんね……。[wait tVoice]
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_94 0.7 0.4]
+[wipeout rollRight 0.7 1.0]
+[wait wipe]
+
+[cameraHome 0.1]
+[wait camera]
+
+[charaFace A 1]
+
+[wt 1.0]
+[wipein rollLeft 0.7 1.0]
+[bgm BGM_EVENT_94 0.7 1.0]
+[wait wipe]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V290]
+よし、ここは一つ私のサインで[line 3][wait tVoice]
+[k]
+
+[charaFace A 14]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V300]
+いや、待った。もしかして他の作家さんも、[r]サインを贈っていたりする？[wait tVoice]
+[k]
+
+[charaFace A 19]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V310]
+え。シェイクスピアもサインがある……？[r]しかもソネット付き……。[wait tVoice]
+[k]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V320]
+何それ欲しい。[r]しかも、それだと私のインパクトがない。[wait tVoice]
+[k]
+
+[charaFace A 14]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V330]
+却下……サインは却下させてください……。[wait tVoice]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_94 1.5]
+[wipeout rollRight 0.7 1.0]
+[wait wipe]
+
+[charaFace A 4]
+
+[wt 1.0]
+[wipein rollLeft 0.7 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_192 0.1]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V340]
+そう……大事なのは……。[r]ここまで培ってきた絆こそが真のお宝だったのさ……。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_192 1.5]
+
+[charaFace A 3]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V350]
+……。[twt 2.7][charaFaceFade A 15 0.3][r]……。[wait tVoice]
+[k]
+
+[charaFace A 14]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V360]
+……何だか話が猛烈にズレている気がする……。[wait tVoice]
+[k]
+
+
+？1：休憩しよう[&か:よ]
+？！
+
+[charaFace A 10]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V370]
+うん……霊基もちょっと変えよう……。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad574]
+[fadeout white 0.5]
+[wait fade]
+
+[charaChange A 28010001 18 normal 0.1]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_TOU_1 0.1]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V380]
+ふー……。[charaMoveReturn A 0,-5 1.2][wait tVoice]
+[k]
+
+[charaFace A 17]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V390]
+……。[twt 3.4][charaFaceFade A 19 0.2][r]……。[wait tVoice]
+[k]
+
+[bgmStop BGM_TOU_1 1.0]
+
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V400]
+ゆ[charaShake A 0.1 1 1 0.3]。[wait tVoice]
+[k]
+
+？1：ゆ？
+？！
+
+[messageOff]
+[se ade413]
+[charaTalk A,D]
+[charaFace D 13]
+[subRenderFadein #A 0.3 0,0]
+[subRenderMoveScaleEase #A 1.2 0.3 easeOutQuint]
+[subRenderMoveEase #A 0,-30 0.3 easeOutQuint]
+[wt 0.3]
+[fowardEffect bit_talk_41_remake]
+[charaFadeout E 0]
+[charaFadeout N 0]
+[wt 0.1]
+
+＠D：ダンテ
+[tVoice ValVoice_2801000 0_V410]
+[f x-large]ユ[messageShake 0.05 5 5 0.5]リイカ！[wait tVoice]
+[k]
+
+？1：ビックリした！
+？！
+
+[messageOff]
+[fowardEffectDestroy bit_talk_41_remake]
+[charaTalk A,D]
+[charaFace A 17]
+[subRenderFadeout #A 0.6]
+[wt 0.6]
+
+[bgm BGM_MIZUGI_2022_1 0.1]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V420]
+フフ……申し訳ない……。[r]だが、閃いたよ……君に贈るべきものが……。[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V430]
+少々時間が掛かりそうだ。[r]ちょっと待ってくれたまえ……。[wait tVoice]
+[k]
+
+[messageOff]
+[bgm BGM_MIZUGI_2022_1 1.0 0.4]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFace A 2]
+
+[wt 1.0]
+[fadein black 1.0]
+[bgm BGM_MIZUGI_2022_1 1.0 1.0]
+[wait fade]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V440]
+フフ……こちらを受け取って欲しい。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.5]
+[se bas2]
+[charaFace Q 0]
+[charaFadein Q 0.5 0,-70]
+[wt 2.5]
+
+？1：これダンテの頭にあるやつ？
+？！
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.4 0,0]
+[charaFadein N 0.4 0,-295]
+[wt 0.4]
+[charaFadeout Q 0]
+[wt 0.1]
+
+＠E：ダンテ
+[tVoice ValVoice_2801000 0_V450]
+フフ……その通り、[#月桂冠:げっけいかん]……。[r]私のものと色合いは少々異なるがね……。[wait tVoice]
+[k]
+
+[charaFace E 4]
+
+＠E：ダンテ
+[tVoice ValVoice_2801000 0_V460]
+ちなみに[#月桂樹:げっけいじゅ]は勝利や栄光のシンボル……。[r]君へのささやかな助けとなることを祈ろう……。[wait tVoice]
+[k]
+
+？1：ありがとう
+？！
+
+[charaFace E 17]
+
+＠E：ダンテ
+[tVoice ValVoice_2801000 0_V470]
+どういたしまして……フフ……。[r]私はこれでクールに去るさ……。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad95]
+[seStop ad95 2.0]
+[charaFadeout E 0.4]
+[wt 2.0]
+
+[bgmStop BGM_MIZUGI_2022_1 1.5]
+[charaFadeout N 0.5]
+
+[wt 2.5]
+
+[se ade421]
+[seVolume ade421 0 0]
+[seVolume ade421 0.5 1.0]
+[wt 1.7]
+[seStop ade421 0.5]
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠ダンテ
+[tVoice ValVoice_2801000 0_V480]
+フフ……[twt 4.0]チョコ貰うの忘れてた……。[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_146 0.1]
+
+？1：あげる前に行っちゃうから……
+？！
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_146 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

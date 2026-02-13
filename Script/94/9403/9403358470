@@ -1,0 +1,1343 @@
+
+＄94-03-35-84-7-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 3062000 1 エリザベート]
+[charaSet B 1098337300 1 終わりのエリザベート]
+
+[charaSet C 3062000 1 エリザベート2]
+[charaSet D 1098337300 1 終わりのエリザベート2]
+
+[charaSet G 3062000 1 エリザベート5]
+[charaScale G 1.2]
+
+[sceneSet J 220500 1]
+[charaScale J 1.2]
+
+
+[charaSet Q 98115000 1 エフェクト用1]
+[charaSet R 98115000 1 エフェクト用2]
+
+[equipSet V 9809790 1 バレンタイン礼装]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth A 2]
+[charaDepth B 3]
+[charaDepth V 9]
+
+[scene 220500]
+
+[charaFadein J 0.1 -30,-250]
+[charaMove J 70,-250 15.0]
+
+[fadein black 1.0]
+[cueSe SE_24 24_ade1079 1.0 1.0]
+[se ade292]
+[seVolume ade292 0.0 0.0]
+[seVolume ade292 1.0 0.5]
+[wait fade]
+[wt 3.0]
+
+
+[se ad8]
+[charaFadeout J 1.2]
+[wt 1.6]
+[cueSeStop 24_ade1079 1.5]
+[seStop ade292 1.5]
+
+[cueSe SE_23 23_ade895]
+[charaScale A 1.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 -10,0]
+[charaMoveEase A 0,0 0.4 easeOutQuart]
+[wt 0.5]
+[cueSeStop 23_ade895 0.1]
+
+[bgm BGM_GALATEA_1 0.1]
+
+[charaFace A 1]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V010]
+あら、マスターじゃない。[r]どうしたの、こんなところで。[wait tVoice]
+[k]
+
+？1：ランニング中！
+？！
+
+[charaFace A 0]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V020]
+ランニング？[r]健康的でちょっとパンクじゃないわね……。[wait tVoice]
+[k]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V030]
+でも、何で急に？[wait tVoice]
+[k]
+
+？1：バレンタインだからね
+？2：カロリーを消費しないと……
+？！
+
+[charaFace A 13]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V040]
+そっか、バレンタイン……。[twt 3.1][charaFace A 1][r]じゃあ[#私:アタシ]も、チョコレートあげるわね。[wait tVoice]
+[k]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V050]
+そう……[twt 1.0][se ad186][charaFace A 10][cameraMoveEase 0,-50 0.2 easeOutCubic 1.2]今までよりパーフェクトなチョコを！[effect bit_talk_41_remake 0,80][wait tVoice]
+[k]
+
+
+？1：楽しみ！
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_GALATEA_1 1.0]
+[wait fade]
+
+[cameraHome 0.1]
+[effectDestroy bit_talk_41_remake]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[branchQuestClear lblClear02d 05000000]
+[branchQuestClear lblClear02c 94064915]
+[branchQuestClear lblClear02c 3001101]
+[branchQuestClear lblClear02b 3000303]
+
+[label lblClear02a]
+[label lblClear02d]
+[scene 106000]
+
+[sceneSet J 106000 1]
+[charaScale J 1.2]
+[sceneSet K 106000 1]
+[charaScale K 1.2]
+[sceneSet L 106000 1]
+[charaScale L 1.2]
+[sceneSet M 106000 1]
+[charaScale M 1.2]
+
+[branch lblConf02]
+
+[label lblClear02b]
+[scene 105800]
+
+[sceneSet J 105800 1]
+[charaScale J 1.2]
+[sceneSet K 105800 1]
+[charaScale K 1.2]
+[sceneSet L 105800 1]
+[charaScale L 1.2]
+[sceneSet M 105800 1]
+[charaScale M 1.2]
+
+[branch lblConf02]
+
+[label lblClear02c]
+[scene 157900]
+
+[sceneSet J 157900 1]
+[charaScale J 1.2]
+[sceneSet K 157900 1]
+[charaScale K 1.2]
+[sceneSet L 157900 1]
+[charaScale L 1.2]
+[sceneSet M 157900 1]
+[charaScale M 1.2]
+
+[label lblConf02]
+
+[charaDepth L 1]
+[charaDepth G 2]
+[charaDepth J 3]
+[charaDepth B 4]
+[charaDepth A 5]
+[charaDepth M 6]
+
+[subCameraOn 1]
+[charaLayer K sub #A]
+[charaLayer C sub #A]
+[charaLayer D sub #A]
+
+[charaDepth K 1]
+[charaDepth D 2]
+[charaDepth C 3]
+
+[charaScale C 1.4]
+[charaScale D 1.35]
+[charaScale K 1.4]
+[charaFace C 0]
+[charaFadein C 0.1 -150,448]
+[charaFace D 2]
+[charaFadein D 0.1 170,425]
+[charaFadein K 0.1 0,0]
+
+[subCameraFilter #A maskEdge cut359_mask04 4 255,105,180,255 0]
+
+[pictureFrameTop cut063_cinema]
+
+[charaScale J 1.2]
+[charaFadein J 0.1 50,-240]
+
+[fadein black 1.0]
+[se ad8]
+[wait fade]
+
+[wt 1.0]
+
+[cueSe SE_23 23_ade895]
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 -80,-50]
+[cueSeStop 23_ade895 0.4]
+[wt 0.4]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V060]
+……とは言ったものの、パーフェクトなチョコって[r]どんなものかしら。[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V070]
+母様ー、母様、いるー？[wait tVoice]
+[k]
+
+[messageOff]
+[se ad95]
+[seVolume ad95 0.0 0.0]
+[seVolume ad95 0.2 1.0]
+[charaTalk B,A]
+[charaFace A 0]
+[charaMoveEase A -180,-50 1.0 easeOutQuad]
+[charaMoveEase J -50,-240 1.0 easeOutQuad]
+[wt 1.2]
+[charaFace B 0]
+[charaFadein B 0.7 300,-50]
+[charaMove B 256,-50 0.7]
+[wt 0.7]
+[seStop ad95 0.2]
+
+[bgm BGM_EVENT_194 0.1]
+
+＠終わりのエリザベート
+[tVoice ValVoice_306200 0_V080]
+何ですかエリザベート。[r]母はチョコレートを作るので忙しいのですが。[wait tVoice]
+[k]
+
+[charaTalk A]
+[charaFace A 3]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V090]
+母様も作ってるの！？[r]ハロウィンの申し子なのに！[wait tVoice]
+[k]
+
+[charaTalk B]
+[charaFace B 2]
+
+＠終わりのエリザベート
+[tVoice ValVoice_306200 0_V100]
+ふふ……エリザベート、いいですか。[r]それはそれ、これはこれです。[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠終わりのエリザベート
+[tVoice ValVoice_306200 0_V110]
+ハロウィンを堪能したからといって、[r]バレンタインを堪能しなくても良いとは言ってません。[wait tVoice]
+[k]
+
+[charaFace B 3]
+
+＠終わりのエリザベート
+[tVoice ValVoice_306200 0_V120]
+教典にもハロウィン以外のあらゆる祭事を[r]楽しみましょう、と明記しておきました。ついさっき。[wait tVoice]
+[k]
+
+[charaTalk A]
+[charaFace A 14]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V130]
+ば、万能の言い訳……！[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V140]
+ま、まあそれはいいわ。[r]あのね、母様。ちょっと相談があるんだけど……。[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_194 1.0 0.5]
+[wait fade]
+
+[charaTalk A,B]
+[charaFace A 0]
+[charaFace B 2]
+[wt 1.5]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_194 1.0 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaTalk B]
+
+＠終わりのエリザベート
+[tVoice ValVoice_306200 0_V150]
+何だ。そんな簡単なことですか。[r]まったくもう。[wait tVoice]
+[k]
+
+[charaTalk A]
+[charaFace A 3]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V160]
+え、そんな簡単なことでは。[wait tVoice]
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+
+＠終わりのエリザベート
+[tVoice ValVoice_306200 0_V170]
+エリザベート、いいですか。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠終わりのエリザベート
+[tVoice ValVoice_306200 0_V180]
+この世に完璧なものはなく、[r]完璧に近いものがあるだけ。[wait tVoice]
+[k]
+
+[charaFace B 2]
+
+＠終わりのエリザベート
+[tVoice ValVoice_306200 0_V190]
+そして私はそれを二つ知っています。[r]一つは[#貴女]。[wait tVoice]
+[k]
+
+[charaTalk A]
+[charaFace A 14]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V200]
+ぐっ。さ、さすが母様。[wait tVoice][r][#私:アタシ]を褒めることに関しては世界一……！
+[k]
+
+[charaTalk B]
+[charaFace B 2]
+[charaScale M 1.2]
+
+＠終わりのエリザベート
+[tVoice ValVoice_306200 0_V210]
+そしてもう一つ。[r]限りなく完璧に近いものがあります。それは[line 3][twt 5.7][charaTalk B,D,C][se ad95][charaMove B 200,-50 1.0][twt 0.3][seStop ad95 0.8][subRenderFadein #A 0.4 0,-320][charaFadein M 0.4 0,-270][wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+
+
+[charaFaceFade D 3 0.2]
+[charaMoveReturn D 170,420 0.5]
+[wait charaMove D]
+[wt 0.8]
+
+[charaFace C 8]
+[charaMoveReturn C -150,451 0.3]
+[wait charaMove C]
+[wt 0.6]
+
+[charaFaceFade C 9 0.2]
+[charaMoveReturn C -150,445 0.3]
+[wait charaMove C]
+[charaMoveReturn C -150,445 0.3]
+[wait charaMove C]
+
+[charaFace A 9]
+[charaFace B 3]
+[charaPut A -150,-50]
+[charaPut B 150,-50]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk A,C,D]
+
+[subRenderFadeout #A 0.4]
+[charaFadeout M 0.4]
+
+
+[charaFace G 10]
+[charaFadein G 0.1 0,-30]
+[charaFadein J 0.1 0,-240]
+[charaFadein L 0.1 80,-260]
+[wt 0.4]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V220]
+……それよ！[r]さすが母様！　早速みんなに頼んで作ってみるわ！[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠終わりのエリザベート
+[tVoice ValVoice_306200 0_V230]
+はいはい。では、私も大作チョコを[r]作らなければいけないので、これで……。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad95]
+[charaTalk A,B]
+[charaFadeout B 0.4]
+[seStop ad95 1.2]
+[wt 1.5]
+
+[charaTalk A,G]
+[charaFadeout A 0.4]
+[charaFadeout J 0.4]
+[wt 0.4]
+
+[charaFace G 10]
+
+＠G：エリザベート
+[tVoiceUser ValVoice_306200 0_V240 ValVoice_306200 0_V250]
+ようし、見てなさいよ[&子イヌ:子ジカ]！[wait tVoice]
+[k]
+
+[charaTalk G]
+
+＠G：エリザベート
+[tVoice ValVoice_306200 0_V260]
+まさにハロウィン総決算という感じのチョコを、[r]エリザベート・バートリーが作ってみせるわ！[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_194 1.5]
+[wait fade]
+
+[cameraHome 0.1]
+
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[charaFadeout L 0.1]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout K 0.1]
+
+[charaLayer K main]
+[charaLayer C main]
+[charaLayer D main]
+[subCameraOff]
+
+[pictureFrameTop]
+[wt 1.0]
+
+[charaSet A 3062002 1 エリザベート]
+[charaSet B 2001000 1 エミヤ]
+[charaSet C 6005001 1 ジャック]
+[charaSet D 5004001 1 ナーサリー・ライム]
+[charaSet E 3026000 1 ジャンヌリリィ]
+[charaSet F 1059000 1 ヤマトタケル]
+
+[charaSet G 3062002 1 エリザベート2]
+
+
+
+[equipSet W 9808230 1 バレンタイン礼装2]
+[charaScale W 1.4]
+
+[branchQuestClear lblClear03d 05000000]
+[branchQuestClear lblClear03c 94064915]
+[branchQuestClear lblClear03c 3001101]
+[branchQuestClear lblClear03b 3000303]
+
+[label lblClear03a]
+[label lblClear03d]
+[scene 106000]
+
+[sceneSet L 106000 1]
+[charaScale L 1.2]
+[sceneSet M 106000 1]
+[charaScale M 1.2]
+[sceneSet N 106000 1]
+[charaScale N 1.2]
+
+[branch lblConf03]
+
+[label lblClear03b]
+[scene 105800]
+
+[sceneSet L 105800 1]
+[charaScale L 1.2]
+[sceneSet M 105800 1]
+[charaScale M 1.2]
+[sceneSet N 105800 1]
+[charaScale N 1.2]
+
+[branch lblConf03]
+
+[label lblClear03c]
+[scene 157900]
+
+[sceneSet L 157900 1]
+[charaScale L 1.2]
+[sceneSet M 157900 1]
+[charaScale M 1.2]
+[sceneSet N 157900 1]
+[charaScale N 1.2]
+
+[label lblConf03]
+
+[charaDepth B 1]
+[charaDepth V 2]
+[charaDepth L 3]
+[charaDepth A 4]
+[charaDepth Q 5]
+[charaDepth R 6]
+
+[subCameraOn 2]
+[charaLayer G sub #A]
+[charaLayer M sub #A]
+
+[charaDepth M 1]
+[charaDepth G 2]
+
+[charaFace G 0]
+[charaFadein G 0.1 120,320]
+[charaFadein M 0.1 130,55]
+
+[subCameraFilter #A maskEdge cut359_mask15 5 255,105,180,255 0]
+
+
+
+[wt 1.0]
+
+[cameraMove 0.1 0,0 1.01]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ade169]
+[wt 1.2]
+
+？1：どうぞー？
+？！
+
+[se ad8]
+[wt 1.6]
+
+[charaScale A 1.2]
+[charaScale L 1.2]
+
+[se ade423]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein L 0.7 -20,-280]
+[charaMove L 0,-280 0.7]
+[wt 0.7]
+
+[charaFadein A 0.4 20,20]
+[seStop ade423 0.2]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V270]
+待たせたわね、マスター。[bgm BGM_MIZUGI_2017 0.1][wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V280]
+パーフェクトなエリザベート、[r]バレンタインデーに登場よ。[wait tVoice]
+[k]
+
+[messageOff]
+[cueSe SE_23 23_ade854 0 0.8]
+[bgm BGM_MIZUGI_2017 0.3 0.0]
+[wt 5.0]
+
+[bgm BGM_MIZUGI_2017 1.0 1.0]
+
+？1：今のファンファーレどこから？
+？！
+
+[charaFace A 2]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V290]
+フッ……パーフェクトなサーヴァントには、[r]ただ存在するだけでジングルがつくのよ。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad272]
+[charaPut Q 0,50]
+[charaEffect Q bit_talk_kamifubuki03 0,50]
+[wt 0.3]
+[charaPut R 0,50]
+[charaEffect R bit_talk_kamifubuki03 0,50 H]
+[se ade76]
+[wt 2.0]
+
+[charaFaceFade A 1 0.2]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V300]
+……[twt 4.2][charaFace A 5]ちょっとしつこいわね。[twt 2.0][charaFace A 0]ミュートミュート。[wait tVoice]
+[k]
+
+[seStop ad272 0.4]
+[seStop ade76 0.4]
+
+[charaFace A 1]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V310]
+さて、マスター。[r]約束通り、パーフェクトなチョコレートを持ってきたわ。[wait tVoice]
+[k]
+
+
+
+？1：おー！
+？！
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V320]
+完璧なチョコレート。完璧な総決算。[r]完璧なファイナル。これぞ決定版。[wait tVoice]
+[k]
+
+[charaFace A 2]
+[bgmStop BGM_MIZUGI_2017 1.0]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V330]
+さあ、[#瞠目:どうもく]なさい！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad7]
+[cueSe SE_24 24_ade1007]
+[charaFadeout A 0.4]
+[charaFadeout L 0.4]
+[wt 1.0]
+[cueSeStop 24_ade1007 0.5]
+
+[se bas2]
+[charaFadein V 0.5 0,-70]
+[wt 2.5]
+
+？1：遂に来たーーー！？
+？！
+
+[charaTalk G]
+[charaFace G 9]
+[subRenderFadeinFSL #A 0.4 -480,-270]
+[subRenderMoveFSL #A -500,-330 0.4]
+[wt 0.4]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+＠G：エリザベート
+[tVoice ValVoice_306200 0_V340]
+フフ……。凄いでしょう、このチョコ。[r]この大きさはもう、伝説に刻まれるレベルね。[wait tVoice]
+[k]
+
+[charaFace G 1]
+
+＠G：エリザベート
+[tVoice ValVoice_306200 0_V350]
+赤いのとタマモキャットにも手伝ってもらったわ。[r]パーフェクトだから、他人の手を借りても完璧なの。[wait tVoice]
+[k]
+
+[charaTalk off]
+[charaFace B 0]
+[charaPutFSR B 2]
+[charaFadeTime B 0.2 0.6]
+
+[charaFace G 0]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V360]
+赤いのは『フ。可能であれば変形機能も搭載したかった』[r]とか言っていたけど、欲しかった？[wait tVoice]
+[k]
+
+？1：欲しい！
+
+[messageOff]
+[charaFace B 1]
+[wt 1.5]
+
+？2：いや、それほど……
+
+[messageOff]
+[charaFace B 4]
+[wt 1.5]
+
+？！
+
+[messageOff]
+[charaFadeout B 0.3]
+
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 1]
+
+＠G：エリザベート
+[tVoice ValVoice_306200 0_V370]
+ふふ。こうして見ると何もかも懐かしいわね……。[wait tVoice]
+[k]
+
+
+[charaFaceFade G 9 0.2]
+
+＠G：エリザベート
+[tVoice ValVoice_306200 0_V380]
+ちゃんと[#刑部姫:お っ き ー]とか、[r]メカエリチャンもいるの、芸が細かいでしょう？[wait tVoice]
+[k]
+
+[messageOff]
+[charaScale A 1.2]
+[charaScale L 1.2]
+[charaTalk A,G]
+[charaFace A 8]
+[charaFadein A 0.6 -60,20]
+[charaFadein L 0.6 -60,-280]
+[subRenderFadeout #A 0.6]
+[charaMoveEase A 20,20 0.6 easeOutSine]
+[charaMoveEase L 20,-280 0.6 easeOutSine]
+[wt 0.8]
+[charaFadeout V 0.1]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V390]
+それじゃ、そろそろ食べましょうか！[wait tVoice]
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 1.0]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_HALLOWEEN_2021_1 1.0]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaFadeout M 0.1]
+[charaFadeout W 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+[charaLayer G main]
+[charaLayer M main]
+[charaLayer W main]
+[charaLayer N main]
+[subCameraOff]
+
+[charaFadeout A 0.1]
+[charaFadeout L 0.1]
+[charaScale A 1.0]
+[wt 0.1]
+
+[sceneSet O 10001 1]
+[charaScale O 1.1]
+[sceneSet P 10001 1]
+[charaScale P 1.1]
+
+[subCameraOn 2]
+[charaLayer D sub #A]
+[charaLayer C sub #A]
+[charaLayer M sub #A]
+[charaLayer O sub #A]
+
+[charaDepth M 1]
+[charaDepth D 2]
+[charaDepth C 3]
+[charaDepth O 4]
+
+[charaScale D 0.9]
+[charaScale C 0.9]
+
+[charaFace D 1]
+[charaFadein D 0.1 80,280]
+[charaFace C 0]
+[charaFadeinFSL C 0.1 -40,280]
+[charaFadein M 0.1 500,150]
+
+[subCameraFilter #A maskEdge cut359_mask10 5 255,255,255,255 0]
+
+[charaLayer F sub #B]
+[charaLayer E sub #B]
+[charaLayer N sub #B]
+[charaLayer P sub #B]
+
+[charaDepth N 1]
+[charaDepth E 2]
+[charaDepth F 3]
+[charaDepth P 4]
+
+[charaScale F 0.9]
+[charaScale E 0.9]
+
+[charaFace F 1]
+[charaFadeinFSR F 0.1 40,280]
+[charaFace E 3]
+[charaFadein E 0.1 -100,280]
+[charaFadein N 0.1 -500,100]
+
+[subCameraFilter #B maskEdge cut359_mask16 5 255,255,255,255 0]
+[wt 0.1]
+
+[charaScale A 1.0]
+[wt 1.0]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V400]
+……。[r]……。[wait tVoice]
+[k]
+
+？1：…………
+？！
+
+[bgm BGM_EVENT_146 0.1]
+[charaFaceFade A 5 0.2]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V410]
+完璧すぎて……食べるのが……[twt 5.0][charaFaceFade A 6 0.2]もったいないぃ……！[wait tVoice]
+[k]
+
+？1：それに……
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_146 0.7 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadein V 0.1 0,-70]
+
+[charaTalk off]
+[subRenderFadein #A 0.1 -390,-330]
+[subRenderFadein #B 0.1 390,-330]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_146 0.7 1.0]
+[se ad518]
+[seVolume ad518 0.0 0.0]
+[se ad512]
+[seVolume ad512 0.0 0.0]
+[seVolume ad518 1.0 0.4]
+[seVolume ad512 1.0 0.3]
+[wait wipe]
+
+[charaMoveReturn E -100,285 0.3]
+[wait charaMove E]
+[charaMoveReturn E -100,285 0.3]
+[wait charaMove E]
+[charaFace E 6]
+[cueSeContinue SE_25 25_ade1290 0 0.7 1]
+[charaFadein P 0.1 0,200]
+[wt 0.1]
+[charaFadeout P 0.15]
+[wt 0.3]
+
+[charaFace F 2]
+[charaMoveReturnFSR F 40,275 0.3]
+[wait charaMove F]
+[cueSeContinue SE_25 25_ade1290 0 0.7 2]
+[charaFadein P 0.1 0,200]
+[wt 0.1]
+[charaFadeout P 0.15]
+[wt 0.4]
+
+[charaMoveReturn D 80,285 0.3]
+[wait charaMove D]
+[charaFace C 1]
+[charaMoveReturnFSL C -40,285 0.3]
+[wait charaMove C]
+[cueSeContinue SE_25 25_ade1290 0 0.7 3]
+[charaFadein O 0.1 0,300]
+[wt 0.1]
+[charaFadeout O 0.15]
+[wt 1.0]
+
+
+
+
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_146 0.7 0.5]
+[seStop ad518 1.2]
+[seStop ad512 1.2]
+[wait wipe]
+
+[charaFadeout V 0.1]
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_146 0.7 1.0]
+[wait wipe]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V420]
+そうね。この状況で食べるのは罪深い感じだわ……。[wait tVoice]
+[k]
+
+[charaFace G 6]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V430]
+なんてコト。[r]完璧すぎるが故の、弊害……！[wait tVoice]
+[k]
+
+？1：と、とりあえず……長期保存をお願いしようか……
+？！
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_146 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaScale D 1.0]
+[charaScale C 1.0]
+[charaScale F 1.0]
+[charaScale E 1.0]
+[wt 0.1]
+[charaLayer C main]
+[charaLayer D main]
+[charaLayer E main]
+[charaLayer F main]
+[charaLayer O main]
+[charaLayer P main]
+[charaLayer M main]
+[charaLayer N main]
+[subCameraOff]
+
+[charaFadeout V 0.1]
+[charaFadeout A 0.1]
+
+[charaSet B 1098243000 1 水着エリセ]
+[charaSet C 10017900 1 日比乃ひびき]
+[charaSet D 10017910 1 桂木千鍵]
+[charaSet E 28010001 1 ダンテ]
+[charaSet F 25006000 1 ゴッホ]
+[charaSet G 1040000 1 北斎水着]
+[charaSet H 1013001 1 カエサル]
+[charaSet I 3062002 1 エリザベート4]
+
+[scene 10000]
+[charaTalk off]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+＠
+[line 3]一ヶ月後。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[branchQuestClear lblClear04d 05000000]
+[branchQuestClear lblClear04c 94064915]
+[branchQuestClear lblClear04c 3001101]
+[branchQuestClear lblClear04b 3000303]
+
+[label lblClear04a]
+[label lblClear04d]
+[scene 105600]
+
+[sceneSet L 105600 1]
+[charaScale L 1.2]
+[sceneSet M 105600 1]
+[charaScale M 1.2]
+[sceneSet N 105600 1]
+[charaScale N 1.2]
+
+[branch lblConf04]
+
+[label lblClear04b]
+[scene 105900]
+
+[sceneSet L 105900 1]
+[charaScale L 1.2]
+[sceneSet M 105900 1]
+[charaScale M 1.2]
+[sceneSet N 105900 1]
+[charaScale N 1.2]
+
+[branch lblConf04]
+
+[label lblClear04c]
+[scene 158100]
+
+[sceneSet L 158100 1]
+[charaScale L 1.2]
+[sceneSet M 158100 1]
+[charaScale M 1.2]
+[sceneSet N 158100 1]
+[charaScale N 1.2]
+
+[label lblConf04]
+
+[subCameraOn 3]
+[charaLayer B sub #A]
+[charaLayer C sub #A]
+[charaLayer D sub #A]
+[charaLayer L sub #A]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.1]
+
+[charaScale B 0.95]
+[charaScale C 0.9]
+[charaScale D 0.9]
+
+[charaDepth B 4]
+[charaDepth C 3]
+[charaDepth D 2]
+[charaDepth L 1]
+
+[charaFace B 37]
+[charaFadein B 0.1 -270,10]
+[charaFace C 0]
+[charaFadein C 0.1 310,0]
+[charaFace D 1]
+[charaFadein D 0.1 110,0]
+
+[charaFadein L 0.1 0,-240]
+
+[charaLayer E sub #B]
+[charaLayer F sub #B]
+[charaLayer G sub #B]
+[charaLayer M sub #B]
+[subCameraFilter #B normal]
+[subRenderScale #B 1.1]
+
+[charaScale E 0.98]
+[charaScale F 0.9]
+[charaScale G 0.8]
+
+[charaDepth E 4]
+[charaDepth F 3]
+[charaDepth G 2]
+[charaDepth M 1]
+
+[charaFace E 0]
+[charaFadein E 0.1 -300,0]
+[charaFace G 0]
+[charaFadein G 0.1 50,-20]
+[charaFace F 0]
+[charaFadein F 0.1 400,-10]
+
+[charaFadein M 0.1 0,-240]
+
+[charaLayer H sub #C]
+[charaLayer N sub #C]
+
+[charaDepth H 2]
+[charaDepth N 1]
+
+[charaFace H 0]
+[charaFadein H 0.1 -20,170]
+[charaFadein N 0.1 -600,-30]
+
+[subCameraFilter #C maskEdge cut359_mask20 4 255,255,255,255 0]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+
+[charaFace V 0]
+[charaFadein V 0.1 50,-70]
+
+[se ad518]
+[seVolume ad518 0.0 0.0]
+[seVolume ad518 1.0 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_94 0.1]
+[wt 2.0]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_94 1.0 0.5]
+[seStop ad518 1.0]
+[wait fade]
+
+[charaFadeout V 0.1]
+[wt 1.0]
+
+[subRenderFadein #A 0.1 50,-50]
+[subRenderMove #A -50,-50 8.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_94 1.0 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaMoveReturn B -270,5 0.3]
+[wait charaMove B]
+[charaMoveReturn B -270,5 0.3]
+[wait charaMove B]
+[wt 0.2]
+[charaFace B 1]
+[charaMoveReturn B -270,5 0.3]
+[wait charaMove B]
+[charaMoveReturn B -270,5 0.3]
+[wait charaMove B]
+[wt 0.5]
+
+[charaFace C 0]
+[charaMove C 310,10 1.0]
+[charaMoveScale C 0.95 1.0]
+[wt 0.8]
+[charaFace D 12]
+[charaMove D 120,0 0.2]
+[wt 0.2]
+[charaFace C 12]
+[charaShake C 0.02 2 2 0.2]
+[wt 0.8]
+[charaMove D 110,0 0.3]
+[charaMove C 310,0 0.3]
+[charaMoveScale C 0.9 0.3]
+[wt 0.8]
+[charaFaceFade D 22 0.2]
+[charaFaceFade C 18 0.2]
+[wt 0.5]
+
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_94 0.7 0.5]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+[wt 1.0]
+
+[subRenderFadein #B 0.1 50,-50]
+[subRenderMove #B -50,-50 8.0]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_94 0.7 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaFace E 2]
+[charaMoveReturn E -300,-5 0.5]
+[wait charaMove E]
+[wt 0.5]
+
+[charaFace G 20]
+[charaMoveReturn G 50,-15 0.2]
+[wait charaMove G]
+[wt 0.5]
+[charaFace G 24]
+[charaMoveReturn G 50,-23 0.3]
+[wait charaMove G]
+[charaMoveReturn G 50,-23 0.3]
+[wait charaMove G]
+[wt 0.4]
+
+[charaFace F 9]
+[charaShake F 0.02 3 2 0.4]
+[wt 0.8]
+[charaFace F 6]
+[charaMoveReturn F 400,-13 0.5]
+[wait charaMove F]
+[wt 0.2]
+
+[fadeout black 1.5]
+[bgm BGM_EVENT_94 1.5 0.5]
+[seStop ad518 1.5]
+[wait fade]
+
+[subRenderFadeout #B 0.1]
+[wt 1.0]
+
+[fadein black 1.5]
+[bgm BGM_EVENT_94 1.5 1.0]
+[wait fade]
+
+[seStop ad518 1.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V440]
+列が……一向に途切れないわね……。[wait tVoice]
+[k]
+
+？1：そうだね……
+？！
+
+[charaFace A 7]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V450]
+なんかこのまま絶え間ない見物人のせいで、[wait tVoice][r][#私:アタシ]のチョコが食べられない未来が見えてきたわ……。
+[k]
+
+[charaFace A 1]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V460]
+でも、それも完璧だからこその宿命として、[r]良しとしましょうか。[wait tVoice]
+[k]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V470]
+マスターも、ちょっと我慢してね。[wait tVoice]
+[k]
+
+？1：そうだね、いつか一緒に食べよう
+？！
+
+
+[messageOff]
+[charaFace A 9]
+[wt 1.3]
+
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_94 0.7 0.5]
+[wait wipe]
+
+[subRenderScale #A 1.0]
+[charaScale E 1.08]
+[charaScale G 0.89]
+[charaScale F 1.0]
+
+[charaFace E 0]
+[charaFadein E 0.1 -270,0]
+[charaFace G 0]
+[charaFadein G 0.1 50,-10]
+[charaFace F 8]
+[charaFadein F 0.1 350,0]
+
+[charaTalk off]
+[subRenderScale #B 1.01]
+[subRenderFadein #B 0.1 0,0]
+[wt 1.0]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_94 0.7 1.0]
+[wait wipe]
+[wt 0.5]
+
+[subRenderMoveScaleEase #B 1.21 1.5 easeOutSine]
+[subRenderMoveEase #B -50,-50 1.5 easeOutSine]
+[wt 0.5]
+[charaFadeout E 0.7]
+[charaFadeout G 0.7]
+[charaFadeout F 0.7]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 1]
+[subRenderFadeinFSR #C 0.4 250,-180]
+[wt 0.6]
+[charaMoveReturn H -20,175 0.3]
+[wait charaMove H]
+[wt 0.4]
+
+[fadeout black 1.5]
+[bgm BGM_EVENT_94 1.5 0.5]
+[charaMove H -70,180 0.8]
+[charaMoveScale H 1.1 0.8]
+[wt 0.4]
+[charaFadeout H 0.4]
+[wt 0.4]
+[wait fade]
+
+[subRenderFadeout #C 0.1]
+[subRenderFadeout #B 0.1]
+[wt 0.1]
+
+[wipeout rectangleStripRightToLeft 0.1 1.0]
+[wait wipe]
+
+[fadein black 0.1]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+[wt 0.8]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_94 0.7 1.0]
+[wait wipe]
+
+＠エリザベート
+[tVoice ValVoice_306200 0_V480]
+は[messageShake 0.01 3 3 0.5]い、そこ！[twt 0.8][charaFace H 2][r]怪しげな商売を[#私:アタシ]のチョコでしなーーい！[wait tVoice]
+[k]
+
+
+[messageOff]
+[se ade110]
+[wt 0.05]
+[charaMoveReturn A 0,5 0.3]
+[wt 0.3]
+[charaMoveReturn A 0,5 0.3]
+[wt 2.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_94 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

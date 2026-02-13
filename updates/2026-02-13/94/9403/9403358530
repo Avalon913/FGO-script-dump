@@ -1,0 +1,559 @@
+
+
+＄94-03-35-85-3-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 3064001 1 デメテル]
+[charaSet B 3064001 1 デメテル_演出用]
+
+[equipSet C 9809850 1 バレンタイン礼装]
+
+
+[branchQuestClear lblClear01d 5000000]
+[branchQuestClear lblClear01c 94064915]
+[branchQuestClear lblClear01c 3001101]
+[branchQuestClear lblClear01b 3000303]
+
+[label lblClear01a]
+[label lblClear01d]
+[scene 105600]
+[sceneSet U 105600 1]
+[branch lblConf01]
+
+[label lblClear01b]
+[scene 105900]
+[sceneSet U 105900 1]
+[branch lblConf01]
+
+[label lblClear01c]
+[scene 158100]
+[sceneSet U 158100 1]
+[label lblConf01]
+
+[subCameraOn 1]
+[charaLayer U sub #A]
+[charaLayer B sub #A]
+[subCameraFilter #A normal]
+
+[charaScale B 1.1]
+[charaScale U 1.1]
+[charaFace B 2]
+[charaFadein B 0.1 0,0]
+[charaFadein U 0.1 0,-250]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth U 2]
+[charaDepth B 3]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_KAZURA_1 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V010]
+[line 3]ハッピー・バレンタイン！[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V020]
+ふふ、知れば知るほど素敵な日ね。[r]マスター。[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V030]
+だって、そうでしょう？[r]人の子が、想いをかたちとして贈るなんて。[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V040]
+とっても素敵だわ。[r]それも、甘い甘いお菓子！[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V050]
+ふふ、ふふふふふ。[r]バレンタインのチョコレート♪[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V060]
+素敵だわ。素敵だわ。[wait tVoice]
+[k]
+
+？1：デメテルさん、上機嫌だね
+？2：バレンタインデーが気に入ったみたい[&だ:]
+？！
+
+[charaFace A 0]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V070]
+ええ！[r]とっても。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFaceFade A 2 0.3]
+[wt 1.2]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V080]
+[line 3]ココロときめく、本命チョコ。[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V090]
+[line 3]ほんのり優しい、義理チョコ。[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V100]
+[line 3]ほっとする味の、友チョコ。[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V110]
+そして。[r]そして！[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V120]
+世には“[#お母さん:マ　　　　マ]チョコ”まであるのよね！[twt 4.0][charaFace A 2][r]ああ……[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk A,B]
+[charaFace B 2]
+[subRenderFadein #A 0.3 0,0]
+[subRenderMoveEase #A 0,-20 0.5 easeOutCubic]
+[subRenderMoveScaleEase #A 1.1 0.5 easeOutCubic]
+[wt 0.7]
+[charaFace B 6]
+
+＠B：デメテル
+[tVoice ValVoice_306400 0_V130]
+[f large]すてき！[wait tVoice]
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1180 0.7 0.4]
+[cueSe SE_24 24_ade1060 0.5 0.4]
+[charaCrossFade A 1098349600 6 0.3]
+[charaCrossFade B 1098349600 6 0.3]
+[charaBackEffect A bit_talk_sunlight01 0,-200]
+[charaBackEffect B bit_talk_sunlight01 0,-200]
+[wait charaCrossFade B]
+[wt 2.0]
+
+？1：ああっ……
+？2：すごい、デメテルさん光ってる！
+？！
+
+[charaFace B 9]
+[charaFace A 9]
+
+＠B：デメテル
+[tVoice ValVoice_306400 0_V140]
+あらいけない。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk A,B]
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+[cueSeStop 22_ad1180 1.0]
+[cueSeStop 24_ade1060 1.0]
+[subRenderMoveScaleEase #A 1.0 0.1 easeOutCubic]
+[charaBackEffectStop A bit_talk_sunlight01]
+[charaBackEffectStop B bit_talk_sunlight01]
+[wt 0.8]
+[charaCrossFade A 3064001 9 0.2]
+[charaCrossFade B 3064001 9 0.2]
+[wait charaCrossFade B]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V150]
+はい、消し消し。[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V160]
+ごめんなさいね、[r]嬉しさのあまり光っちゃったみたい。[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V170]
+だって、だってね？[r]聞いてちょうだいマスター。[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V180]
+こういう催しといったら、あれでしょう？[r]年頃の子たちが主役よね？[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V190]
+そうあるべきだし、[r]それでいいと思うのよ。[wait tVoice]
+[k]
+
+[charaFace A 9]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V200]
+でもね、でも。[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V210]
+[line 3]本命、義理、友、ママ。[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V220]
+想いを抱く誰しもが主役になれるのかしら、[r]って考えたら……[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V230]
+なんだか、それって、[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk B,A]
+[charaFace B 2]
+[subRenderFadein #A 0.3 0,0]
+[subRenderMoveEase #A 0,-20 0.5 easeOutCubic]
+[subRenderMoveScaleEase #A 1.1 0.5 easeOutCubic]
+[wt 0.7]
+[charaFace B 6]
+
+＠B：デメテル
+[tVoice ValVoice_306400 0_V240]
+[f large]すてき！[wait tVoice]
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1180 0.5 0.4]
+[cueSe SE_24 24_ade1060 0.5 0.4]
+[charaCrossFade A 1098349600 6 0.3]
+[charaCrossFade B 1098349600 6 0.3]
+[charaBackEffect A bit_talk_sunlight01 0,-200]
+[charaBackEffect B bit_talk_sunlight01 0,-200]
+[wait charaCrossFade B]
+[wt 1.5]
+
+？1：あっ、また
+？2：（手を合わせて拝む）
+？！
+
+[charaFace B 4]
+[charaFace A 4]
+
+＠B：デメテル
+[tVoice ValVoice_306400 0_V250]
+はっ。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk A,B]
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+[cueSeStop 22_ad1180 1.0]
+[cueSeStop 24_ade1060 1.0]
+[charaBackEffectStop A bit_talk_sunlight01]
+[charaBackEffectStop B bit_talk_sunlight01]
+[wt 0.8]
+[charaCrossFade A 3064001 8 0.2]
+[wait charaCrossFade A]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V260]
+ふふ。ごめんなさい。[r]だめね、私ったら。[wait tVoice]
+[k]
+
+？1：大丈夫だよ
+
+[charaFace A 7]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V270]
+……ありがとう。[wait tVoice]
+[k]
+
+？2：問題ないです
+
+＠デメテル
+[tVoice ValVoice_306400 0_V280]
+……そう？[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 2]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V290]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V300]
+…………さてと。[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V310]
+それじゃあ、マスター。[r]バレンタインの贈り物をあなたに渡すわね。[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V320]
+本命、義理、友、ママ。[r]チョコに限ってもいろんなチョコがあるけれど、[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V330]
+この私。[r]現界せし女神デメテルがあなたへ贈るのは[line 3][wait tVoice]
+[k]
+
+[bgmStop BGM_KAZURA_1 1.2]
+
+[charaFace A 6]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V340]
+こちらです！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[fowardEffect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+[charaFadeout A 0.5]
+
+[se bas2]
+[charaFadein C 0.4 0,-70]
+[wt 3.0]
+
+[bgm BGM_EVENT_157 0.1]
+
+？1：わっ、すごい[line 3]光ってる！
+？2：ありがとう！
+？！
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 1]
+[charaFadeout C 0.4]
+[wt 0.4]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V350]
+……本当はね。[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V360]
+堂々と、あなたへ[#お母さん:マ　　　　マ]チョコを贈りたいの。[wait tVoice]
+[k]
+
+[charaFace A 13]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V370]
+あ、ちがうのよ。[r]母親役をするつもりな訳じゃなくて。[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V380]
+ガイアに連なる大地母神としてはやっぱり、[r]私が贈るものは自動的に[#お母さん:マ　　　　マ]チョコになるでしょう？[wait tVoice]
+[k]
+
+？1：そうかな？
+
+[charaFace A 0]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V390]
+ええ、そうよ。[wait tVoice]
+[k]
+
+？2：そうかも……？
+
+[charaFace A 3]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V400]
+ええ、そうですとも！[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 9]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V410]
+……でも。でも、なのよ。[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V420]
+チョコレートを正面切って[r]誰かへえいっと贈るのは、なんだか……[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V430]
+私には、そのぅ……[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V440]
+まだ、なんだか気恥ずかしくて……[wait tVoice]
+[k]
+
+[charaMove A -5,0 0.4]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V450]
+（もじもじ）[twt 0.4][charaMove A 5,0 0.8][twt 0.8][charaMove A 0,0 0.4][twt 0.4][wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V460]
+だから、メインはメロンパン！[r][#お母さん:マ　　　　マ]チョコとは言い切れないかもしれないけど、[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V470]
+甘いチョコチップをまぶしてみました。[r]美味しくめしあがれ！[wait tVoice]
+[k]
+
+？1：ありがとう、デメテルさん！
+？！
+
+[messageOff]
+[charaFace A 3]
+[wt 1.5]
+
+？1：ところで……
+？2：ちょっとキラキラしてるのは一体？
+？！
+
+[bgmStop BGM_EVENT_157 1.2]
+
+[charaFace A 12]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V480]
+ああ、それは[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 10]
+[wt 1.5]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+[charaFace A 9]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V490]
+香り付けのフレーバーとして、[r]アンブロシアの汁を一滴落としているせいかしら。[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V500]
+ちょっとね。[r]ちょっとよ？[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V510]
+ほんの一滴だけだから、人体に影響は……[wait tVoice]
+[k]
+
+？1：そ、それ、不老長生になったりしない？
+？2：バイオモンスターっぽくならない？
+？！
+
+[messageOff]
+[charaMoveReturn A 0,-3 0.5]
+[cueSe SE_21 21_ade689]
+[charaCrossFade A 1098349600 13 0.3]
+[wait charaCrossFade A]
+[wt 0.5]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V520]
+……。[r]……。[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V530]
+…………現行の人類種の精神って、何年くらい保つの？[wait tVoice]
+[k]
+
+？1：ちょっとぉー！？
+？！
+
+[charaCrossFade A 3064001 8 0.2]
+[wait charaCrossFade A]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V540]
+じょ、冗談！[r]冗談ですから！[wait tVoice]
+[k]
+
+＠デメテル
+[tVoice ValVoice_306400 0_V550]
+大丈夫、ちゃんと美味しいだけのはずだからーっ！[r]（多分）[wait tVoice]
+[k]
+
+？1：語尾になんかついてる！
+？！
+
+[messageOff]
+[charaFace A 6]
+[wt 2.0]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_HALLOWEEN_2021_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
