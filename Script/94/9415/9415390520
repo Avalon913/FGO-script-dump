@@ -1,0 +1,1703 @@
+
+
+＄94-15-39-05-2-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[charaSet A 1098349700 1 ダークお母さんチョコ]
+[charaSet B 1098349700 1 ダークお母さんチョコ（演出用）]
+[charaSet C 2001000 1 エミヤ]
+[charaSet D 7007001 1 ヴラド三世]
+[charaSet E 4011001 1 ブーディカ]
+[charaSet F 5020000 1 アイリスフィール]
+[charaSet G 5054001 1 由井正雪]
+[charaSet H 2021000 1 巴御前]
+[charaSet I 8001900 1 マシュ]
+[charaSet J 2030001 1 ケイローン]
+[charaSet K 3010002 1 ロムルス]
+[charaSet L 3042000 1 ロムルス・クィリヌス]
+
+[sceneSet S 134000 1]
+[sceneSet T 134000 1]
+[sceneSet U 134000 1]
+
+[sceneSet M 134000 1]
+[sceneSet N 134000 1]
+[sceneSet O 134000 1]
+
+[charaSet V 98115000 1 エフェクト用1]
+[charaSet W 98115000 1 エフェクト用2]
+[charaSet X 98115000 1 エフェクト用3]
+[charaSet Y 98115000 1 エフェクト用4]
+[charaSet Z 98115000 1 エフェクト用5]
+[charaSet P 98115000 1 エフェクト用6]
+[charaSet Q 98115000 1 エフェクト用7]
+[charaSet R 4011001 1 ブーディカ（演出用）]
+
+[charaPut P 2500,2500]
+[charaEffect P bit_talk_10_LowLevel]
+[charaPut Q 2500,2500]
+[charaEffect Q bit_talk_10_LowLevel]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth D 5]
+[charaDepth C 6]
+[charaDepth E 7]
+[charaDepth F 8]
+[charaDepth K 11]
+[charaDepth L 12]
+[charaDepth H 13]
+[charaDepth G 14]
+[charaDepth J 15]
+[charaDepth A 17]
+[charaDepth S 18]
+[charaDepth T 19]
+[charaDepth U 20]
+
+[cameraMove 0 0,0 1.01]
+
+[subCameraOn 4]
+
+[charaLayer S sub #A]
+[charaLayer A sub #A]
+[charaLayer V sub #A]
+[charaLayer W sub #A]
+
+[subCameraFilter #A normal]
+
+[subRenderDepth #A 1]
+
+[subRenderScale #A 1.15]
+
+[charaDepth S 2]
+[charaDepth A 3]
+[charaDepth V 10]
+[charaDepth W 15]
+
+[charaFace A 0]
+[charaFadein A 0.1 0,0]
+
+[charaScale S 1.2]
+[charaFadein S 0.1 110,-240]
+
+[scene 134000]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_174 0.1]
+
+
+
+[charaDepth C 3]
+[charaDepth D 2]
+
+[charaFace C 5]
+[charaFace D 5]
+[charaFadeinFSR C 0.1 250,0]
+[charaFadeinFSL D 0.1 -250,15]
+[wt 0.4]
+
+[se ad442]
+[se ade321]
+[charaMoveEaseFSR C 250,-8 0.3 easeOutCubic]
+[charaMoveEaseFSL D -250,7 0.3 easeOutCubic]
+[wt 0.75]
+
+[charaFace C 2]
+[charaFace D 2]
+
+[se ad678]
+[wt 0.05]
+[charaMoveScaleEase C 1.2 0.25 easeOutCubic]
+[charaMoveScaleEase D 1.2 0.25 easeOutCubic]
+[charaMoveEaseFSR C 255,10 0.25 easeOutCubic]
+[charaMoveEaseFSL D -255,25 0.25 easeOutCubic]
+[charaFadeout C 0.25]
+[charaFadeout D 0.25]
+[wt 0.4]
+
+[charaDepth X 10]
+[charaDepth Y 11]
+
+[se ad1053]
+[charaPut X 1]
+[charaEffect X bit_talk_quick_slash]
+[wt 0.3]
+
+[se ad237]
+[seVolume ad237 0 0]
+[wt 0.5]
+
+[seStop ad1053 0.6]
+[se ad715]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaEffect Y bit_talk_gram_slash_violet_02 0,0 F]
+[wt 0.3]
+
+[se ad322]
+[seVolume ad322 0 0.6]
+[cueSe SE_23 23_ad1258]
+[seVolume ad237 0.2 0.7]
+[wt 0.05]
+
+[cueSe SE_26 26_ade1348]
+[fadeout white 0.1]
+
+[charaPut V 0,-400]
+[charaEffect V bit_talk_impactlanding]
+
+[wait fade]
+
+[charaPut X 2000,2500]
+[charaEffectDestroy X bit_talk_quick_slash]
+[charaPut Y 2000,2500]
+[charaEffectDestroy Y bit_talk_gram_slash_violet_01]
+
+[subRenderFadein #A 0 0,0]
+
+[wt 0.1]
+
+[subRenderMoveScaleEase #A 1.01 0.4 easeOutCubic]
+[subRenderShake #A 0.02 2 1 0.5]
+
+[seStop ad237 1.3]
+[cueSeStop 26_ade1348 1.0]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.4]
+[cueSeStop 24_ad1358 0.7]
+[wt 0.55]
+
+
+[cueSe SE_26 26_ade1347]
+[charaPut W 0,150]
+[charaEffect W bit_talk_sorcery_wave_01]
+
+[charaEffect A bit_talk_voice02 0,175]
+[wt 1.1]
+[charaEffect W bit_talk_sorcery_wave_01]
+[wt 0.45]
+
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[cueSeStop 26_ade1347 0.8]
+[wait wipe]
+
+[charaPut V 2000,2500]
+[charaEffectDestroy V bit_talk_impactlanding]
+
+[charaEffectDestroy A bit_talk_voice02]
+[charaEffectDestroy W bit_talk_sorcery_wave_01]
+
+[subRenderFadeout #A 0.1]
+
+[charaDepth T 2]
+[charaDepth E 3]
+
+[charaDepth X 15]
+[charaDepth Y 16]
+[charaDepth Z 17]
+
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[charaFadein T 0.1 0,-200]
+
+[wt 0.2]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wt 0.3]
+[cueSe SE_21 21_ad1135]
+[cueSe SE_25 25_ad1502]
+[charaPut X 1]
+[charaEffect X bit_talk_barrier02_fs]
+
+[wait wipe]
+
+[wt 0.25]
+[cueSeStop 21_ad1135 0.7]
+[cueSeStop 25_ad1502 0.7]
+
+
+[wt 0.25]
+
+[se ad635]
+[cueSe SE_24 24_ad1408]
+[cueSeVolume 24_ad1408 0 0]
+[se ad718]
+[seVolume ad718 0 0]
+
+[cueSeVolume 24_ad1408 0.2 0.5]
+[seVolume ad718 0.2 0.8]
+
+[charaPut Z 1]
+[charaEffect Z bit_talk_pressure_center]
+
+[charaPut Y 1]
+[charaEffect Y bit_talk_sorcery_wave_02]
+[wt 0.1]
+[charaShake E 0.02 1 1 0]
+[charaShake X 0.02 1 1 0]
+
+[wt 1.0]
+
+[charaPut Y 1]
+[charaEffect Y bit_talk_sorcery_wave_02]
+[wt 0.2]
+
+[charaLayer R sub #B]
+[charaLayer U sub #B]
+
+[subCameraFilter #B maskEdge cut359_mask04 6 255,51,0,255]
+
+[subRenderDepth #B 2]
+
+[subRenderScale #B 1.05]
+
+[charaDepth U 2]
+[charaDepth R 3]
+
+[charaScale U 1.5]
+[charaScale R 1.7]
+
+[charaFace R 5]
+[charaFadein R 0 75,315]
+[charaFadein U 0 -125,-50]
+
+[se ad421]
+[wt 0.15]
+
+[subRenderFadein #B 0.3 0,-275]
+[charaMoveEase R 0,315 0.3 easeOutCubic]
+[charaMoveEase U -200,-50 0.3 easeOutCubic]
+[wt 0.75]
+[charaPut Y 1]
+[charaEffect Y bit_talk_sorcery_wave_02]
+[wt 0.05]
+
+[subRenderFadeout #B 0.3]
+[charaMoveEase R -85,315 0.3 easeOutCubic]
+[charaMoveEase U -285,-50 0.3 easeOutCubic]
+[wt 0.3]
+
+[charaFadeout R 0]
+[charaFadeout U 0]
+[wt 0.1]
+
+[charaLayer R normal]
+[charaLayer U normal]
+[charaScale R 1.0]
+[charaScale U 1.0]
+[wt 0.05]
+
+[se ad709]
+[cueSe SE_24 24_ad1452]
+
+[fadeout white 0.1]
+
+[seStop ad635 0.6]
+[cueSeStop 24_ad1408 0.6]
+[seStop ad718 0.6]
+
+[wait fade]
+
+[charaShakeStop E]
+[charaShakeStop X]
+
+[charaPut X 2000,2500]
+[charaEffectDestroy X bit_talk_barrier02_fs]
+
+[charaPut Y 2000,2500]
+[charaEffectDestroy Y bit_talk_sorcery_wave_02]
+
+[charaPut Z 2000,2500]
+[charaEffectDestroy Z bit_talk_pressure_center]
+
+[fowardEffect bit_talk_blow03]
+
+[charaFace E 2]
+[wt 0.05]
+
+[charaShake E 0.02 2 2 0.5]
+
+[fadein white 0.1]
+[wait fade]
+
+[seStop ad709 1.2]
+[cueSeStop 24_ad1452 1.2]
+
+[wt 0.9]
+
+[fowardEffectDestroy bit_talk_blow03]
+
+[charaMoveScaleEase E 1.2 0.7 easeOutSine]
+[charaMoveScaleEase T 1.2 0.7 easeOutSine]
+[charaMoveEase E 0,25 0.7 easeOutSine]
+[charaMoveEase T 0,-270 0.7 easeOutSine]
+
+[charaDepth F 5]
+[charaDepth X 6]
+[charaDepth G 15]
+[charaDepth Y 16]
+
+[charaScale F 0.75]
+[charaScale G 0.85]
+[charaPutFSR F 190,-35]
+[charaPutFSL G -190,-20]
+[charaFace F 5]
+[charaFace G 9]
+
+[charaMoveScaleEase F 0.95 0.7 easeOutSine]
+[charaMoveEaseFSR F 240,-8 0.7 easeOutSine]
+[charaMoveScaleEase G 1.05 0.7 easeOutSine]
+[charaMoveEaseFSL G -240,8 0.7 easeOutSine]
+
+[charaFadeout E 0.35]
+[wt 0.35]
+
+[charaFadeTime F 0.35 1.0]
+[charaFadeTime G 0.35 1.0]
+[wt 0.45]
+
+
+[cueSe Battle bac41]
+[charaPutFSR X 250,0]
+[charaEffect X bit_talk_easy_spell_r]
+[wt 1.5]
+
+[cueSe Battle bas8]
+[charaPutFSL Y -250,0]
+[charaEffect Y bit_talk_attack_buff]
+[wt 0.85]
+[charaFace G 13]
+[wt 0.6]
+
+[charaFace G 3]
+[wt 0.1]
+
+[se ad678]
+[charaEffect G bit_talk_quickmove]
+[charaSpecialEffect G erasureReverse 1 0.3]
+[wt 0.1]
+[charaPutFSL Y 2000,2500]
+[charaEffectDestroy Y bit_talk_attack_buff]
+
+[wt 0.65]
+
+[charaDepth X 20]
+
+[cueSe Servants_505400 m59160]
+[cueSe Servants_505400 m59161]
+[wt 0.2]
+
+[charaPut X 1]
+[charaEffect X bit_talk_flame_slash_blue 0,0 F]
+[wt 0.45]
+
+[se ad322]
+[cueSe SE_26 26_ade1348]
+[cueSe Servants_800190 m64934]
+[fadeout white 0.1]
+
+[charaPut V 0,-350]
+[charaEffect V bit_talk_impactlanding]
+
+[wait fade]
+
+[charaFadeout F 0]
+[charaFadeout T 0]
+[charaPut X 2000,2500]
+[charaEffectDestroy X bit_talk_flame_slash_blue]
+
+[subRenderScale #A 1.1]
+
+[subRenderFadein #A 0 0,-10]
+[wt 0.1]
+
+[subRenderShake #A 0.02 3 2 0.7]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.5]
+
+[cueSeStop 26_ade1348 0.7]
+[wt 0.9]
+
+
+
+[charaLayer I sub #B]
+[charaLayer U sub #B]
+
+[charaLayer H sub #C]
+[charaLayer M sub #C]
+
+[charaLayer J sub #D]
+[charaLayer N sub #D]
+
+[subCameraFilter #B maskEdge cut359_mask02 6 255,255,255,255]
+[subCameraFilter #C maskEdge cut359_mask01 6 255,255,255,255]
+[subCameraFilter #D maskEdge cut359_mask03 6 255,255,255,255]
+
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+[subRenderDepth #D 4]
+[subRenderDepth #A 5]
+
+[subRenderScale #B 1.0]
+[subRenderScale #C 1.0]
+
+[charaDepth U 2]
+[charaDepth I 3]
+
+[charaScale U 1.4]
+[charaScale I 1.4]
+
+[charaFace I 7]
+[charaFadein I 0 300,275]
+[charaFadein U 0 -50,-50]
+
+[charaDepth M 2]
+[charaDepth H 3]
+
+[charaScale M 1.4]
+[charaScale H 1.4]
+
+[charaFace H 5]
+[charaFadein H 0 -300,450]
+[charaFadein M 0 50,-50]
+
+[charaDepth N 2]
+[charaDepth J 3]
+
+[charaScale N 1.4]
+[charaScale J 1.4]
+
+[charaFace J 5]
+[charaFadein J 0 -300,50]
+[charaFadein N 0 50,-50]
+
+[cueSe SE_25 25_ad1460]
+[cueSe Servants_505400 m59127]
+[cueSe Servants_505400 m59128]
+
+[subRenderFadein #B 0 0,-340]
+[subRenderFadein #C 0 0,-340]
+[subRenderFadein #D 0 0,-340]
+[wt 0.1]
+
+[charaMoveEase I 250,275 0.3 easeOutCubic]
+[charaMoveEase U -100,-50 0.3 easeOutCubic]
+
+[charaMoveEase H -250,450 0.3 easeOutCubic]
+[charaMoveEase M 100,-50 0.3 easeOutCubic]
+
+[charaMoveEase J -250,50 0.3 easeOutCubic]
+[charaMoveEase N 100,-50 0.3 easeOutCubic]
+
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+[charaEffectDestroy V bit_talk_impactlanding]
+
+[cueSeStop 25_ad1460 0.2]
+[wt 0.65]
+
+[subRenderFadein #A 0.3 0,0]
+
+[charaMoveEase I 200,275 0.3 easeOutCubic]
+[charaMoveEase U -150,-50 0.3 easeOutCubic]
+
+[charaMoveEase H -200,450 0.3 easeOutCubic]
+[charaMoveEase M 150,-50 0.3 easeOutCubic]
+
+[charaMoveEase J -200,50 0.3 easeOutCubic]
+[charaMoveEase N 150,-50 0.3 easeOutCubic]
+
+[wt 0.3]
+
+[subRenderFadeout #B 0]
+[subRenderFadeout #C 0]
+[subRenderFadeout #D 0]
+
+[charaFadeout I 0]
+[charaFadeout H 0]
+[charaFadeout J 0]
+[charaFadeout U 0]
+[charaFadeout M 0]
+[charaFadeout N 0]
+[wt 0.1]
+
+[charaLayer I normal]
+[charaLayer H normal]
+[charaLayer J normal]
+[charaLayer U normal]
+[charaLayer M normal]
+[charaLayer N normal]
+[charaScale I 1.0]
+[charaScale H 1.0]
+[charaScale J 1.0]
+[charaScale U 1.0]
+[charaScale M 1.0]
+[charaScale N 1.0]
+[wt 0.05]
+
+[cueSe Servants_203300 bac970]
+[cueSe Servants_1101000 m42404]
+[fowardEffect bit_talk_beam_slash_02 0,0 V]
+[wt 0.75]
+
+[cueSe Servants_800190 m64919]
+[fowardEffect bit_talk_h_slash01_fs 0,0]
+[wt 0.6]
+[cueSeStop m64919 0.7]
+
+[cueSe Servants_203800 bac1420]
+[wt 0.2]
+[fowardEffect bit_talk_prt_attackex]
+[wt 0.55]
+
+[cueSe SE_26 26_ade1348]
+[cueSe Servants_800190 m64972]
+[cueSe Servants_203800 bac1423]
+[fadeout white 0.1]
+
+[charaPut V 0,-300]
+[charaEffect V bit_talk_impactlanding]
+
+[wait fade]
+
+[wt 0.15]
+
+[subRenderShake #A 0.02 2 3 0.8]
+[subRenderMoveScaleEase #A 1.01 0.7 easeOutCubic]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.7]
+
+[cueSeStop 26_ade1348 0.7]
+[wt 1.6]
+
+
+[charaLayer K sub #B]
+[charaLayer U sub #B]
+
+[charaLayer L sub #C]
+[charaLayer M sub #C]
+
+[subCameraFilter #B maskEdge cut359_mask16 6 179,145,54,255]
+[subCameraFilter #C maskEdge cut359_mask10 6 179,145,54,255]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+
+[subRenderScale #B 1.0]
+[subRenderScale #C 1.0]
+
+[charaDepth U 2]
+[charaDepth K 3]
+
+[charaScale U 1.2]
+[charaScale K 1.2]
+
+[charaFace K 0]
+[charaFadein K 0 -30,300]
+[charaFadein U 0 -180,50]
+
+[charaDepth M 2]
+[charaDepth L 3]
+
+[charaScale M 1.2]
+[charaScale L 1.2]
+
+[charaFace L 5]
+[charaFadein L 0 30,325]
+[charaFadein M 0 180,50]
+
+[charaPut V 2000,2500]
+[charaEffectDestroy V bit_talk_impactlanding]
+
+[cueSe Servants_800190 m64901]
+[subRenderFadeinFSSideR #B 0.3 425,-250]
+[subRenderFadeinFSSideL #C 0.3 -425,-250]
+
+[charaMoveEase K -50,200 0.3 easeOutCubic]
+[charaMoveEase U -200,-50 0.3 easeOutCubic]
+
+[charaMoveEase L 50,225 0.3 easeOutCubic]
+[charaMoveEase M 200,-50 0.3 easeOutCubic]
+
+[wt 0.85]
+
+[charaFace K 5]
+[charaFace L 2]
+[wt 0.2]
+
+[se ad678]
+
+[charaMoveScaleEase K 1.4 0.25 easeOutCubic]
+[charaMoveScaleEase L 1.4 0.25 easeOutCubic]
+[charaMoveEase K -55,215 0.25 easeOutCubic]
+[charaMoveEase L 55,240 0.25 easeOutCubic]
+[charaFadeout K 0.25]
+[charaFadeout L 0.25]
+[wt 0.4]
+
+[subRenderFadeout #B 0.3]
+[subRenderFadeout #C 0.3]
+[subRenderFadeout #D 0.3]
+[wt 0.3]
+
+[charaFadeout K 0]
+[charaFadeout L 0]
+[charaFadeout U 0]
+[charaFadeout M 0]
+[wt 0.1]
+
+[charaLayer K normal]
+[charaLayer L normal]
+[charaLayer U normal]
+[charaLayer M normal]
+[charaScale K 1.0]
+[charaScale L 1.0]
+[charaScale U 1.0]
+[charaScale M 1.0]
+[wt 0.05]
+
+[cueSe SE_25 25_ade1283]
+[cueSeVolume 25_ade1283 0 0.4]
+[cueSe Servants_304200 bac1115]
+[cueSe Servants_304200 bac1610]
+[fowardEffect bit_talk_h_slash02_fs 0,0 V]
+[fowardEffect bit_talk_h_slash02_fs 0,0 F]
+[wt 0.4]
+
+[subRenderShake #A 0.02 3 2 0.4]
+[wt 0.5]
+
+[cueSeStop 25_ade1283 0.6]
+[cueSeStop bac1115 0.6]
+[cueSeStop bac1610 0.6]
+
+[se ad627]
+[cueSe Servants_304200 bac1616]
+[fowardEffect bit_talk_thunder_03_fs]
+[wt 0.3]
+
+[subRenderShake #A 0.02 2 2 1.7]
+[se ade346]
+[wt 0.1]
+
+[fowardEffect bit_talk_thunder_03_fs 275,0]
+
+[wt 0.4]
+
+[se ad627]
+[fowardEffect bit_talk_thunder_03_fs -275,0]
+
+[wt 0.4]
+[se ade347]
+[fowardEffect bit_talk_thunder_03_fs 0,0]
+
+[wt 1.4]
+
+
+[charaSet C 7050001 1 ロウヒ]
+[charaSet D 7050001 1 ロウヒ（演出用）]
+[charaSet E 5023000 1 エレナ・ブラヴァツキー]
+[charaSet F 5023000 1 エレナ・ブラヴァツキー（演出用）]
+[charaSet G 5019001 1 エルメロイⅡ世]
+[charaSet H 5019001 1 エルメロイⅡ世（演出用）]
+[charaSet J 3064000 1 デメテル]
+[charaSet K 3064000 1 デメテル（演出用）]
+[charaSet R 5019001 1 エルメロイⅡ世（エフェクト用）]
+
+[charaDepth E 10]
+[charaDepth J 2]
+[charaDepth G 4]
+
+[charaDepth T 3]
+[charaDepth C 4]
+[charaDepth D 5]
+[charaDepth X 6]
+
+[charaScale C 1.2]
+[charaScale D 1.2]
+[charaScale T 1.4]
+
+[charaEffectEdgeBlur D DFE695 DFE695 2 2]
+[charaFace C 0]
+[charaFadein C 0.1 150,0]
+[charaFadein T 0.1 -200,-320]
+[charaPut D 150,0]
+
+[wt 0.5]
+
+
+[cueSe SE_21 21_ad1108]
+
+[subRenderFadeout #A 0.5]
+[charaMove C 100,0 7.0]
+[charaMove D 100,0 7.0]
+[charaMove T -250,-320 7.0]
+[wt 0.9]
+
+
+[se ad747]
+[seVolume ad747 0 0.5]
+[charaEffect C bit_talk_glowing_sphere_g]
+
+[charaLayer E sub #B]
+[charaLayer F sub #B]
+[charaLayer U sub #B]
+
+[charaLayer G sub #C]
+[charaLayer H sub #C]
+[charaLayer M sub #C]
+[charaLayer R sub #C]
+
+[subCameraFilter #B normal]
+[subCameraFilter #C normal]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderDepth #C 3]
+
+[subRenderScale #B 1.01]
+[subRenderScale #C 1.01]
+
+[charaDepth U 7]
+[charaDepth E 8]
+[charaDepth F 9]
+[charaDepth Y 10]
+
+[charaScale E 1.2]
+[charaScale F 1.2]
+[charaScale U 1.4]
+
+[charaEffectEdgeBlur F DF3447 DF3447 2 2]
+[charaFace E 0]
+[charaFadein E 0 -150,0]
+[charaFadein U 0 200,-320]
+[charaPut F -150,0]
+
+[charaDepth M 11]
+[charaDepth G 12]
+[charaDepth H 13]
+[charaDepth Z 14]
+[charaDepth R 15]
+
+[charaScale G 1.2]
+[charaScale H 1.2]
+[charaScale M 1.4]
+
+[charaEffectEdgeBlur H 9999CC 9999CC 2 2]
+[charaFace G 0]
+[charaFadein G 0 0,50]
+[charaPut R 20,50]
+[charaFadeTime R 0 0]
+[charaFadein M 0 0,-270]
+[charaPut H 0,50]
+
+[wt 2.2]
+
+[se ad364]
+[seVolume ad364 0 0]
+
+[seVolume ad364 1.0 0.5]
+
+[subRenderFadein #B 0.5 0,0]
+[charaMove E -100,0 7.0]
+[charaMove F -100,0 7.0]
+[charaMove U 250,-320 7.0]
+[wt 0.5]
+
+[charaFadeout C 0]
+[charaFadeout D 0]
+[charaFadeout T 0]
+[charaEffectEdgeBlurDestroy D]
+[charaEffectDestroy C bit_talk_glowing_sphere_g]
+[wt 0.4]
+
+[se ad747]
+[seVolume ad747 0 0.5]
+[charaEffect E bit_talk_glowing_sphere_red]
+[wt 2.2]
+
+[cueSe SE_21 21_ad1116]
+[cueSeVolume 21_ad1116 0 0]
+[cueSeVolume 21_ad1116 1.0 0.5]
+
+[subRenderFadein #C 0.5 0,0]
+[charaMove G 0,0 7.0]
+[charaMove H 0,0 7.0]
+[charaMove M 0,-320 7.0]
+[charaMove R 0,0 7.0]
+[wt 0.5]
+
+[subRenderFadeout #B 0.1]
+[charaFadeout E 0]
+[charaFadeout F 0]
+[charaFadeout U 0]
+[charaEffectEdgeBlurDestroy F]
+[charaEffectDestroy E bit_talk_glowing_sphere_red]
+[wt 0.4]
+
+[se ad747]
+[seVolume ad747 0 0.5]
+[charaEffect R bit_talk_glowing_sphere]
+
+[charaScale J 5]
+[charaScale K 4]
+[charaScale N 3]
+
+[charaDepth J 4]
+[charaDepth N 3]
+
+[charaScale J 1.0]
+[charaScale N 1.0]
+
+[charaFace J 10]
+[charaFadein J 0.1 1]
+[charaFadein N 0.1 0,-200]
+[charaPut K 1]
+[wt 2.2]
+
+[cueSeVolume 21_ad1108 0.8 0.2]
+[seVolume ad364 0.8 0.2]
+[cueSeVolume 21_ad1116 0.8 0.2]
+[seVolume ad747 0.8 0.2]
+
+[subRenderFadeout #C 0.8]
+
+[charaPutFSSideR X 640,0]
+[charaPutFSSideL Y -560,0]
+[charaPut Z 40,600]
+[charaEffect X bit_talk_glowing_sphere_g]
+[charaEffect Y bit_talk_glowing_sphere_red]
+[charaEffect Z bit_talk_glowing_sphere]
+
+[wt 0.8]
+
+[charaFadeout G 0]
+[charaFadeout H 0]
+[charaFadeout M 0]
+[charaFadeout R 0]
+[charaEffectEdgeBlurDestroy H]
+[charaEffectDestroy R bit_talk_glowing_sphere]
+[wt 0.1]
+
+[charaLayer E normal]
+[charaLayer F normal]
+[charaLayer G normal]
+[charaLayer H normal]
+[charaLayer R normal]
+[charaLayer U normal]
+[charaLayer M normal]
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaScale G 1.0]
+[charaScale H 1.0]
+[charaScale U 1.0]
+[charaScale M 1.0]
+[wt 0.05]
+
+[se ad598]
+[charaMoveEase X 40,0 1.2 easeOutCubic]
+[charaMoveEase Y 40,0 1.2 easeOutCubic]
+[charaMoveEase Z 40,0 1.2 easeOutCubic]
+[wt 1.0]
+
+[fowardEffect bit_talk_light_particles_scatter_gold 40,-15]
+[wt 0.1]
+
+[cueSeStop 21_ad1108 0.6]
+[seStop ad364 0.6]
+[cueSeStop 21_ad1116 0.6]
+[seStop ad747 0.6]
+
+[se ade390]
+[seVolume ade390 0 0.3]
+[cueSe SE_25 25_ad1503]
+[cueSeVolume 25_ad1503 0 0.5]
+[wt 0.1]
+
+[charaEffectStop X bit_talk_glowing_sphere_g]
+[charaEffectStop Y bit_talk_glowing_sphere_red]
+[charaEffectStop Z bit_talk_glowing_sphere]
+[wt 0.6]
+
+[cueSeStop 25_ad1503 0.5]
+[wt 0.45]
+
+[se ad626]
+[seVolume ad626 0 0]
+[cueSe SE_21 21_ad1117]
+[cueSeVolume 21_ad1117 0 0]
+
+[seVolume ad626 1.0 0.2]
+[cueSeVolume 21_ad1117 1.0 0.5]
+
+[charaPut X 1]
+[charaEffect X bit_talk_noble_light]
+[charaEffect X bit_talk_flare_plzm 0,100]
+[wt 2.2]
+
+[charaFaceFade J 13 0.2]
+[wt 0.8]
+
+[cueSe SE_21 21_ade546]
+[wt 0.25]
+
+[charaFace J 4]
+[charaMoveScaleEase J 1.4 0.4 easeOutQuint]
+[charaMoveEase J 0,-10 0.4 easeOutQuint]
+[charaMoveScaleEase K 1.4 0.4 easeOutQuint]
+[charaMoveEase K 0,0 0.4 easeOutQuint]
+[charaMoveScaleEase N 1.4 0.4 easeOutQuint]
+[charaMoveEase N 0,-380 0.4 easeOutQuint]
+[blur motion 0.2 4 10000 0.5 0.6 0.05 100]
+[wt 0.7]
+
+[wipeout circleIn 0.4 1.0]
+[cueSeStop 21_ade546 0.6]
+[wait wipe]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout N 0.1]
+[charaPut X 2000,2500]
+[charaEffectDestroy X bit_talk_noble_light]
+[charaEffectDestroy X bit_talk_flare_plzm]
+[blurOff motion 0.1]
+
+[cueSeStop 21_ade546 0.8]
+[seStop ad626 0.8]
+[cueSeStop 21_ad1117 0.8]
+[bgmStop BGM_BATTLE_174 0.8]
+
+[scene 10000]
+
+[wt 0.4]
+
+[wipein circleIn 0.3 1.0]
+[wait wipe]
+
+[cueSe SE_25 25_ade1231]
+[cueSe SE_22 22_ad1191]
+[charaRoll X -90]
+[charaPut X 289,-500]
+[charaEffect X bit_talk_notice_light 0,0 V]
+[cueSeStop 22_ad1191 0.6]
+[cueSeStop 25_ade1231 0.6]
+[wt 0.7]
+
+[se ad735]
+[seVolume ad730 0 0.7]
+[effect bit_talk_barrier_nta]
+[seStop ad730 1.0]
+[wt 1.5]
+
+[se ade387]
+[fowardEffect bit_talk_shock_wave]
+[wt 0.5]
+[se ad285]
+[cueSe SE_24 24_ad1378]
+[cueSe SE_22 22_ad1196]
+[wt 0.5]
+
+[messageOff]
+[fadeout white 1.0]
+[wait fade]
+
+[se ad743]
+[seVolume ad743 0 0.6]
+[se ad744]
+[seVolume ad744 0 0.3]
+
+[wt 1.0]
+
+[charaRoll X 0]
+[charaPut X 2000,2500]
+[charaEffectDestroy X bit_talk_notice_light]
+
+[effectDestroy bit_talk_barrier_nta]
+[fowardEffectDestroy bit_talk_shock_wave]
+
+[wt 2.0]
+
+[sceneSet M 212100 1]
+[imageSet N cut106_trans 1]
+[charaFilter N silhouette FFFFFF80]
+
+[scene 10001]
+
+[charaDepth M 3]
+[charaDepth N 15]
+[charaDepth X 4]
+
+[charaPut X 1]
+[charaEffect X bit_talk_glitter]
+
+[charaScale N 1.4]
+[charaScale M 1.3]
+[charaFadein M 0.1 340,-270]
+[charaFadein N 0.1 0,-270]
+
+[wt 1.5]
+
+[charaMove M 400,-270 60.0]
+
+[fadein white 1.0]
+[wait fade]
+[wt 1.0]
+
+[bgm BGM_VALENTINE_1 0.1]
+[wt 1.0]
+
+＠デメテル
+……[#お母さん:マ　　　マ]チョコの悲しみ。
+[k]
+
+＠デメテル
+当世の文化に疎い私には、[r]深くは理解できないのだと思っていました。
+[k]
+
+[messageOff]
+[wt 0.8]
+
+＠デメテル
+でも。[r]でも、私にも。
+[k]
+
+＠デメテル
+感じるものはあります。
+[k]
+
+＠デメテル
+悲しみは、それはきっと間違いではないけれど、
+[k]
+
+＠デメテル
+それだけではない。[r]違いますか？
+[k]
+
+[messageOff]
+[wt 0.8]
+
+＠デメテル
+お母さんからもらうチョコレート、[r]お母さんからあげるチョコレート。
+[k]
+
+＠デメテル
+その根底にあるのは[line 3]
+[k]
+
+＠デメテル
+愛、ですよね？
+[k]
+
+[messageOff]
+[wt 0.8]
+
+＠デメテル
+母から子への愛。[r]無償の愛。そのかたちこそが、[#お母さん:マ　　　マ]チョコ！
+[k]
+
+＠デメテル
+積み重なっていった悲しみが[#巨人:あなた]なら！[r]その奥底には、きっと、あるはずです。
+[k]
+
+[messageOff]
+[wt 1.2]
+
+＠デメテル
+[line 4]愛が。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout white 1.0]
+[wait fade]
+
+[charaPut X 2000,2500]
+[charaEffectDestroy X bit_talk_glitter]
+[charaFadeout N 0.1]
+[charaFadeout M 0.1]
+[wt 0.5]
+
+[charaSet D 1098155400 1 黒髭]
+[charaSet H 10016000 1 ティアマト]
+[charaSet I 8001900 1 マシュ]
+[charaSet F 1098257310 1 ダ・ヴィンチ]
+[charaSet E 1098346900 1 オルガマリー]
+
+[charaDepth D 3]
+[charaDepth F 3]
+[charaDepth H 16]
+
+[scene 134000]
+
+
+[subRenderFadein #A 0 0,0]
+
+[charaPut V 1]
+[charaEffect V bit_talk_06_blue]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[subRenderFadeout #A 0.5]
+[wt 0.7]
+
+
+[charaTalk on]
+[charaPut Q 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+[#お母さん:マ　　　マ]チョコ巨人、[r]敵性反応、急激に低下してるよ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut Q 2500,2500]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠マシュ
+これは……
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 13]
+[charaFadein H 0.1 1]
+
+＠ティアマト
+うん、うん。[r]思い出したんだな……
+[k]
+
+[charaFace H 10]
+
+＠ティアマト
+なにより大切なもの……[r]自分が、[#お母さん:マ　　　マ]チョコが、なんのために……
+[k]
+
+＠ティアマト
+生まれたのか……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠黒髭
+そうでござるな、愛のために[line 3][wt 0.8][charaFace D 8][messageShake 0.02 2 2 0.3][r]ハッ。
+[k]
+
+[charaFace D 0]
+
+＠黒髭
+数字！　消えてますな！[r]マシュ氏！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+[wt 1.2]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaScale J 1.0]
+[charaTalk J]
+[charaFace J 10]
+[charaFadein J 0.1 1]
+[wt 0.4]
+
+[cueSe SE_21 21_ade590]
+[fadeout white 0.4]
+[wait fade]
+
+[charaCrossFade J 3064001 10 0.2]
+[wait charaCrossFade J]
+[charaSet K 3064001 1 デメテル（演出用）]
+
+[wt 0.8]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.8]
+
+[charaFace J 0]
+
+＠デメテル
+戦いは終わりにしましょう。[r]せっかくの、バレンタインデーですもの。
+[k]
+
+＠デメテル
+争う必要はありません。[r]悲しみは私が連れていくから……
+[k]
+
+[charaFace J 3]
+
+＠デメテル
+あなたは、愛を抱き締めて、[r]今は眠ってください。
+[k]
+
+[messageOff]
+
+[charaTalk A,J]
+[subRenderFadein #A 0.5 0,0]
+[wt 0.5]
+[charaFadeout J 0.1]
+[wt 0.4]
+
+＠ダークお母さんチョコ
+……………………。
+[k]
+
+[charaMoveReturn A 0,-4 0.9]
+
+＠ダークお母さんチョコ
+（小さく頷く）
+[k]
+
+[messageOff]
+
+？1：今……
+？2：頷いたような？
+？！
+
+[wt 0.5]
+
+[charaSpecialEffect A erasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect A]
+[charaEffectStop V bit_talk_06_blue]
+[wt 1.3]
+
+[cueSe Battle bas2]
+[charaPut W 1]
+[charaEffect W bit_talk_20_remake]
+[wt 1.4]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+[wt 0.6]
+
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+
+[charaFadeout S 0]
+[charaFadeout A 0]
+[charaPut V 2000,2500]
+[charaPut W 2000,2500]
+[charaEffectDestroy V bit_talk_06_blue]
+[wt 0.15]
+
+[charaLayer S normal]
+[charaLayer A normal]
+[charaLayer V normal]
+[charaLayer W normal]
+[charaScale S 1.0]
+[charaScale A 1.0]
+[charaScale V 1.0]
+[charaScale W 1.0]
+[subCameraOff]
+[wt 0.05]
+
+＠マシュ
+[#お母さん:マ　　　マ]チョコ巨人、消滅！[r]敵性反応も完全に消失しています。
+[k]
+
+＠マシュ
+巨人に覆われていた微小聖杯、[r]露出を確認しました。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠黒髭
+……うん、うん！[r]ありがとう、そしてさようなら[#お母さん:マ　　　マ]チョコ！
+[k]
+
+[charaFace D 0]
+
+＠黒髭
+あの日の母にありがとう！[r]あの日の僕にさようなら！
+[k]
+
+[charaFace D 6]
+
+＠黒髭
+いやあの日の僕はチョコの風習なかったんですけどね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 21]
+[charaFadein H 0.1 1]
+
+＠ティアマト
+うん、うん。[r]さよなら、悲しみの[#お母さん:マ　　　マ]チョコ……
+[k]
+
+[charaFace H 2]
+
+＠ティアマト
+今は、今だけはさようなら。[r]元気でね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaScale G 1.0]
+[charaScale C 1.0]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠エルメロイⅡ世
+……。[r]……。
+[k]
+
+[charaDepth G 2]
+[charaDepth C 3]
+
+[charaFace C 28]
+
+＠エルメロイⅡ世
+……いや、そこまで大仰な話ではないだろう[wt 0.6][charaFadein C 0.4 310,-50][charaMove C 280,-50 0.4][wt 0.2][se ad977][seVolume ad977 0 0.4][wt 0.2][charaShake G 0.01 1 1 0.3][charaFace G 8][r]ムグッ。
+[k]
+
+[charaTalk C]
+[charaFace C 29]
+
+＠ロウヒ
+まあまあ。[r]野暮なことは言いっこなしだぁよ！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.0]
+[bgmStop BGM_VALENTINE_1 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.1]
+
+[bgm BGM_EVENT_159 0.1]
+
+[charaTalk J]
+[charaFace J 5]
+[charaFadein J 0.1 1]
+
+＠デメテル
+皆さん[line 3]
+[k]
+
+＠デメテル
+本当に、ご迷惑をお掛けいたしました。
+[k]
+
+＠デメテル
+お陰さまをもちまして、[r]無事に、微小聖杯を回収することができました。
+[k]
+
+[charaFace J 0]
+
+＠デメテル
+ありがとう。[r]ここに集った十二騎の皆さんだけでなく、
+[k]
+
+[charaFace J 3]
+
+＠デメテル
+カルデアのマスターも、[r]マシュさんに黒髭さん……
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaDepth D 4]
+[charaDepth I 3]
+
+[charaTalk D,I]
+[charaFace D 2]
+[charaFadeinFSL D 0.1 0]
+[charaFace I 10]
+[charaFadeinFSR I 0.1 230,0]
+[wt 0.5]
+
+[charaMoveReturnFSR I 230,-5 0.5]
+[wt 0.05]
+[charaMoveReturnFSL D -256,-7 0.5]
+[wt 1.2]
+
+[charaFadeout D 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0.1 1]
+
+＠デメテル
+ダ・ヴィンチさんにオルガマリーさん……
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaPutFSL P 0]
+[charaPutFSR Q 2]
+[charaFace E 21]
+[charaFadeinFSL E 0.1 0]
+[charaFace F 5]
+[charaFadeinFSR F 0.1 2]
+[wt 0.7]
+[charaMoveReturnFSR F 256,-5 0.5]
+[wt 1.4]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut P 2500,2500]
+[charaPut Q 2500,2500]
+
+[charaTalk on]
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.1 1]
+
+＠デメテル
+そして、カルデアにいる多くの皆さんに。[r]心からありがとう。
+[k]
+
+[charaFace J 13]
+
+＠デメテル
+そして、それから、[r][#此処:こ　こ]へ現界した神代の女神として……[line 3]
+[k]
+
+[charaFace J 10]
+
+＠デメテル
+……いえ、違うわね。
+[k]
+
+[charaFace J 3]
+
+＠デメテル
+[#お母さん:マ　　　マ]チョコの悲しみと愛を知った、[r]ひとりの母として、
+[k]
+
+[charaFace J 6]
+
+＠デメテル
+[line 3]みんなに！
+[k]
+
+[messageOff]
+[fadeout white 0.8]
+[wait fade]
+
+[charaFadeout J 0.1]
+
+[sceneSet S 279501 1]
+[sceneSet T 279501 1]
+[sceneSet U 279501 1]
+[sceneSet M 279500 1]
+[sceneSet N 134000 1]
+[sceneSet O 134000 1]
+
+[scene 10001]
+
+
+[charaDepth S 2]
+[charaDepth T 3]
+
+[wt 0.3]
+
+[fadein white 0.3]
+[wait fade]
+
+[cueSe SE_21 21_ade638]
+[wt 0.2]
+
+[charaScale S 2.1]
+[charaFadein S 0.3 100,-275]
+[charaMoveScaleEase S 1.7 0.7 easeOutElastic]
+[wt 2.2]
+
+[charaFadein T 1.2 0,-200]
+[wt 1.6]
+
+＠デメテル
+[f large]デメテルママからの！
+[k]
+
+＠デメテル
+[f large]ハッピーバレンタイン！
+[k]
+
+＠デメテル
+[line 3]ですよ！
+[k]
+
+
+？1：こ、これは！
+？2：鮮やかなハートのサイン！
+？！
+
+[messageOff]
+
+[subCameraOn 2]
+
+[charaLayer N sub #A]
+[charaLayer I sub #A]
+
+[charaLayer O sub #B]
+[charaLayer D sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask11 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask12 5 255,255,255,255]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.0]
+
+[charaDepth N 2]
+[charaDepth I 3]
+
+[charaScale N 1.2]
+
+[charaFace I 3]
+[charaFadein I 0 425,225]
+[charaFadein N 0 -150,80]
+
+[charaDepth O 2]
+[charaDepth D 3]
+
+[charaScale O 1.2]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0 -510,200]
+[charaFadein O 0 150,80]
+
+[subRenderFadeinFSSideL #B 0.3 120,-180]
+[subRenderMoveFSSideL #B 100,-200 0.3]
+[wt 0.3]
+
+＠黒髭
+お、おおお……！[r]なんという渾身のピースハートッ！
+[k]
+
+＠黒髭
+当世のことはよくわからない、等と[r]言っておきながら、鮮やかなまでのハートっぷり！
+[k]
+
+[charaFace D 10]
+
+＠黒髭
+お美事！[r]お美事でありますぞデメテル殿ーッ！
+[k]
+
+[messageOff]
+[charaTalk I]
+[subRenderFadeinFSSideR #A 0.3 -120,-180]
+[subRenderMoveFSSideR #A -100,-200 0.3]
+[wt 0.3]
+
+＠マシュ
+は、はいっ。[r]鈴鹿さんもかくやの自然なハートサインです！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[wt 0.7]
+
+
+[charaDepth M 4]
+[charaFadein M 0.8 0,-200]
+[wt 1.2]
+
+＠デメテル
+バレンタインデー。[r]きっと、楽しく過ごしてくださいね。
+[k]
+
+＠デメテル
+これは、女神のせいいっぱいの[#言祝:ことほ]ぎです。
+[k]
+
+＠デメテル
+皆さんのバレンタインが[line 3][r]どうか、豊かで、愛に[#溢:あふ]れていますように！
+[k]
+
+＠デメテル
+あと……[r]コホン。
+[k]
+
+[messageOff]
+[charaFadeout M 0.8]
+[wt 1.5]
+
+＠デメテル
+[line 3]パン、食べます？
+[k]
+
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.5]
+[bgmStop BGM_EVENT_159 2.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
