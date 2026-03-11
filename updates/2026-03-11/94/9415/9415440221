@@ -1,0 +1,632 @@
+
+
+＄94-15-44-02-2-1
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 25010001 1 モレーちゃん]
+[charaSet B 1066000 1 モレー]
+[charaSet C 1098346900 1 オルガマリー]
+[charaSet D 1098257310 1 ダ・ヴィンチ]
+[charaSet E 1066000 1 モレー]
+[charaSet F 1098255110 1 ゴルドルフ]
+[branchQuestClear lblClearEX 05000000]
+[flag _MSH 1]
+[charaSet G 1098257810 1 マシュ]
+[branch lblConfEX]
+[label lblClearEX]
+[flag _MSH 2]
+[charaSet G 1098346800 1 マシュ]
+[branch lblConfEX]
+[label lblConfEX]
+[charaSet H 98006200 1 雑魚エネミー煙状]
+
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+[imageSet Q cut788_stuffy 1]
+
+[charaSet T 98115000 1 エフェクト用2]
+[charaSet U 98115000 1 エフェクト用3]
+
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_10_LowLevel]
+
+[charaDepth T 10]
+[charaDepth D 3]
+[charaDepth G 3]
+[charaDepth F 3]
+[charaDepth C 3]
+
+[sceneSet Z 279903 1]
+
+[scene 135900]
+
+[charaTalk depthOff]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+[wt 0.1]
+
+[se ad42]
+[charaSpecialEffect H enemyErasure 1 1.3]
+[wait charaSpecialEffect H]
+[wt 1.6]
+
+[bgm BGM_GOGH_1 0.1]
+
+[charaTalk A]
+[charaFace A 25]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+ふぅー、とりあえず退けたけど。[r]あんなのが徘徊し出すとか、これも誘拐犯の仕業？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モレー
+可能性は高そうです。
+[k]
+
+＠モレー
+いずれにせよ、[%1]様、[r]ここで得られる手がかりはこれ以上無いでしょう。
+[k]
+
+？1：たしかに……
+？2：一通り調べたし戻ろうか
+？！
+
+[messageOff]
+[bgmStop BGM_GOGH_1 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 183900]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_147 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+にしても大きな山荘だよね～。[r]至る所に部屋が[line 3]
+[k]
+
+[charaFace A 25]
+
+＠モレーちゃん
+……って、あれ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠モレー
+どうしました？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+うん、さっきから目についた部屋の[r]ドアノブをガチャってたんだけど、
+[k]
+
+[charaFace A 16]
+
+＠モレーちゃん
+どれもぜんぜん開く気配がない。[r]なにこれ、戸締まりしまくりがデフォってこと？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 20]
+[charaFadein B 0.1 1]
+
+＠モレー
+貴方の手癖の悪さを[r]注意したいところですが……、
+[k]
+
+[charaFace B 9]
+
+＠モレー
+本当に、どの部屋も開かなかったのですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+まーったく開かなかった。[r]裏庭からここまでの部屋は全部ダメ。
+[k]
+
+[charaFace A 4]
+
+＠モレーちゃん
+う～ん、しかも物理的な[#施錠:せじょう]じゃなく[r]何かしらの魔術が使われてるっぽい？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠モレー
+そ、そんなバカな……
+[k]
+
+[messageOff]
+[cueSe SE_26 26_ade1365]
+[charaMoveReturn B 0,-5 0.4]
+[wt 0.8]
+[charaMoveReturn B 0,-5 0.3]
+[wt 0.3]
+[charaMoveReturn B 0,-5 0.3]
+[cueSeStop 26_ade1365 1.0]
+[wt 1.0]
+
+[charaFace B 17]
+
+＠モレー
+……なんてことだ。
+[k]
+
+[charaFace B 7]
+
+＠モレー
+すみません、[%1]様。[r]取り急ぎ[#私:わたくし]は山荘全体の部屋を確認してきます！
+[k]
+
+＠モレー
+すぐに合流しますので、[r]その際に状況の報告をさせていただきます。
+[k]
+
+？1：わかった
+？2：モレー、気をつけてね
+？！
+
+
+[messageOff]
+[charaFace B 4]
+[charaMoveReturn B 0,-5 0.6]
+[wt 1.1]
+[charaFadeout B 0.4]
+[cueSe SE_25 25_ade1182]
+[wt 1.0]
+[cueSeStop 25_ade1182 1.0]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_147 1.0]
+[wait fade]
+
+[scene 279905]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut T 1]
+[charaTalk D]
+[charaFace D 35]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+ふむ、手がかりになるようなものは[r]現時点では見つからなかった、か。
+[k]
+
+[charaFace D 1]
+
+＠ダ・ヴィンチ
+仕方ない、今は山荘内の構造を[r]把握できただけでも良しとしよう。
+[k]
+
+[messageOff]
+[se ad93]
+[seVolume ad93 0 0.5]
+[wt 1.0]
+
+[charaFace D 0]
+
+＠ダ・ヴィンチ
+……おや、[r]どうやらモレーも戻ってきたようだね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut T 2000,2000]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モレー
+遅くなってしまい申し訳ありません。[r]一通りの確認を終えてまいりました。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1]
+
+[bgmStop BGM_EVENT_77 1.5]
+
+[branchQuestClear lblClear01a 05000000]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+ご苦労。[r]では、さっそくだが報告を頼む。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[branch lblConf01]
+
+[label lblClear01a]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠オルガマリー
+ご苦労様。[r]それじゃあ、報告をお願いできる？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[label lblConf01]
+
+[charaPut T 2000,2000]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モレー
+はい。
+[k]
+
+[bgm BGM_MAP_115 0.1]
+
+＠モレー
+各部屋の状況についてですが、[r]山荘内の[#殆:ほとん]どが封じられておりました。
+[k]
+
+[charaFace B 20]
+
+＠モレー
+幸いにも食料庫については今でも入ることが[r]可能ではありましたが、その他には[line 3]
+[k]
+
+[charaFace B 4]
+
+＠モレー
+ご兄弟の自室とこの客室、そして、先刻まで居た[r]応接室のみしか進入はできませんでした。
+[k]
+
+？1：これも犯人の仕業なのかな？
+？！
+
+[charaFace B 16]
+
+＠モレー
+そ、そう考えるのが妥当かと……。[r]あまりにも作為的です。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk G]
+[branch lblMsh01 _MSH 2]
+[charaFace G 11]
+[branch lblMshCon01]
+[label lblMsh01]
+[charaFace G 9]
+[label lblMshCon01]
+[charaFadein G 0.1 1]
+
+＠マシュ
+むやみに屋敷内を歩き回られたくない、[r]ということのようですね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[branchQuestClear lblClear02a 05000000]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+むしろ秘宝探索に関係のない部屋を排除し、[r]無駄を省いている、とも言えるな。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[branch lblConf02]
+
+[label lblClear02a]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+
+＠オルガマリー
+むしろ秘宝探索に関係のない部屋を排除して[r]無駄を省いている、とか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[label lblConf02]
+
+[charaTalk D]
+[charaFace D 22]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+うん。それが妥当だね。
+[k]
+
+＠ダ・ヴィンチ
+誘拐犯はわざわざ制限時間を設けてきた点からも[r]早期に秘宝を手にしたいという思いがある。
+[k]
+
+＠ダ・ヴィンチ
+そういう意味では気づきの邪魔になる部屋や[r]ルートで時間が浪費されることを防ぐのは合理的だ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branchQuestClear lblClear03a 05000000]
+
+[charaTalk F]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+……わかった。各部屋に施された仕掛けは[r]こちらで解析しよう。
+[k]
+
+[charaFace F 0]
+
+＠ゴルドルフ
+それより[%1]。[r]明日からは秘宝の探索を本格的に行うのだろう？
+[k]
+
+[charaFace F 3]
+
+＠ゴルドルフ
+今後いつ休息を取れるかも不明だ。[r]休めるうちにぐっすりと寝ておきたまえよ？
+[k]
+
+？1：了解です、新所長！
+？2：おやすみなさい！
+？！
+
+
+[branch lblConf03]
+
+[label lblClear03a]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠オルガマリー
+いずれにせよ各部屋にかけられた仕掛けについては[r]こちらで解析するとして、
+[k]
+
+[charaFace C 0]
+
+＠オルガマリー
+それよりも[%1]。
+[k]
+
+＠オルガマリー
+明日からは秘宝の探索を[r]本格的に行うことになるでしょう。
+[k]
+
+[charaFace C 12]
+
+＠オルガマリー
+いつ休息を取れるか分からない状況です。[r]休めるうちにしっかり寝ておくこと。いいわね？
+[k]
+
+？1：了解です、所長！
+？2：おやすみなさい！
+？！
+
+[label lblConf03]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_MAP_115 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[scene 279903]
+
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[charaPut T 2000,2000]
+
+[pictureFrameTop cut063_cinema]
+
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 0,-50]
+[wt 0.7]
+
+[bgm BGM_MAP_57 0.1]
+
+＠モレー
+[line 3]よかった。[r]皆さん、それぞれに休息を取られているようです。
+[k]
+
+[charaFace B 9]
+
+＠モレー
+それにしても、なんという一日でしょうか。[r]まさか、こんなことになってしまうとは……。
+[k]
+
+[charaFace B 21]
+
+＠モレー
+うぅぅ……[r]早くも胃に穴が空きそうだ。
+[k]
+
+[charaFace B 20]
+
+＠モレー
+い、いけない……こういう時は、[r]羊のぬいぐるみを撫でて心を落ち着かせねば。
+[k]
+
+[messageOff]
+[charaFadeout B 0.2]
+[wt 0.2]
+
+[charaDepth P 2]
+[charaDepth Q 3]
+
+[cueSe SE_24 24_ade981]
+[wt 0.1]
+
+[charaPut P 1]
+[charaFadeTime P 0.35 0.5]
+
+[charaScale Q 0.8]
+[charaTalk Q]
+[charaFadein Q 0.35 0,-150]
+[wt 2.2]
+
+[charaFadeout P 0.4]
+[charaFadeout Q 0.4]
+[wt 0.6]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+[charaMoveReturn B 0,-55 0.5]
+[cueSe SE_24 24_ade981]
+
+＠モレー
+（さすさすさす）[wt 0.6][charaMoveReturn B 0,-55 0.5]
+[k]
+
+[charaDepth B 2]
+[charaDepth U 3]
+
+[charaFace B 26]
+[cueSe SE_24 24_ade1060]
+[charaPut U 1]
+[charaEffect U bit_talk_small_brilliant]
+
+＠モレー
+あぁ。いい……。
+[k]
+
+＠モレー
+この滑らかな肌触り、絶妙なもちもち感。
+[k]
+
+＠モレー
+なによりこの愛らしさが、胸中を[#慰撫:い　ぶ]してくれる。
+[k]
+
+[messageOff]
+[charaEffectStop U]
+[cueSeStop 24_ade1060 1.0]
+[wt 1.3]
+[charaFaceFade B 16 0.2]
+
+＠モレー
+…………けれど、[r]いつまでも、こ、こうしてはいられません。
+[k]
+
+＠モレー
+そうだ……。[r][#私:わたくし]は果たさねばならない。
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_57 1.5]
+
+[charaTalk off]
+[charaScale E 1.2]
+[charaScale Z 1.2]
+[charaDepth Z 4]
+[charaDepth E 5]
+
+[charaFace E 15]
+[charaFadein E 0.8 0,-50]
+[charaFadein Z 0.8 0,-280]
+[wt 1.5]
+
+＠モレー
+[line 3]誘拐事件の共犯者としての責務を。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_57 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

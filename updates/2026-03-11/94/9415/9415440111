@@ -1,0 +1,2387 @@
+
+
+＄94-15-44-01-1-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 25010001 1 モレー]
+[charaSet B 1098257310 1 ダ・ヴィンチ]
+[charaSet C 1098255110 1 ゴルドルフ]
+[charaSet D 1098346900 1 オルガマリー]
+[branchQuestClear lblClearEX 05000000]
+[flag _MSH 1]
+[charaSet E 1098257810 1 マシュ]
+[branch lblConfEX]
+[label lblClearEX]
+[flag _MSH 2]
+[charaSet E 1098346800 1 マシュ]
+[branch lblConfEX]
+[label lblConfEX]
+[charaSet F 1066000 1 執事モレー]
+[charaSet G 6007000 1 ロベール]
+[charaSet H 1098353300 1 レオン]
+[charaSet I 6013002 1 アラン]
+[charaSet J 6012000 1 クロード]
+[charaSet K 1066000 1 モレー（シルエット）]
+[charaFilter K silhouette 00000080]
+[charaSet L 25010001 1 モレー（演出用）]
+[charaSet M 6007000 1 ロベール（演出用）]
+[charaSet N 1098353300 1 レオン（演出用）]
+[charaSet V 6013002 1 アラン（演出用）]
+
+[sceneSet O 280001 1]
+[sceneSet P 280001 1]
+
+[imageSet W cut788_stuffy 1]
+
+[imageSet R cut789_name01 1]
+
+[sceneSet S 10000 1]
+[sceneSet T 10000 1]
+[charaScale S 1.01]
+[charaScale T 1.01]
+
+[sceneSet U 10000 1]
+[charaScale U 1.1]
+
+[charaSet X 98115000 1 エフェクト用1]
+[charaSet Y 98115000 1 エフェクト用2]
+[charaSet Z 98115000 1 エフェクト用3]
+
+[charaPut Z 1]
+[charaEffect Z bit_talk_snow_heavy]
+
+[cameraMove 0 0,0 1.01]
+
+[charaTalk depthOff]
+[charaPut X 2000,2500]
+[charaEffect X bit_talk_snowstorm_02]
+[charaEffect X bit_talk_snowstorm_02]
+[charaEffect X bit_talk_snowstorm_02]
+[charaEffect X bit_talk_snow_heavy]
+[charaEffect X bit_talk_snow_heavy]
+[charaEffect X bit_talk_snow_heavy]
+
+[charaPut Y 2000,2500]
+[charaEffect Y bit_talk_41_remake]
+[charaDepth Z 26]
+
+[scene 280001]
+[wt 1.0]
+
+[bgm BGM_BATTLE_62 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠モレー
+くぅ～、一息つきたいところだけど、[r]いつまた襲われるかもわからないし。
+[k]
+
+＠モレー
+こうなったら[line 3][wt 0.6][charaFace A 5][r]マスター、こっち来て！
+[k]
+
+[messageOff]
+[se ad601]
+[cameraMove 0.8 0,-15 1.15]
+[wt 0.7]
+
+[charaMoveScale A 1.1 0.3]
+[charaMove A 0,10 0.3]
+[wt 0.1]
+[seStop ad601 0.2]
+[se ad977]
+[cueSe SE_25 25_ad1537]
+[wt 0.1]
+
+[shake 0.01 1 1 0.3]
+[wt 0.65]
+
+[cueSe SE_24 24_ade988]
+[cameraMove 0.35 0,-11 1.15]
+[charaMove A 0,5 0.35]
+[wt 0.35]
+[cueSeStop 24_ade988 0.3]
+[cameraMove 0.3 0,-23 1.15]
+[charaMove A 0,10 0.3]
+[wt 0.95]
+
+？1：え？
+？2：いきなりのお姫様だっこ！？
+？！
+
+[charaFace A 2]
+
+＠モレー
+つべこべ言わなーい！[wt 0.75][charaFace A 11][r]このまま突っ走るから、舌かまないようにね！
+[k]
+
+[messageOff]
+[charaMoveEase A -1024,0 0.7 easeInBack]
+[cameraMoveEase -7,-23 0.25 easeOutSine 1.15]
+[wt 0.15]
+[se ad348]
+[wt 0.2]
+[cameraMoveEase 35,-23 0.5 easeOutSine 1.15]
+[wt 0.1]
+[charaFadeout A 0.4]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_BATTLE_62 0.7 0.5]
+[wait wipe]
+
+[cameraMove 0 0,0 1.01]
+[charaPut Z 2500,2500]
+[scene 10000]
+[wt 0.8]
+
+[wipein rightToLeft 0.2 1.0]
+[wait wipe]
+
+[fadeout black 0.2]
+[wait fade]
+
+[scene 280001]
+[wt 0.2]
+
+[charaDepth X 10]
+[charaDepth Y 15]
+
+[charaPut X 1]
+[charaPut Y 1]
+
+[shake 0.01 1 1 0]
+
+[se ad555 0.8 0.6]
+
+[se ad586 0.8 1.0]
+
+[fadein black 0.8]
+[bgm BGM_BATTLE_62 0.8 1.0]
+[wait fade]
+[wt 1.2]
+
+[subCameraOn 1]
+
+[charaLayer O sub #A]
+[charaLayer A sub #A]
+[charaLayer Z sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask05 6 0,0,0,255]
+
+[subRenderDepth #A 1]
+
+[subRenderScale #A 1.0]
+
+[charaDepth O 2]
+[charaDepth A 3]
+
+[charaScale O 1.4]
+[charaScale A 1.4]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0 -20,315]
+[charaFadein O 0 -300,50]
+[charaPut Z 0,295]
+
+[seVolume ad555 0.5 0.3]
+[seVolume ad586 0.5 0.5]
+
+[subRenderFadein #A 0.3 375,-250]
+[charaMoveEase A -20,265 0.3 easeOutCubic]
+[charaMoveEase O -300,0 0.3 easeOutCubic]
+[wt 0.4]
+
+＠モレー
+マスター、見て！　建物が見えてきた！[r]たぶん山小屋か何かだと[line 3]
+[k]
+
+[charaFace A 25]
+
+＠モレー
+って嘘でしょ……あれ……なんか、すっごく……
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+
+[charaFadeout A 0]
+[charaFadeout O 0]
+[wt 0.15]
+
+[charaLayer A normal]
+[charaLayer O normal]
+[charaScale A 1.0]
+[charaScale O 1.0]
+[subCameraOff]
+[wt 0.05]
+
+[seVolume ad555 0.5 0.6]
+[seVolume ad586 0.5 1.0]
+
+[cameraMoveEase 0,-15 1.0 easeOutCubic 1.2]
+[wt 0.6]
+
+[fadeout white 0.6]
+[wait fade]
+[wt 0.4]
+
+[bgmStop BGM_BATTLE_62 0.8]
+
+[seStop ad555 0.8]
+[seStop ad586 0.8]
+
+[charaPut X 2000,2500]
+[charaPut Y 2000,2500]
+[charaEffectDestroy X bit_talk_snowstorm_02]
+[charaEffectDestroy X bit_talk_snow_heavy]
+[charaEffectDestroy Y bit_talk_41_remake]
+[charaEffectDestroy Z bit_talk_snow_heavy]
+[wt 0.1]
+
+[charaPut X 1]
+[charaEffect X bit_talk_snow_heavy]
+[wt 1.5]
+
+[shakeStop]
+[cameraMove 0 0,0 1.01]
+
+[sceneSet O 279901 1]
+[sceneSet P 279901 1]
+[sceneSet Q 279901 1]
+
+[scene 279901]
+
+[charaPut Y 2000,2500]
+[charaEffect Y bit_talk_10_LowLevel]
+
+[charaDepth Q 2]
+[charaDepth X 3]
+[charaDepth O 4]
+[charaDepth P 5]
+
+[charaScale X 1.4]
+
+[charaScale Q 1.4]
+[charaFadein Q 0.1 -150,-180]
+
+[wt 0.5]
+
+[fadein white 1.5]
+[wt 0.1]
+[charaScale O 1.4]
+[charaFadein O 1.5 -150,-180]
+[wait fade]
+[wt 1.0]
+[charaScale X 1.0]
+[charaEffectDestroy X bit_talk_snow_heavy]
+[charaFadeout Q 0.1]
+
+[charaMoveEase O -150,-420 1.4 easeInOutSine]
+[wt 2.3]
+
+[charaScale P 1.2]
+[charaFadein P 0.6 0,-260]
+[wt 0.6]
+
+[charaFadeout O 0.1]
+[wt 0.3]
+
+[charaDepth O 1]
+[charaDepth A 2]
+
+[charaScale O 1.0]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+[charaFadein O 0.1 0,-200]
+[wt 0.35]
+
+[bgm BGM_MAP_41 0.1]
+
+？1：でかーーーーーーーい！
+？！
+
+
+[messageOff]
+[charaTalk A]
+[charaFadeout P 0.6]
+[wt 0.8]
+
+＠モレー
+ウーララ！[r]こんな場所になんつー規模の山荘！？
+[k]
+
+[charaFace A 16]
+
+＠モレー
+……って、見とれてる場合じゃなかった！[r]とにかく中に入れてもらえるよう交渉しないとね。
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+
+[charaMoveScale O 1.2 0.7]
+[charaMove O -20,-170 0.7]
+[wt 1.0]
+
+[cueSe SE_25 25_ad1481]
+[wt 1.8]
+
+？1：ごめんくださーい
+？2：助けてくださーい
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠モレー
+ふぃー。[r]ここまでくれば、とりま安心かね。
+[k]
+
+[charaFace A 25]
+
+＠モレー
+……ん？　雪で埋もれちゃってるけど、[r]よく見たらメッセージボードがあるぞ。
+[k]
+
+＠モレー
+なになに[line 3]
+[k]
+
+＠モレー
+『御用の方は、当家の執事モレーまでお申し付けください』
+[k]
+
+？1：当家の執事？
+？2：モレー？
+？！
+
+[bgmStop BGM_MAP_41 1.0]
+
+[charaFace A 26]
+
+＠モレー
+………………。
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace A 27]
+
+＠モレー
+いやいやいやちょっと待とう、マスター！
+[k]
+
+[charaFace A 2]
+
+＠モレー
+て[messageShake 0.02 3 3 0.5]かノックするの早まったァ！
+[k]
+
+[charaFace A 8]
+
+＠モレー
+ねえマスター、いますぐ回れ右して、[r]別の避難場所探すってのはどう？
+[k]
+
+[charaFace A 5]
+
+＠モレー
+いや絶対そうしたほうがいいって！[r]うんそうだ、善は急げ！　[#ほらほらほら:A l l e z  A l l e z  A l l e z]！
+[k]
+
+[messageOff]
+[cueSe SE_25 25_ade1250]
+[charaMoveScale A 1.1 0.3]
+[charaMove A 0,10 0.3]
+[charaMoveScale O 1.18 0.3]
+[charaMove O -20,-165 0.3]
+[wt 0.2]
+[shake 0.01 1 1 0.4]
+[wt 0.65]
+
+[charaMoveScale A 1.2 0.3]
+[charaMove A 0,20 0.3]
+[charaMoveScale O 1.16 0.3]
+[charaMove O -20,-160 0.3]
+[wt 0.2]
+[shake 0.01 1 1 0.4]
+[wt 0.7]
+[cueSeStop 25_ade1250 0.2]
+[wt 0.5]
+
+？1：ど、どうしたの急に？
+？2：背中ぐいぐい押さないでー
+？！
+
+[charaFace A 2]
+
+＠モレー
+これが落ち着いていられるかー！
+[k]
+
+＠モレー
+あーもうっ、あたしだけが選定された理由を[r]もっと深く考えるべきだった[line 3]
+[k]
+
+[bgmStop BGM_EVENT_81 1.5]
+
+[messageOff]
+[se ad93]
+[wt 0.7]
+
+[charaFace A 27]
+[wt 1.5]
+
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout O 0.1]
+[wt 0.5]
+
+[sceneSet O 279902 1]
+[sceneSet P 279902 1]
+
+[scene 279902]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠F：？？？
+よ、ようこそ、お待ちしておりました。[r]……カルデアのマスター。
+[k]
+
+[messageOff]
+[subCameraOn 1]
+
+[charaLayer Q sub #A]
+[charaLayer A sub #A]
+[charaLayer B sub #A]
+[charaLayer C sub #A]
+[charaLayer D sub #A]
+[charaLayer E sub #A]
+[charaLayer X sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 255,255,255,255]
+
+[subRenderDepth #A 1]
+
+[subRenderScale #A 1.0]
+
+[charaDepth Q 2]
+[charaDepth A 4]
+[charaDepth B 4]
+[charaDepth C 4]
+[charaDepth D 4]
+[charaDepth E 4]
+[charaDepth X 10]
+
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 27]
+[charaFadein A 0 -50,225]
+
+[charaScale Q 1.2]
+[charaFadein Q 0 -250,0]
+
+[subRenderFadeinFSSideR #A 0.3 420,-200]
+[subRenderMoveEaseFSSideR #A 400,-250 0.4 easeOutCubic]
+[wt 0.3]
+
+[charaShake A 0.02 2 2 0.4]
+[wt 1.45]
+
+[charaTalk off]
+[charaDepth A 3]
+[charaDepth O 4]
+[charaDepth K 5]
+[charaDepth F 6]
+
+[charaScale O 1.4]
+[charaFadein O 0.5 200,-180]
+[charaMove O 240,-180 0.5]
+
+[subRenderFadeout #A 0.5]
+[wt 0.75]
+
+[se ad95]
+[wt 0.8]
+
+[charaScale K 1.4]
+[charaFace K 0]
+[charaFadein K 0.4 0,205]
+[wt 0.2]
+[seStop ad95 0.3]
+[wt 0.8]
+
+＠？？？
+と、当家の執事を務めております、[r]ジャック・ド・モレーと申します。
+[k]
+
+[messageOff]
+[wt 0.15]
+
+[charaScale F 1.4]
+[charaFace F 0]
+[charaFadein F 0.7 0,205]
+[wt 0.7]
+
+[charaFadeout K 0.4]
+[wt 0.5]
+
+[charaMoveEase F 0,25 1.2 easeInOutSine]
+[charaMoveEase O 240,-360 1.2 easeInOutSine]
+[wt 1.6]
+
+[charaFilter K normal]
+[charaDepth K 2]
+[charaScale K 1.0]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[wt 0.8]
+
+[charaFadeout F 0.6]
+[charaFadeout O 0.6]
+[wt 1.1]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[subRenderFadeinFSSideR #A 0.3 400,-250]
+[wt 0.3]
+
+＠モレー
+で[messageShake 0.02 2 2 0.7]たぁぁあああああああああああああああああ！
+[k]
+
+？1：男性のモレー！？
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale B 1.2]
+[charaPut X 0,225]
+[charaEffect X bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 -30,245]
+
+＠ダ・ヴィンチ
+[line 3]か？　[%1]？[r]よかった、ようやく通信が回復したようだね。
+[k]
+
+[charaFace B 0]
+
+＠ダ・ヴィンチ
+状況はこちらでも把握している。[r]まさかモレーの別霊基とは驚いたよ。
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestClear lblClear01 05000000]
+
+
+[charaScale C 1.2]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 -40,225]
+
+＠ゴルドルフ
+現地でのサーヴァント遭遇には慣れてはいる！[r]だがこれはレアケース過ぎではないかな！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch lblConf01]
+
+[label lblClear01]
+
+
+[charaScale D 1.2]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 -30,225]
+
+＠オルガマリー
+現地でのサーヴァント遭遇は想定していたけど、[r]これはさすがに予想外だわ……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branch lblConf01]
+
+[label lblConf01]
+
+[charaScale E 1.2]
+[charaTalk E]
+[branch lblMsh01 _MSH 2]
+[charaFace E 5]
+[charaFadein E 0.1 -35,235]
+[branch lblMshCon01]
+[label lblMsh01]
+[charaFace E 6]
+[charaFadein E 0.1 -50,235]
+[label lblMshCon01]
+
+＠マシュ
+はい……まさか、[r]別霊基のモレーさんがいらしたとは……。
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[wt 0.4]
+
+[charaTalk K]
+[charaFace K 14]
+
+＠K：執事モレー
+い、色々と疑問はおありと存じますが……[r]この吹雪ですので、ま、まずは中へお入りください。
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_94 1.0]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[charaPut X 2000,2500]
+[charaFadeout A 0]
+[charaFadeout B 0]
+[charaFadeout C 0]
+[charaFadeout D 0]
+[charaFadeout E 0]
+[charaFadeout Q 0]
+[charaLayer X normal]
+[charaLayer A normal]
+[charaLayer B normal]
+[charaLayer C normal]
+[charaLayer D normal]
+[charaLayer E normal]
+[charaLayer Q normal]
+[charaScale X 1.0]
+[charaScale A 1.0]
+[charaScale B 1.0]
+[charaScale C 1.0]
+[charaScale D 1.0]
+[charaScale E 1.0]
+[charaScale Q 1.0]
+[subCameraOff]
+
+[charaFadeout F 0.1]
+[wt 1.0]
+
+[sceneSet O 183900 1]
+[sceneSet P 183900 1]
+[sceneSet Q 183900 1]
+[charaSet K 1066000 1 モレー（演出用）]
+
+[scene 183900]
+
+[subCameraOn 2]
+
+[charaLayer P sub #A]
+[charaLayer K sub #A]
+
+[charaLayer Q sub #B]
+[charaLayer B sub #B]
+[charaLayer Y sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask20 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask20 5 255,255,255,255]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.0]
+
+[charaDepth P 3]
+[charaDepth K 4]
+
+[charaScale K 1.2]
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0 0,225]
+
+[charaScale P 1.2]
+[charaFadein P 0 250,0]
+
+[charaDepth Q 3]
+[charaDepth B 4]
+[charaDepth Y 15]
+
+[charaPut Y 0,225]
+
+[charaScale B 1.2]
+[charaFace B 23]
+[charaFadein B 0 0,245]
+
+[charaScale Q 1.2]
+[charaFadein Q 0 -250,0]
+
+[charaScale O 1.4]
+[charaFadein O 0.1 -100,-320]
+
+[cueSe SE_23 23_ade895]
+[cueSeVolume 23_ade895 0 0]
+[wt 0.2]
+[se ade422]
+[seVolume ade422 0 0]
+[wt 0.8]
+[se ade295]
+[seVolume ade295 0 0]
+
+[cueSeVolume 23_ade895 1.0 0.2]
+[seVolume ade295 1.0 0.2]
+[seVolume ade422 1.0 0.2]
+[charaMove O 100,-320 60.0]
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[subRenderFadeinFSL #A 0.4 -300,-250]
+[wt 0.5]
+
+[bgm BGM_EVENT_194 0.1]
+
+＠K：執事モレー
+[line 3]というわけなのですが、[r]ご、ご理解いただけましたでしょうか……？
+[k]
+
+[messageOff]
+
+[charaTalk B]
+[subRenderFadeinFSR #B 0.4 300,-250]
+[wt 0.5]
+
+＠ダ・ヴィンチ
+なるほど。少し前にこの特異点に召喚されたキミは、[r]先立って聖杯の調査を進め、ここに辿り着いた、と。
+[k]
+
+＠ダ・ヴィンチ
+[#カルデア:こ　ち　ら]のモレーだけが選定された理由も[r]それなりに合点がいくというものだ。
+[k]
+
+[charaFace B 22]
+
+＠ダ・ヴィンチ
+ちなみに、キミは人理側の[r]サーヴァントという認識で良いのかな？
+[k]
+
+
+[charaTalk K]
+[charaFace K 14]
+
+＠K：執事モレー
+……ええ……。[r]ま、間違いありません。
+[k]
+
+[charaFace K 20]
+
+＠K：執事モレー
+カルデアについての情報も[r]聖杯より得た知識で把握しております。
+[k]
+
+[charaFace K 22]
+
+＠K：執事モレー
+ゆ、ゆえに……[#私:わたくし]めでよろしければ[r]ぜひとも特異点の調査に協力をさせていただきたく。
+[k]
+
+[charaDepth F 2]
+[charaDepth O 3]
+[charaScale F 1.0]
+[charaFace F 25]
+[charaFadein F 0.1 1]
+
+？1：よろしくね、執事のモレー
+？！
+
+[messageOff]
+
+[charaTalk K,F]
+[cueSeStop 23_ade895 0.5]
+[seStop ade295 0.5]
+[seStop ade422 0.5]
+
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+
+[charaFadeout O 0.4]
+[wt 0.4]
+
+[charaPut Y 2000,2500]
+[charaEffectDestroy Y bit_talk_10_LowLevel]
+[charaFadeout K 0]
+[charaFadeout B 0]
+[charaFadeout P 0]
+[charaFadeout Q 0]
+[wt 0.1]
+
+＠執事モレー
+[f large]ひ[messageShake 0.02 2 2 0.5]つじのモレー！？
+[k]
+
+[charaLayer Y normal]
+[charaLayer K normal]
+[charaLayer B normal]
+[charaLayer P normal]
+[charaLayer Q normal]
+[charaScale Y 1.0]
+[charaScale K 1.0]
+[charaScale B 1.0]
+[charaScale P 1.0]
+[charaScale Q 1.0]
+[subCameraOff]
+
+[cueSe SE_24 24_ade1060]
+[charaPut Y 1]
+[charaEffect Y bit_talk_small_brilliant]
+
+＠執事モレー
+そ、それはまた、なんとも……[r]モフモフなかわいらしい響きです……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut Y 2000,2500]
+[cueSeStop 24_ade1060 0.6]
+
+[charaPut X 1]
+[charaTalk E]
+[branch lblMsh02 _MSH 2]
+[charaFace E 5]
+[branch lblMshCon02]
+[label lblMsh02]
+[charaFace E 29]
+[label lblMshCon02]
+[charaFadein E 0.1 1]
+
+＠マシュ
+モ、モレーさん？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[branchQuestClear lblClear02 05000000]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+むむ……おいおい？
+[k]
+
+＠ゴルドルフ
+虚空をみつめ微笑んでいるが……[r]だ、大丈夫なのかね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch lblConf02]
+
+[label lblClear02]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+虚空をみつめて微笑んでいるけれど……[r]どうしちゃったのかしら？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branch lblConf02]
+
+[label lblConf02]
+[charaPut X 2000,2500]
+
+
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+
+＠モレー
+なーんか勝手に空耳かまして[r]ファンシーな空想に[#浸:ひた]ってるっぽい？
+[k]
+
+[charaFace A 5]
+
+＠モレー
+おーい、こっち戻ってこーい！
+[k]
+
+[messageOff]
+[subCameraOn 2]
+
+[charaLayer O sub #A]
+[charaLayer L sub #A]
+[charaLayer F sub #A]
+[charaLayer Y sub #A]
+
+[charaLayer U sub #A]
+[charaLayer W sub #A]
+
+
+[subCameraFilter #A normal]
+
+[subRenderDepth #A 1]
+
+[subRenderScale #A 1.01]
+
+
+[charaDepth O 3]
+[charaDepth L 4]
+[charaDepth F 5]
+[charaDepth Y 15]
+
+[charaDepth U 10]
+[charaDepth W 11]
+
+[charaScale O 1.2]
+[charaScale L 1.0]
+[charaScale F 1.0]
+[charaScale Y 1.0]
+
+[cueSe SE_24 24_ade1060]
+
+[charaPut Y -80,0]
+
+
+[charaFace F 25]
+[charaFadein F 0 -80,0]
+[charaFadein O 0 110,-260]
+
+
+[charaTalk off]
+[subRenderFadein #A 0.4 0,0]
+[wt 0.4]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[charaFace L 6]
+[charaFadein L 0.4 280,0]
+[charaMove L 250,0 0.4]
+[wt 0.7]
+
+[charaFace L 5]
+[charaMoveReturn L 240,0 0.2]
+
+[se ad660]
+[cueSeStop 24_ade1060 0.3]
+[wt 0.1]
+
+[charaEffectDestroy Y bit_talk_small_brilliant]
+[charaFace F 7]
+[charaShake F 0.02 2 2 0.3]
+[wt 0.1]
+
+[seStop ad660 0.2]
+[wt 0.8]
+[charaTalk on]
+[charaTalk F]
+
+＠執事モレー
+[line 3]ハッ！？
+[k]
+
+[charaFace F 12]
+
+＠執事モレー
+し、失礼をいたしました。[r]実は羊が、その……と、とても好きでして……。
+[k]
+
+
+＠執事モレー
+こういった羊のマスコットも[r]いくつか持ち歩いているのですが……
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[charaFadeout F 0.1]
+[wt 0.15]
+
+[cueSe SE_24 24_ade1008]
+[wt 0.1]
+[charaPut U 1]
+[charaFadeTime U 0.4 0.5]
+
+[charaScale W 0.8]
+[charaFadein W 0.4 0,-150]
+[wt 0.2]
+[cueSeStop 24_ade1008 0.6]
+[wt 1.9]
+
+[charaFadeout W 0.4]
+[charaFadeout U 0.4]
+[wt 0.55]
+
+[charaFace L 5]
+[charaFace F 12]
+[charaFadein L 0.1 250,0]
+[charaFadein F 0.1 -80,0]
+
+
+[charaFace F 22]
+
+＠執事モレー
+い、いかがでしょう。[wt 0.6][se ad95][seStop ad95 0.4][charaMove F -70,10 0.3][charaMoveScale F 1.1 0.3][r]さ、触りますか？[wt 0.3][charaFace L 27]
+[k]
+
+[charaTalk L]
+
+＠L：モレー
+ちょちょちょちょいちょいちょいぃぃ？[r]急に距離詰めてきやがるじゃん？
+[k]
+
+？1：これはなんとも
+？2：モフモフでフワフワだー
+？！
+
+[se ad7]
+[charaTalk F]
+[charaFace F 25]
+[charaMoveScaleEase F 1.22 0.25 easeOutSine]
+[charaMoveEase F -55,20 0.25 easeOutSine]
+
+＠執事モレー
+おおっ、良さがわかりますか！？[r]ではこちらのグッズも[line 3]
+[k]
+
+[charaTalk L]
+[charaFace L 5]
+
+＠L：モレー
+まーた勝手に！　うちのマスターを[r]餌付けならぬマスコット付けすんなっての。
+[k]
+
+[charaTalk F]
+[charaFace F 17]
+
+＠執事モレー
+あ、貴方に許可をもらう必要が？
+[k]
+
+[charaTalk L]
+[charaFace L 2]
+
+＠L：モレー
+あ[messageShake 0.02 3 3 0.7]るだろー、あたしのマスターなんだからー！
+[k]
+
+[messageOff]
+
+[branchQuestClear lblClear03 05000000]
+
+
+[charaPut X 1]
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0 1]
+
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+
+[charaFadeout L 0]
+[charaFadeout F 0]
+[charaFadeout O 0]
+[charaPut Y 2000,2500]
+[wt 0.15]
+
+[charaLayer F normal]
+[charaLayer L normal]
+[charaLayer O normal]
+[charaLayer Y normal]
+[charaLayer W normal]
+[charaLayer U normal]
+[charaScale L 1.0]
+[charaScale F 1.0]
+[charaScale O 1.0]
+[charaScale Y 1.0]
+
+＠ゴルドルフ
+こらこら、自分同士の喧嘩はやめたまえ。[r]山羊も食わないぞ。
+[k]
+
+[charaFace C 0]
+
+＠ゴルドルフ
+とはいえ[r]クラス・性別の異なる同名の英霊とはな……。
+[k]
+
+＠ゴルドルフ
+こうやって同じ空間に居合わせるのは奇妙なものだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch lblConf03]
+
+[label lblClear03]
+
+[charaPut X 1]
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0 1]
+
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+
+[charaFadeout L 0]
+[charaFadeout F 0]
+[charaFadeout O 0]
+[charaPut Y 2000,2500]
+[wt 0.15]
+
+[charaLayer F normal]
+[charaLayer L normal]
+[charaLayer O normal]
+[charaLayer Y normal]
+[charaLayer W normal]
+[charaLayer U normal]
+[charaScale L 1.0]
+[charaScale F 1.0]
+[charaScale O 1.0]
+[charaScale Y 1.0]
+
+＠オルガマリー
+出会って早々にケンカしないでよ。
+[k]
+
+[charaFace D 0]
+
+＠オルガマリー
+それにしても、[r]クラスと性別が異なる同名の英霊か……。
+[k]
+
+＠オルガマリー
+こうして同じ空間にいるのは不思議な感じね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branch lblConf03]
+
+[label lblConf03]
+
+[subCameraOff]
+
+[charaTalk B]
+[charaFace B 31]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+ふむ。いずれにせよ、これから行動を共にするなら[r]呼び方を分けるようにオススメするよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut X 2000,2500]
+
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+
+＠モレー
+んじゃ、あたしが[#かわいいモレーちゃん:M  o  l  a  y  　 　   M  i  g  n  o  n  n  e]。[r]そっちが騎士道馬鹿。いいよね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠F：執事モレー
+なんですと？[r]いいわけがない！
+[k]
+
+[charaFace F 18]
+
+＠F：執事モレー
+もっと、シ、シンプルな呼び分けでなくては[r]今後のコミュニケーションにも支障を[#来:きた]します。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaDepth U 3]
+[charaDepth C 4]
+[charaDepth D 4]
+
+[charaPut U 1]
+[charaFadeTime U 0.2 0.5]
+
+[charaPut X 1]
+[branchQuestClear lblClear04 05000000]
+
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+（ええ……気にするのそこ？）
+[k]
+
+[branch lblConf04]
+
+[label lblClear04]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+（うんうん。細かい事がどうしても気になる[r]　タイプのようね。わかる。気が合いそう）
+[k]
+
+[branch lblConf04]
+
+[label lblConf04]
+
+[charaFadeout U 0.2]
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 35]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+ふんふん、シンプルにね。
+[k]
+
+[charaFace B 0]
+
+＠ダ・ヴィンチ
+ではセイバーの方はそのまま“モレー”。[r]フォーリナーの方を“モレー[#ちゃん]”でどう？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut X 2000,2500]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠A：モレーちゃん
+んー、まあ、[#了解:D'accord]。
+[k]
+
+[charaFace A 10]
+
+＠A：モレーちゃん
+呼び捨てでもぜんぜん構わないけど、[r]ちゃんづけもかわいいし？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠F：モレー=spot[F]
+ええ、[#私:わたくし]も異存はございません。
+[k]
+
+？1：では、あらためて
+？2：モレー、モレーちゃんよろしく！
+？！
+
+[charaFace F 22]
+
+＠F：モレー
+よ、よろしくお願いいたします。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_194 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん=spot[A]
+んで、事前調査をしていたって話だけど、[r]この特異点を解決するヒントは見つかってるわけ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_92 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠F：モレー=spot[F]
+ええ、雪山の各地で[r]魔力の痕跡をいくつか検知しています。
+[k]
+
+[charaFace F 14]
+
+＠F：モレー
+それらは、こ、この建物を中心に点在していた為、[r]山荘に関係する者たちが、怪しいと当たりをつけ……。
+[k]
+
+＠F：モレー
+こうして執事として[r]潜入めいたことをしているのですが……。
+[k]
+
+[charaFace F 20]
+
+＠F：モレー
+正直なところ決定的な手がかりは[r]依然として見つかっておらず……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん=spot[A]
+で、いつしか執事ムーブが性に合いすぎてて[r]調査そっちのけでお仕事に[#邁進:まいしん]してた、みたいな？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 21]
+[charaFadein F 0.1 1]
+
+＠F：モレー=spot[F]
+うっ……[r]否定しきれないのが口惜しいです。
+[k]
+
+[charaFace F 0]
+
+＠F：モレー
+それに、山荘の主であるデュボワ夫人が[r]これまた厚く[#遇:ぐう]してくださることもありまして……。
+[k]
+
+[charaFace F 9]
+
+＠F：モレー
+強引な調査がしづらい状況に陥り、[r]正直なところ困り果てておりました。
+[k]
+
+[charaFace F 1]
+
+＠F：モレー
+だ、だからこそ、神の導きともいうべき[r]貴方方の来訪にホッとしております。
+[k]
+
+[charaFace F 22]
+
+＠F：モレー
+一方は、あまりにも意外な相手だったとはいえ。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut X 1]
+[branchQuestClear lblClear05 05000000]
+
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+ふうむ[line 3]事情は理解した。
+[k]
+
+＠ゴルドルフ
+にしても、くだんのデュボワというご夫人は[r]こんな場所に山荘を建てられるほどの資産家なのかね？
+[k]
+
+[charaFace C 9]
+
+＠ゴルドルフ
+デュボワ家……デュボワ家……[r]私には聞き覚えがない名前だが。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch lblConf05]
+
+[label lblClear05]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+そう[line 3]事情は分かったわ。
+[k]
+
+[charaFace D 0]
+
+＠オルガマリー
+それにしても、くだんのデュボワ夫人という方は[r]こんな場所に山荘を建てられるほどの資産家というけど。
+[k]
+
+[charaFace D 3]
+
+＠オルガマリー
+デュボワ家、か……[r]わたしの知る限りでは覚えがないわね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branch lblConf05]
+
+[label lblConf05]
+
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+そうだね。フランスの微小特異点であることや、[r]デュボワという名前の響きから類推して、
+[k]
+
+＠ダ・ヴィンチ
+デュ・バリー夫人や、あのデュポン家などと[r]繋がりが……？　なんて頭をかすめたりはしたけれど、
+[k]
+
+＠ダ・ヴィンチ
+今、ライブラリを精査してみても特に、[r]これといった関係はなかったよ。
+[k]
+
+[charaFace B 23]
+
+＠ダ・ヴィンチ
+デュボワ家はたしかに記録にはその名を残している。[r]が、これといった特徴も見当たらない富豪家だね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestClear lblClear06 05000000]
+
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+歴史に埋もれし、いたって普通の家系、ということか。[r]逆にそれが、あやしい気もするが……
+[k]
+
+[charaFace C 16]
+
+＠ゴルドルフ
+まあいい。ひとまず、[r]そのご夫人に会いに行ってみてはどうだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch lblConf06]
+
+[label lblClear06]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+こんな雪山に別荘を建てる『普通の名家』ねぇ……。[r]まあ博物館があるよりはマシか……。
+[k]
+
+[charaFace D 12]
+
+＠オルガマリー
+いいわ。ひとまずは、[r]その夫人とやらに会いに行きましょう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branch lblConf06]
+
+[label lblConf06]
+[charaPut X 2000,2500]
+
+[charaTalk F]
+[charaFace F 20]
+[charaFadein F 0.1 1]
+
+＠F：モレー
+それがよろしいでしょう。
+[k]
+
+[charaFace F 0]
+
+＠F：モレー
+では、この先の応接室にご案内いたします。
+[k]
+
+[charaFace F 1]
+
+＠F：モレー
+ちょうど滞在中のご子息様たちも休憩にいらしてますので、[r]調査を兼ねてしばし歓談のお時間としていただければ。
+[k]
+
+？1：ご子息サマ……たち？
+？2：どんな人たちだろう？
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_92 1.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+[wt 0.5]
+
+[charaSet A 25010001 1 モレーちゃん]
+[charaSet F 1066000 1 モレー]
+
+[sceneSet O 279903 1]
+[sceneSet P 279903 1]
+[sceneSet Q 280700 1]
+
+[imageSet W cut789_name02 1]
+[imageSet Z cut789_name03 1]
+
+[scene 279903]
+[wt 1.0]
+
+[se ad93]
+[wt 0.2]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaDepth I 6]
+[charaDepth H 5]
+[charaDepth G 7]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadeinFSL G 0.5 -320,0]
+[charaFadein H 0.5 0,0]
+[charaFadeinFSR I 0.5 320,0]
+[wt 1.5]
+
+[bgm BGM_WHITE_1 0.1]
+
+[charaTalk on]
+[charaTalk H]
+
+＠H：？？？
+おお、貴殿らがモレーの言っていた客人か。
+[k]
+
+
+＠H：？？？
+ようこそ、デュボワ家の秘密の山荘へ。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+[wt 1.6]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 11]
+[charaFadein H 0.1 1]
+
+＠H：？？？
+なーんてな。
+[k]
+
+[charaFace H 6]
+
+＠H：？？？
+かたっ苦しいのは苦手だからよ、[r]そのへんで適当にくつろいでくれ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠？？？=spot[I]
+やれやれ、兄上は相変わらずですね。
+[k]
+
+
+[charaFace I 5]
+
+＠I：？？？
+初対面の方々への態度としてはあまりに無礼……[r]デュボワ家の長男としての自覚はないのですか？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠G：？？？=spot[G]
+まあまあ、アラン兄さんもそのへんで。
+[k]
+
+＠G：？？？
+レオン兄さんだって[r]悪気があったわけじゃないんだから。
+[k]
+
+＠G：？？？
+キミたちも吹雪に見舞われて大変だったね。[r]さあ、暖炉にあたるといいよ。
+[k]
+
+？1：ご兄弟の皆さん……
+？2：見知った面々に似ているような
+？！
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+は？　なにこれ？？　どーゆーこと？？？
+[k]
+
+[messageOff]
+[subCameraOn 1]
+
+[charaLayer O sub #A]
+[charaLayer D sub #A]
+[charaLayer C sub #A]
+[charaLayer B sub #A]
+[charaLayer X sub #A]
+
+[subCameraFilter #A normal]
+
+[subRenderDepth #A 1]
+
+[subRenderScale #A 1.01]
+
+[charaDepth O 3]
+[charaDepth D 4]
+[charaDepth C 4]
+[charaDepth B 4]
+[charaDepth X 15]
+
+[charaScale O 1.2]
+[charaScale D 1.2]
+[charaScale C 1.2]
+[charaScale B 1.2]
+[charaScale X 1.2]
+
+[branchQuestClear lblClear07 05000000]
+
+
+[charaPut X 190,0]
+[charaTalk A,C]
+[charaFace C 4]
+[charaFadein C 0 190,0]
+[charaFadein O 0 -70,-260]
+
+[subRenderFadein #A 0.5 0,0]
+[charaMove X 150,0 0.5]
+[charaMove C 150,0 0.5]
+[charaMove O -110,-260 0.5]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠ゴルドルフ
+これは……[r]以前にも観測された[#現象:ア　レ]かね？
+[k]
+
+[charaFace C 16]
+
+＠ゴルドルフ
+何らかの形で欠落した情報を補うため見知った顔に、[r]すなわちサーヴァントに補正されている……という。
+[k]
+
+＠ゴルドルフ
+[%1]、[r]その目には今、誰がどう映っている？
+[k]
+
+
+[branch lblConf07]
+
+[label lblClear07]
+
+[charaPut X 190,0]
+[charaTalk A,D]
+[charaFace D 0]
+[charaFadein D 0 190,0]
+[charaFadein O 0 -70,-260]
+
+[subRenderFadein #A 0.5 0,0]
+[charaMove X 150,0 0.5]
+[charaMove D 150,0 0.5]
+[charaMove O -110,-260 0.5]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠オルガマリー
+待って、たしかこのあたり……あったあった。[r]以前にも観測されてるわね、この現象。
+[k]
+
+[charaFace D 17]
+
+＠オルガマリー
+何らかの形で欠落した情報を補うために見知った顔[line 3][r]つまりサーヴァントに補正している、と。
+[k]
+
+[charaFace D 0]
+
+＠オルガマリー
+ひとまず、誰がどう見えているのか[r]報告してくれる？
+[k]
+
+[branch lblConf07]
+
+[label lblConf07]
+
+[messageOff]
+[wt 0.1]
+[charaTalk B]
+[se ad15]
+[seVolume ad15 0 0.4]
+[wt 1.25]
+
+[charaFace H 12]
+[charaFadein H 0.1 1]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 150,0]
+
+＠ダ・ヴィンチ
+ふむ……[r]ナポレオンにファントム、そしてジキルか。
+[k]
+
+[charaFace B 0]
+
+＠ダ・ヴィンチ
+オーケー、情報共有しておこう。[r]以降は私たちもそう認識できる。
+[k]
+
+[messageOff]
+[charaTalk H,B]
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+
+[charaFadeout D 0]
+[charaFadeout C 0]
+[charaFadeout B 0]
+[charaPut X 2000,2500]
+[charaFadeout O 0]
+[wt 0.15]
+
+[charaLayer D normal]
+[charaLayer C normal]
+[charaLayer B normal]
+[charaLayer X normal]
+[charaLayer O normal]
+[charaScale D 1.0]
+[charaScale C 1.0]
+[charaScale B 1.0]
+[charaScale X 1.0]
+[charaScale O 1.0]
+[subCameraOff]
+
+＠H：？？？
+おーい、なにを話し合っているのか知らないが[r]モレーの知り合いなんだろ？　紹介してくれよ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 20]
+[charaFadein F 0.1 1]
+
+＠モレー
+これは失礼いたしました。
+[k]
+
+[charaFace F 0]
+
+＠モレー
+こちらは[%1]様、[r][#私:わたくし]の友人です。
+[k]
+
+[charaFace F 9]
+
+＠モレー
+そして、こちらが……
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[bgmStop BGM_WHITE_1 1.0]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠モレー
+[#愚妹:ぐまい]の[#モレーネ]です。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+だーれが[#愚妹:ぐまい]だ、[#呪殺:じゅっころ]すぞ！
+[k]
+
+[charaDepth U 2]
+[charaDepth A 3]
+
+[charaPut U 1]
+[charaFadeTime U 0.2 0.5]
+
+[charaFace A 12]
+
+＠モレーちゃん
+（でもモレーネはちょっといいな）
+[k]
+
+[charaFadeout U 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠H：？？？
+ハッハッハ、なかなか愉快なヤツらのようだ。[r]よろしく、オレは長男のレオンだ。
+[k]
+
+[messageOff]
+
+[se ad596]
+[wt 0.2]
+[charaDepth R 14]
+[charaDepth N 20]
+[charaDepth S 12]
+[charaDepth T 11]
+[charaDepth Q 10]
+
+[charaScale R 0.85]
+[charaScale N 1.2]
+[charaScale Q 1.01]
+
+[charaTalk H,N]
+[charaFace N 5]
+[charaFadeinFSL N 0.5 -250,0]
+[charaFadeinFSR R 0.5 190,-140]
+[charaFadein Q 0.5 0,-200]
+
+[charaFadein S 0.5 0,-800]
+[charaFadein T 0.5 0,800]
+[charaMove S 0,-736 0.5]
+[charaMove T 0,736 0.5]
+
+[charaMoveEaseFSL N -280,0 1.0 easeOutSine]
+[charaMoveEaseFSR R 220,-140 1.0 easeOutSine]
+
+[wt 3.0]
+
+[charaFadeout N 0.5]
+[charaFadeout R 0.5]
+[charaFadeout Q 0.5]
+
+[charaMove S 0,-800 0.5]
+[charaMove T 0,800 0.5]
+[charaFadeout S 0.5]
+[charaFadeout T 0.5]
+[wt 1.0]
+
+[charaFace H 3]
+
+＠レオン
+んで、こっちの[#堅物:かたぶつ]そうなのが[line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠I：？？？
+次男のアランです。[r]どうぞお見知りおきを。
+[k]
+
+[messageOff]
+
+[se ad596]
+[wt 0.2]
+
+[charaDepth W 14]
+[charaDepth V 20]
+[charaDepth S 12]
+[charaDepth T 11]
+[charaDepth Q 10]
+
+[charaScale W 0.85]
+[charaScale V 1.2]
+[charaScale Q 1.01]
+
+[charaTalk I,V]
+[charaFace V 0]
+[charaFadeinFSR V 0.5 200,0]
+[charaFadeinFSL W 0.5 -180,-150]
+[charaFadein Q 0.5 0,-200]
+
+[charaFadein S 0.5 0,-800]
+[charaFadein T 0.5 0,800]
+[charaMove S 0,-736 0.5]
+[charaMove T 0,736 0.5]
+
+[charaMoveEaseFSR V 230,0 1.0 easeOutSine]
+[charaMoveEaseFSL W -210,-150 1.0 easeOutSine]
+
+[wt 3.0]
+[charaFadeout I 0]
+
+[charaFadeout V 0.5]
+[charaFadeout W 0.5]
+[charaFadeout Q 0.5]
+
+[charaMove S 0,-800 0.5]
+[charaMove T 0,800 0.5]
+[charaFadeout S 0.5]
+[charaFadeout T 0.5]
+[wt 0.7]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠G：？？？
+そして、僕が三男のロベールだよ。
+[k]
+
+[messageOff]
+
+[se ad596]
+[wt 0.2]
+[charaDepth Z 20]
+[charaDepth M 14]
+[charaDepth S 12]
+[charaDepth T 11]
+[charaDepth Q 10]
+
+[charaScale Z 0.85]
+[charaScale M 1.2]
+[charaScale Q 1.01]
+
+[charaTalk G,M]
+[charaFace M 1]
+[charaFadeinFSL M 0.5 -240,0]
+[charaFadein Z 0.5 150,-150]
+[charaFadein Q 0.5 0,-200]
+
+[charaFadein S 0.5 0,-800]
+[charaFadein T 0.5 0,800]
+[charaMove S 0,-736 0.5]
+[charaMove T 0,736 0.5]
+
+[charaMoveEaseFSL M -270,0 1.0 easeOutSine]
+[charaMoveEase Z 180,-150 1.0 easeOutSine]
+
+[wt 3.0]
+
+[charaFadeout M 0.5]
+[charaFadeout Z 0.5]
+[charaFadeout Q 0.5]
+
+[charaMove S 0,-800 0.5]
+[charaMove T 0,800 0.5]
+[charaFadeout S 0.5]
+[charaFadeout T 0.5]
+[wt 0.7]
+
+＠ロベール
+よろしくね、[%1][&くん:ちゃん]、[r]モレーネちゃん。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠レオン
+んで、もうひとり弟がいるんだが
+[k]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+[messageOff]
+[charaTalk J]
+[se ade427 1.0 0.8]
+[wt 1.1]
+
+[charaDepth H 2]
+[charaDepth I 2]
+[charaDepth O 3]
+[charaDepth J 4]
+
+[charaScale O 1.4]
+[charaFadein O 0.4 150,-320]
+[charaMove O 190,-320 0.4]
+[wt 0.5]
+
+[seStop ade427 0.6]
+
+[cueSe SE_24 24_ad1387]
+[wt 0.1]
+
+[charaFace J 2]
+[charaFadein J 0.4 -50,0]
+[charaMove J 0,0 0.4]
+[wt 0.4]
+
+[charaSet M 6012000 1 クロード（演出用）]
+[imageSet R cut789_name04 1]
+
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+[charaFadeout H 0.1]
+[wt 0.4]
+
+＠？？？
+[line 3]みんな！
+[k]
+
+[charaFace J 4]
+
+＠？？？
+よ、よかった……全員いるみたいだね。
+[k]
+
+[messageOff]
+
+[se ad596]
+[wt 0.2]
+
+[charaDepth R 14]
+[charaDepth M 20]
+[charaDepth S 12]
+[charaDepth T 11]
+[charaDepth Q 10]
+
+[charaScale R 0.85]
+[charaScale M 1.2]
+[charaScale Q 1.01]
+
+[charaTalk J,M]
+[charaFace M 4]
+[charaFadeinFSR M 0.5 210,0]
+[charaFadeinFSL R 0.5 -180,-140]
+[charaFadein Q 0.5 0,-200]
+
+[charaFadein S 0.5 0,-800]
+[charaFadein T 0.5 0,800]
+[charaMove S 0,-736 0.5]
+[charaMove T 0,736 0.5]
+
+[charaMoveEaseFSR M 240,0 1.0 easeOutSine]
+[charaMoveEaseFSL R -210,-140 1.0 easeOutSine]
+
+[wt 3.0]
+
+[charaFadeout M 0.5]
+[charaFadeout R 0.5]
+[charaFadeout Q 0.5]
+[charaMove S 0,-800 0.5]
+[charaMove T 0,800 0.5]
+[charaFadeout S 0.5]
+[charaFadeout T 0.5]
+[wt 1.2]
+
+[charaTalk I,J]
+[charaFadeout J 0.4]
+[charaFadeout O 0.4]
+[wt 0.5]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠アラン
+ハァ……。[r]クロード、貴方まで無作法な振る舞いとは嘆かわしい。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 5]
+[charaFadein J 0.1 1]
+
+＠クロード
+今はそれどころじゃないよ、アラン兄さん！
+[k]
+
+[charaFace J 4]
+
+＠クロード
+とんでもないことが、[r]起きてしまったんだ……。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+
+＠レオン
+落ち着けよ、クロード。[r]何がどうしたっていうんだ？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+
+＠クロード
+お母様が……お母様が……。
+[k]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+[messageOff]
+[charaTalk off]
+[charaScale O 1.2]
+[charaScale M 1.2]
+[charaDepth A 4]
+[charaDepth H 5]
+[charaDepth F 6]
+[charaDepth G 7]
+[charaDepth I 8]
+[charaDepth O 9]
+[charaDepth M 10]
+[charaFace M 2]
+[charaFadein M 0.4 0,10]
+[charaFadein O 0.4 0,-267]
+[charaMoveScaleEase O 1.3 0.8 easeOutQuint]
+[charaMoveScaleEase M 1.3 0.8 easeOutQuint]
+[charaMoveEase O 0,-305 0.8 easeOutQuint]
+[charaMoveEase M 0,20 0.8 easeOutQuint]
+[wt 0.5]
+[charaFadeout J 0.1]
+
+[charaFace H 15]
+[charaFadein H 0 0,0]
+
+[charaFace I 10]
+[charaFadein I 0 200,0]
+
+[charaFace G 10]
+[charaFadein G 0 -200,0]
+
+[charaFace A 24]
+[charaFadein A 0 420,0]
+
+[charaFace F 16]
+[charaFadein F 0 -400,0]
+
+＠クロード
+誘拐されてしまったんだ！
+[k]
+
+
+[messageOff]
+[charaFadeout O 0.4]
+[charaFadeout M 0.4]
+[wt 1.6]
+
+？1：誘拐！？？？
+？！
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[input selectBranch]
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+
+[cameraHome 0.1]
+
+[charaSet A 98115000 1 初期化用ダミー]
+[charaSet B 98115000 1 初期化用ダミー]
+[charaSet C 98115000 1 初期化用ダミー]
+[charaSet D 98115000 1 初期化用ダミー]
+[charaSet E 98115000 1 初期化用ダミー]
+[charaSet F 98115000 1 初期化用ダミー]
+[charaSet G 98115000 1 初期化用ダミー]
+[charaSet H 98115000 1 初期化用ダミー]
+[charaSet I 98115000 1 初期化用ダミー]
+[charaSet J 98115000 1 初期化用ダミー]
+[charaSet K 98115000 1 初期化用ダミー]
+[charaSet L 98115000 1 初期化用ダミー]
+[charaSet M 98115000 1 初期化用ダミー]
+[charaSet N 98115000 1 初期化用ダミー]
+[charaSet O 98115000 1 初期化用ダミー]
+[charaSet P 98115000 1 初期化用ダミー]
+[charaSet Q 98115000 1 初期化用ダミー]
+[charaSet R 98115000 1 初期化用ダミー]
+[charaSet S 98115000 1 初期化用ダミー]
+[charaSet T 98115000 1 初期化用ダミー]
+[charaSet U 98115000 1 初期化用ダミー]
+[charaSet V 98115000 1 初期化用ダミー]
+[charaSet W 98115000 1 初期化用ダミー]
+[charaSet X 98115000 1 初期化用ダミー]
+[charaSet Y 98115000 1 初期化用ダミー]
+[charaSet Z 98115000 1 初期化用ダミー]
+
+[scene 10000]
+[wt 0.4]
+
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+[wt 0.5]
+
+
+
+
+[criMovie talk_mov388 bgmPlay true]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
