@@ -1,0 +1,723 @@
+
+＄94-15-44-03-3-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 6012000 1 クロード]
+[charaSet B 6007003 1 ロベール]
+[charaSet C 25010001 1 モレーちゃん]
+[charaSet D 1066001 1 モレー]
+[charaSet E 98104300 1 ゴースト]
+
+[imageSet R cut788_doc_rob01 1]
+[imageSet U cut788_doc_rob02 1]
+
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+
+[charaTalk depthOff]
+[charaDepth P 1]
+[charaDepth A 2]
+[charaDepth E 3]
+[charaDepth B 4]
+[charaDepth C 5]
+[charaDepth D 6]
+[charaDepth R 7]
+[charaDepth U 8]
+
+
+[charaFadein B 0.1 50,-20]
+[charaFace B 5]
+[charaPut E -50,60]
+[charaFadeTime E 0.1 0.6]
+[effect bit_talk_moya_aura]
+
+[scene 280006]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad42]
+[charaFadeout E 1.8]
+[effectStop bit_talk_moya_aura]
+[wt 1.5]
+
+[charaMove B 50,-50 0.5]
+[charaFadeout B 0.5]
+[wt 0.5]
+
+[se ad144]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠クロード
+兄さん！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_95 0.1]
+
+＠ロベール
+うぅ……ん…………。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠クロード
+よかった……。[r]気を失っているだけでケガはしていないみたいだ。
+[k]
+
+[charaFace A 4]
+
+＠クロード
+[line 3]って、あれ？[r]兄さんの古文書が、光って、る……？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaFadein R 0.2 0,-200]
+[wt 0.5]
+
+[se ad900]
+[charaPut U 2000,2500]
+[charaEffectEdgeBlur U 4B0082 483D8B 7 4.0]
+[effect bit_talk_06p]
+[wt 0.2]
+[charaPut U 0,-200]
+[wt 1.1]
+
+[seStop ad900 1.5]
+[charaEffectEdgeBlurStop U]
+[wt 1.0]
+[se ade409]
+[effectStop bit_talk_06p]
+[wt 0.1]
+
+[charaFadein U 0.2 0,-200]
+[wt 0.1]
+
+[charaFadeout R 0.1]
+[wt 1.8]
+[charaFadeout U 0.4]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠モレーちゃん
+あーあ。[r]でかでかと『失格』と書かれちゃってるねー。
+[k]
+
+[charaFace C 0]
+
+＠モレーちゃん
+ってことは[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠モレー
+ええ、古文書に書かれていた詩は[r]資格を得るための試練を指していたのでしょう。
+[k]
+
+[charaFace D 20]
+[charaPut P 0,-200]
+[charaFadeTime P 0.2 0.5]
+
+＠モレー
+（事前に話は聞いていたが、かような試練だとは）
+[k]
+
+＠モレー
+（いずれにせよ、ケガがなくて[r]　ほ、本当によかったです）
+[k]
+
+[charaFace D 11]
+
+＠モレー
+（とはいえ、皆さんに背信を働いている[r]　ストレスで胃痛……が……）
+[k]
+
+[messageOff]
+[charaFadeout P 0.2]
+[wt 0.7]
+
+？1：……モレー、大丈夫？
+？2：なんだかつらそうだけど
+？！
+
+[charaFace D 18]
+
+＠モレー
+……は、はい。どうにか。[r]その、わ、[#私:わたくし]は胃が弱く……。
+[k]
+
+＠モレー
+ロベール様の無事を知った安堵から、[r]気が緩んでしまったのかもしれません。
+[k]
+
+[charaFace D 20]
+
+＠モレー
+ですが、ええ……心配はいりません。[r]お心遣い、感謝いたします。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+＠モレーちゃん
+…………胃痛ねぇ。
+[k]
+
+[charaFace C 16]
+
+＠モレーちゃん
+やれやれ、思っていた以上に[r]こりゃ面倒なことになりそうだね。
+[k]
+
+[bgmStop BGM_MAP_95 2.0]
+[charaFace C 25]
+
+＠モレーちゃん
+ん？　ちょっと待って、[r]なんだかまわりの景色が……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[se ade410]
+[distortionstart 0.0 0.5 0.5 0.0 0.0 100.0]
+[distortionstart 1.5 0.5 0.5 0.8 0.2 200.0]
+
+[scene 280005 2.0]
+[effect bit_talk_ppl_fog01]
+[wt 1.05]
+[distortionstart 12.0 0.5 0.5 3.14 4.0 5.0]
+[wt 2.4]
+
+[bgm BGM_EVENT_90 0.1]
+
+
+？1：今までのは幻覚で
+？2：これが本当の姿ってこと！？
+？！
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠モレー
+いけません！[r]高濃度の有毒ガスのようです。
+[k]
+
+＠モレー
+ひとまずここから退避して山荘に戻りましょう！
+[k]
+
+[messageOff]
+[cueSe SE_26 26_ade1320]
+[wt 0.1]
+[charaMove D 150,0 0.4]
+[charaFadeout D 0.4]
+[wt 0.6]
+
+[wipeout rightToLeft 0.8 1.0]
+[bgmStop BGM_EVENT_90 1.5]
+[cueSeStop 26_ade1320 0.8]
+[wait wipe]
+
+[effectDestroy bit_talk_ppl_fog01]
+[scene 10000]
+[wt 0.2]
+
+[wipein leftToRight 0.2 1.0]
+[wait wipe]
+
+[fadeout black 0.2]
+[wait fade]
+
+[charaSet B 6007000 1 ロベール]
+[charaSet D 1066000 1 モレー]
+
+[scene 279903]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.4 0,0]
+[wt 0.4]
+
+＠ロベール
+うぅ……ん…………
+[k]
+
+[charaShake B 0.03 2 2 0.3]
+
+[charaFace B 2]
+＠ロベール
+[line 3]ハッ！？
+[k]
+
+[charaFace B 0]
+＠ロベール
+ぼ、僕はいったい……それに、ここは？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_221 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠クロード
+大丈夫、山荘に帰ってきたんだよ、兄さん。
+[k]
+
+＠クロード
+それより、さっきまでのこと、[r]どれだけ覚えてるの？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠ロベール
+ク、クロード……。[r]そうか、キミとモレーたちが助けてくれたのか。
+[k]
+
+＠ロベール
+ああ……夢の中にいるようだったけど……[r]全部、覚えているよ。
+[k]
+
+＠ロベール
+あー、まったく……妙なものに取り憑かれていたとはいえ、[r]僕は、なんてバカなことを……。
+[k]
+
+＠ロベール
+許してくれ、クロード……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠クロード
+いいんだ。[r]兄さんが無事なら、それで……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠モレー
+とはいえ、まだ復調したわけではありません。[r]さあロベール様、お部屋へ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠ロベール
+……すまないね。[r]皆さん……今は、休ませていただきます……。
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_221 1.0 0.5]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[wipein rollLeft 1.0 1.0]
+[bgm BGM_EVENT_221 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠モレー
+ロベール様を自室へお送りしました。[r]今は、よく眠られております。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠クロード
+ありがとう、モレー。
+[k]
+
+[charaFace A 4]
+
+＠クロード
+それに、皆さんにも……[r]本当に迷惑をかけてしまいました。
+[k]
+
+？1：気にしないでください
+？2：お兄さんが無事でよかった
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_221 1.0]
+[cueSe SE_26 26_ade1372 0.1 1.0]
+[wt 2.0]
+
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 1]
+
+＠モレーちゃん
+[line 3]と、[r]恒例の絶妙タイミングコールか。
+[k]
+
+[charaFace C 0]
+
+＠モレーちゃん
+おーい、モレーやーい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠モレー
+はい、いま参りまーす！
+[k]
+
+[charaFace D 12]
+
+＠モレー
+って、変な声かけはやめてください……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+＠モレーちゃん
+勝手にノってきたんでしょーが。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠モレー
+うぅ……貴方といると調子が悪くなる一方だ……。
+[k]
+
+[messageOff]
+[charaFace D 0]
+[cueSe SE_25 25_ad1471 0.1 1.0]
+[cueSeStop 26_ade1372]
+[wt 1.3]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠E：[DA4A67]電話の主[-]
+[DA4A67]やあ、諸君。[-][r][DA4A67]無事に帰還できたようでなにより。[-]
+[k]
+
+＠E：[DA4A67]電話の主[-]
+[DA4A67]だが、ロベールくんには失望したよ。[-][r][DA4A67]まさかあれほどの[#醜態:しゅうたい]を[#晒:さら]すとはね。[-]
+[k]
+
+＠E：[DA4A67]電話の主[-]
+[DA4A67]彼については色々と調べさせてもらったが、[-][r][DA4A67]実に[#中途半端:ちゅうとはんぱ]な男だ。[-]
+[k]
+
+＠E：[DA4A67]電話の主[-]
+[DA4A67][#浅慮:せんりょ]であり根性もなく、何も成し得ない。[-][r][DA4A67]自らが築いた教育団体の活動も続かなかった。[-]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠クロード
+黙れ……。[r]お前に何がわかる？
+[k]
+
+＠クロード
+兄さんは子どもたちに勉強を好きになってもらうため、[r]慣れない仮装やメイクまでして頑張ってきたんだ。
+[k]
+
+＠クロード
+誰かの為になれれば、と必死にもがいてきた兄さんを[r]馬鹿にする資格は誰にもないはずだ。
+[k]
+
+＠E：[DA4A67]電話の主[-]
+[DA4A67]必死？　頑張った？[-]
+[k]
+
+
+＠E：[DA4A67]電話の主[-]
+[DA4A67]フッ……[-][r][DA4A67]結果を残せなかった者の[#常套句:じょうとうく]だな。[-]
+[k]
+
+＠E：[DA4A67]電話の主[-]
+[DA4A67]それに、配信に関するアイデアは[-][r][DA4A67]全てお前の考えたものに乗っかっただけだとか。[-]
+[k]
+
+＠E：[DA4A67]電話の主[-]
+[DA4A67]つまり、アイツ自身では何も生み出せてはいない。[-][r][DA4A67]ただ恥を[#晒:さら]すしか能のない無能ということだ。[-]
+[k]
+
+[charaTalk A]
+[charaFace A 6]
+
+＠クロード
+無能、か……。[r]やはりそう映るんだね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠モレー
+[line 3]失礼します、クロード様。[r]それ以上は無駄な交渉かと。
+[k]
+
+＠E：[DA4A67]電話の主[-]
+[DA4A67]ほう……。[-][r][DA4A67]執事が割って入るとは、どういう了見かな？[-]
+[k]
+
+[charaFace D 20]
+
+＠モレー
+い、[#些:いささ]か不毛が過ぎると感じましたもので。
+[k]
+
+[charaFace D 4]
+
+＠モレー
+貴方はわざわざ[#嫌味:いやみ]を告げるために[r]通話を望んだわけではないでしょう？
+[k]
+
+＠モレー
+我々は時間を無駄にするわけにはまいりません。[r]貴方の設けた期限が、刻一刻と迫っておりますので。
+[k]
+
+＠E：[DA4A67]電話の主[-]
+[DA4A67]フッ……それもそうだな。[-][r][DA4A67]こちらも少々、舌が回りすぎたと反省しよう。[-]
+[k]
+
+＠E：[DA4A67]電話の主[-]
+[DA4A67]さて、本題だが[line 3][-]
+[k]
+
+＠E：[DA4A67]電話の主[-]
+[DA4A67]今しがたアランの部屋を解錠してやった。[-][r][DA4A67]……ククッ、やるべきことはわかるな？[-]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠クロード
+アラン兄さんを捜して来いって言うんだろ？[r]言われずとも、そのつもりさ。
+[k]
+
+＠E：[DA4A67]電話の主[-]
+[DA4A67]フフフ、その意気だ。[-]
+[k]
+
+[bgmStop BGM_EVENT_5 2.0]
+
+＠E：[DA4A67]電話の主[-]
+[DA4A67]貴様らが秘宝を差し出す瞬間を[-][r][DA4A67]心から楽しみにしているよ。[-]
+[k]
+
+[messageOff]
+
+[se ad332]
+[seStop ad332 0.4]
+[wt 0.6]
+
+[cueSe SE_24 24_ad1373 0.1 1.0]
+[wt 3.0]
+[cueSeStop 24_ad1373 0.1]
+[wt 0.4]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+[bgm BGM_EVENT_76 0.1]
+
+＠モレーちゃん
+あらあら、[#嫌味:いやみ]ですこと。[r]悪趣味極まりありませんわ。
+[k]
+
+＠モレーちゃん
+近年まれに見る最悪最低の誘拐犯ですのね。[wt 1.2][charaFace C 10][r]ねえ、お兄様？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 21]
+[charaFadein D 0.1 1]
+＠モレー
+さ、最低最悪の誘拐犯……。[r]ええ……た、たしかに。
+[k]
+
+[charaDepth P 1]
+[charaDepth D 5]
+
+[charaPut P 0,-200]
+[charaFadeTime P 0.2 0.5]
+[charaFace D 11]
+
+＠モレー
+（[%1]様にも[r]　そう思われて当然か……）
+[k]
+
+＠モレー
+（ああ……[#私:わたくし]はなんて取り返しのつかないことを……）
+[k]
+
+[charaFace D 18]
+
+＠モレー
+（今すぐ謝罪したい……今すぐ[#懺悔:ざんげ]したい……）
+[k]
+
+[charaFace D 21]
+
+＠モレー
+（けれど……今はまだ……今は、まだぁぁ…………）
+[k]
+
+[charaFadeout P 0.2]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠モレーちゃん
+あらあらー？[r]取り出した羊の人形を撫でくりまわされて。
+[k]
+
+＠モレーちゃん
+いったい全体どうされたのですお兄様ー？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 22]
+[charaFadein D 0.1 1]
+＠モレー
+い、いえ……クロード様の心痛を[#慮:おもんぱか]ればこそ、[r][#私:わたくし]の身にも相応の精神的痛みが奔るわけで……。
+[k]
+
+[charaPut P 0,-200]
+[charaFadeTime P 0.2 0.5]
+[charaFace D 10]
+
+＠モレー
+（平常心平常心……胃痛よ、おさまれ……）
+[k]
+
+＠モレー
+（まだ始まったばかり……なんとしても、やり遂げねば）
+[k]
+
+[charaFadeout P 0.2]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠クロード
+モレー、すこし休む時間を取ろうか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 22]
+[charaFadein D 0.1 1]
+＠モレー
+お、お気遣いは無用です……。[r]いまは事件解決のための行動を優先せねば。
+[k]
+
+＠モレー
+で、では[%1]様、[r]アラン様の部屋へと参りましょう。
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_76 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
