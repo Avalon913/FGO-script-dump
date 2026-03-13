@@ -1,0 +1,2070 @@
+
+＄94-15-44-04-2-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 25010001 1 モレーちゃん]
+[charaSet B 1066000 1 モレー]
+[charaSet C 6012000 1 クロード]
+[charaSet D 6013002 1 アラン]
+[charaSet E 1098257310 1 ダ・ヴィンチ]
+[charaSet F 1098255110 1 ゴルドルフ]
+[branchQuestClear lblClearEX 05000000]
+[flag _MSH 1]
+[charaSet G 1098257810 1 マシュ]
+[charaSet X 1098257810 1 マシュ]
+[branch lblConfEX]
+[label lblClearEX]
+[flag _MSH 2]
+[charaSet G 1098346800 1 マシュ]
+[charaSet X 1098346800 1 マシュ]
+[branch lblConfEX]
+[label lblConfEX]
+[charaSet H 1098346900 1 オルガマリー]
+[charaSet I 98104300 1 亡霊]
+[charaSet J 1098353420 1 デュボワ夫人]
+[charaSet K 6007003 1 ロベール]
+[sceneSet L 10000 1]
+[charaScale L 1.1]
+
+[charaSet M 1066000 1 モレー]
+[charaSet T 1098257310 1 ダ・ヴィンチ]
+
+[sceneSet N 280200 1]
+
+[imageSet O cut788_doc_ala01 1]
+[imageSet P cut788_doc_ala02 1]
+[imageSet Q cut788_doc_leo01 1]
+[imageSet R cut788_doc_rob01 1]
+[imageSet S cut788_doc_cla01 1]
+
+[charaSet U 98115000 1 エフェクト用2]
+[charaSet Y 98115000 1 エフェクト用2]
+[charaSet Z 98115000 1 エフェクト用2]
+[charaPut U 2000,2000]
+
+[sceneSet V 279903 1]
+[sceneSet W 279903 1]
+
+[scene 280200]
+
+[charaTalk off]
+[charaDepth D 3]
+[charaDepth I 2]
+[charaDepth N 1]
+
+[charaFace I 0]
+[charaPut I -160,60]
+[charaFadeTime I 0 0.6]
+
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[charaEffect D bit_talk_moya_aura]
+
+[charaScale N 1.4]
+[charaFadein N 0.1 -160,-280]
+
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.7]
+[charaEffectStop D bit_talk_moya_aura]
+[wt 0.2]
+
+[charaMove D 0,-30 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+
+[se ad144]
+[wt 1.2]
+
+
+[charaMoveEase I 0,60 0.7 easeOutSine]
+[charaMoveEase N 0,-280 0.7 easeOutSine]
+[wt 1.0]
+
+＠亡霊
+[#穢:ケガ]レシ名声ニ[#囚:トラ]ワレシ者ヨ……。[r]……[#汝:ナンジ]、秘宝ヲ得ルニ[#適:カナ]ワズ……。
+[k]
+
+[messageOff]
+[se ad42]
+[charaSpecialEffect I enemyErasure 1 1.5]
+[wt 0.2]
+[charaEffect I bit_talk_atomization_gra 200,0]
+[charaEffect I bit_talk_atomization_gra -200,0]
+[wait charaSpecialEffect I]
+[wt 1.8]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 0,-30]
+[charaMove D 0,0 0.9]
+[charaShake D 0.03 2 1 0.9]
+[wt 0.3]
+
+[se ade422]
+[wt 0.4]
+[seStop ade422 0.1]
+[wt 0.7]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠アラン
+……ん、うぅ……[r]私は、いったい何を……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠クロード
+アラン兄さん……。[r]よかった、正気を取り戻したんだね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠アラン
+クロード……？
+[k]
+
+＠アラン
+……ああ、そうか……[r]私はなんという失態を……。
+[k]
+
+[charaFaceFade D 9 0.1]
+
+＠アラン
+曖昧な[#微睡:まどろ]みの中にあったというのに……[r]記憶だけが……鮮明に[#蘇:よみがえ]ってくる……。
+[k]
+
+＠アラン
+……不思議な、感覚でした……タガが外れ……[r]本当の己の欲望を……[#曝:さら]け出したような……。
+[k]
+
+[charaFaceFade D 4 0.1]
+
+＠アラン
+ああ……許して欲しい……クロードよ……。
+[k]
+
+＠アラン
+このような兄を……どうか、ゆる、して…………。
+[k]
+
+[messageOff]
+[charaFaceFade D 9 0.1]
+
+[charaMove D 0,-30 0.5]
+[charaFadeout D 0.5]
+[wt 0.45]
+
+[se ad775]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クロード
+アラン兄さん……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠モレー
+心配はいりません。[r]気を失っただけのようです。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth O 5]
+[charaDepth P 6]
+[charaFadein O 0.2 0,-200]
+[wt 0.5]
+
+[se ad900]
+[charaPut P 2000,2500]
+[charaEffectEdgeBlur P 4B0082 483D8B 7 4.0]
+[effect bit_talk_06p]
+[wt 0.2]
+[charaPut P 0,-200]
+[wt 1.1]
+
+[seStop ad900 1.5]
+[charaEffectEdgeBlurStop P]
+[wt 1.0]
+
+[se ade409]
+[effectStop bit_talk_06p]
+[wt 0.1]
+
+[charaFadein P 0.2 0,-200]
+[wt 0.1]
+
+[charaFadeout O 0.1]
+[wt 1.5]
+[charaFadeout P 0.4]
+[wt 0.9]
+
+
+[se ade410]
+[distortionstart 0.0 0.5 0.5 0.0 0.0 100.0]
+[distortionstart 1.5 0.5 0.5 0.8 0.2 200.0]
+
+[scene 280300 2.0]
+[charaFadeout N 2.0]
+[wt 1.05]
+[distortionstart 12.0 0.5 0.5 3.14 4.0 5.0]
+[wt 2.0]
+
+？1：ロベールさんの時と同じだ
+？2：これが真実の姿……
+？！
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クロード
+今回も……[r]やはり秘宝探しは失敗ですね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠モレー
+ええ……。
+[k]
+
+[charaFace B 0]
+
+＠モレー
+ですが今はアラン様の無事を喜びましょう。[r]……さあ、山荘へ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠クロード
+うん……[r]行きましょう、皆さん。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[sceneSet N 279902 1]
+
+[scene 279902]
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+？1：ようやくついたー！
+？！
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+こう何度も雪道を行ったり来たりは[r]さすがのマスターでもしんどかったみたいだね。
+[k]
+
+[charaFace A 1]
+
+＠モレーちゃん
+となると、四男くんなんて[r]かなり疲弊してるんじゃないの？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠クロード
+ご心配には及びませんよ。[r]こう見えて、まだまだ体力には余裕が[line 3]
+[k]
+
+[messageOff]
+[charaFaceFade C 4 0.2]
+[charaMove C 6,-3 0.4]
+[charaShake C 0.1 2 1 0.3]
+[cueSe SE_23 23_ade895]
+[cueSeStop 23_ade895 0.5]
+[wt 0.8]
+[charaMove C 0,-3 0.4]
+[charaShake C 0.1 2 1 0.3]
+[cueSe SE_23 23_ade895]
+[cueSeStop 23_ade895 0.5]
+[wt 0.4]
+
+＠クロード
+……って、[r]あ、あれ？
+[k]
+
+
+[messageOff]
+[charaMove C 0,-30 0.4]
+[wt 0.2]
+[se ad775]
+[se ad183]
+[seVolume ad183 0 0.5]
+[wt 0.15]
+[charaShake C 0.03 2 1 0.3]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠モレー
+クロード様！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-30]
+
+＠クロード
+ご、ごめん……急に[#目眩:めまい]が……
+[k]
+
+＠クロード
+くそ、まだレオン兄さんがいるのに、[r]こんなところで倒れている場合じゃ……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠モレー
+無理をなさらずに。
+[k]
+
+＠モレー
+貴方の身に何かあっては[r]夫人の解放さえ叶わなくなるでしょう。
+[k]
+
+[charaFace B 0]
+
+＠モレー
+どうか自室にて[r]わずかばかりでもお休みください。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-30]
+
+＠クロード
+……わかったよ。
+[k]
+
+[charaFace C 1]
+
+＠クロード
+臨時とはいえ、キミがうちの執事として[r][#傍:かたわ]らにいてくれることを改めて感謝するよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+
+＠モレー
+か、過分なお言葉です……。
+[k]
+
+[charaFace B 21]
+[charaPut L 0,-200]
+[charaFadeTime L 0.2 0.5]
+
+＠モレー
+（まさに、この[#私:わたくし]が[r]　皆を苦しめているのだから……うぅ……）
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaDepth L 2]
+[charaDepth B 3]
+[charaDepth N 4]
+[charaDepth A 5]
+
+[subCameraOn 1]
+
+[charaLayer M sub #A]
+
+[subCameraFilter #A through]
+
+[subRenderDepth #A 1]
+
+[subRenderScale #A 1.01]
+
+[charaDepth M 10]
+
+[subRenderFadein #A 0 0,0]
+
+[charaScale M 1.4]
+[charaFace M 21]
+[charaFadein M 0.8 -300,180]
+
+[charaScale N 1.2]
+[charaScale A 0.85]
+[charaFace A 6]
+[charaFadein A 0.8 250,-50]
+[charaFadein N 0.8 -80,-240]
+
+[subBlur #A lens 0.8 4 10000 1.0 subBlur]
+
+[wt 1.4]
+
+[charaTalk on]
+[charaTalk A]
+
+＠モレーちゃん
+…………。
+[k]
+
+
+
+[messageOff]
+[wt 0.7]
+[bgmStop BGM_EVENT_77 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout L 0.1]
+
+[charaFadeout A 0.1]
+[charaFadeout N 0.1]
+[charaScale A 1.0]
+[charaScale N 1.0]
+
+[subBlurOff #A lens 0.1 normal]
+[subRenderFadeout #A 0.1]
+[charaFadeout M 0]
+[charaLayer M normal]
+[charaScale M 1.0]
+[subCameraOff]
+
+[scene 279909]
+
+[pictureFrameTop cut063_cinema]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠クロード
+……僕は、また同じ過ちを。
+[k]
+
+[messageOff]
+[charaMove C 0,-70 0.3]
+[charaFadeout C 0.3]
+[wt 0.2]
+[cueSe SE_21 21_ade553]
+[wt 1.2]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[wt 1.0]
+[bgm BGM_MAP_35 0.1 0.6]
+
+＠クロード
+兄さんたちが……[r]僕を置いていったのは当然のことじゃないか。
+[k]
+
+＠クロード
+そう……僕を頼りになんて、するわけがない。
+[k]
+
+＠クロード
+昔から、同じ……。[r]なにも成長していないんだから。
+[k]
+
+＠クロード
+それでも、モレーは……僕に期待している。
+[k]
+
+＠クロード
+……わかってしまう。[r]あの眼を、僕は[#識:し]っているから。
+[k]
+
+＠クロード
+あれは……確か[line 3]
+[k]
+
+[messageOff]
+
+[scene 279904]
+
+[effect bit_sepia01_depth_fs]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_MAP_35 1.0 1.0]
+[wait fade]
+
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.4 0,-50]
+[wt 0.4]
+
+＠デュボワ夫人
+[#従順:じゅうじゅん]、[#貞潔:ていけつ]、[#清貧:せいひん]……。
+[k]
+
+＠デュボワ夫人
+家長に[#己:おの]が心を合わせ、家名のために身を捧ぐ。[r][#穢:けが]れた富に[#囚:とら]われず、家格に[#相応:ふさわ]しき財を成す。
+[k]
+
+＠デュボワ夫人
+本来の意義から変容すれど、[r]我らデュボワが[#裡:うち]に抱く理念。
+[k]
+
+＠デュボワ夫人
+クロード。貴方はそれらを体現せんと[r]実に多くの[#研鑽:けんさん]を積んできました。
+[k]
+
+＠デュボワ夫人
+[#躾:しつけ]とも呼べぬほどの仕打ちに[r]母を恨んだこともありましょう。
+[k]
+
+＠デュボワ夫人
+故に伝えるのです……。[r]貴方は兄弟の中で最も[line 6]です。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠クロード
+何を今さら……[r]言われずとも、理解していますよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+
+＠デュボワ夫人
+いいえ、クロード……貴方はその事実が[r]デュボワ家に何を招いているか分かっていないのです。
+[k]
+
+＠デュボワ夫人
+貴方の[line 6]が、[r]どれだけ兄たちを苦しめているのか。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠クロード
+で、ですが……！[r]僕にはどうしようもないのです。
+[k]
+
+＠クロード
+いくら努力しても、うまくいかないのです……。
+[k]
+
+
+[charaCrossFade C 1098354430 0 0.3]
+
+＠クロード
+兄さんたちを、悩ませたくなんて、ないのに……。[wait charaCrossFade C]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+
+＠デュボワ夫人
+ああ、泣かないで、クロード。
+[k]
+
+＠デュボワ夫人
+大丈夫……。
+[k]
+
+＠デュボワ夫人
+いまはただ、私の言いつけ通りにするの。
+[k]
+
+＠デュボワ夫人
+そして、兄たちの才能と、[r]この家の未来だけを考えるの。
+[k]
+
+＠デュボワ夫人
+けれど、覚えていて、クロード……
+[k]
+
+＠デュボワ夫人
+私の身にもしものことがあれば、[r]その時にこそ貴方は[line 6]
+[k]
+
+
+
+[messageOff]
+[wt 0.7]
+[bgmStop BGM_MAP_35 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout J 0.1]
+[effectStop bit_sepia01_depth_fs]
+[pictureFrame]
+
+[sceneSet N 279903 1]
+[charaSet I 25010001 1 モレーちゃん]
+[sceneSet J 279903 1]
+
+[scene 279903]
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_147 0.1]
+
+
+？1：クロードさん、相当に参っているみたいだった
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+うん、今まで[#持:も]ち[#堪:こた]えていたのが[r]不思議なくらいにね。
+[k]
+
+[charaFace A 5]
+
+＠モレーちゃん
+あーあ、誰が犯人やら知らんけど、目の前にいたら[r]ボッコボコのギッタギタにしてやりたいなー。
+[k]
+
+[charaFace A 10]
+
+＠モレーちゃん
+ねー、お兄様ー？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠モレー
+それは……[r]ええ、まったく、そ、その通りかと。
+[k]
+
+[messageOff]
+[charaMoveReturn B 0,-5 0.5]
+[cueSe SE_24 24_ade981]
+[wt 0.6]
+[charaMoveReturn B 0,-5 0.5]
+[wt 0.9]
+
+？1：またもや必死に羊を撫でている……
+？！
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth G 2]
+[charaDepth F 2]
+[charaDepth H 2]
+[charaDepth U 3]
+
+[charaPut U 1]
+[charaEffect U bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk G]
+[branch lblMsh01 _MSH 2]
+[charaFace G 0]
+[branch lblMshCon01]
+[label lblMsh01]
+[charaFace G 0]
+[label lblMshCon01]
+[charaFadein G 0.1 1]
+
+
+＠マシュ
+先輩、聞こえますか？
+[k]
+
+？1：久しぶりの通信！
+？2：ちゃんと聞こえているよ
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[branchQuestClear lblClear01a 05000000]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+ちょうどデュボワ家不在のいまが[r]話す良い機会だろう。
+[k]
+
+[charaFace F 16]
+
+＠ゴルドルフ
+帰還早々すまないが、現状の報告を頼めるかね。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_147 1.0 0.5]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[charaFace F 16]
+[wt 1.0]
+
+[wipein rollLeft 1.0 1.0]
+[bgm BGM_EVENT_147 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠ゴルドルフ
+[line 3]なるほど。デュボワ家の秘宝を得るには[r]詩の意味を正確に理解することが必須なのだな。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[branch lblConf01]
+
+[label lblClear01a]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠オルガマリー
+デュボワの者たちが不在となったからね。[r]話すならいまが良いタイミングでしょう。
+[k]
+
+＠オルガマリー
+それじゃあ帰還早々に申し訳ないけれど、[r]現状の報告をお願いできるかしら。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_147 1.0 0.5]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[charaFace H 17]
+
+[wt 1.0]
+
+[wipein rollLeft 1.0 1.0]
+[bgm BGM_EVENT_147 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠オルガマリー
+つまり、デュボワ家の秘宝を得るには[r]詩の意味を正確に理解する必要があるということね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[label lblConf01]
+
+[charaTalk G]
+[branch lblMsh02 _MSH 2]
+[charaFace G 6]
+[branch lblMshCon02]
+[label lblMsh02]
+[charaFace G 7]
+[label lblMshCon02]
+[charaFadein G 0.1 1]
+
+
+＠マシュ
+これまでの経緯を考えますと[r]以下のプロセスを踏んで進行しているようです。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_147 1.0]
+[charaFadeout G 0.1]
+[charaPut U 2000,2000]
+[wt 0.2]
+
+[charaScale O 0.5]
+[charaScale Q 0.5]
+[charaScale R 0.5]
+[charaScale S 0.5]
+
+[cueSe SE_24 24_ade981]
+[wt 0.1]
+[charaDepth O 6]
+[charaDepth Q 5]
+[charaDepth R 7]
+[charaDepth S 4]
+[charaPut L 1]
+[charaFadeTime L 0.35 0.5]
+[charaFadein O 0.35 100,-100]
+[charaFadein Q 0.35 -100,-100]
+[charaFadein R 0.35 300,-100]
+[charaFadein S 0.35 -300,-100]
+[wt 1.3]
+
+[subCameraOn 3]
+[charaLayer X sub #B]
+[charaLayer Y sub #B]
+[charaLayer V sub #B]
+
+[charaDepth V 1]
+[charaDepth X 2]
+[charaDepth Y 3]
+
+[charaPut Y 500,200]
+[charaEffect Y bit_talk_10_LowLevel]
+[branch lblMsh03 _MSH 2]
+[charaFace X 6]
+[charaFadein X 0.1 495,230]
+[branch lblMshCon03]
+[label lblMsh03]
+[charaFace X 7]
+[charaFadein X 0.1 480,230]
+[label lblMshCon03]
+[charaFadein V 0.1 150,80]
+
+[subCameraFilter #B maskEdge cut359_mask11 4 0,0,0,255 0]
+
+[charaLayer T sub #C]
+[charaLayer W sub #C]
+[charaLayer Z sub #C]
+
+[charaDepth W 1]
+[charaDepth T 2]
+[charaDepth Z 3]
+
+[charaPut Z -520,220]
+[charaEffect Z bit_talk_10_LowLevel]
+[charaFace T 34]
+[charaFadein T 0.1 -490,250]
+[charaFadein W 0.1 -150,80]
+
+[subCameraFilter #C maskEdge cut359_mask12 4 0,0,0,255 0]
+
+[wt 0.3]
+
+[charaTalk X]
+[subRenderFadeinFSSideR #B 0.3 -120,-180]
+[subRenderMoveFSSideR #B -100,-200 0.3]
+[wt 0.4]
+
+[bgm BGM_EVENT_124 0.1]
+
+＠X：マシュ
+まず古文書には地図と詩が[r]セットで記載されています。
+[k]
+
+＠X：マシュ
+地図は秘宝の[#在処:ありか]を示し、[r]そして詩は秘宝の正体と取得条件だと推測されます。
+[k]
+
+＠X：マシュ
+この条件とは[r]一種の資格試験のようなもので、
+[k]
+
+＠X：マシュ
+秘宝の隠し場所に辿り着いたとき、[r]自動的に合否判定が下されるようです。
+[k]
+
+[messageOff]
+[charaTalk T]
+[subRenderFadeinFSSideL #C 0.3 120,-180]
+[subRenderMoveFSSideL #C 100,-200 0.3]
+[wt 0.4]
+
+＠T：ダ・ヴィンチ
+それから、こちらで改めて古文書を解析したところ[r]特定の血筋にのみ発動する呪いが込められていた。
+[k]
+
+？1：特定の血筋っていうのは
+？2：デュボワの人たち……
+？！
+
+[messageOff]
+[charaTalk A,T]
+[charaFace A 18]
+[charaFadein A 0.4 1]
+[subRenderFadeout #B 0.4]
+[subRenderFadeout #C 0.4]
+[charaFadeout L 0.4]
+[charaFadeout O 0.4]
+[charaFadeout Q 0.4]
+[charaFadeout R 0.4]
+[charaFadeout S 0.4]
+[wt 0.5]
+
+＠モレーちゃん
+兄弟それぞれに憑依してたモノを考えるに、[r]対象に亡霊を取り憑かせて認知を[#歪:ゆが]める感じか。
+[k]
+
+＠モレーちゃん
+その状態で挑ませ、強靱な精神で[r]乗り越えろ……って考えたのかもだけど、
+[k]
+
+[charaFace A 0]
+
+＠モレーちゃん
+それって[#手枷:てかせ][#足枷:あしかせ]状態で[r]泳がせるようなものじゃん？
+[k]
+
+[charaFace A 23]
+
+＠モレーちゃん
+……って、あれ？[r]そう考えたらさ、四男くんはなんで今も正常なの？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠モレー
+……おそらく、クロード様は古文書の解読を[r]自ら率先しては実践していないからだと。
+[k]
+
+[charaFace B 0]
+
+＠モレー
+呪いが発動するほどの行動や自主性を[r]あの御方が発揮されなかったのが功を奏した……のでは。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+うーん、そういうものかねー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠モレー
+そ、それよりも仕組みがわかったのならば[r]今後の対策を立てましょう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut U 1]
+[charaTalk G]
+[branch lblMsh04 _MSH 2]
+[charaFace G 12]
+[branch lblMshCon04]
+[label lblMsh04]
+[charaFace G 10]
+[label lblMshCon04]
+[charaFadein G 0.1 1]
+
+＠マシュ
+そうですね！　では、これまでに発見した秘宝と[r]古文書の詩を振り返ってみましょう。
+[k]
+
+[charaFace G 0]
+
+＠マシュ
+まずロベールさんですが、秘宝は温泉。
+[k]
+
+＠マシュ
+そして古文書のメッセージは[line 3]
+[k]
+
+＠マシュ
+『[#太古:たいこ]より地の底で[#滾:たぎ]りし秘宝。[r]　[#其:そ]に至る道は[#延々:えんえん]と[#積:つも]りし[#轍:わだち]にして[#服:ふく]すべし』
+[k]
+
+＠マシュ
+となっていました。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut U 2000,2000]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+『[#太古:たいこ]より地の底で[#滾:たぎ]りし秘宝』[r]ってのが温泉で、
+[k]
+
+＠モレーちゃん
+『[#延々:えんえん]と[#積:つも]りし[#轍:わだち]にして[#服:ふく]すべし』[r]が、それを得るための資格だったわけだけど。
+[k]
+
+＠モレーちゃん
+[#轍:わだち]は車輪の跡だけじゃなくて[r]先例という意味もあるから、
+[k]
+
+[charaFace A 25]
+
+＠モレーちゃん
+かみ砕くと、先人が敷いた規範とか[r]教えに従いなさーいって感じか。
+[k]
+
+？1：そういえばあの時……
+？！
+
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[wt 0.1]
+[fadeout white 0.7]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[effect bit_sepia01_depth_fs]
+[scene 280006]
+
+[charaTalk K]
+[charaFace K 6]
+[charaFadein K 0.1 1]
+
+[wt 0.7]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.8]
+
+？1：コメントで注意されていたけど
+？2：全然従っていなかった
+？！
+
+[messageOff]
+[fadeout white 0.7]
+[wait fade]
+
+[charaFadeout K 0.1]
+[effectStop bit_sepia01_depth_fs]
+
+[scene 279903]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 0.7]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.2]
+
+＠モレーちゃん
+あれがそもそも呪いの一種だったわけだけど、[r]たしかに[#戒:いまし]めるようなコメントはあったね。
+[k]
+
+[charaFace A 10]
+＠モレーちゃん
+ってことはぁ、つまりコメントに[r]素直に従っていれば秘宝を得られたのかも？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut U 1]
+
+[branchQuestClear lblClear02a 05000000]
+
+[charaTalk F]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+とすると……次は次男のアランだったか？[r]舞台は古城だな。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[branch lblConf02]
+
+[label lblClear02a]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠オルガマリー
+では、次は次男のアランさん。[r]そして舞台は古城だったわね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[label lblConf02]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠マシュ
+はい、アランさんの古文書には……
+[k]
+
+＠マシュ
+『[#崇高:すうこう]なる[#魂:たましい]より生み出されし秘宝。[r]　[#其:そ]に至る道は曇りなき[#軌跡:きせき]にして[#潔:いさぎよ]くあるべし』
+[k]
+
+＠マシュ
+とありました。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut U 2000,2000]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モレー
+『[#崇高:すうこう]なる[#魂:たましい]より生み出されし秘宝』[r]これは美術品を指していました。そして[line 3]
+[k]
+
+＠モレー
+『[#其:そ]に至る道は曇りなき[#軌跡:きせき]にして[#潔:いさぎよ]くあるべし』[r]が資格について、となります。
+[k]
+
+[charaFace B 16]
+
+＠モレー
+とすれば、先人たちが美術品を作るにあたって備えた[r]純粋な芸術への想いを認めろ、といったところでしょうか。
+[k]
+
+？1：だけどアランさんは……
+？！
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[wt 0.1]
+[fadeout white 0.7]
+[wait fade]
+
+[effect bit_sepia01_depth_fs]
+[charaFadeout B 0.1]
+
+[scene 280200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[wt 0.7]
+
+[fadein white 0.7]
+[wait fade]
+
+[wt 2.2]
+
+[messageOff]
+[fadeout white 0.7]
+[wait fade]
+
+[effectStop bit_sepia01_depth_fs]
+[charaFadeout D 0.1]
+
+[scene 279903]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.7]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.2]
+
+＠モレー
+俗世の名声に[#囚:とら]われ、先人たちによる芸術への[r]純粋な想いを[#蔑:ないがし]ろにするような言動が見られました。
+[k]
+
+＠モレー
+それゆえに秘宝獲得の資格を得られなかった[r]と考えるのが妥当でしょう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut U 1]
+[charaTalk G]
+[branch lblMsh05 _MSH 2]
+[charaFace G 6]
+[branch lblMshCon05]
+[label lblMsh05]
+[charaFace G 7]
+[label lblMshCon05]
+[charaFadein G 0.1 1]
+
+＠マシュ
+では、ここまでを踏まえて[r]次のレオンさんの古文書をみてみましょう。
+[k]
+
+＠マシュ
+『[#煌々脈々:こうこうみゃくみゃく]と[#這:は]い[#巡:めぐ]りし秘宝。[r]　[#其:そ]に至る道は[#徒:いたずら]に[#投:とう]ずることなく質素に[#努:つと]めるべし』
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut U 2000,2000]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+[#煌々:こうこう]、は光り輝くで[r][#脈々:みゃくみゃく]と這い巡る、はそのままの意味かな？
+[k]
+
+＠モレーちゃん
+うーん……。[r]シンプルに考えれば金脈、とか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モレー
+これまでのスケールからすれば[r]あり得る話ではありますね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+でもって後半の[r]『[#其:そ]に至る道は[#徒:いたずら]に[#投:とう]ずることなく質素に[#努:つと]める』だけど。
+[k]
+
+＠モレーちゃん
+無駄なことをせずに慎ましくしろってところかな？
+[k]
+
+[charaFace A 25]
+
+＠モレーちゃん
+……あれ？　ちょい待って。[r]なんだろ、いますごいデジャブった。
+[k]
+
+[charaFace A 6]
+
+＠モレーちゃん
+この感じ……アンタも分かるでしょ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠モレー
+……なぜ、わ、[#私:わたくし]を見るのです？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+ほら、あれだ、あれ！[r]昔のことだから忘れたけど[line 3]
+[k]
+
+[charaFace A 5]
+
+＠モレーちゃん
+騎士修道会の誓い！[r]入会するときに宣誓したでしょ？
+[k]
+
+？1：騎士修道会の誓い？
+？！
+
+
+＠モレーちゃん
+そう！　あたしら修道騎士は[r]入会にあたって三つの誓いを立てた。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+[bgmStop BGM_EVENT_124 2.0]
+
+＠モレー
+そ、それは無論……[wt 0.7][charaFace B 7][r]はっ……
+[k]
+
+＠モレー
+そ、そうか！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth B 2]
+[charaDepth N 15]
+[charaDepth M 16]
+[charaDepth J 17]
+[charaDepth I 18]
+
+[charaScale M 1.2]
+[charaScale N 1.2]
+
+[charaFace M 0]
+[charaFadein M 0.6 -120,0]
+[charaFadein N 0.6 60,-260]
+[charaMove M -70,0 30.0]
+[charaMove N 110,-260 30.0]
+[wt 0.6]
+
+[charaFadeout B 0.1]
+[wt 0.2]
+[bgm BGM_MAP_57 0.1]
+
+＠モレー
+服従、貞潔、清貧[line 3][r]これらはテンプル騎士団に殉ずる者の[#誓約]です。
+[k]
+
+＠モレー
+当時の意味からは厳密には離れますが、[r]今回の件に適応させるならば……
+[k]
+
+[charaFace M 20]
+
+＠モレー
+『服従』は先人の教えに服すること。[r]『貞潔』は心身を清く保つこと。
+[k]
+
+＠モレー
+そして最後の『清貧』は[r]欲を捨て質素に努めること、となりましょう。
+[k]
+
+[charaFace M 17]
+
+＠モレー
+なるほど、確かにこれまでの詩の内容は、[r]三つの誓いに対応しております。
+[k]
+
+[messageOff]
+[charaScale I 1.2]
+[charaScale J 1.2]
+
+[charaFace I 0]
+[charaFadein I 0.6 200,0]
+[charaFadein J 0.6 -60,-260]
+[charaMove I 150,0 30.0]
+[charaMove J -110,-260 30.0]
+[wt 0.8]
+
+
+＠モレーちゃん
+となると気になるのは[r]四男くんの古文書の記載だ。
+[k]
+
+[charaFace A 23]
+
+＠モレーちゃん
+『[#祖:そ]より[#連綿:れんめん]と受け継がれし秘宝。[r]　[#其:そ]に至る道は[#惑:まど]わず続く覚悟をえるべし』
+[k]
+
+[charaFace I 23]
+
+＠モレーちゃん
+『[#祖:そ]より[#連綿:れんめん]と受け継がれし秘宝』ってのは[r]ご先祖様から受け継いできたものでしょ？
+[k]
+
+＠モレーちゃん
+『[#其:そ]に至る道は[#惑:まど]わず続く覚悟をえるべし』は[r]それを受け継ぐ覚悟ってことだと思うけど。
+[k]
+
+[charaFace I 0]
+
+＠モレーちゃん
+『覚悟』の誓いなんてものはなかった。
+[k]
+
+[messageOff]
+[charaFace M 0]
+[charaFadeout I 0.4]
+[charaFadeout J 0.4]
+[wt 0.6]
+
+＠モレー
+ええ。[r]少なくとも、今の[#私:わたくし]の記憶には無い。
+[k]
+
+＠モレー
+無理矢理当てはめるとするならば[r]誓いを守る覚悟、でしょうか？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaPut U 1]
+[branchQuestClear lblClear03a 05000000]
+
+
+[charaFace F 16]
+[charaFadein F 0 1]
+[wt 0.1]
+
+[charaFadeout M 0.6]
+[charaFadeout N 0.6]
+[wt 0.7]
+[charaTalk F]
+[charaTalk on]
+＠ゴルドルフ
+うむ……ここまでの流れをみるかぎり[r]騎士修道会の誓いとの密接な関連がうかがえる。
+[k]
+
+[charaFadeout F 0.1]
+[charaPut U 2000,2000]
+[wt 0.1]
+
+
+[branch lblConf03]
+
+[label lblClear03a]
+
+[charaFace H 17]
+[charaFadein H 0 1]
+
+[charaFadeout M 0.6]
+[charaFadeout N 0.6]
+[wt 0.7]
+
+[charaTalk H]
+[charaTalk on]
+
+＠オルガマリー
+……これまでの流れからして[r]騎士修道会の誓いに関連している可能性は高そうね。
+[k]
+
+[charaFadeout H 0.1]
+[charaPut U 2000,2000]
+[wt 0.1]
+
+
+[label lblConf03]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+まったく、こんな謎解き、[r][#修道騎士:あ  た  し  た  ち]がいなかったら気づきようがないじゃん。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠モレー
+……そうか。だからこそ[#モレー:我　　々]が[r]この特異点に[#喚:よ]ばれたのかもしれませんね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+うーん。
+[k]
+
+[charaDepth L 1]
+[charaFace A 23]
+[charaPut L 0,-200]
+[charaFadeTime L 0.2 0.5]
+
+＠モレーちゃん
+（納得はできる。けど、詩や誓約の謎を解くだけなら[r]　[#修道騎士:モ　　レ　　ー]はひとりだけで事足りたはず……）
+[k]
+
+[charaFace A 10]
+
+＠モレーちゃん
+（となると、やっぱりあたしが選定された理由は、[r]　[#騎士道馬鹿:こ　　　い　　　つ]を[line 3]）
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout L 0.2]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠モレー
+……ど、どうしたのですか？[r][#私:わたくし]の顔をじぃっと見て……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+ふっふふふー。べっつにー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut U 1]
+[branchQuestClear lblClear04a 05000000]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+あーこれこれ。[r]情報共有を怠らず、悪巧みはほどほどになっ。
+[k]
+
+[messageOff]
+[charaLayer I sub #A]
+[charaLayer N sub #A]
+[subCameraFilter #A maskEdge cut359_mask12 5 255,255,255,255 0]
+[charaTalk depthOff]
+[charaTalk F,I]
+[charaFace I 18]
+[charaFadein I 0 -530,250]
+[charaFadein N 0 0,0]
+[subRenderFadeinFSSideL #A 0.4 150,-150]
+[subRenderMoveEaseFSSideL #A 100,-200 0.5 easeOutQuart]
+[wt 0.6]
+[charaMoveReturn I -530,255 0.3]
+[wt 0.3]
+[charaMoveReturn I -530,255 0.3]
+[wt 1.0]
+[subRenderFadeout #A 0.4]
+[subRenderMoveEaseFSSideL #A 50,-250 0.5 easeOutQuart]
+[wt 0.6]
+[charaTalk depthOn]
+[charaFace F 0]
+
+＠ゴルドルフ
+とにかく今は、次に待ち構えているだろう[r]『清貧』の試練について考えるしかあるまい。
+[k]
+
+？1：レオンさんの古文書ですね
+？2：なんとしても助け出さないと！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[branch lblMsh06 _MSH 2]
+[charaFace G 6]
+[branch lblMshCon06]
+[label lblMsh06]
+[charaFace G 7]
+[label lblMshCon06]
+[charaFadein G 0.1 1]
+
+＠マシュ
+はい、そのためには[r]レオンさんの行方を突き止めなければ。
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_57 2.0]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[branch lblConf04]
+
+[label lblClear04a]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠オルガマリー
+ひとまず今は、次に対峙する可能性の高い[r]『清貧』の試練について考えましょうか。
+[k]
+
+
+＠オルガマリー
+これまでのパターンからすれば、[r]ある程度の予測は立てられそうだけど……。
+[k]
+
+[charaFace H 17]
+
+＠オルガマリー
+う～ん……ムムムム……。
+[k]
+
+[charaFace H 20]
+
+＠オルガマリー
+[line 4][messageShake 0.03 3 3 0.3]あ……！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[branch lblMsh07 _MSH 2]
+[charaFace G 5]
+[branch lblMshCon07]
+[label lblMsh07]
+[charaFace G 6]
+[label lblMshCon07]
+[charaFadein G 0.1 1]
+
+＠マシュ
+オルガマリー所長、[r]なにか思いつかれたのですか！？
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 20]
+[charaFadein H 0.1 1]
+[wt 0.6]
+
+？1：本当ですか！？
+？2：聞かせてください、所長の推理を！
+？！
+
+[charaPut L 0,-200]
+[charaFadeTime L 0.2 0.5]
+[charaFace H 16]
+
+＠オルガマリー
+（予想以上の食い付きね！？[r]　推理と言えるほどの[#閃:ひらめ]きじゃないのに[line 3]！）
+[k]
+
+[charaFace H 10]
+
+＠オルガマリー
+（い、いえ、自信を持つのよ私。[r]　頼られているんだから、できる範囲で応えるのっ！）
+[k]
+
+[charaFadeout L 0.2]
+[charaFace H 17]
+
+＠オルガマリー
+コホン……そうね。
+[k]
+
+[charaFace H 0]
+
+＠オルガマリー
+先ほどまでの推測をもとに[r]次の秘宝が金脈であると仮定すれば、だけど[line 3]。
+[k]
+
+＠オルガマリー
+古文書にあったように[r]『[#徒:いたずら]に[#投:とう]ずることなく質素に』とは……
+[k]
+
+[bgmStop BGM_MAP_57 1.5]
+
+[charaFace H 17]
+
+＠オルガマリー
+……まあ、あれよ。あれでしょ。[r]『派手な機材とか使わず、質素に金脈を掘れ』。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[branch lblMsh08 _MSH 2]
+[charaFace G 11]
+[branch lblMshCon08]
+[label lblMsh08]
+[charaFace G 9]
+[label lblMshCon08]
+[charaFadein G 0.1 1]
+
+＠マシュ
+と、言いますと……？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk H]
+[charaFace H 13]
+[charaFadein H 0.1 1]
+
+＠オルガマリー
+ゴールドラッシュを知らないのかしら！[r]スコップとツルハシ、そしてダイナマ[line 3]
+[k]
+
+[charaFace H 17]
+
+＠オルガマリー
+[line 3]イトはもう散々使ったわね。これはナシ。
+[k]
+
+[charaFace H 13]
+
+＠オルガマリー
+つまり、[r]『力こそパワーで愚直に金を掘り出すべし』よ！
+[k]
+
+？1：ぱ、ぱわぁ……
+
+[charaFace H 8]
+
+＠オルガマリー
+そう、パワー。[r]答えは常にシンプル・イズ・ベストが最強でしょ？
+[k]
+
+？2：グランなマリーにしかできませんよ、それは……
+
+[charaFace H 11]
+
+
+＠オルガマリー
+[f large]あ゛？
+[k]
+
+[charaFace H 10]
+
+＠オルガマリー
+貴方が何を言ったのかは分からないけれど、[r]超巨大な大統領なんて存在しなかった、いいわね！？
+[k]
+
+？！
+
+[charaFace H 0]
+
+＠オルガマリー
+……それはそれとして。[r]何か空気が薄いわね。
+[k]
+
+[charaFace H 2]
+
+＠オルガマリー
+………………。[wt 0.8][charaFadeTime L 0.2 0.5][r]（雪山である事を差し引いても薄すぎるわね……）
+[k]
+
+[charaFadeout L 0.2]
+[charaFace H 18]
+
+＠オルガマリー
+……わかった。わかりました。[r]さすがに強引すぎたわ。今の案は引っ込めます。
+[k]
+
+＠オルガマリー
+期待されたから、ちょっと[r]オルガにアニム推理してしまったのよ……。
+[k]
+
+[charaFace H 16]
+
+＠オルガマリー
+そ、それよりも！[r]今はレオンさんの捜索を優先しましょう。
+[k]
+
+？1：そうですね！
+？2：なんとしても助け出さないと！
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_7 2.0]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[label lblConf04]
+
+[charaPut U 2000,2000]
+
+[cueSe SE_26 26_ade1372]
+[wt 2.0]
+[cueSeVolume 26_ade1372 0.5 0.5]
+
+？1：またもやタイムリーコール！
+？！
+
+[messageOff]
+[cueSeStop 26_ade1372]
+[cueSe SE_25 25_ad1471]
+[wt 1.0]
+[bgm BGM_MAP_91 0.1]
+
+＠Z：[DA4A67]電話の主[-]
+[DA4A67]どうやら……[-][r][DA4A67]二つ目の秘宝も得られなかったようだな。[-]
+[k]
+
+＠Z：[DA4A67]電話の主[-]
+[DA4A67]アランならばあるいは、[-][r][DA4A67]と思っていたが期待外れも[#甚:はなは]だしい。[-]
+[k]
+
+＠Z：[DA4A67]電話の主[-]
+[DA4A67][#賢:さか]しい学者のふりをして、[-][r][DA4A67]内実はただの俗物だったとは滑稽極まる。[-]
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モレー
+[#御託:ごたく]はいりません。[r]……本題へ移ってください。
+[k]
+
+＠Z：[DA4A67]電話の主[-]
+[DA4A67]そうしたいところだが、[-][r][DA4A67]その場にクロードはいないのだろう？[-]
+[k]
+
+＠Z：[DA4A67]電話の主[-]
+[DA4A67]デュボワの者がいない中で[-][r][DA4A67]話を進める道理はない。[-]
+[k]
+
+[charaFace B 13]
+
+＠Z：[DA4A67]電話の主[-]
+[DA4A67]時間を惜しむのであれば[-][r][DA4A67]あの根性無しを叩き起こしてくるんだな。[-]
+[k]
+
+[charaFace B 17]
+
+＠C：？？？
+[line 3]そう言うだろうと思ったよ。
+[k]
+
+[messageOff]
+[charaSet C 6012000 1 クロード]
+
+[charaDepth B 2]
+[charaDepth J 3]
+[charaDepth C 4]
+
+[charaScale C 1.2]
+[charaScale J 1.2]
+[charaFadein J 0.4 -70,-260]
+[charaMoveEase J -110,-260 0.7 easeOutCubic]
+[wt 0.5]
+[charaFadeout B 0.1]
+[wt 0.15]
+
+[se ad93]
+[wt 0.7]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 100,0]
+[wt 1.3]
+
+？1：クロードさん！？
+？2：休んでいなくて大丈夫なんですか？
+？！
+
+[charaFace C 1]
+
+＠クロード
+ええ、短時間とはいえ横になれましたからね。
+[k]
+
+[charaFace C 6]
+
+＠クロード
+それよりも……
+[k]
+
+＠クロード
+一刻も早くレオン兄さんの部屋を開けてくれ。[r]回りくどい説明や挑発は不要だ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.4]
+[charaFadeout J 0.4]
+[wt 0.5]
+
+
+＠Z：[DA4A67]電話の主[-]
+[DA4A67]フッ……いいぞ、[-][r][DA4A67]実に鋭く恐ろしい声音だ。[-]
+[k]
+
+＠Z：[DA4A67]電話の主[-]
+[DA4A67]そう、貴様にもデュボワの血が流れている。[-][r][DA4A67]冷酷にして残酷な本性を[#曝:さら]け出せ。[-]
+[k]
+
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠クロード
+相も変わらずお喋りだね。[r]僕の言葉を聞いていなかったのかい？
+[k]
+
+＠クロード
+さっさと開けろ、と……そう言っているんだ。
+[k]
+
+＠Z：[DA4A67]電話の主[-]
+[DA4A67]ああ、お望み通り[-][r][DA4A67]レオンの部屋の封印を解いてやった。[-]
+[k]
+
+＠Z：[DA4A67]電話の主[-]
+[DA4A67]さあ、存分に奴の後を追うがいい。[-][r][DA4A67]クロード、貴様には期待しているぞ。[-]
+[k]
+
+[messageOff]
+
+[se ad332]
+[seStop ad332 0.4]
+[wt 0.6]
+
+[cueSe SE_24 24_ad1373]
+[wt 3.0]
+[cueSeStop 24_ad1373 0.1]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 4]
+[wt 0.8]
+
+＠クロード
+……期待、か。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_91 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

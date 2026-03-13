@@ -1,0 +1,939 @@
+
+
+＄94-15-44-04-1-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 25010001 1 モレーちゃん]
+[charaSet B 1066000 1 モレー]
+[charaSet C 6012000 1 クロード]
+[charaSet D 98014000 1 城の衛兵1]
+[charaSet E 98014000 1 城の衛兵2]
+[charaSet F 98014000 1 城の衛兵3]
+[charaRollAxis D y 180 0 0]
+[charaRollAxis E y 180 0 0]
+[charaRollAxis F y 180 0 0]
+
+[sceneSet H 280007 1]
+[charaScale H 1.2]
+
+[sceneSet I 279908 1]
+[charaScale I 1.2]
+
+[imageSet J 280500 1]
+[charaScale J 1.2]
+
+[sceneSet K 10000 1]
+[charaScale K 1.1]
+
+[charaSet L 25010001 1 モレーちゃん2]
+[charaSet M 1066000 1 モレー2]
+[charaSet N 6012000 1 クロード2]
+
+[sceneSet O 279908 1]
+[charaScale O 1.4]
+
+[sceneSet P 279908 1]
+[charaScale P 1.4]
+
+[imageSet Q cut790_door 1]
+[sceneSet R 183900 1]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用2]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaDepth C 3]
+[charaDepth H 4]
+[charaDepth D 5]
+[charaDepth E 7]
+[charaDepth F 6]
+[charaDepth I 8]
+
+[subCameraOn 3]
+[charaLayer L sub #A]
+[charaLayer M sub #A]
+[charaLayer O sub #A]
+
+[charaDepth O 1]
+[charaDepth L 2]
+[charaDepth M 3]
+
+[charaFace L 0]
+[charaFadein L 0.1 500,220]
+[charaFadein O 0.1 -150,80]
+
+[subCameraFilter #A maskEdge cut359_mask11 4 0,0,0,255 0]
+
+[charaLayer N sub #B]
+[charaLayer P sub #B]
+
+[charaDepth P 1]
+[charaDepth N 2]
+
+[charaFace N 0]
+[charaFadein N 0.1 -550,200]
+[charaFadein P 0.1 -150,80]
+
+[subCameraFilter #B maskEdge cut359_mask12 4 0,0,0,255 0]
+
+[charaLayer S sub #C]
+[charaLayer Q sub #C]
+[subCameraFilter #C normal]
+[subRenderScale #C 1.0]
+
+[charaDepth S 5]
+[charaDepth Q 4]
+
+[charaScale Q 1.0]
+[charaScale S 1.0]
+
+[charaPut S 0,0]
+[charaEffect S bit_talk_barrier_door2]
+[charaFadein Q 0.1 0,-200]
+
+[scene 183900]
+
+[cameraMove 0.1 50,-50 1.1]
+
+[charaDepth T 10]
+[charaDepth R 5]
+
+[charaPutFSSideR T -200,0]
+[charaEffect T bit_talk_barrier_door1]
+
+[charaFadeinFSSideR R 0.1 -200,-200]
+
+[wt 0.5]
+
+
+[cameraMove 4.0 -50,-50 1.3]
+[cueSe SE_24 24_ad1352]
+[seVolume 24_ad1352 0 0.1]
+[wt 0.1]
+[seVolume 24_ad1352 1.0 1.0]
+[se ade491]
+[seVolume ade491 0 0.1]
+[seVolume ade491 1.0 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout black 1.0]
+[seStop 24_ad1352 1.5]
+[seStop ade491 1.5]
+[wait fade]
+
+
+[charaEffectDestroy T bit_talk_barrier_door1]
+[charaFadeout R 0]
+
+[cameraHome 0.1]
+[scene 10000]
+
+[wt 1.0]
+
+[fadein black 0.1]
+[wait fade]
+
+
+[subRenderFadein #C 0.4 0,0]
+[wt 1.5]
+
+[charaEffectStop S bit_talk_barrier_door2]
+[cueSe SE_22 22_ade699]
+[wt 1.4]
+[cueSe SE_24 24_ad1360]
+[wt 0.1]
+[seStop 24_ad1360 0.4]
+[wt 1.2]
+
+[se ad93]
+[fadeout black 0.5]
+[wait fade]
+
+[subRenderFadeout #C 0]
+[charaFadeout Q 0]
+[charaLayer S normal]
+[charaLayer Q normal]
+
+[wt 0.5]
+
+[scene 279908]
+
+[wt 1.5]
+
+[charaTalk off]
+[charaFadein I 0.1 80,-220]
+[charaMove I -80,-220 8.0]
+
+[charaFace B 9]
+[charaFadein B 0.4 1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_WHITE_1 0.1]
+[wt 3.0]
+
+[charaFadeout I 0.8]
+[wt 1.1]
+
+[charaTalk on]
+[charaTalk B]
+
+＠モレー
+……やはり、アラン様も[r]いらっしゃらないようですね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠クロード
+では、ロベール兄さんの時と同じように[r]行き先の手がかりを探しましょう。
+[k]
+
+[messageOff]
+[charaScale I 1.6]
+[charaFadeinFSSideL I 0.6 515,-335]
+[charaMoveFSSideL I 535,-335 0.6]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaFadeout C 0.1]
+[wt 0.9]
+
+？1：難しそうな本がいっぱいある[&:ね]
+？2：それに黒板に何か書かれているけど
+？！
+
+[messageOff]
+[charaFadeout I 0.5]
+[wt 0.7]
+
+[charaTalk A]
+
+＠モレーちゃん
+案の定、次男くんも[r]古文書の解読に挑戦していたみたいだね。
+[k]
+
+＠モレーちゃん
+散らばっている本も専門的なものばかりだし、[r]大学教授っていうのも[#頷:うなず]けるところだけど。
+[k]
+
+[charaFace A 14]
+
+＠モレーちゃん
+はてさて、[r]どこまで古文書を読み解けたのやら。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠クロード
+アラン兄さんは考古学の教授ですから、[r]もしかしたら、ある程度の解読はできたのかもしれません。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠モレー
+その可能性は高そうですね。[r]皆さん、ここをご覧ください。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_WHITE_1 1.0 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[scene 280500]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_WHITE_1 1.0 1.0]
+[wait fade]
+[wt 1.0]
+
+
+[charaTalk L]
+[charaFace L 25]
+[subRenderFadeinFSSideR #A 0.4 -120,-180]
+[subRenderMoveFSSideR #A -100,-200 0.4]
+[wt 0.4]
+
+＠L：モレーちゃん
+ほんとだ、ちっちゃいけど、[r]これでもかってくらいのお宝マークがあるね。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 520,200]
+
+＠M：モレー
+クロード様、この地図の場所ですが、[r]雪山のどのあたりかお分かりになりますか？
+[k]
+
+[messageOff]
+[charaTalk N]
+[charaFace N 0]
+[subRenderFadeinFSSideL #B 0.4 120,-180]
+[subRenderMoveFSSideL #B 100,-200 0.4]
+[wt 0.4]
+
+＠N：クロード
+ええ、これなら見当はつきます。[r]思ったほど遠くはないようですね。
+[k]
+
+？1：ほかに情報もないですし
+？2：今すぐ行ってみましょう！
+？！
+
+[messageOff]
+[scene 279908 0.5]
+[subRenderFadeout #A 0.5]
+[subRenderFadeout #B 0.5]
+
+[charaTalk N,B,A,C]
+[charaFace C 0]
+[charaFadein C 0.5 1]
+[charaFace B 0]
+[charaFadeinFSL B 0.5 0]
+[charaFace A 0]
+[charaFadeinFSR A 0.5 2]
+
+[wt 1.0]
+
+[charaMoveReturn C 0,-4 0.5]
+[wt 0.02]
+[charaMoveReturnFSR A 256,-4 0.5]
+[wt 0.05]
+[charaMoveReturnFSL B -256,-4 0.5]
+[wt 1.0]
+
+[fadeout black 1.0]
+[bgmStop BGM_WHITE_1 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+
+[charaSet B 1066001 1 モレー]
+[charaDepth B 2]
+
+[scene 280002]
+[wt 1.0]
+
+[se ad580]
+[seVolume ad580 0.0 0.0]
+[seVolume ad580 0.5 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 1]
+[wt 0.2]
+[seStop ad580 0.3]
+[wt 0.7]
+
+[bgm BGM_EVENT_141 0.1]
+
+＠クロード
+ハァ……ハァ……[r]なんて歩きづらさだ……。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[cueSe SE_26 26_ade1366 0 0]
+[cueSeVolume 26_ade1366 0.5 0.5]
+[charaEffect S bit_talk_surfing_snow 0,-300]
+[charaEffectStop S bit_talk_surfing_snow]
+[wt 1.5]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 100,0]
+[charaMoveEase B 0,0 0.7 easeOutCubic]
+[cueSeStop 26_ade1366 0.7]
+[wt 1.0]
+
+[charaFace B 18]
+＠モレー
+クロード様、あまり無理をされぬように。[r]慣れない雪道、油断すると、け、怪我をなさいます。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クロード
+そ、そうだけど……[r]少しでも早く兄さんを助けないと。
+[k]
+
+[messageOff]
+[charaFadeout C 0.4]
+[cueSe SE_21 21_ade674]
+[cueSeStop 21_ade674 1.7]
+[wt 2.5]
+
+？1：クロードさん、かなり焦っている[&な:ね]
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+仕方ないよ。彼にとってみれば、[r]異常事態なうえに緊張の連続だもの。
+[k]
+
+＠モレーちゃん
+おまけに慣れない環境での強行軍ときた。[r]精神的にも肉体的にもキツいだろうね。
+[k]
+
+[charaFace A 18]
+
+＠モレーちゃん
+あーやだやだ、[r]騎士団時代を思い出しちゃって吐きそー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠モレー
+……貴方もそんなふうに当時のことを[r]思い出すことがあるのですか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+同じでしょ？　アンタもさ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠モレー
+……ええ。[r]特に、クロード様をみていると……
+[k]
+
+[charaFace B 16]
+
+＠モレー
+…………。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 27]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+おいおい、彼になに重ねてんのか知らないけど[r]変な肩入れはやめとけよー？
+[k]
+
+[charaFace A 10]
+
+＠モレーちゃん
+まだちょっとしか一緒にいないけど、[r]アンタ、とんでもなく不器用だし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠モレー
+そ、そんなこと……[r]自分自身が一番理解しています。
+[k]
+
+[charaPut K 1]
+[charaFadeTime K 0.2 0.5]
+[charaFace B 13]
+
+＠モレー
+（だからこそ……こんなやり方でしか、[#私:わたくし]は……）
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout K 0.2]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+そんならいいけどさ。
+[k]
+
+[bgmStop BGM_EVENT_141 1.0]
+
+[charaFace A 26]
+
+＠モレーちゃん
+って……ちょっとちょっと！[r]もしかして目的地ってあれ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+＠モレー
+ど、どうやらそのようですが……
+[k]
+
+[charaFace B 21]
+
+＠モレー
+これはまた、[r]とんでもないものが出てきましたね。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 280007]
+[wt 1.2]
+
+[charaFadein H 0.1 0,-230]
+[charaMove H 0,-350 7.5]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_131 1.0]
+[wait fade]
+[wt 4.0]
+
+[charaFadeout H 1.0]
+[wt 1.6]
+
+？1：すごい……
+？2：お城だ！
+？！
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠クロード
+なんてことだ。[r]デュボワの私有地にこのようなものがあるとは……
+[k]
+
+[charaFace C 0]
+
+＠クロード
+ですが、たしかに秘宝が[r]隠されていそうな場所ではありますね。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[se ad574]
+[fadeout white 0.5]
+[wait fade]
+[charaCrossFade B 1066000 4 0.1]
+[wait charaCrossFade B]
+[wt 0.4]
+[fadein white 0.5]
+[wait fade]
+[wt 0.2]
+
+＠モレー
+ええ、アラン様のいらっしゃる確率は[r]高いとみてよいかと。
+[k]
+
+＠モレー
+現状、周辺に妙な気配や罠はありませんが、[r]み、皆さん、警戒を怠らずに進みましょう！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_131 1.0]
+[wait fade]
+[wt 0.5]
+[se ad578]
+
+[charaFadeout B 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+
+[charaLayer L main]
+[charaLayer M main]
+[charaLayer N main]
+[charaLayer O main]
+[charaLayer P main]
+
+[subCameraOff]
+
+[sceneSet R 152900 1]
+[charaScale R 1.2]
+
+[charaDepth R 4]
+
+[scene 152900]
+[wt 1.2]
+[seStop ad578 1.5]
+[wt 1.5]
+
+[cueSe SE_25 25_ad1462 1.0 1.0]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[cueSeStop 25_ad1462 1.0]
+[wt 1.1]
+
+？1：…………しーん
+？2：誰もいない[&ようだ:みたい]
+？！
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+ま、人知れず建ってた古城なら[r]これぐらいの静けさは想定内だけど……
+[k]
+
+[charaFace A 14]
+
+＠モレーちゃん
+怖いぐらいに綺麗じゃん？[r]古めかしいわりに、妙に手入れされてるし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠モレー
+それは、よ、要するに[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+めーっちゃ怪しい！[r]ぜったいなんかあるって！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モレー
+はい。先のロベール様の件を考えれば[r]た、ただの城ということはあり得ないでしょう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠クロード
+アラン兄さーーーん！
+[k]
+
+[charaTalk K]
+＠
+[charaTalk K]
+…………
+[k]
+
+
+[charaTalk C]
+[charaFace C 2]
+
+＠クロード
+クロードです、居たら返事をしてください！！
+[k]
+
+[charaTalk K]
+＠
+[charaTalk K]
+…………
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+
+＠D：？？？
+うう……
+[k]
+
+[charaTalk C]
+[charaFace C 6]
+
+＠クロード
+[line 3]！？[r]いま、なにか聞こえませんでした？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠モレー
+ええ、奥の方からたしかに声がしました。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠クロード
+アラン兄さん、僕だ、クロードだよ！[r]いまそっちに[line 3]
+[k]
+
+[messageOff]
+[charaFadein R 0.5 60,-200]
+[charaMoveEase R 110,-200 0.5 easeOutSine]
+[wt 0.7]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad166]
+[se ad769]
+[charaTalk off]
+[charaFace D 0]
+[charaFadeinFSL D 0.4 -320,-20]
+[charaFace E 0]
+[charaFadein E 0.4 0,0]
+[charaFace F 0]
+[charaFadeinFSR F 0.4 320,-20]
+[wt 0.4]
+[seStop ad166 0.4]
+[seStop ad769 0.4]
+[wt 1.0]
+
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+[charaFadeout D 0.4]
+[charaFadeout E 0.4]
+[charaFadeout F 0.4]
+[charaFadeout R 0.4]
+[wt 0.5]
+
+[bgm BGM_BATTLE_137 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 5]
+
+＠クロード
+[line 3]な！？[r][#時代錯誤:じ だ い さ く ご]な格好……それに、古風な武具……。
+[k]
+
+＠クロード
+これもまさか、幻覚か何かなのか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠モレー
+人間ではなさそうですが、実体はあります。[r]クロード様、どうかお下がりを。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace D 0]
+[charaFadeinFSL D 0.1 -320,-20]
+[charaFace E 0]
+[charaFadein E 0.1 0,0]
+[charaFace F 0]
+[charaFadeinFSR F 0.1 320,-20]
+
+＠E：城の衛兵
+試練ノ邪魔ハサセナイ……。[se adm37]
+[k]
+
+＠E：城の衛兵
+資格ナキ者ハ……コノ場ヲ立チ去レ……。
+[k]
+[messageOff]
+
+[fowardEffect bit_talk_gram_slash_violet_03 0,0]
+[se bac136]
+[wt 0.4]
+
+[se ad467]
+[fadeout white 0.1]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth A 5]
+[charaDepth C 4]
+
+[charaTalk A,C]
+[charaFace A 6]
+[charaFadein A 0 -50,0]
+
+[charaScale C 0.95]
+[charaFace C 4]
+[charaFadein C 0 200,-10]
+
+[charaMoveScaleEase A 1.12 0.5 easeOutQuint]
+[charaMoveEase A -50,16 0.5 easeOutQuint]
+
+[charaShake A 0.03 3 2 0.7]
+[effect bit_talk_blow03 -50,0]
+
+[fadein white 0.2]
+[wait fade]
+[wt 1.0]
+
+[charaTalk A]
+[charaFaceFade A 14 0.15]
+
+＠モレーちゃん
+はいはいー、四男くんは[r]ちょい後ろに下がっててくださーい。
+[k]
+
+[charaFace A 5]
+
+＠モレーちゃん
+というか今後、前に飛び出すの禁止ねー。[r][#わかった:C o m p r i s]？
+[k]
+
+[charaFace C 4]
+
+＠クロード
+え、ええ……肝に銘じます。
+[k]
+
+[charaFace A 1]
+
+＠モレーちゃん
+素直でよろしい。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠モレー
+その態度は許せませんが、お、大目に見ましょう。[r]まずは目の前の危機への対処が先決です！
+[k]
+
+？1：おねがい、モレーず！
+？！
+
+[charaFace B 7]
+
+＠モレー
+ええ、モレーず再び[line 3]いきます！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_137 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

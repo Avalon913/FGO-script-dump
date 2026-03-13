@@ -1,0 +1,612 @@
+
+
+＄94-15-44-04-2-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 25010001 1 モレーちゃん]
+[charaSet B 1066000 1 モレー]
+[charaSet C 6013002 1 アラン]
+[charaSet D 6012000 1 クロード]
+[charaSet E 98014000 1 城の衛兵]
+[charaSet F 98014000 1 城の衛兵]
+[charaSet G 98014000 1 城の衛兵]
+
+[charaRollAxis E y 180 0 0]
+[charaRollAxis F y 180 0 0]
+[charaRollAxis G y 180 0 0]
+
+[charaSet H 98104300 1 ゴースト]
+
+[sceneSet I 10000 1]
+[charaScale I 1.1]
+
+[sceneSet J 280200 1]
+[charaScale J 1.6]
+[sceneSet K 280200 1]
+[charaScale K 1.6]
+
+[imageSet L cut788_doc_ala01 1]
+
+[charaSet M 98115000 1 エフェクト用1]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth K 2]
+[charaDepth I 3]
+[charaDepth H 4]
+[charaDepth D 5]
+[charaDepth C 6]
+[charaDepth B 7]
+[charaDepth A 8]
+[charaDepth F 9]
+[charaDepth G 10]
+[charaDepth E 11]
+[charaDepth M 12]
+[charaDepth L 13]
+
+[scene 152900]
+
+[charaFace E 5]
+[charaFace F 5]
+[charaFace G 5]
+[charaFadein E 0.1 1]
+[charaFadeinFSL F 0.1 -320,-20]
+[charaFadeinFSR G 0.1 320,-20]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+[wt 0.3]
+
+[se ad42]
+[charaEffect G bit_talk_atomization_gra 0,30]
+[charaSpecialEffect G enemyErasure 1 1.3]
+[wt 0.2]
+[charaEffect F bit_talk_atomization_gra 0,30]
+[charaSpecialEffect F enemyErasure 1 1.3]
+[wt 0.2]
+[charaEffect E bit_talk_atomization_gra]
+[charaSpecialEffect E enemyErasure 1 1.3]
+[wait charaSpecialEffect E]
+[wt 1.6]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+んー、試練の前座にしては[r]あっさり倒せちゃったような？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠モレー
+我々の視点ではそうかもしれませんが、[r]常人にしてみれば脅威には違いありません。
+[k]
+
+＠モレー
+名家に代々続く試練としては、[r]あまりにも度が過ぎているかと。
+[k]
+
+[charaFace B 16]
+[charaPut I 0,-200]
+[charaFadeTime I 0.2 0.5]
+
+＠モレー
+（あの御方は、こうなることを理解していたのだろうか……）
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[charaFadeout I 0.2]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[se ad311]
+[seVolume ad311 0 0.2]
+[seVolume ad311 7.0 1.0]
+[wt 2.5]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠モレー
+[line 3]！？[r][%1]様、向こうから足音が……
+[k]
+
+？1：あれはアランさん！？
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[seStop ad311]
+[wt 1.0]
+[bgm BGM_EVENT_77 0.1]
+
+＠アラン
+……おや？
+[k]
+
+＠アラン
+何やら騒がしいと思って来てみれば、[r]貴方たちも辿り着いたのですね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠クロード
+アラン兄さん、よかった……無事だったんだね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アラン
+ええ、こうした遺跡調査などは[r]慣れていますから。
+[k]
+
+[charaFace C 0]
+
+＠アラン
+それよりもクロード、貴方の方こそ[r]血相を変えてどうしたのですか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠クロード
+どうした、って……
+[k]
+
+[charaFace D 2]
+
+＠クロード
+僕に黙って兄さんたちがいなくなるから[r]心配したんじゃないか！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アラン
+兄さんたち……か。
+[k]
+
+＠アラン
+では兄上やロベールも[r]私と同じような行動をとっていたのですね。
+[k]
+
+[charaFace C 4]
+
+＠アラン
+それはさぞ心配だったでしょう。[r]クロード、本当に申し訳ない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠クロード
+……いいさ、過ぎたことだし。[r]兄さんが無事なら、僕はそれで……。
+[k]
+
+[charaFace D 0]
+
+＠クロード
+それよりも、秘宝についてだけど、[r]古文書の解読はできたの？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アラン
+ええ、昨晩の時点でね。
+[k]
+
+？1：すごい、本当ですか！？
+？！
+
+[charaFace C 1]
+
+＠アラン
+ふふ、実に簡単なものでしたよ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[charaPut I 1]
+[charaFadeTime I 0.35 0.5]
+
+[charaTalk L]
+[charaFadein L 0.35 0,-200]
+[cueSe SE_24 24_ade1033]
+[wt 1.8]
+[cueSeStop 24_ade1033]
+
+＠アラン
+古文書の地図と記述内容に照らし、[r]この地に[#纏:まつ]わる文献をあさったところ[line 3]
+[k]
+
+＠アラン
+デュボワ家が所有する雪山において[r]中世に城が建てられたという情報を見つけました。
+[k]
+
+＠アラン
+デュボワが代々受け継いできたという秘宝ともなれば[r]これぐらいの規模の古城が[#相応:ふさわ]しいと考えるのは必定。
+[k]
+
+
+[messageOff]
+[charaFadeout I 0.4]
+[charaFadeout L 0.4]
+[wt 0.55]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アラン
+そして学者としての探究心に[#駆:か]られた私は、[r]居ても立ってもいられなくなりましてね。
+[k]
+
+＠アラン
+気が付けば夜明け前に屋敷を出て、[r]この城の前に立っていたというわけです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠クロード
+じゃあ、秘宝はもう見つけたってこと？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アラン
+勿論ですとも。[r]ちょうどいい、皆さんもどうぞこちらへ。
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_EVENT_77 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 280200]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_192 0.1]
+
+[wt 1.4]
+[messageOff]
+[cameraMoveEase -100,0 1.5 easeOutSine 1.2]
+[wt 1.8]
+[cameraMove 2.0 100,0 1.2]
+[wt 2.8]
+[cameraMoveEase 0,0 1.5 easeOutSine 1.0]
+[wt 1.9]
+
+？1：彫刻や絵画がたくさん……！
+？！
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アラン
+ええ、実に壮観でしょう？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[charaPut I 1]
+[charaFadeTime I 0.35 0.5]
+
+[charaTalk L]
+[charaFadein L 0.35 0,-200]
+[cueSe SE_24 24_ade1033]
+[wt 1.8]
+[cueSeStop 24_ade1033]
+
+＠アラン
+『[#崇高:すうこう]なる[#魂:たましい]より生み出されし秘宝』[r][line 3]そう、秘宝とはこれら美術品です！
+[k]
+
+＠アラン
+いずれも崇高な魂を持った芸術家でなければ[r]生み出すことができない一級品ばかり。
+[k]
+
+＠アラン
+ゆえに、これらが秘宝とみて間違いないでしょう。
+[k]
+
+[messageOff]
+[charaFadeout I 0.4]
+[charaFadeout L 0.4]
+[wt 0.55]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モレー
+……ですがアラン様、[r]古文書の詩は、ま、まだ続きがあります。
+[k]
+
+＠モレー
+『[#其:そ]に至る道は曇りなき[#軌跡:きせき]にして[#潔:いさぎよ]くあるべし』[r]こちらはどのような解釈を？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アラン
+秘宝を得るための義理や方法……言うなれば[r]対峙するに[#相応:ふさわ]しい精神的姿勢だと捉えました。
+[k]
+
+[charaFace C 1]
+
+＠アラン
+故に、私は体現してみせたのです。[r]この部屋と美術品をよく見ていただきたい。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ade588 1.0 1.0]
+[charaFadein J 0.8 -400,-300]
+[charaEffect M bit_talk_valentine_brilliant_fs]
+
+[charaMove J -400,-100 10.0]
+[wt 3.0]
+
+[charaFadein K 0.8 330,-130]
+[charaFadeout J 1.0]
+[charaMove K 330,-300 10.0]
+[wt 3.0]
+[cueSeStop 21_ade588 1.0]
+[charaFadeout K 1.0]
+[charaEffectStop M bit_talk_valentine_brilliant_fs]
+[wt 1.5]
+
+？1：室内がすみずみまで綺麗[&だ:]
+？2：美術品がピカピカに磨かれている
+？！
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アラン
+ええ、徹底的に室内を清掃し、[r]全ての美術品を磨き上げました。
+[k]
+
+[charaFace C 0]
+
+＠アラン
+まさに『曇りなき[#軌跡:きせき]にして[#潔:いさぎよ]くあるべし』を[r]体現したうえでの秘宝の獲得といえましょう。
+[k]
+
+[charaFace C 1]
+[bgmStop BGM_EVENT_192 0.8]
+
+＠アラン
+ふふふっ、これで何の憂いもなく[r]競売にかけられるというもの。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠クロード
+競売って……
+[k]
+
+[charaFace D 5]
+
+＠クロード
+兄さん、まさか売りさばく気なの？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_122 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠アラン
+ええ、なにか問題が？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠クロード
+問題しかないだろ！[r]誘拐犯との交渉はどうするのさ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アラン
+勿論、忘れていませんとも。
+[k]
+
+[charaFace C 0]
+
+＠アラン
+ほら、こちらの絵画を数点ほど差し出せば[r]交渉の条件はクリアできるじゃないですか。
+[k]
+
+＠アラン
+そして、残ったこれら全てを世界へお[#披露目:ひ　ろ　め]し、[r]アランコレクションとして世に普及させるのです。
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ade582 0.7]
+[wt 0.2]
+
+[charaEffect C bit_talk_moya_aura]
+[charaTalk off]
+[charaPut H -130,40]
+[charaMoveEase H -160,60 1.4 easeOutSine]
+[charaFadeTime H 0.7 0.6]
+[wt 2.0]
+
+[charaFace C 1]
+
+＠アラン
+さすればデュボワの名は不滅の栄光となりて[r]母上もさぞ、私をお認めになるでしょう！
+[k]
+
+[charaFace C 7]
+
+＠アラン
+ふふ……ふふふふふ……あははははは！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut C 2000,2000]
+[charaEffectDestroy C bit_talk_moya_aura]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠クロード
+ああ……そうか……。
+[k]
+
+＠クロード
+貴方もロベール兄さんと同じように……。
+[k]
+
+？1：アランさんも……
+？2：取り憑かれている！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠モレー
+ええ、ロベール様の時と同じく[r]呪いに[#囚:とら]われているようですね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+なにそれー、秘宝探しに行くと[r]ほぼ確定で呪いにかかるってこと！？
+[k]
+
+＠モレーちゃん
+それじゃあ、この試練フツーの人間じゃ[r]まずクリアできない雑仕様じゃん！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠モレー
+い、いずれにせよ、これ以上アラン様の[#醜態:しゅうたい]を[r][#晒:さら]すわけにはいきません。力を貸してください！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_122 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+
+
