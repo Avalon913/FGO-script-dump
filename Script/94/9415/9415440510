@@ -1,0 +1,1553 @@
+
+
+＄94-15-44-05-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 25010001 1 モレーちゃん]
+[charaSet B 1066000 1 モレー]
+[charaSet C 6012000 1 クロード]
+[charaSet D 1098353300 1 レオン]
+[charaSet E 1098227200 1 寡黙な業者]
+[charaSet F 1098233800 1 気弱な業者]
+[charaSet G 98108900 1 おとなしい業者]
+[charaSet H 98104300 1 ゴースト_演出用]
+[charaSet I 1066000 1 モレー_演出用]
+[charaSet J 25010001 1 モレーちゃん_演出用]
+
+[charaSet S 98104300 1 ゴースト_演出用]
+[charaSet T 98104300 1 ゴースト_演出用]
+
+[sceneSet K 279910 1]
+[sceneSet L 280002 1]
+[sceneSet M 280002 1]
+[sceneSet N 104300 1]
+[sceneSet O 104300 1]
+[sceneSet P 107400 1]
+[sceneSet Q 280400 1]
+[sceneSet R 183900 1]
+
+[charaSet U 98115000 1 エフェクト用1]
+[charaSet V 98115000 1 エフェクト用2]
+[imageSet W cut790_door 1]
+
+[imageSet X back10000 1 1]
+[charaScale X 1.05]
+[imageSet Y back10000 1 1]
+[charaScale Y 1.05]
+
+[sceneSet Z 10000 1]
+[charaScale Z 1.1]
+
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth A 3]
+[charaDepth B 2]
+
+[charaDepth D 5]
+
+[charaDepth G 13]
+[charaDepth F 14]
+[charaDepth E 15]
+[charaDepth T 16]
+[charaDepth S 17]
+[charaDepth H 11]
+
+[charaDepth I 19]
+[charaDepth J 20]
+
+[charaDepth K 4]
+[charaDepth L 4]
+[charaDepth M 4]
+[charaDepth N 4]
+[charaDepth O 2]
+[charaDepth P 4]
+[charaDepth Q 9]
+[charaDepth R 1]
+
+[charaDepth W 21]
+[charaDepth U 22]
+[charaDepth V 23]
+
+[scene 183900]
+[charaPutFSSideR V -200,0]
+[charaEffect V bit_talk_barrier_door1]
+[charaFadeinFSSideR R 0 -200,-200]
+
+[cameraMove 0.1 50,-50 1.1]
+[wt 0.1]
+[cameraMove 4.0 -50,-50 1.3]
+[cueSe SE_24 24_ad1352]
+[seVolume 24_ad1352 0 0.1]
+[wt 0.1]
+[cueSeVolume 24_ad1352 1.0 1.0]
+[se ade491]
+[seVolume ade491 0 0.1]
+[seVolume ade491 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout black 1.0]
+[seStop 24_ad1352 1.5]
+[seStop ade491 1.5]
+[wait fade]
+
+[charaEffectDestroy V bit_talk_barrier_door1]
+[charaFadeout R 0]
+[cameraMove 0.1 0,0 1.01]
+[scene 10000]
+
+[subCameraOn 1]
+[charaLayer U sub #A]
+[charaLayer W sub #A]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+[charaScale W 1.0]
+[charaScale U 1.0]
+[charaPut U 0,40]
+[charaEffect U bit_talk_barrier_door2]
+[charaFadein W 0 0,-160]
+[wt 1.0]
+[fadein black 0.1]
+[wait fade]
+
+[subRenderFadein #A 0.4 0,0]
+[charaMove W 0,-200 0.4]
+[charaMove U 0,0 0.4]
+[wt 1.5]
+
+[charaEffectStop U bit_talk_barrier_door2]
+[cueSe SE_22 22_ade699]
+[wt 1.4]
+[cueSe SE_24 24_ad1360]
+[wt 0.1]
+[seStop 24_ad1360 0.4]
+[wt 1.2]
+
+[se ad93]
+[fadeout black 0.5]
+[wait fade]
+[subRenderFadeout #A 0.1]
+[charaFadeout W 0]
+[charaLayer U normal]
+[charaLayer W normal]
+[subCameraOff]
+
+[scene 279910]
+[charaScale K 1.2]
+[charaFadein K 0.1 -30,-200]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0 1]
+
+[wt 1.2]
+
+[charaMove K 30,-200 5.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+[bgm BGM_MAP_35 0.1]
+[wt 2.5]
+[charaFadeout K 0.6]
+[wt 0.7]
+
+＠モレーちゃん
+じゃー、これまでと同じように[r]手がかり探しといきますか。
+[k]
+
+？1：モニターがつけっぱなしだね
+？2：グラフとか数字がたくさん並んでいるけど
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠クロード
+兄さんは投資家でもありますから[r]関連する情報が映し出されているのは想定内です。
+[k]
+
+＠クロード
+が、このモニターでは誰かとメールでのやりとりを[r]していたような形跡がみられますね。
+[k]
+
+[charaFace C 4]
+
+＠クロード
+ということは、兄さんも……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠モレー
+ええ、外部との連絡は不可能な状況で[r]できもしないコンタクトを取っていたとなれば……
+[k]
+
+[charaFace B 20]
+
+
+＠モレー
+彼も既に取り憑かれているとみて[r]ま、間違いないでしょう。
+[k]
+
+[charaFace B 0]
+
+＠モレー
+そしてこのメールの内容から察するに、[r]雪山の採掘依頼を外部へ依頼しているようですね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+採掘依頼かー。[r]今まででいちばん秘宝探しっぽいね。
+[k]
+
+？1：金銀財宝を掘り当てようとしてるのかな？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クロード
+大いにあり得ます。[r]レオン兄さんはとにかく[#単純明快:たんじゅんめいかい]な人なので。
+[k]
+
+＠クロード
+おそらく古文書もノリと勢いで[r][#杜撰:ずさん]な解釈をしてるはず……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+ふーん？　長男くんには[r]けっこうネガティブレビューするじゃん。
+[k]
+
+＠モレーちゃん
+レオンのことは[r]あんまり尊敬していない感じ、きみ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠クロード
+……そんなことはありませんよ。
+[k]
+
+＠クロード
+彼は、他の兄さんたちにはない[r]大きな強みのある人ですからね。
+[k]
+
+[charaFace C 1]
+
+＠クロード
+良くも悪くもデュボワ家の[#品行方正:ひんこうほうせい]さとは[r]真逆をいく[#破天荒:はてんこう]な人と言ってもいいでしょう。
+[k]
+
+＠クロード
+ある意味では、僕は三人の兄の中で[r]レオン兄さんが一番の理想像なのかもしれません。
+[k]
+
+＠クロード
+勿論、まがったことは嫌いな人なので、[r]誰かを騙したりするような思考は持ち合わせていません。
+[k]
+
+[charaFace C 0]
+
+＠クロード
+逆に言えば騙されやすい……[r]情に訴えられると、すぐに信じてしまう人でもあります。
+[k]
+
+[charaFace C 4]
+
+＠クロード
+だからお母様からも[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠モレー
+クロード様、そのあたりで。[r]いまは救出を優先しましょう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠クロード
+……そうだったね。[r]すまない。
+[k]
+
+？1：それじゃあ出発しましょう！
+？！
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_MAP_35 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout C 0.1]
+
+[scene 280002]
+[blur lens 0.1 2 2]
+[charaSet B 1098354100 1 モレー]
+[charaSet I 1098354100 1 モレー_演出用]
+[charaDepth B 5]
+[charaDepth I 18]
+[subCameraOn 2]
+[charaLayer U sub #A]
+[charaLayer B sub #A]
+[charaLayer L sub #A]
+[charaLayer V sub #B]
+[charaLayer I sub #B]
+[charaLayer M sub #B]
+[subCameraFilter #A maskEdge cut359_mask41 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask42 5 255,255,255,255]
+[subRenderScale #A 1.01]
+[subCameraRoll #A -15 0,0]
+[subCameraRoll #B -15 0,0]
+[charaRoll U 10]
+[charaRoll B 15]
+[charaRoll L 15]
+[charaScale U 1.1]
+[charaScale B 1.35]
+[charaScale L 1.2]
+[charaTalk B,I]
+[charaFace B 1]
+[charaFadein B 0 150,0]
+[charaFadein L 0 0,-250]
+
+[subRenderScale #B 1.01]
+[charaRoll V 15]
+[charaRoll I 20]
+[charaRoll M -15]
+[charaScale V 1.1]
+[charaScale I 1.35]
+[charaScale M 1.2]
+[charaFace I 2]
+[charaFadein I 0 -350,195]
+[charaFadein M 0 0,50]
+
+[charaPut U 160,-180]
+[charaEffect U bit_talk_surfing_snow]
+[charaPut V -300,50]
+[charaEffect V bit_talk_surfing_snow 0,0 H]
+[wt 1.0]
+
+[fadein black 1.0]
+[cueSe SE_26 26_ade1366 0 0.1]
+[cueSeVolume 26_ade1366 1.0 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_157 0.1]
+
+[subRenderFadein #A 0.2 -80,100]
+[subRenderMoveEase #A -100,0 0.7 easeOutQuint]
+[wt 1.5]
+[subRenderMoveEase #A -120,-100 0.7 easeOutQuint]
+[wt 0.1]
+[subRenderFadeout #A 0.3]
+[wt 0.4]
+
+[charaFadeout B 0]
+[charaEffectDestroy U bit_talk_surfing_snow]
+
+[charaLayer A sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask08 5 255,255,255,255]
+[subCameraRoll #A 0 0,0]
+
+[charaDepth A 3]
+[charaDepth L 1]
+
+[charaScale A 1.2]
+[charaScale L 1.3]
+[charaRoll L 0]
+
+[charaFace A 24]
+[charaFadein A 0 130,250]
+[charaFadein L 0 130,50]
+
+[cameraMoveEase 0,0 0.6 easeOutCubic 1.2]
+[wt 0.6]
+
+[subRenderFadein #B 0.2 100,-380]
+[subRenderMoveEase #B 120,-280 0.7 easeOutQuint]
+[wt 1.5]
+[subRenderMoveEase #B 140,-180 0.7 easeOutQuint]
+[wt 0.1]
+[subRenderFadeout #B 0.3]
+[seStop 26_ade1366 1.0]
+[wt 0.5]
+
+[charaTalk A]
+[charaMove A 150,250 3.5]
+[charaMove L 150,50 3.5]
+[subRenderFadein #A 0.5 0,-300]
+[wt 2.5]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_157 1.0]
+[wait fade]
+
+[blurOff lens 0]
+[cameraMove 0.1 0,0 1.01]
+[charaEffectDestroy V bit_talk_surfing_snow]
+[charaFadeout L 0]
+[charaFadeout I 0]
+[charaFadeout M 0]
+[charaFadeout A 0]
+[charaRoll U 0]
+[charaRoll B 0]
+[charaRoll V 0]
+[charaRoll I 0]
+[charaRoll M 0]
+[charaScale U 1.0]
+[charaScale B 1.0]
+[charaScale L 1.0]
+[charaScale V 1.0]
+[charaScale I 1.0]
+[charaScale M 1.0]
+[charaScale A 1.0]
+[charaLayer U normal]
+[charaLayer B normal]
+[charaLayer L normal]
+[charaLayer V normal]
+[charaLayer I normal]
+[charaLayer M normal]
+[charaLayer A normal]
+[subCameraOff]
+[charaSet B 1066000 1 モレー]
+[charaSet I 1066000 1 モレー_演出用]
+[charaDepth B 2]
+[charaDepth I 18]
+[scene 104300]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_167 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モレー
+[line 3]到着です。[r]こちらの洞窟がメールにあった採掘地点のようですね。
+[k]
+
+？1：一瞬で着いた！？
+？2：モレーの板さばきがますます上手くなってる！
+？！
+
+[charaFace B 3]
+
+＠モレー
+こ、これくらいはサーヴァントなら[r]そう難しいことではないかと。
+[k]
+
+[charaFadeTime Z 0.2 0.5]
+[charaFace B 21]
+
+＠モレー
+（褒められると、それもまたプレッシャーで胃が……）
+[k]
+
+[charaFadeout B 0.2]
+[charaFadeout Z 0.2]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 25]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+嬉しそうにはにかみながら[r]お腹を押さえるなっての。
+[k]
+
+[charaFace A 6]
+
+＠モレーちゃん
+それより、少しは警戒しないとダメだって。
+[k]
+
+[messageOff]
+[charaTalk A,J]
+[charaScale J 1.2]
+[charaScale N 1.2]
+[charaFace J 6]
+[charaFadein J 0.4 150,0]
+[charaFadein N 0.4 0,-280]
+[charaMoveEase J 250,0 0.7 easeOutSine]
+[charaMoveEase N 100,-280 0.7 easeOutSine]
+[se ad413 0 0]
+[seVolume ad413 1.2 0.4]
+[wt 0.8]
+[charaFadeout A 0.1]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠J：モレーちゃん
+ほら、向こうから声が聞こえる。[r]どうやら大勢いる感じだ。
+[k]
+
+[messageOff]
+[charaTalk J,C]
+[charaFadeout J 0.4]
+[charaFadeout N 0.4]
+[seStop ad413 1.8]
+[wt 0.4]
+
+＠クロード
+アラン兄さんの時のようなヤツらでしょうか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+その可能性は充分にあるっしょ。
+[k]
+
+[charaFace A 10]
+
+＠モレーちゃん
+いい、四男くん？[r]今回は絶対に先頭にいかないように。頼むよー？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠クロード
+はい、心得ていますとも。
+[k]
+
+？1：フリじゃないんだけど……
+？2：大丈夫かな？
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_167 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout C 0.1]
+[pictureFrame cut063_cinema]
+[scene 107400]
+[charaTalk off]
+[charaScale P 1.2]
+[charaFadein P 0.1 90,-240]
+[wt 1.0]
+[se ad413 0 0]
+[seVolume ad413 1.0 0.7]
+[cueSe SE_26 26_ade1368 0 0]
+[cueSeVolume 26_ade1368 1.0 0.4]
+[charaMove P 30,-240 5.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.4]
+[charaScale E 1.1]
+[charaFace E 0]
+[charaFadein E 0.4 300,-20]
+[charaMove E 150,-20 2.0]
+[wt 1.0]
+[charaScale G 1.0]
+[charaFace G 0]
+[charaFadein G 0.4 -250,-20]
+[charaMove G 100,-20 2.0]
+[wt 0.5]
+[charaFadeout E 0.4]
+[charaScale F 1.2]
+[charaFace F 0]
+[charaFadein F 0.4 300,-20]
+[charaMove F 100,-20 2.0]
+[wt 0.5]
+[charaFadeout G 0.4]
+[wt 1.0]
+[charaFadeout F 0.4]
+[wt 0.5]
+[seStop ad413 3.5]
+[cueSeStop 26_ade1368 3.5]
+[charaFadeout P 0.6]
+[wt 0.7]
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaScale G 1.0]
+
+[bgm BGM_EVENT_49 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+＠レオン
+すぐに足場を組んでくれ。
+[k]
+
+＠レオン
+今日中にあのあたりまで採掘を終わらせたい。[r]できるか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠寡黙な業者
+ええ……おまかせください……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 0,-50]
+
+＠レオン
+頼もしい限りだ。[r]依頼料が高いだけのことはあるな。
+[k]
+
+[charaFace D 6]
+
+＠レオン
+それじゃあ掘り当てたものは雪上車に積み込んで[r]すぐに加工施設まで運んでくれ。
+[k]
+
+[charaFace D 1]
+
+＠レオン
+それと、アンタ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠おとなしい業者
+わたしですか……？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠レオン
+そうだ。[r]さっき頼んだ追加人員の手配は終わっているのか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠おとなしい業者
+はい……万事つつがなく……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+
+＠レオン
+よぉし、さすがだ！[r]それじゃ、あとはやるだけだな。
+[k]
+
+[charaFace D 5]
+
+＠レオン
+みんな、気合い入れていくぞ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E,F,G]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+[charaFace F 0]
+[charaFadein F 0.1 350,-50]
+[charaFace G 0]
+[charaFadein G 0.1 -350,-50]
+[wt 0.4]
+[cueSe SE_21 21_ade644 0 0.2]
+[cueSe SE_26 26_ade1369 0 0.7]
+[charaMoveReturn E 0,-53 0.6]
+[wt 0.1]
+[charaMoveReturn G -350,-56 0.3]
+[wt 0.1]
+[charaMoveReturn F 350,-54 0.45]
+
+[wt 1.5]
+[bgm BGM_EVENT_49 0.6 0.4]
+[wipeout rectangleStripRightToLeft 0.6 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+
+[pictureFrame]
+
+[charaDepth C 10]
+[charaScale C 1.2]
+[charaScale N 1.4]
+[charaScale A 1.0]
+[charaScale O 1.2]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 -100,0]
+[charaFadein N 0.1 150,-340]
+[charaFadein O 0.1 -100,-270]
+
+[wt 0.5]
+[bgm BGM_EVENT_49 0.6 1.0]
+[wipein rectangleStripLeftToRight 0.6 1]
+[wait wipe]
+[wt 0.2]
+
+＠クロード
+…………。
+[k]
+
+[messageOff]
+[charaFadeout C 0.6]
+[charaFadeout N 0.6]
+[wt 0.8]
+[charaScale C 1.0]
+
+？1：パッと見、業者のようだけど……
+？！
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+うん、どう考えてもおかしい。
+[k]
+
+[charaFace A 12]
+
+＠モレーちゃん
+昨夜、依頼したばかりで[r]こんな辺境にすぐやってくるなんてあり得ないもん。
+[k]
+
+[charaFace A 6]
+
+＠モレーちゃん
+さすがに今回は四男くんでも[r]あれが明らかに人間ではないことくらいは[line 3]
+[k]
+
+[messageOff]
+[charaMoveEase A 200,0 0.8 easeOutSine]
+[charaMoveEase O 100,-270 0.8 easeOutSine]
+[wt 1.2]
+[bgmStop BGM_EVENT_49 1.5]
+[charaDepth B 1]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+[charaFace A 25]
+
+＠モレーちゃん
+あれ？[r]四男くん、いなくない？
+[k]
+
+[messageOff]
+[charaTalk A,B]
+[charaFadeout A 0.4]
+[charaFadeout O 0.4]
+[wt 0.4]
+
+＠モレー
+……え！？
+[k]
+
+？1：飛び出していってるー！
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[overlayFadein X 0.1 0,-757]
+[overlayFadein Y 0.1 0,757]
+[scene 107400]
+[charaScale P 1.2]
+[charaFadein P 0.1 0,-240]
+[wt 0.6]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[cueSe SE_25 25_ade1158 1.1 0.8]
+[wt 1.5]
+
+[bgm BGM_EVENT_175 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 0,-50]
+[cueSeStop 25_ade1158 0.4]
+[wt 0.7]
+
+＠クロード
+レオン兄さーーーん！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,-50]
+
+＠レオン
+おお！　クロードじゃないか。[r]よーくここが分かったな！
+[k]
+
+[charaFace D 6]
+
+＠レオン
+見ろ、ちょっと掘っただけで[r]もうこんだけの金が見つかったんだ。
+[k]
+
+＠レオン
+秘宝探しなんてのも案外カンタンだったな！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+
+＠クロード
+バカなことを言わないでよ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠レオン
+え……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+
+＠クロード
+こんな見え見えの罠に[r]無様にもハマって……
+[k]
+
+＠クロード
+そして、何よりも許せないのは[line 3]
+[k]
+
+[charaFace C 2]
+
+＠クロード
+アラン兄さんもロベール兄さんも、[r]なんで自分たちだけでやろうとするんだ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠レオン
+お、怒ってるのか？[r]お前にしちゃ珍しい……
+[k]
+
+[charaFace D 14]
+
+＠レオン
+悪かったよ。[r]けど今回は時間が限られていただろ？
+[k]
+
+＠レオン
+それに長男としちゃ、こういう時にこそ[r]跡継ぎに[#相応:ふさわ]しい成果をあげなくちゃいけない。
+[k]
+
+＠レオン
+だから誰よりも先に秘宝を見つけ出して、[r]おふくろの救出にわかりやすい貢献を、ってな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 0,-50]
+
+＠クロード
+やっぱり、そういうことだったのか……。
+[k]
+
+＠クロード
+でもだからって、[r]兄さんだけで挑んだって[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.6]
+[charaFadeout P 0.6]
+[se ad769 0 0]
+[seVolume ad769 1.2 0.7]
+[charaMove X 0,-850 1.0]
+[charaMove Y 0,850 1.0]
+[wt 1.2]
+[seStop ad769 1.2]
+[wt 1.3]
+
+？1：おーい、クロードさん！
+？2：勝手に飛び出しちゃダメって言ったのに
+？！
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クロード
+……すみません。[r]モレーネさんが、あれほど言ってくれたのに。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+いーっていーって。[r]なんかそうなるだろーとは思ってたからさ。
+[k]
+
+[charaFace A 31]
+
+＠モレーちゃん
+それに兄貴たちの[#体:てい]たらくを見てれば[r]あなたの憤慨っぷりは、むしろ当然だよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠モレー
+ともあれレオン様もご無事で良かった。[r]どこにも御怪我はないようですね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠レオン
+おお！？[r]なんだよ、アンタたちも来ていたのか！
+[k]
+
+[charaFace D 1]
+
+＠レオン
+そうと分かれば、[r]なあ、こっちに来てくれよ！
+[k]
+
+＠レオン
+秘宝を見れば、[r]クロードの怒りも吹っ飛ぶってもんさ。
+[k]
+
+？1：……嫌な予感しかしない
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_175 1.0]
+[cueSe SE_21 21_ad1066]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[charaFadeout D 0.1]
+
+[sceneSet R 280400 1]
+
+[charaSet K 1098348700 1 オルガマリー]
+[charaDepth K 21]
+
+[scene 280400]
+[charaScale R 1.3]
+[charaFadein R 0.1 100,-350]
+[wt 1.5]
+[charaMove R 190,-350 6.0]
+[cueSeStop 21_ad1066 1.2]
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+[wt 0.1]
+[bgm BGM_MAP_123 0.1]
+
+[wt 2.4]
+[charaScale Q 1.3]
+[charaFadein Q 0.6 -100,-350]
+[charaMove Q -190,-350 6.0]
+[wt 0.8]
+[charaFadeout R 0]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0 1]
+[wt 2.5]
+[charaFadeout Q 0.6]
+[wt 1.0]
+
+＠レオン
+どうだ、すごい光景だろう？
+[k]
+
+[branchQuestClear lblClear01b 05000000]
+
+[label lblClear01a]
+[charaFadeout D 0.1]
+[wt 0.1]
+[branch lblConf01]
+
+[label lblClear01b]
+[messageOff]
+[charaScale Q 1.3]
+[charaFadein Q 0.6 -150,-320]
+[wt 1.5]
+[charaFadeout D 0.1]
+
+？1：まさか……
+？2：大統領式ゴールドラッシュが正しかったなんて……
+
+？！
+
+[charaScale K 1.2]
+[charaTalk K]
+[charaFace K 13]
+[charaPut K -100,0]
+[charaFadeTime K 0.4 0.7]
+[wt 2.0]
+[charaFadeout Q 0.4]
+[charaFadeout K 0.4]
+[wt 0.4]
+
+[label lblConf01]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠クロード
+たしかに……[r]もの凄い規模の金脈だ。
+[k]
+
+＠クロード
+……これが本物だとしたら、[r]たしかに秘宝と言っていいだろうね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠レオン
+なんだよ、疑ってるのか？[r]どう見たってこりゃあ金だぜ。
+[k]
+
+＠レオン
+オレは古文書を読んだ時[r]すぐにピンと来た[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_123 2.5]
+
+[se ad298]
+[seVolume ad298 0 0.3]
+[wt 0.1]
+[shake 0.04 2 2 0.3]
+[wt 0.3]
+[shake 0.02 1 1 0]
+[wt 0.6]
+[charaFace D 4]
+[wt 1.2]
+
+[seStop ad298 2.5]
+
+[subCameraOn 1]
+[charaLayer Q sub #A]
+[charaLayer U sub #A]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+[charaScale Q 1.3]
+[charaFadein Q 0 30,-320]
+[charaScale U 1.0]
+[charaPut U 1]
+[charaEffect U bit_talk_rubble02]
+[charaMove Q -30,-320 5.0]
+[subRenderFadein #A 0.6 0,0]
+[se ad619]
+[seVolume ad619 0 0]
+[subRenderShake #A 0.03 3 3 4.5]
+[seVolume ad619 0.6 1.0]
+[wt 1.0]
+[shakeStop]
+[se ad640]
+[wt 1.5]
+[charaFace D 4]
+[wt 1.5]
+[seStop ad619 2.5]
+[subRenderFadeout #A 0.6]
+[wt 0.6]
+[charaFadeout Q 0]
+[charaEffectDestroy U bit_talk_rubble02]
+[wt 0.4]
+[charaLayer Q normal]
+[charaLayer U normal]
+[subCameraOff]
+
+＠レオン
+な、なんだ……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth E 1]
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠寡黙な業者
+[line 3]レオン様……報告です。
+[k]
+
+[bgm BGM_EVENT_90 0.1]
+
+＠寡黙な業者
+岩盤が崩落して……足場が崩れてしまいました。
+[k]
+
+＠寡黙な業者
+復旧のため、さらに追加での依頼料……[r]……１億ユーロが必要となります……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠クロード
+そんな馬鹿げた計算があるか！[r]どう考えたって不当請求じゃ[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠レオン
+よし、出そう！
+[k]
+
+？1：えええええ！？
+？2：そんな簡単に決めていいんですか？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠クロード
+[%1]さんの言うとおりだよ！[r]兄さん、どう考えたっておかしいだろ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[subCameraOn 1]
+[charaLayer D sub #A]
+[charaLayer U sub #A]
+[charaLayer Q sub #A]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+[charaDepth D 12]
+[charaScale Q 1.0]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0 1]
+[charaFadein Q 0 0,-200]
+[subRenderFadein #A 0.1 0,0]
+
+＠レオン
+クロード、お前はわかってねえなー。
+[k]
+
+[se ad977]
+[seVolume ad977 0 0.5]
+[subCameraMoveEase #A 0,-45 0.4 easeOutCubic 1.15]
+[charaFace D 6]
+
+＠レオン
+ここぞって時に金をつぎ込んでこそ[r]どでかい利益を得られるんだ！
+[k]
+
+＠レオン
+商機を逸しては何も得ることはできない！[r]デュボワは更なる富を得ることになるんだ！
+[k]
+
+[charaFace D 11]
+
+＠レオン
+大丈夫！　大丈夫だ！　大丈夫だって！[r]おふくろも家も、なーんもかんもオレが支えてやる！
+[k]
+
+[se ad7]
+[subCameraMoveEase #A 0,-90 0.4 easeOutCubic 1.3]
+[charaFace D 1]
+
+＠レオン
+金を得るために金を使え！[r]そう、惜しみなく！
+[k]
+
+[charaFace D 2]
+
+＠レオン
+オレが全ての責任を持つ！[r]だから、やれ！
+[k]
+
+[charaFace D 3]
+＠レオン
+古文書の詩にも書いてあっただろう？[r]『[#其:そ]に至る道は[#徒:いたずら]に[#投:とう]ずることなく質素に[#努:つと]めるべし』
+[k]
+
+＠レオン
+[#徒:いたずら]に[#投:とう]ずることなく[line 3]ってのは[r]回り道をするなってことだろう？
+[k]
+
+[se ade211]
+[charaPut U 0,150]
+[charaEffect U bit_talk_41_fs]
+[subCameraMoveEase #A 0,-140 0.4 easeOutCubic 1.45]
+[charaFace D 5]
+
+＠レオン
+だから正面突破だ！[r]最短ルートで突貫突貫突貫だー！！
+[k]
+
+[messageOff]
+[charaTalk D,B]
+[charaFace B 9]
+[charaFadein B 0 1]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[charaFadeout D 0]
+[charaFadeout Q 0]
+[charaEffectDestroy U bit_talk_41_fs]
+
+＠モレー
+あの……[r]盛り上がっているところ、た、大変恐縮ですが……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaLayer D normal]
+[charaLayer U normal]
+[charaLayer Q normal]
+[subCameraOff]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠レオン
+ん？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モレー
+レオン様……古文書にありました、[r]質素に努めるべし、の部分はどうお考えで？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠レオン
+ああ、それは[r]文字通り無駄金使うなってことだ！
+[k]
+
+＠レオン
+だから直感的判断によって瞬時に[r]オレは１億ユーロを支払って穴を掘る！
+[k]
+
+[charaFace D 3]
+
+＠レオン
+な？[r]まったく無駄のない質素っぷりだろう！
+[k]
+
+？1：どこからツッコめばいいのか……
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+ツッコむ必要なんてないってば。[r]そもそも清貧の概念がないっぽいし？
+[k]
+
+[charaFace A 15]
+
+＠モレーちゃん
+気に入ったブランドとかあったら[r]棚ごと買っちゃうタイプでしょ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠レオン
+んなバカな金の使い方はしない。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_90 1.0]
+[charaTalk off]
+[cueSe SE_21 21_ade582 0.7]
+[wt 0.2]
+[charaPut H -132,40]
+[charaMoveEase H -162,50 1.4 easeOutSine]
+[charaFadeTime H 1.0 0.6]
+[charaEffect D bit_talk_moya_aura]
+[wt 2.5]
+[charaFace D 3]
+[bgm BGM_MAP_128 0.1]
+
+＠レオン
+そういう時は店ごと買うもんだぜ、お嬢ちゃん！[r]ハーッハッハッハッハ！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut D 2500,2500]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クロード
+レオン兄さんも……やはり……。
+[k]
+
+＠クロード
+これではデュボワ家の長男として[r]あまりにも……。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaDepth C 3]
+[charaDepth Q 10]
+[charaDepth E 12]
+[charaScale Q 1.4]
+[charaFace E 3]
+[charaFadein E 0.4 30,0]
+[charaFace F 0]
+[charaFadeinFSR F 0.4 380,-15]
+[charaFace G 0]
+[charaFadeinFSL G 0.4 -320,-15]
+[charaFadein Q 0.4 100,-340]
+[wt 0.4]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[charaScale R 1.2]
+[charaFadein R 0 -100,-270]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[charaDepth H 18]
+[se ad42]
+[charaFadeout E 0.7]
+[charaFadein H 0.7 -15,25]
+[wt 0.2]
+[charaFadeout F 0.7]
+[charaScale S 0.95]
+[charaFadeinFSR S 0.7 380,-15]
+[wt 0.2]
+[charaFadeout G 0.7]
+[charaScale T 0.95]
+[charaFadeinFSL T 0.7 -340,-15]
+[wt 0.6]
+[se ad463]
+[seVolume ad463 0 0.5]
+[cueSe SE_26 26_ade1369]
+[cueSeVolume 26_ade1369 0 0.6]
+[wt 1.6]
+
+[charaTalk on]
+[charaTalk H]
+
+＠H：寡黙な業者
+アア……マッタク……嘆カワシイ姿ダ……。
+[k]
+
+＠H：寡黙な業者
+故ニ……コノ愚カナ魂ヲ……モライ受ケル……。
+[k]
+
+[messageOff]
+[charaTalk H,A]
+[charaFadeout H 0.4]
+[charaFadeout S 0.4]
+[charaFadeout T 0.4]
+[charaFadeout Q 0.4]
+[wt 0.5]
+
+＠モレーちゃん
+っと、やっぱり姿を現したね。
+[k]
+
+？1：モレーず、お願い！
+？！
+
+[charaFace A 5]
+
+＠モレーちゃん
+ウィ！
+[k]
+
+[charaFace A 17]
+
+＠モレーちゃん
+……うげ、モレーずに慣れ始めてる自分が怖い。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaPut B -200,0]
+[charaMoveEase A 200,0 0.7 easeOutSine]
+[charaMoveEase B 0,0 0.7 easeOutSine]
+[charaMoveEase R 100,-270 0.7 easeOutSine]
+[charaFadeout A 0.4]
+[wt 0.3]
+[charaFace B 7]
+[charaFadeTime B 0.4 1.0]
+[wt 0.4]
+
+＠モレー
+恐れることはありません！[r]身も心も委ね、モレーず戦闘開始です！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_MAP_128 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+

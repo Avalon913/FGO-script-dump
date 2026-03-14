@@ -1,0 +1,254 @@
+
+＄94-15-44-05-1-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 98104300 1 亡霊]
+[charaSet B 25010001 1 モレーちゃん]
+[charaSet C 1098353300 1 レオン]
+[charaSet D 1066000 1 モレー]
+[charaSet E 6012000 1 クロード]
+[charaSet F 1098348700 1 オルガマリー]
+
+[sceneSet G 277700 1]
+
+[imageSet R cut788_doc_leo01 1]
+[imageSet U cut788_doc_leo02 1]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaDepth C 3]
+[charaDepth E 4]
+[charaDepth G 5]
+[charaDepth F 6]
+[charaDepth R 7]
+[charaDepth U 8]
+
+[subCameraOn 1]
+[charaLayer G sub #A]
+[charaLayer F sub #A]
+[subCameraFilter #A maskEdge cut359_mask16 4 255,255,255,255 0]
+
+[charaScale G 1.4]
+[charaScale F 1.2]
+[charaFace F 20]
+[charaFadeinFSR F 0.1 -25,275]
+[charaFadeinFSR G 0.1 -280,-20]
+
+[scene 280400]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_71 0.1]
+
+＠亡霊
+オオ……ナントイウ愚カサ……財ナド投ジズ……[r]兄弟ダケデ掘レバ……秘宝ヲ得ラレタモノヲ……
+[k]
+
+
+＠亡霊
+故ニ……レオン……貴様モ……秘宝ヲ得ルニ……[#適:カナ]ワズ……。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFadein R 0.2 0,-200]
+[wt 0.5]
+
+[se ad900]
+[charaPut U 2000,2500]
+[charaEffectEdgeBlur U 4B0082 483D8B 7 4.0]
+[effect bit_talk_06p]
+[wt 0.2]
+[charaPut U 0,-200]
+[wt 1.1]
+
+[seStop ad900 1.5]
+[charaEffectEdgeBlurStop U]
+[wt 1.0]
+[se ade409]
+[effectStop bit_talk_06p]
+[wt 0.1]
+
+[charaFadein U 0.2 0,-200]
+[wt 0.1]
+[charaFadeout R 0.1]
+[wt 1.5]
+[charaFadeout U 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠亡霊
+コレガ長兄トハ……当代ニテ[#御家:オイエ]ハ……断絶……。
+[k]
+[messageOff]
+
+[bgmStop BGM_EVENT_71 2.0]
+
+[se ad42]
+[charaSpecialEffect A enemyErasure 1 1.5]
+[wt 0.2]
+[charaEffect A bit_talk_atomization_gra 200,0]
+[charaEffect A bit_talk_atomization_gra -200,0]
+[wait charaSpecialEffect A]
+[wt 1.8]
+
+[se ade410]
+[distortionstart 0.0 0.5 0.5 0.0 0.0 100.0]
+[distortionstart 1.5 0.5 0.5 0.8 0.2 200.0]
+
+[scene 107400 2.0]
+[wt 1.05]
+[distortionstart 12.0 0.5 0.5 3.14 4.0 5.0]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+
+＠モレーちゃん
+やれやれ、実態はこんなものか。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 0,-30]
+[charaMove C 1 0.6]
+[charaShake C 0.03 2 2 0.6]
+[wt 0.3]
+
+[se ad984]
+[seVolume ad984 0 0.8]
+[wt 1.1]
+
+[bgm BGM_SHINYAMA_1 0.1]
+
+＠レオン
+う……うぅ……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠モレー
+レオン様、ご無事ですか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠レオン
+……あ、ああ……。
+[k]
+
+[charaFace C 12]
+＠レオン
+それよりも、オレは……なんで……？
+[k]
+
+[charaFaceFade C 11 0.2]
+＠レオン
+そ、そうだ……さっきまで、変な夢をみていた……。[r]ハハ……ものすげぇ金脈を見つける夢だ……。
+[k]
+
+＠レオン
+だけど聞いてくれ、笑っちまうんだ……[r]オレは……とんでもないバカなやり方で……
+[k]
+
+[charaFaceFade C 4 0.2]
+＠レオン
+本当に、すまねえな……クロード……
+[k]
+
+[charaFaceFade C 14 0.2]
+＠レオン
+……こんな、不甲斐ない兄貴で……。
+[k]
+
+＠レオン
+く、ぅ…………。
+[k]
+
+[messageOff]
+[charaMove C 0,-40 0.5]
+[charaFadeout C 0.5]
+[wt 0.5]
+[se ad144]
+[wt 1.4]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠クロード
+兄さん……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 25]
+[charaFadein B 0.1 1]
+＠モレーちゃん
+呪いが解けて、[r]酷使していた心身に反動がきたみたいだね。
+[k]
+
+[charaFace B 0]
+
+＠モレーちゃん
+ただ気絶しただけ。[r]とりあえず長男も山荘に運ぼう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠クロード
+はい……。
+[k]
+
+[charaCrossFade E 1098354440 0 0.4]
+
+＠クロード
+今後のことも考えなくてはいけませんからね。
+[k]
+
+[messageOff]
+[wait charaCrossFade E]
+[wt 1.0]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_SHINYAMA_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
