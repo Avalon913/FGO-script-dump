@@ -1,0 +1,725 @@
+
+
+＄94-15-44-07-1-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[branchQuestClear lblClearEX 05000000]
+[flag _MSH 1]
+[charaSet A 1098257810 1 マシュ]
+[branch lblConfEX]
+[label lblClearEX]
+[flag _MSH 2]
+[charaSet A 1098346800 1 マシュ]
+[branch lblConfEX]
+[label lblConfEX]
+[charaSet B 1098257310 1 ダ・ヴィンチ]
+[charaSet C 1098255110 1 ゴルドルフ]
+[charaSet D 1098346900 1 オルガマリー]
+[charaSet E 25010001 1 モレーちゃん]
+[charaSet F 25010001 1 モレーちゃん（演出用）]
+[charaSet G 1066000 1 モレー]
+
+[sceneSet O 279903 1]
+
+[charaSet T 98115000 1 通信エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaDepth C 3]
+[charaDepth D 4]
+[charaDepth T 5]
+[charaDepth E 6]
+[charaDepth G 7]
+
+[scene 279903]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.1]
+
+[charaPut T 1]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+[bgm BGM_GOGH_1 0.1]
+
+＠マシュ
+開祖の霊なる存在の言葉通り、[r]先ほど雪山の頂上で夫人の反応を観測しました。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+あの様子からして、悪意というより[r]妄執のままの行動と見ていいんじゃないかな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestClear lblClear01a 05000000]
+
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+妄執か……。
+[k]
+
+＠ゴルドルフ
+では、子孫と交わした約束を[#違:たが]えたりはしない、[r]ということだな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch lblConf01]
+
+
+[label lblClear01a]
+
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+つまり、子孫たちとの約束を破るような真似はしない、[r]ということね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[label lblConf01]
+
+[charaPut T 2000,2000]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+＠モレーちゃん
+さてと、それじゃ夫人の無事も確認できたところで[r]今度は共犯者さんのお話を聞かないとねー。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_GOGH_1 2.0]
+
+[charaTalk G]
+[charaFace G 18]
+[charaFadein G 0.1 1]
+
+＠モレー
+…………。
+[k]
+
+？1：モレー、今度こそ
+？2：知っていることを話してくれない[&か:かな]？
+？！
+
+[charaFace G 20]
+
+＠モレー
+……はい。
+[k]
+
+[bgm BGM_WHITE_1 0.1]
+
+
+＠モレー
+改めて、[#此度:こたび]の一連の騒動において[r]皆さんにご迷惑をおかけしたことをお詫びします……。
+[k]
+
+＠モレー
+そもそも、どうしてこのようなことになったのか。[r]そ、それは一ヶ月前のことです……。
+[k]
+
+[charaFace G 16]
+
+＠モレー
+ご存知の通り、夫人は次期当主を[r]誰にすべきかで悩んで、お、おられました。
+[k]
+
+＠モレー
+そして、答えを見いだすため、本邸から離れ[r]この山荘にひとり籠もっていたところ……
+[k]
+
+[charaFace G 4]
+
+＠モレー
+気分転換にと雪山を散策した折に、[r]せ、“聖杯”を見つけたのです。
+[k]
+
+＠モレー
+そして[#私:わたくし]が召喚され、同時に歴史に埋もれていた[r]デュボワ家の秘宝探索の儀式を、ふ、復活させたのです。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[branchQuestClear lblClear02a 05000000]
+
+
+[charaPut T 1]
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+そこで貴様が手を貸しながら狂言誘拐を画策し、[r]自分の子供たちに秘宝の探索を課したわけだ。
+[k]
+
+[charaFace C 9]
+
+＠ゴルドルフ
+たしかに可能性としては考えられたが……[r]夫人が聖杯を入手していた、か。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch lblConf02]
+
+
+[label lblClear02a]
+
+
+[charaPut T 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+そうして貴方の協力のもとで狂言誘拐を画策し、[r]自分の子供たちに秘宝探索を課そうと決めた……。
+[k]
+
+＠オルガマリー
+可能性のひとつとしては考えてはいたけれど、[r]夫人が聖杯を手にしていたとはね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[label lblConf02]
+
+[charaPut T 2000,2000]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠モレーちゃん
+でもこれで、あたしたちとしても[r]夫人を救出する明確な理由ができたわけだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+けど、なぜそうまでしてキミは[line 3][r]ジャック・ド・モレーは、夫人に協力をしたんだい？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut T 2000,2000]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠モレー
+それは……生前、[#私:わたくし]がテンプル騎士団の総長として、[r]莫大な財産を管理していたことと、
+[k]
+
+＠モレー
+その財ゆえに破滅したことに関係がある、と……[r]そう自分では解釈しています。
+[k]
+
+？1：ジャック・ド・モレーの最期って[line 3]
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk A]
+[branch lblMsh01 _MSH 2]
+[charaFace A 4]
+[branch lblMshCon01]
+[label lblMsh01]
+[charaFace A 5]
+[label lblMshCon01]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……はい、当時のフランス王フィリップ４世から[r]一方的に異端の疑いをかけられ、火刑に処されました。
+[k]
+
+＠マシュ
+証拠不十分のまま、罪を着せられたことから、[r]騎士団の莫大な資産を欲した王の謀略であった、とも。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut T 2000,2000]
+[charaTalk G]
+[charaFace G 20]
+[charaFadein G 0.1 1]
+
+＠モレー
+………………。
+[k]
+
+[charaFace G 13]
+
+＠モレー
+……そして、わ、[#私:わたくし]は先代から受け継いだものを[r]次代へと引き渡すことなく最期を迎えました。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠モレーちゃん
+……やれやれ。[r]その後悔があるがゆえに[line 3]
+[k]
+
+＠モレーちゃん
+次代への託し方に悩む夫人の助けになりたい、と[r]……そう思っちゃったわけ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠モレー
+はい……。
+[k]
+
+
+＠モレー
+先刻の夫人は取り憑かれている状態だったからこそ[r]あのような激高ぶりを、み、みせていましたが……
+[k]
+
+[charaFace G 10]
+
+＠モレー
+平時においてはご子息たちを案じ、[r]そして家の将来をとても考えておられたのです。
+[k]
+
+＠モレー
+だ、だからこそ追い詰められ……[r]ついには狂言誘拐を計画してしまいました。
+[k]
+
+[charaFace G 9]
+
+＠モレー
+本当ならば、[#私:わたくし]が止めるべきだったのでしょうが、[r]彼女は、せ、聖杯を手にしていた。
+[k]
+
+[charaFace G 21]
+
+＠モレー
+カルデアの皆さんがやってくるまでは、と[r]夫人の要望を聞いていくうちに、このような状況に……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠モレーちゃん
+……事情はわかった。
+[k]
+
+＠モレーちゃん
+予想の[#範疇:はんちゅう]だったし、[r]今は、あたしもなんか変な部分で共感しちゃってる。
+[k]
+
+[charaFace E 23]
+
+＠モレーちゃん
+アンタがあたしの別霊基だから……？[r]まあ……それだけじゃないのかも。
+[k]
+
+[charaFace E 1]
+
+＠モレーちゃん
+夫人を助けたいっていう気持ちが本当なら今は[r]なんとかしてあのご先祖様の霊を納得させないとね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 17]
+[charaFadein G 0.1 1]
+
+＠モレー
+そう言っていただけるとは……。
+[k]
+
+[charaFace G 1]
+
+＠モレー
+この束の間の、我が妹よ……心より感謝いたします。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠モレーちゃん
+ハハッ、やーれやれ、[r]不器用な兄をもつとホント苦労しますわー。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace E 27]
+
+＠モレーちゃん
+っ[messageShake 0.03 2 2 0.8]て、いま一瞬だけ受け入れそうになったけど[r]妹じゃないからー！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_WHITE_1 1.5]
+
+[branchQuestClear lblClear03a 05000000]
+
+
+[charaPut T 1]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+わかったわかった。それよりも時間がないぞ。[wt 0.9][charaFace C 16][r]最後の試練についてはどう対応するつもりかね？
+[k]
+
+[branch lblConf03]
+
+
+[label lblClear03a]
+
+
+[charaPut T 1]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+はいそのへんで。時間がないわ。[wt 0.8][charaFace D 0][r]最後の試練についてはどう対応するつもりなの？
+[k]
+
+[label lblConf03]
+
+？1：最後の試練はたしか『覚悟』だけど……
+？！
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[bgm BGM_EVENT_141 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠モレー
+今回はご兄弟全員が、お、同じ試練を課されています。
+[k]
+
+＠モレー
+今も、レオン様にアラン様、そしてロベール様は[r]応接室でいかにして臨むか話し合われていますが……。
+[k]
+
+[charaFace G 16]
+
+＠モレー
+し、しかしクロード様は[line 3]
+[k]
+
+？1：部屋に籠もったまま出てこない
+？2：やっぱり試練を受けない気かな？
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[branchQuestClear lblClear04a 05000000]
+
+
+[charaPut T 1]
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+いや、無理に受けさせる必要はないだろう？[r]誰かひとりでも合格すればよかったはずだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch lblConf04]
+
+
+[label lblClear04a]
+
+
+[charaPut T 1]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+無理に受けさせる必要はないでしょう？[r]誰かひとりだけでも合格すればいいわけだし。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[label lblConf04]
+
+[charaPut T 2000,2000]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠モレーちゃん
+それに、一度失敗を経験してる分、[r]兄貴たちのほうが成功率も高そうじゃない？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠モレー
+……いいえ、[r]クロード様になんとしてでも受けていただきます。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 1]
+
+＠モレーちゃん
+ねえ、なんでそんなに四男くんにご執心なの？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 20]
+[charaFadein G 0.1 1]
+
+＠モレー
+それは……。
+[k]
+
+[charaFace G 0]
+
+＠モレー
+ご、合理の問題です。
+[k]
+
+＠モレー
+最優たる者にこそ組織は[#率:ひき]いられるべき……。[r]ただ、それだけの単純さに[#私:わたくし]は[#固執:こしゅう]しているのでしょう。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠モレーちゃん
+じゃあなに、あの四男くんが兄弟の中で[r]ずば抜けてるって言いたいの？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠モレー
+ええ。それは[r]夫人御自身も、つ、常々言っておられたことです。
+[k]
+
+？1：たしかに[#物怖:ものお]じしないところはあるけど
+？2：どこか自信なさげな感じがする……
+？！
+
+[charaFace G 9]
+
+＠モレー
+そう……問題はクロード様が[r]ご自身の能力にブレーキをかけていること。
+[k]
+
+＠モレー
+だから夫人は、きっかけさえ与えれば、[r]己の殻を、や、破れるのではと考えたのでしょう。
+[k]
+
+＠モレー
+ですが母親の命がかかったあの状況でも、[r]変化がなかったのは……わ、[#私:わたくし]も驚きました。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+
+＠モレーちゃん
+で、アンタも結局は[r]業を煮やして武力行使、と。
+[k]
+
+[charaFace E 24]
+
+＠モレーちゃん
+まったく、夫人と同様に[r]思い詰めてどーすんだっての。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 21]
+[charaFadein G 0.1 1]
+
+＠モレー
+……ま、まことにお恥ずかしい限り。
+[k]
+
+[charaFace G 7]
+
+＠モレー
+ですが、も、もう一度だけ……もう一度だけ、[r][#私:わたくし]にチャンスをいただけないでしょうか？
+[k]
+
+？1：今度は抜刀NGでお願いします
+？！
+
+[charaFace G 4]
+
+＠モレー
+はい。[r]も、もう二度と、あのような過ちは犯しません。
+[k]
+
+[charaFace G 16]
+
+＠モレー
+クロード様と二人きりにしていただくことでしか、[r]お話しできないことがありますゆえ……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠モレーちゃん
+……そこまで言うんなら、わかったってば。
+[k]
+
+[charaFace E 12]
+
+＠モレーちゃん
+そんじゃ、同じくやらかした兄貴連中は[r]あたしらのほうでどうにかしておきますかねっと。
+[k]
+
+[charaFace E 14]
+
+＠モレーちゃん
+まともな状態なら、[r]四男くんよりは聞き分けがよさそうだしさ。
+[k]
+
+？1：そうしよう。じゃあ二手に分かれて
+？2：明日のために行動をしよう！
+？！
+
+[messageOff]
+[charaTalk E,F,G]
+[charaDepth E 2]
+[charaDepth O 3]
+[charaDepth F 4]
+[charaDepth G 5]
+
+[charaScale F 1.2]
+[charaScale G 1.2]
+[charaScale O 1.2]
+
+[charaFace F 1]
+[charaFace G 4]
+[charaFadeinFSR F 0.5 235,0]
+[charaFadeinFSL G 0.5 0]
+[charaFadein O 0.5 0,-260]
+[wt 0.5]
+
+[charaFadeout E 0.1]
+[wt 0.4]
+
+[charaMoveReturnFSR F 235,-7 0.5]
+[wt 0.05]
+[charaMoveReturnFSL G -256,-7 0.5]
+[wt 1.8]
+
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_141 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
