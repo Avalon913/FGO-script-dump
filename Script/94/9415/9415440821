@@ -1,0 +1,948 @@
+
+＄94-15-44-08-2-1
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 25010001 1 モレーちゃん]
+[charaSet B 1066000 1 モレー]
+[charaSet C 1098353510 1 金の亡者]
+[charaSet D 1098353400 1 デュボワ夫人]
+[charaSet E 6012000 1 クロード]
+[charaSet F 1098353300 1 レオン]
+[charaSet G 6013002 1 アラン]
+[charaSet H 6007000 1 ロベール]
+
+[charaSet I 1098353300 1 レオン]
+[charaSet J 1098353400 1 デュボワ]
+[charaSet K 6013002 1 アラン]
+[charaSet L 6007000 1 ロベール]
+
+[sceneSet M 280008 1]
+[sceneSet N 280008 1]
+[sceneSet O 280008 1]
+[sceneSet P 279903 1]
+[sceneSet Q 279903 1]
+
+[charaSet R 98115000 1 エフェクト用]
+[charaSet S 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth M 1]
+[charaDepth N 2]
+[charaDepth A 3]
+[charaDepth O 4]
+[charaDepth P 5]
+[charaDepth B 6]
+[charaDepth C 7]
+[charaDepth E 8]
+[charaDepth F 9]
+[charaDepth I 10]
+[charaDepth G 11]
+[charaDepth K 12]
+[charaDepth H 13]
+[charaDepth L 14]
+[charaDepth Q 15]
+[charaDepth D 16]
+[charaDepth J 17]
+[charaDepth R 18]
+[charaDepth S 19]
+
+[subCameraOn 2]
+[charaLayer M sub #A]
+[charaLayer C sub #A]
+[charaLayer R sub #A]
+[charaLayer S sub #A]
+[charaLayer N sub #B]
+[charaLayer I sub #B]
+[charaLayer J sub #B]
+
+[subCameraFilter #A normal]
+[subCameraFilter #B maskEdge cut359_mask08 4 255,255,255,255 0]
+
+[charaScale M 1.4]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaFadein M 0.1 0,-400]
+
+[charaScale N 1.4]
+[charaScale I 1.2]
+[charaScale J 1.15]
+[charaFace I 4]
+[charaFace J 7]
+[charaFadein I 0.1 100,230]
+[charaFadein J 0.1 -105,165]
+[charaFadein N 0.1 0,0]
+
+[scene 280008]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_64 0.1]
+
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+[#っしゃー:A　l　l　e　z]！[r]モレーず、大・勝・利ぃ！
+[k]
+
+[charaFace A 27]
+
+＠モレーちゃん
+……って、やだやだなんだこれ！[r]モレーずがっ、身体にっ、馴染んじゃってるぅー！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 25]
+[charaFadein B 0.1 1]
+
+＠モレー
+良いではありませんか。あ、貴方の言った通り、[r]まさに[#我々:モレーず]がいれば向かうところ敵無しです！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 20]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+そこまでは言ってねぇぇー！[r]もうこれ以上、浸透させないでよー！！
+[k]
+
+[messageOff]
+[charaTalk A,C]
+[subRenderFadein #A 0.5 0,0]
+[wt 0.5]
+[cueSe SE_23 23_ade923 0.5 0.6]
+[charaPut R 2500,2500]
+[charaEffect R bit_talk_36_sl02]
+[wt 0.4]
+[charaPut R 1]
+[wt 0.2]
+[charaFadeout A 0.1]
+[wt 1.5]
+
+＠金の亡者
+あぁぁ…………そん、な……[r][#無尽:むじん]の財が我が身より[#零:こぼ]れていく……。
+[k]
+
+[messageOff]
+[se ad732]
+[charaPut S -25,0]
+[charaEffect S bit_talk_glowing_sphere_g]
+[wt 2.0]
+[cueSe SE_24 24_ad1414 0 0.4]
+[se ad598]
+[charaMoveEase S -25,-400 1.2 easeOutSine]
+[wt 1.5]
+[cueSeVolume 23_ade923 1.0 0]
+[subRenderFadeout #A 0.5]
+[wt 1.0]
+[charaEffectDestroy S bit_talk_glowing_sphere_g]
+
+？1：ヒュージゴーストが何か落とした……
+？2：あれは羊皮紙？　それとも昔の契約書？
+？！
+
+[charaTalk A]
+[charaFace A 25]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+う～ん、見たところ土地の権利とか融資の条件とか、[r]いろんな小難しい契約が記された[#束:たば]っぽいね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠モレー
+ふ、夫人の中にあった後継問題に関する想いが[r]ゴーストに反映されていたのかもしれませんね。
+[k]
+
+＠モレー
+それらを手放したということは……。
+[k]
+
+[messageOff]
+[charaTalk B,C]
+[cueSeVolume 23_ade923 0.5 0.6]
+[subRenderFadein #A 0.5 0,0]
+[wt 0.7]
+[charaFadeout B 0.1]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+[charaEffect D bit_talk_shadow_aura03 0,-10]
+
+＠金の亡者
+ああ……私の手には……もう、なにも……ない……。
+[k]
+
+＠金の亡者
+でも……これで……やっと……終わ、れ……る…………。
+[k]
+
+[bgmStop BGM_MAP_64 2.0]
+
+[messageOff]
+[wt 0.3]
+[cueSeStop 23_ade923 0.5]
+[se ad42]
+[charaSpecialEffect C enemyErasure 1 2.0]
+[wt 0.2]
+[charaEffectStop R bit_talk_36_sl02]
+[charaEffect C bit_talk_atomization_gra 200,0]
+[charaEffect C bit_talk_atomization_gra -200,0]
+[wait charaSpecialEffect C]
+[wt 1.5]
+
+[charaTalk D]
+[subRenderFadeout #A 0.5]
+[wt 0.8]
+[cueSe SE_22 22_ad1187 0 0.7]
+[wt 0.5]
+[cueSeStop 22_ad1187 2.0]
+[charaEffectStop D bit_talk_shadow_aura03]
+[wt 2.0]
+
+＠デュボワ夫人
+…………。
+[k]
+
+[messageOff]
+[charaMove D 0,-50 0.5]
+[charaFadeout D 0.4]
+[wt 0.5]
+
+[se ad775]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠クロード
+お母様！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[blur lens 0.5 2 2]
+[charaTalk I]
+[subRenderFadein #B 0.4 0,-300]
+[wt 0.7]
+
+[bgm BGM_EVENT_159 0.1]
+
+＠I：レオン
+大丈夫だ、地面に倒れ込む前に抱きかかえられたぜ。[r]ったく、心配させやがって。
+[k]
+
+[messageOff]
+[blurOff lens 0.4]
+[subRenderFadeout #B 0.4]
+[wt 1.0]
+
+[cueSe Battle bas2]
+[fowardEffect bit_talk_20_remake -25,0]
+[wt 1.8]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.3 30,0]
+[charaMove A 0,0 0.5]
+[wt 0.8]
+[fowardEffectStop bit_talk_20_remake]
+[wt 1.2]
+[charaFace A 8]
+
+＠モレーちゃん
+よーし、聖杯も確かに回収！[r]これにて任務完了だね！
+[k]
+
+？1：お疲れ様、モレーちゃん！
+？2：それに、モレーもありがとう！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+
+＠モレー
+と、とんでもございません……[r][#私:わたくし]はご迷惑をおかけしてばかりで、か、過分なお言葉かと。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+マ・ジ・でそれな！
+[k]
+
+＠モレーちゃん
+コレに懲りたら慣れないことすんなっての！[r]わかった？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠モレー
+はい……今回ばかりは猛省です。
+[k]
+
+[charaFace B 0]
+
+＠モレー
+そして同時に……。
+[k]
+
+＠モレー
+[#私:わたくし]は貴方のことを見直しました、[r]もう一人のモレー。
+[k]
+
+＠モレー
+少なくとも、いまここにいる貴方は[r]堕落の魔女などでは決してなかった。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+ふっふふふー。[r]もっともーっと感謝してよねー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠モレー
+う……。[r]そして……いや……。
+[k]
+
+＠モレー
+おそらくこれ以上は慢心へと繋がりそうなので[r]貴方のためを思い、あ、あえてやめておきましょう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠モレーちゃん
+何があえてなの！？　ちぇー。
+[k]
+
+[messageOff]
+[charaScale O 1.3]
+[charaScale B 1.3]
+[charaTalk B,A]
+[charaFace B 4]
+[charaFadein B 0.5 -50,20]
+[charaFadein O 0.5 -50,-300]
+[charaMoveEase B 0,20 0.7 easeOutSine]
+[charaMoveEase O 0,-300 0.7 easeOutSine]
+[wt 1.0]
+[charaFadeout A 0.1]
+
+＠モレー
+……そして、[%1]様。[r]あ、改めて[#此度:こたび]の非礼をお詫びします。
+[k]
+
+＠モレー
+もし未来にカルデアの戦列に居並ぶ[r]という神の[#赦:ゆる]しがあらば[line 3]
+[k]
+
+＠モレー
+か、必ずや[#此度:こたび]の御恩に報い、[r]返すべきものをお返ししましょう。
+[k]
+
+[charaFace B 1]
+
+＠モレー
+……願わくば、[r]次は不義不正を暴く側へと回りたいものです。
+[k]
+
+？1：待っている[&よ:ね]
+？2：そのときは二人とも今よりもっと仲良くね
+？！
+
+[charaFace B 2]
+
+＠モレー
+ふふっ[line 3]ええ。
+[k]
+
+＠モレー
+再び[#轡:くつわ]を並べ、モレーずとして剣を振るうその[#暁:あかつき]には[r]より一層の連携ぶりをご覧にいれましょう。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_159 2.0]
+[wait fade]
+
+[charaScale B 1.0]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaLayer M normal]
+[charaLayer C normal]
+[charaLayer R normal]
+[charaLayer S normal]
+[charaLayer N normal]
+[charaLayer I normal]
+[charaLayer J normal]
+[subCameraOff]
+
+[scene 279903]
+[pictureFrameTop cut063_cinema]
+[wt 1.0]
+
+[subCameraOn 2]
+[charaLayer P sub #A]
+[charaLayer I sub #A]
+[charaLayer K sub #A]
+[charaLayer L sub #A]
+[charaLayer Q sub #B]
+[charaLayer J sub #B]
+[charaLayer R sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask08 4 255,255,255,255 0]
+[subCameraFilter #B normal]
+
+[charaScale P 1.2]
+[charaScale I 1.3]
+[charaScale K 1.3]
+[charaScale L 1.3]
+[charaFace I 15]
+[charaFace K 10]
+[charaFace L 10]
+[charaFadein I 0.1 50,200]
+[charaFadeinFSR K 0.1 350,200]
+[charaFadeinFSL L 0.1 -250,200]
+[charaFadein P 0.1 50,0]
+
+[charaScale Q 1.3]
+[charaScale J 1.2]
+[charaFace J 0]
+[charaPut J 0,-70]
+[charaFadeTime J 0.1 0.6]
+[charaFadein Q 0.1 0,-330]
+[charaPut R 0,-230]
+[charaEffect R bit_talk_06_blue]
+
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.3]
+
+[bgm BGM_EVENT_116 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠デュボワ夫人
+そう……ですか。
+[k]
+
+＠デュボワ夫人
+[%1]様は[r]お帰りになったのですか。
+[k]
+
+＠デュボワ夫人
+山荘に帰還してから間もないというのに、[r]ずいぶんと足早なのですね……。
+[k]
+
+[charaFace D 7]
+
+＠デュボワ夫人
+私がかけてしまったご迷惑の欠片ほども[r][#償:つぐな]いができなかったことが実に残念です。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠モレー
+多忙な御方ですので、[r]こればかりは致し方ありません。
+[k]
+
+＠モレー
+それに、時間がないのは我々も同じこと。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_116 3.0]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 0,-50]
+
+＠デュボワ夫人
+そう、でしたね……。
+[k]
+
+[charaFaceFade D 1 0.15]
+
+＠デュボワ夫人
+それではモレー。[r]執事として最後の仕事をお願いできるかしら。
+[k]
+
+[charaFaceFade D 10 0.15]
+
+＠デュボワ夫人
+あの子たちをここへ[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+[wt 0.7]
+[charaMoveReturn B 0,-55 0.5]
+[wt 1.0]
+
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+
+[se ade422 1.0 1.0]
+[wt 0.2]
+[se ad95 1.0 1.0]
+[cueSe SE_23 23_ade895 1.0 1.0]
+[wt 2.0]
+
+[cueSeStop 23_ade895 0.5]
+[seStop ade422 0.5]
+[seStop ad95 0.5]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 0,-50]
+[wt 0.6]
+
+[bgm BGM_EVENT_25 0.1]
+
+＠アラン
+こんなところにいたのですね、母上。[r]まだまだ休んでいないとダメではないですか。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 0,-50]
+
+＠レオン
+そうだぜ、助かったといっても奇跡的になんだ。[r]あんまり無茶すると、ポックリいっちまうぜ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 0,-50]
+
+＠ロベール
+もう、縁起でも無いことを言わないでよー。
+[k]
+
+[charaFace H 1]
+
+＠ロベール
+次期当主が決まったとはいえ、[r]まだまだ長生きしてもらわないとさ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠クロード
+…………。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_25 1.3]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠デュボワ夫人
+ええ。[r]この先の成長を見守れたら、どれだけ幸せだったか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 11]
+[charaFadein H 0.1 0,-50]
+
+＠ロベール
+……え？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 15]
+[charaFadein F 0.1 0,-50]
+
+＠レオン
+おふくろ！？[r]その身体は……ど、どういうことだよ！
+[k]
+
+[messageOff]
+[charaPut S 2500,2500]
+[charaEffect S bit_talk_06_blue]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 0,-50]
+[charaPut S 0,-200]
+[wt 0.3]
+
+[cueSe SE_22 22_ad1187 0 0.3]
+[se ad733 0.5]
+[charaFadeTime D 1.5 0.6]
+[wt 0.5]
+[seStop ad733 1.8]
+[cueSeStop 22_ad1187 1.8]
+[wt 2.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut S 2500,2500]
+
+[bgm BGM_EVENT_123 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠クロード
+これで、終わりなのですね、お母様。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaPut D 0,-50]
+[charaFadeTime D 0.1 0.6]
+[charaPut S 0,-250]
+
+＠D：デュボワ夫人
+やはりクロードは、察していたのね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut S 2500,2500]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠クロード
+あれだけ長いこと御[#傍:そば]にいたのですよ？[r]気づかない方がどうかしています……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-50]
+
+＠レオン
+なあ、どういうことなんだよ、おふくろ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaPut D 0,-50]
+[charaFadeTime D 0.1 0.6]
+[charaPut S 0,-200]
+
+＠D：デュボワ夫人
+ずっと前に医者からは[r]余命いくばくもないと告げられていました。
+[k]
+
+＠D：デュボワ夫人
+そして、つい一週間前に……[r]貴方たちも足を踏み入れた、あの地下室で、
+[k]
+
+[charaFace D 6]
+
+＠D：デュボワ夫人
+私は息を引き取ったのです。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadein #A 0.3 0,-350]
+[charaMoveEase I 0,200 0.4 easeOutSine]
+[charaMoveEaseFSR K 300,200 0.4 easeOutSine]
+[charaMoveEaseFSL L -300,200 0.4 easeOutSine]
+[charaMoveEase P 0,0 0.4 easeOutSine]
+[wt 2.0]
+[subRenderFadein #B 0.5 0,0]
+[charaMove Q 0,-300 20.0]
+[charaMove J 0,-40 20.0]
+[charaMove R 0,-200 20.0]
+[wt 0.8]
+[subRenderFadeout #A 0.1]
+[charaFadeout D 0.1]
+[charaPut S 2500,2500]
+[charaFace E 6]
+[charaFadein E 0.1 0,-50]
+
+＠デュボワ夫人
+今の私は言わば亡者。
+[k]
+
+＠デュボワ夫人
+最期の瞬間は幸いにも痛みはなかったけれど、[r]その胸中には多大なる未練があった……。
+[k]
+
+＠デュボワ夫人
+けれど、そんな私に[r]主は奇跡をお与えくださいました。
+[k]
+
+[charaFace J 7]
+
+＠デュボワ夫人
+結果、貴方たちには[r]本当に迷惑をかけてしまいましたが……。
+[k]
+
+[charaFace J 10]
+
+＠デュボワ夫人
+こうして、すべてを……[r]次代へと託すことができました。
+[k]
+
+＠デュボワ夫人
+クロード、よろしく頼みますよ。
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.5]
+[wt 0.7]
+[charaMove Q 0,-300 0.1]
+[charaMove J 0,-50 0.1]
+[charaMove R 0,-200 0.1]
+[charaTalk on]
+[charaTalk E]
+
+＠クロード
+はい、お母様。[r]万事抜かりなく……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaPut D 0,-50]
+[charaFadeTime D 0.1 0.6]
+[charaPut S 0,-200]
+
+＠デュボワ夫人
+そしてレオン、アラン、ロベール……[r]どうか、どうかクロードを支えてやってください。
+[k]
+
+＠デュボワ夫人
+私がいなくなってからが、[r]本当の試練の始まりなのですから。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut S 2500,2500]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+
+＠レオン
+おい……おふくろ……[r]本当に、本当にこれでお別れなのか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaPut D 0,-50]
+[charaFadeTime D 0.1 0.6]
+[charaPut S 0,-200]
+
+＠デュボワ夫人
+ええ……もう、充分すぎるほどに。
+[k]
+
+＠デュボワ夫人
+私はこの輝かしい奇跡に[#浴:よく]しました。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut S 2500,2500]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+
+＠レオン
+ああっ……ちくしょう……[r]せめて、あと一日だけでもあれば……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 0,-50]
+
+＠アラン
+母上、死してなお我らを案じてくださり、[r]感謝に堪えません。
+[k]
+
+[charaFaceFade G 9 0.2]
+
+＠アラン
+どうか安らかな旅立ちを……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 0,-50]
+
+＠ロベール
+僕たちでクロードを支えていくよ……。[r]だから心配しないで。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace J 1]
+[subRenderFadein #B 0.6 0,0]
+[subRenderMoveScale #B 1.1 20.0]
+[subRenderMove #B 0,-20 20.0]
+[wt 1.0]
+[charaFadeout H 0.1]
+
+＠デュボワ夫人
+ええ……ええ……。[r]本当に、ありがとう……。
+[k]
+
+＠デュボワ夫人
+これで、私も還ることができる……。
+[k]
+
+＠デュボワ夫人
+みんな元気で。
+[k]
+
+＠デュボワ夫人
+[#さようなら:A u　 r e v o i r]。
+[k]
+
+[messageOff]
+[wt 0.5]
+[cueSe SE_21 21_ad1142 0 0.5]
+[se ad952]
+[fadeout white 3.0]
+[bgmStop BGM_EVENT_123 2.0]
+[wait fade]
+
+[subRenderFadeout #B 0.1]
+[wt 1.0]
+
+[seStop ad952 2.0]
+[cueSeStop 21_ad1142 2.0]
+[fadein white 2.0]
+[wait fade]
+[wt 1.5]
+
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
