@@ -1,0 +1,347 @@
+
+
+＄94-15-56-03-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 4056000 1 ヒッポリュテ]
+[charaScale A 1.3]
+[charaSet B 5056000 1 フランソワ]
+[charaSet C 5057000 1 フランチェスカ]
+[charaSet D 1098354710 1 穢れた騎士達1]
+[charaSet E 1098354710 1 穢れた騎士達2]
+[charaSet F 1098354710 1 穢れた騎士達3]
+[charaSet G 98006200 1 ？？？]
+
+[charaSet H 4056000 1 ヒッポリュテ2]
+[charaScale H 1.2]
+[charaSet I 5056000 1 フランソワ_演出用]
+
+[sceneSet J 281002 1]
+[charaScale J 1.4]
+[sceneSet K 281002 1]
+[charaScale K 1.2]
+
+[charaSet L 5057000 1 フランチェスカ_演出用]
+
+
+
+
+[charaSet S 98115000 1 エフェクト用1]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth I 2]
+[charaDepth L 3]
+[charaDepth A 4]
+[charaDepth D 5]
+[charaDepth F 6]
+[charaDepth E 7]
+[charaDepth G 8]
+[charaDepth K 9]
+[charaDepth B 10]
+[charaDepth C 11]
+[charaDepth H 12]
+[charaDepth S 13]
+
+
+[scene 281002]
+
+[pictureFrameTop cut063_cinema]
+
+[charaFadein K 0.4 50,-240]
+[charaMove K -50,-240 10.0]
+
+[fadein black 1.0]
+[se ade24]
+[seVolume ade24 0 0]
+[seVolume ade24 1.0 0.6]
+[wait fade]
+[se ad117]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaFace A 1]
+[charaFadein A 0.1 0,10]
+[charaFadein J 0.1 0,-340]
+
+[wt 3.0]
+
+[seStop ade24 1.0]
+[charaFadeout K 0.7]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk A]
+
+＠ヒッポリュテ
+む……[wt 0.5][r]この気配……騎士の連中か。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaScale A 1.0]
+
+[scene 280901]
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+[charaFadeout J 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_175 0.1]
+
+[charaTalk off]
+[cueSe SE_25 25_ad1521]
+[cueSe SE_21 21_ad1119]
+[charaFace E 0]
+[charaFace D 0]
+[charaFace F 0]
+[charaFadein E 0.4 -20,-50]
+[wt 0.4]
+[charaFadeinFSL D 0.4 -276,-50]
+[wt 0.3]
+[charaFadeinFSR F 0.4 236,-50]
+[wt 0.6]
+[cueSeStop 21_ad1119 0.2]
+[cueSeStop 25_ad1521 0.2]
+[wt 0.4]
+
+＠穢れた騎士達
+道を……埋めよ……[r]　　　　　　　道、を……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[se ad452]
+[seStop ad452 0.4]
+[charaScale A 1.0]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 0,-50]
+[wt 1.0]
+
+＠ヒッポリュテ
+はぐれか、偵察として巡回させている部隊か、[r]あるいはプレラーティの嫌がらせか……。
+[k]
+
+＠ヒッポリュテ
+仮初めとはいえマスターを失うわけにはいかないのでな。[r]なんにせよ、ここで討ち果たさせてもらうとしよう。
+[k]
+
+[messageOff]
+[se ad1006]
+[charaFace A 9]
+[blur motion 0.3 2 100 0.5 0.5 0.05 100]
+[charaMoveScaleEase A 1.4 0.3 easeOutQuint]
+[charaMoveEase A 0,0 0.3 easeOutQuint]
+[bgmStop BGM_EVENT_175 1.0]
+[charaFadeout A 0.3]
+[wt 0.5]
+[blurOff motion 0.3]
+
+[se ad171]
+[charaPut S 0,-50]
+[charaEffect S bit_talk_gram_slash_03_fs]
+[wt 0.1]
+[se ad471]
+[fadeout white 0.2]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout S 0.1]
+[scene 10000]
+[wt 0.2]
+
+[fadein white 0.4]
+[wait fade]
+[wt 0.4]
+
+[fadeout black 0.4]
+[wait fade]
+
+[scene 185400]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_257 0.1]
+
+[se ad200]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 150,-50]
+[charaMoveEase G 120,-50 0.7 easeOutSine]
+[wt 0.7]
+[seStop ad200 0.2]
+
+＠？？？
+………………
+[k]
+
+[messageOff]
+[se ad200]
+[charaMoveEase G 90,-50 0.7 easeOutSine]
+[wt 0.7]
+[seStop ad200 0.2]
+
+＠？？？
+……ジユウ……ソラ……
+[k]
+
+[messageOff]
+[se ad200]
+[charaMoveEase G 60,-50 0.7 easeOutSine]
+[wt 0.7]
+[seStop ad200 0.2]
+
+＠？？？
+……カル……デア……
+[k]
+
+
+[bgm BGM_EVENT_257 1.5 0.4]
+[messageOff]
+[se ad200]
+[charaMoveEase G 40,-50 0.8 easeOutSine]
+[fadeout black 1.0]
+[seStop ad200 1.0]
+[wait fade]
+
+[charaFadein J 0.1 -150,-200]
+[charaFadeout G 0.1]
+[scene 281002]
+[wt 1.5]
+
+[fadein black 0.5]
+[wait fade]
+[bgm BGM_EVENT_257 1.5 0.7]
+[se ad200]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 156,-50]
+[charaMoveEase G 106,-50 0.7 easeOutSine]
+[wt 1.0]
+[seStop ad200 0.2]
+[wt 0.6]
+[charaMoveEase J 50,-200 1.0 easeOutSine]
+[charaMoveEase G 306,-50 1.0 easeOutSine]
+[wt 1.0]
+
+[charaTalk I]
+[charaFace I 13]
+[charaFadein I 0.4 -250,-50]
+[wt 0.4]
+
+＠I：フランソワ
+はい、そこまで。
+[k]
+
+[charaTalk G]
+[charaFace G 0]
+
+＠？？？
+………………
+[k]
+
+[messageOff]
+[charaTalk G,C]
+[charaPut L -410,-50]
+[charaMoveEase J 100,-200 0.6 easeOutSine]
+[charaMoveEase G 356,-50 0.6 easeOutSine]
+[charaMoveEase I -200,-50 0.6 easeOutSine]
+[charaMoveEase L -360,-50 0.6 easeOutSine]
+[wt 0.2]
+[charaFadeTime L 0.4 1.0]
+[wt 0.4]
+
+＠L：フランチェスカ
+やっぱり、カルデアのマスター[&君:ちゃん]を狙って来たねえ。[r]……ヒッポリュテちゃんは？
+[k]
+
+[charaTalk I]
+[charaFace I 0]
+
+＠I：フランソワ
+西の方で、[#はぐれ]の騎士団と戦ってるね。
+[k]
+
+[charaFace I 19]
+
+＠I：フランソワ
+……あの女王様じゃ、[r]『これ』の気配には気付きにくいんじゃないかな。
+[k]
+
+[charaTalk G]
+[charaFace G 0]
+
+＠？？？
+………………[r]……[%1]……ヲ……アァ……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_257 1.0]
+[charaScale B 1.2]
+[charaScale C 1.2]
+[charaTalk off]
+[charaFace B 13]
+[charaFadein B 0.4 50,-40]
+[charaFace C 13]
+[charaFadein C 0.4 -150,-40]
+[charaFadein K 0.4 0,-240]
+
+[charaMoveEase B 100,-40 1.0 easeOutSine]
+[charaMoveEase C -100,-40 1.0 easeOutSine]
+[charaMoveEase K 50,-240 1.0 easeOutSine]
+[wt 1.5]
+
+[bgm BGM_EVENT_258 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 5]
+
+＠フランチェスカ
+残念だけど、あなたの行軍はここでおしまいです！
+[k]
+
+[charaTalk B]
+[charaFace B 1]
+
+＠フランソワ
+[%1]君は殺させないよ。
+[k]
+
+＠フランソワ
+……[#彼女]にとってそうであるように[line 2]
+[k]
+
+[charaFace B 12]
+
+＠フランソワ
+僕らにとっても、[r][%1]君は最後の希望だしね。
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_258 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

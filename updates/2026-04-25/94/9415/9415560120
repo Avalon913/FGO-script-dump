@@ -1,0 +1,420 @@
+
+
+＄94-15-56-01-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 1098294900 1 マシュ]
+[charaSet B 1098257300 1 ダ・ヴィンチ]
+[charaSet C 5009001 1 ダ・ヴィンチ_演出用]
+[charaFilter C silhouette 00000080]
+[charaSet D 1098357600 1 フォウ]
+[charaSet E 1098255110 1 ゴルドルフ]
+[charaSet F 1098294900 1 マシュ_演出用]
+
+[sceneSet L 231800 1]
+[sceneSet M 114301 1]
+[sceneSet N 232500 1]
+[sceneSet O 143500 1]
+[sceneSet P 143500 1]
+[sceneSet Q 143500 1]
+[sceneSet R 143500 1]
+[sceneSet S 143500 1]
+
+[charaSet X 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth S 1]
+[charaDepth R 1]
+[charaDepth Q 2]
+[charaDepth A 3]
+[charaDepth O 4]
+[charaDepth B 5]
+[charaDepth C 6]
+[charaDepth D 7]
+[charaDepth E 8]
+[charaDepth P 9]
+[charaDepth F 15]
+[charaDepth Z 20]
+[charaDepth L 21]
+[charaDepth M 22]
+[charaDepth N 23]
+[charaDepth X 24]
+
+[effect bit_sepia01_depth_fs_02]
+[pictureFrameTop cut063_cinema]
+
+[scene 232500]
+[charaScale L 1.2]
+[charaFadein L 0.1 30,-200]
+[wt 0.2]
+[charaMove L -30,-200 15.0]
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+
+[bgm BGM_EVENT_129 0.1]
+
+＠
+奇妙な夢を見た。
+[k]
+
+[charaScale M 1.2]
+[charaPut M -30,-200]
+[charaFadeTime M 0.7 1.0]
+[charaMove M 30,-200 15.0]
+
+＠
+人類の歴史[line 2]カルデアを通して見てきた様々な特異点、[r]あるいは修正された正しい歴史の光景。
+[k]
+
+＠
+歴史は文字に、文字は紙上に圧縮され、[r]製本され、一冊の歴史書となる。
+[k]
+
+[charaScale N 1.2]
+[charaPut N 0,-230]
+[charaFadeTime N 0.7 1.0]
+[charaMove N 0,-200 15.0]
+
+＠
+本棚の一つに仕舞われたまま、[r]誰にも読まれず朽ちていく。
+[k]
+
+＠
+その本の中に閉じ込められたような錯覚に陥り、[r]誰にも見つからぬまま[line 2]
+[k]
+
+＠
+世界は虫食いの中に消え落ちる。
+[k]
+
+
+＠
+[line 4][r]　　　　　　　　　　[line 10]
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_129 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[effectDestroy bit_sepia01_depth_fs_02]
+[pictureFrame]
+[blur lens 0.1 2 100]
+[scene 143500]
+[charaFadein R 0.1 0,-200]
+[charaShake R 0.07 0 3 0]
+[wt 2.5]
+[se ad140 0 0]
+[seVolume ad140 2.0 0.2]
+[wt 1.0]
+[wipeout openEye 0.1 1]
+[wait wipe]
+[fadein black 0.1]
+[wait fade]
+[wipein openEye 0.4 1.0]
+[wait wipe]
+[wipeout openEye 0.5 1.0]
+[wait wipe]
+[wipein openEye 0.4 1.0]
+[wait wipe]
+[wt 0.8]
+
+？1：（うーん……）
+？2：（なんか……激しく揺れて……）
+？！
+
+[wipeout openEye 0.4 1.0]
+[wait wipe]
+[wt 0.6]
+[seVolume ad140 1.5 0.4]
+[wipein openEye 1.5 1]
+[wait wipe]
+[wt 0.8]
+
+[shake 0.07 0 2 0]
+[charaScale A 1.4]
+[charaScale Q 1.4]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 1]
+[charaFadein Q 0.4 0,-340]
+[wt 0.4]
+
+＠マシュ
+……スター。マスター！
+[k]
+
+[messageOff]
+[charaTalk A,F]
+[seVolume ad140 1.5 0.3]
+[subCameraOn 1]
+[charaLayer F sub #A]
+[charaLayer S sub #A]
+[subCameraFilter #A normal]
+[charaScale F 1.4]
+[charaScale S 1.4]
+[charaFace F 8]
+[charaFadein F 0 1]
+[charaFadein S 0 0,-340]
+[subRenderFadein #A 1.0 0,0]
+[wt 1.5]
+[charaShakeStop R]
+[blurOff lens 0.1]
+
+＠F：マシュ
+大丈夫ですか？[r]眠っておられたようですが……
+[k]
+
+
+[messageOff]
+[charaTalk F,A]
+[shakeStop]
+[shake 0.12 0 1 0]
+[seVolume ad140 1.5 0.2]
+[charaScale O 1.2]
+[charaFadein O 0 50,-200]
+[charaMove O 100,-200 5.0]
+[subRenderFadeout #A 0.4]
+[wt 1.0]
+[charaFadeout F 0]
+[charaFadeout S 0]
+[wt 1.0]
+[charaLayer F normal]
+[charaLayer S normal]
+[subCameraOff]
+[wt 1.0]
+[charaScale P 1.2]
+[charaFadein P 0.4 -50,-270]
+[charaMove P -100,-270 5.0]
+[wt 1.0]
+[charaFadeout O 0.1]
+[charaScale A 1.0]
+[charaScale Q 1.0]
+[charaFace A 8]
+[charaFadeout Q 0.1]
+[wt 2.0]
+[shakeStop]
+[charaFadeout P 0.6]
+[seStop ad140 3.0]
+[wt 0.6]
+[charaFadeout F 0]
+[bgm BGM_EVENT_2 0.1]
+
+＠マシュ
+お疲れだったのですね。[r]もう少しお休みいただいても良かったのですが……。
+[k]
+
+？1：あれ……マシュ？
+？2：ここは……
+？！
+
+[charaFace A 1]
+
+＠マシュ
+あの丘を越えれば砂漠も一区切りのようです。[r]華麗な大ジャンプを決めてみせます！　ええ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+ぐっすり寝てたけど、そんなに疲れてたのかい？
+[k]
+
+＠ダ・ヴィンチ
+一時間以上砂漠を[r]ドライブしてるから仕方ないかな。
+[k]
+
+[charaFace B 37]
+
+＠ダ・ヴィンチ
+ごはんにする？　それともマッサージの礼装を使う？[r]ああ、冷たいジュースも作っておいたよ！
+[k]
+
+
+？1：なんかもう便利すぎ……る……？
+？2：けっこう、世話焼きです……よ……ね？　あれ？
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠フォウ？
+フォウ、フォーウ！
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+そりゃそうさ！　私は基本的にお節介焼きだからね！
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[bgm BGM_EVENT_2 0.4 0.4]
+[seVolume ad140 0.4 0]
+[fadeout white 0.4]
+[wait fade]
+[charaFadeout B 0.1]
+[effect bit_sepia01_depth_fs_02]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[bgm BGM_EVENT_2 0.4 0.7]
+[fadein white 0.4]
+[wait fade]
+[wt 0.4]
+
+＠？？？
+甲斐甲斐しく注文をつけるのさ。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_2 0.4 0.4]
+[fadeout white 0.4]
+[wait fade]
+[charaFadeout C 0.1]
+[effectDestroy bit_sepia01_depth_fs_02]
+[charaPut X 2500,2500]
+[charaEffect X bit_talk_haboob_03]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[bgm BGM_EVENT_2 0.4 1.0]
+[seVolume ad140 0.4 0.1]
+[fadein white 0.4]
+[wait fade]
+[wt 0.2]
+
+＠ダ・ヴィンチ
+甲斐甲斐しく注文をつけちゃうよ！
+[k]
+
+？1：（デジャヴ……？）
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaEffect Z bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.3]
+
+＠ゴルドルフ
+それより、いよいよ砂漠を抜ける頃合いだ。[r]マスクはそろそろ外してもかまうまい。
+[k]
+
+
+＠ゴルドルフ
+こちらからも見えている砂丘の奥から、[r]段違いの魔力濃度が計測されている。
+[k]
+
+[charaFace E 1]
+
+＠ゴルドルフ
+おそらく、この時代の“本来の”姿が見られる筈……！
+[k]
+
+[bgmStop BGM_EVENT_2 2.0]
+
+？1：『この時代』……？
+？2：ちょっと待って、ここは……？
+？！
+
+[charaFace E 0]
+
+[bgm BGM_MAP_23 0.5]
+
+＠ゴルドルフ
+うむ？　まだ完全に目が覚めていないのかね？
+[k]
+
+[charaFace E 3]
+
+＠ゴルドルフ
+まあ、スフィンクスにニトクリス、[r]さらには太陽王との邂逅だ。
+[k]
+
+＠ゴルドルフ
+あんな事が立て続けでは、[r]混乱するのも無理はあるまい。
+[k]
+
+[charaFace E 16]
+
+＠ゴルドルフ
+だが、この先は気を引き締める必要がある。[r]いよいよ、この時代に何が起こっているのか……
+[k]
+
+＠ゴルドルフ
+[#第六特異点]の真の姿が、[r]我々の前に現れるのだからな。
+[k]
+
+[messageOff]
+[wt 0.7]
+[subCameraOn 1]
+[charaLayer X sub #A]
+[charaLayer Q sub #A]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+[charaScale Q 1.4]
+[charaFadein Q 0 0,-270]
+[charaShake Q 0.07 0 3 0]
+[charaPut X 0,-250]
+[subRenderFadein #A 0.6 0,0]
+[se ad140 0 0]
+[seVolume ad140 1.0 0.6]
+[wt 2.0]
+[charaFadeout E 0.1]
+[charaPut Z 2500,2500]
+[charaDepth P 21]
+[charaScale P 1.1]
+[charaFadein P 1.0 -30,-200]
+[seStop ad140 2.5]
+[wt 1.5]
+[subRenderFadeout #A 1.5]
+[charaMove P 30,-200 15.0]
+[wt 3.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_MAP_23 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,924 @@
+
+
+＄94-15-56-03-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 1098359710 1 フランチェスカ]
+[charaSet B 1098359620 1 フランソワ]
+[charaSet C 4056000 1 ヒッポリュテ]
+
+[charaSet G 1098359710 1 フランチェスカ_演出用]
+[charaSet H 1098359620 1 フランソワ_演出用]
+[charaSet I 4056000 1 ヒッポリュテ_演出用]
+
+[masterBranch lblmst01a lblmst01b]
+
+[label lblmst01a]
+[imageSet D cut299_doll_master_male 1]
+[charaScale D 1.01]
+[charaSet E 1098310500 1 トントゥ]
+
+[branch lblmst01]
+
+[label lblmst01b]
+[imageSet D cut299_doll_master_female 1]
+[charaScale D 1.01]
+[charaSet E 1098310600 1 トントゥ]
+
+[label lblmst01]
+
+[branchQuestClear lblClear01b 3001327]
+
+[masterSet F 1098357800 1098357810 1]
+[charaFace F 3]
+[branch lblConf01]
+
+[label lblClear01b]
+[masterSet F 1098259460 1098259470 1]
+[charaFace F 11]
+[label lblConf01]
+
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+[sceneSet Q 281002 1]
+[sceneSet R 281002 1]
+[sceneSet S 281002 1]
+[sceneSet T 281801 1]
+
+[charaSet U 98115000 1 エフェクト用]
+
+[charaSet X 98115000 1 エフェクト用1]
+[charaSet Y 98115000 1 エフェクト用2]
+
+[charaTalk depthOff]
+[charaDepth U 1]
+[charaDepth P 6]
+[charaDepth B 3]
+[charaDepth A 4]
+[charaDepth C 5]
+[charaDepth D 7]
+[charaDepth E 8]
+[charaDepth F 11]
+[charaDepth H 12]
+[charaDepth G 13]
+[charaDepth I 16]
+
+[charaDepth Q 10]
+[charaDepth R 15]
+[charaDepth S 1]
+[charaDepth T 20]
+[charaDepth X 24]
+[charaDepth Y 25]
+
+[cameraMove 0.1 0,0 1.01]
+
+[scene 281002]
+[charaFace A 14]
+[charaFace B 14]
+[charaFadein A 0.1 -80,0]
+[charaFadein B 0.1 80,0]
+[wt 0.1]
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_262 0.1]
+
+＠プレラーティズ
+そう……[#僕:私]達は、プレラーティ！！
+[k]
+
+＠プレラーティズ
+君の、君達カルデアの今までの旅路を[line 2][wt 0.7][charaFaceFade B 15 0.3][charaFaceFade A 23 0.3][r]　　　　　　　　　　　　　　[line 2][#穢:けが]しに来たんだ。
+[k]
+
+[charaTalk A]
+[charaFace A 7]
+
+＠フランチェスカ
+……まあ、さっきのケルベロスのせいで、[r]早速誘拐計画は破綻しちゃったんだけどね……？
+[k]
+
+[charaTalk B]
+[charaFace B 12]
+
+＠フランソワ
+ふふふ……
+[k]
+
+[charaFace B 7]
+
+＠フランソワ
+……どうしよう？[r]どうすればいいと思う？
+[k]
+
+？1：とりあえず、カルデアに帰してもらえるかな……
+？！
+
+[charaTalk B]
+[charaFace A 5]
+
+＠フランチェスカ
+あははは！　ダメダメ！　君を帰しちゃったら、[r]計画が破綻どころか壊滅しちゃうから！
+[k]
+
+[charaTalk A]
+[charaFace B 0]
+
+＠フランソワ
+自分の立場を思い出しなよ。[r]カルデアの通信もマシュも全部偽物だった。
+[k]
+
+[charaFace B 5]
+
+＠フランソワ
+つまり、君は[line 2]僕達に[#攫:さら]われて、[r]この特異点にいるんだよ？　たった一人で！！
+[k]
+
+＠フランソワ
+君だけで、僕の幻術に抗えるかい？[r]見た目だけなら、ほらこの通り！
+[k]
+
+[messageOff]
+[charaMoveReturn B 80,-4 0.4]
+[se ade160]
+[wt 0.8]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFadein F 0.1 1]
+[wt 0.4]
+[charaPut X 1]
+[charaEffect X bit_talk_magical_pon]
+[cueSe SE_21 21_ade603]
+[wt 0.1]
+[charaFadeout F 0.1]
+[charaTalk D]
+[charaPut D 0,-200]
+[charaFadeTime D 0.1 1.0]
+[wt 0.4]
+[charaMoveReturn D 0,-190 0.25]
+[wt 0.6]
+
+？1：わっ！？
+？！
+
+[se ade160]
+[wt 0.5]
+[charaPut X 1]
+[charaEffect X bit_talk_magical_pon]
+[cueSe SE_21 21_ade603]
+[wt 0.1]
+[charaFadeout D 0.1]
+[charaTalk E]
+[charaFace E 3]
+[charaPut E 1]
+[charaFadeTime E 0.1 1.0]
+[wt 0.4]
+[charaMoveReturn E 0,10 0.25]
+[wt 0.8]
+
+？1：わわっ……！？
+？！
+
+[se ade160]
+[wt 0.5]
+[charaPut X 1]
+[charaEffect X bit_talk_magical_pon]
+[cueSe SE_21 21_ade603]
+[wt 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk F]
+
+[branchQuestClear lblClear01c 3001327]
+
+[charaFace F 2]
+
+[branch lblConf01c]
+
+[label lblClear01c]
+[charaFace F 11]
+
+[label lblConf01c]
+
+[charaPut F 1]
+[charaFadeTime F 0.1 1.0]
+[wt 2.2]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠フランソワ
+僕の力を使えば君をずっとトントゥの外見に[r]見せかける事だって可能だけど[line 2][#閑話休題:かんわきゅうだい]！
+[k]
+
+[charaFace B 12]
+
+＠フランソワ
+君の召喚する『影』だけでどこまでやれるかなぁ？[r]もしも力尽きた時は、どうして欲しい？
+[k]
+
+＠フランソワ
+小指にタンスの角をぶつけてあげようか？？[r]それとも、目玉に薄めた酸でも注いであげようか？
+[k]
+
+[branchQuestNotClear lblNotClear2 2000316]
+
+[charaFace B 15]
+
+＠フランソワ
+内臓……はなんか君、いじられた痕があるね。[r]妖精か東洋の鬼種あたりに何かやられたりした？
+[k]
+
+
+[label lblNotClear2]
+
+[messageOff]
+[bgm BGM_EVENT_262 1.2 0.6]
+[fadeout black 0.5]
+[wait fade]
+[charaScale H 0.8]
+[charaTalk off]
+[charaPutFSSideL U -200,0]
+[charaEffect U bit_talk_spotlight]
+[charaFace H 0]
+[charaFadeinFSSideL H 0.1 -200,-80]
+[charaPut P 0,-200]
+[charaFadeTime P 0.1 1.0]
+[wt 0.1]
+[fadein black 0.5]
+[wait fade]
+[wt 0.4]
+[charaFace B 0]
+[charaFace H 5]
+
+＠フランソワ
+（よし、行ける！）
+[k]
+
+＠フランソワ
+（このまま精神的優位を取り続ければ、[r]　カルデアのマスター君を手玉に取れる！）
+[k]
+
+[messageOff]
+[charaEffectStop U bit_talk_spotlight]
+[bgm BGM_EVENT_262 0.6 1.0]
+[charaFadeout H 0.6]
+[charaFadeout P 0.6]
+[wt 0.8]
+[charaTalk on]
+[charaTalk B]
+
+＠フランソワ
+[#鼠:ねずみ]を詰めた鉄鍋を君の腹に押し当てて焼くとか……[r]油性ペンで君の顔に[#山海経:せんがいきょう]を書き写すとか……
+[k]
+
+[charaFace B 5]
+
+＠フランソワ
+さあ、どんな展開が好みかな？[r]今なら出血大サービスで希望に応えてあげるよ！
+[k]
+
+[messageOff]
+[charaScale R 1.2]
+[charaFadein R 0.4 -60,-250]
+[charaMove R -40,-250 5.0]
+[wt 1.0]
+[charaScale S 1.2]
+[charaFace A 9]
+[charaFace B 9]
+[charaFadein A 0.1 -80,0]
+[charaFadein B 0.1 80,0]
+[charaFadein S 0.4 0,-270]
+[bgmStop BGM_EVENT_262 2.5]
+
+＠？？？
+そうか……
+[k]
+
+
+＠？？？
+ならば、とりあえず滅び朽ちよ！！
+[k]
+
+[messageOff]
+[charaFadeout R 0.4]
+[wt 0.4]
+
+＠プレラーティズ
+えっ？
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_blow03]
+[wt 0.2]
+[charaFace A 18]
+[charaFace B 18]
+[shake 0.03 3 3 0.4]
+[cueSe SE_23 23_ad1341 0 0.7]
+[wt 0.1]
+[se ad348]
+[seStop ad348 1.6]
+[charaShake A 0.03 3 3 1.0]
+[charaShake B 0.03 3 3 1.0]
+
+[charaMoveScale A 0.5 0.7]
+[charaMoveScale B 0.5 0.7]
+[charaRollMoveEx A 1.1 360]
+[charaRollMoveEx B 1.1 -360]
+
+[charaMove A -1400,-375 0.7]
+[charaMove B 1400,-375 0.7]
+[wt 1.5]
+
+＠プレラーティズ
+ウボァー！？
+[k]
+
+[messageOff]
+[charaPutFSSideL X -400,0]
+[charaEffect X bit_talk_impactlanding]
+[wt 0.2]
+[shake 0.03 3 3 0.4]
+[cueSeContinue SE_23 23_ad1341 0 0.7 1]
+[charaPutFSSideR Y 400,0]
+[charaEffect Y bit_talk_impactlanding]
+[wt 0.2]
+[cueSeContinue SE_23 23_ad1341 0 0.7 2]
+[wt 0.1]
+[wt 2.0]
+[charaFadeout A 0.4]
+[charaFadeout B 0.4]
+[charaFadeout S 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_263 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[cueSe SE_24 24_ade1034]
+[cueSeStop 24_ade1034 0.6]
+[wt 0.4]
+
+＠ヒッポリュテ
+冥界の魔獣の気配を感じ、急ぎ戻ってみれば……
+[k]
+
+[charaFace C 10]
+
+＠ヒッポリュテ
+すべて貴様らの企みか！[r]この魔物どもめ！
+[k]
+
+？1：ヒッポリュテさん！！
+？！
+
+[charaFace C 1]
+
+＠ヒッポリュテ
+呼び捨てで構わない。[r]それより、大丈夫か？
+[k]
+
+？1：はい！　実は……
+？！
+
+[messageOff]
+[wt 0.4]
+[bgmStop BGM_EVENT_263 1.0]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+[wt 1.0]
+[charaFace C 12]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[bgm BGM_EVENT_264 0.1]
+
+＠ヒッポリュテ
+なるほど、ケルベロスが……。
+[k]
+
+[charaFace C 11]
+
+＠ヒッポリュテ
+……つまり、先刻共にいた君の仲間は、[r]最初からこいつらの幻術だった……という所か？
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,7 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 1.0]
+[charaFace C 5]
+
+＠ヒッポリュテ
+そうか……災難だったな。[r]気を強く持つといい。
+[k]
+
+[charaFace C 1]
+
+＠ヒッポリュテ
+こいつらはタチの悪い魔物の類だ。
+[k]
+
+＠ヒッポリュテ
+兄妹や双子ではなく、[r]二つに分かれた同一存在のような物だと思え。
+[k]
+
+
+＠ヒッポリュテ
+私も自分が何故このような特異点に[#飛ばされた]のか[r]不可解だったが……すべて貴様らの仕業だな！
+[k]
+
+[charaFace C 10]
+
+＠ヒッポリュテ
+そこの[&少年:少女]を利用し、何を企んでいる！[r]とっとと吐け！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+[charaScale B 1.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 6]
+[charaFace B 0]
+[charaFadein A 0.1 -80,0]
+[charaFadein B 0.1 80,0]
+
+＠フランチェスカ
+ひえー、相変わらず真面目ちゃんだねえ！[r]生きてて疲れない？
+[k]
+
+[charaTalk B]
+[charaFace B 5]
+
+＠フランソワ
+それはそうと、企みだなんて酷い誤解だ！[r]今のは、道化師の軽い冗談みたいなものだよ？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ヒッポリュテ
+ほう……？[r]では、正体がバレなければ何をしていた？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaFadeout G 0]
+[charaFadeout H 0]
+[charaFadeout Q 0]
+[charaFadeout S 0]
+
+[charaTalk B]
+[charaFace A 5]
+[charaFace B 5]
+[charaFadein A 0.1 -80,0]
+[charaFadein B 0.1 80,0]
+
+＠フランソワ
+フッフッフ、よくぞ聞いてくれたね！
+[k]
+
+[charaTalk A]
+[charaFace A 5]
+
+＠フランチェスカ
+まず、ゴルドルフ君を疑ったマスター[&君:ちゃん]を錯乱したと[r]判断したていで、カルデアの英霊の幻術に拘束させるの！
+[k]
+
+[charaTalk B]
+[charaFace B 14]
+
+＠フランソワ
+抵抗するカルデアのマスター君！　簡易召喚発動！[r]その戦闘の流れ弾に倒れるダ・ヴィンチちゃん！
+[k]
+
+[charaTalk A]
+[charaFace A 10]
+
+＠フランチェスカ
+動かなくなったダ・ヴィンチちゃんを前に絶望した[r]君を抱きしめて、優しく誘惑するマシュちゃん！
+[k]
+
+[charaLayer G normal]
+[charaLayer H normal]
+[charaLayer Q normal]
+[charaLayer S normal]
+[subCameraOff]
+
+？1：うーん、もう聞かなくていいや
+？2：存在してはいけない生き物かな？
+？！
+
+[messageOff]
+[charaScale Q 1.2]
+[charaScale H 1.2]
+[charaTalk A,H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[charaFadein Q 0.4 0,-270]
+[wt 0.4]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠H：フランソワ
+……。
+[k]
+
+
+[charaFace H 12]
+
+＠H：フランソワ
+……リリスちゃんの性格と口調で誘惑してくる[r]マシュちゃんとか、解釈違いだったりする？
+[k]
+
+
+
+
+
+？1：（無言で相手のこめかみを両側からぐりぐりする）
+
+
+[messageOff]
+[charaScale F 1.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 170,20]
+[wt 0.4]
+[se ad181]
+[charaFace H 18]
+[charaShake H 0.04 3 3 1.0]
+[wt 0.7]
+
+＠H：フランソワ
+ギャー！？
+[k]
+
+＠H：フランソワ
+暴力反対ー！！[r]もっと穏便に、聖杯戦争とかで勝負しようよ！？
+[k]
+
+？2：一番やっちゃいけない事を選んでやるタイプだ……
+
+＠H：フランソワ
+鋭いナイフとか持った時に、自分の首を刺したら[r]どうなっちゃうんだろうとか想像したりしない？
+[k]
+
+[charaFace H 5]
+
+＠H：フランソワ
+そこで[#躊躇:ためら]い無く刺すような感じで、[r]他人の一番の地雷を踏むのがこの僕さ！
+[k]
+
+？！
+
+[messageOff]
+[charaTalk H,C]
+[charaFadeout F 0.4]
+[charaFadeout H 0.4]
+[charaFadeout Q 0.4]
+[wt 0.4]
+[charaScale F 1.0]
+
+＠ヒッポリュテ
+まともに取り合わない方がいいぞ。
+[k]
+
+[charaFace C 14]
+
+＠ヒッポリュテ
+こいつらが君に何かしたら、[r]私が代わりに黙らせる。
+[k]
+
+[messageOff]
+[charaTalk C,A,B]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ade238 0 0.3]
+[charaFace A 16]
+[charaFace B 16]
+[charaFadein A 0.1 -80,0]
+[charaFadein B 0.1 80,0]
+[charaShake A 0.03 1 1 2.0]
+[charaShake B 0.03 1 1 2.0]
+[wt 1.5]
+[seStop ade238 0.7]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ヒッポリュテ
+そもそもこいつは人を[r]完全に理解などできない外道だ。
+[k]
+
+＠ヒッポリュテ
+どれだけ精巧に幻術で化けようが、[r]本質までは真似できない。そこを注視すればいい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFace A 7]
+[charaFadein B 0.1 80,0]
+[charaFadein A 0.1 -80,0]
+
+＠フランソワ
+酷い言われようだね！　まあ事実だからしょうが……[wt 1.0][charaFace B 11][r]いや、しょうがなくないと敢えて主張したい！
+[k]
+
+[charaFace B 8]
+
+＠フランソワ
+まあ、僕もゴルドルフって人に関しては[r]演じてて『あ、これ無理だな』って思ったけどさ。
+[k]
+
+＠フランソワ
+超然とした[#聖人君子:せ い じ ん く ん し]の真似事ならできるけど……
+[k]
+
+＠フランソワ
+ああいう人間らしさが滲み出た善性は、[r]僕にはどうにもトレースできない。
+[k]
+
+[branchQuestNotClear lblNotClear04 94051422]
+
+[branch lblClear04]
+
+[label lblNotClear04]
+
+[branch lblConf04]
+
+[label lblClear04]
+[charaFace B 0]
+
+＠フランソワ
+君に化けるのも同じぐらい苦労しそうだ。[r]徐福って子は相当な天才か、君と似たタイプだと思うよ？
+[k]
+
+[label lblConf04]
+
+[charaFace A 5]
+
+＠フランチェスカ
+っていうか、外見だけなら完全に真似できるから、[r]君がもう会えなくなっちゃった人達にだって[line 2]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale I 1.3]
+[charaScale R 1.4]
+[charaFace I 9]
+[charaFadein I 0.25 1]
+[charaFadein R 0.25 0,-360]
+[charaScale X 1.0]
+[charaPut X 0,40]
+[wt 0.25]
+[charaEffect X bit_talk_41_fs]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaScale Q 1.2]
+[charaScale G 1.0]
+[charaScale H 1.0]
+[charaFace G 18]
+[charaFace H 18]
+[charaFadein G 0.1 -80,0]
+[charaFadein H 0.1 80,0]
+[charaFadein Q 0.1 70,-270]
+
+＠ヒッポリュテ
+うるさい黙れその口を閉じ朽ち滅べ！
+[k]
+
+[messageOff]
+[cueSe SE_25 25_ade1245]
+[cueSeStop 25_ade1245 0.6]
+[charaPut Y 1]
+[charaEffect Y bit_talk_gold_slash_02]
+[wt 0.4]
+[charaFadeout I 0.1]
+[charaFadeout R 0.1]
+[charaEffectDestroy X bit_talk_41_fs]
+[cueSe SE_24 24_ad1425]
+[cueSeStop 24_ad1425 1.5]
+[charaEffect Y bit_talk_impactlanding]
+[charaShake G 0.03 3 3 1.0]
+[charaShake H 0.03 3 3 1.0]
+[charaMoveScaleEase G 0.6 0.8 easeOutCubic]
+[charaMoveScaleEase H 0.6 0.8 easeOutCubic]
+[charaMoveEase G -80,-100 0.8 easeOutCubic]
+[charaMoveEase H 80,-100 0.8 easeOutCubic]
+[wt 0.2]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[wt 0.8]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠プレラーティズ
+ギニャー！？
+[k]
+
+[messageOff]
+[charaFadeout Q 0.4]
+[wt 0.4]
+[charaTalk on]
+[charaTalk C]
+
+＠ヒッポリュテ
+もはや、私に対する謝罪の必要はない。[r]和解する意味合いもないからな。
+[k]
+
+[charaFace C 2]
+
+＠ヒッポリュテ
+それよりも、この[&少年:少女]に対する贖罪として[r]今すぐ地面に頭をこすりつけ首を差し出すのが先だろう。
+[k]
+
+＠ヒッポリュテ
+[&少年:少女]よ、断罪の為の斧は必要か？[r]その手を[#穢:けが]す事に抵抗があるなら、私が代行するが。
+[k]
+
+？1：たしかに、思う所はものすごくあるけれど
+？2：まず、自分の置かれてる状況が知りたいです
+？！
+
+[charaFace C 1]
+
+＠ヒッポリュテ
+ふむ……確かに、こんな連中でも情報源か……
+[k]
+
+[charaFace C 5]
+
+＠ヒッポリュテ
+少なくとも、私と君はこいつらの生み出した幻影……[r]ではないという前提で話を進めたいが……。
+[k]
+
+[charaFace C 1]
+
+＠ヒッポリュテ
+そうだな、先ほどの荒野での戦い方を見るに、[r]君は英霊と契約を結ぶマスターの素質があるとみた。
+[k]
+
+＠ヒッポリュテ
+お互いの存在の証明の為に、[r]君と私で仮契約を結ぶ事は可能だろうか？
+[k]
+
+？1：是非お願いしたい所です
+？2：あなたは、はぐれサーヴァントなんですか？
+？！
+
+[bgmStop BGM_EVENT_264 1.5]
+[charaFace C 5]
+
+＠ヒッポリュテ
+ふむ……認識としてはそれで間違いではないのだが……[r]少しばかり、状況は複雑でな。
+[k]
+
+[charaFace C 1]
+
+＠ヒッポリュテ
+私は、[#とある聖杯戦争に参加していた]。
+[k]
+
+[messageOff]
+[charaTalk off]
+[subCameraOn 1]
+[charaLayer T sub #A]
+[subCameraFilter #A gray]
+[subRenderScale #A 1.01]
+[charaScale T 1.2]
+[overlayFadein T 0 -20,-250]
+[charaMove T 20,-250 15.0]
+[subRenderFadein #A 0.6 0,0]
+[wt 0.7]
+[charaScale I 1.3]
+[charaScale Q 1.4]
+[charaFace I 1]
+[charaFadein I 0 -20,0]
+[charaFadein Q 0 -20,-360]
+[bgm BGM_EVENT_271 0.1]
+
+＠ヒッポリュテ
+そこで私は戦いの果てに役目を終え、[r]霊基と魔力が小聖杯に取り込まれた筈だったのだが……
+[k]
+
+＠ヒッポリュテ
+気付けば、意識がほぼ地続きのまま[r]この特異点らしき場所に顕現していたのだ。
+[k]
+
+[messageOff]
+[charaMove I 20,0 15.0]
+[charaMove Q 20,-360 15.0]
+[subRenderFadeout #A 0.6]
+[wt 0.6]
+[charaFadeout T 0]
+[wt 0.1]
+[charaLayer T normal]
+[subCameraOff]
+
+＠ヒッポリュテ
+君が言う所のはぐれサーヴァントだという感覚もある、[r]だが、それ以上の知識は注がれなかったな……。
+[k]
+
+＠ヒッポリュテ
+ここが特異点だとするならば、土地や時代に[r]関する知識が与えられないのは奇妙だ。
+[k]
+
+＠ヒッポリュテ
+聖杯戦争の時のマスターとのリンクは消失している。[wt 1.0][charaFace I 5][r]今となっては、無事である事を祈るばかりだが……。
+[k]
+
+[messageOff]
+[charaFadeout I 0.6]
+[charaFadeout Q 0.6]
+[wt 0.7]
+
+[charaFace C 1]
+
+＠ヒッポリュテ
+そちらへの未練でこの状況をおろそかにするのは、[r]マスターだった者への侮辱というものだろう。
+[k]
+
+＠ヒッポリュテ
+事態が事態だ……急ではあるが、君さえ良ければ[r]先刻の話通り、仮契約を済ませてしまおう。
+[k]
+
+＠ヒッポリュテ
+互いに、主従にそぐわぬ相手だと判断すれば[r]その時はリンクを切れば良い。
+[k]
+
+[charaFace C 5]
+
+＠ヒッポリュテ
+出会ったばかりの上に、こいつらの幻術に惑わされた[r]直後なのだから、簡単には私を信用できないだろうが……。
+[k]
+
+？1：荒野で自分を助けてくれたあなたの強さは
+？2：幻とは思えないぐらいかっこよかったです
+？！
+
+[charaFace C 3]
+
+＠ヒッポリュテ
+[#面映:おもは]ゆい事を言ってくれる。[r]君はずいぶんと人たらしのようだが、不快さはない。
+[k]
+
+＠ヒッポリュテ
+改めて、ヒッポリュテだ。よろしく頼む。
+[k]
+
+？1：[%1]です
+？2：よろしくお願いします！
+？！
+
+[messageOff]
+[wt 0.5]
+[masterBranch lblmst02a lblmst02b]
+[label lblmst02a]
+[cueSe Battle bas16]
+[fowardEffect bit_talk_CommandMantra_01]
+[wt 2.3]
+[branch lblmst02]
+
+[label lblmst02b]
+[cueSe Battle bas16]
+[fowardEffect bit_talk_CommandMantra_02]
+[wt 2.3]
+[branch lblmst02]
+
+[label lblmst02]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_271 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

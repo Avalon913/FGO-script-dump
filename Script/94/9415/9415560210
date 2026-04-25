@@ -1,0 +1,452 @@
+
+
+＄94-15-56-02-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 1098294900 1 マシュ]
+[charaSet B 1098257300 1 ダ・ヴィンチ]
+[charaSet D 1098123010 1 ムニエル]
+[charaSet E 1098255110 1 ゴルドルフ]
+[charaSet F 1098301710 1 ？？？]
+[charaSet G 1098301710 1 ？？？]
+[charaSet H 1098301710 1 ？？？]
+[charaSet I 1098255110 1 ゴルドルフ_演出用]
+
+[branchQuestClear lblClear01 94064915]
+[branchQuestClear lblClear01 3001101]
+
+[sceneSet L 104100 1]
+[sceneSet M 105800 1]
+[sceneSet N 104200 1]
+[sceneSet O 105900 1]
+[branch lblConf01]
+
+[label lblClear01]
+[sceneSet L 132900 1]
+[sceneSet M 157900 1]
+[sceneSet N 203800 1]
+[sceneSet O 158100 1]
+[label lblConf01]
+
+[sceneSet P 143500 1]
+[sceneSet Q 183300 1]
+
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用]
+[charaSet Y 98115000 1 通信エフェクト用]
+[charaSet Z 98115000 1 通信エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth A 6]
+[charaDepth B 7]
+[charaDepth D 8]
+[charaDepth E 9]
+[charaDepth F 10]
+[charaDepth G 11]
+[charaDepth H 12]
+[charaDepth V 15]
+[charaDepth W 16]
+[charaDepth Z 20]
+
+[charaDepth P 1]
+[charaDepth L 2]
+[charaDepth M 3]
+[charaDepth N 4]
+[charaDepth O 5]
+
+[charaDepth Q 21]
+[charaDepth I 22]
+[charaDepth Y 23]
+
+[cameraMove 0.1 0,0 1.01]
+[subCameraOn 1]
+[charaLayer V sub #A]
+[charaLayer W sub #A]
+[charaLayer P sub #A]
+[charaLayer L sub #A]
+[charaLayer M sub #A]
+[charaLayer N sub #A]
+[charaLayer O sub #A]
+[subRenderScale #A 1.03]
+[subCameraFilter #A normal]
+[charaScale L 1.01]
+[charaScale M 1.01]
+[charaScale N 1.01]
+[charaScale O 1.01]
+[charaPut V 1]
+[charaEffect V bit_talk_haboob_03 0,-150]
+[charaScale P 1.4]
+[charaFadein P 0 0,-200]
+[subRenderFadein #A 0.1 0,0]
+[charaShake P 0.07 0 2 0]
+
+[charaPut Z 2500,2500]
+[charaEffect Z bit_talk_10_LowLevel]
+[charaPut Y 2500,2500]
+[charaEffect Y bit_talk_10_LowLevel]
+
+[scene 143500]
+[wt 0.1]
+[se ad140 0 0]
+[seVolume ad140 1.0 0.2]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.2]
+
+[bgm BGM_MAP_126 0.1]
+
+？1：第六特異点……
+？2：そうだ……自分はアメリカの特異点を修正して……？
+？！
+
+[fowardEffect bit_talk_noise_gr]
+[se ad31]
+[wt 0.7]
+[overlayFadein L 0.1 0,-200]
+[wt 0.2]
+[charaFadeout L 0.1]
+[wt 1.0]
+[overlayFadein M 0.1 0,-200]
+[wt 0.2]
+[charaFadeout M 0.1]
+[wt 0.7]
+[seStop ad31 0.5]
+[fowardEffectStop bit_talk_noise_gr]
+[wt 1.5]
+
+？1：なにかが　　　　おかしい気がする
+？2：すごく　　違和感　　が
+？！
+
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+間も無く、砂漠を抜けます！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+よーし、砂丘を越えるよー！[r]みんな、ジャンプによる着地の衝撃に備えて！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+アクセル全開……！[r]飛びます、先輩！
+[k]
+
+[messageOff]
+
+[subRenderFadein #A 0.4 0,0]
+[wt 0.7]
+[fowardEffect bit_talk_noise_gr]
+[se ad31]
+[wt 0.7]
+[overlayFadein N 0.1 0,-200]
+[wt 0.2]
+[charaFadeout N 0.1]
+[wt 1.0]
+[overlayFadein O 0.1 0,-200]
+[wt 0.2]
+[charaFadeout O 0.1]
+[wt 0.7]
+[seStop ad31 0.5]
+[fowardEffectStop bit_talk_noise_gr]
+[wt 1.2]
+
+？1：なんだろう……
+？2：とても大事な事を忘れてるような[line 4]
+？！
+
+[messageOff]
+
+[shake 0.05 0 4 0]
+[charaFadeout A 0.1]
+[fowardEffect bit_talk_41_fs]
+[wt 1.2]
+[bgmStop BGM_MAP_126 0.7]
+[se ad7]
+[se ad542]
+[seVolume ad542 0 0.3]
+[wipeout upToDown 0.2 0.5]
+[seStop ad542 0.4]
+[wait wipe]
+[seStop ad140 0.2]
+[se ad68]
+[shakeStop]
+[charaShakeStop P]
+[fowardEffectStop bit_talk_41_fs]
+[charaEffectDestroy V bit_talk_haboob_03]
+[subRenderFadeout #A 0.1]
+[charaFadeout L 0]
+[charaFadeout M 0]
+[charaFadeout N 0]
+[charaFadeout O 0]
+[charaFadeout P 0]
+[charaLayer V normal]
+[charaLayer W normal]
+[charaLayer P normal]
+[charaLayer L normal]
+[charaLayer M normal]
+[charaLayer N normal]
+[charaLayer O normal]
+[subCameraOff]
+[scene 110100]
+[wt 0.3]
+[wipein downToUp 0.2 0.5]
+[wait wipe]
+[wt 1.5]
+[wipeout downToUp 0.15 0.5]
+[wait wipe]
+[scene 183300]
+[wipein upToDown 0.1 0.5]
+[wait wipe]
+[se ad74]
+[shake 0.05 0 6 0.4]
+[seStop ad74 1.0]
+[wt 1.5]
+
+
+[wt 1.2]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_5 0.1]
+
+＠マシュ
+[line 2]これが、十三世紀の中東……？
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+[cameraMove 1.0 -100,-0 1.25]
+[wait camera]
+[wt 1.0]
+[cameraMove 2.0 100,0 1.25]
+[wait camera]
+[wt 1.0]
+[cameraMove 1.0 0,0 1.01]
+[wait camera]
+[wt 1.0]
+
+[charaPut Z 1]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ムニエル
+気温４８度、相対湿度０％、[r]大気中の魔力密度０.３ミリグラム……
+[k]
+
+[charaFace D 8]
+
+＠ムニエル
+[#酷:ひで]え有様だ、とても人間の[r]生きられる環境じゃないぞ！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk B]
+[charaFace B 34]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+砂漠の砂嵐も酷かったけれど、こっちも同じぐらいに酷い。[r]しばらくは礼装に頼った道行きになりそうだね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+うむ……これが魔術王の仕事、という事だな。
+[k]
+
+＠ゴルドルフ
+魔術王は人理定礎を乱す事で特異点を生み出した。
+[k]
+
+＠ゴルドルフ
+その結果、人類史は不安定になり、魔術王は過去に[r]渡るまでの一切を燃やす、という偉業を行った。
+[k]
+
+[charaFace E 13]
+＠ゴルドルフ
+逆に言えば特異点にだけは人理焼却の波は来ない、[r]という事だった筈なのだが……。
+[k]
+
+＠ゴルドルフ
+ここまで人理定礎が乱れると、[r]特異点であれ例外はないのだろう。
+[k]
+
+[charaFace E 14]
+＠ゴルドルフ
+結論から言おう！[r]この大地はじき燃え尽きる！
+[k]
+
+＠ゴルドルフ
+オジマンディアス王が[r]聖杯を使わん理由もそれだ！
+[k]
+
+＠ゴルドルフ
+聖杯を使うまでもなく、[r]この大地は滅び去るのだからな！
+[k]
+
+[charaFace E 13]
+＠ゴルドルフ
+だが、この私が星と共にある限り[r]そんな事は許さん！
+[k]
+
+[charaFace E 14]
+＠ゴルドルフ
+分析を続けたまえ[#ムニエル君]！[r][%1]を最大限サポートするのだ！
+[k]
+
+？1：新所長が妙なやる気に満ちあふれてる……？
+？2：いや、それ以前に……何か……
+？！
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[wt 0.2]
+[se ad160]
+[seStop ad160 1.5]
+[wait se ad160]
+[wt 0.4]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠マシュ
+……！[r]先輩、囲まれています！　あれは……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 1.0]
+
+＠？？？
+食べ物……食べ物だ。[r]水もあるぞ……
+[k]
+
+＠？？？
+ヒヒ……まだ、俺達以外に生きてる奴がいたのか。
+[k]
+
+＠？？？
+もう、全部お[#終:しま]いだってのに……ヒヒ、ヒヒヒヒ！！
+[k]
+
+＠？？？
+ありがてぇ……ありがてぇ……[r]俺のために生き延びてくれてありがてぇ……！
+[k]
+
+＠？？？
+殺せ……殺せ……殺してくれ……ヒ、ヒヒ……[r]肉だ、肉だ、肉だ……
+[k]
+
+＠？？？
+あ、ああ……くそ……[r]『肉玉』になるのは嫌だぁ……ヒヒ……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠マシュ
+そんな……この人たち、人間です！[r]サーヴァントでも、幻像でもありません！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+……マシュ、[%1]。[r]峰打ちでも構わんが、それは可能な範囲でだ。
+[k]
+
+＠ゴルドルフ
+そいつらは半ば[#屍鬼:グール]化している。[r]ああなってしまったらヒトはもうだめだ。
+[k]
+
+＠ゴルドルフ
+憎み、妬み、傷付ける事でしか生きられまい。[r]生きながらえたとしてもそう長くはないだろう。
+[k]
+
+[charaFace E 14]
+＠ゴルドルフ
+ココはそういう時代になってしまっている。[r]そして我々は、その変節を拒絶する為に来たのだ！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+
+[charaFaceFade E 16 0.2]
+[wt 0.6]
+
+＠ゴルドルフ
+剣を取りたまえ、[%1]。
+[k]
+
+
+[charaFace E 3]
+＠ゴルドルフ
+なに、[#初めてではないのだ]。[wt 1.2][charaFaceFade E 1 0.2][r]今度は、[#上手くできるだろう]？
+[k]
+
+？1：（……違う！）
+？2：（この男は、新所長じゃない！）
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
+

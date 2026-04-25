@@ -1,0 +1,535 @@
+
+＄94-15-56-03-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 4056000 1 ヒッポリュテ]
+[charaSet B 5056000 1 フランソワ]
+[charaSet C 5057000 1 フランチェスカ]
+
+[charaSet D 5056000 1 フランソワ]
+[charaSet E 5057000 1 フランチェスカ]
+
+[sceneSet F 281002 1]
+
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaDepth C 3]
+[charaDepth F 4]
+[charaDepth D 5]
+[charaDepth E 6]
+
+[charaDepth Z 26]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[scene 281002]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_GOGH_1 0.1]
+
+＠ヒッポリュテ
+ふむ……目に見えて霊基が安定したな。[r]この繋がりがある以上、君が幻という事はないだろう。
+[k]
+
+[charaFace A 4]
+
+＠ヒッポリュテ
+感謝する、[%1]。[r]これで、より迅速にこの特異点を渡り歩けそうだ。
+[k]
+
+[charaFace A 1]
+
+＠ヒッポリュテ
+[%1]から聞いた話を[#纏:まと]めると……
+[k]
+
+＠ヒッポリュテ
+君は、カルデアという組織から[r]孤立してこの特異点にいるというわけか。
+[k]
+
+＠ヒッポリュテ
+しかも、既に修正した特異点によく似ている……と。[r]先刻まで、その確証はなかったという事だが？
+[k]
+
+？1：なんだか、夢を見ている時みたいな感じで……
+？2：夢で昔の自分になってるのに、変に思わないみたいな
+？！
+
+[charaFace A 16]
+
+＠ヒッポリュテ
+それも含めて、幻術の影響かもしれないな……。
+[k]
+
+[bgmStop BGM_GOGH_1 1.5]
+
+[charaFace A 1]
+
+＠ヒッポリュテ
+さて……。
+[k]
+
+[messageOff]
+[se ad51]
+[charaMove A 0,-5 0.3]
+[wt 0.6]
+
+＠ヒッポリュテ
+貴様らが特異点の元凶ならば、ここで始末すれば[r]そもそも移動の必要もなくなるわけだが？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_264 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠フランソワ
+おやおや、面白い推理だけど[r]証拠はあるのかな？
+[k]
+
+＠フランソワ
+こいつはとんだ電気椅子探偵だ！[wt 0.8][charaMoveEaseFSSideR B 400,0 1.0 easeOutQuint][se ad348 0 0.6][seStop ad348 1.2][wt 1.0][se ade238 0 0.3][charaFace B 16][charaShake B 0.03 1 1 0][r]助けてえ！？
+[k]
+
+
+[seStop ade238 0.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaShakeStop B]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠フランチェスカ
+同人作家の才能があるね！　だったら話が早いよ？[r]カルデアにはサバフェスってのが[line 2]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+せいっ！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace B 18]
+[charaFace C 18]
+[charaFadein C 0.1 -80,0]
+[charaFadein B 0.1 80,0]
+[wt 0.2]
+[cueSe SE_25 25_ade1245]
+[cueSeStop 25_ade1245 0.6]
+[charaPut Z 1]
+[charaEffect Z bit_talk_gold_slash_01 0,0 H]
+[wt 0.3]
+
+[effect bit_talk_blow03]
+[cueSe SE_24 24_ad1425]
+[cueSeStop 24_ad1425 1.5]
+[charaShake C 0.03 3 3 1.0]
+[charaShake B 0.03 3 3 1.0]
+[charaMove C 1000,0 0.5]
+[charaMove B 1200,0 0.5]
+[wt 0.4]
+
+[wipeout rectangleStripRightToLeft 0.2 1.0]
+[wait wipe]
+
+[cameraMove 0.1 0,0 1.01]
+[charaScale F 1.5]
+[charaFadein F 0.1 -330,-250]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.2 1.0]
+[wait wipe]
+
+[se ad322]
+[se ad914]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[shake 0.03 5 5 0.6]
+[charaPutFSL Z 100,-100]
+[charaRoll Z 90]
+[charaEffect Z bit_talk_impactlanding]
+[shake 0.03 2 2 0.6]
+[wt 1.0]
+
+＠プレラーティズ
+ギニャーズ！！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaRoll Z 0]
+[charaEffectDestroy Z bit_talk_impactlanding]
+[charaFadeout B 0.1]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[cameraHome 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠ヒッポリュテ
+[%1]、[r]この者達について詳しく語る前に言っておく。
+[k]
+
+＠ヒッポリュテ
+奴らの話の大半は妄言と虚言だ。[r]こちらから質問する時以外の話は拳で聞き流すといい。
+[k]
+
+？1：こぶしで、ききながす
+？2：ま、まあ、それは最後の手段という事で……
+？！
+
+[messageOff]
+[se ade238 0 0.3]
+[charaScale E 1.1]
+[charaScale D 1.1]
+[charaTalk E,D]
+[charaFace E 22]
+[charaFace D 18]
+[charaFadein F 0.5 -330,-250]
+[charaFadeinFSSideR E 0.5 120,-70]
+[charaFadeinFSSideR D 0.5 320,-70]
+[charaShake E 0.03 1 1 2.0]
+[charaShake D 0.03 1 1 2.0]
+[wt 1.5]
+
+[seStop ade238 0.5]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 10]
+
+＠E：フランチェスカ
+やだ……この人類最後の希望、優しい……[r]トゥンク……
+[k]
+
+＠E：フランチェスカ
+トントゥ……？[r]やっぱりトントゥにしちゃう……？
+[k]
+
+[charaTalk D]
+[charaFace D 14]
+
+＠D：フランソワ
+流石、この殺伐とした女王様とは違うね！[r][#文明開化:ぶんめいかいか]の音がするよ！　ザンギリ頭を撫でさせて！
+[k]
+
+[messageOff]
+[charaTalk A,D]
+[charaFace A 2]
+[seStop ade238 0.5]
+[charaFadeout F 0.5]
+[charaFadeout E 0.5]
+[charaFadeout D 0.5]
+[wt 0.7]
+
+＠ヒッポリュテ
+一応言っておくが……
+[k]
+
+＠ヒッポリュテ
+確かに我々は武を誉れとする部族だが、[r]なんでも暴力で解決するわけではないぞ？
+[k]
+
+＠ヒッポリュテ
+この二人……二人？　が特別なだけだ。[r]実際、今の攻撃も[#喰らったフリをしているだけ]だからな。
+[k]
+
+[charaFace A 1]
+
+＠ヒッポリュテ
+こいつらは幻術に長けている。
+[k]
+
+＠ヒッポリュテ
+この特異点を聖杯で支配しているのならば、[r]離れた場から幻術で分身を出しているだけだろう。
+[k]
+
+＠ヒッポリュテ
+安全な位置で高みの見物をしつつ、[r]こちらを煽るタイプの魔物だと思った方がいい。
+[k]
+
+[charaFace A 4]
+
+＠ヒッポリュテ
+だからこそ、耳障りになったら幻術を[r]『散らす』のが一番手っ取り早いというわけだ。
+[k]
+
+[messageOff]
+[se ade238 0 0.3]
+[charaTalk E,D,A]
+[charaFace E 22]
+[charaFace D 17]
+[charaFadein F 0.5 -330,-250]
+[charaFadeinFSSideR E 0.5 120,-70]
+[charaFadeinFSSideR D 0.5 320,-70]
+[charaShake E 0.03 1 1 1.0]
+[charaShake D 0.03 1 1 1.0]
+[wt 1.5]
+[charaFadeout A 0.1]
+
+[bgmStop BGM_EVENT_264 1.0]
+[seStop ade238 0.2]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFace D 0]
+
+＠E：フランチェスカ
+なあんだ、バレちゃってたんだねー？[r]失敗失敗！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMoveEaseFSSideR E 120,0 0.7 easeOutCubic]
+[charaMoveEaseFSSideR D 320,0 0.7 easeOutCubic]
+[se ad984]
+[wt 1.0]
+
+[charaMoveFSSideR E 70,0 0.5]
+[charaMoveFSSideR D 270,0 0.5]
+[se ad987]
+[seStop ad987 1.6]
+[se ad988]
+[seStop ad988 1.6]
+[charaFadeout E 0.4]
+[charaFadeout D 0.4]
+[wt 0.5]
+[charaFadeout F 0.4]
+[wt 0.2]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein C 0.4 -50,0]
+[charaFadein B 0.4 110,0]
+[charaMove C -80,0 0.5]
+[charaMove B 80,0 0.5]
+[wt 1.0]
+
+[bgm BGM_EVENT_262 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 15]
+
+＠フランソワ
+おやおや、僕らの事をよく知ってるんだね……。
+[k]
+
+＠フランソワ
+神性が混じってるせいかな？
+[k]
+
+＠フランソワ
+君、聖杯戦争の時の記憶も[r]本当にしっかり引き継いでるみたいだねえ？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+いくつかの世界線が[r]混じっているような感覚はあるがな。
+[k]
+
+＠ヒッポリュテ
+同じ土地での聖杯戦争についても、[r]経緯と結果が違う記憶がいくつかある……。
+[k]
+
+[charaFace A 1]
+
+＠ヒッポリュテ
+そんな事より、お前達の目的はなんだ？
+[k]
+
+＠ヒッポリュテ
+聖杯を使って、カルデアが過去に修正した[r]特異点を再現した理由があるのだろう？
+[k]
+
+＠ヒッポリュテ
+……いや、お前達の場合、本当にカルデアを[r]侮辱したいというだけの可能性もあるが……。
+[k]
+
+[messageOff]
+[charaScale F 1.3]
+[charaScale E 1.2]
+[charaScale D 1.2]
+[charaTalk D,A]
+[charaFace E 0]
+[charaFace D 0]
+[charaFadein F 0.6 0,-300]
+[charaFadein E 0.6 -100,20]
+[charaFadein D 0.6 100,20]
+[charaMove F 0,-350 30.0]
+[charaMove E -100,-20 30.0]
+[charaMove D 100,-20 30.0]
+[wt 0.8]
+[charaFadeout A 0.1]
+[charaFace C 0]
+[charaFace B 0]
+[charaFadein C 0.1 -80,0]
+[charaFadein B 0.1 80,0]
+
+＠D：フランソワ
+流石に、それをネタバラシする程バカじゃないよ？
+[k]
+
+[charaFace D 5]
+
+＠D：フランソワ
+ま、カルデアのマスターで[r]遊びたかった……っていうのはあるけど。
+[k]
+
+[charaTalk E]
+[charaFace E 15]
+
+＠E：フランチェスカ
+せいぜい足掻いてみせるといいよ？
+[k]
+
+[charaFace E 14]
+
+＠E：フランチェスカ
+私達がこの特異点に用意した、[r]最強の『敵』を倒せるならね！！
+[k]
+
+[charaTalk D]
+[charaFace D 7]
+
+＠D：フランソワ
+……いや、最強は言い過ぎかな。
+[k]
+
+＠D：フランソワ
+大蜘蛛とか混沌銀河航行艦とか[r]服部先生と比べられると困るし……。
+[k]
+
+[charaFace D 5]
+
+＠D：フランソワ
+ともかく、これは僕達と君とのゲームだよ！　無事に[r]クリアして、カルデアに帰れるかどうかっていうね！
+[k]
+
+[messageOff]
+[charaTalk B,D]
+[charaFadeout E 0.4]
+[charaFadeout D 0.4]
+[charaFadeout F 0.4]
+[wt 0.6]
+
+[charaFace B 0]
+
+＠フランソワ
+じゃあね、[%1]君。
+[k]
+
+[charaFace B 5]
+
+＠フランソワ
+せいぜい、君の悶える姿を観察させてもらうよ！[r]ポップコーンとコーラを片手にね！
+[k]
+
+[charaTalk off]
+[charaFace C 14]
+[charaFace B 14]
+
+＠プレラーティズ
+さよならBYE-BYEまた会う日まで！
+[k]
+
+[bgmStop BGM_EVENT_262 2.0]
+
+[messageOff]
+[se ad236]
+[fowardEffect bit_talk_smoke_pon]
+[wt 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 3.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+行ったか……。
+[k]
+
+？1：……純粋に、迷惑極まりない！？
+？2：明確な目的が無いケースだと、凄く困る……
+？！
+
+＠ヒッポリュテ
+同感だが、こうして巻き込まれてしまった以上は[r]無視をするわけにもいくまい。
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace A 0]
+
+＠ヒッポリュテ
+とりあえず今日は休むといい。
+[k]
+
+＠ヒッポリュテ
+奴らの用意したという『敵』には心当たりがある。[r]君達を荒野で襲った騎士達の首魁だろう。
+[k]
+
+＠ヒッポリュテ
+明日、奴らの本営が見えるであろう位置にまで案内する。
+[k]
+
+＠ヒッポリュテ
+まずは……現状での戦力差を[r]正確に把握しておく必要があるだろうからな。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
