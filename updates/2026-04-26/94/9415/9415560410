@@ -1,0 +1,229 @@
+
+
+＄94-15-56-04-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 1098355100 1 名も無きアサシン]
+[charaSet B 4056000 1 ヒッポリュテ]
+[charaSet C 1098274900 1 現地の古精霊]
+[charaSet D 1098274900 1 現地の古精霊]
+[sceneSet E 280900 1]
+[charaScale E 1.5]
+[sceneSet F 280900 1]
+
+[charaSet G 98115000 1 エフェクト用]
+[charaSet H 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth F 1]
+[charaDepth A 2]
+[charaDepth B 3]
+[charaDepth C 4]
+[charaDepth D 5]
+
+[charaDepth G 6]
+[charaDepth H 7]
+
+[scene 280900]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_257 0.1]
+
+
+＠名も無きアサシン
+問おう……
+[k]
+
+＠名も無きアサシン
+貴様は……聖杯を求める魔術師か……？
+[k]
+
+？1：聖杯……！
+？2：それは、確かに目的だけど……
+？！
+
+[messageOff]
+[se ad7]
+[se ad1006]
+[seVolume ad1006 0 0.5]
+[charaMoveScaleEase A 1.2 0.2 easeOutQuint]
+[charaMoveEase A 0,40 0.2 easeOutQuint]
+[charaFadeout A 0.2]
+[wt 0.2]
+[scene 10000 0.2]
+[charaScale A 1.8]
+[charaScale B 1.8]
+[wt 0.2]
+
+[se ad1014]
+[effect bit_talk_14]
+[wt 0.5]
+[fadeout black 0.1]
+[wait fade]
+
+[charaTalk off]
+[charaFadein E 0.1 0,-300]
+[charaFace A 0]
+[charaFadein A 0.1 -180,50]
+[charaFace B 9]
+[charaFadein B 0.1 180,50]
+[wt 0.1]
+[charaShake A 0.05 1 1 0]
+[charaShake B 0.05 1 1 0]
+[scene 280900]
+
+[fadein black 0.5]
+[se adm33 0.3]
+[se ad468]
+[se ad1012]
+[wait fade]
+[wt 1.0]
+[seStop adm33 0.2]
+[charaTalk on]
+
+
+＠ヒッポリュテ
+待て、アサシン！
+[k]
+
+[messageOff]
+[seStop ad468 0.2]
+[seStop ad1012 0.2]
+[se ad1013]
+[charaMove A -160,50 0.1]
+[wt 0.1]
+[se ad7]
+[charaMoveEase A -800,50 0.4 easeOutCubic]
+[wt 0.1]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[cameraMove 0 0,-20 1.2]
+[charaFadeout E 0.1]
+[charaShakeStop A]
+[charaShakeStop B]
+[charaScale A 1.0]
+[charaScale B 1.5]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[subCameraOn 1]
+[charaFace B 9]
+[charaLayer E sub #A]
+[charaLayer B sub #A]
+[charaFadein E 0.1 -200,-300]
+[charaFadein B 0.1 -45,150]
+[subCameraFilter #A maskEdge cut359_mask16 4 0,0,0,255 0]
+
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[se ad671]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.2 300,0]
+[charaMoveEase A 0,0 0.6 easeOutCubic]
+[wt 1.5]
+[charaEffect A bit_talk_miasma_aura]
+[cueSe SE_23 23_ade908 0.5 1.0]
+[wt 2.4]
+
+[seVolume 23_ade908 1.0 0.4]
+
+[subRenderFadeinFSSideR #A 0.2 420,-100]
+[subRenderMoveEaseFSSideR #A 400,-150 0.2 easeOutSine]
+
+＠ヒッポリュテ
+……っ！？
+[k]
+
+？1：これって……
+？2：騎士の人たちと同じ……！！
+？！
+
+＠ヒッポリュテ
+アサシン……瘴気に毒されたのか！？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_257 1.0]
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[seVolume 23_ade908 1.0 1.0]
+
+＠名も無きアサシン
+……[line 2]『[#非想巡霊:ザバーニーヤ]』[line 2]……
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[charaBackEffect A bit_talk_miasma_eruption]
+[cueSe SE_23 23_ade909]
+[wt 1.6]
+[charaPutFSL G -440,-200]
+[charaEffect G bit_talk_miasma_eruption]
+
+[charaPutFSSideR H 440,-200]
+[charaEffect H bit_talk_miasma_eruption]
+
+[bgm BGM_EVENT_258 0.1]
+[cameraHome 2.0]
+[charaPutFSL C -440,-20]
+[charaPutFSR D 440,-20]
+[charaSpecialEffect C appearance 1 1.0]
+[charaSpecialEffect D appearance 1 1.0]
+[wt 1.0]
+[charaBackEffectStop A bit_talk_miasma_eruption]
+[charaEffectStop G bit_talk_miasma_eruption]
+[charaEffectStop H bit_talk_miasma_eruption]
+[wt 3.0]
+
+[cueSeStop 23_ade909 0.4]
+[cueSeStop 23_ade908 0.4]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaEffectDestroy A bit_talk_miasma_aura]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+
+[charaLayer B normal]
+[charaScale B 1.0]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+＠ヒッポリュテ
+……！[wt 0.5][charaFace B 9][r]来るぞ、マスター！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_258 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

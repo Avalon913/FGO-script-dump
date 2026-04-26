@@ -1,0 +1,1572 @@
+
+＄94-15-56-04-4-1
+
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 4056000 1 ヒッポリュテ]
+[charaSet B 3039001 1 ガレス]
+[charaSet D 1098360200 1 リチャード]
+[charaSet E 1098301720 1 偽ゲオルギウス]
+[charaSet F 5056000 1 フランソワ]
+[charaSet G 5057000 1 フランチェスカ]
+[charaSet H 1098355300 1 リチャード_後ろ姿風シルエット]
+
+[charaSet I 98014000 1 一般兵]
+[charaRollAxis I y 180 0 0]
+[charaSet J 98014000 1 一般兵]
+[charaSet K 1098234300 1 弓兵]
+[charaSet L 1098234200 1 アンティオキアの騎士]
+[charaSet M 98014000 1 一般兵]
+
+[charaSet N 1098272600 1 ドレッドノート]
+[charaSet O 4056000 1 ヒッポリュテ_演出用]
+
+[charaSet P 1098354710 1 偽りの十字軍の騎士_漆黒の枝]
+[charaSet Q 1098354710 1 偽りの十字軍の騎士_漆黒の枝]
+[charaSet R 1098354710 1 偽りの十字軍の騎士_漆黒の枝]
+[charaSet S 1062001 1 黒姫_第二]
+[charaSet T 4008001 1 黒髭_第二]
+
+
+[charaSet C 1098257900 1 マシュ]
+
+
+[sceneSet U 10000 1]
+[charaScale U 1.1]
+[sceneSet V 134601 1]
+[sceneSet W 134601 1]
+[sceneSet X 110101 1]
+
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth U 1]
+[charaDepth N 1]
+[charaDepth M 2]
+[charaDepth L 3]
+[charaDepth K 4]
+[charaDepth J 5]
+
+[charaDepth F 7]
+[charaDepth G 8]
+[charaDepth B 9]
+[charaDepth C 10]
+[charaDepth E 11]
+[charaDepth A 12]
+
+[charaDepth V 15]
+[charaDepth O 16]
+[charaDepth H 17]
+
+[charaDepth W 19]
+[charaDepth D 20]
+[charaDepth I 21]
+
+[charaDepth Z 25]
+[charaDepth Y 26]
+
+[cameraMove 0.1 0,0 1.01]
+
+[scene 134601]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+＠ドレッドノート
+………………
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaShake N 0.05 3 3 0.4]
+[charaMoveEase N 0,-20 0.8 easeOutSine]
+[se ade79]
+[seStop ade79 1.0]
+[wt 0.3]
+[charaPut Z 2000,2000]
+[charaEffect Z bit_talk_impactlanding]
+[wt 0.3]
+[charaPut Z 0,0]
+[shake 0.02 5 5 0.5]
+[wt 2.0]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+[charaEffectDestroy Z bit_talk_impactlanding]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+やっと止まったか。[r]城門までギリギリだったな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠ガレス
+ものすごく頑丈でしたね……！[r]確かにこんなのが城門にぶつかってたら大変でした。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 0,-20]
+[wt 1.0]
+
+[bgm BGM_EVENT_257 0.1]
+
+[branchQuestNotClear lblNotClear02 94086921]
+
+？1：気を付けて！
+？2：ドレッドノートは、ここからが強い！
+？！
+
+[branch lblConf02]
+[label lblNotClear02]
+
+？1：なんだか嫌な予感がする……
+？2：！！　離れて！！
+？！
+
+
+[label lblConf02]
+
+[charaEffect N bit_talk_ranmaru_eye1 -161,23]
+[se ad971]
+[wt 1.0]
+[seStop ad971 1.0]
+[wt 1.0]
+
+[charaMove N 0,0 1.4]
+[shake 0.05 3 3 1.0]
+[se ad619]
+[seStop ad619 1.2]
+[se ade79]
+[seStop ade79 1.0]
+[wt 2.2]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+何っ……！　こいつ、まだ！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ガレス
+危ない！　マスター！[r]私の後ろに！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+＠ドレッドノート
+[line 14]
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_257 1.0]
+
+[charaPut Z 100,0]
+[charaRollAxis Z y 180 0]
+[charaEffect Z bit_talk_rarrow01be]
+[cueSe SE_26 26_ade1397 1.0 1.0]
+[wt 0.8]
+[charaEffect Z bit_talk_gold_slash_02 -190,0]
+[wt 0.6]
+[effect bit_talk_explosion_triple02]
+[se ad609]
+
+[fadeout white 1.0]
+[wait fade]
+[seStop ad609 2.0]
+
+[cameraHome 0.1]
+
+[charaEffectDestroy N bit_talk_surround_flames]
+[charaFadeout N 0.1]
+[wt 1.0]
+
+[charaScale C 1.4]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.4 190,25]
+[backEffect bit_talk_explosion_triple02_bk]
+[wt 0.5]
+
+[se ad666]
+[fadein white 1.5]
+[charaMoveEase C 180,25 0.5 easeOutSine]
+[wt 0.5]
+[seStop ad666 0.2]
+[wait fade]
+
+[wt 0.2]
+[se ad658]
+[charaCrossFade C 1098257910 2 0.3]
+[wait charaCrossFade C]
+
+
+
+[bgm BGM_EVENT_82 0.1]
+
+＠マシュ
+ご無事ですか！　先輩！　ガレスさん！
+[k]
+
+？1：……マシュ！！！！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale C 1.0]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠ガレス
+マシュ殿！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+先輩との再会を喜びたい所ですが、[r]今はここを離れましょう！
+[k]
+
+＠マシュ
+下手をすれば、巻き込まれてしまいますので！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+あれは……敵の本陣を攻撃していた光の槍か？[r]威力はだいぶ落ちていたようだが……。
+[k]
+
+[bgmStop BGM_EVENT_82 1.5]
+
+＠？？？
+[charaTalk D]
+ああ、今のは折れてた[#箒:ほうき]を使ったからな。
+[k]
+
+＠？？？
+[charaTalk D]
+次は儀式用の剣だ。少し痛いぞ？
+[k]
+
+[messageOff]
+[charaScale O 0.85]
+[charaScale H 1.4]
+[charaScale V 1.2]
+
+[charaTalk O,H]
+[charaFace O 12]
+[charaFace H 0]
+[charaFadein O 0.5 -350,-60]
+[charaFadein H 0.5 330,30]
+[charaFadein V 0.5 0,-270]
+[charaMoveEase O -370,-60 0.5 easeOutSine]
+[charaMoveEase H 350,30 0.5 easeOutSine]
+[cueSe SE_21 21_ade580]
+[cueSeStop 21_ade580 1.7]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[wt 1.4]
+
+[charaTalk O]
+
+＠O：ヒッポリュテ
+お前は……。
+[k]
+
+[messageOff]
+[charaScale D 1.3]
+[charaScale W 1.45]
+
+[charaTalk D,O]
+[charaFace D 0]
+[charaFadein D 0.5 0,200]
+[charaFadein W 0.5 50,-220]
+[charaMoveEase D 0,-20 1.0 easeOutSine]
+[charaMoveEase W 50,-440 1.0 easeOutSine]
+[cueSe SE_25 25_ad1466]
+[wt 0.2]
+[cueSeStop 25_ad1466 0.5]
+[se ad984]
+[seVolume ad984 0 0.7]
+[wt 1.0]
+
+[bgm BGM_EVENT_266 0.1]
+
+[charaFadeout O 0]
+[charaFadeout H 0]
+[charaFadeout V 0]
+[wt 0.5]
+
+[charaFaceFade D 8 0.2]
+[se ad39]
+[charaEffect D bit_talk_36]
+[wt 0.5]
+
+＠D：？？？
+[f large]『[#永久に遠き勝利の剣:エ　　　　ク　　　　ス　　　　カ　　　　リ　　　　バ　　　　ー]』！！！
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[wait fade]
+
+[charaEffectDestroy D bit_talk_36]
+[charaFadeout D 0.1]
+[charaFadeout W 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[effect bit_talk_rch_excalibur_h]
+[cueSe SE_26 26_ade1397]
+
+[fadeout white 0.6]
+[wait fade]
+
+[charaFadeout N 0.1]
+
+[charaScale D 1.0]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+[charaEffect D bit_talk_36]
+[wt 1.0]
+
+？1：えっ……
+？2：エクスカリバー！？
+？！
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+＠D：？？？
+エクスカリバー！！[r]エクス……カリバー！！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaEffectDestroy D bit_talk_36]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+[wt 0.2]
+
+[effect bit_talk_rch_excalibur_h]
+[cueSe SE_26 26_ade1397]
+[wt 2.1]
+[charaMove N -20,0 0.5]
+[charaShake N 0.03 4 4 0.5]
+[wt 0.5]
+[charaMove N -40,0 0.3]
+[charaShake N 0.03 4 4 0.3]
+[wt 1.2]
+
+[effect bit_talk_rch_excalibur_h]
+[cueSe SE_26 26_ade1397]
+[wt 2.1]
+[charaMove N -60,0 0.5]
+[charaShake N 0.03 4 4 0.5]
+[wt 0.5]
+[charaMove N -80,0 0.3]
+[charaShake N 0.03 4 4 0.3]
+[wt 1.0]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠D：？？？
+むっ……剣が溶けたか……。[r]次！！
+[k]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.3 -350,0]
+[charaMove I -330,0 0.3]
+[cueSe SE_25 25_ad1538]
+[se ad442]
+
+＠一般兵
+はっ！！　こちらの手斧を！
+[k]
+
+[charaMove I -350,0 0.3]
+[charaFadeout I 0.2]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠D：？？？
+よし！[r]これより[#この手斧をエクスカリバーとする]！
+[k]
+
+[se ad39]
+[charaEffect D bit_talk_36]
+[charaFace D 8]
+
+＠D：？？？
+エクス……カリバー！！！
+[k]
+
+[messageOff]
+[seStop ad39 0.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaEffectDestroy D bit_talk_36]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+[wt 0.2]
+
+[effect bit_talk_rch_excalibur_v]
+[cueSe SE_26 26_ade1398]
+[wt 2.5]
+[se ad477]
+[wt 0.5]
+[fadeout white 0.6]
+[wait fade]
+
+[cueSeStop 26_ade1398 1.5]
+[seStop ad477 1.5]
+[effectStop bit_talk_rch_excalibur_v]
+[effectDestroy]
+
+[cameraMove 0.1 0,0 1.01]
+[charaFadeout N 0.1]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+？1：待って待って
+？2：おかしい、何かおかしい
+？！
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠ガレス
+混乱なさるのは解ります、マスター。
+[k]
+
+＠ガレス
+あの方は、その……手にした武器を全て[r]擬似的な聖剣にする力をお持ちでして……。
+[k]
+
+＠ガレス
+私も最初に見た時は、我らが王の聖剣が[r]バーゲンセールに並べられたような複雑な気分でした。
+[k]
+
+[charaFace B 5]
+
+＠ガレス
+しかし、本物を略奪されたわけではありませんし……[r]悪意無くあの銘を使っているのは解ります。
+[k]
+
+[charaFace B 0]
+
+＠ガレス
+……なにより、民を守る為に振るわれるのならば、[r]あれもまた一つの聖剣には違いありません！
+[k]
+
+？1：この騎士、いい子過ぎる……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠マシュ
+マスター！
+[k]
+
+＠マシュ
+ご無事ですか！？[r]怪我や精神の不調はありませんか！？
+[k]
+
+[charaFaceFade C 25 0.15]
+
+＠マシュ
+良かった……本当に良かった……！！
+[k]
+
+？1：そっちこそ、本当に良かった！！
+？2：……本物だよね？
+？！
+
+[charaFace C 5]
+
+＠マシュ
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+む……潮目が変わったようだな。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+[wt 0.2]
+
+[cueSe SE_24 24_ad1390]
+[cueSeVolume 24_ad1390 0 0.8]
+[cueSe SE_21 21_ad1144]
+[cueSeVolume 21_ad1144 0 0.6]
+[wt 1.0]
+[seStop 24_ad1390 2.0]
+[seStop 21_ad1144 2.0]
+[shake 0.03 3 3 1.5]
+[se ade79]
+[seStop ade79 2.5]
+[charaFadeout N 1.0]
+[wt 2.0]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFace J 1]
+[charaFadein I 0.1 -256,0]
+[charaFadein J 0.1 256,0]
+
+＠I：一般兵
+おお！　逃げていくぞ！
+[k]
+
+[clear]
+[charaTalk J]
+
+＠J：一般兵
+やった！　やったぞー！！
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[cueSe SE_24 24_ade1077]
+[cueSeVolume 24_ade1077 0 0]
+[cueSeVolume 24_ade1077 1.0 0.5]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+＠弓兵
+流石は[#獅子心王]様だ！！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠アンティオキアの騎士
+獅子心王最強！　獅子心王最強！！　獅子心王最強！！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠一般兵
+うおおおおおリーチャァード！　リーチャァード！
+[k]
+
+？1：お祭り騒ぎだ！
+？2：獅子心……王……！？
+？！
+
+[cueSeStop 24_ade1077 1.5]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠ガレス
+はい！　私たちが来るより前から、この聖都を守っていた[r]はぐれサーヴァントの方だそうです！
+[k]
+
+[charaFace B 18]
+
+＠ガレス
+獅子心王リチャードⅠ世……[r]その二つ名に違わず、とても勇猛な方ですね！
+[k]
+
+？1：………………
+？！
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[fadeout white 0.7]
+[bgm BGM_EVENT_266 0.7 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[charaDepth P 1]
+[charaDepth R 2]
+[charaDepth Q 3]
+
+[charaDepth S 21]
+[charaDepth T 22]
+
+[scene 183301]
+[cameraHome 0.1]
+[charaTalk off]
+[charaFace P 0]
+[charaFadein P 0.1 -320,0]
+[charaFace Q 0]
+[charaFadein Q 0.1 1]
+[charaFace R 0]
+[charaFadein R 0.1 320,0]
+
+[effect bit_sepia01_depth_fs]
+[wt 0.3]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.1]
+
+＠軍勢
+黒き獅子の名の下に！
+[k]
+
+＠軍勢
+[#獅子心王]の名の下に！！
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[bgm BGM_EVENT_266 1.5 0.7]
+[wait fade]
+
+[effectDestroy bit_sepia01_depth_fs]
+
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+
+[scene 134601]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.3]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+……うむ。[r][%1]の言いたい事は解る。
+[k]
+
+＠ヒッポリュテ
+だが、あの敵陣で見かけたような瘴気は感じられない。[r]それに……少なくとも敵であるようには見えない。
+[k]
+
+[bgmStop BGM_EVENT_266 1.5]
+[charaFace A 0]
+
+＠ヒッポリュテ
+まずは、話を聞いてみても良いのではないか？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+[se ad984]
+[wt 0.4]
+
+＠D：獅子心王？
+おーい、大丈夫か？
+[k]
+
+[bgm BGM_EVENT_104 0.1]
+[charaFace D 9]
+
+＠D：獅子心王？
+む……この時代には見合わぬ服装……。[r]もしや、君がカルデアのマスターか？
+[k]
+
+[charaFace D 0]
+
+＠D：獅子心王？
+俺はリチャードだ。[r]はぐれサーヴァントの身だが、よろしく頼む。
+[k]
+
+？1：[%1]です
+？2：あなたが、この聖都の領主……？
+？！
+
+[charaFace D 4]
+
+＠リチャード
+聖都？[r]ああ、まあ確かにそう呼ばれていた街の一つだが……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+マスター、その事で一つお伝えしておくべきことが。
+[k]
+
+＠マシュ
+ここが第六特異点に酷似している事は驚きましたが……[r]この都市は位置的にもあの聖地ではありません。
+[k]
+
+＠マシュ
+キャメロットでも、エルサレムでもないんです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠リチャード
+ああ、かの聖地はこの特異点には含まれていないぞ？[r]つくづく、俺は足を踏み入れられぬ運命らしい。
+[k]
+
+[charaFace D 8]
+
+＠リチャード
+この街こそは、[#アンティオキア]！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠偽ゲオルギウス
+……え？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠リチャード
+この時代には破壊されている筈なのに何故か健在で、[r]何故か領主もおらず、何故か俺が領主代行になった街だ！
+[k]
+
+？1：かっこよく宣言してるのに
+？2：不確定情報が多い……
+？！
+
+[charaFace D 11]
+
+＠リチャード
+ハハハ、[r]カルデアのマスターは細かい事を気にするタイプか？
+[k]
+
+[charaFace D 4]
+
+＠リチャード
+まあ、強いて言うなら……
+[k]
+
+[charaFace D 5]
+
+＠リチャード
+俺の母……アリエノール・ダキテーヌの[#従兄弟:い　と　こ]殿が[r]このアンティオキアの領主だったからな。
+[k]
+
+＠リチャード
+親戚繋がりで、なにやらなし崩しで[r]領主をやる事になった。
+[k]
+
+[charaFace D 4]
+
+＠リチャード
+はぐれサーヴァントの割には、[r]土地の知識があまり流れ込んで来なかったんだが……。
+[k]
+
+[charaFace D 9]
+
+＠リチャード
+そこにいる盾兵のマシュから話を聞いて驚いたぞ。
+[k]
+
+＠リチャード
+さっきも少し触れたが、この時代には、[r]もうアンティオキア公国は滅んでたんだな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+『この時代』という事は、[r]年代がハッキリ解っているのか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠リチャード
+ああ、砦に集まった者達の話を聞くに……[r]今は、１２７３年前後のようだ。時々ズレはあるが。
+[k]
+
+[charaFace D 9]
+
+＠リチャード
+ところで、君は？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+おっと……すまない。[r][#ここでは]初対面だったな。
+[k]
+
+[charaFace A 4]
+
+＠ヒッポリュテ
+ヒッポリュテだ。
+[k]
+
+＠ヒッポリュテ
+私もはぐれサーヴァントだ。[r]今はこのカルデアのマスターと仮契約をしている。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠リチャード
+ヒッポリュテ……！？[r]もしかして、ギリシャ神話の有名な女部族の長か！？
+[k]
+
+＠リチャード
+凄いな！　本物か！？
+[k]
+
+[charaFace D 1]
+
+＠リチャード
+色々と話を聞きたいが……くっ……今は我慢だ、[wt 1.2][se ad181][seVolume ad181 0 0.3][charaShake D 0.1 2 2 0][charaMove D 0,-6 1.0][r]がんばれ俺、耐えろ俺……！
+[k]
+
+[messageOff]
+[charaFace D 6]
+[charaShakeStop D]
+[se ad7]
+[charaMove D 0,0 0.2]
+[wt 0.5]
+
+＠リチャード
+よし！　耐えた！[r]だが一応、もう一度だけ聞いておこう、本物か！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+……境界記録帯に過ぎぬサーヴァントに対して[r]『本物か！？』と問われても答えづらいのだが……。
+[k]
+
+[charaFace A 0]
+
+＠ヒッポリュテ
+まあ、自己が何者かと問われれば、[r]私はアマゾネスの女王ヒッポリュテに相違無い。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠マシュ
+ヒッポリュテさんですか……！[r]ということは、ペンテシレイアさんの……！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+マシュ……。そうか……君とも今が初対面だったな。[r]あの道化師どものせいで混乱させられる。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠マシュ
+[FFFFFF]？[-]
+[k]
+
+？1：詳しくは後で説明するよ
+？2：本当に本物だ……
+？！
+
+[charaFace C 1]
+
+＠マシュ
+はい！[r]まずは、お疲れかと思いますので、城壁内へどうぞ！
+[k]
+
+＠マシュ
+リチャードさんの計らいで、カルデアの拠点として[r]建物を一つ提供していただけましたので……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠リチャード
+なに、敬愛する円卓の一人と邂逅できたのだ。[r]カルデアにはそれだけで返せぬ恩がある。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠ガレス
+うう、我が王や兄様たちならともかく、[r]私がそう言われるとやはり気恥ずかしいです……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠マシュ
+ここに来てから半日ほど、[r]ずっと質問を受けておられましたからね……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠リチャード
+いや、昼間は質問攻めにして本当にすまなかった。[r]憧れを前にして好奇心が止められなくて……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠ガレス
+いえ！　お気になさらず！
+[k]
+
+[charaFace B 1]
+
+＠ガレス
+私の事はともかく、[r]後世の統治者が円卓を……
+[k]
+
+＠ガレス
+我が王を敬愛してくださっていた事が、[r]本当に嬉しかったのです！
+[k]
+
+？1：まっすぐ過ぎて[#眩:まぶ]しい
+？2：自分の心の[#澱:よど]みが洗い流される……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[bgmStop BGM_EVENT_104 1.5]
+
+[charaTalk F]
+[charaFace G 0]
+[charaFace F 5]
+[charaFadein G 0.1 -80,0]
+[charaFadein F 0.1 80,0]
+
+＠フランソワ
+本当に良い子だよねぇ……。[r]ウザ絡みに耐えてよく頑張った！　感動した！
+[k]
+
+[charaTalk G]
+[charaFace G 5]
+
+[bgm BGM_EVENT_264 0.1]
+
+＠フランチェスカ
+プレラーティ平和賞を進呈しちゃうよ！[r]嘘だけどね！
+[k]
+
+？1：また[#澱:よど]みが溜まった
+？2：散った散った！　シッシッ！！
+？！
+
+[charaTalk F]
+[charaFace F 17]
+
+＠フランソワ
+人を虫みたいに！　酷い！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 30]
+[charaFadein C 0.1 1]
+[charaMove C 0,-10 0.3]
+[cueSe SE_21 21_ad1064]
+[cueSeStop 21_ad1064 0.6]
+
+＠マシュ
+あ、あなたは……誘拐犯！？[r]そして、この特異点の黒幕……プレラーティ！
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠フランソワ
+フッフッフ……その通りさ！[r]僕こそは聖杯を使ってこの特異点を生み出した黒幕！
+[k]
+
+[charaFace F 5]
+
+
+＠フランソワ
+その名もフランソワ[line 2][wt 1.0][charaTalk D][r]             [align right]『[#永久に遠き:エ　　ク　　ス][line 5][align][se ad39][seVolume ad39 0 0.6][bgm BGM_EVENT_264 0.5 0]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+[charaEffect D bit_talk_36]
+
+＠リチャード
+　　[line 4][#勝利の剣:カ　リ　バ　ー]』！！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaEffectDestroy D bit_talk_36]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+[wt 0.2]
+
+[effect bit_talk_rch_excalibur_v]
+[cueSe SE_26 26_ade1398]
+[wt 2.5]
+[se ad477]
+[wt 2.6]
+[charaFace F 7]
+[seStop ad477 2.0]
+[cueSeStop 26_ade1398 2.0]
+[effectStop bit_talk_rch_excalibur_v]
+[wt 1.1]
+
+[charaPut Y 1]
+[charaEffect Y bit_talk_06]
+[wt 1.0]
+
+＠フランソワ
+あ……僕が……消える……？[r]嘘……こんなところ……で……？
+[k]
+
+＠フランソワ
+いや……だ……[r]　　　もっと……人間で……遊び……[line 2]
+[k]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect F flashErasure 1 2.0]
+[wait charaSpecialEffect F]
+[charaEffectStop Y bit_talk_06]
+[wt 1.0]
+[charaFadeout F 0]
+
+[bgm BGM_EVENT_264 0.5 1.0]
+
+[charaTalk G]
+[charaFace G 18]
+[charaFadein G 0.1 1]
+
+＠フランチェスカ
+ひゃああああ！[r]フランソワが死んじゃった！　この人でなし！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.4 -50,0]
+[charaMove F 0,0 0.5]
+[cueSe SE_25 25_ade1144]
+[wt 0.5]
+[seStop adm58 0.2]
+
+＠フランソワ
+そうだそうだ！[r]かわいい小悪魔系美少年の僕になんてことを！
+[k]
+
+[charaPut U 0,-200]
+[charaFadeTime U 0.2 0.5]
+[charaFace F 16]
+
+＠フランソワ
+（あああああ、危なかった……！）
+[k]
+
+＠フランソワ
+（今、幻術じゃなくて離れた所にいる本体に[#掠:かす]った！[r]　もうちょっとズレてたら本当に死んでた……！）
+[k]
+
+
+[charaFadeout F 0.1]
+[charaFadeout U 0.2]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠リチャード
+ふむ、黒幕と名乗ったからには、消し飛ばせば[r]手っ取り早く特異点が解消されると思ったが……
+[k]
+
+[charaFace D 11]
+
+＠リチャード
+流石は黒幕、簡単には討伐できないという事か！[r]ワクワクするな、カルデアのマスター！！
+[k]
+
+？1：ワクワクというか
+？2：ノータイムで宝具ぶっぱした事にヒヤヒヤしました
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠フランチェスカ
+気を付けた方がいいよ？[r]カルデアのマスター[&君:ちゃん]。
+[k]
+
+＠フランチェスカ
+その王様、ほんの一部ではあるけれど、[r]くろひーと同じような性質持ってるからね？
+[k]
+
+？1：くろひーにも二種類
+？2：獅子心王が言われてるのは恐らく……
+？！
+
+[messageOff]
+[subCameraOn 1]
+[charaLayer S sub #A]
+[charaLayer T sub #A]
+[charaLayer X sub #A]
+
+[subCameraFilter #A normal]
+[subRenderScale #A 1.1]
+
+[charaDepth S 3]
+[charaDepth T 2]
+[charaDepth X 1]
+
+[charaFace S 0]
+[charaFace T 0]
+[charaPut S -230,-20]
+[charaPut T 230,-20]
+[charaFadein X 0 0,-220]
+
+[subRenderFadein #A 0.5 0,20]
+[subRenderMoveEase #A 0,-30 0.8 easeOutSine]
+[wt 1.0]
+
+[charaTalk off]
+[charaFadeTime S 0.4 0.6]
+[wt 0.4]
+[charaFadeTime T 0.4 0.6]
+[wt 1.2]
+
+？1：前者……！！
+
+[charaFadeTime T 0.3 0]
+[subRenderMoveEase #A 60,-30 0.7 easeOutSine]
+[wt 1.8]
+
+？2：後者……！！
+
+[charaFadeTime S 0.3 0]
+[charaFace T 3]
+[subRenderMoveEase #A -60,-30 0.7 easeOutSine]
+[wt 1.8]
+
+？！
+
+[charaFace G 15]
+
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+
+[charaFadeout T 0]
+[charaFadeout S 0]
+[charaFadeout X 0]
+
+[subCameraOff]
+[charaLayer T normal]
+[charaLayer S normal]
+[charaLayer X normal]
+
+[charaTalk on]
+
+＠フランチェスカ
+あれれ？　真剣な顔してるけど、答えなんかないよ？[r]適当に言っただけだし。
+[k]
+
+？1：ハリセン！！　誰かハリセン持ってきてーーー！！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 28]
+[charaFadein C 0.1 1]
+
+＠マシュ
+！？
+[k]
+
+[charaPut U 0,-200]
+[charaFadeTime U 0.2 0.5]
+
+＠マシュ
+（先輩がハリセンとはいえ直接的な暴力を選択肢に……？[r]　いったいどれほどの仕打ちを受けたのでしょう……）
+[k]
+
+[charaFadeout U 0.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：……もう慣れたからいいや、許すよ
+
+[charaFace G 18]
+
+＠フランチェスカ
+ガーン！！[r]なにげない一言がフランチェスカ師匠をきず付けた！
+[k]
+
+[charaFace G 10]
+
+＠フランチェスカ
+その素っ気なくて氷みたいに冷たい目！[r]いいねぇ素敵だねぇ！　ゾクゾクしちゃう、……好き！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠フランソワ
+まあ、冗談はともかく……その王様については[r]カルデアの人達の方が詳しいんじゃない？
+[k]
+
+[bgmStop BGM_EVENT_264 1.5]
+
+＠フランソワ
+後でゆっくり聞くといいよ。[r]本人の前じゃ話しづらい事もあるだろうしね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_272 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠リチャード
+うむ、確かに納得できる意見だ！[r]今日はもう遅いからな、ゆっくりと休むといい！
+[k]
+
+＠リチャード
+カルデアと合流できた事だし、[r]明日はこちらから打って出るつもりだ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+打って出る、か。
+[k]
+
+＠ヒッポリュテ
+確かに、無限に湧き出る軍勢が相手では籠城も何もない。
+[k]
+
+＠ヒッポリュテ
+だが、取り囲まれる前に敵の首魁を撃破するにせよ[r]簡単な相手ではないぞ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠リチャード
+ああ。[r]そこはカルデアの協力が得られた事で打開策が生まれた。
+[k]
+
+＠リチャード
+[%1]と言ったか、[r]君もマシュ達から詳しい話を聞いておくといい。
+[k]
+
+[charaFace D 1]
+
+＠リチャード
+向こうの大将……『あいつ』もこちらの狙いは理解してる[r]筈だ。奇襲は通じず、派手な潰し合いになるだろう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+む……その物言い、もしやあの軍勢の[r]首魁の正体を知っているのか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠マシュ
+それは初耳です！
+[k]
+
+[charaFace C 6]
+
+＠マシュ
+敵の軍勢が迫っているという話はお聞きしましたが、[r]敵将をご存じなのでしたら、是非お教えください！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠リチャード
+ああ！　勿論だ！　あの瘴気みたいな霧のせいで、[r]具体的なクラスまでは特定できないが……。
+[k]
+
+[bgmStop BGM_EVENT_272 1.0]
+
+＠リチャード
+あれは多分[line 2][r][#ライダー霊基か]、[#バーサーカー霊基の俺だ]。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace C 20]
+[charaFace A 12]
+[charaFace E 0]
+[charaFace B 13]
+[charaFace G 9]
+[charaFace F 9]
+[charaFadeinFSR C 0.1 190,0]
+[charaFadein A 0.1 100,0]
+[charaFadein E 0.1 -100,0]
+[charaFadeinFSL B 0.1 -240,0]
+[charaFadeinFSL G 0.1 -450,0]
+[charaFadeinFSR F 0.1 450,0]
+[wt 2.0]
+
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

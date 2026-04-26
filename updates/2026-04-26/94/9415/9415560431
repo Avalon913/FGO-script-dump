@@ -1,0 +1,668 @@
+
+
+＄94-15-56-04-3-1
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 4056000 1 ヒッポリュテ]
+[charaSet B 3039001 1 ガレス]
+[charaSet C 1098301720 1 偽ゲオルギウス]
+[charaSet D 98014000 1 一般兵]
+[charaSet E 1098272600 1 怪物]
+
+[charaSet F 4056000 1 ヒッポリュテ]
+[charaSet G 3039001 1 ガレス]
+[charaFilter G silhouette 00000080]
+[charaSet H 3039001 1 ガレス]
+[charaSet I 1098301720 1 偽ゲオルギウス]
+
+[sceneSet J 134601 1]
+[sceneSet K 134601 1]
+[sceneSet L 134601 1]
+[sceneSet M 134601 1]
+
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaDepth C 3]
+[charaDepth D 4]
+[charaDepth J 5]
+[charaDepth E 6]
+[charaDepth F 7]
+[charaDepth I 8]
+[charaDepth K 9]
+[charaDepth L 10]
+[charaDepth G 11]
+[charaDepth M 12]
+[charaDepth H 13]
+
+[charaDepth Z 26]
+[subCameraOn 2]
+[charaLayer J sub #A]
+[charaLayer F sub #A]
+[charaLayer I sub #A]
+[charaLayer M sub #B]
+[charaLayer H sub #B]
+[charaLayer Z sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask10 4 255,255,255,255 0]
+[subCameraFilter #B maskEdge cut359_mask08 4 255,255,255,255 0]
+
+[charaScale J 1.55]
+[charaScale F 1.3]
+[charaFace F 1]
+[charaFadeinFSL F 0.1 -50,200]
+[charaFadein J 0.1 515,0]
+
+[charaScale M 1.5]
+[charaFadein M 0.1 -330,150]
+[charaPut Z 0,200]
+[charaEffect Z bit_talk_42 0,0 H]
+
+[scene 134601]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_263 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+さて、辿り着きはしたが……。[r]当然だが、城門は閉まっているな。
+[k]
+
+[messageOff]
+[charaFadeTime A 0.4 0]
+[cameraMoveEase 100,10 1.5 easeOutSine 1.2]
+[wt 2.0]
+[cameraMove 2.0 -100,10 1.2]
+[wt 3.0]
+
+？1：（第六特異点の聖都とは、全然違う……）
+？2：（凄い城壁だけど、普通の都市に見える）
+？！
+
+[charaFace A 1]
+[cameraMoveEase 0,0 1.5 easeOutSine 1.0]
+[wt 1.0]
+[charaFadeTime A 0.4 1.0]
+[wt 0.5]
+
+＠ヒッポリュテ
+[#穢:けが]れた騎士達が接近しつつある今、[r]本陣も警戒はしているだろう。
+[k]
+
+＠ヒッポリュテ
+[#迂闊:うかつ]に近付けば矢が飛んできても[r]おかしくはないが……
+[k]
+
+＠ヒッポリュテ
+外部を注視しているなら、[r]既に我々の姿も認識しているだろう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠偽ゲオルギウス
+……確かに。[r]城壁の上の[#松明:たいまつ]、ありゃ見張りの連中だな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+ならば、堂々と名乗りを上げるとしよう。
+[k]
+
+[messageOff]
+[se ad60]
+[seStop ad60 1.4]
+[charaFadeout A 0.3]
+[wt 1.0]
+[charaTalk off]
+[subRenderFadein #A 0.3 -160,-290]
+[subRenderMoveEase #A -180,-240 0.4 easeOutSine]
+[wt 1.0]
+[charaScale K 1.7]
+[charaFadein K 0.5 650,-350]
+[charaMoveEase K 650,-400 0.7 easeOutSine]
+[wt 1.0]
+[charaFace F 10]
+
+＠ヒッポリュテ
+[line 2]たのもう！
+[k]
+
+＠ヒッポリュテ
+我は南に陣取る[#悪鬼羅刹:あ っ き ら せ つ]の軍勢と敵対する者なり！
+[k]
+
+＠ヒッポリュテ
+この砦が暗闇から民を守る[#篝火:かがりび]であるならば、[r]我らもその下に火種として参陣する事を許されたし！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaScale I 1.3]
+[charaFace I 0]
+[charaFadeinFSL I 0.1 -50,200]
+
+＠偽ゲオルギウス
+……城壁の上で[#松明:たいまつ]が動き始めたぜ。[r]攻撃される様子はない……か？
+[k]
+
+[bgmStop BGM_EVENT_263 1.0]
+
+[messageOff]
+[charaScale L 1.7]
+[charaFadein L 0.5 -450,-500]
+[wt 0.7]
+[charaFadeout K 0.1]
+
+[se ad73]
+[effect bit_talk_43h_fs 0,0 V]
+[charaFace G 0]
+[charaFadein G 0.2 350,70]
+[charaMove G 250,-800 0.5]
+[wt 0.3]
+[effectStop bit_talk_43h_fs]
+[charaFadeout G 0.2]
+[wt 0.5]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaFace F 11]
+[charaFadeinFSL F 0.1 -50,200]
+
+＠ヒッポリュテ
+いや……待て。[r]誰か一人、飛び降りたな。
+[k]
+
+[charaFace F 1]
+
+＠ヒッポリュテ
+突撃槍を持ってこちらに来るぞ！[r][%1]、私の後ろに！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.4]
+[charaFadeout L 0.4]
+[wt 0.4]
+[charaFadeout J 0.1]
+[charaFadeout F 0.1]
+[charaFadeout I 0.1]
+
+[blur lens 0.4 3 1]
+[subRenderFadein #B 0.3 0,-300]
+[wt 0.2]
+
+[bgm BGM_EVENT_94 0.1]
+[cueSe SE_21 21_ad1120 0.3 0.8]
+[charaScale H 1.2]
+[charaFace H 17]
+[charaFadein H 0.3 500,250]
+[charaShake H 0.01 1 1 0]
+[charaMoveEase H 200,250 0.4 easeOutQuad]
+[charaMoveEase M -260,150 0.4 easeOutQuad]
+[wt 0.2]
+[cueSeVolume 21_ad1120 1.0 0.4]
+
+＠ガレス
+マスタぁーーーーーー！！[r]ご無事でしたかーーーー！！
+[k]
+
+？1：ガレス！！
+？2：もしかして、カルデアの！？
+？！
+
+[messageOff]
+[se ad224]
+[cueSeStop 21_ad1120 0.5]
+[charaFace H 22]
+[charaMoveEase H -100,250 0.6 easeOutQuad]
+[charaMoveEase M 40,150 0.6 easeOutQuad]
+[wt 1.0]
+
+＠ガレス
+わ、勢いが……！
+[k]
+
+[messageOff]
+[se ad859 0.6]
+[charaEffectStop Z bit_talk_42]
+[charaMoveEase H -400,250 0.6 easeOutQuad]
+[charaMoveEase M 330,150 0.6 easeOutQuad]
+[charaFadeout H 0.3]
+[wt 0.3]
+[se ade458]
+[blurOff lens 0.5]
+[subRenderFadeout #B 0.3]
+[wt 0.5]
+[charaFadeout M 0.1]
+[charaFadeout H 0.1]
+
+[seStop ade458 0.3]
+[se ad671]
+[charaFace B 2]
+[charaFadein B 0.2 850,0]
+[charaMoveEase B 100,0 0.6 easeOutCubic]
+[wt 0.1]
+[charaFace A 10]
+[charaFadein A 0.2 100,0]
+[wt 0.2]
+[charaMove A -150,0 0.3]
+[se ade33]
+[cueSe SE_21 21_ad1074]
+[cueSe SE_21 21_ade553]
+[charaFace B 13]
+[charaShake B 0.04 2 3 0.5]
+[charaShake A 0.03 3 2 0.5]
+[wt 1.3]
+[charaLayer J normal]
+[charaLayer F normal]
+[charaLayer I normal]
+[charaLayer M normal]
+[charaLayer H normal]
+[charaLayer Z normal]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 12]
+
+＠ヒッポリュテ
+一瞬、攻撃されたのかと思ったぞ……
+[k]
+
+＠ヒッポリュテ
+止まろうとした上で[r]尚この勢いとは、凄まじい突進力だな？
+[k]
+
+[charaTalk B]
+[charaFace B 14]
+
+＠ガレス
+あっ……！[r]受け止めていただき、ありがとうございます！
+[k]
+
+[charaFace B 1]
+
+＠ガレス
+もしかして、はぐれサーヴァントの方ですか？[r]マスターをここまでお守り下さったのですね！
+[k]
+
+[messageOff]
+[cueSe SE_25 25_ad1466]
+[cueSeStop 25_ad1466 0.6]
+[charaMove B 200,0 0.6]
+[wt 0.8]
+[charaFace B 17]
+[charaMoveReturn B 200,-5 0.5]
+
+＠ガレス
+カルデアの一員として、感謝申し上げます！[r]私はガレスと申します！
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+
+＠ヒッポリュテ
+なるほど、君がカルデアのサーヴァントか。
+[k]
+
+[charaFace A 4]
+
+＠ヒッポリュテ
+いい突撃だった。[r]君は良きアマゾネスになれるぞ。
+[k]
+
+？1：（カルデアマゾネス……）
+？2：あっ、ガレスがここにいるって事は……
+？！
+
+[charaTalk B]
+[charaFace B 1]
+
+＠ガレス
+はい！　マシュ殿もこちらにレイシフト済みで、[r]今は城壁内の領主の館にいます！
+[k]
+
+？1：良かったぁ！！　ありがとうガレス！
+？2：本物のマシュ……！！
+？！
+
+[bgmStop BGM_EVENT_94 1.5]
+
+[charaFace B 13]
+
+＠ガレス
+本物？
+[k]
+
+[charaFace B 11]
+
+＠ガレス
+あっ！　それで、あの……[r]今、アマゾネスとおっしゃいましたが、あなたは……。
+[k]
+
+[bgm BGM_EVENT_167 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaMove A -200,0 0.6]
+[se ad60]
+[seStop ad60 0.6]
+
+＠ヒッポリュテ
+ああ、名乗りが遅れてすまない。[r]私はヒッポリュテ。
+[k]
+
+＠ヒッポリュテ
+アマゾネスの部族において、[r]女王を意味する戦士長の座を預かっていた者だ。
+[k]
+
+[charaTalk B]
+[charaFace B 22]
+
+＠ガレス
+なんと！　やはりそれほどの御方でしたか！[r]言われてみれば……気配に面影を感じます！
+[k]
+
+[charaTalk A]
+[charaFace A 11]
+
+＠ヒッポリュテ
+面影？
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+
+＠ガレス
+実はペンテシレイア殿も来られているのです！[r]今は、周辺の土地を回って村人の誘導をされています！
+[k]
+
+[charaTalk A]
+[charaFace A 12]
+
+＠ヒッポリュテ
+なにっ……。
+[k]
+
+＠ヒッポリュテ
+ペンテシレイアが……[r]我が妹がここに来ているのか？
+[k]
+
+？1：噂をすればなんとやら
+？2：仲は良かったの？
+？！
+
+[messageOff]
+[charaScale J 1.3]
+[charaScale F 1.3]
+[charaTalk A,F]
+[charaFace F 5]
+[charaFadein F 0.6 -150,20]
+[charaFadein J 0.6 140,-300]
+[charaMove J 190,-300 30.0]
+[charaMove F -100,20 30.0]
+[wt 0.8]
+
+＠F：ヒッポリュテ
+いや……私が死んだ時、妹はまだ幼かったからな。[r]あの時、私の死の瞬間こそは見ていない筈だが……
+[k]
+
+＠F：ヒッポリュテ
+私は姉として……先達の女王として、[r]真に頼れる強き背を見せてはやれなかった。
+[k]
+
+[charaFace F 3]
+
+＠F：ヒッポリュテ
+それでも、ペンテシレイアは自らの歩みによって[r]女王たる戦士長の座に上り詰めた。
+[k]
+
+＠F：ヒッポリュテ
+先刻も言ったが、その人生の結末については、[r]先に死した私が口を挟める事ではない。
+[k]
+
+＠F：ヒッポリュテ
+だが、ペンテシレイアは誇りを持って戦争に参陣し、[r]最後まで女王として、戦士として生き抜いたのだろう。
+[k]
+
+＠F：ヒッポリュテ
+英霊の座に刻まれている事が何よりの証だ。[r]それが私は、嬉しくある。
+[k]
+
+[messageOff]
+[charaTalk B,F]
+[charaFace B 1]
+[charaFace A 3]
+[charaFadeout J 0.5]
+[charaFadeout F 0.5]
+[wt 0.7]
+[charaMove J 190,-300 0.1]
+[charaMove F -100,20 0.1]
+
+＠ガレス
+それを伝えたら、[r]きっとペンテシレイア殿も喜びます！
+[k]
+
+？1：とりあえず城壁の中で待とう
+？2：マシュとも早く合流したい
+？！
+
+[charaFace B 0]
+
+＠ガレス
+そうですね！　今、城門を開けてもら[line 2]
+[k]
+
+[bgmStop BGM_EVENT_167 1.5]
+
+[messageOff]
+[cueSe SE_26 26_ade1381 0.6 1.0]
+[charaScale J 1.4]
+[charaFadein J 0.6 140,-350]
+[charaMove J 150,-400 6.0]
+[wt 4.6]
+
+[cueSeStop 26_ade1381 1.0]
+[charaTalk B]
+[charaFace B 19]
+[charaFace A 11]
+[charaFadeout J 0.5]
+[wt 1.0]
+
+[bgm BGM_EVENT_257 0.1]
+
+＠ガレス
+！！
+[k]
+
+[charaTalk A]
+
+＠ヒッポリュテ
+何事だ？[r]警鐘に合わせて、太鼓のリズムのような物も聞こえるが。
+[k]
+
+[charaTalk B]
+
+＠ガレス
+教会の鐘楼と、[#太鼓:ダラブッカ]の警戒音です！
+[k]
+
+＠ガレス
+色々な宗派の方が寄り集まっているので、[r]それぞれの方法で警戒の伝達が行われているのですが[line 2]
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠一般兵
+おい！　あんた達！　早くそこから逃げろ！
+[k]
+
+＠一般兵
+川向こうから馬鹿デカい怪物が来る！[r]もうすぐこの城門に……！！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+怪物だと？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_257 1.2]
+
+[charaTalk B]
+[charaFace B 20]
+[charaFadein B 0.1 1]
+
+＠ガレス
+！[r]丘の陰から……何かが来ます！！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[scene 116502]
+[charaFadeout B 0.1]
+
+[charaScale E 0.95]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.5]
+
+[cueSe SE_22 22_ad1219 0.4 1.0]
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.5]
+
+[cueSeVolume 22_ad1219 1.0 0.6]
+[se ade315 0.8]
+[se ad789 0.8]
+[effect bit_talk_41_remake]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[charaMoveScale E 1.0 0.3]
+[charaPut Z 0,-250]
+[charaShake E 0.01 1 1 0.5]
+[charaEffect Z bit_talk_impactlanding]
+[shake 0.03 4 5 1.5]
+[wt 1.0]
+
+[bgm BGM_EVENT_258 0.1]
+
+[shake 0.02 1 1 0]
+[cueSe Servants_9944870 m95406 0 0.6]
+
+＠怪物
+[line 14]！！
+[k]
+
+[messageOff]
+[branchQuestNotClear lblNotClear01 94086921]
+
+？1：ドドド……ドレッドノートぉ！？
+？2：なんでここに……！？
+？！
+
+[branch lblConf01]
+
+[label lblNotClear01]
+
+？1：ななな……なにアレ！？
+？2：まるで移動する砦……！！
+？！
+
+[label lblConf01]
+
+[cueSeStop 22_ad1219 0.5]
+[cueSe Servants_9944870 m95422 0 0.7]
+[cueSe Servants_9944870 m95423 0 0.7]
+[charaPut Z 0,-250]
+[charaEffect Z bit_talk_impactlanding]
+[shake 0.03 5 4 1.5]
+[wt 0.2]
+[effectStop bit_talk_41_remake]
+[charaMoveScaleEase E 1.2 0.3 easeOutQuint]
+[charaMoveEase E 0,50 0.3 easeOutQuint]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaFadeout E 0.3]
+[wt 0.4]
+
+[blurOff motion 0.1]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[cameraHome 0.1]
+[shakeStop]
+[charaEffectDestroy Z bit_talk_impactlanding]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+[charaFadeout E 0.1]
+[scene 134601]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+＠ヒッポリュテ
+なんだあの巨竜は……。[r]あんなものに突撃されたら、城壁が持つまい。
+[k]
+
+[charaFace A 1]
+
+＠ヒッポリュテ
+騎士ガレスよ、[%1]の守護は任せた。
+[k]
+
+[charaFace A 9]
+
+＠ヒッポリュテ
+私が奴の足止めをする、[r]可能ならば簡易召喚とやらで援護を頼む！
+[k]
+
+＠ヒッポリュテ
+止められぬと判断したら、[r]私には構わず撤退しろ！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_258 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
