@@ -1,0 +1,357 @@
+
+＄94-15-56-10-1-1
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 4056000 1 ヒッポリュテ]
+[charaSet B 1098272600 1 ドレッドノート]
+[charaSet C 3039001 1 ガレス]
+[charaSet D 1098257910 1 マシュ]
+
+
+[charaSet E 5057000 1 フランチェスカ]
+[charaSet F 5056000 1 フランソワ]
+
+[imageSet G back10000 1 1]
+[charaScale G 1.01]
+[imageSet H back10000 1 1]
+[charaScale H 1.01]
+
+[sceneSet I 116503 1]
+[sceneSet J 116500 1]
+
+[charaSet Z 98115000 1 エフェクト用]
+
+[scene 116503]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaDepth D 3]
+[charaDepth E 4]
+[charaDepth C 5]
+[charaDepth I 6]
+[charaDepth J 7]
+[charaDepth Z 26]
+
+[bgm BGM_BATTLE_216 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ガレス
+とりゃあーーーーー！！
+[k]
+
+[messageOff]
+[se ad1006 0.8]
+[charaPut Z 1]
+[charaEffect Z bit_talk_41_remake]
+[charaMoveScaleEase C 1.5 0.3 easeOutQuint]
+[charaMoveEase C 0,50 0.3 easeOutQuint]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaFadeout C 0.3]
+[wt 0.4]
+
+[charaScale I 1.5]
+[charaFadein I 0.3 0,-350]
+[charaEffectDestroy Z bit_talk_41_remake]
+[charaScale C 1.0]
+[blurOff motion 0.1]
+[wt 0.3]
+
+[effect bit_talk_blow02]
+[se ad381 0.5]
+[se ad467 0.7]
+[wt 0.3]
+
+[seStop ad381 0.3]
+[wt 1.2]
+
+[scene 116500]
+[charaScale J 1.5]
+[charaFadein J 1.5 0,-350]
+[cueSe SE_25 25_ade1170]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[charaFadeout I 0.1]
+[cueSeStop 25_ade1170 0.5]
+[wt 0.8]
+
+[charaFadeout J 0.4]
+[wt 0.5]
+
+＠ヒッポリュテ
+！[r]やったか！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+マスター！[r]怪物が……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[cueSe Servants_9944870 m95426 0 0.5]
+[charaShake B 0.03 2 2 1.5]
+
+＠ドレッドノート
+[line 6]　　[line 2]　　[line 2][r]　　　　[line 4]　　[line 2]　　[line 8]ッッ！！
+[k]
+
+[messageOff]
+[charaScale Z 1.5]
+[charaEffect Z bit_talk_miasma_aura]
+[cueSe SE_23 23_ade909]
+[wt 0.5]
+[backEffect bit_talk_miasma_eruption]
+[wt 1.5]
+[cueSeStop 23_ade909 1.0]
+
+[bgmStop BGM_BATTLE_216 2.5]
+
+[effect bit_talk_atomization -200,0]
+[charaEffect B bit_talk_atomization 200,0]
+[wt 0.5]
+[backEffectStop bit_talk_miasma_eruption]
+[charaEffectStop Z bit_talk_miasma_aura]
+[cueSe Battle ba6]
+[charaFadeout B 0.4]
+[wt 3.7]
+[backEffectDestroy bit_talk_miasma_eruption]
+[effectDestroy bit_talk_atomization]
+[charaEffectDestroy B bit_talk_atomization]
+[charaEffectDestroy Z bit_talk_miasma_aura]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+消えたか……
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace A 0]
+
+＠ヒッポリュテ
+なるほど、存在自体があの妙な[r]黒い樹木を基盤とするものだったのだな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マシュ
+瘴気も晴れつつあります！
+[k]
+
+＠マシュ
+通信も安定するでしょうから、[r]ダ・ヴィンチちゃんたちに報告しましょう！
+[k]
+
+？1：そうだね、次の目的地を報告[line 4]
+？！
+
+[messageOff]
+[wipeout openEye 0.1 1.0]
+[bgm BGM_EVENT_77 0.1 0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 0.5]
+
+＠？？？
+　　愚かな……ことだ。
+[k]
+
+＠？？？
+　　　　　カルデア　め[r]　　　　　　　　　　まんまと……来るとは、
+[k]
+
+[messageOff]
+[wt 1.5]
+
+＠？？？
+　　　　救いようの……ない、連中だ……
+[k]
+
+
+＠？？？
+　　　　　　　逃げ　ろ[r]　　　　　　　　　　　　　　カル　デア
+[k]
+
+[messageOff]
+
+[scene 116500]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[wipein openEye 0.5 1.0]
+[bgm BGM_EVENT_77 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaFace D 5]
+
+＠マシュ
+マスター？　どうかなさいましたか？
+[k]
+
+[branchQuestClear lblClear02a 94086921]
+[branchQuestClear lblClear02a 94144713]
+
+？1：今、なんだか……
+？2：女の子の声が聞こえなかった？
+？！
+
+[branch lblConf02]
+[label lblClear02a]
+
+？1：なにか、今……
+？2：聞き覚えのある声がしたような……
+？！
+
+[label lblConf02]
+
+[bgmStop BGM_EVENT_77 1.5]
+
+[charaFace D 8]
+
+＠マシュ
+近くにサーヴァントや民間人の反応はありませんが……
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 -350,-20]
+[charaMove E -320,-20 0.5]
+[wt 0.5]
+
+[charaFace D 5]
+
+[bgm BGM_EVENT_262 0.1]
+
+＠フランチェスカ
+あっ！　ごめんごめん！[r]それって私だよ私！
+[k]
+
+＠フランチェスカ
+乙女の独り言を盗み聞きするなんて、[r]メッ、だよ！
+[k]
+
+？1：うわあ
+？2：突然生えてこないで、シッシッ
+？！
+
+[charaFace E 5]
+
+＠フランチェスカ
+ごめんごめん！　さ、出発しよっか！[r]無窮の彼方へさあ行くぞー！　……ってね！
+[k]
+
+[messageOff]
+[charaTalk E,D]
+[charaFace D 28]
+[charaMove E -220,-20 1.0]
+[charaMove D 100,0 1.0]
+[se ad1049]
+[wt 1.4]
+[charaMove E -120,-20 1.0]
+[charaMove D 200,0 1.0]
+[wt 1.2]
+[seStop ad1049 0.2]
+[wt 0.2]
+[charaMove E 80,-20 2.0]
+[charaMove D 400,0 2.0]
+[se ad344]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_262 1.5]
+[charaFadeout D 0.4]
+[charaFadeout E 0.4]
+[wt 3.5]
+
+[overlayFadein G 0.1 0,-850]
+[overlayFadein H 0.1 0,850]
+[charaMove G 0,-738 1.2]
+[charaMove H 0,738 1.2]
+[wt 1.5]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.4 0,-50]
+[wt 0.4]
+
+[bgm BGM_EVENT_256 0.1]
+
+＠フランソワ
+………………。
+[k]
+
+[charaFace F 1]
+
+＠フランソワ
+まだ喋れる余裕があったんだねぇ？[r]流石と言っておくべきかなぁ？
+[k]
+
+[charaFace F 7]
+
+＠フランソワ
+しかし、カルデアに対して[r]『逃げろ』だなんて！
+[k]
+
+＠フランソワ
+ずいぶんと、皮肉なジョークが[r]言えるようになったねぇ！
+[k]
+
+[charaFace F 15]
+
+＠フランソワ
+まあ、君の願いは叶わないんじゃないかなぁ。
+[k]
+
+＠フランソワ
+……僕も、もう逃がすつもりはないし……ね？
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_256 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,526 @@
+
+
+＄94-15-56-12-1-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 1098257910 1 マシュ]
+
+
+
+[branchQuestClear lblClear02 3001327]
+
+[masterSet B 1098357800 1098357810 1]
+
+[branch lblConf02]
+[label lblClear02]
+[masterSet B 1098259460 1098259470 1]
+
+[label lblConf02]
+
+[charaSet C 4056000 1 ヒッポリュテ]
+[charaSet D 3039001 1 ガレス]
+[charaSet E 1098228200 1 ケルベロス]
+[charaSet F 1098228200 1 ケルベロス]
+[charaSet G 1098203100 1 土蜘蛛]
+[charaSet I 5057000 1 フランチェスカ]
+[charaSet J 98115000 1 ？？？]
+
+[sceneSet L 183301 1]
+[charaScale L 1.2]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+
+[imageSet U cut796_basepoint_d 1]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth A 2]
+[charaDepth D 3]
+[charaDepth C 4]
+[charaDepth F 5]
+[charaDepth L 6]
+[charaDepth B 7]
+[charaDepth I 8]
+[charaDepth E 9]
+[charaDepth G 10]
+
+[charaDepth T 20]
+[charaDepth S 21]
+
+[scene 183301]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fadein black 0.5]
+[bgm BGM_EVENT_258 0.1]
+[wait fade]
+
+＠マシュ
+目標を守っていた魔物の沈黙を確認！[r]今のうちに目標の破壊を[line 2]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_258 1.5]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[charaPut S -250,-100]
+[charaPut T 250,-100]
+[charaEffect S bit_talk_bubble_atomization]
+[charaEffect T bit_talk_bubble_atomization]
+[cueSe SE_23 23_ade922]
+[cueSeVolume 23_ade922 0 0]
+
+[wt 0.5]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[cueSeVolume 23_ade922 0.5 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_257 0.1]
+
+[charaTalk off]
+[wt 0.5]
+[cueSe SE_23 23_ade909]
+[charaEffectStop S bit_talk_bubble_atomization]
+[wt 0.05]
+[charaEffectStop T bit_talk_bubble_atomization]
+[wt 2.0]
+[cueSeStop 23_ade922 1.0]
+[wt 1.0]
+
+[charaFace E 0]
+[charaFadeinFSR E 0.4 250,-20]
+[charaMoveFSR E 250,0 0.5]
+[wt 0.05]
+[charaFace F 0]
+[charaFadeinFSL F 0.4 -250,-20]
+[charaMoveFSL F -250,0 0.5]
+[cueSeStop 23_ade909 1.5]
+[wait charaEffect T]
+[wt 0.2]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 20]
+[charaFadein A 0.1 1]
+
+[wt 0.5]
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+＠マシュ
+！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠ヒッポリュテ
+増援か！？[r]まずいな、周囲にもまだ小型の魔物が[line 2]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaPut S -65,-160]
+[charaFace F 0]
+[charaFadein F 0.1 0,0]
+[wt 0.3]
+[se ad772]
+[charaEffect S bit_talk_voice02]
+[wt 2.0]
+
+[charaMoveEase E -300,0 0.8 easeOutCubic]
+[wt 0.4]
+[charaScale G 0.85]
+[charaFace G 0]
+[charaFadein G 0.4 -50,-150]
+[charaFadein L 0.4 -50,-295]
+[charaMoveEase G 0,-150 1.0 easeOutCubic]
+[charaMoveEase L 0,-295 1.0 easeOutCubic]
+[charaFadeout F 0.4]
+[wt 0.5]
+
+[effect bit_talk_fang_02]
+[cueSe SE_21 21_ad1147]
+[cueSe SE_24 24_ade1001]
+[seVolume 24_ade1001 0 0.6]
+[wt 0.8]
+[seStop 24_ade1001 1.0]
+[wt 2.4]
+[seStop 21_ad1147 1.0]
+[charaMoveScaleEase G 1.0 2.0 easeOutCubic]
+[charaMoveEase G 0,-100 2.0 easeOutCubic]
+[charaMoveScaleEase L 1.35 2.0 easeOutCubic]
+[wt 2.0]
+
+
+[scene 10000 1.0]
+[charaFadeout G 0.1]
+[seVolume ade307 1.0 0]
+[cueSe SE_21 21_ad1125]
+
+[se ad191]
+[se ad161]
+[wt 1.0]
+
+[wt 1.0]
+
+[wipeout rightToLeft 0.5 1.0]
+[wait wipe]
+
+[scene 183301]
+[effectDestroy bit_talk_fang_02]
+[wt 0.2]
+
+
+
+
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout L 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+＠ガレス
+！？
+[k]
+
+？1：ケルベロスが……小型の魔物を食べてる！？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠ヒッポリュテ
+共食いで魔力を集中させる気か……？[r]……！　こちらにも来るか！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.2]
+[se ad772]
+[charaEffect S bit_talk_voice02]
+
+＠ケルベロス
+[line 12]ッッッッッ！！[messageShake 0.05 5 5 1.0]
+[k]
+
+[bgmStop BGM_EVENT_257 0.5]
+
+[messageOff]
+[seStop ad772 0.5]
+[charaEffectDestroy S bit_talk_voice02]
+[se ad1006 0.8]
+[charaMoveScaleEase E 1.5 0.3 easeOutQuint]
+[charaMoveEase E 0,150 0.3 easeOutQuint]
+[wt 0.3]
+
+＠？？？
+[charaTalk J]
+落ち着け落ち着け。
+[k]
+
+＠？？？
+[charaTalk J]
+手当たり次第に噛みつくだけじゃ、[r]冥府の鉄門に繋がれた三つの喉笛の名折れだぜ？
+[k]
+
+[se ad526]
+
+＠ケルベロス
+[line 8]……
+[k]
+
+[messageOff]
+[seStop ad526 0.5]
+[se adm12]
+[seStop adm12 1.0]
+[charaMoveScaleEase E 1.3 0.8 easeOutSine]
+[charaMoveEase E 0,100 0.8 easeOutSine]
+[wt 1.2]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ケルベロスの動きが止まりました！[r]今の声は……？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[charaTalk J]
+[charaPut J 1]
+
+[wt 0.5]
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_263 0.1]
+
+[cueSe SE_25 25_ade1171]
+[se ad1026]
+[se ade477]
+[charaEffect J bit_talk_shadow_small]
+[wt 0.5]
+[cueSeStop 25_ade1171 1.0]
+[seStop ad1026 1.0]
+[seStop ade477 1.0]
+[wt 1.0]
+
+＠？？？
+そいつらはお前らのディナーでもなけりゃ[r]地獄から逃げ出した亡者でもねえ。
+[k]
+
+＠？？？
+迷い出た魔物はあっちの連中だ。[r]存分に地獄の夜風を浴びせてやりな。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_263 0.7 0.4]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+[charaPut J 2000,2000]
+
+[charaScale E 1.0]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.5]
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_263 0.7 1.0]
+[wait wipe]
+
+[se ad772]
+[charaEffect S bit_talk_voice02]
+[wt 0.5]
+[charaEffectStop S bit_talk_voice02]
+[wt 1.0]
+[seStop ad772 1.0]
+[wt 1.5]
+[se adm12]
+[seStop adm12 1.0]
+[charaFadeout E 0.4]
+[wt 1.0]
+
+[seContinue ad161 0 1.0 001]
+[fowardEffect bit_talk_35]
+[wt 0.1]
+[cueSe SE_21 21_ad1071]
+[wt 0.5]
+[seContinue ad161 0 1.0 003]
+[fowardEffect bit_talk_35 0,0 H]
+[wt 0.2]
+[se ad22]
+
+[wt 2.5]
+[bgm BGM_EVENT_263 1.0 0.4]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+[subCameraOn 1]
+[charaLayer U sub #A]
+
+[subCameraFilter #A through]
+
+[charaTalk J]
+[charaPut J 1]
+
+[wt 0.5]
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_263 1.0 1.0]
+[wait wipe]
+
+＠？？？
+あんたら、通りすがりの魔術師かなんかか？[r]魔物を倒してくれてありがとよ。
+[k]
+
+？1：あなたは……？
+？2：通りすがりのケルベロステイマー……？
+？！
+
+＠？？？
+俺か？　あー……。[r]まあ、名乗る程のもんじゃねえよ。
+[k]
+
+＠？？？
+俺程度の魔術じゃ、[r][#まだ]はっきりとこっちに形は作れねえ。
+[k]
+
+＠？？？
+もう少しすりゃ、なんとかなるとは思うが……
+[k]
+
+＠？？？
+ま、とりあえず俺は、偽物の十字を掲げて[r]偉そうにしてる連中の敵ってところだ。
+[k]
+
+＠？？？
+あんたらも、そんな感じだろ？
+[k]
+
+＠？？？
+ケルベロスも俺が操ってるわけじゃねえ。[r]人様からの借り物だが……
+[k]
+
+＠？？？
+ん……？
+[k]
+
+[messageOff]
+[charaTalk B,J]
+
+[charaFace B 0]
+[charaFadein B 0.5 -250,0]
+[charaFadein L 0.5 50,-295]
+[charaMove B -230,0 5.0]
+[charaMove L 70,-295 5.0]
+[wt 2.5]
+
+[charaFadeout B 0.5]
+[charaFadeout L 0.5]
+[wt 0.5]
+
+＠？？？
+[&兄ちゃん:嬢ちゃん]、お前さんもしかして……。
+[k]
+
+＠？？？
+いや、なんでもねえ。
+[k]
+
+＠？？？
+悪いがこっちも時間がなくてよ。[r]このモヤモヤした煙でいるのも結構辛いもんでな。
+[k]
+
+＠？？？
+まだ縁があるなら、その時は食事会でもしようや。[r]互いに美味いメシでも持ち寄ってな。
+[k]
+
+[messageOff]
+[cueSe SE_25 25_ade1171]
+[cueSeStop 25_ade1171 1.5]
+[charaEffectStop J bit_talk_shadow_small]
+[wait charaEffect J]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠マシュ
+消えてしまいました……。[r]ケルベロスまで……。
+[k]
+
+？1：とりあえず、魔物もいなくなったし
+？2：あの黒い木みたいなのを壊そう
+？！
+
+[messageOff]
+[charaFadein U 0 0,-200]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[blur lens 0.4 4 2]
+[subRenderFadein #A 0.4 0,0]
+[wt 1.9]
+[charaFadeout U 0.4]
+[blurOff lens 0.4]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+
+[subCameraOff]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠マシュ
+そうですね！　まずは任務を果たしましょう！
+[k]
+
+[charaFace A 0]
+
+＠マシュ
+今起こった事は、通信が回復次第[r]カルデアにも報告しておきます。
+[k]
+
+[messageOff]
+[se ad666]
+[seStop ad666 2.0]
+[se ad184]
+[seStop ad184 2.0]
+[charaFadeout A 0.4]
+[wt 2.5]
+
+[charaScale I 1.2]
+[charaTalk I]
+[charaFace I 13]
+[charaFadein I 0.5 1]
+[charaFadein L 0.5 0,-295]
+[wt 0.5]
+
+＠フランチェスカ
+………………。
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFaceFade I 5 0.3]
+[wt 2.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_263 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

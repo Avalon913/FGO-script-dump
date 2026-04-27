@@ -1,0 +1,715 @@
+
+＄94-15-56-11-1-1
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 4056000 1 ヒッポリュテ]
+[charaSet B 3039001 1 ガレス]
+
+[charaSet E 6005000 1 ジャック]
+[charaSet F 6005000 1 ジャック_シルエット]
+[charaFilter F silhouette 00000080]
+
+[charaSet G 1098354920 1 フラット]
+[charaSet H 1098354920 1 フラット_演出用]
+
+[branchQuestClear lblClear02 3001327]
+
+[masterSet I 1098357800 1098357810 1]
+[branch lblConf02]
+
+[label lblClear02]
+[masterSet I 1098259460 1098259470 1]
+[branch lblConf02]
+
+[label lblConf02]
+
+[charaSet J 1098234700 1 モブサーヴァント_アサシン]
+[charaSet K 1098234700 1 モブサーヴァント_アサシン]
+[charaSet L 1098234700 1 モブサーヴァント_アサシン]
+
+[sceneSet Q 281601 1]
+[sceneSet R 281601 1]
+
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+
+
+[charaSet C 1098257910 1 マシュ]
+[charaSet D 1098257910 1 マシュ_演出用]
+[charaDepth S 9]
+[charaDepth T 10]
+
+[imageSet U cut796_basepoint_c 1]
+
+[charaTalk depthOff]
+[charaDepth G 1]
+
+[charaDepth Q 2]
+[charaDepth J 3]
+[charaDepth K 4]
+[charaDepth L 5]
+[charaDepth I 6]
+
+[charaDepth C 7]
+[charaDepth R 8]
+[charaDepth D 11]
+
+[charaDepth H 17]
+[charaDepth E 18]
+[charaDepth F 19]
+
+[charaDepth A 20]
+[charaDepth B 21]
+
+[scene 281601]
+
+[subCameraOn 1]
+[charaLayer U sub #A]
+
+[subCameraFilter #A through]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_141 0.1]
+
+＠マシュ
+敵勢力、沈黙しました！
+[k]
+
+[messageOff]
+[charaFadein U 0 0,-200]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[blur lens 0.4 4 2]
+[subRenderFadein #A 0.4 0,0]
+[wt 1.9]
+[charaFadeout U 0.4]
+[blurOff lens 0.4]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+
+[subCameraOff]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+あとは、魔力の元を処理するだけか。[r]……私がやろう。
+[k]
+
+[messageOff]
+[charaEffect A bit_talk_quickmove]
+[charaSpecialEffect A erasureReverse 1 0.3]
+[se ad73]
+[wt 1.2]
+[wait charaSpecialEffect A]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+処理するまで何があるか解りません。[r]マスターはわたしの後ろに[line 2]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_141 1.5]
+
+[subCameraOn 1]
+
+[charaLayer I sub #A]
+[charaLayer J sub #A]
+[charaLayer K sub #A]
+[charaLayer L sub #A]
+[charaLayer Q sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask08 3 0,0,0,255]
+[subRenderScale #A 1.01]
+
+[charaScale I 1.1]
+[charaScale Q 1.1]
+
+[charaFace I 0]
+[charaFadein I 0 130,250]
+[charaFadein Q 0 -20,0]
+[charaMoveEase I 150,250 1.0 easeOutSine]
+[charaMoveEase Q 0,0 1.0 easeOutSine]
+
+[charaTalk I,J,K,L]
+[blur lens 0.5 2 1]
+[subRenderFadein #A 0.5 0,-270]
+[wt 1.0]
+
+[charaScale J 0.9]
+[charaScale K 0.9]
+[charaScale L 0.9]
+
+[charaFace J 0]
+[charaFace K 0]
+[charaFace L 0]
+[charaFadein J 1.0 -400,250]
+[charaFadein K 1.0 -100,250]
+[charaFadein L 1.0 400,250]
+[wt 1.0]
+[bgm BGM_EVENT_257 0.1]
+[wt 1.0]
+
+[charaTalk I,J,K,L,C]
+[charaFace C 2]
+
+[subRenderFadeout #A 0.2]
+[blurOff lens 0.2]
+[wt 0.2]
+[charaFadeout I 0]
+[charaFadeout J 0]
+[charaFadeout K 0]
+[charaFadeout L 0]
+[charaFadeout Q 0]
+[charaScale I 1.0]
+[charaScale J 1.0]
+[charaScale K 1.0]
+[charaScale L 1.0]
+[subCameraOff]
+[charaLayer I normal]
+[charaLayer J normal]
+[charaLayer K normal]
+[charaLayer L normal]
+[charaLayer Q normal]
+
+[charaTalk C]
+
+＠マシュ
+……！！　マスター！！
+[k]
+
+[messageOff]
+[charaScale D 1.4]
+[charaScale R 1.2]
+
+[charaTalk C,D]
+[charaFace D 6]
+
+
+
+[overlayFadein D 0.5 200,15]
+[charaFadein R 0.5 0,-270]
+[charaMoveEase D 150,15 0.5 easeOutQuint]
+[charaMoveEase R -50,-270 0.5 easeOutQuint]
+[wt 0.3]
+
+[charaPut S -180,0]
+[charaPut T -170,0]
+
+[charaEffect S bit_talk_x_slash01]
+[charaEffect S bit_talk_14 0,50]
+[wt 0.2]
+[charaShake D 0.05 3 3 0.3]
+[cueSe SE_24 24_ade1020]
+
+[charaEffect T bit_talk_x_slash02]
+[wt 0.3]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF00]
+[se ad687]
+[wt 0.2]
+[charaEffect T bit_talk_14 0,-50]
+[charaShake D 0.05 3 3 0.3]
+[cueSe SE_24 24_ade1019]
+[wt 0.3]
+[flashin once 0.1 0.4 FFFFFFFF FFFFFF00]
+
+[charaEffect S bit_talk_blow02]
+[wt 0.2]
+[charaShake D 0.05 3 3 0.3]
+[cueSe SE_24 24_ade1020]
+[se ad686]
+[wt 0.8]
+
+[charaFadeout C 0.1]
+
+？1：マシュ！
+？2：伏兵……！？
+？！
+
+[messageOff]
+[charaFadeout D 0.5]
+[charaFadeout R 0.5]
+[wt 1.0]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 1.0 1]
+[se ad42]
+[seVolume ad42 0 0.5]
+[wt 1.0]
+[seStop ad42 0.5]
+[wt 0.2]
+
+[se ad7]
+[charaPut S 1]
+[charaEffect S bit_talk_41_remake]
+[charaMoveScaleEase J 1.4 0.3 easeOutQuint]
+[charaMoveEase J 0,40 0.3 easeOutQuint]
+[wt 0.2]
+
+[fadeout black 0.3]
+[bgmStop BGM_EVENT_257 0.3]
+[wait fade]
+
+[charaFadeout J 0.1]
+[charaEffectDestroy S bit_talk_41_remake]
+[charaScale J 1.0]
+[scene 10000]
+
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_sand_dust_front_fs]
+[charaEffect T bit_talk_sand_dust_back_fs]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_quick_slash_ppl]
+[se ad1053]
+[wt 1.5]
+[se ad52]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 281601]
+[charaScale R 1.2]
+[charaFadein R 0 -80,-270]
+
+[charaPut T 0,0]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 1.0 1]
+[wt 1.5]
+
+＠？？？
+ふむ、無事かね？
+[k]
+
+[bgm BGM_EVENT_256 0.1]
+
+＠？？？
+まあ、そこの騎士殿も気付いていたようだからな、[r]余計な手出しだったかもしれないが。
+[k]
+
+[messageOff]
+[subCameraOn 1]
+
+[charaLayer B sub #A]
+[charaLayer Q sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask16 3 0,0,0,255]
+[subRenderScale #A 1.01]
+
+[charaScale B 1.2]
+[charaScale Q 1.2]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0 40,270]
+[charaFadein Q 0 -100,-20]
+
+[subRenderFadeinFSR #A 0.4 360,-270]
+[subRenderMoveEaseFSR #A 340,-270 0.4 easeOutSine]
+[wt 0.4]
+
+＠ガレス
+いえ！　私より早く[r]動いて下さったのはあなたです。
+[k]
+
+[charaFace B 1]
+
+＠ガレス
+どなたかは存じませんが、[r]マスターを助けて下さり[line 2]
+[k]
+
+[charaFace B 12]
+
+＠ガレス
+[line 2]あれ？[r]この声は……ムムム？
+[k]
+
+[messageOff]
+[subRenderMoveEaseFSR #A 360,-270 0.4 easeOutSine]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[charaFadeout B 0]
+[charaFadeout Q 0]
+[charaScale B 1.0]
+[subCameraOff]
+[charaLayer B normal]
+[charaLayer Q normal]
+
+[charaEffectStop T bit_talk_sand_dust_front_fs]
+[charaEffectStop T bit_talk_sand_dust_back_fs]
+[wt 0.8]
+
+[charaTalk F,E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.1]
+[charaFadeout F 0.7]
+[wt 1.2]
+
+[charaFace E 1]
+
+＠ジャック
+無事なようで何より。[r]今ので本当に片付いたとみていいようだ。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaDepth C 17]
+
+[charaTalk off]
+[charaFace C 5]
+[charaFace B 13]
+[charaFadeinFSR C 0.1 2]
+[charaFadeinFSL B 0.1 0]
+[wt 1.6]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+？1：ジャック！？
+？2：なんでここに！？　っていうか話し方、ええ！？
+？！
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ジャック
+む……？
+[k]
+
+＠ジャック
+もしや君達は、[r][#この姿のジャックを知っているのか]？
+[k]
+
+[charaFace E 0]
+
+＠ジャック
+なるほど……なぜ急にこの姿以外になる事が[r]できなくなったのか、合点がいった。
+[k]
+
+＠ジャック
+君達は、ジャック・ザ・リッパーの[r]可能性の一つと共に旅路を……。
+[k]
+
+
+[charaFace E 4]
+
+＠ジャック
+故に、他の姿を取る事が[r]許されなくなったのか……。
+[k]
+
+[charaFace E 0]
+
+＠ジャック
+世界によって異なる、[r]数多のジャックの正体の一つ……。
+[k]
+
+[charaFace E 1]
+
+＠ジャック
+それを知る事ができただけでも貴重な経験だ。[r]君達には感謝するとしよう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+あの、本当にありがとうございます。[r]ですが、あなたはいったい……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ジャック
+うむ……説明したい所だが、[r]こちらも時間があまりない。
+[k]
+
+[charaFace E 1]
+
+＠ジャック
+縁があるならば、また会えるだろう。
+[k]
+
+[charaFace E 0]
+
+＠ジャック
+時間が取れる機会があるならば、[r]その時にまたじっくりと説明させてもらう。
+[k]
+
+[messageOff]
+[charaMoveEase E 150,0 1.0 easeOutSine]
+[charaMoveEase R 70,-270 1.0 easeOutSine]
+[wt 1.0]
+
+[charaScale H 0.8]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 -340,-75]
+[wt 0.4]
+
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠H：？？？
+おーい、ジャックさん！[r]そろそろ限界みたいです！　行きましょう！
+[k]
+
+
+＠ジャック
+ああ！　いま行く！
+[k]
+
+[messageOff]
+[charaTalk G,E]
+
+[charaFadeout E 0.5]
+[charaFadeout H 0.5]
+[charaFadeout R 0.5]
+[wt 1.0]
+
+[charaCrossFade G 1098354900 0 0.4]
+[wait charaCrossFade G]
+[wt 1.0]
+
+[charaFace G 1]
+
+＠？？？
+あ！　[&貴方:貴女]達が『枝』を[r]破壊してくれたんですね！
+[k]
+
+＠？？？
+やっぱり、敵の戦力増強を抑えながら動くのが[r]この手の戦いの基本ですよね！
+[k]
+
+＠？？？
+英雄史大戦で覚えた事が応用できて良かったです！[r]ありがとうございました！
+[k]
+
+？1：なんだか既視感ある会話だ……
+？2：英雄史大戦……
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ジャック
+ああ、[#うちのマスター]がすまない。[r]あれは単なる戯れ言だ、気にするな。
+[k]
+
+[charaFace E 0]
+
+＠ジャック
+元よりあの『枝』は伐採するつもりだったが、[r]先に片付けてくれた事にも感謝しよう。
+[k]
+
+[charaFace E 1]
+
+＠ジャック
+では、さらばだ。[r]君達の壮健を祈る。
+[k]
+
+？1：あ、もうちょっと話を……
+？！
+
+[messageOff]
+[charaFadeout E 0.7]
+[cueSe SE_24 24_ade1006]
+[cueSeVolume 24_ade1006 0 0.3]
+[cueSeStop 24_ade1006 1.2]
+[wt 1.0]
+
+[charaPut T 100,100]
+[charaEffect T bit_talk_sand_dust_back_fs]
+[wt 0.4]
+[se ad135]
+[seVolume ad135 0 0]
+[seVolume ad135 1.0 0.2]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 1.0]
+
+[seStop ad135 2.0]
+[charaEffectStop T bit_talk_sand_dust_back_fs]
+[charaFadeout G 0.7]
+[wt 3.0]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠マシュ
+消えてしまいました……。[r]いったいなんだったのでしょうか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ガレス
+彼らはあの魔力の元を明確に『枝』と呼んでいました。[r]何か事情を御存知のようでしたね……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+ジャックさんからは、[r]確かにサーヴァントの反応を感じたのですが……。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[se ad984]
+[wt 0.4]
+
+＠ヒッポリュテ
+戻ったぞ、マスター。[r]無事に破壊する事はできた。
+[k]
+
+[charaFace A 11]
+
+＠ヒッポリュテ
+だが……。
+[k]
+
+＠ヒッポリュテ
+いましがた去って行ったサーヴァントと若い男。[r]あれもカルデアの仲間か？
+[k]
+
+？1：姿はそうだけど、中身は違うっていうか……
+？2：男の方は、知らない人だった
+？！
+
+[charaFace A 1]
+
+＠ヒッポリュテ
+そうか……男の方は、見覚えがある。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠マシュ
+えっ！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+マスターには、私が聖杯戦争で役目を終えた後に[r]こちらにやって来たという事は伝えたな。
+[k]
+
+[bgmStop BGM_EVENT_256 1.5]
+
+[charaFace A 1]
+
+＠ヒッポリュテ
+あの若い男は……その聖杯戦争において、[r][#マスターの一人であった魔術師だ]。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 5]
+
+[branchQuestClear lblClear03 3001327]
+
+[charaFace I 2]
+[branch lblConf03]
+
+[label lblClear03]
+[charaFace I 11]
+[branch lblConf03]
+
+[label lblConf03]
+
+[charaFadein C 0.1 0]
+[charaFadein I 0.1 2]
+[wt 2.0]
+
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

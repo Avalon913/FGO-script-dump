@@ -1,0 +1,508 @@
+
+
+＄94-15-56-09-1-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 1098257910 1 マシュ]
+[charaSet B 4056000 1 ヒッポリュテ]
+[charaSet C 3039001 1 ガレス]
+[charaSet D 7027001 1 ペンテシレイア]
+[charaSet E 5056000 1 フランソワ]
+[charaSet F 5057000 1 フランチェスカ]
+[charaSet G 4056000 1 ヒッポリュテ2]
+[charaScale G 1.2]
+
+[charaSet H 5056000 1 フランソワ_演出用]
+[charaSet I 5057000 1 フランチェスカ_演出用]
+[charaScale H 1.2]
+[charaScale I 1.2]
+
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+
+[sceneSet Q 131400 1]
+[charaScale Q 1.2]
+
+
+
+
+[charaTalk depthOff]
+[charaDepth P 1]
+[charaDepth B 2]
+[charaDepth C 3]
+[charaDepth D 4]
+[charaDepth E 5]
+[charaDepth F 6]
+[charaDepth A 7]
+[charaDepth Q 8]
+[charaDepth G 9]
+[charaDepth H 10]
+[charaDepth I 11]
+
+[scene 131400]
+
+[branchRouteSelect select_answer_01a 94155609 2000]
+[branchNotRouteSelect select_answer_01b 94155609 2000]
+
+[label select_answer_01a]
+
+[fadein black 0.5]
+
+[se ad686]
+[shake 0.03 2 2 0.5]
+[effect bit_talk_blow03]
+
+[charaScale F 1.4]
+[charaScale E 1.4]
+
+[charaTalk F]
+[charaFace F 18]
+[charaFadein F 0.2 -100,50]
+[charaFace E 18]
+[charaFadein E 0.2 100,50]
+[charaMoveScaleEase E 1.0 0.6 easeOutQuint]
+[charaMoveEase E 80,0 0.6 easeOutQuint]
+[charaMoveScaleEase F 1.0 0.6 easeOutQuint]
+[charaMoveEase F -80,0 0.6 easeOutQuint]
+[se ad671]
+[bgm BGM_EVENT_238 0.5]
+[wait fade]
+[wt 1.0]
+
+＠フランチェスカ
+イヤー！！
+[k]
+
+＠フランソワ
+グワー！！
+[k]
+
+[charaTalk E,F]
+[charaFace E 8]
+[charaFace F 22]
+
+＠プレラーティズ
+カルデアの[r]　　　マスターからも　おこられた。（辞世の句）
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaShake E 0.03 2 1 2.5]
+[charaShake F 0.03 2 1 2.5]
+[wt 0.5]
+
+[charaMove E 80,-50 0.4]
+[charaMove F -80,-50 0.4]
+[charaFadeout E 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+[se ad609]
+[bgmStop BGM_EVENT_238 1.0]
+[effect bit_talk_explosion_triple02 0,-250]
+[wt 3.0]
+[seStop ad609 1.0]
+
+
+？1：爆発四散した
+？2：……また、幻術なんだね……
+？！
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[wait fade]
+
+[charaTalk on]
+[wt 1.0]
+
+
+[label select_answer_01b]
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_141 0.1]
+
+＠ペンテシレイア
+はっ……私は何を……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ガレス
+正気を取り戻されたようですね！[r]とりあえず、他には敵の残党も見当たりません。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ヒッポリュテ
+良かった……。[wt 0.6][charaFace B 12][r]今のは、一体何事だ？　いや、半分想像はできるが……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠ペンテシレイア
+！！[wt 0.8][charaFaceFade D 4 0.2][r]あ、姉上……そうか、私はまた……。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_141 1.0 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_141 1.0 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠ヒッポリュテ
+なるほど、事情は理解した。
+[k]
+
+＠ヒッポリュテ
+命脈の最後に刻まれた怒りならば仕方有るまい。
+[k]
+
+[charaFace B 5]
+
+＠ヒッポリュテ
+想像していたよりも年若き姿とは思ったが、[r]霊基をねじ曲げる程の激情とは……。
+[k]
+
+[charaFace B 1]
+
+＠ヒッポリュテ
+大英雄も罪な事を。[r]私でもその侮辱は激怒するかもしれないな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 80,0]
+[charaFace F 2]
+[charaFadein F 0.1 -80,0]
+
+＠フランソワ
+本当に酷いよね！
+[k]
+
+[charaTalk F]
+[charaFace F 2]
+
+＠フランチェスカ
+カルデアで闇討ちでもする？[r]協力するよ？
+[k]
+
+？1：一つだけ言わせてね
+？2：自分の命より挑発を優先するのは、良くないと思う
+？！
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace F 0]
+
+＠フランソワ
+やだなあ、マスター君。[r]解ってるくせに。
+[k]
+
+[charaTalk F]
+[charaFace F 5]
+
+＠フランチェスカ
+ここにいる私達は幻術なんだから、[r]何をやられたって命の心配なんかないんだよ？
+[k]
+
+？1：でも、君たちは
+？2：仮に本体だとしても、同じ事をやる気がする
+？！
+
+[bgmStop BGM_EVENT_141 1.0]
+[charaTalk E,F]
+[charaFace E 13]
+[charaFace F 13]
+
+＠プレラーティズ
+………………！！
+[k]
+
+[messageOff]
+[charaTalk H]
+[charaFace H 15]
+[charaFace I 12]
+[charaFadein Q 0.5 0,-240]
+[charaFadein H 0.5 100,0]
+[charaFadein I 0.5 -100,0]
+
+[wt 1.0]
+[bgm BGM_EVENT_262 0.1]
+
+＠H：フランソワ
+ふうん……なるほどね。
+[k]
+
+[charaFace I 5]
+
+＠I：フランチェスカ
+凄いね！　人間の身で、[r]私達の事を見透かすつもりなんだ？
+[k]
+
+[charaFace I 12]
+
+＠I：フランチェスカ
+……まあ、その通りなんだけどね？
+[k]
+
+[charaFace I 24]
+
+＠I：フランチェスカ
+人間っていつだって想像以上だね！[r]だから好きだよ！
+[k]
+
+[charaFace H 0]
+
+＠H：フランソワ
+まあいいさ。僕達の事より、[r]僕らが用意した敵に目を向けて欲しいところだけどね！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_262 2.0]
+[charaMoveEase Q -100,-240 0.6 easeOutSine]
+[charaMoveEase H 0,0 0.6 easeOutSine]
+[charaMoveEase I -200,0 0.6 easeOutSine]
+[wt 0.6]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.2 330,0]
+
+＠G：ヒッポリュテ
+ええい、とっとと散れ！
+[k]
+
+[messageOff]
+
+[se ad344]
+[seStop ad344 0.6]
+[se ad345]
+[seStop ad345 0.4]
+[charaMove G 250,0 0.4]
+[charaFace H 19]
+[charaFace I 19]
+[charaMove H -80,0 0.4]
+[charaMove I -280,0 0.4]
+[wt 0.8]
+
+[se ad344]
+[seStop ad344 0.6]
+[se ad345]
+[seStop ad345 0.4]
+[charaMove G 150,0 0.4]
+[charaFace H 19]
+[charaFace I 19]
+[charaMove H -180,0 0.4]
+[charaMove I -380,0 0.4]
+[wt 0.8]
+
+[se ad344]
+[seStop ad344 0.6]
+[se ad345]
+[seStop ad345 0.4]
+[charaMove G 50,0 0.4]
+[charaFace H 19]
+[charaFace I 19]
+[charaMove H -280,0 0.4]
+[charaMove I -480,0 0.4]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ペンテシレイア
+……マスター、私は生存者たちを[r]アンティオキアに連れて行く仕事に戻る。
+[k]
+
+[charaFace D 1]
+
+＠ペンテシレイア
+姉上は生粋のアマゾネスだ。[r]おまえたちの強き守りとなってくれるだろう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ペンテシレイアさん？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ペンテシレイア
+武運を祈る。[r]また後で合流しよう。
+[k]
+
+[messageOff]
+[se ad60]
+[charaFadeout D 0.4]
+[wt 0.2]
+[seStop ad60 1.0]
+
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,0]
+
+＠ガレス
+行ってしまいました……。
+[k]
+
+＠ガレス
+なんだか元気が無さそうでしたけれど、[r]ペンテシレイア殿大丈夫でしょうか？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace G 1]
+[charaFadein Q 0.4 -50,-240]
+[charaMoveEase Q 0,-240 0.6 easeOutSine]
+[wt 0.8]
+[se ad60]
+[charaTalk G]
+[charaFace G 16]
+[charaFadein G 0.4 1]
+[seStop ad60 0.2]
+[wt 0.4]
+
+＠ヒッポリュテ
+やれやれ、あの厄介者達を追い払っては来たが、[r]どうせまたすぐに戻ってくるだろう。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 1.0]
+
+[charaFace G 11]
+
+＠G：ヒッポリュテ
+……む？　我が妹の姿が見えないが……。
+[k]
+
+？1：村人を聖都まで護衛する仕事に戻るって
+？！
+
+[charaFace G 3]
+
+＠G：ヒッポリュテ
+そうか、確かにそれは重要な仕事だからな。[r]引き留めるわけにもいくまい。
+[k]
+
+[charaFace G 0]
+
+＠G：ヒッポリュテ
+では、私も与えられた役割を[#熟:こな]すとしよう。
+[k]
+
+＠G：ヒッポリュテ
+手を抜いたりすれば、[r]それこそ妹に顔向けできないからな。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaFadeout Q 0.1]
+[scene 116500]
+[wt 1.0]
+
+[pictureFrameTop cut063_cinema]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad173]
+[wt 1.2]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+[seStop ad173 0.2]
+
+＠ペンテシレイア
+………………。
+[k]
+
+[charaPut P 1]
+[charaFadeTime P 0.2 0.5]
+
+＠ペンテシレイア
+（姉上、私は[line 6]）
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
