@@ -1,0 +1,893 @@
+
+＄94-15-56-15-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[branchQuestClear lblClear01a 3001327]
+
+[masterSet A 1098357800 1098357810 1]
+[branch lblConf01]
+
+[label lblClear01a]
+[masterSet A 1098259460 1098259470 1]
+
+[label lblConf01]
+
+
+
+[charaSet B 1098257910 1 マシュ]
+[charaSet C 1098257310 1 ダ・ヴィンチ]
+[charaSet D 1098360200 1 リチャード]
+[charaSet E 4056000 1 ヒッポリュテ]
+[charaSet F 3039001 1 ガレス]
+[charaSet G 7027001 1 ペンテシレイア]
+[charaSet H 1098358100 1 エルメロイⅡ世]
+[charaSet I 1098255110 1 ゴルドルフ]
+[charaSet J 3051901 1 ドン・キホーテ]
+[charaSet K 98014000 1 一般兵]
+
+[charaSet L 1098355500 1 黒獅子]
+[charaSet M 1098354740 1 偽りの十字軍の騎士_黒い霧A+B]
+[charaSet N 1098354740 1 偽りの十字軍の騎士_黒い霧A+B]
+[charaSet O 1098354740 1 偽りの十字軍の騎士_黒い霧A+B]
+[charaSet P 1098354740 1 偽りの十字軍の騎士_黒い霧A+B]
+[charaSet Q 1098354740 1 偽りの十字軍の騎士_黒い霧A+B]
+
+[sceneSet R 283300 1]
+[charaScale R 1.4]
+[imageSet S cut258_scope_fs 1]
+[charaScale S 1.4]
+
+[sceneSet T 142901 1]
+[charaScale T 1.2]
+[sceneSet U 155901 1]
+[charaScale U 1.2]
+[sceneSet V 110100 1]
+[sceneSet W 110100 1]
+[sceneSet X 10000 1]
+[charaScale X 1.1]
+
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth U 1]
+[charaDepth X 1]
+[charaDepth I 2]
+[charaDepth C 3]
+[charaDepth H 4]
+[charaDepth A 5]
+[charaDepth B 6]
+[charaDepth E 7]
+[charaDepth G 8]
+[charaDepth D 9]
+[charaDepth J 10]
+[charaDepth K 11]
+[charaDepth L 12]
+
+[charaDepth T 13]
+[charaDepth V 14]
+[charaDepth W 15]
+[charaDepth M 16]
+[charaDepth N 17]
+[charaDepth O 18]
+[charaDepth P 19]
+[charaDepth Q 20]
+[charaDepth F 21]
+
+[charaDepth Y 24]
+[charaDepth R 25]
+[charaDepth S 26]
+[charaDepth Z 26]
+
+[subCameraOn 2]
+[charaLayer V sub #A]
+[charaLayer P sub #A]
+[charaLayer Y sub #A]
+[charaLayer W sub #B]
+[charaLayer Q sub #B]
+[charaLayer Z sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask18 4 0,0,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask18 4 0,0,0,255 0]
+
+[charaScale V 1.5]
+[charaScale P 1.0]
+[charaFadein V 0.1 0,0]
+[charaRoll P 340]
+[charaRoll Y 340]
+
+[charaScale W 1.5]
+[charaScale Q 1.0]
+[charaFadein W 0.1 200,100]
+[charaRoll Q 340]
+[charaRoll Z 340]
+
+[scene 142901]
+
+[bgm BGM_BATTLE_195 0.1]
+[fadein black 0.5]
+[wait fade]
+
+[cueSeContinue SE_21 21_ade546 0 0.7 1]
+[subRenderFadein #A 0.3 0,-150]
+[wt 0.3]
+[charaPut Y 0,180]
+[charaEffect Y bit_talk_42 0,0 V]
+[wt 0.2]
+[charaFace P 0]
+[charaFadein P 0.3 -200,250]
+[charaMove P 800,-100 0.4]
+[wt 0.2]
+[charaEffectStop Y bit_talk_42]
+[charaFadeout P 0.2]
+[wt 0.3]
+[subRenderFadeout #A 0.2]
+
+[cueSeContinue SE_21 21_ade546 0 0.7 2]
+[subRenderFadein #B 0.3 0,-380]
+[wt 0.3]
+[charaPut Z 0,180]
+[charaEffect Z bit_talk_42 0,0 V]
+[wt 0.2]
+[charaFace Q 0]
+[charaFadein Q 0.3 -400,350]
+[charaMove Q 600,-30 0.4]
+[wt 0.2]
+[charaEffectStop Z bit_talk_42]
+[charaFadeout Q 0.2]
+[wt 0.3]
+[cueSeContinueStop 21_ade546 0.5]
+[subRenderFadeout #B 0.2]
+[wt 0.2]
+
+[cueSe SE_25 25_ade1244]
+[fowardEffect bit_talk_14 250,-250]
+[wt 0.5]
+[shake 0.04 2 3 0.6]
+[cueSe SE_26 26_ade1387]
+[seContinue ad322 0 0.7 3]
+[effect bit_talk_impactlanding 300,0]
+[wt 0.6]
+
+[fowardEffect bit_talk_14 -250,-250]
+[wt 0.2]
+[seContinue ad322 0 0.7 4]
+[shake 0.05 3 3 1.0]
+[cueSe SE_26 26_ade1386]
+[effect bit_talk_impactlanding -300,0]
+[wt 0.5]
+[wt 2.0]
+
+[charaTalk off]
+[charaFace O 0]
+[charaFadein O 0.4 0,-120]
+[se ad166 0.5 0.5]
+[charaMove O 0,-50 1.5]
+[charaShake O 0.05 3 2 1.5]
+[wt 0.3]
+[charaFace M 0]
+[charaFadeinFSR M 0.4 320,-140]
+[charaMoveFSR M 320,-50 1.5]
+[charaShake M 0.05 2 3 1.5]
+[wt 0.2]
+[seStop ad166 1.0]
+[charaFace N 0]
+[charaFadeinFSL N 0.4 -320,-130]
+[charaMoveFSL N -320,-50 1.5]
+[charaShake N 0.05 3 3 1.5]
+[wt 1.3]
+
+＠穢れた騎士達
+……道を……埋めよ……[r]道ヲォヲヲォォォぉぉぁあ……
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[bgm BGM_BATTLE_195 0.5 0.5]
+[wait wipe]
+
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaFadeout V 0.1]
+[charaFadeout W 0.1]
+[charaLayer V normal]
+[charaLayer P normal]
+[charaLayer Y normal]
+[charaLayer W normal]
+[charaLayer Q normal]
+[charaLayer Z normal]
+[charaRoll P 0]
+[charaRoll Q 0]
+[charaRoll Y 0]
+[charaRoll Z 0]
+[subCameraOff]
+[wt 0.1]
+
+[charaPut Y 2000,2000]
+[charaEffect Y bit_talk_10_LowLevel]
+
+[scene 155901]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[bgm BGM_BATTLE_195 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠マシュ
+リチャードさんの宝具で[r]大半は迎撃できましたが……
+[k]
+
+＠マシュ
+撃ち漏らした騎士たちが[r]城壁に到達しそうです！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+リチャード君は本陣の接近を止めるのに専念してくれ！[r]これ以上近付かれると、敵兵が城壁内に直接届く！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Y 2000,2000]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠リチャード
+了解した！
+[k]
+
+＠リチャード
+任せてくれ！[r]槍の貯蔵は充分だ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFadein K 0.1 1]
+
+＠一般兵
+獅子心王様！[r]新しく十五本発見しました！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠エルメロイⅡ世
+………………。
+[k]
+
+[charaPut X 1]
+[charaFadeTime X 0.2 0.5]
+[charaFace H 4]
+
+＠エルメロイⅡ世
+（いくらなんでも妙だ）
+[k]
+
+＠エルメロイⅡ世
+（多くの戦争を経た場所とはいえ、[r]　ここまで槍が大量に発掘されるものとは思えない）
+[k]
+
+＠エルメロイⅡ世
+（そもそもが、本来の１２７３年では[r]　既に滅びている筈の、存在しない城塞都市……）
+[k]
+
+＠エルメロイⅡ世
+（本当にここが１２７３年であるという根拠も無いが、[r]　だとすると……特異点製作者の[#『動機』:ホワイダニット]はなんだ？）
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout X 0.2]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 12]
+[charaFadein I 0.1 1]
+
+＠ゴルドルフ
+ええい、これでは打って出るどころか、[r]城門から出る事もままならんではないか！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut Y 2000,2000]
+
+[bgmStop BGM_BATTLE_195 1.3]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠リチャード
+いや……それについては、なんとかなりそうだ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 142901]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk G]
+[charaFace G 2]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect G appearance 1 0.25]
+[wt 0.4]
+[wait charaSpecialEffect G]
+
+[bgm BGM_BATTLE_185 0.1]
+[wt 0.2]
+
+＠ペンテシレイア
+潰れろっ！！
+[k]
+
+[messageOff]
+[se ad1006 0.8]
+[charaPut Z 1]
+[charaEffect Z bit_talk_41_remake]
+[charaMoveScaleEase G 1.5 0.3 easeOutQuint]
+[charaMoveEase G 0,70 0.3 easeOutQuint]
+[blur motion 0.3 4 200 0.5 0.6 0.02 200]
+[charaFadeout G 0.3]
+[wt 0.4]
+[charaEffectDestroy Z bit_talk_41_remake]
+[charaScale G 1.0]
+[blurOff motion 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace M 0]
+[charaFace O 0]
+[charaFace Q 0]
+[charaFace P 0]
+[charaFadein M 0.1 -450,0]
+[charaFadein O 0.1 -150,0]
+[charaFadein Q 0.1 150,0]
+[charaFadein P 0.1 450,0]
+[wt 0.2]
+
+[charaEffect O bit_talk_blow02]
+[cueSe Battle bac148]
+[wt 0.2]
+[charaShake O 0.05 3 3 0.3]
+[charaFadeout O 0.3]
+
+[charaEffect Q bit_talk_blow02]
+[cueSe Battle bac149]
+[wt 0.2]
+[charaShake Q 0.05 3 3 0.3]
+[charaFadeout Q 0.3]
+[wt 0.2]
+
+[charaEffect M bit_talk_blow02]
+[charaEffect P bit_talk_blow02]
+[cueSe Battle bac150]
+[se ad170]
+[wt 0.1]
+[charaShake M 0.05 3 3 0.3]
+[charaShake P 0.05 3 3 0.3]
+[charaFadeout M 0.3]
+[charaFadeout P 0.3]
+[wt 1.0]
+
+[charaFace M 0]
+[charaFace N 0]
+[charaFace O 0]
+[charaFadein M 0.4 -420,0]
+[charaFadein N 0.4 320,0]
+[charaFadein O 0.4 -50,0]
+[charaFadein T 0.4 70,-270]
+[charaMoveEase M -370,0 0.4 easeOutSine]
+[charaMoveEase N 370,0 0.4 easeOutSine]
+[charaMoveEase O 0,0 0.4 easeOutSine]
+[charaMoveEase T 120,-270 0.4 easeOutSine]
+[se ade210]
+[wt 0.4]
+[seStop ade210 0.2]
+[wt 0.6]
+
+[effect bit_talk_x_slash_bl_02]
+[wt 0.1]
+[cueSe Battle bac140]
+[effect bit_talk_x_slash_bl_01]
+[wt 0.1]
+[charaShake M 0.05 3 3 1.0]
+[charaShake N 0.05 3 3 1.0]
+[charaShake O 0.05 3 3 1.0]
+[cueSe Battle bac142]
+[effect bit_talk_x_slash_bl_03 0,0 H]
+[wt 0.2]
+[se ad670]
+[seStop ad670 1.4]
+[fadeout white 0.5]
+[wait fade]
+
+[fadein white 1.0]
+[wait fade]
+
+[charaMove M -370,-50 0.5]
+[charaMove N 370,-50 0.5]
+[charaMove O 0,-50 0.5]
+[charaFadeout M 0.4]
+[charaFadeout N 0.4]
+[charaFadeout O 0.4]
+[wt 0.4]
+[seContinue ad144 0 1.0 5]
+[seContinue ade43 0 0.5 6]
+[wt 0.2]
+[seContinue ad144 0 1.0 7]
+[seContinue ade43 0 0.7 8]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.2 30,0]
+[charaMoveEase F 0,0 0.4 easeOutSine]
+[wt 0.1]
+[cueSe SE_21 21_ad1064]
+[wt 0.3]
+
+＠ガレス
+ここは、我々にお任せを！
+[k]
+
+？1：ペンテシレイア！　ガレス！
+？！
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[bgm BGM_BATTLE_185 0.5 0.5]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaFadeout T 0.1]
+
+[scene 155901]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[bgm BGM_BATTLE_185 0.5 1.0]
+[wait wipe]
+[wt 0.1]
+
+＠ヒッポリュテ
+うむ、見事な武勇だ！
+[k]
+
+＠ヒッポリュテ
+やはりペンテシレイアは[r]戦士長に相応しきアマゾネスだ！
+[k]
+
+＠ヒッポリュテ
+あの若き騎士も実に頼もしい！
+[k]
+
+＠ヒッポリュテ
+私も彼女達に遅れはとるまい。[wt 1.2][charaFace E 1][r]……見ろ、マスター。
+[k]
+
+＠ヒッポリュテ
+リチャードの宝具の[#投擲:とうてき]で、[r]黒い霧が僅かに晴れた。
+[k]
+
+＠ヒッポリュテ
+あそこに見えるのが……[r]我らがこれより討つ将だ。
+[k]
+
+[bgmStop BGM_BATTLE_185 2.0]
+
+？1：あれが……
+？2：別霊基の、獅子心王……
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+[charaFadein R 0.1 200,-140]
+[wt 1.5]
+
+[charaMove R 250,-140 5.1]
+[bgm BGM_EVENT_269 0.1]
+[fadein black 1.0]
+[wait fade]
+[wt 3.0]
+
+[fadeout black 1.0]
+[wait fade]
+[charaFadein R 0.1 100,-415]
+[charaMove R 0,-415 10.0]
+[wt 0.2]
+
+[fadein black 1.0]
+[wait fade]
+[wt 3.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout R 0.1]
+
+[scene 283300]
+[cameraMove 0.1 0,0 1.1]
+[wt 0.2]
+
+
+[cameraMoveEase 0,0 2.0 easeOutSine 1.0]
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+＠黒獅子
+……あれが、カルデアか。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_269 1.0 0.5]
+[wait fade]
+
+[charaFadein S 0.1 0,-350]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaDepth T 13]
+[charaFadein U 0.1 200,-270]
+[wt 0.5]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_269 1.0 1.0]
+[wait fade]
+[wt 0.5]
+
+＠黒獅子
+……人類最後のマスター。
+[k]
+
+[messageOff]
+[charaPut B 30,0]
+[charaMoveEase B -70,0 1.0 easeOutSine]
+[charaMoveEase A -100,0 1.0 easeOutSine]
+[charaMoveEase U 100,-270 1.0 easeOutSine]
+[charaFadeout A 0.4]
+[wt 0.5]
+
+[charaFace B 0]
+[charaFadeTime B 0.5 1.0]
+[wt 0.5]
+
+＠黒獅子
+……その守護騎士。
+[k]
+
+[messageOff]
+[charaPut D 100,0]
+[charaMoveEase D 0,0 1.0 easeOutSine]
+[charaMoveEase B -170,0 1.0 easeOutSine]
+[charaMoveEase U 0,-270 1.0 easeOutSine]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+[charaFace D 0]
+[charaFadeTime D 0.5 1.0]
+[wt 0.5]
+
+＠黒獅子
+[#蒙昧:もうまい]なる[#剣:セイバー]。
+[k]
+
+[messageOff]
+[charaPut E 100,0]
+[charaMoveEase E 0,0 1.0 easeOutSine]
+[charaMoveEase D -100,0 1.0 easeOutSine]
+[charaMoveEase U -100,-270 1.0 easeOutSine]
+[charaFadeout D 0.4]
+[wt 0.5]
+
+[charaFace E 1]
+[charaFadeTime E 0.5 1.0]
+[wt 0.5]
+
+＠黒獅子
+……[#迷い出たか]、騎兵の女王。
+[k]
+
+[messageOff]
+[charaMoveEase E 0,200 1.5 easeOutSine]
+[charaMoveEase U -100,-70 1.5 easeOutSine]
+[charaFadeout E 0.4]
+[wt 0.7]
+
+[charaDepth T 20]
+[charaDepth G 21]
+[charaDepth J 22]
+[charaFadein T 0.5 200,-300]
+
+[charaPut G 0,-100]
+[charaMoveEase G 0,0 1.5 easeOutSine]
+[charaMoveEase T 200,-200 1.5 easeOutSine]
+[wt 0.5]
+[charaFadeout U 0]
+[wt 0.5]
+
+[charaFace G 2]
+[charaFadeTime G 0.5 1.0]
+[wt 0.5]
+
+＠黒獅子
+……果てなき怒りを身に宿しながらも、[r]復讐者とならざりし狂戦士。
+[k]
+
+[messageOff]
+[charaPut J 100,0]
+[charaMoveEase J 0,0 1.0 easeOutSine]
+[charaMoveEase G -100,0 1.0 easeOutSine]
+[charaMoveEase T 100,-200 1.0 easeOutSine]
+[charaFadeout G 0.4]
+[wt 0.5]
+
+[charaFace J 0]
+[charaFadeTime J 0.5 1.0]
+[wt 0.5]
+
+＠黒獅子
+……[#老いた騎士]。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_269 1.0 0.5]
+[wait fade]
+
+[charaFadeout J 0.1]
+[charaFadeout T 0.1]
+[charaFadeout S 0.1]
+
+[charaScale R 1.2]
+[charaFadein R 0.1 0,-260]
+[charaMove R 0,-300 10.0]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_269 1.0 1.0]
+[wait fade]
+
+＠黒獅子
+誰を連れた所で、諸共に腐り落ちるのみ。
+[k]
+
+＠黒獅子
+せいぜい、祈るがいい。[r]　　　粛々と、願うがいい。
+[k]
+
+＠黒獅子
+貴様らの上に、日輪がまた巡ると。[r]明日の大地が、腐らずに己の足元に在り続けると。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_269 1.5]
+[wait fade]
+
+[charaFadeout R 0.1]
+
+[scene 155901]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.1]
+
+[bgm BGM_MAP_110 0.1]
+
+＠マシュ
+あの鎧姿の人物が敵将で間違いなさそうです、マスター！[r]ここからでも禍々しい魔力の渦が感じられます！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠リチャード
+おお！　あれが別霊基の俺か？
+[k]
+
+[charaFace D 11]
+
+＠リチャード
+直接姿を見るのは初めてだな！[r]ほほう、俺なのに俺よりも強そうだ！
+[k]
+
+[charaFace D 1]
+
+＠リチャード
+俺、あんなにかっこいい鎧着てたかな？[wt 1.5][charaFace D 11][r]まあ、細かい事か！
+[k]
+
+
+＠リチャード
+奴の首を獲ったら、あの鎧を回収しよう！[r]実際に着てみれば思い出すだろうしな！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk I]
+[charaFace I 15]
+[charaFadein I 0.1 1]
+
+＠ゴルドルフ
+自分の首だよね？[r]もう少しこう、[#躊躇:ちゅうちょ]とかしてくれないと怖いのだが？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+直接視認できる状態でも、対象のクラスは不明か……。[r]何か、複数のノイズが入り交じってる感じだね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Y 2000,2000]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ヒッポリュテ
+意図的に隠蔽しているのかもしれんな。[r]何しろ向こうには幻術使いのプレラーティがついている。
+[k]
+
+＠ヒッポリュテ
+どこで幻術を使ってくるか解らないし、[r]奴の幻術はとにかく範囲が広く生々しい。
+[k]
+
+＠ヒッポリュテ
+幻術封じの礼装などがあるなら[r]最低限の準備はした方がいいだろう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut Y 1]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+一応こっちでも幻術には最大限の警戒をしてる。[r]ただ、カルデアの通信すら幻術で再現するんだろう？
+[k]
+
+＠ダ・ヴィンチ
+どんな状況でも、『幻術かもしれない』という可能性は[r]頭の隅に置きながら戦って欲しい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠エルメロイⅡ世
+戦場ではその一瞬の惑いが命取りとなるのだがな……[r]まったく、幻術というのは厄介なものだ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut Y 2000,2000]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ヒッポリュテ
+フランソワ・プレラーティ……
+[k]
+
+＠ヒッポリュテ
+英霊としての奴の宝具は、[r]その気になれば、街一つを幻術で包む事も可能だ。
+[k]
+
+[charaFace E 5]
+
+＠ヒッポリュテ
+流石にそこまでの大魔術は気軽に行使できない筈だが、[r]今の奴らは聖杯を手にしているからな……。
+[k]
+
+？1：そういえば……さっきから見かけないような
+？2：一番煽ってきそうなタイミングなのに
+？！
+
+[charaFace E 1]
+
+＠ヒッポリュテ
+気にはなるが、今は目の前の事に集中するとしよう。
+[k]
+
+[bgmStop BGM_MAP_110 1.5]
+
+[charaFace E 4]
+
+＠ヒッポリュテ
+妹とガレス殿の突貫で、間も無く道が開けそうだ！
+[k]
+
+[bgm BGM_BATTLE_184 0.1]
+
+[charaFaceFade E 9 0.15]
+
+＠ヒッポリュテ
+私と城兵達で敵軍を崩す！[r]マスターとマシュには後詰めを任せた！
+[k]
+
+？1：任せて！
+？2：相手が何かする前に、一気に攻めきろう！
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_184 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

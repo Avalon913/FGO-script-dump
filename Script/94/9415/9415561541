@@ -1,0 +1,93 @@
+
+＄94-15-56-15-4-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 4056000 1 ヒッポリュテ]
+[charaSet B 1098257310 1 ダ・ヴィンチ]
+[charaSet C 1098257310 1 ダ・ヴィンチ]
+
+[charaSet T 98115000 1 通信エフェクト用1]
+[charaSet U 98115000 1 通信エフェクト用2]
+
+[sceneSet X 281102 1]
+
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_10_LowLevel_depth]
+[charaPut U 2000,2000]
+[charaEffect U bit_talk_10_LowLevel]
+
+[charaTalk depthOff]
+[charaDepth U 6]
+[charaDepth C 5]
+[charaDepth X 4]
+[charaDepth T 3]
+[charaDepth B 1]
+[charaScale C 1.2]
+[charaScale X 1.2]
+[charaScale U 1.2]
+[charaFace C 14]
+
+[scene 281102]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_116 0.1]
+
+？1：攻撃は……通るのに……！！
+？2：その度に、なんだかみんなの様子が……！
+？！
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+なんという色濃き呪い……！[r]まるで、この世の悪徳を煮詰めたかのような……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad539]
+[charaPut T 1]
+[wt 0.6]
+[seStop ad539 0.2]
+[wt 0.2]
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+無……か……事……い……無事かい！！[r][%1]、マシュ！
+[k]
+
+＠ダ・ヴィンチ
+刃を合わせた事で、やっと反応が正確に観測できた！！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaPut U 20,0]
+[charaFadein C 0.6 0,20]
+[charaFadein X 0.6 0,-280]
+[wt 0.8]
+
+＠ダ・ヴィンチ
+その敵将の霊基クラスは[line 2]『[#アヴェンジャー]』だ！！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_116 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
