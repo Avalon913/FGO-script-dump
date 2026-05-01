@@ -1,0 +1,291 @@
+
+
+＄94-15-57-01-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 1098210410 1 這い蠢く瘴気1]
+[charaSet B 1098210410 1 這い蠢く瘴気2]
+[charaSet C 1098210410 1 這い蠢く瘴気]
+[charaSet D 5056000 1 フランソワ]
+
+[sceneSet E 281800 1]
+[sceneSet F 281800 1]
+
+[imageSet G back281900 1 1]
+[charaScale G 1.7]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth A 2]
+[charaDepth B 3]
+[charaDepth C 4]
+[charaDepth E 5]
+[charaDepth D 6]
+
+[subCameraOn 2]
+[charaLayer A sub #A]
+[charaLayer B sub #A]
+[charaLayer C sub #A]
+[subCameraFilter #A through]
+
+[charaScale E 1.3]
+[charaScale F 1.01]
+[charaFadein E 0 0,-300]
+[charaFadein F 0 0,-200]
+[wt 0.1]
+
+[se ad507 1.0 0.6]
+[charaMove E -100,-300 5.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 3.0]
+[charaFadeout E 0.6]
+[wt 1.1]
+
+？1：誰もいない、現代の街……？
+？2：アメリカとか、かな……？
+？！
+
+[effect bit_talk_strongwind04_cl 0,0 H]
+[wt 0.5]
+[charaMoveReturn F 0,-196 0.8]
+[cameraMove 5.0 0,-10 1.2]
+[cueSe SE_26 26_ade1317]
+[se ad134 0.5 0.5]
+[wt 0.8]
+[charaMoveReturn F 0,-196 0.8]
+[wt 0.8]
+[charaMoveReturn F 0,-196 0.8]
+[wt 0.8]
+[charaMoveReturn F 0,-196 0.8]
+[wt 0.8]
+[charaMoveReturn F 0,-196 0.8]
+[wt 0.8]
+[charaMoveReturn F 0,-195 1.0]
+[fadeout black 1.0]
+[cueSeStop 26_ade1317 1.0]
+[seStop ad134 1.0]
+[seStop ad507 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_strongwind04_cl]
+[charaFadeout F 0.1]
+
+[charaFadein G 0 -50,400]
+[scene 10000]
+[cameraMove 0.1 0,0 1.0]
+
+[charaLayer E sub #B]
+[charaLayer D sub #B]
+[subCameraFilter #B normal]
+[charaScale E 1.4]
+[charaFace D 1]
+[charaFadein D 0 50,0]
+[charaFadein E 0 -210,-250]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subRenderScale #B 1.01]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.7]
+
+[bgm BGM_EVENT_256 0.1]
+
+[charaMoveEase G -50,-550 3.5 easeOutSine]
+[wt 4.3]
+
+[branchQuestClear lblClear01b 94091517]
+
+[label lblClear01a]
+
+？1：街の真ん中に……大きな木……？
+？2：空想樹じゃない……
+？！
+
+[branch lblConf01]
+
+[label lblClear01b]
+
+？1：街の真ん中に……大きな木……？
+？2：空想樹じゃない……
+
+
+？3：江戸のやつとも違う……
+
+？！
+
+[label lblConf01]
+
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.7 1.0]
+[bgm BGM_EVENT_256 0.7 0.5]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaScale F 1.01]
+[charaFadein F 0 0,-200]
+[wt 1.0]
+
+[wipein rectangleStripUpToDown 0.7 1.0]
+[bgm BGM_EVENT_256 0.7 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+？1：とりあえず……建物の中に入ろう
+？！
+
+[subRenderFadein #A 0.1 0,0]
+[charaMoveReturn F 0,-197 0.8]
+[cameraMove 2.5 0,-5 1.1]
+[cueSe SE_26 26_ade1317]
+[wt 0.8]
+[charaMoveReturn F 0,-197 0.8]
+[wt 0.8]
+[charaMoveReturn F 0,-197 0.8]
+[wt 0.3]
+[cueSeStop 26_ade1317 0.2]
+
+[bgmStop BGM_EVENT_256 1.0]
+
+[cueSe SE_23 23_ade909]
+[fowardEffect bit_talk_miasma_eruption]
+[wt 0.4]
+[fowardEffect bit_talk_miasma_eruption -400,0]
+[fowardEffect bit_talk_miasma_eruption 400,0]
+[wt 0.8]
+[charaTalk off]
+[charaScale A 0.8]
+[charaScale B 0.8]
+[charaScale C 0.8]
+[charaPut A -350,-50]
+[charaPut B 350,-50]
+[charaPut C 0,-50]
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+[charaSpecialEffect A appearance 1 1.5]
+[charaSpecialEffect B appearance 1 1.5]
+[charaSpecialEffect C appearance 1 1.5]
+[wt 0.5]
+[fowardEffectStop bit_talk_miasma_eruption]
+[wt 0.5]
+[cueSeStop 23_ade909 1.5]
+[bgm BGM_EVENT_258 0.1]
+[wt 1.7]
+[wait charaSpecialEffect C]
+
+[charaTalk on]
+[charaTalk C]
+
+＠這い蠢く瘴気
+……カル……デア……[r]              ハイジョ……ヒテイ……
+[k]
+
+＠這い蠢く瘴気
+ミトメ……ナイ[r]　　　　　ネガイ……リュウ……ソラ……
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad461]
+[charaMoveScale C 0.9 1.0]
+[charaMove C 0,-25 1.0]
+[wt 0.1]
+[charaMoveScale A 0.9 1.0]
+[charaMoveScale B 0.9 1.0]
+[charaMove A -370,-25 1.0]
+[charaMove B 370,-25 1.0]
+[wt 1.0]
+
+？1：さっきの怪物！？
+？2：こっちに向かって来てる！！
+？！
+
+[se ad461]
+[charaMoveScale C 1.0 1.0]
+[charaMove C 0,0 1.0]
+[wt 0.1]
+[charaMoveScale A 1.0 1.0]
+[charaMoveScale B 1.0 1.0]
+[charaMove A -390,0 1.0]
+[charaMove B 390,0 1.0]
+[wt 0.6]
+
+[cueSe SE_25 25_ade1284 0 0.8]
+[fowardEffect bit_talk_explosion_continuous]
+[wt 0.3]
+[charaShake C 0.04 4 3 2.0]
+[cueSe SE_25 25_ade1287 0 0.8]
+[fowardEffect bit_talk_explosion_continuous -375,0]
+[wt 0.2]
+[charaShake A 0.04 3 3 2.0]
+[cueSe SE_25 25_ade1288 0 0.8]
+[fowardEffect bit_talk_explosion_continuous 375,0]
+[wt 0.2]
+[charaShake B 0.05 4 3 1.8]
+[wt 1.5]
+
+[charaTalk on]
+[charaTalk C]
+
+＠這い蠢く瘴気
+……！！
+[k]
+
+[charaTalk D]
+
+＠D：？？？
+マスター君！[r]そいつらには触れちゃ駄目だ！
+[k]
+
+[messageOff]
+[charaMoveEase E -260,-250 0.6 easeOutQuad]
+[charaMoveEase D 0,0 0.6 easeOutQuad]
+[subRenderFadein #B 0.4 0,0]
+[wt 1.1]
+[subRenderFadeout #A 0.1]
+
+？1：フランソワ！？
+？！
+
+[charaFace D 11]
+
+＠フランソワ
+ここは僕が誤魔化しておく！[r]その先に教会があるから、そこまで走って逃げて！
+[k]
+
+[charaFace D 7]
+
+＠フランソワ
+今さら僕の言葉なんか信用できないと思うけど[line 2]
+[k]
+
+？1：解った！
+？2：ありがとう！　話は後で聞かせてもらう！
+？！
+
+[messageOff]
+[charaFace D 9]
+[wt 1.2]
+[charaFaceFade D 14 0.2]
+
+＠フランソワ
+ハハハ！　君って本当にお人好しだね！[r]ＯＫ！　任された！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_258 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
