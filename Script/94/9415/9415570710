@@ -1,0 +1,417 @@
+
+
+＄94-15-57-07-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 1098257910 1 マシュ]
+[charaSet B 1098257310 1 ダ・ヴィンチ]
+[charaSet C 1061001 1 リチャード]
+[charaSet D 3039001 1 ガレス]
+[charaSet E 1098210410 1 モース1]
+[charaSet F 1098210410 1 モース2]
+[charaSet G 1098210410 1 モース3]
+
+[charaSet H 98115000 1 エフェクト用2]
+[charaSet I 98115000 1 エフェクト用3]
+
+[sceneSet J 281800 1]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth G 2]
+[charaDepth F 3]
+[charaDepth E 4]
+[charaDepth H 5]
+[charaDepth A 6]
+[charaDepth D 7]
+[charaDepth B 8]
+[charaDepth C 9]
+[charaDepth I 10]
+
+[scene 281800]
+
+[charaPut I 2000,2000]
+[charaEffect I bit_talk_10_LowLevel]
+
+[charaScale J 1.4]
+[charaFadein J 0.1 80,-240]
+[wt 0.1]
+[charaMove J -80,-240 15.0]
+[se ad507 1.0 0.6]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[cueSe SE_26 26_ade1378 0 0.6]
+[wt 3.5]
+[cueSeStop 26_ade1378 2.0]
+[wt 2.0]
+[charaFadeout J 1.0]
+[seStop ad507 1.0]
+[wt 1.5]
+
+[bgm BGM_EVENT_141 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+こちらです、マスター。
+[k]
+
+＠マシュ
+先ほど教会に向かう途中、このあたりで確かに[r]楽器の音が聞こえてきまして。
+[k]
+
+＠マシュ
+あの時はマスターとの合流を優先しましたが、[r]放置するわけにもいかないので、一応確認をと……。
+[k]
+
+[bgm BGM_EVENT_141 0.8 0]
+
+[messageOff]
+[charaTalk I]
+[cueSe SE_26 26_ade1378]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 5]
+
+＠マシュ
+あっ！　この音です！
+[k]
+
+？1：確かに聞こえる……
+？2：夏のノッブみがある
+？！
+
+[cueSeStop 26_ade1378 1.0]
+[bgm BGM_EVENT_141 1.0 1.0]
+
+[charaFace A 6]
+
+＠マシュ
+音の方に向かいましょう、マスター。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+気を付けた方がいいね、[r]そっちに敵性反応らしき魔力がいくつかある。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい、極力戦闘を避ける方向で向かいます。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+それと、この魔力反応は……
+[k]
+
+[messageOff]
+[cueSe SE_23 23_ade828]
+[se ad667]
+[wipeout leftToRight 0.7 1.0]
+[bgmStop BGM_EVENT_141 1.0]
+[wait wipe]
+
+[cueSeStop 23_ade828 1.0]
+[seStop ad667 1.0]
+[charaPut I 2000,2000]
+[charaFadeout B 0.1]
+
+[subCameraOn 1]
+[charaLayer C sub #A]
+[charaLayer J sub #A]
+[subCameraFilter #A normal]
+
+[charaScale C 1.2]
+[charaScale J 1.2]
+
+[charaFace C 1]
+[charaFadein C 0 1]
+[charaFadein J 0 0,-250]
+[charaEffect C bit_talk_36]
+[wt 1.5]
+
+[wipein rightToLeft 0.7 1.0]
+[wait wipe]
+
+[wt 0.3]
+
+[cueSe SE_26 26_ade1379]
+[wt 4.0]
+
+[se ade167 0.5]
+[cueSe SE_23 23_ad1294 0 0.2]
+[cueSeVolume 23_ad1294 2.0 0.5]
+[wt 0.5]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaPut E 0,0]
+[charaPutFSR F 320,0]
+[charaPutFSL G -320,0]
+[charaSpecialEffect E appearance 1 1.0]
+[wt 0.1]
+[charaSpecialEffect F appearance 1 1.0]
+[wt 0.2]
+[charaSpecialEffect G appearance 1 1.0]
+[wt 0.6]
+[cueSeStop 23_ad1294 1.5]
+[wt 1.0]
+[wait charaSpecialEffect G]
+
+[bgm BGM_EVENT_266 0.1]
+
+[se ad39]
+[subRenderFadein #A 0.5 50,0]
+[subRenderMoveEase #A 0,0 0.7 easeOutSine]
+[wt 1.0]
+
+[charaEffectStop C bit_talk_36]
+[charaFace C 8]
+
+＠リチャード
+『[#永久に遠き勝利の剣:エ　　ク　　ス　　カ　　リ　　バ　　ー]』！！[seStop ad39 0.5]
+[k]
+
+[messageOff]
+[cueSe Servants_106100 m63547 0 0.6]
+[fadeout white 0.3]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[charaScale C 1.0]
+[charaScale J 1.0]
+[charaFadeout C 0.1]
+[charaFadeout J 0.1]
+[charaLayer C normal]
+[charaLayer J normal]
+[subCameraOff]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.3]
+
+[fadein white 0.5]
+[wait fade]
+
+
+[cueSe SE_26 26_ade1397]
+[charaPut H 1]
+[charaEffect H bit_talk_rch_excalibur_h]
+[wt 0.3]
+[se ad789]
+[shake 0.05 3 3 2.5]
+[wt 2.0]
+
+[cueSe Battle ba6]
+[charaEffect E bit_talk_atomization]
+[charaEffect F bit_talk_atomization]
+[charaEffect G bit_talk_atomization]
+[charaSpecialEffect E erasure 1 1.4]
+[charaSpecialEffect F erasure 1 1.4]
+[charaSpecialEffect G erasure 1 1.4]
+[charaShake E 0.03 3 2 1.0]
+[charaShake F 0.04 3 4 1.0]
+[charaShake G 0.03 3 3 1.0]
+[wt 4.0]
+
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaScale G 1.0]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaEffectDestroy E bit_talk_atomization]
+[charaEffectDestroy F bit_talk_atomization]
+[charaEffectDestroy G bit_talk_atomization]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠マシュ
+今……エレキギターを[r]エクスカリバーにしたように見えたのですが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠ガレス
+楽器を武器に……[r]なるほど、弓で演奏をするトリスタン卿の逆ですね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠リチャード
+おっ！　カルデアのマスター達じゃないか！[r]無事だったようだな！！
+[k]
+
+？1：凄い馴染んでる……
+？2：その服、どうしたんですか？
+？！
+
+[charaFaceFade C 0 0.2]
+
+＠リチャード
+ああ、なにやらここに飛ばされた時に[r]この姿になっていてな……妙に馴染むんだ。
+[k]
+
+＠リチャード
+もしかしたら、他で召喚された時に[r]こういう格好をしていたのかもしれないな。
+[k]
+
+[charaFace C 5]
+
+＠リチャード
+恐らく、霊基に刻まれる程に俺が気に入ったんだろう！[r]細かい事は気にしない事にした！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+体に合う服装は大事ですからね。[r]ですが、何故このような場所でギターを……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠リチャード
+ああ、気が付いたら俺もこの辺に飛ばされていてな。
+[k]
+
+[charaFace C 0]
+
+＠リチャード
+周りに魔物がいたようだからな、一箇所に集めて[r]エクスカリバーで薙ぎ払う事を繰り返していただけだ。
+[k]
+
+[charaFace C 10]
+
+＠リチャード
+エクスカリバー化する事で、[r]アンプが無くても音が響くようになったんだ！
+[k]
+
+＠リチャード
+流石はエクスカリバーだな！
+[k]
+
+？1：いつか怒られますよ獅子心王
+？2：それはそうと、無事なら良かった
+？！
+
+[bgmStop BGM_EVENT_266 1.2]
+
+[charaFace C 1]
+
+＠リチャード
+……っと、再会を喜んでる暇はなさそうだ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ade167 0.5]
+[cueSe SE_23 23_ad1294 0 0.2]
+[cueSeVolume 23_ad1294 2.0 0.5]
+[wt 0.5]
+
+[bgm BGM_EVENT_258 0.1]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaPut E 0,0]
+[charaPutFSR F 320,0]
+[charaPutFSL G -320,0]
+[charaSpecialEffect E appearance 1 1.0]
+[wt 0.1]
+[charaSpecialEffect F appearance 1 1.0]
+[wt 0.2]
+[charaSpecialEffect G appearance 1 1.0]
+[wt 0.6]
+[cueSeStop 23_ad1294 1.5]
+[wt 0.4]
+[charaMoveScale E 1.05 0.8]
+[charaMove E 0,10 0.8]
+[wt 0.1]
+[charaMoveScale F 1.05 1.0]
+[charaMoveFSR F 320,10 1.0]
+[wt 0.1]
+[charaMoveScale G 1.05 0.8]
+[charaMoveFSL G -320,10 0.8]
+[wt 1.2]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠リチャード
+とりあえず、周辺の魔物は全部集まったっぽいな。[r]これから一気に薙ぎ払う！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_EVENT_258 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

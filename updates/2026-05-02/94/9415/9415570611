@@ -1,0 +1,395 @@
+
+＄94-15-57-06-1-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 6005000 1 ジャック（バーサーカー）]
+[charaSet B 6005001 1 ジャック（アサシン）]
+[charaSet C 1098354900 1 フラット]
+[charaSet D 6005001 1 ジャック（アサシン）_演出用]
+
+[sceneSet S 282400 1]
+[sceneSet T 282400 1]
+
+[subCameraOn 2]
+
+[charaLayer A sub #A]
+[charaLayer S sub #A]
+[charaLayer D sub #B]
+[charaLayer T sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask10 5 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask09 5 0,0,0,255]
+
+[charaScale A 1.2]
+[charaScale S 1.2]
+[charaScale D 1.2]
+[charaScale T 1.2]
+
+[charaTalk depthOff]
+[charaDepth A 6]
+[charaDepth S 5]
+[charaDepth D 4]
+[charaDepth T 3]
+
+[charaTalk off]
+[charaFace A 5]
+[charaFadein S 0.1 240,-20]
+
+[charaFace D 5]
+[charaFadein T 0.1 -240,-20]
+[wt 0.1]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[cueSe SE_23 23_ade930]
+[effect bit_talk_guard_eighthit]
+[wt 1.6]
+
+[fadeout black 0.1]
+[wait fade]
+[scene 282400]
+[subRenderFadein #A 0.1 -210,-260]
+[subRenderFadein #B 0.1 210,-260]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+
+[bgm BGM_MAP_116 0.1]
+
+[se ad671]
+[charaFadeinFSL A 0.4 100,270]
+[charaMoveEaseFSL A -50,270 1.0 easeOutQuint]
+[charaFadeinFSR D 0.4 -100,270]
+[charaMoveEaseFSR D 70,270 1.0 easeOutQuint]
+[wt 1.5]
+
+？1：通信で呼ばれて来てみたら！
+？2：二人とも、とりあえず落ち着いてー！！
+？！
+
+[charaTalk on]
+
+＠D：ジャック（アサシン）
+………………。
+[k]
+
+[charaFace A 4]
+
+＠ジャック（バーサーカー）
+………………。
+[k]
+
+[bgmStop BGM_MAP_116 1.5]
+
+＠ジャック（バーサーカー）
+このあたりで、納得してもらえると嬉しいのだが……。
+[k]
+
+[charaFace D 4]
+
+＠D：ジャック（アサシン）
+んー。[r]へんなの。
+[k]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠D：ジャック（アサシン）
+あなたは、わたしたちだけど、[r]わたしたちじゃない。
+[k]
+
+＠D：ジャック（アサシン）
+わたしたちになれるけど、[r]わたしたちを選ばない。
+[k]
+
+[charaFace D 0]
+
+＠D：ジャック（アサシン）
+ううん、きっとあなたは、[r]どのわたしたちも選べない。
+[k]
+
+＠D：ジャック（アサシン）
+そういう風に、定義されてる。
+[k]
+
+＠D：ジャック（アサシン）
+あなたは、だれでもない。[r]切り裂きジャックだけど、切り裂きジャックになれない。
+[k]
+
+[messageOff]
+[charaTalk B,D]
+[charaFace B 0]
+[charaFadein B 0 1]
+
+[subRenderFadeout #A 0.5]
+[subRenderFadeout #B 0.5]
+[wt 0.5]
+
+[charaFadeout A 0]
+[charaFadeout D 0]
+[charaFadeout S 0]
+[charaFadeout T 0]
+
+[subCameraOff]
+[charaLayer A normal]
+[charaLayer D normal]
+[charaLayer S normal]
+[charaLayer T normal]
+
+＠ジャック（アサシン）
+だから……わたしたちの証明のじゃまにはならない。
+[k]
+
+[bgmStop BGM_EVENT_11 1.5]
+
+[charaFace B 0]
+
+＠ジャック（アサシン）
+[#おかあさん:マスター]、おなかすいた。[r]お外で敵を斬ってくるね。
+[k]
+
+[messageOff]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[se ad73]
+[wt 1.5]
+[wait charaSpecialEffect B]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠フラット
+ありがとうございます！[r]助かりました！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_TOU_1 0.1]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ジャック（バーサーカー）
+やれやれ、カルデアに『私』がいると知った時点で、[r]いずれこうなる事は解っていたが……。
+[k]
+
+[charaFace A 1]
+
+＠ジャック（バーサーカー）
+思ったよりも平和的に解決して何よりだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠フラット
+ジャックさん、大丈夫ですか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジャック（バーサーカー）
+ああ、深手は負っていない。向こうも、こちらが如何なる[r]存在かを確かめに来ただけだろう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠フラット
+いや、そうじゃなくて……。
+[k]
+
+＠フラット
+最後にあの子に言われた事に、傷付いてないかなって。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ジャック（バーサーカー）
+……君は基本的に気さくで話し易いマスターだが、[r]時々本当に無神経になるな。
+[k]
+
+[charaFace A 0]
+
+＠ジャック（バーサーカー）
+丁度良い、カルデアのマスターにも、私がどういう存在か[r]はっきりと伝えておこう。
+[k]
+
+＠ジャック（バーサーカー）
+私は、バーサーカーとして顕現した切り裂きジャックだ。
+[k]
+
+＠ジャック（バーサーカー）
+元より狂気の象徴として扱われていた私が反転した結果、[r]こうして普通に会話する事もできている。
+[k]
+
+＠ジャック（バーサーカー）
+私は、『切り裂きジャック』という名に向けられた人々の[r]好奇心や[#猜疑心:さいぎしん]の集積として形作られた霊基だ。
+[k]
+
+[charaFace A 4]
+
+＠ジャック（バーサーカー）
+故に、『己の正体を知る』という望みを持って[r]この聖杯戦争に参加したのだが……。
+[k]
+
+＠ジャック（バーサーカー）
+彼女の言う通りだ。
+[k]
+
+＠ジャック（バーサーカー）
+私が仮に、『これこそがジャックだ』と定義すれば[line 2][r]その時点で、私はそのジャックに取り込まれるだけだ。
+[k]
+
+＠ジャック（バーサーカー）
+恐らく、次にまたバーサーカーとしての私が[#喚:よ]ばれれば、[r]己の正体を知りたがる新しい『私』が[#喚:よ]ばれるのだろう。
+[k]
+
+＠ジャック（バーサーカー）
+己が何者かを知らぬという存在こそが、私だ。[r]滑稽な話だがな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠フラット
+もう、言ったじゃないですか。ジャックさん。
+[k]
+
+[charaFace C 1]
+
+＠フラット
+そういう正体不明な所が、[r]ジャックさんのカッコイイ所だって！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジャック（バーサーカー）
+……聞いた通りだ、カルデアの使者よ。
+[k]
+
+[charaFace A 1]
+
+＠ジャック（バーサーカー）
+こんな私の事を、[#斯様:かよう]に子供じみた理由とはいえ、[r]肯定してくれるマスターがいてくれるのだ。
+[k]
+
+＠ジャック（バーサーカー）
+せめて、ここに召喚されている間は……彼の為に、[r]正体不明なままの自分を貫こうと思っている。
+[k]
+
+[charaFace A 0]
+
+＠ジャック（バーサーカー）
+故に、これ以上『君達の』ジャックと揉める事はない。[r]そこは安心してくれたまえ。
+[k]
+
+？1：こちらこそ
+？2：うちのジャックを否定しないでくれてありがとう
+？！
+
+[charaFace A 1]
+
+＠ジャック（バーサーカー）
+ふふ……マスターがお人好しという事は共通しているな。
+[k]
+
+＠ジャック（バーサーカー）
+我々は、ジャック・ザ・リッパーとしては……[r]殺人鬼の成れの果てとしては、きっと果報者なのだろう。
+[k]
+
+＠ジャック（バーサーカー）
+君も、君達の世界のジャックを大事にしてやってくれ。
+[k]
+
+＠ジャック（バーサーカー）
+特異点の収束と共にこの出会いが泡と消えるとしても……[r]私が、この胸に抱いた希望だけは消えぬ事を願おう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠フラット
+大丈夫ですよ。
+[k]
+
+＠フラット
+特異点の間の記憶が無くなったって、カルデアの人達……[r]特に、このマスターさんはきっと覚えていてくれますから。
+[k]
+
+？1：忘れないよ
+？2：ちゃんと、二人の事も報告書に書くって約束する
+？！
+
+[charaFace C 1]
+
+＠フラット
+本当ですか！　俺の事は、日本のライトノベルっぽく[r]かっこいい感じで書いて下さいね！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ジャック（バーサーカー）
+彼の戯言は聞かなくていい。[wt 1.2][charaFace A 1][r]だが、私も愉しみに願うとしよう。
+[k]
+
+＠ジャック（バーサーカー）
+君から見た『私』が、カルデアのデータの中に[r]刻まれるというのなら、それもまた一興だからね。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_TOU_1 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,145 @@
+
+
+＄94-15-57-03-2-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 4056000 1 ヒッポリュテ]
+[charaSet B 7027001 1 ペンテシレイア]
+[charaSet C 1098355500 1 黒獅子]
+[charaSet D 1098354740 1 穢れた騎士達]
+[charaSet E 1098354740 1 穢れた騎士達]
+[charaSet F 1098354740 1 穢れた騎士達]
+[charaSet G 1098354740 1 穢れた騎士達]
+[charaSet H 1098272600 1 ドレッドノート]
+[charaRollAxis D y 180 0 0]
+[charaRollAxis E y 180 0 0]
+[charaSet I 1098355500 1 黒獅子]
+[charaScale I 1.1]
+
+[sceneSet J 282500 1]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+[charaSet V 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaDepth C 3]
+[charaDepth H 4]
+[charaDepth D 5]
+[charaDepth E 6]
+[charaDepth F 7]
+[charaDepth G 8]
+[charaDepth J 9]
+[charaDepth S 10]
+[charaDepth T 11]
+[charaDepth I 12]
+[charaDepth U 25]
+[charaDepth V 26]
+[scene 282500]
+
+[charaFadeinFSSideR D 0.1 450,0]
+[charaFadeinFSRNotNotch E 0.1 250,0]
+[charaFadeinFSLNotNotch F 0.1 -250,0]
+[charaFadeinFSSideL G 0.1 -450,0]
+[charaFadein H 0.1 65,0]
+[wt 0.1]
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_48 0.1]
+[wt 0.5]
+
+[se ad42]
+[charaSpecialEffect D enemyErasure 1 1.5]
+[charaSpecialEffect E enemyErasure 1 1.5]
+[charaSpecialEffect F enemyErasure 1 1.5]
+[charaSpecialEffect G enemyErasure 1 1.5]
+[charaSpecialEffect H enemyErasure 1 1.5]
+[wait charaSpecialEffect H]
+[seStop ad42 0.5]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：黒獅子に非ず
+ひ[charaShake C 0.03 2 2 0.5]、ひいっ……。
+[k]
+
+[messageOff]
+[se ade421]
+[seStop ade421 1.0]
+[charaMoveScale C 0.95 0.5]
+[charaMove C 0,-20 0.5]
+[charaFadeout C 0.4]
+[wt 0.5]
+[charaScale J 1.5]
+[charaFadein J 0.5 200,-120]
+[wt 0.2]
+[cueSe SE_25 25_ad1531 0.3 0.5]
+[charaEffect S bit_talk_ripples_in_back]
+[charaEffect U bit_talk_ripples_in_front]
+[wt 1.5]
+
+[se ade421 0.5 1.0]
+[wt 0.8]
+[seStop ade421 0.4]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 0,20]
+[charaMoveScale I 1.0 0.5]
+[charaMove I 0,0 0.5]
+[charaEffect T bit_talk_ripples_out_back]
+[charaEffect V bit_talk_ripples_out_front]
+[wt 1.0]
+[cueSe SE_25 25_ad1510 0 0.6]
+[cueSeStop 25_ad1510 1.5]
+[charaMove I 0,-100 1.0]
+[charaFadeout I 0.7]
+[wt 1.0]
+[cueSeStop 25_ad1531 2.0]
+[wt 1.0]
+[cueSe SE_25 25_ad1532 0 0.8]
+[wt 1.8]
+[charaFadeout J 0.5]
+[charaFadeout I 0.5]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ペンテシレイア
+……ちっ、逃げたか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ヒッポリュテ
+一刻も早く、マスターかマシュ達を[r]捜して合流するとしよう。
+[k]
+
+＠ヒッポリュテ
+今の鎧の中身の小物はともかく……[r]黒獅子という存在は、一筋縄ではいかないようだからな。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_48 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

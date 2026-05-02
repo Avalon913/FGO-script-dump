@@ -1,0 +1,122 @@
+
+
+＄94-15-57-05-1-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 3008001 1 エルキドゥ]
+[charaSet B 1098273120 1 エフェメロス]
+[charaSet C 1098273120 1 エフェメロス]
+
+[sceneSet D 107805 1]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaDepth D 3]
+[charaDepth C 4]
+
+[scene 107805]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠エルキドゥ
+ここまでだね。[r]向こうから閉ざされ始めてる。
+[k]
+
+＠エルキドゥ
+皮肉なものだね。反願望機としてのシステムが、[r]君の救いとなる要素を排除しようとしているなんて。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠エフェメロス
+黙れ、土人形。[r]己の願いすら持てぬ汝に言われたくはない。
+[k]
+
+[messageOff]
+[charaTalk B,C]
+[charaScale D 1.3]
+[charaScale C 1.3]
+[charaFace C 7]
+[charaScale D 1.2]
+[charaFadein D 0.5 0,-300]
+[charaFadein C 0.5 0,0]
+[wt 0.6]
+[charaFadeout B 0.1]
+
+＠C：エフェメロス
+……カルデアのマスター。[r]最後にもう一度だけ忠告してやるとしよう。
+[k]
+
+＠C：エフェメロス
+せいぜい足掻いて逃げのびてみせろ。[r]ここに……おまえたちの望むものなど……
+[k]
+
+[bgmStop BGM_EVENT_81 2.0]
+
+[messageOff]
+[se ad598]
+[se ad343 0.6]
+[wt 0.3]
+[seStop ad343 2.5]
+[charaSpecialEffect C erasure 1 2.0]
+[wait charaSpecialEffect C]
+[wt 1.0]
+[charaFadeout D 0.6]
+[wt 1.0]
+
+[bgm BGM_EVENT_141 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠エルキドゥ
+会話は終了したよ。[r]完全に経路が閉ざされた。
+[k]
+
+[charaFace A 5]
+
+＠エルキドゥ
+……ただ、彼女の居場所は分かる。
+[k]
+
+＠エルキドゥ
+あの巨木……元は『クリスタル・ヒル』と呼ばれていた[r]ビルの地下深く。
+[k]
+
+＠エルキドゥ
+元々、大聖杯の泥が溜められていた場所だよ。
+[k]
+
+[charaFace A 4]
+
+＠エルキドゥ
+問題は……そこに行く為に、[r]まず神々の護りを突破しないといけないんだけどね。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_141 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
