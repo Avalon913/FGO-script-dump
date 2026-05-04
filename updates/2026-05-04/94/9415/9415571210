@@ -1,0 +1,787 @@
+
+
+＄94-15-57-12-1-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 1098257910 1 マシュ]
+[charaSet B 5056001 1 フランソワ]
+[charaSet C 5057001 1 フランチェスカ]
+[charaSet D 1098198500 1 虞美人]
+[charaSet E 28009000 1 ファンタズムーン]
+[charaSet F 23009001 1 シエル]
+[charaSet G 1098355100 1 名も無き暗殺者]
+
+[charaSet H 1098210410 1 モース]
+[charaSet I 1098210410 1 モース]
+[charaSet J 1098355120 1 名も無き暗殺者]
+[charaSet K 5056001 1 フランソワ]
+
+[sceneSet O 281800 1]
+[sceneSet P 185800 1]
+[sceneSet Q 282700 1]
+[sceneSet R 280900 1]
+
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[scene 281800]
+
+[charaTalk depthOff]
+[charaDepth O 1]
+[charaDepth Y 2]
+[charaDepth G 3]
+[charaDepth J 4]
+[charaDepth B 5]
+[charaDepth C 6]
+[charaDepth P 7]
+[charaDepth D 8]
+[charaDepth E 9]
+[charaDepth F 10]
+[charaDepth Q 11]
+[charaDepth K 12]
+[charaDepth H 13]
+[charaDepth I 14]
+[charaDepth R 15]
+
+[charaDepth Z 26]
+
+[subCameraOn 1]
+[charaLayer O sub #A]
+[charaLayer Y sub #A]
+[subCameraFilter #A normal]
+[subRenderFadein #A 0.1 0,0]
+[charaScale O 1.4]
+[charaFadein O 0.1 100,-350]
+[charaPut Y 1]
+[charaEffect Y bit_talk_strongwind04_cl 0,0 H]
+[wt 0.5]
+
+[se ad507 1.0 0.5]
+[se ad555 1.0 0.8]
+[charaMove O 0,-350 7.0]
+[fadein black 1.0]
+[wait fade]
+[wt 4.0]
+
+[seStop ad507 2.0]
+[seStop ad555 2.0]
+[subRenderFadeout #A 1.0]
+[wt 2.0]
+
+[bgm BGM_EVENT_272 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フランソワ
+風が強くなってきたかな……。[r]こっちも風よけの調整はするけれど、気をつけなよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+マスター、飛んでくる看板や車からは[r]わたしが盾でお守りします！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フランソワ
+これから僕達が向かうのは、街の外の沼地だよ。[r]元々は、吸血種の魔術師が縄張りにしていた館さ。
+[k]
+
+＠フランソワ
+カルデアにはいる？　吸血種関係の人とか。
+[k]
+
+？1：パイセンがそんな感じだったような
+
+[messageOff]
+[charaScale P 1.01]
+[charaFadein P 0.4 0,-200]
+[wt 0.6]
+[charaTalk D]
+[charaFace D 0]
+[charaPut D 1]
+[charaFadeTime D 0.4 0.7]
+[wt 2.0]
+
+[charaTalk D,B]
+[charaFace B 12]
+[charaFadeout D 0.4]
+[charaFadeout P 0.4]
+[wt 0.4]
+
+＠フランソワ
+へー、いるんだ。まあ、カルデアも手段は選ばないか。
+[k]
+
+？2：まあ、ファンタズムな姫さまとかそれを狩る人とか
+
+[messageOff]
+[charaScale P 1.01]
+[charaFadein P 0.4 0,-200]
+[wt 0.6]
+[charaTalk F,E]
+[charaFace F 0]
+[charaFace E 0]
+[charaPut F 250,0]
+[charaPut E -250,0]
+[charaFadeTime F 0.4 0.7]
+[charaFadeTime E 0.4 0.7]
+[wt 2.0]
+
+[charaTalk F,E,B]
+[charaFace B 9]
+[charaFadeout F 0.4]
+[charaFadeout E 0.4]
+[charaFadeout P 0.4]
+[wt 0.4]
+
+＠フランソワ
+姫さま……？
+[k]
+
+＠フランソワ
+なんか上位っぽい個体に……[r]吸血種を狩る側って、代行者までいるの！？
+[k]
+
+[charaFace B 14]
+
+＠フランソワ
+喰らうねぇー、カルデア！[r]毒から皿までもりもりと！
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_272 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout O 0.1]
+[charaEffectDestroy Y bit_talk_strongwind04_cl]
+[charaLayer O normal]
+[charaLayer Y normal]
+[subCameraOff]
+
+[charaPut Z 2000,2000]
+[charaEffect Z bit_talk_noise02]
+
+[scene 282700]
+[charaFadein Q 0.1 -50,-300]
+[wt 1.0]
+
+[se ad309 1.0 0.6]
+[se ade307 1.0 0.2]
+[charaScale Q 1.2]
+[charaMove Q 50,-300 6.0]
+[fadein black 1.0]
+[wait fade]
+[se ade106 0.5 0.6]
+[wt 4.0]
+
+[seStop ade106 1.3]
+[seStop ad309 1.3]
+[seStop ade307 1.3]
+[charaFadeout Q 0.8]
+[wt 1.5]
+
+[bgm BGM_EVENT_141 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フランソワ
+こっちこっち！[r]足場が悪いから気を付けてね！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠マシュ
+こんな沼地の中心に、あんなに大きな洋館が……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠フランソワ
+あれ……[r]なんだか、雨と風が弱くなったなあ。
+[k]
+
+＠フランソワ
+もしかして、この周辺に、加護が発生してる？
+[k]
+
+＠フランソワ
+水や嵐を操れるタイプだったし、[r]夢とも相性が良い筈だから……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+それはつまり、これから行く場所におられる御方が、[r]わたしたちを気遣ってくださっているという事でしょうか？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[se ad236]
+[fowardEffect bit_talk_smoke_pon]
+[wt 0.3]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+＠フランチェスカ
+まあ、御方っていうかモノだけど……。[r]ちぇっ、私が来た時は嵐のままだったのにー！
+[k]
+
+[messageOff]
+[charaFaceFade C 13 0.2]
+[wt 1.2]
+
+[charaTalk off]
+[charaScale G 1.0]
+[charaPut G -290,15]
+[charaFace G 0]
+[charaFadeTime G 0.3 0.7]
+
+＠フランチェスカ
+そういえば、この館にいた吸血種の魔術師が、[r]あのアサシンちゃんを[#喚:よ]び出したんだけど……。
+[k]
+
+
+[charaFadeout G 0.3]
+
+＠フランチェスカ
+何を血迷ったのかなぁ。
+[k]
+
+＠フランチェスカ
+『聖杯の力ですっごい大蜘蛛の怪物を[r]　目覚めさせてやるー！』とか言い出しちゃってね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠マシュ
+大蜘蛛の……怪物……？[r]なんでしょう……背中に嫌な汗が……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.2]
+[se ad236]
+[fowardEffect bit_talk_smoke_pon]
+[wt 0.3]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+＠フランソワ
+当然、最初に全員でフルボッコにして退場願ったよ。[r]アサシンまでこっちについてくれて、本当に袋叩き。
+[k]
+
+[charaFace B 3]
+
+＠フランソワ
+人間ならともかく、吸血種にぼくらの聖杯戦争……[r]というか人類を滅茶苦茶にされちゃたまらないからね。
+[k]
+
+？1：……そのマスターが脱落した後
+？2：アサシンのサーヴァントはどうなったの？
+？！
+
+[charaFace B 0]
+
+
+＠フランソワ
+……ああ、僕が後見人をしていた、[r]魔術使いの傭兵と再契約を結んでね。
+[k]
+
+＠フランソワ
+あの館の中にある『遺物』と、病院で話した、この夢の[r]主である女の子を護る為に命懸けで奮闘したんだ。
+[k]
+
+[messageOff]
+
+[charaScale J 1.0]
+[charaFace J 0]
+[charaPut J -300,15]
+[charaFadeTime J 0.3 0.7]
+[wt 0.8]
+
+[se ad236]
+[fowardEffect bit_talk_smoke_pon]
+[wt 0.3]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+
+＠フランチェスカ
+その傭兵君は魔力量が少なくってねー？[r]宝具もあまり使えなかったの。
+[k]
+
+[charaFace J 1]
+
+＠フランチェスカ
+だからね、今時の服に着替えて[r]街で潜入捜査とかしたりしてたの！
+[k]
+
+[charaFace C 7]
+
+＠フランチェスカ
+アサシンなのにそういうの向いてないから、[r]色々とズレてる所もあったけど……
+[k]
+
+[charaFace C 5]
+
+＠フランチェスカ
+あれはあれで面白かったよ？[r]女の子を助けるために、本当に頑張ってた！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_141 1.2]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マシュ
+………………。
+[k]
+
+
+[messageOff]
+[fowardEffect bit_talk_noise_gr]
+[se ad31]
+[wt 0.5]
+[seStop ad31 0.2]
+[charaPut Z 1]
+[fowardEffectStop bit_talk_noise_gr]
+[charaDepth G 16]
+[charaScale G 1.0]
+[charaTalk G,A]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaScale R 1.01]
+[charaFadein R 0.1 0,-200]
+[wt 1.5]
+
+[fowardEffect bit_talk_noise_gr]
+[se ad31]
+[wt 0.5]
+[charaPut Z 2000,2000]
+[seStop ad31 0.2]
+[fowardEffectStop bit_talk_noise_gr]
+[charaFadeout R 0.1]
+[charaFadeout G 0.1]
+[wt 1.0]
+
+？1：………………
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_268 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フランソワ
+そう、奮闘『した』。[r]……過去形だよ。
+[k]
+
+[charaFace B 12]
+
+＠フランソワ
+でも、二人ともその女の子は守り抜いたんだ。[r]この夢世界が続いてるのがその証拠さ。
+[k]
+
+＠フランソワ
+そして、君達は、奇跡的に『その後』と出会った。[r]彼女については、憂う事はもうないだろう？
+[k]
+
+＠フランソワ
+特異点の解消で『無かったこと』になるのが[r]どの範囲かはわからないけれど……。
+[k]
+
+[charaFace B 13]
+
+＠フランソワ
+無愛想なその魔術使いがさ……
+[k]
+
+＠フランソワ
+霊核を砕かれて消えかけてるアサシンと一緒に、[r]最後の最後に僕なんかに頼むんだ。
+[k]
+
+＠フランソワ
+……あの子を、頼むって。
+[k]
+
+＠フランソワ
+自分達の延命とかより、[r]この夢世界の源である女の子を救って欲しいなんてさ。
+[k]
+
+[messageOff]
+[se ad236]
+[fowardEffect bit_talk_smoke_pon]
+[wt 0.3]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+＠フランチェスカ
+弟子みたいに扱った事もあるけれど、[r]その魔術使いは、一度も[#我:わ]が[#儘:まま]を言わなかった。
+[k]
+
+[charaFace C 12]
+
+＠フランチェスカ
+そんな子から、[r]最後にそんなお願いされちゃったらねー。
+[k]
+
+[messageOff]
+[se ad236]
+[fowardEffect bit_talk_smoke_pon]
+[wt 0.3]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+＠フランソワ
+これが、道半ばなら手は貸さない。[r]破滅だろうと、結果が出るまで放置する。
+[k]
+
+＠フランソワ
+ただ、命の結果が出た後は……僕の気分次第だ。
+[k]
+
+＠フランソワ
+ジルと一緒にこの世の地獄を作った時と同じさ。[r]『ああ、最後まで付き合おう』ってなったんだ。
+[k]
+
+[charaFace B 12]
+
+＠フランソワ
+たとえ、自分が命を失う事になろうとね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠マシュ
+お話を伺うに、その方とジル・ド・レェさんは[r]だいぶ性格が異なる方のように思えるのですが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠フランソワ
+ん……。
+[k]
+
+[charaFace B 15]
+
+＠フランソワ
+ああ、言われてみればそうだね。
+[k]
+
+＠フランソワ
+子供に絶望を与える側と、[r]子供を絶望から救う側だ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale Q 1.4]
+[charaScale K 1.4]
+[charaTalk B,K]
+[charaFace K 0]
+[charaFadein K 0.5 0,50]
+[charaFadein Q 0.5 0,-300]
+[charaMove K 0,0 30.0]
+[charaMove Q 0,-350 30.0]
+[wt 0.7]
+[charaFadeout B 0.1]
+
+＠フランソワ
+でもね、僕にとってはどちらも同じなんだ。
+[k]
+
+＠フランソワ
+悪行も善行も、度が過ぎればどちらも[r]愚行に足を踏み入れ、狂気を[#孕:はら]む事がある。
+[k]
+
+[charaFace K 12]
+
+＠フランソワ
+僕は、それを後押しするのが好きなだけさ。
+[k]
+
+＠フランソワ
+どこまでも行ける、[r][#君はまだ]、[#前に踏み出せる]って。
+[k]
+
+＠フランソワ
+辿り着く先が、栄光だろうと破滅だろうと構わない。[r]仮に何も変わらない退屈な日々が待っていたとしても。
+[k]
+
+[charaFace K 15]
+
+＠フランソワ
+たとえ、そこが崖際で……[r]背中を押した僕も一緒に落ちると解っていようとね。
+[k]
+
+[charaFace K 20]
+[charaFace A 30]
+[charaFadein A 0.1 1]
+
+＠フランソワ
+ま、君達の場合は……一人が崖に踏み出そうとしたら、[r]もう一人が命懸けで立ち塞がりそうだけど。
+[k]
+
+[bgmStop BGM_EVENT_268 1.5]
+
+[messageOff]
+[charaFadeout K 0.4]
+[charaFadeout Q 0.4]
+[wt 0.5]
+[charaMove Q 0,-350 0.1]
+
+＠マシュ
+当然です！
+[k]
+
+＠マシュ
+どうしてもそうする必要があるというのなら、[r]わたしが先行して飛び降り、崖下で先輩を受け止めます！
+[k]
+
+[bgm BGM_EVENT_263 0.1]
+
+？1：嘘……自分の後輩、頼もしすぎ……？
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠フランソワ
+受け止めたら……[r]そのまま勢いを利用してボディスラムを……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 28]
+[charaFadein A 0.1 1]
+
+＠マシュ
+しません！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+？2：そういえば、時々空高くから落ちるなあ……
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠フランソワ
+なんで生きてるの？
+[k]
+
+[charaFace B 20]
+
+＠フランソワ
+いや……[r]それだけ君に差し伸べられる手が多いって事か。
+[k]
+
+[charaFace B 0]
+
+？！
+
+＠フランソワ
+……ともあれ、愚かしいとすら言える信念に[r]突き動かされた子達が、命と引き替えに守った物……
+[k]
+
+＠フランソワ
+ほんのちょっとだけど、空に溜まってるのとは[r]別の種類の神気を宿した『触媒』があるんだ。
+[k]
+
+＠フランソワ
+魔力量はほぼ無いけど、同じ神様同士、[r]何かしらヒントは得られるかも……
+[k]
+
+[bgmStop BGM_EVENT_263 1.5]
+
+[messageOff]
+[wt 0.5]
+[charaFace B 1]
+[wt 1.2]
+
+＠フランソワ
+………………。
+[k]
+
+
+[charaFace B 2]
+
+＠フランソワ
+まずいなあ、『根』に気付かれた。
+[k]
+
+[messageOff]
+[cueSe SE_26 26_ade1349]
+[charaScale Q 1.3]
+[charaFadein Q 0.5 0,-200]
+[charaMoveScaleEase Q 1.4 0.8 easeOutSine]
+[charaMoveEase Q 0,-180 0.8 easeOutSine]
+[wt 1.0]
+
+[cueSe SE_23 23_ade909]
+[fowardEffect bit_talk_miasma_eruption -200,0]
+[fowardEffect bit_talk_miasma_eruption 200,0]
+[wt 1.2]
+[charaTalk off]
+[charaPut H 0]
+[charaPut I 2]
+[charaFace H 0]
+[charaFace I 0]
+[charaSpecialEffect H appearance 1 1.5]
+[charaSpecialEffect I appearance 1 1.5]
+[wt 0.5]
+[fowardEffectStop bit_talk_miasma_eruption]
+[wt 0.5]
+[cueSeStop 23_ade909 1.5]
+[wt 0.5]
+[bgm BGM_BATTLE_107 0.1]
+[wt 1.5]
+[wait charaSpecialEffect I]
+
+[charaFace B 21]
+[charaFadeout Q 0.4]
+[charaFadeout H 0.4]
+[charaFadeout I 0.4]
+[wt 0.4]
+
+＠フランソワ
+教会は僕の結界で誤魔化してるし、移動中も[r]気を遣ってた筈だけど……。
+[k]
+
+＠フランソワ
+やっぱり、空の『神々の目』が無常の大樹と[r]リンクしてるね。ビルの無い沼地に来た途端にこれだ。
+[k]
+
+＠フランソワ
+それとも、神の気配に気付いたのかな？[r]館の中に隠してある、あの『触媒』ごと壊す気かも……。
+[k]
+
+？1：どちらにせよ、こっちも狙われてるっぽい
+？2：迎撃しよう！！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい！　迎撃態勢に入ります！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_107 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

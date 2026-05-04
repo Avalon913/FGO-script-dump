@@ -1,0 +1,158 @@
+
+
+＄94-15-57-15-3-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 1098257910 1 マシュ]
+[charaSet B 1098257310 1 ダ・ヴィンチ]
+[charaSet C 5056001 1 フランソワ]
+[charaSet D 1098256410 1 グガランナの脚_モノクロ]
+[charaSet E 1098256410 1 グガランナの脚_モノクロ]
+[charaSet F 1098256410 1 グガランナの脚_モノクロ]
+
+[sceneSet P 281800 1]
+[sceneSet Q 281900 1]
+[charaSet T 98115000 1 エフェクト用1]
+
+[charaTalk depthOff]
+[charaDepth P 4]
+[charaDepth A 5]
+[charaDepth B 6]
+[charaDepth C 7]
+[charaDepth Q 8]
+[charaDepth D 9]
+[charaDepth E 10]
+[charaDepth F 11]
+[charaDepth T 26]
+
+[charaPut T 2500,2500]
+[charaEffect T bit_talk_10_LowLevel]
+
+[charaScale P 1.2]
+[charaFadein P 0.1 -70,-270]
+[scene 10000]
+[wt 0.1]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_GOGH_1 0.1]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+さて……ここからはもう後戻りはできないよ。[r]いけるかい、[%1][&君:ちゃん]。
+[k]
+
+？1：御飯もばっちり食べたし
+？2：ジョン王を、止めてきます
+？！
+
+[charaFace B 17]
+
+＠ダ・ヴィンチ
+良い返事だ、ここまで深く関わったからには、[r]やれるだけの事はやっていこう。
+[k]
+
+[messageOff]
+[bgmStop BGM_GOGH_1 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaPut T 2500,2500]
+[charaFadeout B 0.1]
+[charaFadeout P 0.1]
+[charaScale Q 1.2]
+[charaFadein Q 0.1 70,-270]
+[scene 281900]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[charaTalk off]
+
+[charaScale D 2.5]
+[charaScale E 2.5]
+[charaScale F 2.5]
+
+[charaFadein D 0.2 -380,600]
+[charaMoveEase D -380,400 0.4 easeOutQuint]
+[wt 0.2]
+[se ad628]
+[fowardEffect bit_talk_impactlanding -380,0]
+[shake 0.03 0 5 2.2]
+[se ad222]
+[seStop ad1022]
+[cueSe SE_23 23_ade846]
+[cueSe SE_23 23_ad1341]
+[se ad914]
+[se ad322]
+
+[charaFadein E 0.2 0,600]
+[charaMoveEase E 0,400 0.4 easeOutQuint]
+[wt 0.3]
+[seStop ad322 1.0]
+[fowardEffect bit_talk_impactlanding 0,0]
+[se ad222]
+[seStop ad1022]
+[cueSe SE_23 23_ade846]
+[cueSe SE_23 23_ad1341]
+[se ad914]
+[se ad322]
+
+[charaFadein F 0.2 380,600]
+[charaMoveEase F 380,400 0.4 easeOutQuint]
+[wt 0.3]
+[seStop ad322 1.0]
+[fowardEffect bit_talk_impactlanding 380,0]
+[se ad222]
+[seStop ad1022]
+[cueSe SE_23 23_ade846]
+[cueSe SE_23 23_ad1341]
+[se ad914]
+[se ad322]
+[wt 0.1]
+[seStop ad322 1.0]
+[wt 1.4]
+
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.8]
+[charaFadeout D 0.6]
+[charaFadeout E 0.6]
+[charaFadeout F 0.6]
+[charaFadeout Q 0.6]
+[wt 0.8]
+[bgm BGM_BATTLE_301 0.1]
+
+＠マシュ
+グガランナの脚を[#模:かたど]った魔力の塊、確認できました！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠フランソワ
+それじゃ、はじめようか。
+[k]
+
+＠フランソワ
+ハロウィンじゃあないけれど、[r]とびっきりの馬鹿騒ぎをね！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_301 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

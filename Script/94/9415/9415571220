@@ -1,0 +1,933 @@
+
+
+＄94-15-57-12-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 1098257910 1 マシュ]
+[charaSet B 5056001 1 フランソワ]
+[charaSet C 1098358100 1 エルメロイⅡ世]
+[charaSet D 1098355200 1 鮫]
+[charaSet E 10014000 1 徐福]
+[charaSet F 1098236700 1 始皇帝]
+[charaSet G 6048001 1 ロクスタ]
+
+[charaSet H 1098257910 1 マシュ]
+[charaSet I 1098257910 1 マシュ]
+[charaSet J 1098355200 1 ？？？]
+[charaFilter J silhouette 00000080]
+[charaSet K 10014000 1 徐福]
+
+[sceneSet L 212300 1]
+[sceneSet M 212300 1]
+[branchQuestClear lblClear01b 94064915]
+[branchQuestClear lblClear01b 3001101]
+
+[label lblClear01a]
+[sceneSet N 104100 1]
+[sceneSet O 104100 1]
+[branch lblConf01]
+
+[label lblClear01b]
+[sceneSet N 132900 1]
+[sceneSet O 132900 1]
+[branch lblConf01]
+
+[label lblConf01]
+
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+
+[charaSet Z 98115000 1 通信エフェクト用]
+
+[scene 212300]
+
+[charaTalk depthOff]
+[charaDepth P 1]
+[charaDepth B 2]
+[charaDepth A 4]
+[charaDepth L 5]
+[charaDepth D 6]
+[charaDepth H 7]
+[charaDepth F 8]
+[charaDepth C 9]
+[charaDepth Z 10]
+[charaDepth M 11]
+[charaDepth J 12]
+[charaDepth I 13]
+[charaDepth N 14]
+[charaDepth E 15]
+[charaDepth O 16]
+[charaDepth G 17]
+[charaDepth K 18]
+
+[subCameraOn 2]
+[charaLayer L sub #A]
+[charaLayer H sub #A]
+[charaLayer M sub #B]
+[charaLayer J sub #B]
+[charaLayer I sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask11 4 255,255,255,255 0]
+[subCameraFilter #B normal]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaScale L 1.1]
+[charaFace H 6]
+[charaFadein H 0.1 400,250]
+[charaFadein L 0.1 -120,50]
+
+[charaScale M 1.4]
+[charaScale I 1.4]
+[charaFace I 6]
+[charaFadein I 0.1 100,30]
+[charaFadein M 0.1 -100,-400]
+
+[charaFace J 0]
+[charaPut J -150,0]
+[charaFadeTime J 0 0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フランソワ
+さて、ここの本棚の裏の隠し金庫に……と。
+[k]
+
+[messageOff]
+[se ade46]
+[charaMoveReturn B 0,-4 0.5]
+[wt 0.5]
+[charaMoveReturn B 0,-4 0.6]
+[wt 1.0]
+
+[charaFace B 12]
+
+＠フランソワ
+あったあった。[r]無事みたいだ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[cueSe SE_25 25_ad1537]
+[wt 0.8]
+
+[bgm BGM_MAP_41 0.1]
+
+？1：[#弩弓:どきゅう]？
+？2：ずいぶん古く見えるけど……なんだか……
+？！
+
+[charaTalk off]
+[charaTalk H]
+[subRenderFadeinFSSideR #A 0.3 -120,-180]
+[subRenderMoveFSSideR #A -100,-200 0.3]
+[wt 0.3]
+
+＠マシュ
+はい、形状に欠けも無く、しっかりした作りですね。[r]今でも武器として問題なく機能しそうな……。
+[k]
+
+＠マシュ
+それに、何か不思議な圧力のようなものを感じます。[r]嫌な感じではなく、[#厳:おごそ]か……とでも言うのでしょうか……。
+[k]
+
+[messageOff]
+[subRenderFadein #B 0.5 0,0]
+[charaMoveEase I 200,30 0.8 easeOutSine]
+[charaMoveEase M -200,-400 0.8 easeOutSine]
+[charaMoveEase J -250,0 0.8 easeOutSine]
+[wt 0.4]
+
+[charaFadeTime J 0.4 1.0]
+[wt 0.4]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout P 0.1]
+[charaFadeout L 0.1]
+[charaFadeout H 0.1]
+
+[charaFace B 19]
+[charaFadein B 0.1 1]
+
+[charaTalk on]
+[charaTalk J]
+
+＠？？？
+嫌な感じはなく、[#厳:おごそ]か……。
+[k]
+
+[charaFace I 5]
+
+＠I：マシュ
+！？
+[k]
+
+[charaTalk J]
+
+＠？？？
+その印象を持たれた事を喜ぶべきか、あるいは人の子に[r]恐怖すら与えられぬ程に朽ちたと憂うべきか、迷う所だ。
+[k]
+
+[messageOff]
+[charaTalk J,B]
+[subRenderFadeout #B 0.4]
+[wt 0.4]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[charaFadeout M 0.1]
+
+＠フランソワ
+出たなー、人理の食べ残し。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaLayer L normal]
+[charaLayer H normal]
+[charaLayer M normal]
+[charaLayer J normal]
+[charaLayer I normal]
+[subCameraOff]
+[wt 0.1]
+
+[charaScale J 1.0]
+[charaTalk J,D]
+[charaFace J 0]
+[charaFadein J 0.4 1]
+[wt 1.0]
+[charaFace D 3]
+[charaFadein D 0 1]
+[charaFadeout J 0.7]
+[wt 1.0]
+[charaFilter J normal]
+
+＠D：？？？
+西方の神々の長に捨てられた[r]濁りに言われても響かんな。
+[k]
+
+[charaFace D 0]
+
+＠D：？？？
+君と話す気はないので、[r]その、黙れシャラップ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠フランソワ
+聞いた！？[r]こいつきっと嫌な奴だよ！？
+[k]
+
+？1：そこにある部屋の鏡を見てごらん
+？2：君がブーメランを投げる姿が映っているよ？
+？！
+
+[charaFace B 21]
+
+＠フランソワ
+くっ……ツッコミに遠慮がない……！
+[k]
+
+[charaFace B 12]
+
+＠フランソワ
+やるね、[%1]君。[r]それでこそ僕の終生の好敵手……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠マシュ
+マスターの好敵手がどなたなのかは諸説ありますが、[r]長い議論になりそうですので言及は避けます。
+[k]
+
+[charaFace A 0]
+
+＠マシュ
+あの……あなたはこの[#弩弓:どきゅう]に関係あるかたですか？
+[k]
+
+[messageOff]
+[charaTalk D,A]
+[charaFace D 0]
+[charaScale D 1.2]
+[charaScale L 1.3]
+[charaFace D 1]
+[charaFadein D 0.6 -100,0]
+[charaFadein L 0.6 90,-300]
+[charaMove L 190,-300 25.0]
+[charaMove D 0,0 25.0]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+
+＠D：？？？
+ああ……私の事は、[#鮫:コウ]とでも呼んでくれ。
+[k]
+
+＠鮫
+この[#弩弓:どきゅう]に染みついた、古き肉片の[#残滓:ざんし]に過ぎない。
+[k]
+
+[charaFace D 0]
+
+＠鮫
+[#斯様:かよう]に矮小な身だが……[r]カルデアとやらよ。恥を忍んで頼みがある。
+[k]
+
+＠鮫
+どうか、この特異点を霧散させ、[r]夢の主である少女を救ってはくれないだろうか。
+[k]
+
+[charaFace D 3]
+
+＠鮫
+僅かながらも縁があり、[r]その在り方を身近に感じ続けた子でね……。
+[k]
+
+＠鮫
+このまま消滅を迎えるのは……[r]その、あまりに無体だ。
+[k]
+
+＠鮫
+[#嘗:かつ]て不死と不死殺しを否定し、探求者達に死を[r]与えようとした私が言うのも身勝手な話ではあるが。
+[k]
+
+[messageOff]
+[charaFadeout D 0.4]
+[charaFadeout L 0.4]
+[wt 0.5]
+[charaMove L 190,-300 0.1]
+[charaMove D 0,20 0.1]
+
+[se ad539]
+[wt 0.7]
+[seStop ad539 0.1]
+[charaPut Z 1]
+[charaEffect Z bit_talk_10_LowLevel_depth]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エルメロイⅡ世
+具現化できるレベルの存在が取り憑いた武具だと？
+[k]
+
+＠エルメロイⅡ世
+アッドと似たような存在……いや、[r]神が絡むのだとすれば、相当な代物になるが……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaScale D 1.0]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠鮫
+なに、そう大したものではない。
+[k]
+
+＠鮫
+こうして顕現する事ができるのは、[r]ここが本来の私の領域……夢の中だからだ。
+[k]
+
+＠鮫
+夢と大海の境目こそが、私の本来の領域だからな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+夢と大海の境目……ですか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠エルメロイⅡ世
+ふむ……それに加え、不死の否定、[#弩弓:どきゅう]となると……。
+[k]
+
+[charaFace C 0]
+
+＠エルメロイⅡ世
+あなたは、[#大鮫魚]か。
+[k]
+
+[charaPut Z 2000,2000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠鮫
+なんと、私を知るものが居たか！[r]ふふ。これはなんとも[#面映:おもは]ゆいな。
+[k]
+
+？1：ダイコウギョ？
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エルメロイⅡ世
+[#大鮫魚:だいこうぎょ]、大きな鮫の魚と書かれる海神の化身だ。[r]日本では高大魚、太平記では[#鮫大魚:こうだいぎょ]と記されているな。
+[k]
+
+？2：徐福ちゃんと始皇帝絡みだっけ？
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠エルメロイⅡ世
+その通りだ。[r]よく知っていたな。
+[k]
+
+[charaFace C 0]
+
+？！
+
+＠エルメロイⅡ世
+徐福が[#蓬莱:ほうらい]に渡るのを妨害し続けた巨大魚であり、[r]多くの逸話において、始皇帝に討伐されている。
+[k]
+
+＠エルメロイⅡ世
+大海そのものの化身とも、龍神の別側面とも言われるが、[r]その中に『夢の中に人の姿で現れる』という物がある。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_MAP_41 0.5 0.5]
+[wait wipe]
+
+[charaPut Z 2000,2000]
+[charaFadeout C 0.1]
+
+[subCameraOn 2]
+[charaLayer M sub #A]
+[charaLayer J sub #A]
+[charaLayer O sub #B]
+[charaLayer G sub #B]
+[charaLayer K sub #B]
+[subCameraFilter #A maskEdge cut359_mask15 5 255,255,255,255 0]
+[subCameraFilter #B normal]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+
+[charaScale M 1.1]
+[charaFace J 0]
+[charaFadein J 0.1 -30,250]
+[charaFadein M 0.1 200,50]
+
+[charaScale O 1.3]
+[charaScale K 1.3]
+[charaFace K 9]
+[charaFadein K 0.1 0,20]
+[charaFadein O 0.1 -120,-300]
+
+[charaScale N 1.25]
+[charaFadein N 0.1 -130,-250]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_MAP_41 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 30]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠徐福
+おっ。なんか今、私の名前が聞こえたぞー。[r]なんだなんだ、陰口かー？　コイツー。
+[k]
+
+[charaFace E 8]
+
+＠徐福
+それとも、マスターさんかマシュちゃんが[r]私の力を必要としてるとか？
+[k]
+
+[charaFace E 7]
+
+＠徐福
+しょうがないな、マスターさんはともかく、[r]マシュちゃんが困ってるっていうなら……
+[k]
+
+[bgmStop BGM_MAP_41 1.0]
+
+[charaFace E 0]
+
+＠徐福
+……むへ？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMoveEase N 130,-250 1.0 easeOutSine]
+[charaMoveEase E 260,0 1.0 easeOutSine]
+[subRenderFadein #A 0.3 -492,-300]
+[subRenderMoveEase #A -232,-300 1.0 easeOutSine]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk J]
+
+＠J：鮫
+うん？
+[k]
+
+[bgm BGM_EVENT_264 0.1]
+
+[charaTalk E]
+[charaFace E 30]
+
+＠徐福
+あー……通信先の映像の人……誰だっけ？
+[k]
+
+[charaFace E 29]
+
+＠徐福
+どっかで見た事あるよね？[r]ぐっ様の衣装係かなにか？
+[k]
+
+[charaTalk J]
+[charaFace J 3]
+
+＠J：鮫
+……こちらはハッキリと記憶しているぞ。[r]相変わらず、脳髄の中身が真祖一色か。
+[k]
+
+＠J：鮫
+それに付き合わされた三千人と[r]逃げられた[#政:せい]の事を考えると、やりきれんな。
+[k]
+
+[charaTalk E]
+[charaFace E 31]
+
+＠徐福
+なんだコイツー、出会いがしらにー。[r]……[wt 1.0][charaFace E 25]ん？
+[k]
+
+[messageOff]
+[charaTalk E,K]
+[subRenderFadein #B 0.3 0,0]
+[subRenderMoveScaleEase #B 1.1 0.6 easeOutCubic]
+[subRenderMoveEase #B 0,-0 0.6 easeOutCubic]
+[wt 0.4]
+
+＠K：徐福
+あーっ！！　思い出した！！
+[k]
+
+＠K：徐福
+[#蓬莱:ほうらい]行きの船を壊そうとしただけじゃなくて、[r]夢の中にまで出て来てクドクド説教してきた赤デカ[#鮫:ザメ]！
+[k]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout M 0.1]
+[charaFadeout J 0.1]
+[charaFadeout N 0.1]
+[charaFadeout E 0.1]
+[charaLayer M normal]
+[charaLayer J normal]
+
+＠K：徐福
+なんか急に出てこなくなったから[r][#鯱:シャチ]にでも食べられたのかと思ってたのに！
+[k]
+
+[charaFace K 24]
+
+＠K：徐福
+さてはコイツが特異点の黒幕かー？
+[k]
+
+[charaFace K 5]
+
+＠K：徐福
+マスターさん！　海に毒を流そう！[r]ソイツにだけ効いて、自然由来で環境に配慮したやつを！
+[k]
+
+[messageOff]
+[charaScale G 0.8]
+[charaTalk K,G,D]
+[charaFace G 3]
+[charaFadein G 0.4 300,-75]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 2.0]
+
+[subRenderFadeout #B 0.6]
+[wt 1.1]
+[charaFadeout K 0.1]
+[charaFadeout O 0.1]
+[charaFadeout G 0.1]
+
+？1：スノーフィールドに海はないよ……
+？2：あの、なんかカルデアの身内がごめんなさい
+？！
+
+[charaLayer O normal]
+[charaLayer G normal]
+[charaLayer K normal]
+[subCameraOff]
+
+＠鮫
+いや、構わない。クドクド説教したのも、[r]大量の毒で討たれたのも事実だ。
+[k]
+
+＠鮫
+海の藻屑にしてやろうとした事もあるからな。[r]恨み言を吐く権利が彼女にはあるだろう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エルメロイⅡ世
+……諸説はあるが、徐福が始皇帝から[#不老不死:ふ ろ う　ふ　し]の秘薬を[r]求められた時に、その大魚が邪魔していると主張した。
+[k]
+
+＠エルメロイⅡ世
+伝承により詳細は大きくぶれるが、徐福の船を[r]邪魔したのは全長１キロを軽く超える大魚であり……
+[k]
+
+＠エルメロイⅡ世
+始皇帝はその化身と夢の中で戦い、現実では大軍をもって[r]１００万を超える毒矢を撃ち込み退治したともある。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠鮫
+寧ろ徐福がそれを知らない事に驚いたな。[r][#政:せい]……始皇帝は大掛かりに船出を助けたというのに。
+[k]
+
+[charaFace D 3]
+
+＠鮫
+まあ毒は正直耐えられたが、[r]夢の中で討ち取られたのが致命的だったよ。
+[k]
+
+[charaFace D 0]
+
+＠鮫
+その時、[#政:せい]……君達の言う始皇帝が夢に持ち込んだのが、[r]ここにある[#弩弓:どきゅう]というわけだ。
+[k]
+
+＠鮫
+現実では一夜だが、夢の中では１０年に渡る激闘……。[r]当代の映画ならば三部作にすべき重厚な戦いだった。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut P 0,-200]
+[charaFadeTime P 0.2 0.5]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠フランソワ
+（意外と俗っぽいな、この[#大鮫魚:だいこうぎょ]……）
+[k]
+
+[charaFadeout B 0.2]
+[charaFadeout P 0.2]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_264 2.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠鮫
+まあ、人の手により討ち取られ、時代は移り変わった。[r]私はただの海となり、鮫の群れへと溶け込んだわけだが……
+[k]
+
+＠鮫
+始皇帝もまた気力を使い果たし、病にて落命したと聞く。[r]徐福がカルデアに居るという事は、もしや始皇帝も？
+[k]
+
+？1：あー……居ると言えば、居ますけど
+？2：[#鮫:コウ]さんの知っている人とは、同じだけど違うというか
+？！
+
+＠鮫
+[FFFFFF]？[-]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad1]
+[charaPut Z 1]
+[wt 0.5]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_96 0.1]
+
+＠始皇帝
+呼んだか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠マシュ
+始皇帝さん！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.5]
+
+？1：あれ、徐福ちゃんは？
+？！
+
+＠始皇帝
+なにやら青ざめながら言い訳を並べ立てておるが、[r]まあ、捨て置け捨て置け。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠フランソワ
+なんか凄い人が出て来た！？[r]この触媒の持ち主本人じゃん！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠始皇帝
+そのような[#弩弓:どきゅう]一つで朕を[#喚:よ]べるなどと思ったのなら、[r]その地の魔術師たちは[#蒙昧:もうまい]かつ不敬であるな。
+[k]
+
+[charaFace F 0]
+
+＠始皇帝
+まあ、実際に現れたのが[#鮫:コウ]であるというのなら、[r]それでも大魚は釣り上げたと褒めてつかわすべきか。
+[k]
+
+[charaPut Z 2000,2000]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠鮫
+[FFFFFF]？[-]
+[k]
+
+＠鮫
+始皇帝？[r]この者が……？
+[k]
+
+[charaFace D 4]
+
+＠鮫
+……いや、まさか、本当に[#政:せい]か！？[r][#政:せい]なのか！？
+[k]
+
+＠鮫
+なんだその姿は！？[r]何故、真人になっている！？
+[k]
+
+＠鮫
+君が真人となれば、人類が盤石になりすぎるが故に[r]歴史が閉ざされる筈では……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠始皇帝
+ふむ、その辺りの事情にも通じておらぬあたり、[r]やはり神霊としての力はほぼ全て削がれているようだな。
+[k]
+
+＠始皇帝
+安心して良いぞ、[%1]。
+[k]
+
+＠始皇帝
+其奴が[#此度:こたび]の黒幕などという事はあるまい。[r]力を秘して油断を誘うような輩でもない。
+[k]
+
+[charaFace F 4]
+
+＠始皇帝
+……だが、よもや、人間一人の救いを願うとは。[r]神の視座すら完全に失ってしまったようだな。
+[k]
+
+[charaPut Z 2000,2000]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠鮫
+ああ、君のせいでな。[r]だが、今はそれも存外に悪くないと思っている。
+[k]
+
+[bgmStop BGM_EVENT_96 2.0]
+
+[charaFace D 1]
+
+＠鮫
+……カルデアか。[r]君達に、より強く興味が湧いた。
+[k]
+
+＠鮫
+その[#弩:いしゆみ]を持ち去り、好きに使うといい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠マシュ
+良いのですか？
+[k]
+
+[bgm BGM_EVENT_263 0.1]
+
+[messageOff]
+[charaTalk off]
+[charaScale M 1.2]
+[charaScale J 1.2]
+[charaFace J 1]
+[charaFadein M 0.6 0,-300]
+[charaFadein J 0.6 0,0]
+[cameraMove 20.0 0,-20 1.1]
+[wt 0.8]
+[charaFadeout A 0.1]
+
+＠鮫
+ああ。[r]私はただ、報いたいだけだ。
+[k]
+
+＠鮫
+私を……というよりも、一人の少女を護る為に[r]この特異点の中で命脈を消した、二つの魂にな。
+[k]
+
+[charaFace J 0]
+
+＠鮫
+それに……。
+[k]
+
+＠鮫
+あの[#政:せい]や徐福にすら信を置かれている君にこそ、[r]彼らの願いを託したいという気持ちがあるのだ。
+[k]
+
+[charaFace J 2]
+
+＠鮫
+改めて、私は[#鮫:コウ]だ。
+[k]
+
+＠鮫
+街に満ちた神気を祓う力はないが……[r]力を届ける、水先案内人ぐらいにはなってみせよう。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_263 2.0]
+[wait fade]
+[soundStopAll]
+[end]
