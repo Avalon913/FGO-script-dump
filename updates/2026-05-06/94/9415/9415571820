@@ -1,0 +1,1352 @@
+
+
+＄94-15-57-18-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 3039001 1 ガレス]
+[charaSet B 6047000 1 テスカトリポカ]
+[charaSet C 1061002 1 獅子心王]
+[charaSet D 3008001 1 エルキドゥ]
+[charaSet E 5018001 1 ギルガメッシュ]
+[charaSet F 1098273120 1 エフェメロス]
+
+[charaSet G 3039001 1 ガレス_演出用]
+[charaSet H 1061002 1 獅子心王_演出用]
+
+[sceneSet Q 282800 1]
+[sceneSet R 168801 1]
+[sceneSet S 168801 1]
+[sceneSet T 282300 1]
+[sceneSet U 282300 1]
+[sceneSet W 10000 1]
+
+[charaSet X 98115000 1 エフェクト用1]
+[charaSet Y 98115000 1 エフェクト用2]
+[charaSet Z 98115000 1 エフェクト用3]
+
+[charaTalk depthOff]
+[charaDepth A 7]
+[charaDepth B 13]
+[charaDepth C 14]
+[charaDepth D 6]
+[charaDepth E 15]
+[charaDepth F 3]
+
+[charaDepth H 21]
+[charaDepth G 22]
+
+[charaDepth Q 10]
+[charaDepth R 10]
+[charaDepth S 4]
+[charaDepth T 10]
+[charaDepth U 4]
+[charaDepth W 11]
+[charaDepth X 24]
+[charaDepth Y 25]
+[charaDepth Z 12]
+
+[charaPut Y 2500,2500]
+
+[pictureFrameTop cut063_cinema]
+
+[scene 10000]
+[fadein black 1.0]
+[wait fade]
+
+
+＠
+[align center][line 2]１０分前[line 2][align]
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 0,-50]
+[charaScale Q 1.2]
+[charaFadein Q 0.1 30,-170]
+[scene 282800]
+[wt 0.1]
+[charaMove Q -30,-170 5.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.5]
+[charaFadeout Q 0.6]
+[wt 0.6]
+[bgm BGM_EVENT_156 0.1]
+
+＠ガレス
+……夢の中にこんなに長い通路が……[r]いや、夢の中だからでしょうか？
+[k]
+
+[charaFace A 9]
+
+＠ガレス
+ギルガメッシュ殿の話だと、この先に……。
+[k]
+
+
+
+[messageOff]
+[charaFadeout A 0.3]
+[wt 0.5]
+[charaFadein Q 0.4 0,-200]
+[charaPut X 0,-50]
+[charaEffect X bit_talk_41_fs]
+[cueSe SE_25 25_ad1459]
+[wt 0.2]
+[charaShake Q 0.04 0 2 0]
+[wt 1.7]
+[wipeout circleOut 0.4 1]
+[wait wipe]
+[charaFadeTime W 0.1 0.4]
+[wt 0.3]
+[wipein circleIn 0.4 1]
+[wait wipe]
+[wt 1.2]
+
+[wipeout circleOut 0.4 1]
+[wait wipe]
+[charaFadeTime W 0.1 0.7]
+[wt 0.3]
+[wipein circleIn 0.4 1]
+[wait wipe]
+[wt 1.2]
+
+[wipeout circleOut 0.4 1]
+[wait wipe]
+[charaFadeout Q 0.1]
+[charaFadeout A 0]
+[charaFadeout W 0]
+[scene 10000]
+[shake 0.04 0 1 0]
+[charaPut Y 0,0]
+[charaEffect Y bit_talk_light_loop]
+[subCameraOn 1]
+[charaLayer G sub #A]
+[charaLayer W sub #A]
+[charaLayer Z sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 5 255,255,255,255 0]
+[charaDepth W 5]
+[charaScale G 1.2]
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0 30,150]
+[charaFadein W 0 0,0]
+[charaPut Z 0,200]
+[charaEffect Z bit_talk_41_fs]
+[wt 0.3]
+[wipein circleIn 0.4 1]
+[wait wipe]
+[wt 2.4]
+
+[cueSeVolume 25_ad1459 1.0 0.15]
+[subRenderFadeinFSR #A 0.4 300,-150]
+[subRenderMoveEaseFSR #A 300,-200 0.4 easeOutQuart]
+[wt 0.4]
+
+＠G：ガレス
+！[r]あそこに、なにかが……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_156 1.0]
+[cueSeStop 25_ad1459 1.0]
+[wipeout circleOut 0.4 1]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+[wipein circleIn 0.1 1]
+[wait wipe]
+[subRenderFadeout #A 0.1]
+[charaFadeout G 0]
+[charaFadeout W 0]
+[charaLayer G normal]
+[charaLayer W normal]
+[charaLayer Z normal]
+[subCameraOff]
+[shakeStop]
+[charaShakeStop Q]
+[charaEffectDestroy X bit_talk_41_fs]
+[charaEffectDestroy Y bit_talk_light_loop]
+[charaEffectDestroy Z bit_talk_41_fs]
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 0,-50]
+[charaScale R 1.4]
+[charaFadein R 0.1 30,-140]
+[scene 168801]
+[wt 2.0]
+[se ade24 0 0]
+[seVolume ade24 1.5 0.5]
+[charaMove R -30,-140 5.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.6]
+[seStop ade24 0.7]
+[charaFadeout R 0.6]
+[wt 0.8]
+
+＠ガレス
+……たき火？
+[k]
+
+[messageOff]
+[charaScale R 1.4]
+[charaFadein R 0.4 -50,-240]
+[se ade24 0 0]
+[seVolume ade24 0.8 0.3]
+[wt 1.4]
+[seStop ade24 1.6]
+[charaFace A 14]
+[charaFadein A 0.1 0,-50]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.7 0,-50]
+[wt 1.2]
+[bgm BGM_WHITE_1 0.1]
+
+
+＠テスカトリポカ
+なんだ、また招いてもいない客人か。
+[k]
+
+[messageOff]
+[charaTalk B,A]
+[charaFadeout B 0.4]
+[charaFadeout R 0.4]
+[wt 0.4]
+[charaScale B 1.0]
+
+＠ガレス
+……え？　あなたは……
+[k]
+
+[charaFace A 11]
+
+＠ガレス
+[messageShake 0.04 4 4 0.4]
+テスカトリポカ殿！？[r]どうしてこんな所に！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠テスカトリポカ
+ああ、カルデアのサーヴァントか。
+[k]
+
+＠テスカトリポカ
+この冥界を作ってる娘はオレの管轄に縁のあるヤツでな。[r]義理半分、義務半分で居るだけだ。
+[k]
+
+＠テスカトリポカ
+オレはそっちのオレの影のようなものだがな。
+[k]
+
+＠テスカトリポカ
+座れよ……と言いたい所だが、目的も解ってる。
+[k]
+
+[charaFaceFade B 5 0.2]
+
+＠テスカトリポカ
+そこの奥にいるヤツを、[r]とっとと引き取って帰るといい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 0,-50]
+
+＠ガレス
+奥？
+[k]
+
+[messageOff]
+[charaScale R 1.4]
+[charaFadein R 0.4 -250,-150]
+[charaMoveEase R -200,-150 0.7 easeOutSine]
+[wt 1.0]
+[subCameraOn 1]
+[charaLayer A sub #A]
+[charaLayer S sub #A]
+[subCameraFilter #A maskEdge cut359_mask05 4 255,255,255,255 0]
+[charaScale A 1.2]
+[charaScale S 1.2]
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0 30,150]
+[charaFadein S 0 0,0]
+[subRenderFadeinFSR #A 0.4 300,-200]
+[wt 0.4]
+[bgmStop BGM_WHITE_1 2.0]
+
+＠ガレス
+あっ……あそこでも、何か燃えて……。
+[k]
+
+[messageOff]
+[charaTalk A,C]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[charaFadeout A 0.1]
+[charaFadeout S 0.1]
+
+[charaScale C 1.4]
+[charaFace C 1]
+[charaFadein C 0.7 0,200]
+[wt 0.7]
+[charaLayer A normal]
+[charaLayer S normal]
+[subCameraOff]
+[charaScale A 1.0]
+[wt 0.4]
+[charaFace A 13]
+[charaFadein A 0.1 0,-50]
+[wt 0.4]
+[charaMoveEase C 0,-50 1.2 easeOutCubic]
+[charaMoveEase R -120,-400 1.2 easeOutCubic]
+[wt 2.2]
+[bgm BGM_EVENT_268 0.1]
+
+＠獅子心王
+………………。
+[k]
+
+[messageOff]
+[charaTalk A,C]
+[charaFadeout C 0.4]
+[charaFadeout R 0.4]
+[wt 0.4]
+[charaScale C 1.0]
+
+＠ガレス
+黒いエジソン殿！？
+[k]
+
+[charaFace A 12]
+
+＠ガレス
+いえ、よく見ると違いますね……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+
+＠獅子心王
+その声は……ガレス殿か。
+[k]
+
+＠獅子心王
+馬鹿な……あなたは[#斯様:かよう]な場に[r]堕ちるような御方ではない筈……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 0,-50]
+
+＠ガレス
+その声……？[r]だいぶ大人びてしまっていますが……。
+[k]
+
+＠ガレス
+……リチャード殿、ですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+
+＠獅子心王
+あなたが私に近づく事などあってはならぬ。
+[k]
+
+＠獅子心王
+この黒き火は[#煉獄:れんごく]の焔。[r]我が罪を、人理が続く限り焼き続ける炎だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 0,-50]
+
+＠テスカトリポカ
+完全に来る場所を間違えてやがる。[r]こっちの試練や道案内を受けるつもりもないらしい。
+[k]
+
+＠テスカトリポカ
+そもそも、まずは座れと言ったのに[r]立ちっぱなしと来た。
+[k]
+
+＠テスカトリポカ
+ここに来た以上はお仲間だが、[r]何事にもラインはある。
+[k]
+
+[charaFaceFade B 5 0.2]
+
+＠テスカトリポカ
+率直に言って邪魔なんでな。[r]カルデアのマスターの所にさっさと連れていけ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠ガレス
+は、はい！[r]なんとか引き摺って……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+[wt 1.2]
+[charaFaceFade B 8 0.2]
+[wt 0.3]
+
+＠テスカトリポカ
+……いや、その必要はなさそうだ。[r]オマエ、ていのいい[#マーカー]にされたな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 0,-50]
+
+＠ガレス
+え？[r]マーカー……ですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠テスカトリポカ
+まあ、[#奴:やっこ]さんも冥界下りは飽きているだろうしな。[r]横着もここまで来ると清々しい。
+[k]
+
+[messageOff]
+[subCameraOn 1]
+[charaLayer R sub #A]
+[charaLayer X sub #A]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+[charaScale R 1.2]
+[charaFadein R 0 0,-200]
+[subRenderFadein #A 0.4 0,0]
+[wt 0.4]
+[charaFadeout B 0.1]
+[charaPut X 0,50]
+[charaEffect X bit_talk_intersecting_chains02]
+[se adm51]
+[charaTalk G,C]
+[charaFace G 14]
+[charaFadein G 0.1 256,-50]
+[charaFace C 7]
+[charaFadein C 0.1 -256,-50]
+[wt 1.0]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[charaEffectDestroy X bit_talk_intersecting_chains02]
+[charaEffect G bit_talk_restriction02 50,70]
+[charaShake G 0.04 3 3 0.4]
+[se adm12]
+[charaFace G 11]
+[wt 0.2]
+[charaEffect C bit_talk_restriction02 0,50]
+[charaShake C 0.04 3 3 0.4]
+[wt 1.0]
+[charaPut A 2500,2500]
+[charaEffect A bit_talk_restriction02 0,70]
+[charaPut H 2500,2500]
+[charaEffect H bit_talk_restriction02 0,70]
+
+＠G：ガレス
+ええっ！？
+[k]
+
+[charaFace C 2]
+
+＠獅子心王
+ぬう……？
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 2500,2500]
+[charaPut C 2500,2500]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,-50]
+
+＠テスカトリポカ
+獅子心王リチャード。
+[k]
+
+＠テスカトリポカ
+罰を受けることを怖れないのも勇気だが、[r]救いの為に自ら罰を求める軟弱さはいらん。
+[k]
+
+＠テスカトリポカ
+今のアンタを惜しいとは思わないが……[r]普段の若造の姿をした時なら話は別だ。
+[k]
+
+[charaFaceFade B 0 0.2]
+
+＠テスカトリポカ
+暴君だろうが獣だろうが、勇敢な魂は歓迎だ。[r][#ちゃんと死んだら]、その時はゆっくりしていけ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+
+＠獅子心王
+……その言葉、肝に銘じるとしよう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut C 2500,2500]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 0,-50]
+[charaShake A 0.04 3 3 0.4]
+[se ad164 0 0.5]
+
+＠ガレス
+あの、これ、ひっぱられ……えええーーー！？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaLayer G sub #A]
+[charaLayer H sub #A]
+[charaScale G 1.2]
+[charaScale H 1.2]
+[charaScale R 1.2]
+[charaFace G 13]
+[charaFadein G 0 256,-50]
+[charaFace H 1]
+[charaFadein H 0 -256,-50]
+[charaFadein R 0 0,-270]
+[subRenderFadein #A 0.4 0,0]
+[wt 0.7]
+[charaPut A 2500,2500]
+[charaFadeout A 0.1]
+[charaScale S 1.2]
+[charaFadein S 0.1 0,-270]
+[se adm51]
+[charaMoveEase G 256,150 0.4 easeOutCubic]
+[charaShake G 0.04 3 3 0.4]
+[wt 0.1]
+[charaMoveEase H -256,150 0.4 easeOutCubic]
+[charaShake H 0.04 3 3 0.4]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+[bgmStop BGM_EVENT_268 0.7]
+[wipeout upToDown 0.7 1]
+[wait wipe]
+[charaFadeout S 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaEffectDestroy A bit_talk_restriction02]
+[charaEffectDestroy C bit_talk_restriction02]
+[charaFadeout R 0]
+
+[charaLayer X sub #A]
+[charaLayer T sub #A]
+[charaScale T 1.2]
+[charaFadein T 0 0,-270]
+[scene 282300]
+[charaScale U 1.2]
+[charaFadein U 0.1 0,-270]
+[wt 1.2]
+[wipein downToUp 0.7 1]
+[wait wipe]
+
+[charaPut Y 0,-850]
+[charaEffect Y bit_talk_sand_geyser]
+[charaEffectStop Y bit_talk_sand_geyser]
+[se ad803]
+[se ad804]
+[se ad238]
+[seStop ad238 1.0]
+[wt 1.0]
+[charaScale G 1.2]
+[charaScale H 1.2]
+[charaFace G 13]
+[charaFadein G 0 256,-200]
+[charaFace H 1]
+[charaFadein H 0 -256,-200]
+[subRenderFadein #A 0.6 0,0]
+[cueSe SE_24 24_ade1002]
+[cueSeStop 24_ade1002 0.4]
+[se adm51]
+[charaMoveEase G 256,-50 0.4 easeOutCubic]
+[wt 0.1]
+[charaMoveEase H -256,-50 0.4 easeOutCubic]
+[wt 0.4]
+[charaFadeout U 0.1]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+[wt 0.2]
+[cueSe Battle bac256]
+[charaEffectStop G bit_talk_restriction02]
+[charaEffectStop H bit_talk_restriction02]
+[wt 0.6]
+[seStop bac256 0.6]
+[wt 1.4]
+[subRenderFadeout #A 0.4]
+[wt 0.4]
+
+[charaFadeout G 0]
+[charaFadeout H 0]
+[charaFadeout T 0]
+[charaLayer G normal]
+[charaLayer H normal]
+[charaLayer R normal]
+[charaLayer T normal]
+[charaLayer X normal]
+[subCameraOff]
+
+[charaTalk on]
+[charaTalk D]
+
+＠エルキドゥ
+やあ、無事に釣り上げられたみたいだね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_263 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+
+＠ギルガメッシュ
+なに、アプカルルに比べれば些細な釣果よ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 0,-50]
+
+＠ガレス
+ああ、ビックリしたー！
+[k]
+
+[charaFace A 14]
+
+＠ガレス
+あれ？　……エルキドゥ殿に、[r]ギルガメッシュ殿！
+[k]
+
+[charaFace A 12]
+
+＠ガレス
+ここは……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠エルキドゥ
+大聖杯さ。スノーフィールドの地下のね。
+[k]
+
+＠エルキドゥ
+ちょっとした裏技を使って、二重底になっていた[r]冥界の底から引き上げたんだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+
+＠獅子心王
+……何故、私を地上に引き戻した。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠ギルガメッシュ
+引き戻した？　思い上がるな雑種。
+[k]
+
+＠ギルガメッシュ
+[#我:オレ]はただ、余暇に釣りを[#嗜:たしな]んでいただけだ。
+[k]
+
+＠ギルガメッシュ
+貴様は冥界に垂らした鎖に[r]たまたま釣り上げられた雑魚。
+[k]
+
+[charaFace E 1]
+
+＠ギルガメッシュ
+言わば、釣果の一つに過ぎん！
+[k]
+
+[charaFace E 4]
+
+＠ギルガメッシュ
+サーヴァントの身の上で、敗北の後に姿を変えてまで[r]場にしがみつくとはな……呆れた生き汚さよ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠エルキドゥ
+………………。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+
+
+＠獅子心王
+……返す言葉もない。
+[k]
+
+＠獅子心王
+何より、身内が我が別霊基すら食い破り、[r]それを糧に人理を[#蝕:むしば]んでいるなどと……。
+[k]
+
+＠獅子心王
+この身では、カルデアにも[r]人理にも償いようもない。
+[k]
+
+＠獅子心王
+我が首で気が済むというのであれば[line 4][bgmStop BGM_EVENT_263 2.0]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+
+＠ギルガメッシュ
+[f large][messageShake 0.04 3 3 0.4]暗いわ！！
+[k]
+
+[bgm BGM_EVENT_40 0.1]
+
+＠ギルガメッシュ
+このたわけが！
+[k]
+
+＠ギルガメッシュ
+己をケダモノだと信じ姿まで変える、[r][#斯様:かよう]な偽り獅子の首など、宝物庫に飾る価値もない！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+
+＠獅子心王
+……なるほど……納得できる。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 0,-50]
+
+＠ガレス
+あ、納得はするんですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠ギルガメッシュ
+貴様はそこで静かに燃え朽ちておれば良い。
+[k]
+
+＠ギルガメッシュ
+[#我:オレ]が真に釣り上げるべきは……[r]そこの泥に沈んでいる魚よ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_40 2.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaEffect F bit_talk_moya_aura]
+[cueSe SE_23 23_ade909]
+[wt 1.0]
+[charaTalk F]
+[charaFace F 27]
+[charaPut F 0,-50]
+[charaSpecialEffect F appearance 1 1.5]
+[wait charaSpecialEffect F]
+[wt 0.5]
+[charaEffectStop F bit_talk_moya_aura]
+[cueSeStop 23_ade909 1.5]
+[wt 2.0]
+[charaFace F 25]
+
+[bgm BGM_EVENT_260 0.1]
+
+＠エフェメロス
+……ようやく、私を討ちに来たか。[r]釣りを始めた時は何事かと思ったが……。
+[k]
+
+[charaFace F 27]
+
+＠エフェメロス
+ここに居るという事は、[r]神々の護りを[#剥:は]いだのか？
+[k]
+
+[charaFace F 10]
+
+＠エフェメロス
+ならば、見事と褒めそやしてやるべきか。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+
+＠ギルガメッシュ
+これはこれは、[r]最近の果実は随分と[#饒舌:じょうぜつ]なようだ。
+[k]
+
+＠ギルガメッシュ
+獣は飼い主に似ると言うが、[r]鉢植えも同じとはな。
+[k]
+
+＠ギルガメッシュ
+その口の悪さは星の[#山嶺:さんれい]の[#神々:居　候]譲りか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-50]
+
+＠エフェメロス
+減らず口を……。
+[k]
+
+＠エフェメロス
+狩るならさっさとするがいい、[r]神と決別した英雄王。
+[k]
+
+＠エフェメロス
+貴様ならば、願いも祈りも持たず、[r]我を滅せるだろう。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 0,-50]
+
+＠ガレス
+願いも祈りも持たずに……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+
+＠エルキドゥ
+手の届く場所にある果実をもぐのに、[r]一々願いを捧げる必要はないっていう事さ。
+[k]
+
+＠エルキドゥ
+誠実な農家の人なら、[r]ちゃんと祈りは捧げると思うけど。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠ギルガメッシュ
+[#我:オレ]は王であって農夫ではないのでな。[r]故に、果実を刈り取るのも[#我:オレ]の仕事ではない。
+[k]
+
+＠ギルガメッシュ
+そも、神々によって竜種に生けられた花を[r]わざわざ見物したいと言ったのはおまえだろう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 0,-50]
+
+＠エフェメロス
+なんだ、やはり我を笑いに来たのか。[r]あのような愚王にいいようにされたこの身を。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠エルキドゥ
+そう……ジョン王に竜の因子と樹木の身体を[r]乗っ取られつつある、君に会いに来た。
+[k]
+
+[messageOff]
+[charaScale C 1.2]
+[charaScale T 1.2]
+[charaTalk D,C]
+[charaFace C 7]
+[charaFadein C 0.4 -180,-50]
+[charaFadein T 0.4 50,-270]
+[charaMoveEase C -150,-50 0.4 easeOutSine]
+[charaMoveEase T 80,-270 0.4 easeOutSine]
+[wt 0.4]
+[charaShake C 0.04 3 3 0.2]
+[charaScale D 1.2]
+[charaScale U 1.2]
+[charaFace D 0]
+[charaFadein D 0 150,-50]
+[charaFadein U 0 -100,-270]
+
+[bgmStop BGM_EVENT_260 1.5]
+
+＠獅子心王
+……！！
+[k]
+
+[charaFace C 8]
+
+＠獅子心王
+今、なんと言った？
+[k]
+
+[messageOff]
+[charaTalk C,D]
+[charaFace D 0]
+[charaFadeout C 0.4]
+[charaFadeout T 0.4]
+[charaMove D 200,-50 15.0]
+[charaMove U -50,-270 15.0]
+[wt 0.4]
+[charaFadeout C 0.1]
+[charaFace F 25]
+[charaFadein F 0.1 0,-50]
+[bgm BGM_EVENT_270 0.1]
+
+＠エルキドゥ
+……ジョン・ラックランド。
+[k]
+
+＠エルキドゥ
+君の弟は、世界からありとあらゆる『物語』を[r]消し去る為に、自分の霊基に無常の枝葉を[#接ぎ木]した。
+[k]
+
+＠エルキドゥ
+……この大聖杯の泥を、吸い上げる為にね。
+[k]
+
+[messageOff]
+[charaTalk D,F]
+[charaFadeout D 0.4]
+[charaFadeout U 0.4]
+[wt 0.4]
+[charaMove D 200,-50 0.1]
+[charaMove U -50,-270 0.1]
+[charaScale D 1.0]
+[charaScale C 1.0]
+
+＠エフェメロス
+馬鹿な男だ。
+[k]
+
+＠エフェメロス
+神々の加護で、[r]かろうじて拮抗していたものを……。
+[k]
+
+＠エフェメロス
+加護を失って尚も[r]大聖杯の泥を吸い上げるとはな。
+[k]
+
+[charaFace F 27]
+
+＠エフェメロス
+大樹の根幹たる私を消せば、[r]それでこの特異点も、ヤツ自身も終わりだ。
+[k]
+
+＠エフェメロス
+一年か二年は各地で災厄を振りまくだろうが……
+[k]
+
+＠エフェメロス
+やがて枯れ果て、[r]瘴気溜まりの特異点として処理されるだろう。
+[k]
+
+[charaFace F 9]
+
+＠エフェメロス
+霊基そのものが汚染され、[r]存在ごと消滅するかもな。
+[k]
+
+[charaFace F 10]
+
+＠エフェメロス
+愚かな男には、お似合いの末路[line 4]
+[k]
+
+[messageOff]
+[charaScale H 1.2]
+[charaScale T 1.4]
+[charaTalk F,H,A]
+[charaFace H 8]
+[charaFadein H 0.4 0,-50]
+[charaFadein T 0.4 150,-340]
+[wt 0.8]
+[charaFadeout F 0.1]
+
+
+[se ad678]
+[charaPut X 0,-50]
+[fowardEffect bit_talk_quickmove 0,-50]
+[wt 0.2]
+[charaSpecialEffect H erasureReverse 1 0.25]
+[wt 0.8]
+[charaScale U 1.2]
+[charaFace A 11]
+[charaFadein A 0.1 0,-50]
+[charaFadein U 0.1 -80,-270]
+[charaFace F 5]
+[charaFadein F 0.1 0,-50]
+[wt 1.0]
+[charaEffectStop X bit_talk_42_depth]
+[charaFadeout T 0.4]
+[wt 0.4]
+[charaEffectDestroy X bit_talk_42_depth]
+
+＠ガレス
+あっ！？　リチャード殿！[r]待って下さい……！！
+[k]
+
+[messageOff]
+[charaTalk A,F]
+[charaFadeout A 0.4]
+[charaMoveEase A -400,-50 0.8 easeOutCubic]
+[cueSe Servants_303900 bac1257 0 0.5]
+[cueSeStop bac1257 1.5]
+[wt 1.5]
+[charaFadeout U 0.4]
+[wt 0.4]
+
+＠エフェメロス
+貴様……私をダシに使ったな？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠エルキドゥ
+事実を伝えただけさ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-50]
+
+＠エフェメロス
+……腹立たしい。[r]汝とはとことんウマが合わぬ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+
+＠エルキドゥ
+そうかな？[r]君にはシステム上、近いものを感じるよ。
+[k]
+
+＠エルキドゥ
+神々に設計されて、[r]地上に植え付けられたリソースとして。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-50]
+
+＠エフェメロス
+……役割は真逆だろう。
+[k]
+
+＠エフェメロス
+人の願いを叶えるか否定するか。[r]普通の人間なら安易に善悪で分けるのだろう。
+[k]
+
+[charaFace F 25]
+
+＠エフェメロス
+しかも、神々の思惑から外れた不良品である貴様の方が[r]重宝されているとはな。これだから人類は……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+
+＠ギルガメッシュ
+そこは、『これだから神々は』と言うべきではないのか？[r]嫉妬すら隠し切れぬ果実とは、なるほど滑稽で面白い。
+[k]
+
+＠ギルガメッシュ
+見物する価値はあった。[r]反願望機というのも稀少ではある。
+[k]
+
+＠ギルガメッシュ
+そうさな、貴様の自我が枯れ尽きる頃に、[r]宝物庫の植物園にでも置いてやろう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+
+＠エルキドゥ
+それは無理だよ、ギル。彼女はもう、人間に近い。[r]宝物庫に収まる器じゃあない。
+[k]
+
+＠エルキドゥ
+欠落が埋まりつつある。あとは何かの[r]切っ掛け一つで……英霊として、大きく花を咲かせるさ。
+[k]
+
+[messageOff]
+[charaDepth F 20]
+[charaScale F 1.2]
+[charaScale T 1.2]
+[charaTalk D,F]
+[charaFace F 11]
+[charaFadein F 0.3 -150,-50]
+[charaFadein T 0.3 100,-270]
+[wt 0.3]
+[charaScale D 1.2]
+[charaScale U 1.2]
+[charaFace D 4]
+[charaFadein D 0 150,-50]
+[charaFadein U 0 -100,-270]
+
+＠エフェメロス
+[messageShake 0.04 4 4 0.5]
+気休めはやめろ！　土人形！
+[k]
+
+＠エフェメロス
+自分自身は願いが空っぽの癖に、何もかも満ち足りている[r]貴様が何を言っても、今の私の前では嫌味なだけだ……！
+[k]
+
+[messageOff]
+[charaTalk F,D]
+[charaFadeout F 0.4]
+[charaFadeout T 0.4]
+[charaMove D 200,-50 15.0]
+[charaMove U -50,-270 15.0]
+[wt 0.4]
+[charaDepth F 3]
+[charaScale F 1.0]
+[charaFace F 7]
+[charaFadein F 0 0,-50]
+
+＠エルキドゥ
+……僕にも願いはあるよ。
+[k]
+
+＠エルキドゥ
+ただ……人と世界に、[r]それを託す仕様になっていないだけさ。
+[k]
+
+[charaFace D 0]
+
+＠エルキドゥ
+寧ろ、人間らしく生きられる可能性がある君の方が……[r]僕よりも、ずっと高性能だと思ってる。
+[k]
+
+[messageOff]
+[charaTalk D,F]
+[charaFadeout D 0.4]
+[charaFadeout U 0.4]
+[wt 0.5]
+[charaScale D 1.0]
+[charaMove D 200,-50 0.1]
+[charaMove U -50,-270 0.1]
+
+＠エフェメロス
+………………。
+[k]
+
+＠エフェメロス
+……悪意が無いのも理解はしている。だが……[r]それ以上は皮肉を通り越した侮辱だぞ、土人形。
+[k]
+
+[charaFace F 3]
+
+＠エフェメロス
+もう話す事もない。さっさとやれ。[r]カルデアがやり残した仕事をやるだけの話だろう。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠エルキドゥ
+ああ、そうだね……。
+[k]
+
+＠エルキドゥ
+僕は、カルデアの……。[r]マスターの意志に従うとしよう。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaEffect D bit_talk_36]
+[cueSe SE_22 22_ad1179 0 0]
+[cueSeVolume 22_ad1179 0.5 1.0]
+[wt 2.0]
+[subCameraOn 1]
+[charaLayer F sub #A]
+[charaLayer U sub #A]
+[subCameraFilter #A normal]
+[charaDepth U 1]
+[charaScale F 1.2]
+[charaScale U 1.2]
+[charaFace F 3]
+[charaFadein F 0 0,-50]
+[charaFadein U 0 0,-270]
+[cueSeStop 22_ad1179 2.0]
+[subRenderFadein #A 0.4 0,0]
+[wt 1.2]
+[charaFaceFade F 8 0.4]
+[wt 0.4]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_270 2.0]
+[wait fade]
+[charaEffectDestroy D bit_talk_36]
+[cueSe NoblePhantasm_300800 NP_300800_4 0 0]
+[wt 0.2]
+[cueSeVolume NP_300800_4 0.5 1.0]
+[wt 2.0]
+[cueSeStop NP_300800_4 1.5]
+[wt 2.0]
+[soundStopAll]
+[end]

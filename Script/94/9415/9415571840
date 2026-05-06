@@ -1,0 +1,358 @@
+
+＄94-15-57-18-4-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 1098255110 1 ゴルドルフ]
+[charaSet B 1098257310 1 ダ・ヴィンチ]
+[charaSet C 11020002 1 神王ラックランド]
+[charaSet D 11020002 1 神王ラックランド_演出用]
+[charaSet E 1098273110 1 エフェメロス]
+[charaSet F 1098273110 1 エフェメロス_演出用]
+[charaSet G 1061002 1 獅子心王]
+
+[sceneSet I 282201 1]
+[sceneSet J 282201 1]
+
+[charaSet T 1098120900 1 通信用ノイズ]
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_10_LowLevel]
+
+[scene 282201]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_199 0.1]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ゴルドルフ
+す、凄まじい攻撃だったが……どうなったのかね？
+[k]
+
+＠ゴルドルフ
+[%1]たちは無事なようだが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+大聖杯の魔力は、大気中の物も含めて綺麗に消滅した。
+[k]
+
+[charaFace B 22]
+
+＠ダ・ヴィンチ
+果実と切り離されたからかな。[r]無常の大樹も内部から徐々に枯れ始めているね。
+[k]
+
+＠ダ・ヴィンチ
+……特異点としての数値も大幅に下がりつつある。
+[k]
+
+[charaFace B 23]
+
+＠ダ・ヴィンチ
+あとは……そのラックランドの中に残った[r]大樹の枝葉を打ち払えば終わる筈だ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠神王ラックランド
+………………。
+[k]
+
+＠神王ラックランド
+無常の果実[line 2]エフェメロスよ。[r]己自身の願いすら、否定する者よ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠エフェメロス
+……気軽に呼ぶな、ジョン・ラックランド。
+[k]
+
+＠エフェメロス
+[#私]はもう、おまえの鉢植えの中にはいない。
+[k]
+
+？1：エフェメロス……飛んでる……
+？2：なんだか、喋りかたも少し変わってるような
+？！
+
+[messageOff]
+[subCameraOn 2]
+
+[charaLayer C sub #A]
+[charaLayer I sub #A]
+[charaLayer E sub #B]
+[charaLayer J sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask10 5 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask09 5 0,0,0,255]
+
+[charaScale C 1.25]
+[charaScale E 1.15]
+[charaScale I 1.2]
+[charaScale J 1.2]
+
+[charaTalk depthOff]
+[charaDepth C 7]
+[charaDepth E 6]
+[charaDepth I 5]
+[charaDepth J 4]
+
+[charaFace C 6]
+[charaFadeinFSL C 0 -80,270]
+[charaFadein I 0 200,-20]
+
+[charaFace E 5]
+[charaFadeinFSR E 0 50,270]
+[charaFadein J 0 -200,-20]
+
+[subRenderFadein #A 0.4 -230,-220]
+[subRenderMoveEase #A -210,-270 0.4 easeOutSine]
+
+[subRenderFadein #B 0.4 230,-320]
+[subRenderMoveEase #B 210,-270 0.4 easeOutSine]
+[wt 0.8]
+
+[charaFadeout F 0.1]
+
+[charaTalk on]
+
+＠神王ラックランド
+……それで、良いのだな？
+[k]
+
+[charaFace C 0]
+
+＠神王ラックランド
+観測者さえいなければ、[r]罪も[#咎:とが]も悪も、誰も推し量れる者はいない。
+[k]
+
+[charaFace C 6]
+
+＠神王ラックランド
+だが……お前はカルデアを選んだ。[r]他者に語られる可能性を選んだ。
+[k]
+
+＠神王ラックランド
+お前を常に思い、常に『語る』誰かが現れた時……[r]その代償を、支払えると良いがな……。
+[k]
+
+[charaFace E 15]
+
+＠エフェメロス
+……そんなヤツ、いるわけがないだろう。
+[k]
+
+＠エフェメロス
+生まれてから食われるまで、私は独り。
+[k]
+
+＠エフェメロス
+食われて同化した今でも同じ。[r]単騎で全てを完結できるからこその竜なのだからな。
+[k]
+
+
+＠神王ラックランド
+……そうか。
+[k]
+
+[charaFace E 28]
+
+＠エフェメロス
+……おまえが消滅しかけていた私の霊基を拾い、[r]ここまで再生させたのも事実だ。
+[k]
+
+＠エフェメロス
+それに……おまえは、私を撃ち落とそうだの[r]再び支配しようだのという願いは持っていないらしい。
+[k]
+
+＠エフェメロス
+故に、おまえをこのまま消し飛ばす事はすまい。[r]あとはカルデアと勝手にケリをつけろ。
+[k]
+
+
+＠神王ラックランド
+大聖杯の泥も、神々の力も、無常の果実も消え失せたか。
+[k]
+
+[messageOff]
+[charaTalk D,C]
+[charaFace D 6]
+[charaFadein D 0 1]
+
+[subRenderFadeout #A 0.5]
+[subRenderFadeout #B 0.5]
+[wt 0.5]
+
+[charaFadeout C 0]
+[charaFadeout E 0]
+[charaFadeout I 0]
+[charaFadeout J 0]
+[charaScale C 1.0]
+[charaScale E 1.0]
+
+[charaLayer E normal]
+[charaLayer J normal]
+
+[charaTalk off]
+
+＠神王ラックランド
+暴君黒獅子と愚王ジョンが、八万を超える行軍において[r]積み上げたものが、全て失われた。
+[k]
+
+[bgmStop BGM_EVENT_199 2.0]
+
+＠神王ラックランド
+欠地王と呼ばれ、後世では読み手の[#誤謬:ごびゅう]を元に[r]失地王とも罵られた、ジョン王らしき末路だ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠獅子心王
+ジョンよ……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠神王ラックランド
+故に[line 2]
+[k]
+
+[bgm BGM_BATTLE_328 0.1]
+
+[charaFaceFade D 0 0.2]
+
+＠神王ラックランド
+残された私の全てをもって、[r]一つだけ否定をしよう。
+[k]
+
+＠神王ラックランド
+ただ一つの物語を、[r]私の全存在で上書きしよう。
+[k]
+
+[messageOff]
+[subCameraFilter #A normal]
+
+[charaScale C 1.2]
+[charaScale I 1.2]
+
+[charaFace C 0]
+[charaFadein C 0 0,0]
+[charaFadein I 0 0,-270]
+
+[subRenderFadein #A 0.7 0,0]
+[subRenderMoveScale #A 1.05 15.0]
+[subRenderMove #A 0,-10 15.0]
+[wt 0.7]
+[charaFadeout D 0.1]
+
+＠神王ラックランド
+……カルデアよ。
+[k]
+
+＠神王ラックランド
+灼熱の星と白紙の大地を歩んだ最後の人類よ。
+[k]
+
+＠神王ラックランド
+我は、物語の円環を閉ざすべく、お前達に挑む。
+[k]
+
+＠神王ラックランド
+これは願いに非ず。[r]これは祈りに非ず。
+[k]
+
+＠神王ラックランド
+ただ、私は人を捨て……歯車となろう。
+[k]
+
+[charaFaceFade D 10 0.2]
+
+＠神王ラックランド
+兄上共々……その物語を、ここに、閉ざす。
+[k]
+
+？1：その結末は、受け入れられない
+？2：託されたものを、繋げる為にここに来たから
+？！
+
+[messageOff]
+[charaDepth G 1]
+[charaFace G 0]
+[charaFadein G 0 1]
+
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+
+＠獅子心王
+……カルデアのマスターよ。[r]私も、戦列に加えてほしい。
+[k]
+
+[charaFaceFade G 1 0.15]
+
+＠獅子心王
+弟の全てを、私は受け止めねばならない。
+[k]
+
+＠獅子心王
+……英雄譚への憧れなどではない。
+[k]
+
+[charaFaceFade G 0 0.15]
+
+＠獅子心王
+家族として……兄としてそうしたいという、[r]ただの[#我:わ]が[#儘:まま]だが。
+[k]
+
+？1：もちろん
+？2：いっしょに、ジョンを止めよう……！！
+？！
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_328 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]
