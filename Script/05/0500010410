@@ -1,0 +1,872 @@
+
+
+＄05-00-01-04-1-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 1098123000 1 ムニエル]
+[charaSet B 1098123010 1 ムニエル]
+[charaSet C 8001900 1 マシュ]
+[charaSet D 1098346600 1 カヤン]
+
+[charaSet E 1098127000 1 魔獣]
+[charaSet F 1098127000 1 魔獣]
+[charaSet G 1098127000 1 魔獣]
+
+[charaSet H 8001900 1 マシュ_サブレイヤー用]
+[charaScale H 1.4]
+[sceneSet I 143500 1]
+[charaScale I 1.4]
+[sceneSet J 143500 1]
+[charaScale J 1.3]
+
+[charaSet K 8001900 1 マシュ_拡大]
+[charaSet L 1098348700 1 オルガマリー]
+[charaSet M 98003000 1 Dr.ロマン]
+[charaSet N 5009001 1 ダ・ヴィンチ]
+[charaSet O 5042000 1 紫式部]
+
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+
+
+[charaSet T 98115000 1 エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用]
+
+[subCameraOn 1]
+[charaLayer H sub #A]
+[charaLayer I sub #A]
+[charaLayer W sub #A]
+[subCameraFilter #A maskEdge cut359_mask06 4 0,0,0,255 0]
+
+[charaTalk depthOff]
+
+[charaDepth A 5]
+[charaDepth B 6]
+[charaDepth C 7]
+[charaDepth D 8]
+[charaDepth F 9]
+[charaDepth G 10]
+[charaDepth E 11]
+[charaDepth J 12]
+[charaDepth K 13]
+
+[charaDepth P 14]
+[charaDepth O 15]
+[charaDepth L 16]
+[charaDepth M 17]
+[charaDepth N 18]
+
+[charaDepth I 19]
+[charaDepth H 20]
+[charaDepth W 21]
+
+[charaDepth T 22]
+[charaDepth U 23]
+
+[scene 143500]
+
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_10_LowLevel_depth]
+
+[charaPut U 0,0]
+[charaEffect U bit_sepia01_depth_fs]
+
+[wt 0.5]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_194 0.1]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠B：ムニエル
+はぁ？　戦闘シミュレーターで通信を切断して欲しい？[r]何でだ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+はい。第六特異点で思い知ったのですが……。
+[k]
+
+＠マシュ
+第五特異点まで、わたしたちは通信による[r]助言を受けて、任務を遂行してきました。
+[k]
+
+[charaFace C 4]
+
+＠マシュ
+ですが、通信が断たれた第六特異点では、[r]スフィンクスに思わぬ苦戦を強いられました……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：ムニエル
+そ、そうだったのか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaTalk C]
+[charaFace C 40]
+[charaFadein C 0.1 1]
+
+＠マシュ
+そうだったのです！
+[k]
+
+[charaFace C 0]
+
+＠マシュ
+という訳で、ここはあえて通信を断った上で[r]戦いに挑みたいと思います。
+[k]
+
+？1：なるべく耐久力高めのエネミーでお願いします
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[se ad172]
+
+＠B：ムニエル
+わかったわかった。じゃあ、該当エネミーはと……。[r]よし、コイツだ。
+[k]
+
+[messageOff]
+[seStop ad172 0.5]
+[se ad15]
+[charaFadeout B 0.1]
+[charaPut T 2000,2000]
+[wt 0.5]
+
+[se ad575]
+[charaTalk off]
+[charaFace E 0]
+[charaPut E 1]
+[charaSpecialEffect E appearance 1 1.5]
+[wt 0.3]
+[charaFace F 0]
+[charaPutFSR F 320,0]
+[charaSpecialEffect F appearance 1 1.5]
+[wt 0.5]
+[charaFace G 0]
+[charaPutFSL G -320,0]
+[charaSpecialEffect G appearance 1 1.5]
+[wt 1.5]
+[seStop ad575 0.5]
+[wt 0.6]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠B：ムニエル
+耐久力を最大にセットしたぞ。[r]これでいいんだな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+はい、問題ありません。[r]後は通信を切断してください。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠B：ムニエル
+了解、了解。[r]がんばれよ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_194 1.0]
+[wipeout circleIn 1.0 1]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaPut T 2000,2000]
+[charaEffectStop T bit_talk_10_LowLevel_depth]
+[charaPut U 2000,2000]
+[charaEffectStop U bit_sepia01_depth_fs]
+
+[wt 1.0]
+
+[wipein circleIn 1.0 1]
+[wait wipe]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠マシュ
+はあああああーーーー！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad678 0.5]
+[blur motion 0.3 2 100 0.5 0.5 0.05 100]
+[charaMoveScaleEase C 1.4 0.3 easeOutQuint]
+[charaMoveEase C 0,80 0.3 easeOutQuint]
+[charaFadeout C 0.3]
+[wt 0.5]
+[blurOff motion 0.3]
+[wt 0.2]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.2]
+
+[cueSe Servants_800190 m64929]
+[seVolume m64929 0 0.4]
+[charaEffect E bit_talk_blow02]
+[wt 0.2]
+[charaShake E 0.05 2 2 0.8]
+[wt 1.2]
+[se ad171]
+[charaMoveReturn E 5,0 0.3]
+[charaEffect E bit_talk_strike_01 0,0 H]
+[wt 0.2]
+[se ad32]
+[effect bit_talk_14]
+[shake 0.05 2 2 0.8]
+[wt 0.4]
+[charaFadeout E 0.2]
+[wt 1.0]
+
+[charaFace H 7]
+[charaFadein H 0 0,295]
+[charaFadein I 0 -50,-20]
+
+[cueSe SE_25 25_ad1466]
+[se ad671 0.2]
+[wt 0.1]
+[subRenderFadein #A 0.3 0,-325]
+[charaMoveEase H 50,295 0.4 easeOutCubic]
+[charaMoveEase I 0,-20 0.4 easeOutCubic]
+[wt 0.2]
+[seStop 25_ad1466 0.2]
+[seStop ad671 1.2]
+[wt 0.4]
+
+＠マシュ
+それで！　これから！　先！[r]どうすれば！　よろしいでしょうか！
+[k]
+
+？1：まず！　ときこさんには当たり障りなく！
+？2：警戒している様子は見せないこと！
+？！
+
+[charaFace H 4]
+
+＠マシュ
+……そうですね。カルデアに、あの方は[r]いらっしゃいませんでした……。
+[k]
+
+＠マシュ
+人間ではない、と思いますが……。
+[k]
+
+＠マシュ
+サーヴァントというのも、[r]何か違うような[line 3]
+[k]
+
+
+[messageOff]
+[se ad171]
+[wt 0.2]
+[se ad170]
+[charaFace H 7]
+[charaEffect H bit_talk_14 -200,100]
+[charaShake H 0.05 2 2 0.6]
+[wt 0.7]
+
+＠マシュ
+それで……なぜわたしたちは、[r]あの方を受け入れているのでしょう？
+[k]
+
+？1：そういう……力があるのだと思う
+？！
+
+[messageOff]
+[se ad678 0.5]
+[charaMoveEase H -200,295 0.4 easeOutQuint]
+[charaFadeout H 0.3]
+[wt 0.3]
+
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.3]
+
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[cueSe Servants_800190 m64929]
+[seVolume m64929 0 0.4]
+[charaEffect E bit_talk_blow02]
+[wt 0.2]
+[charaShake E 0.05 2 2 0.8]
+[wt 0.9]
+
+[se ad42]
+[charaSpecialEffect E enemyErasure 1 1.5]
+[wait charaSpecialEffect E]
+[seStop ad42 0.5]
+[wt 0.5]
+
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[subCameraFilter #A maskEdge cut359_mask05 4 0,0,0,255 0]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[subRenderFadein #A 0.3 0,-150]
+[subRenderMove #A 0,-175 0.3]
+[wt 0.3]
+
+[charaPut H -100,200]
+[charaPut W 0,170]
+[charaEffect W bit_talk_quickmove]
+[wt 0.1]
+[se ad223]
+[charaFace H 2]
+[charaSpecialEffect H appearanceReverse 0,0 0.3]
+[wait charaSpecialEffect H]
+
+＠マシュ
+なるほど。催眠というか洗脳というか、[r]そんな感じの能力でしょうか……！
+[k]
+
+[charaPut W 2000,2000]
+[charaEffectDestroy W bit_talk_quickmove]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.0]
+[subRenderMove #A 0,-165 0.4]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.0]
+[subRenderMove #A 0,-175 0.4]
+[wt 0.9]
+
+[charaFace H 7]
+
+＠マシュ
+わかりました。警戒する素振りを見せずに、[r]仲良くですね……！
+[k]
+
+？1：できそう？
+？！
+
+[messageOff]
+[se ad171]
+[wt 0.2]
+[se ad32]
+[cueSe SE_24 24_ade1019]
+[charaFace H 13]
+[charaEffect H bit_talk_14 50,100]
+[charaShake H 0.05 2 2 0.6]
+[wt 0.7]
+
+[charaFace H 2]
+
+＠マシュ
+……大丈夫、です！[r]それで、もう一つお話があるとのことですが……！
+[k]
+
+[messageOff]
+
+[se ad73]
+[charaPut W 0,170]
+[charaEffect W bit_talk_quickmove]
+[charaSpecialEffect H erasureReverse 0,0 0.25]
+[wait charaSpecialEffect H]
+[wt 0.75]
+[subRenderMove #A 0,-155 0.3]
+[subRenderFadeout #A 0.2]
+[wt 0.3]
+[charaPut W 2000,2000]
+[charaEffectDestroy W bit_talk_quickmove]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFace G 0]
+[charaFadein E 0.1 200,0]
+[charaFadein G 0.1 -200,0]
+[wt 0.3]
+
+[cueSe Servants_800190 m64929]
+[seVolume m64929 0 0.4]
+[charaEffect E bit_talk_blow02]
+[wt 0.2]
+[charaShake E 0.05 2 2 0.8]
+[wt 0.9]
+
+[se ad42]
+[charaSpecialEffect E enemyErasure 1 1.5]
+[wait charaSpecialEffect E]
+[seStop ad42 0.5]
+[wt 0.8]
+
+[se ad1006]
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 21]
+[charaFadein C 0.4 600,0]
+[charaMoveEase C 350,0 0.3 easeOutQuint]
+[wt 0.5]
+
+？1：……カルデアに共犯者がいる
+？！
+
+
+[bgmStop BGM_EVENT_3 1.0]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 14]
+[charaShake C 0.05 3 3 0.3]
+
+＠マシュ
+カッ……！？
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ade264]
+[wt 0.3]
+[se ad171]
+[charaMoveReturn G -190,0 0.3]
+[effect bit_talk_h_slash01_fs 0,0 F]
+[wt 0.6]
+[se bac11]
+[effect bit_talk_14 350,0]
+[wt 0.1]
+[charaFace C 11]
+[charaShake C 0.05 3 3 0.8]
+[charaMoveEase C 900,0 0.3 easeOutCubic]
+[charaFadeout C 0.4]
+
+＠マシュ
+ひゃあ！？
+[k]
+
+？1：マシュ！
+？！
+
+[messageOff]
+[charaScale K 1.2]
+[charaFadein J 0.3 50,-300]
+[charaMoveEase J -50,-300 0.3 easeInOutSine]
+[wt 0.3]
+[se ad671 0.5]
+[charaFace K 24]
+[charaFadein K 0.6 -80,0]
+[charaMoveEase K 80,0 0.6 easeInOutSine]
+[wt 0.8]
+[charaFadeout G 0.1]
+
+[charaFace K 18]
+
+＠マシュ
+す、すみません油断しました！[r]でも、なんで……！？
+[k]
+
+？1：そうとしか考えられない
+？！
+
+
+
+
+
+
+[bgm BGM_MAP_6 0.1]
+[charaFace K 2]
+
+＠マシュ
+くっ……！
+[k]
+
+＠マシュ
+ですが！　スタッフは皆さん、裏切るような方では……！
+[k]
+
+？1：そもそも偽物かもしれない
+？！
+
+[charaFace K 7]
+
+＠マシュ
+……！
+[k]
+
+[messageOff]
+[bgm BGM_MAP_6 1.0 0.5]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout K 0.1]
+[charaFadeout J 0.1]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_MAP_6 1.0 1.0]
+[wait fade]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.2]
+[cueSe Servants_800190 m64929]
+[seVolume m64929 0 0.4]
+[charaEffect E bit_talk_blow02]
+[wt 0.2]
+[charaShake E 0.05 2 2 0.8]
+[wt 0.9]
+
+[se ad42]
+[charaSpecialEffect E enemyErasure 1 1.5]
+[wait charaSpecialEffect E]
+[seStop ad42 0.5]
+[wt 0.5]
+
+[se ad984]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+
+＠マシュ
+偽物……確かに、その可能性は捨て切れません。
+[k]
+
+？1：ときこさんはスタッフ全員を監視している
+？2：でも知ってなさそうな情報もあった
+？！
+
+[charaFace C 7]
+
+＠マシュ
+なるほど……。
+[k]
+
+＠マシュ
+もしときこさんが万能なら、とっくにわたしたちは[r]記憶を消されているから……。
+[k]
+
+＠マシュ
+そもそもこうして話し合いをしている[r]余裕もないという訳ですね。
+[k]
+
+[charaFace C 5]
+
+[turnPageOff]
+
+＠マシュ
+でも、そうなると……数は絞られますね。[r]容疑者になるのは[line 3]
+[k]
+
+[messageOff]
+[charaFadein P 0.5 0,0]
+[wt 0.5]
+
+[charaTalk L,M]
+[charaFadein L 0.5 -380,0]
+
+＠マシュ=spot[L,M]
+まずオルガマリー所長。[wt 1.0][charaFadein M 0.5 -120,0][r]それからドクター・ロマン。
+[k]
+
+[charaTalk O,N]
+
+＠マシュ=spot[O,N]
+それに……[wt 0.4][charaFadein O 0.5 120,0]紫式部さんと[wt 0.5][charaFadein N 0.5 380,0]ダ・ヴィンチちゃんも[r]該当するでしょうか。
+[k]
+
+[charaFace C 7]
+
+＠マシュ=spot[O,N]
+二人とも、あまり姿を見せませんが……。[r]サーヴァントならば、あらゆる不可能を可能にします。
+[k]
+
+[messageOff]
+[charaTalk O,N,C]
+[turnPageOn]
+[charaFadeout L 0.4]
+[charaFadeout M 0.4]
+[charaFadeout O 0.4]
+[charaFadeout N 0.4]
+[charaFadeout P 0.4]
+[wt 0.8]
+
+＠マシュ
+言うまでもなく、[r]他サーヴァントの方々もですね。
+[k]
+
+[charaFace C 4]
+
+＠マシュ
+共に戦ったはずの方々を疑うのは、[r]何とも心苦しいですが……。
+[k]
+
+？1：そうだね……
+？！
+
+[charaFace C 0]
+
+＠マシュ
+他のスタッフさんも容疑者といえば容疑者ですが……。[r]マスターの考える、
+[k]
+
+＠マシュ
+[#カルデア全てを監視しているような]存在は、[r]そうはいないと思うので……。
+[k]
+
+[messageOff]
+[se ad437]
+[bgm BGM_MAP_6 1.5 0.4]
+[effect bit_talk_noise_gr]
+[fadeout white 0.5]
+[wait fade]
+[effect bit_sepia01_depth_fs_02]
+[effectDestroy bit_talk_noise_gr]
+
+[charaFadeout C 0.1]
+
+[charaTalk M]
+[charaFace M 8]
+[charaFadein M 0.1 1]
+[wt 0.5]
+
+[scene 145000]
+
+[fadein white 0.5]
+[wait fade]
+
+[wt 1.0]
+[charaFace M 5]
+[wt 1.5]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[wt 1.0]
+
+[se ad437]
+[bgmStop BGM_MAP_6 1.0]
+[fowardEffect bit_talk_noise_gr]
+[fadeout white 0.5]
+[wait fade]
+
+[effectDestroy bit_sepia01_depth_fs_02]
+
+[charaFadeout L 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+[scene 143500]
+
+
+[fadein white 0.5]
+[fowardEffectStop bit_talk_noise_gr]
+[wait fade]
+
+[wt 0.2]
+
+
+？1：ん？
+？！
+
+[charaFace C 6]
+
+＠マシュ
+どうしました？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：ムニエル
+おーい、とっくにエネミーは倒せたようだから[r]通信回復させたぞ。何かあったか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠マシュ
+す、すみません。思ったより苦戦したため、[r]反省会を開いていました！
+[k]
+
+＠マシュ
+……では、また後で。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 145000]
+
+[wt 1.0]
+
+[cueSe SE_22 22_adm97]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ムニエル
+うーん、通信なしだとちょっと戦闘が長引いたな。[r]余分なダメージもあったし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠マシュ
+はい……わたしの不徳の致すところです……。
+[k]
+
+？1：ごめんなさい……
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠カヤン
+通信がないってことで戸惑ったのもあるのだろう。[r]何をすればいいか、しっかりと把握することだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+はい！[r]ご助言、ありがとうございます！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ムニエル
+……マシュってこんな熱血だったかなぁ……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+
+＠マシュ
+い[charaShake C 0.02 2 2 0.3]、色々な経験を積みましたので！
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

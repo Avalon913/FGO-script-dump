@@ -1,0 +1,412 @@
+
+
+＄05-00-01-06-3-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 6007001 1 ジキル]
+[charaSet B 5016001 1 ジェロニモ]
+[charaSet C 1012001 1 ベディヴィエール]
+[charaSet D 2055000 1 ウルズ]
+[charaSet E 6007003 1 ハイド]
+
+[charaSet F 2055000 1 ウルズ演出用]
+[charaSet G 6007003 1 ハイド演出用]
+[charaFilter G silhouette 00000080]
+[charaSet H 6007001 1 ジキル演出用]
+
+[sceneSet I 10000 1]
+[sceneSet J 10000 1]
+[charaFilter J silhouette FF000080]
+
+[sceneSet K 145001 1]
+[sceneSet L 145001 1]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth C 2]
+[charaDepth D 3]
+[charaDepth K 4]
+[charaDepth I 5]
+[charaDepth A 6]
+[charaDepth H 7]
+[charaDepth J 8]
+[charaDepth L 9]
+[charaDepth E 10]
+[charaDepth G 11]
+[charaDepth F 12]
+
+[scene 145001]
+
+[charaScale K 1.3]
+[charaFadein K 0.1 0,-200]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[bgm BGM_MAP_92 0.1]
+[fadein black 0.5]
+[wait fade]
+
+[se ad671]
+[charaScale A 1.5]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.3 0,50]
+[charaMoveScaleEase A 1.0 0.5 easeOutCubic]
+[charaMoveEase A 0,0 0.5 easeOutCubic]
+[wt 0.4]
+
+[seStop ad671 1.0]
+[charaShake A 0.03 4 3 0.5]
+
+＠ジキル
+ぐっ……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaMove A 0,-50 0.5]
+[wt 0.5]
+[se ad144]
+[wt 1.0]
+
+[messageOff]
+[charaFadeout K 0.4]
+[wt 0.4]
+
+[se ad671]
+[charaTalk B,C]
+[charaScale B 1.5]
+[charaScale C 1.5]
+[charaFace B 5]
+[charaFace C 6]
+[charaFadein C 0.3 -286,50]
+[charaFadein B 0.3 286,50]
+[charaMoveScaleEase C 1.0 0.5 easeOutCubic]
+[charaMoveEase C -256,0 0.5 easeOutCubic]
+[charaMoveScaleEase B 1.0 0.5 easeOutCubic]
+[charaMoveEase B 256,0 0.5 easeOutCubic]
+[wt 0.6]
+[seStop ad671 1.0]
+[wt 0.4]
+[charaMove C -256,-30 0.3]
+[wt 0.2]
+[cueSe SE_25 25_ad1466]
+[charaFace B 4]
+[charaMove B 256,-30 0.3]
+[wt 0.1]
+[charaShake C 0.03 3 4 0.5]
+[wt 0.2]
+[cueSeStop 25_ad1466 0.5]
+[seContinue ad775 0 1.0 2]
+[charaShake B 0.03 4 3 0.5]
+[wt 0.7]
+
+[charaTalk B]
+
+＠ジェロニモ
+強い……。[r]聖剣も対策済みとはな……。
+[k]
+
+[charaTalk C]
+
+＠ベディヴィエール
+申し訳ありません、マスター……。
+[k]
+
+[messageOff]
+[charaScale L 1.3]
+[charaScale F 1.3]
+[charaTalk F,C]
+[charaFace F 11]
+[charaFadein L 0.6 0,-320]
+[charaFadein F 0.6 0,30]
+[charaMove L 0,-350 2.0]
+[charaMove F 0,0 2.0]
+[wt 2.2]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+
+＠F：ウルズ
+ここまでのようですね。[r]……今回は少し焦りましたが、問題ありませんでしたか。
+[k]
+
+＠F：ウルズ
+安心しなさい。[r][#もう忘れかけているでしょう]。
+[k]
+
+＠F：ウルズ
+[#現在:い　ま]、何をしていたのか。[r]どんな未来を目指していたのか。
+[k]
+
+[charaFace F 0]
+
+＠F：ウルズ
+ふふ、必要ありません。あなたたちには。[r]ひとまず、[#動くことを忘れなさい]。
+[k]
+
+[messageOff]
+[shake 0.01 2 2 0.3]
+[wt 0.6]
+[charaMoveEase L 0,-320 0.7 easeOutCirc]
+[charaMoveEase F 0,30 0.7 easeOutCirc]
+[wt 0.2]
+[shake 0.03 3 2 0.7]
+[se ad144]
+[wt 1.5]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+[subCameraOn 1]
+[charaLayer K sub #A]
+[charaLayer I sub #A]
+[charaLayer A sub #A]
+[charaLayer H sub #A]
+[charaLayer J sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask04 20 0,0,0,255 1]
+[subRenderScale #A 1.2]
+
+[charaScale A 2.0]
+[charaScale H 2.0]
+[charaFace A 4]
+[charaFadein A 0.1 -35,345]
+[charaFadein K 0.1 0,450]
+[charaFace H 5]
+[charaPut H -35,350]
+[charaFadeTime H 0 0]
+
+[charaScale I 1.1]
+[charaScale J 1.1]
+[charaPut I 0,200]
+[charaPut J 0,200]
+[charaFadeTime I 0.1 0.5]
+[charaFadeTime J 0 0]
+
+？1：（動けない……！）
+？！
+
+[charaFace D 4]
+[charaTalk D,F]
+[charaFadeout L 0.5]
+[charaFadeout F 0.5]
+[wt 0.7]
+
+＠ウルズ
+しかし……まさか、シバのことまで見抜くとは。[r]今回は相当に記憶しているようでしたね。
+[k]
+
+[charaFace D 7]
+
+＠ウルズ
+という訳で、[%1]。[r]念入りに記憶の洗浄を行いました、ます。
+[k]
+
+＠ウルズ
+次は、次こそは、[r]最初の貴方のような無垢さに戻してみせますよ。
+[k]
+
+[charaFace D 14]
+
+＠ウルズ
+……？
+[k]
+
+[messageOff]
+[wt 0.5]
+
+？1：（令呪を以て命ずる……）
+？！
+
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[cueSe Battle bas16]
+[fowardEffect bit_talk_CommandMantra_06 0,32]
+[wt 2.5]
+
+[branch _branchEnd]
+
+[label _Female]
+
+[cueSe Battle bas16]
+[fowardEffect bit_talk_CommandMantra_09 0,32]
+[wt 2.5]
+
+[branch _branchEnd]
+
+[label _branchEnd]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[bgm BGM_MAP_92 0.5 0.6]
+[wait wipe]
+
+[scene 10000]
+[charaFadeout D 0.1]
+[cameraMove 0.1 0,0 1.0]
+[wt 0.3]
+
+[wipein rectangleStripLeftToRight 0.1 1.0]
+[wait wipe]
+
+[charaTalk A]
+[subRenderFadein #A 0.3 50,-430]
+[subRenderMoveEase #A 0,-430 0.4 easeOutSine]
+[wt 0.8]
+
+＠ジキル
+（忘れている。過去が削ぎ落とされている）
+[k]
+
+＠ジキル
+（僕はここで何をしていたのか。[r]　僕はここで何を考えていたのか）
+[k]
+
+＠ジキル
+（わからない。何もかもわからないけど、[r]　一つだけ確かなことがある）
+[k]
+
+[bgmStop BGM_MAP_92 1.2]
+[charaFaceFade A 5 0.2]
+
+＠ジキル
+（僕は……[#これを]……[#飲まなくては]……！）
+[k]
+
+[messageOff]
+[charaTalk off]
+[cueSe SE_25 25_ade1265]
+[charaFadeTime J 0.2 0.7]
+[charaFadeTime H 0.3 0.4]
+[charaMoveScale H 2.8 0.6]
+[charaMove H -55,440 0.6]
+[wt 0.2]
+[charaFadeout J 0.2]
+[wt 0.1]
+[charaFadeout H 0.3]
+[wt 1.0]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout K 0.1]
+[charaFadeout A 0.1]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[charaLayer K normal]
+[charaLayer I normal]
+[charaLayer A normal]
+[charaLayer H normal]
+[charaLayer J normal]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+[scene 145001]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+＠ウルズ
+令呪？　何を[line 3]
+[k]
+
+[messageOff]
+[fadeout black 0.2]
+[wait fade]
+
+[charaFadeout D 0.1]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.2]
+[wait fade]
+
+[se ad1051]
+[effect bit_talk_x_slash_bk_03 0,0 H]
+[wt 1.0]
+[se ad161]
+[effect bit_talk_35]
+[wt 1.5]
+
+[fadeout black 0.2]
+[wait fade]
+
+[effectDestroy bit_talk_35]
+[charaScale F 1.3]
+[charaScale E 1.35]
+[charaScale G 1.35]
+[charaScale L 1.5]
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 0,20]
+[charaFadein L 0.1 0,-350]
+[charaPut G 200,-35]
+[charaFace G 0]
+[charaFadeTime G 0 0]
+[wt 0.2]
+
+[fadein black 0.4]
+[wait fade]
+
+[charaShake F 0.05 4 4 0.5]
+
+＠F：ウルズ
+ガッ……！？
+[k]
+
+[messageOff]
+[charaTalk F,G]
+[charaMoveEase L -200,-350 1.0 easeOutSine]
+[charaMoveEase G 0,-35 1.0 easeOutSine]
+[charaMoveEase F -200,20 1.0 easeOutSine]
+[wt 0.5]
+[charaFadeTime G 0.5 1.0]
+[wt 0.7]
+
+[bgm BGM_BATTLE_184 0.1]
+
+[charaTalk G]
+
+＠G：？？？
+ヒ……ヒ[messageShake 0.05 5 5 0.5]ャハハハハハ！[r]油断したなァ、女神さんよぉ！
+[k]
+
+[charaTalk F]
+
+＠F：ウルズ
+ジキル……[wt 1.0][charaFace F 12]いや、誰だ……！？
+[k]
+
+[messageOff]
+[charaTalk E,G]
+[charaFace E 1]
+[charaFadein E 0 0,-35]
+[charaFadeout G 0.7]
+[wt 1.0]
+
+＠ハイド
+[#あいつ:ジ　キ　ル]は[#過去を忘れちまったなァ]！[r]だが、[#オレ:ハ イ ド]はてめえを[#覚えている]！
+[k]
+
+[charaFace E 2]
+
+＠ハイド
+勝手にいくぜマスター！[r]てめえは何もせず、そこにいやがれ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_184 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

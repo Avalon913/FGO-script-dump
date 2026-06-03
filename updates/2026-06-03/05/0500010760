@@ -1,0 +1,342 @@
+
+
+＄05-00-01-07-6-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 1012001 1 ベディヴィエール]
+[charaSet B 5016001 1 ジェロニモ]
+[charaSet C 8001900 1 マシュ]
+[charaSet D 1098359110 1 ダビデ]
+[charaSet E 1098348500 1 アズライール]
+[charaSet F 1098346900 1 オルガマリー]
+[charaSet G 1098252700 1 無知性ディノス]
+
+[sceneSet Q 285100 1]
+
+[charaSet T 98115000 1 通信用エフェクト]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaDepth C 3]
+[charaDepth D 4]
+[charaDepth E 5]
+[charaDepth F 6]
+[charaDepth G 7]
+[charaDepth T 20]
+
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_10_LowLevel]
+
+[scene 285100]
+[charaScale Q 1.1]
+[charaFadein Q 0.1 0,-240]
+
+[subCameraOn 2]
+
+[charaLayer B sub #A]
+[charaLayer A sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask05 3 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask05 3 0,0,0,255]
+
+[charaScale B 1.2]
+[charaScale A 1.2]
+
+[charaFace B 0]
+[charaFadein B 0.1 20,270]
+
+[charaFace A 0]
+[charaFadein A 0.1 0,270]
+
+[cueSe SE_26 26_ad1549]
+[cueSeVolume 26_ad1549 0 0]
+[cueSeVolume 26_ad1549 1.0 1.0]
+
+[charaMoveScale Q 1.2 5.0]
+[charaMove Q 0,-260 5.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.0]
+[cueSeVolume 26_ad1549 1.0 0.5]
+[charaFadeout Q 1.0]
+[wt 1.5]
+
+[charaTalk A]
+[subRenderFadein #B 0.2 -250,-230]
+[subRenderMove #B -250,-270 0.2]
+[wt 0.2]
+
+＠ベディヴィエール
+現時点で一時間は下りたでしょうか。[r]小休止を取るべきでしたね。
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.2]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0 -20,270]
+[subRenderFadein #A 0.2 0,-230]
+[subRenderMove #A 0,-270 0.2]
+[wt 0.2]
+
+＠ジェロニモ
+うむ。だが、到着したようだ。地面が見える。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[cueSeVolume 26_ad1549 1.0 1.0]
+[wait fade]
+
+[subRenderFadeout #B 0]
+[charaFadeout B 0]
+[charaFadeout A 0]
+[charaScale B 1.0]
+[charaScale A 1.0]
+[subCameraOff]
+[charaLayer B normal]
+[charaLayer A normal]
+
+[scene 10001]
+[wt 1.0]
+
+[cueSeStop 26_ad1549 3.0]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[fadeout white 0.1]
+[wait fade]
+
+[scene 169100]
+[cueSe SE_23 23_ad1313]
+[cueSeVolume 23_ad1313 0 0]
+[wt 1.0]
+
+[fadein white 1.5]
+[wt 0.5]
+[cueSeVolume 23_ad1313 1.0 0.5]
+[wait fade]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+……ジャングルです！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ダビデ
+次から次へと愉快な場所に出るなぁ。[r]しかしジャングルか。
+[k]
+
+＠ダビデ
+となると出てくるのは恐らく……。
+[k]
+
+[messageOff]
+[cueSeStop 23_ad1313 1.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[shake 0.05 2 3 0.4]
+[se ad58]
+[se ad527]
+[wt 0.4]
+[seStop ad527 0.1]
+[wt 0.6]
+
+[shake 0.05 2 3 0.4]
+[se ad527]
+[wt 0.4]
+[seStop ad527 0.1]
+[wt 0.6]
+
+[se ad527]
+[wt 0.1]
+[shake 0.05 2 3 0.4]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.3]
+[seStop ad527 0.1]
+[seStop ad58 0.1]
+[wt 0.8]
+
+[cueSe SE_22 22_ad1205]
+[shake 0.05 2 3 2.0]
+[effect bit_talk_voice02 160,50]
+[wt 2.4]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_voice02]
+
+[bgm BGM_BATTLE_206 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ダビデ
+やあ、やっぱり恐竜か。
+[k]
+
+？1：これは……ディノス！？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+はい！　ミクトランで遭遇した[r]敵ディノスです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ジェロニモ
+様子を見るに会話は不可能。
+[k]
+
+＠ジェロニモ
+恐らくギルガメッシュ王と同じ、[r]象徴として[#喚:よ]び出されたものだろう。
+[k]
+
+＠ジェロニモ
+打倒するより他あるまい。
+[k]
+
+？1：うん！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アズライール
+だが、彼と違って数で圧す気のようだ。[r]…………。
+[k]
+
+＠アズライール
+……仕方あるまい。[r]必要とあらば手を貸してもいいが……
+[k]
+
+[input selectBranch]
+[messageOff]
+
+[cueSeStop 26_ad1549 0.4]
+[cueSeStop 25_ad1521 0.4]
+[cueSeStop 23_ad1313 0.4]
+[cueSeStop 22_ad1205 0.4]
+[seStop ad58 0.4]
+[seStop ad527 0.4]
+
+[blurOff]
+[cameraMove 0.1 0,0 1.0]
+[shakeStop]
+[subCameraOff]
+[pictureFrameTop]
+
+[effectDestroy bit_talk_voice02]
+
+[charaSet A 1012001 1 ベディヴィエール]
+[charaSet B 5016001 1 ジェロニモ]
+[charaSet C 8001900 1 マシュ]
+[charaSet D 1098359110 1 ダビデ]
+[charaSet E 1098348500 1 アズライール]
+[charaSet F 1098346900 1 オルガマリー]
+[charaSet G 1098252700 1 無知性ディノス]
+[sceneSet Q 285100 1]
+[charaSet T 98115000 1 通信用エフェクト]
+
+[charaDepth A 1]
+[charaDepth B 2]
+[charaDepth C 3]
+[charaDepth D 4]
+[charaDepth E 5]
+[charaDepth F 6]
+[charaDepth G 7]
+[charaDepth T 20]
+
+[scene 169100]
+[bgm BGM_BATTLE_206 0.1]
+
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_10_LowLevel]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[maskin black 1.0]
+[wait mask]
+
+[label selectBranch]
+
+？1：……いえ、結構です！
+
+[charaFaceFade E 3 0.15]
+
+＠アズライール
+……そうか。結構か……。
+[k]
+
+？2：すみません、お願いします！
+
+[charaFace E 4]
+
+＠アズライール
+……よかろう。だが、戦いは常に試練と知れ。[r]つまり、少々減点と見なす。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk F]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+
+＠オルガマリー
+（何となく首に手を当てる）
+[k]
+
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_BATTLE_206 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

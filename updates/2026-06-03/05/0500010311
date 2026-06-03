@@ -1,0 +1,1498 @@
+
+
+＄05-00-01-03-1-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 9935300 1 ソロモン]
+[charaSet B 8001900 1 マシュ]
+[charaSet C 1098348700 1 オルガマリー]
+[charaSet D 2055001 1 ときこ]
+[charaSet E 2055000 1 ウルズ]
+[charaSet F 1098352500 1 ？？？]
+[charaSet G 1098123000 1 ムニエル]
+[charaSet H 1098122900 1 ダストン]
+[charaSet I 1098123100 1 シルビア]
+[charaSet J 98003000 1 Dr.ロマン]
+
+[sceneSet K 145000 1]
+[sceneSet L 268000 1]
+[sceneSet M 269300 1]
+[sceneSet N 107900 1]
+[sceneSet O 185300 1]
+[sceneSet P 161600 1]
+[sceneSet Q 10000 1]
+
+[charaSet R 8001000 1 マシュ_シールダー]
+[charaSet S 9001001 1 ジャンヌ・ダルク]
+[charaSet T 1005001 1 ネロ・クラウディウス]
+[charaSet U 4003001 1 フランシス・ドレイク]
+[charaSet V 1009001 1 モードレッド]
+
+[sceneSet W 105500 1]
+
+[charaSet X 98115000 1 エフェクト用]
+[charaSet Y 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth Q 1]
+[charaDepth K 1]
+[charaDepth L 2]
+[charaDepth A 3]
+[charaDepth F 4]
+[charaDepth G 5]
+[charaDepth H 6]
+[charaDepth I 7]
+[charaDepth B 8]
+[charaDepth C 9]
+[charaDepth D 10]
+[charaDepth E 11]
+[charaDepth J 12]
+[charaDepth Y 25]
+[charaDepth Z 26]
+
+[scene 10000]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[charaPut Z 1]
+[charaEffect Z bit_talk_06]
+[charaScale L 1.2]
+[charaFadein L 0.1 120,-220]
+
+[subCameraOn 4]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[subCameraFilter #A maskEdge cut359_mask16 30 0,0,0,255 1]
+[subCameraFilter #B through]
+[subCameraFilter #C normal]
+[subCameraFilter #D maskEdge cut359_mask20 30 0,0,0,255 1]
+[charaLayer K sub #A]
+[charaLayer C sub #A]
+[charaLayer D sub #B]
+
+[charaLayer M sub #C]
+[charaLayer N sub #C]
+[charaLayer O sub #C]
+[charaLayer P sub #C]
+
+[charaLayer R sub #C]
+[charaLayer S sub #C]
+[charaLayer T sub #C]
+[charaLayer U sub #C]
+[charaLayer V sub #C]
+[charaLayer X sub #C]
+
+[charaLayer W sub #D]
+[charaDepth W 1]
+
+[charaDepth R 12]
+[charaDepth M 11]
+[charaDepth S 10]
+[charaDepth N 9]
+[charaDepth T 8]
+[charaDepth O 7]
+[charaDepth U 6]
+[charaDepth P 5]
+[charaDepth V 4]
+[charaDepth X 24]
+
+[charaScale K 1.2]
+[charaFace C 0]
+[charaFadeinFSR C 0 100,150]
+[charaFadein K 0 0,0]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_4 0.1]
+
+[wt 2.0]
+
+＠ソロモン
+……まったく。[r]……中身がないにも程があったな。
+[k]
+
+[messageOff]
+[charaShake A 0.05 3 3 0.6]
+[wt 1.2]
+[charaMove A 0,-30 0.5]
+[wt 0.5]
+[se ad775]
+[wt 1.0]
+
+？1：ソロモン……
+？！
+
+[messageOff]
+[charaFace A 3]
+[se ad7]
+[charaMove A 0,0 0.3]
+[wt 0.3]
+
+＠ソロモン
+……！
+[k]
+
+？1：！？
+？！
+
+[charaFace A 1]
+
+＠ソロモン
+[line 6]。[r][line 6]。
+[k]
+
+[messageOff]
+[charaFaceFade A 2 0.4]
+[wt 1.2]
+[se ad52]
+[charaSpecialEffect A flashErasure 1 2.0]
+[wait charaSpecialEffect A]
+[charaEffectStop Z bit_talk_06]
+[wt 1.5]
+[charaFadeout A 0]
+
+[charaTalk B]
+[charaFace B 37]
+[charaFadein B 0.1 1]
+
+＠マシュ
+や……やりました！[r]魔術王ソロモン、撃破です！
+[k]
+
+＠マシュ
+マスター！
+[k]
+
+[messageOff]
+[charaTalk B,C]
+[charaFace C 13]
+[charaMoveEase L -200,-220 1.0 easeOutSine]
+[charaMoveEase B -300,0 1.0 easeOutSine]
+[subRenderFadein #A 0.5 500,-155]
+[subRenderMoveEase #A 200,-155 1.0 easeOutSine]
+[wt 1.5]
+
+＠オルガマリー
+……正直！　思ったより[#呆気:あっけ]なかったわね！[wt 1.2][charaFace C 16][r]てっきり死からの蘇生すら可能かと思っていたけど！
+[k]
+
+[charaFace C 21]
+
+＠オルガマリー
+でも、やったわ！　これで世界は救われる……。[wt 1.0][charaFace C 1][r]人理修復、成立よ！
+[k]
+
+[charaFace C 12]
+
+＠オルガマリー
+やったわね、[#ときこさん]！
+[k]
+
+[bgmStop BGM_EVENT_4 1.0]
+
+[messageOff]
+[charaTalk C,D]
+[subRenderFadein #B 0 2,0]
+[charaMoveEase K -150,0 0.6 easeOutSine]
+[charaMoveEaseFSR C -50,150 0.6 easeOutSine]
+[charaFace D 9]
+[charaPutFSR D 550,0]
+[charaMoveEaseFSR D 400,0 0.6 easeOutSine]
+[charaFadeTime D 0.6 1.0]
+[wt 1.0]
+
+＠ときこ
+そうですね。[r]何度見ても劇的で、素晴らしい瞬間です。
+[k]
+
+[charaFace D 0]
+
+[bgm BGM_WHITE_1 2.0]
+＠ときこ
+それでは、そろそろおやすみです。[r]あなたたちは見事、人理を守り抜きました。
+[k]
+
+＠ときこ
+七つの特異点を修正し、[r]時間神殿にて偽典ソロモンと対峙。
+[k]
+
+[charaFace D 9]
+
+＠ときこ
+素晴らしい結末に至りました。[r]素晴らしい終焉に辿り着きました。
+[k]
+
+＠ときこ
+ここから先の平穏な、[r]素晴らしき余生は想像で補いましょう。
+[k]
+
+＠ときこ
+それは未来の話。私たちには関係ないのですから。
+[k]
+
+[charaFace C 20]
+
+＠オルガマリー
+……ときこさん。何を言っているの？
+[k]
+
+＠オルガマリー
+……。[r]……。
+[k]
+
+[bgmStop BGM_WHITE_1 1.5]
+[charaFace C 9]
+[charaFace B 14]
+
+＠オルガマリー
+いえ、そもそも……[#貴方誰なのよ]……！
+[k]
+
+[messageOff]
+[charaTalk off]
+[cueSe SE_25 25_ade1265]
+[wt 1.2]
+
+？1：（……そうだ、この人は……いや、このサーヴァントは）
+？！
+
+[messageOff]
+[cueSe SE_21 21_ade665]
+[charaFace D 11]
+[charaMove D 0,0 2.4]
+[charaRelativeLoopMove D 2 0,-5 0,0 0.4 0.4 3]
+[wt 1.4]
+[seStop 21_ade665 1.5]
+[wt 2.2]
+[charaTalk on]
+[charaTalk D]
+
+＠ときこ
+では[line 3]あるべき[#場所:か　こ]に戻りましょうか。
+[k]
+
+？1：（敵だ……！）
+？！
+
+[charaTalk B]
+[charaFace B 2]
+
+＠マシュ
+……ッ！　マスター！
+[k]
+
+[messageOff]
+[se ad574]
+[fadeout white 0.5]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout D 0.1]
+[charaFadeout K 0.1]
+[charaFadeout C 0.1]
+[charaFadeout L 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.2]
+
+[cueSe SE_26 26_ad1558]
+[backEffect bit_talk_urd_clock_02]
+[wt 2.4]
+[cueSeVolume 26_ad1558 1.0 0.6]
+
+[bgm BGM_MAP_133 0.1]
+
+＠ウルズ
+我が名はウルズ。あれ、この紹介何回目でしたっけ。[r]三回目でしたか、確か。
+[k]
+
+＠ウルズ
+では、戻りましょう。帰りましょう。[r]私と共に。安寧の過去へ。
+[k]
+
+[charaFace E 11]
+[charaEffectEdgeBlur E DED887 DED887 3 1]
+[cueSe SE_22 22_ad1213]
+
+＠ウルズ
+宝具展開[line 3]『[#旧き過去を紡ぐ糸:ウ ル ザ ル ス ラ ズ ル ・ フ ォ ル ン]』
+[k]
+
+[messageOff]
+[cueSeVolume 22_ad1213 1.5 0.3]
+[charaPut Y 1]
+[charaPut Z 1]
+[cueSe SE_26 26_ad1559]
+[charaEffect Y bit_talk_urd_threads]
+[charaEffect Z bit_talk_urd_threads 0,0 H]
+[backEffect bit_talk_urd_threads -80,0]
+[backEffect bit_talk_urd_threads 80,0 H]
+[charaPut Q 1]
+[charaFadeTime Q 0.8 0.2]
+[wt 1.5]
+
+＠ウルズ
+過去を紡いだ糸よ。[r]巻き戻りなさい、帰りなさい、辿りなさい。
+[k]
+
+＠ウルズ
+約束された勝利の日々へ。[r]決して[#躓:つまず]かぬフィールドへ。
+[k]
+
+＠ウルズ
+帰りましょう、帰りましょう。[wt 1.0][charaFace E 4][r]……ああ、それから不安は解消しておきましょう。
+[k]
+
+[charaFace E 12]
+
+＠ウルズ
+[#未来は安泰です]。
+[k]
+
+＠ウルズ
+それでは最後に挨拶を。最初に挨拶を。[r]こんにちは、初めまして、よろしくお願いします。
+[k]
+
+[charaFace E 9]
+
+＠ウルズ
+[line 3]では、また。
+[k]
+
+[bgmStop BGM_MAP_133 1.5]
+
+[messageOff]
+[cueSeStop 26_ad1558 1.0]
+[cueSeStop 22_ad1213 1.0]
+[cueSeStop 26_ad1559 1.0]
+[fowardEffect bit_talk_zero_sail_end_light]
+[cueSe SE_24 24_ade1024]
+[se ad743]
+[wt 3.5]
+[fadeout white 0.5]
+[wait fade]
+
+[charaEffectEdgeBlurDestroy E]
+[seStop ad743 1.0]
+[cueSeStop 24_ade1024 1.5]
+[fowardEffectDestroy bit_talk_zero_sail_end_light]
+[charaEffectDestroy Y bit_talk_urd_threads]
+[charaEffectDestroy Z bit_talk_urd_threads]
+[backEffectDestroy bit_talk_urd_clock_02]
+[backEffectDestroy bit_talk_urd_threads]
+[charaFadeout E 0.1]
+[charaFadeout Q 0.1]
+[scene 10000]
+[wt 0.2]
+
+[fadein white 1.0]
+[wait fade]
+
+[se ad144]
+[wt 3.5]
+
+＠？？？
+フォウ、フォーウ。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[wait fade]
+[wt 1.0]
+[fadein black 0.1]
+[wait fade]
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+
+[scene 285700]
+
+[blur lens 0.1 2 3]
+[wt 1.0]
+[wipein openEye 0.7 1.0]
+[wait wipe]
+[wt 0.5]
+
+[wipeout openEye 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+[wipein openEye 1.0 1.0]
+[blurOff lens 1.0]
+[wait wipe]
+[wt 3.0]
+
+[maskout white 1.0]
+[wait mask]
+
+[sceneSet B 183100 1]
+[charaSet F 7014000 1 ナイチンゲール]
+[charaLayer F sub #C]
+[charaLayer B sub #C]
+[charaDepth F 2]
+[charaDepth B 1]
+
+[sceneSet Q 184500 1]
+[charaLayer Q sub #C]
+[charaDepth Q 3]
+
+[charaLayer Y sub #C]
+[charaDepth Y 23]
+
+[charaScale X 1.0]
+[charaPut X 130,-120]
+[charaEffect X bit_talk_movie_film_fs]
+[charaScale Y 1.0]
+[charaPut Y -140,-50]
+[charaEffect Y bit_talk_movie_film_fs]
+
+[charaFadein M 0.1 0,-400]
+[charaFadein N 0.1 0,100]
+[charaFadein O 0.1 0,600]
+[charaFadein P 0.1 0,1100]
+[charaFadein Q 0.1 0,1600]
+[charaFadein B 0.1 0,2100]
+
+[charaScale R 0.8]
+[charaScale S 0.8]
+[charaScale T 0.8]
+[charaScale U 0.8]
+[charaScale V 0.8]
+[charaScale F 0.8]
+
+[charaTalk off]
+[charaFace R 0]
+[charaFace S 0]
+[charaFace T 0]
+[charaFace U 0]
+[charaFace V 0]
+[charaFace F 0]
+[charaFadein R 0 0,-272]
+[charaFadein S 0 0,213]
+[charaFadein T 0 0,800]
+[charaFadein U 0 0,1220]
+[charaFadein V 0 0,1780]
+[charaFadein F 0 0,2310]
+
+[subRenderScale #C 1.5]
+[subCameraRoll #C -7 0,0]
+[subRenderFadein #C 0.1 0,210]
+
+[scene 10000]
+[fowardEffect bit_sepia01_depth_fs_02]
+[wt 1.0]
+
+[maskin white 1.0]
+[se ade306]
+[wt 1.0]
+[charaMoveEase M 0,-2900 3.3 easeOutSine]
+[charaMoveEase R 0,-2772 3.3 easeOutSine]
+[charaMoveEase N 0,-2400 3.3 easeOutSine]
+[charaMoveEase S 0,-2387 3.3 easeOutSine]
+[charaMoveEase O 0,-1900 3.3 easeOutSine]
+[charaMoveEase T 0,-1700 3.3 easeOutSine]
+[charaMoveEase P 0,-1400 3.3 easeOutSine]
+[charaMoveEase U 0,-1280 3.3 easeOutSine]
+[charaMoveEase Q 0,-900 3.3 easeOutSine]
+[charaMoveEase V 0,-720 3.3 easeOutSine]
+[charaMoveEase B 0,-400 3.3 easeOutSine]
+[charaMoveEase F 0,-190 3.3 easeOutSine]
+[wait mask]
+
+[wt 2.8]
+
+[maskout white 1.0]
+[seStop ade306 1.0]
+[wait mask]
+
+[charaFadeout M 0.1]
+[charaFadeout R 0.1]
+[charaFadeout N 0.1]
+[charaFadeout S 0.1]
+[charaFadeout O 0.1]
+[charaFadeout T 0.1]
+[charaFadeout P 0.1]
+[charaFadeout U 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout V 0.1]
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[charaFadeout X 0.1]
+[charaFadeout Y 0.1]
+
+[charaLayer K normal]
+[charaLayer M normal]
+[charaLayer N normal]
+[charaLayer O normal]
+[charaLayer P normal]
+[charaLayer Q normal]
+[charaLayer B normal]
+[charaLayer R normal]
+[charaLayer S normal]
+[charaLayer T normal]
+[charaLayer U normal]
+[charaLayer V normal]
+[charaLayer F normal]
+[charaLayer X normal]
+[charaLayer Y normal]
+[charaLayer C normal]
+[charaLayer D normal]
+
+[fowardEffectDestroy bit_sepia01_depth_fs_02]
+[charaEffectDestroy X bit_talk_movie_film_fs]
+[charaEffectDestroy Y bit_talk_movie_film_fs]
+[subRenderFadeout #C 0.1]
+[subRenderScale #C 1.0]
+[subCameraRoll #C 0 0,0]
+[wt 1.0]
+
+[maskin white 1.0]
+[wait mask]
+[wt 1.0]
+
+＠オルガマリー
+[line 3][%1]、[r][%1]！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[scene 10000]
+[wt 0.1]
+[fadein black 0.1]
+[wait fade]
+[wipeout upToDown 0.1 1.0]
+[wait wipe]
+
+[charaSet B 1098330800 1 マシュ]
+[charaSet G 1098123000 1 ムニエル]
+[charaDepth G 5]
+[scene 145000]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[se ad7]
+[wipein downToUp 0.3 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaFace C 10]
+
+＠オルガマリー
+……ちょっと？　まさかミーティング中に[r]居眠りしていた訳じゃないでしょうね？
+[k]
+
+[charaFace C 11]
+
+＠オルガマリー
+わたしの一番嫌いなもの、知っているかしら？[r]ミーティング途中で居眠りする輩よ！
+[k]
+
+？1：ち、違います！
+？2：話はちゃんと聞いてました！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠マシュ
+それはわたしからも保証します！
+[k]
+
+[charaFace B 6]
+
+＠マシュ
+ただ、その……わたしも、[r]先輩と同じタイミングだったのですが……。
+[k]
+
+[charaFace B 4]
+
+＠マシュ
+何か……[#時間が跳躍したような]、[r]そんな感覚だったので……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠オルガマリー
+……え、マシュも？
+[k]
+
+[charaFace C 12]
+
+＠オルガマリー
+……。[r]……。
+[k]
+
+[charaFace C 18]
+
+＠オルガマリー
+ミーティングは一旦休止します。
+[k]
+
+[charaFace C 7]
+
+＠オルガマリー
+その代わり、各自で何か異常な事態がなかったか、[r]レポートをお願い。
+[k]
+
+＠オルガマリー
+もしかすると、[r]何らかの魔術行使を受けているかもしれないわ。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[scene 105600]
+[pictureFrame cut063_cinema]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠ムニエル
+異常な事態ねぇ……。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 0,-50]
+[wt 0.4]
+
+＠ダストン
+そもそも標準が異常事態だったせいで、[r]見逃していたが……。
+[k]
+
+＠ダストン
+確かに何かおかしい、と考えられる点はある。[r]既視感というか……。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.4 0,-50]
+[wt 0.4]
+
+＠シルビア
+そもそも、私たちいつのまに食事する仲に[r]なったのかしら。それも異常事態？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 0,-50]
+
+＠ムニエル
+それは……あれだよ。生存者同士で対立しても、[r]面白くも何ともないからな……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 0,-50]
+
+＠シルビア
+でも、何かきっかけがあったと思わない？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 0,-50]
+
+＠ムニエル
+そう言われると……何だっけ。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout G 0.1]
+
+[scene 284100]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_REQUIEM 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠オルガマリー
+……カルデアが今まで攻略したのは、[r]第一特異点オルレアン……第二特異点ローマ……。
+[k]
+
+＠オルガマリー
+順調にやってこれたわ。[r]死傷者なし。
+[k]
+
+[charaFace C 2]
+
+＠オルガマリー
+[%1]……。[wt 0.7][charaFace C 9][r]メンタルも身体面も問題なし。
+[k]
+
+[charaFace C 0]
+
+＠オルガマリー
+よくやってくれてるわね、本当に。
+[k]
+
+[charaFace C 3]
+
+＠オルガマリー
+マシュ・キリエライト……。[r]うん、こちらも問題ないわ。
+[k]
+
+[charaFace C 9]
+
+＠オルガマリー
+恨まれてない……かしら。恨まれてないわよね、多分。
+[k]
+
+[charaFace C 0]
+
+＠オルガマリー
+他、生存しているカルデアの職員も問題ないわね。[r]さすがに不安の兆候はあるけど……。
+[k]
+
+＠オルガマリー
+これは許容範囲ね。異常は……ないわ。[r]順調そのもの。何もかも。
+[k]
+
+[charaFace C 7]
+
+＠オルガマリー
+……。[r]……。
+[k]
+
+[charaFace C 9]
+[bgmStop BGM_REQUIEM 1.0]
+
+＠オルガマリー
+[line 3]異常事態ではない。[r]でも、何かが。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[pictureFrame]
+
+[charaSet A 2013000 1 アーラシュ]
+[charaSet E 6025001 1 山の翁]
+[charaSet F 98107800 1 ラフム]
+[charaSet G 98106000 1 キングゥ]
+[charaSet H 99355200 1 人王ゲーティア]
+
+[charaSet I 1098359310 1 マシュ_新制服_全身]
+[charaSet K 1098359210 1 オルガマリー_全身]
+[charaSet L 1098359510 1 ダ・ヴィンチ_全身]
+[charaSet M 1098359410 1 ロマニ_全身]
+
+[sceneSet N 241900 1]
+[sceneSet O 29300 1]
+[sceneSet P 107800 1]
+[sceneSet Q 33302 1]
+[sceneSet R 36101 1]
+
+[charaDepth N 1]
+[charaDepth A 2]
+[charaDepth O 3]
+[charaDepth E 4]
+[charaDepth P 5]
+[charaDepth G 6]
+[charaDepth Q 7]
+[charaDepth F 8]
+[charaDepth R 9]
+[charaDepth H 10]
+[charaDepth K 11]
+[charaDepth M 12]
+[charaDepth L 13]
+[charaDepth I 14]
+
+[scene 106000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+
+＠Dr.ロマン
+はぁ……異常事態かぁ……。[r]まあ、今が異常といえば異常なんだけどね。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+そうですね。[r]ダ・ヴィンチちゃんはどうしてました？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0.1 1]
+[wt 0.6]
+
+[charaFace J 0]
+
+＠Dr.ロマン
+『異常だなんて天才には有り得ないだろう？』[r]だってさ。
+[k]
+
+＠Dr.ロマン
+いや天才そのものが異常だとしたら、ダ・ヴィンチちゃん[r]自体が特異点状態なのかもしれないが……。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ダ・ヴィンチちゃんが聞いたら怒りますよ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0.1 1]
+
+＠Dr.ロマン
+おっと、[#剣呑:けんのん]剣呑。[wt 0.8][charaFace J 8][r]ボクの方は何も異常がない、と報告しておくよ。
+[k]
+
+[charaFace J 1]
+
+＠Dr.ロマン
+じゃ、そういうことで！[r]キミたちもあまり深く考えずに、しっかり休んでね！
+[k]
+
+[charaFace J 4]
+
+＠Dr.ロマン
+所長も疲労がたまって神経質になってるんだろう。[r]後でアロマセラピーでも勧めておくよ。
+[k]
+
+[messageOff]
+[se ad95]
+[seStop ad95 2.0]
+[charaFadeout J 0.4]
+[wt 2.0]
+
+[se ad8]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠マシュ
+うーん……ドクター、のんきですね……。
+[k]
+
+？1：そうだね……
+？！
+
+[charaFace B 0]
+
+＠マシュ
+先輩は何か異常を感知したことなど、ありますか？
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[fadeout white 0.7]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 184200]
+[effect bit_sepia01_depth_fs]
+[pictureFrame cut063_cinema]
+[wt 0.3]
+
+[fadein white 0.7]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk off]
+[charaScale N 1.01]
+[charaFace A 0]
+[charaFadein A 0.3 0,-50]
+[charaFadein N 0.3 0,-200]
+[wt 0.8]
+
+[charaScale O 1.01]
+[charaFace E 0]
+[charaFadein E 0.3 0,-50]
+[charaFadein O 0.3 0,-200]
+[wt 0.8]
+
+[charaScale P 1.01]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.3 0,-50]
+[charaFadein P 0.3 0,-200]
+[wt 0.8]
+
+[charaScale Q 1.01]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.3 0,-50]
+[charaFadein Q 0.3 0,-200]
+[wt 0.8]
+
+[charaScale R 1.01]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.3 0,-50]
+[charaFadein R 0.3 0,-200]
+[wt 1.0]
+
+[fadeout white 0.7]
+[wait fade]
+
+[pictureFrame]
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[effectDestroy bit_sepia01_depth_fs]
+
+[scene 106004]
+[wt 0.3]
+
+[fadein white 0.7]
+[wait fade]
+
+＠
+[line 3]認められない。
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.6]
+
+？1：……………………いや、何も
+？！
+
+[charaFace B 5]
+
+＠マシュ
+そうでしたか……。
+[k]
+
+＠マシュ
+わたしは何か……何かが違っているような、[r]そんな感じがするのですが……。
+[k]
+
+[charaFace B 11]
+
+＠マシュ
+……すみません、頭を整理しますね。[wt 1.2][charaFace B 10][r]おやすみなさい、先輩。
+[k]
+
+[bgmStop BGM_EVENT_70 2.0]
+
+[messageOff]
+[se ad95]
+[seStop ad95 2.0]
+[charaFadeout B 0.4]
+[wt 2.0]
+
+[se ad8]
+[wt 5.0]
+
+[se ade302]
+[scene 106003 0.2]
+[wt 1.0]
+
+？1：寝よう……
+？！
+
+[cueSe SE_24 24_ade981]
+[se ad661]
+[wt 1.5]
+
+[wipeout openEye 1.0 1.0]
+[wait wipe]
+
+[scene 10000]
+[wt 1.0]
+
+[wipein openEye 1.0 1.0]
+[wait wipe]
+
+[bgm BGM_MAP_140 2.0]
+
+＠
+[line 3]眠れない。眠れないから、考える。[r]異常があるのは間違いない。
+[k]
+
+＠
+何故なら、覚えている。[r][#はっきりと思い出した]。
+[k]
+
+＠
+[&オレ:わたし]たちが、[r]時間神殿でソロモンに勝利したのは……。
+[k]
+
+＠
+[#あの時で四度目だ]。
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[fadeout white 0.7]
+[wait fade]
+
+[charaSet A 9935300 1 ソロモン]
+[sceneSet L 268000 1]
+[charaSet Z 98115000 1 エフェクト用]
+[charaDepth L 2]
+[charaDepth A 3]
+[charaDepth Z 26]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[charaPut Z 1]
+[charaEffect Z bit_talk_06]
+[charaScale L 1.2]
+[charaFadein L 0.1 120,-220]
+
+[effect bit_sepia01_depth_fs_02]
+[wt 0.3]
+
+[fadein white 0.7]
+[wait fade]
+[wt 0.5]
+
+＠ソロモン
+[line 3]この戦いは、四度目だ。
+[k]
+
+[messageOff]
+[fadeout white 0.7]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout L 0.1]
+[charaPut Z 2000,2000]
+[charaEffectDestroy Z bit_talk_06]
+[effectDestroy bit_sepia01_depth_fs_02]
+[wt 0.1]
+
+[charaSet A 2013000 1 アーラシュ]
+[charaSet L 1098359510 1 ダ・ヴィンチ_全身]
+[charaDepth A 2]
+[charaDepth L 13]
+[wt 0.2]
+
+[fadein white 0.7]
+[wait fade]
+
+＠
+ソロモンの最後の言葉が、[r]自分の記憶を繋いでくれた。
+[k]
+
+
+＠
+だから今は、異常事態なのだ。[r]でも……。
+[k]
+
+？1：（誰に言えばいい？）
+？！
+
+＠
+懸念点が一つ、ある。
+[k]
+
+＠
+異常があるとすれば、それはカルデア中に[r]余すところなく広がっている。
+[k]
+
+＠
+所長、ドクター、スタッフ、マシュ。
+[k]
+
+＠
+つまり[line 3][#監視されている]。
+[k]
+
+＠
+マシュと話し合いたかった。[r]ドクターや所長に訴えたかった。
+[k]
+
+＠
+[#でもそれをしたらダメになる]。
+[k]
+
+＠
+……そうだ。ソロモ……いや、違う。[r]ゲーティアも、自分にしか聞こえないように[#囁:ささや]いた。
+[k]
+
+＠
+あれは、誰かが監視していることに気付いたからだ。[r]それは誰だ……誰だ？
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[scene 284200]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[cameraFilter gray]
+[wt 0.5]
+
+[se ad231]
+[fadein black 0.5]
+[wait fade]
+
+＠
+[line 3]決まっている。[#彼女]以外に有り得ない。
+[k]
+
+＠
+何故なら、誰も[#三回目の話をしていない]。[r]なのに[&オレ:わたし]だけは覚えている。
+[k]
+
+＠
+それは、多分……彼女が知らないからだ。[r][&オレ:わたし]が、知っていることを。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[cameraFilter normal]
+[charaFadeout D 0.1]
+
+[scene 10000]
+
+
+[wt 0.5]
+
+[fadein black 0.1]
+[wait fade]
+
+＠
+だから、誰かに話をする隙はある。[r]でも、誰彼構わず話すという訳にはいかない。
+[k]
+
+＠
+[line 3]誰に話すべきだろう？
+[k]
+
+[charaScale K 1.2]
+[charaScale M 1.2]
+[charaFace K 0]
+[charaFadein K 0.4 150,0]
+[charaFace M 0]
+
+＠
+オルガマリー所長。[wt 1.0][charaMoveScaleEase K 0.7 1.0 easeOutCubic][charaMoveEase K 150,-60 1.0 easeOutCubic][wt 1.6][charaFadeinFSL M 0.4 -330,0][r]ドクター・ロマン。
+[k]
+
+[messageOff]
+[charaMoveScaleEase M 0.7 1.0 easeOutCubic]
+[charaMoveEaseFSL M -360,-30 1.0 easeOutCubic]
+[wt 1.6]
+[charaScale L 1.2]
+[charaScale I 1.2]
+[charaFace L 0]
+[charaFadein L 0.4 -150,0]
+[charaFace I 0]
+
+＠
+レオナルド・ダ・ヴィンチ。[wt 1.0][charaMoveScaleEase L 0.7 1.0 easeOutCubic][charaMoveEase L -150,-60 1.0 easeOutCubic][wt 1.6][charaFadein I 0.4 350,0][r]マシュ・キリエライト。
+[k]
+
+[messageOff]
+[charaMoveScaleEase I 0.7 1.0 easeOutCubic]
+[charaMoveEase I 350,-65 1.0 easeOutCubic]
+[wt 1.6]
+
+
+＠
+この中の誰かを掴まえて、こっそりと話す……。
+[k]
+
+[messageOff]
+[charaCrossFade I 1098359300 0 0.3]
+[wait charaCrossFade I]
+
+
+＠
+……所長とドクター、[r]それにダ・ヴィンチちゃんは無理だ。
+[k]
+
+[messageOff]
+[charaCrossFade L 1098359500 0 0.3]
+[wait charaCrossFade L]
+
+＠
+所長とドクターにこっそり話す、[r]ということ自体がそもそもかなり難しい。
+[k]
+
+[messageOff]
+[charaCrossFade M 1098359400 0 0.3]
+[charaCrossFade K 1098359200 0 0.3]
+[charaCrossFade L 1098359510 0 0.3]
+[wait charaCrossFade L]
+[wait charaCrossFade K]
+[wait charaCrossFade M]
+
+＠
+ダ・ヴィンチちゃんは論外だ。
+[k]
+
+[messageOff]
+[charaCrossFade L 1098359500 0 0.3]
+[charaCrossFade I 1098359310 0 0.3]
+[wait charaCrossFade I]
+[wait charaCrossFade L]
+[wt 0.4]
+[charaTalk I]
+[charaFadeout M 0.4]
+[charaFadeout L 0.4]
+[charaFadeout K 0.4]
+[charaMoveScaleEase I 1.2 1.5 easeOutCubic]
+[charaMoveEase I 0,0 1.5 easeOutCubic]
+[wt 1.6]
+
+＠
+となるとマシュだ。
+[k]
+
+＠
+正直、彼女との情報交換で[#漏洩:ろうえい]してしまうなら、[r]もうお手上げだ。
+[k]
+
+＠
+彼女を信頼しないという選択肢もない。[r]ただ、懸念点はもう一つ。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[fadein black 0.1]
+[wait fade]
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 106001]
+[wt 0.5]
+
+[wipein openEye 0.7 1.0]
+[wait wipe]
+[wt 1.0]
+
+？1：（監視の目は……この部屋にもある[&だろうな:よね]……）
+？！
+
+＠
+二人きりでの会話も、恐らく把握されている。[r]そんな気がしてならない。
+[k]
+
+＠
+ただ……ゲーティアが耳元で囁いたこと、[r]あれだけはときこさんは把握していないようだ。
+[k]
+
+＠
+だから、カルデア内部で行動を起こしたりしてはいけない。[r]機会があるとすれば、第六特異点。
+[k]
+
+＠
+第六特異点といえば[line 3]
+[k]
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[fadeout white 0.7]
+[wait fade]
+
+[pictureFrame cut063_cinema]
+[charaSet F 5012001 1 ニトクリス]
+[charaDepth F 1]
+
+[scene 143500]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+[effect bit_sepia01_depth_fs]
+[wt 0.3]
+
+[fadein white 0.7]
+[wait fade]
+
+[wt 1.0]
+
+[fadeout white 0.4]
+[wait fade]
+
+[charaFadeout F 0.1]
+[scene 284500]
+[wt 0.5]
+
+[fadein white 0.4]
+[wait fade]
+
+[wt 1.0]
+
+[fadeout white 0.7]
+[wait fade]
+
+[effectDestroy bit_sepia01_depth_fs]
+
+[scene 106001]
+[pictureFrame]
+[wt 0.3]
+
+[fadein white 0.7]
+[wait fade]
+[wt 1.0]
+
+？1：（あの砂漠なら、チャンスはあるはず……）
+？！
+
+＠
+ただ、それまでは大人しくしていなければいけない。[r]大人しく、慎ましく。
+[k]
+
+＠
+何事もなかったかのように、[r]ありふれた日常を送らなければ……。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 1.0]
+[bgmStop BGM_MAP_140 1.0]
+[wait fade]
+
+[charaLayer D sub #D]
+[charaDepth D 2]
+[charaScale D 0.85]
+[charaScale W 1.2]
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 0,100]
+[charaFadein W 0.1 -100,-50]
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[subRenderFadein #D 0.5 150,-150]
+[wt 1.5]
+
+[se ade422 0.6]
+[seStop ade422 2.0]
+[charaMove D -30,100 0.4]
+[charaFadeout D 0.4]
+[wt 2.5]
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

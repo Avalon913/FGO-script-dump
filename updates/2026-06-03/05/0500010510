@@ -1,0 +1,715 @@
+
+
+
+
+＄05-00-01-05-1-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 2055000 1 ウルズ]
+[charaSet B 2055000 1 ウルズ（演出用）]
+[charaSet C 8001900 1 マシュ]
+
+[masterBranch lblmst01a lblmst01b]
+[label lblmst01a]
+[charaSet D 1098259460 1 主人公_決戦礼装（男）_表情差分あり]
+[branch lblmst01]
+[label lblmst01b]
+[charaSet D 1098259470 1 主人公_決戦礼装（女）_表情差分あり]
+[label lblmst01]
+
+[charaSet E 9935300 1 ソロモン]
+[charaSet F 98003000 1 Dr.ロマン]
+[charaSet G 1098330800 1 マシュ]
+[charaSet H 1098348700 1 オルガマリー]
+[charaSet I 5016001 1 ジェロニモ]
+
+[sceneSet O 268000 1]
+[sceneSet P 268000 1]
+[sceneSet Q 106000 1]
+
+[imageSet U cut106_trans 1]
+[charaFilter U silhouette FFFFFF80]
+
+[charaSet V 98115000 1 エフェクト用]
+[charaSet W 98115000 1 エフェクト用2]
+[charaSet X 98115000 1 エフェクト用3]
+
+[sceneSet Y 10000 1]
+[charaScale Y 1.1]
+[sceneSet Z 10000 1]
+[charaScale Z 1.1]
+
+[charaTalk depthOff]
+[charaDepth O 1]
+[charaDepth P 1]
+[charaDepth Q 1]
+[charaDepth Y 2]
+[charaDepth Z 2]
+[charaDepth A 3]
+[charaDepth B 3]
+[charaDepth C 3]
+[charaDepth D 3]
+[charaDepth E 3]
+[charaDepth F 3]
+[charaDepth G 3]
+[charaDepth H 3]
+[charaDepth U 10]
+[charaDepth V 15]
+[charaDepth W 15]
+[charaDepth X 15]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 10000]
+
+[subCameraOn 1]
+
+[charaLayer C sub #A]
+[charaLayer O sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask05 30 0,0,0,255 1]
+
+[subRenderDepth #A 2]
+
+[subRenderScale #A 1.0]
+
+[charaDepth O 1]
+[charaDepth C 2]
+
+[charaScale O 1.2]
+[charaScale C 1.2]
+
+[charaFace C 18]
+[charaFadein C 0 -75,225]
+[charaFadein O 0 200,-50]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+[cueSe SE_26 26_ad1558 0 0]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_133 0.1]
+
+[cueSeVolume 26_ad1558 1.0 0.7]
+[backEffect bit_talk_urd_clock_02]
+
+＠ウルズ
+それでは最後に挨拶を。最初に挨拶を。[r]こんにちは、初めまして、よろしくお願いします。
+[k]
+
+[messageOff]
+[charaTalk C]
+[subRenderFadeinFSL #A 0.3 -375,-250]
+[wt 0.4]
+
+＠マシュ
+ときこさん……！？[r]一体、何を[line 3]
+[k]
+
+[messageOff]
+[charaTalk C,A]
+[subRenderFadeout #A 0.3]
+[wt 0.45]
+
+[charaFace A 0]
+
+＠ウルズ
+宝具展開[line 3]『[#旧き過去を紡ぐ糸:ウ ル ザ ル ス ラ ズ ル ・ フ ォ ル ン]』
+[k]
+
+[messageOff]
+
+[charaDepth A 5]
+
+[cueSe SE_26 26_ad1559]
+[charaPut V 1]
+[charaEffect V bit_talk_urd_threads]
+[charaEffect V bit_talk_urd_threads 0,0 H]
+[backEffect bit_talk_urd_threads -80,0]
+[backEffect bit_talk_urd_threads 80,0 H]
+[charaPut Z 1]
+[charaFadeTime Z 0.8 0.2]
+[wt 2.0]
+
+[charaTalk C]
+[charaFace C 2]
+[subRenderFadeinFSL #A 0.3 -375,-250]
+[wt 0.4]
+
+＠マシュ
+マスター！
+[k]
+
+？1：……
+？！
+
+[bgmStop BGM_MAP_133 1.5]
+
+[messageOff]
+[cueSeStop 26_ad1559 1.5]
+[cueSeStop 26_ad1558 1.5]
+[fowardEffect bit_talk_zero_sail_end_light]
+[cueSe SE_24 24_ade1024]
+[se ad743]
+[wt 3.5]
+
+[fadeout white 0.5]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+[charaFadeout A 0.1]
+[charaFadeout Z 0.1]
+[charaPut V 2000,2000]
+[charaEffectDestroy V bit_talk_urd_threads]
+[backEffectDestroy bit_talk_urd_threads]
+[backEffectDestroy bit_talk_urd_clock_02]
+[fowardEffectDestroy bit_talk_zero_sail_end_light]
+
+[charaFadeout C 0]
+[charaFadeout O 0]
+
+[charaLayer C normal]
+[charaLayer O normal]
+[charaScale C 1.0]
+[charaScale O 1.0]
+[subCameraOff]
+
+[wt 0.5]
+
+[scene 10000]
+
+[charaDepth V 3]
+[charaPut V 2000,2500]
+[charaEffect V bit_talk_noise02]
+[charaEffect V bit_talk_noise02 0,0 H]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+
+[pictureFrameTop cut063_cinema]
+[scene 285300]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.4 0,-50]
+[wt 0.8]
+
+[bgm BGM_EVENT_97 0.1]
+
+＠ウルズ
+[line 3][%1]さん。[r]マシュさん。二人の、あの表情は……。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth A 3]
+[charaDepth Y 2]
+
+[charaPut Y 1]
+[charaFadeTime Y 0.4 0.5]
+[wt 0.4]
+
+＠
+知っている。あの表情を、私は知っている。
+[k]
+
+[charaFaceFade A 4 0.2]
+
+＠
+決意の眼差し。恐怖に駆られながらも、[r]何かを一刺しできないかと探るような。
+[k]
+
+＠
+特異点と異聞帯での戦いで、[r]幾度となく見ることとなった表情だった。
+[k]
+
+＠
+……次の過去は、何かが違うものになるかもしれない。[r]それは良くないことだ。
+[k]
+
+[messageOff]
+[charaFadeTime Y 0.2 0]
+[charaFaceFade A 11 0.3]
+[wt 0.6]
+
+＠ウルズ
+次の過去で修正しないと……。
+[k]
+
+[messageOff]
+[charaFadeTime Y 0.3 0.5]
+[wt 0.3]
+
+＠
+時間が巻き戻っていく。[r][&彼:彼女]らの功績は無かったことに……いや、違う。
+[k]
+
+＠
+[&彼:彼女]らは[#同じ]ことをする。[r]だから功績は無かったことになどならない。
+[k]
+
+＠
+[&彼:彼女]らが掴むものは絶対に変わらない。[r]不変にしてかけがえのない勝利。
+[k]
+
+＠
+うん。[r]私が愛し続ける、とても、とても、大切なもの。
+[k]
+
+[charaFaceFade A 4 0.2]
+
+＠
+でも、あの表情は……。
+[k]
+
+[messageOff]
+[se ad592]
+[fadeout white 0.7]
+[bgm BGM_EVENT_97 0.7 0.5]
+[wait fade]
+
+[subCameraOn 2]
+
+[charaLayer V sub #A]
+[charaLayer U sub #A]
+[charaLayer D sub #A]
+[charaLayer O sub #A]
+
+[charaLayer W sub #B]
+[charaLayer Z sub #B]
+
+[subCameraFilter #A normal]
+[subCameraFilter #B normal]
+
+[subRenderDepth #A 2]
+[subRenderDepth #B 3]
+
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+
+[charaDepth O 1]
+[charaDepth D 2]
+[charaDepth U 3]
+[charaDepth V 15]
+
+[charaScale O 1.2]
+[charaScale D 1.1]
+[charaScale U 1.3]
+
+[charaPut V 1]
+
+[charaFace D 16]
+[charaFadein D 0 0,-60]
+[charaFadein O 0 0,-280]
+
+[charaFadein U 0 0,-240]
+
+
+[charaDepth Z 1]
+[charaDepth W 15]
+
+[charaScale Z 1.2]
+[charaScale W 1.0]
+
+[charaFadein Z 0 0,-200]
+
+[subRenderFadein #A 0.1 0,0]
+
+[wt 0.4]
+
+[fadein white 0.7]
+[wait fade]
+[wt 1.6]
+
+[messageOff]
+[fadeout white 0.7]
+[wait fade]
+
+[subRenderFadeout #A 0.1]
+
+[wt 0.3]
+
+[fadein white 0.7]
+[bgm BGM_EVENT_97 0.7 1.0]
+[wait fade]
+
+＠
+……。[r]……。
+[k]
+
+[charaFaceFade A 11 0.2]
+
+＠
+それなら、より過去を輝かせましょう。[r]どれほど[#強靱な:つ　よ　い]心でも[line 3]
+[k]
+
+[cueSe SE_26 26_ad1558 0 0]
+[charaScale W 0.4]
+[charaPut W 0,-170]
+[charaEffect W bit_talk_urd_clock_02]
+
+＠
+その足を、止めてしまうほどに。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_97 2.0]
+
+[subRenderFadein #B 1.0 0,0]
+[charaMoveScale W 0.8 7.0]
+[charaMove W 0,-50 7.0]
+[cueSeVolume 26_ad1558 1.0 1.0]
+[wt 3.5]
+
+[fadeout black 2.0]
+[cueSeStop 26_ad1558 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout Y 0.1]
+
+[subRenderFadeout #B 0.1]
+
+[charaPut V 2000,2500]
+[charaEffectDestroy V bit_talk_noise02]
+[charaFadeout U 0]
+[charaFadeout D 0]
+[charaFadeout O 0]
+
+[charaPut W 2000,2500]
+[charaEffectDestroy W bit_talk_yuga_clock_01]
+[charaFadeout Z 0]
+
+[charaLayer V normal]
+[charaLayer W normal]
+[charaLayer U normal]
+[charaLayer D normal]
+[charaLayer O normal]
+[charaLayer Z normal]
+[charaScale V 1.0]
+[charaScale W 1.0]
+[charaScale D 1.0]
+[charaScale U 1.0]
+[charaScale Z 1.0]
+[charaScale O 1.0]
+[subCameraOff]
+[wt 0.5]
+
+[scene 10000]
+
+[pictureFrameTop]
+
+[charaPut V 2000,2500]
+[charaEffect V bit_sepia01_depth_fs]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad7]
+
+[scene 106000 0.1]
+
+[shake 0.03 3 2 0.5]
+[wt 1.5]
+
+[cueSe SE_22 22_ad1177]
+[wt 0.1]
+[fadeout white 0.6]
+[wait fade]
+
+[scene 268000]
+
+[charaPut V 1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+[wt 0.4]
+
+[fadein white 0.6]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout white 0.6]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[charaPut V 2000,2500]
+
+[scene 106000]
+[wt 0.3]
+
+[fadein white 0.6]
+[wait fade]
+[wt 0.4]
+
+[bgm BGM_WHITE_1 0.1]
+
+？1：（……大丈夫、覚えている……！）
+？！
+
+＠
+……時間神殿。ソロモンは無言で[&自分:わたし]と[r]相対し、無言のまま退場した。
+[k]
+
+＠
+そしてときこさん……彼女が、前回と同じように[r]全てを元に戻してしまった。
+[k]
+
+＠
+[line 3]問題は。ここから先、何をすればいいか。
+[k]
+
+[charaPut Y 1]
+[charaFadeTime Y 1.5 1.0]
+
+＠
+思い出せ、思い出せ、思い出せ。[r]時間神殿で戦う前夜、自分の最後の行動。
+[k]
+
+＠
+[#何かを行って]、[#何かを忘れた]。
+[k]
+
+＠
+最後に。[&オレ:わたし]は何をしたか。[r]記憶に残っている最後の光景は[line 3]
+[k]
+
+[messageOff]
+
+[subCameraOn 1]
+
+[charaLayer X sub #A]
+[charaLayer W sub #A]
+[charaLayer V sub #A]
+[charaLayer H sub #A]
+[charaLayer F sub #A]
+[charaLayer G sub #A]
+[charaLayer Q sub #A]
+
+[subCameraFilter #A normal]
+
+[subRenderDepth #A 2]
+
+[subRenderScale #A 1.01]
+
+[charaDepth Q 1]
+[charaDepth H 2]
+[charaDepth F 3]
+[charaDepth G 4]
+[charaDepth V 15]
+[charaDepth W 25]
+[charaDepth X 26]
+
+[charaScale Q 1.0]
+[charaScale G 1.0]
+[charaScale F 1.0]
+[charaScale H 1.0]
+
+[charaPut X 2000,2500]
+[charaEffect X bit_talk_noise_gr]
+
+[charaPut V 1]
+
+[charaFace G 10]
+[charaFadeinFSR G 0 325,0]
+
+[charaFace F 2]
+[charaFadein F 0 0,0]
+
+[charaFace H 11]
+[charaFadeinFSL H 0 -325,0]
+
+[charaFadein Q 0 0,-200]
+
+[subRenderFadein #A 0.8 0,0]
+[wt 1.1]
+
+＠
+所長と、ドクターと、マシュと、[&オレ:わたし]。[r]四人でいたはず……。
+[k]
+
+[messageOff]
+[wt 0.2]
+[se ad31]
+[wt 0.05]
+[charaPut X 1]
+[wt 0.25]
+[seStop ad31 0.1]
+[charaPut X 2000,2500]
+
+[wt 0.25]
+[se ad31]
+[charaPut X 1]
+[wt 0.6]
+
+[fowardEffect bit_talk_insect_blackout]
+[wt 0.2]
+[cueSe SE_22 22_ad1221]
+[wt 0.5]
+[fowardEffect bit_talk_insect_blackout 0,0 F]
+[seStop ad31 5.0]
+
+[wt 3.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout Y 0]
+[fowardEffectDestroy bit_talk_insect_blackout]
+
+[subRenderFadeout #A 0.1]
+
+[charaPut V 2000,2500]
+[charaEffectDestroy V bit_sepia01_depth_fs]
+[charaPut X 2000,2500]
+[charaEffectDestroy X bit_talk_noise_gr]
+
+[charaFadeout G 0]
+[charaFadeout F 0]
+[charaFadeout H 0]
+[charaFadeout Q 0]
+
+[charaLayer V normal]
+[charaLayer W normal]
+[charaLayer X normal]
+[charaLayer G normal]
+[charaLayer F normal]
+[charaLayer H normal]
+[charaLayer Q normal]
+[charaScale V 1.0]
+[charaScale W 1.0]
+[charaScale X 1.0]
+[charaScale G 1.0]
+[charaScale F 1.0]
+[charaScale H 1.0]
+[charaScale Q 1.0]
+[subCameraOff]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaTalk on]
+
+＠
+……いや、そんな過去はあった……ような、[r]なかったような……。
+[k]
+
+[messageOff]
+[wt 0.2]
+
+？1：でも、とにかく何とかしないと……
+？！
+
+[se ad8]
+[wt 0.2]
+[wipeout leftToRight 0.7 1.0]
+[bgm BGM_WHITE_1 0.7 0.4]
+[wait wipe]
+
+[scene 105500]
+[wt 1.0]
+
+[wipein rightToLeft 0.7 1.0]
+[bgm BGM_WHITE_1 0.7 1.0]
+[wait wipe]
+
+[cueSe SE_24 24_ad1351]
+[wt 1.0]
+[cueSeStop 24_ad1351 0.4]
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.4 1]
+[wt 0.4]
+
+＠ジェロニモ
+やあ、マスター。[r]これからミーティングのようだが、一緒に行くかい？
+[k]
+
+？1：ジェロニモ！
+？！
+
+[charaFace I 0]
+
+＠ジェロニモ
+[FFFFFF]？[-]
+[k]
+
+？1：頼みがあるんだけど……
+？！
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgm BGM_WHITE_1 1.0 0.4]
+[wait fade]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_WHITE_1 1.0 1.0]
+[wait fade]
+
+＠ジェロニモ
+……ふむ。少々理解し難い指示であるが……。[r]君のやることだ。きっと意味があるのだろう。
+[k]
+
+？1：（この指示ならバレても大丈夫[line 3]）
+？2：（だと思いたい……）
+？！
+
+＠ジェロニモ
+了解した。では、私はミーティングには参加せず、[r]図書館で待機しよう。
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 1.2]
+
+[fadeout black 2.0]
+[bgmStop BGM_WHITE_1 2.0]
+[wait fade]
+
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+
+
+
+
+
+
+
+
+
+
+

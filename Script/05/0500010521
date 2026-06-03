@@ -1,0 +1,460 @@
+
+
+＄05-00-01-05-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[branchRouteSelect battle_select_win 05000105 1000]
+[branchNotRouteSelect battle_select_lose 05000105 1000]
+
+[label battle_select_win]
+
+[charaSet A 8001900 1 マシュ]
+[charaSet B 2055000 1 ウルズ]
+[charaSet C 2055000 1 ウルズ_演出用]
+
+[sceneSet H 268000 1]
+[sceneSet I 268000 1]
+[sceneSet J 10000 1]
+
+[charaSet N 98115000 1 エフェクト用1]
+[charaSet O 98115000 1 エフェクト用2]
+[charaSet P 98115000 1 エフェクト用3]
+[charaSet Q 98115000 1 エフェクト用4]
+[charaSet R 98115000 1 エフェクト用5]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth H 2]
+[charaDepth N 3]
+[charaDepth A 4]
+[charaDepth J 10]
+
+[subCameraOn 1]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+[charaLayer C sub #A]
+[charaLayer O sub #A]
+[charaLayer P sub #A]
+[charaLayer Q sub #A]
+[charaLayer R sub #A]
+[charaLayer I sub #A]
+[charaScale C 1.2]
+[charaScale I 1.2]
+[charaDepth R 6]
+[charaDepth Q 5]
+[charaDepth C 4]
+[charaDepth P 3]
+[charaDepth O 2]
+[charaDepth I 1]
+[charaFace C 11]
+[charaFadein C 0.1 0,10]
+[charaEffectEdgeBlur C DED887 DED887 3 1]
+[charaFadein I 0.1 0,-300]
+
+[charaScale H 1.2]
+[charaScale A 1.2]
+
+[charaPut N 0,-600]
+[charaEffect N bit_talk_sand_dust_back_slow]
+
+[scene 268000]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_216 0.1]
+
+[effect bit_talk_kengekiall02_fs]
+[wt 0.2]
+[se ad686]
+[wt 0.2]
+[se ad1032]
+[wt 0.1]
+[se ad1014]
+[wt 0.4]
+[se ad687]
+[se ad865]
+[effect bit_talk_blow03]
+[wt 0.6]
+
+[charaFadein H 0.3 80,-220]
+[charaMoveEase H -120,-220 0.6 easeOutSine]
+[wt 0.4]
+
+[se ad671]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.3 -120,20]
+[charaShake A 0.01 2 1 0.5]
+[charaMoveEase A 80,20 0.7 easeOutCubic]
+[charaMoveEase N 0,-350 0.6 easeOutSine]
+[wt 0.8]
+[charaEffectStop N bit_talk_sand_dust_back_slow]
+
+[charaMoveReturn A 80,17 0.6]
+[wait charaMove A]
+[wt 0.2]
+[charaMoveReturn A 80,17 0.6]
+
+＠マシュ
+はぁ、はぁ、はぁ……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaFadeout H 0.4]
+[wt 0.4]
+[charaEffectDestroy N bit_talk_sand_dust_back_slow]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ウルズ
+[line 3]いいですね。やはり、貴方たちは[r]世界を救っただけのことはありました。
+[k]
+
+[charaFace B 14]
+
+＠ウルズ
+……だから思うのです。だから嘆くのです。[r]その奇跡のような旅路を、どうして捨てるのでしょう。
+[k]
+
+？1：それは、もうとっくに決めていることだ
+？！
+
+[charaFace B 7]
+
+＠ウルズ
+そうですか。でも、[#私は嫌です]。[r]嫌だから、ここで貴方たちを食い止めます。
+[k]
+
+[messageOff]
+[charaFace B 11]
+[charaEffectEdgeBlur B DED887 DED887 3 1]
+[cueSe SE_22 22_ad1213]
+[wt 2.0]
+
+[charaTalk B,C]
+[subRenderFadein #A 0.4 0,0]
+[wt 0.4]
+
+[cueSeVolume 22_ad1213 1.5 0.3]
+[cueSe SE_26 26_ad1559]
+[charaPut O -120,20]
+[charaEffect O bit_talk_urd_threads]
+[charaPut P 120,20]
+[charaEffect P bit_talk_urd_threads 0,0 H]
+[charaPut Q 50,0]
+[charaEffect Q bit_talk_urd_threads]
+[charaPut R 50,0]
+[charaEffect R bit_talk_urd_threads 0,0 H]
+[wt 1.6]
+
+[charaFaceFade C 9 0.2]
+
+＠C：ウルズ
+宝具開帳。さあ、どうか皆様。[r]過去に戻りましょう。何もかも捨て去って。
+[k]
+
+＠C：ウルズ
+捏造ではありません。[r]これは確かにあったこと。
+[k]
+
+[charaFaceFade C 0 0.2]
+
+＠C：ウルズ
+虚偽ではありません。[r]もしかすると、有り得た可能性の過去。
+[k]
+
+[messageOff]
+[se ad927]
+[wt 0.2]
+[fadeout white 1.5]
+[cueSeStop 26_ad1559 1.5]
+[cueSeStop 22_ad1213 1.5]
+[wait fade]
+
+[seStop ad743 1.0]
+[cueSeStop 24_ade1024 1.5]
+[fowardEffectDestroy bit_talk_zero_sail_end_light]
+[charaFadeout B 0.1]
+[charaEffectEdgeBlurDestroy B]
+[charaEffectEdgeBlurDestroy C]
+[charaPut O 2000,2000]
+[charaEffectDestroy O bit_talk_urd_threads]
+[charaPut P 2000,2000]
+[charaEffectDestroy P bit_talk_urd_threads]
+[charaPut Q 2000,2000]
+[charaEffectDestroy Q bit_talk_urd_threads]
+[charaPut R 2000,2000]
+[charaEffectDestroy R bit_talk_urd_threads]
+[wt 0.1]
+
+[charaLayer C normal]
+[charaLayer O normal]
+[charaLayer P normal]
+[charaLayer Q normal]
+[charaLayer R normal]
+[charaLayer I normal]
+[charaFadeout C 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[charaFadeout I 0.1]
+[subCameraOff]
+
+[scene 10000]
+
+[cueSe SE_26 26_ad1558 0 0]
+[charaScale O 0.4]
+[charaPut O 0,-170]
+[charaEffect O bit_talk_urd_clock_02]
+[wt 0.1]
+
+[fadein white 1.0]
+[cueSeVolume 26_ad1558 1.0 0.3]
+[charaMoveScale O 0.8 18.0]
+[charaMove O 0,-50 18.0]
+[wait fade]
+
+＠
+[line 3]さあ、やり直しましょう。[r]大丈夫、皆様の人理修復は絶対に上手くいくのですから。
+[k]
+
+[messageOff]
+[bgm BGM_BATTLE_216 2.0 0.4]
+[charaPut J 1]
+[charaFadeTime J 6.0 1.0]
+[wt 1.0]
+
+？1：（……次は……）
+？！
+
+[messageOff]
+[fadeout black 2.0]
+[cueSeStop 26_ad1558 2.0]
+[bgmStop BGM_BATTLE_216 2.0]
+[wait fade]
+
+[charaPut O 2000,2000]
+[charaEffectDestroy O bit_talk_urd_clock_02]
+
+[branch lblConf01]
+
+[label battle_select_lose]
+
+[charaSet A 8001900 1 マシュ_パラディーン]
+[charaSet B 1098348700 1 オルガマリー]
+[charaSet C 2055000 1 ウルズ]
+[charaSet D 98003000 1 Dr.ロマン]
+[charaSet E 1098330800 1 マシュ]
+
+[sceneSet H 268000 1]
+[sceneSet I 106000 1]
+[sceneSet J 106000 1]
+[sceneSet K 145000 1]
+[sceneSet L 145000 1]
+[sceneSet M 10001 1]
+
+[charaSet N 98115000 1 エフェクト用1]
+[charaSet O 98115000 1 エフェクト用2]
+[charaSet P 98115000 1 エフェクト用3]
+[charaSet S 98115000 1 エフェクト用6]
+[charaSet Q 98115000 1 エフェクト用4]
+[charaSet R 98115000 1 エフェクト用5]
+
+[imageSet T back10000 1 1]
+[charaScale T 1.01]
+[imageSet U back10000 1 1]
+[charaScale U 1.01]
+
+[scene 268000]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth H 2]
+[charaDepth N 3]
+[charaDepth O 4]
+[charaDepth C 5]
+[charaDepth P 6]
+[charaDepth S 7]
+
+[subCameraOn 3]
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+[charaLayer B sub #A]
+[charaLayer D sub #A]
+[charaLayer E sub #A]
+[charaLayer Q sub #A]
+[charaLayer R sub #A]
+[charaLayer M sub #A]
+[charaLayer I sub #A]
+[charaScale B 1.0]
+[charaScale D 1.0]
+[charaScale E 1.0]
+[charaScale M 1.01]
+[charaScale I 1.0]
+[charaDepth M 8]
+[charaDepth R 6]
+[charaDepth Q 5]
+[charaDepth E 4]
+[charaDepth D 3]
+[charaDepth B 2]
+[charaDepth I 1]
+[charaFace E 10]
+[charaFadeinFSR E 0 325,0]
+[charaFace D 2]
+[charaFadein D 0 0,0]
+[charaFace B 11]
+[charaFadeinFSL B 0 -325,0]
+[charaFadein I 0.1 0,-200]
+[charaPut Q 0,0]
+[charaEffect Q bit_sepia01_depth_fs]
+[charaPut R 2000,2500]
+[charaEffect R bit_talk_noise_gr]
+
+[charaScale C 1.2]
+[charaScale H 1.2]
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.4 0,10]
+[charaFadein H 0.4 0,-270]
+[charaEffectEdgeBlur C DED887 DED887 3 1]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_BATTLE_287 0.1]
+
+[cueSeVolume 22_ad1213 1.5 0.3]
+[cueSe SE_26 26_ad1559]
+[charaFaceFade C 9 0.2]
+[charaPut N -120,20]
+[charaEffect N bit_talk_urd_threads]
+[charaPut O 120,20]
+[charaEffect O bit_talk_urd_threads 0,0 H]
+[charaPut P 50,0]
+[charaEffect P bit_talk_urd_threads]
+[charaPut S 50,0]
+[charaEffect S bit_talk_urd_threads 0,0 H]
+[wt 2.0]
+
+[se ad927]
+[wt 0.2]
+[cueSeStop 22_ad1213 1.5]
+[cueSeStop 26_ad1559 1.5]
+[fadeout white 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaEffectEdgeBlurDestroy C]
+[charaFadeout H 0.1]
+[charaPut N 2000,2000]
+[charaEffectDestroy N bit_talk_urd_threads]
+[charaPut O 2000,2000]
+[charaEffectDestroy O bit_talk_urd_threads]
+[charaPut P 2000,2000]
+[charaEffectDestroy P bit_talk_urd_threads]
+[charaPut S 2000,2000]
+[charaEffectDestroy S bit_talk_urd_threads]
+[wt 0.1]
+
+[scene 10000]
+
+[cueSe SE_26 26_ad1558 0 0]
+[charaScale N 0.4]
+[charaPut N 0,-170]
+[charaEffect N bit_talk_urd_clock_02]
+
+[charaTalk off]
+[subRenderFadein #A 0 0,0]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.3]
+[se ad31]
+[wt 0.05]
+[charaPut R 1]
+[wt 0.25]
+[seStop ad31 0.1]
+[charaPut R 2000,2500]
+[wt 0.25]
+[se ad31]
+[charaPut R 1]
+[wt 0.6]
+
+[charaPut M 1]
+[charaFadeTime M 1.4 1.0]
+[seStop ad31 1.4]
+[wt 1.8]
+
+[cueSeVolume 26_ad1558 1.0 0.3]
+[charaMoveScale N 0.8 18.0]
+[charaMove N 0,-50 18.0]
+[subRenderFadeout #A 1.0]
+[wt 1.0]
+
+＠
+[line 3]さあ、やり直しましょう。[r]大丈夫、貴方の人理修復は絶対に上手くいくのですから。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[cueSeStop 26_ad1558 2.0]
+[bgmStop BGM_BATTLE_287 1.0]
+[wait fade]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaFadeout M 0.1]
+
+[charaPut N 2000,2000]
+[charaEffectDestroy N bit_talk_urd_clock_02]
+[charaPut P 2000,2000]
+[charaEffectDestroy P bit_talk_noise_gr]
+[charaPut Q 2000,2000]
+[charaEffectDestroy Q bit_sepia01_depth_fs]
+[charaPut R 2000,2000]
+[charaEffectDestroy R bit_talk_noise_gr]
+
+[charaLayer B normal]
+[charaLayer D normal]
+[charaLayer E normal]
+[charaLayer Q normal]
+[charaLayer R normal]
+[charaLayer M normal]
+[charaLayer I normal]
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[charaFadeout M 0.1]
+[charaFadeout I 0.1]
+[subCameraOff]
+[wt 0.1]
+
+[scene 10000]
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[branch lblConf01]
+
+
+
+[label lblConf01]
+
+[wt 0.5]
+[soundStopAll]
+[end]

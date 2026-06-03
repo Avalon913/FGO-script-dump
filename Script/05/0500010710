@@ -1,0 +1,929 @@
+
+
+＄05-00-01-07-1-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 98003000 1 Dr.ロマン]
+[charaSet B 1098330800 1 マシュ]
+[charaSet C 1098123000 1 ムニエル]
+[charaSet D 1098348700 1 オルガマリー]
+[charaSet E 7013001 1 清姫]
+[charaSet F 4011001 1 ブーディカ]
+[charaSet G 1098257300 1 ダ・ヴィンチ]
+[charaSet H 6007001 1 ジキル]
+[charaSet I 5016001 1 ジェロニモ]
+
+[charaSet J 98003000 1 Dr.ロマン]
+[charaSet K 1098330800 1 マシュ]
+[charaScale K 1.2]
+[charaSet L 1098352500 1 フォウ_ツノあり]
+[charaScale L 0.7]
+
+[charaSet M 1098348700 1 オルガマリー]
+[charaScale M 1.2]
+
+[sceneSet Q 284800 1]
+
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+
+[sceneSet R 284800 1]
+[charaScale R 1.4]
+
+[sceneSet S 277700 1]
+[charaScale S 1.4]
+
+[sceneSet T 284800 1]
+[charaScale T 1.2]
+
+[subCameraOn 4]
+[charaLayer T sub #A]
+[charaLayer L sub #A]
+
+[charaTalk depthOff]
+[charaDepth R 1]
+[charaDepth A 1]
+[charaDepth P 2]
+[charaDepth B 3]
+[charaDepth D 3]
+[charaDepth Q 5]
+[charaDepth J 6]
+[charaDepth L 7]
+[charaDepth K 8]
+[charaDepth G 8]
+[charaDepth S 9]
+[charaDepth I 11]
+[charaDepth M 12]
+[charaDepth H 13]
+[charaDepth T 1]
+
+[charaFadein T 0 -100,0]
+[subCameraFilter #A maskEdge cut359_mask05 30 0,0,0,255 1]
+
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[wipeout openEye 0.2 1.0]
+[wait wipe]
+
+
+
+[scene 106000]
+
+[wipein openEye 1.5 1]
+[wait wipe]
+[wt 1.5]
+
+[fadeout black 1.0]
+[se ad8]
+[wait fade]
+
+[scene 284800]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad311]
+[wt 0.8]
+[seStop ad311 0.4]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_92 0.1]
+
+＠マシュ
+おはようございます、先輩。
+[k]
+
+？1：おはよー
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade422]
+[wt 0.5]
+[seStop ade422 0.2]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠Dr.ロマン
+おはよう、[%1][&君:ちゃん]、マシュ。[wt 0.8][charaFace A 1][r]どう、二人とも元気かい？
+[k]
+
+[charaFace A 1]
+
+＠Dr.ロマン
+ボクは自分が死人ですらないということを[r]理解させられて、もう大変だよ！
+[k]
+
+？1：……はい？
+？！
+
+[messageOff]
+[charaTalk off]
+[charaScale J 1.2]
+[charaScale Q 1.2]
+[charaFace J 3]
+[charaFadein Q 0.4 20,-300]
+[charaFadein J 0.4 -100,-20]
+[charaMove Q 120,-300 30.0]
+[charaMove J 0,-20 30.0]
+[wt 0.5]
+
+＠Dr.ロマン
+うん、まあ昨日で大体の事情は把握できた。[r]ボクがかつて何であったかもね。
+[k]
+
+[charaFace J 5]
+
+＠Dr.ロマン
+もちろん実感はない。これっぽっちもない。
+[k]
+
+＠Dr.ロマン
+ボクにあるのは、ロマニ・アーキマンとしての[r]過去だけだ。
+[k]
+
+[charaFace J 5]
+
+＠Dr.ロマン
+でもさ、ボクが何もかも放り出すのも、[r]本当のドクターに失礼な感じがしない？
+[k]
+
+[charaFace J 8]
+
+＠Dr.ロマン
+だったら、やれるところまでやってみるさ。
+[k]
+
+[charaFace J 0]
+
+＠Dr.ロマン
+[%1][&君:ちゃん]も、[r]マシュも。
+[k]
+
+[charaFace J 1]
+
+[charaFace B 18]
+[charaFadein B 0.1 1]
+[charaFadeout A 0.1]
+
+＠Dr.ロマン
+引き続き、ボクが消えるまでよろしくね！
+[k]
+
+[messageOff]
+[charaFadeout J 0.4]
+[charaFadeout Q 0.4]
+[wt 0.5]
+
+＠マシュ
+は、はい……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Dr.ロマン
+あ、そうそう。オールド・リバーブだっけ？[r]そんな現象なかったよ。
+[k]
+
+[charaFace A 4]
+
+＠Dr.ロマン
+大方、ボクを通してウルズがでっち上げた現象だと思う。[r]矛盾[#衝:つ]かれると弱いね、あの女神。
+[k]
+
+[charaFace A 1]
+
+＠Dr.ロマン
+それじゃあね、また後で！
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[se ade422]
+[wt 1.5]
+[seStop ade422 0.5]
+[wt 0.5]
+
+[charaTalk K]
+[charaFace K 18]
+[charaFadein K 0.7 0,0]
+[charaFadein R 0.7 100,-350]
+[wt 1.2]
+[charaFaceFade K 23 0.2]
+[charaPut P 1]
+[charaFadeTime P 0.2 0.5]
+
+＠マシュ
+（……どうしたらいいんだろう……）
+[k]
+
+＠マシュ
+（あのドクターに、何を言えば。[r]　いえ、何を伝えれば……）
+[k]
+
+[charaFace K 22]
+
+＠マシュ
+（それとも、何も伝えない方が……）
+[k]
+
+[messageOff]
+[wt 0.5]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[bgm BGM_EVENT_92 0.7 0.4]
+[wait wipe]
+[charaFadeout K 0.1]
+[charaFadeout R 0.1]
+[charaFadeout P 0.1]
+[scene 10000]
+
+[subRenderFadein #A 0.1 250,-160]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[cueSe SE_21 21_ade621]
+[subRenderMoveEase #A 230,-160 0.8 easeOutSine]
+[bgm BGM_EVENT_92 0.7 1.0]
+[wait wipe]
+[wt 1.5]
+
+[cueSeStop 21_ade621 0.2]
+[charaFadein L 0.4 0,-20]
+[wt 1.0]
+
+
+？1：あれ……フォウくん？
+？！
+
+
+[charaTalk on]
+[charaTalk K]
+[charaFace K 6]
+
+＠K：マシュ
+フォウさん？[r]……フォウさん、ですか？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout L 0.4]
+[cueSe SE_21 21_ade621]
+[wt 1.5]
+[cueSeStop 21_ade621 0.5]
+[wt 0.5]
+[scene 284800 0.5]
+[charaTalk B]
+[subRenderFadeout #A 0.5]
+[charaFace B 12]
+[charaFadein B 0.5 0,0]
+[wt 0.5]
+
+＠マシュ
+ど、どこかにいっちゃいました。
+[k]
+
+？1：今のは……
+？！
+
+[charaFace B 0]
+
+＠マシュ
+はい。一瞬で見づらかったですが、[r]いつもと少しシルエットが違ったような……。
+[k]
+
+[charaFace B 9]
+
+＠マシュ
+気のせい、でしょうか。
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_EVENT_92 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout R 0.1]
+[scene 277700]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ムニエル
+ゴルドルフのおっさんは消えちまったようだ。
+[k]
+
+[charaFace C 5]
+
+＠ムニエル
+はぁ……あのツッコミも、[r]今となっては懐かしいぜ……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[charaPut P 1]
+[charaFadeTime P 0.2 0.5]
+
+＠オルガマリー
+（少しだけ安堵）
+[k]
+
+[charaFace D 10]
+
+＠オルガマリー
+（然る後に[#自己嫌悪:じ  こ  け  ん  お]）
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout P 0.2]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠清姫
+ますたぁ。あの……。
+[k]
+
+＠清姫
+改めまして、ウルズから解放されて[r]思い出したのですが……。
+[k]
+
+[charaFace E 2]
+
+＠清姫
+わたくしたち、確かに人理を取り戻しましたよねぇ！？
+[k]
+
+？1：そうだね！
+？！
+
+[charaFace E 4]
+
+＠清姫
+はい。それでわたくし、それはそれは[r]思いっきりお別れしたのですが……。
+[k]
+
+[charaFace E 2]
+
+＠清姫
+わたくし、嘘をついたことになるのではー！？
+[k]
+
+[messageOff]
+[cueSeContinue SE_25 25_ade1144 1]
+[charaMoveReturn E 0,20 0.3]
+[wt 0.35]
+[cueSeContinue SE_25 25_ade1144 2]
+[charaMoveReturn E 0,20 0.3]
+[wt 0.35]
+[cueSeContinue SE_25 25_ade1144 3]
+[charaMoveReturn E 0,20 0.3]
+[wt 0.8]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ブーディカ
+はいはい。落ち着きなさい。
+[k]
+
+[charaFace F 0]
+
+＠ブーディカ
+やろうと思ってできなかったことは、[r]別に嘘でもなんでもないでしょ。
+[k]
+
+[charaFace F 1]
+
+＠ブーディカ
+……ま、何やら事情がありそうだけど、[r]とりあえず帰還したからには、頑張るよ。
+[k]
+
+＠ブーディカ
+引き続きよろしくね！
+[k]
+
+？1：こちらこそ！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠清姫
+わ、わたくしも引き続き[r]よろしくお願いいたしますねー！
+[k]
+
+[messageOff]
+[charaDepth P 10]
+[charaScale M 1.2]
+[charaScale S 1.2]
+[charaFace M 3]
+[charaFadein S 0.4 50,-250]
+[charaFadein M 0.4 -130,0]
+[charaMoveEase S 100,-250 1.0 easeOutSine]
+[charaMoveEase M -80,0 1.0 easeOutSine]
+[charaFadeTime P 0.4 0.5]
+[wt 1.2]
+
+＠オルガマリー
+（やっぱりね……分かってはいた事だけど、[r]　今の清姫の言動ではっきりしたわ）
+[k]
+
+[charaFadeout E 0.1]
+
+＠オルガマリー
+（オルガ・カルデアス内部での戦いを[r]　サーヴァントたちは覚えている）
+[k]
+
+＠オルガマリー
+（つまり彼らも今のカルデアや[r]　[%1]たちと同じように、）
+[k]
+
+＠オルガマリー
+（マリス・カルデアスを停止させた後、[r]　本来の歴史に戻る前のわずかな猶予……）
+[k]
+
+＠オルガマリー
+（人理が正しく[#編纂:へんさん]される直前の状態で、[r]　このカルデア基地にいる）
+[k]
+
+[bgmStop BGM_EVENT_77 2.0]
+
+＠オルガマリー
+（彼らにとっても今のカルデアの状態は[r]　“終わりの前に挟まれた終わりの続き”なのね）
+[k]
+
+
+[messageOff]
+[charaFadeout P 0.2]
+[charaFace M 17]
+[wt 1.5]
+
+[charaFace M 0]
+[bgm BGM_REQUIEM 0.1]
+
+＠オルガマリー
+話を戻しましょう。ウルズが消えた後、[r]再起動が完了したシバにより、特異点の発生を確認。
+[k]
+
+[charaFace M 2]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠オルガマリー
+先ほど、時間軸及び場所の特定に[line 3][r]失敗したわ。
+[k]
+
+[messageOff]
+[charaFadeout M 0.4]
+[charaFadeout S 0.4]
+[wt 0.5]
+
+＠マシュ
+失敗……ですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+トリスメギストスの回答は『過去』。
+[k]
+
+＠オルガマリー
+その範囲は一秒前から、紀元前まで。[r]恐らくジュラ紀以前も対象だと推測されているわ。
+[k]
+
+？1：ジュラ……ジュラ紀！？
+？！
+
+[charaFace D 7]
+
+＠オルガマリー
+そう。一秒前の過去であると同時、[r]紀元前でもある。
+[k]
+
+＠オルガマリー
+多分シバの観測が10億年より前に到達できないだけで、[r]それ以前も全て該当するんじゃないかしら。
+[k]
+
+＠オルガマリー
+つまり……『過去』という概念全てが、[r]彼女の居る場所と時間に該当するということ。
+[k]
+
+？1：それじゃもしかして、レイシフトできない？
+？！
+
+[charaFace D 3]
+
+＠オルガマリー
+いえ、違うわ。むしろ逆なのよね。
+[k]
+
+[charaFace D 0]
+
+＠オルガマリー
+原理的に言えば『過去にレイシフトする』だけで、[r]彼女の居る場所に辿り着けるはず。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 23]
+[charaFadein G 0.1 1]
+
+＠ダ・ヴィンチ
+そうだね。というよりも、レイシフト先が[r][#そこしかない]と言っていい。
+[k]
+
+＠ダ・ヴィンチ
+このままだと、発生した微小特異点だの何だのは、[r]ウルズに塗り潰されているせいで、シバが観測できない。
+[k]
+
+[bgmStop BGM_REQUIEM 1.0]
+[charaFace G 14]
+
+＠ダ・ヴィンチ
+とっととウルズを倒して何とかしないと、[r]マズいことになると思うよ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_KYOSU_1 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+直ちにコフィンの準備を！[r][%1]、マシュは待機状態へ移行！
+[k]
+
+[charaFace D 0]
+
+＠オルガマリー
+コフィンの準備完了次第、すぐにレイシフトします。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠二人
+はい！
+[k]
+
+[messageOff]
+[bgmStop BGM_KYOSU_1 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[pictureFrame cut063_cinema]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_57 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠ダ・ヴィンチ
+オルガマリー所長。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 0,-50]
+
+＠オルガマリー
+うん？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 36]
+[charaFadein G 0.1 0,-50]
+
+＠ダ・ヴィンチ
+女神ウルズの権能は『過去』という話だけど。[r]どうかなぁ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 0,-50]
+
+＠オルガマリー
+どうかなって、何が？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 34]
+[charaFadein G 0.1 0,-50]
+
+＠ダ・ヴィンチ
+北欧神話の三女神、過去を司るウルズ。[r]もちろん有名だし、信仰する者もいるだろう。
+[k]
+
+[charaFace G 22]
+
+＠ダ・ヴィンチ
+でも、いくら何でもそこまで強い存在かな？
+[k]
+
+[charaFace G 23]
+
+＠ダ・ヴィンチ
+[#方向性:ベ  ク  ト  ル]こそ違うけど、[r]『過去』を丸ごと操れるなら、それはティアマトに等しい。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 19]
+[charaFadein D 0.1 0,-50]
+
+＠オルガマリー
+それは……クラス・ビーストだから、じゃないかしら。[r]バビロニアにいたティアマトもビーストでしょ？
+[k]
+
+
+＠オルガマリー
+ビーストであればそれくらいの反則はします。[r]それが『過去』を受け持つ神霊なら尚更よ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 34]
+[charaFadein G 0.1 0,-50]
+
+＠ダ・ヴィンチ
+それはそうなんだけど……。
+[k]
+
+[charaFace G 22]
+
+＠ダ・ヴィンチ
+でも、そうなると。[r]先ほどの戦いが妙に引っ掛かる。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 0,-50]
+
+＠ジキル
+そうだね。いくらハイドの一撃が[r]奇襲じみたものだったとしても、[#弱すぎる]。
+[k]
+
+
+＠ジキル
+力を抑制していたとしか思えない。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+
+＠ジェロニモ
+確かにあの時、彼女はシバの支配に力を割いていたと[r]言っていたな……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 23]
+[charaFadein G 0.1 0,-50]
+
+＠ダ・ヴィンチ
+過去を操作する、というとんでもない権能と、[r]暗殺者の刃に負傷する脆弱さ。
+[k]
+
+[charaFace G 34]
+
+＠ダ・ヴィンチ
+うーん、少し矛盾しているね。[r]あるいは[line 3]本来持っている力ではないのかも。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale I 1.2]
+[charaScale H 1.25]
+[charaScale M 1.17]
+[charaScale S 1.2]
+[charaFace I 0]
+[charaFace H 4]
+[charaFace M 3]
+[charaFadein S 0.4 -50,-250]
+[charaFadeinFSR I 0.4 250,-50]
+[charaFadein H 0.4 -50,-50]
+[charaFadeinFSL M 0.4 -350,-50]
+[charaMove S 0,-250 6.0]
+[charaMoveFSR I 300,-50 6.0]
+[charaMove H 0,-50 6.0]
+[charaMoveFSL M -300,-50 6.0]
+[wt 1.0]
+[charaFadeout G 0.1]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+[wt 2.0]
+
+[charaFadeout I 0.5]
+[charaFadeout H 0.5]
+[charaFadeout M 0.5]
+[charaFadeout S 0.5]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk A]
+
+＠Dr.ロマン
+あー、それは重要だけど、[r]もう一つ大切なことを見逃してないかな？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 20]
+[charaFadein D 0.1 0,-50]
+
+＠オルガマリー
+ロマニ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+＠Dr.ロマン
+もちろん本気を出していなかったのは間違いない。
+[k]
+
+[charaFace A 7]
+
+＠Dr.ロマン
+実際、『過去』という概念を維持しながら、[r]ループを何度も繰り返す[line 3]
+[k]
+
+[charaFace A 5]
+
+＠Dr.ロマン
+それが女神の彼女でも負担になったことは確かだろうね。[r]ただ、それ以前の問題として。
+[k]
+
+[charaFace A 6]
+
+＠Dr.ロマン
+そもそも、[#なんでそんなことをしたのか]、[r]その視点がボクたちには欠けていると思うんだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 0,-50]
+
+＠オルガマリー
+……確かにそうね。[wt 0.5][charaFace D 0][r]彼女の求めたものは[line 3]何だったのかしら。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 34]
+[charaFadein G 0.1 0,-50]
+
+＠ダ・ヴィンチ
+……カルデアそのもの、かも。
+[k]
+
+[charaFace G 22]
+
+＠ダ・ヴィンチ
+だってほら、レイシフトは過去に干渉する……。[r]つまり、ウルズの権能と近いものだし？
+[k]
+
+＠ダ・ヴィンチ
+より強い力を求めて、カルデアを取り込もうとした……[r]という線はあるんじゃないかな？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠オルガマリー
+なるほど。いい線いってるかもしれないわ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[bgmStop BGM_MAP_57 2.0]
+[charaDepth J 12]
+[charaScale J 1.2]
+[charaScale S 1.2]
+[charaFace J 5]
+[charaFadein J 0.5 -100,-70]
+[charaFadein S 0.5 -70,-300]
+[charaMoveEase J -70,-70 1.2 easeOutSine]
+[charaMoveEase S -40,-300 1.2 easeOutSine]
+[wt 1.8]
+
+＠Dr.ロマン
+……。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

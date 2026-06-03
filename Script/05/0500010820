@@ -1,0 +1,1525 @@
+
+
+＄05-00-01-08-2-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 2055000 1 ウルズ]
+[charaSet B 2055002 1 ウルズ]
+[charaSet C 3028001 1 ジャガーマン]
+[charaSet D 1098346900 1 オルガマリー]
+[charaSet E 1098348700 1 オルガマリー]
+[charaSet F 1098359110 1 ダビデ]
+[charaSet G 1098346500 1 カワタ]
+[charaSet H 1098347200 1 トマリン]
+[charaSet I 1098346600 1 カヤン]
+[charaSet J 98003000 1 Dr.ロマン]
+[charaSet K 8001900 1 マシュ]
+[charaSet L 1098123000 1 ムニエル]
+
+[charaSet M 1098359110 1 ダビデ_演出用]
+[charaSet N 2055000 1 ウルズ_第一_演出用]
+[charaSet O 98003000 1 Dr.ロマン_演出用]
+
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+[sceneSet Q 285200 1]
+[sceneSet R 285200 1]
+[sceneSet S 285200 1]
+
+[charaSet T 98115000 1 通信エフェクト用]
+[charaSet U 98115000 1 エフェクト用]
+[charaSet Z 98115000 1 エフェクト用]
+
+[imageSet V cut810_msh 1]
+
+[masterBranch lblmst01a lblmst01b]
+
+[label lblmst01a]
+[imageSet W cut809_mst1 1]
+
+[branch lblmst01]
+
+[label lblmst01b]
+[imageSet W cut809_mst2 1]
+
+[label lblmst01]
+
+[imageSet X back10000 1 1]
+[imageSet Y back10000 1 1]
+[charaScale X 1.01]
+[charaScale Y 1.01]
+
+[scene 285200]
+
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_10_LowLevel_depth]
+
+[subCameraOn 3]
+[subCameraFilter #A maskEdge cut359_mask16 5 255,165,0,255 0]
+[subCameraFilter #B maskEdge cut359_mask04 20 0,0,0,255 1]
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[charaLayer C sub #A]
+[charaLayer M sub #A]
+[charaLayer R sub #A]
+[charaLayer N sub #B]
+[charaLayer S sub #B]
+[charaScale C 1.1]
+[charaScale R 1.1]
+[charaDepth C 3]
+[charaDepth M 2]
+[charaDepth R 1]
+[charaFace C 1]
+[charaFadein C 0.1 -10,200]
+[charaFadein R 0.1 -380,20]
+[charaScale N 2.2]
+[charaScale S 1.5]
+[charaDepth N 2]
+[charaDepth S 1]
+[charaFace N 11]
+[charaFadein N 0.1 -200,380]
+[charaFadein S 0.1 -230,-100]
+
+[charaTalk depthOff]
+[charaDepth Q 2]
+[charaDepth B 3]
+[charaDepth D 4]
+[charaDepth E 5]
+[charaDepth T 6]
+[charaDepth F 7]
+[charaDepth G 8]
+[charaDepth H 9]
+[charaDepth I 10]
+[charaDepth J 11]
+[charaDepth K 12]
+[charaDepth L 13]
+[charaDepth A 15]
+[charaDepth O 18]
+[charaDepth U 19]
+[charaDepth P 24]
+[charaDepth X 25]
+[charaDepth Y 26]
+
+[charaScale A 1.2]
+[charaScale Q 1.2]
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 0,40]
+[charaFadein Q 0.1 0,-240]
+[charaMove A 0,20 3.5]
+[charaMove Q 0,-260 3.5]
+
+[fadein black 1.0]
+[bgm BGM_MAP_132 0.1]
+[wait fade]
+[wt 1.5]
+
+＠ウルズ
+……。[r]……。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+？1：……やってないよね？
+？！
+
+[charaTalk C]
+[subRenderFadeinFSSideR #A 0.4 420,-200]
+[subRenderMoveEaseFSSideR #A 400,-250 0.4 easeOutSine]
+[wt 0.4]
+
+＠ジャガーマン
+うむ。ここで『やったか？』などと[r]言えば復活フラグがビシバシ立ち上がるのである。
+[k]
+
+[charaFace C 6]
+
+＠ジャガーマン
+……でもやってないよね？　って言ったら[r]同じことじゃないか、などと思うジャガー。
+[k]
+
+[messageOff]
+[charaFadeout A 0.5]
+[charaFadeout Q 0.5]
+[subRenderFadeout #A 0.5]
+[wt 0.6]
+[charaMove A 0,20 0.1]
+[charaMove Q 0,-260 0.1]
+[charaScale A 1.0]
+
+[charaPut T 1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+……ああ、もうやっぱり！
+[k]
+
+[charaFace D 0]
+
+＠オルガマリー
+聞きなさい、[%1]！
+[k]
+
+[charaFace D 10]
+
+＠オルガマリー
+ウルズは自分の周囲の[#時間を遡行させているの]！[r]つまり……そもそも、貴方たちは攻撃ができていない！
+[k]
+
+[charaFace D 19]
+
+＠オルガマリー
+アズライールの首斬りを免れたのも、[r]多分それ！
+[k]
+
+[charaFace D 11]
+
+＠オルガマリー
+[#出鱈目:で た ら め]にも程があるわ！[r]因果逆転の宝具とか誰か持ってない！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠ウルズ
+好きに持ってくるがいい。[r]因果逆転で私の時間遡行を免れるとでも？
+[k]
+
+＠ウルズ
+その宝具が成立するより前まで時間を戻せばいい。[r]まあ、40億年前に宝具の原型があるなら別だが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ダビデ
+……。[r]……。
+[k]
+
+＠ダビデ
+マスター。[r]すまないが、僕を先頭にしてくれないかな？
+[k]
+
+[subCameraFilter #A maskEdge cut359_mask04 20 0,0,0,255 1]
+[subRenderScale #A 1.01]
+[charaScale M 2.2]
+[charaScale R 1.5]
+[charaDepth M 2]
+[charaDepth R 1]
+[charaFace M 11]
+[charaFadein M 0.1 200,370]
+[charaFadein R 0.1 230,-100]
+[charaFadeout C 0.1]
+
+？1：……ダビデ？
+？！
+
+[charaFace F 11]
+
+＠ダビデ
+いやいや、なるほど。[r]そういう巡り合わせというやつらしい。
+[k]
+
+[messageOff]
+[charaTalk F,M]
+[charaFadein P 0.5 0,-200]
+[subRenderFadein #A 0.5 0,-390]
+[subRenderFadein #B 0.5 0,-220]
+
+[charaMove M 220,370 15.0]
+[charaMove R 250,-100 15.0]
+
+[charaMove N -220,380 15.0]
+[charaMove S -250,-100 15.0]
+[wt 0.8]
+[charaFadeout F 0.1]
+
+[charaTalk M]
+[charaFaceFade M 1 0.2]
+
+＠M：ダビデ
+心配しないで。こう見えてやる男なんだ、僕は。[r]時間遡行は破れる、間違いなくね。
+[k]
+
+[charaTalk N]
+
+＠N：ウルズ
+……何？
+[k]
+
+[charaTalk M]
+[charaFace M 0]
+[charaScale F 1.01]
+[charaScale Q 1.01]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaFadein Q 0.1 0,-200]
+
+＠M：ダビデ
+ああ、僕は君の時間遡行を破れると言ったんだよ。[r]逃げるかい？　それなら追わないけど。
+[k]
+
+[charaTalk N]
+[charaFace N 7]
+
+＠N：ウルズ
+戯れ言を。
+[k]
+
+[messageOff]
+[charaTalk N,F]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[charaFadeout P 0.4]
+[bgmStop BGM_MAP_132 1.5]
+[wt 0.8]
+
+[charaPut U 0,-80]
+[charaEffect U bit_talk_36]
+[se ad39]
+[wt 2.2]
+
+＠ダビデ
+[#君には改心する権利がある]。[wt 0.8][charaFace F 3][r][line 3]本音を言うと、無いと思うけどさ。
+[k]
+
+[messageOff]
+[charaEffectStop U bit_talk_36]
+[se ad980]
+[wt 0.1]
+[charaFace F 5]
+[charaMoveEase F 0,10 0.2 easeOutCubic]
+[charaMoveEase Q 0,-330 0.2 easeOutCubic]
+[charaMoveEase U 0,-50 0.2 easeOutCubic]
+[charaMoveScaleEase F 1.3 0.2 easeOutCubic]
+[charaMoveScaleEase Q 1.3 0.2 easeOutCubic]
+[charaMoveScaleEase U 1.3 0.2 easeOutCubic]
+[blur motion 0.2 4 10 0.5 0.6 0.05 100]
+[wt 0.3]
+
+
+
+
+[fadeout black 0.4]
+[wait fade]
+
+[blurOff]
+[charaPut U 2000,2000]
+[charaEffectDestroy U bit_talk_36]
+
+[charaFadeout F 0.1]
+[charaFadeout Q 0.1]
+[charaScale F 1.0]
+
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[criMovie talk_mov392 bgmPlay false]
+[wt 19.5]
+
+[fadeout white 0.5]
+[wait fade]
+
+[scene 10001]
+
+[subCameraFilter #B through]
+[subRenderScale #B 1.01]
+[subRenderDepth #B 1]
+[charaScale N 1.6]
+[charaScale S 1.6]
+[charaDepth N 2]
+[charaDepth S 1]
+[charaFace N 12]
+[charaFadein N 0.1 0,320]
+[charaFadein S 0.1 0,-150]
+[charaEffect N bit_talk_41_fs 0,130]
+
+[charaTalk N]
+[subRenderFadein #B 0.1 0,-320]
+[wt 0.5]
+
+[fadein white 0.3]
+[wait fade]
+[cueSe Servants_200600 m30916]
+[wt 0.2]
+
+[charaFaceFade N 15 0.2]
+[charaMoveEase N 0,336 0.5 easeOutCirc]
+[charaMoveEase S 0,-180 0.5 easeOutCirc]
+[charaMoveScaleEase N 1.7 0.5 easeOutCirc]
+[charaMoveScaleEase S 1.7 0.5 easeOutCirc]
+
+[fadeout black 0.5]
+[wait fade]
+
+[subRenderFadeout #B 0.1]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.2]
+[wait fade]
+
+[se ad823]
+[cueSe Servants_200600 m30917]
+[fowardEffect bit_talk_blow03]
+[wt 1.8]
+
+[fowardEffect bit_talk_35]
+[wt 0.1]
+[seContinue ad142 0 1.0 1]
+
+[wt 0.6]
+[seContinueStop ad142 0.6 1]
+[wt 0.6]
+[wt 0.8]
+
+[fadeout black 0.3]
+[wait fade]
+
+[subCameraFilter #A normal]
+[subCameraFilter #B maskEdge cut359_mask15 5 106,90,205,255 0]
+[subRenderScale #A 1.2]
+[subRenderScale #B 1.0]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[charaScale M 1.0]
+[charaScale R 1.0]
+[charaFace M 11]
+[charaFadein M 0.6 100,-40]
+[charaFadein R 0.1 0,-200]
+[charaScale N 1.2]
+[charaScale S 1.2]
+[charaFace N 11]
+[charaFadein N 0.1 0,180]
+[charaFadein S 0.1 0,0]
+[charaEffectDestroy N bit_talk_41_fs]
+
+[scene 285200]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_302 0.1]
+
+？1：当たった……！？
+？！
+
+[charaPut T 1]
+[charaTalk D]
+[charaFace D 20]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+え、あれ？　なんで？　どうして？
+[k]
+
+[charaFace D 0]
+
+＠オルガマリー
+ダビデの宝具『[#五つの石:ハメシュ・アヴァニム]』は、[r]確かに五つ目の石が必ず当たるという記録があるわ。
+[k]
+
+＠オルガマリー
+でも、ウルズに？
+[k]
+
+[messageOff]
+[charaTalk off]
+[subRenderFadein #A 0.4 50,0]
+[subRenderMoveEase #A 0,0 0.4 easeOutSine]
+[wt 0.7]
+[charaFadeout D 0.1]
+[charaPut T 2000,2000]
+
+[charaTalk on]
+[charaTalk N]
+[subRenderFadeinFSSideL #B 0.4 -290,-130]
+[subRenderMoveEaseFSSideL #B -310,-180 0.4 easeOutSine]
+[wt 0.4]
+
+＠N：ウルズ
+[line 3]まさか。
+[k]
+
+[messageOff]
+[charaTalk M]
+[charaFaceFade M 9 0.2]
+[charaShake M 0.01 2 1 0.4]
+[wt 1.0]
+
+[charaFaceFade M 2 0.2]
+
+＠M：ダビデ
+やあ、女神でも血は赤いのか。
+[k]
+
+[charaTalk A]
+
+＠N：ウルズ
+汝のそれは……40億年前の石。
+[k]
+
+[charaFace N 15]
+
+＠N：ウルズ
+つまり目の前に転がっているものを、[r]宝具として使ったのか。
+[k]
+
+[charaTalk M]
+[charaFace M 1]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠M：ダビデ
+僕の宝具は石なら何でも良くてね。[r]目の前に転がっているんだから、そりゃ使うさ。
+[k]
+
+[messageOff]
+[charaTalk M,A]
+[subRenderFadeout #A 0.4]
+[subRenderFadeout #B 0.4]
+[wt 1.2]
+
+[cueSe SE_26 26_ad1557]
+[fowardEffect bit_talk_urd_clock_01]
+[wt 4.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_urd_clock_01]
+
+[subCameraFilter #B normal]
+[subRenderScale #B 1.01]
+[charaScale N 1.3]
+[charaScale S 1.3]
+[charaFace N 11]
+[charaFadein N 0.1 0,20]
+[charaFadein S 0.1 0,-280]
+
+[charaPut T 1]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+……まあ、当然だけど。[r]負傷も巻き戻してしまえばいいという訳ね。
+[k]
+
+[charaFace D 13]
+
+＠オルガマリー
+でも取っかかりは見えたわ。
+[k]
+
+＠オルガマリー
+ダビデが宝具を当てさえすれば、[r]一時的にでも時間遡行の防御は破れるはず。
+[k]
+
+[charaFace D 6]
+
+＠オルガマリー
+そこを狙って、ありったけの攻撃を[r]叩き込めば[line 3]！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+[charaEffectDestroy T bit_talk_10_LowLevel_depth]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠ダビデ
+ははは。我らが所長は無茶を仰る！[r]だが、愛しきアビシャグのおねだりだ！
+[k]
+
+[charaFace F 1]
+
+＠ダビデ
+いいだろう。何度でも宝具を当ててみせよう。[r][#弾丸:た　ま]はいくらでも転がっているんだ。
+[k]
+
+[charaFace F 5]
+
+＠ダビデ
+ただ、僕は宝具で狙うことに全力を投じるからね。[r]それ以外は何もできないと思ってほしい！
+[k]
+
+[messageOff]
+[charaTalk F,N]
+[subRenderFadein #B 0.4 0,0]
+[charaMove N 20,20 8.0]
+[charaMove S 20,-280 8.0]
+[wt 0.4]
+[charaFadeout F 0.1]
+
+＠N：ウルズ
+……。[r]……。
+[k]
+
+＠N：ウルズ
+[line 3]振り返るに。[r]私は臆病者だな。
+[k]
+
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+？1：……？
+？！
+
+[charaFace N 4]
+
+＠N：ウルズ
+私に届く牙がある。[r]それに屈辱や怒りよりも恐怖を感じる性質だということだ。
+[k]
+
+[messageOff]
+[charaTalk A,N]
+[subRenderFadeout #B 0.6]
+[wt 1.0]
+
+[charaFaceFade A 12 0.2]
+
+＠ウルズ
+だから[line 3]何の[#躊躇:ためら]いもなく、これを使える。
+[k]
+
+[messageOff]
+[se ad39]
+[cueSe SE_22 22_ad1213]
+[charaEffectEdgeBlur A DED887 DED887 3 1]
+[wt 1.5]
+
+[se ad978]
+[cueSe SE_22 22_adm89]
+[charaDepth U 1]
+[charaPut U 0,0]
+[charaEffect U bit_talk_blk_fire_aura]
+[charaEffect U bit_talk_U_aura01]
+[wt 2.8]
+
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_BATTLE_302 0.7 0.4]
+[cueSeStop 22_ad1213 0.7]
+[seStop ad39 0.7]
+[seStop ad978 0.7]
+[cueSeStop 22_adm89 0.7]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaEffectEdgeBlurDestroy A]
+[charaPut U 2000,2000]
+[charaEffectDestroy U bit_talk_blk_fire_aura]
+[charaEffectDestroy U bit_talk_U_aura01]
+
+[charaLayer C normal]
+[charaLayer M normal]
+[charaLayer R normal]
+[charaLayer N normal]
+[charaLayer S normal]
+[charaFadeout C 0.1]
+[charaFadeout M 0.1]
+[charaFadeout R 0.1]
+[charaFadeout N 0.1]
+[charaFadeout S 0.1]
+[subCameraOff]
+[wt 0.1]
+
+[scene 277700]
+[overlayFadein X 0.1 0,-738]
+[overlayFadein Y 0.1 0,738]
+
+[sceneSet Q 277700 1]
+[charaDepth Q 17]
+[sceneSet R 277700 1]
+
+[masterBranch lblmst02a lblmst02b]
+[label lblmst02a]
+[charaSet M 1098363700 1 主人公]
+[branch lblmst02]
+[label lblmst02b]
+[charaSet M 1098363710 1 主人公]
+[label lblmst02]
+[wt 0.1]
+
+[subCameraOn 2]
+[subCameraFilter #A maskEdge cut359_mask10 5 255,255,255,255 0]
+[subCameraFilter #B normal]
+[subCameraRoll #A 355 0,0]
+[subRenderScale #A 1.0]
+[subRenderScale #B 1.01]
+[subRenderDepth #A 1]
+[subRenderDepth #B 2]
+[charaLayer K sub #A]
+[charaLayer M sub #A]
+[charaLayer S sub #A]
+[charaLayer V sub #B]
+[charaLayer W sub #B]
+[charaLayer U sub #B]
+[charaLayer Z sub #B]
+[charaRoll K 5 0,0]
+[charaRoll M 5 0,0]
+[charaRoll S 5 0,0]
+[charaScale K 1.1]
+[charaScale M 1.1]
+[charaScale S 1.3]
+[charaDepth K 3]
+[charaDepth M 2]
+[charaDepth S 1]
+[charaFace M 0]
+[charaFadein M 0.1 30,180]
+[charaFadein S 0.1 -380,-70]
+[charaDepth V 1]
+[charaDepth W 2]
+[charaDepth U 3]
+[charaScale V 1.0]
+[charaScale W 1.0]
+[charaScale U 1.0]
+[charaScale Z 1.0]
+[charaFadein V 0.1 -159,-174]
+[charaFadein W 0.1 159,-224]
+[charaPut U -1080,0]
+[charaEffect U bit_talk_43h_fs]
+[charaPut Z 1080,0]
+[charaEffect Z bit_talk_43h_fs 0,0 V]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_BATTLE_302 0.7 1.0]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 0,-50]
+
+＠E：オルガマリー
+……状況を！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadeinFSR G 0.1 256,-50]
+[charaFace H 2]
+[charaFadeinFSL H 0.1 -256,-50]
+
+＠カワタ
+ウルズの霊基数値に変化あり！[r]莫大なインフレーションです。
+[k]
+
+[charaFace H 3]
+
+＠トマリン
+クラス変化確認、[r]アーチャーからビーストへ羽化します！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 0,-50]
+
+＠E：オルガマリー
+これまではビーストとしての本領を発揮して[r]いなかったって訳ね……！
+[k]
+
+[bgmStop BGM_BATTLE_302 2.5]
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[cueSe SE_26 26_ad1552]
+[wt 1.5]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 0,-50]
+
+＠カヤン
+これは……[wt 0.7][charaFace I 3]トリスメギストスから、承認が下りました！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 20]
+[charaFadein E 0.1 0,-50]
+
+＠E：オルガマリー
+承認！？　こちら、何か要求してたかしら！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 0,-50]
+[bgm BGM_MAP_58 0.1]
+＠カヤン
+対クラス・ビーストである事態を認識、[r]冠位英霊召喚可能と！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+
+＠E：オルガマリー
+今の戦い、グランドサーヴァントが[r]召喚できなかった理由はそれね！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 0,-50]
+
+＠カヤン
+条件は二騎！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 0,-50]
+
+＠E：オルガマリー
+よし、[%1]に[r]冠位英霊の召喚を告げなさい！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 0,-50]
+
+＠カヤン
+大丈夫です。もう召喚準備に入ってます！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 0,-50]
+
+＠E：オルガマリー
+よし！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad311]
+[wt 0.8]
+[seStop ad311 0.4]
+
+[bgm BGM_MAP_58 1.5 0.7]
+[charaTalk J]
+[charaFace J 5]
+[charaFadein J 0.4 0,-50]
+[wt 0.4]
+
+＠Dr.ロマン
+オルガマリー所長、さっき発掘したビースト、[r]ティアマトの戦闘データです。
+[k]
+
+＠Dr.ロマン
+彼女がどうやってビーストに変生したのかは[r]不明ですが、
+[k]
+
+＠Dr.ロマン
+ティアマトのデータを模しているのは[r]確実でしょう。
+[k]
+
+[charaFace J 0]
+
+＠Dr.ロマン
+なのでこちらを参考にすれば、じゅうぶん[r][%1][&君:ちゃん]たちの助けになる。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 0,-50]
+
+＠E：オルガマリー
+……[wt 0.5]ありがと。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+
+＠Dr.ロマン
+どういたしまして。[r]あ、いま通信できます？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠E：オルガマリー
+できるわ。何か言っておく？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 8]
+[charaFadein J 0.1 0,-50]
+
+＠Dr.ロマン
+ああ、ボクから言います。
+[k]
+
+[bgmStop BGM_MAP_58 1.8]
+
+[messageOff]
+[charaScale Q 1.25]
+[charaFadein Q 0.6 20,-280]
+[charaMove Q 0,-280 1.5]
+[wt 1.5]
+
+[cueSe SE_24 24_ade1036]
+[cueSeStop 24_ade1036 0.8]
+[wt 0.2]
+
+[charaScale O 1.25]
+[charaTalk O]
+[charaFace O 0]
+[charaFadein O 0.4 30,-40]
+[wt 0.4]
+[charaFadeout J 0.1]
+
+＠O：Dr.ロマン
+[line 3]よし、[%1][&君:ちゃん]、[r]マシュ。聞こえるかい？
+[k]
+
+
+[messageOff]
+[charaTalk M]
+[subRenderFadeinFSSideL #A 0.4 -420,-200]
+[subRenderMoveEaseFSSideL #A -400,-250 0.4 easeOutCubic]
+[wt 0.4]
+
+＠M：[%1]
+聞こえます！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 7]
+[charaFadein K 0.1 -40,180]
+
+＠K：マシュ
+はい、大丈夫です。ドクター！
+[k]
+
+[subRenderFadeout #A 0.3]
+
+[charaTalk O]
+[charaFace O 5]
+[bgm BGM_EVENT_91 0.1]
+
+＠O：Dr.ロマン
+ウルズは今、ビーストに羽化しようとしているところだ。
+[k]
+
+[charaFadeout K 0.1]
+[charaFace M 0]
+[charaFadein M 0.1 30,180]
+
+[charaFace J 6]
+
+＠O：Dr.ロマン
+恐らくキミたちが戦ってきたであろう[r]ティアマトとは比べものにならないだろうけど。
+[k]
+
+＠O：Dr.ロマン
+[line 3]彼女は何より必死だ。
+[k]
+
+[charaFace O 8]
+
+＠O：Dr.ロマン
+生存本能とは少し違う。[r]どちらかというと自己の確立[line 3]
+[k]
+
+[charaFace O 0]
+
+＠O：Dr.ロマン
+『自分が自分であり続けるため』という[r]誰にでも存在する、ありふれた……
+[k]
+
+[charaFace O 5]
+
+＠O：Dr.ロマン
+そして必死にならざるを得ない理由がある。[r]そういうサーヴァントは、強いよ。
+[k]
+
+[messageOff]
+[charaTalk M]
+[subRenderFadeinFSSideL #A 0.3 -400,-250]
+
+＠M：[%1]
+……。[r]……。
+[k]
+
+[charaTalk J]
+[charaFace O 2]
+
+＠O：Dr.ロマン
+……でも。それとこれとは話が別だよね。[r]第一、やらかしたことは滅茶苦茶なんだからさ！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 24]
+[charaFadein K 0.1 -40,180]
+
+＠K：マシュ
+ですよね！
+[k]
+
+[charaFace K 5]
+
+＠K：マシュ
+多少なりとも同情の余地はありますが[line 3]
+[k]
+
+[charaFace K 2]
+
+＠K：マシュ
+それはそれとして打倒しなきゃダメな女神だと[r]キリエライト思います！
+[k]
+
+[subRenderFadeout #A 0.3]
+
+[charaTalk O]
+[charaFace O 1]
+
+＠O：Dr.ロマン
+よし、二人ともがんばって！[r]ビーストを倒して、世界を救っちゃおうじゃないか！
+[k]
+
+[charaFace O 8]
+
+＠O：Dr.ロマン
+グランドクラスも二騎、投入可能だ。[r]キミたちの全力を見せてやれ！
+[k]
+
+[messageOff]
+[charaTalk M]
+[cueSe SE_22 22_ad1178]
+[subRenderFadein #B 0.4 0,0]
+[charaMoveEase V -159,-200 0.7 easeOutCubic]
+[charaMoveEase W 159,-200 0.7 easeOutCubic]
+[wt 0.7]
+[charaFadeout O 0.1]
+[charaFadeout Q 0.1]
+[charaFace J 8]
+[charaFadein J 0.1 0,-50]
+[wt 1.3]
+
+[subRenderFadeout #B 0.6]
+[wt 0.7]
+
+＠K：二人
+了解！
+[k]
+
+[messageOff]
+[charaTalk J]
+[charaFace J 0]
+[wt 1.2]
+[fadeout black 1.5]
+[bgm BGM_EVENT_91 1.5 0.4]
+[wait fade]
+
+[charaFadeout J 0.1]
+[charaPut U 2000,2000]
+[charaEffectDestroy U bit_talk_43h_fs]
+[charaPut Z 2000,2000]
+[charaEffectDestroy Z bit_talk_43h_fs]
+[charaRoll K 0 0,0]
+[charaRoll M 0 0,0]
+[charaRoll S 0 0,0]
+[wt 0.1]
+
+[charaLayer K normal]
+[charaLayer M normal]
+[charaLayer S normal]
+[charaLayer V normal]
+[charaLayer W normal]
+[charaLayer U normal]
+[charaLayer Z normal]
+[charaFadeout K 0.1]
+[charaFadeout M 0.1]
+[charaFadeout S 0.1]
+[charaFadeout V 0.1]
+[charaFadeout W 0.1]
+[charaFadeout U 0.1]
+[charaFadeout Z 0.1]
+[subCameraOff]
+[wt 0.1]
+
+[charaDepth Q 1]
+[charaDepth E 2]
+[charaDepth G 3]
+[charaDepth H 4]
+[charaDepth I 5]
+[charaDepth J 6]
+[charaDepth L 7]
+
+[charaScale E 1.2]
+[charaScale J 1.2]
+[charaScale Q 1.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadeinFSR E 0.1 160,-30]
+[charaFadein Q 0.1 -100,-300]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_91 1.0 1.0]
+[wait fade]
+[wt 0.5]
+
+
+[se ad311]
+[charaMoveEaseFSR E 260,-30 1.0 easeOutSine]
+[charaMoveEase Q 0,-300 1.0 easeOutSine]
+[wt 1.0]
+
+[seStop ad311 0.4]
+[charaTalk J]
+[charaFace J 0]
+[charaFadeinFSL J 0.4 -260,-30]
+[wt 0.4]
+
+＠Dr.ロマン
+オルガマリー所長、ありがとうございました。[r]では、ボクの役割はこれで終わりです。
+[k]
+
+＠Dr.ロマン
+後はお任せ[line 3]
+[k]
+
+[charaTalk E]
+[charaFace E 2]
+
+＠E：オルガマリー
+バカ言ってないで、とっととモニターにつきなさい。
+[k]
+
+[charaTalk J]
+[charaFace J 2]
+
+＠Dr.ロマン
+え。
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+
+＠E：オルガマリー
+いつ消滅するかわからないんでしょうけど、[r]最後まできっちり働いてもらうわよ。
+[k]
+
+[charaTalk J]
+[charaFace J 6]
+
+＠Dr.ロマン
+いやあ……[r]ボクは大して役に立たないと思いますよ？
+[k]
+
+[charaTalk E]
+[charaFace E 8]
+
+＠E：オルガマリー
+ということだけど、ムニエルどう？
+[k]
+
+[messageOff]
+[charaFadeout J 0.4]
+[charaFadeout E 0.4]
+[charaFadeout Q 0.4]
+[wt 0.4]
+[charaScale E 1.0]
+[charaScale J 1.0]
+
+[charaTalk L]
+[charaFace L 13]
+[charaFadein L 0.1 0,-50]
+
+＠ムニエル
+なに言ってんですか、ドクター。[r][#俺たちは元々あんまり役に立ってないんですよ]。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.1 0,-50]
+
+＠Dr.ロマン
+えー、そうなの！？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 0,-50]
+
+＠ムニエル
+実地に出ているのは、結局のところ二人だし。[r]あまりに急を要する選択は、任せるしかないし。
+[k]
+
+＠ムニエル
+もうクライマックス。
+[k]
+
+[charaFace L 5]
+
+＠ムニエル
+後は戦いを見守るだけなんだから、[r]いてもいなくてもそんな変わりないですよ。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+
+＠Dr.ロマン
+……うーん、そうか。[wt 1.2][charaFaceFade J 1 0.2][r]じゃあ、残っちゃおうかな。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 0,-50]
+
+＠ムニエル
+はいはい。じゃ、そこに居てください。
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 4]
+[charaFace H 4]
+[charaFadeinFSR G 0.1 256,-50]
+[charaFadeinFSL H 0.1 -256,-50]
+[wt 2.0]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_91 1.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout X 0.1]
+[charaFadeout Y 0.1]
+[wt 0.1]
+
+[scene 285200]
+
+[charaSet C 2055002 1 ウルズ_第三_演出用１]
+[charaSet D 2055002 1 ウルズ_第三_演出用２]
+[imageSet E cut829_urt_11 1]
+[imageSet F cut829_urt_11 1]
+[charaSet G 98115000 1 エフェクト用]
+[sceneSet Q 285200 1]
+[sceneSet R 285200 1]
+[sceneSet S 285200 1]
+[sceneSet T 285200 1]
+
+[subCameraOn 2]
+[subCameraFilter #A maskEdge cut359_mask08 30 0,0,0,255 1]
+[subCameraFilter #B maskEdge cut359_mask07 30 0,0,0,255 1]
+[subRenderScale #A 1.01]
+[subRenderScale #B 1.01]
+[charaLayer E sub #A]
+[charaLayer R sub #A]
+[charaLayer Z sub #A]
+[charaLayer F sub #B]
+[charaLayer S sub #B]
+[charaLayer G sub #B]
+[charaScale E 1.9]
+[charaScale R 2.0]
+[charaScale Z 2.0]
+[charaDepth R 1]
+[charaDepth E 2]
+[charaDepth Z 3]
+[charaFadein E 0.1 100,-60]
+[charaFadein R 0.1 100,0]
+[charaPut Z 0,600]
+[charaEffect Z bit_talk_blk_fire_aura]
+[charaEffect Z bit_talk_U_aura01]
+[charaScale F 1.5]
+[charaScale S 2.0]
+[charaScale G 2.0]
+[charaDepth S 1]
+[charaDepth F 2]
+[charaDepth G 3]
+[charaFadein F 0.1 380,380]
+[charaFadein S 0.1 500,100]
+[charaPut G 0,800]
+[charaEffect G bit_talk_blk_fire_aura]
+[charaEffect G bit_talk_U_aura01]
+
+[charaDepth U 1]
+[charaDepth A 2]
+
+[charaDepth Q 5]
+[charaDepth B 6]
+
+[charaDepth T 10]
+[charaDepth K 11]
+[charaDepth M 12]
+
+[charaFace A 11]
+[charaFadein A 0.1 1]
+[charaEffectEdgeBlur A DED887 DED887 3 1]
+[charaPut U 0,0]
+[charaEffect U bit_talk_blk_fire_aura]
+[charaEffect U bit_talk_U_aura01]
+
+[cueSe SE_22 22_ad1213 0 0]
+[cueSe SE_22 22_adm89 0 0]
+
+[cameraMove 0.1 0,-10 1.01]
+[wait camera]
+[wt 1.0]
+
+[cameraMove 4.0 0,-40 1.15]
+[fadein black 1.0]
+
+[bgm BGM_MAP_20 0.1]
+[cueSeVolume 22_ad1213 1.0 1.0]
+[cueSeVolume 22_adm89 1.0 1.0]
+[wait fade]
+[wt 1.0]
+
+[se ad978]
+[fowardEffect bit_talk_blk_fire_aura 0,-150]
+[fowardEffect bit_talk_U_aura01 0,-150]
+[wt 0.6]
+
+[fadeout white 1.0]
+[seStop ad978 1.5]
+[cueSeStop 22_ad1213 1.5]
+[cueSeStop 22_adm89 1.5]
+[wait fade]
+
+[fowardEffectDestroy bit_talk_blk_fire_aura]
+[fowardEffectDestroy bit_talk_U_aura01]
+
+[charaFadeout A 0.1]
+[charaEffectEdgeBlurDestroy A]
+[charaPut U 2000,2000]
+[charaEffectDestroy U bit_talk_blk_fire_aura]
+[charaEffectDestroy U bit_talk_U_aura01]
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[scene 10000]
+
+[subRenderFadein #B 0.1 0,-200]
+[wt 0.5]
+
+[charaMove F 380,330 5.0]
+[charaMove S 500,50 5.0]
+[fadein white 1.0]
+[cueSe SE_23 23_ad1338 0 0.2]
+[cueSeVolume 23_ad1338 1.0 1.0]
+[wait fade]
+
+[cueSe SE_25 25_ade1201]
+[cueSe SE_25 25_ade1151]
+[charaEffectStop G bit_talk_blk_fire_aura]
+[charaEffectStop G bit_talk_U_aura01]
+[wt 2.6]
+
+[fadeout black 0.6]
+[wait fade]
+
+[charaPut G 2000,2000]
+[charaEffectDestroy G bit_talk_blk_fire_aura]
+[charaEffectDestroy G bit_talk_U_aura01]
+[subRenderFadeout #B 0.1]
+[subRenderFadein #A 0.1 0,-290]
+[wt 0.1]
+
+[charaMove E 50,-60 5.0]
+[charaMove R 50,0 5.0]
+[fadein black 0.6]
+[cueSe SE_24 24_ad1409 0 0.2]
+[cueSeVolume 24_ad1409 1.0 1.0]
+[wait fade]
+
+[cueSeStop 23_ad1338 1.0]
+[cueSe SE_24 24_ad1414]
+[cueSe SE_25 25_ade1151]
+[charaEffectStop Z bit_talk_blk_fire_aura]
+[charaEffectStop Z bit_talk_U_aura01]
+[wt 2.6]
+
+[fadeout white 1.0]
+[wait fade]
+
+[charaPut Z 2000,2000]
+[charaEffectDestroy Z bit_talk_blk_fire_aura]
+[charaEffectDestroy Z bit_talk_U_aura01]
+
+[charaLayer E normal]
+[charaLayer R normal]
+[charaLayer F normal]
+[charaLayer S normal]
+[charaFadeout E 0.1]
+[charaFadeout R 0.1]
+[charaFadeout F 0.1]
+[charaFadeout S 0.1]
+[subCameraOff]
+[wt 0.1]
+
+[scene 285200]
+
+[charaScale B 1.2]
+[charaScale Q 1.2]
+[charaFace B 11]
+[charaFadein B 0.1 0,20]
+[charaFadein Q 0.1 100,-260]
+
+[cameraMove 0.1 0,-20 1.15]
+[wait camera]
+[wt 0.4]
+
+[fadein white 1.0]
+[cameraMoveEase 0,0 2.0 easeOutSine 1.0]
+[wait fade]
+[wt 1.2]
+
+
+
+＠ウルズ
+[line 3]ビースト・ウルズ。
+[k]
+
+＠ウルズ
+時間は元に戻らないなんて嘘。[r]過去を振り返らないなんて愚行。
+[k]
+
+[charaFaceFade B 9 0.3]
+
+＠ウルズ
+ずっと、過去を振り返り続けよう。[r]私の愛しい、カルデアよ。
+[k]
+
+[messageOff]
+[charaScale K 1.2]
+[charaScale M 1.2]
+[charaScale T 1.2]
+
+[charaFace K 7]
+[charaFadein K 0.4 -200,20]
+[charaFace M 0]
+[charaFadein M 0.4 320,20]
+[charaFadein T 0.4 -40,-260]
+[charaMoveEase K -260,20 0.7 easeOutCubic]
+[charaMoveEase M 260,20 0.7 easeOutCubic]
+[charaMoveEase T -100,-260 0.7 easeOutCubic]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk K]
+
+＠マシュ
+全力でお断りさせていただきます、ビースト・ウルズ！
+[k]
+
+[charaFace K 21]
+
+＠マシュ
+何故なら、わたしたちはもう一秒先の世界へ進むと、[r]決めているのですから！
+[k]
+
+
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_MAP_20 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

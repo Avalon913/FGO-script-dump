@@ -1,0 +1,580 @@
+
+
+＄05-00-01-03-4-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 8001900 1 マシュ]
+[charaSet B 1098346900 1 オルガマリー]
+[charaSet C 1098326000 1 スフィンクス]
+[charaSet D 8001900 1 マシュ]
+
+[sceneSet H 143500 1]
+[charaScale H 1.1]
+
+[charaSet Z 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaDepth Z 3]
+[charaDepth H 4]
+[charaDepth D 5]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad12]
+[effect bit_talk_07_loop_sepia]
+[wt 3.0]
+[effectStop bit_talk_07_loop_sepia]
+[wt 1.0]
+[fadeout white 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_07_loop_sepia]
+
+[scene 143500]
+[effect bit_talk_haboob_01_fs]
+[wt 2.3]
+
+[se ad135]
+[seVolume ad135 0 0]
+[seVolume ad135 1.5 0.5]
+[fadein white 1.5]
+[wait fade]
+
+[bgm BGM_MAP_57 0.1]
+
+
+[charaPut Z 1]
+[charaEffect Z bit_talk_10]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk B]
+[charaFace B 20]
+[charaFadein B 0.1 0,-20]
+[se ad31]
+[seVolume ad31 0 0]
+[seVolume ad31 1.0 0.6]
+＠オルガマリー
+……ょっと、[%1]！[r]マシュ！
+[k]
+
+[charaFace B 6]
+
+
+＠オルガマリー
+そ[i berserker_language_6]は大[i berserker_language_6]な[i berserker_language_9]！？
+[k]
+
+？1：所長！　聞こえますか！
+？！
+
+[charaFace B 9]
+
+＠オルガマリー
+[i berserker_language_9]？　[i berserker_language_8]かく、安全[i berserker_language_6]へ[i berserker_language_8][r]そ[i berserker_language_6]ら北[i berserker_language_8]
+[k]
+
+[messageOff]
+[se ad539]
+[wt 1.0]
+[seStop ad31]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+[charaEffectStop Z bit_talk_10]
+
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+マスター。通信途絶えました。[r]どうやらこの砂嵐のせいで安定しないようです。
+[k]
+
+？1：（ここしかない……！）
+？！
+
+[messageOff]
+[seVolume ad135 1.0 0.1]
+[bgmStop BGM_MAP_57 1.0]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[se ade79]
+[seVolume ade79 0 0]
+[seVolume ade79 0.5 1.0]
+[seVolume ad135 1.0 0.5]
+[wait wipe]
+
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+[seStop ade79 1.0]
+[wt 0.4]
+
+[se bac100]
+[wt 1.5]
+
+[bgm BGM_BATTLE_49 0.1]
+[wt 1.0]
+
+[seVolume ad135 0.5 0.1]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[wt 0.5]
+
+[seVolume ad135 0.5 0.5]
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFace A 2]
+
+＠マシュ
+敵襲……！
+[k]
+
+？1：マシュ、頼みがある！
+？！
+
+[charaFace A 6]
+
+＠マシュ
+は、はい。頼み、ですか？[wt 1.2][charaFace A 9][r]いえ、それは後で。まずは指示を[line 3]
+[k]
+
+？1：戦いながらで悪いんだけど
+？2：[&オレ:わたし]の話を聞いてほしい！
+？！
+
+[charaFace A 19]
+
+＠マシュ
+え、えー！？
+[k]
+
+
+
+
+
+
+
+
+
+
+[messageOff]
+[seStop ad135 1.5]
+[wt 0.5]
+
+[bgm BGM_BATTLE_49 1.0 0.5]
+[fadeout black 1.0]
+[wait fade]
+
+[wt 0.5]
+[cueSe SE_23 23_ade930]
+[wt 1.6]
+[charaFadeout A 0.1]
+[charaFace A 24]
+[charaScale A 1.5]
+[charaPut A 0,45]
+[wt 0.1]
+
+[se ad687]
+[effect bit_talk_14]
+
+[fadein black 0.4]
+[se ad671 0.4]
+[charaMoveEase A 0,0 0.6 easeOutCubic]
+[charaMoveScaleEase A 1.0 0.6 easeOutCubic]
+[charaFadein A 0.4]
+[wait fade]
+[wt 0.6]
+
+[bgm BGM_BATTLE_49 1.0 1.0]
+
+[charaFace A 7]
+
+＠マシュ
+お話とは？
+[k]
+
+？1：[&オレ:わたし]たちはもう、ソロモンと四回戦っている
+？！
+
+[charaFace A 18]
+
+
+
+
+
+
+
+＠マシュ
+ソロモンと！？[r]……あ、いえ……それは……。
+[k]
+
+[messageOff]
+[cueSe SE_24 24_ad1376]
+[wt 0.3]
+[charaFace A 7]
+[wt 0.6]
+
+[se ad73]
+[charaEffect A bit_talk_quickmove]
+[charaSpecialEffect A erasureReverse 1 0.3]
+[wt 1.0]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 0]
+[charaScale C 1.2]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[se ad687]
+[se bac150]
+[shake 0.03 3 3 0.5]
+[effect bit_talk_blow03]
+[charaShake C 0.02 3 2 0.8]
+[wt 1.0]
+[cueSe SE_24 24_ad1377]
+[charaMove C 0,-25 0.6]
+[charaFadeout C 0.5]
+[wt 0.8]
+[se ade311]
+[shake 0.05 0 3 1.0]
+[wt 1.0]
+
+[charaTalk A]
+[charaPut A 0,0]
+[charaFace A 7]
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect A appearance 1 0.25]
+[wt 0.7]
+[charaFace A 18]
+[wt 0.5]
+
+＠マシュ
+……思い出しました！
+[k]
+
+＠マシュ
+……そうです。わたしたちは、確かにソロモンと戦い、[r]人理を修復したはずです……！
+[k]
+
+＠マシュ
+この第六特異点も、修正済みのはず。[r]なのに、何故こんなことに……！？
+[k]
+
+？1：人理修復を繰り返させている敵がカルデアにいる
+？！
+
+[charaFace A 7]
+
+＠マシュ
+カルデアに、ですか！？
+[k]
+
+？1：カルデアで話はできない。監視されているから
+？！
+
+[messageOff]
+[charaFadeout A 0.2]
+[wt 0.1]
+[se ade79]
+[seVolume ade79 0 0]
+[seVolume ade79 0.5 1.0]
+[wt 1.0]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+[seStop ade79 1.0]
+[wt 0.4]
+
+[se bac100]
+[shake 0.05 2 2 1.5]
+[wt 1.5]
+[charaFadeout C 0.2]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……なるほど。それでこの状態で会話をしなければ[r]ならないのですね……！
+[k]
+
+[charaFace A 21]
+
+＠マシュ
+マシュ・キリエライト、把握しました！
+[k]
+
+
+[messageOff]
+
+[charaTalk off]
+[se ad678 0.5]
+[blur motion 0.3 2 100 0.5 0.5 0.05 100]
+[charaMoveScaleEase A 1.4 0.3 easeOutQuint]
+[charaMoveEase A 0,80 0.3 easeOutQuint]
+[charaFadeout A 0.3]
+[fadeout black 0.6]
+[wait fade]
+[effectStop bit_talk_haboob_01_fs]
+[effectDestroy bit_talk_haboob_01_fs]
+[blurOff motion 0.3]
+[wt 0.2]
+[charaFadeout A 0.1]
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[bgmStop BGM_BATTLE_49 1.0]
+[wt 0.3]
+[cueSe Servants_800190 m64972]
+[fowardEffect bit_talk_14 100,80]
+[wt 0.5]
+[fowardEffect bit_talk_blow03 -100,-50]
+[wt 1.5]
+[wt 0.1]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaScale A 1.0]
+[scene 143500]
+[effect bit_talk_haboob_01_fs]
+[wt 0.4]
+
+[charaFace C 0]
+[charaFadein C 0.1 0,0]
+[wt 0.1]
+
+[charaShake C 0.03 5 5 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[cueSe SE_24 24_ad1377]
+[charaMove C 0,-25 0.6]
+[charaFadeout C 0.5]
+[wt 0.8]
+[se ade311]
+[shake 0.05 0 3 1.0]
+[wt 1.5]
+[se ad135]
+[seVolume ad135 0 0]
+[seVolume ad135 1.0 0.5]
+[wt 1.0]
+
+[charaPut Z 1]
+[charaEffect Z bit_talk_10_LowLevel_depth]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠オルガマリー
+よし。通信再開できたわね。[r]マシュ、[%1]！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace D 2]
+[charaScale H 1.2]
+[charaScale D 1.3]
+[charaFadein H 0.4 100,-240]
+[charaFadein D 0.4 180,20]
+[charaMoveEase H 0,-240 0.6 easeOutSine]
+[charaMoveEase D 80,20 0.6 easeOutSine]
+[wt 0.6]
+
+＠マシュ
+は、はい！[r]こちらマシュ・キリエライト。
+[k]
+
+[charaFace D 0]
+
+＠マシュ
+マスターも無事です。[r]現在、わたしたちは砂漠の横断に挑戦しています！
+[k]
+
+[charaFace D 2]
+
+＠マシュ
+それ以外、特に報告はありません！
+[k]
+
+[messageOff]
+[charaFace B 16]
+[charaFadeout D 0.4]
+[charaFadeout H 0.4]
+[wt 0.6]
+[bgm BGM_EVENT_7 0.1]
+[seVolume ad135 2.0 0.2]
+
+＠オルガマリー
+そ、そう。やる気があるようで何よりね。[r]メンタルはちょっと不安定だけど……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……砂が鼻に入って、くしゃみが止まらないからです！[wt 1.5][charaShake A 0.05 3 3 0.5][r]はくちょ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠オルガマリー
+可愛いくしゃみするわね、貴方……。[wt 1.2][charaFace B 12][r]まあ、二人とも無事なら問題ないわ。
+[k]
+
+[messageOff]
+[charaEffect Z bit_talk_10]
+[se ad539]
+[wt 0.6]
+[seStop ad539 0.2]
+[charaEffectDestroy Z bit_talk_10]
+[wt 0.4]
+
+＠オルガマリー
+相変わらず通信は乱れているけど、そこから[r]真っ直ぐ進めば、観測済みの都市に辿り着きます。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut Z 2000,2000]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+了解です。所長。[wt 1.0][charaFace A 7][r]……では、出発ですマスター！
+[k]
+
+？1：よし、がんばろう！
+？！
+
+[charaFace A 2]
+
+＠マシュ
+はい、打倒獅[line 3]し、獅子のような[wt 1.2][charaFace A 3][r]スフィンクスを倒しました、先ほど！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠オルガマリー
+あら、そうなの。
+[k]
+
+[charaFace B 7]
+
+＠オルガマリー
+スフィンクスが出てくるのなら、[r]ここの敵はエジプト神話が出自なのかしら。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+そ、そうとも限りませんね！[r]幅広く考えておくべきです！　円卓の騎士とか！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut Z 1]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠オルガマリー
+円卓の騎士？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut Z 2000,2000]
+
+[charaShake A 0.05 1 1 0]
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：（マシュ嘘をつくのが苦手なタイプだったね……）
+？！
+
+
+[messageOff]
+[seStop ad135 2.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

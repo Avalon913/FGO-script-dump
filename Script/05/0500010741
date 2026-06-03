@@ -1,0 +1,123 @@
+
+
+＄05-00-01-07-4-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 98094000 1 獅子王]
+[charaSet B 1098346900 1 オルガマリー]
+[charaSet C 1012001 1 ベディヴィエール]
+
+[sceneSet Q 284900 1]
+[charaScale Q 1.1]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth Q 1]
+[charaDepth A 2]
+[charaDepth B 3]
+
+[charaDepth S 25]
+[charaDepth T 26]
+
+[scene 131200]
+
+[charaFadein Q 0.1 0,-250]
+
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[se ad949]
+[seVolume ad949 0 0.6]
+[wt 1.5]
+[charaFadeout Q 1.0]
+[wt 0.5]
+[seStop ad949 1.0]
+[wt 2.0]
+
+[bgm BGM_MAP_12 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaPut S 1]
+[charaEffect S bit_talk_06]
+[wt 1.0]
+
+＠獅子王
+騎士の『過去』はこれで終わり……。[r]さあ、次の過去に進むがいい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut S 2500,2500]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ベディヴィエール
+さらば、我が王よ……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[charaPut S 1]
+
+＠獅子王
+ふ。貴卿の王ではないというに。
+[k]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect A flashErasure 1 2.0]
+[wait charaSpecialEffect A]
+[charaEffectStop S bit_talk_06]
+[wt 1.0]
+
+[charaPut T 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠オルガマリー
+獅子王の消滅、こちらでも確認できたわ。[r]お疲れさま。
+[k]
+
+[charaFace B 2]
+
+＠オルガマリー
+……もう少し真っ直ぐ進んでちょうだい。[r]今度は別のサーヴァント反応が出現したわ。
+[k]
+
+[charaFace B 0]
+
+＠オルガマリー
+誘われているのは[#癪:しゃく]だけど、[r]進むしかなさそう。
+[k]
+
+？1：了解、進みます！
+？！
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_12 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

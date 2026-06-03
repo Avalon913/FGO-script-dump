@@ -1,0 +1,335 @@
+
+
+＄05-00-01-10-2-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 1098348700 1 オルガマリー]
+[charaSet B 1098269330 1 エルロン]
+[charaSet C 1098330800 1 マシュ]
+[charaSet D 9013001 1 モリアーティ]
+[charaSet E 1098348500 1 アズライール]
+[charaSet F 1098123000 1 ムニエル]
+[charaSet G 1098346500 1 カワタ]
+[charaSet H 1098347200 1 トマリン]
+
+[sceneSet Q 278700 1]
+
+[charaSet S 98115000 1 エフェクト用]
+
+[scene 277700]
+[pictureFrame cut063_cinema]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth A 2]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_127 0.1]
+
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 0,-50]
+
+＠オルガマリー
+報告は以上、と。[r]……いるのね、ウルズ……いえ、ときこさん。
+[k]
+
+[charaFace A 18]
+
+＠オルガマリー
+まあ、こちらの害にならないならいいわ。[r]報復する気もなさそうだし。
+[k]
+
+[messageOff]
+[charaTalk E]
+[charaFace E 3]
+[charaFadeinFSSideR E 0.4 520,-50]
+[charaMoveFSSideR E 500,-50 0.4]
+[wt 1.0]
+
+[charaFace A 16]
+
+＠オルガマリー
+これ、別にビーストの肩を持っている訳ではないわよ？[r]ないわよ？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_127 1.5]
+
+[cueSe SE_26 26_ad1553]
+[wt 2.0]
+[cueSeStop 26_ad1553 1.8]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠エルロン
+召喚サークルに反応！　魔力増大、これは……。[r]サーヴァント顕現の予兆です！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_128 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 0,-50]
+
+＠オルガマリー
+は？　マスターも不在なのに勝手に召喚が開始したの？[wt 1.2][charaFace A 19][r]まさか、もう次が……！？
+[k]
+
+[charaFace A 6]
+
+＠オルガマリー
+た、ただちにマスターとサーヴァントを呼んで！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_MAP_128 1.0 0.5]
+[wait fade]
+
+[scene 278700]
+
+[charaFadeout A 0.1]
+[pictureFrame]
+
+[se ad59]
+[seVolume ad59 0 0.1]
+[seVolume ad59 1.0 1.0]
+[wt 1.0]
+[seStop ad59 0.2]
+
+[se ad8]
+[fadein black 1.0]
+[bgm BGM_MAP_128 1.0 1.0]
+[wait fade]
+[wt 0.2]
+
+？1：しょ、食事の途中でしたが、到着です！
+？！
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+
+＠マシュ
+ああっ、先輩。[r]こちらお水です、ごっくんしてくださいっ。
+[k]
+
+＠マシュ
+所長、状況は！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠オルガマリー
+ちょうど今、召喚されるところ！[r]マシュ、戦闘準備！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut S 4000,4000]
+[charaEffect S bit_talk_ghost_fog_white]
+[charaEffect S bit_talk_smoke]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+[se ad29]
+[fadeout white 0.5]
+[wait fade]
+
+[charaCrossFade C 8001900 2 0.1]
+[wt 0.5]
+[wait charaCrossFade C]
+
+[fadein white 1.0]
+[wait fade]
+
+＠マシュ
+はい！
+[k]
+
+[messageOff]
+[charaFadeout C 0.2]
+[wt 0.2]
+
+[bgmStop BGM_MAP_128 1.5]
+
+[effect bit_talk_summon_fs]
+[wt 1.0]
+[se ad574]
+[effectStop bit_talk_summon_fs]
+[wt 2.0]
+[fadeout white 0.5]
+[wait fade]
+
+[charaPut S 0,0]
+[wt 0.1]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 2]
+[overlayFadein A 0.4 -300,0]
+[charaMoveEase A -280,0 0.4 easeOutSine]
+[wt 0.4]
+
+＠オルガマリー
+次に来るのは現在のヴェルザンディ、[r]それとも未来のスクルド……あるいは……？
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[wt 0.2]
+[charaScale A 1.0]
+
+
+[cueSeContinue SE_25 25_ade1265 1]
+[wt 1.4]
+[cueSeContinue SE_25 25_ade1265 2]
+[wt 1.4]
+
+[bgm BGM_BATTLE_196 3.0]
+
+＠？？？
+ハーッハッハッハ！[r]どうやら少々出遅れたようだが……。
+[k]
+
+＠？？？
+何、この私がいればいくらでも覆せるとも。[r]計算は何やら不吉な予感を漂わせているが……。
+[k]
+
+＠？？？
+私は気にしない。[r]さあ、カルデアの諸君！
+[k]
+
+[messageOff]
+[charaDepth S 20]
+[charaDepth D 7]
+[charaDepth Q 6]
+
+[charaEffectStop S bit_talk_ghost_fog_white]
+[wt 0.5]
+[charaEffectStop S bit_talk_smoke]
+
+[charaScale D 1.2]
+[charaScale Q 1.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.5 0,160]
+[charaFadein Q 0.5 0,-170]
+[wt 1.8]
+
+[charaFaceFade D 6 0.2]
+[charaMoveEase D 0,5 0.5 easeOutSine]
+[charaMoveEase Q 0,-270 0.5 easeOutSine]
+[wt 0.5]
+
+＠モリアーティ
+我が名はジェームズ・モリアーティ。[r]元、異星の使徒にして今はカルデアの側！
+[k]
+
+＠モリアーティ
+さて[line 3][r]私が倒すべき、空想樹はどこかな！？
+[k]
+
+[messageOff]
+[charaDepth B 5]
+[charaDepth H 4]
+[charaDepth G 3]
+[charaDepth F 2]
+
+[charaTalk off]
+[charaFace B 4]
+[charaFace H 5]
+[charaFace G 5]
+[charaFace F 16]
+[charaFadein B 0 400,0]
+[charaFadein H 0 -145,0]
+[charaFadein G 0 145,0]
+[charaFadein F 0 -400,0]
+
+[charaFadeout D 0.5]
+[charaFadeout Q 0.5]
+[wt 2.5]
+
+[charaFadeout B 0.1]
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠オルガマリー
+……。[r]……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠モリアーティ
+うん、どうした？[r]皆、何やら複雑そうな表情を浮かべているが。
+[k]
+
+？1：空想樹なら店じまいですよ
+？！
+
+[bgmStop BGM_BATTLE_196 1.0]
+[charaFace D 4]
+
+＠モリアーティ
+……。[r]……。
+[k]
+
+[charaFace D 8]
+
+＠モリアーティ
+うっそー……。
+[k]
+
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,229 @@
+
+
+＄05-00-01-03-1-0
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+
+[charaSet A 1098346900 1 オルガマリー]
+[charaSet B 8001900 1 マシュ]
+[charaSet C 9935300 1 ソロモン]
+[charaSet D 9935300 1 ソロモン_演出用]
+
+[sceneSet Q 268000 1]
+
+[charaSet T 98115000 1 エフェクト用]
+
+[scene 284400]
+[cameraMove 0.1 0,0 1.01]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth C 2]
+[charaDepth A 3]
+[charaDepth T 4]
+[charaDepth Q 5]
+[charaDepth D 6]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_KYOSU_1 0.1]
+[wt 0.5]
+
+[charaPut T 1]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠オルガマリー
+[%1]！[r]マシュ！　そこが時間神殿よ。
+[k]
+
+[charaFace A 9]
+
+＠オルガマリー
+足場に気を付けて。少し不安定みたいだから！
+[k]
+
+[charaPut T 2000,2000]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい、了解です！[wt 1.0][charaFace B 7][r]……時間神殿はソロモン以外、無人のようです。
+[k]
+
+＠マシュ
+一気に突き進みましょう！
+[k]
+
+[messageOff]
+[cameraMove 0.3 0,5 1.01]
+[wt 0.3]
+[cameraMove 0.3 0,0 1.01]
+[wt 0.8]
+
+[cueSe SE_25 25_ad1459]
+[cueSe SE_25 25_ade1158]
+[wt 0.2]
+[fadeout black 1.5]
+[bgmStop BGM_KYOSU_1 2.0]
+[wait fade]
+
+[cueSeStop 25_ad1459 1.2]
+[cueSeStop 25_ade1158 1.2]
+
+[charaFadeout B 0.1]
+[charaEffectDestroy T bit_talk_10_LowLevel]
+[cameraHome 0.1]
+[wait camera]
+
+[scene 268000]
+
+[charaScale Q 1.3]
+[charaFadein Q 0.1 0,-280]
+[charaMove Q 0,-350 6.0]
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_MAP_20 0.1]
+[wt 2.5]
+
+[charaFadeout Q 1.0]
+[se ad1042 0 0.5]
+[seVolume ad1042 1.0 1.0]
+[wt 1.4]
+
+[seStop ad1042 0.4]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠ソロモン
+[line 3]来たか。ああ、何て不愉快な瞬間だ。[r]いつもいつも。
+[k]
+
+[messageOff]
+[bgm BGM_MAP_20 0.7 0.4]
+[charaScale Q 1.2]
+[charaScale D 1.2]
+[charaTalk C,D]
+[charaFace D 3]
+[charaFadein D 0.7 -20,20]
+[charaFadein Q 0.7 100,-220]
+[charaMove D 0,20 8.0]
+[charaMove Q 120,-220 8.0]
+[wt 1.2]
+
+[charaFaceFade D 0 0.2]
+[wt 2.0]
+[charaFaceFade D 4 0.3]
+[charaFace C 4]
+[wt 1.5]
+
+[charaTalk C,D]
+[charaFadeout D 0.6]
+[charaFadeout Q 0.6]
+[wt 0.7]
+
+[bgm BGM_MAP_20 0.7 1.0]
+
+＠ソロモン
+……そうか、なるほど。[#そういう理屈か]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+魔術王ソロモン。あなたの計画もここまでです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ソロモン
+その通り、ここまで。我が計画は[#潰:つい]えたのだろうな。[r]だからこそ、か。
+[k]
+
+？1：（何だろう……様子がおかしい）
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ソロモン……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ソロモン
+何、こちらの都合だ。
+[k]
+
+＠ソロモン
+我らにあるのは戦いのみだ。[r]そのために来たのだろう？
+[k]
+
+[charaFace C 1]
+
+＠ソロモン
+[line 3]死に物狂いで抗うがいい。[r]結果次第では、神の[#御業:みわざ]に届くかもしれんぞ？
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠マシュ
+敵魔術王ソロモン、動きます！[r]これが最後の戦いです！　マスター、指示をお願いします！
+[k]
+
+？1：……いくぞ！
+？！
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStopEnd BGM_MAP_20 0.4]
+[wait fade]
+[soundStopAllEnd]
+[end]

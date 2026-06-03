@@ -1,0 +1,668 @@
+
+
+＄05-00-01-07-5-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 8001900 1 マシュ]
+[charaSet B 5018001 1 ギルガメッシュ]
+[charaSet C 1098347200 1 トマリン]
+[charaSet D 1098348700 1 オルガマリー]
+[charaSet E 1098346500 1 カワタ]
+[charaSet F 1098359110 1 ダビデ]
+[charaSet G 1098348500 1 アズライール]
+[charaSet H 4011001 1 ブーディカ]
+[charaSet I 5016001 1 ジェロニモ]
+[charaSet J 3028001 1 ジャガーマン]
+
+[sceneSet O 277700 1]
+[sceneSet P 277700 1]
+[sceneSet Q 285100 1]
+
+[charaSet T 1098120900 1 通信用ノイズ]
+
+[scene 285000]
+
+[cameraMove 0.1 0,0 1.01]
+[wait camera]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0 1]
+
+[bgm BGM_EVENT_141 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.5]
+
+？1：（ちょっとだけ手加減してくれていた！）
+？！
+
+＠ギルガメッシュ
+ここまでだな。良かろう。[r]更に[#旧:ふる]き時代へ戻るがいい。
+[k]
+
+[charaFace B 4]
+
+＠ギルガメッシュ
+だが心せよ。この先に待ち構えているのは、[r]獣の座に至らんとする女神だ。
+[k]
+
+＠ギルガメッシュ
+理解しているであろう？[r][#古今東西:ここんとうざい]、女神などロクなものではない。
+[k]
+
+＠ギルガメッシュ
+この先……否、この[#下]に待ち受けている例の女神も、[r]当然だがその類いだ。
+[k]
+
+＠ギルガメッシュ
+概念が人格を与えられたところで、[r]人間そのものを理解することなど[#永劫:えいごう]あるものか。
+[k]
+
+[messageOff]
+[charaEffect B bit_talk_06]
+[wt 1.6]
+
+[charaFaceFade B 2 0.2]
+
+＠ギルガメッシュ
+さあ行け。そして認めさせるがいい。[r]過去など所詮、成長のための養分に過ぎぬと！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_141 2.0]
+
+[charaSpecialEffect B flashErasure 1 1.5]
+[se ad52]
+[wait charaSpecialEffect B]
+[charaEffectStop B bit_talk_06]
+[wt 1.0]
+
+[shake 0.05 2 3 0]
+[se ad619]
+[seVolume ad619 0 0.1]
+[seVolume ad619 1.0 0.6]
+[wt 2.5]
+
+？1：じ、地震！？
+？！
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad619 0.8]
+[wait fade]
+
+[shakeStop]
+
+[pictureFrameTop cut063_cinema]
+
+[scene 277700]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 0,-50]
+[wt 0.2]
+
+[bgm BGM_EVENT_175 0.1]
+
+[fadein black 0.5]
+[wt 0.1]
+[se ad172]
+[seStop ad172 2.5]
+[wait fade]
+[wt 0.1]
+
+＠トマリン
+都市ウルクが急激に崩れ去っていきます！[r]地震……いえ、まるで分解です。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,-50]
+
+＠オルガマリー
+全員を安全な場所に避難させる必要はあるかしら！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+
+＠カワタ
+……いえ、大丈夫のようです。[r]一行の周囲環境には特段の変化なし！
+[k]
+
+[charaFace E 3]
+
+＠カワタ
+ただ、前方に巨大な穴が……。[r]シバによる探査を開始します！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgm BGM_EVENT_175 0.5 0.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+[effect bit_talk_security_fs]
+[scene 285100]
+
+[subCameraOn 2]
+
+[charaLayer E sub #A]
+[charaLayer O sub #A]
+[charaLayer D sub #B]
+[charaLayer P sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask11 3 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask12 3 255,255,255,255]
+
+[charaScale E 1.15]
+[charaScale D 1.1]
+[charaScale O 1.1]
+[charaScale P 1.1]
+
+[charaTalk depthOff]
+[charaDepth D 4]
+[charaDepth E 3]
+[charaDepth P 2]
+[charaDepth O 1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 520,230]
+[charaFadein O 0.1 200,-40]
+
+[charaFace D 0]
+[charaFadein D 0.1 -500,240]
+[charaFadein P 0.1 -200,-40]
+[wt 0.2]
+
+[se ad1]
+[fadein black 0.5]
+[bgm BGM_EVENT_175 0.5 1.0]
+[wait fade]
+[wt 1.0]
+
+[subRenderFadeinFSSideR #A 0.3 -95,-250]
+[wt 0.3]
+
+＠カワタ
+これは……[#螺旋:らせん]階段ですかね？
+[k]
+
+
+[charaTalk D]
+[subRenderFadeinFSSideL #B 0.3 95,-250]
+
+＠オルガマリー
+[#螺旋:らせん]階段、ね。[r]それも下っていく感じ……。
+[k]
+
+＠オルガマリー
+さっきギルガメッシュが下で待ち受けている、と[r]言っていたわね。
+[k]
+
+[charaFace D 7]
+
+＠オルガマリー
+……[%1]、下りられそう？
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgm BGM_EVENT_175 0.5 0.5]
+[wait fade]
+
+[effectDestroy bit_talk_security_fs]
+
+[pictureFrame]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #B 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[wt 0.1]
+[charaScale E 1.0]
+[charaScale D 1.0]
+[charaLayer D normal]
+[charaLayer E normal]
+[charaLayer O normal]
+[charaLayer P normal]
+
+[scene 285000]
+
+[charaSet D 1098346900 1 オルガマリー]
+
+[charaPut T 0,0]
+[charaEffect T bit_talk_10_LowLevel]
+
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[fadein black 0.5]
+[bgm BGM_EVENT_175 0.5 1.0]
+[wait fade]
+[wt 0.4]
+
+？1：大丈夫でーす！
+？！
+
+[charaFace D 8]
+
+＠オルガマリー
+なら、下りてみて。[r]ウルズは、明らかにその下にいるから。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut T 2000,2000]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠マシュ
+マスター、足元に気を付けてくださいね。[r]では、参りましょう。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_175 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 285100]
+[cameraMove 0.1 0,0 1.01]
+
+[subCameraOn 4]
+
+[charaLayer F sub #A]
+[charaLayer I sub #A]
+[charaLayer H sub #A]
+[charaLayer G sub #B]
+[charaLayer J sub #B]
+[charaLayer T sub #C]
+[charaLayer D sub #C]
+[charaLayer A sub #C]
+
+[subCameraFilter #A maskEdge cut359_mask05 3 0,0,0,255]
+[subCameraFilter #B maskEdge cut359_mask05 3 0,0,0,255]
+[subCameraFilter #C maskEdge cut359_mask05 3 0,0,0,255]
+[subRenderDepth #A 1]
+[subRenderDepth #B 3]
+[subRenderDepth #C 2]
+
+[charaScale F 1.2]
+[charaScale I 1.2]
+[charaScale H 1.2]
+[charaScale G 1.2]
+[charaScale J 1.2]
+[charaScale T 1.2]
+[charaScale D 1.2]
+[charaScale A 1.2]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 20,270]
+
+[charaFace G 0]
+[charaFadein G 0.1 0,270]
+
+[charaScale Q 1.1]
+[charaFadein Q 0.1 0,-240]
+[wt 1.0]
+[charaMoveScale Q 1.2 5.0]
+[charaMove Q 0,-260 5.0]
+
+
+[cueSe SE_26 26_ad1549]
+[cueSeVolume 26_ad1549 0 0]
+[cueSeVolume 26_ad1549 1.0 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 3.0]
+
+[cueSeStop 26_ad1549 2.0]
+[charaFadeout Q 1.0]
+[wt 2.0]
+
+[charaTalk F]
+[subRenderFadein #A 0.2 250,-230]
+[subRenderMove #A 250,-270 0.2]
+[wt 0.2]
+
+[bgm BGM_WHITE_1 0.1]
+
+＠ダビデ
+あー、何だか地獄に落ちていくような感じだねえ。
+[k]
+
+[charaTalk G]
+[subRenderFadein #B 0.2 -250,-230]
+[subRenderMove #B -250,-270 0.2]
+
+＠アズライール
+それは無限に続く、という意味でか？[r]であれば、確かに間違いではない。
+[k]
+
+＠ダビデ
+おや。君のいる地獄だと罪人への責め苦は[r]無限に続く、とかだったりする？
+[k]
+
+[charaFace G 3]
+
+＠アズライール
+それに近い環境だ。基本的に救いはない。[r]罪を[#贖:あがな]う機会は与えられない。
+[k]
+
+＠アズライール
+地上すべての苦味、地上全ての臭みを凝縮した[r]果物の一滴を嘆きながら[#啜:すす]る。永遠に。
+[k]
+
+[charaFace F 3]
+
+＠ダビデ
+[line 3]すまない、地獄の話はよそう。[r]想像しただけで退去してしまいそうだ。
+[k]
+
+[charaFace G 3]
+
+＠アズライール
+おまえたちの地獄も同じようなものだろうがな。
+[k]
+
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[subRenderFadeout #B 0.2]
+[wt 0.2]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+
+
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0 10,270]
+[subRenderFadeinFSL #B 0.2 -350,-230]
+[subRenderMoveFSL #B -350,-270 0.2]
+
+＠ジャガーマン
+不思議な空間ねー。[r]暑くも寒くもない。ってか、空気がなくないココ？
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[subRenderFadeout #B 0.2]
+[wt 0.2]
+[charaFadeout J 0]
+[charaFadeout I 0]
+
+[charaPut T 0,270]
+[charaTalk D]
+[charaFace D 20]
+[charaFadein D 0 0,270]
+[subRenderFadein #C 0.2 250,-230]
+[subRenderMove #C 250,-270 0.2]
+[wt 0.2]
+
+＠オルガマリー
+え、つまり真空状態？　大丈夫なの？[r]バイタルは[line 3]
+[k]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0 0,270]
+[subRenderFadein #B 0.2 -250,-270]
+
+＠アズライール
+……思うに、これは[#時間が停止している]。[r]故に温度はなく、空の揺らぎもない。
+[k]
+
+[charaFace D 17]
+
+＠オルガマリー
+[%1]のバイタルは[r]問題なさそうね。マシュも大丈夫か。
+[k]
+
+[charaFace D 0]
+
+＠オルガマリー
+進めそうなら、進んで。[r]呼吸が苦しくなったら、一旦退避。
+[k]
+
+？1：了解！
+？！
+
+[messageOff]
+[subRenderFadeout #B 0.2]
+[subRenderFadeout #C 0.2]
+[wt 0.2]
+
+[charaFadeout G 0]
+[charaFadeout D 0]
+[charaPut T 2000,2000]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0 10,270]
+[subRenderFadeinFSL #B 0.2 -350,-270]
+[wt 0.2]
+
+＠ジャガーマン
+でもどこまで続いているのか、[r]全然わかんないな、コレ。
+[k]
+
+[charaFace J 1]
+
+＠ジャガーマン
+私、ちょっと落ちてみよっか？
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.2]
+[wt 0.2]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0 0,270]
+[subRenderFadein #A 0.2 -250,-230]
+[subRenderMove #A -250,-270 0.2]
+[wt 0.2]
+
+＠ブーディカ
+気軽に飛び降りようとしないの。
+[k]
+
+[charaFace H 0]
+
+＠ブーディカ
+[%1]、大丈夫？[r]苦しいとか怖いとかない？
+[k]
+
+？1：苦しくはないよ、ちょっと怖いけど
+
+[branch select01_01]
+
+？2：特に何も……
+
+[branch select01_02]
+
+？！
+
+[label select01_01]
+
+[charaFace H 1]
+
+＠ブーディカ
+そっかそっか。
+[k]
+
+＠ブーディカ
+大丈夫、いざとなったらお姉さんが[r]がっちり抱き締めて下りてあげるからね。
+[k]
+
+＠ブーディカ
+もちろんマシュも！
+[k]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0 -80,270]
+[subRenderFadein #C 0.2 250,-230]
+[subRenderMove #C 250,-270 0.2]
+
+＠マシュ
+そ、それはありがとうございます！
+[k]
+
+[branch select01_end]
+
+[label select01_02]
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+[charaFadeout H 0]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0 -20,270]
+[subRenderFadein #A 0.2 0,-270]
+
+＠ジェロニモ
+それは良くないな。
+[k]
+
+＠ジェロニモ
+この状況に恐怖を感じないのは、[r]むしろ危うさがある。
+[k]
+
+[charaFace I 1]
+
+＠ジェロニモ
+……遠慮なく怖がるがいい。
+[k]
+
+？1：……すみません怖いです！
+？！
+
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+[charaFadeout I 0]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0 0,270]
+[subRenderFadein #A 0.2 -250,-270]
+[wt 0.2]
+
+＠ブーディカ
+大丈夫？　あたしが抱えて下りてあげようか？
+[k]
+
+[messageOff]
+[cameraMove 0.2 10,0 1.01]
+[subCameraMove #A 0.2 10,0 1.0]
+[wt 0.15]
+[cameraMove 0.2 0,0 1.01]
+[subCameraMove #A 0.2 0,0 1.0]
+[wt 0.15]
+[cameraMove 0.2 -10,0 1.01]
+[subCameraMove #A 0.2 -10,0 1.0]
+[wt 0.15]
+[cameraMove 0.2 0,0 1.01]
+[subCameraMove #A 0.2 0,0 1.0]
+[wt 0.15]
+[cameraMove 0.2 10,0 1.01]
+[subCameraMove #A 0.2 10,0 1.0]
+[wt 0.15]
+[cameraMove 0.2 0,0 1.01]
+[subCameraMove #A 0.2 0,0 1.0]
+[wt 0.4]
+
+[charaFace H 1]
+
+＠ブーディカ
+なーんだ。マシュはどう？　怖くない？[r]抱えてあげる。
+[k]
+
+[charaLayer F sub #B]
+[charaFace F 6]
+[charaFadein F 0 30,270]
+[charaFadeout J 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0 -80,270]
+[subRenderFadein #C 0.2 250,-230]
+[subRenderMove #C 250,-270 0.2]
+
+＠マシュ
+だ、大丈夫です。はい。
+[k]
+
+[subRenderFadeout #C 0.2]
+[wt 0.2]
+[charaLayer I sub #C]
+[charaFace I 1]
+[charaFadein I 0.1 -20,270]
+[charaFadeout A 0.1]
+
+[charaTalk F]
+[subRenderFadein #B 0.2 250,-290]
+[subRenderMove #B 250,-270 0.2]
+
+＠ダビデ
+いやあ、僕は怖いなぁ。[r]抱えておくれ、ブーディカ。
+[k]
+
+[charaFace H 1]
+
+＠ブーディカ
+はいはい。気が向いたらね。
+[k]
+
+[subRenderFadeout #B 0.2]
+[wt 0.2]
+
+[charaTalk I]
+[subRenderFadein #C 0.2 250,-270]
+
+＠ジェロニモ
+なるほど。[r]一生向かない、というやつだな。
+[k]
+
+[label select01_end]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_WHITE_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
