@@ -1,0 +1,3225 @@
+
+
+
+
+＄94-15-80-00-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+
+[sceneSet A 292600 1]
+[sceneSet B 292600 1]
+[sceneSet C 292604 1]
+
+[imageSet D back292600 1]
+[imageSet E back292600 1]
+[imageSet F back292604 1]
+
+[scene 245000]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[effect bit_talk_rain01]
+[se ade307]
+[seVolume ade307 0 0]
+[seVolume ade307 2.0 0.3]
+[wt 2.5]
+
+＠
+[line 3]いつも。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[effectDestroy bit_talk_rain01]
+
+[scene 292600]
+
+[charaScale E 1.7]
+[charaFadein E 0 -200,500]
+[wt 0.1]
+
+[seVolume ade307 1.0 0.7]
+[fadein black 0.5]
+[wait fade]
+[wt 0.5]
+
+＠
+いつも、聞こえるのは雨の音ばかり。
+[k]
+
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth A 3]
+[charaDepth D 2]
+[charaDepth E 1]
+
+[charaScale D 2.55]
+[charaFadein D 0.5 630,50]
+[charaMove D 630,-30 25.0]
+[wt 0.5]
+
+[charaFadeout E 0.1]
+[wt 0.4]
+
+＠
+せめて、風の音が聞こえたなら。[r]せめて、その温度を頬で感じられたなら。
+[k]
+
+＠
+ひょっとしたら、勘違いできるかもしれないのに。[r]ほんの数秒でも、自分を騙せるかもしれないのに。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaScale A 1.05]
+[charaFadein A 1.2 30,-170]
+
+[charaMoveScaleEase A 1.0 3.0 easeOutSine]
+[charaMoveEase A 0,-200 3.0 easeOutSine]
+[wt 1.5]
+
+[charaFadeout D 0.1]
+[wt 1.5]
+[charaFadeout A 0.1]
+[wt 0.7]
+
+[scene 292601 0.7]
+[wt 2.0]
+
+[scene 292602 0.7]
+[wt 2.0]
+
+[charaPut C 0,-200]
+[charaCutin C verBlind 1.5 0.4]
+[se ad31]
+[seStop ad31 1.0]
+[wt 1.5]
+[wait charaCut C]
+
+[scene 292604]
+[wt 0.2]
+[charaFadeout C 0.1]
+[wt 1.0]
+
+[scene 292603 1.0]
+[wt 2.0]
+
+＠
+……また、繰り返す。
+[k]
+
+[messageOff]
+[wt 0.5]
+[seVolume ade307 2.0 0.3]
+[scene 10000 2.0]
+[wt 3.0]
+
+＠
+あなたのいない、春が来る。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[seStop ade307 2.0]
+[wait fade]
+
+[cameraHome 0.1]
+[scene 10000]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[input selectBranch]
+[messageOff]
+[skip false]
+
+[cameraHome 0.1]
+
+[soundStopAllFade 0.4]
+
+[charaSet A 98115000 1 初期化用ダミー]
+[charaSet B 98115000 1 初期化用ダミー]
+[charaSet C 98115000 1 初期化用ダミー]
+[charaSet D 98115000 1 初期化用ダミー]
+[charaSet E 98115000 1 初期化用ダミー]
+[charaSet F 98115000 1 初期化用ダミー]
+[charaSet G 98115000 1 初期化用ダミー]
+[charaSet H 98115000 1 初期化用ダミー]
+[charaSet I 98115000 1 初期化用ダミー]
+[charaSet J 98115000 1 初期化用ダミー]
+[charaSet K 98115000 1 初期化用ダミー]
+[charaSet L 98115000 1 初期化用ダミー]
+[charaSet M 98115000 1 初期化用ダミー]
+[charaSet N 98115000 1 初期化用ダミー]
+[charaSet O 98115000 1 初期化用ダミー]
+[charaSet P 98115000 1 初期化用ダミー]
+[charaSet Q 98115000 1 初期化用ダミー]
+[charaSet R 98115000 1 初期化用ダミー]
+[charaSet S 98115000 1 初期化用ダミー]
+[charaSet T 98115000 1 初期化用ダミー]
+[charaSet U 98115000 1 初期化用ダミー]
+[charaSet V 98115000 1 初期化用ダミー]
+[charaSet W 98115000 1 初期化用ダミー]
+[charaSet X 98115000 1 初期化用ダミー]
+[charaSet Y 98115000 1 初期化用ダミー]
+[charaSet Z 98115000 1 初期化用ダミー]
+
+[scene 10000]
+[charaTalk depthOff]
+[wt 0.4]
+
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+[wt 0.5]
+
+[fowardEffect bit_queststart80612]
+[wait fowardEffect]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaSet A 1098123000 1 ムニエル]
+[charaSet B 10020000 1 フローラ]
+[charaSet C 6052001 1 おみぃさん]
+[charaSet D 5057000 1 フランチェスカ]
+[charaSet E 5056000 1 フランソワ]
+[charaSet F 4056000 1 ヒッポリュテ]
+[charaSet G 1098360200 1 リチャード]
+[charaSet H 5021001 1 クー・フーリン(キャスタ－)]
+[charaSet I 1002001 1 アルトリアオルタ]
+
+[sceneSet V 105500 1]
+[sceneSet W 105600 1]
+
+[scene 106000]
+[wt 1.5]
+
+[skip true]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_194 0.1]
+[wt 0.5]
+
+？1：寝ても寝ても眠い……
+？2：ベッドに溶けてしまいそう……
+？！
+
+[charaTalk A]
+[charaFace A 10]
+[charaPut A 1]
+[charaFadeTime A 0.4 0.6]
+[wt 0.4]
+
+
+＠ムニエル
+おいおい、まだ寝てたのか[%1]。[r]春もとっくに終わったろうが。
+[k]
+
+[charaFace A 5]
+
+＠ムニエル
+一生分寝る権利ぐらいあるとしてもだな。[r]ずっと寝てばっかりってのも身体に悪いんだ。
+[k]
+
+[charaFace A 7]
+
+＠ムニエル
+とりあえず部屋を出て、[r]運動でもしてきたらどうだ？
+[k]
+
+？1：うーん……まだ眠いけど……
+？2：カルデア内でも散歩するか……
+？！
+
+[messageOff]
+[se ad8]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_194 1.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 105500]
+[wt 0.5]
+[se ade422 0 0]
+[seVolume ade422 1.0 0.8]
+
+[wipein rightToLeft 1.0 1.0]
+[bgm BGM_EVENT_194 1.0 1.0]
+[wait wipe]
+[wt 1.0]
+[seVolume ade422 1.0 0.4]
+
+
+
+[charaScale V 1.2]
+[charaScale W 1.2]
+
+[charaDepth C 6]
+[charaDepth B 5]
+[charaDepth V 4]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFace C 0]
+[overlayFadein B 0.5 -250,0]
+[overlayFadein C 0.5 250,0]
+[overlayFadein V 0.5 -70,-270]
+[charaMove B -230,0 4.0]
+[charaMove C 270,0 4.0]
+[charaMove V -50,-270 4.0]
+[wt 1.4]
+
+[charaFace B 3]
+[charaFace C 8]
+[wt 1.4]
+
+[charaDepth G 11]
+[charaDepth F 10]
+[charaDepth D 9]
+[charaDepth E 8]
+[charaDepth W 7]
+
+[charaFace E 0]
+[charaFace D 0]
+[overlayFadein E 0.5 -150,0]
+[overlayFadein D 0.5 -300,0]
+[overlayFadein W 0.5 70,-270]
+[charaMove E -170,0 4.0]
+[charaMove D -320,0 4.0]
+[charaMove W 30,-270 8.0]
+[wt 1.4]
+
+[charaFadeout B 0]
+[charaFadeout C 0]
+[charaFadeout V 0]
+
+[charaFadeout E 0.7]
+[charaFadeout D 0.7]
+
+[charaFace F 4]
+[overlayFadein F 0.7 0,0]
+[charaMove F -20,0 4.0]
+[wt 1.6]
+[charaFadeout F 0.7]
+
+[charaFace G 0]
+[overlayFadein G 0.7 320,0]
+[charaMove G 300,0 4.0]
+[wt 2.2]
+
+[charaDepth I 14]
+[charaDepth H 13]
+[charaDepth V 12]
+
+[charaFace I 0]
+[charaFace H 0]
+[overlayFadein I 0.5 -250,0]
+[overlayFadein H 0.5 250,0]
+[overlayFadein V 0.5 -70,-270]
+[charaMove I -230,0 4.0]
+[charaMove H 270,0 4.0]
+[charaMove V -50,-270 4.0]
+[wt 2.4]
+
+[charaFadeout G 0]
+[charaFadeout W 0]
+
+
+[charaFadeout I 0.5]
+[charaFadeout H 0.5]
+[charaFadeout V 0.5]
+
+[seVolume ade422 1.0 0.8]
+[wt 1.1]
+
+？1：なんだか珍しい組み合わせだったような……
+？2：なんだかしっくりくる組み合わせだったような……
+
+？！
+
+？1：あのふたりに、最初に会ったのは……
+？！
+
+[messageOff]
+[cueSe SE_22 22_ad1177]
+[seStop ade422 1.2]
+[wipeout circleIn 1.0 1]
+[bgmStop BGM_EVENT_194 1.0]
+[wait wipe]
+
+[effect bit_sepia01_depth_fs]
+
+[scene 269300]
+
+[charaSet A 1098360800 1 グレイ_シルエット]
+[charaFilter A silhouette 00000080]
+[charaSet B 1098360800 1 ？？？]
+
+[charaSet C 1098330800 1 マシュ]
+[charaSet D 1098348500 1 アズライール]
+[charaSet E 1098361000 1 オルガマリー]
+[charaSet F 1098361000 1 オルガマリー_シルエット]
+[charaFilter F silhouette 00000080]
+[charaSet G 1098360900 1 アッド]
+
+[charaSet H 1098330800 1 マシュ_演出用]
+[charaSet I 1098360800 1 グレイ_演出用]
+[charaSet J 1098348500 1 アズライール_演出用]
+[charaSet K 1098361000 1 オルガマリー_演出用]
+
+[charaSet L 6039000 1 通常グレイ_演出用]
+
+[sceneSet M 105500 1]
+[sceneSet N 286000 1]
+[sceneSet O 286100 1]
+[sceneSet P 286100 1]
+[sceneSet Q 286100 1]
+[sceneSet R 286100 1]
+[sceneSet S 238200 1]
+
+[sceneSet W 10000 1]
+[sceneSet X 10000 1]
+[charaScale W 1.01]
+[charaScale X 1.01]
+[sceneSet Y 10000 1]
+[charaScale Y 1.05]
+
+[charaSet Z 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.3]
+
+[wipein circleIn 1.0 1]
+[wait wipe]
+[wt 1.5]
+
+[wipeout circleIn 1.0 1]
+[wait wipe]
+
+[effectDestroy bit_sepia01_depth_fs]
+[scene 105500]
+[wt 1.0]
+
+[wipein circleIn 1.0 1]
+[wait wipe]
+[wt 0.2]
+
+
+[charaDepth A 4]
+[charaDepth I 3]
+[charaDepth M 2]
+[charaDepth B 1]
+
+[charaScale A 1.2]
+[charaScale I 1.2]
+[charaScale M 1.2]
+
+[cueSe SE_24 24_ade1080]
+[cueSeVolume 24_ade1080 0 0.1]
+[cueSeVolume 24_ade1080 1.5 1.0]
+[charaFadein M 1.0 -30,-270]
+[charaMove M -80,-270 1.5]
+[wt 1.7]
+
+[charaFace A 0]
+[charaFadein A 0.5 0,40]
+[wt 0.2]
+[cueSeStop 24_ade1080 0.4]
+[wt 1.0]
+
+[charaFace I 0]
+[charaFadein I 0.1 0,40]
+[wt 0.1]
+
+[charaFadeout A 0.7]
+[wt 1.8]
+
+[bgm BGM_EPHEMEROS_1 0.1]
+
+？1：……誰？
+？2：……迷子？
+？！
+
+[charaFace B 5]
+[charaFadein B 0 0,20]
+
+[charaMoveEase I -10,40 0.5 easeOutSine]
+[cueSe SE_24 24_ade1080]
+[wt 0.6]
+[charaMoveEase I -20,40 0.5 easeOutSine]
+[wt 0.4]
+[cueSeStop 24_ade1080 0.4]
+[wt 0.8]
+
+[charaMoveEase I -30,40 0.5 easeOutSine]
+[cueSe SE_24 24_ade1080]
+[wt 0.6]
+[charaMoveEase I -40,40 0.5 easeOutSine]
+[wt 0.4]
+[cueSeStop 24_ade1080 0.2]
+[wt 1.0]
+
+[charaFace I 9]
+
+＠？？？
+あ。
+[k]
+
+[messageOff]
+[charaFadeout I 0.5]
+[charaFadeout M 0.5]
+[wt 0.5]
+
+[charaTalk on]
+
+＠？？？
+ますたーだぁ！
+[k]
+
+[messageOff]
+[charaFace B 1]
+[charaMoveScaleEase B 1.05 0.5 easeOutSine]
+[charaMoveEase B 0,30 0.5 easeOutSine]
+[cueSe SE_24 24_ade1080]
+[wt 0.7]
+[charaMoveScaleEase B 1.1 0.5 easeOutSine]
+[charaMoveEase B 0,40 0.5 easeOutSine]
+[wt 0.5]
+[cueSeStop 24_ade1080 0.2]
+[wt 0.7]
+
+？1：わっ
+？！
+
+[charaMoveEase B 0,30 0.5 easeOutSine]
+[wt 0.6]
+
+[charaMoveScaleEase B 1.35 0.5 easeOutSine]
+[charaMoveEase B 0,85 0.5 easeOutSine]
+[se adm21]
+[wt 0.2]
+[shake 0.05 1 2 0.3]
+[se ad183]
+[wt 1.2]
+
+[charaFace B 18]
+[wt 1.0]
+
+＠？？？
+ますたーのにおいだぁ～。
+[k]
+
+[messageOff]
+[charaFace B 16]
+[charaMoveReturnEase B -5,85 0.7 easeOutSine easeOutSine]
+[cueSe SE_24 24_ade981]
+[wt 0.5]
+[charaMoveReturnEase B 5,85 0.7 easeOutSine easeOutSine]
+[wt 0.4]
+[charaMoveReturnEase B -5,85 1.0 easeOutSine easeOutSine]
+[cueSeStop 24_ade981 0.7]
+[wt 0.8]
+
+＠？？？
+あんしん……
+[k]
+
+[messageOff]
+[wt 0.2]
+[charaCrossFade B 1098360840 0 0.7]
+[cueSe SE_24 24_ade981]
+[cueSeStop 24_ade981 1.2]
+[wait charaCrossFade B]
+[wt 1.5]
+
+？1：寝ちゃった……
+？2：この子、どこかで……
+？！
+
+＠？？？
+ししょお……らいねす……
+[k]
+
+？1：え？
+？！
+
+[messageOff]
+[charaFadeout B 0.2]
+[wt 0.4]
+
+[bgmStop BGM_EPHEMEROS_1 0.5]
+
+[se ad842]
+[seVolume ad842 0 0.6]
+[shake 0.05 5 5 1.5]
+[wt 2.8]
+
+[bgm BGM_EVENT_81 0.1]
+[wt 0.2]
+
+？1：今のは！
+？2：まさか、カルデアへの襲撃……！
+
+？！
+
+[cueSe SE_22 22_ad1177]
+[fadeout white 0.7]
+[bgm BGM_EVENT_81 0.7 0.5]
+[wait fade]
+
+[scene 52400]
+[effect bit_sepia01_depth_fs]
+[overlayFadein W 0 0,-736]
+[overlayFadein X 0 0,736]
+
+[subCameraOn 1]
+
+[charaLayer Y sub #A]
+[charaLayer B sub #A]
+[charaLayer M sub #A]
+
+[subCameraFilter #A through]
+[subRenderScale #A 1.01]
+
+[charaDepth B 6]
+[charaDepth M 5]
+[charaDepth Y 4]
+
+[subRenderFadein #A 0 0,0]
+[wt 0.7]
+
+[fadein white 0.7]
+[wait fade]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_81 0.5]
+
+[charaPut Y 1]
+[charaFadeTime Y 0.3 0.6]
+[wt 0.3]
+
+＠？？？
+ふにゃ……うにゃあ……
+[k]
+
+[messageOff]
+[charaFadeout W 0.5]
+[charaFadeout X 0.5]
+
+[charaScale M 1.2]
+
+[charaFace B 0]
+[charaFadein B 0.5 50,85]
+[charaFadein M 0.5 50,-270]
+[charaMoveEase B 0,85 1.0 easeOutSine]
+[charaMoveEase M 0,-270 1.0 easeOutSine]
+[wt 1.0]
+
+[bgm BGM_MAP_127 0.1]
+[wt 0.5]
+
+[scene 105500]
+[effectDestroy bit_sepia01_depth_fs]
+[charaFadeout Y 0.1]
+[wt 1.0]
+
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+[charaFadeout B 0]
+[charaFadeout M 0]
+[subCameraOff]
+[charaLayer Y normal]
+[charaLayer B normal]
+[charaLayer M normal]
+
+[se ad59]
+[seVolume ad59 0 0.1]
+[seVolume ad59 1.0 1.0]
+[wt 1.0]
+
+[charaTalk off]
+[charaFace H 24]
+[charaFadein H 0.4 1]
+[wt 0.4]
+[seStop ad59 0.2]
+
+＠マシュ
+先輩！　ご無事ですか！
+[k]
+
+？1：こっちは大丈夫
+？2：マシュも無事でよかった
+
+？！
+
+[charaFace H 29]
+
+＠マシュ
+その子は、どうしたんですか？
+[k]
+
+[messageOff]
+[charaDepth B 8]
+[charaDepth D 7]
+[charaDepth C 6]
+[charaDepth M 5]
+[charaDepth J 2]
+[charaDepth H 1]
+
+[charaScale C 1.1]
+[charaScale B 1.5]
+
+[charaFace C 29]
+[charaFace B 0]
+[charaFadein C 0.5 -280,0]
+[charaFadein B 0.5 130,85]
+[charaFadein M 0.5 -50,-270]
+[wt 1.0]
+
+[charaFadeout H 0.1]
+
+[charaMoveReturnEase B 128,85 0.7 easeOutSine easeOutSine]
+[cueSe SE_24 24_ade981]
+[wt 0.5]
+[charaMoveReturnEase B 132,85 0.7 easeOutSine easeOutSine]
+[wt 0.4]
+[charaMoveReturnEase B 128,85 1.0 easeOutSine easeOutSine]
+[cueSeStop 24_ade981 0.7]
+[wt 0.8]
+
+[charaFace C 6]
+[wt 1.0]
+
+[charaTalk on]
+[charaFace C 3]
+
+＠マシュ
+と、とても愛らしい方ですね……！[r]少しアルトリアさんと似てらっしゃる？
+[k]
+
+[charaFace C 29]
+
+＠マシュ
+基地内を歩いていた？　でも、こんな子は……[r]まさか新しく召喚されたアルトリアさんとか……！
+[k]
+
+？1：うーん、アルトリア大飽和……！
+？2：うーん、アルトリア大集合……！
+
+？！
+
+[messageOff]
+[charaFadeout C 0.5]
+[charaFadeout B 0.5]
+[charaFadeout M 0.5]
+[wt 0.5]
+[charaScale C 1.0]
+
+[se ad1042]
+[seVolume ad1042 0 0.4]
+[seVolume ad1042 0.5 1.0]
+[wt 1.0]
+
+[charaTalk off]
+[charaFace J 0]
+[charaFadein J 0.4 1]
+[wt 0.4]
+[seStop ad1042 0.2]
+
+＠アズライール
+……理解しかねる発想だ。[r]英雄と兵士。成熟と未熟。大人と子供。
+[k]
+
+＠アズライール
+同じ力量の英霊が重複している、と[r]いうのであれば多少なりとも話は分かるが、
+[k]
+
+＠アズライール
+一方より優れた状態の者が既にいるのなら[r]もう一方に与えられる[#職務:せ　き]はない。
+[k]
+
+＠アズライール
+リソースの無駄遣いだ。カルデアでは異なる[r]側面の英霊を[#喚:よ]ぶ事が日常化しているのか？
+[k]
+
+[charaFaceFade J 3 0.15]
+
+＠アズライール
+……していたな。[r]……多様性、というヤツか。
+[k]
+
+
+[charaFaceFade J 0 0.15]
+
+＠アズライール
+まあいい。[%1]。マシュ。[r]おまえたちを呼びに来た。
+[k]
+
+＠アズライール
+所長室に急げ。[r]そちらの娘は部外者だな。ではいったん私が[line 3]
+[k]
+
+[messageOff]
+[charaScale D 1.1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFace B 0]
+[charaFadein D 0.5 -280,-10]
+[charaFadein B 0.5 150,75]
+[charaFadein M 0.5 -50,-270]
+[wt 1.0]
+
+[charaMoveScale D 1.15 0.5]
+[charaMove D -280,5 0.5]
+[se ad1042]
+[wt 0.4]
+[seStop ad1042 0.2]
+[wt 0.2]
+
+[charaMoveReturnEase B 148,75 0.7 easeOutSine easeOutSine]
+[cueSe SE_24 24_ade981]
+[wt 0.5]
+[charaMoveReturnEase B 152,75 0.7 easeOutSine easeOutSine]
+[wt 0.4]
+[charaMoveReturnEase B 148,75 1.0 easeOutSine easeOutSine]
+[cueSeStop 24_ade981 0.7]
+[wt 1.0]
+
+[charaTalk on]
+
+＠？？？
+……うにゃあ……や～や……
+[k]
+
+
+[messageOff]
+[charaMoveReturnEase B 148,75 0.7 easeOutSine easeOutSine]
+[cueSe SE_24 24_ade981]
+[wt 0.5]
+[charaMoveReturnEase B 152,75 0.7 easeOutSine easeOutSine]
+[wt 0.4]
+[charaMoveReturnEase B 148,75 1.0 easeOutSine easeOutSine]
+[cueSeStop 24_ade981 0.7]
+[wt 1.5]
+
+[charaTalk D]
+[charaFaceFade D 3 0.2]
+[charaMoveScale D 1.10 0.5]
+[charaMove D -280,0 0.5]
+[wt 0.8]
+
+＠アズライール
+……離れそうにないな。[r]いいだろう、連れて行け。事は緊急を要する。
+[k]
+
+？1：緊急なんですか？
+？2：そういえば、さっきの衝撃は[line 3]
+？！
+
+[messageOff]
+[charaTalk D,J]
+[charaFace J 1]
+
+[charaFadeout D 0.5]
+[charaFadeout B 0.5]
+[charaFadeout M 0.5]
+[wt 0.5]
+[charaScale D 1.0]
+
+[charaTalk off]
+
+＠アズライール
+そうだ。[r]無論、先ほどの衝撃に関係しているとも。
+[k]
+
+＠アズライール
+理由はまだ判明していないが、[r]発生源も犯人も分かっている。
+[k]
+
+＠アズライール
+オルガマリー・アニムスフィア。[r]その霊基がついに[line 3]
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+
+＠マシュ
+！[r]オルガマリー所長に何かあったのですか！？
+[k]
+
+？1：[line 3]！（まさかビーストの兆しが！？）
+？2：…………！（まさか大統領パワーが！？）
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠アズライール
+おまえもそう思うか、[%1]。[r]気が合うな。後でガッカリするがいい。
+[k]
+
+[charaFace D 0]
+
+＠アズライール
+残念ながら、私から説明する[#術:すべ]はない。[r]直接見た方が早いだろう。
+[k]
+
+＠アズライール
+その娘が荷物になる、というのであれば[r]やはり私が預かる。それなりに重さはあるだろう。
+[k]
+
+？1：大丈夫、平気です！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠マシュ
+はい！　先輩、毎日鍛えていますから！[r]いざという時はわたしが[#庇:かば]います！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠アズライール
+…………。もしや、おまえたちの娘か？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠マシュ
+！？[messageShake 0.05 4 4 0.2][r]いいいいえ、そういうワケではないのですが！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+？2：……子供、好きなんですか？
+
+＠アズライール
+いや。別に。[r]どちらかというと苦手だ。
+[k]
+
+＠アズライール
+弱点は克服したいからな。[r]最低でも三人はほしい。
+[k]
+
+[charaFaceFade D 3 0.15]
+
+？！
+
+＠アズライール
+……しかし子供……子供か。[r]その娘、無関係ではないかもしれん。
+[k]
+
+＠アズライール
+まあいい。急ぐぞ。[r]あまり[#所長:ア　レ]をひとりにはしてはおけん。
+[k]
+
+
+[messageOff]
+[se ad1042]
+[wt 0.2]
+[seStop ad1042 2.0]
+[se ad95]
+[seStop ad95 2.0]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_MAP_127 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 286000]
+[charaScale N 1.2]
+[charaFadein N 0.1 -50,-250]
+[wt 1.0]
+[charaMove N 0,-250 4.0]
+
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 1.5]
+[charaFadeout N 0.7]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠アズライール
+戻ったぞオルガマリー。[r][%1]とマシュを連れてきた。
+[k]
+
+＠アズライール
+このふたりであればおまえも文句はあるまい。[r]中に入るが、もう放電はしていないな？
+[k]
+
+＠オルガマリー
+ちょ、誰がそんなコト頼んだのよ！？[r]むしろそのふたりはダメ！　絶対ダメ！
+[k]
+
+＠アズライール
+そんな筈はない。これ以上の適任はいまい。[r]どんな状況であれ、これでいい筈だ。入るぞ。
+[k]
+
+＠オルガマリー
+そんなもどんなも知らないわよ！[r]ぜっっったいに入らせません！
+[k]
+
+＠オルガマリー
+ここはわたしの城！[r]領地！　[#不法侵入:ふほうしんにゅう]には断固抵抗[line3]
+[k]
+
+[cueSe SE_24 24_ade1031]
+[cueSeVolume 24_ade1031 0 0.1]
+[cueSe SE_24 24_ad1360]
+[cueSeStop 24_ad1360 0.4]
+
+＠アズライール
+ロック[#截断:せつだん]。失礼する。
+[k]
+
+[messageOff]
+[se ad8]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[scene 286100]
+
+[charaPut T 5000,5000]
+[charaEffect T bit_talk_irisout]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaDepth F 4]
+[charaDepth K 3]
+[charaDepth Q 2]
+[charaDepth E 1]
+
+[charaScale F 1.2]
+[charaScale K 1.2]
+[charaScale Q 1.2]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.5 0,80]
+[charaFadein Q 0.5 0,-220]
+[charaMove F 0,30 3.0]
+[charaMove Q 0,-270 3.0]
+[wt 3.5]
+
+[charaFace E 29]
+[charaFadein E 0 1]
+
+＠オルガマリー
+あ、あああああああ……
+[k]
+
+[messageOff]
+[charaFace K 29]
+[charaFadein K 0.1 0,30]
+[wt 0.1]
+[charaFadeout F 0.7]
+[wt 1.6]
+
+[charaFadeout K 0.5]
+[charaFadeout Q 0.5]
+[wt 1.5]
+
+[bgm BGM_EVENT_146 0.1]
+
+？1：所長が
+？2：幼く
+？！
+
+[subCameraOn 2]
+
+[charaLayer C sub #A]
+[charaLayer O sub #A]
+[charaLayer D sub #B]
+[charaLayer P sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask10 5 255,255,255,255]
+
+[charaScale C 1.2]
+[charaScale D 1.2]
+[charaScale O 1.2]
+[charaScale P 1.2]
+
+[charaDepth C 9]
+[charaDepth O 8]
+[charaDepth D 7]
+[charaDepth P 6]
+
+[charaFace C 19]
+[charaFadein C 0 -20,270]
+[charaFadein O 0 -200,-20]
+
+[charaFace D 3]
+[charaFadein D 0 0,270]
+[charaFadein P 0 200,-20]
+
+[charaTalk on]
+[charaTalk C]
+[subRenderFadeinFSSideR #A 0.2 430,-270]
+[subRenderMoveEaseFSSideR #A 380,-270 0.3 easeOutSine]
+[wt 0.3]
+
+＠マシュ
+なってます[line 3]！！！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+
+[charaTalk D]
+[subRenderFadeinFSSideL #B 0.2 -430,-270]
+[subRenderMoveEaseFSSideL #B -380,-270 0.3 easeOutSine]
+[wt 0.3]
+
+＠アズライール
+そうだ。ついに馬脚、いや、獣角を現したかと[r]期待すればこの有様でな。
+[k]
+
+＠アズライール
+あまりの失望で[#眩暈:めまい]に襲われたほどだ。[r]どうしてくれる。
+[k]
+
+[subRenderFadeout #B 0.2]
+
+[charaFace E 24]
+
+＠オルガマリー
+[#眩暈:めまい]で倒れたいのはこっちの方よ！
+[k]
+
+＠オルガマリー
+朝起きたら突然こうなってたの！[r]わたしだってワケが分からないんだから！
+[k]
+
+[messageOff]
+[charaFadeout C 0]
+[charaFadeout D 0]
+[charaFadeout O 0]
+[charaFadeout P 0]
+[subCameraOff]
+[charaLayer C normal]
+[charaLayer D normal]
+[charaLayer O normal]
+[charaLayer P normal]
+
+[charaScale C 1.0]
+[charaScale D 1.0]
+
+[se ad626]
+[seVolume ad626 0 0]
+[se ad632]
+[seVolume ad632 0 0]
+[seVolume ad626 0.5 0.3]
+[seVolume ad632 0.5 0.3]
+[cueSe SE_22 22_adm89 0.5 0.3]
+[effect bit_talk_lightning_U_01]
+[wt 2.0]
+
+[cueSeStop 22_adm89 0.3]
+[seStop ad626 0.3]
+[seStop ad632 0.3]
+
+[shake 0.05 2 3 1.4]
+[cueSe NoblePhantasm_700600 NP_700600_7 0 0.7]
+[cueSe Servants_304900 m03104 0 0.7]
+[se ad842]
+[seVolume ad842 0 0.6]
+[effect bit_talk_lightning_U_02]
+[wt 1.5]
+
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+[effectDestroy bit_talk_lightning_U_01]
+[effectDestroy bit_talk_lightning_U_02]
+[wt 0.1]
+
+[shake 0.05 2 3 0.7]
+
+[fadein white 0.5]
+[wait fade]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠アズライール
+その上、このように魔力の制御ができていない。[r]肉体の変化で魔術回路まで混線している。
+[k]
+
+＠アズライール
+この異常を究明するためにまず検査を、と[r]提案したのだが[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 29]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+嫌に決まってるでしょう！　だって検査なのよ！[r]注射だってされちゃうじゃない！
+[k]
+
+＠オルガマリー
+貴方もマスターなんだから、[r]それぐらいわかってよ！
+[k]
+
+？1：所長の性格も
+？2：いつもと違ってるような
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠マシュ
+た、多分、体のせいです。
+[k]
+
+＠マシュ
+サーヴァントはもちろんのこと、[r]生物は肉体に感覚を引っ張られるものです。
+[k]
+
+＠マシュ
+記憶は変わらないみたいですが、[r]体感としてはもっと幼い頃の……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 27]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+？1：つまり
+？2：小学生ぐらいの所長？
+？！
+
+＠オルガマリー
+と、とにかく！　検査は受けない！[r]受けないったら受けないの！
+[k]
+
+[messageOff]
+[se ad626]
+[seVolume ad626 0 0]
+[se ad632]
+[seVolume ad632 0 0]
+[seVolume ad626 0.5 0.3]
+[seVolume ad632 0.5 0.3]
+[cueSe SE_22 22_adm89 0.5 0.3]
+[charaEffect E bit_talk_lightning_U_01]
+[wt 2.5]
+
+[cueSeStop 22_adm89 1.0]
+[seStop ad626 1.0]
+[seStop ad632 1.0]
+
+[charaDepth B 11]
+[charaDepth D 10]
+[charaDepth Q 8]
+[charaDepth E 6]
+
+[charaScale Q 1.4]
+
+[charaTalk B,E]
+[charaFace B 0]
+[charaFadein B 0.5 20,85]
+[charaFadein Q 0.5 -30,-290]
+[charaMoveEase B 0,85 0.5 easeOutSine]
+[charaMoveEase Q -50,-290 0.5 easeOutSine]
+[wt 1.5]
+
+[charaCrossFade B 1098360800 8 0.7]
+[cueSe SE_24 24_ade981]
+[cueSeStop 24_ade981 1.2]
+[wait charaCrossFade B]
+
+[bgmStop BGM_EVENT_146 1.5]
+
+＠？？？
+んんん……
+[k]
+
+[messageOff]
+[subCameraOn 3]
+
+[charaLayer C sub #A]
+[charaLayer O sub #A]
+[charaLayer D sub #B]
+[charaLayer P sub #B]
+
+[subCameraFilter #A maskEdge cut359_mask11 5 255,255,255,255]
+[subCameraFilter #B maskEdge cut359_mask10 5 255,255,255,255]
+
+[charaScale C 1.2]
+[charaScale D 1.2]
+[charaScale O 1.2]
+[charaScale P 1.2]
+
+[charaDepth C 9]
+[charaDepth O 8]
+[charaDepth D 7]
+[charaDepth P 6]
+
+[charaFace C 19]
+[charaFadein C 0 475,270]
+[charaFadein O 0 -100,-70]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0 0,270]
+[charaFadein P 0 200,-20]
+[charaTalk D]
+[subRenderFadeinFSSideL #B 0.2 -430,-270]
+[subRenderMoveEaseFSSideL #B -380,-270 0.3 easeOutSine]
+[wt 0.3]
+
+
+＠アズライール
+娘[line 3]
+[k]
+
+[messageOff]
+[subRenderFadeout #B 0.2]
+[wt 0.2]
+
+[charaLayer E sub #C]
+[charaLayer R sub #C]
+
+[subCameraFilter #C normal]
+
+[subRenderScale #C 1.01]
+
+[charaPut E -250,0]
+
+[charaDepth R 2]
+[charaScale R 1.2]
+[charaFadein R 0.1 0,-270]
+
+[charaTalk B,E,D]
+[charaFace B 7]
+[wt 0.7]
+[charaMoveEase B 0,40 0.7 easeInBack]
+[wt 0.2]
+[cueSe SE_24 24_ade988]
+[cueSeVolume 24_ade988 0 0.4]
+[cueSeStop 24_ade988 0.4]
+[wt 0.3]
+[charaFadeout B 0.2]
+[wt 0.2]
+
+[charaLayer B sub #C]
+[subRenderFadein #C 0.5 0,0]
+[wt 0.8]
+
+[charaFadeout Q 0.1]
+
+[cueSe SE_24 24_ade1080]
+[cueSeStop 24_ade1080 1.0]
+[wt 0.2]
+
+[charaScale B 1.0]
+[charaFace B 7]
+[charaFadein B 0.4 250,0]
+[charaMove B 230,0 0.4]
+[wt 0.8]
+
+[subRenderDepth #A 4]
+[subRenderDepth #C 1]
+
+[charaTalk C]
+[charaFace C 12]
+[subRenderFadeinFSSideR #A 0.3 -195,-50]
+[subRenderMoveFSSideR #A -95,-200 0.3]
+[wt 0.3]
+
+＠マシュ
+近づいてはダメです！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+
+[charaFadeout C 0]
+[charaFadeout D 0]
+[charaFadeout O 0]
+[charaFadeout P 0]
+[charaLayer C normal]
+[charaLayer D normal]
+[charaLayer O normal]
+[charaLayer P normal]
+
+[charaScale C 1.0]
+[charaScale D 1.0]
+
+＠？？？
+ん……と……
+[k]
+
+[messageOff]
+[charaTalk B,E]
+[charaMove B 180,0 1.0]
+[cueSe SE_24 24_ade1080]
+[cueSeStop 24_ade1080 1.4]
+[wt 1.4]
+
+[bgm BGM_TOU_1 0.1]
+
+[charaFace B 0]
+
+＠？？？
+あばれちゃ、めーだよ。[r]おるがちゃん、おちついて。
+[k]
+
+[messageOff]
+[charaDepth C 1]
+[charaFace C 6]
+[charaFadein C 0 1]
+
+[charaTalk E]
+[charaFace E 12]
+[wt 1.5]
+
+[charaTalk C,E]
+[subRenderFadeout #C 0.5]
+[wt 0.5]
+
+＠マシュ
+……え……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠アズライール
+ほう。
+[k]
+
+[messageOff]
+[charaTalk E,B,D]
+[charaPut E -200,0]
+[charaPut B 200,0]
+
+[subRenderScale #C 1.15]
+[subRenderFadein #C 0.5 0,-30]
+[wt 1.5]
+
+[charaFadeout D 0.1]
+
+？1：おるがちゃん……
+？！
+
+[charaEffectStop E bit_talk_lightning_U_01]
+[wt 2.0]
+
+＠オルガマリー
+体の中が……落ち着いて……
+[k]
+
+[charaFace B 16]
+
+＠？？？
+よかった。[r]おちついたね。
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.5]
+[subRenderMoveEase #C -180,0 1.0 easeOutSine]
+[subRenderMoveScaleEase #C 1.35 1.0 easeOutSine]
+[wt 1.0]
+
+[charaEffect B bit_talk_comic_noisily 15,-190]
+
+＠？？？
+イッヒヒヒ！　すまねえな！
+[k]
+
+＠？？？
+こいつ、自分の世界のオルガマリーと[r]お前とを混同してるみたいなんだ！
+[k]
+
+[messageOff]
+[charaTalk C,B]
+[charaFace C 6]
+[charaFadein C 0 1]
+
+[subRenderFadeout #A 0.5]
+[subRenderFadeout #C 0.5]
+[wt 0.5]
+
+＠マシュ
+その声は[line 2]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFadeout B 0]
+[charaFadeout R 0]
+[charaEffectDestroy B bit_talk_comic_noisily]
+
+[subCameraFilter #C through]
+[subRenderScale #C 1.01]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0 1]
+
+[subRenderFadein #C 0.1 0,0]
+
+[charaEffect B bit_talk_comic_noisily 15,-190]
+
+＠？？？
+おう、だから俺だって！
+[k]
+
+[messageOff]
+[charaEffectStop B bit_talk_comic_noisily]
+
+[charaLayer Z sub #A]
+[charaLayer T sub #A]
+[charaLayer L sub #A]
+[charaLayer S sub #A]
+
+[subCameraFilter #A normal]
+[subRenderScale #A 1.01]
+
+[charaDepth Z 9]
+[charaDepth T 8]
+[charaDepth L 3]
+[charaDepth S 2]
+
+[charaScale L 1.4]
+[charaScale S 1.2]
+
+[charaTalk B,L]
+[charaFace L 0]
+[charaFadein L 0 -310,30]
+[charaFadein S 0 20,0]
+[subRenderDepth #A 2]
+[subRenderDepth #C 4]
+
+
+[subRenderFadein #A 0.5 0,0]
+[charaMoveEase L -330,30 0.5 easeOutSine]
+[charaMoveEase S 0,0 0.5 easeOutSine]
+[wt 1.5]
+
+[charaPut Z -200,-60]
+[charaEffect Z bit_talk_irisout]
+[subRenderMoveEase #A 20,100 1.0 easeOutSine]
+[subRenderMoveScaleEase #A 1.4 1.0 easeOutSine]
+[wt 0.3]
+[cueSe SE_21 21_ade638]
+[wt 2.0]
+[charaPut T -200,-60]
+
+？1：まさか
+？2：アッド！
+？！
+
+[subRenderFadeout #A 0.5]
+[wt 0.5]
+
+[charaEffectDestroy Z bit_talk_irisout]
+[charaEffectDestroy T bit_talk_irisout]
+[sceneSet S 286100 1]
+
+
+[charaFadeout L 0]
+[charaLayer L normal]
+[charaLayer Z normal]
+[charaLayer T normal]
+
+[charaLayer G sub #A]
+[charaLayer S sub #A]
+[subCameraFilter #A maskEdge cut359_mask23 4 196,192,198,255]
+
+[subRenderScale #A 0.7]
+
+[charaDepth G 6]
+[charaDepth S 5]
+[charaScale S 2.5]
+
+[charaScale G 1.55]
+[charaFace G 2]
+[charaFadein G 0 355,225]
+[charaFadein S 0 900,0]
+[charaTalk G]
+[subRenderFadein #A 0.3 -495,-35]
+[subRenderMoveEase #A -515,-25 0.5 easeOutSine]
+[wt 0.5]
+
+＠G：？？？
+やっと思い出してくれたかよ！　アッドだ！[r]こいつのお[#守:も]りをずっとしてる礼装！
+[k]
+
+＠G：アッド
+って、この姿だと、本当にお[#守:も]りだな！[r]イッヒヒヒ！
+[k]
+
+[subRenderFadeout #A 0.1]
+[subRenderFadeout #C 0.1]
+[wt 0.1]
+[charaFadeout B 0]
+[charaLayer B normal]
+[charaLayer E normal]
+[charaLayer R normal]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+そ、そんな。じゃあ……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+まさか、貴方は……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠？？？
+んーーー？
+[k]
+
+[messageOff]
+[charaTalk G]
+[charaFace G 1]
+[subRenderFadein #A 0.4 -515,-25]
+[wt 0.5]
+
+＠アッド
+[#グレイ]だともよ！
+[k]
+
+[charaFace G 0]
+
+＠アッド
+俺はこいつの霊基に付属してる礼装扱いだから、[r]つまりは霊基がガッツリ書き換えられてるわけだ！
+[k]
+
+＠アッド
+イッヒヒヒ！　まさかオルガマリーまで[r]ちっちゃくなってるとはよ！
+[k]
+
+[messageOff]
+[charaTalk G,B]
+[wt 1.0]
+
+[fadeout black 1.0]
+[bgmStop BGM_TOU_1 1.0]
+[wait fade]
+
+[charaFadeout B 0]
+[subRenderFadeout #A 0]
+[charaFadeout S 0]
+[charaLayer S normal]
+
+[cameraHome 0.1]
+
+
+[charaSet B 1098360800 1 グレイ]
+[charaSet A 4032000 1 ライネス]
+[charaSet F 1098166200 1 トリムマウ]
+[charaSet M 5019001 1 エルメロイⅡ世]
+[charaSet N 1098257300 1 ダ・ヴィンチ]
+[charaSet O 1098361100 1 ゴルドルフ_シルエット]
+[charaFilter O silhouette 00000080]
+[charaSet P 1098361100 1 ゴルドルフ]
+
+[charaSet Q 1098345300 1 エレシュキガル・オルタ・リリィ]
+[charaSet R 1098328400 1 幼女ヴリトラ]
+
+[charaSet T 1098325500 1 ゴルドルフ_髭をつまむ]
+
+[sceneSet S 277700 1]
+[sceneSet U 277700 1]
+[sceneSet V 277700 1]
+[sceneSet W 277700 1]
+
+[charaLayer S sub #A]
+[charaDepth S 5]
+[charaScale S 2.5]
+[charaFadein S 0 900,0]
+
+[scene 277700]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_147 0.1]
+
+
+[charaDepth B 5]
+[charaDepth A 4]
+[charaDepth M 3]
+[charaDepth F 2]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFace M 0]
+[charaFadein A 0.4 280,0]
+[charaFadein M 0.4 -270,0]
+[wt 1.2]
+
+[charaFace B 17]
+[charaFadein B 0.2 1]
+[charaMoveReturn B 0,5 0.3]
+[cueSe SE_22 22_ade695]
+[wt 0.3]
+
+[charaTalk on]
+
+＠グレイ
+ししょお！　らいねす！[charaFace A 6][charaFace M 8]
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 1.0]
+[charaFaceFade A 3 0.2]
+[wt 0.2]
+[charaShake A 0.1 1 1 0]
+[wt 2.2]
+
+[charaShakeStop A]
+
+[charaTalk on]
+[charaFace A 4]
+
+＠ライネス
+こ、これはいけない……可愛すぎる……[r]私の皮肉すら中和されてしまう……死んでしまう……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk F,A]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.2]
+[charaMoveScaleEase F 1.05 0.5 easeOutSine]
+[charaMoveEase F 0,10 0.5 easeOutSine]
+[cueSe SE_24 24_ade1007]
+[cueSeStop 24_ade1007 1.0]
+[wt 0.4]
+
+[charaMoveScaleEase F 1.0 0.5 easeOutSine]
+[charaMoveEase F 0,0 0.5 easeOutSine]
+
+[charaScale A 1.05]
+[charaFace A 4]
+[charaFadein A 0.4 200,10]
+[charaMoveScaleEase A 1.0 0.5 easeOutSine]
+[charaMoveEase A 200,0 0.5 easeOutSine]
+[wt 1.0]
+
+＠トリムマウ
+[#ご主人様:マ　ス　タ　ー]の心拍数増加を確認。[r]治療プロトコルの実行を要請しますか？
+[k]
+
+[charaFace A 5]
+[charaShake A 0.1 1 1 0]
+[se ad421]
+[seVolume ad421 0 0.4]
+
+＠ライネス
+ええい離せ、トリムマウ！[r]私は、グレイの可愛さにひたすら[#耽溺:たんでき]するんだ！
+[k]
+
+[seStop ad421 0.2]
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaShakeStop A]
+
+[charaTalk M]
+[charaFace M 7]
+[charaFadein M 0.1 1]
+
+＠エルメロイⅡ世
+いやしかし……こんなことになるとは……[r]ダ・ヴィンチ、検査結果はどうだった？
+[k]
+
+[messageOff]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 1.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.4 1]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+ふたりの霊基状態をスキャンした結果、[r]変化したのは年齢だけだ。
+[k]
+
+＠ダ・ヴィンチ
+霊基そのものに異常はないよ。[r]いやまあ、若返った事は充分に異常なワケだけど。
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠エルメロイⅡ世
+それは変化した際、以前は無かったもの……[r]『余分な要素』は混ざっていない、という事かね？
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+＠ダ・ヴィンチ
+うん。他の英霊のエッセンスとか、[r]人類の脅威になる怪しい因子は見られない。
+[k]
+
+＠ダ・ヴィンチ
+ただ子供に戻っただけなんだ。[r]だからアズライール君も大人しくしていただろう？
+[k]
+
+[charaDepth N 10]
+[charaDepth R 9]
+[charaDepth Q 8]
+
+[charaScale R 0.97]
+
+[charaTalk off]
+[charaFace Q 0]
+[charaFace R 8]
+[charaPutFSL Q -170,0]
+[charaPutFSL R -400,0]
+[charaFadeTime Q 0.4 0.75]
+[charaFadeTime R 0.4 0.75]
+[charaMoveFSL Q -190,0 12.0]
+[charaMoveFSL R -420,0 12.0]
+
+[charaFace N 31]
+
+＠ダ・ヴィンチ
+以前にも、サーヴァントの年齢情報が[r]変化する例はあったしね。
+[k]
+
+[charaFadeTime Q 0.4 0]
+[charaFadeTime R 0.4 0]
+
+[charaFace N 22]
+
+＠ダ・ヴィンチ
+ただ、グレイやオルガマリーのような[r]今を生きる人類となると、話が変わってくる。
+[k]
+
+＠ダ・ヴィンチ
+魔力や霊基情報を弄れば終わり、[r]なんてことじゃ済まないんだ。
+[k]
+
+＠ダ・ヴィンチ
+それに、記憶の引き出しも、[r]肉体によって制限されている節がある。
+[k]
+
+＠ダ・ヴィンチ
+結果として、仲の良い相手などは覚えているけど、[r]記憶のディテールは曖昧になっているようだ。
+[k]
+
+[charaFadeout N 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout R 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace B 0]
+[charaFace G 2]
+[subRenderFadein #A 0.1 -515,-25]
+[charaFadein B 0.1 1]
+
+＠アッド
+実際のこいつのガキの頃とも[r]結構違うようだけどな！
+[k]
+
+＠アッド
+今のグレイは、顔を隠そうって気にも[r]ならないみたいだしよ！
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 7]
+[wt 1.5]
+[charaTalk G]
+[charaFace G 2]
+
+＠アッド
+イッヒヒヒ！　俺はいいことだと思うぜ！
+[k]
+
+
+？1：だから、カルデアのオルガマリー所長を
+？2：自分の世界のオルガマリー所長と誤認した？
+
+？！
+
+[messageOff]
+[subRenderFadeout #A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaFadeout S 0]
+[charaFadeout G 0]
+[subCameraOff]
+[charaLayer G normal]
+[charaLayer S normal]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[charaFace A 0]
+
+＠ライネス
+多分、そういうことだな。
+[k]
+
+[charaFace A 4]
+
+＠ライネス
+グレイが私たちの世界で出会った時のオルガマリーは、[r]似たような年頃だったんだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+本当に、そっちの世界にもわたしがいるのね……
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 1.5]
+
+[charaFadeout A 0.2]
+[wt 0.3]
+
+？1：ところで……
+？2：経営顧問はどこに？
+
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+そういえば……所長室から[#管制室:こ　ち　ら]に向かう時まで[r]一緒にいたと思うのですが……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+あの人、気配がないのよ、気配が！
+[k]
+
+＠オルガマリー
+ちょっと視線を外すといなかったり、[r]何げなく振り向くといたりするの！
+[k]
+
+[charaFace E 7]
+
+＠オルガマリー
+心臓に悪いからドアをロック、ロック！[r]別行動中ならしばらく消えていてほしいくらいよ！
+[k]
+
+[messageOff]
+[charaMoveReturn E 0,-5 0.3]
+[se ad674]
+[wt 0.3]
+[cueSe SE_21 21_ade690]
+[wt 1.4]
+
+＠D：？？？
+長期休暇を取っていいと？[r]そうか。だが気遣いは無用だオルガマリー。[charaFace E 12]
+[k]
+
+＠D：？？？
+休日は１日で充分だ。[r]職務が完遂するまで手を抜かないのが私の方針だ。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[se ad598]
+[seStop ad598 2.0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 1]
+[wt 2.2]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 29]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+ロックしてもスゥッと入ってくるのなんなの！？[messageShake 0.05 4 4 0.2]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠アズライール
+それは扉を使わなかったからだ。[r]あいにく鍵開けはそう得意ではない。
+[k]
+
+[charaFaceFade D 9 0.15]
+
+＠アズライール
+ダ・ヴィンチ。[%1]。マシュ。
+[k]
+
+＠アズライール
+いずれにせよ、オルガマリーがその状態では[r]カルデア所長としての職務執行に支障がある。
+[k]
+
+＠アズライール
+子供に責任を負わせる事はできない。[r]かといって大人に戻す手段も現状不明だ。
+[k]
+
+＠アズライール
+なので今回かぎりの代理を連れてきた。[r]着任の挨拶をするがいい。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_147 1.5]
+
+[charaDepth O 7]
+[charaDepth P 6]
+[charaDepth U 5]
+[charaDepth D 4]
+
+[charaScale O 1.4]
+[charaScale P 1.4]
+[charaScale U 1.4]
+
+[charaTalk off]
+[charaFace P 22]
+[charaPut P 0,160]
+
+[charaFace O 0]
+[charaFadein O 1.0 0,160]
+[charaFadein U 1.0 0,-150]
+[charaMove P 0,110 20.0]
+[charaMove O 0,110 20.0]
+[charaMove U 0,-200 20.0]
+[wt 1.5]
+
+[charaFadeout D 0.1]
+
+＠？？？
+うーん……もう朝かね？[r]感覚的にはさっき寝入ったばかりなのだが……
+[k]
+
+＠？？？
+まあいい、ある意味助かった！[r]なにしろ今夜の夢は酷い悪夢だったからねぇ！
+[k]
+
+＠？？？
+気がつけば空は赤く染め上がり、[r]地表は熱く燃えさかり、すれ違う人々はみな裸！
+[k]
+
+＠？？？
+まさに地獄！　地獄の光景！
+[k]
+
+＠？？？
+なぜ私が地獄にいなければならないのか、[r]もしや今から手足をもぎ取る過酷なショウが始まるかと
+[k]
+
+＠？？？
+戦慄していたところだよ君ィ！[r]いやあ、目が覚めて良かった良かった！
+[k]
+
+[messageOff]
+[charaMoveEase P 0,10 0.7 easeOutSine]
+[charaMoveEase O 0,10 0.7 easeOutSine]
+[charaMoveEase U 0,-300 0.7 easeOutSine]
+[charaFadeTime P 0.2 1.0]
+[wt 0.1]
+[charaFadeout O 0.7]
+[wt 1.5]
+
+[bgm BGM_EVENT_161 0.1]
+
+[charaFaceFade P 23 0.2]
+
+＠ゴルドルフ
+うん。ところでここはどこかな？[r]見覚えがありすぎて目が一瞬で覚めてしまったが？
+[k]
+
+[messageOff]
+[charaDepth C 3]
+[charaDepth N 2]
+
+[charaFace C 6]
+[charaFace N 25]
+[charaFadein C 0 0]
+[charaFadein N 0 2]
+
+[charaFadeout P 0.5]
+[charaFadeout U 0.5]
+[wt 2.0]
+
+[charaFadeout C 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaScale P 1.0]
+[charaTalk P]
+[charaFace P 23]
+[charaFadein P 0.1 1]
+[wt 0.5]
+
+？1：ゴ[line 3]ゴルドルフ司令官！！！！
+
+？！
+
+[charaTalk on]
+
+＠ゴルドルフ
+む？　むむむ？　むむむむむ？[r]初めて見るのに他人ではないこの感じ……
+[k]
+
+[charaShake P 0.1 3 3 0]
+[charaFace P 18]
+
+＠ゴルドルフ
+待て。待て待て待て。ものすごい情報量がいま、[r]私の頭になだれ込んでいる！
+[k]
+
+＠ゴルドルフ
+忘れていたのではない、切り離され保管されていた[r]記憶がいま、まさに、私に取り付けられていく……！
+[k]
+
+[charaShakeStop P]
+[charaFace P 4]
+
+＠ゴルドルフ
+そうだ……私は、私はこの管制室を知っている！[r]そして、そして[line 3]
+[k]
+
+[charaFaceFade P 17 0.2]
+
+＠ゴルドルフ
+おお。おおお。おおお！[r]おまえたち、おまえたちはーーー！
+[k]
+
+[charaFaceFade P 2 0.2]
+
+＠ゴルドルフ
+おしゃまなダ・ヴィンチ！[r]優等生のようでパワフルなキリエライト！
+[k]
+
+＠ゴルドルフ
+そして、そして[line 3]
+[k]
+
+＠ゴルドルフ
+転んでもただでは起きない不屈の[&男:娘]、[r][%1]ではないかーーー！
+[k]
+
+[messageOff]
+[subCameraOn 2]
+
+[charaLayer N sub #A]
+[charaLayer V sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask16 5 255,255,255,255]
+[subRenderScale #A 1.0]
+
+[charaScale N 1.2]
+[charaScale V 1.2]
+
+[charaDepth N 8]
+[charaDepth V 6]
+
+[charaFace N 7]
+[charaFadein N 0 -20,270]
+[charaFadein V 0 -200,-20]
+
+[charaLayer D sub #B]
+[charaLayer W sub #B]
+
+[subCameraFilter #B normal]
+[subRenderScale #B 1.2]
+
+[charaDepth D 12]
+[charaDepth W 11]
+
+[charaFace D 0]
+[charaFadein D 0 -150,0]
+[charaFadein W 0 0,-200]
+[charaTalk N]
+[subRenderFadeinFSSideR #A 0.2 430,-270]
+[subRenderMoveEaseFSSideR #A 380,-270 0.2 easeOutSine]
+[wt 0.2]
+
+＠ダ・ヴィンチ
+すっごーーい！[r]本物のゴルドルフくんだーーー！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+[charaFadeout N 0]
+[charaScale N 1.0]
+[charaLayer N normal]
+
+[charaTalk off]
+[charaFace N 5]
+[charaFadein N 0.4 360,0]
+[charaMoveEase N 280,0 0.6 easeOutQuint]
+[wt 0.2]
+[se ad183]
+[charaShake N 0.1 3 3 0.5]
+[charaShake P 0.1 3 3 0.5]
+[wt 1.0]
+
+[charaTalk on]
+
+＠ゴルドルフ
+このダイレクトアタック、間違いない！[wt 1.2][charaFaceFade P 10 0.2][r]やばい、泣きそうだ、いや紳士たれゴルドルフ！
+[k]
+
+＠ゴルドルフ
+復興しつつあるムジーク家の当主たる者、[r]そう簡単に涙など見せはしないのだから！
+[k]
+
+？1：ずるい、[&オレ:わたし]も！
+
+？！
+
+[messageOff]
+[charaLayer C sub #A]
+
+[subCameraFilter #A maskEdge cut359_mask10 5 255,255,255,255]
+
+[charaScale C 1.2]
+
+[charaDepth C 9]
+
+[charaFace C 37]
+[charaFadein C 0 -20,270]
+[charaPut V 200,-20]
+[charaTalk C]
+[subRenderFadeinFSSideL #A 0.2 -430,-270]
+[subRenderMoveEaseFSSideL #A -380,-270 0.2 easeOutSine]
+[wt 0.2]
+
+＠マシュ
+はい、パワフルにアタックします！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.2]
+[wt 0.2]
+[charaFadeout C 0]
+[charaFadeout V 0]
+[charaScale C 1.0]
+[charaLayer C normal]
+[charaLayer V normal]
+
+[cameraMoveEase 0,-25 0.7 easeOutQuint 1.1]
+
+[charaTalk off]
+[charaFace C 20]
+[charaFadein C 0.4 -360,0]
+[charaMoveEase C -280,0 0.6 easeOutQuint]
+[wt 0.2]
+[se ad183]
+[charaShake C 0.1 3 3 0.5]
+[charaShake P 0.1 3 3 0.5]
+[shake 0.1 2 2 0.5]
+[wt 1.0]
+
+[charaTalk on]
+[charaFace P 1]
+
+＠ゴルドルフ
+なんだこれ夢の続きかね？
+[k]
+
+＠ゴルドルフ
+あるいは、カルデアでの生活が地獄だったという[r]メタファーかね？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_161 1.5]
+
+[charaTalk D,P]
+[subRenderFadein #B 0.5 -20,-70]
+[subRenderMoveEase #B 0,-70 0.5 easeOutSine]
+[wt 0.5]
+
+[cameraHome 0.1]
+[charaFadeout C 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+＠アズライール
+そうではない。[r]おまえが先ほどまでいた地獄は真実だ。
+[k]
+
+＠アズライール
+汎人類史にいるおまえを[r]この隔絶空間に連れてくる手段はない。
+[k]
+
+[bgm BGM_HALLOWEEN_2021_1 0.1]
+
+＠アズライール
+通常では、な。[r]故におまえたちの地獄を経由した。
+[k]
+
+＠アズライール
+我らにおける[#地中の界:バ　ル　ザ　フ]のように、[r]死者には仮初めの宿泊場が与えられる。
+[k]
+
+＠アズライール
+それはあらゆる死者を受け入れる霊的領域[line 3][r]いわば現世と幽界の境界だ。
+[k]
+
+＠アズライール
+魂の行き先は罪によって異なる。[r]天国か地獄かに。まあ、それはそれとして[line 3]
+[k]
+
+＠アズライール
+それをターミナルとして利用し、[r]本来繋がらないこの空間へ[#案内:エスコート]した。
+[k]
+
+＠アズライール
+つまり、一度おまえを死の国に落とし、[r]その底からここに連れ出した、という事だ。
+[k]
+
+[messageOff]
+[charaTalk P,D]
+[charaFace P 0]
+[subRenderFadeout #B 0.5]
+[wt 0.5]
+
+[charaFadeout D 0]
+[charaFadeout W 0]
+
+[subCameraOff]
+[charaLayer D normal]
+[charaLayer W normal]
+
+＠ゴルドルフ
+なるほど。地獄を経由。[r]えーと。[wt 0.5][charaFace P 9][line 3]それって私、もう死んでない？
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠アズライール
+安心しろ、一時のことだ。[r]この事件が解決すれば元の世界に案内する。
+[k]
+
+＠アズライール
+地獄の監視機構もそう誤魔化せない。[r]今回の密入国に気づかれるのに10日、というところだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 16]
+[charaFadein P 0.1 1]
+
+＠ゴルドルフ
+ほう。気づかれるとどうなるのかね？
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠アズライール
+私もおまえも罰を受けて消滅する。
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 1]
+[charaFadein P 0.1 1]
+
+＠ゴルドルフ
+あと君は誰かな？
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠アズライール
+アズライール。新しい経営顧問だ。[r]数日の間だけだが、よろしく頼むゴルドルフ・ムジーク。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaScale Z 0.8]
+[charaPut Z 0,0]
+
+[charaTalk P]
+[charaFace P 3]
+[charaFadein P 0.1 1]
+
+＠ゴルドルフ
+ふっ[line 3][wt 1.2][charaFace P 2][messageShake 0.05 4 4 0.5]ふふ。ふははは、ふはははははは！[wt 1.4][charaFace P 12][cameraMoveEase 0,-40 0.5 easeOutQuint 1.2][charaEffect Z bit_talk_41_remake][r]なるほどいつものカルデアだもう帰りたーーーーい！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 1.0]
+[bgmStop BGM_HALLOWEEN_2021_1 1.0]
+[wait fade]
+
+[charaFadeout P 0.1]
+[cameraHome 0.1]
+[charaEffectDestroy Z bit_talk_41_remake]
+
+[charaSet P 1098255100 1 ゴルドルフ]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+？1：とんでもない事態にとんでもない事が重なった……
+？2：その……Mr.ゴルドルフ・ムジーク……（慰める目）
+
+？！
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk P]
+[charaFace P 18]
+[charaFadein P 0.4 1]
+[wt 0.4]
+
+＠ゴルドルフ
+ええい、まさかこんな理由で[r]再びカルデアに訪れるとは夢にも思わなかった！
+[k]
+
+[charaFace P 0]
+
+＠ゴルドルフ
+しかしカルデアの危機であるなら、[r]私も今の状況を嘆いている訳にはいくまい。
+[k]
+
+[charaFace P 3]
+
+＠ゴルドルフ
+こうしている間にもムジーク城には[r]お悩み相談のために訪れる納税者たちが後を絶たず[line 3]
+[k]
+
+[messageOff]
+[charaDepth P 2]
+[charaDepth D 1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadeinFSSideL D 0.3 -450,0]
+[charaMoveEaseFSSideL D -430,0 0.4 easeOutSine]
+[wt 0.4]
+
+＠アズライール
+[line 6]。
+[k]
+
+[charaFace P 12]
+
+＠ゴルドルフ
+うむ、だが泣き言も言ってはおられん！[r]私の命がかかっているからな！
+[k]
+
+[messageOff]
+[charaMoveEaseFSSideL D -450,0 0.4 easeOutSine]
+[charaFadeout D 0.4]
+[wt 0.4]
+
+[charaFace P 13]
+
+＠ゴルドルフ
+いいだろう、私も（なんとなく）世界を救った気がする男！[r]もう一度貴様たちの司令官になってやろうではないか！
+[k]
+
+？1：それでこそ不死鳥のムジーク[&です:]！
+
+[charaFace P 3]
+
+＠ゴルドルフ
+ふ。そうだろうそうだろう。
+[k]
+
+[charaFace P 8]
+
+＠ゴルドルフ
+まあ、なんだ。今すぐ二度寝したいところだが、[r]貴様たちの前で情けないところは見せられんからな。
+[k]
+
+？2：ところで寝間着はああなんですね
+
+[charaFace P 1]
+
+＠ゴルドルフ
+ああ、オーダーメイドで作らせている。[r]快適な睡眠は快適な服装によって提供されるからねぇ。
+[k]
+
+？！
+
+[charaFace P 18]
+
+＠ゴルドルフ
+というかだな……
+[k]
+
+[charaFace P 12]
+
+＠ゴルドルフ
+連れてくるにしても時間を考えたまえ！
+[k]
+
+＠ゴルドルフ
+我が家のホムンクルスたちの大量の調整や[r]養成を終わらせてやっと寝れたところだったのだぞ！？
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠アズライール
+……時差の問題か。そこは謝罪する。[r]地獄に朝と夜はないので、考慮しなかった。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+
+
+
+
+
+
+
+
+
+[charaTalk P]
+[charaFace P 9]
+[charaFadein P 0.1 1]
+
+＠ゴルドルフ
+まあ仕方あるまい。[r]非常時に眠気は我慢しよう。
+[k]
+
+[charaFace P 0]
+
+＠ゴルドルフ
+ところでオルガマリー……[r]オルガマリーでいいのだな？
+[k]
+
+＠ゴルドルフ
+私の知る貴様は大統領を名乗る成人女性だったが……[r]その時と同じパワーなのかね？
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+わたしの魔術回路のこと？
+[k]
+
+[charaFace E 13]
+
+＠オルガマリー
+それはよく分からないけど……[r]確かに、前より出力は上がっている気がする。
+[k]
+
+[charaFace E 30]
+
+＠オルガマリー
+でもこの姿だとうまく制御できない。[r]勢いが強すぎて魔術式もうまく組めない。
+[k]
+
+[charaFace E 26]
+
+＠オルガマリー
+そうね。無理に使おうとしたら[r]こんな部屋ぐらい吹き飛ばしちゃうかも。ふふ。
+[k]
+
+？1：圧倒的なドヤ顔だ……！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 22]
+[charaFadein N 0.1 1]
+
+＠ダ・ヴィンチ
+オルガマリー所長の自己申告は正しいよ。[r]トリスメギストスの計算によると、
+[k]
+
+＠ダ・ヴィンチ
+このまま制御不能状態が続いたら[r]カルデアが消滅する可能性あり、と出ているからね。
+[k]
+
+[messageOff]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaDepth B 5]
+[charaDepth C 4]
+[charaDepth P 3]
+
+[charaTalk off]
+[charaFace C 24]
+[charaFace P 7]
+[charaFace B 11]
+[charaFadeinFSL C 0.1 -340,0]
+[charaFadein P 0.1 1]
+[charaFadeinFSR B 0.1 340,0]
+[wt 1.8]
+
+[charaFadeout C 0.1]
+[charaFadeout P 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 26]
+[charaFadein E 0.1 1]
+[wt 1.5]
+
+[charaFace E 6]
+
+＠オルガマリー
+まあ、そういうわけだから、解決は必要よね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 7]
+[charaFadein P 0.1 1]
+
+＠ゴルドルフ
+そこで照れられても困るんだが！[r]この爆弾娘、隔離しておくべきではないのかね！？
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 31]
+[charaFadein N 0.1 1]
+
+＠ダ・ヴィンチ
+まあまあ、そう慌てない慌てない。[r]さきほど幼児化の原因は特定できたんだ。
+[k]
+
+[charaFace N 0]
+
+＠ダ・ヴィンチ
+マシュ、説明を頼める？
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+はい。こちらの特異点から、[r]カルデアへの干渉が発見されました。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+
+[se ad1]
+[wt 1.5]
+
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+特異点からカルデアやわたしに直接影響が……？[r]今は通常空間から切り離されてるのに？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_100 0.1]
+
+[charaTalk P]
+[charaFace P 16]
+[charaFadein P 0.1 1]
+
+＠ゴルドルフ
+過去に類例がないわけではない。[r]カルデアは何度か攻撃を受けたからな。
+[k]
+
+＠ゴルドルフ
+総じて、その手の特異点は恐るべきものだった。[r]カルデアへの敵意、罠が張り巡らされていた。
+[k]
+
+[charaFace P 13]
+
+＠ゴルドルフ
+……今回もそうなのかね？[r]危険度はどのくらいなのだ？
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+それが、トリスメギストスによると[r]危険度は驚くほど[#低い]と出ています。
+[k]
+
+＠マシュ
+この特異点から数時間前、なんらかの[#縁:パス]によって[r]異質の魔力がカルデアに放射されてました。
+[k]
+
+[charaFace C 9]
+
+＠マシュ
+とはいえ、特異点自体の状況は[r]うまく観測できません。
+[k]
+
+＠マシュ
+一地域程度の大きさなのは分かるのですが、[r]それ以上についてはほとんど不明です。
+[k]
+
+[charaFace C 11]
+
+＠マシュ
+ですので、解決するためには、影響を受けた[r]グレイさんとオルガマリー所長が直接向かうしか……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠アズライール
+………………。
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 0]
+[charaFadein P 0.1 1]
+
+＠ゴルドルフ
+なにかね、死神く……いや経営顧問。[r]キリエライトの説明に何か不満でも？
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠アズライール
+いや、不満はない。簡潔明瞭な状況説明と対応だ。[r]だが他に手は無いのか。
+[k]
+
+＠アズライール
+子供ふたりでは買い物もできまい。[r]いわんや異常との対決など。
+[k]
+
+＠アズライール
+それともカルデアではこれも日常だというのか？
+[k]
+
+？1：それは……
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+……はあ。ガラにもなく心配とかしてるの？[r]大丈夫。何の問題もないわ。
+[k]
+
+[charaFace E 0]
+
+＠オルガマリー
+だってレイシフトするのは[r]わたしとグレイだけじゃないもの。
+[k]
+
+＠オルガマリー
+ここには歴戦の、どんな特異点でもレイシフト適性を[r]もっていらっしゃるマスターがいるんだもの。
+[k]
+
+＠オルガマリー
+そうでしょ、[%1]？
+[k]
+
+？1：もちろん！
+？2：一緒に特異点を調査します！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠グレイ
+ますたーとおるがちゃんがいくなら、いく！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 1]
+[wt 1.5]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠マシュ
+おふたりとも、適性はもちろん問題なしです。
+[k]
+
+＠マシュ
+ただ……どちらも霊基の変化によって[r]戦闘できる状態では……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ライネス
+ううっ、こんな時に限って、適性がないなんて！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 4]
+[charaFadein M 0.1 1]
+
+＠エルメロイⅡ世
+私は、一応適性があるようなのだが、[r]レイシフトに耐えられる数値に至らなかった。
+[k]
+
+＠エルメロイⅡ世
+こんな状態で、マスターを派遣することは[r]大変不安なのだが……
+[k]
+
+？1：慎重にいきます。頼もしい司令官もいるし！
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace T 3]
+[charaFadein T 0.1 1]
+
+＠ゴルドルフ
+そうだろう、そうだろう。[r]この[#美髯:びぜん]に誓って最善を尽くしてやろう。
+[k]
+
+[charaFadeout T 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+？2：保護者としてがんばります！
+
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 22]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+なにいってるの。[r]保護者なのはわたしのほうでしょ。
+[k]
+
+[charaFace E 8]
+
+＠オルガマリー
+貴方が無茶なことをしでかさないか、[r]しっかり監督してあげる。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+＠ダ・ヴィンチ
+となると私たちはこちらでバックアップだね。[r]ムニエルたちを呼びたいところだけど……
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 29]
+[charaFadein E 0.1 1]
+
+＠オルガマリー
+やめて、ぜっっったいにやめて！
+[k]
+
+＠オルガマリー
+こんな姿がスタッフに見られたら、[r]元に戻った後に威厳が保てなくなるじゃない！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 31]
+[charaFadein N 0.1 1]
+
+＠ダ・ヴィンチ
+というわけでオペレーターは私とマシュが[r]担当するしかないようだ。
+[k]
+
+[charaFace N 24]
+
+＠ダ・ヴィンチ
+経営顧問はどうするんだい？
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+[bgmStop BGM_MAP_100 2.0]
+
+＠アズライール
+……それなりに長い調査になりそうだ。[r]飲み物を取ってくる。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth P 5]
+[charaDepth Y 1]
+
+[charaTalk P]
+[charaFace P 5]
+[charaFadein P 0.1 1]
+
+[charaPut Y 1]
+[charaFadeTime Y 0.2 0.5]
+
+＠ゴルドルフ
+（観戦気分だなこの死神くん！？）
+[k]
+
+[charaFadeout Y 0.2]
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+[bgm BGM_EVENT_82 0.1]
+
+＠オルガマリー
+いいでしょう。しっかり[%1]を[r]見ておいて、ダ・ヴィンチ、マシュ。
+[k]
+
+＠オルガマリー
+存在証明だけじゃないわよ？[r]いつもの、変な選択をしないようにね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+もちろんです。お任せください。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠グレイ
+せつも、ますたーのことみてるっ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+[charaShake A 0.1 1 1 0]
+
+＠ライネス
+うううっ！　可愛い！　絶対手放したくない！[r]行かないでおくれ、グレイ……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaShakeStop A]
+
+[charaTalk P]
+[charaFace P 12]
+[charaFadein P 0.1 1]
+
+＠ゴルドルフ
+はいはいダメダメ！　諦めたまえ！[r]時間がない、すぐにレイシフトの準備だ！
+[k]
+
+[charaFace P 13]
+
+＠ゴルドルフ
+頼むぞ[%1]、[r]オルガマリーはもちろん私の命もかかっている！
+[k]
+
+＠ゴルドルフ
+いつにも増して謎の多い状況だが、[r]まあいつものようにスパッと解決してくるがいい！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_82 1.0]
+[wait fade]
+
+[charaFadeout P 0.1]
+[scene 10000]
+[wt 1.0]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad12]
+[effect bit_talk_07_fs]
+[wt 4.0]
+
+[fadeout white 1.0]
+[wait fade]
+[wt 1.0]
+[fadein white 1.5]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+[soundStopAll]
+[end]
