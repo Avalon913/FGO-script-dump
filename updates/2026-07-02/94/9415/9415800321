@@ -1,0 +1,538 @@
+
+
+
+
+＄94-15-80-03-2-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+
+[charaSet A 1098361000 1 オルガマリー]
+[charaSet B 1098360800 1 グレイ]
+[charaSet C 4003001 1 ドレイク]
+[charaSet D 28007001 1 カリオストロ]
+[charaSet E 10022000 1 アス]
+[charaSet F 1098360900 1 アッド]
+
+[charaSet G 1098301720 1 お客様たち1]
+[charaSet H 1098301720 1 お客様たち2]
+[charaSet I 1098301720 1 お客様たち3]
+[charaSet J 1098301720 1 お客様たち4]
+
+[charaSet K 10022000 1 アス_演出用]
+[charaSet L 1098360800 1 グレイ_演出用]
+[charaSet M 4003001 1 ドレイク_演出用]
+[charaSet N 28007001 1 カリオストロ_演出用]
+[charaSet O 1098361000 1 オルガマリー_演出用]
+
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+
+[sceneSet Q 288100 1]
+[sceneSet R 288000 1]
+[sceneSet S 288000 1]
+
+[imageSet T cut827_photo_weapon 1]
+[imageSet U cut814_passb 1]
+[imageSet V cut827_photo_weapon_pass 1]
+
+[imageSet W cut843_bill_erinys 1]
+
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth D 3]
+[charaDepth A 4]
+[charaDepth B 7]
+[charaDepth E 9]
+[charaDepth F 11]
+
+[charaDepth J 12]
+[charaDepth I 13]
+[charaDepth H 14]
+[charaDepth G 15]
+
+[charaDepth N 16]
+[charaDepth M 17]
+[charaDepth K 18]
+[charaDepth O 19]
+[charaDepth L 20]
+
+[charaDepth S 1]
+[charaDepth Q 5]
+[charaDepth R 10]
+
+[charaDepth P 21]
+[charaDepth T 22]
+[charaDepth U 23]
+[charaDepth V 24]
+[charaDepth W 25]
+
+[scene 288100]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_KAZURA_1 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 -150,0]
+[charaFace H 0]
+[charaFadeinFSR H 0.1 370,0]
+[charaFace I 0]
+[charaFadeinFSL I 0.1 -370,0]
+[charaFace J 0]
+[charaFadein J 0.1 150,0]
+
+＠G：お客様たち
+武器買えたぁ……
+[k]
+
+[charaTalk H]
+
+＠H：お客様たち[FFFFFF]
+これで勝てるぞぉ……
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.6]
+[cueSe SE_25 25_ade1270]
+[charaFadeout G 0.6]
+[charaFadeout H 0.6]
+[wt 0.5]
+[cueSeStop 25_ade1270 1.4]
+[wt 0.7]
+[charaMoveReturnFSL I -370,-10 0.6]
+[wt 0.05]
+[charaMoveReturn J 150,-10 0.5]
+[wt 1.0]
+[cueSe SE_25 25_ade1270]
+[charaFadeout I 0.6]
+[charaFadeout J 0.6]
+[wt 0.6]
+[cueSeStop 25_ade1270 1.4]
+[wt 1.8]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaRelativeLoopMove A 2 0,-2 0,0 0.2 0.2 3]
+[cueSe SE_23 23_ad1290]
+[wt 0.8]
+[cueSeStop 23_ad1290 0.4]
+[wt 0.4]
+
+＠オルガマリー
+集計結果は……しっかり黒字が出てるわね。
+[k]
+
+？1：やった！
+？2：大忙しだった……！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠グレイ
+おるがちゃん、すごい！　すごいすごい！
+[k]
+
+＠グレイ
+せつは、すうじいっぱいでめがまわってたのに、[r]あっというまに、ぜんぶうっちゃうんだもん！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠オルガマリー
+こ、こんなの大したことないわよ……
+[k]
+
+[charaFace A 0]
+
+＠オルガマリー
+たくさんといっても、メインの種類は知れていたし。[r]判断を早くして、手続きを回す方が重要だったわね。
+[k]
+
+＠オルガマリー
+むしろ、[#武器:しょうひん]自体より、客を見る方が大事……[r]武器商人もそういうものなのね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ドレイク
+金も宝も武器も、価値を共有する相手がいないと[r]意味がないからねえ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+
+＠カリオストロ
+ふふふ、それを理解されると、[#施設:テアトルム]としては[r]合格点を出さざるを得ないですね。
+[k]
+
+[charaFace D 0]
+
+＠カリオストロ
+では、これにて体験は終了です。[r]きちんとカルデも精算しましょう。
+[k]
+
+[messageOff]
+[se ade107]
+[charaRelativeLoopMove D 2 0,-2 0,0 0.2 0.2 2]
+[wt 1.9]
+
+[charaFadeout D 0.1]
+[wt 0.15]
+
+[charaFadein W 0.4 0,-170]
+[charaPut P 0,-200]
+[charaFadeTime P 0.4 0.5]
+[wt 0.05]
+[cueSe SE_21 21_ade626 0 0.7]
+[wt 1.6]
+
+？1：カルデもちょっと違う
+？！
+
+[messageOff]
+[charaFadeout W 0.4]
+[charaFadeout P 0.4]
+[wt 0.5]
+
+[cueSe SE_25 25_ad1537]
+[wt 0.1]
+[subCameraOn 1]
+[charaLayer O sub #A]
+[charaLayer Q sub #A]
+[subCameraFilter #A maskEdge cut359_mask04 4 255,255,255,255 0]
+[subRenderScale #A 1.05]
+[charaScale O 1.8]
+[charaScale Q 1.4]
+[charaTalk O]
+[charaFace O 7]
+[charaFadein O 0 0,435]
+[charaFadein Q 0 0,0]
+[blur lens 0.4 4 1]
+[subRenderFadein #A 0.3 50,-350]
+[subRenderMoveEase #A 0,-350 0.4 easeOutQuint]
+[wt 1.3]
+[blurOff lens 0.4]
+[subRenderFadeout #A 0.4]
+[subRenderMoveEase #A -50,-350 0.4 easeOutQuint]
+[wt 0.4]
+[charaFadeout O 0]
+[charaFadeout Q 0]
+[wt 0.2]
+[charaLayer O normal]
+[charaLayer Q normal]
+[subCameraOff]
+[charaScale O 1.0]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠オルガマリー
+カリオストロ。今、貴方[line 3]
+[k]
+
+[messageOff]
+[charaScale E 1.2]
+[charaScale Q 1.2]
+[charaTalk A,E]
+[charaFace E 6]
+[charaFadein E 0.4 50,0]
+[charaFadein Q 0.4 50,-270]
+[charaMoveEase E 0,0 0.5 easeOutSine]
+[charaMoveEase Q 0,-270 0.5 easeOutSine]
+[wt 0.5]
+[charaFadeout A 0]
+[charaFace D 6]
+[charaFadein D 0 1]
+
+＠アス
+カリオストロ伯爵。[r]今サラッと二割ごまかしませんでしたか？
+[k]
+
+[messageOff]
+[charaTalk E,D]
+[charaFadeout E 0.4]
+[charaFadeout Q 0.4]
+[wt 1.4]
+[charaScale E 1.0]
+[charaFace D 13]
+
+＠カリオストロ
+いえいえ、アス殿、これも[#施設:テアトルム]の提供する[r]貴重な体験のひとつということで……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠アス
+体験中、記録に小細工してるのは見過ごしました。[r]ですが、体験そのものが詐欺なのはルール違反です。
+[k]
+
+[charaFace E 2]
+
+＠アス
+執事として、見過ごせません。[r]労働には正しい対価を払ってください。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[charaFaceFade D 17 0.3]
+[wt 1.5]
+[charaFadeout D 0]
+[wt 0.1]
+
+[charaFace B 10]
+[charaFace O 15]
+[charaFadein B 0.1 0]
+[charaFadein O 0.1 2]
+[wt 1.5]
+[charaFadeout B 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ドレイク
+はは、頼りになる執事だこった。[r][#目端:めはし]のきく会計は頼りになる。
+[k]
+
+[charaFace C 0]
+
+＠ドレイク
+じゃあ、体験終了のあれもやるんだろ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+
+＠アス
+はい！　記念写真ですね！[r]もう準備できてます！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠グレイ
+やったぁ！
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_KAZURA_1 1.0 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 288000]
+
+[wt 1.0]
+
+[bgm BGM_KAZURA_1 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+
+＠アス
+では皆様、[#施設:テアトルム]の前にお集まりを。[r]シャッターは[%1]さんに！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaScale K 0.95]
+[charaScale O 0.95]
+[charaDepth K 20]
+[charaScale R 1.2]
+[charaFace M 0]
+[charaFace K 0]
+[charaFace L 0]
+[charaFace O 0]
+[charaFace N 0]
+[charaFadein M 0.4 -165,10]
+[charaFadein K 0.4 200,-100]
+[charaFadein L 0.4 -195,-70]
+[charaFadein O 0.4 0,-110]
+[charaFadein N 0.4 120,30]
+[charaFadein R 0.4 0,-270]
+
+[charaMove K 170,-100 0.5]
+[cueSe SE_24 24_ade981]
+[cueSeStop 24_ade981 1.2]
+[wt 0.05]
+[charaMove L -165,-70 0.5]
+[wt 0.05]
+[charaMove M -135,-5 0.5]
+[wt 0.05]
+[charaMove N 100,20 0.5]
+[wt 1.4]
+
+[charaFadeout E 0.1]
+
+？1：任せて
+？2：はい、チーズ！
+
+？！
+
+[charaFace L 16]
+[charaFace K 14]
+
+[wt 0.2]
+[fowardEffect bit_talk_camerashutter]
+[wt 0.1]
+[se ad41]
+[wt 0.4]
+[fowardEffectStop bit_talk_camerashutter]
+[wt 1.5]
+[fowardEffectDestroy bit_talk_camerashutter]
+
+
+
+[charaFadein P 0.4 0,-200]
+[charaFadein T 0.4 0,-200]
+[wt 0.5]
+
+[charaFadeout M 0]
+[charaFadeout K 0]
+[charaFadeout L 0]
+[charaFadeout O 0]
+[charaFadeout N 0]
+[charaFadeout R 0]
+[wt 2.0]
+
+[charaFadeout P 0.5]
+[charaFadeout T 0.5]
+[wt 0.7]
+
+[cueSe SE_24 24_ade1008]
+[charaFadeTime P 0.4 0.5]
+[overlayFadein U 0.4 0,-165]
+[wt 0.5]
+[cueSeStop 24_ade1008 0.3]
+[wt 1.2]
+
+？1：裏カルデニア・パスポートも
+？2：写真を貼る専用の場所があるんだね
+？！
+
+[charaFadeout P 0.4]
+[charaFadeout U 0.4]
+[wt 0.4]
+
+[subCameraOn 1]
+[charaLayer F sub #A]
+[charaLayer S sub #A]
+[subCameraFilter #A maskEdge cut359_mask23 4 196,192,198,255]
+[subRenderScale #A 0.7]
+[charaScale F 1.55]
+[charaScale S 2.5]
+[charaFace F 2]
+[charaFadein F 0 355,225]
+[charaFadein S 0 900,0]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[subRenderFadein #A 0.1 -515,-25]
+
+＠アッド
+イッヒヒヒ！　こいつは貼り甲斐がありそうだ！
+[k]
+
+[charaTalk B]
+[charaFace B 17]
+
+＠グレイ
+うん！
+[k]
+
+[charaFadeout B 0.1]
+[subRenderFadeout #A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠オルガマリー
+まったく、手のかかることね。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFadeTime P 0.4 0.5]
+[charaFadein U 0.4 0,-165]
+[wt 0.8]
+[cueSe SE_24 24_ade1037 0 0]
+[wt 0.2]
+
+[cueSeVolume 24_ade1037 0.1 1.0]
+[charaFadein V 0.3 0,-165]
+[wt 0.3]
+[charaFadeout U 0]
+[cueSeStop 24_ade1037 0.1]
+[wt 2.0]
+
+
+
+[bgmStop BGM_KAZURA_1 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

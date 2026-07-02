@@ -1,0 +1,801 @@
+
+
+
+
+＄94-15-80-03-1-1
+
+[soundStopAll]
+[enableFullScreen]
+[enableWaitLoadAssetWhenResume]
+[backCameraColor]
+
+[charaSet A 10022000 1 アス]
+[charaSet B 1098360800 1 グレイ]
+[charaSet C 1098346800 1 マシュ]
+[charaSet D 1098361000 1 オルガマリー]
+[charaSet E 1098360900 1 アッド]
+
+[charaSet F 1098361500 1 ガベージ1]
+[charaSet G 1098361500 1 ガベージ2]
+[charaSet H 1098361500 1 ガベージ3]
+
+[charaSet I 10022000 1 アス_演出用]
+
+[charaSet J 1098362800 1 アズライール]
+[charaSet K 1098257310 1 ダ・ヴィンチ]
+[charaSet L 1098348500 1 アズライール_演出用]
+
+[sceneSet P 10000 1]
+[charaScale P 1.1]
+
+[sceneSet Q 286300 1]
+[sceneSet R 286300 1]
+[sceneSet S 242500 1]
+
+[imageSet U cut813_passf 1]
+
+[charaSet W 98115000 1 エフェクト用]
+[charaSet X 98115000 1 エフェクト用]
+[charaSet V 98115000 1 エフェクト用]
+[charaSet O 98115000 1 エフェクト用]
+
+[imageSet Y black_fade_re 1]
+[imageSet Z black_fade_re 1]
+
+[charaTalk depthOff]
+[charaDepth A 6]
+[charaDepth B 7]
+[charaDepth C 8]
+[charaDepth D 10]
+[charaDepth E 11]
+
+[charaDepth H 12]
+[charaDepth G 13]
+[charaDepth F 14]
+[charaDepth I 15]
+
+[charaDepth J 16]
+[charaDepth K 17]
+[charaDepth L 18]
+
+[charaDepth Q 4]
+[charaDepth R 9]
+[charaDepth S 1]
+
+[charaDepth P 5]
+[charaDepth U 22]
+
+[charaDepth W 24]
+[charaDepth X 25]
+[charaDepth V 26]
+[charaDepth O 27]
+
+[charaDepth Y 26]
+[charaDepth Z 26]
+
+[charaPut W 2500,2500]
+[charaEffect W bit_talk_10_LowLevel_depth]
+
+[scene 286300]
+
+[bgm BGM_BATTLE_271 0.1]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaFace G 0]
+[charaFadeinFSL G 0.1 -350,0]
+[charaFace H 0]
+[charaFadeinFSR H 0.1 350,0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠アス
+あとはカルデニアの執事におまかせを！
+[k]
+
+[messageOff]
+[se ad1006]
+[charaFadeout A 0.3]
+[charaMoveScaleEase A 1.4 0.3 easeOutCubic]
+[charaMoveEase A 0,50 0.3 easeOutCubic]
+[wt 0.3]
+
+[effect bit_talk_h_slash01_fs]
+[se ad818]
+[wt 0.4]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaFace G 0]
+[charaFadeinFSL G 0.1 -350,0]
+[charaFace H 0]
+[charaFadeinFSR H 0.1 350,0]
+
+[charaShake F 0.03 4 4 0.8]
+[charaShake G 0.03 4 4 0.8]
+[charaShake H 0.03 4 4 0.8]
+[se ad865]
+[wt 1.0]
+[seStop ad818 0.2]
+[wt 0.4]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠アス
+さあ、トドメを！
+[k]
+
+[messageOff]
+[charaFace A 6]
+[charaMove A 0,-10 0.25]
+[se ad442]
+[wt 0.95]
+[charaFace A 18]
+[se ad737]
+[se ade166]
+[seStop ade166 0.7]
+[charaRollMoveEx A 0.2 7 0,512]
+[charaMoveScale A 1.05 0.2]
+[charaMove A 0,-5 0.2]
+[wt 0.7]
+
+？1：足元に、パンフレットが
+？！
+
+[charaRollMoveEx A 1.2 13 0,512]
+[charaMoveScale A 1.11 1.2]
+[charaMove A 0,1 1.2]
+[charaRelativeLoopMove A 2 0,2 0,0 0.2 0.1 3]
+[cueSe Servants_405300 m58549]
+
+＠アス
+……と、と、と……！[wt 0.4][cueSe Servants_405300 m58550][wt 0.4][cueSe Servants_405300 m58551]
+[k]
+
+[messageOff]
+[cueSe SE_26 26_ade1320]
+[wt 0.1]
+[charaTalk F,G,H]
+[subCameraOn 1]
+[charaLayer F sub #A]
+[charaLayer G sub #A]
+[charaLayer H sub #A]
+[charaLayer Q sub #A]
+[subCameraFilter #A maskEdge cut359_mask08 4 0,0,0,255 0]
+[subRenderScale #A 1.05]
+[charaFace F 0]
+[charaFadein F 0 0,200]
+[charaFace G 0]
+[charaFadeinFSL G 0 -350,200]
+[charaFace H 0]
+[charaFadeinFSR H 0 350,200]
+[charaFadein Q 0 0,0]
+[subRenderFadein #A 0.4 -50,-320]
+[subRenderMoveEase #A 0,-320 0.5 easeOutQuint]
+[wt 0.5]
+[cueSeStop 26_ade1320 0.2]
+[wt 0.6]
+
+？1：目の前に、ガベージが
+
+？！
+
+[subRenderFadeout #A 0.4]
+[subRenderMoveEase #A 50,-320 0.4 easeOutQuint]
+[wt 0.4]
+[charaFadeout F 0]
+[charaFadeout G 0]
+[charaFadeout H 0]
+[charaFadeout Q 0]
+[wt 0.1]
+
+[charaShake A 0.05 5 5 0.5]
+[charaFace A 5]
+
+＠アス
+あわ、あわわわわ！
+[k]
+
+[messageOff]
+[charaLayer F normal]
+[charaLayer G normal]
+[charaLayer H normal]
+[charaLayer Q normal]
+[subCameraOff]
+[charaTalk off]
+[charaRollMoveEx A 0.3 20 0,512]
+[charaMoveScale A 1.18 0.3]
+[charaMove A 0,8 0.3]
+[charaFadeout A 0.3]
+[wt 0.2]
+[se ad496]
+[se ade48]
+[cueSe SE_23 23_ad1309]
+[effect bit_talk_impactlanding]
+[wt 1.5]
+[wt 1.5]
+[charaRoll A 0]
+[charaScale A 1.0]
+
+[bgmStop BGM_BATTLE_271 1.5]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaFace G 0]
+[charaFadeinFSL G 0.1 -350,0]
+[charaFace H 0]
+[charaFadeinFSR H 0.1 350,0]
+[wt 0.5]
+[charaMoveEase F 150,0 0.8 easeInBack]
+[wt 0.1]
+[se ade97]
+[charaFadeout F 0.6]
+[charaMoveEaseFSL G -475,0 0.6 easeInBack]
+[wt 0.05]
+[charaMoveEaseFSR H 525,0 0.6 easeInBack]
+[wt 0.15]
+[charaFadeout G 0.6]
+[wt 0.05]
+[charaFadeout H 0.6]
+[wt 2.0]
+
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠グレイ
+またにげちゃった……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_MIZUGI_2024_1 0.1]
+
+[charaPut W 1]
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠マシュ
+申し訳ありません！
+[k]
+
+＠マシュ
+こちらも警戒していたのですが、[r]まるで自然発生をしたような出現で……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 9]
+[charaFadein J 0.1 1]
+
+＠アズライール
+……補足しよう。マシュの発言はほぼ正解だが、[r]厳密性が不足している。
+[k]
+
+[charaFace J 0]
+
+＠アズライール
+まるで、ではない。
+[k]
+
+＠アズライール
+空間跳躍に特有の揺らぎも、大気の押しのけもなかった。[r]まさにたった今、自然発生したものだ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 34]
+[charaFadein K 0.1 1]
+
+＠ダ・ヴィンチ
+自然発生？[r]それこそ魔力の変化もなしに[line 3]
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+[charaPut W 2500,2500]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+待って！　そんなことより、アスは！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.15]
+
+[subCameraOn 1]
+[charaLayer A sub #A]
+[charaLayer Q sub #A]
+[subCameraFilter #A maskEdge cut359_mask20 5 255,255,255,255 0]
+[charaScale A 1.2]
+[charaScale Q 1.2]
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0 0,200]
+[charaFadein Q 0 0,100]
+[subRenderFadein #A 0.4 0,-230]
+[subRenderMove #A 0,-200 0.4]
+[wt 0.5]
+
+＠アス
+だ、大丈夫です！[r]ちょっとつまずいただけなんで！
+[k]
+
+[charaFace A 12]
+
+＠アス
+あいたたたた……
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.1]
+[wt 0.15]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[charaFace D 0]
+
+＠オルガマリー
+……本当に、すぐ集まるのね。[r]あのガベージとかいう連中。
+[k]
+
+＠オルガマリー
+最初の時は聞きそこねてたけれど、[r]一体どういう経緯で、あいつら出てきてるの？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[subRenderFadein #A 0.1 0,-200]
+
+＠アス
+それが、こちらでもよく分かってなくて……。
+[k]
+
+[charaFace A 0]
+
+＠アス
+ちょっと目を離すと、[r]勝手に集まってきちゃうんです。
+[k]
+
+＠アス
+だから見かけ次第、[r]こうして毎回追い払ってるのですけど……
+[k]
+
+[messageOff]
+[charaFace A 1]
+[wt 0.7]
+[charaMoveReturn A 0,194 0.45]
+[wt 1.1]
+
+[charaFace A 22]
+
+＠アス
+ともあれ失礼しました！[r]執事としてあってはならない失態です！
+[k]
+
+＠アス
+大変！　申し訳ありません！
+[k]
+
+[messageOff]
+[charaTalk off]
+[cueSe SE_24 24_ade981]
+[subRenderFadeout #A 0.4]
+[wt 0.6]
+[charaFace I 22]
+[charaFadein I 0.4 0,-15]
+[charaMoveEase I 0,0 0.5 easeOutCubic]
+[wt 0.6]
+[charaFadeout A 0]
+[charaFadeout Q 0]
+[charaLayer A normal]
+[charaLayer Q normal]
+[subCameraOff]
+[charaScale A 1.0]
+[wt 0.4]
+[se ad7 0 0.6]
+[charaMove I 0,-10 0.3]
+[wt 1.7]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MIZUGI_2024_1 1.5]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+そ、その……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠グレイ
+おるがちゃん？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_TOU_1 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+今のは悪かったけれど……でも、わたしは……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠アス
+……さっきも話しましたけど、[r]オルガマリーさんの言うこと、正論だと思います。
+[k]
+
+[charaFace A 0]
+
+＠アス
+なりたいものになんか、なれるわけがない。[r]僕も、そういう気持ち、少しわかります。
+[k]
+
+[charaFace A 14]
+
+＠アス
+未来を選べることなんて、[r]誰にだって、ほとんどないですから。
+[k]
+
+
+[charaFace A 0]
+
+＠アス
+だからグレイさん、[r]パスポートを出してもらってもいいですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠グレイ
+ぱすぽーと？　いいけど、どうするの？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[cueSe SE_24 24_ade1008]
+[charaFadeTime P 0.4 0.5]
+[charaFadein U 0.4 0,-170]
+[wt 0.5]
+[cueSeStop 24_ade1008 0.3]
+[wt 1.2]
+
+[charaFadeout P 0.4]
+[charaFadeout U 0.4]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アス
+ちょっと順番は変わってしまうんですが……
+[k]
+
+[messageOff]
+[charaMoveReturn A 0,-5 0.6]
+[cueSe SE_24 24_ade1033]
+[cueSeStop 24_ade1033 1.0]
+[wt 1.2]
+
+[charaMoveReturn A 0,-5 0.6]
+[cueSe SE_24 24_ade1033]
+[cueSeStop 24_ade1033 1.0]
+[wt 1.25]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠グレイ
+きねんしゃしんのぺーじ？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+[wt 1.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠オルガマリー
+アス。気持ちがわかるなんて言ったけれど、[r]それは、貴方が……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠アス
+…………。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth V 15]
+[charaScale V 0.6]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.4]
+
+[charaPut V -150,-300]
+[charaEffect V bit_talk_lightning_U_01]
+[se ad626 0 0.3]
+[cueSe SE_22 22_adm89 0 0.5]
+[wt 1.6]
+
+[seVolume ad626 0.4 0.1]
+[cueSeVolume 22_adm89 0.4 0.3]
+
+
+[subCameraOn 1]
+[charaLayer O sub #A]
+[charaLayer L sub #A]
+[charaLayer S sub #A]
+[charaLayer Y sub #A]
+[charaLayer Z sub #A]
+[subCameraFilter #A maskEdge cut359_mask04 5 255,255,255,255 0]
+[subRenderScale #A 1.01]
+[charaScale L 2]
+[charaScale S 1.4]
+
+[charaDepth S 3]
+[charaDepth O 5]
+[charaDepth L 25]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0 300,335]
+[charaFadein S 0 50,0]
+[subRenderFadein #A 0.3 0,-300]
+[charaMoveEase L 200,335 0.3 easeOutCubic]
+[charaMoveEase S -50,0 0.3 easeOutCubic]
+[wt 0.45]
+
+[se ade116]
+[charaPut O -750,385]
+[charaEffect O bit_talk_37]
+[wt 1.2]
+
+[charaMoveEase L 100,335 0.4 easeOutCubic]
+[charaMoveEase S -150,0 0.4 easeOutCubic]
+[subRenderFadeout #A 0.3]
+[wt 0.3]
+
+[charaFadeout L 0]
+[charaFadeout S 0]
+[charaFadeout Y 0]
+[charaFadeout Z 0]
+[wt 0.15]
+
+[charaTalk D]
+[charaLayer L normal]
+[charaLayer S normal]
+[charaLayer Y normal]
+[charaLayer Z normal]
+[subCameraOff]
+[wt 0.5]
+
+？1：あれ、所長……？
+？2：手のあたりが……
+
+？！
+
+[messageOff]
+[charaFace D 29]
+[charaShake D 0.02 2 2 0.3]
+[wt 1.1]
+
+＠オルガマリー
+い、いけない！　さっき集中した魔力がまだ……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut V 2500,2500]
+[charaEffectDestroy V bit_talk_lightning_U_01]
+
+[bgmStop BGM_TOU_1 2.0]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+[seVolume ad626 0.4 0.4]
+[cueSeVolume 22_adm89 0.4 0.6]
+
+[charaPut V 0,-200]
+[charaEffect V bit_talk_lightning_U_01]
+[wt 1.5]
+
+＠アス
+え[line 3]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut V 2000,2500]
+[charaEffectDestroy V bit_talk_lightning_U_01]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠グレイ
+あ、ぱすぽーとに、ばりばりが……！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFadeTime P 0.4 0.5]
+[charaFadein U 0.4 0,-170]
+[wt 0.5]
+
+[seVolume ad626 0.4 0.6]
+[cueSeVolume 22_adm89 0.4 0.8]
+[charaEffect U bit_talk_lightning_U_01 0,450]
+[wt 1.7]
+
+[subCameraOn 1]
+[charaLayer E sub #A]
+[charaLayer B sub #A]
+[charaLayer Q sub #A]
+[subCameraFilter #A maskEdge cut359_mask11 5 255,255,255,255 0]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0 465,300]
+[charaFadein Q 0 0,0]
+[subRenderFadeinFSSideR #A 0.3 -100,-150]
+[subRenderMoveFSSideR #A -50,-200 0.3]
+[wt 0.4]
+
+＠アッド
+うおっ！　パスポートが……！
+[k]
+
+[messageOff]
+[subRenderFadeout #A 0.3]
+[subRenderMoveFSSideR #A 0,-250 0.3]
+[wt 0.4]
+
+[se ade462]
+[charaEffectEdgeBlur U FFFFFF FFFFFF 4 5]
+[wt 2.0]
+
+[seStop ade462 0.6]
+[seStop ad626 0.6]
+[cueSeStop 22_adm89 0.6]
+[se ad842]
+[charaEffect U bit_talk_lightning_U_02]
+[wt 0.4]
+
+[charaDepth P 26]
+[charaFilter P silhouette FFFFFF80]
+[charaFadein P 0.4 0,-200]
+[wt 0.4]
+[charaEffectEdgeBlurDestroy U]
+[charaEffectDestroy U bit_talk_lightning_U_01]
+[charaEffectDestroy U bit_talk_lightning_U_02]
+[charaFadeout U 0]
+[scene 10000]
+[wt 1.0]
+
+[seStop ad842 1.0]
+[wt 1.5]
+
+[se ad148]
+[effect bit_talk_crack01]
+[wt 0.8]
+[effect bit_talk_crack02]
+[wt 0.5]
+[se ad149]
+[effect bit_talk_crack03]
+[wt 0.8]
+[capture]
+[wt 0.1]
+[fowardEffectPause bit_talk_mirror_break02]
+[wait fowardEffectStart]
+[fowardEffectStart]
+[wt 0.1]
+[effectDestroy bit_talk_crack01]
+[effectDestroy bit_talk_crack02]
+[effectDestroy bit_talk_crack03]
+[charaFadeout P 0]
+[se ade187]
+[wt 2.5]
+
+[captureRelease]
+[fowardEffectDestroy bit_talk_mirror_break02]
+
+
+[fadeout black 1.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
